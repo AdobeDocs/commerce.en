@@ -8,7 +8,7 @@ recommendations: noCatalog
 ---
 # Adobe Commerce Services Guides
 
-Adobe provides a collection of Commerce services, integration services, and data tools to help merchants support key components of their business.
+Adobe provides a collection of Commerce services, integration services, and data tools to help merchants support key components of their business. 
 
 >[!NOTE]
 >
