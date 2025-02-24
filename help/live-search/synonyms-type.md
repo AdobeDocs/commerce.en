@@ -20,6 +20,16 @@ A one-way synonym is a subset of a keyword, but with a more specific meaning. Fo
 **sweatshirt** ![One-way selector](assets/btn-one-way.png) hoodie
 **pants** ![One-way selector](assets/btn-one-way.png) capris ![Multiple one-way selector](assets/btn-multiple-one-way.png) calf-length-pants ![Multiple one-way selector](assets/btn-multiple-one-way.png) peddle pushers
 
+## Multi-word
+
+For multi-word synonyms, Commerce considers the synonym as a phrase. For example, if you create a two-way synonym **dining room table** ![Two-way selector](assets/btn-two-way.png) **kitchen table** ![Two-way selector](assets/btn-two-way.png) **dining table**, then Commerce searches across all fields set to searchable for the occurrence of **dining room table** or **kitchen table** or **dining table**.
+
+>[!NOTE]
+>
+>The words need to appear together as a phrase.
+
+If no synonym is created, and a search is made for **kitchen table**, then Commerce ignores the order and looks for the terms in the search phrase anywhere in the searchable fields. The words can also exist across fields, for example, **table** in the name field and **kitchen** in the meta keyword.
+
 ## Best practices
 
 Keep in mind the following best practices to get the most from [!DNL Live Search] synonyms.
@@ -31,10 +41,6 @@ Keep in mind the following best practices to get the most from [!DNL Live Search
 a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will, with
 
 Stop words do not make synonyms more meaningful, but increase the amount of data that must be processed.
-
-### Use single words
-
-If a synonym term contains multiple words, the blank space between the words causes them to be treated as a separate synonyms. For example, if you define "time piece" as a synonym for "watch", the words "time" and "piece" are treated as separate synonyms.
 
 ### Use of singular and plural
 
