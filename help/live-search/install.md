@@ -51,7 +51,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 >[!IMPORTANT]
 >
->As of [!DNL Live Search] 4.0.0, the Search Adapter is deprecated. Going forward, the Search Adapter will only be updated to address security issues.
+>As of [!DNL Live Search] 4.0.0, the Search Adapter is deprecated. Going forward, the Search Adapter will be updated only to address security issues.
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
