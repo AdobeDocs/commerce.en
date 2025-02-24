@@ -5,7 +5,7 @@ recommendations: noCatalog
 ---
 # Adobe Commerce Optimizer
 
-Adobe Commerce Optimizer is a fast, performant frontend with a scalable catalog that allows you to optimize your existing eCommerce backend by increasing traffic and driving higher engagement and conversion.
+Adobe Commerce Optimizer is a fast, performant storefront with a scalable catalog that allows you to optimize your existing eCommerce backend by increasing traffic and driving higher engagement and conversion.
 
 There are four main capabilities of Commerce Optimizer.
 
@@ -43,15 +43,14 @@ The following diagram displays the Adobe Commerce Optimizer architecture.
 The following describes the parts in the architectural diagram.
 
 - **Third-party catalog ingestion** - 
-- **Composable catalog data model** - The foundational piece of Commerce Optimizer is CCDM. CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. CCDM provides building blocks that merchants can use to create and manage catalogs at scale. Within Commerce Optimizer, you can manage your catalog by creating channels, policies, and locales that best define your business goals. Learn more about [CCDM](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-data-model/overview).
+- **Composable catalog data model (CCDM)** - CCDM is the foundational piece of Commerce Optimizer. CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. CCDM provides building blocks that merchants can use to create and manage catalogs at scale. Within Commerce Optimizer, you can manage your catalog by creating channels, policies, and locales that best define your business goals. Learn more about [CCDM](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-data-model/overview).
 - **Success metrics** - 
-- **Edge delivery powered storefront** - 
+- **Edge delivery-powered storefront** - 
 - **Third-party cart and checkout** - 
 
 ### Quick tour
 
 workflow/tour of the ui
-
 
 ## Boundaries and limitations
 
