@@ -90,7 +90,9 @@ _February 24, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-5813 --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Improved overall stability and performance.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> General improvements and optimizations. Fixed critical bugs from v2.10.2.
 
 ## v2.10.2
 
