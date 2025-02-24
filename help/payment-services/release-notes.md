@@ -98,7 +98,7 @@ _February 21, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Known issue](../assets/bug.svg)<!-- PAY-xxxx --> Contains critical bugs that may affect stability and performance. We recommend not using v2.10.2 and upgrade to v2.10.3.
+![Known issue](../assets/bug.svg)<!-- PAY-xxxx --> Contains critical bugs that may affect stability and performance. It is recommended not using v2.10.2 and upgrading to v2.10.3.
 
 ## v2.10.1
 
