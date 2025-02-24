@@ -84,6 +84,22 @@ _June 28, 2021_
 
 +++
 
+## v2.10.3
+
+_February 24, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5813 --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
+
+## v2.10.2
+
+_February 21, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Known issue](../assets/bug.svg)<!-- PAY-xxxx --> Contains critical bugs that may affect stability and performance. We recommend not using v2.10.2 and upgrade to v2.10.3.
+
 ## v2.10.1
 
 _February 5, 2025_

@@ -21,10 +21,6 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 
 ## Features
 
->[!NOTE]
->
->Some of the features mentioned here may not yet be available for the GA (General Availability) release.
-
 [!DNL Payment Services] is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
 
 * [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
