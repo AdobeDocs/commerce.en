@@ -4,6 +4,7 @@ description: Configure the merchant stock messaging and features available to cu
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
+exl-id: 199d9466-062e-44f9-ab6a-85bec028acee
 ---
 # Product Stock Management
 
@@ -39,4 +40,3 @@ Configure Product Stock options from the Admin: **[!UICONTROL Catalog > Products
 | **[!UICONTROL Allow Store Pickup]**     | <p>Explicitly set whether the item is available for store pickup, regardless of available inventory or merchant store location configuration.</p><p>To use the product-level setting, uncheck the [!UICONTROL Use Default] option and make your selection. Otherwise, this setting is chosen based on the configuration for **[!UICONTROL Allow In-Store Pickup]** that is set on the stock source.</p> | Global    | No           |
 
 {style="table-layout:auto"}
-

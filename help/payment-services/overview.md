@@ -4,6 +4,7 @@ description: Learn how to install and use [!DNL Payment Services] as a turnkey, 
 role: User
 level: Intermediate
 feature: Payments, Checkout
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
 ---
 # Introduction to [!DNL Payment Services]
 

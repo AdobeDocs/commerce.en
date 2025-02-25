@@ -4,6 +4,7 @@ description: Learn about the Pick, Stage, Hand-Off, and Orders modules available
 role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
+exl-id: a34134f2-8bfa-402e-919d-95b9fe55f7d8
 ---
 # Store Assist Fulfillment Workflows
 

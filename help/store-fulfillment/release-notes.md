@@ -1,8 +1,9 @@
 ---
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Release Notes'
-description: "Review the release notes for information about all [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
+description: Review the release notes for information about all [!DNL Store Fulfillment by Walmart Commerce Technologies] releases.
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
+exl-id: 2e080fab-25cb-4cc0-b6e5-e30ddc678efb
 ---
 # Release Notes
 

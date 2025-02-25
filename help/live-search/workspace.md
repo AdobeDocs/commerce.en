@@ -1,6 +1,7 @@
 ---
-title: 'Setting up Live Search'
+title: Setting up Live Search
 description: The [!DNL Live Search] workspace is used to configure, manage, and monitor search performance.
+exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 ---
 # Setting up Live Search
 

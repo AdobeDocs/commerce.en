@@ -1,6 +1,7 @@
 ---
-title: "Manage Search Merchandising rules"
-description: "Learn how to manage existing Search Merchandising rules."
+title: Manage Search Merchandising rules
+description: Learn how to manage existing Search Merchandising rules.
+exl-id: f831e77c-95e3-4d55-bc33-1a1247db22f8
 ---
 # Manage Search Merchandising rules
 

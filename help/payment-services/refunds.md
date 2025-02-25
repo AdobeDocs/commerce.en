@@ -2,6 +2,7 @@
 title: Refunds
 description: Create refunds for [!DNL Payment Services] orders in the Admin as part of the credit memo process.
 feature: Payments, Checkout
+exl-id: ce33ae33-97be-4d56-afb1-dc92b20cb948
 ---
 # Refunds
 

@@ -4,6 +4,7 @@ description: Configure stocks and delivery methods for multiple websites and sto
 role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
+exl-id: c24e7e44-7265-48ea-b6e3-2eedfe64e955
 ---
 # Multiple Website and Scope Configuration
 

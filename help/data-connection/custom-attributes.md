@@ -3,6 +3,7 @@ title: Add Custom Order Attributes
 description: Learn how to add custom order attributes to your back office data and send those attributes to the Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
 ---
 # Add Custom Order Attributes
 

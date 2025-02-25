@@ -4,6 +4,7 @@ description: Connect your instance with [!DNL Payment Services] functionality by
 role: User
 level: Intermediate
 feature: Payments, Checkout, Integration
+exl-id: 8d434a17-ecf4-4611-bbbf-88ec8c7baf3c
 ---
 # Onboard [!DNL Payment Services]
 

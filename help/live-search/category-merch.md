@@ -2,6 +2,7 @@
 title: Category Merchandising
 description: Use [!DNL Live Search] Category Merchandising for a faster shopping experience.
 gourl: ls_catalog_merchandising
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 ---
 # Category Merchandising
 

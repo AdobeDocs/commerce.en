@@ -1,6 +1,7 @@
 ---
-title: "Facets"
-description: "[!DNL Live Search] facets use multiple dimensions of attribute values as search criteria."
+title: Facets
+description: '[!DNL Live Search] facets use multiple dimensions of attribute values as search criteria.'
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
 ---
 # Facets
 

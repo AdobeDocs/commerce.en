@@ -4,6 +4,7 @@ description: Set up the [!DNL Store Assist] app to manage end-to-end store fulfi
 level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
+exl-id: fc70b4cf-dc60-4d41-9619-4e5089ed0052
 ---
 # App setup
 

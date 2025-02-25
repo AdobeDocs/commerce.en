@@ -4,6 +4,7 @@ description: '[!DNL Live Search] onboarding flow, system requirements, boundarie
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install
+exl-id: 229ccf44-2645-4505-94e8-0756c6cd793d
 ---
 # Onboarding Overview for Store Fulfillment
 

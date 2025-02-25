@@ -4,6 +4,7 @@ description: Requirements for provisioning and onboarding the [!DNL Store Fulfil
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
+exl-id: ec3ac628-1d9d-49de-ad4d-9f63b64d30ec
 ---
 # Store Fulfillment Requirements for Adobe Commerce
 

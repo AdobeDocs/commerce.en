@@ -1,7 +1,8 @@
 ---
 title: What is [!DNL Live Search]?
-description: "[!DNL Live Search] from Adobe Commerce delivers a fast, relevant, and intuitive search experience."
+description: '[!DNL Live Search] from Adobe Commerce delivers a fast, relevant, and intuitive search experience.'
 recommendations: noCatalog
+exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
 ---
 # What is [!DNL Live Search]?
 

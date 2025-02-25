@@ -3,6 +3,7 @@ title: Collect Commerce Data using Adobe Experience Platform Tags
 description: Learn how to collect Commerce data using Adobe Experience Platform tags.
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 

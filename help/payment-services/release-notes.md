@@ -1,9 +1,9 @@
 ---
-title: "[!DNL Payment Services] Release Notes"
+title: '[!DNL Payment Services] Release Notes'
 description: Review the release notes for information about all [!DNL Payment Services] releases.
 feature: Payments, Release Notes
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
 ---
-
 # Release Notes
 
 These release notes describe the initial release of [!DNL Payment Services] and include:

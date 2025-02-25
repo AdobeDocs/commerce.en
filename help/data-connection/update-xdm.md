@@ -3,6 +3,7 @@ title: Update Time Series Event Schemas for Commerce Data Ingestion
 description: Learn how to create a schema, dataset, and datastream to collect and send time series event data for Commerce data ingestion.
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
 ---
 # Update Time Series Event Schemas for Commerce Data Ingestion
 

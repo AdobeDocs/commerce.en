@@ -1,6 +1,7 @@
 ---
-title: "Synonyms"
-description: "[!DNL Live Search] Synonyms expand queries with words that differ from those in your catalog."
+title: Synonyms
+description: '[!DNL Live Search] Synonyms expand queries with words that differ from those in your catalog.'
+exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
 ---
 # Synonyms
 

@@ -2,6 +2,7 @@
 title: Install and Configure
 description: Learn how to install, update, and uninstall [!DNL Product Recommendations].
 role: Admin, Developer
+exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 ---
 # Install and Configure
 
