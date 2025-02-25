@@ -6,7 +6,6 @@ role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 ---
-# Adobe Commerce Optimizer {#commerce-optimizer}
+# Adobe Commerce Optimizer {#optimizer}
 
-- Introduction {#introduction}
-   - [What is Commerce Optimizer?](overview.md)
+[What is Commerce Optimizer?](overview.md)
