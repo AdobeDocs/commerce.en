@@ -9,3 +9,4 @@ recommendations: noDisplay
 # Adobe Commerce Optimizer {#optimizer}
 
 - [What is Commerce Optimizer?](overview.md)
+- [Use Case](overview.md)
