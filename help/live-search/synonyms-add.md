@@ -26,7 +26,6 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
    ![Add two-way synonym](assets/synonym-add-two-way.png)
 
-
 1. Enter the **Keyword** term or phrase to be matched.
 1. Enter the **Expansion** term(s) that you want to add as synonyms for the keyword. Separate multiple terms with a comma.
    In this example, the keyword to match is "pants" and the set of expansion terms are "trousers, slacks".
