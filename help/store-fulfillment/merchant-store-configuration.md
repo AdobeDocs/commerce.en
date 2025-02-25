@@ -4,6 +4,7 @@ description: Setup enhanced Inventory Management sources as merchant stores.
 role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
+exl-id: 4ecfbe5a-79f0-49d2-ab9b-f96f034d48d1
 ---
 # Merchant Stores (Source) Configuration
 

@@ -1,6 +1,7 @@
 ---
 title: Create New Recommendation
 description: Learn how to create a product recommendation unit.
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 ---
 # Create New Recommendation
 

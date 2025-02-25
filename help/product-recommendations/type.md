@@ -1,6 +1,7 @@
 ---
 title: Recommendation Types
 description: Learn about the recommendations that you can deploy to various pages on your site.
+exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 ---
 # Recommendation Types
 

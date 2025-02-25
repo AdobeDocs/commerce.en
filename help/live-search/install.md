@@ -1,7 +1,8 @@
 ---
-title: "Get Started with [!DNL Live Search]"
-description: "Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce."
+title: Get Started with [!DNL Live Search]
+description: Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce.
 role: Admin, Developer
+exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 ---
 # Set up for success with [!DNL Live Search]
 

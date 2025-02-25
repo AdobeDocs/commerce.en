@@ -2,6 +2,7 @@
 title: Add product attributes dynamically
 description: Learn how to add custom product attributes to data export feed dynamically during the data synchronization process.
 role: Admin, Developer
+exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
 ---
 # Add product attributes dynamically during data synchronization
 

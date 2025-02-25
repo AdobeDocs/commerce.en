@@ -4,6 +4,7 @@ description: Establish the connections between Adobe Commerce and the Store Fulf
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install, Configuration, User Account, Tools and External Services
+exl-id: 07409650-6f24-4b4c-942a-a97fefdcab28
 ---
 # Connect the Store Fulfillment Solution
 

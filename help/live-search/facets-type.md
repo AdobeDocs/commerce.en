@@ -1,6 +1,7 @@
 ---
-title: "Types of Facets"
-description: "[!DNL Live Search] facets are dynamic, and appear in the Filters list when relevant."
+title: Types of Facets
+description: '[!DNL Live Search] facets are dynamic, and appear in the Filters list when relevant.'
+exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
 ---
 # Types of Facets
 

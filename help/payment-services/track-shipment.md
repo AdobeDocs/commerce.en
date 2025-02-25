@@ -2,6 +2,7 @@
 title: Tracking your shipments in [!DNL Payment Services]
 description: Customize [!DNL Payment Services] shipments and tracking information displayed in the Paypal Merchant Dashboard.
 feature: Payments
+exl-id: fd88c677-7fe0-4ebe-a617-b50f8ac49e4c
 ---
 # Tracking your shipments in [!DNL Payment Services]
 

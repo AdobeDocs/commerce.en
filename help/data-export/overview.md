@@ -2,6 +2,7 @@
 title: '[!DNL SaaS Data Export Guide]'
 description: Learn about using the [!DNL data export] extension for Adobe Commerce SaaS services that synchronizes data between Adobe Commerce and connected Commerce services.
 role: Admin, Developer
+exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 ---
 # [!DNL SaaS Data Export] Guide
 

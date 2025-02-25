@@ -1,6 +1,7 @@
 ---
 title: GraphQL
 description: The [!DNL Live Search] GraphQL workspace lets you build queries with your live data.
+exl-id: d32edf42-1fb0-40f9-89e5-798b39521b77
 ---
 # GraphQL
 
@@ -38,4 +39,3 @@ Variables:
   "X-Api-Key": "search_gql"
 }
 ```
-

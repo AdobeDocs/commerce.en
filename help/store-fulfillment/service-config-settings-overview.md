@@ -4,6 +4,7 @@ description: Learn about the types of Admin configuration settings available to 
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Configuration
+exl-id: ff14ede8-0465-488a-ac20-32c943f7296e
 ---
 # Configuration overview for Store Fulfillment
 

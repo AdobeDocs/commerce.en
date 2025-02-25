@@ -1,6 +1,7 @@
 ---
-title: "Performance"
-description: "The [!DNL Live Search] Performance workspace provides insight into the search terms that shoppers use."
+title: Performance
+description: The [!DNL Live Search] Performance workspace provides insight into the search terms that shoppers use.
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
 ---
 # Performance
 

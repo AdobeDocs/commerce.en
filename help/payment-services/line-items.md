@@ -3,6 +3,7 @@ title: Line items for [!DNL Payment Services]
 description: Learn about line items for [!DNL Payment Services] and how to view line items in the merchant dashboard.
 feature: Payments
 role: User
+exl-id: 134b99e6-a310-474c-b4b0-a0a17427e820
 ---
 # Line items for [!DNL Payment Services]
 

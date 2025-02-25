@@ -2,6 +2,7 @@
 title: Collect Data
 description: Learn how events collect data for [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
 ---
 # Collect Data
 

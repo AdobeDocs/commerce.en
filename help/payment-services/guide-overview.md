@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] Guide overview"
+title: '[!DNL Payment Services] Guide overview'
 description: Comprehensive information about [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] administrators, including installation and onboarding
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 feature: Payments, Checkout
 recommendations: noCatalog
-
+exl-id: e27a259f-e72e-4d73-a103-59167638e582
 ---
 # [!DNL Payment Services] Guide overview
 

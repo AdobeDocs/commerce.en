@@ -1,6 +1,7 @@
 ---
-title: "Manage Synonyms"
-description: "Learn how to manage existing [!DNL Live Search] synonyms."
+title: Manage Synonyms
+description: Learn how to manage existing [!DNL Live Search] synonyms.
+exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
 ---
 # Manage Synonyms
 

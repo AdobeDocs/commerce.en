@@ -4,6 +4,7 @@ description: Comprehensive information about [!DNL Product Recommendations] for 
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 feature: Services, Recommendations
+exl-id: 8df3ef2e-b00e-42d8-b92b-4fbdaaed9f8f
 ---
 # [!DNL Product Recommendations] Guide Overview
 

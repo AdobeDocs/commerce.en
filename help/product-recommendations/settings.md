@@ -1,6 +1,7 @@
 ---
 title: Settings
 description: Learn how to change the source of your [!DNL Product Recommendations] data and how to enable visual recommendations.
+exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
 ---
 # Settings
 

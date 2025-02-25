@@ -2,6 +2,7 @@
 title: Connect Commerce Data to Adobe Experience Platform
 description: Learn how to connect your Commerce data to the Adobe Experience Platform.
 feature: Personalization, Integration, Configuration
+exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
 ---
 # Connect Commerce data to Adobe Experience Platform
 

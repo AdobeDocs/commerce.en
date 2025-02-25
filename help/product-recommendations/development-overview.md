@@ -1,6 +1,7 @@
 ---
 title: Product Recommendations Administrator Development
 description: An overview of Product Recommendations architecture and development features.
+exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
 ---
 # Product Recommendations Administrator Development
 

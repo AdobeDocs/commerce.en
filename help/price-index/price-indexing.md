@@ -3,6 +3,7 @@ title: SaaS Price Indexing
 description: Using the SaaS Price Indexing to improve performance
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
+exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
 ---
 # SaaS Price Indexing
 
@@ -89,4 +90,3 @@ If you have a custom product type that uses a specific formula to calculate the 
        }
    }
    ```
-

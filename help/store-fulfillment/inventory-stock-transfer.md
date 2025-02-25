@@ -1,11 +1,11 @@
 ---
 title: Inventory Management Source Transfer
-description: "Configure stocks for the [!DNL Store Fulfillment solution] with Adobe Commerce Inventory Management. Set up a new stock and transfer inventory out of default stock so that you can assign it to sources configured to enable Store Pickup capabilities required by the Store Fulfillment solution."
+description: Configure stocks for the [!DNL Store Fulfillment solution] with Adobe Commerce Inventory Management. Set up a new stock and transfer inventory out of default stock so that you can assign it to sources configured to enable Store Pickup capabilities required by the Store Fulfillment solution.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
+exl-id: 61aae00b-4845-4490-a18c-d325e2a25969
 ---
-
 # Inventory Management Source Transfer
 
 The [!DNL Store Fulfillment] solution uses native Adobe Commerce Inventory Management. By default, the [!DNL Commerce] configuration assigns all web inventory to the default stock, which can not have additional sources assigned. Because a website can only be assigned a single stock, a merchant must configure a new stock and optionally transfer their default source inventory to a source that is assigned to the appropriate scope. Then, the source can be assigned to the new stock.

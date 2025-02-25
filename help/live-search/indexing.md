@@ -1,6 +1,7 @@
 ---
-title: "Indexing"
-description: "Learn how [!DNL Live Search] indexes product attribute properties."
+title: Indexing
+description: Learn how [!DNL Live Search] indexes product attribute properties.
+exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
 ---
 # Indexing
 

@@ -2,6 +2,7 @@
 title: '[!DNL Product Recommendations] Release Notes'
 description: The latest release information for [!DNL Product Recommendations] from Adobe Commerce.
 feature: Services, Recommendations, Release Notes
+exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
 ---
 # [!DNL Product Recommendations] Release Notes
 

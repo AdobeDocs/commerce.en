@@ -1,6 +1,7 @@
 ---
 title: SaaS Data Export Command-line Interface
 description: Learn how to use the command-line interface commands to manage feeds and processes for the [!DNL data export extension] for Adobe Commerce SaaS services.
+exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 ---
 # SaaS Data Export Command-line Interface Reference
 

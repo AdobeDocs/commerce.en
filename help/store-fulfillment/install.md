@@ -1,11 +1,11 @@
 ---
 title: Installation
-description: "Install the [!DNL Store Fulfillment solution] for an Adobe Commerce storefront using Composer for PHP."
+description: Install the [!DNL Store Fulfillment solution] for an Adobe Commerce storefront using Composer for PHP.
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
+exl-id: 52479185-fb08-431a-9036-dd540cf50df9
 ---
-
 # Installation
 
 Complete the initial installation of the [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extension in a non-production environment with queue manager running and caching configured to allow exception handling. Ensure that your development environment includes development tools to ensure best practices for operating and maintaining your Adobe Commerce instance.
@@ -193,5 +193,3 @@ The `-f` option is required if you are using a blank theme.
 >[!NOTE]
 >
 >For more information, see the [Static content deploy best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) article in the Adobe Commerce Help Center.
-
-

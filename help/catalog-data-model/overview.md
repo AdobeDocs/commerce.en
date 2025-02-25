@@ -4,6 +4,7 @@ description: Learn how the [!DNL Composable Catalog Data Model] for Adobe Commer
 hidefromtoc: yes
 hide: yes
 recommendations: noCatalog
+exl-id: afa7c148-10fb-4161-8bcc-13084f85c42c
 ---
 # [!DNL Composable Catalog Data Model]
 

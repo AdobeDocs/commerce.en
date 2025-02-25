@@ -3,6 +3,7 @@ title: '[!DNL SaaS Data Export Extension] Release Notes'
 description: The latest release information for [!DNL Data Export Extension] for Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
+exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 ---
 # [!DNL SaaS Data Export] Extension Release Notes
 

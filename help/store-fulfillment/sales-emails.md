@@ -4,8 +4,8 @@ description: Configure the transactional email templates for communicating with 
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
+exl-id: 9742f9dc-d230-4888-83f6-85a38af16f63
 ---
-
 # Sales Email Templates
 
 Store Fulfillment offers an extended set of transactional email templates to support order and fulfillment workflows. They offer consistent, automated communication and messaging across channels—notifying customer and store administrators about order status changes, instructions for in-store pickup orders, and more.
@@ -327,6 +327,3 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 >[!NOTE]
 >
 >If you allow backorders, you must provide an administrator email address to receive notifications about these orders. Add the address to the following configuration settings: **[!UICONTROL Send Order Delayed Email Copy To]** in the [Order Delay](#order-delayed) template, and [!UICONTROL Ship To Store Email Recipients] in the [Ship to Store](#ship-to-store) template.
-
-
-

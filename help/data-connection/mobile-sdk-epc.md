@@ -3,6 +3,7 @@ title: Integrate the Adobe Experience Platform Mobile SDK with Commerce
 description: Learn how to use the Adobe Experience Platform Mobile SDK with your headless or custom Commerce storefront.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
+exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
 ---
 # Integrate the Adobe Experience Platform Mobile SDK with Commerce
 

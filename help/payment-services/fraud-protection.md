@@ -4,6 +4,7 @@ description: Enable automated fraud protection for [!DNL Payment Services] with 
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
+exl-id: 28079e6b-5f52-42bf-9a5e-97a0d62240e9
 ---
 # Signifyd fraud protection
 

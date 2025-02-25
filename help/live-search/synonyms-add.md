@@ -1,6 +1,7 @@
 ---
-title: "Add Synonyms"
-description: "Add [!DNL Live Search] synonyms to improve response to search requests."
+title: Add Synonyms
+description: Add [!DNL Live Search] synonyms to improve response to search requests.
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
 ---
 # Add Synonyms
 

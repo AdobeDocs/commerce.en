@@ -4,6 +4,7 @@ description: Use the Order payment status report for gain visibility to the paym
 role: User
 level: Intermediate
 feature: Payments, Checkout, Orders
+exl-id: 1ba31050-cf99-424e-98ef-0e3f1f2781a0
 ---
 # Order Payment Status Report
 

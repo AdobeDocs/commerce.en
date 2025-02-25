@@ -1,6 +1,7 @@
 ---
 title: Onboarding and Installation
-description: "Learn how to install [!DNL Catalog Service]"
+description: Learn how to install [!DNL Catalog Service]
+exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 ---
 # Onboarding and Installation
 

@@ -1,6 +1,7 @@
 ---
-title: "Add Rules"
-description: "Learn how to create Search Merchandising rules."
+title: Add Rules
+description: Learn how to create Search Merchandising rules.
+exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 ---
 # Add Rules
 

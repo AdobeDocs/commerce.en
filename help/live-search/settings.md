@@ -1,6 +1,7 @@
 ---
-title: "Settings"
-description: "Configure settings for the [!DNL Live Search] service."
+title: Settings
+description: Configure settings for the [!DNL Live Search] service.
+exl-id: 6387a365-7e23-4023-95ac-27908164d81c
 ---
 # Settings
 
