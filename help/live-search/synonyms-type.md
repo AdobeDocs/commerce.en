@@ -48,4 +48,4 @@ If no synonym is created and a shopper searches for **kitchen table**, Commerce 
 
 After creating a synonym, the search behavior changes to look for the exact phrase **kitchen table**. This might reduce the number of results because only products with the exact phrase will be shown.
 
-If you want the terms to be searched separately as before, you can [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+If you want the terms to be searched separately as before, you can [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). If there is enough demand, Commerce will consider adding this functionality to the product in a future release.
