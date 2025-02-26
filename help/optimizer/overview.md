@@ -9,7 +9,7 @@ Adobe Commerce Optimizer is a fast, performant storefront with a scalable catalo
 
 >[!BEGINSHADEBOX]
 
-If you would like to participate in the Adobe Commerce Optimizer early access program, send an email to: 
+If you would like to participate in the Adobe Commerce Optimizer early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 >[!ENDSHADEBOX]
 
