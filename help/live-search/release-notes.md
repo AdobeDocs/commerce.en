@@ -18,13 +18,17 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_February 27, 2025_
+
+![Fix](../assets/fix.svg) Fixed an issue where the Search Adapter was not compatible with `psr/http-message:2.0`.
+
 _February 20, 2025_
 
-![New](../assets/new.svg) Commerce supports multi-word synonyms. [Learn more](synonyms-type.md#multi-word-synonym-behavior). Support for multi-word synonyms is only available after this February 20th release date. Any existing multi-word synonyms require a full reindex to work, which you can request by [creating a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+![New](../assets/new.svg) Commerce supports multi-word synonyms. [Learn more](synonyms-type.md#multi-word-synonym-behavior). Support for multi-word synonyms is only available after this February 20 release date. Any existing multi-word synonyms require a full reindex to work, which you can request by [creating a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 _January 31, 2025_
 
-![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your testing envionment. [Learn more](overview.md#catalog-data-retention-policy).
+![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your testing environment. [Learn more](overview.md#catalog-data-retention-policy).
 
 _September 19, 2024_
 
@@ -113,7 +117,7 @@ _May 16, 2024_
 
 ## [!DNL Live Search] 4.1.1
 
-_Mar 19, 2024_
+_March 19, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -124,7 +128,7 @@ _Mar 19, 2024_
 
 ## [!DNL Live Search] 4.1.0
 
-_Feb 22, 2024_
+_February 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -140,7 +144,7 @@ _Feb 22, 2024_
 
 ## [!DNL Live Search] 4.0.0
 
- _Nov 13, 2023_
+_November 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -173,7 +177,7 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 
 ## [!DNL Live Search] 3.1.1
 
- _Sept 15, 2023_
+_September 15, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -202,17 +206,17 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 
 ## [!DNL Live Search] 3.1.0
 
- _Sept 1, 2023_
+_September 1, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ### Updates
 
-![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
+![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/).
 
 ## [!DNL Live Search] 3.0.2
 
- _August 7, 2023_
+_August 7, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -241,7 +245,7 @@ Using the Live Search Product Listing Page widget causes Google Tag Manager to f
 
 ## [!DNL Live Search] 3.0.1
 
- _March 14, 2023_
+_March 14, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -349,7 +353,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![New](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) provides access to a common data layer with event publishing and subscription services, and metrics.
 ![Fix](../assets/fix.svg) The [[!DNL Storefront popover]](storefront-popover.md) has a new `active` class for the `.search-autocomplete` container that controls visibility.
 ![Fix](../assets/fix.svg) In the storefront, the [Search Terms](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) footer link is removed and its cache disabled for [!DNL Live Search] installations.
-![Bug](../assets/bug.svg) Patch for Search adapter handles duplicate products.
+![Bug](../assets/bug.svg) Patch for Search Adapter handles duplicate products.
 ![Bug](../assets/bug.svg) [!DNL Live Search] supports [single-source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (physical) inventory locations with multiple (virtual) [stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). Multiple inventory sources are not supported now.
 
 ### [!DNL Live Search] 1.2.0
