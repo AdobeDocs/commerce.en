@@ -56,7 +56,7 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 1. In the _Select your country_ modal, select the country from which you are operating.
 
-   Payment Services provides full support for all payment options in [five countries](../payment-services/overview.md#availability) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
+   Payment Services provides full support for all payment options in five countries currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
    
    The country you choose from the list will determine the payment options, and onboarding flow---[Advanced](#advanced-onboarding) (fully supported) or [Standard](#standard-onboarding) (Express Checkout)---available to you.
 
