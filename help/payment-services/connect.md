@@ -8,6 +8,8 @@ exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
 
 [!DNL Payment Services] is powered by Commerce Services and deployed as SaaS (software as a service). You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **You set up this connection only once.**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
+
 >[!INFO]
 >
 > See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) video for additional information.
