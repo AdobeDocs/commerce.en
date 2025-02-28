@@ -50,6 +50,8 @@ See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operatio
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
+See [Connect](connect.md) for more information on setting up your [!DNL Payment Services] extension.
+
 ### Accepted credit cards and currencies
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information.

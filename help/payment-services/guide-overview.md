@@ -40,5 +40,7 @@ If you need information or have questions not covered in this guide, contact you
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
+See [Availability](overview.md#availability) to check which [!DNL Payment Services] option is right for you.
+
 * [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase.
 * [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)---Commerce customers can submit a ticket to receive additional help.
