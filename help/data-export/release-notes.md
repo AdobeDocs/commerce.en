@@ -25,7 +25,7 @@ Updates include:
 ## 103.3.20 Release
 
 ![Fix](../assets/fix.svg) Fixed untraceable `BulkException` errors in the `cron.log` by improving messaging for errors related to Catalog Data Export cron job failures.<!--MDEE-966-->
-![Fix](../assets/fix.svg) Improved performance of the product re-synchronization process on instances with a high number of store views <!--MDEE-974-->
+![Fix](../assets/fix.svg) Improved performance of the product re-synchronization process on instances with a high number of store views. <!--MDEE-974-->
 
 ## 103.3.19 Release
 
