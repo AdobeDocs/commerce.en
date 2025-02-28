@@ -77,6 +77,10 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    * **Activate** to enable the recommendation unit on your storefront.
 
+>[!IMPORTANT]
+>
+>Some browsers might block critical scripts that prevent Product Recommendations from working as expected.
+
 ## Readiness indicators
 
 Readiness indicators show which recommendation types will perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with your [eventing](events.md) or if you do not have enough traffic to populate the recommendation type.
