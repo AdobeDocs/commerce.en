@@ -46,6 +46,10 @@ Payment Services provides [Express Checkout capabilities](../payment-services/pa
 
 See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
+### Which [!DNL Payment Services] option is right for you?
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
 ### Accepted credit cards and currencies
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information.
