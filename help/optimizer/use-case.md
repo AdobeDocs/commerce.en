@@ -6,6 +6,8 @@ feature: Personalization, Integration
 ---
 # Title of the use-case
 
+The goal of this use-case is to demonstrate how...
+
 ## Let's get started
 
 In this article, you learn how to:
