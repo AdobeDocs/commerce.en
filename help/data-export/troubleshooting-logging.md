@@ -4,7 +4,7 @@ description: Learn how to troubleshoot [!DNL data export] errors using the data-
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 ---
-# Review Logs and Troubleshoot
+# Review logs and troubleshoot
 
 The [!DNL data export] extension provides logs to track data collection and synchronization processes.
 
@@ -148,16 +148,9 @@ If the catalog sync has a status of **Failed**, submit a [support ticket](https:
 
 For additional log information, you can use environment variables to extend logs with additional data for tracking and troubleshooting.
 
-There are two log files in the `var/log/` directory:
-
-- commerce-data-export-errors.log - if an error happened during collecting phase
-- saas-export-errors.log - if an error happened during transmitting phase
-
-You can use environment variables to extend logs with additional data for tracking and troubleshooting.
-
 ### Check the feed payload
 
-Include the feed payload in the SaaS export log by adding te `EXPORTER_EXTENDED_LOG=1` environment variable when you resync the feed.
+Include the feed payload in the SaaS export log by adding the `EXPORTER_EXTENDED_LOG=1` environment variable when you resync the feed.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
