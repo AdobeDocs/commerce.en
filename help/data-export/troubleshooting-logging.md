@@ -32,7 +32,7 @@ Each log record has the following structure.
    "operation": "<executed operation>",
    "status": "<status of operation>",
    "elapsed": "<time elapsed from script run>",
-   "pid": "<process id who executed `operation`>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -48,7 +48,7 @@ The following table describes the operation types that can be recorded in the lo
 | full sync | Collects and sends all data to the SaaS for a given feed. | `bin/magento saas:resync --feed=products`                                              |
 | partial reindex            | Collects and sends data to SaaS for only updated entities in a given feed. This log is present only if updated entities exist.              | `bin/magento cron:run --group=index`                                                   |
 | retry failed items         | Resend items for a given feed to SaaS if the previous sync operation failed due to a Commerce application or server error. This log is present only if failed items exist.| `bin/magento cron:run --group=saas_data_exporter`  (any "*_data_exporter" cron group)  |
-| full sync (legacy)          | Full sync for a given feed in legacy export mode.                                                   | `bin/magento saas:resync --feed=categories`                                            |
+| full sync (legacy)          | Collects and sends all data to SaaS for a given feed in legacy export mode.                                                   | `bin/magento saas:resync --feed=categories`                                            |
 | partial reindex (legacy)   | Sends updated entities to SaaS for a given feed in legacy export mode. This log is present only if updated entities exist.             | `bin/magento cron:run --group=index`                                                   |
 | partial sync (legacy)      | Sends updated entities to SaaS for a given feed in legacy export mode. This log is present only if updated entities exist.              | `bin/magento cron:run --group=saas_data_exporter` (any "*_data_exporter" cron group)   |
 
