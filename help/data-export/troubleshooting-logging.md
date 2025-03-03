@@ -146,7 +146,7 @@ If the catalog sync has a status of **Failed**, submit a [support ticket](https:
 
 ## Extended logging
 
-Use environment variables to extend logs with additional data for tracking and troubleshooting. Add the environment variable to the command line when you run data export CLI commands.
+Use environment variables to extend logs with additional data for tracking and troubleshooting. Add the environment variable to the command line when you run data export CLI commands as shown in the following examples.
 
 ### Check the feed payload
 
