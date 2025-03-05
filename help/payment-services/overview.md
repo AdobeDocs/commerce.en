@@ -46,6 +46,12 @@ Payment Services provides [Express Checkout capabilities](../payment-services/pa
 
 See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
+### Which [!DNL Payment Services] option is right for you?
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+See [Connect](connect.md) for more information on setting up your [!DNL Payment Services] extension.
+
 ### Accepted credit cards and currencies
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information.
@@ -66,9 +72,3 @@ Onboarding and setting up [!DNL Payment Services] is completed in just a few ste
 1. Activate [!DNL Payment Services] in live mode to begin processing live payments.
 
 To get the full instructions and start the onboarding process, see [Onboard [!DNL Payment Services]](onboard.md).
-
-## [!DNL Payment Services] demo
-
-Watch this video to learn about [!DNL Payment Services]:
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
