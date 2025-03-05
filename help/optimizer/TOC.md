@@ -1,7 +1,8 @@
 ---
-user-guide-title: Adobe Commerce Optimizer
+user-guide-title: Adobe Commerce Optimizer Guide
 user-guide-description: Documentation and resources for Adobe Commerce Optimizer.
-title: Adobe Commerce Optimizer
+breadcrumb-title: Adobe Commerce Optimizer Guide
+hide: yes
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
