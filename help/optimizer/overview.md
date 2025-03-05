@@ -10,10 +10,10 @@ Adobe Commerce Optimizer enhances your e-commerce experience with a high-perform
 
 With Adobe Commerce Optimizer, you can:
 
-- Grow and scale your catalog without re-platforming your entire commerce stack
-- Ingest catalog data from any source
-- Define business channels and policies
-- Create personalized search and recommendations using AI and ML
+- Grow and scale your catalog without re-platforming your entire commerce stack.
+- Ingest catalog data from any source.
+- Define business channels and policies.
+- Create personalized search and recommendations using AI and ML.
 - View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
 
 >[!BEGINSHADEBOX]
