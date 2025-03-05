@@ -6,7 +6,15 @@ recommendations: noCatalog
 ---
 # What is Adobe Commerce Optimizer?
 
-Adobe Commerce Optimizer enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue. It allows you to grow and scale your catalog without re-platforming your entire commerce stack. You can ingest catalog data from any source, define business channels and policies, create personalized search and recommendations using AI and ML, and view crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
+Adobe Commerce Optimizer enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
+
+With Adobe Commerce Optimizer, you can:
+
+- Grow and scale your catalog without re-platforming your entire commerce stack
+- Ingest catalog data from any source
+- Define business channels and policies
+- Create personalized search and recommendations using AI and ML
+- View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
 
 >[!BEGINSHADEBOX]
 
