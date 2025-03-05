@@ -1,6 +1,7 @@
 ---
 title: Build an end-to-end...
 description: Learn how to use Adobe Commerce Optimizer to...
+hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
 ---
