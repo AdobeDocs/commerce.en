@@ -120,6 +120,8 @@ For an overview of out-of-the-box payment solutions, including features and bene
 
 ### Additional information
 
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
+
 If you need information or have questions not covered in this guide, contact your [!DNL Payment Services] sales representative or use the resources available in your [!DNL Payment Services] Home.
 
 >[!MORELIKETHIS]
