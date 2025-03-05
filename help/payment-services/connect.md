@@ -12,7 +12,7 @@ exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
 
 >[!INFO]
 >
-> See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) video for additional information.
+> See [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html) for additional information.
 
 * If you have *already connected your instance*, by obtaining and using your API credentials and configuring Commerce Services, you can proceed to [setting up your testing sandbox](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/sandbox.html).
 * If you still *need to connect your instance*, see the information in this topic about [obtaining API credentials](#obtain-api-credentials) and [configuring Commerce Services](#configure-commerce-services).
