@@ -38,8 +38,6 @@ To use [!DNL Payment Services], you'll need to first connect your Commerce insta
 
 ### Which [!DNL Payment Services] option is right for you?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
-
 | Standard (Express Checkout) | Advanced (Fully Supported) |
 | ------------ | -------------------- |
 | PayPal Checkout<br>PayPal Debit or Credit card button<br>Custom checkout configurations<br>Standard pricing <br><br>**Available in XX countries** | Debit card<br>PayPal credit<br>Credit Card Fields<br>Apple Pay button<br>Google Pay button<br>PayPal Payment buttons<br>PayPal button<br>Venmo button<br>PayPal Debit or Credit card button<br>Pay Later Button<br>Custom checkout configurations<br>Customized pricing<br>(L2/L3 pricing capabilities – US Only)<br>FPA <br><br>**Only available in United States (US), Canada (CA), Australia (AUS). France (FR), United Kingdom (UK)** |

@@ -1,8 +1,8 @@
 ---
 title: Enable [!DNL Payment Services] for Production
 description: Complete the onboarding process by enabling [!DNL Payment Services] for production.
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-exl-id: aeec2f93-cc10-4a2f-a8fd-86dae94eb6b2
 ---
 # Enable [!DNL Payment Services] for Production
 
@@ -56,7 +56,7 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 1. In the _Select your country_ modal, select the country from which you are operating.
 
-   Payment Services provides full support for all payment options in five countries currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
+   Payment Services provides full support for all payment options in [five countries](../payment-services/introduction.md#availability) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
    
    The country you choose from the list will determine the payment options, and onboarding flow---[Advanced](#advanced-onboarding) (fully supported) or [Standard](#standard-onboarding) (Express Checkout)---available to you.
 
@@ -66,7 +66,7 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 ### Advanced onboarding
 
-This onboarding flow is available for merchants in fully supported countries.
+This onboarding flow is available for merchants in [fully supported countries](../payment-services/introduction.md#availability).
 
 After the country is selected:
 
@@ -74,8 +74,8 @@ After the country is selected:
 
    For the **Standard** option, proceed to the [Standard onboarding flow](#standard-onboarding).
 
-2. Click **Continue**.
-3. Continue with the PayPal flow for the fully supported Advanced onboarding, using your PayPal account credentials (not your sandbox account credentials) _or_ sign up for a new PayPal account.
+1. Click **Continue**.
+1. Continue with the PayPal flow for the fully supported Advanced onboarding, using your PayPal account credentials (not your sandbox account credentials) _or_ sign up for a new PayPal account.
 
 >[!IMPORTANT]
 >
@@ -83,13 +83,13 @@ After the country is selected:
 
 ### Standard onboarding
 
-This Standard onboarding flow is available for merchants in available countries for which only **Express Checkout** support is provided.
+This Standard onboarding flow is available for merchants in available countries for which [only Express Checkout support](../payment-services/introduction.md#availability) is provided.
 
 After the country is selected:
 
 1. In the _Payment Services agreement_ modal that appears, click the **Payment Services agreement** link to view the Adobe Commerce Payment Services agreement.
-2. In the _Payment Services agreement_ modal, click **I accept**.
-3. Continue with the PayPal flow for Express Checkout onboarding, using your PayPal account credentials (not your sandbox account credentials) or sign up for a new PayPal account.
+1. In the _Payment Services agreement_ modal, click **I accept**.
+1. Continue with the PayPal flow for Express Checkout onboarding, using your PayPal account credentials (not your sandbox account credentials) or sign up for a new PayPal account.
 
 >[!IMPORTANT]
 >

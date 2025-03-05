@@ -1,8 +1,8 @@
 ---
 title: Payment Options
 description: Set the payment options to customize the methods available for your store customers.
+exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-exl-id: ed65728d-45df-45a0-9d55-826e1b575f11
 ---
 # Payment Options
 
@@ -25,7 +25,7 @@ There are different behaviors for each payment method depending on where you are
 
 [!DNL Payment Services] provides **Advanced** (fully supported) and **Standard** (Express Checkout) payment options and onboarding flows, depending on the country in which you operate.
 
-* **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current fully supported countries. During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
+* **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current [fully supported countries](../payment-services/introduction.md#availability). During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
 * **Standard** - A subset of payments options (Express Checkout)---PayPal credit and debit cards---is available for other available supported countries. [Credit card fields](#credit-card-fields) and [Apple Pay](#apple-pay-button) are not available for this onboarding option. During onboarding to enable live payments, select the [Standard onboarding option](../payment-services/production.md#standard-onboarding).
 
 See [Enable [!DNL Payment Services] for production](../payment-services/production.md#complete-merchant-onboarding) for information about completing Advanced and Standard onboarding.

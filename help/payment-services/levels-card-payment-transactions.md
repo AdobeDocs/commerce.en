@@ -3,7 +3,7 @@ title: Level 2 and level 3 processing
 description: Card payment processing levels within [!DNL Payment Services] transactions.
 role: Admin
 feature: Payments
-exl-id: 100167d6-6938-4d67-9834-d98b4b55964b
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
 ---
 # Level 2 and level 3 processing
 

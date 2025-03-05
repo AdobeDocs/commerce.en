@@ -3,8 +3,8 @@ title: Command Line Configuration
 description: After installation, you can configure [!DNL Payment Services] using the Command-line Interface (CLI).
 role: Admin, Developer
 level: Intermediate
+exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
 ---
 # Command Line Configuration
 

@@ -3,8 +3,8 @@ title: Order Payment Status Report
 description: Use the Order payment status report for gain visibility to the payment status of your orders and identify any potential issues.
 role: User
 level: Intermediate
+exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-exl-id: 1ba31050-cf99-424e-98ef-0e3f1f2781a0
 ---
 # Order Payment Status Report
 

@@ -3,7 +3,7 @@ title: Transactions Report
 description: Use the Transactions report to get visibility into transaction authorization rates and transaction trends.
 role: User
 level: Intermediate
-exl-id: 056d5a4c-1e94-4292-9a35-f476a2dc1a81
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
 ---
 # Transactions Report
 
