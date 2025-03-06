@@ -18,10 +18,6 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
-_February 27, 2025_
-
-![Fix](../assets/fix.svg) Fixed an issue where the Search Adapter was not compatible with `psr/http-message:2.0`.
-
 _February 20, 2025_
 
 ![New](../assets/new.svg) Commerce supports multi-word synonyms. [Learn more](synonyms-type.md#multi-word-synonym-behavior). Support for multi-word synonyms is only available after this February 20 release date. Any existing multi-word synonyms require a full reindex to work, which you can request by [creating a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
@@ -71,6 +67,15 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.3.0
+
+_March 6, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) [!DNL Live Search] now supports PHP 8.4 for installations running Adobe Commerce 2.4.8-beta2.
+![Fix](../assets/fix.svg) Fixed an issue where the Search Adapter was not compatible with `psr/http-message:2.0`.
 
 ## [!DNL Live Search] 4.2.3
 
