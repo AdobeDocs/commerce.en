@@ -92,6 +92,8 @@ For Adobe Commerce Cloud Pro projects with multiple staging environments, you ca
 
 Magento Open Source customers using Adobe Payment Services may also request an additional data space. Contact the Payments team for prior approval of the additional data spaces before submitting a [Support request](https://experienceleague.adobe.com/home?support-tab=home#support) to request the testing data space.
 
+Customers who own multiple Cloud projects or on-premises (live/production) installations can also request additional production and testing data spaces for each project or instance by [submitting a Support request](https://experienceleague.adobe.com/home?support-tab=home#support).
+
 ### Select or create a SaaS project {#createsaasenv}
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license owner for your store:
