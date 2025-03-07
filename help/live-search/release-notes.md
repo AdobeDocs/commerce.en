@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Live Search] Release Notes'
-description: The latest release information for [!DNL Live Search] from Adobe Commerce.
+title: "[!DNL Live Search] Release Notes"
+description: "The latest release information for [!DNL Live Search] from Adobe Commerce."
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 ---
@@ -176,11 +176,9 @@ After installing version 3.1.1 or higher, enable the new indexers:
 
 After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
 
-## Previous versions
-
 +++3.1.1 and prior
 
-## [!DNL Live Search] 3.1.1
+### [!DNL Live Search] 3.1.1
 
 _September 15, 2023_
 
@@ -197,7 +195,7 @@ _September 15, 2023_
 ![New](../assets/new.svg) Category Preview only shows the selected category.
 ![New](../assets/new.svg) AEM CIF [Popover widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) and [PLP widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) components allow AEM sites to take advantage of [!DNL Live Search].
 
-### Updates
+#### Updates
 
 ![Fix](../assets/fix.svg) The table size of the Products and Price feeds have been greatly reduced. Tables `catalog_data_exporter_products` and `catalog_data_exporter_product_prices` should see a substantial size reduction.
 ![Fix](../assets/fix.svg) The 'Rules' tab is renamed to 'Search Rules'
@@ -209,23 +207,23 @@ _September 15, 2023_
 ![Fix](../assets/fix.svg) 'Ranking Type' has been renamed to 'Intelligent ranking'
 ![Fix](../assets/fix.svg) Minor bug fixes
 
-## [!DNL Live Search] 3.1.0
+### [!DNL Live Search] 3.1.0
 
 _September 1, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### Updates
+#### Updates
 
 ![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/).
 
-## [!DNL Live Search] 3.0.2
+### [!DNL Live Search] 3.0.2
 
 _August 7, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### New Features
+#### New Features
 
 ![New](../assets/new.svg) The following values have been added to the `storeDetails` object:
 
@@ -235,7 +233,7 @@ _August 7, 2023_
 - "Products per Page on Grid Default Value"
 - Store language
 
-### Updates
+#### Updates
 
 ![Fix](../assets/fix.svg) Catalog Service modules have been added to the metapackage to support advanced data retrieval.
 ![Fix](../assets/fix.svg) The **My Account** page navigation no longer disappears when using the Product Listing Page widget.
@@ -244,17 +242,17 @@ Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to acce
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-### Limitations
+#### Limitations
 
 Using the Live Search Product Listing Page widget causes Google Tag Manager to fail. Use the default Search Adapter if Google Tag Manager is needed.
 
-## [!DNL Live Search] 3.0.1
+### [!DNL Live Search] 3.0.1
 
 _March 14, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### New Features
+#### New Features
 
 ![New](../assets/new.svg) Product Item Card in Rules preview 
 ![New](../assets/new.svg) [Product Listing Page widget](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
@@ -268,7 +266,7 @@ _March 14, 2023_
 ![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
 ![New](../assets/new.svg) [!DNL Live Search] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
-### Updates
+#### Updates
 
 ![Fix](../assets/fix.svg) Configure Rules now automatically sorts positions uniquely
 ![Fix](../assets/fix.svg) Deleting an existing event now updates preview
@@ -276,7 +274,7 @@ _March 14, 2023_
 ![Fix](../assets/fix.svg) Remove faceting "Select Type" selector
 ![Fix](../assets/fix.svg) Added new "Editing" status for unsaved rules
 
-### Fixes
+#### Fixes
 
 ![Fix](../assets/fix.svg) Fixed server error when there is an unfinished event during save
 ![Fix](../assets/fix.svg) Fixed correctly deleting specific event when there are multiple events
@@ -284,8 +282,6 @@ _March 14, 2023_
 ![Fix](../assets/fix.svg) Fixed on second "Edit" click from details, [!DNL Live Search] page requiring reload
 ![Fix](../assets/fix.svg) Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
 ![Fix](../assets/fix.svg) Other minor bug fixes and performance updates
-
-
 ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default Luma and PWA search functionality.
 ![Bug](../assets/bug.svg) - Custom price attribute facets do not render correctly in Luma, but the API properly filters on them.
 
@@ -293,7 +289,7 @@ Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.1 to acce
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-## [!DNL Live Search] 2.0.5
+### [!DNL Live Search] 2.0.5
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
