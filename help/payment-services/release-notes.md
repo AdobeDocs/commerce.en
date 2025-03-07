@@ -100,7 +100,7 @@ _March 10, 2025_
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5825 --> Fixed an issue where Apple Pay mini-cart used incorrect estimated totals URL for logged-in customers. Now, [!DNL Payment Services] ensures accurate total calculations.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5826 -->  improved order management reliability by resolving an issue that caused an HTTP 500 error when changing the quote status to `inactive`.
+![Fixed issue](../assets/fix.svg)<!-- PAY-5826 --> Improved order management reliability by resolving an issue that caused an HTTP 500 error when changing the quote status to `inactive`.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5849 --> Fixed an issue where `LineItemProvider` threw exceptions for decimal quantities below 1. Now, [!DNL Payment Services] provides better support for fractional quantities.
 
