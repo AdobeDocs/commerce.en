@@ -22,7 +22,9 @@ If you would like to participate in the Adobe Commerce Optimizer early access pr
 
 >[!ENDSHADEBOX]
 
-[Discover Adobe Commerce Optimizer](https://business.adobe.com/products/magento/magento-commerce.html){target="_blank"} (video)
+Watch the following video for a high-level overview of Adobe Commerce Optimizer:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Who benefits the most from Adobe Commerce Optimizer?
 
@@ -35,6 +37,10 @@ Adobe Commerce Optimizer is for:
 ## Quick tour
 
 When you first launch Adobe Commerce Optimizer, you see the following:
+
+>[!NOTE]
+>
+>This image is an example of what Adobe Commerce Optimizer might look like and is subject to change.
 
 ![Adobe Commerce Optimizer UI](assets/user-interface.png)
 
