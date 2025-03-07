@@ -96,7 +96,7 @@ _March 10, 2025_
 
 ![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with **PayPal Merchant ID** and **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5816 --> Restored normal order functionality in [!DNL Payment Services] by resolving an issue that was causing errors in all order placements with version 2.9.0,
+![Fixed issue](../assets/fix.svg)<!-- PAY-5816 --> Restored normal order functionality in [!DNL Payment Services] by resolving an issue that was causing errors in all order placements with version v2.9.0.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5825 --> Fixed an issue where Apple Pay mini-cart used incorrect estimated totals URL for logged-in customers. Now, [!DNL Payment Services] ensures accurate total calculations.
 
