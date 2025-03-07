@@ -106,7 +106,7 @@ _March 10, 2025_
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5868 --> Fixed a gift card amount error during checkout. [!DNL Payment Services] now ensures accurate values during a checkout process.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5911 --> Resolved errors that occurred during shipment creation for orders placed using non-[!DNL Payment Services] online payment methods, enhancing overall reliability."
+![Fixed issue](../assets/fix.svg)<!-- PAY-5911 --> Resolved errors during shipment creation for orders placed using non-[!DNL Payment Services] online payment methods, enhancing overall reliability.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] now offers a smoother checkout experience by resolving an issue where Apple Pay failed to place an order when a different credit card was selected in the wallet.
 
