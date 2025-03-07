@@ -92,7 +92,7 @@ _March 10, 2025_
 
 ![New](../assets/new.svg)<!-- PAY-5747 --> [!DNL Payment Services] now captures the checkout location when placing an order, enabling merchants to analyze and optimize checkout flows.
 
-![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] introduces a configurable scope in the extension (MBA per Store), allowing merchants to manage payment settings at the store level.
+![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] introduces a configurable scope in the extension (MBA per Store), allowing merchants to manage payment settings at the store level. Allowed scopes are website and store view.
 
 ![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with **PayPal Merchant ID** and **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
 
