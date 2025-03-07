@@ -90,7 +90,6 @@ _March 10, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-5747 --> [!DNL Payment Services] now captures the checkout location when placing an order, enabling merchants to analyze and optimize checkout flows.
 
 ![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] introduces a configurable scope in the extension (MBA per Store), allowing merchants to manage payment settings at the store view level. Allowed scopes are website and store view.
 
