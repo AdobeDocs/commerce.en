@@ -94,21 +94,21 @@ _March 10, 2025_
 
 ![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] introduces a configurable scope in the extension (MBA per Store), allowing merchants to manage payment settings at the store level.
 
-![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with a **PayPal Merchant ID**, and a **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
+![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with **PayPal Merchant ID** and **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5816 --> Restored normal order functionality in [!DNL Payment Services] due to an error occurring in all order placements with v2.9.0.
+![Fixed issue](../assets/fix.svg)<!-- PAY-5816 --> Restored normal order functionality in [!DNL Payment Services] by resolving an issue that was causing errors in all order placements with version 2.9.0,
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5825 --> Fixed an issue where Apple Pay mini-cart used incorrect estimated totals URL for logged-in customers. Now, [!DNL Payment Services] ensures accurate total calculations.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5826 --> Resolved an issue where setting a quote as inactive provoked an HTTP 500 error. [!DNL Payment Services] improves order management reliability.
+![Fixed issue](../assets/fix.svg)<!-- PAY-5826 -->  improved order management reliability by resolving an issue that caused an HTTP 500 error when changing the quote status to `inactive`.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5849 --> Fixed an issue where `LineItemProvider` threw exceptions for decimal quantities below 1. Now, [!DNL Payment Services] provides better support for fractional quantities.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5868 --> Fixed a gift card amount error during checkout. [!DNL Payment Services] now ensures accurate values during a checkout process.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5911 --> [!DNL Payment Services] fixes errors occurring during shipment creation for orders placed with non [!DNL Payment Services] online payment methods.
+![Fixed issue](../assets/fix.svg)<!-- PAY-5911 --> Resolved errors that occurred during shipment creation for orders placed using non-[!DNL Payment Services] online payment methods, enhancing overall reliability."
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] has a smoother checkout process due to a resolved issue where Apple Pay failed to place an order when selecting a different credit card in the wallet.
+![Fixed issue](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] now offers a smoother checkout experience by resolving an issue where Apple Pay failed to place an order when a different credit card was selected in the wallet.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] no longer redirects customers to the order review page when Apple Pay fails, preventing unnecessary checkout disruptions.
 
