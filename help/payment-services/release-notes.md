@@ -84,6 +84,46 @@ _June 28, 2021_
 
 +++
 
+## v2.11.0
+
+_March 10, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> [!DNL Payment Services] now includes Luma SDK integration, improving compatibility and performance for storefronts using the Luma theme.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Completed the Luma integration with SDK, ensuring a seamless payment experience for merchants and customers using Luma-based storefronts.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> [!DNL Payment Services] now captures the checkout location when placing an order, enabling merchants to analyze and optimize checkout flows.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Fixed an issue where the Apple Pay mini-cart used an incorrect estimate-totals URL for logged-in customers, ensuring accurate total calculations.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Resolved an issue where setting a quote as inactive resulted in an HTTP 500 error, improving order management reliability.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Fixed a gift card amount error, ensuring accurate redemption values during checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Resolved an issue where Apple Pay failed to place an order when selecting a different credit card in the wallet, ensuring a smoother checkout process.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> When Apple Pay fails, customers are no longer redirected to the order review page, preventing unnecessary checkout disruptions.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Addressed SDK loading issues to ensure a more stable and efficient integration with Adobe Commerce storefronts.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Introduced a configurable scope in the extension for APS (MBA per Store), allowing merchants to manage payment settings at the store level.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Improved security by sanitizing all text sent from the extension, preventing potential vulnerabilities related to input handling.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Added PayPal seller ID & status to the Commerce config page, providing merchants with better visibility into their PayPal account status.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Cleaned up MFTF tests for Payment Services, improving test coverage and maintainability.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Resolved errors occurring during shipment creation for orders placed using non-APS online payment methods.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Fixed an issue where LineItemProvider threw exceptions for decimal quantities below 1, ensuring better support for fractional quantities.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Addressed a performance issue on add to cart in the Cloud environment, improving responsiveness for customers.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Resolved a 'No such entity with cartId' error that occurred on all order placements with v2.9.0, restoring normal order functionality.
+
 ## v2.10.3
 
 _February 24, 2025_
