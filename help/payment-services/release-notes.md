@@ -91,7 +91,7 @@ _March 11, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 
-![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] introduces a configurable scope in the extension (MBA per Store), allowing merchants to manage payment settings at the store view level. Allowed scopes are website and store view.
+![New](../assets/new.svg)<!-- PAY-5938 -->This version introduces a configurable scope for [multiple business accounts](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) (MBA) per Store. Now, [!DNL Payment Services] allows merchants to manage payment settings at the store view level. Its allowed scopes are `website` and `store-view`.
 
 ![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with **PayPal Merchant ID** and **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
 
