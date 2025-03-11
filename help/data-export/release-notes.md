@@ -24,10 +24,8 @@ Updates include:
 
 ## 103.3.21 Release
 
-![Fix](../assets/fix.svg) Sync product related info by given list of SKUs. <!--MDEE-606-->
-![Fix](../assets/fix.svg) Deprecated Functionality is detected in the last release. <!--MDEE-1002-->
-![Fix](../assets/fix.svg) Sync product related info by given list of SKUs. <!--MDEE-606-->
-![Fix](../assets/fix.svg) Sync product related info by given list of SKUs. <!--MDEE-606-->
+![Fix](../assets/new.svg) Added functionality to synchronize product information based on a provided list of SKUs using CLI parameters. <!--MDEE-606-->
+![Fix](../assets/fix.svg) Reduced potential compatibility issues with PHP 8.4 by addressing deprecated functionality. <!--MDEE-1002-->
 
 ## 103.3.20 Release
 
