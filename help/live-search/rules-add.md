@@ -7,6 +7,10 @@ exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 
 To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated events. Then, complete the rule details, test the results, and publish the rule.
 
+>[!NOTE]
+>
+>Any rule you create is overwritten if the shopper sorts the search results by name, ascending, descending, and so on. Search results cannot be sorted based on the rule and by any custom order specified by the shopper.
+
 ## Add a rule
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
