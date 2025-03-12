@@ -86,15 +86,15 @@ To learn more about reindexing and indexers, see the [Manage the indexers](https
 
 ## Configure scope via CLI
 
-[!DNL Payment Services] allows a merchant to use [multiple PayPal accounts](settings.md#use-multiple-paypal-accounts). Now, you can change scopes for these accounts via CLI.
+[!DNL Payment Services] allows merchants to use [multiple PayPal accounts](settings.md#use-multiple-paypal-accounts). Now, you can change scopes for these accounts via CLI.
 
-To change the scope to website:
+To set the scope to the `website` level, run:
 
 ``` bash
 bin/magento config:set payment/payment_services/mba_scoping_level website
 ```
 
-To change the scope to store view:
+To set the scope to the `store-view` level, use:
 
 ``` bash
 bin/magento config:set payment/payment_services/mba_scoping_level store
@@ -103,6 +103,12 @@ bin/magento config:set payment/payment_services/mba_scoping_level store
 >[!TIP]
 >
 > If you want to change scope to store view level, contact your [!DNL Payment Services] sales representative.
+
+Once changing scope, flush cache to show changes:
+
+``` bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Configure L2/L3 processing
 
