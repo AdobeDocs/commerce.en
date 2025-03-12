@@ -1,9 +1,9 @@
 ---
-title: Manage sync operations from the command line
+title: Sync feeds using the Commerce CLI
 description: Learn how to use the command-line interface commands to manage feeds and processes for the [!DNL data export extension] for Adobe Commerce SaaS services.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 ---
-# Manage sync operations from the command line
+# Sync feeds using the Commerce CLI
 
 Developers and system administrators can manage synchronization operations for SaaS data export using the [Adobe Commerce command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI). The `saas:resync` command is included in the `magento/saas-export` package.
 
