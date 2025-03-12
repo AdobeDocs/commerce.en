@@ -34,9 +34,9 @@ bin/magento saas:resync --feed categories
 bin/magento saas:resync --feed categoryPermissions
 ```
 
-## Resync using CLI commands and options
+## Resync using CLI commands
 
-Review the following examples to run resync operations using the `bin/magento saas:resync` CLI command. Command options are described in the [command options](#command-options) section.
+Review the following examples to run resync operations using the `bin/magento saas:resync` CLI command. Command options are described in [command options](#command-options).
 
 | Resync operation                                                                | Command example                                                                                   |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
