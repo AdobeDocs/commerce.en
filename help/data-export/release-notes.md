@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.3.21 Release
+
+![Fix](../assets/new.svg) Added functionality to partially synchronize `product`, `productOverrides`, and `productAttributes` feeds  based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the `bin/magento saas:resync --feed=<FEED_NAME>` CLI command. <!--MDEE-606-->
+![Fix](../assets/fix.svg) Reduced potential compatibility issues with PHP 8.4 by addressing deprecated functionality. <!--MDEE-1002-->
+
 ## 103.3.20 Release
 
 ![Fix](../assets/fix.svg) Fixed untraceable `BulkException` errors in the `cron.log` by improving messaging for errors related to Catalog Data Export cron job failures.<!--MDEE-966-->
