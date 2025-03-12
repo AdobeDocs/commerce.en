@@ -94,7 +94,7 @@ To set the scope to the `website` level, run:
 bin/magento config:set payment/payment_services/mba_scoping_level website
 ```
 
-To set the scope to the `store-view` level, use:
+To set the scope to the `store` level, use:
 
 ``` bash
 bin/magento config:set payment/payment_services/mba_scoping_level store
@@ -102,7 +102,7 @@ bin/magento config:set payment/payment_services/mba_scoping_level store
 
 >[!TIP]
 >
-> If you want to change scope to store view level, contact your [!DNL Payment Services] sales representative.
+> If you want to change scope to store level, contact your [!DNL Payment Services] sales representative.
 
 Once changing scope, flush cache to show changes:
 
