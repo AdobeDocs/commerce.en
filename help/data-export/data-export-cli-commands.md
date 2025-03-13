@@ -72,7 +72,7 @@ bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --i
 
 ## `--cleanup-feed`
 
-Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productOverrides`, and `prices` feeds.
+Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `product`, `productOverrides`, and `prices` feeds.
 
 >[!IMPORTANT]
 >Use only after environment cleanup. Can cause data sync issues in Commerce Services.
