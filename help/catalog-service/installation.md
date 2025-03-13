@@ -18,7 +18,7 @@ Install the Catalog Service to request and receive product data from a Commerce 
 **Software requirements**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2, 8.3
+- PHP 8.1, 8.2, 8.3, 8.4
 - Composer: 2.x
 
 **Supported platforms**
