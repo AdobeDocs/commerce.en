@@ -66,6 +66,7 @@ By default, entities are specified by product SKU. Use `--id-type=ProductID` to 
 
 ```shell
 bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
+
 bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
 ```
 
