@@ -56,7 +56,7 @@ See the following sections for option descriptions with examples.
 >[!NOTE]
 >For advanced options like batch size and multi-threading, see [Customize export processing](customize-export-processing.md).
 
-## --by-ids
+## `--by-ids`
 
 Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, and `productOverrides` feeds.
 
@@ -70,7 +70,7 @@ bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
 bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
 ```
 
-## --cleanup-feed
+## `--cleanup-feed`
 
 Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productOverrides`, and `prices` feeds.
 
@@ -83,7 +83,7 @@ Cleans the feed indexer table before reindexing and sending data to SaaS. Only s
 bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
 ```
 
-## --continue-resync
+## `--continue-resync`
 
 Resumes an interrupted resync operation. Only supported for `products`, `productAttributes`, and `productOverrides` feeds.
 
@@ -93,7 +93,7 @@ Resumes an interrupted resync operation. Only supported for `products`, `product
 bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
 ```
 
-## --dry-run
+## `--dry-run`
 
 Runs the feed reindex process without submitting to SaaS or saving to the feed table. Use to validate data.
 
@@ -105,15 +105,11 @@ Add the `EXPORTER_EXTENDED_LOG=1` environment variable to save payload to `var/l
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
 ```
 
-## --feed
+## `--feed`
 
 Required. Specifies the feed entity to resync.
 
 Available feeds:
-
-- For legacy export feeds, the synchronization process does not truncate indexed data in the feeds table. Instead, it resends all data to the Adobe Commerce service.
-
-- For immediate export feeds, this option is ignored if specified. For these feeds, the resync process does not truncate the index and only resynchronizes updates or items that previously failed.
 
 - `categories`
 - `categoryPermissions`
@@ -133,14 +129,14 @@ Available feeds:
 bin/magento saas:resync --feed='<FEED_NAME>'
 ```
 
-## --no-reindex
+## `--no-reindex`
 
 Resubmits existing catalog data to [!DNL Commerce Services] without reindexing. Not supported for product-related feeds.
 
-Behavior varies by export mode:
+Behavior varies by [export mode](data-synchronization.md#synchronization-modes):
 
-- Legacy mode: Resubmits all data without truncating
-- Immediate mode: Option is ignored, only syncs updates/failures
+- Legacy mode: Resubmits all data without truncating.
+- Immediate mode: Option is ignored, only syncs updates/failures.
 
 **Example:**
 
