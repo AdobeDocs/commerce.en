@@ -66,7 +66,7 @@ By default, entities are specified by product SKU. Use `--id-type=ProductID` to 
 
 ```shell
 bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids=<ID-1>,<ID-2>,<ID-3> --id-type='productId'
+bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
 ```
 
 ## --cleanup-feed
@@ -74,7 +74,7 @@ bin/magento saas:resync --feed='<FEED_NAME>' --by-ids=<ID-1>,<ID-2>,<ID-3> --id-
 Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productOverrides`, and `prices` feeds.
 
 >[!IMPORTANT]
->Use only after environment cleanup. May cause data sync issues in Commerce Services.
+>Use only after environment cleanup. Can cause data sync issues in Commerce Services.
 
 **Example:**
 
