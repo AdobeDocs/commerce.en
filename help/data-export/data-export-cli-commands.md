@@ -18,6 +18,7 @@ Monitor sync operations in the `var/log/saas-export.log` file.
 ## Initial Sync
 
 >[!NOTE]
+>
 >Initial sync runs automatically when Live Search or Product Recommendations are enabled. Manual commands are not needed.
 
 When you trigger a `saas:resync` from the command line, depending on your catalog size, it can take from a few minutes to a few hours for the data to update.
@@ -54,7 +55,8 @@ See the following sections for option descriptions with examples.
 
 
 >[!NOTE]
->For advanced options like batch size and multi-threading, see [Customize export processing](customize-export-processing.md).
+>
+>For advanced options to manage export processing, see [Customize export processing](customize-export-processing.md).
 
 ## `--by-ids`
 
@@ -72,9 +74,10 @@ bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --i
 
 ## `--cleanup-feed`
 
-Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `product`, `productOverrides`, and `prices` feeds.
+Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productOverrides`, and `prices` feeds.
 
 >[!IMPORTANT]
+>
 >Use only after environment cleanup. Can cause data sync issues in Commerce Services.
 
 **Example:**
