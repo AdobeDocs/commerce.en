@@ -12,7 +12,7 @@ feature: Services
 - Export scheduling and performance {#performance}
   - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
   - [Improve export performance](customize-export-processing.md)
-- [CLI Command reference](data-export-cli-commands.md)
+- [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
 - [Review logs and troubleshoot](troubleshooting-logging.md)
 - [Manage the SaaS data export extension](manage-extension.md)
 - Extensibility {#extensibility}
