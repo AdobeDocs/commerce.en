@@ -111,6 +111,10 @@ Required. Specifies the feed entity to resync.
 
 Available feeds:
 
+- For legacy export feeds, the synchronization process does not truncate indexed data in the feeds table. Instead, it resends all data to the Adobe Commerce service.
+
+- For immediate export feeds, this option is ignored if specified. For these feeds, the resync process does not truncate the index and only resynchronizes updates or items that previously failed.
+
 - `categories`
 - `categoryPermissions`
 - `inventoryStockStatus`
