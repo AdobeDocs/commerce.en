@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.3.21 Release
 
-![Fix](../assets/new.svg) Added functionality to partially synchronize `product`, `productOverrides`, and `productAttributes` feeds  based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
+![Fix](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds  based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
 
 ```shell
 `bin/magento saas:resync --feed=<FEED_NAME>`

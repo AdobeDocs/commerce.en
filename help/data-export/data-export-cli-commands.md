@@ -90,14 +90,14 @@ Resumes an interrupted resync operation. Only supported for `products`, `product
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='products' --continue-resync
+bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
 ```
 
 ## --dry-run
 
 Runs the feed reindex process without submitting to SaaS or saving to the feed table. Use to validate data.
 
-Add the`EXPORTER_EXTENDED_LOG=1` environment variable to save payload to `var/log/saas-export.log`.
+Add the `EXPORTER_EXTENDED_LOG=1` environment variable to save payload to `var/log/saas-export.log`.
 
 **Example:**
 
@@ -126,7 +126,7 @@ Available feeds:
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' 1
+bin/magento saas:resync --feed='<FEED_NAME>'
 ```
 
 ## --no-reindex
