@@ -55,7 +55,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The maximum number of conditions per rule is 10.
 - The maximum number of events per rule is 25.
 - To avoid unpredictable results in paginated responses, the number of pinned products should not exceed the requested page size.
-- Any rule you create is ignored if the shopper sorts the search results by name, ascending, descending, and so on.
+- Any rule you create is ignored if the shopper manually sorts the search results by name, ascending, descending, and so on.
 
 ## Synonyms
 

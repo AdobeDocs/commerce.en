@@ -9,7 +9,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
 >[!NOTE]
 >
->Any rule you create is ignored if the shopper sorts the search results by name, ascending, descending, and so on.
+>Any rule you create is ignored if the shopper manually sorts the search results by name, ascending, descending, and so on.
 
 ## Add a rule
 
