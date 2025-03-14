@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Merchandising Services]' overview
+title: "[!DNL Merchandising Services] overview"
 description: Learn how the [!DNL Merchandising Services] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy
 hidefromtoc: yes
 hide: yes
