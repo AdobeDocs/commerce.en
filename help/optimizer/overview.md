@@ -1,14 +1,14 @@
 ---
-title: Adobe Commerce Optimizer
-description: Learn how you can use Adobe Commerce Optimizer to deliver a fast, performant storefront with a scalable catalog that allows you to optimize your existing eCommerce backend by increasing traffic and driving higher engagement and conversion.
+title: '[!DNL Adobe Commerce Optimizer]'
+description: Learn how you can use [!DNL Adobe Commerce Optimizer] to deliver a fast, performant storefront with a scalable catalog that allows you to optimize your existing eCommerce backend by increasing traffic and driving higher engagement and conversion.
 hide: yes
 recommendations: noCatalog
 ---
-# What is Adobe Commerce Optimizer?
+# What is [!DNL Adobe Commerce Optimizer]?
 
-Adobe Commerce Optimizer enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
+[!DNL Adobe Commerce Optimizer] enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
 
-With Adobe Commerce Optimizer, you can:
+With [!DNL Adobe Commerce Optimizer], you can:
 
 - Grow and scale your catalog without re-platforming your entire commerce stack.
 - Ingest catalog data from any source.
@@ -18,17 +18,17 @@ With Adobe Commerce Optimizer, you can:
 
 >[!BEGINSHADEBOX]
 
-If you would like to participate in the Adobe Commerce Optimizer early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+If you would like to participate in the [!DNL Adobe Commerce Optimizer] early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 >[!ENDSHADEBOX]
 
-Watch the following video for a high-level overview of Adobe Commerce Optimizer:
+Watch the following video for a high-level overview of [!DNL Adobe Commerce Optimizer]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
-## Who benefits the most from Adobe Commerce Optimizer?
+## Who benefits the most from [!DNL Adobe Commerce Optimizer]?
 
-Adobe Commerce Optimizer is for:
+[!DNL Adobe Commerce Optimizer] is for:
 
 - Merchants who want to maintain their existing backend commerce system and only transform storefront experiences.
 - Businesses where a third-party system manages the cart and checkout lifecycle.
@@ -36,13 +36,13 @@ Adobe Commerce Optimizer is for:
 
 ## Quick tour
 
-When you first launch Adobe Commerce Optimizer, you see the following:
+When you first launch [!DNL Adobe Commerce Optimizer], you see the following:
 
 >[!NOTE]
 >
->This image is an example of what Adobe Commerce Optimizer might look like and is subject to change.
+>This image is an example of what [!DNL Adobe Commerce Optimizer] might look like and is subject to change.
 
-![Adobe Commerce Optimizer UI](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -55,7 +55,7 @@ Preview key metrics and activities for your store.
 Create personalized experiences for your shoppers through product discovery and recommendations.
 
 - **Product Discovery** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers will get the right products at the right time.  
-- **Recommendations** - Uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your catalog, results in a highly engaging, relevant, and personalized experience. Recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations directly from Adobe Commerce Optimizer.
+- **Recommendations** - Uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your catalog, results in a highly engaging, relevant, and personalized experience. Recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations directly from [!DNL Adobe Commerce Optimizer].
 
 >[!TAB Catalog]
 
@@ -68,7 +68,7 @@ Define your channels and policies. The catalog not only contains your product da
 
 View valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
 
-- **Data Sync** - Displays an overview of the synchronization status for product data transferred from their data source (PIM, ERP, and so on) into Adobe Commerce Optimizer. That product data is displayed within the **[!UICONTROL Catalog Service]**, **[!UICONTROL Product Discovery]**, and **[!UICONTROL Recommendations]** tabs.
+- **Data Sync** - Displays an overview of the synchronization status for product data transferred from their data source (PIM, ERP, and so on) into [!DNL Adobe Commerce Optimizer]. That product data is displayed within the **[!UICONTROL Catalog Service]**, **[!UICONTROL Product Discovery]**, and **[!UICONTROL Recommendations]** tabs.
 - **Eventing** - Displays storefront eventing data which powers Product Discovery and Recommendations. The **Eventing** page lets the merchant verify that they have implemented storefront eventing correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any eventing issues.
 
 >[!ENDTABS]
@@ -78,13 +78,13 @@ View valuable insights into the availability of product data for your storefront
 Key capabilities include:
 
 - **Third-party catalog ingestion** - Ingest catalog data from any third-party source (PIM, ERP, and so on). Your catalog data is directly ingested into the merchandising services layer, which is a SaaS component called composable catalog data model (CCDM).
-- **Composable catalog data model (CCDM)** - CCDM is the foundational piece of Adobe Commerce Optimizer. CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. CCDM provides building blocks that merchants can use to create and manage catalogs at scale. Within Adobe Commerce Optimizer, you can manage your catalog by creating channels and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using product discovery​, product recommendations​, and intelligent merchandising. Learn more about [CCDM](https://experienceleague.adobe.com/en/docs/commerce/catalog-data-model/overview).
+- **Composable catalog data model (CCDM)** - CCDM is the foundational piece of [!DNL Adobe Commerce Optimizer]. CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. CCDM provides building blocks that merchants can use to create and manage catalogs at scale. Within [!DNL Adobe Commerce Optimizer], you can manage your catalog by creating channels and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using product discovery​, product recommendations​, and intelligent merchandising. Learn more about [CCDM](https://experienceleague.adobe.com/en/docs/commerce/catalog-data-model/overview).
 - **Success metrics** - Provides real-time insights into the performance of your commerce initiatives. You can view before and after results of specific KPIs and evaluate the impact of changes and optimize for better results.
 - **Commerce storefront powered by Edge Delivery** - With Edge delivery, you can launch your site quickly using prebuilt storefront components with integrated commerce functionality — including product listing pages, product detail pages, cart, and checkout.
 - **Third-party cart and checkout** - Use API mesh and App builder to integrate with third-party cart and checkout systems.
 
 ## Architecture
 
-The following diagram describes the basic architecture of Adobe Commerce Optimizer, from catalog data ingestion to the relationship between merchandising services, your storefront, and the integration with a third-party cart and checkout process.
+The following diagram describes the basic architecture of [!DNL Adobe Commerce Optimizer], from catalog data ingestion to the relationship between merchandising services, your storefront, and the integration with a third-party cart and checkout process.
 
-![Adobe Commerce Optimizer Architecture](assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture](assets/architecture.png)
