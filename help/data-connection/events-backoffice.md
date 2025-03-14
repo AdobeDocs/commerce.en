@@ -3,6 +3,7 @@ title: Back Office Events
 description: Learn what data each back office event captures.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
+exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
 ---
 # [!DNL Data Connection] Back Office Events
 

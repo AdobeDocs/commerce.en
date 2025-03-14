@@ -4,6 +4,7 @@ description: Collection of release notes for all Commerce services
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 feature: Release Notes, Services
+exl-id: 2fa88976-f604-4c13-873b-5bdae37d55b3
 ---
 # Release notes for Commerce Services
 

@@ -1,6 +1,7 @@
 ---
-title: "Add Synonyms"
-description: "Add [!DNL Live Search] synonyms to improve response to search requests."
+title: Add Synonyms
+description: Add [!DNL Live Search] synonyms to improve response to search requests.
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
 ---
 # Add Synonyms
 
@@ -24,7 +25,6 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 1. Accept the default **Two-way** option.
 
    ![Add two-way synonym](assets/synonym-add-two-way.png)
-
 
 1. Enter the **Keyword** term or phrase to be matched.
 1. Enter the **Expansion** term(s) that you want to add as synonyms for the keyword. Separate multiple terms with a comma.

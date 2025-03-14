@@ -3,6 +3,7 @@ title: Create Custom Events
 description: Learn how to create custom events to connect your Adobe Commerce data to other Adobe DX products.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
 ---
 # Create Custom Events
 

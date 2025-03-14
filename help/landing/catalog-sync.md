@@ -2,8 +2,8 @@
 title: Catalog Sync
 description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services].
 feature: Catalog Management, Data Import/Export, Catalog Service
+exl-id: 99f96b93-b036-490c-8c57-40463a0de365
 ---
-
 # Catalog Sync
 
 >[!NOTE]

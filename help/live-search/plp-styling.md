@@ -1,6 +1,7 @@
 ---
 title: Product Listing Page Widget
 description: Enabling and styling the [!DNL Live Search Product Listing Page Widget]
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
 ---
 # Product Listing Page Widget
 

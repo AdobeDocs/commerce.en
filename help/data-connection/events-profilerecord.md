@@ -3,6 +3,7 @@ title: Profile Records
 description: Learn what data a profile record captures.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
+exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
 ---
 # [!DNL Data Connection] Profile Records
 

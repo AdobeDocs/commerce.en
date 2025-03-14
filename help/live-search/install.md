@@ -1,7 +1,8 @@
 ---
-title: "Get Started with [!DNL Live Search]"
-description: "Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce."
+title: Get Started with [!DNL Live Search]
+description: Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce.
 role: Admin, Developer
+exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 ---
 # Set up for success with [!DNL Live Search]
 
@@ -48,6 +49,10 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 >[!NOTE]
 >
 >As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled in with the [!DNL Live Search] installation.
+
+>[!IMPORTANT]
+>
+>As of [!DNL Live Search] 4.0.0, the Search Adapter is deprecated. Going forward, the Search Adapter will be updated only to address security issues.
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 

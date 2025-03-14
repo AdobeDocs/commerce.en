@@ -4,6 +4,7 @@ description: Use financial reporting data to reconcile reporting with non-Commer
 role: User
 level: Intermediate
 feature: Payments, Checkout, Data Import/Export
+exl-id: 6391b86d-10cc-4280-9e8a-f0cf95fcc6e6
 ---
 # Available Data
 

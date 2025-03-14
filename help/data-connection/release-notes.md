@@ -2,6 +2,7 @@
 title: Release Notes
 description: The latest release information for the [!DNL Data Connection] extension from Adobe Commerce.
 feature: Personalization, Integration, Release Notes
+exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
 ---
 # Release Notes
 

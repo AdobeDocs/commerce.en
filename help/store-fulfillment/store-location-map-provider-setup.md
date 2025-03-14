@@ -4,6 +4,7 @@ description: Configure a distance provider to support store location mapping in 
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
+exl-id: 6ceafdac-b409-458b-ad65-fb22c1bcadc2
 ---
 # Store Location and Mapping Setup
 

@@ -3,6 +3,7 @@ title: Behavioral Events
 description: Learn what data each behavioral event captures.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
+exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
 ---
 # [!DNL Data Connection] Behavioral Events
 

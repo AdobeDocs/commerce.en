@@ -1,7 +1,8 @@
 ---
-title: 'Boundaries and Limits'
+title: Boundaries and Limits
 description: Learn about the boundaries and limits for [!DNL Live Search] to ensure it meets the needs of your business.
 role: Admin, Developer
+exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 ---
 # Boundaries and limits
 
@@ -58,7 +59,6 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 ## Synonyms
 
 - [!DNL Live Search] can manage up to 200 [synonyms](synonyms.md) per store view.
-- Multiword synonyms might not always work as expected. Be sure to test these synonyms in the staging environment before using them in production, as they can potentially have an adverse effect on relevancy.
 
 ## Category merchandising
 

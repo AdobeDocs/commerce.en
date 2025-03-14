@@ -2,8 +2,9 @@
 title: Review logs and troubleshoot
 description: Learn how to troubleshoot [!DNL data export] errors using the data-export and saas-export logs.
 feature: Services
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 ---
-# Review Logs and Troubleshoot
+# Review logs and troubleshoot
 
 The [!DNL data export] extension provides logs to track data collection and synchronization processes.
 
@@ -13,7 +14,7 @@ Logs are available in the `var/log` directory on the Commerce application server
 
 | log name | filename | description |
 |-----------------| ----------| -------------|
-| SaaS data export log |`commerce-data-export.log` | Provides information about data export activities such as entity events and full resync triggers.  Each log record has a specific structure and provides information about the feed, operation, status, elapsed time, process id, and the caller.|
+| SaaS data export log |`commerce-data-export.log` | Provides information about data export activities, such as entity events and full resync triggers.  Each log record has a specific structure and provides information about the feed, operation, status, elapsed time, process id, and the caller.|
 | SaaS data export error log | `data-export-errors.log` | Provides error messages and stack traces for errors that occur during the data synchronization process.|
 | SaaS export log | `saas-export.log` | Provides information about the data sent to Commerce SaaS services.|
 | SaaS export error log | `saas-export-errors.log` | Provides information about errors that occur when sending data to Commerce SaaS services.|
@@ -30,8 +31,8 @@ Each log record has the following structure.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -44,10 +45,10 @@ The following table describes the operation types that can be recorded in the lo
 
 | Operation                  | Description                                                                                                                                 | Caller example                                                                       |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| full sync | Full sync collects and sends all data to the SaaS for a given feed. | `bin/magento saas:resync --feed=products`                                              |
-| partial reindex            | Partial sync collects and sends data to SaaS for only updated entities in a given feed. This log is present only if updated entities exist.              | `bin/magento cron:run --group=index`                                                   |
-| retry failed items         | Resends items for a given feed to SaaS if the previous sync operation failed due to a Commerce application or server error. This log is present only if failed items exist.| `bin/magento cron:run --group=saas_data_exporter`  (any "*_data_exporter" cron group)  |
-| full sync (legacy)          | Full sync for a given feed in legacy export mode.                                                   | `bin/magento saas:resync --feed=categories`                                            |
+| full sync | Collects and sends all data to the SaaS for a given feed. | `bin/magento saas:resync --feed=products`                                              |
+| partial reindex            | Collects and sends data to SaaS for only updated entities in a given feed. This log is present only if updated entities exist.              | `bin/magento cron:run --group=index`                                                   |
+| retry failed items         | Resend items for a given feed to SaaS if the previous sync operation failed due to a Commerce application or server error. This log is present only if failed items exist.| `bin/magento cron:run --group=saas_data_exporter`  (any "*_data_exporter" cron group)  |
+| full sync (legacy)          | Collects and sends all data to SaaS for a given feed in legacy export mode.                                                   | `bin/magento saas:resync --feed=categories`                                            |
 | partial reindex (legacy)   | Sends updated entities to SaaS for a given feed in legacy export mode. This log is present only if updated entities exist.             | `bin/magento cron:run --group=index`                                                   |
 | partial sync (legacy)      | Sends updated entities to SaaS for a given feed in legacy export mode. This log is present only if updated entities exist.              | `bin/magento cron:run --group=saas_data_exporter` (any "*_data_exporter" cron group)   |
 
@@ -117,12 +118,12 @@ This example adds a rule that allows you to query New Relic logs by specific fee
 
 ## Troubleshooting
 
-If data is missing or incorrect in Commerece Services, check the logs to see if a problem occurred during the sync from the Adobe Commerce instance to the Commerce Service platform. If needed, use extended logging to add additional information to the logs for troubleshooting.
+If data is missing or incorrect in Commerce Services, check the logs for messages about errors that occurred during the sync from Adobe Commerce to the Commerce Services platform. If needed, use extended logging to add additional information to the logs for troubleshooting.
 
-- commerce-data-export-errors.log - if an error happened during collecting phase
-- saas-export-errors.log - if an error happened during transmitting phase
+- The Data Export error log (`commerce-data-export-errors.log`) captures errors that occur during the collection phase.
+- The SaaS Export error log (`saas-export-errors.log`) captures errors that occur during the transmission phase.
 
-If you see errors not related to configuration or third-party extensions, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) with as much information as possible.
+If you see errors not related to configuration or third-party extensions, submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) with as much information as possible.
 
 ### Resolve catalog sync issues {#resolvesync}
 
@@ -137,26 +138,19 @@ When you trigger a data resync, it can take up to an hour for the data to update
 
 #### Sync not running
 
-If the sync is not running on a schedule or nothing is synced, see this [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) article.
+If the sync is not running on a schedule or nothing is synced, see this [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) article.
 
 #### Sync failed
 
-If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Extended logging
 
-For additional log information, you can use environment variables to extend logs with additional data for tracking and troubleshooting.
-
-There are two log files in the `var/log/` directory:
-
-- commerce-data-export-errors.log - if an error happened during collecting phase
-- saas-export-errors.log - if an error happened during transmitting phase
-
-You can use environment variables to extend logs with additional data for tracking and troubleshooting.
+Use environment variables to extend logs with additional data for tracking and troubleshooting. Add the environment variable to the command line when you run data export CLI commands as shown in the following examples.
 
 ### Check the feed payload
 
-Include the feed payload in the SaaS export log by adding te `EXPORTER_EXTENDED_LOG=1` environment variable when you resync the feed.
+Include the feed payload in the SaaS export log by adding the `EXPORTER_EXTENDED_LOG=1` environment variable when you resync the feed.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products

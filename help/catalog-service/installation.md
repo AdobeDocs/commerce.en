@@ -1,6 +1,7 @@
 ---
 title: Onboarding and Installation
-description: "Learn how to install [!DNL Catalog Service]"
+description: Learn how to install [!DNL Catalog Service]
+exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 ---
 # Onboarding and Installation
 
@@ -17,7 +18,7 @@ Install the Catalog Service to request and receive product data from a Commerce 
 **Software requirements**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2, 8.3
+- PHP 8.1, 8.2, 8.3, 8.4
 - Composer: 2.x
 
 **Supported platforms**

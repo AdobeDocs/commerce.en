@@ -3,6 +3,7 @@ title: Install [!DNL Data Connection]
 description: Learn how to install, update, and uninstall the [!DNL Data Connection] extension from Adobe Commerce.
 role: Admin, Developer
 feature: Install
+exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
 ---
 # Install [!DNL Data Connection]
 

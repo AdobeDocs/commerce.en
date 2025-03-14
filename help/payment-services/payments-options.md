@@ -2,6 +2,7 @@
 title: Payment Options
 description: Set the payment options to customize the methods available for your store customers.
 feature: Payments, Checkout, Configuration
+exl-id: ed65728d-45df-45a0-9d55-826e1b575f11
 ---
 # Payment Options
 

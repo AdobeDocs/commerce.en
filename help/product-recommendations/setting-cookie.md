@@ -1,6 +1,7 @@
 ---
 title: Handle Cookie Restrictions
 description: Learn how product recommendations handle cookie restrictions.
+exl-id: 7e7342db-b903-4105-93c0-e4022c81673b
 ---
 # Handle Cookie Restrictions
 

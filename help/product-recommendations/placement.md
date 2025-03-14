@@ -1,6 +1,7 @@
 ---
 title: Placement and Labels
 description: Learn where you can place recommendations on various pages on your site and suggestions for frequently used labels for each recommendation type.
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
 ---
 # Placement and Labels
 
@@ -45,8 +46,8 @@ _Recommendation at top of search results_
 
 The following table lists the storefront pages where you can place recommendations and the recommendation types allowed on each page.
 
-|Page|Placement Recommendations|
-|---|---|
+|Page|Placement Recommendations|Types|
+|---|---|---|
 |Home page|At the top of main content<br>At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Recommended for you<br>Trending|
 |Category|At the top of main content<br>At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Recommended for you<br>Trending|
 |Product Detail|At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Viewed this, viewed that<br>Viewed this, bought that<br>Bought this, bought that<br>More like this<br>Trending<br>Visual similarity|

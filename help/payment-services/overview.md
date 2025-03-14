@@ -4,6 +4,7 @@ description: Learn how to install and use [!DNL Payment Services] as a turnkey, 
 role: User
 level: Intermediate
 feature: Payments, Checkout
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
 ---
 # Introduction to [!DNL Payment Services]
 
@@ -20,10 +21,6 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 * Self-contained within the Admin
 
 ## Features
-
->[!NOTE]
->
->Some of the features mentioned here may not yet be available for the GA (General Availability) release.
 
 [!DNL Payment Services] is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
 
@@ -49,6 +46,12 @@ Payment Services provides [Express Checkout capabilities](../payment-services/pa
 
 See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
+### Which [!DNL Payment Services] option is right for you?
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+See [Connect](connect.md) for more information on setting up your [!DNL Payment Services] extension.
+
 ### Accepted credit cards and currencies
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information.
@@ -69,9 +72,3 @@ Onboarding and setting up [!DNL Payment Services] is completed in just a few ste
 1. Activate [!DNL Payment Services] in live mode to begin processing live payments.
 
 To get the full instructions and start the onboarding process, see [Onboard [!DNL Payment Services]](onboard.md).
-
-## [!DNL Payment Services] demo
-
-Watch this video to learn about [!DNL Payment Services]:
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

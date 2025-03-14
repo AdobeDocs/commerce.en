@@ -3,6 +3,7 @@ title: Types of Commerce Data
 description: Learn the types of data that you can collect and send to the Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: 6354963c-f27f-4e69-9ecb-acb4befb7c2a
 ---
 # Types of Commerce Data
 

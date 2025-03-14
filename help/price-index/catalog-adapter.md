@@ -3,6 +3,7 @@ title: Catalog Adapter Extension
 description: Using Catalog Adapter to render prices from Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
 ---
 # Catalog Adapter
 
@@ -160,4 +161,3 @@ The following are some common `[!DNL Catalog Adapter]` scenarios.
 - No reliance on the default Adobe Commerce product price indexer
 
 1. Install the `magento/module-price-indexer-disabler` module from the [!DNL Catalog Adapter] package.
-

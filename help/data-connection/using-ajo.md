@@ -3,6 +3,7 @@ title: Use Adobe Journey Optimizer to send an abandoned cart email
 description: Learn how to use Adobe Journey Optimizer to send an abandoned cart email.
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
 ---
 # Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 

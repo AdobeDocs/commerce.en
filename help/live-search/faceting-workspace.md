@@ -1,6 +1,7 @@
 ---
-title: "Faceting Workspace"
-description: "Learn your way around the [!DNL Live Search] faceting workspace."
+title: Faceting Workspace
+description: Learn your way around the [!DNL Live Search] faceting workspace.
+exl-id: 7108e41b-44a7-4943-b20f-6ee544d099e9
 ---
 # Faceting Workspace
 

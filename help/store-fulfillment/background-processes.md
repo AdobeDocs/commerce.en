@@ -1,10 +1,10 @@
 ---
 title: Background Process Configuration
-description: "Configure the schedules for [!DNL Store Fulfillment] background processes used in synchronizing data with the fulfillment services."
+description: Configure the schedules for [!DNL Store Fulfillment] background processes used in synchronizing data with the fulfillment services.
 role: Admin, Developer
 level: Intermediate
+exl-id: ed42446a-95b5-4bb0-8b96-8f07017c4883
 ---
-
 # Background Process Configuration
 
 The Store Fulfillment integration uses background processes and message queues for optimal performance and scale. Build environments for your Adobe Commerce stores using [deployment variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) that automatically start [message queue runners](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework).

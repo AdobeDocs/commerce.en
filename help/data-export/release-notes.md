@@ -3,6 +3,7 @@ title: '[!DNL SaaS Data Export Extension] Release Notes'
 description: The latest release information for [!DNL Data Export Extension] for Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
+exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 ---
 # [!DNL SaaS Data Export] Extension Release Notes
 
@@ -21,6 +22,20 @@ Updates include:
 
 ## Current major version
 
+## 103.3.21 Release
+
+![Fix](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds  based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
+
+```shell
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+```
+
+![Fix](../assets/fix.svg) Reduced potential compatibility issues with PHP 8.4 by addressing deprecated functionality. <!--MDEE-1002-->
+
+## 103.3.20 Release
+
+![Fix](../assets/fix.svg) Fixed untraceable `BulkException` errors in the `cron.log` by improving messaging for errors related to Catalog Data Export cron job failures.<!--MDEE-966-->
+![Fix](../assets/fix.svg) Improved performance of the product re-synchronization process on instances with a high number of store views. <!--MDEE-974-->
 
 ## 103.3.19 Release
 

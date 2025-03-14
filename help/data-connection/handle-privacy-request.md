@@ -3,6 +3,7 @@ title: How [!DNL Commerce] Services Handles Privacy Requests
 description: Learn how [!DNL Commerce] services handles requests to access and delete data.
 role: Admin, Leader
 feature: Security, Compliance
+exl-id: 1408ca77-6956-4519-93a6-bc9be9bffeff
 ---
 # Privacy requests
 

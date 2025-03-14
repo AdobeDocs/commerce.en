@@ -1,6 +1,7 @@
 ---
 title: Headless
 description: Learn how to integrate [!DNL Product Recommendations] in a headless storefront.
+exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
 ---
 # Headless
 

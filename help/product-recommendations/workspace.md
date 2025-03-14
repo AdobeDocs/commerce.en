@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: Learn how to configure, manage, and monitor product recommendation performance.
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
 ---
 # [!DNL Product Recommendations] Workspace
 

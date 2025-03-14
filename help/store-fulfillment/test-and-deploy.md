@@ -4,6 +4,7 @@ description: Test plan to verify the Store Fulfillment functionality. Tests cove
 role: User, Admin
 level: Intermediate
 feature: Shipping/Delivery, User Account, Roles/Permissions
+exl-id: 7641b0f4-fbf6-43c3-b2c6-02ded98353dc
 ---
 # Test and Deploy Store Fulfillment for Adobe Commerce
 

@@ -2,6 +2,7 @@
 title: '[!DNL Live Search] Events'
 description: Learn how events collect data for [!DNL Live Search].
 feature: Services, Eventing
+exl-id: a9f4f254-d8ff-46f1-8deb-a75b90d70d52
 ---
 # [!DNL Live Search] Events
 
@@ -12,7 +13,7 @@ This table describes the events used by [!DNL Live Search] [ranking strategies](
 | Ranking Strategy | Events | Page |
 | --- | --- | --- |
 | Most Viewed |  `page-view`<br>`product-view` | Product detail page |
-| Most Purchased |  `page-view`<br>`complete-checkout` | Cart/Checkout |
+| Most Purchased |  `page-view`<br>`place-order` | Cart/Checkout |
 | Most added to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
 | Viewed this, viewed that |  `page-view`<br>`product-view` | Product detail page |
 

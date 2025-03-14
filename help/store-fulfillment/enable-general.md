@@ -3,6 +3,7 @@ title: General Configuration
 description: Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services.
 role: Admin
 level: Intermediate
+exl-id: 65c470f0-68f5-475f-ab93-78c2479d2453
 ---
 # Store Service and Sales Configuration
 
@@ -491,4 +492,3 @@ With the in-store delivery method, the customer can select a source to be used a
 <td>No</td>
 </tr>
 </tbody></table>
-

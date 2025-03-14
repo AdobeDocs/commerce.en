@@ -1,6 +1,7 @@
 ---
-title: "Add Facets"
-description: "Learn how to add filterable product attributes as [!DNL Live Search] facets."
+title: Add Facets
+description: Learn how to add filterable product attributes as [!DNL Live Search] facets.
+exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 ---
 # Add Facets
 

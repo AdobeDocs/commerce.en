@@ -1,6 +1,7 @@
 ---
 title: Onboarding
 description: Learn the requirements and supported platforms in [!DNL Product Recommendations].
+exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
 ---
 # Onboarding
 

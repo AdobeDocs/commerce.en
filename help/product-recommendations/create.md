@@ -1,6 +1,7 @@
 ---
 title: Create New Recommendation
 description: Learn how to create a product recommendation unit.
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 ---
 # Create New Recommendation
 
@@ -75,6 +76,10 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    * **Save as draft** to edit the recommendation unit later. You cannot modify the page type or recommendation type for a recommendation unit in a draft state.
 
    * **Activate** to enable the recommendation unit on your storefront.
+
+>[!IMPORTANT]
+>
+>Some browsers might block critical scripts that prevent Product Recommendations from working as expected.
 
 ## Readiness indicators
 

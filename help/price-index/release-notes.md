@@ -4,6 +4,7 @@ description: The latest release information for [!DNL Catalog Adapter] for Adobe
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
+exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
 ---
 # [!DNL Catalog Adapter] Extension Release Notes
 

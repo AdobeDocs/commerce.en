@@ -1,6 +1,7 @@
 ---
-title: "Search Merchandising"
-description: "[!DNL Live Search] merchandising rules combine logic with actions to shape the shopping experience."
+title: Search Merchandising
+description: '[!DNL Live Search] merchandising rules combine logic with actions to shape the shopping experience.'
+exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
 ---
 # Search Merchandising
 

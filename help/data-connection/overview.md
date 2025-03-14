@@ -2,6 +2,7 @@
 title: Guide Overview
 description: Learn how to integrate Adobe Commerce data with Adobe Experience Platform using the [!DNL Data Connection] extension.
 recommendations: noCatalog
+exl-id: 660f9337-cad8-47fb-a959-0770f0fd813c
 ---
 # [!DNL Data Connection] Introduction
 

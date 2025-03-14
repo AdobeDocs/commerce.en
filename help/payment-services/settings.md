@@ -4,6 +4,7 @@ description: After installation, you can configure [!DNL Payment Services] in th
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
+exl-id: 793bc59d-1581-4c78-bafe-a43b9e5fb1bc
 ---
 # Settings
 
@@ -296,5 +297,7 @@ See [3DS in Security](security.md#3ds) for more information.
 In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)) or want to use Adobe Commerce for some parts of your business but not _all_, you can set up your merchant account to use multiple PayPal accounts.
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
+
+See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
 
 Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.

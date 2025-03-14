@@ -4,6 +4,7 @@ description: Setup enhanced Inventory Management sources as merchant stores to s
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, User Account, Tools and External Services
+exl-id: 94c197f1-a249-4c24-a02c-9d0d89107eea
 ---
 # User Setup
 

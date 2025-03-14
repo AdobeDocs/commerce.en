@@ -1,6 +1,7 @@
 ---
 title: Storefront Widgets
 description: Learn about the storefront popover and the product listing page widgets.
+exl-id: 6768d819-cf4d-4114-81a4-f7f9e91266f9
 ---
 # Storefront Widgets
 
