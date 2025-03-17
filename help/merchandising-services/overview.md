@@ -1,8 +1,6 @@
 ---
 title: "[!DNL Merchandising Services] overview"
 description: Learn how the [!DNL Merchandising Services] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy
-hidefromtoc: yes
-hide: yes
 recommendations: noCatalog
 exl-id: afa7c148-10fb-4161-8bcc-13084f85c42c
 ---
