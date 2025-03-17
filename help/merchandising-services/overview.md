@@ -18,7 +18,7 @@ At a high level, with Merchandising Services you can:
 
 >[!INFO]
 >
->To learn about the APIs available in Merchandising Services, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>To learn about the APIs available in Merchandising Services powered by Channels and Policies, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
 
 ## Architecture
 
