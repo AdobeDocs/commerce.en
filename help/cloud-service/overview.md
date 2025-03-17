@@ -1,0 +1,138 @@
+---
+title: Adobe Commerce as a Cloud Service overview
+description: Learn about the key features and benefits of Adobe Commerce as a Cloud Service.
+feature: App Builder, GraphQL, Integration, Saas
+role: Admin, Architect, Developer, User
+---
+
+# Adobe Commerce as a Cloud Service overview
+
+Adobe Commerce as a Cloud Service offers flexibility, scalability, and efficiency by enabling businesses to deliver and rapidly scale digital operations and accelerate innovation. Adobe's cloud-native infrastructure automatically adjusts resources to meet peak demands for traffic, orders, and catalog management.
+
+The following graphic highlights the products that power Adobe Commerce as a Cloud Service:
+
+![Adobe Commerce as a Cloud Service product stack](./assets/product-stack.svg){align="center" zoomable="yes"}
+
+>[!BEGINSHADEBOX]
+
+![info](assets/Smock_InfoOutline_18_N.svg) If you would like to participate in the Adobe Commerce as a Cloud Service early access program, complete [this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&route=shorturl).
+
+>[!ENDSHADEBOX]
+
+## Architecture
+
+See the following video for a brief introduction to the Adobe Commerce as a Cloud Service architecture. Diagrams that illustrate the architecture are provided below the video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
+
+This diagram illustrates the data flow between Adobe Commerce as a Cloud Service and all Adobe Experience Cloud solutions.
+
+![Adobe Commerce as a Cloud Service architecture diagram](./assets/data-flow.svg){zoomable="yes"}
+
+## Commerce Storefront
+
+Use Adobe's [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) powered by Edge Delivery Services to create rich experiences in minutes with simple document-based authoring or visual editing with Storefront Builder.
+
+Commerce Storefront is fully headless with a decoupled architecture that provides all Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
+
+>[!NOTE]
+>
+>Adobe Commerce as a Cloud Service does not support Luma storefronts. If you are migrating from Adobe Commerce on Cloud or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for guidance on transitioning.
+
+## Merchandising services
+
+Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
+
+- [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
+- [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [Composable catalog data model](../catalog-data-model/overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
+- [Payment Services](../payment-services/overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+
+## Product Visuals
+
+Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native mini-DAM provides basic asset management tools for storing and managing digital assets.
+
+See [asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) to learn more.
+
+## Developer Platform
+
+Adobe provides developers with comprehensive extension points and tools to build applications that extend Commerce Foundation capabilities and integrate with third-party systems (such as CRMs, ERPS, and PIMS). These tools reduce your total cost of ownership of the platform in the following ways:
+
+- **Scalability**—Applications can be scaled separately from the core software, allowing for greater efficiency and simplified upgrades.
+- **Isolation**–An isolated environment means that developers can upgrade or modify their extensions at their discretion without relying on a core release.
+- **Technological independence**–Developers can choose whichever technology stacks and coding languages that fit their needs.
+
+>[!TIP]
+>
+>Vendor-built apps are also available for installation on [Adobe Exchange](https://exchange.adobe.com/).
+
+Adobe provides the following developer tools for building integrations and customizations:
+
+- [**API Mesh for Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/)—Coordinate and combine multiple API, GraphQL, REST, and other sources into a single, queryable GraphQL endpoint.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Build and deploy secure and scalable web applications that extend Commerce functionality and integrate with third-party solutions.
+- [**Events**](https://developer.adobe.com/commerce/extensibility/events/)—Use custom event triggers to interact with other extensible development tools.
+- [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to trigger interactions between Commerce and third-party systems automatically.
+- [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)—Accelerate your back-office integrations with reference integrations, onboarding scripts, and a standardized architecture.
+
+## Commerce Foundation
+
+Commerce Foundation provides a secure automated hosting platform and self-service features for managing your Commerce application in a cloud-native environment. Key features include:
+
+- Simplified onboarding
+- Seamless upgrades
+
+### Simplified onboarding
+
+Launch sandbox and production instances in minutes with the Commerce Cloud Manager self-service provisioning portal. Everything that you need, including Merchandising Services, Commerce Storefront, and App Builder, are automatically configured and integrated with your instances.
+
+See [Getting started](getting-started.md) to learn how to create and manage Commerce instances.
+
+### Seamless upgrades
+
+Access the latest features and enhancements without the need for manual upgrades. The continuous delivery of new features and updates eliminates the need for manual patching, ensuring that you always have access to the latest capabilities with a low total cost of ownership.
+
+The typical upgrade process for Adobe Commerce on Cloud involved creating backups, cloning instances, running compatibility tools, and fixing code conflicts. That's no longer necessary with Adobe Commerce as a Cloud service. Adobe sends you in-app notifications when new feature and security updates have been released. You have a 30-day period to evaluate the new capabilities in your sandbox instances before the updates are automatically applied to your production environments.
+
+>[!NOTE]
+>
+>Adobe guarantees backward compatibility for all updates. This means that when updates are applied, they will not break existing functionality or customizations that adhere to the [API-first extensibility](https://developer.adobe.com/commerce/extensibility/) model.
+
+## Experience Cloud integration
+
+Adobe Commerce as a Cloud Service integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+
+[Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
+
+## Benefits
+
+The following sections provide information about the benefits that Adobe Commerce as a Cloud Service provides to business and IT leaders.
+
+### Business leaders
+
+- **Grow revenue**: Drive organic traffic with a high-performance storefront that boosts SEO. Create personalized experiences that drive conversion using rich data.
+- **Scale operations**: Auto-scaling services meet the peak demands of your business with 99.9% availability. Rollout multiple brands and regions and support B2B and B2C from a single instance. Support large and complex product catalogs with flexible data modeling.
+- **Boost merchandiser productivity**: Use AI powered merchandising services to improve conversion. Experiment natively, directly in the storefront. Manage the storefront experience to create rich experiences in minutes with simple document-based authoring or a visual editor.
+- **Lower total cost of ownership (TCO) and accelerate innovation**: Always up-to-date services give you access to new features immediately. Activate new capabilities by easily installing apps from the marketplace. Free up resources from tedious maintenance to focus on building new capabilities.
+
+### Information technology (IT) leaders
+
+- **Fast provisioning**: Get started fast with self-service provisioning in minutes. All services are pre-configured to work seamlessly together to get started faster. Provision sandboxes for developer experimentation as needed.
+- **Low cost of ownership**: No more upgrades with always up-to-date services. Stay secure and compliant with the latest security patches automatically applied for you. Scale automatically to meet the most demanding workloads.
+- **High-performance storefront**: Create rich experiences in minutes with simple document-based authoring or a visual editor. Use AI-powered merchandising services to improve conversion. Native experimentation built into the storefront.
+- **Faster innovation**: Free up resources from tedious maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JaveScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.
+
+## New feature solutions
+
+The [Admin UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) is the primary interface for accessing features to manage backend store operations, inventory, pricing, promotions, and customer interactions. However, Adobe Commerce as a Cloud Service offers unique solutions that replace some of the well-known features available in Adobe Commerce on Cloud and on-premises projects. The following table describes the features and replacement solutions available in Adobe Commerce as a Cloud Service:
+
+| Feature | Solution | Availability | Details|
+|---------|----------|--------------|--------|
+| [Digital asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Product Visuals](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) or mini-DAM | Available | A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the mini-DAM provides basic asset management tools for storing and managing digital assets. |
+| [Content Management System (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
+| [Content staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Catalog Service](../catalog-service/overview.md) | Roadmap | A catalog management tool that ties into Adobe Experience Platform, allowing for the management of large catalogs. |
+| [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
+| [Payments](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services for Adobe Commerce](../payment-services/overview.md) | Available | An integrated payment service that facilitates secure and efficient transactions. |
+| [Shared catalog](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Price Indexing Service](../price-index/price-indexing.md) | Roadmap | Analyzes pricing data and suggests optimal pricing strategies for products based on various factors. |
+| [URL rewrites](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
+| [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Catalog Service](../catalog-service/overview.md)| Roadmap | A catalog management tool that ties into Adobe Experience Platform, allowing for the management of large catalogs. |
