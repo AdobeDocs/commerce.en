@@ -39,13 +39,13 @@ Commerce Storefront is fully headless with a decoupled architecture that provide
 >
 >Adobe Commerce as a Cloud Service does not support Luma storefronts. If you are migrating from Adobe Commerce on Cloud or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for guidance on transitioning.
 
-## Merchandising services
+## Merchandising services and payment services
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
 - [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
 - [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-- [Composable catalog data model](../catalog-data-model/overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
+- [Merchandising Services powered by Channels and Policies](../merchandising-services/overview.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../commerce-optimizer/overview.md) to optimize catalog performance and improve conversion rates.
 - [Payment Services](../payment-services/overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Product Visuals
@@ -120,7 +120,7 @@ The following sections provide information about the benefits that Adobe Commerc
 - **Fast provisioning**: Get started fast with self-service provisioning in minutes. All services are pre-configured to work seamlessly together to get started faster. Provision sandboxes for developer experimentation as needed.
 - **Low cost of ownership**: No more upgrades with always up-to-date services. Stay secure and compliant with the latest security patches automatically applied for you. Scale automatically to meet the most demanding workloads.
 - **High-performance storefront**: Create rich experiences in minutes with simple document-based authoring or a visual editor. Use AI-powered merchandising services to improve conversion. Native experimentation built into the storefront.
-- **Faster innovation**: Free up resources from tedious maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JaveScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.
+- **Faster innovation**: Free up resources from tedious maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JavaScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.
 
 ## New feature solutions
 
