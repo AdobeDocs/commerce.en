@@ -22,7 +22,7 @@ At a high level, with Merchandising Services you can:
 
 ## Architecture
 
-Merchandising Services is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new Merchandising Services product scopes (channel, policy, and locale).
+Merchandising Services powered by Channels and Policies is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. This model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new Merchandising Services product scopes (channel, policy, and locale).
 
 The following diagram provides a high-level view of the Merchandising framework.
 
@@ -102,7 +102,7 @@ The channel and policy definitions are created using dedicated APIs:
 
 ## What type of merchant benefits the most from Merchandising Services?
 
-The following table highlights common challenges merchants encounter and how Merchandising Services addresses them.
+The following table highlights common challenges merchants encounter and how Merchandising Services powered by Channels and Policies addresses them.
 
 |Merchant type|Use case|Problems solved|
 |---|---|---|
