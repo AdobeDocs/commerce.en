@@ -1,8 +1,8 @@
 ---
 title: Migrate to Adobe Commerce as a Cloud Service
 description: Learn how to migrate to Adobe Commerce as a Cloud Service.
+exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 ---
-
 # Migrate to Adobe Commerce as a Cloud Service
 
 Adobe Commerce as a Cloud Service provides most configuration out of the box. However, if you are migrating from an existing Adobe Commerce on Cloud or on-premises instance, you will need to perform different migration actions depending on your specific configuration.

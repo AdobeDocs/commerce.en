@@ -2,8 +2,8 @@
 title: Set up your storefront
 description: Learn how to run the scaffolding tool to setup your Adobe Commerce as a Cloud Service storefront.
 role: Developer
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
 ---
-
 # Set up your storefront
 
 The following steps demonstrate how to quickly set up your Adobe Commerce Storefront powered by Edge Delivery using the `aio commerce init` command. This process sets up the following:

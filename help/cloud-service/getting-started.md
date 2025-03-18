@@ -2,8 +2,8 @@
 title: Getting started with Adobe Commerce as a Cloud Service
 description: Learn how to get started with Adobe Commerce as a Cloud Service.
 role: Admin, Developer, User
+exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
 ---
-
 # Getting started
 
 Adobe Commerce as a Cloud Service provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.

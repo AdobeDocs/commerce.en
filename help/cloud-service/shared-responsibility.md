@@ -2,8 +2,8 @@
 title: Shared responsibility
 description: Learn about the security responsibilities of each party involved in your Adobe Commerce as a Cloud Service project.
 role: Admin, Architect, Leader
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
 ---
-
 # Shared responsibility security and operational model
 
 Adobe Commerce as a Cloud Service is an on-demand service that relies on a shared responsibility security and operational model. These responsibilities are shared between Adobe and customers. Each party bears distinct responsibility for securing and operating the Adobe Commerce application.  
