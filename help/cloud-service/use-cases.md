@@ -2,8 +2,8 @@
 title: Use cases
 description: Learn how to accomplish practical use cases and supported business scenarios with Adobe Commerce as a Cloud Service.
 role: User, Leader
+exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 ---
-
 # Use cases
 
 The following use cases demonstrate core functionality and business scenarios supported by Adobe Commerce as a Cloud Service, allowing you to accelerate development and launch high-impact experiences.
