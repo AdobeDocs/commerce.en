@@ -77,10 +77,13 @@ Adobe provides the following developer tools for building integrations and custo
 
 ## Commerce Foundation
 
-Commerce Foundation provides a secure automated hosting platform and self-service features for managing your Commerce application in a cloud-native environment. Key features include:
+Commerce Foundation provides a secure automated hosting platform and self-service features for managing your Commerce application in a cloud-native environment.
+
+Key features include:
 
 - Simplified onboarding
 - Seamless upgrades
+- Third-party integrations
 
 ### Simplified onboarding
 
@@ -97,6 +100,10 @@ The typical upgrade process for Adobe Commerce on Cloud involved creating backup
 >[!NOTE]
 >
 >Adobe guarantees backward compatibility for all updates. This means that when updates are applied, they will not break existing functionality or customizations that adhere to the [API-first extensibility](https://developer.adobe.com/commerce/extensibility/) model.
+
+### Third-party integrations
+
+Developers can use comprehensive [GraphQL and REST APIs](https://developer.adobe.com/commerce/services/cloud/guides/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
 
 ## Experience Cloud integration
 
