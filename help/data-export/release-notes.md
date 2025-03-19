@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.3.22 Release
 
-![Fix](../assets/fix.svg) Product overrides doesn't send permissions if product not assigned to category. <!--MDEE-449-->
+![Fix](../assets/fix.svg) Product overrides no longer send permissions if the product is not assigned to a category. <!--MDEE-449-->
 
 ## 103.3.21 Release
 
