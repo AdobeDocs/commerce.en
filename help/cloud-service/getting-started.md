@@ -1,12 +1,14 @@
 ---
-title: Getting started with Adobe Commerce as a Cloud Service
-description: Learn how to get started with Adobe Commerce as a Cloud Service.
+title: Getting started with [!DNL [!DNL Adobe Commerce as a Cloud Service]]
+description: Learn how to get started with [!DNL [!DNL Adobe Commerce as a Cloud Service]].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
 ---
 # Getting started
 
-Adobe Commerce as a Cloud Service provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.
+{{#accs-note}}
+
+[!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.
 
 Click the tabs below to see high-level workflow overviews for the following user types:
 
@@ -18,27 +20,27 @@ Click the tabs below to see high-level workflow overviews for the following user
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage Adobe Commerce as a Cloud Service instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
-![Adobe Commerce as a Cloud Service merchant flow diagram](./assets/merchant-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] merchant flow diagram](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Developer workflow]
 
-This diagram provides a high-level overview of how developers create integrations for Adobe Commerce as a Cloud Service using App Builder. See the [API documentation](https://developer.adobe.com/commerce/services/cloud/) for more information.
+This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/services/cloud/) for more information.
 
-![Adobe Commerce as a Cloud Service developer flow diagram](./assets/developer-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] developer flow diagram](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
 ## Create an instance
 
-Adobe Commerce as a Cloud Service instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
+[!DNL Adobe Commerce as a Cloud Service] instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
 
 1. Log in to your [Adobe Experience Cloud](https://experience-stage.adobe.com/) account.
 
 1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager]. 
 
-   The [!UICONTROL Commerce Cloud Manager] displays a list of Adobe Commerce as a Cloud Service instances that are available in your Adobe IMS organization.
+   The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
 
 1. Click [!UICONTROL **Add Instance**] in the top-right corner of the screen.
 
@@ -56,7 +58,7 @@ Adobe Commerce as a Cloud Service instances use a credit-based system. You can c
  
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your Adobe Commerce as a Cloud Service journey by using the sandbox environment. 
+   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
    * [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
    >[!NOTE]
@@ -87,9 +89,9 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 
 ## Import your catalog
 
-By default, Adobe Commerce as a Cloud Service instances do not include any product data. You have an option to include sample product data when you create an instance for testing and learning purposes before importing your own catalog.
+By default, [!DNL Adobe Commerce as a Cloud Service] instances do not include any product data. You have an option to include sample product data when you create an instance for testing and learning purposes before importing your own catalog.
 
-There are two ways to import your catalog into Adobe Commerce as a Cloud Service:
+There are two ways to import your catalog into [!DNL Adobe Commerce as a Cloud Service]:
 
 * [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - A user-friendly interface that allows you to import your catalog data in a few clicks.
 * [**Import JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - A REST API that allows you to import your catalog data programmatically.

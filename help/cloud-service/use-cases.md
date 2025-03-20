@@ -1,12 +1,14 @@
 ---
 title: Use cases
-description: Learn how to accomplish practical use cases and supported business scenarios with Adobe Commerce as a Cloud Service.
+description: Learn how to accomplish practical use cases and supported business scenarios with [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 ---
 # Use cases
 
-The following use cases demonstrate core functionality and business scenarios supported by Adobe Commerce as a Cloud Service, allowing you to accelerate development and launch high-impact experiences.
+{{#accs-note}}
+
+The following use cases demonstrate core functionality and business scenarios supported by [!DNL Adobe Commerce as a Cloud Service], allowing you to accelerate development and launch high-impact experiences.
 
 If you encounter any issues, check the [Troubleshooting](#troubleshooting) section for guidance.
 
