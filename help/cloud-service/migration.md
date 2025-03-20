@@ -5,7 +5,7 @@ exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 ---
 # Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
-{{accs-note}}
+{{accs-early-access}}
 
 [!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. However, if you are migrating from an existing Adobe Commerce on Cloud or on-premises instance, you will need to perform different migration actions depending on your specific configuration.
 

@@ -6,7 +6,7 @@ exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
 ---
 # Set up your storefront
 
-{{accs-note}}
+{{accs-early-access}}
 
 The following steps demonstrate how to quickly set up your Adobe Commerce Storefront powered by Edge Delivery using the `aio commerce init` command. This process sets up the following:
 
