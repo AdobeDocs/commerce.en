@@ -7,7 +7,7 @@ feature: Services, Saas
 recommendations: noDisplay, noCatalog
 ---
 
-# [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
+# "[!DNL Adobe Commerce as a Cloud Service]" {#cloud-service}
 
 - [Overview](overview.md)
 - [Getting started](getting-started.md)
