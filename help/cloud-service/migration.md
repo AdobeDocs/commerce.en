@@ -1,5 +1,5 @@
 ---
-title: Migrate to [!DNL Adobe Commerce as a Cloud Service]
+title: 'Migrate to [!DNL Adobe Commerce as a Cloud Service]'
 description: Learn how to migrate to [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 ---

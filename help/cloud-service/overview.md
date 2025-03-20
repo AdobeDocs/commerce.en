@@ -1,5 +1,5 @@
 ---
-title: `[!DNL Adobe Commerce as a Cloud Service]` overview
+title: '[!DNL Adobe Commerce as a Cloud Service] overview'
 description: Learn about the key features and benefits of [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User

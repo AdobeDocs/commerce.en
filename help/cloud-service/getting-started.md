@@ -1,5 +1,5 @@
 ---
-title: Getting started with [!DNL Adobe Commerce as a Cloud Service]
+title: 'Getting started with [!DNL Adobe Commerce as a Cloud Service]'
 description: Learn how to get started with [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
