@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.3.22 Release
 
-![Fix](../assets/fix.svg) Product overrides no longer send permissions if the product is not assigned to a category. <!--MDEE-449-->
+![Fix](../assets/fix.svg)  The product overrides feed no longer sends permissions if the product is not assigned to a category. With this update, B2B customers using category permissions are no longer required to assign all products to the root category.<!--MDEE-449-->
 
 ## 103.3.21 Release
 
