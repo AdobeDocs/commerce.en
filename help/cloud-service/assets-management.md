@@ -7,6 +7,6 @@ exl-id: 4d76ff70-29de-4d6e-8ec2-43e9e76af3a0
 ---
 # Assets management
 
-{{#accs-note}}
+{{accs-note}}
 
 TODO PLACEHOLDER

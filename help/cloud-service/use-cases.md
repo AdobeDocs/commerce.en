@@ -6,7 +6,7 @@ exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 ---
 # Use cases
 
-{{#accs-note}}
+{{accs-note}}
 
 The following use cases demonstrate core functionality and business scenarios supported by [!DNL Adobe Commerce as a Cloud Service], allowing you to accelerate development and launch high-impact experiences.
 

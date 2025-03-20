@@ -6,7 +6,7 @@ exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
 ---
 # Getting started
 
-{{#accs-note}}
+{{accs-note}}
 
 [!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.
 
