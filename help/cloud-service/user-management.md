@@ -10,7 +10,9 @@ If you want users to access the Admin in [!DNL Adobe Commerce as a Cloud Service
 
 This process requires an IMS organization with access to [!DNL Adobe Commerce as a Cloud Service]. Only a System Admin for the organization can perform these processes
 
->[!TIP] To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+>[!TIP]
+>
+>To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 
 ## Add users, admins, and developers
 
