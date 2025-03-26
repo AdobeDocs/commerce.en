@@ -22,7 +22,7 @@ The main components of the SaaS data export flow include:
 
 >[NOTE!]
 >
->Adobe recommends estimating data volume and sync time before starting any data feed synchronization to ensure smooth scheduling and avoid disruptions in site operations. This estimation is important when planning for initial syncs or large scale catalog updates, such as mass price changes. For details, see [Estimate data volume and transmission time for data sync](estimate-data-volume-sync-time.md)
+>To ensure smooth scheduling and avoid disruptions in site operations, Adobe recommends estimating data volume and sync time before starting any data feed synchronization. This estimation is important when planning for initial syncs or large scale catalog updates, such as mass price changes. For details, see [Estimate data volume and transmission time for data sync](estimate-data-volume-sync-time.md)
 
 ## Synchronization modes
 
