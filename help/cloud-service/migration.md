@@ -1,27 +1,29 @@
 ---
-title: Migrate to Adobe Commerce as a Cloud Service
-description: Learn how to migrate to Adobe Commerce as a Cloud Service.
+title: 'Migrate to [!DNL Adobe Commerce as a Cloud Service]'
+description: Learn how to migrate to [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 ---
-# Migrate to Adobe Commerce as a Cloud Service
+# Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
-Adobe Commerce as a Cloud Service provides most configuration out of the box. However, if you are migrating from an existing Adobe Commerce on Cloud or on-premises instance, you will need to perform different migration actions depending on your specific configuration.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. However, if you are migrating from an existing Adobe Commerce on Cloud or on-premises instance, you will need to perform different migration actions depending on your specific configuration.
 
 ## Migration paths
 
-Adobe Commerce as a Cloud Service supports multiple migration paths, depending on your timeline, storefront, and customizations.
+[!DNL Adobe Commerce as a Cloud Service] supports multiple migration paths, depending on your timeline, storefront, and customizations.
 
-As an alternative to a full migration, Adobe Commerce as a Cloud Service supports a phased migration, using Commerce Optimizer or an incremental approach.
+As an alternative to a full migration, [!DNL Adobe Commerce as a Cloud Service] supports a phased migration, using Commerce Optimizer or an incremental approach.
 
-* **Incremental Migration**—This approach involves migrating your data, customizations, and integrations in stages. This approach is ideal for large merchants with many customizations who want to gradually transition their complex customizations and data to Adobe Commerce as a Cloud Service at their own pace.
+* **Incremental Migration**—This approach involves migrating your data, customizations, and integrations in stages. This approach is ideal for large merchants with many customizations who want to gradually transition their complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at their own pace.
 
 ![incremental migration](./assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to Adobe Commerce as a Cloud Service at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Channels and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
+* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Channels and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
 
 ![iterative migration](./assets/optimizer.png){width="600" zoomable="yes"}
 
-* **Full Migration**—This approach involves migrating all data, customizations, and integrations at once. This approach is ideal for smaller merchants with few customizations who want to quickly transition to Adobe Commerce as a Cloud Service.
+* **Full Migration**—This approach involves migrating all data, customizations, and integrations at once. This approach is ideal for smaller merchants with few customizations who want to quickly transition to [!DNL Adobe Commerce as a Cloud Service].
 
 The following table provides an overview of the migration process for different storefronts and configurations:
 
@@ -37,17 +39,17 @@ The following table provides an overview of the migration process for different 
 
 As indicated by the table, the mitigations for each migration will consist of:
 
-* **Data Migration**—Using provided migration tooling to migrate data from your existing instance to Adobe Commerce as a Cloud Service.
+* **Data Migration**—Using provided migration tooling to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**—Existing EDS and headless storefronts do not require mitigation, but LUMA storefronts require migrating to Commerce Storefront powered by Edge Delivery. PWA Studio storefronts can be migrated to Commerce Storefront powered by Edge Delivery or maintained in their current state. Adobe will provide accelerators to assist with storefront migration.
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Create a new mesh or modify the existing one. Adobe will provide preconfigured meshes to assist with this process.
-* **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [Adobe Commerce as a Cloud Service REST API](https://developer.adobe.com/commerce/services/reference/cloud-service/core-admin/).
+* **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/services/reference/cloud-service/core-admin/).
 * **Customizations**—All customizations must move to App Builder and API Mesh.
 * **Assets Management**—All assets management requires migration. If you are already using AEM Assets, there is no need to migrate.
-* **Extensions**—Any in-process extensions need to be recreated as out-of-process extensions. By the end of 2025, Adobe will provide 100 of our most popular extensions preloaded and ready to use to minimize build times.
+* **Extensions**—Any in-process extensions need to be recreated as out-of-process extensions. By the end of 2025, Adobe will provide access to our most popular extensions to minimize build times.
 
 ## Migration phases
 
-Migrating from your current Adobe Commerce instance to a new Adobe Commerce as a Cloud Service instance primarily involves the following phases:
+Migrating from your current Adobe Commerce instance to a new [!DNL Adobe Commerce as a Cloud Service] instance primarily involves the following phases:
 
 * **[Readiness](#readiness-phase)**—Begin by determining if your deployment is ready to be moved to ACCS. In this phase, you should also familiarize yourself with the changes that ACCS has introduced.​
 * **[Implementation](#implementation-phase)**—Next, ready your code, storefront, extensions, and integrations for migration. To ease the transition, Adobe allows for both [short-term and long-term iterative approaches](#migration-paths).​
@@ -56,7 +58,7 @@ Migrating from your current Adobe Commerce instance to a new Adobe Commerce as a
 
 ### Readiness phase
 
-1. Start by reviewing the Adobe Commerce as a Cloud Service architecture, extensibility framework, and storefront capabilities:
+1. Start by reviewing the [!DNL Adobe Commerce as a Cloud Service] architecture, extensibility framework, and storefront capabilities:
 
     * [Adobe Commerce on Cloud Services Architecture](./overview.md)—Review the platform architecture and how it differs from your current Adobe Commerce instance.
     * [Adobe Commerce Extensibility Framework](https://developer.adobe.com/commerce/extensibility/)—Identify how you want to transition your current customizations.
@@ -70,15 +72,15 @@ Migrating from your current Adobe Commerce instance to a new Adobe Commerce as a
 
 1. Confirm your storefront requirements and ensure they align with Adobe Edge Delivery capabilities.
 
-1. Review your current third-party integrations and confirm API compatibility with the Adobe Commerce as a Cloud Service platform.
+1. Review your current third-party integrations and confirm API compatibility with the [!DNL Adobe Commerce as a Cloud Service] platform.
 
 ### Implementation phase
 
 The following steps outline the development and execution process of the migration:
 
-1. Create a new Adobe Commerce as a Cloud Service instance in the [Commerce Cloud Manager](./getting-started.md#create-an-instance).
+1. Create a new [!DNL Adobe Commerce as a Cloud Service] instance in the [Commerce Cloud Manager](./getting-started.md#create-an-instance).
 
-1. Install required apps and customizations. Adobe Commerce as a Cloud Service is preloaded with 100 of the most popular apps. If you need additional apps or customizations, you can reimplement them using App Builder.
+1. Install required apps and customizations. [!DNL Adobe Commerce as a Cloud Service] has access to our most popular apps. If you need additional apps or customizations, you can reimplement them using App Builder.
 
 1. Set up one of the following GraphQL-based storefronts:
 
@@ -94,7 +96,7 @@ The following steps outline the development and execution process of the migrati
 
 ### Go-Live phase
 
-Before launching, validate and test your new Adobe Commerce as a Cloud Service instance:
+Before launching, validate and test your new [!DNL Adobe Commerce as a Cloud Service] instance using a sandbox environment:
 
 * **Functional Testing**—Ensure migrated data, storefront functionality, and customizations work seamlessly.
 
@@ -102,11 +104,13 @@ Before launching, validate and test your new Adobe Commerce as a Cloud Service i
 
 * **Security Audit**—Review security measures, including API access control and any potential vulnerabilities.
 
+Once you have validated and tested your new [!DNL Adobe Commerce as a Cloud Service] sandbox instance, you can launch your production instance.
+
 ### Post Go-Live phase
 
-Once you have validated and tested your new Adobe Commerce as a Cloud Service sandbox instance, you can launch your production instance:
+After Go Live, perform these post-launch activities:
 
-1. Go live
+1. Go live followup
 
     * Redirect traffic to the new platform and monitor performance.
     * Disable your old Adobe Commerce instance.
