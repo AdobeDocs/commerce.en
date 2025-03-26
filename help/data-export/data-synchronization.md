@@ -20,6 +20,10 @@ The main components of the SaaS data export flow include:
 - SaaS export modules that export data, configure routing, and publish the feeds to connected services.
 - The Adobe Commerce Service manages the data ingestion process to validate incoming feeds and persist updates to connected services.
 
+>[NOTE!]
+>
+>Adobe recommends estimating data volume and sync time before starting any data feed synchronization to ensure smooth scheduling and avoid disruptions in site operations. This estimation is important when planning for initial syncs or large scale catalog updates, such as mass price changes. For details, see [Estimate data volume and transmission time for data sync](estimate-data-volume-sync-time.md)
+
 ## Synchronization modes
 
 SaaS data export has two modes to process entity feeds:
