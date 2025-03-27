@@ -7,10 +7,6 @@ exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 
 To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated events. Then, complete the rule details, test the results, and publish the rule.
 
->[!NOTE]
->
->Any rule you create is ignored if the shopper manually sorts the search results by name, ascending, descending, and so on.
-
 ## Add a rule
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
@@ -150,6 +146,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
    The rule is added to the list in the *Rules* workspace. 
 
 1. Although active rules go into effect immediately, you might have to wait up to 15 minutes for the cached query results in the storefront to be refreshed.
+
+>[!NOTE]
+>
+>Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, any rules and manual rankings are no longer in effect.
 
 ## Field descriptions
 
