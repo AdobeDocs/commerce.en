@@ -11,6 +11,8 @@ Faceting is a method of high-performance filtering that uses multiple dimensions
 
 ![Filtered search results](assets/storefront-search-results-run.png)
 
+Within a facet, shoppers can select multiple options, such as "Basic" and "Snug" under "Style" and the search results update to display only those styles. Likewise, if a shopper selects options across facets, such as "Basic" under "Style" and "Indoor" under "Climate", the search results update to display that selected style and that selected climate.
+
 Any defined facet may be used as a URL parameter and results will be filtered based on the parameter values: `http://yourstore.com?brand=acme&color=red`.
 
 ## Faceting requirements
@@ -41,7 +43,7 @@ If you have a large number of attributes to contend with, consider combining att
 Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-50.00, categories = `promotions`).
 
 * `categories` aggregation - Aggregates `categories`, then applies the `color` and `price` filters, but not the `categories` filter.
-* `color` aggregation - Aggregates `color`, then applies  the`price` and `categories` filters, but not the `color` filter.
+* `color` aggregation - Aggregates `color`, then applies  the `price` and `categories` filters, but not the `color` filter.
 * `price` aggregation - Aggregates `price`, then applies the `color` and `categories` filters, but not the `price` filter.
 
 ## Default attribute values
