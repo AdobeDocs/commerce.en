@@ -53,7 +53,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The maximum number of search merchandising [rules](rules.md) per store view is 50.
 - The maximum number of conditions per rule is 10.
 - The maximum number of events per rule is 25.
-- Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, any rules and manual rankings are no longer in effect.
+- Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, rules and manual rankings are no longer in effect.
 - To avoid unpredictable results in paginated responses, the number of pinned products should not exceed the requested page size.
 
 ## Synonyms

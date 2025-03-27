@@ -149,7 +149,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 >[!NOTE]
 >
->Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, any rules and manual rankings are no longer in effect.
+>Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, rules and manual rankings are no longer in effect.
 
 ## Field descriptions
 
