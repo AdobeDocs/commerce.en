@@ -96,13 +96,11 @@ Running the following command will create a scaffolding for your Commerce storef
 
 1. Enter the name of the repository you want to create.
 
-1. Select the template to use, for example, `adobe-commerce/adobe-demo-store`.
-
 1. Select one of the following options:
 
-    * **Use Adobe's demo instance (Default Endpoints)** - Use Adobe's example Commerce instance. 
+    * **Use the demo Adobe Commerce tenant** - Use a demo tenant. 
       * If you select this option, you are prompted to install the AEM Code Sync bot in a browser window. You must specify the repository you created and authorize the bot. Return to the CLI and enter `y` to confirm the AEM Code Sync bot installation.
-    * **Pick an available API (Mesh -> SaaS)** - Select an existing Commerce instance in the selected organization.
+    * **Pick an available Adobe Commerce tenant** - Select an existing Commerce tenant in the selected organization.
       * If you select this option, you must select the project and workspace to create a mesh in.
 
     >[!NOTE]
