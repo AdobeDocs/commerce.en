@@ -1,12 +1,12 @@
 ---
-title: Command Line Configuration
+title: Command-line Configuration
 description: After installation, you can configure [!DNL Payment Services] using the Command-line Interface (CLI).
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
 exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
 ---
-# Command Line Configuration
+# Command-line Configuration
 
 After you install [!DNL Payment Services], you can easily configure it from [within the home](payments-home.md) or via the Command-line Interface (CLI).
 
@@ -83,6 +83,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 To learn more about reindexing and indexers, see the [Manage the indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) topic in the developer documentation.
+
+## Configure scope via CLI
+
+[!DNL Payment Services] allows merchants to use [multiple PayPal accounts](settings.md#use-multiple-paypal-accounts). Now, you can change scopes for these accounts via CLI.
+
+To set the scope to the `website` level, run:
+
+``` bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+To set the scope to the `store` level, use:
+
+``` bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> If you want to change scope to store level, contact your [!DNL Payment Services] sales representative.
+
+Once changing scope, flush cache to show changes:
+
+``` bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Configure L2/L3 processing
 

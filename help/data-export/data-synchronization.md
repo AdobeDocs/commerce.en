@@ -74,7 +74,7 @@ Most synchronization activities are processed automatically based on the applica
 
 - Admin users can view and track synchronization progress and get information about the data from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
-- Developers, system integrators, or administrators with access to the Commerce application server can manage the synchronization process and data feeds using the Adobe Commerce command-line tool (CLI). See [Data Export Command Reference](data-export-cli-commands.md).
+- Developers, system integrators, or administrators with access to the Commerce application server can manage the synchronization process and data feeds using the Adobe Commerce command-line tool (CLI). See [Manage sync operations using the Commerce CLI](data-export-cli-commands.md).
 
 ### Verify Commerce application configuration
 
