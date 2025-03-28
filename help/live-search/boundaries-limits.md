@@ -48,12 +48,12 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The maximum number of results per page is 500.
 - It is not possible to filter results using a date type attribute.
 
-## Rules
+## Search merchandising
 
 - The maximum number of search merchandising [rules](rules.md) per store view is 50.
-- Category merchandising can have one rule per category.
 - The maximum number of conditions per rule is 10.
 - The maximum number of events per rule is 25.
+- Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, rules and manual rankings are no longer in effect.
 - To avoid unpredictable results in paginated responses, the number of pinned products should not exceed the requested page size.
 
 ## Synonyms
@@ -62,9 +62,10 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 ## Category merchandising
 
-- One rule per category can be created for each store view. Each rule can have:
-   - Up to ten conditions
-   - Up to 25 events
+- You can create one rule per category for each store view.
+- The maximum number of conditions per rule is 10.
+- The maximum number of events per rule is 25.
+- Rules are applied when a specific category is opened on the storefront and a rule exists for that category. For Category Merchandising rules, the default sort order is "Sort by: Position". If a shopper changes the sort order, all hidden, pinned, and buried products are no longer sorted.
 
 ## B2B and category permissions
 

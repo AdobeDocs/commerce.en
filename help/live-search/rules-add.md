@@ -147,6 +147,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 1. Although active rules go into effect immediately, you might have to wait up to 15 minutes for the cached query results in the storefront to be refreshed.
 
+>[!NOTE]
+>
+>Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, rules and manual rankings are no longer in effect.
+
 ## Field descriptions
 
 ### Conditions (if)
