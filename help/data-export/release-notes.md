@@ -22,10 +22,6 @@ Updates include:
 
 ## Current major version
 
-## 103.3.22 Release
-
-![Fix](../assets/fix.svg)  The product overrides feed no longer sends permissions if the product is not assigned to a category.<!--MDEE-449-->
-
 ## 103.3.21 Release
 
 ![Fix](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds  based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
