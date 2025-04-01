@@ -135,3 +135,7 @@ To manually add an event:
 1. Under Manual Ranking, click the **Select an event** menu and choose an event to take place when the associated conditions are met. 
 1. Enter the name of the product that you want to affect. Products are suggested as you type.
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
+
+>[!NOTE]
+>
+>Rules are applied when a specific category is opened on the storefront and a rule exists for that category. For Category Merchandising rules, the default sort order is "Sort by: Position". If a shopper changes the sort order, all hidden, pinned, and buried products are no longer sorted.

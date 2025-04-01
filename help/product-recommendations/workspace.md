@@ -14,6 +14,19 @@ The [!DNL Product Recommendations] workspace displays a list of previously confi
 ![Recommendations workspace](assets/workspace.png)
 _Recommendations Workspace_
 
+## Data collection
+
+To ensure that each functional area on the workspace contains the correct data, you need to configure data collection based on the selected storefront implementation:
+
+1. Luma - Data collection is available out-of-the-box.
+1. Headless - Data collection must be configured manually, depending on storefront implementation.
+
+If you are using a headless storefront, refer to the following documentation to get more information about the required events that you need to add:
+
+- [Required events](events.md) for Product Recommendations dashboard.
+- [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) that needs to be added as a prerequisite.
+- [Examples](https://github.com/adobe/commerce-events/tree/main/examples) of the events structure.
+
 ## Set the scope
 
 Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your recommendations apply.
