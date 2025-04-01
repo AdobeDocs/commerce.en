@@ -42,7 +42,7 @@ You can also add multiple users to a role by creating a [user group](https://hel
 
 ## Understanding roles
 
-* **Users** - Users have Admin access to the Commerce Admin, and can manage users inside Commerce, but cannot manage product-level access. Users can also use credits to [provision instances](./getting-started#create-an-instance) in the [!UICONTROL Commerce Cloud Manager].
+* **Users** - Users have Admin access to the Commerce Admin, and can manage users inside Commerce, but cannot manage product-level access. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!UICONTROL Commerce Cloud Manager].
 
 * [**Admins**](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - In addition to user permissions, admins can [Manage users, roles, and permissions for the product](#add-users-and-admins)
 
