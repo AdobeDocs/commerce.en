@@ -71,22 +71,22 @@ Like all of Adobe Commerce, [!DNL Product Recommendations] uses Composer for ins
 composer update magento/product-recommendations --with-dependencies
 ```
 
-To update to a major version, such as from 3.0 to 4.0, you must edit the root `composer.json` file for your project. (See the [release notes](release-notes.md) for information about the latest version.) For example, let's open the main `composer.json` file and search for the `magento/product-recommendations` module:
+To update to a major version, such as from 5.0 to 6.0, you must edit the root `composer.json` file for your project. (See the [release notes](release-notes.md) for information about the latest version.) For example, let's open the main `composer.json` file and search for the `magento/product-recommendations` module:
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^3.0",
+    "magento/product-recommendations": "^5.0",
     ...
 }
 ```
 
-Let's bump the major version from `3.0` to `4.0`:
+Let's bump the major version from `5.0` to `6.0`:
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^4.0",
+    "magento/product-recommendations": "^6.0",
     ...
 }
 ```
