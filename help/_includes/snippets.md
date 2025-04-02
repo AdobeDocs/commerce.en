@@ -4,4 +4,4 @@
 
 >[!NOTE]
 >
->This documentation is currently in a pre-release state and is subject to change without notice.
+>This documentation describes a product in early-access development and may not reflect all functionality intended for general availability.
