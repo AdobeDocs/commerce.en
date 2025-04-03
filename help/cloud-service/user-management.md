@@ -13,14 +13,16 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce as
 >[!TIP]
 >
 >To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+> 
+> You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product to the user group.
 
 ## Add users and admins
 
-The following instructions provide information on how to add users and admins to the [!UICONTROL Commerce Cloud Manager]. This user interface allows you to create and manage your Commerce Instances. To manage users inside Adobe Commerce instead, refer to [manage user accounts](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+The following instructions provide information on how to add users and admins to the [!DNL Commerce Cloud Manager] and the Commerce Admin. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Instances.
 
 >[!NOTE]
 >
->Only product admins can add users and admins to the Adobe Commerce as a Cloud Service product.
+>Only product admins and system admins can add users and admins to the Adobe Commerce as a Cloud Service product.
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
@@ -38,16 +40,13 @@ The following instructions provide information on how to add users and admins to
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
-You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}.
-
 ## Understanding roles
 
-* **Users** - Users have Admin access to the Commerce Admin, and can manage users inside Commerce, but cannot manage product-level access. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!UICONTROL Commerce Cloud Manager].
+* **Users** - Users have Admin access to the Commerce Admin, and can manage users inside Commerce, but cannot manage product-level access. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
 
-* [**Admins**](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - In addition to user permissions, admins can [Manage users, roles, and permissions for the product](#add-users-and-admins)
 
->[!NOTE]
->
->The Developer and API Credential roles are not currently supported.
+* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and are added to the Commerce instance as a developer user. This means they can use the [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
+
+* [**Admins**](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - In addition to user permissions, admins can [Manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console].
 
 For more information, refer to [Administrative roles](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"}.

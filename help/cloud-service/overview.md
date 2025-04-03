@@ -89,7 +89,7 @@ Key features include:
 
 ### Simplified onboarding
 
-Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including Merchandising Services, Commerce Storefront, and App Builder, are automatically configured and integrated with your instances.
+Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including Merchandising Services, a headless Commerce Storefront, and App Builder, are automatically configured and integrated with your instances.
 
 See [Getting started](getting-started.md) to learn how to create and manage Commerce instances.
 
