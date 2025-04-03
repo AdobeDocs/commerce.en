@@ -50,7 +50,7 @@ _April 7, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Updated the 
+![New](../assets/new.svg) Updated the CDN URLs for the `recommendations-admin-ui`. Production: `https://recommendations-admin-ui.adobe.io` QA: `https://recommendations-admin-ui-qa.adobe.io`.
 
 ### Previous versions
 
