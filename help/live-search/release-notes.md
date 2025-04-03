@@ -20,7 +20,7 @@ These notes describe updates that were published outside of a versioned release 
 
 _April 3, 2025_
 
-![Fix](../assets/fix.svg) Updated the `commerce-data-export` extension to remove the "Products must be assigned to the root category" [limitation](boundaries-limits.md#b2b-and-category-permissions) for B2B merchants. To enable this fix, you must [update](install.md#updating-live-search) the dependency module `commerce-data-export` to version 103.4.0+.
+![Fix](../assets/fix.svg) Updated the SaaS Data Export extension to remove the "Products must be assigned to the root category" [limitation](boundaries-limits.md#b2b-and-category-permissions) for B2B merchants. See [Manage the data export extension](../data-export/manage-extension.md) to learn how to update the SaaS Data Export extension to version 103.4.0+.
 
 _February 20, 2025_
 

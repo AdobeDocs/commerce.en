@@ -71,7 +71,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 - Products are not displayed if they are not added to a default shared catalog.
 - To restrict customer groups using [category permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
-   - Products must be assigned to the root category. (**Note:**  You can remove this limitation by updating the [SaaS Data Export] extension to version 103.4.0+. See [Manage the data export extension](../data-export/manage-extension.md). 
+   - Products must be assigned to the root category. (**Note:**  You can remove this limitation by updating the SaaS Data Export extension to version 103.4.0+. See [Manage the data export extension](../data-export/manage-extension.md). 
    - The "Not Logged in" customer group must be given "Allow" browsing permissions.
    - To restrict products to the "Not Logged In" customer group, go to each category and set permission for each [customer group](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Out-of-the-box support for B2B with the PLP widget on PWA Studio is not supported at this time. However, you can [use the API](install.md#pwa-support) to implement this functionality.
