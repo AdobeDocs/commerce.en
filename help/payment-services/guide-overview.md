@@ -124,7 +124,7 @@ If you need information or have questions not covered in this guide, contact you
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
-See [Which [!DNL Payment Services] option is right for you?](overview.md#availability) topic to check which is the [!DNL Payment Services] option best suited for you.
+See [Which [!DNL Payment Services] option is right for you?](compatibility.md#which-payment-services-option-is-right-for-you) topic to check which is the [!DNL Payment Services] option best suited for you.
 
 >[!MORELIKETHIS]
 >
