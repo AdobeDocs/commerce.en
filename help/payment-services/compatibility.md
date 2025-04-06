@@ -56,7 +56,7 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 ![check](assets/icon-check.png)  **Available in XX countries**
 
-[![learn more](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![learn more](assets/learn-more-button.svg)](onboard.md)
 
 >[!TAB Advanced (Fully Supported)]
 
@@ -86,7 +86,7 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 ![check](assets/icon-check.png)  **Only available in United States (US), Canada (CA), Australia (AUS). France (FR), United Kingdom (UK)**
 
-[![learn more](assets/learn-more-button.svg)](release-notes.md)
+[![learn more](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
