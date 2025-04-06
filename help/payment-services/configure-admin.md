@@ -34,7 +34,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-![Featured Adobe Solution view](assets/featured-adobe-solution-view.png){width="700" zoomable="yes"}
+![Featured Adobe Solution view](assets/config-view-all.png){width="700" zoomable="yes"}
 
 ### Configuration options
 

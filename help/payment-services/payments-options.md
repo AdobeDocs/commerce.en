@@ -26,6 +26,7 @@ There are different behaviors for each payment method depending on where you are
 [!DNL Payment Services] provides **Advanced** (fully supported) and **Standard** (Express Checkout) payment options and onboarding flows, depending on the country in which you operate.
 
 * **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current [fully supported countries](../payment-services/introduction.md#availability). During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
+
 * **Standard** - A subset of payments options (Express Checkout)---PayPal credit and debit cards---is available for other available supported countries. [Credit card fields](#credit-card-fields) and [Apple Pay](#apple-pay-button) are not available for this onboarding option. During onboarding to enable live payments, select the [Standard onboarding option](../payment-services/production.md#standard-onboarding).
 
 See [Enable [!DNL Payment Services] for production](../payment-services/production.md#complete-merchant-onboarding) for information about completing Advanced and Standard onboarding.
@@ -36,43 +37,27 @@ See [Enable [!DNL Payment Services] for production](../payment-services/producti
 
 ![Credit card fields in checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
-Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to vault (save) their credit card information for a fast checkout later.
-
-You can configure [!UICONTROL Credit Card Fields] in the store configuration or the [!DNL Payment Services] Home. See [Settings](settings.md#credit-card-fields) for more information.
-
-You can also change the layout, width, height, and outer styling of the credit card fields. See [PayPal documentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) for more information.
-
 ## [!UICONTROL Digital Wallets]
 
 ### [!DNL Apple Pay] button
 
-Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which uses credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
-
-[!DNL Apple Pay] is only available in the Safari browser. Merchants can add up to 99 domains per merchant account.
+With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience in Safari (for up to 99 domains per merchant account), which can increase conversions. The [!DNL Apple Pay] button autofill's stored payment, contact, and shipping details from customers' iOS or macOS devices, enabling a quick, one-tap checkout experience.
 
 ![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
-The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
+When enabled, the [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. You can configure [!DNL Apple Pay] in the store configuration or the extension's Home.
 
-To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
-
-   >[!NOTE]
-   >
-   > See [advanced checkout](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} in the PayPal developer documentation to check how to enable enable buyers to pay with Apple Pay on your site.
-
-You can configure [!UICONTROL Apple Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md#apple-pay) for more information.
+See [Settings](settings.md#apple-pay) for more information.
 
 ### [!DNL Google Pay] button
 
-Customers can use [[!DNL Google Pay]](https://pay.google.com/about/) by adding payment details to their Google Account, where they are stored safely for a seamless checkout experience.
+By integrating [!DNL Google Pay] into your checkout experience, merchants can collect saved payment, contact, and shipping information from the shopper's Google Account, offering a convenient, streamlined checkout across supported browsers and apps.
 
 [!DNL Google Pay] is only available in certain countries or regions and on certain devices. See [[!DNL Google Pay] documentation](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) for more information.
 
 ![Google Pay button in the checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
 
-The [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
-
-You can configure [!UICONTROL Google Pay] in the store configuration or the Payment Services Home. See [Settings](configure-admin.md) for more information.
+When enabled, the [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. See [Settings](configure-admin.md) for more information.
 
    >[!NOTE]
    >
@@ -155,7 +140,7 @@ With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have mu
 
 * Checkout view—--Available upon click of Proceed to Checkout from mini-cart or shopping cart 
 
-## Order recalculation
+### Order recalculation
 
 When a customer enters the checkout flow from the mini-cart, shopping cart, or product page, they are directed to an order review page where they can see the selected shipping address in a PayPal popup window. After the customer selects the shipping method, the order amount is recalculated appropriately and the customer can see shipping costs and taxes.
 
@@ -163,12 +148,4 @@ When a customer enters the checkout flow from the checkout page, the system is a
 
 Tax holidays, shipping costs, and sales tax can vary widely from location to location. After [!DNL Payment Services] receives the shipping address and rate, it quickly recalculates all applicable costs and display them appropriately during the last stages of checkout.
 
-## Credit card vaulting
-
-Shoppers can vault---or "save"---their credit card information for future purchases on the website level (any store within the same merchant's account).
-
-See [Credit card vaulting](vaulting.md) for more information.
-
-## Security
-
-See [PCI compliance](security.md#pci-compliance) for more information.
+Learn about availability of payment methods by country in [PayPal's Payment methods](https://developer.paypal.com/docs/checkout/payment-methods/){target=_blank} documentation.
