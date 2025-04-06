@@ -37,8 +37,8 @@ recommendations: noDisplay
     - [Voids](voids.md)
   - [Create an order in the Admin](create-order.md)
   - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
-- Financial reporting {#reporting}
-  - [Transactions report](transactions.md)
+- Financial reporting {#financial-reports}
+  - [Reporting](reporting.md)
   - [Order payment status report](order-payment-status.md)
   - [Payouts report](payouts.md)
   - [Available data](data.md)
