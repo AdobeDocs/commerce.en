@@ -6,15 +6,11 @@ feature: Payments, Checkout
 ---
 # Voids
 
-With [!DNL Payment Services], you can use existing Commerce functionality for voiding transactions. Voids allow you to free the funds in a credit or debit card account that are blocked or held aside by an authorization for the amount of a purchase.
+[!DNL Payment Services] supports Commerce's existing functionality for voiding transactions. A void releases funds in a credit or debit card account that are being held by an authorization for the purchase amount. Transactions can only be voided if payment has not yet been captured.
 
->[!NOTE]
->
->You can only void a transaction if payment is not yet captured.
+* If your store is [configured](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} to authorize only (not capture) funds at the point of sale, a purchase from your store results in an order with a `Processing` status in the Commerce Admin.
 
-If your store is [configured](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} to authorize only (not capture) funds at the point of sale, a purchase from your store results in an order with a `Processing` status in the Commerce Admin.
-
-You can also [cancel an order](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} that is not invoiced. Any uncaptured authorizations are also voided as part of that cancellation process.
+* You can also [cancel an order](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} that is not invoiced. Any uncaptured authorizations are also voided as part of that cancellation process.
 
 >[!NOTE]
 >
