@@ -85,6 +85,67 @@ _June 28, 2021_
 
 +++
 
+## v2.11.1
+
+_March 14, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5849 --> Fixed an issue that affected [Line Items](line-items.md) during checkout. Now, [!DNL Payment Services] has improved the checkout process reliability for **Line Items**. If you encounter a similar issue, contact your [!DNL Payment Services] sales representative for assistance.
+
+## v2.11.0
+
+_March 13, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+
+![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] allows merchants to manage payment settings to maximize flexibility in their business. This version improves the ability to attach [multiple PayPal accounts](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) for the regions and brands a merchant supports. Our sales team can provide an onboarding link to set up your website and store view scopes.
+
+![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with **PayPal Merchant ID** and **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5816 --> Restored normal order functionality in [!DNL Payment Services] by resolving an issue that was causing errors in all order placements with version v2.9.0.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5825 --> Fixed an issue where Apple Pay mini-cart used incorrect estimated totals URL for logged-in customers. Now, [!DNL Payment Services] ensures accurate total calculations.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5826 --> Improved order management reliability by resolving an issue that caused an HTTP 500 error when changing the quote status to `inactive`.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5849 --> Fixed an issue where `LineItemProvider` threw exceptions for decimal quantities below 1. Now, [!DNL Payment Services] provides better support for fractional quantities.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5868 --> Fixed a gift card amount error during checkout. [!DNL Payment Services] now ensures accurate values during a checkout process.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5911 --> Resolved errors during shipment creation for orders placed using non-[!DNL Payment Services] online payment methods, enhancing overall reliability.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] now offers a smoother checkout experience by resolving an issue where Apple Pay failed to place an order when a different credit card was selected in the wallet.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] no longer redirects customers to the order review page when Apple Pay fails, preventing unnecessary checkout disruptions.
+
+## v2.10.3
+
+_February 24, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Improved overall stability and performance.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> General improvements and optimizations. Fixed critical bugs from v2.10.2.
+
+## v2.10.2
+
+_February 21, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Known issue](../assets/bug.svg)<!-- PAY-xxxx --> Contains critical bugs that can affect stability and performance. Adobe recommends upgrading to v2.10.3 instead of using  this version (v2.10.2).
+
+## v2.10.1
+
+_February 5, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5813 --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
+
 ## v2.10.0
 
 _December 13, 2024_

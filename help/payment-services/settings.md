@@ -298,4 +298,6 @@ In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
 
+See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
+
 Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.
