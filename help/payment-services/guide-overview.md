@@ -87,7 +87,7 @@ For an overview of out-of-the-box payment solutions, including features and bene
 </td>
 <td valign="top" style="text-align: center;">
    <div>
-      <a href="transactions.md">
+      <a href="reporting.md">
       <img alt="Payment Services" src="assets/reporting.jpg">
       <strong>Reporting</strong>
       </a>

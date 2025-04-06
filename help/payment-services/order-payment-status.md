@@ -8,7 +8,7 @@ feature: Payments, Checkout, Orders
 ---
 # Order Payment Status Report
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](transactions.md), orders, and payments.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](reporting.md), orders, and payments.
 
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
