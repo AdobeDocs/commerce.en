@@ -43,9 +43,3 @@ The demand is high for a quality Commerce experience, and an integrated payments
 >[!NOTE]
 >
 > Some of the features mentioned here may not yet be available in your market. See [Compatibility](compatibility.md) for more information.
-
-### Which [!DNL Payment Services] option is right for you?
-
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
-
-See [Connect](connect.md) for more information on setting up your [!DNL Payment Services] extension.
