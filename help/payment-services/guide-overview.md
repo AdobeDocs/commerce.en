@@ -114,7 +114,7 @@ For an overview of out-of-the-box payment solutions, including features and bene
 ### Featured topics
 
 **[Pre-requisites for Payment Services](compatibility.md)**
-**[How do I determine which Payment Services experience is right for my business?](compatibility.md)**
+**[How do I determine which Payment Services experience is right for my business?](compatibility.md#which-payment-services-option-is-right-for-you)**
 
 >[!ENDSHADEBOX]
 
