@@ -118,11 +118,13 @@ For an overview of out-of-the-box payment solutions, including features and bene
 
 >[!ENDSHADEBOX]
 
-### Additional information
+## Support
+
+If you need information or have questions not covered in this guide, contact your [!DNL Payment Services] sales representative or use the resources available in your [!DNL Payment Services] Home:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
-If you need information or have questions not covered in this guide, contact your [!DNL Payment Services] sales representative or use the resources available in your [!DNL Payment Services] Home.
+See [Which [!DNL Payment Services] option is right for you?](overview.md#availability) topic to check which is the [!DNL Payment Services] option best suited for you.
 
 >[!MORELIKETHIS]
 >
