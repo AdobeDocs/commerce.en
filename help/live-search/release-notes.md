@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_April 3, 2025_
+
+![Fix](../assets/fix.svg) Updated the SaaS Data Export extension to remove the "Products must be assigned to the root category" [limitation](boundaries-limits.md#b2b-and-category-permissions) for B2B merchants. See [Manage the data export extension](../data-export/manage-extension.md) to learn how to update the SaaS Data Export extension to version 103.4.0+.
+
 _February 20, 2025_
 
 ![New](../assets/new.svg) Commerce supports multi-word synonyms. [Learn more](synonyms-type.md#multi-word-synonym-behavior). Support for multi-word synonyms is only available after this February 20 release date. Any existing multi-word synonyms require a full reindex to work, which you can request by [creating a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
