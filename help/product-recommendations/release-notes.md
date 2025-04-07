@@ -44,6 +44,16 @@ _April 25, 2023_
 
 ## Current major version
 
+### 6.2.0 of magento/product-recommendations
+
+_April 4, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Updated the CDN URLs for the `recommendations-admin-ui` to  the `adobe.io` domain.
+
+### Previous versions
+
 ### 6.1.0 of magento/product-recommendations
 
 _March 11, 2025_
@@ -51,8 +61,6 @@ _March 11, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added PHP 8.4 support.
-
-### Previous versions
 
 ### 6.0.3 of magento/product-recommendations
 

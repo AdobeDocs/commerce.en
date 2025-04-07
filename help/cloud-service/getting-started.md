@@ -40,7 +40,7 @@ This diagram provides a high-level overview of how developers create integration
 
 [!DNL Adobe Commerce as a Cloud Service] instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
 
-1. Log in to your [Adobe Experience Cloud](https://experience-stage.adobe.com/) account.
+1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
 1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager]. 
 
