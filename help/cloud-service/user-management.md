@@ -8,7 +8,7 @@ description: Learn how to manage users in [!DNL Adobe Commerce as a Cloud Servic
 
 If you want users to access the Admin in [!DNL Adobe Commerce as a Cloud Service], you need to add them as users in your organization and ensure they have access to the Cloud Service product in the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}.
 
-This process requires an IMS organization with access to [!DNL Adobe Commerce as a Cloud Service]. Only a System Admin or Product Adminfor the organization can perform these processes.
+This process requires an IMS organization with access to [!DNL Adobe Commerce as a Cloud Service]. Only a System Admin or Product Admin for the organization can perform these processes.
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ The following instructions provide information on how to add users and admins to
 
     ![select product](./assets/backend.png){width="600" zoomable="yes"}
 
-1. Click the [!UICONTROL **Default**] product profile.
+1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
-1. Select the [!UICONTROL **Users**] or [!UICONTROL **Admins**] tab and click [!UICONTROL **Add Users**], [!UICONTROL **Add Admins**], or [!UICONTROL **Add Developers**].
+1. Select the [!UICONTROL **Users**] or [!UICONTROL **Developers**] tab and click [!UICONTROL **Add Users**]  or [!UICONTROL **Add Developers**]. To have an Admin role in the Commerce Admin, the user needs to be a Product Admin in the Admin Console.
 
     ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
@@ -42,7 +42,7 @@ The following instructions provide information on how to add users and admins to
 
 ## Understanding roles
 
-* **Users** - Users have Admin access to the Commerce Admin, and can manage users inside Commerce, but cannot manage product-level access. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
+* **Users** - Users have Admin access to the Commerce Admin, but cannot manage product-level access in the Admin Console. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
 
 
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and are added to the Commerce instance as a developer user. This means they can use the [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
