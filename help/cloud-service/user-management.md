@@ -1,6 +1,7 @@
 ---
-title: 'User management'
+title: User management
 description: Learn how to manage users in [!DNL Adobe Commerce as a Cloud Service].
+exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 ---
 # User management
 
