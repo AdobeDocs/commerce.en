@@ -38,7 +38,7 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 - The maximum number of options a single facet cat returns is 100, which can be increased per support request.
 
 ## Channels and polices
- 
+
 - The maximum number of channels per tenant is 30,000.
 - The maximum number of polices assigned to one channel is 10.
 - The maximum number of attribute values used in a policy is 100. 
