@@ -11,6 +11,7 @@ recommendations: noDisplay, noCatalog
 
 - [Overview](overview.md)
 - [Getting started](getting-started.md)
+- [User management](user-management.md)
 - [Storefront](storefront.md)
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
