@@ -93,7 +93,7 @@ Early access participants receive an email with a secure link that lets them, al
 
 1. _(Optional)_ If you want to include sample product data for testing and learning purposes, select [!UICONTROL **Adobe Store**] from the [!UICONTROL **Test data**] dropdown.
 
-   You can skip this option, but your storefront will not have any products if you do. You have to [import your catalog](#import-your-catalog) to see the full storefront experience.
+   You can skip this option, but your storefront will not have any products if you do. You have to [import your catalog](#ingest-catalog-data) to see the full storefront experience.
 
 1. Click [!UICONTROL **Add Instance**].
 
