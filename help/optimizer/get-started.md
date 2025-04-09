@@ -70,7 +70,7 @@ Early access participants will receive an email with a secure link that lets the
 
 1. Click [!UICONTROL **Add Instance**] in the top-right corner of the screen.
 
-    ![Create Instance](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+    ADD IMAGE
 
 1. Select [!UICONTROL **Commerce as a Cloud Service**].
 
