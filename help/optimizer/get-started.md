@@ -58,7 +58,7 @@ Early access participants receive an email with a secure link that lets them, al
 
 >[!NOTE]
 >
->Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce Optimizer] product. See [Add users and admins](./user-management.md#add-users-and-admins) for more information.
+>Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce Optimizer] product. See Add users and admins (ADD LINK?) for more information.
 
 [!DNL Adobe Commerce Optimizer] instances use a credit-based system. You can create multiple instances, but each instance requires a relative number of credits. The number of credits you have initially depends on your subscription.
 
