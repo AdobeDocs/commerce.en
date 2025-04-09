@@ -9,7 +9,7 @@ recommendations: noCatalog
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-Product discovery enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers will get the right products at the right time. 
+Product discovery enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time. 
 
 With product discovery, you can:
 

@@ -52,7 +52,7 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
     - admin router path: `/{tenantId}/admin/graphql`
     - catalog/feeds ingestion: `/{tenantId}/v1/catalog`
 
-Early access participants will receive an email with a secure link that lets them, along with their IMS token, log into [!DNL Adobe Commerce Optimizer] or make API calls.
+Early access participants receive an email with a secure link that lets them, along with their IMS token, log into [!DNL Adobe Commerce Optimizer] or make API calls.
 
 ## Create an instance
 
@@ -60,7 +60,7 @@ Early access participants will receive an email with a secure link that lets the
 >
 >Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce Optimizer] product. See [Add users and admins](./user-management.md#add-users-and-admins) for more information.
 
-[!DNL Adobe Commerce Optimizer] instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
+[!DNL Adobe Commerce Optimizer] instances use a credit-based system. You can create multiple instances, but each instance requires a relative number of credits. The number of credits you have initially depends on your subscription.
 
 1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
@@ -84,7 +84,7 @@ Early access participants will receive an email with a secure link that lets the
  
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce Optimizer] journey by using the sandbox environment. 
+   - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. Begin your [!DNL Adobe Commerce Optimizer] journey by using the sandbox environment. 
    - [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
    >[!NOTE]
@@ -93,7 +93,7 @@ Early access participants will receive an email with a secure link that lets the
 
 1. _(Optional)_ If you want to include sample product data for testing and learning purposes, select [!UICONTROL **Adobe Store**] from the [!UICONTROL **Test data**] dropdown.
 
-   You can skip this option, but your storefront will not have any products if you do. You will have to [import your catalog](#import-your-catalog) to see the full storefront experience.
+   You can skip this option, but your storefront will not have any products if you do. You have to [import your catalog](#import-your-catalog) to see the full storefront experience.
 
 1. Click [!UICONTROL **Add Instance**].
 
@@ -119,7 +119,7 @@ By default, [!DNL Adobe Commerce Optimizer] instances do not include any product
 
 See the [Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into Adobe Commerce Optimizer.
 
-The catalog data you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the channels and policies.
+The catalog data that you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the channels and policies.
 
 ## Set up the storefront
 
