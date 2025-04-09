@@ -9,32 +9,24 @@ recommendations: noDisplay
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [What is [!DNL Adobe Commerce Optimizer]?](overview.md)
-- [Concepts](concepts.md)
-- [Architecture](architecture.md)
+- [Overview](overview.md)
+- [Get Started](get-started.md)
 - [Boundaries and Limitations](boundaries-limits.md)
-- Get Started {#getstarted}
-   - [Prerequisites](prerequisites.md)
-   - [Product provisioning](provisioning.md)
-   - User roles {#user-roles}
-      - [Who is this for?](user-role-overview.md)
-      - [Merchandiser](merchandiser-workflow.md)
-      - [Admin](admin-workflow.md)
 - Merchandising {#merchandising}
+   - [Overview](merch-overview.md)
    - [Product Discovery](product-discovery.md)
    - [Recommendations](recommendations.md)
 - Catalog {#catalog}
+   - [Overview](catalog-overview.md)
    - [Channels](channels.md)
    - [Policies](policies.md)
 - Data Insights {#data-insights}
+   - [Overview](insights-overview.md)
    - [Data Sync](data-sync.md)
    - [Eventing](eventing.md)
    - [Troubleshooting](troubleshooting.md)
-- Connecting Third-Party Components {#connectthirdparty}
-   - [Catalog - integration starter kit](catalog.md)
-   - [Cart](cart.md)
-   - [Payments](payment.md)
+- [Storefront](storefront.md)
 - Use Case {#use-case}
+   - [Overview](use-case-overview.md)
    - [Merchandiser end-to-end use case](merchandiser-use-case.md)
-   - [Admin end-to-end use case](admin-use-case.md)
    
