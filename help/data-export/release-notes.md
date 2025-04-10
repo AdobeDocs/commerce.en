@@ -24,8 +24,7 @@ Updates include:
 
 ## 103.4.1 Release
 
-![Fix](../assets/fix.svg) Add prefix for QueryXml cache to avoid naming collisions with other modules. <!--MDEE-1019-->
-![Fix](../assets/fix.svg) Fix web-api tests on 2.4.8. <!--MDEE-1009-->
+![Fix](../assets/fix.svg) Added a prefix to QueryXml cache keys to prevent naming conflicts with other modules. <!--MDEE-1019-->
 
 ## 103.4.0 Release
 
