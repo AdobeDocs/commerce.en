@@ -118,8 +118,8 @@ Running the following command creates a scaffolding for your Commerce storefront
 
 To customize your storefront, refer to the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
-## Drop-ins
+## Components
 
-For Adobe Commerce Optimizer, your storefront uses drop-ins to support the popover and PLP functionality available in [product discovery](./product-discovery.md).
+For Adobe Commerce Optimizer, your storefront uses components to support the popover and PLP functionality available in [product discovery](./product-discovery.md).
 
 [Learn](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) how to configure the popover and PLP drop-ins.

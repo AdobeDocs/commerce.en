@@ -11,3 +11,11 @@ recommendations: noCatalog
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
 Policies are data access filters that are housed within channels. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram).
+
+## Create policy
+
+### Add trigger
+
+### Add filter
+
+(Include screenshot of storefront when a specific policy is active vs. not active.)
