@@ -48,9 +48,9 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
 - Public Facade: https://na1-sandbox.api.commerce.adobe.com
 
     - REST: `/{tenantId}`
-    - storefront router path: `/{tenantId}/graphql`
+    - storefront APIs: `/{tenantId}/graphql`
     - admin router path: `/{tenantId}/admin/graphql`
-    - catalog/feeds ingestion: `/{tenantId}/v1/catalog`
+    - Catalog data ingestion APIs: `/{tenantId}/v1/catalog`
 
 Early access participants receive an email with a secure link that lets them, along with their IMS token, log into [!DNL Adobe Commerce Optimizer] or make API calls.
 
