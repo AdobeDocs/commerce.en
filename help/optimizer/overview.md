@@ -19,7 +19,7 @@ With [!DNL Adobe Commerce Optimizer], you can:
 
 >[!BEGINSHADEBOX]
 
-If are interested in learning more about the [!DNL Adobe Commerce Optimizer] early access program, complete the [Early Access request form](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
+If you are interested in learning more about the [!DNL Adobe Commerce Optimizer] early access program, complete the [Early Access request form](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 >[!ENDSHADEBOX]
 
