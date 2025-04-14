@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.1 Release
+
+![Fix](../assets/fix.svg) Added a prefix to QueryXml cache keys to prevent naming conflicts with other modules. <!--MDEE-1019-->
+
 ## 103.4.0 Release
 
 ![Fix](../assets/fix.svg) The product overrides feed no longer sends permissions if the product is not assigned to a category.<!--MDEE-449-->
