@@ -79,8 +79,6 @@ Clean up the feed table the feed indexer table before reindexing and sending dat
 
 If used with the `--dry-run` option, the operation performs a dry-run resync operation for all items.
 
-By default, the feed submitted during a `resync --dry-run` operation includes only new items, or items that failed to be exported previously. 
-
 >[!IMPORTANT]
 >
 >Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation leads to lost data and data sync issues where items that have to be deleted in Adobe Commerce will not be deleted from the SaaS data space.
