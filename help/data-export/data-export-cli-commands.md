@@ -62,7 +62,7 @@ See the following sections for option descriptions with examples.
 
 Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions` feeds.
 
-By default, entities are specified in a comma-separated list by product SKU. Use `--id-type=ProductID` to use product IDs instead.
+By default, entities are specified in a comma-separated list by product SKU. To use product IDs instead, add the `--id-type=ProductID` option.
 
 **Examples:**
 
@@ -110,9 +110,10 @@ Add the `EXPORTER_EXTENDED_LOG=1` environment variable to save payload to `var/l
 ```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='products' --dry-run
 ```
+
 ### Test specific feed items
 
-Test specific feed items, by adding the `--by-ids` option with the extended logs collection to see the generated payload in the `.va/log/saas-export.log` file.
+Test specific feed items by adding the `--by-ids` option with the extended logs collection to see the generated payload in the `var/log/saas-export.log` file.
 
 **Example:**
 
@@ -122,7 +123,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='products' --dry-run --by
 
 ### Test all feed items
 
-By default, the feed submitted during a `resync --dry-run` operation includes only new items, or items that failed to be exported previously. To include all items in the feed to be processed, use the `--feed-cleanup` option.
+By default, the feed submitted during a `resync --dry-run` operation includes only new items, or items that failed to be exported previously. To include all items in the feed to be processed, use the `--cleanup-feed` option.
 
 **Example**
 
