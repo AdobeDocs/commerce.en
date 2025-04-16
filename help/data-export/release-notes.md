@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.4.2 Release
+
+![Fix](../assets/fix.svg) Add ability to collect entities payload for saas:resync --dry-run command. <!--MDEE-1023-->
+![Fix](../assets/fix.svg) Add ability to collect entities payload for saas:resync --dry-run command. <!--MDEE-1023-->
+
 ## 103.4.1 Release
 
 ![Fix](../assets/fix.svg) Added a prefix to QueryXml cache keys to prevent naming conflicts with other modules. <!--MDEE-1019-->
