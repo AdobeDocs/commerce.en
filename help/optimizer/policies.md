@@ -126,4 +126,4 @@ In this section, you create a new policy. The policy can be either **STATIC** or
 
 1. To verify your new policy, go back to the list of policies by clicking the back arrow. ​You will see your new policy listed.
 
-By following these steps, the policy will be created and ready to be linked to a channel to control product visibility. ​If you selected **TRIGGER** as the **Value Source**, see the next section.
+By following these steps, the policy will be created and ready to be linked to a channel to control product visibility.
