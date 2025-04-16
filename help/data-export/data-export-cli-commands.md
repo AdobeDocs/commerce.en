@@ -67,9 +67,9 @@ By default, entities are specified in a comma-separated list by product SKU. To 
 **Examples:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
+bin/magento saas:resync --feed products --by-ids='ADB102,ADB111,ADB112'
 
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
+bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 ```
 
 
@@ -86,7 +86,7 @@ If used with the `--dry-run` option, the operation performs a dry-run resync ope
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
+bin/magento saas:resync --feed products --cleanup-feed
 ```
 
 ## `--continue-resync`
@@ -96,19 +96,19 @@ Resumes an interrupted resync operation. Only supported for `products`, `product
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
+bin/magento saas:resync --feed productAttributes --continue-resync
 ```
 
 ## `--dry-run`
 
-Runs the feed reindex process without submitting the feed to SaaS and without saving to the feed table. This command is useful to identify any issues with your data set.
+Runs the feed reindex process without submitting the feed to SaaS and without saving to the feed table. This option is useful to identify any issues with your data set.
 
 Add the `EXPORTER_EXTENDED_LOG=1` environment variable to save payload to `var/log/saas-export.log`.
 
 **Example:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='products' --dry-run
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
 ```
 
 ### Test specific feed items
@@ -118,7 +118,7 @@ Test specific feed items by adding the `--by-ids` option with the extended logs 
 **Example:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='products' --dry-run --by-ids=Simple Product One,Simple Product Two,Configurable Product
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
 ```
 
 ### Test all feed items
@@ -127,8 +127,9 @@ By default, the feed submitted during a `resync --dry-run` operation includes on
 
 **Example**
 
-`bin/magento saas:resync --feed='products' --dry-run --cleanup-feed`
-
+```shell
+bin/magento saas:resync --feed products --dry-run --cleanup-feed
+```
 
 ## `--feed`
 
@@ -151,7 +152,7 @@ Available feeds:
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>'
+bin/magento saas:resync --feed products
 ```
 
 ## `--no-reindex`
@@ -166,8 +167,18 @@ Behavior varies by [export mode](data-synchronization.md#synchronization-modes):
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --no-reindex
+bin/magento saas:resync --feed productAttributes --no-reindex
 ```
+
+## `--id-type=ProductId`
+
+By default, the entities specified in `saas:resync` commands are specified by product SKU. Use the `--id-type=ProductId` option, to specify entities by product ID.
+
+```shell
+bin/magento saas:resync --feed products --by-ids='ADB124,45678,910111' --id-type='productId'
+```
+
+**Example:**
 
 ## Troubleshooting
 
