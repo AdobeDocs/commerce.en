@@ -172,7 +172,7 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 
 ## `--id-type=ProductId`
 
-By default, the entities specified in `saas:resync` commands are specified by product SKU. Use the `--id-type=ProductId` option, to specify entities by product ID.
+By default, the entities specified when you use the `saas:resync feed` command with the `--by-ids` option are specified by product SKU. Use the `--id-type=ProductId` option, to specify entities by product ID.
 
 ```shell
 bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
