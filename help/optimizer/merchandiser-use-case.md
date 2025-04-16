@@ -1,6 +1,6 @@
 ---
 title: Merchandiser use case
-description: Learn how to use Adobe Commerce Optimizer to...
+description: "Learn how to use [!DNL Adobe Commerce Optimizer] to accomplish a specific task."
 hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
@@ -11,7 +11,7 @@ feature: Personalization, Integration
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-The goal of this use-case is to demonstrate how...
+The goal of this use-case is to demonstrate a workflow an [!DNL Adobe Commerce Optimizer] merchant will typically need to complete.
 
 ## Let's get started
 

@@ -18,4 +18,16 @@ With product discovery, you can:
 - Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing the total cost of ownership.
 - Get technical by enabling GraphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
-[Learn more](../live-search/overview.md) about Product Discovery.
+## Workspace
+
+The main **Product Discovery** page contains the following tabs:
+
+>[!NOTE]
+>
+>The following links direct you to the [!DNL Live Search] documentation. While the functionality is the same, the screenshots will not match what you see in [!DNL Adobe Commerce Optimizer]. This will be updated for the general availability release.
+
+- [Performance](../live-search/performance.md)
+- [Faceting](../live-search/facets.md)
+- [Synonyms](../live-search/synonyms.md)
+- [Search Merchandising](../live-search/rules.md)
+- [Settings](../live-search/settings.md)

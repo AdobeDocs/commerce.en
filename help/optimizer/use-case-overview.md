@@ -1,6 +1,6 @@
 ---
 title: Use Case Overview
-description: Learn how to use Adobe Commerce Optimizer to...
+description: "Learn how to use [!DNL Adobe Commerce Optimizer] to accomplish a specific task."
 hide: yes
 role: Admin, Developer
 feature: Personalization, Integration

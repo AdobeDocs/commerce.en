@@ -7,7 +7,7 @@ role: Admin, Developer
 
 >[!NOTE]
 >
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
+>This documentation describes the boundaries and limits for early-access development and does not reflect all functionality intended for general availability.
 
 The following provides boundaries and limits for Adobe Commerce Optimizer.
 

@@ -86,8 +86,6 @@ Key capabilities include:
 - **Merchandising Services powered by Channels and Policies** - This solution is the foundational piece of [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Channels and Policies is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. These merchandising services provide building blocks that merchants can use to create and manage catalogs at scale. Within [!DNL Adobe Commerce Optimizer], you can manage your catalog by creating channels and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using product discovery​, product recommendations​, and intelligent merchandising. Learn more about [Merchandising Services powered by Channels and Policies](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview).
 - **Before and After metrics (PDF)** - Provides real-time insights into the performance of your commerce initiatives. You can view before and after results of specific KPIs and evaluate the impact of changes and optimize for better results. Results are delivered in a PDF.
 - **Commerce storefront powered by Edge Delivery** - With Edge delivery, you can launch your site quickly using prebuilt storefront components with integrated commerce functionality — including product listing pages, product detail pages, cart, and checkout.
-<!--Q3 2025- **Product visuals powered by AEM assets** - -->
-<!--Q4 2025- - **Site performance AI agent** - -->
 - **Third-party cart and checkout** - Use API mesh and App builder to integrate with third-party cart and checkout systems.
 
 ## Architecture
