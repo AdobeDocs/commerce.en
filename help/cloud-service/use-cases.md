@@ -84,7 +84,7 @@ Create, edit, and publish content directly onto the storefront.
 
 1. Open the [storefront](./storefront.md) you created in the prerequisites.
 
-1. Open Document Authoring. By navigating to `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
+1. Open Storefront Builder. By navigating to `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
 
 1. Open the [!UICONTROL **Index**] page.
 
@@ -104,7 +104,7 @@ Adobe Commerce's contextual experimentation feature allows you to create and man
 
 * Install the [AEM Sidekick extension](https://www.aem.live/docs/sidekick)
 
-1. In the Document Authoring view of your storefront, select your index page and click [!UICONTROL **Copy**].
+1. In Storefront Builder, select your index page and click [!UICONTROL **Copy**].
   
 1. Create an [!UICONTROL **experiments**] folder under the main folder, by clicking the [!UICONTROL **New**] button and selecting [!UICONTROL **Folder**].
 

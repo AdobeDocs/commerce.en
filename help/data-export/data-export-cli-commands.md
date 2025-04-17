@@ -60,30 +60,33 @@ See the following sections for option descriptions with examples.
 
 ## `--by-ids`
 
-Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, and `productOverrides` feeds.
+Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions` feeds.
 
-By default, entities are specified by product SKU. Use `--id-type=ProductID` to use product IDs instead.
+By default, entities are specified in a comma-separated list by product SKU. To use product IDs instead, add the `--id-type=ProductID` option.
 
 **Examples:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
+bin/magento saas:resync --feed products --by-ids='ADB102,ADB111,ADB112'
 
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
+bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 ```
+
 
 ## `--cleanup-feed`
 
-Cleans the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productOverrides`, and `prices` feeds.
+Clean up the feed table the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions`.
+
+If used with the `--dry-run` option, the operation performs a dry-run resync operation for all items.
 
 >[!IMPORTANT]
 >
->Use only after environment cleanup. Can cause data sync issues in Commerce Services.
+>Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation leads to lost data and data sync issues where items that have to be deleted in Adobe Commerce will not be deleted from the SaaS data space.
 
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
+bin/magento saas:resync --feed products --cleanup-feed
 ```
 
 ## `--continue-resync`
@@ -93,19 +96,39 @@ Resumes an interrupted resync operation. Only supported for `products`, `product
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
+bin/magento saas:resync --feed productAttributes --continue-resync
 ```
 
 ## `--dry-run`
 
-Runs the feed reindex process without submitting to SaaS or saving to the feed table. Use to validate data.
+Runs the feed reindex process without submitting the feed to SaaS and without saving to the feed table. This option is useful to identify any issues with your data set.
 
 Add the `EXPORTER_EXTENDED_LOG=1` environment variable to save payload to `var/log/saas-export.log`.
 
 **Example:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
+```
+
+### Test specific feed items
+
+Test specific feed items by adding the `--by-ids` option with the extended logs collection to see the generated payload in the `var/log/saas-export.log` file.
+
+**Example:**
+
+```shell
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+```
+
+### Test all feed items
+
+By default, the feed submitted during a `resync --dry-run` operation includes only new items, or items that failed to be exported previously. To include all items in the feed to be processed, use the `--cleanup-feed` option.
+
+**Example**
+
+```shell
+bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
 ## `--feed`
@@ -129,7 +152,7 @@ Available feeds:
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>'
+bin/magento saas:resync --feed products
 ```
 
 ## `--no-reindex`
@@ -144,8 +167,18 @@ Behavior varies by [export mode](data-synchronization.md#synchronization-modes):
 **Example:**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --no-reindex
+bin/magento saas:resync --feed productAttributes --no-reindex
 ```
+
+## `--id-type=ProductId`
+
+By default, the entities specified when you use the `saas:resync feed` command with the `--by-ids` option are specified by product SKU. Use the `--id-type=ProductId` option, to specify entities by product ID.
+
+```shell
+bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
+```
+
+**Example:**
 
 ## Troubleshooting
 
