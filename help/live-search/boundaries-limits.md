@@ -14,7 +14,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) is not supported in the [!DNL Live Search] field and Product Listing Page Widget.
 - Product prices do not include value-added tax (VAT).
 - Content search (CMS pages and blocks) is not supported.
-- The maximum number of results that can be paginated is 10,000. Make sure you provide meaningful ways to filter products in case a category or search result has a large number of products so that shoppers do not have to use deep pagination.
+- The maximum number of results that can be paginated is 10,000. To ensure that shoppers do not have to use deep pagination when a category or search result includes a large number of products, provide meaningful ways to filter products.
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
 - Custom product types are not supported.
