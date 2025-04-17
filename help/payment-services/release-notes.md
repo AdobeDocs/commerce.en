@@ -84,7 +84,6 @@ _June 28, 2021_
 
 +++
 
-
 >[!NOTE]
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
