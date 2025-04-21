@@ -17,9 +17,8 @@ Adobe offers several solutions to fit the requirements of your ecommerce busines
 
 >[!NOTE]
 >
->- If only one badge displays above the page title, the content applies to that edition only. If multiple badges display above the page title, the content applies to all indicated editions.
->
->- Inline badges can be useful if the page contains a mix of content applicable to multiple solutions. We should probably use that sparingly though to reduce visual clutter/fatigue.
+>- If only one badge is displayed, the content applies to the specified edition only.
+>- If multiple badges are displayed, the content applies to all indicated editions.
 
 ## SaaS
 
