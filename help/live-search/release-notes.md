@@ -18,7 +18,7 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
-_April 15, 2025_
+_April 21, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue with the range filter for prices so that products that are equal to the upper range are not included in the results. This change aligns with how price ranges are defined for facets.
 
