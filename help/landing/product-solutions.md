@@ -29,7 +29,7 @@ The following table defines the badges that display across Adobe Commerce docume
 >
 >The badges described here apply specifically to Adobe Commerce documentation. They do not represent how badges may be used in the documentation for other Adobe Experience Cloud products.
 
-## Rules
+### Rules
 
 Use the following rules to understand what content applies to each Adobe Commerce solution:
 
