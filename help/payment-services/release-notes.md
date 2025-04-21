@@ -84,6 +84,10 @@ _June 28, 2021_
 
 +++
 
+>[!NOTE]
+>
+> Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
+
 ## v2.11.1
 
 _March 14, 2025_
