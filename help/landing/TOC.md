@@ -11,7 +11,7 @@ recommendations: noDisplay
 - [Overview](home.md)
 - Release information {#release-information}
    - [Release notes](/help/landing/release-notes-all.md)
-- [Product editions](product-editions.md)
+- [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
    - Commerce services {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)

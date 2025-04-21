@@ -1,5 +1,5 @@
 ---
-title: Commerce product editions
+title: Commerce product solutions
 description: lorem ipsum dolor sit amet
 feature: Paas, Saas
 recommendations: noDisplay, noCatalog
@@ -14,6 +14,10 @@ Adobe offers several solutions to meet the requirements of your ecommerce busine
 ## Badges
 
 Badges are designed to help you identify whether the Commerce documentation that you find through conventional site navigation or organic search is relevant to the Commerce product solutions that you use.
+
+### Anatomy
+
+
 
 ### Definitions
 
