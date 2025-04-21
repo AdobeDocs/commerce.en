@@ -5,10 +5,11 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: yes
 hidefromtoc: yes
-badgeOnpremises: label="On-premises" type="Neutral" tooltip="Applies to on-premises Adobe Commerce projects (customer-managed hosting)."
-badgePaas: label="PaaS" type="Informative" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure)."
-badgeSaas: label="SaaS" type="Informative" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects (Adobe-managed SaaS infrastructure)."
 ---
+
+<!-- badgeOnpremises: label="On-premises" type="Neutral" tooltip="Applies to on-premises Adobe Commerce projects (customer-managed hosting)."
+badgePaas: label="PaaS" type="Informative" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure)."
+badgeSaas: label="SaaS" type="Informative" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects (Adobe-managed SaaS infrastructure)." -->
 
 # Adobe Commerce product editions
 
