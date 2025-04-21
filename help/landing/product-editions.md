@@ -20,9 +20,7 @@ Adobe offers several solutions to fit the requirements of your ecommerce busines
 >- If only one badge is displayed, the content applies to the specified edition only.
 >- If multiple badges are displayed, the content applies to all indicated editions.
 
-## SaaS
-
-[!BADGE SaaS]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects (Adobe-managed SaaS infrastructure)."}
+## SaaS [!BADGE SaaS]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects (Adobe-managed SaaS infrastructure)."}
 
 This badge represents documentation related to features and functionality available in [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) and [Adobe Commerce Optimizer](../optimizer/overview.md) projects. These projects are hosted on a cloud‑native, fully managed software-as-a-service (SaaS) solution where Adobe is responsible for most operational aspects—such as continuous updates, security monitoring, and scalability—so that customers can focus on commerce rather than infrastructure.
 
