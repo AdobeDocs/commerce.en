@@ -1,6 +1,6 @@
 ---
 title: Commerce product solutions
-description: lorem ipsum dolor sit amet
+description: Learn how to use badges to identify documentation that applies to different Adobe Commerce solutions (SaaS, PaaS, on-premises).
 feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: yes
