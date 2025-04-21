@@ -41,6 +41,6 @@ Use the following rules to understand what content applies to each Adobe Commerc
 
 >[!BEGINSHADEBOX]
 
-![info](../cloud-service/assets/Smock_InfoOutline_18_N.svg) To avoid complexity, the badge types defined here are intended to be mutually exclusive. That means you won't see multiple page- and section-level badges. However, multiple inline badges are possible.
+![info](../cloud-service/assets/Smock_InfoOutline_18_N.svg) The page- and section-level badge types defined here are intended to be mutually exclusive. That means you won't see multiple page- and section-level badges. However, multiple inline badges are possible.
 
 >[!ENDSHADEBOX]
