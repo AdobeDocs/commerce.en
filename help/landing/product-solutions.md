@@ -15,10 +15,6 @@ Adobe offers several solutions to meet the requirements of your ecommerce busine
 
 Badges are designed to help you identify whether the Commerce documentation that you find through conventional site navigation or organic search is relevant to the Commerce product solutions that you use.
 
-### Anatomy
-
-
-
 ### Definitions
 
 The following table defines the badges that display across Adobe Commerce documentation.
