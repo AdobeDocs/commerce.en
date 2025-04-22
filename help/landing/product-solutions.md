@@ -13,7 +13,11 @@ Adobe offers several solutions to meet the requirements of your ecommerce busine
 
 ## Badges
 
-Badges help you quickly identify whether the Commerce documentation that you find through conventional site navigation or internet search is relevant to the Commerce product solutions that you use.
+Badges help you quickly identify whether the Commerce documentation that you find through conventional site navigation or internet search is relevant to the Commerce product solutions that you use. This is particularly important when content applies to one solution only.
+
+If a badge is displayed, it means that the content applies to one solution only. If no badges are displayed, it means that the content applies to all Adobe Commerce solutions.
+
+For example, if you're using Adobe Commerce as a Cloud Service, you should ignore content about [installing](../product-recommendations/install-configure.md#install-product-recommendations) the Product Recommendations extension and [configuring](../product-recommendations/install-configure.md#configure-product-recommendations) the Commerce Services Connnector. Adobe automatically completes these steps when you create an instance.
 
 ### Definitions
 
