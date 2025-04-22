@@ -12,7 +12,7 @@ feature: Services, Catalog Service
 - [Introduction to [!DNL Catalog Service]](overview.md)
 - [Onboarding and installation](installation.md)
 - [Catalog Service and API Mesh](mesh.md)
-- [Display Taxed Prices with the API Mesh](taxes.md)
+    - [Display Taxed Prices with the API Mesh](taxes.md)
 - GraphQL queries {#graphql}
     - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
     - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
