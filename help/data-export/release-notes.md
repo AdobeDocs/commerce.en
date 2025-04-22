@@ -22,6 +22,14 @@ Updates include:
 
 ## Current major version
 
+## 103.4.3 Release
+
+Create .metadata.json by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/482
+![Fix](../assets/fix.svg) Fix issue when products were skipped for export because absence of EAV attributes. <!--MDEE-970-->
+Create .metadata.json by @duhon in https://github.com/magento-commerce/commerce-data-export-ee/pull/122
+Create .metadata.json by @duhon in https://github.com/magento-commerce/saas-export/pull/168
+![Fix](../assets/fix.svg) Update README.md. <!--MDEE-1023-->
+
 ## 103.4.2 Release
 
 ![Fix](../assets/fix.svg) Added the ability to collect entity payloads in the `saas-export.log` when running the test resynchronization using the `saas:resync --dry-run` command with the  `EXPORTER_EXTENDED_LOG=1` environment variable. <!--MDEE-1023-->
