@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.3 Release
 
-![Fix](../assets/fix.svg) Resolved an issue where products were skipped during export due to missing EAV attributes. <!--MDEE-970-->
+![Fix](../assets/fix.svg) Resolved an issue where products were skipped during the data export process due to missing EAV attributes. <!--MDEE-970-->
 
 ## 103.4.2 Release
 
