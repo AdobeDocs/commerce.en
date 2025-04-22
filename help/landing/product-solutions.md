@@ -39,7 +39,7 @@ Use these rules to understand what content applies to each Adobe Commerce soluti
 
 - **Page-level badges**: Displayed at the top of a page (above the page title). Indicates that _all_ content on the page applies to the specified solution only.
 
-- **Section-level badges**: Displayed immediately below all other headings on a page (except page title). Section-level. Indicates that the content in that section applies to the specified solution only.
+- **Section-level badges**: Displayed immediately below all other headings on a page (except page title). Indicates that the content in that section applies to the specified solution only.
 
 - **Inline badges**: Displayed within all non-heading page elements, such as tables, paragraphs, and lists. Indicates that the content in that element applies to the specified solution only.
 
