@@ -24,11 +24,7 @@ Updates include:
 
 ## 103.4.3 Release
 
-Create .metadata.json by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/482
-![Fix](../assets/fix.svg) Fix issue when products were skipped for export because absence of EAV attributes. <!--MDEE-970-->
-Create .metadata.json by @duhon in https://github.com/magento-commerce/commerce-data-export-ee/pull/122
-Create .metadata.json by @duhon in https://github.com/magento-commerce/saas-export/pull/168
-![Fix](../assets/fix.svg) Update README.md. <!--MDEE-1023-->
+![Fix](../assets/fix.svg) Resolved an issue where products were skipped during export due to missing EAV attributes. <!--MDEE-970-->
 
 ## 103.4.2 Release
 
