@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_April 21, 2025_
+
+![Fix](../assets/fix.svg) Fixed an issue with the range filter for prices so that products that are equal to the upper range are not included in the results. This change aligns with how price ranges are defined for facets.
+
 _April 3, 2025_
 
 ![Fix](../assets/fix.svg) Updated the SaaS Data Export extension to remove the "Products must be assigned to the root category" [limitation](boundaries-limits.md#b2b-and-category-permissions) for B2B merchants. See [Manage the data export extension](../data-export/manage-extension.md) to learn how to update the SaaS Data Export extension to version 103.4.0+.
