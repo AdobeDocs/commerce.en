@@ -29,12 +29,20 @@ The following table defines the badges that display across Adobe Commerce docume
 
 >[!ENDSHADEBOX]
 
+#### [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
+
+This badge identifies documentation for [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) and [Adobe Commerce Optimizer](../optimizer/overview.md) projects only. These projects are hosted on a cloud‑native, fully managed software-as-a-service (SaaS) solution where Adobe is responsible for most operational aspects—such as continuous updates, security monitoring, and scalability—so that customers can focus on commerce rather than infrastructure.
+
+#### [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
+
+This badge identifies documentation related to [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) projects only. These projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment.
+
+Unless otherwise noted, this includes on-premises projects and projects based on the Magento Open Source code base, even though not all Adobe Commerce features are available. Features exclusive to Adobe Commerce are marked accordingly.
+
 | Badge | Solution | Description |
 |---------|----------|---------|
 | [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} | [Adobe Commerce as a Cloud Service](../cloud-service/overview.md)<br/><br/>[Adobe Commerce Optimizer](../optimizer/overview.md) | This badge identifies documentation for Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only. These projects are hosted on a cloud‑native, fully managed software-as-a-service (SaaS) solution where Adobe is responsible for most operational aspects—such as continuous updates, security monitoring, and scalability—so that customers can focus on commerce rather than infrastructure. |
-| [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} | [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) | This badge identifies documentation related to Adobe Commerce on Cloud projects only. These projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment. |
-| [!BADGE On-premises only]{type=Neutral tooltip="Applies to on-premises Adobe Commerce projects only (customer-managed hosting)."} | [Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) | This badge identifies documentation for Adobe Commerce on-premises projects only. This includes projects based on the Magento Open Source code base, even though not all Adobe Commerce features are available. Features exclusive to Adobe Commerce are marked accordingly. |
-| [!BADGE PaaS & On-premises only]{type=Caution tooltip="Applies to Adobe Commerce on Cloud and on-premises Adobe Commerce projects only."} | [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)<br/><br/>[Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) | This badge identifies documentation for Adobe Commerce on Cloud and on-premises projects only. |
+| [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} | [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) | This badge identifies documentation related to Adobe Commerce on Cloud projects only. These projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment.<br/><br/>Unless otherwise noted, this includes on-premises projects and projects based on the Magento Open Source code base, even though not all Adobe Commerce features are available. Features exclusive to Adobe Commerce are marked accordingly. |
 
 ### Rules
 
