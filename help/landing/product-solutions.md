@@ -5,8 +5,8 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: yes
 hidefromtoc: yes
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
 ---
-
 # Adobe Commerce product solutions
 
 Adobe offers several solutions to meet the requirements of your ecommerce business. The Adobe Commerce documentation on [Experience League](https://experienceleague.adobe.com/en/docs/commerce) and the [Adobe Developer](https://developer.adobe.com/commerce/docs/) site provides customers with self-service resources that support all solutions. However, navigating such a large volume of content can be challenging without guidance.
