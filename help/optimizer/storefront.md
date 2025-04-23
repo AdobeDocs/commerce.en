@@ -11,16 +11,20 @@ role: Developer
 
 This tutorial demonstrates how to set up a local development environment and create a performant, scalable, and secure storefront that is powered by [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
+
 ## Prerequisites
 
 Gather required information and that required tools and accounts as needed.
 
 * Get the Commerce Optimizer instance details from your system administrator, or client onboarding email.
-    * GraphQL API URL: `https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql`
+  * GraphQL API URL: `https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql`
     * tenant ID: {tenantId}
 
+* GitHub account login
+
 * Set up content folder and install the Sidekick extension
-  * [Create and share a Google Drive or Sharepoint folder and load sample content data.](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content).
+  * [Create and share a Google Drive or Sharepoint folder](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#create-and-share-folder)
+  * [Load the sample content](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content) into your folder. The sample content includes images, text, and other assets that make up your site.
   * [Install the Sidekick browser extension](https://www.aem.live/docs/sidekick) to edit, preview, and publish storefront content.
 
 * GitHub account login
@@ -92,7 +96,7 @@ Create a code repository in GitHub with the boilerplate code for your storefront
 
      ![[!DNL Create github repo from storefront boilerplate template]](assets/storefront-create-github-repo.png){width="675" zoomable="yes"}
 
-1. Select **Create a new repository**.
+1. Select **Create repository**.
 
 1. Configure the new repository.
 
@@ -169,57 +173,62 @@ Gather the following data to complete the storefront setup process:
 
    1. Save the file.
 
-#### Configure the data connection
+#### Review the data connection configuration
 
-1. In the root directory of the repository, open the `config.json` file.
+The data connection establishes communication between Adobe Commerce Optimizer and the storefront so that the catalog data flows to the storefront to populate storefront interfaces like the Search component, Product List and Details pages.
 
-   +++config.json code
+For the initial storefront setup, Adobe provides the following default configuration file that connects to an Adobe Commerce Optimizer demo instance.
 
-   ```json
-   {
-    "public": {
-      "default": {
+```json
+{
+  "public": {
+    "default": {
       "commerce-core-endpoint": "https://www.aemshop.net/graphql",
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
-         "cs": {
-            "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-            "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
-            "ac-price-book-id": "west_coast_inc",
-            "ac-scope-locale": "en-US"
-           }
-         },
-         "analytics": {
-            "base-currency-code": "USD",
-            "environment": "Production",
-            "store-id": 1,
-            "store-name": "ACO Demo",
-            "store-url": "https://www.aemshop.net",
-            "store-view-id": 1,
-            "store-view-name": "Default Store View",
-            "website-id": 1,
-            "website-name": "Main Website"
-          }
-       }
+        "cs": {
+          "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+          "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
+          "ac-price-book-id": "west_coast_inc",
+          "ac-scope-locale": "en-US"
+        }
+      },
+      "analytics": {
+        "base-currency-code": "USD",
+        "environment": "Production",
+        "store-id": 1,
+        "store-name": "ACO Demo",
+        "store-url": "https://www.aemshop.net",
+        "store-view-id": 1,
+        "store-view-name": "Default Store View",
+        "website-id": 1,
+        "website-name": "Main Website"
       }
-   }
-   ```
+    }
+  }
+}
+```
 
-   Notice that the headers:
+#### Review the default configuration file:
 
-   * `ac-chanel-id` is set to `west_coast_inc`
-   * `ac-price-book-id` is set to `west_coast_inc`
-   * `ac-scope-locale` is set to `en-US`
-   * `ac-price-book-id` is set to `west_coast_inc`
+1. In your code repository, navigate to the root directory.
 
-   These values set the channel id, price book, and locale to channel and filter catalog data on the storefront. Later, you can change these values and add additional headers to set up and manage catalogs and catalog data for different.
-   +++
+1. Open the `config.json` file.
 
-1. Replace the `commerce-endpoint` value with your ACO tenant API url.
+   In this file, the following key values specify the Adobe Commerce Optimizer instance to connect to and determine what data flows to the storefront are:
 
-1. Replace the `ac-environment-id` value with your tenant ID.
+   * `commerce-endpoint` defines the Adobe Commerce Optimizer instance to connect to
+   * `headers` provides the Adobe Commerce Optimizer values to send data to specific channels and filter the data based on values like locale, price book, and custom policies.
 
-1. Save the file.
+     * `ac-channel-id` is set to `west_coast_inc`
+     * `ac-price-book-id` is set to `west_coast_inc`
+     * `ac-scope-locale` is set to `en-US`
+     * `ac-price-book-id` is set to `west_coast_inc`
+
+   These values set the channel id, price book, and locale to send data to a specific sales channel and filter that data based on the specified locale and price book. Later, you learn how to change the Adobe Commerce Optimizer instance and use headers to manage where the data flows.
+
+1. After reviewing the file, close it and continue the setup tutorial.
+
 
 #### Configure the Sidekick extension
 
@@ -375,6 +384,9 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
 ### Step 7: Develop the storefront in your local environment
 
+
+1. Check to see if you have the required 
+
 1. Checkout the main branch of your GitHub code repository.
 
    ```bash
@@ -399,7 +411,7 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
 1. Open the project in your favorite code editor.
 
-   You're now ready to explore the boilerplate and start customizing your storefront!
+   You're now ready to learn how to use Adobe Commerce Optimizer to manage your catalogs. See [Merchandiser end-to-end Use case](https://experienceleague-review.corp.adobe.com/docs/commerce/optimizer/use-case/merchandiser-use-case.html)
 
 ### Step 8: Manage site content
 
