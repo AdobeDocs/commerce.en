@@ -91,13 +91,13 @@ Create a code repository in GitHub with the boilerplate code for your storefront
 
 1. Navigate to the [aem-boilerplate-commerce](https://github.com/hlxsites/aem-boilerplate-commerce) GitHub repository, and select **Use this template**.
 
-     ![[!DNL Create github repo from storefront boilerplate template]](assets/storefront-create-github-repo.png){width="600" zoomable="yes"}
+     ![[!DNL Create github repo from storefront boilerplate template]](assets/storefront-create-github-repo.png){width="675" zoomable="yes"}
 
 1. Select **Create a new repository**.
 
 1. Configure the new repository.
 
-   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/storefront-configure-github-repo.png){width="600" zoomable="yes"}
+   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/storefront-configure-github-repo.png){width="675" zoomable="yes"}
 
    Complete the form with the following details:
 
@@ -322,7 +322,7 @@ To add content to your storefront, you have to preview and publish your content 
 
 1. Use the Sidekick toolbar to preview and publish your content.
 
-   ![[Select files to preview and publish]](assets/storefront-content-preview-publish.png){width="600" zoomable="yes"}
+   ![[Select files to preview and publish]](assets/storefront-content-preview-publish.png){width="675" zoomable="yes"}
 
    Select files in each folder separately, and use the Sidekick toolbar to preview and publish all files.
 
@@ -342,7 +342,7 @@ Preview your site and view the sample data by using the storefront search featur
 
    Replace `{ORG}` and `{SITE}` with the organization and name for your boilerplate repository.
 
-   ![[!DNL ACO storefront site with boilerplate]](assets/aco-storefront-site-boilerplate.png){width="600" zoomable="yes"}
+   ![[!DNL ACO storefront site with boilerplate]](assets/aco-storefront-site-boilerplate.png){width="675" zoomable="yes"}
 
    If the page returns a 404, make sure that you have published the content using the Sidekick extension. Also, double-check the configuration in the files you updated.
 
@@ -350,11 +350,11 @@ Preview your site and view the sample data by using the storefront search featur
 
    1. Search for `tires` to see a drop-down list of available tire products.
 
-    ![[!DNL Discover Adobe Commerce Optimizer products]](assets/storefront-site-with-aco-data.png){width="600" zoomable="yes"}
+    ![[!DNL Discover Adobe Commerce Optimizer products]](assets/storefront-site-with-aco-data.png){width="675" zoomable="yes"}
 
    1. Press **Enter** to view the product details page.
 
-     ![[!DNL View product details page]](assets/storefront-with-aco-pdp-page.png){width="600" zoomable="yes"}
+     ![[!DNL View product details page]](assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
 
 >[!BEGINSHADEBOX]
@@ -376,20 +376,34 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
 ## STEP 7: Develop the storefront in your local environment
 
-1. In the directory where you cloned your storefront repository, install the required dependencies.
+1. Checkout the main branch of your GitHub code repository.
+
+   ```bash
+   git checkout main
+   ```
+
+1. Install the required dependencies.
 
    ```bash
    npm install
    ```
+
 1. Start the local development server.
 
    ```bash
    npm start
    ```
 
+   The first page of your boilerplate storefront should be visible in your browser at http://localhost:3000.
+
+   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/aco-storefront-local-dev-env.png){width="675" zoomable="yes"}
+
+1. Open the project in your favorite code editor. You're now ready to explore the boilerplate and start customizing your storefront!
 
 ## STEP 8: Manage site content
 
 * If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 * If you are using Adobe Commerce Optimizer without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
+
+
