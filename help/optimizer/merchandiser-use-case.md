@@ -17,9 +17,9 @@ In this use case, you learn about [!DNL Adobe Commerce Optimizer], its hyper per
 
 In this use case, you will be working with the following:
 
-1. [!DNL Adobe Commerce Optimizer] UI - Set up required channels and policies to manage complex operational setup.
+1. [!DNL Adobe Commerce Optimizer] UI - Set up required channels and policies to manage complex catalog operational setup.
 
-1. Commerce Storefront - Render the storefront as set up within [!DNL Adobe Commerce Optimizer] UI and Commerce Storefront Configs.
+1. Commerce Storefront - Render the storefront with the catalog data set up within [!DNL Adobe Commerce Optimizer] UI and Commerce Storefront Configs.
 
 ### ‌Key takeaways
 
@@ -35,7 +35,7 @@ Carvelo Automobile is a fictitious automobile conglomerate with a complex operat
 
 ![Carvelo Automobile](assets/carvelo.png)
 
-In this diagram, you see that Carvelo sells three brands:
+In this diagram, you see that Carvelo sells automobile products of three brands. Each brand is a different child company:
 
 - Aurora (electric vehicles)
 - Bolt (SUVs)
@@ -47,10 +47,10 @@ It sells these brands through three dealers:
 - Kingsbluff
 - Celport
 
-These dealers belong to two different companies:
+These dealers belong to two different parent dealership companies:
 
-- West Coast Inc.
-- East Coast Inc.
+- West Coast Inc. (Arkbridge)
+- East Coast Inc. (Kingsbluff, Celport)
 
 Each company has two pricebooks that are used to sell products at a specific price for different shoppers (base, VIP).
 
@@ -109,7 +109,7 @@ Let's create a new policy called *Celport Part Categories* to filter the SKUs th
 
     >[!NOTE]
     >
-    >Attribute is the name of the attribute within the catalog. Make sure it is written correctly.
+    >Attribute is the name of the SKU attribute within the catalog. Make sure it is written correctly.
 
     To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](./policies.md#value-source-types).
 
