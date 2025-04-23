@@ -73,12 +73,11 @@ Follow these steps to set up a storefront to use with Adobe Commerce Optimizer.
 
 1. **[Create a code repository](#step-1-create-a-code-repository-with-the-storefront-boilerplate)**–Create a GitHub repository from the Adobe Commerce + Edge Delivery Services boilerplate template. Include all branches from the source repository.
 1. **[Update the storefront boilerplate](#step-2-update-the-storefront-boilerplate)**–Update the custom boilerplate template to connect your content and Adobe Commerce Optimizer data to the storefront.
-1. **[Upload the updated storefront boilerplate code](#step-3-upload-the-updated-boilerplate)**–Overwrite the code on the `main` branch with your updates.
-
+1. **[Upload the updated storefront boilerplate code](#step-3-upload-the-updated-boilerplate-code)**–Overwrite the code on the `main` branch with your updates.
 1. **[Add the CodeSync app](#step-4-add-the-aem-code-sync-app)**–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and are ready to push the code to the `main` branch.
 1. **[Preview and publish your content](#step-5-preview-and-publish-your-content)**–Use the Sidekick extension to preview and publish your content to the storefront.
 1. **[Preview your site and view sample data](#step-6-preview-your-site-and-view-sample-data)**–Connect to your storefront site to view the sample content and data.
-1. **[Develop the storefront in your local environment](#develop-the-storefront-in-your-local-environment)**–Install the required dependencies and start the local development server.
+1. **[Develop the storefront in your local environment](#step-7-develop-the-storefront-in-your-local-environmentdevelop-the-storefront-in-your-local-environment)**–Install the required dependencies and start the local development server.
 1. **[Manage site content](#step-8-manage-site-content)**—Learn more about updating and managing your storefront content.
 
 
@@ -374,7 +373,7 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
 >[!ENDSHADEBOX]
 
-## STEP 7: Develop the storefront in your local environment
+### STEP 7: Develop the storefront in your local environment
 
 1. Checkout the main branch of your GitHub code repository.
 
@@ -394,16 +393,16 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
    npm start
    ```
 
-   The first page of your boilerplate storefront should be visible in your browser at http://localhost:3000.
+   The first page of your boilerplate storefront should be visible in your browser at `http://localhost:3000`.
 
    ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/aco-storefront-local-dev-env.png){width="675" zoomable="yes"}
 
-1. Open the project in your favorite code editor. You're now ready to explore the boilerplate and start customizing your storefront!
+1. Open the project in your favorite code editor.
 
-## STEP 8: Manage site content
+   You're now ready to explore the boilerplate and start customizing your storefront!
+
+### STEP 8: Manage site content
 
 * If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 * If you are using Adobe Commerce Optimizer without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
-
-
