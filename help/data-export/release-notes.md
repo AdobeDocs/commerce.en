@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.3 Release
+
+![Fix](../assets/fix.svg) Resolved an issue where products were skipped during the data export process due to missing EAV attributes. <!--MDEE-970-->
+
 ## 103.4.2 Release
 
 ![Fix](../assets/fix.svg) Added the ability to collect entity payloads in the `saas-export.log` when running the test resynchronization using the `saas:resync --dry-run` command with the  `EXPORTER_EXTENDED_LOG=1` environment variable. <!--MDEE-1023-->
