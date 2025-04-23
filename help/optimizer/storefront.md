@@ -373,7 +373,7 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
 >[!ENDSHADEBOX]
 
-### STEP 7: Develop the storefront in your local environment
+### Step 7: Develop the storefront in your local environment
 
 1. Checkout the main branch of your GitHub code repository.
 
@@ -401,7 +401,7 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
    You're now ready to explore the boilerplate and start customizing your storefront!
 
-### STEP 8: Manage site content
+### Step 8: Manage site content
 
 * If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
