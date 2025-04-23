@@ -23,7 +23,7 @@ Gather required information and that required tools and accounts as needed.
   * [Create and share a Google Drive or Sharepoint folder and load sample content data.](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content).
   * [Install the Sidekick browser extension](https://www.aem.live/docs/sidekick) to edit, preview, and publish storefront content.
 
-  * Log in to your GitHub account.
+* GitHub account login
 
   >[!TIP]
   >
@@ -53,7 +53,9 @@ If needed, complete the following steps to install Node Version Manager (NVM) an
 
 1. Verify the installation.
 
-  ```npm -v```
+   ```bash
+   npm -v
+   ```
 
 >[!TIP]
 >
@@ -63,20 +65,21 @@ If needed, complete the following steps to install Node Version Manager (NVM) an
 
 The storefront you create for your Adobe Commerce Optimizer project is built using a customized version of the [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) boilerplate. The boilerplate is a set of files and folders that provide a starting point for building your storefront.
 
-The storefront setup process is a customized specifically for Adobe Commerce Optimizer projects, which differs from the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup process.
+The storefront setup process is customized specifically for Adobe Commerce Optimizer projects. The flow is different than the flow for the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup.
 
 ### Workflow overview
 
 Follow these steps to set up a storefront to use with Adobe Commerce Optimizer.
 
-1. [Create a code repository](#step-1-create-a-code-repository-with-the-storefront-boilerplate)–Create a GitHub repository from the Adobe Commerce + Edge Delivery Services boilerplate template. Include all branches from the source repository.
-1. [Update the storefront boilerplate](#step-2-update-the-storefront-boilerplate))–Update the custom boilerplate template to connect your content and Adobe Commerce Optimizer data to the storefront.
-1. [Add the CodeSync app](#step-3-add-the-aem-code-sync-app)–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and are ready to push the code to the `main` branch.
-1. [Upload the updated storefront boilerplate code](#step-4-upload-the-updated-boilerplate)–Overwrite the code on the `main` branch with your updates.
-1. [Preview and publish your content](#step-5-preview-and-publish-your-content)–Use the Sidekick extension to preview and publish your content to the storefront.
-1. [Preview your site and view sample data](#step-6-preview-your-site-and-view-sample-data)–Connect to your storefront site to view the sample content and data.
-1. [Develop the storefront in your local environment](#develop-the-storefront-in-your-local-environment)–Install the required dependencies and start the local development server.
-1. [Manage site content](#step-8-manage-site-content)
+1. **[Create a code repository](#step-1-create-a-code-repository-with-the-storefront-boilerplate)**–Create a GitHub repository from the Adobe Commerce + Edge Delivery Services boilerplate template. Include all branches from the source repository.
+1. **[Update the storefront boilerplate](#step-2-update-the-storefront-boilerplate)**–Update the custom boilerplate template to connect your content and Adobe Commerce Optimizer data to the storefront.
+1. **[Upload the updated storefront boilerplate code](#step-3-upload-the-updated-boilerplate)**–Overwrite the code on the `main` branch with your updates.
+
+1. **[Add the CodeSync app](#step-4-add-the-aem-code-sync-app)**–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and are ready to push the code to the `main` branch.
+1. **[Preview and publish your content](#step-5-preview-and-publish-your-content)**–Use the Sidekick extension to preview and publish your content to the storefront.
+1. **[Preview your site and view sample data](#step-6-preview-your-site-and-view-sample-data)**–Connect to your storefront site to view the sample content and data.
+1. **[Develop the storefront in your local environment](#develop-the-storefront-in-your-local-environment)**–Install the required dependencies and start the local development server.
+1. **[Manage site content](#step-8-manage-site-content)**—Learn more about updating and managing your storefront content.
 
 
 
@@ -137,13 +140,13 @@ Gather the following data to complete the storefront setup process:
    git checkout aco
    ```
 
+1. Create your configuration file by copying the `default-fstab.yaml` file to `fstab.yaml`.
+
+   ```bash
+   cp default-fstab.yaml fstab.yaml
+   ```
+
 1. Update the storefront configuration file to point to your content URL.
-
-   1. Create your configuration file by copying the `default-fstab.yaml` file to `fstab.yaml`.
-
-      ```bash
-      cp default-fstab.yaml fstab.yaml
-      ```
 
    1. Open the [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary) configuration file.
 
@@ -173,58 +176,59 @@ Gather the following data to complete the storefront setup process:
 
    +++config.json code
 
-      ```json
-      {
-       "public": {
-         "default": {
-           "commerce-core-endpoint": "https://www.aemshop.net/graphql",
-           "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XDevkG9W6UbwgQmPn995r3/graphql",
-           "headers": {
-              "cs": {
-                "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-                "ac-environment-id": "",
-                "ac-price-book-id": "west_coast_inc",
-                "ac-scope-locale": "en-US"
-             }
-         },
-           "analytics": {
-              "base-currency-code": "USD",
-              "environment": "Production",
-              "store-id": 1,
-              "store-name": "ACO Demo",
-              "store-url": "https://www.aemshop.net",
-              "store-view-id": 1,
-              "store-view-name": "Default Store View",
-              "website-id": 1,
-              "website-name": "Main Website"
-             }
+   ```json
+   {
+    "public": {
+      "default": {
+      "commerce-core-endpoint": "https://www.aemshop.net/graphql",
+      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
+      "headers": {
+         "cs": {
+            "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
+            "ac-price-book-id": "west_coast_inc",
+            "ac-scope-locale": "en-US"
            }
-         }
+         },
+         "analytics": {
+            "base-currency-code": "USD",
+            "environment": "Production",
+            "store-id": 1,
+            "store-name": "ACO Demo",
+            "store-url": "https://www.aemshop.net",
+            "store-view-id": 1,
+            "store-view-name": "Default Store View",
+            "website-id": 1,
+            "website-name": "Main Website"
+          }
+       }
       }
+   }
+   ```
 
-      ```
+   Notice that the headers:
 
-      Notice the `ac-channel-id`, `ac-price-book-id`, and `ac-scope-locale` values in the headers section. These values control catalog configuration and data access filters. Later, you can learn how these headers help you create and manage catalog, price, and product data that displays in your storefront.
-      +++
+   * `ac-chanel-id` is set to `west_coast_inc`
+   * `ac-price-book-id` is set to `west_coast_inc`
+   * `ac-scope-locale` is set to `en-US`
+   * `ac-price-book-id` is set to `west_coast_inc`
 
-1. Update `commerce-endpoint` with your ACO tenant API url.
+   These values set the channel id, price book, and locale to channel and filter catalog data on the storefront. Later, you can change these values and add additional headers to set up and manage catalogs and catalog data for different.
+   +++
 
-1. Update `ac-environment-id` with the tenant ID.
+1. Replace the `commerce-endpoint` value with your ACO tenant API url.
 
-1. Notice that the headers for  `ac-scope-locale` and `ac-price-book-id` are set:
+1. Replace the `ac-environment-id` value with your tenant ID.
 
-   *`ac-scope-locale` is set to `en-US`
-   *`ac-price-book-id` is set to `west_coast_inc`
-
-   These values are used to set the locale and price book for the storefront. Later, you can change these values and add additional headers to set up and manage catalogs and catalog data for different.
+1. Save the file.
 
 #### Configure the Sidekick extension
 
-Add the project configuration for the Sidekick extension used to edit, preview, and publish your content.
+Add the project configuration for the Sidekick extension that is used to edit, preview, and publish your content.
 
 >[!NOTE]
 >
->Make sure you have the [Sidekick extension installed](https://www.aem.live/docs/sidekick#installation) in your browser.
+>Make sure that you have installed the [Sidekick extension](https://www.aem.live/docs/sidekick#installation) in your browser.
 
 1. Open the `tools/sidekick/config.json` file.
 
@@ -264,31 +268,13 @@ Add the project configuration for the Sidekick extension used to edit, preview, 
 
 1. In the `url` definitions, replace the variables:
 
-   * `{ORG}` is the repository name or username for the repository
+   * `{ORG}` is the repository name or username for your code repository
 
-   * `{SITE}` is the name of your repository
+   * `{SITE}` is the repository name
 
 1. Save the file.
 
-
-### Step 3: Add the AEM Code Sync app
-
-Connect your repository to the Edge Delivery Service by adding the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) to your repository.
-
->[!IMPORTANT]
->
->Do not connect the Code Sync app until you have completed the source code customization.
-
-1. On the AEM Code Sync** page, select **Configure**, then authenticate with the **organization** or **account** that contains the repository you created.
-
-1. From the form, choose **Only select repositories** and select the repository you created.
-
-1. Select **Install** to add the AEM Code Sync app to your repository.
-
-   You should see a message that the app was successfully installed.
-
-
-### Step 4: Upload the updated boilerplate code
+### Step 3: Upload the updated boilerplate code
 
 To use the customized storefront boilerplate code, you must overwrite the code on the `main` branch with your updates.
 
@@ -307,6 +293,22 @@ To use the customized storefront boilerplate code, you must overwrite the code o
    ```bash
    git push origin aco:main -f
    ```
+
+### Step 4: Add the AEM Code Sync app
+
+Connect your repository to the Edge Delivery Service by adding the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) to your repository.
+
+>[!IMPORTANT]
+>
+>Do not connect the Code Sync app until you have completed the source code customization.
+
+1. On the AEM Code Sync** page, select **Configure**, then authenticate with the **organization** or **account** that contains the repository you created.
+
+1. From the form, choose **Only select repositories** and select the repository you created.
+
+1. Select **Install** to add the AEM Code Sync app to your repository.
+
+   You should see a message that the app was successfully installed.
 
 ### Step 5: Preview and publish your content
 
@@ -379,9 +381,12 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
    ```bash
    npm install
    ```
-
-1. After running this command,
 1. Start the local development server.
+
+   ```bash
+   npm start
+   ```
+
 
 ## STEP 8: Manage site content
 
