@@ -250,7 +250,7 @@ The final piece of this tutorial involves setting up the storefront then swappin
 
 ## That's it!
 
-In this tutorial, you...
+In this tutorial, you learned how [!DNL Adobe Commerce Optimizer] can help you organize your catalog to match your retail operations using a single base catalog. You also learned how to set up a storefront powered by Edge Delivery Services.
 
 ## Where to go from here
 
