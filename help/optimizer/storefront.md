@@ -9,7 +9,7 @@ role: Developer
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-This tutorial demonstrates how to set up a local development environment and create a performant, scalable, and secure storefront that is powered by [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+This tutorial demonstrates how to set up a local development environment and use [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure storefront.
 
 
 ## Prerequisites
@@ -60,7 +60,7 @@ If needed, complete the following steps to install Node Version Manager (NVM) an
 
 >[!TIP]
 >
->This initial development setup is for working with Adobe Commerce Optimizer and the Adobe Commerce Edge Delivery Service Storefront. Additional developer resources are available for extending your Adobe Commerce Optimizer solution using [App Builder for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) and [API Mesh for Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). For more information, contact your Adobe account representative.
+>This initial development setup is for working with Adobe Commerce Optimizer and the Adobe Commerce Edge Delivery Service Storefront. Additional developer resources are available for extending your Adobe Commerce Optimizer solution using [App Builder for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) and [API Mesh for Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). For more information about getting access to and using these tools, contact your Adobe account representative.
 
 ## Create your storefront
 
@@ -446,6 +446,6 @@ To learn how to update the headers in the storefront configuration to use values
 >[!MORELIKETHIS]
 >
 >If you are using Adobe Commerce Optimizer without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with your Commerce frontend components and backend data.
->
+></br></br>
 >If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn how to update content and configure storefront components for account management, checkout, and other capabilities.
 
