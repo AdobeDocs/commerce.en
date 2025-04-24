@@ -434,7 +434,7 @@ To make the connection, you need the GraphQL endpoint for Merchandising Services
 
    1. Press **Enter** to display the Product list page.
 
-      ![[!DNL Empty search results with invalid header values]](assets/(assets/storefront-configuration-with-incorrect-headers.png).png){width="675" zoomable="yes"}
+      ![[!DNL Empty search results with invalid header values]](assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
       The search doesn't return any results because the headers in your storefront configuration file use headers values based on the demo instance. Now that the configuration points to the Adobe Commerce Optimizer instance provisioned for you, those values are invalid.
 
