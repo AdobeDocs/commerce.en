@@ -117,11 +117,9 @@ Gather the following data to complete the storefront setup process:
 | Required data | Definition and Example |
 |------|------------------------|
 | **GitHub repository URL** | `github.com/{ORG}/{SITE}`<br><br>`{ORG}` is the organization name or username for the repository<br>`{SITE}` is your repository name<br><br>**Example:** `github.com/myorg/mywebsite` |
-| **Content folder URL** | `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`<br><br>`{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data.<br><br>**Example:** `https://drive.google.com/drive/folders/1a2b3c4d5e6f7g8h9i0j` |
-| **API endpoint for Adobe Commerce Optimizer** | `https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql`<br><br>`{tenantId}` is the tenant ID for your Adobe Commerce Optimizer instance.<br><br>**Example:** `https://na1-sandbox.api.commerce.adobe.com/XDevkG9W6UbwgQmPn995r3/graphql` |
+| **Content folder URL** | `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`<br><br>`{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data. |
 
-
-#### Configure the content connection
+#### Update the boilerplate code to connect to your content folder
 
 1. Clone the repository to your local machine.
 
@@ -228,7 +226,7 @@ For the initial storefront setup, Adobe provides a default configuration file th
 
 #### Configure the Sidekick extension
 
-Add the project configuration for the Sidekick extension that is used to edit, preview, and publish your content. This configuration ensures that you can use Sidekick to manage content both in your shared content folder and on site pages published to the staging and production environments.
+Add the project configuration for the Sidekick extension. Sidekick is used to edit, preview, and publish your storefront content. This configuration ensures that you can use Sidekick to manage content both in your shared content folder and on site pages published to the staging and production environments.
 
 >[!NOTE]
 >
