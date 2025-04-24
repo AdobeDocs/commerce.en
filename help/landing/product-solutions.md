@@ -33,9 +33,9 @@ The following table defines the badges that display across Adobe Commerce docume
 
 This badge identifies documentation for [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) and [Adobe Commerce Optimizer](../optimizer/overview.md) projects only. These projects are hosted on a cloud‑native, fully managed software-as-a-service (SaaS) solution where Adobe is responsible for most operational aspects—such as continuous updates, security monitoring, and scalability—so that customers can focus on commerce rather than infrastructure.
 
-#### [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects and on-premises installations only (Adobe-managed PaaS infrastructure)."}
+#### [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and and on-premises projects only."}
 
-This badge identifies documentation related to [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) projects and on-premises installations only. Adobe Commerce on Cloud projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment. On-premises installations are hosted on a customer-managed infrastructure.
+This badge identifies documentation related to [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) and on-premises projects only. Adobe Commerce on Cloud projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment. On-premises projects are hosted on customer-managed infrastructure.
 
 ### Rules
 
