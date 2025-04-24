@@ -14,24 +14,21 @@ This tutorial demonstrates how to set up a local development environment and cre
 
 ## Prerequisites
 
-Gather required information and that required tools and accounts as needed.
+Before setting up your Adobe Commerce Optimizer storefront, ensure you have the following requirements in place:
 
-* Get the Commerce Optimizer instance details from your system administrator, or client onboarding email.
-  * GraphQL API URL: `https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql`
-    * tenant ID: {tenantId}
+* GitHub account
+   * SSH keys to clone content to your local development environment
 
-* GitHub account login
-
-* Set up content folder and install the Sidekick extension
+* Create a content folder and add sample content
   * [Create and share a Google Drive or Sharepoint folder](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#create-and-share-folder)
   * [Load the sample content](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content) into your folder. The sample content includes images, text, and other assets that make up your site.
-  * [Install the Sidekick browser extension](https://www.aem.live/docs/sidekick) to edit, preview, and publish storefront content.
 
-* GitHub account login
+* [Install the Sidekick browser extension](https://www.aem.live/docs/sidekick) to edit, preview, and publish storefront content.
+
 
   >[!TIP]
   >
-  >Learn the concepts and basic workflow for creating a storefront with Adobe Edge Delivery Services by completing the [Developer Tutorial](https://www.aem.live/developer/tutorial) to learn site development and management basics.
+  >Learn the concepts and basic workflow for creating a storefront with Adobe Edge Delivery Services by completing the [Developer Tutorial](https://www.aem.live/developer/tutorial).
 
 ## Set up your development environment
 
@@ -69,7 +66,7 @@ If needed, complete the following steps to install Node Version Manager (NVM) an
 
 The storefront you create for your Adobe Commerce Optimizer project is built using a customized version of the [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) boilerplate. The boilerplate is a set of files and folders that provide a starting point for building your storefront.
 
-The storefront setup process is customized specifically for Adobe Commerce Optimizer projects. The flow is different than the flow for the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup.
+This storefront setup process is customized specifically for Adobe Commerce Optimizer projects. The flow is different than the flow for the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup.
 
 ### Workflow overview
 
@@ -135,6 +132,8 @@ Gather the following data to complete the storefront setup process:
 
    ```
 
+   If encounter errors when cloning the repository, see [Troubleshooti cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors) in the GitHub documentation.
+
 1. Open the repository in your terminal or IDE.
 
 1. Check out the `aco` branch
@@ -175,9 +174,9 @@ Gather the following data to complete the storefront setup process:
 
 #### Review the data connection configuration
 
-The data connection establishes communication between Adobe Commerce Optimizer and the storefront so that the catalog data flows to the storefront to populate storefront interfaces like the Search component, Product List and Details pages.
+The data connection establishes communication between Adobe Commerce Optimizer and the storefront, ensuring that catalog data seamlessly flows to the storefront. This process populates various storefront interfaces, including the Search component, Product List, and Product Details pages.
 
-For the initial storefront setup, Adobe provides the following default configuration file that connects to an Adobe Commerce Optimizer demo instance.
+For the initial storefront setup, Adobe provides a default configuration file that connects to an Adobe Commerce Optimizer demo instance with sample data.
 
 ```json
 {
@@ -215,24 +214,23 @@ For the initial storefront setup, Adobe provides the following default configura
 
 1. Open the `config.json` file.
 
-   In this file, the following key values specify the Adobe Commerce Optimizer instance to connect to and determine what data flows to the storefront are:
+   In this file, the following key values specify the Adobe Commerce Optimizer instance to connect to and determine the data flows to the storefront:
 
-   * `commerce-endpoint` defines the Adobe Commerce Optimizer instance to connect to
-   * `headers` provides the Adobe Commerce Optimizer values to send data to specific channels and filter the data based on values like locale, price book, and custom policies.
-
+   * `commerce-endpoint` defines the Adobe Commerce Optimizer instance to connect to.
+   * `headers` determine the data that flows to the storefront.
      * `ac-channel-id` is set to `west_coast_inc`
      * `ac-price-book-id` is set to `west_coast_inc`
      * `ac-scope-locale` is set to `en-US`
      * `ac-price-book-id` is set to `west_coast_inc`
 
-   These values set the channel id, price book, and locale to send data to a specific sales channel and filter that data based on the specified locale and price book. Later, you learn how to change the Adobe Commerce Optimizer instance and use headers to manage where the data flows.
+   These values set the channel id, price book, and locale to send catalog data to a specific sales channel and filter that data based on the specified locale and price book. Later, you learn how to change the Adobe Commerce Optimizer instance and update the headers to define what data is delivered to the storefront.
 
-1. After reviewing the file, close it and continue the setup tutorial.
+1. After reviewing the file, close it and continue the tutorial.
 
 
 #### Configure the Sidekick extension
 
-Add the project configuration for the Sidekick extension that is used to edit, preview, and publish your content.
+Add the project configuration for the Sidekick extension that is used to edit, preview, and publish your content. This configuration ensures that you can use Sidekick to manage content both in your shared content folder and on site pages published to the staging and production environments.
 
 >[!NOTE]
 >
@@ -304,13 +302,15 @@ To use the customized storefront boilerplate code, you must overwrite the code o
 
 ### Step 4: Add the AEM Code Sync app
 
-Connect your repository to the Edge Delivery Service by adding the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) to your repository.
+Connect your repository to the Edge Delivery Service by adding the AEM Code Sync GitHub app to your repository.
 
 >[!IMPORTANT]
 >
->Do not connect the Code Sync app until you have completed the source code customization.
+>Do not connect the Code Sync app until you have uploaded the updated boilerplate code to the main branch of your GitHub repository.
 
-1. On the AEM Code Sync** page, select **Configure**, then authenticate with the **organization** or **account** that contains the repository you created.
+1. Open the [AEM Code Sync app](https://github.com/apps/aem-code-sync) configuration page.
+
+1. Select **Configure**, then authenticate with the **organization** or **account** that contains the repository you created.
 
 1. From the form, choose **Only select repositories** and select the repository you created.
 
@@ -340,9 +340,13 @@ To add content to your storefront, you have to preview and publish your content 
 
 For more information, see the Adobe Experience Manager [Sidekick](https://www.aem.live/docs/sidekick) documentation.
 
-### Step 6: Preview your site and view sample data
+### Step 6: Preview your site sample
 
-Preview your site and view the sample data by using the storefront search feature and the product details page.
+Preview your site to verify that both the sample content and the Commerce Optimizer demo data is displaying correctly.
+
+* **Sample content** is served from your shared content folder. It includes the page layouts, banners, and other content that you published using Sidekick.
+* **Sample data** is served from the Adobe Commerce Optimizer demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the values specified in the storefront configuration file, `config.json`.
+
 
 #### Connect to your site to view sample content and data
 
@@ -354,40 +358,36 @@ Preview your site and view the sample data by using the storefront search featur
 
    If the page returns a 404, make sure that you have published the content using the Sidekick extension. Also, double-check the configuration in the files you updated.
 
-1. View the sample catalog data coming from your Commerce Optimizer instance.
+1. View the sample catalog data coming from your Commerce Optimizer demo instance.
 
    1. Search for `tires` to see a drop-down list of available tire products.
 
     ![[!DNL Discover Adobe Commerce Optimizer products]](assets/storefront-site-with-aco-data.png){width="675" zoomable="yes"}
 
-   1. Press **Enter** to view the product details page.
+    The search component is part of the storefront boilerplate code. The search results data is populated based on the storefront configuration.
+
+   1. Press **Enter** to view the product list page.
 
      ![[!DNL View product details page]](assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
+   1. View a product details page by selecting any tire product on the page.
 
->[!BEGINSHADEBOX]
+      If you explore the storefront, notice that some of the components don't work. For example, adding a product to the shopping cart returns an error, and the account management components don't work. This is because these components have not been configured to receive data from a Commerce backend. Commerce Optimizer populates only the Search, Product list and Product details pages.
 
-**Sample data**
+   1. After exploring the storefront, continue with the tutorial.
 
-The sample data from your Adobe Commerce Optimizer instance includes a set of product images, product descriptions, and product details. This data is used to populate product search results, product details, and price information based on the headers configured in the storefront `config.json` file.
-
-```json
-"ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-"ac-environment-id": "",
-"ac-price-book-id": "west_coast_inc",
-"ac-scope-locale": "en-US"
-```
-
-See the [Use Case](merchandiser-use-case.md) topic to learn more about these headers and how to use them to deliver catalog, product, and price data to the storefront.
-
->[!ENDSHADEBOX]
 
 ### Step 7: Develop the storefront in your local environment
 
+In this section, you experiment with the storefront configuration in your local development environment by connecting the storefront to the Adobe Commerce Optimizer instance that Adobe provisioned for you.
 
-1. Check to see if you have the required 
+To make the connection, you need the GraphQL endpoint for Merchandising Services that was provided in your onboarding email.
 
-1. Checkout the main branch of your GitHub code repository.
+`https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql`
+
+#### Start local development
+
+1. In your IDE, checkout the main branch of your GitHub code repository.
 
    ```bash
    git checkout main
@@ -409,12 +409,45 @@ See the [Use Case](merchandiser-use-case.md) topic to learn more about these hea
 
    ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/aco-storefront-local-dev-env.png){width="675" zoomable="yes"}
 
-1. Open the project in your favorite code editor.
 
-   You're now ready to learn how to use Adobe Commerce Optimizer to manage your catalogs. See [Merchandiser end-to-end Use case](https://experienceleague-review.corp.adobe.com/docs/commerce/optimizer/use-case/merchandiser-use-case.html)
+1. Update the storefront configuration to point to the Adobe Commerce Optimizer instance that Adobe has provisioned for you.
 
-### Step 8: Manage site content
+   1. Open the `config.json` file.
 
-* If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
+   1. Update the following values using your the endpoint for your Adobe Commerce Optimizer instance:
 
-* If you are using Adobe Commerce Optimizer without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
+     * Replace the **`commerce-endpoint`** value with your endpoint URL.
+
+      `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XDevkG9W6UbwgQmPn995r3/graphql"`
+
+     * Replace the **`ac-environment-id`** with the tenant ID from your endpoint URL.
+
+       `"ac-environment-id": "XDevkG9W6UbwgQmPn995r3"`
+
+   1. Save the file to update your local storefront configuration.
+
+1. Check the site to see the results of the configuration change.
+
+   1. In the browser, navigate to `http://localhost:3000` and refresh the page.
+
+   1. In the storefront header, click the magnifying glass to search for `tires`.
+
+      Notice that the drop-down list does not populate.
+
+   1. Press **Enter** to display the Product list page.
+
+      ![[!DNL Empty search results with invalid header values]](assets/aco-storefront-local-dev-env.png){width="675" zoomable="yes"}
+
+      The search doesn't return any results because the headers in your storefront configuration file use headers values based on the demo instance. Now that the configuration points to the Adobe Commerce Optimizer instance provisioned for you, those values are invalid.
+
+### Next steps
+
+To learn how to update the headers in the storefront configuration to use values from your Adobe Commerce Optimizer instance, see the [Merchandiser end-to-end use case](https://experienceleague-review.corp.adobe.com/docs/commerce/optimizer/use-case/merchandiser-use-case.html).
+
+
+>[!MORELIKETHIS]
+>
+>If you are using Adobe Commerce Optimizer without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with your Commerce frontend components and backend data.
+>
+>If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn how to update content and configure storefront components for account management, checkout, and other capabilities.
+
