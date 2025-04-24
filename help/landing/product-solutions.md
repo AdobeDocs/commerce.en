@@ -35,7 +35,7 @@ This badge identifies documentation for [Adobe Commerce as a Cloud Service](../c
 
 #### [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 
-This badge identifies documentation related to [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) projects only. These projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment.
+This badge identifies documentation related to [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) projects. These projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment.
 
 >[!NOTE]
 >
