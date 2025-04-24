@@ -81,8 +81,6 @@ Follow these steps to set up a storefront to use with Adobe Commerce Optimizer.
 1. **[Develop the storefront in your local environment](#step-7-develop-the-storefront-in-your-local-environmentdevelop-the-storefront-in-your-local-environment)**–Install the required dependencies and start the local development server.
 1. **[Manage site content](#step-8-manage-site-content)**—Learn more about updating and managing your storefront content.
 
-
-
 ### Step 1: Create a code repository with the storefront boilerplate
 
 Create a code repository in GitHub with the boilerplate code for your storefront.
@@ -132,7 +130,7 @@ Gather the following data to complete the storefront setup process:
 
    ```
 
-   If encounter errors when cloning the repository, see [Troubleshooti cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors) in the GitHub documentation.
+   If encounter errors when cloning the repository, see [Troubleshoot cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors) in the GitHub documentation.
 
 1. Open the repository in your terminal or IDE.
 
