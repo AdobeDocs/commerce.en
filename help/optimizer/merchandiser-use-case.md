@@ -236,18 +236,21 @@ The final piece of this tutorial involves setting up the storefront then swappin
    Notice that the channel header contains the following lines:
 
    - `ac-channel-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
    +++
 
 1. Replace the `ac-channel-id` value with Celport channel ID that you copied previously.
+1. Replace the `ac-environment-id` value with the environment ID you received as part of the onboarding process to the Early Access program.
 1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
-
 1. Save the file.
-
 1. [Preview and publish your content](./storefront.md). UPDATE LINK TO STEP 5 WHEN PR 69 IS MERGED.
-
 1. Launch the storefront to see the Celport-specific catalog experience that includes products and prices based on the policies you specified when you created the Celport channel.
+
+## That's it!
+
+In this tutorial, you...
 
 ## Where to go from here
 
