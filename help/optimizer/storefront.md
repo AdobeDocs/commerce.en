@@ -32,7 +32,7 @@ Before setting up your Adobe Commerce Optimizer storefront, ensure you have the 
 
 ## Set up your development environment
 
-To develop and test your Adobe Commerce Storefront on Edge Delivery Services project locally, you need Node.js version 22.13.1 LTS.
+To develop and test  your Adobe Commerce Optimizer Storefront on Edge Delivery Services project locally, you need Node.js version 22.13.1 LTS.
 
 If needed, complete the following steps to install Node Version Manager (NVM) and the required Node.js version.
 
