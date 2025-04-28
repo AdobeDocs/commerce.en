@@ -64,7 +64,7 @@ Install the Sidekick browser extension to edit, preview, and publish storefront 
 
 ## Create your storefront
 
-The storefront you create for your [!DNL Adobe Commerce Optimizer] project is built using a customized version of the [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) boilerplate. The boilerplate is a set of files and folders that provide a starting point for building your storefront.
+The storefront you create for your [!DNL Adobe Commerce Optimizer] project is built using a customized version of the Adobe Commerce on Edge Delivery Services Storefront boilerplate. The boilerplate is a set of files and folders that provide a starting point for building your storefront.
 
 This storefront setup process is customized specifically for [!DNL Adobe Commerce Optimizer] projects. The flow is different than the flow for the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup.
 
@@ -104,11 +104,11 @@ Create a code repository in GitHub using the Edge Delivery Services + AAdobe Com
 
 1. Select **Use this template**, and then select **Create a new repository**.
 
-  ![[!DNL Create github repo from storefront boilerplate template]](assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
+   ![[!DNL Create github repo from storefront boilerplate template]](assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
 
    This opens the repository configuration page.
 
-  ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
+   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
 
 1. Complete the configuration form with the following details:
 
@@ -129,31 +129,22 @@ Update the custom boilerplate template on the `aco` branch to connect your conte
 
 You need the following information to complete the storefront setup process:
 
-* **GitHub repository URL**–GitHub repository URL from Step 2.
-
-  ```shell
-  github.com/{ORG}/{SITE}
-  ```
+* **GitHub repository URL**–GitHub repository URL from Step 2: `github.com/{ORG}/{SITE}`
 
   * `{ORG}` is the organization name or username for the repository
 
   * `{SITE}` is your repository name
 
-* **Content folder URL**–Content folder URL from Step 1
+* **Content folder URL**–Content folder URL from Step 1: `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`
 
-  ```shell
-  https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}
-  ```
-
-  * `{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data.
+  `{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data.
 
 #### Update the boilerplate code to connect to your content folder
 
 1. Clone the repository to your local machine.
 
    ```bash
-   git clone https://github.com/<organization>/<repository>.git
-
+   git clone https://github.com/{ORG}/{SITE}.git
    ```
 
    If you encounter errors when cloning the repository, see [Troubleshoot cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors) in the GitHub documentation.
@@ -350,11 +341,11 @@ To add content to your storefront, you have to preview and publish your content 
 
 1. Turn on Sidekick by clicking the Sidekick icon in the browser toolbar.
 
-  ![[!DNL Turn on Sidekick from browser toolbar]](assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
+   ![[!DNL Turn on Sidekick from browser toolbar]](assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
 
 1. Use the Sidekick toolbar to preview and publish your content.
 
-  ![[Select files to preview and publish]](assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
+   ![[Select files to preview and publish]](assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
 
 1. Select files in each folder separately, and use the Sidekick toolbar to preview and publish all files.
 
@@ -378,7 +369,7 @@ Preview your site to verify that both the sample content and the Adobe Commerce 
 
    Replace `{ORG}` and `{SITE}` with the organization and name for your boilerplate repository.
 
-  ![[!DNL ACO storefront site with boilerplate]](assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
+   ![[!DNL ACO storefront site with boilerplate]](assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
    If the page returns a 404, make sure that you have published the content using the Sidekick extension. Also, double-check the configuration in the files you updated.
 
@@ -392,7 +383,7 @@ Preview your site to verify that both the sample content and the Adobe Commerce 
 
    1. Press **Enter** to view the product list page.
 
-     ![[!DNL View product details page]](assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
+      ![[!DNL View product details page]](assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
    1. View a product details page by selecting any tire product on the page.
 
@@ -407,7 +398,9 @@ In this section, you experiment with the storefront configuration in your local 
 
 To make the connection, you need the GraphQL endpoint for Merchandising Services that was provided in your onboarding email.
 
-`https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql`
+```text
+https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql
+```
 
 #### Start local development
 
@@ -443,14 +436,12 @@ To make the connection, you need the GraphQL endpoint for Merchandising Services
       * **`commerce-endpoint`**–Replace the existing value with your endpoint URL.
 
         ```json
-
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XDevkG9W6UbwgQmPn995r3/graphql"
         ```
 
       * **`ac-environment-id`**—Replace the existing value with the tenant ID from your endpoint URL.
 
         ```json
-
         "ac-environment-id": "XDevkG9W6UbwgQmPn995r3"
         ```
 
@@ -462,13 +453,13 @@ To make the connection, you need the GraphQL endpoint for Merchandising Services
 
    1. In the storefront header, click the magnifying glass to search for `tires`.
 
-     ![[!DNL Search for tires]](assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
+      ![[!DNL Search for tires]](assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
 
       Notice that the drop-down list does not populate.
 
    1. Press **Enter** to display the Product list page.
 
-     ![[!DNL Empty search results with invalid header values]](assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
+      ![[!DNL Empty search results with invalid header values]](assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
       The search doesn't return any results because the headers in your storefront configuration file use headers values based on the demo instance. Now that the configuration points to the [!DNL Adobe Commerce Optimizer] instance provisioned for you, those values are invalid.
 
