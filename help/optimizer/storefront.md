@@ -14,7 +14,7 @@ This tutorial demonstrates how to set up a local development environment and use
 
 ## Prerequisites
 
-* Ensure that you have a GitHub account configured for local development.
+* Ensure that you have a GitHub account (github.com) that can create repositories and is configured for local development.
 
 * Optional. Become familiar with the concepts and basic workflow for creating a storefront with Adobe Edge Delivery Services by reviewing the [Developer Tutorial](https://www.aem.live/developer/tutorial).
 
@@ -106,11 +106,11 @@ Create a code repository in GitHub using the Edge Delivery Services + AAdobe Com
 
   ![[!DNL Create github repo from storefront boilerplate template]](assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
 
-1. Configure the new repository.
+   This opens the repository configuration page.
 
   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
 
-   Complete the form with the following details:
+1. Complete the configuration form with the following details:
 
    * **Repository template**—`hlxsites/aem-boilerplate-commerce` (default).
    * **Include all branches**—Select the option to include all branches.
@@ -346,13 +346,13 @@ To add content to your storefront, you have to preview and publish your content 
 
 1. Turn on Sidekick by clicking the Sidekick icon in the browser toolbar.
 
-   ![[!DNL Turn on Sidekick from browser toolbar]](assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
+  ![[!DNL Turn on Sidekick from browser toolbar]](assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
 
 1. Use the Sidekick toolbar to preview and publish your content.
 
-   ![[Select files to preview and publish]](assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
+  ![[Select files to preview and publish]](assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
 
-   Select files in each folder separately, and use the Sidekick toolbar to preview and publish all files.
+1. Select files in each folder separately, and use the Sidekick toolbar to preview and publish all files.
 
    * **Preview**–Uploads content to the staging environment. Storefront staging URLs end with `.aem.page`.
 
@@ -427,7 +427,7 @@ To make the connection, you need the GraphQL endpoint for Merchandising Services
 
    The first page of your boilerplate storefront should be visible in your browser at `http://localhost:3000`.
 
-   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
+  ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
 
 
 1. Update the storefront configuration to connect to the Adobe Commerce Optimizer instance that Adobe has provisioned for you.
