@@ -27,7 +27,7 @@ To set up your development environment, install the required version of Node.js 
 
 #### Install Node.js
 
-To develop and test  your Adobe Commerce Optimizer Storefront on Edge Delivery Services project locally, you need Node.js version 22.13.1 LTS.
+To develop and test  your [!DNL Adobe Commerce Optimizer] storefront on Edge Delivery Services project locally, you need Node.js version 22.13.1 LTS.
 
 If needed, complete the following steps to install Node Version Manager (NVM) and the required Node.js version.
 
@@ -55,7 +55,7 @@ If needed, complete the following steps to install Node Version Manager (NVM) an
 
 >[!TIP]
 >
->This setup is for developing with Adobe Commerce Optimizer and the Adobe Commerce Edge Delivery Service Storefront. Additional resources for extending and customizing your Adobe Commerce Optimizer solution are available through [App Builder for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) and [API Mesh for Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). For access and usage information, contact your Adobe account representative.
+>This setup is for developing with [!DNL Adobe Commerce Optimizer] and the Adobe Commerce Edge Delivery Service Storefront. Additional resources for extending and customizing your [!DNL Adobe Commerce Optimizer] solution are available through [App Builder for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) and [API Mesh for Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). For access and usage information, contact your Adobe account representative.
 
 #### Install Sidekick
 
@@ -64,9 +64,9 @@ Install the Sidekick browser extension to edit, preview, and publish storefront 
 
 ## Create your storefront
 
-The storefront you create for your Adobe Commerce Optimizer project is built using a customized version of the [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) boilerplate. The boilerplate is a set of files and folders that provide a starting point for building your storefront.
+The storefront you create for your [!DNL Adobe Commerce Optimizer] project is built using a customized version of the [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) boilerplate. The boilerplate is a set of files and folders that provide a starting point for building your storefront.
 
-This storefront setup process is customized specifically for Adobe Commerce Optimizer projects. The flow is different than the flow for the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup.
+This storefront setup process is customized specifically for [!DNL Adobe Commerce Optimizer] projects. The flow is different than the flow for the standard [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) setup.
 
 >[!NOTE]
 >
@@ -129,17 +129,21 @@ Update the custom boilerplate template on the `aco` branch to connect your conte
 
 You need the following information to complete the storefront setup process:
 
-* **GitHub repository URL**–The URL of the GitHub repository you created in Step 1.
+* **GitHub repository URL**–GitHub repository URL from Step 2.
 
-  `github.com/{ORG}/{SITE}`
+  ```shell
+  github.com/{ORG}/{SITE}
+  ```
 
   * `{ORG}` is the organization name or username for the repository
 
   * `{SITE}` is your repository name
 
-* **Content folder URL**–The URL of the content folder from the [Prerequisites](#prerequisites). For example, if you are using Google Drive, the content folder URL should look like this:
+* **Content folder URL**–Content folder URL from Step 1
 
-  `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`
+  ```shell
+  https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}
+  ```
 
   * `{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data.
 
@@ -362,10 +366,10 @@ For more information, see the Adobe Experience Manager [Sidekick](https://www.ae
 
 ### Step 7: Preview your site sample
 
-Preview your site to verify that both the sample content and the Commerce Optimizer demo data is displaying correctly.
+Preview your site to verify that both the sample content and the Adobe Commerce Optimizer demo data is displaying correctly.
 
 * **Sample content** is served from your shared content folder. It includes the page layouts, banners, and other content that you published using Sidekick.
-* **Sample data** is served from the Adobe Commerce Optimizer demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the values specified in the storefront configuration file, `config.json`.
+* **Sample data** is served from the [!DNL Adobe Commerce Optimizer] demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the values specified in the storefront configuration file, `config.json`.
 
 
 #### Connect to your site to view sample content and data
@@ -399,7 +403,7 @@ Preview your site to verify that both the sample content and the Commerce Optimi
 
 ### Step 8: Develop the storefront in your local environment
 
-In this section, you experiment with the storefront configuration in your local development environment by connecting the storefront to the Adobe Commerce Optimizer instance that Adobe provisioned for you.
+In this section, you experiment with the storefront configuration in your local development environment by connecting the storefront to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
 
 To make the connection, you need the GraphQL endpoint for Merchandising Services that was provided in your onboarding email.
 
@@ -430,11 +434,11 @@ To make the connection, you need the GraphQL endpoint for Merchandising Services
   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
 
 
-1. Update the storefront configuration to connect to the Adobe Commerce Optimizer instance that Adobe has provisioned for you.
+1. Update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe has provisioned for you.
 
    1. Open the `config.json` file.
 
-   1. Update the following values using your the endpoint for your Adobe Commerce Optimizer instance:
+   1. Update the following values using your the endpoint for your [!DNL Adobe Commerce Optimizer] instance:
 
       * **`commerce-endpoint`**–Replace the existing value with your endpoint URL.
 
@@ -466,15 +470,15 @@ To make the connection, you need the GraphQL endpoint for Merchandising Services
 
      ![[!DNL Empty search results with invalid header values]](assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
-      The search doesn't return any results because the headers in your storefront configuration file use headers values based on the demo instance. Now that the configuration points to the Adobe Commerce Optimizer instance provisioned for you, those values are invalid.
+      The search doesn't return any results because the headers in your storefront configuration file use headers values based on the demo instance. Now that the configuration points to the [!DNL Adobe Commerce Optimizer] instance provisioned for you, those values are invalid.
 
 ### Next steps
 
-See the [Merchandiser end-to-end use case](https://experienceleague-review.corp.adobe.com/docs/commerce/optimizer/use-case/merchandiser-use-case.html) to learn how to display content in your storefront by updating the storefront configuration using values from your Adobe Commerce Optimizer instance.
+See the [Merchandiser end-to-end use case](https://experienceleague-review.corp.adobe.com/docs/commerce/optimizer/use-case/merchandiser-use-case.html) to learn how to display content in your storefront by updating the storefront configuration using values from your [!DNL Adobe Commerce Optimizer] instance.
 
 
 >[!MORELIKETHIS]
 >
->* If you plan to use Adobe Commerce Optimizer without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with your Commerce frontend components and backend data.
+>* If you plan to use [!DNL Adobe Commerce Optimizer] without an Adobe Commerce backend, see the [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with your Commerce frontend components and backend data.
 ></br></br>
->* If you plan to use Adobe Commerce Optimizer with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn how to update content and configure storefront components for account management, checkout, and other capabilities.
+>* If you plan to use [!DNL Adobe Commerce Optimizer] with an Adobe Commerce backend, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn how to update content and configure storefront components for account management, checkout, and other capabilities.
