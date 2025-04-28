@@ -16,8 +16,7 @@ This tutorial demonstrates how to set up a local development environment and use
 
 * Ensure that you have a GitHub account (github.com) that can create repositories and is configured for local development.
 
-* Optional. Become familiar with the concepts and basic workflow for creating a storefront with Adobe Edge Delivery Services by reviewing the [Developer Tutorial](https://www.aem.live/developer/tutorial).
-
+* Become familiar with the basic workflow and vocabulary related to creating a storefront for Adobe Edge Delivery Services by reviewing the [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/get-started)  in the Adobe Commerce Storefront documentation.
 * Set up your development environment
 
 
@@ -183,7 +182,6 @@ You need the following information to complete the storefront setup process:
        mountpoints:
         /: https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}
       ```
-
 
    1. Save the file.
 
