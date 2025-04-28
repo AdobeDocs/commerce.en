@@ -10,26 +10,26 @@ recommendations: noCatalog
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-Channels help you define your retail structure into meaningful business groups. A channel affects product visibility by applying specific policies and filters that determine which products are displayed on a storefront. These policies can include attributes like brand, model, or part category, ensuring that only relevant products are visible to shoppers based on the channel's configuration. Additionally, channels can use price books to display customer-specific pricing, further tailoring the shopping experience.
+Channels help you define your retail structure into meaningful business groups. A channel affects product visibility by applying specific policies and filters that determine which products are displayed on a storefront. These policies can include attributes like brand, model, or part category, ensuring that only relevant products are visible to shoppers based on the channel configuration. Additionally, channels can use price books to display customer-specific pricing, further tailoring the shopping experience.
 
 ## Add channel
 
-In this section, you create a new channel. Make sure you have already [created a policy](./policies.md) before you create a channel.
+In this section, you create a channel. Ensure that you have already [created a policy](./policies.md) before proceeding to create a channel.
 
-1. On the left menu, open the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Channels]**. ​
+1. On the left menu, open the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**. ​
 
-1. Click the **[!UICONTROL Add Channel]** button. ​
+1. Click **[!UICONTROL Add Channel]**. ​
 
-1. Fill in Channel Details:
+1. On the Add channel to listing form, fill in the channel details:
 
-    1. **Name**: Enter the name of the channel. For example, "Celport". ​
-    1. **Scopes**: Add the scope (locale). For example, "en-US". Press the **enter** key.
-    1. **Policies**: Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](./policies.md).
+    * **Name**—Enter the name of the channel. For example, "Celport". ​
+    * **Scopes**—Add the scope (locale). For example, "en-US". Press the **enter** key.
+    * **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](./policies.md).
 
-1. Click the **[!UICONTROL Add]** button to create the channel. ​
+1. Click **[!UICONTROL Add]** to create the channel. ​
 
-    If the **[!UICONTROL Add]** button is not active, ensure the scope is properly added by pressing the **enter** key. ​
+    If the **[!UICONTROL Add]** button is not active, ensure that the scope is properly added by placing your cursor in the Scopes field and  pressing **enter**. ​
 
-1. Once created, the channel will appear in the list of channels. ​
+  The Channels page updates to display the new channel.​
 
-By following these steps, the new channel will be configured to display products and pricing based on the selected policies and scopes.
+After you complete these steps, the new channel is configured to display products and pricing based on the scopes and policies you selected.

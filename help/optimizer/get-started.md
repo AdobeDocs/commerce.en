@@ -10,7 +10,7 @@ recommendations: noCatalog
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-[!DNL Adobe Commerce Optimizer] provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.
+[!DNL Adobe Commerce Optimizer] This guide walks you through creating and working with an Adobe Commerce Optimizer instance.
 
 Click the tabs below to see high-level workflow overviews for the following user types:
 

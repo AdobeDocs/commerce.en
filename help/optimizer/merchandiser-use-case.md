@@ -25,8 +25,8 @@ In this use case, you will be working with the following:
 
 By the end of this article, you will:
 
-- Learn the fundamentals of [!DNL Adobe Commerce Optimizer], it's unique and performant and scalable catalog data model.
-- Learn how the new catalog data model ties in seamlessly with platform agnostic storefront components built by Adobe.
+- Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with it's unique and performant and scalable catalog data model.
+- Learn how the catalog data model seamlessly ties in with platform agnostic storefront components built by Adobe.
 - Learn how to use Commerce Storefront powered by Edge Delivery to bring a unique shopping experience to your customers.
 
 ## Business scenario – Carvelo Automobile
@@ -60,9 +60,12 @@ Now that you have an overview of the business use case, here is your objective a
 
 >[!BEGINSHADEBOX]
 
-Carvelo wants to sell parts across its three brands (Aurora, Bolt, and Cruz) through the different dealerships. Carvelo wants to ensure that the dealerships have access to only the correct parts and prices as per the licensing agreements.
+Carvelo wants to sell parts across its three brands (Aurora, Bolt, and Cruz) through the different dealerships (Akbridge, Kingsbluff, and Celport). Carvelo wants to ensure that the dealerships have access to only the correct parts and prices per their respective licensing agreements.
 
-Ultimately, Carvelo has two major goals (1) Maintain a "global" website, which has all the SKUs across all three brands. (2) Provide a path for dealerships to set up their own storefronts based on unique SKU visibility and prices for each SKU for each dealership.
+Ultimately, Carvelo has two major goals:
+
+1. Maintain a "global" website, which has all SKUs across all three brands.
+1. Provide a path for dealerships to set up their own storefronts based on unique SKU visibility and prices for each SKU for each dealership.
 
 >[!ENDSHADEBOX]
 
@@ -70,7 +73,7 @@ Now, access your [!DNL Adobe Commerce Optimizer] instance.
 
 ## 1. Access the [!DNL Adobe Commerce Optimizer] instance
 
-After you onboard to the Early Access program, you will be given a link to an [!DNL Adobe Commerce Optimizer] instance. This instance is pre-configured with everything that you need to successfully complete the steps outlined in this tutorial, including catalog data that supports the Carvelo Automobile use case.
+After you onboard to the Early Access program, Adobe sends an email that provides the URL to access the l[!DNL Adobe Commerce Optimizer] instance provisioned for you. This instance is pre-configured with everything that you need to successfully complete the steps outlined in this tutorial, including catalog data that supports the Carvelo Automobile use case.
 
 When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
@@ -80,7 +83,7 @@ When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 >
 >See the [overview](./overview.md) article to learn more about the different parts that make up the [!DNL Adobe Commerce Optimizer] UI.
 
-In the left navigation, expand the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Channels]**. Notice that the Arkbridge and Kingsbluff dealerships already have channels created:
+In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**. Notice that the Arkbridge and Kingsbluff dealerships already have channels created:
 
 ![Preconfigured Channels](assets/preconfigured-channels.png)
 
@@ -100,27 +103,27 @@ Kingsbluff has the following policies:
 
 In the next section, you will create a channel and policies for the Celport dealership.
 
-## 2. Create a new policy and channel
+## 2. Create a policy and channel
 
-Carvelo's commerce manager needs to set up a new storefront for a dealer called *Celport* that belongs to *East Coast Inc* company. Celport will be selling brakes and suspensions for the Bolt and Cruz brands.
+Carvelo's commerce manager needs to set up a new storefront for a dealer called *Celport* that belongs to the *East Coast Inc* company. Celport will sell brakes and suspensions for the Bolt and Cruz brands.
 
 ![Celport Dealer](assets/celport-dealer.png)
 
 Using [!DNL Adobe Commerce Optimizer], the commerce manager will:
 
-1. Create a new policy called *Celport Part Categories* for Celport to sell only brakes and suspensions.
-1. Create a new channel for Celport storefront. This channel uses your newly created policy *Celport Part Category* and the existing *East Coast Inc brands* to ensure that Celport can only sell Bolt and Cruz as part of the agreement with East Coast Inc.
-1. Set up Celport commerce storefront configs.
+1. Create a new policy called *Celport part categories* for Celport to sell only brake and suspension parts.
+1. Create a new channel for the Celport storefront. This channel uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc.
+1. Update the commerce storefront configuration to use data from the Celport channel that you created.
 
 At the end of this section, Celport will be up and running ready to sell Carvelo's products.
 
 ### Create a Policy
 
-Let's create a new policy called *Celport Part Categories* to filter the SKUs that the Celport dealer sells, which are brakes and suspension.
+Let's create a new policy called *Celport part categories* to filter the SKUs that the Celport dealer sells, which include brake and suspension parts.
 
 1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Policies]**.
 
-1. Click the **[!UICONTROL Add Policy]** button.
+1. Click **[!UICONTROL Add Policy]**.
 
     A new page displays for you to add the policy details.
 
@@ -128,7 +131,7 @@ Let's create a new policy called *Celport Part Categories* to filter the SKUs th
 
     **Name** = *Celport Part Categories*
 
-1. Click the **[!UICONTROL Add Filter]** button.
+1. Click **[!UICONTROL Add Filter]**.
 
     A dialog displays for you to add filter details.
 
@@ -145,11 +148,11 @@ Let's create a new policy called *Celport Part Categories* to filter the SKUs th
 
     To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](./policies.md#value-source-types).
 
-1. In the **[!UICONTROL Filter details]** dialog, click the **[!UICONTROL Save]** button.
+1. In the **[!UICONTROL Filter details]** dialog, click **[!UICONTROL Save]**.
 
 1. To enable the filter you just created, click the action dots (...) and select **Enable**.
 
-1. Click the **[!UICONTROL Save]** blue button.
+1. Click **[!UICONTROL Save]**.
 
     >[!NOTE]
     >
@@ -157,29 +160,31 @@ Let's create a new policy called *Celport Part Categories* to filter the SKUs th
 
 1. Go back to the list of policies by clicking the back arrow.
 
-    Your new *Celport Part Categories* policy appears in the list.
+    Your new *Celport part categories* policy appears in the list.
 
 ### Create a channel
 
 Create a new channel for the *Celport* dealer and link the following policies: *East Coast Inc brands* and *Celport Part Categories*.
 
-1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Channels]**.
+1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**.
 
-    You will see existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
+    You will see the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
 
-1. Click the **[!UICONTROL Add Channel]** button.
+1. Click **[!UICONTROL Add Channel]**.
 
 1. Fill in channel details:
 
     - **Name** = *Celport*
     - **Scopes** = *en-US* (hit enter)
-    - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport Part Categories*; *Brand*; *Model*                          
+    - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport part categories*; *Brand*; *Model*                          
 
-1. Click the **[!UICONTROL Add]** blue button. The channel is created and listed on the list of channels page.
+1. Click **[!UICONTROL Add]** to create the channel.
+
+  The Channels page updates to display the new channel.
 
     >[!NOTE]
     >
-    >If the **[!UICONTROL Add]** button is not blue, make sure you hit enter in the channel details for the **[!UICONTROL Scopes]** section.
+    >If the **[!UICONTROL Add]** button is not blue, ensure that the scope is selected by placing your cursor in the **[!UICONTROL Scopes]** section and pressing **enter**.
 
 1. Copy the Celport channel ID.
 
@@ -189,7 +194,7 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
     Keep track of this ID as it will be used in the next section after you build your storefront.
 
-With your new channel and policy created, you can configure the storefront to use the new Celport channel.
+After you create the Celport channel and associated policies, the next step is to configure the storefront to use the new Celport channel.
 
 ## 3. Set up the Celport commerce storefront
 
@@ -199,7 +204,9 @@ The final piece of this tutorial involves setting up the storefront then swappin
 
     When you finish creating the storefront, notice that it does not include information related to the Celport channel. In the next step, you will update the `config.json` file to add that channel.
 
-1. In the root directory of the repository where your storefront code is located, open the `config.json` file.
+1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
+
+1. In the root directory of the folder, open the `config.json` file.
 
    +++config.json code
 
@@ -242,11 +249,47 @@ The final piece of this tutorial involves setting up the storefront then swappin
    +++
 
 1. Replace the `ac-channel-id` value with Celport channel ID that you copied previously.
-1. Replace the `ac-environment-id` value with the environment ID you received as part of the onboarding process to the Early Access program.
+1. If needed, replace the `ac-environment-id` value with the tenant ID for your [!DNL Adobe Commerce Optimizer] instance. You can find the ID in the onboarding email for the Early Access program, or by contacting your Adobe account representative.
+
+   Make sure that the `commerce-endpoint` value matches the GraphQL endpoint for your  [!DNL Adobe Commerce Optimizer] instance.
 1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
 1. Save the file.
-1. [Preview and publish your content](./storefront.md). UPDATE LINK TO STEP 5 WHEN PR 69 IS MERGED.
+
+When you save the changes, you update the catalog configuration to use the Carvelo channel which has been configured to sell only brake and suspension parts.
 1. Launch the storefront to see the Celport-specific catalog experience that includes products and prices based on the policies you specified when you created the Celport channel.
+
+   1.  From the terminal window in your IDE, start your local storefront preview.
+   
+       ```shell
+       npm start
+       ```
+
+  1. Open the storefront by navigating to `http://localhost:3000`.
+ 
+  1. In the browser, search for `brakes` or `suspension`, and press **Enter** to open the product list page showing the parts that match your search query.
+  
+    [Insert screen cap]
+
+    Click a part image to view the product details and price information.
+
+1. Now search for `tires`, which is another part category available in the data on your [!DNL Adobe Commerce Optimizer] instance.
+
+   [Insert screen cap]
+
+   Notice that no results are returned.  This is because the Celport channel has been configured to sell only brake and suspension parts.
+ 
+1. Experiment with updating your storefront configuration file (`config.json`).
+   1.  Change the `ac-channel-id` and `ac-price-book` values.
+   
+       For example, you can change the channel ID to the Kingsbluff channel, and the price book ID to  `east_coast_inc`.
+
+   1. Save the file.
+   
+       When you save the file, the local storefront preview updates automatically.
+      
+   1.  Preview the changes in the browser using the Search feature.
+       
+       Notice the different part types available and notice the prices assigned to the Kingsbluff channel.
 
 ## That's it!
 
