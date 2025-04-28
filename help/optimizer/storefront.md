@@ -9,7 +9,7 @@ role: Developer
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-This tutorial demonstrates how to set up a local development environment and use [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure storefront.
+This tutorial demonstrates demonstrates how to setup and use [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure Commerce storefront powered by data from your [!DNL Adobe Commerce Optimizer] instance.
 
 
 ## Prerequisites
