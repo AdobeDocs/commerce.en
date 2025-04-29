@@ -275,7 +275,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
 
 When you save the changes, you update the catalog configuration to use the Carvelo channel which has been configured to sell only brake and suspension parts.
 
-1. Launch the storefront to see the Celport-specific catalog experience that includes products and prices based on the policies you specified when you created the Celport channel.
+1. Launch the storefront to view the Celport-specific catalog experience created by your storefront configuration.
 
     1. From the terminal window in your IDE, start your local storefront preview.
    
@@ -285,13 +285,15 @@ When you save the changes, you update the catalog configuration to use the Carve
 
     1. Open the storefront by navigating to `http://localhost:3000`.
  
-    1. In the browser, search for `brakes` or `suspension`, and press **Enter** to open the product list page showing the parts that match your search query.
+    1. In the browser, search for `brakes`, and press **Enter**. 
+    
+       The storefront updates to display the product list page showing the brake parts.
   
     [Insert screen cap]
 
-    Click a part image to view the product details and price information.
+    Click a brake part image to view the product details with price information and note the product price information.
 
-1. Now search for `tires`, which is another part category available in the data on your [!DNL Adobe Commerce Optimizer] instance.
+1. Now search for `tires`, which is another part category available in the use case data on your [!DNL Adobe Commerce Optimizer] instance.
 
    [Insert screen cap]
 
@@ -301,15 +303,17 @@ When you save the changes, you update the catalog configuration to use the Carve
     
     1. Change the `ac-channel-id` and `ac-price-book` values.
    
-       For example, you can change the channel ID to the Kingsbluff channel, and the price book ID to  `east_coast_inc`.
+       For example, you can change the channel ID to the Kingsbluff channel, and the price book ID to  `east_coast_inc`. You can see the parts categories available for Kingsbluff by reviewing the *Kingsbluff part categories* policy.
 
     1. Save the file.
    
        When you save the file, the local storefront preview updates automatically.
       
-    1. Preview the changes in the browser using the Search feature.
+    1. Preview the changes in the browser by using the the Search feature to find tire parts .
        
        Notice the different part types available and notice the prices assigned to the Kingsbluff channel.
+       
+       By changing header values in the storefront configuration file and exploring the updated storefront, you can see how easy it is to update the catalog view and data filters to customize the storefront experience.
 
 ## That's it!
 
