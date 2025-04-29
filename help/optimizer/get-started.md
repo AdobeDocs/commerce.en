@@ -12,7 +12,7 @@ recommendations: noCatalog
 
 [!DNL Adobe Commerce Optimizer] This guide walks you through creating and working with an Adobe Commerce Optimizer instance.
 
-Click the tabs below to see high-level workflow overviews for the following user types:
+<!--Click the tabs below to see high-level workflow overviews for the following user types:
 
 - Administrators
 - Merchants
@@ -33,14 +33,9 @@ This diagram provides a high-level overview of how developers create integration
 NEED DIAGRAM
 
 >[!ENDTABS]
+-->
 
 ## Provisioning
-
->[!IMPORTANT]
->
->This section contains information that is only applicable for early access participants.
-
-[!DNL Adobe Commerce Optimizer] services are a subset of the services provisioned for [!DNL Adobe Commerce Cloud Service]. When the Adobe provisioning team gives you access to an [!DNL Adobe Commerce Cloud Service] instance, you effectively gain access to [!DNL Adobe Commerce Optimizer] functionality (services, APIs, UI) without needing a dedicated [!DNL Adobe Commerce Optimizer] SKU. Access includes entitlements to EDS and App Builder.
 
 After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe Commerce Optimizer] provisioning team provides you with the following endpoints:
 

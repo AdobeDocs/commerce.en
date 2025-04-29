@@ -37,7 +37,7 @@ Watch the following video for a high-level overview of [!DNL Adobe Commerce Opti
 
 - Merchants who want to maintain their existing backend commerce system and only transform storefront experiences.
 - Businesses where a third-party system manages the cart and checkout lifecycle.
-- AEM customers not currently using Adobe Commerce, seeking a simple way to manage their product catalog.
+- AEM customers seeking a simple way to manage their product catalog from a third-party commerce engine.
 
 ## Quick tour
 
