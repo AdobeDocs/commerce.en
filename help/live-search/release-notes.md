@@ -18,6 +18,12 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_April 29, 2025_
+
+![Fix](../assets/fix.svg) Fixed an issue where the **Export to CSV** report on the [**Performance**](./performance.md) tab was not including all data specified in the date range.
+![Fix](../assets/fix.svg) Fixed an issue where you could not save a merchandising rule if the search query filter was used.
+![Fix](../assets/fix.svg) Fixed an issue where pinned products were not listed at the top of the results page.
+
 _April 21, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue with the range filter for prices so that products that are equal to the upper range are not included in the results. This change aligns with how price ranges are defined for facets.
