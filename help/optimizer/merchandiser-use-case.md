@@ -282,9 +282,11 @@ When you save the changes, you update the catalog configuration to use the Carve
         ```shell
         npm start
         ```
-
-    1. Open the storefront by navigating to `http://localhost:3000`.
- 
+    The browser opens to the local development preview at `http://localhost:3000`.
+    
+     ![[Storefront preview in local development environment](assets/storefront-preview-local-development.png){width="675" zoomable="yes"}
+     
+     If the command fails or the browser does not open, review the [instructions for local development](storefront.md) in the Storefront setup topic.
     1. In the browser, search for `brakes`, and press **Enter**. 
     
        The storefront updates to display the product list page showing the brake parts.
