@@ -43,7 +43,7 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
 |---|---|---|
 |[!DNL Adobe Commerce Optimizer] UI|`https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>`|Access Commerce Optimizer UI for managing your catalog across:<br>1. Merchandising rules (Product Discovery, Product Recommendations).<br>2. Catalog Management (Channel and Policy creation).<br>3. Data Insights (View your catalog data ingestion status).|
 |Storefront APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql`|Access the APIs needed to set up your Commerce storefront powered by Edge Delivery Services.|
-|Catalog data ingestion APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/catalog/v1/catalog/<entity>`|Access the APIs needed to ingest your catalog data.|
+|Catalog data ingestion APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>`|Access the APIs needed to ingest your catalog data.|
 
 As an early access participant, you will receive an email with a secure link that, along with your IMS token, lets you log into [!DNL Adobe Commerce Optimizer] or make API calls.
 

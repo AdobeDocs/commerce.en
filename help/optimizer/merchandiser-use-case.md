@@ -23,13 +23,13 @@ In this use case, you will be working with the following:
 
 1. [!DNL Adobe Commerce Optimizer] UI - Set up required channels and policies to manage complex catalog operational setup.
 
-1. Commerce Storefront - Render the storefront with the catalog data set up within [!DNL Adobe Commerce Optimizer] UI and Commerce Storefront Configs.
+1. Commerce Storefront - Render the storefront with the catalog data set up within [!DNL Adobe Commerce Optimizer] UI and the Commerce Storefront configuration files, `fstab.yaml` and `config.json`.
 
 ### ‌Key takeaways
 
 By the end of this article, you will:
 
-- Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with it's unique and performant and scalable catalog data model.
+- Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with it's unique performant and scalable catalog data model.
 - Learn how the catalog data model seamlessly ties in with platform agnostic storefront components built by Adobe.
 - Learn how to use Adobe Commerce Optimizer channels and policies to create custom catalog views and data access filters, and send the data to an Adobe Commerce storefront powered by Edge Delivery.
 
@@ -58,7 +58,11 @@ These dealers belong to two different parent dealership companies:
 
 Each company has two pricebooks that are used to sell products at a specific price for different shoppers (base, VIP).
 
-As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this on an Edge Delivery Services storefront.
+- `west_coast_inc` and `vip_west_coast_inc`
+- `east_coast_inc` and `vip_east_coast_inc`
+
+
+As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this data to an Edge Delivery Services storefront.
 
 Now that you have an overview of the business use case, here is your objective as you work through this tutorial:
 
@@ -122,7 +126,9 @@ Carvelo's commerce manager needs to set up a new storefront for a dealer called 
 Using [!DNL Adobe Commerce Optimizer], the commerce manager will:
 
 1. Create a new policy called *Celport part categories* for Celport to sell only brake and suspension parts.
-1. Create a new channel for the Celport storefront. This channel uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc.
+1. Create a new channel for the Celport storefront.
+
+   This channel uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc. The Celport channel will use the `east_coast_inc` price book to support product pricing schedules that align with brand licensing agreements. 
 1. Update the commerce storefront configuration to use data from the Celport channel that you created.
 
 At the end of this section, Celport will be up and running ready to sell Carvelo's products.
@@ -135,7 +141,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
 
 1. Click **[!UICONTROL Add Policy]**.
 
-    A new page displays for you to add the policy details.
+    A new page displays to add the policy details.
 
 1. Add the required details:
 
@@ -143,7 +149,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
 
 1. Click **[!UICONTROL Add Filter]**.
 
-    A dialog displays for you to add filter details.
+    A dialog displays to add filter details.
 
 1. Add the filter details:
 
@@ -180,7 +186,7 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
     ![Channels](assets/channels.png)
 
-    You will see the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
+    Notice the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
 
     ![Existing Channels Page](assets/existing-channels-list.png)
 
@@ -202,19 +208,19 @@ Create a new channel for the *Celport* dealer and link the following policies: *
     >
     >If the **[!UICONTROL Add]** button is not blue, ensure that the scope is selected by placing your cursor in the **[!UICONTROL Scopes]** section and pressing **enter**.
 
-1. Copy the Celport channel ID.
+1. Get the Celport channel ID.
 
     Click the information icon for the Celport channel on the **Channels** page.
 
     ![Celport Channel ID](assets/celport-channel-id.png)
 
-    Keep track of this ID as it will be used in the next section after you build your storefront.
+    Copy and save the channel ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog. 
 
-After you create the Celport channel and associated policies, the next step is to configure the storefront to use the new Celport channel.
+After you create the Celport channel and associated policies, the next step is to configure the storefront to create your new Celport catalog.
 
 ## 3. Update your storefront
 
-The final piece of this tutorial involves updating the storefront [you already created](#prerequisite) to reflect the new Celport channel. In this section, you change the channel ID in your storefront with the channel ID for Celport.
+The final piece of this tutorial involves updating the storefront that [you already created](#prerequisite) to deliver data to the new Celport catalog. In this section, you replace the channel ID in your storefront configuration file with the channel ID for Celport.
 
 1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
 
@@ -270,23 +276,27 @@ The final piece of this tutorial involves updating the storefront [you already c
 
 When you save the changes, you update the catalog configuration to use the Carvelo channel which has been configured to sell only brake and suspension parts.
 
-1. Launch the storefront to see the Celport-specific catalog experience that includes products and prices based on the policies you specified when you created the Celport channel.
+1. Launch the storefront to view the Celport-specific catalog experience created by your storefront configuration.
 
     1. From the terminal window in your IDE, start your local storefront preview.
    
         ```shell
         npm start
         ```
-
-    1. Open the storefront by navigating to `http://localhost:3000`.
- 
-    1. In the browser, search for `brakes` or `suspension`, and press **Enter** to open the product list page showing the parts that match your search query.
+    The browser opens to the local development preview at `http://localhost:3000`.
+    
+     ![[Storefront preview in local development environment](assets/storefront-preview-local-development.png){width="675" zoomable="yes"}
+     
+     If the command fails or the browser does not open, review the [instructions for local development](storefront.md) in the Storefront setup topic.
+    1. In the browser, search for `brakes`, and press **Enter**. 
+    
+       The storefront updates to display the product list page showing the brake parts.
   
     ![Brakes Product Listing Page](assets/brakes-listing-page.png)
 
-    Click a part image to view the product details and price information.
+    Click a brake part image to view the product details with price information and note the product price information.
 
-1. Now search for `tires`, which is another part category available in the data on your [!DNL Adobe Commerce Optimizer] instance.
+1. Now search for `tires`, which is another part category available in the use case data on your [!DNL Adobe Commerce Optimizer] instance.
 
    [Insert screen cap]
 
@@ -296,15 +306,17 @@ When you save the changes, you update the catalog configuration to use the Carve
     
     1. Change the `ac-channel-id` and `ac-price-book` values.
    
-       For example, you can change the channel ID to the Kingsbluff channel, and the price book ID to  `east_coast_inc`.
+       For example, you can change the channel ID to the Kingsbluff channel, and the price book ID to  `east_coast_inc`. You can see the parts categories available for Kingsbluff by reviewing the *Kingsbluff part categories* policy.
 
     1. Save the file.
    
        When you save the file, the local storefront preview updates automatically.
       
-    1. Preview the changes in the browser using the Search feature.
+    1. Preview the changes in the browser by using the the Search feature to find tire parts .
        
        Notice the different part types available and notice the prices assigned to the Kingsbluff channel.
+       
+       By changing header values in the storefront configuration file and exploring the updated storefront, you can see how easy it is to update the catalog view and data filters to customize the storefront experience.
 
 ## That's it!
 
