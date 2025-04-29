@@ -23,13 +23,13 @@ In this use case, you will be working with the following:
 
 1. [!DNL Adobe Commerce Optimizer] UI - Set up required channels and policies to manage complex catalog operational setup.
 
-1. Commerce Storefront - Render the storefront with the catalog data set up within [!DNL Adobe Commerce Optimizer] UI and Commerce Storefront Configs.
+1. Commerce Storefront - Render the storefront with the catalog data set up within [!DNL Adobe Commerce Optimizer] UI and the Commerce Storefront configuration files, `fstab.yaml` and `config.json`.
 
 ### ‌Key takeaways
 
 By the end of this article, you will:
 
-- Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with it's unique and performant and scalable catalog data model.
+- Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with it's unique performant and scalable catalog data model.
 - Learn how the catalog data model seamlessly ties in with platform agnostic storefront components built by Adobe.
 - Learn how to use Commerce Storefront powered by Edge Delivery to bring a unique shopping experience to your customers.
 
@@ -58,7 +58,11 @@ These dealers belong to two different parent dealership companies:
 
 Each company has two pricebooks that are used to sell products at a specific price for different shoppers (base, VIP).
 
-As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this on an Edge Delivery Services storefront.
+- `west_coast_inc` and `vip_west_coast_inc`
+- `east_coast_inc` and `vip_east_coast_inc`
+
+
+As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this data to an Edge Delivery Services storefront.
 
 Now that you have an overview of the business use case, here is your objective as you work through this tutorial:
 
@@ -120,7 +124,9 @@ Carvelo's commerce manager needs to set up a new storefront for a dealer called 
 Using [!DNL Adobe Commerce Optimizer], the commerce manager will:
 
 1. Create a new policy called *Celport part categories* for Celport to sell only brake and suspension parts.
-1. Create a new channel for the Celport storefront. This channel uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc.
+1. Create a new channel for the Celport storefront.
+
+   This channel uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc. The Celport channel will use the `east_coast_inc` price book to support product pricing schedules that align with brand licensing agreements. 
 1. Update the commerce storefront configuration to use data from the Celport channel that you created.
 
 At the end of this section, Celport will be up and running ready to sell Carvelo's products.
@@ -133,7 +139,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
 
 1. Click **[!UICONTROL Add Policy]**.
 
-    A new page displays for you to add the policy details.
+    A new page displays to add the policy details.
 
 1. Add the required details:
 
@@ -141,7 +147,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
 
 1. Click **[!UICONTROL Add Filter]**.
 
-    A dialog displays for you to add filter details.
+    A dialog displays to add filter details.
 
 1. Add the filter details:
 
@@ -178,7 +184,7 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
     ![Channels](assets/channels.png)
 
-    You will see the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
+    Notice the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
 
     ![Existing Channels Page](assets/existing-channels-list.png)
 
