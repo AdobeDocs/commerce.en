@@ -21,8 +21,8 @@ These notes describe updates that were published outside of a versioned release 
 _April 29, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the **Export to CSV** report on the [**Performance**](./performance.md) tab was not including all data specified in the date range.
-![Fix](../assets/fix.svg) Fixed an issue where you could not save a merchandising rule if the search query filter was used.
-![Fix](../assets/fix.svg) Fixed an issue where pinned products were not listed at the top of the results page.
+![Fix](../assets/fix.svg) Fixed an issue where you could not save a [merchandising rule](./rules.md) if the search query filter was used.
+![Fix](../assets/fix.svg) Fixed an issue where [pinned products](./facets-manage.md#pinunpin-facet) were not listed at the top of the results page.
 
 _April 21, 2025_
 
