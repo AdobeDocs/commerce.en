@@ -31,7 +31,7 @@ By the end of this article, you will:
 
 - Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with it's unique and performant and scalable catalog data model.
 - Learn how the catalog data model seamlessly ties in with platform agnostic storefront components built by Adobe.
-- Learn how to use Commerce Storefront powered by Edge Delivery to bring a unique shopping experience to your customers.
+- Learn how to use Adobe Commerce Optimizer channels and policies to create custom catalog views and data access filters, and send the data to an Adobe Commerce storefront powered by Edge Delivery.
 
 ## Business scenario – Carvelo Automobile
 
@@ -94,6 +94,8 @@ In the left navigation, expand the **[!UICONTROL Catalog]** section and click **
 >[!NOTE]
 >
 >You can ignore the **Global** channel for now.
+
+Click the info icon to review channel details.
 
 Arkbridge has the following policies:
 
@@ -214,8 +216,6 @@ After you create the Celport channel and associated policies, the next step is t
 
 The final piece of this tutorial involves updating the storefront [you already created](#prerequisite) to reflect the new Celport channel. In this section, you change the channel ID in your storefront with the channel ID for Celport.
 
-1. Launch your storefront and notice that it does not include information related to the Celport channel. In the next step, you will update the `config.json` file to add that channel.
-
 1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
 
 1. In the root directory of the folder, open the `config.json` file.
@@ -264,6 +264,7 @@ The final piece of this tutorial involves updating the storefront [you already c
 1. If needed, replace the `ac-environment-id` value with the tenant ID for your [!DNL Adobe Commerce Optimizer] instance. You can find the ID in the onboarding email for the Early Access program, or by contacting your Adobe account representative.
 
    Make sure that the `commerce-endpoint` value matches the GraphQL endpoint for your  [!DNL Adobe Commerce Optimizer] instance.
+
 1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
 1. Save the file.
 
@@ -281,7 +282,7 @@ When you save the changes, you update the catalog configuration to use the Carve
  
     1. In the browser, search for `brakes` or `suspension`, and press **Enter** to open the product list page showing the parts that match your search query.
   
-    [Insert screen cap]
+    ![Brakes Product Listing Page](assets/brakes-listing-page.png)
 
     Click a part image to view the product details and price information.
 
