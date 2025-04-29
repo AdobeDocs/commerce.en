@@ -10,7 +10,7 @@ recommendations: noCatalog
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-Policies are data access filters that are housed within channels. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram).
+Policies are data access filters contained within channels that further refine the data delivered to each channel. Policies ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram).
 
 Policies are based on product attributes, such as brand, model, or part category, and are used to tailor the catalog data to meet specific business requirements. ​
 

@@ -16,7 +16,9 @@ Channels help you define your retail structure into meaningful business groups. 
 
 In this section, you create a channel. Ensure that you have already [created a policy](./policies.md) before proceeding to create a channel.
 
-1. On the left menu, open the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**. ​
+1. On the left menu, open the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**.
+
+  ![Channels](assets/channels.png)
 
 1. Click **[!UICONTROL Add Channel]**. ​
 
@@ -31,5 +33,7 @@ In this section, you create a channel. Ensure that you have already [created a p
     If the **[!UICONTROL Add]** button is not active, ensure that the scope is properly added by placing your cursor in the Scopes field and  pressing **enter**. ​
 
   The Channels page updates to display the new channel.​
+
+  ![Updated Channels Page](assets/updated-channels-list.png)
 
 After you complete these steps, the new channel is configured to display products and pricing based on the scopes and policies you selected.

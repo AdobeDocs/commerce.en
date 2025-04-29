@@ -13,6 +13,10 @@ feature: Personalization, Integration
 
 The following use case demonstrates how you can use [!DNL Adobe Commerce Optimizer] to organize your catalog to match retail operations using a single base catalog. It also demonstrates how to set up a storefront powered by Edge Delivery Services.
 
+## Prerequisite
+
+Before you go through this use case, make sure you have [set up your storefront](./storefront.md).
+
 ## Let's get started
 
 In this use case, you will be working with the following:
@@ -54,7 +58,7 @@ These dealers belong to two different parent dealership companies:
 
 Each company has two pricebooks that are used to sell products at a specific price for different shoppers (base, VIP).
 
-As you can see, this is a very complex business use case. Before [!DNL Adobe Commerce Optimizer], a merchant would have to duplicate their base catalog to support this use case. Now, with [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this on an Edge Delivery Services storefront.
+As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this on an Edge Delivery Services storefront.
 
 Now that you have an overview of the business use case, here is your objective as you work through this tutorial:
 
@@ -85,7 +89,11 @@ When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
 In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**. Notice that the Arkbridge and Kingsbluff dealerships already have channels created:
 
-![Preconfigured Channels](assets/preconfigured-channels.png)
+![Preconfigured Channels](assets/existing-channels-list.png)
+
+>[!NOTE]
+>
+>You can ignore the **Global** channel for now.
 
 Arkbridge has the following policies:
 
@@ -168,7 +176,11 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
 1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**.
 
+    ![Channels](assets/channels.png)
+
     You will see the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
+
+    ![Existing Channels Page](assets/existing-channels-list.png)
 
 1. Click **[!UICONTROL Add Channel]**.
 
@@ -180,7 +192,7 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
 1. Click **[!UICONTROL Add]** to create the channel.
 
-  The Channels page updates to display the new channel.
+    The Channels page updates to display the new channel.
 
     >[!NOTE]
     >
@@ -196,13 +208,11 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
 After you create the Celport channel and associated policies, the next step is to configure the storefront to use the new Celport channel.
 
-## 3. Set up the Celport commerce storefront
+## 3. Update your storefront
 
-The final piece of this tutorial involves setting up the storefront then swapping out the channel ID with the channel ID for Celport that you copied previously.
+The final piece of this tutorial involves updating the storefront [you already created](#prerequisite) to reflect the new Celport channel. In this section, you change the channel ID in your storefront with the channel ID for Celport.
 
-1. Follow the steps in the [Set up your storefront](./storefront.md) article to get your initial Edge Delivery storefront created.
-
-    When you finish creating the storefront, notice that it does not include information related to the Celport channel. In the next step, you will update the `config.json` file to add that channel.
+1. Launch your storefront and notice that it does not include information related to the Celport channel. In the next step, you will update the `config.json` file to add that channel.
 
 1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
 
@@ -256,17 +266,18 @@ The final piece of this tutorial involves setting up the storefront then swappin
 1. Save the file.
 
 When you save the changes, you update the catalog configuration to use the Carvelo channel which has been configured to sell only brake and suspension parts.
+
 1. Launch the storefront to see the Celport-specific catalog experience that includes products and prices based on the policies you specified when you created the Celport channel.
 
-   1.  From the terminal window in your IDE, start your local storefront preview.
+    1. From the terminal window in your IDE, start your local storefront preview.
    
-       ```shell
-       npm start
-       ```
+        ```shell
+        npm start
+        ```
 
-  1. Open the storefront by navigating to `http://localhost:3000`.
+    1. Open the storefront by navigating to `http://localhost:3000`.
  
-  1. In the browser, search for `brakes` or `suspension`, and press **Enter** to open the product list page showing the parts that match your search query.
+    1. In the browser, search for `brakes` or `suspension`, and press **Enter** to open the product list page showing the parts that match your search query.
   
     [Insert screen cap]
 
@@ -279,15 +290,16 @@ When you save the changes, you update the catalog configuration to use the Carve
    Notice that no results are returned.  This is because the Celport channel has been configured to sell only brake and suspension parts.
  
 1. Experiment with updating your storefront configuration file (`config.json`).
-   1.  Change the `ac-channel-id` and `ac-price-book` values.
+    
+    1. Change the `ac-channel-id` and `ac-price-book` values.
    
        For example, you can change the channel ID to the Kingsbluff channel, and the price book ID to  `east_coast_inc`.
 
-   1. Save the file.
+    1. Save the file.
    
        When you save the file, the local storefront preview updates automatically.
       
-   1.  Preview the changes in the browser using the Search feature.
+    1. Preview the changes in the browser using the Search feature.
        
        Notice the different part types available and notice the prices assigned to the Kingsbluff channel.
 
