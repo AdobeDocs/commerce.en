@@ -206,19 +206,19 @@ Create a new channel for the *Celport* dealer and link the following policies: *
     >
     >If the **[!UICONTROL Add]** button is not blue, ensure that the scope is selected by placing your cursor in the **[!UICONTROL Scopes]** section and pressing **enter**.
 
-1. Copy the Celport channel ID.
+1. Get the Celport channel ID.
 
     Click the information icon for the Celport channel on the **Channels** page.
 
     ![Celport Channel ID](assets/celport-channel-id.png)
 
-    Keep track of this ID as it will be used in the next section after you build your storefront.
+    Copy and save the channel ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog. 
 
-After you create the Celport channel and associated policies, the next step is to configure the storefront to use the new Celport channel.
+After you create the Celport channel and associated policies, the next step is to configure the storefront to create your new Celport catalog.
 
 ## 3. Update your storefront
 
-The final piece of this tutorial involves updating the storefront [you already created](#prerequisite) to reflect the new Celport channel. In this section, you change the channel ID in your storefront with the channel ID for Celport.
+The final piece of this tutorial involves updating the storefront that [you already created](#prerequisite) to deliver data to the new Celport catalog. In this section, you replace the channel ID in your storefront configuration file with the channel ID for Celport.
 
 1. Launch your storefront and notice that it does not include information related to the Celport channel. In the next step, you will update the `config.json` file to add that channel.
 
