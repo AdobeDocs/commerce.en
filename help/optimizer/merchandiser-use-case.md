@@ -194,6 +194,8 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
     The Channels page updates to display the new channel.
 
+    ![Updated Channels List](assets/updated-channels-list.png)
+
     >[!NOTE]
     >
     >If the **[!UICONTROL Add]** button is not blue, ensure that the scope is selected by placing your cursor in the **[!UICONTROL Scopes]** section and pressing **enter**.
