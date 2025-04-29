@@ -41,3 +41,8 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 - The maximum number of channels per tenant is 1000.
 - The maximum number of polices assigned to one channel is 10.
 - The maximum number of attribute values used in a policy is 100. 
+
+## Product discovery and recommendations
+
+- For product discovery, attribute based merchandising and price settings are not supported.
+- For recommendations,  only one recommendation type is supported; no category/attribute inclusions or exclusions, No recommendations preview on admin

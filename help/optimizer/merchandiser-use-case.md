@@ -290,7 +290,7 @@ When you save the changes, you update the catalog configuration to use the Carve
 
    [Insert screen cap]
 
-   Notice that no results are returned.  This is because the Celport channel has been configured to sell only brake and suspension parts.
+   Notice that no results are returned. This is because the Celport channel has been configured to sell only brake and suspension parts.
  
 1. Experiment with updating your storefront configuration file (`config.json`).
     
