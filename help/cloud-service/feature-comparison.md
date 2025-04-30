@@ -22,17 +22,21 @@ The following table compares platform capabilities and extensibility features to
 
 | Feature | SaaS model | PaaS model |
 |---------|------------|------------|
-| Customizable Admin theme | Not supported (Admin UI theming not available) | Supported (through extensible Admin theming framework) |
-| Extensible core Admin screens | Limited control/extension points (for example, preset filters, visibility controls) | Full control over layout and functionality |
-| Extensible new Admin screens | Supported by external app injection (Admin UI SDK) | Supported by standard Admin UI |
-| In-process execution customization | Out-of-process only (App Builder, microservices-based) | Supported (native extensibility framework) |
-| B2B functionality | Supported (pre-installed with core B2B features)<sup>1</sup> | Supported |
-| Data model extensibility | Supported by custom attributes for core and B2B entities<sup>2</sup> | Full control of data model |
-| Search index customizations | Not supported (requires 3rd party) | Supported |
-| Custom email types | Not supported | Supported |
-| Custom data storage | Limited (state-lib, file only, App Builder storage limitations)<sup>3</sup> | Supported (DB, file, cache, queue) |
-| Primary technologies | CSS, CLI, HTML, JS, Node | CSS, CLI, HTML, JS, PHP, XML |
-| Extensible web APIs | Limited (API Mesh with custom resolvers can extend functionality)<sup>4</sup> | Supported (native REST/GraphQL extensibility) |
+| **Admin Customization** | | |
+| Customizable Admin theme | ❌ Not supported<br><small>Admin UI theming not available</small> | ✅ Supported<br><small>Through extensible Admin theming framework</small> |
+| Extensible core Admin screens | ⚠️ Limited control<br><small>Preset filters, visibility controls</small> | ✅ Full control<br><small>Complete layout and functionality customization</small> |
+| Extensible new Admin screens | ✅ Supported<br><small>External app injection (Admin UI SDK)</small> | ✅ Supported<br><small>Standard Admin UI integration</small> |
+| **Execution & Functionality** | | |
+| In-process execution customization | ⚠️ Out-of-process only<br><small>App Builder, microservices-based</small> | ✅ Supported<br><small>Native extensibility framework</small> |
+| B2B functionality | ✅ Supported<br><small>Pre-installed with core B2B features<sup>1</sup></small> | ✅ Supported<br><small>Full B2B capabilities</small> |
+| **Data & Storage** | | |
+| Data model extensibility | ⚠️ Limited support<br><small>Custom attributes for core and B2B entities<sup>2</sup></small> | ✅ Full control<br><small>Complete data model customization</small> |
+| Search index customizations | ❌ Not supported<br><small>Requires third-party solutions</small> | ✅ Supported<br><small>Native search customization</small> |
+| Custom email types | ❌ Not supported<br><small>Standard email templates only</small> | ✅ Supported<br><small>Full email customization</small> |
+| Custom data storage | ⚠️ Limited<br><small>state-lib, file only, App Builder storage<sup>3</sup></small> | ✅ Supported<br><small>DB, file, cache, queue</small> |
+| **Technology Stack** | | |
+| Primary technologies | <small>CSS, CLI, HTML, JS, Node</small> | <small>CSS, CLI, HTML, JS, PHP, XML</small> |
+| Extensible web APIs | ⚠️ Limited<br><small>API Mesh with custom resolvers<sup>4</sup></small> | ✅ Supported<br><small>Native REST/GraphQL extensibility</small> |
 
 <sup>1</sup> Core [B2B features](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview), like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
 
