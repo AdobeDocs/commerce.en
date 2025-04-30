@@ -97,15 +97,20 @@ The following table compares platform capabilities and extensibility features to
             <td><div style="color: #28a745">✅ Supported</div>Native REST/GraphQL extensibility</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
+                <br><br>
+                <sup>2</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
+                <br><br>
+                <sup>3</sup> For the SaaS model's App Builder storage limitations, Adobe is actively working on solutions including Document DB integration to address persistent storage needs. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
+                <br><br>
+                <sup>4</sup> While direct extension of <a href="https://developer.adobe.com/commerce/services/reference/cloud/rest/">REST</a> and <a href="https://developer.adobe.com/commerce/services/reference/cloud/graphql/">GraphQL</a> APIs is limited in SaaS, <a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh</a> allows you to modify schemas and add custom resolvers to augment the standard APIs.
+            </td>
+        </tr>
+    </tfoot>
 </table>
-
-<sup>1</sup> Core [B2B features](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview), like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
-
-<sup>2</sup> Data model extensibility in SaaS supports [extending core entities](https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/) beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
-
-<sup>3</sup> For the SaaS model's App Builder storage limitations, Adobe is actively working on solutions including Document DB integration to address persistent storage needs. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
-
-<sup>4</sup> While direct extension of [REST](https://developer.adobe.com/commerce/services/reference/cloud/rest/) and [GraphQL](https://developer.adobe.com/commerce/services/reference/cloud/graphql/) APIs is limited in SaaS, [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/) allows you to modify schemas and add custom resolvers to augment the standard APIs.
 
 >[!NOTE]
 >
