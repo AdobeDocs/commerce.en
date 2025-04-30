@@ -38,12 +38,12 @@ The following table compares platform capabilities and extensibility features to
     </thead>
     <tbody>
         <tr>
-            <td colspan="3"><strong>Admin Customization</strong></td>
+            <td colspan="3"><strong>Commerce Admin customization</strong></td>
         </tr>
         <tr>
             <td>Customizable Admin theme</td>
-            <td>❌ Not available</td>
-            <td>✅ Through extensible Admin theming framework</td>
+            <td>❌ No theming framework</td>
+            <td>✅ Extensible theming framework</td>
         </tr>
         <tr>
             <td>Extensible core Admin screens</td>
@@ -56,7 +56,7 @@ The following table compares platform capabilities and extensibility features to
             <td>✅ Standard Admin UI integration</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Execution & Functionality</strong></td>
+            <td colspan="3"><strong>Execution & functionality</strong></td>
         </tr>
         <tr>
             <td>In-process execution customization</td>
@@ -66,10 +66,10 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>B2B functionality</td>
             <td>✅ Pre-installed with core B2B features<sup>1</sup></td>
-            <td>✅ Full B2B capabilities</td>
+            <td>✅ Full B2B capabilities availble after installation</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Data & Storage</strong></td>
+            <td colspan="3"><strong>Data & storage</strong></td>
         </tr>
         <tr>
             <td>Data model extensibility</td>
@@ -92,7 +92,7 @@ The following table compares platform capabilities and extensibility features to
             <td>✅ DB, file, cache, queue</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Technology Stack</strong></td>
+            <td colspan="3"><strong>Technology stack</strong></td>
         </tr>
         <tr>
             <td>Primary technologies</td>
