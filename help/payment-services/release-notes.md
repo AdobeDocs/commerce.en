@@ -22,6 +22,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_April 25, 2025_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6051 --> Now, [!DNL Payment Services] dashboard displays the current extension version in addition to the dashboard version.
+
 _August 30, 2024_
 
 ![New issue](../assets/new.svg)<!-- Issue PAY-5658 --> Now, merchants can filter transactions by the Payment Detail in the [transactions report](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/transactions.html) for more detailed and accurate payment methods data.
@@ -36,7 +40,7 @@ _July 9, 2024_
 
 _March 5, 2024_
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-5252 --> Now, merchants can copy data from the Dashboard grids by selecting the content of a single cell.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-5252 --> Now, merchants can copy data from the dashboard grids by selecting the content of a single cell.
 
 _October 10, 2023_
 
