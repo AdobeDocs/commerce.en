@@ -10,7 +10,7 @@ recommendations: noCatalog
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-[!DNL Adobe Commerce Optimizer] This guide walks you through creating and working with an Adobe Commerce Optimizer instance.
+This guide walks you through creating and working with an [!DNL Adobe Commerce Optimizer] instance.
 
 <!--Click the tabs below to see high-level workflow overviews for the following user types:
 
@@ -47,6 +47,10 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
 
 As an early access participant, you will receive an email with a secure link that, along with your IMS token, lets you log into [!DNL Adobe Commerce Optimizer] or make API calls.
 
+## Set up the storefront
+
+Now that you have an [!DNL Adobe Commerce Optimizer] instance, you are ready to proceed [setting up](storefront.md) your Commerce Storefront powered by Edge Delivery Services.
+
 ## Available catalog data for early access participants
 
 As an early access participant, the [!DNL Adobe Commerce Optimizer] instance contains mock catalog data based on the [Carvelo use case](./admin-use-case.md). The mock data, along with some pre-configured channels and policies, help you get familiar with the [!DNL Adobe Commerce Optimizer] UI.
@@ -58,7 +62,3 @@ By default, [!DNL Adobe Commerce Optimizer] instances do not include any product
 See the [Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into [!DNL Adobe Commerce Optimizer].
 
 The catalog data that you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the channels and policies.-->
-
-## Set up the storefront
-
-Now that you have created an instance, you are ready to proceed [setting up](storefront.md) your Commerce Storefront powered by Edge Delivery Services.
