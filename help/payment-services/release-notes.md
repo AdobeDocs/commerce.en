@@ -24,7 +24,7 @@ These release notes describe feature changes and fixes that occurred and were re
 
 _April 25, 2025_
 
-![New issue](../assets/new.svg)<!-- Issue PAY-6051 --> Now, [!DNL Payment Services] dashboard displays the current extension version in addition to the dashboard version.
+![New issue](../assets/new.svg)<!-- Issue PAY-6051 --> Now, [!DNL Payment Services] dashboard displays both the current extension version and the dashboard version.
 
 _August 30, 2024_
 
