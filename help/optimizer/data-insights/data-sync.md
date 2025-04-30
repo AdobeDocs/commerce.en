@@ -3,6 +3,7 @@ title: Data Sync
 description: Learn how to use the Data Sync page to monitor data ingestion into Adobe Commerce Optimizer.
 hide: yes
 recommendations: noCatalog
+exl-id: 992ffc7d-3179-4b56-9183-28052a25ec71
 ---
 # Data Sync
 

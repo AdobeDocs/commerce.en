@@ -3,6 +3,7 @@ title: Eventing
 description: Use the Eventing page to view storefront eventing data which powers Product Discovery and Recommendations.
 hide: yes
 recommendations: noCatalog
+exl-id: 6b7a6a46-ad1e-45c1-afd0-71ec92f97f28
 ---
 # Eventing
 

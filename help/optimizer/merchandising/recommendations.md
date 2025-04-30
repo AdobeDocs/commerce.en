@@ -2,6 +2,7 @@
 title: Recommendations
 description: Recommendations are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement.
 recommendations: noCatalog
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
 ---
 # Recommendations
 

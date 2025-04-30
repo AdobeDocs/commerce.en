@@ -1,8 +1,9 @@
 ---
 title: Catalog Overview
-description: Learn how to define your channels and policies. 
+description: Learn how to define your channels and policies.
 hide: yes
 recommendations: noCatalog
+exl-id: bca7d8a4-ea99-4185-abd2-c602fab8ea69
 ---
 # Catalog Overview
 

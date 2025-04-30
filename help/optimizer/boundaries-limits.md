@@ -2,6 +2,7 @@
 title: Boundaries and Limits
 description: Learn about the boundaries and limits for [!DNL Adobe Commerce Optimizer] to ensure it meets the needs of your business.
 role: Admin, Developer
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 ---
 # Boundaries and limits
 

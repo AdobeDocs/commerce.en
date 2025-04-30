@@ -2,6 +2,7 @@
 title: Product Discovery
 description: Product Discovery delivers a fast, relevant, and intuitive search experience.
 recommendations: noCatalog
+exl-id: b9429ccb-947b-462c-8b34-63fb53d015f6
 ---
 # Product Discovery
 

@@ -3,6 +3,7 @@ title: Policies
 description: Learn how to use policies to filter data within a channel to ensure that data is sent to the right destination.
 hide: yes
 recommendations: noCatalog
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
 ---
 # Policies
 

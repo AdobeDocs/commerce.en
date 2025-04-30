@@ -1,9 +1,10 @@
 ---
 title: Carvelo Use Case
-description: "Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog using channels and policies and how to set up your storefront based on your catalog configuration."
+description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog using channels and policies and how to set up your storefront based on your catalog configuration.
 hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 ---
 # Carvelo Use Case
 

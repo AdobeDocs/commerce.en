@@ -3,6 +3,7 @@ title: Merchandising Overview
 description: Learn how to create personalized experiences for your shoppers through product discovery and recommendations.
 hide: yes
 recommendations: noCatalog
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 ---
 # Merchandising
 

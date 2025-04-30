@@ -2,6 +2,7 @@
 title: Set up your storefront
 description: Learn how to set up your [!DNL Adobe Commerce Optimizer] storefront.
 role: Developer
+exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 ---
 # Set up your storefront
 

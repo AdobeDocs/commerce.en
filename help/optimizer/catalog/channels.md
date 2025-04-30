@@ -3,6 +3,7 @@ title: Channels
 description: Learn how to use channels to define your retail structure into meaningful business groups.
 hide: yes
 recommendations: noCatalog
+exl-id: 587bc3b0-72c6-40e2-889b-4a55c1187034
 ---
 # Channels
 

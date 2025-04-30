@@ -3,6 +3,7 @@ title: Troubleshooting
 description: Learn how you can use the Data Insights section to troubleshoot ingestion errors.
 hide: yes
 recommendations: noCatalog
+exl-id: afefc957-65e0-4529-a6ba-472b901e2d51
 ---
 # Troubleshooting
 
