@@ -23,6 +23,14 @@ The following table compares platform capabilities and extensibility features to
 <table>
     <thead>
         <tr>
+            <th colspan="3">
+                <div style="text-align: center; margin-bottom: 1em;">
+                    <strong>Status Legend:</strong><br>
+                    ✅ Supported &nbsp;&nbsp; ❌ Not Supported &nbsp;&nbsp; ⚠️ Limited Support
+                </div>
+            </th>
+        </tr>
+        <tr>
             <th>Feature</th>
             <th>SaaS model</th>
             <th>PaaS model</th>
@@ -34,67 +42,67 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Customizable Admin theme</td>
-            <td><div style="color: #dc3545">❌ Not supported</div>Admin UI theming not available</td>
-            <td><div style="color: #28a745">✅ Supported</div>Through extensible Admin theming framework</td>
+            <td>❌ Not available</td>
+            <td>✅ Through extensible Admin theming framework</td>
         </tr>
         <tr>
             <td>Extensible core Admin screens</td>
-            <td><div style="color: #ffc107">⚠️ Limited control</div>Preset filters, visibility controls</td>
-            <td><div style="color: #28a745">✅ Supported</div>Complete layout and functionality customization</td>
+            <td>⚠️ Preset filters, visibility controls</td>
+            <td>✅ Complete layout and functionality customization</td>
         </tr>
         <tr>
             <td>Extensible new Admin screens</td>
-            <td><div style="color: #28a745">✅ Supported</div>External app injection (Admin UI SDK)</td>
-            <td><div style="color: #28a745">✅ Supported</div>Standard Admin UI integration</td>
+            <td>✅ External app injection (Admin UI SDK)</td>
+            <td>✅ Standard Admin UI integration</td>
         </tr>
         <tr>
             <td colspan="3"><strong>Execution & Functionality</strong></td>
         </tr>
         <tr>
             <td>In-process execution customization</td>
-            <td><div style="color: #ffc107">⚠️ Out-of-process only</div>App Builder, microservices-based</td>
-            <td><div style="color: #28a745">✅ Supported</div>Native extensibility framework</td>
+            <td>⚠️ App Builder, microservices-based</td>
+            <td>✅ Native extensibility framework</td>
         </tr>
         <tr>
             <td>B2B functionality</td>
-            <td><div style="color: #28a745">✅ Supported</div>Pre-installed with core B2B features<sup>1</sup></td>
-            <td><div style="color: #28a745">✅ Supported</div>Full B2B capabilities</td>
+            <td>✅ Pre-installed with core B2B features<sup>1</sup></td>
+            <td>✅ Full B2B capabilities</td>
         </tr>
         <tr>
             <td colspan="3"><strong>Data & Storage</strong></td>
         </tr>
         <tr>
             <td>Data model extensibility</td>
-            <td><div style="color: #ffc107">⚠️ Limited support</div>Custom attributes for core and B2B entities<sup>2</sup></td>
-            <td><div style="color: #28a745">✅ Supported</div>Complete data model customization</td>
+            <td>⚠️ Custom attributes for core and B2B entities<sup>2</sup></td>
+            <td>✅ Complete data model customization</td>
         </tr>
         <tr>
             <td>Search index customizations</td>
-            <td><div style="color: #dc3545">❌ Not supported</div>Requires third-party solutions</td>
-            <td><div style="color: #28a745">✅ Supported</div>Native search customization</td>
+            <td>❌ Requires third-party solutions</td>
+            <td>✅ Native search customization</td>
         </tr>
         <tr>
             <td>Custom email types</td>
-            <td><div style="color: #dc3545">❌ Not supported</div>Standard email templates only</td>
-            <td><div style="color: #28a745">✅ Supported</div>Full email customization</td>
+            <td>❌ Standard email templates only</td>
+            <td>✅ Full email customization</td>
         </tr>
         <tr>
             <td>Custom data storage</td>
-            <td><div style="color: #ffc107">⚠️ Limited</div>state-lib, file only, App Builder storage<sup>3</sup></td>
-            <td><div style="color: #28a745">✅ Supported</div>DB, file, cache, queue</td>
+            <td>⚠️ state-lib, file only, App Builder storage<sup>3</sup></td>
+            <td>✅ DB, file, cache, queue</td>
         </tr>
         <tr>
             <td colspan="3"><strong>Technology Stack</strong></td>
         </tr>
         <tr>
             <td>Primary technologies</td>
-            <td><div style="color: #6c757d">CSS, CLI, HTML, JS, Node</div></td>
-            <td><div style="color: #6c757d">CSS, CLI, HTML, JS, PHP, XML</div></td>
+            <td>CSS, CLI, HTML, JS, Node</td>
+            <td>CSS, CLI, HTML, JS, PHP, XML</td>
         </tr>
         <tr>
             <td>Extensible web APIs</td>
-            <td><div style="color: #ffc107">⚠️ Limited</div>API Mesh with custom resolvers<sup>4</sup></td>
-            <td><div style="color: #28a745">✅ Supported</div>Native REST/GraphQL extensibility</td>
+            <td>⚠️ API Mesh with custom resolvers<sup>4</sup></td>
+            <td>✅ Native REST/GraphQL extensibility</td>
         </tr>
     </tbody>
     <tfoot>
