@@ -20,23 +20,84 @@ The following table compares platform capabilities and extensibility features to
 >
 >See [New feature solutions](#new-feature-solutions) to learn about replacement features and new solutions that help you manage store operations in the SaaS model.
 
-| Feature | SaaS model | PaaS model |
-|---------|------------|------------|
-| **Admin Customization** | | |
-| Customizable Admin theme | <div style="color: #dc3545">❌ Not supported</div><small>Admin UI theming not available</small> | <div style="color: #28a745">✅ Supported</div><small>Through extensible Admin theming framework</small> |
-| Extensible core Admin screens | <div style="color: #ffc107">⚠️ Limited control</div><small>Preset filters, visibility controls</small> | <div style="color: #28a745">✅ Supported</div><small>Complete layout and functionality customization</small> |
-| Extensible new Admin screens | <div style="color: #28a745">✅ Supported</div><small>External app injection (Admin UI SDK)</small> | <div style="color: #28a745">✅ Supported</div><small>Standard Admin UI integration</small> |
-| **Execution & Functionality** | | |
-| In-process execution customization | <div style="color: #ffc107">⚠️ Out-of-process only</div><small>App Builder, microservices-based</small> | <div style="color: #28a745">✅ Supported</div><small>Native extensibility framework</small> |
-| B2B functionality | <div style="color: #28a745">✅ Supported</div><small>Pre-installed with core B2B features<sup>1</sup></small> | <div style="color: #28a745">✅ Supported</div><small>Full B2B capabilities</small> |
-| **Data & Storage** | | |
-| Data model extensibility | <div style="color: #ffc107">⚠️ Limited support</div><small>Custom attributes for core and B2B entities<sup>2</sup></small> | <div style="color: #28a745">✅ Supported</div><small>Complete data model customization</small> |
-| Search index customizations | <div style="color: #dc3545">❌ Not supported</div><small>Requires third-party solutions</small> | <div style="color: #28a745">✅ Supported</div><small>Native search customization</small> |
-| Custom email types | <div style="color: #dc3545">❌ Not supported</div><small>Standard email templates only</small> | <div style="color: #28a745">✅ Supported</div><small>Full email customization</small> |
-| Custom data storage | <div style="color: #ffc107">⚠️ Limited</div><small>state-lib, file only, App Builder storage<sup>3</sup></small> | <div style="color: #28a745">✅ Supported</div><small>DB, file, cache, queue</small> |
-| **Technology Stack** | | |
-| Primary technologies | <div style="color: #6c757d"><small>CSS, CLI, HTML, JS, Node</small></div> | <div style="color: #6c757d"><small>CSS, CLI, HTML, JS, PHP, XML</small></div> |
-| Extensible web APIs | <div style="color: #ffc107">⚠️ Limited</div><small>API Mesh with custom resolvers<sup>4</sup></small> | <div style="color: #28a745">✅ Supported</div><small>Native REST/GraphQL extensibility</small> |
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>SaaS model</th>
+            <th>PaaS model</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3"><strong>Admin Customization</strong></td>
+        </tr>
+        <tr>
+            <td>Customizable Admin theme</td>
+            <td><div style="color: #dc3545">❌ Not supported</div>Admin UI theming not available</td>
+            <td><div style="color: #28a745">✅ Supported</div>Through extensible Admin theming framework</td>
+        </tr>
+        <tr>
+            <td>Extensible core Admin screens</td>
+            <td><div style="color: #ffc107">⚠️ Limited control</div>Preset filters, visibility controls</td>
+            <td><div style="color: #28a745">✅ Supported</div>Complete layout and functionality customization</td>
+        </tr>
+        <tr>
+            <td>Extensible new Admin screens</td>
+            <td><div style="color: #28a745">✅ Supported</div>External app injection (Admin UI SDK)</td>
+            <td><div style="color: #28a745">✅ Supported</div>Standard Admin UI integration</td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Execution & Functionality</strong></td>
+        </tr>
+        <tr>
+            <td>In-process execution customization</td>
+            <td><div style="color: #ffc107">⚠️ Out-of-process only</div>App Builder, microservices-based</td>
+            <td><div style="color: #28a745">✅ Supported</div>Native extensibility framework</td>
+        </tr>
+        <tr>
+            <td>B2B functionality</td>
+            <td><div style="color: #28a745">✅ Supported</div>Pre-installed with core B2B features<sup>1</sup></td>
+            <td><div style="color: #28a745">✅ Supported</div>Full B2B capabilities</td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Data & Storage</strong></td>
+        </tr>
+        <tr>
+            <td>Data model extensibility</td>
+            <td><div style="color: #ffc107">⚠️ Limited support</div>Custom attributes for core and B2B entities<sup>2</sup></td>
+            <td><div style="color: #28a745">✅ Supported</div>Complete data model customization</td>
+        </tr>
+        <tr>
+            <td>Search index customizations</td>
+            <td><div style="color: #dc3545">❌ Not supported</div>Requires third-party solutions</td>
+            <td><div style="color: #28a745">✅ Supported</div>Native search customization</td>
+        </tr>
+        <tr>
+            <td>Custom email types</td>
+            <td><div style="color: #dc3545">❌ Not supported</div>Standard email templates only</td>
+            <td><div style="color: #28a745">✅ Supported</div>Full email customization</td>
+        </tr>
+        <tr>
+            <td>Custom data storage</td>
+            <td><div style="color: #ffc107">⚠️ Limited</div>state-lib, file only, App Builder storage<sup>3</sup></td>
+            <td><div style="color: #28a745">✅ Supported</div>DB, file, cache, queue</td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Technology Stack</strong></td>
+        </tr>
+        <tr>
+            <td>Primary technologies</td>
+            <td><div style="color: #6c757d">CSS, CLI, HTML, JS, Node</div></td>
+            <td><div style="color: #6c757d">CSS, CLI, HTML, JS, PHP, XML</div></td>
+        </tr>
+        <tr>
+            <td>Extensible web APIs</td>
+            <td><div style="color: #ffc107">⚠️ Limited</div>API Mesh with custom resolvers<sup>4</sup></td>
+            <td><div style="color: #28a745">✅ Supported</div>Native REST/GraphQL extensibility</td>
+        </tr>
+    </tbody>
+</table>
 
 <sup>1</sup> Core [B2B features](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview), like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
 
