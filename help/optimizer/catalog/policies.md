@@ -41,7 +41,7 @@ Policies with a **Value source** of **STATIC** are considered universal policies
 
 Policies with a **Value source** of **TRIGGER** are referred to as exclusive policies. This means that the channel will execute that policy only when the trigger is specified in the header of the API call. On the storefront, this means information is displayed based on what the shopper selects. For example, in the following image, there are two drop-down menus: **Brand** and **Model**.
 
-![Trigger value source on storefront](./assets/policy-trigger.png)
+![Trigger value source on storefront](../assets/policy-trigger.png)
 
 **Brand** and **Model** are defined triggers:
 

@@ -47,7 +47,7 @@ When you first launch [!DNL Adobe Commerce Optimizer], you see the following:
 >
 >This image is an example of what [!DNL Adobe Commerce Optimizer] might look like and is subject to change.
 
-![[!DNL Adobe Commerce Optimizer] UI](../assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -92,4 +92,4 @@ Key capabilities include:
 
 The following diagram describes the basic architecture of [!DNL Adobe Commerce Optimizer], from catalog data ingestion to the relationship between merchandising services, your storefront, and the integration with a third-party cart and checkout process.
 
-![[!DNL Adobe Commerce Optimizer] Architecture](../assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture](./assets/architecture.png)

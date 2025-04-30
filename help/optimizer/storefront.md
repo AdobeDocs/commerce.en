@@ -103,11 +103,11 @@ Create a code repository in GitHub using the Edge Delivery Services + Adobe Comm
 
 1. Select **Use this template**, and then select **Create a new repository** from the drop-down menu.
 
-   ![[!DNL Create github repo from storefront boilerplate template]](../assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
+   ![[!DNL Create github repo from storefront boilerplate template]](./assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
 
    This opens the repository configuration page.
 
-   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](../assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
+   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
 
 1. Complete the configuration form with the following details:
 
@@ -346,11 +346,11 @@ To add content to your storefront, you have to preview and publish your content 
 
 1. Turn on Sidekick by clicking the Sidekick icon in the browser toolbar.
 
-   ![[!DNL Turn on Sidekick from browser toolbar]](../assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
+   ![[!DNL Turn on Sidekick from browser toolbar]](./assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
 
 1. Use the Sidekick toolbar to preview and publish your content.
 
-   ![[Select files to preview and publish]](../assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
+   ![[Select files to preview and publish]](./assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
 
 1. Select files in each folder separately, and use the Sidekick toolbar to preview and publish all files.
 
@@ -374,7 +374,7 @@ Preview your site to verify that both the sample content and the Adobe Commerce 
 
    Replace `{ORG}` and `{SITE}` with the organization and name for your boilerplate repository.
 
-   ![[!DNL ACO storefront site with boilerplate]](../assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
+   ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
    If the page returns a 404, make sure that you have published the content using the Sidekick extension. Also, double-check that your updated `fstab.yaml` file yis using the URL for your content folder.
 
@@ -382,13 +382,13 @@ Preview your site to verify that both the sample content and the Adobe Commerce 
 
    1. Search for `tires` to see a drop-down list of available tire products.
 
-     ![[!DNL Discover Adobe Commerce Optimizer products]](../assets/storefront-site-with-aco-data.png){width="700" zoomable="yes"}
+     ![[!DNL Discover Adobe Commerce Optimizer products]](./assets/storefront-site-with-aco-data.png){width="700" zoomable="yes"}
 
     The search component is part of the storefront boilerplate code. The search results data is populated based on the storefront configuration.
 
    1. Press **Enter** to view the product list page.
 
-      ![[!DNL View product details page]](../assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
+      ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
    1. View a product details page by selecting any tire product on the page.
 
@@ -429,7 +429,7 @@ https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql
 
    The first page of your boilerplate storefront should be visible in your browser at `http://localhost:3000`.
 
-  ![[!DNL Configure github repo to pull all branches from boilerplate repo]](../assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
+  ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
 
 
 #### Update the storefront configuration
@@ -465,13 +465,13 @@ Update the storefront configuration file and preview the changes in your local d
 
    1. In the storefront header, click the magnifying glass to search for `tires`.
 
-      ![Search for tires](../assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
+      ![Search for tires](./assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
 
       Notice that the drop-down list does not populate.
 
    1. Press **Enter** to display the Product list page.
 
-      ![Empty search results with invalid header values](../assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
+      ![Empty search results with invalid header values](./assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
       The search doesn't return any results because the headers in your storefront configuration file use headers values based on the demo instance. Now that the configuration points to the [!DNL Adobe Commerce Optimizer] instance provisioned for you, those values are invalid.
 
