@@ -85,7 +85,7 @@ In this section, you create a new policy. The policy can be either **STATIC** or
 
 1. To verify your new policy, go back to the list of policies by clicking the back arrow. ​You will see your new policy listed.
 
-### Create TRIGGER policy
+### Create a TRIGGER policy
 
 1. On the left menu, open the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Policies]**.
 
