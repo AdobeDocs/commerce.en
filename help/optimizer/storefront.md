@@ -477,7 +477,7 @@ Update the storefront configuration file and preview the changes in your local d
 
 ### Next steps
 
-See the [Storefront and Catalog Administrator end-to-end use case](https://experienceleague-review.corp.adobe.com/docs/commerce/optimizer/use-case/merchandiser-use-case.html) to learn how to display content in your storefront by updating the storefront configuration using values from your [!DNL Adobe Commerce Optimizer] instance.
+See the [Storefront and Catalog Administrator end-to-end use case](./admin-use-case.md) to learn how to display content in your storefront by updating the storefront configuration using values from your [!DNL Adobe Commerce Optimizer] instance.
 
 >[!MORELIKETHIS]
 >

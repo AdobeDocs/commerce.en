@@ -56,12 +56,12 @@ These dealers belong to two different parent dealership companies:
 - West Coast Inc. (Arkbridge)
 - East Coast Inc. (Kingsbluff, Celport)
 
-Each company has two pricebooks that are used to sell products at a specific price for different shoppers (base, VIP).
+Each company has two price books that are used to sell products at a specific price for different shoppers (base, VIP).
 
 - `west_coast_inc` and `vip_west_coast_inc`
 - `east_coast_inc` and `vip_east_coast_inc`
 
-As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this data to an Edge Delivery Services storefront.
+As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale price books (30k+ price books), and deliver all of this data to an Edge Delivery Services storefront.
 
 Now that you have an overview of the business use case, here is your objective as you work through this tutorial:
 
@@ -284,10 +284,8 @@ When you save the changes, you update the catalog configuration to use the Carve
         ```
 
     The browser opens to the local development preview at `http://localhost:3000`.
-    
-    ![Storefront preview in local development environment](assets/storefront-preview-local-development.png){width="675" zoomable="yes"}
 
-     If the command fails or the browser does not open, review the [instructions for local development](storefront.md) in the Storefront setup topic.
+    If the command fails or the browser does not open, review the [instructions for local development](storefront.md) in the Storefront setup topic.
 
     1. In the browser, search for `brakes`, and press **Enter**. 
     
