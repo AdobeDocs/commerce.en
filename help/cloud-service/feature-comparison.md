@@ -8,9 +8,9 @@ role: Architect, Developer
 
 Adobe Commerce offers three deployment models:
 
-- Adobe Commerce as a Cloud Service (SaaS)
-- Adobe Commerce on Cloud (PaaS)
-- Adobe Commerce on-premises
+- [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (on-premises)
 
 This comparison focuses on the differences between software as a service (SaaS) and platform as a service (PaaS) models, which provide different levels of customization, extensibility, and control over your commerce implementation. The on-premises model shares similar capabilities with the PaaS model, so this comparison also applies when considering SaaS versus on-premises implementations.
 
@@ -22,25 +22,25 @@ The following table compares platform capabilities and extensibility features to
 
 | Feature | SaaS model | PaaS model |
 |---------|------------|------------|
-| Customizable Admin theme | Not supported (Admin UI theming not available) | Supported (via extensible admin theming framework) |
-| Extensible core Admin screens | Limited control / extension points (for example, preset filters, visibility controls) | Full control over layout and functionality |
-| Extensible new Admin screens | Supported via external app injection (Admin UI SDK) | Supported via standard admin UI |
+| Customizable Admin theme | Not supported (Admin UI theming not available) | Supported (through extensible Admin theming framework) |
+| Extensible core Admin screens | Limited control/extension points (for example, preset filters, visibility controls) | Full control over layout and functionality |
+| Extensible new Admin screens | Supported by external app injection (Admin UI SDK) | Supported by standard Admin UI |
 | In-process execution customization | Out-of-process only (App Builder, microservices-based) | Supported (native extensibility framework) |
 | B2B functionality | Supported (pre-installed with core B2B features)<sup>1</sup> | Supported |
-| Data model extensibility | Supported via custom attributes for core and B2B entities<sup>2</sup> | Full control of data model |
+| Data model extensibility | Supported by custom attributes for core and B2B entities<sup>2</sup> | Full control of data model |
 | Search index customizations | Not supported (requires 3rd party) | Supported |
-| Custom (new use case) email types | Not supported | Supported |
+| Custom email types | Not supported | Supported |
 | Custom data storage | Limited (state-lib, file only, App Builder storage limitations)<sup>3</sup> | Supported (DB, file, cache, queue) |
 | Primary technologies | CSS, CLI, HTML, JS, Node | CSS, CLI, HTML, JS, PHP, XML |
 | Extensible web APIs | Limited (API Mesh with custom resolvers can extend functionality)<sup>4</sup> | Supported (native REST/GraphQL extensibility) |
 
-<sup>1</sup> Core B2B features, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
+<sup>1</sup> Core [B2B features](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview), like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
 
-<sup>2</sup> Data model extensibility in SaaS supports extending core entities beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
+<sup>2</sup> Data model extensibility in SaaS supports [extending core entities](https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/) beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
 
 <sup>3</sup> For the SaaS model's App Builder storage limitations, Adobe is actively working on solutions including Document DB integration to address persistent storage needs. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
 
-<sup>4</sup> While direct extension of REST and GraphQL APIs is limited in SaaS, API Mesh allows you to modify schemas and add custom resolvers to augment the standard APIs.
+<sup>4</sup> While direct extension of [REST](https://developer.adobe.com/commerce/services/reference/cloud/rest/) and [GraphQL](https://developer.adobe.com/commerce/services/reference/cloud/graphql/) APIs is limited in SaaS, [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/) allows you to modify schemas and add custom resolvers to augment the standard APIs.
 
 >[!NOTE]
 >
