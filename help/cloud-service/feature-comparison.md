@@ -23,14 +23,6 @@ The following table compares platform capabilities and extensibility features to
 <table>
     <thead>
         <tr>
-            <th colspan="3">
-                <div style="text-align: center; margin-bottom: 1em;">
-                    <strong>Status Legend:</strong><br>
-                    ✅ Supported &nbsp;&nbsp; ❌ Not Supported &nbsp;&nbsp; ⚠️ Limited Support
-                </div>
-            </th>
-        </tr>
-        <tr>
             <th>Feature</th>
             <th>SaaS model</th>
             <th>PaaS model</th>
@@ -38,16 +30,16 @@ The following table compares platform capabilities and extensibility features to
     </thead>
     <tbody>
         <tr>
-            <td colspan="3"><strong>Commerce Admin customization</strong></td>
+            <td colspan="3" style="background:lightgray;"><strong>Commerce Admin customization</strong></td>
         </tr>
         <tr>
             <td>Customizable Admin theme</td>
-            <td>❌ No theming framework</td>
+            <td>⚠️ No theming framework</td>
             <td>✅ Extensible theming framework</td>
         </tr>
         <tr>
             <td>Extensible core Admin screens</td>
-            <td>⚠️ Preset filters, visibility controls</td>
+            <td>✅ Preset filters, visibility controls</td>
             <td>✅ Complete layout and functionality customization</td>
         </tr>
         <tr>
@@ -56,11 +48,11 @@ The following table compares platform capabilities and extensibility features to
             <td>✅ Standard Admin UI integration</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Execution & functionality</strong></td>
+            <td colspan="3" style="background:lightgray;"><strong>Execution & functionality</strong></td>
         </tr>
         <tr>
             <td>In-process execution customization</td>
-            <td>⚠️ App Builder, microservices-based</td>
+            <td>✅ App Builder, microservices-based</td>
             <td>✅ Native extensibility framework</td>
         </tr>
         <tr>
@@ -69,30 +61,30 @@ The following table compares platform capabilities and extensibility features to
             <td>✅ Full B2B capabilities availble after installation</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Data & storage</strong></td>
+            <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
         </tr>
         <tr>
             <td>Data model extensibility</td>
-            <td>⚠️ Custom attributes for core and B2B entities<sup>2</sup></td>
+            <td>✅ Custom attributes for core and B2B entities<sup>2</sup></td>
             <td>✅ Complete data model customization</td>
         </tr>
         <tr>
             <td>Search index customizations</td>
-            <td>❌ Requires third-party solutions</td>
+            <td>⚠️ Requires third-party solutions</td>
             <td>✅ Native search customization</td>
         </tr>
         <tr>
             <td>Custom email types</td>
-            <td>❌ Standard email templates only</td>
+            <td>⚠️ Standard email templates only</td>
             <td>✅ Full email customization</td>
         </tr>
         <tr>
             <td>Custom data storage</td>
-            <td>⚠️ state-lib, file only, App Builder storage<sup>3</sup></td>
+            <td>✅ state-lib, file only, App Builder storage<sup>3</sup></td>
             <td>✅ DB, file, cache, queue</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Technology stack</strong></td>
+            <td colspan="3" style="background:lightgray;"><strong>Technology stack</strong></td>
         </tr>
         <tr>
             <td>Primary technologies</td>
@@ -101,7 +93,7 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Extensible web APIs</td>
-            <td>⚠️ API Mesh with custom resolvers<sup>4</sup></td>
+            <td>✅ API Mesh with custom resolvers<sup>4</sup></td>
             <td>✅ Native REST/GraphQL extensibility</td>
         </tr>
     </tbody>
