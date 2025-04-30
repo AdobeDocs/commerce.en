@@ -28,5 +28,5 @@ recommendations: noDisplay
 - [Storefront](storefront.md)
 - Use Case {#use-case}
    - [Overview](use-case-overview.md)
-   - [Merchandiser end-to-end use case](merchandiser-use-case.md)
+   - [Storefront and Catalog Administrator End-to-End Use Case](admin-use-case.md)
    

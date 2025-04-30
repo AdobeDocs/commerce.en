@@ -1,6 +1,6 @@
 ---
 title: Carvelo Use Case
-description: "Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog and create a channel and policy."
+description: "Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog using channels and policies and how to set up your storefront based on your catalog configuration."
 hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
@@ -60,7 +60,6 @@ Each company has two pricebooks that are used to sell products at a specific pri
 
 - `west_coast_inc` and `vip_west_coast_inc`
 - `east_coast_inc` and `vip_east_coast_inc`
-
 
 As you can see, this is a very complex business use case. With [!DNL Adobe Commerce Optimizer], a merchant can support a complex business structure using a single base catalog to syndicate data without catalog duplication, scale pricebooks (30k+ pricebooks), and deliver all of this data to an Edge Delivery Services storefront.
 

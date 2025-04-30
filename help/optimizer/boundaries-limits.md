@@ -45,4 +45,8 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 ## Product discovery and recommendations
 
 - For product discovery, attribute based merchandising and price settings are not supported.
-- For recommendations, only one recommendation type is supported; no category/attribute inclusions or exclusions; no recommendations preview in [!DNL Adobe Commerce Optimizer].
+- For recommendations:
+
+    - ACO supports the _Recently Viewed_ recommendation type for EA
+    - There is no support for category or attribute inclusions or exclusions.
+    - You cannot preview recommendations in [!DNL Adobe Commerce Optimizer].
