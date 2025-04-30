@@ -8,22 +8,22 @@ role: Architect, Developer
 
 Adobe Commerce offers three deployment models:
 
-- Software-as-a-Service (SaaS)
-- Platform-as-a-Service (PaaS)
-- On-premises
+- Adobe Commerce as a Cloud Service (SaaS)
+- Adobe Commerce on Cloud (PaaS)
+- Adobe Commerce on-premises
 
-This comparison focuses on the differences between SaaS and PaaS models, which provide different levels of customization, extensibility, and control over your commerce implementation. The on-premises model shares similar capabilities with the PaaS model, so this comparison also applies when considering SaaS versus on-premises implementations.
+This comparison focuses on the differences between software as a service (SaaS) and platform as a service (PaaS) models, which provide different levels of customization, extensibility, and control over your commerce implementation. The on-premises model shares similar capabilities with the PaaS model, so this comparison also applies when considering SaaS versus on-premises implementations.
 
 The following table compares platform capabilities and extensibility features to help you understand the differences and make an informed decision about which model best suits your business requirements before starting an implementation.
 
 >[!NOTE]
 >
->For information about feature replacements and new solutions for managing store operations available in the SaaS model, see [New feature solutions](#new-feature-solutions).
+>See [New feature solutions](#new-feature-solutions) to learn about replacement features and new solutions that help you manage store operations in the SaaS model.
 
 | Feature | SaaS model | PaaS model |
 |---------|------------|------------|
 | Customizable Admin theme | Not supported (Admin UI theming not available) | Supported (via extensible admin theming framework) |
-| Extensible core Admin screens | Limited control / extension points (e.g., preset filters, visibility controls) | Full control over layout and functionality |
+| Extensible core Admin screens | Limited control / extension points (for example, preset filters, visibility controls) | Full control over layout and functionality |
 | Extensible new Admin screens | Supported via external app injection (Admin UI SDK) | Supported via standard admin UI |
 | In-process execution customization | Out-of-process only (App Builder, microservices-based) | Supported (native extensibility framework) |
 | B2B functionality | Supported (pre-installed with core B2B features)<sup>1</sup> | Supported |
@@ -31,16 +31,16 @@ The following table compares platform capabilities and extensibility features to
 | Search index customizations | Not supported (requires 3rd party) | Supported |
 | Custom (new use case) email types | Not supported | Supported |
 | Custom data storage | Limited (state-lib, file only, App Builder storage limitations)<sup>3</sup> | Supported (DB, file, cache, queue) |
-| Primary technologies | CSS, HTML, JS, Node, CLI | PHP, XML, HTML, CSS, JS, CLI |
+| Primary technologies | CSS, CLI, HTML, JS, Node | CSS, CLI, HTML, JS, PHP, XML |
 | Extensible web APIs | Limited (API Mesh with custom resolvers can extend functionality)<sup>4</sup> | Supported (native REST/GraphQL extensibility) |
 
 <sup>1</sup> Core B2B features, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
 
-<sup>2</sup> Data model extensibility in SaaS supports extending core entities beyond just product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) may require additional architectural considerations.
+<sup>2</sup> Data model extensibility in SaaS supports extending core entities beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
 
 <sup>3</sup> For the SaaS model's App Builder storage limitations, Adobe is actively working on solutions including Document DB integration to address persistent storage needs. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
 
-<sup>4</sup> While direct extension of REST and GraphQL APIs is limited in SaaS, API Mesh can be used to modify schemas and add custom resolvers to augment the out-of-box APIs.
+<sup>4</sup> While direct extension of REST and GraphQL APIs is limited in SaaS, API Mesh allows you to modify schemas and add custom resolvers to augment the standard APIs.
 
 >[!NOTE]
 >
