@@ -44,7 +44,7 @@ The following table compares platform capabilities and extensibility features to
 
 >[!NOTE]
 >
->For future readiness when considering SaaS migration, it's recommended to:
+>When considering migration to SaaS, Adobe recommends that you:
 >
 >- Move suitable functionality to out-of-process implementations where possible.
 >- Reduce the surface area that would need transition.
