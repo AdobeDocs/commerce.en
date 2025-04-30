@@ -49,7 +49,7 @@ As an early access participant, you will receive an email with a secure link tha
 
 ## Available catalog data for early access participants
 
-As an early access participant, the [!DNL Adobe Commerce Optimizer] instance contains mock catalog data based on the [Carvelo use case](./merchandiser-use-case.md). The mock data, along with some pre-configured channels and policies, help you get familiar with the [!DNL Adobe Commerce Optimizer] UI.
+As an early access participant, the [!DNL Adobe Commerce Optimizer] instance contains mock catalog data based on the [Carvelo use case](./admin-use-case.md). The mock data, along with some pre-configured channels and policies, help you get familiar with the [!DNL Adobe Commerce Optimizer] UI.
 
 <!--Ingest catalog data
 
