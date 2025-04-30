@@ -49,11 +49,11 @@ As an early access participant, you will receive an email with a secure link tha
 
 ## Set up the storefront
 
-Now that you have an [!DNL Adobe Commerce Optimizer] instance, you are ready to proceed [setting up](storefront.md) your Commerce Storefront powered by Edge Delivery Services.
+Now that you have an [!DNL Adobe Commerce Optimizer] instance, you are ready to proceed [setting up](./storefront.md) your Commerce Storefront powered by Edge Delivery Services.
 
 ## Available catalog data for early access participants
 
-As an early access participant, the [!DNL Adobe Commerce Optimizer] instance contains mock catalog data based on the [Carvelo use case](./admin-use-case.md). The mock data, along with some pre-configured channels and policies, help you get familiar with the [!DNL Adobe Commerce Optimizer] UI.
+As an early access participant, the [!DNL Adobe Commerce Optimizer] instance contains mock catalog data based on the [Carvelo use case](./use-case/admin-use-case.md). The mock data, along with some pre-configured channels and policies, help you get familiar with the [!DNL Adobe Commerce Optimizer] UI.
 
 <!--Ingest catalog data
 

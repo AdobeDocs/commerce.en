@@ -18,7 +18,7 @@ In this section, you create a channel. Ensure that you have already [created a p
 
 1. On the left menu, open the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**.
 
-  ![Channels](assets/channels.png)
+  ![Channels](../assets/channels.png)
 
 1. Click **[!UICONTROL Add Channel]**. ​
 
@@ -34,6 +34,6 @@ In this section, you create a channel. Ensure that you have already [created a p
 
   The Channels page updates to display the new channel.​
 
-  ![Updated Channels Page](assets/updated-channels-list.png)
+  ![Updated Channels Page](../assets/updated-channels-list.png)
 
 After you complete these steps, the new channel is configured to display products and pricing based on the scopes and policies you selected.

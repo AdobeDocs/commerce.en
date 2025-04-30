@@ -37,9 +37,9 @@ A filter with the attribute `part_category`, an operator of `IN`, and values `br
 
 There are two types of value sources: **STATIC** and **TRIGGER**.
 
-Policies with a **Value source** of **STATIC** are considered universal policies. Universal policies define the experience of a website as a whole. This means the channel will always execute that policy. In other words, the execution of that policy is not based on any user interaction on the storefront.
+Policies with a **Value source** of **STATIC** are considered universal policies. Universal policies define the experience of a website as a whole. This means that the channel will always execute that policy. In other words, the execution of that policy is not based on any user interaction on the storefront.
 
-Policies with a **Value source** of **TRIGGER** are referred to as exclusive policies. This means the channel will execute that policy only when the trigger is specified in the header of the API call. On the storefront, this means information is displayed based on what the shopper selects. For example, in the following image, there are two drop-down menus: **Brand** and **Model**.
+Policies with a **Value source** of **TRIGGER** are referred to as exclusive policies. This means that the channel will execute that policy only when the trigger is specified in the header of the API call. On the storefront, this means information is displayed based on what the shopper selects. For example, in the following image, there are two drop-down menus: **Brand** and **Model**.
 
 ![Trigger value source on storefront](./assets/policy-trigger.png)
 
@@ -54,7 +54,7 @@ If the shopper clicks the **Brand** drop-down, the header of the API call contai
 
 In this section, you create a new policy. The policy can be either **STATIC** or **TRIGGER**.
 
-### Create STATIC policy
+### Create a STATIC policy
 
 1. On the left menu, open the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Policies]**.
 
@@ -81,7 +81,7 @@ In this section, you create a new policy. The policy can be either **STATIC** or
 
     The **Status** column shows a green icon and the word "Enabled".
 
-1. Click the **[!UICONTROL Save]** button to save the new policy.​ If the button is not active, ensure the policy name is added by clicking the pencil icon next to **New Policy**.
+1. Click the **[!UICONTROL Save]** button to save the new policy.​ If the button is not active, ensure that the policy name is added by clicking the pencil icon next to **New Policy**.
 
 1. To verify your new policy, go back to the list of policies by clicking the back arrow. ​You will see your new policy listed.
 
@@ -122,7 +122,7 @@ In this section, you create a new policy. The policy can be either **STATIC** or
 
     The **Status** column shows a green icon and the word "Enabled".
 
-1. Click the **[!UICONTROL Save]** button to save the new policy.​ If the button is not active, ensure the policy name is added by clicking the pencil icon next to **New Policy**.
+1. Click the **[!UICONTROL Save]** button to save the new policy.​ If the button is not active, ensure that the policy name is added by clicking the pencil icon next to **New Policy**.
 
 1. To verify your new policy, go back to the list of policies by clicking the back arrow. ​You will see your new policy listed.
 

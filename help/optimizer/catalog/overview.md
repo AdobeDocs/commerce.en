@@ -30,11 +30,11 @@ Merchandising Services powered by Channels and Policies is a highly scalable, fl
 
 The following diagram provides a high-level view of the Merchandising framework.
 
-![[!DNL Merchandising Services] Architecture](assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture](../assets/merchandising-svcs-architecture.png)
 
 At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the Merchandising Services framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new Merchandising Services product scopes (channels, policies, and locale).
 
-When all this data is ingested into the Merchandising framework, the result is a new unified base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, *Texas retail*, *Texas retail seasonal*, and so on. As you can see from the diagram, locales, policies, and price books can all be shared across channels.​
+When all this data is ingested into the Merchandising framework, the result is a new unified base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, *Texas retail*, *Texas retail seasonal*, and so on. As you can see that from the diagram, locales, policies, and price books can all be shared across channels.​
 
 Finally, the diagram shows how this distinct catalog data can be surfaced in various locations, such as an Edge Delivery Services storefront, a marketplace, an advertisement channel, a custom micro-storefront, and so on.
 
@@ -49,7 +49,7 @@ Product catalog management encompasses two distinct aspects: product data and pr
 - **Product data** - What product is being sold and at what price?
 - **Product context** - Who is selling to whom and where?
 
-![[!DNL Merchandising Services] aspects](assets/merchandising-svcs-parts.png)
+![[!DNL Merchandising Services] aspects](../assets/merchandising-svcs-parts.png)
 
 ### Product data
 
@@ -72,7 +72,7 @@ Product context management covers the following aspects:
 
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to channels and policies). These define the product context identifiers to which a SKU belongs:
 
-![[!DNL Merchandising Services] Product Context Identifiers](assets/merchandising-svcs-product-id.png)
+![[!DNL Merchandising Services] Product Context Identifiers](../assets/merchandising-svcs-product-id.png)
 
 In the above image, each SKU provides:
 
@@ -82,12 +82,12 @@ In the above image, each SKU provides:
     - Product attributes are used to map to the relevant channels and policies​
     - Example: As an automobile manufacturer, you can choose to create a channel and policy combination for product attributes: (1) Dealers (2) Car brands.​
 - Prices and assigned price books
-   - Each SKU can have multiple prices defined using multiple pricebooks.
+   - Each SKU can have multiple prices defined using multiple price books.
    - Example: You offer employees a reduced regular price on auto parts with an additional discount of 25%. You offer VIP customers a higher regular price with a discount of 10%. The product SKU price information ensures that the right price is displayed for each customer segment.
 
 The channel and policy definitions are created using dedicated APIs:
 
-![[!DNL Merchandising Services] Channel, Policy, and Scope Mapping](assets/merchandising-svcs-scope-map.png)
+![[!DNL Merchandising Services] Channel, Policy, and Scope Mapping](../assets/merchandising-svcs-scope-map.png)
 
 - **Scope** (locale) - Set at a SKU level during product data ingestion.​
 - **Channel** - Definition created using dedicated APIs. ​

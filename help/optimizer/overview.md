@@ -47,7 +47,7 @@ When you first launch [!DNL Adobe Commerce Optimizer], you see the following:
 >
 >This image is an example of what [!DNL Adobe Commerce Optimizer] might look like and is subject to change.
 
-![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](../assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ View valuable insights into the availability of product data for your storefront
 Key capabilities include:
 
 - **Third-party catalog ingestion** - Ingest catalog data from any third-party source (your existing Commerce catalog, PIM, ERP, and so on). Your catalog data is directly ingested into the merchandising services layer, which is a SaaS component called Merchandising Services powered by Channels and Policies (Channels and Policies).
-- **Merchandising Services powered by Channels and Policies** - This solution is the foundational piece of [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Channels and Policies is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. These merchandising services provide building blocks that merchants can use to create and manage catalogs at scale. Within [!DNL Adobe Commerce Optimizer], you can manage your catalog by creating channels and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using product discovery​, product recommendations​, and intelligent merchandising. Learn more about [Merchandising Services powered by Channels and Policies](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview).
+- **Merchandising Services powered by Channels and Policies** - This solution is the foundational piece of [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Channels and Policies is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. These merchandising services provide building blocks that merchants can use to create and manage catalogs at scale. Within [!DNL Adobe Commerce Optimizer], you can manage your catalog by creating channels and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using product discovery​, product recommendations​, and intelligent merchandising. Learn more about [Merchandising Services powered by Channels and Policies](./merchandising/overview.md).
 - **Before and After metrics (PDF)** - Provides real-time insights into the performance of your commerce initiatives. You can view before and after results of specific KPIs and evaluate the impact of changes and optimize for better results. Results are delivered in a PDF.
 - **Commerce storefront powered by Edge Delivery** - With Edge delivery, you can launch your site quickly using prebuilt storefront components with integrated commerce functionality — including product listing pages, product detail pages, cart, and checkout.
 - **Third-party cart and checkout** - Use API mesh and App builder to integrate with third-party cart and checkout systems.
@@ -92,4 +92,4 @@ Key capabilities include:
 
 The following diagram describes the basic architecture of [!DNL Adobe Commerce Optimizer], from catalog data ingestion to the relationship between merchandising services, your storefront, and the integration with a third-party cart and checkout process.
 
-![[!DNL Adobe Commerce Optimizer] Architecture](assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture](../assets/architecture.png)

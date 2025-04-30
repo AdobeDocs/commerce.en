@@ -17,11 +17,11 @@ Recommendations use artificial intelligence and machine-learning algorithms to p
 >
 >The following links direct you to the [!DNL Product Recommendations] documentation. While the functionality is the same, the screenshots will not match what you see in [!DNL Adobe Commerce Optimizer]. This will be updated for the general availability release.
 
-The main **Recommendations** page contains the [workspace](../product-recommendations/workspace.md). The Recommendations workspace displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
+The main **Recommendations** page contains the [workspace](../../product-recommendations/workspace.md). The Recommendations workspace displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
 
 From the workspace, you can:
 
-- [Create](../product-recommendations/create.md) a product recommendation.
-- [Edit](../product-recommendations/edit.md) an existing recommendation.
+- [Create](../../product-recommendations/create.md) a product recommendation.
+- [Edit](../../product-recommendations/edit.md) an existing recommendation.
 
 You display these product recommendations on your storefront using the recommendations storefront component.

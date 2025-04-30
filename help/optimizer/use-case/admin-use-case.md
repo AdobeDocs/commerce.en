@@ -15,7 +15,7 @@ The following use case demonstrates how you can use [!DNL Adobe Commerce Optimiz
 
 ## Prerequisite
 
-Before you go through this use case, make sure you have [set up your storefront](./storefront.md).
+Before you go through this use case, make sure you have [set up your storefront](../storefront.md).
 
 ## Let's get started
 
@@ -37,7 +37,7 @@ By the end of this article, you will:
 
 Carvelo Automobile is a fictitious automobile conglomerate with a complex operational setup.
 
-![Carvelo Automobile](assets/carvelo.png)
+![Carvelo Automobile](../assets/carvelo.png)
 
 In this diagram, you see that Carvelo sells automobile products of three brands. Each brand is a different child company:
 
@@ -84,15 +84,15 @@ After you onboard to the Early Access program, Adobe sends an email that provide
 
 When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
-![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](../assets/user-interface.png)
 
 >[!NOTE]
 >
->See the [overview](./overview.md) article to learn more about the different parts that make up the [!DNL Adobe Commerce Optimizer] UI.
+>See the [overview](../overview.md) article to learn more about the different parts that make up the [!DNL Adobe Commerce Optimizer] UI.
 
 In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**. Notice that the Arkbridge and Kingsbluff dealerships already have channels created:
 
-![Preconfigured Channels](assets/existing-channels-list.png)
+![Preconfigured Channels](../assets/existing-channels-list.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ In the next section, you will create a channel and policies for the Celport deal
 
 Carvelo's commerce manager needs to set up a new storefront for a dealer called *Celport* that belongs to the *East Coast Inc* company. Celport will sell brakes and suspensions for the Bolt and Cruz brands.
 
-![Celport Dealer](assets/celport-dealer.png)
+![Celport Dealer](../assets/celport-dealer.png)
 
 Using [!DNL Adobe Commerce Optimizer], the commerce manager will:
 
@@ -161,7 +161,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
     >
     >Make sure the attribute name that you specify exactly matches the SKU attribute name in the catalog.
 
-    To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](./policies.md#value-source-types).
+    To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](../catalog/policies.md#value-source-types).
 
 1. In the **[!UICONTROL Filter details]** dialog, click **[!UICONTROL Save]**.
 
@@ -183,11 +183,11 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
 1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Channels]**.
 
-    ![Channels](assets/channels.png)
+    ![Channels](../assets/channels.png)
 
     Notice the existing channels: *Arkbridge*, *Kingsbluff*, and *Global*.
 
-    ![Existing Channels Page](assets/existing-channels-list.png)
+    ![Existing Channels Page](../assets/existing-channels-list.png)
 
 1. Click **[!UICONTROL Add Channel]**.
 
@@ -201,7 +201,7 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
     The Channels page updates to display the new channel.
 
-    ![Updated Channels List](assets/updated-channels-list.png)
+    ![Updated Channels List](../assets/updated-channels-list.png)
 
     >[!NOTE]
     >
@@ -211,7 +211,7 @@ Create a new channel for the *Celport* dealer and link the following policies: *
 
     Click the information icon for the Celport channel on the **Channels** page.
 
-    ![Celport Channel ID](assets/celport-channel-id.png)
+    ![Celport Channel ID](../assets/celport-channel-id.png)
 
     Copy and save the channel ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog. 
 
@@ -285,19 +285,19 @@ When you save the changes, you update the catalog configuration to use the Carve
 
     The browser opens to the local development preview at `http://localhost:3000`.
 
-    If the command fails or the browser does not open, review the [instructions for local development](storefront.md) in the Storefront setup topic.
+    If the command fails or the browser does not open, review the [instructions for local development](../storefront.md) in the Storefront setup topic.
 
     1. In the browser, search for `brakes`, and press **Enter**. 
     
        The storefront updates to display the product list page showing the brake parts.
   
-    ![Brakes Product Listing Page](assets/brakes-listing-page.png)
+    ![Brakes Product Listing Page](../assets/brakes-listing-page.png)
 
     Click a brake part image to view the product details with price information and note the product price information.
 
 1. Now search for `tires`, which is another part category available in the use case data on your [!DNL Adobe Commerce Optimizer] instance.
 
-   ![Storefront Configuration with Incorrect Headers](assets/storefront-configuration-with-incorrect-headers.png)
+   ![Storefront Configuration with Incorrect Headers](../assets/storefront-configuration-with-incorrect-headers.png)
 
    Notice that no results are returned. This is because the Celport channel has been configured to sell only brake and suspension parts.
  
@@ -323,4 +323,4 @@ In this tutorial, you learned how [!DNL Adobe Commerce Optimizer] can help you o
 
 ## Where to go from here
 
-To learn how you can use Product Discovery and Recommendations to personalize the shopping experience for your customers, see the [merchandising overview](./merch-overview.md).
+To learn how you can use Product Discovery and Recommendations to personalize the shopping experience for your customers, see the [merchandising overview](../merchandising/overview.md).

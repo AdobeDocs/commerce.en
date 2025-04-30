@@ -26,8 +26,8 @@ The main **Product Discovery** page contains the following tabs:
 >
 >The following links direct you to the [!DNL Live Search] documentation. While the functionality is the same, the screenshots will not match what you see in [!DNL Adobe Commerce Optimizer]. This will be updated for the general availability release.
 
-- [Performance](../live-search/performance.md)
-- [Faceting](../live-search/facets.md)
-- [Synonyms](../live-search/synonyms.md)
-- [Search Merchandising](../live-search/rules.md)
-- [Settings](../live-search/settings.md)
+- [Performance](../../live-search/performance.md)
+- [Faceting](../../live-search/facets.md)
+- [Synonyms](../../live-search/synonyms.md)
+- [Search Merchandising](../../live-search/rules.md)
+- [Settings](../../live-search/settings.md)
