@@ -32,7 +32,7 @@ A filter is composed of the following parts:
 
 ### Example
 
-A filter with the attribute `part_category`, an operator of `IN`, and values `brakes, suspension` ensures that only products categorized as brakes and suspension are included in the policy.
+A filter with the attribute `part_category`, an operator of `IN`, and values `brakes, suspension` ensures that only products with an attribute `part_category` which has a value of `brake` or `suspension` will be filtered for display by the policy.
 
 ### Value source types
 

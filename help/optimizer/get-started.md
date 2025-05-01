@@ -46,6 +46,10 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
 |Storefront APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql`|Access the APIs needed to set up your Commerce storefront powered by Edge Delivery Services.|
 |Catalog data ingestion APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>`|Access the APIs needed to ingest your catalog data.|
 
+>[!NOTE]
+>
+>See the [developer documentation]((https://developer-stage.adobe.com/commerce/services/composable-catalog/) to learn more about the APIs needed for storefront setup and catalog ingestion.
+
 As an early access participant, you will receive an email with a secure link that, along with your IMS token, lets you log into [!DNL Adobe Commerce Optimizer] or make API calls.
 
 ## Set up the storefront

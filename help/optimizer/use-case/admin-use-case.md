@@ -73,7 +73,7 @@ Carvelo wants to sell parts across its three brands (Aurora, Bolt, and Cruz) thr
 Ultimately, Carvelo has two major goals:
 
 1. Maintain a "global" website, which has all SKUs across all three brands.
-1. Provide a path for dealerships to set up their own storefronts based on unique SKU visibility and prices for each SKU for each dealership.
+1. Provide a path for dealerships to set up their own storefronts based on unique SKU visibility and prices for each SKU for each dealership. All while using a single base catalog, which eliminates catalog duplication.
 
 >[!ENDSHADEBOX]
 
@@ -267,9 +267,11 @@ The final piece of this tutorial involves updating the storefront that [you alre
    +++
 
 1. Replace the `ac-channel-id` value with Celport channel ID that you copied previously.
-1. If needed, replace the `ac-environment-id` value with the tenant ID for your [!DNL Adobe Commerce Optimizer] instance. You can find the ID in the onboarding email for the Early Access program, or by contacting your Adobe account representative.
+1. Replace the `ac-environment-id` value with the tenant ID for your [!DNL Adobe Commerce Optimizer] instance. You can find the ID in the onboarding email for the Early Access program, or by contacting your Adobe account representative.
 
-   Make sure that the `commerce-endpoint` value matches the GraphQL endpoint for your  [!DNL Adobe Commerce Optimizer] instance.
+    >[!IMPORTANT]
+    >
+    >Make sure that the `commerce-endpoint` value matches the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance. This is provided in your welcome email.
 
 1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
 1. Save the file.
@@ -312,7 +314,7 @@ When you save the changes, you update the catalog configuration to use the Carve
    
        When you save the file, the local storefront preview updates automatically.
       
-    1. Preview the changes in the browser by using the the Search feature to find tire parts .
+    1. Preview the changes in the browser by using the the Search feature to find tire parts.
        
        Notice the different part types available and notice the prices assigned to the Kingsbluff channel.
        

@@ -26,3 +26,11 @@ From the workspace, you can:
 - [Edit](../../product-recommendations/edit.md) an existing recommendation.
 
 You display these product recommendations on your storefront using the recommendations storefront component.
+
+## Limitations
+
+The following lists the limitations for recommendations for early access.
+
+- [!DNL Adobe Commerce Optimizer] supports the _Recently Viewed_ recommendation type.
+- There is no support for category or attribute inclusions or exclusions.
+- You cannot preview recommendations in [!DNL Adobe Commerce Optimizer].
