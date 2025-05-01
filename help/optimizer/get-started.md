@@ -48,7 +48,7 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
 
 >[!NOTE]
 >
->See the [developer documentation]((https://developer-stage.adobe.com/commerce/services/composable-catalog/) to learn more about the APIs needed for storefront setup and catalog ingestion.
+>See the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/) to learn more about the APIs needed for storefront setup and catalog ingestion.
 
 As an early access participant, you will receive an email with a secure link that, along with your IMS token, lets you log into [!DNL Adobe Commerce Optimizer] or make API calls.
 
