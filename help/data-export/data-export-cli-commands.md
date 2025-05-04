@@ -81,7 +81,7 @@ If used with the `--dry-run` option, the operation performs a dry-run resync ope
 
 >[!IMPORTANT]
 >
->Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation leads to lost data and data sync issues where items that have to be deleted in Adobe Commerce will not be deleted from the SaaS data space.
+>Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation can cause issues with data loss or data corruption.
 
 **Example:**
 
@@ -118,7 +118,7 @@ Test specific feed items by adding the `--by-ids` option with the extended logs 
 **Example:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### Test all feed items
