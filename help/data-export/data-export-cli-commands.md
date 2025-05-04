@@ -10,7 +10,7 @@ The `saas:resync` command in the `magento/saas-export` package lets you manage d
 Adobe does not recommend using the `saas:resync` command regularly. Typical scenarios for using the command are:
 
 - Initial sync
-- Sync data to new data space after changing the [SaaS Data Space ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
+- Sync data to a new data space after changing the [SaaS Data Space ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Troubleshooting
 
 Monitor sync operations in the `var/log/saas-export.log` file.
@@ -62,7 +62,7 @@ See the following sections for option descriptions with examples.
 
 Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions` feeds.
 
-By default, entities are specified in a comma-separated list by product SKU. To use product IDs instead, add the `--id-type=ProductID` option.
+By default, when you use the `--by-ids` option you specify values using product SKU values. To use product IDs instead, add the `--id-type=ProductID` option.
 
 **Examples:**
 
@@ -75,7 +75,7 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Clean up the feed table the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions`.
+Clean up the the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions`.
 
 If used with the `--dry-run` option, the operation performs a dry-run resync operation for all items.
 
