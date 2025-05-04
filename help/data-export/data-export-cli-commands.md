@@ -81,7 +81,7 @@ If used with the `--dry-run` option, the operation performs a dry-run resync ope
 
 >[!IMPORTANT]
 >
->Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation can cause issues with data loss or data corruption.
+>Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation can cause data loss and data sync issues.
 
 **Example:**
 
