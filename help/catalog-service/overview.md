@@ -79,4 +79,6 @@ The Catalog Service ensures accurate price updates and calculations by supportin
 
 ## Implementation
 
+[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+
 The installation process requires configuration of the [Commerce Services Connector](../landing/saas.md). Once that is accomplished, the next step is for a systems integrator to update the storefront code to incorporate the [!DNL Catalog Service] queries. All [!DNL Catalog Service] queries are routed to the GraphQL gateway. The URL is provided during the onboarding process.
