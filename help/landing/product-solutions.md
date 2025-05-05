@@ -37,6 +37,10 @@ This badge identifies documentation for [Adobe Commerce as a Cloud Service](../c
 
 This badge identifies documentation related to [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) and on-premises projects only. Adobe Commerce on Cloud projects are hosted on a cloud‑native, fully managed platform-as-a-service (PaaS) solution with all Adobe Commerce's core features in a pre‑provisioned environment. On-premises projects are hosted on customer-managed infrastructure.
 
+>[!NOTE]
+>
+>Unless otherwise noted, this also includes self-hosted projects based on the Magento Open Source code base.
+
 ### Rules
 
 Use these rules to understand what content applies to each Adobe Commerce solution:
