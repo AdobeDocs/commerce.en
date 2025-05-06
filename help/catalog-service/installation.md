@@ -2,6 +2,7 @@
 title: Onboarding and Installation
 description: Learn how to install [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Onboarding and Installation
 

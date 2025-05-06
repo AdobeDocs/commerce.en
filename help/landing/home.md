@@ -97,7 +97,7 @@ Adobe provides a collection of Commerce services, integration services, and data
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong>
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
          </a>
       </div>
       <p>
