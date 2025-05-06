@@ -27,12 +27,12 @@ A filter is composed of the following parts:
 |---|---|---|
 |**Attribute**|The product attribute used for filtering.|`part_category`|
 |**Operator**|The condition applied to the attribute.|`IN`, `EQUALS`, `CONTAINS`|
-|**Value source**|Specifies whether the values are `STATIC` or `TRIGGER`.|`STATIC`|
+|**Value source**|Specifies whether the values are `STATIC` or `TRIGGER`.|`STATIC` [Learn more](#value-source-types)|
 |**Value**|The specific values that meet the condition.|`brakes, suspension`|
 
 ### Example
 
-A filter with the attribute `part_category`, an operator of `IN`, and values `brakes, suspension` ensures that only products categorized as brakes and suspension are included in the policy.
+A filter with the attribute `part_category`, an operator of `IN`, and values `brakes, suspension` ensures that only products with an attribute `part_category` which has a value of `brake` or `suspension` is filtered and displayed by the policy.
 
 ### Value source types
 
