@@ -4,8 +4,8 @@ description: Learn if [!DNL Payment Services] is available in your country, and 
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
+exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
 ---
-
 # Compatibility for [!DNL Payment Services]
 
 [!DNL Payment Services] is available for Adobe Commerce and Magento Open Source. [!DNL Payment Services] is now compatible with Adobe Commerce versions 2.4.x.
