@@ -74,10 +74,6 @@ This flow diagram shows the general process for onboarding [!DNL Payment Service
 
 ## Onboarding Part 1: Adobe Commerce or Magento Open Source | v2.4.7+ 
 
->[!BEGINTABS]
-
->[!TAB Step 1: Configure Services Connector]
-
 ### Step 1: Configure Services Connector
 
 To connect your instance, you'll need to: 
@@ -101,10 +97,6 @@ See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adob
 >[!NOTE]
 >
 > All merchants entitled for Payment Services can use one production data space and two testing data spaces.
-
-**Continue to Step 2**
-
->[!TAB Step 2: Set up Sandbox environment]
 
 ### Step 2: Set up Sandbox Environment
 
@@ -181,12 +173,11 @@ This feature is `off` by default. When you enable it, store administrators can s
 >
 >This setting does not apply to other checkout flows.
 
-**Continue to Step 3**
-
->[!TAB Step 3: Enable Payment Services]
-
 ### Step 3: Enable Payment Services
 
->[!TAB Step 4: Test Sandbox environment]
-
->[!ENDTABS]
+>[!MORELIKETHIS]
+>
+> * [Troubleshoot [!DNL Payment Services] installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [PayPal sandbox account not verified](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [Delayed [!DNL Payment Services] report data](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * [Test credit card fails with PayPal when processing payments in a Sandbox environment](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

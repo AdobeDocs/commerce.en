@@ -103,10 +103,3 @@ For more information on the currencies and payment methods available with PayPal
 * [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
 * [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/).
-
->[!MORELIKETHIS]
->
-> * [Troubleshoot [!DNL Payment Services] installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-> * [PayPal sandbox account not verified](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-> * [Delayed [!DNL Payment Services] report data](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-> * [Test credit card fails with PayPal when processing payments in a Sandbox environment](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
