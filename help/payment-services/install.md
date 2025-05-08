@@ -3,7 +3,7 @@ title: Install [!DNL Payment Services]
 description: Install the Payments Services extension.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
-feature: Payments, Checkout, Install, Upgrade, PaaS
+feature: Payments, Checkout, Install, Upgrade, Paas
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Install [!DNL Payment Services]

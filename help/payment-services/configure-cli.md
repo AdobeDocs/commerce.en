@@ -4,7 +4,8 @@ description: After installation, you can configure [!DNL Payment Services] using
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-feature: Payments, Checkout, Configuration, Integration
+feature: Payments, Checkout, Configuration, Integration, Paas
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Command-line Configuration
 

@@ -1,7 +1,7 @@
 ---
 title: Checkout in [!DNL Payment Services]
 description: Customize [!DNL Payment Services] checkout to fit your customer's needs.
-feature: Payments, Checkout
+feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
 ---
 

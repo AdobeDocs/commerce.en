@@ -1,7 +1,7 @@
 ---
 title: Line items for [!DNL Payment Services]
 description: Learn about line items for [!DNL Payment Services] and how to view line items in the merchant dashboard.
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
 ---
