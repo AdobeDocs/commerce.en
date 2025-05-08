@@ -3,6 +3,7 @@ title: '[!DNL Page Builder] Integration'
 description: Learn how to use [!DNL Product Recommendations] units in Page Builder.
 feature: Services, Recommendations, Page Builder
 exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # [!DNL Page Builder] Integration
 

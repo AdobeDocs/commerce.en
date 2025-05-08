@@ -23,10 +23,7 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 
 ## Prices
 
-- The maximum number of price books is 30,000. The base tier number of price books cannot exceed 100 and should follow the rule where (the number of price books) x (the number of channels) must be less than or equal to 100.
-- The guaranteed price feed ingestion rate is 5000 records per minute. 
-- A single price record cannot have more than 10 discounts.
-- The base number of price updates per day is 5,000,000.
+- The maximum number of price books is 1,000.
 
 ## Search and storefront
 
@@ -48,6 +45,6 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 - For product discovery, attribute based merchandising and price settings are not supported.
 - For recommendations:
 
-    - ACO supports the _Recently Viewed_ recommendation type for EA
+    - [!DNL Adobe Commerce Optimizer] supports the _Recently Viewed_ recommendation type for early access.
     - There is no support for category or attribute inclusions or exclusions.
     - You cannot preview recommendations in [!DNL Adobe Commerce Optimizer].

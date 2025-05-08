@@ -32,3 +32,7 @@ The main **Product Discovery** page contains the following tabs:
 - [Synonyms](../../live-search/synonyms.md)
 - [Search Merchandising](../../live-search/rules.md)
 - [Settings](../../live-search/settings.md)
+
+## Limitation
+
+For product discovery, attribute-based merchandising and price settings are not supported.
