@@ -4,8 +4,8 @@ description: Learn how to install and use [!DNL Payment Services] as a turnkey, 
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
+exl-id: 191467ab-4c5e-4df1-b423-7a470a4910ea
 ---
-
 # Introduction to [!DNL Payment Services]
 
 [!DNL Payment Services] for Adobe Commerce and Magento Open Source is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
