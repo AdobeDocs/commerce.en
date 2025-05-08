@@ -22,6 +22,18 @@ Updates include:
 
 ## Current major version
 
+## 103.4.3 Release
+
+![Fix](../assets/fix.svg) Resolved an issue where products were skipped during the data export process due to missing EAV attributes. <!--MDEE-970-->
+
+## 103.4.2 Release
+
+![Fix](../assets/fix.svg) Added the ability to collect entity payloads in the `saas-export.log` when running the test resynchronization using the `saas:resync --dry-run` command with the  `EXPORTER_EXTENDED_LOG=1` environment variable. <!--MDEE-1023-->
+
+## 103.4.1 Release
+
+![Fix](../assets/fix.svg) Added a prefix to QueryXml cache keys to prevent naming conflicts with other modules. <!--MDEE-1019-->
+
 ## 103.4.0 Release
 
 ![Fix](../assets/fix.svg) The product overrides feed no longer sends permissions if the product is not assigned to a category.<!--MDEE-449-->

@@ -1,10 +1,15 @@
 ---
-title: "[!DNL Merchandising Services] overview"
-description: Learn how the [!DNL Merchandising Services] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy
+title: Catalog Overview
+description: Learn how to define your channels and policies.
+hide: yes
 recommendations: noCatalog
-exl-id: afa7c148-10fb-4161-8bcc-13084f85c42c
+exl-id: bca7d8a4-ea99-4185-abd2-c602fab8ea69
 ---
-# [!DNL Merchandising Services] overview
+# Catalog Overview
+
+>[!NOTE]
+>
+>This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
 A product catalog is essential for online shopping experiences, enabling customers to browse, search, and make purchases. For operational efficiency, a product catalog should closely mirror the company's business structure. Businesses often need to sell products at varying prices based on geographic market, distribution channel, customer segment, and other variables. To accommodate this, an ecommerce platform must offer a flexible catalog data model that allows companies to produce variations of their catalog tailored to these scenarios. Adobe addresses these needs by offering Merchandising Services powered by Channels and Policies. Merchandising Services provides building blocks that merchants can use to create and manage catalogs at scale. This enables businesses to configure catalogs that align with their business structure and go-to-market strategies.
 
@@ -26,11 +31,11 @@ Merchandising Services powered by Channels and Policies is a highly scalable, fl
 
 The following diagram provides a high-level view of the Merchandising framework.
 
-![[!DNL Merchandising Services] Architecture](assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture](../assets/merchandising-svcs-architecture.png)
 
 At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the Merchandising Services framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new Merchandising Services product scopes (channels, policies, and locale).
 
-When all this data is ingested into the Merchandising framework, the result is a new unified base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, *Texas retail*, *Texas retail seasonal*, and so on. As you can see from the diagram, locales, policies, and price books can all be shared across channels.​
+When all this data is ingested into the Merchandising framework, the result is a new unified base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, *Texas retail*, *Texas retail seasonal*, and so on. As you can see that from the diagram, locales, policies, and price books can all be shared across channels.​
 
 Finally, the diagram shows how this distinct catalog data can be surfaced in various locations, such as an Edge Delivery Services storefront, a marketplace, an advertisement channel, a custom micro-storefront, and so on.
 
@@ -45,7 +50,7 @@ Product catalog management encompasses two distinct aspects: product data and pr
 - **Product data** - What product is being sold and at what price?
 - **Product context** - Who is selling to whom and where?
 
-![[!DNL Merchandising Services] aspects](assets/merchandising-svcs-parts.png)
+![[!DNL Merchandising Services] aspects](../assets/merchandising-svcs-parts.png)
 
 ### Product data
 
@@ -68,7 +73,7 @@ Product context management covers the following aspects:
 
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to channels and policies). These define the product context identifiers to which a SKU belongs:
 
-![[!DNL Merchandising Services] Product Context Identifiers](assets/merchandising-svcs-product-id.png)
+![[!DNL Merchandising Services] Product Context Identifiers](../assets/merchandising-svcs-product-id.png)
 
 In the above image, each SKU provides:
 
@@ -78,12 +83,12 @@ In the above image, each SKU provides:
     - Product attributes are used to map to the relevant channels and policies​
     - Example: As an automobile manufacturer, you can choose to create a channel and policy combination for product attributes: (1) Dealers (2) Car brands.​
 - Prices and assigned price books
-   - Each SKU can have multiple prices defined using multiple pricebooks.
+   - Each SKU can have multiple prices defined using multiple price books.
    - Example: You offer employees a reduced regular price on auto parts with an additional discount of 25%. You offer VIP customers a higher regular price with a discount of 10%. The product SKU price information ensures that the right price is displayed for each customer segment.
 
 The channel and policy definitions are created using dedicated APIs:
 
-![[!DNL Merchandising Services] Channel, Policy, and Scope Mapping](assets/merchandising-svcs-scope-map.png)
+![[!DNL Merchandising Services] Channel, Policy, and Scope Mapping](../assets/merchandising-svcs-scope-map.png)
 
 - **Scope** (locale) - Set at a SKU level during product data ingestion.​
 - **Channel** - Definition created using dedicated APIs. ​
@@ -110,8 +115,8 @@ The following table highlights common challenges merchants encounter and how Mer
 |Automobile/Manufacturing parts conglomerate|<ul><li>Sells auto or machine parts. The products are the same for all customers.</li><li>Different dealers sell parts to customers</li><li>Each dealer has its own prices, stock and shipping methods</li></ul>|To have different shipping integrations, each dealer should have a separate website. But separate websites force the typical catalog data model to duplicate the data. So, if there are 3000 dealers in USA, a merchant creates 3000 catalog copies even though the same catalog is used by all dealers. This data duplication interferes with performance limits. Merchandising Services eliminates data duplication.|
 |Packaging/logistics company|<ul><li>They have several shipping locations</li><li>They have a different price for each customer</li><li>The same product available in 2 locations for 2 customers have 4 possible prices</li></ul>|Despite the use of customer groups to cover pricing per customer, the typical catalog data model does not have the capability to manage price per location. Additionally, merchants want unique visibility rules per location/website. Management of such complex price and visibility rules can be unlocked at scale with Merchandising Services. |
 
-### Where to go from here
+<!--### Where to go from here
 
 - Ingest data into Merchandising Services using the [data ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/).
 - Manage your catalog and define the channels, policies, and scopes using the [catalog management API](https://developer-stage.adobe.com/commerce/services/composable-catalog/admin/using-the-api/)
-- [Complete a tutorial](https://developer-stage.adobe.com/commerce/services/composable-catalog/merchandising-services-use-case/) that shows how a company with a single base catalog can use the Merchandising Services APIs to add product data, define catalogs using projections, and retrieve the catalog data for display in a headless storefront.
+- [Complete a tutorial](https://developer-stage.adobe.com/commerce/services/composable-catalog/merchandising-services-use-case/) that shows how a company with a single base catalog can use the Merchandising Services APIs to add product data, define catalogs using projections, and retrieve the catalog data for display in a headless storefront.-->

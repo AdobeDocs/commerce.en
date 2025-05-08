@@ -34,6 +34,10 @@ This diagram provides a high-level overview of how developers create integration
 
 ## Create an instance
 
+>[!NOTE]
+>
+>Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce as a Cloud Service] product. See [Add users and admins](./user-management.md#add-users-and-admins) for more information.
+
 [!DNL Adobe Commerce as a Cloud Service] instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
 
 1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
