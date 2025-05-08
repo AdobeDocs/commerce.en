@@ -18,7 +18,7 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 | ---|--- |
 |[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
 |[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
-|[[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce and Magento Open Source|
+|[[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce and Magento Open Source|
 |[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro)|Adobe Commerce|
 |[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
 |[[!DNL Data Connection]](/help/data-connection/overview.md)|Adobe Commerce|
@@ -88,7 +88,9 @@ All Adobe Commerce merchants can access one production data space and two testin
 You can use the testing data spaces in any non-production environment as long as you don't use the same data space in multiple environments at the same time. To use the test data space in a different environment, perform a data cleanup before you select and configure the data space in that environment.
 
 For Adobe Commerce Cloud Pro projects with multiple staging environments, you can request additional testing data spaces for each staging environment by [submitting a Support request](https://experienceleague.adobe.com/home?support-tab=home#support). However, if you only have one staging environment and require additional testing data spaces, you have the following options:
+
 - Contact the Customer Success team or your appointed Customer Success Manager to request an additional Staging environment.
+
 - [Submit a Support request](https://experienceleague.adobe.com/home?support-tab=home#support) to request the additional testing data space and indicate the business justification for the extra dataspace. This request is subject to approval.
 
 Magento Open Source customers using Adobe Payment Services may also request an additional data space. Contact the Payments team for prior approval of the additional data spaces before submitting a [Support request](https://experienceleague.adobe.com/home?support-tab=home#support) to request the testing data space.

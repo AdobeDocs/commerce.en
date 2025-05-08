@@ -3,12 +3,12 @@ title: Order Payment Status Report
 description: Use the Order payment status report for gain visibility to the payment status of your orders and identify any potential issues.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Orders
-exl-id: 1ba31050-cf99-424e-98ef-0e3f1f2781a0
+exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
+feature: Payments, Checkout, Orders, Paas, Saas
 ---
 # Order Payment Status Report
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](transactions.md), orders, and payments.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](reporting.md), orders, and payments.
 
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 

@@ -3,8 +3,8 @@ title: Payment Services Settings
 description: After installation, you can configure [!DNL Payment Services] in the Home.
 role: Admin, User
 level: Intermediate
-feature: Payments, Checkout, Configuration
-exl-id: 793bc59d-1581-4c78-bafe-a43b9e5fb1bc
+exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
+feature: Payments, Checkout, Configuration, Paas, Saas
 ---
 # Settings
 
@@ -34,7 +34,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. If you are still testing [!DNL Payment Services] for your store, set **Payment mode** to `Sandbox`. If you are ready to enable live payments, set it to `Production`.
 
-1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
+1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
 
     >[!WARNING]
     >

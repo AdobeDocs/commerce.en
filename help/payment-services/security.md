@@ -1,9 +1,9 @@
 ---
 title: Security and Compliance
 description: Review security and compliance requirements for your site.
+exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce/payment-services/security.html
-exl-id: 95dfcebc-3e22-4255-aecf-b8eb6579421f
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
 ---
 # Security and Compliance
 

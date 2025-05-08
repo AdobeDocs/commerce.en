@@ -1,8 +1,8 @@
 ---
 title: Test and Validate
 description: Testing and validation help ensure that [!DNL Payment Services] functions work as expected and provide the best payment options for your customers
-feature: Payments, Checkout
-exl-id: ca751bef-c8bd-4f27-a13a-71987b5c96ba
+exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
+feature: Payments, Checkout, Paas, Saas
 ---
 # Test and Validate
 
