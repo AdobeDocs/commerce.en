@@ -36,10 +36,19 @@ The demand is high for a quality Commerce experience, and an integrated payments
 
 1. **Customized checkout flows**---Offer checkout options at various stages of the commerce journey to reduce friction during the purchase process and increase conversion rates.
 
-1. **[Headless compatibility with GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/){target=_blank}**---Merchants have alternatives to REST and SOAP web APIs for frontend development.
+1. **[Headless compatibility with GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)**---Merchants have alternatives to REST and SOAP web APIs for frontend development.
 
 1. **Financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, [payouts](payouts.md), and detailed [transaction-level reporting](reporting.md) for financial reconciliation and the utmost in transaction visibility.
 
 >[!NOTE]
 >
 > Some of the features mentioned here may not yet be available in your market. See [Compatibility](compatibility.md) for more information.
+
+>[!BEGINSHADEBOX]
+
+### Featured topics
+
+**[Pre-requisites for Payment Services](compatibility.md)**
+**[How do I determine which Payment Services experience is right for my business?](compatibility.md#which-payment-services-option-is-right-for-you)**
+
+>[!ENDSHADEBOX]

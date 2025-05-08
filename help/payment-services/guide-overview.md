@@ -28,10 +28,6 @@ This guide covers:
 
 ![check](assets/icon-check.png) Additional resources such as best practices, support channels, and release notes for ongoing updates.
 
->[!NOTE]
->
-> This guide does not cover the core capabilities of Adobe Commerce and Magento Open Source.
-
 ## Explore [!DNL Payment Services] documentation
 
 If you're curious about how [!DNL Payment Services] can transform your commerce operations or need more technical guidance around [!DNL Payment Services] for Adobe Commerce and Magento Open Source, this guide has you covered.
@@ -109,14 +105,13 @@ For an overview of out-of-the-box payment solutions, including features and bene
 </td>
 </table>
 
->[!BEGINSHADEBOX]
-
-### Featured topics
-
-**[Pre-requisites for Payment Services](compatibility.md)**
-**[How do I determine which Payment Services experience is right for my business?](compatibility.md#which-payment-services-option-is-right-for-you)**
-
->[!ENDSHADEBOX]
+>[!MORELIKETHIS]
+>
+> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)---Merchant-focused documentation for both [!DNL Adobe Commerce] and [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)---Developer-focused documentation used to build and customize [!DNL Adobe Commerce] or [!DNL Magento Open Source]
+> * [Release notes](release-notes.md)---Learn more about upcoming releases, product details, and which Adobe Commerce versions support the [!DNL Payment Services] extension
+> * [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase 
+> * [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)---Commerce customers can submit a ticket to receive additional help
 
 ## Support
 
@@ -125,11 +120,3 @@ If you need information or have questions not covered in this guide, contact you
 >[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
 See [Which [!DNL Payment Services] option is right for you?](compatibility.md#which-payment-services-option-is-right-for-you) topic to check which is the [!DNL Payment Services] option best suited for you.
-
->[!MORELIKETHIS]
->
-> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)---Merchant-focused documentation for both [!DNL Adobe Commerce] and [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)---Developer-focused documentation used to build and customize [!DNL Adobe Commerce] or [!DNL Magento Open Source]
-> * [Release notes](release-notes.md)---Learn more about upcoming releases, product details, and which Adobe Commerce versions support the [!DNL Payment Services] extension
-> * [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase 
-> * [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)---Commerce customers can submit a ticket to receive additional help

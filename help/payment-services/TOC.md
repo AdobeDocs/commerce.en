@@ -13,7 +13,6 @@ recommendations: noDisplay
 - [Guide overview](guide-overview.md)
 - [Introduction to [!DNL Payment Services]](introduction.md)
 - [Compatibility for [!DNL Payment Services]](compatibility.md)
-- [Resources](resources.md)
 - [Release notes](release-notes.md)
 - Onboard [!DNL Payment Services] {#get-started}
   - [Onboarding overview](onboard.md)
