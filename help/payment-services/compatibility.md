@@ -3,7 +3,7 @@ title: Compatibility for [!DNL Payment Services]
 description: Learn if [!DNL Payment Services] is available in your country, and its compability with your Adobe Commerce version.
 role: User
 level: Intermediate
-feature: Payments, Checkout
+feature: Payments, Checkout, PaaS, SaaS
 ---
 
 # Compatibility for [!DNL Payment Services]

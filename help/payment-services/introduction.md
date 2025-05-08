@@ -3,7 +3,7 @@ title: Introduction to [!DNL Payment Services]
 description: Learn how to install and use [!DNL Payment Services] as a turnkey, robust, and secure payment processing solution for your [!DNL Adobe Commerce] and [!DNL Magento Open Source] websites.
 role: User
 level: Intermediate
-feature: Payments, Checkout
+feature: Payments, Checkout, PaaS, SaaS
 ---
 
 # Introduction to [!DNL Payment Services]

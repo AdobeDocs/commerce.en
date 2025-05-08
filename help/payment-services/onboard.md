@@ -4,7 +4,7 @@ description: Connect your instance with [!DNL Payment Services] functionality by
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-feature: Payments, Checkout, Integration
+feature: Payments, Checkout, Integration, PaaS, SaaS
 ---
 # Onboarding [!DNL Payment Services] flow
 
@@ -18,7 +18,7 @@ See below for your specific Adobe Commerce version to onboard with [!DNL Payment
 
 ## Help me find my instance and version
 
-### Adobe Commerce or Magento Open Source | v2.4.7+
+### Adobe Commerce or Magento Open Source | v2.4.7+ [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
 These flow diagrams show the general process for onboarding [!DNL Payment Services] with an Adobe Commerce or Magento Open Source newer than v2.4.7.
 
@@ -57,7 +57,7 @@ This flow diagram shows the production steps needed to enable [!DNL Payment Serv
 
 >[!ENDTABS]
 
-### Adobe Commerce or Magento Open Source | v2.4.0-2.4.6
+### Adobe Commerce or Magento Open Source | v2.4.0-2.4.6 [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 
 These flow diagrams show the general process for onboarding [!DNL Payment Services] with Adobe Commerce or Magento Open Source versions 2.4.0 to 2.4.6. It is needed to download and install [!DNL Payment Services] to begin onboarding.
 

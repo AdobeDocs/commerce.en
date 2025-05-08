@@ -4,7 +4,7 @@ description: Intended audience for these [!DNL Payment Services] for [!DNL Adobe
 seo-title: Adobe Commerce Payments Services Audience
 seo-description: Describes contents of the [!DNL Payment Services] for Adobe Commerce documentation
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-feature: Payments, Checkout
+feature: Payments, Checkout, PaaS, SaaS
 recommendations: noCatalog
 ---
 
