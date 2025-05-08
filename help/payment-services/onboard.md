@@ -32,7 +32,7 @@ This flow diagram shows the onboarding sandbox process with an Adobe Commerce or
 
 **Onboarding steps for versions v2.4.7+ Part 1: Sandbox**
 
-1. [Connect your instance](connect.md#configure-commerce-services) to Commerce Services. This connect must be completed only once per Commerce instance.
+1. [Connect your instance](connect.md#configure-commerce-services) to Commerce Services. This connect must be completed only once per Commerce instance. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 1. [Set up the sandbox service](sandbox.md#enable-sandbox-testing) (or, alternatively, proceed to [enabling live payments](sandbox.md#enable-live-payments) if you've tested functionality in another environment) with a test PayPal payment processing account.
 1. Test Payments in a [sandbox](sandbox.md#test-in-sandbox-environment) environment.
 
