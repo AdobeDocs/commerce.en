@@ -2,11 +2,13 @@
 title: Connect Your Instance
 description: Connect your Commerce instance using an API key and a private key, and specify the data space in the configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-feature: Payments, Checkout, Configuration, Saas
+feature: Payments, Checkout, Configuration, Paas
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
+
 # Connect Your Instance
 
-[!DNL Payment Services] is powered by Commerce Services and deployed as SaaS (software as a service). You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **You set up this connection only once.**
+You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **You set up this connection only once.**
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447835)
 

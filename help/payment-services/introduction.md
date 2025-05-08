@@ -12,6 +12,8 @@ feature: Payments, Checkout
 
 Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience. [!DNL Payment Services] is available out-of-the-box with [!DNL Adobe Commerce] since version 2.4.7.
 
+>[!BEGINSHADEBOX]
+
 Payment Services is:
 
 ![check](assets/icon-check.png)  Easy to set up and maintain
@@ -23,6 +25,8 @@ Payment Services is:
 ![check](assets/icon-check.png)  Designed to meet all your payments needs
 
 ![check](assets/icon-check.png)  Self-contained within the Admin
+
+>[!ENDSHADEBOX]
 
 ## Features
 
@@ -43,12 +47,3 @@ The demand is high for a quality Commerce experience, and an integrated payments
 >[!NOTE]
 >
 > Some of the features mentioned here may not yet be available in your market. See [Compatibility](compatibility.md) for more information.
-
->[!BEGINSHADEBOX]
-
-### Featured topics
-
-**[Pre-requisites for Payment Services](compatibility.md)**
-**[How do I determine which Payment Services experience is right for my business?](compatibility.md#which-payment-services-option-is-right-for-you)**
-
->[!ENDSHADEBOX]
