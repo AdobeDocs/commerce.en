@@ -18,7 +18,7 @@ See below for your specific Adobe Commerce version to onboard with [!DNL Payment
 
 ## Help me find my instance and version
 
-### Adobe Commerce or Magento Open Source | v2.4.7+ [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
+### Adobe Commerce or Magento Open Source | v2.4.7+
 
 These flow diagrams show the general process for onboarding [!DNL Payment Services] with an Adobe Commerce or Magento Open Source newer than v2.4.7.
 

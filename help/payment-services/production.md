@@ -9,8 +9,8 @@ feature: Payments, Checkout, Configuration, Install, Paas, Saas
 You can put the service into production and complete the [onboarding process](onboard.md), per the steps in this topic, after you:
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install](install.md) the Payment Services extension
-* [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Configure and connect](connect.md) your instance 
-* [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Set up](sandbox.md) and [test](test-validate.md) your sandbox
+* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Configure and connect](connect.md) your instance 
+* [Set up](sandbox.md) and [test](test-validate.md) your sandbox
 
 ## Set [!DNL Payment Services] as payment method
 
