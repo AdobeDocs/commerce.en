@@ -3,8 +3,8 @@ title: Legacy Payment Services Configuration
 description: After installation, you can configure [!DNL Payment Services] in the Admin at the store configuration.
 role: Admin, User
 level: Intermediate
+exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
 ---
 # Legacy [!DNL Payment Services] Configuration
 
@@ -23,7 +23,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL General Configuration]_ section.
 1. For **Enable**, set it to `Yes` to enable [!DNL Payment Services] for your store.
 1. For **Method**, set it to `Sandbox` if you are still testing [!DNL Payment Services] for your store or `Production` if you are ready to enable live payments.
-1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
+1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
 
     >[!WARNING]
     >
@@ -34,7 +34,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-![Featured Adobe Solution view](assets/featured-adobe-solution-view.png){width="700" zoomable="yes"}
+![Featured Adobe Solution view](assets/config-view-all.png){width="700" zoomable="yes"}
 
 ### Configuration options
 

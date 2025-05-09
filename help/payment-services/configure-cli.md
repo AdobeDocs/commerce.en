@@ -3,8 +3,9 @@ title: Command-line Configuration
 description: After installation, you can configure [!DNL Payment Services] using the Command-line Interface (CLI).
 role: Admin, Developer
 level: Intermediate
-feature: Payments, Checkout, Configuration, Integration
-exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
+feature: Payments, Checkout, Configuration, Integration, Paas
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Command-line Configuration
 

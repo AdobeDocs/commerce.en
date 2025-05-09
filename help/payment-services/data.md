@@ -3,8 +3,8 @@ title: Available Data
 description: Use financial reporting data to reconcile reporting with non-Commerce systems.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Data Import/Export
-exl-id: 6391b86d-10cc-4280-9e8a-f0cf95fcc6e6
+exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
+feature: Payments, Checkout, Data Import/Export, Paas, Saas
 ---
 # Available Data
 
