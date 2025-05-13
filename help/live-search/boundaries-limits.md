@@ -21,6 +21,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - Custom attributes created programmaticaly with `"is_user_defined": false` are not supported.
 - You can filter results using the "starts with" or "contains" conditions with some limitations as described [here](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 - You can only track performance metrics within the last year.
+- If a search query contains multiple words, the blank space between the words causes them to be treated as separate search terms. Use [synonyms](./synonyms.md) if you want to account for multi-word search queries.
 
 ## Indexing
 

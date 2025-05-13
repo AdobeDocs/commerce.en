@@ -47,6 +47,18 @@ To list all products returned by the "search as you type" query, click _View all
 
 ![Example storefront - price facets](assets/storefront-view-all-search-results.png)
 
+### How [!DNL Live Search] handles typos
+
+When a search is made, [!DNL Live Search] runs a non-fuzzy search which does not account for any typos. If no results are found, [!DNL Live Search] performs a second fuzzy search, which takes into account minor typos. The fuzzy search is run with a maximum edit distance of 1. This edit distance uses the concept of [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), and it allows for three types of operations:
+
+|Operation|Description|Example|
+|---|---|---|
+|Insertion|Adding a character.|"cat" -> "cart"|
+|Deletion|Removing a character.|"cart" -> "cat"|
+|Substitution|Replacing one character with another.|"cart" -> "cast"|
+
+In addition to the fuzzy search logic, transpositions are also accounted for, that is, where two adjacent characters in a word are swapped, for example "teh" instead of "the". Note that these edit limits are per word and not the phrase as a whole.
+
 ### Filtered search with facets
 
 Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly used facets pinned to the top of the list.
