@@ -35,11 +35,6 @@ The following table compares platform capabilities and extensibility features to
             <td colspan="3" style="background:lightgray;"><strong>Commerce Admin customization</strong></td>
         </tr>
         <tr>
-            <td>Customizable Admin theme</td>
-            <td>⚠️ No theming framework</td>
-            <td>✅ Extensible theming framework</td>
-        </tr>
-        <tr>
             <td>Extensible core Admin screens</td>
             <td>✅ Preset filters, visibility controls</td>
             <td>✅ Complete layout and functionality customization</td>
@@ -47,28 +42,38 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>Extensible new Admin screens</td>
             <td>✅ External app injection (Admin UI SDK)</td>
-            <td>✅ Standard Admin UI integration</td>
+            <td>✅ Standard Admin UI integration and external app injection (Admin UI SDK)</td>
         </tr>
         <tr>
-            <td colspan="3" style="background:lightgray;"><strong>Execution & functionality</strong></td>
+            <td>Customizable Admin theme</td>
+            <td>⚠️ No theming framework</td>
+            <td>✅ Extensible theming framework</td>
         </tr>
         <tr>
-            <td>In-process execution customization</td>
-            <td>✅ App Builder, microservices-based</td>
-            <td>✅ Native extensibility framework</td>
+            <td colspan="3" style="background:lightgray;"><strong>Extensibility</strong></td>
         </tr>
         <tr>
-            <td>B2B functionality</td>
-            <td>✅ Pre-installed with core B2B features<sup>1</sup></td>
-            <td>✅ Full B2B capabilities availble after installation</td>
+            <td>Extensibility model</td>
+            <td>✅ Out-of-process only (APIs, events, App Builder)</td>
+            <td>✅ In-process (PHP customization) and out-of-process (APIs, events, App Builder)</td>
         </tr>
         <tr>
-            <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
+            <td>Extensible web APIs</td>
+            <td>✅ API Mesh with custom resolvers<sup>1</sup></td>
+            <td>✅ Native REST/GraphQL extensibility and API Mesh with custm resolvers</td>
         </tr>
         <tr>
             <td>Data model extensibility</td>
             <td>✅ Custom attributes for core and B2B entities<sup>2</sup></td>
             <td>✅ Complete data model customization</td>
+        </tr>
+        <tr>
+            <td>Technologies</td>
+            <td>CSS, CLI, HTML, JS, Node</td>
+            <td>CSS, CLI, HTML, JS, PHP, XML</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
         </tr>
         <tr>
             <td>Search index customizations</td>
@@ -86,29 +91,24 @@ The following table compares platform capabilities and extensibility features to
             <td>✅ DB, file, cache, queue</td>
         </tr>
         <tr>
-            <td colspan="3" style="background:lightgray;"><strong>Technology stack</strong></td>
+            <td colspan="3" style="background:lightgray;"><strong>Functionality</strong></td>
         </tr>
         <tr>
-            <td>Primary technologies</td>
-            <td>CSS, CLI, HTML, JS, Node</td>
-            <td>CSS, CLI, HTML, JS, PHP, XML</td>
-        </tr>
-        <tr>
-            <td>Extensible web APIs</td>
-            <td>✅ API Mesh with custom resolvers<sup>4</sup></td>
-            <td>✅ Native REST/GraphQL extensibility</td>
+            <td>B2B functionality</td>
+            <td>✅ Pre-installed with core B2B features<sup>4</sup></td>
+            <td>✅ Full B2B capabilities available after installation</td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
+                <sup>1</sup> <a href="https://developer.adobe.com/commerce/services/reference/cloud/rest/">REST</a> and <a href="https://developer.adobe.com/commerce/services/reference/cloud/graphql/">GraphQL</a> API schemas can only be extended using <a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh</a>.
                 <br><br>
                 <sup>2</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
                 <br><br>
                 <sup>3</sup> For the SaaS model's App Builder storage limitations, Adobe is actively working on solutions including Document DB integration to address persistent storage needs. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
                 <br><br>
-                <sup>4</sup> While direct extension of <a href="https://developer.adobe.com/commerce/services/reference/cloud/rest/">REST</a> and <a href="https://developer.adobe.com/commerce/services/reference/cloud/graphql/">GraphQL</a> APIs is limited in SaaS, <a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh</a> allows you to modify schemas and add custom resolvers to augment the standard APIs.
+                <sup>4</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
             </td>
         </tr>
     </tfoot>
@@ -118,11 +118,12 @@ The following table compares platform capabilities and extensibility features to
 >
 >When considering migration to SaaS, Adobe recommends that you:
 >
->- Move suitable functionality to out-of-process implementations where possible.
->- Reduce the surface area that would need transition.
+>- Move suitable functionality to out-of-process extensibility where possible.
+>- Reduce the surface area that requires transition.
 >- Consider API Mesh for extending API functionality.
 >- Monitor Adobe's ongoing platform evolution and new capability releases.
 >- Evaluate industry-specific data model requirements against available extensibility options.
+>- Consider adopting [Merchandsing Services powered by Channels and Policies](../optimizer/catalog/overview.md).
 
 ## New feature solutions
 
@@ -132,10 +133,7 @@ The following table describes the features and replacement solutions available i
 
 | Feature | Solution | Availability | Details|
 |---------|----------|--------------|--------|
-| [Digital asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Product Visuals](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) or mini-DAM | Available | A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the mini-DAM provides basic asset management tools for storing and managing digital assets. |
-| [Content Management System (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
-| [Content staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Catalog Service](../catalog-service/overview.md) | Roadmap | A catalog management tool that ties into Adobe Experience Platform, allowing for the management of large catalogs. |
-| [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
-| [Payments](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services for Adobe Commerce](../payment-services/guide-overview.md) | Available | An integrated payment service that facilitates secure and efficient transactions. |
-| [URL rewrites](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
-| [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Catalog Service](../catalog-service/overview.md)| Roadmap | A catalog management tool that ties into Adobe Experience Platform, allowing for the management of large catalogs. |
+| [Digital asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Product Visuals](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) | Available | A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets. |
+| [Content Management System (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview)<br/><br/>[Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview)<br/><br/>[URL rewrites](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/) | Available | A CMS allowing users to create and manage storefront content easily using document authoring or a Visual Editor and includes native experimentation capabilities. |
+| [Content staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)<br/><br/>[Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Catalog Service](../catalog-service/overview.md) | Roadmap | A rich view-model (read-only) service for managing catalog data and rendering product-related storefront experiences. |
+| [Payments](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services](../payment-services/guide-overview.md) | Available | An integrated payment service that facilitates secure and efficient transactions. |
