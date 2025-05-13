@@ -1,0 +1,88 @@
+---
+user-guide-title: Content and Design Guide
+user-guide-description: Comprehensive information about content and design features for Adobe Commerce and Magento Open Source administrators and eCommerce marketers.
+breadcrumb-title: Content and Design
+feature: CMS, Page Content
+---
+
+# Content and Design Guide {#content-design}
+
+- [Content and Design Guide](guide-overview.md)
+- [Introduction to content and design](introduction.md)
+- [Content menu](content-menu.md)
+- Design {#design}
+  - [Design configuration](configuration.md)
+  - Themes {#themes}
+    - [Overview](themes.md)
+    - [Install a new theme](theme-install.md)
+    - [Manage theme assets](theme-assets.md)
+    - [Schedule design updates](schedule.md)
+  - [Page section setup](page-setup.md)
+  - Page layout {#layout}
+    - [Overview](page-layout.md)
+    - [Storefront layout examples](page-layout-examples.md)
+    - [Layout updates](layout-updates.md)
+- Content elements {#elements}
+  - Pages {#pages}
+    - [Overview](pages.md)
+    - [Page workspace controls](pages-workspace.md)
+    - [Add and remove pages](page-add.md)
+    - [Set the home page](page-home-new.md)
+    - [Page hierarchy](page-hierarchy.md)
+    - [Translate a content page](page-translate.md)
+  - Blocks {#blocks}
+    - [Overview](blocks.md)
+    - [Add a block](block-add.md)
+    - [Position blocks](block-position.md)
+  - Dynamic blocks {#dynamic-blocks}
+    - [Create a dynamic block](dynamic-blocks.md)
+    - [Add a rotating dynamic block](dynamic-blocks-rotate.md)
+    - [Dynamic blocks in price rules](dynamic-blocks-price-rules.md)
+  - Widgets {#widgets}
+    - [Overview](widgets.md)
+    - [Create and manage widgets](widget-create.md)
+    - [Use a widget to position a block](widget-static-block.md)
+    - [New products list widget](widget-new-products-list.md)
+    - [Orders and returns widget](widget-orders-returns.md)
+    - [Catalog events carousel widget](widget-event-carousel.md)
+- WYSIWYG Editor {#wysiwyg}
+  - [Overview](editor.md)
+  - [Insert a link](editor-insert-link.md)
+  - [Insert an image](editor-insert-image.md)
+  - [Insert a widget](editor-widget.md)
+  - [Insert a variable](editor-insert-variable.md)
+  - Media Storage {#storage}
+    - [Overview](media-storage.md)
+    - [Use a media database](media-storage-database.md)
+    - [Use a content delivery network](media-storage-content-delivery-network.md)
+    - [Dynamic media URLs](catalog-urls-dynamic-media.md)
+  - Adobe Stock {#adobe-stock}
+    - [Adobe Stock integration](adobe-stock.md)
+    - [Use Adobe Stock images](adobe-stock-manage.md)
+    - [Save a Stock image preview](adobe-stock-save-preview.md)
+    - [License a Stock image](adobe-stock-license-image.md)
+  - Media Gallery {#gallery}
+    - [Overview](media-gallery.md)
+    - [Asset management](media-gallery-asset-management.md)
+    - [Folder management](media-gallery-folder-management.md)
+    - [Image optimization](media-gallery-image-optimization.md)
+- AEM Assets Integration for Commerce {#aem-asset-management}
+  - [Integration overview](aem-assets-integration.md)
+  - [Release notes](aem-assets-release-notes.md)
+  - Getting started {#getting-started}
+    - [Set up environments](aem-assets-getting-started.md)
+    - [Install AEM Assets package](aem-assets-configure-aem.md)
+    - [Install Adobe Commerce packages](aem-assets-configure-commerce.md)
+    - [Configure the integration](aem-assets-setup-synchronization.md)
+    - [View and manage logs](aem-assets-log-files.md)
+  - [Migrate media files to AEM Assets](aem-assets-migrate-data.md)
+  - Manage assets {#manage}
+    - [Use AEM Assets with Commerce](aem-assets-manage.md)
+- Media {#media}
+- Content staging {#staging}
+  - [Overview](content-staging.md)
+  - [Schedule an update](content-staging-scheduled-update.md)
+  - [Staging dashboard](content-staging-dashboard.md)
+  - [Add a campaign item](content-staging-add-item.md)
+  - [Preview a campaign](content-staging-preview.md)
+- [Return to Admin User Guides](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
