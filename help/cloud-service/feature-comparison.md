@@ -131,9 +131,48 @@ The [Commerce Admin UI](https://experienceleague.adobe.com/en/docs/commerce-admi
 
 The following table describes the features and replacement solutions available in [!DNL Adobe Commerce as a Cloud Service]:
 
-| Feature | Solution | Availability | Details|
-|---------|----------|--------------|--------|
-| [Digital asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Product Visuals](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) | Available | A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets. |
-| [Content Management System (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview)<br/><br/>[Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview)<br/><br/>[URL rewrites](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/) | Available | A CMS allowing users to create and manage storefront content easily using document authoring or a Visual Editor and includes native experimentation capabilities. |
-| [Content staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)<br/><br/>[Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Catalog Service](../catalog-service/overview.md) | Roadmap | A rich view-model (read-only) service for managing catalog data and rendering product-related storefront experiences. |
-| [Payments](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services](../payment-services/guide-overview.md) | Available | An integrated payment service that facilitates secure and efficient transactions. |
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Solution</th>
+            <th>Availability</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital asset management</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Product Visuals</a></td>
+            <td>Available</td>
+            <td>A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets.</td>
+        </tr>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a></td>
+            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
+            <td rowspan="3">Available</td>
+            <td rowspan="3">A CMS allowing users to create and manage storefront content easily using document authoring or a Visual Editor and includes native experimentation capabilities.</td>
+        </tr>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL rewrites</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Content staging</a></td>
+            <td rowspan="2"><a href="../catalog-service/overview.md">Catalog Service</a></td>
+            <td rowspan="2">Roadmap</td>
+            <td rowspan="2">A rich view-model (read-only) service for managing catalog data and rendering product-related storefront experiences.</td>
+        </tr>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Payments</a></td>
+            <td><a href="../payment-services/guide-overview.md">Payment Services</a></td>
+            <td>Available</td>
+            <td>An integrated payment service that facilitates secure and efficient transactions.</td>
+        </tr>
+    </tbody>
+</table>
