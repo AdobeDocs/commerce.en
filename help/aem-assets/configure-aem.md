@@ -2,7 +2,6 @@
 title: Install AEM Assets Package for Commerce
 description: Add the asset metadata required to enable the AEM Assets Integration for Commerce to synchronize assets between Adobe Commerce and Experience Manager Assets projects.
 feature: CMS, Media, Integration
-exl-id: deb7c12c-5951-4491-a2bc-542e993f1f84
 ---
 # Install the AEM Assets package
 
@@ -122,4 +121,4 @@ The Product Data UI component is added automatically based on the template.
 
 ## Next step
 
-[Install Adobe Commerce packages](aem-assets-configure-commerce.md)
+[Install Adobe Commerce packages](configure-commerce.md)

@@ -2,7 +2,6 @@
 title: Set up AEM Assets Integration for Commerce
 description: Learn how to set up and configure your Experience Manager Assets environment to manage Commerce assets for your store.
 feature: CMS, Media, Configuration
-exl-id: 699f517e-1545-4c22-aa8d-9c8d60d352af
 ---
 # Set up AEM Assets Integration for Commerce
 
@@ -36,8 +35,8 @@ To leverage this integration, businesses must meet the following requirements:
 
 Enabling the Commerce integration with Experience Manager Assets is a three step process:
 
-1. [Install AEM Assets package](aem-assets-configure-aem.md).
+1. [Install AEM Assets package](configure-aem.md).
 
-1. [Install Adobe Commerce packages](aem-assets-configure-aem.md).
+1. [Install Adobe Commerce packages](configure-aem.md).
 
-1. [Configure the integration asset](aem-assets-setup-synchronization.md).
+1. [Configure the integration asset](setup-synchronization.md).

@@ -2,8 +2,8 @@
 title: Migrate media files to AEM
 description: Migrate the media files from Adobe Commerce or an external source into the AEM Assets DAM.
 feature: CMS, Media, Integration
-exl-id: fead5732-b014-4cd3-a776-98a055a696ab
 ---
+
 # Migrate media files to the AEM Assets DAM
 
  Both Adobe Commerce and Adobe Experience Manager (AEM) provide built-in features to streamline media file migration from Commerce to the AEM Assets digital asset management system (DAM). You can also migrate media files from other sources.
@@ -44,7 +44,7 @@ Create a metadata mapping file in CSV format and upload it to the source folder 
 - Enable proper synchronization between Adobe Commerce and AEM Assets
 - Maintain relationships between assets and products after migration
 
-For each media file you plan to migrate, provide values for the metadata fields included in the [AEM Assets metadata profile for Commerce assets](aem-assets-configure-aem.md) as described in the following table.
+For each media file you plan to migrate, provide values for the metadata fields included in the [AEM Assets metadata profile for Commerce assets](configure-aem.md) as described in the following table.
 
 | Metadata | Description | Value |
 |-------|-------------|--------|

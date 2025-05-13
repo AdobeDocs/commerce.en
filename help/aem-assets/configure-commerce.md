@@ -2,7 +2,6 @@
 title: Install Adobe Commerce packages
 description: Learn how to install the [!DNL AEM Assets Integration for Adobe Commerce] extension and on an Adobe Commerce instance.
 feature: CMS, Media
-exl-id: 2f8b3165-354d-4b7b-a46e-1ff46af553aa
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Install Adobe Commerce packages
@@ -35,7 +34,7 @@ You need the following roles and permissions to set up the integration.
 
 >[!TIP]
 >
-> Adobe Commerce can be configured to use [Adobe IMS authentication](/help/getting-started/adobe-ims-config.md).
+> Adobe Commerce can be configured to use [Adobe IMS authentication](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config).
 
 ## Installation and configuration workflow
 
@@ -268,4 +267,4 @@ On the Integrations page, generate the OAuth authentication credentials by click
 
 ## Next step
 
-[Connect the Adobe Commerce and AEM Assets project environments and select the matching strategy for synchronizing assets](aem-assets-setup-synchronization.md)
+[Connect the Adobe Commerce and AEM Assets project environments and select the matching strategy for synchronizing assets](setup-synchronization.md)

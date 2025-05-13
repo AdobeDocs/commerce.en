@@ -2,8 +2,8 @@
 title: Configure log rotation
 description: Configure log rotation for the AEM Assets Integration for Commerce.
 feature: CMS, Media, Integration
-exl-id: f735d086-048c-4555-bc58-ac6736c281b0
 ---
+
 # Configure Experience Manager Assets
 
 The AEM Assets Integration for Commerce provides the following log files in your Commerce instance:
