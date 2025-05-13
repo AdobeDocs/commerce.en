@@ -3,8 +3,8 @@ title: Home
 description: Introduction to the [!DNL Payment Services] Home.
 role: Admin, User
 level: Intermediate
-feature: Payments, Checkout
-exl-id: 6a212c67-5bad-4faa-9e6d-cac5c7efe766
+exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
+feature: Payments, Checkout, Paas, Saas
 ---
 # Introduction to the [!DNL Payment Services] Home
 

@@ -1,15 +1,15 @@
 ---
 title: Enable [!DNL Payment Services] for Production
 description: Complete the onboarding process by enabling [!DNL Payment Services] for production.
-feature: Payments, Checkout, Configuration, Install
-exl-id: aeec2f93-cc10-4a2f-a8fd-86dae94eb6b2
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
 ---
 # Enable [!DNL Payment Services] for Production
 
 You can put the service into production and complete the [onboarding process](onboard.md), per the steps in this topic, after you:
 
-* [Install](install.md) the Payment Services extension
-* [Configure and connect](connect.md) your instance
+* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install](install.md) the Payment Services extension
+* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Configure and connect](connect.md) your instance 
 * [Set up](sandbox.md) and [test](test-validate.md) your sandbox
 
 ## Set [!DNL Payment Services] as payment method
@@ -56,7 +56,7 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 1. In the _Select your country_ modal, select the country from which you are operating.
 
-   Payment Services provides full support for all payment options in [five countries](../payment-services/overview.md#availability) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
+   Payment Services provides full support for all payment options in [five countries](../payment-services/introduction.md#availability) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
    
    The country you choose from the list will determine the payment options, and onboarding flow---[Advanced](#advanced-onboarding) (fully supported) or [Standard](#standard-onboarding) (Express Checkout)---available to you.
 
@@ -66,7 +66,7 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 ### Advanced onboarding
 
-This onboarding flow is available for merchants in [fully supported countries](../payment-services/overview.md#availability).
+This onboarding flow is available for merchants in [fully supported countries](../payment-services/introduction.md#availability).
 
 After the country is selected:
 
@@ -83,7 +83,7 @@ After the country is selected:
 
 ### Standard onboarding
 
-This Standard onboarding flow is available for merchants in available countries for which [only Express Checkout support](../payment-services/overview.md#availability) is provided.
+This Standard onboarding flow is available for merchants in available countries for which [only Express Checkout support](../payment-services/introduction.md#availability) is provided.
 
 After the country is selected:
 

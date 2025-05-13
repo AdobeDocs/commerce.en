@@ -11,7 +11,8 @@ recommendations: noDisplay
 # [!DNL Payment Services] for Commerce {#payment-services}
 
 - [Guide overview](guide-overview.md)
-- [Introduction to [!DNL Payment Services]](overview.md)
+- [Introduction to [!DNL Payment Services]](introduction.md)
+- [Compatibility for [!DNL Payment Services]](compatibility.md)
 - [Release notes](release-notes.md)
 - Onboard [!DNL Payment Services] {#get-started}
   - [Onboarding overview](onboard.md)
@@ -35,8 +36,8 @@ recommendations: noDisplay
     - [Voids](voids.md)
   - [Create an order in the Admin](create-order.md)
   - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
-- Financial reporting {#reporting}
-  - [Transactions report](transactions.md)
+- Financial reporting {#financial-reports}
+  - [Reporting](reporting.md)
   - [Order payment status report](order-payment-status.md)
   - [Payouts report](payouts.md)
   - [Available data](data.md)
@@ -44,4 +45,4 @@ recommendations: noDisplay
 - Security and compliance {#security-compliance}
   - [Security](security.md)
   - [Signifyd fraud protection](fraud-protection.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

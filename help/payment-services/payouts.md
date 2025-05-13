@@ -3,8 +3,8 @@ title: Payouts Report
 description: Use the Payouts report for full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 role: User
 level: Intermediate
-feature: Payments, Checkout
-exl-id: 7c11bc45-2219-4c1f-bcb2-703d5479edca
+exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
+feature: Payments, Checkout, Paas, Saas
 ---
 # Payouts Report
 
@@ -21,7 +21,7 @@ You can [download payout transactions](#download-transactions) in a .csv file fo
 
 >[!NOTE]
 >
->Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Payouts data visualization view
 

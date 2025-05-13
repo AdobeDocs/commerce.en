@@ -1,8 +1,8 @@
 ---
 title: Set Up the Testing Sandbox
 description: Use a PayPal sandbox account to use [!DNL Payment Services] in test mode.
-feature: Payments, Checkout, Configuration, Install
-exl-id: d8ae02c1-31ec-48a0-b807-829be74da611
+exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
 ---
 # Set Up the Testing Sandbox
 
