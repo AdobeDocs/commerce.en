@@ -3,6 +3,7 @@ title: Install AEM Assets Package for Commerce
 description: Add the asset metadata required to enable the AEM Assets Integration for Commerce to synchronize assets between Adobe Commerce and Experience Manager Assets projects.
 feature: CMS, Media, Integration
 ---
+
 # Install the AEM Assets package
 
 Adobe provides a project template, `commerce-assets`, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this template to your environment as a Maven package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
