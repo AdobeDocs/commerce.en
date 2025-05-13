@@ -22,9 +22,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
 - [Install Adobe Commerce packages](aem-assets-configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
-- Create a support ticket to request enablement for the AEM Assets for Commerce Integration. In the ticket, include the **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** and **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
-
-- Provide the **[!UICONTROL Asset Selector IMS Client ID]**. See [ImsAuthProps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-integration/integrate-asset-selector-adobe-app) in the *AEM Assets Selector* documentation.
+- Create a support ticket to request enablement of the Dynamic Media Open API for the AEM Assets for Commerce Integration and the creation of an IMS Client ID for Asset Selector. In the ticket, include the **[!UICONTROL AEM Program ID]**, **[!UICONTROL AEM Environment ID]** and **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce. See [ImsAuthProps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-integration/integrate-asset-selector-adobe-app) in the *AEM Assets Selector* documentation for more information.
 
 ## Configure the connection
 
