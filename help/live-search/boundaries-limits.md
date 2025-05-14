@@ -12,7 +12,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 - The [Advanced Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
 - [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) is not supported in the [!DNL Live Search] field and Product Listing Page Widget.
-- Product prices do not include value-added tax (VAT).
+- Product prices include value-added tax (VAT), but [!DNL Live Search] cannot display the VAT as a separate value.
 - Content search (CMS pages and blocks) is not supported.
 - The maximum number of results that can be paginated is 10,000. To ensure that shoppers do not have to use deep pagination when a category or search result includes a large number of products, provide meaningful ways to filter products.
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
@@ -21,6 +21,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - Custom attributes created programmaticaly with `"is_user_defined": false` are not supported.
 - You can filter results using the "starts with" or "contains" conditions with some limitations as described [here](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 - You can only track performance metrics within the last year.
+- If a search query contains multiple words, the blank space between the words causes them to be treated as separate search terms. Use [synonyms](./synonyms.md) if you want to account for multi-word search queries.
 
 ## Indexing
 
