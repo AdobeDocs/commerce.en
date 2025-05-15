@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.4 Release
 
-![Fix](../assets/fix.svg) Added x-request-id from server response for improved traceability. <!--MDEE-1041-->
+![Fix](../assets/fix.svg) Added the `x-request-id` from the server response for improved traceability. <!--MDEE-1041-->
 ![Fix](../assets/fix.svg) Fixed issue with saving items to database when first item in batch contains errors. <!--MDEE-1049-->
 ![Fix](../assets/fix.svg) Fixed error where single item failure caused entire batch to fail. <!--MDEE-976-->
 ![Fix](../assets/fix.svg) Added support for dimensions in category permissions. <!--MDEE-654-->
