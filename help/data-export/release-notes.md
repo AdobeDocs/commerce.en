@@ -26,7 +26,7 @@ Updates include:
 
 ![Fix](../assets/fix.svg) Added the `x-request-id` from the server response for improved traceability. <!--MDEE-1041-->
 ![Fix](../assets/fix.svg) Fixed issue with saving items to database when first item in batch contains errors. <!--MDEE-1049-->
-![Fix](../assets/fix.svg) Fixed error where single item failure caused entire batch to fail. <!--MDEE-976-->
+![Fix](../assets/fix.svg) Fixed an issue that caused the entire feed resynchronization process to fail when the process fails for a single feed item. <!--MDEE-976-->
 ![Fix](../assets/fix.svg) Added support for dimensions in category permissions. <!--MDEE-654-->
 ![Fix](../assets/fix.svg) Added warning message when cleanup-feed argument is used. <!--MDEE-1047-->
 
