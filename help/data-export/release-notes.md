@@ -24,6 +24,7 @@ Updates include:
 
 ## 103.4.4 Release
 
+![New](../assets/new.svg) Added a warning message that displays when the `cleanup-feed` argument is added to the `saas:resync` CLI command. The `--cleanup-feed` option should be used cautiously and only in specific scenarios like after environment cleanup or with the `--dry-run` option. Using it in other cases can lead to data loss and sync issues. <!--MDEE-1047-->
 ![Fix](../assets/fix.svg) Added the `x-request-id` from the server response for improved traceability. <!--MDEE-1041-->
 ![Fix](../assets/fix.svg) Fixed an issue that sometimes caused the feed resynchronization status for all feed batches to be set to `failed with error` when the process fails for only a single batch. <!--MDEE-1049-->
 ![Fix](../assets/fix.svg) Fixed an issue that caused feed synchronization to fail for all items in a feed batch if the first item contains errors. <!--MDEE-976-->
