@@ -28,7 +28,7 @@ Updates include:
 ![Fix](../assets/fix.svg) Fixed issue with saving items to database when first item in batch contains errors. <!--MDEE-1049-->
 ![Fix](../assets/fix.svg) Fixed an issue that caused the entire feed resynchronization process to fail when the process fails for a single feed item. <!--MDEE-976-->
 ![Fix](../assets/fix.svg) Added support for dimensions in category permissions. <!--MDEE-654-->
-![Fix](../assets/fix.svg) Added warning message when cleanup-feed argument is used. <!--MDEE-1047-->
+![New](../assets/new.svg)  Added a warning message that displays when the `cleanup-feed` argument is added to the `saas:resync` CLI command. The `--cleanup-feed` option should be used cautiously and only in specific scenarios like after environment cleanup or with the `--dry-run` option. Using it in other cases can lead to data loss and sync issues.   <!--MDEE-1047-->
 
 ## 103.4.3 Release
 
