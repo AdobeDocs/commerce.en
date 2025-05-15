@@ -141,7 +141,7 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Data model extensibility</td>
-            <td>Custom attributes for core and B2B entities<sup>3</sup></td>
+            <td>Custom attributes for core and B2B entities<sup>2</sup></td>
             <td>Complete data model customization</td>
         </tr>
         <tr>
@@ -164,7 +164,7 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Custom data storage</td>
-            <td>App Builder state library (file only)<sup>4</sup></td>
+            <td>App Builder state library (file only)<sup>3</sup></td>
             <td>DB, file, cache, queue</td>
         </tr>
     </tbody>
