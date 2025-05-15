@@ -29,9 +29,8 @@ The following table describes the features and replacement solutions available i
 <table>
     <thead>
         <tr>
-            <th>Feature</th>
-            <th>Solution</th>
-            <th>Availability</th>
+            <th>PaaS model</th>
+            <th>SaaS model</th>
             <th>Details</th>
         </tr>
     </thead>
@@ -39,13 +38,11 @@ The following table describes the features and replacement solutions available i
         <tr>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital asset management</a></td>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Product Visuals</a></td>
-            <td>Available</td>
             <td>A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets.</td>
         </tr>
         <tr>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a></td>
             <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
-            <td rowspan="3">Available</td>
             <td rowspan="3">A CMS allowing users to create and manage storefront content easily using document authoring or a Visual Editor and includes native experimentation capabilities.</td>
         </tr>
         <tr>
@@ -57,7 +54,6 @@ The following table describes the features and replacement solutions available i
         <tr>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Content staging</a></td>
             <td rowspan="2"><a href="../catalog-service/overview.md">Catalog Service</a></td>
-            <td rowspan="2">Roadmap</td>
             <td rowspan="2">A rich view-model (read-only) service for managing catalog data and rendering product-related storefront experiences.</td>
         </tr>
         <tr>
@@ -66,7 +62,6 @@ The following table describes the features and replacement solutions available i
         <tr>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Payments</a></td>
             <td><a href="../payment-services/guide-overview.md">Payment Services</a></td>
-            <td>Available</td>
             <td>An integrated payment service that facilitates secure and efficient transactions.</td>
         </tr>
     </tbody>
