@@ -22,6 +22,17 @@ Updates include:
 
 ## Current major version
 
+## 103.4.4 Release
+
+![Fix](../assets/fix.svg) Persist x-request-id from response. <!--MDEE-1041-->
+![Fix](../assets/fix.svg) Submitted items will not be saved to DB if one of first items has an errors and another don't. <!--MDEE-1049-->
+![Fix](../assets/fix.svg) Error in single item fails entire batch. <!--MDEE-976-->
+![Fix](../assets/fix.svg) Persist x-request-id from response. <!--MDEE-1041-->
+![Fix](../assets/fix.svg) MDEE MVIEW triggers doesn't work for indexer modes set by dimensions. <!--MDEE-654-->
+![Fix](../assets/fix.svg) Fix issue with permissions overrides batching. <!--MDEE-654-->
+![Fix](../assets/fix.svg) Show warning message when clenaup-feed argument is used. <!--MDEE-1047-->
+![Fix](../assets/fix.svg) Persist x-request-id from response. <!--MDEE-1041-->
+
 ## 103.4.3 Release
 
 ![Fix](../assets/fix.svg) Resolved an issue where products were skipped during the data export process due to missing EAV attributes. <!--MDEE-970-->
