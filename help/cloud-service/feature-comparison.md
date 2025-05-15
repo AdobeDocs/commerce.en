@@ -136,12 +136,12 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Extensible web APIs</td>
-            <td>API Mesh with custom resolvers<sup>2</sup></td>
+            <td>API Mesh with custom resolvers</td>
             <td>Native REST/GraphQL extensibility and API Mesh with custom resolvers</td>
         </tr>
         <tr>
             <td>Data model extensibility</td>
-            <td>Custom attributes for core and B2B entities<sup>2</sup></td>
+            <td>Custom attributes for core and B2B entities<sup>3</sup></td>
             <td>Complete data model customization</td>
         </tr>
         <tr>
@@ -173,11 +173,9 @@ The following table compares platform capabilities and extensibility features to
             <td colspan="3">
                 <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
                 <br><br>
-                <sup>2</sup> <a href="https://developer.adobe.com/commerce/services/reference/cloud/rest/">REST</a> and <a href="https://developer.adobe.com/commerce/services/reference/cloud/graphql/">GraphQL</a> API schemas can only be extended using <a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh</a>.
+                <sup>2</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
                 <br><br>
-                <sup>3</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
-                <br><br>
-                <sup>4</sup> For the SaaS model's App Builder storage limitations, Adobe is actively working on solutions including Document DB integration to address persistent storage needs. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
+                <sup>3</sup> Adobe is actively working Document DB integration to address persistent storage needs for SaaS. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
             </td>
         </tr>
     </tfoot>
