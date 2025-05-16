@@ -66,7 +66,7 @@ The storefront you create for your [!DNL Adobe Commerce Optimizer] project uses 
 
 >[!NOTE]
 >
->This tutorial uses macOS, Chrome, and Visual Studio Code as the development environment. The screen captures and instructions reflect that set up. You can use a different operating system, browser, and code editor, but the UI you see and the steps you take vary accordingly.
+>This tutorial uses macOS, Chrome, and Visual Studio Code as the development environment. The screen captures and instructions reflect that setup. You can use a different operating system, browser, and code editor, but the UI you see and the steps you take vary accordingly.
 
 ### Workflow overview
 
@@ -75,7 +75,7 @@ Follow these steps to set up a storefront to use with [!DNL Adobe Commerce Optim
 1. **[Create a code repository](#step-1%3A-create-site-code-repository)**–Create a GitHub repository from the Adobe Commerce + Edge Delivery Services boilerplate template. Include all branches from the source repository.
 1. **[Update the storefront boilerplate](#step-2%3A-update-the-storefront-boilerplate)**–Update the custom boilerplate template on the `aco` branch to connect your content folder to the storefront.
 1. **[Upload the updated storefront boilerplate code](#step-3%3A-upload-the-updated-boilerplate-code)**–Overwrite the code on the `main` branch with the updated code from the `aco` branch.
-1. **[Add the CodeSync app](#step-5%3A-add-the-aem-code-sync-app)**–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and are ready to push the code to the `main` branch.
+1. **[Add the CodeSync app](#step-5%3A-add-the-aem-code-sync-app)**–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and have pushed the code to the `main` branch.
 1. **[Add content documents to your storefront](#step-6%3A-add-content-documents-for-your-storefront)**–Use the demo content clone tool to create and initialize your storefront content in the Document Author environment hosted on `https://da.live`.
 1. **[Preview your site and view sample data](#step-7%3A-preview-your-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
 1. **[Develop the storefront in your local environment](#step-8%3A-develop-the-storefront-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
@@ -367,7 +367,7 @@ Connect your repository to the Edge Delivery Service by adding the AEM Code Sync
 
 ### Step 6: Add content documents for your storefront
 
-Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Demo site clone tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other components to build your storefront.
+Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Demo site clone tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other elements to populate your storefront.
 
 1. Open the [demo content clone tool](https://da.live/app/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator).
 
