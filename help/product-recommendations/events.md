@@ -14,7 +14,7 @@ When you install and configure SaaS-based Adobe Commerce features such as [[!DNL
 
 ## Healthcare customers
 
-If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Product Recommendations] is no longer captured. This is because storefront event data is generated client-side. To continue to capturing and sending storefront event data, re-enable event collection for [!DNL Product Recommendations]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
+If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Product Recommendations] is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for [!DNL Product Recommendations]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
 
 ## Data types and events
 
@@ -70,59 +70,6 @@ In the case of insufficient input data collection, the following recommendation 
 - `Trending`
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
-
-### Events
-
-The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. In that list, there is a subset of events specific to [!DNL Product Recommendations]. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics to analyze how well your recommendations are performing.
-
-| Event | Description |
-| --- | --- |
-|`impression-render` | Sent when the recommendation unit is rendered on the page. If a page has two recommendation units (bought-bought, view-view), then two `impression-render` events are sent. This event is used to track the metric for impressions. |
-|`rec-add-to-cart-click` | The shopper clicks the **Add to cart** button for an item in the recommendation unit. |
-|`rec-click` | The shopper clicks a product in the recommendation unit. |
-|`view` | Sent when the recommendation unit becomes at least 50 percent viewable, such as by scrolling down the page. For example, if a recommendation unit has two lines, a `view` event is sent when one line plus one pixel of the second line becomes visible to the shopper. If the shopper scrolls the page up and down several times, the `view` event is sent as many times as the shopper sees the whole recommendation unit again on the page.|
-
->[!NOTE]
->
->Product Recommendation metrics are optimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment.
-
-#### Required dashboard events
-
-The following events are required to populate the [[!DNL Product Recommendations] dashboard](workspace.md)
-
-| Dashboard column | Events    | Join field  |
-| ---------------- | --------- | ----------- |
-| Impressions      |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId`  |
-| Views            |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId`  |
-| Clicks           |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | `unitId`  |
-| Revenue          |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| LT Revenue       |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | `unitId`, `sku`, `parentSku` |
-| vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-
-The following events are not specific to Product Recommendations, but are required for Adobe Sensei to interpret shopper data correctly:
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### Recommendation Type
-
-This table describes the events used by each recommendation type.
-
-| Recommendation Type | Events | Page |
-| --- | --- | --- |
-| Most Viewed | `page-view`<br>`product-view` | Product detail page |
-| Most Purchased | `page-view`<br>`place-order` | Cart/Checkout |
-| Most added to cart | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
-| Viewed this, viewed that | `page-view`<br>`product-view` | Product detail page |
-| Viewed this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page<br>Cart/Checkout |
-| Bought this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Trending | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to purchase | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to purchase | Product Recs | `page-view`<br>`place-order` | Cart/Checkout |
-| Conversion: View to cart | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to cart | Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
 
 #### Caveats
 
