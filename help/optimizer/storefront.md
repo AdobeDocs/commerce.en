@@ -414,9 +414,9 @@ Verify that both the sample content and the data from the Adobe Commerce Optimiz
 
    If the page returns a 404, verify the following:
 
-   * The mountpoint in your `fstab.yaml` file points to the correct content URL: `https://content.da.live/{ORG}/{SITE}/`
-   * You have configured the Code Sync app to connect to your GitHub repository.
-   * You have published the content to the Document Author environment using the demo content clone tool.
+   * [The mountpoint in your `fstab.yaml` file points to the correct content URL](#link-the-repository-to-the-document-author-environment): `https://content.da.live/{ORG}/{SITE}/`
+   * [You have configured the Code Sync app to connect to your GitHub repository]((#step-5%3A-add-the-aem-code-sync-app).
+   * [You have published the content to the Document Author environment using the demo content clone tool]((#step-6%3A-add-content-documents-for-your-storefront).
 
 
 1. View the sample catalog data coming from the Commerce Optimizer default instance.
