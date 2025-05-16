@@ -30,7 +30,7 @@ This workflow demonstrates the checkout process for a customer purchasing a prod
 
 ### Enable payment services
 
-1. In the Commerce Admin, navigate to [!UICONTROL **Settings**] > [!UICONTROL **Payment Methods**].
+1. In the Commerce Admin, navigate to [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Payment Methods**].
 
 1. In the [!UICONTROL **General Configuration**] section, enter your `Payment Services Sandbox ID` and `Payment Services Sandbox Key`. You can get these IDs by following the steps described in [Sandbox onboarding](../payment-services/sandbox.md#sandbox-onboarding)
 

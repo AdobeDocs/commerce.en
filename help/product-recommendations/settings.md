@@ -13,7 +13,7 @@ Staging orders are recorded using the staging `environmentId`. It does not affec
 
 >[!NOTE]
 >
->When using Product Recommendations through REST, the `alternateEnvironmentId` parameter can be used to specify other dataspaces. When using Product Recommendations through GraphQL, this parameter is not available.
+>When using Product Recommendations through REST, the `alternateEnvironmentId` parameter can be used to specify other dataspaces. When using Product Recommendations through [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/), this parameter is not available.
 
 ## Choose the recommendations source
 
