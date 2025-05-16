@@ -400,7 +400,7 @@ Create and initialize your storefront content in the Document Author environment
 
 Verify that both the sample content and the data from the Adobe Commerce Optimizer demo instance are displayed correctly.
 
-* **Sample content** is served from your shared content folder. It includes the page layouts, banners, labels for your site.
+* **Sample content** is served from your shared content folder. It includes the page layouts, banners, and labels for your site.
 * **Sample data** is served from the [!DNL Adobe Commerce Optimizer] demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the header values specified in the storefront configuration file, `config.json`.
 
 
