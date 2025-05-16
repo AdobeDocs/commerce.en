@@ -390,11 +390,11 @@ Create and initialize your storefront content in the Document Author environment
 
 1. Open the root content folder link to view the content.
 
-   [[!DNL Storefront Document Author environment]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
+   ![[!DNL Storefront Document Author environment]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
 
    >[!TIP]
    >
-   >In the side navigation, use the [!UICONTROL **Learn**] and [!UICONTRL **Discover**] links to access learning resources for managing your site and site content.
+   >In the side navigation, use the [!UICONTROL **Learn**] and [!UICONTROL **Discover**] links to access learning resources for managing your site and site content.
 
 ### Step 7: Preview your site and view sample data
 
