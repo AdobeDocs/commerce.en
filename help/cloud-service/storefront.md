@@ -3,6 +3,7 @@ title: Set up your storefront
 description: Learn how to run the scaffolding tool to setup your [!DNL Adobe Commerce as a Cloud Service] storefront.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Set up your storefront
 

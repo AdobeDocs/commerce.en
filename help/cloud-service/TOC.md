@@ -5,12 +5,12 @@ breadcrumb-title: "Cloud Service Guide"
 hide: yes
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Overview](overview.md)
+- [Feature comparison](feature-comparison.md)
 - [Getting started](getting-started.md)
 - [User management](user-management.md)
 - [Storefront](storefront.md)
