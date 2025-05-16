@@ -28,7 +28,7 @@ Updates include:
 ![Fix](../assets/fix.svg) Added the `x-request-id` from the server response for improved traceability. <!--MDEE-1041-->
 ![Fix](../assets/fix.svg) Fixed an issue where the synchronization status was not saved for the entire feed batch, which led to unnecessary resynchronization. <!--MDEE-1049-->
 ![Fix](../assets/fix.svg) Fixed an issue where all feeds in the feed batch were skipped during synchronization if one feed contained an error. <!--MDEE-976-->
-![Fix](../assets/fix.svg) Added support for dimensions in category permissions. <!--MDEE-654-->
+![Fix](../assets/fix.svg) Added support for dimensions in the category permissions indexer. <!--MDEE-654-->
 
 ## 103.4.3 Release
 
