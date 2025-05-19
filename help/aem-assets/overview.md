@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager Assets Integration for Commerce
-description: Learn how to integrate Experience Manager Assets with your [!DNL Commerce] instance to access to countless media assets for use in your store.
+title: Product Visuals powered by AEM Assets Integration for Commerce
+description: Learn how to integrate Adobe Experience Manager Assets with your [!DNL Commerce] instance to access to countless media assets for use in your store.
 feature: CMS, Media, Configuration, Integration
 ---
 
-# Adobe Experience Manager Assets Integration for Commerce
+# Product Visuals powered by AEM Assets Integration for Commerce
 
 Adobe Experience Manager (AEM) Assets Integration for Commerce combines the robust capabilities of AEM as a Digital Asset Management (DAM) system with Adobe Commerce to enhance eCommerce experiences. These capabilities are delivered by connecting Commerce projects to AEM's powerful asset management environment to provide a seamless, scalable, and efficient way to manage and deliver assets across commerce storefronts.
 
