@@ -466,6 +466,4 @@ See the [Storefront and Catalog Administrator end-to-end use case](./use-case/ad
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with your Commerce frontend components and backend data.
-></br></br>
->* [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with Adobe Commerce frontend components and backend data.
+> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with Commerce frontend components and backend data.
