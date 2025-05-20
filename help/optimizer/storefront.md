@@ -180,7 +180,7 @@ You need the following information to update the storefront boilerplate code:
 
 #### Review the default data connection configuration
 
-The default configuration file (`config.json`) in the root directory of the storefront boilerplate code establishes communication between the storefront and the specified [!DNL Adobe Commerce Optimizer] instance. This connection enables catalog data to flow to the storefront and populate various storefront interfaces, including the search component, product list, and product details pages.
+The default configuration file (`config.json`) in the root directory of the storefront boilerplate code establishes communication between the storefront and the specified [!DNL Adobe Commerce Optimizer] instance. This connection enables catalog data to flow to the storefront and populate various storefront interfaces like the search result and product details pages.
 
 For your initial storefront setup, you connect to the default [!DNL Adobe Commerce Optimizer] instance with sample data.
 
@@ -219,10 +219,9 @@ In the `config.json` file, the following key values specify the [!DNL Adobe Comm
 * `commerce-endpoint` specifies the instance to connect to. It is set to use the default [!DNL Adobe Commerce Optimizer] instance. This endpoint is used to retrieve catalog data.
 * `ac-environment-id` is the tenant ID for the [!DNL Adobe Commerce Optimizer] instance.
 * `headers` determine the data that flows from the instance to the storefront.
-   * `ac-channel-id` is set to `west_coast_inc`
+   * `ac-channel-id` is set to `9ced53d7-35a6-40c5-830e-8288c00985ad`
    * `ac-price-book-id` is set to `west_coast_inc`
    * `ac-scope-locale` is set to `en-US`
-   * `ac-price-book-id` is set to `west_coast_inc`
 
 These values set the channel ID, locale, and price book ID to send catalog data to a specific sales channel and filter that data based on specified locale and price book values. Later, you update the endpoint to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you, and replace the header values to retrieve the data from that instance.
 
@@ -376,11 +375,11 @@ Create and initialize your storefront content in the Document Author environment
 1. Paste the GitHub URL for your storefront boilerplate project in the [!UICONTROL **Project GitHub URL**] field.
 
 
-1. Import, preview, and publish the content to the Document Author environment, select **Create site**.
+1. Import, preview, and publish the content to the Document Author environment by selecting **Create site**.
 
-   After the site is created, you can use the links in the [!UICONTROL Edit content] section to open the Document Author environment to explore the content and the site.
+   ![[!DNL AEM demo content clone tool]](./assets/storefront-edit-initial-content.png){width="700" zoomable="yes"}
 
-   ![[!DNL AEM demo content clone tool]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
+   After the site is created, you can use the links in the [!UICONTROL Edit content] and [!UICONTROL View Site] sections to explore the demo storefront.
 
    The main links to your content and site follow these formats:
 
@@ -421,22 +420,21 @@ Verify that both the sample content and the data from the Adobe Commerce Optimiz
 
 1. View the sample catalog data coming from the Commerce Optimizer default instance.
 
-   1. Search for `tires` to see a drop-down list of available tire products.
+   1. In the storefront header, click the magnifying glass to search for `tires`.
 
-     ![[!DNL Discover Adobe Commerce Optimizer products]](./assets/storefront-site-with-aco-data.png){width="700" zoomable="yes"}
+      ![[!DNL View product list page]](./assets/storefront-site-with-aco-data.png){width="675" zoomable="yes"}
 
-    The search component is part of the storefront boilerplate code. The search results data is populated based on the storefront configuration in `config.json`.
+   1. Press **Enter** to view the search results page.
 
-   1. Press **Enter** to view the product list page.
+      ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
+
+      The search results page components are defined by the `search` content document. The search results data is populated based on the storefront configuration in `config.json`.
+
+   1. View the product details page by selecting any tire product on the page.
 
       ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
-   1. View a product details page by selecting any tire product on the page.
-
-      If you explore the storefront, notice that some of the components don't work. For example, adding a product to the shopping cart returns an error, and the account management components don't work. These issues occur because these components have not been configured to receive data from a Commerce backend. The data from the [!DNL Adobe Commerce Optimizer] instance populates only the search result and product details pages.
-
-   1. After exploring the storefront, continue with the tutorial.
-
+      The product details page components are defined by the `default` content document in the `product` folder.
 
 ### Step 8: Develop the storefront in your local environment
 
@@ -447,10 +445,11 @@ In this section, you update the storefront configuration from your local develop
 
 #### Start local development
 
-1. In your IDE, check out the main branch of your GitHub code repository.
+1. In your IDE, checkout your main branch, and reset it to the last commit on the remote branch.
 
    ```bash
    git checkout main
+   git reset --hard origin/main
    ```
 
 1. Install the required dependencies.
@@ -467,7 +466,7 @@ In this section, you update the storefront configuration from your local develop
 
    The first page of your boilerplate storefront should be visible in your browser at `http://localhost:3000`.
 
-  ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
+   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
 
 
 #### Update the storefront configuration
@@ -494,7 +493,7 @@ Update the storefront configuration file and preview the changes in your local d
 
    1. Save the file.
 
-      If your local preview is working correctly, the updates are applied to your local storefront. 
+      If your local preview is working correctly, the updates are applied to your local storefront.
 
 1. Check the site to see the results of the configuration change.
 
@@ -504,9 +503,7 @@ Update the storefront configuration file and preview the changes in your local d
 
       ![Search for tires](./assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
 
-      Notice that the drop-down list does not populate.
-
-   1. Press **Enter** to display the Product list page.
+   1. Press **Enter** to display the Search Results page.
 
       ![Empty search results with invalid header values](./assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
