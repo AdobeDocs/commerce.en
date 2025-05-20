@@ -73,7 +73,7 @@ Follow these steps to set up a storefront to use with [!DNL Adobe Commerce Optim
 
 1. **[Create a code repository](#step-1-create-site-code-repository)**–Create a GitHub repository from the Adobe Commerce + Edge Delivery Services boilerplate template. Include all branches from the source repository.
 1. **[Update the storefront boilerplate](#step-2-update-the-storefront-boilerplate)**–Update the custom boilerplate template on the `aco` branch to connect your content folder to the storefront.
-1. **[Upload the updated storefront boilerplate code](#step-3-upload-the-updated-boilerplate-code)**–Overwrite the code on the `main` branch with the updated code from the `aco` branch.
+1. **[Deploy changes](#step-3-deploy-changes)**–Overwrite the code on the `main` branch with the updated code from the `aco` branch.
 1. **[Add the CodeSync app](#step-5-add-the-aem-code-sync-app)**–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and have pushed the code to the `main` branch.
 1. **[Add content documents to your storefront](#step-6-add-content-documents-for-your-storefront)**–Use the demo content clone tool to create and initialize your storefront content in the Document Author environment hosted on `https://da.live`.
 1. **[Preview your site and view sample data](#step-7-preview-your-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
@@ -263,7 +263,7 @@ You need the following information to update the storefront boilerplate code:
 
 1. Save the file.
 
-### Step 3: Upload the updated boilerplate code
+### Step 3: Deploy changes
 
 To use the customized storefront boilerplate code, overwrite the code on the `main` branch with your updates.
 
