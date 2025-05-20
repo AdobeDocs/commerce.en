@@ -77,7 +77,7 @@ Follow these steps to set up a storefront to use with [!DNL Adobe Commerce Optim
 1. **[Add the CodeSync app](#step-5-add-the-aem-code-sync-app)**–Connect your repository to the Edge Delivery Service. Do not connect the Code Sync app until you have completed the source code customization and have pushed the code to the `main` branch.
 1. **[Add content documents to your storefront](#step-6-add-content-documents-for-your-storefront)**–Use the demo content clone tool to create and initialize your storefront content in the Document Author environment hosted on `https://da.live`.
 1. **[Preview your site and view sample data](#step-7-preview-your-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
-1. **[Develop the storefront in your local environment](#step-8%3A-develop-the-storefront-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
+1. **[Develop the storefront in your local environment](#step-8-develop-the-storefront-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
 1. **[Next steps](#next-steps)**–Learn more about managing and displaying content and data in the storefront.
 
 
