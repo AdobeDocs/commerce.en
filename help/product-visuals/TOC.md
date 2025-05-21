@@ -15,6 +15,6 @@ feature: CMS, Page Content
     - [Install Adobe Commerce packages](configure-commerce.md)
     - [Configure the integration](setup-synchronization.md)
     - [View and manage logs](log-files.md)
-  - Manage assets {#manage}
+  - Manage assets {#manage-product-visuals}
     - [Use Product Visuals powered by AEM Assets Integration with Commerce](manage-aem-assets.md)
     - [Migrate media files to Product Visuals powered by AEM Assets](migrate-data.md)
