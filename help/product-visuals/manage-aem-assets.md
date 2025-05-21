@@ -1,10 +1,10 @@
 ---
-title: Use AEM Assets
-description: Manage your store media assets with AEM Assets.
+title: Manage Product Visuals powered by AEM Assets
+description: Manage your store product visuals with AEM Assets.
 feature: CMS, Media
 ---
 
-# Use AEM Assets
+# Manage Product Visuals powered by AEM Assets
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
 
