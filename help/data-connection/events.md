@@ -21,13 +21,13 @@ The behavioral events collect anonymized behavioral data from your shoppers as t
 
 Storefront events capture data from shoppers' interactions on the site and include events such as `addToCart`, `pageView`, `createAccount`, `editAccount`, `startCheckout`, `completeCheckout`, `signIn`, `signOut`, and so on. Storefront events apply to simple and configurable products only.
 
-See the [developer documentation]() to learn more about storefront events. 
+See the [developer documentation](https://developer-stage.adobe.com/commerce/services/shared-services/storefront-events/) to learn more about storefront events. 
 
 ## Customer profile events
 
 Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on.
 
-See the [developer documentation]() to learn more about customer profile events. 
+See the [developer documentation](https://developer-stage.adobe.com/commerce/services/shared-services/storefront-events/) to learn more about customer profile events. 
 
 ## Search events
 
@@ -35,7 +35,7 @@ The search events provide data relevant to the shopper's intent. Insight into a 
 
 Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross-reference a search request to the corresponding search response.
 
-See the [developer documentation]() to learn more about search events. 
+See the [developer documentation](https://developer-stage.adobe.com/commerce/services/shared-services/storefront-events/) to learn more about search events. 
 
 ## B2B events
 
@@ -43,4 +43,4 @@ See the [developer documentation]() to learn more about search events.
 
 The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which products your customers purchase frequently and create campaigns based on that data.
 
-See the [developer documentation]() to learn more about B2B events.
+See the [developer documentation](https://developer-stage.adobe.com/commerce/services/shared-services/storefront-events/) to learn more about B2B events.
