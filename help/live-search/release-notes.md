@@ -71,6 +71,11 @@ _April 25, 2023_
 
 ### PLP widget
 
+_May 22, 2025_
+
+![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart button remained in English when the locale was changed to French, German, Italian or Spanish.
+![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart button was displayed for out-of-stock products.
+
 _May 31, 2024_
 
 ![New](../assets/new.svg) Released version 2.0.0 of the PLP widget, which adds support for the following features:
