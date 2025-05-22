@@ -10,8 +10,8 @@ exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 
 Adobe Commerce offers three deployment models:
 
-- [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}[Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}[Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
 - [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (on-premises)
 
 This comparison focuses on the differences between software-as-a-service (SaaS) and platform-as-a-service (PaaS) models, which provide different levels of customization, extensibility, and control over your commerce implementation.
@@ -29,8 +29,8 @@ The following table describes the features and replacement solutions available i
 <table>
     <thead>
         <tr>
-            <th>PaaS model</th>
-            <th>SaaS model</th>
+            <th>PaaS model [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}</th>
+            <th>SaaS model [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}</th>
             <th>Details</th>
         </tr>
     </thead>
@@ -75,8 +75,8 @@ The following table compares platform capabilities and extensibility features to
     <thead>
         <tr>
             <th>Feature</th>
-            <th>SaaS model</th>
-            <th>PaaS model</th>
+            <th>PaaS model [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}</th>
+            <th>SaaS model [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}</th>
         </tr>
     </thead>
     <tbody>
@@ -85,82 +85,82 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>B2B functionality</td>
-            <td>Pre-installed with core B2B features<sup>1</sup></td>
             <td>Full B2B capabilities available after installation</td>
+            <td>Pre-installed with core B2B features<sup>1</sup></td>
         </tr>
         <tr>
             <td>Experimentation</td>
-            <td>A/B testing to optimize engagement and conversion</td>
             <td>Add-on for certain tiers</td>
+            <td>A/B testing to optimize engagement and conversion</td>
         </tr>
         <tr>
             <td>Feature and security updates</td>
-            <td>Automatically deployed</td>
             <td>Requires manual upgrade and patching</td>
+            <td>Automatically deployed</td>
         </tr>
         <tr>
             <td>Hosting infrastructure</td>
-            <td>Multi-tenant</td>
             <td>Single-tenant</td>
+            <td>Multi-tenant</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Commerce Admin customization</strong></td>
         </tr>
         <tr>
             <td>Extensible core Admin screens</td>
-            <td>Preset filters, visibility controls</td>
             <td>Complete layout and functionality customization</td>
+            <td>Preset filters, visibility controls</td>
         </tr>
         <tr>
             <td>Extensible new Admin screens</td>
-            <td>External app injection (Admin UI SDK)</td>
             <td>Standard Admin UI integration and external app injection (Admin UI SDK)</td>
+            <td>External app injection (Admin UI SDK)</td>
         </tr>
         <tr>
             <td>Customizable Admin theme</td>
-            <td>No theming framework</td>
             <td>Extensible theming framework</td>
+            <td>No theming framework</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Extensibility</strong></td>
         </tr>
         <tr>
             <td>Extensibility model</td>
-            <td>Out-of-process only (APIs, events, App Builder)</td>
             <td>In-process (PHP customization) and out-of-process (APIs, events, App Builder)</td>
+            <td>Out-of-process only (APIs, events, App Builder)</td>
         </tr>
         <tr>
             <td>Extensible web APIs</td>
-            <td>API Mesh with custom resolvers</td>
             <td>Native REST/GraphQL extensibility and API Mesh with custom resolvers</td>
+            <td>API Mesh with custom resolvers</td>
         </tr>
         <tr>
             <td>Data model extensibility</td>
-            <td>Custom attributes for core and B2B entities<sup>2</sup></td>
             <td>Complete data model customization</td>
+            <td>Custom attributes for core and B2B entities<sup>2</sup></td>
         </tr>
         <tr>
             <td>Technologies</td>
-            <td>CSS, CLI, HTML, JS, Node</td>
             <td>CSS, CLI, HTML, JS, PHP, XML</td>
+            <td>CSS, CLI, HTML, JS, Node</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
         </tr>
         <tr>
             <td>Search index customizations</td>
-            <td>Requires third-party solutions</td>
             <td>Native search customization</td>
+            <td>Requires third-party solutions</td>
         </tr>
         <tr>
             <td>Custom email types</td>
-            <td>Standard email templates only</td>
             <td>Full email customization</td>
+            <td>Standard email templates only</td>
         </tr>
         <tr>
             <td>Custom data storage</td>
-            <td>App Builder state library (file only)<sup>3</sup></td>
             <td>DB, file, cache, queue</td>
+            <td>App Builder state library (file only)<sup>3</sup></td>
         </tr>
     </tbody>
     <tfoot>
