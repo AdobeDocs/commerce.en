@@ -6,7 +6,9 @@ exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
 ---
 # Collect Data
 
-When you install and configure SaaS-based Adobe Commerce features such as [[!DNL Product Recommendations]](install-configure.md) or [[!DNL Live Search]](../live-search/install.md), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers [!DNL Product Recommendations]. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
+When you install and configure [[!DNL Product Recommendations]](install-configure.md), the module deploys behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers [!DNL Product Recommendations]. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
+
+See the [developer documentation]() to learn more about Product Recommendations events. 
 
 >[!NOTE]
 >
