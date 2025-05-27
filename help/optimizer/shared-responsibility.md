@@ -1,5 +1,5 @@
 ---
-title: Shared responsibility
+title: Shared Responsibility
 description: Learn about the security responsibilities of each party involved in your [!DNL Adobe Commerce Optimizer] project.
 role: Admin, Architect, Leader
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
