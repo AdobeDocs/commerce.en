@@ -1,7 +1,6 @@
 ---
 title: User management
 description: Learn how to manage users in [!DNL Adobe Commerce Optimizer].
-exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # User management
@@ -41,7 +40,7 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product.
 
-    ![select product](./assets/backend.png){width="600" zoomable="yes"}
+    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
 
 1. Select the [!UICONTROL **Admins**] tab.
 
@@ -63,7 +62,7 @@ The following instructions provide information on how to add users and developer
 
 1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product.
 
-    ![select product](./assets/backend.png){width="600" zoomable="yes"}
+    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
 
 1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
@@ -73,7 +72,7 @@ The following instructions provide information on how to add users and developer
     >
     >Admins added from this screen are [product profile admins](#understanding-roles) and do not have access to the Commerce Admin.
 
-    ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
+    ![tab select](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
