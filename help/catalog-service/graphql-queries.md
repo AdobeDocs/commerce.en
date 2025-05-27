@@ -5,6 +5,7 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
 ---
+# Retrieve catalog data with GraphQL {#graphql-queries}
 
 Use  GraphQL queries to retrieve to retrieve product, price, and other data from the Adobe Commerce Catalog SaaS data space and use it to render Commerce experiences more quickly than the native Adobe Commerce GraphQL queries.
 
