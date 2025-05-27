@@ -22,6 +22,12 @@ Updates include:
 
 ## Current major version
 
+## 103.4.5 Release
+
+![Fix](../assets/fix.svg) filter empty providers. <!--MDEE-1042-->
+![Fix](../assets/fix.svg) store error logs together with main exception. <!--MDEE-1064-->
+![Fix](../assets/fix.svg) extract gift card as an attribute. <!--MDEE-1042-->
+
 ## 103.4.4 Release
 
 ![New](../assets/new.svg) Added a warning message that displays when the `cleanup-feed` argument is added to the `saas:resync` CLI command. The `--cleanup-feed` option should be used cautiously and only in specific scenarios like after environment cleanup or with the `--dry-run` option. Using it in other cases can lead to data loss and sync issues. <!--MDEE-1047-->
