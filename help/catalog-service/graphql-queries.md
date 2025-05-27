@@ -3,7 +3,6 @@ title: '[!DNL Retrieve catalog data with GraphQL]'
 description: 'Use GraphQL queries to retrieve the catalog data to power Commerce experiences.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
 ---
 # Retrieve catalog data with GraphQL {#graphql-queries}
 
