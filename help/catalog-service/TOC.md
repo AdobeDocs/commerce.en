@@ -11,9 +11,10 @@ feature: Services, Catalog Service
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Catalog Service]](overview.md)
 - [Onboarding and installation](installation.md)
+- [Retrieve catalog data using GraphQL](graphql-queries.md)
 - [Catalog Service and API Mesh](mesh.md)
-- [Display Taxed Prices with the API Mesh](taxes.md)
-- GraphQL queries {#graphql}
+    - [Use Case: Display Taxed Prices](taxes.md)
+- [GraphQL queries](graphql-queries.md)
     - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
     - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
     - [productSearch query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
