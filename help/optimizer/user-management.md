@@ -21,7 +21,7 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce Op
 
 The following roles are available for [!DNL Adobe Commerce Optimizer]. To view or edit these roles, in the Commerce Admin navigate to **System** > **Permissions** > **User Roles**.
 
-* **Users** - Users have Admin access to the Commerce Admin, but cannot manage product-level access in the Admin Console. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
+* **Users** - Users have Admin access to the Commerce Admin, but cannot manage product-level access in the Admin Console. Users can also use credits to create instances (!!!FOR GA, ACO WILL HAVE ITS OWN WAY TO CREATE AN INSTANCE. NEED TO UPDATE THIS LINK.) in the [!DNL Commerce Cloud Manager]. 
 
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and are added to the Commerce instance as a developer user. This means they can use the [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
@@ -40,7 +40,7 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product.
 
-    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
+    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"} (!!!NEED NEW SCREENSHOT SPECIFIC FOR ACO PRODUCT)
 
 1. Select the [!UICONTROL **Admins**] tab.
 
@@ -62,7 +62,7 @@ The following instructions provide information on how to add users and developer
 
 1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product.
 
-    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
+    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"} (!!!NEED NEW SCREENSHOT SPECIFIC FOR ACO PRODUCT)
 
 1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
@@ -72,7 +72,7 @@ The following instructions provide information on how to add users and developer
     >
     >Admins added from this screen are [product profile admins](#understanding-roles) and do not have access to the Commerce Admin.
 
-    ![tab select](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+    ![tab select](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"} (!!!NEED NEW SCREENSHOT SPECIFIC FOR ACO PRODUCT)
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
