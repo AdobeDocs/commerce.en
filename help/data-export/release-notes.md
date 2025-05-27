@@ -24,9 +24,8 @@ Updates include:
 
 ## 103.4.5 Release
 
-![Fix](../assets/fix.svg) Exclude gift card empty providers from processing <!--MDEE-1042-->
+![Fix](../assets/fix.svg) Send GiftCard to the Feed API as a standard product <!--MDEE-1042-->
 ![Fix](../assets/fix.svg) Include error logs alongside primary exception details <!--MDEE-1064-->
-![Fix](../assets/fix.svg) Expose gift card as a separate attribute. <!--MDEE-1042-->
 
 ## 103.4.4 Release
 
