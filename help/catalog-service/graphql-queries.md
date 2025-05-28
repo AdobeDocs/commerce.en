@@ -6,7 +6,7 @@ feature: Services, API Mesh, Catalog Service
 ---
 # Retrieve catalog data with GraphQL {#graphql-queries}
 
-Use  GraphQL queries to retrieve to retrieve product, price, and other data from the Adobe Commerce Catalog SaaS data space and use it to render Commerce experiences more quickly than the native Adobe Commerce GraphQL queries.
+Use  GraphQL queries to retrieve product, price, and other data from the Adobe Commerce Catalog SaaS data space and use it to render Commerce experiences more quickly than the native Adobe Commerce GraphQL queries.
 
 The Catalog Service provides the following queries:
 
