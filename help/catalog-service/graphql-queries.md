@@ -3,7 +3,6 @@ title: '[!DNL Retrieve catalog data with GraphQL]'
 description: 'Use GraphQL queries to retrieve the catalog data to power Commerce experiences.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Retrieve catalog data with GraphQL {#graphql-queries}
 
