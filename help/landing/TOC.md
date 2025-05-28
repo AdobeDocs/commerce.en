@@ -13,7 +13,6 @@ recommendations: noDisplay
    - [Release notes](/help/landing/release-notes-all.md)
 - [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
-   - Commerce services {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
