@@ -24,8 +24,8 @@ Updates include:
 
 ## 103.4.5 Release
 
-![Fix](../assets/fix.svg) Send GiftCard to the Feed API as a standard product <!--MDEE-1042-->
-![Fix](../assets/fix.svg) Include error logs alongside primary exception details <!--MDEE-1064-->
+![New](../assets/new.svg) SaaS data export now supports the Adobe Commerce `giftcard` product type. In the data feed, Gift card products are exported as simple products with the product attribute type `ac_giftcard`. <!--MDEE-1042-->
+![Fix](../assets/fix.svg)  Improved data export error reporting. Logs now include more detailed error messages, including original technical details to make it easier to debug and trace errors. <!--MDEE-1064-->
 
 ## 103.4.4 Release
 
