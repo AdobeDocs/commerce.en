@@ -1,5 +1,5 @@
 ---
-user-guide-title: Adobe Commerce Services Guides
+user-guide-title: Services Guides
 user-guide-description: Documentation and resources for hosted services that provide extended capabilities to Adobe Commerce and Magento Open Source.
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
