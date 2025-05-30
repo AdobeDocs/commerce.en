@@ -5,7 +5,7 @@ exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
 ---
 # Add Synonyms
 
-Increase customer engagement by adding your own curated list of [!DNL Live Search] synonyms. [!DNL Live Search] can manage up to 200 synonyms per `Data Space ID`.
+Increase customer engagement by adding your own curated list of [!DNL Live Search] synonyms. [!DNL Live Search] can manage up to 200 synonyms per store view.
 
 ![[!DNL Live Search] synonyms](assets/synonym-workspace.png)
 
