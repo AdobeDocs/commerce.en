@@ -112,91 +112,102 @@ This phase is critical for minimizing risks and establishing a clear migration p
 
 **Security configuration review:**
 
-  * Custom WAF rules, IP whitelists, etc.
+  * Assess any custom WAF rules, IP whitelists, and any other security configurations.
 
 **Defining migration scope and strategy:**
 
-* **Phased vs. big-bang migration:** Discuss pros and cons, recommending phased for incremental value.
+* **Phased vs. all-at-once migration:** Discuss the pros and cons of each approach.
 * **Identify core business processes:** Prioritize functionalities that must be migrated first.
-* **Headless vs. monolithic storefront:** Decision point for new storefront development or adapting existing.
-* **Integration strategy:** How existing integrations will be re-platformed (API Mesh, App Builder, direct API).
-* **Data migration strategy:** Full historical data, partial data, or fresh start.
+* **Headless vs. monolithic storefront:** Decision point for new storefront development or adapting existing storefronts.
+* **Integration strategy:** Determine how existing integrations will be re-platformed (API Mesh, App Builder, direct API).
+* **Data migration strategy:** Determine if you intend to migrate using full historical data, partial data, or no migrated data.
 
 **Team readiness & training:**
 
-* Familiarization with ACCS concepts, development workflows, and new tools.
-* Hands-on training with Adobe App Builder, Edge Delivery Services, and ACCS deployment pipelines.
+* Familiarization yourself with [!DNL Adobe Commerce as a Cloud Service] concepts, development workflows, and new tools.
+* Attend hands-on training with Adobe App Builder, Edge Delivery Services, and [!DNL Adobe Commerce as a Cloud Service] deployment pipelines.
 
 **Environment setup & provisioning:**
 
-* Provisioning ACCS sandbox and development environments via Adobe Cloud Manager.
-* Familiarization with new environment variables and configuration management.
+* Provision your [!DNL Adobe Commerce as a Cloud Service] sandbox and development environments with Adobe Cloud Manager.
+* Familiarize yourself with the new environment variables and configuration management.
 
 ### Incremental migration phase
 
 The following steps outline the development and execution process of the migration using an incremental approach:
 
-**Phase 1: foundational migration & storefront POC**
+#### Phase 1 - foundational migration and storefront POC
 
-* **Code refactoring & customization strategy:**
-  * **Identify & remove core overrides:** Prioritize removing or re-implementing any direct core Adobe Commerce code modifications. These are largely incompatible with ACCS's locked core.
-  * **Refactor custom modules:** Adapt custom modules to adhere to ACCS extensibility patterns (service contracts, plugins, events).
-  * **Analyze third-party extensions:** Replace with ACCS-compatible versions or custom integrations via App Builder.
-  * **Implement new ACCS storefront front-end components (optional but recommended):**
-    * Start with Storefront powered by Edge Delivery Services or custom headless.
-    * Connect to ACCS via GraphQL APIs.
-    * Develop basic product display, category listing, and non-transactional functionality.
+**Code refactoring & customization strategy:**
 
-* **Data migration preparation:**
-  * Cleanse and optimize existing data.
-  * Identify critical data sets for initial migration (e.g., products, categories).
-  * Familiarize with Adobe's recommended data migration tools.
+* **Identify and remove core overrides:** Prioritize removing or re-implementing any direct core Adobe Commerce code modifications. These are mostly incompatible with [!DNL Adobe Commerce as a Cloud Service]'s locked core.
+* **Refactor custom modules:** Adapt custom modules to adhere to [!DNL Adobe Commerce as a Cloud Service] extensibility patterns (service contracts, plugins, events).
+* **Analyze third-party extensions:** Replace with [!DNL Adobe Commerce as a Cloud Service] compatible versions or custom integrations with App Builder.
+* **Implement new [!DNL Adobe Commerce as a Cloud Service] storefront front-end components:** (optional, but recommended)
+  * Start with Commerce Storefront powered by Edge Delivery Services or custom headless storefront.
+  * Connect to [!DNL Adobe Commerce as a Cloud Service] using GraphQL APIs.
+  * Develop basic product display, category listing, and non-transactional functionality.
 
-* **Basic ACCS environment setup:**
-  * Configure core ACCS settings (e.g., store views, basic locales).
-  * Establish continuous integration/continuous deployment (CI/CD) pipelines with Cloud Manager.
+**Data migration preparation:**
 
-**Phase 2: core commerce functionality & integrations**
+* Clean and optimize existing data.
+* Identify critical data sets for initial migration (such as products and categories).
+* Familiarize yourself with Adobe's recommended data migration tools.
 
-* **Product & catalog migration:**
-  * Migrate product data (attributes, images, inventory) to ACCS.
-  * Leverage new catalog management features.
-  * Integrate with existing PIM systems (if applicable) using App Builder or API Mesh.
+**Basic [!DNL Adobe Commerce as a Cloud Service] environment setup:**
 
-* **Customer & order data migration:**
-  * Migrate existing customer accounts and order history (consider the volume and business necessity).
-  * Ensure customer password compatibility (or plan for password reset on first login).
+* Configure core [!DNL Adobe Commerce as a Cloud Service] settings (such as store views and basic locales).
+* Establish continuous integration/continuous deployment (CI/CD) pipelines with Cloud Manager.
 
-* **Payment & shipping integrations:**
-  * Re-integrate existing payment gateways and shipping providers.
-  * Leverage Adobe's Payment Services where applicable.
-  * Implement custom integrations via App Builder if needed.
+#### Phase 2 - core Commerce functionality and integrations
 
-* **Search & merchandising:**
-  * Integrate with Adobe Commerce's Live Search and Product Recommendations (powered by Sensei).
-  * Configure merchandising rules and dynamic categories.
+**Product and catalog migration:**
 
-* **Basic B2B functionality (if applicable):**
-  * Migrate company accounts, shared catalogs, and pricing rules.
-  * Configure quote management and purchase approvals.
+* Migrate product data (attributes, images, inventory) to [!DNL Adobe Commerce as a Cloud Service].
+* Leverage new catalog management features.
+* Integrate with existing PIM systems (if applicable) using App Builder or API Mesh.
 
-* **Performance optimization:**
-  * Leverage Edge Delivery Services for front-end optimization.
-  * Monitor performance metrics in the ACCS environment.
+**Customer and order data migration:**
 
-**Phase 3: advanced features & optimization**
+* Migrate existing customer accounts and order history (consider the volume and business necessity).
+* Ensure customer password compatibility (or plan for password reset on first login).
 
-* **Content management (CMS integration):**
-  * Leverage AEM Sites integration for rich content experiences (headless or hybrid).
+**Payment and shipping integrations:**
 
-* **Remaining integrations:**
-  * Migrate any remaining third-party integrations (ERP, CRM, OMS, etc.) using App Builder and API Mesh.
-  * Develop custom APIs or webhooks as needed.
+* Re-integrate existing payment gateways and shipping providers.
+* Leverage Adobe's Payment Services where applicable.
+* Implement custom integrations using App Builder, if needed.
 
-* **User acceptance testing (UAT) & performance testing:**
-  * Thorough testing of all functionalities, user flows, and integrations.
-  * Stress testing to ensure ACCS can handle peak loads.
+**Search and merchandising:**
 
+* Integrate with Adobe Commerce's Live Search and Product Recommendations (powered by AdobeSensei).
+* Configure merchandising rules and dynamic categories.
+
+**Basic B2B functionality (if applicable):**
+
+* Migrate company accounts, shared catalogs, and pricing rules.
+* Configure quote management and purchase approvals.
+
+**Performance optimization:**
+
+* Leverage Edge Delivery Services for front-end optimization.
+* Monitor performance metrics in the [!DNL Adobe Commerce as a Cloud Service] environment.
+
+#### Phase 3 - Advanced features and optimization
+
+**Content management (CMS integration):**
+
+* Leverage AEM Sites integration for rich content experiences (headless or hybrid).
+
+**Remaining integrations:**
+
+* Migrate any remaining third-party integrations (ERP, CRM, OMS, and others) using App Builder and API Mesh.
+* Develop custom APIs or webhooks as needed.
+
+**User acceptance testing (UAT) and performance testing:**
+
+* Thoroughly test all functionalities, user flows, and integrations.
+* Stress test to ensure [!DNL Adobe Commerce as a Cloud Service] can handle peak loads.
 
 ### Post-migration and ongoing operations
 
@@ -207,18 +218,22 @@ The following steps outline the development and execution process of the migrati
 
 **Post-launch operations:**
 
-* **Decommissioning PaaS environment:**
-  * Securely archive or delete old PaaS instances and data after a validation period.
+**Decommissioning PaaS environment:**
 
-* **Ongoing development workflow:**
-  * Embrace the versionless nature of ACCS: continuous small deployments rather than large upgrades.
-  * Utilize Cloud Manager for managing environments and deployments.
-  * Leverage App Builder for extending functionality without impacting the core.
+* Securely archive or delete old PaaS instances and data after the validation period.
 
-* **Monitoring, performance & security:**
-  * Continuous monitoring of site performance, errors, and security logs.
-  * Utilize Adobe's built-in security features and adhere to best practices.
+**Ongoing development workflow:**
 
-* **Training & documentation:**
-  * Train new developers and business users on the ACCS platform and workflows.
-  * Maintain up-to-date internal documentation for custom integrations and processes.
+* Embrace the versionless nature of [!DNL Adobe Commerce as a Cloud Service], which has continuous small deployments rather than large upgrades.
+* Utilize Cloud Manager for managing environments and deployments.
+* Leverage App Builder for extending functionality without impacting the core.
+
+**Monitoring, performance and security:**
+
+* Continuously monitor site performance, errors, and security logs.
+* Utilize Adobe's built-in security features and adhere to best practices.
+
+**Training and documentation:**
+
+* Train new developers and business users on the [!DNL Adobe Commerce as a Cloud Service] platform and workflows.
+* Maintain up-to-date internal documentation for custom integrations and processes.
