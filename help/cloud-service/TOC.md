@@ -17,3 +17,4 @@ recommendations: noDisplay, noCatalog
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
 - [Migration](migration.md)
+- [Bulk data migration](bulk-data-migration.md)
