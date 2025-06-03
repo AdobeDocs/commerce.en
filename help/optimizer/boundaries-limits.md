@@ -34,15 +34,15 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 - The maximum number of facets is 100. All the facets must be filterable attributes.
 - The maximum number of options a single facet cat returns is 100, which can be increased per support request.
 
-## Channels and polices
+## Catalog views and policies
 
-- The maximum number of channels per tenant is 1000.
-- The maximum number of polices assigned to one channel is 10.
+- The maximum number of catalog views per tenant is 1000.
+- The maximum number of polices assigned to one catalog view is 10.
 - The maximum number of attribute values used in a policy is 100. 
 
-## Product discovery and recommendations
+## Search and recommendations
 
-- For product discovery, attribute based merchandising and price settings are not supported.
+- For Search, attribute based merchandising and price settings are not supported.
 - For recommendations:
 
     - [!DNL Adobe Commerce Optimizer] supports the _Recently Viewed_ recommendation type for early access.

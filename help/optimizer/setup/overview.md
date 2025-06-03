@@ -18,7 +18,7 @@ Data insights provides granular details about shopper behavior, product attribut
 Data insights offers:
 
 - **Behavioral Data Collection** - Tracks shopper interactions, such as searches, clicks, and purchases, to analyze trends and improve the shopping experience.
-- **Product Discovery Insights** - Offers detailed information about product attributes and their relevance to policies and channels.
+- **Search Insights** - Offers detailed information about product attributes and their relevance to policies and catalog views.
 - **Eventing** - Monitors the health of behavioral events to ensure accurate data collection. Provides insights to help businesses refine their merchandising strategies.
 
-These insights enable businesses to make data-driven decisions to enhance search functionality, optimize product recommendations, and improve overall storefront performance. ​
+These insights enable businesses to make data-driven decisions to enhance search functionality, optimize Recommendations, and improve overall storefront performance. ​

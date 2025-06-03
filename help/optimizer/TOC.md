@@ -12,21 +12,47 @@ recommendations: noDisplay
 - [Overview](overview.md)
 - [Get Started](get-started.md)
 - [Boundaries and Limitations](boundaries-limits.md)
+- Latest updates in documentation
+- Managing Results {#manage-results}
+   - [Success Metrics Report](./manage-results/success-metrics.md)
+   - [Search Performance](./manage-results/search-performance.md)
 - Merchandising {#merchandising}
    - [Overview](./merchandising/overview.md)
-   - [Product Discovery](./merchandising/product-discovery.md)
-   - [Recommendations](./merchandising/recommendations.md)
-- Catalog {#catalog}
-   - [Overview](./catalog/overview.md)
-   - [Channels](./catalog/channels.md)
+   - Recommendations {#recommendations}
+      - [Overview](./merchandising/recommendations/overview.md)
+      - [Performance](./merchandising/recommendations/workspace.md)
+      - [Create](./merchandising/recommendations/create.md)
+      - [Edit](./merchandising/recommendations/edit.md)
+      - [Filters](./merchandising/recommendations/filters.md)
+      - [Best Practices](./merchandising/recommendations/best-practice.md)
+   - Merchandising Rules {#rules}
+      - [Overview](./merchandising/rules/overview.md)
+      - [Workspace](./merchandising/rules/workspace.md)
+      - [Add](./merchandising/rules/add.md)
+      - [Manage](./merchandising/rules/manage.md)
+      - [Default search rule](./merchandising/rules/overview.md#default-rule)
+      - [Best Practices](./merchandising/rules/best-practice.md)
+   - Facets {#facets}
+      - [Overview](./merchandising/facets/overview.md)
+      - [Workspace](./merchandising/facets/workspace.md)
+      - [Types](./merchandising/facets/type.md)
+      - [Add](./merchandising/facets/add.md)
+      - [Manage](./merchandising/facets/manage.md)
+      - [Best Practices](./merchandising/facets/best-practice.md)
+   - Synonyms {#synonyms}
+      - [Overview](./merchandising/synonyms/overview.md)
+      - [Workspace](./merchandising/synonyms/workspace.md)
+      - [Types](./merchandising/synonyms/type.md)
+      - [Add](./merchandising/synonyms/add.md)
+      - [Manage](./merchandising/synonyms/manage.md)
+      - [Best Practices](./merchandising/synonyms/best-practice.md)
+- Setup {#setup}
+   - [Catalog Views](./catalog/catalog-views.md)
    - [Policies](./catalog/policies.md)
-- Data Insights {#data-insights}
-   - [Overview](./data-insights/overview.md)
    - [Data Sync](./data-insights/data-sync.md)
-   - [Eventing](./data-insights/eventing.md)
-   - [Troubleshooting](./data-insights/troubleshooting.md)
+   - Events {#events}
+      - [Overview](./setup/events/overview.md)
 - [Storefront](storefront.md)
+- [Settings](settings.md)
 - Use Case {#use-case}
-   - [Overview](./use-case/overview.md)
    - [Storefront and Catalog Administrator End-to-End Use Case](./use-case/admin-use-case.md)
-   

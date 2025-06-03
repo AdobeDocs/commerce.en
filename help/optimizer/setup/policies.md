@@ -1,6 +1,6 @@
 ---
 title: Policies
-description: Learn how to use policies to filter data within a channel to ensure that data is sent to the right destination.
+description: Learn how to use policies to filter data within a catalog view to ensure that data is sent to the right destination.
 hide: yes
 recommendations: noCatalog
 exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
@@ -11,13 +11,13 @@ exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
-Policies are data access filters contained within channels that further refine the data delivered to each channel. Policies ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram).
+Policies are data access filters contained within catalog views that further refine the data delivered to each catalog view. Policies ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram).
 
 Policies are based on product attributes, such as brand, model, or part category, and are used to tailor the catalog data to meet specific business requirements. ​
 
 ## Filters
 
-Filters are the mechanism within a policy that enforce catalog segmentation. Filters allow businesses to tailor storefronts and channels to specific product sets based on operational needs. You use criteria such as product attributes, operators, and values to define a rule or condition that indicates which products are included or excluded in a channel or storefront.
+Filters are the mechanism within a policy that enforce catalog segmentation. Filters allow businesses to tailor storefronts and catalog views to specific product sets based on operational needs. You use criteria such as product attributes, operators, and values to define a rule or condition that indicates which products are included or excluded in a catalog view or storefront.
 
 ### Parts of a filter
 
@@ -38,9 +38,9 @@ A filter with the attribute `part_category`, an operator of `IN`, and values `br
 
 There are two types of value sources: **STATIC** and **TRIGGER**.
 
-Policies with a **Value source** of **STATIC** are considered universal policies. Universal policies define the experience of a website as a whole. This means that the channel will always execute that policy. In other words, the execution of that policy is not based on any user interaction on the storefront.
+Policies with a **Value source** of **STATIC** are considered universal policies. Universal policies define the experience of a website as a whole. This means that the catalog view will always execute that policy. In other words, the execution of that policy is not based on any user interaction on the storefront.
 
-Policies with a **Value source** of **TRIGGER** are referred to as exclusive policies. This means that the channel will execute that policy only when the trigger is specified in the header of the API call. On the storefront, this means information is displayed based on what the shopper selects. For example, in the following image, there are two drop-down menus: **Brand** and **Model**.
+Policies with a **Value source** of **TRIGGER** are referred to as exclusive policies. This means that the catalog view will execute that policy only when the trigger is specified in the header of the API call. On the storefront, this means information is displayed based on what the shopper selects. For example, in the following image, there are two drop-down menus: **Brand** and **Model**.
 
 ![Trigger value source on storefront](../assets/policy-trigger.png)
 
@@ -127,4 +127,4 @@ In this section, you create a new policy. The policy can be either **STATIC** or
 
 1. To verify your new policy, go back to the list of policies by clicking the back arrow. ​You will see your new policy listed.
 
-By following these steps, the policy will be created and ready to be linked to a channel to control product visibility.
+By following these steps, the policy will be created and ready to be linked to a catalog view to control product visibility.
