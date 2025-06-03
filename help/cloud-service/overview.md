@@ -53,7 +53,7 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 
 ## Product Visuals
 
-Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native CDN capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
+Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native asset management capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
 See [asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) to learn more.
 
