@@ -157,4 +157,4 @@ Some events are required to populate the [Search dashboard](../../manage-results
 | Dashboard area        | Events      | Join field |
 | ------------------- | ------------- | ---------- |
 | Unique searches       |`page-view`, `search-request-sent`, `search-response-received` | `searchRequestId`  |
-| Zero results searches |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`
+| Zero results searches |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`|

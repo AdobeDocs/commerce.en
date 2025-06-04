@@ -20,8 +20,8 @@ The *Search performance* page provides insight into the search terms that shoppe
 
 To enter the **Date range**, click the calendar and do one of the following:
 
-   - To specify a single date, double-click the date on the calendar.
-   - To specify a range of dates, click the first and last date on the calendar.
+- To specify a single date, double-click the date on the calendar.
+- To specify a range of dates, click the first and last date on the calendar.
 
 >[!NOTE]
 >
