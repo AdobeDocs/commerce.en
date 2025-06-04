@@ -16,8 +16,8 @@ To configure price faceting intervals and groupings, see [settings](../../settin
 1. Find the facet that you want to edit.
 1. If there are many facets in the list, set *Filter by* to one of the following:
 
-   * Pinned
-   * Dynamic
+   - Pinned
+   - Dynamic
 
    To learn more, go to [Facet Types](type.md).
 
@@ -31,8 +31,8 @@ To configure price faceting intervals and groupings, see [settings](../../settin
 1. Edit the attribute label.
 1. To change the method that is used to sort facet values, click the value in the *Sort Type* column and choose one of the following:
 
-    * Alphabetical
-    * Count
+    - Alphabetical
+    - Count
 
 1. In the **Max Value** column, set the maximum number (from 0 – 10) of facet filter values to show in the storefront.
 1. When complete, click **Save**.

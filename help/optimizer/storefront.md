@@ -99,12 +99,12 @@ Create a GitHub repository for the site boilerplate code for your storefront usi
 
 1. Complete the configuration form with the following details:
 
-   * **Repository template**—`hlxsites/aem-boilerplate-commerce` (default).
-   * **Include all branches**—Select the option to include all branches.
-   * **Owner**—Your organization or account (required).
-   * **Repository name**—A unique name for your new repo (required).
-   * **Description**—A brief description of your repo (optional).
-   * **Public or Private**—Adobe recommends public (default).
+   - **Repository template**—`hlxsites/aem-boilerplate-commerce` (default).
+   - **Include all branches**—Select the option to include all branches.
+   - **Owner**—Your organization or account (required).
+   - **Repository name**—A unique name for your new repo (required).
+   - **Description**—A brief description of your repo (optional).
+   - **Public or Private**—Adobe recommends public (default).
 
 1. Select **Create repository**.
 
@@ -331,9 +331,9 @@ Create and initialize your storefront content in the Document Author environment
 
    The main links to your content and site follow these formats:
 
-   * **Root content folder**&mdash;  `https://da.live/#/{ORG}/{SITE}`
-   * **Site preview**&mdash;   `https://main--{SITE}--{ORG}.aem.page/`
-   * **Site production:**&mdash;  `https:/main--{SITE}--{ORG}.ae.live/`
+   - **Root content folder**&mdash;  `https://da.live/#/{ORG}/{SITE}`
+   - **Site preview**&mdash;   `https://main--{SITE}--{ORG}.aem.page/`
+   - **Site production:**&mdash;  `https:/main--{SITE}--{ORG}.ae.live/`
 
 1. Open the root content folder link to view the content.
 

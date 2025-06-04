@@ -21,8 +21,8 @@ The *Merchandising rules* workspace lists the current selection of rules and the
 
 1. In the menu, do either of the following:
 
-   * To show a hidden column, click any column name without a check mark.
-   * To hide a visible column, click any column name with a check mark.
+   - To show a hidden column, click any column name without a check mark.
+   - To hide a visible column, click any column name with a check mark.
 
 ## Filter rules by status
 
@@ -30,10 +30,10 @@ The *Merchandising rules* workspace lists the current selection of rules and the
 
 1. To list only rules with a specific status setting, set **Status** to one of the following:
 
-   * All
-   * Active
-   * Inactive
-   * Scheduled
+   - All
+   - Active
+   - Inactive
+   - Scheduled
 
 ## Find search rules by name
 
@@ -50,9 +50,9 @@ The details panel shows the rule name, status, conditions and events, start and 
 1. Click **View details**.
    You can do any of the following from the View details panel:
 
-   * Edit Rule
-   * Delete Rule
-   * Enable/Disable Rule
+   - Edit Rule
+   - Delete Rule
+   - Enable/Disable Rule
 
 1. To close the *View details* panel, click **Close** (X) in the upper-right corner.
 

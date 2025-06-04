@@ -14,9 +14,9 @@ The *Facets* workspace lists all facets that are currently available and provide
 1. Click the **Filter by** control.
 1. Choose one of the following options:
 
-   * All filters
-   * Pinned
-   * Dynamic
+   - All filters
+   - Pinned
+   - Dynamic
 
 ## Add a facet
 

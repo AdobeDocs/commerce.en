@@ -21,10 +21,10 @@ The category and product attribute requirements for faceting are similar to the 
 
 [!DNL Adobe Commerce Optimizer] supports up to:
 
-* 100 attributes configured as facets
-* 50 sortable attributes
-* 200 filterable attributes
-* 200 searchable attributes
+- 100 attributes configured as facets
+- 50 sortable attributes
+- 200 filterable attributes
+- 200 searchable attributes
 
 >[!NOTE]
 >
@@ -42,9 +42,9 @@ If you have a large number of attributes to contend with, consider combining att
 
 Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-50.00, categories = `promotions`).
 
-* `categories` aggregation - Aggregates `categories`, then applies the `color` and `price` filters, but not the `categories` filter.
-* `color` aggregation - Aggregates `color`, then applies  the `price` and `categories` filters, but not the `color` filter.
-* `price` aggregation - Aggregates `price`, then applies the `color` and `categories` filters, but not the `price` filter.
+- `categories` aggregation - Aggregates `categories`, then applies the `color` and `price` filters, but not the `categories` filter.
+- `color` aggregation - Aggregates `color`, then applies  the `price` and `categories` filters, but not the `color` filter.
+- `price` aggregation - Aggregates `price`, then applies the `color` and `categories` filters, but not the `price` filter.
 
 ## Default attribute values
 
