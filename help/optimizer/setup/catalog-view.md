@@ -129,9 +129,9 @@ In this section, you create a catalog view. Ensure that you have already [create
 
 1. On the Add catalog view to listing form, fill in the catalog view details:
 
-    * **Name**—Enter the name of the catalog view. For example, "Celport". ​
-    * **Catalog sources**—Add the scope (locale). For example, "en-US". Press the **enter** key.
-    * **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](./policies.md).
+    - **Name**—Enter the name of the catalog view. For example, "Celport". ​
+    - **Catalog sources**—Add the scope (locale). For example, "en-US". Press the **enter** key.
+    - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](./policies.md).
 
 1. Click **[!UICONTROL Add]** to create the catalog view. ​
 
