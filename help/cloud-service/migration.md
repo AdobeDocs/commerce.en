@@ -88,31 +88,31 @@ This phase is critical for minimizing risks and establishing a clear migration p
 
 **Codebase analysis:**
 
-  * Identify all custom modules, themes, and overrides.
-  * Analyze core code modifications and determine which will need refactoring as part of migration.
-  * Assess third-party extensions and determine compatibility with [!DNL Adobe Commerce as a Cloud Service], are there SaaS-compatible alternatives, or do you need to create custom API integrations.
-  * Identify any deprecated code or functionality.
+* Identify all custom modules, themes, and overrides.
+* Analyze core code modifications and determine which will need refactoring as part of migration.
+* Assess third-party extensions and determine compatibility with [!DNL Adobe Commerce as a Cloud Service], are there SaaS-compatible alternatives, or do you need to create custom API integrations.
+* Identify any deprecated code or functionality.
 
 **Data audit:**
 
-  * Assess your database size and complexity.
-  * Identify unused data or tables for cleanup.
-  * Review existing data import/export processes.
+* Assess your database size and complexity.
+* Identify unused data or tables for cleanup.
+* Review existing data import/export processes.
 
 **Integrations review:**
 
-  * List all external systems integrated with Adobe Commerce (ERP, CRM, PIM, payment gateways, shipping providers, OMS, and any other systems).
-  * Assess integration methods (API, custom scripts, and other methods).
-  * Evaluate compatibility with [!DNL Adobe Commerce as a Cloud Service]'s API-first approach and App Builder.
+* List all external systems integrated with Adobe Commerce (ERP, CRM, PIM, payment gateways, shipping providers, OMS, and any other systems).
+* Assess integration methods (API, custom scripts, and other methods).
+* Evaluate compatibility with [!DNL Adobe Commerce as a Cloud Service]'s API-first approach and App Builder.
 
 **Performance benchmarking:**
 
-  * Document current Lighthouse scores, page load times, and key performance indicators (KPIs).
-    * This provides a baseline to measure post-migration improvements.
+* Document current Lighthouse scores, page load times, and key performance indicators (KPIs).
+  * This provides a baseline to measure post-migration improvements.
 
 **Security configuration review:**
 
-  * Assess any custom WAF rules, IP whitelists, and any other security configurations.
+* Assess any custom WAF rules, IP whitelists, and any other security configurations.
 
 **Defining migration scope and strategy:**
 
