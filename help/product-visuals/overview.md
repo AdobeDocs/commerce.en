@@ -51,9 +51,15 @@ Watch this video to learn how Adobe Commerce and AEM Assets work together to str
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
-## Next step
+## Next steps
 
-[Set up Product Visuals powered by AEM Assets Integration for Commerce](setup-integration.md).
+Enabling the Commerce integration with Experience Manager Assets is a three step process:
+
+1. [Install AEM Assets package](configure-aem.md).
+
+1. [Install Adobe Commerce packages](configure-aem.md).
+
+1. [Configure the integration asset](setup-synchronization.md).
 
 ## Support
 

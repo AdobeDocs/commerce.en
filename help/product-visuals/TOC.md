@@ -11,7 +11,6 @@ feature: CMS, Page Content
   - [Release notes](release-notes.md)
   - Getting started {#getting-started}
     - Install Product Visuals powered by AEM Assets {#product-visuals-install}
-      - [Set up environments](setup-integration.md)
       - [Install AEM Assets package](configure-aem.md)
       - [Install Adobe Commerce packages](configure-commerce.md)
     - Configure Product Visuals powered by AEM Assets Integration {#product-visuals-configure}

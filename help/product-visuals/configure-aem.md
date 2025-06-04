@@ -6,6 +6,12 @@ feature: CMS, Media, Integration
 
 # Install Product Visuals powered by AEM Assets package for Commerce
 
+Before setting up the Product Visuals powered by AEM Assets integration for Commerce make sure you have administrative access to customize application and environment configurations:
+
+- Administrative access to the Cloud Manager program where the AEM Assets as a Cloud Service environments are provisioned.
+
+- Administrative access to the Adobe Commerce environment and the ability to retrieve or generate the [Magento Account API keys](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#genapikey) required for authentication.
+
 Adobe provides a project template, `commerce-assets`, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this template to your environment as a Maven package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
 
 The template adds the following resources to the AEM Assets authoring environment.
@@ -25,7 +31,7 @@ The template adds the following resources to the AEM Assets authoring environmen
 - A [sample tagged and approved Commerce asset](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg` to support initial asset synchronization. Only approved Commerce assets can be synchronized from AEM Assets to Adobe Commerce.
 
 >[!NOTE]
->For additional information about the `commerce-assets` AEM project template, see the [Readme](https://github.com/ankumalh/assets-commerce).
+> See the [readme](https://github.com/ankumalh/assets-commerce) page for more information about the `commerce-assets` AEM project template.
 
 You need the following resources and permissions to use this AEM project to update the environment configuration:
 
