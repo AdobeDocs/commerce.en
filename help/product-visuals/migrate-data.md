@@ -32,17 +32,13 @@ Follow the migration workflow to export media files from Adobe Commerce or anoth
 
 ### Step 1: Export content from the existing data source
 
-For Adobe Commerce merchants, the Remote Storage module provides a streamlined way to export media files from Commerce and import them into AEM Assets. This module enables you to store and manage media files on remote storage services like AWS S3, making the migration process more efficient. To set up remote storage for your Commerce instance, see [Configure Remote Storage](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) in the *Commerce Configuration Guide*.
+For Adobe Commerce merchants, the **Remote Storage module** can facilitate media file exports and imports. This module allows businesses to store and manage media files via remote storage services like AWS S3. To set up remote storage for your Commerce instance, see [Configure Remote Storage](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) in the **Commerce Configuration Guide**.
 
-If you have media files stored outside of Adobe Commerce, upload them directly to one of the [data sources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) supported by AEM as a Cloud Service.
+If you have media files stored outside of Adobe Commerce, upload them directly to one of the [data sources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view) supported by AEM as a Cloud Service.
 
 ### Step 2: Build a CSV file for metadata mapping
 
-Create a metadata mapping file in CSV format and upload it to the source folder containing your media files. This file maps essential metadata to each asset to:
-
-- Organize and categorize assets in the DAM for easy discovery
-- Enable proper synchronization between Adobe Commerce and AEM Assets
-- Maintain relationships between assets and products after migration
+Once the media files are exported, a CSV file must be created to map these assets with the necessary metadata for automation. The CSV should include fields for **product**, **position**, and **role mapping**, ensuring alignment with the [AEM Assets metadata profile](configure-aem.md#configure-a-metadata-profile).
 
 For each media file you plan to migrate, provide values for the metadata fields included in the [AEM Assets metadata profile for Commerce assets](configure-aem.md) as described in the following table.
 
@@ -61,7 +57,7 @@ For each media file you plan to migrate, provide values for the metadata fields 
 Use this sample CSV code to create the file in a code editor or spreadsheet application like Microsoft Excel.
 
 ```csv
-assetPath,dc:title{{String}},dam:status{{String}},commerce:positions{{String: multi}},commerce:isCommerce{{String}},commerce:skus{{String: multi}},commerce:roles{{String: multi}}
+assetPath,dc:title{{String}},dam:status{{String}},commerce:positions{{Number: multi}},commerce:isCommerce{{String}},commerce:skus{{String: multi}},commerce:roles{{String: multi}}
 /content/dam/commerce/sample1.jpg,Sample 1,approved,1,Yes,sample1,thumbnail; image; swatch_image; small_image
 /content/dam/commerce/sample2.jpg,Sample 2,approved,1,Yes,sample2,thumbnail; image; swatch_image; small_image
 /content/dam/commerce/sample3.jpg,Sample 3,approved,1,Yes,sample3,thumbnail; image; swatch_image; small_image
