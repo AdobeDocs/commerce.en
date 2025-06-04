@@ -6,29 +6,44 @@ feature: CMS, Media, Configuration, Integration
 
 # Product Visuals powered by AEM Assets Integration for Commerce
 
-Product Visuals powered by Adobe Experience Manager (AEM) Assets Integration for Commerce combines the robust capabilities of AEM as a Digital Asset Management (DAM) system with Adobe Commerce to enhance eCommerce experiences. These capabilities are delivered by connecting Commerce projects to AEM's powerful asset management environment to provide a seamless, scalable, and efficient way to manage and deliver assets across commerce storefronts.
+The demand for personalized content is rapidly increasing while marketing budgets are under pressure. Retailers and brands are struggling to keep pace with the growing need for variations in product imagery, driven by regional, seasonal, and segment-specific requirements.
+
+Consider a retailer with 1,000 products. Even before factoring in attribute variations, the number of required digital assets expands significantly when considering different regions, customer segments, and personalization efforts. This can lead to an overwhelming number of asset variations, reaching into the millions.
+
+![check](assets/product-visuals-example.png)
+
+The Adobe Commerce and AEM Assets integration addresses this challenge by automating asset management workflows. The integration ensures that digital assets, such as product images and marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes. This process streamlines operations and enhances efficiency by enabling:
+
+- **Step by step Installation and Configuration**-Merchandising teams and developers can install and configure the integration seamlessly using familiar Adobe tools and processes.
+
+- **Dynamic Asset Updates**-Product images and marketing assets stay up to date with the latest changes in AEM Assets, ensuring that commerce storefronts always display accurate and relevant content.
+
+- **Efficient Catalog Management**-Automates asset refresh and cleanup, reducing manual effort and ensuring a consistent, well-maintained product catalog.
+
+## Requirements to use the integration
+
+To leverage this integration, businesses must meet the following requirements:
+
+- Active licenses for Adobe Commerce, Adobe Experience Manager Assets, and [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+
+- Adobe Commerce 2.4.5+
+
+    - PHP 8.1, 8.2, 8.3
+    - Composer 2.x
+
+- Adobe Experience Manager is provisioned with [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+
+- The Adobe Commerce user configuring the integration must have access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) where the AEM Assets project is provisioned.
 
 >[!BEGINSHADEBOX]
 
 ## Key business benefits
 
-![check](assets/icon-check.png) **Centralized Asset Management**
+![check](assets/icon-check.png) **No Additional Cost**-This integration is provided free of charge for merchants who meet the licensing requirements.
 
-- **AEM Assets as the Single Source of Truth**–AEM Assets serves as the central repository for all digital assets, ensuring that all ecommerce platforms have access to on-brand, approved assets.
+![check](assets/icon-check.png) **Official Adobe Solution**-Developed, maintained, and fully supported by Adobe, ensuring stability and alignment with future platform enhancements.
 
-- **Bulk Asset Management**–Organizations can manage large volumes of assets efficiently, thanks to AEM's robust asset management capabilities. This enables marketers and merchandisers to map large sets of images for new product lines efficiently.
-
-![check](assets/icon-check.png) **Personalized Commerce Experiences**–Using GenAI services in AEM, organizations can generate millions of product variations for personalized ecommerce experiences. Marketers and merchandisers can use these images to create dynamic storefronts for product launches and seasonal campaigns, enhancing engagement and boosting conversion rates.
-
-![check](assets/icon-check.png) **Automated Asset Matching**–The integration includes a Rules Engine Service that automatically matches assets in AEM to products in Adobe Commerce based on SKU or other key attributes. The service ensures that the latest product assets and variations are always available on ecommerce storefronts. It also reduces the manual effort required to manage assets, freeing up time for more strategic activities.
-
-![check](assets/icon-check.png) **Streamlined Processes**
-
-- **Enable and configure the integration from the Commerce Admin**–Administrators and developers can install and configure the integration from Adobe Commerce using familiar tools and processes.
-
-- **Dynamic Updates**–Keep product images current with the latest changes in the asset management system. These automated updates ensure that commerce storefronts always have the most up-to-date product information.
-
-- **Efficient Catalog Management**–Simplifies the maintenance of the product catalog by automating asset cleanup and refresh.
+![check](assets/icon-check.png) **Adobe Managed Support Model**-Assistance and troubleshooting are handled directly by Adobe, providing peace of mind and streamlined issue resolution.
 
 >[!ENDSHADEBOX]
 
