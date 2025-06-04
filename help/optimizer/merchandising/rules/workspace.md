@@ -6,11 +6,11 @@ description: Learn your way around the Merchandising rules workspace.
 
 The *Merchandising rules* workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
 
-* Search for rules
-* View rule details
-* Activate/deactivate rules
-* Delete rules
-* Access the rule editor
+- Search for rules
+- View rule details
+- Activate/deactivate rules
+- Delete rules
+- Access the rule editor
 
 !!!ADD WORKSPACE SCREENSHOT!!!
 

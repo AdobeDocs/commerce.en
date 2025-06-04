@@ -6,9 +6,9 @@ description: The Search performance page provides insight into the search terms 
 
 The *Search performance* page provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Search performance page provides a snapshot of search metrics for a specific date range and includes the following reports:
 
-* Unique searches
-* Zero results
-* Popular results
+- Unique searches
+- Zero results
+- Popular results
 
 !!!ADD WORKSPACE SCREENSHOT!!!
 
@@ -22,8 +22,8 @@ You can also refer to the [Data Sync Dashboard](../setup/data-sync.md) for more 
 
 1. To enter the **Date range**, click the calendar and do one of the following:
 
-   * To specify a single date, double-click the date on the calendar.
-   * To specify a range of dates, click the first and last date on the calendar.
+   - To specify a single date, double-click the date on the calendar.
+   - To specify a range of dates, click the first and last date on the calendar.
 
 >[!NOTE]
 >

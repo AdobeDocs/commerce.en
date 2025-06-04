@@ -24,10 +24,10 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    >
    > Recommendations are not supported on the Cart page when your store is configured to [display the shopping cart page immediately after adding a product to the cart](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
-   * Home Page
-   * Product Detail
-   * Cart
-   * Confirmation
+   - Home Page
+   - Product Detail
+   - Cart
+   - Confirmation
 
    You can create up to five active recommendation units for each page type. The page type is grayed out When the limit is reached.
 
@@ -44,8 +44,8 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the _Select placement_ section, specify the location where the recommendation unit is to appear on the page.
 
-   * At the bottom of main content
-   * At the top of main content
+   - At the bottom of main content
+   - At the top of main content
 
 1. (Optional) To change the order of the recommendations, select, and move the rows in the _Choose position_ table.
 
@@ -61,9 +61,9 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. When complete, click one of the following:
 
-   * **Save as draft** to edit the recommendation unit later. You cannot modify the page type or recommendation type for a recommendation unit in a draft state.
+   - **Save as draft** to edit the recommendation unit later. You cannot modify the page type or recommendation type for a recommendation unit in a draft state.
 
-   * **Activate** to enable the recommendation unit on your storefront.
+   - **Activate** to enable the recommendation unit on your storefront.
 
 >[!IMPORTANT]
 >
@@ -85,15 +85,14 @@ As a result of these variables, the readiness indicator percent can fluctuate. T
 
 Readiness indicators are calculated based on a couple factors:
 
-* Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview.md#backuprecs)? 
-
-* Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
+- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview.md#backuprecs)?
+- Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site.
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
-* 75% or higher means that the recommendations suggested for that recommendation type will be highly relevant.
-* At least 50% means that the recommendations suggested for that recommendation type will be less relevant.
-* Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backuprecs) are used.
+- 75% or higher means that the recommendations suggested for that recommendation type will be highly relevant.
+- At least 50% means that the recommendations suggested for that recommendation type will be less relevant.
+- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backuprecs) are used.
 
 Learn more about [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -101,8 +100,8 @@ Learn more about [why readiness indicators might be low](#what-to-do-if-the-read
 
 The following recommendation types are static-based because they only require catalog data. No behavioral data is used.
 
-* _More Like This_
-* _Visual Similarity_
+- _More Like This_
+- _Visual Similarity_
 
 ### Dynamic-based
 
@@ -110,23 +109,23 @@ The following recommendation types are dynamic-based because they use storefront
 
 Last six months of storefront behavioral data:
 
-* _Viewed this, viewed that_
-* _Viewed this, bought that_
-* _Bought this, bought that_
-* _Recommended for you_
+- _Viewed this, viewed that_
+- _Viewed this, bought that_
+- _Bought this, bought that_
+- _Recommended for you_
 
 Last seven days of storefront behavioral data:
 
-* _Most Viewed_
-* _Most Purchased_
-* _Most Added to Cart_
-* _Trending_
-* _View to Purchase Conversion_
-* _View to Cart Conversion_
+- _Most Viewed_
+- _Most Purchased_
+- _Most Added to Cart_
+- _Trending_
+- _View to Purchase Conversion_
+- _View to Cart Conversion_
 
 Most recent shopper behavioral data (only views):
 
-* _Recently Viewed_
+- _Recently Viewed_
 
 ### Visualize progress
 
@@ -151,12 +150,12 @@ A low readiness percentage indicates that there are not many products from your 
 
 The following lists possible reasons and solutions to common low readiness scores:
 
-* **Static-based** - Low percentages for these indicators can be caused by missing catalog data for the displayable products. If they are lower than expected, a full sync can fix this issue.
-* **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
+- **Static-based** - Low percentages for these indicators can be caused by missing catalog data for the displayable products. If they are lower than expected, a full sync can fix this issue.
+- **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
 
-   * Missing fields in the required [storefront events](../../setup/events/overview.md) for the respective recommendation types (requestId, product context, and so on.)
-   * Low traffic on the store so the volume of behavioral events we receive is low.
-   * The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
+   - Missing fields in the required [storefront events](../../setup/events/overview.md) for the respective recommendation types (requestId, product context, and so on.)
+   - Low traffic on the store so the volume of behavioral events we receive is low.
+   - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 
 ## Preview Recommendations {#preview}
 

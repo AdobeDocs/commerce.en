@@ -21,7 +21,7 @@ The *Facets* workspace lists all facets that are currently available and provide
 ## Add a facet
 
 1. Click **Add facets**. 
-1. See [Add Facets](facets-add.md) for detailed instructions.
+1. See [Add Facets](add.md) for detailed instructions.
 
 ## Column descriptions
 

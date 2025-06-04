@@ -1,13 +1,13 @@
 ---
-title: Rules Best Practices
-description: Learn the best practices for implementing rules in your store.
+title: Merchandising Rules Best Practices
+description: Learn the best practices for implementing merchandising rules in your store.
 role: Admin, Developer
 ---
-# Rules Best Practices
+# Merchandising Rules Best Practices
 
 To optimize your conversion rate and revenue, you must implement effective search rules. Adjust product rankings based on sales data, stock levels, and promotions with [Merchandising rules](add.md#intelligent-ranking).
 
-It is crucial to establish a well thought out default search rule. Your [default rule](rules.md#default-rule) determines how search results are initially sorted and displayed to shoppers, enhancing their overall experience and increasing the likelihood of purchase. Regular monitoring and adjustment of this rule ensures that it continues to meet shopper needs and business objectives effectively.
+It is crucial to establish a well thought out default search rule. Your [default rule](overview.md#default-rule) determines how search results are initially sorted and displayed to shoppers, enhancing their overall experience and increasing the likelihood of purchase. Regular monitoring and adjustment of this rule ensures that it continues to meet shopper needs and business objectives effectively.
 
 ## Tips to optimize search rules
 

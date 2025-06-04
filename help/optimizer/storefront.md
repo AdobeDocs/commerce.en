@@ -15,10 +15,10 @@ This tutorial demonstrates how to setup and use [Adobe Commerce Storefront power
 
 ## Prerequisites
 
-* Ensure that you have a GitHub account (github.com) that can create repositories and is configured for local development.
+- Ensure that you have a GitHub account (github.com) that can create repositories and is configured for local development.
 
-* Learn about the concepts and workflow to develop Commerce storefronts on Adobe Edge Delivery Services by reviewing the [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) in the Adobe Commerce Storefront documentation.
-* Set up your development environment
+- Learn about the concepts and workflow to develop Commerce storefronts on Adobe Edge Delivery Services by reviewing the [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) in the Adobe Commerce Storefront documentation.
+- Set up your development environment
 
 
 ### Set up your development environment
@@ -116,15 +116,11 @@ Create a GitHub repository for the site boilerplate code for your storefront usi
 
 You need the following information to update the storefront boilerplate code:
 
-* **GitHub repository URL from Step 2**&mdash; `github.com/{ORG}/{SITE}`
-
-  * `{ORG}` is the organization name or username for the repository
-
-  * `{SITE}` is your repository name
-
-* **Content folder URL from Step 1**&mdash; `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`
-
-  `{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data.
+- **GitHub repository URL from Step 2**&mdash; `github.com/{ORG}/{SITE}`
+  - `{ORG}` is the organization name or username for the repository
+  - `{SITE}` is your repository name
+- **Content folder URL from Step 1**&mdash; `https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}`
+  - `{YOUR_FOLDER_ID}` is the ID of the folder that you created with the sample content data.
 
 #### Link the repository to the Document Author environment
 
@@ -351,8 +347,8 @@ Create and initialize your storefront content in the Document Author environment
 
 Verify that both the sample content and the data from the Adobe Commerce Optimizer demo instance are displayed correctly.
 
-* **Sample content** is served from the content folder in the Document Author environment. It includes the page layouts, banners, and labels for your site.
-* **Sample data** is served from the [!DNL Adobe Commerce Optimizer] demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the header values specified in the storefront configuration file, `config.json`.
+- **Sample content** is served from the content folder in the Document Author environment. It includes the page layouts, banners, and labels for your site.
+- **Sample data** is served from the [!DNL Adobe Commerce Optimizer] demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the header values specified in the storefront configuration file, `config.json`.
 
 #### Connect to your site to view sample content and data
 
@@ -364,9 +360,9 @@ Verify that both the sample content and the data from the Adobe Commerce Optimiz
 
    If the page returns a 404, verify the following:
 
-   * [The mountpoint in your `fstab.yaml` file points to the correct content URL](#link-the-repository-to-the-document-author-environment): `https://content.da.live/{ORG}/{SITE}/`
-   * [You have configured the Code Sync app to connect to your GitHub repository](#step-5%3A-add-the-aem-code-sync-app).
-   * [You have published the content to the Document Author environment using the demo content clone tool](#step-6%3A-add-content-documents-for-your-storefront).
+   - [The mountpoint in your `fstab.yaml` file points to the correct content URL](#link-the-repository-to-the-document-author-environment): `https://content.da.live/{ORG}/{SITE}/`
+   - [You have configured the Code Sync app to connect to your GitHub repository](#step-5%3A-add-the-aem-code-sync-app).
+   - [You have published the content to the Document Author environment using the demo content clone tool](#step-6%3A-add-content-documents-for-your-storefront).
 
 
 1. View the sample catalog data coming from the Commerce Optimizer default instance.

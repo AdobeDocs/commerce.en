@@ -13,9 +13,9 @@ To make it easy to find a synonym, you can filter the list by type and search by
 
 1. To filter the list, set **Type** to one of the following:
 
-   * All
-   * One-way
-   * Two-way
+   - All
+   - One-way
+   - Two-way
 
 1. To search for a keyword or expansion term, enter at least three characters into **Search by** box.
 
