@@ -1,9 +1,9 @@
 ---
-title: Events
-description: Use the Events page to view storefront event data which powers Search and Recommendations.
+title: Events Overview
+description: Learn about the events that [!DNL Adobe Commerce Optimizer] uses to improve search and recommendations.
+role: Admin, Developer
 hide: yes
 recommendations: noCatalog
-exl-id: 6b7a6a46-ad1e-45c1-afd0-71ec92f97f28
 ---
 # Events
 
@@ -157,18 +157,4 @@ Some events are required to populate the [Search dashboard](../../manage-results
 | Dashboard area        | Events      | Join field |
 | ------------------- | ------------- | ---------- |
 | Unique searches       |`page-view`, `search-request-sent`, `search-response-received` | `searchRequestId`  |
-| Zero results searches |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`  |
-| Zero results rate     |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`  |
-| Popular searches      |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`  |
-| Avg. click position   |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | `searchRequestId`      |
-| Click-through rate    |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | `searchRequestId`, `sku`, `parentSku` |
-| Conversion rate       |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order`| `searchRequestId`, `sku`, `parentSku` |
-
-## Caveats
-
-- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [search](../../manage-results/search-performance.md) and [recommendation](../../merchandising/recommendations/workspace.md) metrics to be under-reported. Additionally, some events might not be sent due to shoppers leaving the page or network issues.
-- For configurable products, Recommendations use the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
-
->[!NOTE]
->
->If [Cookie Restriction Mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is enabled, [!DNL Adobe Commerce Optimizer] does not collect behavioral data until the shopper consents to using cookies. If Cookie Restriction Mode is disabled, [!DNL Adobe Commerce Optimizer] collects behavioral data by default.
+| Zero results searches |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`

@@ -1,7 +1,6 @@
 ---
 title: Manage Facets
-description: Learn how to manage existing facets.
-exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
+description: Learn how to manage facets in [!DNL Adobe Commerce Optimizer].
 ---
 # Manage Facets
 

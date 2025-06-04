@@ -12,7 +12,7 @@ recommendations: noDisplay
 - [Overview](overview.md)
 - [Get Started](get-started.md)
 - [Boundaries and Limitations](boundaries-limits.md)
-- Latest updates in documentation
+- Latest updates in documentation {#latest-updates}
 - Managing Results {#manage-results}
    - [Success Metrics Report](./manage-results/success-metrics.md)
    - [Search Performance](./manage-results/search-performance.md)
@@ -30,7 +30,6 @@ recommendations: noDisplay
       - [Workspace](./merchandising/rules/workspace.md)
       - [Add](./merchandising/rules/add.md)
       - [Manage](./merchandising/rules/manage.md)
-      - [Default search rule](./merchandising/rules/overview.md#default-rule)
       - [Best Practices](./merchandising/rules/best-practice.md)
    - Facets {#facets}
       - [Overview](./merchandising/facets/overview.md)
@@ -41,7 +40,6 @@ recommendations: noDisplay
       - [Best Practices](./merchandising/facets/best-practice.md)
    - Synonyms {#synonyms}
       - [Overview](./merchandising/synonyms/overview.md)
-      - [Workspace](./merchandising/synonyms/workspace.md)
       - [Types](./merchandising/synonyms/type.md)
       - [Add](./merchandising/synonyms/add.md)
       - [Manage](./merchandising/synonyms/manage.md)

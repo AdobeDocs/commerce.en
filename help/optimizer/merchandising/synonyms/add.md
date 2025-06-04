@@ -1,7 +1,6 @@
 ---
 title: Add Synonyms
-description: Add [!DNL Adobe Commerce Optimizer] synonyms to improve response to search requests.
-exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+description: Learn how to add synonyms to [!DNL Adobe Commerce Optimizer].
 ---
 # Add Synonyms
 

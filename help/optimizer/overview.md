@@ -1,9 +1,8 @@
 ---
-title: '[!DNL Adobe Commerce Optimizer]'
-description: Learn how you can use [!DNL Adobe Commerce Optimizer] to deliver a fast, performant storefront with a scalable catalog that allows you to optimize your existing eCommerce backend by increasing traffic and driving higher engagement and conversion.
+title: Overview
+description: Learn about [!DNL Adobe Commerce Optimizer] and its key features.
 hide: yes
 recommendations: noCatalog
-exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
 ---
 # What is [!DNL Adobe Commerce Optimizer]?
 

@@ -4,7 +4,6 @@ description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your cat
 hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
-exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 ---
 # Storefront and Catalog Administrator End-to-End Use Case
 
@@ -162,7 +161,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
     >
     >Make sure the attribute name that you specify exactly matches the SKU attribute name in the catalog.
 
-    To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](../catalog/policies.md#value-source-types).
+    To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](../setup/policies.md#value-source-types).
 
 1. In the **[!UICONTROL Filter details]** dialog, click **[!UICONTROL Save]**.
 

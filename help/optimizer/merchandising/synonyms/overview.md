@@ -1,7 +1,6 @@
 ---
-title: Synonyms
-description: '[!DNL Adobe Commerce Optimizer] Synonyms expand queries with words that differ from those in your catalog.'
-exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
+title: Synonyms Overview
+description: Learn about synonyms in [!DNL Adobe Commerce Optimizer] and how they improve search results.
 ---
 # Synonyms
 

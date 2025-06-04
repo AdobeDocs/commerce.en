@@ -1,9 +1,8 @@
 ---
 title: Merchandising Overview
-description: Learn how to create personalized experiences for your shoppers through Search and recommendations.
+description: Learn about merchandising features in [!DNL Adobe Commerce Optimizer].
 hide: yes
 recommendations: noCatalog
-exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 ---
 # Merchandising
 

@@ -1,7 +1,6 @@
 ---
-title: Edit Recommendation
-description: Learn how to edit a product recommendation.
-exl-id: 57bc68c0-03ba-4b66-8c75-14e49176670b
+title: Edit Recommendations
+description: Learn how to edit existing [!DNL Adobe Commerce Optimizer] recommendations.
 ---
 # Edit Recommendation
 

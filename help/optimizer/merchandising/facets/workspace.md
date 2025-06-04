@@ -1,7 +1,6 @@
 ---
 title: Facets Workspace
-description: Learn your way around the Facets workspace.
-exl-id: 7108e41b-44a7-4943-b20f-6ee544d099e9
+description: Learn how to use the Facets workspace in [!DNL Adobe Commerce Optimizer].
 ---
 # Facets Workspace
 

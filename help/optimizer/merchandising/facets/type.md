@@ -1,7 +1,6 @@
 ---
-title: Types of Facets
-description: '[!DNL Adobe Commerce Optimizer] facets are dynamic, and appear in the Filters list when relevant.'
-exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
+title: Facet Types
+description: Learn about the different types of facets in [!DNL Adobe Commerce Optimizer].
 ---
 # Types of Facets
 
@@ -15,7 +14,7 @@ exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
     >If you notice that timeout errors are appearing in the GraphQL query response after creating dynamic facets, change all facets to pinned to see if that resolves the performance issues.
 
 - Popular facets - Product attributes that are most often present in search results.
-- Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](settings.md) workspace.
+- Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](../../settings.md) workspace.
 
 At query time, [!DNL Adobe Commerce Optimizer] generates the search results in groups of dynamic and popular facets.
 

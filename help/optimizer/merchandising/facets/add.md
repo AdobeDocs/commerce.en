@@ -1,6 +1,6 @@
 ---
 title: Add Facets
-description: Learn how to add filterable product attributes as facets.
+description: Learn how to add facets to [!DNL Adobe Commerce Optimizer].
 ---
 # Add Facets
 

@@ -1,7 +1,6 @@
 ---
-title: Types of Synonyms
-description: One- and two-way [!DNL Adobe Commerce Optimizer] synonyms expand the definition of keywords.
-exl-id: f5522428-c7cc-4627-a09b-d9148918c127
+title: Synonym Types
+description: Learn about the different types of synonyms in [!DNL Adobe Commerce Optimizer].
 ---
 # Types of Synonyms
 

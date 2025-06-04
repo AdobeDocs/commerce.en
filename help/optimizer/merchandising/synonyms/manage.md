@@ -1,7 +1,6 @@
 ---
 title: Manage Synonyms
 description: Learn how to manage existing [!DNL Adobe Commerce Optimizer] synonyms.
-exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
 ---
 # Manage Synonyms
 

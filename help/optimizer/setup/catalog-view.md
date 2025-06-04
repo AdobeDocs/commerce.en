@@ -1,9 +1,9 @@
 ---
-title: Catalog Views
-description: Learn how to use catalog views to define your retail structure into meaningful business groups.
+title: Catalog View
+description: Learn how to create and manage catalog views in [!DNL Adobe Commerce Optimizer].
+role: Admin, Developer
 hide: yes
 recommendations: noCatalog
-exl-id: 587bc3b0-72c6-40e2-889b-4a55c1187034
 ---
 # Catalog Views
 
@@ -31,7 +31,7 @@ Merchandising Services powered by Catalog views and Policies is a highly scalabl
 
 The following diagram provides a high-level view of the Merchandising framework.
 
-![[!DNL Merchandising Services] Architecture](./assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture](../assets/merchandising-svcs-architecture.png)
 
 At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the Merchandising Services framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new Merchandising Services product scopes (catalog views, policies, and locale).
 
@@ -50,7 +50,7 @@ Product catalog management encompasses two distinct aspects: product data and pr
 - **Product data** - What product is being sold and at what price?
 - **Product context** - Who is selling to whom and where?
 
-![[!DNL Merchandising Services] aspects](./assets/merchandising-svcs-parts.png)
+![[!DNL Merchandising Services] aspects](../assets/merchandising-svcs-parts.png)
 
 ### Product data
 
@@ -73,7 +73,7 @@ Product context management covers the following aspects:
 
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to catalog views and policies). These define the product context identifiers to which a SKU belongs:
 
-![[!DNL Merchandising Services] Product Context Identifiers](./assets/merchandising-svcs-product-id.png)
+![[!DNL Merchandising Services] Product Context Identifiers](../assets/merchandising-svcs-product-id.png)
 
 In the above image, each SKU provides:
 
@@ -88,7 +88,7 @@ In the above image, each SKU provides:
 
 The catalog view and policy definitions are created using dedicated APIs:
 
-![[!DNL Merchandising Services] catalog view, Policy, and Scope Mapping](./assets/merchandising-svcs-scope-map.png)
+![[!DNL Merchandising Services] catalog view, Policy, and Scope Mapping](../assets/merchandising-svcs-scope-map.png)
 
 - **Scope** (locale) - Set at a SKU level during product data ingestion.​
 - **catalog view** - Definition created using dedicated APIs. ​

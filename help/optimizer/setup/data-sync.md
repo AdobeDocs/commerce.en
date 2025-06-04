@@ -1,9 +1,9 @@
 ---
-title: Data Sync
-description: Learn how to use the Data Sync page to monitor data ingestion into Adobe Commerce Optimizer.
+title: Data sync
+description: Learn how to sync your catalog data with [!DNL Adobe Commerce Optimizer].
+role: Admin, Developer
 hide: yes
 recommendations: noCatalog
-exl-id: 992ffc7d-3179-4b56-9183-28052a25ec71
 ---
 # Data Sync
 

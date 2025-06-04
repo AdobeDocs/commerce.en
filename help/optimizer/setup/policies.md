@@ -1,9 +1,8 @@
 ---
 title: Policies
-description: Learn how to use policies to filter data within a catalog view to ensure that data is sent to the right destination.
+description: Learn how to create and manage policies in [!DNL Adobe Commerce Optimizer].
 hide: yes
 recommendations: noCatalog
-exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
 ---
 # Policies
 

@@ -1,9 +1,9 @@
 ---
-title: Get Started with [!DNL Adobe Commerce Optimizer]
+title: Get started
 description: Learn how to get started with [!DNL Adobe Commerce Optimizer].
+role: Admin, Developer
 hide: yes
 recommendations: noCatalog
-exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 ---
 # Get Started
 

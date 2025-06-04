@@ -1,7 +1,6 @@
 ---
-title: Facets
-description: '[!DNL Adobe Commerce Optimizer] facets use multiple dimensions of attribute values as search criteria.'
-exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+title: Facets Overview
+description: Learn about facets in [!DNL Adobe Commerce Optimizer] and how they improve search results.
 ---
 # Facets
 
@@ -58,7 +57,7 @@ The following product attributes have [storefront properties](https://experience
 
 ## Default non-system attribute properties
 
-The following table shows the default search and filterable properties of non-system attributes, including those that are specific to the Luma sample data. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Adobe Commerce Optimizer] and native Adobe Commerce.
+The following table shows the default search and filterable properties of non-system attributes. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Adobe Commerce Optimizer] and native Adobe Commerce.
 
 | Attribute Code | Searchable | Use in Layered Navigation |
 |--- |--- |--- |

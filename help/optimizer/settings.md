@@ -8,7 +8,7 @@ Use the *Settings* workspace to enable visual recommendations and configure the 
 
 ## Enable visual recommendations
 
-To use the [Visual Similarity](type.md#visualsim) recommendation type, you must enable Visual Recommendations. 
+To use the [Visual Similarity](./merchandising/recommendations/types.md#visual-similarity) recommendation type, you must enable Visual Recommendations. 
 
 In the _Visual Recommendations_ section, set **Enable Visual Recommendations** to the active position.
 
