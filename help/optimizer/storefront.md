@@ -219,9 +219,9 @@ You need the following information to update the storefront boilerplate code:
 
 1. Update the `url` key values with the values for your GitHub repository.
 
-   * Replace the `{ORG}` string with the organization or username for your repository.
+   - Replace the `{ORG}` string with the organization or username for your repository.
 
-   * Replace the `{SITE}` string with the repository name
+   - Replace the `{SITE}` string with the repository name
 
    +++Example of updated configuration file
 
@@ -387,8 +387,8 @@ Verify that both the sample content and the data from the Adobe Commerce Optimiz
 
 In this section, you update the storefront configuration from your local development environment.
 
-* Update the storefront configuration to connect to the GraphQL endpoint for the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
-* Update the header values to retrieve data from your instance.
+- Update the storefront configuration to connect to the GraphQL endpoint for the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
+- Update the header values to retrieve data from your instance.
 
 #### Start local development
 
@@ -426,13 +426,13 @@ Update the storefront configuration file and preview the changes in your local d
 
    1. Update the following values using the endpoint for your [!DNL Adobe Commerce Optimizer] instance:
 
-      * **`commerce-endpoint`**–Replace the existing value with your endpoint URL.
+      - **`commerce-endpoint`**–Replace the existing value with your endpoint URL.
 
         ```json
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql"
         ```
 
-      * **`ac-environment-id`**—Replace the existing value with the tenant ID from your endpoint URL.
+      - **`ac-environment-id`**—Replace the existing value with the tenant ID from your endpoint URL.
 
         ```json
         "ac-environment-id": "{tenantId}"
