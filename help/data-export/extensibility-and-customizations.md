@@ -59,10 +59,10 @@ See [Create product attributes](https://experienceleague.adobe.com/en/docs/comme
 
 Add a product attribute programmatically by creating a data patch that implements the `DataPatchInterface`, and instantiate a copy of the `EavSetup Factory` class within the constructor to configure the attribute options.
 
-When you define the attribute options, all attribute parameters except `type`, `label`, and `input` are optional. Define the following additional options and any other options that differ from the default settings.
+When you define the attribute options, all attribute parameters except `type`, `label`, and `input` are optional. Define the following additional parameters and any others that differ from the default settings.
 
-- Ensure that the property is exported to storefront services during data synchronization by setting `user_defined` = `1`
-- To ensure that the attribute is accessible within the product listing database query, set `used_in_product_listing` = `1`.
+- **`user_defined` = `1`**—Export the attribute to storefront services during data synchronization
+- **`used_in_product_listing` = `1`**—Make the attribute accessible within the product listing database query
 
 For information about creating data patches, see [Develop data and schema patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) in the *PHP Developer Guide*.
 
