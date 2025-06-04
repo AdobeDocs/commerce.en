@@ -91,7 +91,7 @@ Because this recommendation type is not applicable to most catalogs, it is not e
 
 ### Enable Visual similarity recommendation type
 
-1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ dashboard.
+1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Product Recommendations** to display the _Product Recommendations_ dashboard.
 
 1. Click **Settings** (gear icon) to display the _Settings_ page.
 
@@ -117,8 +117,8 @@ After you enable visual recommendations, Adobe Sensei initiates the image proces
 
 The following image shows the product detail page for the _Clamber Watch_:
 
-   ![Clamber Watch](assets/visual-sim-pdp.png)
+   ![Clamber Watch](../../assets/visual-sim-pdp.png)
 
 The following shows the _Visual similarity_ recommendation unit for _Clamber Watch_:
 
-   ![Visual similarity unit](assets/visual-sim-unit.png)
+   ![Visual similarity unit](../../assets/visual-sim-unit.png)

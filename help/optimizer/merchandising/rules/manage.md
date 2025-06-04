@@ -1,9 +1,8 @@
 ---
-title: Manage Merchandising rules rules
-description: Learn how to manage existing Merchandising rules rules.
-exl-id: f831e77c-95e3-4d55-bc33-1a1247db22f8
+title: Manage Merchandising rules
+description: Learn how to manage existing Merchandising rules.
 ---
-# Manage Merchandising rules rules
+# Manage Merchandising Rules
 
 Follow these instructions to update the properties of existing rules.
 

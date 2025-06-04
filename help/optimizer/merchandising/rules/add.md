@@ -1,7 +1,6 @@
 ---
 title: Add Rules
 description: Learn how to create Merchandising rules rules.
-exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 ---
 # Add Rules
 

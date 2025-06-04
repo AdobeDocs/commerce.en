@@ -19,7 +19,7 @@ The preview on the right side of the page shows how the recommendation with the 
 
 ## Edit a recommendation
 
-1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Recommendations**.
+1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations**.
 
 1. Select the recommendation that you want to edit.
 

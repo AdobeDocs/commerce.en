@@ -66,4 +66,4 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 |--- |--- |
 | ![Pin selector](../../assets/btn-pin-blue.png) | Pins or unpins a facet to the top of the *Filters* list. |
 | ![More selector](../../assets/btn-more.png) | Displays a menu of more actions that can be applied to the selected facet. Options: Edit, Delete |
-| ![Move selector](a../../ssets/btn-move.png) | Use the *Move* icon to drag a pinned facet to another place in the *Pinned facets* section. |
+| ![Move selector](../../assets/btn-move.png) | Use the *Move* icon to drag a pinned facet to another place in the *Pinned facets* section. |

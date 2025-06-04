@@ -47,9 +47,9 @@ recommendations: noDisplay
       - [Manage](./merchandising/synonyms/manage.md)
       - [Best Practices](./merchandising/synonyms/best-practice.md)
 - Setup {#setup}
-   - [Catalog Views](./catalog/catalog-views.md)
-   - [Policies](./catalog/policies.md)
-   - [Data Sync](./data-insights/data-sync.md)
+   - [Catalog Views](./setup/catalog-view.md)
+   - [Policies](./setup/policies.md)
+   - [Data Sync](./setup/data-sync.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)
 - [Storefront](storefront.md)

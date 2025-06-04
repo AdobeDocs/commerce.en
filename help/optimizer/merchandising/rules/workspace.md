@@ -1,7 +1,6 @@
 ---
 title: Merchandising rules Workspace
 description: Learn your way around the Merchandising rules workspace.
-exl-id: 8cf581b5-cf83-48aa-86ab-39dea8da2ee5
 ---
 # Merchandising rules Workspace
 
