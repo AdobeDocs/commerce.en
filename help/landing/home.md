@@ -1,9 +1,8 @@
 ---
-title: Services documentation
+title: Services Guides Home
 description: Browse Adobe Commerce product documentation for Commerce SaaS Services
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
-breadcrumb-title: Documentation
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 ---

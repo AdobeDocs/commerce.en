@@ -1,7 +1,6 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce as a Cloud Service] Guide'
 user-guide-description: This guide provides detailed instructions for using [!DNL Adobe Commerce as a Cloud Service].
-breadcrumb-title: "Cloud Service Guide"
 hide: yes
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
