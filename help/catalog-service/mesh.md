@@ -11,18 +11,17 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 ![Catalog architecture diagram](assets/catalog-service-architecture-mesh.png)
 
-The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. For detailed instructions, see [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in the _API Mesh Developer Guide_. If this is your first time using API Mesh, complete the [Getting Started process](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) before you create the mesh.
 
-To complete the setup, install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-
-Once Mesh is configured on Adobe I/O Runtime, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
+After you have created and configured the Mesh, run the following command to add the `CommerceCatalogServiceGraph` source to your mesh.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Where `variables.json` is a separate file that stores commonly used values for Adobe I/O Runtime.
-For instance, the API key can be saved within the file:
+**`variables.json`** is a separate file that stores commonly used values for Adobe I/O Runtime.
+
+For example, the API key can be saved within the file:
 
 ```json
 {
@@ -30,7 +29,7 @@ For instance, the API key can be saved within the file:
 }
 ```
 
-After running this command, the Catalog Service should be running through the API Mesh. You can run the `aio api-mesh:get` command to view the configuration of your updated mesh.
+After running this command, the Catalog Service should be running through the API Mesh. Use the `aio api-mesh:get` command to view the configuration of your updated mesh.
 
 ## API Mesh examples
 
