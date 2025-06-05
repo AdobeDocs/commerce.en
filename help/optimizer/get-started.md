@@ -43,18 +43,19 @@ After the [!DNL Adobe Commerce Optimizer] instances are ready, the [!DNL Adobe C
 |Item|Sample URL|Purpose|
 |---|---|---|
 |[!DNL Adobe Commerce Optimizer] UI|`https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>`|Access Commerce Optimizer UI for managing your catalog across:<br>1. Merchandising rules (Search, Recommendations).<br>2. Catalog Management (catalog view and Policy creation).<br>3. Data Insights (View your catalog data ingestion status).|
-|Storefront APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql`|Access the APIs needed to set up your Commerce storefront powered by Edge Delivery Services.|
 |Catalog data ingestion APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>`|Access the APIs needed to ingest your catalog data.|
+|Merchandising APIs|`https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql`|Access the APIs needed to develop a Commerce storefront powered by Edge Delivery Services.|
+
 
 >[!NOTE]
 >
->See the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/) to learn more about the APIs needed for storefront setup and catalog ingestion.
+>See the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/) to learn more about the APIs needed for catalog data ingestion and storefront development.
 
 As an early access participant, you will receive an email with a secure link that, along with your IMS token, lets you log into [!DNL Adobe Commerce Optimizer] or make API calls.
 
 ## Set up the storefront
 
-Now that you have an [!DNL Adobe Commerce Optimizer] instance, you are ready to proceed [setting up](./storefront.md) your Commerce Storefront powered by Edge Delivery Services.
+Now that you have an [!DNL Adobe Commerce Optimizer] instance, you can proceed to [set up](./storefront.md) your Commerce Storefront powered by Edge Delivery Services.
 
 ## Available catalog data for early access participants
 
@@ -64,6 +65,6 @@ As an early access participant, the [!DNL Adobe Commerce Optimizer] instance con
 
 By default, [!DNL Adobe Commerce Optimizer] instances do not include any product data.
 
-See the [Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into [!DNL Adobe Commerce Optimizer].
+See the [Data ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into [!DNL Adobe Commerce Optimizer].
 
 The catalog data that you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the catalog views and policies.-->
