@@ -72,7 +72,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 Readiness indicators show which recommendation types will perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with [event collection](../../setup/events/overview.md) or if you do not have enough traffic to populate the recommendation type.
 
-Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](overview.md) to build personalized recommendations and to calculate their readiness score.
+Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](../../setup/events/overview.md) to build personalized recommendations and to calculate their readiness score.
 
 ### How readiness indicators are calculated
 

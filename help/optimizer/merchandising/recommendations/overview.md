@@ -13,4 +13,4 @@ Recommendations are surfaced on the storefront as units with labels, such as "Cu
 
 Data collection for the purposes of Recommendations does not include any personally identifiable information (PII). Also, all user identifiers like cookie IDs and IP addresses are strictly anonymized. To learn more, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-Recommendations users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
+Recommendations users can refer to the [Data sync](../../setup/data-sync.md) page for more data about data syncing.

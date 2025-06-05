@@ -24,6 +24,7 @@ recommendations: noDisplay
       - [Create](./merchandising/recommendations/create.md)
       - [Edit](./merchandising/recommendations/edit.md)
       - [Filters](./merchandising/recommendations/filters.md)
+      - [Types](./merchandising/recommendations/types.md)
       - [Best Practices](./merchandising/recommendations/best-practice.md)
    - Merchandising Rules {#rules}
       - [Overview](./merchandising/rules/overview.md)
