@@ -25,6 +25,9 @@ This guide walks you through creating and working with an [!DNL Adobe Commerce O
 
 This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
+START WITH SOURCE SVG HERE:
+https://github.com/AdobeDocs/commerce.en/blob/main/help/cloud-service/assets/architecture-and-workflow-diagrams.svg
+
 NEED DIAGRAM
 
 >[!TAB Developer workflow]

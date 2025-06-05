@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: What is Adobe Commerce Optimizer?
 description: Learn about [!DNL Adobe Commerce Optimizer] and its key features.
 hide: yes
 recommendations: noCatalog

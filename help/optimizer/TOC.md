@@ -9,7 +9,7 @@ recommendations: noDisplay
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Overview](overview.md)
+- [What is Adobe Commerce Optimizer?](overview.md)
 - [Get Started](get-started.md)
 - [Boundaries and Limitations](boundaries-limits.md)
 - Latest updates in documentation {#latest-updates}
