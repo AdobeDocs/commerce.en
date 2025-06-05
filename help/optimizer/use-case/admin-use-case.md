@@ -92,7 +92,7 @@ When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
 In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Catalog views]**. Notice that the Arkbridge and Kingsbluff dealerships already have catalog views created:
 
-![Preconfigured Catalog views](../assets/existing-catalog views-list.png)
+![Preconfigured Catalog Views](../assets/existing-channels-list.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Kingsbluff has the following policies:
 
 In the next section, you will create a catalog view and policies for the Celport dealership.
 
-## 2. Create a policy and catalog view
+## 2. Create a policy and catalog view.
 
 Carvelo's commerce manager needs to set up a new storefront for a dealer called *Celport* that belongs to the *East Coast Inc* company. Celport will sell brakes and suspensions for the Bolt and Cruz brands.
 
@@ -183,11 +183,11 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
 1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Catalog views]**.
 
-    ![Catalog views](../assets/catalog views.png)
+    ![Catalog views](../assets/catalog-view.png)
 
     Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *Global*.
 
-    ![Existing Catalog views Page](../assets/existing-catalog views-list.png)
+    ![Existing Catalog views Page](../assets/existing-channels-list.png)
 
 1. Click **[!UICONTROL Add catalog view]**.
 
@@ -201,7 +201,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
     The Catalog views page updates to display the new catalog view.
 
-    ![Updated Catalog views List](../assets/updated-catalog views-list.png)
+    ![Updated Catalog Views List](../assets/updated-catalog-view-list.png)
 
     >[!NOTE]
     >
@@ -211,7 +211,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
     Click the information icon for the Celport catalog view on the **Catalog views** page.
 
-    ![Celport catalog view ID](../assets/celport-catalog view-id.png)
+    ![Celport catalog view ID](../assets/celport-channel-id.png)
 
     Copy and save the catalog view ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog. 
 
@@ -235,7 +235,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
             "ac-price-book-id": "west_coast_inc",
             "ac-scope-locale": "en-US"
@@ -265,7 +265,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
 
    +++
 
-1. Replace the `ac-catalog view-id` value with Celport catalog view ID that you copied previously.
+1. Replace the `ac-catalog-view-id` value with Celport catalog view ID that you copied previously.
 1. Replace the `ac-environment-id` value with the tenant ID for your [!DNL Adobe Commerce Optimizer] instance. You can find the ID in the onboarding email for the Early Access program, or by contacting your Adobe account representative.
 
     >[!IMPORTANT]
@@ -305,7 +305,7 @@ When you save the changes, you update the catalog configuration to use the Carve
  
 1. Experiment with updating your storefront configuration file (`config.json`).
     
-    1. Change the `ac-catalog view-id` and `ac-price-book` values.
+    1. Change the `ac-catalog-view-id` and `ac-price-book` values.
    
        For example, you can change the catalog view ID to the Kingsbluff catalog view, and the price book ID to  `east_coast_inc`. You can see the parts categories available for Kingsbluff by reviewing the *Kingsbluff part categories* policy.
 
