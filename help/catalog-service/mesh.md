@@ -13,11 +13,10 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. For detailed instructions, see [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in the _API Mesh Developer Guide_. If this is your first time using API Mesh, complete the [Getting Started process](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) before you create the mesh.
 
-After you have created and configured the Mesh, run the following command to add the `CommerceCatalogServiceGraph` source to your mesh.
+After you have created and configured the mesh, run the following command to add the `[CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/CommerceCatalogServiceGraph.json)` source to your mesh.
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
 
 **`variables.json`** is a separate file that stores commonly used values for Adobe I/O Runtime.
 
