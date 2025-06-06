@@ -11,7 +11,7 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 ![Catalog architecture diagram](assets/catalog-service-architecture-mesh.png)
 
-To use API Mesh with the Catalog Service, you must connect API Mesh to your instance, and then add the API Mesh source [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) that provides the handler and endpoint configuration for the Catalog Service.
+To use API Mesh with the Catalog Service, you must connect API Mesh to your instance, and then add the API Mesh source [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) that provides the configuration to connect to the Catalog Service.
 
 ## Connect and configure API Mesh.
 
