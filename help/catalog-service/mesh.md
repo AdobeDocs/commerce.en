@@ -19,7 +19,7 @@ To use API Mesh with the Catalog Service, you must connect API Mesh to your inst
 
    If this is your first time using API Mesh, complete the [Getting Started process](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) before you create the mesh.
 
-1. Create a JSON file, such as `variables.json` that defines the Catalog Service API key using the following format.
+1. Create a JSON file, such as `variables.json` that contains the Catalog Service API key for your project using the following format.
 
    ```json
    {
