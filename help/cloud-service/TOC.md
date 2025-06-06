@@ -1,5 +1,5 @@
 ---
-user-guide-title: '[!DNL Adobe Commerce as a Cloud Service] Guide'
+user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: This guide provides detailed instructions for using [!DNL Adobe Commerce as a Cloud Service].
 hide: yes
 feature: Services, Saas
