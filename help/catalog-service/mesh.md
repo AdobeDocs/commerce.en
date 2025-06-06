@@ -27,7 +27,7 @@ To use API Mesh with the Catalog Service, you must connect API Mesh to your inst
    }
    ```
 
-1. Add the `[CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/CommerceCatalogServiceGraph.json)` source to your mesh using the [Adobe I/O Extensible CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli).
+1. Add the `[CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/)` source to your mesh using the [Adobe I/O Extensible CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli).
 
    ```bash
    aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
