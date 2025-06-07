@@ -6,7 +6,7 @@ exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 ---
 # Extend and customize SaaS data export feed data
 
-The [!DNL Commerce Data Export] extension provides a way to export data from the [!DNL Commerce] application to Commserce Services like Live Search, Catalog Service, and Product Recommendations. If needed, you can extend and customize the feed data to include additional attribute data or modify the collected data.
+The [!DNL Commerce Data Export] extension provides a way to export data from the [!DNL Commerce] application to Commerce Services like Live Search, Catalog Service, and Product Recommendations. If needed, you can extend and customize the feed data to include additional attribute data or modify the collected data.
 
 After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) in the GraphQL schema for storefront service.
 
