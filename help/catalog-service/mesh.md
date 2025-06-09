@@ -11,26 +11,31 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 ![Catalog architecture diagram](assets/catalog-service-architecture-mesh.png)
 
-The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+To use API Mesh with the Catalog Service, you must connect API Mesh to your instance, and then add the API Mesh source [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) that provides the configuration to connect to the Catalog Service.
 
-To complete the setup, install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+## Connect and configure API Mesh.
 
-Once Mesh is configured on Adobe I/O Runtime, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
+1. Connect API Mesh to your Adobe Commerce instance by following the instructions to [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in the _API Mesh Developer Guide_. 
 
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+   If this is your first time using API Mesh, complete the [Getting Started process](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) before you create the mesh.
 
-Where `variables.json` is a separate file that stores commonly used values for Adobe I/O Runtime.
-For instance, the API key can be saved within the file:
+1. Create a JSON file, such as `variables.json` that contains the Catalog Service API key for your project using the following format.
 
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
+   ```json
+   {
+       "CATALOG_SERVICE_API_KEY":"your_api_key"
+   }
+   ```
 
-After running this command, the Catalog Service should be running through the API Mesh. You can run the `aio api-mesh:get` command to view the configuration of your updated mesh.
+1. Add the `CommerceCatalogServiceGraph` source to your mesh using the [Adobe I/O Extensible CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli).
+
+   ```bash
+   aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
+   ```
+
+   The `-f variables.json` option supplies the Catalog Service API key value required to update the configuration. 
+
+After running this command, the Catalog Service should be running through the API Mesh. Use the `aio api-mesh get` command to view the configuration of your updated mesh.
 
 ## API Mesh examples
 
