@@ -34,6 +34,10 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 ## Add a product admin
 
+>[!NOTE]
+>
+>During the Early Access period, user provisioning for Adobe Commerce Optimizer is managed using the **Adobe Commerce as a Cloud Service – Backend** product.
+
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
 1. Select your organization.
@@ -78,7 +82,7 @@ The following instructions provide information on how to add users and developer
 
 ## Role resources
 
-The following list describes the resources that default roles have permission to access inside of the Adobe Commerce Admin. To edit the default permissions  for each role, navigate to **System** > **Permissions** > **User Roles** in the Commerce Admin.
+If you are using Commerce Optimizer with Adobe Commerce, you can manage roles and permissions for Adobe Commerce from the Commerce Admin. The following list shows the resources accessible to default roles in Adobe Commerce Admin. To edit the default permissions for each role, navigate to **System** > **Permissions** > **User Roles** in the Commerce Admin.
 
 **Users**
 
