@@ -5,7 +5,9 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # User management
 
-{{accs-early-access}}
+>[!NOTE]
+>
+>This User Management documentation is for Early Access participants who can manage and provision Adobe Commerce Optimizer users within their Adobe organization. If you don’t have Admin Console access, contact your account representative for assistance.
 
 If you want users to access the Admin in [!DNL Adobe Commerce Optimizer], you need to add them as users in your organization and ensure they have access to the Cloud Service product in the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}.
 
