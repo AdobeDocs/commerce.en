@@ -85,8 +85,8 @@ Access the [Developer Console](https://developer.adobe.com/developer-console/doc
  
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
-   * [!UICONTROL **Production**] - For live stores and customer-facing sites.
+   - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
+   - [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
    >[!NOTE]
    >
