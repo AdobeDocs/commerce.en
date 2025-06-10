@@ -30,7 +30,6 @@ The following roles are available for [!DNL Adobe Commerce Optimizer].
 * Admins - There are three different types of admins:
     * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Adobe Admin Console.
     * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console].
-    *  and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
     * [Product profile admins](#add-users-developers-and-product-profile-admins) - Product profile admins can manage users for the product in the [!DNL Adobe Admin Console].
 
 ## Add a product admin
