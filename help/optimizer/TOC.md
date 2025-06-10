@@ -10,6 +10,7 @@ recommendations: noDisplay
 
 - [Overview](overview.md)
 - [Get Started](get-started.md)
+- [User Management](user-management.md)
 - [Boundaries and Limitations](boundaries-limits.md)
 - Merchandising {#merchandising}
    - [Overview](./merchandising/overview.md)
