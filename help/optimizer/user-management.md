@@ -7,7 +7,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 >[!NOTE]
 >
->This User Management documentation is for Early Access participants with onboarding instructions to manage and and provision Adobe Commerce Optimizer users within their Adobe organization. If you don’t have these instructions, contact your account representative for assistance with user management.
+>This User Management documentation is for Early Access participants with onboarding instructions to manage and and provision Adobe Commerce Optimizer users within their Adobe organization. If you don’t have these instructions, contact your account representative for assistance with user management. During the Early Access program, user provisioning for Adobe Commerce Optimizer is managed by assigning users to the  **[!UICONTROL Adobe Commerce as a Cloud Service - backend]** product solution.
 
 If you want users to access the Admin in [!DNL Adobe Commerce Optimizer], you need to add them as users in your organization and ensure they have access to the Cloud Service product in the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}.
 
