@@ -9,28 +9,22 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 >
 >This User Management documentation is for Early Access participants with onboarding instructions to manage and provision [!DNL Adobe Commerce Optimizer] users within their Adobe organization. If you don’t have these instructions, contact your account representative for assistance with user management. During the Early Access program, user provisioning for [!DNL Adobe Commerce Optimizer] is managed by assigning users to the  **[!UICONTROL Adobe Commerce as a Cloud Service - backend]** product solution.
 
-To enable access to [!DNL Adobe Commerce Optimizer], add users from the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}, and ensure that they have access to the Commerce product. This process requires an IMS organization with access to [!DNL Adobe Commerce Optimizer], and a user that has an Admin role with system- or product-level permissions within that organization.
+To enable access to [!DNL Adobe Commerce Optimizer], add users from the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"} and ensure that they have access to the Commerce product.
 
-## Understanding roles
-
-The following roles are available for [!DNL Adobe Commerce Optimizer].
+You can assign users to any of the following roles:
 
 * **User** - Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage catalog views and merchandising rules, and track performance metrics.
 
-* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the [!DNL Adobe Commerce Optimizer]  APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
+* [**Developer**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the [!DNL Adobe Commerce Optimizer]  APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
 
-* Admins - There are three different types of admins:
+* **Admin** - There are three different types of admin roles:
     * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Adobe Admin Console.
     * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console].
     * [Product profile admins](#add-users-developers-and-product-profile-admins) - Product profile admins can manage users for the product in the [!DNL Adobe Admin Console].
 
 ## Add a product admin
 
->[!NOTE]
->
->During the Early Access period, user provisioning for [!DNL Adobe Commerce Optimizer] is managed using the **Adobe Commerce as a Cloud Service – Backend** product.
-
-1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
+1. Navigate to the [Admin console](https://adminconsole.adobe.com), and sign in with your Adobe ID.
 
 1. Select your organization.
 
@@ -45,6 +39,11 @@ The following roles are available for [!DNL Adobe Commerce Optimizer].
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
 ## Add users, developers, and product profile admins
+
+>[!BEGINSHADEBOX "Prerequisites"]
+* IMS organization provisioned for [!DNL Adobe Commerce Optimizer)
+* An Adobe Experience Cloud account in the same IMS organization with the system or product admin role
+>[!ENDSHADEBOX]
 
 Use the following insructions to add users and developers to the [!DNL Commerce Cloud Manager], where you manage your Commerce instances. **Only product admins and system admins can add users and developers to the Adobe Commerce as a Cloud Service product.**
 
