@@ -1,19 +1,17 @@
 ---
-user-guide-title: Data Services for Adobe Commerce
+user-guide-title: Services Guides
 user-guide-description: Documentation and resources for hosted services that provide extended capabilities to Adobe Commerce and Magento Open Source.
-title: Services for Adobe Commerce
 role: Admin, Leader, User
-feature: Personalization, Integration
+feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 ---
-# Data Services for Adobe Commerce documentation {#user-guides}
+# Adobe Commerce Services Guides {#user-guides}
 
 - [Overview](home.md)
 - Release information {#release-information}
    - [Release notes](/help/landing/release-notes-all.md)
 - [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
-   - Commerce services {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
