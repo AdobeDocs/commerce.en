@@ -11,7 +11,6 @@ recommendations: noDisplay
 - [What is Adobe Commerce Optimizer?](overview.md)
 - [Get Started](get-started.md)
 - [Boundaries and Limitations](boundaries-limits.md)
-- Latest updates in documentation {#latest-updates}
 - Managing Results {#manage-results}
    - [Success Metrics Report](./manage-results/success-metrics.md)
    - [Search Performance](./manage-results/search-performance.md)
@@ -25,7 +24,7 @@ recommendations: noDisplay
       - [Filters](./merchandising/recommendations/filters.md)
       - [Types](./merchandising/recommendations/types.md)
       - [Best Practices](./merchandising/recommendations/best-practice.md)
-   - Merchandising Rules {#rules}
+   - Rules {#rules}
       - [Overview](./merchandising/rules/overview.md)
       - [Workspace](./merchandising/rules/workspace.md)
       - [Add](./merchandising/rules/add.md)

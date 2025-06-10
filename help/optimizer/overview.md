@@ -58,10 +58,10 @@ Preview key metrics and activities for your store.
 
 Create personalized experiences for your shoppers through Search and recommendations.
 
-- **Search** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
+- **Product discovery** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 - **Recommendations** - Uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your catalog, results in a highly engaging, relevant, and personalized experience. Recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations directly from [!DNL Adobe Commerce Optimizer].
 
->[!TAB Catalog]
+>[!TAB Catalog Views]
 
 Define your catalog views and policies. The catalog not only contains your product data, but it also helps you define your business structure.
 
@@ -82,8 +82,8 @@ View valuable insights into the availability of product data for your storefront
 Key capabilities include:
 
 - **Third-party catalog ingestion** - Ingest catalog data from any third-party source (your existing Commerce catalog, PIM, ERP, and so on). Your catalog data is directly ingested into the merchandising services layer, which is a SaaS component called Merchandising Services powered by Catalog views and Policies (Catalog views and Policies).
-- **Merchandising Services powered by Catalog views and Policies** - This solution is the foundational piece of [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Catalog views and Policies is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. These merchandising services provide building blocks that merchants can use to create and manage catalogs at scale. Within [!DNL Adobe Commerce Optimizer], you can manage your catalog by creating catalog views and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using Search​, Recommendations​, and intelligent merchandising. Learn more about [Merchandising Services powered by Catalog views and Policies](./merchandising/overview.md).
-- **Before and After metrics (PDF)** - Provides real-time insights into the performance of your commerce initiatives. You can view before and after results of specific KPIs and evaluate the impact of changes and optimize for better results. Results are delivered in a PDF.
+- **Merchandising Services powered by Catalog views and Policies** - This solution is the foundational piece of [!DNL Adobe Commerce Optimizer]. Merchandising Services powered by Catalog views and Policies is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, and multi-language use cases. These merchandising services provide building blocks that merchants can use to create and manage catalogs at scale. Within [!DNL Adobe Commerce Optimizer], you can manage your catalog by creating catalog views and policies that best define your business goals. In addition, the merchandiser can provide personalized experiences to drive traffic and engagement using product discovery, recommendations​, and intelligent merchandising. Learn more about [Merchandising Services powered by Catalog views and Policies](./merchandising/overview.md).
+- **Before and After metrics** - Provides real-time insights into the performance of your commerce initiatives. You can view before and after results of specific KPIs and evaluate the impact of changes and optimize for better results. You can export the results in a PDF.
 - **Commerce storefront powered by Edge Delivery** - With Edge delivery, you can launch your site quickly using prebuilt storefront components with integrated commerce functionality — including product listing pages, product detail pages, cart, and checkout.
 - **Third-party cart and checkout** - Use API mesh and App builder to integrate with third-party cart and checkout systems.
 

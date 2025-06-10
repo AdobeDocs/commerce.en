@@ -57,7 +57,7 @@ The following product attributes have [storefront properties](https://experience
 
 ## Default non-system attribute properties
 
-The following table shows the default search and filterable properties of non-system attributes. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Adobe Commerce Optimizer] and native Adobe Commerce.
+The following table shows the default search and filterable properties of non-system attributes. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in [!DNL Adobe Commerce Optimizer].
 
 | Attribute Code | Searchable | Use in Layered Navigation |
 |--- |--- |--- |

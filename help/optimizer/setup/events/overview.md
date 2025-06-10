@@ -7,17 +7,13 @@ recommendations: noCatalog
 ---
 # Events
 
->[!NOTE]
->
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
-[!DNL Adobe Commerce Optimizer] deploys storefront events to your site automatically. These events capture data from shoppers' interactions on your site. This anonymized data powers Recommendations and Search.
+[!DNL Adobe Commerce Optimizer] deploys storefront events to your site automatically. These events capture data from shoppers' interactions on your site. This anonymized data powers recommendations and product discovery.
 
 >[!NOTE]
 >
 >Data collection does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. Learn [more](https://www.adobe.com/privacy/experience-cloud.html).
 
-## The **Events** page lets you observe the storefront event data being collected. Having a view into the event data collection lets merchants verify that they have implemented storefront events correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any event issues.
+The **Events** page lets you observe the storefront event data being collected. Having a view into the event data collection lets merchants verify that they have implemented storefront events correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any event issues.
 
 Key capabilities:
 
@@ -27,7 +23,7 @@ Key capabilities:
 
 Events are a critical tool to enhance the shopping experience and drive conversions by leveraging real-time data insights.
 
-The following sections describe event details for Recommendations and [Search](#search).
+The following sections describe event details for recommendations and [product discovery](#search).
 
 ## Recommendations
 
@@ -125,19 +121,19 @@ This table describes the events used by each recommendation type.
 | Most Purchased | `page-view`<br>`place-order` | Cart/Checkout |
 | Most added to cart | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
 | Viewed this, viewed that | `page-view`<br>`product-view` | Product detail page |
-| Viewed this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page<br>Cart/Checkout |
-| Bought this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Viewed this, bought that |  `page-view`<br>`product-view` | Product detail page<br>Cart/Checkout |
+| Bought this, bought that |  `page-view`<br>`product-view` | Product detail page |
 | Trending | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to purchase | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to purchase | Product Recs | `page-view`<br>`place-order` | Cart/Checkout |
-| Conversion: View to cart | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to cart | Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
+| Conversion: View to purchase |  `page-view`<br>`product-view` | Product detail page |
+| Conversion: View to purchase |  `page-view`<br>`place-order` | Cart/Checkout |
+| Conversion: View to cart |  `page-view`<br>`product-view` | Product detail page |
+| Conversion: View to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
 
-## Search
+## Product discovery
 
-Search uses events to power search algorithms such as "Most Viewed", and "Viewed This, Viewed That".
+Product discovery uses events to power search algorithms such as "Most Viewed", and "Viewed This, Viewed That".
 
-This table describes the events used by Search [ranking strategies](../../merchandising/rules/add.md#intelligent-ranking).
+This table describes the events used by product discovery [ranking strategies](../../merchandising/rules/add.md#intelligent-ranking).
 
 | Ranking Strategy | Events | Page |
 | --- | --- | --- |
@@ -152,7 +148,7 @@ This table describes the events used by Search [ranking strategies](../../mercha
 
 ### Required dashboard events
 
-Some events are required to populate the [Search dashboard](../../manage-results/search-performance.md)
+Some events are required to populate the [product discovery dashboard](../../manage-results/search-performance.md)
 
 | Dashboard area        | Events      | Join field |
 | ------------------- | ------------- | ---------- |

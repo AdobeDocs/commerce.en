@@ -34,7 +34,7 @@ The following section provides strategies you can use to enhance your site searc
 There are several key factors that determine the relevance and effectiveness of search results:
 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. To directly impact the success of your merchandising strategy:
-    - Set up the correct attributes as searchable with their corresponding weight.
+    - Set up the correct [attributes as searchable](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) with their corresponding weight.
     - Make sure that data within those attributes is relevant.
 - A well-designed search experience builds trust with customers and instills confidence that they will find what they need.
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
@@ -83,7 +83,7 @@ To optimize your search functionality, use [synonyms and spellings](../merchandi
 
 ## Improve search result relevance
 
-To improve search result relevance, implement effective [search rules](../merchandising/rules/overview.md) and use product metadata to ensure accurate and detailed attributes are searchable.
+To improve search result relevance, implement effective [search rules](../merchandising/rules/overview.md) and use product metadata to ensure accurate and detailed [attributes are searchable](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata).
 
 ### Images
 
@@ -95,7 +95,7 @@ Make sure that configurable products' child products have images with the correc
 
 ### Leverage Product Metadata
 
-Ensure that accurate and detailed product attributes are set up as searchable. Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
+Ensure that accurate and detailed product [attributes are set up as searchable](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
 
 To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
 
@@ -103,8 +103,8 @@ Ensure that each product has relevant content within each searchable attribute. 
 
 Learn more about product attributes for search:
 
-- Set attributes as searchable
-- Assign weight to attributes
+- [Set attributes as searchable](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
+- [Assign weight to attributes](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
 
 ## Field descriptions
 
