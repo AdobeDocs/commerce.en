@@ -32,7 +32,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 1. Your **[!UICONTROL PayPal Merchant ID]** and **[!UICONTROL PayPal Merchant Status]** values are automatically provided by PayPal once you visit the [!DNL Payment Services] dashboard for the first time.
 1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs), add your custom text (up to 22 characters) in the text field, replacing `Soft descriptor` or the existing value.
 1. Click **[!UICONTROL Save Config]** to save your changes.
-. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ![Featured Adobe Solution view](assets/config-view-all.png){width="700" zoomable="yes"}
 
