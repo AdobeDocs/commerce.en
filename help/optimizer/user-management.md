@@ -11,7 +11,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 To enable access to [!DNL Adobe Commerce Optimizer], add users from the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}, and ensure that they have access to the *[!UICONTROL Adobe Commerce as Cloud Service - backend product]*.
 
-This process requires an IMS organization with access to [!DNL Adobe Commerce Optimizer]. Only a System Admin or Product Admin for the organization can perform these processes.
+This process requires an IMS organization with access to [!DNL Adobe Commerce Optimizer], and a user that has the System or Product Admin role within that organization.
 
 >[!TIP]
 >
