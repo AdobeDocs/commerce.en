@@ -76,7 +76,7 @@ The following instructions provide information on how to add users and developer
     >
     >Admins added from this screen are assigined to the [product profile admins](#understanding-roles) group.
 
-    ![tab select](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"} (!!!NEED NEW SCREENSHOT SPECIFIC FOR ACO PRODUCT)
+    ![tab select](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
