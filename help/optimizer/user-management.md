@@ -41,7 +41,7 @@ You can assign users to any of the following roles:
 ## Add users, developers, and product profile admins
 
 >[!BEGINSHADEBOX "Prerequisites"]
-* IMS organization provisioned for [!DNL Adobe Commerce Optimizer)
+* IMS organization provisioned for [!DNL Adobe Commerce Optimizer]
 * An Adobe Experience Cloud account in the same IMS organization with the system or product admin role
 >[!ENDSHADEBOX]
 
