@@ -11,7 +11,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 To enable access to [!DNL Adobe Commerce Optimizer], add users from the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}, and ensure that they have access to the *[!UICONTROL Adobe Commerce as Cloud Service - backend product]*.
 
-This process requires an IMS organization with access to [!DNL Adobe Commerce Optimizer], and a user that has the System or Product Admin role within that organization.
+This process requires an IMS organization with access to [!DNL Adobe Commerce Optimizer], and a user that has a system or product Admin role within that organization.
 
 >[!TIP]
 >
@@ -23,9 +23,9 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce Op
 
 The following roles are available for [!DNL Adobe Commerce Optimizer].
 
-* **User** - Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage merchandising, catalog, and data Insight capabilities.
+* **User** - Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage catalogs and merchandising, and track performance metrics.
 
-* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the Adobe Commerce Optimizer APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
+* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the [!DNL Adobe Commerce Optimizer]  APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
 
 * Admins - There are three different types of admins:
     * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Adobe Admin Console.
@@ -36,7 +36,7 @@ The following roles are available for [!DNL Adobe Commerce Optimizer].
 
 >[!NOTE]
 >
->During the Early Access period, user provisioning for Adobe Commerce Optimizer is managed using the **Adobe Commerce as a Cloud Service – Backend** product.
+>During the Early Access period, user provisioning for [!DNL Adobe Commerce Optimizer] is managed using the **Adobe Commerce as a Cloud Service – Backend** product.
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
