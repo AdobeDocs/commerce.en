@@ -23,7 +23,7 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce Op
 
 The following roles are available for [!DNL Adobe Commerce Optimizer].
 
-* **User** - Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage catalogs and merchandising, and track performance metrics.
+* **User** - Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage catalog views and merchandising rules, and track performance metrics.
 
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the [!DNL Adobe Commerce Optimizer]  APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
 
