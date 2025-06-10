@@ -45,7 +45,7 @@ You can assign users to any of the following roles:
 * An Adobe Experience Cloud account in the same IMS organization with the system or product admin role
 >[!ENDSHADEBOX]
 
-Use the following insructions to add users and developers to the [!DNL Commerce Cloud Manager], where you manage your Commerce instances. **Only product admins and system admins can add users and developers to the Adobe Commerce as a Cloud Service product.**
+Use the following instructions to add users and developers to the [!DNL Commerce Cloud Manager], where you manage your Commerce instances.
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
