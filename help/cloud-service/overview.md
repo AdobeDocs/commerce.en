@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce as a Cloud Service] overview'
 description: Learn about the key features and benefits of [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
-role: Admin, Architect, Developer, User
+role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
