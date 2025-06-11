@@ -1,6 +1,7 @@
 ---
 title: Merchandising rules
 description: '[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape the shopping experience.'
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Merchandising rules
 

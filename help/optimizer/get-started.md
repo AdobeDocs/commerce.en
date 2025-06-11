@@ -4,6 +4,7 @@ description: Learn how to get started with [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 hide: yes
 recommendations: noCatalog
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Get Started
 

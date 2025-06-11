@@ -4,6 +4,7 @@ description: Learn about the events that [!DNL Adobe Commerce Optimizer] uses to
 role: Admin, Developer
 hide: yes
 recommendations: noCatalog
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Events
 
@@ -11,7 +12,7 @@ recommendations: noCatalog
 
 >[!NOTE]
 >
->Data collection does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. Learn [more](https://www.adobe.com/privacy/experience-cloud.html).
+>Data collection does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
 
 The **Events** page lets you observe the storefront event data being collected. Having a view into the event data collection lets merchants verify that they have implemented storefront events correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any event issues.
 
@@ -129,7 +130,7 @@ This table describes the events used by each recommendation type.
 | Conversion: View to cart |  `page-view`<br>`product-view` | Product detail page |
 | Conversion: View to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
 
-## Product discovery
+## Product discovery-specific events
 
 Product discovery uses events to power search algorithms such as "Most Viewed", and "Viewed This, Viewed That".
 
@@ -141,10 +142,6 @@ This table describes the events used by product discovery [ranking strategies](.
 | Most Purchased |  `page-view`<br>`place-order` | Cart/Checkout |
 | Most added to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
 | Viewed this, viewed that |  `page-view`<br>`product-view` | Product detail page |
-
->[!NOTE]
->
->Data collection for the purposes of Searchdoes not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
 
 ### Required dashboard events
 

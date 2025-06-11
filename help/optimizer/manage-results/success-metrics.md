@@ -1,6 +1,7 @@
 ---
 title: Success metrics report
 description: The Success metrics report page provides insight into the key performance metrics for your store.
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Success metrics report
 

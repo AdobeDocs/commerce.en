@@ -2,6 +2,7 @@
 title: Facets Best Practices
 description: Learn the best practices for implementing facets in your store.
 role: Admin, Developer
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 
 # Facets Best Practices

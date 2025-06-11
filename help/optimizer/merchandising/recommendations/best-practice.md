@@ -1,6 +1,7 @@
 ---
 title: Recommendations Best Practices
 description: Learn where you can place recommendations on various pages on your site and suggestions for frequently used labels for each recommendation type.
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Recommendations Best Practices
 
@@ -26,7 +27,7 @@ With so many recommendation types to choose from, which should you use on each p
 
 You can track the [metrics](workspace.md) and adjust if needed. Remember that experimentation is key.
 
-Some storefront pages restrict where you can place the recommendations. You can place the recommendations in one of the following page locations. Refer to the table below for more information.
+Some storefront pages restrict where you can place the recommendations. You can place the recommendations in one of the following page locations. Refer to the [table below](#supported-recommendations-by-page) for more information.
 
 - At the top of main content - Recommendations appear above the main content area just below the top navigation bar.
 - At the bottom of main content (default) - Recommendations appear below the main content area and before any other content blocks on the page, such as _Related Products_.

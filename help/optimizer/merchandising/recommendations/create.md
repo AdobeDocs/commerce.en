@@ -1,6 +1,7 @@
 ---
 title: Create New Recommendation
 description: Learn how to create a product recommendation unit.
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Create New Recommendation
 

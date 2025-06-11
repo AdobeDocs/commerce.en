@@ -4,6 +4,7 @@ description: Learn how to create and manage catalog views in [!DNL Adobe Commerc
 role: Admin, Developer
 hide: yes
 recommendations: noCatalog
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Catalog Views
 

@@ -1,6 +1,7 @@
 ---
 title: Recommendation Types
 description: Learn about the recommendations that you can deploy to various pages on your site.
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Recommendation Types
 

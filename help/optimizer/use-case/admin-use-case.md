@@ -4,6 +4,7 @@ description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your cat
 hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Storefront and Catalog Administrator End-to-End Use Case
 
