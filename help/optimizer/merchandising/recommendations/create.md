@@ -19,10 +19,6 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the _Select page type_ section, select the page where you want the recommendation to appear from the following options:
 
-   >[!NOTE]
-   >
-   > Recommendations are not supported on the Cart page when your store is configured to [display the shopping cart page immediately after adding a product to the cart](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
-
    - Home Page
    - Product Detail
    - Cart
