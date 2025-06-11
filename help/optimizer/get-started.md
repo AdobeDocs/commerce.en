@@ -49,7 +49,7 @@ This diagram provides a high-level overview of how developers create projects an
 
 **Role** Administrator or Developer
 
-Access the [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) to manage your Adobe Entitlements across your entire organization. See [Add users and admins](./user-management.md#add-users-and-admins) to learn how you or your organization's product admin or system admin can add users to the [!DNL Adobe Commerce Optimizer] product.
+Access the [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) to manage your Adobe Entitlements across your entire organization. See [user management](./user-management.md) to learn how you or your organization's product admin or system admin can add users to the [!DNL Adobe Commerce Optimizer] product.
 
 ## 2. Access Developer Console
 
