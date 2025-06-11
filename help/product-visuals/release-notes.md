@@ -32,7 +32,7 @@ _February 11, 2025_
 
 _June 11, 2025_
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-XXX --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
+![New issue](../assets/new.svg)<!-- Issue ACAP-1041 --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
 
 ## v1.1.0
 
