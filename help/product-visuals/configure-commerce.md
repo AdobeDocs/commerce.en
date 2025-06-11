@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce packages
-description: Learn how to install the [!DNL Product Visuals powered by AEM Assets Integration  for Adobe Commerce] extension and on an Adobe Commerce instance.
+description: Learn how to install the [!DNL Product Visuals powered by AEM Assets Integration for Adobe Commerce] extension and on an Adobe Commerce instance.
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
