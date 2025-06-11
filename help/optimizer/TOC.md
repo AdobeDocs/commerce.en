@@ -47,6 +47,7 @@ recommendations: noDisplay
 - Setup {#setup}
    - [Catalog Views](./setup/catalog-view.md)
    - [Policies](./setup/policies.md)
+   - [Price Books](./setup/pricebooks.md)
    - [Data Sync](./setup/data-sync.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)

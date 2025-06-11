@@ -143,3 +143,36 @@ In this section, you create a catalog view. Ensure that you have already [create
   ![Updated Catalog views Page](../assets/updated-catalog-view-list.png)
 
 After you complete these steps, the new catalog view is configured to display products and pricing based on the scopes and policies you selected.
+
+## Price books
+
+In this section, you select the price book you want linked to your catalog view. Learn more about [price books](pricebooks.md).
+
+### Price Book Assignment
+
+- Enable ACO users to assign one or multiple price books to a catalog view as "allowed price books"
+- Provide capability to set a default price book for each catalog view
+- Support hierarchical price book structures with maximum depth of 3 levels
+
+### Hierarchical Price Book Structure
+
+- Transition from the current "main" price book concept to hierarchical price books
+- Support multiple price book trees, each with maximum depth of 3 (including root)
+- Enable selective assignment of price books from any hierarchy level
+
+**Example**: In hierarchy `Price Book A → Price Book B → Price Book C`, users can select only Price Books A and C as allowed price books.
+
+### ACO User Interface
+
+- **Display**: Present comprehensive list of all available price books during catalog view creation/editing
+- **Assignment**: Enable multiple price book assignment to catalog views
+- **Access Control**: Restrict catalog view operations to assigned price books only
+- **Flexibility**: Support catalog views without assigned price books (storefront API restrictions apply)
+- **Global Access**: Option to allow all price books for a catalog view (pending UX finalization)
+
+### Commerce Optimizer UI
+
+- **Assignment**: Enable default price book selection from allowed price books list
+- **Constraint**: Enforce single default price book per catalog view
+- **Flexibility**: Support catalog views without default price books
+- **Validation**: Restrict default assignment to allowed price books only
