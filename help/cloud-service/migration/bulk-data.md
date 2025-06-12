@@ -1,13 +1,13 @@
 ---
 title: 'Bulk Data Migration Tool'
-description: Learn how to use the Bulk Data Migration Tool to migrate data from your existing Adobe Commerce on Cloud or on-premises instance to [!DNL Adobe Commerce as a Cloud Service].
+description: Learn how to use the Bulk Data Migration Tool to migrate data from your existing Adobe Commerce on Cloud instance to [!DNL Adobe Commerce as a Cloud Service].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Architect
 ---
 
 # Bulk data migration tool
 
-The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool is designed for solution implementers to migrate data from an existing Adobe Commerce on Cloud or on-premises instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). 
+The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool is designed for solution implementers to migrate data from an existing Adobe Commerce on Cloud instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). 
 
 The following image details the architecture and key components for using the Bulk data migration tool.
 
@@ -86,18 +86,17 @@ During verification, CDMS compares REST and GraphQL API responses from previousl
 
 **Database-level verification**
 
-During verification, CDMS calculates checksums for the migrated tables and fields in the target database and compares them to previously extracted checksums to ensure bit-level data integrity for compatible database structures.
+During verification, CDMS counts the number of extracted records and compares that number to the amount of records loaded.
 
 **On-demand verification (optional)**
 
 You can also manually trigger comprehensive verification of all system records:
 
-> [!NOTE]
+>[!NOTE]
 >
-> This process is resource-intensive and should only be used in sandbox environments.
+>This process is resource-intensive and should only be used in sandbox environments.
 
 The full verification includes:
 
 - Complete API-based verification using all pre-extracted REST and GraphQL API responses
-- Comprehensive database checksum validation
 - Detailed report of any inconsistencies found
