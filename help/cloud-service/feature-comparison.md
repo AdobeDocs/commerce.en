@@ -1,7 +1,7 @@
 ---
 title: Adobe Commerce SaaS vs PaaS comparison
 description: Compare Adobe Commerce SaaS vs PaaS models to determine the best implementation approach for your business needs.
-role: Architect, Developer
+role: Architect
 exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 ---
 # Feature comparison
