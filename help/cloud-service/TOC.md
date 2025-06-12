@@ -16,6 +16,6 @@ recommendations: noDisplay, noCatalog
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
-- [Migration](#migration)
+- Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
