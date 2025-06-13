@@ -35,8 +35,8 @@ To leverage this integration, businesses must meet the following requirements:
 
 Enabling the Commerce integration with Experience Manager Assets is a three step process:
 
-1. [Install AEM Assets package](configure-aem.md).
+1. [Install the AEM Assets package](configure-aem.md).[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 
 1. [Install Adobe Commerce packages](configure-aem.md).
 
-1. [Configure the integration asset](setup-synchronization.md).
+1. [Configure the AEM assets integration](setup-synchronization.md).

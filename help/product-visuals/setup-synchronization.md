@@ -1,6 +1,6 @@
 ---
 title: Configure the integration
-description: Learn how to connect your Adobe Commerce and Experience Manager Assets projects to enable asset synchronization between these two systems.
+description: Learn how to connect your Adobe Commerce project and Experience Manager Assets projects to enable asset synchronization between these two systems.
 feature: CMS, Media
 ---
 
@@ -20,7 +20,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
 - [Install AEM Assets package](configure-aem.md)
 
-- [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
+- [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 
 - Create a support ticket to request enablement of the Dynamic Media Open API for the AEM Assets for Commerce Integration and the creation of an IMS Client ID for Asset Selector. In the ticket, include the **[!UICONTROL AEM Program ID]**, **[!UICONTROL AEM Environment ID]** and **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce. See [ImsAuthProps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-integration/integrate-asset-selector-adobe-app) in the *AEM Assets Selector* documentation for more information.
 
@@ -31,6 +31,7 @@ For the initial setup, use the default *Match by product sku* rule.
    1. Open the AEM Sites console and select **[!UICONTROL Assets]**.
 
    1. Copy and save the project and environment IDs from the URL:<br>`https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+   
 1. From the Commerce Admin, open the AEM Assets Integration configuration.
 
    1. Go to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
@@ -43,7 +44,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
 1. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
 
-   The [Asset Selector IMS Client ID](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-integration/integrate-asset-selector-adobe-app#ims-auth-props) is required by the [!UICONTROL Assets Selector], an AEM Assets feature that allows users to embed visual assets directly into Commerce product pages.
+   The [Asset Selector IMS Client ID](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-integration/integrate-asset-selector-adobe-app#ims-auth-props) is required by the [!UICONTROL Assets Selector], an AEM Assets feature that allows users to embed media files from the connect AEM Assets project directly into Commerce product pages.
 
 1. Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 
@@ -63,11 +64,11 @@ For the initial setup, use the default *Match by product sku* rule.
 
 ### Configure the Custom Domain URL
 
-If a merchant sets a [Custom Domain Name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} in their AEM dashboard, it is necessary to add this **Custom Domain URL** in Commerce, so the AEM Assets integration can use it.
+If the AEM Assets as a Cloud Service project has been configured with a [Custom Domain Name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}, you must add the domain name to the Commerce store configuration so that the AEM Assets integration for Commerce can use it.
 
 1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-      ![AEM Assets Integration enable the integration](assets/aem-assets-view.png){width="600" zoomable="yes"}
+   ![AEM Assets Integration enable the integration](assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. Add the **Custom Domain URL** to the **[!UICONTROL Asset Custom Domain]** field.
 
