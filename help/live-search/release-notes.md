@@ -137,7 +137,7 @@ _May 16, 2024_
 
 ### Updates
 
-![Fix](../assets/fix.svg) Fixed the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/product-search/#filtering-by-categories) GraphQL query to correctly filter based on the `categoryPath` and `categoryList` for categories.
+![Fix](../assets/fix.svg) Fixed the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-by-categories) GraphQL query to correctly filter based on the `categoryPath` and `categoryList` for categories.
 
 ## [!DNL Live Search] 4.1.1
 
@@ -234,7 +234,7 @@ _September 1, 2023_
 
 #### Updates
 
-![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/product-search/).
+![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/).
 
 ### [!DNL Live Search] 3.0.2
 
@@ -275,7 +275,7 @@ _March 14, 2023_
 
 ![New](../assets/new.svg) Product Item Card in Rules preview 
 ![New](../assets/new.svg) [Product Listing Page widget](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
-![New](../assets/new.svg) [Category filtering options](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/product-search/#facets)
+![New](../assets/new.svg) [Category filtering options](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![New](../assets/new.svg) Added the ability to drag and drop to create Pin events
 ![New](../assets/new.svg) New Pin actions:
     - Pin to spot - Pin button to create Pin event with one click
@@ -324,7 +324,7 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 ![New](../assets/new.svg) Live Search now supports filtering by the 'Display Out of Stock Products' setting in the admin. If 'Display Out of Stock Products' is set to false, `inStock = true` is added to the filter.
 ![Fix](../assets/fix.svg) To improve performance, the 'Suggestions' block has been removed from the Live Search popup. The data is still passed through GraphQL, in case you want to replace the feature.
-![Fix](../assets/fix.svg) `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/product-search/) topic.
+![Fix](../assets/fix.svg) `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) topic.
 ![Fix](../assets/fix.svg) Previously, a user tied to a B2B company would receive an incorrect Customer Group Code when doing searches. Live Search now returns the correct value.
 ![Fix](../assets/fix.svg) Previously, when searching for a term that does not exist, Live Search would return an error. That bug is now fixed.
 

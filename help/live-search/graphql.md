@@ -7,7 +7,7 @@ exl-id: d32edf42-1fb0-40f9-89e5-798b39521b77
 
 The *GraphQL* workspace allows administrators to build and test GraphQL queries using their own data.
 
-This workspace supports the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/product-search/) and [`attributeMetadata`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/attribute-metadata/) queries.
+This workspace supports the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) and [`attributeMetadata`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/) queries.
 
 ![GraphQL workspace](assets/graphql.png)
 
@@ -18,7 +18,7 @@ query productSearch {
     items {
       product {
         sku
-		name
+        name
       }
     }
     facets {

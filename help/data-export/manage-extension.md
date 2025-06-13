@@ -15,7 +15,7 @@ as [Live Search](/help/live-search/overview.md), [Product Recommendations](/help
 
 If you don't need one of the installed commerce data export modules, use the `magento:module:disable` CLI command to disable it.
 
-For example, there is a [Categories API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/categories/) that uses the categories permission feed data internally. If you are not using this API, you can disable the data export for the categories permission feed.
+For example, there is a [Categories API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) that uses the categories permission feed data internally. If you are not using this API, you can disable the data export for the categories permission feed.
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions

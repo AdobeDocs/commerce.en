@@ -50,4 +50,4 @@ You can perform both of these actions using the available SDKs as described in t
 
 1. Use the [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) to fetch the recommendation units on the storefront. The SDK returns necessary product data to render recommendation units on a page.
 
-1. Learn how to use the [`recommendations` GraphQL query](https://developer.adobe.com/commerce/webapi/graphql/schema/recommendations/recommendations/) to return information about product recommendation blocks for a given SKU and more.
+1. Learn how to use the [`recommendations` GraphQL query](https://developer.adobe.com/commerce/webapi/graphql/schema/recommendations/queries/recommendations/) to return information about product recommendation blocks for a given SKU and more.

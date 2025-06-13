@@ -8,7 +8,7 @@ exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 
 The [!DNL Commerce Data Export] extension provides a way to export data from the [!DNL Commerce] application to Commerce Services like Live Search, Catalog Service, and Product Recommendations. If needed, you can extend and customize the feed data to include additional attribute data or modify the collected data.
 
-After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/products/#productviewattribute-type) in the GraphQL schema for storefront service.
+After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) in the GraphQL schema for storefront service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Add the attributes to the Product Attribute query(`Magento\CatalogDataExporter\M
 
 ## Add product attributes to Adobe Commerce
 
-Developers can add product attributes that are accessible from the [product attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/products/#output-fields) by using one of the following methods:
+Developers can add product attributes that are accessible from the [product attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) by using one of the following methods:
 
 - Add the attribute to Adobe Commerce for inclusion in the `products` feed data exported to Commerce storefront services.
 - Add the attribute dynamically during the feed synchronization process using a plugin.
