@@ -55,3 +55,4 @@ recommendations: noDisplay
 - [Settings](settings.md)
 - Use Case {#use-case}
    - [Storefront and Catalog Administrator End-to-End Use Case](./use-case/admin-use-case.md)
+- [Developer Guide](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
