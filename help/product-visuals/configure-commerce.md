@@ -31,8 +31,11 @@ You need the following roles and permissions to set up this integration.
 Install the Adobe Commerce package and prepare the Commerce environment by completing the following tasks:
 
 1. [Install the AEM Assets Integration for Commerce extension (`aem-assets-integration`)](#install-the-aem-assets-integration-extension).
+
 1. [Configure the Commerce Services Connector](#configure-the-commerce-services-connector) to connect your Adobe Commerce instance and with the services that enable data to be transmitted between Adobe Commerce and AEM Assets.
+
 1. [Configure Adobe I/O Events for Commerce](#configure-adobe-io-events-for-commerce)
+
 1. [Get authentication credentials for API access](#get-authentication-credentials-for-api-access)
 
 ## Install the `aem-assets-integration` extension
@@ -51,27 +54,27 @@ Use this method to install the [!DNL AEM Assets Integration] extension for a Com
    >
    >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
 
-2. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
+1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
 
    ```shell
    magento-cloud environment:checkout <environment-id>
    ```
 
-3. Add the AEM Assets Integration for Commerce extension.
+1. Add the AEM Assets Integration for Commerce extension.
 
    ```shell
    composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
    ```
 
-4. Update package dependencies.
+1. Update package dependencies.
 
    ```shell
    composer update "magento/aem-assets-integration"
    ```
 
-5. Commit and push code changes for the `composer.json` and `composer.lock` files.
+1. Commit and push code changes for the `composer.json` and `composer.lock` files.
 
-6. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
+1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
 
    ```shell
    git add -A
