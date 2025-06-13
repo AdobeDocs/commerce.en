@@ -10,7 +10,7 @@ When you create a recommendation, you create a _recommendation unit_, or widget,
 ![Recommendation unit](../../assets/unit.png)
 _Recommendation unit_
 
-When you activate the recommendation unit, Adobe Commerce starts to [collect data](workspace.md) to measure impressions, views, clicks, and so on. The Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
+When you activate the recommendation unit, Adobe Commerce starts to [collect data](../../manage-results/recommendation-performance.md) to measure impressions, views, clicks, and so on. The Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
 
 1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
 
