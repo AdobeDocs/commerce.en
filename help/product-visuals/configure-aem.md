@@ -4,7 +4,7 @@ description: Add the asset metadata required to enable the Product Visuals power
 feature: CMS, Media, Integration
 ---
 
-# Install Product Visuals powered by AEM Assets package for Commerce
+# Install the Product Visuals powered by AEM Assets project template
 
 Adobe provides a project template, `commerce-assets`, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this template to your environment as a Maven package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
 

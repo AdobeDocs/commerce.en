@@ -39,4 +39,4 @@ Enabling the Commerce integration with Experience Manager Assets is a three step
 
 1. [Install Adobe Commerce packages](configure-aem.md).
 
-1. [Configure the integration asset](setup-synchronization.md).
+1. [Configure the AEM assets integration](setup-synchronization.md).
