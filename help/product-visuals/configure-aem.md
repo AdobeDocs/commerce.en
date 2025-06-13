@@ -4,7 +4,7 @@ description: Add the asset metadata required to enable the Product Visuals power
 feature: CMS, Media, Integration
 ---
 
-# Install Product Visuals powered by AEM Assets package for Commerce
+# Install the Product Visuals powered by AEM Assets project template
 
 Before setting up the Product Visuals powered by AEM Assets integration for Commerce make sure you have administrative access to customize application and environment configurations:
 
