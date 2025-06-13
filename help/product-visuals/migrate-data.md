@@ -21,9 +21,13 @@ feature: CMS, Media, Integration
 ## Migration best practices
 
 1. Curate assets before migration by removing unused and duplicate content.
+
 1. Organize assets logically by size, format, or use case.
+
 1. Consider breaking large migrations into smaller batches.
+
 1. Schedule resource-intensive imports during off-peak hours.
+
 1. Validate metadata mapping before full import.
 
 ## Migration workflow
@@ -58,9 +62,8 @@ Use this sample CSV code to create the file in a code editor or spreadsheet appl
 
 ```csv
 assetPath,dc:title{{String}},dam:status{{String}},commerce:positions{{Number: multi}},commerce:isCommerce{{String}},commerce:skus{{String: multi}},commerce:roles{{String: multi}}
-/content/dam/commerce/sample1.jpg,Sample 1,approved,1,Yes,sample1,thumbnail; image; swatch_image; small_image
-/content/dam/commerce/sample2.jpg,Sample 2,approved,1,Yes,sample2,thumbnail; image; swatch_image; small_image
-/content/dam/commerce/sample3.jpg,Sample 3,approved,1,Yes,sample3,thumbnail; image; swatch_image; small_image
+/content/dam/commerce/sample1.jpg,SKU title 1,approved,1,Yes,sku1,thumbnail; image; swatch_image; small_image
+/content/dam/commerce/sample2.jpg,SKU title 2,approved,1|1|1,Yes,sku1|sku2|sku3,thumbnail; image; swatch_image; small_image|image|image; small_change
 ```
 
 +++
