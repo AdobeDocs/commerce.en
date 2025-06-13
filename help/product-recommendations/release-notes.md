@@ -36,7 +36,7 @@ _June 28, 2024_
 
 _July 18, 2023_
 
-![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
+![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/recommendations/recommendations/) query.
 
 _April 25, 2023_
 
