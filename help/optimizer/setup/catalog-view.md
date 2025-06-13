@@ -8,10 +8,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Catalog Views
 
->[!NOTE]
->
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
 A product catalog is essential for online shopping experiences, enabling customers to browse, search, and make purchases. For operational efficiency, a product catalog should closely mirror the company's business structure. Businesses often need to sell products at varying prices based on geographic market, distribution catalog view, customer segment, and other variables. To accommodate this, an ecommerce platform must offer a flexible catalog data model that allows companies to produce variations of their catalog tailored to these scenarios. Adobe addresses these needs by offering Merchandising Services powered by Catalog views and Policies. Merchandising Services provides building blocks that merchants can use to create and manage catalogs at scale. This enables businesses to configure catalogs that align with their business structure and go-to-market strategies.
 
 At a high level, with Merchandising Services you can:
@@ -99,11 +95,11 @@ The catalog view and policy definitions are created using dedicated APIs:
 
 |Key features|Benefit|
 |---|---|
-|**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, and so on.)|<ul><li>Directly ingest catalog data into the storefront service pipeline which powers: Catalog Service, Search (Live Search), and Recommendations. With this, you can deliver catalog updates at scale for millions of SKUs. This unlocks time sensitive large scale promotion management. </li></ul>|
+|**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, and so on.)|<ul><li>Directly ingest catalog data into the storefront service pipeline which powers: Catalog Service, Product Discovery, and Recommendations. With this, you can deliver catalog updates at scale for millions of SKUs. This unlocks time sensitive large scale promotion management. </li></ul>|
 |**New catalog product scopes**: catalog view, policy, and scope are new product scopes introduced by Merchandising Services. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#product-context-management).|<ul><li>With the new scopes, Merchandising Services unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.</li><li>Eliminate data redundancy in your catalog management.</li></ul>|
 |**Scale to tens of millions of SKUs**|Unlock catalog management at scale. Here you can ingest and manage over 200MM SKUs with ease.|
 |**Product type support**|<ul><li>Simple, configurable</li><li>Bundles and bundles of bundles (future roadmap)</li><li>Subscriptions and plans (future roadmap)</li></ul>|
-|**Headless commerce**|<ul><li>Full support for headless commerce implementations through Catalog Service, Search (Live Search) and Recommendations APIs.</li></ul>|
+|**Headless commerce**|<ul><li>Full support for headless commerce implementations through Catalog Service, Product Discovery, and Recommendations APIs.</li></ul>|
 |**Modern lightning-fast UI components**|<ul><li>Out of the box UI component support for product search and Recommendations.</li><li>The UI components are extensible and flexible so that they can be used by both Adobe's Edge Delivery Service as well as any other storefront implementation.</li></ul>|
 
 ## What type of merchant benefits the most from Merchandising Services?

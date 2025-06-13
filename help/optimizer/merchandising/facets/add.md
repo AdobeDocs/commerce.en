@@ -11,7 +11,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 ## Step 1: Add a facet
 
-1. Select **Merchandising** > **Facets** then click **Add facets**.
+1. Select _Merchandising_ > **Facets** then click **Add facets**.
 1. In the *Add facets* list, each available attribute has a separate ![Add button](../../assets/btn-add.png). Complete either of the following:
 
      - In the *Facets attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
@@ -20,11 +20,9 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
       The facet is added to the bottom of the *Dynamic Facets* list and the *Publish changes* button becomes available.
       To configure price faceting intervals and groupings, see [Settings](../../settings.md). Learn more about the [types](type.md) of facets.
 
-1. If the facet you want to add can't be found, go to **Stores** > Attributes > **Product** and verify that the attribute has the [required properties](overview.md#facets-requirements) to be used as a facet. If necessary, update the following storefront properties of the attribute:
+1. If the facet you want to add can't be found, make sure the [product attribute](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) has the following set:
 
-     - Use in Search - `Yes`
-     - Use in Search Results Layered Navigation - `Yes`
-     - Use in Layered Navigation - `Filterable (with results)`
+     - `searchable` = `Yes`
 
 1. When prompted, refresh the cache.
 

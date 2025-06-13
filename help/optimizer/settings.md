@@ -5,7 +5,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Settings
 
-Use the *Settings* workspace to enable visual recommendations and configure the price facet ranges and intervals and the default language for search.
+Use the *Settings* workspace to enable visual recommendations and configure the price facet ranges and intervals and the default language for product discovery.
 
 ## Enable visual recommendations
 
@@ -13,11 +13,11 @@ To use the [Visual Similarity](./merchandising/recommendations/types.md#visual-s
 
 In the _Visual Recommendations_ section, set **Enable Visual Recommendations** to the active position.
 
-## Search
+## Product discovery
 
 Price faceting specifies the number of price range groups and how price values are distributed among them.
 
-The Language setting tells [!DNL Adobe Commerce Optimizer] which language to expect when writing the index.
+The **Language** setting tells [!DNL Adobe Commerce Optimizer] which language to expect when writing the index.
 
 ### Price faceting
 

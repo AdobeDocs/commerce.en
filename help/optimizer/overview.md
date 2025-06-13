@@ -7,10 +7,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # What is [!DNL Adobe Commerce Optimizer]?
 
->[!NOTE]
->
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
 [!DNL Adobe Commerce Optimizer] enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
 
 With [!DNL Adobe Commerce Optimizer], you can:
@@ -20,12 +16,6 @@ With [!DNL Adobe Commerce Optimizer], you can:
 - Define business catalog views and policies.
 - Create personalized search and recommendations using AI and ML.
 - View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
-
->[!BEGINSHADEBOX]
-
-If you are interested in learning more about the [!DNL Adobe Commerce Optimizer] early access program, complete the [Early Access request form](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
-
->[!ENDSHADEBOX]
 
 Watch the following video for a high-level overview of [!DNL Adobe Commerce Optimizer]:
 
@@ -55,24 +45,33 @@ When you first launch [!DNL Adobe Commerce Optimizer], you see the following:
 
 Preview key metrics and activities for your store.
 
+>[!TAB Success metrics report]
+
+ADD DESCRIPTION
+
+>[!TAB Search performance]
+
+ADD DESCRIPTION
+
+>[!TAB Recommendations performance]
+
+ADD DESCRIPTION
+
 >[!TAB Merchandising]
 
-Create personalized experiences for your shoppers through Search and recommendations.
+Create personalized experiences for your shoppers through product discovery and product recommendations.
 
-- **Product discovery** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 - **Recommendations** - Uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your catalog, results in a highly engaging, relevant, and personalized experience. Recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations directly from [!DNL Adobe Commerce Optimizer].
+- **Merchandising rules** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
+- **Facets** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
+- **Synonyms** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 
->[!TAB Catalog Views]
+>[!TAB Setup]
 
-Define your catalog views and policies. The catalog not only contains your product data, but it also helps you define your business structure.
+Define your catalog views and policies. The catalog not only contains your product data, but it also helps you define your business structure. Also, you can view valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
 
 - **Catalog views** - Help you define your retail structure into meaningful business groups. For example, dealers for the automobile industry, subsidiaries for multi brand conglomerates, or manufacturing locations for suppliers.
 - **Policies** - Data access filters that are housed within catalog views. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram). 
-
->[!TAB Data Insights]
-
-View valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
-
 - **Data Sync** - Displays an overview of the synchronization status for product data transferred from their data source (PIM, ERP, and so on) into [!DNL Adobe Commerce Optimizer]. That product data is displayed within the **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]**, and **[!UICONTROL Recommendations]** tabs.
 - **Events** - Displays storefront event data which powers Search and Recommendations. The **Events** page lets the merchant verify that they have implemented storefront eventing correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any eventing issues.
 

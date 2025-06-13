@@ -15,11 +15,11 @@ recommendations: noDisplay
 - Managing Results {#manage-results}
    - [Success Metrics Report](./manage-results/success-metrics.md)
    - [Search Performance](./manage-results/search-performance.md)
+   - [Recommendations Performance](./manage-results/recommendation-performance.md)
 - Merchandising {#merchandising}
    - [Overview](./merchandising/overview.md)
    - Recommendations {#recommendations}
       - [Overview](./merchandising/recommendations/overview.md)
-      - [Performance](./merchandising/recommendations/workspace.md)
       - [Create](./merchandising/recommendations/create.md)
       - [Edit](./merchandising/recommendations/edit.md)
       - [Filters](./merchandising/recommendations/filters.md)

@@ -1,11 +1,11 @@
 ---
-title: 'Recommendations Workspace'
-description: Learn how to configure, manage, and monitor product recommendation performance.
+title: 'Recommendations Performance'
+description: The Recommendations performance page provides insight into how well your product recommendations are performing.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Recommendations Workspace
+# Recommendations Performance
 
-The Recommendations workspace displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
+The Recommendations performance page displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
 
 >[!INFO]
 >
@@ -15,7 +15,7 @@ The Recommendations workspace displays a list of previously configured recommend
 
 ## Set metrics date range
 
-1. Click the **Calendar** ![Calendar selector](../../assets/icon-calendar.png) control.
+1. Click the **Calendar** ![Calendar selector](../assets/icon-calendar.png) control.
 
 1. Choose one of the following:
 
@@ -27,7 +27,7 @@ The Recommendations workspace displays a list of previously configured recommend
 
 ## Show/hide columns
 
-1. In the upper-left corner, click **Show/hide** ![Column selector](../../assets/icon-show-hide-columns.png) columns.
+1. In the upper-left corner, click **Show/hide** ![Column selector](../assets/icon-show-hide-columns.png) columns.
 
    The visible columns have a blue check mark.
 
@@ -38,33 +38,33 @@ The Recommendations workspace displays a list of previously configured recommend
 
    The table is refreshed to include only the selected columns.
 
-   ![Recommendations workspace](../../assets/workspace-select-columns.png)
+   ![Recommendations workspace](../assets/workspace-select-columns.png)
    _Show/hide columns_
 
 ## View details
 
 1. In the table, click the recommendation that you want to examine.
 
-   ![Recommendations workspace](../../assets/recommendation-detail.png)
+   ![Recommendations workspace](../assets/recommendation-detail.png)
    _Home Page Conversion Rate Detail_
 
 1. To change the status of the recommendation, click **Activate** or **Deactivate**.
 
 ## Edit recommendation
 
-From the recommendation details page, click **Edit**. To learn more, go to [Edit Recommendations](edit.md).
+From the recommendation details page, click **Edit**. To learn more, go to [Edit Recommendations](../merchandising/recommendations/edit.mdd).
 
 ## Create recommendation
 
-From the recommendation details page, click **Create**. To learn more, go to [Create Recommendations](create.md).
+From the recommendation details page, click **Create**. To learn more, go to [Create Recommendations](../merchandising/recommendations/create.md).
 
 ## Workspace Controls
 
 |Control|Description|
 |---|---|
-|![Calendar selector](../../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations. Options: 24 hours / 7 days / 30 days|
-|![Column selector](../../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
-|Create Recommendation|Opens the [Create New Recommendation](create.md) page.|
+|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations. Options: 24 hours / 7 days / 30 days|
+|![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
+|Create Recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
 ## Column Descriptions
 

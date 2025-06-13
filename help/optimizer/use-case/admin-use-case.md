@@ -8,10 +8,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Storefront and Catalog Administrator End-to-End Use Case
 
->[!NOTE]
->
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
 The following use case demonstrates how you can use [!DNL Adobe Commerce Optimizer] to organize your catalog to match retail operations using a single base catalog. It also demonstrates how to set up a storefront powered by Edge Delivery Services.
 
 ## Prerequisite

@@ -5,15 +5,14 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Add Synonyms
 
-Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. [!DNL Adobe Commerce Optimizer] can manage up to 200 synonyms per `Data Space ID`.
+Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. [!DNL Adobe Commerce Optimizer] can manage up to 200 synonyms per store.
 
 !!!ADD WORKSPACE SCREENSHOT!!!
 
 ## Step 1: Add a synonym
 
-1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Adobe Commerce Optimizer]**.
-1. Click the **Synonyms** tab.
-1. Click the **Add synonyms** button.
+1. From the left rail, go to _Merchandising_ > **Synonyms**.
+1. Click the **[!UICONTROL Add synonyms]** button.
 
 ## Step 2: Define the synonym by type
 
@@ -32,6 +31,7 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
    ![Two-way synonym example](../../assets/synonym-add-two-way-example.png)
 
 1. When complete, click **Save**.
+
    The set of synonyms appears in the list with a two-way arrow between each term that means the terms are interchangeable.
 
    ![Two-way synonym](../../assets/synonym-two-way.png)
@@ -49,6 +49,7 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
    In this example, the keyword is "pants" and the one-way expansion terms "capris, peddle-pushers" are each a subset of "pants", but with a specific meaning.
 
 1. When complete, click **Save**.
+
    The set of synonyms appears in the list with a one-way arrow pointing from the expansion terms to the keyword to indicate the terms are subsets of the keyword. A plus sign separates each expansion term.
 
    ![One-way synonym](../../assets/synonym-one-way.png)

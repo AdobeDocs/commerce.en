@@ -27,7 +27,7 @@ Facets that are rendered for the [!DNL Adobe Commerce Optimizer] storefront are 
 
 ### Facet labels
 
-For [!DNL Adobe Commerce Optimizer] storefronts, the facet label is determined by the [*Attribute Properties*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). You can edit facet labels from the [faceting workspace](workspace.md).
+You can edit facet labels from the [faceting workspace](workspace.md).
 
 ### Sort type
 

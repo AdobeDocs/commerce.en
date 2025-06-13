@@ -6,10 +6,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Boundaries and limits
 
->[!NOTE]
->
->This documentation describes the boundaries and limits for early-access development and does not reflect all functionality intended for general availability.
-
 The following provides boundaries and limits for Adobe Commerce Optimizer.
 
 ## Catalog

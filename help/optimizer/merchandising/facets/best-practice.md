@@ -9,12 +9,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 Filter and facet functionality is a critical component of your [!DNL Adobe Commerce Optimizer] site, designed to enhance the shopper experience by allowing shoppers to narrow down search results and find products more efficiently. This functionality helps shoppers sort through vast catalogs of items by applying specific criteria, making the shopping process faster, easier, and more satisfying. By implementing effective, shopper-friendly filters and facets, you can help customers find exactly what they need quickly and efficiently, ultimately boosting satisfaction and conversion rates.
 
-To set up a product attribute as a facet, it must have the following [properties set](add.md#step-1-add-a-facet):
-
-- **[!UICONTROL Use in Search]** -  `Yes`
-- **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
-- **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
-
 ## Tips to optimize facets
 
 - Determine the most relevant and useful attributes for your products, such as title, category, brand, price range, color, and size and set them as [dynamic facets](type.md). 
@@ -25,3 +19,4 @@ To set up a product attribute as a facet, it must have the following [properties
 - Display the number of available products next to each facet option to give shoppers an idea of the search results they can expect.
 - Implement collapsible facet sections to keep the interface clean and manageable, especially on mobile devices.
 - Allow shoppers to easily reset individual facets or all selected filters to start a new search.
+- If you have a large number of attributes to contend with, consider combining attributes into a single 'meta-attribute'. For example, shoes generally have numeric sizes, while shirts are commonly sized "S/M/L/XL". These two types of sizes can be combined into a single searchable attribute.
