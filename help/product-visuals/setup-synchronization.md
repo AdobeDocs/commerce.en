@@ -22,7 +22,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
 - [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 
-- Create a support ticket to request enablement of AEM Assets Integration for Commerce. This process will imply enabling Dynamic Media Open API and the creation of a dedicated IMS Client ID for your Adobe Commerce instance. In the ticket, include the **[!UICONTROL AEM Program ID]**, **[!UICONTROL Adobe Commerce URL]**, **[!UICONTROL AEM Environment ID]** and **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
+- Check the [Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) topic to learn how to enable Dynamic Media with OpenAPI capabilities. This is needed to enable the AEM Assets Integration for Commerce.
 
 ## Configure the connection
 
