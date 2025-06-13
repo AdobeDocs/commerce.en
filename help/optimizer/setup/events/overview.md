@@ -94,7 +94,7 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 #### Required dashboard events
 
-The following events are required to populate the [[!DNL Recommendations] dashboard](../../merchandising/recommendations/workspace.md)
+The following events are required to populate the [[!DNL Recommendations] dashboard](../../manage-results/recommendation-performance.md)
 
 | Dashboard column | Events    | Join field  |
 | ---------------- | --------- | ----------- |

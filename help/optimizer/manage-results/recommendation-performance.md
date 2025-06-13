@@ -52,7 +52,7 @@ The Recommendations performance page displays a list of previously configured re
 
 ## Edit recommendation
 
-From the recommendation details page, click **Edit**. To learn more, go to [Edit Recommendations](../merchandising/recommendations/edit.mdd).
+From the recommendation details page, click **Edit**. To learn more, go to [Edit Recommendations](../merchandising/recommendations/edit.md).
 
 ## Create recommendation
 
