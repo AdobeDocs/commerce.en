@@ -6,7 +6,7 @@ feature: CMS, Media, Integration
 
 # Install the Product Visuals powered by AEM Assets project template
 
-Before setting up the Product Visuals powered by AEM Assets integration for Commerce make sure you have administrative access to customize application and environment configurations:
+Before setting up Product Visuals powered by the AEM Assets integration for Commerce make sure you have administrative access to customize application and environment configurations:
 
 - Administrative access to the Cloud Manager program where the AEM Assets as a Cloud Service environments are provisioned.
 
