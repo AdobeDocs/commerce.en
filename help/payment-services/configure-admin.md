@@ -27,7 +27,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 
     >[!WARNING]
     >
-    > If you need to change your dataspace ID in the Commerce Services Connector, you need to reset your [!DNL Payment Services] ID. Click **Reset Payment Services ID** to reset your Sandbox or Production IDs. If you reset your [!DNL Payment Services] IDs, you must onboard again.
+    > If you need to change your dataspace ID in the Commerce Services Connector, you need to reset your [!DNL Payment Services] ID. Click **Reset Payment Services ID** to reset your Sandbox ID. If you reset your [!DNL Payment Services] Sandbox ID, you must onboard again.
 
 1. Your **[!UICONTROL PayPal Merchant ID]** and **[!UICONTROL PayPal Merchant Status]** values are automatically provided by PayPal once you visit the [!DNL Payment Services] dashboard for the first time.
 1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs), add your custom text (up to 22 characters) in the text field, replacing `Soft descriptor` or the existing value.
