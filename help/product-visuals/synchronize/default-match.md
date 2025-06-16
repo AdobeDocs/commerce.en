@@ -1,10 +1,10 @@
 ---
-title: Automatic Matching
+title: Default automatic matching
 description: Learn how the out-of-the-box automatic matching enables seamless synchronization between Adobe Commerce and Product Visuals, ensuring that assets are automatically linked to the correct merchandising entities.
 feature: CMS, Media, Integration
 ---
 
-# Automatic matching
+# Default automatic matching
 
 The [!DNL Product Visuals] integration provides a default automatic matching mechanism (**[!UICONTROL Match by product SKU]**) based on the **AEM Assets** metadata configuration. This rule enables seamless synchronization between **Adobe Commerce** and **AEM Assets**, ensuring that product visuals are automatically linked to the correct merchandising entities.
 

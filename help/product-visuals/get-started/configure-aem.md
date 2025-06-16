@@ -1,10 +1,10 @@
 ---
-title: Install Product Visuals powered by AEM Assets package for Commerce
+title: Install Product Visuals packages
 description: Enable seamless asset synchronization between Adobe Commerce and AEM Assets by adding the required metadata for the Product Visuals integration.
 feature: CMS, Media, Integration
 ---
 
-# Install Product Visuals powered by the AEM Assets project template
+# Install Product Visuals packages
 
 Before setting up the Product Visuals powered by AEM Assets integration for Commerce ensure you have administrative access to configure application and environment settings:
 
