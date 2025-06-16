@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce packages
-description: Learn how to install the [!DNL AEM Assets Integration for Adobe Commerce] extension and on an Adobe Commerce instance.
+description: Learn how to install the [!DNL Product Visuals powered by AEM Assets Integration for Adobe Commerce] extension and on an Adobe Commerce instance.
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
@@ -10,19 +10,9 @@ The AEM Assets Integration for Commerce extension (`aem-assets-integration`) ena
 
 Add this extension to the Commerce environment by installing the `aem-assets-integration` PHP extension. You also need to enable Adobe I/O Events for Commerce and generate the credentials required for communication and workflows between Adobe Commerce and Adobe Experience Manager Assets.
 
-## System requirements
-
-The AEM Assets Integration for Commerce extension has the following system and configuration requirements.
-
-**Software requirements**
-
-- Adobe Commerce 2.4.5+
-- PHP version compatible with installed version of Adobe Commerce–version 8.1, 8.2, 8.3, or 8.4)
-- Composer: 2.x
-
 **Access requirements**
 
-You need the following roles and permissions to set up the integration.
+You need the following roles and permissions to set up this integration.
 
 - [Commerce cloud project administrator](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)—Install required extensions and configure the Commerce application server from the Admin or the command line.
 
@@ -41,13 +31,16 @@ You need the following roles and permissions to set up the integration.
 Install the Adobe Commerce package and prepare the Commerce environment by completing the following tasks:
 
 1. [Install the AEM Assets Integration for Commerce extension (`aem-assets-integration`)](#install-the-aem-assets-integration-extension).
+
 1. [Configure the Commerce Services Connector](#configure-the-commerce-services-connector) to connect your Adobe Commerce instance and with the services that enable data to be transmitted between Adobe Commerce and AEM Assets.
+
 1. [Configure Adobe I/O Events for Commerce](#configure-adobe-io-events-for-commerce)
+
 1. [Get authentication credentials for API access](#get-authentication-credentials-for-api-access)
 
 ## Install the `aem-assets-integration` extension
 
-Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The AEM Asset Integration is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
+Install the latest version of the Product Visuals powered by AEM Assets Integration (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The AEM Asset Integration is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
 >[!BEGINTABS]
 
