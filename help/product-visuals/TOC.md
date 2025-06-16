@@ -9,7 +9,7 @@ feature: CMS, Page Content
 - [Product Visuals](overview.md)
 - [Release notes](release-notes.md)
 - Get started {#get-started}
-  - [Install Product Visuals packages](get-started/configure-aem.md)
+  - [Install AEM Assets template](get-started/configure-aem.md)
   - [Install Adobe Commerce packages](get-started/configure-commerce.md)
   - [Configure the integration](get-started/setup-synchronization.md)
   - [View and manage logs](get-started/logs.md)
