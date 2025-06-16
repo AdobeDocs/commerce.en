@@ -13,7 +13,7 @@ feature: CMS, Page Content
   - [Install Adobe Commerce packages](get-started/configure-commerce.md)
   - [Configure the integration](get-started/setup-synchronization.md)
   - [View and manage logs](get-started/logs.md)
-  - [Data migration](get-started/migrate-data.md)
+  - [Migrate data](get-started/migrate-data.md)
 - Synchronization mechanisms {#synchronize}
   - [Accurate and relevant content](synchronize/commerce-content.md)
   - [Default automatic matching](synchronize/default-match.md)
