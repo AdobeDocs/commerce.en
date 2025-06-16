@@ -6,13 +6,14 @@ feature: CMS, Media, Integration
 
 # Configure the AEM Assets project to support Commerce data
 
-Before setting up the Product Visuals powered by AEM Assets integration for Commerce ensure you have administrative access to configure application and environment settings:
+To use Product Visuals to manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required boilerplate code and metadata to manage Commerce asets from the AEM authoring environment.
 
-* Administrative access to the Cloud Manager program where the AEM Assets as a Cloud Service environments are provisioned.
+* **Step 1:** Install an AEM project template with boilerplate code that adds the Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
+* **Step 2:** Set up the metadata profile to apply to Commerce asset files
 
-* Administrative access to the Adobe Commerce environment and the ability to retrieve or generate the [Magento Account API keys](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#genapikey) required for authentication.
+## Add the boilerplate code to your AEM project
 
-Adobe provides a project template, `commerce-assets`, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this template to your environment as a Maven package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
+Adobe provides a project template, commerce-assets, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this template to your environment as a Maven package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
 
 The template adds the following resources to the AEM Assets authoring environment.
 
@@ -22,11 +23,11 @@ The template adds the following resources to the AEM Assets authoring environmen
 
 * A custom metadata type `commerce:productmetadata` and a corresponding UI component to add a *[!UICONTROL Product Data]* property. Product Data includes the metadata properties to associate a Commerce asset with product SKUs, and to specify image `role` and `position` attributes for the asset.
 
-  ![Custom Product Data UI Control](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+ ![Custom Product Data UI Control](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
 * A metadata schema form with a Commerce tab that includes the `Eligible for Commerce?` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `order` (position) fields from the AEM Assets UI.
 
-   ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
+  ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
 
 * A [sample tagged and approved Commerce asset](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg` to support initial asset synchronization. Only approved Commerce assets can be synchronized from AEM Assets to Adobe Commerce.
 
@@ -34,7 +35,9 @@ The template adds the following resources to the AEM Assets authoring environmen
 >
 > See the [readme](https://github.com/ankumalh/assets-commerce) page for more information about the **AEM Commerce boilerplate**.
 
-You need the following resources and permissions to use this AEM project to update the environment configuration:
+### Prerequisites
+
+You need the following resources and permissions to use the `commerce-assets` AEM project to update the environment configuration:
 
 * [Access to the AEM Assets Cloud Manager Program and environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) with the Program and Deployment Manager roles.
 
@@ -42,7 +45,7 @@ You need the following resources and permissions to use this AEM project to upda
 
 * Understand [AEM project structure](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) and how to deploy custom content packages using Cloud Manager.
 
-## Install the `commerce-assets` package
+### Install the `commerce-assets` package
 
 1. From the Cloud Manager, create production and staging environments for your AEM Assets project, if needed.
 
