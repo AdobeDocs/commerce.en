@@ -19,8 +19,8 @@ feature: CMS, Page Content
   - Manage assets {#manage-product-visuals}
     - Synchronization mechanisms {#sync-strategies}
       - [Accurate and relevant content](acc-content.md)
-      - [OOTB automated matching](ootb-match.md)
-      - [Custom automatic synchronization](custom-match.md)
+      - [Automated matching](ootb-match.md)
+      - [Custom automatic matching](custom-match.md)
       - [AEM Asset Selector](asset-selector.md)
     - Media types & Commerce use case Product Visuals powered by AEM Assets Integration {#product-visuals-configure}
       - [Use Product Visuals powered by AEM Assets Integration with Commerce](manage-aem-assets.md)
