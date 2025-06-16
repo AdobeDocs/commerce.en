@@ -62,6 +62,16 @@ For the initial setup, use the default *Match by product sku* rule.
 
    The configuration update triggers the initial synchronization process, allowing Commerce to accept incoming updates from AEM Assets. The time required for synchronization depends on the volume of assets and specific configurations. The integration leverages automated processes to minimize the time required for synchronization.
 
+### Synchronization SLA
+
+The integration guarantees the following synchronization performance levels:
+
+- `< 5 minutes for 99% of updates`
+
+- `< 30 minutes for 99.9% of updates`
+
+This ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
+
 ### Configure the Custom Domain URL
 
 If the AEM Assets as a Cloud Service project has been configured with a [Custom Domain Name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}, you must add the domain name to the Commerce store configuration so that the AEM Assets integration for Commerce can use it.
