@@ -8,7 +8,7 @@ feature: CMS, Media, Integration
 
 The [!DNL Product Visuals] integration provides a default automatic matching mechanism (**[!UICONTROL Match by product SKU]**) based on the **AEM Assets** metadata configuration. This rule enables seamless synchronization between **Adobe Commerce** and **AEM Assets**, ensuring that product visuals are automatically linked to the correct merchandising entities.
 
-See [AEM Assets metadata](configure-aem.md#configure-a-metadata-profile) for more information.
+See [AEM Assets metadata](../get-started/configure-aem.md#configure-a-metadata-profile) for more information.
 
 ## Configure the automatic matching mechanism
 

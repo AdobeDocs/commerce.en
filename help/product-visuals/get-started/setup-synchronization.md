@@ -55,7 +55,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
    After enabling the integration, additional configuration options are available to specify asset matching criteria.
 
-1. Select the matching rule for asset synchronization, **[!UICONTROL Match by SKU]** for [automatic matching](ootb-match.md), or **[!UICONTROL Custom match]** for [custom automatic matching](custom-match.md).
+1. Select the matching rule for asset synchronization, **[!UICONTROL Match by SKU]** for [automatic matching](../synchronize/default-match.md), or **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md).
 
    1. Select **[!UICONTROL Match by product SKU]**, or **[!UICONTROL Custom match (Requires App Builder)]**.
 
@@ -89,4 +89,4 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Use AEM Assets with Commerce](manage-aem-assets.md)
+[Use AEM Assets with Commerce](../manage-assets.md)

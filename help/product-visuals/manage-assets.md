@@ -41,11 +41,11 @@ To manage product-related images, all changes must be made directly in **AEM Ass
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA ](setup-synchronization.md#synchronization-sla)for more information on this topic. 
+Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
 
 ## Content images
 
-Adobe Commerce provides Page Builder as a **content management system (CMS)** for merchants who are not using the Adobe Experience Manager (AEM) toolset. To enhance content creation, our integration leverages [AEM Asset Selector](asset-selector-integration.md), allowing marketers to seamlessly access and embed images directly from the **DAM**. This ensures that only approved and high-quality images are used in content creation, eliminating the need for redundant storage in Adobe Commerce.
+Adobe Commerce provides Page Builder as a **content management system (CMS)** for merchants who are not using the Adobe Experience Manager (AEM) toolset. To enhance content creation, our integration leverages [AEM Asset Selector](synchronize/asset-selector-integration.md), allowing marketers to seamlessly access and embed images directly from the **DAM**. This ensures that only approved and high-quality images are used in content creation, eliminating the need for redundant storage in Adobe Commerce.
 
 ### Using AEM Asset Selector in Page Builder
 
@@ -109,7 +109,7 @@ This integration ensures that merchants can effortlessly manage product videos i
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA ](setup-synchronization.md#synchronization-sla)for more information on this topic. 
+Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
 
 ## Category images
 
@@ -117,7 +117,7 @@ Adobe Commerce enables merchants to associate images with product categories, he
 
 ### Use AEM Asset Selector for category images
 
-After you configure the [AEM Asset Selector](asset-selector-integration.md), you can use it to add assets into your catalog categories content.
+After you configure the [AEM Asset Selector](synchronize/asset-selector-integration.md), you can use it to add assets into your catalog categories content.
 
 1. On the _Admin_ sidebar, navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
