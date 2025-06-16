@@ -36,13 +36,13 @@ Follow the migration workflow to export media files from Adobe Commerce or anoth
 
 ### Step 1: Export content from the existing data source
 
-For Adobe Commerce merchants, the **Remote Storage module** can facilitate media file exports and imports. This module allows businesses to store and manage media files via remote storage services like AWS S3. To set up remote storage for your Commerce instance, see [Configure Remote Storage](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) in the **Commerce Configuration Guide**.
+For Adobe Commerce merchants, the **Remote Storage module** can facilitate media file exports and imports. This module allows businesses to store and manage media files using remote storage services like AWS S3. To set up remote storage for your Commerce instance, see [Configure Remote Storage](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) in the **Commerce Configuration Guide**.
 
-If you have media files stored outside of Adobe Commerce, upload them directly to one of the [data sources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view) supported by AEM as a Cloud Service.
+If you have media files stored outside of Adobe Commerce, upload them directly to one of the [data sources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) supported by AEM as a Cloud Service.
 
 ### Step 2: Build a CSV file for metadata mapping
 
-Once the media files are exported, a CSV file must be created to map these assets with the necessary metadata for automation. The CSV should include fields for **product**, **position**, and **role mapping**, ensuring alignment with the [AEM Assets metadata profile](configure-aem.md#configure-a-metadata-profile).
+After exporting the media files, create a CSV file to map these assets with the metadata required for automation. The CSV should include fields for **product**, **position**, and **role mapping**, ensuring alignment with the [AEM Assets metadata profile](configure-aem.md#configure-a-metadata-profile).
 
 For each media file you plan to migrate, provide values for the metadata fields included in the [AEM Assets metadata profile for Commerce assets](configure-aem.md) as described in the following table.
 

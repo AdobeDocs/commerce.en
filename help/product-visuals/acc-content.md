@@ -5,6 +5,6 @@ feature: CMS, Media, Integration
 ---
 # Accurate and relevant content
 
-A true content supply story involves a combination of key pillars across **Creation and Production**, **Workflow and Planning**, and **Delivery and Activation**. Each of these pillars is valuable on its own and helps drive significant value for organizations:
+A complete content supply chain is built on three essential pillars: **Creation and Production**, **Workflow and Planning**, and **Delivery and Activation**. While powerful on their own, together they form a cohesive system that enables organizations to scale content operations that drive significant value by delivering impactful experiences.
 
 ![Key Pillars](./assets/key-pillars.png){width="600" zoomable="yes"}

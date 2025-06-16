@@ -8,7 +8,7 @@ feature: CMS, Media
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
 
-Adobe Commerce allows merchants to associate images with product categories, helping create a visually engaging storefront. Our integration leverages AEM Asset Selector, enabling marketers to seamlessly select images directly from the AEM Assets digital asset management system (DAM). This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels.
+Adobe Commerce allows merchants to associate images with product categories, helping create a visually engaging storefront. This integration leverages the AEM Asset Selector, enabling marketers to seamlessly select images directly from the AEM Assets digital asset management system (DAM) from their Adobe Commerce application. This ensures that only approved assets are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels.
 
 ## Update an asset
 
@@ -24,7 +24,7 @@ For details, see the following AEM Assets documentation.
 
 To update a category image using AEM Asset Selector:
 
-After you have enabled and configured the AEM Assets integration, you can  add assets into your catalog categories content by using the AEM assets selector now available in the Commerce Admin.
+After you have enabled and configured the AEM Assets integration, you can add assets into your catalog categories content by using the AEM assets selector now available in the Commerce Admin.
 
 1. On the _Admin_ sidebar, navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
