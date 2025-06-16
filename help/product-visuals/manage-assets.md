@@ -123,7 +123,7 @@ After you configure the [AEM Asset Selector](asset-selector-integration.md), you
 
 1. Select a category you want to update.
 
-1. Expand the ![Expansion selector](assets/icon-display-expand.png) in the **[!UICONTROL Content]** section.
+1. Expand the ![Expansion selector](../assets/icon-display-expand.png) in the **[!UICONTROL Content]** section.
 
 1. In the **[!UICONTROL Content]** section, locate the *Image field* associated with the category.
 
