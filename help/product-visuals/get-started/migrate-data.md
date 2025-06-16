@@ -78,11 +78,11 @@ The following is a high-level overview for using the tool.
 
 1. From the Experience Manager Tools view, select **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
-   ![AEM Assets authoring](./assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![AEM Assets authoring](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. From the Bulk Import Configurations, select **[!UICONTROL Create]** to open the configuration form.
 
-   ![AEM Assets authoring](./assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![AEM Assets authoring](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. Set up and save the configuration.
 

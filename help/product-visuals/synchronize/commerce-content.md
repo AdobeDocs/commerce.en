@@ -7,7 +7,7 @@ feature: CMS, Media, Integration
 
 A true content supply involves a combination of key pillars across **Creation and Production**, **Workflow and Planning**, and **Delivery and Activation**. Each of these pillars is valuable on its own and helps drive significant value for organizations:
 
-![Key Pillars](./assets/key-pillars.png){width="600" zoomable="yes"}
+![Key Pillars](../assets/key-pillars.png){width="600" zoomable="yes"}
 
 An eCommerce platform is one of the most crucial engagement channels. Ensuring seamless updates in the asset management system guarantees that commerce storefronts always display the most up-to-date product information. This is essential to achieving the three main objectives of any **DAM (Digital Asset Management system)** <> **Commerce integration**:
 

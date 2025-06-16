@@ -16,7 +16,7 @@ See [AEM Assets metadata](configure-aem.md#configure-a-metadata-profile) for mor
 
 1. Specify **[!UICONTROL Match by SKU]** as the matching rule.
 
-    ![default automated matching rule](./assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+    ![default automated matching rule](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
 
 1. Enter the metadata field name used for asset identification in the AEM Assets.
 
@@ -28,7 +28,7 @@ See [AEM Assets metadata](configure-aem.md#configure-a-metadata-profile) for mor
 
 When the **[!UICONTROL Match by product SKU]** matching rule is configured  in the Commerce Admin, Commerce assets files synchronize automatically from AEM Assets to your Commerce project based on the asset metadata configured for each file. You configure the metadata from the AEM **Commerce** tab in the **AEM Assets author** environment:
 
-![Example metadata](./assets/example-metadata.png){width="600" zoomable="yes"}
+![Example metadata](../assets/example-metadata.png){width="600" zoomable="yes"}
 
 1. In AEM Assets, update the image metadata to add the Adobe Commerce association, `Commerce=yes`.
 

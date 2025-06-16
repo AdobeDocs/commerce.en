@@ -29,7 +29,7 @@ Product images are automatically pulled from AEM Assets based on pre-configured 
 
 1. Open the **Images And Videos** section.
 
-   ![Product image](./assets/product-image.png){width="600" zoomable="yes"}
+   ![Product image](../assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -83,7 +83,7 @@ Adobe Commerce serves as a key engagement channel for digital assets. After Prod
 
 1. Open the **Images And Videos** section.
 
-   ![Product image](./assets/product-image.png){width="600" zoomable="yes"}
+   ![Product image](../assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -127,15 +127,15 @@ After you configure the [AEM Asset Selector](asset-selector-integration.md), you
 
 1. In the **[!UICONTROL Content]** section, locate the *Image field* associated with the category.
 
-   ![Category content](./assets/category-asset.png){width="600" zoomable="yes"}
+   ![Category content](../assets/category-asset.png){width="600" zoomable="yes"}
 
 1. Click **[!UICONTROL Select from Assets]** to change the category image.
 
-   ![Category content](./assets/asset-view.png){width="600" zoomable="yes"}
+   ![Category content](../assets/asset-view.png){width="600" zoomable="yes"}
 
 1. Choose an image from the AEM Asset Selector.
 
-   ![Category content](./assets/select-image.png){width="600" zoomable="yes"}
+   ![Category content](../assets/select-image.png){width="600" zoomable="yes"}
 
 1. Click **[!UICONTROL Save]** and continue.
 

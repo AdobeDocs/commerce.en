@@ -25,7 +25,7 @@ Embedding AEM Asset Selector within the Adobe Commerce Admin Panel provides seve
 
 * **Enhanced Content Quality**–Ensures the use of high-resolution, optimized images across product pages, categories, and Page Builder.
 
-![Asset Selector](./assets/asset-selector.png){width="600" zoomable="yes"}
+![Asset Selector](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Configure the AEM Asset Selector in Adobe Commerce
 

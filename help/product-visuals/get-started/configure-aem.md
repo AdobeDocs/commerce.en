@@ -22,11 +22,11 @@ The template adds the following resources to the AEM Assets authoring environmen
 
 * A custom metadata type `commerce:productmetadata` and a corresponding UI component to add a *[!UICONTROL Product Data]* property. Product Data includes the metadata properties to associate a Commerce asset with product SKUs, and to specify image `role` and `position` attributes for the asset.
 
-  ![Custom Product Data UI Control](./assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+  ![Custom Product Data UI Control](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
 * A metadata schema form with a Commerce tab that includes the `Eligible for Commerce?` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `order` (position) fields from the AEM Assets UI.
 
-   ![Commerce tab for AEM Assets metadata schema form](./assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
+   ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
 
 * A [sample tagged and approved Commerce asset](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg` to support initial asset synchronization. Only approved Commerce assets can be synchronized from AEM Assets to Adobe Commerce.
 
@@ -73,17 +73,17 @@ The Product Data UI component is added automatically based on the template.
 
 1. From the Adobe Experience Manager workspace, go to the Author Content Administration workspace for AEM Assets by clicking the Adobe Experience Manager icon.
 
-   ![AEM Assets authoring](./assets/aem-assets-authoring.png){width="600" zoomable="yes"}
+   ![AEM Assets authoring](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
 1. Open the Administrator tools by selecting the hammer icon.
 
-   ![AEM Author Admin manage metadata profiles](./assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
+   ![AEM Author Admin manage metadata profiles](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
 1. Open the profile configuration page by clicking **[!UICONTROL Metadata Profiles]**.
 
 1. **[!UICONTROL Create]** a metadata profile for the Commerce integration.
 
-   ![AEM Author Admin add metadata profiles](./assets/aem-create-metadata-profile.png){width="600" zoomable="yes"}
+   ![AEM Author Admin add metadata profiles](../assets/aem-create-metadata-profile.png){width="600" zoomable="yes"}
 
 1. Add a tab for Commerce metadata.
 
@@ -93,7 +93,7 @@ The Product Data UI component is added automatically based on the template.
 
 1. Add the `Eligible for Commerce` field to the form.
 
-   ![AEM Author Admin add metadata fields to profile](./assets/aem-edit-metadata-profile-fields.png){width="600" zoomable="yes"}
+   ![AEM Author Admin add metadata fields to profile](../assets/aem-edit-metadata-profile-fields.png){width="600" zoomable="yes"}
 
    * Click **[!UICONTROL Build form]**.
 
