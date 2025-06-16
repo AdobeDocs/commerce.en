@@ -41,7 +41,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
    1. Go to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-      ![AEM Assets Integration enable the integration](../ssets/aem-assets-integration-enable-config.png){width="600" zoomable="yes"}
+      ![AEM Assets Integration enable the integration](../assets/aem-assets-integration-enable-config.png){width="600" zoomable="yes"}
 
 1. Enter the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]**.
 
