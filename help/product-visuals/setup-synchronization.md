@@ -10,19 +10,24 @@ Configure the integration by connecting Commerce to the AEM Assets instance and 
 
 After identifying the AEM Assets project, select the matching rule for synchronizing assets between Adobe Commerce and AEM Assets.
 
-- **[!UICONTROL Match by product SKU]**—Default rule that matches the SKU in the asset metadata with the [Commerce product SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) to ensure that assets are associated with the correct products.
+* **[!UICONTROL Match by product SKU]**—Default rule that matches the SKU in the asset metadata with the [Commerce product SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) to ensure that assets are associated with the correct products.
 
-- **[!UICONTROL Custom match]**—Matching rule for more complex scenarios or specific business requirements that require custom matching logic. Implementing custom matching requires developing custom code in Adobe Developer App Builder to define how assets are matched with products. More details coming soon...
+* **[!UICONTROL Custom match]**—Matching rule for more complex scenarios or specific business requirements that require custom matching logic. Implementing custom matching requires developing custom code in Adobe Developer App Builder to define how assets are matched with products. More details coming soon...
 
 For the initial setup, use the default *Match by product sku* rule.
 
 ## Prerequisites
 
-- [Install AEM Assets package](configure-aem.md)
+* [Install AEM Assets package](configure-aem.md)
 
-- [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
+* [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
 
-- Check the [Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) topic to learn how to enable Dynamic Media with OpenAPI capabilities. This is needed to enable the AEM Assets Integration for Commerce.
+* Submit a support ticket to request enablement of AEM Assets Integration for Commerce. This process includes enabling the [Dynamic Media Open API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) and creating a dedicated IMS Client ID for your Adobe Commerce instance. Include the following information in the support ticket:
+
+* **[!UICONTROL AEM Program ID]**
+* **[!UICONTROL Adobe Commerce URL]**
+* **[!UICONTROL AEM Environment ID]**,
+* **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
 
 ## Configure the connection
 
@@ -44,15 +49,13 @@ For the initial setup, use the default *Match by product sku* rule.
 
 1. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
 
-   The [Asset Selector IMS Client ID](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-integration/integrate-asset-selector-adobe-app#ims-auth-props) is required by the [!UICONTROL Assets Selector], an AEM Assets feature that allows users to embed media files from the connect AEM Assets project directly into Commerce product pages.
-
 1. Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 
 1. Set **[!UICONTROL Integration enabled]** to `Yes` to allow Commerce to accept incoming updates from AEM Assets.
 
    After enabling the integration, additional configuration options are available to specify asset matching criteria.
 
-1. Define the matching rule for asset synchronization.
+1. Select the matching rule for asset synchronization, **[!UICONTROL Match by SKU]** for [automatic matching](ootb-match.md), or **[!UICONTROL Custom match]** for [custom automatic matching](custom-match.md).
 
    1. Select **[!UICONTROL Match by product SKU]**, or **[!UICONTROL Custom match (Requires App Builder)]**.
 
@@ -66,9 +69,9 @@ For the initial setup, use the default *Match by product sku* rule.
 
 The integration guarantees the following synchronization performance levels:
 
-- `< 5 minutes for 99% of updates`
+* `< 5 minutes for 99% of updates`
 
-- `< 30 minutes for 99.9% of updates`
+* `< 30 minutes for 99.9% of updates`
 
 This ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
 

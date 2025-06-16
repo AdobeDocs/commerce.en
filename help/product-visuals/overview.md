@@ -12,29 +12,29 @@ Consider a retailer with 1,000 products. Even before factoring in attribute vari
 
 ![check](assets/product-visuals-example.png)
 
-The Adobe Commerce and AEM Assets integration addresses this challenge by automating asset management workflows. The integration ensures that digital assets, such as product images and marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes. This process streamlines operations and enhances efficiency by enabling:
+The Adobe Commerce and Product Visuals integration addresses this challenge by automating asset management workflows. The integration ensures that digital assets, such as product images and marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes. This process streamlines operations and enhances efficiency by enabling:
 
-- **Step by step Installation and Configuration**-Merchandising teams and developers can install and configure the integration seamlessly using familiar Adobe tools and processes.
+* **Seamless Installation and Configuration**– Merchandising teams and developers can quickly set up the integration using familiar Adobe tools and workflows.
 
-- **Dynamic Asset Updates**-Product images and marketing assets stay up to date with the latest changes in AEM Assets, ensuring that commerce storefronts always display accurate and relevant content.
+* **Dynamic Asset Updates**-Product images and marketing assets automatically reflect the latest changes in AEM Assets, keeping storefronts accurate and relevant.
 
-- **Efficient Catalog Management**-Automates asset refresh and cleanup, reducing manual effort and ensuring a consistent, well-maintained product catalog.
+* **Streamlined Catalog Management**-Automates asset refresh and cleanup, minimizing manual effort and ensuring a consistent, well-maintained product catalog.
 
 ## Requirements to use the integration
 
 To leverage this integration, businesses must meet the following requirements:
 
-- Active licenses for Adobe Commerce, Adobe Experience Manager Assets, and [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+* Active licenses for Adobe Commerce, Adobe Experience Manager Assets, and [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
-- Adobe Commerce 2.4.5+
+* Adobe Commerce 2.4.5+
 
-    - PHP 8.1, 8.2, 8.3, 8.4
+    * PHP 8.1, 8.2, 8.3, and 8.4
 
-    - Composer 2.x
+    * Composer 2.x
 
-- Adobe Experience Manager is provisioned with [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+* Adobe Experience Manager is provisioned with [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
 
-- The Adobe Commerce user configuring the integration must have access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) where the AEM Assets project is provisioned.
+* The Adobe Commerce user configuring the integration must have access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) where the AEM Assets project is provisioned.
 
 >[!BEGINSHADEBOX]
 
@@ -60,7 +60,7 @@ Enabling the Commerce integration with Experience Manager Assets is a three step
 
 1. [Install Adobe Commerce packages](configure-aem.md).
 
-1. [Configure the integration asset](setup-synchronization.md).
+1. [Configure the integration](setup-synchronization.md).
 
 ## Support
 

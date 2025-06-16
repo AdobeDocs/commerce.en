@@ -6,7 +6,7 @@ feature: CMS, Media, Integration
 
 # Migrate media files to the AEM Assets DAM
 
- Both Adobe Commerce and Adobe Experience Manager (AEM) provide built-in features to streamline media file migration from Commerce to the AEM Assets digital asset management system (DAM). You can also migrate media files from other sources.
+ Both Adobe Commerce and Adobe Experience Manager (AEM) provide built-in features to streamline media file migration from Commerce to the AEM Assets **digital asset management system (DAM)**. You can also migrate media files from other sources.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ Follow the migration workflow to export media files from Adobe Commerce or anoth
 
 ### Step 1: Export content from the existing data source
 
-For Adobe Commerce merchants, the **Remote Storage module** can facilitate media file exports and imports. This module allows businesses to store and manage media files using remote storage services like AWS S3. To set up remote storage for your Commerce instance, see [Configure Remote Storage](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) in the **Commerce Configuration Guide**.
+For Adobe Commerce merchants, the **Remote Storage module** can facilitate media file imports and exports. This module allows businesses to store and manage media files using remote storage services like AWS S3. To set up remote storage for your Commerce instance, see [Configure Remote Storage](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) in the **Commerce Configuration Guide**.
 
 If you have media files stored outside of Adobe Commerce, upload them directly to one of the [data sources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) supported by AEM as a Cloud Service.
 
@@ -88,10 +88,10 @@ The following is a high-level overview for using the tool.
 
    You'll need:
 
-   - Authentication credentials for your data source
-   - The target folder in AEM Assets where imported files will be stored
-   - Information about the MIME types, file size, and other parameters to customize the import configuration (optional)
-   - The path to the metadata mapping CSV file you uploaded to the Cloud storage instance.
+   * Authentication credentials for your data source
+   * The target folder in AEM Assets where imported files will be stored
+   * Information about the MIME types, file size, and other parameters to customize the import configuration (optional)
+   * The path to the metadata mapping CSV file you uploaded to the Cloud storage instance.
 
    For detailed steps, see [Configure the Bulk Import tool](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) in the *AEM Assets as a Cloud Service User Guide*.
 
@@ -99,6 +99,6 @@ The following is a high-level overview for using the tool.
 
 >[!MORELIKETHIS]
 >
->[Bulk Import tool video demo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
->[Tips, best practices, and limitations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
->[Upload or ingest assets using APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [Bulk Import tool video demo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [Tips, best practices, and limitations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> [Upload or ingest assets using APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

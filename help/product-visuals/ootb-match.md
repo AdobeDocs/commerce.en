@@ -3,19 +3,20 @@ title: Automatic Matching
 description: Learn how the out-of-the-box automatic matching enables seamless synchronization between Adobe Commerce and Product Visuals, ensuring that assets are automatically linked to the correct merchandising entities.
 feature: CMS, Media, Integration
 ---
-# Out-of-the-box automatic matching
 
-The [!DNL Product Visuals] integration provides an out-of-the-box (OOTB) automatic matching mechanism based on the **AEM Assets** metadata configuration. This enables seamless synchronization between **Adobe Commerce** and **AEM Assets**, ensuring that product visuals are automatically linked to the correct merchandising entities.
+# Automatic matching
+
+The [!DNL Product Visuals] integration provides a default automatic matching mechanism (**[!UICONTROL Match by product SKU]**) based on the **AEM Assets** metadata configuration. This rule enables seamless synchronization between **Adobe Commerce** and **AEM Assets**, ensuring that product visuals are automatically linked to the correct merchandising entities.
 
 See [AEM Assets metadata](configure-aem.md#configure-a-metadata-profile) for more information.
 
-## Configure the OOTB automatic matching mechanism
+## Configure the automatic matching mechanism
 
 1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Specify **[!UICONTROL Match by SKU]** as the matching rule.
 
-    ![ootb matching rule](./assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+    ![default automated matching rule](./assets/ootb-matching-rule.png){width="600" zoomable="yes"}
 
 1. Enter the metadata field name used for asset identification in the AEM Assets.
 
@@ -23,16 +24,18 @@ See [AEM Assets metadata](configure-aem.md#configure-a-metadata-profile) for mor
     >
     > If the standard onboarding process was followed, this value should be set to `commerce:skus`.
 
-## How the OOTB automatic matching mechanism works
+## How the automatic matching mechanism works
 
-When this mechanism is configured, it automatically synchronizes Commerce asset files from AEM Assets to your Commerce project based on the asset metadata configured for each file. You configure the metadata from the AEM **Commerce** tab in the **AEM Assets author** environment:
+When the **[!UICONTROL Match by product SKU]** matching rule is configured  in the Commerce Admin, Commerce assets files synchronize automatically from AEM Assets to your Commerce project based on the asset metadata configured for each file. You configure the metadata from the AEM **Commerce** tab in the **AEM Assets author** environment:
 
 ![Example metadata](./assets/example-metadata.png){width="600" zoomable="yes"}
 
-1. Define that the image is associated with `Commerce=yes`.
+1. In AEM Assets, update the image metadata to add the Adobe Commerce association, `Commerce=yes`.
 
-1. Associate assets with all products that share the same SKU.
+1. Configure the metadata ([!UICONTROL SKU], [!UICONTROL position], and [!UICONTROL role]) that links the asset to the associated product SKU.
 
-1. Define the role and position for each asset as described in the metadata.
+    >[!NOTE]
+    >
+    > If an asset is used for multiple products, configure the metadata for each associated SKU.  
 
-This approach ensures that digital assets are properly linked and displayed in Adobe Commerce. Also enables merchandisers and marketers to manage roles, as well as position directly in the AEM Assets, giving them a mechanism to maintain consistency in image selection and ordering across all engagement channels.
+This approach ensures that digital assets are properly linked and displayed in Adobe Commerce. It also empowers merchandisers and marketers to manage roles and asset positioning directly within AEM Assets, providing a consistent and centralized mechanism for image selection and ordering across all engagement channels.

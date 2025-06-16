@@ -21,7 +21,7 @@ feature: CMS, Page Content
       - [Accurate and relevant content](acc-content.md)
       - [Automated matching](ootb-match.md)
       - [Custom automatic matching](custom-match.md)
-      - [AEM Asset Selector](asset-selector.md)
+      - [AEM Asset Selector integration](asset-selector-integration.md)
     - Media types {#product-visuals-media-types}
       - [Use Product Visuals](manage-aem-assets.md)
       - [Migrate media files to Product Visuals](migrate-data.md)
