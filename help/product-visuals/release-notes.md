@@ -1,12 +1,12 @@
 ---
-title: AEM Assets Integration for Commerce Release Notes
+title: Product Visuals release notes
 description: Review the release notes for information about all AEM Assets Integration releases.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
 ---
-# AEM Assets Integration for Commerce Release Notes
+# Produvt Visuals release notes
 
-These release notes describe the initial release of AEM Assets Integration and include:
+These release notes describe the initial release of Product Visuals and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements

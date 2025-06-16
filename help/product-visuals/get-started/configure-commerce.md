@@ -126,7 +126,7 @@ Use this method to install the [!DNL AEM Assets Integration] extension for an on
 
 To transmit data between your Adobe Commerce instance and the services that enable the AEM Assets Integration, configure the Commerce Services Connector from the Admin (**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**). 
 
-![SaaS project and data space ids for the AEM Assets integration](assets/aem-saas-project-config.png){width="600" zoomable="yes"}
+![SaaS project and data space ids for the AEM Assets integration](../assets/aem-saas-project-config.png){width="600" zoomable="yes"}
 
 Provide the following values in the configuration
 
@@ -134,7 +134,7 @@ Provide the following values in the configuration
 - Data space name (SaaS identifier) for secure cloud storage
 - IMS organization ID where your Commerce and AEM Assets environments are provisioned
 
-For detailed instructions, watch the [Commerce Services Connector configuration video](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs), of see the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#organizationid) documentation.
+For detailed instructions, watch the [Commerce Services Connector configuration video](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs), of see the [Commerce Services Connector](../../landing/saas.md#organizationid) documentation.
 
 When you save the configuration, the system generates the SaaS project and database IDs for your environment. These values are required to enable asset synchronization between Adobe Commerce and AEM Assets.
 
@@ -168,7 +168,7 @@ Enable the eventing framework from the Commerce Admin.
 
 1. Set **[!UICONTROL Enabled]** to `Yes`.
 
-   ![Adobe I/O Events Commerce Admin configuration - enable Commerce events](assets/aem-enable-io-event-admin-config.png){width="600" zoomable="yes"}
+   ![Adobe I/O Events Commerce Admin configuration - enable Commerce events](../assets/aem-enable-io-event-admin-config.png){width="600" zoomable="yes"}
 
 1. Enter the merchant company name in the **[!UICONTROL Merchant ID]** and the environment name in the **[!UICONTROL Environment ID]** fields. Use only alphanumeric characters and underscores when setting these values.
 
@@ -224,7 +224,7 @@ You generate the credentials by adding the integration to the Commerce instance 
 
    In the **General** section, only specify the integration **Name** and **Email**. Use the email for an Adobe IMS account with access to the organization where Commerce and Experience Manager Assets are deployed.
 
-   ![AEM Assets Integration for Commerce Admin configuration](assets/aem-add-commerce-integration.png){width="600" zoomable="yes"}
+   ![AEM Assets Integration for Commerce Admin configuration](../assets/aem-add-commerce-integration.png){width="600" zoomable="yes"}
 
 1. Verify your identity by clicking **Confirm Identity**.
 
@@ -236,7 +236,7 @@ You generate the credentials by adding the integration to the Commerce instance 
 
    1. Select the external media resource **[!UICONTROL Catalog > Inventory > Products > External Media]**.
 
-      ![Admin Integration config for API resources](assets/aem-commerce-integration-api-resources.png){width="600" zoomable="yes"}
+      ![Admin Integration config for API resources](../assets/aem-commerce-integration-api-resources.png){width="600" zoomable="yes"}
 
 1. Click **[!UICONTROL Save]**.
 
@@ -246,11 +246,11 @@ On the Integrations page, generate the OAuth authentication credentials by click
 
 1. From the Integrations page, generate the credentials by clicking **[!UICONTROL Activate]**.
 
-   ![Activate Commerce configuration for Assets integration](assets/aem-activate-commerce-integration.png){width="600" zoomable="yes"}
+   ![Activate Commerce configuration for Assets integration](../assets/aem-activate-commerce-integration.png){width="600" zoomable="yes"}
 
 1. If you plan to use the API, save the credentials for the consumer key and access token to configure authentication in your API client.
 
-   ![OAuth credentials to authenticate API requests](./assets/aem-commerce-integration-credentials.png){width="600" zoomable="yes"}
+   ![OAuth credentials to authenticate API requests](../assets/aem-commerce-integration-credentials.png){width="600" zoomable="yes"}
 
 1. Click **[!UICONTROL Done]**.
 

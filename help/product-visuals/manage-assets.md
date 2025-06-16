@@ -1,10 +1,10 @@
 ---
-title: Manage Product Visuals powered by AEM Assets
+title: Manage assets
 description: Use Product Visuals with AEM Assets to manage media assets for your storefront.
 feature: CMS, Media
 ---
 
-# Manage Commerce media assets with Product Visuals powered by AEM Assets
+# Manage Commerce media assets with Product Visuals
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
 
@@ -29,7 +29,7 @@ Product images are automatically pulled from AEM Assets based on pre-configured 
 
 1. Open the **Images And Videos** section.
 
-   ![Product image](./assets/product-image.png){width="600" zoomable="yes"}
+   ![Product image](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -41,11 +41,11 @@ To manage product-related images, all changes must be made directly in **AEM Ass
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA ](setup-synchronization.md#synchronization-sla)for more information on this topic. 
+Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
 
 ## Content images
 
-Adobe Commerce provides Page Builder as a **content management system (CMS)** for merchants who are not using the Adobe Experience Manager (AEM) toolset. To enhance content creation, our integration leverages [AEM Asset Selector](asset-selector-integration.md), allowing marketers to seamlessly access and embed images directly from the **DAM**. This ensures that only approved and high-quality images are used in content creation, eliminating the need for redundant storage in Adobe Commerce.
+Adobe Commerce provides Page Builder as a **content management system (CMS)** for merchants who are not using the Adobe Experience Manager (AEM) toolset. To enhance content creation, our integration leverages [AEM Asset Selector](synchronize/asset-selector-integration.md), allowing marketers to seamlessly access and embed images directly from the **DAM**. This ensures that only approved and high-quality images are used in content creation, eliminating the need for redundant storage in Adobe Commerce.
 
 ### Using AEM Asset Selector in Page Builder
 
@@ -83,7 +83,7 @@ Adobe Commerce serves as a key engagement channel for digital assets. After Prod
 
 1. Open the **Images And Videos** section.
 
-   ![Product image](./assets/product-image.png){width="600" zoomable="yes"}
+   ![Product image](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -109,7 +109,7 @@ This integration ensures that merchants can effortlessly manage product videos i
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA ](setup-synchronization.md#synchronization-sla)for more information on this topic. 
+Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
 
 ## Category images
 
@@ -117,7 +117,7 @@ Adobe Commerce enables merchants to associate images with product categories, he
 
 ### Use AEM Asset Selector for category images
 
-After you configure the [AEM Asset Selector](asset-selector-integration.md), you can use it to add assets into your catalog categories content.
+After you configure the [AEM Asset Selector](synchronize/asset-selector-integration.md), you can use it to add assets into your catalog categories content.
 
 1. On the _Admin_ sidebar, navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -127,15 +127,15 @@ After you configure the [AEM Asset Selector](asset-selector-integration.md), you
 
 1. In the **[!UICONTROL Content]** section, locate the *Image field* associated with the category.
 
-   ![Category content](./assets/category-asset.png){width="600" zoomable="yes"}
+   ![Category content](assets/category-asset.png){width="600" zoomable="yes"}
 
 1. Click **[!UICONTROL Select from Assets]** to change the category image.
 
-   ![Category content](./assets/asset-view.png){width="600" zoomable="yes"}
+   ![Category content](assets/asset-view.png){width="600" zoomable="yes"}
 
 1. Choose an image from the AEM Asset Selector.
 
-   ![Category content](./assets/select-image.png){width="600" zoomable="yes"}
+   ![Category content](assets/select-image.png){width="600" zoomable="yes"}
 
 1. Click **[!UICONTROL Save]** and continue.
 

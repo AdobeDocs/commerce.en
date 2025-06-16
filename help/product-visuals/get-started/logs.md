@@ -1,12 +1,12 @@
 ---
-title: Configure log rotation
-description: Configure log rotation for the AEM Assets Integration for Commerce.
+title: View and manage logs
+description: Learn where to find and manage logs for Product Visuals.
 feature: CMS, Media, Integration
 ---
 
-# Configure Experience Manager Assets
+# View and manage logs
 
-The AEM Assets Integration for Commerce provides the following log files in your Commerce instance:
+Product Visuals provides the following log files in your Commerce instance:
 
 - `/var/log/aem-assets-integration.log`
 - `/var/log/aem-assets-integration-errors.log`

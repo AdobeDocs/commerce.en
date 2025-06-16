@@ -41,7 +41,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
    1. Go to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-      ![AEM Assets Integration enable the integration](assets/aem-assets-integration-enable-config.png){width="600" zoomable="yes"}
+      ![AEM Assets Integration enable the integration](../assets/aem-assets-integration-enable-config.png){width="600" zoomable="yes"}
 
 1. Enter the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]**.
 
@@ -55,7 +55,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
    After enabling the integration, additional configuration options are available to specify asset matching criteria.
 
-1. Select the matching rule for asset synchronization, **[!UICONTROL Match by SKU]** for [automatic matching](ootb-match.md), or **[!UICONTROL Custom match]** for [custom automatic matching](custom-match.md).
+1. Select the matching rule for asset synchronization, **[!UICONTROL Match by SKU]** for [automatic matching](../synchronize/default-match.md), or **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md).
 
    1. Select **[!UICONTROL Match by product SKU]**, or **[!UICONTROL Custom match (Requires App Builder)]**.
 
@@ -81,7 +81,7 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-   ![AEM Assets Integration enable the integration](assets/aem-assets-view.png){width="600" zoomable="yes"}
+   ![AEM Assets Integration enable the integration](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. Add the **Custom Domain URL** to the **[!UICONTROL Asset Custom Domain]** field.
 
@@ -89,4 +89,4 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Use AEM Assets with Commerce](manage-aem-assets.md)
+[Use AEM Assets with Commerce](../manage-assets.md)
