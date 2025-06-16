@@ -8,7 +8,7 @@ feature: CMS, Media, Integration
 
 To use Product Visuals to manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required boilerplate code and metadata to manage Commerce asets from the AEM authoring environment.
 
-* **Step 1:** Install an AEM project template with boilerplate code that adds the Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
+* **Step 1:** Install an AEM project template with the boilerplate code to add the Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
 * **Step 2:** Set up the metadata profile to apply to Commerce asset files
 
 ## Add the boilerplate code to your AEM project
