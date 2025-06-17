@@ -52,7 +52,7 @@ Administrators are responsible for setting up instances, managing users, groups,
 
     1. Click [!UICONTROL **Add Instance**] in the top-right corner of the screen.
 
-       ![Create Instance](../assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
+       ![Create Instance](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
 
     1. Select [!UICONTROL **Commerce Optimizer*].
 
