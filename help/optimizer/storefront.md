@@ -324,9 +324,9 @@ Create and initialize your storefront content in the Document Author environment
 
 1. Confgure your repository:
    
-   - Select **[!UICONTROL Use Existing Repository]**.
-   - Enter the **[!UICONTROL Organization/Username]** for your storefront boilerplate project.
-   - Enter the **[!UICONTROL Repository Name]**.
+   * Select **[!UICONTROL Use Existing Repository]**.
+   * Enter the **[!UICONTROL Organization/Username]** for your storefront boilerplate project.
+   * Enter the **[!UICONTROL Repository Name]**.
 
 1. Import, preview, and publish the content to the Document Author environment by selecting **Create site**.
 
