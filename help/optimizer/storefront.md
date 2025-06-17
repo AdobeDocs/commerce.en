@@ -318,14 +318,15 @@ Connect your repository to the Edge Delivery Service by adding the AEM Code Sync
 
 ### Step 6: Add content
 
-Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Demo site clone tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other elements to populate your storefront.
+Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Site Creator tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other elements to populate your storefront.
 
-1. Open the [demo content clone tool](https://da.live/app/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator).
+1. Open the [site creator tool](https://da.live/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator).
 
-   ![[!DNL AEM demo content clone tool]](./assets/storefront-demo-content-clone-tool.png){width="700" zoomable="yes"}
-
-1. Paste the GitHub URL for your storefront boilerplate project in the [!UICONTROL **Project GitHub URL**] field.
-
+1. Confgure your repository:
+   
+   - Select **[!UICONTROL Use Existing Repository]**.
+   - Enter the **[!UICONTROL Organization/Username]** for your storefront boilerplate project.
+   - Enter the **[!UICONTROL Repository Name]**.
 
 1. Import, preview, and publish the content to the Document Author environment by selecting **Create site**.
 
