@@ -11,6 +11,10 @@ role: Architect
 
 [!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. However, if you are migrating from an existing Adobe Commerce on Cloud or on-premises instance, you will need to perform different migration actions depending on your specific configuration.
 
+>[!NOTE]
+>
+>For more information on migration tooling, see the [Bulk Data Migration Tool](./bulk-data.md).
+
 ## Migration paths
 
 [!DNL Adobe Commerce as a Cloud Service] supports multiple migration paths, depending on your timeline, storefront, and customizations.
@@ -91,7 +95,7 @@ The following steps outline the development and execution process of the migrati
 
 1. Migrate your data from your previous Commerce instance to ACCS:
 
-    * Migrate native Adobe Commerce data using data migration tooling.
+    * Migrate native Adobe Commerce data using the [Bulk Data Migration Tool](./bulk-data.md).
     * Migrate third-party extensions and customizations
     * Migrate configuration and integration data:
       * Transfer API Mesh configurations, third-party services, and system integrations using the [Adobe Commerce Integration Starter Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/).

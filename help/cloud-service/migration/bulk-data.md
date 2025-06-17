@@ -7,7 +7,7 @@ role: Architect
 
 # Bulk data migration tool
 
-The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool is designed for solution implementers to migrate data from an existing Adobe Commerce on Cloud instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). 
+The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool is designed for solution implementers to migrate data from an existing Adobe Commerce on Cloud instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). For more information on the migration process, see the [Migration overview](./overview.md).
 
 The following image details the architecture and key components for using the Bulk data migration tool.
 
@@ -24,6 +24,13 @@ The bulk data migration workflow consists of the following steps:
 1. Confirm that your data migrated correctly.
 
 The following sections describe these steps in detail.
+
+## Access the bulk data migration tool
+
+The availability of the bulk data migration tool is as follows:
+
+- **Mid-July 2025** - To access the bulk data migration tool, submit a support ticket.
+- **Mid-August 2025** - The bulk data migration tool will be publicly available and will accessible from this page.
 
 ## Create target environment
 
