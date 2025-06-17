@@ -60,18 +60,18 @@ Administrators are responsible for setting up instances, managing users, groups,
 
     1. Select the region where you want your instance hosted.
 
-    >[!NOTE]
-    >
-    >After you create an instance, you cannot change the region.
+       >[!NOTE]
+       >
+       >After you create an instance, you cannot change the region.
 
     1. Choose one of the following [!UICONTROL **Environment Type**] for your instance:
 
-    - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce Optimizer] journey by using the sandbox environment.
-    - [!UICONTROL **Production**] - For live stores and customer-facing sites.
+       - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce Optimizer] journey by using the sandbox environment.
+       - [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
-    >[!NOTE]
-    >
-    >Sandbox instances are currently limited to the North America region.
+       >[!NOTE]
+       >
+       >Sandbox instances are currently limited to the North America region.
 
     1. Click [!UICONTROL **Add Instance**].
 
@@ -79,7 +79,7 @@ Administrators are responsible for setting up instances, managing users, groups,
  
     1. View instance details, including the GraphQL and Catalog Service endpoints, and the URL to access the Adobe Commerce Optimizer application, click the information icon next to the instance name.
 
-      ![Create Instance](../assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+      ![Create Instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
 
 - **Access an instance** - After you create an instance, you can access it from the [!UICONTROL Commerce Cloud Manager].
 
