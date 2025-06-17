@@ -48,7 +48,7 @@ Administrators are responsible for setting up instances, managing users, groups,
 
     1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager].
 
-    The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
+       The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
 
     1. Click [!UICONTROL **Add Instance**] in the top-right corner of the screen.
 
@@ -77,9 +77,9 @@ Administrators are responsible for setting up instances, managing users, groups,
 
        The new instance is now available in Cloud Manager.
 
-    1. View instance details, including the GraphQL and Catalog Service endpoints, and the URL to access the Adobe Commerce Optimizer application, click the information icon next to the instance name.
+    1. To view instance details—including the GraphQL and Catalog Service endpoints, and the URL to access the Adobe Commerce Optimizer application—click the information icon next to the instance name.
 
-      ![Create Instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+       ![Create Instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
 
 - **Access an instance** - After you create an instance, you can access it from the [!UICONTROL Commerce Cloud Manager].
 
