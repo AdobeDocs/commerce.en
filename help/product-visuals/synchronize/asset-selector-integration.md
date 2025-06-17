@@ -42,5 +42,5 @@ Embedding AEM Asset Selector within the Adobe Commerce Admin Panel provides seve
 
 ## Next steps
 
-* [Manage Category Images with Asset Selector](../get-started/manage-assets.md#category-images)
-* [Manage images in Page Builder content](../get-started/manage-assets.md#using-aem-asset-selector-in-page-builder)
+* [Manage Category Images with Asset Selector](../manage-assets.md#category-images)
+* [Manage images in Page Builder content](../manage-assets.md#using-aem-asset-selector-in-page-builder)
