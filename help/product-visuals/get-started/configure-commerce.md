@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce packages
-description: Learn how to install the [!DNL Product Visuals powered by AEM Assets Integration for Adobe Commerce] extension on an Adobe Commerce instance.
+description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use Product Visuals with Adobe Commerce.
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
@@ -16,7 +16,7 @@ You need the following roles and permissions to enable the Commerce integration 
 
 - [Commerce cloud project administrator](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)—Install required extensions and configure the Commerce application server from the Admin or the command line.
 
-  - Access [repo.magento.com](https://repo.magento.com/admin/dashboard) to install the extension.
+  - Access to [repo.magento.com](https://repo.magento.com/admin/dashboard) to install the extension.
 
     For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
@@ -40,13 +40,13 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 ## Install the `aem-assets-integration` extension
 
-Install the latest version of the Product Visuals powered by the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
+Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) for Product Visuals on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
 >[!BEGINTABS]
 
 >[!TAB Cloud infrastructure]
 
-Use this method to install the [!DNL AEM Assets Integration] extension for a Commerce Cloud instance.
+Use this method to install the [!DNL AEM Assets Integration] extension on a Commerce Cloud instance.
 
 1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
 
@@ -260,4 +260,4 @@ On the Integrations page, generate the OAuth authentication credentials by click
 
 ## Next step
 
-[Connect the Adobe Commerce and AEM Assets project environments and select the matching strategy for synchronizing assets](setup-synchronization.md)
+- [Configure the integration from the Commerce Admin](setup-synchronization.md)

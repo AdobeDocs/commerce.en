@@ -5,9 +5,14 @@ feature: CMS, Media, Integration
 ---
 # Manual asset selection
 
-The **AEM Asset Selector** enables marketers and merchandisers to easily add images from AEM Assets to Adobe Commerce, streamlining the asset management process. This method ensures brand consistency and compliance by limiting asset selection to those reviewed and approvide in the [!DNL DAM (Digital Asset Management system)].
+The **AEM Asset Selector** enables marketers and merchandisers to easily add images from AEM Assets to Adobe Commerce, streamlining the asset management process. This method ensures brand consistency and compliance by limiting asset selection to those reviewed and approved in the [!DNL DAM (Digital Asset Management system)].
 
-The **AEM Asset Selector** is available when the [AEM Assets integration](../overview.md) has been enabled and configured  in the Commerce Admin configuration for Adobe Services.
+The **AEM Asset Selector** is available when the IMS client ID for the AEM Assets project has been configured in the Commerce Admin. See [Configure the AEM Asset Selector](#configure-the-aem-asset-selector-in-adobe-commerce.
+
+When the **AEM Asset Selector** integration is configured, marketers and merchandisers can:
+
+* Manage category images effortlessly, ensuring they align with brand and campaign guidelines.
+*  [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Assign assets directly in Page Builder for visually rich content.
 
 >[!NOTE]
 >
@@ -21,7 +26,7 @@ Embedding AEM Asset Selector within the Adobe Commerce Admin Panel provides seve
 
 * **Efficiency**–Enables marketers and merchandisers to assign assets quickly without switching between different platforms.
 
-* *Streamlined Collaboration**–Facilitates seamless teamwork by allowing direct image selection from the DAM, eliminating manual downloads and uploads.
+* **Streamlined Collaboration**–Facilitates seamless teamwork by allowing direct image selection from the DAM, eliminating manual downloads and uploads.
 
 * **Enhanced Content Quality**–Ensures the use of high-resolution, optimized images across product pages, categories, and Page Builder.
 
@@ -29,13 +34,13 @@ Embedding AEM Asset Selector within the Adobe Commerce Admin Panel provides seve
 
 ## Configure the AEM Asset Selector in Adobe Commerce
 
-1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. From the Commerce Admin, navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Fill in the **[!UICONTROL IMS Client ID]** field.
 
 1. **Save** the configuration.
 
-When the **AEM Asset Selector** integration is configured, marketers and merchandisers can:
+## Next steps
 
-* Manage category images effortlessly, ensuring they align with brand and campaign guidelines.
-* Assign assets directly in Page Builder for visually rich content. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
+* [Manage Category Images with Asset Selector](../get-started/manage-assets.md#category-images)
+* [Manage images in Page Builder content](../get-started/manage-assets.md#using-aem-asset-selector-in-page-builder)

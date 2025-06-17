@@ -47,7 +47,11 @@ For the initial setup, use the default *Match by product sku* rule.
 
    Edit the configuration values by removing the selection from *[!UICONTROL Use system value]*.
 
-1. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
+1. Optional. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
+
+    For details about the Asset Selector, see [Manually selecting assets](asset-selector-integration.md)
+
+
 
 1. Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 
@@ -55,11 +59,12 @@ For the initial setup, use the default *Match by product sku* rule.
 
    After enabling the integration, additional configuration options are available to specify asset matching criteria.
 
-1. Select the matching rule for asset synchronization, **[!UICONTROL Match by SKU]** for [automatic matching](../synchronize/default-match.md), or **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md).
+1. Select one of the asset matching rules for asset synchronization from the **[!UICONTROL Asset matching rule]**  dropdown.
 
-   1. Select **[!UICONTROL Match by product SKU]**, or **[!UICONTROL Custom match (Requires App Builder)]**.
+   * Select **[!UICONTROL Match by SKU]** for [automatic matching](../synchronize/default-match.md),
+   * Select **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md) (requires [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
-   1. Add the [AEM Assets metadata field name](configure-aem.md#configure-metadata) defined for Commerce product SKUs in the **[!UICONTROL Match by product SKU attribute name]** field, `commerce:skus` for example.
+1. Add the [AEM Assets metadata field name](configure-aem.md#configure-metadata) defined for Commerce product SKUs in the **[!UICONTROL Match by product SKU attribute name]** field, `commerce:skus` for example.
 
 1. Select **[!UICONTROL Save Config]** to apply updates and initiate asset synchronization.
 
@@ -89,4 +94,4 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Use AEM Assets with Commerce](../manage-assets.md)
+[Manage Commerce assets with Product Visuals](../manage-assets.md)

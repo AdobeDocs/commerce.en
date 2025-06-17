@@ -6,11 +6,11 @@ feature: CMS, Media, Integration
 
 # Custom automatic matching
 
-If the default automatic matching strategy (**OOTB automatic matching**) is not aligned with your specific business requirements, you can select the custom match option. This option supports the use of Adobe Developer App Builder to develop a Custom matcher application that handles complex matching logic, or assets coming from a third-party system that cannot populate product visuals metadata into AEM Assets.
+If the default automatic matching strategy (**OOTB automatic matching**) is not aligned with your specific business requirements, select the custom match option. This option supports the use of [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) to develop a custom matcher application that handles complex matching logic, or assets coming from a third-party system that cannot populate product visuals metadata into AEM Assets.
 
 ## Configure custom automatic matching
 
-1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. From the Commerce Admin, navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Select **[!UICONTROL Custom Matcher]** as the matching rule.
 
@@ -18,7 +18,7 @@ If the default automatic matching strategy (**OOTB automatic matching**) is not 
 
 ## Custom matcher API endpoints
 
-When you build a Custom matcher application using [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, the application should expose the following main endpoints:
+When you build a custom matcher application using [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, the application must expose the following endpoints:
 
 * **App Builder asset to product URL** endpoint
 * **App Builder product to asset URL** endpoint
@@ -138,4 +138,4 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
 
 >[!TIP]
 >
-> Supported Asset Roles like `thumbnail`, `image`, `small_image`, and `swatch_image`.
+> In the `asset_roles` key, use supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`.

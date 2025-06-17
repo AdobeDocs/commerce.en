@@ -37,7 +37,7 @@ The template adds the following resources to the AEM Assets authoring environmen
 
 ### Prerequisites
 
-You need the following resources and permissions to use the `commerce-assets` AEM project to update the environment configuration:
+You need the following resources and permissions to deploy the `commerce-assets` package to the AEM Assets as a Cloud Service AEM  environment:
 
 * [Access to the AEM Assets Cloud Manager Program and environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) with the Program and Deployment Manager roles.
 

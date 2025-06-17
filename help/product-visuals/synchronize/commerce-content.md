@@ -21,7 +21,7 @@ To achieve these objectives, the [!DNL Product Visuals] integration is subscribe
 
 ## Adobe Commerce Catalog Changes
 
-The [!DNL Product Visuals] integration listens for product creation events triggered when products are created in the  **Admin** or by using the **API**. When triggered, it syncs any approved assets from the DAM associated with the new product.
+The [!DNL Product Visuals] integration listens for product creation events triggered when products are created in the  **Admin** or by using the **API**. When triggered, it syncs approved assets from the DAM that are associated with the new product SKU.
 
 By decoupling content creation from catalog management, businesses gain several advantages:
 

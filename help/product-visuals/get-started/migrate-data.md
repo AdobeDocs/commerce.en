@@ -90,7 +90,7 @@ The following is a high-level overview for using the tool.
 
    * Authentication credentials for your data source
    * The target folder in AEM Assets where imported files will be stored
-   * Information about the MIME types, file size, and other parameters to customize the import configuration (optional)
+   * Optional. Information about the MIME types, file size, and other parameters to customize the import configuration
    * The path to the metadata mapping CSV file you uploaded to the Cloud storage instance.
 
    For detailed steps, see [Configure the Bulk Import tool](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) in the *AEM Assets as a Cloud Service User Guide*.
