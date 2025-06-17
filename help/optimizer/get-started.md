@@ -26,13 +26,13 @@ Each team member has their own set of roles and responsibilities as described in
 ||Create a new [!DNL Adobe Commerce Optimizer] instance in the Commerce Cloud Manager.​|
 ||Set up your policies and catalog views.|
 |Developer|Use Developer Console to create a project, grant developers API access, and install required applications and customizations.|
-||Connect to your backoffice system (cart, checkout) using API Mesh and App Builder​.|
+||Connect to your back office system (cart, checkout) using API Mesh and App Builder​.|
 ||Ingest the catalog data from your existing commerce solution(s) using the Merchandising Services Data Ingestion API​|
 ||Set up your storefront|
 |Merchandiser|Set up product discovery​.|
 ||Set up product recommendations.|
 
-Each role plays an integral part into the succesfull onboarding and launch of your [!DNL Adobe Commerce Optimizer] environment. The following diagram shows a high-level start to finish workflow for each role in your organization:
+Each role plays an integral part into the succesful onboarding and launch of your [!DNL Adobe Commerce Optimizer] environment. The following diagram shows a high-level start to finish workflow for each role in your organization:
 
 ![High-Level Workflow](./assets/high-level-workflow.png){zoomable="yes"}
 
@@ -75,8 +75,8 @@ Administrators are responsible for setting up instances, managing users, groups,
 
     1. Click [!UICONTROL **Add Instance**].
 
-       The new instance is now available in Cloud Manager. 
- 
+       The new instance is now available in Cloud Manager.
+
     1. View instance details, including the GraphQL and Catalog Service endpoints, and the URL to access the Adobe Commerce Optimizer application, click the information icon next to the instance name.
 
       ![Create Instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
