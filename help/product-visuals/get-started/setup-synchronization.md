@@ -49,7 +49,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
 1. Optional. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
 
-    For details about the Asset Selector, see [Manually selecting assets](synchronize/asset-selector-integration.md)
+    For details about the Asset Selector, see [Manually selecting assets](../synchronize/asset-selector-integration.md)
 
 1. Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 
