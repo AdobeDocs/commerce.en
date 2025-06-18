@@ -2,8 +2,8 @@
 title: Configure the integration
 description: Learn how to connect your Adobe Commerce project and Experience Manager Assets projects to enable asset synchronization between these two systems.
 feature: CMS, Media
+exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 ---
-
 # Configure the integration
 
 Configure the integration by connecting Commerce to the AEM Assets instance and selecting the matching strategy for asset synchronization.

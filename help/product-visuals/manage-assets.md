@@ -2,8 +2,8 @@
 title: Manage assets
 description: Use Product Visuals with AEM Assets to manage media assets for your storefront.
 feature: CMS, Media
+exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 ---
-
 # Manage Commerce media assets with Product Visuals
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
