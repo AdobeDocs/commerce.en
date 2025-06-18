@@ -6,26 +6,28 @@ feature: CMS, Media, Integration
 
 # Configure the AEM Assets project to support Commerce data
 
-To use Product Visuals to manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required boilerplate code and metadata to manage Commerce asets from the AEM authoring environment.
+To use Product Visuals to manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required boilerplate code and metadata to manage Commerce assets from the AEM authoring environment.
 
 * **Step 1:** Install an AEM project template with the boilerplate code to add the Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
 * **Step 2:** Set up the metadata profile to apply to Commerce asset files
 
 ## Add the boilerplate code to your AEM project
 
-Adobe provides a project template, commerce-assets, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this template to your environment as a Maven package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
+Adobe provides an AEM Commerce boilerplate, `assets-commerce`, to add Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration. Deploy this code to your environment as a **Maven** package. Then, configure the Commerce metadata in the AEM Assets authoring environment to complete the setup.
 
-The template adds the following resources to the AEM Assets authoring environment.
+The boilerplate adds the following resources to the AEM Assets authoring environment:
 
 * A [custom namespace](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json), `Commerce` to identify Commerce-related properties.
 
-* A custom metadata type `commerce:isCommerce` with the label `Eligible for Commerce` to tag Commerce assets associated with an Adobe Commerce project.
+  * A custom metadata type `commerce:isCommerce` with the label `Eligible for Commerce` to tag Commerce assets associated with an Adobe Commerce project.
 
-* A custom metadata type `commerce:productmetadata` and a corresponding UI component to add a *[!UICONTROL Product Data]* property. Product Data includes the metadata properties to associate a Commerce asset with product SKUs, and to specify image `role` and `position` attributes for the asset.
+  * A custom metadata type `commerce:skus` and a corresponding UI component to add a **[!UICONTROL Product Data]** property. Product Data includes the metadata properties to associate a Commerce asset with product SKUs.
 
- ![Custom Product Data UI Control](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+      ![Custom Product Data UI Control](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
-* A metadata schema form with a Commerce tab that includes the `Eligible for Commerce?` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `order` (position) fields from the AEM Assets UI.
+  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes to show how the asset is visualized in Commerce.
+
+* A metadata schema form with a Commerce tab that includes the `Eligible for Commerce` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `position` fields from the AEM Assets UI.
 
   ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
 

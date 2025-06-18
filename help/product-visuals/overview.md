@@ -56,9 +56,9 @@ Watch this video to learn how Adobe Commerce and AEM Assets work together to str
 
 Enabling the Commerce integration with Experience Manager Assets is a three step process:
 
-1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install AEM Assets package](get-started/configure-aem.md).
+1. [Install AEM Assets package](get-started/configure-aem.md).
 
-1. [Install Adobe Commerce packages](get-started/configure-commerce.md).
+1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](get-started/configure-commerce.md).
 
 1. [Configure the integration](get-started/setup-synchronization.md).
 
