@@ -49,7 +49,7 @@ When enabled, the [!DNL Apple Pay] button is visible from the product page, mini
 
 >[!NOTE]
 >
-> Check that access to the `/.well-known/apple-developer-merchantid-domain-association` is not blocked by a CDN or server configuration.
+>  The Apple Pay domain verification certificate is already included into the Payment Services code. Verify that the path `/.well-known/apple-developer-merchantid-domain-association` returns a 200 response code. See [PayPal developer documentation about Integrating with Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) for more information about the **Apple Pay Domain verification** certificate.
 
 See [Settings](settings.md#apple-pay) for more information.
 
