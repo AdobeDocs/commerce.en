@@ -106,7 +106,7 @@ The typical upgrade process for Adobe Commerce on Cloud involved creating backup
 
 ### Third-party integrations
 
-Developers can use comprehensive [GraphQL and REST APIs](https://developer.adobe.com/commerce/services/cloud/guides/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
+Developers can use comprehensive [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) and [REST APIs](https://developer.adobe.com/commerce/webapi/rest/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
 
 <!-- ## Experience Cloud integration
 
