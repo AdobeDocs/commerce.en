@@ -45,9 +45,6 @@ The *Recommendations performance* page displays a list of previously configured 
 
 1. In the table, click the recommendation that you want to examine.
 
-   ![Recommendations workspace](../assets/recommendation-detail.png)
-   _Home Page Conversion Rate Detail_
-
 1. To change the status of the recommendation, click **Activate** or **Deactivate**.
 
 ## Create or edit recommendations

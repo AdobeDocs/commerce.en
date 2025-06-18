@@ -86,13 +86,7 @@ Select the type of strategy for the rule. The **Test your rule** window displays
 ### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
-- To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any product attributes that are used for search or filtering (facets) is `5` or less. To find this setting in the [!DNL Adobe Commerce Optimizer] Admin:
-
-   1. Select **Stores** > _Attributes_ > **Product**.
-   1. Search for the attribute, such as "name".
-   1. In the **Attribute Information** > **Storefront Properties** page, set the search weight to be less than or equal to `5`.
-
-      ![Product - Search Weight](../../assets/set-search-weight.png)
+- To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any [product attributes](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) that are used for search or filtering (facets) is `5` or less.
 
 ## Manual Ranking
 
