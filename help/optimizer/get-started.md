@@ -26,13 +26,13 @@ Each team member has their own set of roles and responsibilities as described in
 ||Create a new [!DNL Adobe Commerce Optimizer] instance in the Commerce Cloud Manager.​|
 ||Set up your policies and catalog views.|
 |Developer|Use Developer Console to create a project, grant developers API access, and install required applications and customizations.|
-||Connect to your backoffice system (cart, checkout) using API Mesh and App Builder​.|
+||Connect to your back office system (cart, checkout) using API Mesh and App Builder​.|
 ||Ingest the catalog data from your existing commerce solution(s) using the Merchandising Services Data Ingestion API​|
 ||Set up your storefront|
 |Merchandiser|Set up product discovery​.|
 ||Set up product recommendations.|
 
-Each role plays an integral part into the succesfull onboarding and launch of your [!DNL Adobe Commerce Optimizer] environment. The following diagram shows a high-level start to finish workflow for each role in your organization:
+Each role plays an integral part into the succesful onboarding and launch of your [!DNL Adobe Commerce Optimizer] environment. The following diagram shows a high-level start to finish workflow for each role in your organization:
 
 ![High-Level Workflow](./assets/high-level-workflow.png){zoomable="yes"}
 
@@ -46,52 +46,50 @@ Administrators are responsible for setting up instances, managing users, groups,
 
     1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
-    1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager]. 
+    1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager].
 
-    The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
+       The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
 
     1. Click [!UICONTROL **Add Instance**] in the top-right corner of the screen.
 
-        ![Create Instance](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+       ![Create Instance](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
 
-    1. Select [!UICONTROL **Commerce as a Cloud Service**].
+    1. Select [!UICONTROL **Commerce Optimizer*].
 
     1. Enter a **Name** and **Description** for your instance.
 
     1. Select the region where you want your instance hosted.
 
-    >[!NOTE]
-    >
-    >Once you have created your instance, you will not be able to modify the region.
-    
-    1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
+       >[!NOTE]
+       >
+       >After you create an instance, you cannot change the region.
 
-    - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
-    - [!UICONTROL **Production**] - For live stores and customer-facing sites.
+    1. Choose one of the following [!UICONTROL **Environment Type**] for your instance:
 
-    >[!NOTE]
-    >
-    >Sandbox instances are currently limited to the North America region.
+       - [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce Optimizer] journey by using the sandbox environment.
+       - [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
-    1. _(Optional)_ If you want to include sample product data for testing and learning purposes, select [!UICONTROL **Adobe Store**] from the [!UICONTROL **Test data**] dropdown.
-
-    You can skip this option, but your storefront will not have any products if you do. You will have to [import your catalog](#5-ingest-catalog-data) to see the full storefront experience.
+       >[!NOTE]
+       >
+       >Sandbox instances are currently limited to the North America region.
 
     1. Click [!UICONTROL **Add Instance**].
+
+       The new instance is now available in Cloud Manager.
+
+    1. To view instance details—including the GraphQL and Catalog Service endpoints, and the URL to access the Adobe Commerce Optimizer application—click the information icon next to the instance name.
+
+       ![Create Instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
 
 - **Access an instance** - After you create an instance, you can access it from the [!UICONTROL Commerce Cloud Manager].
 
     1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
-    1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager]. 
+    1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager].
 
     The [!UICONTROL Commerce Cloud Manager] displays a list of instances that are available in your Adobe IMS organization.
 
-    1. To open the [!UICONTROL Commerce Optimizer Admin] for an instance, click the instance name.
-
-    >[!TIP]
-    >
-    >To see information about your instance, including the REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
+    1. To open the [!UICONTROL Commerce Optimizer] for an instance, click the instance name.
 
 - **Setup catalog views and policies** - Learn how to [define your catalog views and policies](./setup/catalog-view.md). The catalog not only contains your product data, but it also helps you define your business structure.
 
