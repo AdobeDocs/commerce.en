@@ -20,3 +20,4 @@ feature: CMS, Page Content
   - [Custom automatic matching](synchronize/custom-match.md)
   - [Manual asset selection](synchronize/asset-selector-integration.md)
 - [Media types and use cases](manage-assets.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
