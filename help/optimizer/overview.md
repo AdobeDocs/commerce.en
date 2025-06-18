@@ -66,14 +66,14 @@ Create personalized experiences for your shoppers through product discovery and 
 - **Facets** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 - **Synonyms** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 
->[!TAB Setup]
+>[!TAB Store Setup]
 
 Define your catalog views and policies. The catalog not only contains your product data, but it also helps you define your business structure. Also, you can view valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
 
 - **Catalog views** - Help you define your retail structure into meaningful business groups. For example, dealers for the automobile industry, subsidiaries for multi brand conglomerates, or manufacturing locations for suppliers.
 - **Policies** - Data access filters that are housed within catalog views. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram). 
 - **Data Sync** - Displays an overview of the synchronization status for product data transferred from their data source (PIM, ERP, and so on) into [!DNL Adobe Commerce Optimizer]. That product data is displayed within the **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]**, and **[!UICONTROL Recommendations]** tabs.
-- **Events** - Displays storefront event data which powers Search and Recommendations. The **Events** page lets the merchant verify that they have implemented storefront eventing correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any eventing issues.
+- **Events** - Displays storefront event data which powers Product Discovery and Recommendations. The **Events** page lets the merchant verify that they have implemented storefront eventing correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any eventing issues.
 
 >[!ENDTABS]
 

@@ -180,8 +180,6 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
 1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Catalog views]**.
 
-    ![Catalog views](../assets/catalog-view.png)
-
     Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *Global*.
 
     ![Existing Catalog views Page](../assets/existing-channels-list.png)
@@ -202,7 +200,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
     >[!NOTE]
     >
-    >If the **[!UICONTROL Add]** button is not blue, ensure that the scope is selected by placing your cursor in the **[!UICONTROL Catalog sources]** section and pressing **enter**.
+    >If the **[!UICONTROL Add]** button is not blue, ensure that the catalog source is selected by placing your cursor in the **[!UICONTROL Catalog sources]** section and pressing **enter**.
 
 1. Get the Celport catalog view ID.
 
@@ -235,7 +233,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
             "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
             "ac-price-book-id": "west_coast_inc",
-            "ac-scope-locale": "en-US"
+            "ac-Source-Locale": "en-US"
            }
          },
          "analytics": {
@@ -256,7 +254,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
 
    Notice that the catalog view header contains the following lines:
 
-   - `ac-catalog view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-source-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
@@ -322,4 +320,4 @@ In this tutorial, you learned how [!DNL Adobe Commerce Optimizer] can help you o
 
 ## Where to go from here
 
-To learn how you can use Search and Recommendations to personalize the shopping experience for your customers, see the [merchandising overview](../merchandising/overview.md).
+To learn how you can use Product Discovery and Recommendations to personalize the shopping experience for your customers, see the [merchandising overview](../merchandising/overview.md).

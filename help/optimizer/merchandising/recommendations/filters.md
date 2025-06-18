@@ -15,9 +15,9 @@ You can configure multiple filters and enable only those you want by selecting t
 
 Conditions can be static or dynamic.
 
-- A static condition uses existing product attributes to determine which products can appear in the unit. For example, you can specify that only in-stock products with a price greater than $25 appear in the unit. Static conditions are available on all page types.
+- A static condition uses existing product attributes to determine which products can appear in the unit. For example, you can specify that only in-stock products with a price greater than $25 appear in the unit.
 
-- A dynamic condition keys off a shopper's current context, such as the currently viewed category or product. For example, when creating a product recommendation to be deployed on product detail pages, you can create a condition to recommend only products that are within a relative price range of the currently viewed product. Dynamic conditions are available on every page type except the Home page and on pages with recommendations that are placed with Page Builder.
+- A dynamic condition keys off a shopper's current context, such as the currently viewed category or product. For example, when creating a product recommendation to be deployed on product detail pages, you can create a condition to recommend only products that are within a relative price range of the currently viewed product.
 
 ### Logical operators
 

@@ -4,7 +4,6 @@ description: Learn about the events that [!DNL Adobe Commerce Optimizer] uses to
 role: Admin, Developer
 hide: yes
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Events
 
@@ -16,15 +15,26 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 The **Events** page lets you observe the storefront event data being collected. Having a view into the event data collection lets merchants verify that they have implemented storefront events correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any event issues.
 
-Key capabilities:
+- **Event Counts** - Tracks shopper interactions, such as searches, clicks, and purchases, to analyze trends and improve the shopping experience.
+- **Date range** - 
+- **Category** - 
+- **Storefront events per hour** - 
+- **Total storefront event counts by category and action** - 
 
-- **Behavioral Data Collection** - Tracks shopper interactions, such as searches, clicks, and purchases, to analyze trends and improve the shopping experience.
+    Category
+    Action
+    Count
+    Trend
+
 - **Sanity Check** - Offers insights into the health of each behavioral event, ensuring accurate data collection and functionality. ​
-- **Optimization** - Helps refine search rules, Recommendations, and catalog configurations based on shopper behavior. ​
+
+    Product discovery
+    Recommendations
+
 
 Events are a critical tool to enhance the shopping experience and drive conversions by leveraging real-time data insights.
 
-The following sections describe event details for recommendations and [product discovery](#search).
+The following sections describe event details for recommendations and [product discovery](#product-discovery-specific-events).
 
 ## Recommendations
 
@@ -33,18 +43,17 @@ There are two types of data used in Recommendations:
 - **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
 - **Catalog** - Product metadata, such as name, price, availability, and so on.
 
-When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Recommendations for each recommendation type. The Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
+Adobe Sensei aggregates the behavioral and catalog data, creating Recommendations for each recommendation type. The Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
 
 Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Recommendations on your site, you can use the following, catalog-only recommendation types:
 
 - `More like this`
-- `Visual similarity`
 
 ### Cold start
 
 When can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
 
-The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For Recommendations, this means waiting for Adobe Sensei to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early by installing and setting up the `magento/production-recommendations` module.
+The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For Recommendations, this means waiting for Adobe Sensei to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 
@@ -69,7 +78,7 @@ If your site doesn't get enough traffic (views, purchases, trends) for most prod
 
 ### Backup recommendations
 
-If the input data is insufficient for providing all requested recommendation items in a unit, Adobe Commerce provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to accurately recommended personalized products. In this case, [!DNL Adobe Commerce Optimizer] surfaces items based on the `Most viewed` recommendation type to this shopper.
+If the input data is insufficient for providing all requested recommendation items in a unit, [!DNL Adobe Commerce Optimizer] provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to accurately recommended personalized products. In this case, [!DNL Adobe Commerce Optimizer] surfaces items based on the `Most viewed` recommendation type to this shopper.
 
 In the case of insufficient input data collection, the following recommendation types fallback to `Most viewed` recommendation type:
 
@@ -151,3 +160,7 @@ Some events are required to populate the [product discovery dashboard](../../man
 | ------------------- | ------------- | ---------- |
 | Unique searches       |`page-view`, `search-request-sent`, `search-response-received` | `searchRequestId`  |
 | Zero results searches |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`|
+
+## Support
+
+If you notice any data discrepancies or if recommendations and search results are not working as expected, [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

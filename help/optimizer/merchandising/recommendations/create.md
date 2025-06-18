@@ -1,6 +1,6 @@
 ---
-title: Create New Recommendation
-description: Learn how to create a product recommendation unit.
+title: Create and Edit Recommendation
+description: Learn how to create and edit a product recommendation unit.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Create New Recommendation
@@ -14,23 +14,11 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
 
-1. Click **Create Recommendation**.
+1. Click **Create recommendation**.
 
 1. In the _Name your Recommendation_ section, enter a descriptive name for internal reference, such as `Home page most popular`.
 
-1. In the _Select page type_ section, select the page where you want the recommendation to appear from the following options:
-
-   - Home Page
-   - Product Detail
-   - Cart
-   - Confirmation
-
-   You can create up to five active recommendation units for each page type. The page type is grayed out When the limit is reached.
-
-   ![Recommendation name and page](../../assets/create-recommendation.png)
-   _Recommendation name and page placement_
-
-1. In the _Select Recommendation type_ section, select _Recently Viewed_.
+1. In the _Select Recommendation type_ section, specify the [type of recommendation](types.md) you want based on your strategy.
 
 1. In the _Storefront display label_ section, enter the [label](best-practice.md#recommendation-labels) that is visible to your shoppers, such as "Top sellers".
 
@@ -38,32 +26,38 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    The default is `5`, with a maximum of `20`.
 
-1. In the _Select placement_ section, specify the location where the recommendation unit is to appear on the page.
-
-   - At the bottom of main content
-   - At the top of main content
-
-1. (Optional) To change the order of the recommendations, select, and move the rows in the _Choose position_ table.
-
-   The _Choose position_ section displays all recommendations (if any) created for the page type you selected.
-
-   ![Recommendation order](../../assets/create-recommendation-select-placement.png)
-   _Recommendation order on page_
-
 1. (Optional) In the _Filters_ section, [apply filters](filters.md) to control which products appear in the recommendation unit.
-
-   ![Recommendation filters](../../assets/create-recommendation-filter-products.png)
-   _Recommendation product filters_
 
 1. When complete, click one of the following:
 
-   - **Save as draft** to edit the recommendation unit later. You cannot modify the page type or recommendation type for a recommendation unit in a draft state.
+   - **Save as draft** to edit the recommendation unit later. You cannot modify the recommendation type for a recommendation unit in a draft state.
 
    - **Activate** to enable the recommendation unit on your storefront.
+
+1. When prompted, copy the recommendation ID. Use this ID to help you identify which recommendation unit is being used in the recommendation drop-in on your Edge Delivery Services storefront.
 
 >[!IMPORTANT]
 >
 >Some browsers might block critical scripts that prevent Recommendations from working as expected.
+
+## Edit existing recommendation
+
+The _Edit Recommendation_ page gives you the ability to adjust the individual settings that make up the recommendation. All settings can be edited except the recommendation type.
+
+1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations**.
+
+1. Select the recommendation that you want to edit.
+
+1. Click the (![More selector](../../assets/btn-more.png)) more selector.
+
+1. On the menu, click **Edit**. Then, adjust the following settings as needed:
+
+   - Recommendation name
+   - Storefront label
+   - Number of products
+   - Filter products
+
+1. When complete, click **Save Changes**.
 
 ## Readiness indicators
 
@@ -97,7 +91,6 @@ Learn more about [why readiness indicators might be low](#what-to-do-if-the-read
 The following recommendation types are static-based because they only require catalog data. No behavioral data is used.
 
 - _More Like This_
-- _Visual Similarity_
 
 ### Dynamic-based
 
@@ -153,11 +146,15 @@ The following lists possible reasons and solutions to common low readiness score
    - Low traffic on the store so the volume of behavioral events we receive is low.
    - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 
-## Preview Recommendations {#preview}
+## Preview Recommendations
+
+>[!IMPORTANT]
+>
+>This feature is not yet available.
 
 The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
 
-To test a recommendation when working in a non-production environment, you can fetch recommendation data from a [different source](../../settings.md). This allows merchants to experiment with rules and preview the recommendations before deploying to production.
+To test a recommendation when working in a non-production environment, you can fetch recommendation data from a different source. This allows merchants to experiment with rules and preview the recommendations before deploying to production.
 
 |Field|Description|
 |---|---|
@@ -166,6 +163,6 @@ To test a recommendation when working in a non-production environment, you can f
 |Price|The price of the product.|
 |Result Type|Primary - indicates that there is enough training data collected to display a recommendation.<br />Backup - indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](../../setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
 
-As you create your recommendation unit, experiment with the page type, recommendation type, and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
+As you create your recommendation unit, experiment with the recommendation type and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
 
-Adobe Commerce [filters](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel might differ from those that appear in the storefront.
+[!DNL Adobe Commerce Optimizer] [filters](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel might differ from those that appear in the storefront.

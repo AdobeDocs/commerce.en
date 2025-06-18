@@ -5,7 +5,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Recommendations Performance
 
-The Recommendations performance page displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
+The *Recommendations performance* page displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
 
 >[!INFO]
 >
@@ -50,13 +50,9 @@ The Recommendations performance page displays a list of previously configured re
 
 1. To change the status of the recommendation, click **Activate** or **Deactivate**.
 
-## Edit recommendation
+## Create or edit recommendations
 
-From the recommendation details page, click **Edit**. To learn more, go to [Edit Recommendations](../merchandising/recommendations/edit.md).
-
-## Create recommendation
-
-From the recommendation details page, click **Create**. To learn more, go to [Create Recommendations](../merchandising/recommendations/create.md).
+Learn how you can [create a new or edit an existing](../merchandising/recommendations/create.md) recommendation.
 
 ## Workspace Controls
 

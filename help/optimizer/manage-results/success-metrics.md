@@ -5,14 +5,37 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Success metrics report
 
-This page provides an overview of the key performance metrics for your store. The goal is for you to quickly understand the results of implementing Adobe Commerce Optimizer then help you and your team identify opportunities for growth, and highlight areas for optimization.
+This page provides an overview of the key performance metrics for your store. The goal is for you to quickly understand the results of implementing [!DNL Adobe Commerce Optimizer] then help you and your team identify opportunities for growth, and highlight areas for optimization.
 
 ![Success metrics report](../assets/success-metrics.png)
+
+
+
+Report Configuration
+
+- Date Range
+- Catalog View
+- Currency
+
+Export
+
+Top Highights
+
+Revenue
+
+Conversion
+
+Engagement
+
+Acquisition
+
+Bounce Rate
+
 
 <!--
 Develop a tool that generates a PDF report comparing before and after KPIs to demonstrate the success of ComOpt project launch. The report should be visually appealing, data-driven, and easy to interpret for a business people.
 
-SCOPE
+catalog source
 Accept before and after data for the following KPIs:
 Revenue (Total revenue in currency)
 Conversion Rate (CVR) (Percentage of visitors completing a purchase)

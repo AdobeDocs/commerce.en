@@ -35,7 +35,7 @@ The following [product attributes](https://developer-stage.adobe.com/commerce/se
 The following table shows the default search and filterable properties of non-system attributes. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in [!DNL Adobe Commerce Optimizer].
 
 | Attribute Code | Searchable |
-|--- |--- |--- |
+|--- |--- |
 | activity | Yes | 
 | attributes_brand | Yes | 
 | brand | Yes |
@@ -56,7 +56,7 @@ The following table shows the default search and filterable properties of non-sy
 The following table shows the default search and filterable properties of system attributes.
 
 | Attribute Code | Searchable |
-|--- |--- |--- |
+|--- |--- |
 | allow_open_amount | Yes | 
 | description | Yes |
 | name | Yes |

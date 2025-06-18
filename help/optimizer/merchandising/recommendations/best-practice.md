@@ -27,20 +27,9 @@ With so many recommendation types to choose from, which should you use on each p
 
 You can track the [metrics](../../manage-results/recommendation-performance.md) and adjust if needed. Remember that experimentation is key.
 
-Some storefront pages restrict where you can place the recommendations. You can place the recommendations in one of the following page locations. Refer to the [table below](#supported-recommendations-by-page) for more information.
-
-- At the top of main content - Recommendations appear above the main content area just below the top navigation bar.
-- At the bottom of main content (default) - Recommendations appear below the main content area and before any other content blocks on the page, such as _Related Products_.
-
-![Recommendation placement](../../assets/storefront-home-page-top.png)
-_Recommendation at top of home page_
-
 ## Recommendation labels
 
 The label that is assigned to a recommendation in the storefront affects how shoppers interpret its relevancy to them. The following labels are frequently used for each type of recommendation.
-
-![Recommendation placement](../../assets/storefront-search-results-top.png)
-_Recommendation at top of search results_
 
 |Recommendation Type|Recommended Labels|
 |---|---|
@@ -53,15 +42,3 @@ _Recommendation at top of search results_
 |Generic|You may also like<br>Shoppers also liked<br>Similar options<br>Related items|
 |Trending|Trending<br>Trending now<br>Recently trending<br>Hot items<br>Trending related products (PDP)|
 |Recently viewed|Recently viewed<br>Take another look|
-
-## Supported recommendations by page
-
-The following table lists the storefront pages where you can place recommendations and the recommendation types allowed on each page.
-
-|Page|Placement Recommendations|Types|
-|---|---|---|
-|Home page|At the top of main content<br>At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Recommended for you<br>Trending|
-|Category|At the top of main content<br>At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Recommended for you<br>Trending|
-|Product Detail|At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Viewed this, viewed that<br>Viewed this, bought that<br>Bought this, bought that<br>More like this<br>Trending<br>Visual similarity|
-|Cart|At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Viewed this, viewed that<br>Viewed this, bought that<br>Bought this, bought that<br>More like this<br>Trending|
-|Confirmation|At the bottom of main content (default)|Most viewed<br>Most purchased<br>Most added to cart<br>Viewed this, viewed that<br>Viewed this, bought that<br>Bought this, bought that<br>More like this<br>Trending|

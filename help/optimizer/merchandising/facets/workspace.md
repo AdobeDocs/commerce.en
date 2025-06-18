@@ -5,35 +5,22 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Facets Workspace
 
-The *Facets* workspace lists all facets that are currently available and provides access to the tools you need to set up and manage facets. Pinned facets appear first in the list of existing facets, followed by dynamic facets. The list can be filtered to show all facets, or only those that are pinned or dynamic.
+The *Facets* workspace lists all facets that are currently available and provides access to the tools you need to set up and manage facets. Pinned facets appear first in the list of existing facets, followed by dynamic facets. You can search the list of facets.
 
-!!!ADD WORKSPACE SCREENSHOT!!!
+![Facet Workspace](../../assets/facet-workspace.png)
 
-## Filter the list
+## Field Descriptions
 
-1. Click the **Filter by** control.
-1. Choose one of the following options:
-
-   - All filters
-   - Pinned
-   - Dynamic
-
-## Add a facet
-
-1. Click **Add facets**. 
-1. See [Add Facets](add.md) for detailed instructions.
-
-## Column descriptions
-
-| Column | Description |
+| Field | Description |
 |--- |--- |
-| (first column) | Lists pinned and dynamic facets by the [label](type.md) that is visible to the shopper. |
-| Sort type | The [sorting order](type.md) of facet values. Facets can be sorted alphabetically or by count. Options: Alphabetical, Count|
-| Max value | The number of facet values that are available in the storefront as filters, with a maximum of 10. |
+| Create facets| Opens the [facet editor](add.md). |
+| Label | The [facet label](type.md#facet-labels) that is visible in the storefront can be edited for consistency with your brand. |
+| Sort Type | The method that is used to [sort](type.md#sort-type) facets. All [!DNL Adobe Commerce Optimizer] storefronts sort facets alphabetically and by `Count`. Options:<br />Alphabetical - Sorts facets alphabetically.<br />Count - Sorts facets based on the number of matches found. |
+| Max Value | The maximum number of values that can be displayed in the storefront for each facet. Facets that represent a range of values are evenly distributed. Valid entries: 0 - 100; Default: 8. |
 
 ## Controls
 
 | Control | Description |
 |--- |--- |
-| Add facets| Opens the [facet editor](add.md). |
-| Filter by | Determines the [type of facets](type.md) that appear in the list. Options: All, Pinned, Dynamic |
+| ![Pin selector](../../assets/btn-pin-blue.png) | Pins or unpins a facet to the top of the *Filters* list. |
+| ![More selector](../../assets/btn-more.png) | Displays a menu of more actions that can be applied to the selected facet. Options: Edit, Delete |

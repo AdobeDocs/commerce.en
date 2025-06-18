@@ -20,8 +20,7 @@ recommendations: noDisplay
    - [Overview](./merchandising/overview.md)
    - Recommendations {#recommendations}
       - [Overview](./merchandising/recommendations/overview.md)
-      - [Create](./merchandising/recommendations/create.md)
-      - [Edit](./merchandising/recommendations/edit.md)
+      - [Create and Edit](./merchandising/recommendations/create.md)
       - [Filters](./merchandising/recommendations/filters.md)
       - [Types](./merchandising/recommendations/types.md)
       - [Best Practices](./merchandising/recommendations/best-practice.md)
@@ -35,8 +34,7 @@ recommendations: noDisplay
       - [Overview](./merchandising/facets/overview.md)
       - [Workspace](./merchandising/facets/workspace.md)
       - [Types](./merchandising/facets/type.md)
-      - [Add](./merchandising/facets/add.md)
-      - [Manage](./merchandising/facets/manage.md)
+      - [Create and Manage](./merchandising/facets/add.md)
       - [Best Practices](./merchandising/facets/best-practice.md)
    - Synonyms {#synonyms}
       - [Overview](./merchandising/synonyms/overview.md)
@@ -44,7 +42,7 @@ recommendations: noDisplay
       - [Add](./merchandising/synonyms/add.md)
       - [Manage](./merchandising/synonyms/manage.md)
       - [Best Practices](./merchandising/synonyms/best-practice.md)
-- Setup {#setup}
+- Store Setup {#setup}
    - [Catalog Views](./setup/catalog-view.md)
    - [Policies](./setup/policies.md)
    - [Price Books](./setup/pricebooks.md)

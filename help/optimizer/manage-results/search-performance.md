@@ -8,8 +8,10 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 The *Search performance* page provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Search performance page provides a snapshot of search metrics for a specific date range and includes the following reports:
 
 - Unique searches
-- Zero results
-- Popular results
+- Average click position
+- Click-through rate
+- Conversion rate
+- Zero results rate
 
 !!!ADD WORKSPACE SCREENSHOT!!!
 
@@ -57,17 +59,14 @@ To optimize search results with [!DNL Adobe Commerce Optimizer], monitor relevan
 
 - **Click-Through Rate (CTR)** - Measures the percentage of shoppers who click on a search result after performing a search query. A high CTR indicates that the search results are relevant and appealing to shoppers, as they are clicking on the results they find. Monitoring CTR can help identify areas for improvement. Low CTR may suggest that search results are not matching shopper intent, prompting a need to refine search rules, enhance product data, or improve result presentation.
 
-- **Conversion Rate** - Indicates the effectiveness of your search feature in driving sales and achieving business goals. It reflects the overall effectiveness of your search functionality in meeting shopper needs and facilitating a smooth shopping experience. A high conversion rate indicates that your search results are highly relevant and persuasive, leading shoppers to complete purchases. If the conversion rate is low, it may suggest issues with search relevance, product availability, or the overall shopper journey from search to purchase.
+- **Conversion rate** - Indicates the effectiveness of your search feature in driving sales and achieving business goals. It reflects the overall effectiveness of your search functionality in meeting shopper needs and facilitating a smooth shopping experience. A high conversion rate indicates that your search results are highly relevant and persuasive, leading shoppers to complete purchases. If the conversion rate is low, it may suggest issues with search relevance, product availability, or the overall shopper journey from search to purchase.
 
-- **Zero Results** - Measures the percentage of search queries on your [!DNL Adobe Commerce Optimizer] site that return no results. This metric is crucial for understanding how often shoppers' searches are unsuccessful and can provide insights into potential gaps in your product catalog or search setup. A high zero results rate can frustrate shoppers, leading to a poor shopping experience and potential loss of customers. It can indicate missing products or categories in your catalog that shoppers are searching for, guiding inventory and product listing decisions.
+- **Zero results rate** - Measures the percentage of search queries on your [!DNL Adobe Commerce Optimizer] site that return no results. This metric is crucial for understanding how often shoppers' searches are unsuccessful and can provide insights into potential gaps in your product catalog or search setup. A high zero results rate can frustrate shoppers, leading to a poor shopping experience and potential loss of customers. It can indicate missing products or categories in your catalog that shoppers are searching for, guiding inventory and product listing decisions.
 
     To reduce the zero results rate, you can:
 
     - Offer alternative or related search terms, such as [synonyms](../merchandising/synonyms/overview.md) when no exact matches are found.
-    - Provide shoppers with related or alternative suggestions when their search yields no results by setting search redirects.
     - Regularly review zero result queries to identify patterns and make necessary adjustments to your product catalog and search settings.
-
-- **Popular Results** - Can significantly enhance your search results by aligning them with shopper preferences and behaviors.
 
 You can use this metric data to optimize your search functionality in the following ways:
 

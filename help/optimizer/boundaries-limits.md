@@ -13,7 +13,7 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 - The guaranteed rate of catalog ingestion is: 1000 products/minute and 5000 prices/minute
 - The base number of product updates per day is 1,000,000.
 - The total number of SKUs allowed in a single instance is 250,000. 
-- The maximum number of scopes is 50.
+- The maximum number of catalog sources is 50.
 - The number of variants per product is 10,000.
 - The product size cannot exceed 200kb.
 
@@ -21,7 +21,7 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 
 - The maximum number of price books is 1,000.
 
-## Search and storefront
+## Product Discovery and storefront
 
 - The number of products that a single search request can return is 100.
 - The maximum number of filterable attributes is 200
@@ -36,10 +36,10 @@ The following provides boundaries and limits for Adobe Commerce Optimizer.
 - The maximum number of polices assigned to one catalog view is 10.
 - The maximum number of attribute values used in a policy is 100. 
 
-## Search and recommendations
+## Product Discovery and recommendations
 
-- For Search, attribute based merchandising and price settings are not supported.
-- For recommendations:
+- For Product Discovery, attribute based merchandising and price settings are not supported.
+- For Recommendations:
 
     - [!DNL Adobe Commerce Optimizer] supports the _Recently Viewed_ recommendation type for early access.
     - There is no support for category or attribute inclusions or exclusions.

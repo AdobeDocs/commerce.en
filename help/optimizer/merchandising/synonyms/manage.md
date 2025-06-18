@@ -9,7 +9,7 @@ Follow these instructions to manage existing [!DNL Adobe Commerce Optimizer] [sy
 
 ## Find synonym
 
-To make it easy to find a synonym, you can filter the list by type and search by keyword or expansion term.  These methods can be used individually or together.
+To make it easy to find a synonym, you can filter the list by type and search by keyword or expansion term. These methods can be used individually or together.
 
 1. To filter the list, set **Type** to one of the following:
 
@@ -17,7 +17,7 @@ To make it easy to find a synonym, you can filter the list by type and search by
    - One-way
    - Two-way
 
-1. To search for a keyword or expansion term, enter at least three characters into **Search by** box.
+1. To search for a keyword or expansion term, enter at least three characters into the **[!UICONTROL Search]** box.
 
 ## Edit synonym
 
@@ -39,5 +39,5 @@ To make it easy to find a synonym, you can filter the list by type and search by
 
 To complete the process, your saved changes must be published to the storefront. It can take up to two hours for the updates to go live.
 
-1. Click **Publish changes**.
+1. Click **Publish**.
 1. Look for the message at the top of the page that confirms your changes have been published.

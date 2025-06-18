@@ -5,9 +5,9 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Add Synonyms
 
-Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. [!DNL Adobe Commerce Optimizer] can manage up to 200 synonyms per store.
+Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. You can add up to 200 synonyms per store.
 
-!!!ADD WORKSPACE SCREENSHOT!!!
+![Synonym Workspace](../../assets/synonym-workspace.png)
 
 ## Step 1: Add a synonym
 
@@ -56,7 +56,7 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
 
 ## Step 3: Publish changes
 
-1. When your synonyms are complete, click **Publish changes**.
+1. When your synonyms are complete, click **Publish**.
 1. Wait for up to two hours for your updates to become available in the storefront.
 
 ## Field Descriptions

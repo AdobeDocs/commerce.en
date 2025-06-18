@@ -39,7 +39,6 @@ These recommendation types are social-proof driven to help shoppers find what ot
 |Viewed this, bought that|Recommends products that shoppers tend to buy disproportionately more often after viewing the current product. This type helps guide shoppers to discover products that they might not have otherwise noticed.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Customers who viewed this ultimate bought<br/>- Customers ultimately purchased<br/>- What do others buy after viewing this product?|
 |Bought this, bought that|Recommends products that shoppers buy disproportionately more often with the currently viewed product. This type displays highly relevant products shoppers can add to their cart by aggregating what other shoppers have bought with the current product.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Get everything that you need<br/>- Don't forget these<br/>- Frequently bought together|
 |More like this|Recommends products based on similar metadata such as name, description, category assignment, and attributes. By evaluating the attributes for the products being viewed, this type recommends similar products in the same category. For example, if a shopper is browsing yoga mats, other products in the equipment category are recommended. Because this recommendation type does not distinguish genders, it is not recommended for apparel, fashion, or other gender-specific verticals.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - More products like this<br/>- Similar to this|
-|[Visual similarity](#visual-similarity)|Recommends similar looking products to the product being viewed. This recommendation type is most useful if images and the visual aspects of products are important to the shopping experience.|
 
 ## Popularity {#popularity}
 
@@ -62,64 +61,3 @@ These recommendation types recommend top performing products based on success cr
 |View to cart conversion| Recommends products with the highest view-to-cart conversion rate. Of all the shopper sessions that registered a product view, what is the proportion that eventually registered an add to cart by the shopper.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Top sellers<br/>- Popular products<br/>- You might be interested in|
 |Most purchased|Often referred to as "Top Sellers", this recommendation type counts the number of sessions where a place-order action occurred within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
 |Most added to cart|Recommends products most frequently added to carts by shoppers within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
-
-## Visual similarity
-
-The _Visual similarity_ recommendation type recommends similar looking products to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience.
-
-### How it works
-
-The _Visual similarity_ recommendation type offers recommendations for other products in your catalog that have a visual similarity to the imagery currently being viewed. Visual similarity includes aspects such as:
-
-- Color
-- Shape
-- Size
-- Texture
-- Material
-- Style
-
-Adobe Sensei uses AI to process and analyze the imagery in your catalog and build attributes used to determine visual similarities.
-
->[!NOTE]
->
-> If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
-
->[!NOTE]
->
-> Currently, product images must be 10 MB or less in size.
-
-Because this recommendation type is not applicable to most catalogs, it is not enabled by default. You must explicitly enable this recommendation type.
-
-### Enable Visual similarity recommendation type
-
-1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Product Recommendations** to display the _Product Recommendations_ dashboard.
-
-1. Click **Settings** (gear icon) to display the _Settings_ page.
-
-1. In the _Visual Recommendations_ section, select to **Enable Visual Recommendations**.
-
-1. Click **Save changes** when you are finished.
-
-   The [Create New Recommendation](create.md) page now displays **Visual similarity** as a selectable recommendation type when the page type is **Product Detail**.
-
-After you enable visual recommendations, Adobe Sensei initiates the image processing. How long it takes depends on the size of your catalog.
-
-### Where used
-
-- Product detail
-
-### Suggested storefront labels
-
-- You may also like
-- We found other products you might like
-- Inspired by this style
-
-### Example
-
-The following image shows the product detail page for the _Clamber Watch_:
-
-   ![Clamber Watch](../../assets/visual-sim-pdp.png)
-
-The following shows the _Visual similarity_ recommendation unit for _Clamber Watch_:
-
-   ![Visual similarity unit](../../assets/visual-sim-unit.png)

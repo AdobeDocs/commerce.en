@@ -1,25 +1,17 @@
 ---
 title: Settings
-description: Configure settings for the [!DNL Adobe Commerce Optimizer] service.
+description: Configure settings for [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Settings
 
-Use the *Settings* workspace to enable visual recommendations and configure the price facet ranges and intervals and the default language for product discovery.
-
-## Enable visual recommendations
-
-To use the [Visual Similarity](./merchandising/recommendations/types.md#visual-similarity) recommendation type, you must enable Visual Recommendations. 
-
-In the _Visual Recommendations_ section, set **Enable Visual Recommendations** to the active position.
-
-## Product discovery
+Use the *Settings* workspace to configure the price facet ranges and intervals and the default language for product discovery.
 
 Price faceting specifies the number of price range groups and how price values are distributed among them.
 
 The **Language** setting tells [!DNL Adobe Commerce Optimizer] which language to expect when writing the index.
 
-### Price faceting
+## Price faceting
 
 You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 creates the following price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
 
@@ -37,7 +29,7 @@ You can specify the number of price range groups and how price values are distri
 | Number of selections | Specifies the number of price range groupings that can be used as search filters in the storefront. Default value: 8, Maximum value: 50 |
 | Interval value | Specifies the price range interval for each group. For example, five selections with an interval value of 20 creates five groupings of 0-20, 20-40, 40-60, 60-80, and >80. Default value: 5, Maximum value: 40,000,000 |
 
-### Language
+## Language
 
 The Language setting tells [!DNL Adobe Commerce Optimizer] which language to expect when reading the catalog and writing the index. 
 
