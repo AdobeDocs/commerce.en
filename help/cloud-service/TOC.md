@@ -17,4 +17,4 @@ recommendations: noDisplay, noCatalog
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
 - [Migration](migration.md)
-- [Return to Commerce Services Home](../landing/home.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
