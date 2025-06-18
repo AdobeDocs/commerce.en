@@ -49,7 +49,7 @@ When enabled, the [!DNL Apple Pay] button is visible from the product page, mini
 
 >[!NOTE]
 >
-> Check that access to `/.well-known/apple-developer-merchantid-domain-association` is not blocked by a CDN or server configuration.
+> Check that access to the `/.well-known/apple-developer-merchantid-domain-association` is not blocked by a CDN or server configuration.
 
 See [Settings](settings.md#apple-pay) for more information.
 
