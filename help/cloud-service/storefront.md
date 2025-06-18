@@ -7,8 +7,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Set up your storefront
 
-{{accs-early-access}}
-
 The following steps demonstrate how to quickly set up your Adobe Commerce Storefront powered by Edge Delivery using the `aio commerce init` command. This process sets up the following:
 
 * [Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - A performant, scalable, and secure storefront that is powered by Adobe's Edge Delivery Services.

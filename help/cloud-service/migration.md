@@ -7,8 +7,6 @@ role: Architect
 ---
 # Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
-{{accs-early-access}}
-
 [!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. However, if you are migrating from an existing Adobe Commerce on Cloud or on-premises instance, you will need to perform different migration actions depending on your specific configuration.
 
 ## Migration paths
