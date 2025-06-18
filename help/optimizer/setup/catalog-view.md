@@ -145,7 +145,7 @@ In the above image, each SKU provides:
 
 The catalog view and policy definitions are created using dedicated APIs:
 
-![[!DNL Merchandising Services] catalog view, Policy, and catalog source Mapping](../assets/merchandising-svcs-catalog source-map.png)
+![[!DNL Merchandising Services] catalog view, Policy, and catalog source Mapping](../assets/merchandising-svcs-scope-map.png)
 
 - **catalog source** (locale) - Set at a SKU level during product data ingestion.​
 - **catalog view** - Definition created using dedicated APIs. ​
