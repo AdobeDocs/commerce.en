@@ -12,7 +12,7 @@ The **AEM Asset Selector** is available when the IMS client ID for the AEM Asset
 When the **AEM Asset Selector** integration is configured, marketers and merchandisers can:
 
 * Manage category images effortlessly, ensuring they align with brand and campaign guidelines.
-*  [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Assign assets directly in Page Builder for visually rich content.
+* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Assign assets directly in Page Builder for visually rich content.
 
 >[!NOTE]
 >
