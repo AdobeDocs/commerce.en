@@ -6,7 +6,7 @@ hide: yes
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-## Add catalog view
+# Add catalog view
 
 [Catalog views](#catalog-views) help you define your retail structure into meaningful business groups. A catalog view affects product visibility by applying specific policies and filters that determine which products are displayed on a storefront. These policies can include attributes like brand, model, or part category, ensuring that only relevant products are visible to shoppers based on the catalog view configuration. Additionally, catalog views can use price books to display customer-specific pricing, further tailoring the shopping experience.
 
@@ -27,7 +27,7 @@ In this section, you create a catalog view, select a [policy](policies.md), and 
     1. Select the price book.
     1. More information.
 
-### Price Book Assignment
+## Price Book Assignment
 
 - Enable ACO users to assign one or multiple price books to a catalog view as "allowed price books"
 - Provide capability to set a default price book for each catalog view
