@@ -2,6 +2,7 @@
 title: View and manage logs
 description: Learn where to find and manage logs for Product Visuals.
 feature: CMS, Media, Integration
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 
 # View and manage logs

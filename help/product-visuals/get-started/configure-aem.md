@@ -49,19 +49,19 @@ You need the following resources and permissions to deploy the `commerce-assets`
 
 ### Install the `commerce-assets` package
 
-1. From the Cloud Manager, create production and staging environments for your AEM Assets project, if needed.
+1. From the AEM Cloud Manager, create production and staging environments for your AEM Assets project, if needed.
 
 1. Configure a deployment pipeline, if needed.
 
-1. From GitHub, download the boilerplate code from the [Commerce-Assets AEM project](https://github.com/ankumalh/assets-commerce).
+1. From GitHub, download the code from the [AEM Commerce boilerplate](https://github.com/ankumalh/assets-commerce).
 
 1. From your [local AEM development environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), install the custom code into your AEM Assets environment configuration as a Maven package, or by manually copying the code into the existing project configuration.
 
 1. Commit the changes and push your local development branch to the Cloud Manager Git repository.
 
-1. From Cloud Manager, [deploy your code to update the AEM environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. From AEM Cloud Manager, [deploy your code to update the AEM environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
-## Configure a metadata profile
+## Optional. Configure a metadata profile
 
 In the AEM Assets author environment, set default values for Commerce asset metadata by creating a metadata profile. Then, apply the new profile to AEM Asset folders to automatically use these defaults. This configuration streamlines asset processing by reducing manual steps.
 
@@ -72,7 +72,7 @@ When you configure the metadata profile, you only have to configure the followin
 
 The Product Data UI component is added automatically based on the template.
 
-### Set up the metadata profile
+### Define the metadata profile
 
 1. Log in to the Adobe Experience Manager author environment.
 
@@ -134,4 +134,4 @@ The Product Data UI component is added automatically based on the template.
 
 ## Next step
 
-[Install Adobe Commerce packages](configure-commerce.md)
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md)
