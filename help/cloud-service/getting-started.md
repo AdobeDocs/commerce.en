@@ -27,7 +27,7 @@ This diagram provides a high-level overview of how administrators and merchants 
 
 >[!TAB Developer workflow]
 
-This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/services/cloud/) for more information.
+This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
 
 ![[!DNL Adobe Commerce as a Cloud Service] developer flow diagram](./assets/developer-flow.svg){zoomable="yes"}
 
