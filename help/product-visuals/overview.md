@@ -2,8 +2,8 @@
 title: Product Visuals
 description: Learn how to integrate Adobe Experience Manager Assets with your [!DNL Commerce] instance to create and manage the media files for your Commerce storefront.
 feature: CMS, Media, Configuration, Integration
+exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 ---
-
 # Product Visuals powered by AEM Assets Integration for Commerce
 
 The demand for personalized content is rapidly increasing while marketing budgets are under pressure. Retailers and brands are struggling to keep pace with the growing need for variations in product imagery, driven by regional, seasonal, and segment-specific requirements.

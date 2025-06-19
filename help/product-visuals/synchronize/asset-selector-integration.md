@@ -2,6 +2,7 @@
 title: Manual asset selection
 description: Discover how the AEM Asset Selector integrated in the Commerce Admin helps marketers and merchandisers easily add images from AEM Assets to Adobe Commerce, streamlining asset management.
 feature: CMS, Media, Integration
+exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
 ---
 # Manual asset selection
 
