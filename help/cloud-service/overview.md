@@ -48,12 +48,12 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 
 - [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
 - [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-- [Merchandising Services powered by Channels and Policies](../optimizer/catalog/overview.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
+- [Merchandising Services powered by Channels and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Product Visuals
 
-Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native mini-DAM provides basic asset management tools for storing and managing digital assets.
+Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
 See [asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) to learn more.
 
