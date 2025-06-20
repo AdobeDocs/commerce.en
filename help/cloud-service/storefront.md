@@ -125,7 +125,7 @@ To customize your storefront, refer to the [Adobe Commerce Storefront documentat
 
 If you run into issues with the `aio login` command, Adobe recommends fully signing out of the CLI and browser and then re-logging in.
 
-1. To log ouf of the CLI, run:
+1. To log out of the CLI, run:
 
     ```bash
     aio logout
