@@ -42,7 +42,7 @@ The *Merchandising Rules* workspace lists the current selection of rules and the
 
 The details panel shows the rule name, status, conditions and events, start and end date, description, and date last edited. Rules can be enabled, edited, and deleted from the details panel.
 
-1. On the *Merchandising rules* workspace, find the rule in the grid that you want to view and click the (![More selector](../assets/btn-more.png)) icon.
+1. On the *Merchandising rules* workspace, find the rule in the grid that you want to view and click the (![More selector](../../assets/btn-more.png)) icon.
 
    You can do any of the following from the menu:
 
