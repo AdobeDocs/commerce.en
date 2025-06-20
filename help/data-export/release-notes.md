@@ -24,8 +24,8 @@ Updates include:
 
 ## 103.4.6 Release
 
-![Fix](../assets/fix.svg) Export downloadable product as attribute. <!--MDEE-1043-->
-![Fix](../assets/fix.svg) Critical installation error fix for AC 2.4.4. <!--MDEE-1074-->
+![Fix](../assets/fix.svg) Export Adobe Commerce downloadable product data using the `ac_downloadable` attribute for use with Adobe Commerce Optimizer.. <!--MDEE-1043-->
+![Fix](../assets/fix.svg) Critical installation error fix for Adobe Commerce version 2.4.4. <!--MDEE-1074-->
 
 ## 103.4.5 Release
 
