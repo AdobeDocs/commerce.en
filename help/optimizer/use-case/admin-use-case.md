@@ -1,7 +1,6 @@
 ---
 title: Storefront and Catalog Administrator End-to-End Use Case
 description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog using catalog views and policies and how to set up your storefront based on your catalog configuration.
-hide: yes
 role: Admin, Developer
 feature: Personalization, Integration
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
@@ -73,8 +72,6 @@ Ultimately, Carvelo has two major goals:
 
 >[!ENDSHADEBOX]
 
-Now, access your [!DNL Adobe Commerce Optimizer] instance.
-
 ## 1. Access the [!DNL Adobe Commerce Optimizer] instance
 
 After you onboard to the Early Access program, Adobe sends an email that provides the URL to access the l[!DNL Adobe Commerce Optimizer] instance provisioned for you. This instance is pre-configured with everything that you need to successfully complete the steps outlined in this tutorial, including catalog data that supports the Carvelo Automobile use case.
@@ -87,7 +84,7 @@ When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 >
 >See the [overview](../overview.md) article to learn more about the different parts that make up the [!DNL Adobe Commerce Optimizer] UI.
 
-In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Catalog views]**. Notice that the Arkbridge and Kingsbluff dealerships already have catalog views created:
+In the left navigation, expand the _Store setup_ section and click **[!UICONTROL Catalog views]**. Notice that the Arkbridge and Kingsbluff dealerships already have catalog views created:
 
 ![Preconfigured Catalog Views](../assets/existing-channels-list.png)
 
@@ -133,9 +130,9 @@ At the end of this section, Celport will be up and running ready to sell Carvelo
 
 Let's create a new policy called *Celport part categories* to filter the SKUs that the Celport dealer sells, which include brake and suspension parts.
 
-1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click on **[!UICONTROL Policies]**.
+1. In the left navigation, expand the _Store setup_ section and click on **[!UICONTROL Policies]**.
 
-1. Click **[!UICONTROL Add Policy]**.
+1. Click **[!UICONTROL Create Policy]**.
 
     A new page displays to add the policy details.
 
@@ -178,7 +175,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
 
 Create a new catalog view for the *Celport* dealer and link the following policies: *East Coast Inc brands* and *Celport Part Categories*.
 
-1. In the left navigation, expand the **[!UICONTROL Catalog]** section and click **[!UICONTROL Catalog views]**.
+1. In the left navigation, expand the _Store setup_ section and click **[!UICONTROL Catalog views]**.
 
     Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *Global*.
 
@@ -191,7 +188,6 @@ Create a new catalog view for the *Celport* dealer and link the following polici
     - **Name** = *Celport*
     - **Catalog sources** = *en-US* (hit enter)
     - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport part categories*; *Brand*; *Model*                          
-
 1. Click **[!UICONTROL Add]** to create the catalog view.
 
     The Catalog views page updates to display the new catalog view.
@@ -210,7 +206,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
     Copy and save the catalog view ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog. 
 
-After you create the Celport catalog view and associated policies, the next step is to configure the storefront to create your new Celport catalog.
+After you create the Celport catalog view and associated policies, the next step is to configure the storefront to use your new Celport catalog.
 
 ## 3. Update your storefront
 

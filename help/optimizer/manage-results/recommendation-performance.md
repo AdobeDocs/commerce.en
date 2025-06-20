@@ -11,25 +11,30 @@ The *Recommendations performance* page displays a list of previously configured 
 >
 >A recommendation unit is a widget that contains the recommended product _items_.
 
-!!!ADD WORKSPACE SCREENSHOT!!!
+![Recommendations Performance](../assets/rec-performance.png){zoomable="yes"}
 
-## Set metrics date range
+## Choose the **Catalog view**
 
-1. Click the **Calendar** ![Calendar selector](../assets/icon-calendar.png) control.
+Select the [catalog view](../setup/catalog-view.md) where your recommendations apply.
 
-1. Choose one of the following:
+![Catalog View](../assets/catalog-view.png)
 
-   - Last 24 hours
-   - Last 7 days
-   - Last 30 days
+## View a report
 
-   The calculated values in the metrics columns change to reflect the current date range.
+Click the calendar and do one of the following:
 
-## Show/hide columns
+- To specify a single date, double-click the date on the calendar.
+- To specify a range of dates, click the first and last date on the calendar.
 
-1. In the upper-left corner, click **Show/hide** ![Column selector](../assets/icon-show-hide-columns.png) columns.
+>[!NOTE]
+>
+>The range of dates cannot exceed one year.
 
-   The visible columns have a blue check mark.
+## Customize table
+
+1. In the upper-left corner, click the ![Column selector](../assets/icon-show-hide-columns.png) icon to customize the table.
+
+   The visible columns have a check mark.
 
 1. In the menu, do either of the following:
 
@@ -38,26 +43,31 @@ The *Recommendations performance* page displays a list of previously configured 
 
    The table is refreshed to include only the selected columns.
 
-   ![Recommendations workspace](../assets/workspace-select-columns.png)
-   _Show/hide columns_
+## Set filters
+
+Click the filter icon to filter the metrics on the recommendations performance workspace.
+
+![Filter Metrics](../assets/rec-filters.png)
+
+You can configure multiple values for each of the filters. See the [table below](#column-descriptions) for descriptions of each filter.
 
 ## View details
 
-1. In the table, click the recommendation that you want to examine.
+1. In the table, click the (![More selector](../assets/btn-more.png)) icon next to the recommendation that you want to examine.
 
 1. To change the status of the recommendation, click **Activate** or **Deactivate**.
 
-## Create or edit recommendations
+## Create or manage recommendations
 
-Learn how you can [create a new or edit an existing](../merchandising/recommendations/create.md) recommendation.
+Learn how you can [create a new or manage an existing](../merchandising/recommendations/create.md) recommendation.
 
 ## Workspace Controls
 
 |Control|Description|
 |---|---|
-|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations. Options: 24 hours / 7 days / 30 days|
+|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
-|Create Recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
+|Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
 ## Column Descriptions
 

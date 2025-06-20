@@ -1,9 +1,9 @@
 ---
-title: Merchandising rules
+title: Merchandising Rules
 description: '[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape the shopping experience.'
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Merchandising rules
+# Merchandising Rules
 
 Merchandising rules refers to a set of rules that combine logic with actions to shape a shopper's search experience in your store. You can use merchandising rules to boost, bury, pin, or hide products to calibrate search results in real time to support your business goals.
 

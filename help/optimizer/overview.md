@@ -1,7 +1,6 @@
 ---
 title: What is Adobe Commerce Optimizer?
 description: Learn about [!DNL Adobe Commerce Optimizer] and its key features.
-hide: yes
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
@@ -37,13 +36,13 @@ When you first launch [!DNL Adobe Commerce Optimizer], you see the following:
 >
 >This image is an example of what [!DNL Adobe Commerce Optimizer] might look like and is subject to change.
 
-![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png){zoomable="yes"}
 
 >[!BEGINTABS]
 
 >[!TAB Home]
 
-Preview key metrics and activities for your store.
+Preview key metrics and activities for your store. The home page also includes quick links to 
 
 >[!TAB Success metrics report]
 

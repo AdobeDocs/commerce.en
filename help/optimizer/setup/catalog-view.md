@@ -2,65 +2,32 @@
 title: Catalog View
 description: Learn how to create and manage catalog views in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-hide: yes
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Add catalog view
+# Create catalog view
 
-[Catalog views](#catalog-views) help you define your retail structure into meaningful business groups. A catalog view affects product visibility by applying specific policies and filters that determine which products are displayed on a storefront. These policies can include attributes like brand, model, or part category, ensuring that only relevant products are visible to shoppers based on the catalog view configuration. Additionally, catalog views can use price books to display customer-specific pricing, further tailoring the shopping experience.
+[Catalog views](#catalog-views) help you define your retail structure into meaningful business groups. A catalog view affects product visibility by applying specific policies and filters that determine which products are displayed on a storefront. These policies can include attributes like brand, model, or part category, ensuring that only relevant products are visible to shoppers based on the catalog view configuration. Additionally, catalog views can use price books to display customer-specific pricing, further tailoring the shopping experience. [Learn more](#catalog-views) about catalog views.
 
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).
 
 1. On the left menu, go to _Store setup_ and click **[!UICONTROL Catalog views]**.
 
-1. Click **[!UICONTROL Add catalog view]**. ​
+1. Click **[!UICONTROL Create catalog view]**. ​
 
 1. Add the catalog view details:
 
     - **Name**—Enter the name of the catalog view. For example, "Celport". ​
     - **Catalog sources**—Add the catalog source (locale). For example, "en-US". Press the **enter** key.
-    - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](./policies.md).
+    - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
 1. Select the price book you want linked to your catalog view. Learn more about [price books](pricebooks.md).
-
-    1. Select the price book.
-    1. More information.
-
-## Price Book Assignment
-
-- Enable ACO users to assign one or multiple price books to a catalog view as "allowed price books"
-- Provide capability to set a default price book for each catalog view
-- Support hierarchical price book structures with maximum depth of 3 levels
-
-### Hierarchical Price Book Structure
-
-- Transition from the current "main" price book concept to hierarchical price books
-- Support multiple price book trees, each with maximum depth of 3 (including root)
-- Enable selective assignment of price books from any hierarchy level
-
-**Example**: In hierarchy `Price Book A → Price Book B → Price Book C`, users can select only Price Books A and C as allowed price books.
-
-### ACO User Interface
-
-- **Display**: Present comprehensive list of all available price books during catalog view creation/editing
-- **Assignment**: Enable multiple price book assignment to catalog views
-- **Access Control**: Restrict catalog view operations to assigned price books only
-- **Flexibility**: Support catalog views without assigned price books (storefront API restrictions apply)
-- **Global Access**: Option to allow all price books for a catalog view (pending UX finalization)
-
-### Commerce Optimizer UI
-
-- **Assignment**: Enable default price book selection from allowed price books list
-- **Constraint**: Enforce single default price book per catalog view
-- **Flexibility**: Support catalog views without default price books
-- **Validation**: Restrict default assignment to allowed price books only
 
 1. Click **[!UICONTROL Add]** to create the catalog view with the linked price book and policies.
 
     If the **[!UICONTROL Add]** button is not active, ensure that the catalog source is properly added by placing your cursor in the Catalog sources field and pressing **enter**. ​
 
-  The Catalog views page updates to display the new catalog view.​
+The Catalog views page updates to display the new catalog view.​
 
   ![Updated Catalog views Page](../assets/updated-catalog-view-list.png)
 

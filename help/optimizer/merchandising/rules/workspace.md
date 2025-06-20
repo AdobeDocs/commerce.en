@@ -1,11 +1,11 @@
 ---
-title: Merchandising rules Workspace
-description: Learn your way around the Merchandising rules workspace.
+title: Merchandising Rules Workspace
+description: Learn your way around the Merchandising Rules workspace.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Merchandising rules Workspace
+# Merchandising Rules Workspace
 
-The *Merchandising rules* workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
+The *Merchandising Rules* workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
 
 - Search for rules
 - View rule details
@@ -13,12 +13,11 @@ The *Merchandising rules* workspace lists the current selection of rules and the
 - Delete rules
 - Access the rule editor
 
-!!!ADD WORKSPACE SCREENSHOT!!!
+![Merchandising Rules Workspace](../../assets/rules-workspace.png)
 
 ## Show/hide columns
 
 1. In the upper-right corner, click **Show/hide** ![Column selector](../../assets/btn-show-hide-columns.png) columns.
-   The visible columns have a blue check mark in the options menu. The rule name is the only column that cannot be hidden.
 
 1. In the menu, do either of the following:
 
@@ -35,29 +34,21 @@ The *Merchandising rules* workspace lists the current selection of rules and the
    - Active
    - Inactive
    - Scheduled
+   - Draft
 
-## Find search rules by name
-
-Begin typing the name of the rule, or any word in the rule name.
-Search finds the matching rule(s) as you type. The string of matching characters are highlighted in the name of each rule found.
-
-![Rules - find by name](../../assets/rules-workspace-search-name.png)
+   You also can filter by **Conditions**, **Start date**, **End date**, and **Last updated**.
 
 ## View details
 
 The details panel shows the rule name, status, conditions and events, start and end date, description, and date last edited. Rules can be enabled, edited, and deleted from the details panel.
 
-1. On the *Merchandising rules* workspace, find the rule in the grid that you want to view and click **More** (…).
-1. Click **View details**.
-   You can do any of the following from the View details panel:
+1. On the *Merchandising rules* workspace, find the rule in the grid that you want to view and click the (![More selector](../assets/btn-more.png)) icon.
+
+   You can do any of the following from the menu:
 
    - Edit Rule
    - Delete Rule
    - Enable/Disable Rule
-
-1. To close the *View details* panel, click **Close** (X) in the upper-right corner.
-
-   ![Rule - details](../../assets/rules-workspace-details.png)
 
 ## Column descriptions
 

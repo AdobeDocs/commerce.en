@@ -5,7 +5,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Filter Products
 
-Adobe Commerce automatically applies non-configurable default filters to recommendation units. If you have multiple recommendation units deployed to a page, Adobe Commerce filters out any products that are repeated in the units. Only the first reference to a repeated product is used, to make room for other products to be recommended. Adobe Commerce also filters out any previously purchased products and those that are in the cart.
+[!DNL Adobe Commerce Optimizer] automatically applies non-configurable default filters to recommendation units. If you have multiple recommendation units deployed to a page, [!DNL Adobe Commerce Optimizer] filters out any products that are repeated in the units. Only the first reference to a repeated product is used, to make room for other products to be recommended. [!DNL Adobe Commerce Optimizer] also filters out any previously purchased products and those that are in the cart.
 
 When you [create](create.md) a recommendation unit, you can define filters that control which products can be displayed in recommendations. These filters are based on a set of inclusion or exclusion conditions that you define. Only products that match all inclusion conditions appear in recommendations. Products that match any of the exclusion conditions are not recommended.
 
@@ -26,9 +26,8 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 - `AND` - Joins two inclusion-filtering conditions
 - `OR` - Joins two exclusion-filtering conditions
 
-## Types of filters {#filtertypes}
+## Types of filters
 
-NEED NEW SCREENSHOT
 ![Filters](../../assets/rec-conditions.png)
 
 ### Product
@@ -45,3 +44,4 @@ A filter based on the product price uses the final price to perform the comparis
 
 ### Attribute
 
+You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.

@@ -1,9 +1,9 @@
 ---
-title: Search performance
+title: Search Performance
 description: The Search performance page provides insight into the search terms that shoppers use.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Search performance
+# Search Performance
 
 The *Search performance* page provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Search performance page provides a snapshot of search metrics for a specific date range and includes the following reports:
 
@@ -13,15 +13,21 @@ The *Search performance* page provides insight into the search terms that shoppe
 - Conversion rate
 - Zero results rate
 
-!!!ADD WORKSPACE SCREENSHOT!!!
+![Search Performance](../assets/search-performance.png){zoomable="yes"}
 
 >[!NOTE]
 >
 >The Search performance page is updated every 12 hours.
 
+## Choose the **Catalog view**
+
+Select the [catalog view](../setup/catalog-view.md) to see specific search performance results.
+
+![Catalog View](../assets/catalog-view.png)
+
 ## View a report
 
-To enter the **Date range**, click the calendar and do one of the following:
+Click the calendar and do one of the following:
 
 - To specify a single date, double-click the date on the calendar.
 - To specify a range of dates, click the first and last date on the calendar.
@@ -30,7 +36,9 @@ To enter the **Date range**, click the calendar and do one of the following:
 >
 >The range of dates cannot exceed one year.
 
-## Ways to improve search performance
+Click **[!UICONTROL Export to CSV]** to generate a CSV file of your search performance.
+
+## How to improve search performance
 
 The following section provides strategies you can use to enhance your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates.
 
@@ -118,6 +126,6 @@ Learn more about product attributes for search:
 
 | Reports | Description|
 |--- |--- |
-| Unique searches | Lists the unique search queries used during the specified date range. The report data is calculated the same way as unique search snapshot data. If a shopper types the same search query twice, but more than an hour apart, the search is considered to be two unique searches. Report limit: Top 500 terms |
 | Zero results | Lists the search queries that return no results and the number of times used during the specified date range. Report limit: Top 500 terms |
 | Popular results | Lists the names of products that received the most views during the specified date range. Popular results are calculated based on impressions only and are not affected by the number of clicks or revenue generated. Report limit: Top 500 terms |
+| Unique searches | Lists the unique search queries used during the specified date range. The report data is calculated the same way as unique search snapshot data. If a shopper types the same search query twice, but more than an hour apart, the search is considered to be two unique searches. Report limit: Top 500 terms |

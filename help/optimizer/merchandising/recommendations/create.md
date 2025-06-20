@@ -1,9 +1,9 @@
 ---
-title: Create and Edit Recommendation
-description: Learn how to create and edit a product recommendation unit.
+title: Create and Manage Recommendations
+description: Learn how to create and manage recommendations.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Create New Recommendation
+# Create and Manage Recommendations
 
 When you create a recommendation, you create a _recommendation unit_, or widget, that contains the recommended product _items_.
 
@@ -40,22 +40,24 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 >
 >Some browsers might block critical scripts that prevent Recommendations from working as expected.
 
-## Edit existing recommendation
+## Manage existing recommendations
 
-The _Edit Recommendation_ page gives you the ability to adjust the individual settings that make up the recommendation. All settings can be edited except the recommendation type.
+You can edit, deactivate, or delete an existing recommendation.
 
 1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations**.
 
-1. Select the recommendation that you want to edit.
+1. Select the recommendation that you want to modify.
 
 1. Click the (![More selector](../../assets/btn-more.png)) more selector.
 
-1. On the menu, click **Edit**. Then, adjust the following settings as needed:
+1. In the menu, you can **Deactivate**, **Delete**, or **Edit** the recommendation. If you select **Edit**, you can adjust the following settings as needed:
 
    - Recommendation name
    - Storefront label
    - Number of products
    - Filter products
+   
+   You cannot change the recommendation type.
 
 1. When complete, click **Save Changes**.
 

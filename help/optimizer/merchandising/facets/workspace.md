@@ -9,7 +9,7 @@ The *Facets* workspace lists all facets that are currently available and provide
 
 ![Facet Workspace](../../assets/facet-workspace.png)
 
-## Field Descriptions
+## Field descriptions
 
 | Field | Description |
 |--- |--- |

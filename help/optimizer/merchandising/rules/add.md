@@ -1,16 +1,16 @@
 ---
-title: Add Rules
-description: Learn how to create Merchandising rules rules.
+title: Create and Manage Rules
+description: Learn how to create and manage merchandising rules.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
-# Add Rules
+# Create and Manage Rules
 
 To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated events. Then, complete the rule details, test the results, and publish the rule.
 
-## Add a rule
+## Create a rule
 
-1. In the left rail, go to _Merchandising_ > **Merchandising rules**.
-1. Click **Add rule** to launch the rule editor.
+1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
+1. Click **Create rule** to launch the rule editor.
 
 ## Rule type
 
@@ -25,10 +25,6 @@ Choose the default Intelligent ranking type and any manual rankings you want app
 Conditions are the requirements to trigger an event. A rule can have up to ten conditions and 25 events. A default rule cannot have any conditions.
 
 ![Rule - Build your rule](../../assets/rules-add-workspace.png)
-
->[!NOTE]
->
->Currently, it is not possible to target rules to a specific customer group.
 
 ### Single condition
 
@@ -90,7 +86,7 @@ Select the type of strategy for the rule. The **Test your rule** window displays
 
 ## Manual Ranking
 
-Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
+**Manual ranking** are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
 - Boost - Moves a product higher in the search results.
 - Bury - Moves a SKU lower in the search results.
@@ -142,6 +138,33 @@ The information that is entered here appears in the [Rule Details](workspace.md)
 >[!NOTE]
 >
 >Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, rules and manual rankings are no longer in effect.
+
+## Edit, view, and delete rules
+
+Follow these instructions to update the properties of existing rules.
+
+### Edit rule
+
+1. On the *Merchandising rules* workspace, find the rule in the grid that you want to edit and click **More** (...) options.
+1. Click **Edit** to access the rule editor.
+1. Update the conditions, operators, and events as needed.
+1. Update the name, start and end date, and description fields as needed. All rule names must be unique.
+1. Test the rule.
+1. Publish the changes.
+   The rule is added to the list in the *Rules* workspace. Although active rules go into effect immediately, it might take up to 15 minutes for cached query results in the storefront to be refreshed.
+
+### View details
+
+This option provides a quick way to see all the rule parameters, while staying on the Rules table.
+
+1. On the *Merchandising rules* worksapce, find the rule in the grid that you want to edit and click **More** (...) options.
+1. Click **View details** to view the rule parameters.
+1. Choose **Edit** or **Delete**, or click the X to close the panel.
+
+### Delete rule
+
+1. On the *Rules* workspace, find the rule in the grid that you want to edit and click **More** (...) options.
+1. Click **Delete**.
 
 ## Field descriptions
 

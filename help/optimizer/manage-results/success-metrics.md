@@ -9,49 +9,30 @@ This page provides an overview of the key performance metrics for your store. Th
 
 ![Success metrics report](../assets/success-metrics.png)
 
+The metrics in the report are pulled from storefront event data. [Learn more](../setup/events/overview.md) about the event data collected.
 
+## Generate a report
 
-Report Configuration
+1. From the left rail, select _Managing Results_ > **Success Metrics**.
+1. At the top of the page, select the catalog view from which to generate the report. In the sample image above, the catalog view selected is a fictious automobile conglomerate named **Carvelo**.
+1. Under **Report configuration** specify the **Date range**, **Country**, based on your locale setting, and **Currency**.
+1. Click **[!UICONTROL Apply]**.
 
-- Date Range
-- Catalog View
-- Currency
+    The **Top highlights**, **Revenue**, **Converstion**, **Engagement**, **Acquisition**, and **Bounce Rate** all update based on your report configuration.
 
-Export
+1. Click **[!UICONTROL Export]** to save the report as a PDF.
 
-Top Highights
+## Field descriptions
 
-Revenue
-
-Conversion
-
-Engagement
-
-Acquisition
-
-Bounce Rate
-
-
-<!--
-Develop a tool that generates a PDF report comparing before and after KPIs to demonstrate the success of ComOpt project launch. The report should be visually appealing, data-driven, and easy to interpret for a business people.
-
-catalog source
-Accept before and after data for the following KPIs:
-Revenue (Total revenue in currency)
-Conversion Rate (CVR) (Percentage of visitors completing a purchase)
-Search CVR (Conversion rate from site search)
-Visits (New & Returning customers separately)
-Bounce Rate (Percentage of visitors leaving after one page)
-Calculate percentage change for each KPI.
-Highlight positive (green) and negative (red) changes.
-PDF Report Generation
-Branded Cover Page with: company Logo, Report Title (e.g., Project Launch Impact Analysis), Date Range & Report Generation Date
-Summary Section
-Short textual summary of the results.
-Key highlights (e.g., "Revenue increased by 15%, CVR improved by 5%").
-Visual Data Representation
-Before & After KPI Table with percentage changes.
-Bar Charts & Line Graphs to show trends.
-Pie Chart (if applicable, e.g., new vs. returning customer distribution).
-UX need to define visual based on described requirement.
--->
+|Field|Description|
+|---|---|
+|Date range|Options include **Past 3 months**, **Past 7 days**, **Past 30 days**, **Past 6 months**, **Past 12 months**, and **Year to date**. |
+|Country|Based on the catalog source specified for your [catalog view](../setup/catalog-view.md).|
+|Currency|The currency specified for your catalog view.|
+|Export|Saves the report as a PDF.|
+|Top Highights|Summarizes metrics from each of the other tabs.|
+|Revenue|The total amount of money generated from sales transactions. This is the primary financial metric that shows how much money your business is making from customer purchases.|
+|Conversion|The percentage of visitors to your site who complete a purchase. This metric indicates how effectively your site converts browsers into buyers.|
+|Engagement| Measures how actively users interact with your site, including metrics like time on site, pages per session, click-through rates, and social interactions. Higher engagement typically indicates users find your content valuable and are more likely to convert.|
+|Acquisition|Refers to the process and cost of acquiring new customers. This includes metrics like customer acquisition cost (CAC), traffic sources, and the effectiveness of marketing channels in bringing new visitors to your site.|
+|Bounce Rate|The percentage of visitors who leave your site after viewing only one page. A high bounce rate (typically above 50-60%) suggests users aren't finding what they're looking for or the page doesn't meet their expectations, which can negatively impact conversions and revenue.|

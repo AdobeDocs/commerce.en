@@ -1,7 +1,6 @@
 ---
 user-guide-title: "[!DNL Adobe Commerce Optimizer] Guide"
 user-guide-description: Documentation and resources for [!DNL Adobe Commerce Optimizer].
-hide: yes
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
@@ -20,27 +19,25 @@ recommendations: noDisplay
    - [Overview](./merchandising/overview.md)
    - Recommendations {#recommendations}
       - [Overview](./merchandising/recommendations/overview.md)
-      - [Create and Edit](./merchandising/recommendations/create.md)
+      - [Create and Manage](./merchandising/recommendations/create.md)
       - [Filters](./merchandising/recommendations/filters.md)
       - [Types](./merchandising/recommendations/types.md)
       - [Best Practices](./merchandising/recommendations/best-practice.md)
-   - Rules {#rules}
+   - Merchandising Rules {#rules}
       - [Overview](./merchandising/rules/overview.md)
       - [Workspace](./merchandising/rules/workspace.md)
-      - [Add](./merchandising/rules/add.md)
-      - [Manage](./merchandising/rules/manage.md)
+      - [Create and Manage](./merchandising/rules/add.md)
       - [Best Practices](./merchandising/rules/best-practice.md)
    - Facets {#facets}
       - [Overview](./merchandising/facets/overview.md)
       - [Workspace](./merchandising/facets/workspace.md)
-      - [Types](./merchandising/facets/type.md)
       - [Create and Manage](./merchandising/facets/add.md)
+      - [Types](./merchandising/facets/type.md)
       - [Best Practices](./merchandising/facets/best-practice.md)
    - Synonyms {#synonyms}
       - [Overview](./merchandising/synonyms/overview.md)
+      - [Create and Manage](./merchandising/synonyms/add.md)
       - [Types](./merchandising/synonyms/type.md)
-      - [Add](./merchandising/synonyms/add.md)
-      - [Manage](./merchandising/synonyms/manage.md)
       - [Best Practices](./merchandising/synonyms/best-practice.md)
 - Store Setup {#setup}
    - [Catalog Views](./setup/catalog-view.md)
