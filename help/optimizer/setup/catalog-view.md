@@ -29,8 +29,6 @@ In this section, you create a catalog view, select a [policy](policies.md), and 
 
 The Catalog views page updates to display the new catalog view.​
 
-  ![Updated Catalog views Page](../assets/updated-catalog-view-list.png)
-
 After you complete these steps, the new catalog view is configured to display products and pricing based on the catalog sources and policies you selected.
 
 ## Catalog Views
