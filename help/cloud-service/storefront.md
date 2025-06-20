@@ -66,6 +66,8 @@ Before running the `aio commerce init` command, you must complete the following 
     aio login
     ```
 
+    If the `aio login` command does not launch a browser window, refer to the [Troubleshooting](#troubleshooting) section.
+
 1. Select the IMS org, project, and workspace. Use the arrow keys and press **Enter** to make your selection. For more information on `aio` commands, refer to the [Adobe I/O CLI documentation](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands).
 
     ```bash
@@ -118,3 +120,29 @@ Running the following command will create a scaffolding for your Commerce storef
    * Run locally: `aio commerce:dev`
 
 To customize your storefront, refer to the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
+
+## Troubleshooting
+
+If you run into issues with the `aio login` command, Adobe recommends fully signing out of the CLI and browser and then re-logging in.
+
+1. To log ouf of the CLI, run:
+
+    ```bash
+    aio logout
+    ```
+
+1. In your browser, navigate to the [Adobe Developer Console](https://developer.adobe.com/console), click your profile icon in the top-right corner, and select **Sign out**.
+
+1. Return to the CLI and run the `aio login` command again, which should launch a browser window to log in. Then you can proceed selecting your org, project, and workspace.
+
+    ```bash
+    aio console org select
+    ```
+
+    ```bash
+    aio console workspace select
+    ```
+
+    ```bash
+    aio console project select
+    ```
