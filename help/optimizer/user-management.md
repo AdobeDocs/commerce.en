@@ -2,6 +2,7 @@
 title: User management
 description: Learn how to manage users in [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 ---
 # User management
 
@@ -75,4 +76,3 @@ You can add multiple users more efficiently with one of the following methods:
 
 * Use the **Add Users by CSV** feature in the Adobe Admin Console to perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 * Add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then, add the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product to the user group.
-

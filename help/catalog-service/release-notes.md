@@ -43,7 +43,7 @@ _August 13, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
 
 ### V1.22 Release
 
@@ -51,7 +51,7 @@ _August 13, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
 
 ### V1.19 Release
 
@@ -88,7 +88,7 @@ _April 11, 2024_
 
 ![New](../assets/new.svg) Added support for PHP 8.3.
 
-![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) and [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) queries now return customizable options data for both simple and complex products.<!--DATA-5538-->
+![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) and [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) queries now return customizable options data for both simple and complex products.<!--DATA-5538-->
 
 ### V1.17 Release
 
@@ -145,7 +145,7 @@ _July 18, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) GraphQL query for Product Recommendations.
+![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/recommendations/) GraphQL query for Product Recommendations.
 
 ### V1.10 Release
 
@@ -170,7 +170,7 @@ _March 28, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query.
+![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
 ![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
 
 ### V1.5 Release
@@ -179,7 +179,7 @@ _March 6, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL functionality.
+![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
 
 ### V1.4 Release

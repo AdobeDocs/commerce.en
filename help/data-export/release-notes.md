@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.4.6 Release
+
+![Fix](../assets/fix.svg) Export Adobe Commerce downloadable product data using the `ac_downloadable` attribute for use with Adobe Commerce Optimizer.. <!--MDEE-1043-->
+![Fix](../assets/fix.svg) Critical installation error fix for Adobe Commerce version 2.4.4. <!--MDEE-1074-->
+
 ## 103.4.5 Release
 
 ![New](../assets/new.svg) SaaS data export now supports the Adobe Commerce `giftcard` product type. In the data feed, Gift card products are exported as simple products with the product attribute type `ac_giftcard`. <!--MDEE-1042-->

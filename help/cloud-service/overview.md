@@ -55,7 +55,7 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 
 Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
-See [asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) to learn more.
+See the [Product Visuals](../product-visuals/overview.md) guide to learn more.
 
 ## Developer Platform
 
@@ -106,7 +106,7 @@ The typical upgrade process for Adobe Commerce on Cloud involved creating backup
 
 ### Third-party integrations
 
-Developers can use comprehensive [GraphQL and REST APIs](https://developer.adobe.com/commerce/services/cloud/guides/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
+Developers can use comprehensive [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) and [REST APIs](https://developer.adobe.com/commerce/webapi/rest/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
 
 <!-- ## Experience Cloud integration
 
