@@ -130,7 +130,7 @@ At the end of this section, Celport will be up and running ready to sell Carvelo
 
 Let's create a new policy called *Celport part categories* to filter the SKUs that the Celport dealer sells, which include brake and suspension parts.
 
-1. In the left navigation, expand the _Store setup_ section and click on **[!UICONTROL Policies]**.
+1. In the left rail, expand the _Store setup_ section and click on **[!UICONTROL Policies]**.
 
 1. Click **[!UICONTROL Create Policy]**.
 
@@ -175,7 +175,7 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
 
 Create a new catalog view for the *Celport* dealer and link the following policies: *East Coast Inc brands* and *Celport Part Categories*.
 
-1. In the left navigation, expand the _Store setup_ section and click **[!UICONTROL Catalog views]**.
+1. In the left rail, expand the _Store setup_ section and click **[!UICONTROL Catalog views]**.
 
     Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *Global*.
 

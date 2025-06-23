@@ -12,21 +12,25 @@ To build a rule, the first step is to use the rule editor to define the conditio
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
 1. Click **Create rule** to launch the rule editor.
 
-## Rule type
+![Create Rule](../../assets/create-rule.png)
 
-A Search query is where you define a specific search term, conditions, and ranking types.
+In the **Build your rule** section, you define specific search criteria, conditions, and ranking types.
 
-A Default rule can be set which is applied to all queries, unless a more specific search query is defined. Only one default rule can be set and it cannot contain any conditions. If you select Default, the Conditions interface is not displayed.
+1. In the **[!UICONTROL Name]** field, enter a name for the rule. All rule names must be unique.
+1. In the **[!UICONTROL Description]** field, enter a description for the rule.
+1. In the **[!UICONTROL Date range]** field, specify the date or range of dates you want the rule to be active.
+1. In the **[!UICONTROL Rule applies to]** section, you have two options: **[!UICONTROL All product listings]** or **[!UICONTROL Specific conditions]**.
 
-Choose the default Intelligent ranking type and any manual rankings you want applied to all default searches. Manual rankings are always applied.
+   - **All product listings** - This is essentially your default rule and is applied to all search queries, unless a more specific search query is defined. You can only create one default rule and it cannot contain any conditions. Choose the Intelligent ranking type and any manual rankings you want applied to all default searches.
+   - **Specific conditions** - See the next section to learn about the types of conditions you can set for your rule.
 
-## Conditions
+### Conditions
 
 Conditions are the requirements to trigger an event. A rule can have up to ten conditions and 25 events. A default rule cannot have any conditions.
 
-![Rule - Build your rule](../../assets/rules-add-workspace.png)
+![Select Rule Condition](../../assets/rule-set-condition.png)
 
-### Single condition
+#### Single condition
 
 1. Under *Build your rule*, select the **Condition** to be met, and follow the instructions to complete the statement.
 
@@ -35,15 +39,13 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
    - Search query starts with - Enter a character or string of text that must be at the beginning of the shopper's query.
    - Search query ends with - Enter a character or string of text that must be at the end of the shopper's query.
 
-   The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper    right to change the number of products in each row.
-
-   ![Rule - simple](../../assets/rule-simple-test.png)
+   The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper right to change the number of products in each row.
 
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
 
-### Multiple conditions
+#### Multiple conditions
 
 1. To build a rule with multiple conditions, click **Add condition**.
    A rule can have up to ten conditions. The logical operator that joins two conditions is based on the current *Match* setting. By default, *Match* is `All` and the logical operator is `AND`.
@@ -59,16 +61,14 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and is triggered more often in the storefront than the other.
 
-   ![Rules - Match](../../assets/rules-match.png)
-
 1. To add another condition, click **Add condition** and repeat the process.
 
-## Intelligent ranking
+### Intelligent ranking
 
 Intelligent ranking combines user behaviors and site statistics to determine product ranking.
 Store owners can set up the following types of ranking strategies:
 
-![Rules - Match](../../assets/rules-ranking-type.png)
+![Intelligent Rankings](../../assets/rule-intelligent-ranking.png)
 
 - Most purchased: This ranks products by total purchases per SKU in the previous 7 days.
 - Most added to cart - Ranks in order of total "Add to Cart" activities in the previous 7 days.
@@ -79,12 +79,12 @@ Store owners can set up the following types of ranking strategies:
 
 Select the type of strategy for the rule. The **Test your rule** window displays the expected results.
 
-### Caveats
+#### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
 - To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any [product attributes](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) that are used for search or filtering (facets) is `5` or less.
 
-## Manual Ranking
+### Manual Ranking
 
 **Manual ranking** are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
@@ -96,8 +96,6 @@ Select the type of strategy for the rule. The **Test your rule** window displays
 The easiest way to pin a product is by drag and drop.
 
 1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Postion fields are automatically populated in the Events pane.
-
-   ![Rules - Match](../../assets/rule-event-pin-product.png)
 
 You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
 
@@ -113,19 +111,7 @@ Or events can be set manually:
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
-## Additional details
-
-The information that is entered here appears in the [Rule Details](workspace.md) panel.
-
-1. Under *Details*, enter a **Name** for the rule. All rule names must be unique.
-1. Enter a brief **Description** of the rule.
-1. Enter the **Start Date** and **End Date** for the rule to be active or choose the dates from the calendar.
-
-   To select a range of dates, click the first date and drag to select the range.
-
-   ![Rule - Complete](../../assets/rule-add-details.png)
-
-## Finalizing the rule
+### Finalizing the rule
 
 1. Examine the results of the rule in the test pane.
 1. If the rule has multiple queries, test each one that might be affected by the rule.
@@ -155,7 +141,7 @@ Follow these instructions to update the properties of existing rules.
 
 ### View details
 
-This option provides a quick way to see all the rule parameters, while staying on the Rules table.
+This option provides a quick way to see all the rule parameters, while staying on the *Rules* table.
 
 1. On the *Merchandising rules* worksapce, find the rule in the grid that you want to edit and click **More** (...) options.
 1. Click **View details** to view the rule parameters.

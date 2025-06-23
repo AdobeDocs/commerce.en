@@ -32,29 +32,21 @@ Watch the following video for a high-level overview of [!DNL Adobe Commerce Opti
 
 When you first launch [!DNL Adobe Commerce Optimizer], you see the following:
 
->[!NOTE]
->
->This image is an example of what [!DNL Adobe Commerce Optimizer] might look like and is subject to change.
-
 ![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png){zoomable="yes"}
 
 >[!BEGINTABS]
 
 >[!TAB Home]
 
-Preview key metrics and activities for your store. The home page also includes quick links to 
+Preview key metrics and activities for your store. The home page also includes quick links to configure search and recommendations.
 
 >[!TAB Success metrics report]
 
-ADD DESCRIPTION
+This page provides an overview of the key performance metrics for your store. The goal is for you to quickly understand the results of implementing [!DNL Adobe Commerce Optimizer] then help you and your team identify opportunities for growth, and highlight areas for optimization.
 
 >[!TAB Search performance]
 
-ADD DESCRIPTION
-
->[!TAB Recommendations performance]
-
-ADD DESCRIPTION
+The *Search performance* page provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate.
 
 >[!TAB Merchandising]
 
