@@ -6,10 +6,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Shared responsibility security and operational model
 
-{{accs-early-access}}
-
-[!DNL Adobe Commerce Optimizer] is an on-demand service that relies on a shared responsibility security and operational model. These responsibilities are shared between Adobe and customers. Each party bears distinct responsibility for securing and operating the Adobe Commerce application.  
-
 >[!BEGINSHADEBOX]
 
 The following summary tables use the RACI model to show the security responsibilities shared between Adobe and customers.
