@@ -15,9 +15,9 @@ The *Search performance* page provides insight into the search terms that shoppe
 
 ![Search Performance](../assets/search-performance.png){zoomable="yes"}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The Search performance page is updated every 12 hours.
+>If you do not see any search performance metrics, make sure search event data is being [collected](../setup/events/overview.md).
 
 ## Choose the **Catalog view**
 
