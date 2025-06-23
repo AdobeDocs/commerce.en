@@ -6,7 +6,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Onboarding and Installation
 
-Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). The Catalog Service is delivered as a composer metapackage from the repo.magento.com repository.
+Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). The Catalog Service is delivered as a composer metapackage from the repo.magento.com repository.
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ From the Commerce Admin, you can monitor the synchronization process using the [
 
 The [!DNL Catalog Service] GraphQL API is accessible from the ` https://catalog-service.adobe.io/graphql` endpoint using POST commands over HTTPS.
 
-In your GraphQL queries, you must specify multiple HTTP headers including the public API key you added to the Adobe Commerce Services Connector configuration in the Admin. For details, see the [Storefront Services GraphQL](https://developer.adobe.com/commerce/services/graphql/) documentation.
+In your GraphQL queries, you must specify multiple HTTP headers including the public API key you added to the Adobe Commerce Services Connector configuration in the Admin. For details, see the [Storefront Services GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/) documentation.
 
 ### Firewall configuration
 
