@@ -34,7 +34,7 @@ role: Architect
 * **Edge Delivery Services**: Impact on front-end performance and deployment.
 
 **New tooling & concepts**
-* [Adobe App Builder](https://developer.adobe.com/app-builder/) and [API Mesh](https://developer.adobe.com/graphql-mesh-gateway)
+* [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../optimizer/overview.md)
 * [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Self-service provisioning via [Cloud Manager](./getting-started.md#create-an-instance)
@@ -133,82 +133,99 @@ This phase is critical for minimizing risks and establishing a clear migration p
 * Provision your [!DNL Adobe Commerce as a Cloud Service] sandbox and development environments with Adobe Cloud Manager.
 * Familiarize yourself with the new environment variables and configuration management.
 
-### Incremental migration phase
+### Incremental migration phases
 
-The following steps outline the development and execution process of the migration using an incremental approach:
+**Strategic refactoring and externalization**
 
-#### Phase 1 - foundational migration and storefront POC
+This phase consists of the core of the migration, focusing on adapting your codebase to the [!DNL Adobe Commerce as a Cloud Service] cloud-native paradigm. This involves strategically adopting new Adobe services and moving custom logic out of the core Commerce platform.
 
-**Code refactoring & customization strategy:**
+#### 1. Migrate "in-process" customizations and extensions to App Builder
 
-* **Identify and remove core overrides:** Prioritize removing or re-implementing any direct core Adobe Commerce code modifications. These are mostly incompatible with [!DNL Adobe Commerce as a Cloud Service]'s locked core.
-* **Refactor custom modules:** Adapt custom modules to adhere to [!DNL Adobe Commerce as a Cloud Service] extensibility patterns (service contracts, plugins, events).
-* **Analyze third-party extensions:** Replace with [!DNL Adobe Commerce as a Cloud Service] compatible versions or custom integrations with App Builder.
-* **Implement new [!DNL Adobe Commerce as a Cloud Service] storefront front-end components:** (optional, but recommended)
-  * Start with Commerce Storefront powered by Edge Delivery Services or custom headless storefront.
-  * Connect to [!DNL Adobe Commerce as a Cloud Service] using GraphQL APIs.
-  * Develop basic product display, category listing, and non-transactional functionality.
+This is a crucial phase for achieving a "locked core" and future-proofing your solution, central to the [!DNL Adobe Commerce as a Cloud Service] architectural philosophy.
 
-**Data migration preparation:**
+* **Externalize complex logic to App Builder**: Analyze existing custom modules and third-party extensions within your PaaS codebase. For complex business logic, bespoke integrations, or microservices that do not require direct, in-process manipulation of the core Commerce data model, refactor and re-platform them as serverless applications within Adobe Developer App Builder.
+* **Leverage API Mesh**: For scenarios requiring data from multiple backend systems (for example, your PaaS Commerce backend, ERP, CRM, and custom App Builder microservices), implement an API Mesh layer within App Builder. This consolidates disparate APIs into a single, performant GraphQL endpoint consumed by your new storefront or other services, simplifying complex data fetching.
+* **Event-driven architecture**: Utilize Adobe I/O Events to trigger App Builder actions based on events occurring in your PaaS instance (for example, product updates, customer registrations, order status changes) or other connected systems. This promotes asynchronous communication, reduces tight coupling, and enhances system resilience.
 
-* Clean and optimize existing data.
-* Identify critical data sets for initial migration (such as products and categories).
-* Familiarize yourself with Adobe's recommended data migration tools.
+**Benefit**: This step significantly reduces technical debt associated with deeply embedded customizations, dramatically improves upgradeability of your core Commerce instance, enhances the scalability and independent deployability of custom logic, and promotes faster development cycles for extensions.
 
-**Basic [!DNL Adobe Commerce as a Cloud Service] environment setup:**
+#### 2. Adopt SaaS-based Adobe Commerce merchandising services and integrate catalog data
 
-* Configure core [!DNL Adobe Commerce as a Cloud Service] settings (such as store views and basic locales).
-* Establish continuous integration/continuous deployment (CI/CD) pipelines with Cloud Manager.
+This is a critical initial integration point with two options regarding catalog data management:
 
-#### Phase 2 - core Commerce functionality and integrations
+**Option 1 (transitional) - Leverage existing Catalog SaaS service integrated with PaaS backend**
 
-**Product and catalog migration:**
+This option serves as a transitional step, building upon an existing integration where your PaaS backend populates an existing instance of the Adobe Commerce Catalog SaaS service.
 
-* Migrate product data (attributes, images, inventory) to [!DNL Adobe Commerce as a Cloud Service].
-* Leverage new catalog management features.
-* Integrate with existing PIM systems (if applicable) using App Builder or API Mesh.
+* **Catalog data synchronization**: Ensure your Adobe Commerce PaaS instance continues to synchronize product and catalog data to your existing Adobe Commerce Catalog SaaS service. This typically relies on established connectors or modules within your PaaS instance. The Catalog SaaS service remains the authoritative source for search and merchandising functions, deriving its data from your PaaS backend.
+* **API Mesh for optimization**: While the headless storefront (on EDS) and other services could directly consume data from the Catalog SaaS service, it is highly recommended to use API Mesh (within App Builder). API Mesh can unify APIs from the Catalog SaaS service with other necessary APIs from your PaaS backend (for example, real-time inventory checks from the transactional database or custom product attributes not fully replicated to the Catalog SaaS service) into a single, performant GraphQL endpoint. This also allows for centralized caching, authentication, and response transformation.
+* **Integrate Live Search and Product Recommendations**: Configure Live Search and Product Recommendations SaaS services to ingest catalog data directly from your existing Adobe Commerce Catalog SaaS service, which in turn is populated by your PaaS backend.
 
-**Customer and order data migration:**
+**Benefit**: This provides a faster path to a headless storefront and advanced SaaS merchandising features by leveraging an existing and operational Catalog SaaS service and its integration pipeline with your PaaS backend. However, it retains the dependency on the PaaS backend for the primary catalog data source and does not provide the multi-source aggregation capabilities inherent in the new Composable Catalog Data Model. This option is a valid stepping-stone towards a fuller composable architecture.
 
-* Migrate existing customer accounts and order history (consider the volume and business necessity).
-* Ensure customer password compatibility (or plan for password reset on first login).
+**Option 2 - Adopt the new Composable Catalog Data Model (CCDM)**
 
-**Payment and shipping integrations:**
+This is the strategic, future-proof approach for leveraging Adobe Commerce Optimizer. CCDM provides a flexible, scalable, and unified catalog service designed for multi-source data aggregation and dynamic merchandising.
 
-* Re-integrate existing payment gateways and shipping providers.
-* Leverage Adobe's Payment Services where applicable.
-* Implement custom integrations using App Builder, if needed.
+* **Data ingestion and unification**
+  * Begin by ingesting product and catalog data from your existing Adobe Commerce PaaS instance (and/or other PIM/ERP systems) into the new Composable Catalog Data Model (CCDM).
+  * Map existing product attributes to the CCDM's flexible schema. Prioritize critical product data for initial ingestion.
+  * Establish robust data pipelines for continuous synchronization. This can involve:
+    * **Event-driven** (through App Builder): Utilize Adobe I/O Events from your PaaS instance to trigger custom Adobe App Builder applications. These applications would transform and push data changes (create, update, and delete) to the CCDM through its APIs.
+    * **Batch ingestion**: For large initial loads or periodic bulk updates, use secure file transfers (for example, CSV or JSON) to a staging area, processed by Adobe Experience Platform (AEP) ingestion services into CCDM.
+    * **Direct API integration** (with App Builder orchestration): For more complex scenarios, App Builder can act as an orchestration layer, making direct API calls to your PaaS backend, transforming the data, and pushing it to CCDM.
+* **Channel and policy definition**: Configure channels (logical groupings for unique catalog presentation, such as store views, regions, and B2B/B2C segments) and define policies (rule sets for product presentation, filtering, and merchandising) within the CCDM. This enables dynamic control over product assortments and display logic per channel.
+* **Integrate Live Search and Product Recommendations**: Once catalog data is present in CCDM, integrate Adobe's SaaS-based Live Search and Product Recommendations services. These leverage Adobe Sensei AI and machine learning models for superior search relevance and personalized recommendations, consuming data directly from the CCDM.
 
-**Search and merchandising:**
+**Benefit**: By abstracting catalog management and discovery into CCDM and associated SaaS services, you achieve improved performance, gain AI-driven merchandising capabilities, significantly offload read operations from your legacy backend, and enable a robust "peel-off" of the top-of-funnel experience.
 
-* Integrate with Adobe Commerce's Live Search and Product Recommendations (powered by AdobeSensei).
-* Configure merchandising rules and dynamic categories.
+#### 3. Build out your storefront on Edge Delivery Services (EDS)
 
-**Basic B2B functionality (if applicable):**
+With merchandising data pipelines established and customizations externalized, the focus shifts to building your high-performance frontend.
 
-* Migrate company accounts, shared catalogs, and pricing rules.
-* Configure quote management and purchase approvals.
+* **Initial setup**: Set up your project using the Adobe Commerce Storefront boilerplate for EDS. This provides a foundational headless frontend built on modern web technologies.
+* **Connect to catalog services and API Mesh**: Your EDS storefront will consume data primarily through GraphQL APIs:
+  * **Option 1**: From the existing Catalog SaaS service (through API Mesh) for product information and merchandising rules.
+  * **Option 2**: From CCDM for product information and merchandising rules.
+  * From API Mesh for any orchestrated data from your legacy backend (PaaS instance) or custom App Builder services (for example, real-time inventory, custom product attributes, and loyalty points display).
+* **Content migration (AEM Services)**: Migrate your existing static content (for example, "About Us" pages, blog posts, and marketing banners) into AEM Services, which powers the EDS storefront. Leverage AEM's content authoring capabilities and ensure assets are optimized for EDS delivery.
+* **Develop core UI components**: Build out critical user interface components for product display pages (PDPs), category listing pages (CLPs), and general content pages using EDS drop-in components and custom React/Vue components. Prioritize core commerce flows.
+* **Integration with existing cart/checkout**: Initially, the EDS storefront will orchestrate a handoff to your existing Adobe Commerce PaaS (or other third-party platform) for cart management and checkout. This typically involves:
+  * **Redirection**: Redirecting the user to the legacy platform's native cart and checkout URLs, passing necessary session and cart identifiers.
+  * **Direct API interaction** (with App Builder orchestration): Building custom cart and checkout UI components within EDS that interact directly with your PaaS backend's cart and checkout APIs. This often involves App Builder as a Backend-for-Frontend (BFF) to orchestrate calls to multiple backend services (for example, PaaS cart, payment gateways, and shipping calculators).
 
-**Performance optimization:**
+**Benefit**: Delivers a blazing-fast, SEO-optimized, and highly flexible storefront experience. This phase directly contributes to a superior customer experience and lays the groundwork for future frontend innovation.
 
-* Leverage Edge Delivery Services for front-end optimization.
-* Monitor performance metrics in the [!DNL Adobe Commerce as a Cloud Service] environment.
+#### 4. Data migration (phased process)
 
-#### Phase 3 - Advanced features and optimization
+Data migration is a critical and multi-faceted process that runs concurrently with refactoring and storefront development, ensuring data consistency and integrity.
 
-**Content management (CMS integration):**
+* **Clean and optimize existing data**: Prior to any large-scale migration, perform comprehensive data cleansing, de-duplication, and validation on your existing PaaS database. This proactive step is crucial to minimize the transfer of legacy data issues and ensure the quality of data in the new environment.
 
-* Leverage AEM Sites integration for rich content experiences (headless or hybrid).
+**Bulk data migrations**
 
-**Remaining integrations:**
+Bulk data migration involves taking a full data dump from your Adobe Commerce PaaS instance, transforming that entire dataset, and importing it into Adobe Commerce as a Cloud Service all at one time. This method is typically used for the initial population of data.
 
-* Migrate any remaining third-party integrations (ERP, CRM, OMS, and others) using App Builder and API Mesh.
-* Develop custom APIs or webhooks as needed.
+* **Tooling availability**: Dedicated tooling for customer use for first-party Commerce bulk data migrations will be available by request in mid-July 2025. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
 
-**User acceptance testing (UAT) and performance testing:**
+* **Process**:
+  * **Full data export**: Extract a complete dataset from your Adobe Commerce PaaS instance (for example, products, categories, customer accounts, historical order data, static blocks, and page content).
+  * **Data transformation**: Apply necessary transformations to align the extracted data with the schema requirements of the new Adobe Commerce as a Cloud Service components, including the Composable Catalog Data Model (CCDM) if adopted, and any other relevant Adobe services or databases. This may involve custom scripts or specialized data mapping tools.
+  * **Initial import**: Import the transformed full dataset into the respective components of Adobe Commerce as a Cloud Service. For product and category data, this populates the chosen catalog service (CCDM or existing Catalog SaaS). For customer and order data, this populates the transactional backend or associated services.
+  * **Validation**: Rigorously validate the imported data to ensure completeness, accuracy, and consistency across all new systems.
 
-* Thoroughly test all functionalities, user flows, and integrations.
-* Stress test to ensure [!DNL Adobe Commerce as a Cloud Service] can handle peak loads.
+**Iterative data migrations**
+
+Iterative data migrations focus on synchronizing incremental changes and deltas from the source PaaS instance to the new Cloud Service components, ensuring data freshness leading up to and after cutover.
+
+* **Tooling availability**: Tooling specifically designed for iterative data migrations will be available in the second half of 2025.
+
+* **Process**:
+  * **Delta identification**: Establish mechanisms to identify changes (creations, updates, and deletions) in critical data sets on your PaaS environment since the last sync. This can involve change data capture (CDC), timestamp comparisons, or event-based triggers.
+  * **Continuous synchronization**: Implement robust mechanisms for continuous, incremental data synchronization from your PaaS environment to the new Cloud Service components (for example, CCDM and transactional backend). This is crucial for maintaining data freshness and minimizing downtime during cutover.
+  * **Leveraging events**: Utilize Adobe I/O Events where possible to trigger App Builder actions for real-time or near real-time updates from your PaaS instance to the new services. For example, a product update in PaaS could trigger an event that updates the corresponding entry in CCDM.
+  * **API-driven updates**: For data that is not event-driven, use scheduled API calls (through App Builder or other integration platforms) to pull changes from PaaS and push them to the new systems.
+  * **Error handling and monitoring**: Implement robust error handling, logging, and monitoring for all iterative data pipelines to ensure data integrity is maintained throughout the process.
 
 ### Post-migration and ongoing operations
 
