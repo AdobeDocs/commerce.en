@@ -103,7 +103,7 @@ Ultimately, Carvelo has two major goals:
 
 ## 1. Access the [!DNL Adobe Commerce Optimizer] instance
 
-After you onboard to the Early Access program, Adobe sends an email that provides the URL to access the [!DNL Adobe Commerce Optimizer] instance provisioned for you. This instance is pre-configured with everything that you need to successfully complete the steps outlined in this tutorial, including catalog data that supports the Carvelo Automobile use case.
+Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](./get-started.md#access-an-instance.)
 
 When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
