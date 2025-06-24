@@ -11,7 +11,7 @@ The bulk data migration tool follows a distributed architecture that enables sec
 
 >[!NOTE]
 >
->The bulk data migration tool only supports migrating first-party core commerce data, no custom data migration is currently supported.
+>The bulk data migration tool only supports migrating first-party core commerce data. Custom data migration is not currently supported.
 
 The following image details the architecture and key components for using the Bulk data migration tool.
 
@@ -40,7 +40,7 @@ The availability of the bulk data migration tool is as follows:
 
 The solution implementer (SI) creates a target environment for the migration. This environment is used to store the data that is migrated from the source instance.
 
-1. Follow the steps in [Create an instance](../getting-started.md#create-an-instance) to create a new [!DNL Adobe Commerce as a Cloud Service] (SaaS) instance.
+First, [create a new [!DNL Adobe Commerce as a Cloud Service] (SaaS) instance](../getting-started.md#create-an-instance).
 
 ### Configure extraction tool
 
@@ -51,8 +51,8 @@ The extraction tool is used to extract data from the source instance.
    - Connection details to your existing MySQL database
    - The target tenant ID for your [!DNL Adobe Commerce as a Cloud Service] instance
    - Your IMS credentials, including:
-      - client ID
-      - client secret
+      - Client ID
+      - Client secret
       - IMS scopes
       - IMS URL
       - IMS organization ID
@@ -68,7 +68,7 @@ magento-cloud tunnel:open
 Then run the extraction tool, which will: 
 
 1. Connect to the PaaS database, analyze its schema, and compare it with the SaaS tenant schema details.
-1. Generate an extraction and transformation plan based the schema elements in common between PaaS and SaaS.
+1. Generate an extraction and transformation plan based on the common schema elements between PaaS and SaaS.
 1. Extract the data using Catalog Data Management Service (CDMS) authentication.
 
 ### Load data
