@@ -1,7 +1,7 @@
 ---
 title: Adobe Commerce SaaS vs PaaS comparison
 description: Compare Adobe Commerce SaaS vs PaaS models to determine the best implementation approach for your business needs.
-role: Architect, Developer
+role: Architect
 exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 ---
 # Feature comparison
@@ -37,7 +37,7 @@ The following table describes the features and replacement solutions available i
     <tbody>
         <tr>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital asset management</a></td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Product Visuals</a></td>
+            <td><a href="../product-visuals/overview.md">Product Visuals</a></td>
             <td>A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets.</td>
         </tr>
         <tr>
@@ -168,7 +168,7 @@ The following table compares platform capabilities and extensibility features to
             <td colspan="3">
                 <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
                 <br><br>
-                <sup>2</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
+                <sup>2</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
                 <br><br>
                 <sup>3</sup> Adobe is actively working Document DB integration to address persistent storage needs for SaaS. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
             </td>
