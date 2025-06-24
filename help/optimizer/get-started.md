@@ -71,7 +71,7 @@ The merchandiser uses shopper data and analytics to make strategic decisions abo
 
 1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager].
 
-   The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
+   The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce] instances that are available in your Adobe IMS organization, including both instances provisioned for [!DNL Adobe Commerce Optimizer] and [!DNL Adobe Commerce as a Cloud Service].
 
 1. Click [!UICONTROL **Add Instance**] in the top-right corner of the screen.
 
