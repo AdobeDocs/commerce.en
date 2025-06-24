@@ -44,7 +44,7 @@ The following section provides strategies you can use to enhance your site searc
 
 There are several key factors that determine the relevance and effectiveness of search results:
 
-- Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. To directly impact the success of your merchandising strategy:
+- Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to less relevant search outcomes. To directly impact the success of your merchandising strategy:
     - Set up the correct [attributes as searchable](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) with their corresponding weight.
     - Make sure that data within those attributes is relevant.
 - A well-designed search experience builds trust with customers and instills confidence that they will find what they need.

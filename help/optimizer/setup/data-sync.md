@@ -9,7 +9,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 The **Data Sync** page displays an overview of the synchronization status for product data transferred from your data source (your existing Commerce catalog, Product Information Management (PIM) system, Enterprise Resource Planning (ERP) system, and so on) into [!DNL Adobe Commerce Optimizer].
 
-The **Data Sync** page provides valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
+The **Data Sync** page provides valuable insights into the availability of product data for your storefront, ensuring that it can be promptly displayed to your shoppers.
 
 The **Data Sync** page is located at *Setup* > **Data sync**.
 
@@ -43,4 +43,4 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 
 >[!IMPORTANT]
 >
->The time it takes to complete the sync varies based on your catalog size and the volume of updated data.
+>The time it takes to complete the sync varies based on your catalog size and the volume of data updated.

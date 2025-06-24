@@ -57,7 +57,7 @@ Developers create projects and credentials, install extensions, ingest catalog d
 
     The catalog data that is ingested is visible in the [data sync](./setup/data-sync.md) page.
 
-- **Set up the storefront** - Before you set up the storefront, you must first create an instance, which is a task typically performed by your organization's [administrator](#administrator). With your instance created, you are ready to proceed [setting up](./storefront.md) your Commerce Storefront powered by Edge Delivery Services.
+- **Set up the storefront** - Before you set up the storefront, you must first create an instance, which is a task typically performed by your organization's [administrator](#administrator). With your instance created, you are ready to proceed with [setting up](./storefront.md) your Commerce Storefront powered by Edge Delivery Services.
 
 ### Merchandiser
 
@@ -100,7 +100,7 @@ The merchandiser uses shopper data and analytics to make strategic decisions abo
 
    The new instance is now available in Cloud Manager.
 
-1. To view instance details—including the GraphQL and Catalog Service endpoints, and the URL to access the Adobe Commerce Optimizer application—click the information icon next to the instance name.
+1. To view instance details—including the GraphQL and Catalog Service endpoints, the URL to access the Adobe Commerce Optimizer application, and the Instance ID (tenant ID)—click the information icon next to the instance name.
 
    ![Create Instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
 
@@ -112,6 +112,6 @@ The merchandiser uses shopper data and analytics to make strategic decisions abo
 
    The [!UICONTROL Commerce Cloud Manager] displays a list of instances that are available in your Adobe IMS organization.
 
-1. To open the [!UICONTROL Commerce Optimizer] for an instance, click the instance name.
+1. To open the [!UICONTROL Commerce Optimizer] application associated with an instance, click the instance name.
 
 
