@@ -1,11 +1,11 @@
 ---
 title: Success metrics report
-description: The Success metrics report page provides insight into the key performance metrics for your store.
+description: The Success metrics report page provides insight into the key performance metrics for your [!DNL Adobe Commerce Optimizer] store.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Success metrics report
 
-This page provides an overview of the key performance metrics for your store. The goal is for you to quickly understand the results of implementing [!DNL Adobe Commerce Optimizer] then help you and your team identify opportunities for growth, and highlight areas for optimization.
+This page provides an overview of the key performance metrics for your [!DNL Adobe Commerce Optimizer] store. The goal is for you to quickly understand the results of implementing [!DNL Adobe Commerce Optimizer] then help you and your team identify opportunities for growth, and highlight areas for optimization.
 
 ![Success metrics report](../assets/success-metrics.png)
 
