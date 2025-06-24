@@ -15,8 +15,8 @@ You can assign users to any of the following roles:
 
 - **Admin** - There are three different types of admin roles:
     - [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Adobe Admin Console.
-    * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console].
-    * [Product profile admins](#add-users-developers-and-product-profile-admins) - Product profile admins can manage users for the product in the [!DNL Adobe Admin Console].
+    - [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console].
+    - [Product profile admins](#add-users-developers-and-product-profile-admins) - Product profile admins can manage users for the product in the [!DNL Adobe Admin Console].
 
 ## Add a product admin
 
@@ -40,8 +40,8 @@ You can assign users to any of the following roles:
 >
 The following provisioning is required for user management:
 
-* IMS organization provisioned for [!DNL Adobe Commerce Optimizer]
-* An Adobe Experience Cloud account in the same IMS organization with the system or product admin role
+- IMS organization provisioned for [!DNL Adobe Commerce Optimizer]
+- An Adobe Experience Cloud account in the same IMS organization with the system or product admin role
   
 >[!ENDSHADEBOX]
 
