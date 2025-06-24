@@ -54,8 +54,10 @@ The extraction tool is used to extract data from the source instance.
       - Client ID
       - Client secret
       - IMS scopes
-      - IMS URL
+      - IMS URL - The base URL. For example, `https://ims-na1.adobelogin.com/`.
       - IMS organization ID
+
+   For IMS scopes and other values, select your OAuth type in the **Credentials** section inside your project in the [Adobe Developer Console](https://developer.adobe.com/console/). More information is provided in the `.example.env` file included with the extraction tool.
 
 ### Extract data
 
@@ -69,7 +71,7 @@ Then run the extraction tool, which will:
 
 1. Connect to the PaaS database, analyze its schema, and compare it with the SaaS tenant schema details.
 1. Generate an extraction and transformation plan based on the common schema elements between PaaS and SaaS.
-1. Extract the data using Catalog Data Management Service (CDMS) authentication.
+1. Extract the data using Catalog Data Management Service (CDMS).
 
 ### Load data
 
