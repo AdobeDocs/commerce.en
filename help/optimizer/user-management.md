@@ -47,7 +47,7 @@ The following provisioning is required for user management:
 
 Use the following instructions to add users and developers to the [!DNL Commerce Cloud Manager], where you manage your Commerce instances.
 
-1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
+1. Navigate to [Adobe Admin Console](https://adminconsole.adobe.com) and sign in with your Adobe ID.
 
 1. Select your organization.
 
