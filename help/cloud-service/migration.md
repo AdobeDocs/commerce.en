@@ -11,14 +11,6 @@ role: Architect
 
 [!DNL Adobe Commerce as a Cloud Service] provides a comprehensive guide for developers transitioning from an existing Adobe Commerce PaaS implementation to the new Adobe Commerce as a Cloud Service (SaaS) offering. Adobe Commerce as a Cloud Service represents a significant shift to a fully managed, versionless SaaS model, offering enhanced performance, scalability, simplified operations, and tighter integration with the broader Adobe Experience Cloud.
 
-## Key benefits of Adobe Commerce as a Cloud Service
-
-* **Automatic updates & maintenance** - Adobe manages core platform upgrades, patching, and security.
-* **Enhanced performance & scalability** - Leverages Edge Delivery Services and a cloud-native architecture for superior speed and dynamic scaling.
-* **Reduced TCO** - Eliminates the need for manual upgrades, patching, and significant infrastructure management.
-* **AI-powered tools** - Integrates with Adobe Sensei for features like Live Search, Product Recommendations, and generative AI content creation.
-* **Composable & headless capabilities** - Strong API-first design for flexible front-end development and integration.
-
 ## Understanding the shift - comparing PaaS and SaaS
 
 **Key differences**
@@ -117,7 +109,12 @@ This phase is critical for minimizing risks and establishing a clear migration p
 **Define migration scope and strategy:**
 
 * **Phased vs. all-at-once migration:** Evaluate the pros and cons of each approach.
-* **Identify core business processes:** Prioritize functionalities that must be migrated first.
+* **Identify core business processes:** Prioritize functionalities that must be migrated first, such as:
+  * Complex pricing rules
+  * Custom business rules applied before an order is officially placed or processed
+  * Complex tax calculations
+  * Address validations
+  * Custom logic triggered after an order is placed
 * **Headless vs. monolithic storefront:** Decision point for new storefront development or adapting existing storefronts.
 * **Integration strategy:** Determine how existing integrations will be re-platformed (API Mesh, App Builder, direct API).
 * **Data migration strategy:** Determine if you intend to migrate using full historical data, partial data, or no migrated data.
@@ -130,7 +127,6 @@ This phase is critical for minimizing risks and establishing a clear migration p
 **Environment setup & provisioning:**
 
 * Provision your [!DNL Adobe Commerce as a Cloud Service] sandbox and development environments with the Commerce Cloud Manager.
-* Familiarize yourself with the new environment variables and configuration management.
 
 ### Incremental migration phases
 
