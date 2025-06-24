@@ -7,8 +7,6 @@ role: Architect
 ---
 # Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
-{{accs-early-access}}
-
 [!DNL Adobe Commerce as a Cloud Service] provides a comprehensive guide for developers transitioning from an existing Adobe Commerce PaaS implementation to the new Adobe Commerce as a Cloud Service (SaaS) offering. Adobe Commerce as a Cloud Service represents a significant shift to a fully managed, versionless SaaS model, offering enhanced performance, scalability, simplified operations, and tighter integration with the broader Adobe Experience Cloud.
 
 >[!NOTE]
