@@ -5,7 +5,7 @@ exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Architect
 ---
-# Migration guide to [!DNL Adobe Commerce as a Cloud Service] overview
+# Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
 {{accs-early-access}}
 
@@ -23,14 +23,14 @@ role: Architect
 
 **Key differences**
 
-* **PaaS (Current)**: Merchant manages application code, upgrades, patching, infrastructure configuration within Adobe's hosted environment. Shared responsibility model for services (MySQL, Elasticsearch, and others).
-* **SaaS (New - [!DNL Adobe Commerce as a Cloud Service])**: Adobe fully manages the core application, infrastructure, and updates. Merchants focus on customization through extensibility points (APIs, App Builder, UI SDKs). Core application code is locked.
+* &#8203;<Edition name="paas" />**PaaS (Current)**: Merchant manages application code, upgrades, patching, infrastructure configuration within Adobe's hosted environment. [Shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) for services (MySQL, Elasticsearch, and others).
+* &#8203;<Edition name="saas" />**SaaS (New - [!DNL Adobe Commerce as a Cloud Service])**: Adobe fully manages the core application, infrastructure, and updates. Merchants focus on customization via extensibility points (APIs, App Builder, UI SDKs). Core application code is locked.
 
 **Architectural implications**
 
 * **Versionless platform**: Continuous updates mean no more major version upgrades for the core.
 * **Microservices & API-first**: Deeper reliance on APIs for extensibility and integration.
-* **Headless by default (optional)**: Strong support for decoupled storefronts (for example, PWA Studio).
+* **Headless by default (optional)**: Strong support for decoupled storefronts (for example, Commerce Storefront powered by Edge Delivery Services).
 * **Edge Delivery Services**: Impact on front-end performance and deployment.
 
 **New tooling & concepts**
@@ -85,14 +85,14 @@ The following phases describe the necessary steps and considerations for migrati
 
 This phase is critical for minimizing risks and establishing a clear migration path and identifying issues before they arise.
 
-**Discovery and audit of current environment:**
+**Discovery and audit of current environment**
 
 **Codebase analysis:**
 
 * Identify all custom modules, themes, and overrides.
 * Analyze core code modifications and determine which will need refactoring as part of migration.
 * Assess third-party extensions and determine compatibility with [!DNL Adobe Commerce as a Cloud Service]. Are there SaaS-compatible alternatives or do you need to create custom API integrations?
-* Identify any deprecated code or functionality.
+* Identify any deprecated code or functionality that will not be migrated.
 
 **Data audit:**
 
@@ -117,7 +117,7 @@ This phase is critical for minimizing risks and establishing a clear migration p
 
 **Defining migration scope and strategy:**
 
-* **Phased vs. all-at-once migration:** Discuss the pros and cons of each approach.
+* **Phased vs. all-at-once migration:** Evaluate the pros and cons of each approach.
 * **Identify core business processes:** Prioritize functionalities that must be migrated first.
 * **Headless vs. monolithic storefront:** Decision point for new storefront development or adapting existing storefronts.
 * **Integration strategy:** Determine how existing integrations will be re-platformed (API Mesh, App Builder, direct API).
@@ -153,7 +153,11 @@ This is a crucial phase for achieving a "locked core" and future-proofing your s
 
 This is a critical initial integration point with two options regarding catalog data management:
 
-**Option 1 (transitional) - Leverage existing Catalog SaaS service integrated with PaaS backend**
+>[!BEGINTABS]
+
+>[!TAB Option 1 - Existing Catalog SaaS service]
+
+**Leverage existing Catalog SaaS service integrated with PaaS backend**
 
 This option serves as a transitional step, building upon an existing integration where your PaaS backend populates an existing instance of the Adobe Commerce Catalog SaaS service.
 
@@ -163,7 +167,9 @@ This option serves as a transitional step, building upon an existing integration
 
 **Benefit**: This provides a faster path to a headless storefront and advanced SaaS merchandising features by leveraging an existing and operational Catalog SaaS service and its integration pipeline with your PaaS backend. However, it retains the dependency on the PaaS backend for the primary catalog data source and does not provide the multi-source aggregation capabilities inherent in the new Composable Catalog Data Model. This option is a valid stepping-stone towards a fuller composable architecture.
 
-**Option 2 - Adopt the new Composable Catalog Data Model (CCDM)**
+>[!TAB Option 2 - Composable Catalog Data Model]
+
+**Adopt the new Composable Catalog Data Model (CCDM)**
 
 This is the strategic, future-proof approach for leveraging Adobe Commerce Optimizer. CCDM provides a flexible, scalable, and unified catalog service designed for multi-source data aggregation and dynamic merchandising.
 
@@ -178,6 +184,8 @@ This is the strategic, future-proof approach for leveraging Adobe Commerce Optim
 * **Integrate Live Search and Product Recommendations**: Once catalog data is present in CCDM, integrate Adobe's SaaS-based Live Search and Product Recommendations services. These leverage Adobe Sensei AI and machine learning models for superior search relevance and personalized recommendations, consuming data directly from the CCDM.
 
 **Benefit**: By abstracting catalog management and discovery into CCDM and associated SaaS services, you achieve improved performance, gain AI-driven merchandising capabilities, significantly offload read operations from your legacy backend, and enable a robust "peel-off" of the top-of-funnel experience.
+
+>[!ENDTABS]
 
 #### 3. Build out your storefront on Edge Delivery Services
 
