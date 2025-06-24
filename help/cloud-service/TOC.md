@@ -15,4 +15,7 @@ recommendations: noDisplay, noCatalog
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
-- [Migration](migration.md)
+- Migration {#migration}
+  - [Overview](migration/overview.md)
+  - [Bulk Data Migration Tool](migration/bulk-data.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

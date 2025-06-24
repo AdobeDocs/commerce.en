@@ -59,7 +59,7 @@ Complex product options are unified and distinguished by their behavior, not typ
 
 #### Product view attributes
 
-Both simple and complex products have customer-defined attributes that can be displayed on the storefront. These attributes are returned as [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). In Adobe Commerce, the available attributes are defined when the product is created. You can add additional attributes from the Adobe Commerce backend or programmatically. See [Extend and customize SaaS data export feed data](../data-export/extensibility-and-customizations.md).
+Both simple and complex products have customer-defined attributes that can be displayed on the storefront. These attributes are returned as [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type). In Adobe Commerce, the available attributes are defined when the product is created. You can add additional attributes from the Adobe Commerce backend or programmatically. See [Extend and customize SaaS data export feed data](../data-export/extensibility-and-customizations.md).
 
 >[!TIP]
 >
