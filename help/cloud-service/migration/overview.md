@@ -11,6 +11,10 @@ role: Architect
 
 [!DNL Adobe Commerce as a Cloud Service] provides a comprehensive guide for developers transitioning from an existing Adobe Commerce PaaS implementation to the new Adobe Commerce as a Cloud Service (SaaS) offering. Adobe Commerce as a Cloud Service represents a significant shift to a fully managed, versionless SaaS model, offering enhanced performance, scalability, simplified operations, and tighter integration with the broader Adobe Experience Cloud.
 
+>[!NOTE]
+>
+>For more information on migration tooling, see the [Bulk Data Migration Tool](./bulk-data.md).
+
 ## Understanding the shift - comparing PaaS and SaaS
 
 **Key differences**
@@ -27,9 +31,9 @@ role: Architect
 
 **New tooling & concepts**
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
-* [Commerce Optimizer](../optimizer/overview.md)
+* [Commerce Optimizer](../../optimizer/overview.md)
 * [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
-* Self-service provisioning with the [Commerce Cloud Manager](./getting-started.md#create-an-instance)
+* Self-service provisioning with the [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ## Migration paths
 
@@ -39,11 +43,11 @@ As an alternative to a full migration, [!DNL Adobe Commerce as a Cloud Service] 
 
 * **Incremental migration**—This approach involves migrating your data, customizations, and integrations in stages. This approach is ideal for large merchants with many customizations who want to gradually transition their complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at their own pace.
 
-![incremental migration](./assets/incremental.png){width="600" zoomable="yes"}
+![incremental migration](../assets/incremental.png){width="600" zoomable="yes"}
 
 * **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Channels and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
 
-![iterative migration](./assets/optimizer.png){width="600" zoomable="yes"}
+![iterative migration](../assets/optimizer.png){width="600" zoomable="yes"}
 
 * **Full migration**—This approach involves migrating all data, customizations, and integrations at once. This approach is ideal for smaller merchants with few customizations who want to quickly transition to [!DNL Adobe Commerce as a Cloud Service].
 
@@ -61,7 +65,7 @@ The following table provides an overview of the migration process for different 
 
 As indicated by the table, the mitigations for each migration will consist of:
 
-* **Data migration**—Using provided migration tooling to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
+* **Data migration**—Using provided [migration tooling](./bulk-data.md) to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**—Existing Commerce Storefronts powered by Edge Delivery and headless storefronts do not require mitigation, but Luma storefronts require migrating to Commerce Storefront powered by Edge Delivery. PWA Studio storefronts can be migrated to Commerce Storefront powered by Edge Delivery or maintained in their current state. Adobe will provide accelerators to assist with storefront migration.
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Create a new mesh or modify the existing one. Adobe will provide preconfigured meshes to assist with this process.
 * **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
@@ -154,7 +158,7 @@ This is a critical initial integration point with two options regarding catalog 
 
 **Leverage existing Catalog SaaS service integrated with PaaS backend**
 
-This option serves as a transitional step, building upon an existing integration where your PaaS backend populates an existing instance of the Adobe Commerce SaaS service with data from the [catalog service](../catalog-service/guide-overview.md), [live search](../live-search/overview.md), and [product recommendations](../product-recommendations/overview.md).
+This option serves as a transitional step, building upon an existing integration where your PaaS backend populates an existing instance of the Adobe Commerce SaaS service with data from the [catalog service](../../catalog-service/guide-overview.md), [live search](../../live-search/overview.md), and [product recommendations](../../product-recommendations/overview.md).
 
 * **Catalog data synchronization**: Ensure your Adobe Commerce PaaS instance continues to synchronize product and catalog data to your existing Adobe Commerce Catalog SaaS service. This typically relies on established connectors or modules within your PaaS instance. The Catalog SaaS service remains the authoritative source for search and merchandising functions, deriving its data from your PaaS backend.
 * **API Mesh for optimization**: While the headless storefront (on Edge Delivery Services) and other services could directly consume data from the Catalog SaaS service, Adobe highly recommends using API Mesh (within App Builder). API Mesh can unify APIs from the Catalog SaaS service with other necessary APIs from your PaaS backend (for example, real-time inventory checks from the transactional database or custom product attributes not fully replicated to the Catalog SaaS service) into a single, performant GraphQL endpoint. This also allows for centralized caching, authentication, and response transformation.
@@ -209,7 +213,7 @@ Data migration is a critical and multi-faceted process that runs concurrently wi
 
 Bulk data migration involves taking a full data dump from your Adobe Commerce PaaS instance, transforming that entire dataset, and importing it into Adobe Commerce as a Cloud Service all at one time. This method is typically used for the initial population of data.
 
-* **Tooling availability**: Dedicated tooling for customer use for first-party Commerce bulk data migrations will be available by request in mid-July 2025. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
+* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data.md) for customer use for first-party Commerce bulk data migrations will be available by request in mid-July 2025. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
 
 * **Process**:
   * **Full data export**: Extract a complete dataset from your Adobe Commerce PaaS instance (for example, products, categories, customer accounts, historical order data, static blocks, and page content).
