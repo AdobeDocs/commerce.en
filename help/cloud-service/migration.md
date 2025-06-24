@@ -72,7 +72,7 @@ As indicated by the table, the mitigations for each migration will consist of:
 * **Data migration**—Using provided migration tooling to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**—Existing Commerce Storefronts powered by Edge Delivery and headless storefronts do not require mitigation, but Luma storefronts require migrating to Commerce Storefront powered by Edge Delivery. PWA Studio storefronts can be migrated to Commerce Storefront powered by Edge Delivery or maintained in their current state. Adobe will provide accelerators to assist with storefront migration.
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Create a new mesh or modify the existing one. Adobe will provide preconfigured meshes to assist with this process.
-* **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/services/reference/cloud-service/core-admin/).
+* **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Customizations**—All customizations must move to App Builder and API Mesh.
 * **Assets Management**—All assets management requires migration. If you are already using AEM Assets, there is no need to migrate.
 * **Extensions**—Any in-process extensions need to be recreated as out-of-process extensions. By the end of 2025, Adobe will provide access to our most popular extensions to minimize build times.
@@ -91,7 +91,7 @@ This phase is critical for minimizing risks and establishing a clear migration p
 
 * Identify all custom modules, themes, and overrides.
 * Analyze core code modifications and determine which will need refactoring as part of migration.
-* Assess third-party extensions and determine compatibility with [!DNL Adobe Commerce as a Cloud Service]. Are there SaaS-compatible alternatives or do you need to create custom API integrations?
+* Assess third-party extensions and determine compatibility with [!DNL Adobe Commerce as a Cloud Service]. Are there SaaS-compatible alternatives, or do you need to create custom API integrations or App Builder applications?
 * Identify any deprecated code or functionality that will not be migrated.
 
 **Data audit:**
@@ -106,16 +106,15 @@ This phase is critical for minimizing risks and establishing a clear migration p
 * Assess integration methods (API, custom scripts, and other methods).
 * Evaluate compatibility with [!DNL Adobe Commerce as a Cloud Service]'s API-first approach and App Builder.
 
-**Performance benchmarking:**
+**Performance benchmarks:**
 
-* Document current Lighthouse scores, page load times, and key performance indicators (KPIs).
-  * This provides a baseline to measure post-migration improvements.
+* Document current Lighthouse scores, page load times, and key performance indicators (KPIs), which provides a baseline to measure post-migration improvements.
 
 **Security configuration review:**
 
-* Assess any custom WAF rules, IP whitelists, and any other security configurations.
+* Assess any custom WAF rules, IP allowlists, and any other security configurations.
 
-**Defining migration scope and strategy:**
+**Define migration scope and strategy:**
 
 * **Phased vs. all-at-once migration:** Evaluate the pros and cons of each approach.
 * **Identify core business processes:** Prioritize functionalities that must be migrated first.
@@ -147,7 +146,7 @@ This is a crucial phase for achieving a "locked core" and future-proofing your s
 * **Leverage API Mesh**: For scenarios requiring data from multiple backend systems (for example, your PaaS Commerce backend, ERP, CRM, and custom App Builder microservices), implement an API Mesh layer within App Builder. This consolidates disparate APIs into a single, performant GraphQL endpoint consumed by your new storefront or other services, simplifying complex data fetching.
 * **Event-driven architecture**: Utilize Adobe I/O Events to trigger App Builder actions based on events occurring in your PaaS instance (for example, product updates, customer registrations, order status changes) or other connected systems. This promotes asynchronous communication, reduces tight coupling, and enhances system resilience.
 
-**Benefit**: This step significantly reduces technical debt associated with deeply embedded customizations, dramatically improves upgradeability of your core Commerce instance, enhances the scalability and independent deployability of custom logic, and promotes faster development cycles for extensions.
+**Benefit**: This step significantly reduces technical debt associated with deeply embedded customizations, dramatically speeds up transitioning your Commerce instance to [!DNL Adobe Commerce as a Cloud Service], enhances the scalability and independent deployability of custom logic, and promotes faster development cycles for extensions.
 
 #### 2. Adopt SaaS-based Adobe Commerce merchandising services and integrate catalog data
 
@@ -159,11 +158,11 @@ This is a critical initial integration point with two options regarding catalog 
 
 **Leverage existing Catalog SaaS service integrated with PaaS backend**
 
-This option serves as a transitional step, building upon an existing integration where your PaaS backend populates an existing instance of the Adobe Commerce Catalog SaaS service.
+This option serves as a transitional step, building upon an existing integration where your PaaS backend populates an existing instance of the Adobe Commerce SaaS service with data from the [catalog service](../catalog-service/guide-overview.md), [live search](../live-search/overview.md), and [product recommendations](../product-recommendations/overview.md).
 
 * **Catalog data synchronization**: Ensure your Adobe Commerce PaaS instance continues to synchronize product and catalog data to your existing Adobe Commerce Catalog SaaS service. This typically relies on established connectors or modules within your PaaS instance. The Catalog SaaS service remains the authoritative source for search and merchandising functions, deriving its data from your PaaS backend.
 * **API Mesh for optimization**: While the headless storefront (on Edge Delivery Services) and other services could directly consume data from the Catalog SaaS service, Adobe highly recommends using API Mesh (within App Builder). API Mesh can unify APIs from the Catalog SaaS service with other necessary APIs from your PaaS backend (for example, real-time inventory checks from the transactional database or custom product attributes not fully replicated to the Catalog SaaS service) into a single, performant GraphQL endpoint. This also allows for centralized caching, authentication, and response transformation.
-* **Integrate Live Search and Product Recommendations**: Configure Live Search and Product Recommendations SaaS services to ingest catalog data directly from your existing Adobe Commerce Catalog SaaS service, which in turn is populated by your PaaS backend.
+* **Integrate Live Search and Product Recommendations**: Configure Live Search and Product Recommendations SaaS services to [ingest catalog data](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) directly from your existing Adobe Commerce Catalog SaaS service, which in turn is populated by your PaaS backend.
 
 **Benefit**: This provides a faster path to a headless storefront and advanced SaaS merchandising features by leveraging an existing and operational Catalog SaaS service and its integration pipeline with your PaaS backend. However, it retains the dependency on the PaaS backend for the primary catalog data source and does not provide the multi-source aggregation capabilities inherent in the new Composable Catalog Data Model. This option is a valid stepping-stone towards a fuller composable architecture.
 
