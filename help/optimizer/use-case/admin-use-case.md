@@ -446,6 +446,6 @@ To continue learning about Adobe Commerce Optimizer:
 - Learn about [advanced policy configurations](../setup/policies.md)
 - Set up [additional catalog views](../setup/catalog-view.md) for other dealerships
 - Review the [API documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) for programmatic catalog management
-- Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](hhttps://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
 
 
