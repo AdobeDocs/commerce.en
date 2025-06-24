@@ -70,7 +70,7 @@ The following table provides an overview of the migration process for different 
 As indicated by the table, the mitigations for each migration will consist of:
 
 * **Data migration**—Using provided migration tooling to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
-* **Storefront**—Existing EDS and headless storefronts do not require mitigation, but LUMA storefronts require migrating to Commerce Storefront powered by Edge Delivery. PWA Studio storefronts can be migrated to Commerce Storefront powered by Edge Delivery or maintained in their current state. Adobe will provide accelerators to assist with storefront migration.
+* **Storefront**—Existing Commerce Storefronts powered by Edge Delivery and headless storefronts do not require mitigation, but LUMA storefronts require migrating to Commerce Storefront powered by Edge Delivery. PWA Studio storefronts can be migrated to Commerce Storefront powered by Edge Delivery or maintained in their current state. Adobe will provide accelerators to assist with storefront migration.
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Create a new mesh or modify the existing one. Adobe will provide preconfigured meshes to assist with this process.
 * **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/services/reference/cloud-service/core-admin/).
 * **Customizations**—All customizations must move to App Builder and API Mesh.
@@ -197,8 +197,8 @@ With merchandising data pipelines established and customizations externalized, t
   * **Option 2**: From CCDM for product information and merchandising rules.
   * From API Mesh for any orchestrated data from your legacy backend (PaaS instance) or custom App Builder services (for example, real-time inventory, custom product attributes, and loyalty points display).
 * **Content migration (AEM Services)**: Migrate your existing static content (for example, "About Us" pages, blog posts, and marketing banners) into AEM Services, which powers the Commerce Storefront. Leverage AEM's content authoring capabilities and ensure assets are optimized for Edge Delivery Services.
-* **Develop core UI components**: Build out critical user interface components for product display pages (PDPs), category listing pages (CLPs), and general content pages using EDS drop-in components and custom React/Vue components. Prioritize core commerce flows.
-* **Integration with existing cart/checkout**: Initially, the EDS storefront will orchestrate a handoff to your existing Adobe Commerce PaaS (or other third-party platform) for cart management and checkout. This typically involves:
+* **Develop core UI components**: Build out critical user interface components for product display pages (PDPs), category listing pages (CLPs), and general content pages using Edge Delivery Services drop-in components and custom React/Vue components. Prioritize core commerce flows.
+* **Integration with existing cart/checkout**: Initially, the Edge Delivery Services storefront will orchestrate a handoff to your existing Adobe Commerce PaaS (or other third-party platform) for cart management and checkout. This typically involves:
   * **Redirection**: Redirecting the user to the legacy platform's native cart and checkout URLs, passing necessary session and cart identifiers.
   * **Direct API interaction** (with App Builder orchestration): Building custom cart and checkout UI components within Edge Delivery Services that interact directly with your PaaS backend's cart and checkout APIs. This often involves App Builder as a Backend-for-Frontend (BFF) to orchestrate calls to multiple backend services (for example, PaaS cart, payment gateways, and shipping calculators).
 
