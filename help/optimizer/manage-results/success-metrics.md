@@ -14,11 +14,11 @@ The metrics in the report are pulled from storefront event data. [Learn more](..
 ## Generate a report
 
 1. From the left rail, select _Managing Results_ > **Success Metrics**.
-1. At the top of the page, select the catalog view from which to generate the report. In the sample image above, the catalog view selected is a fictious automobile conglomerate named **Carvelo**.
+1. At the top of the page, select the catalog view from which to generate the report. In the sample image above, the catalog view selected is a fictitious automobile conglomerate named **Carvelo**.
 1. Under **Report configuration** specify the **Date range**, **Country**, based on your locale setting, and **Currency**.
 1. Click **[!UICONTROL Apply]**.
 
-    The **Top highlights**, **Revenue**, **Converstion**, **Engagement**, **Acquisition**, and **Bounce Rate** all update based on your report configuration.
+    The **Top highlights**, **Revenue**, **Conversion**, **Engagement**, **Acquisition**, and **Bounce Rate** all update based on your report configuration.
 
 1. Click **[!UICONTROL Export]** to save the report as a PDF.
 

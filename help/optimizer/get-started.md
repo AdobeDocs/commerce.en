@@ -31,7 +31,7 @@ Each team member has their own set of roles and responsibilities as described in
 |Merchandiser|Set up product discovery​.|
 ||Set up product recommendations.|
 
-Each role plays an integral part into the succesful onboarding and launch of your [!DNL Adobe Commerce Optimizer] environment. The following diagram shows a high-level start to finish workflow for each role in your organization:
+Each role plays an integral part into the successful onboarding and launch of your [!DNL Adobe Commerce Optimizer] environment. The following diagram shows a high-level start to finish workflow for each role in your organization:
 
 ![High-Level Workflow](./assets/high-level-workflow.png){zoomable="yes"}
 
@@ -41,7 +41,7 @@ Administrators are responsible for setting up instances, managing users, groups,
 
 - **[Access the Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** -  Manage Adobe Entitlements across your entire organization. See [user management](./user-management.md) to learn how you or your organization's product admin or system admin can add users to the [!DNL Adobe Commerce Optimizer] product.
 
-- **Create an instance** - [!DNL Adobe Commerce Optimizer] instances use a credit-based system. You can create multiple Sandbox and Production instances, with each instance requiring one corrresponding credit. The amount of credits you have initially depends on your subscription. [Learn more](#create-an-instance).
+- **Create an instance** - [!DNL Adobe Commerce Optimizer] instances use a credit-based system. You can create multiple Sandbox and Production instances, with each instance requiring one corresponding credit. The amount of credits you have initially depends on your subscription. [Learn more](#create-an-instance).
 
 - **Access an instance** - After you create an instance, you can access it from the [!UICONTROL Commerce Cloud Manager]. [Learn more](#access-an-instance).
 
@@ -113,3 +113,5 @@ The merchandiser uses shopper data and analytics to make strategic decisions abo
    The [!UICONTROL Commerce Cloud Manager] displays a list of instances that are available in your Adobe IMS organization.
 
 1. To open the [!UICONTROL Commerce Optimizer] for an instance, click the instance name.
+
+
