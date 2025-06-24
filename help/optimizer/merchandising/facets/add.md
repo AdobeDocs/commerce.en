@@ -2,6 +2,7 @@
 title: Create and Manage Facets
 description: Learn how to add and manage facets in [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
 ---
 # Create and Manage Facets
 

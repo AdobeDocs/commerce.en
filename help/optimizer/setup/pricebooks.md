@@ -4,6 +4,7 @@ description: Learn how to manage price books in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 ---
 # Price Books
 

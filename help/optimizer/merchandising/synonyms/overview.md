@@ -2,6 +2,7 @@
 title: Synonyms Overview
 description: Learn about synonyms in [!DNL Adobe Commerce Optimizer] and how they improve search results.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
 ---
 # Synonyms
 

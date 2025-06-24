@@ -4,6 +4,7 @@ description: Learn how to get started with [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 ---
 # Get Started
 
@@ -113,5 +114,3 @@ The merchandiser uses shopper data and analytics to make strategic decisions abo
    The [!UICONTROL Commerce Cloud Manager] displays a list of instances that are available in your Adobe IMS organization.
 
 1. To open the [!UICONTROL Commerce Optimizer] application associated with an instance, click the instance name.
-
-

@@ -3,6 +3,7 @@ title: Introduction to Recommendations
 description: Recommendations are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement.
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
 ---
 # Introduction to Recommendations
 

@@ -2,6 +2,7 @@
 title: Facets Overview
 description: Learn about facets in [!DNL Adobe Commerce Optimizer] and how they improve search results.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
 ---
 # Facets
 

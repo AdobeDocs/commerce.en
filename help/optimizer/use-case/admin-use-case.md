@@ -4,6 +4,7 @@ description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your cat
 role: Admin, Developer
 feature: Personalization, Integration
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 ---
 # Storefront and Catalog Administrator End-to-End Use Case
 
@@ -447,5 +448,3 @@ To continue learning about Adobe Commerce Optimizer:
 - Set up [additional catalog views](../setup/catalog-view.md) for other dealerships
 - Review the [API documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) for programmatic catalog management
 - Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
-
-

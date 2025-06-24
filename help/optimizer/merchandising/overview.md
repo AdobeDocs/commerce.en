@@ -3,6 +3,7 @@ title: Merchandising Overview
 description: Learn about merchandising features in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 ---
 # Merchandising
 

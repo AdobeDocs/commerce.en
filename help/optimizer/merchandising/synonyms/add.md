@@ -2,6 +2,7 @@
 title: Create and Manage Synonyms
 description: Learn how to create and manage synonyms to [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
 ---
 # Create Synonyms
 

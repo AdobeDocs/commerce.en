@@ -2,6 +2,7 @@
 title: Recommendation Filters
 description: Learn how to use filters to control which products appear in [!DNL Adobe Commerce Optimizer] recommendations.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: f6100538-23c0-4e90-9834-a895d4707282
 ---
 # Filter Products
 
