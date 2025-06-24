@@ -103,7 +103,7 @@ Ultimately, Carvelo has two major goals:
 
 ## 1. Access the [!DNL Adobe Commerce Optimizer] instance
 
-Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](./get-started.md#access-an-instance.)
+Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](../get-started.md#access-an-instance).)
 
 When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
