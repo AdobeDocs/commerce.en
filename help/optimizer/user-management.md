@@ -9,9 +9,9 @@ To enable access to [!DNL Adobe Commerce Optimizer], add users from the [Adobe A
 
 You can assign users to any of the following roles:
 
-* **User** - Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage catalog views and merchandising rules, and track performance metrics.
+* **User**— Users have access to the [!DNL Adobe Commerce Optimizer] UI to view and manage catalog views and merchandising rules, and track performance metrics.
 
-* [**Developer**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the [!DNL Adobe Commerce Optimizer]  APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
+* [**Developer**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Developers have user permissions and access to the Adobe Developer Console. This means they can create projects and configure credentials to use developer tools like the [!DNL Adobe Commerce Optimizer]  APIs and SDKs along with Adobe extensibility tools like App Builder and API Mesh.
 
 * **Admin** - There are three different types of admin roles:
     * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Adobe Admin Console.

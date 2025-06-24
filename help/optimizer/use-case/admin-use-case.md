@@ -204,7 +204,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
     ![Celport catalog view ID](../assets/celport-channel-id.png)
 
-    Copy and save the catalog view ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog. 
+    Copy and save the catalog view ID. You need this ID when you update the storefront configuration to deliver data to your new Celport catalog.
 
 After you create the Celport catalog view and associated policies, the next step is to configure the storefront to use your new Celport catalog.
 
@@ -261,7 +261,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
 
     >[!IMPORTANT]
     >
-    >Make sure that the `commerce-endpoint` value matches the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance. This is provided in your welcome email.
+    >Make sure that the `commerce-endpoint` value matches the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance. You can find the endpoints 
 
 1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
 1. Save the file.

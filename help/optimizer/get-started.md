@@ -39,7 +39,7 @@ Each role plays an integral part into the succesful onboarding and launch of you
 
 Administrators are responsible for setting up instances, managing users, groups, and entitlements for your organization.
 
-- **Access Admin Console** - Access the [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) to manage your Adobe Entitlements across your entire organization. See [user management](./user-management.md) to learn how you or your organization's product admin or system admin can add users to the [!DNL Adobe Commerce Optimizer] product.
+- **[Access the Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** -  Manage Adobe Entitlements across your entire organization. See [user management](./user-management.md) to learn how you or your organization's product admin or system admin can add users to the [!DNL Adobe Commerce Optimizer] product.
 
 - **Create an instance** - [!DNL Adobe Commerce Optimizer] instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
 
@@ -53,7 +53,7 @@ Administrators are responsible for setting up instances, managing users, groups,
 
        ![Create Instance](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
 
-    1. Select [!UICONTROL **Commerce Optimizer*].
+    1. Select [!UICONTROL **Commerce Optimizer**].
 
     1. Enter a **Name** and **Description** for your instance.
 
