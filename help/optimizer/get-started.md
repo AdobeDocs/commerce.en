@@ -8,7 +8,7 @@ exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 ---
 # Get Started
 
-This guide walks you through setting up [!DNL Adobe Commerce Optimizer] from start to finish. While this guide covers all roles, see the [developer documentation](https://developer.adobe.com/commerce/services/composable-catalog/) for detailed developer-specific content.
+This guide walks you through setting up [!DNL Adobe Commerce Optimizer] from start to finish. While this guide covers all roles, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/) for detailed developer-specific content.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 
 >[!NOTE]
 >
->Sandbox instances are limited to North America region. You cannot change the region after creation.
+>Sandbox instances are limited to the North America region. You cannot change the region after creation.
 
 ### Step 2. Set up your environment
 
@@ -58,7 +58,7 @@ See [Next steps](#next-steps).
 
 ## Role-Based workflows
 
-[!DNL Adobe Commerce Optimizer] setup and management relies on three key roles. Each role has specific tasks and responsibilities:
+[!DNL Adobe Commerce Optimizer] setup and management rely on three key roles. Each role has specific tasks and responsibilities:
 
 ![High-Level Workflow](./assets/high-level-workflow.png){zoomable="yes"}
 
@@ -111,7 +111,7 @@ Merchandisers optimize and personalize the shopping experience through product d
    - Under **Quick access**, click **Commerce**.
    - The Commerce Cloud Manager displays your available instances.
 
-1. **Create new instance**:
+1. **Create an instance**:
    - Click **Add Instance** in the top-right corner.
    - Select **Commerce Optimizer**.
 
@@ -137,7 +137,7 @@ Merchandisers optimize and personalize the shopping experience through product d
 
 1. Log in to [Adobe Experience Cloud](https://experience.adobe.com/).
 
-1. Open Commerce Cloud Manage:
+1. Open Commerce Cloud Manager:
    - Under **Quick access**, click **Commerce**.
    - View your available instances.
 
@@ -196,7 +196,7 @@ After completing the setup:
 
 |Issue|Solution|
 |---|---|
-|**Cannot create instance**|Verify that you have [!DNL Adobe Commerce Optimizer] entitlements and admin permissions.|
+|**Cannot create an instance**|Verify that you have [!DNL Adobe Commerce Optimizer] entitlements and admin permissions.|
 |**Instance not appearing**|Check your Adobe IMS organization and refresh the page.|
 |**Cannot access instance**|Ensure that you're added as a user in the Admin Console.|
 |**Sample data not loading**|Verify your instance credentials and API endpoints|
@@ -205,5 +205,5 @@ After completing the setup:
 
 - **Documentation**: [Adobe Commerce Optimizer Guide](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)
 - **Developer Resources**: [Developer Documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Storefront Resources**: [Commerce Storefront Documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/storefront/)
+- **Storefront Resources**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - **Support**: [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
