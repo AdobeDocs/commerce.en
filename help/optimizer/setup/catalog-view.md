@@ -18,7 +18,7 @@ Catalog views define how your product catalog is organized and displayed. They a
 - **Which products are visible** based on business structure (brands, regions, dealers)
 - **What pricing is shown** through linked price books
 - **How products are filtered** using policies (attributes like brand, model, category)
-- **What source is used** based on attributes like locale
+- **What catalog source is used** based on attributes like locale
   
 Think of catalog views as different "lenses" through which customers see your catalog. For example:
 
@@ -42,8 +42,8 @@ Before creating a catalog view, ensure you have:
 
 1. Configure the catalog view details:
 
-    - **Name**—Enter the name of the catalog view. For example, "Celport". ​
-    - **Catalog sources**—Add the catalog source (locale). For example, "en-US". Press the **enter** key.
+    - **Name**—Enter the name of the catalog view, for example `Celport`. ​
+    - **Catalog sources**—Add the catalog source (locale), for example `en-US`. Press **enter**.
     - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
 1. Select the price book to link to the catalog view.
@@ -58,7 +58,7 @@ After you complete these steps, the catalog view is now configured to display pr
 
 ## Architecture Overview
 
-Catalog views are part of the Merchandising Services framework that replaces traditional Adobe Commerce catalog sources (website, store, storeview) with a more flexible model:
+Catalog views are part of the Merchandising Services framework that replaces the website, store, storeview framework used in Adobe Commerce foundations with a more flexible model:
 
 ![[!DNL Merchandising Services] Architecture](../assets/merchandising-svcs-architecture.png)
 
@@ -71,7 +71,7 @@ Catalog data from PIM, ERP, and other systems is ingested into the Merchandising
 The ingested data creates a unified base catalog in the Catalog Service data pipeline. This single source eliminates data duplication across business units.
 
 **3. Catalog Views**
-Multiple catalog views represent different business units (e.g., "Texas Retail", "Texas Retail Seasonal"). Locales, policies, and price books can be shared across catalog views for flexibility.
+Multiple catalog views represent different business units (for example, "Texas Retail," "Texas Retail Seasonal"). Locales, policies, and price books can be shared across catalog views for flexibility.
 
 **4. Multi-Channel Delivery**
 The filtered catalog data is delivered to various destinations including Edge Delivery Services storefronts, marketplaces, advertising platforms, and custom micro-storefronts. For more information about catalog data delivery, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
