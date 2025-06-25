@@ -3,6 +3,7 @@ title: Events Overview
 description: Learn about the events that [!DNL Adobe Commerce Optimizer] uses to improve search and recommendations.
 role: Admin, Developer
 recommendations: noCatalog
+exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
 ---
 # Events
 

@@ -2,6 +2,7 @@
 title: Merchandising Rules Workspace
 description: Learn your way around the Merchandising Rules workspace.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
 ---
 # Merchandising Rules Workspace
 

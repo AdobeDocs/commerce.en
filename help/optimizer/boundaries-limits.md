@@ -3,6 +3,7 @@ title: Boundaries and limits
 description: Learn about the boundaries and limits for [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 ---
 # Boundaries and limits
 

@@ -2,6 +2,7 @@
 title: Create and Manage Recommendations
 description: Learn how to create and manage recommendations.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 ---
 # Create and Manage Recommendations
 

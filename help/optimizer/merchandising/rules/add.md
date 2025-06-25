@@ -2,6 +2,7 @@
 title: Create and Manage Rules
 description: Learn how to create and manage merchandising rules.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 ---
 # Create and Manage Rules
 

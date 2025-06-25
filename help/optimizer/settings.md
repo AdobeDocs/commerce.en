@@ -2,6 +2,7 @@
 title: Settings
 description: Configure settings for [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 ---
 # Settings
 

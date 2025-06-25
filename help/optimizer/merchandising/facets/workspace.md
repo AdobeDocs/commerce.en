@@ -2,6 +2,7 @@
 title: Facets Workspace
 description: Learn how to use the Facets workspace in [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: bd977769-6565-48ca-b5aa-963a217df3ea
 ---
 # Facets Workspace
 

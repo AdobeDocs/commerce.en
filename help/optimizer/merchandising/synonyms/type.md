@@ -2,6 +2,7 @@
 title: Synonym Types
 description: Learn about the different types of synonyms in [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: a74e48ea-e069-4ccc-a67f-2f85be251fb5
 ---
 # Types of Synonyms
 

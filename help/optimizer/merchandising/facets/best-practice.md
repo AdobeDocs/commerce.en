@@ -3,8 +3,8 @@ title: Facets Best Practices
 description: Learn the best practices for implementing facets in your store.
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: b9da6853-c846-4267-8dee-17abc034ead0
 ---
-
 # Facets Best Practices
 
 Filter and facet functionality is a critical component of your [!DNL Adobe Commerce Optimizer] site, designed to enhance the shopper experience by allowing shoppers to narrow down search results and find products more efficiently. This functionality helps shoppers sort through vast catalogs of items by applying specific criteria, making the shopping process faster, easier, and more satisfying. By implementing effective, shopper-friendly filters and facets, you can help customers find exactly what they need quickly and efficiently, ultimately boosting satisfaction and conversion rates.

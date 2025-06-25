@@ -4,6 +4,7 @@ description: Learn what catalog views are and how to create them to organize you
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 ---
 
 # Catalog Views for Merchandising Services

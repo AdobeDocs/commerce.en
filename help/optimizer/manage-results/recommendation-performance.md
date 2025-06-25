@@ -1,7 +1,8 @@
 ---
-title: 'Recommendations Performance'
+title: Recommendations Performance
 description: The Recommendations performance page provides insight into how well your product recommendations are performing.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 ---
 # Recommendations Performance
 
