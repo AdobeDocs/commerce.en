@@ -103,17 +103,17 @@ The filtered catalog data is delivered to various destinations including Edge De
 
 ### Multi-Brand Conglomerate
 
-**Challenge**: Manage multiple brands, countries, and languages
+**Challenge**: Manage multiple brands, countries, and languages<br>
 **Solution**: Single catalog with catalog views for each brand/region combination
 
 ### Automotive Parts Dealer
 
-**Challenge**: 3,000 dealers with same products but different pricing
+**Challenge**: 3,000 dealers with same products but different pricing<br>
 **Solution**: One catalog with dealer-specific catalog views and price books
 
 ### Multi-Location Retailer
 
-**Challenge**: Different pricing and inventory per location
+**Challenge**: Different pricing and inventory per location<br>
 **Solution**: Location-based catalog views with region-specific policies
 
 >[!INFO]
