@@ -115,7 +115,7 @@ Merchandisers optimize and personalize the shopping experience through product d
    - Click **Add Instance** in the top-right corner.
    - Select **Commerce Optimizer**.
 
-   ![Create Instance](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
+   ![Create Instance](./assets/create-aco-instance.png){width="60%" align="center" zoomable="yes"}
 
 1. **Configure instance settings**:
    - **Name**: Descriptive name (e.g., "My Company Sandbox")
@@ -131,7 +131,7 @@ Merchandisers optimize and personalize the shopping experience through product d
    - Click the information icon next to your instance name.
    - Note the GraphQL endpoint, the Catalog Service endpoint for data ingestion, and the Instance ID (also known as the `tenant ID`).
 
-   ![Instance Details](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+   ![Instance Details](./assets/aco-instance-details.png){width="60%" align="center" zoomable="yes"}
 
 ## Access an instance
 
