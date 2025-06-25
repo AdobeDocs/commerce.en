@@ -17,7 +17,8 @@ Catalog views define how your product catalog is organized and displayed. They a
 - **Which products are visible** based on business structure (brands, regions, dealers)
 - **What pricing is shown** through linked price books
 - **How products are filtered** using policies (attributes like brand, model, category)
-
+- **What source is used** based on attributes like locale
+  
 Think of catalog views as different "lenses" through which customers see your catalog. For example:
 
 - A dealer catalog view might show only products available to that specific dealer
