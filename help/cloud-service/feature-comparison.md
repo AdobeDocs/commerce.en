@@ -6,8 +6,6 @@ exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 ---
 # Feature comparison
 
-{{accs-early-access}}
-
 Adobe Commerce offers three deployment models:
 
 - [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
@@ -185,4 +183,4 @@ The following table compares platform capabilities and extensibility features to
 >- Consider API Mesh for extending API functionality.
 >- Monitor Adobe's ongoing platform evolution and new capability releases.
 >- Evaluate industry-specific data model requirements against available extensibility options.
->- Consider adopting [Merchandising Services powered by Channels and Policies](../optimizer/catalog/overview.md).
+>- Consider adopting [Merchandising Services powered by Channels and Policies](../optimizer/setup/catalog-view.md).

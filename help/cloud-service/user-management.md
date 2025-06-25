@@ -7,8 +7,6 @@ role: Admin
 ---
 # User management
 
-{{accs-early-access}}
-
 If you want users to access the Admin in [!DNL Adobe Commerce as a Cloud Service], you need to add them as users in your organization and ensure they have access to the Cloud Service product in the [Adobe Admin Console](https://adminconsole.adobe.com){target="_blank"}.
 
 This process requires an IMS organization with access to [!DNL Adobe Commerce as a Cloud Service]. Only a System Admin or Product Admin for the organization can perform these processes.

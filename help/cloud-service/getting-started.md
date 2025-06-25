@@ -7,8 +7,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Getting started
 
-{{accs-early-access}}
-
 [!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.
 
 Click the tabs below to see high-level workflow overviews for the following user types:
