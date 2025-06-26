@@ -57,10 +57,6 @@ After creating your instance:
 
 For testing and learning, follow the [Load Sample Data](#add-sample-data) instructions.
 
-### Step 4. Explore and use Adobe Commerce Optimizer
-
-See [Next steps](#next-steps).
-
 ## Role-Based workflows
 
 [!DNL Adobe Commerce Optimizer] setup and management rely on three key roles. Each role has specific tasks and responsibilities:
@@ -109,7 +105,7 @@ Merchandisers optimize and personalize the shopping experience through product d
 
    Click the instance name to open the [!DNL Adobe Commerce Optimizer] application.
 
-1. **Get instance details**:
+1. Get instance details:
    - Click the information icon next to your instance name.
    - Note the GraphQL endpoint, the Catalog Service endpoint for data ingestion, and the Instance ID (also known as the `tenant ID`).
 
@@ -119,15 +115,16 @@ Merchandisers optimize and personalize the shopping experience through product d
 
    Not all Adobe Commerce Optimizer users have access to Cloud Manager and the instance details. Access depends on the role and permissions assigned to the user account. If you do not have access, contact your organization administrator to get the instance details.
 
-1. **Edit instance name and description**:
-   - Click the **Edit** icon next to the instance name.
+1. Edit instance name and description:
+   - Click the **Edit** icon next to an instance name.
    - Update the name and description as needed.
    - Click **Save**.
+
+   You can also use the search and filter options to find specific instances quickly.
 
 ## Add sample data
 
 Adobe provides a GitHub repository with sample data and tools to help you learn and test [!DNL Adobe Commerce Optimizer] features.
-
 The sample data is based on the [Carvelo business scenario](./use-case/admin-use-case.md) and includes:
 
 - Product catalog with automotive parts
@@ -135,7 +132,7 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 - Catalog views and policies for different dealers
 - Complete end-to-end workflow examples
 
-### Steps
+**Load the sample data**
 
 1. Access the GitHub repository:
    - Visit the [Sample Catalog Data Ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
@@ -153,19 +150,19 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 
 After completing the setup:
 
-1. **Set up your storefront**:
+1. Set up your storefront:
    - Configure [Edge Delivery Services storefront](./storefront.md)
    - Connect to your catalog data
 
-1. **Explore the Carvelo use case**:
+1. Explore the Carvelo use case:
    - Follow the [end-to-end workflow](./use-case/admin-use-case.md)
    - Practice with real scenarios
 
-1. **Configure merchandising**:
+1. Configure merchandising:
    - Set up [product discovery](./merchandising/overview.md)
    - Create [recommendations](./merchandising/recommendations/overview.md)
 
-1. **Monitor performance**:
+1. Monitor performance:
    - Track [success metrics](./manage-results/success-metrics.md)
    - Analyze [search performance](./manage-results/search-performance.md)
 
