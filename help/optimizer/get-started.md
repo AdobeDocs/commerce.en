@@ -132,7 +132,7 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 - Catalog views and policies for different dealers
 - Complete end-to-end workflow examples
 
-**Load the sample data**
+**Load the sample data:**
 
 1. Access the GitHub repository:
    - Visit the [Sample Catalog Data Ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
