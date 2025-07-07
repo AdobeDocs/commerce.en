@@ -43,7 +43,7 @@ As an alternative to a full migration, [!DNL Adobe Commerce as a Cloud Service] 
 
 ![incremental migration](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Channels and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
+* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Catalog Views and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
 
 ![iterative migration](../assets/optimizer.png){width="600" zoomable="yes"}
 
