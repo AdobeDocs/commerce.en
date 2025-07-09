@@ -43,28 +43,39 @@ Create a plugin that adds a `customer_attribute` to the `Magento\CatalogDataExpo
           * @return array
           * @throws \Zend_Db_Statement_Exception
           */
-         public function afterGet(Attributes $subject, array $result, $arguments): array
-         {
-              $productIds = \array_column($arguments, 'productId');
-
-              foreach ($productIds as $productId) {
-                    $result[] = [
-                         'productId' => $productId,
-                         // "storeViewCode" must be specified for products where the customer attribute value should be set
-                         'storeViewCode' => 'default',
-                         'attributes' => [
-                              // specify the customer attribute code
-                              'attributeCode' => 'customer_attribute',
-                              // provide single or multiple values for the attribute
-                              'value' => [
-                                    rand(41,43)
-                              ]
-                         ]
-                    ];
+          public function afterGet(Attributes $subject, array $result, $arguments): array
+          {
+              $additionalAttributes = [];
+              $attributeCode = 'customer_attribute';
+              foreach ($result as $product) {
+                  if (!isset($product['productId']) || !isset($product['storeViewCode'])) {
+                      continue;
+                  }
+                  // HINT: if needed, do filtration by "storeViewCode" and or "productId"
+                  
+                  $productId = $product['productId'];
+                  $storeViewCode = $product['storeViewCode'];
+                  
+                  $newKey = \implode('-', [$product['storeViewCode'], $product['productId'], $attributeCode]);
+                  if (isset($additionalAttributes[$newKey])) {
+                      continue;
+                  }
+                  $additionalAttributes[$newKey] = [
+                      'productId' => $productId,
+                      'storeViewCode' => $storeViewCode,
+                      'attributes' => [
+                          'attributeCode' => $attributeCode,
+                          // provide single or multiple values for the attribute
+                          'value' => [
+                              rand(1, 42)
+                          ]
+                      ]
+                  ];
+      
               }
-
-              return $result;
-         }
+      
+              return array_merge($result, $additionalAttributes);
+          }
     }
    ```
 
@@ -111,6 +122,7 @@ If you dynamically create a custom product attribute and want to use it for disp
            {
                 $result[] = [
                   'id' => '123',
+                  // provide storeCode, websiteCode and storeViewCode applicable for your AC instance
                   'storeCode' => 'default',
                   'websiteCode' => 'base',
                   'storeViewCode' => 'default',

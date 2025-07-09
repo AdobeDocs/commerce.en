@@ -8,6 +8,4 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Assets management
 
-{{accs-early-access}}
-
 TODO PLACEHOLDER

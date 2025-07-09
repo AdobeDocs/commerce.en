@@ -7,8 +7,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Use cases
 
-{{accs-early-access}}
-
 The following use cases demonstrate core functionality and business scenarios supported by [!DNL Adobe Commerce as a Cloud Service], allowing you to accelerate development and launch high-impact experiences.
 
 If you encounter any issues, check the [Troubleshooting](#troubleshooting) section for guidance.
