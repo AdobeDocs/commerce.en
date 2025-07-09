@@ -44,10 +44,10 @@ Commerce Storefront is fully headless with a decoupled architecture that provide
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
-* [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-* [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-* [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
-* [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+- [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
+- [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
+- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Product Visuals powered by AEM Assets
 
@@ -67,43 +67,43 @@ The following image shows both offerings, depending on your content supply chain
 
 >[!TAB Product Visuals]
 
-* Integrated automated product image & video Digital Asset Manager (DAM)
+- Integrated automated product image & video Digital Asset Manager (DAM)
 
-* Resize, crop and convert images
+- Resize, crop and convert images
 
-* High-speed image & video delivery
+- High-speed image & video delivery
 
-* Optimize image formats, sizes, and quality based on client's browser
+- Optimize image formats, sizes, and quality based on client's browser
 
-* Access to Adobe Express and Adobe Firefly
+- Access to Adobe Express and Adobe Firefly
 
-* Usage limits for image/video delivery capacity and users
+- Usage limits for image/video delivery capacity and users
 
-* Integrated Asset selector
+- Integrated Asset selector
 
 >[!TAB AEM Assets]
 
-* All capabilities from Product Visuals
+- All capabilities from Product Visuals
 
-* Full marketing DAM to power more than your ecommerce site
+- Full marketing DAM to power more than your ecommerce site
 
-* Ability to have unlimited users (pay per user)
+- Ability to have unlimited users (pay per user)
 
-* Unlimited image/video delivery 
+- Unlimited image/video delivery 
 
-* Advanced asset management functionality, including:
+- Advanced asset management functionality, including:
   
-  * 3D Model support & immersive content
+  - 3D Model support & immersive content
   
-  * PDF support
+  - PDF support
   
-  * AI-powered Smart Cropping
+  - AI-powered Smart Cropping
   
-  * Dynamic Image Templates
+  - Dynamic Image Templates
   
-  * Smart Tagging
+  - Smart Tagging
   
-  * Tracking/analytics on asset performance
+  - Tracking/analytics on asset performance
 
 >[!ENDTABS]
 
