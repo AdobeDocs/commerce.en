@@ -107,8 +107,6 @@ The following image shows both offerings, depending on your content supply chain
 
 >[!ENDTABS]
 
-![Compare DAM offerings](../cloud-service/assets/compare-offerings.png){zoomable="yes"}
-
 See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
 ## Developer Platform
