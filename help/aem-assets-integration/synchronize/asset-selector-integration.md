@@ -8,7 +8,7 @@ exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
 
 The **AEM Asset Selector** enables marketers and merchandisers to easily add images from AEM Assets to Adobe Commerce, streamlining the asset management process. This method ensures brand consistency and compliance by limiting asset selection to those reviewed and approved in the [!DNL DAM (Digital Asset Management system)].
 
-The **AEM Asset Selector** is available when the IMS client ID for the AEM Assets project has been configured in the Commerce Admin. See [Configure the AEM Asset Selector](#configure-the-aem-asset-selector-in-adobe-commerce.
+The **AEM Asset Selector** is available when the IMS client ID for the AEM Assets project has been configured in the Commerce Admin. See [Configure the AEM Asset Selector](#configure-the-aem-asset-selector-in-adobe-commerce).
 
 When the **AEM Asset Selector** integration is configured, marketers and merchandisers can:
 
