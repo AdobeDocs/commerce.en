@@ -45,7 +45,7 @@ Adobe provides a collection of Commerce services, integration services, and data
       </p>
    </td>
    <td valign="top">
-      <a href="../product-visuals/overview.md">
+      <a href="../aem-assets-integration/overview.md">
       <img alt="Visual" src="../assets/icons/images.svg" width="40">
       </a>
       <div>

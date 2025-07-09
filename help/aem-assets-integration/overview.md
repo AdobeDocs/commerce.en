@@ -58,6 +58,8 @@ The Adobe Commerce user configuring the integration must have access to the [IMS
 
 ![check](assets/icon-check.png) **Adobe Managed Support Model**-Assistance and troubleshooting are handled directly by Adobe, providing peace of mind and streamlined issue resolution.
 
+![check](assets/icon-check.png) **Adobe Storefront Builder capabilities**-The digital asset management (DAM) solution allows the use of assets like images, videos, and other media on the [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
+
 >[!ENDSHADEBOX]
 
 Watch this video to learn how Adobe Commerce and AEM Assets work together to streamline content workflows:
