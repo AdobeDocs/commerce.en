@@ -38,9 +38,9 @@ To leverage this integration either with Product Visuals or AEM Assets, business
 
 [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Adobe Commerce 2.4.5+
 
-    * PHP 8.1, 8.2, 8.3, and 8.4
+* PHP 8.1, 8.2, 8.3, and 8.4
 
-    * Composer 2.x
+* Composer 2.x
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} Adobe Experience Manager is provisioned with [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
 
