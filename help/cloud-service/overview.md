@@ -51,11 +51,15 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 - [Merchandising Services powered by Channels and Policies](../optimizer/catalog/overview.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
-## Product Visuals
+## Product Visuals powered by AEM Assets
 
-Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
+Product Visuals help simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
-See the [Product Visuals](../product-visuals/overview.md) guide to learn more.
+### Product Visuals vs AEM Assets
+
+![Compare DAM offerings](../cloud-service/assets/compare-offerings.png)
+
+See the [Adobe-branded integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
 ## Developer Platform
 

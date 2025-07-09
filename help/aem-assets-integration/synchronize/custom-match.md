@@ -1,12 +1,12 @@
 ---
 title: Custom automatic matching
-description: Learn how the custom automatic matching is particularly useful for merchants with complex matching logic or those relying on a third-party system that cannot populate product visuals metadata into the AEM Assets.
+description: Learn how the custom automatic matching is particularly useful for merchants with complex matching logic or those relying on a third-party system that cannot populate metadata into the AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 ---
 # Custom automatic matching
 
-If the default automatic matching strategy (**OOTB automatic matching**) is not aligned with your specific business requirements, select the custom match option. This option supports the use of [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) to develop a custom matcher application that handles complex matching logic, or assets coming from a third-party system that cannot populate product visuals metadata into AEM Assets.
+If the default automatic matching strategy (**OOTB automatic matching**) is not aligned with your specific business requirements, select the custom match option. This option supports the use of [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) to develop a custom matcher application that handles complex matching logic, or assets coming from a third-party system that cannot populate metadata into AEM Assets.
 
 ## Configure custom automatic matching
 

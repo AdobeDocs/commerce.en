@@ -18,11 +18,11 @@ An eCommerce platform is one of the most crucial engagement channels. Ensuring s
 
 * Ensure brand consistency by always serving approved content that aligns with brand guidelines.
 
-To achieve these objectives, the [!DNL Product Visuals] integration is subscribed to both **Adobe Commerce** and **AEM Assets** events, ensuring dynamic synchronization between content and commerce.
+To achieve these objectives, the integration is subscribed to both **Adobe Commerce** and **AEM Assets** events, ensuring dynamic synchronization between content and commerce.
 
 ## Adobe Commerce Catalog Changes
 
-The [!DNL Product Visuals] integration listens for product creation events triggered when products are created in the  **Admin** or by using the **API**. When triggered, it syncs approved assets from the DAM that are associated with the new product SKU.
+The integration listens for product creation events triggered when products are created in the  **Admin** or by using the **API**. When triggered, it syncs approved assets from the DAM that are associated with the new product SKU.
 
 By decoupling content creation from catalog management, businesses gain several advantages:
 

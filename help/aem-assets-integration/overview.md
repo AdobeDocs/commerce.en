@@ -1,10 +1,10 @@
 ---
-title: Product Visuals
+title: AEM Assets Integration for Commerce
 description: Learn how to integrate Adobe Experience Manager Assets with your [!DNL Commerce] instance to create and manage the media files for your Commerce storefront.
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 ---
-# Product Visuals powered by AEM Assets Integration for Commerce
+# AEM Assets Integration for Commerce
 
 The demand for personalized content is rapidly increasing while marketing budgets are under pressure. Retailers and brands are struggling to keep pace with the growing need for variations in product imagery, driven by regional, seasonal, and segment-specific requirements.
 
@@ -12,7 +12,7 @@ Consider a retailer with 1,000 products. Even before factoring in attribute vari
 
 ![check](assets/product-visuals-example.png)
 
-The Adobe Commerce and Product Visuals integration addresses this challenge by automating asset management workflows. The integration ensures that digital assets, such as product images and marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes. This process streamlines operations and enhances efficiency by enabling:
+The AEM Assets Integration addresses this challenge by automating asset management workflows. The integration ensures that digital assets, such as product images and marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes. This process streamlines operations and enhances efficiency by enabling:
 
 * **Seamless Installation and Configuration**– Merchandising teams and developers can quickly set up the integration using familiar Adobe tools and workflows.
 
@@ -21,6 +21,18 @@ The Adobe Commerce and Product Visuals integration addresses this challenge by a
 * **Streamlined Catalog Management**-Automates asset refresh and cleanup, minimizing manual effort and ensuring a consistent, well-maintained product catalog.
 
 ## Requirements to use the integration
+
+>[!BEGINTABS]
+
+>[!TAB Product Visuals powered by AEM Assets]
+
+[![learn more](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+
+>[!TAB AEM Assets]
+
+[![learn more](assets/learn-more-button.svg)](onboard.md)
+
+>[!ENDTABS]
 
 To leverage this integration, businesses must meet the following requirements:
 

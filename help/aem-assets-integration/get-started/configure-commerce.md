@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce packages
-description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use Product Visuals with Adobe Commerce.
+description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use  or AEM Assets with Adobe Commerce.
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
@@ -41,7 +41,7 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 ## Install the `aem-assets-integration` extension
 
-Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) for Product Visuals on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
+Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
 >[!BEGINTABS]
 
@@ -55,27 +55,27 @@ Use this method to install the [!DNL AEM Assets Integration] extension on a Comm
    >
    >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
 
-1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
+2. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
 
    ```shell
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Add the AEM Assets Integration for Commerce extension.
+3. Add the AEM Assets Integration for Commerce extension.
 
    ```shell
    composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
    ```
 
-1. Update package dependencies.
+4. Update package dependencies.
 
    ```shell
    composer update "magento/aem-assets-integration"
    ```
 
-1. Commit and push code changes for the `composer.json` and `composer.lock` files.
+5. Commit and push code changes for the `composer.json` and `composer.lock` files.
 
-1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
+6. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
 
    ```shell
    git add -A
