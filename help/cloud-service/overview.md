@@ -44,14 +44,14 @@ Commerce Storefront is fully headless with a decoupled architecture that provide
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
-- [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-- [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-- [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
-- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+* [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
+* [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+* [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
+* [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Product Visuals powered by AEM Assets
 
-Product Visuals powered by AEM Assets help simplify asset management using a digital asset management (DAM) system that integrates with the Adobe Experience Manager for managing rich media content.
+Product Visuals help simplify asset management using a digital asset management (DAM) system that integrates with the Adobe Experience Manager for managing rich media content.
 
 The integration ensures that digital assets, such as product images or marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
 
@@ -59,9 +59,53 @@ Product Visuals is available out-of-the-box with [!DNL Adobe Commerce as a Cloud
 
 Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
-### Product Visuals vs AEM Assets
+### Product Visuals or AEM Assets
 
 The following image shows both offerings, depending on your content supply chain needs:
+
+>[!BEGINTABS]
+
+>[!TAB Product Visuals]
+
+* Integrated automated product image & video Digital Asset Manager (DAM)
+
+* Resize, crop and convert images
+
+* High-speed image & video delivery
+
+* Optimize image formats, sizes, and quality based on client's browser
+
+* Access to Adobe Express and Adobe Firefly
+
+* Usage limits for image/video delivery capacity and users
+
+* Integrated Asset selector
+
+>[!TAB AEM Assets]
+
+* All capabilities from Product Visuals
+
+* Full marketing DAM to power more than your ecommerce site
+
+* Ability to have unlimited users (pay per user)
+
+* Unlimited image/video delivery 
+
+* Advanced asset management functionality, including:
+  
+  * 3D Model support & immersive content
+  
+  * PDF support
+  
+  * AI-powered Smart Cropping
+  
+  * Dynamic Image Templates
+  
+  * Smart Tagging
+  
+  * Tracking/analytics on asset performance
+
+>[!ENDTABS]
 
 ![Compare DAM offerings](../cloud-service/assets/compare-offerings.png){zoomable="yes"}
 
