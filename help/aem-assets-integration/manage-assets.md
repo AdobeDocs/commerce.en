@@ -1,6 +1,6 @@
 ---
 title: Manage assets
-description: Use the AEM Assets integration for Commerce to manage media assets for your storefront.
+description: Use the AEM Assets Integration for Commerce to manage media assets for your storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 ---
