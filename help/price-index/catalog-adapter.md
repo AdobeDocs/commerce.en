@@ -24,7 +24,7 @@ When you enable the [!DNL Catalog Adapter], price indexing and operations are af
 ## Requirements
 
 - Adobe Commerce 2.4.4+
-- Support for one of the following Commerce Services:
+- Your Adobe Commerce environment must have one of the following Commerce services enabled and configured:
 
   - [Live Search](../live-search/install.md)
   - [Product Recommendations](../product-recommendations/install-configure.md)
