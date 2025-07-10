@@ -14,6 +14,7 @@ When the **AEM Asset Selector** integration is configured, marketers and merchan
 
 * Manage category images effortlessly, ensuring they align with brand and campaign guidelines.
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Assign assets directly in Page Builder for visually rich content.
+* [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} Assign Assets directly in Commerce Storefront powered by Edge Delivery Services for visually enrich content.
 
 >[!NOTE]
 >

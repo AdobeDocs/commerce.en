@@ -49,7 +49,7 @@ Adobe Commerce provides Page Builder as a **content management system (CMS)** fo
 
 ### Using AEM Asset Selector in Page Builder
 
-To use the **AEM Asset Selector** for embedding images:
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} To use the **AEM Asset Selector** for embedding images:
 
 1. Navigate to any section in the **Adobe Commerce Admin** that supports `content enrichment` using **Page Builder**.
 
@@ -70,6 +70,10 @@ The association to the selected image will be stored in Adobe Commerce as a dire
 * Marketers work exclusively with approved assets from the DAM.
 
 * Content remains consistent and up-to-date across all customer touchpoints.
+
+>[!TIP]
+>
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} also provides an Asset selector to enrich data.
 
 ## Product videos
 
