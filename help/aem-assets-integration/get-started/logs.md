@@ -1,13 +1,13 @@
 ---
 title: View and manage logs
-description: Learn where to find and manage logs.
+description: Learn where to find and manage logs for the AEM Assets Integration for Commerce.
 feature: CMS, Media, Integration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: 9c6c8694-6ded-4cc8-a3ab-d1dfb50e3583
 ---
 # View and manage logs
 
-The integration provides the following log files in your Commerce instance:
+The AEM Assets integration provides the following log files in your Commerce instance:
 
 - `/var/log/aem-assets-integration.log`
 - `/var/log/aem-assets-integration-errors.log`
