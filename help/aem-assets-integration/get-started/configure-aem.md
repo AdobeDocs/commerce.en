@@ -1,12 +1,12 @@
 ---
 title: Configure the AEM Assets Project
-description: Enable seamless asset synchronization between Adobe Commerce and AEM Assets by adding the required metadata for the Product Visuals integration.
+description: Enable seamless asset synchronization between Adobe Commerce and AEM Assets by adding the required metadata for the integration.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 ---
 # Configure the AEM Assets project to support Commerce metadata
 
-To use Product Visuals to manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required boilerplate code and metadata to manage Commerce assets from the AEM authoring environment.
+To manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required boilerplate code and metadata to manage Commerce assets from the AEM authoring environment.
 
 * **Step 1:** Install an AEM project template with the boilerplate code to add the Commerce namespace and metadata schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
 * **Step 2:** Set up the metadata profile to apply to Commerce asset files

@@ -1,12 +1,12 @@
 ---
-title: Product Visuals release notes
+title: AEM Assets Integration release notes
 description: Review the release notes for information about all AEM Assets Integration releases.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
 ---
-# Product Visuals release notes
+# AEM Assets Integration release notes
 
-These release notes describe the initial release of Product Visuals and include:
+These release notes describe the initial release of AEM Assets Integration and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
@@ -42,7 +42,7 @@ _April 23, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-955 --> Now, a [Custom Domain URL](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url) can be used instead of the AEM Delivery URL. If a merchant sets a **Custom Domain Name** in their AEM dashboard, it is necessary to add this **Custom Domain URL** in Commerce.
+![New issue](../assets/new.svg)<!-- Issue ACAP-955 --> Now, a [Custom Domain URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) can be used instead of the AEM Delivery URL. If a merchant sets a **Custom Domain Name** in their AEM dashboard, it is necessary to add this **Custom Domain URL** in Commerce.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-987 --> Improved overall logs for AEM Assets synchronization processes.
 
@@ -52,7 +52,7 @@ _March 12, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-xx --> Now, the [Assets selector IMS Client ID](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization) is required by the Assets Selector to enable mapping AEM Assets images with product categories and Page Builder generated content.
+![New issue](../assets/new.svg)<!-- Issue ACAP-xx --> Now, the [Assets selector IMS Client ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) is required by the Assets Selector to enable mapping AEM Assets images with product categories and Page Builder generated content.
 
 ## v1.0.20
 

@@ -49,11 +49,24 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 - [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
-## Product Visuals
+## Product Visuals powered by AEM Assets
 
-Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
+Product Visuals helps simplify asset management using a digital asset management (DAM) system that integrates with the Adobe Experience Manager for managing rich media content.
 
-See the [Product Visuals](../product-visuals/overview.md) guide to learn more.
+The integration ensures that digital assets, such as product images or marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
+
+Product Visuals is available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from AEM Assets.
+
+Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
+
+### Product Visuals or AEM Assets
+
+The following image shows both offerings, depending on your content supply chain needs:
+
+
+![check](assets/compare-offerings.png){width="700" zoomable="yes"}
+
+See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
 ## Developer Platform
 
