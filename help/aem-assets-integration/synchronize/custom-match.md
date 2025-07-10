@@ -1,6 +1,6 @@
 ---
 title: Custom automatic matching
-description: Learn how custom automatic matching is particularly useful for merchants with complex matching logic or those relying on a third-party system that cannot populate metadata into the AEM Assets.
+description: Learn how custom automatic matching is particularly useful for merchants with complex matching logic or those relying on a third-party system that cannot populate metadata into AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 ---
