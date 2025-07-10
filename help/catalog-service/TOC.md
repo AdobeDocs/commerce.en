@@ -9,7 +9,8 @@ feature: Services, Catalog Service
 
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Catalog Service]](overview.md)
-- [Onboarding and installation](installation.md)
+- [Installation](installation.md)
+- [Get Started with [!DNL Catalog Service]](get-started.md)
 - [Retrieve catalog data](graphql-queries.md)
 - Integrating with other applications {#integration}
    - [Catalog Service and API Mesh](mesh.md)
