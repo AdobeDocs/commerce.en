@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce packages
-description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use  or AEM Assets with Adobe Commerce.
+description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use AEM Assets with Adobe Commerce.
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
