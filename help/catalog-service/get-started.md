@@ -1,10 +1,12 @@
 ---
 title: Get Started with [!DNL Catalog Service]
 description: Learn how to access the [!DNL Catalog Service] and integrate with frontend applications and third-party services.
+role: Admin, Developer
 ---
 
-After the [!DNL Catalog Service] is enabled, you can access the service and use it to retrieve catalog data, such as product and category information, from your Adobe Commerce instance. The service is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries.
+# Get Started with the [!DNL Catalog Service]
 
+After the [!DNL Catalog Service] is enabled, you can access the service and use it to retrieve catalog data, such as product and category information, from your Adobe Commerce instance. The service is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries.
 
 ## Access the service
 
