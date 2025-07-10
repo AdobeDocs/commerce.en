@@ -119,7 +119,7 @@ The Catalog Service ensures accurate price updates and calculations by supportin
 
 The implementation process involves:
 
-1. [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **[Install and configure the Catalog Service](../installation.md)**—Install and configure the Catalog Service extension and set up the SaaS connection using the [!DNL Commerce Services Connector].
+1. [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **[Install and configure the Catalog Service](installation.md)**—Install and configure the Catalog Service extension and set up the SaaS connection using the [!DNL Commerce Services Connector].
 2. **Update storefront code**: Integrate Catalog Service GraphQL queries into your frontend.
 3. **Route queries**: All Catalog Service queries go through the GraphQL gateway (URL provided during onboarding)
 4. **Monitor and troubleshoot data synchronization**: Verify improved performance and monitor results
