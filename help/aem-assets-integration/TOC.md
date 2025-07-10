@@ -1,12 +1,12 @@
 ---
-user-guide-title: "[!DNL Product Visuals] Guide"
-user-guide-description: Comprehensive information about the [!DNL Product Visuals] powered by the AEM Assets Integration for Adobe Commerce and Magento Open Source administrators and eCommerce marketers.
+user-guide-title: "[!DNL AEM Assets] integration Guide"
+user-guide-description: Comprehensive information about the AEM Assets Integration for Adobe Commerce and Magento Open Source administrators and eCommerce marketers.
 feature: CMS, Page Content
 ---
 
-# Product Visuals {#product-visuals}
+# AEM Assets Integration {#aem-assets-integration}
 
-- [Product Visuals](overview.md)
+- [AEM Assets Integration](overview.md)
 - [Release notes](release-notes.md)
 - Get started {#get-started}
   - [Configure the AEM Assets project](get-started/configure-aem.md)

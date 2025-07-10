@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce packages
-description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use Product Visuals with Adobe Commerce.
+description: Learn how to install the AEM Assets Integration for Adobe Commerce extension on an Adobe Commerce instance. This extension is required to use AEM Assets with Adobe Commerce.
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
@@ -41,7 +41,7 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 ## Install the `aem-assets-integration` extension
 
-Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) for Product Visuals on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
+Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
 >[!BEGINTABS]
 
