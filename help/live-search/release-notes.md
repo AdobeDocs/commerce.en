@@ -87,6 +87,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.4.0
+
+_July 11, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Increased the [price grouping](./settings.md#price-faceting) limit from 50 to 100.
+
 ## [!DNL Live Search] 4.3.0
 
 _March 11, 2025_
