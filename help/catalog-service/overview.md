@@ -55,7 +55,7 @@ The data available to the Catalog Service is delivered by the SaaS Data Export e
 
 [!DNL Catalog Service] customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price updates and synchronization time.
 
-## Architecture Overview
+## Architecture details
 
 The following diagram illustrates the architectural differences between the core GraphQL system and Catalog Service GraphQL system, showing how they work together to optimize storefront performance:
 
