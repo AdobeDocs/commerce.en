@@ -1,6 +1,6 @@
 ---
 title: Manage assets
-description: Use the integration to manage media assets for your storefront.
+description: Use the AEM Assets integration for Commerce to manage media assets for your storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 ---
@@ -8,7 +8,7 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
 
-You can manage the following media types using the integration:
+You can manage the following media types after the AEM Assets integration for Commerce is enabled:
 
 * Product images
 * Content images
@@ -73,7 +73,7 @@ The association to the selected image will be stored in Adobe Commerce as a dire
 
 ## Product videos
 
-Adobe Commerce serves as a key engagement channel for digital assets. After the integration is enabled, video management is centralized within the **DAM**, ensuring consistency, compliance, and optimized delivery across commerce storefronts.
+Adobe Commerce serves as a key engagement channel for digital assets. After the AEM Assets integration is enabled, video management is centralized within the **DAM**, ensuring consistency, compliance, and optimized delivery across commerce storefronts.
 
 ### Manage product videos
 
