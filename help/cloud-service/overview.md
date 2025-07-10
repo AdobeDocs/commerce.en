@@ -51,7 +51,7 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 
 ## Product Visuals powered by AEM Assets
 
-Product Visuals help simplify asset management using a digital asset management (DAM) system that integrates with the Adobe Experience Manager for managing rich media content.
+Product Visuals helps simplify asset management using a digital asset management (DAM) system that integrates with the Adobe Experience Manager for managing rich media content.
 
 The integration ensures that digital assets, such as product images or marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
 

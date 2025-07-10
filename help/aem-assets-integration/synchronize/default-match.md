@@ -1,12 +1,12 @@
 ---
 title: Default automatic matching
-description: Learn how the default automatic matching rule enables seamless synchronization between Adobe Commerce and the integration, ensuring that assets are automatically linked to the correct merchandising entities.
+description: Learn how the default automatic matching rule enables seamless synchronization between Adobe Commerce and the AEM Assets integration, ensuring that assets are automatically linked to the correct merchandising entities.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 ---
 # Default automatic matching
 
-The integration provides a default automatic matching mechanism (**[!UICONTROL Match by product SKU]**) based on the **AEM Assets** metadata configuration. This rule enables seamless synchronization between **Adobe Commerce** and **AEM Assets**, ensuring that assets are automatically linked to the correct merchandising entities.
+The AEM Assets integration for Commerce provides a default automatic matching mechanism (**[!UICONTROL Match by product SKU]**) based on the **AEM Assets** metadata configuration. This rule enables seamless synchronization between **Adobe Commerce** and **AEM Assets**, ensuring that assets are automatically linked to the correct merchandising entities.
 
 ## Configure the automatic matching mechanism
 

@@ -113,7 +113,7 @@ Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronizatio
 
 ## Category images
 
-Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels. 
+Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The AEM Assets integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels. 
 
 ### Use AEM Asset Selector for category images
 
