@@ -45,20 +45,17 @@ Adobe provides a collection of Commerce services, integration services, and data
       </p>
    </td>
    <td valign="top">
-      <a href="../aem-assets-integration/overview.md">
-      <img alt="Visual" src="../assets/icons/images.svg" width="40">
+      <a href="../catalog-service/overview.md">
+      <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
-         <a href="../aem-assets-integration/overview.md">
-         <strong>AEM Assets integration</strong>
+         <a href="../catalog-service/overview.md">
+         <strong>Catalog Service</strong>
          </a>
       </div>
       <p>
-         <em>Simplify digital asset management using a system that integrates with Adobe Experience Manager for managing rich media content.</em>
+         <em>Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.</em>
       </p>
-   </td>
-   <td valign="top">
-      <!-- Empty cell to maintain table structure -->
    </td>
 </tr>
 <tr style="border: 0;">
@@ -86,19 +83,6 @@ Adobe provides a collection of Commerce services, integration services, and data
       </div>
       <p>
          <em>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../catalog-service/overview.md">
-      <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
-      </a>
-      <div>
-         <a href="../catalog-service/overview.md">
-         <strong>Catalog Service</strong>
-         </a>
-      </div>
-      <p>
-         <em>Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.</em>
       </p>
    </td>
    <td valign="top">
@@ -145,6 +129,19 @@ Adobe provides a collection of Commerce services, integration services, and data
       </div>
       <p>
          <em>Configure authentication to enable secure communication between Adobe Commerce and connected services. For each environment, specify the data space ID for Commerce services data storage.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../aem-assets-integration/overview.md">
+      <img alt="Visual" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+          <a href="../aem-assets-integration/overview.md">
+         <strong>AEM Assets integration</strong>
+         </a>
+      </div>
+      <p>
+         <em>Simplify digital asset management using a system that integrates with Adobe Experience Manager for managing rich media content.</em>
       </p>
    </td>
 </tr>
