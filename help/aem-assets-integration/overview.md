@@ -10,7 +10,7 @@ The demand for personalized content is rapidly increasing while marketing budget
 
 Consider a retailer with 1,000 products. Even before factoring in attribute variations, the number of required digital assets expands significantly when considering different regions, customer segments, and personalization efforts. This can lead to an overwhelming number of asset variations, reaching into the millions.
 
-![check](assets/product-visuals-example.png)
+![overview](assets/product-visuals-example.png){width="700" zoomable="yes"}
 
 The AEM Assets Integration addresses this challenge by automating asset management workflows. The integration ensures that digital assets, such as product images and marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes. This process streamlines operations and enhances efficiency by enabling:
 
@@ -28,9 +28,7 @@ To leverage this integration either with Product Visuals or AEM Assets, business
 
 >[!TAB Product Visuals]
 
-[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}  Active licenses for Adobe Commerce, Product Visuals powered by AEM Assets, and [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
-
-[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} Adobe Experience Manager is provisioned with [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}  Active licenses for Adobe Commerce, Product Visuals powered by AEM Assets, and [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (These licenses are available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer]).
 
 >[!TAB AEM Assets]
 
