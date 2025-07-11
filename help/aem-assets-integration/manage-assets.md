@@ -1,14 +1,14 @@
 ---
 title: Manage assets
-description: Use Product Visuals with AEM Assets to manage media assets for your storefront.
+description: Use the AEM Assets Integration for Commerce to manage media assets for your storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 ---
-# Manage Commerce media assets with Product Visuals
+# Manage Commerce media assets
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
 
-You can manage the following media types using Product Visuals powered by AEM Assets:
+You can manage the following media types after the AEM Assets integration for Commerce is enabled:
 
 * Product images
 * Content images
@@ -17,7 +17,7 @@ You can manage the following media types using Product Visuals powered by AEM As
 
 ## Product images
 
-When the Product visuals integration is enabled, image management is centralized within the Digital Asset Management system (DAM). Adobe Commerce then functions as a key engagement channel, ensuring that only approved, high-quality images are used across storefronts. This setup enhances brand consistency, minimizes manual effort, and streamlines content updates—eliminating the need for merchants to manually upload or manage images within Adobe Commerce.
+When the integration is enabled, image management is centralized within the Digital Asset Management system (DAM). Adobe Commerce then functions as a key engagement channel, ensuring that only approved, high-quality images are used across storefronts. This setup enhances brand consistency, minimizes manual effort, and streamlines content updates—eliminating the need for merchants to manually upload or manage images within Adobe Commerce.
 
 ### View product images in Adobe Commerce
 
@@ -49,7 +49,7 @@ Adobe Commerce provides Page Builder as a **content management system (CMS)** fo
 
 ### Using AEM Asset Selector in Page Builder
 
-To use the **AEM Asset Selector** for embedding images:
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} To use the **AEM Asset Selector** for embedding images:
 
 1. Navigate to any section in the **Adobe Commerce Admin** that supports `content enrichment` using **Page Builder**.
 
@@ -71,9 +71,13 @@ The association to the selected image will be stored in Adobe Commerce as a dire
 
 * Content remains consistent and up-to-date across all customer touchpoints.
 
+>[!TIP]
+>
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} also provides an Asset selector to enrich data.
+
 ## Product videos
 
-Adobe Commerce serves as a key engagement channel for digital assets. After Product Visuals is enabled, video management is centralized within the **DAM**, ensuring consistency, compliance, and optimized delivery across commerce storefronts.
+Adobe Commerce serves as a key engagement channel for digital assets. After the AEM Assets integration is enabled, video management is centralized within the **DAM**, ensuring consistency, compliance, and optimized delivery across commerce storefronts.
 
 ### Manage product videos
 
@@ -113,7 +117,7 @@ Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronizatio
 
 ## Category images
 
-Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The integration leverages AEM Asset Selector, enabling marketers to seamlessly select product visuals directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels. 
+Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The AEM Assets integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels. 
 
 ### Use AEM Asset Selector for category images
 
@@ -143,7 +147,7 @@ After you configure the [AEM Asset Selector](synchronize/asset-selector-integrat
 
 ## Update an asset
 
-After you update and approve an asset in AEM Assets, the updates are automatically sent to Adobe Commerce using the Product Visuals automated matching capability. This process is triggered upon asset approval. To ensure all final changes and metadata updates are included, make sure to reprocess the asset before approving it.
+After you update and approve an asset in AEM Assets, the updates are automatically sent to Adobe Commerce using the automated matching capability. This process is triggered upon asset approval. To ensure all final changes and metadata updates are included, make sure to reprocess the asset before approving it.
 
 For details, see the following AEM Assets documentation.
 

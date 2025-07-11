@@ -92,4 +92,4 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Manage Commerce assets with Product Visuals](../manage-assets.md)
+[Manage Commerce assets](../manage-assets.md)
