@@ -98,7 +98,7 @@ Select the type of strategy for the rule. The **Test your rule** window displays
 
 >[!NOTE]
 >
->The storefront search experience reflects the combined influence of multiple configurations, such as facets, synonyms, and query rules, which can lead to results that differ from those seen when testing individual configurations in the Admin area.
+>The storefront search experience reflects the combined influence of multiple configurations, such as facets, synonyms, and search / category merchandising rules, which can lead to results that differ from those seen when testing individual configurations in the Admin area.
 >
 >This is expected behavior: while Admin testing isolates specific configuration areas, the Storefront applies all relevant configurations together, resulting in a more complex and realistic search output.
 
