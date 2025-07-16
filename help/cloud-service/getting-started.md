@@ -66,11 +66,8 @@ This diagram provides a high-level overview of how developers create integration
 
    >[!NOTE]
    >
-   >Sandbox instances are currently limited to the North America region.
-
-1. _(Optional)_ If you want to include sample product data for testing and learning purposes, select [!UICONTROL **Adobe Store**] from the [!UICONTROL **Test data**] dropdown.
-
-   You can skip this option, but your storefront will not have any products if you do. You will have to [import your catalog](#import-your-catalog) to see the full storefront experience.
+   >* Sandbox instances are currently limited to the North America region.
+   >* The option to install sample data is currently unavailable.
 
 1. Click [!UICONTROL **Add Instance**].
 

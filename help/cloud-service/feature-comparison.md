@@ -35,7 +35,7 @@ The following table describes the features and replacement solutions available i
     <tbody>
         <tr>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital asset management</a></td>
-            <td><a href="../product-visuals/overview.md">Product Visuals</a></td>
+            <td><a href="../aem-assets-integration/overview.md">AEM Assets integration</a></td>
             <td>A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets.</td>
         </tr>
         <tr>
