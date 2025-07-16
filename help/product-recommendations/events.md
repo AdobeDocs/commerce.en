@@ -84,7 +84,7 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 >[!NOTE]
 >
->Product Recommendation metrics are optimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment.
+>Product Recommendation metrics are optimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment. If you are using an edge delivery storefront with the product recommendations drop-in, learn how to [collect and send user interaction events to Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/).
 
 #### Required dashboard events
 
