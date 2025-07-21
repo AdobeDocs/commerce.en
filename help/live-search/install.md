@@ -73,7 +73,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    - If you are adding the [!DNL Live Search] extension to a **new Adobe Commerce installation**, run the following command to disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search]. Then, proceed to step 4.
 
      ```bash
-     bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+     bin/magento module:disable Magento_ Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
      ```
 
    - If you are adding the [!DNL Live Search] extension to an **existing Adobe Commerce installation**, run the following to disable the [!DNL Live Search] modules that serve storefront search results. Then, proceed to step 4:
@@ -110,7 +110,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_OpenSearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_OpenSearch Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_Elasticsearch6 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
 1. Run the setup again to install the updates.
