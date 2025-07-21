@@ -49,7 +49,9 @@ The result of this step creates a configuration file that you use in the next st
 
 #### Step 2: Download configuration file
 
-Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copy and paste the contents of this file into the **Service Account/Credential details** page of the Commerce Admin.
+Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). The `<workspace-name>.json` file contains all the values you need to enter into the **Service Account/Credential details** page of the Commerce Admin.
+
+![[!DNL Data Connection] Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
 1. In the Commerce Admin, navigate to **Stores** > Settings > **Configuration** > **Services** > **[!DNL Data Connection]**.
 
@@ -63,9 +65,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
    See [Service Account (JWT) Authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) for more information about the `private.key` file.
 
-1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** field.
-
-    ![[!DNL Data Connection] Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** fields, such as `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"`, and so on.
 
 1. Click **Save Config**.
 
