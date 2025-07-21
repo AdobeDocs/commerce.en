@@ -68,22 +68,23 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    ```bash
    composer require magento/live-search
    ```
+1. Disable modules:
+   
+   - If you are adding the [!DNL Live Search] extension to a **new Adobe Commerce installation**, run the following command to disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search]. Then, proceed to step 4.
 
-   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following command to disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search]. Then, proceed to step 4.
+     ```bash
+     bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+     ```
 
-   ```bash
-      bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
-   ```
+   - If you are adding the [!DNL Live Search] extension to an **existing Adobe Commerce installation**, run the following to disable the [!DNL Live Search] modules that serve storefront search results. Then, proceed to step 4:
 
-   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to disable the [!DNL Live Search] modules that serve storefront search results. Then, proceed to step 4:
+     ```bash
+     bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
+     ```
 
-   ```bash
-      bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
-   ```
+     [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-   [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
-
-1. Run the following:
+1. Run the setup to install the updates.
 
    ```bash
    bin/magento setup:upgrade
@@ -100,19 +101,20 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    - Categories Feed
    - Category Permissions Feed
 
-1. If you are installing [!DNL Live Search] on a new Commerce instance, you are done and can skip to the [2. Configure API keys](#2-configure-api-keys) section. If you are installing Live Search to an existing Commerce instance, proceed to the next step.
+1. If you are installing [!DNL Live Search] on a **new Commerce instance**, you are done. Skip to the [2. Configure API keys](#2-configure-api-keys) section. If you are installing Live Search to an **existing Commerce instance**, proceed to the next step.
 
-1. Run the following commands to enable the [!DNL Live Search] extension, disable [!DNL OpenSearch], and run `setup`.
+1. Run the following commands to enable the [!DNL Live Search] extension, disable [!DNL OpenSearch].
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_OpenSearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
+1. Run the setup again to install the updates.
+   
    ```bash
    bin/magento setup:upgrade
    ```
