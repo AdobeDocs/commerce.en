@@ -9,7 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 Adobe Commerce [!DNL Live Search] and [[!DNL Catalog Service]](../catalog-service/guide-overview.md) work together to provide a performant, relevant, and intuitive search solution to allow your customers to find exactly what they need, fast. Specifically, [!DNL Catalog Service] surfaces your catalog data for SaaS services, such as [!DNL Live Search] to use.
 
-This article provides step-by-step instructions for implementing [!DNL Live Search] with [!DNL Catalog Service].
+This article provides step-by-step instructions for implementing [!DNL Live Search] with the [!DNL Catalog Service].
 
 ## Audience
 
@@ -24,7 +24,7 @@ This article is intended for the developer or systems integrator on your team wh
 
 >[!IMPORTANT]
 >
->Before implementing Live Search, see the [Boundaries and Limits](boundaries-limi to ensure that [!DNL Live Search] fits your business needs.
+>Before implementing [!DNL Live Search], see the [Boundaries and Limits](boundaries-limi to ensure that [!DNL Live Search] fits your business needs.
 
 ## Important updates
 
@@ -58,7 +58,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 >[!TAB New Commerce instance]
 
-Follow these instructions if you are installing Live Search on a new Commerce instance.
+Follow these instructions if you are installing [!DNL Live Search] on a new Commerce instance.
 
 1. Confirm that [cron jobs]() and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
@@ -99,7 +99,7 @@ After verifying the indexers, the next step is to [configure the API keys](#2-co
 
 >[!TAB Existing Commerce instance]
 
-Follow these instructions if you are installing Live Search on an existing Commerce instance.
+Follow these instructions if you are installing [!DNL Live Search] on an existing Commerce instance.
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
@@ -324,7 +324,7 @@ To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the a
 Ensure that the storefront events deployed to your site are working. This check is especially important for headless implementations.
 
 - Review the [events](events.md) that are required for [!DNL Live Search].
-- Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environments.
+- Ensure that the [[!DNL Live Search] dashboard](performance.md) is displaying data from your non-production environments.
 - [Verify event collection](../product-recommendations/verify.md). While this page is in the [!DNL Product Recommendations] guide, the verification steps apply to [!DNL Live Search] as well.
 
 ## 8. Customize for your storefront
@@ -341,7 +341,7 @@ In this scenario, you can customize the JavaScript for your own needs and then h
 
 ## Updating [!DNL Live Search]
 
-Before updating Live Search, run the following from the command line to check the version of Live Search that is installed:
+Before updating [!DNL Live Search], run the following from the command line to check the version of [!DNL Live Search] that is installed:
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -440,7 +440,7 @@ For some use cases, it maybe better to call [!DNL Catalog Service] for product d
 If you have a custom headless implementation, check out the [!DNL Live Search] reference implementations:
 
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
-- [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
+- [[!DNL Live Search] field](https://github.com/adobe/storefront-search-as-you-type)
 
 Automatic collection of user interaction data does not work by default if you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
@@ -494,7 +494,7 @@ Admins can also set the language of the [search index](settings.md#language), to
 
 ### Widget code repository
 
-The code for the product listing page widget and the Live Search field widget is available for download from GitHub.
+The code for the product listing page widget and the [!DNL Live Search] field widget is available for download from GitHub.
 
 Developers who have access to the code can completely customize how it works and looks. They host the code on their own servers but still use the [!DNL Live Search] service.
 
@@ -503,7 +503,7 @@ Developers who have access to the code can completely customize how it works and
 
 ### Data Export extension
 
-After Live Search is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and Live Search. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
+After [!DNL Live Search] is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and [!DNL Live Search]. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
 
 ### Inventory management
 
@@ -513,11 +513,11 @@ After Live Search is enabled, the Data Export extension synchronizes Commerce da
 
 ### Price indexer
 
-Live Search customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
+[!DNL Live Search] customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
 
 ### Price support
 
-Live Search widgets support most but not all price types supported by Adobe Commerce.
+[!DNL Live Search] widgets support most but not all price types supported by Adobe Commerce.
 
 Currently, basic prices are supported. Advanced prices that are not supported are:
 
