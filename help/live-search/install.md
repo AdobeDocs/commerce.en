@@ -103,7 +103,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 1. If you are installing [!DNL Live Search] on a **new Commerce instance**, you are done. Skip to the [2. Configure API keys](#2-configure-api-keys) section. If you are installing Live Search to an **existing Commerce instance**, proceed to the next step.
 
-1. Run the following commands to enable the [!DNL Live Search] extension, disable [!DNL OpenSearch].
+1. Run the following commands to enable the [!DNL Live Search] extension, and disable  [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
