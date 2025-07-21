@@ -34,7 +34,7 @@ This article is intended for the developer or systems integrator on your team wh
 
 ## Supported platforms
 
-- Adobe Commerce on the Cloud (ECE) : 2.4.4+
+- Adobe Commerce on Cloud (ECE) : 2.4.4+
 - Adobe Commerce on-prem (EE) : 2.4.4+
 
 ## Workflow overview
@@ -78,7 +78,7 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-1. Run the setup to install the updates.
+1. Install the updates.
 
    ```bash
    bin/magento setup:upgrade
@@ -111,7 +111,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    composer require magento/live-search
    ```
 
-1. Run the following to disable the [!DNL Live Search] modules that serve storefront search results.
+1. Disable the [!DNL Live Search] modules that serve storefront search results.
 
    ```bash
    bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
@@ -119,7 +119,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-1. Run the setup to install the updates.
+1. Install the updates.
 
    ```bash
    bin/magento setup:upgrade
@@ -136,7 +136,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    - Categories Feed
    - Category Permissions Feed
 
-1. Run the following commands to enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
+1. Enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
@@ -146,7 +146,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl Magento_OpenSearch
    ```
 
-1. Run the setup again to install the updates.
+1. Install the updates.
 
    ```bash
    bin/magento setup:upgrade
