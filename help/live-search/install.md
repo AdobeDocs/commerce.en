@@ -60,7 +60,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 Follow these instructions if you are installing [!DNL Live Search] on a new Commerce instance.
 
-1. Confirm that [cron jobs]() and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
+1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
 1. Download the `live-search` package from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
 
