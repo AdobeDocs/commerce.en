@@ -1,12 +1,12 @@
 ---
 title: Improve SaaS Data Export Performance
-description: Learn how to improve SaaS data export performance for Commerce Services by using multi-thread data export mode.
+description: Learn how to improve SaaS data export performance for Commerce Services by using a multi-thread data export mode.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
 ---
 # Improve SaaS Data Export Performance
 
-**Multi-thread data export mode** speeds up the export process by splitting feed data into batches and processing them in parallel.
+**Multi-thread data export mode** accelerates the export process by dividing feed data into batches and processing them in concurrently.
 
 Developers or system integrators can improve performance by using the multi-thread data export mode instead of the default single-thread mode. In single-thread mode, there is no parallelization of the feed submission process. Additionally, due to the default limits set, all clients are restricted to using only one thread. In most cases, customizing the configuration is not required.
 

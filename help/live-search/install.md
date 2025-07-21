@@ -24,7 +24,7 @@ This article is intended for the developer or systems integrator on your team wh
 
 >[!IMPORTANT]
 >
->Before implementing [!DNL Live Search], see the [Boundaries and Limits](boundaries-limi to ensure that [!DNL Live Search] fits your business needs.
+>Before implementing [!DNL Live Search], see the [Boundaries and Limits](boundaries-limits.md) section to ensure that [!DNL Live Search] fits your business needs.
 
 ## Important updates
 
