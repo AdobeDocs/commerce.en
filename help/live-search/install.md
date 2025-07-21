@@ -272,7 +272,7 @@ To check if your catalog data has been exported from Adobe Commerce and synced w
    - The returned product count is close to what you expect for the store view.
    - Facets are returned.
 
-For additional help, see [[!DNL Live Search] catalog is not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in the Support Knowledge Base.
+For additional help, see [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in the Support Knowledge Base.
 
 ## 5. Configure the data
 
@@ -341,7 +341,7 @@ In this scenario, you can customize the JavaScript for your own needs and then h
 
 ## Updating [!DNL Live Search]
 
-Before updating [!DNL Live Search], run the following from the command line to check the version of [!DNL Live Search] that is installed:
+Before updating [!DNL Live Search], check the version of [!DNL Live Search] that is installed using Composer.
 
 ```bash
 composer show magento/module-live-search | grep version
