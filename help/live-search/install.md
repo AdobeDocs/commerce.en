@@ -64,7 +64,7 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
 
 1. Use Composer to add the Live Search module to your project:
 
-    ```bash
+   ```bash
    composer require magento/live-search --no-update
    ```
 
@@ -109,9 +109,10 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
 1. Use Composer to add the Live Search module to your project:
 
-    ```bash
+   ```bash
    composer require magento/live-search --no-update
    ```
+
 1. Update dependencies and install the extension:
 
    ```bash
