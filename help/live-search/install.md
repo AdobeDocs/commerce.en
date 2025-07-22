@@ -62,12 +62,16 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
-1. Download the `live-search` package from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
+1. Use Composer to add the Live Search module to your project:
 
-1. Install the `magento/live-search` module with Composer:
+    ```bash
+   composer require magento/live-search --no-update
+   ```
+
+1. Update dependencies and install the extension:
 
    ```bash
-   composer require magento/live-search
+   composer update magento/live-search --with-dependencies
    ```
 
 1. Disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search].
@@ -103,12 +107,15 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
-1. Download the `live-search` package from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
+1. Use Composer to add the Live Search module to your project:
 
-1. Install the `magento/live-search` module with Composer:
+    ```bash
+   composer require magento/live-search --no-update
+   ```
+1. Update dependencies and install the extension:
 
    ```bash
-   composer require magento/live-search
+   composer update magento/live-search --with-dependencies
    ```
 
 1. Disable the [!DNL Live Search] modules that serve storefront search results.
@@ -143,8 +150,12 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    ```
 
    ```
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl Magento_OpenSearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
+
+   >[!NOTE]
+   >
+   >The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error.
 
 1. Install the updates.
 
