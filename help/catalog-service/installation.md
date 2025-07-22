@@ -88,6 +88,7 @@ Use this method to install the [!DNL Catalog Service] for a Commerce Cloud insta
    ```bash
    composer update "magento/catalog-service"
    ```
+
 1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
 
    ```shell
