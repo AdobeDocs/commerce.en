@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.7 Release
+
+![Fix](../assets/fix.svg) Aggregate view table to collect all category permissions products is still precent but not used anymore. <!--MDEE-1065-->
+
 ## 103.4.6 Release
 
 ![Fix](../assets/fix.svg) Export Adobe Commerce downloadable product data using the `ac_downloadable` attribute for use with Adobe Commerce Optimizer.. <!--MDEE-1043-->
