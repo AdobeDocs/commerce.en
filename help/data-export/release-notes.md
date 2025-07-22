@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.7 Release
 
-![Fix](../assets/fix.svg) Obsolete tables that stored category permissions for products have been deleted. <!--MDEE-1065-->
+![Fix](../assets/fix.svg) Removed obsolete tables that stored category permissions for products. <!--MDEE-1065-->
 
 ## 103.4.6 Release
 
