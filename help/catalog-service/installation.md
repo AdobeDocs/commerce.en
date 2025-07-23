@@ -89,8 +89,6 @@ Use this method to install the [!DNL Catalog Service] for a Commerce Cloud insta
    composer update "magento/catalog-service"
    ```
 
-1. Commit and push code changes for the `composer.json` and `composer.lock` files.
-
 1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
 
    ```shell
