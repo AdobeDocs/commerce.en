@@ -33,7 +33,7 @@ Before implementing custom identity attributes, make sure you:
    - `primaryID` (String) - Primary identity field name
    - `secondaryID` (String) - Secondary identity field name
 
-![AEP Schema Configuration](./assets/aep-schema-configuration.png)
+![Experience Platform Schema Configuration](./assets/aep-schema-configuration.png)
 
 >[!NOTE]
 >
