@@ -209,9 +209,7 @@ You need the following information to update the storefront boilerplate code:
 
    * Replace the `{{ORG}}` string with the organization or username for your repository.
 
-   * Replace the `{{SITE}}` string with the repository name
-
-   * Replace the `{{pathname}}` with ?????
+   * Replace the `{{SITE}}` string with the repository name.
 
    +++Example of updated configuration file
 
