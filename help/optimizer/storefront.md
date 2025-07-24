@@ -184,6 +184,7 @@ You need the following information to update the storefront boilerplate code:
    ```shell
    mkdir tools/sidekick
    ```
+
 1. Copy the `demo-sidekick.json` file in the root directory to the `tools/sidekick` directory and rename it to `config.json`.
 
    ```shell
