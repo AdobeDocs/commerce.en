@@ -402,7 +402,7 @@ Profile events captured from the server-side include account information, such a
 
 >[!NOTE]
 >
->Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier.
+>Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier. [Learn](custom-identities.md) how you can create custom identity attributes to enhance customer profile identification.
 
 ### accountCreated
 

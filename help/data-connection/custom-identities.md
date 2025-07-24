@@ -1,13 +1,13 @@
 ---
-title: Add Custom Identity Attributes
-description: Learn how to add custom identity attributes to customer profiles in backoffice events.
+title: Add Custom Attributes to Profiles
+description: Learn how to add custom attributes to customer profiles.
 role: Admin, Developer
 feature: Personalization, Integration
 ---
 
-# Custom Identity Attributes
+# Add Custom Attributes to Profiles
 
-Custom identity attributes allow you to enhance customer profile identification in Experience Platform by using additional identifiers beyond the default `customerId` and `emailId`. This enables more precise customer matching and improved data integration between your Commerce platform and Experience Platform.
+Custom profile attributes allow you to enhance customer profile identification in Experience Platform by using additional identifiers beyond the default `customerId` and `emailId`. This enables more precise customer matching and improved data integration between your Commerce platform and Experience Platform.
 
 ## Benefits
 
@@ -86,7 +86,7 @@ class AddressCustomId implements EventDataProcessorInterface
         $eventData['profileAttributes']['primaryID'] = 'hashedPID';
         $eventData['profileAttributes']['secondaryID'] = 'hashedSID';
 
-        // Ensure both IDs are present, otherwise, Magento will default primary to customerId and secondary to emailId
+        // Ensure both IDs are present, otherwise, Commerce will default primary to customerId and secondary to emailId
         if (empty($eventData['profileAttributes']['primaryID']) || empty($eventData['profileAttributes']['secondaryID'])) {
             $eventData['profileAttributes']['primaryID'] = $eventData['customerId'] ?? '';
             $eventData['profileAttributes']['secondaryID'] = $eventData['email'] ?? '';
@@ -140,7 +140,7 @@ class CustomId implements EventDataProcessorInterface
         $eventData['profileAttributes']['primaryID'] = 'hashedPID';
         $eventData['profileAttributes']['secondaryID'] = 'hashedSID';
 
-        // Ensure both IDs are present, otherwise, Magento will default primary to customerId and secondary to emailId
+        // Ensure both IDs are present, otherwise, Commerce will default primary to customerId and secondary to emailId
         if (empty($eventData['profileAttributes']['primaryID']) || empty($eventData['profileAttributes']['secondaryID'])) {
             $eventData['profileAttributes']['primaryID'] = $eventData['customerId'] ?? '';
             $eventData['profileAttributes']['secondaryID'] = $eventData['email'] ?? '';
@@ -211,20 +211,20 @@ class CustomId implements EventDataProcessorInterface
 
 ### Missing primaryID or secondaryID
 
-**Symptoms:** Data defaults to customerId/emailId instead of custom values.
-**Solution:** Ensure both `primaryID` and `secondaryID` are set in the `profileAttributes` object.
+- **Symptoms:** Data defaults to customerId/emailId instead of custom values.
+- **Solution:** Ensure both `primaryID` and `secondaryID` are set in the `profileAttributes` object.
 
 ### Invalid hash values
 
-**Symptoms:** Hash values are empty or malformed.
-**Solution:** Verify the source fields (`parent_id`, `entity_id`, `email`) contain valid data before hashing.
+- **Symptoms:** Hash values are empty or malformed.
+- **Solution:** Verify the source fields (`parent_id`, `entity_id`, `email`) contain valid data before hashing.
 
 ### Processors not executing
 
-**Symptoms:** Custom attributes not appearing in event data.
-**Solution:** Check that processors are properly registered in `events.xml` and the module is enabled.
+- **Symptoms:** Custom attributes not appearing in event data.
+- **Solution:** Check that processors are properly registered in `events.xml` and the module is enabled.
 
 ### Experience Platform schema mismatch
 
-**Symptoms:** Data not appearing in Experience Platform or schema validation errors.
-**Solution:** Ensure that the Experience Platform schema includes the custom identity fields with correct data types.
+- **Symptoms:** Data not appearing in Experience Platform or schema validation errors.
+- **Solution:** Ensure that the Experience Platform schema includes the custom identity fields with correct data types.

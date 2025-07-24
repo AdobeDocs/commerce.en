@@ -24,10 +24,11 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
    - [Behavioral Events](events.md)
    - [Back Office Events](events-backoffice.md)
    - [Profile Records](events-profilerecord.md)
-   - [Add Custom Order Attributes](custom-attributes.md)
-   - [Add Custom Identity Attributes](custom-identities.md)
-   - [Custom Events](custom-events.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)
+- Customize Data Collection {#customize-data}
+   - [Add Custom Attributes to Orders](custom-attributes.md)
+   - [Add Custom Attributes to Profiles](custom-identities.md)
+   - [Create Custom Events](custom-events.md)
 - Use Cases {#use-cases}
    - [Use Adobe Journey Optimizer to Send an Abandoned Cart Email](using-ajo.md)
    - [Create an Audience in Real-Time CDP using Commerce Event Data](create-audience.md)
