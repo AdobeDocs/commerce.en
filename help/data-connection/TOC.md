@@ -15,16 +15,17 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 - [Release Notes](release-notes.md)
 - Fundamentals {#fundamentals}
    - [Install the [!DNL Data Connection] extension](install.md)
+   - [Connect to Adobe Experience Platform](connect-data.md)
    - [Types of Commerce Data](data-ingestion.md)
-   - [Update Time Series Event Schemas for Commerce Data Ingestion](update-xdm.md)
-   - [Update Profile Record Schema for Commerce Data Ingestion](profile-data.md)
-   - [Connect Commerce Data to the Adobe Experience Platform](connect-data.md)
-   - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)
+   - [Update Time Series Event Schema](update-xdm.md)
+   - [Update Profile Record Schema](profile-data.md)
+   - [Using the Adobe Experience Platform Mobile SDK](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
    - [Behavioral Events](events.md)
    - [Back Office Events](events-backoffice.md)
    - [Profile Records](events-profilerecord.md)
    - [Add Custom Order Attributes](custom-attributes.md)
+   - [Add Custom Identity Attributes](custom-identities.md)
    - [Custom Events](custom-events.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)
 - Use Cases {#use-cases}
