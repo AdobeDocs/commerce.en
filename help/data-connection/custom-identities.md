@@ -43,7 +43,7 @@ Before implementing custom identity attributes, make sure you:
 
 Create the following PHP processor classes in your custom module:
 
-### AddressCustomHashedId.php
+### AddressCustomHashedId class
 
 This processor hashes `parent_id` and `entity_id` for customer addresses.
 
@@ -68,7 +68,7 @@ class AddressCustomHashedId implements EventDataProcessorInterface
 }
 ```
 
-### AddressCustomId.php
+### AddressCustomId class
 
 This processor sets the primary and secondary ID field names for address events.
 
@@ -97,7 +97,7 @@ class AddressCustomId implements EventDataProcessorInterface
 }
 ```
 
-### CustomHashedId.php
+### CustomHashedId class
 
 This processor hashes `entity_id` and `email` for customer profiles.
 
@@ -122,7 +122,7 @@ class CustomHashedId implements EventDataProcessorInterface
 }
 ```
 
-### CustomId.php
+### CustomId class
 
 This processor sets the primary and secondary ID field names for profile events.
 
@@ -158,6 +158,8 @@ class CustomId implements EventDataProcessorInterface
 >- secondaryID = emailId
 
 ## Data format examples
+
+The following examples demonstrate the expected JSON structure for custom identity attributes in both profile attributes and complete customer profile data formats.
 
 ### Profile attributes format
 
@@ -211,20 +213,20 @@ class CustomId implements EventDataProcessorInterface
 
 ### Missing primaryID or secondaryID
 
-- **Symptoms:** Data defaults to customerId/emailId instead of custom values.
+- **Symptom:** Data defaults to customerId/emailId instead of custom values.
 - **Solution:** Ensure both `primaryID` and `secondaryID` are set in the `profileAttributes` object.
 
 ### Invalid hash values
 
-- **Symptoms:** Hash values are empty or malformed.
+- **Symptom:** Hash values are empty or malformed.
 - **Solution:** Verify the source fields (`parent_id`, `entity_id`, `email`) contain valid data before hashing.
 
 ### Processors not executing
 
-- **Symptoms:** Custom attributes not appearing in event data.
+- **Symptom:** Custom attributes do not appear in event data.
 - **Solution:** Check that processors are properly registered in `events.xml` and the module is enabled.
 
 ### Experience Platform schema mismatch
 
-- **Symptoms:** Data not appearing in Experience Platform or schema validation errors.
+- **Symptom:** Data does not appear in Experience Platform or schema validation errors.
 - **Solution:** Ensure that the Experience Platform schema includes the custom identity fields with correct data types.

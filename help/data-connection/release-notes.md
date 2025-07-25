@@ -74,6 +74,14 @@ _October 12, 2022_
 
 ## 3.3.0
 
+_August 12, 2025_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) - Added ability to add [custom attributes to profiles](custom-identities.md).
+
+## 3.3.0
+
 _March 21, 2025_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer

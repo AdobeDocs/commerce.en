@@ -305,7 +305,7 @@ Profile events captured from the storefront include account information, such as
 
 >[!NOTE]
 >
->[Learn](custom-identities.md) how you can create custom identity attributes to enhance customer profile identification.
+>[Learn](custom-identities.md) how to create custom identity attributes to enhance customer profile identification.
 
 ### signIn
 
