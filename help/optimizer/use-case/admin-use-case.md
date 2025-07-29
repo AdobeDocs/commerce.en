@@ -27,7 +27,7 @@ Before beginning this tutorial, ensure you have the following prerequisites in p
 - **User Permissions**
   - Admin access to Adobe Admin Console
   - See [User Management](../user-management.md) for account setup
-  - If you don't have access, contact your Adobe account representative or complete the [Early Access Program form](https://experienceleague.adobe.com/go/aco-early-access-program)
+  - If you don't have access, contact your Adobe account representative.
 
 - **Sample Data**
   - Carvelo Automobile catalog data loaded into your instance
@@ -438,5 +438,5 @@ To continue learning about Adobe Commerce Optimizer:
 - Explore [merchandising features](../merchandising/overview.md) to personalize the shopping experience
 - Learn about [advanced policy configurations](../setup/policies.md)
 - Set up [additional catalog views](../setup/catalog-view.md) for other dealerships
-- Review the [API documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) for programmatic catalog management
+- Review the [API documentation](https://developer.adobe.com/commerce/services/optimizer/) for programmatic catalog management
 - Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
