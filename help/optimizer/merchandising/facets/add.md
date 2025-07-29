@@ -17,12 +17,12 @@ Any filterable product attribute can be used as a facet. Facets help customers f
 
      - In the *Facets attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
      - To find a specific product attribute, enter the first few characters of the attribute name in the *Search* box. Then, click **Add**.
-     
+
      The facet is added to the bottom of the *Dynamic facets* list and the *Publish changes* button becomes available.
 
-1. If the facet you want to add can't be found, make sure the [product attribute](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) has the following set:
+1. If the facet you want to add can't be found, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `searchable` parameter:
 
-     - `searchable` = `Yes`
+   `"searchable": true`
 
    The facet becomes available in the storefront the next time the catalog is synchronized with [!DNL Adobe Commerce Optimizer]. If the facet isn't available after two hours, see [data sync](../../setup/data-sync.md).
 
