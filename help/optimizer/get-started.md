@@ -135,15 +135,12 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 
 1. Access the GitHub repository:
    - Visit the [Sample Catalog Data Ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Follow the setup instructions in the repository's README file.
 
-2. Run the ingestion:
-   - Use the provided scripts to load sample data into your Adobe Commerce Optimizer staging environment.
-   - Verify that data appears in your [Data Sync](./setup/data-sync.md) page.
+1. Follow the setup instructions in the repository's README file.
 
-3. Clean up (optional):
-
-   Remove the sample data using the `reset.js` script included in the sample data loader source code.
+     - Configure and run the data ingestion
+     - Configure catalog policies and views using the sample data
+     - Clean up sample data (optional)
 
 ## Next Steps
 
