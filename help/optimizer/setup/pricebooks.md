@@ -12,7 +12,7 @@ Price books let you define product prices for a catalog source across different 
 
 The base price book defines the currency for itself and all its child price books. Child price books inherit this currency and cannot override it.
 
-See the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Price-Books) to learn how to create, update, and delete price books  [!DNL Adobe Commerce Optimizer] using the Price Book API.
+See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books  [!DNL Adobe Commerce Optimizer] using the Price Book API.
 
 ## Key concepts
 
