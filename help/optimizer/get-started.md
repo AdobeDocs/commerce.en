@@ -50,7 +50,6 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 After creating your instance:
 
 1. [Manage your instance](#manage-an-instance) from Commerce Cloud Manager.
-1. Set up catalog views and policies using the [Catalog View guide](./setup/catalog-view.md).
 1. Configure user access using the [User Management guide](./user-management.md).
 
 ### Step 3. Add sample data (Optional)
