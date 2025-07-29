@@ -223,17 +223,13 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 1. Fill in catalog view details:
 
     - **Name** = *Celport*
-    - **Catalog sources** = *en-US* (hit enter)
+    - **Catalog sources** = *en-US*
     - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport part categories*; *Brand*; *Model*                          
 1. Click **[!UICONTROL Add]** to create the catalog view.
 
     The Catalog views page updates to display the new catalog view.
 
     ![Updated Catalog Views List](../assets/updated-catalog-view-list.png)
-
-    >[!NOTE]
-    >
-    >If the **[!UICONTROL Add]** button is not blue, ensure that the catalog source is selected by placing your cursor in the **[!UICONTROL Catalog sources]** section and pressing **enter**.
 
 1. Get the Celport catalog view ID.
 
@@ -409,10 +405,6 @@ If you encounter issues during this tutorial, try the following solutions:
 **Problem:** Catalog view not appearing in list
 
 - **Solution:** Verify that all associated policies are enabled and properly configured
-
-**Problem:** Add button is not blue
-
-- **Solution:** Ensure the catalog source is selected by placing your cursor in the field and pressing Enter
 
 ### Storefront Configuration Issues
 

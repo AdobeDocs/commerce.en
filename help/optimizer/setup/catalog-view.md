@@ -43,7 +43,7 @@ Before creating a catalog view, ensure you have:
 1. Configure the catalog view details:
 
     - **Name**—Enter the name of the catalog view, for example `Celport`. ​
-    - **Catalog sources**—Add the catalog source (locale), for example `en-US`. Press **enter**.
+    - **Catalog sources**—Select the catalog source (locale), for example `en-US`.
     - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
 1. Select the price book to link to the catalog view.
@@ -53,8 +53,6 @@ Before creating a catalog view, ensure you have:
     - **Disable pricing**-This option is not available at this time.
 
 1. Click **[!UICONTROL Add]** to create the catalog view with the linked price book and policies.
-
-    If the **[!UICONTROL Add]** button is not active, ensure that the catalog source is properly added by placing your cursor in the Catalog sources field and pressing **enter**. ​
 
 The Catalog views page updates to display the new catalog view.​
 
