@@ -321,7 +321,7 @@ Connect your repository to the Edge Delivery Service by adding the AEM Code Sync
 
 Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Site Creator tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other elements to populate your storefront.
 
-1. Open the [site creator tool](https://da.live/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator).
+1. Open the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
 1. Confgure your repository:
    
