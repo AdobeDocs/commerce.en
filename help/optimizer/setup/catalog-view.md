@@ -34,7 +34,7 @@ Before creating a catalog view, ensure you have:
 
 - [Created policies](policies.md) to define product filters
 
-- [Set up price books](pricebooks.md) for pricing
+- [Ingested price books](pricebooks.md) for pricing
 
 1. From the left menu, go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
 
@@ -47,6 +47,10 @@ Before creating a catalog view, ensure you have:
     - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
 1. Select the price book to link to the catalog view.
+
+    - **Use all available price books**-This option pulls pricing data from all available price books.
+    - **Allow selected price books only**-This option displays the **Add allowed price books** dialog where you can select which specific price book to use for the catalog view.
+    - **Disable pricing**-This option is not available at this time.
 
 1. Click **[!UICONTROL Add]** to create the catalog view with the linked price book and policies.
 
