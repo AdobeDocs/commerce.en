@@ -52,7 +52,7 @@ Before creating a catalog view, ensure you have:
     - **Allow selected price books only**-This option displays the **Add allowed price books** dialog where you can select which specific price book to use for the catalog view.
     - **Disable pricing**-This option is not available at this time.
 
-1. Click **[!UICONTROL Add]** to create the catalog view with the linked price book and policies.
+1. Click **[!UICONTROL Add]** to create the catalog view with the linked price books and policies.
 
 The Catalog views page updates to display the new catalog view.​
 

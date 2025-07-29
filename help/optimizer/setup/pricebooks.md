@@ -12,7 +12,7 @@ Price books let you define product prices for a catalog source across different 
 
 The base price book defines the currency for itself and all its child price books. Child price books inherit this currency and cannot override it.
 
-See the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Price-Books) to learn how to ingest price book information from a third-party system into [!DNL Adobe Commerce Optimizer] using the Price Book API.
+See the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Price-Books) to learn how to create, update, and delete price books  [!DNL Adobe Commerce Optimizer] using the Price Book API.
 
 ## Key concepts
 
@@ -21,7 +21,7 @@ See the [developer documentation](https://developer-stage.adobe.com/commerce/ser
 | **Price Book** | Logical grouping that defines prices for a catalog source; for example, specific region, or customer tier and is used to manage product prices. |
 | **Fallback Price Book** | The top-most price book in a hierarchy. It has no parent and is the *only* price book that defines the currency for itself and all its descendant price books.<br/><br/>If no parent is defined during price book creation (through the API), a new fallback price book is created. |
 | **Parent Price Book** | A higher-level price book from which a child price book can inherit prices if they are not explicitly set in the child. |
-| **Hierarchy Depth** | Maximum of 3 levels (Fallback -> Child -> Grandchild)<br/><br/>not enforced at ingestion time. |
-| **Currency** | Defined at fallback price book only. Inherited by all child price books.<br/><br/>If currency is not specified during fallback price book creation (through the API) the currency defaults to USD. |
+| **Hierarchy Depth** | Maximum of three levels (Fallback -> Child -> Grandchild)<br/><br/>not enforced at ingestion time. |
+| **Currency** | Defined for the fallback price book only. Inherited by all child price books.<br/><br/>If currency is not specified during fallback price book creation (through the API) the currency defaults to USD. |
 | **Product Price** | The specific price assigned to a product (SKU) within a particular price book. |
 | **Discounts** | Discounts are defined in product price. Not inherited. |
