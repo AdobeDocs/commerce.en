@@ -52,7 +52,7 @@ Before creating a catalog view, ensure you have:
     - **Allow selected price books only**-This option displays the **Add allowed price books** dialog where you can select which specific price book to use for the catalog view.
     - **Disable pricing**-This option is not available at this time.
 
-1. Click **[!UICONTROL Add]** to create the catalog view with the linked price book and policies.
+1. Click **[!UICONTROL Add]** to create the catalog view with the linked price books and policies.
 
 The Catalog views page updates to display the new catalog view.​
 
@@ -67,7 +67,7 @@ Catalog views are part of the Merchandising Services framework that replaces the
 ### How It Works
 
 **1. Data Ingestion**
-Catalog data from PIM, ERP, and other systems is ingested into the Merchandising Services framework. Each SKU contains locale information and product attributes that map to catalog views, policies, and locales. For more information about data ingestion, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Catalog data from PIM, ERP, and other systems is ingested into the Merchandising Services framework. Each SKU contains locale information and product attributes that map to catalog views, policies, and locales. For more information about data ingestion, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Unified Base Catalog**
 The ingested data creates a unified base catalog in the Catalog Service data pipeline. This single source eliminates data duplication across business units.
@@ -76,7 +76,7 @@ The ingested data creates a unified base catalog in the Catalog Service data pip
 Multiple catalog views represent different business units (for example, "Texas Retail," "Texas Retail Seasonal"). Locales, policies, and price books can be shared across catalog views for flexibility.
 
 **4. Multi-Channel Delivery**
-The filtered catalog data is delivered to various destinations including Edge Delivery Services storefronts, marketplaces, advertising platforms, and custom micro-storefronts. For more information about catalog data delivery, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+The filtered catalog data is delivered to various destinations including Edge Delivery Services storefronts, marketplaces, advertising platforms, and custom micro-storefronts. For more information about catalog data delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Key Components
 
@@ -122,4 +122,4 @@ The filtered catalog data is delivered to various destinations including Edge De
 
 >[!INFO]
 >
->For detailed information about catalog data ingestion and delivery, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>For detailed information about catalog data ingestion and delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
