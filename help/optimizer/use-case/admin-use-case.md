@@ -27,11 +27,11 @@ Before beginning this tutorial, ensure you have the following prerequisites in p
 - **User Permissions**
   - Admin access to Adobe Admin Console
   - See [User Management](../user-management.md) for account setup
-  - If you don't have access, contact your Adobe account representative or complete the [Early Access Program form](https://experienceleague.adobe.com/go/aco-early-access-program)
+  - If you don't have access, contact your Adobe account representative.
 
 - **Sample Data**
   - Carvelo Automobile catalog data loaded into your instance
-  - Follow instructions in the [Sample catalog data ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+  - Follow the instructions in the [Sample catalog data ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
   - You can delete sample data after completion using the included `reset.js` script
 
 - **Storefront Environment**
@@ -41,7 +41,7 @@ Before beginning this tutorial, ensure you have the following prerequisites in p
 
 ## Let's get started
 
-In this use case, you will be working with the following:
+In this use case, you are working with the following:
 
 1. [!DNL Adobe Commerce Optimizer] UI - Set up catalog views and policies to manage the complex catalog operational setup for the Carvelo use case.
 
@@ -122,7 +122,7 @@ In the left navigation, expand the _Store setup_ section and click **[!UICONTROL
 >
 >You can ignore the **Global** catalog view for now.
 
-Click the info icon to review catalog view details.
+Click the info icon to review the catalog view details.
 
 Arkbridge has the following policies:
 
@@ -151,7 +151,7 @@ Using [!DNL Adobe Commerce Optimizer], the commerce manager will:
 1. Create a new policy called *Celport part categories* for Celport to sell only brake and suspension parts.
 1. Create a new catalog view for the Celport storefront.
 
-   This catalog view uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc. The Celport catalog view will use the `east_coast_inc` price book to support product pricing schedules that align with brand licensing agreements.
+   This catalog view uses your newly created policy *Celport part categories* and the existing *East Coast Inc Brands* to ensure that Celport can sell only the Bolt and Cruz brands as part of the agreement with East Coast Inc. The Celport catalog view uses the `east_coast_inc` price book to support product pricing schedules that align with brand licensing agreements.
 1. Update the commerce storefront configuration to use data from the Celport catalog view that you created.
 
 At the end of this section, Celport will be up and running ready to sell Carvelo's products.
@@ -223,17 +223,13 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 1. Fill in catalog view details:
 
     - **Name** = *Celport*
-    - **Catalog sources** = *en-US* (hit enter)
+    - **Catalog sources** = *en-US*
     - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport part categories*; *Brand*; *Model*                          
 1. Click **[!UICONTROL Add]** to create the catalog view.
 
     The Catalog views page updates to display the new catalog view.
 
     ![Updated Catalog Views List](../assets/updated-catalog-view-list.png)
-
-    >[!NOTE]
-    >
-    >If the **[!UICONTROL Add]** button is not blue, ensure that the catalog source is selected by placing your cursor in the **[!UICONTROL Catalog sources]** section and pressing **enter**.
 
 1. Get the Celport catalog view ID.
 
@@ -366,7 +362,7 @@ Now that you have updated the storefront configuration to use the Celport catalo
 
    ![Brakes Product Listing Page](../assets/brakes-listing-page.png)
 
-    Click a brake part image to view the product details with price information and note the product price information.
+    Click on a brake part image to view the product details with price information and note the product price information.
 
 1. Search for `tires`, which is another part category available in the use case data on your [!DNL Adobe Commerce Optimizer] instance.
 
@@ -384,7 +380,7 @@ Now that you have updated the storefront configuration to use the Celport catalo
 
       When you save the file, the local storefront preview updates automatically.
 
-   1. Preview the changes in the browser by using the the Search feature to find tire parts.
+   1. Preview the changes in the browser by using the Search feature to find tire parts.
 
       Notice the different part types available and notice the prices assigned to the Kingsbluff catalog view.
 
@@ -398,7 +394,7 @@ If you encounter issues during this tutorial, try the following solutions:
 
 **Problem:** Save button is not active
 
-- **Solution:** Ensure the policy name is entered and all required fields are completed
+- **Solution:** Ensure that the policy name is entered and all required fields are completed
 
 **Problem:** Filter not working as expected
 
@@ -406,13 +402,9 @@ If you encounter issues during this tutorial, try the following solutions:
 
 ### Catalog View Issues
 
-**Problem:** Catalog view not appearing in list
+**Problem:** Catalog view not appearing in the list
 
 - **Solution:** Verify that all associated policies are enabled and properly configured
-
-**Problem:** Add button is not blue
-
-- **Solution:** Ensure the catalog source is selected by placing your cursor in the field and pressing Enter
 
 ### Storefront Configuration Issues
 
@@ -422,7 +414,7 @@ If you encounter issues during this tutorial, try the following solutions:
 
 **Problem:** No products displaying
 
-- **Solution:** Verify that the price book ID matches one available in your Adobe Commerce Optimizer instance
+- **Solution:** Verify that the price book ID matches the one available in your Adobe Commerce Optimizer instance
 
 **Problem:** Search returning no results
 
@@ -446,5 +438,5 @@ To continue learning about Adobe Commerce Optimizer:
 - Explore [merchandising features](../merchandising/overview.md) to personalize the shopping experience
 - Learn about [advanced policy configurations](../setup/policies.md)
 - Set up [additional catalog views](../setup/catalog-view.md) for other dealerships
-- Review the [API documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) for programmatic catalog management
+- Review the [API documentation](https://developer.adobe.com/commerce/services/optimizer/) for programmatic catalog management
 - Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
