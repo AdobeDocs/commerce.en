@@ -50,7 +50,6 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 After creating your instance:
 
 1. [Manage your instance](#manage-an-instance) from Commerce Cloud Manager.
-1. Set up catalog views and policies using the [Catalog View guide](./setup/catalog-view.md).
 1. Configure user access using the [User Management guide](./user-management.md).
 
 ### Step 3. Add sample data (Optional)
@@ -80,7 +79,7 @@ Developers handle technical implementation and data integration, including platf
 |Task|Description|Link|
 |---|---|---|
 |**Access Developer Console**|Create projects and generate credentials|[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)|
-|**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/)|
+|**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)|
 |**Set Up Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
 
 ### Merchandiser tasks
@@ -138,9 +137,14 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 
 **Load the sample data:**
 
-1. Access the GitHub repository:
-   - Visit the [Sample Catalog Data Ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Follow the setup instructions in the repository's README file.
+1. Access the [Sample Catalog Data Ingestion](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) GitHub repository.
+
+1. Follow the setup instructions in the repository's README file to complete the following tasks:
+
+   - Set up your environment
+   - Complete the data ingestion process
+   - Create catalog views and policies using the sample data 
+   - Verify the data in your [Data Sync](./setup/data-sync.md) page
 
 2. Run the ingestion:
    - Use the provided scripts to load sample data into your Adobe Commerce Optimizer staging environment.
@@ -183,6 +187,6 @@ After completing the setup:
 
 ### Get help
 
-- **Developer Resources**: [Developer Documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
+- **Developer Resources**: [Developer Documentation](https://developer.adobe.com/commerce/services/optimizer/)
 - **Storefront Resources**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - **Support**: [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
