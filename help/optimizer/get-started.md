@@ -144,16 +144,7 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
    - Set up your environment
    - Complete the data ingestion process
    - Create catalog views and policies using the sample data 
-   - Verify the data in your [Data Sync](./setup/data-sync.md) page
-
-1. Run the ingestion:
-
-   - Use the provided scripts to load sample data into your Adobe Commerce Optimizer staging environment.
-   - Verify that data appears in your [Data Sync](./setup/data-sync.md) page.
-
-1. Clean up (optional):
-
-   Remove the sample data using the `reset.js` script included in the sample data loader source code.
+   - Verify the data ingestion by checking the Catalog Service data on the [Data Sync](./setup/data-sync.md) page
 
 ## Next Steps
 
