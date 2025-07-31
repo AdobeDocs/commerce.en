@@ -50,7 +50,6 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 After creating your instance:
 
 1. [Manage your instance](#manage-an-instance) from Commerce Cloud Manager.
-1. Set up catalog views and policies using the [Catalog View guide](./setup/catalog-view.md).
 1. Configure user access using the [User Management guide](./user-management.md).
 
 ### Step 3. Add sample data (Optional)
@@ -140,15 +139,12 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 
 1. Access the GitHub repository:
    - Visit the [Sample Catalog Data Ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Follow the setup instructions in the repository's README file.
 
-2. Run the ingestion:
-   - Use the provided scripts to load sample data into your Adobe Commerce Optimizer staging environment.
-   - Verify that data appears in your [Data Sync](./setup/data-sync.md) page.
+1. Follow the setup instructions in the repository's README file.
 
-3. Clean up (optional):
-
-   Remove the sample data using the `reset.js` script included in the sample data loader source code.
+     - Configure and run the data ingestion
+     - Configure catalog policies and views using the sample data
+     - Clean up sample data (optional)
 
 ## Next Steps
 
