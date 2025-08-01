@@ -79,7 +79,7 @@ Developers handle technical implementation and data integration, including platf
 |Task|Description|Link|
 |---|---|---|
 |**Access Developer Console**|Create projects and generate credentials|[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)|
-|**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/)|
+|**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)|
 |**Set Up Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
 
 ### Merchandiser tasks
@@ -137,14 +137,14 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 
 **Load the sample data:**
 
-1. Access the GitHub repository:
-   - Visit the [Sample Catalog Data Ingestion repository](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+1. Access the [Sample Catalog Data Ingestion](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) GitHub repository.
 
-1. Follow the setup instructions in the repository's README file.
+1. Follow the setup instructions in the repository's README file to complete the following tasks:
 
-     - Configure and run the data ingestion
-     - Configure catalog policies and views using the sample data
-     - Clean up sample data (optional)
+   - Set up your environment
+   - Complete the data ingestion process
+   - Create catalog views and policies using the sample data 
+   - Verify the data ingestion by checking the Catalog Service data on the [Data Sync](./setup/data-sync.md) page
 
 ## Next Steps
 
@@ -179,6 +179,6 @@ After completing the setup:
 
 ### Get help
 
-- **Developer Resources**: [Developer Documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
+- **Developer Resources**: [Developer Documentation](https://developer.adobe.com/commerce/services/optimizer/)
 - **Storefront Resources**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - **Support**: [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

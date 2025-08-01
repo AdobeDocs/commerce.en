@@ -99,11 +99,11 @@ Running the following command will create a scaffolding for your Commerce storef
 
 1. Select one of the following options:
 
-    * **Use the demo Adobe Commerce tenant** - Use a demo tenant. 
+    * **Use the demo Adobe Commerce tenant** - Use a demo tenant.
       * If you select this option, you are prompted to install the AEM Code Sync bot in a browser window. You must specify the repository you created and authorize the bot. Return to the CLI and enter `y` to confirm the AEM Code Sync bot installation.
     * **Pick an available Adobe Commerce tenant** - Select an existing Commerce tenant in the selected organization.
       * If you select this option, you must select the project and workspace to create a mesh in.
-    * **Provide your own Adobe Commerce tenant API URL** - Select this option if you are an Early Access Program participant. Enter the API URL provided in your Adobe onboarding email.
+    * **Provide your own Adobe Commerce tenant API URL** - Select this option if you are a Trial Access Program participant. Enter the API URL provided in your Adobe onboarding email.
 
     >[!NOTE]
     >

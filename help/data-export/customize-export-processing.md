@@ -29,7 +29,7 @@ Remember that thoughtful planning, including estimating data volume and synchron
 
 >[!NOTE]
 >
->Adobe recommends exercising caution when using multi-thread processing. This capability is an early access feature that is still being improved. If you configure multi-threading for faster performance, you can trigger Adobe Commerce Services guardrails included to prevent system misuse during data ingestion. These guardrails also restrict users from triggering synchronization changes that can overload the system. When the guardrails are triggered, requests are blocked and the system returns 429 errors. If you encounter these errors, adjust your configuration, and submit a support ticket for assistance.
+>Adobe recommends exercising caution when using multi-thread processing. If you configure multi-threading for faster performance, you can trigger Adobe Commerce Services guardrails included to prevent system misuse during data ingestion. These guardrails also restrict users from triggering synchronization changes that can overload the system. When the guardrails are triggered, requests are blocked and the system returns 429 errors. If you encounter these errors, adjust your configuration, and submit a support ticket for assistance.
 
 ## Configure multi-threading
 
