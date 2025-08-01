@@ -82,9 +82,11 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 |`rec-click` | The shopper clicks a product in the recommendation unit. |
 |`view` | Sent when the recommendation unit becomes at least 50 percent viewable, such as by scrolling down the page. For example, if a recommendation unit has two lines, a `view` event is sent when one line plus one pixel of the second line becomes visible to the shopper. If the shopper scrolls the page up and down several times, the `view` event is sent as many times as the shopper sees the whole recommendation unit again on the page.|
 
->[!NOTE]
->
->Product Recommendation metrics are optimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment.
+Although Product Recommendation metrics are optimized for Luma storefronts, they also work with other storefront implementations: 
+
+- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/) 
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) 
+- [Custom frontent (React, Vue JS)](headless.md)
 
 #### Required dashboard events
 

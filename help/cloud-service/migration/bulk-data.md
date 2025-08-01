@@ -33,8 +33,8 @@ The following sections describe these steps in detail.
 
 The availability of the bulk data migration tool is as follows:
 
-- **Mid-July 2025** - To access the bulk data migration tool, submit a support ticket.
-- **Mid-August 2025** - The bulk data migration tool will be publicly available and will accessible from this page.
+- **Q3 2025** - To access the bulk data migration tool, submit a support ticket.
+- **Q3 2025** - The bulk data migration tool will be publicly available and will be accessible from this page.
 
 ## Create target environment
 

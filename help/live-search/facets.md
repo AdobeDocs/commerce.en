@@ -19,16 +19,13 @@ Any defined facet may be used as a URL parameter and results will be filtered ba
 
 The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. Each storefront properties of an attribute must have the "Use in Search Results Layered Navigation" value set to "Yes".
 
-[!DNL Live Search] supports up to:
-
-* 100 attributes configured as facets
-* 50 sortable attributes
-* 200 filterable attributes
-* 200 searchable attributes
-
 >[!NOTE]
 >
-> If there are more than 200 filterable attributes defined, it is not deterministic which 200 will actually be indexed.
+>If you define a product category as a facet, the facet displays the category and the subcategory.
+>
+>![Category facet](assets/facet-category.png)
+
+See [boundaries and limits](./boundaries-limits.md#facets) to learn more about the facet requirements in [!DNL Live Search].
 
 If you have a large number of attributes to contend with, consider combining attributes into a single 'meta-attribute'. For example, shoes generally have numeric sizes, while shirts are commonly sized "S/M/L/XL". These two types of sizes can be combined into a single searchable attribute.
 
