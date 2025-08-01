@@ -9,11 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 Adobe Commerce [!DNL Live Search] and [[!DNL Catalog Service]](../catalog-service/guide-overview.md) work together to provide a performant, relevant, and intuitive search solution to allow your customers to find exactly what they need, fast. Specifically, [!DNL Catalog Service] surfaces your catalog data for SaaS services, such as [!DNL Live Search] to use.
 
-This article provides step-by-step instructions for implementing [!DNL Live Search] with [!DNL Catalog Service].
-
->[!IMPORTANT]
->
->When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure that [!DNL Live Search] is a fit for your business needs.
+This article provides step-by-step instructions for implementing [!DNL Live Search] with the [!DNL Catalog Service].
 
 ## Audience
 
@@ -22,8 +18,19 @@ This article is intended for the developer or systems integrator on your team wh
 ## Requirements
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP version 8.1, 8.2, or 8.3
+- PHP 8.1, 8.2, or 8.3
 - [!DNL Composer]
+- Running cron jobs and indexers
+
+>[!IMPORTANT]
+>
+>Before implementing [!DNL Live Search], see the [Boundaries and Limits](boundaries-limits.md) section to ensure that [!DNL Live Search] fits your business needs.
+
+## Important updates
+
+- As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled with the installation.
+
+- Due to the Elasticsearch 7 end-of-support announcement for August 2023, Adobe recommends that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during a product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in the _Upgrade Guide_.
 
 ## Supported platforms
 
@@ -47,43 +54,35 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 [!DNL Live Search] is installed as an extension from [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) through [Composer](https://getcomposer.org/). After you install and configure [!DNL Live Search], Adobe [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
->[!NOTE]
->
->As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled in with the [!DNL Live Search] installation.
+>[!BEGINTABS]
 
->[!IMPORTANT]
->
->As of [!DNL Live Search] 4.0.0, the Search Adapter is deprecated. Going forward, the Search Adapter will be updated only to address security issues.
+>[!TAB New Commerce instance]
+
+Follow these instructions if you are installing [!DNL Live Search] on a new Commerce instance.
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
-   >[!IMPORTANT]
-   >
-   >Due to the Elasticsearch 7 end-of-support announcement for August 2023, it is recommended that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during a product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in the _Upgrade Guide_.
-
-1. Download the `live-search` package from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
-
-1. Run the following from the command line:
+1. Use Composer to add the Live Search module to your project:
 
    ```bash
-   composer require magento/live-search
+   composer require magento/live-search --no-update
    ```
 
-   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following command to disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search]. Then, proceed to step 4.
+1. Update dependencies and install the extension:
 
    ```bash
-      bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   composer update magento/live-search --with-dependencies
    ```
 
-   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to disable the [!DNL Live Search] modules that serve storefront search results. Then, proceed to step 4:
+1. Disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search].
 
    ```bash
-      bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
+   bin/magento module:disable Magento_ Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-1. Run the following:
+1. Install the updates.
 
    ```bash
    bin/magento setup:upgrade
@@ -100,22 +99,74 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    - Categories Feed
    - Category Permissions Feed
 
-1. If you are installing [!DNL Live Search] on a new Commerce instance, you are done and can skip to the [2. Configure API keys](#2-configure-api-keys) section. If you are installing Live Search to an existing Commerce instance, proceed to the next step.
+After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
 
-1. Run the following commands to enable the [!DNL Live Search] extension, disable [!DNL OpenSearch], and run `setup`.
+>[!TAB Existing Commerce instance]
+
+Follow these instructions if you are installing [!DNL Live Search] on an existing Commerce instance.
+
+1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
+
+1. Use Composer to add the Live Search module to your project:
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
+   composer require magento/live-search --no-update
    ```
 
+1. Update dependencies and install the extension:
+
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   composer update magento/live-search --with-dependencies
    ```
+
+1. Disable the [!DNL Live Search] modules that serve storefront search results.
+
+   ```bash
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   ```
+
+   [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
+
+1. Install the updates.
 
    ```bash
    bin/magento setup:upgrade
    ```
+
+1. Verify that the following [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are set to "Update by Schedule":
+
+   - Product Feed
+   - Product Variant Feed
+   - Catalog Attributes Feed
+   - Product Prices Feed
+   - Scopes Website Data Feed
+   - Scopes Customer Groups Data Feed
+   - Categories Feed
+   - Category Permissions Feed
+
+1. Enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
+
+   ```bash
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   ```
+
+   ```
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   ```
+
+   >[!NOTE]
+   >
+   >The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error.
+
+1. Install the updates.
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
+
+>[!ENDTABS]
 
 ### Install the [!DNL Live Search] beta
 
@@ -127,7 +178,7 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 
 - **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
 
-  - **Layer 1 search** - Search for "motor" on "product_attribute_1".
+  - **Layer 1 search** - Search for "motor" on "product_attribute_1
   - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
 
   Layered search is available for both `startsWith` search indexation and `contains` search indexation as described below:
@@ -135,13 +186,15 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 - **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
 
   - Searching for products where the attribute value starts with a particular string.
-  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse, and the API call should also be a reversed string.
 
 - **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
 
     - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
 
-        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+      >[!NOTE]
+      >
+      >This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
@@ -167,9 +220,9 @@ You can implement these new conditions on your search results page. For example,
 
 | Field | Description |
 |--- |--- |
-|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete` you can use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
+|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete`, you can use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
 |`Contains`| Enables a true "text contained in a string" search instead of an autocomplete search. Use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability). Refer to the [Limitations](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations) for more information.|
-|`Starts with`| Lets you query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability).|
+|`Starts with`| Query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability).|
 
 ## 2. Configure API keys
 
@@ -183,27 +236,27 @@ Learn how to configure your API keys in the [Commerce Services Connector](../lan
 
 To begin the initial sync of your catalog data to SaaS services, run the following commands in this order:
 
-   ```bash
-   bin/magento saas:resync --feed productattributes
-   bin/magento saas:resync --feed products
-   bin/magento saas:resync --feed scopesCustomerGroup
-   bin/magento saas:resync --feed scopesWebsite
-   bin/magento saas:resync --feed prices
-   bin/magento saas:resync --feed productoverrides
-   bin/magento saas:resync --feed variants
-   bin/magento saas:resync --feed categories
-   bin/magento saas:resync --feed categoryPermissions
-   ```
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 When you run these commands, the initial sync of your catalog data to SaaS services begins.
 
 >[!WARNING]
 >
-> While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to SaaS services.
+>Search and category browse operations are unavailable during sync. The process can take 1+ hours depending on catalog size.
 
 ### Monitor sync progress
 
-You can view the data that is synchronized and shared using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). This dashboard provides valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
@@ -239,7 +292,7 @@ Getting your product data configured correctly ensures good search results for y
 
 ### Enable product listing widgets
 
-When you install [!DNL Live Search] 4.0.0+, product listing widgets are enabled by default. When widgets are enabled, a different UI component is used for the search results page and the category browse product listing page. This UI component makes direct calls to the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), which results in faster response times.
+When you install [!DNL Live Search] 4.0.0+, product listing widgets are enabled by default. When widgets are enabled, a different UI component is used for the search results, and category browse product listing pages. This UI component makes direct calls to the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), which results in faster response times.
 
 If you have a [!DNL Live Search] version older than 4.0.0+, you must manually enable the Product Listing Widget.
 
@@ -280,10 +333,10 @@ To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the a
 
 ## 7. Verify that events are capturing data
 
-Ensure that the storefront events deployed to your site are working. This is especially important for headless implementations.
+Ensure that the storefront events deployed to your site are working. This check is especially important for headless implementations.
 
 - Review the [events](events.md) that are required for [!DNL Live Search].
-- Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environment(s).
+- Ensure that the [[!DNL Live Search] dashboard](performance.md) is displaying data from your non-production environments.
 - [Verify event collection](../product-recommendations/verify.md). While this page is in the [!DNL Product Recommendations] guide, the verification steps apply to [!DNL Live Search] as well.
 
 ## 8. Customize for your storefront
@@ -300,7 +353,7 @@ In this scenario, you can customize the JavaScript for your own needs and then h
 
 ## Updating [!DNL Live Search]
 
-Before updating Live Search, run the following from the command line to check the version of Live Search that is installed:
+Before updating [!DNL Live Search], check the version of [!DNL Live Search] that is installed using Composer.
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -355,13 +408,13 @@ The [!DNL Live Search] extension consists of the following packages:
 | Package | Description |
 |--- |--- |
 | `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, and so on, and provides access to a read-only GraphQL playground to test queries from the *Admin*. |
-| `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box in the upper-right of the storefront to the [!DNL Live Search] service. |
+| `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) field to the [!DNL Live Search] service. The quick search field is located in the upper-right corner of the storefront page.|
 | `module-live-search-storefront-popover` | A "search as you type" popover replaces the standard quick search and returns data and thumbnails of top search results. |
 
 ## [!DNL Live Search] dependencies
 
 The [!DNL Composer] metapackage to install the [!DNL Live Search] extension includes the following module dependencies.
-  
+
 - `magento/module-saas-catalog`
 - `magento/module-saas-category`
 - `magento/module-saas-category-permissions`
@@ -399,9 +452,9 @@ For some use cases, it maybe better to call [!DNL Catalog Service] for product d
 If you have a custom headless implementation, check out the [!DNL Live Search] reference implementations:
 
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
-- [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
+- [[!DNL Live Search] field](https://github.com/adobe/storefront-search-as-you-type)
 
-Automatic collection of user interaction data does not work by default when you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
+Automatic collection of user interaction data does not work by default if you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 
@@ -453,7 +506,7 @@ Admins can also set the language of the [search index](settings.md#language), to
 
 ### Widget code repository
 
-The code for the product listing page widget and the Live Search field widget is available for download from GitHub.
+The code for the product listing page widget and the [!DNL Live Search] field widget is available for download from GitHub.
 
 Developers who have access to the code can completely customize how it works and looks. They host the code on their own servers but still use the [!DNL Live Search] service.
 
@@ -462,7 +515,7 @@ Developers who have access to the code can completely customize how it works and
 
 ### Data Export extension
 
-After Live Search is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and Live Search. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
+After [!DNL Live Search] is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and [!DNL Live Search]. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
 
 ### Inventory management
 
@@ -472,11 +525,11 @@ After Live Search is enabled, the Data Export extension synchronizes Commerce da
 
 ### Price indexer
 
-Live Search customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
+[!DNL Live Search] customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
 
 ### Price support
 
-Live Search widgets support most but not all price types supported by Adobe Commerce.
+[!DNL Live Search] widgets support most but not all price types supported by Adobe Commerce.
 
 Currently, basic prices are supported. Advanced prices that are not supported are:
 
