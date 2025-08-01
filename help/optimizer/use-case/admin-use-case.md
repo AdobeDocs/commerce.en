@@ -265,7 +265,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -289,7 +289,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
    Notice that the catalog view header includes the following values:
 
    - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
    - `ac-source-locale`: `"en-US"`
 
@@ -301,7 +301,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. Replace the `ac-catalog-view-id` value with Celport catalog view ID that you copied previously.
+1. Replace the `ac-view-id` value with Celport catalog view ID that you copied previously.
 
 1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
 
@@ -315,7 +315,7 @@ The final piece of this tutorial involves updating the storefront that [you alre
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -372,7 +372,7 @@ Now that you have updated the storefront configuration to use the Celport catalo
 
 1. Experiment with updating your storefront configuration file (`config.json`).
 
-   1. Change the `ac-catalog-view-id` and `ac-price-book` values.
+   1. Change the `ac-view-id` and `ac-price-book` values.
 
      For example, you can change the catalog view ID to the Kingsbluff catalog view, and the price book ID to  `east_coast_inc`. You can see the parts categories available for Kingsbluff by reviewing the *Kingsbluff part categories* policy.
 
