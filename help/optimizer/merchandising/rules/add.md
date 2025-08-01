@@ -83,7 +83,9 @@ Select the type of strategy for the rule. The **Test your rule** window displays
 #### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
-- To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any [product attributes](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) that are used for search or filtering (facets) is `5` or less.
+- To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any attributes that are used for search or filtering (facets) is `5` or less.
+
+For information about setting search weights, see the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/).
 
 ### Manual Ranking
 
