@@ -80,6 +80,8 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 > Use your **production SaaS data space** only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
 > If this should happen, [submit a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) to request data cleanup.
 
+If you cannot find LiveSearch configuration fields in the Admin Panel, verify that you have entered the correct SaaS API key.  Ensure that you have added the production SaaS key when configuring the production data space, and that you have added the staging key when configuring the staging data space. If you configure the incorrect key, SaaS services, such as LiveSearch, are not available in the Adobe Commerce environment.
+
 ### SaaS data space provisioning
 
 All Adobe Commerce merchants can access one production data space and two testing data spaces per SaaS project. 
