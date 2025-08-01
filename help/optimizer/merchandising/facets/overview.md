@@ -24,12 +24,14 @@ Facet aggregation is performed as follows: if the storefront has three facets (c
 
 ## Default attribute values
 
-The following [product attributes](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) are used by [!DNL Adobe Commerce Optimizer] and enabled by default.
+The following product attributes are used by [!DNL Adobe Commerce Optimizer] and enabled by default.
 
 | Property | Description | Attribute |
 |---|---|---|
 | Sortable | Used for Sorting in Product Listing | `price`|
 | Searchable | Use in Search | `price` <br />`sku`<br />`name`|
+
+See the [Data Ingestion Metadata API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to learn more about product attributes and their properties.
 
 ## Default non-system attribute properties
 
