@@ -3,10 +3,9 @@ title: Set up your storefront
 description: Learn how to run the scaffolding tool to setup your [!DNL Adobe Commerce as a Cloud Service] storefront.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Set up your storefront
-
-{{accs-early-access}}
 
 The following steps demonstrate how to quickly set up your Adobe Commerce Storefront powered by Edge Delivery using the `aio commerce init` command. This process sets up the following:
 
@@ -65,6 +64,8 @@ Before running the `aio commerce init` command, you must complete the following 
     aio login
     ```
 
+    If the `aio login` command does not launch a browser window, refer to the [Troubleshooting](#troubleshooting) section.
+
 1. Select the IMS org, project, and workspace. Use the arrow keys and press **Enter** to make your selection. For more information on `aio` commands, refer to the [Adobe I/O CLI documentation](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands).
 
     ```bash
@@ -98,11 +99,11 @@ Running the following command will create a scaffolding for your Commerce storef
 
 1. Select one of the following options:
 
-    * **Use the demo Adobe Commerce tenant** - Use a demo tenant. 
+    * **Use the demo Adobe Commerce tenant** - Use a demo tenant.
       * If you select this option, you are prompted to install the AEM Code Sync bot in a browser window. You must specify the repository you created and authorize the bot. Return to the CLI and enter `y` to confirm the AEM Code Sync bot installation.
     * **Pick an available Adobe Commerce tenant** - Select an existing Commerce tenant in the selected organization.
       * If you select this option, you must select the project and workspace to create a mesh in.
-    * **Provide your own Adobe Commerce tenant API URL** - Select this option if you are an Early Access Program participant. Enter the API URL provided in your Adobe onboarding email.
+    * **Provide your own Adobe Commerce tenant API URL** - Select this option if you are a Trial Access Program participant. Enter the API URL provided in your Adobe onboarding email.
 
     >[!NOTE]
     >
@@ -117,3 +118,29 @@ Running the following command will create a scaffolding for your Commerce storef
    * Run locally: `aio commerce:dev`
 
 To customize your storefront, refer to the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
+
+## Troubleshooting
+
+If you run into issues with the `aio login` command, Adobe recommends fully signing out of the CLI and browser and then re-logging in.
+
+1. To log out of the CLI, run:
+
+    ```bash
+    aio logout
+    ```
+
+1. In your browser, navigate to the [Adobe Developer Console](https://developer.adobe.com/console), click your profile icon in the top-right corner, and select **Sign out**.
+
+1. Return to the CLI and run the `aio login` command again, which should launch a browser window to log in. Then you can proceed selecting your org, project, and workspace.
+
+    ```bash
+    aio console org select
+    ```
+
+    ```bash
+    aio console workspace select
+    ```
+
+    ```bash
+    aio console project select
+    ```

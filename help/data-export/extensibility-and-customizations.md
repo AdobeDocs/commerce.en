@@ -8,7 +8,7 @@ exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 
 The [!DNL Commerce Data Export] extension provides a way to export data from the [!DNL Commerce] application to Commerce Services like Live Search, Catalog Service, and Product Recommendations. If needed, you can extend and customize the feed data to include additional attribute data or modify the collected data.
 
-After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) in the GraphQL schema for storefront service.
+After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) in the GraphQL schema for storefront service.
 
 >[!NOTE]
 >
@@ -38,14 +38,14 @@ Add the attributes to the Product Attribute query(`Magento\CatalogDataExporter\M
 
 ## Add product attributes to Adobe Commerce
 
-Developers can add product attributes that are accessible from the [product attributes field](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields) by using one of the following methods:
+Developers can add product attributes that are accessible from the [product attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) by using one of the following methods:
 
 - Add the attribute to Adobe Commerce for inclusion in the `products` feed data exported to Commerce storefront services.
 - Add the attribute dynamically during the feed synchronization process using a plugin.
 
 ### Add the attribute to Adobe Commerce
 
-You can add a product attribute from the Commerce Admin, or programmatically using a custom PHP module to define the attribute and update Adobe Commerce. This is the simplest method for adding a product attribute because you can add the attribute and all required metadata. The new attribute and its metadata properties are exported to the SaaS services automatically during the next scheduled synchronization.
+You can add a product attribute from the Commerce Admin, or programmatically using a custom PHP module to define the attribute and update Adobe Commerce. Adding the attribute from the Commerce Admin is the simplest method because you can add the attribute and all the required metadata at once. The new attribute and its metadata properties are exported to the SaaS services automatically during the next scheduled synchronization.
 
 #### Create the product attribute from the Admin
 
@@ -59,13 +59,13 @@ See [Create product attributes](https://experienceleague.adobe.com/en/docs/comme
 
 Add a product attribute programmatically by creating a data patch that implements the `DataPatchInterface`, and instantiate a copy of the `EavSetup Factory` class within the constructor to configure the attribute options.
 
-When you define the attribute options, all attribute parameters except `type`, `label`, and `input` are optional. Define the following additional options and any other options that differ from the default settings.
+When you define the attribute options, all attribute parameters except `type`, `label`, and `input` are optional. Define the following additional parameters and any others that differ from the default settings.
 
-- Ensure that the property is exported to storefront services during data synchronization by setting `user_defined` = `1`
-- To ensure that the attribute is accessible within the product listing database query, set `used_in_product_listing` = `1`.
+- **`user_defined` = `1`**—Export the attribute to storefront services during data synchronization
+- **`used_in_product_listing` = `1`**—Make the attribute accessible within the product listing database query
 
 For information about creating data patches, see [Develop data and schema patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) in the *PHP Developer Guide*.
 
 ### Add the product attribute dynamically
 
-For details about creating product attributes dynamically without introducing new Eav Attributes, see [Add attribute dynamically](add-attribute-dynamically.md).
+For details about creating product attributes dynamically without introducing new EAV Attributes, see [Add attribute dynamically](add-attribute-dynamically.md).

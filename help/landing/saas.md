@@ -19,7 +19,6 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 |[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
 |[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
 |[[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce and Magento Open Source|
-|[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro)|Adobe Commerce|
 |[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
 |[[!DNL Data Connection]](/help/data-connection/overview.md)|Adobe Commerce|
 
@@ -80,6 +79,8 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 >
 > Use your **production SaaS data space** only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
 > If this should happen, [submit a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) to request data cleanup.
+
+If you cannot find LiveSearch configuration fields in the Admin Panel, verify that you have entered the correct SaaS API key.  Ensure that you have added the production SaaS key when configuring the production data space, and that you have added the staging key when configuring the staging data space. If you configure the incorrect key, SaaS services, such as LiveSearch, are not available in the Adobe Commerce environment.
 
 ### SaaS data space provisioning
 

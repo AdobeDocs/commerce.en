@@ -36,13 +36,23 @@ _June 28, 2024_
 
 _July 18, 2023_
 
-![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
+![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) query.
 
 _April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Product Recommendations] customers can now take advantage of [SaaS price indexing](../price-index/price-indexing.md).
 
 ## Current major version
+
+### 6.2.1 of magento/product-recommendations
+
+_July 14, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Made improvments to the [preview recommendations](./create.md#preview-recommendations) panel.
+
+### Previous versions
 
 ### 6.2.0 of magento/product-recommendations
 
@@ -51,8 +61,6 @@ _April 4, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Updated the CDN URLs for the `recommendations-admin-ui` to  the `adobe.io` domain.
-
-### Previous versions
 
 ### 6.1.0 of magento/product-recommendations
 

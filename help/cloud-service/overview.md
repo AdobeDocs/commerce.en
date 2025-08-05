@@ -2,24 +2,17 @@
 title: '[!DNL Adobe Commerce as a Cloud Service] overview'
 description: Learn about the key features and benefits of [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
-role: Admin, Architect, Developer, User
+role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # [!DNL Adobe Commerce as a Cloud Service] overview
-
-{{accs-early-access}}
 
 [!DNL Adobe Commerce as a Cloud Service] offers flexibility, scalability, and efficiency by enabling businesses to deliver and rapidly scale digital operations and accelerate innovation. Adobe's cloud-native infrastructure automatically adjusts resources to meet peak demands for traffic, orders, and catalog management.
 
 The following graphic highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
 
 ![[!DNL Adobe Commerce as a Cloud Service] product stack](./assets/product-stack.svg){align="center" zoomable="yes"}
-
->[!BEGINSHADEBOX]
-
-![info](assets/Smock_InfoOutline_18_N.svg) If you would like to participate in the [!DNL Adobe Commerce as a Cloud Service] early access program, complete [this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&route=shorturl).
-
->[!ENDSHADEBOX]
 
 ## Architecture
 
@@ -47,14 +40,27 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 
 - [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
 - [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-- [Merchandising Services powered by Channels and Policies](../catalog-service/guide-overview.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
+- [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
-## Product Visuals
+## Product Visuals powered by AEM Assets
 
-Simplify asset management using a robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the native mini-DAM provides basic asset management tools for storing and managing digital assets.
+Product Visuals helps simplify asset management using a digital asset management (DAM) system that integrates with the Adobe Experience Manager for managing rich media content.
 
-See [asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) to learn more.
+The integration ensures that digital assets, such as product images or marketing content, are dynamically linked to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
+
+Product Visuals is available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from AEM Assets.
+
+Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
+
+### Product Visuals or AEM Assets
+
+The following image shows both offerings, depending on your content supply chain needs:
+
+
+![check](assets/compare-offerings.png){width="700" zoomable="yes"}
+
+See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
 ## Developer Platform
 
@@ -105,13 +111,13 @@ The typical upgrade process for Adobe Commerce on Cloud involved creating backup
 
 ### Third-party integrations
 
-Developers can use comprehensive [GraphQL and REST APIs](https://developer.adobe.com/commerce/services/cloud/guides/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
+Developers can use comprehensive [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) and [REST APIs](https://developer.adobe.com/commerce/webapi/rest/) to integrate Commerce Foundation with third-party systems and extend Commerce capabilities.
 
-## Experience Cloud integration
+<!-- ## Experience Cloud integration
 
 [!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
-[Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
+[Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
 ## Benefits
 
@@ -130,17 +136,3 @@ The following sections provide information about the benefits that [!DNL Adobe C
 - **Low cost of ownership**: No more upgrades with always up-to-date services. Stay secure and compliant with the latest security patches automatically applied for you. Scale automatically to meet the most demanding workloads.
 - **High-performance storefront**: Create rich experiences in minutes with simple document-based authoring or a visual editor. Use AI-powered merchandising services to improve conversion. Native experimentation built into the storefront.
 - **Faster innovation**: Free up resources from tedious maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JavaScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.
-
-## New feature solutions
-
-The [Admin UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) is the primary interface for accessing features to manage backend store operations, inventory, pricing, promotions, and customer interactions. However, [!DNL Adobe Commerce as a Cloud Service] offers unique solutions that replace some of the well-known features available in Adobe Commerce on Cloud and on-premises projects. The following table describes the features and replacement solutions available in [!DNL Adobe Commerce as a Cloud Service]:
-
-| Feature | Solution | Availability | Details|
-|---------|----------|--------------|--------|
-| [Digital asset management](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Product Visuals](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) or mini-DAM | Available | A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the mini-DAM provides basic asset management tools for storing and managing digital assets. |
-| [Content Management System (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
-| [Content staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Catalog Service](../catalog-service/overview.md) | Roadmap | A catalog management tool that ties into Adobe Experience Platform, allowing for the management of large catalogs. |
-| [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
-| [Payments](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Payment Services for Adobe Commerce](../payment-services/guide-overview.md) | Available | An integrated payment service that facilitates secure and efficient transactions. |
-| [URL rewrites](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Available | A basic CMS allowing users to create and manage documents and website content easily using document-based authoring. Alternatively, a Universal Editor that allows for more advanced content management and customization across multiple platforms. |
-| [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Catalog Service](../catalog-service/overview.md)| Roadmap | A catalog management tool that ties into Adobe Experience Platform, allowing for the management of large catalogs. |

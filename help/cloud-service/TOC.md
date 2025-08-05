@@ -1,20 +1,21 @@
 ---
-user-guide-title: '[!DNL Adobe Commerce as a Cloud Service] Guide'
+user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: This guide provides detailed instructions for using [!DNL Adobe Commerce as a Cloud Service].
-breadcrumb-title: "Cloud Service Guide"
-hide: yes
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
-- [Overview](overview.md)
+- [Adobe Commerce as a Cloud Service](overview.md)
+- [Feature comparison](feature-comparison.md)
 - [Getting started](getting-started.md)
 - [User management](user-management.md)
 - [Storefront](storefront.md)
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
-- [Migration](migration.md)
+- Migration {#migration}
+  - [Overview](migration/overview.md)
+  - [Bulk Data Migration Tool](migration/bulk-data.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

@@ -1,9 +1,8 @@
 ---
-title: Services documentation
+title: Services Guides Home
 description: Browse Adobe Commerce product documentation for Commerce SaaS Services
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
-breadcrumb-title: Documentation
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 ---
@@ -20,11 +19,52 @@ Adobe provides a collection of Commerce services, integration services, and data
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
-      <a href="../live-search//overview.md">
+      <a href="../cloud-service/overview.md">
+      <img alt="Cloud" src="../assets/icons/shopping-cart.svg" width="40">
+      </a>
+      <div>
+         <a href="../cloud-service/overview.md">
+         <strong>Commerce as a Cloud Service</strong>
+         </a>
+      </div>
+      <p>
+         <em>Scale operations and innovate faster with cloud infrastructure that automatically adapts to traffic and order demands.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../optimizer/overview.md">
+      <img alt="Optimize" src="../assets/icons/gauge4.svg" width="40">
+      </a>
+      <div>
+         <a href="../optimizer/overview.md">
+         <strong>Commerce Optimizer</strong>
+         </a>
+      </div>
+      <p>
+         <em>Deliver a lightning-fast storefront and boost conversions, all while using your existing commerce platform.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../catalog-service/overview.md">
+      <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
+      </a>
+      <div>
+         <a href="../catalog-service/overview.md">
+         <strong>Catalog Service</strong>
+         </a>
+      </div>
+      <p>
+         <em>Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.</em>
+      </p>
+   </td>
+</tr>
+<tr style="border: 0;">
+   <td valign="top">
+      <a href="../live-search/overview.md">
       <img alt="Search" src="../assets/icons/Magnify.svg" width="40">
       </a>
       <div>
-         <a href="../live-search//overview.md">
+         <a href="../live-search/overview.md">
          <strong>[!DNL Live Search]</strong>
          </a>
       </div>
@@ -43,19 +83,6 @@ Adobe provides a collection of Commerce services, integration services, and data
       </div>
       <p>
          <em>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../catalog-service/overview.md">
-      <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
-      </a>
-      <div>
-         <a href="../catalog-service/overview.md">
-         <strong>Catalog Service</strong>
-         </a>
-      </div>
-      <p>
-         <em>Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.</em>
       </p>
    </td>
    <td valign="top">
@@ -84,7 +111,7 @@ Adobe provides a collection of Commerce services, integration services, and data
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong>
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
          </a>
       </div>
       <p>
@@ -102,6 +129,19 @@ Adobe provides a collection of Commerce services, integration services, and data
       </div>
       <p>
          <em>Configure authentication to enable secure communication between Adobe Commerce and connected services. For each environment, specify the data space ID for Commerce services data storage.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../aem-assets-integration/overview.md">
+      <img alt="Visual" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+          <a href="../aem-assets-integration/overview.md">
+         <strong>AEM Assets integration</strong>
+         </a>
+      </div>
+      <p>
+         <em>Simplify digital asset management using a system that integrates with Adobe Experience Manager for managing rich media content.</em>
       </p>
    </td>
 </tr>

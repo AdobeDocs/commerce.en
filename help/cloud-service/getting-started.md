@@ -3,10 +3,9 @@ title: 'Getting started with [!DNL Adobe Commerce as a Cloud Service]'
 description: Learn how to get started with [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Getting started
-
-{{accs-early-access}}
 
 [!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. After completing a few basic setup processes, your store will be up and running in no time. This guide walks you through creating and working with an instance.
 
@@ -26,7 +25,7 @@ This diagram provides a high-level overview of how administrators and merchants 
 
 >[!TAB Developer workflow]
 
-This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/services/cloud/) for more information.
+This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
 
 ![[!DNL Adobe Commerce as a Cloud Service] developer flow diagram](./assets/developer-flow.svg){zoomable="yes"}
 
@@ -67,11 +66,8 @@ This diagram provides a high-level overview of how developers create integration
 
    >[!NOTE]
    >
-   >Sandbox instances are currently limited to the North America region.
-
-1. _(Optional)_ If you want to include sample product data for testing and learning purposes, select [!UICONTROL **Adobe Store**] from the [!UICONTROL **Test data**] dropdown.
-
-   You can skip this option, but your storefront will not have any products if you do. You will have to [import your catalog](#import-your-catalog) to see the full storefront experience.
+   >* Sandbox instances are currently limited to the North America region.
+   >* The option to install sample data is currently unavailable.
 
 1. Click [!UICONTROL **Add Instance**].
 

@@ -22,6 +22,28 @@ Updates include:
 
 ## Current major version
 
+## 103.4.7 Release
+
+![Fix](../assets/fix.svg) Removed obsolete tables that stored category permissions for products. <!--MDEE-1065-->
+
+## 103.4.6 Release
+
+![Fix](../assets/fix.svg) Export Adobe Commerce downloadable product data using the `ac_downloadable` attribute for use with Adobe Commerce Optimizer.. <!--MDEE-1043-->
+![Fix](../assets/fix.svg) Critical installation error fix for Adobe Commerce version 2.4.4. <!--MDEE-1074-->
+
+## 103.4.5 Release
+
+![New](../assets/new.svg) SaaS data export now supports the Adobe Commerce `giftcard` product type. In the data feed, Gift card products are exported as simple products with the product attribute type `ac_giftcard`. <!--MDEE-1042-->
+![Fix](../assets/fix.svg)  Improved data export error reporting. Logs now include more detailed error messages, including original technical details to make it easier to debug and trace errors. <!--MDEE-1064-->
+
+## 103.4.4 Release
+
+![New](../assets/new.svg) Added a warning message that displays when the `cleanup-feed` argument is added to the `saas:resync` CLI command. The `--cleanup-feed` option should be used cautiously and only in specific scenarios like after environment cleanup or with the `--dry-run` option. Using it in other cases can lead to data loss and sync issues. <!--MDEE-1047-->
+![Fix](../assets/fix.svg) Added the `x-request-id` from the server response for improved traceability. <!--MDEE-1041-->
+![Fix](../assets/fix.svg) Fixed an issue where the synchronization status was not saved for the entire feed batch, which led to unnecessary resynchronization. <!--MDEE-1049-->
+![Fix](../assets/fix.svg) Fixed an issue where all feeds in the feed batch were skipped during synchronization if one feed contained an error. <!--MDEE-976-->
+![Fix](../assets/fix.svg) Added support for dimensions in the category permissions indexer. <!--MDEE-654-->
+
 ## 103.4.3 Release
 
 ![Fix](../assets/fix.svg) Resolved an issue where products were skipped during the data export process due to missing EAV attributes. <!--MDEE-970-->

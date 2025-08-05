@@ -1,7 +1,6 @@
 ---
 user-guide-title: "[!DNL Catalog Service] Guide"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Catalog Service] for Adobe Commerce."
-breadcrumb-title: "[!DNL Catalog Service] Guide"
 hide: yes
 role: Admin
 feature: Services, Catalog Service
@@ -10,14 +9,13 @@ feature: Services, Catalog Service
 
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Catalog Service]](overview.md)
-- [Onboarding and installation](installation.md)
-- [Catalog Service and API Mesh](mesh.md)
-- [Display Taxed Prices with the API Mesh](taxes.md)
-- GraphQL queries {#graphql}
-    - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-    - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
-    - [productSearch query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
-    - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
+- [Installation](installation.md)
+- [Get Started with the [!DNL Catalog Service]](get-started.md)
+- [Retrieve catalog data](graphql-queries.md)
+- Integrating with other applications {#integration}
+   - [Catalog Service and API Mesh](mesh.md)
+   - [Use Case: Display Taxed Prices](taxes.md)
 - [Release Notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+
 

@@ -47,6 +47,10 @@ With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout expe
 
 When enabled, the [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. You can configure [!DNL Apple Pay] in the store configuration or the extension's Home.
 
+>[!NOTE]
+>
+>  The Apple Pay domain verification certificate is already included into the Payment Services code. Verify that the path `/.well-known/apple-developer-merchantid-domain-association` returns a 200 response code. See [PayPal developer documentation about Integrating with Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) for more information about the **Apple Pay Domain verification** certificate.
+
 See [Settings](settings.md#apple-pay) for more information.
 
 ### [!DNL Google Pay] button

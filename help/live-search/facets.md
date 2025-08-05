@@ -7,7 +7,7 @@ exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
 
 Faceting is a method of high-performance filtering that uses multiple dimensions of attribute values as search criteria. Faceted search is similar, but considerably "smarter" than the standard [layered navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). The list of available filters is determined by the [filterable attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) of products returned in the search results. 
 
-[!DNL Live Search] uses the `productSearch` query, which returns faceting and other data that is specific to [!DNL Live Search]. Refer to [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) in the developer documentation for code examples.
+[!DNL Live Search] uses the `productSearch` query, which returns faceting and other data that is specific to [!DNL Live Search]. Refer to [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) in the developer documentation for code examples.
 
 ![Filtered search results](assets/storefront-search-results-run.png)
 
@@ -19,16 +19,13 @@ Any defined facet may be used as a URL parameter and results will be filtered ba
 
 The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. Each storefront properties of an attribute must have the "Use in Search Results Layered Navigation" value set to "Yes".
 
-[!DNL Live Search] supports up to:
-
-* 100 attributes configured as facets
-* 50 sortable attributes
-* 200 filterable attributes
-* 200 searchable attributes
-
 >[!NOTE]
 >
-> If there are more than 200 filterable attributes defined, it is not deterministic which 200 will actually be indexed.
+>If you define a product category as a facet, the facet displays the category and the subcategory.
+>
+>![Category facet](assets/facet-category.png)
+
+See [boundaries and limits](./boundaries-limits.md#facets) to learn more about the facet requirements in [!DNL Live Search].
 
 If you have a large number of attributes to contend with, consider combining attributes into a single 'meta-attribute'. For example, shoes generally have numeric sizes, while shirts are commonly sized "S/M/L/XL". These two types of sizes can be combined into a single searchable attribute.
 

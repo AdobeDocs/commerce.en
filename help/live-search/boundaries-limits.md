@@ -19,7 +19,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
 - Custom product types are not supported.
 - Custom attributes created programmaticaly with `"is_user_defined": false` are not supported.
-- You can filter results using the "starts with" or "contains" conditions with some limitations as described [here](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
+- You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
 - You can only track performance metrics within the last year.
 - If a search query contains multiple words, the blank space between the words causes them to be treated as separate search terms. Use [synonyms](./synonyms.md) if you want to account for multi-word search queries.
 
@@ -35,16 +35,17 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 ## Facets
 
-- A maximum of 100 attributes can be configured as facets from the 200 filterable attributes that can be indexed.
+- From the set of defined filterable attributes, you can configure up to 100 attributes as facets.
 - Within a facet, a maximum of 100 buckets can be returned. If you need to return more than 100 buckets, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
 - Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
 - Stock status (`quantity_and_stock_status`) is not supported as a facet. You can use `inStock: 'true'` to filter out of stock products. This is supported out of the box in the `LiveSearchAdapter` module when "Display out of stock products" is set to "True" in the [!DNL Commerce] Admin.
 - Date type attributes are not supported as a facet.
 - Any changes made to the attribute metadata after that attribute is added as a facet, are not reflected in the facet.
+- You can have up to 50 sortable attributes and 200 searchable attributes.
 
 ## Query
 
-- [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/services/graphql/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
+- [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
 - The maximum number of results that can be returned in a search query is 10,000.
 - The maximum number of results per page is 500.
 - It is not possible to filter results using a date type attribute.
