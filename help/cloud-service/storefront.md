@@ -149,5 +149,7 @@ If you run into issues with the `aio login` command, Adobe recommends fully sign
 
 Refer to the following articles for more information:
 
-* To learn more about managing and displaying content and data in the storefront, see the [Storefront and Catalog Administrator end-to-end use case](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/products/product-create.html).
+* To learn more about managing and displaying content and data in the storefront, see [updating storefront content](./use-cases.md#update-storefront-content).
+* For more information on contextual experimentation features, see [contextual experimentation](./use-cases.md#contextual-experimentation).
+* For more information on using Generative AI to automate high-quality content generation, see [Generate Variations](./use-cases.md#generate-variations).
 * To learn more about updating site content and integrating with Commerce frontend components and backend data, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
