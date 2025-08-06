@@ -9,6 +9,10 @@ exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
 
 In this article, you learn how to add custom attributes to back office events. With custom attributes, you can capture rich data insights to enhance analytics and further create personalized experiences for your shoppers.
 
+>[!NOTE]
+>
+>Learn how you can [add custom identities](custom-identities.md) to profiles.
+
 Custom attributes are supported at two levels:
 
 - Order level 

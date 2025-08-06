@@ -9,6 +9,10 @@ feature: Personalization, Integration
 
 Custom profile attributes allow you to enhance customer profile identification in Experience Platform by using additional identifiers beyond the default `customerId` and `emailId`. This enables more precise customer matching and improved data integration between your Commerce platform and Experience Platform.
 
+>[!NOTE]
+>
+>Learn how you can [add custom attributes](custom-attributes.md) to orders.
+
 ## Benefits
 
 - Use multiple identifiers for better customer matching.

@@ -28,6 +28,10 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
+_August 7, 2025_
+
+![New](../assets/new.svg) - As part of the 3.3.0 release, added ability to add [custom attributes to profiles](custom-identities.md).
+
 _August 2, 2024_
 
 ![Fix](../assets/fix.svg) - Fixed the payments total amount when the order total is configured to include taxes.
@@ -71,14 +75,6 @@ _October 12, 2022_
 ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support).
 
 +++
-
-## 3.3.0
-
-_August 12, 2025_
-
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
-
-![New](../assets/new.svg) - Added ability to add [custom attributes to profiles](custom-identities.md).
 
 ## 3.3.0
 
