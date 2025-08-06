@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.8 Release
 
-![Fix](../assets/fix.svg) Fixed issue where the extension  was not exporting website scoped bundle selection prices. <!--MDEE-1115-->
+![Fix](../assets/fix.svg) Fixed issue where the extension was not exporting website scoped bundle selection prices. <!--MDEE-1115-->
 ![Fix](../assets/fix.svg) Fixed incorrect lowStock sync when MSI + threshold configuration is used. <!--MDEE-1113-->
 ![New](../assets/new.svg) Added tier price information to the prices feed. <!--MDEE-1070-->
 
