@@ -14,12 +14,6 @@ The following graphic highlights the products that power [!DNL Adobe Commerce as
 
 ![[!DNL Adobe Commerce as a Cloud Service] product stack](./assets/product-stack.svg){align="center" zoomable="yes"}
 
->[!BEGINSHADEBOX]
-
-![info](assets/Smock_InfoOutline_18_N.svg) If you would like to participate in the [!DNL Adobe Commerce as a Cloud Service] early access program, complete [this form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&route=shorturl).
-
->[!ENDSHADEBOX]
-
 ## Architecture
 
 See the following video for a brief introduction to the [!DNL Adobe Commerce as a Cloud Service] architecture. Diagrams that illustrate the architecture are provided below the video.

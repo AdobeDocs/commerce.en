@@ -95,7 +95,7 @@ Create, edit, and publish content directly onto the storefront.
 
 1. Refresh the storefront page and confirm that your changes are now live.
 
-## Contextual expermentation
+## Contextual experimentation
 
 Adobe Commerce's contextual experimentation feature allows you to create and manage experiments on your storefront to test different content and configurations.
 

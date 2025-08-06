@@ -99,11 +99,11 @@ Running the following command will create a scaffolding for your Commerce storef
 
 1. Select one of the following options:
 
-    * **Use the demo Adobe Commerce tenant** - Use a demo tenant. 
+    * **Use the demo Adobe Commerce tenant** - Use a demo tenant.
       * If you select this option, you are prompted to install the AEM Code Sync bot in a browser window. You must specify the repository you created and authorize the bot. Return to the CLI and enter `y` to confirm the AEM Code Sync bot installation.
     * **Pick an available Adobe Commerce tenant** - Select an existing Commerce tenant in the selected organization.
       * If you select this option, you must select the project and workspace to create a mesh in.
-    * **Provide your own Adobe Commerce tenant API URL** - Select this option if you are an Early Access Program participant. Enter the API URL provided in your Adobe onboarding email.
+    * **Provide your own Adobe Commerce tenant API URL** - Select this option if you are a Trial Access Program participant. Enter the API URL provided in your Adobe onboarding email.
 
     >[!NOTE]
     >
@@ -144,3 +144,12 @@ If you run into issues with the `aio login` command, Adobe recommends fully sign
     ```bash
     aio console project select
     ```
+
+## Next steps
+
+Refer to the following articles for more information:
+
+* To learn more about managing and displaying content and data in the storefront, see [updating storefront content](./use-cases.md#update-storefront-content).
+* For more information on contextual experimentation features, see [contextual experimentation](./use-cases.md#contextual-experimentation).
+* For more information on using Generative AI to automate high-quality content generation, see [Generate Variations](./use-cases.md#generate-variations).
+* To learn more about updating site content and integrating with Commerce frontend components and backend data, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
