@@ -24,9 +24,9 @@ Updates include:
 
 ## 103.4.8 Release
 
-![Fix](../assets/fix.svg) Fixed issue where the extension was not exporting website scoped bundle selection prices. <!--MDEE-1115-->
-![Fix](../assets/fix.svg) Fixed incorrect lowStock sync when MSI + threshold configuration is used. <!--MDEE-1113-->
 ![New](../assets/new.svg) Added tier price information to the prices feed. <!--MDEE-1070-->
+![Fix](../assets/fix.svg) The Data Exporter extension now correctly exports website-scoped bundle selection prices, ensuring storefront pricing reflects accurate values based on the "Catalog Price Scope" configuration.<!--MDEE-1115-->
+![Fix](../assets/fix.svg) Previously, products were synced with an incorrect `lowStock=true` status when using Inventory Management (Multi-source Inventory Management) with threshold configuration. This issue has been fixed to ensure accurate low stock reporting.<!--MDEE-1113-->
 
 ## 103.4.7 Release
 
