@@ -22,6 +22,12 @@ Updates include:
 
 ## Current major version
 
+## 103.4.8 Release
+
+![New](../assets/new.svg) Added tier price information to the prices feed. <!--MDEE-1070-->
+![Fix](../assets/fix.svg) The Data Exporter extension now correctly exports website-scoped bundle selection prices, ensuring storefront pricing reflects accurate values based on the "Catalog Price Scope" configuration.<!--MDEE-1115-->
+![Fix](../assets/fix.svg) Previously, products were synced with an incorrect `lowStock=true` status when using Inventory Management (Multi-source Inventory Management) with threshold configuration. This issue has been fixed to ensure accurate low stock reporting.<!--MDEE-1113-->
+
 ## 103.4.7 Release
 
 ![Fix](../assets/fix.svg) Removed obsolete tables that stored category permissions for products. <!--MDEE-1065-->
