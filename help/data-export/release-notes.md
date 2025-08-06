@@ -22,6 +22,13 @@ Updates include:
 
 ## Current major version
 
+## 103.4.8 Release
+
+![Fix](../assets/fix.svg) 2.4.6 integration test fails. <!--MDEE-1122-->
+![Fix](../assets/fix.svg) Magento Data Export Extensions Data Exporter does not export website scoped bundle selection prices. <!--MDEE-1115-->
+![Fix](../assets/fix.svg) Products being synced as lowStock = true when MSI + threshold config is in use.. <!--MDEE-1113-->
+![Fix](../assets/fix.svg) Tier Price - MDEE - add tier price information to the prices feed. <!--MDEE-1070-->
+
 ## 103.4.7 Release
 
 ![Fix](../assets/fix.svg) Removed obsolete tables that stored category permissions for products. <!--MDEE-1065-->
