@@ -29,7 +29,7 @@ Install Node Version Manager (NVM) and the required Node.js version (22.13.1 LTS
 1. Install Node Version Manager (NVM).
 
     ```bash
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+    curl -ohttps://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
     ```
 
 1. Install Node.js and NPM. For more information, see [Node.js](https://nodejs.org/en/).
@@ -104,10 +104,10 @@ Before you begin, make sure you have the following information:
 
 1. Install the Code Sync app: Click **[!UICONTROL Install AEM Code Sync App]** to open the Code Sync installer in a new tab.
    
-   - Select your GitHub organization, then click **[!UICONTROL Configure]**
-   - In the Code Sync interface, select **[!UICONTROL Only select repositories]**.
-   - Click the **[!UICONTROL Select respositories]** menu, choose the storefront code repository you created.
-   - Click **[!UICONTROL Save]** to register your repository.
+   * Select your GitHub organization, then click **[!UICONTROL Configure]**
+   * In the Code Sync interface, select **[!UICONTROL Only select repositories]**.
+   * Click the **[!UICONTROL Select respositories]** menu, choose the storefront code repository you created.
+   * Click **[!UICONTROL Save]** to register your repository.
 
 1. On the tab where the Site Creator is open, click **Continue** to add the boilerplate content to the Document Author environment.
 
@@ -144,10 +144,10 @@ If the product count is 0, follow the steps to load the sample data.
 
 1. Follow the setup instructions in the repository's README file to complete the following tasks:
 
-   - Set up your environment
-   - Complete the data ingestion process
-   - Create catalog views and policies using the sample data 
-   - Verify the data ingestion by checking the Catalog Service data on the [Data Sync](./setup/data-sync.md) page
+   * Set up your environment
+   * Complete the data ingestion process
+   * Create catalog views and policies using the sample data 
+   * Verify the data ingestion by checking the Catalog Service data on the [Data Sync](./setup/data-sync.md) page
 
 ## Step 3: Update the storefront configuration file
 
