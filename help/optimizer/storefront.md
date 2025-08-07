@@ -7,12 +7,13 @@ exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 ---
 # Set up your storefront
 
->[!NOTE]
+This tutorial provides detailed instructions for setting up and using [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure Commerce storefront powered by data from your [!DNL Adobe Commerce Optimizer] instance.
+
+
+>[!TIP]
 >
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
-This tutorial demonstrates how to setup and use [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure Commerce storefront powered by data from your [!DNL Adobe Commerce Optimizer] instance.
-
+>Fast track the storefront set up process by using the Site Creator tool to set up your storefront code repository and document author environment
+>automatically. Then, you can use these instructions to understand how the storefront was created, and learn more about the components available to you.
 
 ## Prerequisites
 
@@ -285,6 +286,7 @@ Connect your repository to the Edge Delivery Service by adding the AEM Code Sync
 Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Site Creator tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other elements to populate your storefront.
 
 1. Open the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
+
 1. Confgure your repository:
    
    * Select **[!UICONTROL Use Existing Repository]**.

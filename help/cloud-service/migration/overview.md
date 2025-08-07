@@ -43,7 +43,7 @@ As an alternative to a full migration, [!DNL Adobe Commerce as a Cloud Service] 
 
 ![incremental migration](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Channels and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
+* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Views and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
 
 ![iterative migration](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -177,7 +177,7 @@ This is the strategic, future-proof approach for leveraging Adobe Commerce Optim
     * **Event-driven** (through App Builder): Utilize Adobe I/O Events from your PaaS instance to trigger publicly-available or custom Adobe App Builder applications. These applications transform and push data changes (create, update, and delete) to the CCDM through its APIs.
     * **Batch ingestion**: For large initial loads or periodic bulk updates, use secure file transfers (for example, CSV or JSON) to a staging area, processed by Adobe Experience Platform (AEP) ingestion services into CCDM.
     * **Direct API integration** (with App Builder orchestration): For more complex scenarios, App Builder can act as an orchestration layer, making direct API calls to your PaaS backend, transforming the data, and pushing it to CCDM.
-* **Catalog view and policy definition**: Configure catalog views (logical groupings for unique catalog presentation, such as store views, regions, and B2B/B2C segments) and define policies (rule sets for product presentation, filtering, and merchandising) within the CCDM. This enables dynamic control over product assortments and display logic per channel.
+* **Catalog view and policy definition**: Configure catalog views (logical groupings for unique catalog presentation, such as store views, regions, and B2B/B2C segments) and define policies (rule sets for product presentation, filtering, and merchandising) within the CCDM. This enables dynamic control over product assortments and display logic per catalog view.
 * **Integrate Live Search and Product Recommendations**: Once catalog data is present in CCDM, integrate Adobe's SaaS-based Live Search and Product Recommendations services. These leverage Adobe Sensei AI and machine learning models for superior search relevance and personalized recommendations, consuming data directly from the CCDM.
 
 **Benefit**: By abstracting catalog management and discovery into CCDM and associated SaaS services, you achieve improved performance, gain AI-driven merchandising capabilities, significantly offload read operations from your legacy backend, and enable a robust "peel-off" of the top-of-funnel experience.
