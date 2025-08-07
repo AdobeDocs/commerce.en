@@ -7,7 +7,7 @@ feature: Personalization, Integration
 
 # Add Custom Attributes to Profiles
 
-Custom profile attributes allow you to enhance customer profile identification in Experience Platform by using additional identifiers beyond the default `customerId` and `emailId`. These additional identifiers enable more precise customer matching and improved data integration between the Commerce Platform and the Experience Platform.
+Custom profile attributes allow you to enhance customer profile identification in Experience Platform by using additional identifiers beyond the default `customerId` and `emailId`. These additional identifiers enable more precise customer matching and improved data integration between the Commerce platform and Experience Platform.
 
 >[!NOTE]
 >
@@ -160,6 +160,17 @@ class CustomId implements EventDataProcessorInterface
 >
 >- primaryID = customerId
 >- secondaryID = emailId
+
+>[!BEGINSHADEBOX]
+
+After you complete these two steps:
+
+- Your Commerce schema in Experience Platform can properly ingest custom identities for your profile event data.
+- Processor classes in your Commerce PHP code collects custom identification information.
+
+Now, any profile event data sent from Commerce contains your custom identification information.
+
+>[!ENDSHADEBOX]
 
 ## Data format examples
 
