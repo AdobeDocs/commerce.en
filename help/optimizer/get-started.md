@@ -111,7 +111,7 @@ Manage instances from the Commerce Cloud Manager.
 ### Search and filter instances
 
 After you log in, the dashboard shows all Commerce product instances available in the organization.
-All Adobe Commerce Optimizer instances have `[!DNL Adobe Commerce Optimizer]` in the Product column. 
+The Product column indicates which Commerce application the instance is provisioned for.
 
 Use the Filter and Search options to find specific instances quickly. You can search by data created, region, created by, product type, environment, and status.
 
