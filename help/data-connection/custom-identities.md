@@ -3,8 +3,8 @@ title: Add Custom Attributes to Profiles
 description: Learn how to add custom attributes to customer profiles.
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: ad786572-9158-429a-b4dd-5f15efc0f624
 ---
-
 # Add Custom Attributes to Profiles
 
 Custom profile attributes allow you to enhance customer profile identification in Experience Platform by using additional identifiers beyond the default `customerId` and `emailId`. These additional identifiers enable more precise customer matching and improved data integration between the Commerce platform and Experience Platform.
