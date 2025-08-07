@@ -81,7 +81,7 @@ Developers handle technical implementation and data integration, including platf
 |---|---|---|
 |**Access Developer Console**|Create projects and generate credentials|[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)|
 |**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)|
-|**Set Up Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
+|**Set Up the Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
 
 ### Merchandiser tasks
 
