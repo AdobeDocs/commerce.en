@@ -165,8 +165,8 @@ class CustomId implements EventDataProcessorInterface
 
 After you complete these two steps:
 
-- Your Commerce schema in Experience Platform can properly ingest custom identities for your profile event data.
-- Processor classes in your Commerce PHP code collects custom identification information.
+1. Your Commerce schema in Experience Platform can properly ingest custom identities for your profile event data.
+1.  Processor classes in your Commerce PHP code collects custom identification information from profile events.
 
 Now, any profile event data sent from Commerce contains your custom identification information.
 
