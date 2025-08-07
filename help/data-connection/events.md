@@ -303,6 +303,10 @@ The following table describes the data collected for this event.
 
 Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [server-side](events-backoffice.md#customer-profile-events).
 
+>[!NOTE]
+>
+>[Learn](custom-identities.md) how to create custom identity attributes to enhance customer profile identification.
+
 ### signIn
 
 |Description| XDM event name|
