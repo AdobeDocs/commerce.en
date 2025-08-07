@@ -127,13 +127,6 @@ Once the app is open, you can easily switch between environments like sandbox an
 
    ![Instance Switcher](./assets/context-switcher.png){zoomable="yes"}
 
-### Search and filter instances
-
-After you log in, the dashboard shows all Commerce product instances available in the organization.
-All Adobe Commerce Optimizer instances have `Adobe Commerce Optimizer` in the Product column. 
-
-Use the Filter and Search tools to find specific instances quickly. You can search by data created, region, created by, product type, environment, and status.
-
 ### Get instance details**
    
 View the instance details by clicking the information icon next to your instance name.
