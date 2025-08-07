@@ -30,7 +30,7 @@ These release notes describe feature changes and fixes related to extensions use
 
 _August 7, 2025_
 
-![New](../assets/new.svg) - As part of the 3.3.0 release, added ability to add [custom attributes to profiles](custom-identities.md).
+![New](../assets/new.svg) - With the 3.3.0 release, you can now add [custom attributes to profiles](custom-identities.md).
 
 _August 2, 2024_
 
