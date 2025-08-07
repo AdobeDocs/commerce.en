@@ -41,7 +41,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
    1. Go to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-      ![AEM Assets Integration enable the integration](../assets/aem-assets-integration-enable-config.png){width="600" zoomable="yes"}
+      ![AEM Assets Integration enable the integration](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. Enter the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]**.
 
@@ -53,7 +53,9 @@ For the initial setup, use the default *Match by product sku* rule.
 
 1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}  Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 
-1. Set **[!UICONTROL Integration enabled]** to `Yes` to allow Commerce to accept incoming updates from AEM Assets.
+1. Set the **[!UICONTROL Commerce integration]** to `assets-integration` to select the Commerce Integration to use with AEM Assets.
+
+1. Set **[!UICONTROL Synchronization enabled]** to `Yes` to allow Commerce to accept incoming updates from AEM Assets.
 
    After enabling the integration, additional configuration options are available to specify asset matching criteria.
 
@@ -78,13 +80,36 @@ The integration guarantees the following synchronization performance levels:
 
 This ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
 
+### Configure the Visualization Owner
+
+The **Visualization Owner** setting determines which system serves product images in the integration:
+
+* Adobe Commerce – Uses images hosted in Commerce.
+* AEM Assets – Uses images synchronized from AEM.
+
+The Admin displays the available images for that owner, while the rest of the images are grayed out and displayed with a **hidden** label.
+
+See the [set image details](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} topic for details on image display behavior.
+
+>[!TIP]
+>
+> During a migration from Commerce to AEM Assets, set the **Visualization Owner** to Commerce to avoid broken image links. After all the products have been successfully synchronized with AEM Assets, switch to the AEM Assets owner to complete the transition. This ensures continuous image availability throughout the process.
+
+1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+
+   ![AEM Assets Integration visualization owner feature](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+
+1. Select the **Visualization Owner** source to display the images.
+
+1. Click **[!UICONTROL Save Config]** to apply updates and initiate asset synchronization.
+
 ### Optional. Configure the Custom Domain URL
 
 If the AEM Assets as a Cloud Service project has been configured with a [Custom Domain Name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}, you must add the domain name to the Commerce store configuration so that the AEM Assets integration for Commerce can use it.
 
 1. Navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-   ![AEM Assets Integration enable the integration](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+   ![AEM Assets Integration enable the integration](../assets/aem-assets-view.png){width="700" zoomable="yes"}
 
 1. Add the **Custom Domain URL** to the **[!UICONTROL Asset Custom Domain]** field.
 
