@@ -212,6 +212,8 @@ You need the following information to update the storefront boilerplate code:
 
    * Replace the `{{SITE}}` string with the repository name.
 
+   * The `pathname` variable is populated by the system.
+
    +++Example of updated configuration file
 
    If your GitHub repository is named `aco-storefront` and your organization is `early-adopter`, the updated URL should look like this:
