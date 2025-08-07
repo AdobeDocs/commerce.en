@@ -31,36 +31,47 @@ This endpoint retrieves the list of SKUs associated with a given asset:
 
 ```bash
 const { Core } = require('@adobe/aio-sdk')
- 
-async function main (params) {
-    // return the products that map to the assetId
+
+async function main(params) {
+
+    // Build your own matching logic here to return the products that map to the assetId
+    // var productMatches = [];
+    // params.assetId
+    // params.eventData.assetMetadata['commerce:isCommerce']
+    // params.eventData.assetMetadata['commerce:skus'][i]
+    // params.eventData.assetMetadata['commerce:roles']
+    // params.eventData.assetMetadata['commerce:positions'][i]
+    // ...
+    // End of your matching logic
+
     return {
-        statusCode: 200,
+        statusCode: 500,
         body: {
-          asset_id: "urn:aaid:aem:1aa1d4a0-18b8-40a7-a228-e0ab588deee1",
-          product_matches: [
-            {
-              product_sku: "SKU1",
-              asset_roles: ["thumbnail"],
-              asset_position: [1]
-            }
-          ]
+            asset_id: params.assetId,
+            product_matches: [
+                {
+                    product_sku: "<YOUR-SKU-HERE>",
+                    asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
+                    asset_position: 1
+                }
+            ]
         }
-   }
+    };
 }
- 
-exports.main = main
+
+exports.main = main;
 ```
 
 **Request**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
 | `assetId` | String | Represents the updated asset ID |
+| `eventData` | String | Returns the data payload associated with the `assetId` |
 
 **Response**
 
@@ -88,24 +99,32 @@ This endpoint retrieves the list of assets associated with a given SKU:
 
 ```bash
 const { Core } = require('@adobe/aio-sdk')
- 
-async function main (params) {
+
+async function main(params) {
     // return asset matches for a product
+    // Build your own matching logic here to return the assets that map to the productSku
+    // var assetMatches = [];
+    // params.productSku
+    // ...
+    // End of your matching logic
+
     return {
-        statusCode: 200,
+        statusCode: 500,
         body: {
-          product_sku: params.productSku, //SKU-1
-          asset_matches: [
-            {
-              asset_id: "urn:aaid:aem:1aa1d4a0-18b8-40a7-a228-e0ab588deee1",
-              asset_roles: ["thumbnail","image"]
-            }
-          ]
+            product_sku: params.productSku,
+            asset_matches: [
+                {
+                    asset_id: "<YOUR-ASSET-ID-HERE>", // urn:aaid:aem:1aa1d5i2-17h8-40a7-a228-e3ur588deee1
+                    asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
+                    asset_format: "image", // can be "image" or "video"
+                    asset_position: 1
+                }
+            ]
         }
-      }
+    };
 }
- 
-exports.main = main
+
+exports.main = main;
 ```
 
 **Request**
@@ -116,7 +135,17 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
-| `productSKU` | String | Represents the updated product SKU |
+| `productSKU` | String | Represents the updated product SKU. |
+| `asset_matches` | String | Returns all assets associated with a specific `productSku`. |
+
+The `asset_matches` parameter contains the following attributes:
+
+| Attribute | Data Type | Description |
+| --- | --- | --- |
+| `asset_id` | String | Represents the updated asset ID. |
+| `asset_roles` | String | Returns all available asset roles. Uses supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`. |
+| `asset_format` | String | Provides the available formats for the asset. Possible values are `image` and `video`. |
+| `asset_position` | String | Shows the position of the asset. |
 
 **Response**
 
@@ -135,7 +164,3 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
   ]
 }
 ```
-
->[!TIP]
->
-> In the `asset_roles` key, use supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`.
