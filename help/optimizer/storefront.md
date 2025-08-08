@@ -98,7 +98,7 @@ Before you begin, make sure you have the following information:
 
    ![[!DNL Install Code Sync app]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-   >[!Important]
+   >[!IMPORTANT]
    >
    >You must install the Code Sync app and register your repository before you can continue to complete the setup process. The site creation fails if you don't complete this step correctly.
 
