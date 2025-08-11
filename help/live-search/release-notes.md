@@ -87,6 +87,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.4.1
+
+_August 11, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed catalog service endpoint for sandbox environments.
+
 ## [!DNL Live Search] 4.4.0
 
 _July 14, 2025_
