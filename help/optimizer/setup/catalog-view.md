@@ -58,6 +58,41 @@ The Catalog views page updates to display the new catalog view.​
 
 After you complete these steps, the catalog view is now configured to display products and pricing based on your selected sources and policies.
 
+## Manage catalog view
+
+Follow these instructions to update the properties of existing catalog views.
+
+### Edit catalog view
+
+1. On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **More** (...) options.
+1. Click **Edit** to access the catalog view editor.
+1. Update the name, catalog sources, policies, and price book information as needed.
+1. Save the changes.
+
+### Delete catalog view
+
+1. On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **More** (...) options.
+1. Click **Delete**.
+
+    When the confirmation dialog appears, click **[!UICONTROL Delete]**.
+
+### View details
+
+This option provides a quick way to see all the catalog view parameters, while staying on the *Catalog views* table.
+
+On the *Catalog views* worksapce, find the catalog view in the grid that you want to edit and click the ![information icon](../assets/info-icon.png).
+
+![Catalog View Details](../assets/catalog-view-details.png)
+
+From here you can see catalog view configuration details, such as:
+
+- View ID
+- Name
+- Catalog sources
+- Policies
+- Date Created
+- Data Modified
+
 ## Architecture Overview
 
 Catalog views are part of the Merchandising Services framework that replaces the website, store, storeview framework used in Adobe Commerce foundations with a more flexible model:
