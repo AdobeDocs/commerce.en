@@ -93,6 +93,8 @@ From here you can see catalog view configuration details, such as:
 - Date Created
 - Data Modified
 
+Some of these configuration settings are needed as you set up your storefront or use the data ingestion API.
+
 ## Architecture Overview
 
 Catalog views are part of the Merchandising Services framework that replaces the website, store, storeview framework used in Adobe Commerce foundations with a more flexible model:
