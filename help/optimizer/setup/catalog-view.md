@@ -60,7 +60,7 @@ After you complete these steps, the catalog view is now configured to display pr
 
 ## Manage catalog view
 
-Follow these instructions to update the properties of existing catalog views.
+Follow these instructions to update or view the properties of existing catalog views.
 
 ### Edit catalog view
 
