@@ -71,7 +71,7 @@ Follow these instructions to update or view the properties of existing catalog v
 
 ### Delete catalog view
 
-1. On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **More** (...) options.
+1. In the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **...** to open the actions menu.
 1. Click **Delete**.
 
     When the confirmation dialog appears, click **[!UICONTROL Delete]**.
