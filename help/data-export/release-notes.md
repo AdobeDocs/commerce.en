@@ -24,6 +24,12 @@ Updates include:
 
 ## 103.4.8 Release
 
+![Fix](../assets/fix.svg) Added data exporter prices mView trigger to listen changes on product entity. It fixes issue when deleted or renamed product price wasn't updated.<!--MDEE-1125-->
+![Fix](../assets/fix.svg) Fixed issue when newly created product with same SKU as previously deleted product remained same source_entity_id as deleted one.<!--MDEE-1126-->
+![Fix](../assets/fix.svg) Issue with stale product variants after configurable product variations change was fixed.<!--MDEE-1127-->
+
+## 103.4.8 Release
+
 ![New](../assets/new.svg) Added tier price information to the prices feed. <!--MDEE-1070-->
 ![Fix](../assets/fix.svg) The Data Exporter extension now correctly exports website-scoped bundle selection prices, ensuring storefront pricing reflects accurate values based on the "Catalog Price Scope" configuration.<!--MDEE-1115-->
 ![Fix](../assets/fix.svg) Previously, products were synced with an incorrect `lowStock=true` status when using Inventory Management (Multi-source Inventory Management) with threshold configuration. This issue has been fixed to ensure accurate low stock reporting.<!--MDEE-1113-->
