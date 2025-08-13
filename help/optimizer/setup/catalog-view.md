@@ -64,7 +64,7 @@ Follow these instructions to update or view the properties of existing catalog v
 
 ### Edit catalog view
 
-1. On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **More** (...) options.
+1. On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **...** to open the actions menu.
 1. Click **Edit** to access the catalog view editor.
 1. Update the name, catalog sources, policies, and price book information as needed.
 1. Save the changes.
