@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.8 Release
 
-![Fix](../assets/fix.svg) Added data exporter prices mView trigger to listen changes on product entity. It fixes issue when deleted or renamed product price wasn't updated.<!--MDEE-1125-->
+![Fix](../assets/fix.svg) Fixed an issue where product price feeds were not regenerated when a product was deleted, or when the product SKU was changed.<!--MDEE-1125-->
 ![Fix](../assets/fix.svg) Improved product update processing to ensure that changes are accurately reflected when updating a newly created product with the same SKU as a previously deleted product. Product synchronization now correctly uses updated product IDs, ensuring accurate and reliable data export.<!--MDEE-1126-->
 ![Fix](../assets/fix.svg) Fixed an issue where the Catalog Service could return outdated variant data for configurable products by ensuring product update events are published after attribute deletions.<!--MDEE-1127-->
 
