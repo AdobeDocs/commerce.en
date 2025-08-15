@@ -7,12 +7,13 @@ exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 ---
 # Set up your storefront
 
->[!NOTE]
+This tutorial provides detailed instructions for setting up and using [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure Commerce storefront powered by data from your [!DNL Adobe Commerce Optimizer] instance.
+
+
+>[!TIP]
 >
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
-This tutorial demonstrates how to setup and use [Adobe Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to create a performant, scalable, and secure Commerce storefront powered by data from your [!DNL Adobe Commerce Optimizer] instance.
-
+>Fast track the storefront set up process by using the Site Creator tool to set up your storefront code repository and document author environment
+>automatically. Then, you can use these instructions to understand how the storefront was created, and learn more about the components available to you.
 
 ## Prerequisites
 
@@ -101,7 +102,6 @@ Create a GitHub repository for the site boilerplate code for your storefront usi
 1. Complete the configuration form with the following details:
 
    * **Repository template**—`hlxsites/aem-boilerplate-commerce` (default).
-   * **Include all branches**—Select the option to include all branches.
    * **Owner**—Your organization or account (required).
    * **Repository name**—A unique name for your new repo (required).
    * **Description**—A brief description of your repo (optional).
@@ -138,12 +138,6 @@ You need the following information to update the storefront boilerplate code:
    If you encounter errors when cloning the repository, see [Troubleshoot cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors) in the GitHub documentation.
 
 1. Open the repository in your terminal or IDE.
-
-1. Check out the `aco` branch
-
-   ```bash
-   git checkout aco
-   ```
 
 1. Create your configuration file by copying the `default-fstab.yaml` file to `fstab.yaml`.
 
@@ -186,47 +180,39 @@ You need the following information to update the storefront boilerplate code:
 >
 >Make sure that you have installed the [Sidekick extension](https://www.aem.live/docs/sidekick#installation) in your browser.
 
-1. Open the `tools/sidekick/config.json` file.
+1. Create a new directory `tools/sidekick`.
+
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. Copy the `demo-sidekick.json` file in the root directory to the `tools/sidekick` directory and rename it to `config.json`.
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+   
+1. Customize the Sidekick configuration for your site.
+
+   From `tools/sidekick/` directory, edit the `config.json` file.
 
    +++Sidekick configuration file
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   See the [Sidekick Library documentation](https://www.aem.live/docs/sidekick-library) for more information.
-
-   +++
-
 1. Update the `url` key values with the values for your GitHub repository.
 
-   * Replace the `{ORG}` string with the organization or username for your repository.
+   * Replace the `{{ORG}}` string with the organization or username for your repository.
 
-   * Replace the `{SITE}` string with the repository name
+   * Replace the `{{SITE}}` string with the repository name.
+
+   * The `pathname` variable is populated by the system.
 
    +++Example of updated configuration file
 
@@ -234,29 +220,9 @@ You need the following information to update the storefront boilerplate code:
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -278,8 +244,8 @@ To use the customized storefront boilerplate code, overwrite the code on the `ma
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
 
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -287,16 +253,16 @@ To use the customized storefront boilerplate code, overwrite the code on the `ma
         modified:   tools/sidekick/config.json
    ```
 
-1. Commit the changes to the `aco` branch.
+1. Commit the changes.
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Overwrite the boilerplate on the `main` branch with the changes on the `aco` branch.
+1. Apply your changes.
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### Step 5: Add the AEM Code Sync app
@@ -321,7 +287,7 @@ Connect your repository to the Edge Delivery Service by adding the AEM Code Sync
 
 Create and initialize your storefront content in the Document Author environment hosted on `https://da.live` using the Site Creator tool. This tool imports the sample content into the Document Author environment and completes the content preview and publish process for all documents in the sample content. The sample content includes the page layouts, banners, labels, and other elements to populate your storefront.
 
-1. Open the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. Open the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. Confgure your repository:
    
