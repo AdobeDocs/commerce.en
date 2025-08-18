@@ -22,7 +22,12 @@ Updates include:
 
 ## Current major version
 
-## 103.4.8 Release
+## 103.4.10 Release
+
+![Fix](../assets/fix.svg) Fixed issue when dynamically created attribute had wrong type (text) instead of OBJECT.<!--MDEE-1131-->
+![Fix](../assets/fix.svg) Filter out lowStock provider output by store views available in products list.<!--MDEE-1132-->
+
+## 103.4.9 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where product price feeds were not regenerated when a product was deleted, or when the product SKU was changed.<!--MDEE-1125-->
 ![Fix](../assets/fix.svg) Improved product update processing to ensure that changes are accurately reflected when updating a newly created product with the same SKU as a previously deleted product. Product synchronization now correctly uses updated product IDs, ensuring accurate and reliable data export.<!--MDEE-1126-->
