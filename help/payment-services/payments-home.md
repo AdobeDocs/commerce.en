@@ -40,4 +40,4 @@ feature: Payments, Checkout, Paas, Saas
 
 ## Settings
 
-In the Home view, click **[!UICONTROL Settings]**. See [Settings](settings.md) for more information.
+In the Home view, click **[!UICONTROL Settings]**. See [[!DNL Payment Services] configuration](configure-admin.md) for more information.
