@@ -73,7 +73,7 @@ In this section, you create a new policy. The policy can be either **STATIC** or
     1. **Value** - Enter a value from the attribute definition that you previously specified. For example, enter "brakes" to create a filter for brake parts. ​The value must match the attribute name exactly.
     1. To save the value, press **Enter**.
 
-       If you want the policy to filter by multiple values, enter each value separately. 
+       If the policy is designed to filter by multiple values, enter each value separately.
 
 1. Click the **[!UICONTROL Save]** button in the filter details dialog. ​
     
