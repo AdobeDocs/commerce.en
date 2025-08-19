@@ -134,7 +134,7 @@ Learn more about search rules:
     - [Create](rules-add.md)
     - [Edit, view, delete](rules-manage.md)
 - Data collection
-    - [[!DNL Live Search] events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
+    - [[!DNL Live Search] events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
     - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
     - [GitHub Commerce events](https://github.com/adobe/commerce-events/tree/main/examples) 
 

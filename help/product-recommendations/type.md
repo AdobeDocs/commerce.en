@@ -24,7 +24,7 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 >[!NOTE]
 >
->For more information about the events described in this article, see [storefront events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) in the developer documentation.
+>For more information about the events described in this article, see [storefront events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) in the developer documentation.
 
 ## Personalized {#personalized}
 
