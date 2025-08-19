@@ -179,11 +179,12 @@ Let's create a new policy called *Celport part categories* to filter the SKUs th
     - **Attribute** = *part_category*
     - **Operator** = **IN**
     - **Value Source** = **STATIC**
-    - **Value** = *brakes*, *suspension*
+    - **Value** = *brakes*
+    - **Value** = *suspension*
 
     >[!IMPORTANT]
     >
-    >Make sure the attribute name that you specify exactly matches the SKU attribute name in the catalog.
+    >Each attribute value must be entered separately. After entering a value, press **Enter** to add it to the filter configuration. Then, enter the next value. All values must match the SKU attribute name in the catalog exactly.
 
     To learn more about the difference between a STATIC and TRIGGER value source, see [value source types](../setup/policies.md#value-source-types).
 
@@ -224,7 +225,8 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
     - **Name** = *Celport*
     - **Catalog sources** = *en-US*
-    - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport part categories*; *Brand*; *Model*                          
+    - **Policies** (use dropdown) = *East Coast Inc Brands*; *Celport part categories*; *Brand*; *Model*
+                            
 1. Click **[!UICONTROL Add]** to create the catalog view.
 
     The Catalog views page updates to display the new catalog view.
