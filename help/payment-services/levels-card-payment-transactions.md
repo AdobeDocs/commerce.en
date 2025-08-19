@@ -9,6 +9,10 @@ exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
 
 [!DNL Payment Services] offers advanced card processing capabilities to help merchants optimize their payment transactions and lower interchange fees. There are three levels of card processing available, each with different transaction data requirements.
 
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button) orders do not include Level 2/Level 3 data, line items, and amount breakdown.
+
 ## Data requirements per processing level
 
 ![Transactions report](assets/level-processing-details.png){width="500" zoomable="yes"}

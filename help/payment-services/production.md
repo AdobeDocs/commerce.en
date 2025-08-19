@@ -41,7 +41,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
    Clearing should be done after every configuration change.
 
-See [Configure Payment Services](settings.md) for more information about configuring Credit Card Fields and PayPal payment buttons.
+See [Configure [!DNL Payment Services]](configure-admin.md) for more information about configuring Credit Card Fields and PayPal payment buttons.
 
 ## Complete merchant onboarding
 

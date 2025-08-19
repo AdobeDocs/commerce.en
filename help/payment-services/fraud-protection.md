@@ -14,6 +14,10 @@ Adobe Commerce supports Signifyd versions 5.4.0 and newer. [!DNL Payment Service
 
 The Signifyd/[!DNL Payment Services] integration provides coverage for credit cards, debit cards, vaulted cards, checkout through the Admin, and PayPal and Apple Pay payment methods. While some details of the transactions are not shared between Payment Services and Signifyd, Signifyd provides comprehensive risk coverage for all payment methods, ensuring the utmost in protection.
 
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button) is not compatible with Signifyd.
+
 See [Signifyd documentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) to learn about installing and configuring the extension.
 
 ## Onboarding
