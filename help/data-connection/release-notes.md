@@ -28,6 +28,10 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
+_August 7, 2025_
+
+![New](../assets/new.svg) - With the 3.3.0 release, you can now add [custom attributes to profiles](custom-identities.md).
+
 _August 2, 2024_
 
 ![Fix](../assets/fix.svg) - Fixed the payments total amount when the order total is configured to include taxes.

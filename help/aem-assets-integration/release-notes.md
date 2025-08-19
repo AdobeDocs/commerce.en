@@ -28,6 +28,16 @@ _February 11, 2025_
 
 +++
 
+## v1.2.0
+
+_August 7, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1018 --> Now, merchants can choose the source for image and media assets by selecting a [Visualization Owner](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} when configuring the Assets integration from the Admin.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1078 --> Updated the [custom automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} endpoints with a new `asset_matches` attribute. This change allows you to implement your own matching logic to return all assets associated with a specific `productSku`.
+
 ## v1.1.2
 
 _June 11, 2025_
