@@ -24,8 +24,8 @@ Updates include:
 
 ## 103.4.10 Release
 
-![Fix](../assets/fix.svg) Fixed issue when dynamically created attribute had wrong type (text) instead of OBJECT.<!--MDEE-1131-->
-![Fix](../assets/fix.svg) Filter out lowStock provider output by store views available in products list.<!--MDEE-1132-->
+![Fix](../assets/fix.svg) Fixed an issue that where the wrong type (`text` instead of `OBJECT`) was returned for some dynamically created attributes . Now, the correct type information is consistently returned eliminating the need for manual resyncs or workarounds.<!--MDEE-1131-->
+![Fix](../assets/fix.svg) Fixed an issue where product data collection during partial syncs could fail due to errors in the LowStock inventory provider. This fix ensures that product data is reliably exported, and no product IDs are skipped because of LowStock-related errors.<!--MDEE-1132-->
 
 ## 103.4.9 Release
 
