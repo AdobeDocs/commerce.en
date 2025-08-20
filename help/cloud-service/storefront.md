@@ -7,9 +7,9 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Set up your storefront
 
-Set up your Adobe Commerce Storefront powered by Edge Delivery Services using the instructions in [set up your storefront](../optimizer/storefront.md).
+Set up your Adobe Commerce Storefront powered by Edge Delivery Services using the instructions in [set up your storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started).
 
-When you get to the [adding content](../optimizer/storefront.md#step-6-add-content) step and access the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator), enter your Adobe Commerce as a Cloud Service (SaaS) GraphQL endpoint into the **Commerce GraphQL Endpoint (Optional)** field.
+When you get to the [adding content](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-content) step and access the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator), enter your Adobe Commerce as a Cloud Service (SaaS) GraphQL endpoint into the **Commerce GraphQL Endpoint (Optional)** field.
 
 Alternatively, if you are using [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), as an orchestration layer to combine multiple data sources into a single GraphQL endpoint, enter your API Mesh GraphQL endpoint into the **Commerce GraphQL Endpoint (Optional)** field.
 
