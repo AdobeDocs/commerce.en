@@ -7,11 +7,21 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Set up your storefront
 
-Set up your Adobe Commerce Storefront powered by Edge Delivery Services using the instructions in [set up your storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started).
+To set up your Adobe Commerce Storefront powered by Edge Delivery Services for Adobe Commerce as a Cloud Service (SaaS), use the following steps.
 
-When you get to the [adding content](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-content) step and access the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator), enter your Adobe Commerce as a Cloud Service (SaaS) GraphQL endpoint into the **Commerce GraphQL Endpoint (Optional)** field, which you can access in the Commerce Cloud Manager after [creating your instance](./getting-started.md#create-an-instance).
+If you want a more customizable and detailed walkthrough, refer to the [storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
-Alternatively, if you are using [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), as an orchestration layer to combine multiple data sources into a single GraphQL endpoint, enter your API Mesh GraphQL endpoint into the **Commerce GraphQL Endpoint (Optional)** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
+1. Open the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+
+1. Select **Create New Site (Code & Content)**.
+
+1. Enter your **Github Organization/Username** where you want your and **Site Name**.
+
+1. In the **Commerce GraphQL Endpoint (optional)** field, enter your Adobe Commerce as a Cloud Service (SaaS) GraphQL endpoint, which you can access in the Commerce Cloud Manager after [creating your instance](./getting-started.md#create-an-instance).
+
+    Alternatively, if you are using [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your API Mesh GraphQL endpoint into the **Commerce GraphQL Endpoint (optional)** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
+
+1. Click **Create Site**. Follow the on-screen instructions to authorize access to your Github repository.
 
 Once the process completes, you can customize your storefront using the following methods:
 
@@ -20,12 +30,11 @@ Once the process completes, you can customize your storefront using the followin
 * Manage your config: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
 * Preview your storefront: `https://main--<repo name>--<username or org>.aem.page/`
 
-To customize your storefront, refer to the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
+## Next steps
 
-For additional information, refer to the following:
+Refer to the following articles for more information:
 
-* [Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - A performant, scalable, and secure storefront that is powered by Adobe's Edge Delivery Services.
-* [Use cases](./use-cases.md) - Learn how to use the manage data, set up contextual experimentation, and use generative AI in your storefront.
-* [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) - an API platform that allows developers to combine multiple data sources into a single GraphQL endpoint. API Mesh orchestrates third-party API with Adobe API through a single gateway. One query to the single GraphQL endpoint can return results from multiple sources.
-* [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - A collection of developer tools with access to APIs, events, runtime functions, and plugins, whic you can use to build projects for Adobe applications.
-* [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - A serverless engine for deploying custom code that responds to events and executes functions in the cloud.
+* To learn more about managing and displaying content and data in the storefront, see [updating storefront content](./use-cases.md#update-storefront-content).
+* For more information on contextual experimentation features, see [contextual experimentation](./use-cases.md#contextual-experimentation).
+* For more information on using Generative AI to automate high-quality content generation, see [Generate Variations](./use-cases.md#generate-variations).
+* To learn more about updating site content and integrating with Commerce frontend components and backend data, see the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/).
