@@ -44,6 +44,16 @@ _April 25, 2023_
 
 ## Current major version
 
+### 6.2.2 of magento/product-recommendations
+
+_August 20, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Added support to display metrics for [PageBuilder recommendation units](page-builder.md) created in non-default store views within the [Product Recommendations workspace](workspace.md).
+
+### Previous versions
+
 ### 6.2.1 of magento/product-recommendations
 
 _July 14, 2025_
@@ -51,8 +61,6 @@ _July 14, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Made improvments to the [preview recommendations](./create.md#preview-recommendations) panel.
-
-### Previous versions
 
 ### 6.2.0 of magento/product-recommendations
 
