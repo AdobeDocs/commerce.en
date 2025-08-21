@@ -55,12 +55,12 @@ This diagram provides a high-level overview of how developers create integration
  
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
+   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
    * [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
    >[!NOTE]
    >
-   >* Sandbox instances are currently limited to the North America region.
+   >* Sandbox instances are limited to the North America region.
    >* The option to install sample data is currently unavailable.
 
 1. Select the region where you want your instance hosted.
