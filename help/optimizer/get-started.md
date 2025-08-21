@@ -34,12 +34,12 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 1. Configure instance settings:
    - **Name**: Descriptive name (for example, "My Company Sandbox")
    - **Description**: Brief description of purpose
-   - **Region**: Select your preferred region
    - **Environment Type**: Start with a **Sandbox** environment for testing
+   - **Region**: Select your preferred region
 
 1. Click **Add Instance**.
 
-   The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-an-instance).
+   The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-instances).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 
 After creating your instance:
 
-1. [Manage your instance](#manage-an-instance) from Commerce Cloud Manager.
+1. [Manage your instance](#manage-instances) from Commerce Cloud Manager.
 1. Configure user access using the [User Management guide](./user-management.md).
 
 ### Step 3. Add sample data (Optional)
