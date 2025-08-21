@@ -108,12 +108,12 @@ The following comparison helps you select the best option for your content suppl
     <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
       <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Product Visuals powered by AEM Assets</h3>
       <ul style="margin: 0; padding-left: 20px;">
-        <li>Integrated automated product image & video Digital Asset Manager (DAM)</li>
+        <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
         <li>Resize, crop and convert images</li>
-        <li>High-speed image & video delivery</li>
-        <li>Optimize image formats, sizes, and quality based on client's browser</li>
+        <li>High-speed image and video delivery</li>
+        <li>Optimize image formats, sizes, and quality based on client browser capabilities</li>
         <li>Access to Adobe Express and Adobe Firefly</li>
-        <li>Usage limits for image/video delivery capacity and users</li>
+        <li>Usage limits for image/video delivery capacity and user access</li>
         <li>Integrated Asset selector</li>
       </ul>
     </td>
