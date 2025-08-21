@@ -114,7 +114,7 @@ The following comparison helps you select the best option for your content suppl
         <li>Optimize image formats, sizes, and quality based on client browser capabilities</li>
         <li>Access to Adobe Express and Adobe Firefly</li>
         <li>Usage limits for image/video delivery capacity and user access</li>
-        <li>Integrated Asset selector</li>
+        <li>Integrated asset selector</li>
       </ul>
     </td>
     <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
