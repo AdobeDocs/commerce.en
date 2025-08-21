@@ -15,7 +15,9 @@ If you want a more customizable and detailed walkthrough, refer to the [storefro
 
 1. Select **Create New Site (Code & Content)**.
 
-1. Enter your **Github Organization/Username** where you want your and **Site Name**.
+1. Enter the **Github Organization/Username** where you want to create the storefront code repository.
+
+ 1. Enter a  **Site Name**.
 
 1. In the **Commerce GraphQL Endpoint (optional)** field, enter your Adobe Commerce as a Cloud Service (SaaS) GraphQL endpoint, which you can access in the Commerce Cloud Manager after [creating your instance](./getting-started.md#create-an-instance).
 
