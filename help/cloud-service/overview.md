@@ -55,10 +55,22 @@ Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Se
 
 ### Product Visuals or AEM Assets
 
-The following image shows both offerings, depending on your content supply chain needs:
+The following table compares both offerings to help you select the best option for your content supply chain needs:
 
-
-![check](assets/compare-offerings.png){width="700" zoomable="yes"}
+| **Product Visuals powered by AEM Assets** | **→** | **AEM Assets** |
+|-------------------------------------------|-------|----------------|
+| **Integrated automated product image & video Digital Asset Manager (DAM)** | | **All capabilities from Product Visuals** |
+| * Resize, crop and convert images | | **Full marketing Digital Asset Manager (DAM)** |
+| * High-speed image & video delivery | | * Ability to have unlimited users (pay per user) |
+| * Optimize image formats, sizes, and quality based on client's browser | | * Unlimited image/video delivery |
+| * Access to Adobe Express and Adobe Firefly | | **Advanced asset management functionality:** |
+| * Usage limits for image/video delivery capacity and users | | * 360° spin sets & interactive viewers |
+| * Integrated Asset selector | | * 3D Model support & immersive content |
+| | | * PDF support |
+| | | * AI-powered Smart Cropping |
+| | | * Dynamic Image Templates |
+| | | * Smart Tagging |
+| | | * Tracking/analytics on asset performance |
 
 See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
