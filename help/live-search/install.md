@@ -337,7 +337,7 @@ Ensure that the storefront events deployed to your site are working. This check 
 
 - Review the [events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) that are required for [!DNL Live Search].
 - Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environment(s).
-- [Verify event collection](../product-recommendations/verify.md). While this page is in the [!DNL Product Recommendations] guide, the verification steps apply to [!DNL Live Search] as well.
+- [Verify event collection](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/).
 
 ## 8. Customize for your storefront
 
