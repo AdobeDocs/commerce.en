@@ -134,7 +134,7 @@ The following comparison helps you select the best option for your content suppl
           <li>PDF support</li>
           <li>AI-powered smart cropping</li>
          <li>Dynamic image templates</li>
-        <li>Smart Tagging</li>
+        <li>Smart tagging</li>
         <li>Tracking/analytics on asset performance</li>
         </ul>
       </ul>
