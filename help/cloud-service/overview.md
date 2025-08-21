@@ -13,9 +13,9 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 The following table highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
 
-<table>
+<table style="table-layout:auto">
   <tr>
-    <td style="background: #fafafa;">
+    <td>
       <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
         <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
       </span>
@@ -26,7 +26,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
     </td>
   </tr>
   <tr>
-    <td style="background: #fafafa;">
+    <td>
       <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
         <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
       </span>
@@ -37,7 +37,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
     </td>
   </tr>
   <tr>
-    <td style="background: #fafafa;">
+    <td>
       <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
         <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
       </span>
@@ -48,7 +48,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
     </td>
   </tr>
   <tr>
-    <td style="background: #fafafa;">
+    <td>
       <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
         <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
       </span>
