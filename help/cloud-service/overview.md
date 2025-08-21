@@ -6,6 +6,7 @@ role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
+
 # [!DNL Adobe Commerce as a Cloud Service] overview
 
 [!DNL Adobe Commerce as a Cloud Service] offers flexibility, scalability, and efficiency by enabling businesses to deliver and rapidly scale digital operations and accelerate innovation. Adobe's cloud-native infrastructure automatically adjusts resources to meet peak demands for traffic, orders, and catalog management.
@@ -13,6 +14,53 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 The following graphic highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
 
 ![[!DNL Adobe Commerce as a Cloud Service] product stack](./assets/product-stack.svg){align="center" zoomable="yes"}
+
+<table>
+  <tr>
+    <td style="background: #fafafa;">
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Commerce Storefront</strong>
+    </td>
+    <td>
+      Customer-facing interface where shoppers browse and purchase products
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #fafafa;">
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Merchandising Services</strong>
+    </td>
+    <td>
+      Backend services that manage product catalogs, pricing, and inventory
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #fafafa;">
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Product Visuals</strong>
+    </td>
+    <td>
+      Digital asset management for product images and media
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #fafafa;">
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Developer Platform</strong>
+    </td>
+    <td>
+      Core development tools and APIs for building custom functionality
+    </td>
+  </tr>
+</table>
 
 ## Architecture
 
