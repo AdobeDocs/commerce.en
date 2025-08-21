@@ -125,8 +125,8 @@ The following comparison helps you select the best option for your content suppl
       <ul style="margin: 0; padding-left: 20px;">
         <li>All capabilities from Product Visuals</li>
         <li>Full marketing Digital Asset Manager (DAM)</li>
-        <li>Ability to have unlimited users (pay per user)</li>
-        <li>Unlimited image/video delivery</li>
+        <li>Unlimited users (pay per user)</li>
+        <li>Unlimited image and video delivery</li>
         <li>Advanced asset management functionality:</li>
         <ul>
           <li>360° spin sets and interactive viewers</li>
@@ -135,7 +135,7 @@ The following comparison helps you select the best option for your content suppl
           <li>AI-powered smart cropping</li>
          <li>Dynamic image templates</li>
         <li>Smart tagging</li>
-        <li>Tracking/analytics on asset performance</li>
+        <li>Tracking and analytics on asset performance</li>
         </ul>
       </ul>
     </td>
