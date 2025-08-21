@@ -58,7 +58,7 @@ Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Se
 The following comparison helps you select the best option for your content supply chain needs:
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr>
+  <tr style="border: none;">
     <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
       <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Product Visuals powered by AEM Assets</h3>
       <ul style="margin: 0; padding-left: 20px;">
