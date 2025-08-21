@@ -11,9 +11,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 [!DNL Adobe Commerce as a Cloud Service] offers flexibility, scalability, and efficiency by enabling businesses to deliver and rapidly scale digital operations and accelerate innovation. Adobe's cloud-native infrastructure automatically adjusts resources to meet peak demands for traffic, orders, and catalog management.
 
-The following graphic highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
-
-![[!DNL Adobe Commerce as a Cloud Service] product stack](./assets/product-stack.svg){align="center" zoomable="yes"}
+The following table highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
 
 <table>
   <tr>
