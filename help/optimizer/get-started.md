@@ -43,7 +43,7 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 
 >[!NOTE]
 >
->Sandbox instances are limited to the North America region. You cannot change the region after creation.
+>You can only create sandbox environments in the North American region. Once an instance is created, you can not change the region.
 
 ### Step 2. Set up your environment
 
