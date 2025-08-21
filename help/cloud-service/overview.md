@@ -55,22 +55,54 @@ Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Se
 
 ### Product Visuals or AEM Assets
 
-The following table compares both offerings to help you select the best option for your content supply chain needs:
+The following comparison helps you select the best option for your content supply chain needs:
 
-| **Product Visuals powered by AEM Assets** | **→** | **AEM Assets** |
-|-------------------------------------------|-------|----------------|
-| **Integrated automated product image & video Digital Asset Manager (DAM)** | | **All capabilities from Product Visuals** |
-| * Resize, crop and convert images | | **Full marketing Digital Asset Manager (DAM)** |
-| * High-speed image & video delivery | | * Ability to have unlimited users (pay per user) |
-| * Optimize image formats, sizes, and quality based on client's browser | | * Unlimited image/video delivery |
-| * Access to Adobe Express and Adobe Firefly | | **Advanced asset management functionality:** |
-| * Usage limits for image/video delivery capacity and users | | * 360° spin sets & interactive viewers |
-| * Integrated Asset selector | | * 3D Model support & immersive content |
-| | | * PDF support |
-| | | * AI-powered Smart Cropping |
-| | | * Dynamic Image Templates |
-| | | * Smart Tagging |
-| | | * Tracking/analytics on asset performance |
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr>
+    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
+      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Product Visuals powered by AEM Assets</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>Integrated automated product image & video Digital Asset Manager (DAM)</li>
+        <li>Resize, crop and convert images</li>
+        <li>High-speed image & video delivery</li>
+        <li>Optimize image formats, sizes, and quality based on client's browser</li>
+        <li>Access to Adobe Express and Adobe Firefly</li>
+        <li>Usage limits for image/video delivery capacity and users</li>
+        <li>Integrated Asset selector</li>
+      </ul>
+    </td>
+    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
+      ›
+    </td>
+    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
+      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>All capabilities from Product Visuals</li>
+        <li>Full marketing Digital Asset Manager (DAM)</li>
+        <li>Ability to have unlimited users (pay per user)</li>
+        <li>Unlimited image/video delivery</li>
+        <li>Advanced asset management functionality:</li>
+        <ul>
+          <li>360° spin sets & interactive viewers</li>
+          <li>3D Model support & immersive content</li>
+          <li>PDF support</li>
+          <li>AI-powered Smart Cropping</li>
+         <li>Dynamic Image Templates</li>
+        <li>Smart Tagging</li>
+        <li>Tracking/analytics on asset performance</li>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; margin: 20px 0;">
+  <tr>
+    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
+      Adobe-branded integration is available for easy migration between offerings.
+    </td>
+  </tr>
+</table>
 
 See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
