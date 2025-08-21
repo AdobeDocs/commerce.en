@@ -40,12 +40,12 @@ _August 2, 2024_
 
 _January 24, 2024_
 
-![New](../assets/new.svg) - Updated the `data-services-b2b` extension to include a new requisition event called [deleteRequisitionList](events.md#deleterequisitionlist) for B2B merchants.
+![New](../assets/new.svg) - Updated the `data-services-b2b` extension to include a new requisition event called `deleteRequisitionList` for B2B merchants.
 
 _November 16, 2023_
 
 ![Fix](../assets/fix.svg) - Fixed an issue where an error message incorrectly appeared when you placed an order that had multiple shipping addresses.
-![Fix](../assets/fix.svg) - Fixed an issue in the [productPageView](events.md#productpageview) event where the `productListItems.priceTotal` event field was not converting the price after switching the currency on the store view.
+![Fix](../assets/fix.svg) - Fixed an issue in the `productPageView` event where the `productListItems.priceTotal` event field was not converting the price after switching the currency on the store view.
 ![Fix](../assets/fix.svg) - Fixed an issue in the `productListItems` event field where the currency code was not updating when the merchant switched the store view.
 
 _October 10, 2023_
@@ -53,11 +53,11 @@ _October 10, 2023_
 ![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events-backoffice.md#orderinvoiced), [Order Item Return Initiated](events-backoffice.md#orderitemsreturninitiated), and [Order Item Return Completed](events-backoffice.md#orderitemreturncompleted).
 ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
 ![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if asynchronous order placement is enabled.
-![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on the Category view page.
-![Fix](../assets/fix.svg) - Fixed an issue in the `selectedOptions` data in the [addToRequisitionList](events.md#addtorequisitionlist) event when products are added from the Order confirmation page.
-![New](../assets/new.svg) - Added product data to [addToRequisitionList](events.md#addtorequisitionlist) event when products are added to the requisition list from the Category view page.
-![New](../assets/new.svg) - Added [addToRequisitionList](events.md#addtorequisitionlist) event when configurable products are added to the requisition list from the Product view page.
-![New](../assets/new.svg) - Added [addToRequisitionList](events.md#addtorequisitionlist) and [removeFromRequisitionList](events.md#removefromrequisitionlist) events when product quantity is increased and/or decreased from a requisition list.
+![New](../assets/new.svg) - Added data to `addToRequisitionList` event for simple products on the Category view page.
+![Fix](../assets/fix.svg) - Fixed an issue in the `selectedOptions` data in the `addToRequisitionList` event when products are added from the Order confirmation page.
+![New](../assets/new.svg) - Added product data to `addToRequisitionList` event when products are added to the requisition list from the Category view page.
+![New](../assets/new.svg) - Added `addToRequisitionList` event when configurable products are added to the requisition list from the Product view page.
+![New](../assets/new.svg) - Added `addToRequisitionList` and `removeFromRequisitionList` events when product quantity is increased and/or decreased from a requisition list.
 
 _June 10, 2023_
 
@@ -135,7 +135,7 @@ _June 5, 2024_
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) - Fixed an issue where the wrong date format was being used when initiating a [historical sync](connect-data.md#specify-order-history-date-range).
-![Fix](../assets/fix.svg) - Fixed an issue where the [startCheckout](events.md#startcheckout) event was not being sent on Adobe Commerce 2.4.7.
+![Fix](../assets/fix.svg) - Fixed an issue where the `startCheckout` event was not being sent on Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
