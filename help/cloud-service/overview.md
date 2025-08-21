@@ -109,7 +109,7 @@ The following comparison helps you select the best option for your content suppl
       <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Product Visuals powered by AEM Assets</h3>
       <ul style="margin: 0; padding-left: 20px;">
         <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
-        <li>Resize, crop and convert images</li>
+        <li>Resize, crop, and convert images</li>
         <li>High-speed image and video delivery</li>
         <li>Optimize image formats, sizes, and quality based on client browser capabilities</li>
         <li>Access to Adobe Express and Adobe Firefly</li>
@@ -129,8 +129,8 @@ The following comparison helps you select the best option for your content suppl
         <li>Unlimited image/video delivery</li>
         <li>Advanced asset management functionality:</li>
         <ul>
-          <li>360° spin sets & interactive viewers</li>
-          <li>3D model support & immersive content</li>
+          <li>360° spin sets and interactive viewers</li>
+          <li>3D model support and immersive content</li>
           <li>PDF support</li>
           <li>AI-powered smart cropping</li>
          <li>Dynamic image templates</li>
