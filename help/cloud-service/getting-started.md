@@ -52,22 +52,22 @@ This diagram provides a high-level overview of how developers create integration
 1. Select [!UICONTROL **Commerce as a Cloud Service**].
 
 1. Enter a **Name** and **Description** for your instance.
+ 
+1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
+
+   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
+   * [!UICONTROL **Production**] - For live stores and customer-facing sites.
+
+   >[!NOTE]
+   >
+   >* Sandbox instances are limited to the North America region.
+   >* The option to install sample data is currently unavailable.
 
 1. Select the region where you want your instance hosted.
 
    >[!NOTE]
    >
    >Once you have created your instance, you will not be able to modify the region.
- 
-1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
-
-   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
-   * [!UICONTROL **Production**] - For live stores and customer-facing sites.
-
-   >[!NOTE]
-   >
-   >* Sandbox instances are currently limited to the North America region.
-   >* The option to install sample data is currently unavailable.
 
 1. Click [!UICONTROL **Add Instance**].
 
