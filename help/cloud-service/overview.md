@@ -130,10 +130,10 @@ The following comparison helps you select the best option for your content suppl
         <li>Advanced asset management functionality:</li>
         <ul>
           <li>360° spin sets & interactive viewers</li>
-          <li>3D Model support & immersive content</li>
+          <li>3D model support & immersive content</li>
           <li>PDF support</li>
-          <li>AI-powered Smart Cropping</li>
-         <li>Dynamic Image Templates</li>
+          <li>AI-powered smart cropping</li>
+         <li>Dynamic image templates</li>
         <li>Smart Tagging</li>
         <li>Tracking/analytics on asset performance</li>
         </ul>
