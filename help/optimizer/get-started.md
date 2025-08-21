@@ -32,7 +32,7 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
    ![Create Instance](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Configure instance settings:
-   - **Name**: Descriptive name (for example, "My Company Sandbox")
+   - **Instance Name**: Descriptive name (for example, "My Company Sandbox")
    - **Description**: Brief description of purpose
    - **Environment Type**: Start with a **Sandbox** environment for testing
    - **Region**: Select your preferred region
