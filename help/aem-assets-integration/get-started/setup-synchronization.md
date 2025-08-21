@@ -18,7 +18,7 @@ For the initial setup, use the default *Match by product sku* rule.
 
 ## Prerequisites
 
-* [Install AEM Assets package](configure-aem.md)
+* [Configure the AEM Assets project](configure-aem.md)
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
