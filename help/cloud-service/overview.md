@@ -16,7 +16,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
 <table style="table-layout:auto">
   <tr>
     <td align="left">
-      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark"> <strong>Commerce Storefront</strong>
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Commerce Storefront</strong>
     </td>
     <td align="left">
       Customer-facing interface where shoppers browse and purchase products
@@ -24,7 +24,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
   </tr>
   <tr>
     <td align="left">
-      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark"> <strong>Merchandising Services</strong>
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Merchandising Services</strong>
     </td>
     <td align="left">
       Backend services that manage product catalogs, pricing, and inventory
@@ -32,7 +32,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
   </tr>
   <tr>
     <td align="left">
-      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark"> <strong>Product Visuals</strong>
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Product Visuals</strong>
     </td>
     <td align="left">
       Digital asset management for product images and media
@@ -40,7 +40,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
   </tr>
   <tr>
     <td align="left">
-      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark"> <strong>Developer Platform</strong>
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Developer Platform</strong>
     </td>
     <td align="left">
       Core development tools and APIs for building custom functionality
