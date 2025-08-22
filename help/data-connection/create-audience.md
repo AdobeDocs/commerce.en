@@ -16,7 +16,7 @@ Create audiences in Real-Time CDP using data from storefront, back office, and p
 |Data Types|Storefront Data (Behavioral Events)|Back office Data (Server-Side Events)|Customer Profile and Segment Data|
 |---|---|---|---|
 |**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|Who your shoppers are and what segments do they qualify for.| 
-|**Events Captured by Adobe Commerce**|[productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart)|[placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)<br>[order Canceled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data)|[createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile Record](events-profilerecord.md)|
+|**Events Captured by Adobe Commerce**|`productPageView`<br>`addToCart`|`placeOrder`<br>`orderplaced`<br>`orderLineItemRefunded`<br>`order Canceled`<br>`order history`|`createAccount`<br>`editAccount`<br>`Profile Record`|
 
 ## What have other customers achieved?
 
@@ -55,7 +55,7 @@ Before you begin, ensure:
 
 An audience is a set of customers that share similar behavior or characteristics. In this exercise, you create an audience that qualifies people that are interested in a particular product from your store.
 
-To simplify this exercise, you use event data from the [productPageView](events.md#productpageview) event. This event captures details about the product that was viewed, such as product name, SKU, price, and so on.
+To simplify this exercise, you use event data from the `productPageView` event. This event captures details about the product that was viewed, such as product name, SKU, price, and so on.
 
 Use this event data to specify that the audience includes individuals who have at least one "Product Views" event where the SKU (product identifier) equals a specific product on your site and the event occurs within the last day. ​
 

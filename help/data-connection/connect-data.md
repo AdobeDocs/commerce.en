@@ -304,7 +304,7 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 
     ![Query Editor](assets/query-results.png)
 
-In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
+In this example, you see event data from the `commerce.productListAdds`, `commerce.productViews`, `web.webpagedetails.pageViews`, and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
 If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
