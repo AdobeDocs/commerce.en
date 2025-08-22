@@ -91,11 +91,11 @@ Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Se
 
 The following comparison helps you select the best option for your content supply chain needs:
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr style="border: none;">
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Product Visuals powered by AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+<table>
+  <tr style="border: 0;">
+    <td align="left">
+      <strong>Product Visuals powered by AEM Assets</strong>
+      <ul>
         <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
         <li>Resize, crop, and convert images</li>
         <li>High-speed image and video delivery</li>
@@ -105,12 +105,12 @@ The following comparison helps you select the best option for your content suppl
         <li>Integrated asset selector</li>
       </ul>
     </td>
-    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
-      ›
+    <td valign="middle">
+      <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
     </td>
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
         <li>All capabilities from Product Visuals</li>
         <li>Full marketing Digital Asset Manager (DAM)</li>
         <li>Unlimited users (pay per user)</li>
@@ -121,19 +121,19 @@ The following comparison helps you select the best option for your content suppl
           <li>3D model support and immersive content</li>
           <li>PDF support</li>
           <li>AI-powered smart cropping</li>
-         <li>Dynamic image templates</li>
-        <li>Smart tagging</li>
-        <li>Tracking and analytics on asset performance</li>
+          <li>Dynamic image templates</li>
+          <li>Smart tagging</li>
+          <li>Tracking and analytics on asset performance</li>
         </ul>
       </ul>
     </td>
   </tr>
 </table>
 
-<table style="width: 100%; margin: 20px 0;">
+<table>
   <tr>
-    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
-      Adobe-branded integration is available for easy migration between offerings.
+    <td align="center">
+      <strong>Adobe-branded integration is available for easy migration between offerings.</strong>
     </td>
   </tr>
 </table>
