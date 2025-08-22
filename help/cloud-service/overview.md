@@ -106,7 +106,7 @@ The following comparison helps you select the best option for your content suppl
       </ul>
     </td>
     <td align="center">
-      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br>
       <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
     </td>
     <td align="left">
@@ -129,11 +129,8 @@ The following comparison helps you select the best option for your content suppl
       </ul>
     </td>
   </tr>
-</table>
-
-<table>
-  <tr>
-    <td align="center">
+    <tr>
+    <td align="center" colspan="3">
       <strong>Adobe-branded integration is available for easy migration between offerings.</strong>
     </td>
   </tr>
