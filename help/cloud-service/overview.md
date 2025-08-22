@@ -15,46 +15,34 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
 
 <table style="table-layout:auto">
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Commerce Storefront</strong>
+    <td align="left">
+      ✓ <strong>Commerce Storefront</strong>
     </td>
-    <td>
+    <td align="left">
       Customer-facing interface where shoppers browse and purchase products
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Merchandising Services</strong>
+    <td align="left">
+      ✓ <strong>Merchandising Services</strong>
     </td>
-    <td>
+    <td align="left">
       Backend services that manage product catalogs, pricing, and inventory
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Product Visuals</strong>
+    <td align="left">
+      ✓ <strong>Product Visuals</strong>
     </td>
-    <td>
+    <td align="left">
       Digital asset management for product images and media
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Developer Platform</strong>
+    <td align="left">
+      ✓ <strong>Developer Platform</strong>
     </td>
-    <td>
+    <td align="left">
       Core development tools and APIs for building custom functionality
     </td>
   </tr>
