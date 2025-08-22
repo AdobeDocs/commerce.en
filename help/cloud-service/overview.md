@@ -15,46 +15,34 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
 
 <table style="table-layout:auto">
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Commerce Storefront</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Commerce Storefront</strong>
     </td>
-    <td>
+    <td align="left">
       Customer-facing interface where shoppers browse and purchase products
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Merchandising Services</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Merchandising Services</strong>
     </td>
-    <td>
+    <td align="left">
       Backend services that manage product catalogs, pricing, and inventory
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Product Visuals</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Product Visuals</strong>
     </td>
-    <td>
+    <td align="left">
       Digital asset management for product images and media
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Developer Platform</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Developer Platform</strong>
     </td>
-    <td>
+    <td align="left">
       Core development tools and APIs for building custom functionality
     </td>
   </tr>
@@ -103,11 +91,11 @@ Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Se
 
 The following comparison helps you select the best option for your content supply chain needs:
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr style="border: none;">
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Product Visuals powered by AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+<table>
+  <tr>
+    <td align="left">
+      <strong>Product Visuals powered by AEM Assets</strong>
+      <ul>
         <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
         <li>Resize, crop, and convert images</li>
         <li>High-speed image and video delivery</li>
@@ -117,12 +105,13 @@ The following comparison helps you select the best option for your content suppl
         <li>Integrated asset selector</li>
       </ul>
     </td>
-    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
-      ›
+    <td align="center">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
     </td>
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
         <li>All capabilities from Product Visuals</li>
         <li>Full marketing Digital Asset Manager (DAM)</li>
         <li>Unlimited users (pay per user)</li>
@@ -133,19 +122,16 @@ The following comparison helps you select the best option for your content suppl
           <li>3D model support and immersive content</li>
           <li>PDF support</li>
           <li>AI-powered smart cropping</li>
-         <li>Dynamic image templates</li>
-        <li>Smart tagging</li>
-        <li>Tracking and analytics on asset performance</li>
+          <li>Dynamic image templates</li>
+          <li>Smart tagging</li>
+          <li>Tracking and analytics on asset performance</li>
         </ul>
       </ul>
     </td>
   </tr>
-</table>
-
-<table style="width: 100%; margin: 20px 0;">
-  <tr>
-    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
-      Adobe-branded integration is available for easy migration between offerings.
+    <tr>
+    <td align="center" colspan="3">
+      <strong>Adobe-branded integration is available for easy migration between offerings.</strong>
     </td>
   </tr>
 </table>
