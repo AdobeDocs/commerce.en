@@ -11,7 +11,7 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 - [Implementation Workflow](implementation-workflow.md)
 - [Install and Configure](install-configure.md)
 - [Settings](settings.md)
-- [Verify](verify.md)
+- [Verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)
 - [Staging Environment](staging-environment.md)
 
 ## Requirements

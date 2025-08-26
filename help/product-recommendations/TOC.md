@@ -27,7 +27,6 @@ feature: Services, Recommendations
 - [!DNL Product Recommendations] Developer {#developer}
    - [Overview](development-overview.md)
    - [Collect Data](events.md)
-   - [Verify](verify.md)
    - [Customize](customize.md)
    - [Handle Cookie Restrictions](setting-cookie.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

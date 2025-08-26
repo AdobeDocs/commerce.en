@@ -6,13 +6,47 @@ role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
+
 # [!DNL Adobe Commerce as a Cloud Service] overview
 
 [!DNL Adobe Commerce as a Cloud Service] offers flexibility, scalability, and efficiency by enabling businesses to deliver and rapidly scale digital operations and accelerate innovation. Adobe's cloud-native infrastructure automatically adjusts resources to meet peak demands for traffic, orders, and catalog management.
 
-The following graphic highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
+The following table highlights the products that power [!DNL Adobe Commerce as a Cloud Service]:
 
-![[!DNL Adobe Commerce as a Cloud Service] product stack](./assets/product-stack.svg){align="center" zoomable="yes"}
+<table style="table-layout:auto">
+  <tr>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Commerce Storefront</strong>
+    </td>
+    <td align="left">
+      Customer-facing interface where shoppers browse and purchase products
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Merchandising Services</strong>
+    </td>
+    <td align="left">
+      Backend services that manage product catalogs, pricing, and inventory
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Product Visuals</strong>
+    </td>
+    <td align="left">
+      Digital asset management for product images and media
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Developer Platform</strong>
+    </td>
+    <td align="left">
+      Core development tools and APIs for building custom functionality
+    </td>
+  </tr>
+</table>
 
 ## Architecture
 
@@ -55,10 +89,52 @@ Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Se
 
 ### Product Visuals or AEM Assets
 
-The following image shows both offerings, depending on your content supply chain needs:
+The following comparison helps you select the best option for your content supply chain needs:
 
-
-![check](assets/compare-offerings.png){width="700" zoomable="yes"}
+<table>
+  <tr>
+    <td align="left">
+      <strong>Product Visuals powered by AEM Assets</strong>
+      <ul>
+        <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
+        <li>Resize, crop, and convert images</li>
+        <li>High-speed image and video delivery</li>
+        <li>Optimize image formats, sizes, and quality based on client browser capabilities</li>
+        <li>Access to Adobe Express and Adobe Firefly</li>
+        <li>Usage limits for image/video delivery capacity and user access</li>
+        <li>Integrated asset selector</li>
+      </ul>
+    </td>
+    <td align="center">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
+    </td>
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
+        <li>All capabilities from Product Visuals</li>
+        <li>Full marketing Digital Asset Manager (DAM)</li>
+        <li>Unlimited users (pay per user)</li>
+        <li>Unlimited image and video delivery</li>
+        <li>Advanced asset management functionality:</li>
+        <ul>
+          <li>360° spin sets and interactive viewers</li>
+          <li>3D model support and immersive content</li>
+          <li>PDF support</li>
+          <li>AI-powered smart cropping</li>
+          <li>Dynamic image templates</li>
+          <li>Smart tagging</li>
+          <li>Tracking and analytics on asset performance</li>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" colspan="3">
+      <strong>Adobe-branded integration is available for easy migration between offerings.</strong>
+    </td>
+  </tr>
+</table>
 
 See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
