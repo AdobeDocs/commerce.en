@@ -22,7 +22,7 @@ European Union region (eu1) support for customer IMS organizations is now availa
 
 The base production URLs for the European Union region are:
 
-* Admin: `https://eu1.admin.adobe.com`
+* Admin: `https://eu1.admin.commerce.adobe.com`
 * REST and GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ![create instance](./assets/create-instance-eu.png){width="600" align="center" zoomable="yes"}
