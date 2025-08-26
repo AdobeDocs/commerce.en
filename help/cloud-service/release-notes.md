@@ -20,6 +20,6 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce SaaS instance](./getting-started.md#create-an-instance) in the Cloud Manager.
 
-![create instance](./assets/create-instance-eu.png)
+![create instance](./assets/create-instance-eu.png){width="300" zoomable="yes"}
 
 >[!ENDSHADEBOX]
