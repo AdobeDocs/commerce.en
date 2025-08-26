@@ -18,7 +18,12 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ### EU region now available
 
-European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce SaaS instance](./getting-started.md#create-an-instance) in the Cloud Manager. The European Union region is only available for Production environments.
+European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce SaaS instance](./getting-started.md#create-an-instance) in the Cloud Manager. The European Union region is only available for production environments.
+
+The base production URLs for the European Union region are:
+
+* Admin: `https://eu1.admin.adobe.com`
+* REST and GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ![create instance](./assets/create-instance-eu.png){width="600" align="center" zoomable="yes"}
 

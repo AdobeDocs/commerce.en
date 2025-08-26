@@ -87,6 +87,17 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 >
 >To see information about your instance, including the REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
 
+The base URLs for your Admin and endpoints differ based on region and environment, using the following pattern:
+
+* Admin
+  * North America production Admin: `https://na1.admin.adobe.com`
+  * North America sandbox Admin: `https://na1-sandbox.admin.adobe.com` 
+  * Europe production Admin: `https://eu1.admin.adobe.com`
+* REST and GraphQL
+  * North America production GraphQL: `https://na1.api.commerce.adobe.com`
+  * North America sandbox GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
+  * Europe production GraphQL: `https://eu1.api.commerce.adobe.com`
+
 ## Import your catalog
 
 By default, [!DNL Adobe Commerce as a Cloud Service] instances do not include any product data. You have an option to include sample product data when you create an instance for testing and learning purposes before importing your own catalog.
