@@ -8,7 +8,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 # Release notes
 
-The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service (SaaS)]. For release information for other products, refer to [Adobe Commerce Optimizer](../optimizer/release-notes.md) or [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service]. For release information for other products, refer to [Adobe Commerce Optimizer](../optimizer/release-notes.md) or [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## August 2025
 
