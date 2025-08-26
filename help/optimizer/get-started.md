@@ -32,24 +32,24 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
    ![Create Instance](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Configure instance settings:
-   - **Name**: Descriptive name (for example, "My Company Sandbox")
+   - **Instance Name**: Descriptive name (for example, "My Company Sandbox")
    - **Description**: Brief description of purpose
-   - **Region**: Select your preferred region
    - **Environment Type**: Start with a **Sandbox** environment for testing
+   - **Region**: Select your preferred region
 
 1. Click **Add Instance**.
 
-   The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-an-instance).
+   The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-instances).
 
 >[!NOTE]
 >
->Sandbox instances are limited to the North America region. You cannot change the region after creation.
+>You can only create sandbox environments in the North American region. Once an instance is created, you can not change the region.
 
 ### Step 2. Set up your environment
 
 After creating your instance:
 
-1. [Manage your instance](#manage-an-instance) from Commerce Cloud Manager.
+1. [Manage your instance](#manage-instances) from Commerce Cloud Manager.
 1. Configure user access using the [User Management guide](./user-management.md).
 
 ### Step 3. Add sample data (Optional)
@@ -104,7 +104,7 @@ Manage instances from the Commerce Cloud Manager.
 1. Log in to [Adobe Experience Cloud](https://experience.adobe.com/).
 
 1. Open Commerce Cloud Manager:
-   
+
    - Under **Quick access**, click **Commerce**.
    - View your available instances.
 
@@ -113,11 +113,13 @@ Manage instances from the Commerce Cloud Manager.
 After you log in, the dashboard shows all Commerce product instances available in the organization.
 The Product column indicates which Commerce application the instance is provisioned for.
 
-Use the Filter and Search options to find specific instances quickly. You can search by data created, region, created by, product type, environment, and status.
+![Instance search and filter](./assets/search-filter-instances.png){zoomable="yes"}
+
+Use the Filter and Search tools to quickly find specific instances by date created, region, creator, product type, environment, or status.
 
 ### Access the [!DNL Adobe Commerce Optimizer] application
 
-Once the app is open, you can easily switch between environments like sandbox and production to view data and settings for each one without returning to the Commerce Cloud Manager.
+Once the app is open, easily switch between environments like sandbox and production to view data and settings for each one without returning to the Commerce Cloud Manager.
 
 1. From the Commerce Cloud Manager, click the instance name to open the [!DNL Adobe Commerce Optimizer] application.
 
@@ -128,7 +130,7 @@ Once the app is open, you can easily switch between environments like sandbox an
    ![Instance Switcher](./assets/context-switcher.png){zoomable="yes"}
 
 ### Get instance details
-   
+
 View the instance details by clicking the information icon next to your instance name.
 
 ![Instance Details](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
@@ -140,8 +142,11 @@ Note the following key information:
 - **Commerce Optimizer URL** to access the [!DNL Adobe Commerce Optimizer] application
 - **Instance ID** the unique tenant ID that identifies the instance
 
-The endpoint and instance ID details are required for configring API access and integrating with frontend applications and backend systems.
-If you do not have access to the instance details, contact your organization administrator to get the values.
+If you are a developer, you need these details to set up your development environment and connect to the [!DNL Adobe Commerce Optimizer] APIs.
+
+>[!NOTE]
+>
+>To access the instance details, you must have the necessary permissions in your Adobe IMS organization. If you do not see the instance details or cannot access the application, contact your organization administrator.
 
 ### Edit instance name and description
 
@@ -169,7 +174,7 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 
    - Set up your environment
    - Complete the data ingestion process
-   - Create catalog views and policies using the sample data 
+   - Create catalog views and policies using the sample data
    - Verify the data ingestion by checking the Catalog Service data on the [Data Sync](./setup/data-sync.md) page
 
 ## Next Steps

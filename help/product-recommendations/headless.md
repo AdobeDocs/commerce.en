@@ -25,7 +25,7 @@ You can perform both of these actions using the available SDKs as described in t
 
 1. [Install](install-configure.md) the [!DNL Product Recommendations] module.
 
-1. Install and use the [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) to fire the [behavioral events](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+1. Install and use the [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) to fire the [behavioral events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
     The minimum required events to return [!DNL Product Recommendations] results:
 
