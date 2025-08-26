@@ -32,24 +32,24 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
    ![Create Instance](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Configure instance settings:
-   - **Instance Name**: Descriptive name (for example, "My Company Sandbox")
+   - **Name**: Descriptive name (for example, "My Company Sandbox")
    - **Description**: Brief description of purpose
-   - **Environment Type**: Start with a **Sandbox** environment for testing
    - **Region**: Select your preferred region
+   - **Environment Type**: Start with a **Sandbox** environment for testing
 
 1. Click **Add Instance**.
 
-   The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-instances).
+   The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-an-instance).
 
 >[!NOTE]
 >
->You can only create sandbox environments in the North American region. Once an instance is created, you can not change the region.
+>Sandbox instances are limited to the North America region. You cannot change the region after creation.
 
 ### Step 2. Set up your environment
 
 After creating your instance:
 
-1. [Manage your instance](#manage-instances) from Commerce Cloud Manager.
+1. [Manage your instance](#manage-an-instance) from Commerce Cloud Manager.
 1. Configure user access using the [User Management guide](./user-management.md).
 
 ### Step 3. Add sample data (Optional)

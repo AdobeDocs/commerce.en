@@ -56,7 +56,7 @@ This table describes the events used by product discovery [ranking strategies](.
 | Most added to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
 | Viewed this, viewed that |  `page-view`<br>`product-view` | Product detail page |
 
-#### Required dashboard events
+### Required dashboard events
 
 Some events are required to populate the [search performance dashboard](../../manage-results/search-performance.md)
 
