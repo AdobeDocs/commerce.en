@@ -8,7 +8,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 # Release notes
 
-The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service (SaaS)].
+The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service (SaaS)]. For release information for other products, refer to [Adobe Commerce Optimizer](../optimizer/release-notes.md) or [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## August 2025
 
@@ -20,6 +20,6 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce SaaS instance](./getting-started.md#create-an-instance) in the Cloud Manager.
 
-![create instance](./assets/create-instance-eu.png){width="300" zoomable="yes"}
+![create instance](./assets/create-instance-eu.png){width="600" align="center" zoomable="yes"}
 
 >[!ENDSHADEBOX]
