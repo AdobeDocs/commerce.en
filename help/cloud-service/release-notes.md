@@ -12,7 +12,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## August 2025
 
-**Release date**: August 27, 2025
+**Release date**: August 28, 2025
 
 >[!BEGINSHADEBOX]
 
