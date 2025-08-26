@@ -70,8 +70,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
-| `assetId` | String | Represents the updated asset ID |
-| `eventData` | String | Returns the data payload associated with the `assetId` |
+| `assetId` | String | Represents the updated asset ID. |
+| `eventData` | String | Returns the data payload associated with the asset ID. |
 
 **Response**
 
@@ -130,22 +130,13 @@ exports.main = main;
 **Request**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
 | `productSKU` | String | Represents the updated product SKU. |
-| `asset_matches` | String | Returns all assets associated with a specific `productSku`. |
-
-The `asset_matches` parameter contains the following attributes:
-
-| Attribute | Data Type | Description |
-| --- | --- | --- |
-| `asset_id` | String | Represents the updated asset ID. |
-| `asset_roles` | String | Returns all available asset roles. Uses supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`. |
-| `asset_format` | String | Provides the available formats for the asset. Possible values are `image` and `video`. |
-| `asset_position` | String | Shows the position of the asset. |
+| `eventData` | String | Returns the data payload associated with the Product SKU. |
 
 **Response**
 
@@ -155,12 +146,30 @@ The `asset_matches` parameter contains the following attributes:
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| Parameter | Data Type | Description |
+| --- | --- | --- |
+| `productSKU` | String | Represents the updated product SKU. |
+| `asset_matches` | String | Returns all assets associated with a specific product SKU. |
+
+The `asset_matches` parameter contains the following attributes:
+
+| Attribute | Data Type | Description |
+| --- | --- | --- |
+| `asset_id` | String | Represents the updated asset ID. |
+| `asset_roles` | String | Returns all available asset roles. Uses supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`. |
+| `asset_format` | String | Provides the available formats for the asset. Possible values are `image` and `video`. |
+| `asset_position` | String | Shows the position of the asset. |
