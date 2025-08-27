@@ -13,7 +13,7 @@ These release notes contain updates to [!DNL Adobe Commerce Optimizer] and inclu
 
 ## _August 27, 2025_
 
-![New](../assets/new.svg) - Added European Union region (eu1) support for customer IMS organizations. This new region is available when [adding an Adobe Commerce Optimizer instance](get-started.md#step-1-create-an-instance) in the Cloud Manager.
+![New](../assets/new.svg) - European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce Optimizer instance](get-started.md#step-1-create-an-instance) in the Cloud Manager. The European Union region is only available for production environments.
 
 ## _June 30, 2025_
 
