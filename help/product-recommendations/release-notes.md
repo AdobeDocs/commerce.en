@@ -44,13 +44,14 @@ _April 25, 2023_
 
 ## Current major version
 
-### 6.2.2 of magento/product-recommendations
+### 6.3.0 of magento/product-recommendations
 
-_August 20, 2025_
+_August 29, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added support to display metrics for [PageBuilder recommendation units](page-builder.md) created in non-default store views within the [Product Recommendations workspace](workspace.md).
+![Fix](../assets/fix.svg) Product Recommendations now fully respects [cookie restriction mode](setting-cookie.md) by preventing data collection and storage in cookies/local storage when restrictions are enabled.
 
 ### Previous versions
 

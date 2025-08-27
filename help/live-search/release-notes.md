@@ -87,6 +87,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.5.0
+
+_August 29, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Live Search now fully respects [cookie restriction mode](install.md#cookies) by preventing data collection and storage in cookies/local storage when restrictions are enabled.
+
 ## [!DNL Live Search] 4.4.1
 
 _August 11, 2025_
