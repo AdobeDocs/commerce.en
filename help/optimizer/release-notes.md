@@ -1,20 +1,29 @@
 ---
 title: Release Notes
 description: The latest release information for the [!DNL Adobe Commerce Optimizer].
-feature: Personalization, Integration, Release Notes
+role: Admin, Architect, Developer, User, Leader
+recommendations: noCatalog
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Release Notes
 
-These release notes contain updates to [!DNL Adobe Commerce Optimizer] and includes:
+The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
 
-![New](../assets/new.svg) - New features
-![Fix](../assets/fix.svg) - Fixes and improvements
-![Bug](../assets/bug.svg) - Known issues
+## August 2025
 
-## _August 27, 2025_
+**Release date**: August 28, 2025
 
-![New](../assets/new.svg) - European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce Optimizer instance](get-started.md#step-1-create-an-instance) in the Cloud Manager. The European Union region is only available for production environments.
+>[!BEGINSHADEBOX]
 
-## _June 30, 2025_
+### EU region now available
 
-![New](../assets/new.svg) - General availability release.
+European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce Optimizer instance](./get-started.md#step-1-create-an-instance) in the Cloud Manager. The European Union region is only available for production environments.
+
+The base production URLs for the European Union region are:
+
+* Admin: `https://eu1.admin.commerce.adobe.com`
+* REST and GraphQL: `https://eu1.api.commerce.adobe.com`
+
+![create instance](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+
+>[!ENDSHADEBOX]
