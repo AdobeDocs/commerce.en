@@ -90,9 +90,9 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 The base URLs for your Admin and endpoints differ based on region and environment, using the following pattern:
 
 * Admin
-  * North America production Admin: `https://na1.admin.adobe.com`
-  * North America sandbox Admin: `https://na1-sandbox.admin.adobe.com` 
-  * Europe production Admin: `https://eu1.admin.adobe.com`
+  * North America production Admin: `https://na1.admin.commerce.adobe.com`
+  * North America sandbox Admin: `https://na1-sandbox.admin.commerce.adobe.com` 
+  * Europe production Admin: `https://eu1.admin.commerce.adobe.com`
 * REST and GraphQL
   * North America production GraphQL: `https://na1.api.commerce.adobe.com`
   * North America sandbox GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
