@@ -133,7 +133,7 @@ Admins have access to all permissions.
 
 ## Add a user to AEM Assets
 
-If your account has access to [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [!DNL AEM Assets] along with [!DNL Adobe Commerce as a Cloud Service], use the following process:
+If your account has access to [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], use the following process:
 
 >[!NOTE]
 >
