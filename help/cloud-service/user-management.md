@@ -189,3 +189,6 @@ After adding a user to AEM Assets, they can access the [!DNL Experience Manager]
 1. From the [!UICONTROL **Cloud Manager**] page, click [!UICONTROL **Add Program**] to get started.
  
 Follow the [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"} to continue onboarding.
+
+* [Configure AEM Assets to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Integrate AEM Assets with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
