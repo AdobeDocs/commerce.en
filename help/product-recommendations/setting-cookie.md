@@ -5,7 +5,7 @@ exl-id: 7e7342db-b903-4105-93c0-e4022c81673b
 ---
 # Handle Cookie Restrictions
 
-Adobe Commerce and Magento Open Source support cookie consent requirements by implementing cookie restriction mode. This feature ensures that data is not stored in browser cookies or local storage until shoppers provide consent. For more information, see [Cookie restriction mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+Both Adobe Commerce and Magento Open Source ask for consent before data is stored in browser cookies. For more information, refer to [Cookie restriction mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
 
 ## How Product Recommendations handle cookie restrictions
 
@@ -21,7 +21,7 @@ The following Product Recommendations data is not collected when cookie restrict
 
 - **Behavioral data**: Product views, add-to-cart actions, purchases, and other shopper interactions.
 - **Session data**: Shopper session information and recommendation unit interactions.
-- **Personalization data**: Data used for recommendation types like "Recently viewed" and "Recommended for you".
+- **Personalization data**: Data used for recommendation types like "Recently viewed" and "Most purchased".
 
 ### Impact on recommendation types
 
@@ -29,7 +29,6 @@ When cookie restriction mode is enabled and shoppers haven't accepted cookies, c
 
 - **Recently viewed products**: Requires session data stored in cookies/local storage.
 - **Recommended for you**: Requires behavioral data for personalization.
-- **Viewed this, viewed that**: Requires historical view data.
 - **Bought this, bought that**: Requires purchase history data.
 
 >[!NOTE]

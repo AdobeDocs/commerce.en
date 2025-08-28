@@ -93,7 +93,7 @@ _August 29, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Live Search now fully respects [cookie restriction mode](install.md#cookies) by preventing data collection and storage in cookies/local storage when restrictions are enabled.
+![New](../assets/new.svg) Live Search now fully respects [cookie restriction mode](install.md#cookies) by preventing data collection and storage in cookies/local storage when restrictions are enabled.
 
 ## [!DNL Live Search] 4.4.1
 
