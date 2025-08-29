@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.4.11 Release
+
+![New](../assets/new.svg) Enriches the product feed with additional attributes.<!--MDEE-1135-->
+![Fix](../assets/fix.svg) Fixed an issue when update may be lost if error occurred during full resync.<!--MDEE-1144-->
+
 ## 103.4.10 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where the wrong type (`text` instead of `OBJECT`) was returned for some dynamically created attributes . Now, the correct type information is consistently returned eliminating the need for manual resyncs or workarounds.<!--MDEE-1131-->
