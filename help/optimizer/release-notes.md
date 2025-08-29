@@ -4,6 +4,7 @@ description: The latest release information for the [!DNL Adobe Commerce Optimiz
 role: Admin, Architect, Developer, User, Leader
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 ---
 # Release Notes
 
