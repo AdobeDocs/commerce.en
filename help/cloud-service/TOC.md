@@ -18,4 +18,5 @@ recommendations: noDisplay, noCatalog
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
+- [Release notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
