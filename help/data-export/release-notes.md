@@ -24,8 +24,8 @@ Updates include:
 
 ## 103.4.11 Release
 
-![New](../assets/new.svg) Enriches the product feed with additional attributes.<!--MDEE-1135-->
-![Fix](../assets/fix.svg) Fixed an issue when update may be lost if error occurred during full resync.<!--MDEE-1144-->
+![New](../assets/new.svg) Added support for additional product metadata to include tax attribute, attribute set, and inventory information in the product feed. Customers that want to include this metadata in their data export feeds must add the Extra Product Attributes module to their Adobe Commerce project. See [Add tax, attribute set, and inventory metadata](add-tax-attribute-set-inventory-metadata.md).<!--MDEE-1135-->
+![Fix](../assets/fix.svg) Resolved an issue that caused incorrect synchronization of deleted product updates if an error occurred during a full product index. Now, all product deletions are correctly synchronized even if an error occurs during the indexing process. <!--MDEE-1144-->
 
 ## 103.4.10 Release
 
