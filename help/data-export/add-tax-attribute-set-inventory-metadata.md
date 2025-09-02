@@ -20,33 +20,118 @@ This is an optional module for customers with Adobe Commerce on cloud infrastruc
 
 ## Installation
 
-### Requirements
+## Installation and configuration
+
+To get started with Extra Product Attributes extension the following steps are required:
+
+- Install the module (`adobe-commerce/module-extra-product-attributes`)
+- Configure the service and data export
+- Access the service
+
+### Install the extension
+
+>[!BEGINSHADEBOX]
+
+**Requirements**
 
 - PHP 8.1, 8.2, 8.3, or 8.4
+- Adobe Commerce 2.4.4+
 - [Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later.
+- Access to [repo.magento.com](https://repo.magento.com) to install the extension. For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Access to the command line of the Adobe Commerce application server.
+
+>[!ENDSHADEBOX]
 
 ### Installation Steps
 
-1. **Install the module using Composer:**
+Install the latest version of the Extra Product Attributes module (`adobe-commerce/module-extra-product-attributes`) on an Adobe Commerce instance that is running Adobe Commerce version 2.4.4 or later.
 
-   ```bash
-   composer require adobe-commerce/module-extra-product-attributes
+>[!BEGINTABS]
+
+>[!TAB Cloud infrastructure (PaaS)]
+
+Use this method to install the [!DNL Extra Product Attributes] for a Commerce on cloud infrastructure instance.
+
+1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
+
+   >[!NOTE]
+   >
+   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+
+1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
+
+   ```shell
+   magento-cloud environment:checkout <environment-id>
    ```
 
-2. **Deploy the changes:**
+1. Add the Catalog Service module.
 
    ```bash
+   composer require adobe-commerce/extra-product-attributes --no-update
+   ```
+
+1. Update package dependencies.
+
+   ```bash
+   composer update adobe-commerce/extra-product-attributes
+   ```
+
+1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
+
+   ```shell
+   git add -A
+   git commit -m "Add extra product attributes module"
+   git push origin <branch-name>
+   ```
+
+   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+
+>[!TAB On-premises]
+
+Use this method to install the [!DNL Extra Product Attributes] for an on-premises instance.
+
+1. Use Composer to add the Catalog Service module to your project:
+
+   ```bash
+   composer require adobe-commerce/extra-product-attributes --no-update
+   ```
+
+1. Update dependencies and install the extension:
+
+   ```bash
+   composer update  adobe-commerce/extra-product-attributes
+   ```
+
+1. Run the following commands to complete the installation:
+
+   ```shell
    bin/magento setup:upgrade
-   bin/magento setup:di:compile
-   bin/magento setup:static-content:deploy
    ```
 
-3. **Verify installation** by running a product synchronization:
+   ```shell
+   bin/magento setup:di:compile
+   ```
+
+   ```shell
+   bin/magento setup:static-content:deploy -f
+   ```
+
+   ```shell
+   bin/magento cache:clean
+   ```
+
+1. **Verify installation** by running a product synchronization:
 
    ```bash
    bin/magento saas:resync --feed=products
    bin/magento saas:resync --feed=productAttributes
    ```
+
+   >[!TIP]
+   >
+   >In some cases, particularly when deploying to production, you might wish to avoid clearing compiled code because it can take some time. Ensure that you back up your system before making any changes.
+
+>[!ENDTABS]
 
 ## Features and exported attributes
 
@@ -147,9 +232,7 @@ The module adds three additional attributes to your existing product data feeds:
 
 ### Data Export feed enhancement
 
-**Important**: This module does not create new data export feeds. Instead, it enhances existing Adobe Commerce data export feeds by adding additional product attributes to them.
-
-The module automatically integrates with the following existing feeds:
+The Extra Product Attribute module enhances the following existing product feeds by integrating the new attribute data automatically.
 
 - **Products Feed** (`products`): Enhanced with the three additional attributes described below
 
@@ -165,7 +248,7 @@ The module automatically integrates with the following existing feeds:
 
 ### Synchronization commands
 
-When you need to synchronize product data after installing this module, use the standard Adobe Commerce SaaS resync commands:
+When you need to synchronize product data after installing this module, use the [standard Adobe Commerce SaaS resync commands](data-export-cli-commands.md):
 
 ```shell
 # Resync the products feed (includes the new attributes)
@@ -177,8 +260,6 @@ bin/magento saas:resync --feed=productAttributes
 
 ## Troubleshooting
 
-### Common Issues
-
 **Products missing additional attributes:**
 
 - Verify the module is properly installed and enabled
@@ -189,7 +270,9 @@ bin/magento saas:resync --feed=productAttributes
 
 - Verify inventory settings are properly configured in Admin
 - Check for website-specific inventory overrides
-- Ensure CatalogInventory module is functioning correctly
+- Ensure that the [Inventory Management module](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) is functioning correctly
+
+For further details, see the [Inventory Management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in the *Adobe Commerce Merchant Documentation*
 
 **Performance concerns:**
 
