@@ -17,7 +17,7 @@ The **Language** setting tells [!DNL Adobe Commerce Optimizer] which language to
 You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 creates the following price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
 
 1. On the **Settings** workspace, select **[!UICONTROL Search]**, then under **Price faceting**, do the following:
-   - Enter the **Number of selections**, or price groupings to be available. Up to 50 price groupings can be defined.
+   - Enter the **Number of selections**, or price groupings to be available. Up to 100 price groupings can be defined.
    - Enter the **Interval value**, or price range for each group. The maximum value is 40,000,000.
 1. Click **Save**.
 
