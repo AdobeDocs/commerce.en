@@ -125,7 +125,7 @@ In Experience Platform Edge:
 
 Luma-based stores:
 
-In Luma-based stores, publishing events is implemented out of the box. Therefore, you can set custom data by extending `customContext`.
+In Luma-based stores, publishing events is implemented natively. Therefore, you can set custom data by extending `customContext`.
 
 For example:
 
