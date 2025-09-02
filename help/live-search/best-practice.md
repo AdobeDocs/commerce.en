@@ -123,7 +123,7 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Slightly prioritize products with higher profit margins without compromising relevance.
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
-- Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
+- Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
 
 Learn more about search rules:
 
@@ -134,7 +134,7 @@ Learn more about search rules:
     - [Create](rules-add.md)
     - [Edit, view, delete](rules-manage.md)
 - Data collection
-    - [[!DNL Live Search] events](events.md)
+    - [[!DNL Live Search] events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
     - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
     - [GitHub Commerce events](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -190,4 +190,4 @@ You can use this metric data to optimize your search functionality in the follow
 - Analyze popular search terms and product data to identify important keywords. Optimize your product searchable attributes with these keywords to improve search relevance.
 - Regularly analyze your results data to understand changing trends, shopper preferences and behavior, identify top search terms, and detect issues. Use this feedback loop to continuously refine and improve your search rules and product offerings
 
-To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
+To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.

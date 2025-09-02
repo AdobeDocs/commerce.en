@@ -11,7 +11,7 @@ exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
 >
 >The Adobe Experience Platform Mobile SDK for iOS supports iOS 11 or later.
 
-Integrating the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) with the Commerce mobile app allows merchants to send Commerce  [event data](events.md) to the Experience Platform edge.
+Integrating the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) with the Commerce mobile app allows merchants to send Commerce [event data](events.md) to the Experience Platform edge.
 
 When Commerce event data is available at the edge, it can be accessed by other Adobe Experience Cloud applications. For example, you can use the data to build audiences in Real-Time CDP then [use those audiences](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) to personalize your Commerce mobile app.
 
