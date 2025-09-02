@@ -38,3 +38,31 @@ All the articles in this repository use GitHub flavored Markdown. If you are not
 
 - [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 - [Printable markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Pre-commit hooks for image optimization
+
+This repository includes automated pre-commit hooks that optimize images before committing. **All contributors should enable these hooks** to ensure consistent image optimization and reduced repository size.
+
+### Quick setup
+
+After cloning the repository, run:
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### What the hooks do
+
+- Automatically detect staged image files (PNG, JPG, JPEG, GIF, SVG)
+- Run `image_optim` to compress and optimize images
+- Re-stage optimized images automatically
+- Ensure all committed images are properly optimized
+
+### Benefits
+
+- Reduced repository size
+- Faster page loads for documentation
+- Consistent image quality across all contributors
+- No manual optimization required
+
+For detailed setup instructions, troubleshooting, and configuration, see [`.githooks/README.md`](.githooks/README.md).
