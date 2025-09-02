@@ -198,7 +198,7 @@ bin/magento saas:resync --feed=productAttributes
 
 ### Logging and Debugging
 
-The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs. For details, see [Review logs and troubleshoot](troubleshoot-logging.md).
+The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs. For details, see [Review logs and troubleshoot](troubleshooting-logging.md).
 
 ## Support and Compatibility
 
