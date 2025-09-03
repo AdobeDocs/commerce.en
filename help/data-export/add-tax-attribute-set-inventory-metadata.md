@@ -7,16 +7,24 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Add tax, attribute set, and inventory metadata
 
-The Adobe Commerce Extra Product Attributes module enriches your product data feeds with additional product information. The module extends the standard product schema to include product metadata from product [tax classification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class), [attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets), and [advanced inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options) settings. After you install this module, the data export automatically captures and exports the extended metadata values from the Commerce product configuration.
+The Adobe Commerce Extra Product Attributes module extends product data feeds to include additional product metadata from Adobe Commerce product configurations:
 
-This is an optional module for customers with Adobe Commerce projects that use the [Adobe Commerce Catalog Data Exporter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/services/data-exporter.html) module to export product data to Adobe Commerce SaaS services like Live Search, Catalog Service, and Product Recommendations.
+* [Tax classification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Advanced inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options) settings
+
+Once installed, the module automatically captures and exports this metadata during product synchronization with no additional configuration required.
+
+**Prerequisites**:
+
+This optional module requires the [Adobe Commerce Catalog Data Exporter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/services/data-exporter.html) and is designed for use with Live Search, Catalog Service, and Product Recommendations.
 
 ## Key Benefits
 
-- **Enhanced Product Data**: Automatically enriches product feeds with tax class, attribute set, and inventory information
-- **Improved Integration**: Provides additional context for external systems and services consuming product data
-- **Zero Configuration**: Works automatically after installation with no additional setup required
-- **Real-time Synchronization**: Data is updated automatically during product synchronization processes
+* **Automatic enhancement**: Enriches product feeds with tax, attribute set, and inventory data
+* **Seamless integration**: Provides essential context for external systems and services
+* **Zero configuration**: Works immediately after installation
+* **Real-time updates**: Synchronizes automatically with product changes
 
 ### Install the extension
 
@@ -24,11 +32,13 @@ This is an optional module for customers with Adobe Commerce projects that use t
 
 **Requirements**
 
-- PHP 8.1, 8.2, 8.3, or 8.4
-- Adobe Commerce 2.4.4+
-- [Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later.
-- Access to [repo.magento.com](https://repo.magento.com) to install the extension. For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
-- Access to the command line of the Adobe Commerce application server.
+* PHP 8.1, 8.2, 8.3, or 8.4
+* Adobe Commerce 2.4.4+
+*[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later.
+* Access to [repo.magento.com](https://repo.magento.com) to install the extension.
+
+  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+* Access to the command line of the Adobe Commerce application server.
 
 >[!ENDSHADEBOX]
 
