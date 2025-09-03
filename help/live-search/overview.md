@@ -89,7 +89,7 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 
 ## Events
 
-[!DNL Live Search] uses [events](events.md) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
+[!DNL Live Search] uses [events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
 
 ## Catalog data retention policy
 

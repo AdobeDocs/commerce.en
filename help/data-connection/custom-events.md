@@ -71,11 +71,7 @@ Attribute overrides for standard events are supported for the Experience Platfor
 
 For any event with `customContext`, the collector overrides joins fields set in the relevant contexts with fields in `customContext`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
 
->[!NOTE]
->
->When overriding custom events, event forwarding to Experience Platform should be turned off for that event type to avoid double counting.
-
-Examples:
+### Examples
 
 Product view with overrides published though Adobe Commerce Events SDK:
 
@@ -126,6 +122,30 @@ In Experience Platform Edge:
   }
 }
 ```
+
+Luma-based stores:
+
+In Luma-based stores, publishing events is implemented natively. Therefore, you can set custom data by extending `customContext`.
+
+For example:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+See [custom event override](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) to learn more about handling custom data.
 
 >[!NOTE]
 >

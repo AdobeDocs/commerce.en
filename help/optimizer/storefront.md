@@ -60,14 +60,16 @@ Install the Sidekick browser extension to edit, preview, and publish content to 
 
 ### Workflow overview
 
-1. **[Create your site](#step-1-create-your-site)**
-1. **[Preview demo site](#step-7-preview-demo-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
-1. **[Develop in your local environment](#step-8-develop-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
-1. **[Next steps](#next-steps)**–Learn more about managing and displaying content and data in the storefront.
+1. **[Create your storefront project](#step-1-create-your-storefront-project)**
+2. **[Add sample data](a**
+3. **[Configure sample catalog]**
+4. **[Preview demo site](#step-7-preview-demo-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
+5. **[Develop in your local environment](#step-8-develop-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
+6. **[Next steps](#next-steps)**–Learn more about managing and displaying content and data in the storefront.
 
 ## Set up your storefront
 
-Use the site creator tool to create a new site with the following resources:
+Use the site creator tool to create storefront project with the following resources:
 
 * **Site** links to the storefront landing page with the boilerplate content.
 * **Code** links to the repository with the storefront boilerplate code source files
@@ -109,7 +111,7 @@ Before you begin, make sure you have the following information:
    * Click the **[!UICONTROL Select respositories]** menu, choose the storefront code repository you created.
    * Click **[!UICONTROL Save]** to register your repository.
 
-1. On the tab where the Site Creator is open, click **Continue** to add the boilerplate content to the Document Author environment.
+1. In the browser window where the Site Creator is open, click **Continue** to add the boilerplate content to the Document Author environment.
 
    The Site Creator copies the storefront boilerplate content to the Document Author environment. This step takes a minute or two.
 
@@ -133,8 +135,7 @@ The sample data is based on the [Carvelo business scenario](./use-case/admin-use
 * Catalog views and policies for different dealers
 * Complete end-to-end workflow examples
 
-You can check to see if the sample data has already been loaded by visiting the Data Sync page. 
-
+You can check to see if the sample data has already been loaded by visiting the Data Sync page.
 
 If the product count is 0, follow the steps to load the sample data.
 
@@ -155,8 +156,6 @@ When you use the Site Creator tool, the system creates a default storefront conf
 connected to your Adobe Commerce Optimizer instance.
 
 +++Example of default configuration file
-
-Your repository is named `aco-storefront` and your organization is `early-adopter`, the updated URL should look like this:
 
 ```json
 {
@@ -242,7 +241,7 @@ Verify that both the sample content and the data from the Adobe Commerce Optimiz
 
       The product details page components are defined by the `default` content document in the `product` folder.
 
-### Step 8: Develop in your local environment
+### Step 5: Develop in your local environment
 
 In this section, you update the storefront configuration from your local development environment.
 

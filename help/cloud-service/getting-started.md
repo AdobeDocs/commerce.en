@@ -52,22 +52,22 @@ This diagram provides a high-level overview of how developers create integration
 1. Select [!UICONTROL **Commerce as a Cloud Service**].
 
 1. Enter a **Name** and **Description** for your instance.
+ 
+1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
+
+   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
+   * [!UICONTROL **Production**] - For live stores and customer-facing sites.
+
+   >[!NOTE]
+   >
+   >* Sandbox instances are limited to the North America region.
+   >* The option to install sample data is currently unavailable.
 
 1. Select the region where you want your instance hosted.
 
    >[!NOTE]
    >
    >Once you have created your instance, you will not be able to modify the region.
- 
-1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
-
-   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment. 
-   * [!UICONTROL **Production**] - For live stores and customer-facing sites.
-
-   >[!NOTE]
-   >
-   >* Sandbox instances are currently limited to the North America region.
-   >* The option to install sample data is currently unavailable.
 
 1. Click [!UICONTROL **Add Instance**].
 
@@ -86,6 +86,17 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 >[!TIP]
 >
 >To see information about your instance, including the REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
+
+The base URLs for your Admin and endpoints differ based on region and environment, using the following pattern:
+
+* Admin
+  * North America production Admin: `https://na1.admin.commerce.adobe.com`
+  * North America sandbox Admin: `https://na1-sandbox.admin.commerce.adobe.com` 
+  * Europe production Admin: `https://eu1.admin.commerce.adobe.com`
+* REST and GraphQL
+  * North America production GraphQL: `https://na1.api.commerce.adobe.com`
+  * North America sandbox GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
+  * Europe production GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ## Import your catalog
 

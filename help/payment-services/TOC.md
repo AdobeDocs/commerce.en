@@ -21,9 +21,8 @@ recommendations: noDisplay
   - [Enable for production](production.md)
 - Configure [!DNL Payment Services] {#configure}
   - [[!DNL Payment Services] Home](payments-home.md)
-  - [[!DNL Payment Services] Settings](settings.md)
+  - [[!DNL Payment Services] configuration](configure-admin.md)
   - [Command line configuration](configure-cli.md)
-  - [Legacy configuration](configure-admin.md)
   - [Test and validate](test-validate.md)
 - Payments and checkout {#payments-checkout}
   - [Payment options](payments-options.md)

@@ -18,7 +18,7 @@ To ensure that each functional area on the workspace contains the correct data, 
 
 If you are using a headless storefront, refer to the following documentation to get more information about the required events that you need to add:
 
-- [Required events](events.md) for Live Search dashboard.
+- [Required events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) for Live Search dashboard.
 - [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) that needs to be added as a prerequisite.
 - [Examples](https://github.com/adobe/commerce-events/tree/main/examples) of the events structure.
 

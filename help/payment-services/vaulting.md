@@ -10,13 +10,13 @@ Convert one-time shoppers into loyal customers with credit card vaulting. Logged
 
 ## Enable vaulting
 
-Merchants can enable credit card vaulting for their stores in the [!DNL Payment Services] [Settings](settings.md#card-vaulting).
+Merchants can enable credit card vaulting for their stores in the [!DNL Payment Services] [Settings](configure-admin.md#card-vaulting).
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
 1. Click **[!UICONTROL Settings]**.
 
-1. Toggle the **[!UICONTROL Vault enabled]** selector. See [Enable [!DNL Payment Services]](settings.md#enable-payment-services) for more information.
+1. Toggle the **[!UICONTROL Vault enabled]** selector. See [Enable [!DNL Payment Services]](configure-admin.md#enable-payment-services) for more information.
 
 ## Vaulting without purchase
 
