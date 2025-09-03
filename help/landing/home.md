@@ -195,3 +195,5 @@ Adobe provides a collection of Commerce services, integration services, and data
 >[!NOTE]
 >
 >The Data Management Dashboard is available at no additional cost to Commerce merchants using Product Recommendations v6.0.0, Live Search v4.1.0, or Catalog Service v1.17 with an active license. Merchants using earlier service versions can use [Catalog Sync](../landing/catalog-sync.md) to manage and track data synchronization.
+
+{{$include /help/_includes/templated/whats-new.md}}
