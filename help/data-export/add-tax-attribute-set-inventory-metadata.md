@@ -7,9 +7,9 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Add tax, attribute set, and inventory metadata
 
-The Adobe Commerce Extra Product Attributes module enriches your product data feeds with additional product information. The module extends the standard product schema to include product metadata for tax classification, attribute set information, and advanced inventory settings. After you install this module, the data export automatically captures and exports the extended metadata values.
+The Adobe Commerce Extra Product Attributes module enriches your product data feeds with additional product information. The module extends the standard product schema to include product metadata from product [tax classification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class), [attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets), and [advanced inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options) settings. After you install this module, the data export automatically captures and exports the extended metadata values from the Commerce product configuration.
 
-This is an optional module for customers with Adobe Commerce on cloud infrastructure projects that use the [Adobe Commerce Catalog Data Exporter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/services/data-exporter.html) module to export product data to Adobe Commerce SaaS services like Live Search, Catalog Service, and Product Recommendations.
+This is an optional module for customers with Adobe Commerce projects that use the [Adobe Commerce Catalog Data Exporter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/services/data-exporter.html) module to export product data to Adobe Commerce SaaS services like Live Search, Catalog Service, and Product Recommendations.
 
 ## Key Benefits
 
@@ -17,16 +17,6 @@ This is an optional module for customers with Adobe Commerce on cloud infrastruc
 - **Improved Integration**: Provides additional context for external systems and services consuming product data
 - **Zero Configuration**: Works automatically after installation with no additional setup required
 - **Real-time Synchronization**: Data is updated automatically during product synchronization processes
-
-## Installation
-
-## Installation and configuration
-
-To get started with Extra Product Attributes extension the following steps are required:
-
-- Install the module (`adobe-commerce/module-extra-product-attributes`)
-- Configure the service and data export
-- Access the service
 
 ### Install the extension
 
@@ -42,7 +32,7 @@ To get started with Extra Product Attributes extension the following steps are r
 
 >[!ENDSHADEBOX]
 
-### Installation Steps
+### Installation steps
 
 Install the latest version of the Extra Product Attributes module (`adobe-commerce/module-extra-product-attributes`) on an Adobe Commerce instance that is running Adobe Commerce version 2.4.4 or later.
 
@@ -85,6 +75,13 @@ Use this method to install the [!DNL Extra Product Attributes] for a Commerce on
    ```
 
    Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+
+1. Verify installation by running a product synchronization:
+
+   ```shell
+   bin/magento saas:resync --feed=products
+   bin/magento saas:resync --feed=productAttributes
+   ```
 
 >[!TAB On-premises]
 
@@ -175,7 +172,9 @@ The module adds three additional attributes to your existing product data feeds:
   "attributes": [
     {
       "code": "ac_attribute_set",
-      "values": ["Default"]
+      "values": [
+        "Default"
+      ]
     }
   ]
 }
@@ -198,7 +197,10 @@ The module adds three additional attributes to your existing product data feeds:
 - `manageStock` (boolean): Whether stock management is enabled
 - `cartMinQty` (float): Minimum quantity allowed in shopping cart
 - `cartMaxQty` (float): Maximum quantity allowed in shopping cart
-- `backorders` (string): Backorder policy - "no", "allow", or "allow_notify"
+- `backorders` (string): Backorder policy, Value one of: - "no", "allow", or "allow_notify"
+  - `"no"`: No backorders allowed
+  - `"allow"`: Allow quantity below 0
+  - `"allow_notify"`: Allow quantity below 0 and notify customer
 - `enableQtyIncrements` (boolean): Whether quantity increments are enabled
 - `qtyIncrements` (float): Required quantity increment value
 
@@ -216,12 +218,6 @@ The module adds three additional attributes to your existing product data feeds:
   ]
 }
 ```
-
-**Backorder Policy Values**:
-
-- `"no"`: No backorders allowed
-- `"allow"`: Allow quantity below 0
-- `"allow_notify"`: Allow quantity below 0 and notify customer
 
 **Use Cases**:
 
