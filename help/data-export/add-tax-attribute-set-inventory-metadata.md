@@ -34,10 +34,10 @@ This optional module requires the [Adobe Commerce Catalog Data Exporter](https:/
 
 * PHP 8.1, 8.2, 8.3, or 8.4
 * Adobe Commerce 2.4.4+
-*[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later.
-* Access to [repo.magento.com](https://repo.magento.com) to install the extension.
+*[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
+* Access to [repo.magento.com](https://repo.magento.com)
 
-  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys).
 * Access to the command line of the Adobe Commerce application server.
 
 >[!ENDSHADEBOX]
@@ -165,9 +165,9 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Use Cases**:
 
-- Tax compliance reporting
-- Integration with external tax calculation services
-- Product categorization for accounting systems
+* Tax compliance reporting
+* Integration with external tax calculation services
+* Product categorization for accounting systems
 
 ### 2. Attribute Set Information (`ac_attribute_set`)
 
@@ -192,9 +192,9 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Use Cases**:
 
-- Product template identification
-- Catalog management and organization
-- Third-party system integration requiring attribute set context
+* Product template identification
+* Catalog management and organization
+* Third-party system integration requiring attribute set context
 
 ### 3. Advanced Inventory Data (`ac_inventory`)
 
@@ -204,15 +204,15 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Included Fields**:
 
-- `manageStock` (boolean): Whether stock management is enabled
-- `cartMinQty` (float): Minimum quantity allowed in shopping cart
-- `cartMaxQty` (float): Maximum quantity allowed in shopping cart
-- `backorders` (string): Backorder policy, Value one of: - "no", "allow", or "allow_notify"
-  - `"no"`: No backorders allowed
-  - `"allow"`: Allow quantity below 0
-  - `"allow_notify"`: Allow quantity below 0 and notify customer
-- `enableQtyIncrements` (boolean): Whether quantity increments are enabled
-- `qtyIncrements` (float): Required quantity increment value
+* `manageStock` (boolean): Whether stock management is enabled
+* `cartMinQty` (float): Minimum quantity allowed in shopping cart
+* `cartMaxQty` (float): Maximum quantity allowed in shopping cart
+* `backorders` (string): Backorder policy, Value is one of the following:
+  * `"no"`: No backorders allowed
+  * `"allow"`: Allow quantity below 0
+  * `"allow_notify"`: Allow quantity below 0 and notify customer
+* `enableQtyIncrements` (boolean): Whether quantity increments are enabled
+* `qtyIncrements` (float): Required quantity increment value
 
 **Example Output**:
 
@@ -231,26 +231,26 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Use Cases**:
 
-- Inventory management system integration
-- Shopping cart validation rules
-- Order fulfillment process optimization
-- Customer experience customization
+* Inventory management system integration
+* Shopping cart validation rules
+* Order fulfillment process optimization
+* Customer experience customization
 
 ### Data Export feed enhancement
 
 The Extra Product Attribute module enhances the following existing product feeds by integrating the new attribute data automatically.
 
-- **Products Feed** (`products`): Enhanced with the three additional attributes described below
+* **Products Feed** (`products`): Enhanced with the three additional attributes
 
-  - The module adds three new attributes to each product record in the existing `products` feed
-  - Original product data remains unchanged - only additional attributes are appended
-  - Maintains backward compatibility with existing feed consumers
+  * The module adds the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record in the existing `products` feed
+  * Original product data remains unchanged, only additional attributes are appended
+  * Maintains backward compatibility with existing feed consumers
 
-- **Product Attributes Feed** (`productAttributes`): Enhanced with attribute metadata for the new attributes
+* **Product Attributes Feed** (`productAttributes`): Enhanced with attribute metadata for the new attributes
 
-  - Automatically registers metadata for the three new attributes in the `productAttributes` feed
-  - Provides attribute configuration details (data types, visibility settings, etc.)
-  - Ensures external systems understand the new attribute schema
+  * Automatically registers metadata for the three new attributes in the `productAttributes` feed
+  * Provides attribute configuration details (data types, visibility settings, and so on)
+  * Ensures external systems understand the new attribute schema
 
 ### Synchronization commands
 
@@ -259,7 +259,9 @@ When you need to synchronize product data after installing this module, use the 
 ```shell
 # Resync the products feed (includes the new attributes)
 bin/magento saas:resync --feed=products
+```
 
+```shell
 # Resync the product attributes feed (includes new attribute metadata)
 bin/magento saas:resync --feed=productAttributes
 ```
@@ -268,22 +270,22 @@ bin/magento saas:resync --feed=productAttributes
 
 **Products missing additional attributes:**
 
-- Verify the module is properly installed and enabled
-- Run the resync commands to refresh product data
-- Check that products have valid tax class and attribute set assignments
+* Verify the module is properly installed and enabled
+* Run the resync commands to refresh product data
+* Check that products have valid tax class and attribute set assignments
 
 **Inventory data appears incorrect:**
 
-- Verify inventory settings are properly configured in Admin
-- Check for website-specific inventory overrides
-- Ensure that the [Inventory Management module](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) is functioning correctly
+* Verify that inventory settings are configured correctly in the Admin
+* Check for website-specific inventory overrides
+* Ensure that the [Inventory Management module](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) is functioning correctly
 
-For further details, see the [Inventory Management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in the *Adobe Commerce Merchant Documentation*
+For further details, see the [Inventory Management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in the *Adobe Commerce Merchant Documentation*.
 
 **Performance concerns:**
 
-- Monitor export process performance after installation
-- Consider scheduling resyncs during low-traffic periods
+* Monitor export process performance after installation
+* Consider scheduling resyncs during low-traffic periods
 
 ### Logging and Debugging
 
@@ -293,10 +295,9 @@ The module logs export errors and warnings to the standard Commerce logging syst
 
 This module is designed to work seamlessly with the Adobe Commerce data export infrastructure and is compatible with:
 
-- Multi-store and multi-website configurations
-- Custom product types and attribute sets
-- Third-party inventory management extensions
-- External PIM and ERP integrations
+* Multi-store and multi-website configurations
+* Custom product types and attribute sets
+* Third-party inventory management extensions
+* External PIM and ERP integrations
 
 For additional support, contact your Adobe Commerce support team.
-
