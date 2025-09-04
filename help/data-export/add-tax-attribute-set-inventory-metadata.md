@@ -55,7 +55,6 @@ For detailed installation steps, see the following guides:
 * [Install extension on Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 * [Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
 
-
 ## Features and exported attributes
 
 The module adds three additional attributes to your existing product data feeds:
