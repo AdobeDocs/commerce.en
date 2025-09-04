@@ -37,7 +37,7 @@ Once installed, the module automatically captures and exports this metadata duri
 
 ### Installation steps
 
-Add adobe-commerce/module-extra-product-attributes module using composer:
+Add the `adobe-commerce/module-extra-product-attributes` module using Composer:
 
 ```shell
 composer require adobe-commerce/module-extra-product-attributes
