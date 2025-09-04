@@ -1,63 +1,30 @@
 ---
-title: Add tax, attribute set, and inventory metadata
-description: Learn how to extend the product feed data to include metadata for tax classification, attribute set information, and advanced inventory settings
+title: Add tax class, attribute set, and inventory attributes
+description: Learn how to extend the product feed data to include attributes for tax classification, attribute sets, and advanced inventory settings
 role: Admin, Developer
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
 
 ---
 # Add tax class, attribute set, and inventory metadata
 
-The Adobe Commerce Extra Product Attributes module extends product data feeds to include additional product metadata from Adobe Commerce product configurations:
+The Adobe Commerce Extra Product Attributes module extends product data feeds to include additional product attributes from Adobe Commerce product configurations:
 
 * [Tax classification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
 * [Attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
 * [Inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
-Once installed, the module automatically captures and exports this metadata during product synchronization with no additional configuration required.
+Once installed, the module automatically captures and exports the additional attributes during product synchronization with no additional configuration required.
 
 ## Key benefits
 
-* **Automatic enhancement**: Enriches product feeds with tax class, attribute set, and inventory data
+* **Automatic enhancement**: Enriches product feeds with tax class, attribute set, and inventory attributes
 * **Seamless integration**: Provides essential context for external systems and services
 * **Zero configuration**: Works immediately after installation
 * **Real-time updates**: Synchronizes automatically with product changes
 
-## Install the extension
-
-**Requirements**
-
-* PHP 8.1, 8.2, 8.3, or 8.4
-* Adobe Commerce 2.4.4+
-*[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
-* Access to [repo.magento.com](https://repo.magento.com)
-
-  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Access to the command line of the Adobe Commerce application server.
-
-
-### Installation steps
-
-Add the `adobe-commerce/module-extra-product-attributes` module using Composer:
-
-```shell
-composer require adobe-commerce/module-extra-product-attributes
-```
-
-After redeployment, the Adobe Commerce instance automatically exports the additional data during product synchronization. You can run the following commands to synchronize immediately.
-
-```shell
-bin/magento saas:resync --feed=products
-bin/magento saas:resync --feed=productAttributes
-```
-
-For detailed installation steps, see the following guides:
-
-* [Install extension on Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
-
 ## Features and exported attributes
 
-The module adds three additional attributes to your existing product data feeds:
+The module adds three additional attributes to your existing product data feeds, `ac_tax_class`, `ac_attribute_set`, and `ac_inventory`.
 
 ### 1. Tax class information (`ac_tax_class`)
 
@@ -157,7 +124,7 @@ Exporting inventory data to Commerce catalog services enables advanced inventory
 * Order fulfillment process optimization
 * Customer experience customization
 
-### Data export feed enhancement
+## Data export feed enhancement
 
 The Extra Product Attribute module enhances the existing product feeds by integrating the new attribute data automatically.
 
@@ -173,9 +140,34 @@ The Extra Product Attribute module enhances the existing product feeds by integr
   * Provides attribute configuration details (data types, visibility settings, and so on)
   * Ensures that external systems understand the new attribute schema
 
-### Synchronization commands
+## Install the extension
 
-When you need to synchronize product data after installing this module, use the [standard Adobe Commerce SaaS resync commands](data-export-cli-commands.md):
+**Requirements**
+
+* PHP 8.1, 8.2, 8.3, or 8.4
+* Adobe Commerce 2.4.4+
+*[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
+* Access to [repo.magento.com](https://repo.magento.com)
+
+  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Access to the command line of the Adobe Commerce application server.
+
+### Installation steps
+
+Add the `adobe-commerce/module-extra-product-attributes` module using Composer:
+
+```shell
+composer require adobe-commerce/module-extra-product-attributes
+```
+
+For detailed installation steps, see the following guides:
+
+* [Install extension on Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
+
+## Synchronize product data
+
+After redeployment, the Adobe Commerce instance automatically exports the additional data automatically during product synchronization, or you can use the `resync` CLI commands to synchronize immediately.
 
 ```shell
 # Resync the products feed (includes the new attributes)
