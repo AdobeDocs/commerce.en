@@ -52,7 +52,7 @@ Install the latest version of the Extra Product Attributes module (`adobe-commer
 
 Use this method to install the [!DNL Extra Product Attributes] for a Commerce on cloud infrastructure instance.
 
-1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
+1. On your local workstation, navigate to the project directory for your Adobe Commerce on cloud infrastructure project.
 
    >[!NOTE]
    >
