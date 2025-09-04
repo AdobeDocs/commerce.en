@@ -136,7 +136,7 @@ Use this method to install the [!DNL Extra Product Attributes] for an on-premise
 
    >[!TIP]
    >
-   >In some cases, particularly when deploying to production, you might wish to avoid clearing compiled code because it can take some time. Ensure that you back up your system before making any changes.
+   >In some cases, particularly when deploying to production, you might want to avoid clearing compiled code because it can take time to rebuild. Ensure that you back up your system before making any changes.
 
 >[!ENDTABS]
 
