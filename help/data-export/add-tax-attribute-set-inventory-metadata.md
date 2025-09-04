@@ -19,7 +19,7 @@ Once installed, the module automatically captures and exports this metadata duri
 
 This optional module requires the [Adobe Commerce Catalog Data Exporter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/services/data-exporter.html) and is designed for use with Live Search, Catalog Service, and Product Recommendations.
 
-## Key Benefits
+## Key benefits
 
 * **Automatic enhancement**: Enriches product feeds with tax, attribute set, and inventory data
 * **Seamless integration**: Provides essential context for external systems and services
