@@ -22,7 +22,7 @@ Once installed, the module automatically captures and exports this metadata duri
 * **Zero configuration**: Works immediately after installation
 * **Real-time updates**: Synchronizes automatically with product changes
 
-### Install the extension
+## Install the extension
 
 >[!BEGINSHADEBOX]
 
@@ -36,99 +36,27 @@ Once installed, the module automatically captures and exports this metadata duri
   For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Access to the command line of the Adobe Commerce application server.
 
->[!ENDSHADEBOX]
 
 ### Installation steps
 
-Install the latest version of the Extra Product Attributes module (`adobe-commerce/module-extra-product-attributes`) on an Adobe Commerce instance that is running Adobe Commerce version 2.4.4 or later.
+Add adobe-commerce/module-extra-product-attributes module using composer:
 
->[!BEGINTABS]
+```shell
+composer require adobe-commerce/module-extra-product-attributes
+```
 
->[!TAB Cloud Infrastructure (PaaS)]
+After redeployment, the Adobe Commerce instance will automatically enrich products with additional attributes during product synchronization. If you want to force synchronization, you can run the following commands:
 
-Use the following instructions to install the [!DNL Extra Product Attributes] module in a Commerce on cloud infrastructure environment.
+```shell
+bin/magento saas:resync --feed=products
+bin/magento saas:resync --feed=productAttributes
+```
 
-1. On your local workstation, navigate to the project directory for your Adobe Commerce on cloud infrastructure project.
+For detailed installation steps, see the following guides:
 
-   >[!NOTE]
-   >
-   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+* Install extension on Adobe Commerce on Cloud Infrastructure:  https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions
+* Install extension Adobe Commerce on-premises: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension
 
-1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
-
-   ```shell
-   magento-cloud environment:checkout <environment-id>
-   ```
-
-1. Add the Catalog Service module.
-
-   ```bash
-   composer require adobe-commerce/module-extra-product-attributes --no-update
-   ```
-
-1. Update package dependencies.
-
-   ```bash
-   composer update adobe-commerce/module-extra-product-attributes --with-dependencies
-   ```
-
-1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
-
-   ```shell
-   git add -A
-   git commit -m "Add extra product attributes module"
-   git push origin <branch-name>
-   ```
-
-   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
-
-1. Verify installation by running a product synchronization:
-
-   ```shell
-   bin/magento saas:resync --feed=products
-   bin/magento saas:resync --feed=productAttributes
-   ```
-
->[!TAB On-premises]
-
-Follow these instructions to install the [!DNL Extra Product Attributes] module for an Adobe Commerce on-premises project.
-
-1. Use Composer to add the Catalog Service module to your project:
-
-   ```bash
-   composer require adobe-commerce/module-extra-product-attributes --no-update
-   ```
-
-1. Update dependencies and install the extension:
-
-   ```bash
-   composer adobe-commerce/module-extra-product-attributes --with-dependencies
-   ```
-
-1. Run the following commands to complete the installation:
-
-   ```shell
-   bin/magento setup:upgrade
-   ```
-
-1. Clear the cache.
-
-   ```shell
-   bin/magento cache:clean
-   ```
-
-1. **Verify installation** by running a product synchronization:
-
-   ```bash
-   bin/magento saas:resync --feed=products
-   bin/magento saas:resync --feed=productAttributes
-   ```
-
-   >[!TIP]
-   >
-   >In some cases, particularly when deploying to production, you might want to avoid clearing compiled code because it can take time to rebuild. Ensure that you back up your system before making any changes.
-
->[!ENDTABS]
 
 ## Features and exported attributes
 
