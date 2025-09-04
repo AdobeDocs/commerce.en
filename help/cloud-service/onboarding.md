@@ -1,7 +1,6 @@
 ---
 title: Onboarding to Adobe Commerce as a Cloud Service
 description: Start here for a guided journey through the onboarding process to Adobe Commerce as a Cloud Service.
-feature: Onboarding
 role: Admin, User, Developer
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects (Adobe-managed SaaS infrastructure)."
 ---
