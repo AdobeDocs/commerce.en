@@ -11,7 +11,7 @@ The Adobe Commerce Extra Product Attributes module extends product data feeds to
 
 * [Tax classification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
 * [Attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Advanced inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options) settings
+* [Inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 Once installed, the module automatically captures and exports this metadata during product synchronization with no additional configuration required.
 
