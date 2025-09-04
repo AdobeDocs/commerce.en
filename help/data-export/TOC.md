@@ -17,6 +17,6 @@ feature: Services
 - Extensibility {#extensibility}
   - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
   - [Add product attribute dynamically](add-attribute-dynamically.md)
-  - [Add tax, attribute set, and inventory metadata](add-tax-attribute-set-inventory-metadata.md)
+  - [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-metadata.md)
 - [Release Notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
