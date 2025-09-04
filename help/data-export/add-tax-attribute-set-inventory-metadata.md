@@ -106,7 +106,7 @@ Use this method to install the [!DNL Extra Product Attributes] for an on-premise
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update  adobe-commerce/extra-product-attributes
+   composer update adobe-commerce/extra-product-attributes
    ```
 
 1. Run the following commands to complete the installation:
