@@ -126,7 +126,7 @@ Exporting inventory data to Commerce catalog services enables advanced inventory
 
 ## Data export feed enhancement
 
-The Extra Product Attribute module enhances the existing product feeds by integrating the new attribute data automatically.
+The Extra Product Attributes module enhances the existing product feeds by integrating the new attribute data automatically.
 
 * **Products Feed** (`products`): Enhanced with the three additional attributes
 
