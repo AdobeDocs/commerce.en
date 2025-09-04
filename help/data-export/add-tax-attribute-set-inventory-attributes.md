@@ -1,19 +1,19 @@
 ---
 title: Add tax class, attribute set, and inventory attributes
-description: Learn how to extend the product feed data to include attributes for tax classification, attribute sets, and advanced inventory settings
+description: Learn how to extend the product feed data to include attributes for tax classification, attribute set, and advanced inventory settings
 role: Admin, Developer
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
 
 ---
-# Add tax class, attribute set, and inventory metadata
+# Add tax class, attribute set, and inventory attributes
 
-The Adobe Commerce Extra Product Attributes module extends product data feeds to include additional product attributes from Adobe Commerce product configurations:
+The Adobe Commerce Extra Product Attributes module extends product data feeds. It includes additional product attributes from Adobe Commerce product configurations:
 
 * [Tax classification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
 * [Attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
 * [Inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
-Once installed, the module automatically captures and exports the additional attributes during product synchronization with no additional configuration required.
+Once installed, the module works automatically. It captures and exports the additional attributes during product synchronization. No additional configuration is required.
 
 ## Key benefits
 
@@ -24,7 +24,11 @@ Once installed, the module automatically captures and exports the additional att
 
 ## Features and exported attributes
 
-The module adds three additional attributes to your existing product data feeds, `ac_tax_class`, `ac_attribute_set`, and `ac_inventory`.
+The module adds three additional attributes to your existing product data feeds:
+
+* `ac_tax_class`
+* `ac_attribute_set` 
+* `ac_inventory`
 
 ### 1. Tax class information (`ac_tax_class`)
 
@@ -47,7 +51,7 @@ The module adds three additional attributes to your existing product data feeds,
 
 **Use cases**:
 
-Exporting tax class data to Commerce catalog services makes this data available for applications that support:
+When you export tax class data to Commerce catalog services, this data becomes available for applications that support:
 
 * Tax compliance reporting
 * Integration with external tax calculation services
@@ -76,7 +80,7 @@ Exporting tax class data to Commerce catalog services makes this data available 
 
 **Use cases**:
 
-Exporting attribute set data to Commerce catalog services enables advanced product management features in external systems, such as:
+When you export attribute set data to Commerce catalog services, it enables advanced product management features in external systems. These features include:
 
 * Product template identification
 * Catalog management and organization
@@ -93,7 +97,7 @@ Exporting attribute set data to Commerce catalog services enables advanced produ
 * `manageStock` (boolean): Whether stock management is enabled
 * `cartMinQty` (float): Minimum quantity allowed in shopping cart
 * `cartMaxQty` (float): Maximum quantity allowed in shopping cart
-* `backorders` (string): Backorder policy where value is one of the following:
+* `backorders` (string): Backorder policy. The value is one of the following:
   * `"no"`: No backorders allowed
   * `"allow"`: Allow quantity below 0
   * `"allow_notify"`: Allow quantity below 0 and notify customer
@@ -117,7 +121,7 @@ Exporting attribute set data to Commerce catalog services enables advanced produ
 
 **Use cases**:
 
-Exporting inventory data to Commerce catalog services enables advanced inventory management features in external systems, such as:
+When you export inventory data to Commerce catalog services, it enables advanced inventory management features in external systems. These features include:
 
 * Inventory management system integration
 * Shopping cart validation rules
@@ -126,19 +130,19 @@ Exporting inventory data to Commerce catalog services enables advanced inventory
 
 ## Data export feed enhancement
 
-The Extra Product Attributes module enhances the existing product feeds by integrating the new attribute data automatically.
+The Extra Product Attributes module enhances the existing product feeds. It integrates the new attribute data automatically.
 
 * **Products Feed** (`products`): Enhanced with the three additional attributes
 
-  * Appends the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record
-  * Original product data remains unchanged
+  * Adds the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record
+  * Keeps original product data unchanged
   * Maintains backward compatibility with existing feed consumers
 
 * **Product Attributes Feed** (`productAttributes`): Enhanced with attribute metadata for the new attributes
 
   * Automatically registers metadata for the three new attributes in the `productAttributes` feed
   * Provides attribute configuration details (data types, visibility settings, and so on)
-  * Ensures that external systems understand the new attribute schema
+  * Helps external systems understand the new attribute schema
 
 ## Install the extension
 
@@ -146,10 +150,10 @@ The Extra Product Attributes module enhances the existing product feeds by integ
 
 * PHP 8.1, 8.2, 8.3, or 8.4
 * Adobe Commerce 2.4.4+
-*[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
+* [Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
 * Access to [repo.magento.com](https://repo.magento.com)
 
-  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  To generate keys and obtain the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Access to the command line of the Adobe Commerce application server.
 
 ### Installation steps
@@ -167,7 +171,7 @@ For detailed installation steps, see the following guides:
 
 ## Synchronize product data
 
-After redeployment, the Adobe Commerce instance automatically exports the additional data automatically during product synchronization, or you can use the `resync` CLI commands to synchronize immediately.
+After redeployment, the Adobe Commerce instance exports the additional data automatically during product synchronization. You can also use the `resync` CLI commands to synchronize immediately.
 
 ```shell
 # Resync the products feed (includes the new attributes)
@@ -191,7 +195,7 @@ bin/magento saas:resync --feed=productAttributes
 
 * Verify that inventory settings are configured correctly in the Admin
 * Check for website-specific inventory overrides
-* Ensure that the [Inventory Management module](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) is functioning correctly
+* Verify that the [Inventory Management module](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) is working correctly
 
 For further details, see the [Inventory Management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) in the *Adobe Commerce Merchant Documentation*.
 
@@ -202,5 +206,7 @@ For further details, see the [Inventory Management Guide](https://experienceleag
 
 ### Logging and debugging
 
-The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs. For details, see [Review logs and troubleshoot](troubleshooting-logging.md).
+The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs.
+
+For details, see [Review logs and troubleshoot](troubleshooting-logging.md).
 
