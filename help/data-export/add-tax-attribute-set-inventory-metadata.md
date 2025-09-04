@@ -5,7 +5,7 @@ role: Admin, Developer
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
 
 ---
-# Add tax, attribute set, and inventory metadata
+# Add tax class, attribute set, and inventory metadata
 
 The Adobe Commerce Extra Product Attributes module extends product data feeds to include additional product metadata from Adobe Commerce product configurations:
 
@@ -15,13 +15,9 @@ The Adobe Commerce Extra Product Attributes module extends product data feeds to
 
 Once installed, the module automatically captures and exports this metadata during product synchronization with no additional configuration required.
 
-**Prerequisites**:
-
-This optional module requires the [Adobe Commerce Catalog Data Exporter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/services/data-exporter.html) and is designed for use with Live Search, Catalog Service, and Product Recommendations.
-
 ## Key benefits
 
-* **Automatic enhancement**: Enriches product feeds with tax, attribute set, and inventory data
+* **Automatic enhancement**: Enriches product feeds with tax class, attribute set, and inventory data
 * **Seamless integration**: Provides essential context for external systems and services
 * **Zero configuration**: Works immediately after installation
 * **Real-time updates**: Synchronizes automatically with product changes
@@ -37,7 +33,7 @@ This optional module requires the [Adobe Commerce Catalog Data Exporter](https:/
 *[Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
 * Access to [repo.magento.com](https://repo.magento.com)
 
-  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys).
+  For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Access to the command line of the Adobe Commerce application server.
 
 >[!ENDSHADEBOX]
@@ -48,7 +44,7 @@ Install the latest version of the Extra Product Attributes module (`adobe-commer
 
 >[!BEGINTABS]
 
->[!TAB Cloud infrastructure (PaaS)]
+>[!TAB Cloud Infrastructure (PaaS)]
 
 Use this method to install the [!DNL Extra Product Attributes] module for a Commerce on cloud infrastructure instance.
 
@@ -165,6 +161,8 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Use cases**:
 
+Exporting tax class data to Commerce catalog services makes this data available for applications that support:
+
 * Tax compliance reporting
 * Integration with external tax calculation services
 * Product categorization for accounting systems
@@ -191,6 +189,8 @@ The module adds three additional attributes to your existing product data feeds:
 ```
 
 **Use cases**:
+
+Exporting attribute set data to Commerce catalog services enables advanced product management features in external systems, such as:
 
 * Product template identification
 * Catalog management and organization
@@ -231,6 +231,8 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Use cases**:
 
+Exporting inventory data to Commerce catalog services enables advanced inventory management features in external systems, such as:
+
 * Inventory management system integration
 * Shopping cart validation rules
 * Order fulfillment process optimization
@@ -242,15 +244,15 @@ The Extra Product Attribute module enhances the existing product feeds by integr
 
 * **Products Feed** (`products`): Enhanced with the three additional attributes
 
-  * Adds the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record
-  * Original product data remains unchanged, only additional attributes are appended
+  * Appends the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record
+  * Original product data remains unchanged
   * Maintains backward compatibility with existing feed consumers
 
 * **Product Attributes Feed** (`productAttributes`): Enhanced with attribute metadata for the new attributes
 
   * Automatically registers metadata for the three new attributes in the `productAttributes` feed
   * Provides attribute configuration details (data types, visibility settings, and so on)
-  * Ensures external systems understand the new attribute schema
+  * Ensures that external systems understand the new attribute schema
 
 ### Synchronization commands
 
@@ -270,7 +272,7 @@ bin/magento saas:resync --feed=productAttributes
 
 **Products missing additional attributes:**
 
-* Verify the module is properly installed and enabled
+* Verify that the module is properly installed and enabled
 * Run the resync commands to refresh product data
 * Check that products have valid tax class and attribute set assignments
 
