@@ -25,7 +25,7 @@ Updates include:
 ## 103.4.11 Release
 
 ![New](../assets/new.svg) [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-Added support for additional product metadata to include tax attribute, attribute set, and inventory information in the product feed. Customers that want to include this metadata in their data export feeds must add the Extra Product Attributes module to their Adobe Commerce project. See [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-metadata.md).<!--MDEE-1135-->
+Added support for additional product attributes to include tax class, attribute set, and inventory data from Commerce product configurations in the product feed. Customers that want to include these attributes in product export feeds must add the Extra Product Attributes module to their Adobe Commerce project. See [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-metadata.md).<!--MDEE-1135-->
 ![Fix](../assets/fix.svg) Resolved an issue that caused incorrect synchronization of deleted product updates if an error occurred during a full product index. Now, all product deletions are correctly synchronized even if an error occurs during the indexing process. <!--MDEE-1144-->
 
 ## 103.4.10 Release
