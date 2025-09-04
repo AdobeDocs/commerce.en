@@ -46,7 +46,7 @@ Install the latest version of the Extra Product Attributes module (`adobe-commer
 
 >[!TAB Cloud Infrastructure (PaaS)]
 
-Use this method to install the [!DNL Extra Product Attributes] module for a Commerce on cloud infrastructure instance.
+Use the following instructions to install the [!DNL Extra Product Attributes] module in a Commerce on cloud infrastructure environment.
 
 1. On your local workstation, navigate to the project directory for your Adobe Commerce on cloud infrastructure project.
 
@@ -63,13 +63,13 @@ Use this method to install the [!DNL Extra Product Attributes] module for a Comm
 1. Add the Catalog Service module.
 
    ```bash
-   composer require adobe-commerce/extra-product-attributes --no-update
+   composer require adobe-commerce/module-extra-product-attributes --no-update
    ```
 
 1. Update package dependencies.
 
    ```bash
-   composer update adobe-commerce/extra-product-attributes
+   composer update adobe-commerce/module-extra-product-attributes --with-dependencies
    ```
 
 1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
@@ -91,18 +91,18 @@ Use this method to install the [!DNL Extra Product Attributes] module for a Comm
 
 >[!TAB On-premises]
 
-Follow these instructions to install the [!DNL Extra Product Attributes] for an on-premises instance.
+Follow these instructions to install the [!DNL Extra Product Attributes] module for an Adobe Commerce on-premises project.
 
 1. Use Composer to add the Catalog Service module to your project:
 
    ```bash
-   composer require adobe-commerce/extra-product-attributes --no-update
+   composer require adobe-commerce/module-extra-product-attributes --no-update
    ```
 
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update adobe-commerce/extra-product-attributes
+   composer adobe-commerce/module-extra-product-attributes --with-dependencies
    ```
 
 1. Run the following commands to complete the installation:
@@ -111,13 +111,7 @@ Follow these instructions to install the [!DNL Extra Product Attributes] for an 
    bin/magento setup:upgrade
    ```
 
-   ```shell
-   bin/magento setup:di:compile
-   ```
-
-   ```shell
-   bin/magento setup:static-content:deploy -f
-   ```
+1. Clear the cache.
 
    ```shell
    bin/magento cache:clean
