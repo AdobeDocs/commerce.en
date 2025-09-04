@@ -43,7 +43,7 @@ Add the `adobe-commerce/module-extra-product-attributes` module using Composer:
 composer require adobe-commerce/module-extra-product-attributes
 ```
 
-After redeployment, the Adobe Commerce instance will automatically enrich products with additional attributes during product synchronization. If you want to force synchronization, you can run the following commands:
+After redeployment, the Adobe Commerce instance automatically exports the additional data during product synchronization. You can run the following commands to synchronize immediately.
 
 ```shell
 bin/magento saas:resync --feed=products
