@@ -144,7 +144,7 @@ Use this method to install the [!DNL Extra Product Attributes] for an on-premise
 
 The module adds three additional attributes to your existing product data feeds:
 
-### 1. Tax Class Information (`ac_tax_class`)
+### 1. Tax class information (`ac_tax_class`)
 
 **Purpose**: Provides tax classification information for each product.
 
