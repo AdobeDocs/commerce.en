@@ -24,8 +24,6 @@ Once installed, the module automatically captures and exports this metadata duri
 
 ## Install the extension
 
->[!BEGINSHADEBOX]
-
 **Requirements**
 
 * PHP 8.1, 8.2, 8.3, or 8.4
