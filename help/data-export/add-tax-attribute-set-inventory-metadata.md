@@ -1,5 +1,5 @@
 ---
-title: Extend and customize SaaS data export feed data
+title: Add tax, attribute set, and inventory metadata
 description: Learn how to extend the product schema and feed data to include metadata for tax classification, attribute set information, and advanced inventory settings
 role: Admin, Developer
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
