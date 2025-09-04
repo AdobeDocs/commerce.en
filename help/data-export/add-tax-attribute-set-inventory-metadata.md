@@ -146,7 +146,7 @@ The module adds three additional attributes to your existing product data feeds:
 
 ### 1. Tax class information (`ac_tax_class`)
 
-**Purpose**: Provides tax classification information for each product.
+**Purpose**: Provides tax classification information for each product
 
 **Data Format**: String value containing the tax class name
 
@@ -171,7 +171,7 @@ The module adds three additional attributes to your existing product data feeds:
 
 ### 2. Attribute set information (`ac_attribute_set`)
 
-**Purpose**: Identifies which attribute set is assigned to each product.
+**Purpose**: Identifies which attribute set is assigned to each product
 
 **Data Format**: String value containing the attribute set name
 
@@ -198,7 +198,7 @@ The module adds three additional attributes to your existing product data feeds:
 
 ### 3. Advanced inventory data (`ac_inventory`)
 
-**Purpose**: Provides inventory management settings for each product.
+**Purpose**: Provides inventory management settings for each product
 
 **Data Format**: JSON-encoded string containing inventory configuration
 
@@ -238,11 +238,11 @@ The module adds three additional attributes to your existing product data feeds:
 
 ### Data export feed enhancement
 
-The Extra Product Attribute module enhances the following existing product feeds by integrating the new attribute data automatically.
+The Extra Product Attribute module enhances the existing product feeds by integrating the new attribute data automatically.
 
 * **Products Feed** (`products`): Enhanced with the three additional attributes
 
-  * The module adds the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record in the existing `products` feed
+  * Adds the `ac_tax_class`, `ac_attribute_set`, and `ac_inventory` attributes to each product record
   * Original product data remains unchanged, only additional attributes are appended
   * Maintains backward compatibility with existing feed consumers
 
@@ -291,13 +291,3 @@ For further details, see the [Inventory Management Guide](https://experienceleag
 
 The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs. For details, see [Review logs and troubleshoot](troubleshooting-logging.md).
 
-## Support and compatibility
-
-This module is designed to work seamlessly with the Adobe Commerce data export infrastructure and is compatible with:
-
-* Multi-store and multi-website configurations
-* Custom product types and attribute sets
-* Third-party inventory management extensions
-* External PIM and ERP integrations
-
-For additional support, contact your Adobe Commerce support team.
