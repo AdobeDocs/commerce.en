@@ -150,7 +150,7 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Data Format**: String value containing the tax class name
 
-**Example Output**:
+**Example output**:
 
 ```json
 {
@@ -163,19 +163,19 @@ The module adds three additional attributes to your existing product data feeds:
 }
 ```
 
-**Use Cases**:
+**Use cases**:
 
 * Tax compliance reporting
 * Integration with external tax calculation services
 * Product categorization for accounting systems
 
-### 2. Attribute Set Information (`ac_attribute_set`)
+### 2. Attribute set information (`ac_attribute_set`)
 
 **Purpose**: Identifies which attribute set is assigned to each product.
 
 **Data Format**: String value containing the attribute set name
 
-**Example Output**:
+**Example output**:
 
 ```json
 {
@@ -190,19 +190,19 @@ The module adds three additional attributes to your existing product data feeds:
 }
 ```
 
-**Use Cases**:
+**Use cases**:
 
 * Product template identification
 * Catalog management and organization
 * Third-party system integration requiring attribute set context
 
-### 3. Advanced Inventory Data (`ac_inventory`)
+### 3. Advanced inventory data (`ac_inventory`)
 
 **Purpose**: Provides inventory management settings for each product.
 
 **Data Format**: JSON-encoded string containing inventory configuration
 
-**Included Fields**:
+**Included fields**:
 
 * `manageStock` (boolean): Whether stock management is enabled
 * `cartMinQty` (float): Minimum quantity allowed in shopping cart
@@ -214,7 +214,7 @@ The module adds three additional attributes to your existing product data feeds:
 * `enableQtyIncrements` (boolean): Whether quantity increments are enabled
 * `qtyIncrements` (float): Required quantity increment value
 
-**Example Output**:
+**Example output**:
 
 ```json
 {
@@ -229,14 +229,14 @@ The module adds three additional attributes to your existing product data feeds:
 }
 ```
 
-**Use Cases**:
+**Use cases**:
 
 * Inventory management system integration
 * Shopping cart validation rules
 * Order fulfillment process optimization
 * Customer experience customization
 
-### Data Export feed enhancement
+### Data export feed enhancement
 
 The Extra Product Attribute module enhances the following existing product feeds by integrating the new attribute data automatically.
 
@@ -287,11 +287,11 @@ For further details, see the [Inventory Management Guide](https://experienceleag
 * Monitor export process performance after installation
 * Consider scheduling resyncs during low-traffic periods
 
-### Logging and Debugging
+### Logging and debugging
 
 The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs. For details, see [Review logs and troubleshoot](troubleshooting-logging.md).
 
-## Support and Compatibility
+## Support and compatibility
 
 This module is designed to work seamlessly with the Adobe Commerce data export infrastructure and is compatible with:
 
