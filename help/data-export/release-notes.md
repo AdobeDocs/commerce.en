@@ -22,6 +22,12 @@ Updates include:
 
 ## Current major version
 
+## 103.4.11 Release
+
+![New](../assets/new.svg) [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+Added support for additional product attributes to include tax class, attribute set, and inventory data from Commerce product configurations in the product feed. Customers that want to include these attributes in product export feeds must add the Extra Product Attributes module to their Adobe Commerce project. See [Add tax class, attribute set, and inventory attributes](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
+![Fix](../assets/fix.svg) Resolved an issue that caused incorrect synchronization of deleted product updates if an error occurred during a full product index. Now, all product deletions are correctly synchronized even if an error occurs during the indexing process. <!--MDEE-1144-->
+
 ## 103.4.10 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where the wrong type (`text` instead of `OBJECT`) was returned for some dynamically created attributes . Now, the correct type information is consistently returned eliminating the need for manual resyncs or workarounds.<!--MDEE-1131-->

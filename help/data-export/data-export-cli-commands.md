@@ -150,7 +150,7 @@ Available feeds:
 
 >[!NOTE]
 >
->The feeds available in your environment might be different depending on which modules are installed in your Adobe Commerce environemt.
+>The feeds available in your environment might be different depending on which modules are installed in your Adobe Commerce environment.
 
 **Example:**
 
