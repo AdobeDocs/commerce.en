@@ -207,7 +207,7 @@ The module adds three additional attributes to your existing product data feeds:
 * `manageStock` (boolean): Whether stock management is enabled
 * `cartMinQty` (float): Minimum quantity allowed in shopping cart
 * `cartMaxQty` (float): Maximum quantity allowed in shopping cart
-* `backorders` (string): Backorder policy, Value is one of the following:
+* `backorders` (string): Backorder policy where value is one of the following:
   * `"no"`: No backorders allowed
   * `"allow"`: Allow quantity below 0
   * `"allow_notify"`: Allow quantity below 0 and notify customer
