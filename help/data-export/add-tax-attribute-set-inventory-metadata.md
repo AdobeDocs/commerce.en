@@ -95,7 +95,7 @@ Use this method to install the [!DNL Extra Product Attributes] module for a Comm
 
 >[!TAB On-premises]
 
-Use this method to install the [!DNL Extra Product Attributes] for an on-premises instance.
+Follow these instructions to install the [!DNL Extra Product Attributes] for an on-premises instance.
 
 1. Use Composer to add the Catalog Service module to your project:
 
