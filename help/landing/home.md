@@ -198,4 +198,4 @@ Adobe provides a collection of Commerce services, integration services, and data
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-08-29 15:18:45 -->
+<!-- Last updated from includes: 2025-09-03 16:10:23 -->
