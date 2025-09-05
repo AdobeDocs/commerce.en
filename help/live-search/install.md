@@ -588,4 +588,4 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
 
 ### Cookies
 
-[!DNL Live Search] collects user interaction data as part of its base functionality and cookies are used to store this data. When collecting any user information, the user must agree to store cookies. [!DNL Live Search] and [!DNL Product Recommendations] share the data stream and therefore the same cookie mechanism. Read more about it in [Handle Cookie Restrictions](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/setting-cookie).
+[!DNL Live Search] collects user interaction data to improve search functionality and stores this information in browser cookies. This data collection requires user consent when cookie restrictions are enabled. [!DNL Live Search] and [!DNL Product Recommendations] share the same data collection mechanism and cookie handling. For more information about cookie restrictions and privacy compliance, see [Handle Cookie Restrictions](../product-recommendations/setting-cookie.md).
