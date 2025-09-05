@@ -31,7 +31,7 @@ The onboarding process centers on these key components:
 Select your role to find resources to get started with your onboarding process:
 
 * [System administrator](#system-administrator)
-* [Merchant](#merchantcontent-manager)
+* [Merchant](#merchant)
 * [Developer](#developer)
 
 ### System administrator
