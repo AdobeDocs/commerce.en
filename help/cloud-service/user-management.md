@@ -187,8 +187,16 @@ After adding a user to AEM Assets, they can access the [!DNL Experience Manager]
 1. In the [!UICONTROL **Quick Access**] section, click [!UICONTROL **Experience Manager**] or click [!UICONTROL **View All**] if you do not see [!UICONTROL **Experience Manager**]. Then click [!UICONTROL **Cloud Manager**] or navigate directly to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
 
 1. From the [!UICONTROL **Cloud Manager**] page, click [!UICONTROL **Add Program**] to get started.
- 
-Follow the [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"} to continue onboarding.
 
+1. [Create a new program](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
+
+1. [Create a new environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
+
+1. After creating the environment, return to the [Admin Console](https://adminconsole.adobe.com){target="_blank"} and select [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
+
+1. You should now see new product profiles. Select that contains `- author -`. For example, `<environment-name> - author - <program-id> - <environment-id>`.
+
+1. [Add users to the product profile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
+ 
 * [Configure AEM Assets to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
 * [Integrate AEM Assets with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
