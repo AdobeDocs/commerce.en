@@ -19,6 +19,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 * **[Adobe Experience Cloud](https://experience.adobe.com/)** - Your central entry point to all [!DNL Adobe Commerce] products at [experience.adobe.com](https://experience.adobe.com/)
   * Click [!UICONTROL **Commerce**] under [!UICONTROL **Quick Access**] to open the Commerce Cloud Manager
 * **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - Create and manage instances, access API URLs, and your Commerce Admin
+* **[Adobe Admin Console](https://adminconsole.adobe.com/)** - Manage users and roles
 * **Commerce Admin** - Manage products, orders, customers, and store configuration
 * **[Storefront powered by Edge Delivery Services](./storefront.md)** - Create and customize customer-facing storefront using a composable, high-performance system that delivers exceptional speed, SEO, and user experience for merchants and developers
 * **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Build custom integrations using App Builder, along with other extensibility tools like the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) and [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
