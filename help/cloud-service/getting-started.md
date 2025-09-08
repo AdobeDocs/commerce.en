@@ -12,9 +12,9 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 [!DNL Adobe Commerce as a Cloud Service] is a cloud-native commerce platform that provides flexibility, scalability, and efficiency for delivering digital commerce experiences. This SaaS offering is a fully managed, versionless platform that provides a seamless upgrade experience without the need for manual intervention.
 
 
-## Key elements
+## Key components
 
-[!DNL Adobe Commerce as a Cloud Service] consists of the following key elements:
+[!DNL Adobe Commerce as a Cloud Service] consists of the following components:
 
 * **[Adobe Experience Cloud](https://experience.adobe.com/)** - Your central entry point to all [!DNL Adobe Commerce] products at [experience.adobe.com](https://experience.adobe.com/)
   * Click [!UICONTROL **Commerce**] under [!UICONTROL **Quick Access**] to open the Commerce Cloud Manager
