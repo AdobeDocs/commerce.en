@@ -53,7 +53,6 @@ As a merchant, you will focus on managing products, orders, and storefront conte
 |------|-------------|----------|
 | Access your instance | Log into the Commerce Admin to manage your store | [Getting started - access an instance](./getting-started.md#access-an-instance) |
 | Explore use cases | Learn practical business scenarios and workflows | [Use Cases](./use-cases.md) |
-| Configure your storefront | Learn about how to set up your storefront | [Storefront setup](./storefront.md) |
 | Import catalog | Learn about how to import your product data to the platform | [Getting started - import catalog](./getting-started.md#import-your-catalog) |
 
 ### Developer
@@ -65,6 +64,7 @@ As a developer, you will need to know how to build custom integrations and exten
 | Understand architecture | Learn about the platform's extensibility and APIs | [Overview - Developer platform](overview.md#developer-platform) |
 | Set up a development environment | Create a sandbox instance for development and testing | [Getting started - create an instance](getting-started.md#create-an-instance) |
 | Build storefront | Learn how to set up and customize the Commerce Storefront | [Storefront setup](./storefront.md) |
+| Configure your storefront | Learn about how to set up your storefront | [Storefront setup](./storefront.md) |
 | Explore integration options | Learn about App Builder, API Mesh, and other extensibility tools you have access to | [Overview - Developer platform](overview.md#developer-platform) |
 
 ## Onboarding workflow
