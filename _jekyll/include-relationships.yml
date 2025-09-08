@@ -1,11 +1,11 @@
 ---
 metadata:
-  last_updated: 2025-09-03 16:08:47 CDT
+  last_updated: 2025-09-04 15:46:51 CDT
   description: Index of main files and their included files for automatic timestamp
     updates
   total_relationships: 1
   auto_discovered: true
-  discovery_date: 2025-09-03 16:08:47 CDT
+  discovery_date: 2025-09-04 15:46:51 CDT
 relationships:
   landing/home.md:
   - "/help/_includes/templated/whats-new.md"
