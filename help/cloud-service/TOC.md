@@ -8,7 +8,6 @@ recommendations: noDisplay, noCatalog
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Onboarding](onboarding.md)
 - [Feature comparison](feature-comparison.md)
 - [Getting started](getting-started.md)
 - [User management](user-management.md)
