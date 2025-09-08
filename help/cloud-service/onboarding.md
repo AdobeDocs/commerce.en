@@ -63,7 +63,7 @@ As a developer, you will need to know how to build custom integrations and exten
 | Task | Description | Resource |
 |------|-------------|----------|
 | Understand architecture | Learn about the platform's extensibility and APIs | [Overview - Developer platform](overview.md#developer-platform) |
-| Set up a development environment | Create a sandbox instances for development and testing | [Getting started - create an instance](getting-started.md#create-an-instance) |
+| Set up a development environment | Create a sandbox instance for development and testing | [Getting started - create an instance](getting-started.md#create-an-instance) |
 | Build storefront | Learn how to set up and customize the Commerce Storefront | [Storefront setup](./storefront.md) |
 | Explore integration options | Learn about App Builder, API Mesh, and other extensibility tools you have access to | [Overview - Developer platform](overview.md#developer-platform) |
 
