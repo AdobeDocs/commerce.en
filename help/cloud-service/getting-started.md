@@ -23,20 +23,20 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 * **[Storefront powered by Edge Delivery Services](./storefront.md)** - Create and customize customer-facing storefront using a composable, high-performance system that delivers exceptional speed, SEO, and user experience for merchants and developers
 * **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Build custom integrations using App Builder, along with other extensibility tools like the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) and [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 
-## Onboarding
+## Setup and management
 
-Onboarding is the process where your system administrator, merchants, and developers, set up [!DNL Adobe Commerce as a Cloud Service] for your organization, including provisioning cloud resources and assigning users to appropriate roles based on their responsibilities.
+As part of the [!DNL Adobe Commerce as a Cloud Service] setup process, your system administrator, merchants, and developers configure access and resources for your organization, including provisioning cloud resources and assigning users to appropriate roles based on their responsibilities.
 
-### Onboarding workflow
+### Setup and management workflow
 
 As a combined group, the system administrator, merchant, and developer need to follow these essential steps (in order)to get your Commerce instance up and running:
 
-1. **All Users**: [Create an instance](#create-an-instance) (start with sandbox)
+1. **All Users**: [Create an instance](#create-an-instance)
 1. **System Administrator**: [Add users and assign roles](user-management.md#add-users-and-admins)
 1. **Merchants**: [Access the Commerce Admin](#access-an-instance) and [import your catalog](#import-your-catalog)
 1. **Developers**: [Set up your storefront](storefront.md) and explore the [developer platform](overview.md#developer-platform)
 
-### Role-based onboarding tasks
+### Role-based setup and management tasks
 
 Select a tab below to see high-level workflow graphics for the corresponding role:
 
@@ -56,7 +56,7 @@ This diagram provides a high-level overview of how developers create integration
 
 >[!ENDTABS]
 
-Select your role to find resources to get started with your onboarding process:
+Select your role to find resources to get started with your setup process:
 
 >[!BEGINTABS]
 
@@ -73,7 +73,7 @@ As a system administrator, you are responsible for setting up the organization a
 
 >[!TAB Merchant]
 
-As a merchant, you will focus on managing products, orders, and storefront content.
+As a merchant, you focus on managing products, orders, and storefront content.
 
 | Task | Description | Resource |
 |------|-------------|----------|
@@ -83,7 +83,7 @@ As a merchant, you will focus on managing products, orders, and storefront conte
 
 >[!TAB Developer]
 
-As a developer, you will need to know how to build custom integrations and extend platform functionality.
+As a developer, you need to know how to build custom integrations and extend platform functionality.
 
 | Task | Description | Resource |
 |------|-------------|----------|
@@ -95,9 +95,9 @@ As a developer, you will need to know how to build custom integrations and exten
 
 >[!ENDTABS]
 
-### What is next
+### Next steps
 
-After completing your role-specific onboarding tasks:
+After completing your role-specific setup tasks:
 
 * **System Administrators**: Review [shared responsibility](shared-responsibility.md) guidelines
 * **Merchants**: Explore [use cases](use-cases.md) for common business scenarios
