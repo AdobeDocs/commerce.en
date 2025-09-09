@@ -15,7 +15,7 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce as
 >
 >To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 > 
-> You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product to the user group.
+> You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product to the user group.
 
 ## Understanding roles
 
@@ -38,7 +38,7 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 1. Select your organization.
 
-1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product.
+1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
 
     ![select product](./assets/backend.png){width="600" zoomable="yes"}
 
@@ -60,7 +60,7 @@ The following instructions provide information on how to add users and developer
 
 1. Select your organization.
 
-1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce as a Cloud Service – Backend**] product.
+1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
 
     ![select product](./assets/backend.png){width="600" zoomable="yes"}
 
@@ -130,3 +130,75 @@ The following list describes the resources that default roles have permission to
 **Admins**
 
 Admins have access to all permissions.
+
+## Add a user to AEM Assets
+
+The following setup is required for Adobe Experience Manager Assets and Product Visuals powered by AEM Assets users.
+
+If your account has access to [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], use the following process:
+
+>[!NOTE]
+>
+>Users without appropriate assets permissions will be unable to access advanced features of [!DNL AEM Assets], such as [AI image generation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}, [generated variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} and more.
+
+>[!TIP]
+>
+>To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+>
+>You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] product to the user group.
+
+1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
+
+1. Select your organization.
+
+1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] product.
+
+    ![select product](./assets/backend-aem.png){width="600" zoomable="yes"}
+
+1. Select the [!UICONTROL **Users**] tab.
+
+1. Click [!UICONTROL **Add User**].
+
+1. Enter the username or email address of the users you want to add.
+
+1. Click [!UICONTROL **Add Product**].
+
+1. Select the following product profiles, which are necessary to integrate AEM Assets with Commerce:
+
+  * Business Owner - Required to create and manage programs.
+  * Deployment Manager - Required to deploy code from your repositories to AEM.
+
+  If you are adding a developer who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
+
+  >[!NOTE]
+  >
+  >For more information on how these permissions effect your access to AEM Assets, refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+
+1. Click [!UICONTROL **Apply**].
+
+1. Click [!UICONTROL **Save**].
+
+To confirm the user has access, click on the user's name to open their profile page. In the [!UICONTROL **Products**] section, it should say [!UICONTROL **Completed**] under the [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] product. It may take a few seconds after adding the user to see the status updated on their profile. Refresh the page to see the updated status.
+
+![product access](./assets/product-access.png){width="600" zoomable="yes"}
+
+## Access the Experience Manager interface
+
+After adding a user to AEM Assets, they can access the [!DNL Experience Manager] interface by navigating to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}.
+
+1. In the [!UICONTROL **Quick Access**] section, click [!UICONTROL **Experience Manager**] or click [!UICONTROL **View All**] if you do not see [!UICONTROL **Experience Manager**]. Then click [!UICONTROL **Cloud Manager**] or navigate directly to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
+
+1. From the [!UICONTROL **Cloud Manager**] page, click [!UICONTROL **Add Program**] to get started.
+
+1. [Create a new program](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
+
+1. [Create a new environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
+
+1. After creating the environment, return to the [Admin Console](https://adminconsole.adobe.com){target="_blank"} and select [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
+
+1. You should now see new product profiles. Select that contains `- author -`. For example, `<environment-name> - author - <program-id> - <environment-id>`.
+
+1. [Add users to the product profile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
+ 
+* [Configure AEM Assets to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Integrate AEM Assets with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
