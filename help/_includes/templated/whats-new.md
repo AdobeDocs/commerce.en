@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 4, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added documentation for the optional <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Extra Product Attributes module</a>. When this module is installed in an Adobe Commerce environment, the Data Export process automatically exports tax class, attribute set, and inventory metadata from the Commerce product configuration to the <code class="language-plaintext highlighter-rouge">products</code> and <code class="language-plaintext highlighter-rouge">product attributes</code> feeds.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 21, 2025
 
 <table style="table-layout:auto;">
