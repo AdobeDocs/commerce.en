@@ -165,14 +165,14 @@ If your account has access to [Adobe Experience Manager as a Cloud Service](http
 
 1. Select the following product profiles, which are necessary to integrate AEM Assets with Commerce:
 
-  * Business Owner - Required to create and manage programs.
-  * Deployment Manager - Required to deploy code from your repositories to AEM.
+    * Business Owner - Required to create and manage programs.
+    * Deployment Manager - Required to deploy code from your repositories to AEM.
 
-  If you are adding a developer who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
+    If you are adding a developer who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
 
-  >[!NOTE]
-  >
-  >For more information on how these permissions effect your access to AEM Assets, refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+    >[!NOTE]
+    >
+    >For more information on how these permissions effect your access to AEM Assets, refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
 1. Click [!UICONTROL **Apply**].
 
