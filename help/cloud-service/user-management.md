@@ -131,9 +131,9 @@ The following list describes the resources that default roles have permission to
 
 Admins have access to all permissions.
 
-## Add a user to AEM Assets
+## Add a user to AEM Assets or Product Visuals
 
-The following setup is required for Adobe Experience Manager Assets and Product Visuals powered by AEM Assets users.
+The following setup is required for [!DNL Adobe Experience Manager Assets] and [!DNL Product Visuals powered by AEM Assets] users.
 
 If your account has access to [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], use the following process:
 
@@ -165,14 +165,14 @@ If your account has access to [Adobe Experience Manager as a Cloud Service](http
 
 1. Select the following product profiles, which are necessary to integrate AEM Assets with Commerce:
 
-  * Business Owner - Required to create and manage programs.
-  * Deployment Manager - Required to deploy code from your repositories to AEM.
+    * Business Owner - Required to create and manage programs.
+    * Deployment Manager - Required to deploy code from your repositories to AEM.
 
-  If you are adding a developer who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
+    If you are adding a developer who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
 
-  >[!NOTE]
-  >
-  >For more information on how these permissions effect your access to AEM Assets, refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+    >[!NOTE]
+    >
+    >For more information on how these permissions effect your access to AEM Assets, refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
 1. Click [!UICONTROL **Apply**].
 
