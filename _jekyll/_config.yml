@@ -1,0 +1,7 @@
+---
+repo: AdobeDocs/commerce.en
+url: https://experienceleague.adobe.com/en/docs/commerce/user-guides/home
+exclude:
+  - Rakefile
+  - tmp
+  - rakelib

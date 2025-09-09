@@ -1,37 +1,17 @@
 ---
-updated: Tue Sep 2 14:53:23 2025
+updated: Mon Sep 8 09:32:36 2025
 entries:
-- description: You can now use the [site creator tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront)
-    to set up your storefront without using the CLI.
-  versions: ''
-  type: major-update
-  date: August 21, 2025
-  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197
-  merge_commit: bf3954af26fba0aa943261a0673166c0537e692e
-  contributor: jhoover
-  membership:
-  labels:
-  - core-saas
-  - major-update
-- description: Added a topic about how to add [custom attributes to profiles](https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities).
+- description: Added documentation for the optional [Extra Product Attributes module](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes).
+    When this module is installed in an Adobe Commerce environment, the Data Export
+    process automatically exports tax class, attribute set, and inventory metadata
+    from the Commerce product configuration to the `products` and `product attributes`
+    feeds.
   versions: ''
   type: new-topic
-  date: August 7, 2025
-  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158
-  merge_commit: 403b15368c52f3965e65a9175c82c2f6cd1773bb
-  contributor: emarr
+  date: September 4, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/215
+  merge_commit: a77c6bd98622488214d89a077e1dfaa8338108fd
+  contributor: meker
   membership:
   labels:
   - new-topic
-- description: Adds extended guidance for configuring your storefront after using
-    the Adobe Commerce as a Cloud Service storefront scaffolder.
-  versions: ''
-  type: feedback
-  date: August 6, 2025
-  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/174
-  merge_commit: ad0c36006a01491aee1ca1643c6a3ab63f39f7e4
-  contributor: jhoover
-  membership:
-  labels:
-  - feedback
-  - editorial
