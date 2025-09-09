@@ -11,7 +11,6 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 [!DNL Adobe Commerce as a Cloud Service] is a cloud-native commerce platform that provides flexibility, scalability, and efficiency for delivering digital commerce experiences. This SaaS offering is a fully managed, versionless platform that provides a seamless upgrade experience without the need for manual intervention.
 
-
 ## Key components
 
 [!DNL Adobe Commerce as a Cloud Service] consists of the following components:
@@ -37,15 +36,23 @@ As a combined group, the system administrator, merchant, and developer need to f
 1. **Merchants**: [Access the Commerce Admin](#access-an-instance) and [import your catalog](#import-your-catalog)
 1. **Developers**: [Set up your storefront](storefront.md) and explore the [developer platform](overview.md#developer-platform)
 
+#### AEM Assets and Product Visuals workflow
+
+The following steps are required to integrate [!DNL Adobe Experience Manager Assets] or [!DNL Product Visuals powered by AEM Assets] with [!DNL Adobe Commerce as a Cloud Service]:
+
+1. **System Administrator**: [Add users to the AEM Assets and Product Visuals product profile](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **Developers**: [Integrate AEM Assets and Product Visuals](../aem-assets-integration/overview.md)
+1. **Merchants**: [Access your AEM Assets and Product Visuals](./user-management.md#access-the-experience-manager-interface)
+
 ### Role-based setup and management tasks
 
 Select a tab below to see high-level workflow graphics for the corresponding role:
 
 >[!BEGINTABS]
 
->[!TAB Administrator and merchant workflow]
+>[!TAB System administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how system administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 ![[!DNL Adobe Commerce as a Cloud Service] merchant flow diagram](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -71,6 +78,7 @@ As a system administrator, you are responsible for setting up the organization a
 | Compare features | Understand the differences between Cloud Service and other Adobe Commerce offerings | [Feature comparison](feature-comparison.md) |
 | Create an instance | Provision sandbox and production environments | [Create an instance](#create-an-instance) |
 | Set up user management | Add users, assign roles, and manage permissions | [User Management](user-management.md) |
+| Set up AEM Assets and Product Visuals (optional) | Add users, assign roles, and manage permissions | [User Management](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Merchant]
 
@@ -81,6 +89,8 @@ As a merchant, you focus on managing products, orders, and storefront content.
 | Access your instance | Log into the Commerce Admin to manage your store | [Access an instance](#access-an-instance) |
 | Explore use cases | Learn practical business scenarios and workflows | [Use Cases](./use-cases.md) |
 | Import catalog | Learn about how to import your product data to the platform | [Import your catalog](#import-your-catalog) |
+| Access AEM Assets and Product Visuals (optional) | Access the experience manager to start using AEM Assets and Product Visuals | [Access the Experience Manger interface](./user-management.md#access-the-experience-manager-interface) |
+
 
 >[!TAB Developer]
 
@@ -93,6 +103,7 @@ As a developer, you need to know how to build custom integrations and extend pla
 | Build storefront | Learn how to set up and customize the Commerce Storefront | [Storefront setup](./storefront.md) |
 | Configure your storefront | Learn about how to set up your storefront | [Storefront setup](./storefront.md) |
 | Explore integration options | Learn about App Builder, API Mesh, and other extensibility tools you have access to | [Overview - Developer platform](overview.md#developer-platform) |
+| Integrate AEM Assets and Product Visuals (optional) | Learn how to integrate AEM Assets and Product Visuals with Adobe Commerce | [AEM Assets integration](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 

@@ -131,9 +131,9 @@ The following list describes the resources that default roles have permission to
 
 Admins have access to all permissions.
 
-## Add a user to AEM Assets
+## Add a user to AEM Assets or Product Visuals
 
-The following setup is required for Adobe Experience Manager Assets and Product Visuals powered by AEM Assets users.
+The following setup is required for [!DNL Adobe Experience Manager Assets] and [!DNL Product Visuals powered by AEM Assets] users.
 
 If your account has access to [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], use the following process:
 
