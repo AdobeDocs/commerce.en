@@ -21,7 +21,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 * **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - Create and manage instances, access API URLs, and your Commerce Admin
 * **[Adobe Admin Console](https://adminconsole.adobe.com/)** - Manage users and roles
 * **Commerce Admin** - Manage products, orders, customers, and store configuration
-* **[Storefront powered by Edge Delivery Services](./storefront.md)** - Create and customize customer-facing storefront using a composable, high-performance system that delivers exceptional speed, SEO, and user experience for merchants and developers
+* **[Storefront powered by Edge Delivery Services](./storefront.md)** - Create and customize a customer-facing storefront using a composable, high-performance system that delivers exceptional speed, SEO, and user experience for merchants and developers
 * **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Build custom integrations using App Builder, along with other extensibility tools like the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) and [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Setup and management
@@ -30,7 +30,7 @@ As part of the [!DNL Adobe Commerce as a Cloud Service] setup process, your syst
 
 ### Setup and management workflow
 
-As a combined group, the system administrator, merchant, and developer need to follow these essential steps (in order)to get your Commerce instance up and running:
+As a combined group, the system administrator, merchant, and developer need to follow these essential steps to get your Commerce instance up and running:
 
 1. **All Users**: [Create an instance](#create-an-instance)
 1. **System Administrator**: [Add users and assign roles](user-management.md#add-users-and-admins)
@@ -68,7 +68,7 @@ As a system administrator, you are responsible for setting up the organization a
 | Task | Description | Resource |
 |------|-------------|----------|
 | Understand the platform | Learn about Adobe Commerce as a Cloud Service architecture and benefits | [Overview](overview.md) |
-| Compare features | Understand differences between Cloud Service and other Adobe Commerce offerings | [Feature comparison](feature-comparison.md) |
+| Compare features | Understand the differences between Cloud Service and other Adobe Commerce offerings | [Feature comparison](feature-comparison.md) |
 | Create an instance | Provision sandbox and production environments | [Create an instance](#create-an-instance) |
 | Set up user management | Add users, assign roles, and manage permissions | [User Management](user-management.md) |
 
@@ -114,7 +114,7 @@ The following sections describe the basic processes you need to complete to get 
 >
 >Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce as a Cloud Service] product. See [Add users and admins](./user-management.md#add-users-and-admins) for more information.
 
-[!DNL Adobe Commerce as a Cloud Service] instances use a credit-based system. You can create multiple instances, but each instance requires a relative amount of credits. The amount of credits you have initially depends on your subscription.
+[!DNL Adobe Commerce as a Cloud Service] instances use a credit-based system. You can create multiple instances, but each instance requires available credits. The number of credits you have initially depends on your subscription.
 
 1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
