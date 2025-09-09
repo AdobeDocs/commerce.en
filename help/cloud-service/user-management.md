@@ -133,6 +133,8 @@ Admins have access to all permissions.
 
 ## Add a user to AEM Assets
 
+The following setup is required for Adobe Experience Manager Assets and Product Visuals powered by AEM Assets users.
+
 If your account has access to [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], use the following process:
 
 >[!NOTE]
@@ -166,7 +168,7 @@ If your account has access to [Adobe Experience Manager as a Cloud Service](http
   * Business Owner - Required to create and manage programs.
   * Deployment Manager - Required to deploy code from your repositories to AEM.
 
-  If you are adding a developer, who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
+  If you are adding a developer who does not need access to the Cloud Manager or Experience Manager interfaces, you can instead assign them the developer role.
 
   >[!NOTE]
   >
