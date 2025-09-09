@@ -17,6 +17,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The maximum number of results that can be paginated is 10,000. To ensure that shoppers do not have to use deep pagination when a category or search result includes a large number of products, provide meaningful ways to filter products.
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
+- The search apapter has been deprecated as of Live Search 4.4.0.
 - Custom product types are not supported.
 - Custom attributes created programmaticaly with `"is_user_defined": false` are not supported.
 - You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
