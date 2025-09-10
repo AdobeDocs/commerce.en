@@ -73,7 +73,7 @@ Commerce Storefront is fully headless with a decoupled architecture that provide
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
 - [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-- [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [Product Recommendations](../optimizer/merchandising/recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
 - [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
