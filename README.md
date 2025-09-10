@@ -66,3 +66,12 @@ After cloning the repository, run:
 - No manual optimization required
 
 For detailed setup instructions, troubleshooting, and configuration, see [`.githooks/README.md`](.githooks/README.md).
+
+## Available rake tasks
+
+This repository uses rake tasks provided by the `adobe-comdox-exl-rake-tasks` gem. To see all available tasks, run:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```

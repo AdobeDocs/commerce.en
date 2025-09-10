@@ -30,7 +30,7 @@ You can update any of the installed commerce data export modules by using Compos
 1. From the command line, update the module using Composer:
 
    ```bash
-   composer require magento/module-saas-price:103.3.1 --with-all-dependencies
+   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
    ```
 
 If the Commerce instance is deployed on Cloud infrastructure, update the extension from your cloud project directory. See [Upgrade an extension](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) in the _Adobe Commerce on Cloud Infrastructure Guide_.
