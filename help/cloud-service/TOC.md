@@ -14,7 +14,11 @@ recommendations: noDisplay, noCatalog
 - [Storefront](storefront.md)
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
-- [Shared responsibility](shared-responsibility.md)
+- Security {#security}
+  - [Overview](security/overview.md)
+  - [Shared responsibility](security/shared-responsibility.md)
+  - [Identity and access management](security/access-control.md)
+  - [Compliance and certifications](security/compliance.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
