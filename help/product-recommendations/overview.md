@@ -2,6 +2,7 @@
 title: Introduction to [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement.'
 recommendations: noCatalog
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 ---
 # Introduction to [!DNL Product Recommendations]
