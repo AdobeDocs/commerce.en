@@ -67,7 +67,7 @@ In Experience Platform Edge:
 
 ## Handle event overrides (custom attributes)
 
-For any event with a set `customContext`, the collector overrides joins fields set in the relevant contexts with fields in `customContext`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
+For any event set with a `customContext`, the collector overrides or extends fields in the event payload from the fields in the `custom context`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
 
 Event overrides are only applicable when forwarding to Experience Platform. They are not applied to Adobe Commerce and Sensei analytics events. The Adobe Commerce Events Collector [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) provides additional info.
 
