@@ -19,7 +19,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 ### Enhancements
 
 - Upgraded Adobe Commerce as a Cloud Service to contain all changes from Adobe Commerce PaaS `2.4.8-p2`. <!-- CCSAAS-3111 -->
-- Changed **Product Admin** role in the Admin Console to automatically update user roles in the Commerce Admin. <!-- CCSAAS-3012 -->
+- Changed **Product Admin** role in the Admin Console to automatically update user access to the Commerce Admin. <!-- CCSAAS-3012 -->
 - Enabled uploading category images using REST API for categories. <!-- CCSAAS-3250 -->
 
 #### Custom attributes
