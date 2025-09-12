@@ -83,7 +83,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### Example 1 - adding `productCategories`
+### Example 1
+
+This example adds custom context when publishing the event.
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -101,7 +103,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### Example 2 - adding custom context before publishing event
+### Example 2
+
+This example add custom context before publishing the event.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -123,7 +127,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### Example 3 - the custom context set in the publisher overwrites the custom context previously set in Adobe Client Data Layer.
+### Example 3
+
+This example sets the custom context in the publisher and overwrites the custom context previously set in the Adobe Client Data Layer.
 
 In this example, the `pageView` event will have **Custom Page Name 2** in the `web.webPageDetails.name` field.
 
@@ -147,7 +153,9 @@ mse.publish.pageView({
 });
 ```
 
-### Example 4 - adding custom context to `productListItems` with events with multiple products
+### Example 4
+
+This example adds custom context to `productListItems` events with multiple products.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -169,6 +177,33 @@ mse.context.setCustom({
 
 mse.publish.shoppingCartView();
 ```
+
+Luma-based stores:
+
+In Luma-based stores, publishing events is implemented natively. Therefore, you can set custom data by extending `customContext`.
+
+For example:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+
+
+
+
 
 >[!NOTE]
 >
