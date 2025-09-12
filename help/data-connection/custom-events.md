@@ -186,24 +186,13 @@ For example:
 
 ```javascript
 mse.context.setCustom({
-  productListItems: [
-    {
-      productCategories: [
-        {
-          categoryID: "cat_15",
-          categoryName: "summer pants",
-          categoryPath: "pants/mens/summer",
-        },
-      ],
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
     },
-  ],
+  },
 });
 ```
-
-
-
-
-
 
 >[!NOTE]
 >
