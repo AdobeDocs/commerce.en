@@ -180,7 +180,7 @@ mse.publish.shoppingCartView();
 
 Luma-based stores:
 
-In Luma-based stores, publishing events is implemented natively. Therefore, you can set custom data by extending `customContext`.
+Luma-based stores natively implement publishing events, so you can set custom data by extending `customContext`.
 
 For example:
 
