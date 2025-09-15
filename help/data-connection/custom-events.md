@@ -105,7 +105,7 @@ magentoStorefrontEvents.publish.productPageView({
 
 ### Example 2
 
-This example add custom context before publishing the event.
+This example adds custom context before publishing the event.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
