@@ -9,7 +9,9 @@ exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 
 Fast track the storefront set up process by using the Site Creator tool to set up your storefront code repository and Document Author environment for managing storefront content.
 
-If you want a more customizable and detailed walkthrough, see the [Create your storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) in the *Adobe Commerce Storefront documentation*.
+>[!TIP]
+>
+>If you want a more customizable and detailed walkthrough, see the [Create your storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) in the *Adobe Commerce Storefront documentation*.
 
 ## Prerequisites
 
@@ -28,10 +30,11 @@ If you want a more customizable and detailed walkthrough, see the [Create your s
 
 ### Workflow overview
 
+1. **[Preview demo site](#step-7-preview-demo-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
 
-4. **[Preview demo site](#step-7-preview-demo-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
-5. **[Develop in your local environment](#step-8-develop-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
-6. **[Next steps](#next-steps)**–Learn more about managing and displaying content and data in the storefront.
+1. **[Develop in your local environment](#step-8-develop-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
+
+1. **[Next steps](#next-steps)**–Learn more about managing and displaying content and data in the storefront.
 
 ## Set up your storefront
 
