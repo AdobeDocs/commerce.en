@@ -51,7 +51,7 @@ _September 17, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Resolved an intermittent issue where product recommendation units would disappear due to a JavaScript error when local storage data was unavailable. This fix ensures PREX no longer throws errors if `ds-view-history-time-decay` is missing in local storage.
-![New](../assets/new.svg) Updated the `recommendations-sdk` URLs to  the `adobe.io` domain.
+![New](../assets/new.svg) Updated the CDN URLS for the `recommendations-sdk` to the `adobe.io` domain.
 
 ### Previous versions
 
