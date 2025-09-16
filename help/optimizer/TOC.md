@@ -52,4 +52,6 @@ recommendations: noDisplay
 - [Settings](settings.md)
 - Use Case {#use-case}
    - [Storefront and Catalog Administrator End-to-End Use Case](./use-case/admin-use-case.md)
-- [Developer Guide](https://developer.adobe.com/commerce/services/optimizer/)
+- Developer Guide {#developer}
+   - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
+   - [Developer APIs](https://developer.adobe.com/commerce/services/optimizer/)
