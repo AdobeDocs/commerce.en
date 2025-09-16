@@ -19,16 +19,14 @@ Fast track the storefront set up process by using the Site Creator tool to set u
 
 * Review the concepts and workflow for storefront development in the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started).
 
-* An Adobe Commerce Optimizer instance with sample data and configured catalog views and policies.  See [Add sample data](get-started#add-sample-data)
+* An Adobe Commerce Optimizer instance with sample data and configured catalog views and policies.  See [Add sample data](get-started.md#add-sample-data)
 
 
 ## Create your storefront project
 
+The following steps outline how to create your storefront project, try out your storefront, and begin development.
 
-
-
-
-### Workflow overview
+1. **[Set up your storefront](#set-up-your-storefront)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
 
 1. **[Preview demo site](#step-7-preview-demo-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
 
@@ -90,13 +88,11 @@ Before you begin, make sure you have the following information:
        ```json
        "cs": {
           "AC-View-ID": "{catalogViewId}",   # Replace with the catalog view ID for the global catalog view created when you added sample data.
-          "AC-Environment-ID": "{tenantId}",} # Replace with the instance ID from your Commerce Optimizer instance.
-
-       }
+          "AC-Environment-ID": "{tenantId}" # Replace with the instance ID from your Commerce Optimizer instance.
+          }
        ```
 
-
-Step 3: Preview the demo site and explore
+Step 3: Preview the demo site and explore the code
 
 Verify that both the demo site and sample data display correctly.
 
@@ -135,7 +131,7 @@ Verify that both the demo site and sample data display correctly.
 
       The product details page components are defined by the `default` content document in the `product` folder.
 
-### Step 5: Develop in your local environment
+### Develop in your local environment
 
 In this section, you update the storefront configuration from your local development environment.
 
@@ -178,7 +174,6 @@ In this section, you update the storefront configuration from your local develop
    The first page of your boilerplate storefront should be visible in your browser at `http://localhost:3000`.
 
    ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
-
 
 #### Update the storefront configuration
 
@@ -227,3 +222,4 @@ See the [Storefront and Catalog Administrator end-to-end use case](./use-case/ad
 >[!MORELIKETHIS]
 >
 > See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with Commerce frontend components and backend data.
+
