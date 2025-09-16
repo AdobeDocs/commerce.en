@@ -44,6 +44,16 @@ _April 25, 2023_
 
 ## Current major version
 
+### 6.4.0 magento/product-recommendations
+
+_September 17, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Resolved an intermittent issue where product recommendation units would disappear due to a JavaScript error when local storage data was unavailable. This fix ensures PREX no longer throws errors if `ds-view-history-time-decay` is missing in local storage.
+
+### Previous versions
+
 ### 6.3.0 of magento/product-recommendations
 
 _September 5, 2025_
@@ -52,8 +62,6 @@ _September 5, 2025_
 
 ![New](../assets/new.svg) Added support to display metrics for [PageBuilder recommendation units](page-builder.md) created in non-default store views within the [Product Recommendations workspace](workspace.md).
 ![New](../assets/new.svg) Product Recommendations now fully respects [cookie restriction mode](setting-cookie.md) by preventing data collection and storage in cookies/local storage when restrictions are enabled.
-
-### Previous versions
 
 ### 6.2.1 of magento/product-recommendations
 
