@@ -76,6 +76,14 @@ _October 12, 2022_
 
 +++
 
+## 3.4.0
+
+_September 16, 2025_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) [!DNL Data Connection] now fully respects cookie restriction mode by preventing data collection and storage in cookies/local storage when restrictions are enabled.
+
 ## 3.3.0
 
 _March 21, 2025_
