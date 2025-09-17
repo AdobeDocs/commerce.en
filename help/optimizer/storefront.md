@@ -46,7 +46,13 @@ Use the site creator tool to create storefront project with the following resour
 Before you begin, make sure you have the following information:
 
 * Name of the GitHub organization to host the repository for the storefront boilerplate code
-* The [Catalog Service endpoint](get-started.md#manage-an-instance) for your Adobe Commerce Optimizer instance
+* The [GraphQL endpoint](get-started.md#manage-an-instance) for your Adobe Commerce Optimizer instance
+
+  If you are using [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your API Mesh GraphQL endpoint into the **Commerce GraphQL Endpoint (optional)** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
+
+>[!NOTE]
+>
+>If you are a Trial access customer in the shared IMS organization, the GraphQL endpoint was provided to you in the welcome email you received when your instance was created.
 
 ## Step 1: Create your storefront project
 
@@ -62,22 +68,20 @@ Before you begin, make sure you have the following information:
 
 1. Enter a **Site Name**.
 
-1. In the **Commerce GraphQL Endpoint (optional)** field, enter your Adobe Commerce Optimizer GraphQL endpoint, which you can access in the Commerce Cloud Manager after [creating an instance](getting-started.md#step-1-create-an-instance).
-
-   Alternatively, if you are using [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your API Mesh GraphQL endpoint into the **Commerce GraphQL Endpoint (optional)** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
+1. In the **Commerce GraphQL Endpoint (optional)** field, enter your GraphQL endpoint.
 
 1. Click **Create Site**. Follow the onscreen instructions to authorize access to your GitHub repository and copy the boilerplate code to the repository.
 
 1. In the Site Details section, copy the links for your storefront project, so you can use them later.
 
-   ![[!DNL Storefront setup complete]](./assets/storefront-setup-complete.png){width="700" zoomable="yes"}
+   ![Storefront setup complete](./assets/storefront-setup-complete.png){width="700" zoomable="yes"}
 
    You can use these links to customize your storefront using the following methods:
 
-  * Customize your code: `https://github.com/<username or org>/<repo name>`
-  * Edit your content: `https://da.live/#/<username or org>/<repo name>`
-  * Manage your project configuration: `https://da.live/sheet#/<username or org>/<repo name>/config.json`
-  * Preview your storefront: `https://main--<repo name>--<username or org>.aem.page/`
+   * Customize your code: `https://github.com/<username or org>/<repo name>`
+   * Edit your content: `https://da.live/#/<username or org>/<repo name>`
+   * Manage your project configuration: `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+   * Preview your storefront: `https://main--<repo name>--<username or org>.aem.page/`
 
 1. Customize the storefront configuration to pull data from your Commerce Optimizer instance.
 
