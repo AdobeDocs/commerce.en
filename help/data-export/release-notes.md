@@ -24,8 +24,7 @@ Updates include:
 
 ## 103.4.12 Release
 
-MDEE-1106 by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/511
-Catalog Rule is absent for product with grouped price by @le0n4ik in https://github.com/magento-commerce/commerce-data-export/pull/515
+![Fix](../assets/fix.svg) Catalog Rule is absent for product with grouped price <!--MDEE-->
 
 ## 103.4.11 Release
 
