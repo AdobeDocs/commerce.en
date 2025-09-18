@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.4.12 Release
+
+MDEE-1106 by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/511
+Catalog Rule is absent for product with grouped price by @le0n4ik in https://github.com/magento-commerce/commerce-data-export/pull/515
+
 ## 103.4.11 Release
 
 ![New](../assets/new.svg) [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
