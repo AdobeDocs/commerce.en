@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.12 Release
 
-![Fix](../assets/fix.svg) Catalog Rule is absent for product with grouped price <!--MDEE-->
+![Fix](../assets/fix.svg) Catalog Rule is absent for product with grouped price <!--MDEE-1158-->
 
 ## 103.4.11 Release
 
