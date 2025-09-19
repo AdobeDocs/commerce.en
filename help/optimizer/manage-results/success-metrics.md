@@ -168,7 +168,7 @@ To reduce the bounce rate, your goal is to keep visitors engaged and reduce sing
 |Acquisition|Refers to the process and cost of acquiring new customers. This includes metrics like customer acquisition cost (CAC), traffic sources, and the effectiveness of marketing channels in bringing new visitors to your site.|Use [search performance data](../manage-results/search-performance.md) to identify trending products, optimize [recommendation performance](../manage-results/recommendation-performance.md), and highlight new/promotional items with [merchandising rules](../merchandising/rules/overview.md).|
 |Bounce Rate|The percentage of visitors who leave your site after viewing only one page. A high bounce rate (typically above 50-60%) suggests users aren't finding what they're looking for or the page doesn't meet their expectations, which can negatively impact conversions and revenue.|Improve [search relevance](../merchandising/synonyms/overview.md), implement [recommendation units](../merchandising/recommendations/overview.md) on key pages, and optimize [product discovery](../merchandising/facets/overview.md) with better faceting.|
 
-## Related topics
+## More like this
 
 - [Search Performance](../manage-results/search-performance.md) - Analyze search terms and optimize search relevance
 - [Recommendation Performance](../manage-results/recommendation-performance.md) - Monitor and optimize recommendation effectiveness
