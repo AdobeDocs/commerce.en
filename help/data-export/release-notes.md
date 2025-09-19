@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.12 Release
 
-![Fix](../assets/fix.svg) Catalog Rule is absent for product with grouped price <!--MDEE-1158-->
+![Fix](../assets/fix.svg) Fixed an issue where the Product Detail Page (PDP) did not display catalog price rule discounts when customer group pricing was present. The PDP now correctly shows the lowest price.<!--MDEE-1158-->
 
 ## 103.4.11 Release
 
