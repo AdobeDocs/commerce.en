@@ -11,7 +11,7 @@ The [!DNL Salesforce Commerce Connector] integrates your Salesforce Commerce Clo
 With the [!DNL Salesforce Commerce Connector], you can:
 
 - **Synchronize catalog data** from Salesforce Commerce Cloud B2C to Adobe Commerce Optimizer without re-platforming your existing commerce infrastructure.
-- **Maintain data consistency** through automated full and delta synchronization processes that keep your product information up-to-date.
+- **Maintain data consistency** through automated full and delta synchronization processes that keep your product information up to date.
 - **Leverage existing investments** in Salesforce Commerce Cloud while gaining access to Adobe's advanced merchandising and personalization capabilities.
 - **Scale your catalog** using Adobe Commerce Optimizer's high-performance storefront without migrating away from your SFCC backend.
 - **Support complex pricing structures** by synchronizing price books and locale-specific pricing from SFCC.
@@ -27,10 +27,10 @@ The connector consists of several key components:
 
 <!-- To do: Add correct architecture diagram here -->
 
-- **App Builder Runtime Actions** - Serverless functions that handle data synchronization between SFCC and Adobe Commerce Optimizer
-- **Custom SFCC Cartridge** - Required cartridge that extends your SFCC instance with APIs needed for data extraction
-- **Synchronization Engine** - Automated processes for full and delta data synchronization
-- **Management UI** - Web interface for monitoring sync status and managing connector operations
+- **App Builder Runtime Actions** - Serverless functions that handle data synchronization between SFCC and Adobe Commerce Optimizer.
+- **Custom SFCC Cartridge** - Required cartridge that extends your SFCC instance with APIs needed for data extraction.
+- **Synchronization Engine** - Automated processes for full and delta data synchronization.
+- **Management UI** - Web interface for monitoring sync status and managing connector operations.
 
 ### Synchronization Process
 
@@ -51,9 +51,9 @@ Retrieves and synchronizes only the changes made in Salesforce product and price
 
 #### Targeted Sync Options
 
-- **Price Book Sync** - Synchronizes price book information only
-- **Metadata Sync** - Updates product metadata and attribute definitions
-- **Specific Product Sync** - Synchronizes individual products by SKU
+- **Price Book Sync** - Synchronizes price book information only.
+- **Metadata Sync** - Updates product metadata and attribute definitions.
+- **Specific Product Sync** - Synchronizes individual products by SKU.
 
 ## Who Benefits from the Salesforce Connector?
 
@@ -74,19 +74,19 @@ The connector supports several key use cases:
 
 This primary use case demonstrates the complete data flow from Salesforce Commerce Cloud to the Adobe Commerce storefront:
 
-1. **Initial catalog ingestion**—Perform a bulk-load of your entire Salesforce commerce catalog, including simple products with variants, price books, and pricing information
-1. **Automated delta updates**—Automatically synchronize product changes made in the Salesforce Commerce catalog management UI to Adobe Commerce Optimizer
-1. **Storefront integration**—Display synchronized catalog data on your AEM storefront using Adobe Commerce Optimizer's storefront APIs
-1. **Real-time updates**—View updated product information (names, prices, descriptions) immediately on your storefront after making changes in Salesforce
+1. **Initial catalog ingestion**—Perform a bulk load of your entire Salesforce commerce catalog, including simple products with variants, price books, and pricing information.
+1. **Automated delta updates**—Automatically synchronize product changes made in the Salesforce Commerce catalog management UI to Adobe Commerce Optimizer.
+1. **Storefront integration**—Display synchronized catalog data on your AEM storefront using Adobe Commerce Optimizer's storefront APIs.
+1. **Real-time updates**—View updated product information (names, prices, descriptions) immediately on your storefront after making changes in Salesforce.
 
 ### Multi-Locale Product Management
 
 Leverage the Salesforce Commerce Cloud localization capabilities:
 
-- Synchronize localized versions of product text fields (names, descriptions) from Salesforce Commerce Cloud for different locales
-- Map Salesforce locale concepts 1:1 with Adobe Commerce Optimizer locales
-- Support multiple product ingestion cycles for different localizations
-- Maintain consistency across global product catalogs
+- Synchronize localized versions of product text fields (names, descriptions) from Salesforce Commerce Cloud for different locales.
+- Map Salesforce locale concepts 1:1 with Adobe Commerce Optimizer locales.
+- Support multiple product ingestion cycles for different localizations.
+- Maintain consistency across global product catalogs.
 
 ## Getting Started
 
@@ -96,14 +96,14 @@ To begin using the Salesforce Commerce Connector:
 
 Before implementing the connector, ensure you have:
 
-1. **Active Adobe Commerce Optimizer instance** with appropriate permissions and SaaS Catalog Services enabled
-2. **Salesforce Commerce Cloud B2C instance** with administrative access and API client credentials
+1. **Active Adobe Commerce Optimizer instance** with appropriate permissions and SaaS Catalog Services enabled.
+2. **Salesforce Commerce Cloud B2C instance** with administrative access and API client credentials.
 3. **Adobe Developer Console project** with the following API services enabled:
    - Adobe Commerce Optimizer Ingestion API
    - I/O Events
    - I/O Management API
-4. **Node.js and npm** installed for local development
-5. **Adobe I/O CLI** installed globally for App Builder deployment
+4. **Node.js and npm** installed for local development.
+5. **Adobe I/O CLI** installed globally for App Builder deployment.
 
 >[!NOTE]
 >
@@ -113,10 +113,10 @@ Before implementing the connector, ensure you have:
 
 The implementation process involves:
 
-1. **Installing the required SFCC cartridge** in your Salesforce Commerce Cloud instance
-2. **Configuring the Adobe App Builder project** with necessary API services and credentials
-3. **Deploying the connector application** to your App Builder runtime environment
-4. **Configuring synchronization settings** for your specific Salesforce Commerce Cloud site and locales
+1. **Installing the required SFCC cartridge** in your Salesforce Commerce Cloud instance.
+2. **Configuring the Adobe App Builder project** with necessary API services and credentials.
+3. **Deploying the connector application** to your App Builder runtime environment.
+4. **Configuring synchronization settings** for your specific Salesforce Commerce Cloud site and locales.
 
 For detailed installation instructions, see the [ACO SFCC Starter Kit repository](https://github.com/adobe-commerce/aco-sfcc-starter-kit).
 
@@ -134,15 +134,15 @@ When planning your implementation, consider these key factors:
 
 ### Data Mapping and Attributes
 
-- **Searchable attributes** - Salesforce Commerce Cloud sets searchable attributes through the UI, which are not exposed via API. You need to manually configure these searchable attributes in Adobe Commerce Optimizer using the metadata APIs
-- **Attribute mapping** - Plan the mapping of Salesforce Commerce product attributes to Adobe Commerce Optimizer metadata based on your specific business requirements
-- **Default searchable fields** - The connector automatically makes core attributes (name, description, ID) searchable by default
+- **Searchable attributes** - Salesforce Commerce Cloud sets searchable attributes through the UI, which are not exposed via API. You need to manually configure these searchable attributes in Adobe Commerce Optimizer using the metadata APIs.
+- **Attribute mapping** - Plan the mapping of Salesforce Commerce product attributes to Adobe Commerce Optimizer metadata based on your specific business requirements.
+- **Default searchable fields** - The connector automatically makes core attributes (name, description, ID) searchable by default.
 
 ### Synchronization Scope
 
-- **Site selection**—Salesforce Commerce Cloud has a concept of sites that catalogs attach to. During full sync, you select which Salesforce site to synchronize
-- **Locale management**—Each Salesforce Commerce locale results in separate product ingestion cycle in Adobe Commerce Optimizer
-- **Data volume**—Consider your catalog size and sync frequency when planning implementation
+- **Site selection**—Salesforce Commerce Cloud has a concept of sites that catalogs attach to. During full sync, you select which Salesforce site to synchronize.
+- **Locale management**—Each Salesforce Commerce locale results in a separate product ingestion cycle in Adobe Commerce Optimizer.
+- **Data volume**—Consider your catalog size and sync frequency when planning implementation.
 
 ## Monitoring and Management
 
@@ -150,11 +150,11 @@ The connector provides comprehensive monitoring and management capabilities:
 
 <!-- To do: Add correct management UI screenshot here -->
 
-- **Sync Status Tracking** - Monitor the status and timestamps of all synchronization operations
-- **Connectivity Validation** - Test connections to both Salesforce Commerce Cloud and Adobe Commerce Optimizer
-- **Product Data Validation** - Verify that synchronized product data appears correctly in your storefront
-- **Error Logging and Troubleshooting** - Access detailed logs for diagnosing and resolving sync issues
-- **State Management** - Track sync progress and prevent conflicts with built-in state management
+- **Sync Status Tracking** - Monitor the status and timestamps of all synchronization operations.
+- **Connectivity Validation** - Test connections to both Salesforce Commerce Cloud and Adobe Commerce Optimizer.
+- **Product Data Validation** - Verify that synchronized product data appears correctly in your storefront.
+- **Error Logging and Troubleshooting** - Access detailed logs for diagnosing and resolving sync issues.
+- **State Management** - Track sync progress and prevent conflicts with built-in state management.
 
 ## Architecture and Data Flow
 
@@ -162,10 +162,10 @@ The Salesforce Commerce Connector follows a secure, scalable architecture that e
 
 ![Adobe Commerce Optimizer Architecture](../assets/architecture.png){zoomable="yes"}
 
-1. **Data Extraction**—The connector authenticates with your Salesforce Commerce instance and extracts catalog data using the custom cartridge APIs
-1. **Data Transformation**—Product data is transformed to match Adobe Commerce Optimizer's data model and schema requirements
-1. **Data Ingestion**—Transformed data is securely transmitted to Adobe Commerce Optimizer using the ACO TypeScript SDK
-1. **Storefront Integration**—Synchronized data becomes available through Adobe Commerce Optimizer's APIs for use in your storefront experiences
+1. **Data Extraction**—The connector authenticates with your Salesforce Commerce instance and extracts catalog data using the custom cartridge APIs.
+1. **Data Transformation**—Product data is transformed to match Adobe Commerce Optimizer's data model and schema requirements.
+1. **Data Ingestion**—Transformed data is securely transmitted to Adobe Commerce Optimizer using the ACO TypeScript SDK.
+1. **Storefront Integration**—Synchronized data becomes available through Adobe Commerce Optimizer's APIs for use in your storefront experiences.
 
 The following diagram illustrates the high-level workflow for the integration:
 
@@ -175,9 +175,9 @@ The following diagram illustrates the high-level workflow for the integration:
 
 The Salesforce Commerce Connector is open source and available for customization:
 
-- **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Main connector application and documentation
-- **[ACO SFCC Cartridges](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Required SFCC cartridge for API integration
-- **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - SDK for Adobe Commerce Optimizer integration
+- **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Main connector application and documentation.
+- **[ACO SFCC Cartridges](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Required SFCC cartridge for API integration.
+- **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - SDK for Adobe Commerce Optimizer integration.
 
 These repositories provide complete source code, detailed documentation, and examples for implementing and customizing the connector to meet your specific business requirements.
 
