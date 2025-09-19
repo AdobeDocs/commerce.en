@@ -14,15 +14,15 @@ The metrics in the report are pulled from storefront event data. [Learn more](..
 
 ## Understanding your metrics
 
-The success metrics report provides insights into five key performance areas that directly impact your business success. Each metric tells a story about your customers' behavior and your store's performance. Use these insights to make data-driven decisions and optimize your commerce experience.
+The success metrics report delivers actionable insights into five key performance areas that directly impact your business outcomes. Each metric reveals patterns in customer behavior and store performance that help you uncover opportunities and address challenges. Leverage these insights to drive smarter decisions and to optimize your commerce experience.
 
 ### Key performance indicators
 
-- **Revenue** - Your primary financial metric showing total sales performance.
-- **Conversion** - The percentage of visitors who complete purchases.
-- **Engagement** - How actively users interact with your site.
-- **Acquisition** - The effectiveness of your customer acquisition efforts.
-- **Bounce Rate** - The percentage of visitors who leave after viewing only one page.
+- **Revenue**—Your primary financial metric showing total sales performance.
+- **Conversion**—The percentage of visitors who complete purchases.
+- **Engagement**—How actively users interact with your site.
+- **Acquisition**—The effectiveness of your customer acquisition efforts.
+- **Bounce Rate**—The percentage of visitors who leave after viewing only one page.
 
 ## Generate a report
 
@@ -46,7 +46,7 @@ For revenue, your goal is to increase total sales and average order value.
 
 #### Strategies
 
-- **Implement AI-powered recommendations**: Use the optimizer's recommendation engine to surface relevant products that drive higher conversion rates. Deploy "Customers who viewed this also viewed" and "Bought this, bought that" recommendation types to increase cross-selling opportunities.
+- **Implement AI-powered recommendations**: Use the optimizer's recommendation engine to surface relevant products that drive higher conversion rates. Deploy *Customers who viewed this also viewed* and *Bought this, bought that* recommendation types to increase cross-selling opportunities.
 
 - **Create merchandising rules**: Boost high-margin products in search results using [merchandising rules](../merchandising/rules/overview.md). Pin best-selling items to the top of search results for high-traffic queries.
 
@@ -62,9 +62,9 @@ To improve your conversion rate, your goal is to convert more visitors into cust
 
 #### Strategies
 
-- **Optimize search relevance**: Implement [synonyms](../merchandising/synonyms/overview.md) to ensure customers find what they're looking for, even with different search terms. Use dynamic faceting to provide relevant filtering options.
+- **Optimize search relevance**: Implement [synonyms](../merchandising/synonyms/overview.md) to ensure that customers find what they're looking for, even with different search terms. Use dynamic faceting to provide relevant filtering options.
 
-- **Strategic recommendation placement**: Deploy recommendation units on high-traffic pages like product detail pages and category pages. Use "Most viewed" and "Most purchased" recommendations to build trust and urgency.
+- **Strategic recommendation placement**: Deploy recommendation units on high-traffic pages like product detail pages and category pages. Use *Most viewed* and *Most purchased* recommendations to build trust and urgency.
 
 - **Improve product visibility**: Use merchandising rules to ensure best-selling and high-converting products appear prominently in search results.
 
@@ -78,7 +78,7 @@ To enhance engagement, your goal is to increase customer interaction and time on
 
 #### Strategies
 
-- **Diversify recommendation types**: Avoid showing the same recommendations repeatedly. Use a mix of "Recommended for you", "Trending", and "Recently viewed" to keep content fresh and engaging.
+- **Diversify recommendation types**: Avoid showing the same recommendations repeatedly. Use a mix of *Recommended for you*, *Trending*, and *Recently viewed* to keep content fresh and engaging.
 
 - **Implement intelligent search**: Use AI-driven dynamic faceting and result re-ranking to adapt search results in real-time based on shopper behavior.
 
