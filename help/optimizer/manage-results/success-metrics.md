@@ -16,7 +16,9 @@ The metrics in the report are pulled from storefront event data. [Learn more](..
 
 The success metrics report delivers actionable insights into five key performance areas that directly impact your business outcomes. Each metric reveals patterns in customer behavior and store performance that help you uncover opportunities and address challenges. Leverage these insights to drive smarter decisions and to optimize your commerce experience.
 
-### Key performance indicators
+**Top Highlights** summarizes key metrics from each performance area. Use this section to quickly identify your biggest opportunities for improvement.
+
+The key performance indicators are:
 
 - **Revenue**—Your primary financial metric showing total sales performance.
 - **Conversion**—The percentage of visitors who complete purchases.
@@ -156,17 +158,6 @@ To reduce the bounce rate, your goal is to keep visitors engaged and reduce sing
 |Country|Based on the catalog source specified for your [catalog view](../setup/catalog-view.md). Select the appropriate market for accurate performance analysis.|
 |Currency|The currency specified for your catalog view. Ensure this matches your target market for accurate revenue reporting.|
 |Export|Saves the report as a PDF for sharing with stakeholders or offline analysis.|
-
-### Performance metrics
-
-|Field|Description|Optimization focus|
-|---|---|---|
-|Top Highlights|Summarizes key metrics from each performance area. Use this section to quickly identify your biggest opportunities for improvement.|Focus on the metric with the most room for improvement first.|
-|Revenue|The total amount of money generated from sales transactions. This is the primary financial metric that shows how much money your business is making from customer purchases.|Implement [recommendations](../merchandising/recommendations/overview.md) and [merchandising rules](../merchandising/rules/overview.md) to boost high-margin products and increase average order value.|
-|Conversion|The percentage of visitors to your site who complete a purchase. This metric indicates how effectively your site converts browsers into buyers.|Optimize [search relevance](../merchandising/synonyms/overview.md), implement strategic [recommendation placement](../merchandising/recommendations/best-practice.md), and use [merchandising rules](../merchandising/rules/overview.md) to surface best-converting products.|
-|Engagement|Measures how actively users interact with your site, including metrics like time on site, pages per session, click-through rates, and social interactions. Higher engagement typically indicates users find your content valuable and are more likely to convert.|Diversify [recommendation types](../merchandising/recommendations/types.md), implement [intelligent search](../merchandising/facets/overview.md), and create personalized experiences with "Recommended for you" units.|
-|Acquisition|Refers to the process and cost of acquiring new customers. This includes metrics like customer acquisition cost (CAC), traffic sources, and the effectiveness of marketing channels in bringing new visitors to your site.|Use [search performance data](../manage-results/search-performance.md) to identify trending products, optimize [recommendation performance](../manage-results/recommendation-performance.md), and highlight new/promotional items with [merchandising rules](../merchandising/rules/overview.md).|
-|Bounce Rate|The percentage of visitors who leave your site after viewing only one page. A high bounce rate (typically above 50-60%) suggests users aren't finding what they're looking for or the page doesn't meet their expectations, which can negatively impact conversions and revenue.|Improve [search relevance](../merchandising/synonyms/overview.md), implement [recommendation units](../merchandising/recommendations/overview.md) on key pages, and optimize [product discovery](../merchandising/facets/overview.md) with better faceting.|
 
 ## More like this
 
