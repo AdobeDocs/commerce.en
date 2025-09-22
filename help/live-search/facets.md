@@ -21,7 +21,7 @@ The category and product attribute requirements for faceting are similar to the 
 
 >[!NOTE]
 >
->If you define a product category as a facet, the facet displays the `url_path` of category and the subcategory.
+>If you define a product category as a facet, the facet displays the `url_path` of the category and the subcategory.
 >
 >![Category facet](assets/facet-category.png)
 
