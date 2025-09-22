@@ -21,7 +21,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
        To configure price faceting intervals and groupings, refer to [Settings](settings.md). To learn more, go to [Facet Types](facets-type.md).
        The facet is added to the bottom of the *Dynamic Facets* list and the *Publish changes* button becomes available.
 
-1. If the facet you want to add can't be found, go to **Stores** > **Product** and verify that the attribute has the [required properties](facets.md) to be used as a facet. If necessary, update the following storefront properties of the attribute:
+1. If the facet you want to add can't be found, go to **Stores** > Attribute > **Product** and verify that the attribute has the [required properties](facets.md) to be used as a facet. If necessary, update the following storefront properties of the attribute:
 
      * Use in Search - `Yes`
      * Use in Search Results Layered Navigation - `Yes`
