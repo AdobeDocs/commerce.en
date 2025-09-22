@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.12 Release
+
+![Fix](../assets/fix.svg) Fixed an issue where the Product Detail Page (PDP) did not display catalog price rule discounts when customer group pricing was present. The PDP now correctly shows the lowest price.<!--MDEE-1158-->
+
 ## 103.4.11 Release
 
 ![New](../assets/new.svg) [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
