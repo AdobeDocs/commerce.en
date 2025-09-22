@@ -93,6 +93,18 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.12.1
+
+_September 18, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6164 --> Now, [!DNL Payment Services] uses base currency for the available shipping methods in the **PayPal server-side shipping callback (SSSC)**.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6267 --> The **Ship To** block is hidden on the checkout page when **In-Store Pickup (ISPU)** is selected.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6271 --> Now, [!DNL Payment Services] displays saved credit card details from the PayPal PayFlow in the **Customer Account** > **Stored Payment Methods** section.
+
 ## v2.12.0
 
 _August 20, 2025_
