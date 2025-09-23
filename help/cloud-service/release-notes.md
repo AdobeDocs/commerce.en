@@ -27,11 +27,9 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 * [User management](./user-management.md) - Changed **Product Admin** role in the Admin Console to automatically update user access to the Commerce Admin. <!-- CCSAAS-3012 -->
 * Enabled uploading category images using [GraphQL](developer.adobe.com/commerce/webapi/graphql/schema/uploads) and [REST](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads). <!-- CCSAAS-3250 -->
 
-#### Logging
+#### Custom order attributes
 
-* Added a new module with message queue/consumer setup and log forwarding. <!-- CEXT-5057 -->
-* Added enhanced logging and extension points for Commerce Eventing, including [Opentelemetry context](https://developer.adobe.com/commerce/extensibility/app-development/observability/). <!-- CEXT-4802 -->
-* Implemented additional logging and extension points for Commerce Webhooks with [Opentelemetry support](https://developer.adobe.com/commerce/extensibility/app-development/observability/). <!-- CEXT-4801 -->
+* Exposed custom order attributes in the admin panel for viewing and editing. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
 
