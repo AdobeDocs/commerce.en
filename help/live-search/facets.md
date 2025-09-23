@@ -17,11 +17,11 @@ Any defined facet may be used as a URL parameter and results will be filtered ba
 
 ## Faceting requirements
 
-The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. Each storefront properties of an attribute must have the "Use in Search Results Layered Navigation" value set to "Yes".
+The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. Each storefront properties of an attribute must have the "Use in Search Results Layered Navigation" value set to "Yes". You can review and update the attribute configuration from the [!DNL Stores] > [!DNL Attribute] menu in the Admin. 
 
 >[!NOTE]
 >
->If you define a product category as a facet, the facet displays the category and the subcategory.
+>If you define a product category as a facet, the facet displays the `url_path` of the category and the subcategory.
 >
 >![Category facet](assets/facet-category.png)
 
