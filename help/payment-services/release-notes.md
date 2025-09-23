@@ -93,6 +93,14 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.12.2
+
+_September 23, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6275 --> Declined [!DNL Fastlane] transactions in capture mode no longer create orders in Commerce.
+
 ## v2.12.1
 
 _September 18, 2025_
