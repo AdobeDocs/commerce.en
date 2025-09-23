@@ -10,6 +10,14 @@ exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 
 The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service]. For release information for other products, refer to [Adobe Commerce Optimizer](../optimizer/release-notes.md) or [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
+[!DNL Adobe Commerce as a Cloud Service] contains the latest versions of merchandising services and payments services. Use the following links to view the release notes for each service:
+
+* [Catalog Service](../catalog-service/release-notes.md)
+* [Live Search](../live-search/release-notes.md)
+* [Payment Services](../payment-services/release-notes.md)
+* [Product Recommendations](../product-recommendations/release-notes.md)
+* [SaaS Data Export](../saas-data-export/release-notes.md)
+
 ## September 2025
 
 >[!BEGINSHADEBOX]
