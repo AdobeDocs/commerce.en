@@ -25,7 +25,7 @@ Updates include:
 ## 103.4.13 Release
 
 ![Fix](../assets/fix.svg) Fixed issue where editing Web Configuration settings caused Product Feed Index to reset. <!--MDEE-1154-->
-![Fix](../assets/fix.svg) Avoid duplicates for bundle options values when bundle fix…. <!--MDEE-1167-->
+![Fix](../assets/fix.svg) Resolved problem with duplicate bundle options/variants in Catalog service response. <!--MDEE-1167-->
 
 ## 103.4.12 Release
 
