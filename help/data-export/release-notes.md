@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.4.13 Release
+
+![Fix](../assets/fix.svg) Fixed issue where editing Web Configuration settings caused Product Feed Index to reset. <!--MDEE-1154-->
+![Fix](../assets/fix.svg) Resolved an issue where bundle product options and variants could appear multiple times in the Catalog service response, particularly for products assigned to multiple stores or websites. With this fix, each bundle option/variant is now returned only once per product, ensuring accurate and consistent storefront displays for both merchants and customers. <!--MDEE-1167-->
+
 ## 103.4.12 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where the Product Detail Page (PDP) did not display catalog price rule discounts when customer group pricing was present. The PDP now correctly shows the lowest price.<!--MDEE-1158-->
