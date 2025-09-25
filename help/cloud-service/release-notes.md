@@ -29,7 +29,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 #### Custom order attributes
 
-* Exposed [custom order attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) in the admin panel for viewing and editing. <!-- CEXT-5044 -->
+* Exposed [custom order attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) in the Admin for viewing and editing. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
 
