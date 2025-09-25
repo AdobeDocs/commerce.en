@@ -17,7 +17,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
   * [Live Search](../live-search/release-notes.md)
   * [Payment Services](../payment-services/release-notes.md)
   * [Product Recommendations](../product-recommendations/release-notes.md)
-  * [SaaS Data Export](../saas-data-export/release-notes.md)
+  * [SaaS Data Export](../data-export/release-notes.md)
 * Extensibility
   * [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
   * [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
