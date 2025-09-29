@@ -36,8 +36,6 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 ### Category
 
-[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-
 Filters products based on their category. The category filter uses direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. The same applies for an inclusion filter on a category. For example, enabling an inclusion condition for category `Gear` includes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`.
 
 The category field displays categories that belong to the current storeview. 
@@ -66,13 +64,9 @@ Product filters specify which specific products are eligible, or not eligible, t
 
 ### Type
 
-[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-
 A filter based on product type either includes or excludes all products of a specific type. Supported types include _simple_, _configurable_, _virtual_, _downloadable_, or _gift card_. _Bundle_, _grouped_, and custom product types are not supported.
 
 ### Visibility
-
-[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 
 Filters products based on visibility, such as: _Catalog_, _Search_, or both.
 

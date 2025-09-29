@@ -22,11 +22,23 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_September 11, 2025_
+
+![New issue](../assets/new.svg) Updated the [custom automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} endpoints with a new `asset_matches` attribute.
+
 _February 11, 2025_
 
 ![New issue](../assets/new.svg) Now, merchants can synchronize images for products and categories.
 
 +++
+
+## v1.2.2
+
+_September 18, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1110 --> Improved overall image stability on mini cart, cart, and checkout pages. Images on these pages now load properly.
 
 ## v1.2.0
 
