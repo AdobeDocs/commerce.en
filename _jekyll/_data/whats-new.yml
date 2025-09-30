@@ -2,8 +2,19 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Sep 22 11:41:47 2025
+updated: Fri Sep 26 15:42:06 2025
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
+    for Payment Services v2.12.2.
+  versions: ''
+  type: major-update
+  date: September 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/244
+  merge_commit: 1e5ee370bf91d33f35585d2d64b393fede721ce6
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
 - description: Added AEM Assets setup information to the [user management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
     page for Adobe Commerce as a Cloud Service.
   versions: ''
