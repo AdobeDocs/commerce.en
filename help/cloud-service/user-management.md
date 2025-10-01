@@ -31,12 +31,16 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
 
 * Admins - There are three different types of admins:
     * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Admin Console.
-    * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console] and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
-    * [Product profile admins](#add-users-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
+    * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users) in the [!DNL Adobe Admin Console] and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+    * [Product profile admins](#add-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
 
 For detailed information on the permissions granted to each role inside Adobe Commerce, refer to [user permissions](#user-permissions).
 
 ## Add a product admin
+
+>[!NOTE]
+>
+>Assign product admins the [User role](#add-users) before adding them as product admins. The User role is required for basic Commerce permissions.
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
@@ -82,9 +86,9 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 
 >[!NOTE]
 >
->Developers and product profile admins must also have the User role assigned to them. It is required for basic Commerce permissions.
+>Product profile admins do not have access to the Commerce Admin. Refer to [Understanding roles](#understanding-roles) for more information.
 >
->Admins added from this screen are [product profile admins](#understanding-roles) and do not have access to the Commerce Admin.
+>Assign developers the User role before adding them as developers. The User role is required for basic Commerce permissions.
 
 ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
