@@ -52,7 +52,9 @@ To allow attributes to be searchable, complete the following steps:
 1. Select the attribute you want to be searchable, such as `color`.
 1. Select **Storefront Properties** and set **Use in Search** to `yes`.
 
-    ![Workspace](assets/attribute-searchable.png)
+>[!NOTE]
+>
+>See [search types](#search-types) to learn how you can configure specific search behaviors for individual attributes to provide more targeted search experiences.
 
 [!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
 
@@ -61,6 +63,36 @@ The following attributes are always searchable:
 - `sku`
 - `name`
 - `categories`
+
+### Search types
+
+In addition to the standard search functionality, you can configure specific search behaviors for individual attributes to provide more targeted search experiences. These search types work alongside your main search query to offer shoppers more precise ways to find products.
+
+#### Available search types
+
+| Field | Description |
+|--- |--- |
+|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete`, you can use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
+|`Contains`| Enables a true "text contained in a string" search instead of an autocomplete search. Use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability). Refer to the [Limitations](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations) for more information.|
+|`Starts with`| Query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability).|
+
+#### Implementation
+
+You can specify new conditions to enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
+
+![Specify search capability](./assets/search-filters-admin.png)
+
+In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**.
+
+#### Use cases
+
+You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities. It also updates the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) GraphQL API to include these new search capabilities.
+
+## Facets and synonyms
+
+Facets and synonyms are another way you can enahnce the search experience for your shoppers.
 
 [Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time. 
 

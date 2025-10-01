@@ -19,6 +19,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_October 14, 2025_
+
+![New](../assets/new.svg) GA release for the following advanced search capabilities: layered, starts with, and contains. [Learn more](workspace.md#search-types).
+
 _April 29, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the **Export to CSV** report on the [**Performance**](./performance.md) tab was not including all data specified in the date range.
@@ -43,7 +47,7 @@ _January 31, 2025_
 
 _September 19, 2024_
 
-![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](workspace.md#search-types).
 
 _September 4, 2024_
 
