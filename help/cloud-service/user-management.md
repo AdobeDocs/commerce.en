@@ -23,6 +23,10 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
 
 * **Users** - Users have Admin access to the Commerce Admin, but cannot manage product-level access in the Admin Console. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
 
+  >[!NOTE]
+  >
+  >All Commerce users, including developers and admins, must also have the User role assigned to them. It is required for basic Commerce permissions.
+
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and are added to the Commerce instance as a developer user. This means they can use the [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Admins - There are three different types of admins:
@@ -48,9 +52,9 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
-## Add users, developers, and product profile admins
+## Add users
 
-The following instructions provide information on how to add users and developers to the [!DNL Commerce Cloud Manager] and the Commerce Admin. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Instances.
+The following instructions provide information on how to add users to the [!DNL Commerce Cloud Manager] and the Commerce Admin. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Instances. This process is required for all users, including developers and admins.
 
 >[!NOTE]
 >
@@ -58,23 +62,31 @@ The following instructions provide information on how to add users and developer
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
-1. Select your organization.
+2. Select your organization.
 
-1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
+3. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
 
     ![select product](./assets/backend.png){width="600" zoomable="yes"}
 
-1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
+4. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
-1. Select the [!UICONTROL **Users**], [!UICONTROL **Developers**], or [!UICONTROL **Admins**] tab and click [!UICONTROL **Add Users**] or [!UICONTROL **Add Developers**] or [!UICONTROL **Add Admins**].
-
-    >[!NOTE]
-    >
-    >Admins added from this screen are [product profile admins](#understanding-roles) and do not have access to the Commerce Admin.
+5. Select the [!UICONTROL **Users**] tab and click [!UICONTROL **Add Users**].
 
     ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
-1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
+6. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
+
+### Add developers and product profile admins
+
+To add developers and product profile admins, repeat the [add users](#add-users) process, but select the [!UICONTROL **Developers**] or [!UICONTROL **Admins**] tab instead of the [!UICONTROL **Users**] tab.
+
+>[!NOTE]
+>
+>Developers and product profile admins must also have the User role assigned to them. It is required for basic Commerce permissions.
+>
+>Admins added from this screen are [product profile admins](#understanding-roles) and do not have access to the Commerce Admin.
+
+![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
 ## Role resources
 
