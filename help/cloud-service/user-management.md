@@ -23,16 +23,24 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
 
 * **Users** - Users have Admin access to the Commerce Admin, but cannot manage product-level access in the Admin Console. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
 
+  >[!NOTE]
+  >
+  >All Commerce users, including developers and admins, must also have the User role assigned to them. It is required for basic Commerce permissions.
+
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Developers have user permissions and are added to the Commerce instance as a developer user. This means they can use the [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Admins - There are three different types of admins:
     * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Admin Console.
-    * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users-and-admins) in the [!DNL Adobe Admin Console] and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
-    * [Product profile admins](#add-users-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
+    * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users) in the [!DNL Adobe Admin Console] and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+    * [Product profile admins](#add-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
 
 For detailed information on the permissions granted to each role inside Adobe Commerce, refer to [user permissions](#user-permissions).
 
 ## Add a product admin
+
+>[!NOTE]
+>
+>Assign product admins the [User role](#add-users) before adding them as product admins. The User role is required for basic Commerce permissions.
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
@@ -48,9 +56,9 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
-## Add users, developers, and product profile admins
+## Add users
 
-The following instructions provide information on how to add users and developers to the [!DNL Commerce Cloud Manager] and the Commerce Admin. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Instances.
+The following instructions provide information on how to add users to the [!DNL Commerce Cloud Manager] and the Commerce Admin. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Instances. This process is required for all users, including developers and admins.
 
 >[!NOTE]
 >
@@ -66,15 +74,23 @@ The following instructions provide information on how to add users and developer
 
 1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
-1. Select the [!UICONTROL **Users**], [!UICONTROL **Developers**], or [!UICONTROL **Admins**] tab and click [!UICONTROL **Add Users**] or [!UICONTROL **Add Developers**] or [!UICONTROL **Add Admins**].
-
-    >[!NOTE]
-    >
-    >Admins added from this screen are [product profile admins](#understanding-roles) and do not have access to the Commerce Admin.
+1. Select the [!UICONTROL **Users**] tab and click [!UICONTROL **Add Users**].
 
     ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
 1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
+
+### Add developers and product profile admins
+
+To add developers and product profile admins, repeat the [add users](#add-users) process, but select the [!UICONTROL **Developers**] or [!UICONTROL **Admins**] tab instead of the [!UICONTROL **Users**] tab.
+
+>[!NOTE]
+>
+>Product profile admins do not have access to the Commerce Admin. Refer to [Understanding roles](#understanding-roles) for more information.
+>
+>Assign developers the User role before adding them as developers. The User role is required for basic Commerce permissions.
+
+![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
 ## Role resources
 
@@ -199,6 +215,6 @@ After adding a user to AEM Assets, they can access the [!DNL Experience Manager]
 1. You should now see new product profiles. Select that contains `- author -`. For example, `<environment-name> - author - <program-id> - <environment-id>`.
 
 1. [Add users to the product profile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
- 
+
 * [Configure AEM Assets to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
 * [Integrate AEM Assets with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
