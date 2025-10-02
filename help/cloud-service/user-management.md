@@ -66,19 +66,19 @@ The following instructions provide information on how to add users to the [!DNL 
 
 1. Navigate to https://adminconsole.adobe.com and sign in with your Adobe ID.
 
-2. Select your organization.
+1. Select your organization.
 
-3. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
+1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
 
     ![select product](./assets/backend.png){width="600" zoomable="yes"}
 
-4. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
+1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
-5. Select the [!UICONTROL **Users**] tab and click [!UICONTROL **Add Users**].
+1. Select the [!UICONTROL **Users**] tab and click [!UICONTROL **Add Users**].
 
     ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
 
-6. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
+1. Enter the username or email address of the users you want to add as admins and click [!UICONTROL **Save**].
 
 ### Add developers and product profile admins
 
@@ -215,6 +215,6 @@ After adding a user to AEM Assets, they can access the [!DNL Experience Manager]
 1. You should now see new product profiles. Select that contains `- author -`. For example, `<environment-name> - author - <program-id> - <environment-id>`.
 
 1. [Add users to the product profile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
- 
+
 * [Configure AEM Assets to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
 * [Integrate AEM Assets with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
