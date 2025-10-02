@@ -24,7 +24,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
   * [Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
   * [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
 
-## September 2025
+## October 2025
 
 >[!BEGINSHADEBOX]
 
