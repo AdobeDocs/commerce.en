@@ -10,6 +10,18 @@ exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 
 The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
 
+## October 2025
+
+**Release date**: October 14, 2025
+
+>[!BEGINSHADEBOX]
+
+### New feature
+
+New feature details...
+
+>[!ENDSHADEBOX]
+
 ## August 2025
 
 **Release date**: August 28, 2025
