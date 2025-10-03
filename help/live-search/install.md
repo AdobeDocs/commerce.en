@@ -30,8 +30,6 @@ This article is intended for the developer or systems integrator on your team wh
 
 - As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled with the installation.
 
-- Due to the Elasticsearch 7 end-of-support announcement for August 2023, Adobe recommends that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during a product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in the _Upgrade Guide_.
-
 ## Supported platforms
 
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
@@ -74,10 +72,10 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search].
+1. Disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search].
 
    ```bash
-   bin/magento module:disable Magento_ Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
