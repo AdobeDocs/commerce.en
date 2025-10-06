@@ -2,12 +2,12 @@
 title: Set up your storefront
 description: Learn how to set up your [!DNL Adobe Commerce Optimizer] storefront.
 role: Developer
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 ---
 # Set up your storefront
 
-Fast track the storefront set up process by using the Site Creator tool to set up your storefront code repository and Document Author enviroment for managing storefront content. 
+Your initial storefront site provides boilerplate code for a basic storefront with sample content, and support for product detail pages and product discovery (search and filtering).
 
 ## Prerequisites
 
@@ -15,97 +15,51 @@ Fast track the storefront set up process by using the Site Creator tool to set u
 
 * Learn about the concepts and workflow to develop Commerce storefronts on Adobe Edge Delivery Services by reviewing the [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) in the Adobe Commerce Storefront documentation.
 
-* Set up your development environment
+* An [!DNL Adobe Commerce Optimizer] instance with sample data and configured catalog views and policies.  See [Add sample data](get-started.md#add-sample-data). You need the following data from your instance:
+   * Tenant ID for your instance (also called the instance ID). You can get this value from the [instance details page](./get-started.md#manage-an-instance) in your [!DNL Commerce Optimizer instance].
+   * The [GraphQL endpoint](get-started.md#manage-an-instance) for your [!DNL Adobe Commerce Optimizer] instance
+   * The catalog view ID for the global catalog view created when you added sample data. You can get this value from the [catalog details page](./setup/catalog-view#view-details) in your [!DNL Commerce Optimizer instance].
+   * The source locale for your catalog view. The default locale for the sample data is `en_US`.
 
+  >[!NOTE]
+  >
+  > Trial access customers provisioned in the shared IMS organization can find the GraphQL endpoint in the welcome email you received when your instance was created. Additionally, trial instances are pre-configured with sample data, catalog views, and policies.
 
-### Set up your development environment
+## Set up steps
 
 Install Node.js and the Sidekick browser extension required to develop and test your [!DNL Adobe Commerce Optimizer] storefront on Edge Delivery Services.
 
-#### Install Node.js
+1. **[Create your storefront project](#set-up-your-storefront)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
 
-Install Node Version Manager (NVM) and the required Node.js version (22.13.1 LTS).
+1. **[Customize the storefront configuration](#customize-the-storefront-configuration)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
-1. Install Node Version Manager (NVM).
+1. **[Preview the demo site and verify sample data](#preview-the-demo-site-and-verify-sample-data)**–View your storefront site and verify that product detail pages and product discovery (search and filtering) are working correctly.
 
-    ```bash
-    curl -ohttps://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-    ```
-
-1. Install Node.js and NPM. For more information, see [Node.js](https://nodejs.org/en/).
-
-    ```bash
-    nvm install 22
-    ```
-
-    ```bash
-    npm install -g npm
-    ```
-
-1. Install the 
-1. Verify the installation.
-
-   ```bash
-   npm -v
-   ```
-
->[!TIP]
->
->Additional resources for extending and customizing your [!DNL Adobe Commerce Optimizer] solution are available through [App Builder for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) and [API Mesh for Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). For access and usage information, contact your Adobe account representative.
-
-#### Install Sidekick
-
-Install the Sidekick browser extension to edit, preview, and publish content to the storefront. See [Sidekick installation instructions](https://www.aem.live/docs/sidekick#installation).
-
-
-### Workflow overview
-
-1. **[Create your storefront project](#step-1-create-your-storefront-project)**
-2. **[Add sample data](a**
-3. **[Configure sample catalog]**
-4. **[Preview demo site](#step-7-preview-demo-site)**–Connect to your storefront site to view the sample content and data from the [!DNL Adobe Commerce Optimizer] demo instance.
-5. **[Develop in your local environment](#step-8-develop-in-your-local-environment)**–Install the required dependencies. Start the local development server, and update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
-6. **[Next steps](#next-steps)**–Learn more about managing and displaying content and data in the storefront.
-
-## Set up your storefront
+### 1. Set up your storefront
 
 Use the site creator tool to create storefront project with the following resources:
 
-* **Site** links to the storefront landing page with the boilerplate content.
-* **Code** links to the repository with the storefront boilerplate code source files
-* **Content** links to the Document Author environment where you can manage site content
-* **Commerce Config** links to the `config.json` file where you can customize configuration settings that determine what content displays in the storefront.
+* **Site** the storefront site landing page with the boilerplate content.
+* **Code** the repository with the storefront boilerplate code source files
+* **Content** the Document Author environment with site content files
+* **Commerce Config** a `config.json` file to customize storefront configuration settings for your instance
 
-Before you begin, make sure you have the following information: 
-
-* Name of the GitHub organization to host the repository for the storefront boilerplate code
-* The [Catalog Service endpoint](get-started.md#manage-an-instance) for your Adobe Commerce Optimizer instance
-
-## Step 1: Create your storefront project
+### 2. Create your storefront project
 
 1. Open the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Complete the form:
-
-   * Select **[!UICONTROL Create New Site (Code & Content)]**.
-   * Enter your **[!UICONTROL GitHub Organization User Name]**.
-   * Specify a **[!UICONTROL Site Name]**——this will be the name of the storefront code repository.
-   * In the **[!UICONTROL Commerce GraphQL endpoint]** field, enter the Catalog endpoint for your Adobe Commerce Optimizer instance.
-  
-1. Create the repository with the storefront boilerplate code: Click **[!UICONTROL Create Site]**.
+1. Select **Create New Site (Code & Content)**.
 
    When the repository is created, the Site Creator updates and prompts you to install the Code Sync app.
 
    ![[!DNL Install Code Sync app]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-   >[!IMPORTANT]
-   >
-   >You must install the Code Sync app and register your repository before you can continue to complete the setup process. The site creation fails if you don't complete this step correctly.
+1. In the **Commerce GraphQL Endpoint (optional)** field, enter the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance.
 
 1. Install the Code Sync app: Click **[!UICONTROL Install AEM Code Sync App]** to open the Code Sync installer in a new tab.
-   
+
    * Select your GitHub organization, then click **[!UICONTROL Configure]**
    * In the Code Sync interface, select **[!UICONTROL Only select repositories]**.
    * Click the **[!UICONTROL Select respositories]** menu, choose the storefront code repository you created.
@@ -115,220 +69,80 @@ Before you begin, make sure you have the following information:
 
    The Site Creator copies the storefront boilerplate content to the Document Author environment. This step takes a minute or two.
 
-1. In the Site Details section, copy the links for your storefront project, so you can use them later.
+1. In the Site Details section, review the links for your storefront project
 
    ![[!DNL Storefront setup complete]](./assets/storefront-setup-complete.png){width="700" zoomable="yes"}
 
-1. Follow the steps to secure your site.
+   Use these links to customize your storefront using the following methods:
 
-The rest of this tutorial provides the initial steps to preview your site and develop in a local environment.
-For more detailed information, see the _[Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)_ documentation.
+   * Customize your code: `https://github.com/<username or org>/<repo name>`
+   * Edit your content: `https://da.live/#/<username or org>/<repo name>`
+   * Manage your storefront project configuration: `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+   * Preview your storefront: `https://main--<repo name>--<username or org>.aem.page/`
 
-## Step 2: Add sample data
+1. Use the **Copy** feature to copy the links and save them for future reference.
 
-Adobe provides a GitHub repository with sample data and tools to help you learn and test Adobe Commerce Optimizer features.
+### 2. Customize the storefront configuration
 
-The sample data is based on the [Carvelo business scenario](./use-case/admin-use-case.md) and includes:
+1. Customize the storefront configuration to retrieve data from your [!DNL Commerce Optimizer] instance.
 
-* Product catalog with automotive parts
-* Multiple price books and pricing scenarios
-* Catalog views and policies for different dealers
-* Complete end-to-end workflow examples
+   * Update the catalog service configuration to add the values for the required headers, `AC-View-ID`, `AC-Environment-ID`, and `AC-Source-Locale`. See the [Prerequisites](#prerequisites).
 
-You can check to see if the sample data has already been loaded by visiting the Data Sync page.
+      ```json
+      "cs": {
+         "AC-View-ID": "{catalogViewId}",
+         "AC-Environment-ID": "{tenantId}",
+         "AC-Source-Locale": "en_US"
+         }
+      ```
 
-If the product count is 0, follow the steps to load the sample data.
+   * Save the file.
 
-**Load the sample data:**
+### 3. Preview the demo site and verify sample data
 
-1. Access the [Sample Catalog Data Ingestion](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) GitHub repository.
+1. View your site by navigating to **Site** URL provided, for example:
 
-1. Follow the setup instructions in the repository's README file to complete the following tasks:
+   `https://main--{SITE}--{ORG}.aem.live`.
 
-   * Set up your environment
-   * Complete the data ingestion process
-   * Create catalog views and policies using the sample data 
-   * Verify the data ingestion by checking the Catalog Service data on the [Data Sync](./setup/data-sync.md) page
-
-## Step 3: Update the storefront configuration file
-
-When you use the Site Creator tool, the system creates a default storefront configuration file (`config.json`) that is
-connected to your Adobe Commerce Optimizer instance.
-
-+++Example of default configuration file
-
-```json
-{
-  "public": {
-    "default": {
-      "commerce-core-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{instance ID}}/graphql",
-      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{instance ID}}/graphql",
-      "headers": {
-        "all": {
-          "Store": "default"
-        },
-        "cs": {
-          "AC-View-ID": "YOUR_HEADER_VALUE",
-          "AC-Price-Book-ID": "YOUR_HEADER_VALUE",
-          "AC-Source-Locale": "YOUR_HEADER_VALUE"
-        }
-      },
-      "analytics": {
-        "base-currency-code": "USD",
-        "environment": "Testing",
-        "environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
-        "store-code": "YOUR_STORE_CODE",
-        "store-id": "YOUR_STORE_ID",
-        "store-name": "YOUR_STORE_NAME",
-        "store-url": "YOUR_STORE_URL",
-        "store-view-code": "YOUR_STORE_VIEW_CODE",
-        "store-view-id": "YOUR_STORE_VIEW_ID",
-        "store-view-name": "YOUR_STORE_VIEW_NAME",
-        "website-code": "YOUR_WEBSITE_CODE",
-        "website-id": "YOUR_WEBSITE_ID",
-        "website-name": "YOUR_WEBSITE_NAME"
-      },
-      "plugins": {
-        "picker": {
-          "rootCategory": "2"
-        }
-      }
-    }
-  }
-}
-```
-
-+++
-
-
-## Step 4: Preview demo site
-
-Verify that both the sample content and the data from the Adobe Commerce Optimizer demo instance are displayed correctly.
-
-* **Sample content** is served from the content folder in the Document Author environment. It includes the page layouts, banners, and labels for your site.
-* **Sample data** is served from the [!DNL Adobe Commerce Optimizer] demo instance. Data includes product data with product attributes, images, product descriptions, and prices populated based on the header values specified in the storefront configuration file, `config.json`.
-
-### Connect to your site to view sample content and data
-
-1. View your site by navigating to `https://main--{SITE}--{ORG}.aem.live`.
-
-   Replace `{ORG}` and `{SITE}` with the organization and name for your boilerplate repository.
+   Replace `{ORG}` and `{SITE}` with the GitHub organization and site name you set for your boilerplate repository.
 
    ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
-   If the page returns a 404, verify the following in the config.json
+1. **View a sample product**:  In the browser, navigate to `https://main-{SITE}.aem.live/products/foo/{sku}`, where {sku} is the SKU of any of the sample products.
 
-   * The mountpoint in your `fstab.yaml` file points to the correct content URL: `https://content.da.live/{ORG}/{SITE}/`
-   * The GitHub storefront code repository is registered with the [Code Sync app](https://github.com/apps/aem-code-sync/installations/select_target).
-   * [Content has published tDocument Author environment using the demo content clone tool](#step-6%3A-add-content-documents-for-your-storefront).
+   For example, `https://main--{SITE}.aem.live/products/foo/aur-flu-tir-std-2017.`
 
+   ![[!DNL Default product detail page showing a product from the sample data]](./assets/storefront-boilerplate-product-page.png){width="700" zoomable="yes"}
 
-1. View the sample catalog data coming from the Commerce Optimizer default instance.
+   The product detail page components are defined by the `products` content document in your content folder. The product details are retrieved from your [!DNL Adobe Commerce Optimizer] instance.
 
-   1. In the storefront header, click the magnifying glass to search for `tires`.
+   >[!NOTE]
+   >
+   > View available SKUs from the [[!DNL Data Sync]](./setup/data-sync.md) page in your [!DNL Adobe Commerce Optimizer] instance.
 
-      ![[!DNL View product list page]](./assets/storefront-site-with-aco-data.png){width="675" zoomable="yes"}
+1. **Check search results**: Verify that product discovery (search and filtering) is working correctly.
 
-   1. Press **Enter** to view the search results page.
+   * In the storefront header, click the magnifying glass to search for `tires`.
+
+   * Press **Enter** to view the search results page.
 
       ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
 
-      The search results page components are defined by the `search` content document. The search results data is populated based on the storefront configuration in `config.json`.
-
-   1. View the product details page by selecting any tire product on the page.
+   * View the product details page by selecting any tire product on the page.
 
       ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
-      The product details page components are defined by the `default` content document in the `product` folder.
+## Next steps
 
-### Step 5: Develop in your local environment
+* **[Install Sidekick](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/authoring/install-sidekick.html)**, the browser extension for Adobe Experience Manager to edit, preview, and publish your content directly from your website pages.
 
-In this section, you update the storefront configuration from your local development environment.
+* **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/local-development-setup/)** to customize and preview your storefront code and content
 
-* Update the storefront configuration to connect to the GraphQL endpoint for the [!DNL Adobe Commerce Optimizer] instance that Adobe provisioned for you.
-* Update the header values to retrieve data from your instance.
+* **Complete the [Storefront and Catalog Administrator end-to-end use case](./use-case/admin-use-case.md**)** to learn how to manage and display content and data in the storefront
 
-#### Start local development
+* **[Learn more about storefront setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**
 
-1. In your IDE, checkout your main branch, and reset it to the last commit on the remote branch.
-
-   ```shell
-   git checkout main
-   git reset --hard origin/main
-   ```
-
-1. Install the required dependencies.
-
-   ```shell
-   npm install
-   ```
-
-1. Install the [AEM Command Line Interface (CLI)](https://www.aem.live/developer/cli-reference).
-
-   ```shell
-   npm install -g @adobe/aem-cli
-   ```
-
-1. Clone your boilerplate repo.
-
-   ```shell
-   git clone https://github.com/{{ORG}}/{{SITE}}
-   ```
-
-1. Start the local development server.
-
-   ```bash
-   aem up
-   ```
-
-   The first page of your boilerplate storefront should be visible in your browser at `http://localhost:3000`.
-
-   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
-
-
-#### Update the storefront configuration
-
-Update the storefront configuration file and preview the changes in your local development environment.
-
-1. In your IDE, update the storefront configuration to connect to the [!DNL Adobe Commerce Optimizer] instance that Adobe has provisioned for you.
-
-   1. Open the `config.json` file.
-
-   1. Update the following values using the endpoint for your [!DNL Adobe Commerce Optimizer] instance:
-
-      * **`commerce-endpoint`**–Replace the existing value with your endpoint URL.
-
-        ```json
-        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{instance ID}/graphql"
-        ```
-
-      * **`ac-environment-id`**—Replace the existing value with the instance ID from your endpoint URL.
-
-        ```json
-        "ac-environment-id": "{instanceId}"
-        ```
-
-   1. Save the file.
-
-      If your local preview is working correctly, the updates are applied to your local storefront.
-
-1. Check the site to see the results of the configuration change.
-
-   1. In the browser, navigate to `http://localhost:3000` and refresh the page.
-
-   1. In the storefront header, click the magnifying glass to search for `tires`.
-
-      ![Search for tires](./assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
-
-   1. Press **Enter** to display the Search Results page.
-
-      ![Empty search results with invalid header values](./assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
-
-      The search doesn't return any results because the header values in your storefront configuration file are based on the default instance. Now that the configuration points to the [!DNL Adobe Commerce Optimizer] instance provisioned for you, those values are invalid.
-
-### Next steps
-
-See the [Storefront and Catalog Administrator end-to-end use case](./use-case/admin-use-case.md) to learn more about managing and displaying content and data in the storefront.
+* **[Use Commerce dropins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**
 
 >[!MORELIKETHIS]
 >
