@@ -7,7 +7,8 @@ exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 # [!DNL Live Search] Release Notes
 
 These release notes describe the latest versions of [!DNL Live Search].
-Support is provided for the current major released version. Release notes for older versions are provided for reference.
+
+Support is provided for the latest released version. Release notes for older versions are provided for reference.
 Updates include:
 
 ![New](../assets/new.svg) New features
@@ -17,6 +18,10 @@ Updates include:
 ## Hosted service updates
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
+
+_October 1, 2025_
+
+![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
 
 _April 29, 2025_
 

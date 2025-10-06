@@ -4,6 +4,58 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 23, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">release notes</a> for Payment Services v2.12.2.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### September 9, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added AEM Assets setup information to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">user management</a> page for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added role-based tasks and workflow info to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started">Getting started</a> page for Adobe Commerce as a Cloud Service</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f62434c55d21f65568af422bd278e6ed917b805b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### September 4, 2025
 
 <table style="table-layout:auto;">
