@@ -31,7 +31,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 ### Enhancements
 
 * [User management](./user-management.md) - Changed **Product Admin** role in the Admin Console to automatically update user access to the Commerce Admin. <!-- CCSAAS-3012 -->
-* Added the ability to upload customer files and negotiable quote attachments to Amazon S3 using presigned URLs in [GraphQL](developer.adobe.com/commerce/webapi/graphql/schema/uploads). In [REST](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads), you can upload category images. <!-- CCSAAS-3250 -->
+* Added the ability to upload and retrieve negotiable quote attachments as well as files and images associated with customers and customer addresses to Amazon S3 using presigned URLs in [GraphQL](developer.adobe.com/commerce/webapi/graphql/schema/uploads) and [REST](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads). With REST, you can also upload category images. <!-- CCSAAS-3250 -->
 
 #### Custom order attributes
 
