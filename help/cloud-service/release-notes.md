@@ -35,7 +35,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 #### Custom order attributes
 
-* Exposed [custom order attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) in the Admin for viewing and editing. <!-- CEXT-5044 -->
+* Admin users can now view and edit [custom order attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)  directly from the Order View, Edit, and Create screens in the Admin panel. This enhancement improves the management of custom order data created via GraphQL.  <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
 
