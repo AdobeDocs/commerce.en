@@ -1,16 +1,16 @@
 ---
-title: Coding agent for extensions
-description: Learn how to use the AI agent for creating Commerce App Builder extensions.
+title: Coding tools for extensions
+description: Learn how to use the AI tools for creating Commerce App Builder extensions.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Architect
 hide: yes
 hidefromtoc: yes
 ---
-# Coding agent for extensions
+# Coding tools for extensions
 
-When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding agent to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. It can also be used to create new [!DNL App Builder] extensions.
+When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. It can also be used to create new [!DNL App Builder] extensions.
 
-Using the AI coding agent provides the following benefits:
+Using the AI coding tools provides the following benefits:
 
 * **Enhanced development workflow**: Integrated Adobe Commerce development tools.
 * **AI-powered assistance**: Context-aware code generation and debugging.
@@ -72,7 +72,7 @@ Using the AI coding agent provides the following benefits:
     yarn
   ```
 
-1. After successfully installing the coding agent, the installation process configures:
+1. After successfully installing the coding tools, the installation process configures:
 
    * MCP server integration for Adobe Commerce development
    * Cursor IDE rules for enhanced development experience
@@ -119,7 +119,7 @@ Payment Type -> pType
 
 ## Best Practices
 
-Adobe recommends following the following best practices when using the AI coding agent:
+Adobe recommends following the following best practices when using the AI coding tools:
 
 ### Checklist
 
@@ -137,7 +137,7 @@ During development:
 * Use MCP tools when available
 * Test each feature after implementation
 * Test locally first, then deploy and test again
-* Leverage agent for testing support
+* Leverage the coding tools for testing support
 * Question unnecessary complexity
 * Deploy incrementally for faster development
 
@@ -150,7 +150,7 @@ When starting new chat:
 
 ### Workflow
 
-When developing with the AI coding agent, start with sample code or scaffolded projects. This approach ensures you are building on a solid foundation rather than starting from nothing, while also optimizing your AI development workflow.
+When developing with the AI coding tools, start with sample code or scaffolded projects. This approach ensures you are building on a solid foundation rather than starting from nothing, while also optimizing your AI development workflow.
 
 This also allows you to leverage Adobe's templates and build upon proven patterns and architectures, while keeping established directory structures and conventions.
 
@@ -169,23 +169,23 @@ Consult the following resources to get started:
 * **Maintainability**: Easier to maintain and update when following standard patterns
 * **Documentation**: Starter kits come with examples and documentation
 * **Community support**: Easier to get help when using standard approaches
-* **AI context efficiency**: Provides the agent with familiar patterns and structures to work with, reducing the need for extensive explanations and improving code generation accuracy
-* **Reduced token usage**: The agent can reference existing patterns instead of generating everything from scratch, leading to more efficient conversations and fewer context summarizations
+* **AI context efficiency**: Use familiar patterns and structures to work with, reducing the need for extensive explanations and improving code generation accuracy
+* **Reduced token usage**: Reference existing patterns instead of generating everything from scratch, leading to more efficient conversations and fewer context summarizations
 
 ### Protocol
 
-The following four-phase protocol is automatically enforced by the rules system. The agent should follow this protocol automatically when developing extensions:
+The following four-phase protocol is automatically enforced by the rules system. The tools should follow this protocol automatically when developing extensions:
 
 * Phase 1: Requirements analysis and clarification
-  * When the agent asks clarifying questions, provide complete answers.
+  * When asked clarifying questions, provide complete answers.
 * Phase 2: Architectural planning and user approval
-  * When the agent presents a plan, review it carefully before approving.
+  * When presented a plan, review it carefully before approving.
 * Phase 3: Code generation and implementation
 * Phase 4: Documentation and validation
 
 ### Request implementation plans for complex development
 
-For complex development involving multiple runtime actions, touchpoints, or integrations, explicitly request the agent to create a detailed implementation plan. When you see the agent presenting a high-level plan in [Phase 2](#protocol) that involves multiple components, ask for a detailed implementation plan to break it down into manageable tasks:
+For complex development involving multiple runtime actions, touchpoints, or integrations, explicitly request that the AI tools create a detailed implementation plan. When you see a high-level plan in [Phase 2](#protocol) that involves multiple components, ask for a detailed implementation plan to break it down into manageable tasks:
 
 ```terminal
 Create a detailed implementation plan for this complex development.
@@ -201,7 +201,7 @@ Complex Adobe Commerce extensions often involve:
 
 ### Use MCP tools
 
-The agent is instructed to default to MCP tools, but in certain circumstances, it can use CLI commands instead. If you want to ensure MCP tool usage, explicitly request them in your prompt.
+The tooling defaults to MCP tools, but in certain circumstances, it can use CLI commands instead. If you want to ensure MCP tool usage, explicitly request them in your prompt.
 
 If you see CLI commands being used and want to use MCP tools instead, use the following prompt:
 
@@ -212,7 +212,7 @@ Use only MCP tools and not CLI commands
 * MCP tools: aio-app-deploy, aio-app-dev, aio-dev-invoke
 * CLI commands: aio app deploy, aio app dev
 
-The agent may use CLI commands for the following scenarios:
+CLI commands can be used for the following scenarios:
 
 * Complex deployment scenarios
 * Debugging specific issues
@@ -221,9 +221,9 @@ The agent may use CLI commands for the following scenarios:
 
 ### Development
 
-It is important to question unnecessary complexity created by the agent.
+It is important to question unnecessary complexity created by the AI tools.
 
-When the agent adds unnecessary files (`validator.js`, `transformer.js`, `sender.js`) for simple read-only endpoints, use the following prompts:
+When unnecessary files are added (`validator.js`, `transformer.js`, `sender.js`) for simple read-only endpoints, use the following prompts:
 
 ```terminal
 Why do we need these files for a simple read-only endpoint?
@@ -275,9 +275,9 @@ Once local testing is successful, deploy and test in the runtime environment. Ru
 
 1. Check activation logs for debugging
 
-#### Leverage the agent for testing support
+#### Leverage the coding tools for testing support
 
-Ask the agent to help you with testing. The agent can help with debugging, log analysis, and creating appropriate test data for your specific runtime actions.
+Ask for help with testing. The tools can help with debugging, log analysis, and creating appropriate test data for your specific runtime actions.
 
 **Test runtime actions**:
 
@@ -354,19 +354,19 @@ Deploy only modified actions to speed up development. This will reduce the risk 
 
 #### Runtime cleanup
 
-After major changes, leverage the agent to clean up orphaned actions. Let the agent handle the cleanup process systematically, it can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
+After major changes, leverage the tools to clean up orphaned actions. Let the AI tooling handle the cleanup process systematically, it can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
 
 ```terminal
 Help me identify and clean up orphaned runtime actions
 ```
 
-Request the agent to list deployed actions and identify unused ones
+Request the AI tooling to list deployed actions and identify unused ones
 
 ```terminal
 List all deployed actions and identify which ones are no longer needed
 ```
 
-Have the agent remove orphaned actions using appropriate commands
+Have the AI tools remove orphaned actions using appropriate commands
 
 ```terminal
 Remove the orphaned actions that are no longer part of the current implementation
@@ -378,13 +378,13 @@ Use the following best practices when monitoring your application:
 
 #### Watch for context quality indicators
 
-* **Good context**: Agent remembers recent decisions, references correct files
-* **Poor context**: Agent asks for previously provided info, repeats resolved issues
+* **Good context**: AI remembers recent decisions, references correct files
+* **Poor context**: AI asks for previously provided info, repeats resolved issues
 
 #### Track development velocity
 
 * **High velocity**: Clear progress, minimal clarification needed
-* **Low velocity**: Repeated explanations, agent confusion, slow progress
+* **Low velocity**: Repeated explanations, AI confusion, slow progress
 
 #### Monitor cost efficiency
 
@@ -395,7 +395,7 @@ Track token usage patterns:
 
 ## What to avoid
 
-You should avoid the following anti-patterns when using the AI coding agent:
+You should avoid the following anti-patterns when using the AI coding tools:
 
 * **Do not skip the clarification phase** - Always ensure Phase 1 is completed before implementation.
 * **Do not skip testing after each feature** - Test incrementally, don't wait until everything is complete.
