@@ -30,26 +30,31 @@ Using the AI coding agent provides the following benefits:
 
    ```bash
    npm install -g @adobe/aio-cli
+   ```
 
 1. Install the [Adobe I/O CLI Commerce plugin](https://github.com/adobe-commerce/aio-cli-plugin-commerce):
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+   ```
 
 1. Clone the Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
 
    ```bash
    git clone git@github.com:adobe/commerce-integration-starter-kit.git
+   ```
 
 1. Navigate to the starter kit directory:
 
    ```bash
    cd commerce-integration-starter-kit
+   ```
 
 1. Install the Commerce AI extensibility tools by running the interactive setup command:
 
    ```bash
    aio commerce extensibility tools-setup
+   ```
 
   The setup process will prompt you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
 
