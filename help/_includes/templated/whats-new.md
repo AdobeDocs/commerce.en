@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 2, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User management</a> now requires all developers and product admins to add the user role first.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e12b4c18cacd43d73ced180a62d7162a745ced56">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### September 23, 2025
 
 <table style="table-layout:auto;">
