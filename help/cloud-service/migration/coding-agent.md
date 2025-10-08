@@ -398,11 +398,7 @@ Track token usage patterns:
 You should avoid the following anti-patterns when using the AI coding agent:
 
 * **Do not skip the clarification phase** - Always ensure Phase 1 is completed before implementation.
-
 * **Do not skip testing after each feature** - Test incrementally, don't wait until everything is complete.
-
 * **Do not add complexity without root cause analysis** - Question unnecessary file additions and request proper investigation.
-
 * **Do not declare success without real data testing** - Always test with actual data, not just edge cases.
-
 * **Do not forget runtime cleanup** - Always clean up orphaned actions after major changes.
