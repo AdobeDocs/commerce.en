@@ -62,7 +62,7 @@ For detailed information on the permissions granted to each role inside Adobe Co
 
 1. Click **+** to add products.
 
-1. Select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] to give the user access to the cloud manager interface, where they can create and manage Commerce instances, or select the existing Commerce instance to add the admin to. Commerce instances use the following format: `Adobe Commerce - <instance-name> - ACCS - <environment-type> - <tenant-id>`.
+1. Select the existing Commerce instance to add the admin to. Commerce instances use the following format: `Adobe Commerce - <instance-name> - ACCS - <environment-type> - <tenant-id>`.
 
 1. Select the product profile.
 
