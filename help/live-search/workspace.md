@@ -52,10 +52,6 @@ To allow attributes to be searchable, complete the following steps:
 1. Select the attribute you want to be searchable, such as `color`.
 1. Select **Storefront Properties** and set **Use in Search** to `yes`.
 
->[!NOTE]
->
->See [search types](#search-types) to learn how you can configure specific search behaviors for individual attributes to provide more targeted search experiences.
-
 [!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
 
 The following attributes are always searchable:
@@ -64,31 +60,77 @@ The following attributes are always searchable:
 - `name`
 - `categories`
 
-### Search types
+### Layered search and expansion of search types
 
-In addition to the standard search functionality, you can configure specific search behaviors for individual attributes to provide more targeted search experiences. These search types work alongside your main search query to offer shoppers more precise ways to find products.
+Layered search, or search within a search, is a powerful, attribute-based filtering system that extends the traditional search functionality to include additional search parameters. These additional search parameters allow more precise and flexible product discovery.
 
-#### Available search types
+>[!NOTE]
+>
+>Layered search is available in Live Search 4.6.0.
 
-| Field | Description |
-|--- |--- |
-|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete`, you can use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
-|`Contains`| Enables a true "text contained in a string" search instead of an autocomplete search. Use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability). Refer to the [Limitations](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations) for more information.|
-|`Starts with`| Query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability).|
+With layered search you can:
+
+1. Perform a search within the search results.
+1. Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
+
+- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:    
+
+  - **Layer 1 search** - Search for "motor" on "product_attribute_1    
+  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".    
+
+  Layered search supports `startsWith` search indexation and `contains` search indexation. These two search types are available in the second layer of the layered search.
+  
+    - **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:    
+
+        - Searching for products where the attribute value starts with a particular string.    
+        - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse, and the API call should also be a reversed string.    
+
+    - **contains search indexation** - Search an attribute using contains indexation. This new capability allows:    
+
+        - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".    
+
+        >[!NOTE]
+        >    
+        >This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".    
+
+
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
 #### Implementation
 
-You can specify new conditions to enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
+1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable.
 
-![Specify search capability](./assets/search-filters-admin.png)
+    See the list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
-In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**.
+1. Specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. 
 
-#### Use cases
+    ![Specify search capability](./assets/search-filters-admin.png)
 
-You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
 
-See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities. It also updates the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) GraphQL API to include these new search capabilities.
+    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. 
+
+### When to use layered search rather than facets
+
+Layered search and facets serve different purposes in product discovery, and choosing between them depends on your specific use case:
+
+**Use layered search when:**
+
+- You need to search within search results using multiple criteria.
+- Working with part numbers, SKUs, or technical specifications where users know partial information.
+- Users need to narrow down results step-by-step with nested criteria.
+- You want to reduce the number of API calls by combining multiple search criteria in a single query.
+- You need to implement business-specific search patterns that go beyond standard faceted navigation.
+
+**Use facets when:**
+
+- Providing typical category, price, brand, and attribute filtering
+- Offering intuitive filter options that users can easily understand and select
+- Showing available options based on current search results
+- Displaying filter counts and ranges that help users understand available options
+- Working with common product characteristics like color, size, material, and so on.
+
+**Best Practice:** Use layered search for complex, technical searches where users have specific criteria, and use facets for standard e-commerce filtering where users want to explore and narrow down options visually.
 
 ## Facets and synonyms
 
