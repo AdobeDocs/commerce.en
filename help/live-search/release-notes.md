@@ -21,7 +21,8 @@ These notes describe updates that were published outside of a versioned release 
 
 _October 14, 2025_
 
-![New](../assets/new.svg) GA release for the following advanced search capabilities: layered, starts with, and contains. [Learn more](workspace.md#search-types).
+![New](../assets/new.svg) GA release for the following advanced search capabilities: layered starts with and contains. [Learn more](workspace.md#search-types).
+![Fix](../assets/fix.svg) The `ProductInterface` object in the [Live Search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) service has been deprecated. Use the `ProductView` object in the catalog service instead.
 
 _April 29, 2025_
 
@@ -47,7 +48,7 @@ _January 31, 2025_
 
 _September 19, 2024_
 
-![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](workspace.md#search-types).
+![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered starts with and contains. [Learn more](workspace.md#search-types).
 
 _September 4, 2024_
 
