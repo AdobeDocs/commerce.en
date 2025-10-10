@@ -23,8 +23,7 @@ Updates include:
 ## Current major version
 
 ## 103.4.14 Release
-
-Fix static by @duhon in https://github.com/magento-commerce/commerce-data-export-ee/pull/135
+![Fix](../assets/fix.svg) Mview reindex job failed due to absence of "cde_product_overrides_feed_cl" <!--MDEE-1175--> 
 
 ## 103.4.13 Release
 
