@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.14 Release
+
+Fix static by @duhon in https://github.com/magento-commerce/commerce-data-export-ee/pull/135
+
 ## 103.4.13 Release
 
 ![Fix](../assets/fix.svg) Fixed issue where editing Web Configuration settings caused Product Feed Index to reset. <!--MDEE-1154-->
