@@ -22,11 +22,11 @@ This guide walks you through setting up a storefront for your [!DNL Adobe Commer
 Before you begin, gather the following information from your [!DNL Adobe Commerce Optimizer] instance:
 
 * **Tenant ID** (also called the instance ID)
-  * Available from the [instance details page](/get-started.md#manage-an-instance)
+  * Available from the [instance details page](get-started.md#manage-instances)
 * **GraphQL endpoint** for your instance
-  * Available from the [instance details page](/get-started.md#manage-an-instance)
+  * Available from the [instance details page](get-started.md#manage-instances)
 * **Catalog view ID** for the global catalog view
-  * Available from the [catalog details page](/setup/catalog-view#view-details)
+  * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-view)
 * **Source locale** for your catalog view
   * Default for sample data is `en_US`
 
