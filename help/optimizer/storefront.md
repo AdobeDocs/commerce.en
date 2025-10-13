@@ -59,7 +59,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-2. Select **Create New Site (Code & Content)**.
+1. Select **Create New Site (Code & Content)**.
 
 1. Complete the site configuration:
 
@@ -67,7 +67,7 @@ The Site Creator tool creates a complete storefront project with the following c
    * **Site Name**: Choose a descriptive name for your storefront
    * **Commerce GraphQL Endpoint (optional)**: Enter the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance
 
-4. Click **Create Site** to create the GitHub repository with the storefront boilerplate code.
+1. Click **Create Site** to create the GitHub repository with the storefront boilerplate code.
 
    When the repository is created, the Site Creator updates and prompts you to install the Code Sync app.
 
@@ -75,13 +75,13 @@ The Site Creator tool creates a complete storefront project with the following c
 
 1. Click **[!UICONTROL Install AEM Code Sync App]** to open the Code Sync installer in a new tab.
 
-2. Configure the Code Sync app:
+1. Configure the Code Sync app:
    * Select your GitHub organization, then click **[!UICONTROL Configure]**.
    * In the Code Sync interface, click **[!UICONTROL Only select repositories]**.
    * Click the **[!UICONTROL Select repositories]** menu, then choose the storefront code repository you created.
    * Click **[!UICONTROL Save]** to register your repository.
 
-3. Return to the browser window where the Site Creator is open, and click **Create Site**.
+1. Return to the browser window where the Site Creator is open, and click **Create Site**.
 
    The Site Creator copies the storefront boilerplate content to the Document Author environment. This process takes 1-2 minutes.
 
@@ -93,7 +93,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
    Use these links to manage your storefront code, content, and configuration.
 
-2. Copy and save these links for future reference: Click **[!UICONTROL Copy].
+1. Copy and save these links for future reference: Click **[!UICONTROL Copy].
 
 ## Configure your storefront
 
@@ -103,9 +103,9 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
 
    `https://da.live/sheet#/<username or org>/<repo name>/config.json`
 
-2. Locate the `cs` (Catalog Service) section in the configuration.
+1. Locate the `cs` (Catalog Service) section in the configuration.
 
-3. Replace the placeholder values with the values for your instance. See [Prerequisites](#prerequisites).
+1. Replace the placeholder values with the values for your instance. See [Prerequisites](#prerequisites).
 
    ```json
    "cs": {
@@ -115,7 +115,7 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    }
    ```
 
-4. Save the configuration file.
+1. Save the configuration file.
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Test your storefront to ensure it's properly connected to your [!DNL Adobe Comme
 
    Replace `{ORG}` and `{SITE}` with your GitHub organization and site name.
 
-2. **Success criteria**: You should see the storefront homepage with boilerplate content.
+1. **Success criteria**: You should see the storefront homepage with boilerplate content.
 
    ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
@@ -153,7 +153,7 @@ View the default product detail page to verify product data is loading correctly
    >
    >View available SKUs from the [Data Sync](./setup/data-sync.md) page in your [!DNL Adobe Commerce Optimizer] instance.
 
-2. **Success criteria**: The page should display:
+1. **Success criteria**: The page should display:
    * Product name, description, and pricing
    * Product images
    * Add to cart functionality
@@ -167,16 +167,16 @@ Test the default product features, including search and filtering.
 
 1. On the storefront homepage, click the magnifying glass icon in the header.
 
-2. Type the search string `tires` and press **Enter**.
+1. Type the search string `tires` and press **Enter**.
 
-3. **Success criteria**: You should see:
+1. **Success criteria**: You should see:
    * Search results page with tire products
    * Filtering options in the sidebar
    * Product listings with images and pricing
 
    ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
 
-4. Click on any tire product to view its detail page.
+1. Click on any tire product to view its detail page.
 
    ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
