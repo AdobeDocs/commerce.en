@@ -70,7 +70,7 @@ Layered search, or search within a search, is a powerful, attribute-based filter
 
 With layered search you can:
 
-1. Perform a search within the search results.
+1. Enable shoppers to search within the search results.
 1. Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
 
 The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
@@ -84,7 +84,7 @@ The advanced search capabilities are implemented through the `filter` parameter 
 
 - **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
 
-  - Searching for products where the attribute value starts with a particular string.
+  - Searching for products where the attribute value starts with a specified string.
   - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string. For example, if you want to search for a product name that ends with "pants", you need to send this as "stnap".
 
 - **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
@@ -117,7 +117,7 @@ Layered search and facets serve different purposes in product discovery, and cho
 
 - You need to search within search results using multiple criteria.
 - Working with part numbers, SKUs, or technical specifications where users know partial information.
-- Users need to narrow down results step-by-step with nested criteria.
+- Shoppers need to narrow down results step-by-step with nested criteria.
 - You want to reduce the number of API calls by combining multiple search criteria in a single query.
 - You need to implement business-specific search patterns that go beyond standard faceted navigation.
 
