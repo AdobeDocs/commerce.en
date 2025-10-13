@@ -61,7 +61,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
 2. Select **Create New Site (Code & Content)**.
 
-3. Complete the site configuration:
+1. Complete the site configuration:
 
    * **GitHub Organization/Username**: Enter your GitHub username or organization name
    * **Site Name**: Choose a descriptive name for your storefront
