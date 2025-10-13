@@ -6,15 +6,15 @@ recommendations: noCatalog
 ---
 # Salesforce Commerce Connector for [!DNL Adobe Commerce Optimizer]
 
-The [!DNL Salesforce Commerce Connector] integrates your Salesforce Commerce Cloud (SFCC) B2C catalog with [!DNL Adobe Commerce Optimizer], enabling enhanced e-commerce experiences without re-platforming.
+The [!DNL Salesforce Commerce Connector] integrates your Salesforce Commerce Cloud B2C catalog with [!DNL Adobe Commerce Optimizer], enabling enhanced e-commerce experiences without re-platforming.
 
 With the [!DNL Salesforce Commerce Connector], you can:
 
 - **Synchronize catalog data** from Salesforce Commerce Cloud B2C to Adobe Commerce Optimizer without re-platforming your existing commerce infrastructure.
 - **Maintain data consistency** through automated full and delta synchronization processes that keep your product information up to date.
 - **Leverage existing investments** in Salesforce Commerce Cloud while gaining access to Adobe's advanced merchandising and personalization capabilities.
-- **Scale your catalog** using Adobe Commerce Optimizer's high-performance storefront without migrating away from your SFCC backend.
-- **Support complex pricing structures** by synchronizing price books and locale-specific pricing from SFCC.
+- **Scale your catalog** using Adobe Commerce Optimizer's high-performance storefront without migrating away from your Salesforce backend.
+- **Support complex pricing structures** by synchronizing price books and locale-specific pricing from Salesforce.
 - **Enable multi-locale experiences** by ingesting localized product data for different markets and languages.
 
 ## How the Salesforce Connector Works
