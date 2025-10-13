@@ -85,7 +85,7 @@ The advanced search capabilities are implemented through the `filter` parameter 
 - **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
 
   - Searching for products where the attribute value starts with a particular string.
-  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string. For example, if you want to search for a product name that ends with "pants", you need to send this as "stnap".
 
 - **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
 
@@ -101,7 +101,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
     See the list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
-1. Specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. 
+1. Specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. Additionally, for the **Contains** indexation, string length is limited to 50 characters or less.
 
     ![Specify search capability](./assets/search-filters-admin.png)
 
