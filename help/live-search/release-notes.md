@@ -19,6 +19,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_October 1, 2025_
+
+![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
+
 _April 29, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the **Export to CSV** report on the [**Performance**](./performance.md) tab was not including all data specified in the date range.

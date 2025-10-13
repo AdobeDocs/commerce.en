@@ -2,8 +2,20 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 26 15:42:06 2025
+updated: Fri Oct 10 16:46:06 2025
 entries:
+- description: "[User management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    now requires all developers and product admins to add the user role first."
+  versions: ''
+  type: major-update
+  date: October 2, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/252
+  merge_commit: e12b4c18cacd43d73ced180a62d7162a745ced56
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
     for Payment Services v2.12.2.
   versions: ''
