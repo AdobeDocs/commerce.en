@@ -81,7 +81,7 @@ The Site Creator tool creates a complete storefront project with the following c
    * Click the **[!UICONTROL Select repositories]** menu, then choose the storefront code repository you created.
    * Click **[!UICONTROL Save]** to register your repository.
 
-3. Return to the browser window where the Site Creator is open, and click **Complete Site Creation**.
+3. Return to the browser window where the Site Creator is open, and click **Create Site**.
 
    The Site Creator copies the storefront boilerplate content to the Document Author environment. This process takes 1-2 minutes.
 
