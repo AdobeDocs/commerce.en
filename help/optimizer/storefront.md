@@ -13,11 +13,9 @@ This guide walks you through setting up a storefront for your [!DNL Adobe Commer
 
 ## Prerequisites
 
-### Required
-
 * **GitHub account** that can create repositories and is configured for local development (github.com)
 * **[!DNL Adobe Commerce Optimizer] instance** with sample data and configured catalog views and policies
-  * See [Add sample data](get-started.md#add-sample-data) for setup instructions
+  * See [Add sample data](get-started.md#add-sample-data) for setup instructions.
 
 ### Required instance data
 
@@ -38,13 +36,9 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 
 ## Set up steps
 
-1. **[Create your storefront project](#set-up-your-storefront)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
+1. **[Create your storefront project](#create-your-storefront-project)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
 
 1. **[Customize the storefront configuration](#customize-the-storefront-configuration)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
-
-1. **[Create your storefront project](#create-your-storefront-project)** (15 mins)
-   * Use the Site Creator tool to generate boilerplate code, sample content, and configuration files
-   * Install and configure the Code Sync app
 
 1. **[Verify your setup](#verify-your-setup)** (10 mins)
    * Preview your storefront site
