@@ -199,12 +199,12 @@ Use the following guidance to check common issues:
 
 Before proceeding to the next steps, ensure that your storefront is functioning correctly by verifying the following:
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Storefront homepage loads without errors
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) At least one product detail page displays complete information
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Search functionality returns relevant results
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Product images are loading correctly
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Storefront homepage loads without errors<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) At least one product detail page displays complete information<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Search functionality returns relevant results<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Product images are loading correctly<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings<br>
 
 ### Get help
 
@@ -220,7 +220,7 @@ After you setup and verify your storefront, you can:
 
 1. **[Install Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Browser extension for editing, previewing, and publishing content directly from your website
 
-2. **[Set up local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Create a local environment to customize your storefront code and content
+2. **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Create a local environment to customize your storefront code and content
 
 ### Learn and explore
 
