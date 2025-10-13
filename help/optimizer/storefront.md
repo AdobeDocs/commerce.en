@@ -113,7 +113,7 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
 
 2. Locate the `cs` (Catalog Service) section in the configuration.
 
-3. Replace the placeholder values with values from your [Prerequisites](#prerequisites):
+3. Replace the placeholder values with the values for your instance. See [Prerequisites](#prerequisites).
 
    ```json
    "cs": {
@@ -150,10 +150,12 @@ Test your storefront to ensure it's properly connected to your [!DNL Adobe Comme
 View the default product detail page to verify product data is loading correctly.
 
 1. Navigate to a sample product page:
-   `https://main--{SITE}--{ORG}.aem.live/products/foo/{sku}`
+   `https://main--{SITE}--{ORG}.aem.live/products/placeholder/{sku}`
 
    Use any SKU from your sample data, for example:
-   `https://main--{SITE}--{ORG}.aem.live/products/foo/aur-flu-tir-std-2017`
+   `https://main--{SITE}--{ORG}.aem.live/products/placeholder/aur-flu-tir-std-2017`
+
+   For the default storefront, you can use the `placeholder` value in the route to view the product. When you begin customizing your storefront, you can customize the storefront code to set the path to the product detail page based on product routes defined in your catalog.
 
    >[!TIP]
    >
@@ -167,7 +169,7 @@ View the default product detail page to verify product data is loading correctly
 
    ![[!DNL Default product detail page showing a product from the sample data]](./assets/storefront-boilerplate-product-page.png){width="700" zoomable="yes"}
 
-### Step 3: Test search functionality
+### Step 3: Test the default search functionality
 
 Test the default product features, including search and filtering.
 
@@ -199,18 +201,18 @@ Use the following guidance to check common issues:
 | **Code Sync installation fails** | Unable to complete Code Sync setup | 1. Ensure you have admin access to your GitHub organization<br>2. Try using a personal repository instead of an organization<br>3. Check GitHub permissions and try again |
 | **Site not loading** | 404 or connection errors | 1. Verify your site URL format: `https://main--{SITE}--{ORG}.aem.live`<br>2. Check that the Code Sync app is properly installed.<br>3. Ensure that the repository is public or properly configured |
 | **No product data displayed** | Product pages show placeholders or errors | 1. Verify your configuration values in `config.json`<br>2. In the [!DNL Adobe Commerce Optimizer] instance, check the Data Sync page to verify that sample products are loaded. If no products are available, reload the sample data or add a product using the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). <br>3. Wait a few minutes for configuration changes to propagate<br> 4. Try to retrieve the product details using [Catalog Service products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.|
-| **Search returns no results** | Empty search results page | 1. Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer]. Verify the policies, locale, and price books selected in the catalog view configuration. U [Data Sync](./setup/data-sync.md) page<br>2. Verify that the search index is built.<br>|
+| **Search returns no results** | Empty search results page | 1. Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer].<br>2. Verify the policies, locale, and price books selected in the catalog view configuration. U [Data Sync](./setup/data-sync.md) page<br>3. Verify the [attribute metadata settings](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) are set correctly for search.<br>|
 
 ### Validation checklist
 
 Before proceeding to the next steps, ensure that your storefront is functioning correctly by verifying the following:
 
-* [ ] Configuration values match your instance settings
-* [ ] Storefront homepage loads without errors
-* [ ] At least one product detail page displays complete information
-* [ ] Search functionality returns relevant results
-* [ ] Product images are loading correctly
-* [ ] Configuration values match your instance settings
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Storefront homepage loads without errors
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) At least one product detail page displays complete information
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Search functionality returns relevant results
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Product images are loading correctly
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings
 
 ### Get help
 
