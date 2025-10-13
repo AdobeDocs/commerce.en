@@ -73,26 +73,25 @@ With layered search you can:
 1. Perform a search within the search results.
 1. Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
 
-- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:    
+The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
 
-  - **Layer 1 search** - Search for "motor" on "product_attribute_1    
-  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".    
-
-  Layered search supports `startsWith` search indexation and `contains` search indexation. These two search types are available in the second layer of the layered search.
+- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
   
-    - **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:    
+  - **Layer 1 search** - Search for "motor" on "product_attribute_1".
+  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
 
-        - Searching for products where the attribute value starts with a particular string.    
-        - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse, and the API call should also be a reversed string.    
+  Layered search is available for both `startsWith` search indexation and `contains` search indexation in the second layer of the layered search, as described below:
 
-    - **contains search indexation** - Search an attribute using contains indexation. This new capability allows:    
+- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
 
-        - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".    
+  - Searching for products where the attribute value starts with a particular string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
 
-        >[!NOTE]
-        >    
-        >This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".    
+- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
 
+    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
+
+        - Note: This search type is different from the existing [phrase search](#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
