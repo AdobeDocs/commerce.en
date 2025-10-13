@@ -208,7 +208,7 @@ After completing the setup:
 |**Cannot access instance**|Ensure that you're added as a user in the Admin Console.|
 |**Sample data not loading**|Verify your instance credentials and API endpoints.|
 
-### Get Help
+### Get help
 
 - **Developer Resources**: [Developer documentation](https://developer.adobe.com/commerce/services/optimizer/)
 - **Storefront Resources**: [Commerce storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
