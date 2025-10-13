@@ -77,8 +77,8 @@ The advanced search capabilities are implemented through the `filter` parameter 
 
 - **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
   
-  - **Layer 1 search** - Search for "motor" on "product_attribute_1".
-  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
+  - **Layer 1 search** - Search for "motor" on `product_attribute_1`.
+  - **Layer 2 search** - Search for "part number 123" on `product_attribute_2`. This example searches for "part number 123" within the results for "motor".
 
   Layered search is available for both `startsWith` search indexation and `contains` search indexation in the second layer of the layered search, as described below:
 
@@ -87,7 +87,7 @@ The advanced search capabilities are implemented through the `filter` parameter 
   - Searching for products where the attribute value starts with a specified string.
   - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string. For example, if you want to search for a product name that ends with "pants", you need to send this as "stnap".
 
-- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
+- **contains search indexation** - Search an attribute using contains indexation. This new capability allows:
 
     - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
 
