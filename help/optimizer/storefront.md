@@ -71,8 +71,6 @@ The Site Creator tool creates a complete storefront project with the following c
 
    When the repository is created, the Site Creator updates and prompts you to install the Code Sync app.
 
-   ![[!DNL Install Code Sync app]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
-
 ### Step 2: Install Code Sync app
 
 1. Click **[!UICONTROL Install AEM Code Sync App]** to open the Code Sync installer in a new tab.
