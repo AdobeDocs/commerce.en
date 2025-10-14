@@ -18,17 +18,18 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
 
 ### Commerce Optimizer Salesforce Commerce Connector
 
-The [!DNL Commerce Optimizer Salesforce Commerce Connector] is a new App Builder integration starter kit that empowers both administrators and developers to seamlessly connect Salesforce Commerce catalog data with Commerce Optimizer.<!--COMOPT-536-->
+The [!DNL Commerce Optimizer Salesforce Commerce Connector] is a new App Builder integration starter kit that enables Commerce administrators and developers to seamlessly connect Salesforce B2C Commerce catalog data with [!DNL Commerce Optimizer].<!--COMOPT-536-->
 
 **For Admins:**
   * Catalog updates in Salesforce (products, prices, metadata, pricebooks) are automatically synchronized with Commerce Optimizer—no manual intervention required.
   * The integration operates independently from Adobe Commerce, reducing complexity and potential points of failure.
-  * Admins can rely on real-time, accurate catalog data within Commerce Optimizer, improving merchandising and product recommendations.
+  * Admins can rely on scheduled regularly schedule updates to ensure accurate catalog data within Commerce Optimizer, improving merchandising and product recommendations.
 
 **For Developers:**
- * The starter kit provides a streamlined, extensible framework for ingesting Salesforce catalog data into SaaS Catalog Services.
- * All integration logic is decoupled from Adobe Commerce Core, making it easier to maintain and extend.
+ * The starter kit provides a streamlined, extensible framework for ingesting Salesforce catalog data into SaaS Merchandising Services.
  * Reference implementations, design documentation, and code samples are available to accelerate custom integrations or troubleshooting.<!--COMOPT-536-->
+
+>[!ENDSHADEBOX]
 
 ### Layered Search
 
