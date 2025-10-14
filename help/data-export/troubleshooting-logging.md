@@ -15,7 +15,7 @@ Logs are available in the `var/log` directory on the Commerce application server
 | log name | filename | description |
 |-----------------| ----------| -------------|
 | SaaS data export log |`commerce-data-export.log` | Provides information about data export activities, such as entity events and full resync triggers.  Each log record has a specific structure and provides information about the feed, operation, status, elapsed time, process id, and the caller.|
-| SaaS data export error log | `data-export-errors.log` | Provide error messages and stack traces for errors that occur during the data synchronization process.|
+| SaaS data export error log | `data-export-errors.log` | Provides error messages and stack traces for errors that occur during the data synchronization process.|
 | SaaS export log | `saas-export.log` | Provides information about the data sent to Commerce SaaS services.|
 | SaaS export error log | `saas-export-errors.log` | Provides information about errors that occur when sending data to Commerce SaaS services.|
 
