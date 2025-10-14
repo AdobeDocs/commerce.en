@@ -1,138 +1,235 @@
 ---
-title: Salesforce Commerce Connector
-description: Learn about the [!DNL Salesforce Commerce Connector] for [!DNL Adobe Commerce Optimizer] and how to integrate your Salesforce Commerce Cloud catalog data.
-role: Admin, Developer
-recommendations: noCatalog
+title: Set up your storefront
+description: Learn how to set up your [!DNL Adobe Commerce Optimizer] storefront.
+role: Developer
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
+exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 ---
-# Salesforce Commerce Connector for Adobe Commerce Optimizer
+# Set up your storefront
 
-Built on Adobe App Builder technology, the [!DNL Commerce Optimizer Salesforce Commerce Connector] enables seamless transfer and management of catalog data from Salesforce Commerce Cloud B2C to [!DNL Adobe Commerce Optimizer]. It bridges both platform, keeping product information, pricing, and updates in sync–without re-platforming.
+This guide walks you through setting up a storefront for your [!DNL Adobe Commerce Optimizer] instance using Adobe Edge Delivery Services. Your storefront includes boilerplate code, sample content, and support for product detail pages and product discovery (search and filtering).
 
-Out of the box, the connector offers reliable data sync capabilities and the flexibility to customize workflows for your business needs.
+**Estimated time to complete:** 30-45 minutes
 
-## Key Capabilities
+## Prerequisites
 
-* **Catalog Data Sync:** Push product data—including variants, price books, and structures—from Salesforce B2C into Adobe Commerce Optimizer to keep storefronts and experience-driven applications up to date.
-* **Price Sync:** Import and manage price data and hierarchical pricing structures directly from Salesforce B2C.
-* **Supports multiple data types:** Sync products, pricing, and catalog structures to reflect complex merchandising configurations.
+* **GitHub account** that can create repositories and is configured for local development (github.com)
+* **[!DNL Adobe Commerce Optimizer] instance** with sample data and configured catalog views and policies
+  * See [Add sample data](get-started.md#add-sample-data) for setup instructions.
 
-* **Flexible Sync Workflows**
-  * **Scheduled Syncs:** Automate updates using cron job scheduling, no manual effort required.
-  * **On-Demand Updates:** Instantly trigger SKU-level updates for urgent changes, corrections, or product launches.
+### Required instance data
 
-* **Built for Extensibility**
-  * Uses Salesforce cartridges for compatibility and easy adaptation to unique or advanced use cases.
-  * Scales with your business–start with catalog and price sync, then extend the workflows to support additional integrations or business logic.
-  * Configure and evolve workflows without rebuilding core integrations.
+Before you begin, gather the following information from your [!DNL Adobe Commerce Optimizer] instance:
+
+* **Tenant ID** (also called the instance ID)
+  * Available from the [instance details page](get-started.md#manage-instances)
+* **GraphQL endpoint** for your instance
+  * Available from the [instance details page](get-started.md#manage-instances)
+* **Catalog view ID** for the global catalog view
+  * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-view)
+* **Source locale** for your catalog view
+  * Default for sample data is `en_US`
 
 >[!NOTE]
 >
->The connector is specifically designed for Salesforce Commerce Cloud B2C. It does not support Salesforce B2B or D2C products, which are built on different technology stacks.
+>Trial access customers can find the GraphQL endpoint in the welcome email received when your instance was created. Trial instances come pre-configured with sample data, catalog views, and policies.
 
-## Who Benefits from the Salesforce Connector?
+## Set up steps
 
-The [!DNL Salesforce Commerce Connector] is ideal for:
+1. **[Create your storefront project](#create-your-storefront-project)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
 
-* **Existing Salesforce Commerce Cloud B2C customers** enhancing storefront capabilities
-* **Multi-brand organizations** requiring advanced merchandising and personalization features across multiple storefronts
-* **Businesses seeking performance improvements** through Adobe's Edge Delivery Services for faster storefront experiences
-* **Companies with complex pricing structures** syncing sophisticated price books and locale-specific pricing
-* **AEM customers** managing product catalogs from Salesforce Commerce while using Adobe Commerce storefront with Edge Delivery Services
-* **Retailers with multi-locale requirements** syncing localized product information across markets and languages
+1. **[Customize the storefront configuration](#customize-the-storefront-configuration)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
-## Use Cases
+1. **[Verify your setup](#verify-your-setup)** (10 mins)
+   * Preview your storefront site
+   * Test product detail pages and search functionality
 
-The connector supports several key use cases:
+## Create your storefront project
 
-### Catalog data ingestion and storefront display
+The Site Creator tool creates a complete storefront project with the following components:
 
-This primary use case demonstrates the complete data flow from Salesforce Commerce Cloud to the Adobe Commerce storefront:
+* **Site**: Storefront landing page with boilerplate content
+* **Code**: Repository with boilerplate source files
+* **Content**: Document Author environment with site content files
+* **Commerce Config**: `config.json` file for instance-specific configuration
 
-1. **Initial catalog ingestion:** Bulk load your entire Salesforce commerce catalog, including simple products with variants, price books, and pricing information.
-1. **Automated delta updates:** Automatically synchronize product updates from the Salesforce Commerce catalog management UI to Adobe Commerce Optimizer.
-1. **Storefront integration:** Display synchronized catalog data on your Adobe Commerce Edge Delivery Service storefront using Adobe Commerce Optimizer's storefront APIs.
-1. **Real-time updates:** View updated product information (names, prices, descriptions) immediately on your storefront after making changes in Salesforce.
+### Step 1: Generate your project
 
-### Multi-Locale Product Management
+1. Open the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
-Leverage Salesforce Commerce Cloud localization capabilities:
+   ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-* Sync localized versions of product text fields (names, descriptions) from Salesforce Commerce Cloud for different locales.
-* Map Salesforce locale concepts 1:1 with Adobe Commerce Optimizer locales.
-* Support multiple product ingestion cycles for different localizations.
-* Maintain consistency across global product catalogs.
+1. Select **Create New Site (Code & Content)**.
 
-## Architecture and components
+1. Complete the site configuration:
 
-The [!DNL Salesforce Commerce Connector] provides a robust integration layer between your Salesforce Commerce Cloud instance and Adobe Commerce Optimizer. The connector operates through a series of sync actions that transfer your catalog data, price books, and product information.
+   * **GitHub Organization/Username**: Enter your GitHub username or organization name
+   * **Site Name**: Choose a descriptive name for your storefront
+   * **Commerce GraphQL Endpoint (optional)**: Enter the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance
 
-1. **Data Extraction**—The connector authenticates with your Salesforce Commerce instance and extracts catalog data using custom cartridge APIs.
-1. **Data Transformation**—The connector transforms product data to match the Adobe Commerce Optimizer data model and schema requirements.
-1. **Data Ingestion**—The connector securely transmits transformed data to Adobe Commerce Optimizer using the ACO TypeScript SDK.
-1. **Storefront Integration**—Synchronized data becomes available through Adobe Commerce Optimizer's APIs for storefront experiences.
+1. Click **Create Site** to create the GitHub repository with the storefront boilerplate code.
 
-The following diagram illustrates the high-level data flow for the integration:
+   When the repository is created, the Site Creator updates and prompts you to install the Code Sync app.
 
-![Salesforce Commerce Connector Architecture](../assets/sfcc_starter_kit.png){zoomable="yes"}
+### Step 2: Install Code Sync app
 
-### Key Components
+1. Click **[!UICONTROL Install AEM Code Sync App]** to open the Code Sync installer in a new tab.
 
-The [!DNL Commerce Optimizer Salesforce Commerce Connector] consists of several key components:
+1. Configure the Code Sync app:
+   * Select your GitHub organization, then click **[!UICONTROL Configure]**.
+   * In the Code Sync interface, click **[!UICONTROL Only select repositories]**.
+   * Click the **[!UICONTROL Select repositories]** menu, then choose the storefront code repository you created.
+   * Click **[!UICONTROL Save]** to register your repository.
 
-* **ACO SFCC Starter Kit App Builder application**-Provides serverless functions that handle data sync between SFCC and Adobe Commerce Optimizer.
-* **Custom SFCC Cartridge** - Required cartridge that extends your Salesforce Commerce Cloud instance with APIs needed for data extraction.
-* **Sync Engine** - Automated processes for full and delta data sync.
-* **Management UI** - Web interface for monitoring sync status and managing connector operations.
+1. Return to the browser window where the Site Creator is open, and click **Create Site**.
 
+   The Site Creator copies the storefront boilerplate content to the Document Author environment. This process takes 1-2 minutes.
 
-### Sync Process
+### Step 3: Save your project links
 
-The connector supports multiple sync modes.
+1. In the Site Details section, review the links for your storefront project:
 
-| Sync Mode | Description |
-|-----------|-------------|
-| **Full Site Sync** | Performs a comprehensive sync of all products, price books, and prices for your configured Salesforce Commerce Cloud site and locales. This includes <ul><li>product metadata and attributes</li><li>catalog structure and categories</li><li>price books</li><li>pricing information</li><li>multi-locale product data</li></ul> |
-| **Delta Sync** | Retrieves and syncs only changes made in Salesforce product and price data since the last sync, ensuring efficient and timely updates.<br>Delta sync runs automatically on a scheduled basis (default: hourly) to maintain data freshness. |
-| **Targeted Sync Options** | Provides granular sync capabilities: <ul><li>**Price Book Sync** syncs price book information only</li><li>**Metadata Sync** updates product metadata and attribute definitions</li><li>**Specific Product Sync** syncs individual products by SKU</li></ul> |
+   ![[!DNL Storefront setup complete]](./assets/storefront-setup-complete.png){width="700" zoomable="yes"}
 
-## Important considerations
+   Use these links to manage your storefront code, content, and configuration.
 
-When planning your implementation, consider these key factors:
+1. Copy and save these links for future reference: Click **[!UICONTROL Copy].
 
-### Data Mapping and Attributes
+## Configure your storefront
 
-* **Searchable attributes**—Salesforce Commerce Cloud sets searchable attributes through the UI, which the API does not expose. Use the [metadata APIs](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
-* **Attribute mapping**—Plan the mapping of Salesforce Commerce product attributes to Adobe Commerce Optimizer metadata based on your business requirements.
-* **Default searchable fields**—The connector automatically makes core attributes (name, description, ID) searchable by default.
+Update your storefront configuration to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
-### Sync Scope
+1. Open the configuration manager using the link that you saved earlier:
 
-* **Site selection**—Salesforce Commerce Cloud has a concept of sites that catalogs attach to. During full sync, select which Salesforce site to sync.
-* **Locale management**—Each Salesforce Commerce locale results in a separate product ingestion cycle in Adobe Commerce Optimizer.
-* **Data volume**—Consider catalog size and sync frequency when planning implementation.
+   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
 
-## Monitoring and management
+1. Locate the `cs` (Catalog Service) section in the configuration.
 
-Once installed and configured, the [!DNL Commerce Optimizer Salesforce Commerce Connector] provides comprehensive monitoring and management capabilities:
+1. Replace the placeholder values with the values for your instance. See [Prerequisites](#prerequisites).
 
-![Salesforce Commerce Connector Management UI](../assets/sfcc_management_ui.png){width="700" zoomable="yes"}
+   ```json
+   "cs": {
+      "AC-View-ID": "{catalogViewId}",
+      "AC-Environment-ID": "{tenantId}",
+      "AC-Source-Locale": "en_US"
+   }
+   ```
 
-* **Sync Status Tracking**—Monitor the status and timestamps of all sync operations.
-* **Connectivity Validation**—Test connections to both Salesforce Commerce Cloud and Adobe Commerce Optimizer.
-* **Product Data Validation**—Verify that synchronized product data appears correctly in the storefront.
-* **Error Logging and Troubleshooting**—Access detailed logs for diagnosing and resolving sync issues.
-* **State Management**—Track sync progress and prevent conflicts with built-in state management.
+1. Save the configuration file.
 
-## Source code and development resources
+>[!NOTE]
+>
+>The configuration changes may take a few minutes to propagate. If you don't see data immediately, wait 2-3 minutes before troubleshooting.
 
-The [!DNL Commerce Optimizer Salesforce Commerce Connector] is open source and available for customization. Key repositories include:
+## Verify your setup
 
-* **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Main connector application and documentation.
-* **[ACO SFCC Cartridges](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Required SFCC cartridge for API integration.
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - SDK for Adobe Commerce Optimizer integration.
+Test your storefront to ensure it's properly connected to your [!DNL Adobe Commerce Optimizer] instance.
 
-These repositories provide complete source code, detailed documentation, and examples for implementing and customizing the connector.
+### Step 1: View your storefront homepage
 
-## Next Steps
+1. Navigate to your live preview URL:
 
-Ready to integrate your Salesforce Commerce Cloud data with Adobe Commerce Optimizer? Start by reviewing the detailed implementation guide in the [ACO SFCC Starter Kit repository](https://github.com/adobe-commerce/aco-sfcc-starter-kit) and ensure you have the necessary prerequisites in place.
+   `https://main--{SITE}--{ORG}.aem.live`
+
+   Replace `{ORG}` and `{SITE}` with your GitHub organization and site name.
+
+1. **Success criteria**: You should see the storefront homepage with boilerplate content.
+
+   ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
+
+### Step 2: Test product detail pages
+
+View the default product detail page to verify product data is loading correctly.
+
+1. Navigate to a sample product page:
+   `https://main--{SITE}--{ORG}.aem.live/products/placeholder/{sku}`
+
+   Use any SKU from your sample data, for example:
+   `https://main--{SITE}--{ORG}.aem.live/products/placeholder/aur-flu-tir-std-2017`
+
+   For the default storefront, you can use the `placeholder` value in the route to view the product. When you begin customizing your storefront, you can customize the storefront code to set the path to the product detail page based on product routes defined in your catalog.
+
+   >[!TIP]
+   >
+   >View available SKUs from the [Data Sync](./setup/data-sync.md) page in your [!DNL Adobe Commerce Optimizer] instance.
+
+1. **Success criteria**: The page should display:
+   * Product name, description, and pricing
+   * Product images
+   * Add to cart functionality
+   * Data retrieved from your [!DNL Adobe Commerce Optimizer] instance
+
+   ![[!DNL Default product detail page showing a product from the sample data]](./assets/storefront-boilerplate-product-page.png){width="700" zoomable="yes"}
+
+### Step 3: Test the default search functionality
+
+Test the default product features, including search and filtering.
+
+1. On the storefront homepage, click the magnifying glass icon in the header.
+
+1. Type the search string `tires` and press **Enter**.
+
+1. **Success criteria**: You should see:
+   * Search results page with tire products
+   * Filtering options in the sidebar
+   * Product listings with images and pricing
+
+   ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
+
+1. Click on any tire product to view its detail page.
+
+   ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
+
+## Troubleshooting
+
+If you encounter issues during setup, use the web page inspector console to check for errors. Also, try clearing your browser cache or using a different browser.
+
+Use the following guidance to check common issues:
+
+### Common issues
+
+| Issue | Symptoms | Solution |
+|-------|----------|----------|
+| **Code Sync installation fails** | Unable to complete Code Sync setup | <ul><li>Ensure you have admin access to your GitHub organization.</li><li>Try using a personal repository instead of an organization.</li><li>Check GitHub permissions and try again.</li></ul> |
+| **Site not loading** | 404 or connection errors | <ul><li>Verify your site URL format: `https://main--{SITE}--{ORG}.aem.live`</li><li>Check that the Code Sync app is properly installed.</li><li>Ensure that the repository is public or properly configured.</li></ul> |
+| **No product data displayed** | Product pages show placeholders or errors | <ul><li>Verify your configuration values in `config.json`</li><li>In the [!DNL Adobe Commerce Optimizer] instance, check the Data Sync page to verify that sample products are loaded. If no products are available, reload the sample data or add a product using the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Wait a few minutes for configuration changes to propagate.</li><li>Try to retrieve the product details using the Merchandising Service [products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li></ul>|
+| **Search returns no results** | Empty search results page |<ul><li>Verify that you can retrieve the product search results using the Merchandising Services [productSearch query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li><li>Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer].</li><li>In Adobe Commerce Optimizer, verify the configuration of the policies, locale, and price books that you used in the storefront header configuration.</li><li>Verify the [attribute metadata settings](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) are set correctly for search.</li></ul>|
+
+### Validation checklist
+
+Before proceeding to the next steps, ensure that your storefront is functioning correctly by verifying the following:
+
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Storefront homepage loads without errors<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) At least one product detail page displays complete information<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Search functionality returns relevant results<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Product images are loading correctly<br>
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings<br>
+
+### Get help
+
+If issues persist:
+
+* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Check the [Adobe Commerce Optimizer developer guide](https://developer.adobe.com/commerce/services/optimizer/)
+* Visit the [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+
+## Next steps
+
+After you setup and verify your storefront, you can:
+
+1. **[Install Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Browser extension for editing, previewing, and publishing content directly from your website
+
+2. **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Create a local environment to customize your storefront code and content
+
+### Learn and explore
+
+* **[Complete the end-to-end use case](./use-case/admin-use-case.md)** - Learn more about storefront setup and catalog management using [!DNL Adobe Commerce Optimizer]
+
+* **[Explore storefront customization](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Learn advanced setup and configuration options
+
+* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**–Add pre-built components to enhance your storefront experience
+
+>[!MORELIKETHIS]
+>
+> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with Commerce frontend components and backend data.
