@@ -45,7 +45,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 1. [Verify](#4-verify-that-the-data-was-exported) that the catalog data was exported
 1. [Configure](#5-configure-the-data) the data
 1. [Test](#6-test-the-connection) the connection
-1. [Verify](#7-validate-events-are-capturing-data) that events are capturing data
+1. [Validate](#7-verify-that-events-are-capturing-data) that events are capturing data
 1. [Customize](#8-customize-for-your-storefront) your storefront
 
 ## 1. Install the [!DNL Live Search] extension
@@ -165,62 +165,6 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
 
 >[!ENDTABS]
-
-### Install the [!DNL Live Search] beta
-
->[!IMPORTANT]
->
->The following feature is in beta. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
-
-This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
-
-- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
-
-  - **Layer 1 search** - Search for "motor" on "product_attribute_1
-  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
-
-  Layered search is available for both `startsWith` search indexation and `contains` search indexation as described below:
-
-- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
-
-  - Searching for products where the attribute value starts with a particular string.
-  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse, and the API call should also be a reversed string.
-
-- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
-
-    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
-
-      >[!NOTE]
-      >
-      >This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
-
-These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
-
-You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
-
-1. To install the beta, add the following dependency to your project:
-
-    ```bash
-    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
-    ```
-
-1. Commit and push the changes to your `composer.json` and `composer.lock` files to your cloud project. [Learn more](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
-
-   This beta adds **[!UICONTROL Search types]** checkboxes for **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]**, and **[!UICONTROL Starts with]** in the Admin. It also updates the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) GraphQL API to include these new search capabilities.
-
-1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. For beta, be aware that the Admin does not enforce this restriction but it is enforced in API searches.
-
-    ![Specify search capability](./assets/search-filters-admin.png)
-
-1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
-
-### Field descriptions
-
-| Field | Description |
-|--- |--- |
-|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete`, you can use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
-|`Contains`| Enables a true "text contained in a string" search instead of an autocomplete search. Use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability). Refer to the [Limitations](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations) for more information.|
-|`Starts with`| Query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability).|
 
 ## 2. Configure API keys
 

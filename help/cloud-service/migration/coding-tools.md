@@ -1,12 +1,12 @@
 ---
-title: Coding tools for extensions
+title: AI coding tools for extensions
 description: Learn how to use the AI tools for creating Commerce App Builder extensions.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Architect
 hide: yes
 hidefromtoc: yes
 ---
-# Coding tools for extensions
+# AI coding tools for extensions
 
 When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. It can also be used to create new [!DNL App Builder] extensions.
 
