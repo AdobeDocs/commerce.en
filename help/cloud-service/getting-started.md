@@ -91,7 +91,6 @@ As a merchant, you focus on managing products, orders, and storefront content.
 | Import catalog | Learn about how to import your product data to the platform | [Import your catalog](#import-your-catalog) |
 | Access AEM Assets and Product Visuals (optional) | Access the experience manager to start using AEM Assets and Product Visuals | [Access the Experience Manger interface](./user-management.md#access-the-experience-manager-interface) |
 
-
 >[!TAB Developer]
 
 As a developer, you need to know how to build custom integrations and extend platform functionality.
