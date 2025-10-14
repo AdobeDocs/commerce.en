@@ -99,15 +99,15 @@ When planning your implementation, consider these key factors:
 
 ### Data Mapping and Attributes
 
-* **Searchable attributes**—Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [!DNL Catalog Data Ingestion metadata APIs](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
-* **Attribute mapping**—Plan the mapping of Salesforce Commerce B2C product attributes to [!DNL Commerce Optimizer] metadata based on your business requirements.
-* **Default searchable fields**—The connector automatically makes core attributes (`name`, `description`, `ID`) searchable by default.
+* **Searchable attributes:** Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
+* **Attribute mapping:** Plan the mapping of Salesforce Commerce B2C product attributes to [!DNL Commerce Optimizer] metadata based on your business requirements.
+* **Default searchable fields:** The connector automatically makes core attributes (`name`, `description`, `ID`) searchable by default.
 
 ### Sync Scope
 
-* **Site selection**—Salesforce Commerce B2C has a concept of sites that catalogs attach to. During full sync, select which Salesforce site to sync.
-* **Locale management**—Each Salesforce Commerce locale results in a separate product ingestion cycle in [!DNL Commerce Optimizer].
-* **Data volume**—Consider catalog size and sync frequency when planning implementation.
+* **Site selection:** Salesforce Commerce B2C has a concept of sites that catalogs attach to. During full sync, select which Salesforce site to sync.
+* **Locale management:** Each Salesforce Commerce locale results in a separate product ingestion cycle in [!DNL Commerce Optimizer].
+* **Data volume:** Consider catalog size and sync frequency when planning implementation.
 
 ## Monitoring and management
 
@@ -119,11 +119,11 @@ The URL for this interface is provided after you deploy the [!DNL Commerce Optim
 
 Key features include:
 
-* **Sync Status Tracking**—Monitor the status and timestamps of all sync operations.
-* **Connectivity Validation**—Test connections to both Salesforce Commerce Cloud and Adobe Commerce Optimizer.
-* **Product Data Validation**—Verify that synchronized product data appears correctly in the storefront.
-* **Error Logging and Troubleshooting**—Error logs for troubleshooting can be access through the App Builder CLI.
-* **State Management**—Track sync progress and prevent conflicts with built-in state management.
+* **Sync Status Tracking:** Monitor the status and timestamps of all sync operations.
+* **Connectivity Validation:** Test connections to both Salesforce Commerce Cloud and Adobe Commerce Optimizer.
+* **Product Data Validation:** Verify that synchronized product data appears correctly in the storefront.
+* **Error Logging and Troubleshooting:** Error logs for troubleshooting can be access through the App Builder CLI.
+* **State Management:** Track sync progress and prevent conflicts with built-in state management.
 
 ## Source code and development resources
 
