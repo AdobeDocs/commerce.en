@@ -21,19 +21,23 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
 The [!DNL Commerce Optimizer Salesforce Commerce Connector] is a new App Builder integration starter kit that enables Commerce administrators and developers to seamlessly connect Salesforce B2C Commerce catalog data with [!DNL Commerce Optimizer].<!--COMOPT-536-->
 
 **For Admins:**
-  * Catalog updates in Salesforce (products, prices, metadata, pricebooks) are automatically synchronized with Commerce Optimizer—no manual intervention required.
-  * The integration operates independently from Adobe Commerce, reducing complexity and potential points of failure.
-  * Admins can rely on scheduled regularly schedule updates to ensure accurate catalog data within Commerce Optimizer, improving merchandising and product recommendations.
+* Catalog updates in Salesforce (products, prices, metadata, pricebooks) are automatically synchronized with Commerce Optimizer—no manual intervention required.
+* The integration operates independently from Adobe Commerce, reducing complexity and potential points of failure.
+* Admins can rely on scheduled regularly schedule updates to ensure accurate catalog data within Commerce Optimizer, improving merchandising and product recommendations.
 
 **For Developers:**
- * The starter kit provides a streamlined, extensible framework for ingesting Salesforce catalog data into SaaS Merchandising Services.
- * Reference implementations, design documentation, and code samples are available to accelerate custom integrations or troubleshooting.<!--COMOPT-536-->
+* The starter kit provides a streamlined, extensible framework for ingesting Salesforce catalog data into SaaS Merchandising Services.
+* Reference implementations, design documentation, and code samples are available to accelerate custom integrations or troubleshooting.<!--COMOPT-536-->
 
 >[!ENDSHADEBOX]
 
 ### Layered Search
 
 * GA release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types).
+
+### Categories APIs
+
+A new Categories REST API is now available, allowing administrators and developers to programmatically create, update, and manage multiple category trees for navigation and product grouping. The API supports both global and channel-specific configurations and is designed for high scalability, supporting up to 10,000 category trees and 500 categories per tree. For details, see [Categories](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories) in the _Merchandising Services Developer Guide_.<!--DCAT-2649-->
 
 
 >[!ENDSHADEBOX]
