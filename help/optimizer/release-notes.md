@@ -30,6 +30,11 @@ The [!DNL Commerce Optimizer Salesforce Commerce Connector] is a new App Builder
  * All integration logic is decoupled from Adobe Commerce Core, making it easier to maintain and extend.
  * Reference implementations, design documentation, and code samples are available to accelerate custom integrations or troubleshooting.<!--COMOPT-536-->
 
+### Layered Search
+
+* GA release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types).
+
+
 >[!ENDSHADEBOX]
 
 ## August 2025
