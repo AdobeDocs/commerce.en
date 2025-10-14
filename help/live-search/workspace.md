@@ -70,8 +70,8 @@ Layered search, or search within a search, is a powerful, attribute-based filter
 
 With layered search you can:
 
-1. Enable shoppers to search within the search results.
-1. Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
+- Enable shoppers to search within the search results.
+- Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
 
 The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
 
