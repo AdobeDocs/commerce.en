@@ -12,7 +12,7 @@ The release notes contain updates to the following [!DNL Product Recommendations
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
 
-Support is provided for the current major released version. Release notes for older versions are provided for reference.
+Support is provided for the latest released version. Release notes for older versions are provided for reference.
 The release notes include:
 
 ![New](../assets/new.svg) New features
@@ -24,6 +24,10 @@ See the developer documentation to [learn about product support](https://experie
 ## Hosted service updates
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
+
+_October 1, 2025_
+
+![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
 
 _January 31, 2025_
 
