@@ -99,7 +99,7 @@ When planning your implementation, consider these key factors:
 
 ### Data Mapping and Attributes
 
-* **Searchable attributes**—Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [!DNL Catalog Data Ingestion [metadata APIs](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
+* **Searchable attributes**—Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [!DNL Catalog Data Ingestion metadata APIs](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
 * **Attribute mapping**—Plan the mapping of Salesforce Commerce B2C product attributes to [!DNL Commerce Optimizer] metadata based on your business requirements.
 * **Default searchable fields**—The connector automatically makes core attributes (`name`, `description`, `ID`) searchable by default.
 
