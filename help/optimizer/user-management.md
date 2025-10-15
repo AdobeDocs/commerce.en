@@ -1,6 +1,6 @@
 ---
 title: User management
-description: Learn how to manage users in [!DNL Adobe Commerce Optimizer].
+description: Learn how to create and manage users and assign user roles for [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 ---
@@ -77,7 +77,7 @@ The following instructions provide information on how to add users to the [!DNL 
 
 >[!NOTE]
 >
->Only product admins and system admins can add users and developers to the Adobe Commerce as a Cloud Service product.
+>Only product admins and system admins can add users and developers to the Adobe Commerce Optimizer product.
 
 >[!BEGINTABS]
 
