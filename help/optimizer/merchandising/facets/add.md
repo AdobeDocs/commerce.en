@@ -20,9 +20,9 @@ Any filterable product attribute can be used as a facet. Facets help customers f
 
      The facet is added to the bottom of the *Dynamic facets* list and the *Publish changes* button becomes available.
 
-1. If the facet you want to add can't be found, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `searchable` parameter:
+1. If the facet you want to add can't be found, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `filterable` parameter:
 
-   `"searchable": true`
+   `"filterable": true`
 
    The facet becomes available in the storefront the next time the catalog is synchronized with [!DNL Adobe Commerce Optimizer]. If the facet isn't available after two hours, see [data sync](../../setup/data-sync.md).
 

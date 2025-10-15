@@ -23,7 +23,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. If the facet you want to add can't be found, go to **Stores** > Attributes > **Product** and verify that the attribute has the [required properties](facets.md) to be used as a facet. If necessary, update the following storefront properties of the attribute:
 
-     * Use in Search - `Yes`
+     * Use in Search - `No`
      * Use in Search Results Layered Navigation - `Yes`
      * Use in Layered Navigation - `Filterable (with results)`
 
