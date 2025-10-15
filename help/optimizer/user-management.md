@@ -61,7 +61,7 @@ You can assign users to any of the following roles:
 
 1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
 
-    ![select product](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
+    ![select product](/help/cloud-service/assets/backend.png){width="600" zoomable="yes"}
 
 1. Select the [!UICONTROL **Admins**] tab.
 
@@ -111,13 +111,13 @@ The following instructions provide information on how to add users to the [!DNL 
 
 1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product.
 
-    ![select product](./assets/backend.png){width="600" zoomable="yes"}
+    ![select product](/help/cloud-service//assets/backend.png){width="600" zoomable="yes"}
 
 1. Click the [!UICONTROL **Default - Cloud Manager**] product profile.
 
 1. Select the [!UICONTROL **Users**] tab and click [!UICONTROL **Add Users**].
 
-    ![tab select](./assets/tab-select.png){width=600 zoomable="yes"}
+    ![tab select](/help/cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 1. Enter the username or email address of the users you want to add and click [!UICONTROL **Save**].
 
@@ -131,7 +131,7 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 >
 >Assign developers the User role before adding them as developers. The User role is required for basic Commerce permissions.
 
-![tab select](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+![tab select](/help//cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 ## Bulk user management
 
