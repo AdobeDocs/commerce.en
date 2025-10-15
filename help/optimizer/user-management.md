@@ -45,7 +45,7 @@ You can assign users to any of the following roles:
 
 1. Click **+** to add products.
 
-1. Select the existing Commerce instance to add the admin to. Commerce instances use the following format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Select the existing Commerce Optimizer instance to add the admin to. Commerce Optimizer instances use the following format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
 
 1. Select the product profile.
 
