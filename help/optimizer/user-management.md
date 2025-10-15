@@ -73,7 +73,7 @@ You can assign users to any of the following roles:
 
 ## Add users
 
-The following instructions provide information on how to add users to the [!DNL Commerce Cloud Manager] and the Commerce Admin. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Instances. This process is required for all users, including developers and admins.
+The following instructions provide information on how to add users to the [!DNL Commerce Cloud Manager] and Commerce Optimizer. The [!DNL Commerce Cloud Manager] interface allows you to create and manage your Commerce Optimizer instances. This process is required for all users, including developers and admins.
 
 >[!NOTE]
 >
