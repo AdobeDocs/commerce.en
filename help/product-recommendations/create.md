@@ -155,7 +155,7 @@ The readiness indicator percent for recommendation types that depend on catalog 
 
 #### What to do if the readiness indicator percent is low
 
-A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backuprecs) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backup-recommendations) are returned if you deploy this recommendation type anyway.
 
 >[!IMPORTANT]
 >
