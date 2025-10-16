@@ -72,7 +72,7 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search].
+1. Disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]. [!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance.
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
