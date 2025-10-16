@@ -20,7 +20,7 @@ Any filterable product attribute can be used as a facet. Facets help customers f
 
      The facet is added to the bottom of the *Dynamic facets* list and the *Publish changes* button becomes available.
 
-1. If the facet you want to add can't be found, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `filterable` parameter:
+1. If the facet you want to add cannot be found, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `filterable` parameter:
 
    `"filterable": true`
 
