@@ -11,7 +11,7 @@ The following provides boundaries and limits for [!DNL Adobe Commerce Optimizer]
 
 ## Catalog
 
-- The guaranteed rate of catalog ingestion is: 1000 products/minute and 5000 prices/minute.
+- The guaranteed rate of catalog ingestion is: 1,000 products/minute and 5,000 prices/minute.
 - The base number of product updates per day is 1,000,000.
 - The total number of SKUs allowed in a single instance is 250,000. 
 - The maximum number of catalog sources is 50.
@@ -28,13 +28,13 @@ The following provides boundaries and limits for [!DNL Adobe Commerce Optimizer]
 - The maximum number of filterable attributes is 200.
 - The maximum number of searchable attributes is 200.
 - The maximum number of sortable attributes is 50.
-- The maximum number of facets is 100. All the facets must be filterable attributes.
-- The maximum number of options a single facet cat returns is 100, which can be increased per support request.
+- The maximum number of facets is 100. All facets must be filterable attributes.
+- The maximum number of options a single facet can return is 100, which can be increased per support request.
 
 ## Catalog views and policies
 
-- The maximum number of catalog views per tenant is 1000.
-- The maximum number of polices assigned to one catalog view is 10.
+- The maximum number of catalog views per tenant is 1,000.
+- The maximum number of policies assigned to one catalog view is 10.
 - The maximum number of attribute values used in a policy is 100. 
 
 ## Recommendations

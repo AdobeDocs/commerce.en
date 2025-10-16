@@ -12,19 +12,18 @@ After the [!DNL Catalog Service] is enabled, you can access the service and use 
 
 The [!DNL Catalog Service] is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries. The service is available in both SaaS and PaaS environments.
 
-
 [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 
-| Environment | Endpoint    |
-|------------ | ----------: |
-| **Testing**    | `https://catalog-service-sandbox.adobe.io/graphql` |
+| Environment  | Endpoint    |
+| ------------ | ----------: |
+| **Testing**  | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Production** | `https://catalog-service.adobe.io/graphql` |
 
 [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
-|  Environment | Endpoint |
-| ------------ | --------:|
-| Testing | `https://na1-sandbox.api.commerce.adobe.com/{{tenant-id}}/graphql` |
+| Environment | Endpoint |
+| ----------- | --------:|
+| Testing     | `https://na1-sandbox.api.commerce.adobe.com/{{tenant-id}}/graphql` |
 | Production (Not available yet) | `https://na1.api.commerce.adobe.com/{{tenant-id}}/graphql` |
 
 **URL structure for SaaS endpoints**
@@ -39,15 +38,13 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 For details about using the Catalog Service GraphQL API, see the [Catalog Service for Adobe Commerce Guide](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) in the *Adobe Commerce Developer* documentation.
 
-
 ## Integrate with a headless storefront or third-party services
 
 To integrate with a headless storefront, you must update the storefront configuration to enable communication between the storefront and the [!DNL Catalog Service] to retrieve product and category data.
 
-If you are using Adobe Commerce storefront on Edge Delivery Services, you add the Catalog Service endpoint to the storefront configuration. For details, see the [Edge Delivery Services documentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
+If you are using Adobe Commerce storefront on Edge Delivery Services, add the Catalog Service endpoint to the storefront configuration. For details, see the [Edge Delivery Services documentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 For other integrations, see the project setup documentation for details on how to configure integrations between the service and backend data sources.
-
 
 ### Firewall configuration
 

@@ -52,4 +52,7 @@ recommendations: noDisplay
 - [Settings](settings.md)
 - Use Case {#use-case}
    - [Storefront and Catalog Administrator End-to-End Use Case](./use-case/admin-use-case.md)
-- [Developer Guide](https://developer.adobe.com/commerce/services/optimizer/)
+- Developer Resources {#developer}
+   - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
+   - [Data Ingestion REST API Reference](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [Merchandising GraphQL API Reference](https://developer.adobe.com/commerce/services/reference/graphql/)
