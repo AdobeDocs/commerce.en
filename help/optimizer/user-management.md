@@ -1,5 +1,5 @@
 ---
-title: User management
+title: User and Identity Management
 description: Learn how to create and manage users and assign user roles for [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
