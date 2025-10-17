@@ -281,5 +281,5 @@ After adding a user to AEM Assets, they can access the [!DNL Experience Manager]
 
 ## Identity management and single sign-on configuration
 
-{{#ims-identity-and-sso-config}}
+{{ims-identity-and-sso-config}}
 
