@@ -9,7 +9,7 @@ recommendations: noDisplay
 
 - [What is Adobe Commerce Optimizer?](overview.md)
 - [Get Started](get-started.md)
-- [User Management](user-management.md)
+- [User Management and Identity Management](user-management.md)
 - [Shared Responsibility](shared-responsibility.md)
 - [Boundaries and Limitations](boundaries-limits.md)
 - [Release notes](release-notes.md)
