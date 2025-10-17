@@ -6,6 +6,7 @@
 >
 >This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
 
+<!--
 ## Nav hack ACCS {#nav-hack-accs}
 
 >[!BEGINSHADEBOX]
@@ -21,6 +22,7 @@
 </table>
 
 >[!ENDSHADEBOX]
+-->
 
 ## IMS Identity and Single Sign-On Information {#ims-identity-and-sso-config}
 
