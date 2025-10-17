@@ -10,7 +10,7 @@ recommendations: noDisplay, noCatalog
 - [Adobe Commerce as a Cloud Service](overview.md)
 - [Feature comparison](feature-comparison.md)
 - [Getting started](getting-started.md)
-- [User management](user-management.md)
+- [User and identity management](user-management.md)
 - [Storefront](storefront.md)
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
