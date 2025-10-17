@@ -142,4 +142,4 @@ You can add multiple users more efficiently with one of the following methods:
 
 ## Identity management and single sign-on configuration
 
-{{#ims-identity-and-sso-config}}
+{{ims-identity-and-sso-config}}
