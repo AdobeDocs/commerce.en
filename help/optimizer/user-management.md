@@ -140,8 +140,7 @@ You can add multiple users more efficiently with one of the following methods:
 - Use the **Add Users by CSV** feature in the Adobe Admin Console to perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 - Add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then, add the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product to the user group.
 
-## Identity and Single Sign-On
+## Identity management and Single Sign-On configuration
 
-Adobe Commerce identity management and authentication is managed by the Adobe Identity Management System (IMS) through the Adobe Admin Console.
+{{$include /help/_includes/identity-management-sso.md}}
 
-For information about identity configuration options from the Adobe Admin Console including Adobe ID, Enterprise ID, and Federated ID, and instructions for configuring Single Sign-On (SSO) for secure access to Adobe apps, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html) in the *Enterprise Admin Console* documentation.

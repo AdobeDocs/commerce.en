@@ -278,3 +278,7 @@ After adding a user to AEM Assets, they can access the [!DNL Experience Manager]
 
 * [Configure AEM Assets to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
 * [Integrate AEM Assets with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+
+## Identity management and Single Sign-On configuration
+
+{{$include /help/_includes/identity-management-sso.md}}
