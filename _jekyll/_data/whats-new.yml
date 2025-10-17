@@ -2,8 +2,34 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 10 16:46:06 2025
+updated: Fri Oct 17 16:39:11 2025
 entries:
+- description: Updated [User Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    steps for adding a user.
+  versions: ''
+  type: major-update
+  date: October 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/257
+  merge_commit: 4088b88553cbdd328a55f3483b20ea073e6c78b2
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated the [storefront set up guide](https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront)
+    for Adobe Commerce Optimizer to provide instructions for creating storefront project
+    with the Site Creator tool, customizing the storefront configuration, and verifying
+    the site and catalog data by checking the default product detail and product search
+    results pages.
+  versions: ''
+  type: major-update
+  date: October 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/178
+  merge_commit: 4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c
+  contributor: meker
+  membership:
+  labels:
+  - major-update
 - description: "[User management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
     now requires all developers and product admins to add the user role first."
   versions: ''
