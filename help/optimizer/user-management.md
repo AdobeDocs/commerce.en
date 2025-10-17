@@ -142,7 +142,9 @@ You can add multiple users more efficiently with one of the following methods:
 
 ## Identity and Single Sign-On
 
-Adobe Commerce Optimizer identity management and authentication is managed by the Adobe Identity Management System (IMS) through the Adobe Admin Console. For information about identity configuration options including Adobe ID, Enterprise ID, and Federated ID, and instructions for configuring Single Sign-On (SSO) for secure access to Adobe apps, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html) in the *Enterprise Admin Console* documentation.
+Adobe Commerce Optimizer identity management and authentication is managed by the Adobe Identity Management System (IMS) through the Adobe Admin Console.
+
+For information about identity configuration options from the Adobe Admin Console including Adobe ID, Enterprise ID, and Federated ID, and instructions for configuring Single Sign-On (SSO) for secure access to Adobe apps, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html) in the *Enterprise Admin Console* documentation.
 
 
 
