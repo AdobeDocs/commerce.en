@@ -19,7 +19,7 @@ Using the AI coding tools provides the following benefits:
 
 ## Prerequisites
 
-* [Cursor](https://cursor.com/download)
+* A coding agent, such as [Cursor](https://cursor.com/download)(recommended), [Github Copilot](https://github.com/features/copilot), [Google Gemini CLI](https://github.com/google-gemini/gemini-cli), or [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
@@ -62,6 +62,16 @@ Using the AI coding tools provides the following benefits:
   ? Where would you like to setup the tools?
   ❯ Current directory
     New directory
+  ```
+
+  When selecting the coding agent, Adobe recommends selecting `Cursor` for the best development experience:
+
+  ```terminal
+  ? Which coding agent would you like to use?
+  ❯ Cursor
+    Copilot
+    Gemini CLI
+    Claude Code
   ```
 
   When selecting the package manager, Adobe recommends using `npm` for consistency:
