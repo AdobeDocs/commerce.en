@@ -40,6 +40,8 @@ _October 17, 2025_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1155 --> Improved overall stability of custom attributes. Custom attributes now update correctly when using asynchronous APIs.
 
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1074 --> Now, the [product-asset synchronization](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank} does not fail when a base link URL is defined.
+
 ## v1.2.3
 
 _October 2, 2025_
