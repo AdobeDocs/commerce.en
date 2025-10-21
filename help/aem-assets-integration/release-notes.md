@@ -32,6 +32,22 @@ _February 11, 2025_
 
 +++
 
+## v1.2.4
+
+_October 17, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1155 --> Improved overall stability of custom attributes. Custom attributes now update correctly when using asynchronous APIs.
+
+## v1.2.3
+
+_October 2, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1135 --> Fixed an issue with updating product attributes. Product attributes now update as expected, and an appropriate error is returned instead of a 200 response when updates fail.
+
 ## v1.2.2
 
 _September 18, 2025_
