@@ -33,7 +33,7 @@ If you have a large number of attributes to contend with, consider combining att
 |--- |--- |
 | [Category display settings](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anchor - `Yes` |
 | [Attribute properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Catalog Input type](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget only), `Text swatch` (widget only) |
-| Attribute storefront properties | Use in Search -  `No` <br/> Use in Search Results Layered Navigation - `Yes` |
+| Attribute storefront properties | Use in Search Results Layered Navigation - `Yes` |
 
 ## Facet aggregation
 
