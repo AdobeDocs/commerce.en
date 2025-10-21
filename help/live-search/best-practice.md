@@ -57,7 +57,7 @@ Filter and facet functionality is a critical component of your [!DNL Commerce] s
 
 To set up a product attribute as a facet, it must have the following [properties set](facets-add.md#step-1-add-a-facet):
 
-- **[!UICONTROL Use in Search]** -  `Yes`
+- **[!UICONTROL Use in Search]** -  `No`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
