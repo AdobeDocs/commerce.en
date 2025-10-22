@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.15 Release
 
-### ![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension,  see [Data Feed Sync Status Monitoring](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension,  see [Data Feed Sync Status Monitoring](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
 
 ## 103.4.14 Release
 
