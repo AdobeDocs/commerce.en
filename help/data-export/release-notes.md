@@ -24,11 +24,7 @@ Updates include:
 
 ## 103.4.15 Release
 
-![Fix](../assets/fix.svg) Fix integration fail. <!--MDEE-1172-->
-![Fix](../assets/fix.svg) Unrounded Price. <!--MDEE-1187-->
-![Fix](../assets/fix.svg) fix copyright. <!--MDEE-1186-->
 ![Fix](../assets/fix.svg) Admin user can see feed sync status in Admin panel. <!--MDEE-954-->
-![Fix](../assets/fix.svg) Refactoring integration tests. <!--MDEE-1186-->
 
 ## 103.4.14 Release
 
