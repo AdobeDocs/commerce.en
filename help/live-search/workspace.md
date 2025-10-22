@@ -139,7 +139,7 @@ Facets and synonyms are another way you can enahnce the search experience for yo
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
+>A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = No*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 
@@ -177,3 +177,51 @@ Prices in the Widget Product Listing Page and Popover are converted to the Defau
 ### Search terms
 
 [!DNL Live Search] supports [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) on implementations where Adobe Commerce handles the routing, such as on Luma and other php-based themes.
+
+## Default attribute values
+
+The following product attributes have [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are used by [!DNL Live Search] and enabled by default.
+
+| Property | Storefront Property | Attribute |
+|---|---|---|
+| Sortable | Used for Sorting in Product Listing | `price`|
+| Searchable | Use in Search | `price` <br />`sku`<br />`name`|
+| FilterableInSearch | Use in Layered Navigation - Filterable (with results)| `price`<br />`visibility`<br />`category_name`|
+
+## Default non-system attribute properties
+
+The following table shows the default search and filterable properties of non-system attributes, including those that are specific to the Luma sample data. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Live Search] and native Adobe Commerce.
+
+| Attribute Code | Searchable | Use in Layered Navigation |
+|--- |--- |--- |
+| activity | Yes | Filterable (with results) |
+| attributes_brand | Yes | No |
+| brand | Yes | No |
+| climate | Yes | Filterable (with results) |
+| collar | Yes | Filterable (with results) |
+| color | Yes | Filterable (with results) |
+| cost | Yes | No |
+| eco_collection | Yes | Filterable (with results) |
+| gender | Yes | Filterable (with results) |
+| manufacturer | Yes | Filterable (with results) |
+| material | Yes | Filterable (with results) |
+| purpose | Yes | Filterable (with results) |
+| strap_bags | Yes | Filterable (with results) |
+| style_general | Yes | Filterable (with results) |
+
+## Default system attribute properties
+
+The following table shows the default search and filterable properties of system attributes.
+
+| Attribute Code | Searchable | Use in Layered Navigation |
+|--- |--- |--- |
+| allow_open_amount | Yes | Filterable (with results) |
+| description | Yes | No |
+| name | Yes | No |
+| price | Yes | Filterable (with results) |
+| short_description | Yes | No |
+| sku | Yes | No |
+| status | Yes | No |
+| tax_class_id | Yes | No |
+| url_key | Yes | No |
+| weight | Yes | No |

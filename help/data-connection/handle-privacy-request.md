@@ -25,7 +25,7 @@ Privacy Service supports two types of requests: **data access** and **data delet
 
 >[!NOTE]
 >
->This article focuses on making privacy requests for [!DNL Commerce]. If you plan to make privacy requests for [Platform data lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [ Real-Time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy), or [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), refer to their respective user guides. Note that delete and access requests must be made to each system individually, as a privacy request to Commerce does not remove data from all of these systems.
+>This article focuses on making privacy requests for [!DNL Commerce]. If you plan to make privacy requests for [Platform data lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [Real-Time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy), or [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), refer to their respective user guides. Note that delete and access requests must be made to each system individually, as a privacy request to Commerce does not remove data from all of these systems.
 
 ## Data access
 
