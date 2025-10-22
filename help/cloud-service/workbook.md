@@ -25,11 +25,11 @@ Before you begin, complete the following prerequisites:
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
   ```
 
-* Download an AI-assisted IDE, such as [!DNL Cursor](https://cursor.com/download)(recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in this tutorial.
+* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in this tutorial.
 
 ### Create a new project on Adobe Developer Console
 
-1. Navigate to [!DNL Adobe Developer Console](https://developer.adobe.com/).
+1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
 1. Click [!UICONTROL **Create project from a template**].
 1. Select the [!UICONTROL **App Builder**] template.
 1. Enter a [!UICONTROL **Project Title**] and [!UICONTROL **App Name**].
@@ -118,9 +118,9 @@ The following items are required to complete the [storefront](#connect-to-the-st
 
 * Bash shell
   * macOS/Linux: No installation required
-  * Windows: Use [!DNL Git Bash](https://git-scm.com/install) or [!DNL Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
+  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-* [!DNL Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
+* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
 
 ## Clone integration starter kit
 
@@ -152,7 +152,7 @@ cd ratings-extension
    OAUTH_ORG_ID=
    ```
 
-   You can copy these values from the **[!UICONTROL Credential details]** page in the [!DNL Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
+   You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
 
 ![OAuth credentials](./assets/oauth-credentials.png){width="600" zoomable="yes"}
 
