@@ -3,7 +3,7 @@ title: 'Migrate to [!DNL Adobe Commerce as a Cloud Service]'
 description: Learn how to migrate to [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
-role: Architect
+role: Developer
 ---
 # Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
@@ -28,6 +28,7 @@ role: Architect
 * **Edge Delivery Services**: Impact on front-end performance and deployment.
 
 **New tooling & concepts**
+
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
 * [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)

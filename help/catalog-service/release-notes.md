@@ -62,7 +62,7 @@ _May 23, 2024_
 
 ![Fix](../assets/fix.svg) <!--DATA-5033-->The `InStock` flag for option values now takes into account the scoped `enabled` status of the product variant.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Add support for product prices that require large numbers (up to 16 digits) and greater decimal precision (up to 4 decimal places). To apply the price configuration updates to your existing catalog, resync catalog data from the [Data Management dashboard ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), or by using the [Adobe Commerce command-line interface](../landing/catalog-sync.md#command-line-interface).
+![Fix](../assets/fix.svg) <!--DATA-5888-->Add support for product prices that require large numbers (up to 16 digits) and greater decimal precision (up to 4 decimal places). To apply the price configuration updates to your existing catalog, resync catalog data from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), or by using the [Adobe Commerce command-line interface](../landing/catalog-sync.md#command-line-interface).
 
 #### Known limitations
 
