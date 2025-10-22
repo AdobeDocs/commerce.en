@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.2.5
+
+_October 22, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1161 --> Fixed an issue where updating the position of an existing image mapping in the Adobe Commerce Admin resulted in a PHP type error.
+
 ## v1.2.4
 
 _October 17, 2025_
