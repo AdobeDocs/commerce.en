@@ -46,7 +46,7 @@ The following table shows the default search and filterable properties of non-sy
 | collar | Yes | 
 | color | Yes | 
 | cost | Yes |
-| eco_collection |
+| eco_collection ||
 | gender | Yes | 
 | manufacturer | Yes | 
 | material | Yes | 
