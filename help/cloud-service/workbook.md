@@ -2,6 +2,8 @@
 title: Adobe Commerce SaaS extension workbook
 description: Learn how to build a product ratings extension for Adobe Commerce as a Cloud Service using App Builder and AI-assisted development tools.
 role: Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Ratings extension tutorial
 
