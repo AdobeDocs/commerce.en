@@ -20,7 +20,7 @@ node --version
 # Check npm version (should be 11.6.0 or higher)
 npm --version
 
-# Check Git (optional, skip if using zip file)
+# Check Git
 git --version
 
 # Check Bash
