@@ -16,7 +16,7 @@ recommendations: noDisplay, noCatalog
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
 - [Ratings extension tutorial](workbook.md)
-  - [Ratings extension prerequisites](workbook-prerequisites.md)
+- [Ratings extension prerequisites](workbook-prerequisites.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
