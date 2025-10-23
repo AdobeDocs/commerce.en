@@ -180,7 +180,7 @@ The agent provides the location of the new action and a testing strategy.
 Test the API manually using cURL in a terminal:
 
 ```bash
-curl -s "https://<app-name>.adobeioruntime.net/api/v1/web/ratings-extension/get-ratings?sku=24-MB01"
+curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
 ![cURL test](./assets/curl-test.png){width="600" zoomable="yes"}
