@@ -55,7 +55,7 @@ If the [prerequisites](#verify-prerequisites) are installed, download and run th
 
 ## Install AI tools
 
-Set up the AI-assisted development tools:
+Set up the AI-assisted development tools in the `extension` directory:
 
 ```bash
 aio commerce extensibility tools-setup
