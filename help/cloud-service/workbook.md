@@ -1,196 +1,59 @@
 ---
-title: Adobe Commerce SaaS extension workbook
+title: Ratings extension tutorial
 description: Learn how to build a product ratings extension for Adobe Commerce as a Cloud Service using App Builder and AI-assisted development tools.
 role: Developer
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension tutorial
+# Ratings extension lab
 
-This tutorial guides you through building a product ratings extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools.
+This lab guides you through building a product ratings extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools.
 
-## Prerequisites
+## Verify prerequisites
 
-Before you begin, complete the following prerequisites:
-
-* Install the [!DNL Adobe I/O CLI]
-
-   ```bash
-   npm install -g @adobe/aio-cli
-   ```
-
-* Install the Commerce plugin
-
-  ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
-  ```
-
-* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in this tutorial.
-
-### Create a new project on Adobe Developer Console
-
-1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
-1. Click [!UICONTROL **Create project from a template**].
-1. Select the [!UICONTROL **App Builder**] template.
-1. Enter a [!UICONTROL **Project Title**] and [!UICONTROL **App Name**].
-1. Ensure the **[!UICONTROL Include Runtime]** checkbox is marked.
-
-   ![Create project with App Builder template](./assets/app-builder-template.png){width="600" zoomable="yes"}
-
-1. Click **Save**.
-
-### Add APIs to the workspace
-
-1. Click the [!UICONTROL **Stage**] workspace and add then repeat the following steps for each API.
-
-   ![APIs added to workspace](./assets/add-apis-workspace.png){width="600" zoomable="yes"}
-
-1. Click [!UICONTROL **Add Service**] and select [!UICONTROL **API**].
-
-1. Select the [!UICONTROL **Adobe Services**] filter and select one of the following APIs:
-
-   * [!UICONTROL **I/O Management API**]
-   * [!UICONTROL **I/O Events**]
-
-1. Select the [!UICONTROL **Experience Cloud**] filter and select one of the following APIs:
-
-   * [!UICONTROL **Adobe I/O Events for Adobe Commerce**]
-
-1. Click [!UICONTROL **Next**].
-
-1. Click[!UICONTROL **Save configured API**].
-
-1. Repeat the previous steps until all APIs are added to the workspace.
-
-   ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"}
-
-### Download workspace configuration
-
-1. On the [!UICONTROL **Workspace overview**] tab, click the [!UICONTROL **Download all**] button.
-1. Save the file as `workspace.json` on your desktop.
-
-### Configure the AIO CLI
-
-1. Clear the existing configuration:
-
-   ```bash
-   aio config clear
-   ```
-
-   Log in using the AIO CLI:
-
-   ```bash
-   aio auth login
-   ```
-
-1. Select your organization, project, and workspace, using each of the following commands:
-
-   ```bash
-   aio console org select
-   ```
-
-   ```bash
-   aio console project select
-   ```
-
-   ```bash
-   aio console workspace select
-   ```
-
-   ![CLI configuration](./assets/cli-configuration.png){width="600" zoomable="yes"}
-
-### Storefront prerequisites
-
-The following items are required to complete the [storefront](#connect-to-the-storefront) section of this tutorial and see the product ratings in your store.
-
-* Install [!DNL Node.js] (`22.14.0` or higher) and npm (`11.6.0` or higher). Verify your installation:
-
-   ```bash
-   node --version
-   npm --version
-   ```
-
-* Install [Git](https://git-scm.com) (Optional) - Required only if [cloning the repository directly](#option-a-clone-the-repository-recommended)(recommended), not needed if you [download the zip file](#option-b-download-the-zip-file). Verify your installation:
-
-  ```bash
-  git --version
-  ```
-
-* Bash shell
-  * macOS/Linux: No installation required
-  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
-
-* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
-
-## Clone integration starter kit
-
-Clone the Commerce integration starter kit repository and prepare your project:
+Verify the following prerequisites are installed:
 
 ```bash
-git clone https://github.com/adobe/commerce-integration-starter-kit.git
-mv commerce-integration-starter-kit ratings-extension
-cd ratings-extension
+# Check Node.js version (should be 22.14.0 or higher)
+node --version
+
+# Check npm version (should be 11.6.0 or higher)
+npm --version
+
+# Check Git (optional, skip if using zip file)
+git --version
+
+# Check Bash
+bash --version
 ```
 
-![Clone starter kit](./assets/clone-starter-kit.png){width="600" zoomable="yes"}
+## Run the setup script
 
-## Create and update .env file
+If the [prerequisites](#verify-prerequisites) are installed, download and run the setup script. Alternatively, you can manually setup the script by following the [lab prerequisites](workbook-prerequisites.md) steps.
 
-1. Create your environment configuration file:
+1. Clone the repository that contains the setup script:
 
    ```bash
-   cp env.dist .env
+   git clone https://github.com/adobe-commerce/commerce-adl-2025.git
    ```
 
-1. Open the `.env` file in a text editor and add the following OAuth credentials:
+1. Navigate into the repository:
 
-   ```text
-   OAUTH_CLIENT_ID=
-   OAUTH_CLIENT_SECRET=
-   OAUTH_TECHNICAL_ACCOUNT_ID=
-   OAUTH_TECHNICAL_ACCOUNT_EMAIL=
-   OAUTH_ORG_ID=
+   ```bash
+   cd commerce-adl-2025
    ```
 
-   You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
+1. Run the setup script:
 
-![OAuth credentials](./assets/oauth-credentials.png){width="600" zoomable="yes"}
+   ```bash
+   bash adl-setup.sh
+   ```
 
-### Add the Commerce configuration
+   While the script is running, you will be prompted to enter your username and password, which will be provided during the lab. Your username will reflect your location and seat number. For example, if you are in San Jose, CA, seat 123, your username will be `sjc-adl-123`.
 
-Add the following Commerce instance details to your `.env` file:
+   Additionally, you should select the project that corresponds to your seat number and the **stage** workspace.
 
-```text
-COMMERCE_BASE_URL=
-COMMERCE_GRAPHQL_ENDPOINT=
-```
-
-To find these values:
-
-1. Go to [Commerce Cloud Service instances](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
-1. Click the information icon next to your assigned seat.
-1. Copy the REST endpoint as `COMMERCE_BASE_URL`.
-1. Copy the GraphQL Endpoint as `COMMERCE_GRAPHQL_ENDPOINT`.
-
-### Set event prefix
-
-Set a temporary value for the event prefix:
-
-```text
-EVENT_PREFIX=test
-```
-
-## Connect local workspace to remote workspace
-
-Link your local project to the remote workspace:
-
-```bash
-aio app use
-```
-
-![Connect to workspace](./assets/connect-workspace.png){width="600" zoomable="yes"}
-
-## Install AI Tools
+## Install AI tools
 
 Set up the AI-assisted development tools:
 
@@ -235,7 +98,9 @@ Use the following prompt in [!DNL Cursor]:
 1. Enter the following prompt:
 
    ```text
-   Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings. Implement a REST API to handle GET ratings requests. GET requests will have to support the following query parameters:
+   Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
+   Implement a REST API to handle GET ratings requests.
+   GET requests will have to support the following query parameters:
 
    sku -> product SKU
    ```
@@ -253,16 +118,25 @@ The agent researches the requirements and asks clarifying questions. Answer the 
 Use the following response to answer the agent's questions:
 
 ```text
-Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront, but we do not need any authentication for the GET API because guest users should be able to use it on the storefront. This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required. Let's start with just the GET API for now, we will implement other CRUD operations at a later time. We do not need a DB or storage mechanism right now, just return random ratings data between 1 and 5 and a ratings count between 1 and 1000. The API should only return the average rating for the product and the total number of ratings. We do not need to add tests right now.
+Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
+but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
+This extension will be called directly from the storefront,
+no async invocation, such as events or webhooks, is required.
+Let's start with just the GET API for now,
+we will implement other CRUD operations at a later time.
+We do not need a DB or storage mechanism right now,
+just return random ratings data between 1 and 5 and a ratings count between 1 and 1000.
+The API should only return the average rating for the product and the total number of ratings.
+We do not need to add tests right now.
 ```
 
-The agent creates a `REQUIREMENTS.md` file that serves as the source of truth for the implementation.
+The agent creates a `requirements.md` file that serves as the source of truth for the implementation.
 
 ![Requirements file created](./assets/requirements-file.png){width="600" zoomable="yes"}
 
 ### Verify the requirements and plan architecture
 
-1. Review the `REQUIREMENTS.md` file.
+1. Review the `requirements.md` file.
 1. If everything looks correct, instruct the agent to move to **Phase 2 - Architecture Planning**.
 1. Review the architecture plan.
 1. Instruct the agent to proceed with code generation.
@@ -325,176 +199,33 @@ How can I use this new Ratings API in an Adobe Commerce Storefront powered by Ed
 
 ## Connect to the storefront
 
-Follow these steps to work with your ratings extension in the storefront.
-
-## Verify your setup
-
-Verify all prerequisites are installed:
-
-```bash
-# Check Node.js version (should be 22.14.0 or higher)
-node --version
-
-# Check npm version (should be 11.6.0 or higher)
-npm --version
-
-# Check Git (optional, skip if using zip file)
-git --version
-
-# Check Bash
-bash --version
-```
-
-### Get the project files
-
-You can obtain the project files in one of two ways:
-
-#### Option A: Clone the repository (recommended)
-
-If you have [!DNL Git] installed, open your terminal and clone the repository:
-
-```bash
-git clone https://github.com/hlxsites/aem-boilerplate-commerce.git --branch agentic-dev
-cd aem-boilerplate-commerce
-```
-
-#### Option B: Download the zip file
-
-If you don't have [!DNL Git] installed:
-
-1. Download the project zip file from: [https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip](https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip)
-1. Extract the zip file to a folder on your machine.
-1. Open your terminal and navigate into the unzipped folder:
-
-   ```bash
-   cd path/to/aem-boilerplate-commerce-agentic-dev
-   ```
-
-### Install root dependencies
-
-Install the main project dependencies:
-
-```bash
-npm install
-```
-
-This will install all the necessary packages for the storefront application.
-
-### Install MCP server dependencies
-
-Navigate to the MCP server directory and install its dependencies:
-
-```bash
-cd mcp-server
-npm install
-cd ..
-```
-
-### Configure environment variables
-
-The MCP server requires certain environment variables to connect to the RAG service.
-
-Create a `.env` file in the `mcp-server` directory:
-
-```bash
-cd mcp-server
-cp env.example .env
-```
-
-Edit the `.env` file and add the following values (we'll provide the actual URL during the lab):
-
-```env
-RAG_MODE=worker
-WORKER_RAG_URL=<provided-during-lab>
-```
-
->[!NOTE]
->
->The actual value for `WORKER_RAG_URL` will be provided by the lab facilitator at the start of the session.
-
-### Enable MCP in Cursor
-
-The Model Context Protocol (MCP) server provides AI agents with access to [!DNL Adobe Commerce] Storefront documentation.
-
-#### Open Cursor MCP settings
-
-![Open Cursor MCP Settings](./assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
-
-1. Open [!DNL Cursor]
-1. Go to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**
-
-#### Enable and configure MCP features
-
-The project includes an MCP configuration file at `.cursor/mcp.json`. This file should already be configured to use the local MCP server.
-
-Verify the MCP configuration:
-
-1. Ensure the "commerce-documentation-rag" server is listed and enabled
-
-The configuration should look similar to this:
-
-![MCP Configuration](./assets/mcp-configuration.png){width="600" zoomable="yes"}
-
->[!NOTE]
->
->The `start-mcp.sh` script will automatically load the environment variables from your `.env` file in the `mcp-server` directory.
-
-#### Restart Cursor
-
-After enabling MCP and configuring the server:
-
-1. Quit [!DNL Cursor] completely
-1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project
-
-#### Verify MCP connection
-
-Check that the MCP server is running correctly:
-
-1. Open a new chat in [!DNL Cursor]
-1. Look for an indicator showing the MCP server is connected (usually in the chat interface)
-1. Try asking a question like: "Search the storefront docs for information about slots"
-
-If the MCP server is working, you should see relevant documentation results.
-
-![MCP Connection Verified](./assets/mcp-connection-verified.png){width="600" zoomable="yes"}
-
-### Start the development server
-
-Start the local development server:
-
-```bash
-npm run start
-```
-
-The development server will start at `http://localhost:3000`.
-
-Navigate to the apparel page at `http://localhost:3000/apparel`.
-
-![Development Server Running](./assets/development-server-running.png){width="600" zoomable="yes"}
-
-## Hands-On Exercises
-
 This section will help you implement real storefront features, showing you how to communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
 
 >[!NOTE]
 >
 >The prompts provided are starting points - feel free to have a natural conversation with the agent.
 >Each exercise builds on the previous one.
->
->If the agent seems stuck, you can reference the [Chrome MCP](#what-is-chrome-mcp) for visual validation.
-
-### What is Chrome MCP?
-
-The [!DNL Chrome] MCP (Model Context Protocol) allows the AI agent to interact with your browser to validate changes visually. If needed, you can prompt the agent to "use Chrome MCP to verify the changes" or "take a screenshot of the page".
-
-![Chrome MCP](./assets/chrome-mcp.png){width="600" zoomable="yes"}
 
 ### Implement ratings stars and review count
 
 Use the following prompt with your agent:
 
 ```text
-I want to add product ratings to the storefront. Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations. Use the dropin slot system where available. For now, use mock data - we woll fetch real ratings later from an endpoint like "/ratings?sku={sku}" that returns {rating: number, count: number}. The stars should be filled proportionally to the rating value (for example, 4.5 stars would show 4 full stars and 1 half star).
+Implement product ratings to the storefront.
+Add a 5-star rating display with a review count underneath each product name on the product list page,
+product details page, and product recommendations.
+Use the dropin slot system where available. 
+
+Here is the ratings API:
+@https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123 
+
+API returns data in this format
+
+{
+  "average_rating": 3.1,
+  "sku": "TEST-SKU-123",
+  "total_ratings": 777
+}
 ```
 
 Observe the changes in the codebase, and watch the Apparel page for updates.
@@ -527,21 +258,26 @@ The following steps show how the agent handles complex UI features with visual r
 
 1. **Before starting:** Save the mock image below and paste it into the chat with your agent.
 
-![Rating Distribution Mockup](./assets/rating-distribution-mockup.png)
+   ![Rating Distribution Mockup](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
 1. Use the following prompt along with pasting the image:
 
-```text
-Add a hover modal to the star rating that shows a breakdown of all ratings for the product. The modal should show each star level (5 stars down to 1 star) with the count of reviews for each level, using horizontal bars to visualize the distribution. Use the attached image as a visual reference. The modal should appear when hovering over the stars and disappear when the mouse moves away. Use mock data for now.
-```
+   ```text
+   Add a hover modal to the star rating that shows a breakdown of all ratings for the product.
+   The modal should show each star level (5 stars down to 1 star) with the count of reviews for each level,
+   using horizontal bars to visualize the distribution.
+   Use the attached image as a visual reference.
+   The modal should appear when hovering over the stars and disappear when the mouse moves away.
+   Use mock data for now.
+   ```
 
 1. Observe the changes in the codebase, and watch the Apparel page for updates.
 
-* How the agent interprets the visual mockup.
-* Whether it uses appropriate HTML structure for accessibility.
-* How it handles the positioning and interaction states.
+   * How the agent interprets the visual mockup.
+   * Whether it uses appropriate HTML structure for accessibility.
+   * How it handles the positioning and interaction states.
 
-**Expected Outcome:**
+**Expected outcome:**
 
 1. The modal appears when hovering over the star rating.
 1. The modal displays a breakdown of ratings with visual bars.
@@ -568,7 +304,7 @@ Throughout this tutorial, we have covered the following topics:
 * **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
 * **Component reusability**: Creating shared components used across multiple blocks.
 
-## Next Steps
+## Next steps
 
 Now that you have completed the exercises, try the following challenges to test your abilities:
 

@@ -15,7 +15,8 @@ recommendations: noDisplay, noCatalog
 - [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
-- [AI tutorial](workbook.md)
+- [Ratings extension tutorial](workbook.md)
+  - [Ratings extension prerequisites](workbook-prerequisites.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
