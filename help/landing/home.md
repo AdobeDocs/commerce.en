@@ -19,32 +19,6 @@ Adobe provides a collection of Commerce services, integration services, and data
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
-      <a href="../cloud-service/overview.md">
-      <img alt="Cloud" src="../assets/icons/shopping-cart.svg" width="40">
-      </a>
-      <div>
-         <a href="../cloud-service/overview.md">
-         <strong>Commerce as a Cloud Service</strong>
-         </a>
-      </div>
-      <p>
-         <em>Scale operations and innovate faster with cloud infrastructure that automatically adapts to traffic and order demands.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../optimizer/overview.md">
-      <img alt="Optimize" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-         <a href="../optimizer/overview.md">
-         <strong>Commerce Optimizer</strong>
-         </a>
-      </div>
-      <p>
-         <em>Deliver a lightning-fast storefront and boost conversions, all while using your existing commerce platform.</em>
-      </p>
-   </td>
-   <td valign="top">
       <a href="../catalog-service/overview.md">
       <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
       </a>
@@ -111,7 +85,7 @@ Adobe provides a collection of Commerce services, integration services, and data
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+         <strong>[!DNL Data Connection]</strong>
          </a>
       </div>
       <p>
@@ -124,7 +98,7 @@ Adobe provides a collection of Commerce services, integration services, and data
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+         <strong>Commerce Services Connector</strong>
          </a>
       </div>
       <p>
