@@ -13,8 +13,6 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
    - [Release notes](/help/landing/release-notes-all.md)
 - [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
-   - [[!DNL Commerce as a Cloud Service]](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
-   - [[!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview)
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
