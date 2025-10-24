@@ -198,7 +198,7 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 
 ### Monitor sync progress
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard.md) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
