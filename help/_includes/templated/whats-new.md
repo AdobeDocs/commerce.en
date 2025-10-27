@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 17, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the following topics to include information about configuring identity management and single sign-on from the Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User and Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User and Identity Management</a></p>
+</td>
+      <td>
+        Feedback, technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/78f1fa56d409433c90763077b63198e38a9ab692">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 14, 2025
 
 <table style="table-layout:auto;">
@@ -140,28 +162,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         New topic
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 21, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>You can now use the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">site creator tool</a> to set up your storefront without using the CLI.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">commit</a></td>
     </tr>
   </tbody>
 </table>
