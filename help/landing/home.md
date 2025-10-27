@@ -16,6 +16,10 @@ Adobe provides a collection of Commerce services, integration services, and data
 
 ## Commerce services
 
+The commerce services are storefront blah...
+
+ADD IMAGE HERE
+
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
@@ -77,6 +81,10 @@ Adobe provides a collection of Commerce services, integration services, and data
 
 ## Integration services
 
+Integration services refer to SaaS deployed features that connect your Commerce instance to other products or services within Adobe.
+
+ADD IMAGE HERE
+
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
@@ -122,6 +130,10 @@ Adobe provides a collection of Commerce services, integration services, and data
 </table>
 
 ## Data tools
+
+Data tools refers to the blah...
+
+ADD IMAGE HERE
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
