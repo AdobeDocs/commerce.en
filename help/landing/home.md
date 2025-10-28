@@ -41,8 +41,6 @@ Storefront services are a group of AI-powered features that optimize product dis
          <em>Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.</em>
       </p>
    </td>
-</tr>
-<tr style="border: 0;">
    <td valign="top">
       <a href="../live-search/overview.md">
       <img alt="Search" src="../assets/icons/Magnify.svg" width="40">
