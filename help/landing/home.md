@@ -8,17 +8,23 @@ exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 ---
 # Adobe Commerce Services Guides
 
-Adobe provides a collection of Commerce services, integration services, and data tools to help merchants support key components of their business. 
+Adobe Commerce Services deliver powerful capabilities that extend your storefront, streamline integrations, and optimize data management. These cloud-based SaaS solutions scale automatically and stay current without requiring manual updates.
+
+There are three categories of services:
+
+- **Storefront services** - AI-powered features for product discovery, recommendations, and payments
+- **Integration services** - Connections to Adobe Experience Platform, AEM Assets, and other Adobe solutions
+- **Data tools** - Automated synchronization, monitoring, and performance optimization
+
+These services help you increase conversions, deliver personalized experiences, and make better use of your commerce data across the Adobe ecosystem.
 
 >[!NOTE]
 >
 >Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
 
-## Commerce services
+## Storefront services
 
-The commerce services are storefront blah...
-
-ADD IMAGE HERE
+Storefront services are a group of AI-powered features that optimize product discovery, personalize customer interactions, and streamline payment processing to increase engagement and conversions. With storefront services, you can enhance the shopping experience and drive business growth.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -83,8 +89,6 @@ ADD IMAGE HERE
 
 Integration services refer to SaaS deployed features that connect your Commerce instance to other products or services within Adobe.
 
-ADD IMAGE HERE
-
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
@@ -131,9 +135,7 @@ ADD IMAGE HERE
 
 ## Data tools
 
-Data tools refers to the blah...
-
-ADD IMAGE HERE
+Data tools help you manage and optimize the flow of information between your Commerce instance and connected services. These tools ensure efficient data synchronization, monitor sync operations, and improve performance by offloading resource-intensive processes.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
