@@ -54,7 +54,7 @@ _October 27, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Improved product recommendations unit interactions on different environment types.
+![Fix](../assets/fix.svg) Improved how product recommendation units interact on different environments.
 
 ### Previous versions
 
