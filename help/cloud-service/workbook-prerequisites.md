@@ -26,7 +26,7 @@ Before you begin, complete the following prerequisites:
   ```
 
 * Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in this tutorial.
-
+<!-- 
 ### Create a new project on Adobe Developer Console
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
@@ -62,12 +62,7 @@ Before you begin, complete the following prerequisites:
 
 1. Repeat the previous steps until all APIs are added to the workspace.
 
-   ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"}
-
-### Download workspace configuration
-
-1. On the [!UICONTROL **Workspace overview**] tab, click the [!UICONTROL **Download all**] button.
-1. Save the file as `workspace.json` on your desktop.
+   ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"} -->
 
 ### Configure the AIO CLI
 
@@ -104,14 +99,13 @@ Before you begin, complete the following prerequisites:
 Clone the Commerce integration starter kit repository and prepare your project:
 
 ```bash
-git clone https://github.com/adobe/commerce-integration-starter-kit.git
-mv commerce-integration-starter-kit ratings-extension
-cd ratings-extension
+git clone --branch adl https://github.com/adobe/commerce-integration-starter-kit.git extension
+cd extension
 ```
 
 ![Clone starter kit](./assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
-### Create and update .env file
+### Create the .env file
 
 1. Create your environment configuration file:
 
@@ -119,7 +113,7 @@ cd ratings-extension
    cp env.dist .env
    ```
 
-1. Open the `.env` file in a text editor and add the following OAuth credentials:
+<!-- 1. Open the `.env` file in a text editor and add the following OAuth credentials:
 
    ```text
    OAUTH_CLIENT_ID=
@@ -156,6 +150,14 @@ Set a temporary value for the event prefix:
 ```text
 EVENT_PREFIX=test
 ```
+ -->
+### Download workspace configuration
+
+Run the following command to download the workspace configuration file:
+
+```bash
+aio console workspace download workspace.json
+```
 
 ### Connect local workspace to remote workspace
 
@@ -170,8 +172,8 @@ aio app use
 ## Storefront prerequisites
 
 The following items are required to complete the [storefront](#connect-to-the-storefront) section of this tutorial and see the product ratings in your store.
-
-* Install [!DNL Node.js] (`22.14.0` or higher) and npm (`11.6.0` or higher). Verify your installation:
+<!-- 
+* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
 
    ```bash
    node --version
@@ -188,22 +190,21 @@ The following items are required to complete the [storefront](#connect-to-the-st
   * macOS/Linux: No installation required
   * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
+* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront -->
 
 ### Get the project files
 
 You can obtain the project files in one of two ways:
-
-#### Option A: Clone the repository (recommended)
+<!-- 
+#### Option A: Clone the repository (recommended) -->
 
 If you have [!DNL Git] installed, open your terminal and clone the repository:
 
 ```bash
-git clone https://github.com/hlxsites/aem-boilerplate-commerce.git --branch agentic-dev
-cd aem-boilerplate-commerce
+git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
+cd storefront
 ```
-
-#### Option B: Download the zip file
+<!-- #### Option B: Download the zip file
 
 If you don't have [!DNL Git] installed:
 
@@ -213,7 +214,7 @@ If you don't have [!DNL Git] installed:
 
    ```bash
    cd path/to/aem-boilerplate-commerce-agentic-dev
-   ```
+   ``` -->
 
 ### Install root dependencies
 

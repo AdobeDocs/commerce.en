@@ -14,10 +14,10 @@ This lab guides you through building a product ratings extension for [!DNL Adobe
 Verify the following prerequisites are installed:
 
 ```bash
-# Check Node.js version (should be 22.14.0 or higher)
+# Check Node.js version (should be 22.x.x)
 node --version
 
-# Check npm version (should be 11.6.0 or higher)
+# Check npm version (should be 9.0.0 or higher)
 npm --version
 
 # Check Git
@@ -53,9 +53,17 @@ If the [prerequisites](#verify-prerequisites) are installed, download and run th
 
    Additionally, you should select the project that corresponds to your seat number and the **stage** workspace.
 
-## Install AI tools
+## Extension development
+
+This section guides you through the process of developing a ratings extension for Adobe Commerce as a Cloud Service using AI-assisted development tools.
+
+### Install extensibility AI tools
 
 Set up the AI-assisted development tools in the `extension` folder:
+
+```bash
+cd extension
+```
 
 ```bash
 aio commerce extensibility tools-setup
@@ -63,7 +71,7 @@ aio commerce extensibility tools-setup
 
 ![Install AI tools](./assets/install-ai-tools.png){width="600" zoomable="yes"}
 
-## Open Cursor
+### Open Cursor
 
 >[!NOTE]
 >
@@ -81,15 +89,15 @@ At this point, all [!DNL Cursor] rules are installed in the `.cursor/rules` fold
 
 ![Cursor settings](./assets/cursor-settings.png){width="600" zoomable="yes"}
 
-## Code generation
+### Code generation
 
 This section demonstrates how to use AI-assisted tools to generate code for a product ratings extension.
 
-### Define requirements
+#### Define requirements
 
 You will implement an extension that serves product ratings as an API. The [!DNL App Builder] extension responds with ratings details for a given SKU.
 
-#### Initial prompt
+**Initial prompt:**
 
 Use the following prompt in [!DNL Cursor]:
 
@@ -113,7 +121,7 @@ The agent researches the requirements and asks clarifying questions. Answer the 
 
 ![Agent asks clarifying questions](./assets/agent-questions.png){width="600" zoomable="yes"}
 
-#### Response prompt
+**Response prompt:**
 
 Use the following response to answer the agent's questions:
 
@@ -134,7 +142,7 @@ The agent creates a `requirements.md` file that serves as the source of truth fo
 
 ![Requirements file created](./assets/requirements-file.png){width="600" zoomable="yes"}
 
-### Verify the requirements and plan architecture
+#### Verify the requirements and plan architecture
 
 1. Review the `requirements.md` file.
 1. If everything looks correct, instruct the agent to move to **Phase 2 - Architecture Planning**.
@@ -143,7 +151,7 @@ The agent creates a `requirements.md` file that serves as the source of truth fo
 
 ![Architecture planning](./assets/architecture-planning.png){width="600" zoomable="yes"}
 
-### Generate code
+#### Generate code
 
 The agent generates the necessary code and provides a detailed summary with your next steps.
 
@@ -151,23 +159,37 @@ The agent generates the necessary code and provides a detailed summary with your
 
 ![Next steps](./assets/next-steps.png){width="600" zoomable="yes"}
 
-## Deploy the extension
+### Local testing
+
+Ask the agent to help you test the code locally.
+
+```text
+Test the ratings API locally on a dev server using cURL.
+```
+
+Follow the agent's instructions and confirm that the API is working locally.
+
+![Local testing](./assets/local-testing.png){width="600" zoomable="yes"}
+
+![Local testing results](./assets/local-testing-1.png){width="600" zoomable="yes"}
+
+### Deploy the extension
 
 After verifying the generated code, you are ready to deploy the extension.
 
-### Pre-deployment assessment
+#### Pre-deployment assessment
 
 The agent performs a pre-deployment readiness assessment before deploying.
 
 ![Pre-deployment assessment](./assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
-### Deploy
+#### Deploy
 
 When you are confident with the assessment results, instruct the agent to proceed with deployment. The agent uses the MCP toolkit to verify, build, and deploy automatically.
 
 ![Deployment](./assets/deployment-process.png){width="600" zoomable="yes"}
 
-## Test the API
+### Test the API
 
 You can test the API before integrating it into the storefront.
 
@@ -175,7 +197,7 @@ The agent provides the location of the new action and a testing strategy.
 
 ![Testing strategy](./assets/testing-strategy.png){width="600" zoomable="yes"}
 
-### Test manually with cURL
+#### Test manually with cURL
 
 Test the API manually using cURL in a terminal:
 
@@ -185,17 +207,23 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 ![cURL test](./assets/curl-test.png){width="600" zoomable="yes"}
 
-## Integrate with Edge Delivery Services
+### Integrate with Edge Delivery Services
 
-To integrate the ratings API with an [!DNL Adobe Commerce] storefront powered by [!DNL Edge Delivery Services], ask the agent:
+To integrate the ratings API with an [!DNL Adobe Commerce] storefront powered by [!DNL Edge Delivery Services], ask the agent to create a service contract with requirements for the ratings API:
 
 ```text
-How can I use this new Ratings API in an Adobe Commerce Storefront powered by Edge Delivery Services?
+Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![Integration guidance](./assets/integration-guidance.png){width="600" zoomable="yes"}
+![Service contract](./assets/create-contract.png){width="600" zoomable="yes"}
 
-![Integration details](./assets/integration-details.png){width="600" zoomable="yes"}
+![Service contract details](./assets/contract.png){width="600" zoomable="yes"}
+
+Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
+
+```bash
+cp RATINGS_API_CONTRACT.md ../storefront
+```
 
 ## Connect to the storefront
 
@@ -208,27 +236,47 @@ This section will help you implement real storefront features, showing you how t
 
 ### Implement ratings stars and review count
 
-Use the following prompt with your agent:
+1. Navigate to the `storefront` folder:
 
-```text
-Implement product ratings to the storefront.
-Add a 5-star rating display with a review count underneath each product name on the product list page,
-product details page, and product recommendations.
-Use the dropin slot system where available. 
+   ```bash
+   cd storefront
+   ```
 
-Here is the ratings API:
-@https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123 
+1. Open the storefront code in a new Cursor window:
 
-API returns data in this format
+   ```bash
+   cursor storefront
+   ```
 
-{
-  "average_rating": 3.1,
-  "sku": "TEST-SKU-123",
-  "total_ratings": 777
-}
-```
+1. Start the local development server:
 
-Observe the changes in the codebase, and watch the Apparel page for updates.
+   ```bash
+   npm run start
+   ```
+
+1. In a browser, navigate to the Apparel page:
+
+   ```text
+   http://localhost:3000/apparel
+   ```
+
+1. Observe the boilerplate storefront UI layout.
+
+1. Use the following prompt with your agent:
+
+   ```text
+   Implement product ratings to the storefront.
+   Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
+   Use the dropin slot system where available.
+
+   Use the @RATINGS_API_CONTRACT.md to understand how to use the ratings api.
+   ```
+
+   >[!NOTE]
+   >
+   >If you are prompted to start the local development server, inform the agent that it is already running.
+
+1. Observe the changes in the codebase, and watch the Apparel page for updates.
 
 **Expected outcome:**
 
@@ -293,22 +341,3 @@ The following steps show how the agent handles complex UI features with visual r
    ```
 
 ![Rating Distribution Modal](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}
-
-## Storefront recap
-
-Throughout this tutorial, we have covered the following topics:
-
-* **Feature implementation**: How to describe new functionality to an AI agent.
-* **Iterative changes**: Making quick modifications to existing code.
-* **Complex UI components**: Building interactive features with visual references.
-* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
-* **Component reusability**: Creating shared components used across multiple blocks.
-
-## Next steps
-
-Now that you have completed the exercises, try the following challenges to test your abilities:
-
-* Change the hover modal to a click modal instead
-* Add sorting options to the product list based on ratings
-* Implement a filter to show only products with 4+ star ratings
-* Add animation when the rating stars appear on the page
