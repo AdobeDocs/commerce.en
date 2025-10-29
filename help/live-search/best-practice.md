@@ -21,7 +21,7 @@ To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Liv
 
 ## Optimize your search functionality
 
-In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as shoppers type, synonyms and spellings to ensure that shoppers find products even if they use different words, facets to allow shoppers to narrow down search results, and search redirects to automatically redirect shoppers from a search query to a specific page.
+In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as shoppers type, synonyms and spellings to ensure that shoppers find products even if they use different words, and facets to allow shoppers to narrow down search results.
 
 ### Autocomplete
 
@@ -78,24 +78,6 @@ Learn more about facets:
 - [Add facets](facets-add.md)
 - [Manage facets](facets-manage.md) (edit, pin a facet, delete, publish)
 - [Price faceting](settings.md#price-faceting)
-
-### Search redirects
-
-A search redirect allows you to automatically redirect shoppers from a search query to a specific page. Search redirects can improve shopper experience and guide customers to the most relevant content, such as a product page, category, landing page, or a tailored set of search results. Search redirects help streamline the shopping experience and ensure that shoppers find what they are looking for quickly and efficiently.
-
-Recommended use cases for setting up search redirects:
-
-- **Popular Products or Categories** - Redirect shoppers to a specific product page or category when they search for common or popular terms. For example, searching for "iPhone" might redirect directly to the iPhone category page or a specific model page.
-    
-- **Promotional Campaigns** - During promotional events or sales, redirect relevant search terms to landing pages that highlight special offers or featured products.
-    
-- **Brand Searches** - When shoppers search for a brand name, redirect them to the brand's dedicated page where all products from that brand are listed.
-    
-- **Product Discontinuation** - If a product is discontinued, you can redirect searches for that product to similar products or the new version of the product.
-
-Always test search redirects to ensure they are working correctly and are leading to the most relevant pages. Continuously monitor their performance and make adjustments as needed.
-
-Learn how to [manage search redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Improve search result relevance
 
@@ -176,7 +158,6 @@ You can monitor these KPIs within the [!DNL Live Search] [Performance workspace]
     To reduce the zero results rate, you can:
 
     - Offer alternative or related search terms, such as [synonyms](synonyms.md) when no exact matches are found.
-    - Provide shoppers with related or alternative suggestions when their search yields no results by setting search redirects.
     - Regularly review zero result queries to identify patterns and make necessary adjustments to your product catalog and search settings.
 
 - **Popular Results** - Can significantly enhance your search results by aligning them with shopper preferences and behaviors.

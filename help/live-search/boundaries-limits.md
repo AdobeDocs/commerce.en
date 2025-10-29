@@ -23,6 +23,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
 - You can only track performance metrics within the last year.
 - If a search query contains multiple words, the blank space between the words causes them to be treated as separate search terms. Use [synonyms](./synonyms.md) if you want to account for multi-word search queries.
+- [!DNL Live Search] does not support [search term redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Indexing
 
