@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.2.6
+
+_October 24, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1163 --> Resolved an issue where consecutive bulk product update requests could leave the status tracking flag stuck preventing subsequent updates from processing correctly. Now, status is reset even if an error occurs.
+
 ## v1.2.5
 
 _October 22, 2025_
