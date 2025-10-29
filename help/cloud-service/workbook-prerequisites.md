@@ -151,6 +151,7 @@ Set a temporary value for the event prefix:
 EVENT_PREFIX=test
 ```
  -->
+
 ### Download workspace configuration
 
 Run the following command to download the workspace configuration file:
@@ -195,6 +196,7 @@ The following items are required to complete the [storefront](#connect-to-the-st
 ### Get the project files
 
 You can obtain the project files in one of two ways:
+
 <!-- 
 #### Option A: Clone the repository (recommended) -->
 
@@ -204,6 +206,7 @@ If you have [!DNL Git] installed, open your terminal and clone the repository:
 git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
+
 <!-- #### Option B: Download the zip file
 
 If you don't have [!DNL Git] installed:
