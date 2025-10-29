@@ -26,6 +26,24 @@ These services help you increase conversions, deliver personalized experiences, 
 
 Storefront services are a group of AI-powered features that optimize product discovery, personalize customer interactions, and streamline payment processing to increase engagement and conversions. With storefront services, you can enhance the shopping experience and drive business growth.
 
+```mermaid
+flowchart TB
+    A[Commerce Foundation]:::main
+    subgraph S[Storefront Services]
+        B[Live Search]:::service
+        C[Product Recommendations]:::service
+        D[Catalog Service]:::service
+        E[Payments]:::service
+    end
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+
+    classDef main fill:#F44336,color:#fff,stroke:#333,stroke-width:2,font-weight:bold;
+    classDef service fill:#FFCDD2,color:#000,stroke:#333,stroke-width:2,font-weight:bold;
+```
+
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
@@ -87,6 +105,22 @@ Storefront services are a group of AI-powered features that optimize product dis
 
 Integration services refer to SaaS deployed features that connect your Commerce instance to other products or services within Adobe.
 
+```mermaid
+flowchart TB
+    A[Commerce Foundation]:::main
+    subgraph S[Integration Services]
+        B[Data Connection]:::service
+        C[Commerce Services Connector]:::service
+        D[AEM Assets integration]:::service
+    end
+    A --> B
+    A --> C
+    A --> D
+
+    classDef main fill:#F44336,color:#fff,stroke:#333,stroke-width:2,font-weight:bold;
+    classDef service fill:#FFCDD2,color:#000,stroke:#333,stroke-width:2,font-weight:bold;
+```
+
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
@@ -134,6 +168,22 @@ Integration services refer to SaaS deployed features that connect your Commerce 
 ## Data tools
 
 Data tools help you manage and optimize the flow of information between your Commerce instance and connected services. These tools ensure efficient data synchronization, monitor sync operations, and improve performance by offloading resource-intensive processes.
+
+```mermaid
+flowchart TB
+    A[Commerce Foundation]:::main
+    subgraph S[Data Tools]
+        B[SaaS Data Export]:::service
+        C[SaaS Price Indexer]:::service
+        D[Data Management Dashboard]:::service
+    end
+    A --> B
+    A --> C
+    A --> D
+
+    classDef main fill:#F44336,color:#fff,stroke:#333,stroke-width:2,font-weight:bold;
+    classDef service fill:#FFCDD2,color:#000,stroke:#333,stroke-width:2,font-weight:bold;
+```
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">

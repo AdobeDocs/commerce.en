@@ -1,0 +1,15 @@
+flowchart TB
+    A[Adobe Commerce]:::main
+    subgraph S[Storefront Services]
+        B[Live Search]:::service
+        C[Product Recommendations]:::service
+        D[Catalog Service]:::service
+        E[Payments]:::service
+    end
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+
+    classDef main fill:#F44336,color:#fff,stroke:#333,stroke-width:2,font-weight:bold;
+    classDef service fill:#FFCDD2,color:#000,stroke:#333,stroke-width:2,font-weight:bold;
