@@ -232,6 +232,7 @@ This section will help you implement real storefront features, showing you how t
 >[!NOTE]
 >
 >The prompts provided are starting points - feel free to have a natural conversation with the agent.
+>
 >Each exercise builds on the previous one.
 
 ### Implement ratings stars and review count

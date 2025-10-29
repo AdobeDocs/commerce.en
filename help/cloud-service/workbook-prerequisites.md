@@ -107,23 +107,23 @@ cd extension
 
 ### Create the .env file
 
-1. Create your environment configuration file:
+Create your environment configuration file:
 
-   ```bash
-   cp env.dist .env
-   ```
+```bash
+cp env.dist .env
+```
 
-<!-- 1. Open the `.env` file in a text editor and add the following OAuth credentials:
+<!-- Open the `.env` file in a text editor and add the following OAuth credentials:
 
-   ```text
-   OAUTH_CLIENT_ID=
-   OAUTH_CLIENT_SECRET=
-   OAUTH_TECHNICAL_ACCOUNT_ID=
-   OAUTH_TECHNICAL_ACCOUNT_EMAIL=
-   OAUTH_ORG_ID=
-   ```
+```text
+OAUTH_CLIENT_ID=
+OAUTH_CLIENT_SECRET=
+OAUTH_TECHNICAL_ACCOUNT_ID=
+OAUTH_TECHNICAL_ACCOUNT_EMAIL=
+OAUTH_ORG_ID=
+```
 
-   You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
+You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
 
 ![OAuth credentials](./assets/oauth-credentials.png){width="600" zoomable="yes"}
 
