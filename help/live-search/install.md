@@ -39,16 +39,16 @@ This article is intended for the developer or systems integrator on your team wh
 
 At a high level, onboarding [!DNL Live Search] requires that you:
 
-1. [Install](#1-install-the-live-search-extension) the [!DNL Live Search] extension
-1. [Configure](#2-configure-api-keys) the API keys
-1. [Sync](#3-sync-your-catalog-data) your catalog data
-1. [Verify](#4-verify-that-the-data-was-exported) that the catalog data was exported
-1. [Configure](#5-configure-the-data) the data
-1. [Test](#6-test-the-connection) the connection
-1. [Validate](#7-verify-that-events-are-capturing-data) that events are capturing data
-1. [Customize](#8-customize-for-your-storefront) your storefront
+1. [Install](#install) the [!DNL Live Search] extension
+1. [Configure](#configure) the API keys
+1. [Sync](#sync) your catalog data
+1. [Verify](#verify) that the catalog data was exported
+1. [Configure](#configuredata) the data
+1. [Test](#test) the connection
+1. [Validate](#capture) that events are capturing data
+1. [Customize](#customize) your storefront
 
-## 1. Install the [!DNL Live Search] extension
+## 1. Install the [!DNL Live Search] extension {#install}
 
 [!DNL Live Search] is installed as an extension from [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) through [Composer](https://getcomposer.org/). After you install and configure [!DNL Live Search], Adobe [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
@@ -166,13 +166,13 @@ After verifying the indexers, the next step is to [configure the API keys](#2-co
 
 >[!ENDTABS]
 
-## 2. Configure API keys
+## 2. Configure API keys {#configure}
 
 The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or systems integrator. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
 
 Learn how to configure your API keys in the [Commerce Services Connector](../landing/saas.md) article.
 
-## 3. Sync your catalog data
+## 3. Sync your catalog data {#sync}
 
 [!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, indexing can take from 30 minutes to a couple of hours.
 
@@ -198,7 +198,7 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 
 ### Monitor sync progress
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
@@ -208,7 +208,7 @@ You can also run sync commands and troubleshoot the synchronization process usin
 
 After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Streaming Product Updates](indexing.md) in the Indexing documentation.
 
-## 4. Verify that the data was exported
+## 4. Verify that the data was exported {#verify}
 
 To check if your catalog data has been exported from Adobe Commerce and synced with [!DNL Live Search], you have a few options:
 
@@ -228,7 +228,7 @@ To check if your catalog data has been exported from Adobe Commerce and synced w
 
 For additional help, see [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in the Support Knowledge Base.
 
-## 5. Configure the data
+## 5. Configure the data {#configuredata}
 
 Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories.
 
@@ -259,7 +259,7 @@ When you change this configuration, the message `Page cache is invalidated` appe
 
 Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". These category assignments improve granularity when filtering.
 
-## 6. Test the connection
+## 6. Test the connection {#test}
 
 With your catalog data now in SaaS, test to make sure product data is returned in the following scenarios:
 
@@ -273,7 +273,7 @@ If you encounter problems in the storefront, check the `var/log/system.log` file
 
 To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the allowlist.
 
-## 7. Verify that events are capturing data
+## 7. Verify that events are capturing data {#capture}
 
 Ensure that the storefront events deployed to your site are working. This check is especially important for headless implementations.
 
@@ -281,7 +281,7 @@ Ensure that the storefront events deployed to your site are working. This check 
 - Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environment(s).
 - [Verify event collection](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/).
 
-## 8. Customize for your storefront
+## 8. Customize for your storefront {#customize}
 
 You have installed the [!DNL Live Search] extension, synced, validated, and configured your data. The next step is to ensure that the [!DNL Live Search] widgets conform to your store's look and feel.
 

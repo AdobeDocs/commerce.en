@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.15 Release
+
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension,  see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+
 ## 103.4.14 Release
 
 ![Fix](../assets/fix.svg) Resolved an issue where the [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) job could fail if the `cde_product_overrides_feed_cl` table is missing. The fix ensures stable reindexing and prevents job failures related to this table in multi-tenant environments." <!--MDEE-1175-->

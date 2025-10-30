@@ -2,8 +2,22 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 17 16:39:11 2025
+updated: Mon Oct 27 13:46:55 2025
 entries:
+- description: 'Updated the following topics to include information about configuring
+    identity management and single sign-on from the Adobe Admin Console:<br/>- [Adobe
+    Commerce as a Cloud Service User and Identity Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)<br/>-
+    [Adobe Commerce Optimizer: User and Identity Management](https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management)'
+  versions: ''
+  type: feedback, technical
+  date: October 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/267
+  merge_commit: 78f1fa56d409433c90763077b63198e38a9ab692
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - technical
 - description: Updated [User Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
     steps for adding a user.
   versions: ''
