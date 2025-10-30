@@ -75,7 +75,7 @@ Before you begin, complete the following prerequisites:
    Log in using the AIO CLI:
 
    ```bash
-   aio auth login
+   aio auth login -f
    ```
 
 1. Select your organization, project, and workspace, using each of the following commands:
@@ -165,7 +165,7 @@ aio console workspace download workspace.json
 Link your local project to the remote workspace:
 
 ```bash
-aio app use
+aio app use workspace.json -m
 ```
 
 ![Connect to workspace](./assets/connect-workspace.png){width="600" zoomable="yes"}
