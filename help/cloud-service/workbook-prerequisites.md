@@ -1,11 +1,11 @@
 ---
-title: Ratings extension prerequisites
+title: ADL Commerce lab prerequisites
 description: Learn the prerequisites for the ratings extension lab.
 role: Developer
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension prerequisites
+# Adobe Developers Live - Adobe Commerce lab prerequisites
 
 This page lists the prerequisites and other manual setup steps for the [ratings extension lab](./workbook.md). The lab also contains a script that automates most of these steps.
 
@@ -239,7 +239,7 @@ npm install
 cd ..
 ```
 
-### Configure environment variables
+<!-- ### Configure environment variables
 
 The MCP server requires certain environment variables to connect to the RAG service.
 
@@ -259,7 +259,7 @@ WORKER_RAG_URL=<provided-during-lab>
 
 >[!NOTE]
 >
->The actual value for `WORKER_RAG_URL` will be provided by the lab facilitator at the start of the session.
+>The actual value for `WORKER_RAG_URL` will be provided by the lab facilitator at the start of the session. -->
 
 ### Enable MCP in Cursor
 

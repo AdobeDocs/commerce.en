@@ -5,7 +5,7 @@ role: Developer
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension lab
+# Adobe Developers Live - Adobe Commerce lab workbook
 
 This lab guides you through building a product ratings extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools.
 
@@ -243,10 +243,10 @@ This section will help you implement real storefront features, showing you how t
    cd storefront
    ```
 
-1. Open the storefront code in a new Cursor window:
+1. Open the storefront folder in a new Cursor window:
 
    ```bash
-   cursor storefront
+   cursor .
    ```
 
 1. Start the local development server:
@@ -342,3 +342,13 @@ The following steps show how the agent handles complex UI features with visual r
    ```
 
 ![Rating Distribution Modal](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}
+
+## Storefront recap
+
+Throughout this tutorial, we have covered the following topics:
+
+* **Feature implementation**: How to describe new functionality to an AI agent.
+* **Iterative changes**: Making quick modifications to existing code.
+* **Complex UI components**: Building interactive features with visual references.
+* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
+* **Component reusability**: Creating shared components used across multiple blocks.
