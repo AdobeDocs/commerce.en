@@ -301,48 +301,6 @@ The stars are changed to red.
 
 ![Red Star Colors](./assets/red-star-colors.png){width="600" zoomable="yes"}
 
-### Add rating distribution modal
-
-The following steps show how the agent handles complex UI features with visual references.
-
-1. **Before starting:** Save the mock image below and paste it into the chat with your agent.
-
-   ![Rating Distribution Mockup](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
-
-1. Use the following prompt along with pasting the image:
-
-   ```text
-   Add a hover modal to the star rating that shows a breakdown of all ratings for the product.
-   The modal should show each star level (5 stars down to 1 star) with the count of reviews for each level,
-   using horizontal bars to visualize the distribution.
-   Use the attached image as a visual reference.
-   The modal should appear when hovering over the stars and disappear when the mouse moves away.
-   Use mock data for now.
-   ```
-
-1. Observe the changes in the codebase, and watch the Apparel page for updates.
-
-   * How the agent interprets the visual mockup.
-   * Whether it uses appropriate HTML structure for accessibility.
-   * How it handles the positioning and interaction states.
-
-**Expected outcome:**
-
-1. The modal appears when hovering over the star rating.
-1. The modal displays a breakdown of ratings with visual bars.
-1. The modal disappears when moving the mouse away.
-
-**Troubleshooting:**
-
-* If the modal does not appear, check the browser console for errors.
-* If positioning is off, you can ask the agent to:
-
-   ```text
-   adjust the modal position to be above the stars
-   ```
-
-![Rating Distribution Modal](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}
-
 ## Storefront recap
 
 Throughout this tutorial, we have covered the following topics:
@@ -352,3 +310,39 @@ Throughout this tutorial, we have covered the following topics:
 * **Complex UI components**: Building interactive features with visual references.
 * **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
 * **Component reusability**: Creating shared components used across multiple blocks.
+
+## Next steps
+
+If time allows, you can further customize your ratings extension by adding the following features:
+
+### Add rating distribution modal (optional)
+
+The following steps show how the agent handles complex UI features with visual references.
+
+1. **Before starting:** Save the mock image below and paste it into the chat with your agent.
+
+   ![Rating Distribution Mockup](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+
+1. Use the following steps to guide you through creating the ratings distribution modal based on the reference image:
+
+   * Update the API to return additional data representing the ratings distribution.
+   * Update the API Contract.
+   * Update the contact in the storefront codebase.
+   * Ask the storefront agent to use the reference image and updated API Contract to add the ratings distribution to the PDP page.
+
+1. Observe the following changes in the codebase, and watch the Apparel page for updates:
+
+   * How the agent interprets the visual mockup
+   * Whether it uses appropriate HTML structure for accessibility
+   * How it handles the positioning and interaction states
+
+**Troubleshooting:**
+
+* If the modal does not appear, check the browser console for errors.
+* If positioning is off, you can ask the agent to:
+
+   ```text
+   adjust the modal position to be...
+   ```
+
+![Rating Distribution Modal](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}
