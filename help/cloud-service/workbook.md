@@ -49,7 +49,7 @@ If the [prerequisites](#verify-prerequisites) are installed, download and run th
    bash adl-setup.sh
    ```
 
-   While the script is running, you will be prompted to enter your username and password, which will be provided during the lab. Your username will reflect your location and seat number. For example, if you are in San Jose, CA, seat 123, your username will be `sjc-adl-123@adobecreate.com`.
+   While the script is running, you will be prompted to enter your username and password, which will be provided during the lab. Your username will reflect your location and seat number. For example, if you are in San Jose, CA, seat 123, your username will be `sjc-adl-123@adobeeventlab.com`.
 
    Additionally, you should select the project that corresponds to your seat number and the **stage** workspace. Your project name will reflect your location and seat number. For example, if you are in San Jose, CA, seat 123, your project name will be `SJC ADL 123`.
 
