@@ -319,7 +319,7 @@ If time allows, you can further customize your ratings extension by adding the f
 
 The following steps show how the agent handles complex UI features with visual references.
 
-1. **Before starting:** Save the mock image below and paste it into the chat with your agent.
+1. **Before starting:** Save the following mock image and paste it into the chat with your storefront agent.
 
    ![Rating Distribution Mockup](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
