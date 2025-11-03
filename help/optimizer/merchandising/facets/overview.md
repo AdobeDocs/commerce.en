@@ -35,7 +35,7 @@ See the [Data Ingestion Metadata API](https://developer.adobe.com/commerce/servi
 
 ## Layered search and expansion of search types
 
-Layered search, or search within a search, is a powerful, attribute-based filtering system that extends the traditional search functionality to include additional search parameters. These additional search parameters allow more precise and flexible product discovery.
+Layered search, or search within a search, is an attribute-based filtering system that extends the traditional search functionality to include additional search parameters. These additional search parameters allow more precise and flexible product discovery.
 
 With layered search you can:
 
