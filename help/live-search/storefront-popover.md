@@ -9,8 +9,6 @@ When [!DNL Live Search] is [installed](install.md), a [!DNL popover] appears in 
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
-By default, [!DNL Live Search] supports [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
-
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 >[!TIP]
