@@ -139,7 +139,7 @@ Facets and synonyms are another way you can enahnce the search experience for yo
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = No*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
+>A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 
