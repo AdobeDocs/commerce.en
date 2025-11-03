@@ -27,9 +27,23 @@ git --version
 bash --version
 ```
 
+## Log in to the Adobe Developer Console
+
+1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/).
+1. If you are already logged in, click your profile icon in the top-right and click the **Sign out** button.
+1. Log in using the lab email ID and password provided for your seat.
+1. If you are prompted to add a secondary email address or phone number, click **Not now**.
+1. When you are prompted to select an organization profile, select **Adobe Commerce Labs**.
+
+   ![select-organization](./assets/select-org.png){width="600" zoomable="yes"}
+
+1. If you are prompted to accept the terms and conditions, click the link to read the terms, then click **Accept and continue**.
+
+   ![accept-terms](./assets/accept-terms.png){width="600" zoomable="yes"}
+
 ## Run the setup script
 
-If the [prerequisites](#verify-prerequisites) are installed, download and run the setup script. Alternatively, you can manually setup the script by following the [lab prerequisites](workbook-prerequisites.md) steps.
+If the [prerequisites](#verify-prerequisites) are installed, and you have signed in to the Adobe Developer Console, download and run the setup script. Alternatively, you can manually setup the script by following the [lab prerequisites](workbook-prerequisites.md) steps.
 
 1. Clone the repository that contains the setup script:
 
