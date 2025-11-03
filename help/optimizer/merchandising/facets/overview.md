@@ -51,7 +51,7 @@ The advanced search capabilities are implemented through the `filter` parameter 
 
   Layered search is available for both `startsWith` search indexation and `contains` search indexation in the second layer of the layered search, as described below:
 
-- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
+- **startsWith search indexation** - Search using `startsWith` indexation. This capability allows:
 
   - Searching for products where the attribute value starts with a specified string.
   - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string.
