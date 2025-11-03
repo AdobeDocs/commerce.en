@@ -29,7 +29,7 @@ bash --version
 
 ## Log in to the Adobe Developer Console
 
-1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/).
+1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console).
 1. If you are already logged in, click your profile icon in the top-right and click the **Sign out** button.
 1. Log in using the lab email ID and password provided for your seat.
 1. If you are prompted to add a secondary email address or phone number, click **Not now**.
