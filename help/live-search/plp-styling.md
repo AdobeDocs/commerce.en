@@ -11,7 +11,15 @@ The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Servi
 
 When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
 
-The [!DNL Live Search] PLP widget is enabled by default for new installations. If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so.
+The [!DNL Live Search] PLP widget is enabled by default for new installations. 
+
+If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so. To turn it on:
+1. In your Adobe Commerce Admin, go to Stores → Settings → Configuration.
+1. In the left navigtion, under Services, click [!UICONTROL Live Search].
+1. Click on the [!UICONTROL Storefront Features] section.
+1. Set [!UICONTROL Enable Product Listing Widget] = Yes
+1. Save Config
+1. If prompted, flush the cache ( go to System > Tools > Cache Management > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
