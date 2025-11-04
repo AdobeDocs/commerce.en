@@ -73,10 +73,6 @@ Use facets as URL parameters:`http://yourwebsite.com?color=red`, and Live Search
 
 Merchandising [rules](rules.md) shape the shopping experience with if-then statements that add logic and events to search. You can easily boost or bury products for a promotion, season, or other period of time.
 
-### Search terms support
-
-[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). For example, users can search for a term such as "Shipping Rates" and be taken directly to the shipping rates page.
-
 ## Live Search components
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
