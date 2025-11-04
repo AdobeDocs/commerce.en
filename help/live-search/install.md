@@ -142,7 +142,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    - Categories Feed
    - Category Permissions Feed
 
-1. Enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules). [!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance.
+1. Enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
@@ -154,7 +154,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
    >[!NOTE]
    >
-   >The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error.
+   >[!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance. The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error. 
 
 1. Install the updates.
 
