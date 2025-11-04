@@ -10,7 +10,7 @@ exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 
 Adobe Commerce Services deliver powerful capabilities that extend your storefront, streamline integrations, and optimize data management. These cloud-based SaaS solutions scale automatically and stay current without requiring manual updates.
 
-## How does commerce connect to services?
+## How does Commerce connect to services?
 
 All of the cloud-based SaaS solutions are connected to your Commerce instances through the [Commerce Services connector](saas.md).
 
@@ -158,11 +158,11 @@ Data tools help you manage and optimize the flow of information between your Com
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Monitor data sync" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Data Management Dashboard</strong>
          </a>
       </div>
@@ -178,61 +178,19 @@ Data tools help you manage and optimize the flow of information between your Com
 
 ## What problems can Commerce Services solve?
 
-Whether you're looking to scale your business, improve customer experiences, or make data-driven decisions, Adobe Commerce Services provide solutions for common commerce challenges:
+Whether you are looking to scale your business, improve customer experiences, or make data-driven decisions, Adobe Commerce Services provide solutions for common Commerce challenges:
 
-### Improve product discovery and conversion
-
-**Challenge**: Shoppers can't find what they're looking for, leading to high bounce rates and lost sales.
-
-**Solution**: Use [Live Search](../live-search/overview.md) and [Product Recommendations](../product-recommendations/overview.md) to deliver AI-powered search with typo tolerance, instant "search as you type" results, dynamic faceting, and personalized product recommendations based on real-time shopper behavior.
-
-### Create omnichannel personalized experiences
-
-**Challenge**: Your commerce data is siloed, preventing you from delivering personalized experiences across channels.
-
-**Solution**: Use [Data Connection](../data-connection/overview.md) to send behavioral, transactional, and profile data to Adobe Experience Platform. Build sophisticated customer segments, create abandoned cart campaigns, target lookalike audiences, and analyze seasonal trends across your entire customer journey.
-
-### Streamline digital asset management
-
-**Challenge**: Managing product images and rich media across multiple systems is time-consuming and error-prone.
-
-**Solution**: [AEM Assets Integration](../aem-assets-integration/overview.md) provides centralized asset management connected to Adobe Experience Manager, simplifying workflows and ensuring consistent brand experiences across all touchpoints.
-
-### Optimize payment processing
-
-**Challenge**: Limited payment options and poor payment experiences are hurting customer satisfaction and conversion.
-
-**Solution**: [Payment Services](../payment-services/guide-overview.md) offers multiple payment methods, including interest-free installments, with a unified dashboard for managing payments, orders, and invoices.
-
-### Manage data synchronization at scale
-
-**Challenge**: Resource-intensive indexing is slowing down your site, and you can't easily track data synchronization issues.
-
-**Solution**: [SaaS Data Export](#data-tools), [SaaS Price Indexer](#data-tools), and the [Data Management Dashboard](#data-tools) automatically sync catalog, order, and inventory data, offload price calculations to Adobe's cloud infrastructure, and provide real-time visibility into synchronization status.
-
-### Win back lost customers and reduce returns
-
-**Challenge**: High customer churn and product return rates are impacting profitability.
-
-**Solution**: Combine [Data Connection](#integration-services) with Adobe Journey Optimizer and Real-Time CDP to identify return patterns, create win-back campaigns, segment customers by behavior, and send personalized re-engagement campaigns across email and SMS.
-
-### Support enterprise catalog complexity
-
-**Challenge**: You manage multiple brands, regions, or business units with complex catalog requirements.
-
-**Solution**: [Catalog Service](#storefront-services) and [Adobe Commerce Optimizer](../optimizer/overview.md) let you define business catalog views and policies, optimize product experiences, and ensure the right content reaches the right destination—whether it's point-of-sale systems, marketplaces, or advertising platforms.
-
-### Make data-driven merchandising decisions
-
-**Challenge**: You're not sure which products to promote or when to run promotions.
-
-**Solution**: Use [Live Search](#storefront-services) and [Adobe Commerce Optimizer](../optimizer/overview.md) analytics features to access success metrics, performance dashboards, search term analysis, and before/after comparisons to make intelligent merchandising decisions powered by real customer behavior.
-
-### Maintain compliance with sensitive data
-
-**Challenge**: You need to handle sensitive customer data while maintaining HIPAA compliance.
-
-**Solution**: [Data Connection](#integration-services) is HIPAA-ready, allowing you to share back-office data with Experience Platform while maintaining compliance and systematically handling privacy requests.
+| Problem | Challenge | Solution |
+|---------|-----------|----------|
+| Improve product discovery and conversion | Shoppers can't find what they're looking for, leading to high bounce rates and lost sales. | Use [Live Search](../live-search/overview.md) and [Product Recommendations](../product-recommendations/overview.md) to deliver AI-powered search with typo tolerance, instant "search as you type" results, dynamic faceting, and personalized product recommendations based on real-time shopper behavior. |
+| Create omnichannel personalized experiences | Your commerce data is siloed, preventing you from delivering personalized experiences across channels. | Use [Data Connection](../data-connection/overview.md) to send behavioral, transactional, and profile data to Adobe Experience Platform. Build sophisticated customer segments, create abandoned cart campaigns, target lookalike audiences, and analyze seasonal trends across your entire customer journey. |
+| Streamline digital asset management | Managing product images and rich media across multiple systems is time-consuming and error-prone. | [AEM Assets Integration](../aem-assets-integration/overview.md) provides centralized asset management connected to Adobe Experience Manager, simplifying workflows and ensuring consistent brand experiences across all touchpoints. |
+| Optimize payment processing | Limited payment options and poor payment experiences are hurting customer satisfaction and conversion. | [Payment Services](../payment-services/guide-overview.md) offers multiple payment methods, including interest-free installments, with a unified dashboard for managing payments, orders, and invoices. |
+| Manage data synchronization at scale | Resource-intensive indexing is slowing down your site, and you can't easily track data synchronization issues. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md), and the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) automatically sync catalog, order, and inventory data, offload price calculations to Adobe's cloud infrastructure, and provide real-time visibility into synchronization status. |
+| Win back lost customers and reduce returns | High customer churn and product return rates are impacting profitability. | Combine [Data Connection](../data-connection/overview.md) with Adobe Journey Optimizer and Real-Time CDP to identify return patterns, create win-back campaigns, segment customers by behavior, and send personalized re-engagement campaigns across email and SMS. |
+| Support enterprise catalog complexity | You manage multiple brands, regions, or business units with complex catalog requirements. | [Catalog Service](../catalog-service/overview.md) provides optimized product experiences, improved scalability, and increased conversions. Deliver catalog data efficiently to connected services and ensure the right content reaches the right destination—whether it's storefronts, marketplaces, or advertising platforms. |
+| Make data-driven merchandising decisions | You're not sure which products to promote or when to run promotions. | [Live Search](../live-search/overview.md) provides search performance insights and merchandising tools to access key metrics, analyze search terms, and use intelligent merchandising rules to boost or bury products based on real customer behavior and business goals. |
+| Maintain compliance with sensitive data | You need to handle sensitive customer data while maintaining HIPAA compliance. | [Data Connection](../data-connection/overview.md) is HIPAA-ready, allowing you to share back-office data with Experience Platform while maintaining compliance and systematically handling privacy requests. |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
