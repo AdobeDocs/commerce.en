@@ -154,7 +154,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
    >[!NOTE]
    >
-   >The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error.
+   >[!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance. The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error. 
 
 1. Install the updates.
 
