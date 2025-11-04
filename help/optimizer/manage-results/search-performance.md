@@ -130,3 +130,41 @@ Learn more about product attributes for search:
 | Zero results | Lists the search queries that return no results and the number of times used during the specified date range. Report limit: Top 500 terms |
 | Popular results | Lists the names of products that received the most views during the specified date range. Popular results are calculated based on impressions only and are not affected by the number of clicks or revenue generated. Report limit: Top 500 terms |
 | Unique searches | Lists the unique search queries used during the specified date range. The report data is calculated the same way as unique search snapshot data. If a shopper types the same search query twice, but more than an hour apart, the search is considered to be two unique searches. Report limit: Top 500 terms |
+
+## Default non-system attribute properties
+
+The following table shows the default search and filterable properties of non-system attributes. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in [!DNL Adobe Commerce Optimizer].
+
+| Attribute Code | Searchable |
+|--- |--- |
+| activity | Yes | 
+| attributes_brand | Yes | 
+| brand | Yes |
+| climate | Yes | 
+| collar | Yes | 
+| color | Yes | 
+| cost | Yes |
+| eco_collection ||
+| gender | Yes | 
+| manufacturer | Yes | 
+| material | Yes | 
+| purpose | Yes | 
+| strap_bags | Yes | 
+| style_general | Yes | 
+
+## Default system attribute properties
+
+The following table shows the default search and filterable properties of system attributes.
+
+| Attribute Code | Searchable |
+|--- |--- |
+| allow_open_amount | Yes | 
+| description | Yes |
+| name | Yes |
+| price | Yes | 
+| short_description | Yes |
+| sku | Yes |
+| status | Yes |
+| tax_class_id | Yes |
+| url_key | Yes |
+| weight | Yes |
