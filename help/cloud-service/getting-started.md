@@ -91,7 +91,6 @@ As a merchant, you focus on managing products, orders, and storefront content.
 | Import catalog | Learn about how to import your product data to the platform | [Import your catalog](#import-your-catalog) |
 | Access AEM Assets and Product Visuals (optional) | Access the experience manager to start using AEM Assets and Product Visuals | [Access the Experience Manger interface](./user-management.md#access-the-experience-manager-interface) |
 
-
 >[!TAB Developer]
 
 As a developer, you need to know how to build custom integrations and extend platform functionality.
@@ -129,7 +128,7 @@ The following sections describe the basic processes you need to complete to get 
 
 1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
-1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager]. 
+1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager].
 
    The [!UICONTROL Commerce Cloud Manager] displays a list of [!DNL Adobe Commerce as a Cloud Service] instances that are available in your Adobe IMS organization.
 
@@ -140,16 +139,22 @@ The following sections describe the basic processes you need to complete to get 
 1. Select [!UICONTROL **Commerce as a Cloud Service**].
 
 1. Enter a **Name** and **Description** for your instance.
- 
+
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   * [!UICONTROL **Sandbox**] - Ideal for design and testing purposes. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
+   * [!UICONTROL **Sandbox**] - For design and testing purposes only. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
+
+   >[!NOTE]
+   >
+   > Sandbox instances are for design and testing purposes only. You should not use any production data in a sandbox environment.
+   >
+   >Sandbox instances are limited to the North America region.
+
    * [!UICONTROL **Production**] - For live stores and customer-facing sites.
 
    >[!NOTE]
    >
-   >* Sandbox instances are limited to the North America region.
-   >* The option to install sample data is currently unavailable.
+   >Adobe Commerce as a Cloud Service's infrastructure is available globally. For information on production environments in your region contact your customer service representative.
 
 1. Select the region where you want your instance hosted.
 
@@ -165,7 +170,7 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 
 1. Log in to your [Adobe Experience Cloud](https://experience.adobe.com/) account.
 
-1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager]. 
+1. Under [!UICONTROL Quick access], click [!UICONTROL **Commerce**] to open the [!UICONTROL Commerce Cloud Manager].
 
    The [!UICONTROL Commerce Cloud Manager] displays a list of instances that are available in your Adobe IMS organization.
 
@@ -179,7 +184,7 @@ The base URLs for your Admin and endpoints differ based on region and environmen
 
 * Admin
   * North America production Admin: `https://na1.admin.commerce.adobe.com`
-  * North America sandbox Admin: `https://na1-sandbox.admin.commerce.adobe.com` 
+  * North America sandbox Admin: `https://na1-sandbox.admin.commerce.adobe.com`
   * Europe production Admin: `https://eu1.admin.commerce.adobe.com`
 * REST and GraphQL
   * North America production GraphQL: `https://na1.api.commerce.adobe.com`

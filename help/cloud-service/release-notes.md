@@ -43,20 +43,3 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 * Admin users can now view and edit [custom order attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)  directly from the Order View, Edit, and Create screens in the Admin panel. This enhancement improves the management of custom order data created via GraphQL.  <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
-
-## August 2025
-
->[!BEGINSHADEBOX]
-
-### EU region now available
-
-European Union region (eu1) support for customer IMS organizations is now available. You can now select **European Union** as a **Region** when [adding a Commerce SaaS instance](./getting-started.md#create-an-instance) in the Cloud Manager. The European Union region is only available for production environments.
-
-The base production URLs for the European Union region are:
-
-* Admin: `https://eu1.admin.commerce.adobe.com`
-* REST and GraphQL: `https://eu1.api.commerce.adobe.com`
-
-![create instance](./assets/create-instance-eu.png){width="600" align="center" zoomable="yes"}
-
->[!ENDSHADEBOX]
