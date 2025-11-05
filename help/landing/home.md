@@ -21,7 +21,7 @@ When the Commerce Services connector is configured, you have access to the follo
 
 These services help you increase conversions, deliver personalized experiences, and make better use of your commerce data across the Adobe ecosystem.
 
-![Storefront Services](./assets/service-layer.png)
+![Services Layer](./assets/service-layer.png)
 
 >[!NOTE]
 >
