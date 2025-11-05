@@ -12,7 +12,7 @@ Adobe Commerce Services deliver powerful capabilities that extend your storefron
 
 ## How does Commerce connect to services?
 
-All of the cloud-based SaaS solutions are connected to your Commerce instance through the [Commerce Services connector](saas.md).
+All Commerce services connect to your Commerce instance through the [Commerce Services connector](saas.md).
 
 When the Commerce Services connector is configured, you have access to the following features:
 
@@ -28,6 +28,8 @@ These services help you increase conversions, deliver personalized experiences, 
 >Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
 
 In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These tools can automatically synchronize the data and help you optimize performance. Learn more about the available [data tools](#data-tools).
+
+## Available services
 
 >[!BEGINTABS]
 
@@ -94,7 +96,7 @@ Storefront services are a group of AI-powered features that optimize product dis
 
 >[!TAB Integration services]
 
-Integration services refer to SaaS deployed features that connect your Commerce instance to other products or services within Adobe.
+Integration services refer to features that connect your Commerce instance to other products or services within Adobe.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
