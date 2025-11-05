@@ -8,7 +8,7 @@ exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 ---
 # Adobe Commerce Services Guides
 
-Adobe Commerce Services deliver powerful capabilities that extend your storefront, streamline integrations, and optimize data management. These cloud-based SaaS solutions scale automatically and stay current without requiring manual updates.
+Adobe Commerce Services deliver powerful capabilities that extend your storefront, streamline integrations, and optimize data management.
 
 ## How does Commerce connect to services?
 
