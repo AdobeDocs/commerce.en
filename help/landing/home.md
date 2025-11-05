@@ -12,7 +12,7 @@ Adobe Commerce Services deliver powerful capabilities that extend your storefron
 
 ## How does Commerce connect to services?
 
-All of the cloud-based SaaS solutions are connected to your Commerce instances through the [Commerce Services connector](saas.md).
+All of the cloud-based SaaS solutions are connected to your Commerce instance through the [Commerce Services connector](saas.md).
 
 When the Commerce Services connector is configured, you have access to the following features:
 
@@ -27,7 +27,7 @@ These services help you increase conversions, deliver personalized experiences, 
 >
 >Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
 
-In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These tools can also automatically synchronize the data and help you optimize performance. Learn more about the available [data tools](#data-tools).
+In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These tools can automatically synchronize the data and help you optimize performance. Learn more about the available [data tools](#data-tools).
 
 ## Storefront services
 
@@ -188,7 +188,6 @@ Whether you are looking to scale your business, improve customer experiences, or
 | Optimize payment processing | Limited payment options and poor payment experiences are hurting customer satisfaction and conversion. | [Payment Services](../payment-services/guide-overview.md) offers multiple payment methods, including interest-free installments, with a unified dashboard for managing payments, orders, and invoices. |
 | Manage data synchronization at scale | Resource-intensive indexing is slowing down your site, and you can't easily track data synchronization issues. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md), and the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) automatically sync catalog, order, and inventory data, offload price calculations to Adobe's cloud infrastructure, and provide real-time visibility into synchronization status. |
 | Win back lost customers and reduce returns | High customer churn and product return rates are impacting profitability. | Combine [Data Connection](../data-connection/overview.md) with Adobe Journey Optimizer and Real-Time CDP to identify return patterns, create win-back campaigns, segment customers by behavior, and send personalized re-engagement campaigns across email and SMS. |
-| Support enterprise catalog complexity | You manage multiple brands, regions, or business units with complex catalog requirements. | [Catalog Service](../catalog-service/overview.md) provides optimized product experiences, improved scalability, and increased conversions. Deliver catalog data efficiently to connected services and ensure the right content reaches the right destination—whether it's storefronts, marketplaces, or advertising platforms. |
 | Make data-driven merchandising decisions | You're not sure which products to promote or when to run promotions. | [Live Search](../live-search/overview.md) provides search performance insights and merchandising tools to access key metrics, analyze search terms, and use intelligent merchandising rules to boost or bury products based on real customer behavior and business goals. |
 | Maintain compliance with sensitive data | You need to handle sensitive customer data while maintaining HIPAA compliance. | [Data Connection](../data-connection/overview.md) is HIPAA-ready, allowing you to share back-office data with Experience Platform while maintaining compliance and systematically handling privacy requests. |
 
