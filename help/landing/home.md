@@ -29,7 +29,9 @@ These services help you increase conversions, deliver personalized experiences, 
 
 In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These tools can automatically synchronize the data and help you optimize performance. Learn more about the available [data tools](#data-tools).
 
-## Storefront services
+>[!BEGINTABS]
+
+>[!TAB Storefront services]
 
 Storefront services are a group of AI-powered features that optimize product discovery, personalize customer interactions, and streamline payment processing to increase engagement and conversions. With storefront services, you can enhance the shopping experience and drive business growth.
 
@@ -90,7 +92,7 @@ Storefront services are a group of AI-powered features that optimize product dis
 </tr>
 </table>
 
-## Integration services
+>[!TAB Integration services]
 
 Integration services refer to SaaS deployed features that connect your Commerce instance to other products or services within Adobe.
 
@@ -125,7 +127,7 @@ Integration services refer to SaaS deployed features that connect your Commerce 
 </tr>
 </table>
 
-## Data tools
+>[!TAB Data tools]
 
 Data tools help you manage and optimize the flow of information between your Commerce instance and connected services. These tools ensure efficient data synchronization, monitor sync operations, and improve performance by offloading resource-intensive processes.
 
@@ -175,6 +177,8 @@ Data tools help you manage and optimize the flow of information between your Com
 >[!NOTE]
 >
 >The Data Management Dashboard is available at no additional cost to Commerce merchants using Product Recommendations v6.0.0, Live Search v4.1.0, or Catalog Service v1.17 with an active license. Merchants using earlier service versions can use [Catalog Sync](../landing/catalog-sync.md) to manage and track data synchronization.
+
+>[!ENDTABS]
 
 ## What problems can Commerce Services solve?
 
