@@ -17,10 +17,10 @@ Commerce Optimizer enhances product discovery and catalog business efficiency, w
 
 ### Key capabilities
 
-- **Automated issue detection**—Sites Optimizer continuously scans product catalogs, search logs, and recommendation data to identify problems affecting discovery
-- **AI-driven recommendations**—Receive intelligent suggestions to resolve detected issues
-- **Impact categorization**—Issues are categorized by business impact (Search, Recommendations, Browse/Navigation, Product Data Quality)
-- **Dashboard reporting**—View issue trends, top impacted products/queries, and improvements over time
+- **Automated issue detection**—Sites Optimizer continuously scans product catalogs, search logs, and recommendation data to identify problems affecting discovery.
+- **AI-driven recommendations**—Receive intelligent suggestions to resolve detected issues.
+- **Impact categorization**—Issues are categorized by business impact (Search, Recommendations, Browse/Navigation, Product Data Quality).
+- **Dashboard reporting**—View issue trends, top impacted products/queries, and improvements over time.
 
 ## Learn more about Sites Optimizer
 
@@ -28,11 +28,11 @@ For detailed information about Sites Optimizer capabilities and features, see th
 
 Additional resources:
 
-- [Opportunity types](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) - Learn about available optimization opportunities
-- [Sites Optimizer capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Explore what Sites Optimizer can do
+- [Opportunity types](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) - Learn about available optimization opportunities.
+- [Sites Optimizer capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Explore what Sites Optimizer can do.
 
 ## More like this
 
-- [Success Metrics](success-metrics.md) - Monitor key performance indicators
-- [Search Performance](search-performance.md) - Analyze search terms and optimize relevance
-- [Recommendation Performance](recommendation-performance.md) - Monitor recommendation effectiveness
+- [Success Metrics](success-metrics.md) - Monitor key performance indicators.
+- [Search Performance](search-performance.md) - Analyze search terms and optimize relevance.
+- [Recommendation Performance](recommendation-performance.md) - Monitor recommendation effectiveness.
