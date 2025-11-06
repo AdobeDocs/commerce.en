@@ -14,6 +14,7 @@ recommendations: noDisplay
 - [Boundaries and limitations](boundaries-limits.md)
 - [Release notes](release-notes.md)
 - Managing Results {#manage-results}
+   - [Opportunities](./manage-results/opportunities.md)
    - [Success Metrics](./manage-results/success-metrics.md)
    - [Search Performance](./manage-results/search-performance.md)
    - [Recommendations Performance](./manage-results/recommendation-performance.md)
