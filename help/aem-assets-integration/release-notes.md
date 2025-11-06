@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.2.7
+
+_November 6, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1169 --> Fixed an issue where product thumbnail images were displayed inconsistently after enabling the AEM Assets integration on the **Mini Cart**, **Cart**, and **Checkout** pages. Now, product images render consistently across all pages, even after refreshing the page.
+
 ## v1.2.6
 
 _October 24, 2025_
