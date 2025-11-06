@@ -41,7 +41,7 @@ Before you begin, complete the following prerequisites:
 
 ### Add APIs to the workspace
 
-1. Click the [!UICONTROL **Stage**] workspace and add then repeat the following steps for each API.
+1. Click the [!UICONTROL **Stage**] workspace and then repeat the following steps for each API.
 
    ![APIs added to workspace](./assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
