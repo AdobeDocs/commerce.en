@@ -8,8 +8,8 @@ exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 
 Adobe Commerce offers three deployment models:
 
-- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [!BADGE SaaS only]{type=Positive url="<https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions>" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- [!BADGE PaaS only]{type=Informative url="<https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions>" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
 - [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (on-premises)
 
 This comparison focuses on the differences between software-as-a-service (SaaS) and platform-as-a-service (PaaS) models, which provide different levels of customization, extensibility, and control over your commerce implementation.
@@ -93,13 +93,43 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Feature and security updates</td>
-            <td>Requires manual upgrade and patching</td>
-            <td>Automatically deployed</td>
+            <td>Requires manual upgrade and patching. Six patch releases and one minor release per year.</td>
+            <td>Automatically upgraded by Adobe through a versionless SaaS model</td>
         </tr>
         <tr>
             <td>Hosting infrastructure</td>
             <td>Single-tenant</td>
             <td>Multi-tenant</td>
+        </tr>
+        <tr>
+            <td>Performance and scalability</td>
+            <td>Horizontal auto-scaling for scaled architecture. Vertical auto-scaling for web tier in early access.</td>
+            <td>Multi-tenant cloud-native application with full auto-scaling across the stack</td>
+        </tr>
+        <tr>
+            <td>Observability</td>
+            <td>[!DNL New Relic] access for customers to monitor and manage environment</td>
+            <td>Adobe managed. Customers can use [!DNL OpenTelemetry] for [!DNL App Builder] apps and RUM dashboards for storefront. [!DNL New Relic] license not included.</td>
+        </tr>
+        <tr>
+            <td>CDN</td>
+            <td>[!DNL Fastly] included</td>
+            <td>Fully managed Edge CDN. BYO-CDN also supported.</td>
+        </tr>
+        <tr>
+            <td>Security and compliance</td>
+            <td>SOC2, PCI, ISO certifications per hosting provider, HIPAA</td>
+            <td>SOC2, PCI, ISO, GDPR. HIPAA currently not available.</td>
+        </tr>
+        <tr>
+            <td>Disaster recovery and SLAs</td>
+            <td>99.99% infrastructure, 99.9% application (Managed Services)</td>
+            <td>99.9% (infrastructure and application), faster RPO/RTO</td>
+        </tr>
+        <tr>
+            <td>Hosting regions</td>
+            <td>Azure (24 locations), AWS (22 locations), GCP (8 locations, not standard)</td>
+            <td>Globally available. For information on production environments in your region contact your customer service representative.</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Commerce Admin customization</strong></td>
@@ -141,6 +171,11 @@ The following table compares platform capabilities and extensibility features to
             <td>Technologies</td>
             <td>CSS, CLI, HTML, JS, PHP, XML</td>
             <td>CSS, CLI, HTML, JS, Node</td>
+        </tr>
+        <tr>
+            <td>App marketplace</td>
+            <td>[!DNL Magento Marketplace] (PHP extensions) and [!DNL Exchange Marketplace] for [!DNL App Builder] apps</td>
+            <td>[!DNL App Builder] apps from [!DNL Exchange Marketplace]</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
