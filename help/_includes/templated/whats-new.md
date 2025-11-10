@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### November 6, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">release notes</a> for the AEM Assets Integration v1.2.7 release.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/89091ee8a69259ad325a2b2d7ed8d522fe23fac9">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 17, 2025
 
 <table style="table-layout:auto;">
@@ -110,58 +132,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 9, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added AEM Assets setup information to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">user management</a> page for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added role-based tasks and workflow info to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started">Getting started</a> page for Adobe Commerce as a Cloud Service</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f62434c55d21f65568af422bd278e6ed917b805b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 4, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added documentation for the optional <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Extra Product Attributes module</a>. When this module is installed in an Adobe Commerce environment, the Data Export process automatically exports tax class, attribute set, and inventory metadata from the Commerce product configuration to the <code class="language-plaintext highlighter-rouge">products</code> and <code class="language-plaintext highlighter-rouge">product attributes</code> feeds.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">commit</a></td>
     </tr>
   </tbody>
 </table>
