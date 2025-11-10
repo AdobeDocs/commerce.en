@@ -27,7 +27,7 @@ These notes describe updates or known issues that were published or discovered o
 
 _November 14, 2025_
 
-![New](../assets/new.svg) You can now create up to 50 active recommendation units for each page type. Previously, it was 5.
+![New](../assets/new.svg) You can now create up to 50 active recommendation units for each page type. Previously, the limit was five.
 
 _October 1, 2025_
 
