@@ -41,7 +41,7 @@ The Connector enables several key workflows:
 
 ## Get started
 
-## Install Commerce packages
+## Install Commerce Connector packages
 
 The Adobe Commerce Connector PHP extension is available to all Commerce merchants with an active license for Adobe Commerce Optimizer.
 
