@@ -83,7 +83,6 @@ For detailed extension installation instructions, see the following guides:
 
 * [Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
-
 ## Configure the Adobe Commerce Optimizer integration
 
 Configure the Adobe Commerce Optimizer integration to connect the Commerce project environment to your Adobe Commerce Optimizer instance.
