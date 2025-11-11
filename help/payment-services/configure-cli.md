@@ -87,7 +87,7 @@ To learn more about reindexing and indexers, see the [Manage the indexers](https
 
 ## Configure scope via CLI
 
-[!DNL Payment Services] allows merchants to use [multiple PayPal accounts](settings.md#use-multiple-paypal-accounts). Now, you can change scopes for these accounts via CLI.
+[!DNL Payment Services] allows merchants to use [multiple PayPal accounts](configure-admin.md#use-multiple-paypal-accounts). Now, you can change scopes for these accounts via CLI.
 
 To set the scope to the `website` level, run:
 

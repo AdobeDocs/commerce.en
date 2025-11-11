@@ -52,10 +52,10 @@ Create a plugin that adds a `customer_attribute` to the `Magento\CatalogDataExpo
                       continue;
                   }
                   // HINT: if needed, do filtration by "storeViewCode" and or "productId"
-                  
+
                   $productId = $product['productId'];
                   $storeViewCode = $product['storeViewCode'];
-                  
+
                   $newKey = \implode('-', [$product['storeViewCode'], $product['productId'], $attributeCode]);
                   if (isset($additionalAttributes[$newKey])) {
                       continue;
@@ -71,9 +71,9 @@ Create a plugin that adds a `customer_attribute` to the `Magento\CatalogDataExpo
                           ]
                       ]
                   ];
-      
+
               }
-      
+
               return array_merge($result, $additionalAttributes);
           }
     }
@@ -170,3 +170,4 @@ If you dynamically create a custom product attribute and want to use it for disp
      ```
      bin/magento saas:resync --feed=productattributes
      ```
+

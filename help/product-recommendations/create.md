@@ -155,7 +155,7 @@ The readiness indicator percent for recommendation types that depend on catalog 
 
 #### What to do if the readiness indicator percent is low
 
-A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backuprecs) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backup-recommendations) are returned if you deploy this recommendation type anyway.
 
 >[!IMPORTANT]
 >
@@ -166,7 +166,7 @@ The following lists possible reasons and solutions to common low readiness score
 * **Static-based** - Low percentages for these indicators can be caused by missing catalog data for the displayable products. If they are lower than expected, a full sync can fix this issue.
 * **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
 
-   * Missing fields in the required [storefront events](events.md) for the respective recommendation types (requestId, product context, and so on.)
+   * Missing fields in the required [storefront events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) for the respective recommendation types (requestId, product context, and so on.)
    * Low traffic on the store so the volume of behavioral events we receive is low.
    * The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 

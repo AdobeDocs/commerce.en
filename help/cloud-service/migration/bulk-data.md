@@ -2,7 +2,7 @@
 title: Bulk Data Migration Tool
 description: Learn how to use the Bulk Data Migration Tool to migrate data from your existing Adobe Commerce on Cloud instance to [!DNL Adobe Commerce as a Cloud Service].
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
-role: Architect
+role: Developer
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 ---
 # Bulk data migration tool
@@ -33,8 +33,8 @@ The following sections describe these steps in detail.
 
 The availability of the bulk data migration tool is as follows:
 
-- **Q3 2025** - To access the bulk data migration tool, submit a support ticket.
-- **Q3 2025** - The bulk data migration tool will be publicly available and will be accessible from this page.
+- **Q4 2025** (not yet available) - After the initial release of the bulk data migration tool, you will be able to access it by submitting a support ticket.
+- **Q4 2025** (not yet available) - After the public release of the bulk data migration tool, it will be accessible from this page.
 
 ## Create target environment
 

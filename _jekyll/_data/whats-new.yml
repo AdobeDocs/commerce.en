@@ -1,0 +1,151 @@
+---
+title: What's New
+description: This page contains the changes made in the last 60 days. We exclude all
+  minor updates, such as copy editing, from this list.
+updated: Mon Nov 10 10:32:37 2025
+entries:
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes)
+    for the AEM Assets Integration v1.2.7 release.
+  versions: ''
+  type: technical
+  date: November 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/292
+  merge_commit: 89091ee8a69259ad325a2b2d7ed8d522fe23fac9
+  contributor: del
+  membership:
+  labels:
+  - release-notes
+  - technical
+- description: 'Updated the following topics to include information about configuring
+    identity management and single sign-on from the Adobe Admin Console:<br/>- [Adobe
+    Commerce as a Cloud Service User and Identity Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)<br/>-
+    [Adobe Commerce Optimizer: User and Identity Management](https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management)'
+  versions: ''
+  type: feedback, technical
+  date: October 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/267
+  merge_commit: 78f1fa56d409433c90763077b63198e38a9ab692
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - technical
+- description: Updated [User Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    steps for adding a user.
+  versions: ''
+  type: major-update
+  date: October 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/257
+  merge_commit: 4088b88553cbdd328a55f3483b20ea073e6c78b2
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated the [storefront set up guide](https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront)
+    for Adobe Commerce Optimizer to provide instructions for creating storefront project
+    with the Site Creator tool, customizing the storefront configuration, and verifying
+    the site and catalog data by checking the default product detail and product search
+    results pages.
+  versions: ''
+  type: major-update
+  date: October 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/178
+  merge_commit: 4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c
+  contributor: meker
+  membership:
+  labels:
+  - major-update
+- description: "[User management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    now requires all developers and product admins to add the user role first."
+  versions: ''
+  type: major-update
+  date: October 2, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/252
+  merge_commit: e12b4c18cacd43d73ced180a62d7162a745ced56
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
+    for Payment Services v2.12.2.
+  versions: ''
+  type: major-update
+  date: September 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/244
+  merge_commit: 1e5ee370bf91d33f35585d2d64b393fede721ce6
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+- description: Added AEM Assets setup information to the [user management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    page for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: September 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/209
+  merge_commit: acce1aad405e74b1171faddf7f0d6681bd0a048d
+  contributor: jhoover
+  membership:
+  labels:
+  - major-update
+- description: Added role-based tasks and workflow info to the [Getting started](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started)
+    page for Adobe Commerce as a Cloud Service
+  versions: ''
+  type: new-topic
+  date: September 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/220
+  merge_commit: f62434c55d21f65568af422bd278e6ed917b805b
+  contributor: jhoover
+  membership:
+  labels:
+  - new-topic
+- description: Added documentation for the optional [Extra Product Attributes module](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes).
+    When this module is installed in an Adobe Commerce environment, the Data Export
+    process automatically exports tax class, attribute set, and inventory metadata
+    from the Commerce product configuration to the `products` and `product attributes`
+    feeds.
+  versions: ''
+  type: new-topic
+  date: September 4, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/215
+  merge_commit: a77c6bd98622488214d89a077e1dfaa8338108fd
+  contributor: meker
+  membership:
+  labels:
+  - new-topic
+- description: You can now use the [site creator tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront)
+    to set up your storefront without using the CLI.
+  versions: ''
+  type: major-update
+  date: August 21, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197
+  merge_commit: bf3954af26fba0aa943261a0673166c0537e692e
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Added a topic about how to add [custom attributes to profiles](https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities).
+  versions: ''
+  type: new-topic
+  date: August 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158
+  merge_commit: 403b15368c52f3965e65a9175c82c2f6cd1773bb
+  contributor: emarr
+  membership:
+  labels:
+  - new-topic
+- description: Adds extended guidance for configuring your storefront after using
+    the Adobe Commerce as a Cloud Service storefront scaffolder.
+  versions: ''
+  type: feedback
+  date: August 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/174
+  merge_commit: ad0c36006a01491aee1ca1643c6a3ab63f39f7e4
+  contributor: jhoover
+  membership:
+  labels:
+  - feedback
+  - editorial

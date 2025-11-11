@@ -1,12 +1,12 @@
 ---
-title: Legacy Payment Services Configuration
+title: "[!DNL Payment Services] Configuration"
 description: After installation, you can configure [!DNL Payment Services] in the Admin at the store configuration.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
 ---
-# Legacy [!DNL Payment Services] Configuration
+# [!DNL Payment Services] Configuration
 
 You can customize [!DNL Payment Services] to your needs with helpful configuration options in the Admin.
 
@@ -82,9 +82,89 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 | [!UICONTROL 3D Secure authentication] | website | Enable or disable [3DS Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
+## [!UICONTROL Fastlane]
+
+[[!DNL Fastlane by PayPal]](https://www.paypal.com/us/cshelp/article/what-is-fastlane-by-paypal-help1096) is a fast and easy way to pay securely online. During a **Guest checkout**, you can securely store your card and shipping details for even faster purchases in the future. 
+
+See [Payment options](payments-options.md#fastlane-button) for more information.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
+1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
+1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Fastlane]_ section.
+1. To enable it, select `Yes` for the **[!UICONTROL Enable Fastlane]** (`No` disables it).
+
+    >[!NOTE]
+    >
+    > If [!UICONTROL Fastlane] is enabled, the [!UICONTROL Credit Card Fields] payment option is disabled.
+
+1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout. The default title is `Credit Card (via Fastlane)`
+1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **Authorize and Capture**.
+1. To enable **[!UICONTROL 3D Secure Authentication for Fastlane]** (`Off` by default), choose `When required` to comply with EU regulations, or `Always` to add an extra fraud protection layer.
+
+    >[!NOTE]
+    >
+    > If the card issuer requires 3D Secure authentication, this step cannot be bypassed, regardless of the [!UICONTROL Payment Services] configuration.
+
+1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
+1. Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce by setting the **[!UICONTROL Enable messaging]** field to `Yes`.
+1. Click **[!UICONTROL Save Config]** to save your changes.
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
+| Field | Scope | Description |
+|---|---|---|
+| [!UICONTROL Enable Fastlane] | store view | Enable or disable [!DNL Fastlane] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. The default value is `Credit Card (via Fastlane)`. Options: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure Authentication for Fastlane](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
+| [!UICONTROL Enable messaging] | store view | Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+
+### Optional. Advanced Style Settings
+
+These optional settings can customize how [!UICONTROL Fastlane] displays on your website.
+
+>[!TIP]
+>
+>Styles that do not meet accessibility guidelines revert to the default settings.
+
+1. In the _[!UICONTROL Payment Services]_ section, navigate to the _[!UICONTROL Fastlane]_ section.
+1. Expand the _[!UICONTROL Advanced Style Settings (optional)]_ section.
+1. Modify settings as needed.
+1. Click **[!UICONTROL Save Config]** to save your changes.
+
+See [PayPal Developer Docs](https://developer.paypal.com/limited-release/accelerated-checkout-bt/) for more information on customization.
+
+#### Root Settings
+
+These optional settings modify the overall [!UICONTROL Fastlane] checkout component.
+
+| Field | Scope | Description |
+|---|---|---|
+| [!UICONTROL Background Color] | store view | Defines the background color of the component. Only `RGB` values |
+| [!UICONTROL Border Color] | store view | Defines the border color of the component. Only `RGB` values |
+| [!UICONTROL Font Family] | store view | Sets the font of the component. Only fonts available in your theme are displayed |
+| [!UICONTROL Font Size Base] | store view | Defines the size of the font. Only `px` (pixel) values |
+| [!UICONTROL Padding] | store view | Sets the padding in the component. Only `px` (pixel) values |
+| [!UICONTROL Primary Color] | store view | Defines the main color of the component. Only `RGB` values |
+| [!UICONTROL Text Color] | store view | Defines the main color of the text in the component. Only `RGB` values |
+
+#### Input Settings
+
+These optional settings apply to the customer input fields of your [!UICONTROL Fastlane] component.
+
+| Field | Scope | Description |
+|---|---|---|
+| [!UICONTROL Background Color] | store view | Defines the background color of the component. Only `RGB` values |
+| [!UICONTROL Border Color] | store view | Defines the border color of the component. Only `RGB` values |
+| [!UICONTROL Border Radius] | store view | Defines the radius of the border. Only `px` (pixel) values  |
+| [!UICONTROL Border Width] | store view | Defines the width of the border. Only `px` (pixel) values |
+| [!UICONTROL Focus Border Color] | store view | Defines the focus border color of the component. Only `RGB` values |
+| [!UICONTROL Text Color Base] | store view | Defines the main color of the text in the component. Only `RGB` values |
+
 ## [!UICONTROL Apple Pay]
 
-The [!UICONTROL Apple Pay] payment option allows the merchant to offer Apple Pay to their shoppers, who can use Touch ID on their devices to make purchases from the Safari browser. Merchants can add up to 99 domains per merchant account.
+With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience in Safari—supporting up to 99 domains per merchant account. The [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's iOS or macOS device, enabling quick, one-tap purchases that can help boost conversion rates.
 
 See [Payments options](payments-options.md#apple-pay-button) for more information.
 
@@ -176,6 +256,9 @@ You can enable and configure the PayPal payment buttons payment options within t
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable/disable the [Pay Later messaging](payments-options.md#pay-later-button), select `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
+   
+   * If you enable the [Pay Later messaging](payments-options.md#pay-later-button), a **[!UICONTROL Configure Messaging]** modal button is displayed so you can set the styles for the **[!UICONTROL PayPal Pay Later messaging]**.
+
 1. Specify where the PayPal payment buttons are enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
     * **[!UICONTROL Show buttons on checkout page]**
     * **[!UICONTROL Show buttons on product detail page]**
@@ -194,7 +277,8 @@ You can enable and configure the PayPal payment buttons payment options within t
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Display Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Display Pay Later Message] | website | Enable or disable the PayPal Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Configure Messaging] | store view | Modify the PayPal Pay Later Messaging styles. Options: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal payment buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal payment buttons] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal payment buttons] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -221,8 +305,6 @@ You can also configure the _[!UICONTROL Button style]_ options of the payment bu
 1. To save your changes, click **[!UICONTROL Save Config]** .
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-You can also configure payment button styling [in Settings](settings.md#button-style) from Payment Services Home.
-
 ### Configuration options
 
 |Field|Scope|Description|
@@ -237,4 +319,40 @@ You can also configure payment button styling [in Settings](settings.md#button-s
 
 ## Flush the cache
 
- If you change the configuration, [manually flush the cache](/help/payment-services/settings.md#flush-the-cache) so that your store shows the latest configuration settings.
+ If you change the configuration in _Settings_, for example toggling the Apple Pay, Venmo, or PayPal PayLater buttons, manually flush the cache so that your store shows the latest configurations.
+
+ 1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+ 1. Click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
+If any Cache Type in the Cache Management table has an `INVALIDATED` status, your store might not show the most recent configuration for that item. Flush the cache to update your store to show the latest configuration.
+
+To ensure that your store is showing the correct configuration, periodically [flush the cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+
+## Card vaulting
+
+You can enable functionality that allows your customers to vault---or "save"---their credit card information in their My Account to use for future purchases.
+
+You can also use card vaulting in the Admin to complete subsequent orders for existing customers.
+
+Enable or disable card vaulting in the [Credit card field settings](#credit-card-fields).
+
+See [Credit card vaulting](vaulting.md) for more information.
+
+## 3DS
+
+3DS protects customers and merchants from fraudulent activity in their stores, and enables compliance with European Union (EU) standards.
+
+Enable or disable 3DS in the [Credit card field settings](#credit-card-fields).
+
+See [3DS in Security](security.md#3ds) for more information.
+
+## Use multiple PayPal accounts
+
+In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)) or want to use Adobe Commerce for some parts of your business but not _all_, you can set up your merchant account to use multiple PayPal accounts.
+
+See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
+
+See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
+
+Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales 
+representative for assistance with using multiple PayPal accounts for your websites.

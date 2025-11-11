@@ -19,7 +19,7 @@ Staging orders are recorded using the staging `environmentId`. It does not affec
 
 To change the source of your product recommendations data, choose the SaaS data space with the behavioral data that you want to use. Before you begin, make sure that:
 
-- Storefront data collection must be [configured and enabled](install-configure.md) for your production environment and [verified](verify.md) that behavioral data is being sent to Adobe Commerce.
+- Storefront data collection must be [configured and enabled](install-configure.md) for your production environment and [verified](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) that behavioral data is being sent to Adobe Commerce.
 - Your non-production environment catalog should be essentially the same as your production catalog. Using similar catalogs ensures that the product recommendation units returned closely mimic those in production.
 
 1. Log in to the Admin of your non-production Adobe Commerce environment.

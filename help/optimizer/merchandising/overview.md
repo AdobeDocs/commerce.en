@@ -11,13 +11,17 @@ In this section you learn how to create personalized experiences for your shoppe
 
 ## Product discovery
 
-Product discovery enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time. 
+Product Discovery equips merchandisers with powerful tools to curate and optimize the shopping experience, ensuring that customers find the right products quickly, at the right time. By fine-tuning search behavior, you can directly influence product visibility, relevance, and conversion.
 
-With product discovery, you set up facets, rules, and synonyms to:
+With product discovery, you can:
 
-- Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
-- Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
+* **Configure [facets](./facets/overview.md), [merchandising rules](./rules/overview.md), and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
+* **Create intuitive, goal-oriented search experiences** that reflect your merchandising strategy and seasonal priorities.
+* **Use AI-driven dynamic faceting and result re-ranking** to adapt search results in real time based on shopper behavior—boosting engagement and sales.
+* **Ensure promotional and high-priority items surface effectively** to align search outcomes with business goals.
 
 ## Recommendations
 
-Recommendations use artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your catalog, results in a highly engaging, relevant, and personalized experience. Recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations directly from [!DNL Adobe Commerce Optimizer].
+Recommendations use artificial intelligence and machine learning to analyze aggregated visitor behavior and product interactions across your storefront. By combining this behavioral data with your product catalog, [!DNL Adobe Commerce Optimizer] delivers highly personalized, relevant product suggestions that enhance shopper engagement and increase conversion.
+
+Recommendations display on the storefront as labeled units—such as "Customers who viewed this product also viewed". These units can be strategically placed throughout the shopping journey. As a merchandiser, you can easily create, manage, and deploy these recommendation units directly within [!DNL Adobe Commerce Optimizer] to support promotional goals, cross-sell strategies, and personalized experiences.

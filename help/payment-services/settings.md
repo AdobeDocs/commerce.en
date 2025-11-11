@@ -126,7 +126,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 
 The [!UICONTROL Apple Pay] button payment option allows you to provide an [!UICONTROL Apple Pay] payment button in your store's checkout from the Safari browser (for up to 99 domains per merchant account).
 
-You can only use Apple Pay if you complete [Apple Pay self-registration via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) and then [configure Apple Pay](settings.md/#payment-buttons) for your stores.
+You can only use Apple Pay if you complete [Apple Pay self-registration via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) and then [configure Apple Pay](configure-admin.md#payment-buttons) for your stores.
 
 See [Payments options](payments-options.md#apple-pay-button) for more information.
 
@@ -183,7 +183,7 @@ You can enable and configure the PayPal payment buttons payment options:
 
       >[!NOTE]
       >
-      > To use Apple Pay you [must have an Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md#test-in-sandbox-environment), complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
+      > To use Apple Pay you [must have an Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md#test-in-sandbox-environment), complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and configure it for your stores in [!DNL Payment Services].
 
       As you toggle on/off visibility to payment buttons or the PayPal Pay Later message, a visual preview of that configuration shows at the bottom of the Settings page.
 

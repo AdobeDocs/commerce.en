@@ -7,7 +7,8 @@ exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 # [!DNL Live Search] Release Notes
 
 These release notes describe the latest versions of [!DNL Live Search].
-Support is provided for the current major released version. Release notes for older versions are provided for reference.
+
+Support is provided for the latest released version. Release notes for older versions are provided for reference.
 Updates include:
 
 ![New](../assets/new.svg) New features
@@ -17,6 +18,10 @@ Updates include:
 ## Hosted service updates
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
+
+_October 1, 2025_
+
+![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
 
 _April 29, 2025_
 
@@ -42,7 +47,7 @@ _January 31, 2025_
 
 _September 19, 2024_
 
-![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+![New](../assets/new.svg) Beta release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](workspace.md#layered-search-and-expansion-of-search-types).
 
 _September 4, 2024_
 
@@ -86,6 +91,31 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.6.0
+
+_October 9, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) GA release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](workspace.md#layered-search-and-expansion-of-search-types).
+![Fix](../assets/fix.svg) The `ProductInterface` object in the [Live Search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) service has been deprecated. Use the `ProductView` object in the catalog service instead.
+
+## [!DNL Live Search] 4.5.0
+
+_September 5, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Live Search now fully respects [cookie restriction mode](install.md#cookies) by preventing data collection and storage in cookies/local storage when restrictions are enabled.
+
+## [!DNL Live Search] 4.4.1
+
+_August 11, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed catalog service endpoint for sandbox environments.
 
 ## [!DNL Live Search] 4.4.0
 

@@ -93,6 +93,64 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.13.0
+
+_November 10, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Now, [!DNL Payment Services] supports PayPal's **One-Time Checkout (OTC)** modal, featuring built-in contact and delivery information.
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Enhanced mobile experience through **PayPal app-switch authentication**, along with improved API integration for smoother user journeys. This feature is only available for US [!DNL Payment Services] based customers.
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Added **3D Secure (3DS)  authentication** support for Fastlane to meet **Strong Customer Authentication (SCA)** requirements. This Enables UK, and EU [!DNL Payment Services] merchants to process transactions with **3DS authentication**, enhancing fraud prevention and ensuring compliance with regional regulations.
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Now, [!DNL Payment Services] merchants can choose between **light, and dark themes** for the Fastlane checkout component, allowing checkout pages to match their site design. If custom styles do not meet accessibility standards, the system automatically reverts to the default settings.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Fixed loader issue during **admin checkout with 3DS challenge**.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Improved **validation when storing payment configuration** via API.
+
+## v2.12.2
+
+_September 23, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6275 --> Declined [!DNL Fastlane] transactions in capture mode no longer create orders in Commerce.
+
+## v2.12.1
+
+_September 18, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6164 --> Now, [!DNL Payment Services] uses base currency for the available shipping methods in the **PayPal server-side shipping callback (SSSC)**.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6267 --> The **Ship To** block is hidden on the checkout page when **In-Store Pickup (ISPU)** is selected.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6271 --> Now, [!DNL Payment Services] displays saved credit card details from the PayPal PayFlow in the **Customer Account** > **Stored Payment Methods** section.
+
+## v2.12.0
+
+_August 20, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-6022 --> [Fastlane](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options) offers a faster purchase during guest checkouts.
+
+![New](../assets/new.svg)<!-- PAY-6168 --> Added the [`addProductsToNewCart`](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/mutations/) mutation to [!DNL Payment Services] to enable smoother transitions and better cart reuse.
+
+![New](../assets/new.svg)<!-- PAY-6169 --> Added the [`setCartAsInactive`](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/mutations/) mutation to [!DNL Payment Services] to improve quote lifecycle management.
+
+![New](../assets/new.svg)<!-- PAY-6227 --> When checking out with PayPal, [!DNL Payment Services] skips the order confirmation pop-up for a quicker purchase process.
+
+![New](../assets/new.svg)<!-- PAY-6234 --> Added a new feature for the [Pay Later](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options) payment option. Now, the BNPL messaging configurator provides more flexibility in displaying Pay Later BNPL messaging on customer checkout pages.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5505 --> Now, [!DNL Payment Services] sets the quote as inactive when a Google Pay or PayPal pop-up is closed within the product page.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-5754 --> [!DNL Payment Services] no longer allows orders to be created from empty quotes.
+
 ## v2.11.1
 
 _March 14, 2025_
@@ -120,7 +178,7 @@ _March 13, 2025_
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5849 --> Fixed an issue where `LineItemProvider` threw exceptions for decimal quantities below 1. Now, [!DNL Payment Services] provides better support for fractional quantities.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-5868 --> Fixed a gift card amount error during checkout. [!DNL Payment Services] now ensures accurate values during a checkout process.
+![Fixed issue](../assets/fix.svg)<!-- PAY-5868 --> Fixed a gift card amount error during checkout. [!DNL Payment Services] now ensures accurate values during the checkout process.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-5911 --> Resolved errors during shipment creation for orders placed using non-[!DNL Payment Services] online payment methods, enhancing overall reliability.
 
@@ -325,6 +383,7 @@ _December 7, 2023_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available from the following locations:
+
 - the customer order page on the storefront
 - the order confirmation email sent to the shopper
 - from the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.
@@ -533,7 +592,7 @@ _March 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2742 --> You can now enable and disable available payment methods, such as Venmo, at the store view level. Previously, you could configure payment methods per website only.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal payment buttons](settings.md#payment-buttons).
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal payment buttons](configure-admin.md#payment-buttons).
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2561 --> Previously removed products do not appear in the cart on the _Review Order_ page.
 
@@ -551,7 +610,7 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] supports a [sandbox account](sandbox.md) that allows merchants to assess the extension in test mode.
 
-![New](../assets/new.svg)<!-- Issue PAY-666 --> Merchants can [configure the Payment Services](settings.md) extension with basic payment behaviors, such as utilizing [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) switching between sandbox or production environments.
+![New](../assets/new.svg)<!-- Issue PAY-666 --> Merchants can [configure the Payment Services](configure-admin.md) extension with basic payment behaviors, such as utilizing [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) switching between sandbox or production environments.
 
 ![New](../assets/new.svg)<!-- Issue PAY-780 --> Your shoppers can check out with [!DNL Payment Services] or via [manual order creation](create-order.md).
 

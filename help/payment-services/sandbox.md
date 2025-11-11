@@ -35,7 +35,7 @@ To complete sandbox onboarding:
 
    This option is visible if you have not yet completed sandbox onboarding for [!DNL Payment Services].
 
-   A sandbox merchant ID is auto-generated and populated into [settings](settings.md). Do not change or alter this ID.
+   A sandbox merchant ID is auto-generated and populated into [settings](configure-admin.md). Do not change or alter this ID.
 
    You are presented with a PayPal window for connecting a PayPal account to start accepting payments.
 

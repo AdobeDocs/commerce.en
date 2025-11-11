@@ -8,42 +8,37 @@ exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 ---
 # Adobe Commerce Services Guides
 
-Adobe provides a collection of Commerce services, integration services, and data tools to help merchants support key components of their business. 
+Adobe Commerce Services deliver powerful capabilities that extend your storefront, streamline integrations, and optimize data management.
+
+## How does Commerce connect to services?
+
+All Commerce services connect to your Commerce instance through the [Commerce Services connector](saas.md).
+
+When the Commerce Services connector is configured, you have access to the following features:
+
+- [Storefront services](#storefront-services) - AI-powered features for product discovery, recommendations, and payments
+- [Integration services](#integration-services) - Connections to Adobe Experience Platform, AEM Assets, and other Adobe solutions
+
+These services help you increase conversions, deliver personalized experiences, and make better use of your commerce data across the Adobe ecosystem.
+
+![Services Layer](./assets/services-layer.png)
 
 >[!NOTE]
 >
 >Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
 
-## Commerce services
+In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These tools can automatically synchronize the data and help you optimize performance. Learn more about the available [data tools](#data-tools).
+
+## Available services
+
+>[!BEGINTABS]
+
+>[!TAB Storefront services]
+
+Storefront services are a group of AI-powered features that optimize product discovery, personalize customer interactions, and streamline payment processing to increase engagement and conversions. With storefront services, you can enhance the shopping experience and drive business growth.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
-   <td valign="top">
-      <a href="../cloud-service/overview.md">
-      <img alt="Cloud" src="../assets/icons/shopping-cart.svg" width="40">
-      </a>
-      <div>
-         <a href="../cloud-service/overview.md">
-         <strong>Commerce as a Cloud Service</strong>
-         </a>
-      </div>
-      <p>
-         <em>Scale operations and innovate faster with cloud infrastructure that automatically adapts to traffic and order demands.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../optimizer/overview.md">
-      <img alt="Optimize" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-         <a href="../optimizer/overview.md">
-         <strong>Commerce Optimizer</strong>
-         </a>
-      </div>
-      <p>
-         <em>Deliver a lightning-fast storefront and boost conversions, all while using your existing commerce platform.</em>
-      </p>
-   </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
       <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
@@ -57,8 +52,6 @@ Adobe provides a collection of Commerce services, integration services, and data
          <em>Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.</em>
       </p>
    </td>
-</tr>
-<tr style="border: 0;">
    <td valign="top">
       <a href="../live-search/overview.md">
       <img alt="Search" src="../assets/icons/Magnify.svg" width="40">
@@ -101,7 +94,9 @@ Adobe provides a collection of Commerce services, integration services, and data
 </tr>
 </table>
 
-## Integration services
+>[!TAB Integration services]
+
+Integration services refer to features that connect your Commerce instance to other products or services within Adobe.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -111,24 +106,11 @@ Adobe provides a collection of Commerce services, integration services, and data
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+         <strong>[!DNL Data Connection]</strong>
          </a>
       </div>
       <p>
          <em>Leverage the connection between Adobe Commerce and the Adobe Experience Platform edge to use Commerce data for other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../landing/saas.md">
-      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
-      </a>
-      <div>
-          <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-         </a>
-      </div>
-      <p>
-         <em>Configure authentication to enable secure communication between Adobe Commerce and connected services. For each environment, specify the data space ID for Commerce services data storage.</em>
       </p>
    </td>
    <td valign="top">
@@ -147,7 +129,9 @@ Adobe provides a collection of Commerce services, integration services, and data
 </tr>
 </table>
 
-## Data tools
+>[!TAB Data tools]
+
+Data tools help you manage and optimize the flow of information between your Commerce instance and connected services. These tools ensure efficient data synchronization, monitor sync operations, and improve performance by offloading resource-intensive processes.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -178,11 +162,11 @@ Adobe provides a collection of Commerce services, integration services, and data
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Monitor data sync" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Data Management Dashboard</strong>
          </a>
       </div>
@@ -195,3 +179,24 @@ Adobe provides a collection of Commerce services, integration services, and data
 >[!NOTE]
 >
 >The Data Management Dashboard is available at no additional cost to Commerce merchants using Product Recommendations v6.0.0, Live Search v4.1.0, or Catalog Service v1.17 with an active license. Merchants using earlier service versions can use [Catalog Sync](../landing/catalog-sync.md) to manage and track data synchronization.
+
+>[!ENDTABS]
+
+## What problems can Commerce Services solve?
+
+Whether you are looking to scale your business, improve customer experiences, or make data-driven decisions, Adobe Commerce Services provide solutions for common Commerce challenges:
+
+| Problem | Challenge | Solution |
+|---------|-----------|----------|
+| Improve product discovery and conversion | Shoppers can't find what they're looking for, leading to high bounce rates and lost sales. | Use [Live Search](../live-search/overview.md) and [Product Recommendations](../product-recommendations/overview.md) to deliver AI-powered search with typo tolerance, instant "search as you type" results, dynamic faceting, and personalized product recommendations based on real-time shopper behavior. |
+| Create omnichannel personalized experiences | Your commerce data is siloed, preventing you from delivering personalized experiences across channels. | Use [Data Connection](../data-connection/overview.md) to send behavioral, transactional, and profile data to Adobe Experience Platform. Build sophisticated customer segments, create abandoned cart campaigns, target lookalike audiences, and analyze seasonal trends across your entire customer journey. |
+| Streamline digital asset management | Managing product images and rich media across multiple systems is time-consuming and error-prone. | The [AEM Assets Integration](../aem-assets-integration/overview.md) provides centralized asset management by connecting Adobe Commerce to an Adobe Experience Manager Assets project, simplifying workflows and ensuring consistent brand experiences across all touchpoints. |
+| Optimize payment processing | Limited payment options and poor payment experiences are hurting customer satisfaction and conversion. | [Payment Services](../payment-services/guide-overview.md) offers multiple payment methods, including interest-free installments, with a unified dashboard for managing payments, orders, and invoices. |
+| Manage data synchronization at scale | Resource-intensive indexing is slowing down your site, and you can't easily track data synchronization issues. | [SaaS Data Export](../data-export/overview.md), [SaaS Price Indexer](../price-index/price-indexing.md), and the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) automatically sync catalog, order, and inventory data, offload price calculations to Adobe's cloud infrastructure, and provide real-time visibility into synchronization status. |
+| Win back lost customers and reduce returns | High customer churn and product return rates are impacting profitability. | Combine [Data Connection](../data-connection/overview.md) with Adobe Journey Optimizer and Real-Time CDP to identify return patterns, create win-back campaigns, segment customers by behavior, and send personalized re-engagement campaigns across email and SMS. |
+| Make data-driven merchandising decisions | You're not sure which products to promote or when to run promotions. | [Live Search](../live-search/overview.md) provides search performance insights and merchandising tools to access key metrics, analyze search terms, and use intelligent merchandising rules to boost or bury products based on real customer behavior and business goals. |
+| Maintain compliance with sensitive data | You need to handle sensitive customer data while maintaining HIPAA compliance. | [Data Connection](../data-connection/overview.md) is HIPAA-ready, allowing you to share back-office data with Experience Platform while maintaining compliance and systematically handling privacy requests. |
+
+{{$include /help/_includes/templated/whats-new.md}}
+
+<!-- Last updated from includes: 2025-09-26 20:42:12 -->

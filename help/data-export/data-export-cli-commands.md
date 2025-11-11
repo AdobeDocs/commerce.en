@@ -139,7 +139,6 @@ Available feeds:
 
 - `categories`
 - `categoryPermissions`
-- `inventoryStockStatus`
 - `orders`
 - `prices`
 - `products`
@@ -148,6 +147,10 @@ Available feeds:
 - `scopesWebsite`
 - `scopesCustomerGroup`
 - `variants`
+
+>[!NOTE]
+>
+>The feeds available in your environment might be different depending on which modules are installed in your Adobe Commerce environment.
 
 **Example:**
 

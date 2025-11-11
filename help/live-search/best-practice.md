@@ -21,7 +21,7 @@ To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Liv
 
 ## Optimize your search functionality
 
-In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as shoppers type, synonyms and spellings to ensure that shoppers find products even if they use different words, facets to allow shoppers to narrow down search results, and search redirects to automatically redirect shoppers from a search query to a specific page.
+In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as shoppers type, synonyms and spellings to ensure that shoppers find products even if they use different words, and facets to allow shoppers to narrow down search results.
 
 ### Autocomplete
 
@@ -79,24 +79,6 @@ Learn more about facets:
 - [Manage facets](facets-manage.md) (edit, pin a facet, delete, publish)
 - [Price faceting](settings.md#price-faceting)
 
-### Search redirects
-
-A search redirect allows you to automatically redirect shoppers from a search query to a specific page. Search redirects can improve shopper experience and guide customers to the most relevant content, such as a product page, category, landing page, or a tailored set of search results. Search redirects help streamline the shopping experience and ensure that shoppers find what they are looking for quickly and efficiently.
-
-Recommended use cases for setting up search redirects:
-
-- **Popular Products or Categories** - Redirect shoppers to a specific product page or category when they search for common or popular terms. For example, searching for "iPhone" might redirect directly to the iPhone category page or a specific model page.
-    
-- **Promotional Campaigns** - During promotional events or sales, redirect relevant search terms to landing pages that highlight special offers or featured products.
-    
-- **Brand Searches** - When shoppers search for a brand name, redirect them to the brand's dedicated page where all products from that brand are listed.
-    
-- **Product Discontinuation** - If a product is discontinued, you can redirect searches for that product to similar products or the new version of the product.
-
-Always test search redirects to ensure they are working correctly and are leading to the most relevant pages. Continuously monitor their performance and make adjustments as needed.
-
-Learn how to [manage search redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
-
 ## Improve search result relevance
 
 This section discusses how to improve search result relevance by implementing effective search rules and using product metadata to ensure accurate and detailed attributes are searchable.
@@ -123,7 +105,7 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Slightly prioritize products with higher profit margins without compromising relevance.
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
-- Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
+- Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
 
 Learn more about search rules:
 
@@ -134,7 +116,7 @@ Learn more about search rules:
     - [Create](rules-add.md)
     - [Edit, view, delete](rules-manage.md)
 - Data collection
-    - [[!DNL Live Search] events](events.md)
+    - [[!DNL Live Search] events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
     - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
     - [GitHub Commerce events](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -176,7 +158,6 @@ You can monitor these KPIs within the [!DNL Live Search] [Performance workspace]
     To reduce the zero results rate, you can:
 
     - Offer alternative or related search terms, such as [synonyms](synonyms.md) when no exact matches are found.
-    - Provide shoppers with related or alternative suggestions when their search yields no results by setting search redirects.
     - Regularly review zero result queries to identify patterns and make necessary adjustments to your product catalog and search settings.
 
 - **Popular Results** - Can significantly enhance your search results by aligning them with shopper preferences and behaviors.
@@ -190,4 +171,4 @@ You can use this metric data to optimize your search functionality in the follow
 - Analyze popular search terms and product data to identify important keywords. Optimize your product searchable attributes with these keywords to improve search relevance.
 - Regularly analyze your results data to understand changing trends, shopper preferences and behavior, identify top search terms, and detect issues. Use this feedback loop to continuously refine and improve your search rules and product offerings
 
-To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
+To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
