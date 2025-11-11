@@ -65,7 +65,6 @@ Gather the following information before you begin the installation:
 
   Log in to the [Adobe Developer Console](https://developer.adobe.com/console) and navigate to your Adobe Commerce Optimizer project to find the IMS credentials. If you do not have an Adobe Commerce Optimizer project, create one and [generate the IMS credentials](../optimizer/get-started/get-ims-credentials.md).
 
-
 ### Installation steps
 
 1. Add the `adobe-commerce/commerce-data-export-aco-adapter` module using Composer:
