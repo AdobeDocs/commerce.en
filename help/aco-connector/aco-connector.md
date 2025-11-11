@@ -4,7 +4,6 @@ description: Learn how to connect your data from your Commerce cloud or on-premi
 feature: Personalization, Integration, Configuration
 hidefromtoc: yes
 hide: yes
-
 ---
 
 # Overview
