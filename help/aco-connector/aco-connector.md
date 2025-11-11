@@ -100,7 +100,7 @@ Configure the Adobe Commerce Optimizer integration to connect the Commerce proje
 
 1. From the Commerce Admin, select **[!UICONTROL Adobe Commerce Optimizer]** to display the configuration page with instructions.
 
-   ![Adobe Commerce Optimizer configuration page](assets/aco-connector-config-page.png)
+   ![Adobe Commerce Optimizer configuration page](./assets/aco-connector-config-page.png)
 
 1. From the command line, use SSH to connect to the Commerce staging environment for your project.
 
