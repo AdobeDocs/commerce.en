@@ -37,7 +37,7 @@ The Connector enables several key workflows:
 
 * Merchandising rule configuration and management
 
-  When the Connector is enabled, merchandising rules for product discovery and recommendations are defined an managed from Adobe Commerce Optimizer UI, not from the [!UICONTROL Live Search] and [!UICONTROL Product Recommendations] pages in the Commerce Admin.
+  When the Connector is enabled, merchandising rules for product discovery and recommendations are defined and managed from Adobe Commerce Optimizer UI, not from the [!UICONTROL Live Search] and [!UICONTROL Product Recommendations] pages in the Commerce Admin.
 
 ## Get started
 
