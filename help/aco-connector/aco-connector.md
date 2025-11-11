@@ -112,7 +112,7 @@ Configure the Adobe Commerce Optimizer integration to connect the Commerce proje
 
    When you click the option, it opens the Adobe Commerce Optimizer UI in a new tab.
 
-1. From the Adobe Commerce Optimizer UI, check the data sync status by selecting the [!UICONTROL Data Sync]** option from the left navigation menu.
+1. From the Adobe Commerce Optimizer UI, you can see the data synced to Commerce Optimizer by selecting the **[!UICONTROL Data Sync]** option from the left navigation menu.
 
    When the initial sync is complete, the status displays as **Healthy**.
 
