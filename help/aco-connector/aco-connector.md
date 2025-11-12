@@ -87,7 +87,6 @@ The Adobe Commerce Connector Composer metapackage is available to all Commerce m
 
   After your changes are deployed, the Commerce Optimizer Optimizer option is available in the Commerce Admin menu.
 
-
 >[!NOTE]
 >
 >For detailed extension installation instructions, see the following guides:
