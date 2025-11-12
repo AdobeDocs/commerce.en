@@ -96,7 +96,6 @@ The Adobe Commerce Connector Composer metapackage is available to all Commerce m
 >
 >[Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
-
 ### Get required values for configuring the Commerce Optimizer connection
 
 #### Get API credentials
