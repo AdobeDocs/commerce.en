@@ -69,7 +69,7 @@ The Adobe Commerce user configuring the integration must have:
   1. Customize the data export configuration (optional)
 
 1. **Configure catalog views and policies**
-1. **Set up the Commerce Storefront on Edge Delivery Services**
+1. **Set up a Commerce Storefront on Edge Delivery Services**
 
 ## Install the Commerce Connector package
 
@@ -193,7 +193,7 @@ Configure ACO stores by creating catalog views and policies.​ See [Creating Ca
 
 Note that price books are created automatically from PaaS customer groups.
 
-## Set up Commerce Storefront on Edge Delivery Services
+## Set up a Commerce Storefront on Edge Delivery Services
 
 This section provides a high-level overview of the steps required to set up your Commerce storefront. Detailed information is available in the [Adobe Commerce Storefront] (https://experienceleague.adobe.com/developer/commerce/storefront/) documentation site.
 
