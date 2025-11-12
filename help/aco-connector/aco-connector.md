@@ -52,7 +52,6 @@ The Connector enables several key workflows:
 
 * Admin access to an [Adobe Commerce Optimizer sandbox instance](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
-
 The Adobe Commerce user configuring the integration must have:
 
   * Administrator access to the Adobe Commerce Admin.
