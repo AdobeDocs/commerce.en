@@ -36,6 +36,8 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 * Added the `POST /V1/customers` and `PUT /V1/customers/{customerId}` endpoints to the [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) to create and update customers. These endpoints require admin authorization. <!-- CCSAAS-3112 -->
 
+* Added the `exchangeOtpForCustomerToken` mutation, which requires a shopper's email address and one-time password (OTP), and receives a customer token in exchange. This mutation is typically used in scenarios where a customer needs to authenticate using an OTP sent to their email or phone.
+
 * If an address defined in the [!UICONTROL **Store Email Addresses**] configuration screen in the Admin contains a value that ends with `example.com`, Commerce does not send emails to this address. Instead, the system logs that the email was not sent.  <!-- CCSAAS-3533 -->
 
 #### Custom order attributes
