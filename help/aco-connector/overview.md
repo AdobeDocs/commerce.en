@@ -66,14 +66,19 @@ The Adobe Commerce user configuring the integration must have:
 
 1. **Set up the Integration**
 
-  1. Install the Commerce Connector package
-  1. Get required values for configuring the Commerce Optimizer connection
-  1. Enable the Adobe Commerce Optimizer integration
-  1. Verify that the data sync is working
-  1. Customize the data export configuration (optional)
+   1. [Install the Commerce Connector package](#install-the-commerce-connector-package).
 
-1. **Configure catalog views and policies**
-1. **Set up a Commerce Storefront on Edge Delivery Services**
+   1. [Get the required values for configuring the Commerce Optimizer connection](#get-required-values-for-configuring-the-commerce-optimizer-connection)
+
+   1. [Enable the Adobe Commerce Optimizer integration](#enable-the-adobe-commerce-optimizer-integration).
+
+   1. [Verify that the data sync is working](#verify-that-the-data-sync-is-working).
+
+   1. [Customize the data export configuration](#customize-commerce-data-export-configuration) (optional).
+
+1. **[Configure Adobe Commerce Optimizer stores](#configure-adobe-commerce-optimizer-stores)**
+
+1. **[Set up a Commerce Storefront on Edge Delivery Services](#set-up-a-commerce-storefront-on-edge-delivery-services)**
 
 ## Install the Commerce Connector package
 
@@ -191,40 +196,44 @@ You have the option to customize the Adobe Commerce Optimizer exporter settings 
 
 When the configuration is changed, the corresponding indexes are invalidated to trigger re-export of the affected entities.
 
-## Adobe Commerce Optimizer Configuration
+## Configure Adobe Commerce Optimizer stores
 
-Configure ACO stores by creating catalog views and policies.​ See [Creating Catalog Views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) in the Adobe Commerce Optimizer Guide.
+Configure Adobe Commerce Optimizer stores by creating catalog views and policies.​ See [Creating Catalog Views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) in the Adobe Commerce Optimizer Guide.
 
-Note that price books are created automatically from PaaS customer groups.
+Note that price books are created automatically from Adobe Commerce customer groups.
 
 ## Set up a Commerce Storefront on Edge Delivery Services
 
 This section provides a high-level overview of the steps required to set up your Commerce storefront. Detailed information is available in the [Adobe Commerce Storefront] (https://experienceleague.adobe.com/developer/commerce/storefront/) documentation site.
 
-1. Clone and deploy Adobe Commerce Storefront boilerplate to EDS using the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator Create site-creator tool and follow the instructions https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
-   
-1. [Set up a local development environment](httpsTo connect newly created storefront, developers need to update EDS storefront configuration file in GitHub repo https://github.com/chernenm/paas-aco-integration-storefront1/blob/main/config.json with the following parameters:​
+1. Clone and deploy Adobe Commerce Storefront boilerplate to EDS using the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+
+1. [Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment).
+
 1. [Install GraphQL Storefront Compatibility package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/).​
-1. [Configure CORS (Cross-Origin Resource Sharing) for Commerce instance in cloud environment](#configure-cors-for-
-1. [Configure connectivity between EDS storefront and Commerce backends](configure-connectivity-between-the-storefront-commerce-backends).
+
+1. [Configure CORS headers for Commerce instance in cloud environment](#configure-cors-headers-for-commerce-instance).
+
+1. [Connect the storefront to Commerce data sources](#connect-the-storefront-to-commerce-data-sources).
 
 ### Configure CORS headers for Commerce instance
 
 To allow GraphQL requests to come from an Edge Delivery Services (EDS) storefront to Adobe Commerce on cloud or on-premises environment, use one of the following options to add specific Cross-Origin Resource Sharing (CORS) headers to the Adobe Commerce GraphQL endpoints.​
+
 1. Add Cross-Origin Resource Sharing (CORS) headers to the Adobe Commerce GraphQL endpoints.​
-    
+
    **Option 1: Implement a PHP custom module for Adobe Commerce foundation to be able to add CORS headers.​**
 
    **Option 2: Install a 3rd-party community module graycore/magento2-cors​** - See [CORS setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/) in the *Adobe Commerce Storefront* documentation.
 
 1. Add the following CORS variables to the Commerce on cloud instance `app.yaml` environment configuration file:
 
-  * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_HEADERS: *`
-  * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_ORIGINS: *`
+   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_HEADERS: *`
+   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_ORIGINS: *`
 
-### Configure connectivity between the storefront and Commerce backends
+### Connect the storefront to Commerce data sources
 
-In the GitHub repository for the Storefront boilerplate code, update the storefront configuration file, `config.json` with the following parameters: 
+In the GitHub repository for the Storefront boilerplate code, update the storefront configuration file, `config.json` with the following parameters:
 
 * `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
 
