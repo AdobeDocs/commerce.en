@@ -9,7 +9,7 @@ exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 This page provides an overview of the key performance metrics for your [!DNL Adobe Commerce Optimizer] store. The goal is for you to quickly understand the results of implementing [!DNL Adobe Commerce Optimizer] then help you and your team identify opportunities for growth, and highlight areas for optimization.
 
 ![Success metrics report](../assets/success-metrics.png)
-
+ 
 The metrics in the report are pulled from storefront event data. [Learn more](../setup/events/overview.md) about the event data collected.
 
 ## Understanding your metrics
@@ -35,6 +35,71 @@ The key performance indicators are:
     The **Top Highlights**, **Revenue**, **Conversion**, **Engagement**, **Acquisition**, and **Bounce rate** all update based on your report configuration.
 
 1. Click **[!UICONTROL Export]** to save the report as a PDF.
+
+## Success Metrics and Sites Optimizer: Working together
+
+Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools that work together to help you improve your commerce site. Understanding the difference between these features helps you make better decisions and achieve measurable results.
+
+### Key differences
+
+|Feature|Success Metrics|Sites Optimizer (Opportunities)|
+|---|---|---|
+|**Purpose**|Measures performance and outcomes|Identifies issues and provides recommendations|
+|**Type**|Analytical dashboard|Proactive issue detection|
+|**What it shows**|Key performance indicators (Revenue, Conversion, Engagement, Acquisition, Bounce Rate)|AI-powered recommendations for problems affecting site performance|
+|**Data source**|Storefront event data|Product catalogs, search logs, recommendation data|
+|**Use when**|You want to track results over time|You want to identify and fix specific issues|
+
+### How to use these features together
+
+The most effective approach combines both tools in a continuous improvement cycle:
+
+1. **Measure with Success Metrics**: Start by reviewing your Success Metrics dashboard to understand your current performance. Identify which KPIs need improvement (for example, low conversion rate or high bounce rate).
+
+1. **Diagnose with Opportunities**: Navigate to the Opportunities page to discover specific issues that may be causing poor performance. Sites Optimizer scans your product catalog, search logs, and recommendation data to identify problems such as missing product data, poor search relevance, or navigation issues.
+
+1. **Implement recommendations**: Follow the AI-driven recommendations provided in Opportunities to address detected issues. These might include fixing product data quality issues, improving SEO, or optimizing search and discovery.
+
+1. **Track improvements**: Return to Success Metrics to monitor how the changes impact your KPIs over time. Use the date range selector to compare performance before and after implementing recommendations.
+
+1. **Iterate and optimize**: Continue this cycle, using Opportunities to identify new issues and Success Metrics to measure the impact of your optimizations.
+
+### Example workflow
+
+A merchant notices their conversion rate declining in Success Metrics. Here's how they might use both features to address it:
+
+1. **Identify the problem**: The Success Metrics dashboard shows conversion rate dropped 15% over the past month.
+
+1. **Find the cause**: The Opportunities page reveals several issues:
+   - Multiple products missing key attributes affecting search relevance
+   - Popular search queries returning poor results
+   - Slow page load times on category pages
+
+1. **Take action**: The merchant prioritizes fixing the product data quality issues first, as Sites Optimizer categorizes these as high-impact opportunities affecting search and recommendations.
+
+1. **Measure results**: After updating product attributes and implementing recommended changes, the merchant monitors Success Metrics weekly. Over the next month, conversion rate increases by 12%, and search engagement metrics improve significantly.
+
+1. **Continue optimizing**: With conversion rate improving, the merchant shifts focus to the next priority shown in Opportunities—optimizing page load speed to reduce bounce rate.
+
+### When to use each feature
+
+**Use Success Metrics when you want to:**
+
+- Track overall business performance
+- Measure the impact of changes over time
+- Identify which areas of your business need attention
+- Share performance reports with stakeholders
+- Understand customer behavior trends
+
+**Use Sites Optimizer (Opportunities) when you want to:**
+
+- Discover specific issues affecting performance
+- Get actionable recommendations to fix problems
+- Understand why certain metrics are declining
+- Prioritize which optimizations to tackle first
+- Leverage AI to identify issues you might miss manually
+
+Together, these features provide a complete solution: Success Metrics tells you *what* is happening, while Sites Optimizer tells you *why* and *how to fix it*.
 
 ## Next steps and optimization strategies
 
