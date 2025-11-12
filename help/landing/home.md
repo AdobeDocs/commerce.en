@@ -16,8 +16,8 @@ All Commerce services connect to your Commerce instance through the [Commerce Se
 
 When the Commerce Services connector is configured, you have access to the following features:
 
-- [Storefront services](#storefront-services) - AI-powered features for product discovery, recommendations, and payments
-- [Integration services](#integration-services) - Connections to Adobe Experience Platform, AEM Assets, and other Adobe solutions
+- **Storefront services** - AI-powered features for product discovery, recommendations, and payments
+- **Integration services** - Connections to Adobe Experience Platform, AEM Assets, and other Adobe solutions
 
 These services help you increase conversions, deliver personalized experiences, and make better use of your commerce data across the Adobe ecosystem.
 
@@ -27,7 +27,7 @@ These services help you increase conversions, deliver personalized experiences, 
 >
 >Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
 
-In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These tools can automatically synchronize the data and help you optimize performance. Learn more about the available [data tools](#data-tools).
+In addition to these features, there are tools that let you monitor the flow of data from your Commerce instance to the SaaS platform. These data tools can automatically synchronize the data and help you optimize performance.
 
 ## Available services
 
