@@ -65,7 +65,6 @@ The Adobe Commerce user configuring the integration must have:
 
 1. Set up an Adobe Commerce Developer project from the [Adobe Developer Console](https://developer.adobe.com/console)
 
-
 ## Set up an Adobe Commerce Developer project
 
 >[!NOTE]
