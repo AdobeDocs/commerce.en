@@ -120,7 +120,6 @@ You need the following values from your Adobe Commerce Optimizer instance detail
 
 * **Region—**The region where your Adobe Commerce Optimizer sandbox instance is hosted. For example, `na1` for North America. The region is also included in the URL to access your Adobe Commerce Optimizer instance. For example, in the URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, the region is `na1`.
 
-
 ## Configure the Adobe Commerce Optimizer integration
 
 Using the API credentials and instance details you gathered in the previous steps, you can now configure the integration between your Commerce and Adobe Commerce Optimizer instances.
