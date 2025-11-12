@@ -52,11 +52,11 @@ The Connector enables several key workflows:
 
 The Adobe Commerce user configuring the integration must have:
 
-  * Administrator access to the Adobe Commerce Admin.
+* Administrator access to the Adobe Commerce Admin.
 
-  * [Command line access to the Adobe Commerce application server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Command line access to the Adobe Commerce application server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-  * Developer access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) where the Adobe Commerce Optimizer project is provisioned.
+* Developer access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) where the Adobe Commerce Optimizer project is provisioned.
 
 ## Get Started
 
