@@ -11,6 +11,10 @@ hide: yes
 
 The Adobe Commerce Connector is the integration bridge that synchronizes catalog and pricing data between an existing Adobe Commerce Cloud on cloud or on-premises deployment and Adobe Commerce Optimizer composable catalog data model. This enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
+>[!NOTE]
+>
+>This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
+
 ## Architecture and experience
 
 The Adobe Commerce Connector operates by mapping Commerce's `website/store/storeview` catalog hierarchy to Adobe Commerce Optimizer `channel/policy/source` data model.
@@ -52,11 +56,11 @@ The Connector enables several key workflows:
 
 The Adobe Commerce user configuring the integration must have:
 
-  * Administrator access to the Adobe Commerce Admin.
+* Administrator access to the Adobe Commerce Admin.
 
-  * [Command line access to the Adobe Commerce application server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Command line access to the Adobe Commerce application server](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-  * Developer access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) where the Adobe Commerce Optimizer project is provisioned.
+* Developer access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) where the Adobe Commerce Optimizer project is provisioned.
 
 ## Get Started
 
