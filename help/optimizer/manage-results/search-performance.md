@@ -46,7 +46,7 @@ The following section provides strategies you can use to enhance your site searc
 There are several key factors that determine the relevance and effectiveness of search results:
 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to less relevant search outcomes. To directly impact the success of your merchandising strategy:
-    - Set up the correct [attributes as searchable](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) with their corresponding weight.
+    - Set up the correct [attributes as searchable](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) with their corresponding weight.
     - Make sure that data within those attributes is relevant.
 - A well-designed search experience builds trust with customers and instills confidence that they will find what they need.
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
@@ -92,7 +92,7 @@ To optimize your search functionality, use [synonyms and spellings](../merchandi
 
 ## Improve search result relevance
 
-To improve search result relevance, implement effective [search rules](../merchandising/rules/overview.md) and use product metadata to ensure accurate and detailed [attributes are searchable](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+To improve search result relevance, implement effective [search rules](../merchandising/rules/overview.md) and use product metadata to ensure accurate and detailed [attributes are searchable](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
 
 ### Images
 
@@ -104,16 +104,11 @@ Make sure that configurable products' child products have images with the correc
 
 ### Leverage Product Metadata
 
-Ensure that accurate and detailed product [attributes are set up as searchable](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
+Ensure that accurate and detailed product [attributes are set up as searchable and have an assigned weight](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
 
 To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
 
 Ensure that each product has relevant content within each searchable attribute. It is not recommended to set an attribute as searchable if it has large amounts of content as that can reduce search result relevance.
-
-Learn more about product attributes for search:
-
-- [Set attributes as searchable](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
-- [Assign weight to attributes](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Field descriptions
 
@@ -130,3 +125,41 @@ Learn more about product attributes for search:
 | Zero results | Lists the search queries that return no results and the number of times used during the specified date range. Report limit: Top 500 terms |
 | Popular results | Lists the names of products that received the most views during the specified date range. Popular results are calculated based on impressions only and are not affected by the number of clicks or revenue generated. Report limit: Top 500 terms |
 | Unique searches | Lists the unique search queries used during the specified date range. The report data is calculated the same way as unique search snapshot data. If a shopper types the same search query twice, but more than an hour apart, the search is considered to be two unique searches. Report limit: Top 500 terms |
+
+## Default non-system attribute properties
+
+The following table shows the default search and filterable properties of non-system attributes. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in [!DNL Adobe Commerce Optimizer].
+
+| Attribute Code | Searchable |
+|--- |--- |
+| activity | Yes | 
+| attributes_brand | Yes | 
+| brand | Yes |
+| climate | Yes | 
+| collar | Yes | 
+| color | Yes | 
+| cost | Yes |
+| eco_collection ||
+| gender | Yes | 
+| manufacturer | Yes | 
+| material | Yes | 
+| purpose | Yes | 
+| strap_bags | Yes | 
+| style_general | Yes | 
+
+## Default system attribute properties
+
+The following table shows the default search and filterable properties of system attributes.
+
+| Attribute Code | Searchable |
+|--- |--- |
+| allow_open_amount | Yes | 
+| description | Yes |
+| name | Yes |
+| price | Yes | 
+| short_description | Yes |
+| sku | Yes |
+| status | Yes |
+| tax_class_id | Yes |
+| url_key | Yes |
+| weight | Yes |
