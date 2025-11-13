@@ -140,7 +140,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
    * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
    * Click **MCP SERVERS - INSTALLED**.
    * Click the gear icon next to **commerce-extensibility MCP Server**  and select **Start Server**, if the server is stopped.
-   * Click on the "gear" icon again, and select **Show Output**.
+   * Click the gear icon again, and select **Show Output**.
 
 1. Verify the server status - the `MCP:commerce-extensibility` output should appear as:
 
