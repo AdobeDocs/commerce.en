@@ -26,9 +26,9 @@ After you ingest price books into Commerce Optimizer, you can see the list of pr
 
 1. Click **[!UICONTROL Create catalog view]**. ​
 
-In the configure the catalog view details, select one of the available price books.
+   In the configure the catalog view details, select one of the available price books.
 
-![Price Book Names and IDs](../assets/price-book-name-ids.png)
+   ![Price Book Names and IDs](../assets/price-book-name-ids.png)
 
 ## Key concepts
 
