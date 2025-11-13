@@ -156,7 +156,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
    2025-11-13 12:58:50.753 [info] Discovered 10 tools
    ```
 
-1. Verify that the following prompt causes the agent to use the MCP server. If not, ask explicitly to the agent to use the MCP tools available.
+1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
 ```terminal
 What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
