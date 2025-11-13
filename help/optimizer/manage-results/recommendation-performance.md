@@ -14,19 +14,15 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ![Recommendations Performance](../assets/rec-performance.png){zoomable="yes"}
 
-## Choose the **Catalog view**
-
-Select the [catalog view](../setup/catalog-view.md) where your recommendations apply.
-
-![Catalog View](../assets/catalog-view.png)
-
 ## View a report
 
-Click the **[!UICONTROL Date Range]** and select one of the following ranges:
+1. Choose the **Catalog source**, such as `en-US` where your recommendations apply.
 
-![Recommendations Date Range](../assets/rec-perf-date-range.png)
+1. Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
-   The recommendation table updates to display metrics for that date range.
+   ![Recommendations Date Range](../assets/rec-perf-date-range.png)
+
+      The recommendation table updates to display metrics for that date range.
 
 ## Customize table
 
@@ -40,14 +36,6 @@ Click the **[!UICONTROL Date Range]** and select one of the following ranges:
    - To hide a visible column, click any column name with a check mark.
 
    The table is refreshed to include only the selected columns.
-
-## Set filters
-
-Click the filter icon to filter the metrics on the recommendations performance workspace.
-
-![Filter Metrics](../assets/rec-filters.png)
-
-You can configure multiple values for each of the filters. See the [table below](#column-descriptions) for descriptions of each filter.
 
 ## View details
 
