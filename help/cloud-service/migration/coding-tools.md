@@ -126,7 +126,7 @@ Using the AI coding tools provides the following benefits:
 1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
 ```terminal
-What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
 ### Copilot
