@@ -110,7 +110,6 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Environment-ID": "{tenantId}",
       "AC-Source-Locale": "en_US",
       "AC-Price-Book-ID": "{priceBookId}"
    }
