@@ -138,7 +138,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Enable the MCP server:
 
    * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
-   * Open the **MCP SERVERS - INSTALLED** section.
+   * Click **MCP SERVERS - INSTALLED**.
    * Locate **commerce-extensibility MCP Server** in the list.
    * Click on the **gear** icon close to it, and select **Start Server**, if it's stopped.
    * Click on the "gear" icon again, and select **Show Output**.
