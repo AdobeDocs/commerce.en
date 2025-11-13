@@ -22,7 +22,7 @@ The Recommendations Performance page displays a list of configured recommendatio
 
    ![Recommendations Date Range](../assets/rec-perf-date-range.png)
 
-      The recommendation table updates to display metrics for that date range.
+   The recommendation table updates to display metrics for that date range.
 
 ## Customize table
 
