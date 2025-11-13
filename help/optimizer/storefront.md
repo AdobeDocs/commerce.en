@@ -100,6 +100,8 @@ The Site Creator tool creates a complete storefront project with the following c
 Update your storefront configuration to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
 1. Open the `config.json` file in your boilerplate code repository.
+   
+   `https://github.com/<username or org>/<repo name>/config.json`
 
 1. Locate the `cs` (Catalog Service) section in the configuration.
 
