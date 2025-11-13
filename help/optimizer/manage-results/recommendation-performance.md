@@ -63,7 +63,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 
 |Control|Description|
 |---|---|
-|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations.|
+|![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
