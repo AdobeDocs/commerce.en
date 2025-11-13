@@ -133,7 +133,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Restart Visual Studio Code to load the new MCP tools and configuration.
 
-1. Verify the installation by confirming that the `copilot-instructions.md` file is present under the `.github` folder.
+1. Verify the installation by confirming that the `copilot-instructions.md` file exists in the `.github` folder.
 
 1. Enable the MCP server:
 
