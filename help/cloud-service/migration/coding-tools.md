@@ -90,10 +90,19 @@ Using the AI coding tools provides the following benefits:
 
    The following files are added to your workspace:
 
+   **Cursor**
+
      * MCP Configuration: `.cursor/mcp.json`
      * Rules Directory: `.cursor/rules/`
 
+   **Copilot**
+
+     * MCP Configuration: `.vscode/mcp.json`
+     * Rules Directory: `.github/copilot-instructions.md`
+
 ## Post-installation configuration
+
+### Cursor
 
 1. Restart the Cursor IDE to load the new MCP tools and configuration.
 
@@ -113,6 +122,46 @@ Using the AI coding tools provides the following benefits:
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
    ```
+
+1. Verify that the following prompt causes the agent to use the MCP server. If not, ask explicitly to the agent to use the MCP tools available.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Copilot
+
+1. Restart the Visual Studio Code IDE to load the new MCP tools and configuration.
+
+1. Verify the installation by confirming that the `copilot-instructions.md` file is present under the `.github` folder.
+
+1. Enable the MCP server:
+
+   * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
+   * Open the **MCP SERVERS - INSTALLED** section.
+   * Locate **commerce-extensibility MCP Server** in the list.
+   * Click on the **gear** icon close to it, and select **Start Server**, if it's stopped.
+   * Click on the "gear" icon again, and select **Show Output**.
+
+1. Verify the server status - the `MCP:commerce-extensibility` output should appear as:
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+
+   (...)
+
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. Verify that the following prompt causes the agent to use the MCP server. If not, ask explicitly to the agent to use the MCP tools available.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
 
 ## Sample prompt
 
