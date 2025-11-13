@@ -199,7 +199,7 @@ When the configuration is changed, the corresponding indexes are invalidated to 
 
 ## Configure Adobe Commerce Optimizer stores
 
-Configure Adobe Commerce Optimizer stores by creating catalog views and policies.​ See [Creating Catalog Views](./setup/catalog-view.md) in the Adobe Commerce Optimizer Guide.
+Configure Adobe Commerce Optimizer stores by creating catalog views and policies.​ See [Creating Catalog Views](../optimizer/setup/catalog-view.md) in the Adobe Commerce Optimizer Guide.
 
 Note that price books are created automatically from Adobe Commerce customer groups.
 
@@ -231,9 +231,9 @@ In the GitHub repository for the Storefront boilerplate code, update the storefr
 
 * `"AC-Environment-Id": "Customer organization ID"` - Get this value from the [Commerce cloud project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
 
-* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Get this value from the [catalog view details](./setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
+* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Get this value from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get the assigned price book value from the [catalog view details](./setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
+* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get the assigned price book value from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
 * `"AC-Source-Locale": "Catalog source – Store View code from the Commerce cloud instance"`
 
