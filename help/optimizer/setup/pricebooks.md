@@ -14,7 +14,7 @@ Price books let you define product prices for a catalog source across different 
 
 The base price book defines the currency for itself and all its child price books. Child price books inherit this currency and cannot override it.
 
-## Add price book to Commerce Optimizer
+## Add price books to Commerce Optimizer
 
 You add price books to Commerce Optimizer using the Price Book API. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books for [!DNL Adobe Commerce Optimizer].
 
