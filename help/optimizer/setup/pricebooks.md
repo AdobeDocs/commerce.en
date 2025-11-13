@@ -10,9 +10,25 @@ exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 
 Price books let you define product prices for a catalog source across different customer tiers and markets. Price books support a hierarchical model, allowing up to three levels of nested child price books under each base price book. Each price book can reference a parent price book, forming a tree structure for pricing catalog sources.
 
+![Price Book Hierarchy](../assets/price-book-hier.png)
+
 The base price book defines the currency for itself and all its child price books. Child price books inherit this currency and cannot override it.
 
-See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books for [!DNL Adobe Commerce Optimizer] using the Price Book API.
+## Add price book to Commerce Optimizer
+
+You add price books to Commerce Optimizer using the Price Book API. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books for [!DNL Adobe Commerce Optimizer].
+
+## View price books in Commerce Optimizer
+
+After you ingest price books into Commerce Optimizer, you can see the list of price books and their corresponding IDs on the **Catalog View** page.
+
+1. Go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
+
+1. Click **[!UICONTROL Create catalog view]**. ​
+
+In the configure the catalog view details, select one of the available price books.
+
+![Price Book Names and IDs](../assets/price-book-name-ids.png)
 
 ## Key concepts
 
