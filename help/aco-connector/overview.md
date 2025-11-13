@@ -225,9 +225,9 @@ To allow GraphQL requests to come from an Edge Delivery Services (EDS) storefron
 
 In the GitHub repository for the Storefront boilerplate code, update the storefront configuration file, `config.json` with the following parameters:
 
-* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint", for example: `https://<your store>/graphql`
+* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`, for example: `https://{{your store}}/graphql`
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"`, for example: https://na1-sandbox.api.commerce.adobe.com/{{instanceId}}/v1/catalog​
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"`, for example: `https://na1-sandbox.api.commerce.adobe.com/{{instanceId}}/v1/catalog​`
 
 * `"AC-Environment-Id": "Customer organization ID"` - Get this value from the [Commerce cloud project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
 
@@ -235,7 +235,7 @@ In the GitHub repository for the Storefront boilerplate code, update the storefr
 
 * `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get the assigned price book value from the  [catalog view details](../setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Source-Locale": "Catalog source – Store View code from the Commerce cloud instance"
+* `"AC-Source-Locale": "Catalog source – Store View code from the Commerce cloud instance"`
 
 For more information, see [Storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/) in the *Adobe Commerce Storefront* documentation.
 
