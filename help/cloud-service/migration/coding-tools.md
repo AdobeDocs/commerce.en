@@ -142,7 +142,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
    * Click the gear icon next to **commerce-extensibility MCP Server**  and select **Start Server**, if the server is stopped.
    * Click the gear icon again, and select **Show Output**.
 
-1. Verify the server status - the `MCP:commerce-extensibility` output should appear as:
+1. Verify the server status. The `MCP:commerce-extensibility` output should match the following:
 
    ```terminal
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
