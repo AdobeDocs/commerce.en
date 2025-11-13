@@ -111,7 +111,7 @@ The Adobe Commerce Connector Composer metapackage is available to all Commerce m
 
 >[!NOTE]
 >
->If you already have a Developer project in the IMS organization where your Commerce Optimizer instance is deployed, you can get the required API credentials and organization ID from the OAUTH-server-to-server credentials in that project.
+>If you already have a developer project configured with the Data Ingestion API in the IMS organization where your Commerce Optimizer instance is deployed, you can get the required API credentials and organization ID from the OAUTH-server-to-server credentials in that project.
 
 Create a new developer project in Adobe Developer console to get Adobe Commerce Optimizer Ingestion API credentials to configure the integration between Commerce and Commerce Optimizer instances. For instructions, see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) in the *Merchandising Developer Guide*.
 
