@@ -115,9 +115,9 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    }
    ```
    
-   To find the price book ID, check the [catalog view configuration details](../setup/catalog-view.md) in Adobe Commerce Optimizer to
-   see the assigned price books. If no price books are assigned, you can remove this header from the configuration file, and add it back when a
-   price book has been assigned to the catalog view. 
+   >[!NOTE]
+   >
+   >To find the price book ID, check the [catalog view configuration details](../setup/catalog-view.md) in Adobe Commerce Optimizer to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file, and add it back when a price book has been assigned to the catalog view. 
 
 1. Save the configuration file.
 
