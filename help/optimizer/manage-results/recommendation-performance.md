@@ -22,14 +22,11 @@ Select the [catalog view](../setup/catalog-view.md) where your recommendations a
 
 ## View a report
 
-Click the calendar and do one of the following:
+Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
-- To specify a single date, double-click the date on the calendar.
-- To specify a range of dates, click the first and last date on the calendar.
+![Recommendations Date Range](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->The range of dates cannot exceed one year.
+   The recommendation table updates to display metrics for that date range.
 
 ## Customize table
 
@@ -66,7 +63,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 
 |Control|Description|
 |---|---|
-|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations.|
+|![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
