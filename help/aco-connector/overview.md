@@ -233,7 +233,7 @@ In the GitHub repository for the Storefront boilerplate code, update the storefr
 
 * `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Get this value from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get the assigned price book value from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
+* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get the assigned price book ID from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
 * `"AC-Source-Locale": "Catalog source – Store View code from the Commerce cloud instance"`
 
