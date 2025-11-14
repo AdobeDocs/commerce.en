@@ -79,9 +79,9 @@ A merchant notices their conversion rate declining in Success Metrics. Here's ho
 1. **Identify the problem**: The Success Metrics dashboard shows conversion rate dropped 15% over the past month.
 
 1. **Find the cause**: The Opportunities page reveals several issues:
-   - Multiple products missing key attributes affecting search relevance
-   - Popular search queries returning poor results
-   - Slow page load times on category pages
+   - Multiple products missing key attributes affecting search relevance.
+   - Popular search queries returning poor results.
+   - Slow page load times on category pages.
 
 1. **Take action**: The merchant prioritizes fixing the product data quality issues first, as Sites Optimizer categorizes these as high-impact opportunities affecting search and recommendations.
 
@@ -93,19 +93,19 @@ A merchant notices their conversion rate declining in Success Metrics. Here's ho
 
 **Use Success Metrics when you want to:**
 
-- Track overall business performance
-- Measure the impact of changes over time
-- Identify which areas of your business need attention
-- Share performance reports with stakeholders
-- Understand customer behavior trends
+- Track overall business performance.
+- Measure the impact of changes over time.
+- Identify which areas of your business need attention.
+- Share performance reports with stakeholders.
+- Understand customer behavior trends.
 
 **Use Sites Optimizer (Opportunities) when you want to:**
 
-- Discover specific issues affecting performance
-- Get actionable recommendations to fix problems
-- Understand why certain metrics are declining
-- Prioritize which optimizations to tackle first
-- Leverage AI to identify issues you might miss manually
+- Discover specific issues affecting performance.
+- Get actionable recommendations to fix problems.
+- Understand why certain metrics are declining.
+- Prioritize which optimizations to tackle first.
+- Leverage AI to identify issues you might miss manually.
 
 Together, these features provide a complete solution: Success Metrics tells you *what* is happening, while Sites Optimizer tells you *why* and *how to fix it*.
 
@@ -135,15 +135,15 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 **What's included:**
 
-- All completed orders during the selected date range
-- Base product prices multiplied by quantities purchased
-- Revenue from all sales channels tracked by Commerce Optimizer
+- All completed orders during the selected date range.
+- Base product prices multiplied by quantities purchased.
+- Revenue from all sales channels tracked by Commerce Optimizer.
 
 **Important notes:**
 
-- Revenue is calculated based on base prices captured in storefront events
-- The reporting period is determined by the date range you select in the report configuration
-- Revenue metrics update as new order events are processed
+- Revenue is calculated based on base prices captured in storefront events.
+- The reporting period is determined by the date range you select in the report configuration.
+- Revenue metrics update as new order events are processed.
 
 #### Strategies
 
@@ -173,19 +173,19 @@ To improve your conversion rate, your goal is to convert more visitors into cust
 Conversion Rate = (Total Number of Orders ÷ Total Unique Visitors) × 100
 ```
 
-**Data source:** Storefront events and Real User Monitoring (RUM) data
+**Data source:** Storefront events.
 
 **How it works:**
 
-- **Product views** are tracked when visitors view product pages (using `product-view` events)
-- **Purchases** are tracked when orders are completed (using `place-order` events)
-- The calculation matches users who viewed specific products with those who purchased them
+- **Product views** are tracked when visitors view product pages (using `product-view` events).
+- **Purchases** are tracked when orders are completed (using `place-order` events).
+- The calculation matches users who viewed specific products with those who purchased them.
 
 **Important notes:**
 
-- A visitor who views multiple products but makes one purchase counts as one conversion
-- The metric tracks unique visitors using browser-based identifiers
-- Product view events always include a click, so views represent genuine user interest
+- A visitor who views multiple products but makes one purchase counts as one conversion.
+- The metric tracks unique visitors using browser-based identifiers.
+- Product view events always include a click, so views represent genuine user interest.
 
 #### Strategies
 
@@ -215,24 +215,24 @@ To enhance engagement, your goal is to increase customer interaction and time on
 
 Engagement includes the following event categories and actions:
 
-- **Product interactions:** Product views, product clicks, and product comparisons
-- **Shopping cart activities:** Adding items to cart, updating quantities, removing items
-- **Checkout actions:** Initiating checkout, completing checkout steps
-- **Category browsing:** Viewing category pages, filtering by facets
-- **Wishlist activities:** Adding to wishlist, viewing wishlist items
+- **Product interactions:** Product views, product clicks, and product comparisons.
+- **Shopping cart activities:** Adding items to cart, updating quantities, removing items.
+- **Checkout actions:** Initiating checkout, completing checkout steps.
+- **Category browsing:** Viewing category pages, filtering by facets.
+- **Wishlist activities:** Adding to wishlist, viewing wishlist items.
 
 **Event tracking details:**
 
 The system tracks engagement when events have:
 
-- Category: `product`, `shopper`, `shopping-cart`, or `checkout`
-- Property: `Product`, `Checkout`, `Cart`, `Category`, or `Wishlist`
+- Category: `product`, `shopper`, `shopping-cart`, or `checkout`.
+- Property: `Product`, `Checkout`, `Cart`, `Category`, or `Wishlist`.
 
 **Important notes:**
 
-- Higher engagement typically correlates with higher conversion rates
-- Engagement metrics help identify where users are most active in their journey
-- Use engagement data to optimize high-traffic pages and improve user experience
+- Higher engagement typically correlates with higher conversion rates.
+- Engagement metrics help identify where users are most active in their journey.
+- Use engagement data to optimize high-traffic pages and improve user experience.
 
 #### Strategies
 
@@ -256,27 +256,27 @@ To acquire more growth, your goal is to attract more new customers and improve a
 
 **How it's calculated:** Acquisition counts unique visitors based on browser identifiers assigned during their first visit to your store.
 
-**Data source:** Real User Monitoring (RUM)
+**Data source:** Storefront events.
 
 **How it works:**
 
-- Each visitor's browser receives a unique identifier (`domain_userid`) via a first-party cookie
-- New visitors are identified when their session index equals 1 (first visit)
-- The system tracks these identifiers to distinguish new visitors from returning ones
+- Each visitor's browser receives a unique identifier (`domain_userid`) via a first-party cookie.
+- New visitors are identified when their session index equals 1 (first visit).
+- The system tracks these identifiers to distinguish new visitors from returning ones.
 
 **Important notes:**
 
 This tracking method has some known limitations:
 
-- **Cross-device users:** The same person visiting from different devices (desktop, mobile, tablet) or browsers is counted as multiple unique visitors since each device/browser receives a different identifier
-- **Cookie clearing:** Users who clear their browser cookies are assigned a new identifier and counted as new visitors again
-- **Privacy settings:** Users with strict privacy settings or cookie blockers may not be tracked
+- **Cross-device users:** The same person visiting from different devices (desktop, mobile, tablet) or browsers is counted as multiple unique visitors since each device/browser receives a different identifier.
+- **Cookie clearing:** Users who clear their browser cookies are assigned a new identifier and counted as new visitors again.
+- **Privacy settings:** Users with strict privacy settings or cookie blockers may not be tracked.
 
 **Best for:**
 
-- Tracking new visitor trends over time
-- Analyzing marketing campaign effectiveness
-- Understanding traffic growth patterns
+- Tracking new visitor trends over time.
+- Analyzing marketing campaign effectiveness.
+- Understanding traffic growth patterns.
 
 **Interpretation tip:** While not perfectly accurate due to the limitations above, acquisition metrics are reliable for identifying trends and comparing periods when most users browse on the same device and don't frequently clear cookies.
 
@@ -308,33 +308,33 @@ To reduce the bounce rate, your goal is to keep visitors engaged and reduce sing
 Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 ```
 
-**Data source:** Real User Monitoring (RUM)
+**Data source:** Storefront events.
 
 **How it works:**
 
-- A **bounced session** is counted when a visitor views only one page during their entire visit
-- The system tracks page views within each session to identify single-page visits
-- Sessions are determined by user activity and time between interactions
+- A **bounced session** is counted when a visitor views only one page during their entire visit.
+- The system tracks page views within each session to identify single-page visits.
+- Sessions are determined by user activity and time between interactions.
 
 **What causes bounces:**
 
-- Visitors landing on irrelevant pages (poor search/ad targeting)
-- Slow page load times
-- Poor user experience or confusing navigation
-- Finding information quickly without needing to explore further
-- Technical issues or errors
+- Visitors landing on irrelevant pages (poor search/ad targeting).
+- Slow page load times.
+- Poor user experience or confusing navigation.
+- Finding information quickly without needing to explore further.
+- Technical issues or errors.
 
 **Important notes:**
 
-- High bounce rates aren't always negative—some pages (like contact information or specific product specs) may naturally have high bounce rates
-- Compare bounce rates across different page types and traffic sources to identify problem areas
-- Sudden increases in bounce rate often indicate technical issues or poor campaign targeting
+- High bounce rates aren't always negative—some pages (like contact information or specific product specs) may naturally have high bounce rates.
+- Compare bounce rates across different page types and traffic sources to identify problem areas.
+- Sudden increases in bounce rate often indicate technical issues or poor campaign targeting.
 
 **What's a good bounce rate?** This varies by industry and page type, but generally:
 
-- 40-60%: Average for ecommerce sites
-- Below 40%: Excellent engagement
-- Above 70%: May indicate problems requiring investigation
+- 40-60%: Average for ecommerce sites.
+- Below 40%: Excellent engagement.
+- Above 70%: May indicate problems requiring investigation.
 
 #### Strategies
 
@@ -352,27 +352,27 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 
 **Revenue declining**:
 
-- Check if recommendation units are still active and performing well
-- Review merchandising rules to ensure high-margin products are being promoted
-- Analyze search performance to identify if popular products are still ranking well
+- Check if recommendation units are still active and performing well.
+- Review merchandising rules to ensure high-margin products are being promoted.
+- Analyze search performance to identify if popular products are still ranking well.
 
 **Conversion rate dropping**:
 
-- Verify that search relevance is maintained (check synonyms and facets)
-- Ensure recommendation units are displaying correctly
-- Review merchandising rules for any conflicts or issues
+- Verify that search relevance is maintained (check synonyms and facets).
+- Ensure recommendation units are displaying correctly.
+- Review merchandising rules for any conflicts or issues.
 
 **High bounce rates**:
 
-- Check search result relevance and implement synonyms if needed
-- Ensure recommendation units are loading properly
-- Review product data quality and availability
+- Check search result relevance and implement synonyms if needed.
+- Ensure recommendation units are loading properly.
+- Review product data quality and availability.
 
 **Low engagement**:
 
-- Diversify recommendation types to prevent customer fatigue
-- Implement more personalized recommendation strategies
-- Optimize search experience with better facets and synonyms
+- Diversify recommendation types to prevent customer fatigue.
+- Implement more personalized recommendation strategies.
+- Optimize search experience with better facets and synonyms.
 
 ## Field descriptions
 
@@ -387,10 +387,10 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 
 ## More like this
 
-- [Search Performance](../manage-results/search-performance.md) - Analyze search terms and optimize search relevance
-- [Recommendation Performance](../manage-results/recommendation-performance.md) - Monitor and optimize recommendation effectiveness
-- [Recommendations Overview](../merchandising/recommendations/overview.md) - Learn about AI-powered product recommendations
-- [Merchandising Rules](../merchandising/rules/overview.md) - Boost, bury, pin, or hide products in search results
-- [Facets](../merchandising/facets/overview.md) - Enhance search with intelligent filtering
-- [Synonyms](../merchandising/synonyms/overview.md) - Improve search relevance and customer experience
-- [Events Overview](../setup/events/overview.md) - Understand the data that powers your metrics
+- [Search Performance](../manage-results/search-performance.md) - Analyze search terms and optimize search relevance.
+- [Recommendation Performance](../manage-results/recommendation-performance.md) - Monitor and optimize recommendation effectiveness.
+- [Recommendations Overview](../merchandising/recommendations/overview.md) - Learn about AI-powered product recommendations.
+- [Merchandising Rules](../merchandising/rules/overview.md) - Boost, bury, pin, or hide products in search results.
+- [Facets](../merchandising/facets/overview.md) - Enhance search with intelligent filtering.
+- [Synonyms](../merchandising/synonyms/overview.md) - Improve search relevance and customer experience.
+- [Events Overview](../setup/events/overview.md) - Understand the data that powers your metrics.
