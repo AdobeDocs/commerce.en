@@ -93,6 +93,16 @@ Using the AI coding tools provides the following benefits:
      * MCP Configuration: `.cursor/mcp.json`
      * Rules Directory: `.cursor/rules/`
 
+>[!NOTE]
+>
+>Before deploying your project, you will need to complete the following configuration tasks:
+>
+>- Log in to Adobe Developer Console using the Adobe I/O CLI
+>- Create an App Builder project
+>- Set up environment variables (`.env` file)
+>
+>You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) for detailed configuration instructions.
+
 ## Post-installation configuration
 
 1. Restart the Cursor IDE to load the new MCP tools and configuration.
