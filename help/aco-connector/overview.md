@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Optimizer Connector for Commerce
+title: Adobe Commerce Optimizer Connector
 description: Learn how to connect your data from your Commerce cloud or on-premises project to Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -44,9 +44,9 @@ The Connector enables several key workflows:
 
 ## Requirements to use the integration
 
-* Adobe Commerce 2.4.5+
+* Adobe Commerce 2.4.7+
 
-  * PHP 8.1, 8.2, 8.3, or 8.4
+  * PHP 8.2, 8.3, or 8.4
   * Composer 2.x
 
 * Adobe Commerce Optimizer license with a provisioned sandbox instance.
@@ -111,9 +111,9 @@ The Adobe Commerce Connector Composer metapackage is available to all Commerce m
 
 >[!NOTE]
 >
->If you already have an App Builder Developer project in the IMS organization where your Commerce Optimizer instance is deployed, you can get the required API credentials and organization ID from the OAUTH-server-to-server credentials in that project.
+>If you already have a developer project configured with the Data Ingestion API in the IMS organization where your Commerce Optimizer instance is deployed, you can get the required API credentials and organization ID from the OAUTH-server-to-server credentials in that project.
 
-Create a new developer project in Adobe Developer console to get API credentials to configure the integration between Commerce and Commerce Optimizer instances. For instructions, see [Create an App Builder project](https://developer.adobe.com/commerce/extensibility/events/project-setup/) in the developer documentation.
+Create a new developer project in Adobe Developer console to get Adobe Commerce Optimizer Ingestion API credentials to configure the integration between Commerce and Commerce Optimizer instances. For instructions, see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) in the *Merchandising Developer Guide*.
 
 After you create the project, save the following values from the OAUTH Server-to-Server credentials page:
 
@@ -199,7 +199,7 @@ When the configuration is changed, the corresponding indexes are invalidated to 
 
 ## Configure Adobe Commerce Optimizer stores
 
-Configure Adobe Commerce Optimizer stores by creating catalog views and policies.​ See [Creating Catalog Views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) in the Adobe Commerce Optimizer Guide.
+Configure Adobe Commerce Optimizer stores by creating catalog views and policies.​ See [Creating Catalog Views](../optimizer/setup/catalog-view.md) in the Adobe Commerce Optimizer Guide.
 
 Note that price books are created automatically from Adobe Commerce customer groups.
 
@@ -219,34 +219,23 @@ This section provides a high-level overview of the steps required to set up your
 
 ### Configure CORS headers for Commerce instance
 
-To allow GraphQL requests to come from an Edge Delivery Services (EDS) storefront to Adobe Commerce on cloud or on-premises environment, use one of the following options to add specific Cross-Origin Resource Sharing (CORS) headers to the Adobe Commerce GraphQL endpoints.​
-
-1. Add Cross-Origin Resource Sharing (CORS) headers to the Adobe Commerce GraphQL endpoints.​
-
-   **Option 1: Implement a PHP custom module for Adobe Commerce foundation to be able to add CORS headers.​**
-
-   **Option 2: Install a 3rd-party community module graycore/magento2-cors​** - See [CORS setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/) in the *Adobe Commerce Storefront* documentation.
-
-1. Add the following CORS variables to the Commerce on cloud instance `app.yaml` environment configuration file:
-
-   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_HEADERS: *`
-   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_ORIGINS: *`
+To allow GraphQL requests to come from an Edge Delivery Services (EDS) storefront to Adobe Commerce on cloud or on-premises environment, add specific Cross-Origin Resource Sharing (CORS) headers to the Adobe Commerce GraphQL endpoints.​ For instructions, see [CORS setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/) in the *Adobe Commerce Storefront* documentation.
 
 ### Connect the storefront to Commerce data sources
 
 In the GitHub repository for the Storefront boilerplate code, update the storefront configuration file, `config.json` with the following parameters:
 
-* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
+* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`, for example `https://{{your store}}/graphql`.
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` - Get this value from the [Commerce Optimizer instance details page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#get-instance-details)​
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"`, for example `https://na1-sandbox.api.commerce.adobe.com/{{instanceId}}/v1/catalog​`.
 
-* `"AC-Environment-Id": "Customer organization ID"` - Get this value from the [Commerce cloud project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
+* `"AC-Environment-Id": "Customer organization ID"` - Get this value from the [Commerce cloud project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview).
 
-* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Get this value from the Adobe Commerce Optimizer Admin.
+* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Get this value from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get this value from the Adobe Commerce Optimizer Admin.​
+* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get this value from the list of assigned price books in the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in Adobe Commerce Optimizer.
 
-* `"AC-Source-Locale": "Catalog source – Store View code from Commerce cloud instance"`
+* `"AC-Source-Locale": "catalogSource"`— Specify the source associated with the Commerce storeview to connect to the storefront. You can see available sources from the [Data Sync](../optimizer/setup/data-sync.md) page in Adobe Commerce Optimizer.
 
 For more information, see [Storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/) in the *Adobe Commerce Storefront* documentation.
 
