@@ -13,7 +13,7 @@ Opportunities are AI-powered recommendations that help merchandisers identify an
 
 ## How Sites Optimizer works with Commerce Optimizer
 
-Commerce Optimizer enhances product discovery and catalog business efficiency, while Sites Optimizer boosts SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support.
+Commerce Optimizer enhances product discovery and catalog business efficiency, while Sites Optimizer boosts SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support. To learn how you can take advantage of these two technologies to improve your storefront performance and experience, see [Using Success Metrics and Sites Optimizer together](./success-metrics.md#using-success-metrics-and-sites-optimizer-together).
 
 ### Key capabilities
 
