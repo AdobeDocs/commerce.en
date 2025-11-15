@@ -14,22 +14,15 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ![Recommendations Performance](../assets/rec-performance.png){zoomable="yes"}
 
-## Choose the **Catalog view**
-
-Select the [catalog view](../setup/catalog-view.md) where your recommendations apply.
-
-![Catalog View](../assets/catalog-view.png)
-
 ## View a report
 
-Click the calendar and do one of the following:
+1. Choose the **Catalog source**, such as `en-US` where your recommendations apply.
 
-- To specify a single date, double-click the date on the calendar.
-- To specify a range of dates, click the first and last date on the calendar.
+1. Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
->[!NOTE]
->
->The range of dates cannot exceed one year.
+   ![Recommendations Date Range](../assets/rec-perf-date-range.png)
+
+   The recommendation table updates to display metrics for that date range.
 
 ## Customize table
 
@@ -43,14 +36,6 @@ Click the calendar and do one of the following:
    - To hide a visible column, click any column name with a check mark.
 
    The table is refreshed to include only the selected columns.
-
-## Set filters
-
-Click the filter icon to filter the metrics on the recommendations performance workspace.
-
-![Filter Metrics](../assets/rec-filters.png)
-
-You can configure multiple values for each of the filters. See the [table below](#column-descriptions) for descriptions of each filter.
 
 ## View details
 
@@ -66,7 +51,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 
 |Control|Description|
 |---|---|
-|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations.|
+|![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
