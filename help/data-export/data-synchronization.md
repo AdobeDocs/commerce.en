@@ -76,7 +76,7 @@ The Retry failed items sync uses a separate process to resend items that failed 
 
 Most synchronization activities are processed automatically based on the application configuration. However, SaaS data export also provides tools to monitor and manage the process.
 
-- **[Data Feed Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Get real-time insights into the health and performance of product and category data data export from Commerce to external services.
+- **[Data Feed Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Get real-time insights into the health and performance of product and category data export from Commerce to external services.
   
 - **[Manage sync operations using the Commerce CLI](data-export-cli-commands.md)**—Developers, system integrators, or administrators with access to the Commerce application server can manage the synchronization process and data feeds using the Adobe Commerce command-line tool (CLI).
 
