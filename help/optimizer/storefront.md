@@ -220,7 +220,7 @@ If issues persist:
 
 After you setup and verify your storefront, you can:
 
-1. **[Install Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Browser extension for editing, previewing, and publishing content directly from your website.
+1. **[Install Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)**-Browser extension for editing, previewing, and publishing content directly from your website.
 
 2. **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Create a local environment to customize your storefront code and content.
 
@@ -232,7 +232,7 @@ After you setup and verify your storefront, you can:
 
 * **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**–Add pre-built components to enhance your storefront experience.
 
-* **Migrate to the Storefront Configuration Service**—After you have created your initial storefront, you can migrate the configuration to use the Configuration Service which supports advanced use cases like repoless configuration and overlays. For detaiisl, see the [Configuration Service](https://www.aem.live/docs/config-service-setup) documentation in the Adobe Experience Manager.
+* **Migrate to the Storefront Configuration Service**—After you have created your initial storefront, you can migrate the configuration to use the Configuration Service which supports advanced use cases like repoless configuration and overlays. For details, see the [Configuration Service](https://www.aem.live/docs/config-service-setup) documentation in the Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
