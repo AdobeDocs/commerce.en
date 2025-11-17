@@ -99,9 +99,9 @@ The Site Creator tool creates a complete storefront project with the following c
 
 Update your storefront configuration to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
-1. Open the configuration manager using the link that you saved earlier:
-
-   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+1. Open the `config.json` file in your boilerplate code repository.
+   
+   `https://github.com/<username or org>/<repo name>/config.json`
 
 1. Locate the `cs` (Catalog Service) section in the configuration.
 
@@ -110,16 +110,18 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Environment-ID": "{tenantId}",
-      "AC-Source-Locale": "en_US"
+      "AC-Source-Locale": "en_US",
+      "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
+   
+   >[!NOTE]
+   >
+   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in Adobe Commerce Optimizer to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
 
 1. Save the configuration file.
 
->[!NOTE]
->
->The configuration changes may take a few minutes to propagate. If you don't see data immediately, wait 2-3 minutes before troubleshooting.
+   The configuration changes may take a few minutes to propagate. If you don't see data immediately, wait 2-3 minutes before troubleshooting.
 
 ## Verify your setup
 
