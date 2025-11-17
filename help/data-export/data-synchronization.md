@@ -74,11 +74,15 @@ The Retry failed items sync uses a separate process to resend items that failed 
 
 ### View and manage the synchronization process
 
-Most synchronization activities are processed automatically based on the application configuration. However, SaaS data export also provides tools to manage the process.
+Most synchronization activities are processed automatically based on the application configuration. However, SaaS data export also provides tools to monitor and manage the process.
 
-- Admin users can view and track synchronization progress and get information about the data from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- **[Data Feed Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Get real-time insights into the health and performance of product and category data data export from Commerce to external services.
+  
+- **[Manage sync operations using the Commerce CLI](data-export-cli-commands.md)**—Developers, system integrators, or administrators with access to the Commerce application server can manage the synchronization process and data feeds using the Adobe Commerce command-line tool (CLI).
 
-- Developers, system integrators, or administrators with access to the Commerce application server can manage the synchronization process and data feeds using the Adobe Commerce command-line tool (CLI). See [Manage sync operations using the Commerce CLI](data-export-cli-commands.md).
+- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)**—Admin users can view and track data synchronized to Commerce Services.
+
+- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} **[Data Sync page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check availability of catalog data for your storefront from the Data Sync page in Adobe Commerce Optimizer.
 
 ### Verify Commerce application configuration
 
