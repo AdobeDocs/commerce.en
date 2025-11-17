@@ -2,8 +2,20 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Nov 10 10:32:37 2025
+updated: Fri Nov 14 16:06:46 2025
 entries:
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
+    for the Payment Services v2.13.0 release.
+  versions: ''
+  type: technical
+  date: November 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/296
+  merge_commit: a1c02122cd58234268ba9f07aaba96f83f929720
+  contributor: del
+  membership:
+  labels:
+  - release-notes
+  - technical
 - description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes)
     for the AEM Assets Integration v1.2.7 release.
   versions: ''
