@@ -7,6 +7,8 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 The **Opportunities** page helps you identify and implement optimizations to improve site traffic, user engagement, and conversion rates through integration with Adobe Sites Optimizer.
 
+![Opportunities](../assets/opportunities.png)
+
 ## What are Opportunities?
 
 Opportunities are AI-powered recommendations that help merchandisers identify and address issues impacting your commerce site performance. These recommendations are powered by [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), a cloud-based service that analyzes and improves website performance.
@@ -15,7 +17,7 @@ Opportunities are AI-powered recommendations that help merchandisers identify an
 
 Commerce Optimizer enhances product discovery and catalog business efficiency, while Sites Optimizer boosts SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support. To learn how you can take advantage of these two technologies to improve your storefront performance and experience, see [Using Success Metrics and Sites Optimizer together](./success-metrics.md#using-success-metrics-and-sites-optimizer-together).
 
-### Key capabilities
+## Key capabilities
 
 - **Automated issue detection**—Sites Optimizer continuously scans product catalogs, search logs, and recommendation data to identify problems affecting discovery.
 - **AI-driven recommendations**—Receive intelligent suggestions to resolve detected issues.
