@@ -23,6 +23,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
 - You can only track performance metrics within the last year.
 - If a search query contains multiple words, the blank space between the words causes them to be treated as separate search terms. Use [synonyms](./synonyms.md) if you want to account for multi-word search queries.
+- [!DNL Live Search] does not support [search term redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) natively. Implement redirects by using Fastly or another custom configuration.
 
 ## Indexing
 
@@ -91,11 +92,10 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 ## Troubleshooting
 
-For help with troubleshooting some common issues in [!DNL Live Search], see the following knowledgebase articles:
+For help with troubleshooting common issues in [!DNL Live Search], see the following knowledgebase articles:
 
-- [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
-- [[!DNL Live Search] dashboard and search result ranking is incorrect](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
-- [[!DNL Live Search] displays out-of-stock products regardless of stock status settings in Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
-- [[!DNL Live Search] facets are not alphabetically sorted](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+- [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) - Provides solutions for when product catalog data is not syncing correctly between your Adobe Commerce store and the Live Search service. This article covers how to verify sync status, identify sync errors, and resolve data synchronization issues.
+- [[!DNL Live Search] dashboard and search result ranking is incorrect](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Addresses issues where search results or performance metrics displayed in the Live Search dashboard are not showing as expected. This article explains how to troubleshoot ranking discrepancies and dashboard data inconsistencies.
+- [[!DNL Live Search] facets are not alphabetically sorted](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - Resolves the issue where facet values appear in an unexpected order rather than alphabetically. This article provides steps to configure and correct facet sorting behavior on your storefront.
 
 If you need additional assistance, contact [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

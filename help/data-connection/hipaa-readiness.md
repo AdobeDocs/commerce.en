@@ -25,7 +25,7 @@ If you purchased the health care add-on for Adobe [!DNL Commerce], you most like
 
 >[!IMPORTANT]
 >
->When you install the **Data Services HIPAA** extension, storefront event data that is used by Live Search and Product Recommendations is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for these services. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
+>When you install the **Data Services HIPAA** extension, storefront event data that is used by Live Search and Product Recommendations is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for these services. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) to learn more.
 
 ## How to ensure data sent to Experience Platform is HIPAA-ready
 

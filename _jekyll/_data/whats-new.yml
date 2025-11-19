@@ -2,8 +2,84 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 26 15:42:06 2025
+updated: Fri Nov 14 16:06:46 2025
 entries:
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
+    for the Payment Services v2.13.0 release.
+  versions: ''
+  type: technical
+  date: November 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/296
+  merge_commit: a1c02122cd58234268ba9f07aaba96f83f929720
+  contributor: del
+  membership:
+  labels:
+  - release-notes
+  - technical
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes)
+    for the AEM Assets Integration v1.2.7 release.
+  versions: ''
+  type: technical
+  date: November 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/292
+  merge_commit: 89091ee8a69259ad325a2b2d7ed8d522fe23fac9
+  contributor: del
+  membership:
+  labels:
+  - release-notes
+  - technical
+- description: 'Updated the following topics to include information about configuring
+    identity management and single sign-on from the Adobe Admin Console:<br/>- [Adobe
+    Commerce as a Cloud Service User and Identity Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)<br/>-
+    [Adobe Commerce Optimizer: User and Identity Management](https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management)'
+  versions: ''
+  type: feedback, technical
+  date: October 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/267
+  merge_commit: 78f1fa56d409433c90763077b63198e38a9ab692
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - technical
+- description: Updated [User Management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    steps for adding a user.
+  versions: ''
+  type: major-update
+  date: October 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/257
+  merge_commit: 4088b88553cbdd328a55f3483b20ea073e6c78b2
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated the [storefront set up guide](https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront)
+    for Adobe Commerce Optimizer to provide instructions for creating storefront project
+    with the Site Creator tool, customizing the storefront configuration, and verifying
+    the site and catalog data by checking the default product detail and product search
+    results pages.
+  versions: ''
+  type: major-update
+  date: October 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/178
+  merge_commit: 4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c
+  contributor: meker
+  membership:
+  labels:
+  - major-update
+- description: "[User management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)
+    now requires all developers and product admins to add the user role first."
+  versions: ''
+  type: major-update
+  date: October 2, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/252
+  merge_commit: e12b4c18cacd43d73ced180a62d7162a745ced56
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
     for Payment Services v2.12.2.
   versions: ''

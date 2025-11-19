@@ -39,16 +39,16 @@ This article is intended for the developer or systems integrator on your team wh
 
 At a high level, onboarding [!DNL Live Search] requires that you:
 
-1. [Install](#1-install-the-live-search-extension) the [!DNL Live Search] extension
-1. [Configure](#2-configure-api-keys) the API keys
-1. [Sync](#3-sync-your-catalog-data) your catalog data
-1. [Verify](#4-verify-that-the-data-was-exported) that the catalog data was exported
-1. [Configure](#5-configure-the-data) the data
-1. [Test](#6-test-the-connection) the connection
-1. [Verify](#7-validate-events-are-capturing-data) that events are capturing data
-1. [Customize](#8-customize-for-your-storefront) your storefront
+1. [Install](#install) the [!DNL Live Search] extension
+1. [Configure](#configure) the API keys
+1. [Sync](#sync) your catalog data
+1. [Verify](#verify) that the catalog data was exported
+1. [Configure](#configuredata) the data
+1. [Test](#test) the connection
+1. [Validate](#capture) that events are capturing data
+1. [Customize](#customize) your storefront
 
-## 1. Install the [!DNL Live Search] extension
+## 1. Install the [!DNL Live Search] extension {#install}
 
 [!DNL Live Search] is installed as an extension from [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) through [Composer](https://getcomposer.org/). After you install and configure [!DNL Live Search], Adobe [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
@@ -72,7 +72,7 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search].
+1. Disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]. [!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance.
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -154,7 +154,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
    >[!NOTE]
    >
-   >The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error.
+   >[!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance. The disable command includes the list of Commerce modules that support OpenSearch. If your Commerce instance does not have a module installed, you will see a `module does not exist` error. 
 
 1. Install the updates.
 
@@ -166,69 +166,13 @@ After verifying the indexers, the next step is to [configure the API keys](#2-co
 
 >[!ENDTABS]
 
-### Install the [!DNL Live Search] beta
-
->[!IMPORTANT]
->
->The following feature is in beta. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
-
-This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
-
-- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
-
-  - **Layer 1 search** - Search for "motor" on "product_attribute_1
-  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
-
-  Layered search is available for both `startsWith` search indexation and `contains` search indexation as described below:
-
-- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
-
-  - Searching for products where the attribute value starts with a particular string.
-  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse, and the API call should also be a reversed string.
-
-- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
-
-    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
-
-      >[!NOTE]
-      >
-      >This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
-
-These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
-
-You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
-
-1. To install the beta, add the following dependency to your project:
-
-    ```bash
-    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
-    ```
-
-1. Commit and push the changes to your `composer.json` and `composer.lock` files to your cloud project. [Learn more](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
-
-   This beta adds **[!UICONTROL Search types]** checkboxes for **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]**, and **[!UICONTROL Starts with]** in the Admin. It also updates the [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) GraphQL API to include these new search capabilities.
-
-1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. For beta, be aware that the Admin does not enforce this restriction but it is enforced in API searches.
-
-    ![Specify search capability](./assets/search-filters-admin.png)
-
-1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
-
-### Field descriptions
-
-| Field | Description |
-|--- |--- |
-|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete`, you can use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
-|`Contains`| Enables a true "text contained in a string" search instead of an autocomplete search. Use `contains` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability). Refer to the [Limitations](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations) for more information.|
-|`Starts with`| Query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability).|
-
-## 2. Configure API keys
+## 2. Configure API keys {#configure}
 
 The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or systems integrator. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
 
 Learn how to configure your API keys in the [Commerce Services Connector](../landing/saas.md) article.
 
-## 3. Sync your catalog data
+## 3. Sync your catalog data {#sync}
 
 [!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, indexing can take from 30 minutes to a couple of hours.
 
@@ -254,7 +198,7 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 
 ### Monitor sync progress
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard.md) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
@@ -264,7 +208,7 @@ You can also run sync commands and troubleshoot the synchronization process usin
 
 After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Streaming Product Updates](indexing.md) in the Indexing documentation.
 
-## 4. Verify that the data was exported
+## 4. Verify that the data was exported {#verify}
 
 To check if your catalog data has been exported from Adobe Commerce and synced with [!DNL Live Search], you have a few options:
 
@@ -284,7 +228,7 @@ To check if your catalog data has been exported from Adobe Commerce and synced w
 
 For additional help, see [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in the Support Knowledge Base.
 
-## 5. Configure the data
+## 5. Configure the data {#configuredata}
 
 Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories.
 
@@ -315,7 +259,7 @@ When you change this configuration, the message `Page cache is invalidated` appe
 
 Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". These category assignments improve granularity when filtering.
 
-## 6. Test the connection
+## 6. Test the connection {#test}
 
 With your catalog data now in SaaS, test to make sure product data is returned in the following scenarios:
 
@@ -329,7 +273,7 @@ If you encounter problems in the storefront, check the `var/log/system.log` file
 
 To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the allowlist.
 
-## 7. Verify that events are capturing data
+## 7. Verify that events are capturing data {#capture}
 
 Ensure that the storefront events deployed to your site are working. This check is especially important for headless implementations.
 
@@ -337,7 +281,7 @@ Ensure that the storefront events deployed to your site are working. This check 
 - Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environment(s).
 - [Verify event collection](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/).
 
-## 8. Customize for your storefront
+## 8. Customize for your storefront {#customize}
 
 You have installed the [!DNL Live Search] extension, synced, validated, and configured your data. The next step is to ensure that the [!DNL Live Search] widgets conform to your store's look and feel.
 

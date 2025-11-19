@@ -32,6 +32,10 @@ By decoupling content creation from catalog management, businesses gain several 
 
 * Automation improves efficiency and accuracy, reducing mismatches between product data and associated content.
 
+>[!NOTE]
+>
+> CSV product imports in PaaS and SaaS do not trigger update events. Use the API for catalog imports and updates.
+
 ## AEM Assets Lifecycle Changes
 
 The integration also listens for asset status changes in AEM Assets. Because Adobe Commerce serves as an engagement channel, only approved assets are displayed in the storefront.

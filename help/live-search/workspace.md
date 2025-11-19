@@ -52,8 +52,6 @@ To allow attributes to be searchable, complete the following steps:
 1. Select the attribute you want to be searchable, such as `color`.
 1. Select **Storefront Properties** and set **Use in Search** to `yes`.
 
-    ![Workspace](assets/attribute-searchable.png)
-
 [!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
 
 The following attributes are always searchable:
@@ -62,11 +60,86 @@ The following attributes are always searchable:
 - `name`
 - `categories`
 
+### Layered search and expansion of search types
+
+Layered search, or search within a search, is a powerful, attribute-based filtering system that extends the traditional search functionality to include additional search parameters. These additional search parameters allow more precise and flexible product discovery.
+
+>[!NOTE]
+>
+>Layered search is available in Live Search 4.6.0.
+
+With layered search you can:
+
+- Enable shoppers to search within the search results.
+- Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
+
+The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
+
+- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
+  
+  - **Layer 1 search** - Search for "motor" on `product_attribute_1`.
+  - **Layer 2 search** - Search for "part number 123" on `product_attribute_2`. This example searches for "part number 123" within the results for "motor".
+
+  Layered search is available for both `startsWith` search indexation and `contains` search indexation in the second layer of the layered search, as described below:
+
+- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
+
+  - Searching for products where the attribute value starts with a specified string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string. For example, if you want to search for a product name that ends with "pants", you need to send this as "stnap".
+
+- **contains search indexation** - Search an attribute using contains indexation. This new capability allows:
+
+    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
+
+        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
+
+#### Implementation
+
+1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable.
+
+    See the list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+1. Specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. Additionally, for the **Contains** indexation, string length is limited to 50 characters or less.
+
+    ![Specify search capability](./assets/search-filters-admin.png)
+
+1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
+
+    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. 
+
+### When to use layered search rather than facets
+
+Layered search and facets serve different purposes in product discovery, and choosing between them depends on your specific use case:
+
+**Use layered search when:**
+
+- You need to search within search results using multiple criteria.
+- Working with part numbers, SKUs, or technical specifications where users know partial information.
+- Shoppers need to narrow down results step-by-step with nested criteria.
+- You want to reduce the number of API calls by combining multiple search criteria in a single query.
+- You need to implement business-specific search patterns that go beyond standard faceted navigation.
+
+**Use facets when:**
+
+- Providing typical category, price, brand, and attribute filtering
+- Offering intuitive filter options that users can easily understand and select
+- Showing available options based on current search results
+- Displaying filter counts and ranges that help users understand available options
+- Working with common product characteristics like color, size, material, and so on.
+
+**Best Practice:** Use layered search for complex, technical searches where users have specific criteria, and use facets for standard e-commerce filtering where users want to explore and narrow down options visually.
+
+## Facets and synonyms
+
+Facets and synonyms are another way you can enahnce the search experience for your shoppers.
+
 [Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time. 
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
+>A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 
@@ -101,6 +174,50 @@ Prices in the Widget Product Listing Page and Popover are converted to the Defau
 |Configuration > Sales > Tax > Price Display Settings > Display Product Prices In Catalog|Determines if product prices published in the catalog include or exclude tax, or show two versions of the price; one with, and the other without tax||
 |Stores > Configuration > Catalog > Storefront > Product Listing Sort By|Determines the sort order of the search results list.|Does not apply to the [!DNL Live Search] [Product Listing Page Widget](plp-styling.md)|
 
-### Search terms
+## Default attribute values
 
-[!DNL Live Search] supports [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) on implementations where Adobe Commerce handles the routing, such as on Luma and other php-based themes.
+The following product attributes have [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are used by [!DNL Live Search] and enabled by default.
+
+| Property | Storefront Property | Attribute |
+|---|---|---|
+| Sortable | Used for Sorting in Product Listing | `price`|
+| Searchable | Use in Search | `price` <br />`sku`<br />`name`|
+| FilterableInSearch | Use in Layered Navigation - Filterable (with results)| `price`<br />`visibility`<br />`category_name`|
+
+## Default non-system attribute properties
+
+The following table shows the default search and filterable properties of non-system attributes, including those that are specific to the Luma sample data. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Live Search] and native Adobe Commerce.
+
+| Attribute Code | Searchable | Use in Layered Navigation |
+|--- |--- |--- |
+| activity | Yes | Filterable (with results) |
+| attributes_brand | Yes | No |
+| brand | Yes | No |
+| climate | Yes | Filterable (with results) |
+| collar | Yes | Filterable (with results) |
+| color | Yes | Filterable (with results) |
+| cost | Yes | No |
+| eco_collection | Yes | Filterable (with results) |
+| gender | Yes | Filterable (with results) |
+| manufacturer | Yes | Filterable (with results) |
+| material | Yes | Filterable (with results) |
+| purpose | Yes | Filterable (with results) |
+| strap_bags | Yes | Filterable (with results) |
+| style_general | Yes | Filterable (with results) |
+
+## Default system attribute properties
+
+The following table shows the default search and filterable properties of system attributes.
+
+| Attribute Code | Searchable | Use in Layered Navigation |
+|--- |--- |--- |
+| allow_open_amount | Yes | Filterable (with results) |
+| description | Yes | No |
+| name | Yes | No |
+| price | Yes | Filterable (with results) |
+| short_description | Yes | No |
+| sku | Yes | No |
+| status | Yes | No |
+| tax_class_id | Yes | No |
+| url_key | Yes | No |
+| weight | Yes | No |

@@ -100,6 +100,12 @@ See [Payment options](payments-options.md#fastlane-button) for more information.
 
 1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout. The default title is `Credit Card (via Fastlane)`
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **Authorize and Capture**.
+1. To enable **[!UICONTROL 3D Secure Authentication for Fastlane]** (`Off` by default), choose `When required` to comply with EU regulations, or `Always` to add an extra fraud protection layer.
+
+    >[!NOTE]
+    >
+    > If the card issuer requires 3D Secure authentication, this step cannot be bypassed, regardless of the [!UICONTROL Payment Services] configuration.
+
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce by setting the **[!UICONTROL Enable messaging]** field to `Yes`.
 1. Click **[!UICONTROL Save Config]** to save your changes.
@@ -110,6 +116,7 @@ See [Payment options](payments-options.md#fastlane-button) for more information.
 | [!UICONTROL Enable Fastlane] | store view | Enable or disable [!DNL Fastlane] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. The default value is `Credit Card (via Fastlane)`. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure Authentication for Fastlane](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
 | [!UICONTROL Enable messaging] | store view | Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 

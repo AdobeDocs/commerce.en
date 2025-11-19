@@ -51,7 +51,7 @@ When [!DNL Fastlane] is enabled, the [!UICONTROL Credit Card Fields] option is d
 
 >[!NOTE]
 >
-> Currently, Fastlane is supported only for US merchants;Therefore, [!UICONTROL 3D Secure authentication] is not currently supported. 
+> In sandbox instances, Fastlane transactions do not show the shipping address in the Transaction Activity view.
 
 See [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} topic for more information.
 

@@ -41,7 +41,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    * Confirmation
    * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
-   You can create up to five active recommendation units for each page type, and up to 25 for Page Builder. The page type is grayed out When the limit is reached.
+   You can create up to 50 active recommendation units for each page type. The page type is grayed out when the limit is reached.
 
    ![Recommendation name and page](assets/create-recommendation.png)
    _Recommendation name and page placement_
@@ -155,7 +155,7 @@ The readiness indicator percent for recommendation types that depend on catalog 
 
 #### What to do if the readiness indicator percent is low
 
-A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backuprecs) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backup-recommendations) are returned if you deploy this recommendation type anyway.
 
 >[!IMPORTANT]
 >

@@ -93,6 +93,24 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.13.0
+
+_November 10, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Now, [!DNL Payment Services] supports PayPal's **One-Time Checkout (OTC)** modal, featuring built-in contact and delivery information.
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Enhanced mobile experience through **PayPal app-switch authentication**, along with improved API integration for smoother user journeys. This feature is only available for US [!DNL Payment Services] based customers.
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Added **3D Secure (3DS)  authentication** support for Fastlane to meet **Strong Customer Authentication (SCA)** requirements. This Enables UK, and EU [!DNL Payment Services] merchants to process transactions with **3DS authentication**, enhancing fraud prevention and ensuring compliance with regional regulations.
+
+![New](../assets/new.svg)<!-- PAY-xxxx --> Now, [!DNL Payment Services] merchants can choose between **light, and dark themes** for the Fastlane checkout component, allowing checkout pages to match their site design. If custom styles do not meet accessibility standards, the system automatically reverts to the default settings.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Fixed loader issue during **admin checkout with 3DS challenge**.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-xxxx --> Improved **validation when storing payment configuration** via API.
+
 ## v2.12.2
 
 _September 23, 2025_
@@ -365,6 +383,7 @@ _December 7, 2023_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available from the following locations:
+
 - the customer order page on the storefront
 - the order confirmation email sent to the shopper
 - from the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.

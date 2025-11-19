@@ -37,6 +37,10 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. When prompted, copy the recommendation ID. Use this ID to help you identify which recommendation unit is being used in the recommendation drop-in on your Edge Delivery Services storefront.
 
+>[!NOTE]
+>
+> You can create up to 50 active recommendation units. 
+
 >[!IMPORTANT]
 >
 >Some browsers might block critical scripts that prevent Recommendations from working as expected.
@@ -130,7 +134,7 @@ _Recommendation type_
 >
 >Indicators may never reach 100%.
 
-The readiness indicator percent for recommendation types that depend on catalog data do not change much since the merchant's catalog does not change often. But the readiness indicator percent for recommendation types based on shopper behaviorial data can change often depending on daily shopper activity.
+The readiness indicator percent for recommendation types that depend on catalog data do not change much since the merchant's catalog does not change often. But the readiness indicator percent for recommendation types based on shopper behavioral data can change often depending on daily shopper activity.
 
 #### What to do if the readiness indicator percent is low
 

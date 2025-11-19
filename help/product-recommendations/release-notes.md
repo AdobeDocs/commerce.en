@@ -25,6 +25,10 @@ See the developer documentation to [learn about product support](https://experie
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
+_November 19, 2025_
+
+![New](../assets/new.svg) You can now create up to 50 active recommendation units for each page type. Previously, the limit was five.
+
 _October 1, 2025_
 
 ![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
@@ -48,6 +52,16 @@ _April 25, 2023_
 
 ## Current major version
 
+### 6.5.0 magento/product-recommendations
+
+_November 3, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Improved how product recommendation units interact on different environments.
+
+### Previous versions
+
 ### 6.4.0 magento/product-recommendations
 
 _September 17, 2025_
@@ -56,8 +70,6 @@ _September 17, 2025_
 
 ![Fix](../assets/fix.svg) Resolved an intermittent issue where product recommendation units would disappear due to a JavaScript error when local storage data was unavailable. This fix ensures PREX no longer throws errors if `ds-view-history-time-decay` is missing in local storage.
 ![New](../assets/new.svg) Updated the CDN URLS for the `recommendations-sdk` to the `adobe.io` domain.
-
-### Previous versions
 
 ### 6.3.0 of magento/product-recommendations
 

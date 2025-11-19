@@ -47,7 +47,7 @@ _January 31, 2025_
 
 _September 19, 2024_
 
-![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+![New](../assets/new.svg) Beta release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](workspace.md#layered-search-and-expansion-of-search-types).
 
 _September 4, 2024_
 
@@ -91,6 +91,15 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.6.0
+
+_October 9, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) GA release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](workspace.md#layered-search-and-expansion-of-search-types).
+![Fix](../assets/fix.svg) The `ProductInterface` object in the [Live Search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) service has been deprecated. Use the `ProductView` object in the catalog service instead.
 
 ## [!DNL Live Search] 4.5.0
 
