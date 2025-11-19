@@ -4,6 +4,7 @@ user-guide-description: Documentation and resources for hosted services that pro
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Adobe Commerce Services Guides {#user-guides}
 
@@ -12,8 +13,6 @@ recommendations: noDisplay
    - [Release notes](/help/landing/release-notes-all.md)
 - [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
-   - [[!DNL Commerce as a Cloud Service]](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
-   - [[!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview)
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
