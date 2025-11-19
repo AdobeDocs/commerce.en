@@ -50,7 +50,7 @@ Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are comp
 
 ### Key differences
 
-|Feature|Success Metrics|Sites Optimizer (Opportunities)|
+|Aspect|Success Metrics|Sites Optimizer (Opportunities)|
 |---|---|---|
 |**Purpose**|Measures performance and outcomes|Identifies issues and provides recommendations|
 |**Type**|Analytical dashboard|Proactive issue detection|
