@@ -135,19 +135,9 @@ The following table compares platform capabilities and extensibility features to
             <td colspan="3" style="background:lightgray;"><strong>Commerce Admin customization</strong></td>
         </tr>
         <tr>
-            <td>Extensible core Admin screens</td>
-            <td>Complete layout and functionality customization</td>
-            <td>Preset filters, visibility controls</td>
-        </tr>
-        <tr>
-            <td>Extensible new Admin screens</td>
-            <td>Standard Admin UI integration and external app injection (Admin UI SDK)</td>
-            <td>External app injection (Admin UI SDK)</td>
-        </tr>
-        <tr>
-            <td>Customizable Admin theme</td>
-            <td>Extensible theming framework</td>
-            <td>No theming framework</td>
+            <td>Admin console extensibility</td>
+            <td>PHP customization and theming, App Builder extensibility (recommended)</td>
+            <td>App Builder extensibility</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Extensibility</strong></td>
