@@ -1,13 +1,11 @@
 ---
-title: ADL Commerce lab prerequisites
+title: Ratings extension tutorial prerequisites
 description: Learn the prerequisites for the ratings extension lab.
 role: Developer
-hide: yes
-hidefromtoc: yes
 ---
-# Adobe Developers Live - Adobe Commerce lab prerequisites
+# Ratings extension tutorial prerequisites
 
-This page lists the prerequisites and other manual setup steps for the [ratings extension lab](./workbook.md). The lab also contains a script that automates most of these steps.
+This page lists the prerequisites and other manual setup steps for the [ratings extension lab](./workbook.md). The tutorial also contains a script that automates most of these steps.
 
 ## Extension prerequisites
 
@@ -256,10 +254,7 @@ Edit the `.env` file and add the following values (we'll provide the actual URL 
 RAG_MODE=worker
 WORKER_RAG_URL=<provided-during-lab>
 ```
-
->[!NOTE]
->
->The actual value for `WORKER_RAG_URL` will be provided by the lab facilitator at the start of the session. -->
+ -->
 
 ### Enable MCP in Cursor
 
