@@ -2,6 +2,8 @@
 title: Ratings extension tutorial
 description: Learn how to build a product ratings extension for Adobe Commerce as a Cloud Service using App Builder and AI-assisted development tools.
 role: Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Ratings extension tutorial
 
@@ -27,65 +29,9 @@ git --version
 bash --version
 ```
 
-## Log in to the Adobe Developer Console
-
-1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
-1. If you are already logged in, click your profile icon in the top-right and click the **Sign out** button.
-1. Log in using your email and password.
-1. If you are prompted to add a secondary email address or phone number, click **Not now**.
-1. When you are prompted to select an organization profile, select **Adobe Commerce Labs**.
-
-   ![select-organization](./assets/select-org.png){width="600" zoomable="yes"}
-
-1. If you are prompted to accept the terms and conditions, click the link to read the terms, then click **Accept and continue**.
-
-   ![accept-terms](./assets/accept-terms.png){width="600" zoomable="yes"}
-
-## Run the setup script
-
-If the [prerequisites](#verify-prerequisites) are installed, and you have signed in to the Adobe Developer Console, download and run the setup script. Alternatively, you can manually setup the script by following the [prerequisites](workbook-prerequisites.md) steps.
-
-1. Clone the repository that contains the setup script:
-
-   ```bash
-   git clone https://github.com/adobe-commerce/commerce-adl-2025.git
-   ```
-
-   >[!NOTE]
-   >
-   >If the script fails, refer to the [prerequisites](workbook-prerequisites.md) and continue where the script encountered an error.
-
-1. Navigate into the repository:
-
-   ```bash
-   cd commerce-adl-2025
-   ```
-
-1. Run the setup script:
-
-   ```bash
-   bash adl-setup.sh
-   ```
-
-   While the script is running, you will be prompted to enter your username and password, which will be provided during the lab. Your username will reflect your location and seat number. For example, if you are in San Jose, CA, seat 123, your username will be `sjc-adl-123@adobeeventlab.com`.
-
-   Additionally, you should select the project that corresponds to your seat number and the **stage** workspace. Your project name will reflect your location and seat number. For example, if you are in San Jose, CA, seat 123, your project name will be `SJC ADL 123`.
-
 ## Extension development
 
 This section guides you through the process of developing a ratings extension for Adobe Commerce as a Cloud Service using AI-assisted development tools.
-
-1. Set up the AI-assisted development tools in the `extension` folder using the following commands:
-
-   ```bash
-   cd extension
-   ```
-
-   ```bash
-   aio commerce extensibility tools-setup
-   ```
-
-   ![Install AI tools](./assets/install-ai-tools.png){width="600" zoomable="yes"}
 
 1. At this point, all [!DNL Cursor] rules are installed in the `.cursor/rules` folder. You can find MCP tools in the **MCP Settings** in [!DNL Cursor]. Verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
 
@@ -104,7 +50,9 @@ This section guides you through the process of developing a ratings extension fo
 
    ```text
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
+
    Implement a REST API to handle GET ratings requests.
+   
    GET requests will have to support the following query parameters:
 
    sku -> product SKU
@@ -120,17 +68,18 @@ This section guides you through the process of developing a ratings extension fo
 
    ![Agent asks clarifying questions](./assets/agent-questions.png){width="600" zoomable="yes"}
 
-1. Use the following response to answer the agent's questions:
+1. Use the following response to answer the agent's questions and set up randomized ratings data:
 
    ```text
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
-   This extension will be called directly from the storefront,
-   no async invocation, such as events or webhooks, is required.
-   Let's start with just the GET API for now,
-   we will implement other CRUD operations at a later time.
-   We do not need a DB or storage mechanism right now,
-   just return random ratings data between 1 and 5 and a ratings count between 1 and 1000.
+
+   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+
+   Start with just the GET API for now, we will implement other CRUD operations at a later time.
+   
+   We do not need a DB or storage mechanism right now, just return random ratings data between 1 and 5 and a ratings count between 1 and 1000.
+   
    The API should only return the average rating for the product and the total number of ratings.
    We do not need to add tests right now.
    ```
@@ -213,15 +162,17 @@ cp RATINGS_API_CONTRACT.md ../storefront
 
 ## Connect to the storefront
 
-This section will help you implement real storefront features, showing you how to communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
+In this section, you will implement real storefront features, learning how to communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
 
 >[!NOTE]
 >
->The prompts provided are starting points, you should feel free to have a natural conversation with the agent. When working with AI-assisted development tools, there will be natural variations in the code and responses generated by the agent.
+>The prompts provided are starting points and while you can use them without modification, you should consider having a natural conversation with the agent.
 >
->If you encounter any issues with your code, you can always ask the agent to help you debug it..
+>When working with AI-assisted development tools, there are always natural variations in the code and responses generated by the agent.
+>
+>If you encounter any issues with your code, ask the agent to help you debug it.
 
-### Implement ratings stars and review count
+### Ratings stars and review count implementation
 
 1. Navigate to the `storefront` folder:
 
@@ -229,7 +180,7 @@ This section will help you implement real storefront features, showing you how t
    cd storefront
    ```
 
-1. Open the storefront folder in a new Cursor window. If you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, enter the following command in your terminal:
+1. Open the storefront folder in a new Cursor window. If you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, you can alternatively use the following command in your terminal:
 
    ```bash
    cursor .
@@ -247,31 +198,41 @@ This section will help you implement real storefront features, showing you how t
    http://localhost:3000/apparel
    ```
 
-1. Observe the boilerplate storefront UI layout.
+1. Observe the boilerplate storefront UI layout and note the lack of visual product ratings.
 
 1. Use the following prompt with your agent:
 
    ```text
-   Implement product ratings to the storefront.
+   Implement product ratings in the storefront.
+
    Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
+
    Use the dropin slot system where available.
 
-   Use the @RATINGS_API_CONTRACT.md to understand how to use the ratings api.
+   Use @RATINGS_API_CONTRACT.md to understand how to use the ratings API.
    ```
 
-   >[!NOTE]
-   >
-   >If you are prompted to start the local development server, inform the agent that it is already running.
+1. Observe the changes in the codebase, and watch the Apparel page for updates. You should see the following changes in your development environment and browser:
 
-1. Observe the changes in the codebase, and watch the Apparel page for updates.
-
-**Expected outcome:**
-
-* A product rating "component" is automatically created.
-* The component is integrated into product-details, product-list-page, and product-recommendations blocks using Slots.
-* Stars display with proper fill proportions based on mock rating values.
+   * A product rating "component" is automatically created.
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
+   * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](./assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+
+## Tutorial recap
+
+Throughout this tutorial, we have covered the following topics:
+
+* **Feature implementation**: How to describe new functionality to an AI agent.
+* **Iterative changes**: Making quick modifications to existing code.
+* **Complex UI components**: Building interactive features with visual references.
+* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
+* **Component reusability**: Creating shared components used across multiple blocks.
+
+## Next steps
+
+For further experimentation with this tutorial, you can use the following suggestions to further customize your ratings extension or create your own modifications:
 
 ### Change the star colors
 
@@ -287,21 +248,7 @@ The stars are changed to red.
 
 ![Red Star Colors](./assets/red-star-colors.png){width="600" zoomable="yes"}
 
-## Storefront recap
-
-Throughout this tutorial, we have covered the following topics:
-
-* **Feature implementation**: How to describe new functionality to an AI agent.
-* **Iterative changes**: Making quick modifications to existing code.
-* **Complex UI components**: Building interactive features with visual references.
-* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
-* **Component reusability**: Creating shared components used across multiple blocks.
-
-## Next steps
-
-If time allows, you can further customize your ratings extension by adding the following features:
-
-### Add rating distribution modal (optional)
+### Add rating distribution modal
 
 The following steps show how the agent handles complex UI features with visual references.
 
@@ -322,8 +269,7 @@ The following steps show how the agent handles complex UI features with visual r
    * Whether it uses appropriate HTML structure for accessibility
    * How it handles the positioning and interaction states
 
-**Troubleshooting:**
-
+#### Troubleshooting
 * If the modal does not appear, check the browser console for errors.
 * If positioning is off, you can ask the agent to:
 

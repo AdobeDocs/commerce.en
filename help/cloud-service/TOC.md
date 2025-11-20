@@ -20,7 +20,7 @@ recommendations: noDisplay, noCatalog
   - [Bulk Data Migration Tool](migration/bulk-data.md)
   - [Coding tools](migration/coding-tools.md)
 - Tutorials {#tutorials}
-  - [Ratings extension tutorial prerequisites](tutorials/ratings-prerequisites.md)
+  - [Ratings extension tutorial prerequisites](tutorials/tutorial-prerequisites.md)
   - [Ratings extension tutorial](tutorials/ratings-extension.md)
 - [Release notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

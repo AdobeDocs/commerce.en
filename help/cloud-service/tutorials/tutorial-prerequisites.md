@@ -2,10 +2,12 @@
 title: Ratings extension tutorial prerequisites
 description: Learn the prerequisites for the ratings extension lab.
 role: Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Ratings extension tutorial prerequisites
 
-This page lists the prerequisites and other manual setup steps for the [ratings extension lab](./workbook.md). The tutorial also contains a script that automates most of these steps.
+This page lists the generic prerequisites and other manual setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service] and your storefront, such as the [ratings extension tutorial](./ratings-extension.md).
 
 ## Extension prerequisites
 
@@ -61,6 +63,20 @@ Before you begin, complete the following prerequisites:
 1. Repeat the previous steps until all APIs are added to the workspace.
 
    ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"} -->
+
+### Log in to the Adobe Developer Console
+
+1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
+1. If you are already logged in, click your profile icon in the top-right and click the **Sign out** button.
+1. Log in using your email and password.
+1. If you are prompted to add a secondary email address or phone number, click **Not now**.
+1. When you are prompted to select an organization profile, select **Adobe Commerce Labs**.
+
+   ![select-organization](./assets/select-org.png){width="600" zoomable="yes"}
+
+1. If you are prompted to accept the terms and conditions, click the link to read the terms, then click **Accept and continue**.
+
+   ![accept-terms](./assets/accept-terms.png){width="600" zoomable="yes"}
 
 ### Configure the AIO CLI
 
@@ -167,6 +183,20 @@ aio app use workspace.json -m
 ```
 
 ![Connect to workspace](./assets/connect-workspace.png){width="600" zoomable="yes"}
+
+### Install extensibility AI tools
+
+1. Set up the AI-assisted development tools in the `extension` folder using the following commands:
+
+   ```bash
+   cd extension
+   ```
+
+   ```bash
+   aio commerce extensibility tools-setup
+   ```
+
+   ![Install AI tools](./assets/install-ai-tools.png){width="600" zoomable="yes"}
 
 ## Storefront prerequisites
 
@@ -301,17 +331,3 @@ Check that the MCP server is running correctly:
 If the MCP server is working, you should see relevant documentation results.
 
 ![MCP Connection Verified](./assets/mcp-connection-verified.png){width="600" zoomable="yes"}
-
-### Start the development server
-
-Start the local development server:
-
-```bash
-npm run start
-```
-
-The development server will start at `http://localhost:3000`.
-
-Navigate to the apparel page at `http://localhost:3000/apparel`.
-
-![Development Server Running](./assets/development-server-running.png){width="600" zoomable="yes"}
