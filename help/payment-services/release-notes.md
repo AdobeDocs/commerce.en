@@ -416,7 +416,7 @@ _August 30, 2023_
 
 ![New](../assets/new.svg)<!-- PAY-4002 --> Improved the user experience of credit card fields checkout, including styling enhancements such as adding payment icons, to lower shopper cognitive load and increase conversions.
 
-![New](../assets/new.svg)<!-- PAY-4002 --> Added functionality to allow merchants to [sort the order of their payment options](settings.md#payment-buttons) to prioritize certain payment options. This functionality encourages a higher checkout conversation rate.
+![New](../assets/new.svg)<!-- PAY-4002 --> Added functionality to allow merchants to [sort the order of their payment options](configure-admin.md#paypal-payment-buttons) to prioritize certain payment options. This functionality encourages a higher checkout conversation rate.
 
 ![New](../assets/new.svg)<!-- PAY-4035 --> Merchants can now efficiently monitor the health of their stores and identify any transaction issues using the new [Transactions report](reporting.md#transactions-report-view) available from the[!DNL Payment Services] Admin home page. The report presents data about transaction authorization rates and negative transaction trends as well.
 
@@ -526,7 +526,7 @@ _September 30, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] now includes the ability to set up a merchant account to [use multiple PayPal business accounts](settings.md#use-multiple-paypal-accounts). This enables the merchant to operate your stores in multiple countries using different currencies, or to use Adobe Commerce for a portion of your business.
+![New](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] now includes the ability to set up a merchant account to [use multiple PayPal business accounts](configure-admin.md#use-multiple-paypal-accounts). This enables the merchant to operate your stores in multiple countries using different currencies, or to use Adobe Commerce for a portion of your business.
 
 ![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](configure-admin.md) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
 
