@@ -80,6 +80,34 @@ Store owners can set up the following types of ranking strategies:
 
 Select the type of strategy for the rule. The **Test your rule** window displays the expected results.
 
+#### How intelligent ranking scoring works
+
+Intelligent ranking determines the final product order by combining two key factors: **textual relevance** and **behavioral signals**. Understanding how these factors interact helps you set realistic expectations for your search results.
+
+**Scoring components:**
+
+- **Textual relevance**: The dominant factor in scoring. This measures how well a product's name, description, and attributes match the search query. The text relevance score is unbounded (has no specific upper limit) and is influenced by factors like:
+   - Number of matching words.
+   - Length of product names/descriptions.
+   - Exact matches versus partial matches.
+   - Position of matching words.
+
+- **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a fixed boost to their scores. However, this boost has a defined limit.
+
+**Why the most viewed product might not appear first:**
+
+Because textual relevance is unbounded and behavioral boosts are fixed, products with strong text matches often outrank products with higher behavioral signals. The behavioral boost may not be large enough to overcome significant differences in text relevance scores. Intelligent ranking improves relevance by considering both what products match the search and which products shoppers engage with most, but text match quality remains the primary ranking factor.
+
+**Example:**
+
+A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512, which has the highest view count, to appear at the top of results. However, other products rank higher:
+
+- **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
+
+- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. The fixed behavioral boost is not enough to overcome this text relevance gap.
+
+See [search rules](./best-practice.md#tips-to-optimize-search-rules) to learn how to improve product findability using rules.
+
 #### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
