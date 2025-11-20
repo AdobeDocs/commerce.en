@@ -430,7 +430,7 @@ _June 9, 2023_
 
 ![New](../assets/new.svg)<!-- Issue xxx --> Added [availability in the following countries and associated currencies](introduction.md#availability): Australia, France, United Kingdom.
 
-![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](configure-admin#configure-roles) to ensure Admin users can create and manage orders for customers and can see[!DNL Payment Services] in the Sales menu.
+![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](configure-admin.md#configure-roles) to ensure Admin users can create and manage orders for customers and can see[!DNL Payment Services] in the Sales menu.
 
 ![New](../assets/new.svg)<!-- Issue PAY-4236 --> Added [auto-voiding for orders that incur errors during checkout](checkout.md#order-auto-voided-if-error).
 
