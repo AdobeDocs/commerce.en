@@ -11,11 +11,7 @@ The **Opportunities** page helps you identify and implement optimizations to imp
 
 ## What are Opportunities?
 
-Opportunities are AI-powered recommendations that help merchandisers identify and address issues impacting your commerce site performance. These recommendations are powered by [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), a cloud-based service that analyzes and improves website performance.
-
-## How Sites Optimizer works with Commerce Optimizer
-
-Commerce Optimizer enhances product discovery and catalog business efficiency, while Sites Optimizer boosts SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support. To learn how you can take advantage of these two technologies to improve your storefront performance and experience, see [Using Success Metrics and Sites Optimizer together](./success-metrics.md#using-success-metrics-and-sites-optimizer-together).
+[Opportunities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) are AI-powered recommendations that help merchandisers identify and address issues impacting their commerce site performance. These recommendations are powered by [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), a cloud-based service that analyzes and improves website performance.
 
 ## Key capabilities
 
@@ -23,6 +19,30 @@ Commerce Optimizer enhances product discovery and catalog business efficiency, w
 - **AI-driven recommendations**—Receive intelligent suggestions to resolve detected issues.
 - **Impact categorization**—Issues are categorized by business impact (Search, Recommendations, Browse/Navigation, Product Data Quality).
 - **Dashboard reporting**—View issue trends, top impacted products/queries, and improvements over time.
+
+## Get started
+
+To enable Opportunities in Commerce Optimizer, contact your customer success manager (CSM). Opportunites are available with the Ultimate subscription.
+
+## Quick tour
+
+There are three tabs:
+
+- CURRENT (ACTIVE) - Describe
+- IGNORED - Describe
+- OPTIMIZED (DONE) - Describe
+
+## Auto detect workflow
+
+
+## Auto fix workflow
+
+
+Include note about static status behavior and EDS requirements
+
+## How Sites Optimizer works with Commerce Optimizer
+
+Commerce Optimizer enhances product discovery and catalog business efficiency, while Sites Optimizer boosts SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support. To learn how you can take advantage of these two technologies to improve your storefront performance and experience, see [Using Success Metrics and Sites Optimizer together](./success-metrics.md#using-success-metrics-and-sites-optimizer-together).
 
 ## Learn more about Sites Optimizer
 
