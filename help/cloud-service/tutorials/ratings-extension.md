@@ -22,12 +22,14 @@ node --version
 # Check npm version (should be 9.0.0 or higher)
 npm --version
 
-# Check Git
+# Check Git installation
 git --version
 
-# Check Bash
+# Check Bash shell installation
 bash --version
 ```
+
+If any of the preceding commands do not return the expected results, refer to the [prerequisites](tutorial-prerequisites.md) page.
 
 ## Extension development
 

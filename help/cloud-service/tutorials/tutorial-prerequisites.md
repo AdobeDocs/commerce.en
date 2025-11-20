@@ -7,11 +7,9 @@ hidefromtoc: yes
 ---
 # Ratings extension tutorial prerequisites
 
-This page lists the generic prerequisites and other manual setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service] and your storefront, such as the [ratings extension tutorial](./ratings-extension.md).
+This page lists the generic prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service] and your storefront, such as the [ratings extension tutorial](./ratings-extension.md).
 
-## Extension prerequisites
-
-Before you begin, complete the following prerequisites:
+## Adobe Commerce as a Cloud Service prerequisites
 
 * Install the [!DNL Adobe I/O CLI]
 
@@ -25,9 +23,14 @@ Before you begin, complete the following prerequisites:
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
   ```
 
-* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in this tutorial.
-<!-- 
-### Create a new project on Adobe Developer Console
+* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorials.
+
+### Adobe Developer Console prerequisites
+
+1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
+1. Log in using your email and password.
+
+#### Create a new project
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
 1. Click [!UICONTROL **Create project from a template**].
@@ -39,7 +42,7 @@ Before you begin, complete the following prerequisites:
 
 1. Click **Save**.
 
-### Add APIs to the workspace
+#### Add APIs to the workspace
 
 1. Click the [!UICONTROL **Stage**] workspace and then repeat the following steps for each API.
 
@@ -62,23 +65,9 @@ Before you begin, complete the following prerequisites:
 
 1. Repeat the previous steps until all APIs are added to the workspace.
 
-   ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"} -->
+   ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"}
 
-### Log in to the Adobe Developer Console
-
-1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
-1. If you are already logged in, click your profile icon in the top-right and click the **Sign out** button.
-1. Log in using your email and password.
-1. If you are prompted to add a secondary email address or phone number, click **Not now**.
-1. When you are prompted to select an organization profile, select **Adobe Commerce Labs**.
-
-   ![select-organization](./assets/select-org.png){width="600" zoomable="yes"}
-
-1. If you are prompted to accept the terms and conditions, click the link to read the terms, then click **Accept and continue**.
-
-   ![accept-terms](./assets/accept-terms.png){width="600" zoomable="yes"}
-
-### Configure the AIO CLI
+### Configure the Adobe I/O CLI
 
 1. Clear the existing configuration:
 
@@ -108,7 +97,7 @@ Before you begin, complete the following prerequisites:
 
    ![CLI configuration](./assets/cli-configuration.png){width="600" zoomable="yes"}
 
-### Clone integration starter kit
+### Clone the integration starter kit
 
 Clone the Commerce integration starter kit repository and prepare your project:
 
@@ -119,7 +108,7 @@ cd extension
 
 ![Clone starter kit](./assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
-### Create the .env file
+### Create an .env file
 
 Create your environment configuration file:
 
@@ -127,7 +116,7 @@ Create your environment configuration file:
 cp env.dist .env
 ```
 
-<!-- Open the `.env` file in a text editor and add the following OAuth credentials:
+Open the `.env` file in a text editor and add the following OAuth credentials:
 
 ```text
 OAUTH_CLIENT_ID=
@@ -152,8 +141,8 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 To find these values:
 
-1. Go to [Commerce Cloud Service instances](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
-1. Click the information icon next to your assigned seat.
+1. Navigate to [Commerce Cloud Service instances](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
+1. Click the information icon next to your instance.
 1. Copy the REST endpoint as `COMMERCE_BASE_URL`.
 1. Copy the GraphQL Endpoint as `COMMERCE_GRAPHQL_ENDPOINT`.
 
@@ -164,7 +153,6 @@ Set a temporary value for the event prefix:
 ```text
 EVENT_PREFIX=test
 ```
- -->
 
 ### Download workspace configuration
 
