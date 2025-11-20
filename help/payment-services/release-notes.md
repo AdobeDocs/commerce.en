@@ -166,7 +166,7 @@ _March 13, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 
-![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] allows merchants to manage payment settings to maximize flexibility in their business. This version improves the ability to attach [multiple PayPal accounts](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) for the regions and brands a merchant supports. Our sales team can provide an onboarding link to set up your website and store view scopes.
+![New](../assets/new.svg)<!-- PAY-5938 --> Now, [!DNL Payment Services] allows merchants to manage payment settings to maximize flexibility in their business. This version improves the ability to attach [multiple PayPal accounts](configure-admin.md#use-multiple-paypal-accounts) for the regions and brands a merchant supports. Our sales team can provide an onboarding link to set up your website and store view scopes.
 
 ![New](../assets/new.svg)<!-- PAY-5968 --> Now, [!DNL Payment Services] updates the Admin configuration with **PayPal Merchant ID** and **PayPal Merchant Status** values. These values provide merchants with better visibility into their PayPal account status.
 
@@ -430,7 +430,7 @@ _June 9, 2023_
 
 ![New](../assets/new.svg)<!-- Issue xxx --> Added [availability in the following countries and associated currencies](introduction.md#availability): Australia, France, United Kingdom.
 
-![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](settings.md#configure-roles) to ensure Admin users can create and manage orders for customers and can see[!DNL Payment Services] in the Sales menu.
+![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](configure-admin#configure-roles) to ensure Admin users can create and manage orders for customers and can see[!DNL Payment Services] in the Sales menu.
 
 ![New](../assets/new.svg)<!-- Issue PAY-4236 --> Added [auto-voiding for orders that incur errors during checkout](checkout.md#order-auto-voided-if-error).
 
@@ -528,9 +528,9 @@ _September 30, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] now includes the ability to set up a merchant account to [use multiple PayPal business accounts](settings.md#use-multiple-paypal-accounts). This enables the merchant to operate your stores in multiple countries using different currencies, or to use Adobe Commerce for a portion of your business.
 
-![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](settings.md#add-soft-descriptor) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
+![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](configure-admin.md) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
 
-![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal payment buttons](settings.md#configure-payment-options) for checkout in[!DNL Payment Services] settings.
+![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal payment buttons](configure-admin.md#paypal-payment-buttons) for checkout in[!DNL Payment Services] settings.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3546 --> When a customer clicks **[!UICONTROL Edit cart]**, the page redirects to the cart page and shows the updated items instead of showing an empty cart.
 
