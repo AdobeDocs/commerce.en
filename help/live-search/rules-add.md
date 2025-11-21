@@ -92,10 +92,9 @@ Intelligent ranking determines the final product order by combining two key fact
 **Scoring components:**
 
 * **Textual relevance**: The dominant factor in scoring. This measures how well a product's name, description, and attributes match the search query. The text relevance score is unbounded (has no specific upper limit) and is influenced by factors like:
-   * Number of matching words.
-   * Length of product names/descriptions.
-   * Exact matches versus partial matches.
-   * Position of matching words.
+
+   * Frequency of occurrence of matching words.
+   * Length  (in words) of product names/descriptions.
 
 * **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a fixed boost to their scores. However, this boost has a defined limit.
 
