@@ -41,3 +41,4 @@ The following provides boundaries and limits for [!DNL Adobe Commerce Optimizer]
 
 - There is no support for category or attribute inclusions or exclusions.
 - You cannot preview recommendations in [!DNL Adobe Commerce Optimizer].
+- You can create up to 50 active recommendation units.
