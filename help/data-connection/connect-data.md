@@ -55,15 +55,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. In the Commerce Admin, navigate to **Stores** > Settings > **Configuration** > **Services** > **[!DNL Data Connection]**.
 
-1. Select the server-to-server authorization method that you implemented from the **Adobe Developer Authorization Type** menu. Adobe recommends using OAuth. JWT has been deprecated. [Learn more](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
-
-1. (JWT only) Copy and paste the contents of your `private.key` file into the **Client Secret** field. Use the following command to copy the contents.
-
-   ```bash
-   cat config/private.key | pbcopy
-   ```
-
-   See [Service Account (JWT) Authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) for more information about the `private.key` file.
+1. Select the server-to-server authorization method that you implemented from the **Adobe Developer Authorization Type** menu. Adobe recommends using OAuth. [Learn more](https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server/).
 
 1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** fields, such as `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"`, and so on.
 
