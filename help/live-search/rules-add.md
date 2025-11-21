@@ -100,11 +100,11 @@ Intelligent ranking determines the final product order by combining two key fact
 
 **Why the most viewed product might not appear first:**
 
-Because textual relevance is unbounded and behavioral boosts are fixed, products with strong text matches often outrank products with higher behavioral signals. The behavioral boost may not be large enough to overcome significant differences in text relevance scores. Intelligent ranking improves relevance by considering both what products match the search and which products shoppers engage with most, but text match quality remains the primary ranking factor.
+Textual relevance typically dominates ranking because its score is unbounded, while behavioral boosts are fixed. As a result, products with strong text matches often outrank those with higher engagement signals. Behavioral boosts alone may not compensate for large gaps in text relevance. Intelligent ranking addresses this by factoring in both match quality and shopper interaction, improving overall relevance. However, text match quality remains the primary driver of ranking.
 
 **Example:**
 
-A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512, which has the highest view count, to appear at the top of results. However, other products rank higher:
+A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
 
 * **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
 
