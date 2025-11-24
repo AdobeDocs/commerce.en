@@ -12,7 +12,7 @@ The following provides boundaries and limits for [!DNL Adobe Commerce Optimizer]
 ## Catalog
 
 - The guaranteed rate of catalog ingestion is: 1,000 products/minute and 5,000 prices/minute.
-- The base number of product updates per day is 1,000,000.
+- The base number of product updates per day is 100,000.
 - The total number of SKUs allowed in a single instance is 250,000. 
 - The maximum number of catalog sources is 50.
 - The number of variants per product is 10,000.
