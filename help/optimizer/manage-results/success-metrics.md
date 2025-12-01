@@ -127,6 +127,10 @@ For revenue, your goal is to increase total sales and average order value.
 
 **How it's calculated:** Revenue is the sum of all completed orders (base price × quantity) for all products sold during the reporting period. The calculation uses data from `place-order` events captured on your storefront.
 
+>[!IMPORTANT]
+>
+>Revenue calculations exclude canceled orders, returns, and orders where the `place-order` event was not captured. Events may be missing due to consent settings, browser issues (ad blockers, script failures), or technical processing errors. 
+
 **Formula:**
 
 ```
