@@ -41,7 +41,7 @@ This section guides you through the process of developing a ratings extension fo
 
 1. At this point, all [!DNL Cursor] rules are installed in the `.cursor/rules` folder. You can find MCP tools in the **MCP Settings** in [!DNL Cursor]. Verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
 
-   ![Cursor settings](./assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Cursor settings](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -50,7 +50,7 @@ This section guides you through the process of developing a ratings extension fo
 
 1. If you have any documentation added to Cursor's context, you will need to disable it. Navigate to [!UICONTROL **Cursor**] > [!UICONTROL **Settings**] > [!UICONTROL **Cursor Settings**] > [!UICONTROL **Indexing & Docs**] and delete any documentation listed.
 
-   ![Disable documentation](./assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![Disable documentation](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Generate code for a product ratings extension by opening the chat window in Cursor. Select the **Agent** mode and enter the following prompt:
 
@@ -68,11 +68,11 @@ This section guides you through the process of developing a ratings extension fo
    >
    >If the agent requests to search the documentation, allow it.
 
-   ![Enter prompt in Cursor](./assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![Enter prompt in Cursor](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
 1. The agent researches the requirements and asks clarifying questions. Answer the agent's questions precisely to help it generate the best code.
 
-   ![Agent asks clarifying questions](./assets/agent-questions.png){width="600" zoomable="yes"}
+   ![Agent asks clarifying questions](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. Use the following response to answer the agent's questions and set up randomized ratings data:
 
@@ -92,17 +92,17 @@ This section guides you through the process of developing a ratings extension fo
 
    The agent creates a `requirements.md` file that serves as the source of truth for the implementation.
 
-   ![Requirements file created](./assets/requirements-file.png){width="600" zoomable="yes"}
+   ![Requirements file created](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. Review the `requirements.md` file and verify the plan. If everything looks correct, instruct the agent to move to **Phase 2 - Architecture Planning**.
 1. Review the architecture plan.
 1. Instruct the agent to proceed with code generation. The agent generates the necessary code and provides a detailed summary with your next steps.
 
-   ![Architecture planning](./assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![Architecture planning](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![Code generation summary](./assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![Code generation summary](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![Next steps](./assets/next-steps.png){width="600" zoomable="yes"}
+   ![Next steps](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### Local testing
 
@@ -114,9 +114,9 @@ This section guides you through the process of developing a ratings extension fo
 
 1. Follow the agent's instructions and confirm that the API is working locally.
 
-   ![Local testing](./assets/local-testing.png){width="600" zoomable="yes"}
+   ![Local testing](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![Local testing results](./assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![Local testing results](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Deploy the extension
 
@@ -128,17 +128,17 @@ This section guides you through the process of developing a ratings extension fo
 
    The agent performs a pre-deployment readiness assessment before deploying.
 
-   ![Pre-deployment assessment](./assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![Pre-deployment assessment](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. When you are confident with the assessment results, instruct the agent to proceed with deployment. The agent uses the MCP toolkit to verify, build, and deploy automatically.
 
-   ![Deployment](./assets/deployment-process.png){width="600" zoomable="yes"}
+   ![Deployment](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Post deployment
 
 You can test the API before integrating it into the storefront. The agent should provide the location of the new action and a testing strategy.
 
-![Testing strategy](./assets/testing-strategy.png){width="600" zoomable="yes"}
+![Testing strategy](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 You can also test the API manually using cURL in a terminal:
 
@@ -146,7 +146,7 @@ You can also test the API manually using cURL in a terminal:
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL test](./assets/curl-test.png){width="600" zoomable="yes"}
+![cURL test](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Integrate with Edge Delivery Services
 
@@ -156,9 +156,9 @@ To integrate the ratings API with an [!DNL Adobe Commerce] storefront powered by
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![Service contract](./assets/create-contract.png){width="600" zoomable="yes"}
+![Service contract](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![Service contract details](./assets/contract.png){width="600" zoomable="yes"}
+![Service contract details](../assets/contract.png){width="600" zoomable="yes"}
 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -224,7 +224,7 @@ In this section, you will implement real storefront features, learning how to co
    * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
-![Product Ratings Implementation](./assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
 
 ## Tutorial recap
 
@@ -252,7 +252,7 @@ Change the star fill color to red.
 
 The stars are changed to red.
 
-![Red Star Colors](./assets/red-star-colors.png){width="600" zoomable="yes"}
+![Red Star Colors](../assets/red-star-colors.png){width="600" zoomable="yes"}
 
 ### Add rating distribution modal
 
@@ -260,7 +260,7 @@ The following steps show how the agent handles complex UI features with visual r
 
 1. **Before starting:** Save the following mock image and paste it into the chat with your storefront agent.
 
-   ![Rating Distribution Mockup](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+   ![Rating Distribution Mockup](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
 1. Use the following steps to guide you through creating the ratings distribution modal based on the reference image:
 
@@ -284,4 +284,4 @@ The following steps show how the agent handles complex UI features with visual r
    adjust the modal position to be...
    ```
 
-![Rating Distribution Modal](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}
+![Rating Distribution Modal](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}

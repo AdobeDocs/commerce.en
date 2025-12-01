@@ -42,7 +42,7 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
 1. Enter a [!UICONTROL **Project Title**] and [!UICONTROL **App Name**].
 1. Ensure the **[!UICONTROL Include Runtime]** checkbox is marked.
 
-   ![Create project with App Builder template](./assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![Create project with App Builder template](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
 1. Click **Save**.
 
@@ -50,7 +50,7 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
 
 1. Click the [!UICONTROL **Stage**] workspace and then repeat the following steps for each API.
 
-   ![APIs added to workspace](./assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![APIs added to workspace](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Add Service**] and select [!UICONTROL **API**].
 
@@ -68,7 +68,7 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
 
 1. Repeat the previous steps until all APIs are added to the workspace.
 
-   ![APIs added to workspace](./assets/apis-added.png){width="600" zoomable="yes"}
+   ![APIs added to workspace](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Configure the Adobe I/O CLI
 
@@ -98,7 +98,7 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
    aio console workspace select
    ```
 
-   ![CLI configuration](./assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![CLI configuration](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### Clone the integration starter kit
 
@@ -109,7 +109,7 @@ git clone --branch adl https://github.com/adobe/commerce-integration-starter-kit
 cd extension
 ```
 
-![Clone starter kit](./assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![Clone starter kit](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### Create an .env file
 
@@ -131,7 +131,7 @@ OAUTH_ORG_ID=
 
 You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
 
-![OAuth credentials](./assets/oauth-credentials.png){width="600" zoomable="yes"}
+![OAuth credentials](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Add the Commerce configuration
 
@@ -173,7 +173,7 @@ Link your local project to the remote workspace:
 aio app use workspace.json -m
 ```
 
-![Connect to workspace](./assets/connect-workspace.png){width="600" zoomable="yes"}
+![Connect to workspace](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### Install extensibility AI tools
 
@@ -187,7 +187,7 @@ aio app use workspace.json -m
    aio commerce extensibility tools-setup
    ```
 
-   ![Install AI tools](./assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![Install AI tools](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 
 ## Storefront prerequisites
 
@@ -281,7 +281,7 @@ The Model Context Protocol (MCP) server provides AI agents with access to [!DNL 
 
 #### Open Cursor MCP settings
 
-![Open Cursor MCP Settings](./assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
+![Open Cursor MCP Settings](../assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
 
 1. Open [!DNL Cursor].
 1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**.
@@ -296,7 +296,7 @@ Verify the MCP configuration:
 
 The configuration should look similar to this:
 
-![MCP Configuration](./assets/mcp-configuration.png){width="600" zoomable="yes"}
+![MCP Configuration](../assets/mcp-configuration.png){width="600" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -323,6 +323,6 @@ Check that the MCP server is running correctly:
 
 If the MCP server is working, you should see relevant documentation results.
 
-![MCP Connection Verified](./assets/mcp-connection-verified.png){width="600" zoomable="yes"}
+![MCP Connection Verified](../assets/mcp-connection-verified.png){width="600" zoomable="yes"}
 
 If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
