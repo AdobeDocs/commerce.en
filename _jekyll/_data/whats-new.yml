@@ -2,8 +2,32 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 14 16:06:46 2025
+updated: Fri Nov 21 15:41:03 2025
 entries:
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for the November Adobe Commerce as a Cloud Service release.
+  versions: ''
+  type: major-update
+  date: November 20, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/230
+  merge_commit: 136235c9291b54a93582c45311b76fb93269e693
+  contributor: jhoover
+  membership:
+  labels:
+  - major-update
+- description: Documented how Commerce Optimizer customers connecting to an Adobe
+    Commerce backend can monitor and troubleshoot data feed exports from the Feed
+    Sync status page. See [Data Sync](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)
+    in the Adobe Commerce Optimizer Guide.
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/314
+  merge_commit: 9a9e07a66c822c97c01f5ff76551684fb99eb01e
+  contributor: meker
+  membership:
+  labels:
+  - technical
 - description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
     for the Payment Services v2.13.0 release.
   versions: ''
