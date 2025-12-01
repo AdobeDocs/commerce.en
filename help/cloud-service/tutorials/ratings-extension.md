@@ -276,8 +276,9 @@ The following steps show how the agent handles complex UI features with visual r
    * How it handles the positioning and interaction states
 
 #### Troubleshooting
+
 * If the modal does not appear, check the browser console for errors.
-* If positioning is off, you can ask the agent to:
+* If positioning is off, you can ask the agent to fix it using the following format:
 
    ```text
    adjust the modal position to be...
