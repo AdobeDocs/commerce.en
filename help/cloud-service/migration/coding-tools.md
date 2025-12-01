@@ -100,6 +100,16 @@ Using the AI coding tools provides the following benefits:
      * MCP Configuration: `.vscode/mcp.json`
      * Rules Directory: `.github/copilot-instructions.md`
 
+>[!NOTE]
+>
+>Before deploying your project, you will need to complete the following configuration tasks:
+>
+>* Log in to [Adobe Developer Console](https://developer.adobe.com/console) using the Adobe I/O CLI.
+>* Create an App Builder project (see [Project setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Set up environment variables in an `.env` file.
+>
+>You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) for detailed configuration instructions.
+
 ## Post-installation configuration
 
 ### Cursor
