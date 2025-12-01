@@ -5,7 +5,11 @@ role: Developer
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension tutorial
+# Ratings extension tutorial (Beta)
+
+>[!NOTE]
+>
+>The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
 
 This tutorial guides you through building a product ratings extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools.
 

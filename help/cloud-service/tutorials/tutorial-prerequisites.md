@@ -5,7 +5,11 @@ role: Developer
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension tutorial prerequisites
+# Ratings extension tutorial prerequisites (Beta)
+
+>[!NOTE]
+>
+>The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
 
 This page lists the generic prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service] and your storefront, such as the [ratings extension tutorial](./ratings-extension.md).
 
@@ -23,7 +27,7 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
   ```
 
-* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorials.
+* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
 
 ### Adobe Developer Console prerequisites
 
@@ -50,14 +54,13 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
 
 1. Click [!UICONTROL **Add Service**] and select [!UICONTROL **API**].
 
-1. Select the [!UICONTROL **Adobe Services**] filter and select one of the following APIs:
+1. Select one of the following APIs. You will need to repeat this process for each API listed below:
 
-   * [!UICONTROL **I/O Management API**]
-   * [!UICONTROL **I/O Events**]
-
-1. Select the [!UICONTROL **Experience Cloud**] filter and select one of the following APIs:
-
-   * [!UICONTROL **Adobe I/O Events for Adobe Commerce**]
+   * [!UICONTROL **Adobe Services**] filter:
+      * [!UICONTROL **I/O Management API**]
+      * [!UICONTROL **I/O Events**] API
+   * [!UICONTROL **Experience Cloud**] filter:
+      * [!UICONTROL **Adobe I/O Events for Adobe Commerce**] API
 
 1. Click [!UICONTROL **Next**].
 
@@ -69,13 +72,13 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
 
 ### Configure the Adobe I/O CLI
 
-1. Clear the existing configuration:
+1. Clear any existing configuration:
 
    ```bash
    aio config clear
    ```
 
-   Log in using the AIO CLI:
+   Log in using the [!DNL Adobe I/O CLI]:
 
    ```bash
    aio auth login -f
@@ -144,7 +147,7 @@ To find these values:
 1. Navigate to [Commerce Cloud Service instances](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
 1. Click the information icon next to your instance.
 1. Copy the REST endpoint as `COMMERCE_BASE_URL`.
-1. Copy the GraphQL Endpoint as `COMMERCE_GRAPHQL_ENDPOINT`.
+1. Copy the GraphQL endpoint as `COMMERCE_GRAPHQL_ENDPOINT`.
 
 #### Set event prefix
 
@@ -188,8 +191,8 @@ aio app use workspace.json -m
 
 ## Storefront prerequisites
 
-The following items are required to complete the [storefront](#connect-to-the-storefront) section of this tutorial and see the product ratings in your store.
-<!-- 
+The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and see the product ratings in your store.
+
 * Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
 
    ```bash
@@ -205,16 +208,15 @@ The following items are required to complete the [storefront](#connect-to-the-st
 
 * Bash shell
   * macOS/Linux: No installation required
-  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
+  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront -->
+* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
 
 ### Get the project files
 
-You can obtain the project files in one of two ways:
+You can obtain the project files using one of the following methods:
 
-<!-- 
-#### Option A: Clone the repository (recommended) -->
+#### Option A: Clone the repository (recommended)
 
 If you have [!DNL Git] installed, open your terminal and clone the repository:
 
@@ -223,9 +225,9 @@ git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-comme
 cd storefront
 ```
 
-<!-- #### Option B: Download the zip file
+#### Option B: Download the zip file
 
-If you don't have [!DNL Git] installed:
+If you do not have [!DNL Git] installed:
 
 1. Download the project zip file from: [https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip](https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip)
 1. Extract the zip file to a folder on your machine.
@@ -233,7 +235,7 @@ If you don't have [!DNL Git] installed:
 
    ```bash
    cd path/to/aem-boilerplate-commerce-agentic-dev
-   ``` -->
+   ```
 
 ### Install root dependencies
 
@@ -255,24 +257,23 @@ npm install
 cd ..
 ```
 
-<!-- ### Configure environment variables
+### Configure environment variables
 
 The MCP server requires certain environment variables to connect to the RAG service.
 
-Create a `.env` file in the `mcp-server` directory:
+Create an `.env` file in the `mcp-server` directory:
 
 ```bash
 cd mcp-server
 cp env.example .env
 ```
 
-Edit the `.env` file and add the following values (we'll provide the actual URL during the lab):
+Edit the `.env` file and add the following values:
 
 ```env
 RAG_MODE=worker
-WORKER_RAG_URL=<provided-during-lab>
+WORKER_RAG_URL=
 ```
- -->
 
 ### Enable MCP in Cursor
 
@@ -282,8 +283,8 @@ The Model Context Protocol (MCP) server provides AI agents with access to [!DNL 
 
 ![Open Cursor MCP Settings](./assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
 
-1. Open [!DNL Cursor]
-1. Go to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**
+1. Open [!DNL Cursor].
+1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**.
 
 #### Enable and configure MCP features
 
@@ -305,17 +306,23 @@ The configuration should look similar to this:
 
 After enabling MCP and configuring the server:
 
-1. Quit [!DNL Cursor] completely
-1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project
+1. Quit [!DNL Cursor] completely.
+1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project.
 
 #### Verify MCP connection
 
 Check that the MCP server is running correctly:
 
-1. Open a new chat in [!DNL Cursor]
-1. Look for an indicator showing the MCP server is connected (usually in the chat interface)
-1. Try asking a question like: "Search the storefront docs for information about slots"
+1. Open a new chat in [!DNL Cursor].
+1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
+1. Try entering a prompt like the following:
+
+   ```text
+   Search the storefront docs for information about slots
+   ```
 
 If the MCP server is working, you should see relevant documentation results.
 
 ![MCP Connection Verified](./assets/mcp-connection-verified.png){width="600" zoomable="yes"}
+
+If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
