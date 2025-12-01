@@ -13,7 +13,7 @@ hidefromtoc: yes
 
 This tutorial guides you through building a product ratings extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools.
 
-Before you begin, complete the [prerequisites](ratings-prerequisites.md).
+Before you begin, complete the [prerequisites](./tutorial-prerequisites.md).
 
 ## Verify prerequisites
 
