@@ -100,17 +100,34 @@ Using the AI coding tools provides the following benefits:
      * MCP Configuration: `.vscode/mcp.json`
      * Rules Directory: `.github/copilot-instructions.md`
 
+## Post-installation configuration
+
+### Log in to the [!DNL Adobe I/O CLI]
+
+After installing the [!DNL Adobe I/O CLI], you need to log in any time you want to use the MCP server.
+
+```bash
+aio auth login
+```
+
+To verify you are logged in, run the following command:
+
+```bash
+aio where
+```
+
+If you encounter issues, try logging out and logging back in:
+
+```bash
+aio auth logout
+aio auth login
+```
+
 >[!NOTE]
 >
->Before deploying your project, you will need to complete the following configuration tasks:
+>Some features of the MCP server will work without logging in, but the RAG service that contains the Adobe Commerce documentation will not work.
 >
->* Log in to [Adobe Developer Console](https://developer.adobe.com/console) using the Adobe I/O CLI.
->* Create an App Builder project (see [Project setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
->* Set up environment variables in an `.env` file.
->
->You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) for detailed configuration instructions.
-
-## Post-installation configuration
+>In a future release, the RAG service will be accessible independently without the need to install other tools.
 
 ### Cursor
 
@@ -183,6 +200,14 @@ Order ID -> orderID
 Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
+```
+
+## Prompt commands
+
+In addition to prompting, you can use the `/search-commerce-docs` command to search documentation in conversations with your agent. For example:
+
+```text
+/search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
 ## Best Practices
@@ -268,6 +293,10 @@ Complex Adobe Commerce extensions often involve:
 * Testing across multiple components
 
 ### Use MCP tools
+
+>[!NOTE]
+>
+>Before using MCP tools, ensure you are [logged in to the Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
 
 The tooling defaults to MCP tools, but in certain circumstances, it can use CLI commands instead. If you want to ensure MCP tool usage, explicitly request them in your prompt.
 
