@@ -10,6 +10,10 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services] and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](#saas-configuration). You only need to configure the connection one time for each instance.
 
+>[!NOTE] To generate the Commerce API key, the request must be made by the Commerce license owner for the store. At this time, there is no Access grant or role that allows other users (including Admin users without license ownership) to generate these keys.
+
+If you are not the license owner, you will need to request the Commerce API key from the person or team that owns the Commerce license for your store.
+
 ## Available services {#availableservices}
 
 The following lists the [!DNL Commerce] features you can access through the [!DNL Commerce Services Connector]:
