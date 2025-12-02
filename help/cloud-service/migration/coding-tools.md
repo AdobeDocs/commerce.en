@@ -19,7 +19,11 @@ Using the AI coding tools provides the following benefits:
 
 ## Prerequisites
 
-* A coding agent, such as [Cursor](https://cursor.com/download)(recommended), [Github Copilot](https://github.com/features/copilot), [Google Gemini CLI](https://github.com/google-gemini/gemini-cli), or [Claude Code](https://www.claude.com/product/claude-code)
+* One of the following coding agents:
+   * [Cursor](https://cursor.com/download)(recommended)
+   * [Github Copilot](https://github.com/features/copilot)
+   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
@@ -135,7 +139,7 @@ aio auth login
 
 >[!NOTE]
 >
->Some features of the MCP server will work without logging in, but the RAG service that contains the Adobe Commerce documentation will not work.
+>Some features of the MCP server will work without logging in, but the RAG (Retrieval-Augmented Generation) service will not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
 >
 >In a future release, the RAG service will be accessible independently without the need to install other tools.
 
@@ -195,9 +199,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
-```terminal
-What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
-```
+   ```terminal
+   What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ## Sample prompt
 
