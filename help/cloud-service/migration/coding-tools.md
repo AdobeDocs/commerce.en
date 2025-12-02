@@ -20,7 +20,7 @@ Using the AI coding tools provides the following benefits:
 ## Prerequisites
 
 * One of the following coding agents:
-   * [Cursor](https://cursor.com/download)(recommended)
+   * [Cursor](https://cursor.com/download) (recommended)
    * [Github Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
