@@ -64,7 +64,7 @@ The following attributes are always searchable:
 
 For complex product types (configurable, bundle, and grouped products), [!DNL Live Search] indexes attribute values from both parent and child products, allowing a parent product to be associated with multiple values for the same attribute. This enables variant-based filtering; for example, a configurable shirt appears when filtering by "blue" if any variant is blue, even if the parent product does not have a color set.
 
-This works well for attributes like color and size, but can cause unexpected results for attributes like `new_arrival`, `brand`, or `manufacturer`. For example, let's say a configurable product SKU-001 has `new_arrival = true`, but its child variant SKU-001-01 has `new_arrival = false`. The parent product SKU-001 is indexed with both values (`true` and `false`), allowing it to appear in search results for either condition.
+This works well for attributes like color and size, but can cause unexpected results for attributes like `new_arrival`, `product_ranking`, `promotion_label` or custom price attributes. For example, let's say a configurable product SKU-001 has `new_arrival = true`, but its child variant SKU-001-01 has `new_arrival = false`. The parent product SKU-001 is indexed with both values (`true` and `false`), allowing it to appear in search results for either condition.
 
 ### Layered search and expansion of search types
 
