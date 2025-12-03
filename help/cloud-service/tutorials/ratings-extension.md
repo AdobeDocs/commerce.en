@@ -159,12 +159,12 @@ Create a service contract for the ratings api that I can pass on to the storefro
 ![Service contract](../assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Service contract details](../assets/contract.png){width="600" zoomable="yes"}
-
+<!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
 ```bash
 cp RATINGS_API_CONTRACT.md ../storefront
-```
+``` -->
 
 ### Next steps
 
