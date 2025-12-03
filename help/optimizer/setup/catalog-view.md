@@ -26,6 +26,22 @@ Think of catalog views as different "lenses" through which customers see your ca
 - A regional catalog view might show products and pricing specific to a geographic area
 - A brand catalog view might show only products from a particular brand
 
+
+!!! CATALOG OVERLAY!!!
+
+Catalog Layers Overview
+Catalog layers are used to modify product data by applying overlays, which can override or merge specific fields such as name, description, images, links, and attributes. 26:21
+Layers are ingested via a feed service and stored in MongoDB; their activation or deactivation is managed through the catalog view UI. 26:37
+When a request is made with a channel ID and environment ID, the store service fetches the relevant catalog view and applies the layers to the product data, prioritizing overrides based on layer order. 27:26
+The order field determines priority: higher order means higher priority for overrides, though there was discussion about changing this to match user expectations (e.g., using "priority" or "weight" instead). 27:59
+For fields like images, links, and attributes, layers are merged rather than overridden, resulting in a combined response. 45:57
+The catalog layers UI allows users to reorder, remove, and preview the effect of layers, helping them understand how selections impact product data. 40:35
+
+1. how to add an overlay to your catalog prior to ingestion.
+1. how to manually add an overlay in the UI (used for aso integration)
+1. how to set the overlay priorities...describe behavior.
+
+
 ## Create a Catalog View
 
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).
