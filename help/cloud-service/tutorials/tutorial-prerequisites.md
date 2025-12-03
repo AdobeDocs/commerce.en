@@ -105,7 +105,7 @@ This page lists the generic prerequisites and setup steps for tutorials using [!
 Clone the Commerce integration starter kit repository and prepare your project:
 
 ```bash
-git clone --branch adl https://github.com/adobe/commerce-integration-starter-kit.git extension
+git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
 
