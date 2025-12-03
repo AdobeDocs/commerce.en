@@ -29,14 +29,12 @@ To enable Opportunities in Commerce Optimizer, contact your customer success man
 The Opportunities page is organized into three tabs that help you manage optimization recommendations:
 
 - **Current (Active)**—Displays newly detected opportunities that require review and action. These are active issues that may be impacting your site performance.
-- **Ignored**—Contains opportunities that you've chosen to dismiss or postpone. You can move opportunities here if they're not relevant to your current business objectives.
+- **Skipped**—Contains opportunities that you have chosen to dismiss or postpone. You can move opportunities here if they are not relevant to your current business objectives.
 - **Optimized (Done)**—Shows opportunities that have been successfully addressed, either through auto-fix deployment or manual implementation. This tab helps you track your optimization progress over time.
 
 ![Current Opportunities](../assets/current-opportunities.png)
 
 ## Auto-detect workflow
-
-### Overview
 
 The auto-detect workflow uses AI-powered analysis to automatically identify optimization opportunities across your product catalog. This automated scanning process continuously monitors your product data, search logs, and recommendation performance to detect issues that could impact site performance, SEO, and customer engagement.
 
@@ -67,8 +65,6 @@ Once auto-detect identifies optimization opportunities, you can:
 - Ignore opportunities that do not align with your business objectives.
 
 ## Auto-fix workflow
-
-### Overview
 
 The auto-fix workflow allows you to quickly deploy AI-generated optimizations with a single click. When you apply an auto-fix, the system creates a catalog optimization layer that overrides specific product attributes without modifying the original product data. This approach ensures that optimizations are non-destructive and can be easily managed or reverted if needed.
 
@@ -129,13 +125,9 @@ Understanding catalog layers helps you manage optimizations effectively:
 
 Keep the following in mind when using auto-fix:
 
->[!NOTE]
->
->**Static status behavior**—The status shown for each suggestion reflects the state at the time the auto-fix worker ran. The status does not update dynamically if you manually reorder catalog layers afterward.
+- The status shown for each suggestion reflects the state at the time the auto-fix worker ran. The status does not update dynamically if you manually reorder catalog layers afterward.
 
->[!TIP]
->
->To ensure your optimizations remain active, avoid manually changing catalog layer priorities after deploying auto-fix recommendations.
+- To ensure your optimizations remain active, avoid manually changing catalog layer priorities after deploying auto-fix recommendations.
 
 ### Troubleshooting
 
