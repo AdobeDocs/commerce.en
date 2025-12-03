@@ -11,7 +11,7 @@ hidefromtoc: yes
 >
 >The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
 
-This page lists the generic prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service] and your storefront, such as the [ratings extension tutorial](./ratings-extension.md).
+This page lists the generic prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service], such as the [ratings extension tutorial](./ratings-extension.md).
 
 ## Adobe Commerce as a Cloud Service prerequisites
 
@@ -188,7 +188,7 @@ aio app use workspace.json -m
    ```
 
    ![Install AI tools](../assets/install-ai-tools.png){width="600" zoomable="yes"}
-
+<!--
 ## Storefront prerequisites
 
 The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and see the product ratings in your store.
@@ -326,3 +326,4 @@ If the MCP server is working, you should see relevant documentation results.
 ![MCP Connection Verified](../assets/mcp-connection-verified.png){width="600" zoomable="yes"}
 
 If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
+ -->

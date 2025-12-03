@@ -166,6 +166,11 @@ Return to the terminal and run the following command in the `extension` folder t
 cp RATINGS_API_CONTRACT.md ../storefront
 ```
 
+### Next steps
+
+Now that you have the ratings API contract, you can now begin building the storefront (frontend) portion of the ratings extension.
+
+<!-- 
 ## Connect to the storefront
 
 In this section, you will implement real storefront features, learning how to communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
@@ -285,3 +290,4 @@ The following steps show how the agent handles complex UI features with visual r
    ```
 
 ![Rating Distribution Modal](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
+ -->
