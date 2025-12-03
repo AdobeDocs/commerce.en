@@ -15,7 +15,7 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce as
 >
 >To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
-> You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product to the user group.
+> You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the appropriate products to the user group.
 
 ## Understanding roles
 
@@ -95,6 +95,8 @@ The following instructions provide information on how to add users to the [!DNL 
 >[!NOTE]
 >
 >Only product admins and system admins can add users and developers to the Adobe Commerce as a Cloud Service product.
+
+There are two different ways to add users to Adobe Commerce as a Cloud Service based on when your organization was provisioned. In early access organizations, each user has access manage instances in the organization. In General Availability (GA) organizations, users must have access to the Commerce Cloud Manager product to view and manage instances.
 
 >[!BEGINTABS]
 
