@@ -44,6 +44,7 @@ recommendations: noDisplay
       - [Best practices](./merchandising/synonyms/best-practice.md)
 - Store Setup {#setup}
    - [Catalog Views](./setup/catalog-view.md)
+   - [Catalog Layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price Books](./setup/pricebooks.md)
    - [Data Sync](./setup/data-sync.md)

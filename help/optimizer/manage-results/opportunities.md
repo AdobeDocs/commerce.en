@@ -22,7 +22,7 @@ The **Opportunities** page helps you identify and implement optimizations to imp
 
 ## Get started
 
-To enable Opportunities in Commerce Optimizer, contact your customer success manager (CSM). Opportunites are available with the Ultimate subscription.
+To enable Opportunities in Commerce Optimizer, contact your customer success manager (CSM). Opportunites are available with the **Ultima** Adobe Sites Optimizer license.
 
 ## Quick tour
 
@@ -30,7 +30,7 @@ The Opportunities page is organized into three tabs that help you manage optimiz
 
 - **Current (Active)**—Displays newly detected opportunities that require review and action. These are active issues that may be impacting your site performance.
 - **Skipped**—Contains opportunities that you have chosen to dismiss or postpone. You can move opportunities here if they are not relevant to your current business objectives.
-- **Optimized (Done)**—Shows opportunities that have been successfully addressed, either through auto-fix deployment or manual implementation. This tab helps you track your optimization progress over time.
+- **Optimized (Done)**—Shows opportunities that have been successfully addressed through auto-fix deployment. Any opportunities manually addressed do not appear on this tab. This tab helps you track your auto-fixed opportunities over time.
 
 ![Current Opportunities](../assets/current-opportunities.png)
 
@@ -51,10 +51,6 @@ Auto-detect leverages Adobe Experience Manager Sites Optimizer to:
 
 Before auto-detect can generate recommendations, your catalog data must be synchronized and up-to-date to ensure accurate recommendations.
 
->[!IMPORTANT]
->
->Merchants without their catalog in Commerce Optimizer can still view opportunities but will need to implement fixes manually. The auto-fix feature requires a fully ingested catalog to function.
-
 ### What happens next
 
 Once auto-detect identifies optimization opportunities, you can:
@@ -66,7 +62,11 @@ Once auto-detect identifies optimization opportunities, you can:
 
 ## Auto-fix workflow
 
-The auto-fix workflow allows you to quickly deploy AI-generated optimizations with a single click. When you apply an auto-fix, the system creates a catalog optimization layer that overrides specific product attributes without modifying the original product data. This approach ensures that optimizations are non-destructive and can be easily managed or reverted if needed.
+The auto-fix workflow allows you to quickly deploy AI-generated optimizations with a single click. When you apply an auto-fix, the system creates a catalog optimization layer that overrides specific product attributes without modifying the original product data. Your original product data remains intact, allowing you to safely apply optimizations and revert changes at any time.
+
+>[!NOTE]
+>
+>Auto-fix functionality is supported for the duplicate H1 opportunity only.
 
 ### Prerequisites
 
@@ -75,6 +75,10 @@ Before using auto-fix, ensure:
 - Your product catalog is fully ingested into Commerce Optimizer.
 - The opportunity type supports auto-fix (some optimization types require manual implementation).
 - You have appropriate permissions to create and manage catalog layers.
+
+>[!IMPORTANT]
+>
+>The auto-fix feature requires a fully ingested product catalog. If your catalog is not yet ingested, you can still view opportunities and implement fixes manually using the provided CSV file. Note that manual implementations are not tracked in the **Optimized (Done)** tab.
 
 ### Deploy an auto-fix optimization
 
@@ -90,7 +94,7 @@ Follow these steps to implement an AI-suggested optimization:
 
    >[!NOTE]
    >
-   >Only supported suggestion types display the **Deploy optimization** button. Other types are marked for manual action and require implementation through your Commerce Admin.
+   >The **Deploy optimization** button is only available for supported suggestion types, which currently is the duplicated H1 tags opportunity. For unsupported types, the checkbox is disabled and you must implement fixes manually in your catalog.
 
 1. Click **Deploy optimization** then click **Deploy** to trigger the auto-fix process.
 
@@ -114,12 +118,9 @@ Follow these steps to implement an AI-suggested optimization:
 
 ### How catalog layers work with auto-fix
 
-Understanding catalog layers helps you manage optimizations effectively:
+If an Adobe Sites Optimizer (ASO) layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the ASO layer already exists at a different order number, auto-fix will not change its priority. Learn more about [catalog layers](../setup/catalog-layer.md).
 
-- **Non-destructive changes**—Auto-fix creates optimization layers that override product attributes without modifying the original product data.
-- **Priority ordering**—Layers are prioritized by order number. Order 1 (highest priority) takes precedence over lower-priority layers.
-- **Layer updates**—If you apply additional suggestions to the same product, the existing layer is updated with new attributes rather than creating duplicate layers.
-- **Manual management**—You can manually adjust layer priorities through your catalog view settings, though this may affect which optimizations are applied.
+![Catalog Layers](../assets/catalog-layers.png)
 
 ### Important considerations
 
@@ -137,6 +138,7 @@ If an optimization does not appear to be applied on your storefront:
 1. If you see a warning icon, verify the catalog layer priority settings.
 1. Ensure the optimization layer is set as order 1 (highest priority) in your catalog view.
 1. Confirm that catalog data synchronization is active and up-to-date.
+1. Allow time for changes to propagate. Even with a properly configured layer at order 1, changes may take time to appear on your storefront, similar to the delay when publishing new products.
 
 ## How Sites Optimizer and success metrics work together
 

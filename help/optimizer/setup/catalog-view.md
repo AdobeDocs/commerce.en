@@ -26,21 +26,6 @@ Think of catalog views as different "lenses" through which customers see your ca
 - A regional catalog view might show products and pricing specific to a geographic area
 - A brand catalog view might show only products from a particular brand
 
-
-!!! CATALOG OVERLAY!!!
-
-Catalog Layers Overview
-Catalog layers are used to modify product data by applying overlays, which can override or merge specific fields such as name, description, images, links, and attributes.
-Layers are ingested via a feed service and stored in MongoDB; their activation or deactivation is managed through the catalog view UI.
-When a request is made with a channel ID and environment ID, the store service fetches the relevant catalog view and applies the layers to the product data, prioritizing overrides based on layer order.
-The order field determines priority: higher order means higher priority for overrides, though there was discussion about changing this to match user expectations (e.g., using "priority" or "weight" instead).
-For fields like images, links, and attributes, layers are merged rather than overridden, resulting in a combined response. 45:57
-The catalog layers UI allows users to reorder, remove, and preview the effect of layers, helping them understand how selections impact product data.
-
-1. how to add an overlay to your catalog prior to ingestion.
-1. how to manually add an overlay in the UI (used for aso integration)
-1. how to set the overlay priorities...describe behavior.
-
 ## Create a Catalog View
 
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).
@@ -72,6 +57,168 @@ Before creating a catalog view, ensure you have:
 The Catalog views page updates to display the new catalog view.​
 
 After you complete these steps, the catalog view is now configured to display products and pricing based on your selected sources and policies.
+
+Catalog overlays (also called catalog layers) allow you to modify product data without changing the original source data. Overlays apply changes to specific product attributes—such as name, description, images, links, and metadata—by creating a layer on top of your base catalog. This non-destructive approach ensures your original product data remains intact while allowing flexible customizations for different use cases.
+
+### How catalog overlays work
+
+When a customer views your storefront, the system combines your base catalog data with active catalog overlays to display the final product information. Here's how the process works:
+
+1. **Layer application**—When a request is made with a channel ID and environment ID, the store service retrieves the relevant catalog view.
+
+1. **Data merging**—The system applies catalog overlays to product data based on layer priority order.
+
+1. **Field handling**—Different field types are processed differently:
+   
+   - **Override fields**—Text fields like name, description, and meta titles are replaced by the overlay value (higher-priority layer wins).
+   - **Merge fields**—Array fields like images, links, and attributes are combined from multiple layers, providing a unified response.
+
+1. **Priority resolution**—The order field determines which layer takes precedence. Higher order numbers have higher priority when multiple layers modify the same field.
+
+### Overlay use cases
+
+Catalog overlays are commonly used for:
+
+- **SEO optimization**—Override product meta titles and descriptions based on AI recommendations from Sites Optimizer.
+- **Seasonal campaigns**—Temporarily update product names, descriptions, or images for promotions without changing source data.
+- **Regional customization**—Display different product information based on geographic location or language.
+- **A/B testing**—Test different product presentations to optimize conversion rates.
+- **Multi-brand management**—Customize product attributes for different brand catalog views.
+
+### Add an overlay via data ingestion
+
+You can add catalog overlays to your products during the data ingestion process. This method is ideal for bulk operations or automated workflows.
+
+**Prerequisites:**
+
+- API credentials with permission to access the data ingestion service
+- Product SKUs that already exist in your base catalog
+
+**Steps:**
+
+1. Prepare your overlay data in the required format with the product attributes you want to modify.
+
+1. Use the Product Layers API endpoint to ingest the overlay data.
+
+1. Verify the overlay was successfully ingested by checking the catalog view configuration.
+
+For detailed API specifications and payload examples, see [Product Layers](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) in the developer documentation.
+
+### Add an overlay manually in the UI
+
+The catalog view UI allows you to manually create and manage overlays, which is particularly useful for integrations like Sites Optimizer that generate AI-powered recommendations.
+
+>[!NOTE]
+>
+>Manual overlay creation in the UI is primarily used for Sites Optimizer integration. For bulk overlay operations, use the data ingestion API method described above.
+
+**To create a manual overlay:**
+
+1. Navigate to **Store setup** > **Catalog views**.
+
+1. Select the catalog view where you want to apply the overlay.
+
+1. In the catalog layers section, click **Add layer**.
+
+1. Configure the overlay properties:
+   
+   - **Layer name**—Enter a descriptive name to identify the overlay purpose.
+   - **Products**—Select the products to which this overlay applies.
+   - **Attributes**—Choose which product attributes to modify (name, description, images, meta tags, etc.).
+   - **Values**—Enter the new values for each selected attribute.
+
+1. Click **Save** to create the overlay.
+
+The new overlay is added to the catalog view and is automatically assigned the next available order number.
+
+### Manage overlay priorities
+
+The order in which overlays are applied determines which values appear on your storefront when multiple overlays modify the same product attribute. Managing priorities ensures the correct data is displayed.
+
+**Understanding priority order:**
+
+- Each overlay has an order number (1, 2, 3, and so on.)
+- Lower order numbers take precedence over higher numbers
+- Order 1 is the highest priority; lower numbers override higher ones
+- Only applies to override fields (name, description, meta tags)
+- Merge fields (images, links, attributes) combine data from all layers
+
+
+- **Non-destructive changes**—Auto-fix creates optimization layers that override product attributes without modifying the original product data.
+- **Priority ordering**—Layers are prioritized by order number. Order 1 (highest priority) takes precedence over lower-priority layers.
+- **Layer updates**—If you apply additional suggestions to the same product, the existing layer is updated with new attributes rather than creating duplicate layers.
+- **Manual management**—You can manually adjust layer priorities through your catalog view settings, though this may affect which optimizations are applied.
+- **Adobe Sites Optimizer layer**—If an Adobe Sites Optimizer (ASO) layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the ASO layer already exists at a different order number, auto-fix will not change its priority.
+
+
+**To reorder overlay priorities:**
+
+1. Navigate to **Store setup** > **Catalog views**.
+
+1. Select the catalog view containing the overlays you want to reorder.
+
+1. In the catalog layers section, locate the overlay you want to move.
+
+1. Drag and drop the overlay to change its position, or use the reorder controls.
+
+1. The system automatically updates order numbers based on the new sequence.
+
+1. Click **Save** to apply the new priority order.
+
+>[!IMPORTANT]
+>
+>Changes to overlay priority take effect immediately and may impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied.
+
+### Preview overlay effects
+
+Before activating overlays or changing priorities, you can preview how they affect product data.
+
+**To preview overlay changes:**
+
+1. Navigate to **Store setup** > **Catalog views**.
+
+1. Select the catalog view with the overlays you want to preview.
+
+1. In the catalog layers section, select a specific product or use the preview function.
+
+1. Review the combined product data showing how overlays modify the base catalog values.
+
+1. Make adjustments to overlay content or priority order as needed.
+
+### Activate or deactivate overlays
+
+You can enable or disable catalog overlays without deleting them, allowing you to control when specific customizations are applied.
+
+**To activate or deactivate an overlay:**
+
+1. Navigate to **Store setup** > **Catalog views**.
+
+1. Select the catalog view containing the overlay.
+
+1. In the catalog layers section, locate the overlay you want to toggle.
+
+1. Click the activation toggle to enable or disable the overlay.
+
+   - **Active**—The overlay is applied to product data.
+   - **Inactive**—The overlay is preserved but not applied to product data.
+
+1. The change takes effect immediately on your storefront.
+
+### Best practices
+
+Follow these recommendations when working with catalog overlays:
+
+- **Use descriptive names**—Name overlays clearly to indicate their purpose (e.g., "Holiday 2024 Campaign" or "SEO Optimization - Product Pages").
+
+- **Limit overlay layers**—While the system supports multiple overlays, using too many can impact performance. Consolidate overlays when possible.
+
+- **Test before activating**—Always preview overlay effects before activating them on your live storefront.
+
+- **Document priority logic**—Keep track of which overlays should take precedence to avoid unintended overrides.
+
+- **Review Sites Optimizer overlays**—When using auto-fix from Sites Optimizer, the system creates overlays at the highest priority. Be mindful when adding manual overlays that might override AI recommendations.
+
+- **Monitor performance**—If you notice slow product page loads, review your overlay configuration and consider consolidating layers.
 
 ## Manage catalog view
 
