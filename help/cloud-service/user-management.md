@@ -96,7 +96,7 @@ The following instructions provide information on how to add users to the [!DNL 
 >
 >Only product admins and system admins can add users and developers to the Adobe Commerce as a Cloud Service product.
 
-There are two different ways to add users to Adobe Commerce as a Cloud Service based on when your organization was provisioned. In early access organizations, each user has access manage instances in the organization. In General Availability (GA) organizations, users must have access to the Commerce Cloud Manager product to view and manage instances.
+There are two different ways to add product admin users to Adobe Commerce as a Cloud Service based on when your organization was provisioned. In early access organizations, each user who is assigned the product admin role has permission to manage all instances in the organization. In General Availability (GA) organizations provisioned after October 13, 2025, you can assign a user as the product admin for specific instances. When the product admin user logs in, they can see only the instances they have permission to manage.
 
 >[!BEGINTABS]
 
