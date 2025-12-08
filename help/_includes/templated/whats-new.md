@@ -4,6 +4,72 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### November 20, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for the November Adobe Commerce as a Cloud Service release.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/136235c9291b54a93582c45311b76fb93269e693">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 17, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented how Commerce Optimizer customers connecting to an Adobe Commerce backend can monitor and troubleshoot data feed exports from the Feed Sync status page. See <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a> in the Adobe Commerce Optimizer Guide.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/9a9e07a66c822c97c01f5ff76551684fb99eb01e">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### November 11, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">release notes</a> for the Payment Services v2.13.0 release.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1c02122cd58234268ba9f07aaba96f83f929720">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### November 6, 2025
 
 <table style="table-layout:auto;">
@@ -88,50 +154,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### October 2, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User management</a> now requires all developers and product admins to add the user role first.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e12b4c18cacd43d73ced180a62d7162a745ced56">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### September 23, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">release notes</a> for Payment Services v2.12.2.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">commit</a></td>
     </tr>
   </tbody>
 </table>

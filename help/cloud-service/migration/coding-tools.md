@@ -19,7 +19,11 @@ Using the AI coding tools provides the following benefits:
 
 ## Prerequisites
 
-* A coding agent, such as [Cursor](https://cursor.com/download)(recommended), [Github Copilot](https://github.com/features/copilot), [Google Gemini CLI](https://github.com/google-gemini/gemini-cli), or [Claude Code](https://www.claude.com/product/claude-code)
+* One of the following coding agents:
+   * [Cursor](https://cursor.com/download) (recommended)
+   * [Github Copilot](https://github.com/features/copilot)
+   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
@@ -90,10 +94,56 @@ Using the AI coding tools provides the following benefits:
 
    The following files are added to your workspace:
 
+   **Cursor**
+
      * MCP Configuration: `.cursor/mcp.json`
      * Rules Directory: `.cursor/rules/`
 
+   **Copilot**
+
+     * MCP Configuration: `.vscode/mcp.json`
+     * Rules Directory: `.github/copilot-instructions.md`
+
+>[!NOTE]
+>
+>Before deploying your project, you will need to complete the following configuration tasks:
+>
+>* Log in to [Adobe Developer Console](https://developer.adobe.com/console) using the Adobe I/O CLI.
+>* Create an App Builder project (see [Project setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Set up environment variables in an `.env` file.
+>
+>You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) for detailed configuration instructions.
+
 ## Post-installation configuration
+
+### Log in to the [!DNL Adobe I/O CLI]
+
+After installing the [!DNL Adobe I/O CLI], you need to log in any time you want to use the MCP server.
+
+```bash
+aio auth login
+```
+
+To verify you are logged in, run the following command:
+
+```bash
+aio where
+```
+
+If you encounter issues, try logging out and logging back in:
+
+```bash
+aio auth logout
+aio auth login
+```
+
+>[!NOTE]
+>
+>Some features of the MCP server will work without logging in, but the RAG (Retrieval-Augmented Generation) service will not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
+>
+>In a future release, the RAG service will be accessible independently without the need to install other tools.
+
+### Cursor
 
 1. Restart the Cursor IDE to load the new MCP tools and configuration.
 
@@ -114,6 +164,45 @@ Using the AI coding tools provides the following benefits:
    Configuration: Automatically configured via .cursor/mcp.json
    ```
 
+1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Copilot
+
+1. Restart Visual Studio Code to load the new MCP tools and configuration.
+
+1. Verify the installation by confirming that the `copilot-instructions.md` file exists in the `.github` folder.
+
+1. Enable the MCP server:
+
+   * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
+   * Click **MCP SERVERS - INSTALLED**.
+   * Click the gear icon next to **commerce-extensibility MCP Server**  and select **Start Server**, if the server is stopped.
+   * Click the gear icon again, and select **Show Output**.
+
+1. Verify the server status. The `MCP:commerce-extensibility` output should match the following:
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+
+   (...)
+
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
+
+   ```terminal
+   What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+   ```
+
 ## Sample prompt
 
 The following sample prompt creates an extension to send notifications when an order is placed.
@@ -125,6 +214,14 @@ Order ID -> orderID
 Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
+```
+
+## Prompt commands
+
+In addition to prompting, you can use the `/search-commerce-docs` command to search documentation in conversations with your agent. For example:
+
+```text
+/search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
 ## Best Practices
@@ -210,6 +307,10 @@ Complex Adobe Commerce extensions often involve:
 * Testing across multiple components
 
 ### Use MCP tools
+
+>[!NOTE]
+>
+>Before using MCP tools, ensure you are [logged in to the Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
 
 The tooling defaults to MCP tools, but in certain circumstances, it can use CLI commands instead. If you want to ensure MCP tool usage, explicitly request them in your prompt.
 

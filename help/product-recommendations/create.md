@@ -41,7 +41,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    * Confirmation
    * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
-   You can create up to five active recommendation units for each page type, and up to 25 for Page Builder. The page type is grayed out When the limit is reached.
+   You can create up to 50 active recommendation units for each page type. The page type is grayed out when the limit is reached.
 
    ![Recommendation name and page](assets/create-recommendation.png)
    _Recommendation name and page placement_
