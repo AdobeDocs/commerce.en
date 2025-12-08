@@ -11,7 +11,7 @@ hidefromtoc: yes
 >
 >The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
 
-This page lists the generic prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service], such as the [ratings extension tutorial](./ratings-extension.md).
+This page lists the prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service], such as the [ratings extension tutorial](./ratings-extension.md).
 
 ## Adobe Commerce as a Cloud Service prerequisites
 
