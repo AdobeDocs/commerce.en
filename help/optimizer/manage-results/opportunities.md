@@ -56,7 +56,7 @@ Before auto-detect can generate recommendations, your catalog data must be synch
 Once auto-detect identifies optimization opportunities, you can:
 
 - Review suggested optimizations in the **Current (Active)** tab.
-- Deploy fixes automatically using the [auto-fix workflow](#auto-fix-workflow) (for supported opportunity types).
+- Deploy fixes automatically using the [auto-fix workflow](#auto-fix-workflow) (for supported [opportunity types](#supported-opportunity-types)).
 - Implement changes manually in your Commerce Admin.
 - Ignore opportunities that do not align with your business objectives.
 
@@ -64,9 +64,27 @@ Once auto-detect identifies optimization opportunities, you can:
 
 The auto-fix workflow allows you to quickly deploy AI-generated optimizations with a single click. When you apply an auto-fix, the system creates a catalog optimization layer that overrides specific product attributes without modifying the original product data. Your original product data remains intact, allowing you to safely apply optimizations and revert changes at any time.
 
+### Supported opportunity types
+
+The following lists the supported opportunity types:
+
+- Title too long
+- Title too short
+- Duplicate Title
+- Missing Title
+- Empty Title
+- Description too long
+- Description too short
+- Missing Description
+- Empty Description
+- Duplicate Description
+- Missing H1
+- Duplicate H1
+- H1 too long
+
 >[!NOTE]
 >
->Auto-fix functionality is supported for the duplicate H1 opportunity only.
+>Multiple H1's on page is currently not supported.
 
 ### Prerequisites
 
