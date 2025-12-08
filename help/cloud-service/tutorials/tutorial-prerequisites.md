@@ -1,7 +1,9 @@
 ---
 title: Ratings extension tutorial prerequisites
 description: Learn the prerequisites for the ratings extension lab.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: yes
 hidefromtoc: yes
 ---
@@ -11,7 +13,7 @@ hidefromtoc: yes
 >
 >The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
 
-This page lists the prerequisites and setup steps for tutorials using [!DNL Adobe Commerce as a Cloud Service], such as the [ratings extension tutorial](./ratings-extension.md).
+This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md).
 
 ## Adobe Commerce as a Cloud Service prerequisites
 
@@ -42,15 +44,15 @@ This page lists the prerequisites and setup steps for tutorials using [!DNL Adob
 1. Enter a [!UICONTROL **Project Title**] and [!UICONTROL **App Name**].
 1. Ensure the **[!UICONTROL Include Runtime]** checkbox is marked.
 
-   ![Create project with App Builder template](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![Adobe Developer Console project creation with App Builder template selected](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Click **Save**.
+1. Click [!UICONTROL **Save**].
 
 #### Add APIs to the workspace
 
 1. Click the [!UICONTROL **Stage**] workspace and then repeat the following steps for each API.
 
-   ![APIs added to workspace](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![Stage workspace with Add Service option for APIs](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Add Service**] and select [!UICONTROL **API**].
 
@@ -68,7 +70,7 @@ This page lists the prerequisites and setup steps for tutorials using [!DNL Adob
 
 1. Repeat the previous steps until all APIs are added to the workspace.
 
-   ![APIs added to workspace](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![Workspace showing all required APIs successfully added](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Configure the Adobe I/O CLI
 
@@ -98,7 +100,7 @@ This page lists the prerequisites and setup steps for tutorials using [!DNL Adob
    aio console workspace select
    ```
 
-   ![CLI configuration](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Terminal showing Adobe I/O CLI organization project and workspace selection](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### Clone the integration starter kit
 
@@ -109,7 +111,7 @@ git clone https://github.com/adobe/commerce-integration-starter-kit.git extensio
 cd extension
 ```
 
-![Clone starter kit](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![Terminal output showing the git clone command for the Commerce integration starter kit](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### Create an .env file
 
@@ -131,7 +133,7 @@ OAUTH_ORG_ID=
 
 You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
 
-![OAuth credentials](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![OAuth Server-to-Server credentials page in Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Add the Commerce configuration
 
@@ -173,7 +175,7 @@ Link your local project to the remote workspace:
 aio app use workspace.json -m
 ```
 
-![Connect to workspace](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminal showing successful workspace connection with aio app use command](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### Install extensibility AI tools
 
@@ -189,7 +191,7 @@ Update the Cursor rules file and MCP configuration to include the `commerce-exte
    aio commerce extensibility tools-setup
    ```
 
-   ![Install AI tools](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![Terminal showing AI extensibility tools setup command output](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 <!--
 ## Storefront prerequisites
 

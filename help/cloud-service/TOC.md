@@ -12,7 +12,6 @@ recommendations: noDisplay, noCatalog
 - [Getting started](getting-started.md)
 - [User and identity management](user-management.md)
 - [Storefront](storefront.md)
-- [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
 - Migration {#migration}

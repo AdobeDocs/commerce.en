@@ -1,21 +1,23 @@
 ---
 title: Bulk Data Migration Tool
 description: Learn how to use the Bulk Data Migration Tool to migrate data from your existing Adobe Commerce on Cloud instance to [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud, Migration
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 ---
 # Bulk data migration tool
 
-The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool is designed for solution implementers to migrate data from an existing Adobe Commerce on Cloud instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). For more information on the migration process, see the [Migration overview](./overview.md).
+The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool helps solution implementers migrate data from an existing Adobe Commerce on Cloud instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). For more information on the migration process, see the [Migration overview](./overview.md).
 
 >[!NOTE]
 >
->The bulk data migration tool only supports migrating first-party core commerce data. Custom data migration is not currently supported.
+>The bulk data migration tool supports migrating first-party core commerce data only. Custom data migration is not currently supported.
 
 The following image details the architecture and key components for using the Bulk data migration tool.
 
-![Bulk Data Migration Tool architecture](../assets/bulk-data-diagram.png)
+![Bulk Data Migration Tool architecture diagram showing PaaS to SaaS data flow](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Migration workflow
 
@@ -38,13 +40,13 @@ The availability of the bulk data migration tool is as follows:
 
 ## Create target environment
 
-The solution implementer (SI) creates a target environment for the migration. This environment is used to store the data that is migrated from the source instance.
+The solution implementer (SI) creates a target environment for the migration. This environment stores the data migrated from the source instance.
 
 First, [create a new [!DNL Adobe Commerce as a Cloud Service] (SaaS) instance](../getting-started.md#create-an-instance).
 
 ### Configure extraction tool
 
-The extraction tool is used to extract data from the source instance.
+Use the extraction tool to extract data from the source instance.
 
 1. Download the extraction tool from the link provided to you by Adobe.
 1. Set the following environment variables in the extraction tool:
@@ -81,13 +83,13 @@ Run the load data tool provided by Adobe. This tool will:
 1. Generate a loading plan.
 1. Execute the plan, moving data to the SaaS tenant database in batches.
 1. Process catalog media and transfer it to the target environment.
-1. Flushes the SaaS Redis cache and invalidates database indexes for the tenant.
+1. Flush the SaaS Redis cache and invalidate database indexes for the tenant.
 
 ### Catalog data ingestion
 
 After the data loads, the catalog data automatically flows from the SaaS tenant database to the Catalog Service.
 
-The Catalog Service shares this data with Live Search and Product Recommendations. No manual intervention is required for this process. The data will be available in all services once the ingestion completes.
+The Catalog Service shares this data with Live Search and Product Recommendations. No manual intervention is required for this process. The data is available in all services once the ingestion completes.
 
 ### Data integrity verification
 

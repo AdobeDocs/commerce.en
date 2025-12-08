@@ -1,13 +1,15 @@
 ---
 title: Use cases
 description: Learn how to accomplish practical use cases and supported business scenarios with [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud, Integration
 role: User, Leader
+level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Use cases
 
-The following use cases demonstrate core functionality and business scenarios supported by [!DNL Adobe Commerce as a Cloud Service], allowing you to accelerate development and launch high-impact experiences.
+The following use cases demonstrate core functionality and business scenarios supported by [!DNL Adobe Commerce as a Cloud Service]. They allow you to accelerate development and launch high-impact experiences.
 
 If you encounter any issues, check the [Troubleshooting](#troubleshooting) section for guidance.
 
@@ -16,7 +18,7 @@ If you encounter any issues, check the [Troubleshooting](#troubleshooting) secti
 Before attempting any of these use cases, you must complete the following prerequisites:
 
 1. [Create your Cloud Service instance](./getting-started.md#create-an-instance) using the following options:
-   1. Select [!UICONTROL **Sandbox**] in the [!UICONTROL **Enviornment**] dropdown.
+   1. Select [!UICONTROL **Sandbox**] in the [!UICONTROL **Environment**] dropdown.
    1. Select [!UICONTROL **Adobe Store**] in the [!UICONTROL **Test data**] dropdown.
 1. [Log in to your Adobe Experience Cloud account](https://experience.adobe.com)
 1. [Set up your Cloud Service storefront](./storefront.md) using the following options:
@@ -39,27 +41,27 @@ This workflow demonstrates the checkout process for a customer purchasing a prod
 
 ### Purchase a product
 
-1. Go to the [storefront](./storefront.md) you created in the prerequisites. 
+1. Go to the [storefront](./storefront.md) you created in the prerequisites.
 
 1. Find and select a product. Make any necessary customization selections. Then click [!UICONTROL **Add to cart**].
 
-   ![store search](./assets/store-search.png){width="600" zoomable="yes"}
+   ![Storefront product search and selection interface](./assets/store-search.png){width="600" zoomable="yes"}
 
-1. Select the cart icon to view your cart. 
+1. Select the cart icon to view your cart.
 
-   ![add to cart and checkout](./assets/add-to-cart-and-checkout.png){width="600" zoomable="yes"}
+   ![Shopping cart with product added and checkout options](./assets/add-to-cart-and-checkout.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Checkout**].
 
-   ![click checkout](./assets/click-checkout.png){width="600" zoomable="yes"}
+   ![Checkout button on cart page](./assets/click-checkout.png){width="600" zoomable="yes"}
 
 1. Enter the required contact details and shipping information. You can use fictional information for this order.
 
 1. To checkout, select [!UICONTROL **Check / Money Order**]. If you want to use a credit card, use one of the [test cards provided by Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers). You can use these with any future expiration date and any CVC.
 
-   ![enter details](./assets/enter-details.png){width="600" zoomable="yes"}
+   ![Checkout form with contact and shipping information fields](./assets/enter-details.png){width="600" zoomable="yes"}
 
-   ![credit card](./assets/credit-card.png){width="600" zoomable="yes"}
+   ![Credit card payment form in checkout](./assets/credit-card.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Place Order**].
 
@@ -71,11 +73,11 @@ This workflow demonstrates the checkout process for a customer purchasing a prod
 
 1. Navigate to [!UICONTROL **Sales**] > [!UICONTROL **Orders**].
 
-   ![confirm order](./assets/confirm-order.png){width="600" zoomable="yes"}
+   ![Orders grid in Commerce Admin showing recent orders](./assets/confirm-order.png){width="600" zoomable="yes"}
 
 1. Look for the order you placed and confirm the details.
 
-   ![order details](./assets/order-details.png){width="600" zoomable="yes"}
+   ![Order details page with customer and product information](./assets/order-details.png){width="600" zoomable="yes"}
 
 ## Update storefront content
 
@@ -97,7 +99,7 @@ Create, edit, and publish content directly onto the storefront.
 
 ## Contextual experimentation
 
-Adobe Commerce's contextual experimentation feature allows you to create and manage experiments on your storefront to test different content and configurations.
+[!DNL Adobe Commerce]'s contextual experimentation feature allows you to create and manage experiments on your storefront to test different content and configurations.
 
 ### Prerequisites
 
@@ -130,7 +132,7 @@ Adobe Commerce's contextual experimentation feature allows you to create and man
        * `https://<your-site>.aem.live/experiments/1234/indexv1`
        * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
-    ![metadata-block](./assets/metadata-block.png){width="600" zoomable="yes"}
+   ![Metadata block configuration for contextual experimentation](./assets/metadata-block.png){width="600" zoomable="yes"}
 
 1. Open an incognito or private browsing window and navigate to your main page.
 
@@ -138,39 +140,39 @@ Adobe Commerce's contextual experimentation feature allows you to create and man
 
 ## Enhance storefront content
 
-With AEM Assets, Adobe Express, and Firefly, you can now quickly make changes to images that appear in your storefront with a simple, self-driven workflow.
+With [!DNL AEM Assets], [!DNL Adobe Express], and [!DNL Firefly], you can quickly make changes to images that appear in your storefront with a simple, self-driven workflow.
 
 ### Prerequisites
 
-* Requires access to AEM Assets, Adobe Express, and Adobe Firefly.
+* Requires access to [!DNL AEM Assets], [!DNL Adobe Express], and [!DNL Adobe Firefly].
 
-### Cusomize the background of an image
+### Customize the background of an image
 
-Consider a scenario where you want to quickly modify the background of a product image. The combination of Adobe Commerce, AEM Assets, and Adobe Express allows you to make this change in a few simple steps.
+Consider a scenario where you want to quickly modify the background of a product image. The combination of [!DNL Adobe Commerce], [!DNL AEM Assets], and [!DNL Adobe Express] allows you to complete this change in a few simple steps.
 
 1. Open the [storefront](./storefront.md) you created in the prerequisites and navigate to an item you want to change. Note the items SKU or Product Code.
 
-1. Open [!UICONTROL AEM Assets], by selecting it in the [Adobe Experience Cloud](https://experience.adobe.com/#/home).
+1. Open [!DNL AEM Assets], by selecting it in the [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![aem assets](./assets/select-aem-assets.png){width="600" zoomable="yes"}
- 
-1. Click [!UICONTROL Assets].
+   ![AEM Assets selector showing the Adobe Experience Cloud interface](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
-   ![click assets](./assets/click-assets.png){width="600" zoomable="yes"}
+1. Click [!UICONTROL **Assets**].
+
+   ![Assets navigation option in AEM Assets interface](./assets/click-assets.png){width="600" zoomable="yes"}
 
 1. Search for the item by **SKU** or **Product Code**.
 
 1. Select the item you want to edit and click [!UICONTROL **Open in Adobe Express**].
 
-   ![open in adobe express](./assets/open-in-adobe-express.png){width="600" zoomable="yes"}
+   ![Open in Adobe Express option for asset editing](./assets/open-in-adobe-express.png){width="600" zoomable="yes"}
 
 1. In the [!UICONTROL **Image**] panel, select [!UICONTROL **Insert object**].
 
-   ![insert object](./assets/insert-object.png){width="600" zoomable="yes"}
+   ![Insert object option in Adobe Express Image panel](./assets/insert-object.png){width="600" zoomable="yes"}
 
 1. In the text box, describe the image you want to add. For example, "snowy pine trees".
 
-   ![insert object edit](./assets/insert-object-edit.png){width="600" zoomable="yes"}
+   ![Text box for describing the image to generate with AI](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
 1. Adjust the [!UICONTROL Brush size] and draw where you want to add the generated image. For this example, draw around the existing object to select the background.
 
@@ -180,41 +182,41 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. Click [!UICONTROL **Your Stuff**] to return to the image editor.
 
-1. Click [!UICONTROL **Save**] to specify the image type. 
+1. Click [!UICONTROL **Save**] to specify the image type.
 
 1. Click [!UICONTROL **Save**] again to save the changes.
 
 1. In the [!UICONTROL **Save asset**] dialog, select the Commerce [!UICONTROL **Destination folder**].
 
-   ![save as new asset](./assets/save-as-new-asset.png){width="600" zoomable="yes"}
+   ![Save asset dialog with Commerce destination folder selected](./assets/save-as-new-asset.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Save as new asset**] to save the image.
 
-#### Add the image to Commerce AEM Assets
+#### Add the image to [!DNL Commerce AEM Assets]
 
-1. From the [Navigation Panel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) of AEM as a Cloud Service, select **Assets** > **Files** > **Commerce** and click on the asset you created in the previous section.
+1. From the [Navigation Panel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) of [!DNL AEM as a Cloud Service], select [!UICONTROL **Assets**] > [!UICONTROL **Files**] > [!UICONTROL **Commerce**] and click the asset you created in the previous section.
 
-   ![commerce folder](./assets/commerce-folder.png){width="600" zoomable="yes"}
+   ![Commerce folder in AEM Assets with product images](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Properties**]. 
 
-   ![properties](./assets/properties.png){width="600" zoomable="yes"}
+   ![Properties button in AEM Assets toolbar](./assets/properties.png){width="600" zoomable="yes"}
 
 1. Select the [!UICONTROL **Commerce**] tab.
 
-   ![commerce tab](./assets/commerce-tab.png){width="600" zoomable="yes"}
+   ![Commerce tab in asset properties panel](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
 1. Ensure that the [!UICONTROL **Does it exist in Adobe Commerce?**] field is set to [!UICONTROL **Yes**].
 
 1. Click [!UICONTROL **Add**] and enter the product SKU you want to add the asset to.
 
-   ![add to sku](./assets/add-to-sku.png){width="600" zoomable="yes"}
+   ![Add SKU field for linking asset to product](./assets/add-to-sku.png){width="600" zoomable="yes"}
 
 1. Select the position for the asset and the asset type. 
 
 1. Select the [!UICONTROL **Basic**] tab and change the [!UICONTROL **Review Status**] tab to [!UICONTROL **Approved**].
 
-   ![approve asset](./assets/approve-asset.png){width="600" zoomable="yes"}
+   ![Review Status dropdown set to Approved in Basic tab](./assets/approve-asset.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Save & Close**].
 
@@ -226,7 +228,7 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. Expand the [!UICONTROL **Images and Videos**] section.
 
-   ![images and videos](./assets/images-and-videos.png){width="600" zoomable="yes"}
+   ![Images and Videos section expanded in product editing](./assets/images-and-videos.png){width="600" zoomable="yes"}
 
 1. Confirm that your image is now available in the list of images.
 
@@ -234,11 +236,11 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. Confirm that the new image appears.
 
-   ![image confirmation](./assets/image-confirm.png){width="600" zoomable="yes"}
+   ![Product page on storefront showing the new generated image](./assets/image-confirm.png){width="600" zoomable="yes"}
 
 ## Generate Variations
 
-Adobe Commerce's Generate Variations leverages Generative AI to automate high-quality content generation, fine-tune messaging, and seamlessly publish assets to your storefront.
+[!DNL Adobe Commerce]'s Generate Variations leverages Generative AI to automate high-quality content generation, fine-tune messaging, and seamlessly publish assets to your storefront.
 
 ### Generate text
 
@@ -256,7 +258,7 @@ Adobe Commerce's Generate Variations leverages Generative AI to automate high-qu
 
 ### Generate content and images
 
-1. Open [Generate Variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 
+1. Open [!DNL Generate Variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 
 
 1. Select the [!UICONTROL **Hero Banner**] template.
 
@@ -288,12 +290,12 @@ Use the following suggestions to resolve any issues you face when attempting the
   1. Run `aio --help` to see all available commands and flags.
   1. For specific commands, use the `--help` flag. For example:
      * `aio console --help`
-     * `aio commerce –help`
+     * `aio commerce --help`
  
 * If you encounter invalid login issues:
 
   1. Run `aio config clear`.
-  1. Run `aio auth login –-force`.
+  1. Run `aio auth login --force`.
   1. Login in your browser.
   1. Select your profile.
   1. Switch back to the terminal to continue.
