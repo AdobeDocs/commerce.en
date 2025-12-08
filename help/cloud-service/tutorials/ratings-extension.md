@@ -17,7 +17,7 @@ Before you begin, complete the [prerequisites](./tutorial-prerequisites.md).
 
 ## Verify prerequisites
 
-Verify the following prerequisites are installed:
+Verify that the following prerequisites are installed:
 
 ```bash
 # Check Node.js version (should be 22.x.x)

@@ -177,6 +177,8 @@ aio app use workspace.json -m
 
 ### Install extensibility AI tools
 
+Update the Cursor rules file and MCP configuration to include the `commerce-extensibility-tools` package.
+
 1. Set up the AI-assisted development tools in the `extension` folder using the following commands:
 
    ```bash
