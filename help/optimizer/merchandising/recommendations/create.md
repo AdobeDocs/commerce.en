@@ -155,11 +155,9 @@ The following lists possible reasons and solutions to common low readiness score
 
 ## Preview Recommendations
 
->[!IMPORTANT]
->
->This feature is not yet available.
-
 The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
+
+![Recommendations Preview](../../assets/rec-preview.png)
 
 To test a recommendation when working in a non-production environment, you can fetch recommendation data from a different source. This allows merchants to experiment with rules and preview the recommendations before deploying to production.
 
