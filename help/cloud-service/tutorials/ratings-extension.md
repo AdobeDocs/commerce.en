@@ -39,7 +39,7 @@ If any of the preceding commands do not return the expected results, see the [pr
 
 This section guides you through the process of developing a ratings extension for Adobe Commerce as a Cloud Service using AI-assisted development tools.
 
-1. At this point, all [!DNL Cursor] rules are installed in the `.cursor/rules` folder. You can find MCP tools in the **MCP Settings** in [!DNL Cursor]. Verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
+1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** and verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
 
    ![Cursor settings](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
@@ -72,13 +72,13 @@ This section guides you through the process of developing a ratings extension fo
    >
    >If the agent requests to search the documentation, allow it.
 
-   ![Enter prompt in Cursor](../assets/enter-prompt.png){width="600" zoomable="yes"}
+1. Answer the agent's questions precisely to help it generate the best code.
 
-1. The agent researches the requirements and asks clarifying questions. Answer the agent's questions precisely to help it generate the best code.
+   ![Enter prompt in Cursor](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
    ![Agent asks clarifying questions](../assets/agent-questions.png){width="600" zoomable="yes"}
 
-1. Use the following response to answer the agent's questions and set up randomized ratings data:
+1. Use the following example text to answer the agent's questions to set up randomized ratings data:
 
    ```text
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
