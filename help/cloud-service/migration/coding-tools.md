@@ -1,7 +1,7 @@
 ---
 title: AI coding tools for extensions
 description: Learn how to use the AI tools for creating Commerce App Builder extensions.
-feature: App Builder, Cloud, Migration
+feature: App Builder, Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
 level: Intermediate
