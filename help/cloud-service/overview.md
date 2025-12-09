@@ -61,7 +61,7 @@ This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Use Adobe's [!DNL Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) powered by [!DNL Edge Delivery Services] to create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder].
+Use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) powered by [!DNL Edge Delivery Services] to create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder].
 
 [!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
 

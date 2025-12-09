@@ -23,7 +23,7 @@ For a more customizable and detailed walkthrough, refer to the [storefront docum
 
 1. In the **[!UICONTROL Commerce GraphQL Endpoint (optional)]** field, enter your [!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL endpoint, which you can access in the Commerce Cloud Manager after [creating your instance](./getting-started.md#create-an-instance).
 
-    Alternatively, if you are using [!DNL API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your [!DNL API Mesh] GraphQL endpoint into the **[!UICONTROL Commerce GraphQL Endpoint (optional)]** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
+    Alternatively, if you are using [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your [!DNL API Mesh] GraphQL endpoint into the **[!UICONTROL Commerce GraphQL Endpoint (optional)]** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
 
 1. Click **[!UICONTROL Create Site]**. Follow the on-screen instructions to authorize access to your GitHub repository.
 

@@ -29,7 +29,7 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
   >
   >All Commerce users, including developers and admins, must also have the User role assigned to them. It is required for basic Commerce permissions.
 
-* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Developers have user permissions and are added to the Commerce instance as a developer user. They can use the [!DNL Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
+* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}—Developers have user permissions and are added to the Commerce instance as a developer user. They can use the [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Admins - There are three different types of admins:
   * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Admin Console.
@@ -213,7 +213,7 @@ Admins have access to all permissions.
 
 The following setup is required for [!DNL Adobe Experience Manager Assets] and [!DNL Product Visuals powered by AEM Assets] users.
 
-If your account has access to [!DNL Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [!DNL AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], complete the following process:
+If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) and you want to allow a user to access the advanced features of [[!DNL AEM Assets]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} along with [!DNL Adobe Commerce as a Cloud Service], complete the following process:
 
 >[!NOTE]
 >

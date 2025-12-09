@@ -258,7 +258,7 @@ Consider a scenario where you want to quickly modify the background of a product
 
 ### Generate content and images
 
-1. Open [!DNL Generate Variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 
+1. Open [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 
 
 1. Select the [!UICONTROL **Hero Banner**] template.
 

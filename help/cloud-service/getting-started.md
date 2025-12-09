@@ -23,7 +23,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 * **[Adobe Admin Console](https://adminconsole.adobe.com/)** - Manage users and roles
 * **Commerce Admin** - Manage products, orders, customers, and store configuration
 * **[Storefront powered by [!DNL Edge Delivery Services]](./storefront.md)** - Create and customize a customer-facing storefront using a composable, high-performance system that delivers exceptional speed, SEO, and user experience for merchants and developers
-* **[!DNL Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Build custom integrations using [!DNL App Builder], along with other extensibility tools like the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) and [!DNL API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Build custom integrations using [!DNL App Builder], along with other extensibility tools like the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) and [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Setup and management
 
