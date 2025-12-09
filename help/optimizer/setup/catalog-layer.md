@@ -38,6 +38,10 @@ Catalog layers are commonly used for:
 
 You can add catalog layers to your products during the data ingestion process. This method is ideal for bulk operations or automated workflows.
 
+>[!NOTE]
+>
+>You import catalog layers using the ingestion API, but [setting the order](#manage-layer-priorities) of the layers is done using the UI.
+
 **Prerequisites:**
 
 - API credentials with permission to access the data ingestion service
@@ -54,6 +58,10 @@ You can add catalog layers to your products during the data ingestion process. T
 For detailed API specifications and payload examples, see [Product Layers](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) in the developer documentation.
 
 ## Add a catalog layer manually in the UI
+
+>[!NOTE]
+>
+>This feature is not yet available.
 
 The catalog view UI allows you to manually create and manage layers, which is particularly useful for integrations like Sites Optimizer that generate AI-powered recommendations.
 
@@ -73,11 +81,11 @@ The catalog view UI allows you to manually create and manage layers, which is pa
 
 1. In the catalog layers section, click **Add catalog layer**.
 
-1. Configure the layer properties: (!!! THIS NEEDS TO BE TESTED!!!)
+1. Configure the layer properties:
    
    - **Layer name**—Enter a descriptive name to identify the layer purpose.
    - **Products**—Select the products to which this layer applies.
-   - **Attributes**—Choose which product attributes to modify (name, description, images, meta tags, etc.).
+   - **Attributes**—Choose which product attributes to modify (name, description, images, meta tags, and so on).
    - **Values**—Enter the new values for each selected attribute.
 
 1. Click **Save** to create the layer.
@@ -86,7 +94,9 @@ The new layer is added to the catalog view and is automatically assigned the nex
 
 ## Preview layer effects
 
-(!!! THIS NEEDS TO BE TESTED--WILL PREVIEW BE AVAILABLE DEC 10TH!!!)
+>[!NOTE]
+>
+>This feature is not yet available.
 
 Before activating layers or changing priorities, you can preview how they affect product data.
 
@@ -127,7 +137,7 @@ The order in which layers are applied determines which values appear on your sto
 
 **Understanding priority order:**
 
-- Each layer is assigned an order number (1, 2, 3, etc.)
+- Each layer is assigned an order number (1, 2, 3, and so on)
 - Order 1 has the highest priority and overrides all other layers
 - When multiple layers modify the same field, the layer with the lower order number takes precedence
 - Priority only applies to override fields (name, description, meta tags)
@@ -149,17 +159,17 @@ The order in which layers are applied determines which values appear on your sto
 
 >[!IMPORTANT]
 >
->Changes to layer priority take effect immediately and may impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied.
+>Changes to layer priority take effect immediately and may impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied (preview is not yet available).
 
 ## Best practices
 
 Follow these recommendations when working with catalog layers:
 
-- **Use descriptive names**—Name layers clearly to indicate their purpose (e.g., "Holiday 2024 Campaign" or "SEO Optimization - Product Pages").
+- **Use descriptive names**—Name layers clearly to indicate their purpose (for example, "Holiday 2024 Campaign" or "SEO Optimization - Product Pages").
 
 - **Limit layers**—While the system supports multiple layers, using too many can impact performance. Consolidate layers when possible.
 
-- **Test before activating**—Always preview layer effects before activating them on your live storefront.
+<!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
 - **Document priority logic**—Keep track of which layers should take precedence to avoid unintended overrides.
 
