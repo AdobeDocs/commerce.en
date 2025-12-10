@@ -58,9 +58,6 @@ This approach ensures your solution is accurately sized for your business needs.
 
 The following table provides the base limits for [!DNL Adobe Commerce Optimizer]. You can purchase add-on packages to extend base limits as needed.
 
->[!NOTE]
->
->In the following tables, "—" indicates that no base limit applies or the capability is not applicable for that category.
 
 | **Metric**                            | **Description**                                             | **Base Limits (GMV $5M)** | **Add-On Unit**                                                               |
 | ------------------------------------- | ----------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------- |
