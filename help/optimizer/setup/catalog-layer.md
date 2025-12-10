@@ -161,13 +161,13 @@ The order in which layers are applied determines which values appear on your sto
 
 >[!IMPORTANT]
 >
->Changes to layer priority take effect immediately and may impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied (preview is not yet available).
+>Changes to layer priority take effect immediately and may impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied (**preview is not yet available**).
 
 ## Best practices
 
 Follow these recommendations when working with catalog layers:
 
-- **Use descriptive names**—Name layers clearly to indicate their purpose (for example, "Holiday 2024 Campaign" or "SEO Optimization - Product Pages").
+- **Use descriptive names**—Name layers clearly to indicate their purpose (for example, "Holiday 2025 Campaign" or "SEO Optimization - Product Pages").
 
 - **Limit layers**—While the system supports multiple layers, using too many can impact performance. Consolidate layers when possible.
 

@@ -112,7 +112,7 @@ Follow these steps to implement an AI-suggested optimization:
 
    >[!NOTE]
    >
-   >The **Deploy optimization** button is only available for supported suggestion types, which currently is the duplicated H1 tags opportunity. For unsupported types, the checkbox is disabled and you must implement fixes manually in your catalog.
+   >The **Deploy optimization** button is only available for [supported suggestion types](#supported-opportunity-types). For unsupported types, the checkbox is disabled and you must implement fixes manually in your catalog.
 
 1. Click **Deploy optimization** then click **Deploy** to trigger the auto-fix process.
 
@@ -134,9 +134,13 @@ Follow these steps to implement an AI-suggested optimization:
 
    ![Completed Opportunities](../assets/done-opportunities.png)
 
+>[!NOTE]
+>
+>Auto-fix supports metadata optimization for sites in any language. Sites Optimizer analyzes product detail pages in their original language, generates localized AI recommendations, and creates catalog layers based on the source locale configured in your catalog view.
+
 ### How catalog layers work with auto-fix
 
-If an Adobe Sites Optimizer (ASO) layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the ASO layer already exists at a different order number, auto-fix will not change its priority. Learn more about [catalog layers](../setup/catalog-layer.md).
+If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. Learn more about [catalog layers](../setup/catalog-layer.md).
 
 ![Catalog Layers](../assets/catalog-layers.png)
 
@@ -176,3 +180,6 @@ Additional resources:
 - [Success Metrics](success-metrics.md) - Monitor key performance indicators.
 - [Search Performance](search-performance.md) - Analyze search terms and optimize relevance.
 - [Recommendation Performance](recommendation-performance.md) - Monitor recommendation effectiveness.
+
+
+
