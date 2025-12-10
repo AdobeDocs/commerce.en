@@ -153,7 +153,7 @@ The following lists possible reasons and solutions to common low readiness score
    - Low traffic on the store so the volume of behavioral events we receive is low.
    - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 
-## Preview Recommendations
+## Preview recommendations
 
 The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
 
