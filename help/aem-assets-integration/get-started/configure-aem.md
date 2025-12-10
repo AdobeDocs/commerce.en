@@ -132,6 +132,8 @@ The Product Data UI component is added automatically based on the template.
 
    1. Click **[!UICONTROL Apply]**.
 
-## Next step
+## Next steps
 
 [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md)
+
+**Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [EDS AEM Assets configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic.
