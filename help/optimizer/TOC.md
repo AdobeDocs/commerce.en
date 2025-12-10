@@ -11,7 +11,7 @@ recommendations: noDisplay
 - [Get Started](get-started.md)
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
-- [Boundaries and limitations](boundaries-limits.md)
+- [Limits and sizing guide](boundaries-limits.md)
 - [Release notes](release-notes.md)
 - Managing Results {#manage-results}
    - [Success Metrics](./manage-results/success-metrics.md)
