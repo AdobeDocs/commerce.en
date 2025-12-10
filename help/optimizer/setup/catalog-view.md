@@ -26,7 +26,7 @@ Think of catalog views as different "lenses" through which customers see your ca
 - A regional catalog view might show products and pricing specific to a geographic area
 - A brand catalog view might show only products from a particular brand
 
-## Create a Catalog View
+## Create a catalog view
 
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).
 
@@ -95,13 +95,13 @@ From here you can see catalog view configuration details, such as:
 
 Some of these configuration settings are needed as you set up your storefront or use the data ingestion API.
 
-## Architecture Overview
+## Architecture overview
 
 Catalog views are part of the Merchandising Services framework that replaces the website, store, storeview framework used in Adobe Commerce foundations with a more flexible model:
 
 ![[!DNL Merchandising Services] Architecture](../assets/merchandising-svcs-architecture.png)
 
-### How It Works
+### How it works
 
 **1. Data Ingestion**
 Catalog data from PIM, ERP, and other systems is ingested into the Merchandising Services framework. Each SKU contains locale information and product attributes that map to catalog views, policies, and locales. For more information about data ingestion, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
@@ -115,7 +115,7 @@ Multiple catalog views represent different business units (for example, "Texas R
 **4. Multi-Channel Delivery**
 The filtered catalog data is delivered to various destinations including Edge Delivery Services storefronts, marketplaces, advertising platforms, and custom micro-storefronts. For more information about catalog data delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
 
-### Key Components
+### Key components
 
 |Component|Purpose|Example|
 |---|---|---|
@@ -124,13 +124,13 @@ The filtered catalog data is delivered to various destinations including Edge De
 |**Locale**|Language/region setting|en-US, fr-CA, es-MX|
 |**Price Book**|Pricing structure|Retail, Wholesale, Employee|
 
-### Data Flow
+### Data flow
 
 1. **Ingest** - Product data from PIM/ERP systems
 2. **Process** - Apply catalog views, policies, and pricing
 3. **Deliver** - Serve filtered catalog to storefronts, marketplaces, etc.
 
-## Key Features
+## Key features
 
 |Feature|Benefit|
 |---|---|
@@ -140,19 +140,19 @@ The filtered catalog data is delivered to various destinations including Edge De
 |**Multi-Channel**|Serve catalogs to storefronts, marketplaces, and advertising platforms|
 |**Real-time Updates**|Quickly update catalog data for promotions and campaigns|
 
-## Use Cases
+## Use cases
 
-### Multi-Brand Conglomerate
+### Multi-brand conglomerate
 
 **Challenge**: Manage multiple brands, countries, and languages<br>
 **Solution**: Single catalog with catalog views for each brand/region combination
 
-### Automotive Parts Dealer
+### Automotive parts dealer
 
 **Challenge**: 3,000 dealers with same products but different pricing<br>
 **Solution**: One catalog with dealer-specific catalog views and price books
 
-### Multi-Location Retailer
+### Multi-location retailer
 
 **Challenge**: Different pricing and inventory per location<br>
 **Solution**: Location-based catalog views with region-specific policies

@@ -149,7 +149,7 @@ Facets and synonyms are another way you can enahnce the search experience for yo
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 
-## Commerce Configuration Settings
+## Commerce configuration settings
 
 The following section describes the supported and unsupported Commerce configuration settings for [!DNL Live Search].
 
