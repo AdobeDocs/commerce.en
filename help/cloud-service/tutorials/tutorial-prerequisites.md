@@ -21,11 +21,11 @@ This page lists the prerequisites and setup steps for tutorials using [!DNL Adob
    npm install -g @adobe/aio-cli
    ```
 
-* Install the Commerce plugin
+* Install the [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime), and [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) plugins:
 
-  ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
-  ```
+   ```bash
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
+   ```
 
 * Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
 

@@ -36,10 +36,14 @@ Using the AI coding tools provides the following benefits:
    npm install -g @adobe/aio-cli
    ```
 
-1. Install the [Adobe I/O CLI Commerce plugin](https://github.com/adobe-commerce/aio-cli-plugin-commerce):
+1. Install the following plugins:
+   
+   * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
 1. Clone the Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
