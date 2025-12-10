@@ -21,10 +21,10 @@ When a customer views your storefront, the system combines your base catalog dat
 
 1. **Field handling**—Different field types are processed differently:
    
-   - **Override fields**—Text fields like name, description, and meta titles are replaced by the layer value (higher-priority layer wins).
+   - **Override fields**—Text fields like name, description, and meta titles are replaced with the values defined in the layer, with the higher-priority layer taking precedence.
    - **Merge fields**—Array fields like images, links, and attributes are combined from multiple layers, providing a unified response.
 
-1. **Priority resolution**—The order field determines which layer takes precedence. Lower order numbers have higher priority when multiple layers modify the same field (order 1 is the highest priority).
+1. **Priority resolution**—The order field determines which layer takes precedence. When multiple layers modify the same field, the layer with the lower order number has higher priority (for example, order 1 is the highest).
 
 ## Catalog layer use cases
 
