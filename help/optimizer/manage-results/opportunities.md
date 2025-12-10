@@ -1,7 +1,7 @@
 ---
 title: Opportunities
 description: The Opportunities page helps you identify and implement optimizations to improve site traffic, user engagement, and conversion rates through integration with Adobe Sites Optimizer.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Opportunities
 
@@ -18,7 +18,7 @@ The **Opportunities** page helps you identify and implement optimizations to imp
 - **Automated issue detection**—Sites Optimizer continuously scans product catalogs, search logs, and recommendation data to identify problems affecting discovery.
 - **AI-driven recommendations**—Receive intelligent suggestions to resolve detected issues.
 - **Impact categorization**—Issues are categorized by business impact (Search, Recommendations, Browse/Navigation, Product Data Quality).
-- **Dashboard reporting**—View issue trends, top impacted products/queries, and improvements over time.
+- **Dashboard reporting**—View issue trends, top impacted products or queries, and improvements over time.
 
 ## Get started
 
@@ -112,7 +112,7 @@ Follow these steps to implement an AI-suggested optimization:
 
    >[!NOTE]
    >
-   >The **Deploy optimization** button is only available for supported suggestion types, which currently is the duplicated H1 tags opportunity. For unsupported types, the checkbox is disabled and you must implement fixes manually in your catalog.
+   >The **Deploy Optimization** button is available only for supported suggestion types, currently limited to the Duplicated H1 Tags opportunity. For unsupported types, the checkbox is disabled, and you must apply fixes manually in your catalog.
 
 1. Click **Deploy optimization** then click **Deploy** to trigger the auto-fix process.
 
