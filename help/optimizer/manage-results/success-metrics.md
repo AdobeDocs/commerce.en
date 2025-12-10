@@ -46,7 +46,7 @@ The key performance indicators are:
 
 ## Using Success Metrics and Sites Optimizer together
 
-Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools that work together to help you improve your commerce site. Understanding the difference between these features helps you make better decisions and achieve measurable results.
+Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools designed to work together, helping you to enhance you commerce site's performance. Understanding the difference between these features helps you make better decisions and achieve measurable results.
 
 ### Key differences
 
@@ -74,7 +74,7 @@ The most effective approach combines both tools in a continuous improvement cycl
 
 ### Example workflow
 
-A merchant notices their conversion rate declining in Success Metrics. Here's how they might use both features to address it:
+A merchant notices their conversion rate declining in Success Metrics. Here's how they can use both features to address it:
 
 1. **Identify the problem**: The Success Metrics dashboard shows conversion rate dropped 15% over the past month.
 
@@ -274,7 +274,7 @@ To acquire more growth, your goal is to attract more new customers and improve a
 
 This tracking method has some known limitations:
 
-- **Cross-device users:** The same person visiting from different devices (desktop, mobile, tablet) or browsers is counted as multiple unique visitors since each device/browser receives a different identifier.
+- **Cross-device users:** The same person visiting from different devices (desktop, mobile, tablet) or browsers is counted as multiple unique visitors since each device and browser receives a different identifier.
 - **Cookie clearing:** Users who clear their browser cookies are assigned a new identifier and counted as new visitors again.
 - **Privacy settings:** Users with strict privacy settings or cookie blockers may not be tracked.
 
