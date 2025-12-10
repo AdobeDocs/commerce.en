@@ -165,6 +165,12 @@ Run the following command to download the workspace configuration file:
 aio console workspace download workspace.json
 ```
 
+Copy the workspace configuration file to the `scripts` directory:
+
+```bash
+cp workspace.json scripts/
+```
+
 ### Connect local workspace to remote workspace
 
 Link your local project to the remote workspace:
