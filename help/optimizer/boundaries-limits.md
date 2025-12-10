@@ -80,7 +80,7 @@ The following table provides the base limits for [!DNL Adobe Commerce Optimizer]
 
 * **Track your usage**: Use built-in metrics dashboards or CDN logs.
 * **Align with future growth**: Consider upcoming events, new storefronts, or promotional cycles.
-* **Plan for environments**: Add environments proactively—don't wait until development/testing workloads peak.
+* **Plan for environments**: Add environments proactively—do not wait until development or testing workloads peak.
 * **Bundle efficiently**: Buying multi-unit packs can simplify contracts and lower administrative overhead.
 
 ## Adobe Commerce Optimizer limits
