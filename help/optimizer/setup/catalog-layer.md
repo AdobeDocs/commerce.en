@@ -114,7 +114,7 @@ Before activating layers or changing priorities, you can preview how they affect
 
 1. Make adjustments to layer content or priority order as needed.
 
-## Activate or deactivate layers
+## Activate, deactivate, or delete layers
 
 You can enable or disable catalog layers without deleting them, allowing you to control when specific customizations are applied.
 
@@ -132,6 +132,10 @@ You can enable or disable catalog layers without deleting them, allowing you to 
    - **Inactive**—The layer is preserved but not applied to product data.
 
 1. The change takes effect immediately on your storefront.
+
+### Delete layer
+
+Use the data ingestion API to [delete a catalog layer](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
 
 ## Manage layer priorities
 
