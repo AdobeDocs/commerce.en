@@ -133,7 +133,7 @@ You can enable or disable catalog layers without deleting them, allowing you to 
 
 1. The change takes effect immediately on your storefront.
 
-### Delete layer
+**To delete a layer:**
 
 Use the data ingestion API to [delete a catalog layer](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
 
