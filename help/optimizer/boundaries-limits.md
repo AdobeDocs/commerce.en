@@ -59,7 +59,7 @@ This approach ensures your solution is accurately sized for your business needs.
 The following table provides the base limits for [!DNL Adobe Commerce Optimizer]. You can purchase add-on packages to extend base limits as needed.
 
 
-| **Metric**                            | **Description**                                             | **Base Limits (GMV $5M)** | **Add-On Unit**                                                               |
+| **Metric**                            | **Description**                                             | **Base Limits** | **Add-On Unit**                                                               |
 | ------------------------------------- | ----------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------- |
 | **B2C Orders per year** | Annual B2C order volume threshold | varies by GMV tier | Request higher GMV tier for increased order volume |
 | **B2B Order per year** | Annual B2B order volume threshold | varies by GMV tier | Request higher GMV tier for increased order volume |
