@@ -144,6 +144,8 @@ If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix 
 
 ![Catalog Layers](../assets/catalog-layers.png)
 
+The diagram shows a single row called **ASO Optimization**. This entry represents all opportunities you choose to auto-fix. Whether you auto-fix a single opportunity or multiple opportunities, they all appear in this single **ASO Optimization** row. Layers are specific to each catalog view, so the **Los Angeles** catalog view shown here applies its **ASO Optimization** layer only when that view is active.
+
 ### Important considerations
 
 Keep the following in mind when using auto-fix:
