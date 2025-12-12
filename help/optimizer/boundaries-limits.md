@@ -67,9 +67,9 @@ The following table provides the base limits for [!DNL Adobe Commerce Optimizer]
 | **Production environment**            | Number of production environments included | 1 | Per instance |
 | **Catalog Ingestion Rate**            | Number of catalog updates allowed per minute                | 1K updates/min            | +5K updates/min per pack per year OR +10K updates/min per pack per year       |
 | **Catalog Retrieval Rate**            | Monthly allowance for catalog retrieval API calls           | 10M calls/month           | +1M API calls/month per pack                                                  |
-| **Catalog SKU Count**                 | Maximum number of SKUs supported in the catalog             | 250K SKUs                 | +10K SKUs per pack                                                            |
+| **Catalog SKU Count**                 | Maximum number of SKUs supported in the catalog             | 250K SKUs                 | +100K SKUs per pack                                                            |
 | **Catalog Variations**                | Number of catalog variations (#Catalog Views × #PriceBooks) | 100 variations            | +100 variations per pack per year                                             |
-| **Storefront Content Requests**       | Monthly allowance for storefront content or API requests    | 3M requests/month         | +1M requests/month per pack                                                   |
+| **Storefront Content Requests**       | Monthly allowance for storefront content or API requests    | 2M requests/month         | +1M requests/month per pack                                                   |
 | **Dynamic Media Operations**          | Monthly allowance for dynamic media processing operations   | 5M operations/month       | +1M operations/month per pack                                                 |
 | **Environments (Production)**         | Additional production environment instances                 | 1 Production              | +1 Production environment instance                                            |
 | **Environments (Sandbox)**            | Additional sandbox environment instances                    | 2 Sandboxes               | +1 Sandbox instance                                                           |
