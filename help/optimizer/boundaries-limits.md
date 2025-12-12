@@ -61,8 +61,8 @@ The following table provides the base limits for [!DNL Adobe Commerce Optimizer]
 
 | **Metric**                            | **Description**                                             | **Base Limits** | **Add-On Unit**                                                               |
 | ------------------------------------- | ----------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------- |
-| **B2C Orders per year** | Annual B2C order volume threshold | varies by GMV tier | Request higher GMV tier for increased order volume |
-| **B2B Order per year** | Annual B2B order volume threshold | varies by GMV tier | Request higher GMV tier for increased order volume |
+| **B2C Orders per year** | Annual B2C order volume threshold | varies by tier | Request higher tier for increased order volume |
+| **B2B Order per year** | Annual B2B order volume threshold | varies by tier | Request higher tier for increased order volume |
 | **Sandbox environment**               | Number of sandbox environments included                     |   2  | Per instance |
 | **Production environment**            | Number of production environments included | 1 | Per instance |
 | **Catalog Ingestion Rate**            | Number of catalog updates allowed per minute                | 1K updates/min            | +5K updates/min per pack per year OR +10K updates/min per pack per year       |
