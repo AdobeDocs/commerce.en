@@ -65,7 +65,7 @@ The following table provides the base limits for [!DNL Adobe Commerce Optimizer]
 | **B2B Order per year** | Annual B2B order volume threshold | varies by tier | Request higher tier for increased order volume |
 | **Sandbox environment**               | Number of sandbox environments included                     |   2  | Per instance |
 | **Production environment**            | Number of production environments included | 1 | Per instance |
-| **Catalog Ingestion Rate**            | Number of catalog updates allowed per minute                | 1K updates/min            | +5K updates/min per pack per year OR +10K updates/min per pack per year       |
+| **Catalog Ingestion Rate**            | Number of catalog updates allowed per minute                | 1K updates/min,<br>up to 100K updates per day         | Option 1: +5K updates/min per pack per year, up to 500K updates per day<br>Option 2: +10K updates/min per pack per year, up to 1M updates per day     |
 | **Catalog Retrieval Rate**            | Monthly allowance for catalog retrieval API calls           | 10M calls/month           | +1M API calls/month per pack                                                  |
 | **Catalog SKU Count**                 | Maximum number of SKUs supported in the catalog             | 250K SKUs                 | +100K SKUs per pack                                                            |
 | **Catalog Variations**                | Number of catalog variations (#Catalog Views × #PriceBooks) | 100 variations            | +100 variations per pack per year                                             |
