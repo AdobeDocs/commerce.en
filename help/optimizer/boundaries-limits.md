@@ -26,7 +26,7 @@ Adobe Commerce Optimizer packages are sized by GMV (Gross Merchandise Value) tie
 
 To accurately size your Adobe Commerce Optimizer solution, follow these steps:
 
-1. Review the available packages, and start with a package that most closely matches your current GMV.
+1. Review the available packages, and start with a package that most closely matches your requirements.
 1. Review the capabilities and metrics to ensure they align with your business requirements.
 1. Purchase add-on packages for any metrics where you require additional capacity.
 
