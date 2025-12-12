@@ -22,7 +22,7 @@ Your product usage must remain within the defined boundaries. If your usage appr
 
 ## How to size your solution
 
-Adobe Commerce Optimizer packages are sized by GMV (Gross Merchandise Value) tiers, each with specific base limits for various metrics. Ask your Adobe representative for a list of available packages and their corresponding limits.
+Ask your Adobe representative for a list of available packages to determine which most closely matches your project 
 
 To accurately size your Adobe Commerce Optimizer solution, follow these steps:
 
