@@ -24,6 +24,16 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
   * [Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
   * [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
 
+## January 2026
+
+>[!BEGINSHADEBOX]
+
+### Enhancements
+
+* Added support for Google [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise), which provides advanced bot protection for Adobe Commerce as a Cloud Service storefronts. reCAPTCHA Enterprise uses adaptive risk analysis and machine learning to differentiate between human users and bots. This helps to prevent fraudulent activities, spam, and abuse on customer sites. <!-- CCSAAS-4242 -->
+
+>[!ENDSHADEBOX]
+
 ## November 2025
 
 >[!BEGINSHADEBOX]
