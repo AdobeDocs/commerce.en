@@ -58,7 +58,7 @@ This section guides you through the process of developing a ratings extension fo
     - From Cursor the cursor chat windiow, select **Agent** mode.
     - Enter the following prompt:
 
-   ```plain
+   ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
 
    Implement a REST API to handle GET ratings requests.
@@ -80,7 +80,7 @@ This section guides you through the process of developing a ratings extension fo
 
 1. Use the following example text to answer the agent's questions to set up randomized ratings data:
 
-   ```plain
+   ```shell-session
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
 
@@ -116,7 +116,7 @@ This section guides you through the process of developing a ratings extension fo
 
 1. Ask the agent to help you test the code locally.
 
-   ```plain
+   ```shell-session
    Test the ratings API locally on a dev server using cURL.
    ```
 
@@ -130,7 +130,7 @@ This section guides you through the process of developing a ratings extension fo
 
 1. After verifying the generated code, deploy the extension using the following prompt:
 
-   ```plain
+   ```shell-session
    Deploy the ratings API.
    ```
 
@@ -162,7 +162,7 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 To integrate the ratings API with an [!DNL Adobe Commerce] storefront powered by [!DNL Edge Delivery Services], ask the agent to create a service contract with requirements for the ratings API:
 
-```plain
+```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
@@ -217,7 +217,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. In a browser, navigate to the Apparel page:
 
-   ```plain
+   ```shell-session
    http://localhost:3000/apparel
    ```
 
@@ -225,7 +225,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. Use the following prompt with your agent:
 
-   ```plain
+   ```shell-session
    Implement product ratings in the storefront.
 
    Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
@@ -263,7 +263,7 @@ For further experimentation with this tutorial, use the following suggestions to
 
 Use the following prompt to your agent:
 
-```plain
+```shell-session
 Change the star fill color to red.
 ```
 
@@ -299,7 +299,7 @@ The following steps show how the agent handles complex UI features with visual r
 * If the modal does not appear, check the browser console for errors.
 * If positioning is off, ask the agent to fix it using the following format:
 
-   ```plain
+   ```shell-session
    adjust the modal position to be...
    ```
 
