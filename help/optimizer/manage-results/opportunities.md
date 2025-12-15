@@ -1,6 +1,6 @@
 ---
 title: Opportunities
-description: The Opportunities page helps you identify and implement optimizations to improve site traffic, user engagement, and conversion rates through integration with Adobe Sites Optimizer.
+description: Identify opportunities to boost traffic, engagement, and conversions through integration with Adobe Sites Optimizer for smart, data-driven site improvements.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Opportunities
