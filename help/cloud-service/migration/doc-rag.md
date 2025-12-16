@@ -40,10 +40,10 @@ For more information on index selection, refer to [Automatic index selection](#a
 
 The production endpoint is protected by [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview), which includes the following protections:
 
-- Web Application Firewall (WAF) with Microsoft Default RuleSet 2.1 and Bot Manager RuleSet 1.0
-- Geo-blocking for US embargoed regions (Cuba, Iran, North Korea, Syria, Crimea, Luhansk, Donetsk)
-- DDoS protection at the edge
-- API management backend locked down to only accept traffic from Front Door
+* Web Application Firewall (WAF) with Microsoft Default RuleSet 2.1 and Bot Manager RuleSet 1.0
+* Geo-blocking for US embargoed regions (Cuba, Iran, North Korea, Syria, Crimea, Luhansk, Donetsk)
+* DDoS protection at the edge
+* API management backend locked down to only accept traffic from Front Door
 
 For different security requirements, you can use a custom endpoint. See [Custom Front Door endpoint](#custom-front-door-endpoint) for more information.
 
