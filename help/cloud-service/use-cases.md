@@ -284,30 +284,36 @@ Adobe Commerce's Generate Variations leverages Generative AI to automate high-qu
 Use the following suggestions to resolve any issues you face when attempting these tutorials.
 
 * If you need guidance on commands or flags:
+
   1. Run `aio --help` to see all available commands and flags.
   1. For specific commands, use the `--help` flag. For example:
      * `aio console --help`
      * `aio commerce –help`
  
 * If you encounter invalid login issues:
-  1. Run `aio config clear `.
-  1. Run `aio auth login –-force `.
+
+  1. Run `aio config clear`.
+  1. Run `aio auth login –-force`.
   1. Login in your browser.
   1. Select your profile.
   1. Switch back to the terminal to continue.
 
 * If your `init` command fails:
+
   1. Run `aio api-mesh delete`.
   1. Re-run `aio commerce init`.
 
 * If you selected the wrong org, project, or workspace before running the `init` command:
+
   1. Run `aio console org select`.
   1. Run `aio console project select`.
   1. Run `aio console workspace select`.
 
 * If you have an invalid tenant selection:
+
   1. Cancel the current CLI execution by pressing **Ctrl-C**.
   1. Run `aio commerce init`.
 
 * If you encounter an invalid API Mesh installation:
+
    * Run `aio api-mesh update mesh-config.json`.

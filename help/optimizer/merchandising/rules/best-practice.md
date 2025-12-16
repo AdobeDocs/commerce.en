@@ -20,3 +20,4 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
 - Tailor search results based on individual shopper behavior using [intelligent ranking](add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on.
+- Always use the "Test your rule" panel to preview how your intelligent ranking strategy affects actual search results for different queries.

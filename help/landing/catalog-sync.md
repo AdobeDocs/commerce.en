@@ -8,13 +8,13 @@ exl-id: 99f96b93-b036-490c-8c57-40463a0de365
 
 >[!NOTE]
 >
-> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+, and [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
+> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+, and [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
 
 Adobe Commerce uses indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
 
 The Catalog Sync service moves product data from an [!DNL Adobe Commerce] instance to the [!DNL Commerce Services] platform on an ongoing basis to keep the data up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the command-line interface to trigger a catalog sync and to reindex product data for consumption by [!DNL Commerce Services]. See [Command-line Interface Reference](../data-export/data-export-cli-commands.md) in the _SaaS Data Export_ Guide.
 
-## Accessing the Catalog Sync dashboard
+## Access the Catalog Sync dashboard
 
 To access the Catalog Sync dashboard, select **System** > _Data Transfer_ > **Catalog Sync**.
 

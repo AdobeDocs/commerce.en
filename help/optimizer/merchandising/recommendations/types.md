@@ -13,13 +13,43 @@ Adobe Commerce Optimizer provides a large set of recommendations that you can de
 - [Popularity](#popularity)
 - [High-performing](#highperf)
 
+As a best practice, Adobe recommends the following guidelines when using recommendations:
+
+- Diversify your recommendation types. Customers start ignoring recommendations if they suggest the same products over and over again.
+
+- Do not deploy the same recommendations to your cart page and order confirmation page. Consider using `Most Added to Cart` for the cart page and `Bought This, Bought That` for the order confirmation page.
+
+- Keep your site tidy. Do not deploy more than three recommendation units on the same page.
+
+- If your store sells clothing, the `More like this` recommendation can suggest gender-specific products that do not match the gender of the product being viewed. Consider using this recommendation type only for non-clothing categories.
+
 >[!NOTE]
 >
->For more information about the events described in this article, see [events](../../setup/events/overview.md).
+>For more information about the events described in this article, see [storefront events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) in the developer documentation.
+
+## Data requirements and behavior
+
+Product Recommendations is a data-driven system that relies on behavioral data collected from your storefront. The quality and quantity of recommendations depend on the amount of event data available.
+
+>[!IMPORTANT]
+>
+>Most recommendation types require sufficient behavioral data (such as product views, add-to-cart actions, and purchases) to generate meaningful results. The system typically needs several days of active shopper activity to build accurate recommendations. See [readiness indicators](create.md#readiness-indicators) to learn how site traffic helps to populate the various recommendation types.
+
+### What happens with insufficient data
+
+When there is not enough event data to generate recommendations, the system can:
+
+- Return empty results for the recommendation unit.
+- Trigger [backup recommendations](../../setup/events/overview.md#backup-recommendations), such as showing `Most viewed` products when personalized recommendations are not yet available.
+- Display fewer products than [configured](create.md) in the recommendation unit.
 
 ## Personalized {#personalized}
 
 These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed for a jacket or purchased a jacket on your site, these recommendations essentially pick up where they left off and recommend other jackets or similar products.
+
+>[!NOTE]
+>
+>Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history will see [backup recommendations](../../setup/events/overview.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
 
 |Type|Description|
 |---|---|
@@ -33,6 +63,8 @@ These recommendation types are social-proof driven to help shoppers find what ot
 >[!NOTE]
 >
 >The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types do not use a simple-occurrence metric but rather a more sophisticated collaborative-filtering algorithm that looks for *interesting similarities* that are not skewed towards popular products. The data used to inform these recommendation types is based on the shopper's aggregate behavior derived from multiple sessions on your site. The data is not based on shopper behavior derived from a single in-session occurrence on your site. These recommendation types help shoppers find those adjacent products that might not be obvious to pair with the currently viewed product.
+>
+>These recommendation types require substantial cross-product interaction data to identify meaningful correlations. Stores with limited product catalog diversity or low traffic may see fewer recommendations until sufficient behavioral patterns emerge.
 
 |Type|Description|
 |---|---|
@@ -45,6 +77,10 @@ These recommendation types are social-proof driven to help shoppers find what ot
 
 These recommendation types recommend products that are the most popular or trending within the last seven days.
 
+>[!NOTE]
+>
+>Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types may return limited results or no results until adequate behavioral data has been collected. Monitor your [data readiness indicator](../../manage-results/recommendation-performance.md) to ensure optimal performance.
+
 |Type|Description|
 |---|---|
 |Most viewed|Recommends products that were viewed the most by counting the number of sessions where a view action occurred within the last seven days.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
@@ -56,9 +92,14 @@ These recommendation types recommend products that are the most popular or trend
 
 These recommendation types recommend top performing products based on success criteria like add-to-cart or conversion rates.
 
+>[!NOTE]
+>
+>High-performing recommendation types rely on conversion data (purchases and add-to-cart actions). New stores or stores with low conversion volumes may need to collect data over 7-14 days before these recommendations become effective.
+
 |Type|Description|
 |---|---|
 |View to purchase conversion|Recommends products with the highest view-to-purchase conversion rate. Of all the shopper sessions that registered a product view, what is the proportion that eventually registered a purchase by the shopper.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> -Top sellers<br/>- Popular products<br/>- You might be interested in |
 |View to cart conversion| Recommends products with the highest view-to-cart conversion rate. Of all the shopper sessions that registered a product view, what is the proportion that eventually registered an add to cart by the shopper.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Top sellers<br/>- Popular products<br/>- You might be interested in|
 |Most purchased|Often referred to as "Top Sellers", this recommendation type counts the number of sessions where a place-order action occurred within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
+|Most added to cart|Recommends products most frequently added to carts by shoppers within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
 |Most added to cart|Recommends products most frequently added to carts by shoppers within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|

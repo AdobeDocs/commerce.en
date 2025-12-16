@@ -21,7 +21,7 @@ Product recommendations are surfaced on the storefront as units with labels, suc
 
 Data collection for the purposes of [!DNL Product Recommendations] does not include any personally identifiable information (PII). Also, all user identifiers like cookie IDs and IP addresses are strictly anonymized. To learn more, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-[!DNL Product Recommendations] users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
+[!DNL Product Recommendations] users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) for more data about data syncing.
 
 ## Product recommendations versus product relationships
 

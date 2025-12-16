@@ -19,6 +19,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_October 1, 2025_
+
+![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
+
 _April 29, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the **Export to CSV** report on the [**Performance**](./performance.md) tab was not including all data specified in the date range.
@@ -43,7 +47,7 @@ _January 31, 2025_
 
 _September 19, 2024_
 
-![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+![New](../assets/new.svg) Beta release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](workspace.md#layered-search-and-expansion-of-search-types).
 
 _September 4, 2024_
 
@@ -87,6 +91,15 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.6.0
+
+_October 9, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) GA release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](workspace.md#layered-search-and-expansion-of-search-types).
+![Fix](../assets/fix.svg) The `ProductInterface` object in the [Live Search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) service has been deprecated. Use the `ProductView` object in the catalog service instead.
 
 ## [!DNL Live Search] 4.5.0
 
@@ -170,7 +183,7 @@ _March 19, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### New Features
+### New features
 
 ![New](../assets/new.svg) Added language support for Polish.
 ![New](../assets/new.svg) [!DNL Live Search] now supports PHP 8.3 for installations running Adobe Commerce 2.4.4.
@@ -181,9 +194,9 @@ _February 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### New Features
+### New features
 
-![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
+![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
 
 ### Updates
 
@@ -197,7 +210,7 @@ _November 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### New Features
+### New features
 
 ![New](../assets/new.svg) [!DNL Live Search] now supports color swatches in the PLP widget.
 ![New](../assets/new.svg) [!DNL Live Search] now displays the category name rather than the category Id.
@@ -267,7 +280,7 @@ _August 7, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-#### New Features
+#### New features
 
 ![New](../assets/new.svg) The following values have been added to the `storeDetails` object:
 
@@ -296,7 +309,7 @@ _March 14, 2023_
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-#### New Features
+#### New features
 
 ![New](../assets/new.svg) Product Item Card in Rules preview 
 ![New](../assets/new.svg) [Product Listing Page widget](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)

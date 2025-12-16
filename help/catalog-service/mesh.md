@@ -44,7 +44,7 @@ The API Mesh allows users to consume outside data sources to enhance your Adobe 
 ### Enable tier prices
 
 In this example, the API Mesh is used to enable tier prices in Adobe Commerce.
-Replace the `name `, `endpoint`, and `x-api-key` values.
+Replace the `name`, `endpoint`, and `x-api-key` values.
 
 ```json
 {
@@ -159,7 +159,7 @@ query {
 
 ### Get an entity ID
 
-This Mesh appends the `entityId` to the ProductView interface. Replace the `name `, `endpoint`, and `x-api-key` values.
+This Mesh appends the `entityId` to the ProductView interface. Replace the `name`, `endpoint`, and `x-api-key` values.
 
 ```json
 {

@@ -9,8 +9,6 @@ When [!DNL Live Search] is [installed](install.md), a [!DNL popover] appears in 
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
-By default, [!DNL Live Search] supports [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
-
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 >[!TIP]
@@ -67,7 +65,7 @@ You can use the following class selectors to style the container and product ele
 - `.livesearch.product-name`
 - `.livesearch.product-price`
 
-### Container Class Selectors
+### Container class selectors
 
 #### .livesearch.popover-container
 
@@ -77,7 +75,7 @@ You can use the following class selectors to style the container and product ele
 
 ![View all footer](assets/livesearch-view-all-footer.png)
 
-### Product Class Selectors
+### Product class selectors
 
 #### .livesearch.products-container
 

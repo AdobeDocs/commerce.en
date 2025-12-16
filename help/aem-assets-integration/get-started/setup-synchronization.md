@@ -43,6 +43,10 @@ For the initial setup, use the default *Match by product sku* rule.
 
       ![AEM Assets Integration enable the integration](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
+>[!INFO]
+>
+> The AEM Assets integration only supports configuration at the global (default) scope. Website-level configuration is not supported. When you attempt to configure the integration at the Website level, the system ignores website-level settings and uses the global configuration values instead.
+
 1. Enter the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]**.
 
    Edit the configuration values by removing the selection from *[!UICONTROL Use system value]*.

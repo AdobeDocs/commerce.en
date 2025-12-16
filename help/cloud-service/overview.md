@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce as a Cloud Service] overview'
 description: Learn about the key features and benefits of [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
-role: Admin, Architect, Developer, User, Leader
+role: Admin, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 ---
@@ -74,7 +74,7 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 
 - [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
 - [Product Recommendations](../optimizer/merchandising/recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
-- [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md)—Manage large and complex product catalogs with flexible data modeling to deliver highly performant, flexible commerce catalogs aligned with business structure and go-to-market strategies. Use with [Commerce Optimizer](../optimizer/overview.md) to optimize catalog performance and improve conversion rates.
+- [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Product Visuals powered by AEM Assets

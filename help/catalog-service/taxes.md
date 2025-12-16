@@ -26,7 +26,7 @@ Verify that the Catalog Service is working by checking a Product Detail Page.
 
 If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) topic in the API Mesh developer guide.
 
-In the `mesh.json` file, replace the `name `, `endpoint`, and `x-api-key` values.
+In the `mesh.json` file, replace the `name`, `endpoint`, and `x-api-key` values.
 
 ```json
 {

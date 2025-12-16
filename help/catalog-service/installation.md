@@ -141,7 +141,7 @@ After you install the [!DNL Catalog Service], complete the following tasks to in
 
    Commerce Services Connector setup is a one-time process required to use Adobe Commerce services like the Catalog Service, Live Search, and Product Recommendations. If you have already configured the connector for another service, skip this step.
 
-1. Perform an initial data sync from the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+1. Perform an initial data sync from the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
    The initial sync can take from a few minutes to hours depending on the catalog size. You can monitor the synchronization status from the Data Management dashboard. After the initial sync, the Catalog exports product data on an ongoing basis to keep the services up to date.
 
@@ -157,4 +157,4 @@ To ensure that the catalog export is running correctly:
 
 ### Monitor and troubleshoot data synchronization
 
-From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.

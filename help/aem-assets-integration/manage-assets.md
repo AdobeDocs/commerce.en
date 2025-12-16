@@ -41,7 +41,7 @@ To manage product-related images, all changes must be made directly in **AEM Ass
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
+Check [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
 
 ## Content images
 
@@ -113,7 +113,7 @@ This integration ensures that merchants can effortlessly manage product videos i
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
+Check [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
 
 ## Category images
 

@@ -22,6 +22,14 @@ Updates include:
 
 ## Current major version
 
+## 103.4.15 Release
+
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension,  see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+
+## 103.4.14 Release
+
+![Fix](../assets/fix.svg) Resolved an issue where the [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) job could fail if the `cde_product_overrides_feed_cl` table is missing. The fix ensures stable reindexing and prevents job failures related to this table in multi-tenant environments." <!--MDEE-1175-->
+
 ## 103.4.13 Release
 
 ![Fix](../assets/fix.svg) Fixed issue where editing Web Configuration settings caused Product Feed Index to reset. <!--MDEE-1154-->
@@ -208,14 +216,18 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 ![New](../assets/new.svg) Renamed immediate export feed cron-jobs to `*_feed_resend_failed_items`.
 
 ![New](../assets/new.svg) Renamed immediate export feeds, indexer view IDs, and change log tables.
+
 - feed tables (and indexer view IDs):
+
   - `catalog_data_exporter_products` -> `cde_products_feed`
   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
   - `catalog_data_exporter_categories` -> `cde_categories_feed`
   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+
 - change log table names - Follows the same naming pattern as the feed tables but change log table names add a `_cl` suffix.  For example `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+
 If you have custom code that references any of these entities, update the references with the new names to ensure that your code continues to function correctly.
 
 ![Fix](../assets/fix.svg) Set `modified_at` field in feed data only for feeds that require it.
