@@ -32,9 +32,11 @@ In this section, you create a catalog view, select a [policy](policies.md), and 
 
 Before creating a catalog view, ensure you have:
 
-- [Created policies](policies.md) to define product filters
+- [Created policies](policies.md) to define product filters.
 
-- [Ingested price books](pricebooks.md) for pricing
+- [Defined catalog layers](catalog-layer.md) to define variants of your products.
+
+- [Ingested price books](pricebooks.md) for pricing.
 
 1. From the left menu, go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
 
@@ -44,6 +46,7 @@ Before creating a catalog view, ensure you have:
 
     - **Name**—Enter the name of the catalog view, for example `Celport`. ​
     - **Catalog sources**—Select the catalog source (locale), for example `en-US`.
+    - **Catalog layers**-Review ingested layers and priority.
     - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
 1. Select the price book to link to the catalog view.
@@ -57,6 +60,20 @@ Before creating a catalog view, ensure you have:
 The Catalog views page updates to display the new catalog view.​
 
 After you complete these steps, the catalog view is now configured to display products and pricing based on your selected sources and policies.
+
+## Catalog layers
+
+Catalog layers allow you to modify product data within a catalog view without changing the original source data. Layers apply changes to specific product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to safely customize products and revert changes at any time.
+
+Common use cases for catalog layers include:
+
+- **SEO optimization**—Override product meta titles and descriptions based on AI recommendations from [Sites Optimizer](../manage-results/opportunities.md)
+- **Seasonal campaigns**—Temporarily update product names, descriptions, or images for promotions
+- **Regional customization**—Display different product information based on geographic location or language
+- **A/B testing**—Test different product presentations to optimize conversion rates
+- **Multi-brand management**—Customize product attributes for different brand catalog views
+
+To learn more about creating, managing, and prioritizing catalog layers, see [Catalog layers](catalog-layer.md).
 
 ## Manage catalog view
 
@@ -160,3 +177,9 @@ The filtered catalog data is delivered to various destinations including Edge De
 >[!INFO]
 >
 >For detailed information about catalog data ingestion and delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
+
+## More like this
+
+- [Catalog layers](catalog-layer.md) - Learn how to modify product data without changing the original source
+- [Policies](policies.md) - Create policies to filter products in catalog views
+- [Price books](pricebooks.md) - Manage pricing structures for different customer segments

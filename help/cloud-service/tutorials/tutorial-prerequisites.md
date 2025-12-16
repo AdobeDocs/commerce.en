@@ -121,7 +121,7 @@ cp env.dist .env
 
 Open the `.env` file in a text editor and add the following OAuth credentials:
 
-```text
+```shell-session
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -137,7 +137,7 @@ You can copy these values from the **[!UICONTROL Credential details]** page in [
 
 Add the following Commerce instance details to your `.env` file:
 
-```text
+```shell-session
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -153,7 +153,7 @@ To find these values:
 
 Set a temporary value for the event prefix:
 
-```text
+```shell-session
 EVENT_PREFIX=test
 ```
 
@@ -325,7 +325,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```text
+   ```shell-session
    Search the storefront docs for information about slots
    ```
 
