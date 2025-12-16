@@ -85,7 +85,7 @@ Before installing, make sure you have:
    npm install
    ```
 
-1. Create or update `.cursor/mcp.json` in your Commerce project directory (not globally):
+1. Create or update `.cursor/mcp.json` in your Commerce project directory (not globally) to include the `commerce-extensibility-tools` MCP server:
 
    ```json
    {
