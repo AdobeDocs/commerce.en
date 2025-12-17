@@ -31,6 +31,8 @@ The following table describes what documentation is currently indexed by the RAG
 
 For more information on index selection, refer to [Automatic index selection](#automatic-index-selection-recommended) and [Explicit index selection](#explicit-index-selection).
 
+For detailed information on the documentation included in each index, refer to the [ingested source list](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md).
+
 ## Security and privacy
 
 * **IMS authentication** - All API calls use Adobe IMS OAuth2 tokens.
