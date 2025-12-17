@@ -21,11 +21,11 @@ This page lists the prerequisites and setup steps for tutorials using [!DNL Adob
    npm install -g @adobe/aio-cli
    ```
 
-* Install the Commerce plugin
+* Install the [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime), and [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) plugins:
 
-  ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
-  ```
+   ```bash
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
+   ```
 
 * Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
 
@@ -121,7 +121,7 @@ cp env.dist .env
 
 Open the `.env` file in a text editor and add the following OAuth credentials:
 
-```text
+```shell-session
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -137,7 +137,7 @@ You can copy these values from the **[!UICONTROL Credential details]** page in [
 
 Add the following Commerce instance details to your `.env` file:
 
-```text
+```shell-session
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -153,7 +153,7 @@ To find these values:
 
 Set a temporary value for the event prefix:
 
-```text
+```shell-session
 EVENT_PREFIX=test
 ```
 
@@ -163,6 +163,12 @@ Run the following command to download the workspace configuration file:
 
 ```bash
 aio console workspace download workspace.json
+```
+
+Copy the workspace configuration file to the `scripts` directory:
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### Connect local workspace to remote workspace
@@ -319,7 +325,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```text
+   ```shell-session
    Search the storefront docs for information about slots
    ```
 

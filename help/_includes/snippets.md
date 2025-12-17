@@ -24,7 +24,7 @@
 >[!ENDSHADEBOX]
 -->
 
-## IMS Identity and Single Sign-On Information {#ims-identity-and-sso-config}
+## IMS identity and single sign-on information {#ims-identity-and-sso-config}
 
 Adobe Commerce identity management and authentication is managed by the Adobe Identity Management System (IMS) through the Adobe Admin Console.
 

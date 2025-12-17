@@ -11,7 +11,7 @@ Out of the box, the connector offers reliable data sync capabilities and the fle
 
 For an end-to-end video tutorial series, see [Learn about the Salesforce Commerce cloud starter kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
-## Key Capabilities
+## Key capabilities
 
 * **Catalog Data Sync:** Push product data—including variants, price books, and structures—from Salesforce Commerce B2C into Adobe Commerce Optimizer to keep storefronts and experience-driven applications up to date.
 * **Price Sync:** Import and manage price data directly from Salesforce Commerce B2C.
@@ -30,7 +30,7 @@ For an end-to-end video tutorial series, see [Learn about the Salesforce Commerc
 >
 >The connector is specifically designed for Salesforce Commerce Cloud B2C. It does not support Salesforce B2B or D2C products, which are built on different technology stacks.
 
-## Who Benefits from the Salesforce Connector?
+## Who benefits from the Salesforce Connector?
 
 The [!DNL Salesforce Commerce Connector] is ideal for:
 
@@ -41,7 +41,7 @@ The [!DNL Salesforce Commerce Connector] is ideal for:
 * **AEM customers** managing product catalogs from Salesforce Commerce B2C while using Adobe Commerce storefront with Edge Delivery Services
 * **Retailers with multi-locale requirements** syncing localized product information across markets and languages
 
-## Use Cases
+## Use cases
 
 The connector supports several key use cases:
 
@@ -76,7 +76,7 @@ The following diagram illustrates the high-level data flow for the integration:
 
 ![Salesforce Commerce Connector Architecture](../assets/sfcc_starter_kit.png){zoomable="yes"}
 
-### Key Components
+### Key components
 
 The [!DNL Commerce Optimizer SFCC Connector] consists of several key components:
 
@@ -84,7 +84,7 @@ The [!DNL Commerce Optimizer SFCC Connector] consists of several key components:
 * **Custom SFCC Cartridge** - Required cartridge that extends your Salesforce Commerce Cloud instance with APIs needed for data extraction.
 * **Management UI** - Web interface for monitoring sync status and managing connector operations.
 
-### Sync Process
+### Sync process
 
 The connector supports multiple sync modes.
 
@@ -98,13 +98,13 @@ The connector supports multiple sync modes.
 
 When planning your implementation, consider these key factors:
 
-### Data Mapping and Attributes
+### Data mapping and attributes
 
 * **Searchable attributes:** Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
 * **Attribute mapping:** Plan the mapping of Salesforce Commerce B2C product attributes to [!DNL Commerce Optimizer] metadata based on your business requirements.
 * **Default searchable fields:** The connector automatically makes core attributes (`name`, `description`, `ID`) searchable by default.
 
-### Sync Scope
+### Sync scope
 
 * **Site selection:** Salesforce Commerce B2C has a concept of sites that catalogs attach to. During full sync, select which Salesforce site to sync.
 * **Locale management:** Each Salesforce Commerce locale results in a separate product ingestion cycle in [!DNL Commerce Optimizer].
@@ -136,6 +136,6 @@ The [!DNL Commerce Optimizer SFCC Connector] is open source and available for cu
 
 These repositories provide complete source code, detailed documentation, and examples for implementing and customizing the connector.
 
-## Next Steps
+## Next steps
 
 Ready to integrate your Salesforce Commerce Cloud data with Adobe Commerce Optimizer? Start by reviewing the detailed implementation guide in the [ACO SFCC Starter Kit repository](https://github.com/adobe-commerce/aco-sfcc-starter-kit) and ensure you have the necessary prerequisites in place.

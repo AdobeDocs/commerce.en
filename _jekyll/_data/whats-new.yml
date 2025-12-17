@@ -1,9 +1,22 @@
 ---
-title: What's New
+title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Dec 5 15:40:03 2025
+updated: Fri Dec 12 15:40:18 2025
 entries:
+- description: Updating the recommendations feature in the Commerce Optimizer documentation
+    as the [preview pane](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations)
+    is now supported.
+  versions: ''
+  type: technical
+  date: December 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/336
+  merge_commit: ae99230552e7466a3a384c77e1e67e0cd981de6a
+  contributor: emarr
+  membership:
+  labels:
+  - editorial
+  - technical
 - description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for the November Adobe Commerce as a Cloud Service release.
   versions: ''

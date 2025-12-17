@@ -127,7 +127,7 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 >
 >The storefront search experience is affected by multiple configurations working together, such as facets, synonyms, and search / category merchandising rules, which can lead to results that differ from those seen when testing individual configurations in the Admin. While Admin testing isolates specific configuration areas, the storefront applies all relevant configurations together, resulting in a more complex and realistic search output.
 
-## Manual Ranking
+## Manual ranking
 
 Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
@@ -207,7 +207,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 | Any | Changes all logical operators in the rule to `OR` and returns the set of matching products. |
 | All | Changes all logical operators in the rule to `AND` and returns the set of matching products. |
 
-### Manual Ranking
+### Manual ranking
 
 |Event |Description |
 |--- |--- |

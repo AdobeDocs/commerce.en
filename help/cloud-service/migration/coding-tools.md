@@ -36,10 +36,14 @@ Using the AI coding tools provides the following benefits:
    npm install -g @adobe/aio-cli
    ```
 
-1. Install the [Adobe I/O CLI Commerce plugin](https://github.com/adobe-commerce/aio-cli-plugin-commerce):
+1. Install the following plugins:
+   
+   * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
 1. Clone the Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
@@ -62,7 +66,7 @@ Using the AI coding tools provides the following benefits:
 
   The setup process will prompt you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
 
-  ```terminal
+  ```shell-session
   ? Where would you like to setup the tools?
   ❯ Current directory
     New directory
@@ -70,7 +74,7 @@ Using the AI coding tools provides the following benefits:
 
   When selecting the coding agent, Adobe recommends selecting `Cursor` for the best development experience:
 
-  ```terminal
+  ```shell-session
   ? Which coding agent would you like to use?
   ❯ Cursor
     Copilot
@@ -80,7 +84,7 @@ Using the AI coding tools provides the following benefits:
 
   When selecting the package manager, Adobe recommends using `npm` for consistency:
 
-  ```terminal
+  ```shell-session
   ? Which package manager would you like to use?
   ❯ npm
     yarn
@@ -158,7 +162,7 @@ aio auth login
 
 1. Verify the server status - the Commerce extensibility MCP Server should appear as:
 
-   ```terminal
+   ```shell-session
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -166,7 +170,7 @@ aio auth login
 
 1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
-```terminal
+```shell-session
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -185,7 +189,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Verify the server status. The `MCP:commerce-extensibility` output should match the following:
 
-   ```terminal
+   ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -199,7 +203,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
-   ```terminal
+   ```shell-session
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -207,7 +211,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 The following sample prompt creates an extension to send notifications when an order is placed.
 
-```terminal
+```shell-session
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -220,7 +224,7 @@ Payment Type -> pType
 
 In addition to prompting, you can use the `/search-commerce-docs` command to search documentation in conversations with your agent. For example:
 
-```text
+```shell-session
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -294,7 +298,7 @@ The following four-phase protocol is automatically enforced by the rules system.
 
 For complex development involving multiple runtime actions, touchpoints, or integrations, explicitly request that the AI tools create a detailed implementation plan. When you see a high-level plan in [Phase 2](#protocol) that involves multiple components, ask for a detailed implementation plan to break it down into manageable tasks:
 
-```terminal
+```shell-session
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -316,7 +320,7 @@ The tooling defaults to MCP tools, but in certain circumstances, it can use CLI 
 
 If you see CLI commands being used and want to use MCP tools instead, use the following prompt:
 
-```terminal
+```shell-session
 Use only MCP tools and not CLI commands
 ```
 
@@ -336,7 +340,7 @@ It is important to question unnecessary complexity created by the AI tools.
 
 When unnecessary files are added (`validator.js`, `transformer.js`, `sender.js`) for simple read-only endpoints, use the following prompts:
 
-```terminal
+```shell-session
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -392,47 +396,47 @@ Ask for help with testing. The tools can help with debugging, log analysis, and 
 
 **Test runtime actions**:
 
-```terminal
+```shell-session
 Help me test the customer-created runtime action running locally
 ```
 
 **Debug failures**:
 
-```terminal
+```shell-session
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Check logs**:
 
-```terminal
+```shell-session
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Create test payloads**:
 
-```terminal
+```shell-session
 Generate test data for this Commerce event
 ```
 
-```terminal
+```shell-session
 Create a test payload for the customer_save_after event
 ```
 
 **Find runtime endpoints**:
 
-```terminal
+```shell-session
 What's the URL for this deployed action?
 ```
 
 **Handle authentication**:
 
-```terminal
+```shell-session
 How do I authenticate with this external API?
 ```
 
 **Troubleshoot**:
 
-```terminal
+```shell-session
 Help me debug why this action is returning 500 errors
 ```
 
@@ -467,19 +471,19 @@ Deploy only modified actions to speed up development. This will reduce the risk 
 
 After major changes, leverage the tools to clean up orphaned actions. Let the AI tooling handle the cleanup process systematically, it can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
 
-```terminal
+```shell-session
 Help me identify and clean up orphaned runtime actions
 ```
 
 Request the AI tooling to list deployed actions and identify unused ones
 
-```terminal
+```shell-session
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Have the AI tools remove orphaned actions using appropriate commands
 
-```terminal
+```shell-session
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
