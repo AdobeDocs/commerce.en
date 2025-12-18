@@ -210,7 +210,7 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. Click [!UICONTROL **Add**] and enter the product SKU you want to add the asset to.
 
-   ![Add SKU field for linking asset to product](./assets/add-to-sku.png){width="600" zoomable="yes"}
+   ![Add SKU for linking asset to product](./assets/add-to-sku.png){width="600" zoomable="yes"}
 
 1. Select the position for the asset and the asset type. 
 
