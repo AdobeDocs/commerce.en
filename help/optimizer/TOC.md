@@ -14,6 +14,7 @@ recommendations: noDisplay
 - [Boundaries and limitations](boundaries-limits.md)
 - [Release notes](release-notes.md)
 - Managing Results {#manage-results}
+   - [Opportunities](./manage-results/opportunities.md)
    - [Success Metrics](./manage-results/success-metrics.md)
    - [Search Performance](./manage-results/search-performance.md)
    - [Recommendations Performance](./manage-results/recommendation-performance.md)
@@ -43,6 +44,7 @@ recommendations: noDisplay
       - [Best practices](./merchandising/synonyms/best-practice.md)
 - Store Setup {#setup}
    - [Catalog Views](./setup/catalog-view.md)
+   - [Catalog Layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price Books](./setup/pricebooks.md)
    - [Data Sync](./setup/data-sync.md)
