@@ -87,6 +87,8 @@ Product Visuals is available out-of-the-box with [!DNL Adobe Commerce as a Cloud
 
 Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
+Check the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
+
 ### Product Visuals or AEM Assets
 
 The following comparison helps you select the best option for your content supply chain needs:
@@ -135,8 +137,6 @@ The following comparison helps you select the best option for your content suppl
     </td>
   </tr>
 </table>
-
-See the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
 
 ## Developer Platform
 
