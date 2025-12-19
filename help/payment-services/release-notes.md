@@ -93,6 +93,16 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.13.1
+
+_December 18, 2025_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6355 --> Fixed an issue where merchants could not select a shipping method during checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6347 --> Improved checkout resilience by removing unnecessary API calls.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6368 --> Implemented a fallback mechanism for loading the Payments SDK when the primary domain is unavailable, ensuring credit card fields remain accessible during checkout.
+
 ## v2.13.0
 
 _November 10, 2025_
