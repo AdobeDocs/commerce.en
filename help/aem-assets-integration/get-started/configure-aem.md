@@ -14,7 +14,7 @@ Complete the following steps to configure the AEM Assets project with the requir
 
 1. [Complete the installation steps to configure the AEM Assets project to support Commerce metadata](#step-1-install-the-assets-commerce-package)
 
-## AEM Commerce **assets-commerce** package contents
+## AEM Commerce assets-commerce package contents
 
 Adobe provides an AEM Commerce package code `assets-commerce` to add Commerce namespace and Metadata Schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
 
@@ -52,7 +52,7 @@ You need the following resources and permissions to deploy the `assets-commerce`
 
 * The **IMS Org ID** configured for your Commerce instance.
 
-## Step 1: Install the **assets-commerce** package
+## Step 1: Install the assets-commerce package
 
 1. Navigate to the AEM Cloud Manager, select a program, and [create production and staging environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) that you want to integrate with Adobe Commerce.
 
@@ -80,7 +80,7 @@ You need the following resources and permissions to deploy the `assets-commerce`
 
    * Product SKUs and the `Eligible for Commerce` fields are visible. 
 
-### **Commerce** tab is not visible in properties
+### Commerce tab is not visible in properties
 
 If the **Commerce** tab does not appear in properties, you must manually create one in the metadata schema editor.
 
