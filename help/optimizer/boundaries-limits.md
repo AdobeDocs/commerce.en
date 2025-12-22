@@ -28,14 +28,7 @@ Your usage must stay within these limits. Exceeding them can cause:
 Follow these best practices to stay within limits and avoid service disruptions:
 
 - **Review your limits**—Understand your [capacity limits](#adobe-commerce-optimizer-limits) before launching new storefronts or campaigns.
-* **Track your usage**: Use built-in metrics dashboards or CDN logs.
-- **Plan for peak periods**—Before sales events, product launches, or seasonal promotions, verify you have sufficient capacity.
-- **Provision environments early**—Add sandbox or production environments before development and testing workloads increase.
-
-Follow these best practices to stay within limits and avoid service disruptions:
-
-- **Review your limits**—Understand your [capacity limits](#adobe-commerce-optimizer-limits) before launching new storefronts or campaigns.
-- **Monitor usage trends**—Check CDN logs and built-in metrics dashboards.
+- **Track your usage**—Use built-in metrics dashboards or CDN logs.
 - **Plan for peak periods**—Before sales events, product launches, or seasonal promotions, verify you have sufficient capacity.
 - **Provision environments early**—Add sandbox or production environments before development and testing workloads increase.
 
@@ -116,11 +109,11 @@ The following capabilities are available for product recommendations. Some featu
 
 <!--## How to size your solution
 
-Adobe Commerce Optimizer packages are sized by GMV (Gross Merchandise Value) tiers, each with specific base limits for various metrics. Ask your Adobe representative for a list of available packages and their corresponding limits.
+Ask your Adobe representative for a list of available packages to determine which most closely matches your project 
 
 To accurately size your Adobe Commerce Optimizer solution, follow these steps:
 
-1. Review the available packages, and start with a package that most closely matches your current GMV.
+1. Review the available packages, and start with a package that most closely matches your requirements.
 1. Review the capabilities and metrics to ensure they align with your business requirements.
 1. Purchase add-on packages for any metrics where you require additional capacity.
 
