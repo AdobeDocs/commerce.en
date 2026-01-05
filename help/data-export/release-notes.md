@@ -26,12 +26,12 @@ Updates include:
 
 ![Fix](../assets/fix.svg) Eliminate dependency to Magento/Analytics module. <!--MDEE-1260--> 
 ![Fix](../assets/fix.svg) Fixed an issue where updating a product’s tier prices did not remove old values, resulting in duplicate or outdated tier price entries. Now, only the current tier prices are shown after updates. <!--MDEE-1157-->  
-![Fix](../assets/fix.svg) Fixed an issue where products with a $0 price or 100% discount were not displayed as free on the storefront. Storefront and cart pricing are now consistent.<!--MDEE-1159-->  
-![Fix](../assets/fix.svg) Symfony 7.4 LTS compatibility added to the data export extensions to support future upgrades and integrations.<!--MDEE-1272-->   
+![Fix](../assets/fix.svg) Fixed an issue where products with a $0 price or 100% discount were not displayed as free on the storefront. Storefront and cart pricing are now consistent. <!--MDEE-1159-->  
+![Fix](../assets/fix.svg) Symfony 7.4 LTS compatibility added to the data export extensions to support future upgrades and integrations. <!--MDEE-1272-->   
 
 ## 103.4.16 Release   
 
-![Fix](../assets/fix.svg) Resolved an issue where certain indexers failed to switch to `Update On Schedule` mode during setup or upgrade due to missing ActionInterface implementations in multiple indexers. This fix ensures successful extension installation and upgrade without encountering indexer-related errors.<!--MDEE-1235-->
+![Fix](../assets/fix.svg) Resolved an issue where certain indexers failed to switch to `Update On Schedule` mode during setup or upgrade due to missing ActionInterface implementations in multiple indexers. This fix ensures successful extension installation and upgrade without encountering indexer-related errors. <!--MDEE-1235-->
 
 ## 103.4.15 Release
 
