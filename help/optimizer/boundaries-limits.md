@@ -52,11 +52,11 @@ The following tables summarize the limits by capability area and include informa
 | **Capability**            | **Description**                               | **Limit**      | **Expandable?**   |
 |---------------------------|---------------------------------------------------|----------------|---------------|
 | Product ingestion rate    | Number of catalog updates allowed | 1K/minute (100K/day max) | Yes       |
-| Catalog retrieval rate    | Monthly allowance for catalog retrieval API calls | 10M            | Yes           |
+| Catalog retrieval rate    | Number of catalog retrieval API calls | 10M/month          | Yes           |
 | Products in a single catalog source | Maximum number of SKUs supported in the catalog   | 250K SKUs      | Yes           |
-| Catalog Variations                  | Number of catalog variations<br>(#Catalog Views × #PriceBooks) | 100 variations    |  Yes |
+| Catalog Variations                  | Number of catalog variations<br>(Number of Catalog Views × Number of PriceBooks) | 100 variations    |  Yes |
 | Storefront Content Request | Monthly allowance for storefront content   | 2M requests/month         | Yes |
-| Catalog sources            | Number of product data pools (locales) | 50  | No |
+| Catalog sources            | Number of catalog contexts that can be defined for catalog data.<br>Context includes the locale of the data and can also include different systems or sources from which the data is ingested, for example multiple PIMs, ERPs, or Commerce systems. | 50  | No |
 | Variants per product       | Number of product variants (size, color combinations) allowed per product | 10K  | No            |
 | Catalog views | Number of configurable subsets of your master catalog | 30K per instance     | No |
 | Policies per catalog view  | Number of data filters allowed  | 10  | No            |
@@ -72,9 +72,9 @@ The following tables summarize the limits by capability area and include informa
 
 ### Price books
 
-| **Capability**             | **Description**                                      | **Limit** | **Expandable?** | **Notes** |
-| -------------------------- | ---------------------------------------------------- | --------- | --------------- | --------- |
-| Price books                | Number of price books allowed per instance           | 1,000     | Yes             | Divide the catalog variations by the catalog views to find the number of price books. See [Catalog Variations limit](#catalog). |
+| **Capability**             | **Description**                                      | **Limit** | **Expandable?** | 
+| -------------------------- | ---------------------------------------------------- | --------- | --------------- | 
+| Price books                | Number of price books allowed per instance           | 1,000     | Yes       | 
 | Discounts per price record | Number of discounts that can be applied to a product | 10        | No              |           |
 
 ### Product discovery and storefront
@@ -85,7 +85,7 @@ The following tables summarize the limits by capability area and include informa
 | Filterable attributes | Number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 |      No |                                 |
 | Searchable attributes | Number of product characteristics that can be configured for use with the product catalog search service | 200  | No            |                                        |
 | Sortable attributes | Number of product characteristics that can be configured for determining the order of search result values | 50 |  No |   |
-| Search pagination depth | Maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K |  No    |     |
+| Search pagination depth | Maximum number of products accessible through pagination (for example, 100 pages × 100 products/page) | 10K |  No    |     |
 | Facets | Number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100 | No | Must be filterable attributes          |
 | Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100              | Yes | Can increase via support request       |
 
