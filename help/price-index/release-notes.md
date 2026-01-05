@@ -23,6 +23,11 @@ Updates include:
 
 ## Current major version
 
+## 1.0.10 Release
+
+Create .metadata.json by @duhon in https://github.com/magento-commerce/saas-prices-provider/pull/43
+MDEE-1040 Concatenated versions of parent and option sku doesn't exist when importing bundle product by @duhon in https://github.com/magento-commerce/saas-prices-provider/pull/44
+
 ## 1.0.9 Release
 
 ![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!--MDEE-941-->
