@@ -55,7 +55,7 @@ The following tables summarize the limits by capability area and include informa
 | Catalog retrieval rate    | Number of catalog retrieval API calls | 10M/month          | Yes           |
 | Products in a single catalog source | Maximum number of SKUs supported in the catalog   | 250K SKUs      | Yes           |
 | Catalog Variations                  | Number of catalog variations<br>(Number of Catalog Views × Number of PriceBooks) | 100 variations    |  Yes |
-| Storefront Content Request | Monthly allowance for storefront content   | 2M requests/month         | Yes |
+| Storefront Content Request | Storefront content retrieval | 2M requests/month         | Yes |
 | Catalog sources            | Number of catalog contexts that can be defined for catalog data.<br>Context includes the locale of the data and can also include different systems or sources from which the data is ingested, for example multiple PIMs, ERPs, or Commerce systems. | 50  | No |
 | Variants per product       | Number of product variants (size, color combinations) allowed per product | 10K  | No            |
 | Catalog views | Number of configurable subsets of your master catalog | 30K per instance     | No |
