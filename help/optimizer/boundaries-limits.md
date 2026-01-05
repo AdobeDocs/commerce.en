@@ -51,7 +51,7 @@ The following tables summarize the limits by capability area and include informa
 
 | **Capability**            | **Description**                               | **Limit**      | **Expandable?**   |
 |---------------------------|---------------------------------------------------|----------------|---------------|
-| Product ingestion rate    | Number of catalog updates allowed | 1K/minute (100K/day max) | Yes       |
+| Product ingestion rate    | Number of products created or updated | 1K/minute (100K/day max) | Yes       |
 | Catalog retrieval rate    | Number of catalog retrieval API calls | 10M/month          | Yes           |
 | Products in a single catalog source | Maximum number of SKUs supported in the catalog   | 250K SKUs      | Yes           |
 | Catalog Variations                  | Number of catalog variations<br>(Number of Catalog Views × Number of PriceBooks) | 100 variations    |  Yes |
