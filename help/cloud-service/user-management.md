@@ -285,6 +285,8 @@ After adding a user to [!DNL AEM Assets], they can access the [!DNL Experience M
 * [Configure [!DNL AEM Assets] to support Commerce metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
 * [Integrate [!DNL AEM Assets] with Commerce for asset synchronization](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
+{{aem-assets-instance-mapping}}
+
 ## Identity management and single sign-on configuration
 
 {{ims-identity-and-sso-config}}
