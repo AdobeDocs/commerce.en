@@ -15,7 +15,7 @@ Adobe Commerce offers three deployment models:
 - [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
 - [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (on-premises)
 
-This comparison focuses on the differences between software-as-a-service (SaaS) and platform-as-a-service (PaaS) models. These models provide different levels of customization, extensibility, and control over your commerce implementation.
+This comparison focuses on the differences between software-as-a-service (SaaS) and platform-as-a-service (PaaS) models. These models provide different levels of customization, extensibility, and control over your Commerce implementation.
 
 >[!NOTE]
 >
