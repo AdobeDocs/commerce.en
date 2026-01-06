@@ -57,7 +57,7 @@ See the following video for a brief introduction to the [!DNL Adobe Commerce as 
 
 This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud Service] and all Adobe Experience Cloud solutions.
 
-![Data flow diagram showing Adobe Commerce as a Cloud Service integration with Adobe Experience Cloud solutions](./assets/data-flow.svg){zoomable="yes"}
+![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce Storefront
 
@@ -78,26 +78,26 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 - [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
-## Product Visuals powered by AEM Assets
+## [!DNL Product Visuals powered by AEM Assets]
 
 Product Visuals helps simplify asset management using a digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content.
 
 The integration ensures that digital assets, such as product images or marketing content, dynamically link to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
 
-Product Visuals is available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from AEM Assets.
+[!DNL Product Visuals] is available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from [!DNL AEM Assets].
 
 Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
-Check the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate Product Visuals powered by AEM Assets with [!DNL Adobe Commerce as a Cloud Service].
+Check the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate [!DNL Product Visuals powered by AEM Assets] with [!DNL Adobe Commerce as a Cloud Service].
 
-### Product Visuals or AEM Assets
+### [!DNL Product Visuals] or [!DNL AEM Assets]
 
 The following comparison helps you select the best option for your content supply chain needs:
 
 <table>
   <tr>
     <td align="left">
-      <strong>Product Visuals powered by AEM Assets</strong>
+      <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
         <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
         <li>Resize, crop, and convert images</li>

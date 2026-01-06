@@ -209,7 +209,7 @@ The following list describes the resources that default roles have permission to
 
 Admins have access to all permissions.
 
-## Add a user to AEM Assets or Product Visuals
+## Add a user to [!DNL AEM Assets] or [!DNL Product Visuals]
 
 The following setup is required for [!DNL Adobe Experience Manager Assets] and [!DNL Product Visuals powered by AEM Assets] users.
 
@@ -241,7 +241,7 @@ If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service
 
 1. Click [!UICONTROL **Add Product**].
 
-1. Select the following product profiles, which are necessary to integrate AEM Assets with Commerce:
+1. Select the following product profiles, which are necessary to integrate [!DNL AEM Assets] with Commerce:
 
     * Business Owner - Required to create and manage programs.
     * Deployment Manager - Required to deploy code from your repositories to AEM.
@@ -250,7 +250,7 @@ If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service
 
     >[!NOTE]
     >
-    >For more information on how these permissions effect your access to AEM Assets, refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+    >For more information on how these permissions effect your access to [!DNL AEM Assets], refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
 1. Click [!UICONTROL **Apply**].
 

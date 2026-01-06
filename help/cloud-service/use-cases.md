@@ -20,7 +20,7 @@ Before attempting any of these use cases, you must complete the following prereq
 1. [Create your Cloud Service instance](./getting-started.md#create-an-instance) using the following options:
    1. Select [!UICONTROL **Sandbox**] in the [!UICONTROL **Environment**] dropdown.
    1. Select [!UICONTROL **Adobe Store**] in the [!UICONTROL **Test data**] dropdown.
-1. [Log in to your Adobe Experience Cloud account](https://experience.adobe.com)
+1. [Log in to your [!DNL Adobe Experience Cloud] account](https://experience.adobe.com)
 1. [Set up your Cloud Service storefront](./storefront.md) using the following options:
    1. Select [!UICONTROL `adobe-commerce/adobe-demo-store`] for the template.
    1. Select [!UICONTROL **Pick an available instance (Mesh -> SaaS)**] for the connection method.
@@ -154,11 +154,11 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. Open [!DNL AEM Assets], by selecting it in the [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![AEM Assets selector showing the Adobe Experience Cloud interface](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   ![[!DNL AEM Assets] selector showing the [!DNL Adobe Experience Cloud] interface](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Assets**].
 
-   ![Assets navigation option in AEM Assets interface](./assets/click-assets.png){width="600" zoomable="yes"}
+   ![Assets navigation option in [!DNL AEM Assets] interface](./assets/click-assets.png){width="600" zoomable="yes"}
 
 1. Search for the item by **SKU** or **Product Code**.
 
@@ -196,11 +196,11 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. From the [Navigation Panel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) of [!DNL AEM as a Cloud Service], select [!UICONTROL **Assets**] > [!UICONTROL **Files**] > [!UICONTROL **Commerce**] and click the asset you created in the previous section.
 
-   ![Commerce folder in AEM Assets with product images](./assets/commerce-folder.png){width="600" zoomable="yes"}
+   ![Commerce folder in [!DNL AEM Assets] with product images](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
 1. Click [!UICONTROL **Properties**]. 
 
-   ![Properties button in AEM Assets toolbar](./assets/properties.png){width="600" zoomable="yes"}
+   ![Properties button in [!DNL AEM Assets] toolbar](./assets/properties.png){width="600" zoomable="yes"}
 
 1. Select the [!UICONTROL **Commerce**] tab.
 
