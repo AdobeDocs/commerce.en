@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.17 Release   
 
-![Fix](../assets/fix.svg) Eliminate dependency to Magento/Analytics module. <!--MDEE-1260--> 
+![Fix](../assets/fix.svg) Updated the data export extension (`magento/module-data-exporter`) to remove the `magento/module-analytics`  dependency, which is no longer required.<!--MDEE-1260--> 
 ![Fix](../assets/fix.svg) Fixed an issue where updating a product’s tier prices did not remove old values, resulting in duplicate or outdated tier price entries. Now, only the current tier prices are shown after updates. <!--MDEE-1157-->  
 ![Fix](../assets/fix.svg) Fixed an issue where products with a $0 price or 100% discount were not displayed as free on the storefront. Storefront and cart pricing are now consistent. <!--MDEE-1159-->  
 ![Fix](../assets/fix.svg) Symfony 7.4 LTS compatibility added to the data export extensions to support future upgrades and integrations. <!--MDEE-1272-->   
