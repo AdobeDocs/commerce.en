@@ -22,6 +22,17 @@ Updates include:
 
 ## Current major version
 
+## 103.4.17 Release   
+
+![Fix](../assets/fix.svg) Updated the data export extension (`magento/module-data-exporter`) to remove the `magento/module-analytics`  dependency, which is no longer required.<!--MDEE-1260--> 
+![Fix](../assets/fix.svg) Fixed an issue where updating a product’s tier prices did not remove old values, resulting in duplicate or outdated tier price entries. Now, only the current tier prices are shown after updates. <!--MDEE-1157-->  
+![Fix](../assets/fix.svg) Fixed an issue where products with a $0 price or 100% discount were not displayed as free on the storefront. Storefront and cart pricing are now consistent. <!--MDEE-1159-->  
+![Fix](../assets/fix.svg) Symfony 7.4 LTS compatibility added to the data export extensions to support future upgrades and integrations. <!--MDEE-1272-->   
+
+## 103.4.16 Release   
+
+![Fix](../assets/fix.svg) Resolved an issue where certain indexers failed to switch to `Update On Schedule` mode during setup or upgrade due to missing ActionInterface implementations in multiple indexers. This fix ensures successful extension installation and upgrade without encountering indexer-related errors. <!--MDEE-1235-->
+
 ## 103.4.15 Release
 
 ![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension,  see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
