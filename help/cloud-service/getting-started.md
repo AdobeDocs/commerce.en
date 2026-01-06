@@ -166,6 +166,8 @@ The following sections describe the basic processes you need to complete to get 
 
 1. Click [!UICONTROL **Add Instance**].
 
+{{aem-assets-instance-mapping}}
+
 ### Access an instance
 
 After you create an instance, you can access it from the [!UICONTROL Commerce Cloud Manager].
