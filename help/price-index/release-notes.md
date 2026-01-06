@@ -25,7 +25,7 @@ Updates include:
 
 ## 1.0.10 Release
 
-![Fix](../assets/fix.svg) Concatenated versions of parent and option sku doesn't exist when importing bundle product <!--MDEE-1040-->
+![Fix](../assets/fix.svg) Fixed an issue where price queries for imported or newly created bundle products could result in internal server errors because the system attempted to use an invalid, concatenated SKU for lookup instead of the correct, valid SKU. Price queries for bundle products now use the appropriate SKU and resolve correctly.<!--MDEE-1040-->
 
 ## 1.0.9 Release
 
