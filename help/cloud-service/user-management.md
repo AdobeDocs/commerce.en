@@ -29,6 +29,10 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
   >
   >All Commerce users, including developers and admins, must also have the User role assigned to them. It is required for basic Commerce permissions.
 
+  >[!TIP]
+  >
+  >If you want to restrict access to the Commerce Admin by IP address, refer to [Limit product access by IP addresses](https://helpx.adobe.com/enterprise/using/ip-based-access.html){target="_blank"}.
+
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}—Developers have user permissions and are added to the Commerce instance as a developer user. They can use the [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Admins - There are three different types of admins:
