@@ -12,20 +12,15 @@ exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 - **License limits**—Based on your purchased capacity; can be expanded by purchasing additional packages.
 - **System boundaries**—Fixed limits that protect system resources and ensure reliable performance for all users.
 
-Your usage must stay within these limits. Exceeding them can cause:
-
-- Degraded performance
-- Increased latency
-- Request throttling
-- Service interruption
+Your usage must stay within these limits. Exceeding them can cause increased latency and request throttling.
 
 >[!TIP]
 >
 >**Need more capacity?** Contact your Adobe Account representative to purchase additional packages. For questions about system limits, contact [Adobe Support](https://experienceleague.adobe.com/home#support).
 
-## How to prevent performance issues
+## How to prevent operational issues
 
-Follow these best practices to stay within limits and avoid service disruptions:
+Follow these best practices to stay within limits and avoid increased latency or request throttling:
 
 - **Review your limits**—Understand your [capacity limits](#adobe-commerce-optimizer-limits) before launching new storefronts or campaigns.
 - **Track your usage**—Use built-in metrics dashboards or CDN logs.
@@ -40,20 +35,20 @@ The following tables summarize the limits by capability area and include informa
 >
 > For information about packages available for increasing capacity, see the [Adobe Commerce Optimizer product licensing description](https://helpx.adobe.com/legal/product-descriptions/adobe-commerce-optimizer.html).
 
-### SaaS environment limits
+### Environments
 
 | **Environment**              | **Description**                            | **Limit**      | **Expandable?** |
 | ---------------------------- | -------------------------------------------| ---------------| ----------------|
-| **Sandbox environment**      | Number of sandbox environments included    | 2 per instance | Yes |
+| **Sandbox environment**      | Number of sandbox environments included    | 2 per instance | Yes  |
 | **Production environment**   | Number of production environments included | 1 per instance | Yes |
 
 ### Catalog
 
 | **Capability**            | **Description**                               | **Limit**      | **Expandable?**   |
 |---------------------------|---------------------------------------------------|----------------|---------------|
-| Product ingestion rate    | Number of products created or updated | 1K/minute (100K/day max) | Yes       |
+| Product ingestion rate    | Number of products created or updated | 1K/minute (100K/day) | Yes<br>      |
 | Catalog retrieval rate    | Number of catalog retrieval API calls | 10M/month          | Yes           |
-| Products in a single catalog source | Maximum number of SKUs supported in the catalog   | 250K SKUs      | Yes           |
+| Products in a single catalog source | SKUs supported in the catalog   | 250K SKUs      | Yes           |
 | Catalog Variations                  | Number of catalog variations<br>(Number of Catalog Views × Number of PriceBooks) | 100 variations    |  Yes |
 | Storefront Content Request | Storefront content retrieval | 2M requests/month         | Yes |
 | Catalog sources            | Number of catalog contexts that can be defined for catalog data.<br>Context includes the locale of the data and can also include different systems or sources from which the data is ingested, for example multiple PIMs, ERPs, or Commerce systems. | 50  | No |
@@ -75,7 +70,7 @@ The following tables summarize the limits by capability area and include informa
 | **Capability**             | **Description**                                      | **Limit** | **Expandable?** | 
 | -------------------------- | ---------------------------------------------------- | --------- | --------------- | 
 | Price books                | Number of price books allowed per instance           | 1,000     | Yes       | 
-| Discounts per price record | Number of discounts that can be applied to a product | 10        | No              |           |
+| Discounts per price record | Number of discounts that can be applied to a product price within a single price book | 10        | No              |           |
 
 ### Product discovery and storefront
 
