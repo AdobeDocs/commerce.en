@@ -1,14 +1,20 @@
 ---
-title: Configure the AEM Assets Project
+title: Configure the AEM Assets Project to support Commerce metadata
 description: Enable seamless asset synchronization between Adobe Commerce and AEM Assets by adding the required metadata for the integration.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 ---
 # Configure the AEM Assets project to support Commerce metadata
 
-To manage Commerce asset files in AEM Assets, complete the following steps to configure the AEM Assets project with the required package code and metadata to manage Commerce assets from the AEM authoring environment.
+When you use AEM Assets as a Digital Asset Management system (DAM) for Commerce, installing the `assets-commerce` package allows you to manage images and videos for Commerce products from the AEM authoring environment.
 
-## AEM Commerce `assets-commerce` package contents
+Complete the following steps to configure the AEM Assets project with the required package code and metadata to manage Commerce assets from the AEM authoring environment:
+
+1. [Learn about the `assets-commerce` package contents](#aem-commerce-assets-commerce-package-contents)
+
+1. [Complete the installation steps to configure the AEM Assets project to support Commerce metadata](#step-1-install-the-assets-commerce-package)
+
+## AEM Commerce assets-commerce package contents
 
 Adobe provides an AEM Commerce package code `assets-commerce` to add Commerce namespace and Metadata Schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
 
@@ -34,7 +40,7 @@ This package code adds the following resources to the AEM Assets authoring envir
 >
 > See the [readme](https://github.com/ankumalh/assets-commerce) page for more information about the **AEM Commerce package code**.
 
-### Prerequisites
+## Prerequisites
 
 You need the following resources and permissions to deploy the `assets-commerce` package code to the AEM Assets as a Cloud Service AEM  environment:
 
@@ -44,17 +50,21 @@ You need the following resources and permissions to deploy the `assets-commerce`
 
 * Understand [AEM project structure](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) and how to deploy custom content packages using Cloud Manager.
 
-### Step 1: Install the `assets-commerce` package
+* The **IMS Org ID** configured for your Commerce instance.
 
-1. From the AEM Cloud Manager, [create production and staging environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) for your AEM Assets project, if needed.
+## Step 1: Install the assets-commerce package
 
-1. Configure a [deployment pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline), if needed.
+1. Navigate to the AEM Cloud Manager, select a program, and [create production and staging environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) that you want to integrate with Adobe Commerce.
 
-1. [Clone the Git repository](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access).
+1. Configure a [deployment pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline), or verify that your pipeline can deploy changes to the selected environment.
+
+1. [Clone the Adobe managed git repository](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) for the selected program.
 
 1. From GitHub, download the package code from the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce).
 
-1. From your [local AEM development environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) by manually copying the code into the existing project configuration and replacing all occurrences of `<my-app>` in the `filter.xml`, and all the `pom.xml files` within the project with your app name.
+1. From your [local AEM development environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), manually copy the downloaded code into the existing Adobe managed repository.
+
+1.  In all `filter.xml` and `pom.xml files` for your project, replace all occurrences of `<my-app>` with your app name.
 
    >[!NOTE]
    >
@@ -62,17 +72,33 @@ You need the following resources and permissions to deploy the `assets-commerce`
 
 1. Commit the changes and push your local development branch to the Cloud Manager Git repository.
 
-1. From AEM Cloud Manager, [deploy your code to update the AEM environment](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. From AEM Cloud Manager, [update the AEM environment by using the pipeline to deploy your code](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
-1. Validate the changes:
+1. Go to any asset and edit its properties to validate the changes:
 
    * The default Metadata Schema includes the **Commerce** tab.
 
-   * Product SKUs appear correctly. 
+   * Product SKUs and the `Eligible for Commerce` fields are visible. 
 
-If you encounter any issues, follow the steps described in [support](../overview.md#support).
+### Commerce tab is not visible in properties
 
-## Optional. Step 2: Configure a metadata profile
+If the **Commerce** tab does not appear in properties, you must manually create one in the metadata schema editor.
+
+1. Navigate to the metadata schema editor.
+
+1. Click **Edit** to modify the default metadata schema form.
+
+1. Create a **Commerce** tab, and select it.
+
+1. Drag and drop the **Product** component into the **Commerce** tab, and map it to the property `commerce:skus`.
+
+1. Select the checkbox for **show roles** and **show order**.
+
+1. Drag and drop a **checkbox** component into the **Commerce** tab, and map it to the property `commerce:isCommerce`. Define **Yes** and **No** as the options.
+
+If you encounter any other issues,  create a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) or contact your AEM Assets Integration sales representative for help.
+
+## Step 2: Optional. Configure a metadata profile
 
 In the AEM Assets author environment, set default values for Commerce asset metadata by creating a metadata profile. Then, apply the new profile to AEM Asset folders to automatically use these defaults. This configuration streamlines asset processing by reducing manual steps.
 
@@ -132,7 +158,7 @@ The Product Data UI component is added automatically based on the template.
 
 1. Save the update.
 
-#### Apply the metadata profile to Commerce assets source folder
+### Apply the metadata profile to the Commerce assets source folder
 
    1. From the[!UICONTROL  Metadata Profiles] page, select the Commerce integration profile.
 
@@ -146,6 +172,6 @@ The Product Data UI component is added automatically based on the template.
 
 ## Next steps
 
-* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md)
+* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md).
 
-* **Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [EDS AEM Assets configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic.
+* [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Configure the integration from the Commerce Admin](setup-synchronization.md).

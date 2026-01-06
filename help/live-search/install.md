@@ -405,8 +405,8 @@ The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 [!DNL Live Search] widgets support the following languages:
 
 |||||
-|--- |--- |--- |--- |
-|Language|Region| Language Code |Magento Locale|
+|---|---|---|---|
+|Language|Region|Language Code|Magento Locale|
 |Bulgarian|Bulgaria|bg_BG|bg_BG|
 |Catalan|Spain|ca_ES|ca_ES|
 |Czech|Czech Republic|cs_CZ|cs_CZ|
@@ -426,6 +426,7 @@ The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 |Hungarian|Hungary|hu_HU|hu_HU|
 |Indonesian|Indonesia|id_ID|id_ID|
 |Italian|Italy|it_IT|it_IT|
+|Japanese|Japan|ja_JP|ja_JP|
 |Korean|South Korea|ko_KR|ko_KR|
 |Lithuanian|Lithuania|lt_LT|lt_LT|
 |Latvian|Latvia|lv_LV|lv_LV|
