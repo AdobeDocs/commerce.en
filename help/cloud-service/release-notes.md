@@ -26,11 +26,35 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## January 2026
 
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments."}
+
+The following items are currently only available in Sandbox environments. This release is scheduled to move to Production environments on January XX, 2026.
+
 >[!BEGINSHADEBOX]
 
-### Enhancements
+### Instance-specific admin access
+
+You can now [assign users access](./user-management.md#add-users) to individual Adobe Commerce as a Cloud Service instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+
+### Google reCAPTCHA Enterprise support
 
 * Added support for Google [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise), which provides advanced bot protection for Adobe Commerce as a Cloud Service storefronts. reCAPTCHA Enterprise uses adaptive risk analysis and machine learning to differentiate between human users and bots. This helps to prevent fraudulent activities, spam, and abuse on customer sites. <!-- CCSAAS-4242 -->
+
+### Tier pricing for catalog price rules
+
+[Catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) can now include tier pricing in their discount calculations. This allows you to combine tiered pricing discounts with catalog rule discounts for more flexible pricing strategies. <!-- See PR #708 in commerce-admin -->
+
+![Apply Catalog Price Rule](assets/release/sales-promotions-settings.png)
+
+### Enhancements and bug fixes
+
+* Added missing GraphQL properties to quote template types including `NegotiableQuoteTemplate`, `ItemNote`, and `NegotiableQuoteTemplateGridItem`. <!-- LYNX-978 -->
+
+* Resolved an error that could occur when uploading a file to S3. <!-- CCSAAS-4189 -->
+
+* Resolved a `User is not entitled to access this instance` error that could occur when logging into the admin or accessing the REST API. <!-- CCSAAS-4324 -->
+
+* Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 -->
 
 >[!ENDSHADEBOX]
 
