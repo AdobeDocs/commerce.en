@@ -121,4 +121,8 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Manage Commerce assets](../manage-assets.md)
+* **Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront documentation*.
+
+* Set up [matching rules](../synchronize/default-match.md) between Adobe Commerce and the AEM Assets integration.
+
+* [Manage Commerce assets](../manage-assets.md).
