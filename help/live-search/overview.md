@@ -25,7 +25,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 ![Live Search Data Flow](assets/ls-cs-data-flow.png)
 
-## Quick Tour
+## Quick tour
 
 With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game changer for shoppers and merchants alike. Watch the following video, then take a quick tour of [!DNL Live Search] from the storefront.
 

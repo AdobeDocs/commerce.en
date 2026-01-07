@@ -14,7 +14,7 @@ For more information on Privacy Service and how to create and manage privacy req
 * [Privacy Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
 * [Managing privacy jobs in Privacy Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
 
-## Managing individual data privacy requests
+## Manage individual data privacy requests
 
 You can submit individual requests to access and delete consumer data from [!DNL Commerce] in two ways:
 
@@ -37,7 +37,7 @@ For deletion requests, Privacy Service deletes [!DNL Commerce] data stored in Co
 
 [!DNL Commerce] will notify merchants about deletion requests by sending them information for data subjects requesting deletion of certain data.
 
-## How to Create Access and Delete Requests
+## How to create access and delete requests
 
 ### Prerequisites
 
