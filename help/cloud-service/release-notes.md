@@ -13,17 +13,9 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 [!DNL Adobe Commerce as a Cloud Service] contains the latest versions of merchandising services, payments services, and extensibility releases. Use the following links to view the release notes for each:
 
-* Services
-  * [Catalog Service](../catalog-service/release-notes.md)
-  * [Live Search](../live-search/release-notes.md)
-  * [Payment Services](../payment-services/release-notes.md)
-  * [Product Recommendations](../product-recommendations/release-notes.md)
-  * [SaaS Data Export](../data-export/release-notes.md)
-* Extensibility
-  * [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
-  * [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
-  * [Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
-  * [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
+| Services | Extensibility |
+| --- | --- |
+| <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> |
 
 ## January 2026 {#latest}
 
