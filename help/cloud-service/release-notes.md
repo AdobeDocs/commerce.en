@@ -25,7 +25,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
   * [Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
   * [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
 
-## January 2026
+## January 2026 {#latest}
 
 [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments."}
 
