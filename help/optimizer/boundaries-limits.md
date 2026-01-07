@@ -20,7 +20,7 @@ Your usage must stay within these limits. Exceeding them can cause increased lat
 
 ## How to prevent performance issues
 
-Follow these best practices to stay within limits and avoid service disruptions:
+Follow these best practices to stay within limits and avoid operational issues:
 
 - **Review your limits**—Understand your [capacity limits](#adobe-commerce-optimizer-limits) before launching new storefronts or campaigns.
 - **Track your usage**—Use built-in metrics dashboards or CDN logs.
