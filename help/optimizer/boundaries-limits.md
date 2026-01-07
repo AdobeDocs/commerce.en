@@ -12,12 +12,7 @@ exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 - **License limits**—Based on your purchased capacity; can be expanded by purchasing additional packages.
 - **System boundaries**—Fixed limits that protect system resources and ensure reliable performance for all users.
 
-Your usage must stay within these limits. Exceeding them can cause:
-
-- Degraded performance
-- Increased latency
-- Request throttling
-- Service interruption
+Your usage must stay within these limits. Exceeding them can cause increased latency and request throttling.
 
 >[!TIP]
 >
