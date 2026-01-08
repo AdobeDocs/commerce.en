@@ -39,6 +39,10 @@ The following items are currently only available in Sandbox environments. This r
 
 ![Apply Catalog Price Rule](assets/release/sales-promotions-settings.png)
 
+### Clickable links to external shipping trackers
+
+By default, shipment tracking numbers sent in shopper emails are plain text. To transform these to clicable links, you must [enable Custom Tracking URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings). This feature is supported for USPS, UPS, FedEx, and DHL.
+
 ### Security enhancements
 
 * Access tokens for Adobe IMS admin authentication are now only accepted through POST requests. <!-- CCSAAS-4421 -->
