@@ -135,25 +135,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### November 6, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">release notes</a> for the AEM Assets Integration v1.2.7 release.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/89091ee8a69259ad325a2b2d7ed8d522fe23fac9">commit</a></td>
-    </tr>
-  </tbody>
-</table>
