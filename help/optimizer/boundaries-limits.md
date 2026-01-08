@@ -29,12 +29,10 @@ Follow these best practices to stay within limits and avoid operational issues:
 
 - **Review your limits**—Understand your [capacity limits](#adobe-commerce-optimizer-limits) before launching new storefronts or campaigns.
 - **Track your usage**—Use built-in metrics dashboards or CDN logs.
-- **Plan for peak periods**—Before sales events, product launches, or seasonal promotions, verify you have sufficient capacity.
-- **Provision environments early**—Add sandbox or production environments before development and testing workloads increase.
 
-## Adobe Commerce Optimizer limits
+## License limits and system boundaries
 
-The following tables summarize the limits by capability area and include information about whether the limit can be expanded by purchasing additional capacity.
+The following tables summarize the license limits and system boundaries by capability area and includes information about adding additional licenses to expand capacity where applicable.
 
 >[!NOTE]
 >
@@ -42,48 +40,45 @@ The following tables summarize the limits by capability area and include informa
 
 ### Environment limits
 
-| **Environment**              | **Description**                            | **Limit**      | **Expandable?** |
+| **Environment**              | **Description**                            | **Base allocation**      | **Expandable?** |
 | ---------------------------- | -------------------------------------------| ---------------| ----------------|
-| **Sandbox environment**      | Number of sandbox environments included    | 2 per instance | Yes<br>License additional environments per instance |
-| **Production environment**   | Number of production environments included | 1 per instance | Yes<br>License additional environments per instance|
+| **Sandbox environment**      | Number of sandbox environments included    | 2 per instance | Yes<br>Add additional environment license per instance |
+| **Production environment**   | Number of production environments included | 1 per instance | License<br>Add additional environment license per instance |
 
 {style="table-layout:auto"}
 
 ### Catalog
 
-| **Capability**            | **Description**                               | **Limit**      | **Expandable?**   |
-|---------------------------|---------------------------------------------------|----------------|---------------|
-| Product ingestion rate    | Number of products created or updated | 1K/minute (100K/day) | Yes<br>Add 5K/minute or 10K/minute data ingestion license packs |
+| **Capability**            | **Description**                               | **Base allocation**      | **Expandable?**  | **Max limit** |
+|---------------------------|---------------------------------------------------|----------------|---------------- | ------ |
+| Product ingestion rate    | Number of products created or updated | 1K updates per minute: total 100K updates per day | Yes<br>Add 5K update per minute (500K) pack or, <br>10K updates per minute (1M updates per day) | 10K updates per minute: total 1M updates per day |
 | Product payload size | Maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB | No |
-| Catalog Variations                  | Number of catalog variations<br>(*Number of Catalog Views × Number of Price Books*) | 100 variations per year    |  Yes<br>Add 100 catalog variations per year license pack |
-| Products in a single catalog source | SKUs supported in the catalog | 250K SKUs      | Yes<br>Add 10K SKU license packs |
-| Variants per product       | Number of product variants (size, color combinations) allowed per product | 10K  | No |
-| Catalog sources            | Number of catalog data contexts (for example, locales or data sources like PIMs and ERPs) | 50  | No |
+| Catalog Variations                  | Number of views of a catalog that are available to storefront users,<br>which are counted as (*Number of Catalog Views × Number of Price Books*) | 100 variations  |  Yes<br>Add 100 catalog variations license pack | |
+| Products in a single catalog source | SKUs supported in the catalog | 250K SKUs      | Yes<br>Add 10K SKU license packs | |
+| Variants per product       | Number of product variants (size, color combinations) allowed per product | 10K  | No | |
+| Catalog sources            | Number of catalog data contexts (for example, locales or data sources like PIMs and ERPs) | 50  | No | |
 
 {style="table-layout:auto"}
 
->[!IMPORTANT]
->
->If your Adobe Commerce Optimizer implementation exceeds the licensed quantities for Catalog Ingestion Rate, Catalog Variations, or SKU Count, at any time, you must license additional quantities sufficient to cover its excess usage.
-
 ### Price books
 
-| **Capability**             | **Description**                                      | **Limit** | **Expandable?** |
-| -------------------------- | ---------------------------------------------------- | --------- | --------------- |
-| Price books | Number of price books allowed per instance           | 1,000     | No       |
-| Discounts per price record | Number of discounts that can be applied to a product price within a single price book | 10        | No              |
+| **Capability**             | **Description**                                      | **Base allocation** | **Expandable?** | **Max limit** |
+| -------------------------- | ---------------------------------------------------- | --------- | --------------- | ------ |
+| Price books | Number of price books allowed per instance           | 1,000     | No       | |
+| Discounts per price record | Number of discounts that can be applied to a product price within a single price book | 10  | No
+No | |
 
 {style="table-layout:auto"}
 
 ### Product Visuals powered by AEM Assets
 
-| **Capability**            | **Description**                                             | **Limit**            | **Expandable?** |
+| **Capability**            | **Description**                                             | **Base allocation**            | **Expandable?** | **Max limit** |
 | ------------------------- | ----------------------------------------------------------- | -------------------- | --------------- |
 | Product Visuals Power users | Licensed user with full digital asset management capabilities, including AI tools, Adobe Express/Firefly integrations, and Content Hub sharing, handling core DAM tasks and advanced cloud-native features for optimal efficiency. | 2 | Yes<br>Upgrade to AEM Assets license |
 | Product Visuals Collaborator users | Access and work with assets through the AEM Commerce integration, create and edit content using Adobe Express and Firefly, and—if enabled—leverage approved assets via the Content Hub portal. | 2 | Yes<br>Upgrade to AEM Assets license |
 | Product Visuals storage | Allocated storage space for assets | 1 TB storage | No |
-| Dynamic Media operations  | Allowance for dynamic media processing operations   | 5M operations/month  | Yes<br>Purchase license for additional operations|
-| Video delivery | Allowance for video delivery. A single delivery or download of a video or transformed variant of a video consumes 20 Dynamic Media Operations.  | 300 videos/minute | No |
+| Dynamic Media operations  | Allowance for dynamic media processing operations   | Determined by GMV<br>minimum allocation of 5M operations/month  | Yes<br>Purchase license for additional operations|
+| Video delivery | A single delivery or download of a video or transformed variant of a video consumes 20 Dynamic Media Operations.  | Up to 300 videos, a maximum of 1 minute per video| Yes<br>Upgrade to AEM Assets license |
 | Adobe Express | Access to Adobe Express generative AI for creating images | Power and Collaborator users | No |
 
 {style="table-layout:auto"}
@@ -95,21 +90,23 @@ The following tables summarize the limits by capability area and include informa
 
 ### Catalog views and policies
 
-| **Capability**            | **Description**                               | **Limit**      | **Expandable?**   |
-|---------------------------|---------------------------------------------------|----------------|---------------|
-| Catalog views | Number of configurable subsets of your master catalog | 30K per instance     | No |
-| Policies per catalog view  | Number of data filters allowed  | 10  | No            |
-| Attribute values in a policy | Number of product characteristics that can be configured for filtering | 100  | No |
+| **Capability**            | **Description**                               | **Base allocation**      | **Expandable?**   | **Max limit** |
+|---------------------------|---------------------------------------------------|----------------|---------------| ---- |
+| Catalog views | Number of configurable subsets of your master catalog | 30K per instance     | No | |
+| Policies per catalog view  | Number of data filters allowed  | 10  | No            | |
+| Attribute values in a policy | Number of product characteristics that can be configured for filtering | 100  | No | |
 
 {style="table-layout:auto"}
 
 ### Catalog storefront
 
-| **Capability**            | **Description**                               | **Limit**      | **Expandable?**   |
-|---------------------------|---------------------------------------------------|----------------|---------------|
-| Catalog retrieval rate    | Number of times a catalog API is called per month by a system (for example, commerce backend, storefront, or other service) to retrieve data from the catalog | 10M/month          | Yes<br>Add 1M requests per month license packs |
-| Content requests  | Requests to Commerce Storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. | 2M/month          | Yes<br>Add 1M per month license pack |
-| GenAI variations          | Allowance for text-based content generation in any environment | 1K variations/month  | Yes |
+The base allocation for catalog storefront capabilities is determined based on GMV tier. The table indicates the minimum allocation for each capability.
+
+| **Capability**            | **Description**                               | **Base allocation**      | **Expandable?**   | **Max limit** |
+|---------------------------|---------------------------------------------------|----------------|---------------|------|
+| Catalog retrieval rate    | Number of times a catalog API is called per month by a system (for example, commerce backend, storefront, or other service) to retrieve data from the catalog | 10M/month minimum         | Yes<br>Add 1M requests per month license packs | |
+| Content requests  | Requests to Commerce Storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. <br>2M/month minimum         | Yes<br>Add 1M per month license pack | |
+| GenAI variations          | Allowance for text-based content generation in any environment | 1K variations/month minimum | Yes | |
 
 {style="table-layout:auto"}
 
@@ -120,15 +117,15 @@ The following tables summarize the limits by capability area and include informa
 
 ### Product discovery
 
-| **Capability**  | **Description**       | **Limit**       | **Expandable?**  | **Notes**           |
+| **Capability**  | **Description**       | **Base allocation**       | **Expandable?**  | **Max limit**           |
 |-----------------|-----------------------|------------------|------------|--------------------------|
 | Products per search request | Maximum number of products returned per page in search results  | 100  | No         |                                      |
 | Filterable attributes | Number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 |      No |                                 |
 | Searchable attributes | Number of product characteristics that can be configured for use with the product catalog search service | 200  | No            |                                        |
 | Sortable attributes | Number of product characteristics that can be configured for determining the order of search result values | 50 |  No |   |
 | Search pagination depth | Maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K |  No    |     |
-| Facets | Number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100 | No | Must be filterable attributes          |
-| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100              | Yes | Can increase via support request       |
+| Facets | Number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<br>Must be filterable attributes | No | |
+| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100              | Yes<br>Can increase via support request | |
 
 {style="table-layout:auto"}
 
@@ -137,20 +134,20 @@ The following tables summarize the limits by capability area and include informa
 
 The following capabilities are available for product recommendations. Some features available in other Adobe Commerce products are not supported in [!DNL Adobe Commerce Optimizer].
 
-| **Capability** | **Description** | **Limit**    | **Expandable?** | **Notes**                         |
+| **Capability** | **Description** | **Base allocation**    | **Expandable?** | **Max limit**                         |
 |----------------|-----------------|--------------|-----------------|-----------------------------------|
 | Active recommendation units | Number of live recommendation components on your storefront (like "Customers also viewed" or "You might also like") | 50 | No  |   |
-| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | |  | Not supported |
-| Preview recommendations | Preview how recommendations appear on the storefront before publishing | | | Not supported |
+| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported |  | |
+| Preview recommendations | Preview how recommendations appear on the storefront before publishing | Not supported | | |
 
 {style="table-layout:auto"}
 
 ### Extensibility
 
-| **Capability**  | **Description**     | **Limit** |  **Expandable?** |   **Notes**      |
+| **Capability**  | **Description**     | **Base allocation** |  **Expandable?** |   **Notes**      |
 | ---------------- | ------------------ | --------- | ------------ | ------------- |
-| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | 1 pack/year | Yes<br>Add additional packs | See the [App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for limits defined per pack. |
-| Adobe I/O Runtime | Capacity of the underlying serverless runtime (I/O Runtime) and eventing (I/O Events) services to support App Builder | | | See [System Settings](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.|
+| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | Determined by GMV tier<br>Minimum allocation: 1 pack/year | Yes<br>Add additional packs | For limits defined per pack, see:<ul><li>[App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for limits defined per pack.</li><li>[System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.</li></ul> |
+| Adobe I/O Runtime | Capacity of the underlying serverless runtime (I/O Runtime) and eventing (I/O Events) services to support App Builder | | | See [System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.|
 
 {style="table-layout:auto"}
 
