@@ -27,7 +27,7 @@ The following items are currently only available in Sandbox environments. This r
 
 ### Instance-specific admin access
 
-You can now [assign users access](./user-management.md#add-users) to individual Adobe Commerce as a Cloud Service instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+* You can now [assign users access](./user-management.md#add-users) to individual Adobe Commerce as a Cloud Service instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
 
 ### Google reCAPTCHA Enterprise support
 
@@ -35,9 +35,13 @@ You can now [assign users access](./user-management.md#add-users) to individual 
 
 ### Tier pricing for catalog price rules
 
-[Catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) can now include tier pricing in their discount calculations. This allows you to combine tiered pricing discounts with catalog rule discounts for more flexible pricing strategies. <!-- See PR #708 in commerce-admin -->
+* [Catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) can now include tier pricing in their discount calculations. This allows you to combine tiered pricing discounts with catalog rule discounts for more flexible pricing strategies. <!-- See PR #708 in commerce-admin -->
 
 ![Apply Catalog Price Rule](assets/release/sales-promotions-settings.png)
+
+### Security enhancements
+
+* Access tokens for Adobe IMS admin authentication are now only accepted through POST requests. <!-- CCSAAS-4421 -->
 
 ### Enhancements and bug fixes
 
