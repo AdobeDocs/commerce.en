@@ -59,7 +59,7 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 * Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 -->
 
-{{$include /help/_includes/snippets.md#accs-release}}
+{{accs-release}}
 
 >[!ENDSHADEBOX]
 
