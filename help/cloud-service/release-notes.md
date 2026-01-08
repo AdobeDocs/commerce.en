@@ -9,45 +9,47 @@ exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 ---
 # Release notes
 
-The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service]. For release information for other products, refer to [Adobe Commerce Optimizer](../optimizer/release-notes.md) or [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
-
-[!DNL Adobe Commerce as a Cloud Service] contains the latest versions of merchandising services, payments services, and extensibility releases. Use the following links to view the release notes for each:
-
-| Services | Extensibility |
-| --- | --- |
-| <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> |
+The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service]. For release information for other products, refer to [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## January 2026 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments."}
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time for you to test upcoming changes before the release is available on Production environments."}
 
-The following items are currently only available in Sandbox environments. This release is scheduled to move to Production environments on January XX, 2026.
+The following items are currently only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service]. This release is scheduled to move to Production environments on January 19, 2026.
 
 >[!BEGINSHADEBOX]
 
-### Instance-specific admin access
+### Authentication enhancements
 
-* You can now [assign users access](./user-management.md#add-users) to individual Adobe Commerce as a Cloud Service instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+Access tokens for Adobe IMS admin authentication are now only accepted through POST requests. <!-- CCSAAS-4421 -->
 
-### Google reCAPTCHA Enterprise support
+### B2B dropins
 
-* Added support for Google [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise), which provides advanced bot protection for Adobe Commerce as a Cloud Service storefronts. reCAPTCHA Enterprise uses adaptive risk analysis and machine learning to differentiate between human users and bots. This helps to prevent fraudulent activities, spam, and abuse on customer sites. <!-- CCSAAS-4242 -->
-
-### Tier pricing for catalog price rules
-
-* [Catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) can now include tier pricing in their discount calculations. This allows you to combine tiered pricing discounts with catalog rule discounts for more flexible pricing strategies. <!-- See PR #708 in commerce-admin -->
-
-![Apply Catalog Price Rule](assets/release/sales-promotions-settings.png)
+[!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
 ### Clickable links to external shipping trackers
 
-By default, shipment tracking numbers sent in shopper emails are plain text. To transform these to clicable links, you must [enable Custom Tracking URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings). This feature is supported for USPS, UPS, FedEx, and DHL.
+By default, shipment tracking numbers sent in shopper emails are plain text. To transform these to clickable links, you must [enable Custom Tracking URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). This feature is supported for USPS, UPS, FedEx, and DHL. <!-- See PR #716 in commerce-admin -->
 
-### Security enhancements
+### Google reCAPTCHA Enterprise support
 
-* Access tokens for Adobe IMS admin authentication are now only accepted through POST requests. <!-- CCSAAS-4421 -->
+Added support for Google [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise), which provides advanced bot protection for [!DNL Adobe Commerce as a Cloud Service] storefronts. reCAPTCHA Enterprise uses adaptive risk analysis and machine learning to differentiate between human users and bots. This helps to prevent fraudulent activities, spam, and abuse on customer sites. <!-- CCSAAS-4242 -->
+
+### Instance-specific admin access
+
+You can now [assign users access](./user-management.md#add-users) to individual [!DNL Adobe Commerce as a Cloud Service] instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+
+### Observability
+
+Get metrics, logs, traces and other insights into your Commerce instance using [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), which is automatically available on [!DNL Adobe Commerce as a Cloud Service].
+
+### Tier pricing for catalog price rules
+
+Combine tiered pricing discounts with catalog rule discounts for more flexible pricing strategies using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). <!-- See PR #708 in commerce-admin -->
 
 ### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes included in this release:
 
 * Added missing GraphQL properties to quote template types including `NegotiableQuoteTemplate`, `ItemNote`, and `NegotiableQuoteTemplateGridItem`. <!-- LYNX-978 -->
 
@@ -56,6 +58,8 @@ By default, shipment tracking numbers sent in shopper emails are plain text. To 
 * Resolved a `User is not entitled to access this instance` error that could occur when logging into the admin or accessing the REST API. <!-- CCSAAS-4324 -->
 
 * Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 -->
+
+{{$include /help/_includes/snippets.md#accs-release}}
 
 >[!ENDSHADEBOX]
 
