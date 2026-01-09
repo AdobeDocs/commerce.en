@@ -26,7 +26,7 @@ You can specify the number of price range groups and how price values are distri
 ### Field descriptions
 
 | Field | Description |
-|--- |--- |
+| --- | --- |
 | Number of selections | Specifies the number of price range groupings that can be used as search filters in the storefront. Default value: 8, Maximum value: 100 |
 | Interval value | Specifies the price range interval for each group. For example, five selections with an interval value of 20 creates five groupings of 0-20, 20-40, 40-60, 60-80, and >80. Default value: 5, Maximum value: 40,000,000 |
 
@@ -79,3 +79,188 @@ Set the Language setting to the primary language of the catalog. When changing t
 |Swedish|sv|
 |Turkish|tr|
 |Thai|th|
+
+## Semantic search
+
+Semantic search uses AI to understand the meaning and intent behind a shopper's search query, not just exact keyword matches. This helps shoppers find relevant products even when they use natural language, synonyms, or descriptive phrases that don't exactly match your product catalog.
+
+### Benefits
+
+Enabling semantic search can improve your store's search performance in several key ways:
+
+- **Reduced zero-results searches** - Shoppers find products even when using terms not in your catalog
+- **Better natural language understanding** - Queries like "dress for beach wedding" or "leather recliner for media room" return relevant results
+- **Automatic synonym handling** - No need to manually create synonyms for similar terms like "couch/sofa" or "pants/trousers"
+- **Improved conversion rates** - More relevant results lead to higher search-to-cart conversion
+- **Enhanced customer satisfaction** - Shoppers can search using natural expressions rather than guessing exact product terms
+
+### How it works
+
+Semantic search uses AI and natural language processing to understand the contextual meaning of search queries and match them to products based on semantic similarity rather than just text matching. For example:
+
+- A search for "leather couch" returns products labeled as "leather sofa"
+- "Spring dress" finds seasonal dresses even without the word "spring" in the catalog
+- "Shoes for trail running" surfaces products described as "off-road sneakers"
+- "Brakepad" finds products listed as "brake pad" (compound word variations)
+
+Traditional keyword search fails when shoppers add descriptive words that don't exist in your catalog. Semantic search overcomes this limitation by understanding the overall intent of the search phrase.
+
+### Enable semantic search
+
+>[!NOTE]
+>
+>Before enabling semantic search, ensure you understand the performance impacts described below, especially if you have a large catalog.
+
+1. On the **Settings** workspace, select **[!UICONTROL Search]**.
+1. Under **Semantic search**, select your preferred search mode.
+1. Configure which product attributes should be used for semantic search (recommended).
+1. Click **Save**.
+
+   After enabling, incremental catalog changes are processed normally. Full reindexing (if needed) may take longer for large catalogs but occurs in the background without storefront downtime.
+
+### Configuration options
+
+Choose the semantic search mode that best fits your needs:
+
+| Mode | Description | Best for |
+| ------ | ------------- | ---------- |
+| **Fallback only** | Uses semantic search only when keyword search returns zero results | Merchants wanting to reduce zero-results searches with minimal impact on normal search behavior |
+| **Hybrid search** | Combines traditional keyword search with semantic search results, showing both types together | Merchants wanting to maximize product discovery and relevance |
+| **Reranking** | Uses AI to reorder keyword search results by semantic relevance | Merchants with good keyword coverage who want to improve result ordering |
+
+### Configure searchable attributes
+
+Not all product attributes are appropriate for semantic search. Use semantic search for descriptive text fields like:
+
+- Product name
+- Description
+- Category
+- Marketing attributes (e.g., style, use case, occasion)
+
+Avoid using semantic search for:
+
+- SKU and part numbers
+- UPC/EAN codes
+- Identifiers and technical codes
+- Numeric-only fields
+
+>[!TIP]
+>
+>Start with product name and description, then add additional attributes based on how your customers search.
+
+### Performance impact
+
+Semantic search adds AI processing to your search operations. Here's what to expect:
+
+**Indexing:**
+
+- Incremental product updates process normally with minimal delay
+- Full reindex operations take longer (noticeable for catalogs with 10,000+ products)
+- Reindexing happens in the background; your storefront continues using the current index with no downtime
+
+**Search speed:**
+
+- Individual search queries may take slightly longer (typically 15-20% increase)
+- For most stores, this difference is not noticeable to shoppers
+- Example: A query taking 180ms may take 210ms with semantic search enabled
+
+### Best practices
+
+**Optimize your product data:**
+
+- Use clear, descriptive product names and descriptions
+- Include common use cases and occasions in product descriptions
+- Add relevant attributes that describe how products are used
+- Avoid overly technical jargon unless your audience expects it
+
+**Monitor and measure:**
+
+- Track your zero-results search rate before and after enabling
+- Monitor search-to-cart conversion rates
+- Review common search queries to identify gaps in your catalog data
+
+**Start conservatively:**
+
+- Begin with **Fallback only** mode to minimize impact
+- Test with your most common search queries
+- Expand to **Hybrid search** once you validate the results quality
+
+**Relationship with synonyms:**
+
+- Semantic search reduces but doesn't eliminate the need for synonyms
+- Keep brand-specific or highly technical synonyms you've already created
+- Use semantic search to handle general language variations automatically
+
+### Troubleshooting
+
+**Search results seem less relevant after enabling semantic search:**
+
+1. Check which search mode you selected - try switching modes
+1. Verify which attributes are configured for semantic search
+1. Review if SKUs or identifiers are incorrectly included in semantic search fields
+1. Consider if your product descriptions need improvement
+
+**Searches for product codes return unexpected results:**
+
+- Ensure SKU, part numbers, and product codes are NOT configured as semantic search attributes
+- These should use exact keyword matching only
+
+**Performance is slower than expected:**
+
+- Large catalogs (50,000+ products) may experience more noticeable delays
+- Consider using **Fallback only** mode for better performance
+- Ensure your catalog has completed initial indexing
+
+**Zero-results rate hasn't improved:**
+
+- Review your most common zero-results queries
+- Improve product descriptions to include more natural language terms
+- Ensure semantic search is enabled for your primary descriptive attributes
+
+### Advanced configuration
+
+For merchants with specific technical requirements, additional configuration options are available:
+
+**Search retrieval parameters:**
+
+Customize how many semantic results are retrieved and evaluated:
+
+- **Number of candidates** - How many potential matches to evaluate (default: 50, max: 500)
+- **Number of results** - How many semantic results to include (default: 10, max: 100)
+
+Higher values improve recall but increase search latency. Recommended for large catalogs where precision is critical.
+
+**Result relevance threshold:**
+
+Set a minimum similarity score for semantic matches:
+
+- **Minimum similarity** - Threshold for including semantic results (default: 0.7, range: 0.0-1.0)
+
+Higher values return only strong semantic matches. Lower values cast a wider net but may include less relevant products. The optimal threshold depends on your catalog and product data quality.
+
+**Reranking window size:**
+
+When using **Reranking** mode, specify how many top results to reorder:
+
+- **Rerank window** - Number of top search results to semantically reorder (default: 100, max: 500)
+
+Larger windows improve relevance across more results but increase processing time.
+
+>[!NOTE]
+>
+>These advanced settings require careful tuning. Start with defaults and adjust based on search analytics and customer feedback.
+
+**Technical considerations:**
+
+- Semantic matching always attempts to return results even when relevance is low. Setting a similarity threshold helps but may still return unexpected results for very ambiguous queries.
+- Product identifier searches (like "ISBN 123-xyz-def") may return seemingly random results if identifier fields are included in semantic search. Always exclude identifier fields from semantic search configuration.
+- Compound queries mixing search terms with filters (like "dresses under $50") currently work best when the filter portion matches configured filterable attributes.
+- Configurations are done per catalog source not catalog view.
+
+**Info about feeds API vs semantic UI**
+
+- Initial update of semantic search fields in attribute metadata can be performed either via UI or feeds API.
+   - In case of feeds API, semantic search fields can be configured during attribute creation.
+   - In case of semantic UI, attribute needs to have been created before hand.
+- When attribute metadata has been updated using semantic UI, it cannot be updated from feeds API (just the semantic search fields).
+ 
