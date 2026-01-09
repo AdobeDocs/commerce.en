@@ -30,7 +30,7 @@ Follow these best practices to stay within limits and avoid operational issues:
 
 ## License limits and system boundaries
 
-The following tables summarize the license limits and system boundaries by capability area and includes information about adding additional licenses to expand capacity where applicable.
+The following tables summarize the license limits and system boundaries by capability area and include information about adding additional licenses to expand capacity where applicable.
 
 >[!NOTE]
 >
