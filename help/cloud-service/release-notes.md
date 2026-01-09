@@ -9,7 +9,11 @@ exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 ---
 # Release notes
 
-The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service]. For release information for other products, refer to [Adobe Commerce on-premises and Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service]. 
+
+>[!NOTE]
+>
+>If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes]((https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## January 2026 {#latest}
 
@@ -29,11 +33,11 @@ Access tokens for Adobe IMS admin authentication are now only accepted through P
 
 ### Clickable links to external shipping trackers
 
-By default, shipment tracking numbers sent in shopper emails are plain text. To transform these to clickable links, you must [enable Custom Tracking URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). This feature is supported for USPS, UPS, FedEx, and DHL. <!-- See PR #716 in commerce-admin -->
+Transform shipment tracking numbers included in shopper emails from plain text into clickable links by [enabling Custom Tracking URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). This feature is supported for USPS, UPS, FedEx, and DHL. <!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA Enterprise support
 
-Added support for Google [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise), which provides advanced bot protection for [!DNL Adobe Commerce as a Cloud Service] storefronts. reCAPTCHA Enterprise uses adaptive risk analysis and machine learning to differentiate between human users and bots. This helps to prevent fraudulent activities, spam, and abuse on customer sites. <!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce on Cloud] storefronts now support [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). This feature delivers advanced bot protection by using adaptive risk analysis and machine learning to accurately distinguish human users from automated bots. It strengthens site security, prevents fraudulent activities, and reduces spam and abuse to maintain a trusted shopping experience. <!-- CCSAAS-4242 -->
 
 ### Instance-specific admin access
 
@@ -41,11 +45,11 @@ You can now [assign users access](./user-management.md#add-users) to individual 
 
 ### Observability
 
-Get metrics, logs, traces and other insights into your Commerce instance using [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), which is automatically available on [!DNL Adobe Commerce as a Cloud Service].
+Gain deeper visibility into your [!DNL Adobe Commerce on Cloud] instance with [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), now automatically available. OpenTelemetry provides metrics, logs, and traces to help you monitor performance, troubleshoot issues faster, and optimize your storefront. This capability enables proactive insights into system health and improves reliability for your customers.
 
 ### Tier pricing for catalog price rules
 
-Combine tiered pricing discounts with catalog rule discounts for more flexible pricing strategies using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). <!-- See PR #708 in commerce-admin -->
+You can now combine tiered pricing discounts with catalog rule discounts using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). This enhancement allows you to create more dynamic and competitive pricing strategies—rewarding bulk purchases while applying promotional discounts at the same time. The result is greater flexibility to attract customers, increase order value, and drive conversions.<!-- See PR #708 in commerce-admin -->
 
 ### Enhancements and bug fixes
 
