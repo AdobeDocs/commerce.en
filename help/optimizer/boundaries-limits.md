@@ -18,7 +18,7 @@ Your usage must stay within these limits. Exceeding them can cause increased lat
 
 License limits can be increased by purchasing the license packages described in the [License limits and system boundaries](#license-limits-and-system-boundaries) section, or by implementing custom licensing for high-volume use cases. Contact your Adobe Account representative to discuss your requirements.
 
-For questions about system boundaries, contact [Adobe Support](https://experienceleague-review.corp.adobe.com/home?lang=en#support).
+For questions about system boundaries, contact [Adobe Support](https://experienceleague.corp.adobe.com/home?lang=en#support).
 
 
 ## Prevent performance issues
@@ -30,7 +30,7 @@ Follow these best practices to stay within limits and avoid operational issues:
 
 ## License limits and system boundaries
 
-The following tables summarize the license limits and system boundaries by capability area and include information about adding additional licenses to expand capacity where applicable.
+The following tables summarize the license limits and system boundaries by capability area and includes information about adding additional licenses to expand capacity where applicable.
 
 >[!NOTE]
 >
@@ -40,8 +40,8 @@ The following tables summarize the license limits and system boundaries by capab
 
 | **Environment**              | **Description**                            | **Base allocation**      | **Expandable?** |
 | ---------------------------- | -------------------------------------------| ---------------| ----------------|
-| **Sandbox environment**      | Number of sandbox environments included    | 2 per instance | Yes<p>Add additional environment license per instance</p> |
-| **Production environment**   | Number of production environments included | 1 per instance | License<p>Add additional environment license per instance</p> |
+| **Sandbox environment**      | The number of sandbox environments included    | 2 per instance | Yes<p>Add an additional environment license per instance</p> |
+| **Production environment**   | The number of production environments included | 1 per instance | License<p>Add an additional environment license per instance</p> |
 
 {style="table-layout:auto"}
 
@@ -131,12 +131,12 @@ The base allocation for catalog storefront capabilities is determined based on G
 | **Capability**  | **Description**       | **Base allocation**       | **Expandable?**  |
 |-----------------|-----------------------|------------------|------------|
 | Products per search request | Maximum number of products returned per page in search results  | 100  | No         |
-| Filterable attributes | Number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 |      No |
-| Searchable attributes | Number of product characteristics that can be configured for use with the product catalog search service | 200  | No            |
-| Sortable attributes | Number of product characteristics that can be configured for determining the order of search result values | 50 |  No |
+| Filterable attributes |The number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 |      No |
+| Searchable attributes | The number of product characteristics that can be configured for use with the product catalog search service | 200  | No            |
+| Sortable attributes | The number of product characteristics that can be configured for determining the order of search result values | 50 |  No |
 | Search pagination depth | Maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K |  No    |
 | Facets | Number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
-| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100              | Yes<p>Can increase via support request</p|
+| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100              | Yes<p>Can increase via support request</p>|
 
 {style="table-layout:auto"}
 
