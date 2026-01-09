@@ -16,10 +16,9 @@ Your usage must stay within these limits. Exceeding them can cause increased lat
 
 ## Request additional capacity
 
-License limits can be increased by purchasing the license packages described in the [License limits and system boundaries](#license-limits-and-system-boundaries) section, or by implementing custom licensing for high-volume use cases. Contact your Adobe Account representative to discuss your requirements.
+License limits can be increased by purchasing the license packages described in the [License limits and system boundaries](#license-limits-and-system-boundaries) section, or by negotiating custom licensing for unique use cases. Contact your Adobe Account representative to discuss your requirements.
 
 For questions about system boundaries, contact [Adobe Support](https://experienceleague.corp.adobe.com/home?lang=en#support).
-
 
 ## Prevent performance issues
 
@@ -31,10 +30,6 @@ Follow these best practices to stay within limits and avoid operational issues:
 ## License limits and system boundaries
 
 The following tables summarize the license limits and system boundaries by capability area and includes information about adding additional licenses to expand capacity where applicable.
-
->[!NOTE]
->
-> For information about packages available for increasing capacity, see the [Adobe Commerce Optimizer product licensing description](https://helpx.adobe.com/legal/product-descriptions/adobe-commerce-optimizer.html).
 
 ### Environment limits
 
@@ -49,12 +44,12 @@ The following tables summarize the license limits and system boundaries by capab
 
 | **Capability**            | **Description**                               | **Base allocation**      | **Expandable?**  |
 |---------------------------|---------------------------------------------------|----------------|---------------- |
-| Product ingestion rate    | Number of products created or updated | 1K updates per minute: total 100K updates per day | Yes<p>Add one license pack:</p><ul><li>5K updates per minute; 500K updates per day</li> <li>10K updates per minute: 1M updates per day</li></ul><p>The maximum ingestion rate is 10K updates per minute: 1M updates per day.</p> |
+| Product ingestion rate    | The number of products created or updated | 1K updates per minute: 100K updates per day | Yes<p>Add one license pack:</p><ul><li>5K updates per minute; 500K updates per day</li> <li>10K updates per minute: 1M updates per day</li></ul><p>The maximum ingestion rate is 10K updates per minute: 1M updates per day.</p> |
 | Product payload size | Maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB | No |
-| Catalog variations                  | Number of views of a catalog that are available to storefront users,<p>which are counted as (*Number of Catalog Views × Number of Price Books*)</p>| 100 variations  |  Yes<p>Add 100 catalog variations license pack</p> |
+| Catalog variations                  | The number of views of a catalog that are available to storefront users,<p>which are counted as (*Number of Catalog Views × Number of Price Books*)</p>| 100 variations  |  Yes<p>Add 100 catalog variations license pack</p> |
 | Products in a single catalog source | SKUs supported in the catalog | 250K SKUs      | Yes<p>Add 100K SKU license pack</p> |
-| Variants per product       | Number of product variants (size, color combinations) allowed per product | 10K  | No |
-| Catalog sources            | Number of catalog data contexts (for example, locales or data sources like PIMs and ERPs) | 50  | No |
+| Variants per product       | The number of product variants (size, color combinations) allowed per product | 10K  | No |
+| Catalog sources            | The number of catalog data contexts (for example, locales or data sources like PIMs and ERPs) | 50  | No |
 
 {style="table-layout:auto"}
 
@@ -62,8 +57,8 @@ The following tables summarize the license limits and system boundaries by capab
 
 | **Capability**             | **Description**                                      | **Base allocation** | **Expandable?** |
 | -------------------------- | ---------------------------------------------------- | --------- | --------------- |
-| Price books | Number of price books allowed per instance           | 1,000     | No       |
-| Discounts per price record | Number of discounts that can be applied to a product price within a single price book | 10  | No |
+| Price books | The number of price books allowed per instance           | 1,000     | No       |
+| Discounts per price record | The number of discounts that can be applied to a product price within a single price book | 10  | No |
 
 {style="table-layout:auto"}
 
