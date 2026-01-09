@@ -14,13 +14,14 @@ exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 
 Your usage must stay within these limits. Exceeding them can cause increased latency and request throttling.
 
-## How to increase base capacity
+## Request additional capacity
 
-License limits can be increased by purchasing additional capacity packages, or custom solutions for high-volume use cases. Contact your Adobe Account representative to discuss your requirements.
+License limits can be increased by purchasing the license packages described in the [License limits and system boundaries](#license-limits-and-system-boundaries) section, or by implementing custom licensing for high-volume use cases. Contact your Adobe Account representative to discuss your requirements.
+
 For questions about system boundaries, contact [Adobe Support](https://experienceleague-review.corp.adobe.com/home?lang=en#support).
 
 
-## How to prevent performance issues
+## Prevent performance issues
 
 Follow these best practices to stay within limits and avoid operational issues:
 
