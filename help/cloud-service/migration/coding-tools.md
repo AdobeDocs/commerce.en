@@ -1,16 +1,18 @@
 ---
 title: AI coding tools for extensions
 description: Learn how to use the AI tools for creating Commerce App Builder extensions.
+feature: App Builder, Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
+level: Intermediate
 hide: yes
 hidefromtoc: yes
 ---
 # AI coding tools for extensions
 
-When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. It can also be used to create new [!DNL App Builder] extensions.
+When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. You can also use these tools to create new [!DNL App Builder] extensions.
 
-Using the AI coding tools provides the following benefits:
+The AI coding tools provide the following benefits:
 
 * **Enhanced development workflow**: Integrated Adobe Commerce development tools.
 * **AI-powered assistance**: Context-aware code generation and debugging.
@@ -29,6 +31,10 @@ Using the AI coding tools provides the following benefits:
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
 
 ## Installation
+
+>[!NOTE]
+>
+>If you only want to install the Documentation RAG service and not the entire AI coding tools package, see [Documentation RAG service](./doc-rag.md).
 
 1. Install the latest [Adobe I/O CLI](https://github.com/adobe/aio-cli) globally:
 
@@ -64,7 +70,7 @@ Using the AI coding tools provides the following benefits:
    aio commerce extensibility tools-setup
    ```
 
-  The setup process will prompt you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
+  The setup process prompts you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
 
   ```shell-session
   ? Where would you like to setup the tools?
@@ -120,9 +126,9 @@ Using the AI coding tools provides the following benefits:
 
 ## Post-installation configuration
 
-### Log in to the [!DNL Adobe I/O CLI]
+### Log in to the Adobe I/O CLI
 
-After installing the [!DNL Adobe I/O CLI], you need to log in any time you want to use the MCP server.
+After installing the [!DNL Adobe I/O CLI], you must log in any time you want to use the MCP server.
 
 ```bash
 aio auth login
@@ -145,7 +151,7 @@ aio auth login
 >
 >Some features of the MCP server will work without logging in, but the RAG (Retrieval-Augmented Generation) service will not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
 >
->In a future release, the RAG service will be accessible independently without the need to install other tools.
+>To install the RAG service independently, see [Documentation RAG service](./doc-rag.md).
 
 ### Cursor
 
@@ -183,9 +189,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Enable the MCP server:
 
    * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
-   * Click **MCP SERVERS - INSTALLED**.
-   * Click the gear icon next to **commerce-extensibility MCP Server**  and select **Start Server**, if the server is stopped.
-   * Click the gear icon again, and select **Show Output**.
+   * Click [!UICONTROL **MCP SERVERS - INSTALLED**].
+   * Click the gear icon next to [!UICONTROL **commerce-extensibility MCP Server**] and select [!UICONTROL **Start Server**], if the server is stopped.
+   * Click the gear icon again, and select [!UICONTROL **Show Output**].
 
 1. Verify the server status. The `MCP:commerce-extensibility` output should match the following:
 
@@ -316,7 +322,7 @@ Complex Adobe Commerce extensions often involve:
 >
 >Before using MCP tools, ensure you are [logged in to the Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
 
-The tooling defaults to MCP tools, but in certain circumstances, it can use CLI commands instead. If you want to ensure MCP tool usage, explicitly request them in your prompt.
+The tooling defaults to MCP tools, but in certain circumstances it can use CLI commands instead. To ensure MCP tool usage, explicitly request them in your prompt.
 
 If you see CLI commands being used and want to use MCP tools instead, use the following prompt:
 
@@ -336,7 +342,7 @@ CLI commands can be used for the following scenarios:
 
 ### Development
 
-It is important to question unnecessary complexity created by the AI tools.
+Question unnecessary complexity created by the AI tools.
 
 When unnecessary files are added (`validator.js`, `transformer.js`, `sender.js`) for simple read-only endpoints, use the following prompts:
 
@@ -456,7 +462,7 @@ Use the following best practices when deploying:
 
 #### Deploy incrementally
 
-Deploy only modified actions to speed up development. This will reduce the risk of breaking existing functionality and provide quicker feedback on changes. It also reduces the risk of breaking existing functionality.
+Deploy only modified actions to speed up development. This approach reduces the risk of breaking existing functionality and provides quicker feedback on changes.
 
 * Use MCP tools to deploy specific actions
 
@@ -469,7 +475,7 @@ Deploy only modified actions to speed up development. This will reduce the risk 
 
 #### Runtime cleanup
 
-After major changes, leverage the tools to clean up orphaned actions. Let the AI tooling handle the cleanup process systematically, it can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
+After major changes, leverage the tools to clean up orphaned actions. Let the AI tooling handle the cleanup process systematically. It can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -510,7 +516,7 @@ Track token usage patterns:
 
 ## What to avoid
 
-You should avoid the following anti-patterns when using the AI coding tools:
+Avoid the following anti-patterns when using the AI coding tools:
 
 * **Do not skip the clarification phase** - Always ensure Phase 1 is completed before implementation.
 * **Do not skip testing after each feature** - Test incrementally, don't wait until everything is complete.

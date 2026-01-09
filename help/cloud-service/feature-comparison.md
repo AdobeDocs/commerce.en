@@ -1,7 +1,9 @@
 ---
 title: Adobe Commerce SaaS vs PaaS comparison
 description: Compare Adobe Commerce SaaS vs PaaS models to determine the best implementation approach for your business needs.
-role: Developer
+feature: App Builder, GraphQL, Integration, Saas
+role: Developer, Admin, Leader
+level: Intermediate
 exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 ---
 # Feature comparison
@@ -12,7 +14,7 @@ Adobe Commerce offers three deployment models:
 - [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
 - [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (on-premises)
 
-This comparison focuses on the differences between software-as-a-service (SaaS) and platform-as-a-service (PaaS) models, which provide different levels of customization, extensibility, and control over your commerce implementation.
+This comparison focuses on the differences between software-as-a-service (SaaS) and platform-as-a-service (PaaS) models. These models provide different levels of customization, extensibility, and control over your Commerce implementation.
 
 >[!NOTE]
 >
@@ -20,7 +22,7 @@ This comparison focuses on the differences between software-as-a-service (SaaS) 
 
 ## Store management features
 
-The [Commerce Admin UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) is the primary interface for accessing features to manage backend store operations, inventory, pricing, promotions, and customer interactions. However, [!DNL Adobe Commerce as a Cloud Service] offers unique solutions that replace some of the well-known features available in Adobe Commerce on Cloud and on-premises projects.
+The [Commerce Admin UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) is the primary interface for accessing features to manage backend store operations, inventory, pricing, promotions, and customer interactions. However, [!DNL Adobe Commerce as a Cloud Service] offers unique solutions that replace some of the well-known features available in [!DNL Adobe Commerce on Cloud] and on-premises projects.
 
 The following table describes the features and replacement solutions available in [!DNL Adobe Commerce as a Cloud Service]:
 
@@ -67,7 +69,7 @@ The following table describes the features and replacement solutions available i
 
 ## Extensibility and platform features
 
-The following table compares platform capabilities and extensibility features to help you understand the differences and make an informed decision about which model best suits your business requirements before starting an implementation.
+The following table compares platform capabilities and extensibility features to help you understand the differences and decide which model best suits your business requirements before starting an implementation.
 
 <table>
     <thead>
@@ -205,7 +207,7 @@ The following table compares platform capabilities and extensibility features to
 >
 >- Move suitable functionality to out-of-process extensibility where possible.
 >- Reduce the surface area that requires transition.
->- Consider API Mesh for extending API functionality.
+>- Consider [!DNL API Mesh] for extending API functionality.
 >- Monitor Adobe's ongoing platform evolution and new capability releases.
 >- Evaluate industry-specific data model requirements against available extensibility options.
 >- Consider adopting [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md).

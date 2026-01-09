@@ -2,8 +2,35 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Dec 12 15:40:18 2025
+updated: Mon Jan 5 17:18:37 2026
 entries:
+- description: Updated the [configure AEM topic](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package)
+    in the AEM Assets Integration documentation.
+  versions: ''
+  type: major-update
+  date: December 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/348
+  merge_commit: d46526db56dad08a8f865664c92d1214bbf063d8
+  contributor: del
+  membership:
+  labels:
+  - major-update
+- description: Added new topics:<br/>- [Opportunities](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities)
+    to document AI-powered site optimization recommendations through Adobe Sites Optimizer
+    integration, including auto-detect and auto-fix workflows for improving SEO, metadata,
+    and product data quality.<br/>- [Catalog Layers](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)
+    to explain how to modify product data without changing source data, including
+    layer priority management and integration with Sites Optimizer auto-fix features.
+  versions: ''
+  type: major-update, new-topic
+  date: December 15, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/293
+  merge_commit: dd4447d519761f43d06f13de71c5ae97f6b103e7
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+  - new-topic
 - description: Updating the recommendations feature in the Commerce Optimizer documentation
     as the [preview pane](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations)
     is now supported.
