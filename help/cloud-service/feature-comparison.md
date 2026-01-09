@@ -185,7 +185,7 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>Custom data storage</td>
             <td>DB, file, cache, queue</td>
-            <td>App Builder state library (file only)<sup>3</sup></td>
+            <td>App Builder state library (file only)<sup>3 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Database Storage for App Builder</a> is currently in Early Access</sup></td>
         </tr>
     </tbody>
     <tfoot>
