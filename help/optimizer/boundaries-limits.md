@@ -44,7 +44,7 @@ The following tables summarize the license limits and system boundaries by capab
 
 | **Capability**            | **Description**                               | **Base allocation**      | **Expandable?**  |
 |---------------------------|---------------------------------------------------|----------------|---------------- |
-| Product ingestion rate    | The number of products created or updated | 1K updates per minute: 100K updates per day | Yes<p>Add one license pack:</p><ul><li>5K updates per minute; 500K updates per day</li> <li>10K updates per minute: 1M updates per day</li></ul><p>The maximum capacity for data ingestion is 1M updates per day.</p> |
+| Product ingestion rate    | The number of products created or updated | <ul><li>1K updates per minute</li><li>A maximum of 100K updates per day</li></ol> | Yes<p>Add one license pack:</p><ul><li>5K updates per minute<br>Maximum of 500K updates per day</li> <li>10K updates per minute<br>Maximum of 1M updates per day</li></ul><p>The maximum capacity for data ingestion is 1M updates per day.</p> |
 | Product payload size | Maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB | No |
 | Catalog variations                  | The number of views of a catalog that are available to storefront users,<p>which are counted as (*Number of Catalog Views × Number of Price Books*)</p>| 100 variations  |  Yes<p>Add 100 catalog variations license pack</p> |
 | Products in a single catalog source | SKUs supported in the catalog | 250K SKUs      | Yes<p>Add 100K SKU license pack</p> |
