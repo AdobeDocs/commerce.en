@@ -18,7 +18,7 @@ Your usage must stay within these limits. Exceeding them can cause increased lat
 
 License limits can be increased by purchasing the license packages described in the [License limits and system boundaries](#license-limits-and-system-boundaries) section, or by negotiating custom licensing for unique use cases. Contact your Adobe Account representative to discuss your requirements.
 
-For questions about system boundaries, contact [Adobe Support](https://experienceleague.corp.adobe.com/home?lang=en#support).
+For questions about system boundaries, contact [Adobe Support](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Prevent performance issues
 
