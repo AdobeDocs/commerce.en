@@ -47,7 +47,7 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 Learn how you can [create a new or manage an existing](../merchandising/recommendations/create.md) recommendation.
 
-## Workspace Controls
+## Workspace controls
 
 |Control|Description|
 |---|---|
@@ -55,7 +55,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
-## Column Descriptions
+## Column descriptions
 
 |Column|Description|
 |---|---|

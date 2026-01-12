@@ -93,6 +93,22 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.13.2
+
+_January 5, 2026_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6390  --> General improvements and optimizations by implementing improved JS minification.
+
+## v2.13.1
+
+_December 18, 2025_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6355 --> Fixed an issue where merchants could not select a shipping method during checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6347 --> Improved checkout resilience by removing unnecessary API calls.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6368 --> Implemented a fallback mechanism for loading the Payments SDK when the primary domain is unavailable, ensuring credit card fields remain accessible during checkout.
+
 ## v2.13.0
 
 _November 10, 2025_
@@ -125,7 +141,7 @@ _September 18, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-6164 --> Now, [!DNL Payment Services] uses base currency for the available shipping methods in the **PayPal server-side shipping callback (SSSC)**.
+![Fixed issue](../assets/fix.svg)<!-- PAY-6164 --> Now, [!DNL Payment Services] uses base currency for the available shipping methods in the [PayPal server-side shipping callback (SSSC)](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/).
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6267 --> The **Ship To** block is hidden on the checkout page when **In-Store Pickup (ISPU)** is selected.
 

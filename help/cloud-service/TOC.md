@@ -12,14 +12,15 @@ recommendations: noDisplay, noCatalog
 - [Getting started](getting-started.md)
 - [User and identity management](user-management.md)
 - [Storefront](storefront.md)
-- [Asset management](assets-management.md)
 - [Use cases](use-cases.md)
 - [Shared responsibility](shared-responsibility.md)
-- [Ratings extension tutorial](workbook.md)
-- [Ratings extension prerequisites](workbook-prerequisites.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
   - [Coding tools](migration/coding-tools.md)
+  - [Documentation RAG service](migration/doc-rag.md)
+- Tutorials {#tutorials}
+  - [Ratings extension tutorial prerequisites](tutorials/tutorial-prerequisites.md)
+  - [Ratings extension tutorial](tutorials/ratings-extension.md)
 - [Release notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
