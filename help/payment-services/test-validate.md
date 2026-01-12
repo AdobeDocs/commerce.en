@@ -17,6 +17,32 @@ Testing [!DNL Payment Services] in a sandbox environment is an important validat
 1. Within 24-48 hours, view the transaction and other information in the [Payouts report](payouts.md).
 1. See details of the order in the [Order payment status report](order-payment-status.md).
 
+### Test on local development environments
+
+Testing PayPal, PayLater, and Venmo payment methods on local development environments requires your environment to be accessible from the internet. These payment methods use a [server-side shipping callback](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) that requires PayPal to communicate with your Commerce instance to retrieve shipping options and calculate totals.
+
+>[!INFO]
+>
+>Without an internet-accessible URL, the shipping callback cannot function, which results in a different checkout flow than production. Always test with an accessible URL to ensure accurate results.
+
+To expose your local environment:
+
+1. Use a tunneling service like [ngrok](https://ngrok.com/) to create a publicly accessible URL for your local environment.
+
+1. Update your Commerce base URL configuration to match the ngrok URL:
+
+   ```bash
+   bin/magento config:set web/unsecure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento config:set web/secure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento cache:flush
+   ```
+
+1. Complete your testing with the PayPal, PayLater, or Venmo payment methods.
+
+1. Restore your original base URL configuration when testing is complete.
+
+If the endpoint's response time is under 5 seconds, PayPal displays an error message in the pop-up.
+
 ### Testing credentials
 
 When testing and validating your sandbox you must use fake credit card numbers, so that you are not creating real charges to an existing credit card account.
