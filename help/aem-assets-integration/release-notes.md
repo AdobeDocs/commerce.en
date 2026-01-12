@@ -32,6 +32,18 @@ _February 11, 2025_
 
 +++
 
+## v1.2.10
+
+_January 12, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1178 --> Fixed an issue where product custom attributes could not be updated via REST API when the product had an image and the AEM Assets integration was enabled. Now, product custom attributes update correctly via REST API.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1172 --> Fixed an issue where hidden product images were not displayed as hidden in the Admin UI on the product edit page. Now, image visibility status displays correctly.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1170 --> Fixed an issue where product images from AEM Assets were not synchronized to Adobe Commerce due to a deserialization error. Now, all image attributes (`image`, `small_image`, and `swatch_image`) synchronize correctly.
+
 ## v1.2.7
 
 _November 6, 2025_

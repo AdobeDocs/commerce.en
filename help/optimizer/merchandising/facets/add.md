@@ -40,7 +40,7 @@ Any filterable product attribute can be used as a facet. Facets help customers f
 
 1. When complete, click **Save**.
 
-## Pin/Unpin Facets
+## Pin/unpin facets
 
 The pin changes color when clicked and is used to move the facet to either the *Pinned Facets* or the *Dynamic Facets* section.
 

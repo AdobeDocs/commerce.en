@@ -127,7 +127,7 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 >
 >The storefront search experience is affected by multiple configurations working together, such as facets, synonyms, and search / category merchandising rules, which can lead to results that differ from those seen when testing individual configurations in the Admin. While Admin testing isolates specific configuration areas, the storefront applies all relevant configurations together, resulting in a more complex and realistic search output.
 
-## Manual Ranking
+## Manual ranking
 
 Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
@@ -174,7 +174,11 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 1. If the rule has multiple queries, test each one that might be affected by the rule.
 1. When complete, click **Save and publish**.
 
-   The rule is added to the list in the *Rules* workspace. 
+   The rule is added to the list in the *Rules* workspace.
+
+   >[!IMPORTANT]
+   >
+   >If the **[!UICONTROL Save and publish]** button is greyed out, make sure you have entered all required information for the rule, including the rule name.
 
 1. Although active rules go into effect immediately, you might have to wait up to 15 minutes for the cached query results in the storefront to be refreshed.
 
@@ -207,7 +211,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 | Any | Changes all logical operators in the rule to `OR` and returns the set of matching products. |
 | All | Changes all logical operators in the rule to `AND` and returns the set of matching products. |
 
-### Manual Ranking
+### Manual ranking
 
 |Event |Description |
 |--- |--- |

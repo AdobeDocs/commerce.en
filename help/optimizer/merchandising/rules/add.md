@@ -114,7 +114,7 @@ See [search rules](./best-practice.md#tips-to-optimize-search-rules) to learn ho
 
 For information about setting search weights, see the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/).
 
-### Manual Ranking
+### Manual ranking
 
 **Manual ranking** are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
@@ -207,7 +207,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 | Any | Changes all logical operators in the rule to `OR` and returns the set of matching products. |
 | All | Changes all logical operators in the rule to `AND` and returns the set of matching products. |
 
-### Manual Ranking
+### Manual ranking
 
 |Event |Description |
 |--- |--- |
