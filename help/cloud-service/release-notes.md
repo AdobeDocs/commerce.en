@@ -27,9 +27,13 @@ The following items are currently only available in Sandbox environments of [!DN
 
 Access tokens for Adobe IMS admin authentication are now only accepted through POST requests. <!-- CCSAAS-4421 -->
 
-### B2B dropins
+### B2B drop-ins
 
-[!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+The following changes were made to B2B drop-in components:
+
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems.
 
 ### Clickable links to external shipping trackers
 
@@ -55,11 +59,9 @@ You can now combine tiered pricing discounts with catalog rule discounts using [
 
 The following selected enhancements, optimizations, and bug fixes included in this release:
 
-* Added missing GraphQL properties to quote template types including `NegotiableQuoteTemplate`, `ItemNote`, and `NegotiableQuoteTemplateGridItem`. <!-- LYNX-978 -->
-
 * Resolved an error that could occur when uploading a file to S3. <!-- CCSAAS-4189 -->
 
-* Resolved a `User is not entitled to access this instance` error that could occur when logging into the admin or accessing the REST API. <!-- CCSAAS-4324 -->
+* Resolved a `User is not entitled to access this instance` error that could occur when logging into the Commerce Admin or accessing the REST API. <!-- CCSAAS-4324 -->
 
 * Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 -->
 
