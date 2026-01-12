@@ -57,7 +57,7 @@ The following tables summarize the license limits and system boundaries by capab
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Price books | The number of price books allowed per instance | Based on number of [Catalog variations](#catalog) | Yes<br>Increase catalog variation |
+| Price books | The number of price books allowed per instance | Based on the number of [Catalog variations](#catalog) | Yes<br>Increase catalog variations |
 | Discounts per price record | The number of discounts that can be applied to a product price within a single price book | 10 | No |
 
 {style="table-layout:auto"}
@@ -98,7 +98,7 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Catalog views | Number of configurable subsets of your master catalog | Based on number of [Catalog variations](#catalog) | Yes<br>Increase catalog variation |
+| Catalog views | Number of configurable subsets of your master catalog | Based on the number of [Catalog variations](#catalog) | Yes<br>Increase catalog variations |
 | Policies per catalog view | Number of data filters allowed | 10 | No |
 | Attribute values in a policy | Number of product characteristics that can be configured for filtering | 100 | No |
 
