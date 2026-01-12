@@ -1,4 +1,5 @@
 .cursor/
+.cursor-agents
 .DS_Store
 .vscode
 _jekyll/Gemfile.lock

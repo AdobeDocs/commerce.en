@@ -65,7 +65,7 @@ You can use the following class selectors to style the container and product ele
 - `.livesearch.product-name`
 - `.livesearch.product-price`
 
-### Container Class Selectors
+### Container class selectors
 
 #### .livesearch.popover-container
 
@@ -75,7 +75,7 @@ You can use the following class selectors to style the container and product ele
 
 ![View all footer](assets/livesearch-view-all-footer.png)
 
-### Product Class Selectors
+### Product class selectors
 
 #### .livesearch.products-container
 

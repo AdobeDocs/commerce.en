@@ -1,16 +1,18 @@
 ---
 title: AI coding tools for extensions
 description: Learn how to use the AI tools for creating Commerce App Builder extensions.
+feature: App Builder, Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
+level: Intermediate
 hide: yes
 hidefromtoc: yes
 ---
 # AI coding tools for extensions
 
-When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. It can also be used to create new [!DNL App Builder] extensions.
+When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. You can also use these tools to create new [!DNL App Builder] extensions.
 
-Using the AI coding tools provides the following benefits:
+The AI coding tools provide the following benefits:
 
 * **Enhanced development workflow**: Integrated Adobe Commerce development tools.
 * **AI-powered assistance**: Context-aware code generation and debugging.
@@ -19,12 +21,20 @@ Using the AI coding tools provides the following benefits:
 
 ## Prerequisites
 
-* A coding agent, such as [Cursor](https://cursor.com/download)(recommended), [Github Copilot](https://github.com/features/copilot), [Google Gemini CLI](https://github.com/google-gemini/gemini-cli), or [Claude Code](https://www.claude.com/product/claude-code)
+* One of the following coding agents:
+   * [Cursor](https://cursor.com/download) (recommended)
+   * [Github Copilot](https://github.com/features/copilot)
+   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
 
 ## Installation
+
+>[!NOTE]
+>
+>If you only want to install the Documentation RAG service and not the entire AI coding tools package, see [Documentation RAG service](./doc-rag.md).
 
 1. Install the latest [Adobe I/O CLI](https://github.com/adobe/aio-cli) globally:
 
@@ -32,10 +42,14 @@ Using the AI coding tools provides the following benefits:
    npm install -g @adobe/aio-cli
    ```
 
-1. Install the [Adobe I/O CLI Commerce plugin](https://github.com/adobe-commerce/aio-cli-plugin-commerce):
+1. Install the following plugins:
+   
+   * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
 1. Clone the Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
@@ -56,9 +70,9 @@ Using the AI coding tools provides the following benefits:
    aio commerce extensibility tools-setup
    ```
 
-  The setup process will prompt you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
+  The setup process prompts you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
 
-  ```terminal
+  ```shell-session
   ? Where would you like to setup the tools?
   ❯ Current directory
     New directory
@@ -66,7 +80,7 @@ Using the AI coding tools provides the following benefits:
 
   When selecting the coding agent, Adobe recommends selecting `Cursor` for the best development experience:
 
-  ```terminal
+  ```shell-session
   ? Which coding agent would you like to use?
   ❯ Cursor
     Copilot
@@ -76,7 +90,7 @@ Using the AI coding tools provides the following benefits:
 
   When selecting the package manager, Adobe recommends using `npm` for consistency:
 
-  ```terminal
+  ```shell-session
   ? Which package manager would you like to use?
   ❯ npm
     yarn
@@ -100,7 +114,44 @@ Using the AI coding tools provides the following benefits:
      * MCP Configuration: `.vscode/mcp.json`
      * Rules Directory: `.github/copilot-instructions.md`
 
+>[!NOTE]
+>
+>Before deploying your project, you will need to complete the following configuration tasks:
+>
+>* Log in to [Adobe Developer Console](https://developer.adobe.com/console) using the Adobe I/O CLI.
+>* Create an App Builder project (see [Project setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Set up environment variables in an `.env` file.
+>
+>You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) for detailed configuration instructions.
+
 ## Post-installation configuration
+
+### Log in to the Adobe I/O CLI
+
+After installing the [!DNL Adobe I/O CLI], you must log in any time you want to use the MCP server.
+
+```bash
+aio auth login
+```
+
+To verify you are logged in, run the following command:
+
+```bash
+aio where
+```
+
+If you encounter issues, try logging out and logging back in:
+
+```bash
+aio auth logout
+aio auth login
+```
+
+>[!NOTE]
+>
+>Some features of the MCP server will work without logging in, but the RAG (Retrieval-Augmented Generation) service will not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
+>
+>To install the RAG service independently, see [Documentation RAG service](./doc-rag.md).
 
 ### Cursor
 
@@ -117,7 +168,7 @@ Using the AI coding tools provides the following benefits:
 
 1. Verify the server status - the Commerce extensibility MCP Server should appear as:
 
-   ```terminal
+   ```shell-session
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -125,7 +176,7 @@ Using the AI coding tools provides the following benefits:
 
 1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
-```terminal
+```shell-session
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -138,13 +189,13 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Enable the MCP server:
 
    * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
-   * Click **MCP SERVERS - INSTALLED**.
-   * Click the gear icon next to **commerce-extensibility MCP Server**  and select **Start Server**, if the server is stopped.
-   * Click the gear icon again, and select **Show Output**.
+   * Click [!UICONTROL **MCP SERVERS - INSTALLED**].
+   * Click the gear icon next to [!UICONTROL **commerce-extensibility MCP Server**] and select [!UICONTROL **Start Server**], if the server is stopped.
+   * Click the gear icon again, and select [!UICONTROL **Show Output**].
 
 1. Verify the server status. The `MCP:commerce-extensibility` output should match the following:
 
-   ```terminal
+   ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -158,21 +209,29 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Use the following prompt to see if the agent uses the MCP server. If it does not, ask the agent explicitly to use the MCP tools available.
 
-```terminal
-What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
-```
+   ```shell-session
+   What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ## Sample prompt
 
 The following sample prompt creates an extension to send notifications when an order is placed.
 
-```terminal
+```shell-session
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
+```
+
+## Prompt commands
+
+In addition to prompting, you can use the `/search-commerce-docs` command to search documentation in conversations with your agent. For example:
+
+```shell-session
+/search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
 ## Best Practices
@@ -245,7 +304,7 @@ The following four-phase protocol is automatically enforced by the rules system.
 
 For complex development involving multiple runtime actions, touchpoints, or integrations, explicitly request that the AI tools create a detailed implementation plan. When you see a high-level plan in [Phase 2](#protocol) that involves multiple components, ask for a detailed implementation plan to break it down into manageable tasks:
 
-```terminal
+```shell-session
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -259,11 +318,15 @@ Complex Adobe Commerce extensions often involve:
 
 ### Use MCP tools
 
-The tooling defaults to MCP tools, but in certain circumstances, it can use CLI commands instead. If you want to ensure MCP tool usage, explicitly request them in your prompt.
+>[!NOTE]
+>
+>Before using MCP tools, ensure you are [logged in to the Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
+
+The tooling defaults to MCP tools, but in certain circumstances it can use CLI commands instead. To ensure MCP tool usage, explicitly request them in your prompt.
 
 If you see CLI commands being used and want to use MCP tools instead, use the following prompt:
 
-```terminal
+```shell-session
 Use only MCP tools and not CLI commands
 ```
 
@@ -279,11 +342,11 @@ CLI commands can be used for the following scenarios:
 
 ### Development
 
-It is important to question unnecessary complexity created by the AI tools.
+Question unnecessary complexity created by the AI tools.
 
 When unnecessary files are added (`validator.js`, `transformer.js`, `sender.js`) for simple read-only endpoints, use the following prompts:
 
-```terminal
+```shell-session
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -339,47 +402,47 @@ Ask for help with testing. The tools can help with debugging, log analysis, and 
 
 **Test runtime actions**:
 
-```terminal
+```shell-session
 Help me test the customer-created runtime action running locally
 ```
 
 **Debug failures**:
 
-```terminal
+```shell-session
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Check logs**:
 
-```terminal
+```shell-session
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Create test payloads**:
 
-```terminal
+```shell-session
 Generate test data for this Commerce event
 ```
 
-```terminal
+```shell-session
 Create a test payload for the customer_save_after event
 ```
 
 **Find runtime endpoints**:
 
-```terminal
+```shell-session
 What's the URL for this deployed action?
 ```
 
 **Handle authentication**:
 
-```terminal
+```shell-session
 How do I authenticate with this external API?
 ```
 
 **Troubleshoot**:
 
-```terminal
+```shell-session
 Help me debug why this action is returning 500 errors
 ```
 
@@ -399,7 +462,7 @@ Use the following best practices when deploying:
 
 #### Deploy incrementally
 
-Deploy only modified actions to speed up development. This will reduce the risk of breaking existing functionality and provide quicker feedback on changes. It also reduces the risk of breaking existing functionality.
+Deploy only modified actions to speed up development. This approach reduces the risk of breaking existing functionality and provides quicker feedback on changes.
 
 * Use MCP tools to deploy specific actions
 
@@ -412,21 +475,21 @@ Deploy only modified actions to speed up development. This will reduce the risk 
 
 #### Runtime cleanup
 
-After major changes, leverage the tools to clean up orphaned actions. Let the AI tooling handle the cleanup process systematically, it can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
+After major changes, leverage the tools to clean up orphaned actions. Let the AI tooling handle the cleanup process systematically. It can efficiently identify orphaned actions, verify their status, and safely remove them without manual intervention.
 
-```terminal
+```shell-session
 Help me identify and clean up orphaned runtime actions
 ```
 
 Request the AI tooling to list deployed actions and identify unused ones
 
-```terminal
+```shell-session
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Have the AI tools remove orphaned actions using appropriate commands
 
-```terminal
+```shell-session
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
@@ -453,7 +516,7 @@ Track token usage patterns:
 
 ## What to avoid
 
-You should avoid the following anti-patterns when using the AI coding tools:
+Avoid the following anti-patterns when using the AI coding tools:
 
 * **Do not skip the clarification phase** - Always ensure Phase 1 is completed before implementation.
 * **Do not skip testing after each feature** - Test incrementally, don't wait until everything is complete.

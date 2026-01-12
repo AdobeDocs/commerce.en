@@ -14,6 +14,7 @@ recommendations: noDisplay
 - [Boundaries and limitations](boundaries-limits.md)
 - [Release notes](release-notes.md)
 - Managing Results {#manage-results}
+   - [Opportunities](./manage-results/opportunities.md)
    - [Success Metrics](./manage-results/success-metrics.md)
    - [Search Performance](./manage-results/search-performance.md)
    - [Recommendations Performance](./manage-results/recommendation-performance.md)
@@ -43,6 +44,7 @@ recommendations: noDisplay
       - [Best practices](./merchandising/synonyms/best-practice.md)
 - Store Setup {#setup}
    - [Catalog Views](./setup/catalog-view.md)
+   - [Catalog Layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price Books](./setup/pricebooks.md)
    - [Data Sync](./setup/data-sync.md)
@@ -53,6 +55,6 @@ recommendations: noDisplay
 - Use Case {#use-case}
    - [Storefront and Catalog Admin end-to-end use case](./use-case/admin-use-case.md)
 - Developer Resources {#developer}
+   - [Developer Guide and API References](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
-   - [Data Ingestion REST API Reference](https://developer.adobe.com/commerce/services/reference/rest/)
-   - [Merchandising GraphQL API Reference](https://developer.adobe.com/commerce/services/reference/graphql/)
+  
