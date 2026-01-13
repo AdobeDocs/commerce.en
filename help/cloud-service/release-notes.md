@@ -41,7 +41,7 @@ Transform shipment tracking numbers included in shopper emails from plain text i
 
 ### Google reCAPTCHA Enterprise support
 
-[!DNL Adobe Commerce on Cloud] storefronts now support [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). This feature delivers advanced bot protection by using adaptive risk analysis and machine learning to accurately distinguish human users from automated bots. It strengthens site security, prevents fraudulent activities, and reduces spam and abuse to maintain a trusted shopping experience. <!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service] storefronts now support [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). This feature delivers advanced bot protection by using adaptive risk analysis and machine learning to accurately distinguish human users from automated bots. It strengthens site security, prevents fraudulent activities, and reduces spam and abuse to maintain a trusted shopping experience. <!-- CCSAAS-4242 -->
 
 ### Instance-specific admin access
 
@@ -49,7 +49,7 @@ You can now [assign users access](./user-management.md#add-users) to individual 
 
 ### Observability
 
-Gain deeper visibility into your [!DNL Adobe Commerce on Cloud] instance with [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), now automatically available. OpenTelemetry provides metrics, logs, and traces to help you monitor performance, troubleshoot issues faster, and optimize your storefront. This capability enables proactive insights into system health and improves reliability for your customers.
+Gain deeper visibility into your [!DNL Adobe Commerce as a Cloud Service] instance with [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), now automatically available. OpenTelemetry provides metrics, logs, and traces to help you monitor performance, troubleshoot issues faster, and optimize your storefront. This capability enables proactive insights into system health and improves reliability for your customers.
 
 ### Tier pricing for catalog price rules
 
