@@ -29,7 +29,7 @@ Follow these best practices to stay within limits and avoid operational issues:
 
 ## License limits and system boundaries
 
-The following tables summarize the license limits and system boundaries by capability area and includes information about adding additional licenses to expand capacity where applicable.
+The following tables summarize the license limits and system boundaries by capability area and include information about adding additional licenses to expand capacity where applicable.
 
 ### Environment limits
 
@@ -44,8 +44,8 @@ The following tables summarize the license limits and system boundaries by capab
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Product ingestion rate | The number of products created or updated | 1K updates per minute<p>A maximum of 100K updates per day</p> | Yes<p>Add one license pack:</p><ul><li>5K updates per minute<br>Maximum of 500K updates per day</li> <li>10K updates per minute<br>Maximum of 1M updates per day</li></ul><p>The maximum capacity for data ingestion is 1M updates per day.</p> |
-| Product payload size | Maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB | No |
+| Product ingestion rate | The number of products created or updated | 1K updates per minute<p>A maximum of 100K updates per day</p> | Yes<p>Add one license pack:</p><ul><li>5K updates per minute<br>A maximum of 500K updates per day</li> <li>10K updates per minute<br>A maximum of 1M updates per day</li></ul><p>The maximum capacity for data ingestion is 1M updates per day.</p> |
+| Product payload size | The maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB | No |
 | Catalog variations | The number of views of a catalog that are available to storefront users,<p>which are counted as (*Number of Catalog Views × Number of Price Books*)</p> | 100 variations | Yes<p>Add 100 catalog variations license pack</p> |
 | Products in a single catalog source | SKUs supported in the catalog | 250K SKUs | Yes<p>Add 100K SKU license pack</p> |
 | Variants per product | The number of product variants (size, color combinations) allowed per product | 10K | No |
@@ -125,12 +125,12 @@ The base allocation for catalog storefront capabilities is determined based on G
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Products per search request | Maximum number of products returned per page in search results | 100 | No |
+| Products per search request | The maximum number of products returned per page in search results | 100 | No |
 | Filterable attributes | The number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 | No |
 | Searchable attributes | The number of product characteristics that can be configured for use with the product catalog search service | 200 | No |
 | Sortable attributes | The number of product characteristics that can be configured for determining the order of search result values | 50 | No |
-| Search pagination depth | Maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K | No |
-| Facets | Number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
+| Search pagination depth | The maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K | No |
+| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
 | Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100 | Yes<p>Can increase via support request</p> |
 
 {style="table-layout:auto"}
