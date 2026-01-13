@@ -38,7 +38,7 @@ _January 15, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1180 --> General improvements in the product edit page. Now, pages prerender correctly when the AEM Assets integration is enabled.
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1180 --> Improved the product edit page by hiding file size and dimensions for AEM assets since they are dynamically optimized by CDN. Now, pages prerender correctly when the AEM Assets integration is enabled.
 
 ## v1.2.10
 
