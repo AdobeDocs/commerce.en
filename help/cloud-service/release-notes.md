@@ -63,6 +63,8 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 * Resolved a `User is not entitled to access this instance` error that could occur when logging into the Commerce Admin or accessing the REST API. <!-- CCSAAS-4324 -->
 
+* Corrected an error that occurred when previewing or queueing a newsletter from the Newletter Template grid. <!-- CCSAAS-4398 --> 
+
 * Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 -->
 
 {{accs-release}}
