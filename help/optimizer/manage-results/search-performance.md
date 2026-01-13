@@ -52,7 +52,7 @@ There are several key factors that determine the relevance and effectiveness of 
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
 - Faceted navigation allows shoppers to refine their search and get relevant results quickly.
 
-### Monitoring Search Results
+### Monitor search results
 
 To optimize search results with [!DNL Adobe Commerce Optimizer], monitor relevant Key Performance Indicators (KPIs) such as unique queries, average click position, click-through rates, conversion rate, and zero results rate to understand how shoppers interact with your search functionality. This data guides you to regularly update and refine your search rules.
 

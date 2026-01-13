@@ -28,7 +28,7 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 * **Catalog view ID** for the global catalog view
   * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-view)
 * **Source locale** for your catalog view
-  * Default for sample data is `en_US`
+  * Default for sample data is `en-US`
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Source-Locale": "en_US",
+      "AC-Source-Locale": "en-US",
       "AC-Price-Book-ID": "{priceBookId}"
    }
    ```

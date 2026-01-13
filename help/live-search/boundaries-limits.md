@@ -52,6 +52,10 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The maximum number of results per page is 500.
 - It is not possible to filter results using a date type attribute.
 
+>[!NOTE]
+>
+>Sorting by position requires a valid `categoryPath` or `categoryIds` filter to be active. [Learn more](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#error-handling-for-categorypath-and-categoryids).
+
 ## Search merchandising
 
 - The maximum number of search merchandising [rules](rules.md) per store view is 50.

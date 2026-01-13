@@ -51,9 +51,9 @@ For each media file you plan to migrate, provide values for the metadata fields 
 | Metadata | Description | Value |
 |-------|-------------|--------|
 | assetPath | The full path where the asset will be stored in the AEM Assets repository.<br><br>Use the path to create sub-folders to organize Commerce assets, for example `content/dam/commerce/<brand>/<type>`. | `/content/dam/commerce/<sub-folder>/..<filename>` |
-| commerce:positions | The position/order of the asset in product galleries | Multiple numeric values separated by pipe (see csv file) |
+| commerce:positions | The position/order of the asset in product galleries | Multiple numeric values separated by pipe ("Number: multi") |
 | commerce:isCommerce | Flag indicating if the asset is used in commerce | `Yes` |
-| commerce:skus | Product SKUs associated with this asset | Multiple string values separated by pipe (see csv file) |
+| commerce:skus | Product SKUs associated with this asset | Multiple string values separated by pipe (String: multi) |
 | commerce:roles | The roles or types of images for the asset (for example, `thumbnail`, `main image`, `swatch`) | Multiple values separated by semicolons (for example, "thumbnail; image; swatch_image; small_image") |
 
 +++CSV code

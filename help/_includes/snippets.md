@@ -24,7 +24,13 @@
 >[!ENDSHADEBOX]
 -->
 
-## IMS Identity and Single Sign-On Information {#ims-identity-and-sso-config}
+## AEM Assets instance mapping {#aem-assets-instance-mapping}
+
+>[!NOTE]
+>
+>When connecting [!DNL Adobe Commerce as a Cloud Service] to [!DNL AEM Assets], your [!DNL AEM Assets] Stage instance maps to your Sandbox [!DNL Adobe Commerce as a Cloud Service] instance and any other non-production environments. Your [!DNL AEM Assets] Production instance maps to your [!DNL Adobe Commerce as a Cloud Service] Production instance.
+
+## IMS identity and single sign-on information {#ims-identity-and-sso-config}
 
 Adobe Commerce identity management and authentication is managed by the Adobe Identity Management System (IMS) through the Adobe Admin Console.
 

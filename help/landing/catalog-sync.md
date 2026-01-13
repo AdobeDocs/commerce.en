@@ -14,7 +14,7 @@ Adobe Commerce uses indexers to compile catalog data into tables. The process is
 
 The Catalog Sync service moves product data from an [!DNL Adobe Commerce] instance to the [!DNL Commerce Services] platform on an ongoing basis to keep the data up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the command-line interface to trigger a catalog sync and to reindex product data for consumption by [!DNL Commerce Services]. See [Command-line Interface Reference](../data-export/data-export-cli-commands.md) in the _SaaS Data Export_ Guide.
 
-## Accessing the Catalog Sync dashboard
+## Access the Catalog Sync dashboard
 
 To access the Catalog Sync dashboard, select **System** > _Data Transfer_ > **Catalog Sync**.
 

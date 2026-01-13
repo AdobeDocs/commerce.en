@@ -36,7 +36,7 @@ SaaS data export has two modes to process entity feeds:
 
 SaaS data export supports three synchronization types–full sync, partial sync, and retry failed items sync.
 
-### Full Sync
+### Full sync
 
 After connecting an Adobe Commerce instance to Commerce Service, perform a full sync to send entity feed data from Adobe Commerce to the connected service.
 
@@ -65,7 +65,7 @@ For partial sync to work, the Commerce application requires the following config
 
   In SaaS data export version 103.1.0 and later, `Update by Schedule` mode is enabled by default. You can verify index configuration on the server using the Commerce CLI command, `bin/magento indexer:show-mode | grep -i feed`
 
-### Retry Failed Items sync
+### Retry failed items sync
 
 The Retry failed items sync uses a separate process to resend items that failed to sync due to errors during the synchronization process, for example an application error, network disruption, or SaaS service error. Implementation for this sync is also based on cron jobs.
 

@@ -39,10 +39,10 @@ Product filters specify which specific products are eligible, or not eligible, t
 >
 >Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
 
-### Price
+<!--### Price
 
 A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers.
 
-<!--### Attribute
+### Attribute
 
 You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
