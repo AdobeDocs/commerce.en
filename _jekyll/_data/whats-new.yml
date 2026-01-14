@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Jan 5 17:18:37 2026
+updated: Fri Jan 9 16:01:12 2026
 entries:
+- description: Added release notes for [Adobe Commerce SaaS Data Export version 103.4.16
+    and 103.4.17](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes)
+    and [Catalog Adapter version 1.10.0](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes).
+  versions: ''
+  type: technical
+  date: January 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/323
+  merge_commit: 948267ac789ed6432b0bfe57a82ca7b1f1be0807
+  contributor: alugovyi
+  membership:
+  labels:
+  - technical
 - description: Updated the [configure AEM topic](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package)
     in the AEM Assets Integration documentation.
   versions: ''

@@ -131,7 +131,9 @@ You may also click the pin icon to pin a product to its current location. Use th
 
 >[!NOTE]
 >
->You can only pin products that are returned in the query.
+>You can only pin products that appear in the search results for the configured query and rule conditions.
+>
+>Products must be indexed, visible, in stock, and meet all rule filters to be eligible for pinning. If a product does not appear in the preview or results for your rule, pinning it has no effect.
 
 Or events can be set manually:
 
