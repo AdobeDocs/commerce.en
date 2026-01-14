@@ -7,7 +7,7 @@ feature: Payments, Release Notes
 
 # Release Notes
 
-These release notes describe the initial release of [!DNL Payment Services] and include:
+These release notes describe all releases of [!DNL Payment Services] and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
@@ -93,11 +93,17 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.13.3
+
+_January 14, 2026_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6399 --> Fixed an issue where the wrong vaulted card was used during an Admin checkout. Now, the selected card is used correctly when placing an order.
+
 ## v2.13.2
 
 _January 5, 2026_
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-6390  --> General improvements and optimizations by implementing improved JS minification.
+![Fixed issue](../assets/fix.svg)<!-- PAY-6390 --> General improvements and optimizations by implementing improved JS minification.
 
 ## v2.13.1
 
