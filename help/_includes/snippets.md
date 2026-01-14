@@ -40,7 +40,7 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 ### Additional release notes
 
-[!DNL Adobe Commerce as a Cloud Service] contains the latest versions of merchandising services, payments services, and extensibility releases. Use the following links to view the release notes for each:
+[!DNL Adobe Commerce as a Cloud Service] contains the latest versions of merchandising services, payment services, and extensibility releases. Use the following links to view the release notes for each:
 
 | Services | Extensibility | Storefront |
 | --- | --- | --- |
