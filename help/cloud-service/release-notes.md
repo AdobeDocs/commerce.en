@@ -33,11 +33,11 @@ The following changes were made to B2B drop-in components:
 
 * [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
-  * Company management
-  * Company switcher
-  * Negotiable quote management
-  * Purchase orders
-  * Requisition lists
+  * Company management - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
+  * Company switcher - Provides a UI component for users to switch between multiple companies they are associated with.
+  * Purchase orders - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
+  * Quote management - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
+  * Requisition lists - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
 
     >[!NOTE]
     >
