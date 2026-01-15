@@ -31,7 +31,17 @@ Access tokens for Adobe IMS admin authentication are now only accepted through P
 
 The following changes were made to B2B drop-in components:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). A complete list of the B2B drop-in blocks will be available when this feature is promoted to Production.
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
+
+  * Company management
+  * Company switcher
+  * Negotiable quote management
+  * Purchase orders
+  * Requisition lists
+
+    >[!NOTE]
+    >
+    >Detailed documentation for the B2B drop-in components will be available when this feature is promoted to Production.
 
 * Released the B2B Storefront Compatibility Package. This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems.
 
