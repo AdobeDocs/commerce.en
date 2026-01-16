@@ -81,7 +81,7 @@ Key capabilities include:
 
 >[!NOTE]
 >
->To understand system boundaries and licensing for [!DNL Adobe Commerce Optimizer] capabilities, see the [Limits and boundaries](boundaries-limits.md] topic.
+>To understand system boundaries and licensing for [!DNL Adobe Commerce Optimizer] capabilities, see the [Limits and boundaries](boundaries-limits.md) topic.
 
 ## Architecture
 
