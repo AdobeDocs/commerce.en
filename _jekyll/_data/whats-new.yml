@@ -2,8 +2,45 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 9 16:01:12 2026
+updated: Tue Jan 20 11:47:19 2026
 entries:
+- description: Changed product references from "Adobe Sensei" to "Adobe AI" to reflect
+    Adobe branding updates.
+  versions: ''
+  type: feedback
+  date: January 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/373
+  merge_commit: c6a273a90067886a2f6223ab5bd9586969da4b14
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: January 15, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/360
+  merge_commit: 9720ee6e2549e8847cc60291be792dd2f8f5610d
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated the [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)
+    topic for Adobe Commerce Optimizer to describe license limits and system boundaries,
+    add limit descriptions, and include guidance for capacity planning and preventing
+    performance issues.
+  versions: ''
+  type: feedback, technical
+  date: January 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/322
+  merge_commit: c9b3bf125d46447ae147a468e1a9e6492d6c5689
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - technical
 - description: Added release notes for [Adobe Commerce SaaS Data Export version 103.4.16
     and 103.4.17](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes)
     and [Catalog Adapter version 1.10.0](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes).
