@@ -100,6 +100,12 @@ See [Payment options](payments-options.md#fastlane-button) for more information.
 
 1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout. The default title is `Credit Card (via Fastlane)`
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **Authorize and Capture**.
+1. To enable **[!UICONTROL 3D Secure Authentication for Fastlane]** (`Off` by default), choose `When required` to comply with EU regulations, or `Always` to add an extra fraud protection layer.
+
+    >[!NOTE]
+    >
+    > If the card issuer requires 3D Secure authentication, this step cannot be bypassed, regardless of the [!UICONTROL Payment Services] configuration.
+
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce by setting the **[!UICONTROL Enable messaging]** field to `Yes`.
 1. Click **[!UICONTROL Save Config]** to save your changes.
@@ -110,6 +116,7 @@ See [Payment options](payments-options.md#fastlane-button) for more information.
 | [!UICONTROL Enable Fastlane] | store view | Enable or disable [!DNL Fastlane] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. The default value is `Credit Card (via Fastlane)`. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure Authentication for Fastlane](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
 | [!UICONTROL Enable messaging] | store view | Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
@@ -249,7 +256,7 @@ You can enable and configure the PayPal payment buttons payment options within t
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable/disable the [Pay Later messaging](payments-options.md#pay-later-button), select `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
-   
+
    * If you enable the [Pay Later messaging](payments-options.md#pay-later-button), a **[!UICONTROL Configure Messaging]** modal button is displayed so you can set the styles for the **[!UICONTROL PayPal Pay Later messaging]**.
 
 1. Specify where the PayPal payment buttons are enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -320,6 +327,21 @@ You can also configure the _[!UICONTROL Button style]_ options of the payment bu
 If any Cache Type in the Cache Management table has an `INVALIDATED` status, your store might not show the most recent configuration for that item. Flush the cache to update your store to show the latest configuration.
 
 To ensure that your store is showing the correct configuration, periodically [flush the cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+
+## Configure roles
+
+To ensure that Admin users can create and manage orders in the Commerce Admin, enable [!DNL Payment Services]-specific resources to user roles.
+
+See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
+
+When assigning resources to the role, you must select:
+
+* **Pay with [!DNL Payment Services]**---This resource ensures that when you create an order in the Admin, [!DNL Payment Services] credit cards are available as a payment method. If you select the **Actions** parent resource, this resource will also be selected.
+
+* **[!DNL Payment Services]**---This resource includes the **Dashboard** and **SaaS Services Proxy** resources, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
+
+   ![Payment Services resources](assets/roles-payments.png){width="400" zoomable="yes"}
+
 
 ## Card vaulting
 

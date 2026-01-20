@@ -59,7 +59,7 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 1. When your synonyms are complete, click **Publish changes**.
 1. Wait for up to two hours for your updates to become available in the storefront.
 
-## Field Descriptions
+## Field descriptions
 
 | Field | Description |
 |--- |--- |

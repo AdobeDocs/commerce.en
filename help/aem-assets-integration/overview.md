@@ -22,7 +22,7 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 
 ## Requirements to use the integration
 
-To leverage this integration either with Product Visuals or AEM Assets, businesses must meet the following requirements:
+To leverage this integration either with [Product Visuals or AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets), businesses must meet the following requirements:
 
 >[!BEGINTABS]
 

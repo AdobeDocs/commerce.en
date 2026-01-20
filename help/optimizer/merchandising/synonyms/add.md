@@ -60,7 +60,7 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
 1. When your synonyms are complete, click **Publish**.
 1. Wait for up to two hours for your updates to become available in the storefront.
 
-## Field Descriptions
+## Field descriptions
 
 | Field | Description |
 |--- |--- |
@@ -68,7 +68,7 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
 | Keyword | A word that is commonly associated with a selection of products in your catalog. |
 | Expansion | Additional terms that have the same or similar meaning as the keyword. |
 
-## Manage Synonyms
+## Manage synonyms
 
 Follow these instructions to manage existing [!DNL Adobe Commerce Optimizer] [synonyms](overview.md).
 

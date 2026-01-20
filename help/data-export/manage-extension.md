@@ -6,7 +6,7 @@ exl-id: 94702995-d272-47b9-9560-198eee3250a6
 ---
 # Manage the SaaS data export Extension
 
-The [!DNL data export] extension for SaaS services is a collection of modules that enable data collection and synchronization between Adobe Commerce and connected Commerce Services.
+The [[!DNL data export] extension](https://github.com/magento/commerce-data-export) for SaaS services is a collection of modules that enable data collection and synchronization between Adobe Commerce and connected Commerce Services.
 
 Specific modules are included in the metapackages for Adobe Commerce Services extensions such
 as [Live Search](/help/live-search/overview.md), [Product Recommendations](/help/product-recommendations/overview.md), and [Catalog Service](/help/catalog-service/overview.md). If you are using these services, no separate installation is required to enable the Data Export extension.
@@ -30,7 +30,7 @@ You can update any of the installed commerce data export modules by using Compos
 1. From the command line, update the module using Composer:
 
    ```bash
-   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
+   composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
 If the Commerce instance is deployed on Cloud infrastructure, update the extension from your cloud project directory. See [Upgrade an extension](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) in the _Adobe Commerce on Cloud Infrastructure Guide_.

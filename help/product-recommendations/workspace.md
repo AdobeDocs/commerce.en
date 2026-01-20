@@ -100,7 +100,7 @@ From the recommendation details page, click **Create**. To learn more, go to [Cr
 |Settings|Determines the SaaS data space where recommendation-behavioral data is fetched, and also enables visual similarity recommendation type.|
 |Create Recommendation|Opens the [Create New Recommendation](create.md) page.|
 
-## Column Descriptions
+## Column descriptions
 
 |Column|Description|
 |---|---|

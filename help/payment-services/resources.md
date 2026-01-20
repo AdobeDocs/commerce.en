@@ -6,7 +6,7 @@ feature: Payments
 
 # Resources
 
-## Video Tutorials
+## Video tutorials
 
 <table style="table-layout:fixed">
 <td valign="top">

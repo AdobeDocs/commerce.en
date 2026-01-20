@@ -28,11 +28,11 @@ Query text can contain:
 * Alphanumeric characters (letters and numbers)
 * Either upper or lowercase characters. Capitalization is ignored.
 
-## Logical Operators
+## Logical operators
 
 The logical operators `AND` and `OR` join two conditions and return different results. All logical operators used in a rule with multiple conditions are the same. It is not possible to use both `AND` and `OR` in the same rule.
 
-### Match Operators
+### Match operators
 
 The Match operators `All` and `Any` determine the logical operator that is used to join multiple conditions in the rule, and can be used to change the existing operator.
 

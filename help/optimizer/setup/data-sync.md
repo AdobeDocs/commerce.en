@@ -1,6 +1,6 @@
 ---
 title: Data sync
-description: Learn how to sync your catalog data with [!DNL Adobe Commerce Optimizer].
+description: Review the catalog data that is being synchronized from your Commerce data source into [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
@@ -45,3 +45,8 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 >[!IMPORTANT]
 >
 >The time it takes to complete the sync varies based on your catalog size and the volume of data updated.
+
+## Monitor data sync status
+
+For projects that use Adobe Commerce as the upstream data source, you can monitor the data export process and initiate resync operations from the [Data Feed Sync status page](../../data-export/data-synchronization.md) in the Commerce Admin.
+

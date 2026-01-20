@@ -3,7 +3,6 @@ title: Install and Configure
 description: Learn how to install, update, and uninstall [!DNL Product Recommendations].
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 # Install and Configure
 
@@ -60,7 +59,7 @@ After you successfully link the Commerce application to Commerce Services and sp
 
 ## Monitor and troubleshoot data synchronization
 
-From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
 
  You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) that behavioral data is being sent to your storefront.
 

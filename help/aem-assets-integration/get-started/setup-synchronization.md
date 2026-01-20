@@ -22,12 +22,18 @@ For the initial setup, use the default *Match by product sku* rule.
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
-* Follow the steps described in the [enable Dynamic Media Open API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) topic. Include the following information for the support team:
+* To enable [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) on AEM as a Cloud Service, submit an Adobe support ticket with the following information:
 
-  * **[!UICONTROL AEM Program ID]**
-  * **[!UICONTROL Adobe Commerce URL]**
-  * **[!UICONTROL AEM Environment ID]**,
-  * **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
+   * Title: Enable Dynamic Media OpenAPI for a complete integration between Adobe Commerce and AEM Assets/Product Visuals powered by AEM Assets
+
+   * Content of the support ticket:
+
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
+
+   Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI capabilities on your Cloud Services environment and share the details, such as IMS Client ID, for you to proceed with the integration.
 
 ## Configure the connection
 
@@ -42,6 +48,10 @@ For the initial setup, use the default *Match by product sku* rule.
    1. Go to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
       ![AEM Assets Integration enable the integration](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+
+>[!INFO]
+>
+> The AEM Assets integration only supports configuration at the global (default) scope. Website-level configuration is not supported. When you attempt to configure the integration at the Website level, the system ignores website-level settings and uses the global configuration values instead.
 
 1. Enter the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]**.
 
@@ -117,4 +127,8 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Manage Commerce assets](../manage-assets.md)
+* **Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront documentation*.
+
+* Set up [matching rules](../synchronize/default-match.md) between Adobe Commerce and the AEM Assets integration.
+
+* [Manage Commerce assets](../manage-assets.md).

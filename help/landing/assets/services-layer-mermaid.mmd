@@ -1,0 +1,26 @@
+graph LR
+    subgraph CF["<b>Commerce Foundation</b>"]
+        direction TB
+        CS(["Storefront"])
+        CB(["Backend"])
+    end
+    
+    SC(["Services Connector"])
+    
+    subgraph SaaS["<b>SaaS</b>"]
+        direction TB
+        Services(["<b>Services</b><br/>Live Search<br/>Product Recommendations<br/>Catalog Service<br/>Payment Services"])
+        Integrations(["<b>Integrations</b><br/>Data Connection<br/>AEM Assets"])
+    end
+    
+    CF <--> SC <--> SaaS
+    
+    classDef foundationStyle fill:#FFF9E6,stroke:#C7B88A,stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
+    classDef saasStyle fill:#FFE6F0,stroke:#D4A6B8,stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
+    classDef boxStyle fill:#FFFFFF,stroke:#000000,stroke-width:2px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
+    classDef connectorStyle fill:#4A4A4A,stroke:#4A4A4A,stroke-width:2px,color:#FFFFFF,rx:15,ry:15,font-family:Adobe Clean
+    
+    class CF foundationStyle
+    class SaaS saasStyle
+    class CS,CB,Services,Integrations boxStyle
+    class SC connectorStyle

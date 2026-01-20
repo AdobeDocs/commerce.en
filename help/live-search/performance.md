@@ -13,7 +13,7 @@ The *Performance* workspace provides insight into the search terms that shoppers
 
 ![Performance](assets/performance-unique-searches.png)
 
-You can also refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
+You can also refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) for more data about data syncing.
 
 >[!NOTE]
 >

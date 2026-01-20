@@ -1,13 +1,15 @@
 ---
 title: 'Migrate to [!DNL Adobe Commerce as a Cloud Service]'
 description: Learn how to migrate to [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
-role: Architect
+role: Developer
+level: Intermediate
 ---
 # Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] provides a comprehensive guide for developers transitioning from an existing Adobe Commerce PaaS implementation to the new Adobe Commerce as a Cloud Service (SaaS) offering. Adobe Commerce as a Cloud Service represents a significant shift to a fully managed, versionless SaaS model, offering enhanced performance, scalability, simplified operations, and tighter integration with the broader Adobe Experience Cloud.
+[!DNL Adobe Commerce as a Cloud Service] provides a comprehensive guide for developers transitioning from an existing Adobe Commerce PaaS implementation to the new Adobe Commerce as a Cloud Service (SaaS) offering. Adobe Commerce as a Cloud Service represents a significant shift to a fully managed, versionless SaaS model, offering enhanced performance, scalability, simplified operations, and tighter integration with the broader [!DNL Adobe Experience Cloud].
 
 >[!NOTE]
 >
@@ -28,6 +30,7 @@ role: Architect
 * **Edge Delivery Services**: Impact on front-end performance and deployment.
 
 **New tooling & concepts**
+
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
 * [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
@@ -43,7 +46,7 @@ As an alternative to a full migration, [!DNL Adobe Commerce as a Cloud Service] 
 
 ![incremental migration](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Views and Policies, Commerce Storefront powered by Edge Delivery, and Product Visuals powered by AEM Assets.
+* **Commerce Optimizer**—This approach allows you to migrate iteratively, by using Commerce Optimizer as a transitional phase to move complex customizations and data to [!DNL Adobe Commerce as a Cloud Service] at your own pace. Commerce Optimizer provides access to Merchandising Services powered by Catalog Views and Policies, Commerce Storefront powered by Edge Delivery, and [!DNL Product Visuals powered by AEM Assets].
 
 ![iterative migration](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -68,7 +71,7 @@ As indicated by the table, the mitigations for each migration will consist of:
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Create a new mesh or modify the existing one. Adobe will provide preconfigured meshes to assist with this process.
 * **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Customizations**—All customizations must move to App Builder and API Mesh.
-* **Assets Management**—All assets management requires migration. If you are already using AEM Assets, there is no need to migrate.
+* **Assets Management**—All assets management requires migration. If you are already using [!DNL AEM Assets], there is no need to migrate.
 * **Extensions**—Any in-process extensions need to be recreated as out-of-process extensions. By the end of 2025, Adobe will provide access to our most popular extensions to minimize build times.
 
 ## Migration phases
@@ -178,7 +181,7 @@ This is the strategic, future-proof approach for leveraging Adobe Commerce Optim
     * **Batch ingestion**: For large initial loads or periodic bulk updates, use secure file transfers (for example, CSV or JSON) to a staging area, processed by Adobe Experience Platform (AEP) ingestion services into CCDM.
     * **Direct API integration** (with App Builder orchestration): For more complex scenarios, App Builder can act as an orchestration layer, making direct API calls to your PaaS backend, transforming the data, and pushing it to CCDM.
 * **Catalog view and policy definition**: Configure catalog views (logical groupings for unique catalog presentation, such as store views, regions, and B2B/B2C segments) and define policies (rule sets for product presentation, filtering, and merchandising) within the CCDM. This enables dynamic control over product assortments and display logic per catalog view.
-* **Integrate Live Search and Product Recommendations**: Once catalog data is present in CCDM, integrate Adobe's SaaS-based Live Search and Product Recommendations services. These leverage Adobe Sensei AI and machine learning models for superior search relevance and personalized recommendations, consuming data directly from the CCDM.
+* **Integrate Live Search and Product Recommendations**: Once catalog data is present in CCDM, integrate Adobe's SaaS-based Live Search and Product Recommendations services. These leverage Adobe AI AI and machine learning models for superior search relevance and personalized recommendations, consuming data directly from the CCDM.
 
 **Benefit**: By abstracting catalog management and discovery into CCDM and associated SaaS services, you achieve improved performance, gain AI-driven merchandising capabilities, significantly offload read operations from your legacy backend, and enable a robust "peel-off" of the top-of-funnel experience.
 

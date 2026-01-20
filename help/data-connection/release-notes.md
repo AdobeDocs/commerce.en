@@ -76,6 +76,14 @@ _October 12, 2022_
 
 +++
 
+## 3.4.0
+
+_September 16, 2025_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) [!DNL Data Connection] now fully respects cookie restriction mode by preventing data collection and storage in cookies/local storage when restrictions are enabled.
+
 ## 3.3.0
 
 _March 21, 2025_
@@ -109,7 +117,7 @@ _August 27, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS.
+![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: `"minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS.
 ![New](../assets/new.svg) - This release contains the patches released in 3.1.1, 3.1.2, 3.1.3, and 3.1.4.
 
 ## 3.1.4
@@ -152,7 +160,7 @@ _March 4, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS. 
+![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: `"minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS. 
 ![New](../assets/new.svg) - Added ability to [add custom attributes](custom-attributes.md).
 ![New](../assets/new.svg) - Added ability to [collect and send profile records](connect-data.md#send-customer-profile-data) and data to Experience Platform.
 

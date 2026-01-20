@@ -39,7 +39,7 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 1. [Get authentication credentials for API access](#get-authentication-credentials-for-api-access)
 
-## Install the `aem-assets-integration` extension
+## Install the AEM Assets Integration extension
 
 Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
@@ -115,7 +115,7 @@ Use this method to install the [!DNL AEM Assets Integration] extension for an on
 
 >[!TIP]
 >
->When deploying to production, consider not clearing compiled code to save time. Always back up your system before making changes.
+> When deploying to production, consider not clearing compiled code to save time. Always back up your system before making changes.
 
 >[!ENDTABS]
 
@@ -123,7 +123,7 @@ Use this method to install the [!DNL AEM Assets Integration] extension for an on
 
 >[!NOTE]
 >
->Commerce Services Connector setup is a one-time process required to use [Adobe Commerce SaaS services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices). If you have already configured the connector for another service, you can view the existing configuration from the Commerce Admin by selecting **[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**.
+> Commerce Services Connector setup is a one-time process required to use [Adobe Commerce SaaS services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices). If you have already configured the connector for another service, you can view the existing configuration from the Commerce Admin by selecting **[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**.
 
 To transmit data between your Adobe Commerce instance and the services that enable the AEM Assets Integration, configure the Commerce Services Connector from the Admin (**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**). 
 

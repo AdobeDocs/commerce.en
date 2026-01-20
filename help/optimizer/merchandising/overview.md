@@ -15,7 +15,7 @@ Product Discovery equips merchandisers with powerful tools to curate and optimiz
 
 With product discovery, you can:
 
-* **Configure [facets](./facets/overview.md), [merchandising rules](./rules/overview.md),and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
+* **Configure [facets](./facets/overview.md), [merchandising rules](./rules/overview.md), and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
 * **Create intuitive, goal-oriented search experiences** that reflect your merchandising strategy and seasonal priorities.
 * **Use AI-driven dynamic faceting and result re-ranking** to adapt search results in real time based on shopper behavior—boosting engagement and sales.
 * **Ensure promotional and high-priority items surface effectively** to align search outcomes with business goals.
@@ -24,4 +24,4 @@ With product discovery, you can:
 
 Recommendations use artificial intelligence and machine learning to analyze aggregated visitor behavior and product interactions across your storefront. By combining this behavioral data with your product catalog, [!DNL Adobe Commerce Optimizer] delivers highly personalized, relevant product suggestions that enhance shopper engagement and increase conversion.
 
-Recommendations display on the storefront as labeled units—such as “Customers who viewed this product also viewed”. These units can be strategically placed throughout the shopping journey. As a merchandiser, you can easily create, manage, and deploy these recommendation units directly within [!DNL Adobe Commerce Optimizer] to support promotional goals, cross-sell strategies, and personalized experiences.
+Recommendations display on the storefront as labeled units—such as "Customers who viewed this product also viewed". These units can be strategically placed throughout the shopping journey. As a merchandiser, you can easily create, manage, and deploy these recommendation units directly within [!DNL Adobe Commerce Optimizer] to support promotional goals, cross-sell strategies, and personalized experiences.

@@ -14,22 +14,15 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ![Recommendations Performance](../assets/rec-performance.png){zoomable="yes"}
 
-## Choose the **Catalog view**
-
-Select the [catalog view](../setup/catalog-view.md) where your recommendations apply.
-
-![Catalog View](../assets/catalog-view.png)
-
 ## View a report
 
-Click the calendar and do one of the following:
+1. Choose the **Catalog source**, such as `en-US` where your recommendations apply.
 
-- To specify a single date, double-click the date on the calendar.
-- To specify a range of dates, click the first and last date on the calendar.
+1. Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
->[!NOTE]
->
->The range of dates cannot exceed one year.
+   ![Recommendations Date Range](../assets/rec-perf-date-range.png)
+
+   The recommendation table updates to display metrics for that date range.
 
 ## Customize table
 
@@ -44,14 +37,6 @@ Click the calendar and do one of the following:
 
    The table is refreshed to include only the selected columns.
 
-## Set filters
-
-Click the filter icon to filter the metrics on the recommendations performance workspace.
-
-![Filter Metrics](../assets/rec-filters.png)
-
-You can configure multiple values for each of the filters. See the [table below](#column-descriptions) for descriptions of each filter.
-
 ## View details
 
 1. In the table, click the (![More selector](../assets/btn-more.png)) icon next to the recommendation that you want to examine.
@@ -62,15 +47,15 @@ You can configure multiple values for each of the filters. See the [table below]
 
 Learn how you can [create a new or manage an existing](../merchandising/recommendations/create.md) recommendation.
 
-## Workspace Controls
+## Workspace controls
 
 |Control|Description|
 |---|---|
-|![Calendar selector](../assets/icon-calendar.png)|Determines the range of time that is used for metrics calculations.|
+|![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
 
-## Column Descriptions
+## Column descriptions
 
 |Column|Description|
 |---|---|

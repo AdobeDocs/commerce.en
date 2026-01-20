@@ -67,16 +67,28 @@ In Experience Platform Edge:
 
 ## Handle event overrides (custom attributes)
 
-Attribute overrides for standard events are supported for the Experience Platform only. Custom data is not forwarded to Commerce dashboards and metrics trackers.
+For any event set with a `customContext`, the collector overrides or extends fields in the event payload from the fields in the `custom context`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
 
-For any event with `customContext`, the collector overrides joins fields set in the relevant contexts with fields in `customContext`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
+Event overrides are only applicable when forwarding to Experience Platform. They are not applied to Adobe Commerce and Sensei analytics events. The Adobe Commerce Events Collector [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) provides additional info.
 
-### Examples
+>[!NOTE]
+>
+>When augmenting `productListItems` with custom attributes in Experience Platform event payloads, match products using SKU. This requirement does not apply to `product-page-view` events.
 
-Product view with overrides published though Adobe Commerce Events SDK:
+### Usage
 
 ```javascript
-mse.publish.productPageView({
+const mse = window.magentoStorefrontEvents;
+
+mse.publish.productPageView(customCtx);
+```
+
+### Example 1
+
+This example adds custom context when publishing the event.
+
+```javascript
+magentoStorefrontEvents.publish.productPageView({
     productListItems: [
         {
             productCategories: [
@@ -91,45 +103,13 @@ mse.publish.productPageView({
 });
 ```
 
-In Experience Platform Edge:
+### Example 2
+
+This example adds custom context before publishing the event.
 
 ```javascript
-{
-  xdm: {
-    eventType: 'commerce.productViews',
-    identityMap: {
-      ECID: [
-        {
-          id: 'ecid1234',
-          primary: true,
-        }
-      ]
-    },
-    commerce: {
-      productViews: {
-        value : 1,
-      }
-    },
-    productListItems: [{
-        SKU: "1234",
-        name: "leora summer pants",
-        productCategories: [{
-            categoryID: "cat_15",
-            categoryName: "summer pants",
-            categoryPath: "pants/mens/summer",
-        }],
-    }],
-  }
-}
-```
+const mse = window.magentoStorefrontEvents;
 
-Luma-based stores:
-
-In Luma-based stores, publishing events is implemented natively. Therefore, you can set custom data by extending `customContext`.
-
-For example:
-
-```javascript
 mse.context.setCustom({
   productListItems: [
     {
@@ -143,9 +123,76 @@ mse.context.setCustom({
     },
   ],
 });
+
+mse.publish.productPageView();
 ```
 
-See [custom event override](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) to learn more about handling custom data.
+### Example 3
+
+This example sets the custom context in the publisher and overwrites the custom context previously set in the Adobe Client Data Layer.
+
+In this example, the `pageView` event will have **Custom Page Name 2** in the `web.webPageDetails.name` field.
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 1'
+    },
+  },
+});
+
+mse.publish.pageView({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 2'
+    },
+  },
+});
+```
+
+### Example 4
+
+This example adds custom context to `productListItems` events with multiple products.
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  productListItems: [
+    {
+      SKU: "24-WB01", //Match SKU to override correct product in event payload
+      productCategory: "Hand Bag", //Custom attribute added to event payload
+      name: "Strive Handbag (CustomName)" //Override existing attribute with custom value in event payload
+    },
+    {
+      SKU: "24-MB04",
+      productCategory: "Backpack Bag",
+      name: "Strive Backpack (CustomName)"
+    },
+  ],
+});
+
+mse.publish.shoppingCartView();
+```
+
+Luma-based stores:
+
+Luma-based stores natively implement publishing events, so you can set custom data by extending `customContext`.
+
+For example:
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
+```
 
 >[!NOTE]
 >

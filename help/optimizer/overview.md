@@ -69,7 +69,7 @@ Define your catalog views and policies. The catalog not only contains your produ
 
 >[!ENDTABS]
 
-## Key Capabilities
+## Key capabilities
 
 Key capabilities include:
 
