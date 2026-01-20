@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_January 19, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6325 --> Now, merchants can view the PayPal Seller ID as a column in the [transactions report](reporting.md#transactions-report-view) to help identify transactions that a particular customer has placed.
+
 _April 25, 2025_
 
 ![New issue](../assets/new.svg)<!-- Issue PAY-6051 --> Now, [!DNL Payment Services] dashboard displays both the current extension version and the dashboard version.
