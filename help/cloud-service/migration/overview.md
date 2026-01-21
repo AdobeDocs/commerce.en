@@ -214,7 +214,7 @@ Data migration is a critical and multi-faceted process that runs concurrently wi
 
 Bulk data migration involves taking a full data dump from your Adobe Commerce PaaS instance, transforming that entire dataset, and importing it into Adobe Commerce as a Cloud Service all at one time. This method is typically used for the initial population of data.
 
-* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data.md) for customer use for first-party Commerce bulk data migrations will be available by request in mid-July 2025. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
+* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data.md) for customer use for first-party Commerce bulk data migrations will be available by request in Q1 2026. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
 
 * **Process**:
   * **Full data export**: Extract a complete dataset from your Adobe Commerce PaaS instance (for example, products, categories, customer accounts, historical order data, static blocks, and page content).
@@ -226,7 +226,7 @@ Bulk data migration involves taking a full data dump from your Adobe Commerce Pa
 
 Iterative data migrations focus on synchronizing incremental changes and deltas from the source PaaS instance to the new Cloud Service components, ensuring data freshness leading up to and after cutover.
 
-* **Tooling availability**: Tooling specifically designed for iterative data migrations will be available in the second half of 2025.
+* **Tooling availability**: Tooling specifically designed for iterative data migrations will be available in 2026.
 
 * **Process**:
   * **Delta identification**: Establish mechanisms to identify changes (creations, updates, and deletions) in critical data sets on your PaaS environment since the last sync. This can involve change data capture (CDC), timestamp comparisons, or event-based triggers.
