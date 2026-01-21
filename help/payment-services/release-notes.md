@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_January 21, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6374 --> Now, the **Settings** button on the [!DNL Payment Services] dashboard redirects to the Admin configuration page for payment methods, providing a more streamlined workflow for managing payment settings.
+
 _January 19, 2026_
 
 ![New issue](../assets/new.svg)<!-- Issue PAY-6325 --> Now, merchants can view the PayPal Seller ID as a column in the [transactions report](reporting.md#transactions-report-view) to help identify transactions that a particular customer has placed.
