@@ -19,10 +19,10 @@ Adobe maintains a comprehensive set of certifications and attestations for the i
 
 - **PCI DSS**: [!DNL Adobe Commerce] infrastructure is PCI DSS compliant, ensuring secure handling of payment data. Customers are responsible for maintaining PCI compliance for their custom code and extensions.
 
-- **GDPR & CCPA**: Adobe provides tools and documentation to help customers meet their obligations under data privacy regulations.
+- **GDPR and CCPA**: Adobe provides tools and documentation to help customers meet their obligations under data privacy regulations.
 
-For a full list of Adobe's certifications and compliance documentation, visit the [Adobe Trust Center](https://www.adobe.com/trust/compliance/compliance-list.html).
+For a full list of Adobe's certifications and compliance documentation, visit the [Adobe Trust Center](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}.
 
 ## Certification for practitioners
 
-Adobe also offers role-based certifications for developers, architects, and business practitioners working with [!DNL Adobe Commerce]. These certifications validate expertise in secure implementation and platform governance. Learn more at the [Adobe Certification Portal](https://experienceleague.adobe.com/en/docs/certification/program/technical-certifications/ac/ac-overview).
+Adobe also offers role-based certifications for developers, architects, and business practitioners working with [!DNL Adobe Commerce]. These certifications validate expertise in secure implementation and platform governance. Learn more at the [Adobe Certification Portal](https://experienceleague.adobe.com/en/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}.

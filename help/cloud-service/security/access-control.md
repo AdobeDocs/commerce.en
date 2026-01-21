@@ -17,31 +17,31 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 [!DNL Adobe Commerce as a Cloud Service] uses [!DNL Adobe Identity Management Services (IMS)] to authenticate users and manage entitlements across the platform. IMS provides:
 
-- **Federated identity support**: Integrate with enterprise identity providers (e.g., Azure AD, Okta) using SAML or OIDC.
+- **Federated identity support**: Integrate with enterprise identity providers, such as Azure AD and Okta, using SAML or OIDC.
 - **Single Sign-On (SSO)**: Seamless access to [!DNL Adobe Commerce] and other [!DNL Adobe Experience Cloud] products.
 - **Multi-Factor Authentication (MFA)**: Enforced at the organization level for enhanced security.
-- **Global redundancy**: Identity data is stored in multi-region, load-balanced cloud infrastructure across North America, Europe, and APAC.
+- **Global redundancy**: Identity data is stored in multi-region, load-balanced cloud infrastructure.
 
 ## Admin Console access control
 
 The [!DNL Adobe Admin Console] is the central hub for managing user access to [!DNL Adobe Commerce as a Cloud Service]:
 
-- **Role-Based Access Control (RBAC)**: Assign granular permissions to users based on their roles (e.g., Developer, Admin, Analyst).
-- **Product Profiles**: Define access scopes for different environments (e.g., staging, production).
-- **Delegated Administration**: System Admins and Product Admins can manage user access without IT involvement.
+- **Role-Based Access Control (RBAC)**: Assign granular permissions to users based on their roles, such as Developer, Admin, and Analyst.
+- **Product profiles**: Define access scopes for different environments, such as staging and production.
+- **Delegated administration**: System Admins and Product Admins can manage user access without IT involvement.
 
-See [user management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management) in the user guide for more information.
+See [user management](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management) for more information.
 
-## API authentication & integration security
+## API authentication and integration security
 
-[!DNL Adobe Commerce as a Cloud Service] REST API authentication is handled through Adobe's [!DNL Identity Management System (IMS)] through standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for different use cases.
+[!DNL Adobe Commerce as a Cloud Service]'s REST API authentication is handled through Adobe's [!DNL Identity Management System (IMS)] using standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for different use cases.
 
 >[!NOTE]
 >
->The Admin and integration token generation methods in PaaS are not supported in SaaS environments. Instead, you must obtain an IMS admin token through OAuth authentication.
+>The Admin and integration token generation methods in PaaS versions of [!DNL Adobe Commerce] are not supported in SaaS environments. Instead, you must obtain an IMS admin token through OAuth authentication.
 
 - **OAuth 2.0 support**: Secure token-based authentication for integrations and third-party services.
 - **Scoped API access**: Limit API access to specific resources and operations.
 - **Audit logging**: Track authentication events and access changes for compliance and troubleshooting.
 
-See [REST authentication](https://developer.adobe.com/commerce/webapi/rest/authentication/) in the developer guide for more information.
+See [REST authentication](https://developer.adobe.com/commerce/webapi/rest/authentication/) for more information.
