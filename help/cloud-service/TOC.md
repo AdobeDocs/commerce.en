@@ -18,6 +18,7 @@ recommendations: noDisplay, noCatalog
   - [Shared responsibility](security/shared-responsibility.md)
   - [Identity and access management](security/access-control.md)
   - [Compliance and certifications](security/compliance.md)
+  - [Security architecture and data flow](security/data-flow.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - [Bulk Data Migration Tool](migration/bulk-data.md)
