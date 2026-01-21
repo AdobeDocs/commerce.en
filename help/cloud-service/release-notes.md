@@ -17,9 +17,9 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## January 2026 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time for you to test upcoming changes before the release is available on Production environments."}
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items are currently only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service]. This release is scheduled to move to Production environments on January 20, 2026.
+The following items were released to Production environments of [!DNL Adobe Commerce as a Cloud Service] on January 20, 2026.
 
 >[!BEGINSHADEBOX]
 

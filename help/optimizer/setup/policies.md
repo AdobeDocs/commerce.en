@@ -70,7 +70,7 @@ In this section, you create a new policy. The policy can be either **STATIC** or
     1. **Attribute** - Enter an attribute from your catalog. For example, "part_category". This name must exactly match the name of the attribute in your catalog.
     1. **Operator** - Choose the operator. For example, **IN**. ​
     1. **Value Source** - Select **STATIC**. ​
-    1. **Value** - Enter a value from the attribute definition that you previously specified. For example, enter "brakes" to create a filter for brake parts. ​The value must match the attribute name exactly.
+    1. **Value** - Enter a value from the attribute definition that you previously specified. For example, enter "brakes" to create a filter for brake parts.
     1. To save the value, press **Enter**.
 
        If the policy is designed to filter by multiple values, enter each value separately.

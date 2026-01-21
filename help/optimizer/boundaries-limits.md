@@ -143,7 +143,6 @@ The following capabilities are available for product recommendations. Some featu
 | --- | --- | --- | --- |
 | Active recommendation units | Number of live recommendation components on your storefront (like "Customers also viewed" or "You might also like") | 50 | No |
 | Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | |
-| Preview recommendations | Preview how recommendations appear on the storefront before publishing | Not supported | |
 
 {style="table-layout:auto"}
 
