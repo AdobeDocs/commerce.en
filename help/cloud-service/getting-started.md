@@ -112,7 +112,7 @@ As a developer, you need to know how to build custom integrations and extend pla
 
 After completing your role-specific setup tasks:
 
-* **System Administrators**: Review [shared responsibility](shared-responsibility.md) guidelines
+* **System Administrators**: Review [shared responsibility](./security/shared-responsibility.md) guidelines
 * **Merchants**: Explore [use cases](use-cases.md) for common business scenarios
 * **Developers**: Check out the [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs)
 
