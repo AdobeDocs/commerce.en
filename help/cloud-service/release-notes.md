@@ -23,25 +23,17 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 >[!BEGINSHADEBOX]
 
-### Authentication enhancements
-
-Access tokens for Adobe IMS admin authentication are now only accepted through POST requests. <!-- CCSAAS-4421 -->
-
 ### B2B drop-ins
 
 The following changes were made to B2B drop-in components:
 
 * [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
-  * **Company management** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
-  * **Company switcher** - Provides a UI component for users to switch between multiple companies they are associated with.
-  * **Purchase orders** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
-  * **Quote management** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
-  * **Requisition lists** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
-
-    >[!NOTE]
-    >
-    >Detailed documentation for the B2B drop-in components will be available when this feature is promoted to Production.
+  * **[Company management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
+  * **[Company switcher](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
+  * **[Purchase orders](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
+  * **[Quote management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
+  * **[Requisition lists](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
 
 * Released the B2B Storefront Compatibility Package. This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems.
 
@@ -64,7 +56,11 @@ You can now [assign users access](./user-management.md#add-users) to individual 
 
 ### Observability
 
-Gain deeper visibility into your [!DNL Adobe Commerce as a Cloud Service] instance with [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), now automatically available. OpenTelemetry provides metrics, logs, and traces to help you monitor performance, troubleshoot issues faster, and optimize your storefront. This capability enables proactive insights into system health and improves reliability for your customers.
+By using [!DNL App Builder], you can gain deeper visibility into your [!DNL Adobe Commerce as a Cloud Service] instance with [OpenTelemetry observability](https://developer.adobe.com/commerce/extensibility/observability/), now automatically available. OpenTelemetry provides metrics, logs, and traces to help you monitor performance, troubleshoot issues faster, and optimize your storefront. This capability enables proactive insights into system health and improves reliability for your customers.
+
+>[!NOTE]
+>
+>OpenTelemetry observability requires the use of [!DNL App Builder] or other out-of-process extensibility (OOPE) offerings.
 
 ### Tier pricing for catalog price rules
 
