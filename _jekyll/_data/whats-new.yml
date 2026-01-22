@@ -1,9 +1,122 @@
 ---
-title: What's New
+title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 14 16:06:46 2025
+updated: Tue Jan 20 11:47:19 2026
 entries:
+- description: Changed product references from "Adobe Sensei" to "Adobe AI" to reflect
+    Adobe branding updates.
+  versions: ''
+  type: feedback
+  date: January 20, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/373
+  merge_commit: c6a273a90067886a2f6223ab5bd9586969da4b14
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: January 15, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/360
+  merge_commit: 9720ee6e2549e8847cc60291be792dd2f8f5610d
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated the [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)
+    topic for Adobe Commerce Optimizer to describe license limits and system boundaries,
+    add limit descriptions, and include guidance for capacity planning and preventing
+    performance issues.
+  versions: ''
+  type: feedback, technical
+  date: January 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/322
+  merge_commit: c9b3bf125d46447ae147a468e1a9e6492d6c5689
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - technical
+- description: Added release notes for [Adobe Commerce SaaS Data Export version 103.4.16
+    and 103.4.17](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes)
+    and [Catalog Adapter version 1.10.0](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes).
+  versions: ''
+  type: technical
+  date: January 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/323
+  merge_commit: 948267ac789ed6432b0bfe57a82ca7b1f1be0807
+  contributor: alugovyi
+  membership:
+  labels:
+  - technical
+- description: Updated the [configure AEM topic](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package)
+    in the AEM Assets Integration documentation.
+  versions: ''
+  type: major-update
+  date: December 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/348
+  merge_commit: d46526db56dad08a8f865664c92d1214bbf063d8
+  contributor: del
+  membership:
+  labels:
+  - major-update
+- description: Added new topics:<br/>- [Opportunities](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities)
+    to document AI-powered site optimization recommendations through Adobe Sites Optimizer
+    integration, including auto-detect and auto-fix workflows for improving SEO, metadata,
+    and product data quality.<br/>- [Catalog Layers](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)
+    to explain how to modify product data without changing source data, including
+    layer priority management and integration with Sites Optimizer auto-fix features.
+  versions: ''
+  type: major-update, new-topic
+  date: December 15, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/293
+  merge_commit: dd4447d519761f43d06f13de71c5ae97f6b103e7
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+  - new-topic
+- description: Updating the recommendations feature in the Commerce Optimizer documentation
+    as the [preview pane](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations)
+    is now supported.
+  versions: ''
+  type: technical
+  date: December 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/336
+  merge_commit: ae99230552e7466a3a384c77e1e67e0cd981de6a
+  contributor: emarr
+  membership:
+  labels:
+  - editorial
+  - technical
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for the November Adobe Commerce as a Cloud Service release.
+  versions: ''
+  type: major-update
+  date: November 20, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/230
+  merge_commit: 136235c9291b54a93582c45311b76fb93269e693
+  contributor: jhoover
+  membership:
+  labels:
+  - major-update
+- description: Documented how Commerce Optimizer customers connecting to an Adobe
+    Commerce backend can monitor and troubleshoot data feed exports from the Feed
+    Sync status page. See [Data Sync](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)
+    in the Adobe Commerce Optimizer Guide.
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/314
+  merge_commit: 9a9e07a66c822c97c01f5ff76551684fb99eb01e
+  contributor: meker
+  membership:
+  labels:
+  - technical
 - description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
     for the Payment Services v2.13.0 release.
   versions: ''

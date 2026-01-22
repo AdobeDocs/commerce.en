@@ -15,7 +15,7 @@ Adobe does not recommend using the `saas:resync` command regularly. Typical scen
 
 Monitor sync operations in the `var/log/saas-export.log` file.
 
-## Initial Sync
+## Initial sync
 
 >[!NOTE]
 >

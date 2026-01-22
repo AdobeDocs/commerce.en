@@ -7,11 +7,11 @@ exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
 
 [!DNL Product Recommendations] uses both behavioral and catalog data:
 
-- Behavioral - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases. Adobe Commerce and Adobe Sensei do not collect personally identifiable information.
+- Behavioral - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases. Adobe Commerce and Adobe AI do not collect personally identifiable information.
 
 - Catalog - Product metadata, such as name, price, and availability.
 
-When you install the `magento/product-recommendations module`, Adobe Sensei aggregates the behavioral and catalog data and creates [!DNL Product Recommendations] for each recommendation type. The [!DNL Product Recommendations] service then deploys those recommendations to your storefront. To help you implement product recommendations on your storefront, use the following workflow:
+When you install the `magento/product-recommendations module`, Adobe AI aggregates the behavioral and catalog data and creates [!DNL Product Recommendations] for each recommendation type. The [!DNL Product Recommendations] service then deploys those recommendations to your storefront. To help you implement product recommendations on your storefront, use the following workflow:
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ When you install the `magento/product-recommendations module`, Adobe Sensei aggr
 
 1. **Deploy data collection to production**
 
-   Deploying [!DNL Product Recommendations] requires two main [data sources](type.md): catalog and behavioral. Because production is the only environment where your shoppers' actions are captured and analyzed, start data collection on production as early as possible. [Learn](events.md) how Adobe Sensei trains machine learning models that results in higher-quality recommendations. As an added benefit, when you start collecting behavioral data on production, you can [fetch recommendations](staging-environment.md#fetch-recommendations-from-production-environment-recommended) based on this production data while operating in non-production environments. You can then test and experiment with different recommendations that are computed based on real shopper data collected in production.
+   Deploying [!DNL Product Recommendations] requires two main [data sources](type.md): catalog and behavioral. Because production is the only environment where your shoppers' actions are captured and analyzed, start data collection on production as early as possible. [Learn](events.md) how Adobe AI trains machine learning models that results in higher-quality recommendations. As an added benefit, when you start collecting behavioral data on production, you can [fetch recommendations](staging-environment.md#fetch-recommendations-from-production-environment-recommended) based on this production data while operating in non-production environments. You can then test and experiment with different recommendations that are computed based on real shopper data collected in production.
 
    To deploy data collection to production, you must [install and configure](install-configure.md) the [!DNL Product Recommendations] module by providing an [API key](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
 

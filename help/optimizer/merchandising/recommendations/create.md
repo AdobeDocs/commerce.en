@@ -37,6 +37,10 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. When prompted, copy the recommendation ID. Use this ID to help you identify which recommendation unit is being used in the recommendation drop-in on your Edge Delivery Services storefront.
 
+>[!NOTE]
+>
+> You can create up to 50 active recommendation units. 
+
 >[!IMPORTANT]
 >
 >Some browsers might block critical scripts that prevent Recommendations from working as expected.
@@ -149,13 +153,11 @@ The following lists possible reasons and solutions to common low readiness score
    - Low traffic on the store so the volume of behavioral events we receive is low.
    - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 
-## Preview Recommendations
-
->[!IMPORTANT]
->
->This feature is not yet available.
+## Preview recommendations
 
 The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
+
+![Recommendations Preview](../../assets/rec-preview.png)
 
 To test a recommendation when working in a non-production environment, you can fetch recommendation data from a different source. This allows merchants to experiment with rules and preview the recommendations before deploying to production.
 

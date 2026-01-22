@@ -25,6 +25,10 @@ See the developer documentation to [learn about product support](https://experie
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
+_November 19, 2025_
+
+![New](../assets/new.svg) You can now create up to 50 active recommendation units for each page type. Previously, the limit was five.
+
 _October 1, 2025_
 
 ![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
@@ -132,7 +136,7 @@ _February 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) The [!DNL Catalog Sync Dashboard] is now the [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
+![New](../assets/new.svg) The [!DNL Catalog Sync Dashboard] is now the [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
 ![Fix](../assets/fix.svg) Fixed an issue that caused checkout errors for [!DNL Product Recommendations].
 
 +++5.0.0 and prior

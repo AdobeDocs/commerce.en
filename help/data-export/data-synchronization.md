@@ -36,7 +36,7 @@ SaaS data export has two modes to process entity feeds:
 
 SaaS data export supports three synchronization types–full sync, partial sync, and retry failed items sync.
 
-### Full Sync
+### Full sync
 
 After connecting an Adobe Commerce instance to Commerce Service, perform a full sync to send entity feed data from Adobe Commerce to the connected service.
 
@@ -65,7 +65,7 @@ For partial sync to work, the Commerce application requires the following config
 
   In SaaS data export version 103.1.0 and later, `Update by Schedule` mode is enabled by default. You can verify index configuration on the server using the Commerce CLI command, `bin/magento indexer:show-mode | grep -i feed`
 
-### Retry Failed Items sync
+### Retry failed items sync
 
 The Retry failed items sync uses a separate process to resend items that failed to sync due to errors during the synchronization process, for example an application error, network disruption, or SaaS service error. Implementation for this sync is also based on cron jobs.
 
@@ -76,7 +76,7 @@ The Retry failed items sync uses a separate process to resend items that failed 
 
 Most synchronization activities are processed automatically based on the application configuration. However, SaaS data export also provides tools to manage the process.
 
-- Admin users can view and track synchronization progress and get information about the data from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- Admin users can view and track synchronization progress and get information about the data from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 - Developers, system integrators, or administrators with access to the Commerce application server can manage the synchronization process and data feeds using the Adobe Commerce command-line tool (CLI). See [Manage sync operations using the Commerce CLI](data-export-cli-commands.md).
 
