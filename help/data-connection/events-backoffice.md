@@ -126,7 +126,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when an order is shipped.|`commerce.backofficeOrderItemsShipped`|
+|Triggered when an order item is shipped.|`commerce.backofficeOrderItemsShipped`|
 
 #### Data collected from orderItemsShipped
 
