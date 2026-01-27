@@ -2,8 +2,36 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jan 20 11:47:19 2026
+updated: Mon Jan 26 18:18:58 2026
 entries:
+- description: Updated the Storefront setup guides for [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront)
+    and [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront)
+    to Include information about migrating the Commerce storefront configuration for
+    Edge Delivery Services to use the Configuration Service instead of `config.json`
+    file in the storefront boilerplate repository. Adobe recommends using the Configuration
+    Service to manage the configuration for storefronts deployed on Edge Delivery
+    Services.
+  versions: ''
+  type: feedback, technical
+  date: January 22, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/312
+  merge_commit: e1fd1f6fbfb326f4110660a6097bc73eff9e0fc6
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - technical
+- description: Sandbox release notes moved to production.
+  versions: ''
+  type: major-update
+  date: January 21, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/377
+  merge_commit: 3b90cb8e0067089d7079ca4e21e050a5488c7dcd
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: Changed product references from "Adobe Sensei" to "Adobe AI" to reflect
     Adobe branding updates.
   versions: ''
