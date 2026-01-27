@@ -5,7 +5,7 @@ exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
 ---
 # Settings
 
-When you [configure a SaaS data space](../landing/saas.md#saas-configuration) for Recommendations, the SaaS data space collects catalog data and storefront-behavioral data. [Adobe Sensei](https://www.adobe.com/sensei.html) analyzes that data and computes product associations used to serve Product Recommendations.
+When you [configure a SaaS data space](../landing/saas.md#saas-configuration) for Recommendations, the SaaS data space collects catalog data and storefront-behavioral data. [Adobe AI](https://business.adobe.com/ai.html) analyzes that data and computes product associations used to serve Product Recommendations.
 
 Non-production environments for testing or staging usually don't have the quantity or quality of storefront behavioral data to serve realistic product recommendations. Actual shopper behavior at scale can be captured only in a production environment. To solve this problem, Adobe Commerce allows you to use product recommendations from your production environment with other, non-production SaaS data spaces. Using actual storefront data in a non-production environment allows you to preview the recommendations your shoppers see and experiment with different recommendation types and placement locations. Recommendations from a different SaaS data space can be previewed by shoppers, but not clicked.
 

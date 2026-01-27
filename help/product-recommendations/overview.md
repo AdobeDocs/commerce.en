@@ -7,7 +7,7 @@ exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 ---
 # Introduction to [!DNL Product Recommendations]
 
-Product recommendations are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement. Adobe Commerce product recommendations are powered by [Adobe Sensei](https://www.adobe.com/sensei.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a highly engaging, relevant, and personalized experience.
+Product recommendations are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement. Adobe Commerce product recommendations are powered by [Adobe AI](https://business.adobe.com/ai.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a highly engaging, relevant, and personalized experience.
 
 Product recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations across your store views directly from the Adobe Commerce Admin.
 
@@ -25,7 +25,7 @@ Data collection for the purposes of [!DNL Product Recommendations] does not incl
 
 ## Product recommendations versus product relationships
 
-Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) gives you more flexibility when promoting products. You can leverage [!DNL Product Recommendations] powered by Adobe Sensei to intelligently automate your recommendations at scale. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
+Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) gives you more flexibility when promoting products. You can leverage [!DNL Product Recommendations] powered by Adobe AI to intelligently automate your recommendations at scale. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
 
 Product recommendations allow you to:
 

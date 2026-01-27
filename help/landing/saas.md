@@ -22,8 +22,8 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 
 | Service | Availability |
 | ---|--- |
-|[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
-|[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
+|[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe AI| Adobe Commerce|
+|[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe AI | Adobe Commerce|
 |[[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce and Magento Open Source|
 |[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
 |[[!DNL Data Connection]](/help/data-connection/overview.md)|Adobe Commerce|

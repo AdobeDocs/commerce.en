@@ -17,7 +17,7 @@ Custom and headless integrators should refer to these Luma and PWA instructions 
  
 To integrate [!DNL Product Recommendations] in a headless storefront, you must:
 
-1. Send behavioral data to Adobe Sensei to analyze and compute Product Recommendation results. You can also send additional data to enable product recommendation [metrics reporting](workspace.md).
+1. Send behavioral data to Adobe AI to analyze and compute Product Recommendation results. You can also send additional data to enable product recommendation [metrics reporting](workspace.md).
 
 1. Fetch product recommendation results and render those results on the page.
 
@@ -44,7 +44,7 @@ You can perform both of these actions using the available SDKs as described in t
     |`rec-click` | recommendation-unit|
     |`rec-add-to-cart-click` | recommendation-unit (if an "Add to cart" button is present in the recommendations template)|
 
-1. When the events are fired, use the [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) to handle the events and send them to Adobe Sensei.
+1. When the events are fired, use the [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) to handle the events and send them to Adobe AI.
 
 1. After the behavioral data is collected, you can [create](create.md) [!DNL Product Recommendations] in the Admin.
 

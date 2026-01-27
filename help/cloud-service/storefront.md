@@ -36,9 +36,10 @@ Once the process completes, you can customize your storefront using the followin
 
 ## Next steps
 
-Refer to the following articles for more information:
+See the following articles for more information:
 
-* To learn more about managing and displaying content and data in the storefront, see [updating storefront content](./use-cases.md#update-storefront-content).
-* For more information on contextual experimentation features, see [contextual experimentation](./use-cases.md#contextual-experimentation).
-* For more information on using Generative AI to automate high-quality content generation, see [Generate Variations](./use-cases.md#generate-variations).
-* To learn more about updating site content and integrating with Commerce frontend components and backend data, see the [[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/).
+* [Updating storefront content](./use-cases.md#update-storefront-content)—Manage and display content and data on the storefront.
+* [Contextual experimentation](./use-cases.md#contextual-experimentation)—Create and manage experiments on your storefront.
+* [Generate Variations](./use-cases.md#generate-variations)—Use Generative AI to automate high-quality content generation.
+* [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)—Get detailed information about updating site content and integrating with Commerce frontend components and backend data.
+* [Configuration Service](https://www.aem.live/docs/config-service-setup)—Learn about migrating your storefront configuration from `config.json` to use the Configuration Service, which supports advanced use cases like repoless configuration and overlays. 

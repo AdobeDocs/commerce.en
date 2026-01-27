@@ -7,7 +7,7 @@ feature: Payments, Release Notes
 
 # Release Notes
 
-These release notes describe the initial release of [!DNL Payment Services] and include:
+These release notes describe all releases of [!DNL Payment Services] and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
@@ -22,6 +22,14 @@ Learn more about upcoming releases, product support, and which Adobe Commerce ve
 These release notes describe feature changes and fixes that occurred and were released outside of the regular feature releases for the hosted service.
 
 +++Hosted service updates
+
+_January 21, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6374 --> Now, the **Settings** button on the [!DNL Payment Services] dashboard redirects to the Admin configuration page for payment methods, providing a more streamlined workflow for managing payment settings.
+
+_January 19, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6325 --> Now, merchants can view the PayPal Seller ID as a column in the [transactions report](reporting.md#transactions-report-view) to help identify transactions that a particular customer has placed.
 
 _April 25, 2025_
 
@@ -93,11 +101,17 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.13.3
+
+_January 14, 2026_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6399 --> Fixed an issue where the wrong vaulted card was used during an Admin checkout. Now, the selected card is used correctly when placing an order.
+
 ## v2.13.2
 
 _January 5, 2026_
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-6390  --> General improvements and optimizations by implementing improved JS minification.
+![Fixed issue](../assets/fix.svg)<!-- PAY-6390 --> General improvements and optimizations by implementing improved JS minification.
 
 ## v2.13.1
 
