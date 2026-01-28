@@ -92,7 +92,7 @@ Before starting migration:
 
 1. Back up your database and code.
 1. Document current customizations.
-1. Review [Boundaries and Limits](boundaries-limits.md) to ensure the PLP widget meets your needs.
+1. Review [Boundaries and Limits](boundaries-limits.md) to ensure that the PLP widget meets your needs.
 1. Schedule migration during low-traffic period.
 1. Notify stakeholders of potential changes to storefront behavior.
 
@@ -354,7 +354,7 @@ In this scenario, you have previously customized the Search Adapter or widget co
    - Identify the business requirements driving each customization
    - Determine if customizations are still needed
 
-1. **Check if built-in features meet your needs:**
+1. **Check if the built-in features meet your needs:**
    - Review [PLP widget features](plp-styling.md#widget-features)
    - Check if CSS-based customization is sufficient
    - Test default PLP widget behavior
@@ -406,13 +406,29 @@ Be aware of these limitations when migrating:
 
 ## Getting help
 
-If you need additional assistance, contact [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+**Adobe Support** can assist with:
+
+- Standard Live Search migration procedures
+- PLP widget configuration issues
+- Facet or attribute indexing problems
+- Performance issues with default implementations
+- Upgrade errors
+
+**Development partners/systems integrators** should be contacted for:
+
+- Custom theme modifications
+- Custom widget code implementations
+- Third-party extension compatibility
+- Headless or PWA implementations
+- Custom event tracking
+
+To contact Adobe Support, see the [Help Center User Guide](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## FAQ
 
-**Q: Do I have to migrate?**
+**Q: Will the Search Adapter receive bug fixes or feature updates?**
 
-A: Not immediately, but the Search Adapter will only receive security updates going forward. All new features and improvements will only be available in the PLP widget.
+A: No. The Search Adapter is deprecated and will only receive security updates. Bug fixes, performance improvements, and new features are only available in the PLP widget. If you encounter issues with the Search Adapter, migration to the PLP widget is the recommended solution.
 
 **Q: Will migration disrupt my storefront?**
 
@@ -421,10 +437,6 @@ A: If you follow proper testing procedures in staging, migration should be seaml
 **Q: How long does migration take?**
 
 A: For standard implementations: 1-2 hours. For custom implementations: 1-4 weeks depending on complexity.
-
-**Q: Can I keep using the Search Adapter?**
-
-A: Yes, but only security updates are provided. You will miss new features and improvements.
 
 **Q: Will my search merchandising rules still work?**
 
@@ -436,12 +448,8 @@ A: Generally no, but if you were limited by custom source model attributes with 
 
 **Q: What about my custom CSS?**
 
-A: You will need to update CSS to target the PLP widget classes. See the [CSS classes reference](plp-styling.md#css-classes).
+A: You need to update CSS to target the PLP widget classes. See the [CSS classes reference](plp-styling.md#css-classes).
 
 **Q: Will this affect my search performance?**
 
 A: The PLP widget is designed to be performant. Most merchants see equal or better performance. Large catalogs should be tested in staging.
-
-**Q: Is there a deadline for migration?**
-
-A: There's no hard deadline, but Adobe recommends migrating within 12 months to take advantage of new features and improvements.
