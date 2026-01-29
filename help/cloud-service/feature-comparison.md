@@ -105,18 +105,18 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Performance and scalability</td>
-            <td>Horizontal auto-scaling for scaled architecture. Vertical auto-scaling for web tier in early access.</td>
+            <td>Horizontal auto-scaling for scaled architecture. Vertical auto-scaling for web tier being rolled out in early access for all merchants including non-scaled architecture.</td>
             <td>Multi-tenant cloud-native application with full auto-scaling across the stack</td>
         </tr>
         <tr>
             <td>Observability</td>
             <td>[!DNL New Relic] access for customers to monitor and manage environment</td>
-            <td>Adobe managed. Customers can use [!DNL OpenTelemetry] for [!DNL App Builder] apps and RUM dashboards for storefront. [!DNL New Relic] license not included.</td>
+            <td>Adobe managed. Customers can use [!DNL OpenTelemetry] for [!DNL App Builder] apps and RUM dashboards for storefront. [!DNL New Relic] license not included. Customers can configure [!DNL API Mesh] and [!DNL App Builder] to send data to their own [!DNL New Relic] account.</td>
         </tr>
         <tr>
             <td>CDN</td>
             <td>[!DNL Fastly] included</td>
-            <td>Fully managed Edge CDN. BYO-CDN also supported.</td>
+            <td>Fully managed Edge CDN tightly coupled with Commerce Storefront. BYO-CDN also supported.</td>
         </tr>
         <tr>
             <td>Security and compliance</td>
@@ -131,7 +131,7 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>Hosting regions</td>
             <td>Azure (24 locations), AWS (22 locations), GCP (8 locations, not standard)</td>
-            <td>Globally available. For information on production environments in your region contact your customer service representative.</td>
+            <td>Globally available. For information on production environments in your region contact your customer service representative. Additional locations rolled out based on demand.</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Commerce Admin customization</strong></td>
