@@ -4,7 +4,7 @@ description: Learn how to migrate from the deprecated Search Adapter to the [!DN
 ---
 # Migrating from Search Adapter to PLP Widget
 
-The Search Adapter has been deprecated as of [!DNL Live Search] 4.0.0 and will only receive security updates. The [Product Listing Page (PLP) Widget](plp-styling.md) is the supported solution for all [!DNL Live Search] implementations going forward. This guide helps you understand when migration is straightforward and when additional work is required.
+The Search Adapter has been [deprecated](release-notes.md#live-search-400) as of [!DNL Live Search] 4.0.0 and will only receive security updates. The [Product Listing Page (PLP) Widget](plp-styling.md) is the supported solution for all [!DNL Live Search] implementations going forward. This guide helps you understand when migration is straightforward and when additional work is required.
 
 ## Migration scenarios
 

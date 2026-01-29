@@ -10,6 +10,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 ## General
 
+- The search adapter has been [deprecated](release-notes.md#live-search-400) as of [!DNL Live Search] 4.0.0. The Product Listing Page (PLP) Widget is the supported solution for all [!DNL Live Search] implementations going forward. The Search Adapter will only receive security-related updates. See the [migration guide](migrate-to-plp.md) for information about migrating to the PLP widget.
 - The [Advanced Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
 - [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) is not supported in the [!DNL Live Search] field and Product Listing Page Widget.
 - Product prices include value-added tax (VAT), but [!DNL Live Search] cannot display the VAT as a separate value.
@@ -17,7 +18,6 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The maximum number of results that can be paginated is 10,000. To ensure that shoppers do not have to use deep pagination when a category or search result includes a large number of products, provide meaningful ways to filter products.
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
-- The search adapter has been deprecated as of Live Search 4.0.0. Going forward, the Search Adapter will only be updated to address security issues. See the [migration guide](migrate-to-plp.md) for information about migrating to the PLP widget.
 - Custom product types are not supported.
 - Custom attributes created programmaticaly with `"is_user_defined": false` are not supported.
 - You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
