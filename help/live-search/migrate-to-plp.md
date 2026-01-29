@@ -82,10 +82,10 @@ Before starting migration:
 
 **Technical requirements:**
 
-- Adobe Commerce 2.4.4 or newer
+- Adobe Commerce 2.4.4 or higher
 - [!DNL Live Search] extension installed
-- Access to command line (CLI)
-- Access to Admin panel
+- Access to the command line (CLI)
+- Access to the Commerce Admin
 - Staging or QA environment for testing
 
 **Backup and preparation:**
@@ -93,10 +93,10 @@ Before starting migration:
 1. Back up your database and code.
 1. Document current customizations.
 1. Review [Boundaries and Limits](boundaries-limits.md) to ensure that the PLP widget meets your needs.
-1. Schedule migration during low-traffic period.
+1. Schedule migration during a low-traffic period.
 1. Notify stakeholders of potential changes to storefront behavior.
 
-**Review current implementation:**
+**Review the current implementation:**
 
 - Check your current [!DNL Live Search] version: `composer show magento/live-search`
 - Document which facets are in use and their configuration
@@ -144,7 +144,7 @@ For implementations with no special customizations, follow these steps:
    bin/magento setup:di:compile
    ```
 
-1. Deploy static content if needed:
+1. Deploy static content, if needed:
 
    ```bash
    bin/magento setup:static-content:deploy
@@ -161,7 +161,7 @@ The PLP widget is enabled by default for new installations of [!DNL Live Search]
 1. Expand the **Storefront Features** section.
 1. Set **Enable Product Listing Widgets** to **Yes**.
 1. Click **Save Config**.
-1. Flush cache: **System** > Tools > **Cache Management** > **Flush Magento Cache**.
+1. Flush the cache: **System** > Tools > **Cache Management** > **Flush Magento Cache**.
 
 ### Step 3: Test on staging
 
@@ -248,7 +248,7 @@ In this scenario, you have custom templates or layouts that override the default
 
 In this scenario, you have facets that use product attributes with custom source models that are not supported by the Search Adapter but ARE supported by the PLP widget.
 
-**Role** Merchant (Admin configuration)
+**Role**: Merchant (Admin configuration)
 
 1. **Identify affected attributes:**
    - Review product attributes used as facets
@@ -273,7 +273,7 @@ In this scenario, you have facets that use product attributes with custom source
 
 In this scenario, there is a known issue where enabling the PLP widget can cause GTM to fail.
 
-**Role** Developer/Partner + Customer Engineering
+**Role**: Developer/Partner + Customer Engineering
 
 **Option 1: Continue with Search Adapter (interim only)**
 
@@ -286,7 +286,7 @@ In this scenario, there is a known issue where enabling the PLP widget can cause
 
 1. **Implement a custom event collection:**
 
-   - Use [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
+   - Use the [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
    - Capture search and product interaction events
    - Push events to the GTM data layer manually
 
@@ -308,17 +308,17 @@ In this scenario, there is a known issue where enabling the PLP widget can cause
 
 In this scenario, you have a headless or PWA storefront that requires custom event collection and cannot use the standard PLP widget UI.
 
-**Role** Developer/Partner
+**Role**: Developer/Partner
 
 1. **Review reference implementations:**
    - Study the [PLP widget source code](https://github.com/adobe/storefront-product-listing-page)
    - Review API documentation for [[!DNL Live Search] GraphQL](graphql.md)
-   - Understand the [Catalog Service endpoint](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
+   - Understand the [Catalog Service queries](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
 
 1. **Implement a custom UI:**
    - Use [!DNL Live Search] GraphQL API for queries
    - Build custom product listing components
-   - Implement faceting UI
+   - Implement the UI for faceting
    - Handle pagination and sorting
 
 1. **Implement event collection:**
@@ -347,7 +347,7 @@ In this scenario, you have a headless or PWA storefront that requires custom eve
 
 In this scenario, you have previously customized the Search Adapter or widget code and need to migrate customizations.
 
-**Role** Developer/Partner
+**Role**: Developer/Partner
 
 1. **Document existing customizations:**
    - List all customizations made to Search Adapter
