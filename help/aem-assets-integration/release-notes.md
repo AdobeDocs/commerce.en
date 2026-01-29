@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.2.12
+
+_January 29, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1206 --> Fixed an issue where stale `no_selection` values in custom attributes for asset roles were not removed during asset sync, causing some images to not display correctly in Edge Delivery Services.
+
 ## v1.2.11
 
 _January 15, 2026_
