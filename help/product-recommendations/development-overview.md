@@ -5,7 +5,7 @@ exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
 ---
 # Product Recommendations Administrator Development
 
-Product Recommendations are a powerful marketing tool you can use to increase conversions, boost revenue, and stimulate shopper engagement. Product Recommendations are surfaced on the storefront in the form of units such as "Customers who viewed this product also viewed", "Customers who bought this product also bought", "Recommended for you", and so on. Adobe Commerce Product Recommendations are powered by [Adobe Sensei](https://www.adobe.com/sensei.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated shopper data. This data, when combined with your Commerce catalog, results in highly engaging, relevant, and personalized experiences for the shopper.
+Product Recommendations are a powerful marketing tool you can use to increase conversions, boost revenue, and stimulate shopper engagement. Product Recommendations are surfaced on the storefront in the form of units such as "Customers who viewed this product also viewed", "Customers who bought this product also bought", "Recommended for you", and so on. Adobe Commerce Product Recommendations are powered by [Adobe AI](https://business.adobe.com/ai.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated shopper data. This data, when combined with your Commerce catalog, results in highly engaging, relevant, and personalized experiences for the shopper.
 
 >[!NOTE]
 >
@@ -13,11 +13,11 @@ Product Recommendations are a powerful marketing tool you can use to increase co
 
 ## Architectural overview
 
-At a high level, Commerce Product Recommendations are deployed as SaaS. The Commerce side includes the storefront, which contains the event collector and recommendations layout template, and the backend, which includes the Data Services, SaaS Export module, and the Admin UI. Adobe Sensei intelligence services are leveraged on the SaaS side.
+At a high level, Commerce Product Recommendations are deployed as SaaS. The Commerce side includes the storefront, which contains the event collector and recommendations layout template, and the backend, which includes the Data Services, SaaS Export module, and the Admin UI. Adobe AI intelligence services are leveraged on the SaaS side.
 
   ![Product recommendations architecture diagram](assets/arch-diag-sensei.svg)
 
-Once the recommendation modules are installed and configured, your storefront will begin collecting behavioral data. Adobe Sensei processes this behavioral data along with your catalog data and calculates product associations that are leveraged by the recommendations service. At this point, the merchant can create, manage, and deploy product recommendation units to their storefront directly from the Admin UI.
+Once the recommendation modules are installed and configured, your storefront will begin collecting behavioral data. Adobe AI processes this behavioral data along with your catalog data and calculates product associations that are leveraged by the recommendations service. At this point, the merchant can create, manage, and deploy product recommendation units to their storefront directly from the Admin UI.
 
 ## Next steps
 
