@@ -110,7 +110,7 @@ If you store Adobe Commerce logs in the New Relic, you can add parsing rules to 
 
    - **Parsing rule**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 This example adds a rule that allows you to query New Relic logs by specific feed type, operation, and so on.
 
