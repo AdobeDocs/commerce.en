@@ -29,42 +29,50 @@ The following table describes the features and replacement solutions available i
 <table>
     <thead>
         <tr>
+            <th>Feature</th>
             <th>PaaS model [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}</th>
             <th>SaaS model [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}</th>
-            <th>Details</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital asset management</a></td>
-            <td><a href="../aem-assets-integration/overview.md">AEM Assets integration</a></td>
-            <td>A robust digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content. Alternatively, the default digital file and asset management feature provides basic asset management tools for storing and managing digital assets.</td>
+            <td>Digital asset management</td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Media Gallery</a></td>
+            <td><a href="../aem-assets-integration/overview.md">Product Visuals</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a></td>
-            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
-            <td rowspan="3">A CMS allowing users to create and manage storefront content easily using document authoring or a Visual Editor and includes native experimentation capabilities.</td>
+            <td>Content management</td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL rewrites</a></td>
+            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
+            <td>Catalog merchandising</td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Content staging</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+            <td><a href="../catalog-service/overview.md">Catalog Service</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL rewrites</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Content staging</a></td>
-            <td rowspan="2"><a href="../catalog-service/overview.md">Catalog Service</a></td>
-            <td rowspan="2">A rich view-model (read-only) service for managing catalog data and rendering product-related storefront experiences.</td>
-        </tr>
-        <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Payments</a></td>
+            <td>Payments</td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Payment solutions</a></td>
             <td><a href="../payment-services/guide-overview.md">Payment Services</a></td>
-            <td>An integrated payment service that facilitates secure and efficient transactions.</td>
+        </tr>
+        <tr>
+            <td>B2B functionality</td>
+            <td>Full B2B capabilities available after installation</td>
+            <td>Pre-installed with core B2B features<sup>1</sup></td>
+        </tr>
+        <tr>
+            <td>Experimentation</td>
+            <td>Add-on for certain tiers</td>
+            <td>Native A/B testing to optimize engagement and conversion</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
+            </td>
+        </tr>
+    </tfoot>
 </table>
 
 ## Extensibility and platform features
@@ -82,16 +90,6 @@ The following table compares platform capabilities and extensibility features to
     <tbody>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Platform capabilities</strong></td>
-        </tr>
-        <tr>
-            <td>B2B functionality</td>
-            <td>Full B2B capabilities available after installation</td>
-            <td>Pre-installed with core B2B features<sup>1</sup></td>
-        </tr>
-        <tr>
-            <td>Experimentation</td>
-            <td>Add-on for certain tiers</td>
-            <td>A/B testing to optimize engagement and conversion</td>
         </tr>
         <tr>
             <td>Feature and security updates</td>
@@ -146,7 +144,7 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>Extensibility model</td>
-            <td>In-process (PHP customization) and out-of-process (APIs, events, App Builder)</td>
+            <td>In-process (PHP customization) and out-of-process (Recommended:APIs, events, App Builder)</td>
             <td>Out-of-process only (APIs, events, App Builder)</td>
         </tr>
         <tr>
@@ -157,7 +155,7 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>Data model extensibility</td>
             <td>Complete data model customization</td>
-            <td>Custom attributes for core and B2B entities<sup>2</sup></td>
+            <td>Custom attributes for core and B2B entities<sup>1</sup></td>
         </tr>
         <tr>
             <td>Technologies</td>
@@ -166,7 +164,7 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>App marketplace</td>
-            <td>[!DNL Magento Marketplace] (PHP extensions) and [!DNL Exchange Marketplace] for [!DNL App Builder] apps</td>
+            <td>[!DNL Magento Marketplace] (PHP extensions) and [!DNL Exchange Marketplace] for [!DNL App Builder] apps (Recommended)</td>
             <td>[!DNL App Builder] apps from [!DNL Exchange Marketplace]</td>
         </tr>
         <tr>
@@ -185,17 +183,15 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>Custom data storage</td>
             <td>DB, file, cache, queue</td>
-            <td>App Builder state library (file only)<sup>3 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Database Storage for App Builder</a> is currently in Early Access</sup></td>
+            <td>App Builder state library (file only)<sup>2 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Database Storage for App Builder</a> is currently in Early Access</sup></td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B features</a>, like company management and quoting, are available out-of-the-box in SaaS. However, industry-specific customizations may require additional implementation considerations.
+                <sup>1</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
                 <br><br>
-                <sup>2</sup> Data model extensibility in SaaS supports <a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">extending core entities</a> beyond product and customer, including B2B entities. However, industry-specific data models (for example, dealer-specific attributes) could require additional architectural considerations.
-                <br><br>
-                <sup>3</sup> Adobe is actively working Document DB integration to address persistent storage needs for SaaS. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
+                <sup>2</sup> Adobe is actively working Document DB integration to address persistent storage needs for SaaS. Currently, implementations requiring long-term data storage may need to provision and maintain additional infrastructure.
             </td>
         </tr>
     </tfoot>
