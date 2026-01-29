@@ -79,6 +79,10 @@ Key capabilities include:
 - **Commerce storefront powered by Edge Delivery** - With Edge delivery, you can launch your site quickly using prebuilt storefront components with integrated commerce functionality — including product listing pages, product detail pages, cart, and checkout.
 - **Third-party cart and checkout** - Use API mesh and App builder to integrate with third-party cart and checkout systems.
 
+>[!NOTE]
+>
+>To understand system boundaries and licensing for [!DNL Adobe Commerce Optimizer] capabilities, see the [Limits and boundaries](boundaries-limits.md) topic.
+
 ## Architecture
 
 The following diagram describes the basic architecture of [!DNL Adobe Commerce Optimizer], from catalog data ingestion to the relationship between merchandising services, your storefront, and the integration with a third-party cart and checkout process.

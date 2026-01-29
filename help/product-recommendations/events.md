@@ -25,7 +25,7 @@ There are two types of data used in Product Recommendations:
 - **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
 - **Catalog** - Product metadata, such as name, price, availability, and so on.
 
-When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
+When you install the `magento/product-recommendations` module, Adobe AI aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
 
 Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Product Recommendations on your site, you can use the following, catalog-only recommendation types:
 
@@ -36,7 +36,7 @@ Some recommendation types use behavioral data from your shoppers to train machin
 
 When can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
 
-The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For product recommendations, this means waiting for Adobe Sensei to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early by installing and setting up the `magento/production-recommendations` module.
+The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For product recommendations, this means waiting for Adobe AI to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early by installing and setting up the `magento/production-recommendations` module.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 
