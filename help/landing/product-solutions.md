@@ -13,7 +13,7 @@ Adobe offers several solutions to meet the requirements of your ecommerce busine
 
 >[!NOTE]
 >
->For more information on which specific modules are available in [!DNL Adobe Commerce as a Cloud Service] (SaaS) compared to [!DNL Adobe Commerce on Cloud] and [!DNL Adobe Commerce on Premises] (PaaS), see the [Feature comparison](../cloud-service/feature-comparison.md).
+>For more information on available features in [!DNL Adobe Commerce as a Cloud Service] (SaaS) and how those features align with other versions of Adobe Commerce, such as [!DNL Adobe Commerce on Cloud] and [!DNL Adobe Commerce on Premises] (PaaS), see the [Feature comparison](../cloud-service/feature-comparison.md).
 
 ## Badges
 

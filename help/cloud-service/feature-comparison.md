@@ -164,8 +164,8 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>App marketplace</td>
-            <td>[!DNL Magento Marketplace] (PHP extensions) and [!DNL Exchange Marketplace] for [!DNL App Builder] apps (Recommended)</td>
-            <td>[!DNL App Builder] apps from [!DNL Exchange Marketplace]</td>
+            <td>[[!DNL Magento Marketplace]](https://marketplace.magento.com/) (PHP extensions) and [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com) for [!DNL App Builder] apps (Recommended)</td>
+            <td>[!DNL App Builder] apps from [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)</td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
@@ -183,7 +183,7 @@ The following table compares platform capabilities and extensibility features to
         <tr>
             <td>Custom data storage</td>
             <td>DB, file, cache, queue</td>
-            <td>App Builder state library (file only)<sup>2 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Database Storage for App Builder</a> is currently in Early Access</sup></td>
+            <td>App Builder state library (file only)<sup>2 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Database Storage for App Builder</a> is currently in Early Access.</sup></td>
         </tr>
     </tbody>
     <tfoot>
