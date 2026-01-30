@@ -4,6 +4,50 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### January 30, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added more information to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">feature comparison page</a>, including new infrastructure, operational capability, and marketplace information.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/95bb6205404fa4206a618a3e4a340f1d166f0303">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 29, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migrating from Search Adapter to PLP Widget</a> guide with detailed migration scenarios, step-by-step procedures, role-based guidance, and troubleshooting for customers transitioning from the deprecated Search Adapter.</p>
+</td>
+      <td>
+        Feedback, major update, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6629007da035fe0e3de6c69745f4c34011ec5d98">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### January 22, 2026
 
 <table style="table-layout:auto;">
