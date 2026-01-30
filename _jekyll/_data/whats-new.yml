@@ -2,8 +2,35 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Jan 26 18:18:58 2026
+updated: Fri Jan 30 16:30:43 2026
 entries:
+- description: Added more information to the [feature comparison page](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison),
+    including new infrastructure, operational capability, and marketplace information.
+  versions: ''
+  type: feedback
+  date: January 30, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/297
+  merge_commit: 95bb6205404fa4206a618a3e4a340f1d166f0303
+  contributor: jhoover
+  membership:
+  labels:
+  - feedback
+  - core-saas
+  - editorial
+- description: Added [Migrating from Search Adapter to PLP Widget](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp)
+    guide with detailed migration scenarios, step-by-step procedures, role-based guidance,
+    and troubleshooting for customers transitioning from the deprecated Search Adapter.
+  versions: ''
+  type: feedback, major-update, new-topic
+  date: January 29, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/371
+  merge_commit: 6629007da035fe0e3de6c69745f4c34011ec5d98
+  contributor: emarr
+  membership:
+  labels:
+  - feedback
+  - major-update
+  - new-topic
 - description: Updated the Storefront setup guides for [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront)
     and [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront)
     to Include information about migrating the Commerce storefront configuration for
