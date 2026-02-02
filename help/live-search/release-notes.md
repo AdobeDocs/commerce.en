@@ -76,6 +76,10 @@ _April 25, 2023_
 
 ### PLP widget
 
+_February 2, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue in PLP version 2.3.0 where the browser back button did not properly update the pagination state in the PLP widget.
+
 _May 22, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart button remained in English when the locale was changed to French, German, Italian or Spanish.
