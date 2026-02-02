@@ -22,6 +22,18 @@ Updates include:
 
 ## Current major version
 
+## 103.4.18 Release
+
+![Fix](../assets/fix.svg) Confirm compatible with 2.4.6. <!--MDEE-1188-->
+update php version by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/533
+[Slow Horses] MDEE-1264: [Eluscious] Items qty exceeded allowed limit by @slavvka in https://github.com/magento-commerce/commerce-data-export/pull/534
+![Fix](../assets/fix.svg) Add logic to register failed items during bundle product options collect. <!--CCSAAS-4458-->
+update php by @duhon in https://github.com/magento-commerce/commerce-data-export-ee/pull/144
+update php by @duhon in https://github.com/magento-commerce/saas-export/pull/183
+[Slow Horses] MDEE-1264: [Eluscious] Items qty exceeded allowed limit by @slavvka in https://github.com/magento-commerce/saas-export/pull/184
+## New Contributors
+@slavvka made their first contribution in https://github.com/magento-commerce/saas-export/pull/184
+
 ## 103.4.17 Release   
 
 ![Fix](../assets/fix.svg) Updated the data export extension (`magento/module-data-exporter`) to remove the `magento/module-analytics`  dependency, which is no longer required.<!--MDEE-1260--> 
