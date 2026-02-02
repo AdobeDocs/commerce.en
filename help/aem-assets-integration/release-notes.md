@@ -6,7 +6,7 @@ exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
 ---
 # AEM Assets Integration release notes
 
-These release notes describe the initial release of AEM Assets Integration and include:
+These release notes describe all releases for the AEM Assets Integration and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
@@ -31,6 +31,22 @@ _February 11, 2025_
 ![New issue](../assets/new.svg) Now, merchants can synchronize images for products and categories.
 
 +++
+
+## v1.2.12
+
+_January 29, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1206 --> Fixed an issue where stale `no_selection` values in custom attributes for asset roles were not removed during asset sync, causing some images to not display correctly in Edge Delivery Services.
+
+## v1.2.11
+
+_January 15, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1180 --> Improved the product edit page by hiding file size and dimensions for AEM assets since they are dynamically optimized by CDN. Now, pages prerender correctly when the AEM Assets integration is enabled.
 
 ## v1.2.10
 
