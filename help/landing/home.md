@@ -197,6 +197,21 @@ Whether you are looking to scale your business, improve customer experiences, or
 | Make data-driven merchandising decisions | You're not sure which products to promote or when to run promotions. | [Live Search](../live-search/overview.md) provides search performance insights and merchandising tools to access key metrics, analyze search terms, and use intelligent merchandising rules to boost or bury products based on real customer behavior and business goals. |
 | Maintain compliance with sensitive data | You need to handle sensitive customer data while maintaining HIPAA compliance. | [Data Connection](../data-connection/overview.md) is HIPAA-ready, allowing you to share back-office data with Experience Platform while maintaining compliance and systematically handling privacy requests. |
 
+## How Commerce Services work together
+
+Adobe Commerce Services are built on a unified platform. When you use multiple services, you benefit from:
+
+- **Unified data pipeline** - Product, pricing, and inventory data syncs automatically across all services, eliminating the need for duplicate data entry or custom integrations.
+- **Real-time personalization** - Customer behavior from search, browsing, and purchases powers intelligent recommendations and ranking across your entire storefront.
+- **Consistent storefront integration** - Whether you're using Edge Delivery Services, PWA Studio, or headless implementations, the same drop-ins and APIs work seamlessly across all platforms.
+- **Multi-store and multi-language support** - All services automatically respect your store views, customer segments, and B2B catalog configurations without additional setup.
+- **Rich product visuals** - When you integrate with AEM Assets, optimized product images appear consistently across search results, product pages, and recommendations.
+- **Connected customer data** - Use Data Connection to share shopping behavior with Adobe Experience Platform, Real-Time CDP, and Journey Optimizer, enabling cross-channel personalization and campaign optimization.
+
+For example, when a shopper searches for a product using Live Search, adds it to their cart after viewing a Product Recommendation, and completes the purchase with Payment Services, all of this activity flows seamlessly through the unified data pipeline. This behavior data then powers better search results and more relevant recommendations for future shoppers.
+
+Each service can be used independently, but combining them creates a more intelligent and personalized shopping experience.
+
 {{$include /help/_includes/templated/whats-new.md}}
 
 <!-- Last updated from includes: 2025-12-19 22:44:55 -->
