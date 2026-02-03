@@ -164,7 +164,7 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>App marketplace</td>
-            <td>[[!DNL Magento Marketplace]](https://marketplace.magento.com/) (PHP extensions) and [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com) for [!DNL App Builder] apps (Recommended)</td>
+            <td>[Magento Marketplace](https://marketplace.magento.com/) (PHP extensions) and [Exchange Marketplace](https://commercemarketplace.adobe.com) for [!DNL App Builder] apps (Recommended)</td>
             <td>[!DNL App Builder] apps from [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)</td>
         </tr>
         <tr>
