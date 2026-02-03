@@ -39,7 +39,9 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed the Coupon Grid filter to display all custom coupons created through the API or by importing. <!-- CCSAAS-4509 -->
 
-* Fixed an issue where the `setNegotiableQuoteShippingAddress` mutation did not save manually entered addresses to the customer's address book, even when `save_in_address_book` was set to `true`. <!-- LYNX-1031 -->
+* Fixed an issue in the [!DNL Storefront Compatibility B2B Package] where the `setNegotiableQuoteShippingAddress` mutation did not save manually entered addresses to the customer's address book, even when `save_in_address_book` was set to `true`. <!-- LYNX-1031 --> 
+
+<!-- The above change will also be covered by the B2B changelog published on February 13, 2026. -->
 
 * Resolved an issue where product images were not displaying properly in [!DNL Edge Delivery Services] due to corrupted `no_selection` values in custom attributes related to asset roles. <!-- ACAP-1206 -->
 
