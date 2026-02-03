@@ -25,13 +25,20 @@ The following items are currently only available in Sandbox environments of [!DN
 
 ### Customize Admin orders and legacy admin reports
 
+The following enhancements were made to the [!DNL Commerce Admin]:
+
 * You can now enter a custom shipping amount when creating orders in the Admin. This enhancement provides Customer Service teams with the flexibility to charge custom shipping prices for backend orders. <!-- ACCS-235 -->
 
 * Added access to legacy Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
 
 ### Capture custom invoice amounts through the REST API
 
-* The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+
+
+>[!NOTE]
+>
+>Due to legal restrictions, the custom capture amount is only available in the North American (NA) region and other regions where payment overcapture is permitted.
 
 ### Enhancements and bug fixes
 
