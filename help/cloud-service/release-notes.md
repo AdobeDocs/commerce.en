@@ -23,10 +23,6 @@ The following items are currently only available in Sandbox environments of [!DN
 
 >[!BEGINSHADEBOX]
 
-### Capture custom invoice amounts through the REST API
-
-The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice through the REST API, providing greater flexibility for partial captures and specialized payment scenarios. <!-- ACCS-186, ACCS-197, ACCS-143 -->
-
 ### Customize Admin orders and legacy admin reports
 
 * You can now enter a custom shipping amount when creating orders in the Admin. This enhancement provides Customer Service teams with the flexibility to charge custom shipping prices for backend orders. <!-- ACCS-235 -->
@@ -51,7 +47,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 ### Internal improvements (to be deleted)
 
-The following infrastructure and developer-focused improvements are included in this release:
+* The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice through the REST API, providing greater flexibility for partial captures and specialized payment scenarios. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 * Updated Adobe IMS Client ID configuration in development environment templates. <!-- CCSAAS-4473 -->
 
@@ -88,7 +84,6 @@ The following infrastructure and developer-focused improvements are included in 
 * Moved predefined event and webhook configuration from Commerce Core SaaS service to regular Commerce modules, making event metadata available in both PaaS and SaaS environments. <!-- CEXT-5253 -->
 
 * Enhanced bundle product data collection to register and handle failed items during bundle product options processing. <!-- CCSAAS-4458 -->
-
 
 #### Version updates (to be deleted)
 
