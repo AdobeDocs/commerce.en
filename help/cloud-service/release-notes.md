@@ -29,6 +29,10 @@ The following items are currently only available in Sandbox environments of [!DN
 
 * Added access to legacy Admin reports, including: Best Sellers, Coupons, Customer Accounts, Customer Orders, Customer Segments, Customer Totals, Invoiced, Low Stock, Products Sold, Products Viewed, Refunded, Sales, Shipping, Shopping Cart, and Tax. <!-- CCSAAS-3085 -->
 
+### Capture custom invoice amounts through the REST API
+
+* The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
@@ -46,8 +50,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Simplified the Asset Selector configuration by automatically providing region-specific IMS Client IDs. Merchants no longer need to submit support tickets to configure Asset Selector for mapping product category images with assets. The system now automatically uses dedicated IMS Client IDs based on the Commerce region. <!-- ACCS-175 -->
 
 ### Internal improvements (to be deleted)
-
-* The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature on your system. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 * Updated Adobe IMS Client ID configuration in development environment templates. <!-- CCSAAS-4473 -->
 
