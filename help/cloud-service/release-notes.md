@@ -47,7 +47,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 ### Internal improvements (to be deleted)
 
-* The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice through the REST API, providing greater flexibility for partial captures and specialized payment scenarios. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+* The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature on your system. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 * Updated Adobe IMS Client ID configuration in development environment templates. <!-- CCSAAS-4473 -->
 
