@@ -27,7 +27,7 @@ The following items are currently only available in Sandbox environments of [!DN
 
 * You can now enter a custom shipping amount when creating orders in the Admin. This enhancement provides Customer Service teams with the flexibility to charge custom shipping prices for backend orders. <!-- ACCS-235 -->
 
-* Added access to legacy Admin reports, including: Best Sellers, Coupons, Customer Accounts, Customer Orders, Customer Segments, Customer Totals, Invoiced, Low Stock, Products Sold, Products Viewed, Refunded, Sales, Shipping, Shopping Cart, and Tax. <!-- CCSAAS-3085 -->
+* Added access to legacy Admin reports, including those for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
 
 ### Capture custom invoice amounts through the REST API
 
