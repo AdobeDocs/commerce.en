@@ -15,7 +15,93 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## January 2026 {#latest}
+## February 2026 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items are currently only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service]. This release is scheduled to move to Production environments on February 10, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Capture custom invoice amounts through the REST API
+
+The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice through the REST API, providing greater flexibility for partial captures and specialized payment scenarios. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+
+### Switch between Commerce instances and customize Admin orders
+
+The following enhancements were made to the Commerce Admin:
+
+* Added tenant switcher support to the Commerce Admin UI, allowing users to switch between multiple Commerce instances directly from the UI. The switcher displays instance type badges, instance names, and includes the instance ID in the URL. <!-- EXC-45838 -->
+
+* You can now enter a custom shipping amount when creating orders in the Admin. This enhancement provides Customer Service teams with the flexibility to charge custom shipping prices for backend orders. <!-- ACCS-235 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Added access for legacy reports in the Commerce Admin. <!-- CCSAAS-3085 -->
+
+* Resolved an issue where the Admin crashed when configuring an [!DNL Admin UI SDK] menu extension with an invalid identifier. Additional validation checks now prevent processing of extensions with non-existent IDs. <!-- CEXT-5701 -->
+
+* Removed the **[!UICONTROL Login as Customer]** button from Order, Invoice, Shipment, and Credit Memo pages in the Admin. This feature is not supported in headless Commerce implementations using [!DNL Edge Delivery Services]. <!-- ACCS-38 -->
+
+* Fixed the Coupon Grid filter to display all custom coupons created through the API or by importing. Previously, the grid only showed auto-generated coupons and filtered out manually created coupons. This change makes API-created and imported coupons visible to merchants and enables Export functionality to include all coupon types. <!-- CCSAAS-4509 -->
+
+* Fixed an issue where the `setNegotiableQuoteShippingAddress` mutation did not save manually entered addresses to the customer's address book, even when `save_in_address_book` was set to `true`. Addresses are now properly saved when requested. <!-- LYNX-1031 -->
+
+* Resolved an issue where product images were not displaying properly in [!DNL Edge Delivery Services] due to corrupted `no_selection` values in custom attributes related to asset roles. The [!DNL AEM Assets] integration now detects and removes these invalid values to ensure proper image display. <!-- ACAP-1206 -->
+
+* Implemented OPcache preloading to optimize PHP bootstrap performance. By loading framework core classes, dependency injection container components, and GraphQL engine classes into shared memory at startup, this enhancement eliminates file I/O overhead for critical classes loaded on every request. <!-- CCSAAS-4255 -->
+
+* Improved sorting for generated GraphQL schemas to ensure consistent output regardless of module installation order, reducing unnecessary changes to the router service. <!-- CCSAAS-4472 -->
+
+* Added performance monitoring for Admin Order Grid browsing scenarios in trend builds. <!-- CCSAAS-4462 -->
+
+* Moved predefined event and webhook configuration from Commerce Core SaaS service to regular Commerce modules, making event metadata available in both PaaS and SaaS environments. <!-- CEXT-5253 -->
+
+* Enhanced bundle product data collection to register and handle failed items during bundle product options processing. <!-- CCSAAS-4458 -->
+
+* Resolved an issue preventing federated user accounts with null first name or last name values from accessing the Commerce Admin. <!-- ACCS-200 -->
+
+* Prevented premature configuration loading that could occur before tenant context was properly established. <!-- ACCS-185 -->
+
+* Various performance and optimization improvements. <!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
+
+### Internal improvements (to be deleted)
+
+The following infrastructure and developer-focused improvements are included in this release:
+
+* Simplified the Asset Selector configuration by automatically providing region-specific IMS Client IDs. Merchants no longer need to submit support tickets to configure Asset Selector for mapping product category images with assets. The system now automatically uses dedicated IMS Client IDs based on the Commerce region. <!-- ACCS-175 -->
+
+* Updated Adobe IMS Client ID configuration in development environment templates. <!-- CCSAAS-4473 -->
+
+* Prepared infrastructure to support switchable MDEE feed versions (V1 to V2 - CCDM), allowing future migration to Common Commerce Data Model format. <!-- CCSAAS-3728 -->
+
+* Disabled the category design cache observer for headless architecture, removing unnecessary overhead in Commerce implementations using [!DNL Edge Delivery Services]. <!-- CCSAAS-4494 -->
+
+* Fixed invalid URL formation for V2 feed service endpoints that was missing the `/api` path segment. <!-- CCSAAS-4501 -->
+
+* Resolved feed metadata errors for Commerce Optimizer price book feeds. <!-- CCSAAS-4505 -->
+
+* Fixed company lookup errors that occurred when processing B2B company data. <!-- CCSAAS-4457 -->
+
+* Resolved REST API filter issues that prevented using `pickup_location_code` field for filtering orders with pickup locations. <!-- ACCS-199 -->
+
+* Corrected Admin UI permissions that were incorrectly limited for users properly configured as Product Administrators in the Admin Console. <!-- ACCS-217 -->
+
+#### Version updates (to be deleted)
+
+* Updated [!DNL Storefront Compatibility Package for B2B] to version 1.0.16. <!-- LYNX-1031 -->
+
+* Updated [!DNL AEM Assets Integration] extension to version 1.2.12. <!-- ACAP-1206 -->
+
+* Updated [!DNL Admin UI SDK] to version 3.2.6. <!-- CEXT-5701 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## January 2026
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
