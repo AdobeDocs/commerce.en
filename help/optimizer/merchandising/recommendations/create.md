@@ -35,7 +35,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    - **Activate** to enable the recommendation unit on your storefront.
 
-1. When prompted, copy the recommendation ID. Use this ID to help you identify which recommendation unit is being used in the recommendation drop-in on your Edge Delivery Services storefront.
+   Your recommendation appears on the Recommendations workspace. To use your recommendation on your storefront, you need to find the [recommendation ID](#get-recommendation-id).
 
 >[!NOTE]
 >
@@ -44,6 +44,22 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 >[!IMPORTANT]
 >
 >Some browsers might block critical scripts that prevent Recommendations from working as expected.
+
+## Get recommendation ID
+
+After creating a recommendation, you need to retrieve its ID to implement the recommendation unit on your storefront.
+
+1. On the **Recommendations** page, select the recommendation.
+
+1. Click the information icon (![Info icon](../../assets/info-icon.png)) next to the recommendation name.
+
+   The **Recommendation Unit details** page displays.
+
+   ![Get Recommendation ID](../../assets/get-rec-id.png)
+
+1. In the **Recommendation ID** section, copy the ID.
+
+1. Use this ID to configure the [recommendation drop-in](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
 ## Manage existing recommendations
 
