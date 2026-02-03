@@ -24,10 +24,9 @@ Updates include:
 
 ## 103.4.18 Release
 
-![Fix](../assets/fix.svg) Confirm compatible with 2.4.6. <!--MDEE-1188-->
-update php version by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/533
 ![Fix](../assets/fix.svg) Fixed an issue where item batches could exceed the allowed limit during updates, causing `items_limit_exceeded` errors when syncing data to [Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) or [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 ![Fix](../assets/fix.svg) Added logic to register failed items during bundle product options collect. <!--CCSAAS-4458-->
+
 ## 103.4.17 Release   
 
 ![Fix](../assets/fix.svg) Updated the data export extension (`magento/module-data-exporter`) to remove the `magento/module-analytics`  dependency, which is no longer required.<!--MDEE-1260--> 
