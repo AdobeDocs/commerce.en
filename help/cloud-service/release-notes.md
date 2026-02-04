@@ -23,11 +23,11 @@ The following items are currently only available in Sandbox environments of [!DN
 
 >[!BEGINSHADEBOX]
 
-### Customize Admin orders and admin reports
+### Customize shipping methods and view Admin reports
 
 The following enhancements were made to the [!DNL Commerce Admin]:
 
-* You can now enter a custom shipping amount when creating orders in the Admin. This enhancement provides Customer Service teams with the flexibility to charge custom shipping prices for backend orders. <!-- ACCS-235 -->
+* Enhanced out-of-process shipping webhook payloads to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
 
 * Added access to Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
 
