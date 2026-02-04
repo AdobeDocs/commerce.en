@@ -54,9 +54,9 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Resolved an issue preventing federated user accounts with null first name or last name values from accessing the Commerce Admin. <!-- ACCS-200 -->
 
-* Various performance and optimization improvements. <!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
-
 * Simplified the Asset Selector configuration by automatically providing region-specific IMS Client IDs. Merchants no longer need to submit support tickets to configure Asset Selector for mapping product category images with assets. The system now automatically uses dedicated IMS Client IDs based on the Commerce region. <!-- ACCS-175 -->
+
+* Various performance and optimization improvements. <!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
 
 ### Internal improvements (to be deleted)
 
