@@ -25,7 +25,7 @@ Updates include:
 ## 103.4.18 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where item batches could exceed the allowed limit during updates, causing `items_limit_exceeded` errors when syncing data to [Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) or [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
-![Fix](../assets/fix.svg) Added logic to register failed items during bundle product options collect. <!--CCSAAS-4458-->
+![Fix](../assets/fix.svg) Improved reliability of product data exports by adding logic to register failed items during bundle product options collect. <!--CCSAAS-4458-->
 
 ## 103.4.17 Release   
 
