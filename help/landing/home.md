@@ -212,7 +212,7 @@ For example, when a shopper searches for a product using Live Search, adds it to
 
 >[!NOTE]
 >
->Event collection must be configured to enable behavioral data sharing between services. See [Configure Commerce Services](saas.md#saas-configuration) for setup instructions.
+>You must configure event data collection to enable behavioral data sharing between services. See [Configure Commerce Services](saas.md#saas-configuration) for setup instructions.
 
 Each service can be used independently, but combining them creates a more intelligent and personalized shopping experience.
 
