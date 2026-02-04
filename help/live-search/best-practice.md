@@ -125,9 +125,7 @@ Learn more about search rules:
 
 Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
 
-Choosing the right attributes to make searchable is critical for search quality. While it may be tempting to make many attributes searchable to maximize recall, this often degrades relevance and creates unexpected matching behavior. This section provides guidance on selecting searchable attributes strategically.
-
-#### Choose searchable attributes strategically
+Choosing the right attributes to make searchable is critical for search quality. While it may be tempting to make many attributes searchable to maximize results, this often degrades relevance and creates unexpected matching behavior. This section provides guidance on selecting searchable attributes strategically.
 
 **Recommended searchable attributes:**
 
@@ -148,13 +146,11 @@ Choosing the right attributes to make searchable is critical for search quality.
 
 #### Common issues caused by incorrect searchable attributes
 
-Making the wrong attributes searchable can frustrate shoppers and create support escalations. Here are real-world examples:
+Making the wrong attributes searchable can frustrate shoppers and create support escalations.
 
 **Example 1: Stemming and autocomplete side effects**
 
 **Scenario:** A merchant makes long product descriptions searchable. A shopper searches for "can" (looking for containers). Due to stemming and partial matching, products with "can" as part of larger words in their descriptions appear, such as "American," "canopy," or "canvas."
-
-**Outcome:** Products unrelated to the shopper's intent surface because they share short tokens or stems. The shopper sees irrelevant results and loses confidence in the search.
 
 **Recommendation:**
 
@@ -166,19 +162,15 @@ Making the wrong attributes searchable can frustrate shoppers and create support
 
 **Scenario:** A merchant sets the ranking to "Most Purchased" and includes category paths and long descriptions as searchable attributes. A shopper searches for "laptop bag." The broad matching returns laptop bags, laptop accessories, bags for other purposes, and laptops themselves. Because laptops are more frequently purchased than laptop bags, they rank at the top.
 
-**Outcome:** The shopper perceives the ranking as incorrect, even though the system is working as configured. The match set was too broad, and popularity ranking amplified products that were not the primary intent.
-
 **Recommendation:**
 
-- First, tighten the match set by removing noisy searchable attributes like category paths.
-- Once the match set is more precise, apply popularity-based ranking strategies.
+- Remove noisy searchable attributes like category paths.
+- Apply popularity-based ranking strategies.
 - Monitor search analytics to identify queries where this pattern occurs.
 
 **Example 3: Category path creates false positives**
 
-**Scenario:** A merchant makes the full category path searchable (for example, "Home > Kitchen > Appliances > Small Appliances"). A shopper searches for "home office desk." Products from the "Home" category match even if they're kitchen items, because "home" exists in their category path.
-
-**Outcome:** Kitchen appliances, home decor, and other unrelated products appear in results for "home office desk," diluting relevance.
+**Scenario:** A merchant makes the full category path searchable (for example, "Home > Kitchen > Appliances > Small Appliances"). A shopper searches for "home office desk." Products from the "Home" category match even if they are kitchen items, because "home" exists in their category path.
 
 **Recommendation:**
 
@@ -197,31 +189,36 @@ To increase search relevance, assign a weight to each searchable attribute. Attr
 
 Ensure that each product has relevant content within each searchable attribute. It is not recommended to set an attribute as searchable if it has large amounts of content as that can reduce search result relevance.
 
-#### Troubleshooting checklist
+#### Troubleshooting
 
 If search results feel random or irrelevant, use this checklist before escalating as a product defect:
 
 1. **Review searchable attribute configuration:**
+
    - List all attributes currently set as searchable.
    - Identify any broad or noisy attributes (long descriptions, category paths, administrative fields).
-   - Remove searchable status from attributes that don't represent shopper intent.
+   - Remove searchable status from attributes that do not represent shopper intent.
 
-2. **Validate query matches against core attributes:**
+1. **Validate query matches against core attributes:**
+
    - Test your most common search queries.
    - Verify that results primarily match on product name and brand rather than tangential text.
    - Check if unexpected results share only weak matches in long-form content.
 
-3. **Test with and without noisy fields:**
+1. **Test with and without noisy fields:**
+
    - Temporarily remove searchable status from category path and long description fields.
    - Re-run problematic queries to see if relevance improves.
    - If results improve, permanently adjust your configuration.
 
-4. **Use merchandising rules for exceptions:**
+1. **Use merchandising rules for exceptions:**
+
    - For specific known queries that need special handling, create targeted search rules.
-   - Don't try to solve edge cases by making more attributes searchable.
+   - Do not try to solve edge cases by making more attributes searchable.
    - Use redirects for brand-name searches or common misspellings.
 
-5. **Monitor and iterate:**
+1. **Monitor and iterate:**
+
    - Use the [Performance workspace](performance.md) to track zero results rate and click-through rates.
    - Review top search queries weekly to identify new patterns.
    - Adjust searchable attributes and weights based on data, not assumptions.
