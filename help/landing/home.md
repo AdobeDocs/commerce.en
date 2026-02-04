@@ -208,7 +208,11 @@ Adobe Commerce Services are built on a unified platform. When you use multiple s
 - **Rich product visuals** - When you integrate with AEM Assets, optimized product images appear consistently across search results, product pages, and recommendations.
 - **Connected customer data** - Use Data Connection to share shopping behavior with Adobe Experience Platform, Real-Time CDP, and Journey Optimizer, enabling cross-channel personalization and campaign optimization.
 
-For example, when a shopper searches for a product using Live Search, adds it to their cart after viewing a Product Recommendation, and completes the purchase with Payment Services, all of this activity flows seamlessly through the unified data pipeline. This behavior data then powers better search results and more relevant recommendations for future shoppers. Make sure you have configured [event collection](saas.md#saas-configuration) for your storefront.
+For example, when a shopper searches for a product using Live Search, adds it to their cart after viewing a Product Recommendation, and completes the purchase with Payment Services, all of this activity flows seamlessly through the unified data pipeline. This behavior data then powers better search results and more relevant recommendations for future shoppers.
+
+>[!NOTE]
+>
+>Event collection must be configured to enable behavioral data sharing between services. See [Configure Commerce Services](saas.md#saas-configuration) for setup instructions.
 
 Each service can be used independently, but combining them creates a more intelligent and personalized shopping experience.
 
