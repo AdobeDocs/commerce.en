@@ -121,20 +121,6 @@ Learn more about search rules:
     - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
     - [GitHub Commerce events](https://github.com/adobe/commerce-events/tree/main/examples) 
 
-<!--### Leverage Product Metadata
-
-Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
-
-To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
-
-Ensure that each product has relevant content within each searchable attribute. It is not recommended to set an attribute as searchable if it has large amounts of content as that can reduce search result relevance.
-
-Learn more about product attributes for search:
-
-- [Set attributes as searchable](workspace.md#set-attributes-as-searchable)
-- [Assign weight to attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
--->
-
 ### Leverage product metadata
 
 Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
