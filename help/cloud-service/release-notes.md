@@ -23,13 +23,13 @@ The following items are currently only available in Sandbox environments of [!DN
 
 >[!BEGINSHADEBOX]
 
-### Customize Admin orders and legacy admin reports
+### Customize Admin orders and admin reports
 
 The following enhancements were made to the [!DNL Commerce Admin]:
 
 * You can now enter a custom shipping amount when creating orders in the Admin. This enhancement provides Customer Service teams with the flexibility to charge custom shipping prices for backend orders. <!-- ACCS-235 -->
 
-* Added access to legacy Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
+* Added access to Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
 
 ### Capture custom invoice amounts through the REST API
 
