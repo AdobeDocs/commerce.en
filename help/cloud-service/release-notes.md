@@ -15,7 +15,53 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## January 2026 {#latest}
+## February 2026 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items are currently only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service]. This release is scheduled to move to Production environments on February 10, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Customize shipping methods and view Admin reports
+
+The following enhancements were made to the [!DNL Commerce Admin]:
+
+* Enhanced out-of-process shipping webhook payloads to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
+
+* Added access to Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
+
+### Capture custom invoice amounts through the REST API
+
+The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+
+>[!NOTE]
+>
+>Due to legal restrictions, the custom capture amount is only available in the North American (NA) region and other regions where payment overcapture is permitted.
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed the Coupon Grid filter to display all custom coupons created through the API or by importing. <!-- CCSAAS-4509 -->
+
+* Fixed an issue in the [!DNL Storefront Compatibility B2B Package] where the `setNegotiableQuoteShippingAddress` mutation did not save manually entered addresses to the customer's address book, even when `save_in_address_book` was set to `true`. <!-- LYNX-1031 --> 
+
+<!-- The above change will also be covered by the B2B changelog published on February 13, 2026. -->
+
+* Resolved an issue where product images were not displaying properly in [!DNL Edge Delivery Services] due to corrupted `no_selection` values in custom attributes related to asset roles. <!-- ACAP-1206 -->
+
+* Resolved an issue preventing federated user accounts with null first name or last name values from accessing the Commerce Admin. <!-- ACCS-200 -->
+
+* Simplified the Asset Selector configuration by automatically providing region-specific IMS Client IDs. Merchants no longer need to submit support tickets to configure Asset Selector for mapping product category images with assets. The system now automatically uses dedicated IMS Client IDs based on the Commerce region. <!-- ACCS-175 -->
+
+* Various performance and optimization improvements. <!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## January 2026
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
