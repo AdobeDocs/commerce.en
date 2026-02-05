@@ -148,34 +148,11 @@ Choosing the right attributes to make searchable is critical for search quality.
 
 Making the wrong attributes searchable can frustrate shoppers and create support escalations.
 
-**Example 1: Stemming and autocomplete side effects**
-
-**Scenario:** A merchant makes long product descriptions searchable. A shopper searches for "can" (looking for containers). Due to stemming and partial matching, products with "can" as part of larger words in their descriptions appear, such as "American," "canopy," or "canvas."
-
-**Recommendation:**
-
-- Reduce searchable fields to high-intent attributes like product name and primary description.
-- Validate your top search terms to identify problematic matches.
-- Use search merchandising rules or redirects to handle specific known edge cases.
-
-**Example 2: Ranking by popularity amplifies noisy matching**
-
-**Scenario:** A merchant sets the ranking to "Most Purchased" and includes category paths and long descriptions as searchable attributes. A shopper searches for "laptop bag." The broad matching returns laptop bags, laptop accessories, bags for other purposes, and laptops themselves. Because laptops are more frequently purchased than laptop bags, they rank at the top.
-
-**Recommendation:**
-
-- Remove noisy searchable attributes like category paths.
-- Apply popularity-based ranking strategies.
-- Monitor search analytics to identify queries where this pattern occurs.
-
-**Example 3: Category path creates false positives**
-
-**Scenario:** A merchant makes the full category path searchable (for example, "Home > Kitchen > Appliances > Small Appliances"). A shopper searches for "home office desk." Products from the "Home" category match even if they are kitchen items, because "home" exists in their category path.
-
-**Recommendation:**
-
-- Do not make category paths searchable; use facets instead to allow shoppers to filter by category.
-- If category filtering is critical to your search strategy, implement it through merchandising rules rather than searchable attributes.
+| Example | Scenario | Recommendation |
+|---------|----------|----------------|
+| **Stemming and autocomplete side effects** | A merchant makes long product descriptions searchable. A shopper searches for "can" (looking for containers). Due to stemming and partial matching, products with "can" as part of larger words in their descriptions appear, such as "American," "canopy," or "canvas." Products unrelated to the shopper's intent surface, and they lose confidence in the search. | Reduce searchable fields to high-intent attributes like product name and primary description. Validate your top search terms to identify problematic matches. Use search merchandising rules or redirects to handle specific known edge cases. |
+| **Ranking by popularity amplifies noisy matching** | A merchant sets the ranking to "Most Purchased" and includes category paths and long descriptions as searchable attributes. A shopper searches for "laptop bag." The broad matching returns laptop bags, laptop accessories, bags for other purposes, and laptops themselves. Because laptops are more frequently purchased than laptop bags, they rank at the top. The shopper perceives the ranking as incorrect, even though the system is working as configured. | Remove noisy searchable attributes like category paths. Once the match set is more precise, apply popularity-based ranking strategies. Monitor search analytics to identify queries where this pattern occurs. |
+| **Category path creates false positives** | A merchant makes the full category path searchable (for example, "Home > Kitchen > Appliances > Small Appliances"). A shopper searches for "home office desk." Products from the "Home" category match even if they are kitchen items, because "home" exists in their category path. Kitchen appliances, home decor, and other unrelated products appear in results, diluting relevance. | Do not make category paths searchable; use facets instead to allow shoppers to filter by category. If category filtering is critical to your search strategy, implement it through merchandising rules rather than searchable attributes. |
 
 #### Weight searchable attributes appropriately
 
