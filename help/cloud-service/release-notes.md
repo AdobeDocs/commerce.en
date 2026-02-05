@@ -27,7 +27,7 @@ The following items are currently only available in Sandbox environments of [!DN
 
 The following enhancements were made to the [!DNL Commerce Admin]:
 
-* Enhanced out-of-process shipping webhook payloads to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
+* Enhanced out-of-process [shipping webhook payloads](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
 
 * Added access to Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
 
