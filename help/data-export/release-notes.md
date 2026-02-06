@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.19 Release
 
-![Fix](../assets/fix.svg) refactoring for php 8.5. <!--MDEE-1299-->
+![Fix](../assets/fix.svg) Fixed di:compile compatibility for PHP 8.5 <!--MDEE-1299-->
 
 ## 103.4.18 Release
 
