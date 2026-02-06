@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.4.19 Release
+
+![Fix](../assets/fix.svg) refactoring for php 8.5. <!--MDEE-1299-->
+
 ## 103.4.18 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where item batches could exceed the allowed limit during updates, causing `items_limit_exceeded` errors when syncing data to [Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) or [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
