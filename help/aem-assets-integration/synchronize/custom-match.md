@@ -16,6 +16,96 @@ If the default automatic matching strategy (**OOTB automatic matching**) is not 
 
 1. When you select this matching rule, Admin displays additional fields to configure the **endpoints** and the necessary **authentication parameters** for the custom matching logic.
 
+### workspace.json
+
+The **[!UICONTROL Adobe I/O Workspace Configuration]** field provides a streamlined way to configure your custom matcher by importing your App Builder `workspace.json` configuration file.
+
+You can download the `workspace.json` file from the [Adobe Developer Console](https://developer.adobe.com/console). The file contains all the credentials and configuration details for your App Builder workspace.
+
++++Example `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. Drag and drop your `workspace.json` file from your App Builder project into the **[!UICONTROL Adobe I/O Workspace Configuration]** field. Alternatively, you can click to browse and select the file.
+
+![Workspace Configuration](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. The system automatically:
+
+   * Validates the JSON structure
+   * Extracts and populates OAuth credentials
+   * Fetches available runtime actions for the workspace
+   * Populates dropdown options for the **[!UICONTROL Product to Asset URL]** and **[!UICONTROL Asset to Product URL]** fields
+
+1. Select the appropriate runtime actions from the dropdown menus for each flow.
+
+1. Click **[!UICONTROL Save Config]**.
+
 ## Custom matcher API endpoints
 
 When you build a custom matcher application using [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, the application must expose the following endpoints:
