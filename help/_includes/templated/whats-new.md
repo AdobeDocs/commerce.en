@@ -214,7 +214,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Changed product references from “Adobe Sensei” to “Adobe AI” to reflect Adobe branding updates.</p>
+      <td><p>Changed product references from "Adobe Sensei" to "Adobe AI" to reflect Adobe branding updates.</p>
 </td>
       <td>
         Feedback

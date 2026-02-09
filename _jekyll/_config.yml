@@ -5,3 +5,5 @@ exclude:
   - Rakefile
   - tmp
   - rakelib
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
