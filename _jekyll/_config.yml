@@ -4,4 +4,7 @@ url: https://experienceleague.adobe.com/en/docs/commerce/user-guides/home
 exclude:
   - Rakefile
   - tmp
-  - rakelib
+  - Gemfile
+  - Gemfile.lock
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
