@@ -439,7 +439,7 @@ _August 9, 2022_
 * Product types that use B2B customer-specific pricing.
 +++
 
-## Catalog Service PHP extension releases
+## Catalog Service extension
 
 This section describes releases of the Catalog Service extension (`magento/catalog-service`). 
 
