@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.2.13
+
+_February 10, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACCS-171 --> Added an **[!UICONTROL Adobe I/O Workspace Configuration]** field that simplifies the [custom matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} setup. Merchants can now upload their App Builder `workspace.json` file to automatically populate OAuth credentials and runtime action endpoints.
+
 ## v1.2.12
 
 _January 29, 2026_
