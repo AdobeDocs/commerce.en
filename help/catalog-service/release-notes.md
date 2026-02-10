@@ -227,22 +227,6 @@ _August 22, 2024_
 ![Fix](../assets/fix.svg) You can now retrieve product information without product override (prices) data. In previous releases, these queries returned the following error:
 `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
 
-### V1.22 Release
-
-_August 13, 2024_
-
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
-
-![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
-
-### V1.22 Release
-
-_August 13, 2024_
-
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
-
-![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
-
 ### V1.19 Release
 
 _May 23, 2024_
