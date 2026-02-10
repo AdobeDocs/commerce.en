@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
-description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
-feature: App Builder, GraphQL, Integration, Saas
+description: Learn about the latest features, enhancements, and improvements in [!DNL Adobe Commerce as a Cloud Service], including GraphQL updates, App Builder integrations, and B2B capabilities.
+feature: App Builder, GraphQL, Integration, SaaS
 role: Admin, Developer, User, Leader
 level: Beginner
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
@@ -39,7 +39,7 @@ The following enhancements were made to the [!DNL Commerce Admin]:
 
 ### Capture custom invoice amounts through the REST API
 
-The Invoice API now supports [custom capture amounts](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) using extension attributes.  <!-- ACCS-186, ACCS-197, ACCS-143 -->
+The Invoice API now supports [custom capture amounts](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) using extension attributes. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 The following changes were made to B2B drop-in components:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
   * **[Company management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
   * **[Company switcher](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
