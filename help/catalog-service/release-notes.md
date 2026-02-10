@@ -225,11 +225,15 @@ This is a major version upgrade; verify that your environment and any custom cod
 
 _April 12, 2024_
 
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
 ![New](../assets/new.svg) Updated version and metadata for the 3.2.0 release. No other other dependency changes included in this release.
 
 ### v3.1.0
 
 _January 26, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg)  Added new package dependencies:
 
