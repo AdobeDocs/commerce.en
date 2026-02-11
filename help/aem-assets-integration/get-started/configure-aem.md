@@ -52,6 +52,19 @@ You need the following resources and permissions to deploy the `assets-commerce`
 
 * The **IMS Org ID** configured for your Commerce instance.
 
+* To enable [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) on AEM as a Cloud Service, submit an Adobe support ticket with the following information:
+
+   * Title: Enable Dynamic Media OpenAPI for a complete integration between Adobe Commerce and AEM Assets/Product Visuals powered by AEM Assets
+
+   * Content of the support ticket:
+
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
+
+   Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI capabilities on your Cloud Services environment and share the details, such as IMS Client ID, for you to proceed with the integration.
+
 ## Step 1: Install the assets-commerce package
 
 1. Navigate to the AEM Cloud Manager, select a program, and [create production and staging environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) that you want to integrate with Adobe Commerce.
