@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] Release Notes'
-description: The latest release information for [!DNL Catalog Service] for Adobe Commerce.
+title: "[!DNL Commerce Storefront Catalog Service Release Notes]"
+description: "The latest release information for [!DNL Catalog Service] for Adobe Commerce."
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 ---
-# [!DNL Catalog Service] Release Notes
+# [!DNL Commerce Storefront Catalog Service] Release Notes
 
-These release notes cover the latest Catalog Service updates, including:
+These release notes cover the latest Commerce Catalog Service updates, including:
 
 - **Storefront Catalog Service releases**
 
