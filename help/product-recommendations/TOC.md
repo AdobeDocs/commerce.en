@@ -9,6 +9,7 @@ feature: Services, Recommendations
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Product Recommendations]](overview.md)
 - [Release Notes](release-notes.md)
+- [Boundaries and Limits](boundaries-limits.md)
 - Get Started {#getting-started}
    - [Onboarding](onboarding.md)
    - [Implementation Workflow](implementation-workflow.md)
