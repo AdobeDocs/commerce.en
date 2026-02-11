@@ -6,44 +6,42 @@ exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 ---
 # [!DNL Catalog Service] Release Notes
 
-These release notes describe the latest versions of the hosted [!DNL Catalog Service] and the Catalog Service PHP extension.
-Support is provided for the current released version. Release notes for older versions are provided for reference.
-Updates include:
+These release notes cover the latest Catalog Service updates, including:
+
+- **Storefront Catalog Service releases**
+
+  - Catalog Service API schema enhancements for improved data retrieval.
+  - Security, performance, and reliability improvements for the Catalog Service API and underlying infrastructure.
+
+- **Catalog Service metapackage releases**
+
+  - Updated dependencies for improved performance, stability, and compatibility with other Adobe Commerce components.
+
+Updates are categorized by type:
 
 ![New](../assets/new.svg) New features
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-## Catalog Service
+Support is provided for the latest versions; older versions are documented for reference.
 
-These release notes cover updates to the Catalog Service for the last six months, including:
+## Storefront Catalog Service releases
 
-- Enhancements to the Catalog Service API schema, enabling new capabilities and improved catalog data retrieval.
-- System-level and infrastructure improvements that boost overall performance, reliability, and stability. While there are no direct changes to user-facing functionality, these updates provide a smoother and more robust service experience.
-
-### v1.8.29
-
-_January 29, 2026_
-
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6871, DATA-6872-->
-
-![Fix](../assets/fix.svg) <!--DATA-6924-->Fixed an issue where linked products in the API response were missing images and price range information. All linked `ComplexProductView` entries now correctly include images and price ranges.
-
-### v1.46
+### Catalog Service v1.46 release
 
 _December 11, 2025_
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6852, DATA-6864-->
 
-### v1.45
+### v1.45 release
 
 _November 17, 2025_
 
-![New](../assets/new.svg) **Attribute Filtering by Name**–GraphQL queries now support filtering product attributes by name for both simple and complex product views. <!--DATA-6823--> This update enables more efficient queries and streamlined responses:
+![New](../assets/new.svg) **Attribute Filtering by Name**–GraphQL queries now support filtering product attributes by name for simple and complex product views. <!--DATA-6823--> Enables more efficient queries and smaller responses:
 
 - Reduce response payload size by requesting only specific attributes
 - Combine with the existing `roles` filter to narrow by visibility role and attribute name
-- Examples below illustrate usage
+- Examples:
 
   **Filter by attribute names only**
 
@@ -53,7 +51,7 @@ _November 17, 2025_
       attributes(names: ["color", "size", "material"]) {
         name
         label
-       value
+        value
       }
     }
   }
@@ -78,13 +76,13 @@ _November 17, 2025_
 >
 >To retrieve all attributes without filtering, omit the `names` argument or provide an empty array.
 
-### v1.44
+### v1.44 release
 
 _November 6, 2025_
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6852, DATA-6864-->
 
-### v1.43
+### v1.43 release
 
 _November 3, 2025_
 
@@ -95,21 +93,19 @@ _November 3, 2025_
 - Control field-level overrides with Layer Masks
 - Support for premium, seasonal, and mobile-optimized content layers
 
-  After layers are defined, they are retrieved via the existing `products` query. The layers functionality is transparently integrated into the existing GraphQL API. Layers are applied server-side based on request headers. No schema changes are required.
+  Layers are retrieved via the existing `products` query, applied server-side from request headers, and require no schema changes. See [Catalog layer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) in the _Adobe Commerce Optimizer Guide_.
 
-  For details on implementing product layers, see [Catalog layer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) in the _Adobe Commerce Optimizer Guide_.
-
-![Fix](../assets/fix.svg) Fixed an issue where querying grouped products caused an error when the parent product did not have pricing configured. Child products in these grouped configurations now correctly return their own visibility roles when the parent lacks price data.<!--DATA-6779-->
+![Fix](../assets/fix.svg) Grouped products can now be queried when the parent has no pricing; child products return their own visibility roles.<!--DATA-6779-->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6721, DATA-6864-->
 
-### v1.42
+### v1.42 release
 
 _September 8, 2025_
 
-![New](../assets/new.svg) **Added Tier Pricing support** to query volume pricing:<!--DATA-6643-->
+![New](../assets/new.svg) **Tier pricing**—Query volume pricing:<!--DATA-6643-->
 
-To retrieve tier pricing information for products, follow these steps:
+To retrieve tier pricing:
 
 1. Use the `products` query with your desired SKUs
 2. For **SimpleProductView**, access `price.tiers`
@@ -139,41 +135,39 @@ query {
 
 ![Fix](../assets/fix.svg) **Tier prices filtered by minimum final price** <!--DATA-6643-->
 
-Tier prices returned by the API are now filtered so that only tiers whose discounted price is **lower than** the product's minimum final price are included. Tiers with a price greater than or equal to the minimum final price are omitted because they would never be displayed on the storefront; the minimum final price would apply instead.
+The API now returns only tiers whose discounted price is **lower than** the product's minimum final price; higher tiers are omitted because the minimum final price would apply on the storefront instead.
 
-This applies to:
+Applies to:
 
 - **Simple products**: `price.tiers` only includes tiers with `tier.amount.value` &lt; `price.final.amount.value` (minimum final).
 - **Complex products**: `priceRange.minimum.tiers` and `priceRange.maximum.tiers` use the same rule when building the price range.
 
-### v1.41
+### v1.41 release
 
 _September 2, 2025_
 
-![Fix](../assets/fix.svg) **Improve error handling for missing price information**—If a price has not been received yet, the API returns `null` for the price field instead of throwing an error. This change allows clients to handle missing price data more gracefully.<!--DATA-6612-->
+![Fix](../assets/fix.svg) **Improved error handling for missing price information**—When price data is not yet received, the API returns `null` for the price field instead of throwing an error, allowing clients to handle missing data gracefully.<!--DATA-6612-->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance, and stability.<!--DATA-6671-->
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability.<!--DATA-6671-->
 
-### v1.40
+### v1.40 release
 
 _July 30, 2025_
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6619-->
 
-### v1.39
+### v1.39 release
 
 _July 24, 2025_
 
-![New](../assets/new.svg) **Retrieve recommendation units by recommendation units**–Added a new GraphQL endpoint `recommendationsByUnitIds` to retrieve recommendation units directly by their unique ID. This enhancement streamlines integration and enables more flexible, targeted access to recommendation content for your storefront and applications.
+![New](../assets/new.svg) **Retrieve recommendation units by unit ID**–New GraphQL endpoint `recommendationsByUnitIds` retrieves recommendation units by their unique ID for more flexible, targeted access.
 
-Use the new query to retrieve one or more specific recommendation units (recIds):
-
-- `unitIds` is a required list of recommendation unit IDs (recIds) to fetch.
-- Other context parameters (currentSku, cartSkus, userViewHistory, userPurchaseHistory, category) behave the same as in the existing recommendations quer, with the same contextual inputs as the existing recommendations query.
+- `unitIds` is required (list of recIds to fetch).
+- Context parameters (`currentSku`, `cartSkus`, `userViewHistory`, `userPurchaseHistory`, `category`) behave the same as in the existing recommendations query.
 
 - **Example**
 
-  ```graphQL
+  ```graphql
   query {
     recommendationsByUnitIds(
       unitIds: ["11ee89d1-bfae-4582-a921-2ced44ff6bf7"]
@@ -192,81 +186,144 @@ Use the new query to retrieve one or more specific recommendation units (recIds)
         typeId
         storefrontLabel
         displayOrder
-      } 
-    }
-  }
-  ```
-  
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6316-->
-
-### v1.38
-
-![New](../assets/new.svg) **Added support for the Gift card product types**–Updated the Catalog Storefront Service to support product attributes as JSON objects or arrays of objects. This improvement allows for more flexible and structured management of complex product types, such as gift cards, enabling better integration with Commerce systems and easier product management.
-
-![New](../assets/new.svg) **Compute priceHierarchical price book configuration**—Added support for hierarchical price books in price range calculations.
-
-- When multiple price books are configured with parent-child relationships, the API now correctly computes price ranges by considering the hierarchy and inheritance of price rules.
-- This enhancement allows for more accurate pricing information to be returned based on complex price book setups.
-- Only supported for Adobe Commerce Optimizer deployments. For details, see [Price Books](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
-
-![New](../assets/new.svg) **Multi-select product options**–The GraphQL API now exposes whether a product option allows multiple selections. This applies to options on bundle and grouped products (for example, "choose multiple items" in a bundle).
-
-- Use the `multi` field on `ProductViewOption` to know if the option allows multiple choices.
-- When `multi` is `true`, the storefront can allow customers to select more than one value; when `false`, only a single value can be selected.
-
-- **Example:**
-
-  ```graphql
-  query {
-    products(skus: ["MY-BUNDLE-SKU"]) {
-      ... on ComplexProductView {
-        options {
-          id
-          title
-          required
-          multi
-          values {
-            id
-            title
-          }
-        }
       }
     }
   }
   ```
 
-![New](../assets/new.svg) **Case insensitive keys**—Added support for case-insensitive key lookups in queries. This enhancement allows clients to retrieve data without worrying about the exact casing of keys, improving usability and reducing errors. <!--DATA-6494, DCAT-2495-->
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6316-->
 
-![Fix](../assets/fix.svg) **Improve error handling for missing price information**—If a price has not been received yet, the API returns `null` for the price field instead of throwing an error. This change allows clients to handle missing price data more gracefully.<!--DATA-6541-->
+### v1.38 release
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability. <!--DATA-6316,DATA-6511,-DATA-6511,DATA-6511-->
+_July 15, 2025_
 
-### V1.37
+![New](../assets/new.svg) **Gift card product types**–Catalog Storefront Service now supports product attributes as JSON objects or arrays, enabling flexible management of complex types such as gift cards.<!--DATA-6573-->
 
 
+### v1.37 release
+
+_June 20, 2025_
+
+![New](../assets/new.svg) **Hierarchical price book configuration**—Accurate price ranges for parent-child price books. Calculations respect hierarchy and inherited rules; reduces pricing errors when multiple price books are linked. Adobe Commerce Optimizer only. See [Price Books](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+
+
+![New](../assets/new.svg) **Case-insensitive keys**—Key lookups in queries are now case-insensitive, reducing errors from key casing. <!--DATA-6494, DCAT-2495-->
+
+
+### v1.36 release
+
+_June 20, 2025_
+
+![New](../assets/new.svg) **Public IO Events for Catalog Storefront**—Public IO events for real-time integration and observability (CSS and EDS).<!--DATA-6329-->
+
+![New](../assets/new.svg) **Server-Side Rendering (SSR)**—Architectural improvements to support SSR for better performance, SEO, and UX on large catalogs.<!--DATA-6278, DATA-6280-->
+
+![New](../assets/new.svg) **Infrastructure & Security**—New AWS roles, ServiceNow integration, and CI/CD pipelines for the events service.
+
+![New](../assets/new.svg) **Event formats & observability**—Streamlined payloads, enhanced monitoring, improved variant event data.<!--DATA-6332, DATA-6402, -->
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6404, DATA-6410, -->
 
 ## Previous Catalog Service releases
 
 +++ Previous versions
 
-### V1.26 Release
+## General Availability release
+
+_June 13, 2025_
+
+<!--DATA-6273-->
+
+![New](../assets/new.svg) **Retrieve uncached data**–Enable the `Magento-Is-Preview` header to pass uncached data from the catalog endpoint to the Search Service.<!--DATA-6345-->
+
+![New](../assets/new.svg) **Multi-select product options**–GraphQL API now exposes whether product options allow multiple selections (e.g., bundle "choose multiple items").<!--DATA-6487-->
+
+![New](../assets/new.svg) Updated price validation on data ingestion to support products without prices.<!--DATA-6098-->
+
+![Fix](../assets/fix.svg) Improved error handling for simple bundle pricing in Adobe Commerce Optimizer, ensuring compliance with API documentation.<!--DATA-6541-->
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6273, DATA-6485, -->
+
+## v1.34 release
+
+_March 23, 2025_
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-5732-->
+
+## v1.33 release
+
+_April 29, 2025_
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements. Infrastructure now supports extremely large catalogs (up to ~440 million SKUs) without impacting existing workloads.
+
+### v1.32 release
+
+_March 28, 2025_
+
+![Fix](../assets/fix.svg) Attributes without roles are no longer indexed by default for the composable catalog, improving indexing time and reducing storage. Legacy behavior can be re-enabled via a feature flag.
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability. <!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
+
+
+### v1.31 release
+
+_February 18, 2025_
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6389, DATA-6367, DATA-6373-->
+
+### v1.30 release
+
+_October 22, 2024_
+
+Major release: [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts, header management, and product data handling.
+
+![New](../assets/new.svg) **Composable Catalog Data Model (CCDM)**—Supports customers using the composable catalog for headless storefronts. New endpoints accept Catalog View and Policy IDs (backward compatible). Configurable product details and prices with built-in pagination.<!--DATA-6018, DATA-6288-->
+
+![New](../assets/new.svg) **Header Management**–`AC-Locale` renamed to `AC-Scope-Locale` for composable catalog API operations; header mapping and default values specified.<!--DATA-6303, DATA-6078-->
+
+![New](../assets/new.svg) **Product Data & Pricing**–Support for composable catalog data model and improved price handling for configurable products.<!--DATA-6279-->
+
+`CurrencyEnum` updated to support `NONE` for product search queries, aligning with federation logic.<!--DATA-6285-->
+
+![Fix](../assets/fix.svg) **Infrastructure & upgrades**—System-level improvements for security, performance, and stability.
+
+![Fix](../assets/fix.svg) Bundle product options now display only enabled products.<!--DATA-6347-->
+
+### v1.29 release
+
+_December 9, 2024_
+
+![New](../assets/new.svg) **Image ordering in product queries**—Product images in the GraphQL `images`(roles: [String]) field now follow catalog export `sortOrder` for consistent storefront and API behavior.<!-->
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6619-->
+
+### v1.28 release
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
+
+### v1.27 release
+
+_September 26, 2024_
+
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6243-->
+
+### v1.26 release
 
 _October 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) The GraphQL schema now includes the `lastModifiedAt` attribute in the product information. This precise timestamp helps customers ensure that sitemaps accurately reflect the most recent updates to their products. It also helps search engines like Google determine when reindexing is necessary, optimizing the crawling process and preventing issues related to aggressive last modified dates used when precise information is not available. <!--DATA-6209-->
+![New](../assets/new.svg) GraphQL schema now includes `lastModifiedAt` in product information for accurate sitemaps and search-engine reindexing (e.g., Google). <!--DATA-6209-->
 
-### V1.23 Release
+### v1.23 release
 
 _August 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) You can now retrieve product information without product override (prices) data. In previous releases, these queries returned the following error:
-`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+![Fix](../assets/fix.svg) Product information can now be retrieved without product override (prices) data. Previously, these queries returned: `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
 
-### V1.22 Release
+### v1.22 release
 
 _August 13, 2024_
 
@@ -274,34 +331,34 @@ _August 13, 2024_
 
 ![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
 
-### V1.19 Release
+### v1.19 release
 
 _May 23, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 
-![Fix](../assets/fix.svg) <!--DATA-5033-->The `InStock` flag for option values now takes into account the scoped `enabled` status of the product variant.
+![Fix](../assets/fix.svg) <!--DATA-5033-->The `InStock` flag for option values now respects the scoped `enabled` status of the product variant.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Add support for product prices that require large numbers (up to 16 digits) and greater decimal precision (up to 4 decimal places). To apply the price configuration updates to your existing catalog, resync catalog data from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), or by using the [Adobe Commerce command-line interface](../landing/catalog-sync.md#command-line-interface).
+![Fix](../assets/fix.svg) <!--DATA-5888-->Added support for product prices with up to 16 digits and 4 decimal places. Resync from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) or [CLI](../landing/catalog-sync.md#command-line-interface) to apply updates.
 
 #### Known limitations
 
 The following features are not yet supported:
 
-* The maximum size for dynamic attributes payload is 9 MB.
-* The Group product price can be calculated with simple product prices.
-* In an image array, only the first image contains roles.
+- The maximum size for dynamic attributes payload is 9 MB.
+- The Group product price can be calculated with simple product prices.
+- In an image array, only the first image contains roles.
 
-Solve the following limitations by using API Mesh and the Core GraphQL API:
+Use API Mesh and the Core GraphQL API for:
 
-* Minimum Advertised Price
-* Tier pricing
-* Bundle products with fixed prices
+- Minimum Advertised Price
+- Tier pricing
+- Bundle products with fixed prices
 
-For details and examples, see [Catalog Service and API Mesh](mesh.md)
+For details and examples, see [Catalog Service and API Mesh](mesh.md).
 
-### V1.18 Release
+### v1.18 release
 
 _April 11, 2024_
 
@@ -311,15 +368,15 @@ _April 11, 2024_
 
 ![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) and [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) queries now return customizable options data for both simple and complex products.<!--DATA-5538-->
 
-### V1.17 Release
+### v1.17 release
 
 _February 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service]. Support for this feature was introduced in v3.1.0 of the `catalog-service` metapackage.
+![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) is now available for data streams (Product Recommendations, Live Search, Catalog Service). Requires `catalog-service` metapackage v3.1.0+.
 
-### V1.16 Release
+### v1.16 release
 
 _February 13, 2024_
 
@@ -332,16 +389,16 @@ _February 13, 2024_
 
 These features are not yet supported:
 
-* The maximum size for dynamic attributes payload is 9 MB.
-* Group product price. This value can be calculated with simple product prices.
-* In an image array, only the first image contains roles.
+- The maximum size for dynamic attributes payload is 9 MB.
+- Group product price. This value can be calculated with simple product prices.
+- In an image array, only the first image contains roles.
 
-The following limitations can be solved by using API Mesh and the Core GraphQL API:
+Use API Mesh and the Core GraphQL API for:
 
-* Minimum Advertised Price
-* [Tier pricing](mesh.md)
+- Minimum Advertised Price
+- [Tier pricing](mesh.md)
 
-### V1.13 Release
+### v1.13 release
 
 _October 12, 2023_
 
@@ -351,7 +408,7 @@ _October 12, 2023_
 ![New](../assets/new.svg) The `urlKey` and `externalId` fields have been added to the GraphQL schema.
 ![New](../assets/new.svg) Downloadable products and gift cards are now supported.
 
-### V1.12 Release
+### v1.12 release
 
 _September 19, 2023_
 
@@ -360,7 +417,7 @@ _September 19, 2023_
 ![New](../assets/new.svg) Catalog Service now uses [SaaS price indexing](../price-index/price-indexing.md).
 ![Fix](../assets/fix.svg) This release contains bug fixes and improvements on the service side.
 
-### V1.11 Release
+### v1.11 release
 
 _July 18, 2023_
 
@@ -368,7 +425,7 @@ _July 18, 2023_
 
 ![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
 
-### V1.10 Release
+### v1.10 release
 
 _June 27, 2023_
 
@@ -376,7 +433,7 @@ _June 27, 2023_
 
 ![New](../assets/new.svg) The Catalog Service API now supports `related products`.
 
-### V1.7 Release
+### v1.7 release
 
 _April 12, 2023_
 
@@ -385,7 +442,7 @@ _April 12, 2023_
 ![New](../assets/new.svg) Catalog Service now cleans up deleted product variants.
 ![Fix](../assets/fix.svg) Infrastructure scalability and performance improvements.
 
-### V1.6 Release
+### v1.6 release
 
 _March 28, 2023_
 
@@ -394,7 +451,7 @@ _March 28, 2023_
 ![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
 ![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
 
-### V1.5 Release
+### v1.5 release
 
 _March 6, 2023_
 
@@ -403,7 +460,7 @@ _March 6, 2023_
 ![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
 
-### V1.4 Release
+### v1.4 release
 
 _February 7, 2023_
 
@@ -412,7 +469,7 @@ _February 7, 2023_
 ![New](../assets/new.svg) Published catalog-service metapackage to simplify installation steps.
 ![Fix](../assets/fix.svg) API scalability and performance improvements.
 
-### V1.3 Release
+### v1.3 release
 
 _January 17, 2023_
 
@@ -423,7 +480,7 @@ _January 17, 2023_
 ![New](../assets/new.svg) Support added for virtual products.
 ![Fix](../assets/fix.svg) API scalability and performance improvements.
 
-### V1.1 Release
+### v1.1 release
 
 _November 18, 2022_
 
@@ -432,26 +489,26 @@ _November 18, 2022_
 ![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fix](../assets/fix.svg) Improved API scalability and overall performance.
 
-### V1.0 Release
+### v1.0 release
 
 _October 4, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![New](../assets/new.svg) Now support bundled and grouped products.
+![New](../assets/new.svg) Support for bundled and grouped products.
 ![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
 ![Fix](../assets/fix.svg) Service is now more stable and has improved performance.
 
-### 0.3 Release - Beta+
+### 0.3 release - Beta+
 
 _September 12, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![New](../assets/new.svg) Images for variants support: product images are returned based on the selected options
-![New](../assets/new.svg) Roles for prices support: allow only members of specific customer groups to see the price of products
-![Fix](../assets/fix.svg) Improved stability and performance of the service
-![New](../assets/new.svg) Updates are received when products are deleted from the catalog
+![New](../assets/new.svg) Variant images: product images returned based on selected options.
+![New](../assets/new.svg) Price roles: only members of specific customer groups can see product prices.
+![Fix](../assets/fix.svg) Improved stability and performance of the service.
+![New](../assets/new.svg) Updates are received when products are deleted from the catalog.
 
 ### Beta Release
 
@@ -461,43 +518,45 @@ _August 9, 2022_
 
 ![New](../assets/new.svg) The `products` and `refineProduct` queries return the following data:
 
-* Predefined (system) product attributes.
-* Dynamic product attributes and filter them by role (product display page/product list page).
-* Product options.
-* Product images and filter them by role (PDP/PLP).
-* A specific price for simple products and price ranges for configurable products.
-* Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
-* Product types that use B2B customer-specific pricing.
+- Predefined (system) product attributes.
+- Dynamic product attributes and filter them by role (product display page/product list page).
+- Product options.
+- Product images and filter them by role (PDP/PLP).
+- A specific price for simple products and price ranges for configurable products.
+- Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
+- Product types that use B2B customer-specific pricing.
+
++++
+
 ## Catalog Service extension
 
-This section describes updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
+Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
-### v3.3.0
+### v3.3.0 release
 
 _October 14, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) **Data Services upgrade**—Updated the dependency for `magento/data-services` to version ^8.0.0.
-This is a major version upgrade; verify that your environment and any custom code using Data Services APIs are compatible with 8.x before upgrading.
-
+![New](../assets/new.svg) **Data Services upgrade**—`magento/data-services` dependency updated to ^8.0.0. Verify environment and custom Data Services API usage for 8.x compatibility before upgrading.
+ea
 ![New](../assets/new.svg) Updated version and metadata for the 3.3.0 release.
 
-### v3.2.0
+### v3.2.0 release
 
 _April 12, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Updated version and metadata for the 3.2.0 release. No other other dependency changes included in this release.
+![New](../assets/new.svg) Version and metadata updated for 3.2.0. No other dependency changes.
 
-### v3.1.0
+### v3.1.0 release
 
 _January 26, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)  Added new package dependencies:
+![New](../assets/new.svg) Added new package dependencies:
 
 - **Category permission data exporter** (`magento/module-category-permission-data-exporter`) for exporting category permission data used by the catalog service.
 - **Catalog Sync Admin** `magento/module-catalog-sync-admin` for Admin UI and configuration related to catalog sync.
