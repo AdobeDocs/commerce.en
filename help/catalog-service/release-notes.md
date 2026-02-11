@@ -23,11 +23,11 @@ Updates are categorized by type:
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-Support is provided for the latest versions; older versions are documented for reference.
+Support is provided for the latest version. Release notes for older versions are included for reference.
 
 ## Storefront Catalog Service releases
 
-### Catalog Service v1.46 release
+### v1.46 release
 
 _December 11, 2025_
 
@@ -93,7 +93,7 @@ _November 3, 2025_
 - Control field-level overrides with Layer Masks
 - Support for premium, seasonal, and mobile-optimized content layers
 
-  Layers are retrieved via the existing `products` query, applied server-side from request headers, and require no schema changes. See [Catalog layer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) in the _Adobe Commerce Optimizer Guide_.
+  Layers are retrieved using the existing `products` query, are applied server-side from request headers, and require no schema changes. See [Catalog layer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) in the _Adobe Commerce Optimizer Guide_.
 
 ![Fix](../assets/fix.svg) Grouped products can now be queried when the parent has no pricing; child products return their own visibility roles.<!--DATA-6779-->
 
@@ -103,7 +103,7 @@ _November 3, 2025_
 
 _September 8, 2025_
 
-![New](../assets/new.svg) **Tier pricing**—Query volume pricing:<!--DATA-6643-->
+![New](../assets/new.svg) **Added Tier Pricing support** to query volume pricing:<!--DATA-6643-->
 
 To retrieve tier pricing:
 
@@ -135,7 +135,7 @@ query {
 
 ![Fix](../assets/fix.svg) **Tier prices filtered by minimum final price** <!--DATA-6643-->
 
-The API now returns only tiers whose discounted price is **lower than** the product's minimum final price; higher tiers are omitted because the minimum final price would apply on the storefront instead.
+The API now returns only tiers whose discounted price is **lower than** the product's minimum final price. Higher tiers are omitted because the minimum final price would apply on the storefront instead.
 
 Applies to:
 
@@ -206,15 +206,13 @@ _June 20, 2025_
 
 ![New](../assets/new.svg) **Hierarchical price book configuration**—Accurate price ranges for parent-child price books. Calculations respect hierarchy and inherited rules; reduces pricing errors when multiple price books are linked. Adobe Commerce Optimizer only. See [Price Books](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
-
 ![New](../assets/new.svg) **Case-insensitive keys**—Key lookups in queries are now case-insensitive, reducing errors from key casing. <!--DATA-6494, DCAT-2495-->
-
 
 ### v1.36 release
 
 _June 20, 2025_
 
-![New](../assets/new.svg) **Public IO Events for Catalog Storefront**—Public IO events for real-time integration and observability (CSS and EDS).<!--DATA-6329-->
+![New](../assets/new.svg) **Public IO Events for Catalog Storefront**—Added public IO events for real-time integration and observability (CSS and EDS).<!--DATA-6329-->
 
 ![New](../assets/new.svg) **Server-Side Rendering (SSR)**—Architectural improvements to support SSR for better performance, SEO, and UX on large catalogs.<!--DATA-6278, DATA-6280-->
 
@@ -228,15 +226,13 @@ _June 20, 2025_
 
 +++ Previous versions
 
-## General Availability release
+## v1.35 release
 
 _June 13, 2025_
 
-<!--DATA-6273-->
-
 ![New](../assets/new.svg) **Retrieve uncached data**–Enable the `Magento-Is-Preview` header to pass uncached data from the catalog endpoint to the Search Service.<!--DATA-6345-->
 
-![New](../assets/new.svg) **Multi-select product options**–GraphQL API now exposes whether product options allow multiple selections (e.g., bundle "choose multiple items").<!--DATA-6487-->
+![New](../assets/new.svg) **Multi-select product options**–GraphQL API now exposes whether product options allow multiple selections (for example, bundle "choose multiple items").<!--DATA-6487-->
 
 ![New](../assets/new.svg) Updated price validation on data ingestion to support products without prices.<!--DATA-6098-->
 
@@ -532,6 +528,10 @@ _August 9, 2022_
 
 Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
+- For Adobe Commerce as a Cloud Service customers, the latest version is installed in your environment.
+
+- For Adobe Commerce on cloud on-premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
+
 ### v3.3.0 release
 
 _October 14, 2025_
@@ -562,3 +562,19 @@ _January 26, 2024_
 - **Catalog Sync Admin** `magento/module-catalog-sync-admin` for Admin UI and configuration related to catalog sync.
 
 ![New](../assets/new.svg) Updated version and metadata for the 3.1.0 release.
+
+## Related documentation
+
+- For projects deployed on **Adobe Commerce on cloud, on-premises, or Adobe Commerce as a Cloud Service, see the following documentation:
+
+  - [Catalog Service Guide](overview.md)
+  - [Catalog Service GraphQL API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
+  - [Adobe Commerce Admin Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/)
+  - [Adobe Commerce as a Cloud Service Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
+  - [Adobe Commerce on Cloud Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+
+- For projects using **Adobe Commerce Optimizer** or **Adobe Commerce Optimizer Connector**, see the following documentation:
+
+  - [Merchandising Services Developer Guide](https://developer.adobe.com/commerce/services/optimizer/)
+  - [Merchandising GraphQL API Reference](https://developer.adobe.com/commerce/services/reference/graphql/)
+  - [Adobe Commerce Optimizer Guide](../optimizer/overview.md)
