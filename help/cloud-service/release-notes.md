@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
 description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
+feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
@@ -17,9 +18,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## February 2026 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-The following items are currently only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service]. This release is scheduled to move to Production environments on February 10, 2026.
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to Production environments of [!DNL Adobe Commerce as a Cloud Service] on February 10, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -29,11 +32,15 @@ The following enhancements were made to the [!DNL Commerce Admin]:
 
 * Enhanced out-of-process [shipping webhook payloads](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
 
-* Added access to Admin reports, including reports for Marketing, Sales, Customers, and Products. <!-- CCSAAS-3085 -->
+* Added access to Admin reports, including reports for [Customers](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports), [Marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports), [Products](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports), and [Sales](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
+
+>[!NOTE]
+>
+>Reports not available in [!DNL Adobe Commerce as a Cloud Service] are labelled as PaaS only ([!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}).
 
 ### Capture custom invoice amounts through the REST API
 
-The Invoice API now supports custom capture amounts using extension attributes. This capability allows merchants to capture a custom amount when creating an invoice using the `POST V1/order/:orderId/invoice` REST endpoint and specifying the amount in the `extension_attributes.custom_capture_amount` field of the payload. As a result, merchants have greater flexibility for partial captures and specialized payment scenarios. Contact your support representative to enable this feature. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+The Invoice API now supports [custom capture amounts](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) using extension attributes. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -73,7 +80,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 The following changes were made to B2B drop-in components:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
   * **[Company management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
   * **[Company switcher](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.

@@ -129,6 +129,16 @@ Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [S
 
 ![Pay Later Messaging](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### Server-side shipping callbacks for PayPal payment buttons
+
+PayPal, Pay Later, and Venmo payment methods use a [server-side shipping callback](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) that enables PayPal to communicate directly with your Commerce instance to retrieve shipping options and calculate totals in real time.
+
+This server-side approach allows [!DNL Payment Services] to skip the order confirmation pop-up, providing a faster, streamlined purchase experience. Because shipping costs and taxes are calculated dynamically through callbacks, the buyer sees accurate totals directly in the PayPal or Venmo review page.
+
+>[!NOTE]
+>
+>The callback endpoint must be publicly available and respond within 5 seconds. If the response time exceeds this limit, PayPal displays an error message in the pop-up. See [Test on local development environments](test-validate.md#test-on-local-development-environments) for information about testing these payment methods locally.
+
 ### Use only PayPal payment buttons
 
 To quickly get your store into production mode, you can configure _only_ PayPal payment buttons (Venmo, PayPal, and so on.)---instead of also using the PayPal credit card payment option.
