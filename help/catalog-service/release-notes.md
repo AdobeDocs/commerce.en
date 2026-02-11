@@ -111,7 +111,7 @@ To retrieve tier pricing:
 2. For **SimpleProductView**, access `price.tiers`
 3. For **ComplexProductView**, access `priceRange.minimum.tiers` and `priceRange.maximum.tiers`
 4. Each tier contains the discounted `tier` price and `quantity` conditions
-5. Define quantity thresholds with `gte` (minimum, inclusive) and `lt` (maximum, exclusive)
+5. Define quantity thresholds with `gte` (greater than or equal to) and `lt` (less than)
 
 **Example:**
 
@@ -266,7 +266,7 @@ _February 18, 2025_
 
 ### v1.30 release
 
-_October 22, 2024_
+_December 9, 2024_
 
 Major release: [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts, header management, and product data handling.
 

@@ -14,7 +14,7 @@ Install the Catalog Service to request and receive product data from a Commerce 
 >
 >If you are using Adobe Commerce as a Cloud Service, the latest version of the metapackage is available in your environment. To begin using the services, see [Getting started with the Catalog Service](get-started.md).
 >
->For Commerce implementations using the composable catalog model with Adobe Commerce Optimizer, see the [Merchandising Services Developer Guide](https://developer-stage.adobe.com/commerce/services/optimizer/).
+>For Commerce storefront implementations using Adobe Commerce Optimizer, see the [Merchandising Services Developer Guide](https://developer-stage.adobe.com/commerce/services/optimizer/).
 
 
 ## System requirements
