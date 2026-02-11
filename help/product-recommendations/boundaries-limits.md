@@ -1,6 +1,6 @@
 ---
 title: Boundaries and Limits
-description: Learn about the boundaries and limits for Product Recommendations to ensure it meets the needs of your business.
+description: Learn about the boundaries and limits for [!DNL Product Recommendations] to ensure it meets the needs of your business.
 role: Admin, Developer
 ---
 # Boundaries and limits
