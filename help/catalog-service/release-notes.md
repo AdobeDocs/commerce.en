@@ -293,7 +293,7 @@ Major release: [composable catalog data model](https://developer.adobe.com/comme
 
 _December 9, 2024_
 
-![New](../assets/new.svg) **Image ordering in product queries**—Product images in the GraphQL `images`(roles: [String]) field now follow catalog export `sortOrder` for consistent storefront and API behavior.<!-->
+![New](../assets/new.svg) **Image ordering in product queries**—Product images in the GraphQL `images` field now follow catalog export `sortOrder` for consistent storefront and API behavior.<!--DATA-6258-->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6619-->
 
