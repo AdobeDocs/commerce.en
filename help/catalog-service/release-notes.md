@@ -222,8 +222,6 @@ _June 20, 2025_
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6404, DATA-6410, -->
 
-## Previous Catalog Service releases
-
 +++ Previous versions
 
 ## v1.35 release
@@ -259,7 +257,6 @@ _March 28, 2025_
 ![Fix](../assets/fix.svg) Attributes without roles are no longer indexed by default for the composable catalog, improving indexing time and reducing storage. Legacy behavior can be re-enabled via a feature flag.
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability. <!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
-
 
 ### v1.31 release
 
@@ -524,7 +521,7 @@ _August 9, 2022_
 
 +++
 
-## Catalog Service extension
+## Catalog Service metapackage releases
 
 Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
