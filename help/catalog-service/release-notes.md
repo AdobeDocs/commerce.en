@@ -241,6 +241,10 @@ Use the new query to retrieve one or more specific recommendation units (recIds)
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability. <!--DATA-6316,DATA-6511,-DATA-6511,DATA-6511-->
 
+### V1.37
+
+
+
 ## Previous Catalog Service releases
 
 +++ Previous versions
