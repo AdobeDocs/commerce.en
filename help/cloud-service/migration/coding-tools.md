@@ -1,6 +1,6 @@
 ---
-title: AI coding tools for extensions
-description: Learn how to use the AI tools for creating Commerce App Builder extensions.
+title: AI coding developer tooling for Adobe Commerce App Builder
+description: Learn how to use the AI tools for creating Commerce App Builder applications.
 feature: App Builder, Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
@@ -8,9 +8,9 @@ level: Intermediate
 hide: yes
 hidefromtoc: yes
 ---
-# AI coding tools for extensions
+# AI coding developer tooling for Adobe Commerce App Builder
 
-When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] extensions. You can also use these tools to create new [!DNL App Builder] extensions.
+When migrating to [!DNL Adobe Commerce as a Cloud Service], you can use the AI coding tools to convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL Adobe Developer App Builder] applications. You can also use these tools to create new [!DNL App Builder] applications.
 
 The AI coding tools provide the following benefits:
 
@@ -19,10 +19,26 @@ The AI coding tools provide the following benefits:
 * **Commerce-specific features**: Specialized tools for Adobe Commerce App Builder development.
 * **Automated workflows**: Streamlined development and deployment processes.
 
+By installing the AI coding tools, you get access to:
+
+* Rules - An Adobe Commerce and App Builder specific rule set designed to guide and inform your application development.
+* Developer MCP Server
+* App Builder MCP Server
+
+## Updating to the latest version
+
+After [installing the AI coding developer tooling](#installation), you can update to the latest version by running the following command:
+
+```bash
+aio commerce extensibility tools-setup
+```
+
+This will update the tools to the latest version.
+
 ## Prerequisites
 
 * One of the following coding agents:
-   * [Cursor](https://cursor.com/download) (recommended)
+   * [Cursor](https://cursor.com/download)
    * [Github Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
@@ -78,7 +94,7 @@ The AI coding tools provide the following benefits:
     New directory
   ```
 
-  When selecting the coding agent, Adobe recommends selecting `Cursor` for the best development experience:
+  Select your preferred coding agent:
 
   ```shell-session
   ? Which coding agent would you like to use?
@@ -215,10 +231,10 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Sample prompt
 
-The following sample prompt creates an extension to send notifications when an order is placed.
+The following sample prompt creates an application to send notifications when an order is placed.
 
 ```shell-session
-Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
+Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
@@ -282,7 +298,7 @@ Consult the following resources to get started:
 
 * **Proven patterns**: Starter kits embody Adobe's best practices and architectural decisions
 * **Faster development**: Reduces time spent on boilerplate and configuration
-* **Consistency**: Ensures your extension follows established conventions
+* **Consistency**: Ensures your application follows established conventions
 * **Maintainability**: Easier to maintain and update when following standard patterns
 * **Documentation**: Starter kits come with examples and documentation
 * **Community support**: Easier to get help when using standard approaches
@@ -291,7 +307,7 @@ Consult the following resources to get started:
 
 ### Protocol
 
-The following four-phase protocol is automatically enforced by the rules system. The tools should follow this protocol automatically when developing extensions:
+The following four-phase protocol is automatically enforced by the rules system. The tools should follow this protocol automatically when developing applications:
 
 * Phase 1: Requirements analysis and clarification
   * When asked clarifying questions, provide complete answers.
@@ -308,7 +324,7 @@ For complex development involving multiple runtime actions, touchpoints, or inte
 Create a detailed implementation plan for this complex development.
 ```
 
-Complex Adobe Commerce extensions often involve:
+Complex Adobe Commerce applications often involve:
 
 * Multiple runtime actions
 * Event configuration across multiple touchpoints
@@ -523,3 +539,31 @@ Avoid the following anti-patterns when using the AI coding tools:
 * **Do not add complexity without root cause analysis** - Question unnecessary file additions and request proper investigation.
 * **Do not declare success without real data testing** - Always test with actual data, not just edge cases.
 * **Do not forget runtime cleanup** - Always clean up orphaned actions after major changes.
+
+## Providing feedback
+
+Developers who are interested in providing feedback on the AI coding tools can use the `/feedback` command.
+
+This command allows you to provide text feedback and send logs to Adobe. Any logs you send will be sanitized to remove any private or personal information.
+
+>[!TIP]
+>
+>The user experience will vary slightly depending on the IDE you are using. The following process describes the experience in Cursor.
+
+1. In your agent, type `/feedback` and select the `commerce-extensibility/feedback` command.
+
+1. Provide your feedback for the tooling in the **Feedback** field that appears at the top of the IDE and press the **Enter** key.
+
+   ![Cursor feedback command input field](../assets/feedback-response.png){width="600" zoomable="yes"}
+
+1. In the **Save Locally** field, type either `yes` or `no` and press **Enter** to indicate if you want to see a local copy of your logs before sending. This provides you the opportunity to review it and observe what is being sent.
+
+   ![Cursor feedback command save locally field](../assets/feedback-save.png){width="600" zoomable="yes"}
+
+1. If you selected **Yes** in the previous step, you can review the logs in your `chats` folder and confirm that they were automatically sanitized for all private and personal information.
+
+1. The `commerce-extensibility/feedback` command appears in your agent's chat input field. Press **Enter** or click **Send** to send your feedback to Adobe.
+
+>[!NOTE]
+>
+>If you do not see the `/feedback` command, you may need to [update to the latest version](#updating-to-the-latest-version).
