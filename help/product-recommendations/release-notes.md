@@ -27,7 +27,7 @@ These notes describe updates or known issues that were published or discovered o
 
 _February 11, 2026_
 
-![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order that the products are viewed.
+![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order that the products were viewed.
 
 _November 19, 2025_
 
