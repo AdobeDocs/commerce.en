@@ -40,7 +40,6 @@ You can also refer to the [Data Management Dashboard](https://experienceleague.a
 | Zero results rate | The percentage of unique searches that returns no results for the specified date range. For example, the zero results rate is 66.67% if the shopper searches for "fjjajfjfjf" twice (without results) and for "pants" once (with results). | **Formula:**<br />Zero results rate = Unique searches with zero results ÷ Total unique searches<br /><br />**Example:**<br />Total unique searches = 3<br />Searches with zero results = 2<br /><br />Zero results rate = 2 ÷ 3 = **66.67%** |
 | Avg. click position | The relative position of the average click-through rate based on unique searches for the specified date range. | **Formula:**<br />Average click position = Sum of click positions ÷ Total clicks<br /><br />**Example:**<br />Clicks at positions: 1, 3, 2<br /><br />Average click position = (1 + 3 + 2) ÷ 3 = **2** |
 
-## Export to Csv Report
 | Reports | Description|
 |--- |--- |
 | Unique searches | Lists the unique search queries used during the specified date range. The report data is calculated the same way as unique search snapshot data. If a shopper types the same search query twice, but more than an hour apart, the search is considered to be two unique searches. <br />**Report limit:** Top 500 terms when generating the CSV file.|
