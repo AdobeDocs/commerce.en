@@ -44,9 +44,42 @@ If you have media files stored outside of Adobe Commerce, upload them directly t
 
 ### Step 2: Build a CSV file for metadata mapping
 
-After exporiting the media files, create a CSV file to map these assets with the necessary metadata for automation. The CSV should include fields for **product**, **position**, and **role mapping**, ensuring alignment with the [AEM Assets metadata profile](configure-aem.md#configure-a-metadata-profile).
+Create a CSV file that maps each media file to its Commerce product data. Choose one of the following methods:
 
-For each media file you plan to migrate, provide values for the metadata fields included in the [AEM Assets metadata profile for Commerce assets](configure-aem.md) as described in the following table.
+* **Adobe Commerce (PaaS)**: Use the CLI command to auto-generate the CSV from your catalog
+* Manually create the CSV file
+
+#### Export metadata using CLI
+
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
+
+Use the AEM Assets Integration CLI command to automatically generate a metadata CSV file that includes image URLs, positions, and roles from the product media files stored in your Commerce  project.
+
+1. List available commands to verify the AEM Assets Integration module is installed:
+
+   ```bash
+   bin/magento list aem
+   ```
+
+   The custom extension commands appear under `aem` at the start of the command list.
+
+1. Run the metadata export command with your AEM path prefix:
+
+   ```bash
+   bin/magento aem:assets:export:csv <AEM-path-prefix>
+   ```
+
+   The `<AEM-path-prefix>` is the base folder path where your assets will be stored in AEM Assets DAM (for example, `/content/dam/commerce/`).
+
+   ```bash
+   bin/magento aem:assets:export:csv /content/dam/commerce/
+   ```
+
+   This creates a `metadata.csv` file in the `var/export` directory containing image URLs, positions, and roles for each product asset in your Commerce catalog.
+
+#### Create the CSV manually
+
+For media files stored outside Adobe Commerce, manually create the CSV file. The column headers **must match** the field names configured in your [AEM Assets metadata profile](configure-aem.md). After creating the file, populate the rows with the metadata values for each media file.
 
 | Metadata | Description | Value |
 |-------|-------------|--------|
