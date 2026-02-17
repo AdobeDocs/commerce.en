@@ -37,7 +37,7 @@ _December 11, 2025_
 
 _November 17, 2025_
 
-![New](../assets/new.svg) **Attribute Filtering by Name**–GraphQL queries now support filtering product attributes by name for simple and complex product views. <!--DATA-6823--> Enables more efficient queries and smaller responses:
+![New](../assets/new.svg) **Attribute Filtering by Name**–The `productSearch` GraphQL query now supports filtering product attributes with the `names` field. <!--DATA-6831--> With this filter, you can:
 
 - Reduce response payload size by requesting only specific attributes
 - Combine with the existing `roles` filter to narrow by visibility role and attribute name
