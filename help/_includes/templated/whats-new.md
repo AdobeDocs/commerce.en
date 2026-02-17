@@ -4,6 +4,80 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### February 13, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Improves the AEM Assets Integration documentation by clarifying requirements and adding <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI command documentation for metadata export</a>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ac880333814d9d9a45e658e2a637cd9634dbfb1f">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 11, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">Boundaries and Limits</a> for Product Recommendations, documenting supported product types, special pricing limitations, unit and filter limits, preview/API/cookie behavior, and related constraints.</p>
+</td>
+      <td>
+        Feedback, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Enhanced the v2.12.0 PAY-6227 entry to link to the new <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">server-side shipping callback</a> section, clarifying how this feature enables a faster checkout process.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/007674c3b81b95af4c0ec2688a4a98e19ec04d08">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 10, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service for the February release to production.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d559417d12151d1f390b4217bca83b9ddb65e491">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 9, 2026
 
 <table style="table-layout:auto;">
@@ -308,28 +382,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d46526db56dad08a8f865664c92d1214bbf063d8">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### December 15, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Opportunities</a> to document AI-powered site optimization recommendations through Adobe Sites Optimizer integration, including auto-detect and auto-fix workflows for improving SEO, metadata, and product data quality.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">Catalog Layers</a> to explain how to modify product data without changing source data, including layer priority management and integration with Sites Optimizer auto-fix features.</p>
-</td>
-      <td>
-        Major update, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd4447d519761f43d06f13de71c5ae97f6b103e7">commit</a></td>
     </tr>
   </tbody>
 </table>
