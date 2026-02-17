@@ -171,21 +171,15 @@ Create a service contract for the ratings api that I can pass on to the storefro
 ![AI agent creating service contract file for storefront integration](../assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Ratings API contract markdown file with endpoint and response details](../assets/contract.png){width="600" zoomable="yes"}
-<!-- 
-Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
+Return to the terminal and run the following command in the `extension` folder to copy the contract file to the `storefront` folder:
 
 ```bash
 cp RATINGS_API_CONTRACT.md ../storefront
-``` -->
+```
 
-### Next steps
-
-Now that you have the ratings API contract, you can begin building the storefront (frontend) portion of the ratings extension.
-
-<!-- 
 ## Connect to the storefront
 
-This section teaches you how to implement real storefront features and communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
+This section guides you through implementing the storefront portion of the ratings extension using [!DNL Edge Delivery Services] and AI-assisted development tools.
 
 >[!NOTE]
 >
@@ -195,7 +189,18 @@ This section teaches you how to implement real storefront features and communica
 >
 >If you encounter any issues with your code, ask the agent to help you debug it.
 
-### Ratings stars and review count implementation
+### Storefront prerequisites
+
+Before starting the storefront integration, verify the following:
+
+- You have a storefront project connected to your [!DNL Commerce] instance.
+- You have installed the commerce storefront skills using the CLI.
+
+>[!NOTE]
+>
+>The steps for setting up a storefront project and installing commerce storefront skills may change. Refer to the latest documentation for up-to-date instructions.
+
+### Set up the storefront workspace
 
 1. Navigate to the `storefront` folder:
 
@@ -205,7 +210,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. Open the storefront folder in a new Cursor window.
 
-    Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
+   Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
 
    ```bash
    cursor .
@@ -225,37 +230,84 @@ This section teaches you how to implement real storefront features and communica
 
 1. Observe the boilerplate storefront UI layout and note the lack of visual product ratings.
 
+### Integrate the ratings API
+
 1. Use the following prompt with your agent:
 
    ```shell-session
-   Implement product ratings in the storefront.
-
-   Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
-
-   Use the dropin slot system where available.
-
-   Use @RATINGS_API_CONTRACT.md to understand how to use the ratings API.
+   Integrate the ratings API into the PDP to show star ratings and a review count for products. Here's the service contract: @RATINGS_API_CONTRACT.md
    ```
+
+1. The agent assesses the task complexity and invokes a phased workflow. During **Phase 1 (Requirements Gathering)**, the agent creates a requirements document and asks clarifying questions such as:
+
+   - Where on the PDP should ratings appear?
+   - Should this be a new standalone block, or a slot customization inside the existing PDP drop-in component?
+   - What should the fallback be if the API is unavailable or returns no data?
+   - Should ratings appear on the PLP (product listing) as well, or PDP only?
+   - Are there any design specs or mockups?
+
+   Answer these questions based on your project requirements. The agent updates the requirements document and marks the phase as complete.
+
+1. During **Phase 2 (Architectural Planning)**, the agent researches documentation and your codebase before proposing an architecture. Expect the agent to:
+
+   - Search [!DNL Commerce] documentation for PDP drop-in containers, slots, and event payloads.
+   - Scan your `blocks` directory and `scripts/initializers/` folder for existing PDP-related code.
+   - Explore TypeScript definitions for available containers and slot context shapes.
+
+   The agent then presents architecture options such as:
+
+   - **Option A:** Customize an existing PDP drop-in slot to inject ratings near the product title — a lighter touch that is upgrade-friendly.
+   - **Option B:** Create a new standalone `product-ratings` block that fetches from the API independently — more flexible and decoupled.
+   - **Option C:** A hybrid approach using a new block that also listens to PDP drop-in events for the product SKU.
+
+   The plan also includes details on API integration, performance considerations (lazy loading, caching), security (input sanitization), and a testing approach.
+
+   Review the architecture plan and instruct the agent to proceed.
+
+1. During **Phase 3 (Implementation Approach)**, the agent asks you to choose between:
+
+   - **Option A:** Review a detailed implementation plan before code generation (see all files, patterns, and code structure first).
+   - **Option B:** Proceed directly to code generation.
+
+   Select your preferred approach.
+
+1. During **Phase 4 (Implementation)**, the agent generates code based on the chosen architecture. Depending on the approach, the agent uses several specialized skills:
+
+   - **Content modeling:** If a new block is needed, the agent designs an author-friendly content structure, such as a configuration table with the API endpoint URL.
+   - **Block development:** The agent creates block files following [!DNL Edge Delivery Services] conventions, including JavaScript decoration functions, scoped CSS styles, ARIA labels for accessibility, and loading and error state handling.
+   - **Drop-in customization:** If the architecture uses slot customization, the agent imports the correct container, uses a verified slot near the product title, and subscribes to product data events for the current SKU.
+
+   Watch the code being generated and ask questions or redirect the agent as needed. The agent produces a production readiness summary at the end.
+
+1. During **Phase 4.5 (Testing)**, the agent offers to test the implementation. If you accept, the agent:
+
+   - Creates a local test page with the proper scripts and styles.
+   - Starts a development server.
+   - Runs browser-based verification for visual rendering, interactivity, responsive behavior, accessibility, and performance.
+   - Generates a structured test report with the results.
+
+   Follow along in the browser to confirm the behavior and report any issues.
 
 1. Observe the changes in the codebase, and watch the Apparel page for updates.
 
    You should see the following changes in your development environment and browser:
 
-   * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
-   * Stars display with proper fill proportions based on mock rating values.
+   * A product rating component is automatically created.
+   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
+   * Stars display with proper fill proportions based on the rating values from your API.
 
-![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+   ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
 
 ## Tutorial recap
 
 Here is a summary of the topics covered in this tutorial:
 
-* **Feature implementation**: How to describe new functionality to an AI agent.
-* **Iterative changes**: Making quick modifications to existing code.
-* **Complex UI components**: Building interactive features with visual references.
-* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
-* **Component reusability**: Creating shared components used across multiple blocks.
+* **Extension development:** How to describe new functionality to an AI agent and generate a working REST API using [!DNL App Builder].
+* **Local testing and deployment:** Testing the API locally and deploying it using the MCP toolkit.
+* **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
+* **Phased storefront integration:** Working through requirements, architecture, and implementation using AI-assisted skills.
+* **Drop-in integration:** Working with [!DNL Adobe Commerce] drop-in containers and slots.
+* **Component reusability:** Creating shared components used across multiple blocks.
 
 ## Next steps
 
@@ -263,7 +315,7 @@ For further experimentation with this tutorial, use the following suggestions to
 
 ### Change the star colors
 
-Use the following prompt to your agent:
+Use the following prompt with your agent:
 
 ```shell-session
 Change the star fill color to red.
@@ -286,9 +338,9 @@ The following steps show how the agent handles complex UI features with visual r
 1. Follow these steps to create the ratings distribution modal using the reference image as a guide:
 
    * Update the API to return additional data representing the ratings distribution.
-   * Update the API Contract.
-   * Update the contact in the storefront codebase.
-   * Ask the storefront agent to use the reference image and updated API Contract to add the ratings distribution to the PDP page.
+   * Update the API contract.
+   * Update the contract in the storefront codebase.
+   * Ask the storefront agent to use the reference image and updated API contract to add the ratings distribution to the PDP page.
 
 1. Observe the following changes in the codebase, and watch the Apparel page for updates:
 
@@ -306,4 +358,3 @@ The following steps show how the agent handles complex UI features with visual r
    ```
 
 ![Rating Distribution Modal](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
- -->
