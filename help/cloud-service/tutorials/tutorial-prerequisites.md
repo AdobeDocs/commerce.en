@@ -198,10 +198,9 @@ Update the Cursor rules file and MCP configuration to include the `commerce-exte
    ```
 
    ![Terminal showing AI extensibility tools setup command output](../assets/install-ai-tools.png){width="600" zoomable="yes"}
-<!--
 ## Storefront prerequisites
 
-The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and see the product ratings in your store.
+The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and display product ratings in your store.
 
 * Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
 
@@ -210,11 +209,11 @@ The following items are required to complete the [storefront](./ratings-extensio
    npm --version
    ```
 
-* Install [Git](https://git-scm.com) (Optional) - Required only if [cloning the repository directly](#option-a-clone-the-repository-recommended)(recommended), not needed if you [download the zip file](#option-b-download-the-zip-file). Verify your installation:
+* Install [Git](https://git-scm.com). Verify your installation:
 
-  ```bash
-  git --version
-  ```
+   ```bash
+   git --version
+   ```
 
 * Bash shell
   * macOS/Linux: No installation required
@@ -222,118 +221,19 @@ The following items are required to complete the [storefront](./ratings-extensio
 
 * [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
 
-### Get the project files
+### Clone the storefront repository
 
-You can obtain the project files using one of the following methods:
-
-#### Option A: Clone the repository (recommended)
-
-If you have [!DNL Git] installed, open your terminal and clone the repository:
+Open your terminal and clone the repository:
 
 ```bash
 git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
-#### Option B: Download the zip file
+### Install dependencies
 
-If you do not have [!DNL Git] installed:
-
-1. Download the project zip file from: [https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip](https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip)
-1. Extract the zip file to a folder on your machine.
-1. Open your terminal and navigate into the unzipped folder:
-
-   ```bash
-   cd path/to/aem-boilerplate-commerce-agentic-dev
-   ```
-
-### Install root dependencies
-
-Install the main project dependencies:
+Install the project dependencies:
 
 ```bash
 npm install
 ```
-
-This will install all the necessary packages for the storefront application.
-
-### Install MCP server dependencies
-
-Navigate to the MCP server directory and install its dependencies:
-
-```bash
-cd mcp-server
-npm install
-cd ..
-```
-
-### Configure environment variables
-
-The MCP server requires certain environment variables to connect to the RAG service.
-
-Create an `.env` file in the `mcp-server` directory:
-
-```bash
-cd mcp-server
-cp env.example .env
-```
-
-Edit the `.env` file and add the following values:
-
-```env
-RAG_MODE=worker
-WORKER_RAG_URL=
-```
-
-### Enable MCP in Cursor
-
-The Model Context Protocol (MCP) server provides AI agents with access to [!DNL Adobe Commerce] Storefront documentation.
-
-#### Open Cursor MCP settings
-
-![Open Cursor MCP Settings](../assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
-
-1. Open [!DNL Cursor].
-1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**.
-
-#### Enable and configure MCP features
-
-The project includes an MCP configuration file at `.cursor/mcp.json`. This file should already be configured to use the local MCP server.
-
-Verify the MCP configuration:
-
-1. Ensure the "commerce-documentation-rag" server is listed and enabled
-
-The configuration should look similar to this:
-
-![MCP Configuration](../assets/mcp-configuration.png){width="600" zoomable="yes"}
-
->[!NOTE]
->
->The `start-mcp.sh` script will automatically load the environment variables from your `.env` file in the `mcp-server` directory.
-
-#### Restart Cursor
-
-After enabling MCP and configuring the server:
-
-1. Quit [!DNL Cursor] completely.
-1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project.
-
-#### Verify MCP connection
-
-Check that the MCP server is running correctly:
-
-1. Open a new chat in [!DNL Cursor].
-1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
-1. Try entering a prompt like the following:
-
-   ```shell-session
-   Search the storefront docs for information about slots
-   ```
-
-If the MCP server is working, you should see relevant documentation results.
-
-![MCP Connection Verified](../assets/mcp-connection-verified.png){width="600" zoomable="yes"}
-
-If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
- -->
