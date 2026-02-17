@@ -194,11 +194,7 @@ This section guides you through implementing the storefront portion of the ratin
 Before starting the storefront integration, verify the following:
 
 - You have a storefront project connected to your [!DNL Commerce] instance.
-- You have installed the commerce storefront skills using the CLI.
-
->[!NOTE]
->
->The steps for setting up a storefront project and installing commerce storefront skills may change. Refer to the latest documentation for up-to-date instructions.
+- You have installed the commerce storefront AI tools using the CLI.
 
 ### Set up the storefront workspace
 

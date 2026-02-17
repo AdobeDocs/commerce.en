@@ -15,6 +15,29 @@ hidefromtoc: yes
 
 This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md).
 
+## General prerequisites
+
+The following tools are required for both extension and storefront development in this tutorial.
+
+* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
+
+   ```bash
+   node --version
+   npm --version
+   ```
+
+* Install [Git](https://git-scm.com). Verify your installation:
+
+   ```bash
+   git --version
+   ```
+
+* Bash shell
+  * macOS/Linux: No installation required
+  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
+
 ## Adobe Commerce as a Cloud Service prerequisites
 
 * Install the [!DNL Adobe I/O CLI]
@@ -28,8 +51,6 @@ This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
-
-* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended), other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
 
 ### Adobe Developer Console prerequisites
 
@@ -198,28 +219,14 @@ Update the Cursor rules file and MCP configuration to include the `commerce-exte
    ```
 
    ![Terminal showing AI extensibility tools setup command output](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+
 ## Storefront prerequisites
 
 The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and display product ratings in your store.
 
-* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
-
-   ```bash
-   node --version
-   npm --version
-   ```
-
-* Install [Git](https://git-scm.com). Verify your installation:
-
-   ```bash
-   git --version
-   ```
-
-* Bash shell
-  * macOS/Linux: No installation required
-  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-
 * [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
+
+* A storefront project connected to your [!DNL Commerce] instance. If you do not have a storefront project, follow the steps in [Create a storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, including the [Link repo to commerce data](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"} section.
 
 ### Clone the storefront repository
 
@@ -236,4 +243,14 @@ Install the project dependencies:
 
 ```bash
 npm install
+```
+
+### Install storefront AI tools
+
+<!-- TODO: Update this section when the aio commerce CLI plugin supports a dedicated storefront tools-setup command. -->
+
+Set up the AI-assisted development tools in the `storefront` folder. Run the following command and select **[!UICONTROL Commerce Storefront]** when prompted to select a project type:
+
+```bash
+aio commerce extensibility tools-setup
 ```
