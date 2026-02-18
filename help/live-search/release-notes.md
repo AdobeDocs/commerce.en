@@ -102,7 +102,7 @@ _February 17, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Fixed an error caused by a conflict with the Visual Merchandiser extension.
+![Fix](../assets/fix.svg) Fixed an error that could occur under certain conditions related to the Visual Merchandiser extension’s functionality.
 
 ## [!DNL Live Search] 4.6.0
 
