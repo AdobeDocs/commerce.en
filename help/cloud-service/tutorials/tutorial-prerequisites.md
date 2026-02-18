@@ -1,13 +1,16 @@
 ---
-title: Ratings extension tutorial prerequisites
-description: Learn the prerequisites for the ratings extension lab.
+title: Ratings Extension Tutorial Prerequisites
+description: Learn about the prerequisites and setup steps for Adobe Commerce as a Cloud Service tutorials, including extension and storefront development tools.
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
+type: Tutorial
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension tutorial prerequisites (Beta)
+# Ratings extension tutorial prerequisites [!BADGE Beta]{type=Informative}
 
 >[!NOTE]
 >
@@ -38,7 +41,7 @@ The following tools are required for both extension and storefront development i
 
 * Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
 
-## Adobe Commerce as a Cloud Service prerequisites
+## Cloud Service prerequisites
 
 * Install the [!DNL Adobe I/O CLI]
 
@@ -54,46 +57,54 @@ The following tools are required for both extension and storefront development i
 
 ### Adobe Developer Console prerequisites
 
+Set up a project in the Adobe Developer Console with the required APIs and credentials.
+
 1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
 1. Log in using your email and password.
 
 #### Create a new project
 
+Create an App Builder project in the Adobe Developer Console to host your extension.
+
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
-1. Click [!UICONTROL **Create project from a template**].
-1. Select the [!UICONTROL **App Builder**] template.
-1. Enter a [!UICONTROL **Project Title**] and [!UICONTROL **App Name**].
+1. Click **[!UICONTROL Create project from a template]**.
+1. Select the **[!UICONTROL App Builder]** template.
+1. Enter a **[!UICONTROL Project Title]** and **[!UICONTROL App Name]**.
 1. Ensure the **[!UICONTROL Include Runtime]** checkbox is marked.
 
    ![Adobe Developer Console project creation with App Builder template selected](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Click [!UICONTROL **Save**].
+1. Click **[!UICONTROL Save]**.
 
 #### Add APIs to the workspace
 
-1. Click the [!UICONTROL **Stage**] workspace and then repeat the following steps for each API.
+Add the required APIs to your Stage workspace for event management and Commerce integration.
+
+1. Click the **[!UICONTROL Stage]** workspace and then repeat the following steps for each API.
 
    ![Stage workspace with Add Service option for APIs](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
-1. Click [!UICONTROL **Add Service**] and select [!UICONTROL **API**].
+1. Click **[!UICONTROL Add Service]** and select **[!UICONTROL API]**.
 
-1. Select one of the following APIs. You will need to repeat this process for each API listed below:
+1. Select one of the following APIs. Repeat this process for each API listed below:
 
-   * [!UICONTROL **Adobe Services**] filter:
-      * [!UICONTROL **I/O Management API**]
-      * [!UICONTROL **I/O Events**] API
-   * [!UICONTROL **Experience Cloud**] filter:
-      * [!UICONTROL **Adobe I/O Events for Adobe Commerce**] API
+   * **[!UICONTROL Adobe Services]** filter:
+      * **[!UICONTROL I/O Management API]**
+      * **[!UICONTROL I/O Events]** API
+   * **[!UICONTROL Experience Cloud]** filter:
+      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
-1. Click [!UICONTROL **Next**].
+1. Click **[!UICONTROL Next]**.
 
-1. Click[!UICONTROL **Save configured API**].
+1. Click **[!UICONTROL Save configured API]**.
 
-1. Repeat the previous steps until all APIs are added to the workspace.
+1. Repeat the previous steps until you add all APIs to the workspace.
 
    ![Workspace showing all required APIs successfully added](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Configure the Adobe I/O CLI
+
+Connect the [!DNL Adobe I/O CLI] to your organization, project, and workspace.
 
 1. Clear any existing configuration:
 
@@ -101,13 +112,13 @@ The following tools are required for both extension and storefront development i
    aio config clear
    ```
 
-   Log in using the [!DNL Adobe I/O CLI]:
+1. Log in using the [!DNL Adobe I/O CLI]:
 
    ```bash
    aio auth login -f
    ```
 
-1. Select your organization, project, and workspace, using each of the following commands:
+1. Select your organization, project, and workspace using each of the following commands:
 
    ```bash
    aio console org select
@@ -144,7 +155,7 @@ cp env.dist .env
 
 Open the `.env` file in a text editor and add the following OAuth credentials:
 
-```shell-session
+```bash
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -152,7 +163,7 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-You can copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
+Copy these values from the **[!UICONTROL Credential details]** page in [Developer Console](https://developer.adobe.com/) by clicking the **[!UICONTROL OAuth Server-to-Server]** tab on your workspace.
 
 ![OAuth Server-to-Server credentials page in Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
@@ -160,7 +171,7 @@ You can copy these values from the **[!UICONTROL Credential details]** page in [
 
 Add the following Commerce instance details to your `.env` file:
 
-```shell-session
+```bash
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -172,15 +183,15 @@ To find these values:
 1. Copy the REST endpoint as `COMMERCE_BASE_URL`.
 1. Copy the GraphQL endpoint as `COMMERCE_GRAPHQL_ENDPOINT`.
 
-#### Set event prefix
+#### Set the event prefix
 
 Set a temporary value for the event prefix:
 
-```shell-session
+```bash
 EVENT_PREFIX=test
 ```
 
-### Download workspace configuration
+### Download the workspace configuration
 
 Run the following command to download the workspace configuration file:
 
@@ -194,7 +205,7 @@ Copy the workspace configuration file to the `scripts` directory:
 cp workspace.json scripts/
 ```
 
-### Connect local workspace to remote workspace
+### Connect the local workspace to the remote workspace
 
 Link your local project to the remote workspace:
 
@@ -204,7 +215,7 @@ aio app use workspace.json -m
 
 ![Terminal showing successful workspace connection with aio app use command](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
-### Install extensibility AI tools
+### Install the extensibility AI tools
 
 Update the Cursor rules file and MCP configuration to include the `commerce-extensibility-tools` package.
 
@@ -237,7 +248,7 @@ git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-comme
 cd storefront
 ```
 
-### Install dependencies
+### Install the dependencies
 
 Install the project dependencies:
 
@@ -245,7 +256,7 @@ Install the project dependencies:
 npm install
 ```
 
-### Install storefront AI tools
+### Install the storefront AI tools
 
 <!-- TODO: Update this section when the aio commerce CLI plugin supports a dedicated storefront tools-setup command. -->
 
