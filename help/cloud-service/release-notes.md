@@ -41,7 +41,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed a GraphQL error that could prevent adding customizable gift cards to the cart. <!-- ACCS-313 -->
 
-### Infrastructure and developer improvements (TO BE DELETED)
+### Internal improvements (TO BE DELETED)
 
 The following infrastructure improvements are included:
 
