@@ -218,13 +218,13 @@ Before starting the storefront integration, verify the following:
    npm run start
    ```
 
-1. In a browser, navigate to the Apparel page:
+1. In a browser, navigate to a product page:
 
    ```shell-session
-   http://localhost:3000/apparel
+   http://localhost:3000/products/llama-plush-shortie/adb336
    ```
 
-1. Observe the boilerplate storefront UI layout and note the lack of visual product ratings.
+1. Observe the boilerplate storefront product detail page (PDP) and note the lack of visual product ratings.
 
 ### Integrate the ratings API
 
@@ -284,7 +284,7 @@ Before starting the storefront integration, verify the following:
 
    Follow along in the browser to confirm the behavior and report any issues.
 
-1. Observe the changes in the codebase, and watch the Apparel page for updates.
+1. Observe the changes in the codebase, and watch the product page for updates.
 
    You should see the following changes in your development environment and browser:
 
@@ -338,7 +338,7 @@ The following steps show how the agent handles complex UI features with visual r
    * Update the contract in the storefront codebase.
    * Ask the storefront agent to use the reference image and updated API contract to add the ratings distribution to the PDP page.
 
-1. Observe the following changes in the codebase, and watch the Apparel page for updates:
+1. Observe the following changes in the codebase, and watch the product page for updates:
 
    * How the agent interprets the visual mockup
    * Whether it uses appropriate HTML structure for accessibility
