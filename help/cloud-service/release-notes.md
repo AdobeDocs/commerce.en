@@ -53,7 +53,7 @@ The following infrastructure improvements are included:
 
 * Updated `sendAggregateDataToCortex` in ccsaas-performance-toolkit. <!-- CCSAAS-4566 -->
 
-* Improved queue behavior so messages are not requeued when the database is not found. <!-- ACCS-280 -->
+* Improved queue behavior so that messages are not requeued when the database is not found. <!-- ACCS-280 -->
 
 * Downloadable product samples are now converted to S3 URLs during MDEE data exporting. <!-- ACCS-257 -->
 
@@ -81,7 +81,7 @@ The following enhancements were made to the [!DNL Commerce Admin]:
 
 >[!NOTE]
 >
->Reports not available in [!DNL Adobe Commerce as a Cloud Service] are labelled as PaaS only ([!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}).
+>Reports not available in [!DNL Adobe Commerce as a Cloud Service] are labeled as PaaS only ([!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}).
 
 ### Capture custom invoice amounts through the REST API
 
@@ -162,7 +162,7 @@ By using [!DNL App Builder], you can gain deeper visibility into your [!DNL Adob
 
 ### Tier pricing for catalog price rules
 
-You can now combine tiered pricing discounts with catalog rule discounts using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). This enhancement allows you to create more dynamic and competitive pricing strategies—rewarding bulk purchases while applying promotional discounts at the same time. The result is greater flexibility to attract customers, increase order value, and drive conversions.<!-- See PR #708 in commerce-admin -->
+You can now combine tiered pricing discounts with catalog rule discounts using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). This enhancement allows you to create more dynamic and competitive pricing strategies, rewarding bulk purchases while applying promotional discounts at the same time. The result is greater flexibility to attract customers, increase order value, and drive conversions.<!-- See PR #708 in commerce-admin -->
 
 ### Enhancements and bug fixes
 
