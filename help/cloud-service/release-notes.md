@@ -41,24 +41,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed a GraphQL error that could prevent adding customizable gift cards to the cart. <!-- ACCS-313 -->
 
-### Internal improvements (TO BE DELETED)
-
-The following infrastructure improvements are included:
-
-* Updated [!DNL AEM Assets integration] module to versions `1.2.13` and `1.2.14`. <!-- ACCS-171 -->
-
-* Resolved an issue where `ApiMutableScopeConfig` type errors caused silent test failures and broke test isolation in the API Functional Test Framework. <!-- CCSAAS-4577 -->
-
-* Updated the base image for ccsaas-performance-toolkit. <!-- CCSAAS-4563 -->
-
-* Updated `sendAggregateDataToCortex` in ccsaas-performance-toolkit. <!-- CCSAAS-4566 -->
-
-* Improved queue behavior so that messages are not requeued when the database is not found. <!-- ACCS-280 -->
-
-* Downloadable product samples are now converted to S3 URLs during MDEE data exporting. <!-- ACCS-257 -->
-
-* Adopted Company API-Functional GraphQL tests to CCSaaS for improved pull request testing. <!-- CCSAAS-1752, CCSAAS-2121 -->
-
 {{accs-release}}
 
 >[!ENDSHADEBOX]
