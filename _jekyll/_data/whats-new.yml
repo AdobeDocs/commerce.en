@@ -2,8 +2,57 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Feb 9 14:07:43 2026
+updated: Fri Feb 13 16:47:42 2026
 entries:
+- description: Improves the AEM Assets Integration documentation by clarifying requirements
+    and adding [CLI command documentation for metadata export](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data).
+  versions: ''
+  type: feedback
+  date: February 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/412
+  merge_commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+  contributor: del
+  membership:
+  labels:
+  - feedback
+- description: Added [Boundaries and Limits](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits)
+    for Product Recommendations, documenting supported product types, special pricing
+    limitations, unit and filter limits, preview/API/cookie behavior, and related
+    constraints.
+  versions: ''
+  type: feedback, new-topic
+  date: February 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/401
+  merge_commit: 2b850e32660f1a8540bb6a024f3617994b6c13f6
+  contributor: emarr
+  membership:
+  labels:
+  - feedback
+  - new-topic
+- description: Enhanced the v2.12.0 PAY-6227 entry to link to the new [server-side
+    shipping callback](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons)
+    section, clarifying how this feature enables a faster checkout process.
+  versions: ''
+  type: feedback
+  date: February 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/411
+  merge_commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+  contributor: del
+  membership:
+  labels:
+  - feedback
+- description: Updated [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service for the February release to production.
+  versions: ''
+  type: major-update
+  date: February 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/405
+  merge_commit: d559417d12151d1f390b4217bca83b9ddb65e491
+  contributor: jhoover
+  membership:
+  labels:
+  - major-update
+  - hold for release
 - description: AEM Assets Integration v1.2.13 adds [Adobe I/O Workspace Configuration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)
     for custom matcher setup. You can upload your App Builder `workspace.json` for
     automatic validation and credential extraction, or configure manually. See the
