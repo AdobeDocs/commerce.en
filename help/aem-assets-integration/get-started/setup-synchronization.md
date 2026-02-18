@@ -16,24 +16,11 @@ After identifying the AEM Assets project, select the matching rule for synchroni
 
 For the initial setup, use the default *Match by product sku* rule.
 
-## Prerequisites
+## Requeriments
 
 * [Configure the AEM Assets project](configure-aem.md)
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
-
-* To enable [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) on AEM as a Cloud Service, submit an Adobe support ticket with the following information:
-
-   * Title: Enable Dynamic Media OpenAPI for a complete integration between Adobe Commerce and AEM Assets/Product Visuals powered by AEM Assets
-
-   * Content of the support ticket:
-
-    * **[!UICONTROL AEM Program ID]**
-    * **[!UICONTROL Adobe Commerce URL]**
-    * **[!UICONTROL AEM Environment ID]**
-    * **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
-
-   Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI capabilities on your Cloud Services environment and share the details, such as IMS Client ID, for you to proceed with the integration.
 
 ## Configure the connection
 
@@ -57,13 +44,11 @@ For the initial setup, use the default *Match by product sku* rule.
 
    Edit the configuration values by removing the selection from *[!UICONTROL Use system value]*.
 
-1. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
+1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
 
     For details about the Asset Selector, see [Manually selecting assets](../synchronize/asset-selector-integration.md)
 
 1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}  Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
-
-1. Set the **[!UICONTROL Commerce integration]** to `assets-integration` to select the Commerce Integration to use with AEM Assets.
 
 1. Set **[!UICONTROL Synchronization enabled]** to `Yes` to allow Commerce to accept incoming updates from AEM Assets.
 
