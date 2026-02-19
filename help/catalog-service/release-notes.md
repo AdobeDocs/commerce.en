@@ -27,6 +27,12 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### v1.47 release
+
+_February 12, 2025_
+
+![New](../assets/new.svg) The API service now supports the `CategoryProductView` type, enabling enhanced views and queries for products by category. This update allows developers to efficiently retrieve and filter product data based on category, improving flexibility and performance for category-driven use cases. For details, see [Implement categories on the storefront](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/). Only supported on Commerce implementations using the [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts<!--DATA-6949-->
+
 ### v1.46 release
 
 _December 11, 2025_
@@ -234,7 +240,7 @@ _June 13, 2025_
 
 ![New](../assets/new.svg) Updated price validation on data ingestion to support products without prices.<!--DATA-6098-->
 
-![Fix](../assets/fix.svg) Improved error handling for simple bundle pricing in Adobe Commerce Optimizer, ensuring compliance with API documentation.<!--DATA-6541-->
+![Fix](../assets/fix.svg) Improved error handling for simple bundle pricing in Adobe Commerce Optimizer.<!--DATA-6541-->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6273, DATA-6485, -->
 
