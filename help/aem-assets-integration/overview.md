@@ -60,9 +60,25 @@ The Adobe Commerce user configuring the integration must have access to the [IMS
 
 >[!ENDSHADEBOX]
 
+## Tutorial
+
+Watch these videos to learn how to set up and use the AEM Assets integration with Adobe Commerce.
+
+>[!BEGINTABS]
+
+>[!TAB PaaS Tutorial]
+
 Watch this video to learn how Adobe Commerce and AEM Assets work together to streamline content workflows:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447837)
+
+>[!TAB ACCS Tutorial]
+
+Learn how to use Adobe Commerce as a Cloud Service with the AEM Assets integration.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478140?quality=12&learn=on)
+
+>[!ENDTABS]
 
 ## Next steps
 

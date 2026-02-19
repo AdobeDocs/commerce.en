@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.3.0
+
+_February 17, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACCS-169 --> The **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** fields now auto-populate as dropdowns based on the user's IMS session. This eliminates manual entry and reduces configuration errors. To use this feature, the user must have a role in the [AEM delivery layer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank} and a valid [Asset Selector IMS Client ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#configure-the-connection){target=_blank} configured.
+
 ## v1.2.14
 
 _February 13, 2026_
