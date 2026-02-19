@@ -556,11 +556,11 @@ This command allows you to provide text feedback and send logs to Adobe. Any log
 
    ![Cursor feedback command input field](../assets/feedback-response.png){width="600" zoomable="yes"}
 
-1. In the **Save Locally** field, type either `yes` or `no` and press **Enter** to indicate if you want to see a local copy of your logs before sending. This provides you the opportunity to review it and observe what is being sent.
+1. In the **Save Locally** field, type either `yes` or `no` and press **Enter** to indicate if you want to save a local copy of your logs.
 
    ![Cursor feedback command save locally field](../assets/feedback-save.png){width="600" zoomable="yes"}
 
-1. If you selected **Yes** in the previous step, you can review the logs in your `chats` folder and confirm that they were automatically sanitized for all private and personal information.
+   If you selected **Yes**, you can review the logs in your `chats` folder after sending your feedback.
 
 1. The `commerce-extensibility/feedback` command appears in your agent's chat input field. Press **Enter** or click **Send** to send your feedback to Adobe.
 
