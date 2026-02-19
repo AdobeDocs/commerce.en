@@ -25,6 +25,10 @@ See the developer documentation to [learn about product support](https://experie
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
+_February 19, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order that the products were viewed.
+
 _November 19, 2025_
 
 ![New](../assets/new.svg) You can now create up to 50 active recommendation units for each page type. Previously, the limit was five.
