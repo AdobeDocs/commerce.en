@@ -91,11 +91,11 @@ By specifying a catalog view for each recommendation, you can:
 - Configure recommendations for all catalog views (global) or for one catalog view.
 - Preview and filter products by catalog view on the [create](../merchandising/recommendations/create.md) recommendation page.
 - Show only products that are available to each storefront.
-- Receive [metrics and storefront behavior](../../manage-results/recommendation-performance.md) per catalog view.
+- View metrics and storefront behavior per catalog view.
 
 ### How the catalog view filters products
 
-Product availability is enforced per catalog view even for global units. This works in addition to any [inclusion or exclusion filters](filters.md) you set on the recommendation unit.
+Product availability is enforced per catalog view even for global units. This works in addition to any [inclusion or exclusion filters](../merchandising/recommendations/filters.md) you set on the recommendation unit.
 
 **Example: global recommendation with inclusion filters**
 
