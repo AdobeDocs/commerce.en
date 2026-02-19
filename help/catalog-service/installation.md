@@ -6,11 +6,15 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Onboarding and Installation
 
-Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). The Catalog Service is delivered as a composer metapackage from the repo.magento.com repository.
+Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). The Catalog Service is delivered as a composer PHP metapackage from the repo.magento.com repository.
 
 >[!NOTE]
 >
 >If your Commerce instance uses Live Search or Product Recommendations, the Catalog Service is installed or updated automatically when you onboard or upgrade those services. For details, see the installation instructions for [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install) and [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
+>
+>If you are using Adobe Commerce as a Cloud Service, the latest version of the metapackage is available in your environment. To begin using the services, see [Getting started with the Catalog Service](get-started.md).
+>
+>For Commerce storefront implementations using Adobe Commerce Optimizer, see the [Merchandising Services Developer Guide](https://developer-stage.adobe.com/commerce/services/optimizer/).
 
 
 ## System requirements

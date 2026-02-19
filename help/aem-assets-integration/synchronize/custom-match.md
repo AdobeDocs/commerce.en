@@ -119,7 +119,7 @@ This endpoint retrieves the list of SKUs associated with a given asset:
 
 #### Example usage
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -134,8 +134,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             asset_id: params.assetId,
             product_matches: [
@@ -144,7 +147,8 @@ async function main(params) {
                     asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -154,7 +158,7 @@ exports.main = main;
 
 **Request**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
@@ -165,21 +169,28 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 **Response**
 
-```bash
+```json
 {
   "asset_id": "{ASSET_ID}",
   "product_matches": [
     {
       "product_sku": "{PRODUCT_SKU_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail", "image"]
     },
     {
       "product_sku": "{PRODUCT_SKU_2}",
       "asset_roles": ["thumbnail"]
     }
-  ]
+  ],
+  "skip": false
 }
 ```
+
+| Parameter | Data Type | Description |
+| --- | --- | --- |
+| `asset_id` | String | The asset ID being matched. |
+| `product_matches` | Array | List of products associated with the asset. |
+| `skip` | Boolean | (Optional) When `true`, the rule engine skips syncing for this asset (no product mapping update). When `false` or omitted, normal processing runs. See [Skip sync processing](#skip-sync-processing). |
 
 ### App Builder product to asset URL endpoint
 
@@ -187,7 +198,7 @@ This endpoint retrieves the list of assets associated with a given SKU:
 
 #### Example usage
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -198,8 +209,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             product_sku: params.productSku,
             asset_matches: [
@@ -209,7 +223,8 @@ async function main(params) {
                     asset_format: "image", // can be "image" or "video"
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -219,7 +234,7 @@ exports.main = main;
 
 **Request**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
@@ -230,36 +245,44 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 **Response**
 
-```bash
+```json
 {
   "product_sku": "{PRODUCT_SKU}",
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"],
+      "asset_roles": ["thumbnail", "image"],
       "asset_position": 1,
-      "asset_format": image
+      "asset_format": "image"
     },
     {
       "asset_id": "{ASSET_ID_2}",
-      "asset_roles": ["thumbnail"]
+      "asset_roles": ["thumbnail"],
       "asset_position": 2,
-      "asset_format": image     
+      "asset_format": "image"
     }
-  ]
+  ],
+  "skip": false
 }
 ```
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
-| `productSKU` | String | Represents the updated product SKU. |
-| `asset_matches` | String | Returns all assets associated with a specific product SKU. |
+| `product_sku` | String | The product SKU being matched. |
+| `asset_matches` | Array | List of assets associated with the product. |
+| `skip` | Boolean | (Optional) When `true`, the rule engine skips syncing for this product (no asset mapping update). When `false` or omitted, normal processing runs. See [Skip sync processing](#skip-sync-processing). |
 
 The `asset_matches` parameter contains the following attributes:
 
 | Attribute | Data Type | Description |
 | --- | --- | --- |
-| `asset_id` | String | Represents the updated asset ID. |
-| `asset_roles` | String | Returns all available asset roles. Uses supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`. |
-| `asset_format` | String | Provides the available formats for the asset. Possible values are `image` and `video`. |
-| `asset_position` | String | Shows the position of the asset. |
+| `asset_id` | String | The asset ID. |
+| `asset_roles` | Array | Asset roles. Uses supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`. |
+| `asset_format` | String | The asset format. Possible values are `image` and `video`. |
+| `asset_position` | Number | The position of the asset in the product gallery. |
+
+## Skip sync processing
+
+The `skip` parameter allows your custom matcher to bypass sync processing for specific assets or products.
+
+When your App Builder application returns `"skip": true` in the response, the rule engine does not send update or remove API requests to Commerce for that asset or product. This optimization reduces unnecessary API calls and improves performance.
