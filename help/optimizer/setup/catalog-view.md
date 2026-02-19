@@ -26,6 +26,16 @@ Think of catalog views as different "lenses" through which customers see your ca
 - A regional catalog view might show products and pricing specific to a geographic area
 - A brand catalog view might show only products from a particular brand
 
+### Catalog view versus catalog source
+
+The following explains the difference between a catalog view and a catalog source:
+
+- **Catalog view** – A configured view of your catalog for a specific business need. When you create a catalog view, you select which catalog source (or locale) to use, then add [policies](policies.md) to filter which products are visible and link [price books](pricebooks.md) to control pricing. A single catalog source can power many catalog views (for example, one `en-US` source with separate catalog views for different brands or regions). Think of a catalog view as *how* you expose that data to a storefront, channel, or audience.
+
+- **Catalog source** – The underlying data context that supplies product information. A catalog source is typically a locale (for example, `en-US`, `fr-CA`) or an external system such as a PIM or ERP. Adobe Commerce Optimizer ingests product data from one or more catalog sources into a unified base catalog. Think of a catalog source as *where* the raw catalog data comes from.
+
+In summary, **catalog source** is the data context you pull from; while **catalog view** is the filtered, priced, and organized context you present to shoppers or channels.
+
 ## Create a catalog view
 
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).

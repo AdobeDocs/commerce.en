@@ -6,7 +6,7 @@ exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
 ---
 # Create Synonyms
 
-Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. You can add up to 200 synonyms per store.
+Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. You can add up to 200 synonyms per catalog source.
 
 ![Synonym Workspace](../../assets/synonym-workspace.png)
 
