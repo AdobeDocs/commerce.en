@@ -16,6 +16,7 @@ feature: Services, Search
    - [Storefront Widgets](storefront-widgets.md)
    - [Product Listing Page](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
+   - [Migrate to PLP Widget](migrate-to-plp.md)
 - Admin {#live-search-admin}
    - [Performance](performance.md)
    - Facets {#facets}
