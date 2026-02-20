@@ -5,8 +5,6 @@ feature: App Builder, Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
 # AI coding developer tooling for Adobe Commerce App Builder
 
@@ -21,7 +19,7 @@ The AI coding tools provide the following benefits:
 
 By installing the AI coding tools, you get access to:
 
-* Rules - An Adobe Commerce and App Builder specific rule set designed to guide and inform your application development.
+* Skills - An Adobe Commerce and App Builder specific skill set designed to guide and inform your application development.
 * Developer MCP Server
 * App Builder MCP Server
 
@@ -86,49 +84,45 @@ This will update the tools to the latest version.
    aio commerce extensibility tools-setup
    ```
 
-  The setup process prompts you with configuration options. For the setup location, choose "Current directory" to install the tools in your current workspace:
+  The setup process prompts you with configuration options. Follow the prompts to complete the installation. The tools will be installed in the selected directory.
 
-  ```shell-session
-  ? Where would you like to setup the tools?
-  ❯ Current directory
-    New directory
-  ```
+   * Select the starter kit you want to use for your project.
 
-  Select your preferred coding agent:
+      ```shell-session
+      ? Which starter kit would you like to use?
+      ❯ Integration starter kit
+         Checkout starter kit (Coming soon)
+      ```
 
-  ```shell-session
-  ? Which coding agent would you like to use?
-  ❯ Cursor
-    Copilot
-    Gemini CLI
-    Claude Code
-  ```
+   * Select your preferred coding agent. Over 40 coding agents are supported, but if you do not see your preferred agent, you can use the `Other` option to install skills for any coding agent. Refer to your coding agent's documentation for instructions on how to configure the skills.
 
-  When selecting the package manager, Adobe recommends using `npm` for consistency:
+      ```shell-session
+      ? Which coding agent would you like to install skills for?
+      ❯ Cursor
+         Claude Code
+         GithubCopilot
+         Windsurf
+         Gemini CLI
+         OpenAI Codex
+         Cline
+         ...
+      ```
 
-  ```shell-session
-  ? Which package manager would you like to use?
-  ❯ npm
-    yarn
-  ```
+    * The installer will detect if you have NPM or Yarn installed and make the appropriate selection automatically. However, if you do not have either installed, you will prompted to select your package manager, Adobe recommends using `npm` for consistency:
+
+      ```shell-session
+      ? Which package manager would you like to use?
+      ❯ npm
+         yarn
+      ```
 
 1. After successfully installing the coding tools, the installation process configures:
 
    * MCP server integration for Adobe Commerce development
-   * Cursor IDE rules for enhanced development experience
+   * [Agent skills](#skills) for enhanced development experience
    * Commerce-specific development tools and workflows
 
-   The following files are added to your workspace:
-
-   **Cursor**
-
-     * MCP Configuration: `.cursor/mcp.json`
-     * Rules Directory: `.cursor/rules/`
-
-   **Copilot**
-
-     * MCP Configuration: `.vscode/mcp.json`
-     * Rules Directory: `.github/copilot-instructions.md`
+   The skills and MCP tools are now installed. If you do not see the skills and MCP tools, restart your coding agent.
 
 >[!NOTE]
 >
@@ -173,7 +167,7 @@ aio auth login
 
 1. Restart the Cursor IDE to load the new MCP tools and configuration.
 
-1. Verify the installation by confirming that the rules are present under the `.cursor/rules/` folder.
+1. Verify the installation by confirming that the skills are present under the `.cursor/skills/` folder.
 
 1. Enable the MCP server:
 
@@ -250,9 +244,31 @@ In addition to prompting, you can use the `/search-commerce-docs` command to sea
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
+## Skills
+
+While the skills will be automatically invoked when you chat with your coding agent, you can also invoke them manually using the following commands:
+
+* `/architect` - Designs architecture for Adobe Commerce extensions using [!DNL App Builder] and the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration). Use when planning integrations, selecting events, designing data flows, or making architectural decisions.
+* `/developer` - Implements Adobe Commerce extensions following [!DNL App Builder] patterns and the file structure. Use when generating code, updating configuration files, or implementing runtime actions.
+* `/devops-engineer` - Deploys and operates [!DNL App Builder] extensions. Use when deploying applications, configuring environments, troubleshooting deployment issues, setting up CI/CD, or resolving onboarding errors.
+* `/product-manager` - Gathers and documents requirements for Adobe Commerce extensions. Use when starting a new project, defining acceptance criteria, clarifying business objectives, or creating `REQUIREMENTS.md` documentation.
+* `/technical-writer` - Creates comprehensive documentation for [!DNL App Builder] applications. Use when writing `README.md`, user guides, API documentation, changelogs, or ensuring documentation completeness.
+* `/tester` - Creates comprehensive tests for [!DNL App Builder] applications. Use when writing unit tests, integration tests, validating security, or ensuring code quality and coverage.
+* `/tutor` (experimental) - Teaches [!DNL Adobe Commerce] application development concepts with clear explanations and examples. Use when learning [!DNL App Builder], understanding events, or needing guidance on development patterns.
+
 ## Best Practices
 
 Adobe recommends following the following best practices when using the AI coding tools:
+
+### Plan mode
+
+When chatting with your coding agent, you should select **Plan** mode to create a detailed implementation plan for your project.
+
+The method for selecting **Plan** mode varies depending on the agent you are using. Refer to your agent's documentation for instructions. For example:
+
+* [Cursor](https://cursor.com/docs/agent/modes)
+* [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Checklist
 
@@ -307,7 +323,7 @@ Consult the following resources to get started:
 
 ### Protocol
 
-The following four-phase protocol is automatically enforced by the rules system. The tools should follow this protocol automatically when developing applications:
+The following four-phase protocol is automatically enforced by the installed skills. The tools should follow this protocol automatically when developing applications:
 
 * Phase 1: Requirements analysis and clarification
   * When asked clarifying questions, provide complete answers.
