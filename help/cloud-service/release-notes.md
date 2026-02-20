@@ -16,9 +16,36 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## February 2026 {#latest}
+## February 2026 - release #2 {#latest}
 
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items are currently available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service] and will be released to Production environments on February 24, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Send context fields with commerce events
+
+[!DNL Adobe Commerce as a Cloud Service] now supports [context fields](https://developer.adobe.com/commerce/extensibility/events/context-fields/) in event payloads, allowing you to include data that is not part of the event by default. <!-- CEXT-5713 -->
+
+### Subscribe to quote item save events using a new webhook
+
+The `observer.sales_quote_item_save_before` webhook is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to run logic before a quote item is saved. <!-- ACCS-346 -->
+<!-- link to https://developer.adobe.com/commerce/extensibility/webhooks/use-cases/product-price-update/ when docs are available? -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an error that could cause display issues in the [!DNL Commerce Admin] product list. The product list now limits the number of shared catalogs displayed to improve performance. <!-- CCSAAS-1242 -->
+
+* Fixed a GraphQL error that could prevent adding customizable gift cards to the cart. <!-- ACCS-313 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## February 2026 - release #1
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
@@ -36,7 +63,7 @@ The following enhancements were made to the [!DNL Commerce Admin]:
 
 >[!NOTE]
 >
->Reports not available in [!DNL Adobe Commerce as a Cloud Service] are labelled as PaaS only ([!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}).
+>Reports not available in [!DNL Adobe Commerce as a Cloud Service] are labeled as PaaS only ([!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}).
 
 ### Capture custom invoice amounts through the REST API
 
@@ -117,7 +144,7 @@ By using [!DNL App Builder], you can gain deeper visibility into your [!DNL Adob
 
 ### Tier pricing for catalog price rules
 
-You can now combine tiered pricing discounts with catalog rule discounts using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). This enhancement allows you to create more dynamic and competitive pricing strategies—rewarding bulk purchases while applying promotional discounts at the same time. The result is greater flexibility to attract customers, increase order value, and drive conversions.<!-- See PR #708 in commerce-admin -->
+You can now combine tiered pricing discounts with catalog rule discounts using [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). This enhancement allows you to create more dynamic and competitive pricing strategies, rewarding bulk purchases while applying promotional discounts at the same time. The result is greater flexibility to attract customers, increase order value, and drive conversions.<!-- See PR #708 in commerce-admin -->
 
 ### Enhancements and bug fixes
 

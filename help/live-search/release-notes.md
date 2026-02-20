@@ -96,6 +96,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.6.1
+
+_February 19, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an error that could occur under certain conditions related to the Visual Merchandiser extension’s functionality.
+
 ## [!DNL Live Search] 4.6.0
 
 _October 9, 2025_
