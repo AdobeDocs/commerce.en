@@ -16,8 +16,9 @@ recommendations: noDisplay, noCatalog
 - [Shared responsibility](shared-responsibility.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
-  - [Bulk Data Migration Tool](migration/bulk-data.md)
-  - [Coding tools](migration/coding-tools.md)
+  - Migration tools {#migration-tools}
+    - [Bulk data migration tool](migration/bulk-data.md)
+    - [Coding tools](migration/coding-tools.md)
   - [Documentation RAG service](migration/doc-rag.md)
 - Tutorials {#tutorials}
   - [Ratings extension tutorial prerequisites](tutorials/tutorial-prerequisites.md)
