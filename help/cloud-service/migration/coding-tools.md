@@ -66,11 +66,19 @@ This will update the tools to the latest version.
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. Clone the Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
+1. Clone one of the following:
 
-   ```bash
-   git clone git@github.com:adobe/commerce-integration-starter-kit.git
-   ```
+   * Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) - for building back-office integrations.
+
+         ```bash
+         git clone git@github.com:adobe/commerce-integration-starter-kit.git
+         ```
+
+   * Commerce [checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/) for building or extending the checkout experience, including payments, shipping, and taxes.
+
+         ```bash
+         git clone git@github.com:adobe/commerce-checkout-starter-kit.git
+         ```
 
 1. Navigate to the starter kit directory:
 
@@ -91,7 +99,7 @@ This will update the tools to the latest version.
       ```shell-session
       ? Which starter kit would you like to use?
       ❯ Integration starter kit
-         Checkout starter kit (Coming soon)
+         Checkout starter kit
       ```
 
    * Select your preferred coding agent. Over 40 coding agents are supported, but if you do not see your preferred agent, you can use the `Other` option to install skills for any coding agent. Refer to your coding agent's documentation for instructions on how to configure the skills.
@@ -225,7 +233,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Sample prompt
 
-The following sample prompt creates an application to send notifications when an order is placed.
+The following sample prompt uses the integration starter kit to create an application to send notifications when an order is placed.
 
 ```shell-session
 Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
@@ -235,6 +243,19 @@ Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
 ```
+
+The following sample prompt uses the checkout starter kit to create an application that provides custom shipping methods.
+
+```shell-session
+Implement an Adobe Commerce SaaS application that provides custom shipping methods.
+The extension should:
+1. Return shipping options based on the destination postal code
+2. If postal code is in California, add an "Express California" option for $15
+3. If postal code is outside US, add an "International Standard" option for $25
+4. The carrier code should be "MYSHIP"
+```
+
+
 
 ## Prompt commands
 
@@ -248,7 +269,7 @@ In addition to prompting, you can use the `/search-commerce-docs` command to sea
 
 While the skills will be automatically invoked when you chat with your coding agent, you can also invoke them manually using the following commands:
 
-* `/architect` - Designs architecture for Adobe Commerce extensions using [!DNL App Builder] and the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration). Use when planning integrations, selecting events, designing data flows, or making architectural decisions.
+* `/architect` - Designs architecture for Adobe Commerce extensions using [!DNL App Builder] and the selected starter kit. Use when planning integrations, selecting events, designing data flows, or making architectural decisions.
 * `/developer` - Implements Adobe Commerce extensions following [!DNL App Builder] patterns and the file structure. Use when generating code, updating configuration files, or implementing runtime actions.
 * `/devops-engineer` - Deploys and operates [!DNL App Builder] extensions. Use when deploying applications, configuring environments, troubleshooting deployment issues, setting up CI/CD, or resolving onboarding errors.
 * `/product-manager` - Gathers and documents requirements for Adobe Commerce extensions. Use when starting a new project, defining acceptance criteria, clarifying business objectives, or creating `REQUIREMENTS.md` documentation.
@@ -306,6 +327,7 @@ This also allows you to leverage Adobe's templates and build upon proven pattern
 Consult the following resources to get started:
 
 * [Integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce starter kit templates](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
 * [Adobe I/O Events starter templates](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder sample applications](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
