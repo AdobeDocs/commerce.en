@@ -9,7 +9,7 @@ hide: yes
 
 # Adobe Commerce Optimizer Connector
 
-The Adobe Commerce Connector is the integration bridge that synchronizes catalog and pricing data between an existing Adobe Commerce Cloud on cloud or on-premises deployment and [!DNL Adobe Commerce Optimizer] composable catalog data model. This enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
+The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer] composable catalog data model. This enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
 >[!NOTE]
 >
@@ -17,9 +17,14 @@ The Adobe Commerce Connector is the integration bridge that synchronizes catalog
 
 ## Architecture and experience
 
-The Adobe Commerce Optimizer Connector operates by mapping Commerce store views to a Adobe Commerce Optimizer catalog source. Catalog data associated with the storeview is exported which is later used to create a channel (catalog view) and optionally define a policy to filter the catalog for a specific business use case.
+The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project:
 
-Instead of configuring and managing Commerce Services (Live Search and Product Recommendations) from the Commerce Admin, you use [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/merchandising/overview.md) to manage product discovery (Live Search) and recommendations (Product Recommendations) rule configuration.  The Adobe Commerce instance becomes the data-origin for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
+* Commerce store views are mapped to catalog sources
+* Websites are mapped to price books
+
+The associated catalog and price data is exported and later used to create catalog views and optionally define a policy to filter the catalog and price data for specific business use cases.
+
+Instead of configuring and managing Commerce Services (Live Search and Product Recommendations) from the Commerce Admin, you use [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/merchandising/overview.md) to manage product discovery (Live Search) and recommendations (Product Recommendations) rule configuration. The Adobe Commerce instance becomes the data source for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
 
 ## Workflows
 
@@ -27,7 +32,7 @@ The Connector enables several key workflows:
 
 * **Export Commerce catalog data to [!DNL Adobe Commerce Optimizer]**—price and price book data is exported at the `website` and `customer group` level. Product and product attribute data is exported at the `store view` level. By default, catalog data sync is enabled for all Commerce scopes (websites and store views).
 
-  To enable this workflow, use Composer to install the `adobe-commerce/commerce-data-export-aco-adapter` PHP extension, and then provide the IMS credentials to authenticate the connection between the Commerce project.
+  To enable this workflow, use Composer to install the `adobe-commerce/commerce-data-export-aco-adapter` PHP extension, and then provide the IMS credentials to establish the connection between the Commerce and [!DNL Adobe Commerce Optimizer] environments.
 
 * **Map the Commerce `website/store/storeview` data to export to [!DNL Adobe Commerce Optimizer]**
 
@@ -35,11 +40,11 @@ The Connector enables several key workflows:
 
 * **Merchandising rule configuration and management**
 
-  When the Connector is enabled, merchandising rules for product discovery and recommendations are defined and managed from [!DNL Adobe Commerce Optimizer] UI, not from the [!UICONTROL Live Search] and [!UICONTROL Product Recommendations] pages in the Commerce Admin.
+  When the Connector is enabled, merchandising rules for product discovery and recommendations are defined and managed from the [!DNL Adobe Commerce Optimizer] UI, not from the [!UICONTROL Live Search] and [!UICONTROL Product Recommendations] pages in the Commerce Admin.
 
 * **Deploy your Commerce Storefront on Edge Delivery Services**
 
-  After setting up the integration with [!DNL Adobe Commerce Optimizer], you can set up and deploy a Commerce Storefront on Edge Delivery services to deliver ultra-fast performance, scalability, seamless content authoring, integrated personalization, and reduced operational costs using the composable, API-driven architecture and modular components available with [!DNL Adobe Commerce Optimizer].
+  After setting up the integration with [!DNL Adobe Commerce Optimizer], you can set up and deploy a Commerce Storefront on Edge Delivery Services to deliver ultra-fast performance, scalability, seamless content authoring, integrated personalization, and reduced operational costs using the composable, API-driven architecture and modular components available with [!DNL Adobe Commerce Optimizer].
 
 ## Requirements to use the integration
 
@@ -66,23 +71,23 @@ The Adobe Commerce user configuring the integration must have:
 
 1. **Set up the Integration**
 
-   1. [Install the Commerce Connector package](#install-the-commerce-connector-package).
-
-   1. [Get the required values for configuring the Commerce Optimizer connection](#get-required-values-for-configuring-the-commerce-optimizer-connection)
+   1. [Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package).
 
    1. [Customize the data export configuration](#customize-commerce-data-export-configuration) (optional).
+
+   1. [Get the required values for configuring the Commerce Optimizer connection](#get-required-values-for-configuring-the-commerce-optimizer-connection).
 
    1. [Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration).
 
    1. [Verify that the data sync is working](#verify-that-the-data-sync-is-working).
 
-1. **[Configure [!DNL Adobe Commerce Optimizer] stores](#configure-adobe-commerce-optimizer-stores)**
+1. **[Configure [!DNL Adobe Commerce Optimizer] catalog views and policies](#configure-adobe-commerce-optimizer-stores)**
 
 1. **[Set up a Commerce Storefront on Edge Delivery Services](#set-up-a-commerce-storefront-on-edge-delivery-services)**
 
-## Install the Commerce Connector package
+## Install the Commerce Optimizer Connector package
 
-The Adobe Commerce Connector Composer metapackage is available to all Commerce merchants with an active license for [!DNL Adobe Commerce Optimizer].
+The Adobe Commerce Optimizer Connector is delivered as a Composer metapackage that is available to all Commerce merchants with an active license for [!DNL Adobe Commerce Optimizer].
 
 For detailed instructions, see [Uninstall modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions/uninstalling-modules/).
 
@@ -91,12 +96,12 @@ For detailed instructions, see [Uninstall modules](https://experienceleague.adob
 1. Add the `adobe-commerce/commerce-data-export-aco-adapter` module using Composer:
 
   ```shell
-   composer require adobe-commerce/commerce-data-export-aco-adapter
+  composer require adobe-commerce/commerce-data-export-aco-adapter
   ```
 
 1. Deploy the changes to your Adobe Commerce staging environment.
 
-  After your changes are deployed, the Commerce Optimizer Optimizer option is available in the Commerce Admin menu.
+  After your changes are deployed, the Commerce Optimizer option is available in the Commerce Admin menu.
 
 >[!NOTE]
 >
@@ -104,7 +109,7 @@ For detailed instructions, see [Uninstall modules](https://experienceleague.adob
 >
 >[Install extension on Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[Install extension on Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Get required values for configuring the Commerce Optimizer connection
 
@@ -130,11 +135,7 @@ Save the following values from your [!DNL Adobe Commerce Optimizer] instance det
 
   Get the instance ID from the URL to access your [!DNL Adobe Commerce Optimizer] instance. For example, in the URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, the instance ID is `1234567890abcdef`.
 
-* **Region—**The region where your [!DNL Adobe Commerce Optimizer] sandbox instance is hosted.
-
-  Get the region from the [!DNL Adobe Commerce Optimizer] URL. For example, in the URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, the region is `na1`.
-
-## Customize Commerce data export configuration
+## Customize the Commerce data export configuration
 
 By default, catalog data sync is enabled for all Commerce scopes (websites and store views). You can customize the export settings to sync data only for specific scopes based on your business needs. For example, if you have multiple store views but only want to export data for one of them, you can disable the exporter for the other store views.
 
@@ -158,37 +159,29 @@ The following table describes what data is exported at each scope level:
 | Disable a store view | The catalog source remains in [!DNL Adobe Commerce Optimizer], but all data is removed. |
 | Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
 
-### Configure the export configuration
+### Update the export configuration
+
+After you install the Connector package, the Store grid in the Admin now shows the export configuration settings for Commerce Optimizer.
+
+![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-sync-config.png){width="600" zoomable="yes"}
+
+**To change the settings for a website or store view:**
 
 1. In the Commerce Admin, navigate to **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL All Stores]**.
 
 1. Select the website or store view you want to configure.
 
-1. Locate the [!DNL Adobe Commerce Optimizer] exporter setting and enable or disable it as needed.
+1. In the **[!DNL Adobe Commerce Optimizer] exporter settings**, use the checkbox to enable or disable the data sync as needed.
+
+  ![Update data sync configuration](./assets/aco-connector-store-website-export-settings.png){width="600" zoomable="yes"}
 
 1. Save your changes.
-
-### Data export by scope
-
-The following table describes what data is exported at each scope level:
-
-| Scope | Data exported | Notes |
-| ------- | --------------- | ------- |
-| Website | Prices and price books | Each set of prices is exported as a [price book](../optimizer/setup/pricebooks.md) using the naming convention `website::customergroupcode`. All customer groups for the website are included. |
-| Store view | Products and product attributes | Each store view creates a separate catalog source in [!DNL Adobe Commerce Optimizer]. |
-
-### Enable and disable behavior
-
-| Action | Result |
-| -------- | -------- |
-| Disable a store view | The catalog source remains in [!DNL Adobe Commerce Optimizer], but all data is removed. |
-| Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
 
 ## Enable the [!DNL Adobe Commerce Optimizer] integration
 
 >[!IMPORTANT]
 >
->Data sync processing starts as as you run the configuration command. By default, catalog data sync is enabled for all Commerce scopes (websites and store views). Depending on the size of your catalog, the data sync process can take many hours.
+>Data sync processing starts as soon as you run the configuration command. By default, catalog data sync is enabled for all Commerce scopes (websites and store views). Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
 
 Using the API credentials and instance details you gathered in the previous steps, you can now configure the integration between your Commerce and [!DNL Adobe Commerce Optimizer] instances.
 
@@ -201,7 +194,7 @@ Using the API credentials and instance details you gathered in the previous step
 1. Run the following Commerce CLI command to configure the integration, replacing the placeholder values with the values for your Commerce Optimizer project:
 
   ```terminal
-  bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_id>> --client_id=<<your_client_id>> --client_secret=<<your_client_secret>> --region=<<na1>> --type=sandbox
+  bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_id=your-client-id --client_secret=your-secret
   ```
 
 1. Verify the connection by returning to the Commerce Admin and selecting the [!UICONTROL Adobe Commerce Optimizer] option.
@@ -210,17 +203,13 @@ Using the API credentials and instance details you gathered in the previous step
 
 ## Verify that the data sync is working
 
-You can check the data sync from both the Commerce Admin and Commerce Optimizer.
-
-* The **[Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** shows the progress of the catalog data synchronization from Commerce to Adobe Commerce Optimizer.
-
-* The **[[!UICONTROL Data Sync] page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** in Adobe Commerce Optimizer shows the catalog data transferred from your Commerce instance.
+Check the data sync from both the Commerce Admin and Commerce Optimizer.
 
 1. Verify that catalog data is flowing from Commerce to Commerce Optimizer:
 
-   From the Commerce Admin, open the [!UICONTROL Data Feed Sync Status] page by selecting [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+   From the Commerce Admin, open the [!UICONTROL Data Feed Sync Status] page by selecting **[!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]****.
 
-    ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png)
+    ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png){width="600" zoomable="yes"}
 
     If the data sync has started, the feed data shows successfully sent records. You can also view and troubleshoot sync issues by viewing the details for each feed.
 
@@ -228,15 +217,12 @@ You can check the data sync from both the Commerce Admin and Commerce Optimizer.
 
    From the Commerce Optimizer menu, select **[!UICONTROL Data Sync]** to open the Data Sync page.
 
-   ![Data Sync](./assets/data-sync.png)
+   ![Data Sync](./assets/data-sync.png){width="600" zoomable="yes"}
 
-### Troubleshooting
 
-If the data sync has not started, ensure that the catalog indexes are valid. If the indexes are invalid, run the following command from the Commerce CLI to reindex the catalog data:
-
-```terminal
-bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS to ACO catalog data synchronization.
-```
+>[!TIP]
+>
+>If you have any issues with the data sync, see the [Troubleshooting](/help/data-export/troubleshooting-logging.md) section in the *SaaS Data Export* documentation.
 
 ## Configure [!DNL Adobe Commerce Optimizer] stores
 
@@ -246,38 +232,17 @@ Note that price books are created automatically from Adobe Commerce customer gro
 
 ## Set up a Commerce Storefront on Edge Delivery Services
 
-This section provides a high-level overview of the steps required to set up your Commerce storefront. Detailed information is available in the [Adobe Commerce Storefront] (<https://experienceleague.adobe.com/developer/commerce/storefront/>) documentation site.
+This section provides a high-level overview of the steps required to set up your Commerce storefront. Detailed information is available in the [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) documentation site.
 
-1. Clone and deploy Adobe Commerce Storefront boilerplate to EDS using the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. **Clone and deploy Adobe Commerce Storefront boilerplate** using the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
-1. [Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment).
+1. **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** to run and test the storefront locally before deploying to Edge Delivery Services.
 
-1. [Install GraphQL Storefront Compatibility package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/).​
+1. **[Install GraphQL Storefront Compatibility package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/)** on your Commerce instance to ensure that the necessary GraphQL endpoints are available for the storefront to connect to.
 
-1. [Configure CORS headers for Commerce instance in cloud environment](#configure-cors-headers-for-commerce-instance).
+1. **[Configure CORS headers for Commerce instance in cloud environment](#configure-cors-headers-for-commerce-instance)** to enable GraphQL requests from an Edge Delivery storefront to your Commerce Optimizer instance.
 
-1. [Connect the storefront to Commerce data sources](#connect-the-storefront-to-commerce-data-sources).
+1. **[Connect the storefront to Commerce data sources](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)**.
 
-### Configure CORS headers for Commerce instance
-
-To allow GraphQL requests to come from an Edge Delivery Services (EDS) storefront to Adobe Commerce on cloud or on-premises environment, add specific Cross-Origin Resource Sharing (CORS) headers to the Adobe Commerce GraphQL endpoints.​ For instructions, see [CORS setup](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/) in the *Adobe Commerce Storefront* documentation.
-
-### Connect the storefront to Commerce data sources
-
-In the GitHub repository for the Storefront boilerplate code, update the storefront configuration file, `config.json` with the following parameters:
-
-* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`, for example `https://{{your store}}/graphql`.
-
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"`, for example `https://na1-sandbox.api.commerce.adobe.com/{{instanceId}}/v1/catalog​`.
-
-* `"AC-Environment-Id": "Customer organization ID"` - Get this value from the [Commerce cloud project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview).
-
-* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Get this value from the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in [!DNL Adobe Commerce Optimizer].
-
-* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — Get this value from the list of assigned price books in the [catalog view details](../optimizer/setup/catalog-view.md#view-details) in [!DNL Adobe Commerce Optimizer].
-
-* `"AC-Source-Locale": "catalogSource"`— Specify the source associated with the Commerce storeview to connect to the storefront. You can see available sources from the [Data Sync](../optimizer/setup/data-sync.md) page in [!DNL Adobe Commerce Optimizer].
-
-For more information, see [Storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/) in the *Adobe Commerce Storefront* documentation.
 
 
