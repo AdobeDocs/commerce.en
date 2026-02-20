@@ -106,7 +106,7 @@ You can edit, deactivate, or delete an existing recommendation.
    - Number of products
    - Filter products
 
-   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation; see [Configure recommendations by global or catalog view](#configure-recommendations-by-global-or-catalog-view).
+   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation; see [select catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) to learn more.
 
 1. When complete, click **Save Changes**.
 
