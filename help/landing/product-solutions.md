@@ -11,6 +11,10 @@ exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
 
 Adobe offers several solutions to meet the requirements of your ecommerce business. The Adobe Commerce documentation on [Experience League](https://experienceleague.adobe.com/en/docs/commerce) and the [Adobe Developer](https://developer.adobe.com/commerce/docs/) site provides customers with self-service resources that support all solutions. However, navigating such a large volume of content can be challenging without guidance.
 
+>[!NOTE]
+>
+>For more information on available features in [!DNL Adobe Commerce as a Cloud Service] (SaaS) and how those features align with other versions of Adobe Commerce, such as [!DNL Adobe Commerce on Cloud] and [!DNL Adobe Commerce on Premises] (PaaS), see the [Feature comparison](../cloud-service/feature-comparison.md).
+
 ## Badges
 
 Badges help you quickly identify whether the Commerce documentation that you find through conventional site navigation or internet search is relevant to the Commerce product solutions that you use. This is particularly important when content applies to one solution only.
