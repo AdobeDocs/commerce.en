@@ -218,11 +218,7 @@ If issues persist:
 
 ## Next steps
 
-After you setup and verify your storefront, you can:
-
-1. **[Install Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)**-Browser extension for editing, previewing, and publishing content directly from your website.
-
-2. **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Create a local environment to customize your storefront code and content.
+**[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Create a local environment to customize your storefront code and content.
 
 ### Learn and explore
 
