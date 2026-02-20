@@ -92,7 +92,7 @@ This will update the tools to the latest version.
    aio commerce extensibility tools-setup
    ```
 
-  The setup process prompts you with configuration options. Follow the prompts to complete the installation. The tools will be installed in the selected directory.
+   The setup process prompts you with configuration options. Follow the prompts to complete the installation. The tools will be installed in the selected directory.
 
    * Select the starter kit you want to use for your project.
 
@@ -116,7 +116,7 @@ This will update the tools to the latest version.
          ...
       ```
 
-    * The installer will detect if you have NPM or Yarn installed and make the appropriate selection automatically. However, if you do not have either installed, you will prompted to select your package manager, Adobe recommends using `npm` for consistency:
+   * The installer will detect if you have NPM or Yarn installed and make the appropriate selection automatically. However, if you do not have either installed, you will prompted to select your package manager, Adobe recommends using `npm` for consistency:
 
       ```shell-session
       ? Which package manager would you like to use?
