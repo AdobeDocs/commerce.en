@@ -302,9 +302,9 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
    You should see the following changes in your development environment and browser:
 
-   * A product rating component is automatically created.
-   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
-   * Stars display with proper fill proportions based on the rating values from your API.
+   - A product rating component is automatically created.
+   - The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
+   - Stars display with proper fill proportions based on the rating values from your API.
 
    ![Product detail page showing star ratings integrated below the product title](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
 
@@ -312,12 +312,12 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
 Here is a summary of the topics covered in this tutorial:
 
-* **Extension development:** How to describe new functionality to an AI agent and generate a working REST API using [!DNL App Builder].
-* **Local testing and deployment:** Testing the API locally and deploying it using the MCP toolkit.
-* **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
-* **Phased storefront integration:** Working through requirements, architecture, and implementation using AI-assisted skills.
-* **Drop-in integration:** Working with [!DNL Adobe Commerce] drop-in containers and slots.
-* **Component reusability:** Creating shared components used across multiple blocks.
+- **Extension development:** How to describe new functionality to an AI agent and generate a working REST API using [!DNL App Builder].
+- **Local testing and deployment:** Testing the API locally and deploying it using the MCP toolkit.
+- **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
+- **Phased storefront integration:** Working through requirements, architecture, and implementation using AI-assisted skills.
+- **Drop-in integration:** Working with [!DNL Adobe Commerce] drop-in containers and slots.
+- **Component reusability:** Creating shared components used across multiple blocks.
 
 ## Next steps
 
@@ -347,23 +347,23 @@ The following steps show how the agent handles complex UI features with visual r
 
 1. Follow these steps to create the ratings distribution modal using the reference image as a guide:
 
-   * Update the API to return additional data representing the ratings distribution.
-   * Update the API contract.
-   * Update the contract in the storefront codebase.
-   * Ask the storefront agent to use the reference image and updated API contract to add the ratings distribution to the PDP page.
+   - Update the API to return additional data representing the ratings distribution.
+   - Update the API contract.
+   - Update the contract in the storefront codebase.
+   - Ask the storefront agent to use the reference image and updated API contract to add the ratings distribution to the PDP page.
 
 1. Observe the following changes in the codebase, and watch the product page for updates:
 
-   * How the agent interprets the visual mockup
-   * Whether it uses appropriate HTML structure for accessibility
-   * How it handles the positioning and interaction states
+   - How the agent interprets the visual mockup
+   - Whether it uses appropriate HTML structure for accessibility
+   - How it handles the positioning and interaction states
 
 #### Troubleshoot the distribution modal
 
 If the modal does not behave as expected, try the following:
 
-* If the modal does not appear, check the browser console for errors.
-* If positioning is off, ask the agent to fix it using the following format:
+- If the modal does not appear, check the browser console for errors.
+- If positioning is off, ask the agent to fix it using the following format:
 
    ```shell-session
    adjust the modal position to be...
