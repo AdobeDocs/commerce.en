@@ -123,7 +123,7 @@ This section guides you through developing a shipping method extension for [!DNL
 
    ![Cursor indexing and docs settings with documentation list empty](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
-1. Give the agent access to the mock rates API specification, so it can implement the client correctly. You can <a href="mock-rates-api-spec.md" download="mock-rates-api-spec.md">download the full specification</a> and add it to your project (for example `docs/mock-rates-api-spec.md`), then reference that file in your prompt.
+1. Give the agent access to the mock rates API specification, so it can implement the client correctly. You can <a href="../assets/mock-rates-api-spec.md" download="mock-rates-api-spec.md">download the full specification</a> and add it to your project (for example `docs/mock-rates-api-spec.md`), then reference that file in your prompt.
 
    >[!NOTE]
    >
