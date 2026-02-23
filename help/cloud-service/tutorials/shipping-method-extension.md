@@ -1,21 +1,15 @@
 ---
 title: Shipping method extension tutorial
-description: Learn how to build a configurable shipping method extension for Adobe Commerce as a Cloud Service using App Builder, the Checkout Starter Kit, and AI-assisted development tools.
+description: Learn how to build a configurable shipping method extension for Adobe Commerce as a Cloud Service using App Builder, the checkout starter kit, and AI-assisted development tools.
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
-# Shipping method extension tutorial (Beta)
+# Shipping method extension tutorial
 
->[!NOTE]
->
->The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
+This tutorial guides you through building a shipping method extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder], the **checkout starter kit**, and AI-assisted development tools. The extension adds a configurable shipping method at checkout: rates come from an external mock shipping rates service. Merchants configure the service URL, API key, and warehouse (ship-from) address in the Admin UI, and at checkout the extension requests rates from that service and displays the returned options to the customer.
 
-This tutorial guides you through building a shipping method extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder], the **Checkout Starter Kit**, and AI-assisted development tools. The extension adds a configurable shipping method at checkout: rates come from an external mock shipping rates service. Merchants configure the service URL, API key, and warehouse (ship-from) address in the Admin UI, and at checkout the extension requests rates from that service and displays the returned options to the customer.
-
-Before you begin, complete the [prerequisites](./shipping-tutorial-prerequisites.md).
+Before you begin, complete the [prerequisites](./tutorial-prerequisites.md).
 
 ## Verify prerequisites
 
@@ -35,13 +29,99 @@ git --version
 bash --version
 ```
 
-If any of the preceding commands do not return the expected results, refer to the [prerequisites](shipping-tutorial-prerequisites.md) for guidance.
+If any of the preceding commands do not return the expected results, refer to the [prerequisites](tutorial-prerequisites.md) for guidance.
 
-Create the mock shipping rates API before you start, so you have the Service URL and API key ready when you configure the extension in the Admin UI. Follow [Create the mock shipping rates API](./shipping-tutorial-prerequisites.md#create-the-mock-shipping-rates-api) in the prerequisites.
+## Create the mock shipping rates API
+
+After completing the [prerequisites](./tutorial-prerequisites.md), create the mock shipping rates API before you start, so you have the Service URL and API key ready when you configure the extension in the Admin UI. The extension calls an external shipping rates API. For this tutorial you use a **mock** API allowing you to run the flow without a real carrier account. You will create the mock using [Pipedream](https://pipedream.com) (free account required). The mock uses a request/response contract that is close enough to typical real shipping rates APIs, so connecting this extension to a real provider later should be straightforward.
+
+**Time:** about 5–10 minutes.
+
+### Step 1: Create a workflow and HTTP trigger
+
+1. Go to [pipedream.com](https://pipedream.com) and sign up or log in.
+1. Click **New workflow** (or **Add workflow**).
+1. For the trigger, select **HTTP / Webhook**.
+1. In the trigger configuration, set **HTTP Response** to **Return a custom response from your workflow**. This allows the Code step to send the mock JSON response.
+1. Pipedream shows a unique **HTTP endpoint URL** (for example, `https://xxxxx.m.pipedream.net`).
+1. **Copy this URL** — you will use it as the **Service URL** in the extension configuration.
+
+   ![Pipedream workflow with HTTP/Webhook trigger and endpoint URL visible](../assets/mock-api-trigger.png){width="600" zoomable="yes"}
+
+You do not need to configure **Authorization** on the trigger; the mock validates the `API-Key` header in the Code step.
+
+### Step 2: Add the Code step
+
+1. Click **+** to add a step.
+1. Choose **Run Node.js code** (Code step).
+1. **Replace** the default code with the following block (copy from `export default` through the closing `});`).
+1. Click **Save** or **Deploy**.
+
+```javascript
+export default defineComponent({
+  async run({ steps, $ }) {
+    const event = steps.trigger.event;
+    const body = event.body ?? {};
+    const headers = event.headers ?? {};
+    const apiKey = headers["api-key"] ?? body.api_key ?? "";
+
+    if (!apiKey || String(apiKey).trim() === "") {
+      await $.respond({
+        immediate: true,
+        status: 401,
+        headers: { "Content-Type": "application/json" },
+        body: { error: "Missing or invalid API-Key header" },
+      });
+      return;
+    }
+
+    const shipment = body.shipment;
+    if (!shipment || typeof shipment !== "object") {
+      await $.respond({
+        immediate: true,
+        status: 400,
+        headers: { "Content-Type": "application/json" },
+        body: { error: "Missing or invalid shipment" },
+      });
+      return;
+    }
+
+    const rates = [
+      {
+        service_code: "mock_standard",
+        service_name: "Mock Standard",
+        carrier_friendly_name: "Mock Carrier",
+        shipping_amount: { amount: 5.99 },
+        shipment_cost: 5.99,
+        cost: 5.99,
+      },
+      {
+        service_code: "mock_express",
+        service_name: "Mock Express",
+        carrier_friendly_name: "Mock Carrier",
+        shipping_amount: { amount: 12.99 },
+        shipment_cost: 12.99,
+        cost: 12.99,
+      },
+    ];
+
+    await $.respond({
+      immediate: true,
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+      body: { rates },
+    });
+  },
+});
+```
+
+![Pipedream Code step with mock shipping rates script](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
+
+The mock returns two rate options (Mock Standard and Mock Express) for any valid request that includes a non-empty `API-Key` header and a `shipment` object. Keep the Pipedream workflow URL and your chosen API key (for example, `tutorial-key`) handy for when you configure the extension in the Admin UI during the tutorial.
 
 ## Extension development
 
-This section guides you through developing a shipping method extension for Adobe Commerce as a Cloud Service using the Checkout Starter Kit and AI-assisted development tools.
+This section guides you through developing a shipping method extension for Adobe Commerce as a Cloud Service using the checkout starter kit and AI-assisted development tools.
 
 1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** and verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
 
@@ -88,7 +168,7 @@ This section guides you through developing a shipping method extension for Adobe
 
    ![Cursor chat window in Agent mode with shipping extension prompt entered](../assets/enter-prompt-shipping.png){width="600" zoomable="yes"}
 
-1. Answer the agent's questions precisely to help it generate the best code. If the agent asks which kit or template to use, direct it to the **Checkout Starter Kit** with the shipping domain and Admin UI extension so that both the shipping webhook and the merchant configuration screen are implemented.
+1. Answer the agent's questions precisely to help it generate the best code. If the agent asks which kit or template to use, direct it to the **checkout starter kit** with the shipping domain and Admin UI extension so that both the shipping webhook and the merchant configuration screen are implemented.
 
    The agent may create a `requirements.md` (or equivalent) file that serves as the source of truth for the implementation.
 
@@ -113,7 +193,7 @@ This section guides you through developing a shipping method extension for Adobe
 
 ### Cleanup before deploy
 
-Before deploying, remove code that the application does not need. The Checkout Starter Kit may include unused domains (for example payment, tax, or events) and scaffolding. Have the agent remove them and keep only the shipping and Admin UI parts by using a prompt such as:
+Before deploying, remove code that the application does not need. The checkout starter kit may include unused domains (for example payment, tax, or events) and scaffolding. Have the agent remove them and keep only the shipping and Admin UI parts by using a prompt such as:
 
    ```shell-session
    Proceed with Phase 5 cleanup.
@@ -199,7 +279,7 @@ Here is a summary of the topics covered in this tutorial:
 
 - **Prerequisites and setup:** Verifying tools and creating the mock shipping rates API.
 - **Agent-driven development:** Using the commerce-extensibility toolset to generate requirements, an implementation plan, and code for the shipping webhook and Admin UI.
-- **Phase 5 cleanup:** Removing unused Checkout Starter Kit domains and scaffolding before deploy.
+- **Phase 5 cleanup:** Removing unused checkout starter kit domains and scaffolding before deploy.
 - **Deployment:** Pre-deployment assessment and MCP toolkit deploy.
 - **Post-deployment configuration:** Registering the MOCK carrier, configuring the Commerce webhook, enabling the Admin UI SDK extension, and setting Mock Shipping (service URL, API key, warehouse) in the Admin UI.
 - **Verification:** Confirming mock shipping options appear at checkout.
