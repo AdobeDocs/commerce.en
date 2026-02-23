@@ -4,8 +4,6 @@ This document describes the **mock shipping rates API** used in the tutorial. Th
 
 **Audience:** Use this spec to implement a client that calls this API, or a server (e.g. Pipedream workflow, Beeceptor rules, or custom backend) that implements it. The spec can be passed to an agent or tool to generate integration code.
 
----
-
 ## Overview
 
 | Item | Value |
@@ -16,16 +14,12 @@ This document describes the **mock shipping rates API** used in the tutorial. Th
 | **Authentication** | API key passed in the `API-Key` HTTP header. Any non-empty value is accepted by the tutorial mock. |
 | **Request/response** | JSON; `Content-Type: application/json`. |
 
----
-
 ## Authentication
 
 - **Type:** API key in header.
 - **Header name:** `API-Key` (case-sensitive for the client; some servers normalize headers to lowercase).
 - **Value:** Any non-empty string for the tutorial mock (e.g. `tutorial-key`). A real provider uses a live API key.
 - **If missing or empty:** Server MUST respond with `401 Unauthorized` and a JSON body (e.g. `{ "error": "Missing or invalid API-Key header" }`).
-
----
 
 ## Endpoint: Get shipping rates
 
@@ -105,8 +99,6 @@ This document describes the **mock shipping rates API** used in the tutorial. Th
 }
 ```
 
----
-
 ## Response
 
 ### Success: 200 OK
@@ -159,8 +151,6 @@ At least one of the following cost fields MUST be present so the client can deri
 }
 ```
 
----
-
 ## Error responses
 
 All error responses MUST use `Content-Type: application/json` and a JSON body. Suggested fields: `error` (string, human-readable message).
@@ -170,8 +160,6 @@ All error responses MUST use `Content-Type: application/json` and a JSON body. S
 | **400 Bad Request** | Missing or invalid `shipment` (e.g. not an object). | `{ "error": "Missing or invalid shipment" }` |
 | **401 Unauthorized** | Missing or empty `API-Key` header. | `{ "error": "Missing or invalid API-Key header" }` |
 | **500 Internal Server Error** | Server error (optional; mock may omit). | `{ "error": "Internal server error" }` |
-
----
 
 ## Summary for integration
 

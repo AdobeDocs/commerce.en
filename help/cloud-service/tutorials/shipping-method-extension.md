@@ -197,12 +197,12 @@ After deployment, complete the following steps to register the MOCK carrier, con
 
 Here is a summary of the topics covered in this tutorial:
 
-* **Prerequisites and setup:** Verifying tools and creating the mock shipping rates API.
-* **Agent-driven development:** Using the commerce-extensibility toolset to generate requirements, an implementation plan, and code for the shipping webhook and Admin UI.
-* **Phase 5 cleanup:** Removing unused Checkout Starter Kit domains and scaffolding before deploy.
-* **Deployment:** Pre-deployment assessment and MCP toolkit deploy.
-* **Post-deployment configuration:** Registering the MOCK carrier, configuring the Commerce webhook, enabling the Admin UI SDK extension, and setting Mock Shipping (service URL, API key, warehouse) in the Admin UI.
-* **Verification:** Confirming mock shipping options appear at checkout.
+- **Prerequisites and setup:** Verifying tools and creating the mock shipping rates API.
+- **Agent-driven development:** Using the commerce-extensibility toolset to generate requirements, an implementation plan, and code for the shipping webhook and Admin UI.
+- **Phase 5 cleanup:** Removing unused Checkout Starter Kit domains and scaffolding before deploy.
+- **Deployment:** Pre-deployment assessment and MCP toolkit deploy.
+- **Post-deployment configuration:** Registering the MOCK carrier, configuring the Commerce webhook, enabling the Admin UI SDK extension, and setting Mock Shipping (service URL, API key, warehouse) in the Admin UI.
+- **Verification:** Confirming mock shipping options appear at checkout.
 
 ### Next steps
 

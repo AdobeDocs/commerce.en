@@ -140,9 +140,9 @@ The setup creates the MCP configuration (`.cursor/mcp.json`), the skills directo
    ```
 
 1. When prompted, select the following:
-   - **Which starter kit would you like to use?** — **Checkout Starter Kit**
-   - **Which coding agent would you like to install the skills for?** — **Cursor**
-   - **Which package manager would you like to use?** — **npm** (or your preferred manager)
+   * **Which starter kit would you like to use?** — **Checkout Starter Kit**
+   * **Which coding agent would you like to install the skills for?** — **Cursor**
+   * **Which package manager would you like to use?** — **npm** (or your preferred manager)
 
 1. After the setup completes, restart Cursor (or your coding agent) so it loads the new MCP tools and skills. The Commerce App Builder tools should then be available in your environment.
 
