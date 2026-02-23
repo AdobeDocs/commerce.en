@@ -7,7 +7,7 @@ level: Intermediate
 ---
 # Tutorial prerequisites
 
-This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md).
+This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md) and the [checkout extension tutorial](./checkout-extension.md).
 
 ## Adobe Commerce as a Cloud Service prerequisites
 
