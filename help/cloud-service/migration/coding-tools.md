@@ -36,10 +36,15 @@ This will update the tools to the latest version.
 ## Prerequisites
 
 * Any coding agent that supports [agent skills](https://agentskills.io/home#adoption), such as:
+
    * [Cursor](https://cursor.com/download)
-   * [GitHub Copilot](https://github.com/features/copilot)
-   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
+   * [GitHub Copilot](https://github.com/features/copilot)
+   * [Windsurf](https://windsurf.com)
+   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [OpenAI Codex](https://openai.com/index/introducing-codex/)
+   * [Cline](https://cline.bot)
+   
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
