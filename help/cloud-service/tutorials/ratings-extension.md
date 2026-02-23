@@ -63,7 +63,7 @@ This section guides you through developing a ratings extension for Adobe Commerc
     - From the Cursor chat window, select **[!UICONTROL Agent]** mode.
     - Enter the following prompt:
 
-   ```text
+   ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
 
    Implement a REST API to handle GET ratings requests.
@@ -85,7 +85,7 @@ This section guides you through developing a ratings extension for Adobe Commerc
 
 1. Use the following example text to answer the agent's questions to set up randomized ratings data:
 
-   ```text
+   ```shell-session
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
 
@@ -125,7 +125,7 @@ Verify the extension works before deploying it.
 
 1. Ask the agent to help you test the code locally.
 
-   ```text
+   ```shell-session
    Test the ratings API locally on a dev server using cURL.
    ```
 
@@ -141,7 +141,7 @@ Deploy the extension to [!DNL Adobe I/O Runtime] using the agent.
 
 1. After verifying the generated code, deploy the extension using the following prompt:
 
-   ```text
+   ```shell-session
    Deploy the ratings API.
    ```
 
@@ -173,7 +173,7 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 To integrate the ratings API with an [!DNL Adobe Commerce] storefront powered by [!DNL Edge Delivery Services], ask the agent to create a service contract with requirements for the ratings API:
 
-```text
+```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
@@ -232,7 +232,7 @@ Prepare your local storefront environment for development.
 
 1. In a browser, navigate to a product page:
 
-   ```text
+   ```shell-session
    http://localhost:3000/products/llama-plush-shortie/adb336
    ```
 
@@ -244,7 +244,7 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
 1. Use the following prompt with your agent:
 
-   ```text
+   ```shell-session
    Integrate the ratings API into the PDP to show star ratings and a review count for products. Here's the service contract: @RATINGS_API_CONTRACT.md
    ```
 
@@ -327,7 +327,7 @@ Use the following suggestions to customize your ratings extension or create your
 
 Use the following prompt with your agent:
 
-```text
+```shell-session
 Change the star fill color to red.
 ```
 
@@ -365,7 +365,7 @@ If the modal does not behave as expected, try the following:
 * If the modal does not appear, check the browser console for errors.
 * If positioning is off, ask the agent to fix it using the following format:
 
-   ```text
+   ```shell-session
    adjust the modal position to be...
    ```
 
