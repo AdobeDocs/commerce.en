@@ -75,6 +75,16 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
    The **API Keys** section now displays your API (Public) keys. You need all four keys (both the production and sandbox keys, Public+Private) when you [select or create a SaaS project](#createsaasenv) in any of the environments or installations associated with the license.
 
+### Delete an API key {#delapikey}
+
+When you click Delete on an API key, you are prompted to confirm the deletion. After you confirm, the key is permanently removed. 
+
+>[!WARNING]
+>
+>Deleting a key that is still in active use can immediately disrupt connected services.
+>
+>Before deleting any API key, generate and securely store a replacement key, update all integrations to use the new key, and confirm that dependent services are working as expected. 
+
 ## SaaS configuration {#saasenv}
 
 [!DNL Commerce] instances must be configured with a SaaS project and a SaaS data space so that [!DNL Commerce Services] can send data to the right location. A SaaS project groups all SaaS data spaces. The SaaS data spaces are used to collect and store data that enables [!DNL Commerce Services] to work. Some of this data may be exported from the [!DNL Commerce] instance and some may be collected from shopper behavior on the storefront. That data is then persisted to secure cloud storage.
