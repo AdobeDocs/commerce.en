@@ -4,14 +4,8 @@ description: Learn the prerequisites for the ratings extension lab.
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
-# Ratings extension tutorial prerequisites (Beta)
-
->[!NOTE]
->
->The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
+# Ratings extension tutorial prerequisites
 
 This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md).
 

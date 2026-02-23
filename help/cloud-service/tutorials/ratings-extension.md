@@ -4,14 +4,8 @@ description: Learn how to build a product ratings extension for Adobe Commerce a
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
-# Ratings extension tutorial (Beta)
-
->[!NOTE]
->
->The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
+# Ratings extension tutorial
 
 This tutorial guides you through building a product ratings extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools.
 

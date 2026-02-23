@@ -35,9 +35,9 @@ This will update the tools to the latest version.
 
 ## Prerequisites
 
-* One of the following coding agents:
+* Any coding agent that supports [agent skills](https://agentskills.io/home#adoption), such as:
    * [Cursor](https://cursor.com/download)
-   * [Github Copilot](https://github.com/features/copilot)
+   * [GitHub Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS version
@@ -70,15 +70,15 @@ This will update the tools to the latest version.
 
    * Commerce [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) - for building back-office integrations.
 
-         ```bash
-         git clone git@github.com:adobe/commerce-integration-starter-kit.git
-         ```
+      ```bash
+      git clone git@github.com:adobe/commerce-integration-starter-kit.git
+      ```
 
    * Commerce [checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/) for building or extending the checkout experience, including payments, shipping, and taxes.
 
-         ```bash
-         git clone git@github.com:adobe/commerce-checkout-starter-kit.git
-         ```
+      ```bash
+      git clone git@github.com:adobe/commerce-checkout-starter-kit.git
+      ```
 
 1. Navigate to the starter kit directory:
 
