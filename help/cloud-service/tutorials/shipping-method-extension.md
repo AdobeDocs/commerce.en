@@ -37,6 +37,8 @@ If any of the preceding commands do not return the expected results, refer to th
 
 After completing the [prerequisites](./tutorial-prerequisites.md), create the mock shipping rates API, so you have the service URL and API key ready when you configure the extension in the [!DNL Commerce Admin]. The extension calls an external shipping rates API. For this tutorial you use a mock API allowing you to run the flow without a real carrier account. You will create the mock API using [Pipedream](https://pipedream.com) (free account required). The mock API uses a request/response contract that is similar to typical real shipping rates APIs, so connecting this extension to a real provider later should be straightforward.
 
+To create the mock API, download the [mock rates API specification file](../assets/mock-rates-api-spec.zip), open it, and add the `.md` file to your project (for example `docs/mock-rates-api-spec.md`).
+
 **Time:** It should take about **5–10 minutes** to create the mock API.
 
 ### Create a workflow and HTTP trigger
@@ -57,7 +59,6 @@ You do not need to configure **Authorization** on the trigger; the mock API vali
 1. Click the **+** icon to add a step.
 1. Choose **Run Node.js code** (Code step).
 1. **Replace** the default code with the following JavaScript.
-1. Click **Save** or **Deploy**.
 
    ```javascript
    export default defineComponent({
@@ -117,7 +118,9 @@ You do not need to configure **Authorization** on the trigger; the mock API vali
    });
    ```
 
-![Pipedream Code step with mock shipping rates script](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
+1. Click **Save** or **Deploy**.
+
+   ![Pipedream Code step with mock shipping rates script](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
 
 The mock returns two rate options (Mock Standard and Mock Express) for any valid request that includes a non-empty `API-Key` header and a `shipment` object. Note your Pipedream workflow URL and your API key (for example, `tutorial-key`) for configuring the extension in the [!DNL Admin UI] during the tutorial.
 
@@ -137,15 +140,13 @@ This section guides you through developing a shipping method extension for [!DNL
 
 1. If you have any documentation added to Cursor's context, disable it. Navigate to [!UICONTROL **Cursor**] > [!UICONTROL **Settings**] > [!UICONTROL **Cursor Settings**] > [!UICONTROL **Indexing & Docs**] and delete any documentation listed.
 
-   - Navigate to [!UICONTROL **Cursor**] > [!UICONTROL **Settings**] > [!UICONTROL **Cursor Settings**] > [!UICONTROL **Indexing & Docs**] and delete any documentation listed.
-
    ![Cursor indexing and docs settings with documentation list empty](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
-1. Give the agent access to the mock rates API specification, so it can implement the client correctly. Download the [mock rates API specification file](../assets/mock-rates-api-spec.zip), open it, and add the `.md` file to your project (for example `docs/mock-rates-api-spec.md`), then reference that file in your prompt.
+1. Give the agent access to the mock rates API specification, so it can implement the client correctly. If you have not already done so, download the [mock rates API specification file](../assets/mock-rates-api-spec.zip), open it, and add the `.md` file to your project (for example `docs/mock-rates-api-spec.md`), then reference that file in your prompt.
 
 1. Generate the shipping method extension:
 
-   - From the agent's chat window, select [!UICONTROL **Plan**] mode, if available. This prevents the agent from proceeding without a plan.
+   - From the agent's chat window, select **Plan** mode, if available. This prevents the agent from proceeding without a plan.
    - Enter the following prompt:
 
    ```shell-session
@@ -155,7 +156,7 @@ This section guides you through developing a shipping method extension for [!DNL
    - The service endpoint URL is configurable by the merchant (for example https://123456.m.pipedream.net).
    - The API is specified in ./docs/mock-rates-api-spec.md.
 
-   The merchant must be able to configure the following in the Adobe Commerce Admin UI. Use the Adobe Commerce Admin UI SDK (or equivalent App Builder extensibility for the Admin) to add a configuration screen where the merchant can set:
+   The merchant must be able to configure the following in the Adobe Commerce Admin UI. Use the Adobe Commerce Admin UI SDK (or equivalent App Builder extensibility options for the Admin) to add a configuration screen where the merchant can set:
    - The service URL (where the extension sends rate requests).
    - An API key the service expects (any non-empty value for the mock). The API key is sensitive data: it must be stored securely and must never appear in logs, error messages, or in the UI in full (e.g. mask in the UI).
    - The warehouse (ship-from) address: name, phone, street, city, state, postal code, country. This is the origin used when requesting rates.
@@ -183,9 +184,9 @@ This section guides you through developing a shipping method extension for [!DNL
 
    ![AI agent implementation plan for Mock Shipping Rates extension](../assets/implementation-plan-shipping.png){width="600" zoomable="yes"}
 
-1. Instruct the agent to proceed with code generation. The agent should add a **MOCK** carrier to the shipping carriers configuration allowing Commerce to accept the returned methods, and use the webhook method `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` (webhook type **after**, required **Optional**).
+1. Instruct the agent to proceed with code generation. The agent should add a **mock** carrier to the shipping carriers configuration allowing Commerce to accept the returned methods, and use the webhook method `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` (webhook type **after**, required **Optional**).
 
-   The agent generates the necessary code and provides a detailed summary with your next steps (including installing dependencies, registering the MOCK carrier, configuring the Commerce webhook, and deploying).
+   The agent generates the necessary code and provides a detailed summary with your next steps (including installing dependencies, registering the mock carrier, configuring the Commerce webhook, and deploying).
 
    ![Summary of generated code and implementation for shipping extension](../assets/code-generation-summary-shipping.png){width="600" zoomable="yes"}
 
@@ -221,9 +222,9 @@ Before deploying, remove code that the application does not need. The checkout s
 
 ### Post deployment
 
-After deployment, complete the following steps to register the MOCK carrier, configure the webhook and [!DNL Admin UI], and verify the extension at checkout.
+After deployment, complete the following steps to register the mock carrier, configure the webhook and [!DNL Admin UI], and verify the extension at checkout.
 
-1. **Register the MOCK carrier in Commerce** (run once after deploy):
+1. **Register the mock carrier in Commerce** (run once after deploy):
 
    ```bash
    npm run create-shipping-carriers
@@ -233,7 +234,7 @@ After deployment, complete the following steps to register the MOCK carrier, con
 
 1. **Configure the shipping webhook in [!DNL Commerce Admin]:**
 
-   - Go to **Stores** > **Configuration** > **Adobe Services** > **Commerce Webhooks**.
+   - Go to **Stores** > Settings > **Configuration** > **Adobe Services** > **Commerce Webhooks**.
    - Add a webhook:
      - **Webhook method:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
      - **Webhook type:** **after**
@@ -253,7 +254,7 @@ After deployment, complete the following steps to register the MOCK carrier, con
    ![Admin UI SDK Configure extensions modal with workspace and extension selection](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}
 
 1. **Configure the Mock Shipping method in the Adobe Commerce Admin UI:**
-   - In [!DNL Commerce Admin], open **Apps** and select your app.
+   - Open **Apps** and select your app.
    - Open the **Mock Shipping** tab (or equivalent).
    - Enter the following details:
      - **Service URL:** the Pipedream workflow URL you copied (for example `https://123456.m.pipedream.net`).
@@ -279,7 +280,7 @@ After deployment, complete the following steps to register the MOCK carrier, con
 
 - **"The response must contain at least one operation"** (in webhook logs): Commerce requires the shipping webhook to return at least one operation. Ask the agent to ensure the shipping-methods action never returns an empty operations array (for example by returning a fallback rate when the external API returns no rates).
 
-- **No shipping rates at checkout:** Confirm the webhook URL and method are correct, the MOCK carrier is registered (`npm run create-shipping-carriers`), and the Mock Shipping config is set in the [!DNL Admin UI]. Check runtime logs for the shipping-methods action for API or validation errors, ensure the action returns at least one operation, so [!DNL Commerce] does not show "The response must contain at least one operation."
+- **No shipping rates at checkout:** Confirm the webhook URL and method are correct, the mock carrier is registered (`npm run create-shipping-carriers`), and the Mock Shipping config is set in the [!DNL Admin UI]. Check runtime logs for the shipping-methods action for API or validation errors, ensure the action returns at least one operation, so [!DNL Commerce] does not show "The response must contain at least one operation."
 
 ### Tutorial recap
 
@@ -289,13 +290,13 @@ Here is a summary of the topics covered in this tutorial:
 - **Agent-driven development:** Using the commerce-extensibility toolset to generate requirements, an implementation plan, and code for the shipping webhook and Admin UI.
 - **Phase 5 cleanup:** Removing unused checkout starter kit domains and scaffolding before deploying.
 - **Deployment:** Pre-deployment assessment and MCP toolkit deploy.
-- **Post-deployment configuration:** Registering the MOCK carrier, configuring the [!DNL Commerce] webhook, enabling the [!DNL Admin UI SDK] extension, and setting Mock Shipping (service URL, API key, warehouse) in the [!DNL Admin UI].
+- **Post-deployment configuration:** Registering the mock carrier, configuring the [!DNL Commerce] webhook, enabling the [!DNL Admin UI SDK] extension, and setting Mock Shipping (service URL, API key, warehouse) in the [!DNL Admin UI].
 - **Verification:** Confirming mock shipping options appear at checkout.
 
 ### Next steps
 
 For further experimentation with this tutorial, consider the following:
 
-- Automate post-deploy setup with a hook that registers the MOCK carrier in [!DNL Commerce] and configures the shipping webhook after each deployment.
+- Automate post-deploy setup with a hook that registers the mock carrier in [!DNL Commerce] and configures the shipping webhook after each deployment.
 - Point the extension at a real shipping rates API by changing the Service URL and API key in the [!DNL Admin UI].
 - Extend the [!DNL Admin UI] to show carrier status or test connectivity to the rates service.

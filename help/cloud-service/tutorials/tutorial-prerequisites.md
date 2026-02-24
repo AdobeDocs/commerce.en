@@ -98,12 +98,16 @@ This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a 
 
 ### Clone the starter kits
 
-Clone the Commerce starter kit repository for the extension you are building and prepare your project:
+Clone one of the following Commerce starter kit repositories for the extension you are building and prepare your project:
+
+Integration starter kit:
 
 ```bash
 git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
+
+Checkout starter kit:
 
 ```bash
 git clone https://github.com/adobe/commerce-checkout-starter-kit.git extension
