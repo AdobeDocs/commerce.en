@@ -123,11 +123,7 @@ This section guides you through developing a shipping method extension for [!DNL
 
    ![Cursor indexing and docs settings with documentation list empty](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
-1. Give the agent access to the mock rates API specification, so it can implement the client correctly. You can <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/assets/mock-rates-api-spec.md" download="mock-rates-api-spec.md">download the full specification</a> and add it to your project (for example `docs/mock-rates-api-spec.md`), then reference that file in your prompt.
-
-   >[!NOTE]
-   >
-   >If the link opens the specification in the browser instead of downloading it, right-click the link and choose **Save link as** (or **Save target as**) to save the file to your computer.
+1. Give the agent access to the mock rates API specification, so it can implement the client correctly. Download the [mock rates API specification file](../assets/mock-rates-api-spec.zip), open it, and add the `.md` file to your project (for example `docs/mock-rates-api-spec.md`), then reference that file in your prompt.
 
 1. Generate the shipping method extension:
 
