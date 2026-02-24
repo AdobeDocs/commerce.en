@@ -46,7 +46,7 @@ After completing the [prerequisites](./tutorial-prerequisites.md), create the mo
 1. For the trigger, select **HTTP / Webhook**.
 1. In the trigger configuration, set **HTTP Response** to **Return a custom response from your workflow**. This allows the Code step to send the mock JSON response.
 1. Pipedream displays a unique **HTTP endpoint URL**, such as `https://123456.m.pipedream.net`.
-1. **Copy this URL** and use it as the **Service URL** in the extension configuration.
+1. **Copy this URL** and use it as the **Service URL** when configuring the extension in the Commerce Admin.
 
    ![Pipedream workflow with HTTP/Webhook trigger and endpoint URL visible](../assets/mock-api-trigger.png){width="600" zoomable="yes"}
 
@@ -135,7 +135,7 @@ This section guides you through developing a shipping method extension for [!DNL
    >
    >If you encounter any issues with your code, you can always ask the agent to help you debug it.
 
-1. If you have any documentation added to Cursor's context, disable it:
+1. If you have any documentation added to Cursor's context, disable it. Navigate to [!UICONTROL **Cursor**] > [!UICONTROL **Settings**] > [!UICONTROL **Cursor Settings**] > [!UICONTROL **Indexing & Docs**] and delete any documentation listed.
 
    - Navigate to [!UICONTROL **Cursor**] > [!UICONTROL **Settings**] > [!UICONTROL **Cursor Settings**] > [!UICONTROL **Indexing & Docs**] and delete any documentation listed.
 
@@ -167,7 +167,7 @@ This section guides you through developing a shipping method extension for [!DNL
 
    ![Cursor chat window in Agent mode with shipping extension prompt entered](../assets/enter-prompt-shipping.png){width="600" zoomable="yes"}
 
-1. Answer the agent's questions precisely to help it generate the best code. If the agent asks which kit or template to use, direct it to the [checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"} with the shipping domain and Admin UI extension so that both the shipping webhook and the merchant configuration screen are implemented.
+1. Answer the agent's questions precisely to help it generate the best code. If the agent asks which kit or template to use, direct it to the [checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"} with the shipping domain and Admin UI SDK extension so that both the shipping webhook and the merchant configuration screen are implemented.
 
    The agent may create a `requirements.md` (or equivalent) file that serves as the source of truth for the implementation.
 
@@ -244,7 +244,7 @@ After deployment, complete the following steps to register the MOCK carrier, con
 
 1. **Configure the [!DNL Admin UI SDK] extension:**
 
-   - In [!DNL Commerce Admin], go to **Stores** > **Settings** > **Configuration**.
+   - In [!DNL Commerce Admin], go to **Stores** > Settings > **Configuration**.
    - Open **Adobe Services** > **Admin UI SDK**.
    - Set **Enable Admin UI SDK** to **Yes** and click **Save Config** if it is not already enabled.
    - Click **Configure extensions**, choose the workspace your app is deployed to, then click **Apply**. You can also select the **Custom** option and enter the workspace name.
