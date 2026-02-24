@@ -45,23 +45,3 @@ For information about identity configuration options including Adobe ID, Enterpr
 | Services | Extensibility | Storefront |
 | --- | --- | --- |
 | <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
-
-## Verify prerequisites {#tutorial-verify-prerequisites}
-
-Verify that the following prerequisites are installed:
-
-```bash
-# Check Node.js version (should be 22.x.x)
-node --version
-
-# Check npm version (should be 9.0.0 or higher)
-npm --version
-
-# Check Git installation
-git --version
-
-# Check Bash shell installation
-bash --version
-```
-
-If any of the preceding commands do not return the expected results, refer to the [prerequisites](../cloud-service/tutorials/tutorial-prerequisites.md) for guidance.

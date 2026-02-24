@@ -13,7 +13,7 @@ The extension adds a configurable shipping method at checkout where the rates co
 
 Before you begin, complete the [prerequisites](./tutorial-prerequisites.md).
 
-{{tutorial-verify-prerequisites}}
+{{$include /help/_includes/verify-prerequisites.md}}
 
 ## Create the mock shipping rates API
 
@@ -127,7 +127,7 @@ This section guides you through developing a shipping method extension for [!DNL
 
 1. Generate the shipping method extension:
 
-   - From the agent's chat window, select [!UICONTROL **Agent**] mode.
+   - From the agent's chat window, select [!UICONTROL **Plan**] mode, if available. This prevents the agent from proceeding without a plan.
    - Enter the following prompt:
 
    ```shell-session

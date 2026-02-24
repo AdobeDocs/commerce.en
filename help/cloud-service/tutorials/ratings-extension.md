@@ -11,7 +11,7 @@ This tutorial guides you through building a product ratings extension for [!DNL 
 
 Before you begin, complete the [prerequisites](./tutorial-prerequisites.md).
 
-{{tutorial-verify-prerequisites}}
+{{$include /help/_includes/verify-prerequisites.md}}
 
 ## Extension development
 
