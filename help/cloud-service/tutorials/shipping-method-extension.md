@@ -122,7 +122,7 @@ You do not need to configure **Authorization** on the trigger; the mock API vali
 
    ![Pipedream Code step with mock shipping rates script](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
 
-The mock returns two rate options (Mock Standard and Mock Express) for any valid request that includes a non-empty `API-Key` header and a `shipment` object. Note your Pipedream workflow URL and your API key (for example, `tutorial-key`) for configuring the extension in the [!DNL Admin UI] during the tutorial.
+The mock returns two rate options (Mock Standard and Mock Express) for any valid request that includes a non-empty `API-Key` header and a `shipment` object. You will configure the API Key in the [!DNL Commerce Admin] later in this tutorial. You will also specify the Pipedream workflow URL on the same configuration screen, so make note of it.
 
 ## Extension development
 
