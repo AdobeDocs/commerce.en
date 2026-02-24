@@ -28,7 +28,7 @@ After completing the [prerequisites](./tutorial-prerequisites.md), create the mo
 1. For the trigger, select **HTTP / Webhook**.
 1. In the trigger configuration, set **HTTP Response** to **Return a custom response from your workflow**. This allows the Code step to send the mock JSON response.
 1. Pipedream displays a unique **HTTP endpoint URL**, such as `https://123456.m.pipedream.net`.
-1. **Copy this URL** anduse it as the **Service URL** in the extension configuration.
+1. **Copy this URL** and use it as the **Service URL** in the extension configuration.
 
    ![Pipedream workflow with HTTP/Webhook trigger and endpoint URL visible](../assets/mock-api-trigger.png){width="600" zoomable="yes"}
 
@@ -135,7 +135,7 @@ This section guides you through developing a shipping method extension for [!DNL
 
    External service (mock shipping rates API):
    - The service endpoint URL is configurable by the merchant (for example https://123456.m.pipedream.net).
-   - The API uses POST to the base URL, Content-Type: application/json, and API-Key header for authentication. Request body: { "shipment": { "ship_to", "ship_from", "packages" }, "rate_options": { "carrier_ids": [] } }. Response: 200 with { "rates": [ { "service_code", "service_name", "shipping_amount" or "shipment_cost" or "cost", ... } ] }.
+   - The API is specified in ./docs/mock-rates-api-spec.md.
 
    The merchant must be able to configure the following in the Adobe Commerce Admin UI. Use the Adobe Commerce Admin UI SDK (or equivalent App Builder extensibility for the Admin) to add a configuration screen where the merchant can set:
    - The service URL (where the extension sends rate requests).

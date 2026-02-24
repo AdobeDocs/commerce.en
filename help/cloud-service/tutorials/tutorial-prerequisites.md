@@ -217,7 +217,7 @@ This process creates the MCP configuration (`.<agent>/mcp.json`), the skills dir
 
    ![Terminal showing AI extensibility tools setup command output](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 
-1. After the setup completes, restart your coding agent too allow it to load the new MCP tools and skills. The Commerce App Builder tools are now available in your environment.
+1. After the setup completes, restart your coding agent to allow it to load the new MCP tools and skills. The Commerce App Builder tools are now available in your environment.
 
    >[!NOTE]
    >
