@@ -18,9 +18,9 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## February 2026 - release #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items are currently available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service] and will be released to Production environments on February 24, 2026.
+The following items were released to Production environments of [!DNL Adobe Commerce as a Cloud Service] on February 24, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -31,7 +31,6 @@ The following items are currently available in Sandbox environments of [!DNL Ado
 ### Subscribe to quote item save events using a new webhook
 
 The `observer.sales_quote_item_save_before` webhook is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to run logic before a quote item is saved. <!-- ACCS-346 -->
-<!-- link to https://developer.adobe.com/commerce/extensibility/webhooks/use-cases/product-price-update/ when docs are available? -->
 
 ### Enhancements and bug fixes
 
