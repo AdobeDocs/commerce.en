@@ -118,7 +118,7 @@ You do not need to configure **Authorization** on the trigger; the mock API vali
    });
    ```
 
-1. Click **Save** or **Deploy**.
+1. Click **Deploy**.
 
    ![Pipedream Code step with mock shipping rates script](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
 
