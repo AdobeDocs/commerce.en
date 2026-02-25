@@ -11,6 +11,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 ## Create a rule
 
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
+1. (Optional) Use the **Catalog View** dropdown to select the catalog view where the rule should apply. The rule you create is scoped to the selected view (or to all catalog views if *Global* is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
 1. Click **Create rule** to launch the rule editor.
 
 ![Create Rule](../../assets/create-rule.png)
@@ -159,7 +160,7 @@ Or events can be set manually:
 
 ## Edit, view, and delete rules
 
-Follow these instructions to update the properties of existing rules.
+Follow these instructions to update the properties of existing rules. You cannot change the catalog view (scope) of a rule after it is created; scope is set when you create the rule. See [Select catalog view](workspace.md#select-catalog-view).
 
 ### Edit rule
 
