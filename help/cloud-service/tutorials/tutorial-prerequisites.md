@@ -1,19 +1,13 @@
 ---
-title: Ratings extension tutorial prerequisites
+title: Tutorial prerequisites
 description: Learn the prerequisites for the ratings extension lab.
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
-# Ratings extension tutorial prerequisites (Beta)
+# Tutorial prerequisites
 
->[!NOTE]
->
->The AI tooling used in this tutorial is currently in Beta and could include bugs or other issues.
-
-This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md).
+This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a Cloud Service] tutorials, such as the [ratings extension tutorial](./ratings-extension.md) and the [shipping method extension tutorial](./shipping-method-extension.md).
 
 ## Adobe Commerce as a Cloud Service prerequisites
 
@@ -102,16 +96,27 @@ This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a 
 
    ![Terminal showing Adobe I/O CLI organization project and workspace selection](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
-### Clone the integration starter kit
+### Clone the starter kits
 
-Clone the Commerce integration starter kit repository and prepare your project:
+Clone one of the following Commerce starter kit repositories for the extension you are building and prepare your project:
+
+Integration starter kit:
 
 ```bash
 git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
 
-![Terminal output showing the git clone command for the Commerce integration starter kit](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+Checkout starter kit:
+
+```bash
+git clone https://github.com/adobe/commerce-checkout-starter-kit.git extension
+cd extension
+```
+
+>[!BEGINTABS]
+
+>[!TAB Integration starter kit]
 
 ### Create an .env file
 
@@ -183,9 +188,26 @@ aio app use workspace.json -m
 
 ![Terminal showing successful workspace connection with aio app use command](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
+>[!TAB Checkout starter kit]
+
+### Connect local workspace to remote workspace
+
+Link your local project to the remote workspace. From the project root (the `extension` folder), run:
+
+```bash
+aio app use --merge
+```
+
+When prompted, choose the option that uses the organization, project, and workspace you selected when configuring the Adobe I/O CLI. This writes the workspace configuration into your app so that deploy and local development use that workspace.
+
+![Terminal showing successful workspace connection with aio app use command](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!ENDTABS]
+
 ### Install extensibility AI tools
 
-Update the Cursor rules file and MCP configuration to include the `commerce-extensibility-tools` package.
+This process creates the MCP configuration (`.<agent>/mcp.json`), the skills directory (`.<agent>/skills/`), and adds `AGENTS.md` to the project root. You will be prompted to choose a starter kit, coding agent, and package manager.
+
 
 1. Set up the AI-assisted development tools in the `extension` folder using the following commands:
 
@@ -198,6 +220,15 @@ Update the Cursor rules file and MCP configuration to include the `commerce-exte
    ```
 
    ![Terminal showing AI extensibility tools setup command output](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+
+1. After the setup completes, restart your coding agent to allow it to load the new MCP tools and skills. The Commerce App Builder tools are now available in your environment.
+
+   >[!NOTE]
+   >
+   >If you see a warning that no skills were found for the starter kit, something went wrong—often because the setup was run in a folder other than where the starter kit was cloned. Run `aio commerce extensibility tools-setup` from the `extension` folder (the starter kit project root) and select the appropriate starter kit when prompted.
+
+   ![Terminal showing AI extensibility tools setup with checkout starter kit selected](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
+
 <!--
 ## Storefront prerequisites
 
