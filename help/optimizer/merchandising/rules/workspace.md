@@ -108,8 +108,8 @@ Behavioral data that powers [intelligent ranking](add.md#intelligent-ranking) (s
 
 ### How to set up a rule per catalog view
 
-1. On the *Merchandising Rules* workspace, use the **Catalog View** dropdown to select the catalog view where the rule should apply.
-1. Click **Add rule** (or **Create rule**). The rule you create is scoped to the selected catalog view.
+1. On the *Merchandising Rules* workspace, use the **[!UICONTROL Catalog View]** dropdown to select the catalog view where the rule should apply.
+1. Click **[!UICONTROL Create rule]**. The rule you create is scoped to the selected catalog view.
 1. Build your rule in the [rule editor](add.md). In the editor, define conditions, events, and details. The rule applies only to search results in that catalog view.
 
 You cannot change the catalog view (scope) of a rule after it is created. To apply similar logic to another catalog view, create a new rule and select that catalog view before creating.
