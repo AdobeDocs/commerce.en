@@ -3,13 +3,11 @@ title: Adobe Commerce Optimizer Connector
 description: Learn how to connect your data from your Commerce cloud or on-premises project to Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
-hidefromtoc: yes
-hide: yes
 ---
 
 # Adobe Commerce Optimizer Connector
 
-The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer] composable catalog data model. This enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
+The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
 >[!NOTE]
 >
@@ -17,7 +15,11 @@ The Adobe Commerce Optimizer Connector is the integration bridge that synchroniz
 
 ## Architecture and experience
 
-The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project:
+The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project as shown in the following figure:
+
+![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.svg){width="600" zoomable="yes"}
+
+When data is exported from Commerce to Commerce Optimizer:
 
 * Commerce store views are mapped to catalog sources
 * Websites are mapped to price books
@@ -59,6 +61,13 @@ The Connector enables several key workflows:
 
 * Admin access to an [Adobe Commerce Optimizer sandbox instance](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
+* If you have any of the following extensions installed, uninstall them before installing the Commerce Optimizer Connector:
+
+  * Adobe Commerce Live Search (`magento/live-search`)
+  * Adobe Commerce Product Recommendations (`magento/product-recommendations`)
+  * Adobe Commerce Catalog Service (`magento/catalog-service`, `magento/catalog-service-installer`)
+  * Data Management Dashboard (`magento-catalog-sync-admin`)
+
 The Adobe Commerce user configuring the integration must have:
 
 * Administrator access to the Adobe Commerce Admin.
@@ -67,19 +76,32 @@ The Adobe Commerce user configuring the integration must have:
 
 * Developer access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) where the [!DNL Adobe Commerce Optimizer] project is provisioned.
 
+>[!BEGINSHADEBOX]
+
+## Prerequisites
+
+If you have any of the following extensions installed, uninstall them before installing the Commerce Optimizer Connector:
+
+  * Adobe Commerce Live Search (`magento/live-search`)
+  * Adobe Commerce Product Recommendations (`magento/product-recommendations`)
+  * Adobe Commerce Catalog Service (`magento/catalog-service`, `magento/catalog-service-installer`)
+  * Data Management Dashboard (`magento-catalog-sync-admin`)
+
+Data associated with these extensions is still available in the Commerce database. However, it is not exported to [!DNL Adobe Commerce Optimizer] when the Connector is enabled. To implement the search and merchandising capabilities provided by these extensions after enabling the Connector, configure them from the [[!DNL Adobe Commerce Optimizer] Admin UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
+
 ## Get Started
 
 1. **Set up the Integration**
 
-  * **[Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
+   1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
 
-  * **[Review and customize the data export configuration](#customize-commerce-data-export-configuration)** from the Admin.
+   1. **[Review and customize the data export configuration](#customize-commerce-data-export-configuration)** from the Admin.
 
-  * **[Get API credentials required to establish the connection between Commerce and Commerce Optimizer](#get-required-values-for-configuring-the-commerce-optimizer-connection)**.
+   1. **[Get API credentials required to establish the connection between Commerce and Commerce Optimizer](#get-required-values-for-configuring-the-commerce-optimizer-connection)**.
 
-  * **[Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
+   1. **[Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
 
-  * **[Verify that the data sync is working](#verify-that-the-data-sync-is-working)**.
+   1. **[Verify that the data sync is working](#verify-that-the-data-sync-is-working)**.
 
 1. **[Configure [!DNL Adobe Commerce Optimizer] catalog views and policies](#configure-adobe-commerce-optimizer-stores)**
 
@@ -99,7 +121,7 @@ The Adobe Commerce Optimizer Connector is delivered as a Composer metapackage av
 
 1. Deploy the changes to your Adobe Commerce staging environment.
 
-  After deployment completes, the Commerce Optimizer option is available from the Commerce Admin menu. Click the **[!UICONTROL Commerce Optimizer]** to open your Commerce Optimizer instance directly from the Commerce Admin.
+  After deployment completes, the Commerce Optimizer option is available from the Commerce Admin menu. Click **[!UICONTROL Commerce Optimizer]** to open your Commerce Optimizer instance directly from the Commerce Admin.
 
 >[!NOTE]
 >
@@ -111,11 +133,11 @@ The Adobe Commerce Optimizer Connector is delivered as a Composer metapackage av
 
 ### Get required connection details
 
-From the Adobe Developer Console, create a developer project enabled for the [!DNL Adobe Commerce Optimizer] Ingestion service and generate OAUTH Server-to-Server credentials. For detailed instructions, see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) in the *Merchandising Developer Guide*.
+From the Adobe Developer Console, create a developer project enabled for the [!DNL Adobe Commerce Optimizer] Ingestion service and generate OAuth Server-to-Server credentials. For detailed instructions, see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) in the *Merchandising Developer Guide*.
 
 >[!TIP]
 >
->If you already have a developer project configured with the Data Ingestion API in the same IMS organization as your Commerce Optimizer instance, you can reuse the existing OAUTH Server-to-Server credentials.
+>If you already have a developer project configured with the Data Ingestion API in the same IMS organization as your Commerce Optimizer instance, you can reuse the existing OAuth Server-to-Server credentials.
 
 Save the following values from the credentials page:
 
@@ -179,7 +201,7 @@ Using the API credentials and instance details you gathered in the previous step
 
 1. From the Commerce Admin, select **[!UICONTROL Adobe Commerce Optimizer]** to display the configuration page with instructions.
 
-   ![[!DNL Adobe Commerce Optimizer] configuration page](../assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
+   ![[!DNL Adobe Commerce Optimizer] configuration page](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
 1. From the command line, [use SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) to connect to the Commerce staging environment.
 

@@ -7,3 +7,4 @@ user-guide-description: Configure the Adobe Commerce Optimizer Connector to expo
 # Adobe Commerce Optimizer Connector {#aco-optimizer-connector}
 
 - [Overview](overview.md)
+- [Release notes](release-notes.md)
