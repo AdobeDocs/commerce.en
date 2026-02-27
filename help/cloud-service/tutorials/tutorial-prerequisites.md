@@ -10,7 +10,7 @@ type: Tutorial
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension tutorial prerequisites [!BADGE Beta]{type=Informative}
+# Ratings extension tutorial prerequisites
 
 >[!NOTE]
 >

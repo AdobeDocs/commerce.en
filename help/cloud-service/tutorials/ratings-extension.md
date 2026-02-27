@@ -10,7 +10,7 @@ type: Tutorial
 hide: yes
 hidefromtoc: yes
 ---
-# Ratings extension tutorial [!BADGE Beta]{type=Informative}
+# Ratings extension tutorial
 
 >[!NOTE]
 >
@@ -55,13 +55,13 @@ This section guides you through developing a ratings extension for Adobe Commerc
 
 1. Disable any documentation in Cursor's context:
 
-   - Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Indexing & Docs]** and delete any documentation listed.
+   * Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Indexing & Docs]** and delete any documentation listed.
 
    ![Cursor indexing and docs settings with documentation list empty](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Generate code for a product ratings extension: 
-    - From the Cursor chat window, select **[!UICONTROL Agent]** mode.
-    - Enter the following prompt:
+    * From the Cursor chat window, select **[!UICONTROL Agent]** mode.
+    * Enter the following prompt:
 
    ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
@@ -121,7 +121,7 @@ This section guides you through developing a ratings extension for Adobe Commerc
 
 ### Test the extension locally
 
-Verify the extension works before deploying it.
+The following steps cover how to verify the extension works before deploying it.
 
 1. Ask the agent to help you test the code locally.
 
@@ -201,10 +201,10 @@ This section guides you through implementing the storefront portion of the ratin
 
 ### Storefront prerequisites
 
-Before starting the storefront integration, verify the following:
+Before starting the storefront integration, verify you have the following:
 
-- You have a storefront project connected to your [!DNL Commerce] instance.
-- You have installed the commerce storefront AI tools using the CLI.
+* A storefront project connected to your [!DNL Commerce] instance
+* Commerce storefront AI tools [installed using the CLI](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### Set up the storefront workspace
 
@@ -250,25 +250,25 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
 1. The agent assesses the task complexity and invokes a phased workflow. During **Phase 1 (Requirements Gathering)**, the agent creates a requirements document and asks clarifying questions such as:
 
-   - Where on the PDP should ratings appear?
-   - Should this be a new standalone block, or a slot customization inside the existing PDP drop-in component?
-   - What should the fallback be if the API is unavailable or returns no data?
-   - Should ratings appear on the PLP (product listing) as well, or PDP only?
-   - Are there any design specs or mockups?
+   * Where on the PDP should ratings appear?
+   * Should this be a new standalone block, or a slot customization inside the existing PDP drop-in component?
+   * What should the fallback be if the API is unavailable or returns no data?
+   * Should ratings appear on the PLP (product listing) as well, or PDP only?
+   * Are there any design specs or mockups?
 
    Answer these questions based on your project requirements. The agent updates the requirements document and marks the phase as complete.
 
 1. During **Phase 2 (Architectural Planning)**, the agent researches documentation and your codebase before proposing an architecture. Expect the agent to:
 
-   - Search [!DNL Commerce] documentation for PDP drop-in containers, slots, and event payloads.
-   - Scan your `blocks` directory and `scripts/initializers/` folder for existing PDP-related code.
-   - Explore TypeScript definitions for available containers and slot context shapes.
+   * Search [!DNL Commerce] documentation for PDP drop-in containers, slots, and event payloads.
+   * Scan your `blocks` directory and `scripts/initializers/` folder for existing PDP-related code.
+   * Explore TypeScript definitions for available containers and slot context shapes.
 
    The agent then presents architecture options such as:
 
-   - **Option A:** Customize an existing PDP drop-in slot to inject ratings near the product title — a lighter touch that is upgrade-friendly.
-   - **Option B:** Create a new standalone `product-ratings` block that fetches from the API independently — more flexible and decoupled.
-   - **Option C:** A hybrid approach using a new block that also listens to PDP drop-in events for the product SKU.
+   * **Option A:** Customize an existing PDP drop-in slot to inject ratings near the product title — a lighter touch that is upgrade-friendly.
+   * **Option B:** Create a new standalone `product-ratings` block that fetches from the API independently — more flexible and decoupled.
+   * **Option C:** Create a new block that also listens to PDP drop-in events for the product SKU — a hybrid approach.
 
    The plan also includes details on API integration, performance considerations (lazy loading, caching), security (input sanitization), and a testing approach.
 
@@ -276,25 +276,25 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
 1. During **Phase 3 (Implementation Approach)**, the agent asks you to choose between:
 
-   - **Option A:** Review a detailed implementation plan before code generation (see all files, patterns, and code structure first).
-   - **Option B:** Proceed directly to code generation.
+   * **Option A:** Review a detailed implementation plan before code generation (see all files, patterns, and code structure first).
+   * **Option B:** Proceed directly to code generation.
 
    Select your preferred approach.
 
 1. During **Phase 4 (Implementation)**, the agent generates code based on the chosen architecture. Depending on the approach, the agent uses several specialized skills:
 
-   - **Content modeling:** If a new block is needed, the agent designs an author-friendly content structure, such as a configuration table with the API endpoint URL.
-   - **Block development:** The agent creates block files following [!DNL Edge Delivery Services] conventions, including JavaScript decoration functions, scoped CSS styles, ARIA labels for accessibility, and loading and error state handling.
-   - **Drop-in customization:** If the architecture uses slot customization, the agent imports the correct container, uses a verified slot near the product title, and subscribes to product data events for the current SKU.
+   * **Content modeling:** If a new block is needed, the agent designs an author-friendly content structure, such as a configuration table with the API endpoint URL.
+   * **Block development:** The agent creates block files following [!DNL Edge Delivery Services] conventions, including JavaScript decoration functions, scoped CSS styles, ARIA labels for accessibility, and loading and error state handling.
+   * **Drop-in customization:** If the architecture uses slot customization, the agent imports the correct container, uses a verified slot near the product title, and subscribes to product data events for the current SKU.
 
-   Watch the code being generated and ask questions or redirect the agent as needed. The agent produces a production readiness summary at the end.
+   Watch the code being generated and ask questions or redirect the agent as needed. The agent produces a production readiness summary when code generation completes.
 
 1. During **Phase 4.5 (Testing)**, the agent offers to test the implementation. If you accept, the agent:
 
-   - Creates a local test page with the proper scripts and styles.
-   - Starts a development server.
-   - Runs browser-based verification for visual rendering, interactivity, responsive behavior, accessibility, and performance.
-   - Generates a structured test report with the results.
+   * Creates a local test page with the proper scripts and styles.
+   * Starts a development server.
+   * Runs browser-based verification for visual rendering, interactivity, responsive behavior, accessibility, and performance.
+   * Generates a structured test report with the results.
 
    Follow along in the browser to confirm the behavior and report any issues.
 
@@ -302,9 +302,9 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
    You should see the following changes in your development environment and browser:
 
-   - A product rating component is automatically created.
-   - The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
-   - Stars display with proper fill proportions based on the rating values from your API.
+   * A product rating component is automatically created.
+   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
+   * Stars display with proper fill proportions based on the rating values from your API.
 
    ![Product detail page showing star ratings integrated below the product title](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
 
@@ -312,12 +312,12 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 
 Here is a summary of the topics covered in this tutorial:
 
-- **Extension development:** How to describe new functionality to an AI agent and generate a working REST API using [!DNL App Builder].
-- **Local testing and deployment:** Testing the API locally and deploying it using the MCP toolkit.
-- **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
-- **Phased storefront integration:** Working through requirements, architecture, and implementation using AI-assisted skills.
-- **Drop-in integration:** Working with [!DNL Adobe Commerce] drop-in containers and slots.
-- **Component reusability:** Creating shared components used across multiple blocks.
+* **Extension development:** Learning how to describe new functionality to an AI agent and generate a working REST API using [!DNL App Builder].
+* **Local testing and deployment:** Testing the API locally and deploying it using the MCP toolkit.
+* **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
+* **Phased storefront integration:** Working through requirements, architecture, and implementation using AI-assisted skills.
+* **Drop-in integration:** Working with [!DNL Adobe Commerce] drop-in containers and slots.
+* **Component reusability:** Creating shared components used across multiple blocks.
 
 ## Next steps
 
@@ -347,23 +347,23 @@ The following steps show how the agent handles complex UI features with visual r
 
 1. Follow these steps to create the ratings distribution modal using the reference image as a guide:
 
-   - Update the API to return additional data representing the ratings distribution.
-   - Update the API contract.
-   - Update the contract in the storefront codebase.
-   - Ask the storefront agent to use the reference image and updated API contract to add the ratings distribution to the PDP page.
+   * Update the API to return additional data representing the ratings distribution.
+   * Update the API contract.
+   * Update the contract in the storefront codebase.
+   * Ask the storefront agent to use the reference image and updated API contract to add the ratings distribution to the PDP page.
 
 1. Observe the following changes in the codebase, and watch the product page for updates:
 
-   - How the agent interprets the visual mockup
-   - Whether it uses appropriate HTML structure for accessibility
-   - How it handles the positioning and interaction states
+   * How the agent interprets the visual mockup
+   * Whether it uses appropriate HTML structure for accessibility
+   * How it handles the positioning and interaction states
 
 #### Troubleshoot the distribution modal
 
 If the modal does not behave as expected, try the following:
 
-- If the modal does not appear, check the browser console for errors.
-- If positioning is off, ask the agent to fix it using the following format:
+* If the modal does not appear, check the browser console for errors.
+* If positioning is off, ask the agent to fix it using the following format:
 
    ```shell-session
    adjust the modal position to be...
