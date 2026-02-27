@@ -164,6 +164,10 @@ These optional settings apply to the customer input fields of your [!UICONTROL F
 
 With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience in Safari—supporting up to 99 domains per merchant account. The [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's iOS or macOS device, enabling quick, one-tap purchases that can help boost conversion rates.
 
+>[!IMPORTANT]
+>
+> Apple rejects payments from unverified domains. Merchants must verify any domains where Apple Pay buttons are used. Country restrictions apply. See the [Apple Pay documentation](https://developer.apple.com/documentation/apple_pay_on_the_web) for more information about domain verification requirements.
+
 See [Payments options](payments-options.md#apple-pay-button) for more information.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
@@ -174,6 +178,7 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Apple Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
     * **[!UICONTROL Show Apple Pay on checkout page]**
+    * **[!UICONTROL Show Apple Pay at start of checkout]**
     * **[!UICONTROL Show Apple Pay on product detail page]**
     * **[!UICONTROL Show Apple Pay in mini cart preview]**
     * **[!UICONTROL Show Apple Pay on cart page]**
@@ -187,11 +192,12 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Show on checkout page] | website | Enable or disable [!DNL Apple Pay] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Apple Pay on checkout page] | website | Enable or disable [!DNL Apple Pay] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Apple Pay at start of checkout] | store view | Enable or disable [!DNL Apple Pay] at the start of the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
-| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL Apple Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL Apple Pay] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL Apple Pay] in on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Apple Pay on product detail page] | store view | Enable or disable [!DNL Apple Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Apple Pay in mini cart preview] | store view | Enable or disable [!DNL Apple Pay] in the mini cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Apple Pay on cart page] | store view | Enable or disable [!DNL Apple Pay] in on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Google Pay]
@@ -208,6 +214,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 1. [Set the payment action](production.md#set-payment-services-as-payment-method) by selecting **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Google Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
     * **[!UICONTROL Show Google Pay on checkout page]**
+    * **[!UICONTROL Show Google Pay at start of checkout]**
     * **[!UICONTROL Show Google Pay on product detail page]**
     * **[!UICONTROL Show Google Pay in mini cart preview]**
     * **[!UICONTROL Show Google Pay on cart page]**
@@ -224,11 +231,12 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 |---|---|---|
 | [!UICONTROL Title] | store view | Specifies the text label that displays for this payment option in the Payment Method view during checkout. Options: `[!UICONTROL text field]` |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
-| [!UICONTROL Show on checkout page] | website | Enable or disable [!DNL Google Pay] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Google Pay on checkout page] | website | Enable or disable [!DNL Google Pay] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Google Pay at start of checkout] | store view | Enable or disable [!DNL Google Pay] at the start of the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
-| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL Google Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL Google Pay] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL Google Pay] on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Google Pay on product detail page] | store view | Enable or disable [!DNL Google Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Google Pay in mini cart preview] | store view | Enable or disable [!DNL Google Pay] in the mini cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show Google Pay on cart page] | store view | Enable or disable [!DNL Google Pay] on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Store View | Define color of the [!DNL Google Pay] button. Options: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -259,6 +267,7 @@ You can enable and configure the PayPal payment buttons payment options within t
 
 1. Specify where the PayPal payment buttons are enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
     * **[!UICONTROL Show buttons on checkout page]**
+    * **[!UICONTROL Show buttons at start of checkout]**
     * **[!UICONTROL Show buttons on product detail page]**
     * **[!UICONTROL Show buttons in mini cart preview]**
     * **[!UICONTROL Show buttons on cart page]**
@@ -275,16 +284,58 @@ You can enable and configure the PayPal payment buttons payment options within t
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Display Pay Later Message] | website | Enable or disable the PayPal Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Display Pay Later Message] | website | Enable or disable the PayPal Pay Later messaging in the shopping cart, product page, mini cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | store view | Modify the PayPal Pay Later Messaging styles. Options: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal payment buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons at start of checkout] | store view | Enable or disable [!DNL PayPal payment buttons] at the start of the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
 | [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal payment buttons] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal payment buttons] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini cart preview] | store view | Enable or disable [!DNL PayPal payment buttons] in the mini cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL PayPal payment buttons] in on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL App Switch] | store view | This option applies to **US** merchants and buyers only. When enabled all Express PayPal payments will try to go through the PayPal mobile app when available. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Contact Preference] | store view | This option applies to **US** merchants and buyers only. If set to **yes**, buyers email and telephone number will display in the PayPal Payment Modal. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | store view | Enable or disable the Venmo payment option where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | store view | Enable or disable the Credit and Debit card options where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | store view | Enable or disable PayPal Pay Later payment option appearance where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+
+## Local Payment Methods
+
+Local Payment Methods (LPMs) provide support for region-specific and local payment methods, such as bank transfers and localized payment solutions, alongside existing card-based options. Merchants can enable or disable available LPMs directly within the Commerce configuration. See [Payment options](payments-options.md#local-payment-methods) for more information about available methods.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
+1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
+1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Local Payment Methods]_ section.
+1. For **[!UICONTROL Active]**, select `Yes` to enable LPMs or `No` to disable them.
+1. For **[!UICONTROL Title]**, enter the text to display as the payment method name during checkout. This title also appears in the sales order grid.
+1. For **[!UICONTROL Allowed Payment Methods]**, select the payment methods you want to offer. Available methods depend on the buyer's billing address and the website's base currency.
+1. For **[!UICONTROL Sort Order]**, enter a numeric value to determine the display position of LPMs within the list of available payment methods.
+1. To save your changes, click **[!UICONTROL Save Config]**.
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
+### Configuration options
+
+| Field | Scope | Description |
+|---|---|---|
+| [!UICONTROL Active] | website | Enable or disable Local Payment Methods. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Title] | store view | The payment method name displayed during checkout and in the sales order grid. Options: [!UICONTROL text field] |
+| [!UICONTROL Allowed Payment Methods] | website | Select which LPMs to offer. Methods are only visible to customers whose billing address and website currency match the method's requirements. Options: `Bancontact` / `BLIK` / `eps` / `iDEAL` / `MyBank` / `Przelewy24` |
+| [!UICONTROL Sort Order] | store view | The display position of the LPM group within the list of available payment methods. This setting applies to all LPMs as a group; individual LPMs cannot be sorted independently. `Numeric Only` value |
+
+>[!NOTE]
+>
+>Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer’s billing‑address country and the website’s base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
+
+## Line Items
+
+Line items send detailed order information to PayPal, including product details, quantities, and prices. This feature is enabled by default. See [Line Items](line-items.md) for more information.
+
+### Configuration options
+
+| Field | Scope | Description |
+|---|---|---|
+| [!UICONTROL Line Items Enabled] | website | Enable or disable sending line items and amount breakdown to PayPal. Disable this setting if you use third-party extensions that add custom fees not supported by [!DNL Payment Services]. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## Button style
 

@@ -15,7 +15,29 @@ Line items for [!DNL Payment Services] are the items included in an order. These
  
 This information is useful for customer service, order management, and proper billing.
 
-This feature is enabled by default for [!DNL Payment Services]. To  view line items:
+## Configure line items
+
+Line items are enabled by default for [!DNL Payment Services]. To configure:
+
+1. On the _Admin_ sidebar, navigate to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+
+1. Go to **[!UICONTROL Sales]** and select **[!UICONTROL Payment Methods]**.
+
+1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
+
+1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Line Items]_ section.
+
+1. For **[!UICONTROL Line Items Enabled]**, select `Yes` to enable (default) or `No` to disable line items.
+
+1. Click **[!UICONTROL Save Config]** to save your changes.
+
+>[!IMPORTANT]
+>
+> If you have third-party extensions that add custom fees (such as handling fees) to your orders, you may need to disable line items. [!DNL Payment Services] calculates line items based on standard Commerce order components (items, tax, shipping, and discounts). Third-party fees that are not recognized by [!DNL Payment Services] can cause a mismatch between the line item total and the order total, which may prevent checkout from completing.
+
+## View line items
+
+To view line items:
 
 1. Navigate to your [PayPal merchant dashboard](https://www.paypal.com/merchant/){target=_blank}.
 

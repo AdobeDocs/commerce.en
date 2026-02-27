@@ -2,8 +2,60 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 13 16:47:42 2026
+updated: Fri Feb 20 15:40:08 2026
 entries:
+- description: Updated [AEM Assets Integration overview](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
+    with a new tutorial video for Adobe Commerce as a Cloud Service (ACCS) users.
+  versions: ''
+  type: feedback, major-update
+  date: February 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/430
+  merge_commit: 1cef99b8284aef05e34ab8ca65b776492ec5bee7
+  contributor: del
+  membership:
+  labels:
+  - feedback
+  - major-update
+- description: Updated the Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with the latest Sandbox release.
+  versions: ''
+  type: feedback, major-update
+  date: February 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/428
+  merge_commit: c396ca7cbfe7f00ec9e164c397ff0438aa5c6f87
+  contributor: jhoover
+  membership:
+  labels:
+  - feedback
+  - core-saas
+  - major-update
+- description: Updated [Custom automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)
+    with support for the `skip` sync parameter, allowing custom matchers to bypass
+    sync processing when mappings have not changed.
+  versions: ''
+  type: major-update
+  date: February 18, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/426
+  merge_commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
+  contributor: del
+  membership:
+  labels:
+  - major-update
+- description: 'Major update to [Catalog Service Release Notes](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes):
+    restructured intro, added Storefront Catalog Service releases v1.46–v1.36 and
+    GA, expanded feature descriptions with GraphQL examples (attribute filtering,
+    tier pricing, Product Layers, recommendationsByUnitIds, and more), and aligned
+    previous versions with current formatting and links.'
+  versions: ''
+  type: major-update
+  date: February 17, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/410
+  merge_commit: e31961c92342cce96433ef42861e807249a75eaf
+  contributor: meker
+  membership:
+  labels:
+  - major-update
+  - release-notes
 - description: Improves the AEM Assets Integration documentation by clarifying requirements
     and adding [CLI command documentation for metadata export](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data).
   versions: ''
