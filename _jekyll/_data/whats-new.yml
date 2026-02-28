@@ -2,8 +2,61 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 20 15:40:08 2026
+updated: Fri Feb 27 18:04:33 2026
 entries:
+- description: Updated [Bulk data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion)
+    with an important note that Catalog configuration is not imported automatically.
+  versions: ''
+  type: feedback
+  date: February 26, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/447
+  merge_commit: 1ac84e8f10f61a6b8f995f348d4872773d2890e8
+  contributor: jhoover
+  membership:
+  labels:
+  - feedback
+  - core-saas
+  - editorial
+- description: Updated [Payment Services](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
+    with v2.14.0 release documentation, including Alternative Payment Methods (APMs)
+    for European markets, Express checkout buttons, and Buyer's Country sandbox configuration.
+  versions: ''
+  type: major-update, new-topic
+  date: February 26, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/429
+  merge_commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+  contributor: del
+  membership:
+  labels:
+  - major-update
+  - new-topic
+- description: The [AI coding developer tooling for Adobe Commerce App Builder](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools),
+    [Ratings extension tutorial](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension),
+    [Shipping method extension tutorial](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension),
+    and the [Tutorial prerequisites](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites)
+    pages are now available.
+  versions: ''
+  type: new-topic
+  date: February 25, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/434
+  merge_commit: 508a6b330b240b1038d2a9705a017d540816cc95
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - new-topic
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service with the latest release to production environments.
+  versions: ''
+  type: major-update
+  date: February 24, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/445
+  merge_commit: a0c13760783ee8d492eed6e2c989153ded5afa47
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: Updated [AEM Assets Integration overview](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
     with a new tutorial video for Adobe Commerce as a Cloud Service (ACCS) users.
   versions: ''
