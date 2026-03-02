@@ -101,6 +101,30 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.14.0
+
+_February 26, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-6400 --> Added a **[!UICONTROL Line Items Enabled]** configuration to enable or disable sending line items and amount breakdown to PayPal. This setting helps resolve checkout issues when third-party extensions add custom fees that are not supported by [!DNL Payment Services]. See [Line Items](line-items.md) for more information.
+
+![New](../assets/new.svg)<!-- PAY-6457 --> Added [Express payment buttons at the start of checkout](payments-options.md#express-checkout-buttons) to encourage faster checkouts.
+
+![New](../assets/new.svg)<!-- PAY-6458 --> Added support for [Local Payment Methods (LPMs)](payments-options.md#local-payment-methods) for region-specific and local payment options. Merchants can enable or disable available LPMs directly within [Commerce](configure-admin.md#local-payment-methods).
+
+![New](../assets/new.svg)<!-- PAY-6377 --> Added a [Buyer's country](sandbox.md#buyers-country) sandbox configuration to simulate the buyer's location and control which payment methods are rendered.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6458 --> Improved compatibility with PayPal's fraud filters by passing buyer email address data, enhancing fraud protection capabilities.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6413 --> Fixed an issue where PayPal checkout could not be completed for virtual products due to a missing shipping address.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6450 --> Fixed an issue where PayPal button checkout errors were not handled correctly on product detail pages, minicart, cart, and top of checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6453 --> Disabled server-side shipping callbacks flow on GraphQL checkout to prevent conflicts on checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6456 --> Updated the [Apple Pay](configure-admin.md#apple-pay) configuration description to clarify that Apple rejects payments from unverified domains. Merchants must verify any domains where Apple Pay buttons are used. Country restrictions apply.
+
 ## v2.13.3
 
 _January 14, 2026_

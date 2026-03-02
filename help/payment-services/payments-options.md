@@ -162,6 +162,43 @@ To **capture payments with your existing credit card provider _and_ PayPal payme
 1. Turn _Off_ the **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
 1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
+## Local Payment Methods
+
+Local Payment Methods (LPMs) provide support for region-specific and local payment methods, such as bank transfers and localized payment solutions, alongside existing card-based options. Merchants can enable or disable available LPMs directly within the Commerce configuration. LPMs expand Adobe's payment capabilities, support European market needs, improve checkout localization, and help increase conversion, merchant adoption, and buyer satisfaction.
+
+Available LPMs include:
+
+| Payment Method | Countries | Currency |
+|----------------|-----------|----------|
+| Bancontact | Belgium | EUR |
+| BLIK | Poland | PLN |
+| eps | Austria | EUR |
+| iDEAL | Netherlands | EUR |
+| MyBank | Italy | EUR |
+| Przelewy24 | Poland | EUR, PLN |
+
+LPMs are displayed to customers based on their billing address and their website's base currency. A payment method appears only when both conditions match the payment method's requirements.
+
+See [Local Payment Methods configuration](configure-admin.md#local-payment-methods) for more information.
+
+## Express checkout buttons
+
+To encourage a faster checkout experience, express payment options are available at the beginning of the checkout flow. Customers can complete their purchase using PayPal, PayPal Pay Later, Venmo, Apple Pay, or Google Pay.
+
+Once enabled, express checkout buttons are displayed at the beginning of the checkout process, providing a faster path to purchase for customers who prefer digital wallet payment methods.
+
+To enable express checkout buttons, configure each payment method individually:
+
+* **PayPal and Pay Later**: Enable **[!UICONTROL Show buttons at start of checkout]** in [PayPal payment buttons](configure-admin.md#paypal-payment-buttons) settings.
+
+* **Apple Pay**: Enable **[!UICONTROL Show Apple Pay at start of checkout]** in [Apple Pay](configure-admin.md#apple-pay) settings.
+
+* **Google Pay**: Enable **[!UICONTROL Show Google Pay at start of checkout]** in [Google Pay](configure-admin.md#google-pay) settings.
+
+>[!NOTE]
+>
+>Payment method availability depends on the buyer's location. For sandbox testing, use [Buyer's country](sandbox.md#buyers-country) configuration to simulate different regions. For example, Venmo is available only in the US. Pay Later is available in the US and UK.
+
 ## Checkout Options
 
 With [!DNL Payment Services], you can configure the checkout experience for Adobe Commerce to best suit your shoppers' preferences and behaviors. Features such as credit card [vaulting](vaulting.md) and order auto-voiding ensure a seamless, hassle-free transaction for your customers. 

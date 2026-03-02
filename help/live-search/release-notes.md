@@ -8,7 +8,7 @@ exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 
 These release notes describe the latest versions of [!DNL Live Search].
 
-Support is provided for the latest released version. Release notes for older versions are provided for reference.
+Support is provided for the latest released Live Search version. Release notes for older versions are provided for reference.
 Updates include:
 
 ![New](../assets/new.svg) New features
@@ -95,6 +95,14 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.6.1
+
+_February 19, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an error that could occur under certain conditions related to the Visual Merchandiser extension’s functionality.
 
 ## [!DNL Live Search] 4.6.0
 

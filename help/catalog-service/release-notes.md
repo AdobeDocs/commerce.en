@@ -27,6 +27,12 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### v1.48 release
+
+_February 19, 2025_
+
+![New](../assets/new.svg) The `categoryTree` query in the GraphQL API now returns category descriptions, images, and SEO meta tags. This update delivers the data that storefront developers need to display category imagery and improve search engine optimization with proper meta titles, descriptions, and keywords. Only supported on Commerce implementations using the [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts<<!--DATA-6933-->
+
 ### v1.47 release
 
 _February 12, 2025_
