@@ -40,17 +40,9 @@ The [`generateCustomerToken` GraphQL mutation](https://developer.adobe.com/comme
 
 A new admin REST endpoint enables generating one-time password (OTP) tokens for customers. The endpoint includes configurable OTP lifetime, secure hashed token storage, and a required `reason` field for audit logging when the token is generated for "Login as Customer" purposes. <!-- ACCS-404, ACCS-419, ACCS-426 -->
 
-### Manage large B2B shared catalogs without performance issues
-
-A new `enable_large_shared_catalog_limitation` configuration option is available for B2B merchants with very large shared catalogs. When enabled, it hides the [!UICONTROL **Set Pricing and Structure**] action in the Shared Catalog grid and the Shared Catalog section on the Admin product edit page, preventing performance issues when working with large catalog data sets. <!-- ACCS-344 -->
-
 ### Send automated email reminders for cart and wishlist inactivity
 
 The Email Reminder module (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service], allowing merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
-
-### Send custom emails on demand through the REST API
-
-A new `POST /V1/custom-email/send` REST endpoint allows you to send emails on demand by providing an email template ID, recipient email, and template variables. This enables external systems to trigger transactional or custom emails through Commerce. <!-- ACCS-325 -->
 
 ### Subscribe to category deletion events webhook
 
