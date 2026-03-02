@@ -9,10 +9,6 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
->[!NOTE]
->
->This documentation describes a product in early-access development and does not reflect all functionality intended for general availability.
-
 ## Architecture and experience
 
 The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project as shown in the following figure:
@@ -89,7 +85,7 @@ If you have any of the following extensions installed, uninstall them before ins
 
 Data associated with these extensions is still available in the Commerce database. However, it is not exported to [!DNL Adobe Commerce Optimizer] when the Connector is enabled. To implement the search and merchandising capabilities provided by these extensions after enabling the Connector, configure them from the [[!DNL Adobe Commerce Optimizer] Admin UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
 
->[!BEGINSHADEBOX]
+>[ENDSHADEBOX]
 
 ## Get Started
 
