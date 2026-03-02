@@ -12,7 +12,6 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
-
 ## v1.0.9
 
 _March 01, 2026_
