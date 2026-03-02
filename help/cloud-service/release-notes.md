@@ -36,10 +36,6 @@ The limit on the number of websites, stores, and store views was previously limi
 
 The [`generateCustomerToken` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} now returns typed error codes alongside error messages, enabling storefronts to display specific UI messages per failure reason. Available error codes include: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED`, and `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
-### Generate OTP customer tokens through the Admin REST API
-
-A new admin REST endpoint enables generating one-time password (OTP) tokens for customers. The endpoint includes configurable OTP lifetime, secure hashed token storage, and a required `reason` field for audit logging when the token is generated for "Login as Customer" purposes. <!-- ACCS-404, ACCS-419, ACCS-426 -->
-
 ### Send automated email reminders for cart and wishlist inactivity
 
 The Email Reminder module (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service], allowing merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
