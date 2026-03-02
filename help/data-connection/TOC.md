@@ -9,7 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 # [!DNL Data Connection] extension for Adobe Commerce {#data-connection}
 
-- [Guide Overview](overview.md)
+- [[!DNL Data Connection] Introduction](overview.md)
 - [HIPAA Readiness for Commerce Services](hipaa-readiness.md)
 - [How Commerce Services Handles Privacy Requests](handle-privacy-request.md)
 - [Release Notes](release-notes.md)

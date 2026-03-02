@@ -18,11 +18,11 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 
 | Service | Availability |
 | --- | --- |
-|[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe AI| Adobe Commerce|
-|[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe AI | Adobe Commerce|
-|[[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce and Magento Open Source|
-|[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
-|[[!DNL Data Connection]](/help/data-connection/overview.md)|Adobe Commerce|
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe AI | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe AI | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce and Magento Open Source |
+| [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
+| [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
 ## Architecture
 
@@ -70,7 +70,7 @@ The license owner is typically the Primary Contact on the Adobe Commerce account
 
 [!DNL Commerce] instances must be configured with a SaaS project and a SaaS data space so that [!DNL Commerce Services] can send data to the right location. A SaaS project groups all SaaS data spaces. The SaaS data spaces are used to collect and store data that enables [!DNL Commerce Services] to work. Some of this data may be exported from the [!DNL Commerce] instance and some may be collected from shopper behavior on the storefront. That data is then persisted to secure cloud storage.
 
-For [!DNL Product Recommendations], the SaaS data space contains catalog and behavioral data. You can point a [!DNL Commerce] instance to a SaaS data space by [selecting it](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) in the [!DNL Commerce] configuration.
+For [!DNL Product Recommendations] and [!DNL Live Search], the SaaS data space contains catalog and behavioral data. You can point a [!DNL Commerce] instance to a SaaS data space by [selecting it](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) in the [!DNL Commerce] configuration.
 
 >[!WARNING]
 >
@@ -85,6 +85,8 @@ If you cannot find Live Search configuration fields in the Admin, verify that yo
 >Deleting a key that is still in active use immediately disrupts connected services.
 
 Before deleting an API key, generate and securely store a replacement key. Update all integrations to use the new key, and confirm that dependent services are working as expected.
+
+If you don’t see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won’t be available in your Adobe Commerce environment.
 
 On the API key to remove, click **[!UICONTROL Delete]**. When prompted,  confirm the operation to permanently remove the key.
 

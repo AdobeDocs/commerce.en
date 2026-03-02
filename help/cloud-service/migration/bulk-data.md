@@ -91,6 +91,10 @@ After the data loads, the catalog data automatically flows from the SaaS tenant 
 
 The Catalog Service shares this data with Live Search and Product Recommendations. No manual intervention is required for this process. The data is available in all services once the ingestion completes.
 
+>[!IMPORTANT]
+>
+>The configuration settings are not imported automatically. Before beginning the data migration process, take note of your current Catalog configuration settings in the [!DNL Commerce Admin]. Then implement the same configuration in the target [!DNL Adobe Commerce as a Cloud Service] environment.
+
 ### Data integrity verification
 
 After migration, CDMS performs the following automatic data integrity checks to ensure the accuracy and completeness of the migrated data:

@@ -12,6 +12,7 @@ feature: CMS, Page Content
   - [Configure the AEM Assets project to support Commerce metadata](get-started/configure-aem.md)
   - [Install Adobe Commerce packages](get-started/configure-commerce.md)
   - [Configure the integration](get-started/setup-synchronization.md)
+  - [Configure Commerce Optimizer](get-started/configure-aco.md)
   - [Configure your storefront](get-started/configure-storefront.md)
   - [View and manage logs](get-started/logs.md)
   - [Migrate data](get-started/migrate-data.md)
