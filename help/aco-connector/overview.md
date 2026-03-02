@@ -85,7 +85,7 @@ If you have any of the following extensions installed, uninstall them before ins
 
 Data associated with these extensions is still available in the Commerce database. However, it is not exported to [!DNL Adobe Commerce Optimizer] when the Connector is enabled. To implement the search and merchandising capabilities provided by these extensions after enabling the Connector, configure them from the [[!DNL Adobe Commerce Optimizer] Admin UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
 
->[ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 ## Get Started
 
