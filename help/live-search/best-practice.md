@@ -129,20 +129,20 @@ Choosing which attributes to make searchable has a big impact on search quality.
 
 **Recommended searchable attributes:**
 
-- Product name - High intent, directly describes the product.
-- Primary description - Concise product details shoppers expect to match.
-- Brand - Shoppers frequently search by brand.
-- Model number/style - Specific identifiers with clear intent.
-- Key features - Important distinguishing characteristics (for example, "waterproof," "wireless").
-- Material/Fabric - For fashion and furniture categories.
+- **Product name** - High intent, directly describes the product.
+- **Primary description** - Concise product details shoppers expect to match.
+- **Brand** - Shoppers frequently search by brand.
+- **Model number/style** - Specific identifiers with clear intent.
+- **Key features** - Important distinguishing characteristics (for example, "waterproof," "wireless").
+- **Material/Fabric** - For fashion and furniture categories.
 
 **Avoid making these attributes searchable:**
 
-- Long descriptions or specifications - Too much text creates noise and unexpected matches.
-- Category paths - Can cause irrelevant results due to broad taxonomy terms.
-- Internal SKU codes with mixed characters - Creates false positives on partial matches.
-- Administrative fields - Internal notes or warehouse codes not relevant to shoppers.
-- HTML content or formatting tags - Technical content does not improve relevance.
+- **Long descriptions or specifications** - Too much text creates noise and unexpected matches.
+- **Category paths** - Can cause irrelevant results due to broad taxonomy terms.
+- **Internal SKU codes with mixed characters** - Creates false positives on partial matches.
+- **Administrative fields** - Internal notes or warehouse codes not relevant to shoppers.
+- **HTML content or formatting tags** - Technical content does not improve relevance.
 
 #### Common issues caused by incorrect searchable attributes
 
