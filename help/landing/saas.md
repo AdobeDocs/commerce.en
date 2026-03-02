@@ -77,7 +77,7 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 ### Delete an API key {#delapikey}
 
-When you click Delete on an API key, you are prompted to confirm the deletion. After you confirm, the key is permanently removed. 
+On the API key to remove, click **[!UICONTROL Delete]**. When prompted,  confirm the the operation to permanently remove the key.
 
 >[!WARNING]
 >
