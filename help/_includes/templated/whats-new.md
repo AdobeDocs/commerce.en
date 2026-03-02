@@ -4,6 +4,80 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### February 26, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">Bulk data migration tool</a> with an important note that Catalog configuration is not imported automatically.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Payment Services</a> with v2.14.0 release documentation, including Alternative Payment Methods (APMs) for European markets, Express checkout buttons, and Buyer's Country sandbox configuration.</p>
+</td>
+      <td>
+        Major update, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6727102c54e0ac81df289ecd66ec61156662b8b9">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 25, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>The <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools">AI coding developer tooling for Adobe Commerce App Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">Ratings extension tutorial</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension">Shipping method extension tutorial</a>, and the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Tutorial prerequisites</a> pages are now available.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/508a6b330b240b1038d2a9705a017d540816cc95">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 24, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service with the latest release to production environments.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0c13760783ee8d492eed6e2c989153ded5afa47">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 19, 2026
 
 <table style="table-layout:auto;">
