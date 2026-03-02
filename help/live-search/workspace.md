@@ -60,6 +60,10 @@ The following attributes are always searchable:
 - `name`
 - `categories`
 
+>[!TIP]
+>
+>Choosing which attributes to make searchable has a big impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the Best Practices guide for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
+
 ### Attribute behavior in complex products
 
 For complex product types (configurable, bundle, and grouped products), [!DNL Live Search] indexes attribute values from both parent and child products, allowing a parent product to be associated with multiple values for the same attribute. This enables variant-based filtering; for example, a configurable shirt appears when filtering by "blue" if any variant is blue, even if the parent product does not have a color set.
