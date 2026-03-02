@@ -14,7 +14,7 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## v1.0.9
 
-_March 09, 2026_
+_March 01, 2026_
 
 General availability release of the Adobe Commerce Optimizer Connector.
 
