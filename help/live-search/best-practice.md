@@ -13,7 +13,7 @@ There are several key factors that determine the relevance and effectiveness of 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. To directly impact the success of your merchandising strategy:
     - Set up the correct attributes as searchable with their corresponding weight.
     - Make sure that the data within those attributes is relevant.
-- A well-designed search experience builds trust with customers and instills confidence that they find what they need.
+- A well-designed search experience builds trust with customers and instills confidence that they can find what they need.
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
 - Faceted navigation allows shoppers to refine their search and get relevant results quickly.
 
@@ -125,7 +125,7 @@ Learn more about search rules:
 
 Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
 
-Choosing the right attributes to make searchable is critical for search quality. While it may be tempting to make many attributes searchable to maximize results, this often degrades relevance and creates unexpected matching behavior. This section provides guidance on selecting searchable attributes strategically.
+Choosing which attributes to make searchable has a big impact on search quality. Making too many attributes searchable can reduce relevance and cause unexpected matches, even if it increases the number of results returned. This section explains how to select searchable attributes deliberately to balance coverage and relevance.
 
 **Recommended searchable attributes:**
 

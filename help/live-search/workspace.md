@@ -62,7 +62,7 @@ The following attributes are always searchable:
 
 >[!TIP]
 >
->Choosing the right attributes to make searchable is critical for search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the Best Practices guide for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
+>Choosing which attributes to make searchable has a big impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the Best Practices guide for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
 
 ### Attribute behavior in complex products
 
