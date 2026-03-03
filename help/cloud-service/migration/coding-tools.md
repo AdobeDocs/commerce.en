@@ -51,10 +51,6 @@ This will update the tools to the latest version.
 
 ## Installation
 
->[!NOTE]
->
->If you only want to install the Documentation RAG service and not the entire AI coding tools package, see [Documentation RAG service](./doc-rag.md).
-
 1. Install the latest [Adobe I/O CLI](https://github.com/adobe/aio-cli) globally:
 
    ```bash
@@ -173,8 +169,6 @@ aio auth login
 >[!NOTE]
 >
 >Some features of the MCP server will work without logging in, but the RAG (Retrieval-Augmented Generation) service will not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
->
->To install the RAG service independently, see [Documentation RAG service](./doc-rag.md).
 
 ### Cursor
 
