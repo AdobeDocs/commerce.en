@@ -21,9 +21,6 @@ The following tools are required for both extension and storefront development i
    ```bash
    node --version
    npm --version
-
-   ```bash
-   git --version
    ```
 
 * Install [Git](https://git-scm.com) - Verify your installation:
