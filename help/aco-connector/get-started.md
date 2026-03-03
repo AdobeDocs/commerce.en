@@ -22,13 +22,6 @@ Install and configure the Commerce Optimizer Connector to sync your Adobe Commer
 
 * Admin access to an [Adobe Commerce Optimizer sandbox instance](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
-* If you have any of the following extensions installed, uninstall them before installing the Commerce Optimizer Connector:
-
-  * Adobe Commerce Live Search (`magento/live-search`)
-  * Adobe Commerce Product Recommendations (`magento/product-recommendations`)
-  * Adobe Commerce Catalog Service (`magento/catalog-service`, `magento/catalog-service-installer`)
-  * Data Management Dashboard (`magento-catalog-sync-admin`)
-
 The Adobe Commerce user configuring the integration must have:
 
 * Administrator access to the Adobe Commerce Admin.
