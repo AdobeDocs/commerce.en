@@ -24,7 +24,7 @@ The following items are currently available in Sandbox environments of [!DNL Ado
 
 >[!BEGINSHADEBOX]
 
-### New App Builder AI coding tools and tutorials
+### App Builder AI coding tools and tutorials
 
 You can now use the [AI coding developer tooling](./migration/coding-tools.md) to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
 
@@ -46,7 +46,7 @@ The [`generateCustomerToken` GraphQL mutation](https://developer.adobe.com/comme
 
 ### Send automated email reminders for cart and wishlist inactivity
 
-The Email Reminder module (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service], allowing merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
+The [Email Reminder module](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service], allowing merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
 
 ### Subscribe to category deletion events webhook
 
