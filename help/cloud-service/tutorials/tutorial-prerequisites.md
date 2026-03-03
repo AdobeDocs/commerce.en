@@ -26,6 +26,12 @@ The following tools are required for both extension and storefront development i
    git --version
    ```
 
+* Install [Git](https://git-scm.com) - Verify your installation:
+
+  ```bash
+  git --version
+  ```
+
 * Bash shell
   * macOS/Linux: No installation required
   * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
@@ -285,10 +291,16 @@ npm install
 
 ### Install the storefront AI tools
 
-<!-- TODO: Update this section when the aio commerce CLI plugin supports a dedicated storefront tools-setup command. -->
-
-Set up the AI-assisted development tools in the `storefront` folder. Run the following command and select **[!UICONTROL Commerce Storefront]** when prompted to select a project type:
+Set up the AI-assisted development tools in the `storefront` folder. Run the following command from the root of your boilerplate project:
 
 ```bash
 aio commerce extensibility tools-setup
 ```
+
+The command walks you through two prompts:
+
+1. **Select a starter kit** — Choose **AEM Boilerplate Commerce**.
+
+1. **Select your coding agent** — Choose your agent from the list of supported agents.
+
+The command installs the `@adobe-commerce/commerce-extensibility-tools` package as a dev dependency, copies the skill files into your agent's skills directory, and configures MCP (Model Context Protocol) so your agent can access Commerce documentation search tools.
