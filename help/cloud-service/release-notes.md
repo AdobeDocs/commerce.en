@@ -24,6 +24,14 @@ The following items are currently available in Sandbox environments of [!DNL Ado
 
 >[!BEGINSHADEBOX]
 
+### New App Builder AI coding tools and tutorials
+
+You can now use the [AI coding developer tooling](./migration/coding-tools.md) to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
+
+* [Tutorial prerequisites](./tutorials/tutorial-prerequisites.md)
+* [Ratings extension tutorial](./tutorials/ratings-extension.md)
+* [Shipping method extension tutorial](./tutorials/shipping-method-extension.md)
+
 ### Access App Builder app management through the Admin
 
 The [!DNL Commerce Admin] now includes a menu item linking to [App Management](https://developer.adobe.com/commerce/extensibility/app-management/){target="_blank"}, a unified shell for managing [!DNL App Builder] apps associated with the Commerce instance. This addition is powered by the latest Admin UI SDK update. <!-- CEXT-5755 -->
