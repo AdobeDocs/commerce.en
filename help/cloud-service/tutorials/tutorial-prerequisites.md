@@ -35,7 +35,7 @@ The following tools are required for both extension and storefront development i
 
 * Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
 
-## Cloud Service prerequisites
+## [!DNL Adobe Commerce as a Cloud Service] prerequisites
 
 * Install the [!DNL Adobe I/O CLI]
 
