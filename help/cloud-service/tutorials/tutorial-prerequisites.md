@@ -16,14 +16,11 @@ This page lists the prerequisites and setup steps for [!DNL Adobe Commerce as a 
 
 The following tools are required for both extension and storefront development in this tutorial.
 
-* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
+* [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher): Verify your installation using the following command:
 
    ```bash
    node --version
    npm --version
-   ```
-
-* Install [Git](https://git-scm.com). Verify your installation:
 
    ```bash
    git --version
