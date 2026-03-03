@@ -260,7 +260,7 @@ This process creates the MCP configuration (`.<agent>/mcp.json`), the skills dir
 
 ## Storefront prerequisites
 
-The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and display product ratings in your store.
+The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of the [Ratings extension tutorial](./ratings-extension.md) and display product ratings in your store.
 
 * [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
 
