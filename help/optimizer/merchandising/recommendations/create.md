@@ -15,7 +15,11 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
 
-1. In the **Catalog View** field, select the catalog view where you want the recommendation to be available. 
+1. In the **Catalog View** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
+
+   >[!IMPORTANT]
+   >
+   >This feature is currently in beta.
 
 1. Click **Create recommendation**.
 

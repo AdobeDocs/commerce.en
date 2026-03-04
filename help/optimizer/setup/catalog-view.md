@@ -71,6 +71,14 @@ The Catalog views page updates to display the new catalog view.​
 
 After you complete these steps, the catalog view is now configured to display products and pricing based on your selected sources and policies.
 
+### Specify catalog views for recommendations and product discovery rules
+
+>[!IMPORTANT]
+>
+>This feature is currently in beta.
+
+You can specify a catalog view when you [create recommendation units](../merchandising/recommendations/create.md) or [merchandising rules](../merchandising/rules/add.md).
+
 ## Catalog layers
 
 Catalog layers allow you to modify product data within a catalog view without changing the original source data. Layers apply changes to specific product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to safely customize products and revert changes at any time.

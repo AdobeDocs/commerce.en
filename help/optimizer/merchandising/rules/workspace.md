@@ -86,6 +86,10 @@ The details panel shows the rule name, status, conditions and events, start and 
 
 ## Select catalog view
 
+>[!IMPORTANT]
+>
+>This feature is currently in beta.
+
 The **[!UICONTROL Catalog View]** selector on the Merchandising Rules page does two things:
 
 1. **Filter the table** – Shows only rules (and their details) that apply to the selected catalog view.
