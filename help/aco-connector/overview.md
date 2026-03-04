@@ -7,7 +7,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 # Adobe Commerce Optimizer Connector
 
-The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
+The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, site optimization, and fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
 ## Architecture and experience
 
@@ -20,9 +20,9 @@ When data is exported from Commerce to Commerce Optimizer:
 * Commerce store views are mapped to catalog sources
 * Websites are mapped to price books
 
-The associated catalog and price data is exported and later used to create catalog views and optionally define a policy to filter the catalog and price data for specific business use cases.
+The associated catalog and price data is exported and later used to create catalog views and optionally define policies to filter the catalog and price data for specific business use cases.
 
-Instead of configuring and managing Commerce Services (Live Search and Product Recommendations) from the Commerce Admin, you use [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/merchandising/overview.md) to manage product discovery (Live Search) and recommendations (Product Recommendations) rule configuration. The Adobe Commerce instance becomes the data source for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
+When the connector is enabled, you can also configure and manage merchandising rules for product discovery and rules for recommendations using [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/overview.md#quick-tour) The Adobe Commerce instance becomes the data source for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
 
 ## Workflows
 
@@ -42,6 +42,6 @@ The Connector enables several key workflows:
 
 * **Deploy your Commerce Storefront on Edge Delivery Services**
 
-  After setting up the integration with [!DNL Adobe Commerce Optimizer], you can set up and deploy a Commerce Storefront on Edge Delivery Services to deliver ultra-fast performance, scalability, seamless content authoring, integrated personalization, and reduced operational costs using the composable, API-driven architecture and modular components available with [!DNL Adobe Commerce Optimizer].
+  After setting up the integration with [!DNL Adobe Commerce Optimizer], you can deploy a Commerce Storefront on Edge Delivery Services. This delivers ultra-fast performance, scalability, seamless content authoring, and integrated personalization using a composable, API-driven architecture.
 
 For details on how to set up the integration and enable these workflows, see [Get Started](get-started.md).
