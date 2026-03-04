@@ -69,42 +69,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue that caused some webhooks fields to display incorrectly in the [!DNL Commerce Admin] UI. <!-- CEXT-5874 -->
 
-### Internal (TO BE DELETED)
-
-The following infrastructure improvements are included:
-
-* Upgraded [!DNL Adobe Commerce] core from 2.4.8-p3 to 2.4.8-p4. <!-- CCSAAS-4588 -->
-
-* Fixed guest checkout session handling so that the cart quote is properly associated and maintained throughout the guest checkout flow. <!-- ACCS-261 -->
-
-* Extended GraphQL error logging to capture full exception stack traces, improving debuggability. <!-- ACCS-305 -->
-
-* Ported Company Resolver GraphQL test suite to the CCSaaS test environment. <!-- CCSAAS-2122 -->
-
-* Fixed Admin scenario failures in PAT devbox CI builds. <!-- ACCS-351 -->
-
-* Added product creation scenario to PAT trend builds. <!-- CCSAAS-4498 -->
-
-* Ported BundleRequisitionList GraphQL test suite to the CCSaaS test environment. <!-- CCSAAS-2113 -->
-
-* Parallelized GraphQL API-functional test execution in CI to reduce feedback time. <!-- CCSAAS-4607 -->
-
-* Updated README documentation. <!-- ACCS-404 -->
-
-* Expanded Cursor AI rules for CCSaaS repo context. <!-- PR #1295 -->
-
-* Removed stale migration files. <!-- PR #1296 -->
-
-* Disabled template processing during performance data generation. <!-- PR #1297 -->
-
-* Added Cursor rules and Magento CLI documentation. <!-- PR #1300 -->
-
-* Added local database helper script for development. <!-- PR #1305 -->
-
-* Introduced Cursor security coding rules. <!-- PR #1306 -->
-
-* Optimized CI static analysis to run only on changed files. <!-- PR #1309 -->
-
 {{accs-release}}
 
 >[!ENDSHADEBOX]
