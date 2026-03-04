@@ -13,7 +13,7 @@ The Adobe Commerce Optimizer Connector is the integration bridge that synchroniz
 
 The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project as shown in the following figure:
 
-![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.svg){width="600" zoomable="yes"}
+![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
 
 When data is exported from Commerce to Commerce Optimizer:
 
