@@ -47,6 +47,7 @@ recommendations: noDisplay
    - [Catalog Layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price Books](./setup/pricebooks.md)
+   - [Product Visuals](./setup/product-visuals.md)
    - [Data Sync](./setup/data-sync.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)
