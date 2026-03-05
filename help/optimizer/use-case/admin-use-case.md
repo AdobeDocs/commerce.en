@@ -3,7 +3,7 @@ title: Storefront and Catalog Administrator End-to-End Use Case
 description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog using catalog views and policies and how to set up your storefront based on your catalog configuration.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 ---
 # Storefront and Catalog Administrator End-to-End Use Case
@@ -20,7 +20,7 @@ This use case is designed for administrators and developers who want to learn ho
 
 Before beginning this tutorial, ensure you have the following prerequisites in place:
 
-- **Adobe Commerce Optimizer Instance**
+- **[!DNL Adobe Commerce Optimizer] Instance**
   - Access to a test instance in Cloud Manager
   - See [Get Started](../get-started.md) for setup instructions
 
@@ -57,7 +57,7 @@ By the end of this article, you will:
 
 - Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with its performant and scalable catalog data model.
 - Learn how the catalog data model integrates with platform-agnostic storefront components built by Adobe.
-- Learn how to use Adobe Commerce Optimizer catalog views and policies to create custom catalog views and data access filters, and send the data to an Adobe Commerce storefront powered by Edge Delivery.
+- Learn how to use [!DNL Adobe Commerce Optimizer] catalog views and policies to create custom catalog views and data access filters, and send the data to an Adobe Commerce storefront powered by Edge Delivery.
 
 ## Business scenario – Carvelo Automobile
 
@@ -386,7 +386,7 @@ Now that you have updated the storefront configuration to use the Celport catalo
 
       Notice the different part types available and notice the prices assigned to the Kingsbluff catalog view.
 
-    These experiments demonstrate the flexibility of Adobe Commerce Optimizer—you can quickly switch between different catalog views and price books to create customized shopping experiences for different audiences without duplicating your catalog data.
+    These experiments demonstrate the flexibility of [!DNL Adobe Commerce Optimizer]—you can quickly switch between different catalog views and price books to create customized shopping experiences for different audiences without duplicating your catalog data.
 
 ## Troubleshooting
 
@@ -416,13 +416,13 @@ If you encounter issues during this tutorial, try the following solutions:
 
 **Problem:** No products displaying
 
-- **Solution:** Verify that the price book ID matches the one available in your Adobe Commerce Optimizer instance
+- **Solution:** Verify that the price book ID matches the one available in your [!DNL Adobe Commerce Optimizer] instance
 
 **Problem:** Search returning no results
 
 - **Solution:** Confirm that the catalog view policies allow the searched product category
 
-For additional help, see the [Adobe Commerce Optimizer documentation](../overview.md) or contact Adobe support.
+For additional help, see the [[!DNL Adobe Commerce Optimizer] documentation](../overview.md) or contact Adobe support.
 
 ## Summary
 
@@ -435,7 +435,7 @@ In this tutorial, you successfully:
 
 ## Next steps
 
-To continue learning about Adobe Commerce Optimizer:
+To continue learning about [!DNL Adobe Commerce Optimizer]:
 
 - Explore [merchandising features](../merchandising/overview.md) to personalize the shopping experience
 - Learn about [advanced policy configurations](../setup/policies.md)

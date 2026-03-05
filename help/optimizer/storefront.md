@@ -117,7 +117,7 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    
    >[!NOTE]
    >
-   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in Adobe Commerce Optimizer to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
+   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in [!DNL Adobe Commerce Optimizer] to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
 
 1. Save the configuration file.
 
@@ -195,7 +195,7 @@ Use the following guidance to check common issues:
 | **Code Sync installation fails** | Unable to complete Code Sync setup | <ul><li>Ensure you have admin access to your GitHub organization.</li><li>Try using a personal repository instead of an organization.</li><li>Check GitHub permissions and try again.</li></ul> |
 | **Site not loading** | 404 or connection errors | <ul><li>Verify your site URL format: `https://main--{SITE}--{ORG}.aem.live`</li><li>Check that the Code Sync app is properly installed.</li><li>Ensure that the repository is public or properly configured.</li></ul> |
 | **No product data displayed** | Product pages show placeholders or errors | <ul><li>Verify your configuration values in `config.json`</li><li>In the [!DNL Adobe Commerce Optimizer] instance, check the Data Sync page to verify that sample products are loaded. If no products are available, reload the sample data or add a product using the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Wait a few minutes for configuration changes to propagate.</li><li>Try to retrieve the product details using the Merchandising Service [products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li></ul>|
-| **Search returns no results** | Empty search results page |<ul><li>Verify that you can retrieve the product search results using the Merchandising Services [productSearch query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li><li>Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer].</li><li>In Adobe Commerce Optimizer, verify the configuration of the policies, locale, and price books that you used in the storefront header configuration.</li><li>Verify the [attribute metadata settings](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) are set correctly for search.</li></ul>|
+| **Search returns no results** | Empty search results page |<ul><li>Verify that you can retrieve the product search results using the Merchandising Services [productSearch query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li><li>Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer].</li><li>In [!DNL Adobe Commerce Optimizer], verify the configuration of the policies, locale, and price books that you used in the storefront header configuration.</li><li>Verify the [attribute metadata settings](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) are set correctly for search.</li></ul>|
 
 ### Validation checklist
 
@@ -213,7 +213,7 @@ Before proceeding to the next steps, ensure that your storefront is functioning 
 If issues persist:
 
 * Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
-* Check the [Adobe Commerce Optimizer developer guide](https://developer.adobe.com/commerce/services/optimizer/)
+* Check the [[!DNL Adobe Commerce Optimizer] developer guide](https://developer.adobe.com/commerce/services/optimizer/)
 * Visit the [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Next steps

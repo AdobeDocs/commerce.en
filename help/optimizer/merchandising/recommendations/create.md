@@ -1,7 +1,7 @@
 ---
 title: Create and Manage Recommendations
 description: Learn how to create and manage recommendations.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 ---
 # Create and Manage Recommendations
@@ -13,7 +13,7 @@ _Recommendation unit_
 
 When you activate the recommendation unit, Adobe Commerce starts to [collect data](../../manage-results/recommendation-performance.md) to measure impressions, views, clicks, and so on. The Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
 
-1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
+1. On the _[!DNL Adobe Commerce Optimizer]_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
 
 1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -97,7 +97,7 @@ After creating a recommendation, you need to retrieve its ID to implement the re
 
 You can edit, deactivate, or delete an existing recommendation.
 
-1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations**.
+1. On the _[!DNL Adobe Commerce Optimizer]_ sidebar, go to _Merchandising_ > **Recommendations**.
 
 1. Select the recommendation that you want to modify.
 

@@ -7,7 +7,7 @@ recommendations: noDisplay
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [What is Adobe Commerce Optimizer?](overview.md)
+- [What is [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [Get Started](get-started.md)
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
