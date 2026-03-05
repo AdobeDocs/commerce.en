@@ -16,7 +16,64 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## February 2026 - release #2 {#latest}
+## March 2026 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items are currently available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service] and will be released to Production environments on March 09, 2026.
+
+>[!BEGINSHADEBOX]
+
+### App Builder AI coding tools and tutorials
+
+You can now use the [AI coding developer tooling](./migration/coding-tools.md) to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
+
+* [Tutorial prerequisites](./tutorials/tutorial-prerequisites.md)
+* [Ratings extension tutorial](./tutorials/ratings-extension.md)
+* [Shipping method extension tutorial](./tutorials/shipping-method-extension.md)
+
+### Access App Builder app management through the Admin
+
+The [!DNL Commerce Admin] now includes a menu item linking to [App Management](https://developer.adobe.com/commerce/extensibility/app-management/){target="_blank"}, a unified shell for managing [!DNL App Builder] apps associated with the Commerce instance. This addition is powered by the latest Admin UI SDK update. <!-- CEXT-5755 -->
+
+### Request entity creation limit change
+
+The limit on the number of websites, stores, and store views was previously limited to 50. You can now submit a [support request](https://experienceleague.adobe.com/home?support-tab=home#support) to modify these limits, if necessary. <!-- ACCS-398 -->
+
+### Customize storefront authentication messages with structured error codes
+
+The [`generateCustomerToken` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} now returns typed error codes alongside error messages, enabling storefronts to display specific UI messages per failure reason. Available error codes include: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED`, and `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+
+### Send automated email reminders for cart and wishlist inactivity
+
+The [Email Reminder module](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service], allowing merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
+
+### Subscribe to category deletion events webhook
+
+The `observer.catalog_category_delete_before` webhook is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to run logic before a category is deleted. <!-- CEXT-5862 -->
+
+### Track guest orders placed with a registered email
+
+A new optional store-level configuration (disabled by default) allows merchants to track guest orders placed using an email address that matches a registered customer account. When enabled, guest checkout orders placed with a registered email remain accessible, while also appearing in the customer's order history.
+
+To enable this feature, navigate to **Stores** > Settings > **Configuration** > Sales > **Sales** > **Guest Checkout** and set the **Allow Guest Order Access for Registered Emails** setting to `Yes`.
+<!-- ACCS-289 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where some organization admins could incorrectly access tenant instances without per-tenant entitlement. <!-- ACCS-335 -->
+
+* Fixed an issue that could log a user out of the [!DNL Commerce Admin] when making changes to a shared catalog. <!-- ACCS-318 -->
+
+* Fixed an issue that caused some webhooks fields to display incorrectly in the [!DNL Commerce Admin] UI. <!-- CEXT-5874 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## February 2026 - release #2
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
