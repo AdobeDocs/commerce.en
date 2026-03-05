@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.4.20 Release
 
-![Fix](../assets/fix.svg) Using null as an array offset is deprecated. <!--MDEE-1306-->
+![Fix](../assets/fix.svg) Ensured compatibility with future PHP versions by updating the Product Feed index process to avoid deprecated use of null as an array offset. This improves stability during indexation.<!--MDEE-1306-->
 ![Fix](../assets/fix.svg) Change product category when category url has been changed. <!--MDEE-1294-->
 
 ## 103.4.19 Release
