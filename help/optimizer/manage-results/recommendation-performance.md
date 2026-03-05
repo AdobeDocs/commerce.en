@@ -16,7 +16,7 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ## View a report
 
-1. Choose the **Catalog view**, such as `en-US` where your recommendations apply. Learn more about [catalog views](#select-catalog-view) in recommendations.
+1. Choose the **Catalog view**, such as *All Catalog Views* where your recommendations apply. Learn more about [catalog views](#select-catalog-view) in recommendations.
 
 1. Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
@@ -54,7 +54,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 |![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
-|[Catalog View](#select-catalog-view)|Select the catalog view to filter the table to show only those recommendations that apply to the selected catalog view. This selection is also used as the catalog view when you [create](../merchandising/recommendations/create.md) a new recommendation. Options are *Global* or a specific [catalog view](../setup/catalog-view.md).|
+|[Catalog View](#select-catalog-view)|Select the catalog view to filter the table to show only those recommendations that apply to the selected catalog view. This selection is also used as the catalog view when you [create](../merchandising/recommendations/create.md) a new recommendation. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md).|
 
 ## Column descriptions
 
@@ -85,9 +85,9 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 The **[!UICONTROL Catalog View]** selector on the **Recommendations** page does two things:
 
 1. **Filter the table** – Shows only recommendations (and their metrics) that apply to the selected catalog view.
-1. **Set the scope for new recommendations** – When you [create](../merchandising/recommendations/create.md) a recommendation, the selected catalog view is used as the unit's scope. Options are *Global* or a specific [catalog view](../setup/catalog-view.md). 
+1. **Set the scope for new recommendations** – When you [create](../merchandising/recommendations/create.md) a recommendation, the selected catalog view is used as the unit's scope. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md). 
 
-   - **Global** – The recommendation applies to all catalog views (product availability is still filtered per view).
+   - **All Catalog Views** – The recommendation applies to all catalog views (product availability is still filtered per view).
    - **Catalog view** – The recommendation applies only to the selected catalog view (for example, one storefront, language, or brand).
 
 By specifying a catalog view for each recommendation, you can:
@@ -99,10 +99,10 @@ By specifying a catalog view for each recommendation, you can:
 
 ### How the catalog view filters products
 
-Product availability is enforced per catalog view even for global units. This works in addition to any [inclusion or exclusion filters](../merchandising/recommendations/filters.md) you set on the recommendation unit.
+Product availability is enforced per catalog view even for recommendation units under the **All Catalog Views** selection. This works in addition to any [inclusion or exclusion filters](../merchandising/recommendations/filters.md) you set on the recommendation unit.
 
-**Example: global recommendation with inclusion filters**
+**Example: Recommendation with inclusion filters under the All Catalog Views selection**
 
-- Global recommendation includes SKUs: SKU_ABC, SKU_CDE, SKU_XYZ.
+- **All Catalog Views** recommendation includes SKUs: SKU_ABC, SKU_CDE, SKU_XYZ.
 - **Catalog view: Kingsbluff** cannot sell SKU_ABC or SKU_CDE. **Shown:** SKU_XYZ plus any other SKUs valid for Kingsbluff.
 - **Catalog view: Arkbridge** cannot sell any of the included SKUs. **Shown:** Only SKUs permitted by Arkbridge. If none are available, the recommendation unit does not appear on that storefront.

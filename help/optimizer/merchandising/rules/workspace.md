@@ -66,7 +66,7 @@ The details panel shows the rule name, status, conditions and events, start and 
 | Control | Description |
 |--- |--- |
 | Add rule | Opens the [rule editor](add.md). |
-| Catalog View | Filters the table to rules that apply to the selected catalog view. Also sets the scope when you [create a rule](add.md). Options: *Global* or a specific [catalog view](../../setup/catalog-view.md). See [Select catalog view](#select-catalog-view). |
+| Catalog View | Filters the table to rules that apply to the selected catalog view. Also sets the scope when you [create a rule](add.md). Options: *All Catalog Views* or a specific [catalog view](../../setup/catalog-view.md). See [Select catalog view](#select-catalog-view). |
 | Status | Filters the list of rules by status. Options: All, Active, Inactive, Scheduled |
 | ![Column selector](../../assets/btn-show-hide-columns.png) | Specifies the columns that visible in the grid. Options: Last updated, Start date, End date, Status |
 | Search | Searches for a rule by full name or partial match. |
@@ -93,9 +93,9 @@ The details panel shows the rule name, status, conditions and events, start and 
 The **[!UICONTROL Catalog View]** selector on the Merchandising Rules page does two things:
 
 1. **Filter the table** – Shows only rules (and their details) that apply to the selected catalog view.
-1. **Set the scope for new rules** – When you [create a rule](add.md), the selected catalog view is used as the rule's scope. Options are *Global* or a specific [catalog view](../../setup/catalog-view.md).
+1. **Set the scope for new rules** – When you [create a rule](add.md), the selected catalog view is used as the rule's scope. Options are *All Catalog Views* or a specific [catalog view](../../setup/catalog-view.md).
 
-   - **Global** – The rule applies to all catalog views. Search and ranking behavior is the same across every storefront that uses the catalog.
+   - **All Catalog Views** – The rule applies to all catalog views. Search and ranking behavior is the same across every storefront that uses the catalog.
    - **Catalog view** – The rule applies only to the selected catalog view (for example, one storefront, region, dealer, or brand). Use this when different catalog views need different merchandising logic.
 
 For details on creating a rule and setting its scope, see [Create and manage rules](add.md).

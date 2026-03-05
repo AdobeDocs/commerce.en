@@ -131,7 +131,7 @@ The base allocation for catalog storefront capabilities is determined based on G
 | Sortable attributes | The number of product characteristics that can be configured for determining the order of search result values | 50 | No |
 | Search pagination depth | The maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K | No |
 | Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
-| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 1000 | Yes<p>Can increase via support request</p> |
+| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 1000 | No |
 
 {style="table-layout:auto"}
 

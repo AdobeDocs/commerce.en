@@ -11,7 +11,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 ## Create a rule
 
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
-1. (Optional) Use the **Catalog View** dropdown to select the catalog view where the rule should apply. The rule you create is scoped to the selected view (or to all catalog views if *Global* is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
+1. (Optional) Use the **Catalog View** dropdown to select the catalog view where the rule should apply. The rule you create is scoped to the selected view (or to all catalog views if **All Catalog Views** is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
 
    >[!IMPORTANT]
    >
