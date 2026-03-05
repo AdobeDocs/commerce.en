@@ -22,6 +22,12 @@ Updates include:
 
 ## Current major version
 
+## 103.4.20 Release
+
+![Fix](../assets/fix.svg) Cannot assign null to property FeedIndexMetadata. <!--MDEE-1302-->
+![Fix](../assets/fix.svg) Using null as an array offset is deprecated. <!--MDEE-1306-->
+![Fix](../assets/fix.svg) Change product category when category url has been changed. <!--MDEE-1294-->
+
 ## 103.4.19 Release
 
 ![Fix](../assets/fix.svg) Resolved an issue where the `di:compile` command failed on PHP 8.5. The compilation process now completes successfully, ensuring compatibility with the latest PHP version.<!--MDEE-1299-->
