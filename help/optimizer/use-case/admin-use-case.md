@@ -120,7 +120,7 @@ In the left navigation, expand the _Store setup_ section and click **[!UICONTROL
 
 >[!NOTE]
 >
->You can ignore the **All Catalog Views** catalog view for now.
+>You can ignore the **All views** catalog view for now.
 
 Click the info icon to review the catalog view details.
 
@@ -215,7 +215,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
 1. In the left rail, expand the _Store setup_ section and click **[!UICONTROL Catalog views]**.
 
-    Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *All Catalog Views*.
+    Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *All views*.
 
     ![Existing Catalog views Page](../assets/existing-channels-list.png)
 
