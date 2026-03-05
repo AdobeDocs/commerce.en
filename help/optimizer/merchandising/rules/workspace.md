@@ -66,7 +66,7 @@ The details panel shows the rule name, status, conditions and events, start and 
 | Control | Description |
 |--- |--- |
 | Add rule | Opens the [rule editor](add.md). |
-| Catalog View | Filters the table to rules that apply to the selected catalog view. Also sets the scope when you [create a rule](add.md). Options: *All Catalog Views* or a specific [catalog view](../../setup/catalog-view.md). See [Select catalog view](#select-catalog-view). |
+| Catalog view | Filters the table to rules that apply to the selected catalog view. Also sets the scope when you [create a rule](add.md). Options: *All Catalog Views* or a specific [catalog view](../../setup/catalog-view.md). See [Select catalog view](#select-catalog-view). |
 | Status | Filters the list of rules by status. Options: All, Active, Inactive, Scheduled |
 | ![Column selector](../../assets/btn-show-hide-columns.png) | Specifies the columns that visible in the grid. Options: Last updated, Start date, End date, Status |
 | Search | Searches for a rule by full name or partial match. |
@@ -90,7 +90,7 @@ The details panel shows the rule name, status, conditions and events, start and 
 >
 >This feature is currently in beta.
 
-The **[!UICONTROL Catalog View]** selector on the Merchandising Rules page does two things:
+The **[!UICONTROL Catalog view]** selector on the Merchandising Rules page does two things:
 
 1. **Filter the table** – Shows only rules (and their details) that apply to the selected catalog view.
 1. **Set the scope for new rules** – When you [create a rule](add.md), the selected catalog view is used as the rule's scope. Options are *All Catalog Views* or a specific [catalog view](../../setup/catalog-view.md).
@@ -112,7 +112,7 @@ Behavioral data that powers [intelligent ranking](add.md#intelligent-ranking) (s
 
 ### How to set up a rule per catalog view
 
-1. On the *Merchandising Rules* workspace, use the **[!UICONTROL Catalog View]** dropdown to select the catalog view where the rule should apply.
+1. On the *Merchandising Rules* workspace, use the **[!UICONTROL Catalog view]** dropdown to select the catalog view where the rule should apply.
 1. Click **[!UICONTROL Create rule]**. The rule you create is scoped to the selected catalog view.
 1. Build your rule in the [rule editor](add.md). In the editor, define conditions, events, and details. The rule applies only to search results in that catalog view.
 

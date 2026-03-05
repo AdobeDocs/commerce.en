@@ -54,7 +54,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 |![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
-|[Catalog View](#select-catalog-view)|Select the catalog view to filter the table to show only those recommendations that apply to the selected catalog view. This selection is also used as the catalog view when you [create](../merchandising/recommendations/create.md) a new recommendation. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md).|
+|[Catalog view](#select-catalog-view)|Select the catalog view to filter the table to show only those recommendations that apply to the selected catalog view. This selection is also used as the catalog view when you [create](../merchandising/recommendations/create.md) a new recommendation. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md).|
 
 ## Column descriptions
 
@@ -82,7 +82,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 >
 >This feature is currently in beta.
 
-The **[!UICONTROL Catalog View]** selector on the **Recommendations** page does two things:
+The **[!UICONTROL Catalog view]** selector on the **Recommendations** page does two things:
 
 1. **Filter the table** – Shows only recommendations (and their metrics) that apply to the selected catalog view.
 1. **Set the scope for new recommendations** – When you [create](../merchandising/recommendations/create.md) a recommendation, the selected catalog view is used as the unit's scope. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md). 

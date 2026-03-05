@@ -24,7 +24,7 @@ The *Search performance* page provides insight into the search terms that shoppe
 
 Select the [catalog view](../setup/catalog-view.md) to see specific search performance results.
 
-![Catalog View](../assets/catalog-view.png)
+![Catalog view](../assets/catalog-view.png)
 
 ## View a report
 

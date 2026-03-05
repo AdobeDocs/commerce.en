@@ -1,5 +1,5 @@
 ---
-title: Catalog View
+title: Catalog view
 description: Learn what catalog views are and how to create them to organize your product catalog by business structure, policies, and pricing.
 role: Admin, Developer
 recommendations: noCatalog
@@ -117,7 +117,7 @@ This option provides a quick way to see all the catalog view parameters, while s
 
 On the *Catalog views* worksapce, find the catalog view in the grid that you want to edit and click the ![information icon](../assets/info-icon.png).
 
-![Catalog View Details](../assets/catalog-view-details.png)
+![Catalog view details](../assets/catalog-view-details.png)
 
 From here you can see catalog view configuration details, such as:
 
@@ -154,7 +154,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 
 |Component|Purpose|Example|
 |---|---|---|
-|**Catalog View**|Business unit or distribution channel|Dealer network, Regional store|
+|**Catalog view**|Business unit or distribution channel|Dealer network, Regional store|
 |**Policy**|Product filter based on attributes|Brand, Model, Category|
 |**Locale**|Language/region setting|en-US, fr-CA, es-MX|
 |**Price Book**|Pricing structure|Retail, Wholesale, Employee|

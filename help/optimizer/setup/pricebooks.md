@@ -20,7 +20,7 @@ You add price books to Commerce Optimizer using the Price Book API. See the [dev
 
 ## View price books in Commerce Optimizer
 
-After you ingest price books into Commerce Optimizer, you can see the list of price books and their corresponding IDs on the **Catalog View** page.
+After you ingest price books into Commerce Optimizer, you can see the list of price books and their corresponding IDs on the **Catalog view** page.
 
 1. Go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
 

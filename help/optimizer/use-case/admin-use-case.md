@@ -402,7 +402,7 @@ If you encounter issues during this tutorial, try the following solutions:
 
 - **Solution:** Verify that the attribute name exactly matches the SKU attribute in your catalog
 
-### Catalog View Issues
+### Catalog view issues
 
 **Problem:** Catalog view not appearing in the list
 
