@@ -16,7 +16,9 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ## View a report
 
-1. Choose the **Catalog view**, such as *All Catalog Views* where your recommendations apply. Learn more about [catalog views](#select-catalog-view) in recommendations.
+1. Choose the **Catalog view**, such as *All Catalog Views* where your recommendations apply.
+
+   Learn more about [catalog views](#select-catalog-view) in recommendations.
 
 1. Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
@@ -84,8 +86,8 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 
 The **[!UICONTROL Catalog view]** selector on the **Recommendations** page does two things:
 
-1. **Filter the table** – Shows only recommendations (and their metrics) that apply to the selected catalog view.
-1. **Set the scope for new recommendations** – When you [create](../merchandising/recommendations/create.md) a recommendation, the selected catalog view is used as the unit's scope. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md). 
+1. **Filters the table** – Shows only recommendations (and their metrics) that apply to the selected catalog view.
+1. **Sets the scope for new recommendations** – When you [create](../merchandising/recommendations/create.md) a recommendation, the selected catalog view is used as the unit's scope. Options are *All Catalog Views* or a specific [catalog view](../setup/catalog-view.md). 
 
    - **All Catalog Views** – The recommendation applies to all catalog views (product availability is still filtered per view).
    - **Catalog view** – The recommendation applies only to the selected catalog view (for example, one storefront, language, or brand).

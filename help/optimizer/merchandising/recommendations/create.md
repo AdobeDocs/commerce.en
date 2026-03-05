@@ -69,7 +69,7 @@ To test a recommendation when working in a non-production environment, you can f
 |Name|The name of the product.|
 |SKU|The Stock Keeping Unit assigned to the product|
 |Price|The price of the product.|
-|Result Type|Primary - indicates that there is enough training data collected to display a recommendation.<br />Backup - indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](../../setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
+|Result Type|Primary - Indicates that there is enough training data collected to display a recommendation.<br />Backup - Indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](../../setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
 
 As you create your recommendation unit, experiment with the recommendation type and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
 
@@ -110,13 +110,13 @@ You can edit, deactivate, or delete an existing recommendation.
    - Number of products
    - Filter products
 
-   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation; see [select catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) to learn more.
+   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation. To learn more, see [select catalog view](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. When complete, click **Save Changes**.
 
 ## Readiness indicators
 
-Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with [event collection](../../setup/events/overview.md) or if you do not have enough traffic to populate the recommendation type.
+Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. They can also help you identify potential issues with [event collection](../../setup/events/overview.md) or determine whether a recommendation type is not receiving enough traffic to generate results.
 
 Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](../../setup/events/overview.md) to build personalized recommendations and to calculate their readiness score.
 
