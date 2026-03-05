@@ -24,7 +24,6 @@ Updates include:
 
 ## 103.4.20 Release
 
-![Fix](../assets/fix.svg) Cannot assign null to property FeedIndexMetadata. <!--MDEE-1302-->
 ![Fix](../assets/fix.svg) Using null as an array offset is deprecated. <!--MDEE-1306-->
 ![Fix](../assets/fix.svg) Change product category when category url has been changed. <!--MDEE-1294-->
 
