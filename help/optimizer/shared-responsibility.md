@@ -2,7 +2,7 @@
 title: Shared Responsibility
 description: Learn about the security responsibilities of each party involved in your [!DNL Adobe Commerce Optimizer] project.
 role: Admin, Architect, Leader
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
 ---
 # Shared responsibility security and operational model
@@ -38,12 +38,12 @@ The following summary tables use the RACI model to show the security responsibil
 | Supporting backend CDN | RA |  |
 | Obtaining a backend DNS provider | RA | |
 | Provisioning the production and sandbox environments | A | R |
-| Accessing Dynamics for Adobe Commerce Optimizer | R | C |
+| Accessing Dynamics for [!DNL Adobe Commerce Optimizer] | R | C |
 | Resolving backend Customer security issues | RA | I |
 | Resolving backend CDN security issues | RA | |
 | Assisting Adobe with security research (scans/audits) | RA | |
 | Performing PCI ASV scans | RA | I |
-| Remediating Adobe Commerce Optimizer infrastructure PCI scans | R | |
+| Remediating [!DNL Adobe Commerce Optimizer] infrastructure PCI scans | R | |
 | Managing OS and platform secrets | RA | |
 | Monitoring backend security logs | RA | |
 | Controlling Customer support and access | A | R |
@@ -51,5 +51,5 @@ The following summary tables use the RACI model to show the security responsibil
 | Annual testing and documentation of disaster recovery plan | RA | |
 | Debugging and issue isolation | R | R |
 | Timely support of debugging and issue isolation process | R | R |
-| Installing updates and patches to Adobe Commerce Optimizer | RA | I |
-| Core Adobe Commerce Optimizer Application Quality | RA | |
+| Installing updates and patches to [!DNL Adobe Commerce Optimizer] | RA | I |
+| Core [!DNL Adobe Commerce Optimizer] Application Quality | RA | |

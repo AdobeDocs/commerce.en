@@ -1,12 +1,12 @@
 ---
 title: Recommendation Types
 description: Learn about the recommendations that you can deploy to various pages on your site.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
 ---
 # Recommendation Types
 
-Adobe Commerce Optimizer provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. They are powered by behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
+[!DNL Adobe Commerce Optimizer] provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. They are powered by behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
 
 - [Personalized](#personalized)
 - [Cross-sells and up-sells](#crossup)

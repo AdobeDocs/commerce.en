@@ -3,7 +3,7 @@ title: Price Books
 description: Learn how to manage price books in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 ---
 # Price Books
@@ -14,13 +14,13 @@ Price books let you define product prices for a catalog source across different 
 
 The base price book defines the currency for itself and all its child price books. Child price books inherit this currency and cannot override it.
 
-## Add price books to Commerce Optimizer
+## Add price books to [!DNL Adobe Commerce Optimizer]
 
-You add price books to Commerce Optimizer using the Price Book API. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books for [!DNL Adobe Commerce Optimizer].
+You add price books to [!DNL Adobe Commerce Optimizer] using the Price Book API. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books for [!DNL Adobe Commerce Optimizer].
 
-## View price books in Commerce Optimizer
+## View price books in [!DNL Adobe Commerce Optimizer]
 
-After you ingest price books into Commerce Optimizer, you can see the list of price books and their corresponding IDs on the **Catalog View** page.
+After you ingest price books into [!DNL Adobe Commerce Optimizer], you can see the list of price books and their corresponding IDs on the **Catalog view** page.
 
 1. Go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
 
