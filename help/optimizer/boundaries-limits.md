@@ -2,7 +2,7 @@
 title: Limits and boundaries
 description: Understand [!DNL Adobe Commerce Optimizer] limits and boundaries to plan capacity and prevent performance issues.
 role: Admin, Developer
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 ---
 # Limits and boundaries
@@ -78,12 +78,12 @@ The following tables summarize the license limits and system boundaries by capab
 
 >[!NOTE]
 >
->**Power Users** can access Adobe Express directly or within Adobe Commerce Optimizer. **Collaborator Users** can access the Adobe Express application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Power Users** can access Adobe Express directly or within [!DNL Adobe Commerce Optimizer]. **Collaborator Users** can access the Adobe Express application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX "Calculate Dynamic Media usage"]
 
-Dynamic Media usage tracks API requests coming into the Product Visuals components within Adobe Commerce Optimizer to facilitate one of the following actions:
+Dynamic Media usage tracks API requests coming into the Product Visuals components within [!DNL Adobe Commerce Optimizer] to facilitate one of the following actions:
 
 - **Image delivery consumes one dynamic media operation** for each occurrence of the following:
    - **basic image transformation** of a digital asset, for example resize, scale, format conversion, compression, or crop operations.
@@ -118,7 +118,7 @@ The base allocation for catalog storefront capabilities is determined based on G
 
 >[!NOTE]
 >
->Image generation requires an Adobe Firefly license provisioned to the same IMS org as Adobe Commerce Optimizer.
+>Image generation requires an Adobe Firefly license provisioned to the same IMS org as [!DNL Adobe Commerce Optimizer].
 
 
 ### Product discovery
@@ -131,7 +131,7 @@ The base allocation for catalog storefront capabilities is determined based on G
 | Sortable attributes | The number of product characteristics that can be configured for determining the order of search result values | 50 | No |
 | Search pagination depth | The maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K | No |
 | Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
-| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100 | Yes<p>Can increase via support request</p> |
+| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 1000 | No |
 
 {style="table-layout:auto"}
 
@@ -158,7 +158,7 @@ The following capabilities are available for product recommendations. Some featu
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
-To accurately size your Adobe Commerce Optimizer solution, follow these steps:
+To accurately size your [!DNL Adobe Commerce Optimizer] solution, follow these steps:
 
 1. Review the available packages, and start with a package that most closely matches your requirements.
 1. Review the capabilities and metrics to ensure they align with your business requirements.

@@ -1,7 +1,7 @@
 ---
 title: Create and Manage Rules
 description: Learn how to create and manage merchandising rules.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 ---
 # Create and Manage Rules
@@ -11,7 +11,13 @@ To build a rule, the first step is to use the rule editor to define the conditio
 ## Create a rule
 
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
-1. Click **Create rule** to launch the rule editor.
+1. (Optional) Use the **Catalog view** dropdown to select the catalog view where the rule should apply. The rule you create is scoped to the selected view (or to all catalog views if **All views** is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
+
+   >[!IMPORTANT]
+   >
+   >This feature is currently in beta.
+
+1. Click **[!UICONTROL Create rule]** to launch the rule editor.
 
 ![Create Rule](../../assets/create-rule.png)
 
@@ -159,7 +165,7 @@ Or events can be set manually:
 
 ## Edit, view, and delete rules
 
-Follow these instructions to update the properties of existing rules.
+Follow these instructions to update the properties of existing rules. You cannot change the catalog view (scope) of a rule after it is created; scope is set when you create the rule. See [Select catalog view](workspace.md#select-catalog-view).
 
 ### Edit rule
 
