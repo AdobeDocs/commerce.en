@@ -1,7 +1,7 @@
 ---
 title: Search Performance
 description: The Search performance page provides insight into the search terms that shoppers use.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 ---
 # Search Performance
@@ -24,7 +24,7 @@ The *Search performance* page provides insight into the search terms that shoppe
 
 Select the [catalog view](../setup/catalog-view.md) to see specific search performance results.
 
-![Catalog View](../assets/catalog-view.png)
+![Catalog view](../assets/catalog-view.png)
 
 ## View a report
 

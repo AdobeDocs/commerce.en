@@ -1,7 +1,7 @@
 ---
 title: User and Identity Management
 description: Learn how to create and manage users and assign user roles for [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 ---
 # User management
@@ -26,6 +26,8 @@ You can assign users to any of the following roles:
 >[!NOTE]
 >
 >Assign product admins the [User role](#add-users) before adding them as product admins. The User role is required for basic Commerce permissions.
+
+There are two different ways to add product admin users to [!DNL Adobe Commerce Optimizer] based on when your organization was provisioned. In early access organizations, each user who is assigned the product admin role has permission to manage all instances in the organization. In General Availability (GA) organizations provisioned after October 13, 2025, you can assign a user as the product admin for specific instances. When the product admin user logs in, they can see only the instances they have permission to manage.
 
 >[!TAB GA (Provisioned after October 13, 2025)]
 
@@ -77,7 +79,7 @@ The following instructions provide information on how to add users to the [!DNL 
 
 >[!NOTE]
 >
->Only product admins and system admins can add users and developers to the Adobe Commerce Optimizer product.
+>Only product admins and system admins can add users and developers to the [!DNL Adobe Commerce Optimizer] product.
 
 >[!BEGINTABS]
 
@@ -138,7 +140,7 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 You can add multiple users more efficiently with one of the following methods:
 
 - Use the **Add Users by CSV** feature in the Adobe Admin Console to perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then, add the [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] product to the user group.
+- Add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the appropriate products to the user group.
 
 ## Identity management and single sign-on configuration
 

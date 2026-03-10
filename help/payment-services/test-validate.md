@@ -43,6 +43,17 @@ To expose your local environment:
 
 If the endpoint's response time is under 5 seconds, PayPal displays an error message in the pop-up.
 
+#### Apple Pay local development
+
+Apple Pay requires additional configuration for local development. Apple Pay uses domain registration to verify that your site is authorized to accept Apple Pay payments. This means Apple must be able to reach your domain to validate a domain verification file at `/.well-known/apple-developer-merchantid-domain-association`.
+
+For local development, your environment must meet the following requirements:
+
+* **Publicly accessible**, Apple must be able to reach your domain from the internet.
+* **HTTPS protocol**, Apple Pay only works on secure connections.
+
+Using a tunneling service like [ngrok](https://ngrok.com/) satisfies both requirements. After setting up ngrok as described above, [register your sandbox domain](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) with PayPal using the **ngrok** URL.
+
 ### Testing credentials
 
 When testing and validating your sandbox you must use fake credit card numbers, so that you are not creating real charges to an existing credit card account.
@@ -70,5 +81,7 @@ You can test [!DNL Payment Services] in production in one of two ways:
 Complete your production testing with real credit cards and PayPal accounts, testing the entire lifecycle of a payment, including capture and refund. Completing the entire checkout and payment flow during testing gives you the clearest picture of how your [!DNL Payment Services] functionality will work when live shoppers are using it.
 
 You should also verify the information that appears on the bank statements for the payment methods you use in production testing are correct and expected (including the description of your business).
+
+### Test Apple Pay in production
 
 To test Apple Pay in production mode, you must [register your production domains](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).

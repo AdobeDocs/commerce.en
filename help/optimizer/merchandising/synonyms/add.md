@@ -1,19 +1,19 @@
 ---
 title: Create and Manage Synonyms
 description: Learn how to create and manage synonyms to [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
 ---
 # Create Synonyms
 
-Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. You can add up to 200 synonyms per store.
+Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. You can add up to 200 synonyms per catalog source.
 
 ![Synonym Workspace](../../assets/synonym-workspace.png)
 
 ## Step 1: Add a synonym
 
 1. From the left rail, go to _Merchandising_ > **Synonyms**.
-1. Click the **[!UICONTROL Add synonyms]** button.
+1. Click the **[!UICONTROL Create synonyms]** button.
 
 ## Step 2: Define the synonym by type
 
@@ -21,31 +21,25 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
 
 ### Two-way synonym
 
-1. Accept the default **Two-way** option.
-
-   ![Add two-way synonym](../../assets/synonym-add-two-way.png)
-
 1. Enter the **Keyword** term or phrase to be matched.
 1. Enter the **Expansion** term(s) that you want to add as synonyms for the keyword. Separate multiple terms with a comma.
    In this example, the keyword to match is "pants" and the set of expansion terms are "trousers, slacks".
 
-   ![Two-way synonym example](../../assets/synonym-add-two-way-example.png)
+   ![Two-way synonym](../../assets/synonym-add-two-way.png)
 
 1. When complete, click **Save**.
-
+ 
    The set of synonyms appears in the list with a two-way arrow between each term that means the terms are interchangeable.
 
-   ![Two-way synonym](../../assets/synonym-two-way.png)
+   ![Two-way synonym example](../../assets/synonym-add-two-way-example.png)
 
 ### One-way synonym
 
 1. Click the **One-way** synonym type.
 
-   ![Add one-way synonym](../../assets/synonym-add-one-way.png)
-
 1. Enter the **Keyword** and **Expansion** terms. Separate multiple terms with a comma.
 
-   ![One-way synonym example](../../assets/synonym-add-one-way-example.png)
+   ![One-way synonym](../../assets/synonym-add-one-way.png)
 
    In this example, the keyword is "pants" and the one-way expansion terms "capris, peddle-pushers" are each a subset of "pants", but with a specific meaning.
 
@@ -53,7 +47,7 @@ Follow the instructions for the [type of synonym](type.md) that you want to crea
 
    The set of synonyms appears in the list with a one-way arrow pointing from the expansion terms to the keyword to indicate the terms are subsets of the keyword. A plus sign separates each expansion term.
 
-   ![One-way synonym](../../assets/synonym-one-way.png)
+   ![One-way synonym example](../../assets/synonym-add-one-way-example.png)
 
 ## Step 3: Publish changes
 

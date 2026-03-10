@@ -36,7 +36,7 @@ You can search for a category or subcategory in the "Search by category" field.
 Category Merchandising uses the same ranking types as with [individual products](rules-workspace.md).
 There are two types of ranking: Intelligent and Manual.
 
-**Intelligent ranking** leverages storefront behavioral data analysis by [Adobe Sensei](https://www.adobe.com/sensei.html) to sort all products within chosen categories by a certain algorithm. Once an Intelligent ranking is chosen, the specific order of products is expected to change over time as the underlying data is reanalyzed by Adobe Sensei on an ongoing basis. For example, top trending products will automatically change over time as shopper preferences change. 
+**Intelligent ranking** leverages storefront behavioral data analysis by [Adobe AI](https://business.adobe.com/ai.html) to sort all products within chosen categories by a certain algorithm. Once an Intelligent ranking is chosen, the specific order of products is expected to change over time as the underlying data is reanalyzed by Adobe AI on an ongoing basis. For example, top trending products will automatically change over time as shopper preferences change. 
 Intelligent ranking methods are:
 
 * Most purchased: ranks products by how frequently they were purchased by shoppers in the previous seven days.
