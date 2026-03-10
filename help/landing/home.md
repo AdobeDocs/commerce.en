@@ -126,6 +126,19 @@ Integration services refer to features that connect your Commerce instance to ot
          <em>Simplify digital asset management using a system that integrates with Adobe Experience Manager for managing rich media content.</em>
       </p>
    </td>
+   <td valign="top">
+      <a href="../app-management/overview.md">
+      <img alt="App Management" src="../assets/icons/DataSetting.svg" width="40">
+      </a>
+      <div>
+         <a href="../app-management/overview.md">
+         <strong>App Management</strong>
+         </a>
+      </div>
+      <p>
+         <em>Associate, configure, and manage App Builder applications with your Commerce instance through the Admin UI.</em>
+      </p>
+   </td>
 </tr>
 </table>
 
