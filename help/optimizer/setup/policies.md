@@ -2,7 +2,7 @@
 title: Policies
 description: Learn how to create and manage policies in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 ---
 # Policies
@@ -70,7 +70,7 @@ In this section, you create a new policy. The policy can be either **STATIC** or
     1. **Attribute** - Enter an attribute from your catalog. For example, "part_category". This name must exactly match the name of the attribute in your catalog.
     1. **Operator** - Choose the operator. For example, **IN**. ​
     1. **Value Source** - Select **STATIC**. ​
-    1. **Value** - Enter a value from the attribute definition that you previously specified. For example, enter "brakes" to create a filter for brake parts. ​The value must match the attribute name exactly.
+    1. **Value** - Enter a value from the attribute definition that you previously specified. For example, enter "brakes" to create a filter for brake parts.
     1. To save the value, press **Enter**.
 
        If the policy is designed to filter by multiple values, enter each value separately.

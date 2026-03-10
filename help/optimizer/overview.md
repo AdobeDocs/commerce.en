@@ -1,8 +1,8 @@
 ---
-title: What is Adobe Commerce Optimizer?
+title: What is [!DNL Adobe Commerce Optimizer]?
 description: Learn about [!DNL Adobe Commerce Optimizer] and its key features.
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
 ---
 # What is [!DNL Adobe Commerce Optimizer]?
@@ -27,7 +27,7 @@ Watch the following video for a high-level overview of [!DNL Adobe Commerce Opti
 
 - Merchants who want to maintain their existing backend commerce system and only transform storefront experiences.
 - Businesses where a third-party system manages the cart and checkout lifecycle.
-- AEM customers seeking a simple way to manage their product catalog from a third-party commerce engine.
+- [AEM customers](setup/product-visuals.md) seeking a simple way to manage their product catalog from a third-party commerce engine.
 
 ## Quick tour
 
@@ -63,6 +63,7 @@ Create personalized experiences for your shoppers through product discovery and 
 Define your catalog views and policies. The catalog not only contains your product data, but it also helps you define your business structure. Also, you can view valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
 
 - **Catalog views** - Help you define your retail structure into meaningful business groups. For example, dealers for the automobile industry, subsidiaries for multi brand conglomerates, or manufacturing locations for suppliers.
+- **Catalog layers** - Modify product data without changing source data. When using AEM Assets for product images, the AEM-Assets layer is applied through [Product Visuals](setup/product-visuals.md). See [Catalog layers](setup/catalog-layer.md) for details.
 - **Policies** - Data access filters that are housed within catalog views. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram). 
 - **Data Sync** - Displays an overview of the synchronization status for product data transferred from their data source (PIM, ERP, and so on) into [!DNL Adobe Commerce Optimizer]. That product data is displayed within the **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]**, and **[!UICONTROL Recommendations]** tabs.
 - **Events** - Displays storefront event data which powers Product Discovery and Recommendations. The **Events** page lets the merchant verify that they have implemented storefront eventing correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any eventing issues.
@@ -78,6 +79,10 @@ Key capabilities include:
 - **Before and After metrics** - Provides real-time insights into the performance of your commerce initiatives. You can view before and after results of specific KPIs and evaluate the impact of changes and optimize for better results. You can export the results in a PDF.
 - **Commerce storefront powered by Edge Delivery** - With Edge delivery, you can launch your site quickly using prebuilt storefront components with integrated commerce functionality — including product listing pages, product detail pages, cart, and checkout.
 - **Third-party cart and checkout** - Use API mesh and App builder to integrate with third-party cart and checkout systems.
+
+>[!NOTE]
+>
+>To understand system boundaries and licensing for [!DNL Adobe Commerce Optimizer] capabilities, see the [Limits and boundaries](boundaries-limits.md) topic.
 
 ## Architecture
 

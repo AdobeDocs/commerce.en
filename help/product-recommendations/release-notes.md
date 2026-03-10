@@ -25,6 +25,10 @@ See the developer documentation to [learn about product support](https://experie
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
+_February 19, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order that the products were viewed.
+
 _November 19, 2025_
 
 ![New](../assets/new.svg) You can now create up to 50 active recommendation units for each page type. Previously, the limit was five.
@@ -52,6 +56,16 @@ _April 25, 2023_
 
 ## Current major version
 
+### 6.6.0 magento/product-recommendations
+
+_January 28, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added dependency to the [Data Feed Sync Status Monitoring dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status). This dashboard lets you view real-time insights into the health and performance of data export feeds that transfer product and category data from Commerce to external services such as Product Recommendations.
+
+### Previous versions
+
 ### 6.5.0 magento/product-recommendations
 
 _November 3, 2025_
@@ -59,8 +73,6 @@ _November 3, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Improved how product recommendation units interact on different environments.
-
-### Previous versions
 
 ### 6.4.0 magento/product-recommendations
 

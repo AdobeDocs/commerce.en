@@ -4,7 +4,7 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
-### December 18, 2025
+### February 26, 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -16,39 +16,25 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">configure AEM topic</a> in the AEM Assets Integration documentation.</p>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">Bulk data migration tool</a> with an important note that Catalog configuration is not imported automatically.</p>
 </td>
       <td>
-        Major update
+        Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d46526db56dad08a8f865664c92d1214bbf063d8">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">commit</a></td>
     </tr>
-  </tbody>
-</table>
-
-### December 15, 2025
-
-<table style="table-layout:auto;">
-  <thead>
     <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Opportunities</a> to document AI-powered site optimization recommendations through Adobe Sites Optimizer integration, including auto-detect and auto-fix workflows for improving SEO, metadata, and product data quality.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">Catalog Layers</a> to explain how to modify product data without changing source data, including layer priority management and integration with Sites Optimizer auto-fix features.</p>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Payment Services</a> with v2.14.0 release documentation, including Alternative Payment Methods (APMs) for European markets, Express checkout buttons, and Buyer's Country sandbox configuration.</p>
 </td>
       <td>
         Major update, new topic
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd4447d519761f43d06f13de71c5ae97f6b103e7">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6727102c54e0ac81df289ecd66ec61156662b8b9">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### December 9, 2025
+### February 25, 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -60,17 +46,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Updating the recommendations feature in the Commerce Optimizer documentation as the <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">preview pane</a> is now supported.</p>
+      <td><p>The <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools">AI coding developer tooling for Adobe Commerce App Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">Ratings extension tutorial</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension">Shipping method extension tutorial</a>, and the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Tutorial prerequisites</a> pages are now available.</p>
 </td>
       <td>
-        Technical
+        New topic
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ae99230552e7466a3a384c77e1e67e0cd981de6a">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/508a6b330b240b1038d2a9705a017d540816cc95">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### November 20, 2025
+### February 24, 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -82,17 +68,17 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for the November Adobe Commerce as a Cloud Service release.</p>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service with the latest release to production environments.</p>
 </td>
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/136235c9291b54a93582c45311b76fb93269e693">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0c13760783ee8d492eed6e2c989153ded5afa47">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### November 17, 2025
+### February 19, 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -104,17 +90,25 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Documented how Commerce Optimizer customers connecting to an Adobe Commerce backend can monitor and troubleshoot data feed exports from the Feed Sync status page. See <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a> in the Adobe Commerce Optimizer Guide.</p>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">AEM Assets Integration overview</a> with a new tutorial video for Adobe Commerce as a Cloud Service (ACCS) users.</p>
 </td>
       <td>
-        Technical
+        Feedback, major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/9a9e07a66c822c97c01f5ff76551684fb99eb01e">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1cef99b8284aef05e34ab8ca65b776492ec5bee7">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest Sandbox release.</p>
+</td>
+      <td>
+        Feedback, major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c396ca7cbfe7f00ec9e164c397ff0438aa5c6f87">commit</a></td>
     </tr>
   </tbody>
 </table>
 
-### November 11, 2025
+### February 18, 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -126,12 +120,394 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">release notes</a> for the Payment Services v2.13.0 release.</p>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Custom automatic matching</a> with support for the <code class="language-plaintext highlighter-rouge">skip</code> sync parameter, allowing custom matchers to bypass sync processing when mappings have not changed.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 17, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Major update to <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Catalog Service Release Notes</a>: restructured intro, added Storefront Catalog Service releases v1.46–v1.36 and GA, expanded feature descriptions with GraphQL examples (attribute filtering, tier pricing, Product Layers, recommendationsByUnitIds, and more), and aligned previous versions with current formatting and links.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e31961c92342cce96433ef42861e807249a75eaf">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 13, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Improves the AEM Assets Integration documentation by clarifying requirements and adding <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI command documentation for metadata export</a>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ac880333814d9d9a45e658e2a637cd9634dbfb1f">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 11, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">Boundaries and Limits</a> for Product Recommendations, documenting supported product types, special pricing limitations, unit and filter limits, preview/API/cookie behavior, and related constraints.</p>
+</td>
+      <td>
+        Feedback, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Enhanced the v2.12.0 PAY-6227 entry to link to the new <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">server-side shipping callback</a> section, clarifying how this feature enables a faster checkout process.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/007674c3b81b95af4c0ec2688a4a98e19ec04d08">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 10, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service for the February release to production.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d559417d12151d1f390b4217bca83b9ddb65e491">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 9, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>AEM Assets Integration v1.2.13 adds <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> for custom matcher setup. You can upload your App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> for automatic validation and credential extraction, or configure manually. See the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">release notes</a> for v1.2.13 and the updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">custom matching</a> guide.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dfc4aaf1f780eb4a57aa4b624325fa24e571017d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 6, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.19</a>.</p>
 </td>
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1c02122cd58234268ba9f07aaba96f83f929720">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0bf049129dfbf576fb8b9d9ab3b90c93b57a4ce1">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 5, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service release notes</a> for the February 2026 Sandbox release.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d084307dc01bc7210566137cddcf91ef6c1362da">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 4, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.18</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f2c4f940ad6f059e3afe7fd5f2e4823b1d3700e7">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### February 2, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented how Commerce customers can monitor and troubleshoot data feed exports from the Feed Sync status page in the Commerce Admin. See <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">View and manage the synchronization process</a> in Data Export Guide.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7103b822444f50caa242f4b37d5559240c0438f7">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 30, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added more information to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">feature comparison page</a>, including new infrastructure, operational capability, and marketplace information.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/95bb6205404fa4206a618a3e4a340f1d166f0303">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 29, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migrating from Search Adapter to PLP Widget</a> guide with detailed migration scenarios, step-by-step procedures, role-based guidance, and troubleshooting for customers transitioning from the deprecated Search Adapter.</p>
+</td>
+      <td>
+        Feedback, major update, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6629007da035fe0e3de6c69745f4c34011ec5d98">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 22, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the Storefront setup guides for <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> to Include information about migrating the Commerce storefront configuration for Edge Delivery Services to use the Configuration Service instead of <code class="language-plaintext highlighter-rouge">config.json</code> file in the storefront boilerplate repository. Adobe recommends using the Configuration Service to manage the configuration for storefronts deployed on Edge Delivery Services.</p>
+</td>
+      <td>
+        Feedback, technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e1fd1f6fbfb326f4110660a6097bc73eff9e0fc6">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 21, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sandbox release notes moved to production.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3b90cb8e0067089d7079ca4e21e050a5488c7dcd">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 20, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Changed product references from "Adobe Sensei" to "Adobe AI" to reflect Adobe branding updates.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c6a273a90067886a2f6223ab5bd9586969da4b14">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 15, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/9720ee6e2549e8847cc60291be792dd2f8f5610d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 13, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Limits and boundaries</a> topic for Adobe Commerce Optimizer to describe license limits and system boundaries, add limit descriptions, and include guidance for capacity planning and preventing performance issues.</p>
+</td>
+      <td>
+        Feedback, technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c9b3bf125d46447ae147a468e1a9e6492d6c5689">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### January 6, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 and 103.4.17</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/948267ac789ed6432b0bfe57a82ca7b1f1be0807">commit</a></td>
     </tr>
   </tbody>
 </table>

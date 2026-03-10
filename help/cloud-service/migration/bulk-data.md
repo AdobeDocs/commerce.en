@@ -35,8 +35,8 @@ The following sections describe these steps in detail.
 
 The availability of the bulk data migration tool is as follows:
 
-- **Q4 2025** (not yet available) - After the initial release of the bulk data migration tool, you will be able to access it by submitting a support ticket.
-- **Q4 2025** (not yet available) - After the public release of the bulk data migration tool, it will be accessible from this page.
+- **Q1 2026** (not yet available) - After the initial release of the bulk data migration tool, you will be able to access it by submitting a support ticket.
+- **Q1 2026** (not yet available) - After the public release of the bulk data migration tool, it will be accessible from this page.
 
 ## Create target environment
 
@@ -90,6 +90,10 @@ Run the load data tool provided by Adobe. This tool will:
 After the data loads, the catalog data automatically flows from the SaaS tenant database to the Catalog Service.
 
 The Catalog Service shares this data with Live Search and Product Recommendations. No manual intervention is required for this process. The data is available in all services once the ingestion completes.
+
+>[!IMPORTANT]
+>
+>The configuration settings are not imported automatically. Before beginning the data migration process, take note of your current Catalog configuration settings in the [!DNL Commerce Admin]. Then implement the same configuration in the target [!DNL Adobe Commerce as a Cloud Service] environment.
 
 ### Data integrity verification
 

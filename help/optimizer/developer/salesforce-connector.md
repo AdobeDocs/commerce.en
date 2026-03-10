@@ -3,7 +3,7 @@ title: Salesforce Commerce Connector
 description: Learn about the [!DNL Commerce Optimizer SFCC Connector] which provides a starting point for integrating Salesforce Commerce B2C with [!DNL Adobe Commerce Optimizer] to sync catalog data and to implement and customize the connector to support business operations.
 role: Admin, Developer
 ---
-# Salesforce Commerce Connector for Adobe Commerce Optimizer
+# Salesforce Commerce Connector for [!DNL Adobe Commerce Optimizer]
 
 Built on Adobe App Builder technology, the [!DNL Commerce Optimizer Salesforce Commerce Connector] enables seamless transfer and management of catalog data from Salesforce Commerce Cloud B2C to [!DNL Adobe Commerce Optimizer]. It bridges both platforms, keeping product information, pricing, and updates in sync–without re-platforming.
 
@@ -13,7 +13,7 @@ For an end-to-end video tutorial series, see [Learn about the Salesforce Commerc
 
 ## Key capabilities
 
-* **Catalog Data Sync:** Push product data—including variants, price books, and structures—from Salesforce Commerce B2C into Adobe Commerce Optimizer to keep storefronts and experience-driven applications up to date.
+* **Catalog Data Sync:** Push product data—including variants, price books, and structures—from Salesforce Commerce B2C into [!DNL Adobe Commerce Optimizer] to keep storefronts and experience-driven applications up to date.
 * **Price Sync:** Import and manage price data directly from Salesforce Commerce B2C.
 * **Supports multiple data types:** Sync products, pricing, and catalog structures to reflect complex merchandising configurations.
 
@@ -80,7 +80,7 @@ The following diagram illustrates the high-level data flow for the integration:
 
 The [!DNL Commerce Optimizer SFCC Connector] consists of several key components:
 
-* **ACO SFCC Starter Kit App Builder application**-Provides serverless functions that handle data sync between SFCC and Adobe Commerce Optimizer.
+* **ACO SFCC Starter Kit App Builder application**-Provides serverless functions that handle data sync between SFCC and [!DNL Adobe Commerce Optimizer].
 * **Custom SFCC Cartridge** - Required cartridge that extends your Salesforce Commerce Cloud instance with APIs needed for data extraction.
 * **Management UI** - Web interface for monitoring sync status and managing connector operations.
 
@@ -100,7 +100,7 @@ When planning your implementation, consider these key factors:
 
 ### Data mapping and attributes
 
-* **Searchable attributes:** Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in Adobe Commerce Optimizer.
+* **Searchable attributes:** Salesforce Commerce B2C sets searchable attributes through the UI, which the API does not expose. Use the [[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) to manually configure these searchable attributes in [!DNL Adobe Commerce Optimizer].
 * **Attribute mapping:** Plan the mapping of Salesforce Commerce B2C product attributes to [!DNL Commerce Optimizer] metadata based on your business requirements.
 * **Default searchable fields:** The connector automatically makes core attributes (`name`, `description`, `ID`) searchable by default.
 
@@ -121,7 +121,7 @@ The URL for this interface is provided after you deploy the [!DNL Commerce Optim
 Key features include:
 
 * **Sync Status Tracking:** Monitor the status and timestamps of all sync operations.
-* **Connectivity Validation:** Test connections to both Salesforce Commerce Cloud and Adobe Commerce Optimizer.
+* **Connectivity Validation:** Test connections to both Salesforce Commerce Cloud and [!DNL Adobe Commerce Optimizer].
 * **Product Data Validation:** Verify that synchronized product data appears correctly in the storefront.
 * **Error Logging and Troubleshooting:** Error logs for troubleshooting can be access through the App Builder CLI.
 * **State Management:** Track sync progress and prevent conflicts with built-in state management.
@@ -132,10 +132,10 @@ The [!DNL Commerce Optimizer SFCC Connector] is open source and available for cu
 
 * **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Main connector application and documentation.
 * **[ACO SFCC Cartridges](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Required SFCC cartridge for API integration.
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - SDK for Adobe Commerce Optimizer integration.
+* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - SDK for [!DNL Adobe Commerce Optimizer] integration.
 
 These repositories provide complete source code, detailed documentation, and examples for implementing and customizing the connector.
 
 ## Next steps
 
-Ready to integrate your Salesforce Commerce Cloud data with Adobe Commerce Optimizer? Start by reviewing the detailed implementation guide in the [ACO SFCC Starter Kit repository](https://github.com/adobe-commerce/aco-sfcc-starter-kit) and ensure you have the necessary prerequisites in place.
+Ready to integrate your Salesforce Commerce Cloud data with [!DNL Adobe Commerce Optimizer]? Start by reviewing the detailed implementation guide in the [ACO SFCC Starter Kit repository](https://github.com/adobe-commerce/aco-sfcc-starter-kit) and ensure you have the necessary prerequisites in place.

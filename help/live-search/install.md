@@ -198,7 +198,7 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 
 ### Monitor sync progress
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.md) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
@@ -396,7 +396,7 @@ If you have a custom headless implementation, check out the [!DNL Live Search] r
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [[!DNL Live Search] field](https://github.com/adobe/storefront-search-as-you-type)
 
-Automatic collection of user interaction data does not work by default if you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
+Automatic collection of user interaction data does not work by default if you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe AI uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 
