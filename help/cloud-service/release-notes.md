@@ -18,9 +18,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## March 2026 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-The following items are currently available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service] and will be released to Production environments on March 09, 2026.
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to Production environments of [!DNL Adobe Commerce as a Cloud Service] on March 9, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -54,10 +56,7 @@ The `observer.catalog_category_delete_before` webhook is now available in [!DNL 
 
 ### Track guest orders placed with a registered email
 
-A new optional store-level configuration (disabled by default) allows merchants to track guest orders placed using an email address that matches a registered customer account. When enabled, guest checkout orders placed with a registered email remain accessible, while also appearing in the customer's order history.
-
-To enable this feature, navigate to **Stores** > Settings > **Configuration** > Sales > **Sales** > **Guest Checkout** and set the **Allow Guest Order Access for Registered Emails** setting to `Yes`.
-<!-- ACCS-289 -->
+A new optional store-level configuration allows customers to [track guest orders](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) they made, if the order was placed using an email address that matches a registered customer account. <!-- ACCS-289 -->
 
 ### Enhancements and bug fixes
 
