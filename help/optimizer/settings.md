@@ -330,3 +330,16 @@ Larger windows improve relevance across more results but increase processing tim
 -->
 
 >[!ENDTABS]
+
+### Keyword search versus semantic search
+
+[!DNL Adobe Commerce Optimizer] offers two search approaches that you can use separately or together:
+
+| | Keyword search | Semantic search |
+| --- | --- | --- |
+| **How it works** | Matches the exact words in the query to product attributes (name, SKU, description, and so on). You choose which attributes are searchable and set a **Weight** to influence ranking. | Uses AI to understand the *meaning* of the query and matches by intent and context, not just exact text. You choose which attributes are used for semantic matching and set **Priority**. |
+| **Best for** | SKUs, part numbers, brand names, and precise product terms. Shoppers who know what they want and type specific terms. | Natural language, phrases, synonyms, and descriptive queries. Shoppers who search like they talk ("dress for beach wedding," "comfortable running shoes"). |
+| **When to use** | Always—keyword search is the foundation. Use it for accurate, fast matches on identifiers and exact terms. | When you want to reduce zero-result searches, support natural language, or improve relevance for vague or descriptive queries. |
+| **Together** | Use **keyword search** for the attributes and terms that need exact matching (especially SKU and identifiers). Use **semantic search** for descriptive attributes (name, description, category) so natural-language and synonym-style queries still find products. | |
+
+Configure keyword search in the **[!UICONTROL Keyword search]** tab and semantic search in the **[!UICONTROL Semantic search]** tab on this page.

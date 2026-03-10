@@ -15,6 +15,7 @@ Product Discovery equips merchandisers with powerful tools to curate and optimiz
 
 With product discovery, you can:
 
+* **Configure [keyword and semantic search](../settings.md)** in Settings to define which product attributes are searchable and how they rank. Keyword search matches exact terms (ideal for SKUs and precise queries); semantic search uses AI to understand intent and natural language (ideal for descriptive and synonym-style queries). You can use one or both.
 * **Configure [facets](./facets/overview.md), [merchandising rules](./rules/overview.md), and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
 * **Create intuitive, goal-oriented search experiences** that reflect your merchandising strategy and seasonal priorities.
 * **Use AI-driven dynamic faceting and result re-ranking** to adapt search results in real time based on shopper behavior—boosting engagement and sales.
