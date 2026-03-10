@@ -56,8 +56,6 @@ Once onboarding is complete:
 
 1. **Registration with Assets Integration Service**: Your [!DNL Commerce Optimizer] tenant is registered with Assets Integration Service using the [!DNL Adobe Commerce Optimizer] Tenant ID, AEM Program ID, AEM Environment ID, and  tenant.
 
-1. **Authentication setup**: The IMS service token authentication is configured between [!DNL Commerce Optimizer] and the Assets Integration Service for a secure communication.
-
 1. **Event subscription**: Assets Integration Service subscribes to:
 
    * AEM Assets events (asset approved, updated, removed)
