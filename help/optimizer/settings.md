@@ -6,21 +6,125 @@ exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 ---
 # Settings
 
-Use the *Settings* workspace to configure the price facet ranges and intervals and the default language for product discovery.
+Use the *Settings* workspace to configure search and product discovery for your storefront. The following tabs are available:
 
-Price faceting specifies the number of price range groups and how price values are distributed among them.
-
-The **Language** setting tells [!DNL Adobe Commerce Optimizer] which language to expect when writing the index.
+- **Faceting** — Configure price range groups and intervals used as search filters.
+- **Language** — Set the catalog language used for indexing and search.
+- **Keyword search** — Configure keyword-based search settings.
+- **Semantic search** — Enable and configure AI-powered semantic search (attributes, priority, and related options).
 
 >[!BEGINTABS]
 
+>[!TAB Faceting]
+
+You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 creates the following price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
+
+1. On the **Settings** workspace, select **Price faceting**, and do the following:
+   - Enter the **Number of selections**, or price groupings to be available. Up to 100 price groupings can be defined.
+   - Enter the **Interval value**, or price range for each group. The maximum value is 40,000,000.
+1. Click **Save**.
+
+   It takes about 15 minutes for the updated settings to be available in the storefront.
+
+## Field descriptions
+
+| Field | Description |
+| --- | --- |
+| Number of selections | Specifies the number of price range groupings that can be used as search filters in the storefront. Default value: 8, Maximum value: 100 |
+| Interval value | Specifies the price range interval for each group. For example, five selections with an interval value of 20 creates five groupings of 0-20, 20-40, 40-60, 60-80, and >80. Default value: 5, Maximum value: 40,000,000 |
+
+>[!TAB Language]
+
+## Language
+
+The Language setting tells [!DNL Adobe Commerce Optimizer] which language to expect when reading the catalog and writing the index. 
+
+Languages have different sets of rules for grammar: how words are separated, verb tenses and word forms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
+
+Set the Language setting to the primary language of the catalog. When changing the language of the index, it can take from 5 to 60 minutes to reflect the change on the storefront, depending on the size and complexity of the catalog.
+
+|Language|Code|
+|----|----|
+|Arabic|ar|
+|Armenian|hy|
+|Basque|eu|
+|Bengali|bn|
+|Brazilian|pt-br|
+|Bulgarian|bg|
+|Catalan|ca|
+|Chinese (Simplified)|zh-cn|
+|Chinese (Traditional)|zh-tw|
+|Czech|cs|
+|Danish|da|
+|Dutch|nl|
+|English|en|
+|Estonian|et|
+|Finnish|fi|
+|French|fr|
+|Galician|gl|
+|German|de|
+|Greek|el|
+|Hindi|hi|
+|Hungarian|hu|
+|Indonesian|id|
+|Irish|ga|
+|Italian|it|
+|Japanese (Katakana)|ja|
+|Korean|ko|
+|Latvian|lv|
+|Lithuanian|lt|
+|Norwegian|no|
+|Persian|fa|
+|Portuguese|pt|
+|Romanian|ro|
+|Russian|ru|
+|Sorani|ku|
+|Spanish|es|
+|Swedish|sv|
+|Turkish|tr|
+|Thai|th|
+
 >[!TAB Keyword search]
 
+## Keyword search attributes
 
+Keyword search matches shopper queries to product attributes using exact text. In this section, select which attributes are searchable and set a **Weight** for each so that matches in higher-weight attributes rank higher in search results.
+
+![Keyword search attributes](./assets/keyword-search-attributes.png)
+
+1. On the **Settings** workspace, select the **[!UICONTROL Keyword search]** tab.
+1. Optionally, select a **[!UICONTROL Catalog source]** at the top of the page. Keyword search attributes are configured per catalog source.
+1. In the **Keyword search attributes** section, a table lists the selected attributes (if any). To add attributes, select **[!UICONTROL Select attributes]**.
+
+   The **Select attributes for keyword search** dialog appears.
+
+1. Select the product attributes to include in keyword search by selecting the checkbox for each attribute, then click **[!UICONTROL Add selected]**.
+
+   The dialog closes and the selected attributes appear in the **Keyword search attributes** table.
+
+1. Set the **[!UICONTROL Weight]** for each attribute using the slider.
+
+   Weight controls how much the attribute influences search ranking. A higher weight makes matches in that attribute appear higher in search results. For example, if **Name** has a higher weight than **SKU**, a query that matches both will rank name matches higher.
+
+1. To remove an attribute from keyword search, select the minus icon on that row.
+1. When you are finished, click **[!UICONTROL Publish]**.
+
+   The **Publish** button is enabled only when there are unsaved changes. After publishing, updated settings are applied to the catalog; indexing may take a few minutes to reflect on the storefront.
+
+### Field descriptions
+
+| Field | Description |
+| --- | --- |
+| Attribute label | The display name of the product attribute. |
+| Attribute code | The system code for the attribute. |
+| Weight | Importance of this attribute in keyword search ranking. Higher values make matches in this attribute rank higher in results. Use the slider to set the weight. |
+
+>[!TIP]
+>
+>Include attributes shoppers often search by, such as product name, SKU, category, color, size, and brand. Start with name and SKU, then add attributes based on how your customers search.
 
 >[!TAB Semantic search]
-
-
 
 ## Semantic search
 
@@ -49,35 +153,49 @@ Traditional keyword search fails when shoppers add descriptive words that don't 
 
 ### Enable semantic search
 
+In this section, select which product attributes to use for semantic search. Learn which [attributes are recommended](#recommended-attributes-for-semantic-search) for semantic search.
+
 >[!NOTE]
 >
->Before enabling semantic search, ensure you understand the performance impacts described below, especially if you have a large catalog.
+>Before enabling semantic search, ensure you understand the [performance impacts](#performance-impact) described below, especially if you have a large catalog.
 
-1. On the **Settings** workspace, select **[!UICONTROL Search]**.
-1. Under **Semantic search**, select your preferred search mode.
-1. Configure which product attributes should be used for semantic search (recommended).
-1. Click **Save**.
+![Enable Semantic Search](./assets/semantic-search-attributes.png)
 
-   After enabling, incremental catalog changes are processed normally. Full reindexing (if needed) may take longer for large catalogs but occurs in the background without storefront downtime.
+1. On the **Settings** workspace, select the **[!UICONTROL Semantic search]** tab.
+1. Optionally, select a **[!UICONTROL Catalog source]** at the top of the page. Semantic search attributes are configured per catalog source.
+1. In the **Semantic search attributes** section, a table lists the selected attributes (if any). To add attributes, select **[!UICONTROL Select attributes]**.
 
-### Configuration options
+   The **Select attributes for semantic search** dialog appears.
 
-Choose the semantic search mode that best fits your needs:
+1. Select the product attributes to include in semantic search by selecting the checkbox for each attribute, then click **[!UICONTROL Add selected]**.
 
-| Mode | Description | Best for |
-| ------ | ------------- | ---------- |
-| **Fallback only** | Uses semantic search only when keyword search returns zero results | Merchants wanting to reduce zero-results searches with minimal impact on normal search behavior |
-| **Hybrid search** | Combines traditional keyword search with semantic search results, showing both types together | Merchants wanting to maximize product discovery and relevance |
-| **Reranking** | Uses AI to reorder keyword search results by semantic relevance | Merchants with good keyword coverage who want to improve result ordering |
+   The dialog closes and the selected attributes appear in the **Semantic search attributes** table.
 
-### Configure searchable attributes
+1. Set the **[!UICONTROL Priority]** for each attribute.
+
+   Priority sets the importance of each attribute in semantic search. A priority of `1` is highest; that attribute is searched first.
+
+1. To remove an attribute from semantic  search, select the minus icon on that row.
+1. When you are finished setting the priority, click the **[!UICONTROL Publish]** button.
+
+   The **Publish** button is enabled only when there are unsaved changes. After publishing, updated settings are applied to the catalog; indexing may take a few minutes to reflect on the storefront.
+
+### Field descriptions
+
+| Field | Description |
+| --- | --- |
+| Attribute label | The display name of the product attribute. |
+| Attribute code | The system code for the attribute. |
+| Priority | Importance of this attribute in semantic search ranking. A priority of `1` is highest; that attribute is searched first. |
+
+### Recommended attributes for semantic search
 
 Not all product attributes are appropriate for semantic search. Use semantic search for descriptive text fields like:
 
 - Product name
 - Description
 - Category
-- Marketing attributes (e.g., style, use case, occasion)
+- Marketing attributes (for example, style, use case, occasion)
 
 Avoid using semantic search for:
 
@@ -92,55 +210,55 @@ Avoid using semantic search for:
 
 ### Performance impact
 
-Semantic search adds AI processing to your search operations. Here's what to expect:
+Semantic search adds AI processing to your search operations. This includes:
 
 **Indexing:**
 
-- Incremental product updates process normally with minimal delay
-- Full reindex operations take longer (noticeable for catalogs with 10,000+ products)
-- Reindexing happens in the background; your storefront continues using the current index with no downtime
+- Incremental product updates process normally with minimal delay.
+- Full reindex operations take longer (noticeable for catalogs with 10,000+ products).
+- Reindexing happens in the background; your storefront continues using the current index with no downtime.
 
 **Search speed:**
 
-- Individual search queries may take slightly longer (typically 15-20% increase)
-- For most stores, this difference is not noticeable to shoppers
-- Example: A query taking 180ms may take 210ms with semantic search enabled
+- Individual search queries may take slightly longer (typically 15-20% increase in response time).
+- For most stores, this difference is not noticeable to shoppers.
+- Example: A query taking 180ms may take 210ms with semantic search enabled.
 
 ### Best practices
 
 **Optimize your product data:**
 
-- Use clear, descriptive product names and descriptions
-- Include common use cases and occasions in product descriptions
-- Add relevant attributes that describe how products are used
-- Avoid overly technical jargon unless your audience expects it
+- Use clear, descriptive product names and descriptions.
+- Include common use cases and occasions in product descriptions.
+- Add relevant attributes that describe how products are used.
+- Avoid overly technical jargon unless your audience expects it.
 
 **Monitor and measure:**
 
-- Track your zero-results search rate before and after enabling
-- Monitor search-to-cart conversion rates
-- Review common search queries to identify gaps in your catalog data
+- Track your zero-results search rate before and after enabling.
+- Monitor search-to-cart conversion rates.
+- Review common search queries to identify gaps in your catalog data.
 
 **Start conservatively:**
 
-- Begin with **Fallback only** mode to minimize impact
-- Test with your most common search queries
-- Expand to **Hybrid search** once you validate the results quality
+- Begin with **Fallback only** mode to minimize impact.
+- Test with your most common search queries.
+- Expand to **Hybrid search** once you validate the results quality.
 
 **Relationship with synonyms:**
 
-- Semantic search reduces but doesn't eliminate the need for synonyms
-- Keep brand-specific or highly technical synonyms you've already created
-- Use semantic search to handle general language variations automatically
+- Semantic search reduces but does not eliminate the need for synonyms.
+- Keep brand-specific or highly technical synonyms you've already created.
+- Use semantic search to handle general language variations automatically.
 
 ### Troubleshooting
 
 **Search results seem less relevant after enabling semantic search:**
 
-1. Check which search mode you selected - try switching modes
-1. Verify which attributes are configured for semantic search
-1. Review if SKUs or identifiers are incorrectly included in semantic search fields
-1. Consider if your product descriptions need improvement
+1. Check which search mode is selected—try switching modes.
+1. Verify which attributes are configured for semantic search.
+1. Review whether SKUs or identifiers are incorrectly included in semantic search fields.
+1. Consider whether your product descriptions need improvement.
 
 **Searches for product codes return unexpected results:**
 
@@ -158,6 +276,8 @@ Semantic search adds AI processing to your search operations. Here's what to exp
 - Review your most common zero-results queries
 - Improve product descriptions to include more natural language terms
 - Ensure semantic search is enabled for your primary descriptive attributes
+
+<!--
 
 ### Advanced configuration
 
@@ -206,26 +326,6 @@ Larger windows improve relevance across more results but increase processing tim
    - In case of semantic UI, attribute needs to have been created before hand.
 - When attribute metadata has been updated using semantic UI, it cannot be updated from feeds API (just the semantic search fields).
  
->[!TAB Advanced search rules]
-
->[!TAB Recommendations]
-
->[!TAB Faceting]
-
-You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 creates the following price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
-
-1. On the **Settings** workspace, select **[!UICONTROL Search]**, then under **Price faceting**, do the following:
-   - Enter the **Number of selections**, or price groupings to be available. Up to 100 price groupings can be defined.
-   - Enter the **Interval value**, or price range for each group. The maximum value is 40,000,000.
-1. Click **Save**.
-
-   It takes about 15 minutes for the updated settings to be available in the storefront.
-
-### Field descriptions
-
-| Field | Description |
-| --- | --- |
-| Number of selections | Specifies the number of price range groupings that can be used as search filters in the storefront. Default value: 8, Maximum value: 100 |
-| Interval value | Specifies the price range interval for each group. For example, five selections with an interval value of 20 creates five groupings of 0-20, 20-40, 40-60, 60-80, and >80. Default value: 5, Maximum value: 40,000,000 |
+-->
 
 >[!ENDTABS]
