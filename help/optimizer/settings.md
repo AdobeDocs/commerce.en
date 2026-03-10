@@ -8,21 +8,22 @@ exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 
 Use the *Settings* workspace to configure search and product discovery for your storefront. The following tabs are available:
 
-- **Faceting** — Configure price range groups and intervals used as search filters.
+- **Facets** — Configure price range groups and intervals used as search filters.
 - **Language** — Set the catalog language used for indexing and search.
 - **Keyword search** — Configure keyword-based search settings.
 - **Semantic search** — Enable and configure AI-powered semantic search (attributes, priority, and related options).
 
 >[!BEGINTABS]
 
->[!TAB Faceting]
+>[!TAB Facets]
 
 You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 creates the following price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
 
-1. On the **Settings** workspace, select **Price faceting**, and do the following:
-   - Enter the **Number of selections**, or price groupings to be available. Up to 100 price groupings can be defined.
-   - Enter the **Interval value**, or price range for each group. The maximum value is 40,000,000.
-1. Click **Save**.
+1. On the **Settings** workspace, select **Facets**.
+1. In the **Price facet** section, do the following:
+   - Enter the **[!UICONTROL Number of selections]**, or price groupings to be available. Up to 100 price groupings can be defined.
+   - Enter the **[!UICONTROL Interval value]**, or price range for each group. The maximum value is 40,000,000.
+1. Click **[!UICONTROL Save]**.
 
    It takes about 15 minutes for the updated settings to be available in the storefront.
 
