@@ -16,9 +16,54 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## March 2026 {#latest}
+## March 2026 - release #2 {#latest}
 
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items are currently available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service] and will be released to Production environments in a future release.
+
+>[!BEGINSHADEBOX]
+
+### Log in as a customer using one-time codes
+
+Admins can now generate [one-time codes](./login-as-customer.md) for customer impersonation through the [!DNL Commerce Admin] and REST API. The one-time code can be exchanged for a customer access token through the `generateCustomerToken` or `exchangeOtpForCustomerToken` GraphQL mutations, enabling passwordless "Login as Customer" flows for seller-assisted shopping scenarios. <!-- ACCS-404 -->
+
+### Manage gift card accounts through the REST API
+
+[Gift card accounts](./gift-card-account-api.md) can now be created, updated, deleted, and queried through the REST API. Additionally, JSON bulk import support is available through the `/V1/import/json` endpoint, enabling third-party integrations to programmatically synchronize gift cards. <!-- ACCS-476 -->
+
+### Trigger transactional emails through the REST API
+
+A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](./email-templating.md) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
+
+### Subscribe to the out-of-process shipping get-rates webhook
+
+The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook is now available in the Admin Webhooks list in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement [custom shipping methods](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods). <!-- ACCS-478 -->
+
+### Upload files through product attributes
+
+Product attributes with the "File" input type now support file uploads (such as PDFs) in [!DNL Adobe Commerce as a Cloud Service]. The REST API also supports presigned URLs for file attribute uploads. <!-- ACCS-535, ACCS-565 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where bulk company assignment and unassignment actions on the Shared Catalog grid could cause an error. <!-- CCSAAS-4614 -->
+
+* Fixed an issue where custom cart pricing was overwritten when the same product was added to the cart again with a different quantity or custom price. <!-- ACCS-529 -->
+
+* Requisition list item UIDs are now consistent with cart and wishlist item UIDs. <!-- ACCS-349 -->
+
+* Fixed a product edit page timeout that could occur with large shared catalogs. <!-- CCSAAS-4657 -->
+
+* Re-enabled the `/V1/directory/countries` and `/V1/directory/countries/:countryId` REST API endpoints for admin integrations, allowing clients to look up valid country and region data. <!-- ACCS-518 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+
+## March 2026 - release #1
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
