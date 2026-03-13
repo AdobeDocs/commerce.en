@@ -34,7 +34,7 @@ Admins can now generate [one-time codes](./login-as-customer.md) for customer im
 
 ### Trigger transactional emails through the REST API
 
-A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](./email-templating.md) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
+A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](./email-triggering.md) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
 
 ### Subscribe to the out-of-process shipping get-rates webhook
 
