@@ -62,23 +62,23 @@ After installing the [!DNL Adobe I/O CLI] and the required plugins, set up your 
 
 The `app-setup` command automates the workspace setup process, including creating an [!DNL Adobe Developer Console] project, adding the required APIs, configuring the [!DNL Adobe I/O CLI], cloning the starter kit, connecting your local workspace, and installing the extensibility AI tools.
 
-1. Run the following command and follow the interactive prompts:
+The `app-setup` command guides you through the following steps:
 
-   ```bash
-   aio commerce extensibility app-setup
-   ```
+ * Selecting or creating an [!DNL Adobe Developer Console] project with the required APIs
+ * Configuring the [!DNL Adobe I/O CLI] with your organization, project, and workspace
+ * Cloning the appropriate starter kit and setting up the project
+ * Configuring the environment and connecting the local workspace to the remote workspace
+ * Installing the Commerce extensibility tools and coding agent skills
 
-1. The command guides you through the following steps:
+Run the following command and follow the interactive prompts:
 
-   * Selecting or creating an [!DNL Adobe Developer Console] project with the required APIs
-   * Configuring the [!DNL Adobe I/O CLI] with your organization, project, and workspace
-   * Cloning the appropriate starter kit and setting up the project
-   * Configuring the environment and connecting the local workspace to the remote workspace
-   * Installing the Commerce extensibility tools and coding agent skills
+```bash
+aio commerce extensibility app-setup
+```
 
-   The following example installation shows the interactive prompts and output for the checkout starter kit.
+After the command completes, navigate to your project directory and restart your coding agent to load the new MCP tools and skills. Then proceed to the [Storefront prerequisites](#storefront-prerequisites) if your tutorial requires a storefront, or go directly to the tutorial.
 
-1. After the command completes, navigate to your project directory and restart your coding agent to load the new MCP tools and skills. Then proceed to the [Storefront prerequisites](#storefront-prerequisites) if your tutorial requires a storefront, or go directly to the tutorial.
+The following example installation shows the interactive prompts and output for the checkout starter kit.
 
 +++Example installation (checkout starter kit)
 
@@ -407,7 +407,9 @@ npm install
 
 ### Install the storefront AI tools
 
-Set up the AI-assisted development tools in the `storefront` folder. Run the following command from the root of your boilerplate project:
+Set up the AI-assisted development tools in the `storefront` folder.
+
+Run the following command from the root of your boilerplate project. The command installs the `@adobe-commerce/commerce-extensibility-tools` package as a dev dependency, copies the skill files into your agent's skills directory, and configures MCP (Model Context Protocol) so your agent can access Commerce documentation search tools.
 
 ```bash
 aio commerce extensibility tools-setup
@@ -418,5 +420,3 @@ The command walks you through two prompts:
 1. **Select a starter kit** — Choose **AEM Boilerplate Commerce**.
 
 1. **Select your coding agent** — Choose your agent from the list of supported agents.
-
-The command installs the `@adobe-commerce/commerce-extensibility-tools` package as a dev dependency, copies the skill files into your agent's skills directory, and configures MCP (Model Context Protocol) so your agent can access Commerce documentation search tools.
