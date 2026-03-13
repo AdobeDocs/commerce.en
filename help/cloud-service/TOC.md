@@ -22,7 +22,7 @@ recommendations: noDisplay, noCatalog
   - [Documentation RAG Service](migration/doc-rag.md)
 - [Login as a Customer](login-as-customer.md)
 - [Gift Card Account API](gift-card-account-api.md)
-- [Email Templating](email-templating.md)
+- [Email Triggering](email-triggering.md)
 - Tutorials {#tutorials}
   - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
   - [Ratings Extension Tutorial](tutorials/ratings-extension.md)
