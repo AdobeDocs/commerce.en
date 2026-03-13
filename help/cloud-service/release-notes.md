@@ -44,6 +44,77 @@ The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rat
 
 Product attributes with the "File" input type now support file uploads (such as PDFs) in [!DNL Adobe Commerce as a Cloud Service]. The REST API also supports presigned URLs for file attribute uploads. <!-- ACCS-535, ACCS-565 -->
 
+### Configure company custom attributes
+
+Admins can now manage company custom attributes on the Company edit page in the [!DNL Commerce Admin]. Custom attributes can be configured, saved, and validated from the Admin UI for [!DNL Adobe Commerce as a Cloud Service]. 
+
+To configure company custom attributes, navigate to [!UICONTROL **Customers**] > [!UICONTROL **Companies**] and select a company to open the edit page. Then select the [!UICONTROL **Custom Attributes**] tab to add new attributes.
+<!-- ACCS-294 -->
+
+### Subscribe to price and stock alerts through GraphQL
+
+EDS storefronts now work with [price and stock alerts](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup). <!-- ACCS-334 -->
+
+Additionally, there are several new GraphQL mutations to subscribe and unsubscribe to price and stock alerts:
+
++++New GraphQL mutations
+
+```
+mutation {
+  subscribeProductAlertStock(input: { sku: "ADB111" }) {
+    success
+    message
+  }
+}
+```
+
+```
+mutation {
+  unsubscribeProductAlertStock(input: { sku: "ADB111" }) {
+    success
+    message
+  }
+}
+```
+
+```
+mutation {
+  unsubscribeProductAlertStockAll {
+    success
+    message
+  }
+}
+```
+
+```
+mutation {
+  subscribeProductAlertPrice(input: { sku: "ADB112" }) {
+    success
+    message
+  }
+}
+```
+
+```
+mutation {
+  unsubscribeProductAlertPrice(input: { sku: "ADB115" }) {
+    success
+    message
+  }
+}
+```
+
+```
+mutation {
+  unsubscribeProductAlertPriceAll {
+    success
+    message
+  }
+}
+```
+
++++
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
@@ -57,6 +128,8 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed a product edit page timeout that could occur with large shared catalogs. <!-- CCSAAS-4657 -->
 
 * Re-enabled the `/V1/directory/countries` and `/V1/directory/countries/:countryId` REST API endpoints for admin integrations, allowing clients to look up valid country and region data. <!-- ACCS-518 -->
+
+* Fixed a timeout issue that could occur in the REST API when a user has a large shared catalog. <!-- ACCS-4657 -->
 
 {{accs-release}}
 
