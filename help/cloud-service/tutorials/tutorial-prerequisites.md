@@ -81,6 +81,7 @@ The `app-setup` command automates the workspace setup process, including creatin
 1. After the command completes, navigate to your project directory and restart your coding agent to load the new MCP tools and skills. Then proceed to the [Storefront prerequisites](#storefront-prerequisites) if your tutorial requires a storefront, or go directly to the tutorial.
 
 +++Example installation (checkout starter kit)
+
 ```shell-session
 aio commerce extensibility app-setup
 
@@ -160,6 +161,7 @@ Next steps:
    1. cd into your project directory
    2. Restart your coding agent to load the Commerce Extensibility tools and skills
 ```
+
 +++
 
 ### Manual setup {#manual-setup}
