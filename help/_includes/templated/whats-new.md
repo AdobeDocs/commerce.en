@@ -68,7 +68,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added new <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">App Management</a>  documentation guide to introduce App Management and how to associate, configure, and manage App Builder applications with your Commerce instance.</p>
+      <td><p>Added new <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">App Management</a> documentation guide to introduce App Management and how to associate, configure, and manage App Builder applications with your Commerce instance.</p>
 </td>
       <td>
         New topic
@@ -150,7 +150,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f55cbabdc50af4e38b57ece217e5133d1f3fada8">commit</a></td>
     </tr>
     <tr>
-      <td><p>Add instructions for deleting an API key to the <a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey">Commerce Services Connector</a> documentation.</p>
+      <td><p>Added instructions for deleting an API key to the <a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey">Commerce Services Connector</a> documentation.</p>
 </td>
       <td>
         Feedback

@@ -41,7 +41,7 @@ entries:
   - core-saas
   - major-update
   - hold for release
-- description: Added new [App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)  documentation
+- description: Added new [App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview) documentation
     guide to introduce App Management and how to associate, configure, and manage
     App Builder applications with your Commerce instance.
   versions: ''
@@ -102,7 +102,7 @@ entries:
   labels:
   - enhancement
   - feedback
-- description: Add instructions for deleting an API key to the [Commerce Services
+- description: Added instructions for deleting an API key to the [Commerce Services
     Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey)
     documentation.
   versions: ''
