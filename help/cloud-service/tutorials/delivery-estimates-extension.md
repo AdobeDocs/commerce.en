@@ -447,8 +447,6 @@ Next, configure the Admin UI:
 
 1. Fill in the configuration: enable the feature, set the API URL, API key, origin address, default carriers, cache TTL, and carrier code mapping.
 
-   ![Delivery Estimates configuration page in Commerce Admin](../assets/delivery-estimates-admin-config.png){width="600" zoomable="yes"}
-
 ### Step 7: Test the extension
 
 Test the delivery estimates BFF action directly:
@@ -489,8 +487,6 @@ The response should look similar to:
   }
 }
 ```
-
-![Runtime action logs in Adobe Developer Console showing successful BFF invocation](../assets/delivery-estimates-bff-logs.png){width="600" zoomable="yes"}
 
 ### Create the service contract
 
@@ -661,12 +657,6 @@ After the agent completes the implementation, start the development server and t
    | Checkout | "Estimated delivery: Thursday, March 12" per shipping method | No (address entered at checkout) |
 
    {style="table-layout:auto"}
-
-   ![Product detail page showing delivery estimate below the add to cart button](../assets/delivery-estimates-pdp.png){width="600" zoomable="yes"}
-
-   ![Cart page showing delivery date range above order summary](../assets/delivery-estimates-cart.png){width="600" zoomable="yes"}
-
-   ![Checkout page showing delivery dates next to each shipping method](../assets/delivery-estimates-checkout.png){width="600" zoomable="yes"}
 
 >[!NOTE]
 >
