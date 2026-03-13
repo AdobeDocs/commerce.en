@@ -63,8 +63,8 @@ You must meet the following requirements before using the login as a customer fe
 
 After the One-Time Code is generated, you can use it by navigating to your storefront and logging in using the following credentials:
 
-- **Email**: The customer's email address
-- **Password**: The generated One-Time Code (OTC)
+* **Email**: The customer's email address
+* **Password**: The generated One-Time Code (OTC)
 
 ## Generate a one-time code using the REST API
 
