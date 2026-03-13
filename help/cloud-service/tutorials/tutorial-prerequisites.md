@@ -49,6 +49,123 @@ The following tools are required for both extension and storefront development i
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
+After installing the [!DNL Adobe I/O CLI] and the required plugins, set up your extensibility workspace. Adobe recommends using the automated setup for the fastest experience.
+
+* **[Automated setup](#automated-setup) (Recommended)** — Run a single command to configure your workspace automatically.
+* **[Manual setup](#manual-setup)** — Follow step-by-step instructions to configure each component individually.
+
+### Automated setup (Recommended) {#automated-setup}
+
+>[!TIP]
+>
+>If you encounter issues with the automated setup, follow the [manual setup](#manual-setup) steps below.
+
+The `app-setup` command automates the workspace setup process, including creating an [!DNL Adobe Developer Console] project, adding the required APIs, configuring the [!DNL Adobe I/O CLI], cloning the starter kit, connecting your local workspace, and installing the extensibility AI tools.
+
+1. Run the following command and follow the interactive prompts:
+
+   ```bash
+   aio commerce extensibility app-setup
+   ```
+
+1. The command guides you through the following steps:
+
+   * Selecting or creating an [!DNL Adobe Developer Console] project with the required APIs
+   * Configuring the [!DNL Adobe I/O CLI] with your organization, project, and workspace
+   * Cloning the appropriate starter kit and setting up the project
+   * Configuring the environment and connecting the local workspace to the remote workspace
+   * Installing the Commerce extensibility tools and coding agent skills
+
+   The following example installation shows the interactive prompts and output for the checkout starter kit.
+
+1. After the command completes, navigate to your project directory and restart your coding agent to load the new MCP tools and skills. Then proceed to the [Storefront prerequisites](#storefront-prerequisites) if your tutorial requires a storefront, or go directly to the tutorial.
+
++++Example installation (checkout starter kit)
+```shell-session
+aio commerce extensibility app-setup
+
+🚀 Adobe Commerce Extensibility App Setup
+
+✔ Logged in
+📁 Working directory: /Users/username/projects/my-commerce-project
+
+✔ Which starter kit would you like to use? Checkout Starter Kit
+✔ Enter a name for your project directory: my-extension
+✔ Which coding agent would you like to install the skills for? Cursor
+
+📦 Cloning Checkout Starter Kit...
+   ✔ Repository cloned
+   Using npm (package-lock.json found)
+   ✔ Dependencies installed
+
+📋 Current Adobe I/O Console configuration:
+   Org: My Organization (1234567)
+   Project: My Commerce Project (1234567890123456789)
+   Workspace: Stage (9876543210987654321)
+✔ Do you want to continue with this configuration? (Answer "No" to select a different org/project/workspace)
+No
+
+🔧 Selecting Adobe I/O Console org, project, and workspace...
+
+? Select Org: My Organization
+Org selected My Organization
+You are currently in:
+1. Org: My Organization
+2. Project: <no project selected>
+3. Workspace: <no workspace selected>
+
+? Select Project: My Commerce Project
+Project selected : My Commerce Project
+You are currently in:
+1. Org: My Organization
+2. Project: My Commerce Project
+3. Workspace: <no workspace selected>
+
+? Select Workspace: Stage
+Workspace selected Stage
+You are currently in:
+1. Org: My Organization
+2. Project: My Commerce Project
+3. Workspace: Stage
+
+✅ Console configured:
+   Org: My Organization
+   Project: My Commerce Project
+   Workspace: Stage
+
+🔐 Configuring workspace credentials and services...
+   ✔ Workspace configuration loaded
+   ✔ OAuth server-to-server credentials already configured
+   ✔ All required services available in organization
+   ✔ Subscribed to: Adobe Commerce as a Cloud Service
+
+📋 Configuring Checkout Starter Kit...
+   Creating .env from env.dist...
+✔ Select tenant (type to search) My Commerce Instance:
+https://<region>.api.commerce.adobe.com/<tenant-id>/graphql
+   ✔ Commerce instance configured
+✔ Enter the event prefix for your workspace: my-prefix
+   ✔ Workspace IDs configured
+   ✔ OAuth credentials configured
+   ✔ Checkout Starter Kit configured
+
+🔧 Installing Commerce Extensibility tools and agent skills...
+   ✔ Commerce Extensibility tools installed
+
+🎉 App setup complete!
+
+📁 Project directory: /Users/username/projects/my-commerce-project/my-extension
+
+Next steps:
+   1. cd into your project directory
+   2. Restart your coding agent to load the Commerce Extensibility tools and skills
+```
++++
+
+### Manual setup {#manual-setup}
+
+The following sections describe how to manually set up each component of your extensibility workspace. Follow these steps if you prefer manual configuration, or if you encounter issues with the [automated setup](#automated-setup).
+
 ### Adobe Developer Console prerequisites
 
 Set up a project in the Adobe Developer Console with the required APIs and credentials.
