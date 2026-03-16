@@ -27,5 +27,6 @@ recommendations: noDisplay, noCatalog
 - Schemas {#schemas}
   - [GraphQL schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST API schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [Video tutorials](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Release notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
