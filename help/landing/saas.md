@@ -131,7 +131,7 @@ To select or create a SaaS project, request the [!DNL Commerce] API keys from th
 
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
-   If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project/data space.
+   If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
 
   >[!WARNING]
   >
