@@ -338,10 +338,10 @@ The agent returns with a series of clarifying questions covering topics such as 
 **Example agent questions:**
 
 1. **Target environment** — Are you building for PaaS (on-premise) or SaaS (Adobe Commerce as a Cloud Service)?
-1. **Scope** — Should this be a standalone BFF action (storefront calls it directly), webhook enrichment (extend shipping methods at checkout), or both?
-1. **Admin configurability** — Should settings like API URL, API key, and origin address be configurable via the Commerce Admin, or stored in `.env`?
-1. **Origin address** — Where does the ship-from (warehouse) address come from? Should it be a static configuration or dynamically resolved?
-1. **Caching** — Should delivery estimates be cached on the server side to reduce calls to the external API? If so, what TTL?
+2. **Scope** — Should this be a standalone BFF action (storefront calls it directly), webhook enrichment (extend shipping methods at checkout), or both?
+3. **Admin configurability** — Should settings like API URL, API key, and origin address be configurable via the Commerce Admin, or stored in `.env`?
+4. **Origin address** — Where does the ship-from (warehouse) address come from? Should it be a static configuration or dynamically resolved?
+5. **Caching** — Should delivery estimates be cached on the server side to reduce calls to the external API? If so, what TTL?
 
 **Example answers:**
 
@@ -349,9 +349,11 @@ The agent returns with a series of clarifying questions covering topics such as 
 Clarifications:
 1. Let's build for SaaS
 2. Let's do this:
-(A) Can the PDP/cart call the 3rd party API directly - or are there any benefits of wrapping this call with a runtime action?
+(A) Can the PDP/cart call the 3rd party API directly — or are there any benefits of wrapping this call with a runtime action?
 (B) Let's use the shipping-methods webhook
-3. Let's use a Single-page application (SPA) that uses the Admin UI SDK to integrate with the admin,. Since we are adding this config screen, let's make anything else that makes sense configurable to avoid redeployments when changing settings
+3. Let's use a Single-page application (SPA) that uses the Admin UI SDK to integrate with the admin. Since we are adding this config screen, let's make anything else that makes sense configurable to avoid redeployments when changing settings
+4. Static configuration — origin address should be configurable in the Admin UI (e.g. warehouse address)
+5. Yes, cache on the server side; suggest a TTL (e.g. 30 minutes) and make it configurable in the Admin UI
 ```
 
 >[!TIP]
@@ -576,17 +578,17 @@ The agent returns with questions about authentication scope, checkout approach, 
 **Example agent questions:**
 
 1. **Anonymous vs logged-in users** — Should estimates display on PDP and Cart pages for all shoppers or only authenticated ones?
-1. **Checkout approach** — The ShippingMethods drop-in container does not expose `additional_data`, so the agent proposes two options:
+2. **Checkout approach** — The ShippingMethods drop-in container does not expose `additional_data`, so the agent proposes two options:
    - **Option A:** Call the BFF at checkout and DOM-inject delivery dates (simpler, consistent with PDP/Cart)
    - **Option B:** Extend the checkout GraphQL fragment via `overrideGQLOperations` to include `additional_data`
-1. **Styling** — Emojis vs existing design tokens
+3. **Styling** — Emojis vs existing design tokens
 
 **Example answers:**
 
 ```shell-session
-1 & 2. Is it possible to implement only for users logged in? Does it make sense?
-3. Let's do A if feasible
-4. Use anything that matches the current styling
+1. Only for logged-in users — that way we can use the shopper's default shipping address and avoid a zip code input
+2. Let's do Option A if feasible
+3. Use anything that matches the current styling
 ```
 
 >[!TIP]
