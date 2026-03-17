@@ -411,7 +411,7 @@ After you add the block to the product page in Document Authoring, start the dev
 You can do manual testing or ask the agent to use its browser capabilities to test for you:
 
 ```shell-session
-run through browser testing. use the following product page 'http://localhost:3000/products/<product-slug>/ADB153'
+Run complete browser testing. Use the following product page 'http://localhost:3000/products/<product-slug>/ADB153'
 ```
 
 ### Step 8: Clean up
