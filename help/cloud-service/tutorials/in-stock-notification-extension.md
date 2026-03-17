@@ -137,7 +137,7 @@ The agent generates requirements and architecture documents for you to review. V
 
 ### Step 4: Select an implementation plan
 
-The agent gives you the option of creating a detailed implementation plan or doing a direct implementation.
+The agent gives you the option to create a detailed implementation plan, or to complete a direct implementation.
 
 - If you want a reviewable plan that you can execute in phases with more control, select the first option.
 - If you want the agent to do the full implementation with minimal intervention, select the second option.
