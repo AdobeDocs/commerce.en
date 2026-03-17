@@ -57,7 +57,7 @@ Additionally, verify the following:
 
 ## Extension development
 
-This section guides you through developing a product reviews and Q&A extension for [!DNL Adobe Commerce as a Cloud Service] using AI-assisted development tools. The extension provides a REST API for product reviews and Q&A and displays them on the PDP.
+This section guides you through developing an extension to submit and view product review and Q&A content for extension for storefronts with an [!DNL Adobe Commerce as a Cloud Service] backend using AI-assisted development tools. The extension provides a REST API to submit and view product review and Q&A content and  to display it on the PDP.
 
 1. Navigate to the MCP settings in your coding agent. For example, in Cursor, go to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**. Verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
 
