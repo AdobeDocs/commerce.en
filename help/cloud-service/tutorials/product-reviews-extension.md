@@ -456,7 +456,7 @@ Here is a summary of the topics covered in this tutorial:
 
 Use the following suggestions to extend your product reviews service:
 
-- **Add moderation:** Implement a moderation workflow for reviews and Q&A before they are published.
+- **Add moderation:** Implement a moderation workflow for review and Q&A content before it is published.
 - **Add authentication:** Require shoppers to be logged in to submit reviews or Q&A, and associate submissions with customer accounts.
 - **Add a subscription management page:** Create a storefront page where shoppers can view and edit their reviews.
 - **Support multi-tenant deployments:** Extend the state management to support multiple Commerce tenants in a single App Builder app.
