@@ -126,7 +126,7 @@ The agent returns with a series of questions it needs before it can start formin
 
 The agent generates requirements and architecture documents for you to review. Verify that the requirements match the answers you provided and that the architecture covers:
 
-- A REST API action for subscription CRUD (create, read, delete)
+- A REST API action for subscription CRUD (create, read, update, and delete)
 - An event-driven back-in-stock handler triggered by Commerce inventory events
 - A scheduled check-stock action as a fallback
 - Persistence using `aio-lib-state`
