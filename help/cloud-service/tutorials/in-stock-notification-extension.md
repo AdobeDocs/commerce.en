@@ -322,7 +322,7 @@ The agent returns with a series of questions it needs before it can start formin
 >
 >Your agent may ask different questions. Use these answers as guidance:
 >
->- The API base URL should be a global placeholder so it can be changed without code modifications.
+>- Use a global placeholder for the API base URL so that it can be changed without code modifications.
 >- Use placeholders for user-facing copy with static English as the fallback.
 >- After a successful subscription, keep the form visible but disabled with a success message above it.
 >- For configurable products, use the selected variant's `inStock` value to control form visibility.
