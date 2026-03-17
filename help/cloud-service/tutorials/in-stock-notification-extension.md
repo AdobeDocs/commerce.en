@@ -144,7 +144,7 @@ The agent gives you the option to create a detailed implementation plan, or to c
 
 ### Step 5: Deploy, onboard, and subscribe to events
 
-After the agent completes the implementation, it provides next steps. Deploy the app, onboard the Commerce instance, and subscribe to events using the following commands:
+After the agent completes the implementation, it provides next steps to deploy the app, onboard the Commerce instance, and subscribe to events using the following commands:
 
 1. Deploy the extension:
 
@@ -164,7 +164,11 @@ After the agent completes the implementation, it provides next steps. Deploy the
    npm run commerce-event-subscribe
    ```
 
-1. Validate the event subscription by navigating to your Commerce instance and opening **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**. You should see a table of event records.
+1. Validate the event subscription.
+
+   Navigate to your Commerce instance and open **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**. 
+   
+   You should see a table of event records.
 
    ![Commerce Admin menu highlighting Event Subscription section](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
 
@@ -175,7 +179,7 @@ After the agent completes the implementation, it provides next steps. Deploy the
 Ask the agent to provide testing steps. Since this is an API service, you can request command-line instructions:
 
 ```shell-session
-Give me step by step instructions on how I can test some of these in the command line
+Give me step by step instructions to test the API service from the command line.
 ```
 
 Follow the steps the agent provides. The following examples show typical test commands.
@@ -188,7 +192,7 @@ API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X
   -d '{"email":"test@example.com","sku":"ADB153"}'
 ```
 
-The response should look similar to:
+The response looks similar to::
 
 ```json
 {
@@ -205,7 +209,7 @@ The response should look similar to:
 curl -X GET "$API_URL"
 ```
 
-The response should return a list of all active subscriptions:
+The response returns a list of all active subscriptions:
 
 ```json
 {
@@ -222,18 +226,19 @@ The response should return a list of all active subscriptions:
 
 **Test the back-in-stock flow:**
 
-1. Go to your Commerce instance and edit a product that you have created a subscription for.
+1. From your Commerce instance, edit a product that you have created a subscription for.
 1. Set the product stock status to **[!UICONTROL Out of Stock]**.
 1. Wait about one minute and toggle the stock status back to **[!UICONTROL In Stock]**.
    
    ![Commerce Admin product edit page showing Stock Status dropdown with In Stock and Out of Stock options](../assets/in-stock-product-stock-status-toggle.png){width="600" zoomable="yes"}
 
 1. Wait about five minutes for the event to trigger and send to your service.
-1. Open the [!DNL Adobe Developer Console] and navigate to the App Builder logs section.
+
+1. From the [!DNL Adobe Developer Console], navigate to the App Builder logs section.
 
    ![Adobe Developer Console App Builder logs section](../assets/in-stock-developer-console-logs.png){width="600" zoomable="yes"}
 
-1. Look for log entries that confirm the event was processed and the correct email and SKU subscription pair was identified.
+1. In the logs, verify that there are entries that confirm the event was processed and that the correct email–SKU subscription pair was identified.
 
    ![App Builder log entries showing back-in-stock event processing](../assets/in-stock-log-entries.png){width="600" zoomable="yes"}
 
@@ -248,7 +253,7 @@ After the back-in-stock event processes, requesting the list of subscriptions sh
 Now that the service implementation is complete, ask the agent to create a service contract for the storefront work:
 
 ```shell-session
-Create an API service contract for the Out of Stock notification service and its endpoints. The service contract should be clear and detailed enough for a frontend developer to implement the storefront UI integration without needing to ask additional questions about the API. Name this file OUT_OF_STOCK_NOTIFICATION_CONTRACT.md
+Create an API service contract for the Out of Stock notification service and its endpoints. Ensure that the service contract is clear and detailed enough for a frontend developer to implement the storefront UI integration without needing to ask additional questions about the API. Name this file OUT_OF_STOCK_NOTIFICATION_CONTRACT.md
 ```
 
 Copy this file into your storefront project so the storefront agent can reference it.
@@ -287,18 +292,18 @@ Open your `config.json` file and verify that the values for `commerce-core-endpo
 With the service contract already in your project, prompt the agent to create the UI in the product details page. Use **Plan** mode if available in your agent, to prevent the agent from proceeding without a plan.
 
 ```shell-session
-Analyze @OUT_OF_STOCK_NOTIFICATION_CONTRACT.md and add a form for subscribing to a notification for when a product is back in stock. This form should show up in the product details page underneath the add to cart and wishlist button. It should only show up when a product is out of stock. 
+Analyze @OUT_OF_STOCK_NOTIFICATION_CONTRACT.md. Add a form for subscribing to a notification for when a product is back in stock. Place this form on the product details page, underneath the add to cart and wishlist button. The form only displays when a product is out of stock. 
 
 Use the project manager skill to plan this implementation.
 ```
 
 >[!TIP]
 >
->Specifically requesting to use the project manager skill triggers the phased workflow that helps you steer the implementation early in the process and gives the agent the opportunity to present you with details and requirements you may not have thought to provide in the original prompt.
+>Specifically requesting to use the project manager skill triggers the phased workflow that helps you steer the implementation early in the process. This process ensures that key assumptions and missing requirements are identified early and gives the agent the opportunity to present you with details and requirements you may not have thought to provide in the original prompt.
 
 ### Step 3: Answer planning questions
 
-The agent returns with a series of questions it needs before it can start forming a solution. The following example shows typical questions and answers. Your agent may ask different questions, but the topics are generally the same.
+The agent returns with a series of questions it needs to answer before it can start forming a solution. The following example shows typical questions and answers. Your agent may ask different questions, but the topics are generally the same.
 
 **Example agent questions:**
 
