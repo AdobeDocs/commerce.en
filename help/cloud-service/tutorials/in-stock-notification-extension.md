@@ -110,7 +110,7 @@ The agent returns with a series of questions it needs before it can start formin
 
 ```shell-session
 1. The CRUD REST API should be part of thie App Builder app. It will be called by the EDS Storefront. For this implementation there is no need for API keys or security tokens.
-2. For this initial implementation the customer identifier will be the email, product is identified by sku, customer emails should not be able to subscribe to the same sku multiple times.
+2. For this initial implementation the customer identifier will be the email, product is identified by SKU, customer emails should not be able to subscribe to the same SKU multiple times.
 3. Implement both. For now instead of sending the notification, log it so I can audit in the adobe developer console.
 4. Research and use what the best event to use that commerce already provides. Research the simplest way to get the stock status by SKU.
 5. Use the aio-lib-state. Single tenant for now
