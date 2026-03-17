@@ -43,7 +43,7 @@ git --version
 bash --version
 ```
 
-If any of the preceding commands do not return the expected results, refer to the [prerequisites](./tutorial-prerequisites.md) for guidance.
+If any of the preceding commands do not return the expected results, see the [prerequisites](./tutorial-prerequisites.md) for guidance.
 
 Additionally, verify the following:
 
