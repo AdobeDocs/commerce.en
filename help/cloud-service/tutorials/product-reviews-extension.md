@@ -12,7 +12,7 @@ hidefromtoc: yes
 ---
 # Product reviews extension tutorial
 
-This tutorial guides you through building a product reviews and questions/answers extension for [!DNL Adobe Commerce as a Cloud Service] using [!DNL Adobe App Builder] and AI-assisted development tools. The extension provides REST API endpoints for shoppers to view and submit product reviews and Q&A, and displays them on the product detail page (PDP).
+This tutorial guides you through building an extension that allows customers to submit product review and question and answers (Q&A) content for storefronts with an [!DNL Adobe Commerce as a Cloud Service] backend using [!DNL Adobe App Builder] and AI-assisted development tools. The extension provides REST API endpoints for shoppers to view and submit product review and question and answer (Q&A) content, and display it on the product detail page (PDP).
 
 You build two parts:
 
