@@ -83,7 +83,7 @@ Implement an Adobe Commerce as a Cloud Service extension to handle out-of-stock 
 
 The service should provide REST API endpoints for basic create, read, update, and delete (CRUD) operations on out-of-stock notifications, allowing storefronts to manage notifications for specific product SKUs.
 
-Back-in-stock is detected via an inventory/product event or a scheduled action that checks Commerce API and then calls REST to send the notification.
+Back-in-stock is detected by an inventory or product event or a scheduled action that checks Commerce API and then calls the REST API to send the notification.
 
 STOP and ask me any clarifying questions you have about the requirements before you do any work.
 ```
