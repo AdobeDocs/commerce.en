@@ -350,7 +350,7 @@ The agent then presents architecture options. Review the plan and instruct the a
 
 ### Step 5: Select an implementation plan
 
-The agent gives you the option of creating a detailed implementation plan or doing a direct implementation.
+The agent gives you the option to create a detailed implementation plan, or to complete a direct implementation.
 
 - If you want a reviewable plan that you can execute in phases with more control, select the first option.
 - If you want the agent to do the full implementation with minimal intervention, select the second option.
