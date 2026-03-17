@@ -90,7 +90,7 @@ STOP and ask me any clarifying questions you have about the requirements before 
 
 >[!TIP]
 >
->Telling the agent to STOP and ask questions helps you steer the implementation early in the process and gives the agent the opportunity to present you with details and requirements you may not have thought to provide in the original prompt. This is necessary to trigger the guided workflow process outlined in this tutorial.
+>Telling the agent to STOP and ask questions before proceeding helps you steer the implementation early in the process. This process ensures that key assumptions and missing requirements are identified early and is required to initiate the guided workflow in this tutorial.
 
 ### Step 2: Answer the agent's questions
 
