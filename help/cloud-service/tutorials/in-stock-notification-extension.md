@@ -81,7 +81,7 @@ Enter the following prompt in the agent's chat window:
 ```shell-session
 Implement an Adobe Commerce as a Cloud Service extension to handle out-of-stock notifications for products.
 
-The service should provide REST API endpoints for basic CRUD operations on out-of-stock notifications, allowing storefronts to create, read, update, and delete notifications for specific product SKUs.
+The service should provide REST API endpoints for basic create, read, update, and delete (CRUD) operations on out-of-stock notifications, allowing storefronts to manage notifications for specific product SKUs.
 
 Back-in-stock is detected via an inventory/product event or a scheduled action that checks Commerce API and then calls REST to send the notification.
 
