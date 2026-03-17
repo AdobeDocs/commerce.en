@@ -59,7 +59,9 @@ Additionally, verify the following:
 
 This section guides you through developing an in-stock notification extension for [!DNL Adobe Commerce as a Cloud Service] using AI-assisted development tools. The extension provides a REST API for subscription management and detects when products come back in stock through Commerce events and a scheduled check.
 
-1. Navigate to the MCP settings in your coding agent. For example, in Cursor, go to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**. Verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
+1. Navigate to the MCP settings in your coding agent.
+
+   For example, in Cursor, go to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**. Verify that the `commerce-extensibility` toolset is enabled without errors. If you see errors, toggle the toolset off and on.
 
    >[!NOTE]
    >
