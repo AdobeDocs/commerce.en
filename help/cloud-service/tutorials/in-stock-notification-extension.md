@@ -391,7 +391,7 @@ Run complete browser testing. Use the following out of stock product 'http://loc
 
 ### Step 7: Clean up
 
-If you want to skip testing or after finishing testing, the agent asks if you want to proceed to the last phase, **Cleanup**. After you agree or tell the agent to clean up, the agent archives any documentation artifacts produced during implementation.
+After you skip or complete testing, the agent prompts you to proceed to the final **Cleanup** phase. Upon confirmation, the agent archives all documentation artifacts created during implementation.
 
 ## Troubleshooting
 
