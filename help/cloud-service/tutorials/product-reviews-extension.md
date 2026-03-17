@@ -445,7 +445,7 @@ Use the following tips if you encounter issues during the tutorial.
 
 Here is a summary of the topics covered in this tutorial:
 
-- **Extension development:** Describing product reviews and Q&A functionality to an AI agent and generating a working REST API with four endpoints using [!DNL App Builder].
+- **Extension development:** Describing functionality to create and view product review and Q&A content  on a storefront with an Adobe Commerce as a Cloud Service backend to an AI agent and how to implement this functionality by generating a working REST API with four endpoints using [!DNL App Builder].
 - **Persistence:** Using `aio-lib-state` with correct key format and JSON-serialized values.
 - **Mock data and pre-population:** Creating a mock data file and using curl to pre-populate the API for CLI and storefront testing.
 - **Service contracts:** Creating API contracts that bridge backend extensions and storefront implementations.
