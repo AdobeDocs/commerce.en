@@ -16,7 +16,7 @@ This tutorial guides you through building a product reviews and questions/answer
 
 You build two parts:
 
-- **App Builder extension** — A REST API for product reviews (GET, POST) and questions/answers (GET, POST) with validation, pagination, and persistence in `aio-lib-state`.
+- **App Builder extension** — A REST API with GET and POST operations to create and view product review and Q&A content with validation, pagination, and persistence in `aio-lib-state`.
 - **Storefront integration** — A product review block on the PDP that displays reviews and Q&A, with forms for shoppers to submit reviews, questions, and answers.
 
 >[!NOTE]
