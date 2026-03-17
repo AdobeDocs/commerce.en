@@ -384,7 +384,7 @@ After the agent completes the implementation, start the development server and t
 You can do manual testing or ask the agent to use its browser capabilities to test for you:
 
 ```shell-session
-run through browser testing. use the following out of stock product 'http://localhost:3000/products/<out-of-stock-product-slug>/<sku>'
+Run complete browser testing. Use the following out of stock product 'http://localhost:3000/products/<out-of-stock-product-slug>/<sku>'
 ```
 
 ![Product detail page showing the back-in-stock notification form below the add to cart button](../assets/in-stock-notification-form.png){width="600" zoomable="yes"}
