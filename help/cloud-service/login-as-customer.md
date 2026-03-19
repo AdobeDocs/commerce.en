@@ -27,9 +27,9 @@ The Login as Customer OTC replaces the standard login as customer button on the 
 
 ### Prerequisites
 
-You must meet the following requirements before using the login as a customer feature:
+You must meet the following requirements before using the log in as a customer feature:
 
-* **Admin permission** - The admin user must have the `Magento_LoginAsCustomer::login` Access Control List (ACL) permission enabled in their admin role.
+* **Admin permission** - The admin user must have the `Magento_LoginAsCustomer::login` Access Control List (ACL) permission enabled in their admin role to log in as a customer.
 
 * **Customer consent** - The customer must have the `login_as_customer_assistance_allowed` extension attribute set to **2**. This can be configured on the **Edit Customer** page in the Admin or through GraphQL when creating or editing a customer.
 

@@ -40,9 +40,9 @@ A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger tr
 
 The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook is now available in the Admin Webhooks list in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement [custom shipping methods](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods). <!-- ACCS-478 -->
 
-### Upload files through product attributes
+### Upload PDFs and other files through product attributes
 
-Product attributes with the "File" input type now support file uploads (such as PDFs) in [!DNL Adobe Commerce as a Cloud Service]. The REST API also supports presigned URLs for file attribute uploads. <!-- ACCS-535, ACCS-565 -->
+A new "file" [Attribute Input Type](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) allows you to create attribute sets where you can upload files, such as PDFs, to individual products. You can configure allowed file extensions and max file size by navigating to [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL _Catalog_] > [!UICONTROL **Product File Attributes**]. <!-- ACCS-535, ACCS-565 -->
 
 ### Configure company custom attributes
 

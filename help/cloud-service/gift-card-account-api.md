@@ -38,7 +38,16 @@ The API resolves the website automatically from these headers. Do not include `w
 
 ## REST API reference
 
-The API exposes six operations under `/V1/giftcardaccounts`, all secured by the `Magento_GiftCardAccount::giftcardaccount` ACL resource.
+The API exposes the following operations under `/V1/giftcardaccounts`, all secured by the `Magento_GiftCardAccount::giftcardaccount` ACL resource:
+
+| Method | URL | Description |
+|--------|-----|-------------|
+| POST | `/rest/V1/giftcardaccounts` | Create a gift card account |
+| GET | `/rest/V1/giftcardaccounts` | List accounts (supports searchCriteria) |
+| GET | `/rest/V1/giftcardaccounts/:id` | Get account by ID |
+| GET | `/rest/V1/giftcardaccounts/code/:code` | Get account by code |
+| PUT | `/rest/V1/giftcardaccounts/:id` | Update account (merge semantics) |
+| DELETE | `/rest/V1/giftcardaccounts/:id` | Delete account |
 
 ### Field reference
 
@@ -110,13 +119,13 @@ Returns a single gift card account object.
 |**Method**|`GET`|
 |**URL**|`/V1/giftcardaccounts/code/:code`|
 
-**Response (200):**
-
-Returns a single gift card account object.
-
 >[!IMPORTANT]
 >
 >If a gift card code is purely numeric (for example, `12345`), a request to `/V1/giftcardaccounts/12345` matches the ID route, not the code route. Always use `/V1/giftcardaccounts/code/12345` for code-based lookups when the code could be numeric.
+
+**Response (200):**
+
+Returns a single gift card account object.
 
 ### List gift card accounts with search criteria
 
@@ -167,7 +176,7 @@ Updates an existing gift card account using merge semantics. Only non-null field
 {
   "giftcardAccount": {
     "balance": 75.00,
-    "status": 0
+    "status": 1
   }
 }
 ```
