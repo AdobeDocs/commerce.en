@@ -115,17 +115,15 @@ mutation {
 
 +++
 
-### View orders placed by company members
-
-B2B company users can now view orders placed by other members of the same company in the order history. <!-- ACCS-604 -->
-
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
 
+* The [!UICONTROL Sales] > [!UICONTROL View Orders] company role now functions as expected. <!-- ACCS-604 -->
+
 * The `last_login_at` customer extension attribute is now available through the REST API, enabling integrations to retrieve the most recent login date for each customer. <!-- ACCS-555 -->
 
-* The [!DNL AEM Assets] integration form now dynamically suggests custom domain options based on the current IMS session, replacing the previous manual input field with a drop-down selector. <!-- ACCS-209 -->
+* Fixed an issue with the [!DNL AEM Assets] integration form suggestions. <!-- ACCS-209 -->
 
 * Fixed an issue where bulk company assignment and unassignment actions on the Shared Catalog grid could cause an error. <!-- CCSAAS-4614 -->
 
