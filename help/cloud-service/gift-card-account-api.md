@@ -1,6 +1,6 @@
 ---
-title: Gift Card Account API
-description: Learn how to use the Gift Card Account REST API to create, update, delete, and query gift card accounts programmatically in [!DNL Adobe Commerce as a Cloud Service].
+title: Gift Card Account REST Endpoints
+description: Learn how to use Gift Card Account REST APIs to create, update, delete, and query gift card accounts programmatically in [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer
 level: Experienced
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
@@ -9,9 +9,9 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 {{accs-sandbox-experimental}}
 
-The Gift Card Account REST API provides programmatic management of gift card accounts at the account level, not the cart or quote level. Use this API to create, retrieve, update, and delete gift card accounts, or to provision gift card accounts in bulk through the JSON import endpoint.
+The gift card account REST endpoints provide programmatic management of gift card accounts at the account level, not the cart or quote level. Use this API to create, retrieve, update, and delete gift card accounts, or to provision gift card accounts in bulk through the JSON import endpoint.
 
-This API is designed for:
+These endpoints are designed for:
 
 * Administrators managing gift card programs
 * Third-party integrations provisioning gift cards from external systems, such as ERP, CRM, and marketing platforms
@@ -25,7 +25,7 @@ For bulk import operations, the role must also include the `Magento_ImportExport
 
 ## Website and store context
 
-Website and store view are resolved from HTTP request headers, not from the request body. Pass one of the following headers with each request:
+Website and store view values are resolved from HTTP request headers, not from the request body. Pass one of the following headers with each request:
 
 * `Store: <store_view_code>`
 * `Magento-Website-Code: <website_code>`
@@ -125,9 +125,9 @@ Returns a single gift card account object.
 |**Method**|`GET`|
 |**URL**|`/V1/giftcardaccounts`|
 
-Pass search criteria as query parameters. For example:
+Pass search criteria as query parameters. The following example returns gift card accounts where `status` equals `1` (enabled):
 
-```bash
+```text
 GET /V1/giftcardaccounts?searchCriteria[filterGroups][0][filters][0][field]=status&searchCriteria[filterGroups][0][filters][0][value]=1&searchCriteria[pageSize]=10&searchCriteria[currentPage]=1
 ```
 

@@ -59,7 +59,7 @@ Additionally, there are several new GraphQL mutations to subscribe and unsubscri
 
 +++New GraphQL mutations
 
-```
+```graphql
 mutation {
   subscribeProductAlertStock(input: { sku: "ADB111" }) {
     success
@@ -68,7 +68,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 mutation {
   unsubscribeProductAlertStock(input: { sku: "ADB111" }) {
     success
@@ -77,7 +77,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 mutation {
   unsubscribeProductAlertStockAll {
     success
@@ -86,7 +86,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 mutation {
   subscribeProductAlertPrice(input: { sku: "ADB112" }) {
     success
@@ -95,7 +95,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 mutation {
   unsubscribeProductAlertPrice(input: { sku: "ADB115" }) {
     success
@@ -104,7 +104,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 mutation {
   unsubscribeProductAlertPriceAll {
     success
@@ -133,7 +133,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed a product edit page timeout that could occur with large shared catalogs. <!-- CCSAAS-4657 -->
 
-* Re-enabled the `/V1/directory/countries` and `/V1/directory/countries/:countryId` REST API endpoints for admin integrations, allowing clients to look up valid country and region data. <!-- ACCS-518 -->
+* Re-enabled the GET `/V1/directory/countries` and GET `/V1/directory/countries/:countryId` REST API endpoints for admin integrations, allowing clients to look up valid country and region data. <!-- ACCS-518 -->
 
 * Fixed a timeout issue that could occur in the REST API when a user has a large shared catalog. <!-- ACCS-4657 -->
 

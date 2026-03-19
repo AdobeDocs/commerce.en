@@ -68,7 +68,7 @@ After the One-Time Code is generated, you can use it by navigating to your store
 
 ## Generate a one-time code using the REST API
 
-The REST API provides a programmatic way to generate an OTC for a customer. This is useful for admin UIs, scripts, or third-party integrations that need to trigger OTC issuance consistently. 
+The POST `V1/customer/:customerId/otp` endpoint provides a programmatic way to generate an OTC for a customer. This is useful for admin UIs, scripts, or third-party integrations that need to trigger OTC issuance consistently. 
 
 ### REST contract
 
@@ -83,7 +83,7 @@ The REST API provides a programmatic way to generate an OTC for a customer. This
 
 ### Request example
 
-```bash
+```text
 POST /rest/V1/customer/:customerId/otp
 Content-Type: application/json
 ```

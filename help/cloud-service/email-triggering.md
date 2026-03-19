@@ -1,5 +1,5 @@
 ---
-title: Email triggering through REST API
+title: Email triggering through REST
 description: Learn how to trigger transactional emails on demand using the REST API by specifying a template ID, recipient email, and template variables for [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Beginner
@@ -13,7 +13,7 @@ Previously, you could only send emails when events were triggered, such as durin
 >
 >Currently, only newly created, custom templates can be sent. Predefined and system templates are not supported.
 
-The custom email send API endpoint allows any **third-party systems**, such as integrations and external services, to send emails on demand by specifying:
+The `V1/custom-email/send` endpoint allows **third-party systems**, such as integrations and external services, to send emails on demand by specifying:
 
 - **Template ID** – Email template ID.
 - **Recipient email** – The target email address for this request.
@@ -30,7 +30,7 @@ The following section explains how to send transactional emails on demand using 
 ### Endpoint
 
 - **URL** - `POST /rest/V1/custom-email/send`
-- **Authorization** - Only **service-to-service IMS authorization** is supported. The caller must have the **Send Custom Email via API** (`Magento_CustomEmailSend::send_custom_email`) permission. Refer to [REST authentication](https://developer.adobe.com/commerce/webapi/rest/authentication/) for more information.
+- **Authorization** - Only **service-to-service IMS authorization** is supported. The caller must have access to the **Send Custom Email via API** (`Magento_CustomEmailSend::send_custom_email`) resource. Refer to [REST authentication](https://developer.adobe.com/commerce/webapi/rest/authentication/) for more information.
 - **Async usage** (recommended) - Although this endpoint is implemented synchronously, we recommend calling it using the **asynchronous REST API** so that the request is queued and processed by a consumer, avoiding long-lived HTTP connections. In [!DNL Adobe Commerce as a Cloud Service], you can use the route with `/async` after `V1`, for example: `POST https://<server>.api.commerce.adobe.com/<tenant-id>/V1/async/custom-email/send`.
 
   Refer to [Asynchronous web endpoints (SaaS)](https://developer.adobe.com/commerce/webapi/rest/use-rest/asynchronous-web-endpoints/) for more information.
@@ -39,10 +39,10 @@ The following section explains how to send transactional emails on demand using 
 
 - **templateId** (interger, required) – Email template ID as defined in the Admin under [!UICONTROL **Marketing**] > [!UICONTROL _Communications_] > [!UICONTROL **Email Templates**].
 
-- **recipientEmail** (string, required) – Target email address for this send. Must be a valid email format. Missing or empty values returns a validation error.
-- **variables** (object, optional) – Key-value map injected into the template as a `UnstructuredArray`.
+- **recipientEmail** (string, required) – The target email address. Must be a valid email format. Missing or empty values trigger a validation error.
+- **variables** (object, optional) – Key-value map injected into the template as an `UnstructuredArray`.
   
-  Omit or pass an empty object if you are not using variables. In the email template body and subject, use the variable syntax to reference a variable, for example `var order_id`. The subject also supports the same custom variables and syntax described in [Supported template scenarios](#supported-template-scenarios).
+  If you are not using variables, pass an empty object or omit it. In the email template body and subject, use the variable syntax to reference a variable, for example `var order_id`. The subject also supports the same custom variables and syntax described in [Supported template scenarios](#supported-template-scenarios).
 
 ### Success response (HTTP 200)
 
