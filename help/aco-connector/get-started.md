@@ -47,7 +47,7 @@ Data associated with these extensions is still available in the Commerce databas
 
 ## Configuration steps
 
-Follow these steps to enable the connector and begin synchronizing data from your Commerce project to your Adobe Commerce Optimizer instance.
+Follow these steps to enable the connector and begin synchronizing data from Commerce to your Adobe Commerce Optimizer instance.
 
 1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
 
