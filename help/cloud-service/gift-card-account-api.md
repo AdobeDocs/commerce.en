@@ -21,7 +21,7 @@ This API is designed for:
 
 All endpoints require an admin or integration bearer token. The token must be associated with a role that includes the `Magento_GiftCardAccount::giftcardaccount` Access Control List (ACL) resource.
 
-For bulk import operations, the role must also include the `Magento_ImportExport::import` ACL resource.
+For bulk import operations, the role must also include the `Magento_ImportExport::import_api` ACL resource.
 
 ## Website and store context
 
@@ -191,7 +191,7 @@ true
 
 ## Bulk import via JSON
 
-Gift card accounts can be provisioned in bulk using `POST /V1/import/json` with entity type `giftcardaccount`. This endpoint requires the `Magento_ImportExport::import` Access Control List (ACL) resource in addition to the gift card account ACL.
+Gift card accounts can be provisioned in bulk using `POST /V1/import/json` with entity type `giftcardaccount`. This endpoint requires the `Magento_ImportJsonApi::import_api` Access Control List (ACL) resource in addition to the gift card account ACL.
 
 ### Supported behaviors
 
