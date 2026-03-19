@@ -4,7 +4,7 @@ description: "The latest release information for [!DNL Adobe Commerce Optimizer 
 feature: Services, Catalog Service, Release Notes
 
 ---
-# Adobe Commerce Optimizer release notes
+# Adobe Commerce Optimizer Connector release notes
 
 These release notes describe all releases for the [!DNL Adobe Commerce Optimizer Connector] and include:
 
