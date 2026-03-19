@@ -197,7 +197,7 @@ Gift card accounts can be provisioned in bulk using `POST /V1/import/json` with 
 
 |Behavior|Description|
 |---|---|
-|`append`|Creates new gift card accounts. Fails if a code already exists.|
+|`append`|Creates new gift card accounts. If a code already exists, that row fails and the import continues with the remaining rows.|
 |`replace`|Updates and inserts the gift card accounts by code. Creates the account if the code does not exist and replaces it if it does.|
 |`delete`|Removes gift card accounts by code.|
 
