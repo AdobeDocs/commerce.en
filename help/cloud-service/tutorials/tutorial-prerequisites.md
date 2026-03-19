@@ -76,7 +76,7 @@ Run the following command and follow the interactive prompts:
 aio commerce extensibility app-setup
 ```
 
-After the command completes, navigate to your project directory and restart your coding agent to load the new MCP tools and skills. Then proceed to the [Storefront prerequisites](#storefront-prerequisites) if your tutorial requires a storefront, or go directly to the tutorial.
+After the command completes, navigate to your project directory and restart your coding agent to load the new MCP tools and skills. If your tutorial requires a storefront, rerun the command and select the [!DNL AEM Boilerplate Commerce] starter kit.
 
 The following example installation shows the interactive prompts and output for the checkout starter kit.
 
@@ -380,7 +380,13 @@ This process creates the MCP configuration (`.<agent>/mcp.json`), the skills dir
 
    ![Terminal showing AI extensibility tools setup with checkout starter kit selected](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
-## Storefront prerequisites
+## Storefront manual setup
+
+This section describes how to manually configure your storefront for the [Ratings extension tutorial](./ratings-extension.md) and other storefront tutorials.
+
+To automatically configure your storefront, run the `app-setup` command described in the [Automated setup](#automated-setup) section and select the [!DNL AEM Boilerplate Commerce] starter kit.
+
+### Prerequisites
 
 The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of the [Ratings extension tutorial](./ratings-extension.md) and display product ratings in your store.
 
@@ -393,7 +399,7 @@ The following items are required to complete the [storefront](./ratings-extensio
 Open your terminal and clone the repository:
 
 ```bash
-git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
+git clone https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
