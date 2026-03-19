@@ -64,11 +64,11 @@ The `app-setup` command automates the workspace setup process, including creatin
 
 The `app-setup` command guides you through the following steps:
 
- * Selecting or creating an [!DNL Adobe Developer Console] project with the required APIs
- * Configuring the [!DNL Adobe I/O CLI] with your organization, project, and workspace
- * Cloning the appropriate starter kit and setting up the project
- * Configuring the environment and connecting the local workspace to the remote workspace
- * Installing the Commerce extensibility tools and coding agent skills
+* Selecting or creating an [!DNL Adobe Developer Console] project with the required APIs
+* Configuring the [!DNL Adobe I/O CLI] with your organization, project, and workspace
+* Cloning the appropriate starter kit and setting up the project
+* Configuring the environment and connecting the local workspace to the remote workspace
+* Installing the Commerce extensibility tools and coding agent skills
 
 Run the following command and follow the interactive prompts:
 
