@@ -115,9 +115,17 @@ mutation {
 
 +++
 
+### View orders placed by company members
+
+B2B company users can now view orders placed by other members of the same company in the order history. <!-- ACCS-604 -->
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* The `last_login_at` customer extension attribute is now available through the REST API, enabling integrations to retrieve the most recent login date for each customer. <!-- ACCS-555 -->
+
+* The [!DNL AEM Assets] integration form now dynamically suggests custom domain options based on the current IMS session, replacing the previous manual input field with a drop-down selector. <!-- ACCS-209 -->
 
 * Fixed an issue where bulk company assignment and unassignment actions on the Shared Catalog grid could cause an error. <!-- CCSAAS-4614 -->
 
@@ -130,6 +138,14 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Re-enabled the `/V1/directory/countries` and `/V1/directory/countries/:countryId` REST API endpoints for admin integrations, allowing clients to look up valid country and region data. <!-- ACCS-518 -->
 
 * Fixed a timeout issue that could occur in the REST API when a user has a large shared catalog. <!-- ACCS-4657 -->
+
+* Fixed an issue where blocked B2B companies could still add products to the cart. <!-- ACCS-552 -->
+
+* If you have a large amount of data on the Customer or Company grids, the export buttons are no longer available to prevent errors. <!-- ACCS-320 -->
+
+* Fixed an issue where attached file sizes did not display correctly. <!-- ACCS-566 -->
+
+* Fixed an issue with creating and deleting "File" attribute types in the [!DNL Commerce Admin]. <!-- ACCS-605, ACCS-606 -->
 
 {{accs-release}}
 
