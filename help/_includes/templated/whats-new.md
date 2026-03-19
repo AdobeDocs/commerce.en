@@ -112,7 +112,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Published the <a href="https://experienceleague-review.corp.adobe.com/docs/commerce/aco-optimizer-connector/overview.html">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
+      <td><p>Published the <a href="https://experienceleague.adobe.com/docs/commerce/aco-optimizer-connector/overview.html">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
 </td>
       <td>
         Major update, new topic, technical
