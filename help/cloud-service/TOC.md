@@ -27,6 +27,9 @@ recommendations: noDisplay, noCatalog
   - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
   - [Ratings Extension Tutorial](tutorials/ratings-extension.md)
   - [Shipping Method Extension Tutorial](tutorials/shipping-method-extension.md)
+  - [Delivery Estimates Extension Tutorial](tutorials/delivery-estimates-extension.md)
+  - [In Stock Notification Extension Tutorial](tutorials/in-stock-notification-extension.md)
+  - [Product Reviews Extension Tutorial](tutorials/product-reviews-extension.md)
 - Schemas {#schemas}
   - [GraphQL Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST API Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}

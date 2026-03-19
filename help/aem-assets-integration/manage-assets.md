@@ -63,7 +63,7 @@ Adobe Commerce provides Page Builder as a **content management system (CMS)** fo
 
 ### Using AEM Asset Selector in Page Builder
 
-[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} To use the **AEM Asset Selector** for embedding images:
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} To use the **AEM Asset Selector** for embedding images, ensure users have the required [permissions and IMS authentication](get-started/permissions.md).
 
 1. Navigate to any section in the **Adobe Commerce Admin** that supports `content enrichment` using **Page Builder**.
 
@@ -135,7 +135,7 @@ Adobe Commerce enables merchants to associate images with product categories, he
 
 ### Use AEM Asset Selector for category images
 
-After you configure the [AEM Asset Selector](synchronize/asset-selector-integration.md), you can use it to add assets into your catalog categories content.
+After you configure the [AEM Asset Selector](synchronize/asset-selector-integration.md) and ensure users have the required [permissions and IMS authentication](get-started/permissions.md), you can use it to add assets into your catalog categories content.
 
 1. On the _Admin_ sidebar, navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
