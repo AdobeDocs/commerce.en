@@ -47,17 +47,17 @@ Data associated with these extensions is still available in the Commerce databas
 
 ## Configuration steps
 
-1. **Set up the Integration**
+Follow these steps to enable the connector and begin synchronizing data from Commerce to your Adobe Commerce Optimizer instance.
 
-   1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
+1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
 
-   1. **[Review and customize the data export configuration](#customize-commerce-data-export-configuration)** from the Admin.
+1. **[Review and customize the data export configuration](#customize-commerce-data-export-configuration)** from the Admin.
 
-   1. **[Get API credentials required to establish the connection between Commerce and Commerce Optimizer](#get-required-values-for-configuring-the-commerce-optimizer-connection)**.
+1. **[Get API credentials required to establish the connection between Commerce and Commerce Optimizer](#get-required-values-for-configuring-the-commerce-optimizer-connection)**.
 
-   1. **[Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
+1. **[Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
 
-   1. **[Verify that the data sync is working](#verify-that-the-data-sync-is-working)**.
+1. **[Verify that the data sync is working](#verify-that-the-data-sync-is-working)**.
 
 
 ## Install the Commerce Optimizer Connector package
