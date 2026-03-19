@@ -8,7 +8,7 @@ feature: App Builder, Extensibility, Integration
 
 An App Manager associates an App Builder application with their Commerce instance. Configuration forms are rendered dynamically based on the app's schema, so no custom Admin UI development is required. App manager configures settings through forms that Commerce generates automatically.
 
-![App management](assets/app-management-ui.png){width="500" zoomable="yes"}
+![App management](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Prerequisites
 

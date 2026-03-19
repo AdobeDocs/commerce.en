@@ -4,6 +4,170 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### March 12, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets">Manage Commerce media assets</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match">Default automatic matching</a> with clearer navigation guidance for users configuring product assets in AEM Assets.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### March 11, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration release notes</a> with v1.3.4: support for Adobe Commerce 2.4.9-beta1 and PHP 8.5, and Domain mapping auto-population in the configuration UI.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### March 10, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service with the latest release to production environments.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added new <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">App Management</a> documentation guide to introduce App Management and how to associate, configure, and manage App Builder applications with your Commerce instance.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### March 6, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added storefront integration to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">Ratings tutorial</a>.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/pull/15">pull request</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### March 3, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published the <a href="https://experienceleague.adobe.com/docs/commerce/aco-optimizer-connector/overview.html">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
+</td>
+      <td>
+        Major update, new topic, technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest Sandbox release.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### March 2, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice#leverage-product-metadata">Live Search Best Practices</a> with comprehensive guidance on choosing searchable attributes, including three real-world examples of common configuration issues and a troubleshooting checklist to improve search relevance.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f55cbabdc50af4e38b57ece217e5133d1f3fada8">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added instructions for deleting an API key to the <a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey">Commerce Services Connector</a> documentation.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a12a0bca1d4a7f3b9350c704275a9e3128fa2b37">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added a new topic about the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco">integration of AEM Assets with Adobe Commerce Optimizer</a>.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf1d88ef7daec25872678bb27bce0bb7c97fd296">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 26, 2026
 
 <table style="table-layout:auto;">
@@ -486,28 +650,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Feedback, technical
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c9b3bf125d46447ae147a468e1a9e6492d6c5689">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### January 6, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 and 103.4.17</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/948267ac789ed6432b0bfe57a82ca7b1f1be0807">commit</a></td>
     </tr>
   </tbody>
 </table>
