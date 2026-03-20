@@ -4,6 +4,50 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### March 19, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/login-as-customer">Login as a Customer</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/gift-card-account-api">Gift Card Account API</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/email-triggering">Email Templating</a> for Adobe Commerce as a Cloud Service.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Release Notes</a> with March 2026 - release # 2 release information.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### March 17, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions">Configure IMS user permissions for the AEM Assets Integration</a> to explain how to configure IMS and delivery-tier permissions to enable the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping) in the Admin.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### March 12, 2026
 
 <table style="table-layout:auto;">
@@ -112,7 +156,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Published the <a href="https://experienceleague.adobe.com/docs/commerce/aco-optimizer-connector/overview.html">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
+      <td><p>Published the <a href="https://experienceleague-review.corp.adobe.com/docs/commerce/aco-optimizer-connector/overview.html">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
 </td>
       <td>
         Major update, new topic, technical
@@ -606,50 +650,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c6a273a90067886a2f6223ab5bd9586969da4b14">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### January 15, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/9720ee6e2549e8847cc60291be792dd2f8f5610d">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### January 13, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Limits and boundaries</a> topic for Adobe Commerce Optimizer to describe license limits and system boundaries, add limit descriptions, and include guidance for capacity planning and preventing performance issues.</p>
-</td>
-      <td>
-        Feedback, technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c9b3bf125d46447ae147a468e1a9e6492d6c5689">commit</a></td>
     </tr>
   </tbody>
 </table>
