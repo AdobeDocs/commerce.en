@@ -92,7 +92,7 @@ entries:
   membership:
   labels:
   - major-update
-- description: Published the [Adobe Commerce Optimizer Connector v1.0.9 documentation](https://experienceleague-review.corp.adobe.com/docs/commerce/aco-optimizer-connector/overview.html)
+- description: Published the [Adobe Commerce Optimizer Connector v1.0.9 documentation](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
     for the general availability release.
   versions: ''
   type: major-update, new-topic, technical
