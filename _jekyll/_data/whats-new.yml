@@ -2,8 +2,37 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Mar 13 15:40:06 2026
+updated: Fri Mar 20 15:39:46 2026
 entries:
+- description: 'Added new topics:<br/>- [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/login-as-customer)
+    for Adobe Commerce as a Cloud Service.<br/>- [Gift Card Account API](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/gift-card-account-api)
+    for Adobe Commerce as a Cloud Service.<br/>- [Email Templating](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/email-triggering)
+    for Adobe Commerce as a Cloud Service.<br/>Updated [Release Notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with March 2026 - release # 2 release information.'
+  versions: ''
+  type: new-topic
+  date: March 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/467
+  merge_commit: 58b94a9a587b3947d4b340ce77c8b3f7b28c27f4
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - new-topic
+  - hold for release
+- description: Added [Configure IMS user permissions for the AEM Assets Integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions)
+    to explain how to configure IMS and delivery-tier permissions to enable the Asset
+    Selector and auto-populated configuration fields (Program ID, Environment ID,
+    Domain mapping) in the Admin.
+  versions: ''
+  type: new-topic
+  date: March 17, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/465
+  merge_commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+  contributor: del
+  membership:
+  labels:
+  - new-topic
 - description: Updated [Manage Commerce media assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets)
     and [Default automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match)
     with clearer navigation guidance for users configuring product assets in AEM Assets.
@@ -41,9 +70,9 @@ entries:
   - core-saas
   - major-update
   - hold for release
-- description: Added new [App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview) documentation
-    guide to introduce App Management and how to associate, configure, and manage
-    App Builder applications with your Commerce instance.
+- description: Added new [App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+    documentation guide to introduce App Management and how to associate, configure,
+    and manage App Builder applications with your Commerce instance.
   versions: ''
   type: new-topic
   date: March 10, 2026
