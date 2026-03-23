@@ -59,7 +59,7 @@ You must meet the following requirements before using the log in as a customer f
 
 >[!IMPORTANT]
 >
->The generated One-Time Code OTC is valid for 30 seconds by default and is invalidated after a single use. The TTL can be configured through CPS using the `customer/otp/ttl_seconds` setting.
+>The generated One-Time Code OTC is valid for 30 seconds by default and is invalidated after a single use. The TTL can be configured by submitting a [support ticket](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 After the One-Time Code is generated, you can use it by navigating to your storefront and logging in using the following credentials:
 
