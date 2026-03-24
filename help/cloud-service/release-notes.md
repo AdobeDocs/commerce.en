@@ -33,11 +33,11 @@ Admins can now generate [one-time codes](https://experienceleague.adobe.com/en/d
 
 ### Manage gift card accounts through the REST API
 
-[Gift card accounts](https://developer.adobe.com/commerce/webapi/rest/modules/gift-card-accounts/) can now be created, updated, deleted, and queried through the REST API. Additionally, JSON bulk import support is available through the `/V1/import/json` endpoint, enabling third-party integrations to programmatically synchronize gift cards. <!-- ACCS-476 -->
+[Gift card accounts](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/) can now be created, updated, deleted, and queried through the REST API. Additionally, JSON bulk import support is available through the `/V1/import/json` endpoint, enabling third-party integrations to programmatically synchronize gift cards. <!-- ACCS-476 -->
 
 ### Trigger transactional emails through the REST API
 
-A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](https://developer.adobe.com/commerce/webapi/rest/modules/custom-email/) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
+A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
 
 ### Subscribe to the out-of-process shipping get-rates webhook
 

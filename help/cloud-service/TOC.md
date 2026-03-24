@@ -21,8 +21,8 @@ recommendations: noDisplay, noCatalog
     - [Coding tools](migration/coding-tools.md)
   - [Documentation RAG Service](migration/doc-rag.md)
 - [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
-- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/modules/gift-card-accounts/){target="_blank"}
-- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/modules/custom-email/){target="_blank"}
+- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
+- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
   - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
   - [Ratings Extension Tutorial](tutorials/ratings-extension.md)
