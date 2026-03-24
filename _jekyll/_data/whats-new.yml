@@ -5,8 +5,8 @@ description: This page contains the changes made in the last 60 days. We exclude
 updated: Fri Mar 20 15:39:46 2026
 entries:
 - description: 'Added new topics:<br/>- [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)
-    for Adobe Commerce as a Cloud Service.<br/>- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/modules/gift-card-accounts/)
-    for Adobe Commerce as a Cloud Service.<br/>- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/modules/custom-email/)
+    for Adobe Commerce as a Cloud Service.<br/>- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/)
+    for Adobe Commerce as a Cloud Service.<br/>- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)
     for Adobe Commerce as a Cloud Service.<br/>Updated [Release Notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     with March 2026 - release # 2 release information.'
   versions: ''
