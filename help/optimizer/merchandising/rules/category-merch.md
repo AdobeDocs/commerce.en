@@ -81,4 +81,4 @@ For editing, viewing details, deleting, and field-level descriptions, see [Creat
 
 - [Merchandising rules overview](overview.md)
 - [Create and manage rules](add.md)
-- [Catalog views](../setup/catalog-view.md)
+- [Catalog views](../../setup/catalog-view.md)
