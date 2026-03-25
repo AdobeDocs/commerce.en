@@ -16,7 +16,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/login-as-customer">Login as a Customer</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/gift-card-account-api">Gift Card Account API</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/email-triggering">Email Templating</a> for Adobe Commerce as a Cloud Service.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Release Notes</a> with March 2026 - release # 2 release information.</p>
+      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Login as a Customer</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Gift Card Account REST Endpoints</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Email Triggering through REST</a> for Adobe Commerce as a Cloud Service.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Release Notes</a> with March 2026 - release # 2 release information.</p>
 </td>
       <td>
         New topic

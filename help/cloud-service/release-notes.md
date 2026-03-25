@@ -18,23 +18,28 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## March 2026 - release #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
 
-The following items are currently available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service] and will be released to Production environments on March 24, 2026.
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on March 24, 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Log in as a customer using one-time codes
 
-Admins can now generate [one-time codes](./login-as-customer.md) for customer impersonation through the [!DNL Commerce Admin] and REST API. The one-time code can be exchanged for a customer access token through the `generateCustomerToken` or `exchangeOtpForCustomerToken` GraphQL mutations, enabling passwordless "Login as Customer" flows for seller-assisted shopping scenarios. <!-- ACCS-404 -->
+Admins can now generate [one-time codes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer) for customer impersonation through the [!DNL Commerce Admin] and REST API. The one-time code can be exchanged for a customer access token through the `generateCustomerToken` or `exchangeOtpForCustomerToken` GraphQL mutations, enabling passwordless "Login as Customer" flows for seller-assisted shopping scenarios. <!-- ACCS-404 -->
+
+For guidance on implementing this feature using APIs, see the [REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/) and [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/) documentation.
 
 ### Manage gift card accounts through the REST API
 
-[Gift card accounts](./gift-card-account-api.md) can now be created, updated, deleted, and queried through the REST API. Additionally, JSON bulk import support is available through the `/V1/import/json` endpoint, enabling third-party integrations to programmatically synchronize gift cards. <!-- ACCS-476 -->
+[Gift card accounts](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/) can now be created, updated, deleted, and queried through the REST API. Additionally, JSON bulk import support is available through the `/V1/import/json` endpoint, enabling third-party integrations to programmatically synchronize gift cards. <!-- ACCS-476 -->
 
 ### Trigger transactional emails through the REST API
 
-A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](./email-triggering.md) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
+A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger transactional emails](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) on demand by specifying an email template ID, recipient email, and template variables. The API supports nested arrays as template variables for complex email content. <!-- ACCS-325, ACCS-481 -->
 
 ### Subscribe to the out-of-process shipping get-rates webhook
 
@@ -361,7 +366,7 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 * [User management](./user-management.md) - Changed **Product Admin** role in the Admin Console to automatically update user access to the Commerce Admin. <!-- CCSAAS-3012 -->
 
-* Added the ability to upload and retrieve negotiable quote attachments as well as files and images associated with customers and customer addresses to Amazon S3 using presigned URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) and [REST](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads). With REST, you can also upload category images. <!-- CCSAAS-3250 -->
+* Added the ability to upload and retrieve negotiable quote attachments as well as files and images associated with customers and customer addresses to Amazon S3 using presigned URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) and [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads). With REST, you can also upload category images. <!-- CCSAAS-3250 -->
 
 * Added the `POST /V1/customers` and `PUT /V1/customers/{customerId}` endpoints to the [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) to create and update customers. These endpoints require IMS authorization. <!-- CCSAAS-3112 -->
 
