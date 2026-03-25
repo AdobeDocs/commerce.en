@@ -2,7 +2,6 @@
 title: '[!DNL Catalog Service Installer]'
 description: 'Learn how the Catalog Service Installer registers the Catalog Service feature with your Adobe Commerce SaaS environment.'
 recommendations: noCatalog
-exl-id: 
 ---
 # [!DNL Catalog Service Installer] for Adobe Commerce
 

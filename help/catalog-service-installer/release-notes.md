@@ -3,7 +3,6 @@ title: "[!DNL Commerce Storefront Catalog Service Installer Release Notes]"
 description: "The latest release information for the [!DNL Commerce Storefront Catalog Service Installer] Composer package for Adobe Commerce."
 feature: Services, Catalog Service, Release Notes
 recommendations: noCatalog
-exl-id: 
 ---
 # [!DNL Catalog Service Installer] Release Notes
 
