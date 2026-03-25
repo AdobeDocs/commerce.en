@@ -6,7 +6,7 @@ exl-id:
 ---
 # [!DNL Catalog Service Installer] for Adobe Commerce
 
-The **[!DNL Catalog Service Installer]** (`magento/catalog-service-installer`) is an Adobe Commerce module that **registers the Catalog Service feature** for the SaaS environment ID associated with your instance. Registration tells Adobe Commerce services which capabilities are enabled for that environment so [Storefront [!DNL Catalog Service]](../catalog-service/overview.md) can operate correctly alongside the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions) configuration.
+The **[!DNL Catalog Service Installer]** (`magento/catalog-service-installer`) is an Adobe Commerce module that **facilitates the Catalog Service feature registration** for the SaaS environment ID associated with your instance. Registration tells Adobe Commerce services which capabilities are enabled for that environment so [Storefront [!DNL Catalog Service]](../catalog-service/overview.md) can operate correctly alongside the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions) configuration.
 
 ## Related information
 
