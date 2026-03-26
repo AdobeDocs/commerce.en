@@ -1,6 +1,8 @@
 ---
 title: Payment Options
 description: Set the payment options to customize the methods available for your store customers.
+role: Admin, User
+level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
 ---
@@ -57,7 +59,9 @@ See [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} topi
 
 ### [!DNL Apple Pay] button
 
-With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions. In **Safari**, the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details from customers' iOS or macOS devices. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can display a **QR code** so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow. See [**What's new in Wallet and Apple Pay**](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35) for Apple description of this behavior.
+With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions. In **Safari**, the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details from customers' iOS or macOS devices. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can display a **QR code** so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow. See [What's new in Wallet 
+and Apple Pay](https://developer.apple.com/videos/play/wwdc2024/
+10108/){target=_blank} for Apple's description of this behavior.
 
 ![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
@@ -67,7 +71,7 @@ Customers can **apply or remove a single cart price rule (coupon) code** during 
 
 >[!NOTE]
 >
->  The Apple Pay domain verification certificate is already included into the Payment Services code. Verify that the path `/.well-known/apple-developer-merchantid-domain-association` returns a 200 response code. See [PayPal developer documentation about Integrating with Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) for more information about the **Apple Pay Domain verification** certificate.
+> The Apple Pay domain verification certificate is already included in the [!DNL Payment Services] code. Verify that the path `/.well-known/apple-developer-merchantid-domain-association` returns a 200 response code. See [PayPal developer documentation about Integrating with Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) for more information about the **Apple Pay Domain verification** certificate.
 
 See [Settings](configure-admin.md#apple-pay) for more information.
 
@@ -81,11 +85,11 @@ By integrating [!DNL Google Pay] into your checkout experience, merchants can co
 
 When enabled, the [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. See [Settings](configure-admin.md) for more information.
 
-[!DNL Google Pay] **express** checkout can show **shipping methods in the Google Pay view**, support an optional **review** step (configure **[Skip Review](configure-admin.md#google-pay)**), and include a **promotional code** field during checkout. If your store allows **multiple coupons per order**, shoppers can apply more than one code when that behavior is enabled in your Commerce configuration.
+[!DNL Google Pay] **express** checkout can show **shipping methods in the Google Pay sheet**, support an optional **review** step (configure **[Skip Review](configure-admin.md#google-pay)**), and include a **promotional code** field during checkout. If your store allows **multiple coupons per order**, shoppers can apply more than one code when that behavior is enabled in your [!DNL Adobe Commerce] configuration.
 
-   >[!NOTE]
-   >
-   > The [!DNL Google Pay] API can only be used on websites in a secure context. See [Troubleshooting](https://developers.google.com/pay/api/web/support/troubleshooting) documentation for more information.
+>[!NOTE]
+>
+> The [!DNL Google Pay] API can only be used on websites in a secure context. See [Troubleshooting](https://developers.google.com/pay/api/web/support/troubleshooting) documentation for more information.
 
 ### [!DNL PayPal Payment Buttons]
 

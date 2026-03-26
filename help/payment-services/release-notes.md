@@ -1,6 +1,8 @@
 ---
 title: "[!DNL Payment Services] Release Notes"
 description: Review the release notes for information about all [!DNL Payment Services] releases.
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
 ---
@@ -67,7 +69,7 @@ _June 9, 2023_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on [!DNL Payment Services] Home when[!DNL Payment Services] is disabled.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on [!DNL Payment Services] Home when [!DNL Payment Services] is disabled.
 
 _January 25, 2023_
 

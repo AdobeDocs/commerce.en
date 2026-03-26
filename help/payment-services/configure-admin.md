@@ -4,7 +4,7 @@ description: After installation, you can configure [!DNL Payment Services] in th
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
+feature: Payments, Checkout, Configuration, Paas, Saas
 ---
 # [!DNL Payment Services] Configuration
 
@@ -162,7 +162,7 @@ These optional settings apply to the customer input fields of your [!UICONTROL F
 
 ## [!UICONTROL Apple Pay]
 
-With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In Safari, the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can use a **QR code** and an **iPhone** (iOS 18 or later) so the shopper finishes payment in the Apple Pay sheet; ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
+With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In **Safari**, the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can use a **QR code** and an **iPhone** (iOS 18 or later) so the shopper finishes payment in the Apple Pay sheet; ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
 
 >[!IMPORTANT]
 >
@@ -173,7 +173,7 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Apple Pay]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL Apple Pay]_ section.
 1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Apple Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -209,7 +209,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Google Pay]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL Google Pay]_ section.
 1. (Optional) Change the name of the payment method shown during checkout by entering the new name in the **[!UICONTROL Title]** field.
 1. [Set the payment action](production.md#set-payment-services-as-payment-method) by selecting **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Google Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -218,11 +218,11 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
     * **[!UICONTROL Show Google Pay on product detail page]**
     * **[!UICONTROL Show Google Pay in mini cart preview]**
     * **[!UICONTROL Show Google Pay on cart page]**
-1. To choose whether shoppers see a separate **Google Pay review** page after the express pay view, set **[!UICONTROL Skip Review]** to `Yes` or `No`. When set to `Yes`, supported express flows show **shipping methods in the Google Pay sheet** (client-side shipping callbacks) and may complete without the extra review step. When set to `No`, shoppers can confirm shipping and totals on the review page before paying.
+1. To choose whether shoppers see a separate **Google Pay review** page after the Google Pay pay sheet, set **[!UICONTROL Skip Review]** to `Yes` or `No`. When set to `Yes`, supported express flows show **shipping methods in the Google Pay sheet** (client-side shipping callbacks) and may complete without the extra review step. When set to `No`, shoppers can confirm shipping and totals on the review page before paying.
 1. To enable **[!UICONTROL 3D Secure authentication]** (`Off` by default) choose `Always` or `When required`.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. Configure the appearance of the _[!UICONTROL Google Pay]_ button by selecting the **[!UICONTROL Button Color]**, **[!UICONTROL Button Type]**, and **[!UICONTROL Button Style]** as needed.
-1. To set the height, uses the default value for height defined in **[!UICONTROL Button Style]**.
+1. To set the height, use the default value for height defined in **[!UICONTROL Button Style]**.
 1. To save your changes, click **[!UICONTROL Save Config]** .
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
