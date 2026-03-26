@@ -1,6 +1,6 @@
 ---
 title: Onboarding [!DNL Payment Services] flow
-description: Connect your instance with [!DNL Payment Services] functionality by completing a few onboarding steps.
+description: Connect your instance to [!DNL Payment Services] by completing onboarding for your Adobe Commerce deployment, with sandbox and production steps for PaaS, on-premises, and SaaS.
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
