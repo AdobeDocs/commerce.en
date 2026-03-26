@@ -27,9 +27,21 @@ You can download the Transactions report in a .csv file format for use in existi
 
 The Transactions report view is available in the Transactions view of Payment Services. It includes all available information about transactions for your store(s).
 
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view.
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view (from **[!UICONTROL Home]**, you can also choose **[!UICONTROL View Report]** under **[!UICONTROL Transactions]** on Adobe Commerce as a Cloud Service).
+
+>[!BEGINTABS]
+
+>[!TAB PaaS]
 
 ![Transactions report view](assets/transactions-report-view.png){width="800" zoomable="yes"}
+
+>[!TAB Adobe Commerce as a Cloud Service]
+
+The same report capabilities apply in SaaS; breadcrumbs show **[!UICONTROL Home]** > **[!UICONTROL Transactions]**, and the grid includes columns such as [!UICONTROL Order ID], [!UICONTROL PayPal Transaction ID], [!UICONTROL Customer ID], [!UICONTROL Transaction Date], [!UICONTROL Payment Method], [!UICONTROL Payment Detail], [!UICONTROL Card Last Four], [!UICONTROL Result], and [!UICONTROL Response Code].
+
+![Transactions report view on SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!ENDTABS]
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
