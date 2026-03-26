@@ -109,20 +109,20 @@ _April 14, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-6568 --> [!DNL Google Pay] express checkout now uses the [!DNL Payment Services] Payments JavaScript SDK, improving maintainability and streamlining delivery of updates across supported storefront experiences.
+![New](../assets/new.svg)<!-- PAY-6568 --> Now, [!DNL Google Pay] express checkout uses the Payments JavaScript SDK for [!DNL Payment Services], improving maintainability and simplifying storefront updates.
 
-![New](../assets/new.svg)<!-- PAY-6564 --> [!DNL Google Pay] express checkout can show **shipping methods inside the Google Pay sheet** using **client-side shipping callbacks**, so shoppers select shipping before confirming payment. Merchants control whether shoppers still see a separate **Google Pay review** step with the **[Skip Review](configure-admin.md#google-pay)** option in Google Pay configuration; when review is skipped, shipping lists stay in sync when the wallet address or method changes.
+![New](../assets/new.svg)<!-- PAY-6564 --> Now, [!DNL Google Pay] express checkout can show shipping methods in the Google Pay sheet using client-side shipping callbacks, so shoppers select shipping before they confirm payment. Merchants can show or hide a separate Google Pay review step using **[!UICONTROL Skip Review]** in [Google Pay configuration](configure-admin.md#google-pay). When the review step is skipped, shipping options stay in the sheet when the wallet address or shipping method changes.
 
-![New](../assets/new.svg)<!-- PAY-6565 --> Customers can apply **promotional codes** in the [!DNL Google Pay] express pay sheet (including when the review step is shown or skipped). If your store allows **multiple coupons per order**, shoppers can enter more than one code in the Google Pay flow when that capability is configured.
+![New](../assets/new.svg)<!-- PAY-6565 --> Now, shoppers can apply promotional codes in the [!DNL Google Pay] express pay sheet, whether or not the Google Pay review step appears. When your store allows multiple coupons per order, shoppers can apply more than one code in this flow. See [Payment options](payments-options.md#google-pay-button) for more information.
 
-![New](../assets/new.svg)<!-- PAY-6567 --> [!DNL Apple Pay] **express** checkout is available in **Chrome, Firefox, and Microsoft Edge**, in addition to Safari. On desktop, shoppers can scan a **QR code** with an **iPhone** running **iOS 18 or later** to open the Apple Pay sheet and complete payment. [Apple Pay](configure-admin.md#apple-pay) express placement—such as on the product detail page—must be enabled.
+![New](../assets/new.svg)<!-- PAY-6567 --> Now, [!DNL Apple Pay] express checkout is available in Chrome, Firefox, and Microsoft Edge, in addition to Safari. On desktop, shoppers can scan a QR code with an iPhone running iOS 18 or later to complete payment in the Apple Pay sheet. Express placements (for example, on the product detail page) must be enabled in [Apple Pay configuration](configure-admin.md#apple-pay).
 
-![New](../assets/new.svg)<!-- PAY-6566 --> Customers can **apply and remove discount codes** in the [!DNL Apple Pay] express pay sheet; totals update in the sheet. **Only one** coupon code can be applied per [!DNL Apple Pay] order (create active cart price rules in the Admin as usual).
+![New](../assets/new.svg)<!-- PAY-6566 --> Now, shoppers can apply or remove a single discount code in the [!DNL Apple Pay] express pay sheet, and totals update in the sheet. Create and enable cart price rules in the Admin as usual.
 
-![New](../assets/new.svg)<!-- PAY-6151 --> [!DNL Apple Pay] on **Luma** product detail and checkout pages now uses the **Payments SDK**, aligning the integration with the latest PayPal stack used for the express experiences above.
+![New](../assets/new.svg)<!-- PAY-6151 --> Now, [!DNL Apple Pay] on Luma product detail and checkout pages renders through the Payments SDK so the experience matches the latest PayPal integration used for express checkout.
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the **order success** page after a declined payment attempt followed by a successful checkout.
-
+![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
+s
 ## v2.14.0
 
 _February 26, 2026_
