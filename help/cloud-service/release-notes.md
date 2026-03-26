@@ -16,8 +16,35 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## March 2026 - release #2 {#latest}
+## April 2026 {#latest}
 
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items will be released to Production environments in April 2026.
+
+>[!BEGINSHADEBOX]
+
+### Check price and stock alert subscription status through GraphQL
+
+New GraphQL queries, `isSubscribedProductAlertStock` and `isSubscribedProductAlertPrice`, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
+
+### Query reCAPTCHA configuration for multiple forms in one GraphQL request
+
+The `recaptchaFormConfig` query can return configuration for multiple form types in a single request instead of requiring one query per form. <!-- ACCS-628 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* You can now filter Order and Company REST API results using applicable custom attributes, supporting scenarios such as company-scoped order searches. <!-- ACCS-633 -->
+
+* Resolved an error that could appear in the browser developer console. <!-- CCSAAS-4650 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## March 2026 - release #2
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
