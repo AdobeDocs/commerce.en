@@ -6,11 +6,11 @@ level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
 ---
-# Introduction to the [!DNL Payment Services] Home
+# [!DNL Payment Services] Home
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] provides a Home view with the information you need to set up and use the extension. The options at the top of Home depend on your deployment: [!DNL Adobe Commerce] on cloud or on-premises (PaaS), or [!DNL Adobe Commerce as a Cloud Service] or [!DNL Adobe Commerce Optimizer] (SaaS).
+[!DNL Payment Services] for Adobe Commerce and Magento Open Source provides a Home view with the information you need to set up and use the extension. The options at the top of Home depend on your deployment: Adobe Commerce on cloud or on-premises (PaaS), or [!DNL Adobe Commerce as a Cloud Service] or [!DNL Adobe Commerce Optimizer] (SaaS).
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**:
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**:
 
 >[!BEGINTABS]
 
@@ -30,7 +30,7 @@ After onboarding is complete (or on an already configured instance), **[!UICONTR
 
 >[!ENDTABS]
 
-1. In this Home view, you can access _Home_, _Learn_ about [!DNL Payment Services], configure the extension _Settings_, or get _Help_. Use **[!UICONTROL View Report]** (SaaS) or the **[!UICONTROL Orders]** and **[!UICONTROL Payouts]** entry points (Adobe Commerce on cloud and on-premises) to open reporting; see [Reporting](reporting.md).
+In this Home view, you can access _Home_, _Learn_ about [!DNL Payment Services], configure the extension _Settings_, or get _Help_. Use **[!UICONTROL View Report]** (SaaS) or the **[!UICONTROL Orders]** and **[!UICONTROL Payouts]** entry points (Adobe Commerce on cloud and on-premises) to open reporting; see [Reporting](reporting.md).
 
 ## Home
 
