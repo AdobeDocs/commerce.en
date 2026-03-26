@@ -57,11 +57,13 @@ See [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} topi
 
 ### [!DNL Apple Pay] button
 
-With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience in Safari (for up to 99 domains per merchant account), which can increase conversions. The [!DNL Apple Pay] button autofill's stored payment, contact, and shipping details from customers' iOS or macOS devices, enabling a quick, one-tap checkout experience.
+With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions. In **Safari**, the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details from customers' iOS or macOS devices. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can display a **QR code** so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow. See [**What's new in Wallet and Apple Pay**](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35) for Apple description of this behavior.
 
 ![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 When enabled, the [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. You can configure [!DNL Apple Pay] in the store configuration or the extension's Home.
+
+Customers can **apply or remove a single cart price rule (coupon) code** during the [!DNL Apple Pay] express checkout.
 
 >[!NOTE]
 >
@@ -78,6 +80,8 @@ By integrating [!DNL Google Pay] into your checkout experience, merchants can co
 ![Google Pay button in the checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
 
 When enabled, the [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. See [Settings](configure-admin.md) for more information.
+
+[!DNL Google Pay] **express** checkout can show **shipping methods in the Google Pay view**, support an optional **review** step (configure **[Skip Review](configure-admin.md#google-pay)**), and include a **promotional code** field during checkout. If your store allows **multiple coupons per order**, shoppers can apply more than one code when that behavior is enabled in your Commerce configuration.
 
    >[!NOTE]
    >

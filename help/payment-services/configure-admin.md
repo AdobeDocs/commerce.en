@@ -162,7 +162,7 @@ These optional settings apply to the customer input fields of your [!UICONTROL F
 
 ## [!UICONTROL Apple Pay]
 
-With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience in Safari—supporting up to 99 domains per merchant account. The [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's iOS or macOS device, enabling quick, one-tap purchases that can help boost conversion rates.
+With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In Safari, the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can use a **QR code** and an **iPhone** (iOS 18 or later) so the shopper finishes payment in the Apple Pay sheet; ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
 
 >[!IMPORTANT]
 >
@@ -218,6 +218,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
     * **[!UICONTROL Show Google Pay on product detail page]**
     * **[!UICONTROL Show Google Pay in mini cart preview]**
     * **[!UICONTROL Show Google Pay on cart page]**
+1. To choose whether shoppers see a separate **Google Pay review** page after the express pay view, set **[!UICONTROL Skip Review]** to `Yes` or `No`. When set to `Yes`, supported express flows show **shipping methods in the Google Pay sheet** (client-side shipping callbacks) and may complete without the extra review step. When set to `No`, shoppers can confirm shipping and totals on the review page before paying.
 1. To enable **[!UICONTROL 3D Secure authentication]** (`Off` by default) choose `Always` or `When required`.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. Configure the appearance of the _[!UICONTROL Google Pay]_ button by selecting the **[!UICONTROL Button Color]**, **[!UICONTROL Button Type]**, and **[!UICONTROL Button Style]** as needed.
@@ -237,6 +238,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 | [!UICONTROL Show Google Pay on product detail page] | store view | Enable or disable [!DNL Google Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | store view | Enable or disable [!DNL Google Pay] in the mini cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | store view | Enable or disable [!DNL Google Pay] on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | store view | When set to `[!UICONTROL Yes]`, eligible [!DNL Google Pay] express flows can omit the separate review page after the pay sheet; shipping methods appear in the Google Pay sheet. When set to `[!UICONTROL No]`, shoppers proceed to the review page to confirm shipping and totals. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Store View | Define color of the [!DNL Google Pay] button. Options: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
