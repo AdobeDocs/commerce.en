@@ -127,5 +127,3 @@ The implementation process involves:
 2. **Update storefront code**: Integrate Catalog Service GraphQL queries into your frontend.
 3. **Route queries**: All Catalog Service queries go through the GraphQL gateway (URL provided during onboarding)
 4. **Monitor and troubleshoot data synchronization**: Verify improved performance and monitor results
-
-

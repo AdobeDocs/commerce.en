@@ -548,7 +548,7 @@ _October 14, 2025_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) **Data Services upgrade**—`magento/data-services` dependency updated to ^8.0.0. Verify environment and custom Data Services API usage for 8.x compatibility before upgrading.
-ea
+
 ![New](../assets/new.svg) Updated version and metadata for the 3.3.0 release.
 
 ### v3.2.0 release
@@ -571,6 +571,20 @@ _January 26, 2024_
 - **Catalog Sync Admin** `magento/module-catalog-sync-admin` for Admin UI and configuration related to catalog sync.
 
 ![New](../assets/new.svg) Updated version and metadata for the 3.1.0 release.
+
+## Catalog Service Installer
+
+The installer is delivered with the Catalog Service extension and handles installation and environment checks so Catalog Service matches your Commerce stack.
+
+- For **Adobe Commerce as a Cloud Service** customers, the latest installer version is installed in your environment.
+
+- For **Adobe Commerce on cloud infrastructure** or **on premises**, keep the installer aligned with the [Catalog Service metapackage](#catalog-service-metapackage): use Composer to upgrade `magento/catalog-service-installer` whenever you upgrade `magento/catalog-service` or when these release notes describe a change you need (for example, support for a new PHP version). That way your installation tooling stays compatible with the Catalog Service version you run.
+
+### v1.0.6 release
+
+_March 25, 2026_
+
+![New](../assets/new.svg) **PHP 8.5**—Ensures compatibility when Catalog Service operates on PHP 8.5.
 
 ## Related documentation
 
