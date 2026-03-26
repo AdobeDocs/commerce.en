@@ -20,7 +20,7 @@ On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payme
 
 >[!TAB Adobe Commerce as a Cloud Service and Commerce Optimizer]
 
-Until you finish onboarding, **[!UICONTROL Home]** can show **[!UICONTROL ACCS Onboarding Required]**. The notice links to [set up the sandbox service](sandbox.md#enable-sandbox-testing) (with a test PayPal processing account) or to [enable live payments](production.md#enable-live-payments) if you already tested in another environment:
+Until you complete onboarding, **[!UICONTROL Home]** will show **[!UICONTROL ACCS Onboarding Required]**. The notice links to [set up the sandbox service](sandbox.md#enable-sandbox-testing) (with a test PayPal processing account) or to [enable live payments](production.md#enable-live-payments) if you already tested in another environment:
 
 ![ACCS Onboarding Required on Payment Services Home](assets/payment-services-home-accs-onboarding.png){width="700" zoomable="yes"}
 
@@ -66,4 +66,4 @@ In this Home view, you can access _Home_, _Learn_ about [!DNL Payment Services],
 
 In the Home view, click **[!UICONTROL Settings]**. See [[!DNL Payment Services] configuration](configure-admin.md) for more information.
 
-The footer of the Payment Services area can show **Payment services** and **Payment services Dashboard** version labels—for example, when you gather details for support.
+The footer of the Payment Services area will show **Payment services** and **Payment services Dashboard** version labels—for example, when you gather details for support.
