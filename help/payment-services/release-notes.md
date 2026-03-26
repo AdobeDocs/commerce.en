@@ -123,6 +123,7 @@ _April 14, 2026_
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
 s
+
 ## v2.14.0
 
 _February 26, 2026_
