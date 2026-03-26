@@ -5,11 +5,15 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 ---
 # Category Merchandising
 
+>[!IMPORTANT]
+>
+>The following feature is in beta.
+
 Category merchandising helps you control how products are ordered on category pages. You combine **category rules** with **intelligent ranking** (including AI-driven signals), optional **price-based sorting**, and **manual** actions such as pin, boost, and bury—so you can curate discovery, run promotions, and align category pages with your strategy without relying on external tools.
 
 Category behavior is configured as a **Category rule** in the merchandising rules workflow, alongside [search rules and default product-listing rules](overview.md).
 
-## Where to work
+## Create a category rule
 
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
 1. (Optional) Use the **Catalog view** control to choose the catalog view where the rule applies. See [Merchandising Rules workspace](workspace.md#select-catalog-view) for how catalog view scoping works.
@@ -76,9 +80,3 @@ Use the same overall flow as other merchandising rules:
 1. Complete **Name**, **Description**, and **Date range**, test in the preview, then **Save and publish**.
 
 For editing, viewing details, deleting, and field-level descriptions, see [Create and manage rules](add.md) and [Merchandising Rules workspace](workspace.md).
-
-## Related topics
-
-- [Merchandising rules overview](overview.md)
-- [Create and manage rules](add.md)
-- [Catalog views](../../setup/catalog-view.md)
