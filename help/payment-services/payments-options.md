@@ -59,9 +59,7 @@ See [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} topi
 
 ### [!DNL Apple Pay] button
 
-With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions. In **Safari**, the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details from customers' iOS or macOS devices. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can display a **QR code** so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow. See [What's new in Wallet 
-and Apple Pay](https://developer.apple.com/videos/play/wwdc2024/
-10108/){target=_blank} for Apple's description of this behavior.
+With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions. In **Safari**, the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details from customers' iOS or macOS devices. In **Chrome, Firefox, or Microsoft Edge**, **express** [!DNL Apple Pay] can display a **QR code** so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow. See [What's new in Wallet and [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} (Apple Developer, WWDC24) for Apple's overview of this flow.
 
 ![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
