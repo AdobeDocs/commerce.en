@@ -25,7 +25,7 @@ Updates include:
 ## 103.4.20 Release
 
 ![Fix](../assets/fix.svg) Ensured compatibility with future PHP versions by updating the Product Feed index process to avoid deprecated use of null as an array offset. This improves stability during indexation.<!--MDEE-1306-->
-![Fix](../assets/fix.svg) Change product category when category url has been changed. <!--MDEE-1294-->
+![Fix](../assets/fix.svg) Improved product feed synchronization for category data—Now, when you update a category URL in the Commerce Admin UI, the products feed automatically refreshes to reflect the new category path. No manual actions are required, and your product search results are always up-to-date after a category URL change.<!--MDEE-1294--> <!--MDEE-1294-->
 
 ## 103.4.19 Release
 
