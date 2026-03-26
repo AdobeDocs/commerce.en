@@ -30,7 +30,7 @@ New GraphQL queries, `isSubscribedProductAlertStock` and `isSubscribedProductAle
 
 ### Query reCAPTCHA configuration for multiple forms in one GraphQL request
 
-The `recaptchaFormConfig` query can return configuration for multiple form types in a single request instead of requiring one query per form. <!-- ACCS-628 -->
+The `recaptchaFormConfigs` query can return configuration for multiple form types in a single request instead of requiring one query per form. <!-- ACCS-628 -->
 
 ### Enhancements and bug fixes
 
