@@ -18,7 +18,6 @@ The rich view-model data provided by the [!DNL Catalog Service] includes product
 - Product comparison pages
 - Any other pages that render product data, such as cart, order, and wish list pages
 
-
 ## Key benefits and features
 
 - **Faster page loads**: Optimized queries for up to 10X faster catalog data retrieval compared to the core GraphQL system
@@ -29,7 +28,6 @@ The rich view-model data provided by the [!DNL Catalog Service] includes product
 - **Real-time data synchronization**: The Catalog Service is kept in sync with the Adobe Commerce application through the SaaS Data Export extension, ensuring that queries return the most current catalog data
 - **Data Management Dashboard**: Monitor and manage data synchronization operations from the Adobe Commerce Admin interface
 - **API Mesh integration**: Optionally integrate with [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to combine the Adobe Commerce GraphQL systems with other internal and third-party APIs to extend the Catalog Service GraphQL schema and add custom data or functionality
-
 
 ## Architecture overview
 
