@@ -1,7 +1,7 @@
 ---
 title: Create and Manage Recommendations
 description: Learn how to create and manage recommendations.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 ---
 # Create and Manage Recommendations
@@ -13,9 +13,17 @@ _Recommendation unit_
 
 When you activate the recommendation unit, Adobe Commerce starts to [collect data](../../manage-results/recommendation-performance.md) to measure impressions, views, clicks, and so on. The Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
 
-1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
+1. On the _[!DNL Adobe Commerce Optimizer]_ sidebar, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
+
+1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
+
+   >[!IMPORTANT]
+   >
+   >This feature is currently in beta.
 
 1. Click **Create recommendation**.
+
+   The recommendation you create will be available in the catalog view you previously selected.
 
 1. In the _Name your Recommendation_ section, enter a descriptive name for internal reference, such as `Home page most popular`.
 
@@ -29,6 +37,8 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. (Optional) In the _Filters_ section, [apply filters](filters.md) to control which products appear in the recommendation unit.
 
+1. Use the _Recommended products preview_ panel to better understand how filters affect what products are displayed in the recommendation unit. Learn more about how to [preview recommendations](#preview-recommendations).
+
 1. When complete, click one of the following:
 
    - **Save as draft** to edit the recommendation unit later. You cannot modify the recommendation type for a recommendation unit in a draft state.
@@ -39,11 +49,33 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 >[!NOTE]
 >
-> You can create up to 50 active recommendation units. 
+>You can create up to 50 active recommendation units. See [Limits and boundaries](../../boundaries-limits.md) for details. 
 
 >[!IMPORTANT]
 >
 >Some browsers might block critical scripts that prevent Recommendations from working as expected.
+
+## Preview recommendations
+
+The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
+
+![Recommendations Preview](../../assets/rec-preview.png)
+
+To test a recommendation when working in a non-production environment, you can fetch recommendation data from a different source. This allows merchants to experiment with rules and preview the recommendations before deploying to production.
+
+|Field|Description|
+|---|---|
+|Catalog view|
+|Name|The name of the product.|
+|SKU|The Stock Keeping Unit assigned to the product|
+|Price|The price of the product.|
+|Result Type|Primary - Indicates that there is enough training data collected to display a recommendation.<br />Backup - Indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](../../setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
+
+As you create your recommendation unit, experiment with the recommendation type and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
+
+[!DNL Adobe Commerce Optimizer] [filters](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel might differ from those that appear in the storefront.
+
+For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](../../setup/catalog-view.md). Learn more about how to [set the catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) when working with recommendations.
 
 ## Get recommendation ID
 
@@ -65,7 +97,7 @@ After creating a recommendation, you need to retrieve its ID to implement the re
 
 You can edit, deactivate, or delete an existing recommendation.
 
-1. On the _Adobe Commerce Optimizer_ sidebar, go to _Merchandising_ > **Recommendations**.
+1. On the _[!DNL Adobe Commerce Optimizer]_ sidebar, go to _Merchandising_ > **Recommendations**.
 
 1. Select the recommendation that you want to modify.
 
@@ -77,14 +109,14 @@ You can edit, deactivate, or delete an existing recommendation.
    - Storefront label
    - Number of products
    - Filter products
-   
-   You cannot change the recommendation type.
+
+   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation. To learn more, see [select catalog view](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. When complete, click **Save Changes**.
 
 ## Readiness indicators
 
-Readiness indicators show which recommendation types will perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with [event collection](../../setup/events/overview.md) or if you do not have enough traffic to populate the recommendation type.
+Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. They can also help you identify potential issues with [event collection](../../setup/events/overview.md) or determine whether a recommendation type is not receiving enough traffic to generate results.
 
 Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](../../setup/events/overview.md) to build personalized recommendations and to calculate their readiness score.
 
@@ -94,7 +126,7 @@ The readiness indicators are an indication of how much the model is trained. Ind
 
 The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. Statistics are applied to products based on the overall size of the catalog, the volume of interactions (such as views, clicks, add-to-carts), and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
 
-As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see that recommendation types come in and out of being "Ready to deploy".
+As a result of these variables, the readiness indicator percent can fluctuate. This fluctuation explains why you might see that recommendation types come in and out of being "Ready to deploy".
 
 Readiness indicators are calculated based on a couple factors:
 
@@ -103,8 +135,8 @@ Readiness indicators are calculated based on a couple factors:
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
-- 75% or higher means that the recommendations suggested for that recommendation type will be highly relevant.
-- At least 50% means that the recommendations suggested for that recommendation type will be less relevant.
+- 75% or higher means that the recommendations suggested for that recommendation type are highly relevant.
+- At least 50% means that the recommendations suggested for that recommendation type are less relevant.
 - Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backuprecs) are used.
 
 Learn more about [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
@@ -150,9 +182,9 @@ _Recommendation type_
 >
 >Indicators may never reach 100%.
 
-The readiness indicator percent for recommendation types that depend on catalog data do not change much since the merchant's catalog does not change often. But the readiness indicator percent for recommendation types based on shopper behavioral data can change often depending on daily shopper activity.
+The readiness indicator for recommendation types that depend on catalog data does not change much since the merchant's catalog rarely changes. But the readiness indicator for recommendation types based on shopper behavioral data can change often depending on daily shopper activity.
 
-#### What to do if the readiness indicator percent is low
+#### What to do if the readiness indicator is low
 
 A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](../../setup/events/overview.md#backuprecs) are returned if you deploy this recommendation type anyway.
 
@@ -166,24 +198,5 @@ The following lists possible reasons and solutions to common low readiness score
 - **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
 
    - Missing fields in the required [storefront events](../../setup/events/overview.md) for the respective recommendation types (requestId, product context, and so on.)
-   - Low traffic on the store so the volume of behavioral events we receive is low.
-   - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
-
-## Preview recommendations
-
-The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
-
-![Recommendations Preview](../../assets/rec-preview.png)
-
-To test a recommendation when working in a non-production environment, you can fetch recommendation data from a different source. This allows merchants to experiment with rules and preview the recommendations before deploying to production.
-
-|Field|Description|
-|---|---|
-|Name|The name of the product.|
-|SKU|The Stock Keeping Unit assigned to the product|
-|Price|The price of the product.|
-|Result Type|Primary - indicates that there is enough training data collected to display a recommendation.<br />Backup - indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](../../setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
-
-As you create your recommendation unit, experiment with the recommendation type and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
-
-[!DNL Adobe Commerce Optimizer] [filters](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel might differ from those that appear in the storefront.
+   - Low traffic to the store so the volume of behavioral events received is low.
+   - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators is low.
