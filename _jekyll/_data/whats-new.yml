@@ -2,8 +2,42 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Mar 20 15:39:46 2026
+updated: Fri Mar 27 15:39:51 2026
 entries:
+- description: Updated [Install and access App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/install)
+    with a Commerce webhooks section and a screenshot for webhook validation errors
+    in the App Management dashboard.
+  versions: ''
+  type: technical
+  date: March 25, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/484
+  merge_commit: 86c0945bbb0a562de1b66d420dec2a05d4d81e5f
+  contributor: del
+  membership:
+  labels:
+  - technical
+- description: 'Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest)
+    to move the March release # 2 to Production.'
+  versions: ''
+  type: major-update
+  date: March 25, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/482
+  merge_commit: 522240cfd305bb00026ba477dc94e0bd2de30f06
+  contributor: jhoover
+  membership:
+  labels:
+  - major-update
+- description: Added a new automated installation for the [Tutorial Prerequisites](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites).
+  versions: ''
+  type: major-update
+  date: March 23, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/471
+  merge_commit: a383e95e23291959f039390dfd3943bf98aa83ef
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: 'Added new topics:<br/>- [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)
     for Adobe Commerce as a Cloud Service.<br/>- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/)
     for Adobe Commerce as a Cloud Service.<br/>- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)
