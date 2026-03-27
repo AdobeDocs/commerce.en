@@ -574,11 +574,11 @@ _January 26, 2024_
 
 ## Catalog Service Installer
 
-The installer is delivered with the Catalog Service extension and handles installation and environment checks so Catalog Service matches your Commerce stack.
+The installer is delivered with the Catalog Service extension and handles installation and environment checks so the Catalog Service matches your Commerce stack.
 
 - For **Adobe Commerce as a Cloud Service** customers, the latest installer version is installed in your environment.
 
-- For **Adobe Commerce on cloud infrastructure** or **on premises**, keep the installer aligned with the [Catalog Service metapackage](#catalog-service-metapackage): use Composer to upgrade `magento/catalog-service-installer` whenever you upgrade `magento/catalog-service` or when these release notes describe a change you need (for example, support for a new PHP version). That way your installation tooling stays compatible with the Catalog Service version you run.
+- For **Adobe Commerce on cloud infrastructure** or **on premises**, keep the installer aligned with the [Catalog Service metapackage](#catalog-service-metapackage): use Composer to upgrade `magento/catalog-service-installer` whenever you upgrade `magento/catalog-service` or when these release notes describe a change you need, for example, support for a new PHP version. That way your installation tooling stays compatible with the Catalog Service version you run.
 
 ### v1.0.6 release
 
