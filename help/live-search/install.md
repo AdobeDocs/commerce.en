@@ -18,7 +18,7 @@ This article is intended for the developer or systems integrator on your team wh
 ## Requirements
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1, 8.2, or 8.3
+- PHP 8.1, 8.2, 8.3, or 8.4
 - [!DNL Composer]
 - Running cron jobs and indexers
 
