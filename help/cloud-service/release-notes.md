@@ -28,9 +28,17 @@ The following items will be released to Production environments in April 2026.
 
 New GraphQL queries, `isSubscribedProductAlertStock` and `isSubscribedProductAlertPrice`, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
 
+### Create numeric product attributes that support negative values
+
+A new `numeric` [product attribute input type](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) allows merchants to create decimal attributes that support negative values. <!-- ACCS-600 -->
+
 ### Query reCAPTCHA configuration for multiple forms in one GraphQL request
 
 The `recaptchaFormConfigs` query can return configuration for multiple form types in a single request instead of requiring one query per form. <!-- ACCS-628 -->
+
+### View all company orders with a new B2B permission
+
+A new `view_all_company_orders` [company role](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/) enables B2B company customers to view all orders within their company, including historical orders created by Admin users. <!-- ACCS-675 -->
 
 ### Enhancements and bug fixes
 
@@ -39,6 +47,10 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * You can now filter Order and Company REST API results using applicable custom attributes, supporting scenarios such as company-scoped order searches. <!-- ACCS-633 -->
 
 * Resolved an error that could appear in the browser developer console. <!-- CCSAAS-4650 -->
+
+* Fixed an error that could occur when cancelling a guest order with order comments. <!-- ACCS-674 -->
+
+* Fixed an error that could occur when adding a grouped product with many associated items to a requisition list. <!-- ACCS-627 -->
 
 {{accs-release}}
 
