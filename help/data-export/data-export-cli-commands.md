@@ -79,9 +79,9 @@ Clean up the feed indexer table before reindexing and sending data to SaaS. Only
 
 If used with the `--dry-run` option, the operation performs a dry-run resync operation for all items.
 
->[!IMPORTANT]
+>[!WARNING]
 >
->Use only after environment cleanup, or with the `--dry-run` option. If used in other cases, the cleanup operation can cause data loss and data sync issues.
+>Using the resync command with the `cleanup-feed` option clears the local feed export state and can lead to incomplete synchronization. For example, entity deletions in Adobe Commerce may not be reflected in connected Commerce Services. Use this option only for full environment rebuilds, such as afer a SaaS data space cleanup, or with the `--dry-run` option.
 
 **Example:**
 
