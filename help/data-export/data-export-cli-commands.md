@@ -81,7 +81,7 @@ If used with the `--dry-run` option, the operation performs a dry-run resync ope
 
 >[!WARNING]
 >
->Using the resync command with the `cleanup-feed` option clears the local feed export state and can lead to incomplete synchronization. For example, entity deletions in Adobe Commerce may not be reflected in connected Commerce Services. Use this option only for full environment rebuilds, such as afer a SaaS data space cleanup, or with the `--dry-run` option.
+>Using the resync command with the `cleanup-feed` option clears the local feed export state and can lead to incomplete synchronization. For example, entity deletions in Adobe Commerce may not be reflected in connected Commerce Services. Use this option only for full environment rebuilds, such as afer a SaaS data space cleanup.
 
 **Example:**
 
