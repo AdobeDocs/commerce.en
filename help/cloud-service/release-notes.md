@@ -36,7 +36,7 @@ A new `numeric` [product attribute input type](https://experienceleague.adobe.co
 
 ### Query reCAPTCHA configuration for multiple forms in one GraphQL request
 
-The [`recaptchaFormConfigs` query](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) can return configuration for multiple form types in a single request instead of requiring one query per form. <!-- ACCS-628 -->
+The [`recaptchaFormConfigs` query](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) can return configuration details for multiple form types in a single request. <!-- ACCS-628 -->
 
 ### View all company orders with a new B2B permission
 
