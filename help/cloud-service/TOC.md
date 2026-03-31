@@ -13,6 +13,7 @@ recommendations: noDisplay, noCatalog
 - [User and Identity Management](user-management.md)
 - [Storefront](storefront.md)
 - [Use Cases](use-cases.md)
+- [Adding Files to Products](product-files.md)
 - [Shared Responsibility](shared-responsibility.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
