@@ -83,29 +83,47 @@ In both cases, the URL must be publicly accessible, and the file extension and s
 
 ## Retrieve files through GraphQL
 
-File attributes resolve to the [`AttributeFile`](https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/interfaces/){target="_blank"} type, which is a SaaS-only implementation of `AttributeValueInterface`. Query product file attributes through `custom_attributesV2`:
+In [!DNL Adobe Commerce as a Cloud Service], the [Catalog Service GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"} endpoint serves product data. File attributes appear in the `attributes` field on `ProductView`, with the `value` containing the full public URL to the file:
 
 ```graphql
 {
-  products(filter: { sku: { eq: "ADB112" } }) {
-    items {
-      sku
+  products(skus: ["ADB112"]) {
+    sku
+    name
+    attributes(roles: []) {
       name
-      custom_attributesV2 {
-        items {
-          code
-          ... on AttributeFile {
-            url
-            value
-          }
-        }
-      }
+      label
+      value
     }
   }
 }
 ```
 
-The `url` field returns the full public URL to the file. The `value` field returns the relative path in media storage.
+The response includes the file attribute with its public URL:
+
+```json
+{
+  "data": {
+    "products": [
+      {
+        "sku": "ADB112",
+        "name": "Example product",
+        "attributes": [
+          {
+            "name": "file",
+            "label": "FILE",
+            "value": "https://<host>/media/catalog/product_file/manual.pdf",
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+>[!NOTE]
+>
+>This query requires the `Magento-Website-Code` and `Magento-Store-View-Code` headers. For more information, see the [Catalog Service products query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}.
 
 ## Retrieve files through the REST API
 
