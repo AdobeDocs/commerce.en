@@ -24,6 +24,10 @@ The following items will be released to Production environments on April 1, 2026
 
 >[!BEGINSHADEBOX]
 
+### Add files to products
+
+[!DNL Adobe Commerce as a Cloud Service] now supports [adding files to products](./product-files.md) using file-type product attributes. You can upload files manually on the product edit page, programmatically through the REST API, or in bulk by providing external URLs in CSV. <!-- ACCS-535, ACCS-565 -->
+
 ### Check price and stock alert subscription status through GraphQL
 
 New GraphQL queries, `isSubscribedProductAlertStock` and `isSubscribedProductAlertPrice`, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
