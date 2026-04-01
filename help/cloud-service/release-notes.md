@@ -18,9 +18,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## April 2026 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items will be released to Production environments on April 1, 2026.
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on April 1, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -30,7 +32,7 @@ The following items will be released to Production environments on April 1, 2026
 
 ### Check price and stock alert subscription status through GraphQL
 
-New GraphQL queries, `isSubscribedProductAlertStock` and `isSubscribedProductAlertPrice`, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
+New GraphQL queries, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"} and [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
 
 ### Create numeric product attributes that support negative values
 
@@ -38,7 +40,7 @@ A new `numeric` [product attribute input type](https://experienceleague.adobe.co
 
 ### Query reCAPTCHA configuration for multiple forms in one GraphQL request
 
-The `recaptchaFormConfigs` query can return configuration for multiple form types in a single request instead of requiring one query per form. <!-- ACCS-628 -->
+The [`recaptchaFormConfigs` query](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) can return configuration details for multiple form types in a single request. <!-- ACCS-628 -->
 
 ### View all company orders with a new B2B permission
 
@@ -63,8 +65,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 ## March 2026 - release #2
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 The following items were released to Production environments on March 24, 2026.
 
