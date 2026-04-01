@@ -2,12 +2,11 @@
 title: Commerce Optimizer Launch Checklist
 description: "Learn how to validate configuration, storefront, SEO, CDN, integrations, security, analytics, and testing for [!DNL Adobe Commerce Optimizer] production."
 solution: Commerce
-feature: Integration, Storefront, Search, Catalog, Personalization
+feature: Integration, Storefront, Search, Catalog Management, Personalization
 feature-set: Commerce
 role: Admin, Developer
 level: Intermediate
 topic: Administration
-type: Reference
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 ---
