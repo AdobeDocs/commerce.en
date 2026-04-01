@@ -31,6 +31,10 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 Each filter type targets a different aspect of the catalog, such as product and price, so you can narrow or broaden which products are eligible for a unit. Choose the types that match your merchandising goals, then combine inclusion and exclusion conditions as needed; the subsections below describe how each type behaves and how [!DNL Adobe Commerce Optimizer] applies it.
 
+>[!NOTE]
+>
+>Only products that match your **inclusion** filters can be recommended, and any product that matches an **exclusion** filter is removed.
+
 ### Price
 
 >[!IMPORTANT]
@@ -45,8 +49,6 @@ Price filtering uses each product's **final computed price** for the storefront'
 - **Exclusion rules** – Products whose final price **matches any** defined exclusion condition are removed from recommendations.
 
 **Displayed price** – The price shown on products inside the recommendation unit is the same **final price** from that storefront's price book, so what shoppers see matches the value used for filtering.
-
-On the **[!UICONTROL Filter products]** page, the summary explains how rules combine at a high level: only products that match your **inclusion** filters can be recommended, and any product that matches an **exclusion** filter is removed.
 
 #### Set up a price filter
 
