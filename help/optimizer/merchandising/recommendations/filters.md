@@ -29,20 +29,63 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 ## Types of filters
 
-![Filters](../../assets/rec-conditions.png)
+Each filter type targets a different aspect of the catalog, such as product and price, so you can narrow or broaden which products are eligible for a unit. Choose the types that match your merchandising goals, then combine inclusion and exclusion conditions as needed; the subsections below describe how each type behaves and how [!DNL Adobe Commerce Optimizer] applies it.
+
+### Price
+
+Price filtering uses each product's **final computed price** for the storefront's **active price book**—the one assigned to the storefront where the recommendation unit is rendered. That value reflects discounts, promotions, and special pricing defined in that price book, not list price alone. Evaluation uses only that storefront's price book; other storefronts or price books do not apply. How price books map to a storefront is configured with your catalog and [price books](../../setup/pricebooks.md) setup.
+
+#### How include and exclude rules use price
+
+- **Inclusion rules** – Only products whose final price **matches all** defined inclusion conditions remain eligible. That includes every enabled inclusion filter (for example, your price range plus any other inclusion rules).
+- **Exclusion rules** – Products whose final price **matches any** defined exclusion condition are removed from recommendations.
+
+**Displayed price** – The price shown on products inside the recommendation unit is the same **final price** from that storefront's price book, so what shoppers see matches the value used for filtering.
+
+On the **[!UICONTROL Filter products]** page, the summary explains how rules combine at a high level: only products that match your **inclusion** filters can be recommended, and any product that matches an **exclusion** filter is removed.
+
+#### Set up a price filter
+
+1. While [creating or editing](create.md) a recommendation unit, open **[!UICONTROL Filter products]** (or go to the _Filters_ step from the unit workflow).
+1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab, depending on whether you want to allow only products in a price range or block products in a range. The badge on each tab shows how many filters of that type are enabled.
+1. In the list on the left, select **[!UICONTROL Price]**.
+1. Turn **[!UICONTROL Enable filter]** on.
+
+   Price values use the **website's base currency**, as noted on the page.
+
+1. Open **[!UICONTROL Include products based on]** (on the **[!UICONTROL Inclusions]** tab) or the equivalent control on the **[!UICONTROL Exclusions]** tab, and choose **[!UICONTROL Set price range]**.
+1. Set an optional **[!UICONTROL Min price]** and/or **[!UICONTROL Max price]** using the fields next to the currency symbol. You can type amounts or use the **-** and **+** controls to adjust values. Leave a bound empty if you do not need a minimum or maximum. The range is compared to each product's final computed price for the storefront's active price book.
+1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
+
+![Price Filter](../../assets/filter-price.png)
 
 ### Product
 
-Product filters specify which specific products are eligible, or not eligible, to be displayed in recommendations. You cannot select products that are disabled or not visible individually because those products can never appear in recommendations.
+Product filters target individual catalog items by **SKU**. You add one or more SKUs to either allow only those products (**Inclusions**) or block them (**Exclusions**), using the same **[!UICONTROL Filter products]** page as [price filters](#price). You cannot surface disabled products or products that are not visible individually in a recommendation unit; those products never appear on the storefront regardless of filters.
+
+#### Set up a product filter
+
+1. While [creating or editing](create.md) a recommendation unit, open **[!UICONTROL Filter products]** (or go to the _Filters_ step from the unit workflow).
+1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab. The badge on each tab shows how many filters of that type are enabled.
+1. In the list on the left, select **[!UICONTROL Product]**.
+1. Turn **[!UICONTROL Enable filter]** on.
+
+   The right panel heading reflects the tab, for example **[!UICONTROL Product inclusions]** or the equivalent for exclusions.
+
+1. In **[!UICONTROL Product SKU]**, enter a SKU and click **[!UICONTROL Add]**. Repeat to add more SKUs.
+
+   Under **[!UICONTROL Product SKUs]**, each SKU appears as a removable tag. Click **X** on a tag to remove that SKU, or click **[!UICONTROL Clear All]** to remove every SKU from the list.
+
+1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
+
+For **inclusions**, only products whose SKUs are listed (and that satisfy your other enabled inclusion filters) can be recommended. For **exclusions**, any product whose SKU is listed is not recommended, even if it would otherwise qualify.
+
+![Product Filter](../../assets/filter-product.png)
 
 >[!NOTE]
 >
 >Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
 
-<!--### Price
-
-A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers.
-
-### Attribute
+<!--### Attribute
 
 You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
