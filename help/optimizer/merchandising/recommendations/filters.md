@@ -33,6 +33,10 @@ Each filter type targets a different aspect of the catalog, such as product and 
 
 ### Price
 
+>[!IMPORTANT]
+>
+>The following feature is in beta.
+
 Price filtering uses each product's **final computed price** for the storefront's **active price book**—the one assigned to the storefront where the recommendation unit is rendered. That value reflects discounts, promotions, and special pricing defined in that price book, not list price alone. Evaluation uses only that storefront's price book; other storefronts or price books do not apply. How price books map to a storefront is configured with your catalog and [price books](../../setup/pricebooks.md) setup.
 
 #### How include and exclude rules use price
