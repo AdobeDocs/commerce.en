@@ -22,6 +22,12 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.21 Release
+
+_April 2, 2026_
+
+![Fix](../assets/fix.svg) Reindex product overrides indexer after manual resync of category permission indexer. <!--MDEE-1332-->
+
 ### 103.4.20 Release
 
 _March 5, 2026_
