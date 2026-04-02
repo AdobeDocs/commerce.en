@@ -18,7 +18,6 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _April 2, 2026_
 
-[Slow Horses] MDEE-1317: Copyright Review by @KevinBKozan in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/89
 ![Fix](../assets/fix.svg) Categories feed is not available in saas:resync command. <!--MDEE-1330-->
 
 ### v1.0.11 Release
