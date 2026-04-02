@@ -26,7 +26,7 @@ Updates include:
 
 _April 2, 2026_
 
-![Fix](../assets/fix.svg)**Improved reliability of manual resync of category permission indexer**–Fixed an issue where running indexers in a certain order could cause some products to become temporarily invisible. The system now enforces the correct order and automatically triggers a full resync when needed, ensuring all products remain visible after manual reindex operations.<!--MDEE-1332-->
+![Fix](../assets/fix.svg)**Improved reliability of manual resync of category permission indexer**–Fixed an issue where running indexers in a certain order could cause some products to become temporarily invisible. The system now enforces the correct order and automatically triggers a full resync when needed, ensuring all products remain visible after manual reindex operations. <!--MDEE-1332-->
 
 ### 103.4.20 Release
 
