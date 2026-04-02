@@ -17,7 +17,7 @@ Use this checklist to verify that your production [!DNL Adobe Commerce Optimizer
 
 ## 1. Core configuration
 
-- **Config:** All configuration files are set and point to production services (not staging or dev).
+- **Config:** All configuration files are set and point to production services (not staging or dev)..
 - **Config:** GraphQL endpoints are configured with [!DNL Adobe Commerce Optimizer] production endpoints.
 - **Catalog:** Production catalog is synced to the new environment.
 - **Config:** A new Commerce API key pair is generated; the public key is set as `x-api-key`.
