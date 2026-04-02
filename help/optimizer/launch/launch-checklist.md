@@ -2,12 +2,11 @@
 title: Commerce Optimizer Launch Checklist
 description: "Learn how to validate configuration, storefront, SEO, CDN, integrations, security, analytics, and testing for [!DNL Adobe Commerce Optimizer] production."
 solution: Commerce
-feature: Integration, Storefront, Search, Catalog, Personalization
+feature: Integration, Storefront, Search, Catalog Management, Personalization
 feature-set: Commerce
 role: Admin, Developer
 level: Intermediate
 topic: Administration
-type: Reference
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 ---
@@ -50,7 +49,7 @@ For tenant IDs, GraphQL endpoints, and instance management, see [Get started](..
 - **Content:** Content authoring source is selected and configured (document-based or Universal Editor).
 - **Content:** All content is published through the preview → publish cycle.
 - **Content:** Content and design QA is completed on the `.aem.live` domain.
-- **Performance:** Pre-rendering is enabled for key pages (PDPs, PLPs, homepage).
+- **Performance:** Pre-rendering is enabled for key pages, for example product detail (PDP) and product listing (PLP) pages.
 - **Performance:** All URLs are verified as lowercase to support pre-rendering.
 - **Performance:** HTML source is validated for metadata and enriched body content.
 - **Content:** Page translations are verified for all locales and languages.
