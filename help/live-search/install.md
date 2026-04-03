@@ -35,7 +35,7 @@ This article is intended for the developer or systems integrator on your team wh
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
 - Adobe Commerce on-prem (EE) : 2.4.4+
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
 > **HIPAA readiness**
 >
