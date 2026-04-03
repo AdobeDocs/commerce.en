@@ -16,12 +16,51 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## March 2026 - release #2 {#latest}
-
+## April 2026 {#latest}
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on April 1, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Check price and stock alert subscription status through GraphQL
+
+New GraphQL queries, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"} and [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
+
+### Create numeric product attributes that support negative values
+
+A new `numeric` [product attribute input type](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) allows merchants to create decimal attributes that support negative values. <!-- ACCS-600 -->
+
+### Query reCAPTCHA configuration for multiple forms in one GraphQL request
+
+The [`recaptchaFormConfigs` query](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) can return configuration details for multiple form types in a single request. <!-- ACCS-628 -->
+
+### View all company orders with a new B2B permission
+
+A new `view_all_company_orders` [company role](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/) enables B2B company customers to view all orders within their company, including historical orders created by Admin users. <!-- ACCS-675 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* You can now filter Order and Company REST API results using applicable custom attributes, supporting scenarios such as company-scoped order searches. <!-- ACCS-633 -->
+
+* Resolved an error that could appear in the browser developer console. <!-- CCSAAS-4650 -->
+
+* Fixed an error that could occur when cancelling a guest order with order comments. <!-- ACCS-674 -->
+
+* Fixed an error that could occur when adding a grouped product with many associated items to a requisition list. <!-- ACCS-627 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## March 2026 - release #2
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 The following items were released to Production environments on March 24, 2026.
 
