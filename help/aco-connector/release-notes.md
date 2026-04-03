@@ -22,6 +22,7 @@ _April 2, 2026_
 
 ```terminal
 bin/magento saas:resync --feed=categories
+```
 
 _March 10, 2026_
 
