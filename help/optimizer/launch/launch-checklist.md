@@ -17,7 +17,9 @@ Use this checklist to verify that your production [!DNL Adobe Commerce Optimizer
 
 ### Usecase
 
-B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce on Cloud instance. 
+B2C, 
+leverage the Optimizer and EDS capabilities for the existing Adobe Commerce on Cloud instance. 
+Assets are in Commerce 
 
 ### Components
 - **Cloud** - Adobe Commerce on Cloud, to manage the Catalog data, Customers, and serve purchase experiences (checkout, order management, shipping, etc )
@@ -29,39 +31,38 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ---
 
-## Production instances are created
-
-~~- **Config:** All configuration files are set and point to production services (not staging or dev)..~~ ℹ️ctag Core Configuration
-~~- **Config:** GraphQL endpoints are configured with [!DNL Adobe Commerce Optimizer] production endpoints.~~ ℹ️ctag Core Configuration
-
-### Cloud
+## Cloud instance is created 
 - It is created 🟦 TODO: reference to the way to obtain a Cloud instance
 - All testing and dummy data are removed. 
 - Production data is loaded to the instance.
-- GraphQL endpoint is known 🟦 TODO: reference to the way to obtain the URL
+- GraphQL endpoint is known 🟦 TODO: reference to the way to obtain the URL 
 - 🟦 TODO: reference to Cloud instance checklist if it exists
-
-### Optimizer
-- It is created. 🟦 TODO: reference to the way to crate bare minimum instance
-- Instance is located in the correct region
-- Instance type is Production
-- Organization ID, Client ID, Ingestion URL, Optimizer studio URL are known, see [Get started](../get-started.md).
-- Limits and boundaries adjusted accordingly 🟦 TODO: reference to the way to change and double-check limits
-- All testing and dummy data are removed. 🟦 TODO: reference to the way to 
-
-### Storefront
-- It is created 🟦 TODO: reference to steps to create bare minimum frontend instance
-- 🟦 TODO: any other preliminary checks to confirm bare minimum configuration?
 
 ---
 
-## Cloud is connected to Optimizer
+## Optimizer instance is created
+- It is [created](../get-started.md).
+- Instance is located in the correct region
+- Instance type is Production
+- Organization ID, Client ID, Ingestion URL, Optimizer studio URL are [known](../get-started.md).
+- Limits and boundaries adjusted accordingly 🟦 TODO: reference to the way to change and double-check limits
+- All testing and dummy data are removed. 🟦 TODO: reference to the way to 
+
+---
+
+
+## Storefront instance is created
+- A dedicated production instance is [created](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/)
+- The name of the production instance is known
+- Just authorized personnel have [permissions](https://docs.da.live/administrators/guides/permissions) to publish
+
+---
+
+## Cloud is integrated with Optimizer
 
 ### on Cloud
-~~- **Connector:** If you use a non-Adobe Commerce backend, install and configure the appropriate catalog connector (for example, the [Salesforce Commerce Connector](../developer/salesforce-connector.md) via App Builder).~~
-~~- **Connector:** Uninstall conflicting extensions before you enable the [!DNL Adobe Commerce Optimizer] Connector (Live Search, Product Recommendations, and Catalog Service standalone packages).~~ should move to ^^
 - ACO connector is installed and configured following [Get started with the Adobe Commerce Optimizer Connector](../../aco-connector/get-started.md) for details.
-- CLI command aco:conf:show confirms connection with the production Optimizer instance. Organization ID, Client ID, Ingestion URL, Optimizer studio URL match the production instance.
+- CLI command aco:conf:show confirms connection with the production Optimizer instance. Organization ID, Client ID, Ingestion URL, Optimizer studio URL match the production instance. 
 - Scopes for synchronization are picked. 🟦 TODO: add reference to do the configuration
 - Data is synced 🟦 TODO: add reference to data sync board introduced in MDEE  
 
@@ -80,32 +81,30 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ---
 
-## Storefront is connected to Cloud
+## Storefront is integrated with Cloud
 
 ### on Cloud
 - Storefront compatibility packages are [installed](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/) 🟦 TODO: should be reviewed and updated by a storefront expert
 
 ### on Storefront
-- ensure Config.json public/default/commerce-core-endpoint mentions the GraphQL endpoint of the production Cloud instance  🟦 TODO: should be reviewed and updated by a storefront expert
+- ensure Config.json public/default/commerce-core-endpoint mentions the GraphQL endpoint of the production Cloud instance  
+-- 🟦 TODO: should be reviewed and updated by a storefront expert
+-- 🟦 TODO: Steven review all config lines to ensure we have the required configuration in place
+-- 🟦 TODO: if APi Mesh is used, shouldn't we create the API mesh endpoint and mention its endpoint instead?
 
 ---
 
-## Storefront is connected to Optimizer
+## Storefront is integrated with Optimizer
 
 ### on Storefront  🟦 TODO: should be reviewed and updated by a storefront expert
-- ~~Switch to the Catalog Service production endpoint (`https://catalog-service.adobe.io/graphql`).~~ wrong URL
-- ~~Ensure a production environment is configured in the Service Connector (will result in a new `environmentId`).~~ Moved to connector
-- ~~Sync the production catalog to the new production environment.~~ Moved to connector
-- ~~Create a new Commerce production API key-pair and use the public key as the `x-api-key` value.~~ unrelevant for ACO
-- Category IDs and all category pages reference the correct category.  🟦 TODO: refer to steps to check
-- ~~Update `environmentId` and `x-api-key` values in the `config.json` code file.~~ unrelevant for ACO
-- ~~Notify the Catalog Service team about the new production environment and launch date.~~ moved to "Launch day and post-launch support"
-- **new** ensure Config.json public/default/adobe-commerce-optimizer set to "true"
-- **new** ensure Config.json public/default/commerce-endpoint mentions the GraphQL endpoint of the production Optimizer instance
-- **new** ensure Config.json public/default/cs/AC-view-ID mentions the correct Catalog View Id created in the production Optimizer instance
+- Ensure Config.json public/default/adobe-commerce-optimizer set to "true"
+- Ensure Config.json public/default/commerce-endpoint mentions the GraphQL endpoint of the production Optimizer instance
+- Ensure Config.json public/default/cs/AC-view-ID mentions the correct Catalog View Id created in the production Optimizer instance
+- Category IDs and all category pages reference the correct category.  🟦 TODO: refer to steps to check, should we configure   Config.json plugins/picker/rootCategory": "2"
+  for categories?
 
 ### on Optimizer
-- no actions required  🟦 TODO: should be reviewed and updated by anIf the ACO expert
+- no actions required
 
 ---
 
@@ -138,15 +137,15 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ## Storefront is finetuned
 
-### **new** Content and authoring ℹ️ new section
+### Content and authoring
 
-- The [AEM/EDS Go-Live Checklist](https://aem.live/docs/go-live-checklist) is reviewed. Align with [Set up your storefront](../storefront.md) in the [!DNL Adobe Commerce Optimizer] guide. ℹ️ctag
+- The [AEM/EDS Go-Live Checklist](https://aem.live/docs/go-live-checklist) is reviewed. 
 - Content authoring source is selected and configured (document-based or Universal Editor). ℹ️ctag
 - All content is published through the preview → publish cycle. ℹ️ctag
 - Content and design QA is completed on the `.aem.live` domain.
 - A favicon is added to the site.
-- SharePoint / Google Drive access is configured with dedicated credentials.
-- Drop-ins (Cart, Checkout, PDP, PLP, Auth, Account) are customized and tested. See [Set up your storefront](../storefront.md) (and storefront resources linked from that topic).
+- da.live and product visuals are [configured](https://docs.da.live/administrators/guides/permissions) with dedicated credentials. 
+- Drop-ins (Cart, Checkout, PDP, PLP, Auth, Account) are [customized](../storefront.md) and tested.
 - Storefront branding is applied — CSS design tokens, typography, and colors.
 
 ### SEO and indexing
@@ -172,7 +171,8 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 - Add pre-rendering for key pages. See the [pre-rendering documentation](/setup/configuration/aem-prerender/) for details.
 - Verify that all URLs are lowercase to support pre-rendering without breaking any links.
 - Validate HTML source for metadata and enriched body content (to ensure pre-rendering is working).
-- Check availability of page translations for locales with different languages.
+- Check the availability of page translations for locales with different languages.
+- Additional HTML markup is configured [configured](https://www.aem.live/docs/redirects)  
 
 ### Performance and monitoring
 
@@ -206,14 +206,6 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 - DNS A/CNAME records are updated for all domains and hostnames. ℹ️ new
 - SSL/TLS certificate is provisioned and verified for the production domain. ℹ️ new
 - `www` ↔ apex redirects work correctly. ℹ️ new
-
-### ~~Catalog service~~ ℹ️ moved to "Storefront is connected to Optimizer"
-
-### ~~Project management and updates~~ ℹ️ moved to ""Launch day and post-launch support.""
-
-- ~~Notify Adobe early about your planned launch date to ensure that the Adobe Commerce team is
-  available to support you during the launch.~~ 
-- ~~Check for the latest boilerplate changes and update your project accordingly.~~ 
 
 ---
 
