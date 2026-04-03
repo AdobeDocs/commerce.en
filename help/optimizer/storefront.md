@@ -218,8 +218,8 @@ If issues persist:
 
 ## Next steps
 
-- **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Create a local environment to customize your storefront code and content.
-- **[Enable the Universal Editor](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/)**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
+* **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Create a local environment to customize your storefront code and content.
+* **[Enable the Universal Editor](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/)**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
 
 ### Learn and explore
 
