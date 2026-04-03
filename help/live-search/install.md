@@ -36,6 +36,7 @@ This article is intended for the developer or systems integrator on your team wh
 - Adobe Commerce on-prem (EE) : 2.4.4+
 
 > [!IMPORTANT]
+>
 > **HIPAA readiness**
 >
 > Live Search is not a HIPAA-ready service. If you are using Adobe Commerce with the HIPAA-Ready extension and Healthcare add-on, do not enable Live Search in any environment that may process protected health information (PHI).
