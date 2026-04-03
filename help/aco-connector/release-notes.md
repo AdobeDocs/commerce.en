@@ -18,7 +18,10 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _April 2, 2026_
 
-![Fix](../assets/fix.svg) Categories feed is not available in saas:resync command. <!--MDEE-1330-->
+![Fix](../assets/fix.svg) **Support for Categories Feed in `saas:resync` command **–You can now easily refresh and view your latest category data using the `saas:resync` CLI command: 
+
+```terminal
+bin/magento saas:resync --feed=categories
 
 ### v1.0.11 Release
 
