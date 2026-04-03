@@ -1,7 +1,7 @@
 ---
 title: Success metrics
 description: Success metrics provides insight into the key performance metrics for your [!DNL Adobe Commerce Optimizer] store.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 ---
 # Success metrics
@@ -143,7 +143,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 - All completed orders during the selected date range.
 - Base product prices multiplied by quantities purchased.
-- Revenue from all sales channels tracked by Commerce Optimizer.
+- Revenue from all sales channels tracked by [!DNL Adobe Commerce Optimizer].
 
 **Important notes:**
 

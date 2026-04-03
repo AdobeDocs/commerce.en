@@ -8,22 +8,31 @@ recommendations: noDisplay, noCatalog
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Feature comparison](feature-comparison.md)
-- [Getting started](getting-started.md)
-- [User and identity management](user-management.md)
+- [Feature Comparison](feature-comparison.md)
+- [Getting Started](getting-started.md)
+- [User and Identity Management](user-management.md)
 - [Storefront](storefront.md)
-- [Use cases](use-cases.md)
-- [Shared responsibility](shared-responsibility.md)
+- [Use Cases](use-cases.md)
+- [Shared Responsibility](shared-responsibility.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
-  - [Bulk Data Migration Tool](migration/bulk-data.md)
-  - [Coding tools](migration/coding-tools.md)
-  - [Documentation RAG service](migration/doc-rag.md)
+  - Migration tools {#migration-tools}
+    - [Bulk data migration tool](migration/bulk-data.md)
+    - [Coding tools](migration/coding-tools.md)
+  - [Documentation RAG Service](migration/doc-rag.md)
+- [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
+- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
-  - [Ratings extension tutorial prerequisites](tutorials/tutorial-prerequisites.md)
-  - [Ratings extension tutorial](tutorials/ratings-extension.md)
+  - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
+  - [Ratings Extension Tutorial](tutorials/ratings-extension.md)
+  - [Shipping Method Extension Tutorial](tutorials/shipping-method-extension.md)
+  - [Delivery Estimates Extension Tutorial](tutorials/delivery-estimates-extension.md)
+  - [In Stock Notification Extension Tutorial](tutorials/in-stock-notification-extension.md)
+  - [Product Reviews Extension Tutorial](tutorials/product-reviews-extension.md)
 - Schemas {#schemas}
-  - [GraphQL schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-  - [REST API schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Release notes](release-notes.md)
+  - [GraphQL Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+  - [REST API Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [Video Tutorials](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Release Notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

@@ -38,7 +38,7 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 
 1. **[Create your storefront project](#create-your-storefront-project)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
 
-1. **[Customize the storefront configuration](#customize-the-storefront-configuration)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
+1. **[Customize the storefront configuration](#configure-your-storefront)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
 1. **[Verify your setup](#verify-your-setup)** (10 mins)
    * Preview your storefront site
@@ -51,7 +51,7 @@ The Site Creator tool creates a complete storefront project with the following c
 * **Site**: Storefront landing page with boilerplate content
 * **Code**: Repository with boilerplate source files
 * **Content**: Document Author environment with site content files
-* **Commerce Config**: `config.json` file for instance-specific configuration
+* **Commerce Config**: [Commerce storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} for instance-specific configuration
 
 ### Step 1: Generate your project
 
@@ -117,7 +117,7 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    
    >[!NOTE]
    >
-   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in Adobe Commerce Optimizer to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
+   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in [!DNL Adobe Commerce Optimizer] to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
 
 1. Save the configuration file.
 

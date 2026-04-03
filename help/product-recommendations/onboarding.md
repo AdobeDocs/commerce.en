@@ -5,6 +5,12 @@ exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
 ---
 # Onboarding
 
+>[!IMPORTANT]
+>
+>**Product Recommendations is not a HIPAA-ready service.** Do not enable or use Product Recommendations in any Adobe Commerce implementation that uses the HIPAA-ready offering or otherwise processes protected health information (PHI). Product Recommendations is part of the Commerce SaaS services that are currently classified as non-HIPAA ready.
+>
+>For details about which Adobe Commerce capabilities are HIPAA ready and which services must not be used with PHI, see [HIPAA readiness on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) and [Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+
 The onboarding process for [!DNL Product Recommendations] requires access to the command line of the server and consists of the following steps. If you are not familiar with working from the command line, ask a developer or system integrator to help.
 
 - [Implementation Workflow](implementation-workflow.md)
@@ -16,7 +22,7 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 ## Requirements
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3, or 8.4
 - Composer 2
 
 ### Supported platforms

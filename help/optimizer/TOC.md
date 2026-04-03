@@ -7,7 +7,7 @@ recommendations: noDisplay
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [What is Adobe Commerce Optimizer?](overview.md)
+- [What is [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [Get Started](get-started.md)
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
@@ -47,6 +47,7 @@ recommendations: noDisplay
    - [Catalog Layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price Books](./setup/pricebooks.md)
+   - [Product Visuals](./setup/product-visuals.md)
    - [Data Sync](./setup/data-sync.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)

@@ -26,6 +26,10 @@ The AEM Assets integration for Commerce provides a default automatic matching me
 
 When the **[!UICONTROL Match by product SKU]** matching rule is configured  in the Commerce Admin, Commerce asset files synchronize automatically from AEM Assets to your Commerce project based on the asset metadata configured for each file. You configure the metadata from the AEM **Commerce** tab in the **AEM Assets author** environment:
 
+1. Open your AEM Assets author instance (the URL is provisioned for your project in the same IMS organization as Adobe Commerce).
+
+1. From the main navigation screen, click **Assets** to access the Digital Asset Management (DAM) interface.
+
 1. In AEM Assets, update the image metadata to add the Adobe Commerce association by setting the `Eligible for Commerce` field to `Yes`.
 
     ![Example metadata](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
