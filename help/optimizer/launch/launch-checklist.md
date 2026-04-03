@@ -20,33 +20,38 @@ Use this checklist to verify that your production [!DNL Adobe Commerce Optimizer
 B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce on Cloud instance. 
 
 ### Components
-- **Cloud** - Adobe Commerce on Cloud, to manage the Catalog data, Customers, and serve purchase experiences (checkout, order management, shipping, etc)
+- **Cloud** - Adobe Commerce on Cloud, to manage the Catalog data, Customers, and serve purchase experiences (checkout, order management, shipping, etc )
 - **Optimizer** - Adobe Commerce Optimizer, to serve merchandising experiences
 - **Storefront** - Adobe Commerce Storefront on Edge Delivery Services, to build UI
 - **Third-Party services** to cover Payment, Shipping, Tax
-- **App Builder** 
-- **API Mesh**
+- **App Builder** 🟦 TODO: add reasoning for the component
+- **API Mesh** 🟦 TODO: add reasoning for the component
 
 ---
 
 ## Production instances are created
 
-~~- [ctag] [Core Configuration] **Config:** All configuration files are set and point to production services (not staging or dev)..~~
-~~- [ctag] [Core Configuration] **Config:** GraphQL endpoints are configured with [!DNL Adobe Commerce Optimizer] production endpoints.~~
+~~- **Config:** All configuration files are set and point to production services (not staging or dev)..~~ ℹ️ctag Core Configuration
+~~- **Config:** GraphQL endpoints are configured with [!DNL Adobe Commerce Optimizer] production endpoints.~~ ℹ️ctag Core Configuration
 
 ### Cloud
+- It is created 🟦 TODO: reference to the way to obtain a Cloud instance
 - All testing and dummy data are removed. 
 - Production data is loaded to the instance.
-- GraphQL endpoint is known
+- GraphQL endpoint is known 🟦 TODO: reference to the way to obtain the URL
+- 🟦 TODO: reference to Cloud instance checklist if it exists
 
 ### Optimizer
-- It is created in the correct region
+- It is created. 🟦 TODO: reference to the way to crate bare minimum instance
+- Instance is located in the correct region
 - Instance type is Production
 - Organization ID, Client ID, Ingestion URL, Optimizer studio URL are known, see [Get started](../get-started.md).
-- Limits and boundaries adjusted accordingly 
+- Limits and boundaries adjusted accordingly 🟦 TODO: reference to the way to change and double-check limits
+- All testing and dummy data are removed. 🟦 TODO: reference to the way to 
 
 ### Storefront
-- MVP steps to create the instance
+- It is created 🟦 TODO: reference to steps to create bare minimum frontend instance
+- 🟦 TODO: any other preliminary checks to confirm bare minimum configuration?
 
 ---
 
@@ -57,39 +62,42 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 ~~- **Connector:** Uninstall conflicting extensions before you enable the [!DNL Adobe Commerce Optimizer] Connector (Live Search, Product Recommendations, and Catalog Service standalone packages).~~ should move to ^^
 - ACO connector is installed and configured following [Get started with the Adobe Commerce Optimizer Connector](../../aco-connector/get-started.md) for details.
 - CLI command aco:conf:show confirms connection with the production Optimizer instance. Organization ID, Client ID, Ingestion URL, Optimizer studio URL match the production instance.
-- Scopes for synchronization are picked.
-- Data sync is verified on the [Data sync](../setup/data-sync.md) page — expected products, prices, and attributes appear for Catalog Service, Product Discovery, and Recommendations.
+- Scopes for synchronization are picked. 🟦 TODO: add reference to do the configuration
+- Data is synced 🟦 TODO: add reference to data sync board introduced in MDEE  
 
 ### on Optimizer
-- [ctag] [Core Configuration] All catalog data is received — products, category attributes, and [price books](../setup/pricebooks.md).
-- Price books are auto-created from Commerce customer groups
-- [Catalog views](../setup/catalog-view.md) are created. Their IDs are known.
-- [Policies](../setup/policies.md) are created. Their IDs are known.
-- [ctag] [Core Configuration] **Catalog:** Channels and [policies](../setup/policies.md) are configured for the production site.
-- [ctag] [Core Configuration] **Merchandising:** [Facets](../merchandising/facets/overview.md), [synonyms](../merchandising/synonyms/overview.md), and [merchandising rules](../merchandising/rules/overview.md) are set up and customized (see [Merchandising](../merchandising/overview.md)). Configure [price faceting and search language](../settings.md) under Settings as needed.
-- [ctag] [Core Configuration] **Merchandising:** [Product recommendations](../merchandising/recommendations/create.md) are created and validated.
-- **Merchandising:** Search and recommendations data is visible in Admin — review [Search performance](../manage-results/search-performance.md) and [Recommendations performance](../manage-results/recommendation-performance.md).
+- Data sync is verified on the [Data sync](../setup/data-sync.md) page — expected products, prices, and attributes appear for Catalog Service, Product Discovery, and Recommendations.
+- [Price books](../setup/pricebooks.md) are auto-created from customer groups on Cloud. 
+- [Catalog views](../setup/catalog-view.md) are created by Admin. Their IDs are known.
+- [Policies](../setup/policies.md) are created by Admin. Their IDs are known.
+- [Facets](../merchandising/facets/overview.md) are set up by Admin
+- [Synonyms](../merchandising/synonyms/overview.md) are set up by Admin
+- [Merchandising rules](../merchandising/rules/overview.md) are set up by Admin 
+- [Price faceting and search language](../settings.md) are configured if required.
+- [Product recommendations](../merchandising/recommendations/create.md) are created and validated.
+- [Search data](../manage-results/search-performance.md) is visible in Admin
+- [Recommendations data](../manage-results/recommendation-performance.md) is visible in Admin
 
 ---
 
 ## Storefront is connected to Cloud
 
 ### on Cloud
-- Storefront compatibility packages are [installed](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/)
+- Storefront compatibility packages are [installed](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/) 🟦 TODO: should be reviewed and updated by a storefront expert
 
 ### on Storefront
-- ensure Config.json public/default/commerce-core-endpoint mentions the GraphQL endpoint of the production Cloud instance
+- ensure Config.json public/default/commerce-core-endpoint mentions the GraphQL endpoint of the production Cloud instance  🟦 TODO: should be reviewed and updated by a storefront expert
 
 ---
 
 ## Storefront is connected to Optimizer
 
-### on Storefront
+### on Storefront  🟦 TODO: should be reviewed and updated by a storefront expert
 - ~~Switch to the Catalog Service production endpoint (`https://catalog-service.adobe.io/graphql`).~~ wrong URL
 - ~~Ensure a production environment is configured in the Service Connector (will result in a new `environmentId`).~~ Moved to connector
 - ~~Sync the production catalog to the new production environment.~~ Moved to connector
 - ~~Create a new Commerce production API key-pair and use the public key as the `x-api-key` value.~~ unrelevant for ACO
-- Verify category IDs and ensure all category pages reference the correct category.
+- Category IDs and all category pages reference the correct category.  🟦 TODO: refer to steps to check
 - ~~Update `environmentId` and `x-api-key` values in the `config.json` code file.~~ unrelevant for ACO
 - ~~Notify the Catalog Service team about the new production environment and launch date.~~ moved to "Launch day and post-launch support"
 - **new** ensure Config.json public/default/adobe-commerce-optimizer set to "true"
@@ -97,20 +105,20 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 - **new** ensure Config.json public/default/cs/AC-view-ID mentions the correct Catalog View Id created in the production Optimizer instance
 
 ### on Optimizer
-- no actions required
+- no actions required  🟦 TODO: should be reviewed and updated by anIf the ACO expert
 
 ---
 
 ## Cloud is integrated with Third-Party services
 
-- [ctag] [Integrations – Third Party Services] **Payments:** Payment gateway integration is live and tested (Stripe, PayPal, Adyen, and so on).
-- [ctag] [Integrations – Third Party Services] **Shipping:** Shipping API connections are confirmed (UPS, FedEx, and so on).
-- [ctag] [Integrations – Third Party Services] **Shipping:** Fulfillment platform is connected and tested (for example, ShipStation).
-- [ctag] [Integrations – Third Party Services] **Tax:** Tax calculation integration is validated (Avalara, TaxJar, and so on).
-- [ctag] [Integrations – Third Party Services] **Tax:** Accounting software sync is confirmed (QuickBooks, and so on).
-- [ctag] [Integrations – Third Party Services] **Inventory:** PIM / ERP / inventory management integration is tested and syncing.
-- [ctag] [Integrations – Third Party Services] **Architecture:** The host commerce system handles payment, shipping, tax, and inventory (not [!DNL Adobe Commerce Optimizer]).
-- [ctag] [Integrations – Third Party Services] **Architecture:** API Mesh and App Builder are in sync between the host commerce system and [!DNL Adobe Commerce Optimizer].
+- **Payments:** Payment gateway integration is live and tested (Stripe, PayPal, Adyen, and so on). ℹ️ctag Integrations – Third Party Services
+- **Shipping:** Shipping API connections are confirmed (UPS, FedEx, and so on). ℹ️ctag Integrations – Third Party Services
+- **Shipping:** Fulfillment platform is connected and tested (for example, ShipStation). ℹ️ctag Integrations – Third Party Services
+- **Tax:** Tax calculation integration is validated (Avalara, TaxJar, and so on). ℹ️ctag Integrations – Third Party Services
+- **Tax:** Accounting software sync is confirmed (QuickBooks, and so on). ℹ️ctag Integrations – Third Party Services
+- **Inventory:** PIM / ERP / inventory management integration is tested and syncing. ℹ️ctag Integrations – Third Party Services
+- **Architecture:** The host commerce system handles payment, shipping, tax, and inventory (not [!DNL Adobe Commerce Optimizer]). ℹ️ctag Integrations – Third Party Services
+- **Architecture:** API Mesh and App Builder are in sync between the host commerce system and [!DNL Adobe Commerce Optimizer]. ℹ️ctag Integrations – Third Party Services
 - **Email:** Transactional email delivery is tested (order confirmation, shipping, and so on).
 - **Email:** Email templates are updated to reflect brand and correct links.
 
@@ -118,11 +126,11 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ## Cloud is integrated with App Builder and API Mesh
 
-- [ctag] [Integrations – App Builder] **App Builder:** All configurations and services are applied to the production workspace.
-- [ctag] [Integrations – App Builder] **App Builder:** The App Builder production app is tested across all build scenarios.
-- [ctag] [Integrations – App Builder] **API Mesh:** API Mesh configs and sources are ready for the production environment.
-- [ctag] [Integrations – App Builder] **App Builder:** App Builder product limitations are reviewed — see the [Adobe Developer App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} and [App Builder system settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
-- [ctag] [Integrations – App Builder] **App Builder:** The production application is configured with App Builder production endpoints.
+- **App Builder:** All configurations and services are applied to the production workspace. ℹ️ctag Integrations – App Builder
+- **App Builder:** The App Builder production app is tested across all build scenarios. ℹ️ctag Integrations – App Builder
+- **API Mesh:** API Mesh configs and sources are ready for the production environment. ℹ️ctag Integrations – App Builder
+- **App Builder:** App Builder product limitations are reviewed — see the [Adobe Developer App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} and [App Builder system settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}. ℹ️ctag Integrations – App Builder
+- **App Builder:** The production application is configured with App Builder production endpoints. ℹ️ctag Integrations – App Builder
 - **Events:** Adobe I/O Events are configured and event subscriptions are verified.
 - **App Builder:** Custom admin panel extensions are deployed to the production workspace.
 
@@ -130,16 +138,16 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ## Storefront is finetuned
 
-### **new** Content and authoring
+### **new** Content and authoring ℹ️ new section
 
-- [ctag] **new** The [AEM/EDS Go-Live Checklist](https://aem.live/docs/go-live-checklist) is reviewed. Align with [Set up your storefront](../storefront.md) in the [!DNL Adobe Commerce Optimizer] guide.
-- [ctag] **new** Content authoring source is selected and configured (document-based or Universal Editor).
-- [ctag] **new** All content is published through the preview → publish cycle.
-- **new** Content and design QA is completed on the `.aem.live` domain.
-- **new** A favicon is added to the site.
-- **new** SharePoint / Google Drive access is configured with dedicated credentials.
-- **new** Drop-ins (Cart, Checkout, PDP, PLP, Auth, Account) are customized and tested. See [Set up your storefront](../storefront.md) (and storefront resources linked from that topic).
-- **new** Storefront branding is applied — CSS design tokens, typography, and colors.
+- The [AEM/EDS Go-Live Checklist](https://aem.live/docs/go-live-checklist) is reviewed. Align with [Set up your storefront](../storefront.md) in the [!DNL Adobe Commerce Optimizer] guide. ℹ️ctag
+- Content authoring source is selected and configured (document-based or Universal Editor). ℹ️ctag
+- All content is published through the preview → publish cycle. ℹ️ctag
+- Content and design QA is completed on the `.aem.live` domain.
+- A favicon is added to the site.
+- SharePoint / Google Drive access is configured with dedicated credentials.
+- Drop-ins (Cart, Checkout, PDP, PLP, Auth, Account) are customized and tested. See [Set up your storefront](../storefront.md) (and storefront resources linked from that topic).
+- Storefront branding is applied — CSS design tokens, typography, and colors.
 
 ### SEO and indexing
 
@@ -155,9 +163,9 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
   `.html` file extension).
 - Generate a sitemap for your site and catalog. To speed up the indexing process, Adobe
   recommends adding the sitemap to Google Search Console.
-- **new** Canonical URLs return 2xx status (not 3xx or 4xx).
-- **new** `hreflang` tags are added to the sitemap for multilingual sites.
-- **new** The Google Search Console coverage report is reviewed.
+- Canonical URLs return 2xx status (not 3xx or 4xx). ℹ️ new
+- `hreflang` tags are added to the sitemap for multilingual sites. ℹ️ new
+- The Google Search Console coverage report is reviewed. ℹ️ new
 
 ### Enable pre-rendering
 
@@ -193,15 +201,15 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 - Validate your [CDN configuration](/setup/configuration/content-delivery-network/) and ensure that caching
   and cache invalidation work as expected.
 - Add a store-specific cache buster to the Catalog Service and Live Search requests for [multi-store setups](/setup/seo/indexing/#multi-store-setups) (for example, a query parameter or proxy through your CDN configuration).
-- **new** Push invalidation is set up and tested (publish a change, then verify on the production domain).
-- **new** DNS TTL is reduced to the minimum before cutover.
-- **new** DNS A/CNAME records are updated for all domains and hostnames.
-- **new** SSL/TLS certificate is provisioned and verified for the production domain.
-- **new** `www` ↔ apex redirects work correctly.
+- Push invalidation is set up and tested (publish a change, then verify on the production domain). ℹ️ new
+- DNS TTL is reduced to the minimum before cutover. ℹ️ new
+- DNS A/CNAME records are updated for all domains and hostnames. ℹ️ new
+- SSL/TLS certificate is provisioned and verified for the production domain. ℹ️ new
+- `www` ↔ apex redirects work correctly. ℹ️ new
 
-### ~~Catalog service~~ moved to "Storefront is connected to Optimizer"
+### ~~Catalog service~~ ℹ️ moved to "Storefront is connected to Optimizer"
 
-### ~~Project management and updates~~ moved to ""Launch day and post-launch support.""
+### ~~Project management and updates~~ ℹ️ moved to ""Launch day and post-launch support.""
 
 - ~~Notify Adobe early about your planned launch date to ensure that the Adobe Commerce team is
   available to support you during the launch.~~ 
@@ -238,18 +246,18 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ## Testing
 
-- [ctag] [Testing] **Functional:** All user flows are tested: browse → search → filter → add to cart → checkout → account creation.
-- [ctag] [Testing] **Functional:** Payment gateways are tested with real and test transactions.
-- [ctag] [Testing] **Functional:** Order placement, confirmation emails, and order tracking are verified.
-- [ctag] [Testing] **Functional:** Shipping options and tax calculations are accurate.
-- [ctag] [Testing] **Functional:** Coupon codes, discounts, and loyalty programs work.
+- **Functional:** All user flows are tested: browse → search → filter → add to cart → checkout → account creation. ℹ️ctag Testing
+- **Functional:** Payment gateways are tested with real and test transactions. ℹ️ctag Testing
+- **Functional:** Order placement, confirmation emails, and order tracking are verified. ℹ️ctag Testing
+- **Functional:** Shipping options and tax calculations are accurate. ℹ️ctag Testing
+- **Functional:** Coupon codes, discounts, and loyalty programs work. ℹ️ctag Testing
 - **UAT:** User Acceptance Testing (UAT) is completed on staging and production.
-- [ctag] [Testing] **Performance:** Load and stress testing is completed; results are shared with Adobe CTA/CSE.
-- [ctag] [Testing] **Performance:** Page load speed is validated — under 3 seconds on desktop and mobile.
-- [ctag] [Testing] **Performance:** Images, scripts, and assets are optimized for performance.
-- [ctag] [Testing] **Compatibility:** Cross-browser testing is completed (Chrome, Firefox, Safari, Edge).
-- [ctag] [Testing] **Compatibility:** Responsive design is verified on all device sizes (mobile, tablet, desktop).
-- [ctag] [Testing] **Compatibility:** Performance is tested under different network conditions (3G, 4G, Wi-Fi).
+- **Performance:** Load and stress testing is completed; results are shared with Adobe CTA/CSE. ℹ️ctag Testing
+- **Performance:** Page load speed is validated — under 3 seconds on desktop and mobile. ℹ️ctag Testing
+- **Performance:** Images, scripts, and assets are optimized for performance. ℹ️ctag Testing
+- **Compatibility:** Cross-browser testing is completed (Chrome, Firefox, Safari, Edge). ℹ️ctag Testing
+- **Compatibility:** Responsive design is verified on all device sizes (mobile, tablet, desktop). ℹ️ctag Testing
+- **Compatibility:** Performance is tested under different network conditions (3G, 4G, Wi-Fi). ℹ️ctag Testing
 - **Accessibility:** An accessibility audit is completed (WCAG compliance, screen reader, keyboard navigation).
 - **Functional:** A 404 error monitoring plan is in place for post-launch.
 - **UAT:** A rollback plan is documented and tested in case of launch issues.
@@ -258,9 +266,9 @@ B2C, leverage the Optimizer and EDS capabilities for the existing Adobe Commerce
 
 ## Launch day and post-launch support
 
-- ~~The Edge Delivery Services~~ CTAG team is notified — email ~~[aemgolives@adobe.com](mailto:aemgolives@adobe.com)~~ Contact point is required here with URLs, domain, date, contact, and Slack or Teams channel.
-- [ctag] [Launch Support] **Support:** P1 hotline number is recorded: US (+1) 800 497 0335 — press 6 for Commerce.
-- [ctag] [Launch Support] **Support:** Support ticket process is understood — file a ticket **first**, then call the P1 hotline.
+- ~~The Edge Delivery Services~~ CTAG team is notified — email ~~[aemgolives@adobe.com](mailto:aemgolives@adobe.com)~~ 🟦 TODO: Contact point is required here with URLs, domain, date, contact, and Slack or Teams channel.
+- **Support:** P1 hotline number is recorded: US (+1) 800 497 0335 — press 6 for Commerce. ℹ️ctag Launch Support
+- **Support:** Support ticket process is understood — file a ticket **first**, then call the P1 hotline. ℹ️ctag Launch Support
 - Post-launch: verify Lighthouse score on the production domain.
 - Post-launch: monitor Google Search Console for indexing and crawl errors.
 - Post-launch: monitor the 404 report and add redirects for high-traffic legacy URLs.
