@@ -2,8 +2,71 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Mar 27 15:39:51 2026
+updated: Fri Apr 3 16:52:44 2026
 entries:
+- description: Updated [Recommendation filters](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters)
+    with Price and Product filter procedures, price-book–based final price behavior
+    for filtering and displayed prices, and new screenshots for the Filter products
+    UI.
+  versions: ''
+  type: major-update
+  date: April 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/501
+  merge_commit: 6d67df3c05f1202e361d0c8972d6f1bf7a5b8854
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+- description: Updated [Payment Services Home](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home),
+    [Reporting](https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting),
+    and [Onboarding overview](https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard)
+    with SaaS/ACCS screenshots and UI guidance (onboarding banner, Transactions-focused
+    Home, Transactions grid).
+  versions: ''
+  type: major-update
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/487
+  merge_commit: 79c71b55e463d7e9570fe67b664b4e77a0d741f7
+  contributor: del
+  membership:
+  labels:
+  - major-update
+- description: Added April Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/499
+  merge_commit: a28d4b467dc51f70509ab19dbdbaf2cd3f59a208
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updates the Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with the latest sandbox deployment.
+  versions: ''
+  type: major-update
+  date: March 31, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/495
+  merge_commit: 4a60783dbed189475bcd0090c949cd76b0566f54
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with the latest Sandbox release information.
+  versions: ''
+  type: major-update
+  date: March 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/489
+  merge_commit: ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: Updated [Install and access App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/install)
     with a Commerce webhooks section and a screenshot for webhook validation errors
     in the App Management dashboard.
