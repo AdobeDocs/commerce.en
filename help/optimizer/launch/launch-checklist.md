@@ -15,13 +15,14 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 Use this checklist to verify that your production [!DNL Adobe Commerce Optimizer] project is configured, tested, and ready for launch. Work through each section with your team and track completion in your own project plan or tracker. For product capabilities and UI areas referenced below, see the [[!DNL Adobe Commerce Optimizer] documentation](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview){target="_blank"}.
 
-### Usecase
+## Usecase
 
 B2C, 
-leverage the Optimizer and EDS capabilities for the existing Adobe Commerce on Cloud instance. 
+leverage the Commerce Optimizer and EDS capabilities for the existing Adobe Commerce on Cloud instance. 
 Assets are in Commerce 
 
 ### Components
+
 - **Cloud** - Adobe Commerce on Cloud, to manage the Catalog data, Customers, and serve purchase experiences (checkout, order management, shipping, etc )
 - **Optimizer** - Adobe Commerce Optimizer, to serve merchandising experiences
 - **Storefront** - Adobe Commerce Storefront on Edge Delivery Services, to build UI
@@ -29,44 +30,40 @@ Assets are in Commerce
 - **App Builder** 🟦 TODO: add reasoning for the component
 - **API Mesh** 🟦 TODO: add reasoning for the component
 
----
+## Cloud instance is created
 
-## Cloud instance is created 
 - It is created 🟦 TODO: reference to the way to obtain a Cloud instance
 - All testing and dummy data are removed. 
 - Production data is loaded to the instance.
 - GraphQL endpoint is known 🟦 TODO: reference to the way to obtain the URL 
 - 🟦 TODO: reference to Cloud instance checklist if it exists
 
----
+## Commerce Optimizer instance is created
 
-## Optimizer instance is created
 - It is [created](../get-started.md).
 - Instance is located in the correct region
 - Instance type is Production
-- Organization ID, Client ID, Ingestion URL, Optimizer studio URL are [known](../get-started.md).
+- Organization ID, Client ID, Ingestion URL, Commerce Optimizer URL are [known](../get-started.md).
 - Limits and boundaries adjusted accordingly 🟦 TODO: reference to the way to change and double-check limits
 - All testing and dummy data are removed. 🟦 TODO: reference to the way to 
 
----
-
-
 ## Storefront instance is created
+
 - A dedicated production instance is [created](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/)
 - The name of the production instance is known
 - Just authorized personnel have [permissions](https://docs.da.live/administrators/guides/permissions) to publish
 
----
-
-## Cloud is integrated with Optimizer
+## Cloud is integrated with Commerce Optimizer
 
 ### on Cloud
+
 - ACO connector is installed and configured following [Get started with the Adobe Commerce Optimizer Connector](../../aco-connector/get-started.md) for details.
-- CLI command aco:conf:show confirms connection with the production Optimizer instance. Organization ID, Client ID, Ingestion URL, Optimizer studio URL match the production instance. 
+- CLI command aco:conf:show confirms connection with the production Commerce Optimizer instance. Organization ID, Client ID, Ingestion URL, Commerce Optimizer URL match the production instance. 
 - Scopes for synchronization are picked. 🟦 TODO: add reference to do the configuration
 - Data is synced 🟦 TODO: add reference to data sync board introduced in MDEE  
 
-### on Optimizer
+### on Commerce Optimizer
+
 - Data sync is verified on the [Data sync](../setup/data-sync.md) page — expected products, prices, and attributes appear for Catalog Service, Product Discovery, and Recommendations.
 - [Price books](../setup/pricebooks.md) are auto-created from customer groups on Cloud. 
 - [Catalog views](../setup/catalog-view.md) are created by Admin. Their IDs are known.
@@ -79,34 +76,32 @@ Assets are in Commerce
 - [Search data](../manage-results/search-performance.md) is visible in Admin
 - [Recommendations data](../manage-results/recommendation-performance.md) is visible in Admin
 
----
-
 ## Storefront is integrated with Cloud
 
 ### on Cloud
+
 - Storefront compatibility packages are [installed](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/) 🟦 TODO: should be reviewed and updated by a storefront expert
 
 ### on Storefront
+
 - ensure Config.json public/default/commerce-core-endpoint mentions the GraphQL endpoint of the production Cloud instance  
 -- 🟦 TODO: should be reviewed and updated by a storefront expert
 -- 🟦 TODO: Steven review all config lines to ensure we have the required configuration in place
 -- 🟦 TODO: if APi Mesh is used, shouldn't we create the API mesh endpoint and mention its endpoint instead?
 
----
-
-## Storefront is integrated with Optimizer
+## Storefront is integrated with Commerce Optimizer
 
 ### on Storefront  🟦 TODO: should be reviewed and updated by a storefront expert
+
 - Ensure Config.json public/default/adobe-commerce-optimizer set to "true"
-- Ensure Config.json public/default/commerce-endpoint mentions the GraphQL endpoint of the production Optimizer instance
-- Ensure Config.json public/default/cs/AC-view-ID mentions the correct Catalog View Id created in the production Optimizer instance
+- Ensure Config.json public/default/commerce-endpoint mentions the GraphQL endpoint of the production Commerce Optimizer instance
+- Ensure Config.json public/default/cs/AC-view-ID mentions the correct Catalog View Id created in the production Commerce Optimizer instance
 - Category IDs and all category pages reference the correct category.  🟦 TODO: refer to steps to check, should we configure   Config.json plugins/picker/rootCategory": "2"
   for categories?
 
-### on Optimizer
-- no actions required
+### on Commerce Optimizer
 
----
+- no actions required
 
 ## Cloud is integrated with Third-Party services
 
@@ -121,8 +116,6 @@ Assets are in Commerce
 - **Email:** Transactional email delivery is tested (order confirmation, shipping, and so on).
 - **Email:** Email templates are updated to reflect brand and correct links.
 
----
-
 ## Cloud is integrated with App Builder and API Mesh
 
 - **App Builder:** All configurations and services are applied to the production workspace. ℹ️ctag Integrations – App Builder
@@ -132,8 +125,6 @@ Assets are in Commerce
 - **App Builder:** The production application is configured with App Builder production endpoints. ℹ️ctag Integrations – App Builder
 - **Events:** Adobe I/O Events are configured and event subscriptions are verified.
 - **App Builder:** Custom admin panel extensions are deployed to the production workspace.
-
----
 
 ## Storefront is finetuned
 
@@ -178,8 +169,7 @@ Assets are in Commerce
 
 - Ensure you have followed all [Performance best practices](/get-started/performance/).
 - (Optional) Configure Google Analytics and Google Tag Manager.
-- Validate your [storefront
-  events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)
+- Validate your [storefront events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)
   implementation and ensure that data is displayed in your Live Search and Product
   Recommendation dashboards in the Adobe Commerce Admin.
 - Ensure that the `environment` analytics config parameter is set appropriately in your [Commerce configuration](/setup/configuration/commerce-configuration). It should be set to `"Testing"` when you are developing your storefront, and `"Production"` when you are ready to deploy your storefront. See the [Instrumentation](/setup/analytics/instrumentation/) documentation for more information.
@@ -207,8 +197,6 @@ Assets are in Commerce
 - SSL/TLS certificate is provisioned and verified for the production domain. ℹ️ new
 - `www` ↔ apex redirects work correctly. ℹ️ new
 
----
-
 ## Security and compliance
 
 - **SSL:** SSL/TLS security certificate is installed (100% signed and trusted).
@@ -224,8 +212,6 @@ Assets are in Commerce
 - **Compliance:** The [shared responsibility model](../shared-responsibility.md) for [!DNL Adobe Commerce Optimizer] is reviewed (Adobe vs. customer responsibilities).
 - **Compliance:** Privacy policy, cookie consent, and GDPR/CCPA compliance are verified.
 
----
-
 ## Analytics and monitoring
 
 - **RUM:** Real Use Monitoring (RUM) is instrumented for before/after launch comparison.
@@ -233,8 +219,6 @@ Assets are in Commerce
 - **Analytics:** Martech stack tags fire correctly on the production hostname.
 - **Analytics:** Analytics baselines are documented — expect metric shifts post-launch (pageviews, bounce rate, and so on).
 - **Events:** Conversion tracking is verified end-to-end (add-to-cart → checkout → confirmation).
-
----
 
 ## Testing
 
@@ -253,8 +237,6 @@ Assets are in Commerce
 - **Accessibility:** An accessibility audit is completed (WCAG compliance, screen reader, keyboard navigation).
 - **Functional:** A 404 error monitoring plan is in place for post-launch.
 - **UAT:** A rollback plan is documented and tested in case of launch issues.
-
----
 
 ## Launch day and post-launch support
 
