@@ -141,8 +141,8 @@ Assets are in Commerce
 
 ### SEO and indexing
 
-- Add document title metadata for key pages (especially PDPs and PLPs). See the [SEO metadata](/setup/seo/metadata/) documentation for details.
-- Ensure that your PDPs have [metadata and structured data](/setup/seo/metadata/) (for example, JSON-LD is configured).
+- Add document title metadata for key pages (especially PDPs and PLPs). See [SEO metadata](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
+- Ensure that your PDPs have [metadata and structured data](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} (for example, JSON-LD is configured).
 - Standardize URL formats for products (example: `domain/product-name`).
 - Redirect all vanity URLs to canonical URLs.
 - Add a `robots.txt` file to your project, which allows your site to be indexed by search
@@ -159,20 +159,20 @@ Assets are in Commerce
 
 ### Enable pre-rendering
 
-- Add pre-rendering for key pages. See the [pre-rendering documentation](/setup/configuration/aem-prerender/) for details.
+- Add pre-rendering for key pages. See [Pre-rendering for AEM](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
 - Verify that all URLs are lowercase to support pre-rendering without breaking any links.
 - Validate HTML source for metadata and enriched body content (to ensure pre-rendering is working).
 - Check the availability of page translations for locales with different languages.
-- Additional HTML markup is configured [configured](https://www.aem.live/docs/redirects)  
+- Additional HTML markup is [configured](https://www.aem.live/docs/redirects) as needed.
 
 ### Performance and monitoring
 
-- Ensure you have followed all [Performance best practices](/get-started/performance/).
+- Ensure you have followed all [Performance best practices](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
 - (Optional) Configure Google Analytics and Google Tag Manager.
 - Validate your [storefront events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)
   implementation and ensure that data is displayed in your Live Search and Product
   Recommendation dashboards in the Adobe Commerce Admin.
-- Ensure that the `environment` analytics config parameter is set appropriately in your [Commerce configuration](/setup/configuration/commerce-configuration). It should be set to `"Testing"` when you are developing your storefront, and `"Production"` when you are ready to deploy your storefront. See the [Instrumentation](/setup/analytics/instrumentation/) documentation for more information.
+- Ensure that the `environment` analytics config parameter is set appropriately in your [Commerce configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. It should be set to `"Testing"` when you are developing your storefront, and `"Production"` when you are ready to deploy your storefront. See [Analytics instrumentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"} for more information.
 - Ensure that the site's Lighthouse score is green; targeting `100` on every page (taking into
   account previous considerations mentioned in this document).
 
@@ -180,7 +180,7 @@ Assets are in Commerce
 
 - Verify that you have configured permissions for DA content and EDS sites. See [DA.live permissions](https://da.live/docs/administration/permissions) and [authentication setup for authoring](https://www.aem.live/docs/authentication-setup-authoring).
 - Ensure that the product visuals integration has been provisioned. See [AEM Cloud Service access overview](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
-- Verify/update password reset links. Match the Edge Delivery Services implementation in the Adobe Commerce Admin. See the [FAQ](/troubleshooting/faq#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix) for details.
+- Verify/update password reset links. Match the Edge Delivery Services implementation in the Adobe Commerce Admin. See [What should I do if my email template links are broken after migrating to Edge Delivery Services or Helix?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"} in the storefront FAQ.
 - Provide and configure production keys for integrations and payment providers.
 - Verify that the new domains/subdomains are `allowlisted` and potential backend webhooks are working.
 
@@ -188,9 +188,9 @@ Assets are in Commerce
 
 - Update your CDN configuration with your production GraphQL endpoint (`yourproject.com/graphql`). Use that endpoint for all Sidekick extensions and scripts (for example, sitemap generation and the image importer).
 - Request a new CDN purge token for the Adobe Commerce production environment when you use Adobe Commerce Fastly. Update the `.helix/config.xlsx` file in SharePoint with the `authToken` and `serviceId` values.
-- Validate your [CDN configuration](/setup/configuration/content-delivery-network/) and ensure that caching
+- Validate your [CDN configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"} and ensure that caching
   and cache invalidation work as expected.
-- Add a store-specific cache buster to the Catalog Service and Live Search requests for [multi-store setups](/setup/seo/indexing/#multi-store-setups) (for example, a query parameter or proxy through your CDN configuration).
+- Add a store-specific cache buster to the Catalog Service and Live Search requests for [multi-store setups](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"} (for example, a query parameter or proxy through your CDN configuration).
 - Push invalidation is set up and tested (publish a change, then verify on the production domain). ℹ️ new
 - DNS TTL is reduced to the minimum before cutover. ℹ️ new
 - DNS A/CNAME records are updated for all domains and hostnames. ℹ️ new
