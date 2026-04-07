@@ -15,7 +15,7 @@ To build a rule, open the rule editor, choose a **rule type** (search conditions
 
    >[!IMPORTANT]
    >
-   >This feature is currently in beta.
+   >This feature is currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta participants will need to recreate any existing merchandising rules to take advantage of the new catalog view scope.
 
 1. Click **[!UICONTROL Create rule]** to launch the rule editor.
 
