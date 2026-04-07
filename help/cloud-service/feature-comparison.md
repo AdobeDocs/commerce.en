@@ -206,4 +206,4 @@ The following table compares platform capabilities and extensibility features to
 >- Consider [!DNL API Mesh] for extending API functionality.
 >- Monitor Adobe's ongoing platform evolution and new capability releases.
 >- Evaluate industry-specific data model requirements against available extensibility options.
->- Consider adopting [Merchandising Services powered by Catalog Views and Policies](../optimizer/setup/catalog-view.md).
+
