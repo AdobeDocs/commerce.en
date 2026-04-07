@@ -1,6 +1,6 @@
 ---
 title: Integration Limits and Boundaries
-description: Learn scope limits for third-party catalogs, auto-fix coverage, crawling prerequisites, enterprise scale considerations, and beta or early-access constraints for LLMO with Commerce.
+description: Learn scope limits for third-party catalogs, auto-fix coverage, crawling prerequisites, enterprise scale considerations, and beta or early-access constraints for LLM Optimizer with Commerce.
 role: Admin, User, Leader
 recommendations: noCatalog
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -13,16 +13,16 @@ Use this topic to set expectations for what the [!DNL Adobe Commerce] and [!DNL 
 
 When the catalog **does not** live in [!DNL Adobe Commerce]:
 
-- LLMO can still **identify** issues and **suggest** improvements using mirrored or imported catalog data, depending on your setup.
+- LLM Optimizer can still **identify** issues and **suggest** improvements using mirrored or imported catalog data, depending on your setup.
 - **Direct auto-fix** into the merchant's commerce platform is not the same as writing into Commerce core tables; you may need a **mirror catalog**, export/import, or partner automation to apply changes.
 
 For Commerce-hosted catalogs, deploy of approved **name** and **description** updates targets the Commerce system of record. See [Use LLM Optimizer with Adobe Commerce](get-started/use-llmo-with-commerce.md).
 
 ## Auto-fix scope and exclusions
 
-- **Product Catalog Enrichment** focuses on shopper-visible fields such as **product name** and **product description** (exact field mapping follows your LLMO release).
-- Recommendations for **additional structured or agent-oriented metadata** (hidden attributes, semantic tags, relationships) may be proposed separately and can depend on attribute and agent capabilities described in LLMO product documentation.
-- Not every LLMO opportunity type results in a **one-click deploy** into Commerce; some improvements are guidance-only or require implementation in the storefront or CMS.
+- **Product Catalog Enrichment** focuses on shopper-visible fields such as **product name** and **product description** (exact field mapping follows your LLM Optimizer release).
+- Recommendations for **additional structured or agent-oriented metadata** (hidden attributes, semantic tags, relationships) may be proposed separately and can depend on attribute and agent capabilities described in LLM Optimizer product documentation.
+- Not every LLM Optimizer opportunity type results in a **one-click deploy** into Commerce; some improvements are guidance-only or require implementation in the storefront or CMS.
 
 ## Scale and technical limits
 
