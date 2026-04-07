@@ -208,7 +208,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 ### App Builder AI coding tools and tutorials
 
-You can now use the [AI coding developer tooling](./migration/coding-tools.md) to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
+You can now use the [AI coding developer tooling](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
 
 * [Tutorial prerequisites](./tutorials/tutorial-prerequisites.md)
 * [Ratings extension tutorial](./tutorials/ratings-extension.md)
