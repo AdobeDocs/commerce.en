@@ -18,7 +18,7 @@ This article is intended for the developer or systems integrator on your team wh
 ## Requirements
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1, 8.2, or 8.3
+- PHP 8.1, 8.2, 8.3, or 8.4
 - [!DNL Composer]
 - Running cron jobs and indexers
 
@@ -34,6 +34,14 @@ This article is intended for the developer or systems integrator on your team wh
 
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
 - Adobe Commerce on-prem (EE) : 2.4.4+
+
+>[!IMPORTANT]
+>
+> **HIPAA readiness**
+>
+> Live Search is not a HIPAA-ready service. If you are using Adobe Commerce with the HIPAA-Ready extension and Healthcare add-on, do not enable Live Search in any environment that may process protected health information (PHI).
+>
+> For details, see [HIPAA readiness on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) and the [Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations) guidance, which lists Live Search among the non-HIPAA ready Commerce services.
 
 ## Workflow overview
 
