@@ -31,7 +31,6 @@ recommendations: noDisplay
       - [Workspace](./merchandising/rules/workspace.md)
       - [Create and manage](./merchandising/rules/add.md)
       - [Best practices](./merchandising/rules/best-practice.md)
-      - [Category merchandising](./merchandising/rules/category-merch.md)
    - Facets {#facets}
       - [Overview](./merchandising/facets/overview.md)
       - [Workspace](./merchandising/facets/workspace.md)
