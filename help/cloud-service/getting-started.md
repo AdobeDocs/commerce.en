@@ -166,6 +166,10 @@ The following sections describe the basic processes you need to complete to get 
 
 1. Click [!UICONTROL **Add Instance**].
 
+>[!NOTE]
+>
+>You cannot copy or delete an existing instance.
+
 {{aem-assets-instance-mapping}}
 
 ### Access an instance
