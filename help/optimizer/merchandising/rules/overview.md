@@ -1,28 +1,39 @@
 ---
 title: Merchandising Rules
-description: '[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape the shopping experience.'
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+description: '[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape search results, default product listings, and category pages.'
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 ---
 # Merchandising Rules
 
-Merchandising rules refers to a set of rules that combine logic with actions to shape a shopper's search experience in your store. You can use merchandising rules to boost, bury, pin, or hide products to calibrate search results in real time to support your business goals.
+Merchandising rules combine logic with actions to shape how products appear in **search results**, on **default product listings** (**All product listings**), and on **category pages** ([category rules](#category-rules) are in beta). You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
 
-Each rule has three main components:
+Each **search rule** has three main components:
 
-- Conditions – The conditions that trigger an action.
-- Events – The actions that take place when the conditions are met.
-- Details – The name of the rule, and optional time frame and description.
+- **Conditions** – Query-based requirements that trigger an action when the shopper's search matches.
+- **Events** – The actions that take place when the conditions are met (manual ranking and related events).
+- **Details** – The name of the rule, and optional time frame and description.
 
-You can combine multiple conditions and actions, and schedule a rule to be active for a period. You can also set a default rule that is applied even when no search term is set.
+**Category rules** use **category selection** instead of search query conditions; intelligent ranking and manual ranking work the same way as for search, with differences called out in [Create and Manage Rules](add.md).
+
+You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default rule** (**All product listings**) that applies when no more specific search or category rule applies.
+
+## Category rules {#category-rules}
+
+>[!IMPORTANT]
+>
+>Category rules are in beta.
+
+**Category rules** control product order on **category pages**. You select one or more categories, then apply intelligent ranking (for example, most viewed, trending) and manual actions such as pin, boost, and bury. They do not use search query conditions. For setup steps, rule types, and how ranking applies on category versus search, see [Create and Manage Rules](add.md).
 
 ## Requirements
 
-A simple search rule can have a single condition and a single event, while a complex rule can have up to ten conditions that trigger up to 25 events.
+A simple **search rule** can have a single condition and a single event, while a complex rule can have up to ten conditions that trigger up to 25 events. **Category rules** follow the same event limits for manual ranking; they do not use query conditions.
+
 Rules can have:
 
-- Up to ten conditions
-- Up to 25 events
+- Up to ten **conditions** (search rules only)
+- Up to 25 **events**
 
 Query text can contain:
 
@@ -44,9 +55,11 @@ When composing a complex rule, it can help to write it out with indentation to d
 
 ## Default rule
 
-You can set a default rule that is applied when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then all queries will default to that ranking type, unless super-ceded by a more specific search term. No search term can be set for the default rule.
+You can set a default rule (**All product listings**) that applies when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then queries default to that ranking type unless superseded by a more specific search term. No search term can be set for the default rule. **Category rules** are separate: they apply only to the categories you select and do not replace the default listing rule.
 
 ## Order of precedence with multiple rules
+
+The following applies to **search rules** and how they interact for a given search. **Category rules** apply per category; see [Create and Manage Rules](add.md#category-rules) for how they fit alongside search and default rules.
 
 Only one search rule is applied to a search term at any one time.
 If multiple rules are found to be applicable to a search phrase, then all these rules are applied. If there is a collision between two rules---`rule 1` that boosts sku1 but `rule 2` hides the same SKU---then the most recently applied rule (`rule 2`) takes precedence.

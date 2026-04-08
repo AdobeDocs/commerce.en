@@ -12,8 +12,8 @@ There are several key factors that determine the relevance and effectiveness of 
 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. To directly impact the success of your merchandising strategy:
     - Set up the correct attributes as searchable with their corresponding weight.
-    - Make sure that data within those attributes is relevant.
-- A well-designed search experience builds trust with customers and instills confidence that they will find what they need.
+    - Make sure that the data within those attributes is relevant.
+- A well-designed search experience builds trust with customers and instills confidence that they can find what they need.
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
 - Faceted navigation allows shoppers to refine their search and get relevant results quickly.
 
@@ -118,16 +118,87 @@ Learn more about search rules:
     - [Edit, view, delete](rules-manage.md)
 - Data collection
     - [[!DNL Live Search] events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-    - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
+    - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
     - [GitHub Commerce events](https://github.com/adobe/commerce-events/tree/main/examples) 
 
-### Leverage Product Metadata
+### Leverage product metadata
 
-Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
+Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
+
+Choosing which attributes to make searchable has a big impact on search quality. Making too many attributes searchable can reduce relevance and cause unexpected matches, even if it increases the number of results returned. This section explains how to select searchable attributes deliberately to balance coverage and relevance.
+
+**Recommended searchable attributes:**
+
+- **Product name** - High intent, directly describes the product.
+- **Primary description** - Concise product details shoppers expect to match.
+- **Brand** - Shoppers frequently search by brand.
+- **Model number/style** - Specific identifiers with clear intent.
+- **Key features** - Important distinguishing characteristics (for example, "waterproof," "wireless").
+- **Material/Fabric** - For fashion and furniture categories.
+
+**Avoid making these attributes searchable:**
+
+- **Long descriptions or specifications** - Too much text creates noise and unexpected matches.
+- **Category paths** - Can cause irrelevant results due to broad taxonomy terms.
+- **Internal SKU codes with mixed characters** - Creates false positives on partial matches.
+- **Administrative fields** - Internal notes or warehouse codes not relevant to shoppers.
+- **HTML content or formatting tags** - Technical content does not improve relevance.
+
+#### Common issues caused by incorrect searchable attributes
+
+Making the wrong attributes searchable can frustrate shoppers and create support escalations.
+
+| Example | Scenario | Recommendation |
+|---------|----------|----------------|
+| **Stemming and autocomplete side effects** | A merchant makes long product descriptions searchable. A shopper searches for "can" (looking for containers). Due to stemming and partial matching, products with "can" as part of larger words in their descriptions appear, such as "American," "canopy," or "canvas." Products unrelated to the shopper's intent surface, and they lose confidence in the search. | Reduce searchable fields to high-intent attributes like product name and primary description. Validate your top search terms to identify problematic matches. Use search merchandising rules or redirects to handle specific known edge cases. |
+| **Ranking by popularity amplifies noisy matching** | A merchant sets the ranking to "Most Purchased" and includes category paths and long descriptions as searchable attributes. A shopper searches for "laptop bag." The broad matching returns laptop bags, laptop accessories, bags for other purposes, and laptops themselves. Because laptops are more frequently purchased than laptop bags, they rank at the top. The shopper perceives the ranking as incorrect, even though the system is working as configured. | Remove noisy searchable attributes like category paths. Once the match set is more precise, apply popularity-based ranking strategies. Monitor search analytics to identify queries where this pattern occurs. |
+| **Category path creates false positives** | A merchant makes the full category path searchable (for example, "Home > Kitchen > Appliances > Small Appliances"). A shopper searches for "home office desk." Products from the "Home" category match even if they are kitchen items, because "home" exists in their category path. Kitchen appliances, home decor, and other unrelated products appear in results, diluting relevance. | Do not make category paths searchable; use facets instead to allow shoppers to filter by category. If category filtering is critical to your search strategy, implement it through merchandising rules rather than searchable attributes. |
+
+#### Weight searchable attributes appropriately
 
 To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
 
+**Weight priorities:**
+
+- **Highest weight (9-10):** Product name, brand
+- **Medium weight (6-8):** Model number, primary description, key features
+- **Lower weight (3-5):** Secondary descriptions, materials, specifications
+
 Ensure that each product has relevant content within each searchable attribute. It is not recommended to set an attribute as searchable if it has large amounts of content as that can reduce search result relevance.
+
+#### Troubleshooting
+
+If search results feel random or irrelevant, use this checklist before escalating as a product defect:
+
+1. **Review searchable attribute configuration:**
+
+   - List all attributes currently set as searchable.
+   - Identify any broad or noisy attributes (long descriptions, category paths, administrative fields).
+   - Remove searchable status from attributes that do not represent shopper intent.
+
+1. **Validate query matches against core attributes:**
+
+   - Test your most common search queries.
+   - Verify that results primarily match on product name and brand rather than tangential text.
+   - Check if unexpected results share only weak matches in long-form content.
+
+1. **Test with and without noisy fields:**
+
+   - Temporarily remove searchable status from category path and long description fields.
+   - Re-run problematic queries to see if relevance improves.
+   - If results improve, permanently adjust your configuration.
+
+1. **Use merchandising rules for exceptions:**
+
+   - For specific known queries that need special handling, create targeted search rules.
+   - Do not try to solve edge cases by making more attributes searchable.
+   - Use redirects for brand-name searches or common misspellings.
+
+1. **Monitor and iterate:**
+
+   - Use the [Performance workspace](performance.md) to track zero results rate and click-through rates.
+   - Review top search queries weekly to identify new patterns.
+   - Adjust searchable attributes and weights based on data, not assumptions.
 
 Learn more about product attributes for search:
 

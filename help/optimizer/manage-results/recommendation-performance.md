@@ -1,7 +1,7 @@
 ---
 title: Recommendations Performance
 description: The Recommendations performance page provides insight into how well your product recommendations are performing.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 ---
 # Recommendations Performance
@@ -16,13 +16,15 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ## View a report
 
-1. Choose the **Catalog source**, such as `en-US` where your recommendations apply.
+1. Choose the **Catalog view**, such as *All views* where your recommendations apply.
+
+   Learn more about [catalog views](#select-catalog-view) in recommendations.
 
 1. Click the **[!UICONTROL Date Range]** and select one of the following ranges:
 
    ![Recommendations Date Range](../assets/rec-perf-date-range.png)
 
-   The recommendation table updates to display metrics for that date range.
+   The recommendation table updates to display metrics for that date range and catalog view.
 
 ## Customize table
 
@@ -54,6 +56,7 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 |![Date Range](../assets/rec-perf-date-range.png)|Determines the range of time that is used for metrics calculations.|
 |![Column selector](../assets/icon-show-hide-columns.png)|Determines the columns that appear in the Recommendations table.|
 |Create recommendation|Opens the [Create New Recommendation](../merchandising/recommendations/create.md) page.|
+|[Catalog view](#select-catalog-view)|Select the catalog view to filter the table to show only those recommendations that apply to the selected catalog view. This selection is also used as the catalog view when you [create](../merchandising/recommendations/create.md) a new recommendation. Options are *All views* or a specific [catalog view](../setup/catalog-view.md).|
 
 ## Column descriptions
 
@@ -74,3 +77,34 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 |Viewability|The percentage of recommendation units that register for the view.|
 |CTR|(Click-Through Rate) The percentage of unit impressions for the recommendation that register a click. CTR counts all impressions even if the unit does not enter the shopper's view. If the recommendation unit is not viewed, it is unlikely to get clicked. However, those unseen impressions count toward the CTR score and reduce the overall CTR percentage.|
 |vCTR|(Viewable Click-Through Rate) measures clicks based only on viewable impressions (recommendations that actually appeared in the visible part of the shopper's screen), providing a more accurate gauge of shopper engagement.|
+
+## Select catalog view
+
+>[!IMPORTANT]
+>
+>This feature is currently in beta.
+
+The **[!UICONTROL Catalog view]** selector on the **Recommendations** page does two things:
+
+1. **Filters the table** – Shows only recommendations (and their metrics) that apply to the selected catalog view.
+1. **Sets the scope for new recommendations** – When you [create](../merchandising/recommendations/create.md) a recommendation, the selected catalog view is used as the unit's scope. Options are *All views* or a specific [catalog view](../setup/catalog-view.md). 
+
+   - **All views** – The recommendation applies to all catalog views (product availability is still filtered per view).
+   - **Catalog view** – The recommendation applies only to the selected catalog view (for example, one storefront, language, or brand).
+
+By specifying a catalog view for each recommendation, you can:
+
+- Configure recommendations for all catalog views (global) or for one catalog view.
+- Preview and filter products by catalog view on the [create](../merchandising/recommendations/create.md) recommendation page.
+- Show only products that are available to each storefront.
+- View metrics and storefront behavior per catalog view.
+
+### How the catalog view filters products
+
+Product availability is enforced per catalog view even for recommendation units under the **All views** selection. This works in addition to any [inclusion or exclusion filters](../merchandising/recommendations/filters.md) you set on the recommendation unit.
+
+**Example: Recommendation with inclusion filters under the All views selection**
+
+- **All views** recommendation includes SKUs: SKU_ABC, SKU_CDE, SKU_XYZ.
+- **Catalog view: Kingsbluff** cannot sell SKU_ABC or SKU_CDE. **Shown:** SKU_XYZ plus any other SKUs valid for Kingsbluff.
+- **Catalog view: Arkbridge** cannot sell any of the included SKUs. **Shown:** Only SKUs permitted by Arkbridge. If none are available, the recommendation unit does not appear on that storefront.

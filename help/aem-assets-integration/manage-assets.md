@@ -15,6 +15,13 @@ You can manage the following media types after the AEM Assets integration for Co
 * Product videos
 * Category images
 
+**Updating product images?**
+
+Product images are linked via matching rules:
+
+* To learn how to add or update product assets in AEM Assets (metadata, SKU linking, approval), see [Default automatic matching](synchronize/default-match.md).
+* For category images or Page Builder content, see [Manual asset selection](synchronize/asset-selector-integration.md).
+
 ## Product images
 
 When the integration is enabled, image management is centralized within the Digital Asset Management system (DAM). Adobe Commerce then functions as a key engagement channel, ensuring that only approved, high-quality images are used across storefronts. This setup enhances brand consistency, minimizes manual effort, and streamlines content updates—eliminating the need for merchants to manually upload or manage images within Adobe Commerce.
@@ -34,14 +41,21 @@ Product images are automatically pulled from AEM Assets based on pre-configured 
    >[!NOTE]
    >
    > A message indicates that the integration is enabled, making this a **read-only** section as image management is centralized in the DAM.
+   
+   To configure product assets (link images to SKUs), open your AEM Assets author instance and click **Assets** from the main view. See [Default automatic matching](synchronize/default-match.md) for the metadata configuration steps.
 
 ### Manage product images in AEM Assets
 
 To manage product-related images, all changes must be made directly in **AEM Assets**. This process is fully automated, ensuring that any changes are synchronized to Adobe Commerce without requiring manual intervention.
 
+To learn how to link assets to products in AEM Assets (including metadata configuration and approval), see the following topics:
+
+* [Default automatic matching](synchronize/default-match.md)
+* [Custom automatic matching](synchronize/custom-match.md).
+
 ### Synchronization SLAs
 
-Check [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
+For information about synchronization timing, see the [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla) topic.
 
 ## Content images
 
@@ -49,7 +63,7 @@ Adobe Commerce provides Page Builder as a **content management system (CMS)** fo
 
 ### Using AEM Asset Selector in Page Builder
 
-[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} To use the **AEM Asset Selector** for embedding images:
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} To use the **AEM Asset Selector** for embedding images, ensure users have the required [permissions and IMS authentication](get-started/permissions.md).
 
 1. Navigate to any section in the **Adobe Commerce Admin** that supports `content enrichment` using **Page Builder**.
 
@@ -113,7 +127,7 @@ This integration ensures that merchants can effortlessly manage product videos i
 
 ### Synchronization SLAs
 
-Check [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla)for more information on this topic. 
+For information about synchronization timing, see the [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla) topic.
 
 ## Category images
 
@@ -121,7 +135,7 @@ Adobe Commerce enables merchants to associate images with product categories, he
 
 ### Use AEM Asset Selector for category images
 
-After you configure the [AEM Asset Selector](synchronize/asset-selector-integration.md), you can use it to add assets into your catalog categories content.
+After you configure the [AEM Asset Selector](synchronize/asset-selector-integration.md) and ensure users have the required [permissions and IMS authentication](get-started/permissions.md), you can use it to add assets into your catalog categories content.
 
 1. On the _Admin_ sidebar, navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -149,7 +163,9 @@ After you configure the [AEM Asset Selector](synchronize/asset-selector-integrat
 
 After you update and approve an asset in AEM Assets, the updates are automatically sent to Adobe Commerce using the automated matching capability. This process is triggered upon asset approval. To ensure all final changes and metadata updates are included, make sure to reprocess the asset before approving it.
 
-For details, see the following AEM Assets documentation.
+For the Commerce-side workflow to link assets to products via metadata, see the [Default automatic matching](synchronize/default-match.md) topic.
+
+For AEM Assets procedures, see the following documentation:
 
 * [Reprocessing digital assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 

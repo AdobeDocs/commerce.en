@@ -3,7 +3,7 @@ title: Get started
 description: Learn how to get started with [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 ---
 # Get Started
@@ -60,7 +60,7 @@ For testing and learning, follow the [Load Sample Data](#add-sample-data) instru
 
 [!DNL Adobe Commerce Optimizer] setup and management rely on three key roles. Each role has specific tasks and responsibilities:
 
-![Role-based workflow for Adobe Commerce Optimizer setup showing administrator, developer, and user tasks](./assets/high-level-workflow.png){zoomable="yes"}
+![Role-based workflow for [!DNL Adobe Commerce Optimizer] setup showing administrator, developer, and user tasks](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Administrator tasks
 
@@ -99,7 +99,7 @@ Manage instances from the Commerce Cloud Manager.
 
 >[!NOTE]
 >
->Not all Adobe Commerce Optimizer users have access to Cloud Manager. Access depends on the role and permissions assigned to the user account.
+>Not all [!DNL Adobe Commerce Optimizer] users have access to Cloud Manager. Access depends on the role and permissions assigned to the user account.
 
 1. Log in to [Adobe Experience Cloud](https://experience.adobe.com/).
 
@@ -127,13 +127,13 @@ Once the app is open, easily switch between environments like sandbox and produc
 
    The instance drop-down lists all Optimizer instances available in the organization. Select the instance to view.
 
-   ![Instance switcher dropdown for selecting Adobe Commerce Optimizer environments](./assets/context-switcher.png){zoomable="yes"}
+   ![Instance switcher dropdown for selecting [!DNL Adobe Commerce Optimizer] environments](./assets/context-switcher.png){zoomable="yes"}
 
 ### Get instance details
 
 View the instance details by clicking the information icon next to your instance name.
 
-![Adobe Commerce Optimizer instance details panel showing endpoints and instance ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![[!DNL Adobe Commerce Optimizer] instance details panel showing endpoints and instance ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Note the following key information:
 

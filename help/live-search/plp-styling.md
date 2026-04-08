@@ -13,7 +13,14 @@ When the [!DNL Live Search] service is installed, the default search functionali
 
 The [!DNL Live Search] PLP widget is enabled by default for new installations. 
 
-If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so. To turn it on:
+If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so. 
+
+>[!NOTE]
+>
+>If you are migrating from the deprecated Search Adapter, see the [migration guide](migrate-to-plp.md) for detailed guidance on scenarios, prerequisites, and step-by-step instructions.
+
+To turn on the PLP widget:
+
 1. In your Adobe Commerce Admin, go to Stores → Settings → Configuration.
 1. In the left navigation, click **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
 1. Click on the [!UICONTROL Storefront Features] section.
