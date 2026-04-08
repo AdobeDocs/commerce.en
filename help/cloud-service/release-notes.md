@@ -26,6 +26,10 @@ The following items were released to Production environments on April 1, 2026.
 
 >[!BEGINSHADEBOX]
 
+### Add files to products
+
+[!DNL Adobe Commerce as a Cloud Service] now supports [adding files to products](./product-files.md) using file-type product attributes. You can upload files manually on the product edit page, programmatically through the REST API, or in bulk by providing external URLs in CSV. <!-- ACCS-535, ACCS-565 -->
+
 ### Check price and stock alert subscription status through GraphQL
 
 New GraphQL queries, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"} and [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
@@ -204,7 +208,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 ### App Builder AI coding tools and tutorials
 
-You can now use the [AI coding developer tooling](./migration/coding-tools.md) to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
+You can now use the [AI coding developer tooling](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
 
 * [Tutorial prerequisites](./tutorials/tutorial-prerequisites.md)
 * [Ratings extension tutorial](./tutorials/ratings-extension.md)

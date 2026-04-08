@@ -13,12 +13,13 @@ recommendations: noDisplay, noCatalog
 - [User and Identity Management](user-management.md)
 - [Storefront](storefront.md)
 - [Use Cases](use-cases.md)
+- [Add Files to Products](product-files.md)
 - [Shared Responsibility](shared-responsibility.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
     - [Bulk data migration tool](migration/bulk-data.md)
-    - [Coding tools](migration/coding-tools.md)
+    - [Coding tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
   - [Documentation RAG Service](migration/doc-rag.md)
 - [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
@@ -33,6 +34,7 @@ recommendations: noDisplay, noCatalog
 - Schemas {#schemas}
   - [GraphQL Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST API Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
 - [Video Tutorials](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Release Notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

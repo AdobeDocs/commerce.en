@@ -1,7 +1,9 @@
 .cursor/
 .cursor-agents
+.claude/
 .DS_Store
 .vscode
 _jekyll/Gemfile.lock
 _site/
 tmp/
+.claude/
