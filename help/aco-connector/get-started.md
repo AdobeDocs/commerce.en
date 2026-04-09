@@ -18,9 +18,9 @@ Install and configure the Commerce Optimizer Connector to sync your Adobe Commer
 
 * [!DNL Adobe Commerce Optimizer] license with a provisioned sandbox instance.
 
-* Access to [repo.magento.com](https://repo.magento.com) to download the Commerce Connector metapackage using Composer.
+* [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) to download the Commerce Connector metapackage using Composer.
 
-* Admin access to an [Adobe Commerce Optimizer sandbox instance](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
+* Admin access to an [Adobe Commerce Optimizer sandbox instance](../optimizer/get-started.md).
 
 The Adobe Commerce user configuring the integration must have:
 
