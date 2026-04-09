@@ -16,27 +16,18 @@ After identifying the AEM Assets project, select the matching rule for synchroni
 
 For the initial setup, use the default *Match by product sku* rule.
 
-## Prerequisites
+## Requirements
+
+Before configuring the AEM Assets Integration, verify that you have completed the following steps:
 
 * [Configure the AEM Assets project](configure-aem.md)
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
-* Follow the steps described in the [enable Dynamic Media Open API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) topic. Include the following information for the support team:
-
-  * **[!UICONTROL AEM Program ID]**
-  * **[!UICONTROL Adobe Commerce URL]**
-  * **[!UICONTROL AEM Environment ID]**,
-  * **[!UICONTROL IMS Org ID]** for the AEM Assets Authoring environment that you want to connect to Commerce.
+* [User permissions and IMS](permissions.md)—Required for the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping).
 
 ## Configure the connection
 
-1. Get the [AEM Assets Authoring Environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start) project and environment ID.
-
-   1. Open the AEM Cloud Manager and select **[!UICONTROL Assets]**.
-
-   1. Copy and save the project and environment IDs from the URL:<br>`https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
-   
 1. From the Commerce Admin, open the AEM Assets Integration configuration.
 
    1. Go to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
@@ -47,17 +38,19 @@ For the initial setup, use the default *Match by product sku* rule.
 >
 > The AEM Assets integration only supports configuration at the global (default) scope. Website-level configuration is not supported. When you attempt to configure the integration at the Website level, the system ignores website-level settings and uses the global configuration values instead.
 
-1. Enter the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]**.
+1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
+
+    This ID is required to enable the Asset Selector and auto-populate feature for the Program ID and Environment ID fields. See [User permissions and IMS](permissions.md) to obtain this ID. For details about the Asset Selector, see [Manually selecting assets](../synchronize/asset-selector-integration.md).
+
+1. Select the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from the dropdown menus.
+
+   The dropdowns auto-populate based on the user's IMS session. To use this feature, ensure you have the right [User permissions and IMS](permissions.md#user-permissions-and-ims).
+
+   If the dropdowns are not available, you can manually enter the IDs from the AEM Cloud Manager URL: `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
    Edit the configuration values by removing the selection from *[!UICONTROL Use system value]*.
 
-1. Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
-
-    For details about the Asset Selector, see [Manually selecting assets](../synchronize/asset-selector-integration.md)
-
 1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}  Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
-
-1. Set the **[!UICONTROL Commerce integration]** to `assets-integration` to select the Commerce Integration to use with AEM Assets.
 
 1. Set **[!UICONTROL Synchronization enabled]** to `Yes` to allow Commerce to accept incoming updates from AEM Assets.
 
@@ -89,6 +82,7 @@ This ensures that product pages always display the most up-to-date images, keepi
 The **Visualization Owner** setting determines which system serves product images in the integration:
 
 * Adobe Commerce – Uses images hosted in Commerce.
+
 * AEM Assets – Uses images synchronized from AEM.
 
 The Admin displays the available images for that owner, while the rest of the images are grayed out and displayed with a **hidden** label.
@@ -121,4 +115,8 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-[Manage Commerce assets](../manage-assets.md)
+* **Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront documentation*.
+
+* Set up [matching rules](../synchronize/default-match.md) between Adobe Commerce and the AEM Assets integration.
+
+* [Manage Commerce assets](../manage-assets.md).

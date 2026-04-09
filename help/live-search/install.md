@@ -18,7 +18,7 @@ This article is intended for the developer or systems integrator on your team wh
 ## Requirements
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1, 8.2, or 8.3
+- PHP 8.1, 8.2, 8.3, or 8.4
 - [!DNL Composer]
 - Running cron jobs and indexers
 
@@ -34,6 +34,14 @@ This article is intended for the developer or systems integrator on your team wh
 
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
 - Adobe Commerce on-prem (EE) : 2.4.4+
+
+>[!IMPORTANT]
+>
+> **HIPAA readiness**
+>
+> Live Search is not a HIPAA-ready service. If you are using Adobe Commerce with the HIPAA-Ready extension and Healthcare add-on, do not enable Live Search in any environment that may process protected health information (PHI).
+>
+> For details, see [HIPAA readiness on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) and the [Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations) guidance, which lists Live Search among the non-HIPAA ready Commerce services.
 
 ## Workflow overview
 
@@ -198,7 +206,7 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 
 ### Monitor sync progress
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.md) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
@@ -396,7 +404,7 @@ If you have a custom headless implementation, check out the [!DNL Live Search] r
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [[!DNL Live Search] field](https://github.com/adobe/storefront-search-as-you-type)
 
-Automatic collection of user interaction data does not work by default if you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
+Automatic collection of user interaction data does not work by default if you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe AI uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 
@@ -405,8 +413,8 @@ The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 [!DNL Live Search] widgets support the following languages:
 
 |||||
-|--- |--- |--- |--- |
-|Language|Region| Language Code |Magento Locale|
+|---|---|---|---|
+|Language|Region|Language Code|Magento Locale|
 |Bulgarian|Bulgaria|bg_BG|bg_BG|
 |Catalan|Spain|ca_ES|ca_ES|
 |Czech|Czech Republic|cs_CZ|cs_CZ|
@@ -426,6 +434,7 @@ The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 |Hungarian|Hungary|hu_HU|hu_HU|
 |Indonesian|Indonesia|id_ID|id_ID|
 |Italian|Italy|it_IT|it_IT|
+|Japanese|Japan|ja_JP|ja_JP|
 |Korean|South Korea|ko_KR|ko_KR|
 |Lithuanian|Lithuania|lt_LT|lt_LT|
 |Latvian|Latvia|lv_LV|lv_LV|

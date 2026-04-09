@@ -15,94 +15,188 @@ Updates include:
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-
 >[!NOTE]
 >
 >The SaaS data export extension is a collection of modules that is installed automatically with Live Search, Product Recommendations, and the Catalog Service. You can check the version installed on your system using Composer. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
 
-## Current major version
+## 2026 Releases
 
-## 103.4.15 Release
+### 103.4.21 Release
 
-![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension,  see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+_April 2, 2026_
 
-## 103.4.14 Release
+![Fix](../assets/fix.svg) **Improved reliability of manual resync of category permission indexer**–Fixed an issue where running indexers in a certain order could cause some products to become temporarily invisible. The system now enforces the correct order and automatically triggers a full resync when needed, ensuring all products remain visible after manual reindex operations. <!--MDEE-1332-->
 
-![Fix](../assets/fix.svg) Resolved an issue where the [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) job could fail if the `cde_product_overrides_feed_cl` table is missing. The fix ensures stable reindexing and prevents job failures related to this table in multi-tenant environments." <!--MDEE-1175-->
+### 103.4.20 Release
 
-## 103.4.13 Release
+_March 5, 2026_
+
+![Fix](../assets/fix.svg) Ensured compatibility with future PHP versions by updating the Product Feed index process to avoid deprecated use of null as an array offset. This improves stability during indexation.<!--MDEE-1306-->
+
+![Fix](../assets/fix.svg) Improved product feed synchronization for category data—Now, when you update a category URL in the Commerce Admin UI, the products feed automatically refreshes to reflect the new category path. No manual actions are required, and your product search results are always up-to-date after a category URL change.<!--MDEE-1294-->
+
+### 103.4.19 Release
+
+_February 6, 2026_
+
+![Fix](../assets/fix.svg) Resolved an issue where the `di:compile` command failed on PHP 8.5. The compilation process now completes successfully, ensuring compatibility with the latest PHP version.<!--MDEE-1299-->
+
+### 103.4.18 Release
+
+_February 2, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue where item batches could exceed the allowed limit during updates, causing `items_limit_exceeded` errors when syncing data to [Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) or [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+
+![Fix](../assets/fix.svg) Improved reliability of product data exports by adding logic to register failed items during bundle product options collection. <!--CCSAAS-4458-->
+
+### 103.4.17 Release
+
+_January 5, 2026_
+
+![Fix](../assets/fix.svg) Updated the data export extension (`magento/module-data-exporter`) to remove the `magento/module-analytics` dependency, which is no longer required.<!--MDEE-1260-->
+
+![Fix](../assets/fix.svg) Fixed an issue where updating a product's tier prices did not remove old values, resulting in duplicate or outdated tier price entries. Now, only the current tier prices are shown after updates. <!--MDEE-1157-->
+
+![Fix](../assets/fix.svg) Fixed an issue where products with a $0 price or 100% discount were not displayed as free on the storefront. Storefront and cart pricing are now consistent. <!--MDEE-1159-->
+
+![Fix](../assets/fix.svg) Symfony 7.4 LTS compatibility added to the data export extensions to support future upgrades and integrations. <!--MDEE-1272-->
+
+## Older releases
+
+### 103.4.16 Release
+
+_November 24, 2025_
+
+![Fix](../assets/fix.svg) Resolved an issue where certain indexers failed to switch to `Update On Schedule` mode during setup or upgrade due to missing ActionInterface implementations in multiple indexers. This fix ensures successful extension installation and upgrade without encountering indexer-related errors. <!--MDEE-1235-->
+
+### 103.4.15 Release
+
+_October 22, 2025_
+
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+
+### 103.4.14 Release
+
+_October 10, 2025_
+
+![Fix](../assets/fix.svg) Resolved an issue where the [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) job could fail if the `cde_product_overrides_feed_cl` table is missing. The fix ensures stable reindexing and prevents job failures related to this table in multi-tenant environments. <!--MDEE-1175-->
+
+### 103.4.13 Release
+
+_September 24, 2025_
 
 ![Fix](../assets/fix.svg) Fixed issue where editing Web Configuration settings caused Product Feed Index to reset. <!--MDEE-1154-->
+
 ![Fix](../assets/fix.svg) Resolved an issue where bundle product options and variants could appear multiple times in the Catalog service response, particularly for products assigned to multiple stores or websites. With this fix, each bundle option/variant is now returned only once per product, ensuring accurate and consistent storefront displays for both merchants and customers. <!--MDEE-1167-->
 
-## 103.4.12 Release
+### 103.4.12 Release
+
+_September 18, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the Product Detail Page (PDP) did not display catalog price rule discounts when customer group pricing was present. The PDP now correctly shows the lowest price.<!--MDEE-1158-->
 
-## 103.4.11 Release
+### 103.4.11 Release
+
+_August 29, 2025_
 
 ![New](../assets/new.svg) [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 Added support for additional product attributes to include tax class, attribute set, and inventory data from Commerce product configurations in the product feed. Customers that want to include these attributes in product export feeds must add the Extra Product Attributes module to their Adobe Commerce project. See [Add tax class, attribute set, and inventory attributes](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
+
 ![Fix](../assets/fix.svg) Resolved an issue that caused incorrect synchronization of deleted product updates if an error occurred during a full product index. Now, all product deletions are correctly synchronized even if an error occurs during the indexing process. <!--MDEE-1144-->
 
-## 103.4.10 Release
+### 103.4.10 Release
 
-![Fix](../assets/fix.svg) Fixed an issue where the wrong type (`text` instead of `OBJECT`) was returned for some dynamically created attributes . Now, the correct type information is consistently returned eliminating the need for manual resyncs or workarounds.<!--MDEE-1131-->
+_August 18, 2025_
+
+![Fix](../assets/fix.svg) Fixed an issue where the wrong type (`text` instead of `OBJECT`) was returned for some dynamically created attributes . Now, the correct type information is consistently returned, eliminating the need for manual resyncs or workarounds.<!--MDEE-1131-->
+
 ![Fix](../assets/fix.svg) Fixed an issue where product data collection during partial syncs could fail due to errors in the LowStock inventory provider. This fix ensures that product data is reliably exported, and no product IDs are skipped because of LowStock-related errors.<!--MDEE-1132-->
 
-## 103.4.9 Release
+### 103.4.9 Release
+
+_August 13, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where product price feeds were not regenerated when a product was deleted, or when the product SKU was changed.<!--MDEE-1125-->
+
 ![Fix](../assets/fix.svg) Improved product update processing to ensure that changes are accurately reflected when updating a newly created product with the same SKU as a previously deleted product. Product synchronization now correctly uses updated product IDs, ensuring accurate and reliable data export.<!--MDEE-1126-->
+
 ![Fix](../assets/fix.svg) Fixed an issue where the Catalog Service could return outdated variant data for configurable products by ensuring product update events are published after attribute deletions.<!--MDEE-1127-->
 
-## 103.4.8 Release
+### 103.4.8 Release
+
+_August 6, 2025_
 
 ![New](../assets/new.svg) Added tier price information to the prices feed. <!--MDEE-1070-->
+
 ![Fix](../assets/fix.svg) The Data Exporter extension now correctly exports website-scoped bundle selection prices, ensuring storefront pricing reflects accurate values based on the "Catalog Price Scope" configuration.<!--MDEE-1115-->
+
 ![Fix](../assets/fix.svg) Previously, products were synced with an incorrect `lowStock=true` status when using Inventory Management (Multi-source Inventory Management) with threshold configuration. This issue has been fixed to ensure accurate low stock reporting.<!--MDEE-1113-->
 
-## 103.4.7 Release
+### 103.4.7 Release
+
+_July 22, 2025_
 
 ![Fix](../assets/fix.svg) Removed obsolete tables that stored category permissions for products. <!--MDEE-1065-->
 
-## 103.4.6 Release
+### 103.4.6 Release
 
-![Fix](../assets/fix.svg) Export Adobe Commerce downloadable product data using the `ac_downloadable` attribute for use with Adobe Commerce Optimizer.. <!--MDEE-1043-->
+_June 20, 2025_
+
+![Fix](../assets/fix.svg) Export Adobe Commerce downloadable product data using the `ac_downloadable` attribute for use with Adobe Commerce Optimizer. <!--MDEE-1043-->
+
 ![Fix](../assets/fix.svg) Critical installation error fix for Adobe Commerce version 2.4.4. <!--MDEE-1074-->
 
-## 103.4.5 Release
+### 103.4.5 Release
+
+_May 27, 2025_
 
 ![New](../assets/new.svg) SaaS data export now supports the Adobe Commerce `giftcard` product type. In the data feed, Gift card products are exported as simple products with the product attribute type `ac_giftcard`. <!--MDEE-1042-->
-![Fix](../assets/fix.svg)  Improved data export error reporting. Logs now include more detailed error messages, including original technical details to make it easier to debug and trace errors. <!--MDEE-1064-->
 
-## 103.4.4 Release
+![Fix](../assets/fix.svg) Improved data export error reporting. Logs now include more detailed error messages, including original technical details to make it easier to debug and trace errors. <!--MDEE-1064-->
+
+### 103.4.4 Release
+
+_May 15, 2025_
 
 ![New](../assets/new.svg) Added a warning message that displays when the `cleanup-feed` argument is added to the `saas:resync` CLI command. The `--cleanup-feed` option should be used cautiously and only in specific scenarios like after environment cleanup or with the `--dry-run` option. Using it in other cases can lead to data loss and sync issues. <!--MDEE-1047-->
+
 ![Fix](../assets/fix.svg) Added the `x-request-id` from the server response for improved traceability. <!--MDEE-1041-->
+
 ![Fix](../assets/fix.svg) Fixed an issue where the synchronization status was not saved for the entire feed batch, which led to unnecessary resynchronization. <!--MDEE-1049-->
+
 ![Fix](../assets/fix.svg) Fixed an issue where all feeds in the feed batch were skipped during synchronization if one feed contained an error. <!--MDEE-976-->
+
 ![Fix](../assets/fix.svg) Added support for dimensions in the category permissions indexer. <!--MDEE-654-->
 
-## 103.4.3 Release
+### 103.4.3 Release
+
+_April 22, 2025_
 
 ![Fix](../assets/fix.svg) Resolved an issue where products were skipped during the data export process due to missing EAV attributes. <!--MDEE-970-->
 
-## 103.4.2 Release
+### 103.4.2 Release
 
-![Fix](../assets/fix.svg) Added the ability to collect entity payloads in the `saas-export.log` when running the test resynchronization using the `saas:resync --dry-run` command with the  `EXPORTER_EXTENDED_LOG=1` environment variable. <!--MDEE-1023-->
+_April 16, 2025_
 
-## 103.4.1 Release
+![Fix](../assets/fix.svg) Added the ability to collect entity payloads in the `saas-export.log` when running the test resynchronization using the `saas:resync --dry-run` command with the `EXPORTER_EXTENDED_LOG=1` environment variable. <!--MDEE-1023-->
+
+### 103.4.1 Release
+
+_April 10, 2025_
 
 ![Fix](../assets/fix.svg) Added a prefix to QueryXml cache keys to prevent naming conflicts with other modules. <!--MDEE-1019-->
 
-## 103.4.0 Release
+### 103.4.0 Release
+
+_March 31, 2025_
 
 ![Fix](../assets/fix.svg) The product overrides feed no longer sends permissions if the product is not assigned to a category.<!--MDEE-449-->
 
-## 103.3.21 Release
+### 103.3.21 Release
 
-![Fix](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds  based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
+_March 11, 2025_
+
+![New](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -110,103 +204,157 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ![Fix](../assets/fix.svg) Reduced potential compatibility issues with PHP 8.4 by addressing deprecated functionality. <!--MDEE-1002-->
 
-## 103.3.20 Release
+### 103.3.20 Release
+
+_February 28, 2025_
 
 ![Fix](../assets/fix.svg) Fixed untraceable `BulkException` errors in the `cron.log` by improving messaging for errors related to Catalog Data Export cron job failures.<!--MDEE-966-->
+
 ![Fix](../assets/fix.svg) Improved performance of the product re-synchronization process on instances with a high number of store views. <!--MDEE-974-->
 
-## 103.3.19 Release
+### 103.3.19 Release
+
+_February 13, 2025_
 
 ![Fix](../assets/fix.svg) Updated the data export extension to improve feeds extensibility. <!--MDEE-936-->
+
 ![Fix](../assets/fix.svg) The data export processor now verifies the indexer status before a full resync to avoid accidental data loss in the feed table.
 
-## 103.3.18 Release
+### 103.3.18 Release
+
+_January 28, 2025_
 
 ![Fix](../assets/fix.svg) Staging updates for product and category entities are now triggered correctly on Data Export data updates.<!--MDEE-963-->
 
-## 103.3.17 Release
+### 103.3.17 Release
+
+_January 20, 2025_
 
 ![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!--MDEE-941-->
 
-## 103.3.16 Release
+### 103.3.16 Release
+
+_January 6, 2025_
 
 ![Fix](../assets/fix.svg) Option values can be empty for configurable products for multiple store views. <!--MDEE-926-->
 
-## 103.3.15 Release
+### 103.3.15 Release
+
+_December 12, 2024_
 
 ![Fix](../assets/fix.svg) Ensured stable operation of integration tests on older configurations. <!--MDEE-869-->
+
 ![Fix](../assets/fix.svg) Stop propagating unnecessary attribute options. <!--MDEE-882-->
+
 ![Fix](../assets/fix.svg) Fixed the error message sent to the data export log when data serialization fails. <!--MDEE-913-->
+
 ![Fix](../assets/fix.svg) Enhanced the reliability of simple product updates with additional test coverage. <!--MDEE-886-->
 
-## 103.3.14 Release
+### 103.3.14 Release
 
-![Fix](../assets/fix.svg)  The exporter indexer now maintains the correct status for dependent indexers. Previously, these indexes were incorrectly invalidated and required additional checks and validation that slowed indexing performance. <!--MDEE-866-->
+_October 8, 2024_
 
-## 103.3.13 Release
+![Fix](../assets/fix.svg) The exporter indexer now maintains the correct status for dependent indexers. Previously, these indexes were incorrectly invalidated and required additional checks and validation that slowed indexing performance. <!--MDEE-866-->
+
+### 103.3.13 Release
+
+_October 1, 2024_
 
 ![Fix](../assets/fix.svg) Improved performance of the data synchronization process by adding a local cache for attribute options data.<!--MDEE-864-->
 
-## 103.3.12 Release
+### 103.3.12 Release
+
+_September 25, 2024_
 
 ![Fix](../assets/fix.svg) Resolved an issue that increased synchronization time for simple and virtual products. <!--MDEE-861-->
 
-## 103.3.11 Release
+### 103.3.11 Release
+
+_September 9, 2024_
 
 ![Fix](../assets/fix.svg) The data export service now sends special price data for bundle products as a percentage, correcting a previous issue where it was sent as a final price. <!--MDEE-854-->
+
 ![Fix](../assets/fix.svg) Updated the monolog implementation for compatibility with Monolog 3. <!--MDEE-858-->
 
-## 103.3.10 Release
+### 103.3.10 Release
 
-![Fix](../assets/fix.svg) Fixed Multiple storeview filtration for the product custom options feed. <!--MDEE-842-->
+_August 26, 2024_
+
+![Fix](../assets/fix.svg) Fixed multiple storeview filtration for the product custom options feed. <!--MDEE-842-->
+
 ![Fix](../assets/fix.svg) Invalid feeds are not resubmitted until the feed's hash value has changed.<!--MDEE-848-->
 
-## 103.3.9 Release
+### 103.3.9 Release
+
+_July 22, 2024_
 
 ![Fix](../assets/fix.svg) When an entity is deleted, the `deleted` flag is now propagated for the scoping service feeds for website (`scopesWebsite`) and customer group (`scopesCustomerGroup`).<!--MDEE-839-->
 
-## 103.3.8 Release
+### 103.3.8 Release
+
+_July 17, 2024_
 
 ![Fix](../assets/fix.svg) Disabled configuration options are no longer exported as active options.<!--MDEE-812-->
+
 ![Fix](../assets/fix.svg) Options and values are now updated on a configurable product when changes are made to a child product. <!--MDEE-835-->
+
 ![New](../assets/new.svg) Added the ability to include additional system attribute data in the product attributes feed.
 
-## 103.3.7 Release
+### 103.3.7 Release
+
+_June 25, 2024_
 
 ![Fix](../assets/fix.svg) Removed unnecessary dependencies from the InventoryDataExporter module.
+
 ![Fix](../assets/fix.svg) Changed required versions for inventory modules included in the CatalogInventoryDataExporter module to support Adobe Commerce version 2.4.4.
 
-## 103.3.6 Release
+### 103.3.6 Release
+
+_June 20, 2024_
 
 ![Fix](../assets/fix.svg) Fixed deadlocks that occurred during feed reindexing in multi-thread mode. Queries are now separated into Insert and Update operations.
+
 ![Fix](../assets/fix.svg) Optimized the Prices query for large catalogs with many websites.
+
 ![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occurs.
 
-## 103.3.5 Release
+### 103.3.5 Release
+
+_June 5, 2024_
 
 ![Fix](../assets/fix.svg) Set dependency for latest compatible data export version for the SaaS common module.
 
 ![Fix](../assets/fix.svg) Replaced `ScopeConfig` instance with `ServiceConfigInterface` to support different service configurations.
 
-## 103.3.4 Release
+### 103.3.4 Release
 
-![Fix](../assets/fix.svg) Added support for data transfer audit logging by adding a mechanism to dispatch a `data_sent_outside` event each time data is transmitted from the Commerce instance to a Commerce service  <!--MDEE-785-->
+_May 31, 2024_
 
-## 103.3.3 Release
+![Fix](../assets/fix.svg) Added support for data transfer audit logging by adding a mechanism to dispatch a `data_sent_outside` event each time data is transmitted from the Commerce instance to a Commerce service. <!--MDEE-785-->
+
+### 103.3.3 Release
+
+_May 21, 2024_
 
 ![New](../assets/new.svg) SaaS data export now caches Entity-Attribute-Value (EAV) attributes for the attribute metadata query.
 
 ![Fix](../assets/fix.svg) Fixed an issue where the `InventoryStockStatus` feed was not saved on retry if product was deleted.
 
-## 103.3.2 Release
+### 103.3.2 Release
+
+_May 14, 2024_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the `modifiedAt` field was missing from removed entities feeds.
 
-## 103.3.1 Release
+### 103.3.1 Release
+
+_May 8, 2024_
 
 ![Fix](../assets/fix.svg) Fixed an issue that caused an `Invalid Template File` message to appear during products feed reindexing when Page Builder is installed.
 
-## 103.3.0 Release
+### 103.3.0 Release
+
+_April 30, 2024_
 
 ![New](../assets/new.svg) Migrated immediate export feed tables to the unified structure:
 `id`, `source_entity_id`, `feed_id`, `modified_at`, `is_deleted`, `status`, `feed_data`, `feed_hash`, `errors`
@@ -226,7 +374,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
-- change log table names - Follows the same naming pattern as the feed tables but change log table names add a `_cl` suffix.  For example `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+- change log table names - Follows the same naming pattern as the feed tables but change log table names add a `_cl` suffix. For example `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
 If you have custom code that references any of these entities, update the references with the new names to ensure that your code continues to function correctly.
 
@@ -234,25 +382,35 @@ If you have custom code that references any of these entities, update the refere
 
 ![Fix](../assets/fix.svg) Modify the `productAttributes` query to retrieve only product attributes.
 
-## 103.2.6 Release
+### 103.2.6 Release
+
+_April 23, 2024_
 
 ![Fix](../assets/fix.svg) Fixed an issue that prevented feeds from being reindexed when tables have a prefix.
 
-## 103.2.5 Release
+### 103.2.5 Release
+
+_April 19, 2024_
 
 ![Fix](../assets/fix.svg) Optimized the Price query.
 
-## 103.2.4 Release
+### 103.2.4 Release
+
+_April 12, 2024_
 
 ![Fix](../assets/fix.svg) Fixed incorrect Stock status that displayed for a product when Commerce Inventory Management is enabled.
 
-## 103.2.3 Release
+### 103.2.3 Release
+
+_April 3, 2024_
 
 ![Fix](../assets/fix.svg) Fixed website level special pricing.
+
 ![Fix](../assets/fix.svg) Added mutex for all feeds that are processed.
 
+### 103.2.2 Release
 
-## 103.2.2 Release
+_March 14, 2024_
 
 ![Fix](../assets/fix.svg) Improved feeds batching strategy for large catalogs. The batches table is now filled with a limited number of IDs to reduce memory usage.
 
@@ -260,10 +418,16 @@ If you have custom code that references any of these entities, update the refere
 
 ![Fix](../assets/fix.svg) Improved `commerce-data-exporter` logs to collect more information and organize by different exporting stages.
 
-## 103.2.1 Release
+### 103.2.1 Release
+
+_March 5, 2024_
 
 - Released updated version.
 
-## 103.2.0 Release
+### 103.2.0 Release
+
+_February 21, 2024_
 
 - Added multi-thread data sync for products and prices.
+
+

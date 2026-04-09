@@ -129,6 +129,16 @@ Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [S
 
 ![Pay Later Messaging](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### Server-side shipping callbacks for PayPal payment buttons
+
+PayPal, Pay Later, and Venmo payment methods use a [server-side shipping callback](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) that enables PayPal to communicate directly with your Commerce instance to retrieve shipping options and calculate totals in real time.
+
+This server-side approach allows [!DNL Payment Services] to skip the order confirmation pop-up, providing a faster, streamlined purchase experience. Because shipping costs and taxes are calculated dynamically through callbacks, the buyer sees accurate totals directly in the PayPal or Venmo review page.
+
+>[!NOTE]
+>
+>The callback endpoint must be publicly available and respond within 5 seconds. If the response time exceeds this limit, PayPal displays an error message in the pop-up. See [Test on local development environments](test-validate.md#test-on-local-development-environments) for information about testing these payment methods locally.
+
 ### Use only PayPal payment buttons
 
 To quickly get your store into production mode, you can configure _only_ PayPal payment buttons (Venmo, PayPal, and so on.)---instead of also using the PayPal credit card payment option.
@@ -151,6 +161,43 @@ To **capture payments with your existing credit card provider _and_ PayPal payme
 1. [Configure the desired PayPal payment buttons](configure-admin.md#payment-buttons).
 1. Turn _Off_ the **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
 1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
+## Local Payment Methods
+
+Local Payment Methods (LPMs) provide support for region-specific and local payment methods, such as bank transfers and localized payment solutions, alongside existing card-based options. Merchants can enable or disable available LPMs directly within the Commerce configuration. LPMs expand Adobe's payment capabilities, support European market needs, improve checkout localization, and help increase conversion, merchant adoption, and buyer satisfaction.
+
+Available LPMs include:
+
+| Payment Method | Countries | Currency |
+|----------------|-----------|----------|
+| Bancontact | Belgium | EUR |
+| BLIK | Poland | PLN |
+| eps | Austria | EUR |
+| iDEAL | Netherlands | EUR |
+| MyBank | Italy | EUR |
+| Przelewy24 | Poland | EUR, PLN |
+
+LPMs are displayed to customers based on their billing address and their website's base currency. A payment method appears only when both conditions match the payment method's requirements.
+
+See [Local Payment Methods configuration](configure-admin.md#local-payment-methods) for more information.
+
+## Express checkout buttons
+
+To encourage a faster checkout experience, express payment options are available at the beginning of the checkout flow. Customers can complete their purchase using PayPal, PayPal Pay Later, Venmo, Apple Pay, or Google Pay.
+
+Once enabled, express checkout buttons are displayed at the beginning of the checkout process, providing a faster path to purchase for customers who prefer digital wallet payment methods.
+
+To enable express checkout buttons, configure each payment method individually:
+
+* **PayPal and Pay Later**: Enable **[!UICONTROL Show buttons at start of checkout]** in [PayPal payment buttons](configure-admin.md#paypal-payment-buttons) settings.
+
+* **Apple Pay**: Enable **[!UICONTROL Show Apple Pay at start of checkout]** in [Apple Pay](configure-admin.md#apple-pay) settings.
+
+* **Google Pay**: Enable **[!UICONTROL Show Google Pay at start of checkout]** in [Google Pay](configure-admin.md#google-pay) settings.
+
+>[!NOTE]
+>
+>Payment method availability depends on the buyer's location. For sandbox testing, use [Buyer's country](sandbox.md#buyers-country) configuration to simulate different regions. For example, Venmo is available only in the US. Pay Later is available in the US and UK.
 
 ## Checkout Options
 

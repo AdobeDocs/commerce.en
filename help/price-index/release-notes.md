@@ -23,6 +23,10 @@ Updates include:
 
 ## Current major version
 
+## 1.0.10 Release
+
+![Fix](../assets/fix.svg) Fixed an issue where price queries for imported or newly created bundle products could result in internal server errors because the system attempted to use a concatenated SKU for lookup instead of the correct, valid SKU. Price queries for bundle products now use the appropriate SKU and resolve correctly.<!--MDEE-1040-->
+
 ## 1.0.9 Release
 
 ![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!--MDEE-941-->

@@ -6,7 +6,7 @@ exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
 ---
 # AEM Assets Integration release notes
 
-These release notes describe the initial release of AEM Assets Integration and include:
+These release notes describe all releases for the AEM Assets Integration and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
@@ -31,6 +31,60 @@ _February 11, 2025_
 ![New issue](../assets/new.svg) Now, merchants can synchronize images for products and categories.
 
 +++
+
+## v1.3.4
+
+_March 11, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue PAY-1041 --> Added support for Adobe Commerce 2.4.9-beta1 and PHP 8.5.
+
+![New issue](../assets/new.svg)<!-- Issue ACCS-169 --> The **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]**, and [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} fields now auto-populate as dropdowns based on the [user's IMS session](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}.
+
+## v1.2.14
+
+_February 13, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACCS-171 --> Fixed a [custom matcher](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match) issue where the runtime actions dropdown showed unsaved workspace data after page reload.
+
+## v1.2.13
+
+_February 10, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACCS-171 --> Added an **[!UICONTROL Adobe I/O Workspace Configuration]** field that simplifies the [custom matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} setup. Merchants can now upload their App Builder `workspace.json` file to automatically populate OAuth credentials and runtime action endpoints.
+
+## v1.2.12
+
+_January 29, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1206 --> Fixed an issue where stale `no_selection` values in custom attributes for asset roles were not removed during asset sync, causing some images to not display correctly in Edge Delivery Services.
+
+## v1.2.11
+
+_January 15, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1180 --> Improved the product edit page by hiding file size and dimensions for AEM assets since they are dynamically optimized by CDN. Now, pages prerender correctly when the AEM Assets integration is enabled.
+
+## v1.2.10
+
+_January 12, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1178 --> Fixed an issue where product custom attributes could not be updated via REST API when the product had an image and the AEM Assets integration was enabled. Now, product custom attributes update correctly via REST API.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1172 --> Fixed an issue where hidden product images were not displayed as hidden in the Admin UI on the product edit page. Now, image visibility status displays correctly.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1170 --> Fixed an issue where product images from AEM Assets were not synchronized to Adobe Commerce due to a deserialization error. Now, all image attributes (`image`, `small_image`, and `swatch_image`) synchronize correctly.
 
 ## v1.2.7
 

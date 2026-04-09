@@ -28,7 +28,7 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 * **Catalog view ID** for the global catalog view
   * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-view)
 * **Source locale** for your catalog view
-  * Default for sample data is `en_US`
+  * Default for sample data is `en-US`
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 
 1. **[Create your storefront project](#create-your-storefront-project)**–Use the [Site Creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) to create a new storefront project with boilerplate code, sample content, and a configuration file.
 
-1. **[Customize the storefront configuration](#customize-the-storefront-configuration)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
+1. **[Customize the storefront configuration](#configure-your-storefront)**–Update the `config.json` file in your repository to connect to your [!DNL Adobe Commerce Optimizer] instance.
 
 1. **[Verify your setup](#verify-your-setup)** (10 mins)
    * Preview your storefront site
@@ -51,7 +51,7 @@ The Site Creator tool creates a complete storefront project with the following c
 * **Site**: Storefront landing page with boilerplate content
 * **Code**: Repository with boilerplate source files
 * **Content**: Document Author environment with site content files
-* **Commerce Config**: `config.json` file for instance-specific configuration
+* **Commerce Config**: [Commerce storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} for instance-specific configuration
 
 ### Step 1: Generate your project
 
@@ -110,14 +110,14 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Source-Locale": "en_US",
+      "AC-Source-Locale": "en-US",
       "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
    
    >[!NOTE]
    >
-   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in Adobe Commerce Optimizer to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
+   >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in [!DNL Adobe Commerce Optimizer] to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
 
 1. Save the configuration file.
 
@@ -194,8 +194,8 @@ Use the following guidance to check common issues:
 |-------|----------|----------|
 | **Code Sync installation fails** | Unable to complete Code Sync setup | <ul><li>Ensure you have admin access to your GitHub organization.</li><li>Try using a personal repository instead of an organization.</li><li>Check GitHub permissions and try again.</li></ul> |
 | **Site not loading** | 404 or connection errors | <ul><li>Verify your site URL format: `https://main--{SITE}--{ORG}.aem.live`</li><li>Check that the Code Sync app is properly installed.</li><li>Ensure that the repository is public or properly configured.</li></ul> |
-| **No product data displayed** | Product pages show placeholders or errors | <ul><li>Verify your configuration values in `config.json`</li><li>In the [!DNL Adobe Commerce Optimizer] instance, check the Data Sync page to verify that sample products are loaded. If no products are available, reload the sample data or add a product using the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Wait a few minutes for configuration changes to propagate.</li><li>Try to retrieve the product details using the Merchandising Service [products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li></ul>|
-| **Search returns no results** | Empty search results page |<ul><li>Verify that you can retrieve the product search results using the Merchandising Services [productSearch query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li><li>Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer].</li><li>In Adobe Commerce Optimizer, verify the configuration of the policies, locale, and price books that you used in the storefront header configuration.</li><li>Verify the [attribute metadata settings](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) are set correctly for search.</li></ul>|
+| **No product data displayed** | Product pages show placeholders or errors | <ul><li>Verify your configuration values in `config.json`</li><li>In the [!DNL Adobe Commerce Optimizer] instance, check the Data Sync page to verify that sample products are loaded. If no products are available, reload the sample data or add a product using the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request){target="_blank"}. Wait a few minutes for configuration changes to propagate.</li><li>Try to retrieve the product details using the Merchandising Service [products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details){target="_blank"} using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li></ul>|
+| **Search returns no results** | Empty search results page |<ul><li>Verify that you can retrieve the product search results using the Merchandising Services [productSearch query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search){target="_blank"} using the same headers configured in the `config.json` file. If you can retrieve the data, then it is likely an issue with the catalog view configuration or an index error.</li><li>Confirm that the catalog view ID in the `config.json` file matches the catalog view ID in [!DNL Adobe Commerce Optimizer].</li><li>In Adobe Commerce Optimizer, verify the configuration of the policies, locale, and price books that you used in the storefront header configuration.</li><li>Verify the [attribute metadata settings](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata){target="_blank"} are set correctly for search.</li></ul>|
 
 ### Validation checklist
 
@@ -212,26 +212,25 @@ Before proceeding to the next steps, ensure that your storefront is functioning 
 
 If issues persist:
 
-* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
-* Check the [Adobe Commerce Optimizer developer guide](https://developer.adobe.com/commerce/services/optimizer/)
-* Visit the [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Check the [Adobe Commerce Optimizer developer guide](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+* Visit the [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Next steps
 
-After you setup and verify your storefront, you can:
-
-1. **[Install Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Browser extension for editing, previewing, and publishing content directly from your website
-
-2. **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Create a local environment to customize your storefront code and content
+* **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Create a local environment to customize your storefront code and content.
+* **[Enable the Universal Editor](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
 
 ### Learn and explore
 
-* **[Complete the end-to-end use case](./use-case/admin-use-case.md)** - Learn more about storefront setup and catalog management using [!DNL Adobe Commerce Optimizer]
+* **[Complete the end-to-end use case](./use-case/admin-use-case.md)**—Learn more about storefront setup and catalog management using [!DNL Adobe Commerce Optimizer].
 
-* **[Explore storefront customization](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Learn advanced setup and configuration options
+* **[Explore storefront customization](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**—Learn advanced setup and configuration options.
 
-* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**–Add pre-built components to enhance your storefront experience
+* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**–Add pre-built components to enhance your storefront experience.
+
+* **Migrate to the Storefront Configuration Service**—After you have created your initial storefront, you can migrate the configuration to use the Configuration Service which supports advanced use cases like repoless configuration and overlays. For details, see the [Configuration Service](https://www.aem.live/docs/config-service-setup){target="_blank"} documentation in the Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) to learn more about updating site content and integrating with Commerce frontend components and backend data.
+> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} to learn more about updating site content and integrating with Commerce frontend components and backend data.

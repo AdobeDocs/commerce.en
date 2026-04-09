@@ -7,7 +7,7 @@ feature: Payments, Release Notes
 
 # Release Notes
 
-These release notes describe the initial release of [!DNL Payment Services] and include:
+These release notes describe all releases of [!DNL Payment Services] and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
@@ -22,6 +22,14 @@ Learn more about upcoming releases, product support, and which Adobe Commerce ve
 These release notes describe feature changes and fixes that occurred and were released outside of the regular feature releases for the hosted service.
 
 +++Hosted service updates
+
+_January 21, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6374 --> Now, the **Settings** button on the [!DNL Payment Services] dashboard redirects to the Admin configuration page for payment methods, providing a more streamlined workflow for managing payment settings.
+
+_January 19, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6325 --> Now, merchants can view the PayPal Seller ID as a column in the [transactions report](reporting.md#transactions-report-view) to help identify transactions that a particular customer has placed.
 
 _April 25, 2025_
 
@@ -93,6 +101,52 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+## v2.14.0
+
+_February 26, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-6400 --> Added a **[!UICONTROL Line Items Enabled]** configuration to enable or disable sending line items and amount breakdown to PayPal. This setting helps resolve checkout issues when third-party extensions add custom fees that are not supported by [!DNL Payment Services]. See [Line Items](line-items.md) for more information.
+
+![New](../assets/new.svg)<!-- PAY-6457 --> Added [Express payment buttons at the start of checkout](payments-options.md#express-checkout-buttons) to encourage faster checkouts.
+
+![New](../assets/new.svg)<!-- PAY-6458 --> Added support for [Local Payment Methods (LPMs)](payments-options.md#local-payment-methods) for region-specific and local payment options. Merchants can enable or disable available LPMs directly within [Commerce](configure-admin.md#local-payment-methods).
+
+![New](../assets/new.svg)<!-- PAY-6377 --> Added a [Buyer's country](sandbox.md#buyers-country) sandbox configuration to simulate the buyer's location and control which payment methods are rendered.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6458 --> Improved compatibility with PayPal's fraud filters by passing buyer email address data, enhancing fraud protection capabilities.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6413 --> Fixed an issue where PayPal checkout could not be completed for virtual products due to a missing shipping address.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6450 --> Fixed an issue where PayPal button checkout errors were not handled correctly on product detail pages, minicart, cart, and top of checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6453 --> Disabled server-side shipping callbacks flow on GraphQL checkout to prevent conflicts on checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6456 --> Updated the [Apple Pay](configure-admin.md#apple-pay) configuration description to clarify that Apple rejects payments from unverified domains. Merchants must verify any domains where Apple Pay buttons are used. Country restrictions apply.
+
+## v2.13.3
+
+_January 14, 2026_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6399 --> Fixed an issue where the wrong vaulted card was used during an Admin checkout. Now, the selected card is used correctly when placing an order.
+
+## v2.13.2
+
+_January 5, 2026_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6390 --> General improvements and optimizations by implementing improved JS minification.
+
+## v2.13.1
+
+_December 18, 2025_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6355 --> Fixed an issue where merchants could not select a shipping method during checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6347 --> Improved checkout resilience by removing unnecessary API calls.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6368 --> Implemented a fallback mechanism for loading the Payments SDK when the primary domain is unavailable, ensuring credit card fields remain accessible during checkout.
+
 ## v2.13.0
 
 _November 10, 2025_
@@ -125,7 +179,7 @@ _September 18, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fixed issue](../assets/fix.svg)<!-- PAY-6164 --> Now, [!DNL Payment Services] uses base currency for the available shipping methods in the **PayPal server-side shipping callback (SSSC)**.
+![Fixed issue](../assets/fix.svg)<!-- PAY-6164 --> Now, [!DNL Payment Services] uses base currency for the available shipping methods in the [PayPal server-side shipping callback (SSSC)](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/).
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6267 --> The **Ship To** block is hidden on the checkout page when **In-Store Pickup (ISPU)** is selected.
 
@@ -143,7 +197,7 @@ _August 20, 2025_
 
 ![New](../assets/new.svg)<!-- PAY-6169 --> Added the [`setCartAsInactive`](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/mutations/) mutation to [!DNL Payment Services] to improve quote lifecycle management.
 
-![New](../assets/new.svg)<!-- PAY-6227 --> When checking out with PayPal, [!DNL Payment Services] skips the order confirmation pop-up for a quicker purchase process.
+![New](../assets/new.svg)<!-- PAY-6227 --> When checking out with PayPal, [!DNL Payment Services] skips the order confirmation pop-up for a quicker purchase process. This is enabled by the [server-side shipping callback](payments-options.md#server-side-shipping-callback), which calculates shipping and totals directly within the PayPal review page.
 
 ![New](../assets/new.svg)<!-- PAY-6234 --> Added a new feature for the [Pay Later](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options) payment option. Now, the BNPL messaging configurator provides more flexibility in displaying Pay Later BNPL messaging on customer checkout pages.
 
