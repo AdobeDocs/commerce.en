@@ -59,7 +59,7 @@ To complete sandbox onboarding:
 
 ### Reset your sandbox account
 
-If you created an a PayPal sandbox account during the sandbox PayPal onboarding process, you must reset your onboarding sandbox because or you cannot verify your email.
+If you created an a PayPal sandbox account during the sandbox PayPal onboarding process, you must reset your onboarding sandbox because you cannot verify your email.
 
 To reset your sandbox account:
 
