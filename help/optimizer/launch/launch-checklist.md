@@ -21,12 +21,12 @@ Use this checklist when you deliver a B2C experience that combines [!DNL Adobe C
 
 Your solution typically includes these components:
 
-&#x25A2; **Cloud**—Adobe Commerce on Cloud manages catalog data, customers, assets, and purchase flows (checkout, order management, shipping, and so on).
-&#x25A2; **Optimizer**—[!DNL Adobe Commerce Optimizer] delivers merchandising experiences.
-&#x25A2; **Storefront**—Adobe Commerce Storefront on Edge Delivery Services provides the UI.
-&#x25A2; **Third-party services**—Payment, shipping, and tax providers.
-&#x25A2; **App Builder**—Extensibility.
-&#x25A2; **API Mesh**—Request routing.
+- **Cloud**—Adobe Commerce on Cloud manages catalog data, customers, assets, and purchase flows (checkout, order management, shipping, and so on).
+- **Optimizer**—[!DNL Adobe Commerce Optimizer] delivers merchandising experiences.
+- **Storefront**—Adobe Commerce Storefront on Edge Delivery Services provides the UI.
+- **Third-party services**—Payment, shipping, and tax providers.
+- **App Builder**—Extensibility.
+- **API Mesh**—Request routing.
 
 ## Verify Adobe Commerce on Cloud {#verify-cloud}
 
@@ -128,13 +128,21 @@ Confirm integrations that run on your host commerce system (not in [!DNL Adobe C
 
 Confirm extensibility configuration for production.
 
-&#x25A2; **App Builder:** The production workspace includes all required configurations and services.
-&#x25A2; **App Builder:** The production app passes testing across build scenarios.
-&#x25A2; **API Mesh:** Configurations and sources are ready for production.
-&#x25A2; **App Builder:** Product limits and boundaries have been reviewed and confirmed based on the [Adobe Developer App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} and [App Builder system settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
-&#x25A2; **App Builder:** The production app uses App Builder production endpoints.
-&#x25A2; **Events:** Adobe I/O Events are configured and subscriptions are verified.
-&#x25A2; **App Builder:** Custom *Admin* panel extensions are deployed to the production workspace.
+### App Builder
+
+&#x25A2; The production workspace includes all required configurations and services.
+&#x25A2; The production app passes testing across build scenarios.
+&#x25A2; Product limits and boundaries have been reviewed and confirmed based on the [Adobe Developer App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} and [App Builder system settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+&#x25A2; The production app uses App Builder production endpoints.
+&#x25A2; Custom *Admin* panel extensions are deployed to the production workspace.
+
+### API Mesh
+
+&#x25A2; Configurations and sources are ready for production.
+
+### Events
+
+&#x25A2; Adobe I/O Events are configured and subscriptions are verified.
 
 ## Finalize storefront experience {#finalize-storefront}
 
