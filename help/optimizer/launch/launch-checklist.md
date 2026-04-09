@@ -46,8 +46,8 @@ Confirm that your [!DNL Adobe Commerce Optimizer] production instance is set up 
 &#x25A2; The instance is in the correct region.
 &#x25A2; The environment type is Production.
 &#x25A2; You know the organization ID, client ID, ingestion URL, and Commerce Optimizer URL. See [Get started](../get-started.md).
-&#x25A2; Limits and boundaries align with your Adobe CTA confirmation.
-&#x25A2; Testing and dummy data are removed from the instance.
+&#x25A2; Configured limits and boundaries match the values confirmed by your Adobe Customer Technical Advisor (CTA).
+&#x25A2; Testing artifacts and dummy data have been removed from the instance.
 
 ## Verify storefront site {#verify-storefront-site}
 
@@ -102,7 +102,7 @@ Confirm that the storefront reads from the correct Adobe Commerce GraphQL endpoi
 
 ## Verify storefront and Optimizer integration {#storefront-optimizer-integration}
 
-Confirm Commerce Optimizer settings in storefront configuration.
+Confirm Commerce Optimizer settings in the storefront configuration.
 
 &#x25A2; Your storefront uses the correct [Commerce Optimizer settings](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/).
 &#x25A2; `adobe-commerce-optimizer` is `true`.
@@ -131,7 +131,7 @@ Confirm extensibility configuration for production.
 &#x25A2; **App Builder:** The production workspace includes all required configurations and services.
 &#x25A2; **App Builder:** The production app passes testing across build scenarios.
 &#x25A2; **API Mesh:** Configurations and sources are ready for production.
-&#x25A2; **App Builder:** Product limits are reviewed—see the [Adobe Developer App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} and [App Builder system settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+&#x25A2; **App Builder:** Product limits and boundaries have been reviewed and confirmed based on the [Adobe Developer App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} and [App Builder system settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 &#x25A2; **App Builder:** The production app uses App Builder production endpoints.
 &#x25A2; **Events:** Adobe I/O Events are configured and subscriptions are verified.
 &#x25A2; **App Builder:** Custom *Admin* panel extensions are deployed to the production workspace.
@@ -144,11 +144,11 @@ Polish content, SEO, performance, security, and CDN behavior before launch.
 
 Confirm authoring workflow and storefront components.
 
-&#x25A2; Review of the [AEM/EDS go-live checklist](https://www.aem.live/docs/go-live-checklist) is complete.
+&#x25A2; The [AEM/EDS go-live checklist](https://www.aem.live/docs/go-live-checklist) review is complete.
 &#x25A2; The authoring source is document-based or Universal Editor (and configured).
-&#x25A2; You publish content through the preview → publish cycle.
+&#x25A2; Content is published using the preview → publish cycle.
 &#x25A2; Content and design QA is complete on the `.aem.live` domain.
-&#x25A2; A favicon is present on the site.
+&#x25A2; A favicon is configured and served correctly by the site.
 &#x25A2; da.live and product visuals use [configured](https://docs.da.live/administrators/guides/permissions) dedicated credentials.
 &#x25A2; Drop-ins (cart, checkout, PDP, PLP, auth, account) are [customized](../storefront.md) and tested.
 &#x25A2; Storefront branding reflects CSS design tokens, typography, and colors.
@@ -161,9 +161,9 @@ Confirm metadata, URLs, and crawl behavior.
 &#x25A2; PDPs include [metadata and structured data](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} (for example, JSON-LD).
 &#x25A2; Product URL formats are consistent (for example, `domain/product-name`).
 &#x25A2; Vanity URLs redirect to canonical URLs.
-&#x25A2; Your project includes `robots.txt` that allows indexing where appropriate, references sitemaps, and blocks paths you do not want indexed (for example, `/drafts`).
+&#x25A2; The project includes `robots.txt` that allows indexing where appropriate, references sitemaps, and blocks paths you do not want indexed (for example, `/drafts`).
 &#x25A2; [Redirect](https://www.aem.live/docs/redirects) files cover URL changes from migration (for example, after removing `.html`).
-&#x25A2; A sitemap exists and, where helpful, is submitted in Google Search Console.
+&#x25A2; Sitemap exists and is submitted to Google Search Console as needed.
 &#x25A2; Canonical URLs return `2xx` status (not `3xx` or `4xx`).
 &#x25A2; Multilingual sites include `hreflang` tags in the sitemap.
 &#x25A2; The Google Search Console coverage report is current.
@@ -192,7 +192,7 @@ Confirm performance baselines and analytics wiring.
 
 Confirm permissions and secrets.
 
-&#x25A2; Permissions for DA content and EDS sites are set. See [DA.live permissions](https://da.live/docs/administration/permissions) and [Authentication setup for authoring](https://www.aem.live/docs/authentication-setup-authoring).
+&#x25A2; Appropriate permissions are configured for DA content and EDS sites. See [DA.live permissions](https://da.live/docs/administration/permissions) and [Authentication setup for authoring](https://www.aem.live/docs/authentication-setup-authoring).
 &#x25A2; The product visuals integration is provisioned. See [AEM Cloud Service access overview](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 &#x25A2; Password reset links in email templates match your Edge Delivery Services setup. See the storefront FAQ: [What should I do if my email template links are broken after migrating to Edge Delivery Services or Helix?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 &#x25A2; Production keys for integrations and payment providers are in place.
@@ -202,7 +202,7 @@ Confirm permissions and secrets.
 
 Confirm CDN, DNS, and cache behavior.
 
-&#x25A2; Your CDN uses the production GraphQL endpoint (`yourproject.com/graphql`) for Sidekick extensions and scripts (for example, sitemap generation and the image importer).
+&#x25A2; The CDN configuration uses the production GraphQL endpoint (`yourproject.com/graphql`) for Sidekick extensions and scripts (for example, sitemap generation and the image importer).
 &#x25A2; When you use Adobe Commerce Fastly, a CDN purge token is available and [site configuration](https://tools.aem.live/tools/cdn-setup/index.html) includes `authToken` and `serviceId`.
 &#x25A2; [CDN configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"} validates caching and invalidation.
 &#x25A2; For [multi-store setups](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}, Catalog Service and [!DNL Live Search] requests include a store-specific cache buster (for example, a query parameter or CDN rule).
@@ -218,15 +218,15 @@ Confirm security posture and compliance tasks.
 
 &#x25A2; **SSL:** A trusted SSL/TLS certificate is installed.
 &#x25A2; **SSL:** HTTPS is enforced site-wide.
-&#x25A2; **Access:** Default *Admin* passwords are changed and a strong password policy is in place. Manage [!DNL Adobe Commerce Optimizer] users in [User and identity management](../user-management.md).
+&#x25A2; **Access:** Default *Admin* passwords are changed and a strong password policy is in place. See [!DNL Adobe Commerce Optimizer] [User and identity management](../user-management.md).
 &#x25A2; **Access:** The *Admin* URL is not the default.
 &#x25A2; **Access:** Two-factor authentication is enabled for all *Admin* users.
-&#x25A2; **Access:** Unused *Admin* users are not on the project.
+&#x25A2; **Access:** No inactive or unused Admin users are associated with the project.
 &#x25A2; **Firewall:** Web Application Firewall (WAF) is configured and verified.
 &#x25A2; **PCI:** Security penetration testing on production (PCI scope) is complete.
 &#x25A2; **Scanning:** The Adobe Security Scan Tool is registered and an initial scan is complete.
 &#x25A2; **Access:** CORS allows only approved origins.
-&#x25A2; **Compliance:** The [shared responsibility model](../shared-responsibility.md) for [!DNL Adobe Commerce Optimizer] is current (Adobe compared with customer responsibilities).
+&#x25A2; **Compliance:** The  [shared responsibility model](../shared-responsibility.md) for [!DNL Adobe Commerce Optimizer] is up to date and clearly defines Adobe versus customer responsibilities.
 &#x25A2; **Compliance:** Privacy policy, cookie consent, and GDPR or CCPA requirements are verified.
 
 ## Analytics and monitoring {#analytics-monitoring}
@@ -235,8 +235,8 @@ Confirm measurement and baselines.
 
 &#x25A2; **RUM:** Real User Monitoring (RUM) is instrumented for before-and-after comparison.
 &#x25A2; **Analytics:** Adobe Experience Platform data collection is configured (if applicable).
-&#x25A2; **Analytics:** Martech tags fire on the production hostname.
-&#x25A2; **Analytics:** Analytics baselines are documented—you expect shifts after launch (pageviews, bounce rate, and so on).
+&#x25A2; **Analytics:** Verified that MarTech tags fire on the production hostname.
+&#x25A2; **Analytics:** Baseline analytics are documented; post‑launch fluctuations (page views, bounce rate, and so on) are expected.
 &#x25A2; **Events:** Conversion tracking works end to end (add to cart → checkout → confirmation).
 
 ## Testing {#testing}
@@ -257,20 +257,20 @@ Confirm quality before and after launch.
 &#x25A2; **Compatibility:** Responsive layouts work on mobile, tablet, and desktop.
 &#x25A2; **Compatibility:** Performance is acceptable on 3G, 4G, and Wi-Fi.
 &#x25A2; **Accessibility:** An accessibility audit is complete (WCAG, screen reader, keyboard navigation).
-&#x25A2; **Functional:** A 404 monitoring plan exists for after launch.
+&#x25A2; **Functional:** A post‑launch 404 monitoring plan is in place.
 &#x25A2; **UAT:** A rollback plan exists and passes testing if launch issues occur.
 
 ## Launch day and post-launch {#launch-post-launch}
 
 Confirm communication, support, and follow-up tasks.
 
-&#x25A2; Adobe has your launch date (email your CTA).
+&#x25A2; **Launch coordination:** Adobe has your confirmed launch date; the CTA has been notified by email.
 &#x25A2; **Support:** The P1 hotline number is recorded: US (+1) 800-497-0335, then press 6 for Commerce.
-&#x25A2; **Support:** Your team knows to open a support ticket **first**, then call the P1 hotline.
+&#x25A2; **Support:** Your team is trained to open a support ticket **before** calling the P1 hotline.
 &#x25A2; **Post launch:** Verify Lighthouse scores on the production domain.
 &#x25A2; **Post launch:** Monitor Google Search Console for indexing and crawl errors.
 &#x25A2; **Post launch:** Monitor 404 reports and add redirects for high-traffic legacy URLs.
-&#x25A2; **Post launch:** Confirm martech and analytics data on production.
+&#x25A2; **Post launch:** Confirm MarTech and analytics data on production.
 &#x25A2; **Post launch:** Ask your CTA, CSE, or AM to enable high-SLA monitoring.
 &#x25A2; A disaster recovery plan exists and passes testing.
-&#x25A2; You track and upgrade boilerplate and extension packages to current versions.
+&#x25A2; A process is in place to track and upgrade boilerplate and extension packages to current versions.
