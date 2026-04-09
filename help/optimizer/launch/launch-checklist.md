@@ -204,7 +204,7 @@ Confirm permissions and secrets.
 &#x25A2; The product visuals integration is provisioned. See [AEM Cloud Service access overview](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 &#x25A2; Password reset links in email templates match your Edge Delivery Services setup. See the storefront FAQ: [What should I do if my email template links are broken after migrating to Edge Delivery Services or Helix?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 &#x25A2; Production keys for integrations and payment providers are in place.
-&#x25A2; New domains or subdomains are allowlisted and backend webhooks work.
+&#x25A2; Domains are allowlisted and backend webhooks work.
 
 ### CDN and caching
 
