@@ -17,8 +17,7 @@ recommendations: noDisplay
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
 - [Limits and boundaries](boundaries-limits.md)
-- [Release notes](release-notes.md)
-- Managing results {#manage-results}
+- Managing Results {#manage-results}
    - [Opportunities](./manage-results/opportunities.md)
    - [Success metrics](./manage-results/success-metrics.md)
    - [Search performance](./manage-results/search-performance.md)
@@ -65,4 +64,4 @@ recommendations: noDisplay
 - Developer resources {#developer}
    - [Developer guide and API references](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
-
+- [Release notes](release-notes.md)
