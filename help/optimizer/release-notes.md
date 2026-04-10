@@ -32,7 +32,7 @@ Recommendation filters now support a [price filter](./merchandising/recommendati
 
 >[!BEGINSHADEBOX]
 
-Added ability to specify a catalog view when you [create recommendation units](../merchandising/recommendations/create.md) or [merchandising rules](../merchandising/rules/add.md).
+Added ability to specify a catalog view when you [create recommendation units](./merchandising/recommendations/create.md) or [merchandising rules](./merchandising/rules/add.md).
 
 >[!ENDSHADEBOX]
 
