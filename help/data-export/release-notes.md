@@ -27,9 +27,7 @@ _April 10, 2026_
 
 ![Fix](../assets/fix.svg) Fix stuck entities on after unsuccessful previous sync. <!--MDEE-1319-->
 ![Fix](../assets/fix.svg) Catalog entities can be exported regardless of admin store view value. <!--MDEE-1333-->
-[Slow Horses] MDEE-1327: Error on Data Feed Sync Status Page by @developlex in https://github.com/magento-commerce/commerce-data-export-ee/pull/148
-## New Contributors
-@developlex made their first contribution in https://github.com/magento-commerce/commerce-data-export-ee/pull/148
+![Fix](../assets/fix.svg) Error on Data Feed Sync Status Page <!--MDEE-1327-->
 
 ### 103.4.21 Release
 
