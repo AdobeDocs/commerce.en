@@ -10,6 +10,32 @@ exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 
 The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
 
+## April 2026
+
+**Release date**: April 7, 2026
+
+>[!BEGINSHADEBOX]
+
+### Catalog rules
+
+Merchandising rules now include [category rules](./merchandising/rules/add.md), so you can target one or more categories and control product order on category pages using the same intelligent ranking and manual actions (pin, boost, bury) as for search.
+
+### Price filter
+
+Recommendation filters now support a [price filter](./merchandising/recommendations/filters.md#price) that you can use to set a minimum and maximum price range for products.
+
+>[!ENDSHADEBOX]
+
+## February 2026
+
+**Release date**: February 19, 2026
+
+>[!BEGINSHADEBOX]
+
+Added ability to specify a catalog view when you [create recommendation units](../merchandising/recommendations/create.md) or [merchandising rules](../merchandising/rules/add.md).
+
+>[!ENDSHADEBOX]
+
 ## December 2025
 
 **Release date**: December 10, 2025
