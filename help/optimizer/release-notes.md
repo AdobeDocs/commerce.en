@@ -10,6 +10,111 @@ exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 
 The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
 
+## April 2026
+
+**Release date**: April 7, 2026
+
+>[!BEGINSHADEBOX]
+
+### Catalog rules
+
+Merchandising rules now include [category rules](./merchandising/rules/add.md), so you can target one or more categories and control product order on category pages using the same intelligent ranking and manual actions (pin, boost, bury) as for search.
+
+### Price filter
+
+Recommendation filters now support a [price filter](./merchandising/recommendations/filters.md#price) that you can use to set a minimum and maximum price range for products.
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Extensibility | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
+## February 2026
+
+**Release date**: February 19, 2026
+
+>[!BEGINSHADEBOX]
+
+Added ability to specify a catalog view when you [create recommendation units](./merchandising/recommendations/create.md) or [merchandising rules](./merchandising/rules/add.md).
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Extensibility | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
+## December 2025
+
+**Release date**: December 10, 2025
+
+>[!BEGINSHADEBOX]
+
+### Opportunities
+
+AI-powered site optimization recommendations are now available through [Adobe Sites Optimizer integration](./manage-results/opportunities.md). This feature helps merchandisers identify and address issues impacting commerce site performance through automated detection and intelligent recommendations.
+
+### Catalog layers
+
+Added [catalog layers](./setup/catalog-layer.md) so you can modify product data without changing source data, including layer priority management and integration with Adobe Sites Optimizer auto-fix features.
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Extensibility | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
+## October 2025
+
+**Release date**: October 14, 2025
+
+>[!BEGINSHADEBOX]
+
+### Commerce Optimizer Salesforce Commerce Connector
+
+The [!DNL Commerce Optimizer Salesforce Commerce Connector] is a new App Builder integration starter kit that enables Commerce administrators and developers to seamlessly connect Salesforce B2C Commerce catalog data with [!DNL Commerce Optimizer].<!--COMOPT-536-->
+
+**For Admins:**
+
+* Catalog updates in Salesforce (products, prices, metadata, pricebooks) are automatically synchronized with Commerce Optimizer—no manual intervention required.
+* The integration operates independently from Adobe Commerce, reducing complexity and potential points of failure.
+* Admins can rely on scheduled regularly schedule updates to ensure accurate catalog data within Commerce Optimizer, improving merchandising and product recommendations.
+
+**For Developers:**
+
+* The starter kit provides a streamlined, extensible framework for ingesting Salesforce catalog data into SaaS Merchandising Services.
+* Reference implementations, design documentation, and code samples are available to accelerate custom integrations or troubleshooting.<!--COMOPT-536-->
+
+### Layered Search
+
+* GA release for the following advanced search capabilities: layered search using `startsWith` and `contains`. [Learn more](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types).
+
+### Categories APIs
+
+A new Categories REST API is now available, allowing administrators and developers to programmatically create, update, and manage multiple category trees for navigation and product grouping. The API supports both global and channel-specific configurations and is designed for high scalability, supporting up to 10,000 category trees and 500 categories per tree. For details, see [Categories](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories) in the _Merchandising Services Developer Guide_.<!--DCAT-2649-->
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Extensibility | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
 ## August 2025
 
 **Release date**: August 28, 2025
@@ -26,5 +131,13 @@ The base production URLs for the European Union region are:
 * REST and GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ![create instance](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Extensibility | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
 
 >[!ENDSHADEBOX]
