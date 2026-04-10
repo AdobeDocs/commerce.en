@@ -29,7 +29,7 @@ entries:
   membership:
   labels:
   - new-topic
-- description: Added new guidance around [adding files to products](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files)
+- description: Added guidance around [adding files to products](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files)
     in Adobe Commerce as a Cloud Service.
   versions: ''
   type: major-update
