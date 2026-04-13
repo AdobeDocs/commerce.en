@@ -248,7 +248,7 @@ Semantic search adds AI processing to your search operations. This includes:
 
 **Tune semantic behavior (Advanced search tab):**
 
-- On the **[Advanced search](#advanced-search)** tab (beta), adjust **[!UICONTROL Semantic boost]** when you want semantically relevant products to rank higher or lower relative to other matches—increase the boost if semantic matches should carry more weight in the result set, decrease it if results feel dominated by broad semantic matches.
+- On the **[Advanced search](#advanced-search)** tab, adjust **[!UICONTROL Semantic boost]** when you want semantically relevant products to rank higher or lower relative to other matches—increase the boost if semantic matches should carry more weight in the result set, decrease it if results feel dominated by broad semantic matches.
 - Use **[!UICONTROL Similarity threshold]** to control how strict semantic matching must be before products appear: a **higher** threshold keeps stronger semantic matches and can reduce noisy or weak matches; a **lower** threshold allows more borderline matches when shoppers still need options.
 - Configure **[!UICONTROL Fuzzy search]** on the same tab when you want near matches (for example, typos) as a fallback when direct search returns no results, and tune **[!UICONTROL Fuzzy search similarity threshold]** so fuzzy results stay relevant.
 
