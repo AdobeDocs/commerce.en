@@ -55,3 +55,13 @@ For information about identity configuration options including Adobe ID, Enterpr
 | Services | Extensibility | Storefront |
 | --- | --- | --- |
 | <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+
+## Adobe Commerce Optimizer extensibility release notes {#aco-release}
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Extensibility | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
