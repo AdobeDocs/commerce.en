@@ -11,6 +11,10 @@ Out of the box, the connector offers reliable data sync capabilities and the fle
 
 For an end-to-end video tutorial series, see [Learn about the Salesforce Commerce cloud starter kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
+>[!NOTE]
+>
+>For an overview of other integrations available for Adobe Commerce Optimizer, see [Integrations](../integrations/integrations-overview.md).
+
 ## Key capabilities
 
 * **Catalog Data Sync:** Push product data—including variants, price books, and structures—from Salesforce Commerce B2C into [!DNL Adobe Commerce Optimizer] to keep storefronts and experience-driven applications up to date.
