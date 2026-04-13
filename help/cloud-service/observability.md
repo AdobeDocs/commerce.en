@@ -14,7 +14,15 @@ Observability is a critical aspect of operating [!DNL Adobe Commerce as a Cloud 
 
 ### Observability overview
 
-The [observability overview](https://developer.adobe.com/commerce/extensibility/observability/) explains how metrics, logs, and traces work across the [!DNL Adobe Commerce as a Cloud Service] composable architecture. Start here to understand how OpenTelemetry unifies telemetry collection across eventing, webhooks, and App Builder applications.
+Observability gives you visibility into the health and performance of your Adobe Commerce storefront and all connected App Builder applications. By collecting telemetry data across your commerce ecosystem, you can:
+
+- **Track metrics** such as API response times, request and error rates, and resource utilization to monitor real-time performance and spot trends.
+- **Centralize logs** from your application, infrastructure, CDN, and integrations into a single view for faster troubleshooting.
+- **Trace requests** end-to-end as they flow from the frontend through Commerce and connected apps, helping you pinpoint bottlenecks and failures before they impact customers.
+
+Together, these capabilities help you quickly identify and resolve issues, optimize performance, and ensure a reliable experience for your customers. The [observability overview](https://developer.adobe.com/commerce/extensibility/observability/) explains how [!DNL Adobe Commerce as a Cloud Service] uses OpenTelemetry to unify this telemetry collection across eventing, webhooks, and App Builder applications.
+
+![Observability architecture](./assets/observability.svg){zoomable="yes"}
 
 ### Configure subscriptions
 
@@ -53,3 +61,10 @@ The [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telemetry/blob
 ### Operational Telemetry
 
 [Operational Telemetry](https://www.aem.live/docs/operational-telemetry) is the framework that [!DNL Edge Delivery Services] uses to collect sampled performance data—including Core Web Vitals—from your storefront. Designed for diagnosing performance issues while preserving visitor privacy.
+
+## Observability videos
+
+The following videos provide a high-level overview of observability offerings in [!DNL Adobe Commerce as a Cloud Service]:
+
+* [App Builder observability videos](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [API Mesh videos](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}

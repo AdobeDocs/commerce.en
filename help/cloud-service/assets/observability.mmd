@@ -1,0 +1,27 @@
+%%{ init: { "flowchart": { "curve": "linear" } } }%%
+
+graph BT
+    subgraph commerce["Adobe Commerce"]
+        event_mod["Eventing \n Module"]
+        webhook_mod["Webhook \n Module"]
+        admin_sdk["Admin UI \n SDK"]
+    end
+
+    subgraph appbuilder["App Builder"]
+        int_sk["Integration \n Starter Kit"]
+        checkout_sk["Checkout \n Starter Kit"]
+        generic_app["Generic \n Application"]
+    end
+
+    commerce --> obs_mod["Observability \n Module"]
+    appbuilder --> aio_tel["AIO lib \n Telemetry"]
+
+    obs_mod --> OTel["OpenTelemetry"]
+    aio_tel --> OTel
+
+    OTel --> backends["Third-party Observability \n (For example: Grafana, New Relic, Splunk)"]
+
+    style commerce fill:#cc0000,color:#fff,stroke:#cc0000
+    style appbuilder fill:#cc0000,color:#fff,stroke:#cc0000
+    style backends fill:#f0f0f0,color:#333,stroke:#999
+    style OTel fill:#fff,color:#333,stroke:#333
