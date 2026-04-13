@@ -25,9 +25,12 @@ Updates include:
 
 _April 10, 2026_
 
-![Fix](../assets/fix.svg) Fix stuck entities on after unsuccessful previous sync. <!--MDEE-1319-->
-![Fix](../assets/fix.svg) Catalog entities can be exported regardless of admin store view value. <!--MDEE-1333-->
-![Fix](../assets/fix.svg) Error on Data Feed Sync Status Page <!--MDEE-1327-->
+![Fix](../assets/fix.svg) **Improved data synchronization**
+
+- Fixed an issue where deleted products were not properly removed from the connected Commerce services if the export service was unavailable during deletion. Retry and resync operations now ensure deleted products are correctly reflected in SaaS. <!--MDEE-1319-->
+- Catalog entities (products and categories) can now be exported to connected Commerce services even if attribute values are missing for the admin store view. This improves compatibility with third-party extensions and reduces export errors due to missing default values. <!--MDEE-1333-->
+  
+![Fix](../assets/fix.svg) Resolved an error on the Data Feed Sync Status page that could occur when feed records contained unexpected or missing data. The system now gracefully handles such cases, improving stability and preventing crashes. Users are encouraged to update to [ACO connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) or later for the fix.<!--MDEE-1327-->
 
 ### 103.4.21 Release
 
