@@ -33,7 +33,7 @@ Adobe Experience Manager Sites Optimizer analyzes Commerce websites and improves
 
 >[!AVAILABILITY]
 >
->This capability requires the **Ultima** Adobe Sites Optimizer license. When Adobe provisions your account with this license, Adobe coordinates enablement through your customer success manager. Once your account is provisioned, the Opportunities feature is available in the [!DNL Adobe Commerce Optimizer] interface, and you can start using AI-driven insights to optimize your storefront and merchandising strategies.
+>This capability requires the **Ultima** Adobe Sites Optimizer license. You can request a license through your Adobe Customer Technical Advisor. Once your account is provisioned, the Opportunities feature is available in the [!DNL Adobe Commerce Optimizer] interface, and you can start using AI-driven insights to optimize your storefront and merchandising strategies.
 
 - [Opportunities](../manage-results/opportunities.md)
 
