@@ -16,11 +16,30 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 {#latest}
+## April 2026 - release #2 {#latest}
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on April 13, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed a 500 error on the Shared Catalog Assign Companies page that could occur when using large shared catalogs with the Admin UI SDK. <!-- CCSAAS-4783 -->
+
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## April 2026
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 The following items were released to Production environments on April 1, 2026.
 
