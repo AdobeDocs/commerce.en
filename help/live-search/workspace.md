@@ -165,10 +165,10 @@ The following section describes the supported and unsupported Commerce configura
 
 |Commerce Configuration Setting|Description|Supported by Popover|Supported by Adapter|
 |---|---|---|---|
-|Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page|If set to `Yes`, includes the `ALL` option in the "Show per Page" control.| Yes. Max 500 products|Yes. Max 500 products|
+|Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page|If set to `Yes`, includes the `ALL` option in the "Show per Page" control.| Yes. Max 100 products|Yes. Max 100 products|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Minimal Query Length|The minimum number of characters allowed in a catalog search.|Yes|Yes|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Values|Determines the number of products displayed in Grid View.|Yes|Yes|
-|Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value|Determines the number of products displayed per page by default in grid view.|Yes. Max 500 products|Yes. Max 500 products|
+|Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value|Determines the number of products displayed per page by default in grid view.|Yes. Max 100 products|Yes. Max 100 products|
 |Stores > Configuration > Catalog > Inventory > Display Out of Stock Products|Displays products that are out of stock.|Yes|Yes|
 |Stores > Configuration > Currency > Default Display Currency|The primary currency used to display prices.|Yes|Yes|
 |Stores > Configuration > General > Currency Setup > Currency Options > Base Currency|The primary currency used for all online payment transactions.|Yes|Yes|

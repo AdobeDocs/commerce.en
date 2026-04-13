@@ -24,31 +24,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
-### IMS and user permissions
-
-To use the Asset Selector and provide a smoother setup in Commerce, the following permissions are required:
-
->[!BEGINTABS]
-
->[!TAB ACCS]
-
-[!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
-
-IMS authentication is enabled by default. Add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile in the [Adobe Admin Console](https://adminconsole.adobe.com/) to grant access to the AEM Assets delivery layer.
-
-![Admin Console product profile for AEM Assets delivery](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
-
->[!TAB PaaS]
-
-[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
-
-1. [Enable Adobe IMS for Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} by following the instructions in the *Commerce Admin Guide*.
-
-1. [Open a Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) to request a custom IMS Client ID for the Asset Selector.
-
-1. Add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile in the [Adobe Admin Console](https://adminconsole.adobe.com/) to grant access to the AEM Assets delivery layer.
-
->[!ENDTABS]
+* [User permissions and IMS](permissions.md)—Required for the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping).
 
 ## Configure the connection
 
@@ -64,11 +40,11 @@ IMS authentication is enabled by default. Add the user to the **AEM Assets DM Op
 
 1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} Enter the **[!UICONTROL Asset Selector IMS Client ID]**.
 
-    This ID is required to enable the Asset Selector and auto-populate feature for the Program ID and Environment ID fields. See [IMS and user permissions](#ims-and-user-permissions) to obtain this ID. For details about the Asset Selector, see [Manually selecting assets](../synchronize/asset-selector-integration.md).
+    This ID is required to enable the Asset Selector and auto-populate feature for the Program ID and Environment ID fields. See [User permissions and IMS](permissions.md) to obtain this ID. For details about the Asset Selector, see [Manually selecting assets](../synchronize/asset-selector-integration.md).
 
 1. Select the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from the dropdown menus.
 
-   The dropdowns auto-populate based on the user's IMS session. To use this feature, ensure you have the right [IMS and user permissions](#ims-and-user-permissions).
+   The dropdowns auto-populate based on the user's IMS session. To use this feature, ensure you have the right [User permissions and IMS](permissions.md#user-permissions-and-ims).
 
    If the dropdowns are not available, you can manually enter the IDs from the AEM Cloud Manager URL: `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 

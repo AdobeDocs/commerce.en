@@ -24,6 +24,16 @@
 >[!ENDSHADEBOX]
 -->
 
+## ACCS sandbox-only experimental feature {#accs-sandbox-experimental}
+
+>[!IMPORTANT]
+>
+>This feature is experimental and is only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service].
+>
+>This feature is subject to change without notice.
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
 ## AEM Assets instance mapping {#aem-assets-instance-mapping}
 
 >[!NOTE]

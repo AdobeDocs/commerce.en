@@ -2,8 +2,292 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 27 18:04:33 2026
+updated: Fri Apr 10 15:40:09 2026
 entries:
+- description: Added [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist),
+    a reference for validating production [!DNL Adobe Commerce Optimizer] setup, storefront
+    go-live, SEO, CDN, integrations, security, analytics, and testing before launch.
+  versions: ''
+  type: feedback, new-topic
+  date: April 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/498
+  merge_commit: 4846deb1c55d1df713d21c26563a288f1cb3e21b
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - new-topic
+- description: 'Added [Category Merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)
+    for Adobe Commerce Optimizer: using Category rules with intelligent ranking and
+    manual actions on category pages.'
+  versions: ''
+  type: new-topic
+  date: April 8, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/483
+  merge_commit: 4ec91f6a761ff78e1e66ae18125296c68053b3f1
+  contributor: emarr
+  membership:
+  labels:
+  - new-topic
+- description: Added guidance around [adding files to products](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files)
+    in Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 7, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/500
+  merge_commit: 7845129c055619e09fbf7c5f860795be6bf81533
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated [Recommendation filters](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters)
+    with Price and Product filter procedures, price-book–based final price behavior
+    for filtering and displayed prices, and new screenshots for the Filter products
+    UI.
+  versions: ''
+  type: major-update
+  date: April 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/501
+  merge_commit: 6d67df3c05f1202e361d0c8972d6f1bf7a5b8854
+  contributor: emarr
+  membership:
+  labels:
+  - major-update
+- description: Updated [Payment Services Home](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home),
+    [Reporting](https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting),
+    and [Onboarding overview](https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard)
+    with SaaS/ACCS screenshots and UI guidance (onboarding banner, Transactions-focused
+    Home, Transactions grid).
+  versions: ''
+  type: major-update
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/487
+  merge_commit: 79c71b55e463d7e9570fe67b664b4e77a0d741f7
+  contributor: del
+  membership:
+  labels:
+  - major-update
+- description: Added April Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 1, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/499
+  merge_commit: a28d4b467dc51f70509ab19dbdbaf2cd3f59a208
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updates the Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with the latest sandbox deployment.
+  versions: ''
+  type: major-update
+  date: March 31, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/495
+  merge_commit: 4a60783dbed189475bcd0090c949cd76b0566f54
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with the latest Sandbox release information.
+  versions: ''
+  type: major-update
+  date: March 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/489
+  merge_commit: ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated [Install and access App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/install)
+    with a Commerce webhooks section and a screenshot for webhook validation errors
+    in the App Management dashboard.
+  versions: ''
+  type: technical
+  date: March 25, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/484
+  merge_commit: 86c0945bbb0a562de1b66d420dec2a05d4d81e5f
+  contributor: del
+  membership:
+  labels:
+  - technical
+- description: 'Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest)
+    to move the March release # 2 to Production.'
+  versions: ''
+  type: major-update
+  date: March 25, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/482
+  merge_commit: 522240cfd305bb00026ba477dc94e0bd2de30f06
+  contributor: jhoover
+  membership:
+  labels:
+  - major-update
+- description: Added a new automated installation for the [Tutorial Prerequisites](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites).
+  versions: ''
+  type: major-update
+  date: March 23, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/471
+  merge_commit: a383e95e23291959f039390dfd3943bf98aa83ef
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: 'Added new topics:<br/>- [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)
+    for Adobe Commerce as a Cloud Service.<br/>- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/)
+    for Adobe Commerce as a Cloud Service.<br/>- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)
+    for Adobe Commerce as a Cloud Service.<br/>Updated [Release Notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with March 2026 - release # 2 release information.'
+  versions: ''
+  type: new-topic
+  date: March 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/467
+  merge_commit: 58b94a9a587b3947d4b340ce77c8b3f7b28c27f4
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - new-topic
+  - hold for release
+- description: Added [Configure IMS user permissions for the AEM Assets Integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions)
+    to explain how to configure IMS and delivery-tier permissions to enable the Asset
+    Selector and auto-populated configuration fields (Program ID, Environment ID,
+    Domain mapping) in the Admin.
+  versions: ''
+  type: new-topic
+  date: March 17, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/465
+  merge_commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+  contributor: del
+  membership:
+  labels:
+  - new-topic
+- description: Updated [Manage Commerce media assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets)
+    and [Default automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match)
+    with clearer navigation guidance for users configuring product assets in AEM Assets.
+  versions: ''
+  type: technical
+  date: March 12, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/464
+  merge_commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+  contributor: del
+  membership:
+  labels:
+  - technical
+- description: 'Updated [AEM Assets Integration release notes](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes)
+    with v1.3.4: support for Adobe Commerce 2.4.9-beta1 and PHP 8.5, and Domain mapping
+    auto-population in the configuration UI.'
+  versions: ''
+  type: technical
+  date: March 11, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/463
+  merge_commit: 85579e3f2f8fc49f46f9201f31908602ee5d3259
+  contributor: del
+  membership:
+  labels:
+  - technical
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service with the latest release to production environments.
+  versions: ''
+  type: major-update
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/458
+  merge_commit: dd9b660729f7c8616347d3222fdfb3b83a774e56
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+  - hold for release
+- description: Added new [App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+    documentation guide to introduce App Management and how to associate, configure,
+    and manage App Builder applications with your Commerce instance.
+  versions: ''
+  type: new-topic
+  date: March 10, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/453
+  merge_commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+  contributor: del
+  membership:
+  labels:
+  - new-topic
+- description: Added storefront integration to the [Ratings tutorial](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension).
+  versions: ''
+  type: major-update
+  date: March 6, 2026
+  link: https://github.com/AdobeDocs/commerce.en/pull/15
+  merge_commit: b5c11f6aa2f81133cf06571451083afa935d69dd
+  contributor: jcalcaben
+  membership:
+  labels:
+  - major-update
+- description: Published the [Adobe Commerce Optimizer Connector v1.0.9 documentation](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
+    for the general availability release.
+  versions: ''
+  type: major-update, new-topic, technical
+  date: March 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/321
+  merge_commit: 216958e287993d1a212fb59fdaa8e2ba3e931b97
+  contributor: meker
+  membership:
+  labels:
+  - major-update
+  - new-topic
+  - technical
+- description: Updated the Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    with the latest Sandbox release.
+  versions: ''
+  type: major-update
+  date: March 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/452
+  merge_commit: 6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
+- description: Updated [Live Search Best Practices](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice#leverage-product-metadata)
+    with comprehensive guidance on choosing searchable attributes, including three
+    real-world examples of common configuration issues and a troubleshooting checklist
+    to improve search relevance.
+  versions: ''
+  type: feedback
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/398
+  merge_commit: f55cbabdc50af4e38b57ece217e5133d1f3fada8
+  contributor: emarr
+  membership:
+  labels:
+  - enhancement
+  - feedback
+- description: Added instructions for deleting an API key to the [Commerce Services
+    Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey)
+    documentation.
+  versions: ''
+  type: feedback
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/440
+  merge_commit: a12a0bca1d4a7f3b9350c704275a9e3128fa2b37
+  contributor: anchico
+  membership:
+  labels:
+  - feedback
+- description: Added a new topic about the [integration of AEM Assets with Adobe Commerce
+    Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco).
+  versions: ''
+  type: new-topic
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/442
+  merge_commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+  contributor: del
+  membership:
+  labels:
+  - new-topic
 - description: Updated [Bulk data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion)
     with an important note that Catalog configuration is not imported automatically.
   versions: ''
