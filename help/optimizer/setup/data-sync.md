@@ -52,6 +52,6 @@ For projects that use Adobe Commerce as the upstream data source through the Com
 
 ## Related topics
 
-- [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md)
+- [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
 
 
