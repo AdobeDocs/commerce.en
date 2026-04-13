@@ -16,9 +16,9 @@ Observability is a critical aspect of operating [!DNL Adobe Commerce as a Cloud 
 
 Observability gives you visibility into the health and performance of your Adobe Commerce storefront and all connected App Builder applications. By collecting telemetry data across your commerce ecosystem, you can:
 
-- **Track metrics** such as API response times, request and error rates, and resource utilization to monitor real-time performance and spot trends.
-- **Centralize logs** from your application, infrastructure, CDN, and integrations into a single view for faster troubleshooting.
-- **Trace requests** end-to-end as they flow from the frontend through Commerce and connected apps, helping you pinpoint bottlenecks and failures before they impact customers.
+* **Track metrics** such as API response times, request and error rates, and resource utilization to monitor real-time performance and spot trends.
+* **Centralize logs** from your application, infrastructure, CDN, and integrations into a single view for faster troubleshooting.
+* **Trace requests** end-to-end as they flow from the frontend through Commerce and connected apps, helping you pinpoint bottlenecks and failures before they impact customers.
 
 Together, these capabilities help you quickly identify and resolve issues, optimize performance, and ensure a reliable experience for your customers. The [observability overview](https://developer.adobe.com/commerce/extensibility/observability/) explains how [!DNL Adobe Commerce as a Cloud Service] uses OpenTelemetry to unify this telemetry collection across eventing, webhooks, and App Builder applications.
 
