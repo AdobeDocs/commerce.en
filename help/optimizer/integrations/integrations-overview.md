@@ -3,17 +3,15 @@ title: Commerce Optimizer Integrations
 description: Learn about Adobe Commerce Optimizer integrations for catalog sync, asset management, storefront optimization, and Salesforce Commerce Cloud connectivity.
 solution: Commerce
 feature: Integration, Catalog Management, Personalization
-feature-set: Commerce
 role: Developer, Admin
 level: Beginner
-topic: Integrations
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 ---
 
 # [!DNL Adobe Commerce Optimizer] integrations
 
-[!DNL Adobe Commerce Optimizer] provides several integrations so you can sync data from an Adobe Commerce on cloud or on-premises environment, manage assets, improve storefront experiences, and connect external systems. Use the sections below to understand how each integration fits with [!DNL Adobe Commerce Optimizer] and follow the links for setup, configuration, and day-to-day use.
+[!DNL Adobe Commerce Optimizer] provides several integrations that allow you to sync data from an Adobe Commerce on cloud or on-premises environment, manage assets, improve storefront experiences, and connect external systems. Use the sections below to understand how each integration works with [!DNL Adobe Commerce Optimizer] and follow the links for setup, configuration, and day-to-day use.
 
 ## Adobe Commerce Optimizer Connector
 
@@ -24,14 +22,14 @@ The Adobe Commerce Optimizer Connector is the bridge that synchronizes catalog a
 
 ## AEM Assets for Adobe Commerce Optimizer
 
-The AEM Assets integration connects Adobe Experience Manager Assets with [!DNL Adobe Commerce Optimizer] so product imagery and marketing assets stay centralized, approved, and in sync with your catalog. The integration matches assets to products by SKU, and updates flow through Adobe's integration services so storefronts reflect the latest media without manual re-uploads.
+The AEM Assets integration connects Adobe Experience Manager Assets with [!DNL Adobe Commerce Optimizer] so that you can use AEM Assets as the centralized digital asset management solution for product images with access to automated workflows for asset review and management that keep images in sync with your catalog. The integration matches assets to products by SKU, and updates flow through Adobe's integration services so that storefronts reflect the latest media without manual re-uploads.
 
 - [AEM Assets Integration for Commerce overview](../../aem-assets-integration/overview.md)
 - [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md)
 
 ## Adobe Experience Manager Sites Optimizer
 
-Adobe Experience Manager Sites Optimizer analyzes commerce and content signals to surface AI-driven **[!UICONTROL Opportunities]**—recommendations that help you improve discovery, engagement, and conversions.
+Adobe Experience Manager Sites Optimizer analyzes Commerce websites and improves performance by surfacing AI-driven **[!UICONTROL Opportunities]**—recommendations that help you improve discovery, engagement, and conversions.
 
 >[!AVAILABILITY]
 >
@@ -41,6 +39,6 @@ Adobe Experience Manager Sites Optimizer analyzes commerce and content signals t
 
 ## Commerce Salesforce Connector
 
-The Commerce Salesforce Connector (built on Adobe App Builder) syncs catalog and price data from Salesforce Commerce Cloud B2C into [!DNL Adobe Commerce Optimizer] so you can use Adobe storefront and merchandising capabilities without replatforming your Salesforce commerce backend. You can schedule syncs, run on-demand updates, and extend the integration using Salesforce Commerce APIs.
+The Commerce Salesforce Connector (built on Adobe App Builder) syncs catalog and price data from Salesforce Commerce Cloud B2C into [!DNL Adobe Commerce Optimizer] so that you can use Adobe storefront and merchandising capabilities without replatforming your Salesforce commerce backend. You can schedule syncs, run on-demand updates, and extend the integration using Salesforce Commerce APIs.
 
 - [Salesforce Commerce Connector](../developer/salesforce-connector.md)
