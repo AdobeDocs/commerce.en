@@ -26,12 +26,27 @@ The following items were released to Production environments on April 13, 2026.
 
 >[!BEGINSHADEBOX]
 
+### Implement custom quote totals with webhooks
+
+The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.execute` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement custom quote totals modifications through out-of-process extensibility. <!-- CEXT-5896 -->
+
+### Import and manage requisition lists through APIs
+
+* **REST** - JSON bulk import support for requisition lists is now available through the `/V1/import/json` endpoint, enabling integrations to programmatically migrate requisition lists and items. <!-- ACCS-542 -->
+
+* **GraphQL** - Requisition list owners can now mark a list as publicly accessible using the `setRequisitionListPublic` mutation. Public lists can be retrieved by anyone using the `publicRequisitionList` query without authentication, and their items can be added to a guest or customer cart using the `addPublicRequisitionListItemsToCart` mutation. The `clearCart` mutation is also now enabled. <!-- ACCS-713, ACCS-714, ACCS-715 -->
+
+### View the Payment Services Transactions report
+
+If you have access to [!DNL Payment Services], the [Dashboard UI](../payment-services/payments-home.md) is now available in the [!DNL Commerce Admin], providing access to the [Transactions report](../payment-services/reporting.md#transactions-report-view) for viewing and managing payment transactions. <!-- PAY-6510 -->
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
 
 * Fixed a 500 error on the Shared Catalog Assign Companies page that could occur when using large shared catalogs with the Admin UI SDK. <!-- CCSAAS-4783 -->
 
+* Fixed an issue where company customers could not see their own orders if those orders were placed before the customer was assigned to the company. <!-- ACCS-746 -->
 
 {{accs-release}}
 
