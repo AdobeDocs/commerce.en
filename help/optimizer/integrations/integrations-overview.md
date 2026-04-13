@@ -2,7 +2,7 @@
 title: Commerce Optimizer Integrations
 description: Learn about Adobe Commerce Optimizer integrations for catalog sync, asset management, storefront optimization, and Salesforce Commerce Cloud connectivity.
 solution: Commerce
-feature: Integration, Catalog Management, Personalization
+feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
