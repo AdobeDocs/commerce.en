@@ -34,7 +34,7 @@ The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.
 
 * **REST** - JSON bulk import support for requisition lists is now available through the [`/V1/import/json` endpoint](https://developer.adobe.com/commerce/webapi/rest/modules/import/#json-import), enabling integrations to programmatically migrate requisition lists and items. <!-- ACCS-542 -->
 
-* **GraphQL** - Requisition list owners can now mark a list as publicly accessible using the `setRequisitionListPublic` mutation. Public lists can be retrieved by anyone using the `publicRequisitionList` query without authentication, and their items can be added to a guest or customer cart using the `addPublicRequisitionListItemsToCart` mutation. The [`clearCart` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/) is also now enabled. <!-- ACCS-713, ACCS-714, ACCS-715 -->
+* **GraphQL** - [Requisition list](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) owners can now mark a list as publicly accessible using the `setRequisitionListPublic` mutation. Public lists can be retrieved by anyone using the `publicRequisitionList` query without authentication, and their items can be added to a guest or customer cart using the `addPublicRequisitionListItemsToCart` mutation. The [`clearCart` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/clear-cart/) is also now enabled. <!-- ACCS-713, ACCS-714, ACCS-715 -->
 
 ### View the Payment Services Transactions report
 
