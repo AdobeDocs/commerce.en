@@ -22,7 +22,7 @@ Observability gives you visibility into the health and performance of your Adobe
 
 Together, these capabilities help you quickly identify and resolve issues, optimize performance, and ensure a reliable experience for your customers. The [observability overview](https://developer.adobe.com/commerce/extensibility/observability/) explains how [!DNL Adobe Commerce as a Cloud Service] uses OpenTelemetry to unify this telemetry collection across eventing, webhooks, and App Builder applications.
 
-![Observability architecture](./assets/observability.svg){zoomable="yes"}
+![Observability architecture](./assets/observability.png){width="600" zoomable="yes"}
 
 ### Configure subscriptions
 
