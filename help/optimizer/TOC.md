@@ -9,11 +9,7 @@ recommendations: noDisplay
 
 - [What is [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [Get started](get-started.md)
-- [Integrations](./optimizer/integrations/integrations-overview.md)
-   - [Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
-   - [AEM Assets Integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco)
-   - [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities)
-   - [Salesforce Commerce Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview)
+- [Integrations](./integrations/integrations-overview.md)
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
 - [Limits and boundaries](./planning/boundaries-limits.md)
