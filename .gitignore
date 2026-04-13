@@ -6,4 +6,4 @@
 _jekyll/Gemfile.lock
 _site/
 tmp/
-.claude/
+.env
