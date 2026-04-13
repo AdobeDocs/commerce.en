@@ -80,7 +80,7 @@ Developers handle technical implementation and data integration, including platf
 |Task|Description|Link|
 |---|---|---|
 |**Access Developer Console**|Create projects and generate credentials|[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)|
-|**Ingest Catalog Data**|Import product data from existing systems| To ingest data directly into Adobe Commerce Optimizer, see [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/).<br><br>To ingest data from Commerce on cloud or on premises environments or other third-party systems, see the [Integrations](./integrations/integrations-overview.md) topic.|
+|**Ingest Catalog Data**|Import product data from existing systems| To ingest data directly into Adobe Commerce Optimizer, see [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>To ingest data from Commerce on cloud or on premises environments or other third-party systems, see the [Integrations](./integrations/integrations-overview.md){target="_blank"}  topic.|
 |**Set Up the Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
 
 ### Merchandiser tasks

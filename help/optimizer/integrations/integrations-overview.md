@@ -17,15 +17,15 @@ exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 
 The Adobe Commerce Optimizer Connector is the bridge that synchronizes catalog and pricing data between Adobe Commerce (cloud or on-premises) and [!DNL Adobe Commerce Optimizer]. When you enable the connector, Commerce remains the system of record for product data while [!DNL Adobe Commerce Optimizer] powers product discovery, recommendations, merchandising rules, analytics, and headless storefront experiences.
 
-- [Adobe Commerce Optimizer Connector overview](../../aco-connector/overview.md)
-- [Get started with the connector](../../aco-connector/get-started.md)
+- [Adobe Commerce Optimizer Connector overview](../../aco-connector/overview.md){target="_blank"}
+- [Get started with the connector](../../aco-connector/get-started.md){target="_blank"}
 
 ## Product Visuals with AEM Assets
 
 Product Visuals enables Adobe Commerce Optimizer merchants to manage product images through Adobe Experience Manager (AEM) Assets. This capability is enabled by configuring AEM Assets for Commerce Optimizer. Once the configuration is complete, you can use AEM Assets as the centralized digital asset management solution for product images with access to automated asset review and management workflows to keep images in sync with your Commerce Optimizer catalog. The integration matches assets to products by SKU, and updates flow through Adobe's integration services so that storefronts reflect the latest media without manual re-uploads.
 
 - [Product Visuals with AEM Assets](../setup/product-visuals.md)
-- [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md)
+- [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer
 
