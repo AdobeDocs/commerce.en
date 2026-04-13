@@ -12,7 +12,7 @@ recommendations: noDisplay
 - [Integrations](./integrations/integrations-overview.md)
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
-- [Limits and boundaries](./planning/boundaries-limits.md)
+- [Limits and boundaries](boundaries-limits.md)
 - Managing Results {#manage-results}
    - [Opportunities](./manage-results/opportunities.md)
    - [Success metrics](./manage-results/success-metrics.md)
