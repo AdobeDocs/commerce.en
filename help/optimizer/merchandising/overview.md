@@ -15,7 +15,7 @@ Product Discovery equips merchandisers with powerful tools to curate and optimiz
 
 With product discovery, you can:
 
-* **Configure [semantic search](../settings.md)** in Settings to define which product attributes are searchable and how they rank. Semantic search uses AI to understand intent and natural language (ideal for descriptive and synonym-style queries).
+* **Configure [semantic search](../settings.md)** in Settings to define the product attributes to be used in semantic search and their priority. Semantic search uses AI to understand intent and natural language (ideal for descriptive and synonym-style queries).
 * **Configure [facets](./facets/overview.md), [merchandising search and category rules](./rules/overview.md) and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
 
 ## Recommendations

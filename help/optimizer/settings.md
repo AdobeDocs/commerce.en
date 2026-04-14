@@ -90,47 +90,6 @@ Set the Language setting to the primary language of the catalog. When you change
 |Turkish|tr|
 |Thai|th|
 
-<!--
->[!TAB Keyword search]
-
-## Keyword search attributes
-
-Keyword search matches shopper queries to product attributes using exact text. In this section, select which attributes are searchable and set a **Weight** for each so that matches in higher-weight attributes rank higher in search results.
-
-![Keyword search attributes](./assets/keyword-search-attributes.png)
-
-1. On the **Settings** workspace, select the **[!UICONTROL Keyword search]** tab.
-1. Optionally, select a **[!UICONTROL Catalog source]** at the top of the page. Keyword search attributes are configured per catalog source.
-1. In the **Keyword search attributes** section, a table lists the selected attributes (if any). To add attributes, select **[!UICONTROL Select attributes]**.
-
-   The **Select attributes for keyword search** dialog appears.
-
-1. Select the product attributes to include in keyword search by selecting the checkbox for each attribute, then click **[!UICONTROL Add selected]**.
-
-   The dialog closes and the selected attributes appear in the **Keyword search attributes** table.
-
-1. Set the **[!UICONTROL Weight]** for each attribute using the slider.
-
-   Weight controls how much the attribute influences search ranking. A higher weight makes matches in that attribute appear higher in search results. For example, if **Name** has a higher weight than **SKU**, a query that matches both will rank name matches higher.
-
-1. To remove an attribute from keyword search, select the minus icon on that row.
-1. When you are finished, click **[!UICONTROL Publish]**.
-
-   The **Publish** button is enabled only when there are unsaved changes. After publishing, updated settings are applied to the catalog; indexing may take a few minutes to reflect on the storefront.
-
-### Field descriptions
-
-| Field | Description |
-| --- | --- |
-| Attribute label | The display name of the product attribute. |
-| Attribute code | The system code for the attribute. |
-| Weight | Importance of this attribute in keyword search ranking. Higher values make matches in this attribute rank higher in results. Use the slider to set the weight. |
-
->[!TIP]
->
->Include attributes shoppers often search by, such as product name, SKU, category, color, size, and brand. Start with name and SKU, then add attributes based on how your customers search.
--->
-
 >[!TAB Semantic search]
 
 ## Semantic search (beta) {#semantic-search}
@@ -185,7 +144,7 @@ In this section, you select which product attributes to use for semantic search.
 
 1. Set the **[!UICONTROL Priority]** for each attribute.
 
-   Priority sets the importance of each attribute in semantic search. A priority of `1` is highest; that attribute is searched first.
+   Priority sets the order in which text from attributes are concatenated. Since the model truncates tokens beyond a certain limit, setting a priority ensures that tokens from the most important attributes are not truncated.
 
 1. To remove an attribute from semantic search, select the minus icon on that row.
 1. When you are finished setting the priority, click the **[!UICONTROL Publish]** button.
@@ -215,6 +174,7 @@ Avoid using semantic search for:
 - UPC/EAN codes
 - Identifiers and technical codes
 - Numeric-only fields
+- Boolean fields such as weight, price, and so on because only attribute values are indexed
 - Lengthy text attributes — Values from all semantic attributes are concatenated in **priority** order into one string used to generate vector embeddings. Text beyond the model's current effective length (about 256 tokens; longer input is truncated) may not be encoded reliably, so very long fields add little benefit. Token limits and the underlying model can change in a future release.
 
 >[!TIP]
@@ -298,7 +258,7 @@ Semantic search adds AI processing to your search operations. This includes:
 Keep the following constraints in mind when you use semantic search (beta):
 
 - **Catalog language:** Semantic search is available only for **English**-language catalogs.
-- **Attribute limit:** You can assign up to **100** product attributes to semantic search.
+- **Attribute limit:** You can assign up to **20** product attributes to semantic search.
 - **Combined text and embeddings:** Attribute values are concatenated in priority order for embedding; input beyond the model's current effective length (about 256 tokens) is truncated, and token limits or the model may change in a future release. For guidance on long fields, see [Recommended attributes for semantic search](#recommended-attributes-for-semantic-search).
 - **Data space cleanup:** If a **data space cleanup** runs on your project, existing semantic search attribute configuration is cleared. Reconfigure attributes using catalog ingestion or the **[!UICONTROL Semantic search beta]** tab after product metadata has resynced, and verify the configuration if it does not match what you expect after sync.
 
@@ -317,7 +277,7 @@ Use the **[!UICONTROL Advanced search]** tab to adjust how strongly semantic mat
 **To configure advanced search:**
 
 1. On the **Settings** workspace, select the **[!UICONTROL Advanced search]** tab.
-1. Under **Semantic search boost**, adjust the **[!UICONTROL Semantic boost]** slider. This control applies a percentage boost to prioritize semantically relevant results.
+1. Under **Semantic search boost**, adjust the **[!UICONTROL Semantic boost]** slider. This control applies a boost to prioritize semantically relevant results.
 1. Under **Similarity threshold**, adjust the **[!UICONTROL Similarity threshold]** slider. This control applies a percentage to set the minimum semantic match score required for results to appear.
 
    A higher threshold keeps only stronger semantic matches visible and can reduce noise from weak matches. A lower threshold allows more products through when semantic confidence is borderline.
@@ -334,25 +294,9 @@ Use the **[!UICONTROL Advanced search]** tab to adjust how strongly semantic mat
 
 | Control | Description |
 | --- | --- |
-| Semantic boost | Percentage boost applied to prioritize semantically relevant results in ranking. |
+| Semantic boost | A boost applied to prioritize semantically relevant results in ranking. |
 | Similarity threshold | Percentage that sets the minimum semantic match score required for a product to appear in results. |
 | Use fuzzy search as a fallback when no direct search results are found? | **Yes** enables fuzzy search only when direct (for example, keyword) search does not return results. **No** disables that fallback. |
 | Fuzzy search similarity threshold | When fuzzy fallback is **Yes**, the minimum similarity (percentage) fuzzy matches must meet to be shown. |
 
 >[!ENDTABS]
-
-
-<!--
-### Keyword search versus semantic search
-
-[!DNL Adobe Commerce Optimizer] offers two search approaches that you can use separately or together:
-
-| | Keyword search | Semantic search |
-| --- | --- | --- |
-| **How it works** | Matches the exact words in the query to product attributes (name, SKU, description, and so on). You choose which attributes are searchable and set a **Weight** to influence ranking. | Uses AI to understand the *meaning* of the query and matches by intent and context, not just exact text. You choose which attributes are used for semantic matching and set **Priority**. |
-| **Best for** | SKUs, part numbers, brand names, and precise product terms. Shoppers who know what they want and type specific terms. | Natural language, phrases, synonyms, and descriptive queries. Shoppers who search like they talk ("dress for beach wedding," "comfortable running shoes"). |
-| **When to use** | Always—keyword search is the foundation. Use it for accurate, fast matches on identifiers and exact terms. | When you want to reduce zero-result searches, support natural language, or improve relevance for vague or descriptive queries. |
-| **Together** | Use **keyword search** for the attributes and terms that need exact matching (especially SKU and identifiers). Use **semantic search** for descriptive attributes (name, description, category) so natural-language and synonym-style queries still find products. | |
-
-Configure keyword search in the **[!UICONTROL Keyword search]** tab and semantic search in the **[!UICONTROL Semantic search]** tab on this page.
--->
