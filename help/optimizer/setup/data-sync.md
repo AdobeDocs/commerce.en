@@ -48,5 +48,10 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 
 ## Monitor data sync status
 
-For projects that use Adobe Commerce as the upstream data source, you can monitor the data export process and initiate resync operations from the [Data Feed Sync status page](../../data-export/data-synchronization.md) in the Commerce Admin.
+For projects that use Adobe Commerce as the upstream data source through the Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the [Data Feed Sync status page](../../data-export/data-synchronization.md) in the Commerce Admin.
+
+## Related topics
+
+- [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
+
 

@@ -16,11 +16,39 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 {#latest}
+## April 2026 - release #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items will be released to Production environments on April 16, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Implement custom quote totals with webhooks
+
+The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.execute` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement custom quote totals modifications through out-of-process extensibility. <!-- CEXT-5896 -->
+
+### View the Payment Services Transactions report
+
+If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/production) enabled, the [Dashboard UI](../payment-services/payments-home.md) is now available in the [!DNL Commerce Admin], providing access to the [Transactions report](../payment-services/reporting.md#transactions-report-view) for viewing and managing payment transactions. <!-- PAY-6510 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed a 500 error on the Shared Catalog Assign Companies page that could occur when using large shared catalogs with the Admin UI SDK. <!-- CCSAAS-4783 -->
+
+* Fixed an issue where company customers could not see their own orders if those orders were placed before the customer was assigned to the company. <!-- ACCS-746 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## April 2026
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 The following items were released to Production environments on April 1, 2026.
 
@@ -57,8 +85,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an error that could occur when cancelling a guest order with order comments. <!-- ACCS-674 -->
 
 * Fixed an error that could occur when adding a grouped product with many associated items to a requisition list. <!-- ACCS-627 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -193,8 +219,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue with creating and deleting "File" attribute types in the [!DNL Commerce Admin]. <!-- ACCS-605, ACCS-606 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 
@@ -248,8 +272,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue that caused some webhooks fields to display incorrectly in the [!DNL Commerce Admin] UI. <!-- CEXT-5874 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## February 2026 - release #2
@@ -275,8 +297,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an error that could cause display issues in the [!DNL Commerce Admin] product list. The product list now limits the number of shared catalogs displayed to improve performance. <!-- CCSAAS-1242 -->
 
 * Fixed a GraphQL error that could prevent adding customizable gift cards to the cart. <!-- ACCS-313 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -325,8 +345,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Simplified the Asset Selector configuration by automatically providing region-specific IMS Client IDs. Merchants no longer need to submit support tickets to configure Asset Selector for mapping product category images with assets. The system now automatically uses dedicated IMS Client IDs based on the Commerce region. <!-- ACCS-175 -->
 
 * Various performance and optimization improvements. <!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -396,8 +414,6 @@ The following selected enhancements, optimizations, and bug fixes included in th
 * Resolved an issue where product custom attributes could not be updated through the REST API when [!DNL AEM Assets integration] was enabled and the product had images. <!-- ACAP-1178 -->
 
 * Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 --><!-- CCSAAS-4330 --><!-- CCSAAS-3669 --><!-- CCSAAS-4462 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
