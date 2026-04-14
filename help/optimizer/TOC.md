@@ -8,15 +8,16 @@ recommendations: noDisplay
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
 - [What is [!DNL Adobe Commerce Optimizer]?](overview.md)
-- [Get Started](get-started.md)
+- [Get started](get-started.md)
+- [Integrations](./integrations/integrations-overview.md)
 - [User and identity management](user-management.md)
 - [Shared responsibility](shared-responsibility.md)
 - [Limits and boundaries](boundaries-limits.md)
 - Managing Results {#manage-results}
    - [Opportunities](./manage-results/opportunities.md)
-   - [Success Metrics](./manage-results/success-metrics.md)
-   - [Search Performance](./manage-results/search-performance.md)
-   - [Recommendations Performance](./manage-results/recommendation-performance.md)
+   - [Success metrics](./manage-results/success-metrics.md)
+   - [Search performance](./manage-results/search-performance.md)
+   - [Recommendations performance](./manage-results/recommendation-performance.md)
 - Merchandising {#merchandising}
    - [Overview](./merchandising/overview.md)
    - Recommendations {#recommendations}
@@ -25,7 +26,7 @@ recommendations: noDisplay
       - [Filters](./merchandising/recommendations/filters.md)
       - [Types](./merchandising/recommendations/types.md)
       - [Best practices](./merchandising/recommendations/best-practice.md)
-   - Merchandising Rules {#rules}
+   - Merchandising rules {#rules}
       - [Overview](./merchandising/rules/overview.md)
       - [Workspace](./merchandising/rules/workspace.md)
       - [Create and manage](./merchandising/rules/add.md)
@@ -41,22 +42,22 @@ recommendations: noDisplay
       - [Create and manage](./merchandising/synonyms/add.md)
       - [Types](./merchandising/synonyms/type.md)
       - [Best practices](./merchandising/synonyms/best-practice.md)
-- Store Setup {#setup}
-   - [Catalog Views](./setup/catalog-view.md)
-   - [Catalog Layers](./setup/catalog-layer.md)
+- Store setup {#setup}
+   - [Catalog views](./setup/catalog-view.md)
+   - [Catalog layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
-   - [Price Books](./setup/pricebooks.md)
-   - [Product Visuals](./setup/product-visuals.md)
-   - [Data Sync](./setup/data-sync.md)
+   - [Price books](./setup/pricebooks.md)
+   - [Product visuals](./setup/product-visuals.md)
+   - [Data sync](./setup/data-sync.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)
 - [Storefront](storefront.md)
 - [Settings](settings.md)
-- Use Case {#use-case}
+- Use case {#use-case}
    - [Storefront and Catalog Admin end-to-end use case](./use-case/admin-use-case.md)
 - Launch site {#launch}
    - [Launch checklist](./launch/launch-checklist.md)
-- Developer Resources {#developer}
-   - [Developer Guide and API References](https://developer.adobe.com/commerce/services/optimizer/)
+- Developer resources {#developer}
+   - [Developer guide and API references](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
 - [Release notes](release-notes.md)
