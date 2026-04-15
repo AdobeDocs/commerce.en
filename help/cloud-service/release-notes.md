@@ -36,7 +36,7 @@ The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.
 >
 >This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
 
-[Email reminder rules](experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules-create) now support an optional rule reusability setting that allows the same rule to reapply to a customer after the original trigger condition no longer applies.
+[Email reminder rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) now support an optional rule reusability setting that allows the same rule to reapply to a customer after the original trigger condition no longer applies.
 
 For example, if a customer abandons a cart, completes the purchase, and later abandons a new cart, the rule can trigger again. Without this setting, a customer who clears the original trigger is permanently excluded from future matches of the same rule.
 
