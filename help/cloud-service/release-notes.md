@@ -30,6 +30,16 @@ The following items will be released to Production environments on April 16, 202
 
 The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.execute` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement custom quote totals modifications through out-of-process extensibility. <!-- CEXT-5896 -->
 
+### Reusable email reminder rules (experimental)
+
+>[!IMPORTANT]
+>
+>This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
+
+[Email reminder rules](experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules-create) now support an optional rule reusability setting that allows the same rule to reapply to a customer after the original trigger condition no longer applies.
+
+For example, if a customer abandons a cart, completes the purchase, and later abandons a new cart, the rule can trigger again. Without this setting, a customer who clears the original trigger is permanently excluded from future matches of the same rule.
+
 ### View the Payment Services Transactions report
 
 If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/production) enabled, the [Dashboard UI](../payment-services/payments-home.md) is now available in the [!DNL Commerce Admin], providing access to the [Transactions report](../payment-services/reporting.md#transactions-report-view) for viewing and managing payment transactions. <!-- PAY-6510 -->
