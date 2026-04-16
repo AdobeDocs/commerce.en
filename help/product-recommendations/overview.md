@@ -49,4 +49,12 @@ Watch this video to learn about [!DNL Product Recommendations]:
 
 If you do not submit a query for the catalog data in your testing environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any query. Catalog data in your production environment is not affected by this policy.
 
+### Inactive testing environment
+
 To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) with the title: "Reactivate [!DNL Product Recommendations]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.
+
+### Empty catalog
+
+If your environment has an empty catalog 45 days after being created, the catalog data is set to hibernation mode and no data is returned for any query. This inludes both production and testing environments.
+
+To re-activate the catalog data in your environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Product Recommendations]" and include the environment IDs. The catalog data in your environment should be restored within couple of hours.
