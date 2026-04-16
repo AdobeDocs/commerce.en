@@ -7,11 +7,15 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Use [!DNL Adobe LLM Optimizer] with [!DNL Adobe Commerce]
 
-After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), merchandisers and admins work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and, when ready, push approved changes into the catalog. This topic describes Commerce-relevant optimization types, how to move through the **[!UICONTROL Opportunities]** experience, deploy behavior in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For architecture context (Catalog Agent, MCP, AI visibility), see the [integration overview](../overview.md).
+>[!IMPORTANT]
+>
+>This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
-## Understand Commerce optimizations in LLM Optimizer
+After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), you work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and push approved changes into the catalog when you are ready. This article describes Commerce-related optimization types, how to use the **[!UICONTROL Opportunities]** experience, deploy behavior in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For architecture context (Catalog Agent, MCP, and AI visibility), see the [integration overview](../overview.md).
 
-LLM Optimizer surfaces more than one kind of improvement. At a high level:
+## Understand Commerce optimizations in LLM Optimizer {#understand-optimizations}
+
+LLM Optimizer surfaces **[!UICONTROL Product Detail Page Enrichment]** and **[!UICONTROL Product Catalog Enrichment]** for Commerce-backed catalogs.
 
 | Focus | What it addresses |
 | --- | --- |
@@ -25,74 +29,68 @@ Use the **[!UICONTROL Opportunities]** area to see which type applies to a given
 **To open Commerce-related opportunities:**
 
 1. In the left rail, click **[!UICONTROL Opportunities]**.
-1. Apply the **[!UICONTROL Commerce]** (or **[!UICONTROL Commerce opportunities]**) filter so the list shows optimization types that target your [!DNL Adobe Commerce] catalog or storefront.
-1. Select the card for **[!UICONTROL Product Detail Page Enrichment]** or **[!UICONTROL Product Catalog Enrichment]** depending on what you want to work on.
+1. Click **[!UICONTROL Commerce Opportunity]** to show optimization types that target your [!DNL Adobe Commerce] catalog or storefront (control label may vary slightly by release).
+1. Select **[!UICONTROL Product Catalog Enrichment]** or **[!UICONTROL Product Detail Page Enrichment]**, depending on what you want to work on.
 
-![Commerce Opportunities](../assets/llmo-opportunities.png)
+![Commerce opportunities filter and optimization types](../assets/llmo-opportunities.png)
 
-Inside an opportunity, you typically work across tabs or sections such as **[!UICONTROL Current suggestions]**, **[!UICONTROL Fixed suggestions]**, **[!UICONTROL Ignored suggestions]**, and **[!UICONTROL Deploy optimizations]** (exact names can vary by release). Search or filter by **SKU** or URL to find a product row.
+### Review and deploy PDP enrichment {#review-deploy-pdp}
 
-## Review and deploy PDP enrichment
+PDP enrichment improves what **bots and models** can read from a product URL while you confirm that the **shopper-visible** page still looks correct.
 
-PDP enrichment is meant to improve what **bots and models** can read from a product URL while you confirm the **shopper-visible** page still looks correct.
+**To review and deploy PDP enrichment:**
 
-1. Open **[!UICONTROL Product Detail Page Enrichment]** from **[!UICONTROL Opportunities]** (see [Navigate Commerce opportunities](#navigate-commerce-opportunities)).
-1. On **[!UICONTROL Current suggestions]** (or the equivalent), locate your SKU or URL and click **[!UICONTROL Preview]** to open the proposed enrichment. Content is grounded in your Commerce catalog but structured for AI consumption.
-1. Select the row for the SKU you want to change, then click **[!UICONTROL Deploy optimization]** and confirm.
+1. Open **[!UICONTROL Product Detail Page Enrichment]** from **[!UICONTROL Opportunities]**.
+1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]** (or the equivalent tab for open suggestions).
+1. For a URL or SKU, click **[!UICONTROL Preview]**. The proposed update appears beside or below the table. The content comes from your Commerce catalog but is structured for AI consumption.
+1. Optional: Click **[!UICONTROL Copy]** to paste the content into an external editor, or click **[!UICONTROL Edit suggestion]** to edit in place.
+1. Select the row for the URL or SKU to update, click **[!UICONTROL Deploy optimizations]**, and confirm. (The exact deploy control label may be singular or plural depending on your release.)
 
-After deploy, re-check the live PDP: the **human** view should match your expectations (for example, expandable sections unchanged where the product is designed that way). If your team uses optional **AI Content Visibility** tooling, run the same **human versus agent** comparison you used before deploy—the **agent** view should now include enrichment that was previously missing or unstructured.
+After deploy, re-check the live PDP. The **human** view should match your expectations (for example, expandable sections unchanged where the product is designed that way). If your organization provides optional **AI Content Visibility** tooling, run the same **human** versus **agent** comparison you used before deploy—the **agent** view should now include enrichment that was previously missing or unstructured.
 
-## Review the Product Catalog Enrichment opportunity
+### Review and deploy product catalog enrichment {#review-deploy-catalog}
 
-In the **[!UICONTROL Opportunities]** area, open the optimization card for **[!UICONTROL Product Catalog Enrichment]** (name may vary slightly by release). The detail experience follows standard LLM Optimizer patterns and typically includes:
+**To review and deploy product catalog enrichment:**
 
-1. **[!UICONTROL Overview]** — what the optimization does and why it matters.
-1. **[!UICONTROL Guidance]** — Adobe's point of view on how the change helps discovery and accuracy in LLM contexts.
-1. **[!UICONTROL Opportunity Plan]** — recommended steps to evaluate and roll out the change.
-1. **[!UICONTROL URLs with Suggestions]** — storefront URLs where an opportunity was identified.
+1. Open **[!UICONTROL Product Catalog Enrichment]** from **[!UICONTROL Opportunities]**.
+1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]** (or the equivalent tab).
+1. Click the expand control for the URL or SKU row to show the proposed **Product Name** and **Product Description** enrichments.
+1. Optional: Click the edit icon to adjust the proposed name or description before you deploy.
+1. Select the row for the URL or SKU to update, click **[!UICONTROL Deploy optimizations]** (or **[!UICONTROL Deploy optimization]**), and confirm.
 
-For each suggestion you can:
-
-- Compare **current** versus **proposed** product name and description.
-- **Edit** the proposed text before deployment if you want a hybrid version.
-- Choose to deploy **name only**, **description only**, or **both**.
-- Read the **justification** that explains why LLM Optimizer proposed the change.
-
-On **[!UICONTROL Current suggestions]**, expand a product row to see **current** and **suggested** name and description side by side. Suggested copy often reads as a stronger **product narrative** (use cases and intent) than a bare SKU-style label—compare carefully before you deploy.
-
-## Deploy catalog updates to Adobe Commerce
-
-When you choose **[!UICONTROL Deploy optimization]** for product name or description:
-
-- LLM Optimizer sends an update request to **[!DNL Adobe Commerce]** for the affected **SKU**.
-- **Name and description are updated in the main catalog tables** used by the Admin. After a successful deploy, workflows that read those attributes—such as the product grid—should show the **LLM Optimizer-approved** values without extra manual steps in Commerce.
+When you deploy product name or description changes, **Catalog Agent** writes the approved values into your [!DNL Adobe Commerce] catalog.
 
 >[!IMPORTANT]
 >
 >Treat deploy as a **production catalog change**. Use your normal change-control, staging, and QA practices. Deploy only after merchandising and SEO stakeholders agree on the final copy.
 
-Select the product, set the checkboxes for **product name** and/or **product description** to match what you want to push, click **[!UICONTROL Deploy optimization]**, and confirm. Catalog Agent writes the approved values into your [!DNL Adobe Commerce] catalog.
+## Verify updates in the Commerce Admin {#verify-in-admin}
 
-### Verify catalog enrichment in the Admin
+**To verify deployed catalog enrichment:**
 
 1. Log in to the [!DNL Adobe Commerce] **Admin**.
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 1. Use filters and the **store view** selector as needed (for example, **[!UICONTROL Default Store View]**), then search for the **SKU**.
-1. Open the product in edit mode.
+1. Open the product in edit mode. The product form shows the enriched **product name**.
 
-The grid and product form should show the **LLM Optimizer**-approved name and, under **[!UICONTROL Content]**, the updated **description** when you deployed description changes.
+   ![Product name field after LLM Optimizer enrichment](../assets/llmo-admin-name.png)
 
-If the form shows an option such as **[!UICONTROL Override LLM Optimizer Provided Product Name]** (label may vary by release), you can use it to prefer a manually entered name while keeping merchandising control. Manual catalog edits can mark related LLM Optimizer opportunities **stale**; see [Manual override in the Admin](#manual-override-in-the-admin).
+1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Product Name]** if you want to keep a manually entered name instead. Manual overrides affect how opportunities stay in sync with the catalog; see [Manual override in the Admin](#manual-override-in-the-admin).
+1. Expand the **[!UICONTROL Content]** section and locate the **description** field. The enriched description appears when you deployed description changes.
 
-### Verify catalog enrichment on the storefront
+   ![Description field after LLM Optimizer enrichment](../assets/llmo-admin-description.png)
 
-Search for the SKU on your storefront and open the PDP. Confirm that the **name** and any storefront regions that surface the long **description** reflect what you approved, in addition to checking downstream channels that consume the same catalog attributes.
+1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Description]** (label may vary by release) if you want to keep a manually entered description instead.
 
-### PDP enrichment deploy and rollback
+## Verify updates on the storefront {#verify-storefront}
 
-If your project includes **PDP enrichment** opportunities, deploy and **rollback** behavior may support **bulk** or **per-URL** actions depending on the capability. Follow LLM Optimizer UI options for rollback; Commerce core name/description rollback for **[!UICONTROL Product Catalog Enrichment]** is effectively a new catalog edit or a follow-up opportunity, not a separate "undo" button in Commerce unless your team implements one.
+Search for the SKU on your storefront and open the PDP. Confirm that the **name** and any regions that surface the long **description** reflect what you approved. Also confirm downstream channels that consume the same catalog attributes when they matter for your rollout.
 
-## Overrides, ingestion, and stale opportunities
+## PDP enrichment rollback {#pdp-rollback}
+
+If your project includes PDP enrichment opportunities, **rollback** behavior may support **bulk** or **per-URL** actions, depending on your LLM Optimizer release. Follow the in-product options for rollback. For **[!UICONTROL Product Catalog Enrichment]**, undoing a name or description in Commerce is effectively a new catalog edit or a follow-up opportunity, not a separate undo control in the Admin unless your team implements one.
+
+## Overrides, ingestion, and stale opportunities {#overrides-ingestion}
 
 After LLM Optimizer updates a product's name or description, other systems may change the same fields. Behavior distinguishes *Admin* edits from **automated ingestion** (REST API, CSV import, PIM feed, and similar).
 
@@ -106,13 +104,13 @@ If the external process sends a **new** value that is not merely a repeat of the
 
 ### Manual override in the Admin {#manual-override-in-the-admin}
 
-If a user **manually** edits the product name or description in the [!DNL Adobe Commerce] *Admin* UI:
+If **you** manually edit the product name or description in the [!DNL Adobe Commerce] *Admin*:
 
 - The *Admin* value **wins** as the system of record for that manual change.
 - The LLM Optimizer opportunity is marked **stale**.
-- In LLM Optimizer, the UI returns toward showing the **original** state relative to that opportunity so you can re-baseline or accept a new suggestion if analysis runs again.
+- In LLM Optimizer, the UI moves back toward the **original** state for that opportunity so you can re-baseline or accept a new suggestion if analysis runs again.
 
-These rules help teams know whether LLM Optimizer, feeds, or *Admin* edits are authoritative when multiple channels touch the same SKU.
+These rules help you know whether LLM Optimizer, feeds, or *Admin* edits are authoritative when multiple channels touch the same SKU.
 
 ## Best practices
 
