@@ -15,7 +15,7 @@ Product Discovery equips merchandisers with powerful tools to curate and optimiz
 
 With product discovery, you can:
 
-* **Configure [facets](./facets/overview.md), [merchandising rules](./rules/overview.md), and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
+* **Configure [facets](./facets/overview.md), [merchandising search and category rules](./rules/overview.md) and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
 * **Create intuitive, goal-oriented search experiences** that reflect your merchandising strategy and seasonal priorities.
 * **Use AI-driven dynamic faceting and result re-ranking** to adapt search results in real time based on shopper behavior—boosting engagement and sales.
 * **Ensure promotional and high-priority items surface effectively** to align search outcomes with business goals.
