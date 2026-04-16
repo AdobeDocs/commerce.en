@@ -32,6 +32,16 @@ _February 11, 2025_
 
 +++
 
+## v1.3.5
+
+_April 1, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1223 --> Fixed an issue where duplicate sets of product image roles appeared in the Admin for configurable products.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue CCSAAS-4769 --> Fixed an issue in `UpdateAssetImageRolesDataPatch` that caused an integrity constraint violation during upgrades or data patches.
+
 ## v1.3.4
 
 _March 11, 2026_
