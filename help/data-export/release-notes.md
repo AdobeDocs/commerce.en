@@ -23,7 +23,7 @@ Updates include:
 
 ### 103.4.22 Release
 
-_April 10, 2026_
+_April 13, 2026_
 
 ![Fix](../assets/fix.svg) **Improved data synchronization**
 
