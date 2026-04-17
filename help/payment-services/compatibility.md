@@ -15,9 +15,9 @@ exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
 To use [!DNL Payment Services], you'll need to first connect your Commerce instance. **You set up this connection only once**.
 
 1. If you are unsure whether your instance is connected, navigate to **System** > Services > **Commerce Services Connector** and view the public and private API key values in the Sandbox Keys and Production Keys sections, and the Project and Data Space fields in the SaaS Identifier section. If those values are present, then your instance is connected.
-   
-1. If you still need to connect your instance, view the instructions on the [Commerce Services Connector](../landing/saas.md) page. 
-   
+
+1. If you still need to connect your instance, view the instructions on the [Commerce Services Connector](../landing/saas.md) page.
+
    >[!TIP]
    >
    > See our [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) tutorial video for additional information.
@@ -28,9 +28,9 @@ To use [!DNL Payment Services], you'll need to first connect your Commerce insta
 >
 > All merchants entitled for [!DNL Payment Services] can use **one production data space** and **two testing data spaces**.
 
-## Standard vs. Advanced [!DNL Payment Services] Experience 
+## Standard vs. Advanced [!DNL Payment Services] Experience
 
-[!DNL Payment Services] provides **Standard** (Express Checkout) and **Advanced** (fully supported) payment options and onboarding flows, depending on the country in which you operate. 
+[!DNL Payment Services] provides **Standard** (Express Checkout) and **Advanced** (fully supported) payment options and onboarding flows, depending on the country in which you operate.
 
 >[!NOTE]
 >
@@ -92,13 +92,13 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 See the [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
-To get the full instructions and start the onboarding process, see [Get Started with [!DNL Payment Services]](onboard.md). 
+To get the full instructions and start the onboarding process, see [Get Started with [!DNL Payment Services]](onboard.md).
 
 ### Accepted credit cards and currencies
 
-[!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information on setting up currency rates.
+[!DNL Payment Services] accepts the currencies of the countries in which it is available. See [Currency configuration](currencyhttps://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information on setting up currency rates.
 
-For more information on the currencies and payment methods available with PayPal products and services, refer to the following pages: 
+For more information on the currencies and payment methods available with PayPal products and services, refer to the following pages:
 
 * [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 

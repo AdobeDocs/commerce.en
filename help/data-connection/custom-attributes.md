@@ -15,7 +15,7 @@ In this article, you learn how to add custom attributes to back office events. W
 
 Custom attributes are supported at two levels:
 
-- Order level 
+- Order level
 - Order item level
 
 >[!NOTE]
@@ -366,5 +366,5 @@ View the [Data Customization](connect-data.md#data-customization) tab in the Adm
 If you see the message `No custom order attributes found.` on the **[!UICONTROL Data Customization]** tab, confirm the following:
 
 1. You have completed the prerequisites to enable the [Data Connector extension](overview.md#prerequisites).
-1. You have configured [custom order attributes](#add-custom-order-attributes).
+1. You have configured [custom order attributes](#add-custom-attributes-to-orders).
 1. At least one order event has been generated.
