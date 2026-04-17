@@ -8,6 +8,10 @@ exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 
 The [!DNL data export] extension provides logs to track data collection and synchronization processes.
 
+>[!NOTE]
+>
+>You can also track the health and performance of data export feeds for product and category date from the [Data Feed Sync Status dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Admin.
+
 ## Logs
 
 Logs are available in the `var/log` directory on the Commerce application server.
