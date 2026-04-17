@@ -10,7 +10,7 @@ The [!DNL data export] extension provides logs to track data collection and sync
 
 >[!NOTE]
 >
->You can also track the health and performance of data export feeds for product and category date from the [Data Feed Sync Status dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Admin.
+>You can also track the health and performance of data export feeds for product and category data from the [Data Feed Sync Status dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Admin.
 
 ## Logs
 
