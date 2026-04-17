@@ -129,8 +129,6 @@ In this section, you select which product attributes to use for semantic search.
 >
 >Before you enable semantic search, review the [performance impact](#performance-impact) described below, especially if you have a large catalog.
 
-![Semantic search attribute configuration](./assets/semantic-search-attributes.png)
-
 **To enable semantic search:**
 
 1. On the **Settings** workspace, select the **[!UICONTROL Semantic search beta]** tab.
@@ -141,10 +139,12 @@ In this section, you select which product attributes to use for semantic search.
 1. Select the product attributes to include in semantic search by selecting the checkbox for each attribute, then click **[!UICONTROL Add selected]**.
 
    ![Select attributes](./assets/select-attributes.png)
-   
+
    The dialog closes and the selected attributes appear in the **Semantic search attributes** table.
 
-1. Set the **[!UICONTROL Priority]** for each attribute.
+   ![Semantic search attribute configuration](./assets/semantic-search-attributes.png)
+
+1. Click and drag an attribute row to a different location in the table to set the **[!UICONTROL Priority]** for each attribute.
 
    Priority sets the order in which text from attributes are concatenated. Since the model truncates tokens beyond a certain limit, setting a priority ensures that tokens from the most important attributes are not truncated.
 
