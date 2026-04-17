@@ -140,6 +140,8 @@ In this section, you select which product attributes to use for semantic search.
 
 1. Select the product attributes to include in semantic search by selecting the checkbox for each attribute, then click **[!UICONTROL Add selected]**.
 
+   ![Select attributes](./assets/select-attributes.png)
+   
    The dialog closes and the selected attributes appear in the **Semantic search attributes** table.
 
 1. Set the **[!UICONTROL Priority]** for each attribute.
