@@ -96,7 +96,7 @@ To get the full instructions and start the onboarding process, see [Get Started 
 
 ### Accepted credit cards and currencies
 
-[!DNL Payment Services] accepts the currencies of the countries in which it is available. See [Currency configuration](currencyhttps://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information on setting up currency rates.
+[!DNL Payment Services] accepts the currencies of the countries in which it is available. See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information on setting up currency rates.
 
 For more information on the currencies and payment methods available with PayPal products and services, refer to the following pages:
 
