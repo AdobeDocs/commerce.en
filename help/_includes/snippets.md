@@ -1,5 +1,12 @@
 # Commerce snippets
 
+
+## Data Synchronization check for Optimizer {#aco-data-sync-verification}
+
+>[!NOTE]
+>
+>If you have installed the Adobe Commerce Optimizer Connector to export catalog data to Adobe Commerce Optimizer, use the [Data Sync page](../optimizer/setup/data-sync.md) in the Commerce Optimizer UI to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
+
 ## ACCS early access {#accs-early-access}
 
 >[!NOTE]
