@@ -171,6 +171,7 @@ Using the API credentials and instance details you gathered in the previous step
 ## Verify that the data sync is working
 
 After you enable the integration, data sync begins automatically. Depending on catalog size, the initial sync can take from a few minutes to several hours.
+You can monitor and verify that the sync is working from the [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dashboard available in the Admin. 
 
 1. **Check sync status in the Commerce Admin:**
 
