@@ -83,6 +83,10 @@ Most synchronization activities are processed automatically based on the applica
 
 - [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce projects integrated with Adobe Commerce Optimizer (Adobe-managed SaaS infrastructure)."} **[Data Sync Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check catalog data availability for your storefront from the Data Sync page in Adobe Commerce Optimizer. This dashboard shows the synchronization status of the data export feeds.
 
+>[!NOTE]
+>
+>The Data Management dashboard is available only if you have Live Search, Product Recommendations, or the Catalog Service installed. The Data Feed Sync Status dashboard is available if you have these services, or the Adobe Commerce Optimizer Connector installed.
+
 ### Verify Commerce application configuration
 
 Partial sync and Retry failed items sync work only if the Commerce instance has been configured correctly. Typically, the configuration is completed when setting up the Commerce Service. If the data export is not working correctly, check the following configuration.
