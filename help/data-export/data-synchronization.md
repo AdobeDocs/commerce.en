@@ -85,7 +85,7 @@ Most synchronization activities are processed automatically based on the applica
 
 >[!NOTE]
 >
->The Data Management dashboard is available only if you have Live Search, Product Recommendations, or the Catalog Service installed. The Data Feed Sync Status dashboard is available if you have these services, or the Adobe Commerce Optimizer Connector installed.
+>The Data Management dashboard is available only if you have Live Search, Product Recommendations, or the Catalog Service installed. The Data Feed Sync Status dashboard is available if you have these services, or the  [Adobe Commerce Optimizer Connector ](../aco-connector/overview.md)  installed.
 
 ### Verify Commerce application configuration
 
