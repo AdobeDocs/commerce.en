@@ -134,7 +134,7 @@ When you trigger a data resync, it can take up to an hour for the data to update
 1. Display the detailed view of the product in question in the search results.
 1. Copy the JSON output and verify that the content matches what you have in the [!DNL Commerce] catalog.
 1. If the content does not match, make a minor change to the product in your catalog, such as adding a space or a period.
-1. Wait for a resync or [trigger a manual resync](#resync).
+1. Wait for a resync or trigger a manual resync from the CLI or the Admin dashboard.
 
 #### Sync not running
 
