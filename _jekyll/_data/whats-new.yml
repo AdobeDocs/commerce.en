@@ -2,8 +2,45 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 3 16:52:44 2026
+updated: Fri Apr 10 15:40:09 2026
 entries:
+- description: Added [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist),
+    a reference for validating production [!DNL Adobe Commerce Optimizer] setup, storefront
+    go-live, SEO, CDN, integrations, security, analytics, and testing before launch.
+  versions: ''
+  type: feedback, new-topic
+  date: April 9, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/498
+  merge_commit: 4846deb1c55d1df713d21c26563a288f1cb3e21b
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+  - new-topic
+- description: 'Added [Category Merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)
+    for Adobe Commerce Optimizer: using Category rules with intelligent ranking and
+    manual actions on category pages.'
+  versions: ''
+  type: new-topic
+  date: April 8, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/483
+  merge_commit: 4ec91f6a761ff78e1e66ae18125296c68053b3f1
+  contributor: emarr
+  membership:
+  labels:
+  - new-topic
+- description: Added guidance around [adding files to products](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files)
+    in Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 7, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/500
+  merge_commit: 7845129c055619e09fbf7c5f860795be6bf81533
+  contributor: jhoover
+  membership:
+  labels:
+  - core-saas
+  - major-update
 - description: Updated [Recommendation filters](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters)
     with Price and Product filter procedures, price-book–based final price behavior
     for filtering and displayed prices, and new screenshots for the Filter products

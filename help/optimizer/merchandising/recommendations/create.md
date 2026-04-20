@@ -19,7 +19,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    >[!IMPORTANT]
    >
-   >This feature is currently in beta.
+   >This feature is currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta participants will need to recreate any existing recommendation units to take advantage of the new catalog view scope.
 
 1. Click **Create recommendation**.
 

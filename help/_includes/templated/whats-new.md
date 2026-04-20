@@ -4,6 +4,72 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### April 9, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist">Launch checklist</a>, a reference for validating production [!DNL Adobe Commerce Optimizer] setup, storefront go-live, SEO, CDN, integrations, security, analytics, and testing before launch.</p>
+</td>
+      <td>
+        Feedback, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4846deb1c55d1df713d21c26563a288f1cb3e21b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### April 8, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">Category Merchandising</a> for Adobe Commerce Optimizer: using Category rules with intelligent ranking and manual actions on category pages.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4ec91f6a761ff78e1e66ae18125296c68053b3f1">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### April 7, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added new guidance around <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files">adding files to products</a> in Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### April 2, 2026
 
 <table style="table-layout:auto;">
@@ -578,94 +644,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d559417d12151d1f390b4217bca83b9ddb65e491">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### February 9, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>AEM Assets Integration v1.2.13 adds <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> for custom matcher setup. You can upload your App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> for automatic validation and credential extraction, or configure manually. See the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">release notes</a> for v1.2.13 and the updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">custom matching</a> guide.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dfc4aaf1f780eb4a57aa4b624325fa24e571017d">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### February 6, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.19</a>.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0bf049129dfbf576fb8b9d9ab3b90c93b57a4ce1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### February 5, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service release notes</a> for the February 2026 Sandbox release.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d084307dc01bc7210566137cddcf91ef6c1362da">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### February 4, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.18</a>.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f2c4f940ad6f059e3afe7fd5f2e4823b1d3700e7">commit</a></td>
     </tr>
   </tbody>
 </table>
