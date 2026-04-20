@@ -28,10 +28,6 @@ _April 20, 2026_
 ![Fix](../assets/fix.svg) ProductAttributeDelete plugin generates SQL errors when deleting static EAV attributes. <!--MDEE-1336-->
 ![Fix](../assets/fix.svg) Category path is not updated after category moved to another sub-category. <!--MDEE-1331-->
 ![Fix](../assets/fix.svg) Scheduled category update of category url updates related products. <!--MDEE-1321-->
-[Revert] MDEE-1321: Scheduled category update of category url updates related products  by @KevinBKozan in https://github.com/magento-commerce/commerce-data-export-ee/pull/151
-## New Contributors
-@KevinBKozan made their first contribution in https://github.com/magento-commerce/commerce-data-export-ee/pull/149
-
 ### 103.4.22 Release
 
 _April 13, 2026_
