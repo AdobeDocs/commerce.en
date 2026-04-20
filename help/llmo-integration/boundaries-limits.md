@@ -34,7 +34,7 @@ Meaningful catalog and PDP insights assume that LLM-relevant **bots can access**
 
 Features described in this guide are in **beta**. UI labels, opportunity types, and deploy surfaces may change.
 
-## Related topics {#boundaries-related}
+## Related topics
 
 - [Integration overview](overview.md)
 - [Connect Adobe Commerce to LLM Optimizer](get-started/connect-to-llmo.md)

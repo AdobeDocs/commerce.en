@@ -86,31 +86,33 @@ When you deploy product name or description changes, **Catalog Agent** writes th
 
 Search for the SKU on your storefront and open the PDP. Confirm that the **name** and any regions that surface the long **description** reflect what you approved. Also confirm downstream channels that consume the same catalog attributes when they matter for your rollout.
 
+<!--
 ## PDP enrichment rollback {#pdp-rollback}
 
 If your project includes PDP enrichment opportunities, **rollback** behavior may support **bulk** or **per-URL** actions, depending on your LLM Optimizer release. Follow the in-product options for rollback. For **[!UICONTROL Product Catalog Enrichment]**, undoing a name or description in Commerce is effectively a new catalog edit or a follow-up opportunity, not a separate undo control in the Admin unless your team implements one.
+-->
 
 ## Overrides, ingestion, and stale opportunities {#overrides-ingestion}
 
-After LLM Optimizer updates a product's name or description, other systems may change the same fields. Behavior distinguishes *Admin* edits from **automated ingestion** (REST API, CSV import, PIM feed, and similar).
+After LLM Optimizer updates a product's name or description, other ingestion systems, such as REST API, CSV import, PIM feed, and similar may change the same fields. The following sections describe what happens in this case.
 
 ### Ingestion sends the original catalog value again
 
-If an external process writes the **original** name or description (the value that existed before LLM Optimizer's deploy), **Commerce continues to honor the LLM Optimizer-deployed value** for that field according to the integration rules. The opportunity may not revert automatically based on that ingestion alone.
+If an external process writes the original name or description (the value that existed before LLM Optimizer's deploy), Commerce continues to honor the LLM Optimizer-deployed value for that field according to the integration rules. The opportunity may not revert automatically based on that ingestion alone.
 
-### Ingestion sends a genuinely new value
+### Ingestion sends a new value
 
-If the external process sends a **new** value that is not merely a repeat of the pre-LLM Optimizer text—for example, renaming "Red Shoes" to "Iconic Red Shoes"—that **new** catalog value is **honored**, and the related LLM Optimizer opportunity is typically marked **stale** because the live catalog no longer matches the suggestion context.
+If the external process sends a new value that is not merely a repeat of the pre-LLM Optimizer text—for example, renaming "Red Shoes" to "Iconic Red Shoes"—that new catalog value is honored, and the related LLM Optimizer opportunity is typically marked as *Stale* in LLM Optimizer because the live catalog no longer matches the suggestion context.
 
 ### Manual override in the Admin {#manual-override-in-the-admin}
 
-If **you** manually edit the product name or description in the [!DNL Adobe Commerce] *Admin*:
+If you manually edit the product name or description in the [!DNL Adobe Commerce] *Admin*:
 
-- The *Admin* value **wins** as the system of record for that manual change.
-- The LLM Optimizer opportunity is marked **stale**.
-- In LLM Optimizer, the UI moves back toward the **original** state for that opportunity so you can re-baseline or accept a new suggestion if analysis runs again.
+- The *Admin* value wins as the system of record for that manual change.
+- The LLM Optimizer opportunity is marked *Stale*.
+- In LLM Optimizer, the UI moves back toward the original state for that opportunity so you can re-baseline or accept a new suggestion if analysis runs again.
 
-These rules help you know whether LLM Optimizer, feeds, or *Admin* edits are authoritative when multiple channels touch the same SKU.
+These rules help you know whether LLM Optimizer, ingestion feeds, or *Admin* edits are authoritative when multiple channels touch the same SKU.
 
 ## Best practices
 
