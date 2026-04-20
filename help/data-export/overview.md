@@ -29,9 +29,9 @@ SaaS data export is delivered as a PHP extension. It supports several methods to
 
 - **Automated synchronization with cron jobs**
 
-  - [Partial data synchronization](data-synchronization.md#partial-synchronization-with-cron-jobs)—Cron jobs trigger a partial data sync when a Commerce Admin user updates an entity. The data export process sends only these updates to connected Commerce services. The partial synchronization process is based on the MView mechanism and requires no actions from the Admin user or system integrator.
+  - [Partial data synchronization](data-synchronization.md#partial-sync)—Cron jobs trigger a partial data sync when a Commerce Admin user updates an entity. The data export process sends only these updates to connected Commerce services. The partial synchronization process is based on the MView mechanism and requires no actions from the Admin user or system integrator.
 
-  - [Automatic retry for synchronization errors](data-synchronization.md#failed-items-sync-for-error-recovery)—Cron jobs trigger automatic retry of the synchronization process when errors occur during the data synchronization process.
+  - [Automatic retry for synchronization errors](data-synchronization.md#retry-failed-items-sync)—Cron jobs trigger automatic retry of the synchronization process when errors occur during the data synchronization process.
 
 - **Export scheduling and performance**
 

@@ -12,7 +12,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 There are three ways to upload files to product file attributes:
 
-* [Admin UI](#upload-through-the-admin) - Upload files manually on the product edit page.
+* [Admin UI](#upload-files-through-the-admin) - Upload files manually on the product edit page.
 * [REST API](#upload-through-the-rest-api) - Upload files through the REST API using S3 presigned URLs.
 * [Product import](#upload-through-product-import) - Import files in bulk by providing external URLs in CSV.
 
@@ -25,7 +25,7 @@ Before uploading files, you must create a file attribute and assign it to an att
 * [Assign the attribute to an attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Drag the new file attribute into the desired group.
 
 * Configure allowed file types and size in the [Product File Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes) configuration.
-   
+
 ## Upload files through the Admin
 
 After you [create a file attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} and assign it to an attribute set, you can upload files directly from the product edit page.

@@ -53,11 +53,11 @@ Data associated with these extensions is still available in the Commerce databas
 
 Follow these steps to enable the connector and begin synchronizing data from Commerce to your Adobe Commerce Optimizer instance.
 
-1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
+1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-optimizer-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
 
-1. **[Review and customize the data export configuration](#customize-commerce-data-export-configuration)** from the Admin.
+1. **[Review and customize the data export configuration](#customize-the-commerce-data-export-configuration)** from the Admin.
 
-1. **[Get API credentials required to establish the connection between Commerce and Commerce Optimizer](#get-required-values-for-configuring-the-commerce-optimizer-connection)**.
+1. **[Get API credentials required to establish the connection between Commerce and Commerce Optimizer](#get-required-connection-details)**.
 
 1. **[Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
 
@@ -154,7 +154,7 @@ After you install the Connector package, the Store grid in the Admin now shows t
 >
 >Data sync processing starts as soon as you run the configuration command. By default, catalog data sync is enabled for all Commerce scopes (websites and store views). Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
 
-Using the API credentials and instance details you gathered in the previous steps, you can now configure the integration between your Commerce and [!DNL Adobe Commerce Optimizer] instances.
+Using the  OAuth Server-to-Server credentials and instance details you [gathered in the previous steps](#get-required-connection-details), you can now configure the integration between your Commerce and [!DNL Adobe Commerce Optimizer] instances.
 
 1. From the Commerce Admin, select **[!UICONTROL Adobe Commerce Optimizer]** to display the configuration page with instructions.
 
@@ -199,11 +199,11 @@ You can monitor and verify that the sync is working from the [Data Feed Sync Sta
 
 ## Next Steps
 
-1. **[Configure [!DNL Adobe Commerce Optimizer] catalog views and policies](#configure-adobe-commerce-optimizer-stores)**
+1. **Configure [!DNL Adobe Commerce Optimizer] catalog views and policies**
 
-   Create catalog views and policies in the [!DNL Adobe Commerce Optimizer] Guide. Note that price books are created automatically from Adobe Commerce customer groups.
+   Create catalog views and policies in the [!DNL Adobe Commerce Optimizer] UI. Note that price books are created automatically from Adobe Commerce customer groups. For instructions, see the [Catalog views](../optimizer/setup/catalog-view.md) and [Policies](../optimizer/setup/catalog-view.md) documentation in the *Commerce Optimizer User Guide*.
 
-1. **[Set up a Commerce Storefront on Edge Delivery Services](#set-up-a-commerce-storefront-on-edge-delivery-services)**
+1. **Set up a Commerce Storefront on Edge Delivery Services**
 
    Follow the [Storefront setup documentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/) to connect your storefront to the [!DNL Adobe Commerce Optimizer] instance and start delivering personalized commerce experiences.
 
