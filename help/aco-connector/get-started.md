@@ -43,6 +43,10 @@ If you have any of the following extensions installed, uninstall them before ins
 
 Data associated with these extensions is still available in the Commerce database. However, it is not exported to [!DNL Adobe Commerce Optimizer] when the Connector is enabled. To implement the search and merchandising capabilities provided by these extensions after enabling the Connector, configure them from the [[!DNL Adobe Commerce Optimizer] Admin UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
 
+>[!IMPORTANT]
+>
+>If these extensions are not removed before enabling the Connector, you may see broken configuration screens, duplicate data in [!DNL Adobe Commerce Optimizer] because the same data is exported from both the Connector and the existing extensions, and 401 or 403 errors in the logs due to conflicts in the way the extensions and the Connector authenticate with the connected services.
+
 >[!ENDSHADEBOX]
 
 ## Configuration steps
@@ -171,6 +175,7 @@ Using the  OAuth Server-to-Server credentials and instance details you [gathered
 ## Verify that the data sync is working
 
 After you enable the integration, data sync begins automatically. Depending on catalog size, the initial sync can take from a few minutes to several hours.
+You can monitor and verify that the sync is working from the [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page available in the Admin. 
 
 1. **Check sync status in the Commerce Admin:**
 
