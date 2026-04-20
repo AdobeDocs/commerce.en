@@ -86,7 +86,7 @@ With layered search you can:
 The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
 
 - **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
-  
+
   - **Layer 1 search** - Search for "motor" on `product_attribute_1`.
   - **Layer 2 search** - Search for "part number 123" on `product_attribute_2`. This example searches for "part number 123" within the results for "motor".
 
@@ -117,7 +117,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
 
-    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. 
+    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions.
 
 ### When to use layered search rather than facets
 
@@ -145,11 +145,11 @@ Layered search and facets serve different purposes in product discovery, and cho
 
 Facets and synonyms are another way you can enahnce the search experience for your shoppers.
 
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time. 
+[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time.
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
+>A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#step-1-add-a-facet).
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 

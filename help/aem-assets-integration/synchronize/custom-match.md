@@ -165,7 +165,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | Parameter | Data Type | Description |
 | --- | --- | --- |
 | `assetId` | String | Represents the updated asset ID. |
-| `eventData` | String | Returns the data payload associated with the asset ID. |
+| `eventData` | Object | Event payload associated with the asset (for example, asset metadata your matcher reads from `eventData.assetMetadata`). |
 
 **Response**
 
@@ -240,8 +240,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | Parameter | Data Type | Description |
 | --- | --- | --- |
-| `productSKU` | String | Represents the updated product SKU. |
-| `eventData` | String | Returns the data payload associated with the Product SKU. |
+| `productSku` | String | Represents the updated product SKU. |
+| `eventData` | Object | Event payload associated with the product (for example, fields your matcher uses from the incoming event). |
 
 **Response**
 

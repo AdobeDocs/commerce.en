@@ -69,7 +69,7 @@ Administrators manage instances, users, and organizational settings.
 |Task|Description|Link|
 |---|---|---|
 |**Manage Users**|Add users, developers, and admins|[User Management](./user-management.md)|
-|**Create Instances**|Set up sandbox and production environments|[Create Instance](#create-an-instance)|
+|**Create Instances**|Set up sandbox and production environments|[Create Instance](#step-1-create-an-instance)|
 |**Manage Instances**|Check status, update instance name and description, and get key URLs for application and API access|[Manage Instances](#manage-instances)|
 |**Configure Access**|Set up catalog views and policies|[Catalog Views](./setup/catalog-view.md)|
 
@@ -80,7 +80,7 @@ Developers handle technical implementation and data integration, including platf
 |Task|Description|Link|
 |---|---|---|
 |**Access Developer Console**|Create projects and generate credentials|[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)|
-|**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)|
+|**Ingest Catalog Data**|Import product data from existing systems| To ingest data directly into Adobe Commerce Optimizer, see [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>To ingest data from Commerce on cloud or on premises environments or other third-party systems, see the [Integrations](./integrations/integrations-overview.md){target="_blank"}  topic.|
 |**Set Up the Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
 
 ### Merchandiser tasks

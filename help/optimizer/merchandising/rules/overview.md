@@ -59,7 +59,7 @@ You can set a default rule (**All product listings**) that applies when no searc
 
 ## Order of precedence with multiple rules
 
-The following applies to **search rules** and how they interact for a given search. **Category rules** apply per category; see [Create and Manage Rules](add.md#category-rules) for how they fit alongside search and default rules.
+The following applies to **search rules** and how they interact for a given search. **Category rules** apply per category; see [Create and Manage Rules](add.md) for how they fit alongside search and default rules.
 
 Only one search rule is applied to a search term at any one time.
 If multiple rules are found to be applicable to a search phrase, then all these rules are applied. If there is a collision between two rules---`rule 1` that boosts sku1 but `rule 2` hides the same SKU---then the most recently applied rule (`rule 2`) takes precedence.
