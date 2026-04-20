@@ -21,7 +21,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Feedback, technical
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce.en/pull/530">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -43,7 +43,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce.en/pull/527">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/db519e8b2f21ca0185e3423a671ff5a174259834">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -65,7 +65,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Feedback, new topic
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce.en/pull/515">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41c8bfe8f15b1988f574fe589ba6e27bb1839ba8">commit</a></td>
     </tr>
     <tr>
       <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
@@ -73,7 +73,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce.en/pull/516">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">commit</a></td>
     </tr>
     <tr>
       <td><p>Documented <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration v1.3.5</a> and corrected <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Custom automatic matching</a> API request fields (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
@@ -81,7 +81,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic
       </td>
-      <td><a href="enterprise:AdobeDocs/commerce.en/pull/519">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cd7a332dd09840aabcc0efae081ba0a713506897">commit</a></td>
     </tr>
   </tbody>
 </table>
