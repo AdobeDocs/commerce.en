@@ -81,7 +81,7 @@ Most synchronization activities are processed automatically based on the applica
 
   {{aco-data-sync-verification}}
 
-- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce projects integrated with Adobe Commerce Optimizer (Adobe-managed SaaS infrastructure)."} **[Data Sync Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check catalog data availability for your storefront from the Data Sync page in Adobe Commerce Optimizer. This dashboard shows the synchronization status of the data export feeds.
+- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce projects integrated with Adobe Commerce Optimizer (Adobe-managed SaaS infrastructure)."} **[Data Sync Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check catalog data availability for your storefront from the Data Feed Sync Status page in Adobe Commerce Optimizer. This dashboard shows the synchronization status of the data export feeds.
 
 >[!NOTE]
 >
