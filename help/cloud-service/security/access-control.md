@@ -1,5 +1,5 @@
 ---
-title: Identity and access management
+title: Identity and Access Management
 description: Learn about the identity and access management features for Adobe Commerce as a Cloud Service.
 role: Admin, Architect, Leader
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
@@ -34,7 +34,7 @@ See [user management](https://experienceleague.adobe.com/en/docs/commerce/cloud-
 
 ## API authentication and integration security
 
-[!DNL Adobe Commerce as a Cloud Service]'s REST API authentication is handled through Adobe's [!DNL Identity Management System (IMS)] using standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for different use cases.
+[!DNL Adobe Commerce as a Cloud Service]'s REST API authentication is handled through Adobe's [!DNL Adobe Identity Management Services (IMS)] using standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for different use cases.
 
 >[!NOTE]
 >

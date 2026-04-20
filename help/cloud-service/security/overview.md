@@ -21,11 +21,11 @@ This document outlines the security architecture, operational safeguards, and co
 
 ### Storefront CDN
 
-Merchants can opt to deploy an Adobe-managed CDN or purchase their own CDN solution to protect their Commerce-powered storefront
+Merchants can opt to deploy an Adobe-managed CDN or purchase their own CDN solution to protect their Commerce-powered storefront.
 
 >[!IMPORTANT]
 >
->If customers chose to deploy Adobe-managed CDN, they cannot configure CDN rules. Custom caching rules or WAF rules can be configured by the customers when they bring their own CDN to protect their Storefronts.
+>If customers choose to deploy Adobe-managed CDN, they cannot configure CDN rules. Custom caching rules or WAF rules can be configured by the customers when they bring their own CDN to protect their Storefronts.
 
 ### [!DNL API Mesh for Adobe Developer App Builder] CDN
 
@@ -40,7 +40,7 @@ A built-in CDN protects [!DNL Adobe Commerce as a Cloud Service].
 Due to the [!DNL Adobe Commerce as a Cloud Service] architecture, when a merchant provisions an instance in a composite cell, such as `na1`, `eu1`, `au1`, or other geographic regions, three public surfaces are exposed:
 
 | Surface | Example URL pattern |
-| --- | --- | --- |
+| --- | --- |
 | Admin UI | `https://na1.admin.commerce.adobe.com/<tenant_id>/admin/` |
 | REST API | `https://na1.api.commerce.adobe.com/<tenant_id>/rest/` |
 | GraphQL API | `https://na1.api.commerce.adobe.com/<tenant_id>/graphql/` |
@@ -58,8 +58,8 @@ The built-in CDN and WAF provides both network‑layer and HTTP‑layer DDoS pro
 
 ## Data storage and encryption
 
-If data is being stored in [!DNL App Builder], then a merchant can either store the data in the files or State libraries ([https://developer.adobe.com/commerce/extensibility/app-development/best-practices/database-storage/](https://developer.adobe.com/commerce/extensibility/app-development/best-practices/database-storage/)). [!DNL App Builder] enforces tenant isolation and access to data stored in these services is restricted to the runtime namespace in which the action is executed. There is no encryption of data in storage
+If data is being stored in [!DNL App Builder], then a merchant can either store the data in the files or State libraries ([https://developer.adobe.com/commerce/extensibility/app-development/best-practices/database-storage/](https://developer.adobe.com/commerce/extensibility/app-development/best-practices/database-storage/)). [!DNL App Builder] enforces tenant isolation and access to data stored in these services is restricted to the runtime namespace in which the action is executed. There is no encryption of data in storage.
 
-When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] will encrypt these secrets using AES-256 encryption ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/))
+When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] will encrypt these secrets using AES-256 encryption ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
 
 Any data stored in [!DNL Adobe Commerce as a Cloud Service] is encrypted at rest using AES 256-bit encryption and all data is encrypted over HTTPS using TLS 1.2 or greater in transit.
