@@ -29,7 +29,7 @@ Merchants can opt to deploy an Adobe-managed CDN or purchase their own CDN solut
 
 ### [!DNL API Mesh for Adobe Developer App Builder] CDN
 
-[!DNL API Mesh]'s CDN layer terminates TLS, runs the GraphQL gateway as Workers, provides global edge caching and automatic DDoS/WAF, and exposes `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` as the public mesh endpoints; customers can add their own CDN in front, but [!DNL API Mesh]'s CDN is fixed and managed by Adobe.
+[!DNL API Mesh]'s CDN layer terminates TLS, runs the GraphQL gateway as Workers, provides global edge caching and automatic DDoS/WAF, and exposes `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` as the public mesh endpoints; customers can add their own CDN in front, but [!DNL API Mesh]'s CDN is fixed and managed by Adobe and customers cannot configure their own WAF rules.
 
 For more information on [!DNL API Mesh]'s security features, refer to the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
 
