@@ -27,7 +27,8 @@ _April 20, 2026_
 
 ![Fix](../assets/fix.svg) **Resolved SQL Errors When Deleting Static EAV Attributes**–The ProductAttributeDelete plugin no longer generates SQL errors when deleting static EAV attributes, ensuring smoother attribute management and improved system reliability. <!--MDEE-1336-->
 ![Fix](../assets/fix.svg) Category path is not updated after category moved to another sub-category. <!--MDEE-1331-->
-![Fix](../assets/fix.svg) Scheduled category update of category url updates related products. <!--MDEE-1321-->
+![Fix](../assets/fix.svg) **Improved scheduled category updates for related products**–Scheduled updates to category URLs now affect only the intended categories, preserving data integrity and preventing unintended changes to related products. Now, scheduled category URL changes are correctly reflected in exported data, keeping storefront navigation and linked services aligned with your current catalog.
+<!--MDEE-1321-->
 
 ### 103.4.22 Release
 
