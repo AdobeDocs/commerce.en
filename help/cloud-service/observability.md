@@ -58,10 +58,6 @@ The [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telemetry/blob
 
 [Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) data collection through your CDN origin to eliminate an extra TLS handshake and improve front-end performance measurement.
 
-### Operational Telemetry
-
-[Operational Telemetry](https://www.aem.live/docs/operational-telemetry) is the framework that [!DNL Edge Delivery Services] uses to collect sampled performance data—including Core Web Vitals—from your storefront. Designed for diagnosing performance issues while preserving visitor privacy.
-
 ## Observability videos
 
 The following videos provide a high-level overview of observability offerings in [!DNL Adobe Commerce as a Cloud Service]:
