@@ -8,6 +8,8 @@ exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 
 After the [!DNL Catalog Service] is enabled, you can access the service and use it to retrieve catalog data, such as product and category information, from your Adobe Commerce instance. The service is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries.
 
+{{{aco-merchandising-services}}
+
 ## Access the service
 
 The [!DNL Catalog Service] is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries. The service is available in both SaaS and PaaS environments.
