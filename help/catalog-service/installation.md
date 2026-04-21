@@ -6,6 +6,8 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Onboarding and Installation
 
+{{aco-merchandising-services}}
+
 Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). The Catalog Service is delivered as a composer PHP metapackage from the repo.magento.com repository.
 
 >[!NOTE]
@@ -21,7 +23,7 @@ Install the Catalog Service to request and receive product data from a Commerce 
 
 **Software requirements**
 
-- Adobe Commerce 2.4.4+
+- Adobe Commerce on cloud or on-premises 2.4.4+
 - PHP 8.1, 8.2, 8.3, 8.4
 - Composer: 2.x
 
