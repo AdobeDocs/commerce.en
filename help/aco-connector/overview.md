@@ -78,7 +78,7 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 1. **Configure authentication and environment details** in Commerce Admin or via CLI:
 
-   ```bash
+   ```terminal
    bin/magento aco:config:init \
      --org_id=<your-org> \
      --tenant_id=<your-tenant> \
@@ -179,3 +179,4 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
 - Learn the core Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
+- Explore the [Commerce Optimizer Studio UI](../optimizer/studio-ui.md) and how to configure Catalog Views, Policies, Product Discovery, and Recommendations
