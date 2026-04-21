@@ -1,6 +1,12 @@
 # Commerce snippets
 
 
+## Merchandising Services for Optimizer {#aco-merchandising-services}
+
+>[!NOTE]
+>
+>For Commerce solutions that use Adobe Commerce Optimizer or the Adobe Commerce Optimizer connector, use the [Merchandising Services GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) instead of the Catalog Service GraphQL API.
+
 ## Data Synchronization check for Optimizer {#aco-data-sync-verification}
 
 >[!NOTE]
