@@ -9,6 +9,8 @@ exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
 
 Use  GraphQL queries to retrieve product, price, and other data from the Adobe Commerce Catalog SaaS data space and use it to render Commerce experiences more quickly than the native Adobe Commerce GraphQL queries.
 
+{{aco-merchandising-services}}
+
 The Catalog Service provides the following queries:
 
 | Query | Description | Usage |
