@@ -9,6 +9,8 @@ exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
 
 Use  GraphQL queries to retrieve product, price, and other data from the Adobe Commerce Catalog SaaS data space and use it to render Commerce experiences more quickly than the native Adobe Commerce GraphQL queries.
 
+{{aco-merchandising-services}}
+
 The Catalog Service provides the following queries:
 
 | Query | Description | Usage |
@@ -19,4 +21,4 @@ The Catalog Service provides the following queries:
 | `refineProduct` | Narrows the results of a products query run against a complex product to return a specific information about a product variant. | Useful for rendering updated product detail pages when the shoppers select a product option. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
 | `variants` | Returns details about all variations of a product. | Useful for showing variant images on product detail or listing pages without submitting multiple API requests. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
 
-See the [Catalog Service API Guide](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) for more information about using these queries
+See [Storefront Services GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) for more information about using these queries.
