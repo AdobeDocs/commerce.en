@@ -33,6 +33,8 @@ _April 17, 2026_
 
 ![New](../assets/new.svg) Added a new `searchCategory` GraphQL query that enables clients to search categories by name with paginated results. The query accepts a required `searchTerm` (minimum 3 characters) and optional `family`, `pageSize`, and `currentPage` parameters. Results include matching `CategoryTreeView` objects with full category metadata, a `totalCount`, and `pageInfo` for pagination. <!--COMOPT-1819-->
 
+This query is available only for customers using Adobe Commerce Optimizer Merchandising Services. See [searchCategory](https://developer.adobe.com/commerce/services/reference/graphql/).
+
 ### v1.50 release
 
 _April 7, 2026_
