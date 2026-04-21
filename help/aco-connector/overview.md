@@ -27,24 +27,61 @@ Commerce remains your system of record for products, prices, and catalog structu
 
 The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, site optimization, and fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
-## Architecture and experience
+## How the connector works
 
-The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project as shown in the following figure:
+The Adobe Commerce Optimizer Connector operates by using your existing Commerce scopes (websites and store views) and customer segmentation to populate the Commerce Optimizer catalog model:  
 
 ![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
 
-When data is exported from Commerce to Commerce Optimizer:
+- **Store Views → Catalog Sources**–Each store view becomes a separate Catalog Source in Commerce Optimizer. That source includes localized product attributes and any store‑view–specific data.
 
-* Commerce store views are mapped to catalog sources
-* Websites are mapped to price books
+- **Websites → Price Books**–Each Commerce website is mapped to one or more Price Books in Commerce Optimizer. Website pricing and customer group pricing are exported as price books and price entries.
 
-The associated catalog and price data is exported and later used to create catalog views and optionally define policies to filter the catalog and price data for specific business use cases.
+- **Customer groups → Price variants**
+  Commerce customer group pricing is represented as additional entries in the relevant Price Books.
 
-When the connector is enabled, you can also configure and manage merchandising rules for product discovery and rules for recommendations using [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/overview.md#quick-tour) The Adobe Commerce instance becomes the data source for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
+Once data is ingested, it is available to Commerce Optimizer to configure:
 
-## Workflows
+- **Catalog Views and Policies** in Commerce Optimizer (for building region, brand, or B2B‑specific subsets)
+- **Product Discovery** (search, facets, merchandising rules)
+- **Product Recommendations**
 
-The Connector enables several key workflows:
+When the connector is enabled, the Adobe Commerce instance remains the system of record for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
+
+>[!NOTE]
+>
+>For details on configuration Commerce Optimizer, see [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/overview.md#quick-tour).
+
+## Architecture
+
+
+## Typical workflows
+
+### 1. Initial setup and configuration
+
+1. **Install the connector package in Adobe Commerce** using Composer:  
+   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+
+1. **Configure authentication and environment details** in Commerce Admin or via CLI:
+
+   ```bash
+   bin/magento aco:config:init \
+     --org_id=<your-org> \
+     --tenant_id=<your-tenant> \
+     --client_id=<your-client-id> \
+     --client_secret=<your-secret> \
+     --region=na1 \
+     --type=production
+   ```
+1. **Map Commerce scopes to Commerce Optimizer:**
+
+   - Confirm which Websites and Store Views must be in scope.
+   - Ensure customer groups and price rules are modeled as expected.
+
+1. **Verify connectivity:**
+
+   - Run a test sync and confirm that Catalog Sources, Price Books, and initial products appear in Commerce Optimizer.
+   - Use the Data Feed Sync Status page in Commerce and the Data Sync dashboards in Commerce Optimizer for validation.
 
 * **Export Commerce catalog data to [!DNL Adobe Commerce Optimizer]**—price and price book data is exported at the website and customer group level. Product and product attribute data is exported at the `store view` level. By default, catalog data sync is enabled for all Commerce scopes (websites and store views).
 
