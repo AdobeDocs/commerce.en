@@ -13,6 +13,7 @@ feature: Services
   - [Improve export performance](customize-export-processing.md)
 - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
 - [Review logs and troubleshoot](troubleshooting-logging.md)
+  - [Log code reference](log-codes-reference.md)
 - [Manage the SaaS data export extension](manage-extension.md)
 - Extensibility {#extensibility}
   - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
