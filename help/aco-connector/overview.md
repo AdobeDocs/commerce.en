@@ -7,6 +7,24 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 # Adobe Commerce Optimizer Connector
 
+The Adobe Commerce Optimizer Connector is a native, first‑party integration between Adobe Commerce (cloud or on‑premises) and Adobe Commerce Optimizer. It synchronizes catalog and pricing data from your Adobe Commerce stores into Commerce Optimizer so you can:
+
+- Power **AI‑driven product discovery and recommendations**
+- Run **high‑performance headless storefronts** (including Commerce storefronts powered by Edge Delivery)
+- Analyze **before-and-after** KPIs and data‑sync health in a single place
+
+Commerce remains your system of record for products, prices, and catalog structure. Commerce Optimizer becomes your experience and merchandising layer, serving fast, relevant results to any connected storefront or channel.
+
+## Key benefits
+
+| Benefit | What it means for you |
+|--------|------------------------|
+| **No custom connector to build** | Use a supported, first‑party integration instead of writing and maintaining bespoke feeds and scripts. |
+| **Faster time‑to‑value with Commerce Optimizer** | Turn on AI search, recommendations, and headless storefronts on top of your existing Adobe Commerce deployment. |
+| **Aligned with Commerce scopes** | Automatically maps Websites, Store Views, and customer groups into Commerce Optimizer catalog constructs (Catalog Sources and Price Books). |
+| **Operational visibility** | Monitor feed health, last sync times, and per‑SKU status from a dedicated Data Feed Sync Status view. |
+| **Future‑ready path toward SaaS** | Provides a low‑risk modernization path from PaaS towards Adobe Commerce as a Cloud Service + Optimizer, without a re‑platform. |
+
 The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, site optimization, and fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
 
 ## Architecture and experience
