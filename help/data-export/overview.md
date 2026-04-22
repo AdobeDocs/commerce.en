@@ -8,6 +8,10 @@ exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 
 [!DNL SaaS data export] synchronizes data between an Adobe Commerce instance and connected Commerce Services. When you add Live Search, Product Recommendations, or the Catalog Service to an Adobe Commerce installation, the [!DNL Data export] extension is installed automatically.
 
+>[!NOTE]
+>
+>If you install the Adobe Commerce Optimizer Connector, the same Data Export extension is used to send catalog and pricing feeds to Adobe Commerce Optimizer using the Composable Catalog Data Model (CCDM). See the [Adobe Commerce Optimizer Connector guide](../aco-connector/overview.md) for architecture and configuration details.
+
 SaaS data export collects and exports various types of data, referred to as _feeds_, which aggregate specific types of information. Depending on which Commerce services are installed, the SaaS data export feeds include:
 
 - **Catalog entity feeds** aggregate product data. Data includes products, product attributes, product prices, product variations, categories, category permissions, and product permissions.
