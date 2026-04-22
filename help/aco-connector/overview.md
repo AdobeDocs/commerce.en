@@ -48,7 +48,7 @@ In this architecture:
 
 The Adobe Commerce Optimizer Connector operates by using your existing Commerce scopes (websites and store views) and customer segmentation to populate the Commerce Optimizer catalog model:
 
-![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
+![Mapping Commerce data to Adobe Commerce Optimizer](/help/aco-connector/assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
 
 - **Store Views → Catalog Sources** — Each store view becomes a separate Catalog Source in Commerce Optimizer. That source includes localized product attributes and any store-view-specific data
 - **Websites → Price Books** — Each Commerce website maps to one or more Price Books in Commerce Optimizer. Website pricing and customer group pricing export as price books and price entries
@@ -155,7 +155,7 @@ The connector is designed for Adobe Commerce PaaS/on-premises B2C merchants who 
 - **Incremental SaaS adoption**
   Use the connector as a stepping stone toward Adobe Commerce as a Cloud Service + Optimizer, with a compatible composable Commerce catalog
 
-## Limits, responsibilities, and prerequisites {#limits-prerequisites}
+## Responsibilities and implementation prerequisites {#responsibilities-prerequisites}
 
 Commerce is the source of truth for products, pricing, and customer groups. Make changes in Commerce; the connector syncs them to Commerce Optimizer.
 
@@ -178,5 +178,6 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 ## Related documentation {#related-documentation}
 
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
-- Learn the core Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
-- Explore the [Commerce Optimizer Studio UI](../optimizer/overview.md) and how to configure Catalog Views, Policies, Product Discovery, and Recommendations
+- Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
+
+
