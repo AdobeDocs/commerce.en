@@ -4,11 +4,6 @@ description: Reference list of log codes emitted by the [!DNL data export] exten
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
 ---
-<!--
-Source of truth: https://github.com/magento-commerce/commerce-data-export (docs/log-codes.md)
-When log codes, messages, or log levels change in that repository, update this page to match.
-Only columns retained here: Log Code, Message, Level. File paths are intentionally omitted.
--->
 
 # Log code reference
 
