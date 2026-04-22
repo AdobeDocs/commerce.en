@@ -11,7 +11,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 >
 >This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
-After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), you work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and push approved changes into the catalog when you are ready. This article describes Commerce-related optimization types, how to use the **[!UICONTROL Opportunities]** experience, deploy behavior in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For architecture context (Catalog Agent, MCP, and AI visibility), see the [integration overview](../overview.md).
+After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), you work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and push approved changes into the catalog when you are ready. This article describes Commerce-related optimization types, how to use the **[!UICONTROL Opportunities]** experience, how deploy actions behave in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For architecture context (Catalog Agent, MCP, and AI visibility), see the [integration overview](../overview.md).
 
 ## Understand Commerce optimizations in LLM Optimizer {#understand-optimizations}
 
@@ -20,7 +20,7 @@ LLM Optimizer surfaces **[!UICONTROL Product Detail Page Enrichment]** and **[!U
 | Focus | What it addresses |
 | --- | --- |
 | **[!UICONTROL Product Detail Page Enrichment]** (PDP enrichment) | Storefront PDP changes so **agent-visible** content better reflects product knowledge—often including a non-disruptive enrichment layer—without replacing your human merchandising layout. |
-| **[!UICONTROL Product Catalog Enrichment]** | **Human-visible** catalog fields such as **product name** and **product description**, with suggestions tied to specific SKUs or URLs and deploy to Commerce core catalog data. |
+| **[!UICONTROL Product Catalog Enrichment]** | **Human-visible** catalog fields such as **product name** and **product description**, with recommendations scoped to specific SKUs or URLs that you can deploy directly to Commerce core catalog data. |
 
 Use the **[!UICONTROL Opportunities]** area to see which type applies to a given URL or SKU. Agent-visible or structured metadata recommendations may appear as separate guidance; follow in-product labels for those workflows.
 
@@ -29,7 +29,7 @@ Use the **[!UICONTROL Opportunities]** area to see which type applies to a given
 **To open Commerce-related opportunities:**
 
 1. In the left rail, click **[!UICONTROL Opportunities]**.
-1. Click **[!UICONTROL Commerce Opportunity]** to show optimization types that target your [!DNL Adobe Commerce] catalog or storefront (control label may vary slightly by release).
+1. Click **[!UICONTROL Commerce Opportunity]** to show optimization types that target your [!DNL Adobe Commerce] catalog or storefront (control label names may vary slightly by release).
 1. Select **[!UICONTROL Product Catalog Enrichment]** or **[!UICONTROL Product Detail Page Enrichment]**, depending on what you want to work on.
 
 ![Commerce opportunities filter and optimization types](../assets/llmo-opportunities.png)
@@ -46,7 +46,7 @@ PDP enrichment improves what **bots and models** can read from a product URL whi
 1. Optional: Click **[!UICONTROL Copy]** to paste the content into an external editor, or click **[!UICONTROL Edit suggestion]** to edit in place.
 1. Select the row for the URL or SKU to update, click **[!UICONTROL Deploy optimizations]**, and confirm. (The exact deploy control label may be singular or plural depending on your release.)
 
-After deploy, re-check the live PDP. The **human** view should match your expectations (for example, expandable sections unchanged where the product is designed that way). If your organization provides optional **AI Content Visibility** tooling, run the same **human** versus **agent** comparison you used before deploy—the **agent** view should now include enrichment that was previously missing or unstructured.
+After deployment, re-check the live PDP. The **human** view should match your expectations (for example, expandable sections remain unchanged). If your organization provides optional **AI Content Visibility** tooling, run the same **human-versus-agent** comparison that you used before deployment.  The **agent** view should now include enrichment that was previously missing or unstructured.
 
 ### Review and deploy product catalog enrichment {#review-deploy-catalog}
 
@@ -71,11 +71,15 @@ When you deploy product name or description changes, **Catalog Agent** writes th
 1. Log in to the [!DNL Adobe Commerce] **Admin**.
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 1. Use filters and the **store view** selector as needed (for example, **[!UICONTROL Default Store View]**), then search for the **SKU**.
-1. Open the product in edit mode. The product form shows the enriched **product name**.
+1. Open the product in edit mode.
+
+   The product form shows the enriched **product name**.
 
    ![Product name field after LLM Optimizer enrichment](../assets/llmo-admin-name.png)
 
-1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Product Name]** if you want to keep a manually entered name instead. Manual overrides affect how opportunities stay in sync with the catalog; see [Manual override in the Admin](#manual-override-in-the-admin).
+1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Product Name]** if you want to keep a manually entered name instead.
+
+  Manual overrides affect how opportunities stay in sync with the catalog; see [Manual override in the Admin](#manual-override-in-the-admin).
 1. Expand the **[!UICONTROL Content]** section and locate the **description** field. The enriched description appears when you deployed description changes.
 
    ![Description field after LLM Optimizer enrichment](../assets/llmo-admin-description.png)
@@ -84,7 +88,7 @@ When you deploy product name or description changes, **Catalog Agent** writes th
 
 ## Verify updates on the storefront {#verify-storefront}
 
-Search for the SKU on your storefront and open the PDP. Confirm that the **name** and any regions that surface the long **description** reflect what you approved. Also confirm downstream channels that consume the same catalog attributes when they matter for your rollout.
+Search for the SKU on your storefront and open the PDP. Confirm that the **name** and any regions that surface the long **description** reflect what you approved. Also confirm any downstream channels that consume the same catalog attributes, where relevant to your rollout.
 
 <!--
 ## PDP enrichment rollback {#pdp-rollback}
@@ -94,7 +98,7 @@ If your project includes PDP enrichment opportunities, **rollback** behavior may
 
 ## Overrides, ingestion, and stale opportunities {#overrides-ingestion}
 
-After LLM Optimizer updates a product's name or description, other ingestion systems, such as REST API, CSV import, PIM feed, and similar may change the same fields. The following sections describe what happens in this case.
+After LLM Optimizer updates a product's name or description, other ingestion systems, such as REST API calls,  CSV imports, PIM feeds, or similar processes may change the same fields. The following sections describe what happens in this case.
 
 ### Ingestion sends the original catalog value again
 
@@ -116,9 +120,9 @@ These rules help you know whether LLM Optimizer, ingestion feeds, or *Admin* edi
 
 ## Best practices
 
-- **Coordinate with SEO and brand** before bulk deploy of titles or descriptions.
-- **Document** which systems own name and description so PIM or feed jobs do not unintentionally conflict with LLM Optimizer expectations.
-- **Re-sync** or re-analyze after major catalog imports so opportunities reflect the current catalog.
+- **Document system ownership** for product name and description so that PIM or feed jobs do not unintentionally conflict with LLM Optimizer expectations.
+- **Coordinate with SEO and brand teams** before bulk deploying titles or descriptions.
+- **Re-sync* or re-analyze* after major catalog imports so that opportunities reflect the current catalog state.
 
 ## Related topics
 

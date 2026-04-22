@@ -18,7 +18,7 @@ Use this topic to set expectations for what the [!DNL Adobe Commerce] and [!DNL 
 When the catalog **does not** live in [!DNL Adobe Commerce]:
 
 - LLM Optimizer can still identify issues and suggest improvements using mirrored or imported catalog data, depending on your setup.
-- **Direct auto-fix** into the merchant's commerce platform is not the same as writing into Commerce core tables. You may need a mirror catalog, export/import, or partner automation to apply changes.
+- **Direct auto-fix** into the merchant's commerce platform is not the same as writing into the merchant's source catalog. You may need a mirror catalog, export/import, or partner automation to apply changes.
 
 For Commerce-hosted catalogs, approved name and description updates go to the Commerce system of record. See [Use LLM Optimizer with Adobe Commerce](get-started/use-llmo-with-commerce.md).
 
