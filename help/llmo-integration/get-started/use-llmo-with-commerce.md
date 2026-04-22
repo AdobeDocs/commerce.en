@@ -80,7 +80,9 @@ When you deploy product name or description changes, **Catalog Agent** writes th
 1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Product Name]** if you want to keep a manually entered name instead.
 
   Manual overrides affect how opportunities stay in sync with the catalog; see [Manual override in the Admin](#manual-override-in-the-admin).
-1. Expand the **[!UICONTROL Content]** section and locate the **description** field. The enriched description appears when you deployed description changes.
+1. Expand the **[!UICONTROL Content]** section and locate the **description** field.
+
+   The enriched description appears when you deployed description changes.
 
    ![Description field after LLM Optimizer enrichment](../assets/llmo-admin-description.png)
 
