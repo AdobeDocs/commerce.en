@@ -19,15 +19,19 @@ SaaS data export is delivered as a PHP extension. It supports several methods to
 
 - **Manual synchronization from the Admin or the command line**
 
-  - The [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in the Commerce Admin provides a graphical view of the synchronization status. You can use the dashboard to perform a full resynchronization (_full sync_) of all feeds. However, Adobe recommends only performing a full sync the first time you connect Adobe Commerce to a Commerce service. See [Synchronization process](data-synchronization.md).
+  - The [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in the Commerce Admin provides a graphical view of the synchronization status that shows product data successfully synced to commerce services. You can use the dashboard to perform a full resynchronization (_full sync_) of all feeds. However, Adobe recommends only performing a full sync the first time you connect Adobe Commerce to a Commerce service. See [Synchronization process](data-synchronization.md).
+
+     {{aco-data-sync-verification}}
+
+  - The [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page provides real-time insights into the health and performance of data export feeds that transfer product and category data from Commerce to external services such as Product Recommendations, Live Search, and Catalog Service, or Adobe Commerce Optimizer.
 
   - The [Adobe Commerce command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) provides commands to synchronize specific feeds and includes additional options to customize feed processing.
 
 - **Automated synchronization with cron jobs**
 
-  - [Partial data synchronization](data-synchronization.md#partial-synchronization-with-cron-jobs)—Cron jobs trigger a partial data sync when a Commerce Admin user updates an entity. The data export process sends only these updates to connected Commerce services. The partial synchronization process is based on the MView mechanism and requires no actions from the Admin user or system integrator.
+  - [Partial data synchronization](data-synchronization.md#partial-sync)—Cron jobs trigger a partial data sync when a Commerce Admin user updates an entity. The data export process sends only these updates to connected Commerce services. The partial synchronization process is based on the MView mechanism and requires no actions from the Admin user or system integrator.
 
-  - [Automatic retry for synchronization errors](data-synchronization.md#failed-items-sync-for-error-recovery)—Cron jobs trigger automatic retry of the synchronization process when errors occur during the data synchronization process.
+  - [Automatic retry for synchronization errors](data-synchronization.md#retry-failed-items-sync)—Cron jobs trigger automatic retry of the synchronization process when errors occur during the data synchronization process.
 
 - **Export scheduling and performance**
 

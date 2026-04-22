@@ -18,11 +18,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## April 2026 - release #2 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-The following items will be released to Production environments on April 16, 2026.
+The following items were released to Production environments on April 16, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -36,7 +36,7 @@ The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.
 >
 >This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
 
-[Email reminder rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) now support an optional rule reusability setting that allows the same rule to reapply to a customer after the original trigger condition no longer applies.
+[Email reminder rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability) now support an optional rule reusability setting that allows the same rule to reapply to a customer after the original trigger condition no longer applies.
 
 For example, if a customer abandons a cart, completes the purchase, and later abandons a new cart, the rule can trigger again. Without this setting, a customer who clears the original trigger is permanently excluded from future matches of the same rule.
 

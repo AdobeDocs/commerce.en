@@ -2,8 +2,66 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 10 15:40:09 2026
+updated: Mon Apr 20 14:43:22 2026
 entries:
+- description: Clarified where to monitor SaaS data export and synchronization—the
+    [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard),
+    [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status),
+    and [Commerce Optimizer Data Sync](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync).
+  versions: ''
+  type: feedback, technical
+  date: April 20, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/530
+  merge_commit: fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b
+  contributor: meker
+  labels:
+  - feedback
+  - technical
+- description: Updated the [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest)
+    for the second April Production release for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 16, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/527
+  merge_commit: db519e8b2f21ca0185e3423a671ff5a174259834
+  contributor: jhoover
+  labels:
+  - core-saas
+  - major-update
+- description: Added [[!DNL Adobe Commerce Optimizer] integrations Overview](https://experienceleague.adobe.com/en/docs/commerce/optimizer/integrations-overview)
+    topic describing how each available integration—Adobe Commerce Optimizer Connector,
+    AEM Assets, AEM Sites Optimizer, and Salesforce Commerce Connector—fits within
+    Adobe Commerce Optimizer, with links to setup and configuration guides.
+  versions: ''
+  type: feedback, new-topic
+  date: April 14, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/515
+  merge_commit: 41c8bfe8f15b1988f574fe589ba6e27bb1839ba8
+  contributor: meker
+  labels:
+  - feedback
+  - new-topic
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 14, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/516
+  merge_commit: 8f2cc1e79ede56192a8ab03194b0f69854f89f7b
+  contributor: jhoover
+  labels:
+  - major-update
+- description: Documented [AEM Assets Integration v1.3.5](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes)
+    and corrected [Custom automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)
+    API request fields (`eventData`, `productSku`).
+  versions: ''
+  type: new-topic
+  date: April 14, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/519
+  merge_commit: cd7a332dd09840aabcc0efae081ba0a713506897
+  contributor: del
+  labels:
+  - new-topic
 - description: Added [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist),
     a reference for validating production [!DNL Adobe Commerce Optimizer] setup, storefront
     go-live, SEO, CDN, integrations, security, analytics, and testing before launch.

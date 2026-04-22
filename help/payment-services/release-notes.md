@@ -63,7 +63,7 @@ _June 9, 2023_
 
 ![New](../assets/new.svg)<!-- Issue PAY-4288 --> Now, merchants can [configure _only_ PayPal payment buttons](payments-options.md#use-only-paypal-payment-buttons)---and _not_ use the PayPal credit card payment option. This allows merchants to provide various payment options, including Venmo and PayPal payment buttons, and use an existing credit card provider instead of the PayPal credit card payment option.
 
-![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](/help/payment-services/payouts.md#payouts-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
+![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](payouts.md#payouts-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
 
@@ -87,13 +87,13 @@ _August 9, 2021_
 
 _June 28, 2021_
 
-![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](/help/payment-services/order-payment-status.md#view-disputes). You can address disputes by navigating directly to the PayPal Resolution Center from [!DNL Payment Services].
+![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](order-payment-status.md#view-disputes). You can address disputes by navigating directly to the PayPal Resolution Center from [!DNL Payment Services].
 
 ![New](../assets/new.svg)<!-- Issue PAY-2854 --> User experience improvements from [!DNL Payment Services] Home include the ability to modify a configuration at the current inheritance level and improvements to the display of the header and navigation.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2854 --> You can now see warnings when you switch from sandbox mode to production mode and when you attempt to navigate away from a view with updates that have not been saved.
 
-![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](/help/payment-services/order-payment-status.md#show-and-hide-columns) and the [Payouts report](/help/payment-services/payouts.md#show-and-hide-columns) by showing or hiding columns using the Column settings control.
+![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](order-payment-status.md#show-and-hide-columns) and the [Payouts report](payouts.md#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 +++
 
@@ -197,7 +197,7 @@ _August 20, 2025_
 
 ![New](../assets/new.svg)<!-- PAY-6169 --> Added the [`setCartAsInactive`](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/mutations/) mutation to [!DNL Payment Services] to improve quote lifecycle management.
 
-![New](../assets/new.svg)<!-- PAY-6227 --> When checking out with PayPal, [!DNL Payment Services] skips the order confirmation pop-up for a quicker purchase process. This is enabled by the [server-side shipping callback](payments-options.md#server-side-shipping-callback), which calculates shipping and totals directly within the PayPal review page.
+![New](../assets/new.svg)<!-- PAY-6227 --> When checking out with PayPal, [!DNL Payment Services] skips the order confirmation pop-up for a quicker purchase process. This is enabled by the [server-side shipping callback](payments-options.md#server-side-shipping-callbacks-for-paypal-payment-buttons), which calculates shipping and totals directly within the PayPal review page.
 
 ![New](../assets/new.svg)<!-- PAY-6234 --> Added a new feature for the [Pay Later](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options) payment option. Now, the BNPL messaging configurator provides more flexibility in displaying Pay Later BNPL messaging on customer checkout pages.
 
@@ -350,7 +350,7 @@ _June 4, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-4877 --> Now, [!DNL Payment Services] supports [L2/L3 pricing capabilities](/help/payment-services/levels-card-payment-transactions.md#level-2-and-level-3). This feature is only available for [!DNL Payment Services] customers with IC++ pricing enabled. If you want to use L2/L3 processing data for [!DNL Payment Services], contact your [!DNL Payment Services] account manager.
+![New](../assets/new.svg)<!-- PAY-4877 --> Now, [!DNL Payment Services] supports [L2/L3 pricing capabilities](levels-card-payment-transactions.md#level-2-and-level-3). This feature is only available for [!DNL Payment Services] customers with IC++ pricing enabled. If you want to use L2/L3 processing data for [!DNL Payment Services], contact your [!DNL Payment Services] account manager.
 
 ![Fix](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] allows you to enable Apple Pay directly from the extension without downloading and hosting the [domain association file](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
 
@@ -394,13 +394,13 @@ _March 20, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](/help/payment-services/payments-options.md), similar to other payment buttons in [!DNL Payment Services] through the Admin.
+![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](payments-options.md), similar to other payment buttons in [!DNL Payment Services] through the Admin.
 
 ![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services supports Google Pay through GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) allowing merchants to have a headless Commerce experience with the Google Pay payment method.
 
 ![New](../assets/new.svg)<!-- PAY-4878 --> Now, the [!DNL Payment Services] basic checkout feature is bundled for Adobe Commerce and Magento Open Source merchants.[!DNL Payment Services] can now support merchants with businesses in any of 200 geographies worldwide.[!DNL Payment Services] basic checkout provides debit/credit, PayPal, Venmo (where available), and PayLater (where available) options in a self-service onboarding.
 
-![Fix](../assets/fix.svg)<!-- PAY-5291 --> Receiving payment confirmation for some transactions may be delayed. In that case, now merchants can get an updated payment status for an order. [Payment services detects the pending status of a payment transaction](/help/payment-services/order-payment-status.md#payment-status-updates) in an order by detecting pending transactions and proactively monitoring these transactions and updating when the pending status has been captured.
+![Fix](../assets/fix.svg)<!-- PAY-5291 --> Receiving payment confirmation for some transactions may be delayed. In that case, now merchants can get an updated payment status for an order. [Payment services detects the pending status of a payment transaction](order-payment-status.md#payment-status-updates) in an order by detecting pending transactions and proactively monitoring these transactions and updating when the pending status has been captured.
 
 ## v2.3.4
 
@@ -482,7 +482,7 @@ _June 9, 2023_
 
 ![New](../assets/new.svg)<!-- Issue xxx --> Added support for Adobe Commerce 2.4.7-beta1.
 
-![New](../assets/new.svg)<!-- Issue xxx --> Added [availability in the following countries and associated currencies](introduction.md#availability): Australia, France, United Kingdom.
+![New](../assets/new.svg)<!-- Issue xxx --> Added [availability in the following countries and associated currencies](compatibility.md#standard-vs-advanced-payment-services-experience): Australia, France, United Kingdom.
 
 ![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](configure-admin.md#configure-roles) to ensure Admin users can create and manage orders for customers and can see[!DNL Payment Services] in the Sales menu.
 
@@ -632,9 +632,9 @@ _March 31, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [supported by [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
-![New](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is now available for Canadian merchants. Merchants can view payments configuration in either [French](introduction.md?lang=fr#accepted-credit-cards-and-currencies) or [English](introduction.md#accepted-credit-cards-and-currencies).
+![New](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is now available for Canadian merchants. Merchants can view payments configuration in either [French](compatibility.md##standard-vs-advanced-payment-services-experience) or [English](compatibility.md#standard-vs-advanced-payment-services-experience).
 
-![New](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadian dollars (CAD)](introduction.md#accepted-credit-cards-and-currencies) for credit cards and PayPal transactions.
+![New](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadian dollars (CAD)](compatibility.md#standard-vs-advanced-payment-services-experience) for credit cards and PayPal transactions.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2680 --> Merchants can [onboard [!DNL Payment Services]](onboard.md) extension in English or French languages.
 
@@ -646,7 +646,7 @@ _March 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2742 --> You can now enable and disable available payment methods, such as Venmo, at the store view level. Previously, you could configure payment methods per website only.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal payment buttons](configure-admin.md#payment-buttons).
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal payment buttons](configure-admin.md#paypal-payment-buttons).
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2561 --> Previously removed products do not appear in the cart on the _Review Order_ page.
 
@@ -660,7 +660,7 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) is now supported by [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
 
-![New](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] can be installed either for [[!DNL Adobe Commerce] on cloud infrastructure](install.md#adobe-commerce-on-cloud-infrastructure) or [On-premises](install.md#on-premises) instances. These methods require the use of a Command Line Interface.
+![New](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] can be installed either for [[!DNL Adobe Commerce] on cloud infrastructure](install.md#adobe-commerce-on-cloud-infrastructure) or [On-premises](install.md#on-premises-and-other-configurations) instances. These methods require the use of a Command Line Interface.
 
 ![New](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] supports a [sandbox account](sandbox.md) that allows merchants to assess the extension in test mode.
 

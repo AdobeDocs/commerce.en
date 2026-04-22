@@ -9,12 +9,12 @@ feature: Payments, Checkout, Configuration, Install, Paas, Saas
 You can put the service into production and complete the [onboarding process](onboard.md), per the steps in this topic, after you:
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install](install.md) the Payment Services extension
-* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Configure and connect](connect.md) your instance 
+* [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Configure and connect](connect.md) your instance
 * [Set up](sandbox.md) and [test](test-validate.md) your sandbox
 
 ## Set [!DNL Payment Services] as payment method
 
-After you [configure your Commerce Services](connect.md#configure-commerce-services) and enable either [sandbox testing](sandbox.md#enable-sandbox-testing) or [live payments](#enable-live-payments), you must set [!DNL Payment Services] as your payment method.
+After you [configure your Commerce Services](connect.md#configure-commerce-services) and enable either [sandbox testing](sandbox.md#sandbox-onboarding) or [live payments](#enable-live-payments), you must set [!DNL Payment Services] as your payment method.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Enable Payment Services]**.
@@ -56,8 +56,8 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 1. In the _Select your country_ modal, select the country from which you are operating.
 
-   Payment Services provides full support for all payment options in [five countries](../payment-services/introduction.md#availability) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
-   
+   Payment Services provides full support for all payment options in [five countries](compatibility.md#compatibility.md#standard-vs-advanced-payment-services-experience) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
+
    The country you choose from the list will determine the payment options, and onboarding flow---[Advanced](#advanced-onboarding) (fully supported) or [Standard](#standard-onboarding) (Express Checkout)---available to you.
 
 >[!TIP]
@@ -66,7 +66,7 @@ Payment Services provides [**Advanced** (fully supported) and **Standard** (Expr
 
 ### Advanced onboarding
 
-This onboarding flow is available for merchants in [fully supported countries](../payment-services/introduction.md#availability).
+This onboarding flow is available for merchants in [fully supported countries](compatibility.md#accepted-credit-cards-and-currencies).
 
 After the country is selected:
 
@@ -83,7 +83,7 @@ After the country is selected:
 
 ### Standard onboarding
 
-This Standard onboarding flow is available for merchants in available countries for which [only Express Checkout support](../payment-services/introduction.md#availability) is provided.
+This Standard onboarding flow is available for merchants in available countries for which [only Express Checkout support](compatibility.md#accepted-credit-cards-and-currencies) is provided.
 
 After the country is selected:
 
