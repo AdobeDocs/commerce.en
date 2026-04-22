@@ -13,15 +13,15 @@ When log codes, messages, or log levels change in that repository, update this p
 Only columns retained here: Log Code, Message, Level. File paths are intentionally omitted.
 -->
 
-This page lists log codes emitted by the [!DNL data export] extension. Codes are assigned only to `error`, `warning`, and `critical` level log messages.
+This page provides a reference for log messages related to Data Export operations, which you can use to determine whether a full or partial resync is required. It lists log codes emitted by the [!DNL data export] extension and includes only error, warning, and critical level log messages.
 
-See [Review logs and troubleshoot](troubleshooting-logging.md) for information about log files, and troubleshooting guidance.
+See [Review logs and troubleshoot](troubleshooting-logging.md) for information about log files and troubleshooting guidance.
 
 ## Group 01 - Data Collection Phase
 
-Errors or warnings during data collection, typically in data providers.
-Affected entities will be processed with partial data or not processed on error. See details in error message.
-Warnings may suggest about wrong integration with Data Exporter Extension from 3rd party modules, but sync should not be blocked.
+Log codes related to errors or warnings that occur while collecting data from source entities, typically within data providers.
+- Affected entities might be processed with partial data or skipped entirely if an error occurs. See the log message for details.
+- Warnings can indicate incorrect integration with the Data Export extension by third-party modules; however, sync operations typically continue.
 
 | Log Code  | Level   | Message |
 |-----------|---------|---------|
@@ -44,7 +44,9 @@ Warnings may suggest about wrong integration with Data Exporter Extension from 3
 
 ## Group 02 - Sending Data to SaaS Phase
 
-Errors during HTTP submission of feed data to SaaS endpoints.
+Log codes related to errors or warnings that occur while submitting feed data to SaaS endpoints.
+- Errors typically indicate failures during HTTP requests, response handling, or data validation that prevent data from being accepted.
+- Warnings usually indicate transient conditions (such as rate limiting or server errors) where requests are retried automatically.
 
 | Log Code  | Level   | Message |
 |-----------|---------|---------|
@@ -63,7 +65,9 @@ Errors during HTTP submission of feed data to SaaS endpoints.
 
 ## Group 03 - Scheduling Sync or Triggering Sync on Entity Update
 
-Errors when scheduling or triggering sync in response to entity changes. Usually need to run full resync to recover.
+Log codes related to errors or warnings that occur when scheduling or triggering synchronization in response to entity changes.
+- Errors can prevent incremental synchronization from being scheduled and often require a full or partial resync to recover.
+- Warnings indicate that a sync operation was skipped or deferred due to unsupported input, missing identifiers, or configuration issues.
 
 | Log Code  | Level    | Message |
 |-----------|----------|---------|
@@ -90,7 +94,7 @@ Errors when scheduling or triggering sync in response to entity changes. Usually
 
 ## Group 04 - Status Admin Grid UI Related Errors
 
-Errors occurring in the Feed Status admin grid UI components.
+Log codes related to errors occurring in the Feed Status admin grid UI components.
 
 | Log Code  | Level | Message |
 |-----------|-------|---------|
@@ -102,7 +106,7 @@ Unexpected errors that do not block the main sync flow.
 
 | Log Code  | Level   | Message |
 |-----------|---------|---------|
-| CDE05-01 | warning | `CDE05-01 Was not able to serialize metadata after sync. Error: {message}` |
+| CDE05-01 | warning | `CDE05-01 Failed to serialize metadata after sync. Error: {message}` |
 | CDE05-02 | error   | `CDE05-02 Batch table insert query "{query}" returned unexpected result. Expected: {expected_class}, Actual: {actual_type}` |
 | CDE05-03 | warning | `CDE05-03 Failed to check indexer type when setting schedule mode: {message}` |
 | CDE05-04 | warning | `CDE05-04 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` |
@@ -116,7 +120,7 @@ Unexpected errors that do not block the main sync flow.
 
 ## Group 06 - General Errors Related to Indexation or Configuration
 
-Errors during the indexation process or due to misconfiguration.
+Log codes related to errors during the indexation process or due to misconfiguration.
 
 | Log Code  | Level   | Message |
 |-----------|---------|---------|
