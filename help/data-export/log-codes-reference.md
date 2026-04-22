@@ -9,6 +9,7 @@ Source of truth: https://github.com/magento-commerce/commerce-data-export (docs/
 When log codes, messages, or log levels change in that repository, update this page to match.
 Only columns retained here: Log Code, Message, Level. File paths are intentionally omitted.
 -->
+
 # Log code reference
 
 This page lists log codes emitted by the [!DNL data export] extension. Codes are assigned only to `error`, `warning`, and `critical` level log messages.
