@@ -18,7 +18,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
 A Search query is where you define a specific search term, conditions and ranking types.
 
-A Default rule can be set which is applied to all queries, unless a more specific search query is defined. Only one default rule can be set and it cannot contain any conditions. If you select Default, the Conditions interface is not displayed. 
+A Default rule can be set which is applied to all queries, unless a more specific search query is defined. Only one default rule can be set and it cannot contain any conditions. If you select Default, the Conditions interface is not displayed.
 Choose the default Intelligent ranking type and any manual rankings you want applied to all default searches. Manual rankings are always applied.
 
 ## Conditions
@@ -47,7 +47,7 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
-1. To build a simple rule with one condition, go to Step 3: [Add events](#events).
+1. To build a simple rule with one condition, go to Step 3: [Add events](#manual-ranking).
 
 ### Multiple conditions
 

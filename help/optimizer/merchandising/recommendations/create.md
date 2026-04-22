@@ -49,7 +49,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 >[!NOTE]
 >
->You can create up to 50 active recommendation units. See [Limits and boundaries](../../boundaries-limits.md) for details. 
+>You can create up to 50 active recommendation units. See [Limits and boundaries](../../boundaries-limits.md) for details.
 
 >[!IMPORTANT]
 >
@@ -130,16 +130,16 @@ As a result of these variables, the readiness indicator percent can fluctuate. T
 
 Readiness indicators are calculated based on a couple factors:
 
-- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview.md#backuprecs)?
+- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview.md#backup-recommendations)?
 - Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site.
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
 - 75% or higher means that the recommendations suggested for that recommendation type are highly relevant.
 - At least 50% means that the recommendations suggested for that recommendation type are less relevant.
-- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backuprecs) are used.
+- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backup-recommendations) are used.
 
-Learn more about [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Learn more about [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-is-low).
 
 ### Static-based
 
@@ -186,7 +186,7 @@ The readiness indicator for recommendation types that depend on catalog data doe
 
 #### What to do if the readiness indicator is low
 
-A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](../../setup/events/overview.md#backuprecs) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](../../setup/events/overview.md#backup-recommendations) are returned if you deploy this recommendation type anyway.
 
 >[!IMPORTANT]
 >
