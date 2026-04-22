@@ -25,7 +25,7 @@ There are different behaviors for each payment method depending on where you are
 
 [!DNL Payment Services] provides **Advanced** (fully supported) and **Standard** (Express Checkout) payment options and onboarding flows, depending on the country in which you operate.
 
-* **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current [fully supported countries](../payment-services/introduction.md#availability). During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
+* **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current [fully supported countries](compatibility.md#standard-vs-advanced-payment-services-experience). During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
 
 * **Standard** - A subset of payments options (Express Checkout)---PayPal credit and debit cards---is available for other available supported countries. [Credit card fields](#credit-card-fields) and [Apple Pay](#apple-pay-button) are not available for this onboarding option. During onboarding to enable live payments, select the [Standard onboarding option](../payment-services/production.md#standard-onboarding).
 
@@ -39,7 +39,7 @@ See [Enable [!DNL Payment Services] for production](../payment-services/producti
 
 ## [!UICONTROL Digital Wallets]
 
-### [!DNL Fastlane] button 
+### [!DNL Fastlane] button
 
 [!DNL Fastlane] offers a quick, secure, and hassle-free way to pay online. During a **Guest checkout**, you can securely store your card and shipping details for even faster purchases in the future.
 
@@ -121,11 +121,11 @@ The [!DNL Pay Later] button is visible from the product page, mini-cart, shoppin
 
 See information about the [Pay Later offers](https://developer.paypal.com/docs/checkout/pay-later/us/) in the PayPal Developer documentation. Use the **Country or region** dropdown to select a region of interest.
 
-Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [Settings](configure-admin.md#pay-later-button) configuration.
+Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [Settings](configure-admin.md#paypal-payment-buttons) configuration.
 
 ##### Optional. Configure Pay Later Messaging
 
-**Configure messaging** for [Pay Later](configure-admin.md#pay-later-button) allows merchants to modify the default styles for this payment option. If you set **[!UICONTROL Display Pay Later Message]** to `Yes` in your [Settings](configure-admin.md#pay-later-button) configuration, a **[!UICONTROL Configure Messaging]** modal button is displayed so you can set the styles for the **[!UICONTROL PayPal Pay Later messaging]**.
+**Configure messaging** for [Pay Later](configure-admin.md#paypal-payment-buttons) allows merchants to modify the default styles for this payment option. If you set **[!UICONTROL Display Pay Later Message]** to `Yes` in your [Settings](configure-admin.md#paypal-payment-buttons) configuration, a **[!UICONTROL Configure Messaging]** modal button is displayed so you can set the styles for the **[!UICONTROL PayPal Pay Later messaging]**.
 
 ![Pay Later Messaging](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -151,15 +151,15 @@ This allows you to:
 
 To **capture payments with _only_ PayPal payment buttons (_not_ the PayPal credit card payment option)**:
 
-1. Ensure that your store is [in production mode](configure-admin.md#enable-payment-services).
-1. [Configure the desired PayPal payment buttons](configure-admin.md#payment-buttons) in Settings.
-1. Turn _Off_ the **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
+1. Ensure that your store is [in production mode](configure-admin.md#general-configuration).
+1. [Configure the desired PayPal payment buttons](configure-admin.md#paypal-payment-buttons) in Settings.
+1. Turn _Off_ the **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
 
 To **capture payments with your existing credit card provider _and_ PayPal payment buttons**:
 
-1. Ensure that your store is [in production mode](configure-admin.md#enable-payment-services).
-1. [Configure the desired PayPal payment buttons](configure-admin.md#payment-buttons).
-1. Turn _Off_ the **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
+1. Ensure that your store is [in production mode](configure-admin.md#general-configuration).
+1. [Configure the desired PayPal payment buttons](configure-admin.md#paypal-payment-buttons).
+1. Turn _Off_ the **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
 1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Local Payment Methods
@@ -201,17 +201,17 @@ To enable express checkout buttons, configure each payment method individually:
 
 ## Checkout Options
 
-With [!DNL Payment Services], you can configure the checkout experience for Adobe Commerce to best suit your shoppers' preferences and behaviors. Features such as credit card [vaulting](vaulting.md) and order auto-voiding ensure a seamless, hassle-free transaction for your customers. 
+With [!DNL Payment Services], you can configure the checkout experience for Adobe Commerce to best suit your shoppers' preferences and behaviors. Features such as credit card [vaulting](vaulting.md) and order auto-voiding ensure a seamless, hassle-free transaction for your customers.
 
-With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have multiple checkout experiences available to you. There are different behaviors for each payment method depending on where you are in the checkout process: 
+With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have multiple checkout experiences available to you. There are different behaviors for each payment method depending on where you are in the checkout process:
 
-* Product page—--The product page for an item 
+* Product page—--The product page for an item
 
-* Mini cart—--Available upon click of the cart icon when a product has been added to the carts 
+* Mini cart—--Available upon click of the cart icon when a product has been added to the carts
 
-* Shopping cart--—Available upon click of View and edit cart from the mini-cart 
+* Shopping cart--—Available upon click of View and edit cart from the mini-cart
 
-* Checkout view—--Available upon click of Proceed to Checkout from mini-cart or shopping cart 
+* Checkout view—--Available upon click of Proceed to Checkout from mini-cart or shopping cart
 
 ### Order recalculation
 

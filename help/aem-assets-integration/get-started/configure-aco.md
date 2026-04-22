@@ -79,7 +79,7 @@ The AEM Assets installation and configuration process for [!DNL Commerce Optimiz
 
 Ensure your AEM Assets environment is ready:
 
-1. **AEM Assets configuration**: Configure the Commerce metadata profile. See [Configure a metadata profile](configure-aem.md#configure-a-metadata-profile).
+1. **AEM Assets configuration**: Configure the Commerce metadata profile. See [Configure a metadata profile](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 1. **Dynamic Media enablement**: Verify Dynamic Media with OpenAPI capabilities is enabled on your AEM Assets environment.
 
