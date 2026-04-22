@@ -30,6 +30,8 @@ This article is intended for the developer or systems integrator on your team wh
 
 - As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled with the installation.
 
+- As of [!DNL Live Search] 4.0.0, the search adapter has been [deprecated](release-notes.md#live-search-400).
+
 ## Supported platforms
 
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
