@@ -41,8 +41,8 @@ Due to the [!DNL Adobe Commerce as a Cloud Service] architecture, when a merchan
 
 | Surface | Example URL pattern |
 | --- | --- |
-| Admin UI | `https://na1.admin.commerce.adobe.com/<tenant_id>/admin/` |
-| REST API | `https://na1.api.commerce.adobe.com/<tenant_id>/rest/` |
+| Admin UI | `https://<region>.admin.commerce.adobe.com/<tenant-id>/admin/` |
+| REST API | `https://<region>.api.commerce.adobe.com/<tenant-id>/<endpoint>` |
 | GraphQL API | `https://na1.api.commerce.adobe.com/<tenant_id>/graphql/` |
 
 [!DNL Adobe Commerce as a Cloud Service] uses a combined WAF and CDN:
@@ -58,8 +58,8 @@ The built-in CDN and WAF provides both network‑layer and HTTP‑layer DDoS pro
 
 ## Data storage and encryption
 
-If data is being stored in [!DNL App Builder], then a merchant can either store the data in the files or State libraries ([https://developer.adobe.com/commerce/extensibility/app-development/best-practices/database-storage/](https://developer.adobe.com/commerce/extensibility/app-development/best-practices/database-storage/)). [!DNL App Builder] enforces tenant isolation and access to data stored in these services is restricted to the runtime namespace in which the action is executed. There is no encryption of data in storage.
+If data is being stored in [!DNL App Builder], then a merchant can refer to the [!DNL App Builder] [storage options](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] enforces tenant isolation and access to data stored in these services is restricted to the runtime namespace in which the action is executed. There is no encryption of data in storage.
 
-When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] will encrypt these secrets using AES-256 encryption ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] encrypts these secrets using AES-256 encryption ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
 
 Any data stored in [!DNL Adobe Commerce as a Cloud Service] is encrypted at rest using AES 256-bit encryption and all data is encrypted over HTTPS using TLS 1.2 or greater in transit.

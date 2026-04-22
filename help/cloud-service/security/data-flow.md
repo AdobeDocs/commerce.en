@@ -31,6 +31,6 @@ The following example illustrates how data typically flows in [!DNL Adobe Commer
 
 **Step 5a**: If the request is sent to a third-party system, the response will be returned to [!DNL API Mesh].
 
-**Step 5b**: If the request is for payment processing, the payment provider will render an iframe into the storefront for the shopper to securely enter the credit card information and complete the payment transaction.
+**Step 5b**: If the request is for payment processing, the payment provider renders an iframe into the storefront for the shopper to securely enter the credit card information and complete the payment transaction.
 
 **Step 6**: Once responses from [!DNL Adobe Commerce as a Cloud Service] or third-party services are received by [!DNL API Mesh], they are stitched together into a unified graph and returned to [!DNL Commerce Storefront] to serve the shopper's request.
