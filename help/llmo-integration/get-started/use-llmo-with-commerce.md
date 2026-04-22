@@ -29,40 +29,43 @@ Use the **[!UICONTROL Opportunities]** area to see which type applies to a given
 **To open Commerce-related opportunities:**
 
 1. In the left rail, click **[!UICONTROL Opportunities]**.
-1. Click **[!UICONTROL Commerce Opportunity]** to show optimization types that target your [!DNL Adobe Commerce] catalog or storefront (control label names may vary slightly by release).
+1. Click **[!UICONTROL Commerce Opportunity]** to show optimization types that target your [!DNL Adobe Commerce] catalog.
 1. Select **[!UICONTROL Product Catalog Enrichment]** or **[!UICONTROL Product Detail Page Enrichment]**, depending on what you want to work on.
 
 ![Commerce opportunities filter and optimization types](../assets/llmo-opportunities.png)
 
 ### Review and deploy PDP enrichment {#review-deploy-pdp}
 
-PDP enrichment improves what **bots and models** can read from a product URL while you confirm that the **shopper-visible** page still looks correct.
+PDP enrichment improves what bots and models can read from a product URL while you confirm that the shopper-visible page still looks correct.
 
 **To review and deploy PDP enrichment:**
 
 1. Open **[!UICONTROL Product Detail Page Enrichment]** from **[!UICONTROL Opportunities]**.
-1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]** (or the equivalent tab for open suggestions).
-1. For a URL or SKU, click **[!UICONTROL Preview]**. The proposed update appears beside or below the table. The content comes from your Commerce catalog but is structured for AI consumption.
-1. Optional: Click **[!UICONTROL Copy]** to paste the content into an external editor, or click **[!UICONTROL Edit suggestion]** to edit in place.
-1. Select the row for the URL or SKU to update, click **[!UICONTROL Deploy optimizations]**, and confirm. (The exact deploy control label may be singular or plural depending on your release.)
+1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]**.
+1. For a URL or SKU, click **[!UICONTROL Preview]**. The proposed update appears beside the table. 
 
-After deployment, re-check the live PDP. The **human** view should match your expectations (for example, expandable sections remain unchanged). If your organization provides optional **AI Content Visibility** tooling, run the same **human-versus-agent** comparison that you used before deployment.  The **agent** view should now include enrichment that was previously missing or unstructured.
+    The content comes from your Commerce catalog but is structured for AI consumption.
+
+1. Optional: Click **[!UICONTROL Copy]** to paste the content into an external editor, or click **[!UICONTROL Edit suggestion]** to edit in place.
+1. Once reviewed and approved, select the row for the URL or SKU to update, thenclick **[!UICONTROL Deploy optimizations]**, and confirm.
+
+After deployment, re-check the live PDP. The user-visible view should match your expectations (for example, expandable sections remain unchanged). If your organization provides optional **AI Content Visibility** tooling, run the same user-versus-agent comparison that you used before deployment. The agent view should now include enrichment that was previously missing or unstructured.
 
 ### Review and deploy product catalog enrichment {#review-deploy-catalog}
 
 **To review and deploy product catalog enrichment:**
 
 1. Open **[!UICONTROL Product Catalog Enrichment]** from **[!UICONTROL Opportunities]**.
-1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]** (or the equivalent tab).
+1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]**.
 1. Click the expand control for the URL or SKU row to show the proposed **Product Name** and **Product Description** enrichments.
 1. Optional: Click the edit icon to adjust the proposed name or description before you deploy.
-1. Select the row for the URL or SKU to update, click **[!UICONTROL Deploy optimizations]** (or **[!UICONTROL Deploy optimization]**), and confirm.
+1. Once reviewed and approved, select the row for the URL or SKU to update, then click **[!UICONTROL Deploy optimizations]**, and confirm.
 
-When you deploy product name or description changes, **Catalog Agent** writes the approved values into your [!DNL Adobe Commerce] catalog.
+When you deploy product name or description changes, the Catalog Agent writes the approved values into your [!DNL Adobe Commerce] catalog.
 
 >[!IMPORTANT]
 >
->Treat deploy as a **production catalog change**. Use your normal change-control, staging, and QA practices. Deploy only after merchandising and SEO stakeholders agree on the final copy.
+>Treat deploy as a production catalog change. Use your normal change-control, staging, and QA practices. Deploy only after merchandising and SEO stakeholders agree on the final copy.
 
 ## Verify updates in the Commerce Admin {#verify-in-admin}
 
@@ -80,13 +83,14 @@ When you deploy product name or description changes, **Catalog Agent** writes th
 1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Product Name]** if you want to keep a manually entered name instead.
 
   Manual overrides affect how opportunities stay in sync with the catalog; see [Manual override in the Admin](#manual-override-in-the-admin).
+
 1. Expand the **[!UICONTROL Content]** section and locate the **description** field.
 
    The enriched description appears when you deployed description changes.
 
    ![Description field after LLM Optimizer enrichment](../assets/llmo-admin-description.png)
 
-1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Description]** (label may vary by release) if you want to keep a manually entered description instead.
+1. Optional: Select **[!UICONTROL Override LLM Optimizer provided Description]** if you want to keep a manually entered description instead.
 
 ## Verify updates on the storefront {#verify-storefront}
 

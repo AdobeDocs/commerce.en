@@ -21,7 +21,7 @@ This article explains how to connect your [!DNL Adobe Commerce] catalog availabl
 
 Work with your Commerce administrator or implementation partner to ensure the following:
 
-- Catalog data that LLM Optimizer must read is **exported or synchronized** according to your architecture (including any SaaS data exporter or connector in your deployment.
+- Catalog data that LLM Optimizer must read is **exported or synchronized** according to your architecture (including any SaaS data exporter or connector in your deployment).
 - API access, credentials, and environment URLs (sandbox vs production) match the **tenant** you intend to use in LLM Optimizer.
 
 ## Configure the Commerce connection in LLM Optimizer {#configure-commerce-connection}
@@ -33,12 +33,21 @@ Work with your Commerce administrator or implementation partner to ensure the fo
    ![Commerce configuration on the Customer Configuration tab](../assets/llmo-commerce-config.png)
 
 1. Click **[!UICONTROL Add Store View]** to create a new row, or expand an existing store view entry to edit it.
-1. Enter the **[!UICONTROL Store View URL]** (required). Use the storefront URL for that store view, including any locale or path prefix (for example, `https://brand.example.com/` or `https://brand.example.com/fr/`).
+1. Enter the **[!UICONTROL Store View URL]** (required).
+
+    Use the storefront URL for that store view, including any locale or path prefix (for example, `https://brand.example.com/` or `https://brand.example.com/fr/`).
+
 1. Enter the **[!UICONTROL Environment ID]** (required)—the identifier for the Adobe Commerce environment that LLM Optimizer should connect to.
-1. Enter **[!UICONTROL Website Code]**, **[!UICONTROL Store Code]**, and **[!UICONTROL Store View Code]** (required). These values must match the codes in your Commerce Admin for the website, store, and store view you connect.
-1. Optional: If prompted, enter **[!UICONTROL Host Name]** with the hostname of your Commerce instance (for example, `www.example.com`) if the UI prompts for it separately from the URL.
+1. Enter **[!UICONTROL Website Code]**, **[!UICONTROL Store Code]**, and **[!UICONTROL Store View Code]** (required).
+
+    These values must match the codes in your Commerce Admin for the website, store, and store view you connect.
+
+1. Optional: Enter **[!UICONTROL Host Name]** with the hostname of your Commerce instance (for example, `www.example.com`) if that value is different from the URL.
 1. Enter the **[!UICONTROL Adobe Commerce Endpoint]**—the base URL of your Adobe Commerce instance used for API access.
-1. Enter or paste the **[!UICONTROL API Key]** used to authenticate requests to Commerce APIs. Click **[!UICONTROL Copy]** next to the field if you need to copy the key elsewhere securely.
+1. Enter or paste the **[!UICONTROL API Key]** used to authenticate requests to Commerce APIs.
+
+    Click **[!UICONTROL Copy]** next to the field if you need to copy the key elsewhere securely.
+
 1. Click **[!UICONTROL Save]** to store the configuration.
 
 After you save, wait for any **initial sync** or validation job to complete before relying on catalog or audit results for that store view.
