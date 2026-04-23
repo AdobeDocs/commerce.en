@@ -25,7 +25,7 @@ Log codes related to errors or warnings that occur while collecting data from so
 
 | Log Code  | Level   | Message |
 |-----------|---------|---------|
-| CDE01-01 | error   | `CDE01-01 Was not able to add stock info to "ac_inventory" attribute for ids "{ids}". Error: {exception_message}` |
+| CDE01-01 | error   | `CDE01-01 Failed to add stock info to "ac_inventory" attribute for ids "{ids}". Error: {exception_message}` |
 | CDE01-02 | warning | `CDE01-02 Field "{field}" is missing in row {row_data}` |
 | CDE01-03 | warning | `CDE01-03 Invalid field "{field}" requested from inventory config {config_data}` |
 | CDE01-04 | error   | `CDE01-04 Was not able to add data to "ac_attribute_set" attribute for ids "{ids}". Error: {exception_message}` |
@@ -38,8 +38,8 @@ Log codes related to errors or warnings that occur while collecting data from so
 | CDE01-11 | error   | `CDE01-11 Unable to retrieve gift card shopper input options for products "{values}". Error: {exception_message}` |
 | CDE01-12 | warning | `CDE01-12 Catalog Permissions: Global Configuration path was not found for path {path}. {config_dump}` |
 | CDE01-13 | error   | `CDE01-13 Catalog Permissions: wrong state in global config. item: {item}, config: {config}` |
-| CDE01-14 | error   | `CDE01-14 Failed to assign UUID for type: {type}, ids: {ids}` |
-| CDE01-15 | error   | `CDE01-15 Failed to assign UUID for type: {type}, ids: {ids}. duplicates: {duplicates}` |
+| CDE01-14 | error   | `CDE01-14 Failed to assign UUIDs for type: {type}, ids: {ids}` |
+| CDE01-15 | error   | `CDE01-15 Failed to assign UUIDs for type: {type}, ids: {ids}. duplicates: {duplicates}` |
 | CDE01-16 | error   | `CDE01-16 "{feed_name}" feed sync error: cannot build identifier for "{field}". Item skipped: {item}` |
 
 ## Group 02 - Sending Data to SaaS Phase
@@ -52,7 +52,7 @@ Log codes related to errors or warnings that occur while submitting feed data to
 |-----------|---------|---------|
 | CDE02-01 | error   | `CDE02-01 Application error on sending data to SaaS for feed "{feed_name}". Error: {error_message}` |
 | CDE02-02 | error   | `CDE02-02 Unexpected error on sending data to SaaS for feed "{feed_name}". Error: {error_message}` |
-| CDE02-03 | warning | `CDE02-03 Cannot parse response. API request was not successful.` |
+| CDE02-03 | warning | `CDE02-03 Cannot parse the API response because the request was not successful.` |
 | CDE02-04 | error   | `CDE02-04 Cannot obtain feed metadata for feed name "{feed_name}". Sync terminated. Error: {error_message}` |
 | CDE02-05 | error   | `CDE02-05 Failed to submit feed batch for feed {feed_name}. Error: {error_message}` |
 | CDE02-06 | error   | `CDE02-06 Failed to retry feed items submission for feed {feed_name}. Error: {error_message}` |
@@ -79,7 +79,7 @@ Log codes related to errors or warnings that occur when scheduling or triggering
 | CDE03-06 | error    | `CDE03-06 Product sync scheduling error on attribute "{attribute_code}" deletion. Run full resync. Error: {error_message}` |
 | CDE03-07 | error    | `CDE03-07 Product sync scheduling error on inventory source save for SKUs: {product_skus}. Error: {error_message}` |
 | CDE03-08 | error    | `CDE03-08 Product variants sync scheduling error on product "{sku_or_id}" save. Run resync. Error: {error_message}` |
-| CDE03-09 | warning  | `CDE03-09 The '{feed_name}' feed does not support partial resync by IDs or wrong identifier type specified` |
+| CDE03-09 | warning  | `CDE03-09 The "{feed_name}" feed does not support partial resync by IDs, or an unsupported identifier type was specified.` |
 | CDE03-10 | warning  | `CDE03-10 There are no {id_field}s found to reindex for provided identifiers list: {identifiers}` |
 | CDE03-11 | error    | `CDE03-11 Categories Permissions feed sync scheduling error on category "{category_id_and_name}" delete. Error: {error_message}` |
 | CDE03-12 | warning  | `CDE03-12 Product Overrides sync failed. Marked indexer as invalid. Error: {error_message}` |
@@ -110,7 +110,7 @@ Unexpected errors that do not block the main sync flow.
 | CDE05-02 | error   | `CDE05-02 Batch table insert query "{query}" returned unexpected result. Expected: {expected_class}, Actual: {actual_type}` |
 | CDE05-03 | warning | `CDE05-03 Failed to check indexer type when setting schedule mode: {message}` |
 | CDE05-04 | warning | `CDE05-04 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` |
-| CDE05-05 | warning | `CDE05-05 Identifier for feed item is empty. Skip sync for entity` |
+| CDE05-05 | warning | `CDE05-05 The identifier for a feed item is empty. Sync is skipped for the entity.` |
 | CDE05-06 | warning | `CDE05-06 Failed to create attribute "{attribute_code}". Will be retried on next sync. Error: {message}` |
 | CDE05-07 | warning | `CDE05-07 Error on getting datetime for catalog price rule fetch. Using system time. website: "{website_id}", store: "{store_id}"` |
 | CDE05-08 | warning | `CDE05-08 GiftCard {sku} does not have shopper input options` |
@@ -132,7 +132,7 @@ Log codes related to errors during the indexation process or due to misconfigura
 | CDE06-06 | error   | `CDE06-06 Error on partial resync for feed "{feed_name}". Error: {message}` |
 | CDE06-07 | error   | `CDE06-07 Error retrying failed items sync for feed "{feed_name}". Error: {message}` |
 | CDE06-08 | error   | `CDE06-08 Error on full resync for feed "{feed_name}". Error: {message}` |
-| CDE06-09 | error   | `CDE06-09 Error during full sync. Message: "{message}". Skipped IDs: [{ids}]` |
+| CDE06-09 | error   | `CDE06-09 Error during full sync. Message: "{message}". The following IDs were skipped: [{ids}]` |
 | CDE06-10 | warning | `CDE06-10 Feed "{feed_name}" sync failed. Resync will be run on next cron run. Error: {message}` |
 | CDE06-11 | warning | `CDE06-11 Partial sync failed for feed "{feed_name}". Retry has been scheduled. Error: {message}` |
 | CDE06-12 | error   | `CDE06-12 Sync completed, but failed to persist status to feed table for "{feed_name}" feed. Error: {message}` |
