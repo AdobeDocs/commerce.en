@@ -16,7 +16,41 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 - release #2 {#latest}
+## April 2026 - release #3 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items will be released to Production environments on April 27, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Added the `GET /V1/order-statuses` REST API endpoint for retrieving all configured order statuses with their state assignments. <!-- CEXT-6100 -->
+
+* Resolved an issue that caused `custom_attributes` for entities such as Order, Cart, Invoice, Credit Memo, and Company to not display in the schema. <!-- CCSAAS-4818 -->
+
+* Resolved duplicate message processing errors (`MessageLockException`) in the async bulk API consumer. <!-- CCSAAS-4805 -->
+
+* Number product attributes now render as from/to range filters in the [!DNL Commerce Admin] product grid when the attribute is enabled for filter options. <!-- ACCS-761 -->
+
+* Fixed an issue where cart abandonment reminder emails did not display product images when using [!DNL AEM Assets]. <!-- ACCS-798 -->
+
+* Fixed an issue where a false "max upload size" error could appear when adding files, samples, or links to downloadable products. <!-- ACCS-813 -->
+
+* Fixed an issue where saving a product assigned to several shared catalogs could cause an error. <!-- ACCS-788 -->
+
+* Fixed an issue where the order history query could be slow and cause database out-of-memory errors for companies with many orders. <!-- ACCS-808 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## April 2026 - release #2
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
