@@ -9,7 +9,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 [!DNL Adobe Commerce as a Cloud Service] leverages Adobe's enterprise-grade identity infrastructure to ensure secure, scalable, and centralized access control across all environments. Identity and access management (IAM) in [!DNL Adobe Commerce as a Cloud Service] is designed to simplify user provisioning, enforce least-privilege access, and support compliance with global security standards.
 
-- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] uses IMS to authenticate users and manage entitlements. This includes support for federated identity providers and [role-based access control](../user-management.md).
+- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] uses [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) to authenticate users and manage entitlements. This includes support for federated identity providers and [role-based access control](../user-management.md).
 
 - **Admin console governance**: Administrators manage access to the storefront and backend through the [!DNL Adobe Admin Console]. Permissions can be scoped to specific features and roles, ensuring least-privilege access.
 
