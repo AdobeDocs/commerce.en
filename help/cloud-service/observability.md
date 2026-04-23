@@ -24,6 +24,16 @@ Together, these capabilities help you quickly identify and resolve issues, optim
 
 ![Observability architecture](./assets/observability.png){width="600" zoomable="yes"}
 
+Adobe Commerce supports the following observability tools through OpenTelemetry:
+
+* Elasticsearch
+* Grafana
+* Jaeger
+* New Relic
+* Prometheus
+* Splunk
+* Zipkin
+
 ### Configure subscriptions
 
 [Configure observability subscriptions](https://developer.adobe.com/commerce/extensibility/observability/configuration/) in the [!UICONTROL Admin] or through the REST API to route logs, metrics, or traces to any OpenTelemetry-compatible endpoint. Each subscription targets specific components (webhooks, eventing, or [!UICONTROL Admin UI SDK]).
