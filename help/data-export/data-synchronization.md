@@ -8,7 +8,8 @@ exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
 
 When you install a Commerce Service that requires data export such as Catalog Service, Live Search, or Product Recommendations, a collection of Saas data export modules is installed to manage the data collection and synchronization process.
 
-SaaS data export moves product data from an Adobe Commerce instance to the Commerce Services platform on an ongoing basis to keep the data up to date. For example, Product Recommendations requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) to observe and manage the synchronization process, or the command-line interface to trigger a sync and to reindex product data for consumption by Commerce Services.
+SaaS data export moves product data from an Adobe Commerce instance to the Commerce Services platform on an ongoing basis to keep the data up to date. For example, Product Recommendations requires current catalog information to accurately return recommendations with correct names, pricing, and availability. For details on monitoring the synchronization process, see [View and manage the synchronization process](#view-and-manage-the-synchronization-process).
+
 
  The following diagram shows the SaaS data export flow.
 
@@ -76,9 +77,15 @@ The Retry failed items sync uses a separate process to resend items that failed 
 
 Most synchronization activities are processed automatically based on the application configuration. However, SaaS data export also provides tools to monitor and manage the process.
 
-- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Admin users can view and track data synchronized to Commerce Services and available to storefront services.
+- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Admin users can view and track data synchronized to Commerce Services and available to storefront services. This dashboard shows the product synced to Commerce Services.
 
-- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce projects integrated with Adobe Commerce Optimizer (Adobe-managed SaaS infrastructure)."} **[Data Sync page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check catalog data availability for your storefront from the Data Sync page in Adobe Commerce Optimizer.
+  {{aco-data-sync-verification}}
+
+- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce projects integrated with Adobe Commerce Optimizer (Adobe-managed SaaS infrastructure)."} **[Data Sync Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check catalog data availability for your storefront from the Data Feed Sync Status page in Adobe Commerce Optimizer. This dashboard shows the synchronization status of the data export feeds.
+
+>[!NOTE]
+>
+>The Data Management dashboard is available only if you have Live Search, Product Recommendations, or the Catalog Service installed. The Data Feed Sync Status dashboard is available if you have these services, or the  [Adobe Commerce Optimizer Connector ](../aco-connector/overview.md)  installed.
 
 ### Verify Commerce application configuration
 

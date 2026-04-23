@@ -34,7 +34,7 @@ As part of the [!DNL Adobe Commerce as a Cloud Service] setup process, your syst
 As a combined group, the system administrator, merchant, and developer need to follow these essential steps to get your Commerce instance up and running:
 
 1. **All Users**: [Create an instance](#create-an-instance)
-1. **System Administrator**: [Add users and assign roles](user-management.md#add-users-and-admins)
+1. **System Administrator**: [Add users and assign roles](user-management.md#add-users)
 1. **Merchants**: [Access the Commerce Admin](#access-an-instance) and [import your catalog](#import-your-catalog)
 1. **Developers**: [Set up your storefront](storefront.md) and explore the [developer platform](overview.md#developer-platform)
 
@@ -124,7 +124,7 @@ The following sections describe the basic processes you need to complete to get 
 
 >[!NOTE]
 >
->Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce as a Cloud Service] product. See [Add users and admins](./user-management.md#add-users-and-admins) for more information.
+>Before you can create an instance, your organization's product admin or system admin must add you as a user of the [!DNL Adobe Commerce as a Cloud Service] product. See [Add users and admins](./user-management.md#add-users) for more information.
 
 [!DNL Adobe Commerce as a Cloud Service] instances use a credit-based system. You can create multiple instances, but each instance requires available credits. The number of credits you have initially depends on your subscription.
 

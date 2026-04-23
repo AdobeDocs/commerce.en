@@ -8,6 +8,10 @@ exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 
 The [!DNL data export] extension provides logs to track data collection and synchronization processes.
 
+>[!NOTE]
+>
+>You can also track the health and performance of data export feeds for product and category data from the [Data Feed Sync Status dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Admin.
+
 ## Logs
 
 Logs are available in the `var/log` directory on the Commerce application server.
@@ -134,7 +138,7 @@ When you trigger a data resync, it can take up to an hour for the data to update
 1. Display the detailed view of the product in question in the search results.
 1. Copy the JSON output and verify that the content matches what you have in the [!DNL Commerce] catalog.
 1. If the content does not match, make a minor change to the product in your catalog, such as adding a space or a period.
-1. Wait for a resync or [trigger a manual resync](#resync).
+1. Wait for a resync or trigger a manual resync from the CLI or the Admin dashboard.
 
 #### Sync not running
 

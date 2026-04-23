@@ -33,7 +33,7 @@ Remember that thoughtful planning, including estimating data volume and synchron
 
 ## Configure multi-threading
 
-Multi-thread mode is supported for all [synchronization methods](data-synchronization.md#synchronization-process)—full sync, partial sync, and failed items sync. To configure multi-threading, you specify the number of threads and batch size to use during synchronization.
+Multi-thread mode is supported for all [synchronization methods](data-synchronization.md#view-and-manage-the-synchronization-process)—full sync, partial sync, and failed items sync. To configure multi-threading, you specify the number of threads and batch size to use during synchronization.
 
 - `thread-count` is the number of threads that are activated to process entities. The default `thread-count` is `1`.
 - `batch-size` is the number of entities that are processed in one iteration. The default `batch-size` is `100` records for all feeds except the price feed. For the price feed, the default value is `500` records.

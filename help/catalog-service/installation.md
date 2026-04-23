@@ -6,6 +6,8 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 ---
 # Onboarding and Installation
 
+{{aco-merchandising-services}}
+
 Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). The Catalog Service is delivered as a composer PHP metapackage from the repo.magento.com repository.
 
 >[!NOTE]

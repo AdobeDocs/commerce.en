@@ -76,4 +76,4 @@ To create an order in the Admin for a customer using their vaulted credit card:
 
 ## Security
 
-Minimal credit card information is shared with the shopper; they only see the last four digits, expiration date, and brand of their vaulted credit card. Credit card information is stored with the payment provider to satisfy [PCI](security.md#PCI-compliance) compliance standards.
+Minimal credit card information is shared with the shopper; they only see the last four digits, expiration date, and brand of their vaulted credit card. Credit card information is stored with the payment provider to satisfy [PCI](security.md#pci-compliance) compliance standards.

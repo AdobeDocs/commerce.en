@@ -217,7 +217,7 @@ You can view any disputes on your store's orders, and navigate to the PayPal Res
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Navigate to the **[!UICONTROL Disputes column]**.
-1. View any disputes for a specific order and see [the dispute status](#order-payment-status-information).
+1. View any disputes for a specific order and see [the dispute status](#statuses-information).
 1. Review dispute details from the [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) by clicking the dispute ID link that begins with _PP-D-_.
 1. Take appropriate action for the dispute, as needed.
 
@@ -228,7 +228,7 @@ You can view any disputes on your store's orders, and navigate to the PayPal Res
 You can download a .csv file with all statuses visible in the Order payment status view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
-1. If you want to see statuses for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
+1. If you want to see statuses for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-order-dates-timeframe).
 1. Click the _Download_ (![download icon](assets/icon-download.png){width="20" zoomable="yes"}) icon.
 
 Your order payment statuses are downloaded in a .csv format.

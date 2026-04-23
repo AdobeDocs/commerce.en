@@ -104,7 +104,7 @@ Ultimately, Carvelo has two major goals:
 
 ## 1. Access the [!DNL Adobe Commerce Optimizer] instance
 
-Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](../get-started.md#access-an-instance).)
+Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
 When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
@@ -251,7 +251,7 @@ After you create the Celport catalog view and associated policies, the next step
 
 ## 3. Update your storefront
 
-The final piece of this tutorial involves updating the storefront that [you already created](#prerequisite) to deliver data to the new Celport catalog. In this section, you replace the catalog view ID in your storefront configuration file with the catalog view ID for Celport.
+The final piece of this tutorial involves updating the storefront that [you already created](#prerequisites) to deliver data to the new Celport catalog. In this section, you replace the catalog view ID in your storefront configuration file with the catalog view ID for Celport.
 
 1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
 

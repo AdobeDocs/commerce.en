@@ -341,7 +341,7 @@ _March 14, 2023_
     - Pin to bottom - Places the product at the bottom of the results
     - Unpin an event with one click
 ![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![New](../assets/new.svg) [!DNL Live Search] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
+![New](../assets/new.svg) [!DNL Live Search] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#updating-live-search) the dependency module `commerce-data-export` to version 102.2.0+.
 
 #### Updates
 
