@@ -41,6 +41,10 @@ Log codes related to errors or warnings that occur while collecting data from so
 | CDE01-14 | error   | `CDE01-14 Failed to assign UUIDs for type: {type}, ids: {ids}` |
 | CDE01-15 | error   | `CDE01-15 Failed to assign UUIDs for type: {type}, ids: {ids}. duplicates: {duplicates}` |
 | CDE01-16 | error   | `CDE01-16 "{feed_name}" feed sync error: cannot build identifier for "{field}". Item skipped: {item}` |
+| CDE01-17 | warning | `CDE01-17 Failed to create attribute "{attribute_code}". Will be retried on next sync. Error: {message}` |
+| CDE01-18 | warning | `CDE01-18 Error on getting datetime for catalog price rule fetch. Using system time. website: "{website_id}", store: "{store_id}"` |
+| CDE01-19 | warning | `CDE01-19 GiftCard {sku} does not have shopper input options` |
+| CDE01-20 | warning | `CDE01-20 GiftCard {sku} doesn't have valid options: {options}` |
 
 ## Group 02 - Sending Data to SaaS Phase
 
@@ -62,8 +66,9 @@ Log codes related to errors or warnings that occur while submitting feed data to
 | CDE02-10 | warning | `CDE02-10 Feed "{feed_name}" sync error: Client error (HTTP {http_status_code}). Request will be retried.` |
 | CDE02-11 | warning | `CDE02-11 Feed "{feed_name}" sync error: application-level error. Request will be retried.` |
 | CDE02-12 | error   | `CDE02-12 Feed "{feed_name}" sync error API request was not successful (status code: {status_code}).` |
+| CDE02-13 | warning | `CDE02-13 The zlib-ext is not loaded. Request body can't be compressed and will proceed with regular json` |
 
-## Group 03 - Scheduling Sync or Triggering Sync on Entity Update
+## Group 03 - Scheduling Sync on Entity Update
 
 Log codes related to errors or warnings that occur when scheduling or triggering synchronization in response to entity changes.
 - Errors can prevent incremental synchronization from being scheduled and often require a full or partial resync to recover.
@@ -92,48 +97,37 @@ Log codes related to errors or warnings that occur when scheduling or triggering
 | CDE03-19 | error    | `CDE03-19 Failed to remove product override view subscriptions during table maintenance: {error_message}` |
 | CDE03-20 | error    | `CDE03-20 Failed to recreate product override view subscriptions after table maintenance: {error_message}` |
 
-## Group 04 - Status Admin Grid UI Related Errors
-
-Log codes related to errors occurring in the Feed Status admin grid UI components.
-
-| Log Code  | Level | Message |
-|-----------|-------|---------|
-| CDE04-01 | error | `CDE04-01 Error on getting indexer status for feed "{feed_name}". Error: {error_message}` |
-
-## Group 05 - Unexpected Error, Functionality Not Impacted
-
-Unexpected errors that do not block the main sync flow.
-
-| Log Code  | Level   | Message |
-|-----------|---------|---------|
-| CDE05-01 | warning | `CDE05-01 Failed to serialize metadata after sync. Error: {message}` |
-| CDE05-02 | error   | `CDE05-02 Batch table insert query "{query}" returned unexpected result. Expected: {expected_class}, Actual: {actual_type}` |
-| CDE05-03 | warning | `CDE05-03 Failed to check indexer type when setting schedule mode: {message}` |
-| CDE05-04 | warning | `CDE05-04 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` |
-| CDE05-05 | warning | `CDE05-05 The identifier for a feed item is empty. Sync is skipped for the entity.` |
-| CDE05-06 | warning | `CDE05-06 Failed to create attribute "{attribute_code}". Will be retried on next sync. Error: {message}` |
-| CDE05-07 | warning | `CDE05-07 Error on getting datetime for catalog price rule fetch. Using system time. website: "{website_id}", store: "{store_id}"` |
-| CDE05-08 | warning | `CDE05-08 GiftCard {sku} does not have shopper input options` |
-| CDE05-09 | warning | `CDE05-09 GiftCard {sku} doesn't have valid options: {options}` |
-| CDE05-10 | warning | `CDE05-10 The zlib-ext is not loaded. Request body can't be compressed and will proceed with regular json` |
-| CDE05-11 | warning | `CDE05-11 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` |
-
-## Group 06 - General Errors Related to Indexation or Configuration
+## Group 04 - General Errors Related to Indexation or Configuration
 
 Log codes related to errors during the indexation process or due to misconfiguration.
 
 | Log Code  | Level   | Message |
 |-----------|---------|---------|
-| CDE06-01 | error   | `CDE06-01 Cannot set indexer to Update On Schedule mode for indexer {indexer_id}. Error: {message}` |
-| CDE06-02 | warning | `CDE06-02 Partial sync failed for changelog "{changelog_name}". Should be retried. Error: {message}` |
-| CDE06-03 | error   | `CDE06-03 Feed metadata does not contain indexer name. Check di.xml config` |
-| CDE06-04 | error   | `CDE06-04 Cannot load feed indexer for feed` |
-| CDE06-05 | error   | `CDE06-05 Failed to reset MView triggers for "{affected_views}" on index table switch. Run reindex. Error: {message}` |
-| CDE06-06 | error   | `CDE06-06 Error on partial resync for feed "{feed_name}". Error: {message}` |
-| CDE06-07 | error   | `CDE06-07 Error retrying failed items sync for feed "{feed_name}". Error: {message}` |
-| CDE06-08 | error   | `CDE06-08 Error on full resync for feed "{feed_name}". Error: {message}` |
-| CDE06-09 | error   | `CDE06-09 Error during full sync. Message: "{message}". The following IDs were skipped: [{ids}]` |
-| CDE06-10 | warning | `CDE06-10 Feed "{feed_name}" sync failed. Resync will be run on next cron run. Error: {message}` |
-| CDE06-11 | warning | `CDE06-11 Partial sync failed for feed "{feed_name}". Retry has been scheduled. Error: {message}` |
-| CDE06-12 | error   | `CDE06-12 Sync completed, but failed to persist status to feed table for "{feed_name}" feed. Error: {message}` |
-| CDE06-13 | error   | `CDE06-13 Cannot delete feed items for feed "{feed_name}" for ids: "{ids}". Error: {message}` |
+| CDE04-02 | error   | `CDE04-02 Cannot set indexer to Update On Schedule mode for indexer {indexer_id}. Error: {message}` |
+| CDE04-03 | warning | `CDE04-03 Partial sync failed for changelog "{changelog_name}". Should be retried. Error: {message}` |
+| CDE04-04 | error   | `CDE04-04 Feed metadata does not contain indexer name. Check di.xml config` |
+| CDE04-05 | error   | `CDE04-05 Cannot load feed indexer for feed` |
+| CDE04-06 | error   | `CDE04-06 Failed to reset MView triggers for "{affected_views}" on index table switch. Run reindex. Error: {message}` |
+| CDE04-07 | error   | `CDE04-07 Error on partial resync for feed "{feed_name}". Error: {message}` |
+| CDE04-08 | error   | `CDE04-08 Error retrying failed items sync for feed "{feed_name}". Error: {message}` |
+| CDE04-09 | error   | `CDE04-09 Error on full resync for feed "{feed_name}". Error: {message}` |
+| CDE04-10 | error   | `CDE04-10 Error during full sync. Message: "{message}". The following IDs were skipped: [{ids}]` |
+| CDE04-11 | warning | `CDE04-11 Feed "{feed_name}" sync failed. Resync will be run on next cron run. Error: {message}` |
+| CDE04-12 | warning | `CDE04-12 Partial sync failed for feed "{feed_name}". Retry has been scheduled. Error: {message}` |
+| CDE04-13 | error   | `CDE04-13 Sync completed, but failed to persist status to feed table for "{feed_name}" feed. Error: {message}` |
+| CDE04-14 | error   | `CDE04-14 Cannot delete feed items for feed "{feed_name}" for ids: "{ids}". Error: {message}` |
+| CDE04-15 | warning | `CDE04-15 Failed to serialize metadata after sync. Error: {message}` |
+| CDE04-16 | warning | `CDE04-16 Batch table insert query "{query}" returned unexpected result. Expected: {expected_class}, Actual: {actual_type}` |
+| CDE04-17 | warning | `CDE04-17 Failed to check indexer type when setting schedule mode: {message}` |
+| CDE04-18 | warning | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` |
+| CDE04-19 | warning | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` |
+| CDE04-20 | warning | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` |
+
+
+## Group 05 - Status Admin Grid UI Related Errors
+
+Log codes related to errors occurring in the Feed Status admin grid UI components.
+
+| Log Code | Level | Message                                                                                   |
+|----------|-------|-------------------------------------------------------------------------------------------|
+| CDE05-01 | error | `CDE05-01 Error on getting indexer status for feed "{feed_name}". Error: {error_message}` |
