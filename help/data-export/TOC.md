@@ -12,7 +12,8 @@ feature: Services
   - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
   - [Improve export performance](customize-export-processing.md)
 - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
-- [Review logs and troubleshoot](troubleshooting-logging.md)
+- [Logs and troubleshooting]{#logs-troubleshooting}
+  - [Review logs and troubleshoot](troubleshooting-logging.md)
   - [Log code reference](log-codes-reference.md)
 - [Manage the SaaS data export extension](manage-extension.md)
 - Extensibility {#extensibility}
