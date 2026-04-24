@@ -48,7 +48,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue where import file validation could fail. <!-- CCSAAS-4364 -->
 
-* Removed an unnecessary configuration section from the [!DNL Commerce Admin]. <!-- ACCS-793 -->
+* Removed the **[!UICONTROL Recently Viewed/Compared Products]** configuration from the **[!UICONTROL Catalog]** section in **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**, since it is not supported in [!DNL Adobe Commerce as a Cloud Service] admin. <!-- ACCS-793 -->
 
 {{accs-release}}
 
