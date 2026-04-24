@@ -383,7 +383,8 @@ The following changes were made to B2B drop-in components:
 <!-- 
 * [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+-->
 
 ### Clickable links to external shipping trackers
 
@@ -395,7 +396,8 @@ Transform shipment tracking numbers included in shopper emails from plain text i
 
 ### Instance-specific admin access
 
-You can now [assign users access](./user-management.md#add-users) to individual [!DNL Adobe Commerce as a Cloud Service] instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+You can now [assign users access](./user-management.md#add-users) to individual [!DNL Adobe Commerce as a Cloud Service] instances in the Admin Console. <!-- CCSAAS-4337 -->
+<!-- See PR #332 -->
 
 ### Observability
 
@@ -423,7 +425,14 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 * Resolved an issue where product custom attributes could not be updated through the REST API when [!DNL AEM Assets integration] was enabled and the product had images. <!-- ACAP-1178 -->
 
-* Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 --><!-- CCSAAS-4330 --><!-- CCSAAS-3669 --><!-- CCSAAS-4462 -->
+* Various performance and optimization improvements.
+<!-- CCSAAS-4255 -->
+<!-- CCSAAS-4233 -->
+<!-- CCSAAS-4220 -->
+<!-- CCSAAS-4252 -->
+<!-- CCSAAS-4330 -->
+<!-- CCSAAS-3669 -->
+<!-- CCSAAS-4462 -->
 
 >[!ENDSHADEBOX]
 
