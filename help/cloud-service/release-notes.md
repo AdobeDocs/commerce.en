@@ -46,6 +46,10 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue where the order history query could be slow and cause database out-of-memory errors for companies with many orders. <!-- ACCS-808 -->
 
+* Fixed an issue where import file validation could fail. <!-- CCSAAS-4364 -->
+
+* Removed an unnecessary configuration section from the [!DNL Commerce Admin]. <!-- ACCS-793 -->
+
 {{accs-release}}
 
 >[!ENDSHADEBOX]
