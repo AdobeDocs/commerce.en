@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Catalog Service] Guide"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Catalog Service] for Adobe Commerce."
-hide: yes
+hide: true
 role: Admin
 feature: Services, Catalog Service
 ---
