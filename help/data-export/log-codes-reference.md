@@ -1,11 +1,11 @@
 ---
-title: Log code reference
-description: Reference list of log codes emitted by the [!DNL data export] extension, with messages and log levels for system integrators.
+title: "[!Data Export] Log Codes Reference"
+description: Reference list for data export log codes, messages, and severity levels to troubleshoot sync issues and decide when a partial or full resync is required.
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
 ---
 
-# Log code reference
+# [!DNL Data Export] log codes reference
 
 <!--
 Source of truth: https://github.com/magento-commerce/commerce-data-export (docs/log-codes.md)
@@ -13,7 +13,7 @@ When log codes, messages, or log levels change in that repository, update this p
 Only columns retained here: Log Code, Message, Level. File paths are intentionally omitted.
 -->
 
-This page provides a reference for log messages related to Data Export operations, which you can use to determine whether a full or partial resync is required. It lists log codes emitted by the [!DNL data export] extension and includes only error, warning, and critical level log messages.
+This page provides a reference for Data Export log messages to help troubleshoot synchronization issues and determine when a partial or full resync is required. It includes only error, warning, and critical log codes emitted by the [!DNL Data Export] extension.
 
 See [Review logs and troubleshoot](troubleshooting-logging.md) for information about log files and troubleshooting guidance.
 
