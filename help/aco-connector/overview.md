@@ -142,7 +142,7 @@ After Commerce data is available in Commerce Optimizer, use Commerce Optimizer S
 
 ## Supported scenarios {#supported-scenarios}
 
-The connector is designed for Adobe Commerce PaaS/on-premises B2C merchants who want to adopt Commerce Optimizer without rebuilding their backend.[^kt_paas_connector]
+The connector is designed for B2C merchants with Adobe Commerce on cloud and on-premises deployments who want to adopt Commerce Optimizer without rebuilding their backend.
 
 **Common use cases:**
 
