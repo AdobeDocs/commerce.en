@@ -32,7 +32,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Added the `GET /V1/order-statuses` REST API endpoint for retrieving all configured order statuses with their state assignments. <!-- CEXT-6100 -->
 
-* Resolved an issue that caused `custom_attributes` for entities such as Order, Cart, Invoice, Credit Memo, and Company to not display in the schema. <!-- CCSAAS-4818 -->
+* Resolved an issue that caused `custom_attributes` for entities such as Order, Cart, Invoice, Credit Memo, and Company to not display in the REST schema. <!-- CCSAAS-4818 -->
 
 * Resolved duplicate message processing errors (`MessageLockException`) in the async bulk API consumer. <!-- CCSAAS-4805 -->
 
