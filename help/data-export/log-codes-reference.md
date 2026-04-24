@@ -45,6 +45,8 @@ Log codes related to errors or warnings that occur while collecting data from so
 | CDE01-18 | warning | `CDE01-18 Error on getting datetime for catalog price rule fetch. Using system time. website: "{website_id}", store: "{store_id}"` |
 | CDE01-19 | warning | `CDE01-19 GiftCard {sku} does not have shopper input options` |
 | CDE01-20 | warning | `CDE01-20 GiftCard {sku} doesn't have valid options: {options}` |
+| CDE01-21 | error   | `CDE01-21 Unable to resolve url_path for category {id} with path "{path}", url_key "{urk_key}", store "{store}"` |
+| CDE01-22 | error   | `CDE01-22 Unable to resolve url_path for category{id} with path "{path}" for store view "{store}"` |
 
 ## Group 02 - Sending Data to SaaS Phase
 
@@ -82,7 +84,7 @@ Log codes related to errors or warnings that occur when scheduling or triggering
 | CDE03-04 | error    | `CDE03-04 Product sync scheduling error on url key change ({old_url_key} -> {new_url_key}). Run resync. Error: {error_message}` |
 | CDE03-05 | error    | `CDE03-05 Product sync scheduling error on category path change ({old_path} -> {new_path}). Run resync. Error: {error_message}` |
 | CDE03-06 | error    | `CDE03-06 Product sync scheduling error on attribute "{attribute_code}" deletion. Run full resync. Error: {error_message}` |
-| CDE03-07 | error    | `CDE03-07 Product sync scheduling error on inventory source save for SKUs: {product_skus}. Error: {error_message}` |
+| CDE03-07 | warning  | `CDE03-07 Product sync scheduling error on inventory source save for SKUs: {product_skus}. Error: {error_message}` |
 | CDE03-08 | error    | `CDE03-08 Product variants sync scheduling error on product "{sku_or_id}" save. Run resync. Error: {error_message}` |
 | CDE03-09 | warning  | `CDE03-09 The "{feed_name}" feed does not support partial resync by IDs, or an unsupported identifier type was specified.` |
 | CDE03-10 | warning  | `CDE03-10 There are no {id_field}s found to reindex for provided identifiers list: {identifiers}` |
@@ -122,12 +124,3 @@ Log codes related to errors during the indexation process or due to misconfigura
 | CDE04-18 | warning | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` |
 | CDE04-19 | warning | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` |
 | CDE04-20 | warning | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` |
-
-
-## Group 05 - Status Admin Grid UI Related Errors
-
-Log codes related to errors occurring in the Feed Status admin grid UI components.
-
-| Log Code | Level | Message                                                                                   |
-|----------|-------|-------------------------------------------------------------------------------------------|
-| CDE05-01 | error | `CDE05-01 Error on getting indexer status for feed "{feed_name}". Error: {error_message}` |
