@@ -21,7 +21,7 @@ SaaS data export is delivered as a PHP extension. It supports several methods to
 
   - The [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in the Commerce Admin provides a graphical view of the synchronization status that shows product data successfully synced to commerce services. You can use the dashboard to perform a full resynchronization (_full sync_) of all feeds. However, Adobe recommends only performing a full sync the first time you connect Adobe Commerce to a Commerce service. See [Synchronization process](data-synchronization.md).
 
-     {{aco-data-sync-verification}}
+  {{aco-data-sync-verification}}
 
   - The [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page provides real-time insights into the health and performance of data export feeds that transfer product and category data from Commerce to external services such as Product Recommendations, Live Search, and Catalog Service, or Adobe Commerce Optimizer.
 

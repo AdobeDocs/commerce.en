@@ -16,7 +16,45 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 - release #2 {#latest}
+## April 2026 - release #3 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items will be released to Production environments on April 27, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Added the `GET /V1/order-statuses` REST API endpoint for retrieving all configured order statuses with their state assignments. <!-- CEXT-6100 -->
+
+* Resolved an issue that caused `custom_attributes` for entities such as Order, Cart, Invoice, Credit Memo, and Company to not display in the REST schema. <!-- CCSAAS-4818 -->
+
+* Resolved duplicate message processing errors (`MessageLockException`) in the async bulk API consumer. <!-- CCSAAS-4805 -->
+
+* Number product attributes now render as from/to range filters in the [!DNL Commerce Admin] product grid when the attribute is enabled for filter options. <!-- ACCS-761 -->
+
+* Fixed an issue where cart abandonment reminder emails did not display product images when using [!DNL AEM Assets]. <!-- ACCS-798 -->
+
+* Fixed an issue where a false "max upload size" error could appear when adding files, samples, or links to downloadable products. <!-- ACCS-813 -->
+
+* Fixed an issue where saving a product assigned to several shared catalogs could cause an error. <!-- ACCS-788 -->
+
+* Fixed an issue where the order history query could be slow and cause database out-of-memory errors for companies with many orders. <!-- ACCS-808 -->
+
+* Fixed an issue where import file validation could fail. <!-- CCSAAS-4364 -->
+
+* Removed the **[!UICONTROL Recently Viewed/Compared Products]** configuration from the **[!UICONTROL Catalog]** section in **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**, since it is not supported in [!DNL Adobe Commerce as a Cloud Service] admin. <!-- ACCS-793 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## April 2026 - release #2
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
@@ -383,7 +421,8 @@ The following changes were made to B2B drop-in components:
 <!-- 
 * [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+-->
 
 ### Clickable links to external shipping trackers
 
@@ -395,7 +434,8 @@ Transform shipment tracking numbers included in shopper emails from plain text i
 
 ### Instance-specific admin access
 
-You can now [assign users access](./user-management.md#add-users) to individual [!DNL Adobe Commerce as a Cloud Service] instances in the Admin Console. <!-- CCSAAS-4337 --><!-- See PR #332 -->
+You can now [assign users access](./user-management.md#add-users) to individual [!DNL Adobe Commerce as a Cloud Service] instances in the Admin Console. <!-- CCSAAS-4337 -->
+<!-- See PR #332 -->
 
 ### Observability
 
@@ -423,7 +463,14 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 * Resolved an issue where product custom attributes could not be updated through the REST API when [!DNL AEM Assets integration] was enabled and the product had images. <!-- ACAP-1178 -->
 
-* Various performance and optimization improvements.<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 --><!-- CCSAAS-4330 --><!-- CCSAAS-3669 --><!-- CCSAAS-4462 -->
+* Various performance and optimization improvements.
+<!-- CCSAAS-4255 -->
+<!-- CCSAAS-4233 -->
+<!-- CCSAAS-4220 -->
+<!-- CCSAAS-4252 -->
+<!-- CCSAAS-4330 -->
+<!-- CCSAAS-3669 -->
+<!-- CCSAAS-4462 -->
 
 >[!ENDSHADEBOX]
 

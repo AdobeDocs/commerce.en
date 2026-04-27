@@ -30,6 +30,8 @@ This article is intended for the developer or systems integrator on your team wh
 
 - As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled with the installation.
 
+- As of [!DNL Live Search] 4.0.0, the search adapter has been [deprecated](release-notes.md#live-search-400).
+
 ## Supported platforms
 
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
@@ -356,10 +358,11 @@ To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experience
 The [!DNL Live Search] extension consists of the following packages:
 
 | Package | Description |
-|--- |--- |
+| --- | --- |
 | `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, and so on, and provides access to a read-only GraphQL playground to test queries from the *Admin*. |
-| `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) field to the [!DNL Live Search] service. The quick search field is located in the upper-right corner of the storefront page.|
 | `module-live-search-storefront-popover` | A "search as you type" popover replaces the standard quick search and returns data and thumbnails of top search results. |
+| `module-live-search-product-listing` | Provides coverage for both search and browse (PLP) results and includes the faceting, sorting, and product card areas on the page. |
+| `module-live-search-adapter` | **(As of [!DNL Live Search] 4.0.0, the search adapter has been [deprecated](release-notes.md#live-search-400).)** Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) field to the [!DNL Live Search] service. The quick search field is located in the upper-right corner of the storefront page. |
 
 ## [!DNL Live Search] dependencies
 
