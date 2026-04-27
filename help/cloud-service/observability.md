@@ -42,11 +42,13 @@ Adobe Commerce supports the following observability tools through OpenTelemetry:
 
 The [observability REST API](https://developer.adobe.com/commerce/extensibility/observability/api/) provides endpoints that create, retrieve, update, and delete observability subscriptions programmatically. Use these endpoints to automate configuration across instances.
 
-## App Builder
+## Adobe Developer App Builder
 
 ### App Builder instrumentation
 
-[Implement observability in App Builder](https://developer.adobe.com/commerce/extensibility/observability/app-builder/) to propagate trace context from Commerce into your App Builder actions so that logs and traces from both systems correlate in your observability platform. Covers instrumentation for webhook-based and event-based integrations.
+[Implement observability in [!DNL App Builder]](https://developer.adobe.com/commerce/extensibility/observability/app-builder/) to propagate trace context from Commerce into your [!DNL App Builder] actions so that logs and traces from both systems correlate in your observability platform. Covers instrumentation for webhook-based and event-based integrations.
+
+[!DNL App Builder] also provides built-in tools for [managing application logs](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/application_logging/logging), including CLI and Developer Console access, and log forwarding to external solutions such as Splunk, Azure, and New Relic.
 
 ### Telemetry library
 
