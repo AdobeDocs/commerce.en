@@ -154,7 +154,8 @@ The following capabilities are available for product recommendations. Some featu
 
 {style="table-layout:auto"}
 
-<!--## How to size your solution
+<!--
+## How to size your solution
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
@@ -186,4 +187,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) -->
+   * Add-On: 10 × dynamic media packs (1M each) 
+-->

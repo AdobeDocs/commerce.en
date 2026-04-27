@@ -15,7 +15,7 @@ Create audiences in Real-Time CDP using data from storefront, back office, and p
 
 |Data Types|Storefront Data (Behavioral Events)|Back office Data (Server-Side Events)|Customer Profile and Segment Data|
 |---|---|---|---|
-|**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|Who your shoppers are and what segments do they qualify for.| 
+|**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|Who your shoppers are and what segments do they qualify for.|
 |**Events Captured by Adobe Commerce**|`productPageView`<br>`addToCart`|`placeOrder`<br>`orderplaced`<br>`orderLineItemRefunded`<br>`order Canceled`<br>`order history`|`createAccount`<br>`editAccount`<br>`Profile Record`|
 
 ## What have other customers achieved?

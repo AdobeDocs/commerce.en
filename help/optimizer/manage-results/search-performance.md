@@ -132,20 +132,20 @@ The following table shows the default search and filterable properties of non-sy
 
 | Attribute Code | Searchable |
 |--- |--- |
-| activity | Yes | 
-| attributes_brand | Yes | 
+| activity | Yes |
+| attributes_brand | Yes |
 | brand | Yes |
-| climate | Yes | 
-| collar | Yes | 
-| color | Yes | 
+| climate | Yes |
+| collar | Yes |
+| color | Yes |
 | cost | Yes |
 | eco_collection ||
-| gender | Yes | 
-| manufacturer | Yes | 
-| material | Yes | 
-| purpose | Yes | 
-| strap_bags | Yes | 
-| style_general | Yes | 
+| gender | Yes |
+| manufacturer | Yes |
+| material | Yes |
+| purpose | Yes |
+| strap_bags | Yes |
+| style_general | Yes |
 
 ## Default system attribute properties
 
@@ -153,10 +153,10 @@ The following table shows the default search and filterable properties of system
 
 | Attribute Code | Searchable |
 |--- |--- |
-| allow_open_amount | Yes | 
+| allow_open_amount | Yes |
 | description | Yes |
 | name | Yes |
-| price | Yes | 
+| price | Yes |
 | short_description | Yes |
 | sku | Yes |
 | status | Yes |
