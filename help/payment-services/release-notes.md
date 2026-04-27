@@ -105,7 +105,7 @@ _June 28, 2021_
 
 ## v2.15.0
 
-_April 28, 2026_
+_April 29, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -122,7 +122,6 @@ _April 28, 2026_
 ![New](../assets/new.svg)<!-- PAY-6151 --> Now, [!DNL Apple Pay] on Luma product detail and checkout pages renders through the Payments SDK so the experience matches the latest PayPal integration used for express checkout.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
-s
 
 ## v2.14.0
 
