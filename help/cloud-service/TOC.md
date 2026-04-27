@@ -20,6 +20,7 @@ recommendations: noDisplay, noCatalog
   - [Compliance and certifications](security/compliance.md)
   - [Security architecture and data flow](security/data-flow.md)
 - [Add Files to Products](product-files.md)
+- [Observability](observability.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
