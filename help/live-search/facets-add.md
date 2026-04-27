@@ -29,7 +29,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. When prompted, refresh the cache.
 
-   The facet becomes available in the storefront the next time the catalog is synchronized with [!DNL Live Search]. If the facet isn't available after two hours, see [Synchronize catalog data](install.md#synchronize-catalog-data).
+   The facet becomes available in the storefront the next time the catalog is synchronized with [!DNL Live Search]. If the facet isn't available after two hours, see [Synchronize catalog data](install.md#sync).
 
 ## Step 2: Edit facet properties (Optional)
 
@@ -51,7 +51,8 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. When the facet is complete, click **Publish changes**.
 1. Wait for the facet to appear in the store.
-   If the facet isn't available after two hours, see [Verify export](install.md#synchronize-catalog-data) in the installation instructions.
+
+   If the facet isn't available after two hours, see [Verify export](install.md#sync) in the installation instructions.
 
 ## Field descriptions
 
