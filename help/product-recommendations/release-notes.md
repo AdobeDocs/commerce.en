@@ -25,6 +25,10 @@ See the developer documentation to [learn about product support](https://experie
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
+_April 28, 2026_
+
+![Fix](../assets/fix.svg) (**[!DNL Adobe Commerce as a Cloud Service]** only) Updated the [product preview panel](create.md#preview-recommendations): it now appears only for recommendation types that need a SKU for preview (for example, cross-sell, upsell, and similarity-based recommendations). For other types, the preview is hidden. Personalized types such as **Recently Viewed** and **Recommended for You** show a message when preview is not supported.
+
 _February 19, 2026_
 
 ![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order that the products were viewed.
