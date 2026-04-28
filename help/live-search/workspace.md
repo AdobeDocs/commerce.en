@@ -34,7 +34,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 
 | Option | Description |
 |--- |--- |
-| [Performance](performance.md) | Dashboard provides insight into product search performance. | 
+| [Performance](performance.md) | Dashboard provides insight into product search performance. |
 | [Faceting](facets.md) | High-performance filtering that uses multiple dimensions of attribute values to refine search criteria. |
 | [Synonyms](synonyms.md) | Extend the reach of search to include words shoppers might use to find products that differ from those in your catalog. |
 | [Search Merchandising](rules.md) | Shape the search experience with logical rules that trigger scheduled actions. Boost, bury, pin, or hide products to calibrate search results to support your business goals. |
