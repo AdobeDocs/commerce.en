@@ -27,6 +27,13 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### v1.53 release
+
+_April 29, 2026_
+
+![New](../assets/new.svg) Enforced limit of maximum 100 SKUs per request for Adobe Commerce Optimizer and Adobe Commerce as a Cloud Service
+clients as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+
 ### v1.51 release
 
 _April 17, 2026_
@@ -39,7 +46,7 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 
 _April 7, 2026_
 
-![New](../assets/new.svg) The `categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)` query now has the family input parameter as optional. This allows for a more flexible category retrieval by allowing access via slug without dependency on a specific family parameter. This query is available only for [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
+![New](../assets/new.svg) The [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now has the family input parameter as optional. This allows for a more flexible category retrieval by allowing access via slug without dependency on a specific family parameter. This query is available only for [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
 
 ### v1.48 release
 
