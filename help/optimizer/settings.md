@@ -10,8 +10,8 @@ Use the *Settings* workspace to configure search and product discovery for your 
 
 - **Price facets** — Configure price range groups and intervals used as search filters.
 - **Language** — Set the catalog language used for indexing and search.
-- **Semantic search** (beta) — Enable and configure AI-powered semantic search (attributes, priority, and related options).
-- **Advanced search** (beta) — Tune semantic ranking boost, similarity cutoffs, and optional fuzzy fallback when direct search returns no matches.
+- **Semantic search** — Enable and configure AI-powered semantic search (attributes, priority, and related options).
+- **Advanced search** — Tune semantic ranking boost, similarity cutoffs, and optional fuzzy fallback when direct search returns no matches.
 
 >[!BEGINTABS]
 
@@ -92,187 +92,15 @@ Set the Language setting to the primary language of the catalog. When you change
 
 >[!TAB Semantic search]
 
-## Semantic search (beta) {#semantic-search}
+## Semantic search {#semantic-search}
 
-Semantic search uses AI to understand the meaning and intent behind a shopper's search query, not just exact keyword matches. This helps shoppers find relevant products even when they use natural language, synonyms, or descriptive phrases that don't exactly match your product catalog.
-
->[!IMPORTANT]
->
->This feature is currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#semantic-search-smarter-context-aware-shopping-experiences-private-beta).
-
-### Semantic search benefits
-
-Enabling semantic search can improve your store's search performance in several key ways:
-
-- **Reduced zero-results searches:** Shoppers find products even when they use terms that are not in your catalog.
-- **Better natural language understanding:** Queries like "dress for beach wedding" or "leather recliner for media room" return relevant results.
-- **Automatic synonym handling:** You do not need to manually create synonyms for similar terms like "couch/sofa" or "pants/trousers."
-- **Improved conversion rates:** More relevant results lead to higher search-to-cart conversion.
-- **Enhanced customer satisfaction:** Shoppers can search using natural expressions rather than guessing exact product terms.
-
-### How semantic search works
-
-Semantic search uses AI and natural language processing to understand the contextual meaning of search queries and match them to products based on semantic similarity rather than just text matching. For example:
-
-- A search for "leather couch" returns products labeled as "leather sofa."
-- "Spring dress" finds seasonal dresses even without the word "spring" in the catalog.
-- "Shoes for trail running" surfaces products described as "off-road sneakers."
-- "Brakepad" finds products listed as "brake pad" (compound word variations).
-
-Traditional keyword search fails when shoppers add descriptive words that do not exist in your catalog. Semantic search overcomes this limitation by understanding the overall intent of the search phrase.
-
-### Enable semantic search
-
-In this section, you select which product attributes to use for semantic search. Learn which [attributes are recommended](#recommended-attributes-for-semantic-search) for semantic search.
-
->[!NOTE]
->
->Before you enable semantic search, review the [performance impact](#performance-impact) described below, especially if you have a large catalog.
-
-**To enable semantic search:**
-
-1. On the **Settings** workspace, select the **[!UICONTROL Semantic search beta]** tab.
-1. In the **Semantic search attributes** section, a table lists the selected attributes (if any). To add attributes, select **[!UICONTROL Select attributes]**.
-
-   The **Select attributes for semantic search** dialog appears.
-
-1. Select the product attributes to include in semantic search by selecting the checkbox for each attribute, then click **[!UICONTROL Add selected]**.
-
-   ![Select attributes](./assets/select-attributes.png)
-
-   The dialog closes and the selected attributes appear in the **Semantic search attributes** table.
-
-   ![Semantic search attribute configuration](./assets/semantic-search-attributes.png)
-
-1. Click and drag an attribute row to a different location in the table to set the **[!UICONTROL Priority]** for each attribute.
-
-   Priority sets the order in which text from attributes are concatenated. Since the model truncates tokens beyond a certain limit, setting a priority ensures that tokens from the most important attributes are not truncated.
-
-1. To remove an attribute from semantic search, select the minus icon on that row.
-1. When you are finished setting the priority, click the **[!UICONTROL Publish]** button.
-
-   The **Publish** button is enabled only when there are unsaved changes. After publishing, updated settings are applied to the catalog; indexing may take a few minutes to reflect on the storefront.
-
-### Field descriptions
-
-| Field | Description |
-| --- | --- |
-| Attribute label | The display name of the product attribute. |
-| Attribute code | The system code for the attribute. |
-| Priority | Importance of this attribute in semantic search ranking. A priority of `1` is highest; that attribute is searched first. |
-
-### Recommended attributes for semantic search {#recommended-attributes-for-semantic-search}
-
-Not all product attributes are appropriate for semantic search. Use semantic search for descriptive text fields like:
-
-- Product name
-- Description
-- Category
-- Marketing attributes (for example, style, use case, occasion)
-
-Avoid using semantic search for:
-
-- SKU and part numbers
-- UPC/EAN codes
-- Identifiers and technical codes
-- Numeric-only fields
-- Boolean fields such as weight, price, and so on because only attribute values are indexed
-- Lengthy text attributes — Values from all semantic attributes are concatenated in **priority** order into one string used to generate vector embeddings. Text beyond the model's current effective length (about 256 tokens; longer input is truncated) may not be encoded reliably, so very long fields add little benefit. Token limits and the underlying model can change in a future release.
-
->[!TIP]
->
->Start with product name and description, then add additional attributes based on how your customers search.
-
-### Performance impact {#performance-impact}
-
-Semantic search adds AI processing to your search operations. This includes:
-
-**Indexing**
-
-- Incremental product updates process normally with minimal delay.
-- Full reindex operations take longer (noticeable for catalogs with 10,000+ products).
-- Reindexing happens in the background; your storefront continues using the current index with no downtime.
-
-**Search speed**
-
-- Individual search queries may take slightly longer (typically 15-20% increase in response time).
-- For most stores, this difference is not noticeable to shoppers.
-- Example: A query that takes 180ms may take 210ms with semantic search enabled.
-
-### Best practices
-
-**Optimize your product data:**
-
-- Use clear, descriptive product names and descriptions.
-- Include common use cases and occasions in product descriptions.
-- Add relevant attributes that describe how products are used.
-- Avoid overly technical jargon unless your audience expects it.
-
-**Tune semantic behavior (Advanced search tab):**
-
-- On the **[Advanced search](#advanced-search)** tab, adjust **[!UICONTROL Semantic boost]** when you want semantically relevant products to rank higher or lower relative to other matches—increase the boost if semantic matches should carry more weight in the result set, decrease it if results feel dominated by broad semantic matches.
-- Use **[!UICONTROL Similarity threshold]** to control how strict semantic matching must be before products appear: a **higher** threshold keeps stronger semantic matches and can reduce noisy or weak matches; a **lower** threshold allows more borderline matches when shoppers still need options.
-- Configure **[!UICONTROL Fuzzy search]** on the same tab when you want near matches (for example, typos) as a fallback when direct search returns no results, and tune **[!UICONTROL Fuzzy search similarity threshold]** so fuzzy results stay relevant.
-
-**Monitor and measure:**
-
-- Track your zero-results search rate before and after enabling.
-- Monitor search-to-cart conversion rates.
-- Review common search queries to identify gaps in your catalog data.
-
-**Start conservatively:**
-
-- Test with your most common search queries.
-
-**Relationship with synonyms:**
-
-- Semantic search reduces but does not eliminate the need for synonyms.
-- Keep brand-specific or highly technical synonyms you've already created.
-- Use semantic search to handle general language variations automatically.
-
-### Troubleshooting
-
-**Search results seem less relevant after enabling semantic search:**
-
-1. Verify which attributes are configured for semantic search.
-1. Review whether SKUs or identifiers are incorrectly included in semantic search fields.
-1. Consider whether your product descriptions need improvement.
-1. Increase the **[!UICONTROL Similarity threshold]** on primary and fuzzy (fallback) search. For control descriptions, see [Advanced search](#advanced-search).
-
-**Searches for product codes return unexpected results:**
-
-- Ensure that you do not configure SKU, part numbers, and product codes as semantic search attributes.
-- Match product codes with exact keyword search instead of semantic search.
-
-**Performance is slower than expected:**
-
-- Large catalogs (50,000+ products) may experience more noticeable delays.
-- Ensure that your catalog has completed initial indexing.
-
-**Zero-results rate hasn't improved:**
-
-- Review your most common zero-results queries.
-- Improve product descriptions to include more natural language terms.
-- Ensure that semantic search is enabled for your primary descriptive attributes.
-
-### Limitations {#semantic-search-limitations}
-
-Keep the following constraints in mind when you use semantic search (beta):
-
-- **Catalog language:** Semantic search is available only for **English**-language catalogs.
-- **Attribute limit:** You can assign up to **20** product attributes to semantic search.
-- **Combined text and embeddings:** Attribute values are concatenated in priority order for embedding; input beyond the model's current effective length (about 256 tokens) is truncated, and token limits or the model may change in a future release. For guidance on long fields, see [Recommended attributes for semantic search](#recommended-attributes-for-semantic-search).
-- **Data space cleanup:** If a **data space cleanup** runs on your project, existing semantic search attribute configuration is cleared. Reconfigure attributes using catalog ingestion or the **[!UICONTROL Semantic search beta]** tab after product metadata has resynced, and verify the configuration if it does not match what you expect after sync.
+Semantic search uses AI to interpret queries by meaning and intent, not only exact keywords, so shoppers who use natural language or wording that does not match your catalog verbatim can still find relevant products. On the **[!UICONTROL Semantic search]** tab, you choose which product attributes participate in semantic search, set their **[!UICONTROL Priority]**, and **[!UICONTROL Publish]** when you are ready. For benefits, detailed steps, recommended attributes, performance considerations, limitations, and troubleshooting, see [Semantic search](setup/semantic-search.md).
 
 >[!TAB Advanced search]
 
-## Advanced search (beta) {#advanced-search}
+## Advanced search {#advanced-search}
 
 Use the **[!UICONTROL Advanced search]** tab to adjust how strongly semantic matches influence ranking, how strict semantic matching must be, and whether fuzzy matching runs when direct search finds no results.
-
->[!IMPORTANT]
->
->This feature is currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#semantic-search-smarter-context-aware-shopping-experiences-private-beta).
 
 ![Advanced search settings](./assets/advanced-search.png)
 
