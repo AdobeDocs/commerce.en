@@ -50,7 +50,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 
 The [!UICONTROL Credit Card Fields] payment options provide a simple and secure checkout for credit card or debit card payment methods.
 
-See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
+See [Payments options](payments-options.md#paypal-payment-buttons) for more information.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
@@ -248,7 +248,7 @@ See [Google Pay API request object options](https://developers.google.com/pay/ap
 
 The [!DNL PayPal payment buttons] payment options provide a simple, fast, and secure checkout process for your customer.
 
-See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
+See [Payments options](payments-options.md#paypal-payment-buttons) for more information.
 
 Configure [!DNL PayPal payment buttons]
 

@@ -27,15 +27,29 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### v1.51 release
+
+_April 17, 2026_
+
+![New](../assets/new.svg) Added a new `searchCategory` GraphQL query that enables clients to search categories by name with paginated results. The query accepts a required `searchTerm` (minimum 3 characters) and optional `family`, `pageSize`, and `currentPage` parameters. Results include matching `CategoryTreeView` objects with full category metadata, a `totalCount`, and `pageInfo` for pagination. <!--COMOPT-1819-->
+
+This query is available only for customers using Adobe Commerce Optimizer Merchandising Services. See [searchCategory](https://developer.adobe.com/commerce/services/reference/graphql/).
+
+### v1.50 release
+
+_April 7, 2026_
+
+![New](../assets/new.svg) The `categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)` query now has the family input parameter as optional. This allows for a more flexible category retrieval by allowing access via slug without dependency on a specific family parameter. This query is available only for [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
+
 ### v1.48 release
 
-_February 19, 2025_
+_February 19, 2026_
 
 ![New](../assets/new.svg) The `categoryTree` query in the GraphQL API now returns category descriptions, images, and SEO meta tags. This update delivers the data that storefront developers need to display category imagery and improve search engine optimization with proper meta titles, descriptions, and keywords. Only supported on Commerce implementations using the [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts<<!--DATA-6933-->
 
 ### v1.47 release
 
-_February 12, 2025_
+_February 12, 2026_
 
 ![New](../assets/new.svg) The API service now supports the `CategoryProductView` type, enabling enhanced views and queries for products by category. This update allows developers to efficiently retrieve and filter product data based on category, improving flexibility and performance for category-driven use cases. For details, see [Implement categories on the storefront](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/). Only supported on Commerce implementations using the [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts<!--DATA-6949-->
 
@@ -345,7 +359,7 @@ _May 23, 2024_
 
 ![Fix](../assets/fix.svg) <!--DATA-5033-->The `InStock` flag for option values now respects the scoped `enabled` status of the product variant.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Added support for product prices with up to 16 digits and 4 decimal places. Resync from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) or [CLI](../landing/catalog-sync.md#command-line-interface) to apply updates.
+![Fix](../assets/fix.svg) <!--DATA-5888-->Added support for product prices with up to 16 digits and 4 decimal places. Resync from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) or [CLI](../data-export/data-export-cli-commands.md) to apply updates.
 
 #### Known limitations
 

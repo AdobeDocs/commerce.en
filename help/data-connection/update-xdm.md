@@ -26,15 +26,15 @@ In this section, you learn how to update your existing schema or create a schema
 >
 >See [time series profile event data](#time-series-profile-event-data) to learn how to add profile-specific fields.
 
-1. If you do not already have a schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) one with the class set to **Experience Event**. 
+1. If you do not already have a schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) one with the class set to **Experience Event**.
 
 1. [Add](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) the following Commerce-specific field groups (or edit your existing schema and add these field groups):
-    
-    - Site Search 
+
+    - Site Search
     - Visit Web Page
     - User Login Process
     - Reference Keys
-    - Personal Contact Details 
+    - Personal Contact Details
     - Channel Details
     - Commerce Details
     - Adobe Analytics ExperienceEvent Commerce (if you want to send data to Adobe Analytics)
@@ -42,7 +42,7 @@ In this section, you learn how to update your existing schema or create a schema
     >[!NOTE]
     >
     > Do not set any Commerce-specific field groups as `Primary identity`. Doing so identifies the field as required and Experience Platform expects that field in every event. If that field is absent, data ingestion fails.
-    
+
     Your schema now contains Commerce-specific field groups so that the time series data collected from the Commerce [behavioral](events.md) and [back office](events-backoffice.md) events is represented in the schema.
 
 1. [Enable](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) the schema for Profile.
@@ -73,7 +73,7 @@ If you want to ingest your customer's profile event data into the Experience Pla
 
 ### Send time series profile event data to Experience Platform using your existing datastream
 
-If you want to add time series [server-side profile event data](events-backoffice.md#customer-profile-events-server-side) to your existing Commerce datastream, add the `Demographic Details` field group to your schema. Your schema now contains the following Commerce-specific field groups:
+If you want to add time series [server-side profile event data](events-backoffice.md#customer-profile-events) to your existing Commerce datastream, add the `Demographic Details` field group to your schema. Your schema now contains the following Commerce-specific field groups:
 
 - Site Search 
 - Visit Web Page
@@ -89,12 +89,12 @@ With the addition of the `Demographic Details` field group in your existing Comm
 
 ### Send time series profile event data to Experience Platform in a separate datastream
 
-If you want to add [server-side profile event data](events-backoffice.md#customer-profile-events-server-side) to a new profile-specific datastream and schema, complete the following steps.
+If you want to add [server-side profile event data](events-backoffice.md#customer-profile-events) to a new profile-specific datastream and schema, complete the following steps.
 
 1. [Create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) a schema and set the class to **Experience Event**.
 
 1. [Add](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) the following profile-specific field groups:
-    
+
     - Demographic Details
     - Personal Contact Details
     - Channel Details

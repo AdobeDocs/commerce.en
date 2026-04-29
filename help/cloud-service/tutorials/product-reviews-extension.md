@@ -7,7 +7,7 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # Product reviews extension tutorial
