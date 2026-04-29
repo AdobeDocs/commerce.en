@@ -27,7 +27,7 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
-### v1.53 release
+### v1.52 release
 
 _April 29, 2026_
 
