@@ -17,7 +17,7 @@ Together, these capabilities create a scalable extensibility model that empowers
 
 ## What [!DNL App Management] delivers
 
-* **One place for all your apps**. Associate, configure, and manage apps from **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
+* **One place for all your apps**. Associate, configure, and manage apps from **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Search, filter, and acquire apps](manage-app.md) from the same view.
 * **Settings that match your business**. Apply different configurations per website, store, or store view for multi-region or multi-brand setups.
 * **Automatic store sync**. Websites, stores, and store views from Commerce are imported when you associate an app.
 * **Native Admin experience**. Work with apps from Adobe Exchange or custom deployments without leaving Commerce.

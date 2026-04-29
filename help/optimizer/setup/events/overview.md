@@ -25,8 +25,8 @@ The **Event Counts** tab tracks shopper interactions, such as searches, clicks, 
 
 |Field|Description|
 |---|---|
-|**Date range**|Let's you specify the date range to see a specific subset of data.| 
-|**Storefront events per hour**|Displays a graph of showing the number of events triggered on your storefront.| 
+|**Date range**|Let's you specify the date range to see a specific subset of data.|
+|**Storefront events per hour**|Displays a graph of showing the number of events triggered on your storefront.|
 |**Total storefront events**|A filterable table that shows details for all events triggered on your storefront.|
 
 ## Sanity Check
@@ -37,7 +37,7 @@ The **Sanity Check** tab offers insights into the health of each behavioral even
 
 |Field|Description|
 |---|---|
-|**Date range**|Let's you specify the date range to see a specific subset of data.| 
+|**Date range**|Let's you specify the date range to see a specific subset of data.|
 |**Product discovery**|Displays the required events to personalize product search results. The **Status** column indicates if the events were received.|
 |**Recommendations**|Displays the required events to personalize product recommendations. The **Status** column indicates if the events were received.|
 

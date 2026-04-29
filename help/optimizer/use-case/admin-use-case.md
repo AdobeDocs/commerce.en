@@ -288,6 +288,8 @@ The final piece of this tutorial involves updating the storefront that [you alre
    }
    ```
 
+   +++
+
    Notice that the catalog view header includes the following values:
 
    - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
