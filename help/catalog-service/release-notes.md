@@ -32,7 +32,7 @@ Support is provided for the latest version. Release notes for older versions are
 _April 29, 2026_
 
 ![New](../assets/new.svg) Enforced limit of maximum 100 SKUs per request for Adobe Commerce Optimizer and Adobe Commerce as a Cloud Service
-clients as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+clients as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 ### v1.51 release
 
