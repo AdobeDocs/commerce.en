@@ -67,13 +67,6 @@ To remove a store view configuration, open that entry and click **[!UICONTROL De
 | Adobe Commerce Endpoint | Instance URL LLM Optimizer uses to reach Commerce APIs. |
 | API key | Secret key for API authentication; treat it like any production credential. |
 
-## Validate catalog access {#validate-catalog-access}
-
-Confirm that LLM Optimizer can see your catalog:
-
-- **Spot-check** categories or sample SKUs that you know exist in Commerce.
-- Resolve any **authentication or scope** errors before relying on opportunities or deploying actions in production.
-
 ## Confirm tenant and environment readiness {#confirm-tenant-readiness}
 
 - Verify that connected **sandbox** projects are not mixed with **production** Commerce data, unless  this is intentional.

@@ -11,18 +11,18 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 >
 >This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
-After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), you work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and push approved changes into the catalog when you are ready. This article describes Commerce-related optimization types, how to use the **[!UICONTROL Opportunities]** experience, how deploy actions behave in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For architecture context (Catalog Agent, MCP, and AI visibility), see the [integration overview](../overview.md).
+After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), you work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and push approved changes into the catalog when you are ready. This article describes the two Commerce-focused optimization types, how to use **[!UICONTROL Opportunities]**, how deploy actions behave in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For a broader picture of the integration, see the [integration overview](../overview.md).
 
 ## Understand Commerce optimizations in LLM Optimizer {#understand-optimizations}
 
-LLM Optimizer surfaces **[!UICONTROL Product Detail Page Enrichment]** and **[!UICONTROL Product Catalog Enrichment]** for Commerce-backed catalogs.
+For Commerce-backed catalogs, LLM Optimizer offers **[!UICONTROL Product Detail Page Enrichment]** and **[!UICONTROL Product Catalog Enrichment]**.
 
-| Focus | What it addresses |
+| Focus | What it is for |
 | --- | --- |
-| **[!UICONTROL Product Detail Page Enrichment]** (PDP enrichment) | Storefront PDP changes so **agent-visible** content better reflects product knowledge—often including a non-disruptive enrichment layer—without replacing your human merchandising layout. |
-| **[!UICONTROL Product Catalog Enrichment]** | **Human-visible** catalog fields such as **product name** and **product description**, with recommendations scoped to specific SKUs or URLs that you can deploy directly to Commerce core catalog data. |
+| **[!UICONTROL Product Detail Page Enrichment]** (PDP enrichment) | Suggestions that improve how a product page reads for AI-driven discovery, without replacing your storefront layout. |
+| **[!UICONTROL Product Catalog Enrichment]** | Suggested **product name** and **product description** updates for specific products that you can review, edit if needed, and apply to your Commerce catalog. |
 
-Use the **[!UICONTROL Opportunities]** area to see which type applies to a given URL or SKU. Agent-visible or structured metadata recommendations may appear as separate guidance; follow in-product labels for those workflows.
+Use **[!UICONTROL Opportunities]** to open the list of products or URLs and work through suggestions for the type you selected.
 
 ## Navigate Commerce opportunities {#navigate-commerce-opportunities}
 
@@ -36,32 +36,31 @@ Use the **[!UICONTROL Opportunities]** area to see which type applies to a given
 
 ### Review and deploy PDP enrichment {#review-deploy-pdp}
 
-PDP enrichment improves what bots and models can read from a product URL while you confirm that the shopper-visible page still looks correct.
+PDP enrichment is for teams that want clearer product page messaging in AI-driven discovery while keeping the storefront experience your merchandisers designed.
 
 **To review and deploy PDP enrichment:**
 
 1. Open **[!UICONTROL Product Detail Page Enrichment]** from **[!UICONTROL Opportunities]**.
 1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]**.
-1. For a URL or SKU, click **[!UICONTROL Preview]**. The proposed update appears beside the table. 
-
-    The content comes from your Commerce catalog but is structured for AI consumption.
-
+1. For a URL or SKU, click **[!UICONTROL Preview]**. The proposed update appears beside the table.
 1. Optional: Click **[!UICONTROL Copy]** to paste the content into an external editor, or click **[!UICONTROL Edit suggestion]** to edit in place.
-1. Once reviewed and approved, select the row for the URL or SKU to update, thenclick **[!UICONTROL Deploy optimizations]**, and confirm.
+1. Once reviewed and approved, select the row for the URL or SKU to update, then click **[!UICONTROL Deploy optimizations]**, and confirm.
 
-After deployment, re-check the live PDP. The user-visible view should match your expectations (for example, expandable sections remain unchanged). If your organization provides optional **AI Content Visibility** tooling, run the same user-versus-agent comparison that you used before deployment. The agent view should now include enrichment that was previously missing or unstructured.
+After deployment, open the live product page and confirm it still matches what your team expects.
 
 ### Review and deploy product catalog enrichment {#review-deploy-catalog}
+
+Catalog enrichment is for teams that want to tighten product names and long descriptions directly in Commerce, with suggestions you can review before anything is saved.
 
 **To review and deploy product catalog enrichment:**
 
 1. Open **[!UICONTROL Product Catalog Enrichment]** from **[!UICONTROL Opportunities]**.
 1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]**.
-1. Click the expand control for the URL or SKU row to show the proposed **Product Name** and **Product Description** enrichments.
+1. Click the expand control for the URL or SKU row to show the proposed **Product Name** and **Product Description** updates.
 1. Optional: Click the edit icon to adjust the proposed name or description before you deploy.
 1. Once reviewed and approved, select the row for the URL or SKU to update, then click **[!UICONTROL Deploy optimizations]**, and confirm.
 
-When you deploy product name or description changes, the Catalog Agent writes the approved values into your [!DNL Adobe Commerce] catalog.
+Approved name and description changes are saved to your [!DNL Adobe Commerce] catalog like other product updates.
 
 >[!IMPORTANT]
 >
@@ -128,7 +127,7 @@ These rules help you know whether LLM Optimizer, ingestion feeds, or *Admin* edi
 
 - **Document system ownership** for product name and description so that PIM or feed jobs do not unintentionally conflict with LLM Optimizer expectations.
 - **Coordinate with SEO and brand teams** before bulk deploying titles or descriptions.
-- **Re-sync* or re-analyze* after major catalog imports so that opportunities reflect the current catalog state.
+- **Re-sync** or **re-analyze** after major catalog imports so that opportunities reflect the current catalog state.
 
 ## Related topics
 

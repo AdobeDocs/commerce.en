@@ -71,15 +71,15 @@ Catalog Agent addresses discoverability through two complementary optimizations:
 
 ### Product detail page enrichment {#pdp-enrichment-overview}
 
-Product detail page (PDP) enrichment analyzes storefront PDPs and aligns agent-visible content with product knowledge that already exists in Commerce—often including details that may be hidden behind expandable sections or interactive elements. The result is a non-disruptive enrichment layer–structured, intent-aligned data that LLM-oriented crawlers can consume without changing the shopper-facing page layout.
+**Product detail page (PDP) enrichment** suggests refinements to product page content so your merchandise reads more clearly when shoppers discover products through AI assistants and similar tools. The goal is to improve clarity and consistency without changing the storefront layout your team already merchandised. You review suggestions in LLM Optimizer and deploy when you are ready.
 
-After deploying PDP enrichment, you should still validate that the shopper-facing experience remains unchanged (for example, no unintended visual differences). Optional browser tooling (such as an AI Content Visibility Checker (where available) can help compare what shoppers see with what AI agents extract before and after enrichment.
+After you deploy, spot-check the live product page to confirm the shopping experience still looks as you expect.
 
 ### Product catalog enrichment {#catalog-enrichment-overview}
 
-Product catalog enrichment focuses on **human-visible** catalog fields, such as **product name** and **product description**, which Many LLM crawlers and feeds rely on. **Catalog Agent** identifies sparse, vague, or inconsistent copy, proposes improved name and descriptions with justification, and can deploy approved text into [!DNL Adobe Commerce] so the Admin, storefront, and downstream channels stay aligned.
+**Product catalog enrichment** suggests clearer **product names** and **product descriptions** where copy is thin, vague, or inconsistent. Each suggestion includes context so your team can decide what to change. When you approve an update, it can be applied to your [!DNL Adobe Commerce] catalog so the Admin, storefront, and other experiences that use those fields reflect the same wording.
 
-Because catalog enrichment writes to the **source** in Commerce, you **enrich once** and every channel that consumes those attributes can benefit (subject to your indexing and sync timing).
+Because those fields live in Commerce, improving a name or description once can benefit every channel that reads that product data (depending on how and when your systems refresh).
 
 ## Related topics {#related-topics}
 
