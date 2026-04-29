@@ -1,7 +1,7 @@
 ---
 user-guide-title: "SaaS Price Indexing Guide"
 user-guide-description: "This guide provides detailed instructions for using the SaaS price indexer."
-hide: yes
+hide: true
 role: Admin
 feature: Services, Price Indexer
 ---

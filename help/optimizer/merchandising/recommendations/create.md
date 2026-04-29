@@ -65,7 +65,7 @@ To test a recommendation when working in a non-production environment, you can f
 
 |Field|Description|
 |---|---|
-|Catalog view|
+|Catalog view||
 |Name|The name of the product.|
 |SKU|The Stock Keeping Unit assigned to the product|
 |Price|The price of the product.|
