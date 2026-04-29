@@ -172,9 +172,8 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 **Before you begin:**
 
-- Verify that Commerce meets the minimum version and services connector requirements. See [Get Started](get-started.md#prerequisites) for details
-- Ensure you have IMS org access, an [
-!DNL Adobe Commerce Optimizer] instance, and the necessary credentials and region details
+- Verify that Commerce meets the minimum version and services connector requirements. See [Get Started](get-started.md#prerequisites) for details.
+- Ensure that you have IMS org access, an [!DNL Adobe Commerce Optimizer] instance, and the necessary credentials and region details.
 
 ## Related documentation {#related-documentation}
 
