@@ -14,6 +14,7 @@ recommendations: noDisplay, noCatalog
 - [Storefront](storefront.md)
 - [Use Cases](use-cases.md)
 - [Add Files to Products](product-files.md)
+- [Observability](observability.md)
 - [Shared Responsibility](shared-responsibility.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)

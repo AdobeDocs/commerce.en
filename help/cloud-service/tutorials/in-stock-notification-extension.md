@@ -7,7 +7,7 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # In-stock notification extension tutorial

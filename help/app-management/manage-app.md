@@ -10,6 +10,22 @@ An App Manager associates an App Builder application with their Commerce instanc
 
 ![App management](assets/app-management-view.png){width="500" zoomable="yes"}
 
+## Find an application in the Admin
+
+Under **[!UICONTROL Apps]** > **[!UICONTROL App Management]**, each application appears as a card. The list can include every app associated with the Adobe Commerce instance for the selected Adobe IMS organization. Use the controls above the cards to narrow results:
+
+| Control | Description |
+| --- | --- |
+| **Filter by app…** | Search by application name. |
+| **Status** | Limit cards by lifecycle state. **All Statuses** shows every app; other values include **Associated**, **Installed**, **Partially Installed**, and **Unassociated**. The status on each card matches the colored indicator in the list. |
+| **Extensibility patterns** | Limit cards by the capabilities the app uses. **All Extensibility Patterns** shows every app; other values align with the badges on each card, such as **Business Configuration**, **Admin UI SDK**, **Webhooks**, and **Events**. |
+
+Search text and both dropdowns apply together (logical AND). To display the full list again, set **Status** and **Extensibility patterns** back to their **All …** options, and clear the search field.
+
+## Acquire App
+
+**[!UICONTROL Acquire App]** opens a new browser tab (or a separate browser view) to [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, where you can discover Commerce-related marketplace listings and add applications to your Adobe IMS organization. Once the app is acquired, approved, and deployed, the app appears in [!DNL App Management] for [association and installation](#associate-an-app).
+
 ## Prerequisites
 
 Before associating an app, ensure you have the following:
