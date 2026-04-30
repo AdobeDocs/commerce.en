@@ -7,6 +7,8 @@ feature: Payments, Release Notes
 
 # Release Notes
 
+Support is provided for the latest released Payment Services version. 
+
 These release notes describe all releases of [!DNL Payment Services] and include:
 
 ![New](../assets/new.svg) New features
