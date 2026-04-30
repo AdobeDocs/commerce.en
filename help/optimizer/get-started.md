@@ -131,7 +131,7 @@ Once the app is open, easily switch between environments like sandbox and produc
 
 >[!NOTE]
 >
->If you need to return to the Commerce Cloud Manager to view instance details, or manage instances, click the Apps icon ![Icon to open Experience Cloud Applications](../assets/apps-icon.png) in the upper left corner of the Commerce Optimizer top navigation.  
+>If you need to return to the Commerce Cloud Manager to view instance details, or manage instances, click the Apps icon ![Icon to open Experience Cloud Applications](./assets/apps-icon.png) in the upper left corner of the Commerce Optimizer top navigation.  
 
 ### Get instance details
 
