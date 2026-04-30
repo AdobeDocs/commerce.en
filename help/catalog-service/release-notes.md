@@ -31,31 +31,6 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
-### April 2026
-
-_April 29, 2026_ <!-- v1.52 -->
-
-![New](../assets/new.svg) Enforced limit of maximum 100 SKUs per GraphQL request for Adobe Commerce Optimizer
-clients as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
-
-_April 17, 2026_ <!-- v1.51 -->
-
-![New](../assets/new.svg) Added a new `searchCategory` GraphQL query that enables clients to search categories by name with paginated results. The query accepts a required `searchTerm` (minimum 3 characters) and optional `family`, `pageSize`, and `currentPage` parameters. Results include matching `CategoryTreeView` objects with full category metadata, a `totalCount`, and `pageInfo` for pagination. <!--COMOPT-1819--> See [searchCategory](https://developer.adobe.com/commerce/services/reference/graphql/).
-
-_April 7, 2026_ <!-- v1.50 -->
-
-![New](../assets/new.svg) The [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now has the family input parameter as optional. This allows for a more flexible category retrieval by allowing access via slug without dependency on a specific family parameter. This query is available only for [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
-
-### February 2026
-
-_February 19, 2026_ <!-- v1.48 -->
-
-![New](../assets/new.svg) The `categoryTree` query in the GraphQL API now returns category descriptions, images, and SEO meta tags. This update delivers the data that storefront developers need to display category imagery and improve search engine optimization with proper meta titles, descriptions, and keywords. Only supported on Commerce implementations using the [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts.<!--DATA-6933-->
-
-_February 12, 2026_ <!-- v1.47 -->
-
-![New](../assets/new.svg) The API service now supports the `CategoryProductView` type, enabling enhanced views and queries for products by category. This update allows developers to efficiently retrieve and filter product data based on category, improving flexibility and performance for category-driven use cases. For details, see [Implement categories on the storefront](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/). Only supported on Commerce implementations using the [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts<!--DATA-6949-->
-
 ### December 2025
 
 _December 11, 2025_ <!-- v1.46 -->
@@ -108,17 +83,6 @@ _November 17, 2025_ <!-- v1.45 -->
 _November 6, 2025_ <!-- v1.44 -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6852, DATA-6864-->
-
-_November 3, 2025_ <!-- v1.43 -->
-
-![New](../assets/new.svg) **Product Layers for multi-dimensional product customization**—Added support for channel-specific, locale-aware content delivery for Adobe Commerce Optimizer implementations.<!--DATA-6632-->
-
-- Serve different product content to different customer segments
-- Apply locale-specific customizations without duplicating base data
-- Control field-level overrides with Layer Masks
-- Support for premium, seasonal, and mobile-optimized content layers
-
-  Layers are retrieved using the existing `products` query, are applied server-side from request headers, and require no schema changes. See [Catalog layer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) in the _Adobe Commerce Optimizer Guide_.
 
 ![Fix](../assets/fix.svg) Grouped products can now be queried when the parent has no pricing; child products return their own visibility roles.<!--DATA-6779-->
 
