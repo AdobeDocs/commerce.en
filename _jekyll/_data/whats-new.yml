@@ -2,8 +2,19 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Apr 20 14:43:22 2026
+updated: Fri Apr 24 15:41:13 2026
 entries:
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 24, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/541
+  merge_commit: eb10bd0ff636f70360e1ca35e51b6643ad1f70d4
+  contributor: jhoover
+  labels:
+  - core-saas
+  - major-update
 - description: Clarified where to monitor SaaS data export and synchronization—the
     [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard),
     [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status),

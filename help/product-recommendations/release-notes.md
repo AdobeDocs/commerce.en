@@ -12,8 +12,6 @@ The release notes contain updates to the following [!DNL Product Recommendations
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
 
-Support is provided for the latest released Product Recommendations version. Release notes for older versions are provided for reference.
-
 The release notes include:
 
 ![New](../assets/new.svg) New features
@@ -25,6 +23,10 @@ See the developer documentation to [learn about product support](https://experie
 ## Hosted service updates
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
+
+_April 28, 2026_
+
+![Fix](../assets/fix.svg) (**[!DNL Adobe Commerce as a Cloud Service]** only) Updated the [product preview panel](create.md#preview-recommendations): it now appears only for recommendation types that need a SKU for preview (for example, cross-sell, upsell, and similarity-based recommendations). For other types, the preview is hidden. Personalized types such as **Recently Viewed** and **Recommended for You** show a message when preview is not supported.
 
 _February 19, 2026_
 
