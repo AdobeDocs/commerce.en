@@ -74,29 +74,29 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 1. **Install the connector package in Adobe Commerce** using Composer:
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+    `composer require adobe-commerce/commerce-data-export-aco-adapter`
 
 1. **Configure authentication and environment details** in Commerce Admin or via CLI:
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+    ```terminal
+    bin/magento aco:config:init \
+      --org_id=<your-org> \
+      --tenant_id=<your-tenant> \
+      --client_id=<your-client-id> \
+      --client_secret=<your-secret> \
+      --region=na1 \
+      --type=production
+    ```
 
 1. **Map Commerce scopes to Commerce Optimizer:**
 
-   - Confirm which Websites and Store Views must be in scope
-   - Ensure customer groups and price rules are modeled as expected
+    - Confirm which Websites and Store Views must be in scope
+    - Ensure customer groups and price rules are modeled as expected
 
 1. **Verify connectivity:**
 
-   - Run a test sync and confirm that Catalog Sources, Price Books, and initial products appear in Commerce Optimizer
-   - Use the Data Feed Sync Status page in Commerce and the Data Sync dashboards in Commerce Optimizer for validation
+    - Run a test sync and confirm that Catalog Sources, Price Books, and initial products appear in Commerce Optimizer
+    - Use the Data Feed Sync Status page in Commerce and the Data Sync dashboards in Commerce Optimizer for validation
 
 ### Ongoing data synchronization {#ongoing-sync}
 
@@ -118,27 +118,27 @@ After Commerce data is available in Commerce Optimizer, use Commerce Optimizer S
 
 1. **Create Catalog Views and Policies** in Commerce Optimizer Studio:
 
-   - Filter the catalog by brand, region, customer segment, or channel
-   - Enforce data-access rules per storefront or partner
+    - Filter the catalog by brand, region, customer segment, or channel
+    - Enforce data-access rules per storefront or partner
 
 1. **Configure Product Discovery and Recommendations** in the Optimizer UI:
 
-   - Create merchandising rules, facets, synonyms, and recommendation units
-   - The connector offloads all search and recommendation configuration to Commerce Optimizer (Live Search rules and Product Recommendations in Commerce Admin no longer apply to these flows)
+    - Create merchandising rules, facets, synonyms, and recommendation units
+    - The connector offloads all search and recommendation configuration to Commerce Optimizer (Live Search rules and Product Recommendations in Commerce Admin no longer apply to these flows)
 
 1. **Connect storefronts** to Commerce Optimizer:
 
-   - For a Commerce Storefront powered by Edge Delivery Services, configure the storefront to use the correct Optimizer tenant and Catalog View, and to call search and recommendation endpoints through the Merchandising API
-   - For third-party storefronts, use Optimizer public APIs or SDKs for search and recommendation calls
+    - For a Commerce Storefront powered by Edge Delivery Services, configure the storefront to use the correct Optimizer tenant and Catalog View, and to call search and recommendation endpoints through the Merchandising API
+    - For third-party storefronts, use Optimizer public APIs or SDKs for search and recommendation calls
 
-   >[!NOTE]
-   >
-   >For an example third-party integration, see the [Salesforce Commerce Connector for Commerce Optimizer](../optimizer/developer/salesforce-connector.md).
+    >[!NOTE]
+    >
+    >For an example third-party integration, see the [Salesforce Commerce Connector for Commerce Optimizer](../optimizer/developer/salesforce-connector.md).
 
 1. **Maintain checkout** on your existing platform:
 
-   - Keep cart, checkout, order management, and customer accounts in Adobe Commerce or a third-party platform
-   - Use App Builder and API Mesh for cart handoff when you integrate with external checkout systems
+    - Keep cart, checkout, order management, and customer accounts in Adobe Commerce or a third-party platform
+    - Use App Builder and API Mesh for cart handoff when you integrate with external checkout systems
 
 ## Supported scenarios {#supported-scenarios}
 
@@ -179,5 +179,3 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
 - Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
-
-
