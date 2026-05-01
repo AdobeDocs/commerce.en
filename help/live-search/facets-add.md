@@ -5,9 +5,13 @@ exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 ---
 # Add Facets
 
-Any filterable product attribute can be used as a facet. The *Add facets* panel lists the current facets and makes it easy to assign additional product attributes as facets. During this three-step process, an attribute is chosen to be used as a facet, properties are edited if needed, and the changes published to the storefront.
+Any filterable product attribute can be used as a facet except stock status. The *Add facets* panel lists the current facets and makes it easy to assign additional product attributes as facets. During this three-step process, an attribute is chosen to be used as a facet, properties are edited if needed, and the changes published to the storefront.
 
 ![Add Facets](assets/facets-add.png)
+
+>[!NOTE]
+>
+>For information about displaying products using stock status, see the stock status note in the [Facets limits and boundaries information](boundaries-limits.md#facets) documentation.
 
 ## Step 1: Add a facet
 
