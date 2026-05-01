@@ -28,7 +28,7 @@ Recommendation filters now include a [price range filter](./merchandising/recomm
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{#aco-api-updates-and-dropins}}
+{{aco-api-updates-and-dropins}}
 
 #### April 29, 2026
 
@@ -115,7 +115,7 @@ Merchandisers can now use [Catalog layers](./setup/catalog-layer.md) to overlay 
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{#aco-api-updates-and-dropins}}
+{{aco-api-updates-and-dropins}}
 
 #### November 3, 2025
 
