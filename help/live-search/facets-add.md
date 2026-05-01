@@ -11,7 +11,7 @@ Any filterable product attribute can be used as a facet except stock status (`qu
 
 >[!NOTE]
 >
->For information about displaying products using stock status, see the stock status note in the [Facets limits and boundaries information](boundaries-limits.md#facets) documentation.
+>For information about product display using stock status, see [Manage out-of-stock products](manage-out-of-stock-products.md).
 
 ## Step 1: Add a facet
 
