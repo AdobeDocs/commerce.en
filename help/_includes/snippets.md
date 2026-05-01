@@ -17,7 +17,7 @@
 
 >[!NOTE]
 >
-[Drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) for [!DNL Commerce Storefront on Edge Delivery Services] pick up the latest GraphQL changes automatically (new fields, limits, and query behavior).
+>[Drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) for [!DNL Commerce Storefront on Edge Delivery Services] pick up the latest GraphQL changes automatically (new fields, limits, and query behavior).
 
 ## ACCS early access {#accs-early-access}
 
