@@ -4,7 +4,7 @@ user-guide-description: This guide provides detailed instructions for using [!DN
 role: Admin
 feature: Services, Recommendations
 ---
-# What are [!DNL Product Recommendations]? {#product-recommendations}
+# [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
 - [Guide Overview](guide-overview.md)
 - [What are [!DNL Product Recommendations]?](overview.md)
