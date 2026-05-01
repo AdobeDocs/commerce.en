@@ -8,14 +8,18 @@ exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 
 These release notes cover the latest Commerce Catalog Service updates, including:
 
-- **Storefront Catalog Service releases**
+- **[Storefront Catalog Service releases](#storefront-catalog-service)**
 
   - Catalog Service API schema enhancements for improved data retrieval.
   - Security, performance, and reliability improvements for the Catalog Service API and underlying infrastructure.
 
-- **Catalog Service metapackage releases**
+- **[Catalog Service metapackage releases](#catalog-service-metapackage)**
 
   - Updated dependencies for improved performance, stability, and compatibility with other Adobe Commerce components.
+
+- **[Catalog Service Installer releases](#catalog-service-installer)**
+
+  - Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
 
 >[!NOTE]
 >
@@ -534,7 +538,9 @@ The installer is delivered with the Catalog Service extension and handles instal
 
 - For **Adobe Commerce as a Cloud Service** customers, the latest installer version is installed in your environment.
 
-- For **Adobe Commerce on cloud infrastructure** or **on premises**, keep the installer aligned with the [Catalog Service metapackage](#catalog-service-metapackage): use Composer to upgrade `magento/catalog-service-installer` whenever you upgrade `magento/catalog-service` or when these release notes describe a change you need, for example, support for a new PHP version. That way your installation tooling stays compatible with the Catalog Service version you run.
+- For **Adobe Commerce on cloud infrastructure** or **on premises**, keep the installer aligned with the [Catalog Service metapackage](#catalog-service-metapackage).
+
+Whenever you use Composer to upgrade the `magento/catalog-service`, the installer package is automatically updated to the latest version. You can also use Composer to upgrade  `magento/catalog-service-installer` separately when these release notes describe a change you need, for example, support for a new PHP version. That way your installation tooling stays compatible with the Catalog Service version you run.
 
 ### v1.0.6 release
 
