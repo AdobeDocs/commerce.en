@@ -10,8 +10,10 @@ These release notes cover the latest Commerce Catalog Service updates, including
 
 - **[Storefront Catalog Service releases](#storefront-catalog-service)**
 
-  - Catalog Service API schema enhancements for improved data retrieval.
+  - Catalog Service API schema enhancements for improved data retrieval
   - Security, performance, and reliability improvements for the Catalog Service API and underlying infrastructure.
+
+  See [Storefront Services schema[https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) in the Commerce Developer documentation for more information about these APIs.
 
 - **[Catalog Service metapackage releases](#catalog-service-metapackage)**
 
