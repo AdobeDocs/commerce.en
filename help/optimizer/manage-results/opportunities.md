@@ -1,7 +1,7 @@
 ---
 title: Opportunities
 description: Identify opportunities to boost traffic, engagement, and conversions through integration with Adobe Sites Optimizer for smart, data-driven site improvements.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 ---
 # Opportunities
 
@@ -22,7 +22,7 @@ The **Opportunities** page helps you identify and implement optimizations to imp
 
 ## Get started
 
-To enable Opportunities in Commerce Optimizer, contact your customer success manager (CSM). Opportunites are available with the **Ultima** Adobe Sites Optimizer license.
+To enable Opportunities in [!DNL Adobe Commerce Optimizer], contact your customer success manager (CSM). Opportunites are available with the **Ultima** Adobe Sites Optimizer license.
 
 ## Quick tour
 
@@ -90,7 +90,7 @@ The following lists the supported opportunity types:
 
 Before using auto-fix, ensure:
 
-- Your product catalog is fully ingested into Commerce Optimizer.
+- Your product catalog is fully ingested into [!DNL Adobe Commerce Optimizer].
 - The opportunity type supports auto-fix (some optimization types require manual implementation).
 - You have appropriate permissions to create and manage catalog layers.
 
@@ -140,7 +140,7 @@ Follow these steps to implement an AI-suggested optimization:
 
 ### How catalog layers work with auto-fix
 
-If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#activate-or-deactivate-layers).
+If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
 
 ![Catalog Layers](../assets/catalog-layers.png)
 

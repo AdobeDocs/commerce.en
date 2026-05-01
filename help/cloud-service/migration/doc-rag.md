@@ -3,7 +3,7 @@ title: Documentation RAG service
 description: Learn how to use the AI-powered documentation search service for Adobe Commerce development.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # Documentation RAG service (Beta)
@@ -16,7 +16,7 @@ The documentation RAG (Retrieval-Augmented Generation) service provides AI-power
 
 This RAG provides an IDE interface for asking questions about Adobe Commerce and can advise you on best practices for developing applications and other migration tasks.
 
-The RAG service is part of the [Commerce extensibility tools](./coding-tools.md) MCP (Model Context Protocol) server, which integrates with Cursor and other MCP-compatible AI assistants.
+The RAG service is part of the [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP (Model Context Protocol) server, which integrates with Cursor and other MCP-compatible AI assistants.
 
 ## Available documentation
 

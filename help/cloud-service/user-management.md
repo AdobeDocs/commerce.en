@@ -40,7 +40,7 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
   * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users) in the [!DNL Adobe Admin Console] and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
   * [Product profile admins](#add-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
 
-For detailed information on the permissions granted to each role inside Adobe Commerce, refer to [user permissions](#user-permissions).
+For detailed information on the permissions granted to each role inside Adobe Commerce, see [role resources](#role-resources).
 
 ## Add a product admin
 
@@ -257,6 +257,8 @@ If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service
     >[!NOTE]
     >
     >For more information on how these permissions effect your access to [!DNL AEM Assets], refer to [Cloud Manager Product Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+
+    For the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping) in the Commerce Admin, users also need the **AEM Assets DM OpenAPI Users - delivery** product profile. See [User permissions and IMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} for details.
 
 1. Click [!UICONTROL **Apply**].
 

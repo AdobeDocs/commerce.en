@@ -72,7 +72,7 @@ Filters products based on visibility, such as: _Catalog_, _Search_, or both.
 
 ### Price
 
-A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers. For B2B merchants, the price displayed reflects the [customer-specific group pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) you have configured.
+A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts available to anonymous shoppers. For B2B merchants, the price displayed reflects the [customer-specific group pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) you have configured.
 
 ### Stock status
 

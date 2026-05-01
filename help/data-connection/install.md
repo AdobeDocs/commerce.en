@@ -7,7 +7,7 @@ exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
 ---
 # Install [!DNL Data Connection]
 
-Before you install the extension, [review the prerequisites](overview.md#prereqs).
+Before you install the extension, [review the prerequisites](overview.md#prerequisites).
 
 ## Install the extension
 

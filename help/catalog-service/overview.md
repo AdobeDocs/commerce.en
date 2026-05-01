@@ -18,7 +18,6 @@ The rich view-model data provided by the [!DNL Catalog Service] includes product
 - Product comparison pages
 - Any other pages that render product data, such as cart, order, and wish list pages
 
-
 ## Key benefits and features
 
 - **Faster page loads**: Optimized queries for up to 10X faster catalog data retrieval compared to the core GraphQL system
@@ -30,8 +29,11 @@ The rich view-model data provided by the [!DNL Catalog Service] includes product
 - **Data Management Dashboard**: Monitor and manage data synchronization operations from the Adobe Commerce Admin interface
 - **API Mesh integration**: Optionally integrate with [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to combine the Adobe Commerce GraphQL systems with other internal and third-party APIs to extend the Catalog Service GraphQL schema and add custom data or functionality
 
-
 ## Architecture overview
+
+>[!NOTE]
+>
+>If you are implementing your catalog using the composable catalog with Adobe Commerce Optimizer, or Adobe Commerce Optimizer Connector, see the [Adobe Commerce Optimizer Guide](../optimizer/overview.md#architecture) and Merchandising Services Developer Guide.
 
 The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive catalog data including products, product attributes, inventory, and prices. GraphQL is a query language that a frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
 
@@ -123,5 +125,3 @@ The implementation process involves:
 2. **Update storefront code**: Integrate Catalog Service GraphQL queries into your frontend.
 3. **Route queries**: All Catalog Service queries go through the GraphQL gateway (URL provided during onboarding)
 4. **Monitor and troubleshoot data synchronization**: Verify improved performance and monitor results
-
-

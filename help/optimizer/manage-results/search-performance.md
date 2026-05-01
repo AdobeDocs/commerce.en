@@ -1,7 +1,7 @@
 ---
 title: Search Performance
 description: The Search performance page provides insight into the search terms that shoppers use.
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 ---
 # Search Performance
@@ -24,7 +24,7 @@ The *Search performance* page provides insight into the search terms that shoppe
 
 Select the [catalog view](../setup/catalog-view.md) to see specific search performance results.
 
-![Catalog View](../assets/catalog-view.png)
+![Catalog view](../assets/catalog-view.png)
 
 ## View a report
 
@@ -132,20 +132,20 @@ The following table shows the default search and filterable properties of non-sy
 
 | Attribute Code | Searchable |
 |--- |--- |
-| activity | Yes | 
-| attributes_brand | Yes | 
+| activity | Yes |
+| attributes_brand | Yes |
 | brand | Yes |
-| climate | Yes | 
-| collar | Yes | 
-| color | Yes | 
+| climate | Yes |
+| collar | Yes |
+| color | Yes |
 | cost | Yes |
 | eco_collection ||
-| gender | Yes | 
-| manufacturer | Yes | 
-| material | Yes | 
-| purpose | Yes | 
-| strap_bags | Yes | 
-| style_general | Yes | 
+| gender | Yes |
+| manufacturer | Yes |
+| material | Yes |
+| purpose | Yes |
+| strap_bags | Yes |
+| style_general | Yes |
 
 ## Default system attribute properties
 
@@ -153,10 +153,10 @@ The following table shows the default search and filterable properties of system
 
 | Attribute Code | Searchable |
 |--- |--- |
-| allow_open_amount | Yes | 
+| allow_open_amount | Yes |
 | description | Yes |
 | name | Yes |
-| price | Yes | 
+| price | Yes |
 | short_description | Yes |
 | sku | Yes |
 | status | Yes |

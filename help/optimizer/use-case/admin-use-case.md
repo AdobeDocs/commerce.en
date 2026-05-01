@@ -3,7 +3,7 @@ title: Storefront and Catalog Administrator End-to-End Use Case
 description: Learn how to use [!DNL Adobe Commerce Optimizer] to manage your catalog using catalog views and policies and how to set up your storefront based on your catalog configuration.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 ---
 # Storefront and Catalog Administrator End-to-End Use Case
@@ -20,7 +20,7 @@ This use case is designed for administrators and developers who want to learn ho
 
 Before beginning this tutorial, ensure you have the following prerequisites in place:
 
-- **Adobe Commerce Optimizer Instance**
+- **[!DNL Adobe Commerce Optimizer] Instance**
   - Access to a test instance in Cloud Manager
   - See [Get Started](../get-started.md) for setup instructions
 
@@ -57,7 +57,7 @@ By the end of this article, you will:
 
 - Learn the fundamentals of [!DNL Adobe Commerce Optimizer] with its performant and scalable catalog data model.
 - Learn how the catalog data model integrates with platform-agnostic storefront components built by Adobe.
-- Learn how to use Adobe Commerce Optimizer catalog views and policies to create custom catalog views and data access filters, and send the data to an Adobe Commerce storefront powered by Edge Delivery.
+- Learn how to use [!DNL Adobe Commerce Optimizer] catalog views and policies to create custom catalog views and data access filters, and send the data to an Adobe Commerce storefront powered by Edge Delivery.
 
 ## Business scenario – Carvelo Automobile
 
@@ -104,7 +104,7 @@ Ultimately, Carvelo has two major goals:
 
 ## 1. Access the [!DNL Adobe Commerce Optimizer] instance
 
-Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](../get-started.md#access-an-instance).)
+Navigate to the URL for the Commerce Optimizer application that is pre-configured with the sample data. You can find the URL in the Commerce Cloud Manager from the instance details for your Commerce Optimizer project, or get it from your system administrator. (See [Access an instance](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
 When you launch [!DNL Adobe Commerce Optimizer], you see the following:
 
@@ -120,7 +120,7 @@ In the left navigation, expand the _Store setup_ section and click **[!UICONTROL
 
 >[!NOTE]
 >
->You can ignore the **Global** catalog view for now.
+>You can ignore the **All views** catalog view for now.
 
 Click the info icon to review the catalog view details.
 
@@ -215,7 +215,7 @@ Create a new catalog view for the *Celport* dealer and link the following polici
 
 1. In the left rail, expand the _Store setup_ section and click **[!UICONTROL Catalog views]**.
 
-    Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *Global*.
+    Notice the existing catalog views: *Arkbridge*, *Kingsbluff*, and *All views*.
 
     ![Existing Catalog views Page](../assets/existing-channels-list.png)
 
@@ -251,7 +251,7 @@ After you create the Celport catalog view and associated policies, the next step
 
 ## 3. Update your storefront
 
-The final piece of this tutorial involves updating the storefront that [you already created](#prerequisite) to deliver data to the new Celport catalog. In this section, you replace the catalog view ID in your storefront configuration file with the catalog view ID for Celport.
+The final piece of this tutorial involves updating the storefront that [you already created](#prerequisites) to deliver data to the new Celport catalog. In this section, you replace the catalog view ID in your storefront configuration file with the catalog view ID for Celport.
 
 1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
 
@@ -287,6 +287,8 @@ The final piece of this tutorial involves updating the storefront that [you alre
       }
    }
    ```
+
+   +++
 
    Notice that the catalog view header includes the following values:
 
@@ -386,7 +388,7 @@ Now that you have updated the storefront configuration to use the Celport catalo
 
       Notice the different part types available and notice the prices assigned to the Kingsbluff catalog view.
 
-    These experiments demonstrate the flexibility of Adobe Commerce Optimizer—you can quickly switch between different catalog views and price books to create customized shopping experiences for different audiences without duplicating your catalog data.
+    These experiments demonstrate the flexibility of [!DNL Adobe Commerce Optimizer]—you can quickly switch between different catalog views and price books to create customized shopping experiences for different audiences without duplicating your catalog data.
 
 ## Troubleshooting
 
@@ -402,7 +404,7 @@ If you encounter issues during this tutorial, try the following solutions:
 
 - **Solution:** Verify that the attribute name exactly matches the SKU attribute in your catalog
 
-### Catalog View Issues
+### Catalog view issues
 
 **Problem:** Catalog view not appearing in the list
 
@@ -416,13 +418,13 @@ If you encounter issues during this tutorial, try the following solutions:
 
 **Problem:** No products displaying
 
-- **Solution:** Verify that the price book ID matches the one available in your Adobe Commerce Optimizer instance
+- **Solution:** Verify that the price book ID matches the one available in your [!DNL Adobe Commerce Optimizer] instance
 
 **Problem:** Search returning no results
 
 - **Solution:** Confirm that the catalog view policies allow the searched product category
 
-For additional help, see the [Adobe Commerce Optimizer documentation](../overview.md) or contact Adobe support.
+For additional help, see the [[!DNL Adobe Commerce Optimizer] documentation](../overview.md) or contact Adobe support.
 
 ## Summary
 
@@ -435,7 +437,7 @@ In this tutorial, you successfully:
 
 ## Next steps
 
-To continue learning about Adobe Commerce Optimizer:
+To continue learning about [!DNL Adobe Commerce Optimizer]:
 
 - Explore [merchandising features](../merchandising/overview.md) to personalize the shopping experience
 - Learn about [advanced policy configurations](../setup/policies.md)

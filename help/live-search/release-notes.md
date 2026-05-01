@@ -8,7 +8,7 @@ exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 
 These release notes describe the latest versions of [!DNL Live Search].
 
-Support is provided for the latest released version. Release notes for older versions are provided for reference.
+Support is provided for the latest released Live Search version. Release notes for older versions are provided for reference.
 Updates include:
 
 ![New](../assets/new.svg) New features
@@ -76,6 +76,10 @@ _April 25, 2023_
 
 ### PLP widget
 
+_February 2, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue in PLP version 2.3.0 where the browser back button did not properly update the pagination state in the PLP widget.
+
 _May 22, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart button remained in English when the locale was changed to French, German, Italian or Spanish.
@@ -91,6 +95,22 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.7.0
+
+_March 17, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added support for PHP 8.5.
+
+## [!DNL Live Search] 4.6.1
+
+_February 19, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an error that could occur under certain conditions related to the Visual Merchandiser extension’s functionality.
 
 ## [!DNL Live Search] 4.6.0
 
@@ -321,7 +341,7 @@ _March 14, 2023_
     - Pin to bottom - Places the product at the bottom of the results
     - Unpin an event with one click
 ![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![New](../assets/new.svg) [!DNL Live Search] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
+![New](../assets/new.svg) [!DNL Live Search] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#updating-live-search) the dependency module `commerce-data-export` to version 102.2.0+.
 
 #### Updates
 

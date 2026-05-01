@@ -77,7 +77,7 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 - [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+ and replaces the Search Adapter.
-- (**Deprecated**) Search Adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements. Going forward, the Search Adapter will only be updated to address security issues.
+- (**Deprecated**) Search Adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements. Going forward, the Search Adapter will only be updated to address security issues. See the [migration guide](migrate-to-plp.md) for detailed information about migrating to the PLP widget.
 
 ## [!DNL Live Search] workspace
 
@@ -91,4 +91,12 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 
 If you do not submit a search query for the catalog data in your testing environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any search query. Catalog data in your production environment is not affected by this policy.
 
+### Inactive testing environment
+
 To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.
+
+### Empty catalog
+
+If your environment has an empty catalog 45 days after being created, the catalog data is set to hibernation mode and no data is returned for any search query. This inludes both production and testing environments.
+
+To re-activate the catalog data in your environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your environment should be restored within couple of hours.

@@ -3,7 +3,7 @@ title: Get started
 description: Learn how to get started with [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 ---
 # Get Started
@@ -60,7 +60,7 @@ For testing and learning, follow the [Load Sample Data](#add-sample-data) instru
 
 [!DNL Adobe Commerce Optimizer] setup and management rely on three key roles. Each role has specific tasks and responsibilities:
 
-![Role-based workflow for Adobe Commerce Optimizer setup showing administrator, developer, and user tasks](./assets/high-level-workflow.png){zoomable="yes"}
+![Role-based workflow for [!DNL Adobe Commerce Optimizer] setup showing administrator, developer, and user tasks](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Administrator tasks
 
@@ -69,7 +69,7 @@ Administrators manage instances, users, and organizational settings.
 |Task|Description|Link|
 |---|---|---|
 |**Manage Users**|Add users, developers, and admins|[User Management](./user-management.md)|
-|**Create Instances**|Set up sandbox and production environments|[Create Instance](#create-an-instance)|
+|**Create Instances**|Set up sandbox and production environments|[Create Instance](#step-1-create-an-instance)|
 |**Manage Instances**|Check status, update instance name and description, and get key URLs for application and API access|[Manage Instances](#manage-instances)|
 |**Configure Access**|Set up catalog views and policies|[Catalog Views](./setup/catalog-view.md)|
 
@@ -80,7 +80,7 @@ Developers handle technical implementation and data integration, including platf
 |Task|Description|Link|
 |---|---|---|
 |**Access Developer Console**|Create projects and generate credentials|[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)|
-|**Ingest Catalog Data**|Import product data from existing systems|[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)|
+|**Ingest Catalog Data**|Import product data from existing systems| To ingest data directly into Adobe Commerce Optimizer, see [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>To ingest data from Commerce on cloud or on premises environments or other third-party systems, see the [Integrations](./integrations/integrations-overview.md){target="_blank"}  topic.|
 |**Set Up the Storefront**|Configure Edge Delivery Services storefront|[Storefront Setup](./storefront.md)|
 
 ### Merchandiser tasks
@@ -99,7 +99,7 @@ Manage instances from the Commerce Cloud Manager.
 
 >[!NOTE]
 >
->Not all Adobe Commerce Optimizer users have access to Cloud Manager. Access depends on the role and permissions assigned to the user account.
+>Not all [!DNL Adobe Commerce Optimizer] users have access to Cloud Manager. Access depends on the role and permissions assigned to the user account.
 
 1. Log in to [Adobe Experience Cloud](https://experience.adobe.com/).
 
@@ -127,20 +127,24 @@ Once the app is open, easily switch between environments like sandbox and produc
 
    The instance drop-down lists all Optimizer instances available in the organization. Select the instance to view.
 
-   ![Instance switcher dropdown for selecting Adobe Commerce Optimizer environments](./assets/context-switcher.png){zoomable="yes"}
+   ![Instance switcher dropdown for selecting [!DNL Adobe Commerce Optimizer] environments](./assets/context-switcher.png){zoomable="yes"}
+
+>[!NOTE]
+>
+>If you need to return to the Commerce Cloud Manager to view instance details, or manage instances, click the Apps icon ![Icon to open Experience Cloud Applications](./assets/apps-icon.png) in the upper left corner of the Commerce Optimizer top navigation.  
 
 ### Get instance details
 
 View the instance details by clicking the information icon next to your instance name.
 
-![Adobe Commerce Optimizer instance details panel showing endpoints and instance ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![[!DNL Adobe Commerce Optimizer] instance details panel showing endpoints and instance ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Note the following key information:
 
 - **GraphQL endpoint** to retrieve Commerce catalog data using the Merchandising API
-- **Catalog Service endpoint** for data ingestion using the REST API
+- **Catalog endpoint** for ingesting catalog data into Commerce Optimizer using the REST API
 - **Commerce Optimizer URL** to access the [!DNL Adobe Commerce Optimizer] application
-- **Instance ID**: the unique tenant ID that identifies the instance
+- **Instance ID**: the unique ID that identifies the instance. The instance ID is also referred to as the *tenant_id*.
 
 If you are a developer, you need these details to set up your development environment and connect to the [!DNL Adobe Commerce Optimizer] APIs.
 

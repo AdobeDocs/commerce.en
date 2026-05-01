@@ -9,9 +9,15 @@ exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 
 Product recommendations are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement. Adobe Commerce product recommendations are powered by [Adobe AI](https://business.adobe.com/ai.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a highly engaging, relevant, and personalized experience.
 
+>[!IMPORTANT]
+>
+>**Product Recommendations is not a HIPAA-ready service.** Do not enable or use Product Recommendations in any Adobe Commerce implementation that uses the HIPAA-ready offering or otherwise processes protected health information (PHI). Product Recommendations is part of the Commerce SaaS services that are currently classified as non-HIPAA ready.
+>
+>For details about which Adobe Commerce capabilities are HIPAA ready and which services must not be used with PHI, see [HIPAA readiness on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) and [Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+
 Product recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations across your store views directly from the Adobe Commerce Admin.
 
- If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to [integrate](headless.md) [!DNL Product Recommendations] into your headless storefront.
+If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to [integrate](headless.md) [!DNL Product Recommendations] into your headless storefront.
 
 >[!NOTE]
 >
@@ -43,4 +49,12 @@ Watch this video to learn about [!DNL Product Recommendations]:
 
 If you do not submit a query for the catalog data in your testing environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any query. Catalog data in your production environment is not affected by this policy.
 
+### Inactive testing environment
+
 To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) with the title: "Reactivate [!DNL Product Recommendations]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.
+
+### Empty catalog
+
+If your environment has an empty catalog 45 days after being created, the catalog data is set to hibernation mode and no data is returned for any query. This inludes both production and testing environments.
+
+To re-activate the catalog data in your environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Product Recommendations]" and include the environment IDs. The catalog data in your environment should be restored within couple of hours.

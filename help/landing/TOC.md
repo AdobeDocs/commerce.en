@@ -20,6 +20,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
 - Integration services {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
+   - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
    - [Services Connector](/help/landing/saas.md)
 - Data tools {#data-services}
    - [SaaS Data Export](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)

@@ -72,9 +72,17 @@ _March 30, 2023_
 _October 12, 2022_
 
 ![New](../assets/new.svg) - Added two [storefront events](events.md), `openCart` and `removeFromCart`, to the Adobe Commerce Storefront Events SDK and Collector.
-![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support).
+![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#supported-architecture).
 
 +++
+
+## 3.5.0
+
+_March 17, 2026_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added PHP 8.5 support.
 
 ## 3.4.0
 
@@ -180,7 +188,7 @@ _October 10, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-This is a major version release. [Edit](install.md#update-the-data-connection) your project's root composer.json file.
+This is a major version release. [Edit](install.md#update) your project's root composer.json file.
 
 ![New](../assets/new.svg) - General availability to [send historical order](connect-data.md#send-historical-order-data) data and status to the Experience Platform.
 ![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the [!DNL Data Connection] extension.
@@ -203,7 +211,7 @@ _June 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform.
+![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#send-historical-order-data) data and status to the Experience Platform.
 
 ## 2.2.0
 

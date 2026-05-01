@@ -1,15 +1,15 @@
 ---
-title: Catalog View
+title: Catalog view
 description: Learn what catalog views are and how to create them to organize your product catalog by business structure, policies, and pricing.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 ---
 
 # Catalog Views for Merchandising Services
 
-Catalog views are the foundation of Adobe Commerce Optimizer Merchandising Services, enabling you to organize your product catalog by business structure, policies, and pricing. This flexible data model supports multi-brand, multi-business unit, and multi-language scenarios while maintaining operational efficiency.
+Catalog views are the foundation of [!DNL Adobe Commerce Optimizer] Merchandising Services, enabling you to organize your product catalog by business structure, policies, and pricing. This flexible data model supports multi-brand, multi-business unit, and multi-language scenarios while maintaining operational efficiency.
 
 ## What are Catalog Views?
 
@@ -25,6 +25,16 @@ Think of catalog views as different "lenses" through which customers see your ca
 - A dealer catalog view might show only products available to that specific dealer
 - A regional catalog view might show products and pricing specific to a geographic area
 - A brand catalog view might show only products from a particular brand
+
+### Catalog view versus catalog source
+
+The following explains the difference between a catalog view and a catalog source:
+
+- **Catalog view** – A configured view of your catalog for a specific business need. When you create a catalog view, you select which catalog source (or locale) to use, then add [policies](policies.md) to filter which products are visible and link [price books](pricebooks.md) to control pricing. A single catalog source can power many catalog views (for example, one `en-US` source with separate catalog views for different brands or regions). Think of a catalog view as *how* you expose that data to a storefront, channel, or audience.
+
+- **Catalog source** – The underlying data context that supplies product information. A catalog source is typically a locale (for example, `en-US`, `fr-CA`) or an external system such as a PIM or ERP. [!DNL Adobe Commerce Optimizer] ingests product data from one or more catalog sources into a unified base catalog. Think of a catalog source as *where* the raw catalog data comes from.
+
+In summary, **catalog source** is the data context you pull from; while **catalog view** is the filtered, priced, and organized context you present to shoppers or channels.
 
 ## Create a catalog view
 
@@ -60,6 +70,14 @@ Before creating a catalog view, ensure you have:
 The Catalog views page updates to display the new catalog view.​
 
 After you complete these steps, the catalog view is now configured to display products and pricing based on your selected sources and policies.
+
+### Specify catalog views for recommendations and product discovery rules
+
+>[!IMPORTANT]
+>
+>This feature is currently in beta.
+
+You can specify a catalog view when you [create recommendation units](../merchandising/recommendations/create.md) or [merchandising rules](../merchandising/rules/add.md).
 
 ## Catalog layers
 
@@ -99,7 +117,7 @@ This option provides a quick way to see all the catalog view parameters, while s
 
 On the *Catalog views* worksapce, find the catalog view in the grid that you want to edit and click the ![information icon](../assets/info-icon.png).
 
-![Catalog View Details](../assets/catalog-view-details.png)
+![Catalog view details](../assets/catalog-view-details.png)
 
 From here you can see catalog view configuration details, such as:
 
@@ -136,7 +154,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 
 |Component|Purpose|Example|
 |---|---|---|
-|**Catalog View**|Business unit or distribution channel|Dealer network, Regional store|
+|**Catalog view**|Business unit or distribution channel|Dealer network, Regional store|
 |**Policy**|Product filter based on attributes|Brand, Model, Category|
 |**Locale**|Language/region setting|en-US, fr-CA, es-MX|
 |**Price Book**|Pricing structure|Retail, Wholesale, Employee|

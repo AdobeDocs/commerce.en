@@ -34,7 +34,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 
 | Option | Description |
 |--- |--- |
-| [Performance](performance.md) | Dashboard provides insight into product search performance. | 
+| [Performance](performance.md) | Dashboard provides insight into product search performance. |
 | [Faceting](facets.md) | High-performance filtering that uses multiple dimensions of attribute values to refine search criteria. |
 | [Synonyms](synonyms.md) | Extend the reach of search to include words shoppers might use to find products that differ from those in your catalog. |
 | [Search Merchandising](rules.md) | Shape the search experience with logical rules that trigger scheduled actions. Boost, bury, pin, or hide products to calibrate search results to support your business goals. |
@@ -60,6 +60,10 @@ The following attributes are always searchable:
 - `name`
 - `categories`
 
+>[!TIP]
+>
+>Choosing which attributes to make searchable has a big impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the Best Practices guide for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
+
 ### Attribute behavior in complex products
 
 For complex product types (configurable, bundle, and grouped products), [!DNL Live Search] indexes attribute values from both parent and child products, allowing a parent product to be associated with multiple values for the same attribute. This enables variant-based filtering; for example, a configurable shirt appears when filtering by "blue" if any variant is blue, even if the parent product does not have a color set.
@@ -82,7 +86,7 @@ With layered search you can:
 The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
 
 - **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
-  
+
   - **Layer 1 search** - Search for "motor" on `product_attribute_1`.
   - **Layer 2 search** - Search for "part number 123" on `product_attribute_2`. This example searches for "part number 123" within the results for "motor".
 
@@ -113,7 +117,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
 
-    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. 
+    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions.
 
 ### When to use layered search rather than facets
 
@@ -141,11 +145,11 @@ Layered search and facets serve different purposes in product discovery, and cho
 
 Facets and synonyms are another way you can enahnce the search experience for your shoppers.
 
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time. 
+[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time.
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#add-a-facet).
+>A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#step-1-add-a-facet).
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 
@@ -161,10 +165,10 @@ The following section describes the supported and unsupported Commerce configura
 
 |Commerce Configuration Setting|Description|Supported by Popover|Supported by Adapter|
 |---|---|---|---|
-|Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page|If set to `Yes`, includes the `ALL` option in the "Show per Page" control.| Yes. Max 500 products|Yes. Max 500 products|
+|Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page|If set to `Yes`, includes the `ALL` option in the "Show per Page" control.| Yes. Max 100 products|Yes. Max 100 products|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Minimal Query Length|The minimum number of characters allowed in a catalog search.|Yes|Yes|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Values|Determines the number of products displayed in Grid View.|Yes|Yes|
-|Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value|Determines the number of products displayed per page by default in grid view.|Yes. Max 500 products|Yes. Max 500 products|
+|Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value|Determines the number of products displayed per page by default in grid view.|Yes. Max 100 products|Yes. Max 100 products|
 |Stores > Configuration > Catalog > Inventory > Display Out of Stock Products|Displays products that are out of stock.|Yes|Yes|
 |Stores > Configuration > Currency > Default Display Currency|The primary currency used to display prices.|Yes|Yes|
 |Stores > Configuration > General > Currency Setup > Currency Options > Base Currency|The primary currency used for all online payment transactions.|Yes|Yes|

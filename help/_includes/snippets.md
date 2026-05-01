@@ -1,5 +1,18 @@
 # Commerce snippets
 
+
+## Merchandising Services for Optimizer {#aco-merchandising-services}
+
+>[!NOTE]
+>
+>For Commerce solutions that use Adobe Commerce Optimizer or the Adobe Commerce Optimizer connector, use the [Merchandising Services GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) instead of the Catalog Service GraphQL API.
+
+## Data Synchronization check for Optimizer {#aco-data-sync-verification}
+
+>[!NOTE]
+>
+>If you have installed the [Adobe Commerce Optimizer Connector ](../aco-connector/overview.md) to export catalog data to Adobe Commerce Optimizer, use the [Data Feed Sync Status page](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
+
 ## ACCS early access {#accs-early-access}
 
 >[!NOTE]
@@ -24,6 +37,16 @@
 >[!ENDSHADEBOX]
 -->
 
+## ACCS sandbox-only experimental feature {#accs-sandbox-experimental}
+
+>[!IMPORTANT]
+>
+>This feature is experimental and is only available in Sandbox environments of [!DNL Adobe Commerce as a Cloud Service].
+>
+>This feature is subject to change without notice.
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
 ## AEM Assets instance mapping {#aem-assets-instance-mapping}
 
 >[!NOTE]
@@ -45,3 +68,13 @@ For information about identity configuration options including Adobe ID, Enterpr
 | Services | Extensibility | Storefront |
 | --- | --- | --- |
 | <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+
+## Adobe Commerce Optimizer services release notes {#aco-release}
+
+### Additional release notes
+
+[!DNL Adobe Commerce Optimizer] works with the latest releases of AEM Assets integration, the Commerce Optimizer connector, and [!DNL Adobe Commerce Storefront]. Use the following links to view release notes for each area:
+
+| Services | Storefront |
+| --- | --- |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |

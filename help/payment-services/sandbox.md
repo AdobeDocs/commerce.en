@@ -1,6 +1,8 @@
 ---
 title: Set Up the Testing Sandbox
-description: Use a PayPal sandbox account to use [!DNL Payment Services] in test mode.
+description: Use a PayPal sandbox account and Admin onboarding to run [!DNL Payment Services] in test mode before live payments (Adobe Commerce on cloud, on-premises, and SaaS).
+role: Admin, User
+level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
 ---
@@ -73,6 +75,32 @@ This feature is `off` by default. When you enable it, store administrators can s
 >[!IMPORTANT]
 >
 >This setting does not apply to other checkout flows.
+
+## Buyer's country
+
+In production, PayPal uses the buyer's geolocation to determine which payment methods are available in checkout and express flows. Since sandbox mode does not support geolocation, use the **Buyer's country** configuration to simulate the buyer's location and control which payment methods are rendered.
+
+This setting is useful for testing region-specific payment methods like Venmo (US only), Pay Later (US and UK), or [Local Payment Methods](payments-options.md#local-payment-methods) (Europe) without needing a VPN.
+
+To configure the Buyer's country:
+
+1. On the _Admin_ sidebar, navigate to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+
+1. In the left panel, expand **[!UICONTROL Sales]** and select **[!UICONTROL Payment Methods]**.
+
+1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
+
+1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL General Configuration]_ section.
+
+1. Set **[!UICONTROL Method]** to `Sandbox`.
+
+1. Select the desired country from the **[!UICONTROL Buyer's country]** dropdown.
+
+1. Click **[!UICONTROL Save Config]** to save your changes.
+
+>[!NOTE]
+>
+>The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
 
 ## Test in sandbox environment
 
