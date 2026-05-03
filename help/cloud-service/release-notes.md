@@ -26,33 +26,31 @@ The following items were released to Production environments on April 30, 2026.
 
 >[!BEGINSHADEBOX]
 
-### Bypass reCAPTCHA for OTP-based authentication
+### Skip reCAPTCHA for programmatic OTP authentication
 
-A new tenant-level feature flag allows you to bypass reCAPTCHA validation for the `exchangeOtpForCustomerToken` GraphQL mutation. This enables B2B punchout workflows where the OTP exchange is initiated programmatically without a form entry, making reCAPTCHA validation unnecessary. The `exchangeOtpForCustomerToken` mutation continues to require reCAPTCHA by default when reCAPTCHA is enabled for customer login. <!-- ACCS-850 -->
+A new configuration option allows you to skip reCAPTCHA validation for the `exchangeOtpForCustomerToken` GraphQL mutation. This enables B2B punchout workflows where the one-time password (OTP) exchange is initiated programmatically without a form entry, making reCAPTCHA validation unnecessary. This capability builds on the [one-time code login](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} feature introduced in the March 2026 release. The `exchangeOtpForCustomerToken` mutation continues to require reCAPTCHA by default when reCAPTCHA is enabled for customer login. Contact your Adobe Commerce Customer Success Manager to enable this option. <!-- ACCS-850 -->
 
 ### Edit partially invoiced orders
 
-The [!UICONTROL **Edit**] button is now available on the [!UICONTROL **Order View**] screen for partially invoiced orders. Previously, orders with any invoices could not be edited, even when uninvoiced items remained. As long as any item in the order can still be invoiced, the order can be edited. <!-- ACCS-849 -->
+The [!UICONTROL **Edit**] button is now available on the [!UICONTROL **Order View**] screen for partially invoiced orders, giving merchants greater flexibility to modify orders that are still in progress. Previously, orders with any invoices could not be edited, even when uninvoiced items remained. As long as any item in the order can still be invoiced, the order can be edited. Merchants with custom integrations that rely on the previous editing restriction should review their workflows. <!-- ACCS-849 -->
 
 ### Place orders with the Pay By Link payment method
 
-A new `paybylink` payment method is now available. When selected, it places an order in `pending_payment` status without initiating a gateway charge. The method is available to authenticated customers and [!DNL Commerce Admin] users, with optional restriction to specific customer groups through the Admin configuration. <!-- ACCS-828 -->
+A new **Pay By Link** (`paybylink`) payment method is now available, enabling merchants to collect payment separately. This is ideal for agent-assisted orders, telesales, and deferred payment workflows. When selected, it places an order in `pending_payment` status without initiating a payment collection. Guest checkout is not supported for this method. <!-- ACCS-828 -->
 
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
 
-* The `stock_item` extension attribute is now returned on the `GET /V1/products` REST API list endpoint, matching the documented API contract. <!-- ACCS-819 -->
+* Fixed an issue where the `stock_item` extension attribute was not returned on the `GET /V1/products` REST API list endpoint. The response now matches the documented API contract. <!-- ACCS-819 -->
 
 * Fixed an issue where password reset links in emails returned a 404 error. <!-- ACCS-797 -->
 
 * Improved order history query performance for companies using date-range filters. <!-- ACCS-859 -->
 
-* Fixed an issue with B2B peer order visibility. <!-- ACCS-859 -->
+* Fixed an issue where B2B company users could see peer orders from before a user joined the company. <!-- ACCS-859 -->
 
-* Resolved checkout timeout issues when loading quotes through the REST API with `trigger_recollect` enabled. <!-- CCSAAS-4904 -->
-
-* Fixed an issue where a stale `customer_group_id` on a quote caused issues after shared catalog repricing. <!-- CCSAAS-4905 -->
+* Resolved checkout timeout issues that could affect REST API performance when loading quotes with `trigger_recollect` enabled. <!-- CCSAAS-4904 -->
 
 {{accs-release}}
 
