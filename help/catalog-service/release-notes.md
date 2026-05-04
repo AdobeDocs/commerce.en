@@ -27,6 +27,12 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### v1.53 release
+
+_May 4, 2026_
+
+![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for examle., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
+
 ### v1.52 release
 
 _April 29, 2026_
@@ -47,6 +53,12 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 _April 7, 2026_
 
 ![New](../assets/new.svg) The [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now has the family input parameter as optional. This allows for a more flexible category retrieval by allowing access via slug without dependency on a specific family parameter. This query is available only for [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
+
+### v1.49 release
+
+_March 24, 2026_ 
+
+![New](../assets/new.svg) Added support to compute and return the price range for dynamic bundles. <!--DATA-7014-->
 
 ### v1.48 release
 
