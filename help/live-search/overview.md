@@ -61,7 +61,7 @@ In addition to the fuzzy search logic, transpositions are also accounted for, th
 
 ### Filters versus facets
 
-Live Search can filter results by any attribute that is indexed as filterable. A facet is simply a filterable attribute that has been configured to show as a shopper-facing filter in the storefront (for example, Brand, Color, Price).
+[!DNL Live Search] can filter results by any attribute that is indexed as filterable. A facet is simply a filterable attribute that has been configured to show as a shopper-facing filter in the storefront (for example, Brand, Color, Price).
 
 Some internal fields—such as `inStock`—are filterable but not facetable:
 
