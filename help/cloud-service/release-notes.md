@@ -16,7 +16,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 - release #4 {#latest}
+## May 2026 - release #1 {#latest}
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
@@ -28,7 +28,7 @@ The following items were released to Production environments on April 30, 2026.
 
 ### Skip reCAPTCHA for programmatic OTP authentication
 
-A new configuration option allows you to skip reCAPTCHA validation for the `exchangeOtpForCustomerToken` GraphQL mutation. This enables B2B punchout workflows where the one-time password (OTP) exchange is initiated programmatically without a form entry, making reCAPTCHA validation unnecessary. This capability builds on the [one-time code login](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} feature introduced in the March 2026 release. The `exchangeOtpForCustomerToken` mutation continues to require reCAPTCHA by default when reCAPTCHA is enabled for customer login. Contact your Adobe Commerce Customer Success Manager to enable this option. <!-- ACCS-850 -->
+A new configuration option allows you to skip reCAPTCHA validation for the [`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL mutation. This enables B2B punchout workflows where the one-time password (OTP) exchange is initiated programmatically without a form entry, making reCAPTCHA validation unnecessary. This capability builds on the [one-time code login](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} feature introduced in the March 2026 release. The `exchangeOtpForCustomerToken` mutation continues to require reCAPTCHA by default when reCAPTCHA is enabled for customer login. Contact your Adobe Commerce Customer Success Manager to enable this option. <!-- ACCS-850 -->
 
 ### Edit partially invoiced orders
 
