@@ -67,7 +67,7 @@ You can now specify a catalog view when you [create recommendation units](./merc
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{#aco-api-updates-and-dropins}}
+{{aco-api-updates-and-dropins}}
 
 #### February 19, 2026
 
