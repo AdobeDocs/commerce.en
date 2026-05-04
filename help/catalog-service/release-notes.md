@@ -60,7 +60,7 @@ _April 7, 2026_
 
 _March 24, 2026_ 
 
-![New](../assets/new.svg) The support for computing and returning the price range for the dynamic bundles have been added.
+![New](../assets/new.svg) Added support to compute and return the price range for dynamic bundles. <!--DATA-7014-->
 
 ### v1.48 release
 
