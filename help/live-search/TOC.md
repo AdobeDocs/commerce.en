@@ -37,6 +37,7 @@ feature: Services, Search
       - [Manage Rules](rules-manage.md)
    - [Category Merchandising](category-merch.md)
    - [Indexing](indexing.md)
+   - [Search matching and ranking](search-relevance-matching.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
 - [Developer Guide](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)

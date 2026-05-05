@@ -53,6 +53,7 @@ recommendations: noDisplay
       - [Overview](./setup/events/overview.md)
 - [Storefront](storefront.md)
 - [Settings](settings.md)
+- [Search matching and ranking](search-relevance-matching.md)
 - Use case {#use-case}
    - [Storefront and Catalog Admin end-to-end use case](./use-case/admin-use-case.md)
 - Launch site {#launch}
