@@ -9,13 +9,32 @@ exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 ---
 # Release Notes
 
-The following release notes contain updates to [!DNL Adobe Commerce Optimizer].
+The following release notes contain updates to [!DNL Adobe Commerce Optimizer] including:
+
+* New features and improvements to the [Admin interface](./admin.md)
+* Updates to the [data ingestion REST API](https://developer.adobe.com/commerce/services/reference/rest/) and [GraphQL API for storefront catalog data retrieval](https://developer.adobe.com/commerce/services/reference/graphql/)
+
+  {{aco-api-updates-and-dropins}}
 
 ## May 2026
 
-**Release date**: May 4, 2026 <!--v1.53-->
+>[!BEGINSHADEBOX]
 
-![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for example., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
+No current standalone product or Admin release notes for [!DNL Adobe Commerce Optimizer].
+
+### API updates
+
+**Release date**: May 4, 2026
+
+<!--v1.53-->
+
+Storefront product prices now display the correct currency code (for example., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.
+
+<!--DATA-7115-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## April 2026
 
@@ -35,25 +54,23 @@ Recommendation filters now include a [price range filter](./merchandising/recomm
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{aco-api-updates-and-dropins}}
-
 **Release date**: April 29, 2026
 
 <!--v1.52 release-->
 
-![New](../assets/new.svg) **Request batching required** — Enforced limit of maximum 100 SKUs per request when retrieving catalog data using the GraphQL API as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery). <!--DATA-7156-->
+**Request batching required** — Enforced limit of maximum 100 SKUs per request when retrieving catalog data using the GraphQL API as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery). <!--DATA-7156-->
 
 **Release date**: April 17, 2026
 
 <!--v1.51 release-->
 
-![New](../assets/new.svg) **Find categories by name with GraphQL** — The new [`searchCategory`](https://developer.adobe.com/commerce/services/reference/graphql/) query returns matching categories with pagination for storefronts and integrations. See the API reference for parameters and response fields. <!--COMOPT-1819-->
+**Find categories by name with GraphQL** — The new [`searchCategory`](https://developer.adobe.com/commerce/services/reference/graphql/) query returns matching categories with pagination for storefronts and integrations. See the API reference for parameters and response fields. <!--COMOPT-1819-->
 
 **Release date**: April 7, 2026
 
 <!--v1.50 release-->
 
-![New](../assets/new.svg) **Simpler category lookups** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query treats `family` as optional, so you can resolve categories by slug without supplying a family.
+**Simpler category lookups** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query treats `family` as optional, so you can resolve categories by slug without supplying a family.
 
 {{aco-release}}
 
@@ -61,13 +78,15 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 ## March 2026
 
-**Release date**: March 24, 2026
-
 >[!BEGINSHADEBOX]
 
 [!DNL Adobe Commerce Optimizer] had no standalone product or Admin release notes this month.
 
-![New](../assets/new.svg) Added support to compute and return the price range for dynamic bundles. <!--DATA-7014-->
+### API updates
+
+**Release date**: March 24, 2026
+
+Added support to compute and return the price range for dynamic bundles. <!--DATA-7014-->
 
 {{aco-release}}
 
@@ -87,27 +106,23 @@ You can now specify a catalog view when you [create recommendation units](./merc
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{aco-api-updates-and-dropins}}
-
-**Release date**: February 19, 2026
+* **Release date**: February 19, 2026
 
 <!--V1.48-->
 
-![New](../assets/new.svg) **Richer category content for storefronts** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now returns descriptions, images, and SEO meta tags so storefronts can render richer category pages.<!--DATA-6933-->
+  * **Richer category content for storefronts** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now returns descriptions, images, and SEO meta tags so storefronts can render richer category pages.<!--DATA-6933-->
 
-**Release date**: February 12, 2026
+* **Release date**: February 12, 2026
 
 <!--1.49-->
 
-![New](../assets/new.svg) **Enhanced product data by category** — The GraphQL API adds the [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} type so you can query and filter products by category with fewer round trips.
+  * **Enhanced product data by category** — The GraphQL API adds the [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} type so you can query and filter products by category with fewer round trips.
 
 {{aco-release}}
 
 >[!ENDSHADEBOX]
 
 ## January 2026
-
-**Release date**: January 19, 2026
 
 >[!BEGINSHADEBOX]
 
@@ -117,10 +132,9 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{aco-api-updates-and-dropins}}
+**Release date**: January 19, 2026
 
-**Richer categories support with the REST API** — When using the [Categories API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories), you can now include optional `metaTags`, `images`, and `description` values in addition to `families` to provide more detailed and visually engaging information for product categories. [Categories operations](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories) now support optional `metaTags`, `images`, and `description` fields.
-
+* **Richer categories support with the REST API** — When using the [Categories API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories), you can now include optional `metaTags`, `images`, and `description` values in addition to `families` to provide more detailed and visually engaging information for product categories. [Categories operations](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories) now support optional `metaTags`, `images`, and `description` fields.
 
 {{aco-release}}
 
@@ -154,24 +168,22 @@ Merchandisers can now use [Catalog layers](./setup/catalog-layer.md) to overlay 
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{aco-api-updates-and-dropins}}
+* **Release date**: November 21, 2025
 
-**Release date**: November 21, 2025
+  **Updated authentication instructions for the data ingestion REST API** — Authentication instructions have been updated to reference OAuth access tokens and the correct Developer Console credential scopes when calling the data ingestion service. If your credential scopes are outdated, regenerate your credentials to ensure continued access.
 
-* **Updated authentication instructions for the data ingestion REST API** — Authentication instructions have been updated to reference OAuth access tokens and the correct Developer Console credential scopes when calling the data ingestion service. If your credential scopes are outdated, regenerate your credentials to ensure continued access.
-
-**Release date**: November 3, 2025
+* **Release date**: November 3, 2025
 
 <!-- v1.43 -->
 
-![New](../assets/new.svg) **Layered, localized product content in GraphQL** — Added support for channel-specific, locale-aware content delivery for Adobe Commerce Optimizer implementations.<!--DATA-6632-->
+  **Layered, localized product content in GraphQL** — Added support for channel-specific, locale-aware content delivery for Adobe Commerce Optimizer implementations.<!--DATA-6632-->
 
-* Tailor product content by customer segment
-* Apply locale-specific overrides without duplicating base catalog data
-* Control field-level overrides with Layer Masks
-* Support for premium, seasonal, and mobile-optimized content layers
+  * Tailor product content by customer segment
+  * Apply locale-specific overrides without duplicating base catalog data
+  * Control field-level overrides with Layer Masks
+  * Support for premium, seasonal, and mobile-optimized content layers
 
-No schema change: layers apply through the existing `products` query and request headers. See [Catalog layer](./setup/catalog-layer.md).
+  No GraphQL API schema change: layers apply through the existing `products` query and request headers. See [Catalog layer](./setup/catalog-layer.md).
 
 {{aco-release}}
 
@@ -206,19 +218,17 @@ The [!DNL Commerce Optimizer Salesforce Commerce Connector] is a new App Builder
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
 
-{{aco-api-updates-and-dropins}}
+* **Release date**: October 17, 2025
 
-**Release date**: October 17, 2025
+  **Add REST API support to ingest product layers** — Use the [Catalog layers API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) to customize and override base product data for specific contexts, locales, or business requirements. Once you have created layers, you can apply and manage them from [Adobe Commerce Optimizer Studio](./setup/catalog-layer.md).<!--DATA-6632-->
 
-* **Add REST API support to ingest product layers** — Use the [Catalog layers API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) to customize and override base product data for specific contexts, locales, or business requirements. Once you have created layers, you can apply and manage them from [Adobe Commerce Optimizer Studio](./setup/catalog-layer.md).<!--DATA-6632-->
+* **Release date**: October 14, 2025
 
-**Release date**: October 14, 2025
+  **Programmatic category trees** — Create, update, and manage category trees for navigation and grouping via REST (global or channel-specific), at scale—up to 10,000 trees and 500 categories per tree. See [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="blank"} in the _Catalog data ingestion REST API Reference_.<!--DCAT-2649-->
 
-* **Programmatic category trees** — Create, update, and manage category trees for navigation and grouping via REST (global or channel-specific), at scale—up to 10,000 trees and 500 categories per tree. See [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="blank"} in the _Catalog data ingestion REST API Reference_.<!--DCAT-2649-->
+* **Release date**: October 8, 2025
 
-**Release date**: October 8, 2025
-
-* **Improved instructions for category mapping in data ingestion API** — Improved guidelines for category slug format and hierarchy rules, and clarified that product `routes.path` values must match an existing category slug (for example, `men/clothing`). These updates help ensure accurate category mapping and smoother data integration.
+  **Improved instructions for category mapping in data ingestion API** — Improved guidelines for category slug format and hierarchy rules, and clarified that product `routes.path` values must match an existing category slug (for example, `men/clothing`). These updates help ensure accurate category mapping and smoother data integration.
 
 {{aco-release}}
 
@@ -233,8 +243,6 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 ### API updates
 
 The following API updates were released to support Adobe Commerce Optimizer Merchandising Services.
-
-{{aco-api-updates-and-dropins}}
 
 **Release date**: September 23, 2025
 
