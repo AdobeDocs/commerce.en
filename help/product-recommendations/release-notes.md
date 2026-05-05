@@ -12,7 +12,8 @@ The release notes describe updates to the following [!DNL Product Recommendation
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
 
-Support is provided for the latest released Product Recommendations version. Release notes for older versions are provided for reference.
+Adobe supports the latest released Product Recommendations version. Release notes for older versions are provided for reference.
+
 Updates include:
 
 ![New](../assets/new.svg) New features
