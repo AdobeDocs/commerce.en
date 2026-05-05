@@ -34,10 +34,6 @@ A new configuration option allows you to skip reCAPTCHA validation for the [`exc
 
 The [!UICONTROL **Edit**] button is now available on the [!UICONTROL **Order View**] screen for partially invoiced orders, giving merchants greater flexibility to modify orders that are still in progress. Previously, orders with any invoices could not be edited, even when uninvoiced items remained. As long as any item in the order can still be invoiced, the order can be edited. Merchants with custom integrations that rely on the previous editing restriction should review their workflows. <!-- ACCS-849 -->
 
-### Place orders with the Pay By Link payment method
-
-A new **Pay By Link** (`paybylink`) payment method is now available, enabling merchants to collect payment separately. This is ideal for agent-assisted orders, telesales, and deferred payment workflows. When selected, it places an order in `pending_payment` status without initiating a payment collection. Guest checkout is not supported for this method. <!-- ACCS-828 -->
-
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
