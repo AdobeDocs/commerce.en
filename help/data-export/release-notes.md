@@ -21,6 +21,19 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.24 Release
+
+_May 5, 2026_
+
+![Fix](../assets/fix.svg) fix scope test. <!--MDEE-1356-->
+![Fix](../assets/fix.svg) Add code to log messages. <!--MDEE-1328-->
+![Fix](../assets/fix.svg) Sync products on attribute option labels change. <!--MDEE-1276-->
+![Fix](../assets/fix.svg) Add multiselect support to attribute option label change p…. <!--MDEE-1276-->
+![Fix](../assets/fix.svg) Catalog entity export depends on Admin Store View, affecting status and visibility. <!--MDEE-1337-->
+![Fix](../assets/fix.svg) Cross-store permission contamination: DENY overwrites ALLOW in productOverrides feed when website has multiple store groups. <!--MDEE-1341-->
+![Fix](../assets/fix.svg)  Change notice for cleanup-feed. <!--MDEE-1334-->
+![Fix](../assets/fix.svg) Fix for failed Magento\SaaSCatalog\Test\Api\CreateSimpleProductTest::testCreateProduct. <!--MDEE-1313-->
+
 ### 103.4.23 Release
 
 _April 20, 2026_
