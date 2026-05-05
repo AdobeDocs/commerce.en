@@ -28,6 +28,7 @@ The following summary tables use the RACI model to show the security responsibil
 | Applying patches to supporting services (for example, Nginx or MySQL) | RA | |
 | Defining backend origin WAF rules | RA | |
 | Defining backend CDN WAF rules | RA | |
+| Deploying and maintaining of [!DNL Adobe Developer App Builder] applications | RA | |
 | Deploying backend platform WAF rules | RA | |
 | Deploying backend CDN WAF rules | RA | |
 | Fixing core bugs in [!DNL Adobe Commerce as a Cloud Service] | RA | I |
