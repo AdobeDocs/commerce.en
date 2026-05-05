@@ -22,7 +22,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-The following items were released to Production environments on April 30, 2026.
+The following items were released to Production environments on May 7, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -51,6 +51,10 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where B2B company users could see peer orders from before a user joined the company. <!-- ACCS-859 -->
 
 * Resolved checkout timeout issues that could affect REST API performance when loading quotes with `trigger_recollect` enabled. <!-- CCSAAS-4904 -->
+
+* Fixed page load issues that could occur after submitting an order in the [!DNL Commerce Admin]. <!-- CCSAAS-4413 -->
+
+* Fixed an issue where orders with the same timestamp could display outdated order status information in the sales order grid. <!-- CCSAAS-4890 -->
 
 {{accs-release}}
 
