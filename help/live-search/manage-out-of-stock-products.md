@@ -13,10 +13,6 @@ You can control how out-of-stock products appear in [!DNL Live Search] search an
 
 The Adobe Commerce stock attribute `quantity_and_stock_status` is not supported as a facet and does not appear in the **[!UICONTROL Add Facet]** dialog. However, [!DNL Live Search] exposes an `inStock` field you can use as a filter at query time.
 
->[!NOTE]
->
->While you can configure stock-related attributes as filterable in Adobe Commerce, `quantity_and_stock_status` is excluded from [!DNL Live Search] facet configuration by design.
-
 ## Hide out-of-stock products
 
 Use one of the following approaches to hide out-of-stock products:
@@ -29,7 +25,7 @@ Use one of the following approaches to hide out-of-stock products:
 
    Click **[!UICONTROL Save Config]**.
 
-   When **[!UICONTROL Display Out of Stock Products]** is **[!UICONTROL No]**, [!DNL Live Search] adds `inStock = 'true'` to storefront queries through the Live Search adapter, so out-of-stock products are not returned.
+   When **[!UICONTROL Display Out of Stock Products]** is **[!UICONTROL No]**, [!DNL Live Search] adds `inStock = 'no` to storefront queries through the PLP widget, so out-of-stock products are not returned.
 
 1. **API filter**
 
