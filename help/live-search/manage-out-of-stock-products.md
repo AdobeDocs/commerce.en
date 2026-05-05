@@ -29,7 +29,7 @@ When **[!UICONTROL Display Out of Stock Products]** is **[!UICONTROL No]**, [!DN
 
 ### API filter
 
-When you call the [!DNL Live Search] API directly (GraphQL or REST), filter out out-of-stock products explicitly, for example:
+When you call the [!DNL Live Search] API directly (GraphQL or REST), filter out-of-stock products explicitly, for example:
 
 ```graphql
 query productSearchInStockOnly {
