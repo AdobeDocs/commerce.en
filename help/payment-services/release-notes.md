@@ -7,7 +7,11 @@ feature: Payments, Release Notes
 
 # Release Notes
 
-These release notes describe all releases of [!DNL Payment Services] and include:
+These release notes describe the latest versions of [!DNL Payment Services].
+
+Adobe provides support for the latest released Payments Services version. Release notes for older versions are provided for reference.
+
+Updates include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
