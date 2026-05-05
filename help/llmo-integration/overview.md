@@ -9,7 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 >[!IMPORTANT]
 >
->This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>Access to this integration is restricted. Contact your Technical Account Manager for details.
 
 [!DNL Adobe LLM Optimizer] is an enterprise solution that helps brands monitor, analyze, and optimize how their content appears in answers from large language models (LLMs) and AI assistants. As shoppers increasingly use AI tools for research and product discovery, LLM Optimizer helps ensure that your brand and catalog are cited accurately and surfaced in context.
 
@@ -36,7 +36,7 @@ When the catalog source is [!DNL Adobe Commerce], Adobe can support the full end
 
 ## Prerequisites {#prerequisites}
 
-The following prerequisites pertain to those users participating in the beta for the Adobe Commerce integration with Adobe LLM Optimizer.
+The following prerequisites apply when you have **access** to the Adobe Commerce integration with Adobe LLM Optimizer. Contact your Technical Account Manager for details.
 
 - Your storefront can be crawled by LLM-oriented and agentic bots where this crawl capability is part of your LLM Optimizer measurement and optimization strategy (a general prerequisite for catalog-aware insights).
 - For Commerce-backed deploy workflows, required Commerce services and catalog connectivity are enabled and healthy. Task-level setup is described in [Connect Adobe Commerce to LLM Optimizer](get-started/connect-to-llmo.md).

@@ -9,7 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 >[!IMPORTANT]
 >
->This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>Access to this integration is restricted. Contact your Technical Account Manager for details.
 
 After [connecting Commerce to LLM Optimizer](connect-to-llmo.md), you work primarily in the **[!DNL Adobe LLM Optimizer]** UI to review opportunities and push approved changes into the catalog when you are ready. This article describes the two Commerce-focused optimization types, how to use **[!UICONTROL Opportunities]**, how deploy actions behave in [!DNL Adobe Commerce], and how external updates interact with LLM Optimizer suggestions. For a broader picture of the integration, see the [integration overview](../overview.md).
 
@@ -34,6 +34,21 @@ Use **[!UICONTROL Opportunities]** to open the list of products or URLs and work
 
 ![Commerce opportunities filter and optimization types](../assets/llmo-opportunities.png)
 
+### Understand opportunity metrics {#opportunity-metrics}
+
+Each opportunity view summarizes impact so you can prioritize work:
+
+- **Product Pages** or **URLs**: The pages or products evaluated for that optimization type.
+- **Agentic Traffic**: Visits and interactions initiated by AI agents that can help you prioritize high-impact opportunities first.
+
+### Understand suggestion states {#suggestion-states}
+
+Both enrichment types use the same workflow views:
+
+- **[!UICONTROL Current Suggestions]**: New or active items to review.
+- **[!UICONTROL Fixed Suggestions]**: Items you already deployed or resolved.
+- **[!UICONTROL Ignored Suggestions]**: Items you intentionally excluded from action.
+
 ### Review and deploy PDP enrichment {#review-deploy-pdp}
 
 PDP enrichment is for teams that want clearer product page messaging in AI-driven discovery while keeping the storefront experience your merchandisers designed.
@@ -42,11 +57,16 @@ PDP enrichment is for teams that want clearer product page messaging in AI-drive
 
 1. Open **[!UICONTROL Product Detail Page Enrichment]** from **[!UICONTROL Opportunities]**.
 1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]**.
-1. For a URL or SKU, click **[!UICONTROL Preview]**. The proposed update appears beside the table.
+1. For a URL or SKU, click **[!UICONTROL Preview]** to review the AI analysis and proposed enrichment.
 1. Optional: Click **[!UICONTROL Copy]** to paste the content into an external editor, or click **[!UICONTROL Edit suggestion]** to edit in place.
+1. Optional: If a suggestion does not match your strategy, move it to **[!UICONTROL Ignored Suggestions]**.
 1. Once reviewed and approved, select the row for the URL or SKU to update, then click **[!UICONTROL Deploy optimizations]**, and confirm.
 
-After deployment, open the live product page and confirm it still matches what your team expects.
+After deployment, suggestions move to **[!UICONTROL Fixed Suggestions]** with an optimization status in LLM Optimizer. 
+
+>[!NOTE]
+>
+>PDP enrichment deployment requires completed **Optimize at Edge** onboarding in LLM Optimizer. If onboarding is incomplete, the UI prompts you to finish setup before deployment.
 
 ### Review and deploy product catalog enrichment {#review-deploy-catalog}
 
@@ -58,6 +78,7 @@ Catalog enrichment is for teams that want to tighten product names and long desc
 1. In the **[!UICONTROL URLs with Suggestions]** table, select **[!UICONTROL Current Suggestions]**.
 1. Click the expand control for the URL or SKU row to show the proposed **Product Name** and **Product Description** updates.
 1. Optional: Click the edit icon to adjust the proposed name or description before you deploy.
+1. Optional: If a suggestion does not match your strategy, move it to **[!UICONTROL Ignored Suggestions]**.
 1. Once reviewed and approved, select the row for the URL or SKU to update, then click **[!UICONTROL Deploy optimizations]**, and confirm.
 
 Approved name and description changes are saved to your [!DNL Adobe Commerce] catalog like other product updates.
@@ -65,6 +86,8 @@ Approved name and description changes are saved to your [!DNL Adobe Commerce] ca
 >[!IMPORTANT]
 >
 >Treat deploy as a production catalog change. Use your normal change-control, staging, and QA practices. Deploy only after merchandising and SEO stakeholders agree on the final copy.
+
+After deployment, suggestions move to **[!UICONTROL Fixed Suggestions]** with an **Applied** status. 
 
 ## Verify updates in the Commerce Admin {#verify-in-admin}
 
@@ -128,6 +151,13 @@ These rules help you know whether LLM Optimizer, ingestion feeds, or *Admin* edi
 - **Document system ownership** for product name and description so that PIM or feed jobs do not unintentionally conflict with LLM Optimizer expectations.
 - **Coordinate with SEO and brand teams** before bulk deploying titles or descriptions.
 - **Re-sync** or **re-analyze** after major catalog imports so that opportunities reflect the current catalog state.
+
+## Try it in the demo
+
+Use the Frescopa demo environment to see both Commerce opportunity types in action:
+
+- [View Product Catalog Enrichment demo](https://play.llmo.now/org/demo-org/opportunities/commerce-product-catalog-enrichment/e5f2a854-7477-421c-820f-74d5dd595647?siteId=9ae8877a-bbf3-407d-9adb-d6a72ce3c5e3)
+- [View Product Detail Page Enrichment demo](https://play.llmo.now/org/demo-org/opportunities/commerce-product-page-enrichment/4e8b0428-0893-4864-a00e-fc1d77fb3372?siteId=9ae8877a-bbf3-407d-9adb-d6a72ce3c5e3)
 
 ## Related topics
 

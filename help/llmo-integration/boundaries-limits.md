@@ -1,6 +1,6 @@
 ---
 title: Integration Limits and Boundaries
-description: Learn scope limits for third-party catalogs, auto-fix coverage, crawling prerequisites, enterprise scale considerations, and beta or early-access constraints for LLM Optimizer with Commerce.
+description: Learn scope limits for third-party catalogs, auto-fix coverage, crawling prerequisites, enterprise scale considerations, and restricted beta access constraints for LLM Optimizer with Commerce.
 role: Admin, User, Leader
 recommendations: noCatalog
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -9,7 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 >[!IMPORTANT]
 >
->This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>Access to this integration is restricted. Contact your Technical Account Manager for details.
 
 Use this topic to set expectations for what the [!DNL Adobe Commerce] and [!DNL Adobe LLM Optimizer] integration can automate, where you remain responsible, and which constraints are still evolving.
 
@@ -29,10 +29,6 @@ Large catalogs and high URL counts can stress crawling, analysis, and edge-deplo
 ## Crawling and bot readability {#crawling}
 
 Meaningful catalog and PDP insights assume that LLM-relevant **bots can access** the URLs you care about and that pages are structured so automated analysis is reliable. Robots rules, authentication, geo-blocking, and heavy personalization can reduce coverage.
-
-## Beta and early-access constraints {#beta-constraints}
-
-Features described in this guide are in **beta**. UI labels, opportunity types, and deploy surfaces may change.
 
 ## Related topics
 

@@ -9,7 +9,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 >[!IMPORTANT]
 >
->This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>Access to this integration is restricted. Contact your Technical Account Manager for details.
 
 This article explains how to connect your [!DNL Adobe Commerce] catalog available to LLM Optimizer.
 
