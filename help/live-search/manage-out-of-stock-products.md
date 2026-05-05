@@ -25,7 +25,7 @@ Use one of the following approaches to hide out-of-stock products.
 
 1. Click **[!UICONTROL Save Config]**.
 
-When **[!UICONTROL Display Out of Stock Products]** is **[!UICONTROL No]**, [!DNL Live Search] adds `inStock = 'no` to storefront queries through the PLP widget, so out-of-stock products are not returned.
+When **[!UICONTROL Display Out of Stock Products]** is set to `No`, [!DNL Live Search] adds `inStock = 'no` to storefront queries through the PLP widget, so out-of-stock products are not returned.
 
 ### API filter
 
