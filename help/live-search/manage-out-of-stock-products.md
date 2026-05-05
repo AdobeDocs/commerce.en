@@ -15,39 +15,43 @@ The Adobe Commerce stock attribute `quantity_and_stock_status` is not supported 
 
 ## Hide out-of-stock products
 
-Use one of the following approaches to hide out-of-stock products:
+Use one of the following approaches to hide out-of-stock products.
 
-1. **Commerce configuration**
+### Commerce configuration
 
-   From the *Admin*, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]**.
+1.From the *Admin*, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]**.
 
-   Set **[!UICONTROL Display Out of Stock Products]** to **[!UICONTROL No]**.
+1.Set **[!UICONTROL Display Out of Stock Products]** to **[!UICONTROL No]**.
 
-   Click **[!UICONTROL Save Config]**.
+1. Click **[!UICONTROL Save Config]**.
 
-   When **[!UICONTROL Display Out of Stock Products]** is **[!UICONTROL No]**, [!DNL Live Search] adds `inStock = 'no` to storefront queries through the PLP widget, so out-of-stock products are not returned.
+When **[!UICONTROL Display Out of Stock Products]** is **[!UICONTROL No]**, [!DNL Live Search] adds `inStock = 'no` to storefront queries through the PLP widget, so out-of-stock products are not returned.
 
-1. **API filter**
+### API filter
 
-   When you call the [!DNL Live Search] API directly (GraphQL or REST), filter out OOS products explicitly, for example:
+When you call the [!DNL Live Search] API directly (GraphQL or REST), filter out out-of-stock products explicitly, for example:
 
-   ```graphql
-   query productSearch {
-     productSearch(
-       phrase: ""
-       filter: [
-         { attribute: "inStock", eq: "true" }
-       ]
-     ) {
-       total_count
-       items {
-         product { sku name }
-       }
-     }
-   }
-   ```
+```graphql
+query productSearchInStockOnly {
+  productSearch(
+    phrase: ""
+    filter: [
+      { attribute: "inStock", eq: "true" }
+    ]
+  ) {
+    total_count
+    items {
+      productView {
+        sku
+        name
+        inStock
+      }
+    }
+  }
+}
+```
 
-   Use this approach when you do not route the request through the standard Live Search adapter.
+Use this approach when you do not route the request through the [Live Search PLP Widget](plp-styling.md).
 
 ### Show out-of-stock after in-stock results
 
@@ -76,5 +80,5 @@ To hide or deprioritize out-of-stock products across the catalog, use the invent
 
 >[!MORELIKETHIS]
 >
-> - [Search Merchandising rules](/help/live-search/rules.md)
+> - [Search Merchandising rules](/rules.md)
 > - [Configure Inventory Management global options](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
