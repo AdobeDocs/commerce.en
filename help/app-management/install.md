@@ -56,7 +56,7 @@ Before associating an app, ensure you have the following:
 
 1. Navigate to **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
 
-The [!DNL App Management] view displays. Here, you can associate, configure, and manage App Builder applications.
+The [!DNL App Management] view displays. Here, you can associate, configure, and manage App Builder applications. For search, filters, and the **[!UICONTROL Acquire App]** action on that screen, see [Find an application in the Admin](manage-app.md#find-an-application-in-the-admin) in [Manage your app](manage-app.md).
 
 ## Installing App Builder apps
 

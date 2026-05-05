@@ -24,7 +24,7 @@ When a customer views your storefront, the system combines your base catalog dat
    * **Override fields**—Text fields like name, description, and meta titles are replaced with the values defined in the layer, with the higher-priority layer taking precedence.
    * **Merge fields**—Array fields like images, links, and attributes are combined from multiple layers, providing a unified response.
 
-1. **Priority resolution**—The order field determines which layer takes precedence. When multiple layers modify the same field, the layer with the lower order number has higher priority (for example, order 1 is the highest).
+1. **Priority resolution**—The order field determines which layer takes precedence. When multiple layers modify the same field, the layer with the higher order number has higher priority (for example, order 10 is the highest).
 
 ## Catalog layer use cases
 
@@ -108,7 +108,7 @@ The catalog view UI allows you to manually create and manage layers, which is pa
 
 >[!NOTE]
 >
->If a Sites Optimizer layer does not exist in your catalog view, the auto-fix feature in Sites Optimizer automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time the auto-fix feature in Sites Optimizer runs and will shift existing layers to lower order numbers. If the Sites Optimizer layer already exists at a different order number, the auto-fix feature will not change its priority.
+>If a Sites Optimizer layer does not exist in your catalog view, the auto-fix feature in Sites Optimizer automatically creates one and assigns it the highest priority (highest number). If you delete this layer, it will be recreated the next time the auto-fix feature in Sites Optimizer runs and will shift existing layers to lower order numbers. If the Sites Optimizer layer already exists at a different order number, the auto-fix feature will not change its priority.
 
 >[!TIP]
 >
@@ -183,8 +183,8 @@ The order in which layers are applied determines which values appear on your sto
 **Understanding priority order:**
 
 * Each layer is assigned an order number (1, 2, 3, and so on)
-* Order 1 has the highest priority and overrides all other layers
-* When multiple layers modify the same field, the layer with the lower order number takes precedence
+* Higher numbers indicate higher priorty and overrides all other layers
+* When multiple layers modify the same field, the layer with the higher order number takes precedence
 * Priority only applies to override fields (name, description, meta tags)
 * Merge fields (images, links, attributes) combine data from all layers
 

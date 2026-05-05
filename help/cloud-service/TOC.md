@@ -12,9 +12,15 @@ recommendations: noDisplay, noCatalog
 - [Getting Started](getting-started.md)
 - [User and Identity Management](user-management.md)
 - [Storefront](storefront.md)
-- [Use Cases](use-cases.md)
+- [Use cases](use-cases.md)
+- Security {#security}
+  - [Overview](security/overview.md)
+  - [Shared responsibility](security/shared-responsibility.md)
+  - [Identity and access management](security/access-control.md)
+  - [Compliance and certifications](security/compliance.md)
+  - [Security architecture and data flow](security/data-flow.md)
 - [Add Files to Products](product-files.md)
-- [Shared Responsibility](shared-responsibility.md)
+- [Observability](observability.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
