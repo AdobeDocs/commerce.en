@@ -37,6 +37,12 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### May 2026
+
+_May 4, 2026_ <!--v1.53-->
+
+![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for examle., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
+
 ### December 2025
 
 _December 11, 2025_ <!-- v1.46 -->
