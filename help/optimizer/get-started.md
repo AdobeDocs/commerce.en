@@ -129,6 +129,10 @@ Once the app is open, easily switch between environments like sandbox and produc
 
    ![Instance switcher dropdown for selecting [!DNL Adobe Commerce Optimizer] environments](./assets/context-switcher.png){zoomable="yes"}
 
+>[!NOTE]
+>
+>If you need to return to the Commerce Cloud Manager to view instance details, or manage instances, click the Apps icon ![Icon to open Experience Cloud Applications](./assets/apps-icon.png) in the upper left corner of the Commerce Optimizer top navigation.  
+
 ### Get instance details
 
 View the instance details by clicking the information icon next to your instance name.
@@ -138,9 +142,9 @@ View the instance details by clicking the information icon next to your instance
 Note the following key information:
 
 - **GraphQL endpoint** to retrieve Commerce catalog data using the Merchandising API
-- **Catalog Service endpoint** for data ingestion using the REST API
+- **Catalog endpoint** for ingesting catalog data into Commerce Optimizer using the REST API
 - **Commerce Optimizer URL** to access the [!DNL Adobe Commerce Optimizer] application
-- **Instance ID**: the unique tenant ID that identifies the instance
+- **Instance ID**: the unique ID that identifies the instance. The instance ID is also referred to as the *tenant_id*.
 
 If you are a developer, you need these details to set up your development environment and connect to the [!DNL Adobe Commerce Optimizer] APIs.
 
