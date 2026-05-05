@@ -2,8 +2,56 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 24 15:41:13 2026
+updated: Fri May 1 15:43:17 2026
 entries:
+- description: Expanded the [Adobe Commerce Optimizer Connector overview](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
+    with key benefits, end-to-end architecture (new diagram), clearer scope mapping,
+    typical setup and sync workflows, supported scenarios, and prerequisites or responsibilities
+    so teams can assess and operate the integration more easily.
+  versions: ''
+  type: feedback, major-update
+  date: April 30, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/535
+  merge_commit: fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33
+  contributor: meker
+  labels:
+  - feedback
+  - major-update
+- description: Added an [observability](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
+    page for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: feedback, new-topic
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/512
+  merge_commit: bf83f213d1774845c4c99f3b154e9fb3220c3cd1
+  contributor: jhoover
+  labels:
+  - feedback
+  - new-topic
+- description: Updated [Manage your app](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)
+    with how to find applications in the Admin (search, Status, and Extensibility
+    patterns filters) and the Acquire App path to Adobe Exchange, with links from
+    the [App Management overview](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+    and [Install and access App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/install).
+  versions: ''
+  type: major-update
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/540
+  merge_commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+  contributor: del
+  labels:
+  - major-update
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/545
+  merge_commit: 41035e75111d370e5dc40c17607337ae75f11fa0
+  contributor: jhoover
+  labels:
+  - core-saas
+  - major-update
 - description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
