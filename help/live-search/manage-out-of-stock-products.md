@@ -7,7 +7,7 @@ level: Intermediate
 ---
 # Manage out-of-stock products
 
-You can control how out-of-stock products appear in [!DNL Live Search] search and category results using inventory configuration, query-time filters, and optional backend feature flags. These options have important limits, which this topic explains.
+You can control how out-of-stock products display in [!DNL Live Search] search and category results using inventory configuration, query-time filters, and optional backend feature flags. These options have important limits, which this topic explains.
 
 ## Stock status filters
 
