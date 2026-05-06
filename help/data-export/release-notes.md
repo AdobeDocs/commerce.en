@@ -29,7 +29,10 @@ _May 5, 2026_
 <!--MDEE-1276-->
 
 ![Fix](../assets/fix.svg) **Automatic resync when attribute option labels change**–Changing product attribute option labels for a store view (including multiselect attributes) now queues the affected products for export again so that Live Search, Product Recommendations, Catalog Service, and other connected Commerce services display the updated facet and filter labels in shopper views. Previously, label-only edits could leave SaaS catalogs showing stale wording until a broader product change triggered a sync.
-![Fix](../assets/fix.svg) Catalog entity export depends on Admin Store View, affecting status and visibility. <!--MDEE-1337-->
+<!--MDEE-1337-->
+
+![Fix](../assets/fix.svg) **Reliable status and visibility when default scope data is missing**–Product export handles gaps on the default Admin scope so connected services get correct enabled, disabled, and visibility behavior. Store-specific values you set still take precedence.
+
 ![Fix](../assets/fix.svg) Cross-store permission contamination: DENY overwrites ALLOW in productOverrides feed when website has multiple store groups. <!--MDEE-1341-->
 ![Fix](../assets/fix.svg)  Change notice for cleanup-feed. <!--MDEE-1334-->
 ![Fix](../assets/fix.svg) Fix for failed Magento\SaaSCatalog\Test\Api\CreateSimpleProductTest::testCreateProduct. <!--MDEE-1313-->
