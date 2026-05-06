@@ -1,6 +1,8 @@
 ---
 solution: Commerce
 solution-title: Commerce
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
