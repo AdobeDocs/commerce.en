@@ -11,8 +11,8 @@ exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 
 The following release notes contain updates to [!DNL Adobe Commerce Optimizer] including:
 
-* New features and improvements to the [Admin interface](./admin.md)
-* Updates to the [data ingestion REST API](https://developer.adobe.com/commerce/services/reference/rest/) and [GraphQL API for storefront catalog data retrieval](https://developer.adobe.com/commerce/services/reference/graphql/)
+* New features and improvements to the [Adobe Commerce Optimizer [Admin interface](overview.md#quick-tour).
+* Updates to the [data ingestion REST API](https://developer.adobe.com/commerce/services/reference/rest/) and [GraphQL API for storefront catalog data retrieval](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
 
@@ -58,7 +58,9 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 <!--v1.52 release-->
 
-**Request batching required** — Enforced limit of maximum 100 SKUs per request when retrieving catalog data using the GraphQL API as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery). <!--DATA-7156-->
+**Request batching required** — Enforced limit of maximum 100 SKUs per request when retrieving catalog data using the GraphQL API as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
+
+<!--DATA-7156-->
 
 **Release date**: April 17, 2026
 
@@ -110,13 +112,15 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 <!--V1.48-->
 
-  * **Richer category content for storefronts** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now returns descriptions, images, and SEO meta tags so storefronts can render richer category pages.<!--DATA-6933-->
+  **Richer category content for storefronts** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now returns descriptions, images, and SEO meta tags so storefronts can render richer category pages.
+
+  <!--DATA-6933-->
 
 * **Release date**: February 12, 2026
 
-<!--1.49-->
+   <!--1.49-->
 
-  * **Enhanced product data by category** — The GraphQL API adds the [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} type so you can query and filter products by category with fewer round trips.
+  **Enhanced product data by category** — The GraphQL API adds the [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} type so you can query and filter products by category with fewer round trips.
 
 {{aco-release}}
 
@@ -174,16 +178,15 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 * **Release date**: November 3, 2025
 
-<!-- v1.43 -->
+  <!-- v1.43 -->
 
-  **Layered, localized product content in GraphQL** — Added support for channel-specific, locale-aware content delivery for Adobe Commerce Optimizer implementations.<!--DATA-6632-->
-
+  **Layered, localized product content in GraphQL** — Added support for channel-specific, locale-aware content delivery for Adobe Commerce Optimizer implementations.
   * Tailor product content by customer segment
   * Apply locale-specific overrides without duplicating base catalog data
   * Control field-level overrides with Layer Masks
   * Support for premium, seasonal, and mobile-optimized content layers
 
-  No GraphQL API schema change: layers apply through the existing `products` query and request headers. See [Catalog layer](./setup/catalog-layer.md).
+   No GraphQL API schema change: layers apply through the existing `products` query and request headers. See [Catalog layer](./setup/catalog-layer.md).
 
 {{aco-release}}
 
