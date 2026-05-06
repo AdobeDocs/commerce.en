@@ -33,7 +33,10 @@ _May 5, 2026_
 
 ![Fix](../assets/fix.svg) **Reliable status and visibility when default scope data is missing**–Product export handles gaps on the default Admin scope so connected services get correct enabled, disabled, and visibility behavior. Store-specific values you set still take precedence.
 
-![Fix](../assets/fix.svg) Cross-store permission contamination: DENY overwrites ALLOW in productOverrides feed when website has multiple store groups. <!--MDEE-1341-->
+<!--MDEE-1341-->
+
+![Fix](../assets/fix.svg) **Catalog permissions respected across multiple store groups**–On complex store setups, allowed products stay discoverable in Live Search and related experiences for the right customer groups instead of being hidden when permission rules conflict.
+
 ![Fix](../assets/fix.svg)  Change notice for cleanup-feed. <!--MDEE-1334-->
 ![Fix](../assets/fix.svg) Fix for failed Magento\SaaSCatalog\Test\Api\CreateSimpleProductTest::testCreateProduct. <!--MDEE-1313-->
 
