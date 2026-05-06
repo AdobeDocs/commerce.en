@@ -25,7 +25,7 @@ Updates include:
 
 _May 5, 2026_
 
-![Fix](../assets/fix.svg) Add code to log messages. <!--MDEE-1328-->
+![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the Log Codes Reference.
 ![Fix](../assets/fix.svg) Sync products on attribute option labels change. <!--MDEE-1276-->
 ![Fix](../assets/fix.svg) Add multiselect support to attribute option label change p…. <!--MDEE-1276-->
 ![Fix](../assets/fix.svg) Catalog entity export depends on Admin Store View, affecting status and visibility. <!--MDEE-1337-->
