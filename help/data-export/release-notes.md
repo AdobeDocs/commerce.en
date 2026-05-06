@@ -25,7 +25,6 @@ Updates include:
 
 _May 5, 2026_
 
-![Fix](../assets/fix.svg) fix scope test. <!--MDEE-1356-->
 ![Fix](../assets/fix.svg) Add code to log messages. <!--MDEE-1328-->
 ![Fix](../assets/fix.svg) Sync products on attribute option labels change. <!--MDEE-1276-->
 ![Fix](../assets/fix.svg) Add multiselect support to attribute option label change p…. <!--MDEE-1276-->
