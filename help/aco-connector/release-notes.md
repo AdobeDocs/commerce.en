@@ -14,6 +14,15 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.0.13 Release
+
+_May 6, 2026_
+
+[SLOW HORSES] COMOPT-1922 Update Commerce Optimizer links by @developlex in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/96
+![Fix](../assets/fix.svg) Extend connector metadata with aco-connector version. <!--MDEE-1323-->
+## New Contributors
+@developlex made their first contribution in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/96
+
 ### 1.0.12 Release
 
 _April 2, 2026_
