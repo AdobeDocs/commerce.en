@@ -41,7 +41,6 @@ _May 5, 2026_
 
 ![Fix](../assets/fix.svg) **Clearer warning before a full feed reset**–Using `saas:resync` with the `--cleanup-feed` option now explains that local export state is reset and SaaS can fall out of sync with your catalog. Use this option only for full environment rebuilds, not routine troubleshooting.
 
-![Fix](../assets/fix.svg) Fix for failed Magento\SaaSCatalog\Test\Api\CreateSimpleProductTest::testCreateProduct. <!--MDEE-1313-->
 
 ### 103.4.23 Release
 
