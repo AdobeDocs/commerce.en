@@ -26,8 +26,9 @@ Updates include:
 _May 5, 2026_
 
 ![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the Log Codes Reference.
-![Fix](../assets/fix.svg) Sync products on attribute option labels change. <!--MDEE-1276-->
-![Fix](../assets/fix.svg) Add multiselect support to attribute option label change p…. <!--MDEE-1276-->
+<!--MDEE-1276-->
+
+![Fix](../assets/fix.svg) **Automatic resync when attribute option labels change**–Changing product attribute option labels for a store view (including multiselect attributes) now queues the affected products for export again so that Live Search, Product Recommendations, Catalog Service, and other connected Commerce services display the updated facet and filter labels in shopper views. Previously, label-only edits could leave SaaS catalogs showing stale wording until a broader product change triggered a sync.
 ![Fix](../assets/fix.svg) Catalog entity export depends on Admin Store View, affecting status and visibility. <!--MDEE-1337-->
 ![Fix](../assets/fix.svg) Cross-store permission contamination: DENY overwrites ALLOW in productOverrides feed when website has multiple store groups. <!--MDEE-1341-->
 ![Fix](../assets/fix.svg)  Change notice for cleanup-feed. <!--MDEE-1334-->
