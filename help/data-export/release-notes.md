@@ -21,6 +21,27 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.24 Release
+
+_May 5, 2026_
+
+![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the Log Codes Reference.
+<!--MDEE-1276-->
+
+![Fix](../assets/fix.svg) **Automatic resync when attribute option labels change**–Changing product attribute option labels for a store view (including multiselect attributes) now queues the affected products for export again so that Live Search, Product Recommendations, Catalog Service, and other connected Commerce services display the updated facet and filter labels in shopper views. Previously, label-only edits could leave SaaS catalogs showing stale wording until a broader product change triggered a sync.
+<!--MDEE-1337-->
+
+![Fix](../assets/fix.svg) **Reliable status and visibility when default scope data is missing**–Product export handles gaps on the default Admin scope so connected services get correct enabled, disabled, and visibility behavior. Store-specific values you set still take precedence.
+
+<!--MDEE-1341-->
+
+![Fix](../assets/fix.svg) **Catalog permissions respected across multiple store groups**–On complex store setups, allowed products stay discoverable in Live Search and related experiences for the right customer groups instead of being hidden when permission rules conflict.
+
+<!--MDEE-1334-->
+
+![Fix](../assets/fix.svg) **Clearer warning before a full feed reset**–Using `saas:resync` with the `--cleanup-feed` option now explains that local export state is reset and SaaS can fall out of sync with your catalog. Use this option only for full environment rebuilds, not routine troubleshooting.
+
+
 ### 103.4.23 Release
 
 _April 20, 2026_

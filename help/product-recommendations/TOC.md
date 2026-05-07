@@ -7,7 +7,7 @@ feature: Services, Recommendations
 # [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
 - [Guide Overview](guide-overview.md)
-- [Introduction to [!DNL Product Recommendations]](overview.md)
+- [What are [!DNL Product Recommendations]?](overview.md)
 - [Release Notes](release-notes.md)
 - [Boundaries and Limits](boundaries-limits.md)
 - Get Started {#getting-started}
