@@ -61,7 +61,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
    * Select **[!UICONTROL Match by SKU]** for [default automatic matching](../synchronize/default-match.md),
    * Select **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md) (requires [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
-1. Add the [AEM Assets metadata field name](configure-aem.md#configure-metadata) defined for Commerce product SKUs in the **[!UICONTROL Match by product SKU attribute name]** field, `commerce:skus` by default.
+1. Add the [AEM Assets metadata field name](configure-aem.md#define-the-metadata-profile) defined for Commerce product SKUs in the **[!UICONTROL Match by product SKU attribute name]** field, `commerce:skus` by default.
 
 1. Select **[!UICONTROL Save Config]** to apply updates and initiate asset synchronization.
 

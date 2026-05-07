@@ -6,6 +6,8 @@ exl-id: 1a83bbc5-8901-49c0-8d8f-daec415edf70
 ---
 # [!DNL Catalog Service] Guide Overview
 
+{{aco-merchandising-services}}
+
 This guide is intended for administrators of Adobe [!DNL Commerce]. It includes general information about [!DNL Catalog Service], including onboarding and installation. It assumes a basic understanding of the core [!DNL Commerce] configuration and functionality.
 
 [!DNL Catalog Service] has two types of users:

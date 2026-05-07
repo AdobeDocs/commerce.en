@@ -122,7 +122,7 @@ Follow these steps to implement an AI-suggested optimization:
    
    - Creates a new catalog layer for the product (if one does not already exist).
    - Updates the relevant attribute (such as meta title, description, or H1) based on the AI recommendation.
-   - Assigns the new layer as the highest priority (order 1) in the catalog view.
+   - Assigns the new layer as the highest priority (higher number) in the catalog view.
    - Validates the change through the catalog storefront service.
 
 1. Monitor the deployment status. The system updates the suggestion status automatically once validation is complete.
@@ -140,7 +140,7 @@ Follow these steps to implement an AI-suggested optimization:
 
 ### How catalog layers work with auto-fix
 
-If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#activate-or-deactivate-layers).
+If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it as the highest priority (highest number). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
 
 ![Catalog Layers](../assets/catalog-layers.png)
 
@@ -160,9 +160,9 @@ If an optimization does not appear to be applied on your storefront:
 
 1. Check the status indicator in the **Optimized (Done)** tab.
 1. If you see a warning icon, verify the catalog layer priority settings.
-1. Ensure the optimization layer is set as order 1 (highest priority) in your catalog view.
+1. Ensure the optimization layer is set as the highest priority (highest number) in your catalog view.
 1. Confirm that catalog data synchronization is active and up-to-date.
-1. Allow time for changes to propagate. Even with a properly configured layer at order 1, changes may take time to appear on your storefront, similar to the delay when publishing new products.
+1. Allow time for changes to propagate. Even with a properly configured layer at the highest order number, changes may take time to appear on your storefront, similar to the delay when publishing new products.
 
 ## How Sites Optimizer and success metrics work together
 

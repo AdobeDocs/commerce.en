@@ -46,4 +46,4 @@ The demand is high for a quality Commerce experience, and an integrated payments
 
 >[!NOTE]
 >
-> Some of the features mentioned here may not yet be available in your market. See [Compatibility](compatibility.md) for more information.
+> Some of the features mentioned here may not yet be available in your market. See [Compatibility](compatibility.md#standard-vs-advanced-payment-services-experience) for more information.
