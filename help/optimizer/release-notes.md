@@ -18,9 +18,9 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer] i
 
 ## May 2026
 
->[!BEGINSHADEBOX]
+No current standalone product or Admin releases for [!DNL Adobe Commerce Optimizer].
 
-No current standalone product or Admin release notes for [!DNL Adobe Commerce Optimizer].
+>[!BEGINSHADEBOX]
 
 ### API updates
 
@@ -28,7 +28,7 @@ No current standalone product or Admin release notes for [!DNL Adobe Commerce Op
 
 <!--v1.53-->
 
-Storefront product prices now display the correct currency code (for example., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.
+Storefront product prices now display the correct currency code (for example, USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.
 
 <!--DATA-7115-->
 
@@ -80,9 +80,9 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 ## March 2026
 
->[!BEGINSHADEBOX]
+[!DNL Adobe Commerce Optimizer] had no standalone product or Admin releases this month.
 
-[!DNL Adobe Commerce Optimizer] had no standalone product or Admin release notes this month.
+>[!BEGINSHADEBOX]
 
 ### API updates
 
@@ -128,9 +128,9 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 ## January 2026
 
->[!BEGINSHADEBOX]
+[!DNL Adobe Commerce Optimizer] had no standalone product or Admin releases this month.
 
-[!DNL Adobe Commerce Optimizer] had no standalone product or Admin release notes this month.
+>[!BEGINSHADEBOX]
 
 ### API updates
 
@@ -138,7 +138,7 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 **Release date**: January 19, 2026
 
-* **Richer categories support with the REST API** — When using the [Categories API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories), you can now include optional `metaTags`, `images`, and `description` values in addition to `families` to provide more detailed and visually engaging information for product categories. [Categories operations](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories) now support optional `metaTags`, `images`, and `description` fields.
+* **Richer categories support with the REST API** — When using the [Categories API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories), you can now include optional `metaTags`, `images`, and `description` values in addition to `families` to provide more detailed and visually engaging information for product categories.
 
 {{aco-release}}
 
@@ -164,9 +164,9 @@ Merchandisers can now use [Catalog layers](./setup/catalog-layer.md) to overlay 
 
 ## November 2025
 
->[!BEGINSHADEBOX]
+[!DNL Adobe Commerce Optimizer] had no standalone product or Admin releases this month.
 
-[!DNL Adobe Commerce Optimizer] had no standalone product or Admin release notes this month.
+>[!BEGINSHADEBOX]
 
 ### API updates
 
@@ -239,9 +239,9 @@ The following API updates were released to support Adobe Commerce Optimizer Merc
 
 ## September 2025
 
->[!BEGINSHADEBOX]
+[!DNL Adobe Commerce Optimizer] had no standalone product or Admin releases this month.
 
-[!DNL Adobe Commerce Optimizer] had no standalone product or Admin release notes this month.
+>[!BEGINSHADEBOX]
 
 ### API updates
 
