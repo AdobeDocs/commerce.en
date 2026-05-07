@@ -1,553 +1,129 @@
-# What's new template
+# SaaS Data Export Log Code Reference
 
-## What's new
+## Log code details
 
-This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
+<!--
+Source of truth: https://github.com/magento-commerce/commerce-data-export (docs/log-codes.md)
+When log codes, messages, or log levels change in that repository, update this page to match.
+Only columns retained here: Log Code, Message, Level. File paths are intentionally omitted.
+-->
 
-### April 30, 2026
+**Log code format:** `CDE<group_id>-<log_id>` (e.g., `CDE01-02`)
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Expanded the <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector overview</a> with key benefits, end-to-end architecture (new diagram), clearer scope mapping, typical setup and sync workflows, supported scenarios, and prerequisites or responsibilities so teams can assess and operate the integration more easily.</p>
-</td>
-      <td>
-        Feedback, major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+**Sources:** `commerce-data-export`, `commerce-data-export-ee`, `saas-export`
 
-### April 27, 2026
+Codes are assigned to `error`, `warning` and `critical` level log messages only, `info`, `notice`, and `debug` level messages are excluded.
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added an <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview">observability</a> page for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Feedback, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app">Manage your app</a> with how to find applications in the Admin (search, Status, and Extensibility patterns filters) and the Acquire App path to Adobe Exchange, with links from the <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">App Management overview</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">Install and access App Management</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added Production <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+## Group 01 - Data Collection Phase
 
-### April 24, 2026
+Log codes related to errors or warnings that occur while collecting data from source entities, typically within data providers.
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+- Affected entities might be processed with partial data or skipped entirely if an error occurs. See the log message for details.
 
-### April 20, 2026
+- Warnings can indicate incorrect integration with the Data Export extension by third-party modules; however, sync operations typically continue.
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Clarified where to monitor SaaS data export and synchronization—the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Data Management dashboard</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Data Feed Sync Status</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer Data Sync</a>.</p>
-</td>
-      <td>
-        Feedback, technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+| Log Code | Level   | Message                                                                                                                            | File Path                                                                                                |
+|----------|---------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| CDE01-01 | error   | `CDE01-01 Failed to add stock info to "ac_inventory" attribute for ids "{ids}". Error: {exception_message}`                        | `commerce-data-export/ExtraProductAttributes/Provider/AdvancedInventoryProvider.php:69`                  |
+| CDE01-02 | warning | `CDE01-02 Field "{field}" is missing in row {row_data}`                                                                            | `commerce-data-export/ExtraProductAttributes/Provider/AdvancedInventoryProvider.php:101`                 |
+| CDE01-03 | warning | `CDE01-03 Invalid field "{field}" requested from inventory config {config_data}`                                                   | `commerce-data-export/ExtraProductAttributes/Provider/AdvancedInventoryProvider.php:146`                 |
+| CDE01-04 | error   | `CDE01-04 Was not able to add data to "ac_attribute_set" attribute for ids "{ids}". Error: {exception_message}`                    | `commerce-data-export/ExtraProductAttributes/Provider/AttributeSetProvider.php:55`                       |
+| CDE01-05 | error   | `CDE01-05 Unable to sync feed "{feed}" for ids "{ids}". Affected data provider: "{provider}". Error: {exception_message}`          | `commerce-data-export/DataExporter/Export/Processor.php:94`                                              |
+| CDE01-06 | error   | `CDE01-06 Unable to sync feed "{feed}" for ids "{ids}". Error: {exception_message}`                                                | `commerce-data-export/DataExporter/Export/Processor.php:127`                                             |
+| CDE01-07 | error   | `CDE01-07 Source entity id is null. Item sync was skip for feed "{feed}". field: "{field}", item: {item}`                          | `commerce-data-export/DataExporter/Model/Indexer/DataSerializer.php:123`                                 |
+| CDE01-08 | error   | `CDE01-08 Cannot collect "inStock" for products "{product_ids}": no sales channel data for stores "{store_view_codes}"`            | `commerce-data-export/CatalogInventoryDataExporter/Model/Query/InventoryData.php:125`                    |
+| CDE01-09 | error   | `CDE01-09 Cannot get status attribute. Product variants ignore stock status. Error: {exception_message}`                           | `commerce-data-export/ConfigurableProductDataExporter/Model/Provider/Product/Options.php:434`            |
+| CDE01-10 | error   | `CDE01-10 Unable to retrieve gift card product options for products "{values}". Error: {exception_message}`                        | `commerce-data-export-ee/GiftCardProductDataExporter/Model/Provider/Product/Options.php:148`             |
+| CDE01-11 | error   | `CDE01-11 Unable to retrieve gift card shopper input options for products "{values}". Error: {exception_message}`                  | `commerce-data-export-ee/GiftCardProductDataExporter/Model/Provider/Product/ShopperInputOptions.php:119` |
+| CDE01-12 | warning | `CDE01-12 Catalog Permissions: Global Configuration path was not found for path {path}. {config_dump}`                             | `commerce-data-export-ee/CategoryPermissionDataExporter/Model/Provider/ConfigurationProvider.php:183`    |
+| CDE01-13 | error   | `CDE01-13 Catalog Permissions: wrong state in global config. item: {item}, config: {config}`                                       | `commerce-data-export-ee/CategoryPermissionDataExporter/Model/Provider/ConfigurationProvider.php:245`    |
+| CDE01-14 | error   | `CDE01-14 Failed to assign UUIDs for type: {type}, ids: {ids}`                                                                     | `commerce-data-export/DataExporter/Uuid/UuidManager.php:90`                                              |
+| CDE01-15 | error   | `CDE01-15 Failed to assign UUIDs for type: {type}, ids: {ids}. duplicates: {duplicates}`                                           | `commerce-data-export/DataExporter/Uuid/UuidManager.php:106`                                             |
+| CDE01-16 | error   | `CDE01-16 "{feed_name}" feed sync error: cannot build identifier for "{field}". Item skipped: {item}`                              | `commerce-data-export/DataExporter/Model/FeedHashBuilder.php:82`                                         |
+| CDE01-17 | warning | `CDE01-17 Failed to create attribute "{attribute_code}". Will be retried on next sync. Error: {message}`                           | `commerce-data-export/CatalogDataExporter/Service/SystemAttributeRegistrar.php:182`                      |
+| CDE01-18 | warning | `CDE01-18 Error on getting datetime for catalog price rule fetch. Using system time. website: "{website_id}", store: "{store_id}"` | `commerce-data-export/ProductPriceDataExporter/Model/Query/DateWebsiteProvider.php:75`                   |
+| CDE01-19 | warning | `CDE01-19 GiftCard {sku} does not have shopper input options`                                                                      | `commerce-data-export-ee/GiftCardProductDataExporter/Plugin/GiftCardAsAttribute.php:102`                 |
+| CDE01-20 | warning | `CDE01-20 GiftCard {sku} doesn't have valid options: {options}`                                                                    | `commerce-data-export-ee/GiftCardProductDataExporter/Plugin/GiftCardAsAttribute.php:131`                 |
+| CDE01-21 | error   | `CDE01-21 Unable to resolve url_path for category {id} with path "{path}", url_key "{urk_key}", store "{store}"`                   | `commerce-data-export/CatalogDataExporter/Model/Provider/Categories.php:204`                             |
+| CDE01-22 | error   | `CDE01-22 Unable to resolve url_path for category{id} with path "{path}" for store view "{store}"`                                 | `commerce-data-export/CatalogDataExporter/Model/Provider/Product/CategoryData.php:96`                    |
 
-### April 16, 2026
+## Group 02 - Sending Data to SaaS Phase
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">release notes</a> for the second April Production release for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/db519e8b2f21ca0185e3423a671ff5a174259834">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+Log codes related to errors or warnings that occur while submitting feed data to SaaS endpoints.
 
-### April 14, 2026
+- Errors typically indicate failures during HTTP requests, response handling, or data validation that prevent data from being accepted.
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer] integrations Overview</a> topic describing how each available integration—Adobe Commerce Optimizer Connector, AEM Assets, AEM Sites Optimizer, and Salesforce Commerce Connector—fits within Adobe Commerce Optimizer, with links to setup and configuration guides.</p>
-</td>
-      <td>
-        Feedback, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41c8bfe8f15b1988f574fe589ba6e27bb1839ba8">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Documented <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration v1.3.5</a> and corrected <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Custom automatic matching</a> API request fields (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cd7a332dd09840aabcc0efae081ba0a713506897">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+- Warnings usually indicate transient conditions (such as rate limiting or server errors) where requests are retried automatically.
 
-### April 9, 2026
+| Log Code  | Level   | Message | File Path |
+|-----------|---------|---------|-----------|
+| CDE02-01 | error   | `CDE02-01 Application error on sending data to SaaS for feed "{feed_name}". Error: {error_message}` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:261` |
+| CDE02-02 | error   | `CDE02-02 Unexpected error on sending data to SaaS for feed "{feed_name}". Error: {error_message}` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:280` |
+| CDE02-03 | warning | `CDE02-03 Cannot parse the API response because the request was not successful.` | `saas-export/SaaSCommon/Model/Http/ResponseParser.php:81` |
+| CDE02-04 | error   | `CDE02-04 Cannot obtain feed metadata for feed name "{feed_name}". Sync terminated. Error: {error_message}` | `saas-export/SaaSCommon/Cron/SubmitFeed.php:206` |
+| CDE02-05 | error   | `CDE02-05 Failed to submit feed batch for feed {feed_name}. Error: {error_message}` | `saas-export/SaaSCommon/Cron/SubmitFeed.php:310` |
+| CDE02-06 | error   | `CDE02-06 Failed to retry feed items submission for feed {feed_name}. Error: {error_message}` | `saas-export/SaaSCommon/Cron/SubmitFeed.php:257` |
+| CDE02-07 | warning | `CDE02-07 Feed "{feed_name}" sync error: too many requests (HTTP 429). Request will be retried.` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:351` |
+| CDE02-08 | warning | `CDE02-08 Feed "{feed_name}" sync error: Server error (HTTP {http_status_code}). Request will be retried.` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:356` |
+| CDE02-09 | error   | `CDE02-09 Feed "{feed_name}" sync error: data validation failed. Check logs. Request will not be retried.` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:362` |
+| CDE02-10 | warning | `CDE02-10 Feed "{feed_name}" sync error: Client error (HTTP {http_status_code}). Request will be retried.` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:368` |
+| CDE02-11 | warning | `CDE02-11 Feed "{feed_name}" sync error: application-level error. Request will be retried.` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:374` |
+| CDE02-12 | error   | `CDE02-12 Feed "{feed_name}" sync error API request was not successful (status code: {status_code}).` | `saas-export/SaaSCommon/Model/Http/Command/SubmitFeed.php:379` |
+| CDE02-13 | warning | `CDE02-13 The zlib-ext is not loaded. Request body can't be compressed and will proceed with regular json` | `saas-export/SaaSCommon/Model/Http/Converter/Factory.php:96` |
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist">Launch checklist</a>, a reference for validating production [!DNL Adobe Commerce Optimizer] setup, storefront go-live, SEO, CDN, integrations, security, analytics, and testing before launch.</p>
-</td>
-      <td>
-        Feedback, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4846deb1c55d1df713d21c26563a288f1cb3e21b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+## Group 03 - Scheduling Sync on Entity Update
 
-### April 8, 2026
+Log codes related to errors or warnings that occur when scheduling or triggering synchronization in response to entity changes.
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">Category Merchandising</a> for Adobe Commerce Optimizer: using Category rules with intelligent ranking and manual actions on category pages.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4ec91f6a761ff78e1e66ae18125296c68053b3f1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+- Errors can prevent incremental synchronization from being scheduled and often require a full or partial resync to recover.
 
-### April 7, 2026
+- Warnings indicate that a sync operation was skipped or deferred due to unsupported input, missing identifiers, or configuration issues.
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added guidance around <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files">adding files to products</a> in Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+| Log Code  | Level    | Message | File Path |
+|-----------|----------|---------|-----------|
+| CDE03-01 | error    | `CDE03-01 Cannot schedule resync for feeds` | `commerce-data-export/DataExporter/Service/FeedItemsResyncScheduler.php:119` |
+| CDE03-02 | warning  | `CDE03-02 Skipping product feed update scheduling. Category path "{category_path}" is wrongly formatted` | `commerce-data-export/CatalogDataExporter/Plugin/Category/ScheduleProductUpdateOnCategoryChange.php:55` |
+| CDE03-03 | error    | `CDE03-03 Categories sync error on category "{category_id}" save. Run resync. Error: {error_message}` | `commerce-data-export/CatalogDataExporter/Plugin/Category/ReindexCategoryFeedOnSave.php:64` |
+| CDE03-04 | error    | `CDE03-04 Product sync scheduling error on url key change ({old_url_key} -> {new_url_key}). Run resync. Error: {error_message}` | `commerce-data-export/CatalogDataExporter/Plugin/Category/ResyncProductsOnCategoryChange.php:71` |
+| CDE03-05 | error    | `CDE03-05 Product sync scheduling error on category path change ({old_path} -> {new_path}). Run resync. Error: {error_message}` | `commerce-data-export/CatalogDataExporter/Plugin/Category/ResyncProductsOnCategoryChange.php:115` |
+| CDE03-06 | error    | `CDE03-06 Product sync scheduling error on attribute "{attribute_code}" deletion. Run full resync. Error: {error_message}` | `commerce-data-export/CatalogDataExporter/Plugin/Eav/Attribute/ProductAttributeDelete.php:102` |
+| CDE03-07 | warning  | `CDE03-07 Product sync scheduling error on inventory source save for SKUs: {product_skus}. Error: {error_message}` | `commerce-data-export/CatalogInventoryDataExporter/Model/Plugin/ScheduleProductUpdate.php:61` |
+| CDE03-08 | error    | `CDE03-08 Product variants sync scheduling error on product "{sku_or_id}" save. Run resync. Error: {error_message}` | `commerce-data-export/ProductVariantDataExporter/Plugin/ReindexVariantsAfterSave.php:76` |
+| CDE03-09 | warning  | `CDE03-09 The '{feed_name}' feed does not support partial resync by IDs, or an unsupported identifier type was specified.` | `saas-export/SaaSCommon/Model/ResyncManager.php:295` |
+| CDE03-10 | warning  | `CDE03-10 There are no {id_field}s found to reindex for provided identifiers list: {identifiers}` | `saas-export/SaaSCommon/Model/ResyncManager.php:313` |
+| CDE03-11 | error    | `CDE03-11 Categories Permissions feed sync scheduling error on category "{category_id_and_name}" delete. Error: {error_message}` | `commerce-data-export-ee/CategoryPermissionDataExporter/Plugin/MarkEntityAsDeletedOnCategoryRemove.php:86` |
+| CDE03-12 | warning  | `CDE03-12 Product Overrides sync failed. Marked indexer as invalid. Error: {error_message}` | `commerce-data-export-ee/ProductOverrideDataExporter/Plugin/Indexer/Category/TriggerFullResync.php:58` |
+| CDE03-13 | error    | `CDE03-13 Cannot invalidate indexers "{indexer_ids}" for event "{event_name}". Error: {error_message}` | `commerce-data-export/DataExporter/Service/IndexInvalidationManager.php:58` |
+| CDE03-14 | error    | `CDE03-14 Failed to read config values. Indexer invalidation for event "{event_name}" skipped. Error: {error_message}` | `commerce-data-export/CatalogDataExporter/Plugin/Index/InvalidateOnConfigChange.php:80` |
+| CDE03-15 | error    | `CDE03-15 Categories Permissions feed sync scheduling error on config save: {error_message}` | `commerce-data-export-ee/CategoryPermissionDataExporter/Plugin/InvalidateOnConfigChange.php:120` |
+| CDE03-16 | error    | `CDE03-16 Failed to reindex category permissions global configuration after full reindex: {error_message}` | `commerce-data-export-ee/CategoryPermissionDataExporter/Plugin/GlobalConfigurationReindex.php:73` |
+| CDE03-17 | critical | `CDE03-17 Failed to recreate product override view subscriptions on customer group save: {error_message}` | `commerce-data-export-ee/ProductOverrideDataExporter/Plugin/CreateViewAfterChangeCustomerGroup.php:61` |
+| CDE03-18 | critical | `CDE03-18 Failed to recreate product override view subscriptions on customer group delete: {error_message}` | `commerce-data-export-ee/ProductOverrideDataExporter/Plugin/CreateViewAfterChangeCustomerGroup.php:85` |
+| CDE03-19 | error    | `CDE03-19 Failed to remove product override view subscriptions during table maintenance: {error_message}` | `commerce-data-export-ee/ProductOverrideDataExporter/Plugin/CreateViewAfterTableMaintenance.php:69` |
+| CDE03-20 | error    | `CDE03-20 Failed to recreate product override view subscriptions after table maintenance: {error_message}` | `commerce-data-export-ee/ProductOverrideDataExporter/Plugin/CreateViewAfterTableMaintenance.php:93` |
 
-### April 2, 2026
+## Group 04 - General Errors Related to Indexation or Configuration
 
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">Recommendation filters</a> with Price and Product filter procedures, price-book–based final price behavior for filtering and displayed prices, and new screenshots for the Filter products UI.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d67df3c05f1202e361d0c8972d6f1bf7a5b8854">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+Log codes related to errors during the indexation process or due to misconfiguration.
 
-### April 1, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home">Payment Services Home</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting">Reporting</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard">Onboarding overview</a> with SaaS/ACCS screenshots and UI guidance (onboarding banner, Transactions-focused Home, Transactions grid).</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added April Production <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a28d4b467dc51f70509ab19dbdbaf2cd3f59a208">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 31, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updates the Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest sandbox deployment.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 27, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest Sandbox release information.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 25, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">Install and access App Management</a> with a Commerce webhooks section and a screenshot for webhook validation errors in the App Management dashboard.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">release notes</a> to move the March release # 2 to Production.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 23, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added a new automated installation for the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Tutorial Prerequisites</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a383e95e23291959f039390dfd3943bf98aa83ef">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 19, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Login as a Customer</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Gift Card Account REST Endpoints</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Email Triggering through REST</a> for Adobe Commerce as a Cloud Service.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Release Notes</a> with March 2026 - release # 2 release information.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 17, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions">Configure IMS user permissions for the AEM Assets Integration</a> to explain how to configure IMS and delivery-tier permissions to enable the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping) in the Admin.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 12, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets">Manage Commerce media assets</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match">Default automatic matching</a> with clearer navigation guidance for users configuring product assets in AEM Assets.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 11, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration release notes</a> with v1.3.4: support for Adobe Commerce 2.4.9-beta1 and PHP 8.5, and Domain mapping auto-population in the configuration UI.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 10, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service with the latest release to production environments.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added new <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">App Management</a> documentation guide to introduce App Management and how to associate, configure, and manage App Builder applications with your Commerce instance.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 6, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added storefront integration to the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">Ratings tutorial</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/pull/15">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 3, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published the <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
-</td>
-      <td>
-        Major update, new topic, technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated the Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest Sandbox release.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">commit</a></td>
-    </tr>
-  </tbody>
-</table>
+| Log Code  | Level   | Message | File Path |
+|-----------|---------|---------|-----------|
+| CDE04-02 | error   | `CDE04-02 Cannot set indexer to Update On Schedule mode for indexer {indexer_id}. Error: {message}` | `commerce-data-export/DataExporter/Setup/Recurring.php:84` |
+| CDE04-03 | warning | `CDE04-03 Partial sync failed for changelog "{changelog_name}". Should be retried. Error: {message}` | `commerce-data-export/DataExporter/Plugin/MviewUpdatePlugin.php:63` |
+| CDE04-04 | error   | `CDE04-04 Feed metadata does not contain indexer name. Check di.xml config` | `commerce-data-export/DataExporter/Service/FeedIndexerProvider.php:50` |
+| CDE04-05 | error   | `CDE04-05 Cannot load feed indexer for feed` | `commerce-data-export/DataExporter/Service/FeedIndexerProvider.php:60` |
+| CDE04-06 | error   | `CDE04-06 Failed to reset MView triggers for "{affected_views}" on index table switch. Run reindex. Error: {message}` | `commerce-data-export/CatalogDataExporter/Plugin/DDLTrigger/ResetTriggers.php:73` |
+| CDE04-07 | error   | `CDE04-07 Error on partial resync for feed "{feed_name}". Error: {message}` | `commerce-data-export/DataExporter/Model/Batch/FeedChangeLog/Generator.php:104` |
+| CDE04-08 | error   | `CDE04-08 Error retrying failed items sync for feed "{feed_name}". Error: {message}` | `commerce-data-export/DataExporter/Model/Batch/Feed/Generator.php:94` |
+| CDE04-09 | error   | `CDE04-09 Error on full resync for feed "{feed_name}". Error: {message}` | `commerce-data-export/DataExporter/Model/Batch/FeedSource/Generator.php:97` |
+| CDE04-10 | error   | `CDE04-10 Error during full sync. Message: "{message}". The following IDs were skipped: [{ids}]` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:172` |
+| CDE04-11 | warning | `CDE04-11 Feed "{feed_name}" sync failed. Resync will be run on next cron run. Error: {message}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:232` |
+| CDE04-12 | warning | `CDE04-12 Partial sync failed for feed "{feed_name}". Retry has been scheduled. Error: {message}` | `commerce-data-export/DataExporter/Model/Indexer/ViewMaterializer.php:170` |
+| CDE04-13 | error   | `CDE04-13 Sync completed, but failed to persist status to feed table for "{feed_name}" feed. Error: {message}` | `commerce-data-export/DataExporter/Model/Indexer/FeedUpdater.php:125` |
+| CDE04-14 | error   | `CDE04-14 Cannot delete feed items for feed "{feed_name}" for ids: "{ids}". Error: {message}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdateDelete.php:98` |
+| CDE04-15 | warning | `CDE04-15 Failed to serialize metadata after sync. Error: {message}` | `commerce-data-export/DataExporter/Model/FeedExportStatus.php:93` |
+| CDE04-16 | warning | `CDE04-16 Batch table insert query "{query}" returned unexpected result. Expected: {expected_class}, Actual: {actual_type}` | `commerce-data-export/DataExporter/Model/Batch/BatchTable.php:130` |
+| CDE04-17 | warning | `CDE04-17 Failed to check indexer type when setting schedule mode: {message}` | `commerce-data-export/DataExporter/Plugin/ForceExporterIndexerModeOnSchedule.php:59` |
+| CDE04-18 | warning | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` | `commerce-data-export/CatalogDataExporter/Plugin/FilterChangeLogTable.php:43` |
+| CDE04-19 | warning | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:439` |
+| CDE04-20 | warning | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexer.php:204` |
