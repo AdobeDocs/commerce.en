@@ -10,6 +10,10 @@ feature: Payments, Checkout, Orders, Paas, Saas
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](reporting.md), orders, and payments.
 
+>[!NOTE]
+>
+>The Order payment status views below are available from [!DNL Payment Services] **[!UICONTROL Home]** on Adobe Commerce on cloud and on-premises. They are not shown in the [!DNL Payment Services] dashboard for [!DNL Adobe Commerce as a Cloud Service] or [!DNL Adobe Commerce Optimizer]; see [[!DNL Payment Services] Home](payments-home.md).
+
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
 * **[Order payment status visualization view](#order-payment-status-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated payment statuses per day from the Order payment status report view
