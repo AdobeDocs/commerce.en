@@ -42,7 +42,7 @@ Support is provided for the latest version. Release notes for older versions are
 **Release date**: May 4, 2026
 <!-- v1.53 -->
 
-![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for example., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
+![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for example, USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
 
 ### April 2026
 
@@ -227,6 +227,8 @@ Applies to:
 
 ![New](../assets/new.svg) **Gift card product types**–Catalog Storefront Service now supports product attributes as JSON objects or arrays, enabling flexible management of complex types such as gift cards.<!--DATA-6573-->
 
++++Previous versions
+
 ### June 2025
 
 **Release date**: June 20, 2025
@@ -248,8 +250,6 @@ Applies to:
 ![New](../assets/new.svg) **Event formats & observability**—Streamlined payloads, enhanced monitoring, improved variant event data.<!--DATA-6332, DATA-6402, -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6404, DATA-6410, -->
-
-+++Previous versions
 
 **Release date**: June 13, 2025
 <!-- v1.35 -->
@@ -578,7 +578,7 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 - For Adobe Commerce as a Cloud Service customers, the latest version is installed in your environment.
 
-- For Adobe Commerce on cloud on-premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
+- For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
 
 ### v3.3.0 release
 
@@ -629,7 +629,7 @@ Whenever you use Composer to upgrade the `magento/catalog-service`, the installe
 
 ## Related documentation
 
-- For projects deployed on **Adobe Commerce on cloud, on-premises, or Adobe Commerce as a Cloud Service, see the following documentation:
+- For projects deployed on **Adobe Commerce on cloud, on premises, or Adobe Commerce as a Cloud Service, see the following documentation:
 
   - [Catalog Service Guide](overview.md)
   - [Catalog Service GraphQL API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
