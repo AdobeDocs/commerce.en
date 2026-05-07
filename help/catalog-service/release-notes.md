@@ -173,7 +173,6 @@ Applies to:
 - **Complex products**: `priceRange.minimum.tiers` and `priceRange.maximum.tiers` use the same rule when building the price range.
 
 **Release date**: September 2, 2025
-
 <!-- v1.41 -->
 
 ![Fix](../assets/fix.svg) **Improved error handling for missing price information**—When price data is not yet received, the API returns `null` for the price field instead of throwing an error, allowing clients to handle missing data gracefully.<!--DATA-6612-->
@@ -267,10 +266,13 @@ Applies to:
 
 ### April 2025
 
-**Release date**: April 29, 2025
-<!-- v1.33 -->
+**Release date**: April 8, 2025
+<!-- v1.34 -->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements. Infrastructure now supports extremely large catalogs (up to ~440 million SKUs) without impacting existing workloads.
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-5732-->
+
+<!-- v1.33 -->
+![Fix](../assets/fix.svg) Infrastructure now supports extremely large catalogs (up to ~440 million SKUs) without impacting existing workloads.
 
 ### March 2025
 
@@ -279,12 +281,8 @@ Applies to:
 
 ![Fix](../assets/fix.svg) Attributes without roles are no longer indexed by default for the composable catalog, improving indexing time and reducing storage. Legacy behavior can be re-enabled via a feature flag.
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability. <!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
-
-**Release date**: March 23, 2025
-<!-- v1.34 -->
-
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-5732-->
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.
+<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
 
 ### February 2025
 
