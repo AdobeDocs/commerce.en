@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Optimizer Release Notes
-description: Monthly release information for [!DNL Adobe Commerce Optimizer], including updates to the data ingestion REST API, GraphQL API for to retrieve storefront catalog data.
+description: Monthly release information for [!DNL Adobe Commerce Optimizer], including updates to REST API data ingestion and GraphQL API catalog data retrieval services.
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
@@ -11,7 +11,7 @@ exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 
 The following release notes contain updates to [!DNL Adobe Commerce Optimizer] including:
 
-* New features and improvements to the [Adobe Commerce Optimizer Admin  interface](overview.md#quick-tour).
+* New features and improvements to [Adobe Commerce Optimizer Studio](overview.md#quick-tour).
 * Updates to the [data ingestion REST API](https://developer.adobe.com/commerce/services/reference/rest/) and [GraphQL API for storefront catalog data retrieval](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
