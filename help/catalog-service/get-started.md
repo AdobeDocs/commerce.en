@@ -65,3 +65,7 @@ The Commerce Admin provides tools for monitoring and troubleshooting data export
 - **[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Monitor data synchronization between the [!DNL Catalog Service] and your Adobe Commerce instance. The dashboard shows overall sync status and lists all synced products.
 
 -  **[Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Track the export status of all data feeds to ensure data consistency. This page alerts you to issues that occur during the export process so that you can resolve them quickly. A “Success” status indicates that data has been exported and will be available in connected Commerce services when the data sync process completes.
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
