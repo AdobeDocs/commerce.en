@@ -80,5 +80,5 @@ To hide or deprioritize out-of-stock products across the catalog, use the invent
 
 >[!MORELIKETHIS]
 >
-> - [Search Merchandising rules](/rules.md)
+> - [Search Merchandising rules](rules.md)
 > - [Configure Inventory Management global options](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
