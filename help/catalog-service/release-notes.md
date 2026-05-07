@@ -39,25 +39,20 @@ Support is provided for the latest version. Release notes for older versions are
 
 ### May 2026
 
-No current changes fo
-
 **Release date**: May 4, 2026
-<!-- v1.53-->
+<!-- v1.53 -->
 
-![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for examle., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
-
+![Fix](../assets/fix.svg) Storefront product prices now display the correct currency code (for example., USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices. This update ensures consistent and accurate price rendering across the storefront.<!--DATA-7115-->
 
 ### April 2026
 
 **Release date**: April 29, 2026
-
-<!--v1.48-->
+<!--v1.52-->
 
 ![New](../assets/new.svg) Enforced limit of maximum 100 SKUs per request for Adobe Commerce Optimizer and Adobe Commerce as a Cloud Service
 clients as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Release date**: April 17, 2026
-
 <!--v1.51-->
 
 ![New](../assets/new.svg) Added a new `searchCategory` GraphQL query that enables clients to search categories by name with paginated results. The query accepts a required `searchTerm` (minimum 3 characters) and optional `family`, `pageSize`, and `currentPage` parameters. Results include matching `CategoryTreeView` objects with full category metadata, a `totalCount`, and `pageInfo` for pagination. <!--COMOPT-1819-->
@@ -66,34 +61,23 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 
 ### March 2026
 
-
-<!--v1.49-->
-
-![New](../assets/new.svg) Added support to compute and return the price range for dynamic bundles.
-
-<!--DATA-7115-->
-
-
-### December 2025
-
 **Release date**: March 24, 2026
 <!--v1.49-->
 
 ![New](../assets/new.svg) Added support to compute and return the price range for dynamic bundles.
-
 <!--DATA-7115-->
 
-**Release date**: December 11, 2025
-**Release date**: December 11, 2025
+### December 2025
 
+**Release date**: December 11, 2025
 <!-- v1.46 -->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6852, DATA-6864-->
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. 
+<!--DATA-6852, DATA-6864-->
 
 ### November 2025
 
 **Release date**: November 17, 2025
-
 <!-- v1.45 -->
 
 ![New](../assets/new.svg) **Attribute Filtering by Name**–The `productSearch` GraphQL query now supports filtering product attributes with the `names` field. <!--DATA-6831--> With this filter, you can:
@@ -136,7 +120,6 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 >To retrieve all attributes without filtering, omit the `names` argument or provide an empty array.
 
 **Release date**: November 6, 2025
-
 <!-- v1.44 -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. <!--DATA-6852, DATA-6864-->
@@ -148,7 +131,6 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 ### September 2025
 
 **Release date**: September 8, 2025
-
 <!-- v1.42 -->
 
 ![New](../assets/new.svg) **Added Tier Pricing support** to query volume pricing:<!--DATA-6643-->
@@ -201,13 +183,11 @@ Applies to:
 ### July 2025
 
 **Release date**: July 30, 2025
-
 <!-- v1.40 -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6619-->
 
 **Release date**: July 24, 2025
-
 <!-- v1.39 -->
 
 ![New](../assets/new.svg) **Retrieve recommendation units by unit ID**–New GraphQL endpoint `recommendationsByUnitIds` retrieves recommendation units by their unique ID for more flexible, targeted access.
@@ -244,7 +224,6 @@ Applies to:
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6316-->
 
 **Release date**: July 15, 2025
-
 <!-- v1.38 -->
 
 ![New](../assets/new.svg) **Gift card product types**–Catalog Storefront Service now supports product attributes as JSON objects or arrays, enabling flexible management of complex types such as gift cards.<!--DATA-6573-->
@@ -252,7 +231,6 @@ Applies to:
 ### June 2025
 
 **Release date**: June 20, 2025
-
 <!-- v1.37 -->
 
 ![New](../assets/new.svg) **Hierarchical price book configuration**—Accurate price ranges for parent-child price books. Calculations respect hierarchy and inherited rules; reduces pricing errors when multiple price books are linked. Adobe Commerce Optimizer only. See [Price Books](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
@@ -260,7 +238,6 @@ Applies to:
 ![New](../assets/new.svg) **Case-insensitive keys**—Key lookups in queries are now case-insensitive, reducing errors from key casing. <!--DATA-6494, DCAT-2495-->
 
 **Release date**: June 20, 2025
-
 <!-- v1.36 -->
 
 ![New](../assets/new.svg) **Public IO Events for Catalog Storefront**—Added public IO events for real-time integration and observability (CSS and EDS).<!--DATA-6329-->
@@ -273,10 +250,9 @@ Applies to:
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6404, DATA-6410, -->
 
-+++ Previous versions
++++Previous versions
 
 **Release date**: June 13, 2025
-
 <!-- v1.35 -->
 
 ![New](../assets/new.svg) **Retrieve uncached data**–Enable the `Magento-Is-Preview` header to pass uncached data from the catalog endpoint to the Search Service.<!--DATA-6345-->
@@ -292,7 +268,6 @@ Applies to:
 ### April 2025
 
 **Release date**: April 29, 2025
-
 <!-- v1.33 -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements. Infrastructure now supports extremely large catalogs (up to ~440 million SKUs) without impacting existing workloads.
@@ -300,7 +275,6 @@ Applies to:
 ### March 2025
 
 **Release date**: March 28, 2025
-
 <!-- v1.32 -->
 
 ![Fix](../assets/fix.svg) Attributes without roles are no longer indexed by default for the composable catalog, improving indexing time and reducing storage. Legacy behavior can be re-enabled via a feature flag.
@@ -308,7 +282,6 @@ Applies to:
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability. <!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
 
 **Release date**: March 23, 2025
-
 <!-- v1.34 -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-5732-->
@@ -316,7 +289,6 @@ Applies to:
 ### February 2025
 
 **Release date**: February 18, 2025
-
 <!-- v1.31 -->
 
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6389, DATA-6367, DATA-6373-->
@@ -324,7 +296,6 @@ Applies to:
 ### December 2024
 
 **Release date**: December 9, 2024
-
 <!-- v1.30 -->
 
 Major release: [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts, header management, and product data handling.
@@ -342,7 +313,6 @@ Major release: [composable catalog data model](https://developer.adobe.com/comme
 ![Fix](../assets/fix.svg) Bundle product options now display only enabled products.<!--DATA-6347-->
 
 **Release date**: December 9, 2024
-
 <!-- v1.29 -->
 
 ![New](../assets/new.svg) **Image ordering in product queries**—Product images in the GraphQL `images` field now follow catalog export `sortOrder` for consistent storefront and API behavior.<!--DATA-6258-->
@@ -350,51 +320,50 @@ Major release: [composable catalog data model](https://developer.adobe.com/comme
 ![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6619-->
 
 **Release date**: December 2024
-
 <!-- v1.28 -->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.
+<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
 
 ### October 2024
 
 **Release date**: October 22, 2024
-
 <!-- v1.26 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) GraphQL schema now includes `lastModifiedAt` in product information for accurate sitemaps and search-engine reindexing (e.g., Google). <!--DATA-6209-->
+![New](../assets/new.svg) GraphQL schema now includes `lastModifiedAt` in product information for accurate sitemaps and search-engine reindexing (e.g., Google).
+<!--DATA-6209-->
 
 ### September 2024
 
 **Release date**: September 26, 2024
-
 <!-- v1.27 -->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.<!--DATA-6243-->
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance security, performance, and stability.
+<!--DATA-6243-->
 
 ### August 2024
 
 **Release date**: August 22, 2024
-
 <!-- v1.23 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Product information can now be retrieved without product override (prices) data. Previously, these queries returned: `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+![Fix](../assets/fix.svg) Product information can now be retrieved without product override (prices) data. Previously, these queries returned: `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
+<!--DATA-6121-->
 
 **Release date**: August 13, 2024
-
 <!-- v1.22 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
+![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/).
+<!--DATA-6067-->
 
 ### May 2024
 
 **Release date**: May 23, 2024
-
 <!-- v1.19 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -405,7 +374,6 @@ Major release: [composable catalog data model](https://developer.adobe.com/comme
 <!--DATA-5033-->
 
 ![Fix](../assets/fix.svg) Added support for product prices with up to 16 digits and 4 decimal places. Resync from the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) or [CLI](../data-export/data-export-cli-commands.md) to apply updates.
-
 <!--DATA-5033-->
 
 #### Known limitations
@@ -427,7 +395,6 @@ For details and examples, see [Catalog Service and API Mesh](mesh.md).
 ### April 2024
 
 **Release date**: April 11, 2024
-
 <!-- v1.18 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -439,7 +406,6 @@ For details and examples, see [Catalog Service and API Mesh](mesh.md).
 ### February 2024
 
 **Release date**: February 22, 2024
-
 <!-- v1.17 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -447,7 +413,6 @@ For details and examples, see [Catalog Service and API Mesh](mesh.md).
 ![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) is now available for data streams (Product Recommendations, Live Search, Catalog Service). Requires `catalog-service` metapackage v3.1.0+.
 
 **Release date**: February 13, 2024
-
 <!-- v1.16 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -471,7 +436,6 @@ Use API Mesh and the Core GraphQL API for:
 ### October 2023
 
 **Release date**: October 12, 2023
-
 <!-- v1.13 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -483,7 +447,6 @@ Use API Mesh and the Core GraphQL API for:
 ### September 2023
 
 **Release date**: September 19, 2023
-
 <!-- v1.12 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -494,7 +457,6 @@ Use API Mesh and the Core GraphQL API for:
 ### July 2023
 
 **Release date**: July 18, 2023
-
 <!-- v1.11 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -504,7 +466,6 @@ Use API Mesh and the Core GraphQL API for:
 ### June 2023
 
 **Release date**: June 27, 2023
-
 <!-- v1.10 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -514,7 +475,6 @@ Use API Mesh and the Core GraphQL API for:
 ### April 2023
 
 **Release date**: April 12, 2023
-
 <!-- v1.7 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -525,7 +485,6 @@ Use API Mesh and the Core GraphQL API for:
 ### March 2023
 
 **Release date**: March 28, 2023
-
 <!-- v1.6 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -534,7 +493,6 @@ Use API Mesh and the Core GraphQL API for:
 ![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
 
 **Release date**: March 6, 2023
-
 <!-- v1.5 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
@@ -545,7 +503,6 @@ Use API Mesh and the Core GraphQL API for:
 ### February 2023
 
 **Release date**: February 7, 2023
-
 <!-- v1.4 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
@@ -556,7 +513,6 @@ Use API Mesh and the Core GraphQL API for:
 ### January 2023
 
 **Release date**: January 17, 2023
-
 <!-- v1.3 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
@@ -569,7 +525,6 @@ Use API Mesh and the Core GraphQL API for:
 ### November 2022
 
 **Release date**: November 18, 2022
-
 <!-- v1.1 -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
@@ -603,7 +558,6 @@ Use API Mesh and the Core GraphQL API for:
 ### August 2022
 
 **Release date**: August 9, 2022
-
 <!-- Beta -->
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
