@@ -4,7 +4,6 @@ description: Learn how to use badges to identify documentation that applies to d
 feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
-hidefromtoc: yes
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
 ---
 # Adobe Commerce product solutions
