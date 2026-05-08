@@ -21,6 +21,47 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.24 Release
+
+_May 5, 2026_
+
+![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the Log Codes Reference.
+<!--MDEE-1276-->
+
+![Fix](../assets/fix.svg) **Automatic resync when attribute option labels change**–Changing product attribute option labels for a store view (including multiselect attributes) now queues the affected products for export again so that Live Search, Product Recommendations, Catalog Service, and other connected Commerce services display the updated facet and filter labels in shopper views. Previously, label-only edits could leave SaaS catalogs showing stale wording until a broader product change triggered a sync.
+<!--MDEE-1337-->
+
+![Fix](../assets/fix.svg) **Reliable status and visibility when default scope data is missing**–Product export handles gaps on the default Admin scope so connected services get correct enabled, disabled, and visibility behavior. Store-specific values you set still take precedence.
+
+<!--MDEE-1341-->
+
+![Fix](../assets/fix.svg) **Catalog permissions respected across multiple store groups**–On complex store setups, allowed products stay discoverable in Live Search and related experiences for the right customer groups instead of being hidden when permission rules conflict.
+
+<!--MDEE-1334-->
+
+![Fix](../assets/fix.svg) **Clearer warning before a full feed reset**–Using `saas:resync` with the `--cleanup-feed` option now explains that local export state is reset and SaaS can fall out of sync with your catalog. Use this option only for full environment rebuilds, not routine troubleshooting.
+
+
+### 103.4.23 Release
+
+_April 20, 2026_
+
+![Fix](../assets/fix.svg) **Resolved SQL Errors When Deleting Static EAV Attributes**–The ProductAttributeDelete plugin no longer generates SQL errors when deleting static EAV attributes, ensuring smoother attribute management and improved system reliability. <!--MDEE-1336-->
+![Fix](../assets/fix.svg) **Fixed category path export after category moves**– Ensures that the categories feed correctly updates the `url_path` when a category is moved to a different parent, preventing missing or stale category paths in connected Commerce services.<!--MDEE-1331-->
+![Fix](../assets/fix.svg) **Improved scheduled category updates for related products**–Scheduled updates to category URLs now affect only the intended categories, preserving data integrity and preventing unintended changes to related products. Now, scheduled category URL changes are correctly reflected in exported data, keeping storefront navigation and linked services aligned with your current catalog.
+<!--MDEE-1321-->
+
+### 103.4.22 Release
+
+_April 13, 2026_
+
+![Fix](../assets/fix.svg) **Improved data synchronization**
+
+- Fixed an issue where deleted products were not properly removed from the connected Commerce services if the export service was unavailable during deletion. Retry and resync operations now ensure deleted products are correctly reflected in SaaS. <!--MDEE-1319-->
+- Catalog entities (products and categories) can now be exported to connected Commerce services even if attribute values are missing for the admin store view. This improves compatibility with third-party extensions and reduces export errors due to missing default values. <!--MDEE-1333-->
+  
+![Fix](../assets/fix.svg) Resolved an error on the Data Feed Sync Status page that could occur when feed records contained unexpected or missing data. The system now gracefully handles such cases, improving stability and preventing crashes. If you are using the Adobe Commerce Optimizer Connector to sync data from Adobe Commerce to Adobe Commerce Optimizer, update to [ACO connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) or later for the fix.<!--MDEE-1327-->
+
 ### 103.4.21 Release
 
 _April 2, 2026_

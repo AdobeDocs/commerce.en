@@ -1,12 +1,14 @@
 ---
 solution: Commerce
 solution-title: Commerce
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce.en
-index: y
+index: true
 role: User
 feature-set: Commerce
 ---

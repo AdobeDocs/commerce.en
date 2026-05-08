@@ -8,6 +8,8 @@ exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 
 After the [!DNL Catalog Service] is enabled, you can access the service and use it to retrieve catalog data, such as product and category information, from your Adobe Commerce instance. The service is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries.
 
+{{aco-merchandising-services}}
+
 ## Access the service
 
 The [!DNL Catalog Service] is available as a GraphQL API that you can access from the Commerce Admin or from any frontend application that supports GraphQL queries. The service is available in both SaaS and PaaS environments.
@@ -56,6 +58,14 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 See the [[!DNL Catalog Service] and API Mesh](mesh.md) topic for installation and configuration details.
 
-## Use the Data Management Dashboard
+## Monitor and troubleshoot data export
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor data synchronization between the [!DNL Catalog Service] and your Adobe Commerce instance. The dashboard provides insights into the data transfer process, including the status of data exports and a list of synced products.
+The Commerce Admin provides tools for monitoring and troubleshooting data export from Commerce to connected services:
+
+- **[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Monitor data synchronization between the [!DNL Catalog Service] and your Adobe Commerce instance. The dashboard shows overall sync status and lists all synced products.
+
+-  **[Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Track the export status of all data feeds to ensure data consistency. This page alerts you to issues that occur during the export process so that you can resolve them quickly. A “Success” status indicates that data has been exported and will be available in connected Commerce services when the data sync process completes.
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.

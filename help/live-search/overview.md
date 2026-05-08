@@ -59,6 +59,15 @@ When a search is made, [!DNL Live Search] runs a non-fuzzy search which does not
 
 In addition to the fuzzy search logic, transpositions are also accounted for, that is, where two adjacent characters in a word are swapped, for example "teh" instead of "the". Note that these edit limits are per word and not the phrase as a whole.
 
+### Filters versus facets
+
+[!DNL Live Search] can filter results by any attribute that is indexed as filterable. A facet is simply a filterable attribute that has been configured to show as a shopper-facing filter in the storefront (for example, Brand, Color, Price).
+
+Some internal fields—such as `inStock`—are filterable but not facetable:
+
+- They can be used in API filters (for example to hide out-of-stock products).
+- They do not appear in the [!UICONTROL Add Facet] dialog and cannot be displayed as shopper-facing facets.
+
 ### Filtered search with facets
 
 Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly used facets pinned to the top of the list.
@@ -91,4 +100,12 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 
 If you do not submit a search query for the catalog data in your testing environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any search query. Catalog data in your production environment is not affected by this policy.
 
+### Inactive testing environment
+
 To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.
+
+### Empty catalog
+
+If your environment has an empty catalog 45 days after being created, the catalog data is set to hibernation mode and no data is returned for any search query. This inludes both production and testing environments.
+
+To re-activate the catalog data in your environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your environment should be restored within couple of hours.
