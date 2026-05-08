@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.3.6
+
+_May 11, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1268 --> When images or assets are imported from AEM into a Commerce product media gallery, alt text is now carried over as part of the sync. Alt text can be set per store view, allowing localized accessibility labels to flow automatically from AEM into Commerce without any manual intervention.
+
 ## v1.3.5
 
 _April 1, 2026_
