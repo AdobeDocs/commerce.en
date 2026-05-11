@@ -36,6 +36,7 @@ feature: Services, Search
       - [Add Rules](rules-add.md)
       - [Manage Rules](rules-manage.md)
    - [Category Merchandising](category-merch.md)
+   - [Manage out-of-stock products](manage-out-of-stock-products.md)
    - [Indexing](indexing.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)

@@ -1,7 +1,22 @@
 ---
-title: '[!DNL Storefront Popover]'
+title: "[!DNL Storefront Popover]"
 description: The [!DNL Live Search storefront popover] dynamically returns suggested products and thumbnails.
 exl-id: 240a5333-15e9-4178-ba3c-ae6c62c2238c
+TQID: https://experienceleague.adobe.com/nGvwmtPuwoiFgCxrK9shUPS-FSKr-ZxWNUf-qDWjOdQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # [!DNL Storefront Popover]
 

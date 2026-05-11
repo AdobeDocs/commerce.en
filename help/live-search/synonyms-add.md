@@ -2,6 +2,16 @@
 title: Add Synonyms
 description: Add [!DNL Live Search] synonyms to improve response to search requests.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
 ---
 # Add Synonyms
 

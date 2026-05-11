@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
+title: "[!DNL Adobe Commerce as a Cloud Service] release notes"
 description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
@@ -7,6 +7,40 @@ role: Admin, Developer, User, Leader
 level: Beginner
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
+TQID: https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Release notes
 
@@ -16,11 +50,49 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 - release #3 {#latest}
+## May 2026 - release #1 {#latest}
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on May 7, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Skip reCAPTCHA for programmatic OTP authentication
+
+A new configuration option allows you to skip reCAPTCHA validation for the [`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL mutation. This enables B2B punchout workflows where the one-time password (OTP) exchange is initiated programmatically without a form entry, making reCAPTCHA validation unnecessary. This capability builds on the [one-time code login](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} feature introduced in the March 2026 release. The `exchangeOtpForCustomerToken` mutation continues to require reCAPTCHA by default when reCAPTCHA is enabled for customer login. Contact your Adobe Commerce Customer Success Manager to enable this option. <!-- ACCS-850 -->
+
+### Edit partially invoiced orders
+
+The [!UICONTROL **Edit**] button is now available on the [!UICONTROL **Order View**] screen for partially invoiced orders, giving merchants greater flexibility to modify orders that are still in progress. Previously, orders with any invoices could not be edited, even when uninvoiced items remained. As long as any item in the order can still be invoiced, the order can be edited. Merchants with custom integrations that rely on the previous editing restriction should review their workflows. <!-- ACCS-849 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where the `stock_item` extension attribute was not returned on the `GET /V1/products` REST API list endpoint. The response now matches the documented API contract. <!-- ACCS-819 -->
+
+* Fixed an issue where password reset links in emails returned a 404 error. <!-- ACCS-797 -->
+
+* Improved order history query performance for companies using date-range filters. <!-- ACCS-859 -->
+
+* Fixed an issue where B2B company users could see peer orders from before a user joined the company. <!-- ACCS-859 -->
+
+* Resolved checkout timeout issues that could affect REST API performance when loading quotes with `trigger_recollect` enabled. <!-- CCSAAS-4904 -->
+
+* Fixed page load issues that could occur after submitting an order in the [!DNL Commerce Admin]. <!-- CCSAAS-4413 -->
+
+* Fixed an issue where orders with the same timestamp could display outdated order status information in the sales order grid. <!-- CCSAAS-4890 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## April 2026 - release #3
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 The following items were released to Production environments on April 27, 2026.
 
@@ -49,8 +121,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where import file validation could fail. <!-- CCSAAS-4364 -->
 
 * Removed the **[!UICONTROL Recently Viewed/Compared Products]** configuration from the **[!UICONTROL Catalog]** section in **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**, since it is not supported in [!DNL Adobe Commerce as a Cloud Service] admin. <!-- ACCS-793 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -89,8 +159,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed a 500 error on the Shared Catalog Assign Companies page that could occur when using large shared catalogs with the Admin UI SDK. <!-- CCSAAS-4783 -->
 
 * Fixed an issue where company customers could not see their own orders if those orders were placed before the customer was assigned to the company. <!-- ACCS-746 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
