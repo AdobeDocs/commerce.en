@@ -1,7 +1,19 @@
 ---
 title: Facets
-description: '[!DNL Live Search] facets use multiple dimensions of attribute values as search criteria.'
+description: "[!DNL Live Search] facets use multiple dimensions of attribute values as search criteria."
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+TQID: https://experienceleague.adobe.com/bTE-Ow8xEDfK-saxGxotnvkgHZI4QThno1dCqRbjvCc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Facets
 
