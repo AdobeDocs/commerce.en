@@ -2,6 +2,23 @@
 title: Recommendation Types
 description: Learn about the recommendations that you can deploy to various pages on your site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
+TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
 ---
 # Recommendation Types
 

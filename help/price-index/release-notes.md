@@ -1,10 +1,17 @@
 ---
-title: '[!DNL Catalog Adapter] Release Notes'
+title: "[!DNL Catalog Adapter] Release Notes"
 description: The latest release information for [!DNL Catalog Adapter] for Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
+TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # [!DNL Catalog Adapter] Extension Release Notes
 
