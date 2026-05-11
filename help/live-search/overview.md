@@ -59,6 +59,15 @@ When a search is made, [!DNL Live Search] runs a non-fuzzy search which does not
 
 In addition to the fuzzy search logic, transpositions are also accounted for, that is, where two adjacent characters in a word are swapped, for example "teh" instead of "the". Note that these edit limits are per word and not the phrase as a whole.
 
+### Filters versus facets
+
+[!DNL Live Search] can filter results by any attribute that is indexed as filterable. A facet is simply a filterable attribute that has been configured to show as a shopper-facing filter in the storefront (for example, Brand, Color, Price).
+
+Some internal fields—such as `inStock`—are filterable but not facetable:
+
+- They can be used in API filters (for example to hide out-of-stock products).
+- They do not appear in the [!UICONTROL Add Facet] dialog and cannot be displayed as shopper-facing facets.
+
 ### Filtered search with facets
 
 Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly used facets pinned to the top of the list.
