@@ -183,7 +183,7 @@ View the instance details by clicking the information icon next to your instance
 Note the following key information:
 
 - **GraphQL endpoint** GraphQL endpoint your storefront uses to query catalog and merchandising data from this instance using the [Merchandising Service API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target="_blank}
-- **Catalog endpoint**  REST API endpoint you use to ingest products and prices into Adobe Commerce Optimizer from your commerce or PIM system. See 
+- **Catalog endpoint**  REST API endpoint you use to ingest products and prices into Adobe Commerce Optimizer from your commerce or PIM system. See  the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **Commerce Optimizer URL** Opens the [Adobe Commerce Optimizer Studio](overview.md) admin UI to configure and manage catalog views, policies, and merchandising.
 - **Instance ID**: Unique identifier (tenant ID) for this Adobe Commerce Optimizer instance, used by storefronts, APIs, and tools to connect to the correct environment.
 
