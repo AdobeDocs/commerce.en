@@ -53,10 +53,11 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
 
 * [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}—Developers have user permissions and are added to the Commerce instance as a developer user. They can use the [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configure events](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}, and [create webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
-* Admins - There are three different types of admins:
+* Admins - There are different types of admin roles:
   * [System admins](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - The system admin has access to all products and product profiles in the organization through the Admin Console.
   * [Product admins](#add-a-product-admin) - Product admins can [manage users, roles, and permissions for the product](#add-users) in the [!DNL Adobe Admin Console] and [manage users in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
   * [Product profile admins](#add-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
+  * Support admins - Support admins can create and manage support tickets.
 
 For detailed information on the permissions granted to each role inside Adobe Commerce, see [role resources](#role-resources).
 
