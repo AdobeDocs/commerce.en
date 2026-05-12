@@ -171,7 +171,7 @@ Note the following key information:
 
 - **GraphQL endpoint** to retrieve Commerce catalog data using the Merchandising API
 - **Catalog endpoint** for ingesting catalog data into Commerce Optimizer using the REST API
-- **Commerce Optimizer URL** to access the [!DNL Adobe Commerce Optimizer] application
+- **Commerce Optimizer URL** to access the [!DNL Adobe Commerce Optimizer Studio] application
 - **Instance ID**: the unique ID that identifies the instance. The instance ID is also referred to as the *tenant_id*.
 
 If you are a developer, you need these details to set up your development environment and connect to the [!DNL Adobe Commerce Optimizer] APIs.
