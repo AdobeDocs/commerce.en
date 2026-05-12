@@ -57,7 +57,7 @@ Support is provided for the latest version. Release notes for older versions are
 **Release date**: May 13, 2026
 <!--v1.54-->
 
-![New](../assets/new.svg) Added a position field to the `CategoryView` type, which enables sorting categories in a custom order. This field represents the category's position in the hierarchy and can be used to display categories in a specific sequence in the user interface.
+![New](../assets/new.svg) **Category sort order in GraphQL**—The `CategoryView` GraphQL type now includes a position field, so storefronts can display categories in the order merchants configure in the catalog hierarchy.
 <!--DATA-7166-->
 
 **Release date**: May 4, 2026
