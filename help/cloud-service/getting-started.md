@@ -1,11 +1,39 @@
 ---
-title: 'Getting started with [!DNL Adobe Commerce as a Cloud Service]'
+title: Getting started with [!DNL Adobe Commerce as a Cloud Service]
 description: Learn how to get started with [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+TQID: https://experienceleague.adobe.com/z4XIMJorh5DwVEnfRZtGC0yMz7HFzXI7049mcNIlt-8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Getting started
 
@@ -112,7 +140,7 @@ As a developer, you need to know how to build custom integrations and extend pla
 
 After completing your role-specific setup tasks:
 
-* **System Administrators**: Review [shared responsibility](shared-responsibility.md) guidelines
+* **System Administrators**: Review [shared responsibility](./security/shared-responsibility.md) guidelines
 * **Merchants**: Explore [use cases](use-cases.md) for common business scenarios
 * **Developers**: Check out the [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs)
 
