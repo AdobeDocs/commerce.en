@@ -40,14 +40,14 @@ This guide walks you through setting up [!DNL Adobe Commerce Optimizer] from sta
 
 ## Instance types and environment isolation
 
-Adobe Commerce Optimizer uses separate **instances** for different environments, such as **sandbox** and **production**. Each instance has its own **instance ID** and its own isolated data, including catalog views, policies, search configuration, and product recommendations.
+Adobe Commerce Optimizer uses separate instances for different environments, such as **sandbox** and **production**. Each instance has its own instance ID and its own isolated data, including catalog views, policies, search configuration, and product recommendations.
 
-When you integrate Adobe Commerce Optimizer with **Adobe Commerce as a Cloud Service**, **third‑party commerce platforms**, or **Edge Delivery Services storefronts**, always align environments:
+When integrating with Adobe Commerce as a Cloud Service, third-party commerce platforms, or Edge Delivery Services storefronts, always match environments:
 
-- Connect **sandbox Optimizer instances** to **sandbox / non‑production commerce and storefront environments**.
-- Connect **production Optimizer instances** to **production commerce and storefront environments**.
+- Connect **sandbox Optimizer instances** to non‑production commerce and storefront environments.
+- Connect **production Optimizer instances** to production commerce and storefront environments.
 
-Mixing environments (for example, pointing a production storefront to a sandbox Optimizer instance, or pointing a sandbox storefront to a production Optimizer instance) can lead to inconsistent catalog data, unexpected search and merchandising behavior, and confusing metrics. Use the **instance type** (sandbox vs production) and **tenant ID** shown in Commerce Cloud Manager as your source of truth when wiring integrations.
+Mixing sandbox environments with production environments causes inconsistent catalog data, unexpected search and merchandising behavior, and unreliable metrics. Use the instance type and instance ID in Commerce Cloud Manager as your source of truth when configuring integrations.
 
 ## Prerequisites
 
