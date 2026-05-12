@@ -59,6 +59,10 @@ The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. 
   * [Product profile admins](#add-developers-and-product-profile-admins) - Product profile admins do not have access to the Adobe Commerce Admin, but can manage users for the product in the [!DNL Adobe Admin Console].
   * Support admins - Support admins can create and manage support tickets.
 
+>[!NOTE]
+>
+>If you want a user to have the ability to create support tickets, they must be assigned the **Support Admin** role in the Admin Console.
+
 For detailed information on the permissions granted to each role inside Adobe Commerce, see [role resources](#role-resources).
 
 ## Add a product admin
