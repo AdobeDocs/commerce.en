@@ -123,6 +123,15 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+
+## [!DNL Live Search] 4.7.1
+
+_May 12, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where the [!DNL Live Search] storefront popover scripts caused Content Security Policy (CSP) errors when CSP was configured in restricted mode and inline scripts were disabled. The extension now uses secure rendering for these scripts so pages load without CSP script-src violations.
+
 ## [!DNL Live Search] 4.7.0
 
 _March 17, 2026_
@@ -137,7 +146,7 @@ _February 19, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Fixed an error that could occur under certain conditions related to the Visual Merchandiser extension’s functionality.
+![Fix](../assets/fix.svg) Fixed an error that could occur under certain conditions related to the Visual Merchandiser extension's functionality.
 
 ## [!DNL Live Search] 4.6.0
 
