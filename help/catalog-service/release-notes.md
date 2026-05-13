@@ -54,6 +54,12 @@ Support is provided for the latest version. Release notes for older versions are
 
 ### May 2026
 
+**Release date**: May 13, 2026
+<!--v1.54-->
+
+![New](../assets/new.svg) **Category sort order in GraphQL**—The `CategoryView` GraphQL type now includes a position field, so storefronts can display categories in the order merchants configure in the catalog hierarchy.
+<!--DATA-7166-->
+
 **Release date**: May 4, 2026
 <!-- v1.53 -->
 
