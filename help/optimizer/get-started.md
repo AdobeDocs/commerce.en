@@ -38,6 +38,17 @@ topic_v2:
 
 This guide walks you through setting up [!DNL Adobe Commerce Optimizer] from start to finish. While this guide covers all roles, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/) for detailed developer-specific content.
 
+## Instance types and environment isolation
+
+Adobe Commerce Optimizer uses separate instances for different environments, such as **sandbox** and **production**. Each instance has its own instance ID and its own isolated data, including catalog views, policies, search configuration, and product recommendations.
+
+When integrating with Adobe Commerce as a Cloud Service, third-party commerce platforms, or Edge Delivery Services storefronts, always match environments:
+
+- Connect **sandbox Optimizer instances** to non‑production commerce and storefront environments.
+- Connect **production Optimizer instances** to production commerce and storefront environments.
+
+Mixing sandbox environments with production environments causes inconsistent catalog data, unexpected search and merchandising behavior, and unreliable metrics. Use the instance type and instance ID in Commerce Cloud Manager as your source of truth when configuring integrations.
+
 ## Prerequisites
 
 Before you begin, ensure you have:
@@ -145,21 +156,23 @@ The Product column indicates which Commerce application the instance is provisio
 
 Use the Filter and Search tools to quickly find specific instances by date created, region, creator, product type, environment, or status.
 
-### Access the [!DNL Adobe Commerce Optimizer] application
+### Access the [!DNL Adobe Commerce Optimizer Studio] admin interface
 
-Once the app is open, easily switch between environments like sandbox and production to view data and settings for each one without returning to the Commerce Cloud Manager.
+After the app is open, easily switch between environments like sandbox and production to view data and settings for each one without returning to the Commerce Cloud Manager.
 
-1. From the Commerce Cloud Manager, click the instance name to open the [!DNL Adobe Commerce Optimizer] application.
+1. From the Commerce Cloud Manager, click the instance name to open [!DNL Adobe Commerce Optimizer Studio].
 
 1. Switch between [!DNL Adobe Commerce Optimizer] instances without leaving the application.
 
-   The instance drop-down lists all Optimizer instances available in the organization. Select the instance to view.
+   - Click the instance drop-down to view all Optimizer instances available in the organization.
+   
+     ![Instance switcher dropdown for selecting [!DNL Adobe Commerce Optimizer] environments](./assets/context-switcher.png){zoomable="yes"}
 
-   ![Instance switcher dropdown for selecting [!DNL Adobe Commerce Optimizer] environments](./assets/context-switcher.png){zoomable="yes"}
+  -  Select the instance to view. 
 
 >[!NOTE]
 >
->If you need to return to the Commerce Cloud Manager to view instance details, or manage instances, click the Apps icon ![Icon to open Experience Cloud Applications](./assets/apps-icon.png) in the upper left corner of the Commerce Optimizer top navigation.  
+>To return to the Commerce Cloud Manager to view instance details, or manage instances, click the ![Icon to open Experience Cloud Applications](./assets/apps-icon.png) (Apps) icon in the upper left corner of the Commerce Optimizer top navigation.  
 
 ### Get instance details
 
@@ -169,10 +182,10 @@ View the instance details by clicking the information icon next to your instance
 
 Note the following key information:
 
-- **GraphQL endpoint** to retrieve Commerce catalog data using the Merchandising API
-- **Catalog endpoint** for ingesting catalog data into Commerce Optimizer using the REST API
-- **Commerce Optimizer URL** to access the [!DNL Adobe Commerce Optimizer] application
-- **Instance ID**: the unique ID that identifies the instance. The instance ID is also referred to as the *tenant_id*.
+- **GraphQL endpoint** GraphQL endpoint your storefront uses to query catalog and merchandising data from this instance using the [Merchandising Service API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target="_blank}
+- **Catalog endpoint**  REST API endpoint you use to ingest products and prices into Adobe Commerce Optimizer from your commerce or PIM system. See  the [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **Commerce Optimizer URL** Opens the [Adobe Commerce Optimizer Studio](overview.md) admin UI to configure and manage catalog views, policies, and merchandising.
+- **Instance ID**: Unique identifier (tenant ID) for this Adobe Commerce Optimizer instance, used by storefronts, APIs, and tools to connect to the correct environment.
 
 If you are a developer, you need these details to set up your development environment and connect to the [!DNL Adobe Commerce Optimizer] APIs.
 
