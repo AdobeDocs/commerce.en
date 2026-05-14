@@ -6,6 +6,7 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
+nudge: true
 ---
 
 # [!DNL Payment Services] for Commerce {#payment-services}
