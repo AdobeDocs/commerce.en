@@ -109,15 +109,15 @@ Use this control to balance how strongly **behavioral signals** influence orderi
 | Behavior | Detail |
 | --- | --- |
 | Default | `5.0` (equivalent to the previous fixed behavioral multiplier). |
-| Range | From `1.0` (gentler behavioral influence) through `100.0` (stronger influence). The upper limit may change in a future release. |
+| Range | From `1.0` (gentler behavioral influence) through `100.0` (stronger influence). |
 | Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
 | Preview | The rule preview uses the same boost as live results for that rule. |
 | Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
 
 **When to raise or lower the boost**
 
-- **Raise** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
-- **Lower** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
+* **Raise** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
+* **Lower** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
 
 **When to use manual ranking instead**
 
