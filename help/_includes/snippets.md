@@ -11,7 +11,13 @@
 
 >[!NOTE]
 >
->If you have installed the [Adobe Commerce Optimizer Connector ](../aco-connector/overview.md) to export catalog data to Adobe Commerce Optimizer, use the [Data Feed Sync Status page](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
+>If you have installed the [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) to export catalog data to Adobe Commerce Optimizer, use the [Data Feed Sync Status page](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
+
+## ACO drop-in note for API updates {#aco-api-updates-and-dropins}
+
+>[!NOTE]
+>
+>[Drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) for [!DNL Commerce Storefront on Edge Delivery Services] pick up the latest GraphQL changes automatically (new fields, limits, and query behavior).
 
 ## ACCS early access {#accs-early-access}
 

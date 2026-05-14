@@ -4,8 +4,24 @@ description: Learn how to use badges to identify documentation that applies to d
 feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
-hidefromtoc: yes
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+TQID: https://experienceleague.adobe.com/oZhTlFfL9a27vwbBhbSVS2NYptl13DDkYJZcuV0cM5U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Adobe Commerce product solutions
 

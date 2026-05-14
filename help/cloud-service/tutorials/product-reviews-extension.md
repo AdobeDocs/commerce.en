@@ -8,7 +8,6 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: yes
 ---
 # Product reviews extension tutorial
 
