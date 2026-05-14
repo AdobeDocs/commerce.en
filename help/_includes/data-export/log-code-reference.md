@@ -3,7 +3,7 @@
 ## Log code details
 
 <!--
-Source of truth: https://github.com/magento-commerce/commerce-data-export (docs/log-codes.md)
+Source of truth: https://github.com/magento-commerce/commerce-data-export (dev/tests/log-codes.md)
 When log codes, messages, or log levels change in that repository, update this page to match.
 Only columns retained here: Log Code, Message, Level. File paths are intentionally omitted.
 -->
