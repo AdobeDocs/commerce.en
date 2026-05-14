@@ -1,9 +1,21 @@
 ---
-title: '[!DNL Retrieve catalog data with GraphQL]'
+title: "[!DNL Retrieve catalog data with GraphQL]"
 description: Use GraphQL queries to retrieve the catalog data to power Commerce experiences.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
+TQID: https://experienceleague.adobe.com/ahutwotbB6Dxg7Tc3WMFd7S-WBMALvOYIUTmB5JKmyM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Retrieve catalog data with GraphQL {#graphql-queries}
 
