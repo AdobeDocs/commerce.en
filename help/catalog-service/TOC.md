@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL Catalog Service] Guide"
+breadcrumb-title: "[!DNL Catalog Service]"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Catalog Service] for Adobe Commerce."
 hide: true
 role: Admin

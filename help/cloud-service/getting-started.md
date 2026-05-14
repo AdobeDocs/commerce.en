@@ -84,13 +84,13 @@ Select a tab below to see high-level workflow graphics for the corresponding rol
 
 This diagram provides a high-level overview of how system administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
-![System administrator and merchant workflow diagram for Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
+![System administrator and merchant workflow diagram for Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
 >[!TAB Developer workflow]
 
 This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
 
-![Developer workflow diagram for creating integrations with Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
+![Developer workflow diagram for creating integrations with Adobe Commerce as a Cloud Service](./assets/developer-flow.png){zoomable="yes"}
 
 >[!ENDTABS]
 

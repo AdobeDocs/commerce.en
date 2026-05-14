@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL Payment Services] Guide"
+breadcrumb-title: "[!DNL Payment Services]"
 user-guide-description: "This guide provides detailed information about installing and configuring [!DNL Payment Services] for your [!DNL Adobe Commerce] or [!DNL Magento Open Source] store."
 index: true
 role: Admin, Leader, User
