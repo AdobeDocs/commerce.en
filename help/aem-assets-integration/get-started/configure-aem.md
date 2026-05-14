@@ -47,6 +47,8 @@ This package code adds the following resources to the AEM Assets authoring envir
 
   * A custom metadata type `commerce:roles` and `commerce:positions`  attributes to show how the asset is visualized in Commerce.
 
+  * Alternative text multifield (**[!UICONTROL Alt texts]**) metadata so editors can enter localized alternative text per Commerce store view. See [localized alt text in AEM Assets metadata](#localized-alt-text-in-aem-assets-metadata).
+
 * A metadata schema form with a Commerce tab that includes the `Eligible for Commerce` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `position` fields from the AEM Assets UI.
 
   ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -56,6 +58,27 @@ This package code adds the following resources to the AEM Assets authoring envir
 >[!NOTE]
 >
 > See the [readme](https://github.com/ankumalh/assets-commerce) page for more information about the **AEM Commerce package code**.
+
+## Alt text in AEM Assets metadata 
+
+The **[!UICONTROL Alt texts]** multifield is available in the AEM Assets asset metadata editor on the **[!UICONTROL Commerce]** tab when you edit an eligible image. Each row has two inputs:
+
+* **[!UICONTROL Store View Code]** — The store view identifier (for example `default`, or `en_US`).
+
+* **[!UICONTROL Alt Text]** — Alternative text for that store view, limited to 255 characters.
+
+Select **[!UICONTROL Add]** to add more rows for additional store views. Use the delete control on a row to remove it.
+
+![Alt texts multifield with Store View Code and Alt Text inputs](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+When you save, client-side validation blocks submission if any row has an empty **[!UICONTROL Store View Code]** or if two rows use the same store view code.
+
+Alternative text entries are persisted in JCR asset metadata as two index-aligned **`String[]`** properties:
+
+* `commerce:altTextStoreViews`: Store view code for each row.
+* `commerce:altTextValues`: Matching alt text at the same index as each entry in `commerce:altTextStoreViews`.
+
+When these assets synchronize to Adobe Commerce, alt text is included in the product media gallery.
 
 ## Prerequisites
 
