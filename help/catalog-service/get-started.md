@@ -3,6 +3,30 @@ title: Get Started with [!DNL Catalog Service]
 description: Learn how to access the [!DNL Catalog Service] and integrate with frontend applications and third-party services.
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
+TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Get Started with the [!DNL Catalog Service]
 
@@ -58,6 +82,14 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 See the [[!DNL Catalog Service] and API Mesh](mesh.md) topic for installation and configuration details.
 
-## Use the Data Management Dashboard
+## Monitor and troubleshoot data export
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor data synchronization between the [!DNL Catalog Service] and your Adobe Commerce instance. The dashboard provides insights into the data transfer process, including the status of data exports and a list of synced products.
+The Commerce Admin provides tools for monitoring and troubleshooting data export from Commerce to connected services:
+
+- **[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Monitor data synchronization between the [!DNL Catalog Service] and your Adobe Commerce instance. The dashboard shows overall sync status and lists all synced products.
+
+-  **[Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Track the export status of all data feeds to ensure data consistency. This page alerts you to issues that occur during the export process so that you can resolve them quickly. A “Success” status indicates that data has been exported and will be available in connected Commerce services when the data sync process completes.
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
