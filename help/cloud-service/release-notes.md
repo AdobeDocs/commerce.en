@@ -51,8 +51,8 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## May 2026 - release #2 {#latest}
-<!-- 
-[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
 
