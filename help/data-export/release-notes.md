@@ -44,6 +44,13 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.25 Release
+
+_May 18, 2026_
+
+![Fix](../assets/fix.svg) All tests are failing due to changes in the PHPUnit version. <!--MDEE-1358-->
+![Fix](../assets/fix.svg) Do not process already deleted items. <!--MDEE-1355-->
+
 ### 103.4.24 Release
 
 _May 5, 2026_
