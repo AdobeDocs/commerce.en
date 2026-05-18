@@ -138,7 +138,7 @@ Intelligent ranking determines the final product order by combining two key fact
 
 **Why the most viewed product might not appear first:**
 
-Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Use the preview to validate queries that matter to your business.
+Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Always confirm in **Test your rule** for the queries you care about.
 
 **Example:**
 
@@ -150,7 +150,7 @@ A merchant uses the "Most viewed" intelligent ranking strategy and searches for 
 
 **Example (broad query):**
 
-For a query such as **bois** (wood), several products can share similar textual relevance while view counts differ. With **Most viewed** selected, raising **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering. Always confirm in **Test your rule** for the queries you care about.
+For a query such as **wood**, several products can share similar textual relevance while view counts differ. With **Most viewed** selected, increasing **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering. Always confirm in **Test your rule** for the queries you care about.
 
 See [search rules](./best-practice.md#search-rules) to learn how to improve product findability using rules.
 
@@ -276,4 +276,4 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 | Field | Description |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, sets how strongly behavioral signals influence ranking for that rule. Default `5.0`; allowed range `1.0`–`100.0` (maximum may change in a future release). Applied at query time; rule preview matches live behavior for the configured rule. |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, sets how strongly behavioral signals influence ranking for that rule. Default `5.0`; allowed range `1.0`–`100.0`. Applied at query time; rule preview matches live behavior for the configured rule. |
