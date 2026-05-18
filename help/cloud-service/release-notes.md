@@ -72,13 +72,13 @@ A new [!UICONTROL **Attribute Type**] column is now visible in the Product Attri
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
 
-* Fixed an issue where the `V1/async/custom-email/send` REST endpoint returned an `UnstructuredArray` validation error. The asynchronous endpoint now works consistently with the synchronous `V1/custom-email/send` endpoint. <!-- ACCS-921 -->
+* Fixed an issue where the POST `V1/async/custom-email/send` REST endpoint returned an `UnstructuredArray` validation error. The asynchronous endpoint now works consistently with the synchronous POST `V1/custom-email/send` endpoint. <!-- ACCS-921 -->
 
 * Fixed an issue where custom serializable attributes on entities such as Company were unintentionally cleared when updating the entity through REST without including the custom attributes in the payload. Custom attributes are now preserved when not provided. <!-- ACCS-946 -->
 
 * Resolved a "consumer is not authorized" error that could prevent guest GraphQL logins when the `X-Adobe-Company` header was present in the request. <!-- ACCS-949 -->
 
-* Fixed an issue where editing or deleting a company in the [!DNL Commerce Admin] could fail with a "No such entity" error after assigning a customer to the company through the `V1/customers/companies` REST endpoint. <!-- ACCS-856 -->
+* Fixed an issue where editing or deleting a company in the [!DNL Commerce Admin] could fail with a "No such entity" error after assigning a customer to the company through the PUT `V1/customers/companies` REST endpoint. <!-- ACCS-856 -->
 
 * Resolved an issue with stale sales order grid statuses. <!-- CCSAAS-4915 -->
 
