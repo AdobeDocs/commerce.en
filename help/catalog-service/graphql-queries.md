@@ -25,12 +25,12 @@ Use  GraphQL queries to retrieve product, price, and other data from the Adobe C
 
 The Catalog Service provides the following queries:
 
-| Query | Description | Usage |
-|-------|-------------|-------|
+| Query | Description | Usage | Limits |
+|-------|-------------|-------|--------|
 | `categories` | Returns category data. If the subtree input object is specified, the query returns details about subcategories. | Useful to render storefront navigation and category pages. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) |
-| `products` | Returns details about the SKUs specified as input. | Used primarily to render content on product detail and product compare pages. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) |
-| `productSearch` | Returns a list of products that match the search criteria. | Useful for rendering search results and product list pages based on search input. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) |
-| `refineProduct` | Narrows the results of a products query run against a complex product to return a specific information about a product variant. | Useful for rendering updated product detail pages when the shoppers select a product option. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
-| `variants` | Returns details about all variations of a product. | Useful for showing variant images on product detail or listing pages without submitting multiple API requests. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
+| `products` | Returns details about the SKUs specified as input. | Used primarily to render content on product detail and product compare pages. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) | 100 SKUs per request |
+| `productSearch` | Returns a list of products that match the search criteria. | Useful for rendering search results and product list pages based on search input. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) | | 100 SKUs per request |
+| `refineProduct` | Narrows the results of a products query run against a complex product to return a specific information about a product variant. | Useful for rendering updated product detail pages when the shoppers select a product option. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |  |
+| `variants` | Returns details about all variations of a product. | Useful for showing variant images on product detail or listing pages without submitting multiple API requests. [See example.](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) | |
 
 See [Storefront Services GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/) for more information about using these queries.
