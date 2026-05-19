@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL AEM Assets] integration Guide"
+breadcrumb-title: "[!DNL AEM Assets] Integration"
 user-guide-description: Comprehensive information about the AEM Assets Integration for Adobe Commerce and Magento Open Source administrators and eCommerce marketers.
 feature: CMS, Page Content
 ---
