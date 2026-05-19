@@ -126,6 +126,7 @@ The base allocation for catalog storefront capabilities is determined based on G
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
 | Products per search request | The maximum number of products returned per page in search results | 100 | No |
+| Product per listing request | The maximum number of products returned per page in product listing | 100 | No |
 | Filterable attributes | The number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 | No |
 | Searchable attributes | The number of product characteristics that can be configured for use with the product catalog search service | 200 | No |
 | Sortable attributes | The number of product characteristics that can be configured for determining the order of search result values | 50 | No |
