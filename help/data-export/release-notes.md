@@ -48,7 +48,7 @@ Updates include:
 
 _May 19, 2026_
 
-![Fix](../assets/fix.svg) Do not process already deleted items. <!--MDEE-1355-->
+![Fix](../assets/fix.svg) **Optimized cleanup of obsolete feed data**–Feed records left behind by deleted entities are now removed more efficiently, reducing database storage use.<!--MDEE-1355-->
 
 ### 103.4.24 Release
 
