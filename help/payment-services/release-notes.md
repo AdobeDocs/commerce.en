@@ -29,7 +29,7 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
-_May 4, 2026_
+_June 8, 2026_
 
 ![New issue](../assets/new.svg)<!-- Issue PAY-6510 --> For [!DNL Adobe Commerce as a Cloud Service], the [!DNL Payment Services] dashboard UI in the [!DNL Commerce Admin] lets merchants open the [Transactions report](reporting.md#transactions-report-view) directly from the dashboard. This SaaS dashboard exposes **selected** reporting only (not every report or Home entry point available on Adobe Commerce on cloud and on-premises); see [[!DNL Payment Services] Home](payments-home.md). For ACCS release notes and timing, see [View the Payment Services Transactions report](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
