@@ -3,6 +3,23 @@ title: Configure the AEM Assets Project to support Commerce metadata
 description: Enable seamless asset synchronization between Adobe Commerce and AEM Assets by adding the required metadata for the integration.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
+TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Configure the AEM Assets project to support Commerce metadata
 
@@ -30,6 +47,8 @@ This package code adds the following resources to the AEM Assets authoring envir
 
   * A custom metadata type `commerce:roles` and `commerce:positions`  attributes to show how the asset is visualized in Commerce.
 
+  * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text keyed by Commerce store view code. This does not change how product images are assigned or scoped in the catalog. See [Alt text in AEM Assets metadata](#localized-alt-text-in-aem-assets-metadata).
+
 * A metadata schema form with a Commerce tab that includes the `Eligible for Commerce` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `position` fields from the AEM Assets UI.
 
   ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -39,6 +58,33 @@ This package code adds the following resources to the AEM Assets authoring envir
 >[!NOTE]
 >
 > See the [readme](https://github.com/ankumalh/assets-commerce) page for more information about the **AEM Commerce package code**.
+
+## Alt text in AEM Assets metadata
+
+The _[!UICONTROL Alt texts]_ multifield is available in the AEM Assets asset metadata editor on the **[!UICONTROL Commerce]** tab when you edit an eligible image.
+
+>[!IMPORTANT]
+>
+> Per-store view behavior applies to alternative text only. The AEM Assets integration does not synchronize different product images per Adobe Commerce store view. Product images from AEM continue to sync into Commerce with the same gallery assignment behavior as before this release.
+
+The multifield contains one row per Commerce store view. Each row has two inputs:
+
+* **[!UICONTROL Store View Code]** — The store view identifier (for example `default` or `en_US`).
+
+* **[!UICONTROL Alt Text]** — Alternative text for that store view, limited to 255 characters.
+
+Select **[!UICONTROL Add]** to add more rows for additional store views. To remove a row, select the **[!UICONTROL Delete]** icon on that row to remove it.
+
+![Alt texts multifield with Store View Code and Alt Text inputs](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+When you save, client-side validation blocks submission if any row has an empty _[!UICONTROL Store View Code]_ or if two rows use the same store view code (case-insensitive).
+
+Alternative text entries are persisted in JCR asset metadata as two index-aligned `String[]` properties:
+
+* `commerce:altTextStoreViews`: Store view code for each row.
+* `commerce:altTextValues`: Matching alt text at the same index as each entry in `commerce:altTextStoreViews`.
+
+When these assets synchronize to Adobe Commerce, per-store view alt text is written to the product media gallery for the matching store view codes. The underlying image mapping is unchanged.
 
 ## Prerequisites
 

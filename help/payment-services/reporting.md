@@ -4,6 +4,32 @@ description: Use the [!DNL Payment Services] Transactions report in the Admin to
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+TQID: https://experienceleague.adobe.com/G4EOSDBdBepDJG0HyuCcQlq3-megOqpOGzSbEEnT1jc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Reporting
 

@@ -1,9 +1,11 @@
 ---
 user-guide-title: "[!DNL Adobe Commerce Optimizer] Guide"
+breadcrumb-title: "[!DNL Adobe Commerce Optimizer]"
 user-guide-description: Documentation and resources for [!DNL Adobe Commerce Optimizer].
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
+nudge: true
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
