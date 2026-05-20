@@ -15,4 +15,4 @@ The cash flow management reports---Payouts, Transactions, and Order payment stat
 
 >[!NOTE]
 >
->Which of these reports appear in the [!DNL Payment Services] **dashboard** depends on your deployment. On [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer], the dashboard exposes **selected** reporting (including [Transactions](reporting.md) from Home). [Order payment status](order-payment-status.md) and [Payouts](payouts.md) Home views and linked reports are available on Adobe Commerce on cloud and on-premises as described in those topics. See [[!DNL Payment Services] Home](payments-home.md).
+>Your deployment determines which of these reports display in the [!DNL Payment Services] **dashboard**. On [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer], the dashboard exposes **selected** reporting (including [Transactions](reporting.md) from Home). [Order payment status](order-payment-status.md) and [Payouts](payouts.md) Home views and linked reports are available on Adobe Commerce on cloud and on-premises as described in those topics. See [[!DNL Payment Services] Home](payments-home.md).
