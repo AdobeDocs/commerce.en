@@ -29,7 +29,7 @@ topic_v2:
 ---
 # Migrating from Search Adapter to PLP Widget
 
-The search adapter has been [deprecated](release-notes.md#live-search-400) as of [!DNL Live Search] 4.0.0 and will only receive security updates. The [Product Listing Page (PLP) Widget](plp-styling.md) is the supported solution for all [!DNL Live Search] implementations going forward. This guide helps you understand when migration is straightforward and when additional work is required.
+The search adapter has been [deprecated](release-notes.md#live-search-400) as of [!DNL Live Search] 4.0.0. The [Product Listing Page (PLP) Widget](plp-styling.md) is the supported solution for all [!DNL Live Search] implementations going forward. This guide helps you understand when migration is straightforward and when additional work is required.
 
 ## Prerequisites
 
@@ -316,7 +316,6 @@ In this scenario, there is a known issue where enabling the PLP widget can cause
 **Option 1: Continue with search adapter (interim only)**
 
 - Keep search adapter enabled if GTM is business-critical.
-- Understand you will only receive security updates.
 - Plan to migrate when GTM compatibility is resolved.
 - Contact Adobe Support for updates on GTM compatibility.
 
@@ -471,7 +470,7 @@ Find answers to common questions about migrating from the search adapter to the 
 
 **Q: Will the search adapter receive bug fixes or feature updates?**
 
-A: No. The search adapter is deprecated and will only receive security updates. Bug fixes, performance improvements, and new features are only available in the PLP widget. If you encounter issues with the search adapter, migration to the PLP widget is the recommended solution.
+A: No. The search adapter is deprecated. Bug fixes, performance improvements, and new features are only available in the PLP widget. If you encounter issues with the search adapter, migration to the PLP widget is the recommended solution.
 
 **Q: Will migration disrupt my storefront?**
 
