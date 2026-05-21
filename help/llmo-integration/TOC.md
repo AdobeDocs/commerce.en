@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL Adobe Commerce] and [!DNL Adobe LLM Optimizer] integration"
+breadcrumb-title: "[!DNL LLM Optimizer] Integration"
 user-guide-description: Connect your Adobe Commerce catalog to Adobe LLM Optimizer, review opportunities, and deploy catalog optimizations.
 role: Admin, User, Leader
 feature: Integration, Personalization
