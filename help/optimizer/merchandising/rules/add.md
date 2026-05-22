@@ -186,7 +186,7 @@ A merchant uses the "Most viewed" intelligent ranking strategy and searches for 
 
 - **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
 
-- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5.0`), behavioral influence may not be enough to overcome that gap. Increasing the boost for this rule (for example, toward the middle or upper end of the allowed range) can move YAN-K-E-512 higher while you watch the preview.
+- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5`), behavioral influence may not be enough to overcome that gap. Increasing the boost for this rule (for example, toward the middle or upper end of the allowed range) can move YAN-K-E-512 higher while you watch the preview.
 
 **Example (broad query):**
 
