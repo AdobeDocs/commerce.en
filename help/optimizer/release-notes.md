@@ -42,7 +42,7 @@ Currently, there are no [[!DNL Adobe Commerce Optimizer Studio]](overview.md#qui
 
 _May TBD, 2026_
 
-<!-- v1.56 -->
+<!-- v1.2 -->
 
 ![Fix](../assets/fix.svg) Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path.
 <!--DATA-7183-->
