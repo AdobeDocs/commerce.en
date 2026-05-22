@@ -142,7 +142,7 @@ For **search rules** (and the test query in the rule editor), intelligent rankin
 
 **Why the most viewed product might not appear first:**
 
-Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Always confirm in **[!UICONTROL Test your rule]** for the queries you care about.
+Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you increase **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list, as text match quality remains a primary driver. Always validate results in **[!UICONTROL Test your rule]** for your target queries.
 
 **Example:**
 
@@ -280,4 +280,4 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 | Field | Description |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, sets how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
