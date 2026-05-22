@@ -1,13 +1,13 @@
 ---
-title: Limits and boundaries
-description: Understand [!DNL Adobe Commerce Optimizer] limits and boundaries to plan capacity and prevent performance issues.
+title: Adobe Commerce Optimizer limits and boundaries
+description: Learn about Adobe Commerce Optimizer license limits and system boundaries. Plan capacity, track usage, and avoid latency and throttling when limits are exceeded.
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 ---
 # Limits and boundaries
 
-[!DNL Adobe Commerce Optimizer] has two types of limits:
+[!DNL Adobe Commerce Optimizer] applies **license limits** and **system boundaries** that define how much capacity your project can use:
 
 - **License limits**—Based on your purchased capacity; can be expanded by purchasing additional packages.
 - **System boundaries**—Fixed limits that protect system resources and ensure reliable performance for all users.
@@ -36,7 +36,7 @@ The following tables summarize the license limits and system boundaries by capab
 | **Environment** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
 | **Sandbox environment** | The number of sandbox environments included | 2 per instance | Yes<p>Add an additional environment license per instance</p> |
-| **Production environment** | The number of production environments included | 1 per instance | License<p>Add an additional environment license per instance</p> |
+| **Production environment** | The number of production environments included | 1 per instance | Yes<p>Add an additional environment license per instance</p> |
 
 {style="table-layout:auto"}
 
@@ -62,23 +62,23 @@ The following tables summarize the license limits and system boundaries by capab
 
 {style="table-layout:auto"}
 
-### Product Visuals powered by AEM Assets
+### Product visuals limits
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Product Visuals Power users | Licensed user with full digital asset management capabilities, including AI tools, Adobe Express/Firefly integrations, and Content Hub sharing, handling core DAM tasks and advanced cloud-native features for optimal efficiency. | 2 | Yes<p>Upgrade to AEM Assets license</p> |
-| Product Visuals Collaborator users | Access and work with assets through the AEM Commerce integration, create and edit content using Adobe Express and Firefly, and—if enabled—leverage approved assets via the Content Hub portal. | 2 | Yes<p>Upgrade to AEM Assets license</p> |
+| Product Visuals Power users | Licensed user with full digital asset management capabilities, including AI tools, [!DNL Adobe Express]/[!DNL Firefly] integrations, and Content Hub sharing, handling core DAM tasks and advanced cloud-native features for optimal efficiency. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
+| Product Visuals Collaborator users | Access and work with assets through the AEM Commerce integration, create and edit content using [!DNL Adobe Express] and [!DNL Firefly], and—if enabled—leverage approved assets via the Content Hub portal. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Product Visuals storage | Allocated storage space for assets | 1 TB storage | No |
-| Dynamic Media usage | Allowance for dynamic media processing operations which includes:<ul><li>Image delivery</li><li>Smart Imaging</li><li>Video Delivery</li></ul><p>For details, see *Calculate Dynamic Media usage* below. | Based on GMV<p>Minimum allocation: 5M operations/month</p> | Yes<ul><li>Purchase license for additional operations</li><li>Upgrade to AEM Assets license</li></ul> |
-| Video delivery | Allowance for video delivery or downloads | 300 videos, 1 minute per video | Yes<p>Upgrade to AEM Assets license</p> |
-| Asset generation | Access to Adobe Express and Adobe Firefly generative AI for creating images | None | Purchase Generative AI credits separately |
+| Dynamic Media usage | Allowance for dynamic media processing operations which includes:<ul><li>Image delivery</li><li>Smart Imaging</li><li>Video Delivery</li></ul><p>For details, see *Calculate Dynamic Media usage* below. | Based on GMV (gross merchandise value)<p>Minimum allocation: 5M operations/month</p> | Yes<ul><li>Purchase license for additional operations</li><li>Upgrade to [!DNL AEM Assets] license</li></ul> |
+| Video delivery | Allowance for video delivery or downloads | 300 videos, 1 minute per video | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
+| Asset generation | Access to [!DNL Adobe Express] and [!DNL Adobe Firefly] generative AI for creating images | None | Purchase Generative AI credits separately |
 
 {style="table-layout:auto"}
 
 
 >[!NOTE]
 >
->**Power Users** can access Adobe Express directly or within [!DNL Adobe Commerce Optimizer]. **Collaborator Users** can access the Adobe Express application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Power Users** can access [!DNL Adobe Express] directly or within [!DNL Adobe Commerce Optimizer]. **Collaborator Users** can access the [!DNL Adobe Express] application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX "Calculate Dynamic Media usage"]
@@ -106,33 +106,34 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 ### Catalog storefront
 
-The base allocation for catalog storefront capabilities is determined based on GMV tier. The table indicates the minimum allocation for each capability.
+The base allocation for catalog storefront capabilities is determined based on GMV (gross merchandise value) tier. The table indicates the minimum allocation for each capability.
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
 | Catalog retrieval rate | Number of times a catalog API is called per month by a system (storefront, transaction system, ERP, or other) to retrieve data from the catalog | Based on GMV tier<p>Minimum allocation: 10M/month</p> | Yes<p>Add 1M requests per month license packs</p> |
-| Content requests | Requests to Commerce Storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. | Based on GMV tier<p>Minimum allocation: 2M/month</p> | Yes<p>Add 1M per month license pack</p> |
+| Content requests | Requests to the storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. | Based on GMV tier<p>Minimum allocation: 2M/month</p> | Yes<p>Add 1M per month license pack</p> |
 | Storefront GenAI variations | Allowance for text-based content generation | Based on GMV tier<p>Minimum allocation: 1K variations/month</p> | Yes<p>Purchase Generative AI credits separately</p> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Image generation requires an Adobe Firefly license provisioned to the same IMS org as [!DNL Adobe Commerce Optimizer].
+>Image generation requires an [!DNL Adobe Firefly] license provisioned to the same IMS org as [!DNL Adobe Commerce Optimizer].
 
 
 ### Product discovery
 
+The following limits apply to storefront product search, listing, and merchandising configuration.
+
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Products per search request | The maximum number of products returned per page in search results | 100 | No |
-| Product per listing request | The maximum number of products returned per page in product listing | 100 | No |
+| Product retrieval | Maximum SKUs per [!DNL Catalog Service] GraphQL request when fetching product data with `products`, `productSearch`, `refineProduct`, and `variants`. Split larger requests across multiple calls. | 100 | No |
 | Filterable attributes | The number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 | No |
-| Searchable attributes | The number of product characteristics that can be configured for use with the product catalog search service | 200 | No |
-| Sortable attributes | The number of product characteristics that can be configured for determining the order of search result values | 50 | No |
-| Search pagination depth | The maximum number of products accessible through pagination (for example, page 100 × 100 products/page) | 10K | No |
+| Searchable attributes | The number of product characteristics that can be indexed for catalog search | 200 | No |
+| Sortable attributes | The number of product characteristics available as sort options on search and category pages. | 50 | No |
+| Search pagination depth | Maximum products reachable through search pagination (for example, page 100 × 100 products/page) | 10K | No |
 | Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
-| Options per facet | The number of filterable product attribute values (like "Red," "Blue" for Color; "Small," "Medium" for Size) that shoppers can select from a list | 100 | Yes<p>Can increase via support request</p> |
+| Options per facet | The number of filterable product attribute values shoppers can select within a facet (for example, "Red," "Blue" for Color; "Small," "Medium" for Size) | 100 | Yes<p>Can increase via support request</p> |
 
 {style="table-layout:auto"}
 
@@ -143,7 +144,7 @@ The following capabilities are available for product recommendations. Some featu
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
 | Active recommendation units | Number of live recommendation components on your storefront (like "Customers also viewed" or "You might also like") | 50 | No |
-| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | |
+| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | — |
 
 {style="table-layout:auto"}
 
@@ -188,5 +189,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) 
+   * Add-On: 10 × dynamic media packs (1M each)
 -->
