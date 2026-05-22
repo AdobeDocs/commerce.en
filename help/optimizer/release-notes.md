@@ -34,7 +34,17 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 ## May 2026
 
-Currently, there are no [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) releases this month. See API updates below.
+**Release date**: May TBD, 2026
+<!-- v1.56 -->
+
+![Fix](../assets/fix.svg) Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path.
+<!--DATA-7183-->
+
+![Fix](../assets/fix.svg) Empty string slug values in the `categoryTree` query are now gracefully ignored.
+<!--DATA-7184-->
+
+![Fix](../assets/fix.svg) TBD
+<!--DATA-2066-->
 
 >[!BEGINSHADEBOX]
 
