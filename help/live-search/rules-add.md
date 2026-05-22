@@ -123,6 +123,10 @@ Use this control to balance how strongly **behavioral signals** influence orderi
 
 Use **pin**, **boost**, or **bury** when you need specific products in exact positions or guaranteed visibility regardless of catalog-wide signals. **[!UICONTROL Intelligent Ranking Boost]** tunes a **global** behavioral weight for that rule; it does not replace SKU-level control.
 
+>[!NOTE]
+>
+> A high **[!UICONTROL Intelligent Ranking Boost]** can outweigh a **manual boost** on the same product. If a boosted SKU ranks lower than you expect in **Test your rule** or on the storefront, **lower** the intelligent ranking boost or **pin** the product to a specific position. Either change moves the manually ranked product higher in the results.
+
 ### How intelligent ranking scoring works
 
 Intelligent ranking determines the final product order by combining two key factors: **textual relevance** and **behavioral signals**. Understanding how these factors interact helps you set realistic expectations for your search results.
@@ -144,9 +148,9 @@ Textual relevance often dominates ranking because its score is unbounded, while 
 
 A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
 
-* **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
+* **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than **YAN-K-E-512**, its superior text match outweighs the behavioral boost.
 
-* **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5.0`), behavioral influence may not be enough to overcome that gap. Increasing the boost for this rule (for example, toward the middle or upper end of the allowed range) can move YAN-K-E-512 higher while you watch the preview.
+* **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5`), behavioral influence may not be enough to overcome that text gap. Increasing the boost can move **YAN-K-E-512** higher among products that already match the query. **YAN-K-E-512** must also match the query: at least one searchable attribute for that SKU must include **candle**, or it will not appear in results and the boost cannot apply.
 
 **Example (broad query):**
 
