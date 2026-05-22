@@ -59,7 +59,8 @@ Intelligent ranking methods are:
 * Trending: ranks products by recent upswings in popularity based on views.
 * None: ranks products by their default order.
 
-For any intelligent method except **None**, you can set **[!UICONTROL Intelligent Ranking Boost]** in the rule editor to tune how strongly behavioral signals affect product order. Defaults, limits, preview behavior, and how boost compares to **Manual ranking** are described in [Intelligent ranking boost](rules-add.md#intelligent-ranking-boost).
+
+For any intelligent ranking method except **None**, you can set **[!UICONTROL Intelligent Ranking Boost]** in the rule editor to tune how strongly behavioral signals affect product order. For details about defaults, limits, preview behavior, and how boost compares to **Manual ranking** see [Intelligent ranking boost](rules-add.md#intelligent-ranking-boost).
 
 **Manual ranking** allows users to override the automatic product sort order by defining manual pin, boost, bury, and hide rules. 
 
