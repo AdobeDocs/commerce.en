@@ -284,7 +284,7 @@ _November 13, 2023_
 ### Updates
 
 ![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
-![Fix](../assets/fix.svg) The Search Adapter is deprecated. Going forward, the Search Adapter will only be updated to address security issues.
+![Fix](../assets/fix.svg) The Search Adapter is deprecated.
 ![Fix](../assets/fix.svg) Reconfigured CSS styles to better isolate widget classes.
 ![Fix](../assets/fix.svg) Minor bug fixes
 

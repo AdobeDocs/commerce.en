@@ -44,6 +44,12 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.25 Release
+
+_May 19, 2026_
+
+![Fix](../assets/fix.svg) **Optimized cleanup of obsolete feed data**–Feed records left behind by deleted entities are now removed more efficiently, reducing database storage use.<!--MDEE-1355-->
+
 ### 103.4.24 Release
 
 _May 5, 2026_
