@@ -21,7 +21,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 ---
-# Configure the AEM Assets Project to support Commerce metadata
+# Configure the AEM Assets project to support Commerce metadata
 
 When you use AEM Assets as a Digital Asset Management system (DAM) for Commerce, installing the `assets-commerce` package allows you to manage images and videos for Commerce products from the AEM authoring environment.
 
@@ -57,7 +57,7 @@ This package code adds the following resources to the AEM Assets authoring envir
 
 >[!NOTE]
 >
-> See the [readme](https://github.com/ankumalh/assets-commerce) page on [!DNL GitHub] for more information about the **AEM Commerce package code**.
+> See the [readme](https://github.com/ankumalh/assets-commerce) page on GitHub for more information about the **AEM Commerce package code**.
 
 ## Alt text in AEM Assets metadata
 
@@ -139,7 +139,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 1. [Clone the Adobe managed git repository](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) for the selected program.
 
-1. From [!DNL GitHub], download the package code from the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce).
+1. From GitHub, download the package code from the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce).
 
 1. From your [local AEM development environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), manually copy the downloaded code into the existing Adobe managed repository.
 
@@ -147,7 +147,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
    >[!NOTE]
    >
-   > Alternatively, you can install the custom code into your AEM Assets project configuration as a **[!DNL Maven]** package.
+   > Alternatively, you can install the custom code into your AEM Assets project configuration as a **Maven** package.
 
 1. Commit the changes and push your local development branch to the Cloud Manager Git repository.
 

@@ -62,7 +62,7 @@ The following tables summarize the license limits and system boundaries by capab
 
 {style="table-layout:auto"}
 
-### Product visuals limits
+### [!DNL Product Visuals] limits
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
