@@ -46,6 +46,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_May 22, 2026_
+
+![New](../assets/new.svg) Search merchandising rules, default rules, and [category merchandising](./category-merch.md) rules now include **[!UICONTROL Intelligent Ranking Boost]**, so you can tune how strongly intelligent ranking strategies influence results relative to textual relevance. Rule preview matches the configured boost. [Learn more](./rules-add.md#intelligent-ranking-boost).
+
 _October 1, 2025_
 
 ![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
