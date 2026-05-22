@@ -148,8 +148,8 @@ Use this control to balance how strongly **behavioral signals** influence orderi
 
 | Behavior | Detail |
 | --- | --- |
-| Default | `5.0` (equivalent to the previous fixed behavioral multiplier). |
-| Range | From `1.0` (gentler behavioral influence) through `100.0` (stronger influence). The upper limit may change in a future release. |
+| Default | `5` (equivalent to the previous fixed behavioral multiplier). |
+| Range | From `1` (gentler behavioral influence) through `100` (stronger influence). The upper limit may change in a future release. |
 | Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
 | Preview | The rule preview uses the same boost as live results for that rule. |
 | Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
@@ -309,7 +309,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 
 | Field | Description |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, sets how strongly behavioral signals influence ranking for that rule. Default `5.0`; allowed range `1.0`–`100.0`. Applied at query time; rule preview matches live behavior for the configured rule. |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, sets how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
 
 ### Details
 
