@@ -98,7 +98,7 @@ Store owners can set up the following types of ranking strategies:
 * Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events.
 * None: Products are ordered by Relevance.
 
-Select the type of strategy for the rule. The **Test your rule** window displays the expected results.
+Select the type of strategy for the rule. The **[!UICONTROL Test your rule]** window displays the expected results.
 
 ### Intelligent ranking boost {#intelligent-ranking-boost}
 
@@ -125,28 +125,28 @@ Use **pin**, **boost**, or **bury** when you need specific products in exact pos
 
 >[!NOTE]
 >
-> A high **[!UICONTROL Intelligent Ranking Boost]** can outweigh a **manual boost** on the same product. If a boosted SKU ranks lower than you expect in **Test your rule** or on the storefront, **lower** the intelligent ranking boost or **pin** the product to a specific position. Either change moves the manually ranked product higher in the results.
+> A high **[!UICONTROL Intelligent Ranking Boost]** can outweigh a **manual boost** on the same product. If a boosted SKU ranks lower than you expect in **[!UICONTROL Test your rule]** or on the storefront, lower **[!UICONTROL Intelligent Ranking Boost]** or **pin** the product to a specific position. Either change moves the manually ranked product higher in the results.
 
-### How intelligent ranking scoring works
+### How intelligent ranking scoring works (search)
 
-Intelligent ranking determines the final product order by combining two key factors: **textual relevance** and **behavioral signals**. Understanding how these factors interact helps you set realistic expectations for your search results.
+For **search rules** (and the test query in the rule editor), intelligent ranking determines the final product order by combining two key factors: **textual relevance** and **behavioral signals**. Understanding how these factors interact helps you set realistic expectations for your search results.
 
 **Scoring components:**
 
 * **Textual relevance**: The dominant factor in scoring. This measures how well a product's name, description, and attributes match the search query. The text relevance score is unbounded (has no specific upper limit) and is influenced by factors like:
 
    * Frequency of occurrence of matching words.
-   * Length  (in words) of product names/descriptions.
+   * Length (in words) of product names/descriptions.
 
 * **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a larger relative weight. The strength of that weight is controlled by **[!UICONTROL Intelligent Ranking Boost]** (see [Intelligent ranking boost](#intelligent-ranking-boost)); the boost remains bounded, but you can increase how much it shifts ordering.
 
 **Why the most viewed product might not appear first:**
 
-Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Always confirm in **Test your rule** for the queries you care about.
+Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Always confirm in **[!UICONTROL Test your rule]** for the queries you care about.
 
 **Example:**
 
-A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
+A merchant uses the "Most viewed" intelligent ranking strategy and searches for **candle**. They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
 
 * **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than **YAN-K-E-512**, its superior text match outweighs the behavioral boost.
 
@@ -154,7 +154,7 @@ A merchant uses the "Most viewed" intelligent ranking strategy and searches for 
 
 **Example (broad query):**
 
-For a query such as **wood**, several products can share similar textual relevance while view counts differ. With **Most viewed** selected, increasing **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering. Always confirm in **Test your rule** for the queries you care about.
+For a query such as **wood**, several products can share similar textual relevance while view counts differ. With **Most viewed** selected, increasing **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering.
 
 See [search rules](./best-practice.md#search-rules) to learn how to improve product findability using rules.
 
