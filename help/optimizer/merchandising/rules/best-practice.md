@@ -32,7 +32,7 @@ It is crucial to establish a well thought out **default rule**. Your [default ru
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
 - Tailor search results based on individual shopper behavior using [intelligent ranking](add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on.
-- When intelligent ranking is not **None**, tune **[Intelligent ranking boost](add.md#intelligent-ranking-boost)** per rule and validate in **Test your rule** before publishing.
+- When an intelligent strategy other than **None** is selected, tune **[Intelligent ranking boost](add.md#intelligent-ranking-boost)** per rule and validate in **Test your rule** before publishing.
 - Always use the "Test your rule" panel to preview how your intelligent ranking strategy affects actual search results for different queries.
 
 ## Tips for category rules

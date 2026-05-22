@@ -154,10 +154,10 @@ Use this control to balance how strongly **behavioral signals** influence orderi
 | Preview | The rule preview uses the same boost as live results for that rule. |
 | Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
 
-**When to raise or lower the boost**
+**When to increase or decrease the boost**
 
-- **Raise** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
-- **Lower** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
+- **Increase** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
+- **Decrease** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
 
 **When to use manual ranking instead**
 
@@ -313,7 +313,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 
 | Field | Description |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, sets how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
 
 ### Details
 
