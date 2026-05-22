@@ -1,6 +1,6 @@
 ---
 title: Configure the AEM Assets Project to support Commerce metadata
-description: Enable seamless asset synchronization between Adobe Commerce and AEM Assets by adding the required metadata for the integration.
+description: Learn how to sync assets between Adobe Commerce and AEM Assets by deploying the assets-commerce package and configuring Commerce metadata in your AEM project.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
@@ -57,7 +57,7 @@ This package code adds the following resources to the AEM Assets authoring envir
 
 >[!NOTE]
 >
-> See the [readme](https://github.com/ankumalh/assets-commerce) page for more information about the **AEM Commerce package code**.
+> See the [readme](https://github.com/ankumalh/assets-commerce) page on GitHub for more information about the **AEM Commerce package code**.
 
 ## Alt text in AEM Assets metadata
 
@@ -88,7 +88,7 @@ When these assets synchronize to Adobe Commerce, per-store view alt text is writ
 
 ## Prerequisites
 
-You need the following resources and permissions to deploy the `assets-commerce` package code to the AEM Assets as a Cloud Service AEM  environment:
+You need the following resources and permissions to deploy the `assets-commerce` package code to the AEM Assets as a Cloud Service AEM environment:
 
 * [Access to the AEM Assets Cloud Manager Program and environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) with the Program and Deployment Manager roles.
 
@@ -99,7 +99,7 @@ You need the following resources and permissions to deploy the `assets-commerce`
 * The **IMS Org ID** for your Commerce instance. Both your Commerce instance and AEM Assets Authoring environment must be in the same IMS organization.
 
 * To enable [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
-  
+
 >[!BEGINTABS]
 
 >[!TAB Product Visuals]
@@ -143,7 +143,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 1. From your [local AEM development environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), manually copy the downloaded code into the existing Adobe managed repository.
 
-1.  In all `filter.xml` and `pom.xml files` for your project, replace all occurrences of `<my-app>` with your app name.
+1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of `<my-app>` with your app name.
 
    >[!NOTE]
    >
@@ -151,7 +151,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 1. Commit the changes and push your local development branch to the Cloud Manager Git repository.
 
-1. From AEM Cloud Manager, [update the AEM environment by using the pipeline to deploy your code](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. From AEM Cloud Manager, [update the AEM environment by using the pipeline to deploy your code](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 1. Go to any asset and edit its properties to validate the changes:
 
@@ -165,7 +165,7 @@ If the **Commerce** tab does not appear in properties, you must manually create 
 
 1. Navigate to the metadata schema editor.
 
-1. Click **Edit** to modify the default metadata schema form.
+1. Select **Edit** to modify the default metadata schema form.
 
 1. Create a **Commerce** tab, and select it.
 
@@ -175,7 +175,7 @@ If the **Commerce** tab does not appear in properties, you must manually create 
 
 1. Drag and drop a **checkbox** component into the **Commerce** tab, and map it to the property `commerce:isCommerce`. Define **Yes** and **No** as the options.
 
-If you encounter any other issues,  create a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) or contact your AEM Assets Integration sales representative for help.
+If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) or contact your AEM Assets Integration sales representative for help.
 
 ## Step 2: Optional. Configure a metadata profile
 
@@ -239,7 +239,7 @@ The Product Data UI component is added automatically based on the template.
 
 ### Apply the metadata profile to the Commerce assets source folder
 
-   1. From the[!UICONTROL  Metadata Profiles] page, select the Commerce integration profile.
+   1. From the **[!UICONTROL Metadata Profiles]** page, select the Commerce integration profile.
 
    1. From the action menu, select **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
@@ -247,10 +247,10 @@ The Product Data UI component is added automatically based on the template.
 
       Create a Commerce folder if it does not exist.
 
-   1. Click **[!UICONTROL Apply]**.
+   1. Select **[!UICONTROL Apply]**.
 
 ## Next steps
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md).
 
-* [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Configure the integration from the Commerce Admin](setup-synchronization.md).
+* [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Configure the integration from the Admin](setup-synchronization.md).
