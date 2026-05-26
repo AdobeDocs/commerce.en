@@ -135,9 +135,11 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 1. Navigate to the AEM Cloud Manager, select a program, and [create production and staging environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) that you want to integrate with Adobe Commerce.
 
-1. Configure a [deployment pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline), or verify that your pipeline can deploy changes to the selected environment.
-
 1. [Clone the Adobe managed git repository](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) for the selected program.
+
+   ![Cloud Manager repository credentials and clone command](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   In Cloud Manager **Pipelines**, select **[!UICONTROL Access Repo Info]** to open **[!UICONTROL Repository Info]**. Copy the **[!UICONTROL URL]** or **[!UICONTROL Git command line]** value, generate an access password if needed, then clone locally with your Git client.
 
 1. From GitHub, download the package code from the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce).
 
@@ -151,17 +153,23 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 1. Commit the changes and push your local development branch to the Cloud Manager Git repository.
 
+1. Configure a [deployment pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline), or verify that your pipeline can deploy changes to the selected environment.
+
+   ![Cloud Manager Pipelines](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   When the pipeline exists, open the actions menu (**...**) to **[!UICONTROL Run]**, **[!UICONTROL Edit]**, **[!UICONTROL View/Edit variables]**, or other actions—see the Cloud Manager pipeline documentation linked above.
+
 1. From AEM Cloud Manager, [update the AEM environment by using the pipeline to deploy your code](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 1. Go to any asset and edit its properties to validate the changes:
 
    * The default Metadata Schema includes the **Commerce** tab.
 
-   * Product SKUs and the `Eligible for Commerce` fields are visible. 
+   * Product SKUs and the `Eligible for Commerce` fields are visible.
 
 ### Commerce tab is not visible in properties
 
-If the **Commerce** tab does not appear in properties, you must manually create one in the metadata schema editor.
+If the **Commerce** tab does not appear in properties, you must manually complete the following steps in the metadata schema editor:
 
 1. Navigate to the metadata schema editor.
 
