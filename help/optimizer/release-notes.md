@@ -34,9 +34,11 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 ## May 2026
 
-Currently, there are no [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) releases this month. See API updates below.
-
 >[!BEGINSHADEBOX]
+
+### Intelligent Ranking Boost
+
+[Merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost) for search, default product listings, and [category pages](./merchandising/rules/add.md#rule-types) (beta) now include **[!UICONTROL Intelligent Ranking Boost]**. You can adjust how strongly strategies such as **Most viewed** or **Trending** influence product order relative to textual relevance on search and behavioral signals on category listings. The rule preview reflects your setting. The boost is applied at query time, so you do not need a catalog resync when you change it.
 
 ### API updates
 
