@@ -4,7 +4,6 @@ breadcrumb-title: "[!DNL Live Search]"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Live Search] from Adobe Commerce."
 role: Admin
 feature: Services, Search
-nudge: true
 ---
 # [!DNL Live Search] for Commerce {#live-search}
 
