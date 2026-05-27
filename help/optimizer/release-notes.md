@@ -50,7 +50,7 @@ _May 28, 2026_
 ![Fix](../assets/fix.svg) Empty string slug values in the `categoryTree` query are now gracefully ignored.
 <!--DATA-7184-->
 
-![Fix](../assets/fix.svg)   Search results are now sorted alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
+![Fix](../assets/fix.svg) Search results are now sorted alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
 <!--DATA-2066-->
 
 _May 4, 2026_
