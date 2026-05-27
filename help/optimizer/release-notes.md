@@ -40,7 +40,7 @@ Currently, there are no [[!DNL Adobe Commerce Optimizer Studio]](overview.md#qui
 
 ### API updates
 
-_May TBD, 2026_
+_May 28, 2026_
 
 <!-- v1.2 -->
 
