@@ -8,7 +8,7 @@ recommendations: noCatalog
 
 >[!IMPORTANT]
 >
->The following feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>The following feature is in [private beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta).
 
 [!DNL Live Search] ranks results so shoppers see the most relevant products first. The service gives the strongest boost to products whose catalog text **closely matches** what the shopper types, then favors matches where query terms appear together in meaningful ways, and finally includes broader matches (including behavior that supports autocomplete-style matching).
 
