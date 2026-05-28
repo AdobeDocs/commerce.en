@@ -67,7 +67,7 @@ The [!DNL Commerce Optimizer] integration has the following limitations:
 
 Read this section **before** you choose a catalog layer name in your support ticket. Choosing or sharing layers without this context is a frequent cause of preventable support cases.
 
-**Use a dedicated layer for AEM Assets content.** Payloads sent from AEM Assets populate a Commerce Optimizer catalog **layer**. Values in that layer **overwrite** base catalog attributes where fields are supplied; when the integration omits a field in the payload, the corresponding values in that layer may be overwritten with empties—in other words layer merge behavior differs from patching a single attribute. Sharing a layer with unrelated Commerce workflows—or reusing a layer that already stores non–AEM-Assets product data—can cause **unintended data loss** or confusing overwrites. Plan the layer choice **before** you open your support ticket, and reserve that layer name (for example the default **`AEM-Assets`**) primarily for AEM-driven product image sync.
+**Use a dedicated layer for AEM Assets content.** Payloads sent from AEM Assets populate a Commerce Optimizer catalog **layer**. Values in that layer **overwrite** base catalog attributes where fields are supplied. When the integration omits a field in the payload, the corresponding values in that layer may be overwritten with empty values. Sharing a layer with unrelated Commerce workflows—or reusing a layer that already stores non–AEM-Assets product data—can cause **unintended data loss** or confusing overwrites. Plan the layer choice **before** you open your support ticket, and reserve that layer name (for example the default **`AEM-Assets`**) primarily for AEM-driven product image sync.
 
 >[!IMPORTANT]
 >

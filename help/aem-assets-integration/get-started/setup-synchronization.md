@@ -66,7 +66,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
    The selectors appear when your Commerce Admin user satisfies [User permissions and IMS](permissions.md#user-permissions-and-ims) for the experience: **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer**, and **Adobe Commerce on Cloud infrastructure** integrations can populate these fields automatically from your IMS-linked session rather than relying on pasted IDs.
 
-   If the selectors are unavailable, copy **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from AEM Cloud Manager, or derive them from your author URL: `https://author-p<ProgramID>-e<EnvironmentID>.adobeaemcloud.com/` (replace placeholders with your identifiers).
+   If the selectors are unavailable, copy **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from AEM Cloud Manager, or derive them from your author URL: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (replace placeholders with your identifiers).
 
    Clear **[!UICONTROL Use system value]** for either field before you paste or select new values manually.
 
