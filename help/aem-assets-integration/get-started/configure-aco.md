@@ -41,7 +41,7 @@ Complete the AEM Assets steps **before** you [open a support ticket](#onboarding
 
 Install and deploy the `assets-commerce` package in your AEM project so Commerce metadata schemas, events, and UI are available.
 
-Complete the full procedure in [Install the assets-commerce package](configure-aem.md#step-1-install-the-assets-commerce-package). Before you open a support ticket, follow these steps:
+Complete the full procedure in [Install the `assets-commerce` package](configure-aem.md#step-1-install-the-assets-commerce-package). Before you open a support ticket, follow these steps:
 
 1. Clone the Cloud Manager Git repository and copy the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce) code into your project.
 
