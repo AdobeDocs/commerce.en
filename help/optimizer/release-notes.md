@@ -44,7 +44,7 @@ _May 28, 2026_
 
 <!-- v1.2 -->
 
-![Fix](../assets/fix.svg) Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path.
+![Fix](../assets/fix.svg) Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path. This fix ensures that shoppers see all relevant categories in the navigation, making it easier to browse and discover items.
 <!--DATA-7183-->
 
 ![Fix](../assets/fix.svg) Empty string slug values in the `categoryTree` query are now gracefully ignored.
