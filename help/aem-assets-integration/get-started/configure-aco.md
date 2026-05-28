@@ -41,7 +41,15 @@ Complete the AEM Assets steps **before** you [open a support ticket](#onboarding
 
 Install and deploy the `assets-commerce` package in your AEM project so Commerce metadata schemas, events, and UI are available.
 
-Follow [Install the assets-commerce package](configure-aem.md#step-1-install-the-assets-commerce-package) in **Configure the AEM Assets project**.
+Complete the full procedure in [Install the assets-commerce package](configure-aem.md#step-1-install-the-assets-commerce-package). Before you open a support ticket, follow these steps:
+
+1. Clone the Cloud Manager Git repository and copy the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce) code into your project.
+
+1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of &lt;my-app&gt; with your app name.
+
+1. Commit, push, run your deployment pipeline, and validate that the **[!UICONTROL Commerce]** tab appears on asset properties.
+
+See [Install the `assets-commerce` package](configure-aem.md#step-1-install-the-assets-commerce-package) for Cloud Manager screenshots, pipeline steps, and troubleshooting if the **[!UICONTROL Commerce]** tab is missing.
 
 ### Step 2: Enable Dynamic Media with OpenAPI
 
@@ -96,6 +104,7 @@ Include the following information in your support ticket:
 * **AEM Environment ID**.
 * **Matching rule**: Match by SKU or [external matcher (App Builder)](../synchronize/custom-match.md){target=_blank}.
 * **Layer**: The catalog layer name to register the tenant with (see **Layer-related constraints**). Specify a custom name only if intentional; otherwise the default **`AEM-Assets`** is used.
+* **Locale**: The catalog source locale to register the tenant with (for example, `en-US`). This must match the locale you use in your catalog view and product catalog data.
 
 After Adobe Support processes your ticket, the integration is configured and your tenant is registered with Assets Integration Service.
 
@@ -108,9 +117,12 @@ Once onboarding is complete:
    * AEM Assets events (asset approved, updated, removed)
    * [!DNL Commerce Optimizer] catalog events (product created, updated)
 
->[!CAUTION]
->
->Assign the AEM-Assets catalog **layer** to your [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) so storefront and APIs surface the AEM-driven image data. If the layer is not assigned, image data may **not appear** or may behave unexpectedly—even though sync succeeded upstream.
+Configure your [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) so storefront and APIs surface AEM-driven image data:
+
+* **Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
+* **Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.
+
+If the locale or layer is not assigned correctly, image data may **not appear** or may behave unexpectedly—even though sync succeeded upstream.
 
 ## Synchronization
 

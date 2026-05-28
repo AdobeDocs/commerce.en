@@ -145,7 +145,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 1. From your [local AEM development environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), manually copy the downloaded code into the existing Adobe managed repository.
 
-1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of `<my-app>` with your app name.
+1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of &lt;my-app&gt; with your app name.
 
    >[!NOTE]
    >
