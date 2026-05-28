@@ -51,8 +51,7 @@ The following sections describe these steps in detail.
 
 The availability of the bulk data migration tool is as follows:
 
-- **Q1 2026** (not yet available) - After the initial release of the bulk data migration tool, you will be able to access it by submitting a support ticket.
-- **Q1 2026** (not yet available) - After the public release of the bulk data migration tool, it will be accessible from this page.
+This tool is currently available through deployed engineering engagements. If you are interested in using this tool, please contact your Adobe representative.
 
 ## Create target environment
 
