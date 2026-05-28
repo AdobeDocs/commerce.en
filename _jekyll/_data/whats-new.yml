@@ -2,8 +2,57 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 15 15:40:01 2026
+updated: Fri May 22 15:54:49 2026
 entries:
+- description: Added release notes for the API updates to [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+    and Commerce [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+    for the May 20, 2026 release which now enforces the documented the 100-SKU limit
+    per request when retrieving product data. See [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+  versions: ''
+  type: technical
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/591
+  merge_commit: 342a3015f743e12b7089e4d430a517804a7cd40c
+  contributor: meker_adobe
+  labels:
+  - release-notes
+  - technical
+- description: Documented Intelligent ranking boost (configurable behavioral weight
+    per rule, default 5.0) for [!DNL Live Search] in [Add Rules](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost)
+    and [Best practices](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice),
+    with a cross-reference from [Category Merchandising](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/category-merch).
+    Added the same guidance for [!DNL Adobe Commerce Optimizer] in [Create and manage](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)
+    and [Merchandising rules best practices](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice).
+  versions: ''
+  type: major-update
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/581
+  merge_commit: 40b4528d417a4df09ac9ae9fb0d97b0f678b55ac
+  contributor: emarr_adobe
+  labels:
+  - major-update
+- description: The AEM Assets integration guide describes how editors set [alternative
+    text](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata)
+    in the [AEM Assets integration v1.3.6 ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes).
+  versions: ''
+  type: major-update
+  date: May 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/569
+  merge_commit: 6d3dfbc59e72c00c3552af5805b57c69e60b38b4
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: May 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/585
+  merge_commit: 14aa082c1f0f8ce4c51328eb8ee9f4af25adf859
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
 - description: Expanded the [Adobe Commerce Optimizer Connector overview](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
     with key benefits, end-to-end architecture (new diagram), clearer scope mapping,
     typical setup and sync workflows, supported scenarios, and prerequisites or responsibilities
