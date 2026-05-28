@@ -5,7 +5,6 @@ user-guide-description: Documentation and resources for [!DNL Adobe Commerce Opt
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-nudge: true
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
