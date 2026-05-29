@@ -6,7 +6,9 @@ feature: CMS, Media, Integration
 
 # View AEM Assets sync status
 
-The [!UICONTROL Sync Status] view provides an asset-centric list of assets synchronized through the AEM Assets integration. Use it to find, review, and troubleshoot assets by their own attributes instead of navigating product-by-product in the catalog.
+The **[!UICONTROL Sync Status]** view provides an asset-centric list of assets synchronized through the AEM Assets integration. Use it to find, review, and troubleshoot assets by their own attributes instead of navigating product-by-product in the catalog.
+
+![AEM Assets Sync Status view](../assets/aem-assets-sync-status-view.png){width="700" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -18,42 +20,42 @@ On the _Admin_ sidebar, navigate to **[!UICONTROL System]** > **[!UICONTROL AEM 
 
 ![AEM Assets Sync Status in the System menu](../assets/aem-assets-sync-status-system-menu.png){width="600" zoomable="yes"}
 
-Integration settings remain under **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL AEM Assets Configuration]**.
-
-![AEM Assets Configuration in the Configuration tree](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
-
 ## Asset list
 
 The grid lists synchronized assets from AEM Assets. Each row represents one asset and its sync state in Commerce.
 
-Typical columns include:
+## Integration sync health
+
+At the top of the page, the **AEM Sync Status** banner summarizes pipeline health and how many events are waiting to process. Select **[!UICONTROL Refresh]** to update the banner and grid.
+
+## Asset list
+
+The grid lists synchronized assets from AEM Assets. Each row represents one asset and its sync state in Commerce—not a product record.
 
 | Column | Description |
 |--------|-------------|
-| **Asset** | Asset identifier or display name from AEM Assets. |
-| **Asset path** | Path or reference to the asset in AEM Assets. |
-| **Sync status** | Current synchronization state (for example, success, failed, or in progress). |
-| **Last sync date** | Date and time of the most recent sync attempt for the asset. |
-| **Linked products** | Product SKUs associated with the asset through matching rules or metadata. |
-| **Error details** | Short error summary when **Sync status** is failed. |
+| **Asset ID** | AEM asset identifier (for example, `urn:aaid:aem:…`). |
+| **Status** | Result of the latest sync attempt for the asset (for example, **Success** or **Failed**). |
+| **Processing** | Date and time processing started for the asset. |
+| **Dispatched** | Date and time the sync event was dispatched. |
+| **Error** | Error message when **Status** indicates a failure; empty when the sync succeeded. |
 
-Use the grid controls to show or hide columns supported in your environment.
+### Filter assets
 
-### Search and filter
+1. Select **[!UICONTROL Filters]** to expand the filter panel.
 
-Use the list toolbar to narrow results **by asset**, not by product:
+1. Enter an **Asset ID** or choose a **Status** value.
 
-* **Search** — Find assets by name, path, SKU association, or other indexed asset fields.
-* **Filters** — Limit the list by **Sync status**, date range, or other asset attributes exposed in the filter panel.
+1. Select **[!UICONTROL Apply Filters]** to update the grid, or **[!UICONTROL Cancel]** to close the panel without applying changes.
 
-Filters apply to `asset-level` data so you can isolate failed syncs or recently updated assets without opening individual products.
+Filters apply to asset-level data so you can isolate failed syncs or trace a specific asset without opening individual products.
 
 ## Failed synchronizations
 
-When **Sync status** is **Failed**, the **Error details** column shows a short error summary in the list.
+When **Status** shows a failure, review the **Error** column in the grid for the message returned by the sync pipeline.
 
-1. Open the asset row to view the detail panel or detail view.
+For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md). Integration log files are available at `/var/log/aem-assets-integration.log` and `/var/log/aem-assets-integration-errors.log` on your Commerce instance.
 
-1. Review the full error message and last sync attempt details to diagnose the failure.
+Review the full error message and last sync attempt details to diagnose the failure.
 
 For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md). Integration log files are available at `/var/log/aem-assets-integration.log` and `/var/log/aem-assets-integration-errors.log` on your Commerce instance.
