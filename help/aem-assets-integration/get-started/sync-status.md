@@ -18,11 +18,7 @@ The **[!UICONTROL Sync Status]** view provides an asset-centric list of assets s
 
 On the _Admin_ sidebar, navigate to **[!UICONTROL System]** > **[!UICONTROL AEM Assets]** > **[!UICONTROL Sync Status]**.
 
-![AEM Assets Sync Status in the System menu](../assets/aem-assets-sync-status-system-menu.png){width="600" zoomable="yes"}
-
-## Asset list
-
-The grid lists synchronized assets from AEM Assets. Each row represents one asset and its sync state in Commerce.
+![AEM Assets Sync Status in the System menu](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
 
 ## Integration sync health
 
@@ -54,7 +50,7 @@ Filters apply to asset-level data so you can isolate failed syncs or trace a spe
 
 When **Status** shows a failure, review the **Error** column in the grid for the message returned by the sync pipeline.
 
-For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md). Integration log files are available at `/var/log/aem-assets-integration.log` and `/var/log/aem-assets-integration-errors.log` on your Commerce instance.
+For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md) and [View and manage logs](logs.md).
 
 Review the full error message and last sync attempt details to diagnose the failure.
 
