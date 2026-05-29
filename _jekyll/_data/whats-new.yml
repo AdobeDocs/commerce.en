@@ -2,12 +2,27 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 22 15:54:49 2026
+updated: Fri May 29 15:39:50 2026
 entries:
-- description: Added release notes for the API updates to [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+- description: "- Improved [Configure AEM Assets for Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco)
+    onboarding so AEM Assets setup comes before tenant registration, with clearer
+    guidance on dedicated catalog layers and layer-related limitations.<br/>- Updated
+    [Configure the AEM Assets project](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+    with reordered installation steps and Cloud Manager screenshots for repository
+    access and pipeline deployment.<br/>- Clarified IMS-based Program ID and Environment
+    ID selection in [Configure the integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)."
+  versions: ''
+  type: major-update
+  date: May 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/603
+  merge_commit: de94aaad29313b3e8254d11d8801ba0d7efff3dc
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added release notes for API updates to [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
     and Commerce [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
     for the May 20, 2026 release which now enforces the documented the 100-SKU limit
-    per request when retrieving product data. See [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+    per request when retrieving product data.
   versions: ''
   type: technical
   date: May 22, 2026
