@@ -44,6 +44,16 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.26 Release
+
+_June 1, 2026_
+
+![Fix](../assets/fix.svg) register EE staging log codes CDE03-22..26. <!--MDEE-1382-->
+![Fix](../assets/fix.svg) Currency change does not update product feed. <!--MDEE-1376-->
+![Fix](../assets/fix.svg) Children categories should be not active if top-level category disabled. <!--MDEE-1369-->
+## New Contributors
+@developlex made their first contribution in https://github.com/magento-commerce/commerce-data-export/pull/557
+
 ### 103.4.25 Release
 
 _May 19, 2026_
