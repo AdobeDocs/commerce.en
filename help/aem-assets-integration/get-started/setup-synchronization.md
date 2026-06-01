@@ -3,6 +3,26 @@ title: Configure the integration
 description: Learn how to connect your Adobe Commerce project and Experience Manager Assets projects to enable asset synchronization between these two systems.
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
+TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Configure the integration
 
@@ -44,11 +64,13 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 1. Select the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from the dropdown menus.
 
-   The dropdowns auto-populate based on the user's IMS session. To use this feature, ensure you have the right [User permissions and IMS](permissions.md#user-permissions-and-ims).
+   The selectors appear when your Commerce Admin user satisfies [User permissions and IMS](permissions.md#user-permissions-and-ims) for the experience: **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer**, and **Adobe Commerce on Cloud infrastructure** integrations can populate these fields automatically from your IMS-linked session rather than relying on pasted IDs.
 
-   If the dropdowns are not available, you can manually enter the IDs from the AEM Cloud Manager URL: `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+   If the selectors are unavailable, copy **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from AEM Cloud Manager, or derive them from your author URL: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (replace placeholders with your identifiers).
 
-   Edit the configuration values by removing the selection from *[!UICONTROL Use system value]*.
+   Clear **[!UICONTROL Use system value]** for either field before you paste or select new values manually.
+
+   ![AEM Assets Integration form with Program ID and Environment ID selectors](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}  Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 

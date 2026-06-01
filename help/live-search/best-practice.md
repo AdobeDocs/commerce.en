@@ -1,8 +1,28 @@
 ---
-title: '[!DNL Live Search] Best Practices'
+title: "[!DNL Live Search] Best Practices"
 description: Learn the best practices for implementing [!DNL Live Search] in your store.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
+TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Best Practices
 
@@ -106,6 +126,7 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
 - Always use the "Test your rule" panel to preview how your intelligent ranking strategy affects actual search results for different queries.
+- When you enable intelligent ranking, tune **[Intelligent ranking boost](rules-add.md#intelligent-ranking-boost)** in the rule editor to balance popularity-style signals with textual relevance, and verify results for target queries in **Test your rule**. The intelligent ranking boost is not available for the **None** strategy.
 - Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
 
 Learn more about search rules:

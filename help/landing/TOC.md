@@ -1,5 +1,6 @@
 ---
 user-guide-title: Services Guides
+breadcrumb-title: Commerce Services
 user-guide-description: Documentation and resources for hosted services that provide extended capabilities to Adobe Commerce and Magento Open Source.
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
@@ -11,7 +12,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 - [Overview](home.md)
 - Release information {#release-information}
    - [Release notes](/help/landing/release-notes-all.md)
-- [Product solutions](product-solutions.md)
+- {hide-from-toc} [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
@@ -22,6 +23,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
    - [Services Connector](/help/landing/saas.md)
+   - [Integrate [!DNL Adobe Commerce] with [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
 - Data tools {#data-services}
    - [SaaS Data Export](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
    - [SaaS Price Indexing](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)

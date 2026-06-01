@@ -3,45 +3,208 @@ title: Adobe Commerce Optimizer Connector
 description: Learn how to connect your data from your Commerce cloud or on-premises project to Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
-
 # Adobe Commerce Optimizer Connector
 
-The Adobe Commerce Optimizer Connector is the integration bridge that synchronizes catalog and pricing data between an Adobe Commerce on cloud infrastructure or on-premises deployment and [!DNL Adobe Commerce Optimizer]. Syncing data to Adobe Commerce Optimizer enables features such as dynamic AI search, recommendations, site optimization, and fast-loading headless storefronts, including Adobe Commerce storefronts on Edge Delivery Services, and real-time performance analytics.
+The Adobe Commerce Optimizer Connector is a native, first-party integration between Adobe Commerce (cloud or on-premises) and Adobe Commerce Optimizer. It synchronizes catalog and pricing data from your Adobe Commerce stores into Commerce Optimizer so you can:
 
-## Architecture and experience
+- Power **AI-driven product discovery and recommendations**
+- Run **high-performance headless storefronts** (including Commerce storefronts powered by Edge Delivery)
+- Analyze **before and after** KPIs and data-sync health in a single place
 
-The Adobe Commerce Optimizer Connector operates by mapping Commerce websites and store views to a Commerce Optimizer project as shown in the following figure:
+Commerce remains your system of record for products, prices, and catalog structure. Commerce Optimizer becomes your experience and merchandising layer, serving fast, relevant results to any connected storefront or channel.
 
-![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
+## Key benefits {#key-benefits}
 
-When data is exported from Commerce to Commerce Optimizer:
+| Benefit | What it means for you |
+| --- | --- |
+| **No custom connector to build** | Use a supported, first-party integration instead of writing and maintaining bespoke feeds and scripts. |
+| **Faster time to value with Commerce Optimizer** | Turn on AI search, recommendations, and headless storefronts on top of your existing Adobe Commerce deployment. |
+| **Aligned with Commerce scopes** | Automatically maps Websites, Store Views, and customer groups into Commerce Optimizer catalog constructs (Catalog Sources and Price Books). |
+| **Operational visibility** | Monitor feed health, last sync times, and per-SKU status from a dedicated Data Feed Sync Status view. |
+| **Future-ready path toward SaaS** | Provides a low-risk modernization path from PaaS towards Adobe Commerce as a Cloud Service + Optimizer, without a re-platform. |
 
-* Commerce store views are mapped to catalog sources
-* Websites are mapped to price books
+## Connector architecture {#connector-architecture}
 
-The associated catalog and price data is exported and later used to create catalog views and optionally define policies to filter the catalog and price data for specific business use cases.
+The following diagram illustrates the end-to-end architecture for the connector, from Adobe Commerce through Commerce Optimizer and out to storefronts and checkout systems.
 
-When the connector is enabled, you can also configure and manage merchandising rules for product discovery and rules for recommendations using [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/overview.md#quick-tour) The Adobe Commerce instance becomes the data source for catalog and price data. When the data is updated in Commerce, the updates are synced to the [!DNL Adobe Commerce Optimizer] instance.
+![Commerce Optimizer Connector end-to-end architecture diagram Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
-## Workflows
+In this architecture:
 
-The Connector enables several key workflows:
+- Adobe Commerce (on cloud or on-premises) is the system of record and feed producer
+- The Connector exports catalog, price, and category feeds
+- Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views
+- Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations
 
-* **Export Commerce catalog data to [!DNL Adobe Commerce Optimizer]**—price and price book data is exported at the website and customer group level. Product and product attribute data is exported at the `store view` level. By default, catalog data sync is enabled for all Commerce scopes (websites and store views).
+## How the connector works with Adobe Commerce {#how-it-works}
 
-  To enable this workflow, install the `adobe-commerce/commerce-data-export-aco-adapter` PHP extension, review the exporter configuration, and then enable the integration between Commerce and Commerce Optimizer from the Commerce Admin. For detailed instructions, see [Get Started](get-started.md).
+- Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views.
 
-* **Map the Commerce website and store view data to export to [!DNL Adobe Commerce Optimizer]**
+- Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations.
 
-  Optionally, customize the export settings to sync data only for specific websites or store views. For example, you can choose to export catalog data for only one store view to use for a specific use case, such as optimizing the search and discovery experience for a specific market or region.
+## How the connector works with Adobe Commerce
 
-* **Merchandising rule configuration and management**
+The Adobe Commerce Optimizer Connector operates by using your existing Commerce scopes (websites and store views) and customer segmentation to populate the Commerce Optimizer catalog model:
 
-  When the Connector is enabled, merchandising rules for product discovery and recommendations are defined and managed from the [!DNL Adobe Commerce Optimizer] UI, not from the [!UICONTROL Live Search] and [!UICONTROL Product Recommendations] pages in the Commerce Admin.
+![Mapping Commerce data to Adobe Commerce Optimizer](/help/aco-connector/assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
 
-* **Deploy your Commerce Storefront on Edge Delivery Services**
+- **Store Views → Catalog Sources** — Each store view becomes a separate Catalog Source in Commerce Optimizer. That source includes localized product attributes and any store-view-specific data
+- **Websites → Price Books** — Each Commerce website maps to one or more Price Books in Commerce Optimizer. Website pricing and customer group pricing export as price books and price entries
+- **Customer groups → Price variants** — Commerce customer group pricing appears as additional entries in the relevant Price Books
 
-  After setting up the integration with [!DNL Adobe Commerce Optimizer], you can deploy a Commerce Storefront on Edge Delivery Services. This delivers ultra-fast performance, scalability, seamless content authoring, and integrated personalization using a composable, API-driven architecture.
+After Commerce Optimizer ingests the data, you can configure:
 
-For details on how to set up the integration and enable these workflows, see [Get Started](get-started.md).
+- **Catalog Views and Policies** in Commerce Optimizer (for building region, brand, or customer-specific subsets)
+- **Product Discovery** (search, facets, merchandising rules)
+- **Product Recommendations**
+
+When you enable the connector, the Adobe Commerce instance remains the system of record for catalog and price data. When you update data in Commerce, the connector syncs those updates to the [!DNL Adobe Commerce Optimizer] instance.
+
+>[!NOTE]
+>
+>For details on configuring Commerce Optimizer, see [[!DNL Adobe Commerce Optimizer] Merchandising tools](../optimizer/overview.md#quick-tour).
+
+## Typical workflows {#typical-workflows}
+
+These workflows describe how teams set up and use the Adobe Commerce Optimizer Connector. For details on how to set up the integration and enable these workflows, see [Get Started](get-started.md).
+
+### Initial setup and configuration {#initial-setup}
+
+1. **Install the connector package in Adobe Commerce** using Composer:
+
+    `composer require adobe-commerce/commerce-data-export-aco-adapter`
+
+1. **Configure authentication and environment details** in Commerce Admin or via CLI:
+
+    ```terminal
+    bin/magento aco:config:init \
+      --org_id=<your-org> \
+      --tenant_id=<your-tenant> \
+      --client_id=<your-client-id> \
+      --client_secret=<your-secret> \
+      --region=na1 \
+      --type=production
+    ```
+
+1. **Map Commerce scopes to Commerce Optimizer:**
+
+    - Confirm which Websites and Store Views must be in scope
+    - Ensure customer groups and price rules are modeled as expected
+
+1. **Verify connectivity:**
+
+    - Run a test sync and confirm that Catalog Sources, Price Books, and initial products appear in Commerce Optimizer
+    - Use the Data Feed Sync Status page in Commerce and the Data Sync dashboards in Commerce Optimizer for validation
+
+### Ongoing data synchronization {#ongoing-sync}
+
+After the initial configuration, the connector supports:
+
+- **Full catalog sync** for initial migration or large structural changes
+- **Delta syncs** for ongoing updates when products or prices change
+- **Resync commands** for targeted feeds (including categories as of v1.0.12):
+
+  - `bin/magento saas:resync --feed=products`
+  - `bin/magento saas:resync --feed=prices`
+  - `bin/magento saas:resync --feed=categories`
+
+### Configure merchandising and storefronts {#merchandising-storefronts}
+
+After Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.
+
+**To configure merchandising and storefronts:**
+
+1. **Create Catalog Views and Policies** in Commerce Optimizer Studio:
+
+    - Filter the catalog by brand, region, customer segment, or channel
+    - Enforce data-access rules per storefront or partner
+
+1. **Configure Product Discovery and Recommendations** in the Optimizer UI:
+
+    - Create merchandising rules, facets, synonyms, and recommendation units
+    - The connector offloads all search and recommendation configuration to Commerce Optimizer (Live Search rules and Product Recommendations in Commerce Admin no longer apply to these flows)
+
+1. **Connect storefronts** to Commerce Optimizer:
+
+    - For a Commerce Storefront powered by Edge Delivery Services, configure the storefront to use the correct Optimizer tenant and Catalog View, and to call search and recommendation endpoints through the Merchandising API
+    - For third-party storefronts, use Optimizer public APIs or SDKs for search and recommendation calls
+
+    >[!NOTE]
+    >
+    >For an example third-party integration, see the [Salesforce Commerce Connector for Commerce Optimizer](../optimizer/developer/salesforce-connector.md).
+
+1. **Maintain checkout** on your existing platform:
+
+    - Keep cart, checkout, order management, and customer accounts in Adobe Commerce or a third-party platform
+    - Use App Builder and API Mesh for cart handoff when you integrate with external checkout systems
+
+## Supported scenarios {#supported-scenarios}
+
+The connector is designed for B2C merchants with Adobe Commerce on cloud and on-premises deployments who want to adopt Commerce Optimizer without rebuilding their backend.
+
+**Common use cases:**
+
+- **Modernizing the storefront only**
+  Keep your existing Commerce backend, move PLP/Search/PDP to Edge Delivery storefronts powered by Commerce Optimizer
+
+- **Scaling catalog and search performance**
+  Offload heavy catalog indexing and search to Commerce Optimizer's SaaS services while maintaining product and price ownership in Commerce
+
+- **Incremental SaaS adoption**
+  Use the connector as a stepping stone toward Adobe Commerce as a Cloud Service + Optimizer, with a compatible composable Commerce catalog
+
+## Responsibilities and implementation prerequisites {#responsibilities-prerequisites}
+
+Commerce is the source of truth for products, pricing, and customer groups. Make changes in Commerce; the connector syncs them to Commerce Optimizer.
+
+**Commerce Optimizer is responsible for:**
+
+- Catalog modeling (Catalog Sources, Price Books, Catalog Views, Policies)
+- Product discovery and recommendations
+- Storefront metrics, data-sync dashboards, and Success Metrics reports
+
+**The connector does not:**
+
+- Modify Commerce cart, checkout, or order flows
+- Automatically provision storefront projects (Commerce Storefront / Edge Delivery tooling handles that)
+
+**Before you begin:**
+
+- Verify that Commerce meets the minimum version and services connector requirements. See [Get Started](get-started.md#prerequisites) for details.
+- Ensure that you have IMS org access, an [!DNL Adobe Commerce Optimizer] instance, and the necessary credentials and region details.
+
+## Related documentation {#related-documentation}
+
+- Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
+- Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)

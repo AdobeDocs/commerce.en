@@ -2,8 +2,120 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 24 15:41:13 2026
+updated: Fri May 29 15:39:50 2026
 entries:
+- description: "- Improved [Configure AEM Assets for Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco)
+    onboarding so AEM Assets setup comes before tenant registration, with clearer
+    guidance on dedicated catalog layers and layer-related limitations.<br/>- Updated
+    [Configure the AEM Assets project](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+    with reordered installation steps and Cloud Manager screenshots for repository
+    access and pipeline deployment.<br/>- Clarified IMS-based Program ID and Environment
+    ID selection in [Configure the integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)."
+  versions: ''
+  type: major-update
+  date: May 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/603
+  merge_commit: de94aaad29313b3e8254d11d8801ba0d7efff3dc
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added release notes for API updates to [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+    and Commerce [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+    for the May 20, 2026 release which now enforces the documented the 100-SKU limit
+    per request when retrieving product data.
+  versions: ''
+  type: technical
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/591
+  merge_commit: 342a3015f743e12b7089e4d430a517804a7cd40c
+  contributor: meker_adobe
+  labels:
+  - release-notes
+  - technical
+- description: Documented Intelligent ranking boost (configurable behavioral weight
+    per rule, default 5.0) for [!DNL Live Search] in [Add Rules](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost)
+    and [Best practices](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice),
+    with a cross-reference from [Category Merchandising](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/category-merch).
+    Added the same guidance for [!DNL Adobe Commerce Optimizer] in [Create and manage](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)
+    and [Merchandising rules best practices](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice).
+  versions: ''
+  type: major-update
+  date: May 22, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/581
+  merge_commit: 40b4528d417a4df09ac9ae9fb0d97b0f678b55ac
+  contributor: emarr_adobe
+  labels:
+  - major-update
+- description: The AEM Assets integration guide describes how editors set [alternative
+    text](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata)
+    in the [AEM Assets integration v1.3.6 ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes).
+  versions: ''
+  type: major-update
+  date: May 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/569
+  merge_commit: 6d3dfbc59e72c00c3552af5805b57c69e60b38b4
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: May 19, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/585
+  merge_commit: 14aa082c1f0f8ce4c51328eb8ee9f4af25adf859
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
+- description: Expanded the [Adobe Commerce Optimizer Connector overview](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
+    with key benefits, end-to-end architecture (new diagram), clearer scope mapping,
+    typical setup and sync workflows, supported scenarios, and prerequisites or responsibilities
+    so teams can assess and operate the integration more easily.
+  versions: ''
+  type: feedback, major-update
+  date: April 30, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/535
+  merge_commit: fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33
+  contributor: meker
+  labels:
+  - feedback
+  - major-update
+- description: Added an [observability](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
+    page for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: feedback, new-topic
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/512
+  merge_commit: bf83f213d1774845c4c99f3b154e9fb3220c3cd1
+  contributor: jhoover
+  labels:
+  - feedback
+  - new-topic
+- description: Updated [Manage your app](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)
+    with how to find applications in the Admin (search, Status, and Extensibility
+    patterns filters) and the Acquire App path to Adobe Exchange, with links from
+    the [App Management overview](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+    and [Install and access App Management](https://experienceleague.adobe.com/en/docs/commerce/app-management/install).
+  versions: ''
+  type: major-update
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/540
+  merge_commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+  contributor: del
+  labels:
+  - major-update
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: April 27, 2026
+  link: enterprise:AdobeDocs/commerce.en/pull/545
+  merge_commit: 41035e75111d370e5dc40c17607337ae75f11fa0
+  contributor: jhoover
+  labels:
+  - core-saas
+  - major-update
 - description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''

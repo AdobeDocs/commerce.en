@@ -1,8 +1,27 @@
 ---
 title: What is [!DNL Live Search]?
-description: '[!DNL Live Search] from Adobe Commerce delivers a fast, relevant, and intuitive search experience.'
+description: "[!DNL Live Search] from Adobe Commerce delivers a fast, relevant, and intuitive search experience."
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
+TQID: https://experienceleague.adobe.com/360T44Ynj6BelCeuhHPH4OZ-1-35ocW1s1eY3Ag49Cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # What is [!DNL Live Search]?
 
@@ -59,6 +78,15 @@ When a search is made, [!DNL Live Search] runs a non-fuzzy search which does not
 
 In addition to the fuzzy search logic, transpositions are also accounted for, that is, where two adjacent characters in a word are swapped, for example "teh" instead of "the". Note that these edit limits are per word and not the phrase as a whole.
 
+### Filters versus facets
+
+[!DNL Live Search] can filter results by any attribute that is indexed as filterable. A facet is simply a filterable attribute that has been configured to show as a shopper-facing filter in the storefront (for example, Brand, Color, Price).
+
+Some internal fields—such as `inStock`—are filterable but not facetable:
+
+- They can be used in API filters (for example to hide out-of-stock products).
+- They do not appear in the [!UICONTROL Add Facet] dialog and cannot be displayed as shopper-facing facets.
+
 ### Filtered search with facets
 
 Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly used facets pinned to the top of the list.
@@ -77,7 +105,7 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 - [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+ and replaces the Search Adapter.
-- (**Deprecated**) Search Adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements. Going forward, the Search Adapter will only be updated to address security issues. See the [migration guide](migrate-to-plp.md) for detailed information about migrating to the PLP widget.
+- (**Deprecated**) Search Adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements. See the [migration guide](migrate-to-plp.md) for detailed information about migrating to the PLP widget.
 
 ## [!DNL Live Search] workspace
 

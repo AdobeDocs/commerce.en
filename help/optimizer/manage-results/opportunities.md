@@ -2,6 +2,43 @@
 title: Opportunities
 description: Identify opportunities to boost traffic, engagement, and conversions through integration with Adobe Sites Optimizer for smart, data-driven site improvements.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
+TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Opportunities
 
@@ -122,7 +159,7 @@ Follow these steps to implement an AI-suggested optimization:
    
    - Creates a new catalog layer for the product (if one does not already exist).
    - Updates the relevant attribute (such as meta title, description, or H1) based on the AI recommendation.
-   - Assigns the new layer as the highest priority (order 1) in the catalog view.
+   - Assigns the new layer as the highest priority (higher number) in the catalog view.
    - Validates the change through the catalog storefront service.
 
 1. Monitor the deployment status. The system updates the suggestion status automatically once validation is complete.
@@ -140,7 +177,7 @@ Follow these steps to implement an AI-suggested optimization:
 
 ### How catalog layers work with auto-fix
 
-If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it order 1 (highest priority). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
+If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it as the highest priority (highest number). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix will not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
 
 ![Catalog Layers](../assets/catalog-layers.png)
 
@@ -160,9 +197,9 @@ If an optimization does not appear to be applied on your storefront:
 
 1. Check the status indicator in the **Optimized (Done)** tab.
 1. If you see a warning icon, verify the catalog layer priority settings.
-1. Ensure the optimization layer is set as order 1 (highest priority) in your catalog view.
+1. Ensure the optimization layer is set as the highest priority (highest number) in your catalog view.
 1. Confirm that catalog data synchronization is active and up-to-date.
-1. Allow time for changes to propagate. Even with a properly configured layer at order 1, changes may take time to appear on your storefront, similar to the delay when publishing new products.
+1. Allow time for changes to propagate. Even with a properly configured layer at the highest order number, changes may take time to appear on your storefront, similar to the delay when publishing new products.
 
 ## How Sites Optimizer and success metrics work together
 

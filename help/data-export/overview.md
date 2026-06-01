@@ -1,12 +1,35 @@
 ---
-title: '[!DNL SaaS Data Export Guide]'
+title: "[!DNL SaaS Data Export Guide]"
 description: Learn about using the [!DNL data export] extension for Adobe Commerce SaaS services that synchronizes data between Adobe Commerce and connected Commerce services.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
+TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # [!DNL SaaS Data Export] Guide
 
 [!DNL SaaS data export] synchronizes data between an Adobe Commerce instance and connected Commerce Services. When you add Live Search, Product Recommendations, or the Catalog Service to an Adobe Commerce installation, the [!DNL Data export] extension is installed automatically.
+
+>[!NOTE]
+>
+>If you install the Adobe Commerce Optimizer Connector, the same Data Export extension is used to send catalog and pricing feeds to Adobe Commerce Optimizer using the Composable Catalog Data Model (CCDM). See the [Adobe Commerce Optimizer Connector guide](../aco-connector/overview.md) for architecture and configuration details.
 
 SaaS data export collects and exports various types of data, referred to as _feeds_, which aggregate specific types of information. Depending on which Commerce services are installed, the SaaS data export feeds include:
 
@@ -21,7 +44,7 @@ SaaS data export is delivered as a PHP extension. It supports several methods to
 
   - The [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in the Commerce Admin provides a graphical view of the synchronization status that shows product data successfully synced to commerce services. You can use the dashboard to perform a full resynchronization (_full sync_) of all feeds. However, Adobe recommends only performing a full sync the first time you connect Adobe Commerce to a Commerce service. See [Synchronization process](data-synchronization.md).
 
-  {{aco-data-sync-verification}}
+    {{aco-data-sync-verification}}
 
   - The [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page provides real-time insights into the health and performance of data export feeds that transfer product and category data from Commerce to external services such as Product Recommendations, Live Search, and Catalog Service, or Adobe Commerce Optimizer.
 

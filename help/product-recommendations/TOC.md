@@ -1,13 +1,15 @@
 ---
 user-guide-title: "[!DNL Product Recommendations] Guide"
+breadcrumb-title: "[!DNL Product Recommendations]"
 user-guide-description: This guide provides detailed instructions for using [!DNL Product Recommendations] from Adobe Commerce.
 role: Admin
 feature: Services, Recommendations
+nudge: true
 ---
 # [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
 - [Guide Overview](guide-overview.md)
-- [Introduction to [!DNL Product Recommendations]](overview.md)
+- [What are [!DNL Product Recommendations]?](overview.md)
 - [Release Notes](release-notes.md)
 - [Boundaries and Limits](boundaries-limits.md)
 - Get Started {#getting-started}

@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL Live Search] Guide"
+breadcrumb-title: "[!DNL Live Search]"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Live Search] from Adobe Commerce."
 role: Admin
 feature: Services, Search
@@ -36,6 +37,7 @@ feature: Services, Search
       - [Add Rules](rules-add.md)
       - [Manage Rules](rules-manage.md)
    - [Category Merchandising](category-merch.md)
+   - [Manage out-of-stock products](manage-out-of-stock-products.md)
    - [Indexing](indexing.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)

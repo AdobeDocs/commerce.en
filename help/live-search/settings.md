@@ -2,6 +2,13 @@
 title: Settings
 description: Configure semantic search, price facet ranges, and the default indexing language for the [!DNL Live Search] service.
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
+TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Settings
 

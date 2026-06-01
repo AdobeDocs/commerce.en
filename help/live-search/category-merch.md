@@ -4,6 +4,19 @@ description: Use [!DNL Live Search] Category Merchandising for a faster shopping
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
 ---
 # Category Merchandising
 
@@ -19,7 +32,7 @@ The feature is accessed in the Admin at **Marketing** > SEO & Search > **[!DNL L
 >
 >Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). If you see the Category Merchandising workspace but it is not populated with data, update the [!DNL Live Search] module.
 
-![Categry Merchandising](assets/category_workspace.png)
+![Category merchandising workspace](assets/category_workspace.png)
 
 The Category Merchandising view shows defined category rules, with columns for:
 
@@ -45,6 +58,9 @@ Intelligent ranking methods are:
 * Recommended for you: based on each shopper's previous and current on-site behavior, ranks products by how likely the shopper is to interact with each one.
 * Trending: ranks products by recent upswings in popularity based on views.
 * None: ranks products by their default order.
+
+
+For any intelligent ranking method except **None**, you can set **[!UICONTROL Intelligent Ranking Boost]** in the rule editor to tune how strongly behavioral signals affect product order. For details about defaults, limits, preview behavior, and how boost compares to **Manual ranking** see [Intelligent ranking boost](rules-add.md#intelligent-ranking-boost).
 
 **Manual ranking** allows users to override the automatic product sort order by defining manual pin, boost, bury, and hide rules. 
 
@@ -89,7 +105,7 @@ To create a category rule:
     ![Select a category](assets/category_select.png)
 
 1. In the _Add Category rule_ view, select the Intelligent ranking method you wish to apply to the category.
-   The Category Preview Page shows the actual results of the selected ranking, using your Live Search data.
+   The Category Preview Page shows the actual results of the selected ranking, using your [!DNL Live Search] data.
 1. Click **Save and Publish** to save the rule.
 
   ![Select the Intelligent ranking method](assets/category_ranking.png)

@@ -1,19 +1,43 @@
 ---
 title: "[!DNL Product Recommendations] Release Notes"
-description: "The latest release information for [!DNL Product Recommendations] from Adobe Commerce."
+description: The latest release information for [!DNL Product Recommendations] from Adobe Commerce.
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
+TQID: https://experienceleague.adobe.com/cr5tBPTFRNlSTqtFNfUWS6p1LdhSrir28x3N1WC4Zw8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # [!DNL Product Recommendations] Release Notes
 
-The release notes contain updates to the following [!DNL Product Recommendations] modules:
+The release notes describe updates to the following [!DNL Product Recommendations] modules:
 
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
 
-Support is provided for the latest released version. Release notes for older versions are provided for reference.
-The release notes include:
+Adobe supports the latest released Product Recommendations version. Release notes for older versions are provided for reference.
+
+Updates include:
 
 ![New](../assets/new.svg) New features
 ![Fix](../assets/fix.svg) Fixes and improvements
@@ -24,6 +48,10 @@ See the developer documentation to [learn about product support](https://experie
 ## Hosted service updates
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
+
+_April 28, 2026_
+
+![Fix](../assets/fix.svg) (**[!DNL Adobe Commerce as a Cloud Service]** only) Updated the [product preview panel](create.md#preview-recommendations): it now appears only for recommendation types that need a SKU for preview (for example, cross-sell, upsell, and similarity-based recommendations). For other types, the preview is hidden. Personalized types such as **Recently Viewed** and **Recommended for You** show a message when preview is not supported.
 
 _February 19, 2026_
 

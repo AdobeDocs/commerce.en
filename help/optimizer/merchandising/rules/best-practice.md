@@ -4,6 +4,18 @@ description: Learn the best practices for implementing merchandising rules for s
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
+TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Merchandising Rules Best Practices
 
@@ -20,6 +32,7 @@ It is crucial to establish a well thought out **default rule**. Your [default ru
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
 - Tailor search results based on individual shopper behavior using [intelligent ranking](add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on.
+- When an intelligent strategy other than **None** is selected, tune **[Intelligent ranking boost](add.md#intelligent-ranking-boost)** per rule and validate in **Test your rule** before publishing.
 - Always use the "Test your rule" panel to preview how your intelligent ranking strategy affects actual search results for different queries.
 
 ## Tips for category rules
@@ -29,6 +42,6 @@ It is crucial to establish a well thought out **default rule**. Your [default ru
 >Category rules are in beta.
 
 - Use [category rules](add.md#rule-types) on high-traffic or high-margin **category pages** where curated order matters as much as search—for example, seasonal collections or featured departments.
-- Align **intelligent ranking** (for example, trending, most viewed) with how shoppers browse that category; category pages do not use search query text the way search rules do. See [Intelligent ranking](add.md#intelligent-ranking).
+- Align **intelligent ranking** (for example, trending, most viewed) with how shoppers browse that category; category pages do not use search query text the way search rules do. See [Intelligent ranking](add.md#intelligent-ranking). For intelligent methods other than **None**, use **[Intelligent ranking boost](add.md#intelligent-ranking-boost)** and category preview to tune behavioral strength for that category rule.
 - Apply **pin**, **boost**, and **bury** consistently with your campaign plan; remember that manual positions usually apply only when the shopper uses the **default sort** for the listing. See [Manual ranking](add.md#manual-ranking).
 - Preview in the **category** rule flow in the editor and validate on the storefront after publish, the same discipline you use for the "Test your rule" panel on search.
