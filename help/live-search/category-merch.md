@@ -32,7 +32,7 @@ The feature is accessed in the Admin at **Marketing** > SEO & Search > **[!DNL L
 >
 >Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). If you see the Category Merchandising workspace but it is not populated with data, update the [!DNL Live Search] module.
 
-![Categry Merchandising](assets/category_workspace.png)
+![Category merchandising workspace](assets/category_workspace.png)
 
 The Category Merchandising view shows defined category rules, with columns for:
 
@@ -58,6 +58,9 @@ Intelligent ranking methods are:
 * Recommended for you: based on each shopper's previous and current on-site behavior, ranks products by how likely the shopper is to interact with each one.
 * Trending: ranks products by recent upswings in popularity based on views.
 * None: ranks products by their default order.
+
+
+For any intelligent ranking method except **None**, you can set **[!UICONTROL Intelligent Ranking Boost]** in the rule editor to tune how strongly behavioral signals affect product order. For details about defaults, limits, preview behavior, and how boost compares to **Manual ranking** see [Intelligent ranking boost](rules-add.md#intelligent-ranking-boost).
 
 **Manual ranking** allows users to override the automatic product sort order by defining manual pin, boost, bury, and hide rules. 
 
@@ -102,7 +105,7 @@ To create a category rule:
     ![Select a category](assets/category_select.png)
 
 1. In the _Add Category rule_ view, select the Intelligent ranking method you wish to apply to the category.
-   The Category Preview Page shows the actual results of the selected ranking, using your Live Search data.
+   The Category Preview Page shows the actual results of the selected ranking, using your [!DNL Live Search] data.
 1. Click **Save and Publish** to save the rule.
 
   ![Select the Intelligent ranking method](assets/category_ranking.png)
