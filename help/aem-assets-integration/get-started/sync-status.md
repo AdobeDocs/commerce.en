@@ -12,7 +12,7 @@ The **[!UICONTROL Sync Status]** view provides an asset-centric list of assets s
 
 >[!NOTE]
 >
-> [!UICONTROL Sync Status] is available in the Adobe Commerce Admin for Adobe Commerce as a Cloud Service and Adobe Commerce on Cloud infrastructure projects. It is not available for [!DNL Adobe Commerce Optimizer].
+> [!UICONTROL Sync Status] is not available for [!DNL Adobe Commerce Optimizer].
 
 ## Open Sync Status
 
@@ -31,7 +31,7 @@ The grid lists assets processed by the AEM Assets sync pipeline and their curren
 | Column | Description |
 |--------|-------------|
 | **Asset ID** | AEM asset identifier (for example, `urn:aaid:aem:…`). |
-| **Status** | Result of the latest sync attempt for the asset (for example, **Success** or **Failed**). |
+| **Status** | Result of the latest sync attempt for the asset. Possible values are **Success**, **Failed**, or **Waiting**. |
 | **Processing** | Date and time processing started for the asset. |
 | **Dispatched** | Date and time the sync event was dispatched. |
 | **Error** | Error message when **Status** indicates a failure; empty when the sync succeeded. |
