@@ -50,15 +50,19 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## May 2026 - release #2 {#latest}
+## June 2026 - release #1 {#latest}
 
-[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
 
-The following items were released to Production environments on May 28, 2026.
+The following items will be released to Production environments on June 4, 2026.
 
 >[!BEGINSHADEBOX]
+
+### Add and edit custom coupon codes in the Admin
+
+Merchants can now create and edit custom coupon codes directly from the [!DNL Commerce Admin] on manual cart price rules. A new [!UICONTROL **Add Custom Coupon**] button is available in the [!UICONTROL **Manage Coupon Codes**] section when editing a cart price rule. <!-- CCSAAS-4508 -->
 
 ### Track shipments using default and custom carriers
 
@@ -97,6 +101,8 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * The `guestOrderByToken` GraphQL query now returns a more informative error message when called with a malformed token, instead of an internal server error. <!-- CCSAAS-4921 -->
 
 * The `customer` GraphQL query now returns a more informative error message when customer orders cannot be loaded. <!-- ACCS-867 -->
+
+* The GET `V1/customers/{customerId}` REST endpoint now returns the `assistance_allowed` configuration field. <!-- USF-4132 -->
 
 {{accs-release}}
 
