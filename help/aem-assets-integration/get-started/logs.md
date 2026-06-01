@@ -12,7 +12,7 @@ The AEM Assets integration provides the following log files in your Commerce ins
 - `/var/log/aem-assets-integration.log`
 - `/var/log/aem-assets-integration-errors.log`
 
-For an asset-centric view of synchronized assets in the Admin—including search, filters, and sync error summaries—see [View AEM Assets sync status](sync-status.md).
+For an asset-centric view of synchronized assets in the Admin, including search, filters, and sync error summaries, see [View AEM Assets sync status](sync-status.md).
 
 Ask your System Administrator to check the log file rotation schedule for these logs to prevent them from growing too large. In some environments, logs rotate automatically; in others, you must configure log rotation manually.  For details, see the following topics:
 

@@ -22,11 +22,11 @@ On the _Admin_ sidebar, navigate to **[!UICONTROL System]** > **[!UICONTROL AEM 
 
 ## Integration sync health
 
-At the top of the page, the **AEM Sync Status** banner summarizes pipeline health and how many events are waiting to process. Select **[!UICONTROL Refresh]** to update the sync health banner.
+At the top of the page, the **AEM Sync Status** banner summarizes pipeline health and how many events are waiting to be processed. Select **[!UICONTROL Refresh]** to update the sync health banner.
 
 ## Asset list
 
-The grid lists assets processed by the AEM Assets sync pipeline and their current sync state. Each row represents one asset and its sync state in Commerce—not a product record.
+The grid lists assets processed by the AEM Assets sync pipeline and their current sync state. Each row represents one asset and its sync state in Commerce. It does not represent a product record.
 
 | Column | Description |
 |--------|-------------|
@@ -42,9 +42,9 @@ The grid lists assets processed by the AEM Assets sync pipeline and their curren
 
 1. Enter an **Asset ID** or choose a **Status** value.
 
-1. Select **[!UICONTROL Apply Filters]** to update the grid, or **[!UICONTROL Cancel]** to close the panel without applying changes.
+1. Select **[!UICONTROL Apply Filters]** to update the grid or **[!UICONTROL Cancel]** to close the panel without applying changes.
 
-Filters apply to asset-level data so you can isolate failed syncs or trace a specific asset without opening individual products.
+Filters apply to asset-level data, enabling you to isolate failed syncs or to trace a specific asset without opening individual products.
 
 ## Failed synchronizations
 
