@@ -22,11 +22,11 @@ On the _Admin_ sidebar, navigate to **[!UICONTROL System]** > **[!UICONTROL AEM 
 
 ## Integration sync health
 
-At the top of the page, the **AEM Sync Status** banner summarizes pipeline health and how many events are waiting to process. Select **[!UICONTROL Refresh]** to update the banner and grid.
+At the top of the page, the **AEM Sync Status** banner summarizes pipeline health and how many events are waiting to process. Select **[!UICONTROL Refresh]** to update the sync health banner.
 
 ## Asset list
 
-The grid lists synchronized assets from AEM Assets. Each row represents one asset and its sync state in Commerce—not a product record.
+The grid lists assets processed by the AEM Assets sync pipeline and their current sync state. Each row represents one asset and its sync state in Commerce—not a product record.
 
 | Column | Description |
 |--------|-------------|
@@ -49,8 +49,6 @@ Filters apply to asset-level data so you can isolate failed syncs or trace a spe
 ## Failed synchronizations
 
 When **Status** shows a failure, review the **Error** column in the grid for the message returned by the sync pipeline.
-
-For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md) and [View and manage logs](logs.md).
 
 Review the full error message and last sync attempt details to diagnose the failure.
 
