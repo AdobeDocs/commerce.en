@@ -9,6 +9,7 @@ feature: Services
 
 - [Guide Overview](overview.md)
 - [Data Synchronization](data-synchronization.md)
+- [Feed Lock Mechanism](feed-lock-mechanism.md)
 - Export scheduling and performance {#performance}
   - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
   - [Improve export performance](customize-export-processing.md)
