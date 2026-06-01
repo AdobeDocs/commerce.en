@@ -9,14 +9,14 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 Semantic search uses AI to understand what shoppers mean, not just the exact words they type. Queries such as "dress for a beach wedding" or "comfortable shoes for standing all day" can return relevant products even when your catalog does not use those exact phrases.
 
-[!DNL Adobe Commerce Optimizer] combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront. In the Admin, turn semantic search on from **[Settings](../settings.md#advanced-search)** and optionally tune advanced controls on the same tab.
+[!DNL Adobe Commerce Optimizer] combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront. In the Admin, go to the [Settings](../settings.md#advanced-search) workspace and turn semantic search on with a single toggle. You can optionally tune advanced controls on the same tab.
 
 ## Benefits
 
 - **Fewer empty search pages** — Shoppers find products when their wording does not match catalog text exactly.
 - **Better intent matching** — Natural, descriptive queries return useful results.
 - **Less synonym maintenance** — Common word variations (for example, couch and sofa) are often handled without manual synonym lists.
-- **No storefront or developer work** — Enable the feature in Settings; you do not change theme code, drop-ins, or APIs to turn it on.
+- **No storefront or developer work** — Enable the feature in Settings. You do not change theme code, drop-ins, or APIs to turn it on.
 
 ## How it works
 
@@ -30,11 +30,11 @@ For example:
 
 ## Enable semantic search
 
-1. On the **[!UICONTROL Settings]** workspace, open the **[!UICONTROL Advanced search]** tab.
-1. Turn **[!UICONTROL Enable semantic search]** **on**.
+1. In the Admin, go to **[!UICONTROL Settings]**.
+1. On the **[!UICONTROL Advanced search]** tab, turn **[!UICONTROL Enable semantic search]** **on**.
 1. Click **[!UICONTROL Save]**.
 
-Search results update after indexing completes. Depending on catalog size, this can take up to half an hour for a medium size catalog and up to a few hours for large catalogs with millions of products.
+Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
 
 >[!NOTE]
 >
@@ -72,3 +72,9 @@ See [Advanced search](../settings.md#advanced-search) for control descriptions a
 ## Limitations {#semantic-search-limitations}
 
 - **Catalog language:** Semantic search is available only for **English**-language catalogs.
+
+## More help on this topic
+
+- [Advanced search](../settings.md#advanced-search)
+- [Synonyms](../merchandising/synonyms/overview.md)
+- [Search performance](../manage-results/search-performance.md)

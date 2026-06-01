@@ -11,7 +11,7 @@ Use the **Settings** workspace to configure semantic search, price facet ranges 
 
 ## Semantic search {#semantic-search}
 
-Semantic search uses AI to match products based on **meaning and context**, not only exact keywords. When **[!UICONTROL Semantic search]** is enabled, shoppers who use natural language or wording that does not match your catalog verbatim can still find relevant products. [!DNL Live Search] delivers keyword and semantic matching in one unified search experience on the storefront.
+Semantic search uses AI to match products based on meaning and context, not only exact keywords. When **[!UICONTROL Semantic search]** is enabled, shoppers who use natural language or wording that does not match your catalog verbatim can still find relevant products. [!DNL Live Search] delivers keyword and semantic matching in one unified search experience on the storefront.
 
 **To enable semantic search:**
 
@@ -22,7 +22,7 @@ Semantic search uses AI to match products based on **meaning and context**, not 
 
 1. Click **[!UICONTROL Save]**.
 
-   Search results update after indexing completes. Depending on catalog size, this can take up to half an hour for a medium size catalog and up to a few hours for large catalogs with millions of products.
+   Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
 
 >[!NOTE]
 >
@@ -40,11 +40,13 @@ For benefits, examples, best practices, troubleshooting, and limitations, see [S
 
 You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 creates the following price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
 
+**To configure price faceting:**
+
 1. In the Admin, go to **Marketing** > *SEO & Search* > **[!DNL Live Search]**.
 1. On the **Settings** workspace under *Price faceting*, do the following:
    * Enter the **Number of selections**, or price groupings to be available. With [!DNL Live Search] 4.4.0, you can define up to 100 price groupings. Earlier versions allowed 50 price groupings.
    * Enter the **Interval value**, or price range for each group. The maximum value is 40,000,000.
-1. Click **Save**.
+1. Click **[!UICONTROL Save]**.
 
    It takes about 15 minutes for the updated settings to be available in the storefront.
 
@@ -60,7 +62,7 @@ You can specify the number of price range groups and how price values are distri
 The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
 
 Languages have different sets of rules for grammar: how words are separated, verb tenses and word forms, for example.
-The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
+The Language setting ensures that the correct set of rules is applied to the indexing mechanism.
 
 Set the Language setting to the primary language of the catalog. When changing the language of the index, it can take from 5 to 60 minutes to reflect the change on the storefront, depending on the size and complexity of the catalog.
 

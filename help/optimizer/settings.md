@@ -103,9 +103,9 @@ Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DN
 1. Under **[!UICONTROL Enable semantic search]**, turn the control **on**.
 1. Click **[!UICONTROL Save]**.
 
-   Search results update after indexing completes. Depending on catalog size, this can take up to half an hour for a medium size catalog and up to a few hours for large catalogs with millions of products.
+   Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
 
-**Optional tuning**
+### Optional tuning
 
 After semantic search is enabled, you can adjust the following on the same tab:
 
@@ -125,7 +125,7 @@ For benefits, best practices, troubleshooting, and limitations, see [Semantic se
 
 | Control | Description |
 | --- | --- |
-| Enable semantic search | When **on**, search uses meaning and context to match products. Requires semantic attributes to be configured and published on the **[!UICONTROL Semantic search]** tab. |
+| Enable semantic search | When **on**, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. |
 | Semantic boost | Boost applied to prioritize semantically relevant results in ranking. |
 | Similarity threshold | Minimum similarity score (percentage) for a semantic match. Lower values favor recall; higher values favor precision. |
 | Fuzzy search | When **on**, search finds near matches for queries (for example, typos and minor variations). |
