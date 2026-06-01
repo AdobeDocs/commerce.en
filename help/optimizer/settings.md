@@ -10,8 +10,7 @@ Use the *Settings* workspace to configure search and product discovery for your 
 
 - **Price facets** — Configure price range groups and intervals used as search filters.
 - **Language** — Set the catalog language used for indexing and search.
-- **Semantic search** — Enable and configure AI-powered semantic search (attributes, priority, and related options).
-- **Advanced search** — Tune semantic ranking boost, similarity cutoffs, and optional fuzzy fallback when direct search returns no matches.
+- **Advanced search** — Enable semantic search and fuzzy search, and tune semantic boost and similarity thresholds.
 
 >[!BEGINTABS]
 
@@ -90,43 +89,46 @@ Set the Language setting to the primary language of the catalog. When you change
 |Turkish|tr|
 |Thai|th|
 
->[!TAB Semantic search]
-
-## Semantic search {#semantic-search}
-
-Semantic search uses AI to interpret queries by meaning and intent, not only exact keywords, so shoppers who use natural language or wording that does not match your catalog verbatim can still find relevant products. On the **[!UICONTROL Semantic search]** tab, you choose which product attributes participate in semantic search, set their **[!UICONTROL Priority]**, and **[!UICONTROL Publish]** when you are ready. For benefits, detailed steps, recommended attributes, performance considerations, limitations, and troubleshooting, see [Semantic search](setup/semantic-search.md).
-
 >[!TAB Advanced search]
 
 ## Advanced search {#advanced-search}
 
-Use the **[!UICONTROL Advanced search]** tab to adjust how strongly semantic matches influence ranking, how strict semantic matching must be, and whether fuzzy matching runs when direct search finds no results.
+Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. Turn **[!UICONTROL Enable semantic search]** **on** to match products by meaning and context. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required to enable the feature.
 
 ![Advanced search settings](./assets/advanced-search.png)
 
-**To configure advanced search:**
+**To enable semantic search:**
 
 1. On the **Settings** workspace, select the **[!UICONTROL Advanced search]** tab.
-1. Under **Semantic search boost**, adjust the **[!UICONTROL Semantic boost]** slider. This control applies a boost to prioritize semantically relevant results.
-1. Under **Similarity threshold**, adjust the **[!UICONTROL Similarity threshold]** slider. This control applies a percentage to set the minimum semantic match score required for results to appear.
-
-   A higher threshold keeps only stronger semantic matches visible and can reduce noise from weak matches. A lower threshold allows more products through when semantic confidence is borderline.
-
-1. Under **Fuzzy search**, for **Use fuzzy search as a fallback when no direct search results are found?**, select **[!UICONTROL Yes]** or **[!UICONTROL No]**. Fuzzy search finds near matches for queries, which helps with typos and minor variations.
-
-   If you select **[!UICONTROL Yes]**, adjust the **[!UICONTROL Fuzzy search similarity threshold]** slider to set the minimum similarity (as a percentage) required for fuzzy-matched products to appear.
-
-   Lower fuzzy thresholds return more approximate matches (helpful for difficult spellings) but can surface less relevant products. Raise the threshold if fuzzy results feel too broad.
-
+1. Under **[!UICONTROL Enable semantic search]**, turn the control **on**.
 1. Click **[!UICONTROL Save]**.
+
+   Search results update after indexing completes. Depending on catalog size, this can take up to half an hour for a medium size catalog and up to a few hours for large catalogs with millions of products.
+
+**Optional tuning**
+
+After semantic search is enabled, you can adjust the following on the same tab:
+
+- **[!UICONTROL Semantic boost]** — Apply a boost to prioritize semantically relevant results in ranking. Raise the value when semantic matches should weigh more heavily in the result set; lower it when results feel too broad.
+- **[!UICONTROL Similarity threshold]** — Set the minimum similarity score (as a percentage) for a semantic match. Lower values return more results (higher recall) but may include weaker matches. Higher values return fewer, tighter matches (higher precision).
+
+   >[!NOTE]
+   >
+   > Semantic search is supported for **English** catalogs only. Selecting another language on the **[Language](#language)** tab turns off **[!UICONTROL Enable semantic search]**.
+
+- **[!UICONTROL Fuzzy search]** — Turn **on** to find near matches for search queries, which helps correct typos and minor variations.
+- **[!UICONTROL Fuzzy search similarity threshold]** — Set the minimum similarity (as a percentage) required for fuzzy matches to appear. Lower thresholds return more approximate matches; raise the threshold if fuzzy results feel too broad.
+
+For benefits, best practices, troubleshooting, and limitations, see [Semantic search](setup/semantic-search.md).
 
 ### Field descriptions
 
 | Control | Description |
 | --- | --- |
-| Semantic boost | A boost applied to prioritize semantically relevant results in ranking. |
-| Similarity threshold | Percentage that sets the minimum semantic match score required for a product to appear in results. |
-| Use fuzzy search as a fallback when no direct search results are found? | **Yes** enables fuzzy search only when direct (for example, keyword) search does not return results. **No** disables that fallback. |
-| Fuzzy search similarity threshold | When fuzzy fallback is **Yes**, the minimum similarity (percentage) fuzzy matches must meet to be shown. |
+| Enable semantic search | When **on**, search uses meaning and context to match products. Requires semantic attributes to be configured and published on the **[!UICONTROL Semantic search]** tab. |
+| Semantic boost | Boost applied to prioritize semantically relevant results in ranking. |
+| Similarity threshold | Minimum similarity score (percentage) for a semantic match. Lower values favor recall; higher values favor precision. |
+| Fuzzy search | When **on**, search finds near matches for queries (for example, typos and minor variations). |
+| Fuzzy search similarity threshold | Minimum similarity (percentage) fuzzy matches must meet to appear in results. |
 
 >[!ENDTABS]
