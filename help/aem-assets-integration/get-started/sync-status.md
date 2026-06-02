@@ -52,4 +52,4 @@ When **Status** shows a failure, review the **Error** column in the grid for the
 
 Review the full error message and last sync attempt details to diagnose the failure.
 
-For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md). Integration log files are available at `/var/log/aem-assets-integration.log` and `/var/log/aem-assets-integration-errors.log` on your Commerce instance.
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} For additional troubleshooting, see [Default automatic matching](../synchronize/default-match.md). Integration log files are available at `/var/log/aem-assets-integration.log` and `/var/log/aem-assets-integration-errors.log` on your Commerce instance.
