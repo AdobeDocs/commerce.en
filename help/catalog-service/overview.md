@@ -54,7 +54,7 @@ The rich view-model data provided by the [!DNL Catalog Service] includes product
 
 >[!NOTE]
 >
->If you are implementing your catalog using the composable catalog with Adobe Commerce Optimizer, or Adobe Commerce Optimizer Connector, see the [Adobe Commerce Optimizer Guide](../optimizer/overview.md#architecture) and Merchandising Services Developer Guide.
+>If you are implementing your catalog using the composable catalog with Adobe Commerce Optimizer, or Adobe Commerce Optimizer Connector, see the [Adobe Commerce Optimizer Guide](../optimizer/overview.md#architecture) and [Merchandising Services Developer Guide](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive catalog data including products, product attributes, inventory, and prices. GraphQL is a query language that a frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
 

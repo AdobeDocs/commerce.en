@@ -1,6 +1,13 @@
 # Commerce snippets
 
 
+## ACO Integration environment alignment {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Always connect sandbox Optimizer instances to non-production environments and production instances to production environments. Mismatched environments cause inconsistent catalog data, search results, and recommendations.
+
+
 ## Merchandising Services for Optimizer {#aco-merchandising-services}
 
 >[!NOTE]

@@ -32,6 +32,14 @@ _February 11, 2025_
 
 +++
 
+## v1.3.7
+
+_June 2, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1246 --> The Commerce Admin includes an asset-centric [!UICONTROL Sync Status] list to search, filter, sort, and review synchronized AEM Assets by asset attributes instead of product associations. See [View AEM Assets sync status](get-started/sync-status.md){target=_blank}.
+
 ## v1.3.6
 
 _May 14, 2026_

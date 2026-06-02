@@ -9,6 +9,8 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 Install and configure the Commerce Optimizer Connector to sync your Adobe Commerce catalog data with [!DNL Adobe Commerce Optimizer], then monitor the data sync status to ensure your storefront is up to date.
 
+{{aco-integration-environment-alignment}}
+
 ## Requirements to use the integration
 
 * Adobe Commerce 2.4.7+
