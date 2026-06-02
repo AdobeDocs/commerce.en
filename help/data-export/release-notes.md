@@ -46,7 +46,7 @@ Updates include:
 
 ### 103.4.26 Release
 
-_June 1, 2026_
+_June 2, 2026_
 
 ![Fix](../assets/fix.svg) **Product feed updates after currency changes**–When you change store currency settings, affected products are now queued for export again so Live Search, Catalog Service, Product Recommendations, and other connected Commerce services display updated prices. <!--MDEE-1376-->
 
