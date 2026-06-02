@@ -46,20 +46,20 @@ _May 28, 2026_
 
 <!-- v1.2 -->
 
-![Fix](../assets/fix.svg) Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path. This fix ensures that shoppers see all relevant categories in the navigation, making it easier to browse and discover items.
+![Fix](../assets/fix.svg) **Complete navigation trees**—Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path. This fix ensures that shoppers see all relevant categories in the navigation, making it easier to browse and discover items.
 <!--DATA-7183-->
 
-![Fix](../assets/fix.svg) Empty string slug values in the `categoryTree` query are now gracefully ignored.
+![Fix](../assets/fix.svg) **Empty slug handling in `categoryTree` requests**—Fixed an issue where the [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query returned an internal server error when the `slugs` argument included an empty string. Empty slug values are now ignored, so storefronts and integrations continue to resolve category data without failed requests.
 <!--DATA-7184-->
 
-![Fix](../assets/fix.svg) Search results are now sorted alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
+![Fix](../assets/fix.svg) **`searchCategory` requests return case-insensitive, alphabetized results**—The `searchCategory` query now sorts search results alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
 <!--COMOPT-2142-->
 
 _May 4, 2026_
 
 <!--v1.53-->
 
-Storefront product prices now display the correct currency code (for example, USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices.
+**Correct currency display**—Storefront product prices now display the correct currency code (for example, USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices.
 
 <!--DATA-7115-->
 
