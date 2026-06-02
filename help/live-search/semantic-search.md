@@ -27,6 +27,16 @@ For example:
 - "Spring dress" can surface seasonal dresses even when "spring" is not in the product name.
 - "Shoes for trail running" can match products described as off-road or hiking footwear.
 
+## What happens when you enable semantic search
+
+Semantic search works alongside your existing [!DNL Live Search] configuration. You do not replace keyword search or reconfigure the storefront.
+
+When you turn semantic search on:
+
+- Your existing [search rules](rules.md), [synonyms](synonyms.md), [facets](facets.md), boosts, and [category merchandising](category-merch.md) settings continue to apply.
+- Semantic search adds AI-powered understanding of shopper intent to improve result relevance alongside keyword matching.
+- Predefined catalog attributes are indexed automatically. You do not select attributes or publish a separate configuration.
+
 ## Enable semantic search
 
 1. In the Admin, go to **Marketing** > *SEO & Search* > **[!DNL Live Search]**.
@@ -44,10 +54,18 @@ For example:
 
 You do not need a separate publish step or storefront configuration after you save.
 
+## Validate after enablement
+
+After indexing completes, Adobe recommends validating search performance before and after you enable semantic search. Use the [Performance](performance.md) workspace to review metrics and test queries that matter to your business.
+
+1. Review your top searched terms in the **Unique searches** report.
+1. Test historical zero-result queries from the **Zero results** report on the storefront.
+1. Compare search results for the same queries before and after enablement.
+1. Monitor search conversion and engagement metrics, including click-through rate, conversion rate, and zero results rate.
+
 ## Best practices
 
 - Use clear, descriptive product names and descriptions so both keyword and semantic matching have strong catalog text to work with.
-- Review zero-result queries on the [Performance](performance.md) workspace after you enable semantic search.
 - Keep brand-specific or highly technical [synonyms](synonyms.md) where semantic search may not cover specialized terms.
 
 ## Troubleshooting

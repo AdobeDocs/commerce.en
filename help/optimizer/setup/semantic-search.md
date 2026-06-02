@@ -28,6 +28,16 @@ For example:
 - "Spring dress" can surface seasonal dresses even when "spring" is not in the product name.
 - "Shoes for trail running" can match products described as off-road or hiking footwear.
 
+## What happens when you enable semantic search
+
+Semantic search works alongside your existing [!DNL Adobe Commerce Optimizer] search configuration. You do not replace keyword search or reconfigure the storefront.
+
+When you turn semantic search on:
+
+- Your existing [merchandising rules](../merchandising/rules/overview.md), [synonyms](../merchandising/synonyms/overview.md), [facets](../merchandising/facets/overview.md), boosts, and filters continue to apply.
+- Semantic search adds AI-powered understanding of shopper intent to improve result relevance alongside keyword matching.
+- Predefined catalog attributes are indexed automatically. You do not select attributes or publish a separate configuration.
+
 ## Enable semantic search
 
 1. In the Admin, go to **[!UICONTROL Settings]**.
@@ -42,6 +52,15 @@ Search results update after indexing completes. For a medium-sized catalog, inde
 
 You do not need to publish a separate configuration or change storefront settings after you save.
 
+## Validate after enablement
+
+After indexing completes, Adobe recommends validating search performance before and after you enable semantic search. Use the [Search performance](../manage-results/search-performance.md) page to review metrics and test queries that matter to your business.
+
+1. Review your top searched terms in the **Unique searches** report.
+1. Test historical zero-result queries from the **Zero results** report on the storefront.
+1. Compare search results for the same queries before and after enablement.
+1. Monitor search conversion and engagement metrics, including click-through rate, conversion rate, and zero results rate.
+
 ## Optional tuning
 
 On the **[!UICONTROL Advanced search]** tab, you can adjust how search behaves after semantic search is enabled:
@@ -55,7 +74,6 @@ See [Advanced search](../settings.md#advanced-search) for control descriptions a
 ## Best practices
 
 - Use clear, descriptive product names and descriptions so both keyword and semantic matching have strong catalog text to work with.
-- Review zero-result and low-conversion queries in search performance reports after you enable semantic search.
 - Start with the default **[!UICONTROL Enable semantic search]** setting, then adjust **[!UICONTROL Semantic boost]** or **[!UICONTROL Similarity threshold]** only if results feel too broad or too narrow.
 - Keep brand-specific or highly technical [synonyms](../merchandising/synonyms/overview.md) where semantic search may not cover specialized terms.
 

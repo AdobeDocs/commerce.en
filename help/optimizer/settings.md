@@ -110,7 +110,7 @@ Set the Language setting to the primary language of the catalog. When you change
 
 ## Advanced search {#advanced-search}
 
-Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. Turn **[!UICONTROL Enable semantic search]** **on** to match products by meaning and context. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required to enable the feature.
+Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. Turn **[!UICONTROL Enable semantic search]** **on** to match products by meaning and context. Semantic search works alongside your existing configuration; [merchandising rules](../merchandising/rules/overview.md), [synonyms](../merchandising/synonyms/overview.md), [facets](../merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required to enable the feature.
 
 ![Advanced search settings](./assets/advanced-search.png)
 
@@ -136,7 +136,7 @@ After semantic search is enabled, you can adjust the following on the same tab:
 - **[!UICONTROL Fuzzy search]** — Turn **on** to find near matches for search queries, which helps correct typos and minor variations.
 - **[!UICONTROL Fuzzy search similarity threshold]** — Set the minimum similarity (as a percentage) required for fuzzy matches to appear. Lower thresholds return more approximate matches; raise the threshold if fuzzy results feel too broad.
 
-For benefits, best practices, troubleshooting, and limitations, see [Semantic search](setup/semantic-search.md).
+For benefits, validation guidance, best practices, troubleshooting, and limitations, see [Semantic search](setup/semantic-search.md).
 
 ### Field descriptions
 
