@@ -53,7 +53,7 @@ _May 28, 2026_
 <!--DATA-7184-->
 
 ![Fix](../assets/fix.svg) Search results are now sorted alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
-<!--DATA-2066-->
+<!--COMOPT-2142-->
 
 _May 4, 2026_
 
