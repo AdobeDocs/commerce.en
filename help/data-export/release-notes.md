@@ -52,7 +52,6 @@ _June 2, 2026_
 
 ![Fix](../assets/fix.svg) **Child categories reflect disabled parent status**–When you disable a top-level category, child categories are now exported as inactive so connected Commerce services do not treat products in those categories as discoverable. <!--MDEE-1369-->
 
-
 ### 103.4.25 Release
 
 _May 19, 2026_
