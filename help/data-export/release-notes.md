@@ -48,8 +48,10 @@ Updates include:
 
 _June 1, 2026_
 
-![Fix](../assets/fix.svg) Currency change does not update product feed. <!--MDEE-1376-->
-![Fix](../assets/fix.svg) Children categories should be not active if top-level category disabled. <!--MDEE-1369-->
+![Fix](../assets/fix.svg) **Product feed updates after currency changes**–When you change store currency settings, affected products are now queued for export again so Live Search, Catalog Service, Product Recommendations, and other connected Commerce services display updated prices. <!--MDEE-1376-->
+
+![Fix](../assets/fix.svg) **Child categories reflect disabled parent status**–When you disable a top-level category, child categories are now exported as inactive so connected Commerce services do not treat products in those categories as discoverable. <!--MDEE-1369-->
+
 
 ### 103.4.25 Release
 
