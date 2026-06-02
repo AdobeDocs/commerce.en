@@ -67,12 +67,6 @@ In this architecture:
 - Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views
 - Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations
 
-## How the connector works with Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views.
-
-- Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations.
-
 ## How the connector works with Adobe Commerce
 
 The Adobe Commerce Optimizer Connector operates by using your existing Commerce scopes (websites and store views) and customer segmentation to populate the Commerce Optimizer catalog model:
