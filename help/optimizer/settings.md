@@ -110,7 +110,7 @@ Set the Language setting to the primary language of the catalog. When you change
 
 ## Advanced search {#advanced-search}
 
-Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **on by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](../merchandising/rules/overview.md), [synonyms](../merchandising/synonyms/overview.md), [facets](../merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
+Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **on by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
 
 ![Advanced search settings](./assets/advanced-search.png)
 
