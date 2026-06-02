@@ -95,7 +95,7 @@ To optimize search results with [!DNL Adobe Commerce Optimizer], monitor relevan
 
     To reduce the zero results rate, you can:
 
-    - Enable [semantic search](../setup/semantic-search.md) on the **[Advanced search](../settings.md#advanced-search)** tab in Settings. No storefront or developer changes are required; results update after indexing completes.
+    - Confirm [semantic search](../setup/semantic-search.md) is **on** on the **[Advanced search](../settings.md#advanced-search)** tab in Settings. Semantic search is enabled by default for [!DNL Adobe Commerce Optimizer] customers; no storefront or developer changes are required. Results update after indexing completes.
     - Offer alternative or related search terms, such as [synonyms](../merchandising/synonyms/overview.md) when no exact matches are found.
     - Regularly review zero result queries to identify patterns and make necessary adjustments to your product catalog and search settings.
 

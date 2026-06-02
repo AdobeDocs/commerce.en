@@ -9,14 +9,18 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 Semantic search uses AI to understand what shoppers mean, not just the exact words they type. Queries such as "dress for a beach wedding" or "comfortable shoes for standing all day" can return relevant products even when your catalog does not use those exact phrases.
 
-[!DNL Adobe Commerce Optimizer] combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront. In the Admin, go to the [Settings](../settings.md#advanced-search) workspace and turn semantic search on with a single toggle. You can optionally tune advanced controls on the same tab.
+[!DNL Adobe Commerce Optimizer] combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront. In the Admin, go to the [Settings](../settings.md#advanced-search) workspace to manage semantic search and optionally tune advanced controls on the **[!UICONTROL Advanced search]** tab.
+
+>[!IMPORTANT]
+>
+> Semantic search is **enabled by default** for [!DNL Adobe Commerce Optimizer] customers with eligible English catalogs. You do not need to turn it on manually. Use **[!UICONTROL Settings]** > **[!UICONTROL Advanced search]** to confirm the toggle, adjust tuning controls, or turn semantic search off if needed.
 
 ## Benefits
 
 - **Fewer empty search pages** — Shoppers find products when their wording does not match catalog text exactly.
 - **Better intent matching** — Natural, descriptive queries return useful results.
 - **Less synonym maintenance** — Common word variations (for example, couch and sofa) are often handled without manual synonym lists.
-- **No storefront or developer work** — Enable the feature in Settings. You do not change theme code, drop-ins, or APIs to turn it on.
+- **No storefront or developer work** — Semantic search is enabled by default and requires no theme code, drop-in, or API changes.
 
 ## How it works
 
@@ -28,23 +32,28 @@ For example:
 - "Spring dress" can surface seasonal dresses even when "spring" is not in the product name.
 - "Shoes for trail running" can match products described as off-road or hiking footwear.
 
-## What happens when you enable semantic search
+## What happens when semantic search is on
 
 Semantic search works alongside your existing [!DNL Adobe Commerce Optimizer] search configuration. You do not replace keyword search or reconfigure the storefront.
 
-When you turn semantic search on:
+When semantic search is active:
 
 - Your existing [merchandising rules](../merchandising/rules/overview.md), [synonyms](../merchandising/synonyms/overview.md), [facets](../merchandising/facets/overview.md), boosts, and filters continue to apply.
 - Semantic search adds AI-powered understanding of shopper intent to improve result relevance alongside keyword matching.
 - Predefined catalog attributes are indexed automatically. You do not select attributes or publish a separate configuration.
 
-## Enable semantic search
+## Manage semantic search in the Admin
+
+Semantic search is **on by default** for eligible English catalogs. Go to **[!UICONTROL Settings]** > **[!UICONTROL Advanced search]** to confirm the toggle or change settings:
 
 1. In the Admin, go to **[!UICONTROL Settings]**.
-1. On the **[!UICONTROL Advanced search]** tab, turn **[!UICONTROL Enable semantic search]** **on**.
-1. Click **[!UICONTROL Save]**.
+1. On the **[!UICONTROL Advanced search]** tab, review **[!UICONTROL Enable semantic search]**.
 
-Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
+   When **on**, search matches products based on meaning and context, which can produce more relevant results, fewer empty search pages, and improved conversion.
+
+1. Click **[!UICONTROL Save]** if you change the toggle or tuning controls.
+
+   Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
 
 >[!NOTE]
 >
@@ -54,7 +63,7 @@ You do not need to publish a separate configuration or change storefront setting
 
 ## Validate after enablement
 
-After indexing completes, Adobe recommends validating search performance before and after you enable semantic search. Use the [Search performance](../manage-results/search-performance.md) page to review metrics and test queries that matter to your business.
+After semantic search is active and indexing completes, Adobe recommends validating search performance. Use the [Search performance](../manage-results/search-performance.md) page to review metrics and test queries that matter to your business.
 
 1. Review your top searched terms in the **Unique searches** report.
 1. Test historical zero-result queries from the **Zero results** report on the storefront.

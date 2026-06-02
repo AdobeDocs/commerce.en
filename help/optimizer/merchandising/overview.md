@@ -38,7 +38,7 @@ Product Discovery equips merchandisers with powerful tools to curate and optimiz
 
 With product discovery, you can:
 
-* **Enable [semantic search](../setup/semantic-search.md)** in [Settings](../settings.md#advanced-search) to improve relevance for natural-language and intent-based queries. No attribute setup or storefront changes are required.
+* **Use [semantic search](../setup/semantic-search.md)** — Enabled by default in [Settings](../settings.md#advanced-search) to improve relevance for natural-language and intent-based queries. No attribute setup or storefront changes are required.
 * **Configure [facets](./facets/overview.md), [merchandising search and category rules](./rules/overview.md) and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
 
 ## Recommendations

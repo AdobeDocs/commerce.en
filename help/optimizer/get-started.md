@@ -129,7 +129,7 @@ Merchandisers optimize and personalize the shopping experience through product d
 |Task|Description|Link|
 |---|---|---|
 |**Product Discovery**|Configure search and filtering|[Merchandising Overview](./merchandising/overview.md)|
-|**Search settings**|Enable semantic search and optional tuning|[Settings — Advanced search](./settings.md#advanced-search) and [Semantic search](./setup/semantic-search.md)|
+|**Search settings**|Manage semantic search (enabled by default) and optional tuning|[Settings — Advanced search](./settings.md#advanced-search) and [Semantic search](./setup/semantic-search.md)|
 |**Recommendations**|Set up AI-powered product recommendations|[Product Recommendations](./merchandising/recommendations/overview.md)|
 |**Performance Tracking**|Monitor success metrics|[Success Metrics](./manage-results/success-metrics.md)|
 
