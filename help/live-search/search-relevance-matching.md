@@ -3,6 +3,7 @@ title: Search matching and ranking
 description: Learn how [!DNL Live Search] prioritizes exact and near matches, same-field matches, and cross-field matches, and how ranking interacts with search weights, intelligent ranking, and merchandising rules.
 role: Admin, Developer
 recommendations: noCatalog
+hide: true
 ---
 # Search matching and ranking
 

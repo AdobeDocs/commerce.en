@@ -4,6 +4,7 @@ description: Learn how [!DNL Adobe Commerce Optimizer] prioritizes exact and nea
 role: Admin, Leader, User
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
+hide: true
 ---
 # Search matching and ranking
 
