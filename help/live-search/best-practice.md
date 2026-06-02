@@ -128,6 +128,7 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
 - Always use the "Test your rule" panel to preview how your intelligent ranking strategy affects actual search results for different queries.
+- When you enable intelligent ranking, tune **[Intelligent ranking boost](rules-add.md#intelligent-ranking-boost)** in the rule editor to balance popularity-style signals with textual relevance, and verify results for target queries in **Test your rule**. The intelligent ranking boost is not available for the **None** strategy.
 - Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
 
 Learn more about search rules:

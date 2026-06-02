@@ -34,17 +34,32 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 ## May 2026
 
-Currently, there are no [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) releases this month. See API updates below.
-
 >[!BEGINSHADEBOX]
 
+### Intelligent Ranking Boost
+
+[Merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost) for search, default product listings, and [category pages](./merchandising/rules/add.md#rule-types) (beta) now include **[!UICONTROL Intelligent Ranking Boost]**. You can adjust how strongly strategies such as **Most viewed** or **Trending** influence product order relative to textual relevance on search and behavioral signals on category listings. The rule preview reflects your setting. The boost is applied at query time, so you do not need a catalog resync when you change it.
+
 ### API updates
+
+_May 28, 2026_
+
+<!-- v1.2 -->
+
+![Fix](../assets/fix.svg) **Complete navigation trees**—Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path. This fix ensures that shoppers see all relevant categories in the navigation, making it easier to browse and discover items.
+<!--DATA-7183-->
+
+![Fix](../assets/fix.svg) **Empty slug handling in `categoryTree` requests**—Fixed an issue where the [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query returned an internal server error when the `slugs` argument included an empty string. Empty slug values are now ignored, so storefronts and integrations continue to resolve category data without failed requests.
+<!--DATA-7184-->
+
+![Fix](../assets/fix.svg) **`searchCategory` requests return case-insensitive, alphabetized results**—The `searchCategory` query now sorts search results alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
+<!--COMOPT-2142-->
 
 _May 4, 2026_
 
 <!--v1.53-->
 
-Storefront product prices now display the correct currency code (for example, USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices.
+**Correct currency display**—Storefront product prices now display the correct currency code (for example, USD) for all product types. Previously, some products showed `NONE` instead of the expected currency, resulting in missing prices.
 
 <!--DATA-7115-->
 

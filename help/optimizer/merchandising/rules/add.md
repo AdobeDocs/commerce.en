@@ -138,7 +138,34 @@ Store owners can set strategies such as the following. Exact labels and time win
 - **Trending** — Emphasizes recent popularity (for search, page views over the past 72 hours for background events and 24 hours for foreground events).
 - **None** — For search and default listings, products are ordered by **Relevance**. For **category rules**, uses the default merchandising order for the category when you do not choose another intelligent strategy.
 
-Select the strategy for your rule. The **Test your rule** pane shows expected results for search-oriented rules; **category rules** use the category preview.
+Select the strategy for your rule. The **[!UICONTROL Test your rule]** pane shows expected results for search-oriented rules; **category rules** use the category preview.
+
+#### Intelligent ranking boost {#intelligent-ranking-boost}
+
+For **Recommended for you**, **Most viewed**, **Most purchased**, **Most added to cart**, and **Trending**, the editor shows **[!UICONTROL Intelligent Ranking Boost]** (the boost factor). It is not used when you select **None**.
+
+Use this control to balance how strongly **behavioral signals** influence ordering relative to **textual relevance** on search, and relative to other ranking signals on **category pages** and **default listings**. The boost is available for **search rules**, the **All products rule**, and **category rules**; each rule stores its own value.
+
+| Behavior | Detail |
+| --- | --- |
+| Default | `5` (equivalent to the previous fixed behavioral multiplier). |
+| Range | From `1` (gentler behavioral influence) through `100` (stronger influence). The upper limit may change in a future release. |
+| Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
+| Preview | The rule preview uses the same boost as live results for that rule. |
+| Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
+
+**When to increase or decrease the boost**
+
+- **Increase** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
+- **Decrease** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
+
+**When to use manual ranking instead**
+
+Use **pin**, **boost**, or **bury** when you need specific products in exact positions or guaranteed visibility regardless of catalog-wide signals. **[!UICONTROL Intelligent Ranking Boost]** tunes a **global** behavioral weight for that rule; it does not replace SKU-level control.
+
+>[!NOTE]
+>
+> A high **[!UICONTROL Intelligent Ranking Boost]** can outweigh a **manual boost** on the same product. If a boosted SKU ranks lower than you expect in the rule preview or on the storefront, lower **[!UICONTROL Intelligent Ranking Boost]** or **pin** the product to a specific position. Either change moves the manually ranked product higher in the listing.
 
 #### How intelligent ranking scoring works (search)
 
@@ -149,21 +176,25 @@ For **search results** (and the test query in the rule editor), intelligent rank
 - **Textual relevance**: The dominant factor in scoring. This measures how well a product's name, description, and attributes match the search query. The text relevance score is unbounded (has no specific upper limit) and is influenced by factors like:
 
    - Frequency of occurrence of matching words.
-   - Length  (in words) of product names/descriptions.
+   - Length (in words) of product names/descriptions.
 
-- **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a fixed boost to their scores. However, this boost has a defined limit.
+- **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a larger relative weight. The strength of that weight is controlled by **[!UICONTROL Intelligent Ranking Boost]** (see [Intelligent ranking boost](#intelligent-ranking-boost)); the boost remains bounded, but you can increase how much it shifts ordering.
 
 **Why the most viewed product might not appear first:**
 
-Textual relevance typically dominates ranking because its score is unbounded, while behavioral boosts are fixed. As a result, products with strong text matches often outrank those with higher engagement signals. Behavioral boosts alone may not compensate for large gaps in text relevance. Intelligent ranking addresses this by factoring in both match quality and shopper interaction, improving overall relevance. However, text match quality remains the primary driver of ranking.
+Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Always confirm in **[!UICONTROL Test your rule]** for the queries you care about.
 
 **Example:**
 
-A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
+A merchant uses the "Most viewed" intelligent ranking strategy and searches for **candle**. They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
 
-- **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
+- **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than **YAN-K-E-512**, its superior text match outweighs the behavioral boost.
 
-- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. The fixed behavioral boost is not enough to overcome this text relevance gap.
+- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5`), behavioral influence may not be enough to overcome that text gap. Increasing the boost can move **YAN-K-E-512** higher among products that already match the query. **YAN-K-E-512** must also match the query: at least one searchable attribute for that SKU must include **candle**, or it will not appear in results and the boost cannot apply.
+
+**Example (broad query):**
+
+For a query such as **wood**, several products can share similar textual relevance while view counts differ. With **Most viewed** selected, increasing **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering.
 
 See [search rules](./best-practice.md#tips-to-optimize-search-rules) to learn how to improve product findability using rules.
 
@@ -185,7 +216,7 @@ For information about setting search weights, see the [Metadata API](https://dev
 
 The easiest way to pin a product is by drag and drop.
 
-1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Postion fields are automatically populated in the Events pane.
+1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Position fields are automatically populated in the Events pane.
 
 You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
 
@@ -193,7 +224,7 @@ You may also click the pin icon to pin a product to its current location. Use th
 >
 >**Search rules** — You can only pin products that appear in the search results for the configured query and rule conditions. Products must be indexed, visible, in stock, and meet all rule filters to be eligible for pinning. If a product does not appear in the preview or results for your rule, pinning it has no effect.
 >
->**Default sort** — Manual positions apply when the shopper uses the default sort: **Sort by: Most Relevant** for search, or **relevance** / **position** for category listings. If the shopper changes sort; for example by name, pinned, boosted, buried, or hidden behavior may no longer match the preview.
+>**Default sort** — Manual positions apply when the shopper uses the default sort: **Sort by: Most Relevant** for search, or **relevance** / **position** for category listings. If the shopper changes sort, for example by name, pinned, boosted, buried, or hidden behavior may no longer match the preview.
 
 Or events can be set manually:
 
@@ -235,7 +266,7 @@ Follow these instructions to update the properties of existing rules. You cannot
 
 This option provides a quick way to see all the rule parameters, while staying on the *Rules* table.
 
-1. On the *Merchandising rules* worksapce, find the rule in the grid that you want to edit and click **More** (...) options.
+1. On the *Merchandising rules* workspace, find the rule in the grid that you want to edit and click **More** (...) options.
 1. Click **View details** to view the rule parameters.
 1. Choose **Edit** or **Delete**, or click the X to close the panel.
 
@@ -277,6 +308,12 @@ This option provides a quick way to see all the rule parameters, while staying o
 | Bury | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
 | Pin a product | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
 | Hide a product | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
+
+### Intelligent ranking controls
+
+| Field | Description |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
 
 ### Details
 

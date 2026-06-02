@@ -4,6 +4,90 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### May 28, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li>Improved <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco">Configure AEM Assets for Commerce Optimizer</a> onboarding so AEM Assets setup comes before tenant registration, with clearer guidance on dedicated catalog layers and layer-related limitations.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem">Configure the AEM Assets project</a> with reordered installation steps and Cloud Manager screenshots for repository access and pipeline deployment.<br />- Clarified IMS-based Program ID and Environment ID selection in <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization">Configure the integration</a>.</li>
+</ul>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### May 22, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added release notes for API updates to <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> and Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Catalog Service</a> for the May 20, 2026 release which now enforces the documented the 100-SKU limit per request when retrieving product data.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Documented Intelligent ranking boost (configurable behavioral weight per rule, default 5.0) for [!DNL Live Search] in <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Add Rules</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice">Best practices</a>, with a cross-reference from <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/category-merch">Category Merchandising</a>. Added the same guidance for [!DNL Adobe Commerce Optimizer] in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Create and manage</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice">Merchandising rules best practices</a>.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### May 19, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>The AEM Assets integration guide describes how editors set <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">alternative text</a> in the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets integration v1.3.6 </a>.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### April 30, 2026
 
 <table style="table-layout:auto;">
@@ -158,7 +242,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">commit</a></td>
     </tr>
     <tr>
-      <td><p>Documented <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration v1.3.5</a> and corrected <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Custom automatic matching</a> API request fields (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
+      <td><p>Documented <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration v1.3.5</a> and corrected <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Custom automatic matching</a> API request fields (<code>eventData</code>, <code>productSku</code>).</p>
 </td>
       <td>
         New topic
@@ -304,124 +388,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 27, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest Sandbox release information.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 25, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">Install and access App Management</a> with a Commerce webhooks section and a screenshot for webhook validation errors in the App Management dashboard.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">release notes</a> to move the March release # 2 to Production.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 23, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added a new automated installation for the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Tutorial Prerequisites</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a383e95e23291959f039390dfd3943bf98aa83ef">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 19, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Login as a Customer</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Gift Card Account REST Endpoints</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Email Triggering through REST</a> for Adobe Commerce as a Cloud Service.<br />Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Release Notes</a> with March 2026 - release # 2 release information.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 17, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions">Configure IMS user permissions for the AEM Assets Integration</a> to explain how to configure IMS and delivery-tier permissions to enable the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping) in the Admin.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">commit</a></td>
     </tr>
   </tbody>
 </table>
