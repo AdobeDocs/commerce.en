@@ -1,6 +1,6 @@
 ---
 title: Semantic Search
-description: Learn how semantic search works in [!DNL Live Search], including default enablement for [!DNL Adobe Commerce as a Cloud Service] and manual enablement for PaaS merchants.
+description: Enable AI semantic search for [!DNL Live Search] from Settings. No attribute setup or storefront changes required.
 role: Admin
 recommendations: noCatalog
 ---
@@ -19,10 +19,6 @@ Semantic search is managed from the **Settings** workspace in the [!DNL Live Sea
 > [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} **[!DNL Adobe Commerce as a Cloud Service] customers:** Semantic search is **enabled by default** for eligible English catalogs. You do not need to turn it on manually. Use the **Settings** workspace to confirm the toggle or turn semantic search off if needed.
 >
 > [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **Adobe Commerce on Cloud and on-premises customers:** Semantic search is **off until you enable it**. Turn **[!UICONTROL Semantic search]** **on** from the **Settings** workspace.
-
->[!NOTE]
->
-> [!DNL Adobe Commerce Optimizer] customers manage semantic search from **[!UICONTROL Settings]** > **[!UICONTROL Advanced search]** in the [!DNL Adobe Commerce Optimizer] Admin. Semantic search is also enabled by default for Optimizer. See [Semantic search](../optimizer/setup/semantic-search.md).
 
 ## Benefits
 
