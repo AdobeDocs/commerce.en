@@ -39,7 +39,6 @@ feature: Services, Search
    - [Category Merchandising](category-merch.md)
    - [Manage out-of-stock products](manage-out-of-stock-products.md)
    - [Indexing](indexing.md)
-   - [Search matching and ranking](search-relevance-matching.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
 - [Developer Guide](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
