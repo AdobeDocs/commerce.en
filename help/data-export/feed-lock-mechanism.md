@@ -14,7 +14,9 @@ The [!DNL SaaS Data Export] extension uses a feed lock mechanism to prevent race
 Each feed sync operation—whether triggered by a cron job or a manual `saas:resync` CLI call—follows the same sequence:
 
 1. The process tries to acquire the feed lock. The lock attempt is non-blocking and returns immediately if the lock is already held by another process.
-1. If the lock is **not available**, the [operation is skipped and logged](#expected-log-messages).
+1. If the lock is **not available**, the [operation is skipped and logged].
+
+   No data is lost. The next cron run picks up pending changes after the current process completes.
 1. If the lock is **acquired**, the process records its name and PID for diagnostic purposes, then runs the sync.
 1. When the sync completes or fails, the lock is released unconditionally so the next scheduled cron job can proceed normally.
 
