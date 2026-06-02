@@ -1,6 +1,6 @@
 ---
 title: "[!DNL SaaS Data Export Extension] Release Notes"
-description: The latest release information for [!DNL Data Export Extension] for Adobe Commerce.
+description: Learn about the latest [!DNL SaaS Data Export Extension] releases for [!DNL Adobe Commerce], including new features, fixes, and known issues.
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
@@ -28,7 +28,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
 ---
-# [!DNL SaaS Data Export] Extension Release Notes
+# [!DNL SaaS Data Export Extension] Release Notes
 
 These release notes describe the latest versions of the [!DNL SaaS data export] extension. Support is provided for the current major released version. Release notes for older versions are provided for reference.
 
@@ -40,15 +40,15 @@ Updates include:
 
 >[!NOTE]
 >
->The SaaS data export extension is a collection of modules that is installed automatically with Live Search, Product Recommendations, and the Catalog Service. You can check the version installed on your system using Composer. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
+>The [!DNL SaaS data export] extension is a collection of modules that is installed automatically with [!DNL Live Search], [!DNL Product Recommendations], and [!DNL Catalog Service]. You can check the version installed on your system using [!DNL Composer]. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
 
-## 2026 Releases
+## 2026 releases {#release-notes-2026}
 
 ### 103.4.26 Release
 
 _June 1, 2026_
 
-![Fix](../assets/fix.svg) **Product feed updates after currency changes**–When you change store currency settings, affected products are now queued for export again so Live Search, Catalog Service, Product Recommendations, and other connected Commerce services display updated prices. <!--MDEE-1376-->
+![Fix](../assets/fix.svg) **Product feed updates after currency changes**–When you change store currency settings, affected products are now queued for export again so [!DNL Live Search], [!DNL Catalog Service], [!DNL Product Recommendations], and other connected Commerce services display updated prices. <!--MDEE-1376-->
 
 ![Fix](../assets/fix.svg) **Child categories reflect disabled parent status**–When you disable a top-level category, child categories are now exported as inactive so connected Commerce services do not treat products in those categories as discoverable. <!--MDEE-1369-->
 
@@ -63,7 +63,7 @@ _May 19, 2026_
 
 _May 5, 2026_
 
-![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the Log Codes Reference.
+![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see [Log codes reference](log-codes-reference.md).
 <!--MDEE-1276-->
 
 ![Fix](../assets/fix.svg) **Automatic resync when attribute option labels change**–Changing product attribute option labels for a store view (including multiselect attributes) now queues the affected products for export again so that Live Search, Product Recommendations, Catalog Service, and other connected Commerce services display the updated facet and filter labels in shopper views. Previously, label-only edits could leave SaaS catalogs showing stale wording until a broader product change triggered a sync.
@@ -84,7 +84,7 @@ _May 5, 2026_
 
 _April 20, 2026_
 
-![Fix](../assets/fix.svg) **Resolved SQL Errors When Deleting Static EAV Attributes**–The ProductAttributeDelete plugin no longer generates SQL errors when deleting static EAV attributes, ensuring smoother attribute management and improved system reliability. <!--MDEE-1336-->
+![Fix](../assets/fix.svg) **Resolved SQL errors when deleting static EAV attributes**–The ProductAttributeDelete plugin no longer generates SQL errors when deleting static EAV attributes, ensuring smoother attribute management and improved system reliability. <!--MDEE-1336-->
 ![Fix](../assets/fix.svg) **Fixed category path export after category moves**– Ensures that the categories feed correctly updates the `url_path` when a category is moved to a different parent, preventing missing or stale category paths in connected Commerce services.<!--MDEE-1331-->
 ![Fix](../assets/fix.svg) **Improved scheduled category updates for related products**–Scheduled updates to category URLs now affect only the intended categories, preserving data integrity and preventing unintended changes to related products. Now, scheduled category URL changes are correctly reflected in exported data, keeping storefront navigation and linked services aligned with your current catalog.
 <!--MDEE-1321-->
@@ -98,7 +98,7 @@ _April 13, 2026_
 - Fixed an issue where deleted products were not properly removed from the connected Commerce services if the export service was unavailable during deletion. Retry and resync operations now ensure deleted products are correctly reflected in SaaS. <!--MDEE-1319-->
 - Catalog entities (products and categories) can now be exported to connected Commerce services even if attribute values are missing for the admin store view. This improves compatibility with third-party extensions and reduces export errors due to missing default values. <!--MDEE-1333-->
   
-![Fix](../assets/fix.svg) Resolved an error on the Data Feed Sync Status page that could occur when feed records contained unexpected or missing data. The system now gracefully handles such cases, improving stability and preventing crashes. If you are using the Adobe Commerce Optimizer Connector to sync data from Adobe Commerce to Adobe Commerce Optimizer, update to [ACO connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) or later for the fix.<!--MDEE-1327-->
+![Fix](../assets/fix.svg) Resolved an error on the Data Feed Sync Status page that could occur when feed records contained unexpected or missing data. The system now gracefully handles such cases, improving stability and preventing crashes. If you are using the [!DNL Adobe Commerce Optimizer] Connector to sync data from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer], update to [ACO connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) or later for the fix.<!--MDEE-1327-->
 
 ### 103.4.21 Release
 
@@ -152,7 +152,7 @@ _November 24, 2025_
 
 _October 22, 2025_
 
-![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from [!DNL Adobe Commerce] to connected services ([!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### 103.4.14 Release
 
@@ -278,7 +278,7 @@ _March 11, 2025_
 ![New](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![Fix](../assets/fix.svg) Reduced potential compatibility issues with PHP 8.4 by addressing deprecated functionality. <!--MDEE-1002-->
@@ -395,7 +395,7 @@ _June 20, 2024_
 
 ![Fix](../assets/fix.svg) Optimized the Prices query for large catalogs with many websites.
 
-![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occurs.
+![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occur.
 
 ### 103.3.5 Release
 
