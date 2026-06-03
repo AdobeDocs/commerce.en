@@ -1,6 +1,6 @@
 ---
 title: Catalog Events and Adobe I/O Integration Guide
-description: Learn how to enable catalog events in [!DNL Catalog Service for Adobe Commerce]. Discover event types, [!DNL Adobe I/O Events] delivery, and end-to-end setup.
+description: Learn how to enable catalog events in the Commerce Catalog Service. Discover event types, [!DNL Adobe I/O Events] delivery, and end-to-end setup.
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
@@ -78,12 +78,12 @@ The diagram organizes the pipeline into Commerce, Catalog Service, and Delivery 
 
    [!DNL Adobe Commerce] exports catalog data to [!DNL Catalog Service] using the supported SaaS Data Export extensions.
 
-2. **Catalog Service → Storefront Eventing Service**
+1. **Catalog Service → Storefront Eventing Service**
 
    * The Storefront Eventing Service listens to [!DNL MongoDB] collections using *change streams*.
    * It converts raw changes into standardized catalog events and applies filtering and normalization.
 
-3. **Storefront Eventing Service → Adobe I/O Events**
+1. **Storefront Eventing Service → Adobe I/O Events**
 
    * Normalized events are published into [!DNL Adobe I/O Events].
    * Consumers subscribe using webhooks, [!DNL Adobe I/O Runtime] actions, or other supported mechanisms.
