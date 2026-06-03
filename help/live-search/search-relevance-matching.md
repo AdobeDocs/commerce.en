@@ -21,7 +21,7 @@ At a high level, relevance uses three layers of matching strength (in addition t
 
 1. **All words in the same field** — Every word in the query appears in **one** searchable attribute (for example, both `red` and `pants` in the product **name**). This layer receives the **next** highest boost.
 
-1. **Words across different fields** — Query terms appear in **different** searchable attributes (for example, `red` in **color** and `pants` in **name**). This is the broadest match behavior and aligns with how [!DNL Live Search] can surface useful alternatives, including partial matches that support **autocomplete** (for example, a query prefix matching products that contain `red` and another token such as in `pentagon`).
+1. **Words across different fields** — Query terms appear in **different** searchable attributes (for example, `red` in **color** and `pants` in **name**). This is the broadest match behavior and aligns with how [!DNL Live Search] can surface useful alternatives, including partial matches that support **autocomplete** (for example, a query prefix matching products that contain `red` and another token such as in `pentagon`). See [Decompounding (German)](#decompounding-german) for how German compound words behave at this layer only.
 
 ### Example
 
@@ -31,50 +31,17 @@ For a query like `red pants`:
 - Next are products where **red** and **pants** both appear in the **same** field (for example, both in **name**).
 - Then products where **red** and **pants** sit in **different** fields (for example, **color** and **name**).
 
-## Decompounding (German) {#decompounding-german}
+### Decompounding (German) {#decompounding-german}
 
-German catalogs use many **compound words**—single terms built from multiple subwords. Without decompounding, a shopper who searches **spul beck** might not find **Spülbecken** because the index stores only the full compound form.
+**Decompounding applies only to the words across different fields layer.** Exact and near phrase matching and same-field matching use the rules described above without decompounding.
 
-[!DNL Live Search] uses a hyphenation-based decompounder and stemming rules for German. For example, **spülbecken** can decompose into tokens such as **spul** and **beck**. That lets shoppers find products whether they type the compound word or its parts.
+German catalogs use many compound words. For example, **spülbecken** can decompose into tokens such as **spul** and **beck** (after stemming) so a shopper who searches **spul beck** can still find **Spülbecken**. At this cross-field layer, **all** decompounded tokens from the query must be present in the product data, but the tokens do **not** need to appear together or in the same attribute—the same behavior as **red** in **color** and **pants** in **name**.
 
-### How matching works
+This **AND** requirement filters irrelevant matches where only one subword is present. For example, a search for **Brauseschlauch** no longer returns **Schlauchstück** when only part of the compound matches. A search for **spülbecken** can still match **spülbeckventil** because the longer word contains all expected tokens.
 
-When a shopper searches for a compound term, [!DNL Live Search] requires **all** decompounded tokens from the query to be present in the product data. This **AND** behavior filters out irrelevant matches where only one subword is present. For example, a search for **Brauseschlauch** no longer returns **Schlauchstück** when only part of the compound matches.
+Set **Language** to **German** on the [Settings](settings.md#language) workspace so decompounding rules apply. Validate high-value German queries on a staging storefront before you enable changes in production.
 
-Decompounded tokens do **not** need to appear together as a phrase or in the same attribute. This extends the cross-field behavior described above:
-
-- A search for **red pants** can match a product with **red** in **color** and **pants** in **name**.
-- A search for **spülbecken** can still match **spülbeckventil** because the longer word contains all expected tokens.
-
-### Exact and near match boosting
-
-The same three-layer prioritization applies to German queries, with these nuances:
-
-1. **Exact and near phrase match (highest boost)** — The search phrase matches catalog text when **word order** is preserved. For example, **tool box** matches **set of 8 tool box** but not **box with a set of 8 tools** when word position is considered. Stemming applies, so singular and plural forms can count as near matches. **Schlauchbox** and **Schlauchboxen** are near matches; **Schlauch box** or **Schlauch boxen** are not exact matches for **Schlauchboxen**. **spülbeckventil** is not treated as an exact match for **spülbeck** even though it contains the expected tokens.
-
-1. **All tokens in the same field (next boost)** — Every decompounded token appears in one searchable attribute, but not necessarily in order. **box with a set of 8 tools** can match **tool box** at this layer.
-
-1. **Tokens across different fields (lowest boost)** — Decompounded tokens appear in different searchable attributes, with little or no phrase boost.
-
-### Before you enable
-
-- Set **Language** to **German** on the [Settings](settings.md#language) workspace so decompounding and stemming rules apply to the index.
-- Validate high-value German queries on a **staging** storefront before you enable changes in production.
-- Confirm which store views use German so you apply the correct catalog language.
-
-### Limitations and edge cases
-
-**Missing dictionary subwords** — If a subword is missing from the decompounding dictionary, tokenization can be incomplete and return broader matches than you expect. For example, if **gas** is missing from **gaszähler**, only **zahl** might be emitted, so any product containing **zahl** could match. Similarly, **stat** may be missing for **thermostat**. Adobe updates the dictionary as missing subwords are identified.
-
-**Incorrect stemming** — The stemmer is rule-based and can produce unexpected roots. For example, **schrauber** (screwdriver) may stem to **schraub** (screw), and **schelle** (clamp) may stem to **schell** (a proper noun in some catalogs). Adobe overrides stemming for known cases, but other issues may remain.
-
-**Ranking interactions** — [Intelligent ranking](rules-add.md#how-intelligent-ranking-scoring-works) strategies (for example, most purchased or most viewed) can rank an exact match lower than a broader match when behavioral signals outweigh phrase boosts. Sorting by attributes such as **price** does not boost exact or near matches. A high term frequency in the same field can sometimes outscore a tighter phrase match even with the new boosts.
-
-**Combined low-weight fields** — Attributes with **search weight = 1** may be indexed together in `defaultSearchField`, so they behave as one searchable surface for same-field matching. See [Search weight 1 and combined indexing](#search-weight-1-and-combined-indexing).
-
-### Autocomplete behavior
-
-Prefix tokens are generated during indexing to support autocomplete-style retrieval (for example, **pan**, **pant**, and **pants** for **pants**). Autocomplete tokens are used for retrieval, not for exact-match boosting.
+Decompounding is rule-based and can add edge cases at this layer. If a subword is missing from the dictionary, tokenization can be incomplete and return broader matches than you expect—for example, **gas** missing from **gaszähler** may emit only **zahl**, or **stat** missing from **thermostat**. The stemmer can also produce unexpected roots (for example, **schrauber** stemming to **schraub**, or **schelle** to **schell**). Adobe updates the dictionary and stemming overrides for known cases as issues are identified.
 
 ## What else affects ranking
 
@@ -92,7 +59,7 @@ Because of this interplay, a product that matches only through the **broadest** 
 
 Manual **pin** and **bury** rules are designed to remain strong; **boost** rules may need tuning if you rely on them to overcome the new phrase and same-field boosts. Validate important queries after you change weights or rules.
 
-### Search weight 1 and combined indexing {#search-weight-1-and-combined-indexing}
+### Search weight 1 and combined indexing
 
 Attributes configured with the **minimum search weight** (weight **1**) and **not** configured for special match modes (such as contains or starts-with) may be combined in the search index into a single internal field (`defaultSearchField`) to reduce field mapping overhead. Treat that as one searchable surface for **same-field** matching: tokens that land only in those combined low-weight fields are evaluated together rather than as separate per-attribute fields. Adobe may refine this optimization over time as matching evolves.
 
