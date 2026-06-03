@@ -77,7 +77,7 @@ Adobe Commerce provides two GraphQL systems that serve different purposes:
 
 The data available to the Catalog Service is delivered by the SaaS Data Export extension. This extension synchronizes data between the Commerce application and connected Commerce Services to ensure that queries to the services GraphQL API endpoints return the most current catalog data. For information about managing and troubleshooting SaaS data export operations, see the [SaaS Data Export Guide](../data-export/overview.md).
 
-When catalog data in [!DNL Catalog Service] changes, catalog events notify subscribed consumers through [!DNL Adobe I/O Events]. Use these events to invalidate caches, update search indexes, or sync external systems without polling the GraphQL API. For event types, delivery guarantees, and setup, see the [Catalog events and Adobe I/O integration guide](catalog-events-guide.md).
+When catalog data in the [!DNL Catalog Service] changes, catalog events notify subscribed consumers through [!DNL Adobe I/O Events]. Use these events to invalidate caches, update search indexes, or sync external systems without polling the GraphQL API. For event types, delivery guarantees, and setup, see the [Catalog events and Adobe I/O integration guide](catalog-events-guide.md).
 
 [!DNL Catalog Service] customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price updates and synchronization time.
 
