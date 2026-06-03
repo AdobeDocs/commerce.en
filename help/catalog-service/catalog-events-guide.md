@@ -68,9 +68,11 @@ Each event includes:
 
 ## Event delivery through Adobe I/O Events {#event-delivery-through-adobe-io-events}
 
-Catalog events are published to external consumers through [!DNL Adobe I/O Events].
+[!DNL Adobe I/O Events] delivers catalog events to your integrations. The following diagram shows how catalog changes flow from [!DNL Adobe Commerce] through [!DNL Catalog Service] and the Storefront Eventing Service to subscribed consumers:
 
-At a high level:
+![Catalog event pipeline from Adobe Commerce through Catalog Service to Adobe I/O Events consumers](assets/catalog-service-event-pipeline.png)
+
+The diagram organizes the pipeline into Commerce, Catalog Service, and Delivery layers. The following steps explain each handoff in more detail:
 
 1. **Adobe Commerce → Catalog Service**
 
@@ -91,7 +93,7 @@ At a high level:
 * *At-least-once delivery* per subscriber (duplicate events are possible).
 * *Best-effort ordering* per logical key (such as product), but no strict global ordering guarantees.
 
-Because delivery is at-least-once and ordering is best-effort, design consumers to tolerate duplicates and reordering. See [Idempotency](#idempotency) for implementation guidance.
+Your consumers must handle duplicate events and out-of-order delivery. See [Idempotency](#idempotency) for implementation guidance.
 
 ## Use cases
 
@@ -127,7 +129,7 @@ Combine Catalog events with existing monitoring (for example, Grafana and Promet
 >
 >* An Adobe [!DNL Commerce] 2.4.4+ instance with [!DNL Catalog Service], [!DNL Live Search], or [!DNL Product Recommendations] installed. See [Onboarding and Installation](installation.md). If you are enabling events for [!DNL Adobe Commerce as a Cloud Service], these services are already installed.
 >* Access to the Adobe Developer Console with permission to enable [!DNL Adobe I/O Events] and subscribe to the Catalog events provider for your [!DNL IMS] organization.
->* To verify sync to Commerce SaaS services on the [!UICONTROL Data Management Dashboard], Product Recommendations v6.0, [!DNL Live Search] v4.1.0+, or [!DNL Catalog Service] v1.17+ are required. On earlier versions, use [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) for sync verification. Adobe recommends updating your Commerce project to the latest supported versions of these services.
+>* To verify sync to Commerce SaaS services on the [!UICONTROL Data Management Dashboard], Product Recommendations v6.0, [!DNL Live Search] v4.1.0+, or [!DNL Catalog Service] v1.17+ are required. Adobe recommends updating your Commerce project to the latest supported versions of these services. Earlier service versions, use [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) for sync verification.
 
 Follow these steps to enable catalog events end to end.
 
@@ -159,8 +161,6 @@ Follow these steps to enable catalog events end to end.
 
      * **Commerce Admin**—When your storefront services meet the version requirements in the prerequisites, open the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Management Dashboard]**) and confirm successful synchronization for [!DNL Catalog Service] feeds.
 
-     * On environments that do not yet have the Data Management dashboard, use [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) to confirm that [!DNL Catalog Service] data is synchronized.
-
    For more about the export and synchronization process, see [Synchronize data with SaaS Data Export](../data-export/data-synchronization.md).
 
 1. Configure [!DNL Adobe I/O Events].
@@ -176,7 +176,7 @@ Follow these steps to enable catalog events end to end.
    * An [!DNL Adobe I/O Runtime] action
    * Another supported destination
 
-   For more information, see [Configure the I/O connection](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection) in the *Adobe Commerce Developer* documentation.
+   For instructions to complete the steps yourself, see [Configure the I/O connection](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection) in the *Adobe Commerce Developer* documentation.
 
 1. Validate the event flow.
 
@@ -197,7 +197,7 @@ When building on Catalog events, follow these best practices.
 
 ### Idempotency {#idempotency}
 
-[!DNL Adobe I/O Events] can deliver the same catalog event more than once, and events for a single product may arrive out of order. Design consumers to be idempotent by:
+[!DNL Adobe I/O Events] can deliver the same catalog event more than once, and events for a single product can arrive out of order. Design consumers to be idempotent by:
 
 * Using entity IDs with a version or timestamp field.
 * Safely ignoring duplicate notifications for the same change.
