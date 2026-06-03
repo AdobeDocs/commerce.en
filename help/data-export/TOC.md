@@ -7,8 +7,9 @@ feature: Services
 ---
 # [!DNL SaaS Data Export Guide] for Adobe Commerce {#saas-data-export}
 
-- [Guide Overview](overview.md)
-- [Data Synchronization](data-synchronization.md)
+- [Guide overview](overview.md)
+- [Data synchronization](data-synchronization.md)
+- [Feed lock mechanism](feed-lock-mechanism.md)
 - Export scheduling and performance {#performance}
   - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
   - [Improve export performance](customize-export-processing.md)
