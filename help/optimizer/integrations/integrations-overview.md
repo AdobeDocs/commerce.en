@@ -13,6 +13,8 @@ exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 
 [!DNL Adobe Commerce Optimizer] includes integrations that let you sync data from Adobe Commerce on cloud or on-premises, manage assets, improve storefront experiences, and connect external systems. The sections below describe how each integration works with [!DNL Adobe Commerce Optimizer]. Follow the links for setup, configuration, and day-to-day use.
 
+{{aco-integration-environment-alignment}}
+
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
 The Adobe Commerce Optimizer Connector is the bridge that synchronizes catalog and pricing data between Adobe Commerce (cloud or on-premises) and [!DNL Adobe Commerce Optimizer]. When you enable the connector, Commerce remains the system of record for product data while [!DNL Adobe Commerce Optimizer] powers product discovery, recommendations, merchandising rules, analytics, and headless storefront experiences.
