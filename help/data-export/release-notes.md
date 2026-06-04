@@ -48,7 +48,7 @@ Updates include:
 
 _June 4, 2026_
 
-![Fix](../assets/fix.svg) **Bundle products remain visible after concurrent catalog updates**–Fixed an issue where bundle products did not appear on the storefront when configurable and bundle products were updated at the same time. After you upgrade `magento/module-data-exporter` to version 103.4.27 , the products feed is automatically scheduled for resync to correct existing bundle data inconsistencies in [!DNL Catalog Service], [!DNL Live Search], and other connected Commerce services.
+![Fix](../assets/fix.svg) **Bundle products remain visible after concurrent catalog updates**–Fixed an issue where bundle products did not appear on the storefront when configurable and bundle products were updated at the same time. After you upgrade `magento/module-data-exporter` to version 103.4.27, the products feed is automatically scheduled for resync to correct existing bundle data inconsistencies in [!DNL Catalog Service], [!DNL Live Search], and other connected Commerce services.
 <!--MDEE-1379-->
 
 ### 103.4.26 Release
