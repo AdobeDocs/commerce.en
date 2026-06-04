@@ -44,6 +44,13 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.27 Release
+
+_June 4, 2026_
+
+![Fix](../assets/fix.svg) Bundle options returns empty list in edge case. <!--MDEE-1379-->
+![Fix](../assets/fix.svg) auto update products feed. <!--MDEE-1379-->
+
 ### 103.4.26 Release
 
 _June 2, 2026_
