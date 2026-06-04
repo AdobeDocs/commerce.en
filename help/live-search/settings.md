@@ -20,16 +20,10 @@ Use the **Settings** workspace to configure semantic search, price facet ranges 
 
 Semantic search uses AI to match products based on meaning and context, not only exact keywords. When **[!UICONTROL Semantic search]** is enabled, shoppers who use natural language or wording that does not match your catalog verbatim can still find relevant products. [!DNL Live Search] delivers keyword and semantic matching in one unified search experience on the storefront. Semantic search works alongside your existing configuration; [search rules](rules.md), [synonyms](synonyms.md), [facets](facets.md), boosts, and [category merchandising](category-merch.md) continue to apply.
 
->[!IMPORTANT]
->
-> [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} **[!DNL Adobe Commerce as a Cloud Service] customers:** Semantic search is **enabled by default** for eligible English catalogs in this **Settings** workspace. [!DNL Adobe Commerce as a Cloud Service] uses the same [!DNL Live Search] Admin as PaaS merchants.
->
-> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **Adobe Commerce on Cloud and on-premises customers:** Turn **[!UICONTROL Semantic search]** **on** manually using the steps below.
-
 **To enable semantic search (PaaS only):**
 
 1. In the Admin, go to **Marketing** > *SEO & Search* > **[!DNL Live Search]**.
-1. On the **Settings** workspace, turn **[!UICONTROL Semantic search]** **on**.
+1. On the **Settings** workspace, enable **[!UICONTROL Semantic search]**.
 
    When enabled, search matches products based on meaning and context, resulting in more relevant results, fewer zero-result searches, and improved conversion.
 
@@ -39,7 +33,7 @@ Semantic search uses AI to match products based on meaning and context, not only
 
 >[!NOTE]
 >
-> Semantic search is available for **English** catalogs only. If you set **Language** to a non-English catalog (see [Language](#language)), **[!UICONTROL Semantic search]** is turned off automatically.
+> Semantic search is available for **English** catalogs only. If you set **Language** to a non-English catalog (see [Language](#language)), **[!UICONTROL Semantic search]** is disabled automatically.
 
 For benefits, validation guidance, best practices, troubleshooting, and limitations, see [Semantic search](semantic-search.md).
 
@@ -47,7 +41,7 @@ For benefits, validation guidance, best practices, troubleshooting, and limitati
 
 | Field | Description |
 | --- | --- |
-| Semantic search | When **on**, [!DNL Live Search] uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default for [!DNL Adobe Commerce as a Cloud Service]; PaaS merchants enable it manually. |
+| Semantic search | When enabled, [!DNL Live Search] uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default for [!DNL Adobe Commerce as a Cloud Service]; PaaS merchants enable it manually. |
 
 ## Price faceting {#price-faceting}
 

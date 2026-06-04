@@ -110,14 +110,14 @@ Set the Language setting to the primary language of the catalog. When you change
 
 ## Advanced search {#advanced-search}
 
-Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **on by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
+Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **enabled by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
 
 ![Advanced search settings](./assets/advanced-search.png)
 
 **To manage semantic search:**
 
 1. On the **Settings** workspace, select the **[!UICONTROL Advanced search]** tab.
-1. Under **[!UICONTROL Enable semantic search]**, confirm the control is **on**, or turn it **off** if you do not want semantic matching.
+1. Under **[!UICONTROL Enable semantic search]**, confirm semantic search is enabled, or disable it if you do not want semantic matching.
 1. Click **[!UICONTROL Save]** if you change the toggle or tuning controls.
 
    Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
@@ -131,7 +131,7 @@ After semantic search is enabled, you can adjust the following on the same tab:
 
    >[!NOTE]
    >
-   > Semantic search is supported for **English** catalogs only. Selecting another language on the **[Language](#language)** tab turns off **[!UICONTROL Enable semantic search]**.
+   > Semantic search is supported for **English** catalogs only. Selecting another language on the **[Language](#language)** tab disables **[!UICONTROL Enable semantic search]**.
 
 - **[!UICONTROL Fuzzy search]** — Turn **on** to find near matches for search queries, which helps correct typos and minor variations.
 - **[!UICONTROL Fuzzy search similarity threshold]** — Set the minimum similarity (as a percentage) required for fuzzy matches to appear. Lower thresholds return more approximate matches; raise the threshold if fuzzy results feel too broad.
@@ -142,10 +142,10 @@ For benefits, validation guidance, best practices, troubleshooting, and limitati
 
 | Control | Description |
 | --- | --- |
-| Enable semantic search | When **on**, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default for [!DNL Adobe Commerce Optimizer] customers. |
+| Enable semantic search | When enabled, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default for [!DNL Adobe Commerce Optimizer] customers. |
 | Semantic boost | Boost applied to prioritize semantically relevant results in ranking. |
 | Similarity threshold | Minimum similarity score (percentage) for a semantic match. Lower values favor recall; higher values favor precision. |
-| Fuzzy search | When **on**, search finds near matches for queries (for example, typos and minor variations). |
+| Fuzzy search | When **on**, search finds near matches for queries (for example, minor variations). |
 | Fuzzy search similarity threshold | Minimum similarity (percentage) fuzzy matches must meet to appear in results. |
 
 >[!ENDTABS]
