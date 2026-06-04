@@ -4,6 +4,30 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### May 28, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li>Improved <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco">Configure AEM Assets for Commerce Optimizer</a> onboarding so AEM Assets setup comes before tenant registration, with clearer guidance on dedicated catalog layers and layer-related limitations.<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem">Configure the AEM Assets project</a> with reordered installation steps and Cloud Manager screenshots for repository access and pipeline deployment.<br />- Clarified IMS-based Program ID and Environment ID selection in <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization">Configure the integration</a>.</li>
+</ul>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### May 22, 2026
 
 <table style="table-layout:auto;">
@@ -16,7 +40,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added release notes for the API updates to <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> and Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Catalog Service</a> for the May 20, 2026 release which now enforces the documented the 100-SKU limit per request when retrieving product data. See <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Limits and boundaries</a>.</p>
+      <td><p>Added release notes for API updates to <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> and Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Catalog Service</a> for the May 20, 2026 release which now enforces the documented the 100-SKU limit per request when retrieving product data.</p>
 </td>
       <td>
         Technical

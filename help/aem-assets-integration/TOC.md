@@ -17,6 +17,7 @@ feature: CMS, Page Content
   - [Configure Commerce Optimizer](get-started/configure-aco.md)
   - [Configure your storefront](get-started/configure-storefront.md)
   - [View and manage logs](get-started/logs.md)
+  - [View AEM Assets sync status](get-started/sync-status.md)
   - [Migrate data](get-started/migrate-data.md)
 - Synchronization mechanisms {#synchronize}
   - [Maintain accurate and relevant content](synchronize/commerce-content.md)
