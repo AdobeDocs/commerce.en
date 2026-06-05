@@ -4,6 +4,80 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### June 3, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added Production <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/feed-lock-mechanism">Feed lock mechanism for SaaS Data Export</a> to explain how feed locks prevent concurrent sync conflicts and how to interpret normal skip messages included in the Commerce data export log (<code>commerce-data-export.log</code>).</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### June 2, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>The Commerce Admin adds an asset-centric <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/sync-status">Sync Status</a> list to search, filter, and troubleshoot synchronized AEM Assets by asset attributes.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### June 1, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### May 28, 2026
 
 <table style="table-layout:auto;">
@@ -314,80 +388,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### April 2, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">Recommendation filters</a> with Price and Product filter procedures, price-book–based final price behavior for filtering and displayed prices, and new screenshots for the Filter products UI.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d67df3c05f1202e361d0c8972d6f1bf7a5b8854">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### April 1, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home">Payment Services Home</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting">Reporting</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard">Onboarding overview</a> with SaaS/ACCS screenshots and UI guidance (onboarding banner, Transactions-focused Home, Transactions grid).</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added April Production <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a28d4b467dc51f70509ab19dbdbaf2cd3f59a208">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### March 31, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updates the Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> with the latest sandbox deployment.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">commit</a></td>
     </tr>
   </tbody>
 </table>
