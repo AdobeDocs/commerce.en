@@ -95,31 +95,7 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 ### Initial setup and configuration {#initial-setup}
 
-1. **Install the connector package in Adobe Commerce** using Composer:
-
-    `composer require adobe-commerce/commerce-data-export-aco-adapter`
-
-1. **Configure authentication and environment details** in Commerce Admin or via CLI:
-
-    ```terminal
-    bin/magento aco:config:init \
-      --org_id=<your-org> \
-      --tenant_id=<your-tenant> \
-      --client_id=<your-client-id> \
-      --client_secret=<your-secret> \
-      --region=na1 \
-      --type=production
-    ```
-
-1. **Map Commerce scopes to Commerce Optimizer:**
-
-    - Confirm which Websites and Store Views must be in scope
-    - Ensure customer groups and price rules are modeled as expected
-
-1. **Verify connectivity:**
-
-    - Run a test sync and confirm that Catalog Sources, Price Books, and initial products appear in Commerce Optimizer
-    - Use the Data Feed Sync Status page in Commerce and the Data Sync dashboards in Commerce Optimizer for validation
+Please follow  ["Configuration steps"](./get-started.md#configuration-steps) in the "Get Started" guide for detailed instructions on setting up and configuring the [!DNL Adobe Commerce Optimizer] connector.
 
 ### Ongoing data synchronization {#ongoing-sync}
 
@@ -127,11 +103,17 @@ After the initial configuration, the connector supports:
 
 - **Full catalog sync** for initial migration or large structural changes
 - **Delta syncs** for ongoing updates when products or prices change
-- **Resync commands** for targeted feeds (including categories as of v1.0.12):
+- **Resync commands** for targeted feeds (check [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands) for details)
 
-  - `bin/magento saas:resync --feed=products`
-  - `bin/magento saas:resync --feed=prices`
-  - `bin/magento saas:resync --feed=categories`
+The following feeds available for ACO Connector:
+
+  - `products` - products data
+  - `productAttributes` - metadata for product attributes 
+  - `priceBooks` - price books
+  - `prices` - product prices
+  - `categories` - categories data
+
+Check [CLI commands](../data-export/data-export-cli-commands.md#sync-using-cli-commands) for details.
 
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
