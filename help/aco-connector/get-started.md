@@ -57,7 +57,7 @@ Follow these steps to enable the connector and begin synchronizing data from Com
 
 1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-optimizer-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
 
-1. **[Review and customize the data export configuration](#customize-the-commerce-scopes-export-configuration)** from the Admin.
+1. **[Customize the data export configuration](#customize-the-commerce-scopes-export-configuration)** from the Admin.
 
 1. **[Enable the [!DNL Adobe Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
 
@@ -118,6 +118,13 @@ The following table describes what data is exported at each scope level:
 
 1. Save your changes.
 
+### Enable and disable behavior
+
+| Action | Result |
+| -------- | -------- |
+| Disable a store view | The catalog source remains in [!DNL Adobe Commerce Optimizer], but all data is removed. |
+| Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
+
 ## Enable the [!DNL Adobe Commerce Optimizer] integration
 
 >[!IMPORTANT]
@@ -134,7 +141,7 @@ Save the following values from the credentials page:
 * **Client ID** (`client_id`)
 * **Client Secret** (`client_secret`)
 
-![Obtain credenital details](assets/developer-console-project-credentials.png){width="500" zoomable="yes"}
+![Obtain credential details](assets/developer-console-project-credentials.png){width="500" zoomable="yes"}
 
 ### Get [!DNL Adobe Commerce Optimizer] instance details
 
@@ -158,7 +165,6 @@ Save the _tenant ID_ (also called the instance ID) from your [!DNL Adobe Commerc
 
 ## Verify that the data sync is working
 
-After you enable the integration, data sync begins automatically. Depending on catalog size, the initial sync can take from a few minutes to several hours.
 You can monitor and verify that the sync is working from the [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page available in the Admin. 
 
 1. **Check sync status in the Commerce Admin:**
@@ -185,7 +191,7 @@ You can monitor and verify that the sync is working from the [Data Feed Sync Sta
 
 1. **Configure [!DNL Adobe Commerce Optimizer] catalog views and policies**
 
-   Create catalog views and policies in the [!DNL Adobe Commerce Optimizer] UI. Note that price books are created automatically from Adobe Commerce customer groups. For instructions, see the [Catalog views](../optimizer/setup/catalog-view.md) and [Policies](../optimizer/setup/catalog-view.md) documentation in the *Commerce Optimizer User Guide*.
+   Create catalog views and policies in the [!DNL Adobe Commerce Optimizer] UI. Note that price books are created automatically from Adobe Commerce customer groups. For instructions, see the [Catalog views](../optimizer/setup/catalog-view.md) and [Policies](../optimizer/setup/policies.md) documentation in the *Commerce Optimizer User Guide*.
 
 1. **Set up a Commerce Storefront on Edge Delivery Services**
 

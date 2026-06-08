@@ -113,8 +113,6 @@ The following feeds available for ACO Connector:
   - `prices` - product prices
   - `categories` - categories data
 
-Check [CLI commands](../data-export/data-export-cli-commands.md#sync-using-cli-commands) for details.
-
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
 After Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.
