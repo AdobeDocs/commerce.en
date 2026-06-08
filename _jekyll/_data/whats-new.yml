@@ -2,8 +2,52 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 29 15:39:50 2026
+updated: Fri Jun 5 15:40:06 2026
 entries:
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: June 3, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/612
+  merge_commit: 8ec59cfc8c9d4d1e804adefe7f88806843e3caa3
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - hold for release
+  - major-update
+- description: Added [Feed lock mechanism for SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/feed-lock-mechanism)
+    to explain how feed locks prevent concurrent sync conflicts and how to interpret
+    normal skip messages included in the Commerce data export log (`commerce-data-export.log`).
+  versions: ''
+  type: new-topic
+  date: June 3, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/610
+  merge_commit: cb045b490482649a65bac9d763062700a90e9ecd
+  contributor: mslabko_adobe
+  labels:
+  - new-topic
+- description: The Commerce Admin adds an asset-centric [Sync Status](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/sync-status)
+    list to search, filter, and troubleshoot synchronized AEM Assets by asset attributes.
+  versions: ''
+  type: major-update
+  date: June 2, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/608
+  merge_commit: a1cb3a063d9c4595220ca431356d34e6cbe8ea33
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/597
+  merge_commit: 3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
 - description: "- Improved [Configure AEM Assets for Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco)
     onboarding so AEM Assets setup comes before tenant registration, with clearer
     guidance on dedicated catalog layers and layer-related limitations.<br/>- Updated
