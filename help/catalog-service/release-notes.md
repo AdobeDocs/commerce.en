@@ -617,9 +617,7 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 - **Data Exporter Status** (`magento/module-data-exporter-status`) for tracking the synchronization status of data feeds. For details, see the [SaaS Data Export extension release notes](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes).
 
-![New](../assets/new.svg) Updated the data exporter and SaaS export module dependencies to `^103.4.16`.
-
-![New](../assets/new.svg) Updated version and metadata for the 3.4.0 release.
+![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
 
 ### v3.3.0 release
 
