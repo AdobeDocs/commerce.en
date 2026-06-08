@@ -99,10 +99,10 @@ By default, catalog data sync is enabled for all Commerce scopes (websites, cust
 
 The following table describes what data is exported at each scope level:
 
-| Scope | Data exported | Notes                                                                                                                                                                                                     |
-| ------- | --------------- |-------|
-| Website | Prices and price books | Each set of prices is exported as a [price book](../optimizer/setup/pricebooks.md) using the naming convention `<website>::<customer group code hash>`. All customer groups for the website are included. |
-| Store view | Products and product attributes | Each store view creates a separate [catalog source](../optimizer/setup/catalog-source.md) in [!DNL Adobe Commerce Optimizer].                                                                             |
+| Scope                      | Data exported | Notes                                                                                                                                                                                                     |
+|----------------------------| --------------- |-------|
+| Website and customer group | Prices and price books | Each set of prices is exported as a [price book](../optimizer/setup/pricebooks.md) using the naming convention `<website>::<SHA1 of customer group ID>`. All customer groups for the website are included. |
+| Store view                 | Products and product attributes | Each store view creates a separate [catalog source](../optimizer/setup/catalog-source.md) in [!DNL Adobe Commerce Optimizer].                                                                             |
 
 ![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 

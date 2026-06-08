@@ -95,7 +95,7 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 ### Initial setup and configuration {#initial-setup}
 
-Please follow  ["Configuration steps"](./get-started.md#configuration-steps) in the "Get Started" guide for detailed instructions on setting up and configuring the [!DNL Adobe Commerce Optimizer] connector.
+For detailed instructions on setting up and configuring the [!DNL Adobe Commerce Optimizer] connector, see [Configuration steps](./get-started.md#configuration-steps) in the Get Started guide.
 
 ### Ongoing data synchronization {#ongoing-sync}
 

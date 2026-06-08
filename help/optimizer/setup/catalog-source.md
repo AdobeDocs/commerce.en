@@ -8,7 +8,7 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 # Catalog source
 
-A Catalog Source represents an authoritative scope of products, attributes, and categories. Catalog Sources typically map to language, audience, or system-of-origin boundaries and determine search, filter, and sort behavior.
+A catalog source represents an authoritative scope of products, attributes, and categories. Catalog sources typically map to language, audience, or system-of-origin boundaries and determine search, filter, and sort behavior.
 
 ## Catalog source versus related concepts
 
@@ -22,17 +22,17 @@ Understanding how a catalog source relates to other [!DNL Adobe Commerce Optimiz
 
 ## Rules and limitations
 
-- A Catalog Source is created by ingesting a Product via the Data Ingestion API. See [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) for more information.
-- Product uniqueness is determined by SKU + Catalog Source.
-- Shoppers do not access Catalog Sources directly. Catalog data is exposed to the storefront via [Catalog Views](catalog-view.md).
+- A catalog source is created by ingesting a product via the Data Ingestion API. See [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) for more information.
+- Product uniqueness is determined by SKU + catalog source.
+- Shoppers do not access catalog sources directly. Catalog data is exposed to the storefront via [catalog views](catalog-view.md).
 
 ## Modeling guidance
 
 Use the following guidance when deciding how to structure your catalog sources:
 
-- Create a separate Catalog Source per different catalog language.
-- Use separate Catalog Sources when product and attribute differences must affect search, filtering, or sorting behavior (for example, different searchability, filterability, or facet configuration for the same attribute)
-- Use [Catalog Layers](catalog-layer.md) when product and attribute differences must affect storefront display only, not product discovery.
+- Create a separate catalog source per different catalog language.
+- Use separate catalog sources when product and attribute differences must affect search, filtering, or sorting behavior (for example, different searchability, filterability, or facet configuration for the same attribute).
+- Use [catalog layers](catalog-layer.md) when product and attribute differences must affect storefront display only, not product discovery.
 
 ## More like this
 
