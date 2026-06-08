@@ -23,7 +23,7 @@ The integration has two main flows:
 
 * **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to the [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From ACO**: When a product is updated in the [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to ACO.
+* **From [!DNL Commerce Optimizer]**: When a product is updated in the [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 The updated images are available through storefront APIs (Catalog Service, Live Search, Product Recommendations).
 
