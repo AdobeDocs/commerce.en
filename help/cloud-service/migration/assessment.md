@@ -266,7 +266,7 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 1. Start building your customizations. Use the module descriptions as AI tool input to begin scaffolding compatible extensions.
 1. Schedule a walkthrough call with your Adobe account team. Adobe can review the findings with you, answer any questions about specific modules and storefront signals, and help you map the migration approach for your complexity profile.
 
-## Related documentation
+## Resources
 
 - [!DNL Adobe Commerce as a Cloud Service]
   - [Overview](../overview.md)
