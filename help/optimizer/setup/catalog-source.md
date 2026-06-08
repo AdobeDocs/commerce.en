@@ -34,9 +34,9 @@ Use the following guidance when deciding how to structure your catalog sources:
 - Use separate catalog sources when product and attribute differences must affect search, filtering, or sorting behavior (for example, different searchability, filterability, or facet configuration for the same attribute).
 - Use [catalog layers](catalog-layer.md) when product and attribute differences must affect storefront display only, not product discovery.
 
-## More like this
-
-- [Catalog views](catalog-view.md) - Configure filtered, priced views on top of a catalog source
-- [Catalog layers](catalog-layer.md) - Modify product presentation without changing source data
-- [Policies](policies.md) - Create attribute-based filters for catalog views
-- [Price books](pricebooks.md) - Manage pricing structures for different customer segments
+>[!MORELIKETHIS]
+>
+> * [Catalog views](catalog-view.md) - Configure filtered, priced views on top of a catalog source
+> * [Catalog layers](catalog-layer.md) - Modify product presentation without changing source data
+> * [Policies](policies.md) - Create attribute-based filters for catalog views
+> * [Price books](pricebooks.md) - Manage pricing structures for different customer segments

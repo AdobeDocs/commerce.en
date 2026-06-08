@@ -95,7 +95,18 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 ### Initial setup and configuration {#initial-setup}
 
-For detailed instructions on setting up and configuring the [!DNL Adobe Commerce Optimizer] connector, see [Configuration steps](./get-started.md#configuration-steps) in the Get Started guide.
+
+The high level steps for setup and configuration:
+
+1. Install the connector package for Adobe Commerce.
+
+1. Configure authentication and environment details.
+
+1. Map Commerce scopes to Commerce Optimizer.
+
+1. Verify connectivity.
+
+For detailed instructions, see [Configuration steps](./get-started.md#configuration-steps) in the _Get Started_ guide.
 
 ### Ongoing data synchronization {#ongoing-sync}
 
@@ -103,7 +114,7 @@ After the initial configuration, the connector supports:
 
 - **Full catalog sync** for initial migration or large structural changes
 - **Delta syncs** for ongoing updates when products or prices change
-- **Resync commands** for targeted feeds (check [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands) for details)
+- **Resync commands** for targeted feeds 
 
 The following feeds available for ACO Connector:
 
@@ -112,7 +123,7 @@ The following feeds available for ACO Connector:
   - `priceBooks` - price books
   - `prices` - product prices
   - `categories` - categories data
-
+For details on using the Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
 After Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.

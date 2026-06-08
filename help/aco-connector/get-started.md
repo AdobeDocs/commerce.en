@@ -94,7 +94,7 @@ By default, catalog data sync is enabled for all Commerce scopes (websites, cust
 
 >[!IMPORTANT]
 >
->Changing export settings triggers a full re-indexation, which can take significant time depending on your catalog size. It's recommended to configure what Commerce scopes should be synced to Commerce Optimizer before enabling the integration and starting the initial data sync.
+>Changing export settings triggers a full re-indexation, which can take significant time depending on your catalog size. Adobe recommends configuring the Commerce scopes to sync to Commerce Optimizer before enabling the integration and starting the initial data sync.
 
 
 The following table describes what data is exported at each scope level:
@@ -145,7 +145,7 @@ Save the following values from the credentials page:
 
 ### Get [!DNL Adobe Commerce Optimizer] instance details
 
-Save the _tenant ID_ (also called the instance ID) from your [!DNL Adobe Commerce Optimizer] instance. You can find it on [instance details page](../optimizer/get-started.md#manage-instances) or in the URL used to access the instance. For example, in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
+Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Adobe Commerce Optimizer] instance [!DNL Instance details] page](../optimizer/get-started.md#manage-instances), or from the URL used to access the instance. For example, in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. From the Commerce Admin, select **[!UICONTROL Adobe Commerce Optimizer]** to display the configuration page with instructions.
 
