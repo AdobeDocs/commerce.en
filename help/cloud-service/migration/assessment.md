@@ -271,8 +271,8 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 - [!DNL Adobe Commerce as a Cloud Service]
   - [Overview](../overview.md)
   - [Migration overview](./overview.md)
-  - [Ratings extension tutorial](../tutorials/ratings-extension/)
-  - [Shipping method tutorial](../tutorials/shipping-method-extension/)
+  - [Ratings extension tutorial](../tutorials/ratings-extension.md)
+  - [Shipping method tutorial](../tutorials/shipping-method-extension.md)
 - Extensibility
   - [Overview](https://developer.adobe.com/commerce/extensibility/)
   - [AI developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/)
