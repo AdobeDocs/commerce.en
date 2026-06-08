@@ -11,4 +11,8 @@ This page provides a reference for Data Export log messages to help troubleshoot
 
 See [Review logs and troubleshoot](troubleshooting-logging.md) for information about log files and troubleshooting guidance.
 
+<!-- Source: magento-commerce/commerce-data-export:dev/tests/log-codes.md  -->
+
+## Log code details
+
 {{$include /help/_includes/data-export/log-code-reference.md}}
