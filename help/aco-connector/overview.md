@@ -58,7 +58,7 @@ Commerce remains your system of record for products, prices, and catalog structu
 
 The following diagram illustrates the end-to-end architecture for the connector, from Adobe Commerce through Commerce Optimizer and out to storefronts and checkout systems.
 
-![Commerce Optimizer Connector end-to-end architecture diagram Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Adobe Commerce Optimizer Connector end-to-end architecture diagram](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 In this architecture:
 
@@ -116,7 +116,7 @@ After the initial configuration, the connector supports:
 - **Delta syncs** for ongoing updates when products or prices change
 - **Resync commands** for targeted feeds 
 
-The following feeds available for ACO Connector:
+The following feeds are available for the Adobe Commerce Optimizer Connector:
 
   - `products` - products data
   - `productAttributes` - metadata for product attributes 

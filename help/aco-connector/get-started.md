@@ -7,7 +7,7 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 # Get started
 
-Install and configure the Commerce Optimizer Connector to sync your Adobe Commerce catalog data with [!DNL Adobe Commerce Optimizer], then monitor the data sync status to ensure your storefront is up to date.
+Install and configure the Adobe Commerce Optimizer Connector to sync your Adobe Commerce catalog data with [!DNL Adobe Commerce Optimizer], then monitor the data sync status to ensure your storefront is up to date.
 
 {{aco-integration-environment-alignment}}
 
@@ -36,7 +36,7 @@ The Adobe Commerce user configuring the integration must have:
 
 ## Prerequisites
 
-If you have any of the following extensions installed, uninstall them before installing the Commerce Optimizer Connector:
+If you have any of the following extensions installed, uninstall them before installing the Adobe Commerce Optimizer Connector:
 
 * Adobe Commerce Live Search (`magento/live-search`)
 * Adobe Commerce Product Recommendations (`magento/product-recommendations`)
@@ -55,7 +55,7 @@ Data associated with these extensions is still available in the Commerce databas
 
 Follow these steps to enable the connector and begin synchronizing data from Commerce to your Adobe Commerce Optimizer instance.
 
-1. **[Install the Commerce Optimizer Connector package](#install-the-commerce-optimizer-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
+1. **[Install the Adobe Commerce Optimizer Connector package](#install-the-adobe-commerce-optimizer-connector-package)** using Composer to connect your Commerce instance to [!DNL Adobe Commerce Optimizer].
 
 1. **[Customize the data export configuration](#customize-the-commerce-scopes-export-configuration)** from the Admin.
 
@@ -64,7 +64,7 @@ Follow these steps to enable the connector and begin synchronizing data from Com
 1. **[Verify that the data sync is working](#verify-that-the-data-sync-is-working)**.
 
 
-## Install the Commerce Optimizer Connector package
+## Install the Adobe Commerce Optimizer Connector package {#install-the-adobe-commerce-optimizer-connector-package}
 
 The Adobe Commerce Optimizer Connector is delivered as a Composer metapackage available to all Commerce merchants with an active license for [!DNL Adobe Commerce Optimizer].
 
@@ -145,7 +145,7 @@ Save the following values from the credentials page:
 
 ### Get [!DNL Adobe Commerce Optimizer] instance details
 
-Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Adobe Commerce Optimizer] instance [!DNL Instance details] page](../optimizer/get-started.md#manage-instances), or from the URL used to access the instance. For example, in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
+Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Adobe Commerce Optimizer] instance [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances), or from the URL used to access the instance. For example, in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. From the Commerce Admin, select **[!UICONTROL Adobe Commerce Optimizer]** to display the configuration page with instructions.
 

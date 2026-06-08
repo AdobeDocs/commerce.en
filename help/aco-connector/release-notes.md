@@ -19,7 +19,7 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 _May 6, 2026_
 
 ![Fix](../assets/fix.svg) **Improved Connector configuration instructions**–Updated the Commerce Optimizer configuration page in the Commerce Admin to link to the _Adobe Commerce Connector Guide_. <!--COMOPT-1922-->
-![Fix](../assets/fix.svg) **Connector metadata enhancement**–The ACO Connector now includes its installed version in the metadata header. This improvement enables teams to quickly identify which connector version is in use during troubleshooting or support engagements.<!--MDEE-1323-->
+![Fix](../assets/fix.svg) **Connector metadata enhancement**–The Adobe Commerce Optimizer Connector now includes its installed version in the metadata header. This improvement enables teams to quickly identify which connector version is in use during troubleshooting or support engagements.<!--MDEE-1323-->
 
 ### 1.0.12 Release
 
