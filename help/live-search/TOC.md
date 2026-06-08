@@ -41,5 +41,6 @@ feature: Services, Search
    - [Indexing](indexing.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
+   - [Semantic search](semantic-search.md)
 - [Developer Guide](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
