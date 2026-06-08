@@ -52,17 +52,17 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## June 2026 - release #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-The following items will be released to Production environments on June 4, 2026.
+The following items were released to Production environments on June 4, 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Add and edit custom coupon codes in the Admin
 
-Merchants can now create and edit custom coupon codes directly from the [!DNL Commerce Admin] on manual cart price rules. A new [!UICONTROL **Add Custom Coupon**] button is available in the [!UICONTROL **Manage Coupon Codes**] section when editing a cart price rule. <!-- CCSAAS-4508 -->
+Merchants can now [create and edit custom coupon codes](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) directly from the [!DNL Commerce Admin] on manual cart price rules. A new [!UICONTROL **Add Custom Coupon**] button is available in the [!UICONTROL **Manage Coupon Codes**] section when editing a cart price rule. <!-- CCSAAS-4508 -->
 
 ### Track shipments using default and custom carriers
 
