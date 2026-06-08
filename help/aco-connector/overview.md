@@ -123,7 +123,7 @@ The following feeds are available for the Adobe Commerce Optimizer Connector:
   - `priceBooks` - price books
   - `prices` - product prices
   - `categories` - categories data
-For details on using the Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
+For details on using the Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}. For technical details on feed endpoints, batch limits, and field-level data mapping, see the [Technical Reference](reference/technical-overview.md). 
 
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
@@ -194,3 +194,7 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
 - Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
+- Understand the sync mechanism, modules, and feeds: [Technical Architecture](reference/technical-overview.md)
+- Field-level data mapping for all feeds: [Field Mappings](reference/field-mappings.md)
+- Integrate headless storefronts using GraphQL and bundle encoding: [Headless Storefront Integration](reference/headless-storefront.md)
+- Diagnose sync and configuration issues: [Troubleshooting](reference/troubleshooting.md)
