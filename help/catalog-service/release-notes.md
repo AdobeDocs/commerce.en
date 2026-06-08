@@ -615,7 +615,7 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 ![New](../assets/new.svg) Added a new package dependency:
 
-- **Data Feed Sync Status** (`magento/module-data-exporter-status`) for tracking the synchronization status of data feeds. For details, see the [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+- **Data Feed Sync Status** for tracking the synchronization status of data feeds. For details, see the [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
 
 ![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
 
