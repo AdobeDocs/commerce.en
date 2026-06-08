@@ -90,7 +90,7 @@ The Storefront Complexity section surfaces the effort required to migrate your s
 - Total blocks - The number of block and template (.phtml) files in your store. Blocks are the primary server-side rendering artifacts, each one represents a discrete migration task.
 
 | Block count | Effort |
-| --- | --- |     
+| --- | --- |
 | Under 100 | Baseline — standard effort |
 | 100–300 | Medium — plan a structured front-end wave |
 | Over 300 | High — prioritize as a dedicated workstream |
@@ -271,8 +271,8 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 - [!DNL Adobe Commerce as a Cloud Service]
   - [Overview](../overview.md)
   - [Migration overview](./overview.md)
-  - [Ratings extension tutorial](../tutorials/ratings-extension)
-  - [Shipping method tutorial](../tutorials/shipping-method-extension)
+  - [Ratings extension tutorial](../tutorials/ratings-extension/)
+  - [Shipping method tutorial](../tutorials/shipping-method-extension/)
 - Extensibility
   - [Overview](https://developer.adobe.com/commerce/extensibility/)
   - [AI developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/)
