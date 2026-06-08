@@ -55,7 +55,15 @@ Each filter type targets a different aspect of the catalog, such as product and 
 >
 >Price filtering is in beta.
 
-Price filtering uses each product's **final computed price** for the storefront's **active price book**—the one assigned to the storefront where the recommendation unit is rendered. That value reflects discounts, promotions, and special pricing defined in that price book, not list price alone. It does not include shipping or cart-level adjustments. Evaluation uses only that storefront's price book; other storefronts or price books do not apply. How price books map to a storefront is configured with your catalog and [price books](../../setup/pricebooks.md) setup.
+Price filtering uses each product's **final computed price** from the storefront's **active price book**, which is the price book assigned to the storefront where the recommendation unit is rendered.
+
+That value:
+
+- **Includes** discounts, promotions, and special pricing defined in that price book (not list price alone).
+- **Excludes** shipping and cart-level adjustments.
+- **Applies only** to the active price book for that storefront; other storefronts or price books are not used.
+
+Configure how price books map to a storefront in your catalog and [price books](../../setup/pricebooks.md) setup.
 
 #### How include and exclude rules use price {#how-include-and-exclude-rules-use-price}
 
@@ -64,7 +72,7 @@ Price filtering uses each product's **final computed price** for the storefront'
 
 Price rules **filter** the recommendation candidate set; they do **not** re-rank products. The engine produces a ranked list, price include and exclude rules remove products from that list, and the relative order of remaining products stays the same. If fewer products qualify than the unit requests, only valid items are shown. If none qualify, the unit is not rendered (no empty placeholder).
 
-**Displayed price** – The price shown on products inside the recommendation unit is the same **final price** from that storefront's price book, so what shoppers see matches the value used for filtering. In the Admin preview, configurable products may show a price range when variant prices differ; see [Configurable products in preview](#configurable-products-in-preview).
+The price shown on products inside the recommendation unit is the same **final price** from that storefront's price book, so what shoppers see matches the value used for filtering. In the Admin preview, configurable products may show a price range when variant prices differ; see [Configurable products in preview](#configurable-products-in-preview).
 
 #### Static price range
 
