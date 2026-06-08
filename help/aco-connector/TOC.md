@@ -9,9 +9,10 @@ user-guide-description: Configure the Adobe Commerce Optimizer Connector to expo
 
 - [Adobe Commerce Optimizer Connector](overview.md)
 - [Get Started](get-started.md)
-- [Release notes](release-notes.md)
-- Technical Reference {#reference}
-  - [Architecture and data sync](./reference/technical-overview.md)
+- [Sync architecture](sync-architecture.md)
+- [Headless storefront integration](headless-storefront.md)
+- [Troubleshooting](troubleshooting.md)
+- Reference {#reference}
+  - [Connector reference](./reference/connector-reference.md)
   - [Field mappings](./reference/field-mappings.md)
-  - [Headless storefront integration](./reference/headless-storefront.md)
-  - [Troubleshooting](./reference/troubleshooting.md)
+- [Release notes](release-notes.md)

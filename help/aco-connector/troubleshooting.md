@@ -24,23 +24,14 @@ If `aco:config:init` fails during credential validation:
 
 Key points about error handling:
 
-- **400 errors** are not retried. Inspect the payload for malformed or missing required fields. See [Field Mappings](field-mappings.md) for the expected format.
+- **400 errors** are not retried. Inspect the payload for malformed or missing required fields. See [Field Mappings](reference/field-mappings.md) for the expected format.
 - **5xx errors** are automatically retried by the `*_resend_failed_items` cron job (runs every 5 minutes).
 
 **Check scope configuration:**
 
-If the problem affects only a specific catalog source (store view code) or price book, check whether the corresponding website or store view has sync disabled in `CommerceOptimizerScopeMapper`. See [Scope-based sync control](technical-overview.md#scope-based-sync-control).
+If the problem affects only a specific catalog source (store view code) or price book, check whether the corresponding website or store view has sync disabled. See [Customize the data export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration).
 
-**Check for conflicting extensions:**
-
-If you see 401 or 403 errors in the logs, verify that the following extensions have been uninstalled:
-
-- Adobe Commerce Live Search (`magento/live-search`)
-- Adobe Commerce Product Recommendations (`magento/product-recommendations`)
-- Adobe Commerce Catalog Service (`magento/catalog-service`)
-
-These extensions conflict with the connector's authentication. See [Prerequisites](../get-started.md#prerequisites) for details.
 
 ## SaaS Data Export diagnostics
 
-For lower-level SaaS Data Export diagnostics, including log locations and feed resync commands, see the [SaaS Data Export troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting-logging){target="_blank"}.
+For lower-level SaaS Data Export diagnostics, including log locations and feed resync commands, see the [SaaS Data Export troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.

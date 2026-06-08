@@ -7,37 +7,35 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 # Field mappings
 
-This page documents how the ACO Connector transforms Adobe Commerce feed data into the format required by the Adobe Commerce Optimizer Catalog Data Ingestion API. See [Technical Architecture](technical-overview.md#supported-feeds) for the list of supported feeds and their API endpoints.
+This page documents how the ACO Connector transforms Adobe Commerce feed data into the format required by the Adobe Commerce Optimizer Catalog Data Ingestion API. See [Connector Reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
 
 ## Products
 
-| Commerce field | ACO API field | Notes |
-|---------------|--------------|-------|
-| `sku` | `sku` | |
-| `storeViewCode` | `source/locale` | |
-| `name` | `name` | |
-| `urlKey` | `slug` | |
-| `productId` | `externalIds[0].id` | `origin` fixed to `"AdobeCommerce"` |
-| `status` | `status` | Uppercased; set to `DISABLED` for composite products with no assigned children |
-| `description` | `description` | |
-| `shortDescription` | `shortDescription` | |
-| `visibility` | `visibleIn` | Comma-separated value split and mapped: `Catalog`→`CATALOG`, `Search`→`SEARCH`; unmapped values dropped |
-| `metaTitle` | `metaTags/title` | |
-| `metaDescription` | `metaTags/description` | |
-| `metaKeyword` | `metaTags/keywords` | Newline-delimited string split into array |
+| Commerce field                                | ACO API field | Notes |
+|-----------------------------------------------|--------------|-------|
+| `sku`                                         | `sku` | |
+| `storeViewCode`                               | `source/locale` | |
+| `name`                                        | `name` | |
+| `urlKey`                                      | `slug` | |
+| `productId`                                   | `externalIds[0].id` | `origin` fixed to `"AdobeCommerce"` |
+| `status`                                      | `status` | Uppercased; set to `DISABLED` for composite products with no assigned children |
+| `description`                                 | `description` | |
+| `shortDescription`                            | `shortDescription` | |
+| `visibility`                                  | `visibleIn` | Comma-separated value split and mapped: `Catalog`→`CATALOG`, `Search`→`SEARCH`; unmapped values dropped |
+| `metaTitle`                                   | `metaTags/title` | |
+| `metaDescription`                             | `metaTags/description` | |
+| `metaKeyword`                                 | `metaTags/keywords` | Newline-delimited string split into array |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON-encoded object `{inStock, lowStock, weight, weightType}`; always present as the first attribute entry |
-| `attributes[]` | `attributes[]` | Each entry mapped to `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` are excluded (they go into `aco_ac_attributes`) |
-| `images[]` | `images[]` | `url`, `label`; standard roles mapped: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; non-standard roles go to `customRoles[]` |
-| `categoryData[].categoryPath` | `routes[].path` | |
-| `categoryData[].productPosition` | `routes[].position` | |
-| `links[].type` + `links[].sku` | `links[]` | `type` uppercased; entries without `sku` dropped |
-| `parents[].productType` + `parents[].sku` | `links[]` | Type mapped: `configurable`→`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE` |
-| `optionsV2[]` (configurable options) | `configurations[]` | `id`→`attributeCode`, `label`; option type `SWATCH` when `swatchType` is set, else `CONFIGURABLE`; default variant from `isDefault`; values include `variantReferenceId`, `label`, `colorHex`, `imageUrl` |
-| `optionsV2[]` (bundle options) | `bundles[]` | `label`→`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; default SKUs from `isDefault`; items include `sku`, `qty`, `userDefinedQty` (`qtyMutability`) |
+| `attributes[]`                                | `attributes[]` | Each entry mapped to `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` are excluded (they go into `aco_ac_attributes`) |
+| `images[]`                                    | `images[]` | `url`, `label`; standard roles mapped: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; non-standard roles go to `customRoles[]` |
+| `categoryData[].categoryPath`                 | `routes[].path` | |
+| `categoryData[].productPosition`              | `routes[].position` | |
+| `links[].type` + `links[].sku`                | `links[]` | `type` uppercased; entries without `sku` dropped |
+| `parents[].productType` + `parents[].sku`     | `links[]` | Type mapped: `configurable`→`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE` |
+| `configurable options`                        | `configurations[]` | `id`→`attributeCode`, `label`; option type `SWATCH` when `swatchType` is set, else `CONFIGURABLE`; default variant from `isDefault`; values include `variantReferenceId`, `label`, `colorHex`, `imageUrl` |
+| `bundle options`                              | `bundles[]` | `label`→`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; default SKUs from `isDefault`; items include `sku`, `qty`, `userDefinedQty` (`qtyMutability`) |
 
-## Product attributes
-
-Items are skipped when `attributeCode` is one of `old_id`, `required_options`, `has_options`, `created_at`, `updated_at`, `url_path`, `links_exist`, or when `label` is empty.
+## Product attributes metadata
 
 | Commerce field | ACO API field | Notes |
 |---------------|--------------|-------|
@@ -78,7 +76,7 @@ One **base price book** is created per website, plus one **child price book** pe
 - **Base** (regular prices): `priceBookId = websiteCode`
 - **Child** (customer group or shared catalog): `priceBookId = websiteCode::sha1(customerGroupId)` where `sha1(customerGroupId)` is the SHA-1 hex digest of the customer group's integer ID
 
-The prices feed uses the same formula when resolving which price book a price entry belongs to. For how storefronts resolve the `priceBookId` for a customer session, see [Headless Storefront Integration](headless-storefront.md#graphql-commerceoptimizer-query).
+The prices feed uses the same formula when resolving which price book a price entry belongs to. For how storefronts resolve the `priceBookId` for a customer session, see [Headless Storefront Integration](../headless-storefront.md#graphql-commerceoptimizer-query).
 
 | Generated field | ACO API field | Notes |
 |----------------|--------------|-------|
@@ -89,13 +87,13 @@ The prices feed uses the same formula when resolving which price book a price en
 
 ## Prices
 
-| Commerce field | ACO API field | Notes |
-|---------------|--------------|-------|
-| `sku` | `sku` | |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| `regular` | `regular` | |
-| `discounts[]` | `discounts[]` | Passed through; `special_price` entries with `percentage` are inverted: stored value is `100 - originalPercentage` (values <= 0 or >= 100 are zeroed out) |
-| `tierPrices[]` | `tierPrices[]` | Passed through |
+| Commerce field | ACO API field | Notes                                                                         |
+|---------------|--------------|-------------------------------------------------------------------------------|
+| `sku` | `sku` |                                                                               |
+| `websiteCode`, `customerGroupId` | `priceBookId` |                                                                               |
+| `regular` | `regular` |                                                                               |
+| `discounts[]` | `discounts[]` | example of discounts: special price, catalog rule price, shared catalog price |
+| `tierPrices[]` | `tierPrices[]` |                                                              |
 
 ## Categories
 
