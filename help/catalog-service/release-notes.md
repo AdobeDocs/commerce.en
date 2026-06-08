@@ -607,6 +607,20 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 - For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
 
+### v3.4.0 release
+
+**Release date**: June 8, 2026
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added a new package dependency:
+
+- **Data Exporter Status** (`magento/module-data-exporter-status`) for tracking the synchronization status of data feeds. For details, see the [SaaS Data Export extension release notes](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes).
+
+![New](../assets/new.svg) Updated the data exporter and SaaS export module dependencies to `^103.4.16`.
+
+![New](../assets/new.svg) Updated version and metadata for the 3.4.0 release.
+
 ### v3.3.0 release
 
 **Release date**: October 14, 2025
