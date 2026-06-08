@@ -56,7 +56,7 @@ For the step-by-step setup procedure, see [Enable the integration](./get-started
 | 400 | 400 | 400 merged errors |
 | other | other | RETRYABLE |
 
-If request returned 400 status code, all items in request were not accepted by ACO. Items specified in response `errors` field will require customer attention, oter items - will be retried with `*_resend_failed_items` cron job.
+If a request returns a 400 status code, all items in the request were not accepted by ACO. Items specified in the response `errors` field require customer attention; other items are retried by the `*_resend_failed_items` cron job.
 
 5xx status code errors are retried by the `*_resend_failed_items` cron job.
 
