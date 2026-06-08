@@ -114,16 +114,17 @@ After the initial configuration, the connector supports:
 
 - **Full catalog sync** for initial migration or large structural changes
 - **Delta syncs** for ongoing updates when products or prices change
-- **Resync commands** for targeted feeds 
+- **Resync commands** for targeted feeds
 
 The following feeds are available for the Adobe Commerce Optimizer Connector:
 
   - `products` - products data
-  - `productAttributes` - metadata for product attributes 
+  - `productAttributes` - metadata for product attributes
   - `priceBooks` - price books
   - `prices` - product prices
   - `categories` - categories data
 For details on using the Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
+
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
 After Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.
