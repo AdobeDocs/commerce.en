@@ -1,7 +1,5 @@
 # SaaS Data Export Log Code Reference
 
-## Log code details
-
 **Log code format:** `CDE<group_id>-<log_id>` (e.g., `CDE01-02`)
 
 **Sources:** `commerce-data-export`, `commerce-data-export-ee`, `saas-export`
