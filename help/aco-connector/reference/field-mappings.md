@@ -1,5 +1,5 @@
 ---
-title: ACO Connector Field Mappings
+title: Adobe Commerce Optimizer Connector Field Mappings
 description: Reference tables for how Adobe Commerce catalog fields map to Adobe Commerce Optimizer API fields for products, categories, prices, price books, and product attributes.
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -7,11 +7,11 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 
 # Field mappings
 
-This page documents how the ACO Connector transforms Adobe Commerce feed data into the format required by the Adobe Commerce Optimizer Catalog Data Ingestion API. See [Connector Reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
+This page documents how the Adobe Commerce Optimizer Connector transforms Adobe Commerce feed data into the format required by the Adobe Commerce Optimizer Catalog Data Ingestion API. See [Connector Reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
 
 ## Products
 
-| Commerce field                                | ACO API field | Notes |
+| Commerce field                                | Adobe Commerce Optimizer API field | Notes |
 |-----------------------------------------------|--------------|-------|
 | `sku`                                         | `sku` | |
 | `storeViewCode`                               | `source/locale` | |
@@ -37,7 +37,7 @@ This page documents how the ACO Connector transforms Adobe Commerce feed data in
 
 ## Product attributes metadata
 
-| Commerce field | ACO API field | Notes |
+| Commerce field | Adobe Commerce Optimizer API field | Notes |
 |---------------|--------------|-------|
 | `attributeCode` | `code` | |
 | `storeViewCode` | `source/locale` | |
@@ -55,7 +55,7 @@ This page documents how the ACO Connector transforms Adobe Commerce feed data in
 
 **Data type conversion:**
 
-| Commerce `dataType` | Commerce `frontendInput` | ACO API `dataType` |
+| Commerce `dataType` | Commerce `frontendInput` | Adobe Commerce Optimizer API `dataType` |
 |--------------------|--------------------------|-------------------|
 | `int` | `boolean` | `BOOLEAN` |
 | `int` | `text` or `select` | `TEXT` |
@@ -78,7 +78,7 @@ One **base price book** is created per website, plus one **child price book** pe
 
 The prices feed uses the same formula when resolving which price book a price entry belongs to. For how storefronts resolve the `priceBookId` for a customer session, see [Headless Storefront Integration](../headless-storefront.md#graphql-commerceoptimizer-query).
 
-| Generated field | ACO API field | Notes |
+| Generated field | Adobe Commerce Optimizer API field | Notes |
 |----------------|--------------|-------|
 | `websiteCode`, `customerGroupId` | `priceBookId` | |
 | Website name | `name` | Base price book: website name. Child: `"Group Name (Website Name)"` |
@@ -87,7 +87,7 @@ The prices feed uses the same formula when resolving which price book a price en
 
 ## Prices
 
-| Commerce field | ACO API field | Notes                                                                         |
+| Commerce field | Adobe Commerce Optimizer API field | Notes                                                                         |
 |---------------|--------------|-------------------------------------------------------------------------------|
 | `sku` | `sku` |                                                                               |
 | `websiteCode`, `customerGroupId` | `priceBookId` |                                                                               |
@@ -99,7 +99,7 @@ The prices feed uses the same formula when resolving which price book a price en
 
 Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
 
-| Commerce field | ACO API field | Notes |
+| Commerce field | Adobe Commerce Optimizer API field | Notes |
 |---------------|--------------|-------|
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |

@@ -1,11 +1,11 @@
 ---
-title: Troubleshoot the ACO Connector
+title: Troubleshoot the Adobe Commerce Optimizer Connector
 description: Diagnose and fix common issues with the Adobe Commerce Optimizer Connector, including credential failures, data sync problems, and scope configuration issues.
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 
-# Troubleshoot the ACO Connector
+# Troubleshoot the Adobe Commerce Optimizer Connector
 
 ## Credentials or tenant validation fails
 
@@ -13,7 +13,7 @@ If `aco:config:init` fails during credential validation:
 
 - Run `bin/magento aco:config:show` to verify the stored values
 - Confirm that the tenant ID belongs to the IMS organization used to obtain the credentials
-- Confirm that the OAuth client has the necessary scopes for the ACO Ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials))
+- Confirm that the OAuth client has the necessary scopes for the Adobe Commerce Optimizer Ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials))
 
 ## Data not syncing
 

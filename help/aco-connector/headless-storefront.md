@@ -1,19 +1,19 @@
 ---
-title: ACO Connector Headless Storefront Integration
-description: Learn how to integrate a headless storefront with Adobe Commerce Optimizer using the ACO Connector's GraphQL API and bundle product add-to-cart format.
+title: Adobe Commerce Optimizer Connector Headless Storefront Integration
+description: Learn how to integrate a headless storefront with Adobe Commerce Optimizer using the Adobe Commerce Optimizer Connector's GraphQL API and bundle product add-to-cart format.
 feature: Personalization, Integration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 
 # Headless storefront integration
 
-The `CommerceAdapter` module extends Adobe Commerce to bridge the gap between a headless storefront and Commerce Optimizer. It provides a GraphQL query for resolving the customer price book context, and enforces the bundle product encoding expected by the ACO API.
+The `CommerceAdapter` module extends Adobe Commerce to bridge the gap between a headless storefront and Commerce Optimizer. It provides a GraphQL query for resolving the customer price book context, and enforces the bundle product encoding expected by the Adobe Commerce Optimizer API.
 
-For high-level storefront setup instructions, see [Configure merchandising and storefronts](./overview.md#merchandising-storefronts) in the ACO Connector overview.
+For high-level storefront setup instructions, see [Configure merchandising and storefronts](./overview.md#merchandising-storefronts) in the Adobe Commerce Optimizer Connector overview.
 
 ## GraphQL: `commerceOptimizer` query
 
-Headless storefronts call the `commerceOptimizer` GraphQL query to retrieve the `priceBookId` for the current customer session. This value must then be passed to the ACO Catalog API when fetching prices.
+Headless storefronts call the `commerceOptimizer` GraphQL query to retrieve the `priceBookId` for the current customer session. This value must then be passed to the Adobe Commerce Optimizer Catalog API when fetching prices.
 
 ```graphql
 {
