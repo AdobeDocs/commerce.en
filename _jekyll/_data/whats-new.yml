@@ -593,7 +593,7 @@ entries:
   - major-update
 - description: Updated [Custom automatic matching](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)
     with support for the `skip` sync parameter, allowing custom matchers to bypass
-    sync processing when mappings has not changed.
+    sync processing when mappings have not changed.
   versions: ''
   type: major-update
   date: February 18, 2026
