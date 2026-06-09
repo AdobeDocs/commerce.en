@@ -15,6 +15,6 @@ feature: Adobe Commerce Optimizer Connector
 - [Headless storefront integration](headless-storefront.md)
 - [Troubleshooting](troubleshooting.md)
 - Reference {#reference}
-  - [Adobe Commerce Optimizer Connector modules and feed endpoints](./reference/connector-reference.md)
-  - [Field mapping for Adobe Commerce Optimizer Connector feeds](./reference/field-mapping.md)
+  - [Connector modules and feed endpoints](./reference/connector-reference.md)
+  - [Field mapping for connector feeds](./reference/field-mapping.md)
 - [Release notes](release-notes.md)
