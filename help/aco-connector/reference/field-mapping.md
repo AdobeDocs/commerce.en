@@ -21,11 +21,11 @@ topic_v2:
 
 # Field mapping for connector feeds
 
-This page documents how the Adobe Commerce Optimizer Connector transforms Adobe Commerce catalog fields into the format required by the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]. See [Adobe Commerce Optimizer Connector reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
+This page documents how the Commerce Optimizer Connector transforms Adobe Commerce catalog fields into the format required by the [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. See the [connector reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
 
 ## Products
 
-| Commerce field | Adobe Commerce Optimizer API field | Notes |
+| Commerce field | Commerce Optimizer API field | Notes |
 | ----------------------------------------------- | -------------- | ------- |
 | `sku` | `sku` | |
 | `storeViewCode` | `source/locale` | |
@@ -51,7 +51,7 @@ This page documents how the Adobe Commerce Optimizer Connector transforms Adobe 
 
 ## Product attributes metadata
 
-| Commerce field | Adobe Commerce Optimizer API field | Notes |
+| Commerce field | Commerce Optimizer API field | Notes |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
 | `storeViewCode` | `source/locale` | |
@@ -69,7 +69,7 @@ This page documents how the Adobe Commerce Optimizer Connector transforms Adobe 
 
 **Data type conversion:**
 
-| Commerce `dataType` | Commerce `frontendInput` | Adobe Commerce Optimizer API `dataType` |
+| Commerce `dataType` | Commerce `frontendInput` | Commerce Optimizer API `dataType` |
 | -------------------- | -------------------------- | ------------------- |
 | `int` | `boolean` | `BOOLEAN` |
 | `int` | `text` or `select` | `TEXT` |
@@ -92,7 +92,7 @@ One **base price book** is created per website, plus one **child price book** pe
 
 The prices feed uses the same formula when resolving which price book a price entry belongs to. For how storefronts resolve the `priceBookId` for a customer session, see [Headless storefront integration](../headless-storefront.md#graphql-commerceoptimizer-query).
 
-| Generated field | Adobe Commerce Optimizer API field | Notes |
+| Generated field | Commerce Optimizer API field | Notes |
 | ---------------- | -------------- | ------- |
 | `websiteCode`, `customerGroupId` | `priceBookId` | |
 | Website name | `name` | Base price book: website name. Child: `"Group Name (Website Name)"` |
@@ -101,7 +101,7 @@ The prices feed uses the same formula when resolving which price book a price en
 
 ## Prices
 
-| Commerce field | Adobe Commerce Optimizer API field | Notes |
+| Commerce field | Commerce Optimizer API field | Notes |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
 | `websiteCode`, `customerGroupId` | `priceBookId` | |
@@ -113,7 +113,7 @@ The prices feed uses the same formula when resolving which price book a price en
 
 Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
 
-| Commerce field | Adobe Commerce Optimizer API field | Notes |
+| Commerce field | Commerce Optimizer API field | Notes |
 | --------------- | -------------- | ------- |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
@@ -129,6 +129,6 @@ Items with an empty `urlPath` (logical root categories) are skipped and never su
 >
 > - [Ingest product and price data with the Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"} — Learn the catalog data model for metadata, products, categories, price books, and prices
 > - [Catalog data ingestion REST API Reference](https://developer.adobe.com/commerce/services/reference/rest/){target="_blank"} — Review request and response schemas for each feed endpoint
-> - [How the Adobe Commerce Optimizer Connector works with Adobe Commerce](../overview.md#how-the-connector-works-with-adobe-commerce) — Learn how store views, websites, and customer groups map to catalog sources and price books
-> - [Price books in Adobe Commerce Optimizer](/help/optimizer/setup/pricebooks.md) — Manage price books created by the connector export
+> - [How the Commerce Optimizer Connector works with Adobe Commerce](../overview.md#how-the-connector-works-with-adobe-commerce) — Learn how store views, websites, and customer groups map to catalog sources and price books
+> - [Price books in Commerce Optimizer](/help/optimizer/setup/pricebooks.md) — Manage price books created by the connector export
 > - [Headless storefront integration](../headless-storefront.md#graphql-commerceoptimizer-query) — Resolve `priceBookId` for customer sessions

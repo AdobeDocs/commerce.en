@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Adobe Commerce Optimizer Connector] Integration Guide"
 breadcrumb-title: "[!DNL Optimizer Connector]"
-user-guide-description: Use the Adobe Commerce Optimizer Connector guide to export catalog data, sync prices, and deliver Edge Delivery Services storefronts with Commerce Optimizer.
+user-guide-description: Use the Commerce Optimizer Connector guide to export catalog data, sync prices, and deliver Edge Delivery Services storefronts using Commerce Optimizer.
 role: Developer, Admin
 feature: Adobe Commerce Optimizer Connector
 

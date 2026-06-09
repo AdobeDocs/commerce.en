@@ -76,4 +76,4 @@ General availability release of the Adobe Commerce Optimizer Connector.
 
 >[!NOTE]
 >
->If you participated in the Beta program for the Adobe Commerce Optimizer Connector and have an earlier version of the extension installed, upgrade to the General availability version to receive the latest updates.
+>If you participated in the Beta program for the Commerce Optimizer Connector and have an earlier version of the extension installed, upgrade to the General availability version to receive the latest updates.

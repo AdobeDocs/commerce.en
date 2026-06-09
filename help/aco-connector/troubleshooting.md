@@ -35,7 +35,7 @@ topic_v2:
 ---
 # Troubleshoot the Adobe Commerce Optimizer Connector
 
-Use this guide to diagnose and resolve common issues with the Adobe Commerce Optimizer Connector during initial setup, catalog feed synchronization, and scope export configuration. The sections below cover credential and tenant validation, data sync failures, and related SaaS Data Export diagnostics.
+Use this guide to diagnose and resolve common issues with the Commerce Optimizer Connector during initial setup, catalog feed synchronization, and scope export configuration. The sections below cover credential and tenant validation, data sync failures, and related SaaS Data Export diagnostics.
 
 ## Credentials or tenant validation fails
 
@@ -43,7 +43,7 @@ If `aco:config:init` fails during credential validation:
 
 - Run the `bin/magento aco:config:show` Commerce CLI command to verify the stored values.
 - Confirm that the tenant ID belongs to the IMS organization used to obtain the credentials.
-- Confirm that the OAuth client has the necessary scopes for the Adobe Commerce Optimizer ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
+- Confirm that the OAuth client has the necessary scopes for the Commerce Optimizer ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
 
 ## Data not syncing
 
@@ -54,7 +54,7 @@ If `aco:config:init` fails during credential validation:
 
 Key points about error handling:
 
-- **400 errors** are not retried. Inspect the payload for malformed or missing required fields. See [Field mapping for Adobe Commerce Optimizer Connector feeds](reference/field-mapping.md) for the expected format.
+- **400 errors** are not retried. Inspect the payload for malformed or missing required fields. See [Field mapping for connector feeds](reference/field-mapping.md) for the expected format.
 - **5xx errors** are automatically retried by the `*_resend_failed_items` cron job (runs every 5 minutes).
 
 **Check scope configuration:**

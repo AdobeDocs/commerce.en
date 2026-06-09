@@ -97,7 +97,7 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 The high-level steps for setup and configuration:
 
-1. Install the Adobe Commerce Optimizer Connector package for Adobe Commerce.
+1. Install the Commerce Optimizer Connector package for Adobe Commerce.
 
 1. Configure authentication and environment details.
 
@@ -191,7 +191,7 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 **Before you begin:**
 
-- Verify that Commerce meets the minimum version and Adobe Commerce Optimizer Connector requirements. See [Get Started](get-started.md#requirements-to-use-the-integration) for details.
+- Verify that Commerce meets the minimum version and Commerce Optimizer Connector requirements. See [Get Started](get-started.md#requirements-to-use-the-integration) for details.
 - Ensure that you have IMS org access, an [!DNL Adobe Commerce Optimizer] instance, and the necessary credentials and region details.
 
 ## Related documentation {#related-documentation}
@@ -199,6 +199,6 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
 - Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
 - Understand the sync mechanism, initialization, and error handling: [Data synchronization](data-synchronization.md)
-- Field-level data mapping for all feeds: [Field mapping for Adobe Commerce Optimizer Connector feeds](reference/field-mapping.md)
+- Field-level data mapping for all feeds: [Field mapping for connector feeds](reference/field-mapping.md)
 - Integrate headless storefronts using GraphQL and bundle encoding: [Headless storefront integration](headless-storefront.md)
 - Diagnose sync and configuration issues: [Troubleshooting](troubleshooting.md)

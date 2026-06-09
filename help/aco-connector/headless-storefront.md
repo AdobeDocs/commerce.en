@@ -24,7 +24,7 @@ For high-level storefront setup instructions, see [Configure merchandising and s
 
 ## GraphQL: `commerceOptimizer` query {#graphql-commerceoptimizer-query}
 
-Headless storefronts call the `commerceOptimizer` GraphQL query to retrieve the `priceBookId` for the current customer session. Pass this value to the [!DNL Adobe Commerce Optimizer] Catalog API when fetching prices.
+Headless storefronts call the `commerceOptimizer` GraphQL query to retrieve the `priceBookId` for the current customer session. Pass this value to the [[!DNL Adobe Commerce Optimizer] GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api]{target="_blank"} when fetching prices.
 
 ```graphql
 {
