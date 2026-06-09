@@ -46,6 +46,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_June 8, 2026_
+
+![New](../assets/new.svg) [!DNL Live Search] now supports **[!UICONTROL Semantic search]** from the [**Settings**](./settings.md#semantic-search) workspace. Semantic search uses AI to match products by meaning and context alongside keyword search, which can reduce zero-result searches for natural-language queries. You enable it with a single toggle; no attribute setup or storefront changes are required. Semantic search is **enabled by default** for [!DNL Adobe Commerce as a Cloud Service] and must be **enabled manually** on Adobe Commerce on Cloud and on-premises projects. It is available for **English** catalogs only. [Learn more](./semantic-search.md).
+
 _May 22, 2026_
 
 ![New](../assets/new.svg) Search merchandising rules, default rules, and [category merchandising](./category-merch.md) rules now include **[!UICONTROL Intelligent Ranking Boost]**, so you can tune how strongly intelligent ranking strategies influence results relative to textual relevance. Rule preview matches the configured boost. [Learn more](./rules-add.md#intelligent-ranking-boost).
