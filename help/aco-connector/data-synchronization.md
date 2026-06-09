@@ -75,6 +75,8 @@ The `CommerceOptimizerScopeMapper` module reads per-website and per-store-view e
 
 - **Enabled scopes** export data on the normal delta schedule.
 - **Disabled scopes** are excluded from the pipeline.
+     
+     Previously synced entities are removed from Commerce Optimizer on the next cron run.
 
 Changing scope export settings triggers a full re-export for the affected scopes. See [Synchronization types](../data-export/data-synchronization.md#synchronization-types) in the _SaaS Data Export_ Guide.
 
