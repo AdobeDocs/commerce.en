@@ -1,9 +1,8 @@
 ---
 title: Adobe Commerce Optimizer Connector
 description: Learn how to connect your data from your Commerce cloud or on-premises project to Adobe Commerce Optimizer
-feature: Personalization, Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
-TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
+TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,23 +13,21 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-    internal-label: Reporting
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
     internal-label: Cloud architecture
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-    internal-label: Troubleshooting
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 ---
@@ -118,15 +115,22 @@ After the initial configuration, the connector supports:
 
 The following feeds are available for the Adobe Commerce Optimizer Connector:
 
-  - `products` - products data
-  - `productAttributes` - metadata for product attributes
-  - `priceBooks` - price books
-  - `prices` - product prices
-  - `categories` - categories data
-For details on using the Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}. For technical details on feed endpoints, batch limits, and field-level data mapping, see the [Technical Reference](reference/technical-overview.md).
+- `products` - products data
+- `productAttributes` - metadata for product attributes
+- `priceBooks` - price books
+- `prices` - product prices
+- `categories` - categories data
+
+For additional details, see the following topics:
+
+- Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}
+- [Feed endpoints and configuration](reference/connector-reference.md)
+- [Field mappings for connector feeds](reference/field-mapping.md)
+
+
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
-After Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.
+Once Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.
 
 **To configure merchandising and storefronts:**
 
@@ -193,7 +197,7 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
 - Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
-- Understand the sync mechanism, initialization, and error handling: [Sync Architecture](sync-architecture.md)
-- Field-level data mapping for all feeds: [Field Mappings](reference/field-mappings.md)
+- Understand the sync mechanism, initialization, and error handling: [Data synchronization](data-synchronization.md)
+- Field-level data mapping for all feeds: [Field Mappings](reference/field-mapping.md)
 - Integrate headless storefronts using GraphQL and bundle encoding: [Headless Storefront Integration](headless-storefront.md)
 - Diagnose sync and configuration issues: [Troubleshooting](troubleshooting.md)

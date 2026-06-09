@@ -1,8 +1,29 @@
 ---
-title: "[!DNL Adobe Commerce Optimizer Connector] Release Notes"
-description: "The latest release information for [!DNL Adobe Commerce Optimizer Connector] for Adobe Commerce."
+title: '[!DNL Adobe Commerce Optimizer Connector] Release Notes'
+description: The latest release information for [!DNL Adobe Commerce Optimizer Connector] for Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-
+TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Adobe Commerce Optimizer Connector release notes
 
@@ -25,11 +46,13 @@ _May 6, 2026_
 
 _April 2, 2026_
 
-![New](../assets/new.svg) **Added support for the Categories feed in `saas:resync` command **–You can now easily refresh and view your latest category data using the `saas:resync` CLI command: 
+![New](../assets/new.svg) **Added support for the Categories feed in `saas:resync` command**–You can now easily refresh and view your latest category data using the `saas:resync` CLI command:
 
 ```terminal
 bin/magento saas:resync --feed=categories
 ```
+
+### 1.0.11 Release
 
 _March 10, 2026_
 
