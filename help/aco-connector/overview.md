@@ -58,7 +58,7 @@ Commerce remains your system of record for products, prices, and catalog structu
 
 The following diagram illustrates the end-to-end architecture for the connector, from Adobe Commerce through Commerce Optimizer and out to storefronts and checkout systems.
 
-![Commerce Optimizer Connector end-to-end architecture diagram Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Adobe Commerce Optimizer Connector end-to-end architecture diagram](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 In this architecture:
 
@@ -66,12 +66,6 @@ In this architecture:
 - The Connector exports catalog, price, and category feeds
 - Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views
 - Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations
-
-## How the connector works with Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views.
-
-- Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations.
 
 ## How the connector works with Adobe Commerce
 
@@ -101,31 +95,18 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 ### Initial setup and configuration {#initial-setup}
 
-1. **Install the connector package in Adobe Commerce** using Composer:
 
-    `composer require adobe-commerce/commerce-data-export-aco-adapter`
+The high level steps for setup and configuration:
 
-1. **Configure authentication and environment details** in Commerce Admin or via CLI:
+1. Install the connector package for Adobe Commerce.
 
-    ```terminal
-    bin/magento aco:config:init \
-      --org_id=<your-org> \
-      --tenant_id=<your-tenant> \
-      --client_id=<your-client-id> \
-      --client_secret=<your-secret> \
-      --region=na1 \
-      --type=production
-    ```
+1. Configure authentication and environment details.
 
-1. **Map Commerce scopes to Commerce Optimizer:**
+1. Map Commerce scopes to Commerce Optimizer.
 
-    - Confirm which Websites and Store Views must be in scope
-    - Ensure customer groups and price rules are modeled as expected
+1. Verify connectivity.
 
-1. **Verify connectivity:**
-
-    - Run a test sync and confirm that Catalog Sources, Price Books, and initial products appear in Commerce Optimizer
-    - Use the Data Feed Sync Status page in Commerce and the Data Sync dashboards in Commerce Optimizer for validation
+For detailed instructions, see [Configuration steps](./get-started.md#configuration-steps) in the _Get Started_ guide.
 
 ### Ongoing data synchronization {#ongoing-sync}
 
@@ -133,11 +114,16 @@ After the initial configuration, the connector supports:
 
 - **Full catalog sync** for initial migration or large structural changes
 - **Delta syncs** for ongoing updates when products or prices change
-- **Resync commands** for targeted feeds (including categories as of v1.0.12):
+- **Resync commands** for targeted feeds
 
-  - `bin/magento saas:resync --feed=products`
-  - `bin/magento saas:resync --feed=prices`
-  - `bin/magento saas:resync --feed=categories`
+The following feeds are available for the Adobe Commerce Optimizer Connector:
+
+  - `products` - products data
+  - `productAttributes` - metadata for product attributes
+  - `priceBooks` - price books
+  - `prices` - product prices
+  - `categories` - categories data
+For details on using the Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 

@@ -44,6 +44,27 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.27 Release
+
+_June 4, 2026_
+
+![Fix](../assets/fix.svg) **Bundle products remain visible after concurrent catalog updates**–Fixed an issue where bundle products did not appear on the storefront when configurable and bundle products were updated at the same time. After you upgrade `magento/module-data-exporter` to version 103.4.27, the products feed is automatically scheduled for resync to correct existing bundle data inconsistencies in [!DNL Catalog Service], [!DNL Live Search], and other connected Commerce services.
+<!--MDEE-1379-->
+
+### 103.4.26 Release
+
+_June 2, 2026_
+
+![Fix](../assets/fix.svg) **Product feed updates after currency changes**–When you change store currency settings, affected products are now queued for export again so Live Search, Catalog Service, Product Recommendations, and other connected Commerce services display updated prices. <!--MDEE-1376-->
+
+![Fix](../assets/fix.svg) **Child categories reflect disabled parent status**–When you disable a top-level category, child categories are now exported as inactive so connected Commerce services do not treat products in those categories as discoverable. <!--MDEE-1369-->
+
+### 103.4.25 Release
+
+_May 19, 2026_
+
+![Fix](../assets/fix.svg) **Optimized cleanup of obsolete feed data**–Feed records left behind by deleted entities are now removed more efficiently, reducing database storage use.<!--MDEE-1355-->
+
 ### 103.4.24 Release
 
 _May 5, 2026_
@@ -83,7 +104,7 @@ _April 13, 2026_
 - Fixed an issue where deleted products were not properly removed from the connected Commerce services if the export service was unavailable during deletion. Retry and resync operations now ensure deleted products are correctly reflected in SaaS. <!--MDEE-1319-->
 - Catalog entities (products and categories) can now be exported to connected Commerce services even if attribute values are missing for the admin store view. This improves compatibility with third-party extensions and reduces export errors due to missing default values. <!--MDEE-1333-->
   
-![Fix](../assets/fix.svg) Resolved an error on the Data Feed Sync Status page that could occur when feed records contained unexpected or missing data. The system now gracefully handles such cases, improving stability and preventing crashes. If you are using the Adobe Commerce Optimizer Connector to sync data from Adobe Commerce to Adobe Commerce Optimizer, update to [ACO connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) or later for the fix.<!--MDEE-1327-->
+![Fix](../assets/fix.svg) Resolved an error on the Data Feed Sync Status page that could occur when feed records contained unexpected or missing data. The system now gracefully handles such cases, improving stability and preventing crashes. If you are using the Adobe Commerce Optimizer Connector to sync data from Adobe Commerce to Adobe Commerce Optimizer, update to [Adobe Commerce Optimizer Connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) or later for the fix.<!--MDEE-1327-->
 
 ### 103.4.21 Release
 

@@ -50,11 +50,67 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## May 2026 - release #1 {#latest}
+## June 2026 - release #1 {#latest}
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on June 4, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Add and edit custom coupon codes in the Admin
+
+Merchants can now [create and edit custom coupon codes](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) directly from the [!DNL Commerce Admin] on manual cart price rules. A new [!UICONTROL **Add Custom Coupon**] button is available in the [!UICONTROL **Manage Coupon Codes**] section when editing a cart price rule. <!-- CCSAAS-4508 -->
+
+### Track shipments using default and custom carriers
+
+Order tracking is now reliable for default and custom shipping carriers in the [!DNL Commerce Admin], helping merchants deliver consistent post-purchase tracking experiences. Previously, selecting a carrier such as UPS or FedEx and applying a tracking ID could prevent the tracking link from displaying — no merchant action is required to restore this behavior. Tracking link support is also available for [custom carriers](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) created with the [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+
+### View attribute input types in the Product Attributes grid
+
+A new [!UICONTROL **Attribute Type**] column is now visible in the Product Attributes grid in ([!UICONTROL **Stores**] > _[!UICONTROL Attributes]_ > [!UICONTROL **Product**]), which displays the input type (such as text field, dropdown, or yes/no) for each product attribute, including types contributed by extensions. This makes it easier to identify and manage attributes when working with large attribute sets. <!-- ACCS-925 -->
+
+### Customize the Reply-To header for custom emails
+
+Merchants can now configure the [!UICONTROL **Reply-To**] header used by the [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) endpoint, so replies from customers can be routed to a different address than the sender. <!-- ACCS-1037 -->
+
+### View tier prices on the product edit page in large shared catalog environments
+
+Merchants with a large number of shared catalogs can now access the read-only [!UICONTROL **Tier Prices**] tab on the product edit page in the [!DNL Commerce Admin]. <!-- CCSAAS-4922 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where the POST `V1/async/custom-email/send` REST endpoint returned an `UnstructuredArray` validation error. The asynchronous endpoint now works consistently with the synchronous POST `V1/custom-email/send` endpoint. <!-- ACCS-921 -->
+
+* Fixed an issue where custom serializable attributes on entities such as Company were unintentionally cleared when updating the entity through REST without including the custom attributes in the payload. Custom attributes are now preserved when not provided. <!-- ACCS-946 -->
+
+* Resolved a "consumer is not authorized" error that could prevent guest GraphQL logins when the `X-Adobe-Company` header was present in the request. <!-- ACCS-949 -->
+
+* Fixed an issue where editing or deleting a company in the [!DNL Commerce Admin] could fail with a "No such entity" error after assigning a customer to the company through the PUT `V1/customers/companies` REST endpoint. <!-- ACCS-856 -->
+
+* Resolved an issue with stale sales order grid statuses. <!-- CCSAAS-4915 -->
+
+* Fixed an issue in the [!DNL Commerce Admin] where files attached as samples and links on downloadable products returned a `404` error when accessed from the product edit page. <!-- CCSAAS-4394 -->
+
+* Fixed an "Undefined array key 'simple_sku'" error that could occur when creating a shipment for an order that contained configurable products. <!-- CCSAAS-4877 -->
+
+* The `guestOrderByToken` GraphQL query now returns a more informative error message when called with a malformed token, instead of an internal server error. <!-- CCSAAS-4921 -->
+
+* The `customer` GraphQL query now returns a more informative error message when customer orders cannot be loaded. <!-- ACCS-867 -->
+
+* The GET `V1/customers/{customerId}` REST endpoint now returns the `assistance_allowed` configuration field. <!-- USF-4132 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## May 2026 - release #1
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 The following items were released to Production environments on May 7, 2026.
 

@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL Live Search] Guide"
+breadcrumb-title: "[!DNL Live Search]"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Live Search] from Adobe Commerce."
 role: Admin
 feature: Services, Search
@@ -40,5 +41,6 @@ feature: Services, Search
    - [Indexing](indexing.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
+   - [Semantic search](semantic-search.md)
 - [Developer Guide](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

@@ -1,11 +1,18 @@
 # Commerce snippets
 
 
+## Adobe Commerce Optimizer integration environment alignment {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Always connect sandbox Optimizer instances to non-production environments and production instances to production environments. Mismatched environments cause inconsistent catalog data, search results, and recommendations.
+
+
 ## Merchandising Services for Optimizer {#aco-merchandising-services}
 
 >[!NOTE]
 >
->For Commerce solutions that use Adobe Commerce Optimizer or the Adobe Commerce Optimizer connector, use the [Merchandising Services GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) instead of the Catalog Service GraphQL API.
+>For Commerce solutions that use Adobe Commerce Optimizer or the Adobe Commerce Optimizer Connector, use the [Merchandising Services GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) instead of the Catalog Service GraphQL API.
 
 ## Data Synchronization check for Optimizer {#aco-data-sync-verification}
 
@@ -13,7 +20,7 @@
 >
 >If you have installed the [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) to export catalog data to Adobe Commerce Optimizer, use the [Data Feed Sync Status page](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
 
-## ACO drop-in note for API updates {#aco-api-updates-and-dropins}
+## Adobe Commerce Optimizer drop-in note for API updates {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >

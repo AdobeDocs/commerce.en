@@ -46,6 +46,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_May 22, 2026_
+
+![New](../assets/new.svg) Search merchandising rules, default rules, and [category merchandising](./category-merch.md) rules now include **[!UICONTROL Intelligent Ranking Boost]**, so you can tune how strongly intelligent ranking strategies influence results relative to textual relevance. Rule preview matches the configured boost. [Learn more](./rules-add.md#intelligent-ranking-boost).
+
 _October 1, 2025_
 
 ![New](../assets/new.svg) Added new data storage key named `ds-logged-in` for customer logged in data.
@@ -123,6 +127,13 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.7.2
+
+_May 18, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Updated the dependency to the data sync dashboard.
 
 ## [!DNL Live Search] 4.7.1
 
@@ -277,7 +288,7 @@ _November 13, 2023_
 ### Updates
 
 ![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
-![Fix](../assets/fix.svg) The Search Adapter is deprecated. Going forward, the Search Adapter will only be updated to address security issues.
+![Fix](../assets/fix.svg) The Search Adapter is deprecated.
 ![Fix](../assets/fix.svg) Reconfigured CSS styles to better isolate widget classes.
 ![Fix](../assets/fix.svg) Minor bug fixes
 

@@ -54,6 +54,12 @@ Support is provided for the latest version. Release notes for older versions are
 
 ### May 2026
 
+**Release date**: May 20, 2026
+<!-- v1.55 -->
+
+![New](../assets/new.svg) Enforced limit of maximum 100 SKUs per request for both Adobe Commerce and Adobe Commerce as a Cloud Service clients as per [documented limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+<!--DATA-7163-->
+
 **Release date**: May 13, 2026
 <!--v1.54-->
 
@@ -600,6 +606,16 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 - For Adobe Commerce as a Cloud Service customers, the latest version is installed in your environment.
 
 - For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
+
+### v3.4.0 release
+
+**Release date**: June 8, 2026
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) **Support for data feed sync status monitoring**—Updated the Catalog Service metapackage dependencies to include the Data Exporter Status extension (`magento/module-data-exporter-status`). This enables [data feed sync status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) from the Commerce Admin without requiring any additional installation or configuration steps
+
+![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
 
 ### v3.3.0 release
 

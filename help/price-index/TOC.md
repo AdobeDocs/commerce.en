@@ -1,5 +1,6 @@
 ---
 user-guide-title: "SaaS Price Indexing Guide"
+breadcrumb-title: "SaaS Price Indexing"
 user-guide-description: "This guide provides detailed instructions for using the SaaS price indexer."
 hide: true
 role: Admin
