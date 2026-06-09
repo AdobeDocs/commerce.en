@@ -73,7 +73,7 @@ There are two different ways to add product admin users to [!DNL Adobe Commerce 
 
 1. Click **+** to add products.
 
-1. Select the existing Commerce Optimizer instance to add the admin to. Commerce Optimizer instances use the following format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Select the existing Commerce Optimizer instance to add the admin to. Commerce Optimizer instances use the following format: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Select the product profile.
 
@@ -119,7 +119,7 @@ The following instructions provide information on how to add users to the [!DNL 
 
 1. Select the [!UICONTROL **Adobe Commerce**] product.
 
-1. Select the Commerce Cloud Manager product if you want to add the user to the cloud manager interface, where they can create and manage Commerce Optimizer instances, or select the existing Commerce Optimizer instance to add the user to. Commerce Optimizer instances use the following format: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Select the Commerce Cloud Manager product if you want to add the user to the cloud manager interface, where they can create and manage Commerce Optimizer instances, or select the existing Commerce Optimizer instance to add the user to. Commerce Optimizer instances use the following format: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Select the [!UICONTROL **Users**] tab and click [!UICONTROL **Add Users**].
 
