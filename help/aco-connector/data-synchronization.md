@@ -80,6 +80,16 @@ Changing scope export settings triggers a full re-export for the affected scopes
 
 If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
 
+#### Timing and monitoring
+
+| Scenario | Typical timing |
+| -------- | -------------- |
+| Routine catalog updates | 1–2 delta-sync cycles (~1–2 minutes for indexing, plus submission) |
+| Transient failures | Retried every 5 minutes |
+| Full sync or large catalogs | Minutes to hours |
+
+Monitor per-feed status from the [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
+
 ## Feed submission and error handling
 
 The `FeedSubmitter` process handles [!DNL Catalog Data Ingestion API] calls.
