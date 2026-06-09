@@ -23,17 +23,17 @@ topic_v2:
 ---
 # Connector modules and feed endpoints
 
-This reference lists the Adobe Commerce Optimizer Connector module packages, supported feed API endpoints, and configuration key paths stored in `core_config_data`. To learn how these components work together during synchronization, see [Data synchronization](../data-synchronization.md).
+This reference lists the Commerce Optimizer Connector module packages, supported feed API endpoints, and configuration key paths stored in `core_config_data`. To learn how these components work together during synchronization, see [Data synchronization](../data-synchronization.md).
 
 ## Modules
 
-The Adobe Commerce Optimizer Connector includes multiple Magento modules that collect catalog data, map feeds to the Adobe Commerce Optimizer API format, and manage submission and scope control. The following table summarizes each module and its role.
+The connector includes multiple Magento modules that collect catalog data, map feed data to the format supported by the Commerce Optimizer API, and manage submission and scope control. The following table summarizes each module and its role.
 
 | Module | Role |
 | ------ | ---- |
-| `DataExporterAdapter` | Maps Commerce feeds to Adobe Commerce Optimizer API format; overrides feed pool and schema config |
-| `SaasExportAdapter` | Routes Adobe Commerce Optimizer feeds to the ingestion API; blocks unsupported feeds from submission |
-| `CommerceAcoExporter` | Manages Adobe Commerce Optimizer credentials; provides CLI setup commands |
+| `DataExporterAdapter` | Maps Commerce feeds to the format required by the Commerce Optimizer API. Overrides feed pool and schema config. |
+| `SaasExportAdapter` | Routes Commerce Optimizer feeds to the ingestion API and blocks unsupported feeds from submission. |
+| `CommerceAcoExporter` | Manages Commerce Optimizer credentials and provides CLI setup commands |
 | `CommerceAdapter` | Adobe Commerce Optimizer API compatibility layer (GraphQL, bundle add-to-cart, config UI) |
 | `PriceBookDataExporter` | Price book feed indexed by website and customer group |
 | `SaasPriceBook` | SaaS infrastructure for price book submission |
@@ -41,9 +41,9 @@ The Adobe Commerce Optimizer Connector includes multiple Magento modules that co
 
 ## Supported feeds
 
-The connector submits multiple feed types to the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in Adobe Commerce.
+The connector submits multiple feed types to the [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in Adobe Commerce.
 
-| Feed | Adobe Commerce Optimizer API Endpoint | Batch Limit | AC Index Name | Feed Table |
+| Feed | Commerce Optimizer API Endpoint | Batch Limit | AC Index Name | Feed Table |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
 | `products` | `POST /v1/catalog/products` | 100 | `catalog_data_exporter_products` | `cde_products_feed` |
 | `categories` | `POST /v1/catalog/categories` | 100 | `catalog_data_exporter_categories` | `cde_categories_feed` |
