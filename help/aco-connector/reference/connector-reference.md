@@ -27,7 +27,7 @@ This reference lists the Adobe Commerce Optimizer Connector module packages, sup
 
 ## Modules
 
-The Adobe Commerce Optimizer Connector includes seven Magento modules that collect catalog data, map feeds to the Adobe Commerce Optimizer API format, and manage submission and scope control. The following table summarizes each module and its role.
+The Adobe Commerce Optimizer Connector includes multiple Magento modules that collect catalog data, map feeds to the Adobe Commerce Optimizer API format, and manage submission and scope control. The following table summarizes each module and its role.
 
 | Module | Role |
 | ------ | ---- |
@@ -41,7 +41,7 @@ The Adobe Commerce Optimizer Connector includes seven Magento modules that colle
 
 ## Supported feeds
 
-The connector submits five feed types to the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in Adobe Commerce.
+The connector submits multiple feed types to the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in Adobe Commerce.
 
 | Feed | Adobe Commerce Optimizer API Endpoint | Batch Limit | AC Index Name | Feed Table |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
