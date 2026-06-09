@@ -126,7 +126,7 @@ If the locale or layer is not assigned correctly, image data may **not appear** 
 
 ## Synchronization
 
-Once configured, the integration synchronizes `product-asset` mapping automatically.
+Once configured, the integration synchronizes `product-asset` mappings automatically.
 
 See [Custom automatic matching](../synchronize/custom-match.md) for more information.
 
