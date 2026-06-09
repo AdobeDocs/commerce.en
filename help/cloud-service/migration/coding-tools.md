@@ -5,11 +5,13 @@ feature: App Builder, Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
 level: Intermediate
-TQID: https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY
+TQID: 'https://experienceleague.adobe.com/dpS71291Xrj-FS-mPdsGwsXj-1tPUoRZrTwB30711D4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
@@ -23,6 +25,8 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # AI coding developer tooling for Adobe Commerce App Builder
 
