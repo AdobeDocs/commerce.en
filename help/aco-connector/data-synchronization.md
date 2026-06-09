@@ -51,7 +51,10 @@ Two cron groups automate the pipeline on a fixed schedule.
 
 The **SaaS Data Export** extension handles feed collection and status tracking. The connector layer maps entities to the format required by the Commerce Optimizer GraphQL API and submits them via `POST /v1/catalog/<feed name>`.
 
-**Requirements:** [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"} and feed indexers must use **Update by Schedule** mode. See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
+#### Requirements
+
+- [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- Feed indexers must use **Update by Schedule** mode.See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
 #### Delta sync {#delta-sync}
 
