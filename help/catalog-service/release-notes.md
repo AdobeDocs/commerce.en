@@ -613,7 +613,7 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) **Support for Data Feed Sync Status monitoring**—Updated the Catalog Service metapackage dependencies to include the **Data Feed Sync Status** extension. This enables [data feed sync status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) without requiring any additional installation or configuration steps
+![New](../assets/new.svg) **Support for Data Feed Sync Status monitoring**—Updated the Catalog Service metapackage dependencies to include the **Data Exporter Status** extension (`magento/module-data-exporter-status`). This enables [data feed sync status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) without requiring any additional installation or configuration steps
 
 ![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
 
