@@ -42,7 +42,7 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 ### Recommendation price filters (beta)
 
-Product recommendation units now support [**price filters**](./merchandising/recommendations/filters.md#price) on the **[!UICONTROL Filter products]** step. You can include or exclude candidates using **static** minimum and maximum ranges or **dynamic** rules on the product detail page that compare recommended products to the currently viewed product's **final computed price** from the storefront's active price book. Price rules filter the candidate set; they do not re-rank products. [Learn more](./merchandising/recommendations/filters.md#price).
+Product recommendation units now support [**price filters**](./merchandising/recommendations/filters.md#price) on the **[!UICONTROL Filter products]** step. Include or exclude candidates using **static** minimum and maximum ranges or **dynamic** rules on the product detail page that compare recommended products to the currently viewed product's **final computed price** from the storefront's active price book. Price rules filter the candidate set. They do not re-rank products. [Learn more](./merchandising/recommendations/filters.md#price).
 
 {{aco-release}}
 
