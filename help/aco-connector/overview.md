@@ -127,19 +127,18 @@ For additional details, see the following topics:
 - [Feed endpoints and configuration](reference/connector-reference.md)
 - [Field mappings for connector feeds](reference/field-mapping.md)
 
-
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
-Once Commerce data is available in Commerce Optimizer, use Commerce Optimizer Studio to connect merchandising and storefront experiences to your synced catalog.
+Once Commerce data is available in Commerce Optimizer, use [Commerce Optimizer Studio](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour) to connect merchandising and storefront experiences to your synced catalog.
 
-**To configure merchandising and storefronts:**
+**To configure merchandising and storefronts in Commerce Optimizer Studio:**
 
-1. **Create Catalog Views and Policies** in Commerce Optimizer Studio:
+1. **Create Catalog Views and Policies** from the [!UICONTROL Store setup] menu.
 
     - Filter the catalog by brand, region, customer segment, or channel
     - Enforce data-access rules per storefront or partner
 
-1. **Configure Product Discovery and Recommendations** in the Optimizer UI:
+1. **Configure Product Discovery and Recommendations** from the [!UICONTROL Merchandising] menu.
 
     - Create merchandising rules, facets, synonyms, and recommendation units
     - The connector offloads all search and recommendation configuration to Commerce Optimizer (Live Search rules and Product Recommendations in Commerce Admin no longer apply to these flows)

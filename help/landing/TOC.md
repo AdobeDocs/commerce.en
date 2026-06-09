@@ -12,7 +12,6 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 - [Overview](home.md)
 - Release information {#release-information}
    - [Release notes](/help/landing/release-notes-all.md)
-   - [Commerce release information](/help/product-solutions/commerce-release-info.md)
 - {hide-from-toc} [Product solutions](product-solutions.md)
 - Commerce services {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)

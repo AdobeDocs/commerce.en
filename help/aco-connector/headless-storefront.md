@@ -16,7 +16,6 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
-
 # Headless storefront integration
 
 The `CommerceAdapter` module extends [!DNL Adobe Commerce] to bridge the gap between a headless storefront and [!DNL Adobe Commerce Optimizer]. It provides a GraphQL query for resolving the customer price book context, and enforces the bundle product encoding expected by the [!DNL Adobe Commerce Optimizer] GraphQL API.

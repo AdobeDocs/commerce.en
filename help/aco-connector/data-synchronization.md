@@ -20,7 +20,6 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
 ---
-
 # Data synchronization
 
 Built on [SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), the **Adobe Commerce Optimizer Connector** maps feed items to the [!DNL Catalog Data Ingestion API] format and handles authentication, batched submission, and scope-based sync control. The sections below describe how that synchronization works.
@@ -141,7 +140,5 @@ When update and delete calls return different status codes, `FeedSubmitter` comb
 >
 > - [Connector overview](overview.md) — business context and scope mapping
 > - [Connector reference](reference/connector-reference.md) — modules, API endpoints, and configuration keys
-> - [How the connector works with Adobe Commerce](overview.md#how-the-connector-works-with-adobe-commerce) — how Commerce scopes map to catalog sources and price books
 > - [Customize the Commerce scopes export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration) — feeds per scope level, enable and disable behavior, and Admin steps
-> - [Enable the integration](./get-started.md#enable-the-adobe-commerce-optimizer-integration) — step-by-step setup procedure
 > - [Troubleshooting](troubleshooting.md) — diagnose sync failures
