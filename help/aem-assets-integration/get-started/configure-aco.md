@@ -20,9 +20,9 @@ The following diagram is an overview of the product sync between [!DNL Adobe Com
 
 This integration has two main flows:
 
-* **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to the Commerce Optimizer, where they are stored as product layers.
+* **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mapping to the Commerce Optimizer, where they are stored as product layers.
 
-* **From [!DNL Adobe Commerce Optimizer]**: When a product is updated in [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to the [!DNL Adobe Commerce Optimizer].
+* **From [!DNL Adobe Commerce Optimizer]**: When a product is updated in [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mapping back to the [!DNL Adobe Commerce Optimizer].
 
 ## Prerequisites
 
@@ -126,7 +126,7 @@ If the locale or layer is not assigned correctly, image data may **not appear** 
 
 ## Synchronization
 
-Once configured, the integration synchronizes `product-asset` mappings automatically.
+Once configured, the integration synchronizes `product-asset` mapping automatically.
 
 See [Custom automatic matching](../synchronize/custom-match.md) for more information.
 

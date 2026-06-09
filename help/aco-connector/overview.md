@@ -1,7 +1,8 @@
 ---
 title: Adobe Commerce Optimizer Connector
-description: Learn how to connect your data from your Commerce cloud or on-premises project to Adobe Commerce Optimizer
+description: Learn about the Adobe Commerce Optimizer Connector integration between Adobe Commerce and Commerce Optimizer for catalog sync, search, and storefront delivery.
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,8 +26,10 @@ subfeature_v2:
   - id: dad884f1-e840-49a1-970e-2f965bdbc410
     internal-label: Extensions
 role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -60,7 +63,7 @@ The following diagram illustrates the end-to-end architecture for the connector,
 In this architecture:
 
 - Adobe Commerce (on cloud or on-premises) is the system of record and feed producer
-- The Connector exports catalog, price, and category feeds
+- The connector exports catalog, price, and category feeds
 - Commerce Optimizer ingests and normalizes the feed data into Catalog Sources, Price Books, and Catalog Views
 - Storefronts (Commerce storefront on Edge Delivery or custom headless builds) call Commerce Optimizer GraphQL APIs for discovery and recommendations and call Commerce or another connected third-party platform for cart and checkout operations
 
@@ -68,7 +71,7 @@ In this architecture:
 
 The Adobe Commerce Optimizer Connector operates by using your existing Commerce scopes (websites and store views) and customer segmentation to populate the Commerce Optimizer catalog model:
 
-![Mapping Commerce data to Adobe Commerce Optimizer](/help/aco-connector/assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
+![Mapping Commerce data to Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
 
 - **Store Views → Catalog Sources** — Each store view becomes a separate Catalog Source in Commerce Optimizer. That source includes localized product attributes and any store-view-specific data
 - **Websites → Price Books** — Each Commerce website maps to one or more Price Books in Commerce Optimizer. Website pricing and customer group pricing export as price books and price entries
@@ -76,7 +79,7 @@ The Adobe Commerce Optimizer Connector operates by using your existing Commerce 
 
 After Commerce Optimizer ingests the data, you can configure:
 
-- **Catalog Views and Policies** in Commerce Optimizer (for building region, brand, or customer-specific subsets)
+- **Catalog Views and Policies** in Commerce Optimizer Studio (for building region, brand, or customer-specific subsets)
 - **Product Discovery** (search, facets, merchandising rules)
 - **Product Recommendations**
 
@@ -92,10 +95,9 @@ These workflows describe how teams set up and use the Adobe Commerce Optimizer C
 
 ### Initial setup and configuration {#initial-setup}
 
+The high-level steps for setup and configuration:
 
-The high level steps for setup and configuration:
-
-1. Install the connector package for Adobe Commerce.
+1. Install the Adobe Commerce Optimizer Connector package for Adobe Commerce.
 
 1. Configure authentication and environment details.
 
@@ -123,9 +125,9 @@ The following feeds are available for the Adobe Commerce Optimizer Connector:
 
 For additional details, see the following topics:
 
-- Commerce command line interface (CLI) for resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}
-- [Feed endpoints and configuration](reference/connector-reference.md)
-- [Field mappings for connector feeds](reference/field-mapping.md)
+- For Commerce CLI resync operations, see the [CLI resync command](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
+- [Adobe Commerce Optimizer Connector modules and feed endpoints](reference/connector-reference.md)
+- [Field mapping for Adobe Commerce Optimizer Connector feeds](reference/field-mapping.md)
 
 ### Configure merchandising and storefronts {#merchandising-storefronts}
 
@@ -189,7 +191,7 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 
 **Before you begin:**
 
-- Verify that Commerce meets the minimum version and services connector requirements. See [Get Started](get-started.md#prerequisites) for details.
+- Verify that Commerce meets the minimum version and Adobe Commerce Optimizer Connector requirements. See [Get Started](get-started.md#requirements-to-use-the-integration) for details.
 - Ensure that you have IMS org access, an [!DNL Adobe Commerce Optimizer] instance, and the necessary credentials and region details.
 
 ## Related documentation {#related-documentation}
@@ -197,6 +199,6 @@ Commerce is the source of truth for products, pricing, and customer groups. Make
 - Set up the integration and enable key workflows: [Get Started with the Adobe Commerce Optimizer Connector](get-started.md)
 - Learn about Commerce Optimizer concepts and architecture: [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
 - Understand the sync mechanism, initialization, and error handling: [Data synchronization](data-synchronization.md)
-- Field-level data mapping for all feeds: [Field Mappings](reference/field-mapping.md)
-- Integrate headless storefronts using GraphQL and bundle encoding: [Headless Storefront Integration](headless-storefront.md)
+- Field-level data mapping for all feeds: [Field mapping for Adobe Commerce Optimizer Connector feeds](reference/field-mapping.md)
+- Integrate headless storefronts using GraphQL and bundle encoding: [Headless storefront integration](headless-storefront.md)
 - Diagnose sync and configuration issues: [Troubleshooting](troubleshooting.md)

@@ -1,6 +1,6 @@
 ---
-title: Data synchronization
-description: Learn about data synchronization with the Adobe Commerce Optimizer Connector, including full and delta sync, cron jobs, scope control, and feed error handling.
+title: Data Synchronization
+description: Learn about Adobe Commerce Optimizer Connector data synchronization, including full and delta sync, cron schedules, scope control, and feed error handling.
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
@@ -34,7 +34,7 @@ When catalog data changes in Commerce, synchronization moves through these stage
 
 1. **SaaS Data Export** indexers detect entity updates and assemble feed items for the `products`, `productAttributes`, `categories`, and `prices` feeds.
 1. Feed items are written to feed tables in Adobe Commerce, each with a sync status.
-1. The **connector** maps items to the [!DNL Catalog Data Ingestion API] format and generates the `priceBooks` feed from website and customer group configuration.
+1. The connector maps items to the [!DNL Catalog Data Ingestion API] format and generates the `priceBooks` feed from website and customer group configuration.
 1. The `FeedSubmitter` process batches pending items and submits them through the Adobe I/O Gateway using `POST /v1/catalog/<feed name>`.
 1. Per-item results are saved back to the feed tables.
    - Validation failures and other permanent errors appear in the Admin.
@@ -49,7 +49,7 @@ Two cron groups automate the pipeline on a fixed schedule.
 | `index` | **Delta sync** (partial sync) — reindex invalid feed indexers | Every 1 minute |
 | `resync_failed_feeds_data_exporter` | **Retry** — resubmit transient failures | Every 5 minutes |
 
-**Requirements:** [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"} and feed indexers must use **Update by Schedule** mode. See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration).
+**Requirements:** [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"} and feed indexers must use **Update by Schedule** mode. See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
 #### Delta sync {#delta-sync}
 
@@ -138,7 +138,7 @@ When update and delete calls return different status codes, `FeedSubmitter` comb
 
 >[!MORELIKETHIS]
 >
-> - [Connector overview](overview.md) — business context and scope mapping
-> - [Connector reference](reference/connector-reference.md) — modules, API endpoints, and configuration keys
-> - [Customize the Commerce scopes export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration) — feeds per scope level, enable and disable behavior, and Admin steps
-> - [Troubleshooting](troubleshooting.md) — diagnose sync failures
+> - [Adobe Commerce Optimizer Connector overview](overview.md) — Learn business context and scope mapping
+> - [Adobe Commerce Optimizer Connector reference](reference/connector-reference.md) — Review modules, API endpoints, and configuration keys
+> - [Customize the Commerce scopes export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration) — Configure feeds per scope level, enable and disable behavior, and Admin steps
+> - [Troubleshooting](troubleshooting.md) — Diagnose sync failures

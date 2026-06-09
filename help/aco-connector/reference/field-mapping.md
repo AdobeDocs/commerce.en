@@ -1,6 +1,6 @@
 ---
-title: Field mappings for connector feeds
-description: Reference tables for how Adobe Commerce catalog fields map to Adobe Commerce Optimizer API fields for products, categories, prices, price books, and product attributes.
+title: Field Mapping for Adobe Commerce Optimizer Connector Feeds
+description: Learn about Adobe Commerce Optimizer Connector field mapping from Adobe Commerce catalog data to Commerce Optimizer ingestion API formats for all feeds.
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Metadata
 ---
 
-# Field mappings for connector feeds
+# Field mapping for connector feeds
 
-This page documents how the Adobe Commerce Optimizer Connector transforms Adobe Commerce catalog fields into the format required by the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]. See [Connector Reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
+This page documents how the Adobe Commerce Optimizer Connector transforms Adobe Commerce catalog fields into the format required by the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]. See [Adobe Commerce Optimizer Connector reference](connector-reference.md#supported-feeds) for the list of supported feeds and their API endpoints.
 
 ## Products
 
@@ -81,7 +81,7 @@ This page documents how the Adobe Commerce Optimizer Connector transforms Adobe 
 
 ## Price books
 
-Price books are generated entirely by the connector from website and customer group configuration - they have no direct Commerce feed counterpart.
+Unlike the other connector feeds, the `priceBooks` feed is not collected by a SaaS Data Export indexer in Commerce. The connector generates this feed from the website and customer group configuration in the Admin.
 
 One **base price book** is created per website, plus one **child price book** per website-customer group pair.
 
@@ -90,7 +90,7 @@ One **base price book** is created per website, plus one **child price book** pe
 - **Base** (regular prices): `priceBookId = websiteCode`
 - **Child** (customer group or shared catalog): `priceBookId = websiteCode::sha1(customerGroupId)` where `sha1(customerGroupId)` is the SHA-1 hex digest of the customer group's integer ID
 
-The prices feed uses the same formula when resolving which price book a price entry belongs to. For how storefronts resolve the `priceBookId` for a customer session, see [Headless Storefront Integration](../headless-storefront.md#graphql-commerceoptimizer-query).
+The prices feed uses the same formula when resolving which price book a price entry belongs to. For how storefronts resolve the `priceBookId` for a customer session, see [Headless storefront integration](../headless-storefront.md#graphql-commerceoptimizer-query).
 
 | Generated field | Adobe Commerce Optimizer API field | Notes |
 | ---------------- | -------------- | ------- |
@@ -127,8 +127,8 @@ Items with an empty `urlPath` (logical root categories) are skipped and never su
 
 >[!MORELIKETHIS]
 >
-> - [Ingest product and price data with the Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"} — catalog data model for metadata, products, categories, price books, and prices
-> - [Catalog data ingestion REST API Reference](https://developer.adobe.com/commerce/services/reference/rest/){target="_blank"} — request and response schemas for each feed endpoint
-> - [How the connector works with Adobe Commerce](../overview.md#how-the-connector-works-with-adobe-commerce) — how store views, websites, and customer groups map to catalog sources and price books
-> - [Price books in Adobe Commerce Optimizer](/help/optimizer/setup/pricebooks.md) — manage price books created by the connector export
-> - [Headless storefront integration](../headless-storefront.md#graphql-commerceoptimizer-query) — resolve `priceBookId` for customer sessions
+> - [Ingest product and price data with the Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"} — Learn the catalog data model for metadata, products, categories, price books, and prices
+> - [Catalog data ingestion REST API Reference](https://developer.adobe.com/commerce/services/reference/rest/){target="_blank"} — Review request and response schemas for each feed endpoint
+> - [How the Adobe Commerce Optimizer Connector works with Adobe Commerce](../overview.md#how-the-connector-works-with-adobe-commerce) — Learn how store views, websites, and customer groups map to catalog sources and price books
+> - [Price books in Adobe Commerce Optimizer](/help/optimizer/setup/pricebooks.md) — Manage price books created by the connector export
+> - [Headless storefront integration](../headless-storefront.md#graphql-commerceoptimizer-query) — Resolve `priceBookId` for customer sessions

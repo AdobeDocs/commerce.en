@@ -1,6 +1,6 @@
 ---
-title: Connector Modules and Feed Endpoints
-description: Reference tables for Adobe Commerce Optimizer Connector module packages, supported feed API endpoints and batch limits, and configuration key paths stored in core_config_data.
+title: Adobe Commerce Optimizer Connector Modules and Feed Endpoints
+description: Learn about Adobe Commerce Optimizer Connector modules, catalog feed API endpoints, batch limits, and core_config_data configuration paths for Adobe Commerce.
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
@@ -21,14 +21,13 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
 ---
-
 # Connector modules and feed endpoints
 
 This reference lists the Adobe Commerce Optimizer Connector module packages, supported feed API endpoints, and configuration key paths stored in `core_config_data`. To learn how these components work together during synchronization, see [Data synchronization](../data-synchronization.md).
 
 ## Modules
 
-The connector package includes seven Magento modules that collect catalog data, map feeds to the Adobe Commerce Optimizer API format, and manage submission and scope control. The following table summarizes each module and its role.
+The Adobe Commerce Optimizer Connector includes seven Magento modules that collect catalog data, map feeds to the Adobe Commerce Optimizer API format, and manage submission and scope control. The following table summarizes each module and its role.
 
 | Module | Role |
 | ------ | ---- |
@@ -54,11 +53,11 @@ The connector submits five feed types to the [!DNL Adobe Commerce Optimizer] [!D
 
 The `products`, `productAttributes`, `categories`, and `prices` feeds reuse data collected by SaaS Data Export indexers. The connector generates the `priceBooks` feed from website and customer group configuration and does not rely on a SaaS Data Export indexer.
 
-For field-level mapping details for each feed, see [Field Mappings](field-mapping.md).
+For field-level mapping details for each feed, see [Field mapping for Adobe Commerce Optimizer Connector feeds](field-mapping.md).
 
 ## Configuration paths
 
-Connector credentials and service URLs are stored in `core_config_data` under the `aco_exporter/general/` path prefix. Run `bin/magento aco:config:show` to review current values. The command does not display the client secret.
+Adobe Commerce Optimizer Connector credentials and service URLs are stored in `core_config_data` under the `aco_exporter/general/` path prefix. Run `bin/magento aco:config:show` to review current values. The command does not display the client secret.
 
 ```text
 aco_exporter/general/org_id
