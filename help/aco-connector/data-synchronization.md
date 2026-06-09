@@ -1,6 +1,6 @@
 ---
 title: Data Synchronization
-description: Learn about Adobe Commerce Optimizer Connector data synchronization, including full and delta sync, cron schedules, scope control, and feed error handling.
+description: Learn about Adobe Commerce Optimizer Connector data synchronization, including cron schedules, scope control, and feed error handling.
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
@@ -56,7 +56,6 @@ The **SaaS Data Export** extension handles feed collection and status tracking. 
 - [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
 - Feed indexers must use **Update by Schedule** mode.See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
-
 ### Initialization
 
 When you run the `aco:config:init` CLI command during initial setup, it performs the following steps:
@@ -77,7 +76,9 @@ The `CommerceOptimizerScopeMapper` module reads per-website and per-store-view e
 - **Enabled scopes** export data on the normal delta schedule.
 - **Disabled scopes** are excluded from the pipeline.
 
-Changing scope export settings triggers a full re-export for the affected scopes. See [Full sync and delta sync](#full-sync-and-delta-sync). If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
+Changing scope export settings triggers a full re-export for the affected scopes. See [Synchronization types](../data-export/data-synchronization.md#synchronization-types) in the _SaaS Data Export_ Guide.
+
+If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
 
 ## Feed submission and error handling
 
