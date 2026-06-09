@@ -26,9 +26,9 @@ Built on [SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/
 
 ## How the sync works
 
-The following diagram shows data synchronization from Adobe Commerce to Adobe Commerce Optimizer through the Adobe I/O Gateway.
+The following diagram shows data synchronization from Adobe Commerce to Commerce Optimizer through the Adobe I/O Gateway.
 
-![Adobe Commerce Optimizer Connector high-level sync diagram](assets/aco-connector-sync-high-level-diagram.png){width="800" zoomable="yes"}
+![Commerce Optimizer Connector high-level sync diagram](assets/aco-connector-sync-high-level-diagram.png){width="800" zoomable="yes"}
 
 When catalog data changes in Commerce, synchronization moves through these stages.
 
@@ -46,8 +46,10 @@ Two cron groups automate the pipeline on a fixed schedule.
 
 | Cron group | Purpose | Schedule |
 | ---------- | ------- | -------- |
-| `index` | **Delta sync** (partial sync) — reindex invalid feed indexers | Every 1 minute |
-| `resync_failed_feeds_data_exporter` | **Retry** — resubmit transient failures | Every 5 minutes |
+| `indexer_reindex_all_invalid`  | Listens for entity updates, assembles feed items, persists feed status | Every 1 minute |
+| `*_resend_failed_items`| Checks for failed feed items and resubmits them to Commerce Optimizer | Every 5 minutes |
+
+The **SaaS Data Export** extension handles feed collection and status tracking. The connector layer maps entities to the format required by the Commerce Optimizer GraphQL API and submits them via `POST /v1/catalog/<feed name>`.
 
 **Requirements:** [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"} and feed indexers must use **Update by Schedule** mode. See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
