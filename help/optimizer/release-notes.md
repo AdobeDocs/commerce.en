@@ -38,7 +38,7 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 ### Semantic search
 
-[!DNL Adobe Commerce Optimizer] now supports **[semantic search]** on the [**Advanced search**](./settings.md#advanced-search) tab in **[!UICONTROL Settings]**. Semantic search uses AI to match products by meaning and context alongside keyword search, which can reduce empty search pages for natural-language queries. Semantic search is **enabled by default** for eligible **English** catalogs. You can optionally tune **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]**, and **[!UICONTROL Fuzzy search]** on the same tab. No attribute setup or storefront changes are required. [Learn more](./setup/semantic-search.md).
+[!DNL Adobe Commerce Optimizer] now supports **[semantic search]** on the [**Advanced search**](./settings.md#advanced-search) tab in **[!UICONTROL Settings]**. Semantic search uses AI to match products by meaning and context alongside keyword search, reducing empty search pages for natural-language queries. It is enabled by default for eligible English catalogs. You can optionally tune **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]**, and **[!UICONTROL Fuzzy search]** on the same tab. No attribute setup or storefront changes are required. [Learn more](./setup/semantic-search.md).
 
 ### Recommendation price filters (beta)
 
