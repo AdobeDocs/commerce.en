@@ -13,6 +13,6 @@ See [Review logs and troubleshoot](troubleshooting-logging.md) for information a
 
 ## Log code details
 
-<!-- Source: magento-commerce/commerce-data-export:dev/tests/log-codes.md  -->
+<!-- Source: https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md  -->
 
 {{$include /help/_includes/data-export/log-code-reference.md}}
