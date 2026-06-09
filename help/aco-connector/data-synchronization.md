@@ -56,44 +56,6 @@ The **SaaS Data Export** extension handles feed collection and status tracking. 
 - [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
 - Feed indexers must use **Update by Schedule** mode.See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
-#### Delta sync {#delta-sync}
-
-When catalog entities change, the corresponding feed indexers are marked **invalid** (pending changes not yet exported). The `indexer_reindex_all_invalid` job reindexes those indexers, assembles feed items, and triggers submission through the pipeline above.
-
-#### Retry failed items
-
-The `resync_failed_feeds_data_exporter` group includes one retry job per connector feed. Each job resubmits items that failed because of transient errors (for example, network timeouts or 5xx responses).
-
-| Feed | Retry cron job | Schedule |
-| ---- | -------------- | -------- |
-| `products` | `products_feed_resend_failed_items` | Every 5 minutes |
-| `categories` | `categories_feed_resend_failed_items` | Every 5 minutes |
-| `productAttributes` | `productAttributes_feed_resend_failed_items` | Every 5 minutes |
-| `prices` | `prices_feed_resend_failed_items` | Every 5 minutes |
-| `priceBooks` | `priceBooks_feed_resend_failed_items` | Every 5 minutes |
-
-#### Timing and monitoring
-
-| Scenario | Typical timing |
-| -------- | -------------- |
-| Routine catalog updates | 1–2 delta-sync cycles (~1–2 minutes for indexing, plus submission) |
-| Transient failures | Retried every 5 minutes |
-| Full sync or large catalogs | Minutes to hours |
-
-Monitor per-feed status from the [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
-
-## Full sync and delta sync
-
-The connector follows the [SaaS Data Export synchronization model](../data-export/data-synchronization.md#synchronization-types). Day-to-day catalog updates use **delta sync**. **Full sync** re-exports all items for one or more feeds.
-
-| Sync type | Typical triggers | What is sent |
-| --------- | ---------------- | ------------ |
-| **Full sync** | Initial connector setup, [scope export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration) changes, re-enabling a sync-disabled store view | All items in the affected feeds (minutes to hours, depending on catalog size) |
-| **Delta sync** | Ongoing product, price, category, and attribute changes in Commerce | Only entities with pending changes |
-
-After initial setup, the `indexer_reindex_all_invalid` cron job drives delta sync on the schedule in [Delta sync](#delta-sync).
-
-For targeted recovery, you can manually resync individual connector feeds with the `saas:resync` CLI command. Adobe does not recommend manual resync for routine operations. See [Sync feeds using the Commerce CLI](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"} and [Supported feeds](reference/connector-reference.md#supported-feeds).
 
 ### Initialization
 
