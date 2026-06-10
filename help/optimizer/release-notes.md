@@ -32,6 +32,22 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## June 2026
+
+>[!BEGINSHADEBOX]
+
+### Semantic search
+
+[!DNL Adobe Commerce Optimizer] now supports **[semantic search]** on the [**Advanced search**](./settings.md#advanced-search) tab in **[!UICONTROL Settings]**. Semantic search uses AI to match products by meaning and context alongside keyword search, reducing empty search pages for natural-language queries. It is enabled by default for eligible English catalogs. You can optionally tune **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]**, and **[!UICONTROL Fuzzy search]** on the same tab. No attribute setup or storefront changes are required. [Learn more](./setup/semantic-search.md).
+
+### Recommendation price filters (beta)
+
+Product recommendation units now support [**price filters**](./merchandising/recommendations/filters.md#price) on the **[!UICONTROL Filter products]** step. Include or exclude candidates using **static** minimum and maximum ranges or **dynamic** rules on the product detail page that compare recommended products to the currently viewed product's **final computed price** from the storefront's active price book. Price rules filter the candidate set. They do not re-rank products. [Learn more](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## May 2026
 
 >[!BEGINSHADEBOX]
