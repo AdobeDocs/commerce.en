@@ -22,7 +22,7 @@ At a high level, relevance uses three layers of matching strength (in addition t
 
 1. **All words in the same field** — Every word in the query appears in **one** searchable attribute (for example, both `red` and `pants` in the product **name**). This layer receives the **next** highest boost.
 
-1. **Words across different fields** — Query terms appear in **different** searchable attributes (for example, `red` in **color** and `pants` in **name**). This is the broadest match behavior and aligns with how [!DNL Adobe Commerce Optimizer] can surface useful alternatives, including partial matches that support **autocomplete** (for example, a query prefix matching products that contain `red` and another token such as in `pentagon`). See [Decompounding (German)](#decompounding-german) for how German compound words behave at this layer only.
+1. **Words across different fields** — Query terms appear in **different** searchable attributes (for example, `red` in **color** and `pants` in **name**). This is the broadest match layer and receives the **lowest** relevance boost. It can also match partial queries used by autocomplete—for example, when a shopper types `red pan` before finishing `pants`. For German catalogs, see [Decompounding (German)](#decompounding-german).
 
 ### Example
 
@@ -34,11 +34,13 @@ For a query like `red pants`:
 
 ### Decompounding (German) {#decompounding-german}
 
-**Decompounding applies only to the words across different fields layer.** Exact and near phrase matching and same-field matching use the rules described above without decompounding.
-
-German catalogs use many compound words. For example, **spülbecken** can decompose into tokens such as **spul** and **beck** (after stemming) so a shopper who searches **spul beck** can still find **Spülbecken**. At this cross-field layer, **all** decompounded tokens from the query must be present in the product data, but the tokens do **not** need to appear together or in the same attribute—the same behavior as **red** in **color** and **pants** in **name**.
+German catalogs use many compound words. For example, **spülbecken** and **spül becken** can decompose into tokens such as **spul** and **beck** (after stemming) so a shopper who searches **spul becken** can still find **Spülbecken**. At this cross-field layer, **all** decompounded tokens from the query must be present in the same field.
 
 This **AND** requirement filters irrelevant matches where only one subword is present. For example, a search for **Brauseschlauch** no longer returns **Schlauchstück** when only part of the compound matches. A search for **spülbecken** can still match **spülbeckventil** because the longer word contains all expected tokens.
+
+>[!NOTE]
+>
+>Exact and near phrase matching and same-field matching use the rules described above without decompounding.
 
 Set **Language** to **German** on the [Language](./settings.md#language) tab in [Settings](./settings.md) so decompounding rules apply. Validate high-value German queries on a staging storefront before you enable changes in production.
 
