@@ -59,6 +59,18 @@ The **SaaS Data Export** extension handles feed collection and status tracking. 
 - [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
 - Feed indexers must use **Update by Schedule** mode.See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
+## Scope-based sync control
+
+The `CommerceOptimizerScopeMapper` module reads per-website and per-store-view export settings and enforces them during feed collection and submission.
+
+- **Enabled scopes** export data on the normal delta schedule.
+- **Disabled scopes** are excluded from the pipeline.
+  Previously synced entities are removed from Commerce Optimizer on the next cron run.
+
+If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
+
+For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md##customize-the-commerce-scopes-export-configuration).
+
 ### Initialization
 
 When you run the `aco:config:init` CLI command during initial setup, it performs the following steps:
@@ -71,18 +83,6 @@ When you run the `aco:config:init` CLI command during initial setup, it performs
 Add the `--no-feed-cleanup` option to skip truncating existing feed data before the initial sync.
 
 For the step-by-step setup procedure, see [Enable the integration](./get-started.md#enable-the-adobe-commerce-optimizer-integration).
-
-## Scope-based sync control
-
-The `CommerceOptimizerScopeMapper` module reads per-website and per-store-view export settings and enforces them during feed collection and submission.
-
-- **Enabled scopes** export data on the normal delta schedule.
-- **Disabled scopes** are excluded from the pipeline.
-  Previously synced entities are removed from Commerce Optimizer on the next cron run.
-
-If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
-
-For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md##customize-the-commerce-scopes-export-configuration).
 
 ### Timing and monitoring
 
