@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Optimizer Connector
-description: Learn about the Adobe Commerce Optimizer Connector integration between Adobe Commerce and Commerce Optimizer for catalog sync, search, and storefront delivery.
+description: "Learn about the [!DNL Adobe Commerce Optimizer Connector] integration between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer] for catalog sync, search, and storefront delivery."
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
@@ -33,10 +33,14 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
 ---
 # Adobe Commerce Optimizer Connector
 
-The Adobe Commerce Optimizer Connector is a native, first-party integration between Adobe Commerce (cloud or on-premises) and Adobe Commerce Optimizer. It synchronizes catalog and pricing data from your Adobe Commerce stores into Commerce Optimizer so you can:
+The [!DNL Adobe Commerce Optimizer Connector] is a native, first-party integration between [!DNL Adobe Commerce] (cloud or on-premises) and [!DNL Adobe Commerce Optimizer]. It synchronizes catalog and pricing data from your [!DNL Adobe Commerce] stores into [!DNL Adobe Commerce Optimizer] so you can:
 
 - Power **AI-driven product discovery and recommendations**
 - Run **high-performance headless storefronts** (including Commerce storefronts powered by Edge Delivery)
