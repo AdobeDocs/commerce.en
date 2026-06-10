@@ -4,7 +4,7 @@ description: Learn how to use the AI-powered documentation search service for Ad
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
 hide: true
-TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk
+TQID: 'https://experienceleague.adobe.com/Sh2qzDm-gTh-ugtuHxLq8maftPM4vVyeFNf0RI31rPY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
