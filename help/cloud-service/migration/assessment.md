@@ -32,7 +32,7 @@ topic_v2:
 
 A Commerce migration assessment is an automated analysis of your existing Adobe Commerce store. Adobe's tooling scans your store's codebase and produces a structured report that inventories everything built, customized, or modified — and maps that inventory to what it means for your migration to [!DNL Adobe Commerce as a Cloud Service].
 
-The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initial sharing your project codebase.
+The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initially sharing your project codebase.
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ The percentage of your modules that were built specifically for your implementat
 
 >[!TIP]
 >
->Custom Module Ratio is a scope signal, not a complexity signal. A store with 80% custom modules could be easier to migrate than a store with 40% custom modules, if the custom modules are isolated and low-risk. Use the Complexity Score and the number of chain conflicts to assess difficulty Use the Custom Module Ratio to estimate volume.
+>Custom Module Ratio is a scope signal, not a complexity signal. A store with 80% custom modules that are isolated and low-risk could be easier to migrate than a store with 40% higher risk custom modules. Use the Complexity Score and the number of chain conflicts to assess difficulty. Use the Custom Module Ratio to estimate volume.
 
 **File Type Breakdown**
 
@@ -234,7 +234,7 @@ For each module, the report displays:
 | **Core table modification** | A structural change to Commerce's built-in database tables, which creates an irreversible dependency on a specific platform schema version. These carry the highest weight in the Complexity Score formula. |
 | **Entity-Attribute-Value (EAV)** | A flexible custom field added to products or customers, for example, a custom "warranty period" field. High EAV counts increase data migration complexity. |
 | **Hook density** | The average number of plugins and observers per module. Higher density means customization is more tightly woven into the core platform. |
-| **Drop-in** | [!DNL Adobe Commerce's] modular approach to storefront components (checkout, cart, product detail). Custom checkout behavior on [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on Premises] typically requires a Drop-in rebuild on [!DNL Adobe Commerce as a Cloud Service]. |
+| **Drop-in** | [!DNL Adobe Commerce's] modular approach to storefront components (including checkout, cart, and product detail pages). Custom checkout behavior on [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on Premises] typically requires a Drop-in rebuild on [!DNL Adobe Commerce as a Cloud Service]. |
 | **App Builder** | Adobe's out-of-process extensibility platform and the recommended way to build custom functionality, replacing in-process PHP extensions. |
 | **Layout XML** | Configuration files that define which blocks appear on which pages. Custom layout XML must be re-architected for [!DNL Adobe Commerce as a Cloud Service's] page structure. |
 | **Core handle override** | A layout XML customization that modifies a core Commerce page structure globally. These have the highest-risk layout pattern for migration. |
@@ -267,7 +267,7 @@ aio commerce extensibility tools-setup
 While the assessment gives you a blueprint for development, the AI tools allow your team to start building immediately, before a full migration plan is finalized.
 
 1. Open the **[!UICONTROL Module Reports]** tab and find a High-impact module with a **Rebuild** recommendation.
-1. Read the module's description,for example:
+1. Read the module's description, for example:
 
   ```shell-session
   Manages custom shipping rate calculations based on customer account tier and order    weight thresholds.
