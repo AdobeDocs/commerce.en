@@ -99,17 +99,7 @@ These workflows describe how teams set up and use the [!DNL Adobe Commerce Optim
 
 ### Initial setup and configuration {#initial-setup}
 
-The high-level steps for setup and configuration:
-
-1. Install the [!DNL Adobe Commerce Optimizer Connector] package for [!DNL Adobe Commerce] (cloud or on-premises).
-
-1. Map Commerce scopes to [!DNL Adobe Commerce Optimizer].
-
-1. Configure authentication and environment details.
-
-1. Verify connectivity.
-
-For detailed instructions, see [Configuration steps](./get-started.md#configuration-steps) in the _Get Started_ guide.
+See [Configuration steps](./get-started.md#configuration-steps) in the _Get Started_ guide.
 
 ### Ongoing data synchronization {#ongoing-sync}
 

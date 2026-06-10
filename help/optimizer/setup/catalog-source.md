@@ -35,7 +35,6 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-
 # Catalog source
 
 A catalog source represents an authoritative scope of products, attributes, and categories. Catalog sources typically map to language, audience, or system-of-origin boundaries and determine search, filter, and sort behavior.
