@@ -14,9 +14,6 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-    internal-label: Data Transfer
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -28,8 +25,6 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-    internal-label: Data transfer
 ---
 # Connector modules and feed endpoints
 

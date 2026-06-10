@@ -67,7 +67,7 @@ The `Store` request header determines the website scope and therefore the `websi
 
 ## Bundle products: add-to-cart format {#bundle-products-add-to-cart-format}
 
-To add bundle products to the cart from a headless storefront, pass only the `SKU` and `qty` for each selected bundle option.
+Allow shoppers to add bundle products to the cart from a headless storefront with only the `SKU` and `qty` for each selected bundle option.
 
 Each selected or entered option value must be base64-encoded in the following format:
 

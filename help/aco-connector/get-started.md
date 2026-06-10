@@ -128,7 +128,6 @@ By default, catalog data sync is enabled for all Commerce scopes (websites, cust
 >
 >Changing export settings triggers a full re-indexation, which can take significant time depending on your catalog size. Adobe recommends configuring the Commerce scopes to sync to [!DNL Adobe Commerce Optimizer] before enabling the integration and starting the initial data sync.
 
-
 The following table describes what data is exported at each scope level:
 
 | Scope | Data exported | Notes |
@@ -159,9 +158,16 @@ The following table describes what data is exported at each scope level:
 
 ## Enable the [!DNL Adobe Commerce Optimizer] integration
 
+You enable the integration and initiate the data sync by running the `aco:config:init` CLI command. This command completes the following steps:
+
+1. Obtains an IMS access token using credentials supplied as command line arguments.
+1. Calls the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` to validate the tenant and extract the ingestion URL and [!DNL Adobe Commerce Optimizer] Studio URL.
+1. Saves all configuration (client secret encrypted) to `core_config_data`.
+1. Schedules the initial full sync by invalidating all [!DNL Commerce Optimizer] feed indexers.
+
 >[!IMPORTANT]
 >
->Data sync processing will start in background as soon as you complete configuration. Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
+>Data sync processing starts in background as soon as you complete configuration. Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
 
 ### Get required connection details
 

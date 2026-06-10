@@ -1,5 +1,5 @@
 ---
-title: Connector Sync Pipeline
+title: Catalog Sync Pipeline
 description: "Learn how the [!DNL Adobe Commerce Optimizer Connector] sync pipeline works, including feed transformation, cron schedules, scope control, and error handling."
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
@@ -85,20 +85,7 @@ If sync issues affect only one catalog source or price book, see [Data not synci
 
 For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md#customize-the-commerce-scopes-export-configuration).
 
-### Initialization
-
-When you run the `aco:config:init` CLI command during initial setup, it performs the following steps:
-
-1. Obtains an IMS access token using the provided credentials.
-1. Calls the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` to validate the tenant and extract the ingestion URL and [!DNL Adobe Commerce Optimizer] Studio URL.
-1. Saves all configuration (client secret encrypted) to `core_config_data`.
-1. Schedules the initial full sync by invalidating all [!DNL Commerce Optimizer] feed indexers.
-
-Add the `--no-feed-cleanup` option to skip truncating existing feed data before the initial sync.
-
-For the step-by-step setup procedure, see [Enable the integration](./get-started.md#enable-the-adobe-commerce-optimizer-integration).
-
-### Timing and monitoring
+## Timing and monitoring
 
 | Scenario | Typical timing |
 | -------- | -------------- |
