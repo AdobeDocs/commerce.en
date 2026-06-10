@@ -30,7 +30,7 @@ topic_v2:
 >
 >Contact your solution account manager to request a migration assessment of your existing instance.
 
-A Commerce migration assessment is an automated analysis of your existing Adobe Commerce store. Adobe's tooling scans your store's codebase and produces a structured report that inventories everything built, customized, or modified — and maps that inventory to what it means for your migration to [!DNL Adobe Commerce as a Cloud Service].
+A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified — and maps that inventory to what it means for your migration to [!DNL Adobe Commerce as a Cloud Service].
 
 The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initially sharing your project codebase.
 
@@ -40,7 +40,7 @@ The report is delivered as an HTML file that you can open with any browser. No a
 
 **The assessment provides:**
 
-- A complete inventory of every module in your store, organized by type and impact level
+- A complete inventory of every custom module in your store, organized by type and impact level
 - A migration complexity rating (High, Medium, or Low) computed from risk-predictive metrics
 - A prioritized view of the highest-impact backend and storefront areas requiring migration planning
 - A description of each custom module, that you can use as direct input for Adobe's AI developer tools
@@ -74,7 +74,7 @@ The Complexity Score weights each input by how difficult it is to migrate. The s
 | Rating | Score range | Typical migration approach |
 | --- | --- | --- |
 | Low | 150 or below | Standard migration - direct migration with payment provider coordination and data migration as parallel workstreams. |
-| Medium | 151–375 | Modular migration - migrated in segments, triaging high-impact modules. |
+| Medium | 151–375 | Modular migration - migrated in segments, triaging high-impact custom modules. |
 | High | Above 375 | A phased migration, likely lasting 12–24 months. |
 
 **Custom Module Ratio**
@@ -92,8 +92,6 @@ A list of the amount of files in your codebase, organized by type.
 **Highest-Impact Modules**
 
 A curated list of the specific modules in your store requiring the most migration attention. These are often modules that interact with checkout, payments, or order management. Each high-impact module needs its own migration plan. This list is the best starting point for conversations with your technical team.
-
-<!-- XYZ -->
 
 ### Storefront complexity
 
@@ -200,13 +198,13 @@ The [!UICONTROL Drop-in migration required] field indicates which storefront are
 
 ## Module Reports tab
 
-The **[!UICONTROL Module Reports]** tab contains a dedicated entry for every module in your store. Share this information with your technical team.
+The **[!UICONTROL Module Reports]** tab contains a dedicated entry for every custom module in your store. Share this information with your technical team.
 
 For each module, the report displays:
 
 | Field name | Definition |
 | --- | --- |
-| What it does | A description of the module's purpose and business function |
+| What it does | A description of the custom module's purpose and business function |
 | Impact level | **High**, **Medium**, or **Low** impact based on what commerce behavior the module touches |
 | Hook count | The number of webhooks, which indicates how many places this module intercepts core platform behavior |
 | Migration recommendation | **Rebuild**, **Refactor**, **Replace** with a native feature, or **Remove** |
@@ -215,18 +213,18 @@ For each module, the report displays:
 **Workflow**
 
 1. Filter to **High-impact** modules first. These drive the most migration effort and cost.
-1. For each module, determine answers to the following questions:
+1. For each custom module, determine answers to the following questions:
    - Is this module still actively used?
    - Could the module be replaced by a native [!DNL Adobe Commerce as a Cloud Service] feature?
    - If the module must be rebuilt, what functionality does its replacement need to provide?
-1. Identify modules that can be retired or replaced. Each one reduces migration scope before any code is written.
-1. Copy the description of each module with the **Rebuild** migration recommendation. These descriptions can be given directly to Adobe's AI developer tools, refer to [AI developer tools for Commerce extensibility](#ai-developer-tools-for-commerce-extensibility) for more information.
+1. Identify custom modules that can be retired or replaced. Each one reduces migration scope before any code is written.
+1. Copy the description of each custom module with the **Rebuild** migration recommendation. These descriptions can be given directly to Adobe's AI developer tools, refer to [AI developer tools for Commerce extensibility](#ai-developer-tools-for-commerce-extensibility) for more information.
 
 ## Reference: key terms
 
 | Term | Definition |
 | --- | --- |
-| **Module** | A self-contained package of functionality. Your store could have anywhere from twenty modules to hundreds of modules. |
+| **Module** | A customized, self-contained package of functionality. Your store could have anywhere from twenty modules to hundreds of modules. |
 | **Plugin (interceptor)** | Code that intercepts a Commerce function and changes its behavior before, during, or after it runs. |
 | **Observer** | Code that listens for a specific platform event, such as "order placed", and runs custom logic when that event fires. |
 | **Preference (class override)** | A fragile customization type that completely replaces a core Commerce class, which breaks silently when the platform upgrades that class. |
@@ -280,7 +278,7 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 ## Next steps
 
 1. Open the **[!UICONTROL Summary]** tab. Review Migration Complexity and Highest-Impact Modules, then check the Customization Breakdown subsections. If your store has a custom theme, high-risk blocks, or a Checkout Drop-in listed, plan a parallel front-end workstream alongside the backend migration.
-1. Share the **[!UICONTROL Module Reports]** tab with your technical team or development partner. Ask them to flag any modules that are no longer actively used or that could be replaced by an [!DNL Adobe Commerce as a Cloud Service] feature.
+1. Share the **[!UICONTROL Module Reports]** tab with your technical team or development partner. Ask them to flag any custom modules that are no longer actively used or that could be replaced by an [!DNL Adobe Commerce as a Cloud Service] feature.
 1. Start building your customizations. Use the module descriptions as AI tool input to begin scaffolding compatible extensions.
 1. Schedule a walkthrough call with your Adobe account team. Adobe can review the findings with you, answer any questions about specific modules and storefront signals, and help you map the migration approach for your complexity profile.
 
