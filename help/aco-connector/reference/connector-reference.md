@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector] Modules and Feed Endpoints'
 description: "Learn about [!DNL Adobe Commerce Optimizer Connector] modules, catalog feed API endpoints, batch limits, and core_config_data configuration paths for [!DNL Adobe Commerce]."
+feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'

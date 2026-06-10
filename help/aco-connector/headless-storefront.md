@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector] Headless Storefront Integration'
 description: Learn how to integrate headless storefronts with the [!DNL Adobe Commerce Optimizer Connector] GraphQL API, price book IDs, and bundle add-to-cart encoding.
+feature: Storefront, Integration, GraphQL
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
@@ -34,7 +35,7 @@ For high-level storefront setup instructions, see [Configure merchandising and s
 
 ## GraphQL: `commerceOptimizer` query {#graphql-commerceoptimizer-query}
 
-Headless storefronts call the `commerceOptimizer` GraphQL query to retrieve the `priceBookId` for the current customer session. Pass this value to the [[!DNL Adobe Commerce Optimizer] GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api]{target="_blank"} when fetching prices.
+Headless storefronts call the `commerceOptimizer` GraphQL query to retrieve the `priceBookId` for the current customer session. Pass this value to the [[!DNL Adobe Commerce Optimizer] GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} when fetching prices.
 
 ```graphql
 {

@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector] Release Notes'
 description: Learn about [!DNL Adobe Commerce Optimizer Connector] release notes, including new features, bug fixes, and known issues for catalog synchronization and export.
+feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

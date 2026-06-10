@@ -1,6 +1,7 @@
 ---
 title: Catalog Sync Pipeline
 description: "Learn how the [!DNL Adobe Commerce Optimizer Connector] sync pipeline works, including feed transformation, cron schedules, scope control, and error handling."
+feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
