@@ -1,6 +1,6 @@
 ---
 title: Data Synchronization
-description: Learn about Adobe Commerce Optimizer Connector data synchronization, including cron schedules, scope control and feed error handling.
+description: "Learn about [!DNL Adobe Commerce Optimizer Connector] data synchronization, including cron schedules, scope control, and feed error handling."
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
@@ -36,25 +36,25 @@ topic_v2:
 ---
 # Data synchronization
 
-Built on [SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), the **Adobe Commerce Optimizer Connector** maps data collected by SaaS Data Export indexers to the format required by the Commerce Optimizer [!DNL Catalog Data Ingestion API] and handles authentication, batched submission, and scope-based sync control. The sections below describe how that synchronization works.
+Built on [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), the **[!DNL Adobe Commerce Optimizer Connector]** maps data collected by [!DNL SaaS Data Export] indexers to the format required by the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] and handles authentication, batched submission, and scope-based sync control. The sections below describe how that synchronization works.
 
 Related context:
 
-- Learn about the integration's business value, key features, and architecture in the [Adobe Commerce Optimizer Connector overview](overview.md) topic.
+- Learn about the integration's business value, key features, and architecture in the [[!DNL Commerce Optimizer Connector] overview](overview.md) topic.
 
-- For module package names, feed API endpoints, and configuration key paths, see the [Connector Reference](reference/connector-reference.md)
+- For module package names, feed API endpoints, and configuration key paths, see the [Connector reference](reference/connector-reference.md)
 
 ## How the sync works
 
-The following diagram shows data synchronization from Adobe Commerce to Commerce Optimizer through the Adobe I/O Gateway.
+The following diagram shows data synchronization from [!DNL Adobe Commerce] to [!DNL Commerce Optimizer] through the [!DNL Adobe I/O Gateway].
 
 ![Commerce Optimizer Connector high-level sync diagram](assets/aco-connector-sync-high-level-diagram.png){width="800" zoomable="yes"}
 
-When catalog data changes in Commerce, synchronization moves through these stages.
+When catalog data changes in [!DNL Adobe Commerce], synchronization moves through these stages.
 
-1. **Entity Change Detection** — (every 1 min) A cron job (`indexer_reindex_all_invalid`) detects Commerce entity changes and triggers the SaaS Data Export, which assembles feed items and tracks their status.
-1. **Transformation** — The Commerce Optimizer Connector picks up the assembled feeds, maps Commerce entities and scopes to formats required by the Commerce Optimizer API, and prepares the payload for transmission.
-1. **Transmission** — The transformed data is sent via HTTP POST (`/v1/catalog/<feed name>`) through the Adobe I/O Gateway to Commerce Optimizer, which validates and persists the incoming feeds.
+1. **Entity Change Detection** — (every 1 min) A cron job (`indexer_reindex_all_invalid`) detects [!DNL Adobe Commerce] entity changes and triggers the [!DNL SaaS Data Export], which assembles feed items and tracks their status.
+1. **Transformation** — The [!DNL Commerce Optimizer Connector] picks up the assembled feeds, maps [!DNL Adobe Commerce] entities and scopes to formats required by the [!DNL Commerce Optimizer] API, and prepares the payload for transmission.
+1. **Transmission** — The transformed data is sent via HTTP POST (`/v1/catalog/<feed name>`) through the [!DNL Adobe I/O Gateway] to [!DNL Commerce Optimizer], which validates and persists the incoming feeds.
 1. **Failure Retry** (every 5 min) — A separate cron job (`*_resend_failed_items`) detects any failed feed items and re-submits them through the same pipeline.
 
 ### Scheduled cron jobs
@@ -64,14 +64,14 @@ Two cron groups automate the pipeline on a fixed schedule.
 | Cron group | Purpose | Schedule |
 | ---------- | ------- | -------- |
 | `indexer_reindex_all_invalid`  | Listens for entity updates, assembles feed items, persists feed status | Every 1 minute |
-| `*_resend_failed_items`| Checks for failed feed items and resubmits them to Commerce Optimizer | Every 5 minutes |
+| `*_resend_failed_items`| Checks for failed feed items and resubmits them to [!DNL Commerce Optimizer] | Every 5 minutes |
 
-The **SaaS Data Export** extension handles feed collection and status tracking. The connector layer maps entities and scopes to the format required by the Commerce Optimizer API and submits them via `POST /v1/catalog/<feed name>`.
+The **[!DNL SaaS Data Export]** extension handles feed collection and status tracking. The connector layer maps entities and scopes to the format required by the [!DNL Commerce Optimizer] API and submits them via `POST /v1/catalog/<feed name>`.
 
 #### Requirements
 
 - [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
-- Feed indexers must use **Update by Schedule** mode.See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
+- Feed indexers must use **[!UICONTROL Update by Schedule]** mode. See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
 
 ## Scope-based sync control
 
@@ -79,20 +79,20 @@ The `CommerceOptimizerScopeMapper` module reads per-website and per-store-view e
 
 - **Enabled scopes** export data on the normal delta schedule.
 - **Disabled scopes** are excluded from the pipeline.
-  Previously synced entities are removed from Commerce Optimizer on the next cron run.
+  Previously synced entities are removed from [!DNL Commerce Optimizer] on the next cron run.
 
 If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
 
-For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md##customize-the-commerce-scopes-export-configuration).
+For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md#customize-the-commerce-scopes-export-configuration).
 
 ### Initialization
 
 When you run the `aco:config:init` CLI command during initial setup, it performs the following steps:
 
 1. Obtains an IMS access token using the provided credentials.
-1. Calls the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` to validate the tenant and extract the ingestion URL and Commerce Optimizer Studio URL.
+1. Calls the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` to validate the tenant and extract the ingestion URL and [!DNL Adobe Commerce Optimizer] Studio URL.
 1. Saves all configuration (client secret encrypted) to `core_config_data`.
-1. Schedules the initial full sync by invalidating all Adobe Commerce Optimizer feed indexers.
+1. Schedules the initial full sync by invalidating all [!DNL Commerce Optimizer] feed indexers.
 
 Add the `--no-feed-cleanup` option to skip truncating existing feed data before the initial sync.
 
@@ -106,7 +106,7 @@ For the step-by-step setup procedure, see [Enable the integration](./get-started
 | Transient failures | Retried every 5 minutes |
 | Full sync or large catalogs | Minutes to hours |
 
-Monitor per-feed status from the [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
+Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
 
 ## Feed submission and error handling
 
@@ -134,7 +134,7 @@ When update and delete calls return different status codes, `FeedSubmitter` comb
 
 >[!MORELIKETHIS]
 >
-> - [Adobe Commerce Optimizer Connector overview](overview.md) — Learn business context and scope mapping
-> - [Adobe Commerce Optimizer Connector reference](reference/connector-reference.md) — Review modules, API endpoints, and configuration keys
+> - [Connector overview](overview.md) — Learn business context and scope mapping
+> - [Connector reference](reference/connector-reference.md) — Review modules, API endpoints, and configuration keys
 > - [Customize the Commerce scopes export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration) — Configure feeds per scope level, enable and disable behavior, and Admin steps
 > - [Troubleshooting](troubleshooting.md) — Diagnose sync failures

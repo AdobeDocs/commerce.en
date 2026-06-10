@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot the Adobe Commerce Optimizer Connector
-description: Learn how to troubleshoot [!DNL Adobe Commerce Optimizer Connector] credential, catalog sync, and scope export issues for Adobe Commerce PaaS integrations.
+title: 'Troubleshoot the [!DNL Adobe Commerce Optimizer Connector]'
+description: "Learn how to troubleshoot [!DNL Adobe Commerce Optimizer Connector] credential, catalog sync, and scope export issues for [!DNL Adobe Commerce] PaaS integrations."
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -35,21 +35,21 @@ topic_v2:
 ---
 # Troubleshoot the Adobe Commerce Optimizer Connector
 
-Use this guide to diagnose and resolve common issues with the Commerce Optimizer Connector during initial setup, catalog feed synchronization, and scope export configuration. The sections below cover credential and tenant validation, data sync failures, and related SaaS Data Export diagnostics.
+Use this guide to diagnose and resolve common issues with the [!DNL Adobe Commerce Optimizer Connector] during initial setup, catalog feed synchronization, and scope export configuration. The sections below cover credential and tenant validation, data sync failures, and related [!DNL SaaS Data Export] diagnostics.
 
 ## Credentials or tenant validation fails
 
 If `aco:config:init` fails during credential validation:
 
-- Run the `bin/magento aco:config:show` Commerce CLI command to verify the stored values.
+- Run the `bin/magento aco:config:show` [!DNL Adobe Commerce] CLI command to verify the stored values.
 - Confirm that the tenant ID belongs to the IMS organization used to obtain the credentials.
-- Confirm that the OAuth client has the necessary scopes for the Commerce Optimizer ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
+- Confirm that the OAuth client has the necessary scopes for the [!DNL Commerce Optimizer] ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
 
 ## Data not syncing
 
 **Check item-level error details:**
 
-1. From the Commerce Admin, go to **[!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+1. From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
 2. Select the failing feed to view per-item error details.
 
 Key points about error handling:
@@ -61,6 +61,6 @@ Key points about error handling:
 
 If the problem affects only a specific catalog source (store view code) or price book, check whether the corresponding website or store view has sync disabled. See [Customize the data export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration).
 
-## SaaS Data Export diagnostics
+## [!DNL SaaS Data Export] diagnostics
 
-For lower-level SaaS Data Export diagnostics including log locations and feed resync commands, see the [SaaS Data Export troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
+For lower-level [!DNL SaaS Data Export] diagnostics including log locations and feed resync commands, see the [[!DNL SaaS Data Export] troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.

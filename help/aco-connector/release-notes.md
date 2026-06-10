@@ -40,10 +40,10 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _May 6, 2026_
 
-![Fix](../assets/fix.svg) **Improved Adobe Commerce Optimizer Connector configuration instructions** – Updated the Commerce Optimizer configuration page in the Commerce Admin to link to the _Adobe Commerce Connector Guide_.
+![Fix](../assets/fix.svg) **Improved [!DNL Adobe Commerce Optimizer Connector] configuration instructions** – Updated the [!DNL Adobe Commerce Optimizer] configuration page in the Commerce Admin to link to the _[!DNL Adobe Commerce Optimizer Connector] Integration Guide_.
 <!--COMOPT-1922-->
 
-![Fix](../assets/fix.svg) **Adobe Commerce Optimizer Connector metadata enhancement** – The Adobe Commerce Optimizer Connector now includes its installed version in the metadata header. This improvement enables teams to quickly identify which connector version is in use during troubleshooting or support engagements.<!--MDEE-1323-->
+![Fix](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector] metadata enhancement** – The [!DNL Adobe Commerce Optimizer Connector] now includes its installed version in the metadata header. This improvement enables teams to quickly identify which connector version is in use during troubleshooting or support engagements.<!--MDEE-1323-->
 
 ### 1.0.12 Release
 
@@ -59,21 +59,21 @@ bin/magento saas:resync --feed=categories
 
 _March 10, 2026_
 
-![Fixed issue](../assets/fix.svg) Fixed a compatibility issue that blocked access to the Commerce Services Connector configuration page from the Commerce Admin System and Configuration menus when Adobe Commerce Optimizer Connector is installed on a Commerce instance.  Now, you can access the Commerce Services Connector configuration page when both extensions are installed. <!--MDEE-1322-->
+![Fixed issue](../assets/fix.svg) Fixed a compatibility issue that blocked access to the [!DNL Commerce Services Connector] configuration page from the Commerce Admin **[!UICONTROL System]** and **[!UICONTROL Configuration]** menus when the [!DNL Adobe Commerce Optimizer Connector] is installed on a [!DNL Adobe Commerce] instance.  Now, you can access the [!DNL Commerce Services Connector] configuration page when both extensions are installed. <!--MDEE-1322-->
 
 
 ### 1.0.10 Release
 
 _March 09, 2026_
 
-![Fix](../assets/fix.svg) If you access the Data Feed Sync Status page before completing the connector configuration, you are now automatically redirected to the connector configuration page. This guided flow ensures that the connector setup is completed and helps prevent errors caused by missing configuration settings that could result in failed or incomplete status items.<!--MDEE-1296-->
+![Fix](../assets/fix.svg) If you access the **[!UICONTROL Data Feed Sync Status]** page before completing the connector configuration, you are now automatically redirected to the connector configuration page. This guided flow ensures that the connector setup is completed and helps prevent errors caused by missing configuration settings that could result in failed or incomplete status items.<!--MDEE-1296-->
 
 ### v1.0.9 Release
 
 _March 01, 2026_
 
-General availability release of the Adobe Commerce Optimizer Connector.
+General availability release of the [!DNL Adobe Commerce Optimizer Connector].
 
 >[!NOTE]
 >
->If you participated in the Beta program for the Commerce Optimizer Connector and have an earlier version of the extension installed, upgrade to the General availability version to receive the latest updates.
+>If you participated in the Beta program for the [!DNL Adobe Commerce Optimizer Connector] and have an earlier version of the extension installed, upgrade to the General availability version to receive the latest updates.
