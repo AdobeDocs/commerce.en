@@ -22,7 +22,13 @@ topic_v2:
 ---
 # Data synchronization
 
-Built on [SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), the **Adobe Commerce Optimizer Connector** maps feed items to the [!DNL Catalog Data Ingestion API] format and handles authentication, batched submission, and scope-based sync control. The sections below describe how that synchronization works.
+Built on [SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), the **Adobe Commerce Optimizer Connector** maps data collected by SaaS Data Export indexers to the format required by the Commerce Optimizer [!DNL Catalog Data Ingestion API] and handles authentication, batched submission, and scope-based sync control. The sections below describe how that synchronization works.
+
+Related context:
+
+- Learn about the integration's business value, key features, and architecture in the [Adobe Commerce Optimizer Connector overview](overview.md) topic.
+
+- For module package names, feed API endpoints, and configuration key paths, see the [Connector Reference](reference/connector-reference.md)
 
 ## How the sync works
 
@@ -32,13 +38,10 @@ The following diagram shows data synchronization from Adobe Commerce to Commerce
 
 When catalog data changes in Commerce, synchronization moves through these stages.
 
-1. **SaaS Data Export** indexers detect entity updates and assemble feed items for the `products`, `productAttributes`, `categories`, and `prices` feeds.
-1. Feed items are written to feed tables in Adobe Commerce, each with a sync status.
-1. The connector maps items to the [!DNL Catalog Data Ingestion API] format and generates the `priceBooks` feed from website and customer group configuration.
-1. The `FeedSubmitter` process batches pending items and submits them through the Adobe I/O Gateway using `POST /v1/catalog/<feed name>`.
-1. Per-item results are saved back to the feed tables.
-   - Validation failures and other permanent errors appear in the Admin.
-   - Transient failures are queued for retry.
+1. **Entity Change Detection** — (every 1 min) A cron job (`indexer_reindex_all_invalid`) detects Commerce entity changes and triggers the SaaS Data Export, which assembles feed items and tracks their status.
+1. **Transformation** — The Commerce Optimizer Connector picks up the assembled feeds, maps Commerce entities and scopes to formats required by the Commerce Optimizer API, and prepares the payload for transmission.
+1. **Transmission** — The transformed data is sent via HTTP POST (`/v1/catalog/<feed name>`) through the Adobe I/O Gateway to Commerce Optimizer, which validates and persists the incoming feeds.
+1. **Failure Retry** (every 5 min) — A separate cron job (`*_resend_failed_items`) detects any failed feed items and re-submits them through the same pipeline.
 
 ### Scheduled cron jobs
 
@@ -49,7 +52,7 @@ Two cron groups automate the pipeline on a fixed schedule.
 | `indexer_reindex_all_invalid`  | Listens for entity updates, assembles feed items, persists feed status | Every 1 minute |
 | `*_resend_failed_items`| Checks for failed feed items and resubmits them to Commerce Optimizer | Every 5 minutes |
 
-The **SaaS Data Export** extension handles feed collection and status tracking. The connector layer maps entities to the format required by the Commerce Optimizer GraphQL API and submits them via `POST /v1/catalog/<feed name>`.
+The **SaaS Data Export** extension handles feed collection and status tracking. The connector layer maps entities and scopes to the format required by the Commerce Optimizer API and submits them via `POST /v1/catalog/<feed name>`.
 
 #### Requirements
 
@@ -79,9 +82,9 @@ The `CommerceOptimizerScopeMapper` module reads per-website and per-store-view e
 
 If sync issues affect only one catalog source or price book, see [Data not syncing](troubleshooting.md#data-not-syncing).
 
-For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md##customize-the-commerce-scopes-export-configuration) 
+For details on customizing the synchronization scope, see [Customize the Commerce scopes export configuration](get-started.md##customize-the-commerce-scopes-export-configuration).
 
-#### Timing and monitoring
+### Timing and monitoring
 
 | Scenario | Typical timing |
 | -------- | -------------- |
