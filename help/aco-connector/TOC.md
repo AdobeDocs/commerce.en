@@ -11,7 +11,7 @@ feature: Adobe Commerce Optimizer Connector
 
 - [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
 - [Get Started](get-started.md)
-- [Data synchronization](data-synchronization.md)
+- [Connector sync pipeline](data-synchronization.md)
 - [Headless storefront integration](headless-storefront.md)
 - [Troubleshooting](troubleshooting.md)
 - Reference {#reference}

@@ -1,6 +1,6 @@
 ---
-title: Data Synchronization
-description: "Learn about [!DNL Adobe Commerce Optimizer Connector] data synchronization, including cron schedules, scope control, and feed error handling."
+title: Connector Sync Pipeline
+description: "Learn how the [!DNL Adobe Commerce Optimizer Connector] sync pipeline works, including feed transformation, cron schedules, scope control, and error handling."
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
@@ -34,7 +34,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
 ---
-# Data synchronization
+# Connector sync pipeline
 
 Built on [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), the **[!DNL Adobe Commerce Optimizer Connector]** maps data collected by [!DNL SaaS Data Export] indexers to the format required by the [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] and handles authentication, batched submission, and scope-based sync control. The sections below describe how that synchronization works.
 
