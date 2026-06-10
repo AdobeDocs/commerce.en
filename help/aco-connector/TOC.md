@@ -1,18 +1,20 @@
 ---
 user-guide-title: "[!DNL Adobe Commerce Optimizer Connector] Integration Guide"
 breadcrumb-title: "[!DNL Optimizer Connector]"
-user-guide-description: Configure the Adobe Commerce Optimizer Connector to export catalog data and optimize delivery to Edge Delivery Services storefronts using Commerce Optimizer and GraphQL.
+user-guide-description: Use the [!DNL Adobe Commerce Optimizer Connector] guide to export catalog data, sync prices, and deliver [!DNL Edge Delivery Services] storefronts using [!DNL Adobe Commerce Optimizer].
+role: Developer, Admin
+feature: Adobe Commerce Optimizer Connector
 
 ---
 
 # Adobe Commerce Optimizer Connector {#aco-optimizer-connector}
 
-- [Adobe Commerce Optimizer Connector](overview.md)
+- [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
 - [Get Started](get-started.md)
-- [Sync architecture](sync-architecture.md)
+- [Connector sync pipeline](connector-sync-pipeline.md)
 - [Headless storefront integration](headless-storefront.md)
 - [Troubleshooting](troubleshooting.md)
 - Reference {#reference}
-  - [Connector reference](./reference/connector-reference.md)
-  - [Field mappings](./reference/field-mappings.md)
+  - [Connector modules and feed endpoints](./reference/connector-reference.md)
+  - [Field mapping for connector feeds](./reference/field-mapping.md)
 - [Release notes](release-notes.md)
