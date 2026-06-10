@@ -26,7 +26,7 @@ recommendations: noDisplay, noCatalog
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
     - [Bulk data migration tool](migration/bulk-data.md)
-    - [Migration assessment tool](migration/assessment.md)
+    - [Migration assessment](migration/assessment.md)
     - [Coding tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
   - {hide-from-toc} [Documentation RAG Service](migration/doc-rag.md)
 - [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}

@@ -1,5 +1,5 @@
 ---
-title: Migration Assessment Tool
+title: Migration Assessment
 description: Learn how to read an Adobe Commerce PaaS migration assessment report, interpret storefront and backend complexity signals, and use Adobe AI developer tools to begin building extensions for Adobe Commerce as a Cloud Service.
 feature: Cloud, Migration
 role: Developer, Admin
@@ -24,15 +24,19 @@ topic_v2:
     internal-label: Implementation
 ---
 
-# Migration Assessment Tool
+# Migration Assessment
 
->[!IMPORTANT]
+>[!TIP]
 >
-> The Migration Assessment Tool is only available when migrating [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on-premises] projects to [!DNL Adobe Commerce as a Cloud Service].
+>Contact your solution account manager to request a migration assessment of your existing instance.
 
 A Commerce migration assessment is an automated analysis of your existing Adobe Commerce store. Adobe's tooling scans your store's codebase and produces a structured report that inventories everything built, customized, or modified — and maps that inventory to what it means for your migration to [!DNL Adobe Commerce as a Cloud Service].
 
 The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initial sharing your project codebase.
+
+>[!IMPORTANT]
+>
+> The Migration Assessment is only available when migrating [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on-premises] projects to [!DNL Adobe Commerce as a Cloud Service].
 
 **The assessment provides:**
 
@@ -40,10 +44,6 @@ The report is delivered as an HTML file that you can open with any browser. No a
 - A migration complexity rating (High, Medium, or Low) computed from risk-predictive metrics
 - A prioritized view of the highest-impact backend and storefront areas requiring migration planning
 - A description of each custom module, that you can use as direct input for Adobe's AI developer tools
-
->[!TIP]
->
->Contact your solution account manager to request a migration assessment of your existing instance.
 
 ## Understanding the migration assessment report
 
