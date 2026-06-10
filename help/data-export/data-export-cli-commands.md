@@ -20,6 +20,10 @@ topic_v2:
 
 The `saas:resync` command in the `magento/saas-export` package lets you manage data synchronization for Adobe Commerce SaaS services.
 
+>[!NOTE]
+>
+>The `saas:resync` command also applies to [!DNL Adobe Commerce Optimizer Connector] feeds such as `products`, `categories`, and `priceBooks`. See [Supported feeds](../aco-connector/reference/connector-reference.md#supported-feeds) for the full list of connector feeds and indexer names.
+
 Adobe does not recommend using the `saas:resync` command regularly. Typical scenarios for using the command are:
 
 - Initial sync

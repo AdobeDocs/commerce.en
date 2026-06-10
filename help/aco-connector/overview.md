@@ -202,7 +202,7 @@ The connector is designed for B2C merchants with [!DNL Adobe Commerce] on cloud 
 
 - Set up the integration and enable key workflows: [Get Started with the [!DNL Commerce Optimizer Connector]](get-started.md)
 - Learn about [!DNL Adobe Commerce Optimizer] concepts and architecture: [What is [!DNL Adobe Commerce Optimizer]?](../optimizer/overview.md)
-- Understand the sync mechanism, initialization, and error handling: [Connector sync pipeline](data-synchronization.md)
+- Understand the sync mechanism, initialization, and error handling: [Connector sync pipeline](connector-sync-pipeline.md)
 - Field-level data mapping for all feeds: [Field mapping for connector feeds](reference/field-mapping.md)
 - Integrate headless storefronts using GraphQL and bundle encoding: [Headless storefront integration](headless-storefront.md)
 - Diagnose sync and configuration issues: [Troubleshooting](troubleshooting.md)
