@@ -41,10 +41,10 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _June 11, 2026_
 
-Update to php 8.5 by @duhon in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/102
+![Fix](../assets/fix.svg) Update to php 8.5 <!--MDEE-1388--> 
 ![Fix](../assets/fix.svg) Currency change does not update product feed. <!--MDEE-1384-->
 ![Fix](../assets/fix.svg) Children categories should have empty "families" field if top-level category disabled or not included in menu. <!--MDEE-1369-->
-[SLOW HORSES] MDEE-1395: Require catalog-staging-data-exporter in ACO adapter metapackage by @developlex in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/103
+![Fix](../assets/fix.svg) Require catalog-staging-data-exporter in ACO adapter metapackage <!--MDEE-1395--> 
 
 ### 1.0.13 Release
 
