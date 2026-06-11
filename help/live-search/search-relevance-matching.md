@@ -33,13 +33,21 @@ For a query like `red pants`:
 
 ### Decompounding (German) {#decompounding-german}
 
-German catalogs use many compound words. For example, **spülbecken** and **spül becken** can decompose into tokens such as **spul** and **beck** (after stemming) so a shopper who searches **spul becken** can still find **Spülbecken**. At this cross-field layer, **all** decompounded tokens from the query must be present in the same field.
+German catalogs use many compound words. For example, **spülbecken** and **spül becken** can decompose into tokens such as **spul** and **beck** (after stemming) so a shopper who searches **spul becken** can still find **Spülbecken**. At this layer, decompounded subwords from a compound term must appear in the same field. Other query terms can match in different fields.
 
 This **AND** requirement filters irrelevant matches where only one subword is present. For example, a search for **Brauseschlauch** no longer returns **Schlauchstück** when only part of the compound matches. A search for **spülbecken** can still match **spülbeckventil** because the longer word contains all expected tokens.
 
 >[!NOTE]
 >
 >Exact and near phrase matching and same-field matching use the rules described above without decompounding.
+
+#### Example
+
+For a search phrase like `Brauseschlauch chrom`:
+
+- **Exact and near phrase match** — Looks for the full phrase **brauseschlauch chrom** as typed, without decompounding (stemming still applies).
+- **All words in the same field** — Looks for **brauseschlauch** and **chrom** in the **same** searchable attribute, still without decompounding (for example, both in **name**).
+- **Words across different fields** — Decompounds **Brauseschlauch** into **brause** and **schlauch**. Those tokens must appear in the **same** field (not necessarily as an adjacent phrase). **chrom** can match in a **different** field (for example, **brause** and **schlauch** in **name**, **chrom** in **color**).
 
 Set **Language** to **German** on the [Settings](settings.md#language) workspace so decompounding rules apply. Validate high-value German queries on a staging storefront before you enable changes in production.
 
