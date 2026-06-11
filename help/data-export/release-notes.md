@@ -44,6 +44,13 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.28 Release
+
+_June 11, 2026_
+
+[SLOW HORSES] MDEE-1382: Use urlPath+storeViewCode as category feed identity by @developlex in https://github.com/magento-commerce/commerce-data-export/pull/559
+[SLOW HORSES] MDEE-1382: Staging-aware category url_key change detection  by @developlex in https://github.com/magento-commerce/commerce-data-export-ee/pull/155
+
 ### 103.4.27 Release
 
 _June 4, 2026_
