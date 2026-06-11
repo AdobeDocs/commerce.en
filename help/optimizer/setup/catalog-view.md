@@ -85,10 +85,6 @@ After you complete these steps, the catalog view is now configured to display pr
 
 ### Specify catalog views for recommendations and product discovery rules
 
->[!IMPORTANT]
->
->This feature is currently in beta.
-
 You can specify a catalog view when you [create recommendation units](../merchandising/recommendations/create.md) or [merchandising rules](../merchandising/rules/add.md).
 
 ## Catalog layers
