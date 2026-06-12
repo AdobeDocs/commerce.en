@@ -120,6 +120,7 @@ The following feeds are available for the [!DNL Adobe Commerce Optimizer Connect
 
 For additional details, see the following topics:
 
+- Verify catalog data sync and manually resync connector feeds: [Manage synchronization](/help/aco-connector/data-sync-manage.md)
 - For [!DNL Adobe Commerce] CLI resync operations, see the [CLI resync command](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
 - [[!DNL Adobe Commerce Optimizer Connector] modules and feed endpoints](/help/aco-connector/reference/connector-reference.md)
 - [Field mapping for connector feeds](/help/aco-connector/reference/field-mapping.md)
@@ -175,6 +176,7 @@ The connector is designed for B2C merchants with [!DNL Adobe Commerce] on cloud 
 - Set up the integration and enable key workflows: [Get Started with the [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)
 - Learn about [!DNL Adobe Commerce Optimizer] concepts and architecture: [What is [!DNL Adobe Commerce Optimizer]?](/help/optimizer/overview.md)
 - Understand the sync mechanism, initialization, and error handling: [Connector sync pipeline](/help/aco-connector/connector-sync-pipeline.md)
+- Verify catalog data sync and manually resync feeds: [Manage synchronization](/help/aco-connector/data-sync-manage.md)
 - Field-level data mapping for all feeds: [Field mapping for connector feeds](/help/aco-connector/reference/field-mapping.md)
 - Integrate headless storefronts using GraphQL and bundle encoding: [Headless storefront integration](/help/aco-connector/headless-storefront.md)
 - Diagnose sync and configuration issues: [Troubleshooting](/help/aco-connector/troubleshooting.md)

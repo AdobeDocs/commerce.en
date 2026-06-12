@@ -1,6 +1,6 @@
 ---
 title: View and Manage the Synchronization Process
-description: Learn how to view and manage the [!DNL SaaS Data Export] synchronization process using the Data Management dashboard and Data Sync Feed Sync Status page.
+description: Learn how to view and manage the [!DNL SaaS Data Export] synchronization process using the Data Management dashboard and Data Feed Sync Status page.
 role: Admin, Developer
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -33,19 +33,19 @@ Most synchronization activities are processed automatically using full sync, par
 
 For Adobe Commerce on cloud, on-premises, or Adobe Commerce as a Cloud Service deployments, view and manage the synchronization process from these Commerce Admin resources:
 
-- **[Data Sync Feed Sync Status page](../optimizer/setup/data-sync.md)**—Check the feed export status for deployments connected with [!DNL Live Search], [!DNL Product Recommendations], or [!DNL Catalog Service]. This dashboard shows the feed export status for each feed including any errors encountered. A detail view displays feed export status for individual feed items.
+- **[Data Feed Sync Status page](../optimizer/setup/data-sync.md)**—Check the feed export status for deployments connected with [!DNL Live Search], [!DNL Product Recommendations], or [!DNL Catalog Service]. This dashboard shows the feed export status for each feed including any errors encountered. A detail view displays feed export status for individual feed items.
 
 - **[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Admin users can view and track data successfully exported and synchronized to connected Commerce Services. This dashboard shows the product data synced to Commerce Services.
 
 >[!NOTE]
 >
->The Data Management dashboard is available only if you have [!DNL Live Search], [!DNL Product Recommendations], or [!DNL Catalog Service] installed.
+>The Data Management dashboard and Data Feed Sync Status page are available only if you have [!DNL Live Search], [!DNL Product Recommendations], or [!DNL Catalog Service] installed.
 
 >[!TAB Adobe Commerce with Commerce Optimizer]
 
 For Commerce on cloud or on-premises deployments integrated with [!DNL Commerce Optimizer], view and manage the synchronization process using the following resources:
 
-- **[Data Sync Feed Sync Status page](../optimizer/setup/data-sync.md)**—For Commerce projects that use [!DNL Commerce Optimizer], check catalog data availability for your storefront from the Data Feed Sync Status page in [!DNL Commerce Optimizer]. This dashboard shows the synchronization status of the data export feeds.
+- **[Data Feed Sync Status page](../optimizer/setup/data-sync.md)**—For Commerce projects that use [!DNL Commerce Optimizer], check catalog data availability for your storefront from the Data Feed Sync Status page in [!DNL Commerce Optimizer]. This dashboard shows the synchronization status of the data export feeds.
 
 - **[Data Sync page](../optimizer/setup/data-sync.md)**—The Data Sync page gives an overview of synchronization status for product data coming from your upstream catalog source into [!DNL Commerce Optimizer].
 
@@ -53,19 +53,19 @@ For Commerce on cloud or on-premises deployments integrated with [!DNL Commerce 
 
 ## Verify that the data sync is working {#verify-that-the-data-sync-is-working}
 
-Use the dashboards for your deployment to monitor export status and confirm that data was delivered.
+To verify that the data sync is working, confirm that data exported successfully from [!DNL Adobe Commerce] and that the data was successfully delivered to the connected Commerce service. Use the dashboards for your deployment to check both steps.
 
 >[!BEGINTABS]
 
 >[!TAB Adobe Commerce]
 
-Confirm that catalog data exported from the Commerce Admin was delivered to connected Commerce Services such as [!DNL Live Search], [!DNL Product Recommendations], or [!DNL Catalog Service].
+Start with export, then confirm delivery.
 
 1. Check the sync status in the Commerce Admin.
 
    Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
 
-   ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png){width="500" zoomable="yes"}
+   ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png){width="600" zoomable="yes"}
 
    When the sync is running, the feed data shows successfully sent records. Select a feed to view details or troubleshoot sync issues.
 
@@ -73,13 +73,11 @@ Confirm that catalog data exported from the Commerce Admin was delivered to conn
 
    From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**.
 
-   ![Data Management dashboard showing synced catalog data in connected Commerce Services](./assets/data-management-dashboard.png){width="500" zoomable="yes"}
+   ![Data Management dashboard showing synced catalog data in connected Commerce Services](./assets/data-management-dashboard.png){width="600" zoomable="yes"}
 
    Verify that the expected products, prices, and attributes appear.
 
 >[!TAB Adobe Commerce with Commerce Optimizer]
-
-Confirm that catalog data exported from the Commerce Admin was delivered to [!DNL Commerce Optimizer].
 
 {{$include /help/_includes/aco-connector/verify-optimizer-data-sync.md}}
 

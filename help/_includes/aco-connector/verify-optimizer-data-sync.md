@@ -1,5 +1,7 @@
 # Verify Optimizer data sync
 
+Confirm that data exported successfully from the Commerce Admin and that the data was successfully delivered to [!DNL Commerce Optimizer]. Start with export in the Commerce Admin, then confirm delivery in [!DNL Commerce Optimizer].
+
 1. **Check sync status in the Commerce Admin:**
 
    Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
