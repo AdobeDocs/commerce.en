@@ -40,6 +40,10 @@ The *Search performance* page provides insight into the search terms that shoppe
 >
 >If you do not see any search performance metrics, make sure search event data is being [collected](../setup/events/overview.md).
 
+>[!NOTE]
+>
+>To understand how product discovery ranks **exact and near matches**, same-field matches, and broader matches (and how that interacts with keyword weights and merchandising rules), see [Search matching and ranking](../search-relevance-matching.md).
+
 ## Choose the **Catalog view**
 
 Select the [catalog view](../setup/catalog-view.md) to see specific search performance results.

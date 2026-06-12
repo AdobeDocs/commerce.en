@@ -37,6 +37,8 @@ There are several key factors that determine the relevance and effectiveness of 
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
 - Faceted navigation allows shoppers to refine their search and get relevant results quickly.
 
+To understand how [!DNL Live Search] prioritizes **exact and near matches, same-field matches, and cross-field matches**—and how these factors interact with search weights and rules—see [Search matching and ranking](search-relevance-matching.md).
+
 To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Live Search]** in the Adobe [!DNL Commerce] Admin. 
 
 ## Optimize your search functionality
