@@ -13,7 +13,9 @@ feature: Integration, Configuration
 - [Get Started](get-started.md)
 - [Connector sync pipeline](connector-sync-pipeline.md)
 - [Headless storefront integration](headless-storefront.md)
-- [Troubleshooting](troubleshooting.md)
+- Troubleshooting {#troubleshooting}
+  - [Overview](troubleshooting.md)
+  - [Symptoms and resolutions](troubleshooting/symptoms-and-resolutions.md)
 - Reference {#reference}
   - [Connector modules and feed endpoints](./reference/connector-reference.md)
   - [Field mapping for connector feeds](./reference/field-mapping.md)

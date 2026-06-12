@@ -64,6 +64,10 @@ If the problem affects only a specific catalog source (store view code) or price
 
 Connector feeds show a successful status in **[!UICONTROL Data Feed Sync Status]**, and the expected products, prices, and attributes appear on the **[!UICONTROL Data Sync]** page in [!DNL Commerce Optimizer].
 
+## Misconfiguration and result interpretation
+
+For a catalog of specific behaviors caused by misconfiguration or misinterpretation of sync results - such as missing products, incorrect prices, or scope-level data gaps - see [Symptoms and resolutions](troubleshooting/symptoms-and-resolutions.md).
+
 ## [!DNL SaaS Data Export] diagnostics
 
 For lower-level [!DNL SaaS Data Export] diagnostics including log locations and feed resync commands, see the [[!DNL SaaS Data Export] troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
