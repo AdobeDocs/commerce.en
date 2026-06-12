@@ -25,7 +25,7 @@ topic_v2:
 ---
 # [!DNL SaaS Data Export] Guide
 
-[!DNL SaaS data export] synchronizes data between an Adobe Commerce instance and connected Commerce Services. When you add Live Search, Product Recommendations, the Catalog Service, or the [!DNL Adobe Commerce Optimizer Connector] to an Adobe Commerce installation, the [!DNL Data export] extension is installed automatically.
+[!DNL SaaS data export] synchronizes data between an Adobe Commerce instance and connected Commerce Services. When you add Live Search, Product Recommendations, the Catalog Service, or the [!DNL Adobe Commerce Optimizer Connector] to an Adobe Commerce installation, the [!DNL Data Export] extension is installed automatically.
 
 >[!NOTE]
 >
@@ -38,28 +38,18 @@ SaaS data export collects and exports various types of data, referred to as _fee
 - The **Sales Order feed** aggregates orders data including their related entities such as invoices, shipments, credit memos, and so on.
 - The **Multi-Source Inventory feed** aggregates data about inventory stock status items.
 
-SaaS data export is delivered as a PHP extension. It supports several methods to initiate and manage the data synchronization process.
+SaaS data export is delivered as a PHP extension that supports both automated and manual synchronization:
 
-- **Manual synchronization from the Admin or the command line**
+- **Automated synchronization**—Cron jobs keep connected services current using [partial sync](sync-overview.md#partial-sync) and [automatic retry of failed items](sync-overview.md#retry-failed-items-sync), with no action required from the Admin user or system integrator.
 
-  - The [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard){target="_blank"} in the Commerce Admin provides a graphical view of the synchronization status that shows product data successfully synced to commerce services. You can use the dashboard to perform a full resynchronization (_full sync_) of all feeds. However, Adobe recommends only performing a full sync the first time you connect Adobe Commerce to a Commerce service. See [Synchronization process](sync-overview.md).
+- **Manual synchronization**—Run a full resync or resync selected feeds from the Commerce Admin or the Adobe Commerce command-line tool (CLI).
 
-    {{aco-data-sync-verification}}
+- **Monitoring**—Track feed health, status, and delivery from the Commerce Admin dashboards, including the [!UICONTROL Data Feed Sync Status] page and the Data Management dashboard.
 
-  - The [Data Feed Sync Status](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} page provides real-time insights into the health and performance of data export feeds that transfer product and category data from Commerce to external services such as Product Recommendations, Live Search, and Catalog Service, or Adobe Commerce Optimizer.
+For details about synchronization modes and types, see [How synchronization works](sync-overview.md). For steps to monitor, verify, and manually resync data from the Admin or CLI, see [Manage synchronization](data-sync-manage.md).
 
-  - The [Adobe Commerce command-line tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} (CLI) provides commands to synchronize specific feeds and includes additional options to customize feed processing.
+SaaS data export also provides tools to plan and troubleshoot the synchronization process:
 
-- **Automated synchronization with cron jobs**
+- **Scheduling and performance**—Estimate sync time to schedule processing and avoid site disruption, and customize export processing to improve performance. See [Estimate data volume and transmission time](estimate-data-volume-sync-time.md) and [Improve data export performance](customize-export-processing.md).
 
-  - [Partial data synchronization](sync-overview.md#partial-sync)—Cron jobs trigger a partial data sync when a Commerce Admin user updates an entity. The data export process sends only these updates to connected Commerce services. The partial synchronization process is based on the MView mechanism and requires no actions from the Admin user or system integrator.
-
-  - [Automatic retry for synchronization errors](sync-overview.md#retry-failed-items-sync)—Cron jobs trigger automatic retry of the synchronization process when errors occur during the data synchronization process.
-
-- **Export scheduling and performance**
-
-  - Developers and system integrators can estimate the time required for SaaS data export to synchronize data between Adobe Commerce and connected services. This estimation can help schedule data export processing to prevent site disruption. See [Estimate data volume and transmission time](estimate-data-volume-sync-time.md).
-
-  - In cases where the sync needs to happen more quickly, SaaS data export provides customization options to improve export processing performance. See [Improve data export performance](customize-export-processing.md).
-
-- **Track and troubleshoot data export activities**—Use data-export and saas-export logs to review sync status and feed payloads during the synchronization and indexation process. See [Logging and troubleshooting](troubleshooting-logging.md).
+- **Tracking and troubleshooting**—Review sync status and feed payloads using data-export and saas-export logs. See [Review logs and troubleshoot](troubleshooting-logging.md).

@@ -203,8 +203,6 @@ Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Op
 
 ## Verify that the data sync is working {#verify-that-the-data-sync-is-working}
 
-Confirm that catalog data exported from the Commerce Admin was delivered to [!DNL Commerce Optimizer].
-
 {{$include /help/_includes/aco-connector/verify-optimizer-data-sync.md}}
 
 ## Next steps
