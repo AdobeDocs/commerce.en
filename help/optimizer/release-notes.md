@@ -54,7 +54,7 @@ Product recommendation units now support [**price filters**](./merchandising/rec
 
 ### Intelligent Ranking Boost
 
-[Merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost) for search, default product listings, and [category pages](./merchandising/rules/add.md#rule-types) (beta) now include **[!UICONTROL Intelligent Ranking Boost]**. You can adjust how strongly strategies such as **Most viewed** or **Trending** influence product order relative to textual relevance on search and behavioral signals on category listings. The rule preview reflects your setting. The boost is applied at query time, so you do not need a catalog resync when you change it.
+[Merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost) for search, default product listings, and [category pages](./merchandising/rules/add.md#rule-types) now include **[!UICONTROL Intelligent Ranking Boost]**. You can adjust how strongly strategies such as **Most viewed** or **Trending** influence product order relative to textual relevance on search and behavioral signals on category listings. The rule preview reflects your setting. The boost is applied at query time, so you do not need a catalog resync when you change it.
 
 ### API updates
 
@@ -89,7 +89,7 @@ _May 4, 2026_
 
 >[!BEGINSHADEBOX]
 
-### Catalog rules (beta)
+### Catalog rules
 
 [Category rules](./merchandising/rules/add.md) extend merchandising rules so you can target categories and control product order on category pages with the same ranking and actions (pin, boost, bury) as search.
 
@@ -145,7 +145,7 @@ Dynamic bundles now return a computed price range. <!--DATA-7014-->
 
 >[!BEGINSHADEBOX]
 
-### Catalog view for merchandising rules and recommendations (beta)
+### Catalog view for merchandising rules and recommendations
 
 You can now specify a catalog view when you [create recommendation units](./merchandising/recommendations/create.md) or [merchandising rules](./merchandising/rules/add.md).
 
