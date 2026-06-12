@@ -48,8 +48,7 @@ Updates include:
 
 _June 11, 2026_
 
-![Fix](../assets/fix.svg) Use urlPath+storeViewCode as category feed identity <!--MDEE-1382-->
-![Fix](../assets/fix.svg) Staging-aware category url_key change detection <!--MDEE-1382-->
+![Fix](../assets/fix.svg) **Accurate category URLs after scheduled updates**–Fixed an issue where scheduled category URL changes could leave duplicate or stale slugs in connected Commerce services. Category navigation and product category links now show the updated URL after the change is applied.
 
 ### 103.4.27 Release
 
