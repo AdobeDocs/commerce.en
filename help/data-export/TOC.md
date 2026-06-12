@@ -10,8 +10,7 @@ feature: Services
 - [Guide overview](overview.md)
 - Synchronize data with SaaS Data Export {#data-synchronization}
   - [Data synchronization](sync-overview.md)
-  - {hide-from-toc} [View and manage synchronization](data-sync-manage.md)
-  - [Review logs and troubleshoot](troubleshooting-logging.md)
+  - [View and manage synchronization](data-sync-manage.md)
   - [Feed lock mechanism](feed-lock-mechanism.md)
 - Export scheduling and performance {#performance}
   - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
@@ -21,8 +20,10 @@ feature: Services
   - [Add product attribute dynamically](add-attribute-dynamically.md)
   - [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-attributes.md)
 - [Release Notes](release-notes.md)
+- Logs and troubleshooting {#logs-troubleshooting}
+  - [Review logs and troubleshoot](troubleshooting-logging.md)
+  - [Log codes reference](log-codes-reference.md)
 - Reference {#reference}
   - [Manage the SaaS data export extension](manage-extension.md)
   - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
-  - [Log codes reference](log-codes-reference.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

@@ -33,9 +33,9 @@ Most synchronization activities are processed automatically using full sync, par
 
 For Adobe Commerce on cloud, on premises, or Commerce as a Cloud Services deployments, view and manage the synchronization process from these Commerce Admin resources:
 
-- **[Data Sync Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—For Commerce projects that use [!DNL Adobe Commerce Optimizer], check catalog data availability for your storefront from the Data Feed Sync Status page in [!DNL Commerce Optimizer]. This dashboard shows the synchronization status of the data export feeds.
+- **[Data Sync Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—Check the feed export status for deployments connected with [!DNL Live Search], [!DNL Product Recommendations], or [!DNL Catalog Services]. This dashboard shows the feed export status for each feed including any errors encountered. A detail view displays feed export status for individual feed items.
 
-- **[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Admin users can view and track data synchronized to Commerce Services and available to storefront services. This dashboard shows the product synced to Commerce Services.
+- **[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**—Admin users can view and track data successfully exported and synchronized to connected Commerce Services. This dashboard shows the product data synced to Commerce Services.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Confirm that catalog data exported from the Commerce Admin was delivered to conn
 
    Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
 
-   ![Data Feed Sync Status page with feed item status reporting](../aco-connector/assets/data-feed-sync-status.png){width="500" zoomable="yes"}
+   ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png){width="500" zoomable="yes"}
 
    When the sync is running, the feed data shows successfully sent records. Select a feed to view details or troubleshoot sync issues.
 
