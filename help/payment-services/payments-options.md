@@ -59,7 +59,12 @@ See [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} topi
 
 ### [!DNL Apple Pay] button
 
-With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions. In **Safari**, the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details from customers' iOS or macOS devices. In **Chrome, Firefox, or Microsoft Edge**, **express [!DNL Apple Pay]** can display a **QR code** so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow. See [What's new in Wallet and [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} (Apple Developer, WWDC24) for Apple's overview of this flow.
+With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions.
+
+* **Safari (macOS and iOS)** — the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details directly from the customer's Apple device, both at the start of checkout (express) and on the final checkout page.
+* **Chrome, Firefox, and Microsoft Edge** — shoppers can use [!DNL Apple Pay] both during **express checkout** and at the **final checkout step**. On desktop, a **QR code** is displayed so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow.
+
+See [What's new in Wallet and [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} (Apple Developer, WWDC24) for Apple's overview of this flow.
 
 ![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
@@ -73,6 +78,20 @@ Customers can **apply or remove a single cart price rule (coupon) code** during 
 
 See [Settings](configure-admin.md#apple-pay) for more information.
 
+#### Limitations for [!DNL Apple Pay] express
+
+**Promotional codes in the [!DNL Apple Pay] pay sheet**
+
+* Promotional codes entered in the [!DNL Apple Pay] pay sheet apply only to the express flow. They are not applied when [!DNL Apple Pay] is selected on the standard checkout page.
+* Only **one** promotional code can be applied per [!DNL Apple Pay] pay sheet.
+* There is no [!DNL Apple Pay] review page; the shopper completes the purchase directly from the pay sheet.
+* If the shopper closes and reopens the [!DNL Apple Pay] pay sheet, the previously entered promotional code is not remembered — only the discount amount remains reflected in the totals.
+
+**Non-Safari browsers**
+
+* [!DNL Apple Pay] buttons do not render on Android devices in either the express or standard checkout flow.
+* For **virtual products**, the [!DNL Apple Pay] pay sheet still prompts for a shipping address. The address is used as a best-effort estimate of the billing address to calculate totals, because Apple does not provide the billing address until the shopper authorizes the payment.
+
 ### [!DNL Google Pay] button
 
 By integrating [!DNL Google Pay] into your checkout experience, merchants can collect saved payment, contact, and shipping information from the shopper's Google Account, offering a convenient, streamlined checkout across supported browsers and apps.
@@ -83,11 +102,28 @@ By integrating [!DNL Google Pay] into your checkout experience, merchants can co
 
 When enabled, the [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. See [Settings](configure-admin.md) for more information.
 
-[!DNL Google Pay] **express** checkout can show **shipping methods in the Google Pay sheet**, support an optional **review** step (configure **[Skip Review](configure-admin.md#google-pay)**), and include a **promotional code** field during checkout. If your store allows **multiple coupons per order**, shoppers can apply more than one code when that behavior is enabled in your [!DNL Adobe Commerce] configuration.
+[!DNL Google Pay] **express** checkout can show **shipping methods in the Google Pay sheet**, support an optional **review** step (configure **[Skip Review](configure-admin.md#google-pay)**), and include a **promotional code** field during checkout.
 
 >[!NOTE]
 >
 > The [!DNL Google Pay] API can only be used on websites in a secure context. See [Troubleshooting](https://developers.google.com/pay/api/web/support/troubleshooting) documentation for more information.
+
+#### Limitations for [!DNL Google Pay] express
+
+**Shipping in the pay sheet**
+
+* The **shipping-in-sheet** behavior (client-side shipping callback) is available only when **[!UICONTROL Skip Review]** is set to `Yes` in [Google Pay configuration](configure-admin.md#google-pay).
+
+**Promotional codes in the [!DNL Google Pay] pay sheet**
+
+* Promotional codes entered in the [!DNL Google Pay] pay sheet apply only to the express flow. They are not applied when [!DNL Google Pay] is selected on the standard checkout page.
+* Only **one** promotional code can be applied per [!DNL Google Pay] pay sheet, even if your store allows multiple coupons per order. (Multiple coupons remain supported in the standard cart and checkout.)
+* Promotional codes cannot be applied to gift card products.
+* The promotional code field is **not supported on Android devices**.
+* Codes added in the [!DNL Google Pay] pay sheet can only be removed from the pay sheet — not from the Commerce cart page.
+* On Adobe Commerce 2.4.4–2.4.6, the discount line in the [!DNL Google Pay] pay sheet may show no value due to a platform limitation.
+* On Adobe Commerce 2.4.7, the discount value may not appear in the [!DNL Google Pay] pay sheet for some products (primarily downloadable products) due to a platform limitation in the GraphQL response.
+* If an automatic [cart price rule](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) applies (for example, "$50 off when spending over $200"), it is combined with any code the shopper applies in the pay sheet. The totals shown in the [!DNL Google Pay] pay sheet may differ from the order summary as a result.
 
 ### [!DNL PayPal Payment Buttons]
 

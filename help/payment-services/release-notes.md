@@ -121,7 +121,7 @@ _June 15, 2026_
 
 ![New](../assets/new.svg)<!-- PAY-6564 --> Now, [!DNL Google Pay] express checkout can show shipping methods in the Google Pay sheet using client-side shipping callbacks, so shoppers select shipping before they confirm payment. Merchants can show or hide a separate Google Pay review step using **[!UICONTROL Skip Review]** in [Google Pay configuration](configure-admin.md#google-pay). When the review step is skipped, shipping options stay in the sheet when the wallet address or shipping method changes.
 
-![New](../assets/new.svg)<!-- PAY-6565 --> Now, shoppers can apply promotional codes in the [!DNL Google Pay] express pay sheet, whether or not the Google Pay review step appears. When your store allows multiple coupons per order, shoppers can apply more than one code in this flow. See [Payment options](payments-options.md#google-pay-button) for more information.
+![New](../assets/new.svg)<!-- PAY-6565 --> Now, shoppers can apply a promotional code in the [!DNL Google Pay] express pay sheet, whether or not the Google Pay review step appears. Only one code can be applied per pay sheet, even on stores that allow multiple coupons per order. See [Payment options](payments-options.md#google-pay-button) for more information.
 
 ![New](../assets/new.svg)<!-- PAY-6567 --> Now, [!DNL Apple Pay] express checkout is available in Chrome, Firefox, and Microsoft Edge, in addition to Safari. On desktop, shoppers can scan a QR code with an iPhone running iOS 18 or later to complete payment in the Apple Pay sheet. Express placements (for example, on the product detail page) must be enabled in [Apple Pay configuration](configure-admin.md#apple-pay).
 
@@ -129,7 +129,13 @@ _June 15, 2026_
 
 ![New](../assets/new.svg)<!-- PAY-6151 --> Now, [!DNL Apple Pay] on Luma product detail and checkout pages renders through the Payments SDK so the experience matches the latest PayPal integration used for express checkout.
 
+![New](../assets/new.svg)<!-- PAY-6659 --> [!DNL PayPal] checkout is updated to the latest Payments JavaScript SDK for [!DNL Payment Services], improving maintainability and simplifying storefront updates.
+
+![New](../assets/new.svg)<!-- PAY-6611 --> Now, the Magento order detail page displays additional [!DNL PayPal] and card payment information for each transaction.
+
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6585 --> Fixed an issue where the [!DNL Apple Pay] express pay sheet displayed a **[!UICONTROL Please select a state/region]** error for UK and European addresses where state/region is not a required field.
 
 ## v2.14.0
 

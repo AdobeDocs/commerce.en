@@ -182,7 +182,7 @@ These optional settings apply to the customer input fields of your [!UICONTROL F
 
 ## [!UICONTROL Apple Pay]
 
-With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In **Safari**, the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device. In **Chrome, Firefox, or Microsoft Edge**, **express [!DNL Apple Pay]** can use a QR code and an **iPhone** (iOS 18 or later) so the shopper finishes payment in the Apple Pay sheet; ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
+With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In **Safari** (macOS and iOS), the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device, both at the start of checkout (express) and on the final checkout page. In **Chrome, Firefox, or Microsoft Edge**, [!DNL Apple Pay] is available both during **express checkout** and at the **final checkout step**; on desktop, a QR code and an **iPhone** (iOS 18 or later) allow the shopper to finish payment in the Apple Pay sheet. Ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
 
 >[!IMPORTANT]
 >
