@@ -95,4 +95,4 @@ The **Synced catalog products** table displays the following information.
 
 ## Resolve catalog sync issues {#resolvesync}
 
-See [Logs and troubleshooting](../data-export/troubleshooting-logging.md#troubleshooting) in the _SaaS Data Export Guide_.
+See [Troubleshooting](../data-export/troubleshooting/logging.md#troubleshooting) in the _SaaS Data Export Guide_.

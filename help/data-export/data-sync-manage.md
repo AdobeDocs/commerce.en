@@ -85,7 +85,7 @@ Start with export, then confirm delivery.
 
 >[!TIP]
 >
->If you have any issues with the data sync, see [Review logs and troubleshoot](troubleshooting-logging.md).
+>If you have any issues with the data sync, see [Review logs and troubleshoot](troubleshooting/logging.md).
 
 ## Manually resync data
 

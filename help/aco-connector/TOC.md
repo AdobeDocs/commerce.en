@@ -14,7 +14,9 @@ feature: Integration, Configuration
 - [Connector sync pipeline](connector-sync-pipeline.md)
 - [Manage synchronization](data-sync-manage.md)
 - [Headless storefront integration](headless-storefront.md)
-- [Troubleshooting](troubleshooting.md)
+- Troubleshooting {#troubleshooting}
+  - [Overview](troubleshooting.md)
+  - [Symptoms and resolutions](troubleshooting/symptoms-and-resolutions.md)
 - Reference {#reference}
   - [Connector modules and feed endpoints](./reference/connector-reference.md)
   - [Field mapping for connector feeds](./reference/field-mapping.md)

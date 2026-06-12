@@ -53,19 +53,22 @@ The following diagram shows data synchronization from [!DNL Adobe Commerce] to [
 
 When catalog data changes in [!DNL Adobe Commerce], synchronization moves through these stages.
 
-1. **Entity Change Detection** — (every 1 min) A cron job (`indexer_reindex_all_invalid`) detects [!DNL Adobe Commerce] entity changes and triggers the [!DNL SaaS Data Export], which assembles feed items and tracks their status.
+1. **Entity Change Detection** — (every 1 min) A cron job (`indexer_reindex_all_invalid`) detects [!DNL Adobe Commerce] entity changes and triggers the [!DNL SaaS Data Export], which assembles feed items.
 1. **Transformation** — The [!DNL Commerce Optimizer Connector] picks up the assembled feeds, maps [!DNL Adobe Commerce] entities and scopes to formats required by the [!DNL Commerce Optimizer] API, and prepares the payload for transmission.
 1. **Transmission** — The transformed data is sent via HTTP POST (`/v1/catalog/<feed name>`) through the [!DNL Adobe I/O Gateway] to [!DNL Commerce Optimizer], which validates and persists the incoming feeds.
+1. **Persist results** — Persist API response status into the [feed tables](reference/connector-reference.md#supported-feeds).
 1. **Failure Retry** (every 5 min) — A separate cron job (`*_resend_failed_items`) detects any failed feed items and re-submits them through the same pipeline.
 
 ### Scheduled cron jobs
 
 Two cron groups automate the pipeline on a fixed schedule.
 
-| Cron group | Purpose | Schedule |
-| ---------- | ------- | -------- |
-| `indexer_reindex_all_invalid`  | Listens for entity updates, assembles feed items, persists feed status | Every 1 minute |
-| `*_resend_failed_items`| Checks for failed feed items and resubmits them to [!DNL Commerce Optimizer] | Every 5 minutes |
+| Cron group                          | Cron Job                      | Purpose                                                                      | Schedule       |
+|-------------------------------------|-------------------------------|------------------------------------------------------------------------------|----------------|
+| `index`                             | `indexer_update_all_views` | Listens for entity updates, assembles feed items, persists feed status       | Every 1 minute |
+| `index`                             | `indexer_reindex_all_invalid` | Perform full resync for feed indexes marked as "Reindex required"            | Every 1 minute |
+| `resync_failed_feeds_data_exporter` | `*_resend_failed_items`       | Checks for failed feed items and resubmits them to [!DNL Commerce Optimizer] | Every 5 minutes |
+| `commerce_data_export`              | `cleanup_deleted_feed_items`  | Cleans up synced deleted feed items past the retention period (7 days)       | Every day at 2:00 AM|
 
 The **[!DNL SaaS Data Export]** extension handles feed collection and status tracking. The connector layer maps entities and scopes to the format required by the [!DNL Commerce Optimizer] API and submits them via `POST /v1/catalog/<feed name>`.
 

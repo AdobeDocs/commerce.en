@@ -238,5 +238,5 @@ For further details, see the [Inventory Management Guide](https://experienceleag
 
 The module logs export errors and warnings to the standard Commerce logging system. If you encounter issues during product synchronization, check the data export logs.
 
-For details, see [Review logs and troubleshoot](troubleshooting-logging.md).
+For details, see [Review logs and troubleshoot](troubleshooting/logging.md).
 
