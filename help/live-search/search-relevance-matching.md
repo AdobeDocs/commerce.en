@@ -17,19 +17,19 @@ hide: true
 
 At a high level, relevance uses three layers of matching strength (in addition to other scoring factors described below):
 
-1. **Exact and near phrase match** — The full search phrase matches catalog text, or a **near** match after normalization such as stemming (for example, singular and plural forms resolve to the same root). These matches receive the **highest** relevance boost.
+1. **Exact and near phrase match** — The full search phrase matches catalog text, or a near match after normalization such as stemming (for example, singular and plural forms resolve to the same root). These matches receive the highest relevance boost.
 
-1. **All words in the same field** — Every word in the query appears in **one** searchable attribute (for example, both `red` and `pants` in the product **name**). This layer receives the **next** highest boost.
+1. **All words in the same field** — Every word in the query appears in one searchable attribute (for example, both `red` and `pants` in the product **name**). This layer receives the next highest boost.
 
-1. **Words across different fields** — Query terms appear in **different** searchable attributes (for example, `red` in **color** and `pants` in **name**). This is the broadest match layer and receives the **lowest** relevance boost. It can also match partial queries used by autocomplete—for example, when a shopper types `red pan` before finishing `pants`. For German catalogs, see [Decompounding (German)](#decompounding-german).
+1. **Words across different fields** — Query terms appear in different searchable attributes (for example, `red` in **color** and `pants` in **name**). This is the broadest match layer and receives the lowest relevance boost. It can also match partial queries used by autocomplete—for example, when a shopper types `red pan` before finishing `pants`. For German catalogs, see [Decompounding (German)](#decompounding-german).
 
 ### Example
 
-For a query like `red pants`:
+For a query such as `red pants`:
 
-- Products with **red pants** (or a stemmed near variant) in catalog text rank **first**.
-- Next are products where **red** and **pants** both appear in the **same** field (for example, both in **name**).
-- Then products where **red** and **pants** sit in **different** fields (for example, **color** and **name**).
+- Products with the exact phrase **red pants** (or a close variant) rank **first**.
+- Products where **red** and **pants** appear in the **same field** (for example, **name**) rank next.
+- Products where the terms appear in **different fields** (for example, **color** and **name**) follow.
 
 ### Decompounding (German) {#decompounding-german}
 
@@ -55,7 +55,7 @@ Decompounding is rule-based and can add edge cases at this layer. If a subword i
 
 ## What else affects ranking
 
-Relevance is not determined by phrase matching alone. Several signals **interact**:
+Relevance is not determined by phrase matching alone. Several signals interact:
 
 - Boost from **exact / near** phrase matching
 - Boost when **all query terms** appear in the **same** field
@@ -63,11 +63,11 @@ Relevance is not determined by phrase matching alone. Several signals **interact
 - **[Search weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** on each attribute and other textual relevance factors (for example, how often terms occur and name or description length). In the [!DNL Adobe Commerce] Admin, configure **Use in Search** and **Search Weight** for product attributes.
 - **[Search merchandising rules](rules.md)** such as pin, boost, and bury
 
-Because of this interplay, a product that matches only through the **broadest** layer can sometimes rank above a product with a tighter phrase match — for example, when **search weights** or term frequency in a high-weight field outweighs a weaker phrase match elsewhere.
+Because these signals interact, a product that matches only at the broadest level can sometimes rank above a tighter phrase match—for example, when **search weights** or term frequency in a high-weight field outweigh a weaker phrase match elsewhere.
 
-**Example of weight interplay:** If **red pants** appears as a phrase in **description** with **search weight = 1**, but **red** and **pants** appear separately in **name** and **color** with **search weight = 10**, the product with the phrase in **description** might **not** outrank the split match, depending on the full score.
+**Example:** If **red pants** appears as a phrase in **description** with **search weight = 1**, but **red** and **pants** appear separately in **name** and **color** with **search weight = 10**, the phrase match in **description** might not outrank the split match, depending on the overall score.
 
-Manual **pin** and **bury** rules are designed to remain strong; **boost** rules may need tuning if you rely on them to overcome the new phrase and same-field boosts. Validate important queries after you change weights or rules.
+Manual **pin** and **bury** rules remain strong; **boost** rules may require tuning to overcome new phrase and same-field boosts. Validate important queries after changing weights or rules.
 
 ### Search weight 1 and combined indexing
 

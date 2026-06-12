@@ -46,7 +46,7 @@ To construct a dynamic query, the search service needs to know which attributes 
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-For how searchable attributes and weights interact with **exact**, **near**, same-field, and cross-field matching at query time, see [Search matching and ranking](search-relevance-matching.md).
+To understand how searchable attributes and weights interact with **exact**, **near**, same-field, and cross-field matching at query time, see [Search matching and ranking](search-relevance-matching.md).
 
 ![[!DNL Live Search] indexing client search diagram](assets/indexing-pipeline.svg)
 
