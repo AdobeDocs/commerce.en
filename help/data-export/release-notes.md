@@ -44,6 +44,12 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.28 Release
+
+_June 11, 2026_
+
+![Fix](../assets/fix.svg) **Accurate category URLs after scheduled updates**–Fixed an issue where scheduled category URL changes could leave duplicate or stale slugs in connected Commerce services. Category navigation and product category links now show the updated URL after the change is applied.
+
 ### 103.4.27 Release
 
 _June 4, 2026_
