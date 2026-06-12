@@ -38,9 +38,9 @@ _June 15, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1242 --> Fixed missing **[!UICONTROL OBSERVABILITY]** section header in the Admin **[!UICONTROL System]** flyout when the AEM Assets integration is enabled.
+![Fixed issue](../assets/fix.svg) Fixed an issue where the **[!UICONTROL OBSERVABILITY]** section header was missing from the Admin **[!UICONTROL System]** menu when the AEM Assets integration was enabled, leaving the **[!UICONTROL Subscription List]** link displayed without its heading. <!--ACAP-1302 --> 
 
-![Fixed issue](../assets/fix.svg)<!-- Issues ACAP-1302 --> Fixed an error when saving the AEM Assets integration configuration on instances where Dynamic Media Open API is not enabled.
+![Fixed issue](../assets/fix.svg) Fixed an issue where saving the AEM Assets integration configuration displayed a raw PHP warning instead of a clear message on instances where Dynamic Media Open API is not enabled. A clear, generic error message now appears. <!-- ACAP-1298 -->
 
 ## v1.4.0
 
