@@ -41,6 +41,8 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 
 ## Products
 
+The `products` feed sends data to [Products endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
+
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | ----------------------------------------------- | -------------- | ------- |
 | `sku` | `sku` | |
@@ -66,6 +68,9 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 | `bundle options`                              | `bundles[]` | `label`→`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; default SKUs from `isDefault`; items include `sku`, `qty`, `userDefinedQty` (`qtyMutability`) |
 
 ## Product attributes metadata
+
+The `productAttributes` feed sends data to [Metadata endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
+
 
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | --------------- | -------------- | ------- |
@@ -97,6 +102,8 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 
 ## Price books
 
+The `priceBooks` feed sends data to [Price books endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
+
 Unlike the other connector feeds, the `priceBooks` feed is not collected by a [!DNL SaaS Data Export] indexer in [!DNL Adobe Commerce]. The connector generates this feed from the website and customer group configuration in the Admin.
 
 One **base price book** is created per website, plus one **child price book** per website-customer group pair.
@@ -117,6 +124,8 @@ The prices feed uses the same formula when resolving which price book a price en
 
 ## Prices
 
+The `prices` feed sends data to [Prices endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
@@ -126,6 +135,8 @@ The prices feed uses the same formula when resolving which price book a price en
 | `tierPrices[]` | `tierPrices[]` | |
 
 ## Categories
+
+The `categories` feed sends data to [Categories endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
 
