@@ -41,13 +41,13 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _June 11, 2026_
 
-![Fix](../assets/fix.svg) **PHP 8.5 compatibility** – The [!DNL Adobe Commerce Optimizer Connector] now supports PHP 8.5, so you can upgrade your [!DNL Adobe Commerce] environment without blocking connector installation or catalog synchronization. <!--MDEE-1388-->
+![Fix](../assets/fix.svg) **PHP 8.5 compatibility** – The [!DNL Adobe Commerce Optimizer Connector] now supports PHP 8.5, so you can upgrade your [!DNL Adobe Commerce] environment without disrupting connector functionality or catalog synchronization. <!--MDEE-1388-->
 
-![Fix](../assets/fix.svg) **Price books update after currency changes** – When you change the base store currency, affected price books are now queued for export again so that [!DNL Adobe Commerce Optimizer] displays updated prices in catalog views and storefront experiences. <!--MDEE-1384-->
+![Fix](../assets/fix.svg) **Price books update after currency changes** – Updated prices are automatically reflected in Adobe Commerce Optimizer after currency changes.. <!--MDEE-1384-->
 
-![Fix](../assets/fix.svg) **Navigation respects disabled or hidden parent categories** – When you disable a top-level category or exclude it from the navigation menu, child categories no longer export category family associations that could surface those products in [!DNL Adobe Commerce Optimizer] navigation. <!--MDEE-1385-->
+![Fix](../assets/fix.svg) **Navigation respects disabled or hidden parent categories** – Products from disabled or hidden category hierarchies no longer appear unexpectedly in navigation experiences.<!--MDEE-1385-->
 
-![Fix](../assets/fix.svg) **Consistent category URLs after staging updates** – Fixed an issue where category URL paths could become out of sync in [!DNL Adobe Commerce Optimizer] after scheduled catalog updates. Category navigation now reflects the correct URLs when staging changes are applied. <!--MDEE-1395-->
+![Fix](../assets/fix.svg) **Consistent category URLs after staging updates** – Category links and navigation remain accurate after staging updates are applied. <!--MDEE-1395-->
 
 ### 1.0.13 Release
 
