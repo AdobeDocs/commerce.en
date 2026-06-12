@@ -34,7 +34,7 @@ This message appears when a cron-triggered partial sync attempts to run while a 
 
 >[!NOTE]
 >
->For general information about log format and operation types recorded in `commerce-data-export.log`, see [Review logs and troubleshoot](troubleshooting-logging.md).
+>For general information about log format and operation types recorded in `commerce-data-export.log`, see [Review logs and troubleshoot](troubleshooting/logging.md).
 
 ## More help on this topic
 

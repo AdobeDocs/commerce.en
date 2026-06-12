@@ -202,4 +202,4 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## Troubleshooting
 
-If you do not see expected data in connected Commerce Services, troubleshoot issues by checking data export error logs and using the `saas:resync` command with environment variables to review payloads and profiler data. See [Review logs and troubleshoot](troubleshooting-logging.md).
+If you do not see expected data in connected Commerce Services, troubleshoot issues by checking data export error logs and using the `saas:resync` command with environment variables to review payloads and profiler data. See [Review logs and troubleshoot](troubleshooting/logging.md).

@@ -58,23 +58,6 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 - Check that the products are enabled and set to a visibility that includes catalog listings.
 - Review per-item error details for the catalog feed in **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
 
-## Configurable or bundle product is enabled in [!DNL Adobe Commerce] but disabled or missing in [!DNL Adobe Commerce Optimizer]
-
-**Symptom:** A configurable or bundle product has **Enabled** status in [!DNL Adobe Commerce] but is either not returned in the storefront or appears with a **Disabled** status in [!DNL Adobe Commerce Optimizer].
-
-**Likely cause:** The effective status of composite products depends on the status of their child products, not just the parent product status. [!DNL Adobe Commerce Optimizer] reflects this computed status:
-
-- **Configurable products** - at least one product variant must be enabled.
-- **Bundle products** - at least one product must be enabled for each required bundle option.
-
-If these conditions are not met, the parent product is treated as disabled even if its own status is set to **Enabled**.
-
-**Resolution:**
-
-- For configurable products, verify that at least one associated simple product variant is enabled and assigned to the correct website and store view.
-- For bundle products, check that each required bundle option has at least one enabled child product. A required option with all disabled children causes the entire bundle to be treated as disabled.
-- After enabling the appropriate child products, trigger a resync or wait for the next scheduled sync, then confirm the updated status in [!DNL Adobe Commerce Optimizer].
-
 ## Prices are incorrect or missing in [!DNL Adobe Commerce Optimizer]
 
 **Symptom:** Products appear in [!DNL Adobe Commerce Optimizer] but display no price returned with [products GraphQL query](https://developer.adobe.com/commerce/services/reference/graphql/#products), or the price does not match what is configured in [!DNL Adobe Commerce] w
@@ -86,3 +69,6 @@ The price book feed uses a scope that maps to a specific website and customer gr
 - Verify that the website is configured for sync in the connector's export configuration. See [Customize the data export configuration](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirm that the price book ID used in [!DNL Commerce Optimizer] present in [catalog view](../../optimizer/setup/catalog-view.md) configuration used to perform the products query.
 
+# Symptoms and resolutions for the common issues with the [!DNL SaaS Data Export]
+
+For issues related to the underlying [!DNL SaaS Data Export] that may affect the connector see [Symptoms and resolutions for the SaaS Data Export](../../data-export/troubleshooting/symptoms-and-resolutions.md).

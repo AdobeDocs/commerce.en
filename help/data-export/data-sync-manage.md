@@ -87,7 +87,7 @@ Confirm that catalog data exported from the Commerce Admin was delivered to [!DN
 
 >[!TIP]
 >
->If you have any issues with the data sync, see [Review logs and troubleshoot](troubleshooting-logging.md).
+>If you have any issues with the data sync, see [Review logs and troubleshoot](troubleshooting/logging.md).
 
 ## Manually resync data
 
