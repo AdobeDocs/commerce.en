@@ -37,7 +37,11 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
 
 ### Update a module to a specific version
 
-You can update any of the installed commerce data export modules by using Composer. For example, you can update a module to a specified version, and also update any required dependencies.
+You can update any of the installed commerce data export modules by using Composer. Review the [release notes](release-notes.md) to determine whether a fix you need is available, then upgrade to that specific version and any required dependencies.
+
+>[!NOTE]
+>
+>If you update to the latest version of [Live Search](/help/live-search/overview.md), [Catalog Service](/help/catalog-service/overview.md), or [Product Recommendations](/help/product-recommendations/overview.md), you also get the latest version of the data export extension. The data export metapackage is a dependency of the Composer packages for these services.
 
 1. Log into the Commerce application server.
 
