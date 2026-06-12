@@ -81,7 +81,6 @@ Confirm that catalog data exported from the Commerce Admin was delivered to conn
 
 Confirm that catalog data exported from the Commerce Admin was delivered to [!DNL Commerce Optimizer].
 
-
 {{$include /help/_includes/aco-connector/verify-optimizer-data-sync.md}}
 
 >[!ENDTABS]
