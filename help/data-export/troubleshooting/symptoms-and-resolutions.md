@@ -52,3 +52,23 @@ If these conditions are not met, the parent product is treated as disabled even 
 - For configurable products, verify that at least one associated simple product variant is enabled and assigned to the correct website and store view.
 - For bundle products, check that each required bundle option has at least one enabled child product. A required option with all disabled children causes the entire bundle to be treated as disabled.
 - After enabling the appropriate child products, trigger a resync or wait for the next scheduled sync, then confirm the updated status in [!DNL Adobe Commerce Optimizer].
+
+## Prices not updated after catalog price rule activation
+
+**Symptom:** After activating a catalog price rule using the Scheduled Update feature, prices are not updated. The `commerce-data-export.log` shows `synced: 0` for `prices` feed after scheduled updates are applied.
+
+**Likely cause:** A race condition can occur between cron groups when Scheduled Updates are used for catalog price rules. The `catalog_data_exporter_product_prices` indexer may run before its dependency, the `catalogrule_product` index, has finished rebuilding. As a result, the price exporter reads stale data and exports no changes.
+
+**Resolution:**
+
+Issue will be fixed in `Adobe Commerce` following releases. In the meantime, configure both cron groups to run sequentially to eliminate the race condition:
+
+1. Go to **Stores** > **Configuration** > **Advanced** > **System** > **Cron (Scheduled Tasks)**.
+1. Set **Use Separate Process** to **No** for both:
+   - Cron configuration options for group: **index**
+   - Cron configuration options for group: **staging**
+1. Flush the configuration cache after saving.
+
+>[!NOTE]
+>
+>With both groups running in-process and sequentially, a slow full reindex blocks staging from running until it finishes. On large catalogs, this may delay staging updates.
