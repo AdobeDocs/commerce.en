@@ -38,10 +38,6 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
-   >[!IMPORTANT]
-   >
-   >This feature is currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta participants will need to recreate any existing recommendation units to take advantage of the new catalog view scope.
-
 1. Click **Create recommendation**.
 
    The recommendation you create will be available in the catalog view you previously selected.
