@@ -44,12 +44,14 @@ recommendations: noDisplay
       - [Types](./merchandising/synonyms/type.md)
       - [Best practices](./merchandising/synonyms/best-practice.md)
 - Store setup {#setup}
+   - [Catalog sources](./setup/catalog-source.md)
    - [Catalog views](./setup/catalog-view.md)
    - [Catalog layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price books](./setup/pricebooks.md)
    - [Product visuals](./setup/product-visuals.md)
    - [Data sync](./setup/data-sync.md)
+   - [Semantic search](./setup/semantic-search.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)
 - [Storefront](storefront.md)

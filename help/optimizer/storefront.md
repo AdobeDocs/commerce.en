@@ -163,7 +163,7 @@ Test your storefront to ensure it's properly connected to your [!DNL Adobe Comme
 
 1. **Success criteria**: You should see the storefront homepage with boilerplate content.
 
-   ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
+   ![[!DNL Adobe Commerce Optimizer storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
 ### Step 2: Test product detail pages
 

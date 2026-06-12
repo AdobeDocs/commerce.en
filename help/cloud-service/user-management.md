@@ -6,7 +6,7 @@ role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
-TQID: https://experienceleague.adobe.com/8cIklZrl3rmXMD4Hf6oTU5bBuseh3ianLw2IMujps-E
+TQID: 'https://experienceleague.adobe.com/kaQ6N23X6S9zNjDpcq5BsDJnUpke3mjPpzxElMGwqL0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce

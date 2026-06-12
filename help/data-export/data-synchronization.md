@@ -48,6 +48,10 @@ The main components of the SaaS data export flow include:
 
 >[!NOTE]
 >
+>For [!DNL Adobe Commerce Optimizer Connector] deployments, [!DNL SaaS Data Export] handles entity change detection and feed assembly. The connector then maps feeds to the [!DNL Catalog Data Ingestion API] format and submits them to [!DNL Adobe Commerce Optimizer]. See [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md) for scope control, submission, and error handling.
+
+>[!NOTE]
+>
 >To ensure smooth scheduling and avoid disruptions in site operations, Adobe recommends estimating data volume and sync time before starting any data feed synchronization. This estimation is important when planning for initial syncs or large scale catalog updates, such as mass price changes. For details, see [Estimate data volume and transmission time for data sync](estimate-data-volume-sync-time.md)
 
 ## Synchronization modes
@@ -83,6 +87,8 @@ The data export process uses the following cron jobs to automate the partial syn
 
 These jobs run every minute.
 
+The same partial sync cron jobs run for [!DNL Adobe Commerce Optimizer Connector] feeds. For connector-specific submission and error handling, see [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md).
+
 For partial sync to work, the Commerce application requires the following configuration:
 
 - [Task scheduling is enabled via cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
@@ -110,7 +116,7 @@ Most synchronization activities are processed automatically based on the applica
 
 >[!NOTE]
 >
->The Data Management dashboard is available only if you have Live Search, Product Recommendations, or the Catalog Service installed. The Data Feed Sync Status dashboard is available if you have these services, or the  [Adobe Commerce Optimizer Connector ](../aco-connector/overview.md)  installed.
+>The Data Management dashboard is available only if you have Live Search, Product Recommendations, or the Catalog Service installed. The Data Feed Sync Status dashboard is available if you have these services, or the [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) installed. For Optimizer connector pipeline behavior, including scope control and submission errors, see [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md).
 
 ### Verify Commerce application configuration
 
