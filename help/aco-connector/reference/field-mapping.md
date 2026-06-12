@@ -41,7 +41,7 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 
 ## Products
 
-The `products` feed sends data to [Products endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
+The `products` feed sends data to the [Products endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
 
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | ----------------------------------------------- | -------------- | ------- |
@@ -69,7 +69,7 @@ The `products` feed sends data to [Products endpoint](https://developer.adobe.co
 
 ## Product attributes metadata
 
-The `productAttributes` feed sends data to [Metadata endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
+The `productAttributes` feed sends data to the [Metadata endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
 
 
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
@@ -102,7 +102,7 @@ The `productAttributes` feed sends data to [Metadata endpoint](https://developer
 
 ## Price books
 
-The `priceBooks` feed sends data to [Price books endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
+The `priceBooks` feed sends data to the [Price books endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
 
 Unlike the other connector feeds, the `priceBooks` feed is not collected by a [!DNL SaaS Data Export] indexer in [!DNL Adobe Commerce]. The connector generates this feed from the website and customer group configuration in the Admin.
 
@@ -124,7 +124,7 @@ The prices feed uses the same formula when resolving which price book a price en
 
 ## Prices
 
-The `prices` feed sends data to [Prices endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+The `prices` feed sends data to the [Prices endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
 
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
@@ -136,7 +136,7 @@ The `prices` feed sends data to [Prices endpoint](https://developer.adobe.com/co
 
 ## Categories
 
-The `categories` feed sends data to [Categories endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
+The `categories` feed sends data to the [Categories endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
 
