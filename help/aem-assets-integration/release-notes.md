@@ -32,13 +32,23 @@ _February 11, 2025_
 
 +++
 
+## v1.4.1
+
+_June 15, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1242 --> Fixed missing **[!UICONTROL OBSERVABILITY]** section header in the Admin **[!UICONTROL System]** flyout when the AEM Assets integration is enabled.
+
+![Fixed issue](../assets/fix.svg)<!-- Issues ACAP-1302 --> Fixed an error when saving the AEM Assets integration configuration on instances where Dynamic Media Open API is not enabled.
+
 ## v1.4.0
 
 _June 12, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-1246 --> Improved overall stability and performance.
+![New issue](../assets/new.svg)<!-- Issue ACAP-1101 --> Improved overall stability and events processing performance through batched asset update calls.
 
 ## v1.3.7
 
