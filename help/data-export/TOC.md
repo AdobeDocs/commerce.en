@@ -8,7 +8,8 @@ feature: Services
 # [!DNL SaaS Data Export Guide] for Adobe Commerce {#saas-data-export}
 
 - [Guide overview](overview.md)
-- [Data synchronization](data-synchronization.md)
+- Synchronize data with SaaS Data Export {#data-synchronization}
+  - [Data synchronization](sync-overview.md)
   - {hide-from-toc} [View and manage synchronization](data-sync-manage.md)
   - [Review logs and troubleshoot](troubleshooting-logging.md)
   - [Feed lock mechanism](feed-lock-mechanism.md)

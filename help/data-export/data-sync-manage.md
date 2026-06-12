@@ -25,7 +25,7 @@ index: no
 ---
 # View and manage the synchronization process
 
-Most synchronization activities are processed automatically using full sync, partial sync, or retry failed items sync. See [Synchronization types](data-synchronization.md#synchronization-types) for details on when each type runs. SaaS data export also provides tools to monitor, manage, and troubleshoot the process. You can view the synchronization status and manage the data sync process using the dashboards for your deployment.
+Most synchronization activities are processed automatically using full sync, partial sync, or retry failed items sync. See [Synchronization types](sync-overview.md#synchronization-types) for details on when each type runs. SaaS data export also provides tools to monitor, manage, and troubleshoot the process. You can view the synchronization status and manage the data sync process using the dashboards for your deployment.
 
 >[!BEGINTABS]
 

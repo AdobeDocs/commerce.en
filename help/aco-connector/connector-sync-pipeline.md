@@ -72,7 +72,7 @@ The **[!DNL SaaS Data Export]** extension handles feed collection and status tra
 #### Requirements
 
 - [Commerce cron must be running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
-- Feed indexers must use **[!UICONTROL Update by Schedule]** mode. See [Verify Commerce application configuration](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
+- Feed indexers must use **[!UICONTROL Update by Schedule]** mode. See [Verify Commerce application configuration](../data-export/sync-overview.md#verify-commerce-application-configuration){target="_blank"}.
 
 ## Scope-based sync control
 

@@ -25,7 +25,7 @@ The following diagram shows the indexing data flow to SaaS services when Commerc
 
 ![Default data flow](assets/old_way.png)
 
-With SaaS price indexing enabled, the data flow changes. Price indexing is performed using [Commerce SaaS data export](../data-export/data-synchronization.md).
+With SaaS price indexing enabled, the data flow changes. Price indexing is performed using [Commerce SaaS data export](../data-export/sync-overview.md).
 
 ![SaaS price indexing data flow](assets/new_way.png)
 

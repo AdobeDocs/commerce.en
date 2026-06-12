@@ -179,7 +179,7 @@ bin/magento saas:resync --feed products
 
 Resubmits existing catalog data to [!DNL Commerce Services] without reindexing. Not supported for product-related feeds.
 
-Behavior varies by [export mode](data-synchronization.md#synchronization-modes):
+Behavior varies by [export mode](sync-overview.md#synchronization-modes):
 
 - Legacy mode: Resubmits all data without truncating.
 - Immediate mode: Option is ignored, only syncs updates/failures.

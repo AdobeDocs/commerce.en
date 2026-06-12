@@ -38,6 +38,6 @@ This message appears when a cron-triggered partial sync attempts to run while a 
 
 ## More help on this topic
 
-- [Synchronize data with SaaS Data Export](data-synchronization.md)
+- [Synchronize data with SaaS Data Export](sync-overview.md)
 - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
 - [Configure the lock provider](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

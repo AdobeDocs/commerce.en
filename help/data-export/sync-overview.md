@@ -35,7 +35,6 @@ When you install a Commerce Service that requires data export such as Catalog Se
 
 SaaS data export moves product data from an Adobe Commerce instance to the Commerce Services platform on an ongoing basis to keep the data up to date. For example, Product Recommendations requires current catalog information to accurately return recommendations with correct names, pricing, and availability. For details on monitoring the synchronization process, see [View and manage the synchronization process](data-sync-manage.md).
 
-
 The following diagram shows the SaaS data export flow.
 
 ![SaaS data export collection and synchronization flow for Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
@@ -74,7 +73,7 @@ After connecting an Adobe Commerce instance to Commerce Service, perform a full 
 >
 >Full sync is mainly for the onboarding phase. Avoid regular use to prevent database overload. After the initial synchronization, ongoing changes are synched automatically using partial sync.
 
-### Partial sync
+### Partial sync {#partial-sync}
 
 With partial sync, SaaS data export automatically sends updates from the Commerce application, such as product name changes or price updates, to connected commerce services.
 
@@ -97,14 +96,14 @@ For partial sync to work, the Commerce application requires the following config
 
   In SaaS data export version 103.1.0 and later, `Update by Schedule` mode is enabled by default. You can verify index configuration on the server using the Commerce CLI command, `bin/magento indexer:show-mode | grep -i feed`
 
-### Retry failed items sync
+### Retry failed items sync {#retry-failed-items-sync}
 
 The Retry failed items sync uses a separate process to resend items that failed to sync due to errors during the synchronization process, for example an application error, network disruption, or SaaS service error. Implementation for this sync is also based on cron jobs.
 
 - `resync_failed_feeds_data_exporter` cron group jobs:
     - The `<feed name>_feed_resend_failed_feeds_items` job resends items that failed to sync, for example `products_feed_resend_failed_items`.
 
-### Verify Commerce application configuration
+### Verify Commerce application configuration {#verify-commerce-application-configuration}
 
 Partial sync and Retry failed items sync work only if the Commerce instance has been configured correctly. Typically, the configuration is completed when setting up the Commerce Service. If the data export is not working correctly, check the following configuration.
 
