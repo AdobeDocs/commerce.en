@@ -50,10 +50,6 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 | Targeted connector feed resync with operational control | **Commerce CLI** | Run `saas:resync` from the Adobe Commerce instance for connector feeds. See [Sync feeds using the Commerce CLI](../data-export/data-export-cli-commands.md) and [Supported feeds](reference/connector-reference.md#supported-feeds). |
 | Force a full repopulation for a catalog source scope | **Disable and re-enable scope** | Clear and reselect the data sync checkbox for a store view in **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** to trigger a full repopulation. See [Customize the Commerce scopes export configuration](get-started.md#customize-the-commerce-scopes-export-configuration). |
 
->[!NOTE]
->
->The [!UICONTROL Data Sync] page in [!DNL Commerce Optimizer] does not provide a resync-selected-items control. For connector-backed implementations, use the Commerce Admin [!UICONTROL Data Feed Sync Status] page and/or the Commerce CLI. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working).
-
 >[!MORELIKETHIS]
 >
 > - [Connector sync pipeline](connector-sync-pipeline.md) — Learn how automated synchronization, cron schedules, and error handling work

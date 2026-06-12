@@ -57,7 +57,7 @@ The [!DNL Adobe Commerce Optimizer Connector] is a native, first-party integrati
 | **Faster time to value with [!DNL Adobe Commerce Optimizer]** | Turn on AI search, recommendations, and headless storefronts on top of your existing [!DNL Adobe Commerce] deployment. |
 | **Aligned with Commerce scopes** | Automatically maps websites, store views, and customer groups into [!DNL Adobe Commerce Optimizer] catalog constructs (Catalog Sources and Price Books). |
 | **Operational visibility** | Monitor feed health, last sync times, and per-SKU status from a dedicated [!UICONTROL Data Feed Sync Status] view. |
-| **Future-ready path toward SaaS** | Provides a low-risk modernization path from PaaS toward [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], without a re-platform. |
+| **Future-ready path toward SaaS** | Provides a phased migration path from Commerce on cloud or on-premises to [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], without re-platforming. |
 
 ## Connector architecture {#connector-architecture}
 
@@ -142,7 +142,7 @@ The connector is designed for B2C merchants with [!DNL Adobe Commerce] on cloud 
 
 **Common use cases:**
 
-- **Modernizing the storefront only**
+- **Storefront migration to Edge Delivery**
   Keep your existing [!DNL Adobe Commerce] backend, move PLP/Search/PDP to [!DNL Edge Delivery Services] storefronts powered by [!DNL Adobe Commerce Optimizer]
 
 - **Scaling catalog and search performance**

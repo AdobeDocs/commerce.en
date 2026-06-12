@@ -6,7 +6,7 @@ Confirm that data exported successfully from the Commerce Admin and that the dat
 
    Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
 
-   ![Data Feed Sync Status page with feed item status reporting](/help/aco-connector/assets/data-feed-sync-status.png){width="500" zoomable="yes"}
+   ![Data Feed Sync Status page with feed item status reporting](/help/aco-connector/assets/data-feed-sync-status.png){width="700" zoomable="yes"}
 
    When the sync is running, the feed data shows successfully sent records. Select a feed to view details or troubleshoot sync issues.
 
@@ -14,7 +14,7 @@ Confirm that data exported successfully from the Commerce Admin and that the dat
 
    From the [!DNL Commerce Optimizer] menu, select **[!UICONTROL Data Sync]**.
 
-   ![Data Sync page in Adobe Commerce Optimizer showing synced catalog data](/help/aco-connector/assets/data-sync.png){width="500" zoomable="yes"}
+   ![Data Sync page in Adobe Commerce Optimizer showing synced catalog data](/help/aco-connector/assets/data-sync.png){width="700" zoomable="yes"}
 
    Verify that the expected products, prices, and attributes appear.
 
