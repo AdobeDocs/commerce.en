@@ -1,6 +1,6 @@
 ---
-title: 'Symptoms and Resolutions for the [!DNL Adobe Commerce Optimizer Connector]'
-description: "Diagnose and resolve unexpected behavior in [!DNL Adobe Commerce Optimizer Connector] caused by misconfiguration or misinterpretation of sync results."
+title: Troubleshooting Scenarios for [!DNL SaaS Data Export]
+description: "Diagnose and resolve unexpected behavior in [!DNL SaaS Data Export] caused by misconfiguration or misinterpretation of sync results."
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Troubleshooting
 ---
 
-# Symptoms and resolutions for the Adobe Commerce Optimizer Connector
+# Troubleshooting scenarios for SaaS Data Export
 
 This page describes behaviors you may observe when working with the [!DNL SaaS Data Export] that are typically caused by misconfiguration or misinterpretation of sync results. Use the descriptions below to identify the root cause and apply the appropriate resolution.
 

@@ -49,15 +49,13 @@ For Commerce on cloud or on-premises deployments integrated with [!DNL Commerce 
 
 - **[Data Sync page](../optimizer/setup/data-sync.md)**—The Data Sync page gives an overview of synchronization status for product data coming from your upstream catalog source into [!DNL Commerce Optimizer].
 
+For details on how to use these dashboards to verify that data sync is working and to manually resync data, see the [Catalog pipeline](../aco-connector/data-sync-manage.md) in the _Adobe Commerce Optimizer Connector Guide_.
+
 >[!ENDTABS]
 
 ## Verify that the data sync is working {#verify-that-the-data-sync-is-working}
 
 To verify that the data sync is working, confirm that data exported successfully from [!DNL Adobe Commerce] and that the data was successfully delivered to the connected Commerce service. Use the dashboards for your deployment to check both steps.
-
->[!BEGINTABS]
-
->[!TAB Adobe Commerce]
 
 Start with export, then confirm delivery.
 
@@ -77,12 +75,6 @@ Start with export, then confirm delivery.
 
    Verify that the expected products, prices, and attributes appear.
 
->[!TAB Adobe Commerce with Commerce Optimizer]
-
-{{$include /help/_includes/aco-connector/verify-optimizer-data-sync.md}}
-
->[!ENDTABS]
-
 >[!TIP]
 >
 >If you have any issues with the data sync, see [Review logs and troubleshoot](troubleshooting/logging.md).
@@ -91,13 +83,9 @@ Start with export, then confirm delivery.
 
 When partial sync and automatic retry do not resolve synchronization issues, you can manually resync data from the Commerce Admin or by using Commerce CLI commands. Available options depend on your deployment.
 
->[!BEGINTABS]
-
->[!TAB Adobe Commerce]
-
 ### Available manual resync options {#manual-resync-options-commerce}
 
-For Adobe Commerce on cloud, on-premises, and Adobe Commerce as a Cloud Service deployments with [!DNL Live Search] or [!DNL Product Recommendations] enabled, use the following options to manually resync feed data.
+Use the following options to manually resync feed data.
 
 | Task | Option | Notes |
 | --- | --- | --- |
@@ -105,21 +93,11 @@ For Adobe Commerce on cloud, on-premises, and Adobe Commerce as a Cloud Service 
 | Full resync of all feeds | **[!UICONTROL Data Management Dashboard]** | Perform a full resync of all feeds from the Commerce Admin; Adobe recommends this primarily when you first connect to a Commerce service. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
 | Targeted feed resync with operational control | **Commerce CLI** | Use the `saas:resync` command for targeted feed resyncs. See [Sync feeds using the Commerce CLI](data-export-cli-commands.md). |
 
->[!TAB Adobe Commerce with Commerce Optimizer]
-
-### Available manual resync options {#manual-resync-options-optimizer}
-
-For Adobe Commerce deployments integrated with [!DNL Commerce Optimizer] through the connector, use the following options to manually resync catalog data.
-
-| Task | Option | Notes |
-| --- | --- | --- |
-| Verify sync status and resync from the upstream system when products are missing | **Upstream-system resync** | Use the [!UICONTROL Data Sync] page in [!DNL Commerce Optimizer] to verify the data delivered to [!DNL Commerce Optimizer]; when products are missing, resync from the upstream system. See [Resync catalog data](../optimizer/setup/data-sync.md#resync-catalog-data) in the *[!DNL Commerce Optimizer] User Guide*. |
-| Resync selected failed or problematic connector feed items | **[!UICONTROL Data Feed Sync Status] page in the Commerce Admin** | Monitor export status and resync selected connector feed items from the Commerce Admin. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
-| Targeted connector feed resync with operational control | **Commerce CLI** | Run `saas:resync` from the Adobe Commerce instance for connector feeds. See [Sync feeds using the Commerce CLI](data-export-cli-commands.md) and [Supported feeds](/help/aco-connector/reference/connector-reference.md#supported-feeds). |
-| Force a full repopulation for a catalog source scope | **Disable and re-enable scope** | Clear and reselect the data sync checkbox for a store view in **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** to trigger a full repopulation. See [Customize the Commerce scopes export configuration](/help/aco-connector/get-started.md#customize-the-commerce-scopes-export-configuration). |
-
->[!NOTE]
+>[!MORELIKETHIS]
 >
->The [!UICONTROL Data Sync] page in [!DNL Commerce Optimizer] does not provide a resync-selected-items control. For connector-backed implementations, use the Commerce Admin [!UICONTROL Data Feed Sync Status] page and/or the Commerce CLI. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working).
+> - [How synchronization works](sync-overview.md) — Learn about synchronization modes, full sync, partial sync, and retry failed items.
+> - [Sync feeds using the Commerce CLI](data-export-cli-commands.md) — Use the `saas:resync` command for targeted feed resyncs.
+> - [Review logs and troubleshoot](troubleshooting/logging.md) — Diagnose data export and SaaS export errors.
+> - [Manage synchronization to [!DNL Commerce Optimizer]](/help/aco-connector/data-sync-manage.md) — Verify catalog data sync and manually resync connector feeds.
 
->[!ENDTABS]
+

@@ -50,6 +50,10 @@ Multi-thread mode is supported for all [synchronization methods](sync-overview.m
 - `thread-count` is the number of threads that are activated to process entities. The default `thread-count` is `1`.
 - `batch-size` is the number of entities that are processed in one iteration. The default `batch-size` is `100` records for all feeds except the price feed. For the price feed, the default value is `500` records.
 
+>[!NOTE]
+>
+>For [!DNL Adobe Commerce Optimizer Connector] deployments, review the connector-specific supported feeds and batch limits in [Connector modules and feed endpoints](../aco-connector/reference/connector-reference.md#supported-feeds).
+
 You can configure multi-threading as a temporary option when running a resync command, or by adding the multi-thread configuration to the Adobe Commerce application configuration.
 
 >[!NOTE]

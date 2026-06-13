@@ -150,6 +150,10 @@ If you see errors not related to configuration or third-party extensions, submit
 
 When you trigger a data resync, it can take up to an hour for the data to update and be reflected in UI components such as live search and recommendation units. If you still see discrepancies between your catalog and data on the Commerce storefront, or if the catalog sync failed, refer to the following:
 
+>[!NOTE]
+>
+>For [!DNL Adobe Commerce Optimizer Connector] deployments, see [Troubleshoot the [!DNL Adobe Commerce Optimizer Connector]](../../aco-connector/troubleshooting.md) and [Manage synchronization to [!DNL Commerce Optimizer]](../../aco-connector/data-sync-manage.md).
+
 #### Data discrepancy
 
 1. Display the detailed view of the product in question in the search results.

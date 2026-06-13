@@ -66,7 +66,7 @@ Connector feeds show a successful status in **[!UICONTROL Data Feed Sync Status]
 
 ## Misconfiguration and result interpretation
 
-For a catalog of specific behaviors caused by misconfiguration or misinterpretation of sync results - such as missing products, incorrect prices, or scope-level data gaps - see [Symptoms and resolutions](troubleshooting/symptoms-and-resolutions.md).
+For a catalog of specific behaviors caused by misconfiguration or misinterpretation of sync results - such as missing products, incorrect prices, or scope-level data gaps - see [Troubleshooting scenarios](troubleshooting/symptoms-and-resolutions.md).
 
 ## [!DNL SaaS Data Export] diagnostics
 

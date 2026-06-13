@@ -25,6 +25,10 @@ topic_v2:
 
 Adobe recommends estimating data volume and sync time before starting any data feed synchronization to ensure smooth scheduling and avoid disruptions in site operations. This estimation is important when planning for initial syncs or large scale catalog updates, such as mass price changes.
 
+>[!NOTE]
+>
+>For [!DNL Adobe Commerce Optimizer Connector] deployments, review the connector-specific supported feeds and batch limits in [Connector modules and feed endpoints](../aco-connector/reference/connector-reference.md#supported-feeds).
+
 By default the data export tool processes data in single-thread mode with a default batch size. With the default configuration, there is no parallelization of the feed submission process. Additionally, this component accepts requests per second (RPS) which translates to the following:
 
 - Up to 10,000 products per minute where a product is a SKU with attributes in a specific storeview

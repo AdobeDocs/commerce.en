@@ -1,5 +1,5 @@
 ---
-title: 'Symptoms and Resolutions for the [!DNL Adobe Commerce Optimizer Connector]'
+title: 'Troubleshooting Scenarios for the [!DNL Adobe Commerce Optimizer Connector]'
 description: "Diagnose and resolve unexpected behavior in [!DNL Adobe Commerce Optimizer Connector] caused by misconfiguration or misinterpretation of sync results."
 role: Admin, Developer
 feature: Integration, Configuration
@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Troubleshooting
 ---
 
-# Symptoms and resolutions for the Adobe Commerce Optimizer Connector
+# Troubleshooting scenarios for the Adobe Commerce Optimizer Connector
 
 This page describes behaviors you may observe when working with the [!DNL Adobe Commerce Optimizer Connector] that are typically caused by misconfiguration or misinterpretation of sync results. Use the descriptions below to identify the root cause and apply the appropriate resolution.
 
@@ -69,6 +69,6 @@ The price book feed uses a scope that maps to a specific website and customer gr
 - Verify that the website is configured for sync in the connector's export configuration. See [Customize the data export configuration](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirm that the price book ID used in [!DNL Commerce Optimizer] present in [catalog view](../../optimizer/setup/catalog-view.md) configuration used to perform the products query.
 
-# Symptoms and resolutions for the common issues with the [!DNL SaaS Data Export]
+## Troubleshooting scenarios for common [!DNL SaaS Data Export] issues
 
-For issues related to the underlying [!DNL SaaS Data Export] that may affect the connector see [Symptoms and resolutions for the SaaS Data Export](../../data-export/troubleshooting/symptoms-and-resolutions.md).
+For issues related to the underlying [!DNL SaaS Data Export] that may affect the connector, see [Troubleshooting scenarios for [!DNL SaaS Data Export]](../../data-export/troubleshooting/symptoms-and-resolutions.md).
