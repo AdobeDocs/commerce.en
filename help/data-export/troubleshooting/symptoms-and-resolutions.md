@@ -32,15 +32,15 @@ topic_v2:
     internal-label: Troubleshooting
 ---
 
-# Symptoms and resolutions for the Adobe Commerce Optimizer Connector
+# Symptoms and resolutions for the [!DNL SaaS Data Export]
 
 This page describes behaviors you may observe when working with the [!DNL SaaS Data Export] that are typically caused by misconfiguration or misinterpretation of sync results. Use the descriptions below to identify the root cause and apply the appropriate resolution.
 
-## Configurable or bundle product is enabled in [!DNL Adobe Commerce] but disabled or missing in [!DNL Adobe Commerce Optimizer]
+## Configurable or bundle product is enabled in [!DNL Adobe Commerce] but disabled or missing in Adobe Commerce SaaS services
 
-**Symptom:** A configurable or bundle product has **Enabled** status in [!DNL Adobe Commerce] but is either not returned in the storefront or appears with a **Disabled** status in [!DNL Adobe Commerce Optimizer].
+**Symptom:** A configurable or bundle product has **Enabled** status in [!DNL Adobe Commerce] but is either not returned in the storefront or appears with a **Disabled** status in services.
 
-**Likely cause:** The effective status of composite products depends on the status of their child products, not just the parent product status. [!DNL Adobe Commerce Optimizer] reflects this computed status:
+**Likely cause:** The effective status of composite products depends on the status of their child products, not just the parent product status. Adobe Commerce SaaS services reflects this computed status:
 
 - **Configurable products** - at least one product variant must be enabled.
 - **Bundle products** - at least one product must be enabled for each required bundle option.
@@ -51,7 +51,7 @@ If these conditions are not met, the parent product is treated as disabled even 
 
 - For configurable products, verify that at least one associated simple product variant is enabled and assigned to the correct website and store view.
 - For bundle products, check that each required bundle option has at least one enabled child product. A required option with all disabled children causes the entire bundle to be treated as disabled.
-- After enabling the appropriate child products, trigger a resync or wait for the next scheduled sync, then confirm the updated status in [!DNL Adobe Commerce Optimizer].
+- After enabling the appropriate child products, trigger a resync or wait for the next scheduled sync, then confirm the updated status in services.
 
 ## Prices not updated after catalog price rule activation
 
