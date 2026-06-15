@@ -63,3 +63,4 @@ SaaS data export is delivered as a PHP extension. It supports several methods to
   - In cases where the sync needs to happen more quickly, SaaS data export provides customization options to improve export processing performance. See [Improve data export performance](customize-export-processing.md).
 
 - **Track and troubleshoot data export activities**—Use data-export and saas-export logs to review sync status and feed payloads during the synchronization and indexation process. See [Logging and troubleshooting](troubleshooting-logging.md).
+
