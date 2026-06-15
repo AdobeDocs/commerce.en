@@ -39,11 +39,15 @@ The following diagram shows the SaaS data export flow.
 
 ![SaaS data export collection and synchronization flow for Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
 
-The main components of the SaaS data export flow include:
+When catalog data changes in [!DNL Adobe Commerce], synchronization moves through these stages.
 
-- SaaS data export modules that collect the data for feeds from Adobe Commerce, assemble feed items, listen for updates, and persist feed status.
-- SaaS export modules that export data, configure routing, and publish the feeds to connected services.
-- The Adobe Commerce Service manages the data ingestion process to validate incoming feeds and persist updates to connected services.
+1. **Entity change detection** - Magento's Mview system detects row changes in subscribed database tables (for example, `catalog_product_entity`) and writes entries to a changelog table.
+1. **Feed indexing** - The feed indexer reads the changelog, loads entity data from the source tables, and assembles feed items.
+1. **Data collection and transformation** - Providers registered in the feed schema [`et_schema.xml`](./extensibility-and-customizations.md/#feed-schema-overview) collect field data.
+1. **Hash deduplication** - A content hash is computed for each feed item. Items whose hash has not changed since the last export are skipped, so only modified data is transmitted.
+1. **HTTP submission** - Feed items are sent as authenticated HTTP POST batches to the Adobe SaaS Feed Ingestion Service.
+1. **Status persist** - The API response status is written back to the [feed table](reference/feed-table-reference.md) for each item.
+1. **Failure retry** - Items that failed to export are automatically retried by a scheduled cron job.
 
 >[!NOTE]
 >
@@ -76,58 +80,43 @@ After connecting an Adobe Commerce instance to Commerce Service, perform a full 
 ### Partial sync {#partial-sync}
 
 With partial sync, SaaS data export automatically sends updates from the Commerce application, such as product name changes or price updates, to connected commerce services.
-
-The data export process uses the following cron jobs to automate the partial sync operation.
-
-- "index" cron group jobs:
-    - The `indexer_reindex_all_invalid` job reindexes all invalid feeds. It is a standard Adobe Commerce cron job.
-    - The `saas_data_exporter` job is for legacy export feeds.
-    - The `sales_data_exporter` job is specific to the sales data export feed.
-
-These jobs run every minute.
-
-The same partial sync cron jobs run for [!DNL Adobe Commerce Optimizer Connector] feeds. For connector-specific submission and error handling, see [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md).
-
 For partial sync to work, the Commerce application requires the following configuration:
 
 - [Task scheduling is enabled via cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
-
 - All SaaS data export indexers are configured in `Update by Schedule` mode.
 
-  In SaaS data export version 103.1.0 and later, `Update by Schedule` mode is enabled by default. You can verify index configuration on the server using the Commerce CLI command, `bin/magento indexer:show-mode | grep -i feed`
+
 
 ### Retry failed items sync {#retry-failed-items-sync}
 
-The Retry failed items sync uses a separate process to resend items that failed to sync due to errors during the synchronization process, for example an application error, network disruption, or SaaS service error. Implementation for this sync is also based on cron jobs.
+The Retry failed items sync uses a separate process to resend items that failed to sync due to errors during the synchronization process, for example an application error, network disruption, or SaaS service error. The `*_resend_failed_items` cron jobs in the `resync_failed_feeds_data_exporter` group handle this automatically every 5 minutes.
 
-- `resync_failed_feeds_data_exporter` cron group jobs:
-    - The `<feed name>_feed_resend_failed_feeds_items` job resends items that failed to sync, for example `products_feed_resend_failed_items`.
+## Scheduled cron jobs
 
-### Verify Commerce application configuration {#verify-commerce-application-configuration}
+The following cron groups automate the pipeline on a fixed schedule.
 
-Partial sync and Retry failed items sync work only if the Commerce instance has been configured correctly. Typically, the configuration is completed when setting up the Commerce Service. If the data export is not working correctly, check the following configuration.
+| Cron group | Cron job | Purpose | Schedule |
+|---|---|---|---|
+| `index` | `indexer_update_all_views` | Processes Mview changelogs and triggers partial feed updates | Every 1 minute |
+| `index` | `indexer_reindex_all_invalid` | Performs a full resync for feed indexes marked as "Reindex required" | Every 1 minute |
+| `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Detects failed feed items and resubmits them | Every 5 minutes |
+| `commerce_data_export` | `saas_data_exporter` | Submits data for legacy-mode feeds (orders, scopes) | Every 5 minutes |
+| `commerce_data_export`              | `cleanup_deleted_feed_items`  | Cleans up synced deleted feed items past the retention period (7 days) | Every day at 2:00 AM|
 
-- [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+## Feed submission and HTTP error handling {#feed-submission-and-http-error-handling}
 
-- Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
+Feed items are submitted as authenticated gzip-compressed JSON batches over HTTP POST. The following table shows how HTTP response codes map to export status and retry behavior.
 
-- Verify that the indexers for the following feeds are set to `Update by Schedule`: Catalog Attributes, Product, Product Overrides, and Product Variant. You can check the indexers from [Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in the Admin or using the CLI (`bin/magento indexer:show-mode | grep -i feed`).
+| Status code | Retry? | Meaning                                                                                                             |
+|-------------|--------|---------------------------------------------------------------------------------------------------------------------|
+| 200         | No     | Accepted successfully                                                                                               |
+| 400         | No     | Bad data or validation failure - requires manual investigation. Check `var/log/saas-export-errors.log` for details. |
+| 429         | Yes    | Rate limit hit - reduce `thread_count` in [export processing settings](customize-export-processing.md)              |
+| 5xx         | Yes    | SaaS-side error - automatic retry                                                                                   |
+| 2           | Yes    | Item is scheduled for retry                                                                                         |
 
-### Event manager notifications for data transfer logging
+In addition to HTTP-level failures, application-level errors such as local processing failures or network disruptions are also scheduled for automatic retry by the `*_resend_failed_items` cron jobs.
 
-In version 103.3.4 and later, SaaS Data Export dispatches the `data_sent_outside` event when data is sent from the Commerce instance to Adobe Commerce services.
+Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
 
-```php
-$this->eventManager->dispatch(
-   "data_sent_outside",
-   [
-       "timestamp" => time(),
-       "type" => $metadata->getFeedName(),
-       "data" => $data
-   ]
-);
-```
-
->[!NOTE]
->
->For information about events and how to subscribe to them, see [Events and Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in the Adobe Commerce Developer documentation.
+To inspect item-level status and error details directly in the database, see [Feed table schema](reference/feed-table-reference.md).
