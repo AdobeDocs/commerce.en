@@ -29,9 +29,9 @@ topic_v2:
 
 Adobe recommends estimating data volume and sync time before starting any feed synchronization to ensure smooth scheduling and avoid disruptions in site operations. This is especially important when planning initial syncs or large-scale catalog updates, such as mass price changes.
 
-By default, the connector processes feeds in single-thread mode. There is no parallelization of the feed submission process. The ingestion API accepts up to 2 requests per second, which translates to the following approximate throughput:
+By default, the connector processes feeds in single-thread mode. There is no parallelization of the feed submission process. The ingestion API accepts up to 2 requests per second. However, the base allocation for the [!DNL Adobe Commerce Optimizer] ingestion rate limits throughput to the following:
 
-- Up to 10,000 products per minute (a product is a SKU with attributes in a specific store view)
+- Up to 1,000 products per minute (a product is a SKU with attributes in a specific store view). See [Limits and boundaries](../../optimizer/boundaries-limits.md) for base allocation details.
 - Up to 50,000 prices per minute
 
 ## Factors that affect sync time
@@ -50,13 +50,13 @@ Use the following table to estimate the number of records, requests, and sync ti
 
 >[!NOTE]
 >
->These calculations are based on a transmission rate of 2 requests per second. Actual speed depends on payload size and server load.
+>Product sync time is based on the base allocation limit of 1,000 products per minute. For other feeds, calculations are based on a transmission rate of 2 requests per second. Actual speed depends on payload size and server load.
 >
 >The prices estimate assumes all customer groups have unique prices.
 
 | Feed | Data example | Formula | Predicted requests | Predicted sync time |
 | ---- | ------------ | ------- | ------------------ | ------------------- |
-| Products | Products (P): 10,000, Store Views (SV): 4 | P &times; SV = 40,000 records | 40,000 &divide; batch size (100) = 400 | (400 &times; 0.5 s) &divide; 60 = **3.3 min** |
+| Products | Products (P): 10,000, Store Views (SV): 4 | P &times; SV = 40,000 records | 40,000 &divide; batch size (100) = 400 | 40,000 &divide; 1,000 records/min = **40 min** |
 | Categories | Categories (C): 500, Store Views (SV): 4 | C &times; SV = 2,000 records | 2,000 &divide; batch size (100) = 20 | (20 &times; 0.5 s) &divide; 60 = **~10 s** |
 | Product attributes | Attributes (A): 200, Store Views (SV): 4 | A &times; SV = 800 records | 800 &divide; batch size (100) = 8 | (8 &times; 0.5 s) &divide; 60 = **~4 s** |
 | Prices | Products (P): 10,000, Websites (WS): 2, Customer Groups (CG): 6 | P &times; WS &times; CG = 120,000 records | 120,000 &divide; batch size (500) = 240 | (240 &times; 0.5 s) &divide; 60 = **2 min** |
