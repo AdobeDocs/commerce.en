@@ -25,6 +25,8 @@ feature: Services
   - [Troubleshooting scenarios](troubleshooting/symptoms-and-resolutions.md)
   - [Log codes reference](troubleshooting/log-codes-reference.md)
 - Reference {#reference}
+  - [SaaS Data Export modules](reference/data-export-modules.md)
   - [Manage the SaaS data export extension](manage-extension.md)
   - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
+  - [Feed table schema](reference/feed-table-reference.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

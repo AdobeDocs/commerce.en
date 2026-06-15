@@ -61,7 +61,7 @@ When catalog data changes in [!DNL Adobe Commerce], synchronization moves throug
 
 ### Scheduled cron jobs
 
-Two cron groups automate the pipeline on a fixed schedule.
+The following cron jobs automate the pipeline on a fixed schedule.
 
 | Cron group                          | Cron Job                      | Purpose                                                                      | Schedule       |
 |-------------------------------------|-------------------------------|------------------------------------------------------------------------------|----------------|

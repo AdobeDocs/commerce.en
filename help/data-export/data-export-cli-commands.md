@@ -41,19 +41,22 @@ Monitor sync operations in the `var/log/saas-export.log` file.
 
 When you trigger a `saas:resync` from the command line, depending on your catalog size, it can take from a few minutes to a few hours for the data to update.
 
-For the initial sync, Adobe recommends running the commands in the following order:
+Feed syncs can be run in any order - there are no hard dependencies between them. The following sequence starts with scope data first, which is a logical starting point since scopes define the store views that other feeds reference.
 
 ```shell
-bin/magento saas:resync --feed productattributes
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed scopesCustomerGroup
 bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-bin/magento saas:resync --feed productoverrides
-bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed productAttributes
 bin/magento saas:resync --feed categories
-bin/magento saas:resync --feed categoryPermissions
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed productoverrides
 ```
+
+>[!NOTE]
+>
+>The feeds available in your environment depend on which modules are installed. For example, `productOverrides` require Adobe Commerce EE, and `orders` requires the Sales Orders module.
 
 ## Sync using CLI commands
 
@@ -153,18 +156,7 @@ bin/magento saas:resync --feed products --dry-run --cleanup-feed
 
 Required. Specifies the feed entity to resync.
 
-Available feeds:
-
-- `categories`
-- `categoryPermissions`
-- `orders`
-- `prices`
-- `products`
-- `productAttributes`
-- `productOverrides`
-- `scopesWebsite`
-- `scopesCustomerGroup`
-- `variants`
+Available feeds depends on installed package
 
 >[!NOTE]
 >
