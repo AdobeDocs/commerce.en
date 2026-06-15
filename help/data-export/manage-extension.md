@@ -23,7 +23,7 @@ topic_v2:
 The [[!DNL data export] extension](https://github.com/magento/commerce-data-export) for SaaS services is a collection of modules that enable data collection and synchronization between Adobe Commerce and connected Commerce Services.
 
 Specific modules are included in the metapackages for Adobe Commerce Services extensions such
-as [Live Search](/help/live-search/overview.md), [Product Recommendations](/help/product-recommendations/overview.md), and [Catalog Service](/help/catalog-service/overview.md). If you are using these services, no separate installation is required to enable the Data Export extension.
+as [Live Search](/help/live-search/overview.md), [Product Recommendations](/help/product-recommendations/overview.md), [Catalog Service](/help/catalog-service/overview.md), and the [[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md). If you are using these services, no separate installation is required to enable the Data Export extension.
 
 ## Remove or disable Commerce data export features
 
@@ -41,7 +41,7 @@ You can update any of the installed commerce data export modules by using Compos
 
 >[!NOTE]
 >
->If you update to the latest version of [Live Search](/help/live-search/overview.md), [Catalog Service](/help/catalog-service/overview.md), or [Product Recommendations](/help/product-recommendations/overview.md), you also get the latest version of the data export extension. The data export metapackage is a dependency of the Composer packages for these services.
+>If you update to the latest version of [Live Search](/help/live-search/overview.md), [Catalog Service](/help/catalog-service/overview.md), [Product Recommendations](/help/product-recommendations/overview.md), or the [[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md), you also get the latest version of the data export extension. The data export metapackage is a dependency of the Composer packages for these services.
 
 1. Log into the Commerce application server.
 

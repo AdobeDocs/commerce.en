@@ -40,4 +40,5 @@ This message appears when a cron-triggered partial sync attempts to run while a 
 
 - [Synchronize data with SaaS Data Export](sync-overview.md)
 - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
+- [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md)
 - [Configure the lock provider](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

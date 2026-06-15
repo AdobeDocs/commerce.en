@@ -148,7 +148,7 @@ If you see errors not related to configuration or third-party extensions, submit
 
 ### Resolve catalog sync issues {#resolvesync}
 
-For symptom-based troubleshooting of catalog sync issues - including data discrepancies, sync not running, and failed sync status - see [Symptoms and resolutions](symptoms-and-resolutions.md).
+For symptom-based troubleshooting of catalog sync issues - including data discrepancies, sync not running, and failed sync status - see [Troubleshooting scenarios](symptoms-and-resolutions.md).
 
 ## Extended logging
 
