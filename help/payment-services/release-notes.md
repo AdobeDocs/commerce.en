@@ -1,6 +1,8 @@
 ---
 title: "[!DNL Payment Services] Release Notes"
 description: Review the release notes for information about all [!DNL Payment Services] releases.
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
 ---
@@ -26,6 +28,10 @@ Learn more about upcoming releases, product support, and which Adobe Commerce ve
 These release notes describe feature changes and fixes that occurred and were released outside of the regular feature releases for the hosted service.
 
 +++Hosted service updates
+
+_June 8, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6510 --> For [!DNL Adobe Commerce as a Cloud Service], the [!DNL Payment Services] dashboard UI in the [!DNL Commerce Admin] lets merchants open the [Transactions report](reporting.md#transactions-report-view) directly from the dashboard. This SaaS dashboard exposes **selected** reporting only (not every report or Home entry point available on Adobe Commerce on cloud and on-premises); see [[!DNL Payment Services] Home](payments-home.md). For ACCS release notes and timing, see [View the Payment Services Transactions report](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _January 21, 2026_
 
@@ -71,7 +77,7 @@ _June 9, 2023_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on [!DNL Payment Services] Home when[!DNL Payment Services] is disabled.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on [!DNL Payment Services] Home when [!DNL Payment Services] is disabled.
 
 _January 25, 2023_
 
@@ -104,6 +110,30 @@ _June 28, 2021_
 >[!NOTE]
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
+
+## v2.15.0
+
+_June 16, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-6564 --> Now, [!DNL Google Pay] express checkout can show shipping methods in the Google Pay sheet using client-side shipping callbacks, so shoppers select shipping before they confirm payment. Merchants can show or hide a separate Google Pay review step using **[!UICONTROL Skip Review]** in [Google Pay configuration](configure-admin.md#google-pay). When the review step is skipped, shipping options stay in the sheet when the wallet address or shipping method changes.
+
+![New](../assets/new.svg)<!-- PAY-6565 --> Now, shoppers can apply a promotional code in the [!DNL Google Pay] express pay sheet, whether or not the Google Pay review step appears. Only one code can be applied per pay sheet, even on stores that allow multiple coupons per order. See [Payment options](payments-options.md#google-pay-button) for more information.
+
+![New](../assets/new.svg)<!-- PAY-6567 --> Now, [!DNL Apple Pay] express checkout is available in Chrome, Firefox, and Microsoft Edge, in addition to Safari. On desktop, shoppers can scan a QR code with an iPhone running iOS 18 or later to complete payment in the Apple Pay sheet. Express placements (for example, on the product detail page) must be enabled in [Apple Pay configuration](configure-admin.md#apple-pay).
+
+![New](../assets/new.svg)<!-- PAY-6566 --> Now, shoppers can apply or remove a single discount code in the [!DNL Apple Pay] express pay sheet, and totals update in the sheet. Create and enable cart price rules in the Admin as usual.
+
+![New](../assets/new.svg)<!-- PAY-6151 --> Now, [!DNL Apple Pay] on Luma product detail and checkout pages renders through the Payments SDK so the experience matches the latest PayPal integration used for express checkout.
+
+![New](../assets/new.svg)<!-- PAY-6659 --> [!DNL PayPal] checkout is updated to the latest Payments JavaScript SDK for [!DNL Payment Services], improving maintainability and simplifying storefront updates.
+
+![New](../assets/new.svg)<!-- PAY-6611 --> Now, the [!DNL Adobe Commerce] order detail page displays additional payment details for transactions processed through [!DNL Payment Services], including [!DNL PayPal] Transaction ID, PayPal debug ID, payer email, Merchant Protection Eligibility, and AVS/CVV verification codes. See [3DS](security.md#3ds) for more information.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6585 --> Fixed an issue where the [!DNL Apple Pay] express pay sheet displayed a **[!UICONTROL Please select a state/region]** error for UK and European addresses where state/region is not a required field.
 
 ## v2.14.0
 
