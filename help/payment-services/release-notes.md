@@ -113,7 +113,7 @@ _June 28, 2021_
 
 ## v2.15.0
 
-_June 16, 2026_
+_June 15, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -126,8 +126,6 @@ _June 16, 2026_
 ![New](../assets/new.svg)<!-- PAY-6566 --> Now, shoppers can apply or remove a single discount code in the [!DNL Apple Pay] express pay sheet, and totals update in the sheet. Create and enable cart price rules in the Admin as usual.
 
 ![New](../assets/new.svg)<!-- PAY-6151 --> Now, [!DNL Apple Pay] on Luma product detail and checkout pages renders through the Payments SDK so the experience matches the latest PayPal integration used for express checkout.
-
-![New](../assets/new.svg)<!-- PAY-6659 --> [!DNL PayPal] checkout is updated to the latest Payments JavaScript SDK for [!DNL Payment Services], improving maintainability and simplifying storefront updates.
 
 ![New](../assets/new.svg)<!-- PAY-6611 --> Now, the [!DNL Adobe Commerce] order detail page displays additional payment details for transactions processed through [!DNL Payment Services], including [!DNL PayPal] Transaction ID, PayPal debug ID, payer email, Merchant Protection Eligibility, and AVS/CVV verification codes. See [3DS](security.md#3ds) for more information.
 
