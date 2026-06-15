@@ -234,3 +234,4 @@ You can monitor and verify that the sync is working from the [[!UICONTROL Data F
 1. **Set up a Commerce Storefront on [!DNL Edge Delivery Services]**
 
    Follow the [Storefront setup documentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"} to connect your storefront to the [!DNL Adobe Commerce Optimizer] instance and start delivering personalized commerce experiences.
+
