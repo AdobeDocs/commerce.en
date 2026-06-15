@@ -146,3 +146,4 @@ $this->eventManager->dispatch(
 >[!NOTE]
 >
 >For information about events and how to subscribe to them, see [Events and Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in the Adobe Commerce Developer documentation.
+

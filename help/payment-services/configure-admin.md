@@ -4,7 +4,7 @@ description: After installation, you can configure [!DNL Payment Services] in th
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
+feature: Payments, Checkout, Configuration, Paas, Saas
 ---
 # [!DNL Payment Services] Configuration
 
@@ -45,6 +45,26 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 | [!UICONTROL PayPal Merchant ID] | store view | Your unique PayPal Merchant account ID, generated when you create your PayPal account. |
 | [!UICONTROL PayPal Merchant Status] | store view | Status of your PayPal Merchant ID. |
 | [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. |
+
+## Connect a different PayPal account for a website
+
+If you run a single Commerce instance with **multiple websites** (and store views), you may need a **different PayPal merchant account** for some websites. [!DNL Payment Services] lets you complete **website-scoped** PayPal onboarding in the Admin after the instance is set up and onboarded at the **global** (default) scope.
+
+In earlier releases, website-level PayPal account mapping typically required you to [contact Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#Solution) or your Adobe representative. Use the **[!UICONTROL Connect different account for website]** action when you meet the prerequisites below.
+
+### Prerequisites (global scope)
+
+The **[!UICONTROL Connect different account for website]** control is only available and enabled on a **website** scope when **all** of the following are already true for the instance at **default/global** configuration:
+
+1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) setup is complete.
+
+1. [Sandbox and production](connect.md#configure-commerce-services) API keys (public and private) are saved in the Admin.
+
+1. **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** are populated in [General configuration](#general-configuration).
+
+1. A **global** PayPal merchant account is **connected** and you have **finished PayPal onboarding** for that default scope (the **[!UICONTROL PayPal Merchant ID]** and related fields are populated for global scope as described in [General configuration](#general-configuration)).
+
+    If global onboarding is not complete, switch the configuration scope to a **[!UICONTROL Website]**, open **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]**, and the **[!UICONTROL Connect different account for website]** button is **disabled**; complete connector setup and **global** PayPal onboarding first.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -162,7 +182,7 @@ These optional settings apply to the customer input fields of your [!UICONTROL F
 
 ## [!UICONTROL Apple Pay]
 
-With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience in Safari—supporting up to 99 domains per merchant account. The [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's iOS or macOS device, enabling quick, one-tap purchases that can help boost conversion rates.
+With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In **Safari** (macOS and iOS), the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device, both at the start of checkout (express) and on the final checkout page. In **Chrome, Firefox, or Microsoft Edge**, [!DNL Apple Pay] is available both during **express checkout** and at the **final checkout step**; on desktop, a QR code and an **iPhone** (iOS 18 or later) allow the shopper to finish payment in the Apple Pay sheet. Ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
 
 >[!IMPORTANT]
 >
@@ -173,7 +193,7 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Apple Pay]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL Apple Pay]_ section.
 1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Apple Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -209,7 +229,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Google Pay]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL Google Pay]_ section.
 1. (Optional) Change the name of the payment method shown during checkout by entering the new name in the **[!UICONTROL Title]** field.
 1. [Set the payment action](production.md#set-payment-services-as-payment-method) by selecting **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Google Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -218,10 +238,11 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
     * **[!UICONTROL Show Google Pay on product detail page]**
     * **[!UICONTROL Show Google Pay in mini cart preview]**
     * **[!UICONTROL Show Google Pay on cart page]**
+1. To choose whether shoppers see a separate **Google Pay review** page after the Google Pay pay sheet, set **[!UICONTROL Skip Review]** to `Yes` or `No`. When set to `Yes`, supported express flows show **shipping methods in the Google Pay sheet** (client-side shipping callbacks) and may complete without the extra review step. When set to `No`, shoppers can confirm shipping and totals on the review page before paying.
 1. To enable **[!UICONTROL 3D Secure authentication]** (`Off` by default) choose `Always` or `When required`.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. Configure the appearance of the _[!UICONTROL Google Pay]_ button by selecting the **[!UICONTROL Button Color]**, **[!UICONTROL Button Type]**, and **[!UICONTROL Button Style]** as needed.
-1. To set the height, uses the default value for height defined in **[!UICONTROL Button Style]**.
+1. To set the height, use the default value for height defined in **[!UICONTROL Button Style]**.
 1. To save your changes, click **[!UICONTROL Save Config]** .
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -237,6 +258,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 | [!UICONTROL Show Google Pay on product detail page] | store view | Enable or disable [!DNL Google Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | store view | Enable or disable [!DNL Google Pay] in the mini cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | store view | Enable or disable [!DNL Google Pay] on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | store view | When set to `[!UICONTROL Yes]`, eligible [!DNL Google Pay] express flows can omit the separate review page after the pay sheet; shipping methods appear in the Google Pay sheet. When set to `[!UICONTROL No]`, shoppers proceed to the review page to confirm shipping and totals. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Store View | Define color of the [!DNL Google Pay] button. Options: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -416,7 +438,6 @@ In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
 
-See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
+To connect a **different PayPal account to an individual website** from the Admin after **global** Commerce Services and PayPal onboarding is complete, use **[!UICONTROL Connect different account for website]** at **[!UICONTROL Website]** scope. See [Connect a different PayPal account for a website](#connect-a-different-paypal-account-for-a-website).
 
-Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales 
-representative for assistance with using multiple PayPal accounts for your websites.
+See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
