@@ -50,9 +50,9 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 ## Products are missing from the exported catalog
 
-**Symptom:** Some products do not appear in [!DNL Adobe Commerce Optimizer] after a full catalog sync.
+**Issue:** Some products do not appear in [!DNL Adobe Commerce Optimizer] after a full catalog sync.
 
-**Resolution:**
+**Solution:**
 
 - Confirm that the affected products are assigned to the website and store view used as the catalog source.
 - Check that the products are enabled and set to a visibility that includes catalog listings.
@@ -60,9 +60,9 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 ## Prices are incorrect or missing in [!DNL Adobe Commerce Optimizer]
 
-**Symptom:** Products appear in [!DNL Adobe Commerce Optimizer] but display no price returned with [products GraphQL query](https://developer.adobe.com/commerce/services/reference/graphql/#products), or the price does not match what is configured in [!DNL Adobe Commerce] w
+**Issue:** Products appear in [!DNL Adobe Commerce Optimizer] but display no price returned with [products GraphQL query](https://developer.adobe.com/commerce/services/reference/graphql/#products), or the price does not match what is configured in [!DNL Adobe Commerce] w
 
-**Resolution:**
+**Solution:**
 
 The price book feed uses a scope that maps to a specific website and customer group. A wrong [catalog view](../../optimizer/setup/catalog-view.md) configuration can lead to missing or incorrect prices.
 
