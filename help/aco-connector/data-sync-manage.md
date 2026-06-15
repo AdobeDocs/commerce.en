@@ -53,5 +53,6 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 >[!MORELIKETHIS]
 >
 > - [Connector sync pipeline](connector-sync-pipeline.md) — Learn how automated synchronization, cron schedules, and error handling work
+> - [Estimate data volume and sync time](reference/estimate-data-volume-sync-time.md) — Calculate expected sync duration
 > - [Troubleshooting](troubleshooting.md) — Diagnose credential, sync, and scope export issues
 > - [Connector modules and feed endpoints](reference/connector-reference.md) — Review modules, API endpoints, and supported feeds

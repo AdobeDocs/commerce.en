@@ -60,6 +60,7 @@ The connector submits multiple feed types to the [!DNL Commerce Optimizer] [!DNL
 The `products`, `productAttributes`, `categories`, and `prices` feeds reuse data collected by [!DNL SaaS Data Export] indexers. The connector generates the `priceBooks` feed from website and customer group configuration and does not rely on a [!DNL SaaS Data Export] indexer.
 
 For field-level mapping details for each feed, see [Field mapping for [!DNL Commerce Optimizer Connector] feeds](field-mapping.md).
+To estimate how long a sync will take based on your catalog size, see [Estimate data volume and sync time](estimate-data-volume-sync-time.md).
 
 ## Configuration paths
 

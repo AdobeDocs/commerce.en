@@ -20,4 +20,5 @@ feature: Integration, Configuration
 - Reference {#reference}
   - [Connector modules and feed endpoints](./reference/connector-reference.md)
   - [Field mapping for connector feeds](./reference/field-mapping.md)
+  - [Estimate data volume and sync time](./reference/estimate-data-volume-sync-time.md)
 - [Release notes](release-notes.md)
