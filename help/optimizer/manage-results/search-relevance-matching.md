@@ -72,7 +72,7 @@ For a search phrase like `Brauseschlauch chrom`:
 - **All words in the same field** — Looks for **brauseschlauch** and **chrom** in the **same** searchable attribute, still without decompounding (for example, both in **name**).
 - **Words across different fields** — Decompounds **Brauseschlauch** into **brause** and **schlauch**. Those tokens must appear in the **same** field (not necessarily as an adjacent phrase). **chrom** can match in a **different** field (for example, **brause** and **schlauch** in **name**, **chrom** in **color**).
 
-Set **Language** to **German** on the [Language](./settings.md#language) tab in [Settings](./settings.md) so decompounding rules apply. Validate high-value German queries on a staging storefront before you enable changes in production.
+Set **Language** to **German** on the [Language](../settings.md#language) tab in [Settings](../settings.md) so decompounding rules apply. Validate high-value German queries on a staging storefront before you enable changes in production.
 
 Decompounding is rule-based and can add edge cases at this layer. If a subword is missing from the dictionary, tokenization can be incomplete and return broader matches than you expect—for example, **gas** missing from **gaszähler** may emit only **zahl**, or **stat** missing from **thermostat**. The stemmer can also produce unexpected roots (for example, **schrauber** stemming to **schraub**, or **schelle** to **schell**). Adobe updates the dictionary and stemming overrides for known cases as issues are identified.
 
@@ -82,9 +82,9 @@ Relevance is not determined by phrase matching alone. Several signals interact:
 
 - Boost from **exact / near** phrase matching
 - Boost when **all query terms** appear in the **same** field
-- **Intelligent ranking** (when enabled), which blends textual relevance with behavioral signals — see [How intelligent ranking scoring works](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Search weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** on each attribute and other textual relevance factors (for example, how often terms occur and name or description length). In *Settings*, configure which attributes participate in keyword search and their relative **[keyword search weights](./settings.md)**.
-- **[Merchandising rules](./merchandising/rules/overview.md)** such as pin, boost, and bury
+- **Intelligent ranking** (when enabled), which blends textual relevance with behavioral signals — see [How intelligent ranking scoring works](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[Search weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** on each attribute and other textual relevance factors (for example, how often terms occur and name or description length). In *Settings*, configure which attributes participate in keyword search and their relative **[keyword search weights](../settings.md)**.
+- **[Merchandising rules](../merchandising/rules/overview.md)** such as pin, boost, and bury
 
 Because these signals interact, a product that matches only at the broadest level can sometimes rank above a tighter phrase match—for example, when **search weights** or term frequency in a high-weight field outweigh a weaker phrase match elsewhere.
 
@@ -98,8 +98,8 @@ Attributes configured with the **minimum search weight** (weight **1**) and **no
 
 ## Related topics
 
-- [Settings](./settings.md)
-- [Search performance](./manage-results/search-performance.md)
-- [Merchandising rules overview](./merchandising/rules/overview.md)
-- [Add search rules](./merchandising/rules/add.md)
-- [Synonyms overview](./merchandising/synonyms/overview.md)
+- [Settings](../settings.md)
+- [Search performance](search-performance.md)
+- [Merchandising rules overview](../merchandising/rules/overview.md)
+- [Add search rules](../merchandising/rules/add.md)
+- [Synonyms overview](../merchandising/synonyms/overview.md)

@@ -42,7 +42,7 @@ The *Search performance* page provides insight into the search terms that shoppe
 
 >[!NOTE]
 >
->To understand how product discovery ranks **exact and near matches**, same-field matches, and broader matches (and how that interacts with keyword weights and merchandising rules), see [Search matching and ranking](../search-relevance-matching.md).
+>To understand how product discovery ranks **exact and near matches**, same-field matches, and broader matches (and how that interacts with keyword weights and merchandising rules), see [Search matching and ranking](search-relevance-matching.md).
 
 ## Choose the **Catalog view**
 
