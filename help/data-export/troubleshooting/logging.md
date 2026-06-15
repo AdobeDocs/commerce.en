@@ -148,22 +148,7 @@ If you see errors not related to configuration or third-party extensions, submit
 
 ### Resolve catalog sync issues {#resolvesync}
 
-When you trigger a data resync, it can take up to an hour for the data to update and be reflected in UI components such as live search and recommendation units. If you still see discrepancies between your catalog and data on the Commerce storefront, or if the catalog sync failed, refer to the following:
-
-#### Data discrepancy
-
-1. Display the detailed view of the product in question in the search results.
-1. Copy the JSON output and verify that the content matches what you have in the [!DNL Commerce] catalog.
-1. If the content does not match, make a minor change to the product in your catalog, such as adding a space or a period.
-1. Wait for a resync or trigger a manual resync from the CLI or the Admin dashboard.
-
-#### Sync not running
-
-If the sync is not running on a schedule or nothing is synced, see this [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) article.
-
-#### Sync failed
-
-If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+For symptom-based troubleshooting of catalog sync issues - including data discrepancies, sync not running, and failed sync status - see [Symptoms and resolutions](symptoms-and-resolutions.md).
 
 ## Extended logging
 
