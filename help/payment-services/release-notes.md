@@ -113,11 +113,9 @@ _June 28, 2021_
 
 ## v2.15.0
 
-_June 15, 2026_
+_June 16, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
-
-![New](../assets/new.svg)<!-- PAY-6568 --> Now, [!DNL Google Pay] express checkout uses the Payments JavaScript SDK for [!DNL Payment Services], improving maintainability and simplifying storefront updates.
 
 ![New](../assets/new.svg)<!-- PAY-6564 --> Now, [!DNL Google Pay] express checkout can show shipping methods in the Google Pay sheet using client-side shipping callbacks, so shoppers select shipping before they confirm payment. Merchants can show or hide a separate Google Pay review step using **[!UICONTROL Skip Review]** in [Google Pay configuration](configure-admin.md#google-pay). When the review step is skipped, shipping options stay in the sheet when the wallet address or shipping method changes.
 
@@ -131,7 +129,7 @@ _June 15, 2026_
 
 ![New](../assets/new.svg)<!-- PAY-6659 --> [!DNL PayPal] checkout is updated to the latest Payments JavaScript SDK for [!DNL Payment Services], improving maintainability and simplifying storefront updates.
 
-![New](../assets/new.svg)<!-- PAY-6611 --> Now, the Magento order detail page displays additional [!DNL PayPal] and card payment information for each transaction.
+![New](../assets/new.svg)<!-- PAY-6611 --> Now, the [!DNL Adobe Commerce] order detail page displays additional payment details for transactions processed through [!DNL Payment Services], including [!DNL PayPal] Transaction ID, PayPal debug ID, payer email, Merchant Protection Eligibility, and AVS/CVV verification codes. See [3DS](security.md#3ds) for more information.
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
 
