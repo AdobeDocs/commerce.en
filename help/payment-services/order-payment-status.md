@@ -104,11 +104,11 @@ Detect when a pending capture transaction enters a `Completed` status so merchan
 
 >[!NOTE]
 >
->Asynchronous monitoring is disabled by default. While it is disabled, orders with a `Pending` capture transaction are not moved into `Payment Review` status automatically. Enable the feature with the steps below to use this behavior.
+>Asynchronous monitoring is disabled by default. When disabled, orders with a `Pending` capture transaction do not automatically move to `Payment Review`. To enable this behavior, turn on asynchronous monitoring by following the steps below.
 
-To enable asynchronous monitoring, complete the following steps: [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+Enable asynchronous monitoring: [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
 
-1. Enable the `async_status_updates` setting. This setting is not available in the Admin, so set it from the command line:
+1. Enable the `async_status_updates` setting. Because this setting is not available in the Admin, enable it from the command line:
 
    ```bash
    bin/magento config:set payment/payment_services/async_status_updates 1
@@ -116,7 +116,7 @@ To enable asynchronous monitoring, complete the following steps: [!BADGE PaaS on
 
 1. Enable and schedule the `sync_order_payment_status` cron job so that status updates are fetched automatically. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
 
-Once both the setting and the cron job are enabled, the job runs every 10 minutes to fetch updates for orders that are in a `Payment Review` status. No other interventions are expected from the merchant.
+Once the setting and cron job are enabled, the cron job runs every 10 minutes to fetch updates for orders in `Payment Review` status. After setup, no additional merchant action is required under normal operation.
 
 
 Merchants can check the updated payment status via the Order payment status report view.
