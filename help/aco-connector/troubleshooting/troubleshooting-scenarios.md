@@ -52,7 +52,7 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 **Issue:** Some products do not appear in [!DNL Adobe Commerce Optimizer] after a full catalog sync.
 
-**Cause:** The catalog feed includes only products assigned to the configured catalog source website and store view. Products that are disabled, not visible in catalog, or fail validation during export are omitted from sync.
+**Cause:** If products fail validation during export they are omitted from sync. Products that are disabled or not visible in catalog will not be returned by the products API.
 
 **Solution:**
 
