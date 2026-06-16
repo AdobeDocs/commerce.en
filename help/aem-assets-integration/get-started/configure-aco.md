@@ -37,27 +37,29 @@ Before configuring the integration, ensure you have:
 
 Complete the AEM Assets steps **before** you [open a support ticket](#onboarding) for tenant registration. The installation pattern matches Adobe Commerce as a Cloud Service—see [Configure the AEM Assets project to support Commerce metadata](configure-aem.md).
 
-### Step 1: Deploy the AEM Commerce package
+### Step 1: Enable the Commerce integration in AEM
 
-Install and deploy the `assets-commerce` package in your AEM project so Commerce metadata schemas, events, and UI are available.
+Make the Commerce metadata schemas, events, and UI available in your AEM project before you open a support ticket.
 
-Complete the full procedure in [Install the `assets-commerce` package](configure-aem.md#step-1-install-the-assets-commerce-package). Before you open a support ticket, follow these steps:
+* [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-the-commerce-integration-self-service).
 
-1. Clone the Cloud Manager Git repository and copy the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce) code into your project.
+* On earlier AEM releases, deploy the `assets-commerce` package manually:
 
-1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of &lt;my-app&gt; with your app name.
+  1. Clone the Cloud Manager Git repository and copy the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce) code into your project.
 
-1. Commit, push, run your deployment pipeline, and validate that the **[!UICONTROL Commerce]** tab appears on asset properties.
+  1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of &lt;my-app&gt; with your app name.
 
-See [Install the `assets-commerce` package](configure-aem.md#step-1-install-the-assets-commerce-package) for Cloud Manager screenshots, pipeline steps, and troubleshooting if the **[!UICONTROL Commerce]** tab is missing.
+  1. Commit, push, run your deployment pipeline, and validate that the **[!UICONTROL Commerce]** tab appears on asset properties.
+
+  See [Install the `assets-commerce` package manually](configure-aem.md#install-the-assets-commerce-package-manually) for Cloud Manager screenshots, pipeline steps, and troubleshooting if the **[!UICONTROL Commerce]** tab is missing.
 
 ### Step 2: Enable Dynamic Media with OpenAPI
 
-Dynamic Media with OpenAPI capabilities must be enabled on your AEM Assets environment. Self-service paths (for example Cloud Manager for Product Visuals) and Adobe Support routes are described under [Configure the AEM Assets project](configure-aem.md#prerequisites).
+Dynamic Media with OpenAPI capabilities must be enabled on your AEM Assets environment. The self-service flow activates it from the Cloud Manager environment **[!UICONTROL General]** tab—see [Activate Dynamic Media with OpenAPI capabilities](configure-aem.md#step-3-activate-dynamic-media-with-openapi-capabilities). On earlier releases, use the Adobe Support route described in the [manual prerequisites](configure-aem.md#prerequisites).
 
 ### Step 3: Apply Commerce metadata and approve assets
 
-Add Commerce metadata to your product images in AEM Assets—for field definitions see [AEM Commerce package contents](configure-aem.md#aem-commerce-assets-commerce-package-contents).
+Add Commerce metadata to your product images in AEM Assets—for field definitions see [AEM Commerce package contents](metadata.md#aem-commerce-assets-commerce-package-contents).
 
 The asset must be in an **approved** status for the data sync to trigger. Saving metadata alone does not trigger the event.
 
@@ -65,7 +67,7 @@ The asset must be in an **approved** status for the data sync to trigger. Saving
 
 If you choose to use AEM metadata profiles to streamline authoring, configure them **after** the package is deployed and your team understands required Commerce fields—same optional pattern as **Configure the AEM Assets project**.
 
-See [Configure a metadata profile](configure-aem.md#step-2-optional-configure-a-metadata-profile).
+See [Configure a metadata profile](configure-aem.md#configure-a-metadata-profile-optional).
 
 ## Limitations
 

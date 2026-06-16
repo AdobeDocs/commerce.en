@@ -40,3 +40,46 @@ To enable the integration in Commerce storefronts powered by Edge Delivery Servi
 The Commerce drop-ins automatically detect the `commerce-assets-enabled` configuration and adjust image handling accordingly.
 
 For more information on how to use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
+
+## Connect AEM Assets to your storefront
+
+Use the following steps to connect AEM Assets to a storefront authored in Document Authoring (Da.live). After you connect, you can browse and insert AEM assets directly from the **[!UICONTROL Content Advisor]**.
+
+### Step 1: Open your site config in Da.live
+
+1. Go to [Da.live](https://da.live){target=_blank} and locate your storefront. Double-click it to open.
+
+1. In the breadcrumb, select the cog icon (**⚙**) next to your site name to open your site config spreadsheet.
+
+### Step 2: Copy your AEM repository URL
+
+1. In a new tab, go to [experience.adobe.com](https://experience.adobe.com){target=_blank} and navigate to **[!UICONTROL Experience Manager]**.
+
+1. Scroll to the **[!UICONTROL My Authoring]** section and select **[!UICONTROL Assets]** next to your **[!UICONTROL Production]** environment to open Adobe Experience Manager Assets.
+
+1. From the browser address bar, copy the segment that starts with `author` up to and including `.com`—for example, `author-p107634-e1009805.adobeaemcloud.com`.
+
+### Step 3: Add the repository ID to your config
+
+1. Return to Da.live and select **[!UICONTROL data]** in your site config.
+
+1. Complete the spreadsheet as follows:
+
+   | Cell | Value |
+   |---|---|
+   | A1 | `key` |
+   | B1 | `value` |
+   | A2 | `aem.repositoryId` |
+   | B2 | The URL that you copied in Step 2 |
+
+1. Select **[!UICONTROL Save]**, then select the back arrow next to your site name to return to the site root.
+
+### Step 4: Connect AEM Assets through the Library
+
+1. From the site root, select the **[!UICONTROL index]** folder to open it.
+
+1. In the editor, open the **[!UICONTROL Library]** panel and select **[!UICONTROL AEM Assets]**.
+
+   The **[!UICONTROL Content Advisor]** popover opens and shows your AEM Assets folders and files.
+
+Your storefront is now connected to AEM Assets. You can browse and insert assets directly from the **[!UICONTROL Content Advisor]**.

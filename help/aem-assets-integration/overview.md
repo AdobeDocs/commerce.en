@@ -110,16 +110,57 @@ Learn how to use Adobe Commerce as a Cloud Service with the AEM Assets integrati
 
 ## Next steps
 
-Enabling the Commerce integration with Experience Manager Assets is a three step process:
+The steps depend on your Adobe Commerce deployment. In all cases, you first configure AEM Assets, then connect Commerce to it.
 
-1. [Configure your AEM Assets project to support Commerce metadata](get-started/configure-aem.md).
+Before you begin, review [Commerce metadata in AEM Assets](get-started/metadata.md) to understand the namespace, metadata schema, and **[!UICONTROL Commerce]** tab that the integration adds to your AEM Assets environment.
 
-1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](get-started/configure-commerce.md).
+Select your deployment to follow the required steps in order:
 
-1. Configure the integration for your environment:
+>[!BEGINTABS]
 
-   * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Adobe Commerce (PaaS/ACCS)](get-started/setup-synchronization.md)
-   * [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} [Adobe Commerce Optimizer](get-started/configure-aco.md)
+>[!TAB Adobe Commerce as a Cloud Service]
+
+[!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service projects only (Adobe-managed SaaS infrastructure)."}
+
+1. [Configure the AEM Assets project to support Commerce metadata](get-started/configure-aem.md). On AEM release `2026.5.26309` and later, use the [self-service onboarding](get-started/configure-aem.md#enable-the-commerce-integration-self-service); on earlier releases, install the `assets-commerce` package manually.
+
+1. [Configure IMS user permissions](get-started/permissions.md) so the Asset Selector and the auto-populated **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** fields are available.
+
+1. [Configure the integration in the Commerce Admin](get-started/setup-synchronization.md).
+
+1. Optional. [Configure your storefront](get-started/configure-storefront.md) to display AEM assets on a storefront powered by Edge Delivery Services.
+
+>[!TAB Adobe Commerce on Cloud (PaaS)]
+
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}
+
+1. [Configure the AEM Assets project to support Commerce metadata](get-started/configure-aem.md). On AEM release `2026.5.26309` and later, use the [self-service onboarding](get-started/configure-aem.md#enable-the-commerce-integration-self-service); on earlier releases, install the `assets-commerce` package manually.
+
+1. [Install Adobe Commerce packages](get-started/configure-commerce.md) to add the extension and generate the required credentials and connections.
+
+1. [Configure IMS user permissions](get-started/permissions.md) so the Asset Selector and the auto-populated **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** fields are available.
+
+1. [Configure the integration in the Commerce Admin](get-started/setup-synchronization.md).
+
+1. Optional. [Configure your storefront](get-started/configure-storefront.md) to display AEM assets on a storefront powered by Edge Delivery Services.
+
+>[!TAB Adobe Commerce Optimizer]
+
+[!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce Optimizer projects only."}
+
+[!DNL Adobe Commerce Optimizer] has no Admin configuration UI. Adobe Support configures the integration from your onboarding ticket, so prepare AEM Assets first.
+
+1. [Configure the AEM Assets project to support Commerce metadata](get-started/configure-aem.md). On AEM release `2026.5.26309` and later, use the [self-service onboarding](get-started/configure-aem.md#enable-the-commerce-integration-self-service); on earlier releases, install the `assets-commerce` package manually.
+
+1. [Submit the onboarding support ticket](get-started/configure-aco.md#onboarding) with your tenant ID, AEM Program ID, AEM Environment ID, matching rule, layer, and locale.
+
+1. [Configure your catalog view](get-started/configure-aco.md#onboarding) with the same locale and layer that you registered in the ticket.
+
+1. Optional. [Configure your storefront](get-started/configure-storefront.md) to display AEM assets on a storefront powered by Edge Delivery Services.
+
+   For the full procedure, limitations, and layer guidance, see [Configure AEM Assets for Commerce Optimizer](get-started/configure-aco.md).
+
+>[!ENDTABS]
 
 ## Support
 

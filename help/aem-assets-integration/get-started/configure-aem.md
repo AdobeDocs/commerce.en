@@ -23,70 +23,82 @@ topic_v2:
 ---
 # Configure the AEM Assets project to support Commerce metadata
 
-When you use AEM Assets as a Digital Asset Management system (DAM) for Commerce, installing the `assets-commerce` package allows you to manage images and videos for Commerce products from the AEM authoring environment.
+This topic explains how to configure your AEM Assets project so the Commerce namespace, metadata schema, and **[!UICONTROL Commerce]** tab are available in the AEM authoring environment. For background on the resources these steps add, see [Commerce metadata in AEM Assets](metadata.md).
 
-Complete the following steps to configure the AEM Assets project with the required package code and metadata to manage Commerce assets from the AEM authoring environment:
+There are two ways to configure this:
 
-1. [Learn about the `assets-commerce` package contents](#aem-commerce-assets-commerce-package-contents)
+* [!BADGE Recommended]{type=Positive} **Self-service onboarding** — On AEM releases `2026.5.26309` and later, enable the integration directly from Cloud Manager by setting an environment variable and activating Dynamic Media with OpenAPI capabilities. No custom code deployment is required. See [Enable the Commerce integration (self-service)](#enable-the-commerce-integration-self-service).
 
-1. [Complete the installation steps to configure the AEM Assets project to support Commerce metadata](#step-1-install-the-assets-commerce-package)
+* **Manual configuration** — Deploy the `assets-commerce` package through a Cloud Manager pipeline. Use these manual steps when you must deploy custom package code, or on AEM releases earlier than `2026.5.26309`. See [Install the assets-commerce package manually](#install-the-assets-commerce-package-manually).
 
-## AEM Commerce assets-commerce package contents
+## Enable the Commerce integration (self-service)
 
-Adobe provides an AEM Commerce package code `assets-commerce` to add Commerce namespace and Metadata Schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
+[!BADGE Supported]{type=Informative tooltip="Supported"} AEM release `2026.5.26309` and later.
 
-This package code adds the following resources to the AEM Assets authoring environment:
+On supported AEM releases, you enable the Commerce integration from Cloud Manager without deploying any custom code. The Commerce namespace, metadata schema, and **[!UICONTROL Commerce]** tab are provisioned automatically when you enable the integration on the Author service.
 
-* A [custom namespace](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json), `Commerce` to identify Commerce-related properties.
+### Self-service prerequisites
 
-  * A custom metadata type `commerce:isCommerce` with the label `Eligible for Commerce` to tag Commerce assets associated with an Adobe Commerce project.
+* [Access to the AEM Cloud Manager Program and environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) with the Program and Deployment Manager roles.
 
-  * A custom metadata type `commerce:skus` and a corresponding UI component to add a **[!UICONTROL Product Data]** property. Product Data includes the metadata properties to associate a Commerce asset with product SKUs.
+* An AEM program on release `2026.5.26309` or later.
 
-      ![Custom Product Data UI Control](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+* The **IMS Org ID** for your Commerce instance. Both your Commerce instance and AEM Assets authoring environment must be in the same IMS organization.
 
-  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes to show how the asset is visualized in Commerce.
+### Step 1: Create the program and environments
 
-  * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text keyed by Commerce store view code. This does not change how product images are assigned or scoped in the catalog. See [Alt text in AEM Assets metadata](#localized-alt-text-in-aem-assets-metadata).
+1. In Cloud Manager, select **[!UICONTROL Add Program]**, then choose **[!UICONTROL Set up for production]** and name the program.
 
-* A metadata schema form with a Commerce tab that includes the `Eligible for Commerce` and `Product Data` fields for tagging Commerce assets. The form also provides options to show or hide the `roles` and `position` fields from the AEM Assets UI.
+1. On the **[!UICONTROL Solutions & Add-ons]** step, select the solutions and add-ons that your project requires, including **[!UICONTROL Dynamic Media]**. Continue and create the program.
 
-  ![Commerce tab for AEM Assets metadata schema form](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
+   ![Cloud Manager Solutions and Add-ons step with Dynamic Media selected](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-* A [sample tagged and approved Commerce asset](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg` to support initial asset synchronization. Only approved Commerce assets can be synchronized from AEM Assets to Adobe Commerce.
+1. After the program is configured, select **[!UICONTROL Add Environment]**, choose **[!UICONTROL Production + Stage]**, set the region, and select **[!UICONTROL Save]**.
+
+   ![Cloud Manager Add environment dialog with Production and Stage details](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
+
+### Step 2: Enable the Commerce integration variable
+
+1. Open the environment and select the **[!UICONTROL Configuration]** tab.
+
+1. Add an environment variable with the following values, then select **[!UICONTROL Add]** and **[!UICONTROL Save]**:
+
+   | Field | Value |
+   |---|---|
+   | Name | `COMMERCE_INTEGRATION_ENABLED` |
+   | Value | `true` |
+   | Service applied | Author |
+   | Type | Variable |
+
+   ![Cloud Manager environment configuration with the COMMERCE_INTEGRATION_ENABLED variable applied to the Author service](../assets/aem-cloud-manager-commerce-integration-variable.png){width="600" zoomable="yes"}
+
+   The environment updates to apply the configuration. Wait until the environment status returns to **[!UICONTROL Running]**.
+
+### Step 3: Activate Dynamic Media with OpenAPI capabilities
+
+1. On the environment **[!UICONTROL General]** tab, locate **[!UICONTROL Dynamic Media]**.
+
+1. Next to *OpenAPI capabilities are available*, select **[!UICONTROL Click to activate]**.
+
+   ![Environment General tab showing the Dynamic Media OpenAPI activation link](../assets/aem-cloud-manager-dynamic-media-activate.png){width="600" zoomable="yes"}
+
+   Activation runs in the background. When it completes, the environment is ready for the Commerce integration.
+
+   >[!NOTE]
+   >
+   > If **[!UICONTROL Click to activate]** is not available, open a support ticket to enable Dynamic Media with OpenAPI capabilities.
+
+### Step 4: Validate the configuration
+
+Go to any asset and edit its properties. Confirm that the default Metadata Schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]** and **[!UICONTROL Eligible for Commerce]** fields are visible.
+
+## Install the assets-commerce package manually
 
 >[!NOTE]
 >
-> See the [readme](https://github.com/ankumalh/assets-commerce) page on GitHub for more information about the **AEM Commerce package code**.
+> Use these manual steps when you must deploy custom package code, or on AEM releases earlier than `2026.5.26309`. On supported releases, use [Enable the Commerce integration (self-service)](#enable-the-commerce-integration-self-service) instead.
 
-## Alt text in AEM Assets metadata
-
-The _[!UICONTROL Alt texts]_ multifield is available in the AEM Assets asset metadata editor on the **[!UICONTROL Commerce]** tab when you edit an eligible image.
-
->[!IMPORTANT]
->
-> Per-store view behavior applies to alternative text only. The AEM Assets integration does not synchronize different product images per Adobe Commerce store view. Product images from AEM continue to sync into Commerce with the same gallery assignment behavior as before this release.
-
-The multifield contains one row per Commerce store view. Each row has two inputs:
-
-* **[!UICONTROL Store View Code]** — The store view identifier (for example `default` or `en_US`).
-
-* **[!UICONTROL Alt Text]** — Alternative text for that store view, limited to 255 characters.
-
-Select **[!UICONTROL Add]** to add more rows for additional store views. To remove a row, select the **[!UICONTROL Delete]** icon on that row to remove it.
-
-![Alt texts multifield with Store View Code and Alt Text inputs](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
-
-When you save, client-side validation blocks submission if any row has an empty _[!UICONTROL Store View Code]_ or if two rows use the same store view code (case-insensitive).
-
-Alternative text entries are persisted in JCR asset metadata as two index-aligned `String[]` properties:
-
-* `commerce:altTextStoreViews`: Store view code for each row.
-* `commerce:altTextValues`: Matching alt text at the same index as each entry in `commerce:altTextStoreViews`.
-
-When these assets synchronize to Adobe Commerce, per-store view alt text is written to the product media gallery for the matching store view codes. The underlying image mapping is unchanged.
-
-## Prerequisites
+### Prerequisites
 
 You need the following resources and permissions to deploy the `assets-commerce` package code to the AEM Assets as a Cloud Service AEM environment:
 
@@ -131,7 +143,7 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 >[!ENDTABS]
 
-## Step 1: Install the assets-commerce package
+### Installation steps
 
 1. Navigate to the AEM Cloud Manager, select a program, and [create production and staging environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) that you want to integrate with Adobe Commerce.
 
@@ -185,7 +197,7 @@ If the **Commerce** tab does not appear in properties, you must manually complet
 
 If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) or contact your AEM Assets Integration sales representative for help.
 
-## Step 2: Optional. Configure a metadata profile
+## Configure a metadata profile (optional)
 
 In the AEM Assets author environment, set default values for Commerce asset metadata by creating a metadata profile. Then, apply the new profile to AEM Asset folders to automatically use these defaults. This configuration streamlines asset processing by reducing manual steps.
 
