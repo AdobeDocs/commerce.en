@@ -4,6 +4,7 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: This guide provides detailed instructions for using [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
+nudge: true
 ---
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
