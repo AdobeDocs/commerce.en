@@ -45,11 +45,13 @@ For more information on how to use AEM Assets with the Commerce Storefront power
 
 Use the following steps to connect AEM Assets to a storefront authored in Document Authoring (Da.live). After you connect, you can browse and insert AEM assets directly from the **[!UICONTROL Content Advisor]**.
 
+These steps summarize the [Da.live](https://da.live){target=_blank} setup. For the complete reference, see [Setup AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} in the Da.live documentation and [Integrate AEM Assets while authoring content for Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services){target=_blank} in the AEM Assets documentation.
+
 ### Step 1: Open your site config in Da.live
 
 1. Go to [Da.live](https://da.live){target=_blank} and locate your storefront. Double-click it to open.
 
-1. In the breadcrumb, select the cog icon (**⚙**) next to your site name to open your site config spreadsheet.
+2. In the breadcrumb, click settings to open your site config spreadsheet.
 
 ### Step 2: Copy your AEM repository URL
 
@@ -74,6 +76,10 @@ Use the following steps to connect AEM Assets to a storefront authored in Docume
 
 1. Select **[!UICONTROL Save]**, then select the back arrow next to your site name to return to the site root.
 
+   >[!NOTE]
+   >
+   > The `author-` prefixed host browses assets from the author tier. To deliver assets through Dynamic Media instead, use a `delivery-` prefixed host. For all `aem.repositoryId` options, see [Setup AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}.
+
 ### Step 4: Connect AEM Assets through the Library
 
 1. From the site root, select the **[!UICONTROL index]** folder to open it.
@@ -83,3 +89,11 @@ Use the following steps to connect AEM Assets to a storefront authored in Docume
    The **[!UICONTROL Content Advisor]** popover opens and shows your AEM Assets folders and files.
 
 Your storefront is now connected to AEM Assets. You can browse and insert assets directly from the **[!UICONTROL Content Advisor]**.
+
+## Related documentation
+
+* [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/){target=_blank} in the *Adobe Commerce Storefront* documentation—storefront configuration and image-handling behavior.
+
+* [Integrate AEM Assets while authoring content for Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services){target=_blank} in the *AEM Assets* documentation.
+
+* [Setup AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} and [Working with media](https://docs.da.live/authors/guides/adding-media){target=_blank} in the Da.live documentation.
