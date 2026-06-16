@@ -62,7 +62,7 @@ Adobe Commerce on Cloud and on-premises merchants must enable semantic search ma
 
    Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
 
-### For ACCS customers
+### For [!DNL Adobe Commerce as a Cloud Service] customers
 
 [!DNL Adobe Commerce as a Cloud Service] customers use the same **Settings** workspace in the [!DNL Live Search] Admin. Semantic search is **enabled by default** for eligible English catalogs. Confirm **[!UICONTROL Semantic search]** is enabled, or disable it if you do not want semantic matching on the storefront.
 
