@@ -100,6 +100,10 @@ The `productAttributes` feed sends data to the [Metadata endpoint](https://devel
 | `OBJECT` | - | `OBJECT` |
 | any other | - | `TEXT` |
 
+>[!NOTE]
+>
+>When an attribute's `dataType` is set to `OBJECT`, the [products API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} treats the attribute value as a structured object rather than a plain string. At query time, the API attempts to parse the stored value as JSON; if parsing succeeds, the result is returned as a nested object in the response. This is especially relevant when supplying custom attributes dynamically - for example, to carry structured or multi-field data that cannot be represented as a scalar value. See [Add product attributes dynamically](../../data-export/add-attribute-dynamically.md) for details.
+
 ## Price books
 
 The `priceBooks` feed sends data to the [Price books endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.

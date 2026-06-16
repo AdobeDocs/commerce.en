@@ -69,6 +69,16 @@ The price book feed uses a scope that maps to a specific website and customer gr
 - Verify that the website is configured for sync in the connector's export configuration. See [Customize the data export configuration](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirm that the price book ID used in [!DNL Commerce Optimizer] present in [catalog view](../../optimizer/setup/catalog-view.md) configuration used to perform the products query.
 
+## Data in [!DNL Adobe Commerce Optimizer] is overwritten or unexpectedly modified after sync
+
+**Symptom:** Data changes applied directly in [!DNL Adobe Commerce Optimizer] by an external system (such as a PIM or ERP) are lost or reverted after the connector runs a sync.
+
+**Likely cause:** When more than one integration endpoint writes to [!DNL Adobe Commerce Optimizer] - for example, a PIM or another system that creates, modifies, or deletes data independently of [!DNL Adobe Commerce] - conflicts can occur. The connector is a one-way push from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] and has no pullback mechanism. Any data written directly to [!DNL Adobe Commerce Optimizer] by an external system is not reflected back in [!DNL Adobe Commerce] and may be overwritten on the next sync.
+
+**Resolution:**
+
+Instead of writing catalog modifications directly to [!DNL Adobe Commerce Optimizer], use [catalog layers](../../optimizer/setup/catalog-layer.md) to apply changes outside of [!DNL Adobe Commerce]. Product layers let external systems enrich or override catalog data within [!DNL Adobe Commerce Optimizer] without conflicting with the connector sync.
+
 ## Troubleshooting scenarios for common [!DNL SaaS Data Export] issues
 
 For issues related to the underlying [!DNL SaaS Data Export] that may affect the connector, see [Troubleshooting scenarios for [!DNL SaaS Data Export]](../../data-export/troubleshooting/symptoms-and-resolutions.md).
