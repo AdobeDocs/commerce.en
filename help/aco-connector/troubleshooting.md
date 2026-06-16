@@ -70,4 +70,4 @@ For a catalog of specific behaviors caused by misconfiguration or misinterpretat
 
 ## [!DNL SaaS Data Export] diagnostics
 
-For lower-level [!DNL SaaS Data Export] diagnostics including log locations and feed resync commands, see the [[!DNL SaaS Data Export] troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
+For lower-level [!DNL SaaS Data Export] diagnostics including log locations and feed resync commands, see the [[!DNL SaaS Data Export] troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
