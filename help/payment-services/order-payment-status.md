@@ -116,9 +116,8 @@ To enable asynchronous monitoring, complete the following steps: [!BADGE PaaS on
 
 1. Enable and schedule the `sync_order_payment_status` cron job so that status updates are fetched automatically. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
 
-Once both the setting and the cron job are enabled, the job runs every 30 minutes to fetch updates for orders that are in a `Payment Review` status. No other interventions are expected from the merchant.
+Once both the setting and the cron job are enabled, the job runs every 10 minutes to fetch updates for orders that are in a `Payment Review` status. No other interventions are expected from the merchant.
 
-Merchants can check the updated payment status via the Order payment status report view.
 
 Merchants can check the updated payment status via the Order payment status report view.
 
