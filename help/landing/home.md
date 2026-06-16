@@ -169,18 +169,6 @@ Integration services refer to features that connect your Commerce instance to ot
       <p>
          <em>Simplify digital asset management using a system that integrates with Adobe Experience Manager for managing rich media content.</em>
       </p>
-      <br/>
-      <a href="../llmo-integration/overview.md">
-      <img alt="LLM optimization" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-          <a href="../llmo-integration/overview.md">
-         <strong>[!DNL Adobe LLM Optimizer] integration</strong>
-         </a>
-      </div>
-      <p>
-         <em>Connect your catalog to [!DNL Adobe LLM Optimizer] to monitor how products appear in AI-driven answers and deploy approved product name and description updates from opportunities back into [!DNL Adobe Commerce].</em>
-      </p>
    </td>
    <td valign="top">
       <a href="../app-management/overview.md">
