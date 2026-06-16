@@ -248,7 +248,7 @@ Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/c
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
-You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and the data export extension logs.
+You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md) and the [data export extension logs](../data-export/troubleshooting/logging.md).
 
 #### Future product updates
 

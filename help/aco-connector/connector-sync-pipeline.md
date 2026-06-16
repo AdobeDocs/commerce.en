@@ -97,7 +97,7 @@ For details on customizing the synchronization scope, see [Customize the Commerc
 | Transient failures | Retried every 5 minutes |
 | Full sync or large catalogs | Minutes to hours |
 
-Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
+Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./data-sync-manage.md#verify-that-the-data-sync-is-working).
 
 ## Feed submission and error handling
 

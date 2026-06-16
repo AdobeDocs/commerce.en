@@ -69,7 +69,7 @@ Complete these checks in your Cloud project.
 &#x25A2; The Commerce Optimizer connector is [installed and configured](../../aco-connector/get-started.md).
 &#x25A2; The `aco:conf:show` CLI command confirms connection to the production Commerce Optimizer instance. The organization ID, client ID, ingestion URL, and Commerce Optimizer URL match production.
 &#x25A2; Synchronization scopes in [Export configuration](../../aco-connector/get-started.md) match your requirements.
-&#x25A2; [Data feed sync status](../../aco-connector/get-started.md) confirms data export from the Cloud instance.
+&#x25A2; [Data feed sync status](../../aco-connector/data-sync-manage.md) confirms data export from the Cloud instance.
 
 ### In Commerce Optimizer
 

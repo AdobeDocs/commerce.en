@@ -178,4 +178,4 @@ To ensure that the catalog export is running correctly:
 
 ### Monitor and troubleshoot data synchronization
 
-From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md) and [logs](../data-export/troubleshooting/logging.md) to manage and troubleshoot the process.

@@ -49,7 +49,7 @@ If `aco:config:init` fails during credential validation:
 
 **Check item-level error details:**
 
-See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working) for steps to open **[!UICONTROL Data Feed Sync Status]** in the Commerce Admin. Select the failing feed to view per-item error details.
+See [Verify that the data sync is working](./data-sync-manage.md#verify-that-the-data-sync-is-working) for steps to open **[!UICONTROL Data Feed Sync Status]** in the Commerce Admin. Select the failing feed to view per-item error details.
 
 Key points about error handling:
 

@@ -75,7 +75,7 @@ _May 19, 2026_
 
 _May 5, 2026_
 
-![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the Log Codes Reference.
+![Fix](../assets/fix.svg) **Easier troubleshooting from export logs**–Many export-related errors and warnings now include consistent log codes. These codes help you trace issues faster when working with support or documentation. For details, see the [Log codes reference](troubleshooting/log-codes-reference.md).
 <!--MDEE-1276-->
 
 ![Fix](../assets/fix.svg) **Automatic resync when attribute option labels change**–Changing product attribute option labels for a store view (including multiselect attributes) now queues the affected products for export again so that Live Search, Product Recommendations, Catalog Service, and other connected Commerce services display the updated facet and filter labels in shopper views. Previously, label-only edits could leave SaaS catalogs showing stale wording until a broader product change triggered a sync.
