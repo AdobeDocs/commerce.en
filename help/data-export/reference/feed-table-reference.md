@@ -41,7 +41,7 @@ See [Synchronization modes](../sync-overview.md#synchronization-modes).
 | `id` | INT (PK) | Auto-increment primary key |
 | `source_entity_id` | INT | Entity ID from the Commerce source table (for example, `catalog_product_entity.entity_id`) |
 | `feed_id` | VARCHAR | Unique identifier for a feed item. Computed as a hash of the item's identity fields (for example, `sku + storeViewCode`), not an auto-increment value. |
-| `feed_data` | JSON | Feed payload for this item. Only min information as entitiy identifier and scope is populated. When `PERSIST_EXPORTED_FEED=1` is set full payload is stored. |
+| `feed_data` | JSON | Feed payload for this item. Only minimal information as entity identifier and scope is populated. When `PERSIST_EXPORTED_FEED=1` is set, full payload is stored. |
 | `feed_hash` | VARCHAR | Content hash used for change detection. Computed from the payload, excluding timestamps (`modifiedAt`, `updatedAt`). If the hash matches the previous export, the item is not re-submitted. |
 | `is_deleted` | TINYINT | Soft-delete marker. Set to `1` when the entity is deleted in Commerce. |
 | `modified_at` | TIMESTAMP | Last time this feed item was modified |

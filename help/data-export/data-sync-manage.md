@@ -47,7 +47,7 @@ For Commerce on cloud or on-premises deployments integrated with [!DNL Commerce 
 
 - **[Data Sync page](../optimizer/setup/data-sync.md)**—The Data Sync page gives an overview of synchronization status for product data coming from your upstream catalog source into [!DNL Commerce Optimizer].
 
-For details on how to use these dashboards to verify that data sync is working and to manually resync data, see the [Connector Sync Pipeline](../aco-connector/data-sync-manage.md) in the _Adobe Commerce Optimizer Connector Guide_.
+For details on how to use these dashboards to verify that data sync is working and to manually resync data, see [Manage synchronization](../aco-connector/data-sync-manage.md) in the _Adobe Commerce Optimizer Connector Guide_.
 
 >[!ENDTABS]
 
