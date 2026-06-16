@@ -40,7 +40,7 @@ Catalog views define how your product catalog is organized and displayed. They a
 - **Which products are visible** based on business structure (brands, regions, dealers)
 - **What pricing is shown** through linked price books
 - **How products are filtered** using policies (attributes like brand, model, category)
-- **What [catalog source](catalog-source.md) is used** based on attributes like locale
+- **What [catalog source](catalog-sources.md) is used** based on attributes like locale
   
 Think of catalog views as different "lenses" through which customers see your catalog. For example:
 
@@ -67,7 +67,7 @@ Before creating a catalog view, ensure you have:
 1. Configure the catalog view details:
 
     - **Name**—Enter the name of the catalog view, for example `Celport`. ​
-    - **Catalog sources**—Select the [catalog source](catalog-source.md), for example `en-US`.
+    - **Catalog sources**—Select the [catalog source](catalog-sources.md), for example `en-US`.
     - **Catalog layers**-Review ingested layers and priority.
     - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
@@ -206,7 +206,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 
 ## More like this
 
-- [Catalog sources](catalog-source.md) - Define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior
+- [Catalog sources](catalog-sources.md) - Define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior
 - [Catalog layers](catalog-layer.md) - Learn how to modify product data without changing the original source
 - [Policies](policies.md) - Create policies to filter products in catalog views
 - [Price books](pricebooks.md) - Manage pricing structures for different customer segments

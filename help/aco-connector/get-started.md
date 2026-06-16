@@ -122,7 +122,7 @@ The [!DNL Adobe Commerce Optimizer Connector] is delivered as a Composer metapac
 
 ## Customize the Commerce scopes export configuration {#customize-the-commerce-scopes-export-configuration}
 
-By default, catalog data sync is enabled for all Commerce scopes (websites, customer groups, and store views). You can customize the export settings to sync data only for specific scopes based on your business needs. For example, if you have multiple store views that share the same language, you can choose to export data for only one of the store views and use it as the [catalog source](../optimizer/setup/catalog-source.md) for multiple catalog views in [!DNL Commerce Optimizer].
+By default, catalog data sync is enabled for all Commerce scopes (websites, customer groups, and store views). You can customize the export settings to sync data only for specific scopes based on your business needs. For example, if you have multiple store views that share the same language, you can choose to export data for only one of the store views and use it as the [catalog source](../optimizer/setup/catalog-sources.md) for multiple catalog views in [!DNL Commerce Optimizer].
 
 >[!IMPORTANT]
 >
@@ -133,7 +133,7 @@ The following table describes what data is exported at each scope level:
 | Scope | Data exported | Notes |
 | ----- | ------------- | ----- |
 | Website and customer group | Prices and price books | Each set of prices is exported as a [price book](../optimizer/setup/pricebooks.md) using the naming convention `&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`. All customer groups for the website are included. |
-| Store view | Products and product attributes | Each store view creates a separate [catalog source](../optimizer/setup/catalog-source.md) in [!DNL Commerce Optimizer]. |
+| Store view | Products and product attributes | Each store view creates a separate [catalog source](../optimizer/setup/catalog-sources.md) in [!DNL Commerce Optimizer]. |
 
 ![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 

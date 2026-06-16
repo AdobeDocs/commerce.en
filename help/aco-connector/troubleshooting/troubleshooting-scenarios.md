@@ -46,7 +46,7 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 - Wait a few minutes and refresh the [!DNL Adobe Commerce Optimizer] view.
 - Confirm that the tenant ID configured in [!DNL Adobe Commerce] matches the [!DNL Commerce Optimizer] environment you are checking.
-- Verify that the correct [catalog source](../../optimizer/setup/catalog-source.md) (store view code) or price book is selected in [!DNL Commerce Optimizer].
+- Verify that the correct [catalog source](../../optimizer/setup/catalog-sources.md) (store view code) or price book is selected in [!DNL Commerce Optimizer].
 
 ## Products are missing from the exported catalog
 
