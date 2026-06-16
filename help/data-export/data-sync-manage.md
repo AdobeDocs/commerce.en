@@ -61,7 +61,7 @@ Start with export, then confirm delivery.
 
    Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
 
-   ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png){width="600" zoomable="yes"}
+   ![Data Feed Sync Status page with feed item status reporting](./assets/data-feed-sync-status.png){width="800" zoomable="yes"}
 
    When the sync is running, the feed data shows successfully sent records. Select a feed to view details or troubleshoot sync issues.
 
@@ -69,7 +69,7 @@ Start with export, then confirm delivery.
 
    From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**.
 
-   ![Data Management dashboard showing synced catalog data in connected Commerce Services](./assets/data-management-dashboard.png){width="600" zoomable="yes"}
+   ![Data Management dashboard showing synced catalog data in connected Commerce Services](./assets/data-management-dashboard.png){width="700" zoomable="yes"}
 
    Verify that the expected products, prices, and attributes appear.
 
