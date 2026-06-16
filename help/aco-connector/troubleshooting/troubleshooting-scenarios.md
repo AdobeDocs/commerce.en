@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Troubleshooting
 ---
 
-# Troubleshooting scenarios for the Adobe Commerce Optimizer Connector
+# Troubleshooting scenarios for the [!DNL Adobe Commerce Optimizer Connector]
 
 This page describes behaviors you may observe when working with the [!DNL Adobe Commerce Optimizer Connector] that are typically caused by misconfiguration or misinterpretation of sync results. Use the descriptions below to identify the root cause and apply the appropriate resolution.
 
@@ -62,20 +62,20 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 ## Prices are incorrect or missing in [!DNL Adobe Commerce Optimizer]
 
-**Issue:** Products appear in [!DNL Adobe Commerce Optimizer] but display no price returned with [products GraphQL query](https://developer.adobe.com/commerce/services/reference/graphql/#products), or the price does not match what is configured in [!DNL Adobe Commerce] w
+**Issue:** Products appear in [!DNL Adobe Commerce Optimizer] but display no price returned with [products GraphQL query](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"}, or the price does not match what is configured in [!DNL Adobe Commerce].
 
 **Cause:** The price book feed uses a scope that maps to a specific website and customer group. A wrong [catalog view](../../optimizer/setup/catalog-view.md) configuration can lead to missing or incorrect prices.
 
 **Solution:**
 
 - Verify that the website is configured for sync in the connector's export configuration. See [Customize the data export configuration](../get-started.md#customize-the-commerce-scopes-export-configuration).
-- Confirm that the price book ID used in [!DNL Commerce Optimizer] present in [catalog view](../../optimizer/setup/catalog-view.md) configuration used to perform the products query.
+- Confirm that the price book ID used in [!DNL Commerce Optimizer] is present in the [catalog view](../../optimizer/setup/catalog-view.md){target="_blank"} configuration used to perform the products query.
 
 ## Data in [!DNL Adobe Commerce Optimizer] is overwritten or unexpectedly modified after sync
 
-**Issue** Data changes applied directly in [!DNL Adobe Commerce Optimizer] by an external system (such as a PIM or ERP) are lost or reverted after the connector runs a sync.
+**Issue:** Data changes applied directly in [!DNL Adobe Commerce Optimizer] by an external system (such as a PIM or ERP) are lost or reverted after the connector runs a sync.
 
-**Cause:** When systems other than [!DNL Adobe Commerce] write directly to [!DNL Adobe Commerce Optimizer]—for example, a PIM or another external system—data conflicts can occur. The connector syncs data **one way**, from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer], and does not sync changes back to [!DNL Adobe Commerce]. As a result, data written directly to [!DNL Adobe Commerce Optimizer] is not reflected in [!DNL Adobe Commerce] and can be overwritten during a later sync.
+**Cause:** When systems other than [!DNL Adobe Commerce] write directly to [!DNL Adobe Commerce Optimizer]—for example, a PIM or another external system—data conflicts can occur. The connector syncs data *one way*, from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer], and does not sync changes back to [!DNL Adobe Commerce]. As a result, data written directly to [!DNL Adobe Commerce Optimizer] is not reflected in [!DNL Adobe Commerce] and can be overwritten during a later sync.
 
 
 **Solution:**

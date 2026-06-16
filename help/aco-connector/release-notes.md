@@ -64,7 +64,7 @@ _April 2, 2026_
 
 ![New](../assets/new.svg) **Added support for the Categories feed in `saas:resync` command**–You can now easily refresh and view your latest category data using the `saas:resync` CLI command:
 
-```terminal
+```shell
 bin/magento saas:resync --feed=categories
 ```
 

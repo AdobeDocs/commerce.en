@@ -38,14 +38,14 @@ This page describes behaviors you may observe when working with the [!DNL SaaS D
 
 ## Configurable or bundle product missing in Commerce SaaS services {#configurable-bundle-missing}
 
-**Issue:** A configurable or bundle product has **Enabled** status in [!DNL Adobe Commerce] but is either not returned in the storefront or displays with a **Disabled** status in Commerce SaaS services.
+**Issue:** A configurable or bundle product has *Enabled* status in [!DNL Adobe Commerce] but is either not returned in the storefront or displays with a *Disabled* status in Commerce SaaS services.
 
 **Cause:** The effective status of composite products depends on the status of their child products, not just the parent product status. Commerce SaaS services reflect this computed status:
 
 - **Configurable products** - at least one product variant must be enabled.
 - **Bundle products** - at least one product must be enabled for each required bundle option.
 
-If these conditions are not met, the parent product is treated as disabled even if its own status is set to **Enabled**.
+If these conditions are not met, the parent product is treated as disabled even if its own status is set to *Enabled*.
 
 **Solution:**
 
@@ -61,7 +61,7 @@ If these conditions are not met, the parent product is treated as disabled even 
 
 **Solution:**
 
-The immediate fix for this issue is a workaround:  Configure both cron groups to run sequentially to eliminate the race condition:
+The immediate fix for this issue is a workaround: Configure both cron groups to run sequentially to eliminate the race condition:
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Cron (Scheduled Tasks)]**.
 1. Set **[!UICONTROL Use Separate Process]** to **[!UICONTROL No]** for both:

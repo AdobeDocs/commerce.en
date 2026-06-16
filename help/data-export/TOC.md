@@ -19,7 +19,7 @@ feature: Services
   - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
   - [Add product attribute dynamically](add-attribute-dynamically.md)
   - [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-attributes.md)
-- [Release Notes](release-notes.md)
+- [Release notes](release-notes.md)
 - Troubleshooting {#troubleshooting}
   - [Review logs and troubleshoot](troubleshooting/logging.md)
   - [Troubleshooting scenarios](troubleshooting/troubleshooting-scenarios.md)

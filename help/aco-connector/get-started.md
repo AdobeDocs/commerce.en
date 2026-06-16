@@ -122,7 +122,7 @@ The [!DNL Adobe Commerce Optimizer Connector] is delivered as a Composer metapac
 
 ## Customize the Commerce scopes export configuration {#customize-the-commerce-scopes-export-configuration}
 
-By default, catalog data sync is enabled for all Commerce scopes (websites, customer groups and store views). You can customize the export settings to sync data only for specific scopes based on your business needs. For example, if you have multiple store views that share the same language you can choose to export data for only one of the store views and use it as the [catalog source](../optimizer/setup/catalog-source.md) for multiple catalog views in [!DNL Commerce Optimizer].
+By default, catalog data sync is enabled for all Commerce scopes (websites, customer groups, and store views). You can customize the export settings to sync data only for specific scopes based on your business needs. For example, if you have multiple store views that share the same language, you can choose to export data for only one of the store views and use it as the [catalog source](../optimizer/setup/catalog-source.md) for multiple catalog views in [!DNL Commerce Optimizer].
 
 >[!IMPORTANT]
 >
@@ -137,9 +137,9 @@ The following table describes what data is exported at each scope level:
 
 ![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 
-**To change the settings for a website or store view:**
+### To change scope export settings
 
-1. In the Commerce Admin, navigate to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]**.
+1. In the Commerce Admin, go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]**.
 
 1. Select the website or store view you want to configure.
 
@@ -193,7 +193,7 @@ Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Op
 
 1. Run the following [!DNL Adobe Commerce] CLI command to configure the integration, replacing the placeholder values with the values for your [!DNL Commerce Optimizer] project:
 
-   ```terminal
+   ```shell
    bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_id=your-client-id --client_secret=your-secret
    ```
 

@@ -157,7 +157,7 @@ The connector is designed for B2C merchants with [!DNL Adobe Commerce] on cloud 
 
 ## Responsibilities and implementation prerequisites {#responsibilities-prerequisites}
 
-[!DNL Adobe Commerce] is the source of truth for products, pricing, and customer groups. Make changes in [!DNL Adobe Commerce]; the connector syncs them to [!DNL Adobe Commerce Optimizer].
+[!DNL Adobe Commerce] is the source of truth for products, pricing, and customer groups. Make changes in [!DNL Adobe Commerce], and the connector syncs them to [!DNL Adobe Commerce Optimizer].
 
 **[!DNL Adobe Commerce Optimizer] is responsible for:**
 

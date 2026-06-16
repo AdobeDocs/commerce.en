@@ -43,6 +43,7 @@ Monitor sync operations in the `var/log/saas-export.log` file.
 >[!NOTE]
 >
 >Initial sync runs automatically when Live Search or Product Recommendations are enabled. Manual commands are not needed.
+>
 >For [!DNL Adobe Commerce Optimizer Connector] deployments, the `aco:config:init` command schedules the initial full sync by invalidating all connector feed indexers. See [Enable the [!DNL Commerce Optimizer] integration](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) and [Manage synchronization to [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md).
 
 When you trigger a `saas:resync` from the command line, depending on your catalog size, it can take from a few minutes to a few hours for the data to update.

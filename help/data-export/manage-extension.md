@@ -31,7 +31,7 @@ If you don't need one of the installed commerce data export modules, use the `ma
 
 For example, there is a [Categories API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) that uses the categories permission feed data internally. If you are not using this API, you can disable the data export for the categories permission feed.
 
-```shell script
+```shell
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
 ```
 

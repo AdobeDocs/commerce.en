@@ -46,7 +46,7 @@ If you do not see expected data for an Adobe Commerce Service, use the error log
 
 Each log record has the following structure.
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +99,7 @@ In this example, the `status` values provide information about the sync operatio
 
 +++ **Example: Full resync log for the price feed**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -158,7 +158,7 @@ Use environment variables to extend logs with additional data for tracking and t
 
 Include the feed payload in the SaaS export log by adding the `EXPORTER_EXTENDED_LOG=1` environment variable when you resync the feed.
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -170,7 +170,7 @@ For the Commerce SaaS data export extension (`magento/module-data-exporter`) 103
 
 Preserving payload data in the index table is not recommended in production environments, but it can be useful in a developer environment. Include the feed payload in the index by adding the `PERSIST_EXPORTED_FEED=1` environment variable when you resync the feed.
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -180,13 +180,13 @@ If the reindex process of a specific feed takes an unreasonable amount of time, 
 
 Run the profiler by adding the `EXPORTER_PROFILER=1` environment variable when you run the reindex command.
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 Profiler data is stored in the data export log (`var/log/commerce-data-export.log`) in the following format:
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
 

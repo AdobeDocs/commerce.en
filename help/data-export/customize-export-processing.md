@@ -64,7 +64,7 @@ You can configure multi-threading as a temporary option when running a resync co
 
 When you run a full sync command from the command line, specify multi-thread processing by adding the `thread-count` and `batch-size` options to the CLI command.
 
-```
+```shell
 bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 

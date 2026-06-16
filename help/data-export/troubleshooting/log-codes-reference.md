@@ -29,7 +29,7 @@ Codes are assigned to `error`, `warning` and `critical` level log messages only,
 
 Log codes related to errors or warnings that occur while collecting data from source entities, typically within data providers.
 - Affected entities might be processed with partial data or skipped entirely if an error occurs. See the log message for details.
-- Warnings can indicate incorrect integration with the Data Export extension by third-party modules; however, sync operations typically continue.
+- Warnings can indicate incorrect integration with the Data Export extension by third-party modules. However, sync operations typically continue.
 
 | Log Code | Level   | Message                                                                                                                            | File Path                                                                                                |
 |----------|---------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
