@@ -15,8 +15,8 @@ The following table provides only framework-level modules; the full list of avai
 | Module | Purpose | Key Classes |
 | --- | --- |--- |
 | `DataExporter` | Core framework: indexer, feed table, hash, retry, locking | `FeedIndexer`, `FeedIndexMetadata`, `FeedMetadataPool`, `FeedLockManager` |
-| `QueryXml` | XML-based query DSL for data collection | `QueryBuilder`, `QueryXmlFactory` |
-| `SaaSCommon` | Shared HTTP transport, retry, CLI (`saas:resync`), progress bar | |
+| `QueryXml` | XML-based query DSL for data collection | `QueryFactory`, `QueryProcessor`, `SelectBuilder` |
+| `SaaSCommon` | Shared HTTP transport, retry, CLI (`saas:resync`), resync orchestration | `ExportFeed`, `SubmitFeed`, `ResyncManager`, `ResyncManagerPool`, `ProgressBarManager` |
 
 To learn how these modules work together during synchronization, see [SaaS data export pipeline](../sync-overview.md).
 
