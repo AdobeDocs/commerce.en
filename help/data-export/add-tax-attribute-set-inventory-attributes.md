@@ -240,7 +240,7 @@ The module logs export errors and warnings to the standard Commerce logging syst
 
 >[!MORELIKETHIS]
 >
-> - [Review logs and troubleshoot](troubleshooting/logging.md)
-> - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
-> - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
+> * [Review logs and troubleshoot](troubleshooting/logging.md)
+> * [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
+> * [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
 

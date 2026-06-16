@@ -43,7 +43,7 @@ When catalog data changes in [!DNL Adobe Commerce], synchronization moves throug
 
 1. **Entity change detection** - Magento's Mview system detects row changes in subscribed database tables (for example, `catalog_product_entity`) and writes entries to a changelog table.
 1. **Feed indexing** - The feed indexer reads the changelog, loads entity data from the source tables, and assembles feed items.
-1. **Data collection and transformation** - Providers registered in the feed schema [`et_schema.xml`](./extensibility-and-customizations.md/#feed-schema-overview) collect field data.
+1. **Data collection and transformation** - Providers registered in the feed schema [`et_schema.xml`](extensibility-and-customizations.md#feed-schema-overview) collect field data.
 1. **Hash deduplication** - A content hash is computed for each feed item. Items whose hash has not changed since the last export are skipped, so only modified data is transmitted.
 1. **HTTP submission** - Feed items are sent as authenticated HTTP POST batches to the Adobe SaaS Feed Ingestion Service.
 1. **Status persist** - The API response status is written back to the [feed table](reference/feed-table-reference.md) for each item.
