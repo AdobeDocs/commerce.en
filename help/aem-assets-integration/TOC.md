@@ -11,7 +11,7 @@ feature: CMS, Page Content
 - [Release notes](release-notes.md)
 - Get started {#get-started}
   - [Commerce metadata in AEM Assets](get-started/metadata.md)
-  - [Configure the AEM Assets project to support Commerce metadata](get-started/configure-aem.md)
+  - [Configure the AEM Assets project](get-started/configure-aem.md)
   - [Install Adobe Commerce packages](get-started/configure-commerce.md)
   - [Configure the integration](get-started/setup-synchronization.md)
   - [Configure IMS user permissions](get-started/permissions.md)

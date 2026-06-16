@@ -1,5 +1,5 @@
 ---
-title: Configure the AEM Assets Project to support Commerce metadata
+title: Configure the AEM Assets Project
 description: Learn how to sync assets between Adobe Commerce and AEM Assets by deploying the assets-commerce package and configuring Commerce metadata in your AEM project.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
@@ -21,7 +21,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 ---
-# Configure the AEM Assets project to support Commerce metadata
+# Configure the AEM Assets project
 
 This topic explains how to configure your AEM Assets project so the Commerce namespace, metadata schema, and **[!UICONTROL Commerce]** tab are available in the AEM authoring environment. For background on the resources these steps add, see [Commerce metadata in AEM Assets](metadata.md).
 
