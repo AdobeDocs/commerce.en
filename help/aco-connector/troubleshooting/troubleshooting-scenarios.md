@@ -38,11 +38,11 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 ## Feed status shows "Success" but data is not visible in [!DNL Adobe Commerce Optimizer]
 
-**Symptom:** The **[!UICONTROL Data Feed Sync Status]** page reports a successful sync, but products, prices, etc. are not appearing as expected in [!DNL Adobe Commerce Optimizer].
+**Issue:** The **[!UICONTROL Data Feed Sync Status]** page reports a successful sync, but products, prices, etc. are not appearing as expected in [!DNL Adobe Commerce Optimizer].
 
-**Likely cause:** A successful feed status means the data was accepted by the ingestion endpoint, not that it has finished propagating through [!DNL Adobe Commerce Optimizer]. Propagation can take several minutes after ingestion.
+**Cause:** A successful feed status means the data was accepted by the ingestion endpoint, not that it has finished propagating through [!DNL Adobe Commerce Optimizer]. Propagation can take several minutes after ingestion.
 
-**Resolution:**
+**Solution:**
 
 - Wait a few minutes and refresh the [!DNL Adobe Commerce Optimizer] view.
 - Confirm that the tenant ID configured in [!DNL Adobe Commerce] matches the [!DNL Commerce Optimizer] environment you are checking.
@@ -51,6 +51,8 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 ## Products are missing from the exported catalog
 
 **Issue:** Some products do not appear in [!DNL Adobe Commerce Optimizer] after a full catalog sync.
+
+**Cause:** The catalog feed includes only products assigned to the configured catalog source website and store view. Products that are disabled, not visible in catalog, or fail validation during export are omitted from sync.
 
 **Solution:**
 
@@ -62,23 +64,24 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 **Issue:** Products appear in [!DNL Adobe Commerce Optimizer] but display no price returned with [products GraphQL query](https://developer.adobe.com/commerce/services/reference/graphql/#products), or the price does not match what is configured in [!DNL Adobe Commerce] w
 
-**Solution:**
+**Cause:** The price book feed uses a scope that maps to a specific website and customer group. A wrong [catalog view](../../optimizer/setup/catalog-view.md) configuration can lead to missing or incorrect prices.
 
-The price book feed uses a scope that maps to a specific website and customer group. A wrong [catalog view](../../optimizer/setup/catalog-view.md) configuration can lead to missing or incorrect prices.
+**Solution:**
 
 - Verify that the website is configured for sync in the connector's export configuration. See [Customize the data export configuration](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirm that the price book ID used in [!DNL Commerce Optimizer] present in [catalog view](../../optimizer/setup/catalog-view.md) configuration used to perform the products query.
 
 ## Data in [!DNL Adobe Commerce Optimizer] is overwritten or unexpectedly modified after sync
 
-**Symptom:** Data changes applied directly in [!DNL Adobe Commerce Optimizer] by an external system (such as a PIM or ERP) are lost or reverted after the connector runs a sync.
+**Issue** Data changes applied directly in [!DNL Adobe Commerce Optimizer] by an external system (such as a PIM or ERP) are lost or reverted after the connector runs a sync.
 
-**Likely cause:** When more than one integration endpoint writes to [!DNL Adobe Commerce Optimizer] - for example, a PIM or another system that creates, modifies, or deletes data independently of [!DNL Adobe Commerce] - conflicts can occur. The connector is a one-way push from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] and has no pullback mechanism. Any data written directly to [!DNL Adobe Commerce Optimizer] by an external system is not reflected back in [!DNL Adobe Commerce] and may be overwritten on the next sync.
+**Cause:** When systems other than [!DNL Adobe Commerce] write directly to [!DNL Adobe Commerce Optimizer]—for example, a PIM or another external system—data conflicts can occur. The connector syncs data **one way**, from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer], and does not sync changes back to [!DNL Adobe Commerce]. As a result, data written directly to [!DNL Adobe Commerce Optimizer] is not reflected in [!DNL Adobe Commerce] and can be overwritten during a later sync.
 
-**Resolution:**
 
-Instead of writing catalog modifications directly to [!DNL Adobe Commerce Optimizer], use [catalog layers](../../optimizer/setup/catalog-layer.md) to apply changes outside of [!DNL Adobe Commerce]. Product layers let external systems enrich or override catalog data within [!DNL Adobe Commerce Optimizer] without conflicting with the connector sync.
+**Solution:**
+
+Instead of writing catalog modifications directly to [!DNL Adobe Commerce Optimizer], use [catalog layers](../../optimizer/setup/catalog-layer.md){target="_blank"} to apply changes outside of [!DNL Adobe Commerce]. Catalog layers let external systems enrich or override catalog data within [!DNL Adobe Commerce Optimizer] without conflicting with the connector sync.
 
 ## Troubleshooting scenarios for common [!DNL SaaS Data Export] issues
 
-For issues related to the underlying [!DNL SaaS Data Export] that may affect the connector, see [Troubleshooting scenarios for [!DNL SaaS Data Export]](../../data-export/troubleshooting/symptoms-and-resolutions.md).
+For issues related to the underlying [!DNL SaaS Data Export] that may affect the connector, see [Troubleshooting scenarios for [!DNL SaaS Data Export]](../../data-export/troubleshooting/troubleshooting-scenarios.md).

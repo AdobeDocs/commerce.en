@@ -117,6 +117,10 @@ Feed items are submitted as authenticated gzip-compressed JSON batches over HTTP
 
 In addition to HTTP-level failures, application-level errors such as local processing failures or network disruptions are also scheduled for automatic retry by the `*_resend_failed_items` cron jobs.
 
-Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./get-started.md#verify-that-the-data-sync-is-working).
+Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin.
 
-To inspect item-level status and error details directly in the database, see [Feed table schema](reference/feed-table-reference.md).
+>[!MORELIKETHIS]
+>
+> - [Manage synchronization](data-sync-manage.md) — Verify sync status and manually resync feeds.
+> - [Feed table schema](reference/feed-table-reference.md) — Inspect item-level status and error details.
+> - [Improve data export performance](customize-export-processing.md) — Tune batch size and thread count.

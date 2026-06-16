@@ -132,3 +132,9 @@ Log codes related to errors during the indexation process or due to misconfigura
 | CDE04-18 | warning | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` | `commerce-data-export/CatalogDataExporter/Plugin/FilterChangeLogTable.php:43` |
 | CDE04-19 | warning | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:439` |
 | CDE04-20 | warning | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexer.php:204` |
+
+>[!MORELIKETHIS]
+>
+> - [Review logs and troubleshoot](logging.md)
+> - [Troubleshooting scenarios](troubleshooting-scenarios.md)
+> - [Feed table schema](../reference/feed-table-reference.md)

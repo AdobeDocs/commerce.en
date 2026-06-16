@@ -7,7 +7,7 @@ feature: Services
 
 # SaaS Data Export modules
 
-[!DNL SaaS Data Export] consists of two module groups: first for data collection and indexing, and second for HTTP transport and submission. 
+[!DNL SaaS Data Export] consists of two module groups: first for data collection and indexing, and second for HTTP transport and submission.
 
 These modules handle entity change detection, feed indexing, data extraction, and schema definition.
 The following table provides only framework-level modules, the full list of available modules depends on installed package.
@@ -18,7 +18,7 @@ The following table provides only framework-level modules, the full list of avai
 | `QueryXml` | XML-based query DSL for data collection | `QueryBuilder`, `QueryXmlFactory` |
 | `SaaSCommon` | Shared HTTP transport, retry, CLI (`saas:resync`), progress bar, cron base classes |
 
-To learn how these modules work together during synchronization, see [SaaS data export pipeline](../data-flow-pipeline.md).
+To learn how these modules work together during synchronization, see [SaaS data export pipeline](../sync-overview.md).
 
 >[!MORELIKETHIS]
 >

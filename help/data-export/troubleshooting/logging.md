@@ -148,7 +148,7 @@ If you see errors not related to configuration or third-party extensions, submit
 
 ### Resolve catalog sync issues {#resolvesync}
 
-For symptom-based troubleshooting of catalog sync issues - including data discrepancies, sync not running, and failed sync status - see [Troubleshooting scenarios](symptoms-and-resolutions.md).
+For issue-based troubleshooting of catalog sync issues - including data discrepancies, sync not running, and failed sync status - see [Troubleshooting scenarios](troubleshooting-scenarios.md).
 
 ## Extended logging
 
@@ -189,3 +189,9 @@ Profiler data is stored in the data export log (`var/log/commerce-data-export.lo
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Troubleshooting scenarios](troubleshooting-scenarios.md) — Resolve catalog sync issues and data discrepancies.
+> - [Log codes reference](log-codes-reference.md) — Look up export log codes.
+> - [Sync feeds using the Commerce CLI](../data-export-cli-commands.md) — Run targeted feed resyncs.

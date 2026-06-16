@@ -40,16 +40,22 @@ SaaS data export collects and exports various types of data, referred to as _fee
 
 SaaS data export is delivered as a PHP extension that supports both automated and manual synchronization:
 
-- **Automated synchronization**—Cron jobs keep connected services current using [partial sync](sync-overview.md#partial-sync) and [automatic retry of failed items](sync-overview.md#retry-failed-items-sync), with no action required from the Admin user or system integrator.
+- **Automated synchronization**—After the initial full sync when you connect a Commerce service, cron jobs keep connected services current using partial sync and automatic retry of failed items, with no action required from the Admin user or system integrator.
 
-- **Manual synchronization**—Run a full resync or resync selected feeds from the Commerce Admin or the Adobe Commerce command-line tool (CLI).
+- **Manual synchronization**—Run a full resync or resync selected feeds from the Commerce Admin or the [Commerce CLI](data-export-cli-commands.md).
 
-- **Monitoring**—Track feed health, status, and delivery from the Commerce Admin dashboards, including the [!UICONTROL Data Feed Sync Status] page and the Data Management dashboard.
+- **Monitoring**—Track feed health, status, and delivery from the [!UICONTROL Data Feed Sync Status] page and Data Management dashboard in the Commerce Admin. See [Manage synchronization](data-sync-manage.md) for verification and resync steps.
 
-For details about synchronization modes and types, see [How synchronization works](sync-overview.md). For steps to monitor, verify, and manually resync data from the Admin or CLI, see [Manage synchronization](data-sync-manage.md).
+For synchronization behavior, modes, and the export flow diagram, see [How synchronization works](sync-overview.md).
 
 SaaS data export also provides tools to plan and troubleshoot the synchronization process:
 
 - **Scheduling and performance**—Estimate sync time to schedule processing and avoid site disruption, and customize export processing to improve performance. See [Estimate data volume and transmission time](estimate-data-volume-sync-time.md) and [Improve data export performance](customize-export-processing.md).
 
-- **Tracking and troubleshooting**—Review sync status and feed payloads using data-export and saas-export logs. See [Review logs and troubleshoot](troubleshooting/troubleshooting-logging.md).
+- **Tracking and troubleshooting**—Review sync status and feed payloads using data-export and saas-export logs. See [Review logs and troubleshoot](troubleshooting/logging.md).
+
+>[!MORELIKETHIS]
+>
+> - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md) — Add or modify feed data.
+> - [Troubleshooting scenarios](troubleshooting/troubleshooting-scenarios.md) — Diagnose misconfiguration and unexpected sync results.
+> - [Release notes](release-notes.md) — Extension updates and known issues.

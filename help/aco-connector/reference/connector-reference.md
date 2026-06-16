@@ -47,7 +47,7 @@ The connector includes multiple Magento modules that collect catalog data, map f
 
 ## Supported feeds
 
-The connector submits multiple feed types to the [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in [!DNL Adobe Commerce].
+The connector submits multiple feed types to the [!DNL Commerce Optimizer] [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in [!DNL Adobe Commerce].
 
 | Feed | [!DNL Commerce Optimizer] API Endpoint | Batch Limit | AC Index Name | Feed Table |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |

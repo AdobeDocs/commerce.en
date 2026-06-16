@@ -88,7 +88,9 @@ The `productAttributes` feed sends data to the [Metadata endpoint](https://devel
 | `searchWeight` | `searchWeight` | |
 | `searchTypes` | `searchTypes` | |
 
-**Data type conversion:**
+### Data type conversion
+
+The connector derives the API `dataType` from the Commerce `dataType` and `frontendInput` fields in the mapping table above. The following table shows the conversion rules the connector applies.
 
 | [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API `dataType` |
 | -------------------- | -------------------------- | ------------------- |

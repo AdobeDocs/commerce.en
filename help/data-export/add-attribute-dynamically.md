@@ -188,3 +188,8 @@ If you dynamically create a custom product attribute and want to use it for disp
      bin/magento saas:resync --feed=productattributes
      ```
 
+>[!MORELIKETHIS]
+>
+> - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
+> - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
+> - [Review logs and troubleshoot](troubleshooting/logging.md)

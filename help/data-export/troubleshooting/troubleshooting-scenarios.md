@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Scenarios for [!DNL SaaS Data Export]
-description: "Diagnose and resolve unexpected behavior in [!DNL SaaS Data Export] caused by misconfiguration or misinterpretation of sync results."
+description: "Learn how to diagnose and resolve unexpected [!DNL SaaS Data Export] sync behavior caused by misconfiguration, indexer settings, or misinterpretation of sync results."
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -32,15 +32,15 @@ topic_v2:
     internal-label: Troubleshooting
 ---
 
-# Troubleshooting scenarios for SaaS Data Export
+# Troubleshooting scenarios for [!DNL SaaS Data Export]
 
 This page describes behaviors you may observe when working with the [!DNL SaaS Data Export] that are typically caused by misconfiguration or misinterpretation of sync results. Use the descriptions below to identify the root cause and apply the appropriate resolution.
 
-## Configurable or bundle product is enabled in [!DNL Adobe Commerce] but disabled or missing in Adobe Commerce SaaS services
+## Configurable or bundle product missing in Commerce SaaS services {#configurable-bundle-missing}
 
-**Issue:** A configurable or bundle product has **Enabled** status in [!DNL Adobe Commerce] but is either not returned in the storefront or appears with a **Disabled** status in services.
+**Issue:** A configurable or bundle product has **Enabled** status in [!DNL Adobe Commerce] but is either not returned in the storefront or displays with a **Disabled** status in Commerce SaaS services.
 
-**Cause:** The effective status of composite products depends on the status of their child products, not just the parent product status. Adobe Commerce SaaS services reflects this computed status:
+**Cause:** The effective status of composite products depends on the status of their child products, not just the parent product status. Commerce SaaS services reflect this computed status:
 
 - **Configurable products** - at least one product variant must be enabled.
 - **Bundle products** - at least one product must be enabled for each required bundle option.
@@ -51,9 +51,9 @@ If these conditions are not met, the parent product is treated as disabled even 
 
 - For configurable products, verify that at least one associated simple product variant is enabled and assigned to the correct website and store view.
 - For bundle products, check that each required bundle option has at least one enabled child product. A required option with all disabled children causes the entire bundle to be treated as disabled.
-- After enabling the appropriate child products, trigger a resync or wait for the next scheduled sync, then confirm the updated status in services.
+- After enabling the appropriate child products, trigger a resync or wait for the next scheduled sync, then confirm the updated status in Commerce SaaS services.
 
-## Prices not updated after catalog price rule activation
+## Prices not updated after catalog price rule activation {#prices-not-updated}
 
 **Issue:** After activating a catalog price rule using the Scheduled Update feature, prices are not updated. The `commerce-data-export.log` shows `synced: 0` for `prices` feed after scheduled updates are applied.
 
@@ -61,19 +61,19 @@ If these conditions are not met, the parent product is treated as disabled even 
 
 **Solution:**
 
-Issue will be fixed in `Adobe Commerce` following releases. In the meantime, configure both cron groups to run sequentially to eliminate the race condition:
+The immediate fix for this issue is a workaround:  Configure both cron groups to run sequentially to eliminate the race condition:
 
-1. Go to **Stores** > **Configuration** > **Advanced** > **System** > **Cron (Scheduled Tasks)**.
-1. Set **Use Separate Process** to **No** for both:
-   - Cron configuration options for group: **index**
-   - Cron configuration options for group: **staging**
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Cron (Scheduled Tasks)]**.
+1. Set **[!UICONTROL Use Separate Process]** to **[!UICONTROL No]** for both:
+   - Cron configuration options for group: **[!UICONTROL index]**
+   - Cron configuration options for group: **[!UICONTROL staging]**
 1. Flush the configuration cache after saving.
 
 >[!NOTE]
 >
 >With both groups running in-process and sequentially, a slow full reindex blocks staging from running until it finishes. On large catalogs, this may delay staging updates.
 
-## Catalog data discrepancy between Adobe Commerce and connected services
+## Catalog data discrepancy between [!DNL Adobe Commerce] and connected services {#catalog-data-discrepancy}
 
 **Issue:** Product data shown in connected Commerce Services (such as [!DNL Live Search] or [!DNL Product Recommendations]) does not match the catalog data in [!DNL Adobe Commerce]. For example, a product name, price, or description appears outdated or incorrect on the storefront.
 
@@ -81,38 +81,38 @@ Issue will be fixed in `Adobe Commerce` following releases. In the meantime, con
 
 **Solution:**
 
-1. In the storefront search results, select the product in question to open its detailed view.
+1. From the Commerce storefront, open the search results. Then, select the product in question to open its detailed view.
 1. Copy the JSON output and verify that it matches what you have in the [!DNL Commerce] catalog.
 1. If the content does not match, make a minor edit to the product in your catalog, such as adding a space or a period, to force the change to be detected.
-1. Wait for a resync or trigger a manual resync from the CLI or the [Data Feed Sync Status dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+1. Wait for a resync or trigger a manual resync from the CLI or the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Admin.
 
-## Data sync is not running on schedule
+For additional troubleshooting of catalog data in [!DNL Product Recommendations], see [Troubleshoot the Product Recommendations module](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) in the Commerce Knowledge Base.
+
+## Data sync is not running on schedule {#sync-not-on-schedule}
 
 **Issue:** The data sync does not run on schedule, or no items are being synced despite product changes in [!DNL Adobe Commerce].
 
-**Cause:** The most common causes are cron jobs not running or indexers not configured in **Update by Schedule** mode.
+**Cause:** The most common causes are cron jobs not running or indexers not configured in **[!UICONTROL Update by Schedule]** mode.
 
 **Solution:**
 
 - [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Verify that the indexers for the following feeds are set to **Update by Schedule**: Catalog Attributes, Product, Product Overrides, and Product Variant. Check from [Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in the Admin or using the CLI: `bin/magento indexer:show-mode | grep -i feed`.
+- Verify that the indexers for the following feeds are set to **[!UICONTROL Update by Schedule]**: Catalog Attributes, Product, Product Overrides, and Product Variant. Check from [[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in the Commerce Admin or using the CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
-For additional troubleshooting, see this [KnowledgeBase article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+## Catalog sync has a Failed status {#catalog-sync-failed}
 
-## Catalog sync has a Failed status
-
-**Issue:** The catalog sync shows a **Failed** status on the Data Feed Sync Status page.
+**Issue:** The catalog sync shows a **Failed** status on the **[!UICONTROL Data Feed Sync Status]** page.
 
 **Cause:** An unrecoverable error occurred during the data collection or submission phase. Common causes include API authentication issues, network errors, or data validation failures.
 
 **Solution:**
 
-1. Review the data export error logs for details on the failure:
-   - `var/log/commerce-data-export-errors.log` for errors during data collection.
+1. Review the data export error logs for details on the failure. See [Review logs and troubleshoot](logging.md) for log format and extended logging options:
+   - `var/log/data-export-errors.log` for errors during data collection.
    - `var/log/saas-export-errors.log` for errors during data submission.
 1. If the error is not related to configuration or a third-party extension, [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with the relevant log entries.
 
-## Log shows "operation skipped - process locked" messages
+## Log shows "operation skipped - process locked" messages {#process-locked}
 
 **Issue:** The `commerce-data-export.log` file contains entries similar to the following:
 
@@ -125,3 +125,9 @@ For additional troubleshooting, see this [KnowledgeBase article](https://experie
 **Solution:**
 
 No action is required. Once the running process completes and releases the lock, the next cron execution picks up and syncs any pending changes. For details on how the lock mechanism works, see [Feed lock mechanism for SaaS Data Export](../feed-lock-mechanism.md).
+
+>[!MORELIKETHIS]
+>
+> - [Review logs and troubleshoot](logging.md)
+> - [Log codes reference](log-codes-reference.md)
+> - [Feed lock mechanism for SaaS Data Export](../feed-lock-mechanism.md)

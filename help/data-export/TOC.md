@@ -22,7 +22,7 @@ feature: Services
 - [Release Notes](release-notes.md)
 - Troubleshooting {#troubleshooting}
   - [Review logs and troubleshoot](troubleshooting/logging.md)
-  - [Troubleshooting scenarios](troubleshooting/symptoms-and-resolutions.md)
+  - [Troubleshooting scenarios](troubleshooting/troubleshooting-scenarios.md)
   - [Log codes reference](troubleshooting/log-codes-reference.md)
 - Reference {#reference}
   - [SaaS Data Export modules](reference/data-export-modules.md)

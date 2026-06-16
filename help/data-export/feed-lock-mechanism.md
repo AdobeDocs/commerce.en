@@ -14,7 +14,7 @@ The [!DNL SaaS Data Export] extension uses a feed lock mechanism to prevent race
 Each feed sync operation—whether triggered by a cron job or a manual `saas:resync` CLI call—follows the same sequence:
 
 1. The process tries to acquire the feed lock. The lock attempt is non-blocking and returns immediately if the lock is already held by another process.
-1. If the lock is **not available**, the [operation is skipped and logged].
+1. If the lock is **not available**, the operation is skipped and logged.
 
    No data is lost. The next cron run picks up pending changes after the current process completes.
 1. If the lock is **acquired**, the process records its name and PID for diagnostic purposes, then runs the sync.
@@ -36,9 +36,9 @@ This message appears when a cron-triggered partial sync attempts to run while a 
 >
 >For general information about log format and operation types recorded in `commerce-data-export.log`, see [Review logs and troubleshoot](troubleshooting/logging.md).
 
-## More help on this topic
-
-- [Synchronize data with SaaS Data Export](sync-overview.md)
-- [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
-- [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md)
-- [Configure the lock provider](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+>[!MORELIKETHIS]
+>
+> - [Synchronize data with SaaS Data Export](sync-overview.md)
+> - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
+> - [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md)
+> - [Configure the lock provider](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

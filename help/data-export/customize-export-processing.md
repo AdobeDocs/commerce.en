@@ -97,3 +97,9 @@ return [
             ],
 //   ...
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
+> - [How synchronization works](sync-overview.md)
+> - [Feed table schema](reference/feed-table-reference.md)

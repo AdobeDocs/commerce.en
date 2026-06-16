@@ -25,7 +25,7 @@ topic_v2:
 
 The [!DNL Commerce Data Export] extension provides a way to export data from the [!DNL Commerce] application to Commerce Services like Live Search, Catalog Service, and Product Recommendations. If needed, you can extend and customize the feed data to include additional attribute data or modify the collected data.
 
-After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) in the GraphQL schema for storefront service.
+After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) in the GraphQL schema for storefront services.
 
 >[!NOTE]
 >
@@ -87,9 +87,9 @@ For information about creating data patches, see [Develop data and schema patche
 
 For details about creating product attributes dynamically without introducing new EAV Attributes, see [Add attribute dynamically](add-attribute-dynamically.md).
 
-# Feed schema overview (`et_schema.xml`){#feed-schema-overview}
+## Feed schema overview (`et_schema.xml`) {#feed-schema-overview}
 
-Each feed's data structure is declared in `etc/et_schema.xml` using a simple XML DSL. The framework reads this file to determine which fields to collect and which PHP provider classes to call.
+Each feed data structure is declared in `etc/et_schema.xml` using a simple XML DSL. The framework reads this file to determine which fields to collect and which PHP provider classes to call.
 
 ```xml
 <record name="Product">
@@ -114,7 +114,7 @@ Key elements:
 >
 >Adding a new field to `et_schema.xml` only changes what [!DNL Adobe Commerce] collects locally. The receiving SaaS service must also be updated to accept and process the new field before it has any effect on the storefront.
 
-# Observe data after submission
+## Observe data after submission
 
 [!DNL SaaS Data Export] dispatches the `data_sent_outside` event after each successful batch submission to a SaaS service. Use this event for audit logging, webhook triggers, or metrics collection.
 
@@ -175,3 +175,9 @@ Implement the interface and wire it via a DI preference in `etc/di.xml`:
 >[!NOTE]
 >
 >Filtering is applied after data collection. If `PERSIST_EXPORTED_FEED=1` is set, the feed table stores the unfiltered payload before filtering occurs.
+
+>[!MORELIKETHIS]
+>
+> - [Add product attribute dynamically](add-attribute-dynamically.md)
+> - [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-attributes.md)
+> - [How synchronization works](sync-overview.md)
