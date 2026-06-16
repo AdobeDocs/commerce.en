@@ -18,6 +18,7 @@ recommendations: noDisplay
    - [Opportunities](./manage-results/opportunities.md)
    - [Success metrics](./manage-results/success-metrics.md)
    - [Search performance](./manage-results/search-performance.md)
+   - {hide-from-toc}[Search matching and ranking](./manage-results/search-relevance-matching.md)
    - [Recommendations performance](./manage-results/recommendation-performance.md)
 - Merchandising {#merchandising}
    - [Overview](./merchandising/overview.md)
