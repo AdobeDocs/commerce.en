@@ -60,7 +60,45 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## June 2026 - release #1 {#latest}
+## June 2026 - release #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+The following items are currently only available in Sandbox environments and are scheduled to move to Production environments in July.
+
+>[!BEGINSHADEBOX]
+
+### Filter orders and invoices by company
+
+The `GET /V1/orders` and `GET /V1/invoices` REST API endpoints now support filtering by `company_id` and `company_name`, enabling B2B integrations to retrieve orders or invoices for a specific company in a single request. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### View order modification history in the Admin
+
+The [!DNL Commerce Admin] order detail page now displays the full modification chain for an order that includes the original order and all child orders created through subsequent edits. Merchants can navigate between orders, toggle the visibility of canceled orders, and access all associated invoices, shipments, credit memos, and order comments from within the chain view.<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>To enable this feature, contact your Adobe Commerce Customer Success Manager.
+
+### View synchronized assets in [!DNL AEM Assets]
+
+The [!DNL AEM Assets] integration now includes a [!UICONTROL **Sync Status**] page ([!UICONTROL **Stores**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Sync Status**]) with an asset-centric list view of all synchronized assets, including filtering, sortable columns such as last sync date, and error details for failed syncs.<!-- ACAP-1246 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Large shared catalogs are now easier to manage in the Admin, with improved loading times and reduced likelihood of timeouts. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* Fixed a shipment creation failure that occurred when creating shipments for orders that contained configurable products. <!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## June 2026 - release #1
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
