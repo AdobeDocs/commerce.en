@@ -45,7 +45,7 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 
 | Task | Option | Notes |
 | --- | --- | --- |
-| Verify sync status and resync from the upstream system when products are missing | **Upstream-system resync** | In [!DNL Commerce Optimizer], select **[!UICONTROL Data Sync]** and verify that expected catalog sources, products, prices, and attributes display. When products are missing, resync from the upstream [!DNL Adobe Commerce] instance using the **[!UICONTROL Data Feed Sync Status]** page or Commerce CLI (see the following rows). |
+| Verify sync status and resync from the upstream system when products are missing | **Upstream-system resync** | In [!DNL Commerce Optimizer], select **[!UICONTROL Data Sync]** and verify that expected catalog sources, products, prices, and attributes display. When products are missing, resync from the upstream [!DNL Adobe Commerce] instance using the **[!UICONTROL Data Feed Sync Status]** page or the Commerce CLI (see the following rows). |
 | Resync selected failed or problematic connector feed items | **[!UICONTROL Data Feed Sync Status] page in the Commerce Admin** | Monitor export status and resync selected connector feed items from the Commerce Admin. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
 | Targeted connector feed resync with operational control | **Commerce CLI** | Run `saas:resync` from the Adobe Commerce instance for connector feeds. See [Sync feeds using the Commerce CLI](../data-export/data-export-cli-commands.md) and [Supported feeds](reference/connector-reference.md#supported-feeds). |
 
