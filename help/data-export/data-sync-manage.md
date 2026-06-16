@@ -96,6 +96,6 @@ Use the following options to manually resync feed data.
 > - [How synchronization works](sync-overview.md) — Learn about synchronization modes, full sync, partial sync, and retry failed items.
 > - [Sync feeds using the Commerce CLI](data-export-cli-commands.md) — Use the `saas:resync` command for targeted feed resyncs.
 > - [Review logs and troubleshoot](troubleshooting/logging.md) — Diagnose data export and SaaS export errors.
-> - [Manage synchronization to [!DNL Commerce Optimizer]](/help/aco-connector/data-sync-manage.md) — Verify catalog data sync and manually resync connector feeds.
+> - [Manage synchronization to [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md) — Verify catalog data sync and manually resync connector feeds.
 
 

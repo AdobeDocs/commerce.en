@@ -85,7 +85,7 @@ For information about creating data patches, see [Develop data and schema patche
 
 ### Add the product attribute dynamically
 
-For details about creating product attributes dynamically without introducing new EAV Attributes, see [Add attribute dynamically](add-attribute-dynamically.md).
+For details about creating product attributes dynamically without introducing new EAV Attributes, see [Add product attributes dynamically](add-attribute-dynamically.md).
 
 ## Feed schema overview (`et_schema.xml`) {#feed-schema-overview}
 

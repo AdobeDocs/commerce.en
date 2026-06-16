@@ -10,11 +10,11 @@ feature: Services
 [!DNL SaaS Data Export] consists of two module groups: first for data collection and indexing, and second for HTTP transport and submission.
 
 These modules handle entity change detection, feed indexing, data extraction, and schema definition.
-The following table provides only framework-level modules, the full list of available modules depends on installed package.
+The following table provides only framework-level modules; the full list of available modules depends on the installed packages.
 
 | Module | Purpose | Key Classes |
-|---|---|---|
-| `DataExporter` | Core framework: indexer, feed table, hash, retry, locking | `FeedIndexer`, `FeedIndexMetadata`, `FeedMetadataPool`, `FeedLockManager`|
+| --- | --- |--- |
+| `DataExporter` | Core framework: indexer, feed table, hash, retry, locking | `FeedIndexer`, `FeedIndexMetadata`, `FeedMetadataPool`, `FeedLockManager` |
 | `QueryXml` | XML-based query DSL for data collection | `QueryBuilder`, `QueryXmlFactory` |
 | `SaaSCommon` | Shared HTTP transport, retry, CLI (`saas:resync`), progress bar | |
 
@@ -22,6 +22,6 @@ To learn how these modules work together during synchronization, see [SaaS data 
 
 >[!MORELIKETHIS]
 >
->- [Synchronize data with SaaS Data Export](../sync-overview.md)
+>- [How synchronization works](../sync-overview.md)
 >- [Feed table schema](feed-table-reference.md)
 >- [Manage the SaaS data export extension](../manage-extension.md)

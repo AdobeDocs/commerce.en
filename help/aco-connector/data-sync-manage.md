@@ -45,10 +45,9 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 
 | Task | Option | Notes |
 | --- | --- | --- |
-| Verify sync status and resync from the upstream system when products are missing | **Upstream-system resync** | Use the [!UICONTROL Data Sync] page in [!DNL Commerce Optimizer] to verify the data delivered to [!DNL Commerce Optimizer]; when products are missing, resync from the upstream system. See [Resync catalog data](../optimizer/setup/data-sync.md#resync-catalog-data) in the *[!DNL Commerce Optimizer] User Guide*. |
+| Verify sync status and resync from the upstream system when products are missing | **Upstream-system resync** | In [!DNL Commerce Optimizer], select **[!UICONTROL Data Sync]** and verify that expected catalog sources, products, prices, and attributes display. When products are missing, resync from the upstream [!DNL Adobe Commerce] instance using the **[!UICONTROL Data Feed Sync Status]** page or Commerce CLI (see the following rows). |
 | Resync selected failed or problematic connector feed items | **[!UICONTROL Data Feed Sync Status] page in the Commerce Admin** | Monitor export status and resync selected connector feed items from the Commerce Admin. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
 | Targeted connector feed resync with operational control | **Commerce CLI** | Run `saas:resync` from the Adobe Commerce instance for connector feeds. See [Sync feeds using the Commerce CLI](../data-export/data-export-cli-commands.md) and [Supported feeds](reference/connector-reference.md#supported-feeds). |
-| Force a full repopulation for a catalog source scope | **Disable and re-enable scope** | Clear and reselect the data sync checkbox for a store view in **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** to trigger a full repopulation. See [Customize the Commerce scopes export configuration](get-started.md#customize-the-commerce-scopes-export-configuration). |
 
 >[!MORELIKETHIS]
 >

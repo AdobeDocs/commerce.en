@@ -36,7 +36,7 @@ topic_v2:
 
 This page describes behaviors you may observe when working with the [!DNL SaaS Data Export] that are typically caused by misconfiguration or misinterpretation of sync results. Use the descriptions below to identify the root cause and apply the appropriate resolution.
 
-## Configurable or bundle product missing in Commerce SaaS services {#configurable-bundle-missing}
+## Configurable or bundle product missing in Commerce services {#configurable-bundle-missing}
 
 **Issue:** A configurable or bundle product has *Enabled* status in [!DNL Adobe Commerce] but is either not returned in the storefront or displays with a *Disabled* status in Commerce SaaS services.
 
@@ -108,7 +108,7 @@ For additional troubleshooting of catalog data in [!DNL Product Recommendations]
 **Solution:**
 
 1. Review the data export error logs for details on the failure. See [Review logs and troubleshoot](logging.md) for log format and extended logging options:
-   - `var/log/data-export-errors.log` for errors during data collection.
+   - `var/log/commerce-data-export-errors.log` for errors during data collection.
    - `var/log/saas-export-errors.log` for errors during data submission.
 1. If the error is not related to configuration or a third-party extension, [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with the relevant log entries.
 

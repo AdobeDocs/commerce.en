@@ -153,7 +153,7 @@ The following table describes what data is exported at each scope level:
 
 | Action | Result |
 | -------- | -------- |
-| Disable a store view | The catalog source remains in [!DNL Commerce Optimizer], but all data is removed. |
+| Disable a store view | **Disabling sync removes catalog data from your storefront.** The catalog source remains in [!DNL Commerce Optimizer], but all synced data is removed on the next cron run. |
 | Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
 
 ## Enable the [!DNL Commerce Optimizer] integration

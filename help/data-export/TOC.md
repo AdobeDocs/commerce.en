@@ -17,7 +17,7 @@ feature: Services
   - [Improve export performance](customize-export-processing.md)
 - Extensibility {#extensibility}
   - [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
-  - [Add product attribute dynamically](add-attribute-dynamically.md)
+  - [Add product attributes dynamically](add-attribute-dynamically.md)
   - [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-attributes.md)
 - [Release notes](release-notes.md)
 - Troubleshooting {#troubleshooting}
