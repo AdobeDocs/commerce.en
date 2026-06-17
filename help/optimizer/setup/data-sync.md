@@ -60,7 +60,9 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 >
 >The time it takes to complete the sync varies based on your catalog size and the volume of data updated.
 
-## Monitor data sync status
+## Verify that data synchronization is working
+
+{{$include /help/_includes/aco-connector/verify-commerce-service-data-sync.md}}
 
 For projects that use Adobe Commerce as the upstream data source through the Adobe Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Commerce Admin.
 
