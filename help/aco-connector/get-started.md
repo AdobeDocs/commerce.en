@@ -8,6 +8,10 @@ TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82t
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
@@ -84,7 +88,7 @@ Data associated with these extensions is still available in the Commerce databas
 
 >[!ENDSHADEBOX]
 
-## Configuration steps
+## Configuration steps {#configuration-steps}
 
 Follow these steps to enable the [!DNL Adobe Commerce Optimizer Connector] and begin synchronizing data from [!DNL Adobe Commerce] to your [!DNL Commerce Optimizer] instance.
 
@@ -156,7 +160,7 @@ The following table describes what data is exported at each scope level:
 | Disable a store view | **Disabling sync removes catalog data from your storefront.** The catalog source remains in [!DNL Commerce Optimizer], but all synced data is removed on the next cron run. |
 | Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
 
-## Enable the [!DNL Commerce Optimizer] integration
+## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
 You enable the integration and initiate the data sync by running the `aco:config:init` CLI command. This command completes the following steps:
 

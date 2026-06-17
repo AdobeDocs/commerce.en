@@ -1,15 +1,18 @@
 ---
 title: Sync feeds using the Commerce CLI
 description: Learn how to use Commerce CLI commands to manage feeds and sync processes for the [!DNL data export extension] in Adobe Commerce SaaS services.
+autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
-  - id: Commerce on Prem
-    internal-label: ''
-  - id: Commerce as a Cloud Service
-    internal-label: ''
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront

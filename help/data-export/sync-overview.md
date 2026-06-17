@@ -1,12 +1,19 @@
 ---
 title: Synchronize Data with SaaS Data Export
 description: Learn how the [!DNL SaaS Data Export] collects and synchronizes data between Adobe Commerce instances and connected Commerce services.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
 TQID: https://experienceleague.adobe.com/wM71qxvduDr77EW6Y8mSNfBXlqkloC-PGOOBOl-mZQM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
@@ -84,8 +91,6 @@ For partial sync to work, the Commerce application requires the following config
 
 - [Task scheduling is enabled via cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 - All SaaS data export indexers are configured in `Update by Schedule` mode.
-
-
 
 ### Retry failed items sync {#retry-failed-items-sync}
 

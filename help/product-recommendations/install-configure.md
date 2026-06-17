@@ -1,6 +1,7 @@
 ---
 title: Install and Configure
 description: Learn how to install, update, and uninstall [!DNL Product Recommendations].
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
