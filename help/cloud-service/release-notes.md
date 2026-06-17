@@ -51,6 +51,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
+nudge: true
 ---
 # Release notes
 
@@ -73,6 +74,10 @@ The following items are currently only available in Sandbox environments and are
 ### Filter orders and invoices by company
 
 The `GET /V1/orders` and `GET /V1/invoices` REST API endpoints now support filtering by `company_id` and `company_name`, enabling B2B integrations to retrieve orders or invoices for a specific company in a single request. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### List custom email templates through the API
+
+The new `GET /V1/custom-email/templates` REST API endpoint returns your [custom email templates](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), including each template's ID, code, and subject. Integrations can use a returned template ID with the `POST /V1/custom-email/send` endpoint instead of looking up the ID manually. <!-- CCSAAS-5089 -->
 
 ### View order modification history in the Admin
 

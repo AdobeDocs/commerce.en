@@ -102,9 +102,22 @@ During customer checkout or when an admin creates an invoice for a previously au
 
 Detect when a pending capture transaction enters a `Completed` status so merchants can resume processing the affected order.
 
-To make sure this process works as expected, merchants must configure a new cron job. Once the job is configured to run automatically, no other interventions are expected from the merchant.
+>[!NOTE]
+>
+>Asynchronous monitoring is disabled by default. When disabled, orders with a `Pending` capture transaction do not automatically move to `Payment Review`. To enable this behavior, turn on asynchronous monitoring by following the steps below.
 
-See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Once configured, the new job runs every 30 minutes to fetch updates for orders that are in a `Payment Review` status.
+Enable asynchronous monitoring: [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+
+1. Enable the `async_status_updates` setting. Because this setting is not available in the Admin, enable it from the command line:
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Enable and schedule the `sync_order_payment_status` cron job so that status updates are fetched automatically. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+
+Once the setting and cron job are enabled, the cron job runs every 10 minutes to fetch updates for orders in `Payment Review` status. After setup, no additional merchant action is required under normal operation.
+
 
 Merchants can check the updated payment status via the Order payment status report view.
 
