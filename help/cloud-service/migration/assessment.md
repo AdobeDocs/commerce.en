@@ -22,7 +22,7 @@ feature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-nudge: true
+nudge: true1
 ---
 
 # Migration Assessment
@@ -34,10 +34,6 @@ nudge: true
 A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service].
 
 The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initially sharing your project codebase.
-
->[!TIP]
->
->Contact your solution account manager to request a migration assessment of your existing instance.
 
 **The assessment provides:**
 
@@ -322,3 +318,7 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 - Storefront development
   - [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/)
   - [Storefront AI skills](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+
+>[!TIP]
+>
+>Contact your solution account manager to request a migration assessment of your existing instance.
