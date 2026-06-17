@@ -27,9 +27,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-    internal-label: Troubleshooting 
+    internal-label: Troubleshooting
 ---
-
 # [!DNL Data Export] log codes reference
 
 This page provides a reference for Data Export log messages to help troubleshoot synchronization issues and determine when a partial or full resync is required. It includes only error, warning, and critical log codes emitted by the [!DNL Data Export] extension.
