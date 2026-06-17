@@ -51,6 +51,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
+nudge: true
 ---
 # Release notes
 
