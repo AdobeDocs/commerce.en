@@ -85,8 +85,6 @@ For partial sync to work, the Commerce application requires the following config
 - [Task scheduling is enabled via cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 - All SaaS data export indexers are configured in `Update by Schedule` mode.
 
-
-
 ### Retry failed items sync {#retry-failed-items-sync}
 
 The Retry failed items sync uses a separate process to resend items that failed to sync due to errors during the synchronization process, for example an application error, network disruption, or SaaS service error. The `*_resend_failed_items` cron jobs in the `resync_failed_feeds_data_exporter` group handle this automatically every 5 minutes.

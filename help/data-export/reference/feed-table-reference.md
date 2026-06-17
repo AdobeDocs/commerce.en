@@ -23,7 +23,7 @@ Actual list of feeds depends on the installed [!DNL SaaS Data Export] package.
 | `variants` | Configurable product variants | `catalog_data_exporter_product_variants` | `cde_product_variants_feed` | Immediate |
 | `scopesWebsite` | Website with store view codes | `scopes_website_data_exporter` | `scopes_website_data_exporter` | Legacy |
 | `scopesCustomerGroup` | Customer group definitions | `scopes_customergroup_data_exporter` | `scopes_customergroup_data_exporter` | Legacy |
-| `productOverrides` | Calulated product permissions | `catalog_data_exporter_product_overrides` | `cde_product_overrides_feed` | Immediate |
+| `productOverrides` | Calculated product permissions | `catalog_data_exporter_product_overrides` | `cde_product_overrides_feed` | Immediate |
 | `categoryPermissions` *(EE)* | Raw category permissions data | `catalog_data_exporter_category_permissions` | `cde_category_permissions_feed` | Immediate |
 | `orders` | Sales orders status | `sales_order_data_exporter_v2` | `sales_data_exporter_orders_v2` | Legacy |
 

@@ -114,7 +114,7 @@ Key elements:
 >
 >Adding a new field to `et_schema.xml` only changes what [!DNL Adobe Commerce] collects locally. The receiving SaaS service must also be updated to accept and process the new field before it has any effect on the storefront.
 
-## Observe data after submission
+## Observe data after submission {#observe-data-after-submission}
 
 [!DNL SaaS Data Export] dispatches the `data_sent_outside` event after each successful batch submission to a SaaS service. Use this event for audit logging, webhook triggers, or metrics collection.
 
