@@ -24,7 +24,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">commit</a></td>
     </tr>
     <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/feed-lock-mechanism">Feed lock mechanism for SaaS Data Export</a> to explain how feed locks prevent concurrent sync conflicts and how to interpret normal skip messages included in the Commerce data export log (<code>commerce-data-export.log</code>).</p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">Feed lock mechanism for SaaS Data Export</a> to explain how feed locks prevent concurrent sync conflicts and how to interpret normal skip messages included in the Commerce data export log (<code>commerce-data-export.log</code>).</p>
 </td>
       <td>
         New topic

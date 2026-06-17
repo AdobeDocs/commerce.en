@@ -16,7 +16,7 @@ entries:
   - core-saas
   - hold for release
   - major-update
-- description: Added [Feed lock mechanism for SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/feed-lock-mechanism)
+- description: Added [Feed lock mechanism for SaaS Data Export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism)
     to explain how feed locks prevent concurrent sync conflicts and how to interpret
     normal skip messages included in the Commerce data export log (`commerce-data-export.log`).
   versions: ''
@@ -719,7 +719,7 @@ entries:
   - technical
 - description: Documented how Commerce customers can monitor and troubleshoot data
     feed exports from the Feed Sync status page in the Commerce Admin. See [View and
-    manage the synchronization process](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process)
+    manage the synchronization process](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage)
     in Data Export Guide.
   versions: ''
   type: technical

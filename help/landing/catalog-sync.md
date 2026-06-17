@@ -1,6 +1,7 @@
 ---
 title: Catalog Sync
 description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services].
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
 TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
@@ -95,4 +96,4 @@ The **Synced catalog products** table displays the following information.
 
 ## Resolve catalog sync issues {#resolvesync}
 
-See [Logs and troubleshooting](../data-export/troubleshooting-logging.md#troubleshooting) in the _SaaS Data Export Guide_.
+See [Troubleshooting](../data-export/troubleshooting/logging.md#troubleshooting) in the _SaaS Data Export Guide_.

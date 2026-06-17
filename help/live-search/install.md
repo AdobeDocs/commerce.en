@@ -1,6 +1,7 @@
 ---
 title: Get Started with [!DNL Live Search]
 description: Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -248,7 +249,7 @@ Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/c
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
-You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and the data export extension logs.
+You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md) and the [data export extension logs](../data-export/troubleshooting/logging.md).
 
 #### Future product updates
 

@@ -1,12 +1,19 @@
 ---
 title: Review logs and troubleshoot
 description: Learn how to troubleshoot [!DNL data export] errors using the data-export and saas-export logs.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
@@ -46,7 +53,7 @@ If you do not see expected data for an Adobe Commerce Service, use the error log
 
 Each log record has the following structure.
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +106,7 @@ In this example, the `status` values provide information about the sync operatio
 
 +++ **Example: Full resync log for the price feed**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -148,22 +155,7 @@ If you see errors not related to configuration or third-party extensions, submit
 
 ### Resolve catalog sync issues {#resolvesync}
 
-When you trigger a data resync, it can take up to an hour for the data to update and be reflected in UI components such as live search and recommendation units. If you still see discrepancies between your catalog and data on the Commerce storefront, or if the catalog sync failed, refer to the following:
-
-#### Data discrepancy
-
-1. Display the detailed view of the product in question in the search results.
-1. Copy the JSON output and verify that the content matches what you have in the [!DNL Commerce] catalog.
-1. If the content does not match, make a minor change to the product in your catalog, such as adding a space or a period.
-1. Wait for a resync or trigger a manual resync from the CLI or the Admin dashboard.
-
-#### Sync not running
-
-If the sync is not running on a schedule or nothing is synced, see this [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) article.
-
-#### Sync failed
-
-If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+For issue-based troubleshooting of catalog sync issues - including data discrepancies, sync not running, and failed sync status - see [Troubleshooting scenarios](troubleshooting-scenarios.md).
 
 ## Extended logging
 
@@ -173,7 +165,7 @@ Use environment variables to extend logs with additional data for tracking and t
 
 Include the feed payload in the SaaS export log by adding the `EXPORTER_EXTENDED_LOG=1` environment variable when you resync the feed.
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -185,7 +177,7 @@ For the Commerce SaaS data export extension (`magento/module-data-exporter`) 103
 
 Preserving payload data in the index table is not recommended in production environments, but it can be useful in a developer environment. Include the feed payload in the index by adding the `PERSIST_EXPORTED_FEED=1` environment variable when you resync the feed.
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -195,12 +187,18 @@ If the reindex process of a specific feed takes an unreasonable amount of time, 
 
 Run the profiler by adding the `EXPORTER_PROFILER=1` environment variable when you run the reindex command.
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 Profiler data is stored in the data export log (`var/log/commerce-data-export.log`) in the following format:
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Troubleshooting scenarios](troubleshooting-scenarios.md) — Resolve catalog sync issues and data discrepancies.
+> - [Log codes reference](log-codes-reference.md) — Look up export log codes.
+> - [Sync feeds using the Commerce CLI](../data-export-cli-commands.md) — Run targeted feed resyncs.
