@@ -28,6 +28,8 @@ topic_v2:
     internal-label: Data management
  - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting 
+ - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting 
 ---
 
 # [!DNL Data Export] log codes reference
