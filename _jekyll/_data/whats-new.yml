@@ -282,7 +282,7 @@ entries:
 - description: Updated [Payment Services Home](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home),
     [Reporting](https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting),
     and [Onboarding overview](https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard)
-    with SaaS/ACCS screenshots and UI guidance (onboarding banner, Transactions-focused
+    with SaaS screenshots and UI guidance (onboarding banner, Transactions-focused
     Home, Transactions grid).
   versions: ''
   type: major-update
@@ -567,7 +567,7 @@ entries:
   - core-saas
   - major-update
 - description: Updated [AEM Assets Integration overview](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
-    with a new tutorial video for Adobe Commerce as a Cloud Service (ACCS) users.
+    with a new tutorial video for Adobe Commerce as a Cloud Service users.
   versions: ''
   type: feedback, major-update
   date: February 19, 2026
