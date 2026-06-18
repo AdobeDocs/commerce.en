@@ -2,8 +2,172 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 5 15:40:06 2026
+updated: Thu Jun 18 16:33:54 2026
 entries:
+- description: Updated documentation for managing catalog data synchronization between
+    Adobe Commerce and connected Commerce services.<br/>- Added [View and manage the
+    synchronization process](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage)
+    topic to the _SaaS Data Export Guide_ to monitor export status, confirm data delivery,
+    and manually resync feeds for Commerce Services and Adobe Commerce Optimizer integrations.<br/>-
+    Added [troubleshooting scenarios](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios),
+    [feed table schema reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/manage-extension),
+    and other troubleshooting and reference information to the _SaaS Data Export Guide_
+    .<br/>- Updated [Get started with the Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started)
+    and added [Manage synchronization to Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/data-sync-manage),
+    [Troubleshoot the Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting),
+    [Connector modules and feed endpoints](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/connector-reference),
+    and instructions for estimating data volume and sync time to the _Adobe Commerce
+    Optimizer Connector Guide_.
+  versions: ''
+  type: major-update, new-topic
+  date: June 17, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/628
+  merge_commit: 66d9db3ab63102a0fd639f274a4131bf69ac868a
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - major-update
+  - new-topic
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: June 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/631
+  merge_commit: 0321b64a787b37a95af0568473bfcfc5e5d4189e
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
+- description: Updated [Order payment status report](https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/order-payment-status#asynchronous-monitoring-of-pending-capture-transactions)
+    to clarify that asynchronous monitoring of pending capture transactions is disabled
+    by default, and to document the steps to enable it.
+  versions: ''
+  type: major-update
+  date: June 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/640
+  merge_commit: 7be26764bc3f3878c3c78a881ad8912038c7f07f
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Updated [Payment Services release notes](https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes)
+    for v2.15.0 (Google Pay and Apple Pay express updates, Skip Review); aligned [Payment
+    options](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options)
+    and [Payment Services configuration](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/configure-admin)
+    with the new behaviors.
+  versions: ''
+  type: major-update
+  date: June 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/488
+  merge_commit: b0eb472bfcb3fb568d4e8a70e63356d60873b641
+  contributor: del_adobe
+  labels:
+  - major-update
+  - release-notes
+- description: Documented search match prioritization (exact/near phrase, same-field,
+    cross-field) and ranking tradeoffs in [Search matching and ranking (Live Search)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)
+    and [Search matching and ranking (Adobe Commerce Optimizer)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching),
+    with links from overview, indexing, best practices, and search performance topics.
+  versions: ''
+  type: major-update
+  date: June 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/561
+  merge_commit: 6f9744e6a0b3390b9e29a1d973fa44456db1612c
+  contributor: emarr_adobe
+  labels:
+  - major-update
+- description: Updated [AEM Assets Integration release notes](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes)
+    with v1.3.8.
+  versions: ''
+  type: major-update
+  date: June 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/624
+  merge_commit: 8937c04dcb4da5f19bce017ef0da8a48bd61c3a6
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Expanded the Adobe Commerce Optimizer Connector integration guide with
+    new technical and operational topics:<br/>- [Connector sync pipeline](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/connector-sync-pipeline)
+    — cron jobs, initialization, feed submission, and error handling<br/>- [Headless
+    storefront integration](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/headless-storefront)
+    — GraphQL `commerceOptimizer` query and bundle product encoding<br/>- [Troubleshooting](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting)
+    — credential, sync, and scope configuration issues<br/>- [Connector reference](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/connector-reference)
+    — modules, feed endpoints, batch limits, and config paths<br/>- [Field mappings](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/field-mapping)
+    — Commerce-to-Optimizer field mapping for all feeds
+  versions: ''
+  type: major-update, new-topic
+  date: June 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/620
+  merge_commit: 2973937a78f4ea425da7876ac006eb2023a35bb3
+  contributor: mslabko_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Added a page on [migration assessments](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
+    for users migrating to [!DNL Adobe Commerce as a Cloud Service].
+  versions: ''
+  type: major-update
+  date: June 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/621
+  merge_commit: 8f260d114983890872281115f74b1f98b32e524d
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
+- description: "- Added a June 8, 2026 hosted service update for semantic search in
+    the [Live Search release notes](https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes#hosted-service-updates),
+    including default-on behavior for Adobe Commerce as a Cloud Service, manual enablement
+    for PaaS, and English-catalog support.<br/>- Added a June 2026 section to the
+    [Adobe Commerce Optimizer release notes](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes#june-2026)
+    for semantic search and recommendation price filters (beta)."
+  versions: ''
+  type: major-update, new-topic
+  date: June 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/623
+  merge_commit: 4c5b282a83b75c07d82dc34b5500916f22e08a44
+  contributor: emarr_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Documented dynamic and static [price filters](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price)
+    for [!DNL Adobe Commerce Optimizer] recommendations, including PDP-relative operators,
+    offset semantics, and setup guidance for SKU-related recommendation types.
+  versions: ''
+  type: feedback, major-update
+  date: June 9, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/592
+  merge_commit: bccb739bbbfcc7e3bfa645c2a0245933014b934f
+  contributor: emarr_adobe
+  labels:
+  - feedback
+  - major-update
+- description: Added a new reference page to provide more detailed information describing
+    Adobe Commerce Optimizer [catalog sources](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-sources)
+    and how they are created.
+  versions: ''
+  type: feedback, new-topic, technical
+  date: June 8, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/619
+  merge_commit: 8b4d08af43cbff9aaf9fc8f417ddab12185f5565
+  contributor: mslabko_adobe
+  labels:
+  - feedback
+  - new-topic
+  - technical
+- description: "- Added [Semantic search](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+    for [!DNL Live Search] with enable steps, best practices, and English-catalog
+    limitations.<br/>- Added [Semantic search](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search)
+    for [!DNL Adobe Commerce Optimizer] and updated [Settings — Advanced search](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+    with simplified enablement and optional tuning controls."
+  versions: ''
+  type: major-update, new-topic
+  date: June 8, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/362
+  merge_commit: 475c99e18380c961e400a75de1c06cd8cdb929d1
+  contributor: emarr_adobe
+  labels:
+  - major-update
+  - new-topic
 - description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
