@@ -30,7 +30,7 @@ Updates include:
 
 ## Current major version
 
-### 1.0.11 Release
+## 1.0.11 Release
 
 _June 18, 2026_
 
