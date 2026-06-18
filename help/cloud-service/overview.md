@@ -108,7 +108,7 @@ See the following video for a brief introduction to the [!DNL Adobe Commerce as 
 
 This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud Service] and all Adobe Experience Cloud solutions.
 
-![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow.svg){zoomable="yes"}
+![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce Storefront
 
