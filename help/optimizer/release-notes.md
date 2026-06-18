@@ -36,6 +36,13 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 >[!BEGINSHADEBOX]
 
+_June TBD, 2026_
+
+<!-- v1.3 -->
+
+![New](../assets/new.svg) **New canEditQuantity field**—Added and propagated the canEditQuantity field on bundle product selections (ProductViewOptionValueProduct), surfacing Commerce's existing quantity-mutability setting through the  GraphQL schema so storefront consumers can tell whether a bundle selection quantity is editable.
+<!--COMOPT-2050-->
+
 ### Semantic search
 
 [!DNL Adobe Commerce Optimizer] now supports **[semantic search]** on the [**Advanced search**](./settings.md#advanced-search) tab in **[!UICONTROL Settings]**. Semantic search uses AI to match products by meaning and context alongside keyword search, reducing empty search pages for natural-language queries. It is enabled by default for eligible English catalogs. You can optionally tune **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]**, and **[!UICONTROL Fuzzy search]** on the same tab. No attribute setup or storefront changes are required. [Learn more](./setup/semantic-search.md).

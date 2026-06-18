@@ -52,6 +52,15 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+## June 2026
+
+**Release date**: June TBD, 2026
+
+<!-- v1.3 -->
+
+![New](../assets/new.svg) **New canEditQuantity field**—Added and propagated the canEditQuantity field on bundle product selections (ProductViewOptionValueProduct), surfacing Commerce's existing quantity-mutability setting through the  GraphQL schema so storefront consumers can tell whether a bundle selection quantity is editable.
+<!--COMOPT-2050-->
+
 ### May 2026
 
 **Release date**: May 20, 2026
