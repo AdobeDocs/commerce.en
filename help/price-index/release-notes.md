@@ -34,7 +34,7 @@ Updates include:
 
 _June 18, 2026_
 
-![Fix](../assets/fix.svg) Add php 8.5. <!--MDEE-1368-->
+![Fix](../assets/fix.svg)  **PHP 8.5 compatibility** – The Adobe Commerce Catalog Adapter now supports PHP 8.5 for compatibliity with Adobe Commerce version 2.4.9+. <!--MDEE-1368-->
 
 ## 1.0.10 Release
 
