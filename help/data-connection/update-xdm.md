@@ -27,8 +27,10 @@ One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL 
 
 This article provides you with the field groups your schema must include to successfully collect the following time series data provided by the Adobe Commerce events:
 
-- [Behavioral](events.md) - Includes storefront, profile, search, and B2B events.
-- [Back office](events-backoffice.md) - Includes order status and profile events.
+- [Behavioral](events.md) - Includes storefront, search, and B2B events.
+- [Back office](events-backoffice.md) - Includes order status and time series [profile events](events-backoffice.md#customer-profile-events).
+
+For profile *records*, see [Update Profile Record Schema](profile-data.md).
 
 Learn more about [time series data](data-ingestion.md).
 

@@ -11,20 +11,20 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 # [!DNL Data Connection] extension for Adobe Commerce {#data-connection}
 
 - [[!DNL Data Connection] Introduction](overview.md)
-- [HIPAA Readiness for Commerce Services](hipaa-readiness.md)
-- [How Commerce Services Handles Privacy Requests](handle-privacy-request.md)
-- [Release Notes](release-notes.md)
 - Fundamentals {#fundamentals}
    - [Install the [!DNL Data Connection] extension](install.md)
-   - [Connect to Adobe Experience Platform](connect-data.md)
    - [Types of Commerce Data](data-ingestion.md)
    - [Update Time Series Event Schema](update-xdm.md)
    - [Update Profile Record Schema](profile-data.md)
+   - [Profile Records](events-profilerecord.md)
+   - [Connect to Adobe Experience Platform](connect-data.md)
    - [Using the Adobe Experience Platform Mobile SDK](mobile-sdk-epc.md)
+- [HIPAA Readiness for Commerce Services](hipaa-readiness.md)
+- [How Commerce Services Handles Privacy Requests](handle-privacy-request.md)
+- [Release Notes](release-notes.md)
 - Capture Data {#event-forwarding}
    - [Behavioral Events](events.md)
    - [Back Office Events](events-backoffice.md)
-   - [Profile Records](events-profilerecord.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)
 - Customize Data Collection {#customize-data}
    - [Add Custom Attributes to Orders](custom-attributes.md)
