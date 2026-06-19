@@ -441,25 +441,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### April 20, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Clarified where to monitor SaaS data export and synchronization—the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Data Management dashboard</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Data Feed Sync Status</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer Data Sync</a>.</p>
-</td>
-      <td>
-        Feedback, technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
