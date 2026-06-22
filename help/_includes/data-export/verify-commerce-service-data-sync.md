@@ -16,7 +16,7 @@ Start with export, then confirm delivery.
 
    From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**.
 
-   ![Data Management dashboard showing synced catalog data in connected Commerce Services](help/data-export/assets/data-management-dashboard.png){width="700" zoomable="yes"}
+   ![Data Management dashboard showing synced catalog data in connected Commerce Services](/help/data-export/assets/data-management-dashboard.png){width="700" zoomable="yes"}
 
    Verify that the expected products, prices, and attributes appear.
 

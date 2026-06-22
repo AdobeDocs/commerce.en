@@ -179,4 +179,10 @@ To ensure that the catalog export is running correctly:
 
 ### Monitor and troubleshoot data synchronization
 
-From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md) and [logs](../data-export/troubleshooting/logging.md) to manage and troubleshoot the process.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Use the [Commerce CLI](../data-export/data-export-cli-commands.md) to manually resync feeds when needed. For resync options and additional troubleshooting steps, see [Manage synchronization](../data-export/data-sync-manage.md) in the _SaaS Data Export Guide_.
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).

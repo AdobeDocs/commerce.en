@@ -18,7 +18,7 @@
 
 >[!NOTE]
 >
->If you have installed the [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) to export catalog data to Adobe Commerce Optimizer, use the [Data Feed Sync Status page](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
+>For deployments that use the [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) to export catalog data to [!DNL Adobe Commerce Optimizer], verify catalog data synchronization using the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Commerce Admin and the [Data Sync page](../optimizer/setup/data-sync.md) in [!DNL Adobe Commerce Optimizer Studio], not the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Adobe Commerce Optimizer drop-in note for API updates {#aco-api-updates-and-dropins}
 

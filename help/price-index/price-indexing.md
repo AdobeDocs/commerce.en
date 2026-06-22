@@ -70,7 +70,13 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Prices for custom product types
+## Monitor data feed sync status {#monitor-sync-progress}
+
+Use the **Data Feed Sync Status** page to track the export status of all data feeds to ensure data consistency. This page alerts you to issues that occur during the export process so that you can resolve them quickly. A "Success" status indicates that data has been exported and will be available in connected Commerce services when the data sync process completes.
+
+For details, see [Manage synchronization](../data-export/data-sync-manage.md) in the _SaaS Data Export Guide_.
+
+## Prices for custom product types
 
 Price calculations are supported for custom product types such as base price, special price, group price, catalog rule price, and so on.
 
@@ -101,7 +107,7 @@ If you have a custom product type that uses a specific formula to calculate the 
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

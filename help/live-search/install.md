@@ -243,15 +243,15 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 >
 >Search and category browse operations are unavailable during sync. The process can take 1+ hours depending on catalog size.
 
-### Monitor sync progress
+### Monitor sync progress 
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-![Data Management Dashboard](assets/data-management-dashboard.png)
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
-You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md) and the [data export extension logs](../data-export/troubleshooting/logging.md).
-
-#### Future product updates
+### Future product updates
 
 After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Streaming Product Updates](indexing.md) in the Indexing documentation.
 
