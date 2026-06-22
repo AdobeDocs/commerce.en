@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Update Time Series Event Schemas for Commerce Data Ingestion
 
-One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL Data Connection] extension is to access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) that is specific to Adobe Commerce. When you create that datastream, you must also select a schema that describes the data you plan to ingest. That schema must include commerce-specific field groups.
+One of the steps when you [enable the [!DNL Data Connection]](overview.md#enable-extension) extension is to access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) that is specific to Adobe Commerce. When you create that datastream, you must also select a schema that describes the data you plan to ingest. That schema must include commerce-specific field groups.
 
 This article provides you with the field groups your schema must include to successfully collect the following time series data provided by the Adobe Commerce events:
 

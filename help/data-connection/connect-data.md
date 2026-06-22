@@ -68,7 +68,7 @@ In this section, you learn how to configure the [!DNL Data Connection] extension
 
 [!DNL Data Connection] settings use a mix of global and website-scoped values. Global settings apply to your entire Adobe Commerce instance. Website-scoped settings let multi-brand and multi-website merchants route data to different Adobe Experience Platform sandboxes and datasets per website.
 
-Before you configure storefront, back office, or profile data collection, set the **Scope** dropdown on the **Settings** tab to the website you want to configure. Repeat configuration for each website that needs different Experience Platform routing.
+Before you configure storefront, back office, or profile data collection, set the **[!UICONTROL Scope]** drop-down on the **[!UICONTROL Settings]** tab to the website you want to configure. Repeat configuration for each website that needs different Experience Platform routing.
 
 | Setting or field | Scope | Notes |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ A merchant operates two websites from one Adobe Commerce instance:
 - **Website A (Brand A)** sends storefront and back office data to a **production** Experience Platform sandbox.
 - **Website B (Brand B)** sends data to a **development** Experience Platform sandbox for testing.
 
-The merchant enters service account credentials once on the **Service Account/Credential details** page. On the **Settings** tab, the merchant sets **Scope** to **Website A**, selects the production sandbox name, and saves. The merchant then sets **Scope** to **Website B**, selects the development sandbox name, and saves. **[!UICONTROL Test connection]** runs for each website to confirm the correct sandbox and credentials.
+The merchant enters service account credentials once on the **[!UICONTROL Service Account/Credential details]** page. On the **[!UICONTROL Settings]** tab, the merchant sets **[!UICONTROL Scope]** to **Website A**, selects the production sandbox name, and saves. The merchant then sets **[!UICONTROL Scope]** to **Website B**, selects the development sandbox name, and saves. **[!UICONTROL Test connection]** is run for each website to confirm the correct sandbox and credentials.
 
 ### Add service account and credential details
 
@@ -125,7 +125,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **[!UICONTROL Save Config]**.
 
-   After you save, complete website-scoped configuration, including **Sandbox name** and **[!UICONTROL Test connection]**, on the **Settings** tab. See [General](#general).
+   After you save, complete website-scoped configuration—including **[!UICONTROL Sandbox name]** and **[!UICONTROL Test connection]**—on the **[!UICONTROL Settings]** tab. See [General](#general).
 
 ### General
 
@@ -133,13 +133,13 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
     ![[!DNL Data Connection] Settings](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. On the **Settings** tab under **General**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
+1. On the **[!UICONTROL Settings]** tab under **[!UICONTROL General]**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. In the **Scope** drop-down, set the context to **Website**. See [Configuration scope](#configuration-scope) for which settings apply globally and per website.
+1. In the **[!UICONTROL Scope]** drop-down, set the context to **Website**. See [Configuration scope](#configuration-scope) for which settings apply globally and per website.
 
-1. Enter the **Sandbox name** for the website in scope.
+1. Enter the **[!UICONTROL Sandbox name]** for the website in scope.
 
-1. Click **[!UICONTROL Test connection]** to validate service account credentials and the sandbox for the website currently selected in **Scope**. Repeat for each website that uses a different sandbox.
+1. Click **[!UICONTROL Test connection]** to validate service account credentials and the sandbox for the website currently selected in **[!UICONTROL Scope]**. Repeat for each website that uses a different sandbox.
 
 1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the [!DNL Data Connection] extension deploys one for you.
 
@@ -214,7 +214,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 |Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 | **[!UICONTROL Test connection]** | Validates service account credentials and the sandbox name for the website currently selected in **Scope**. Run the test after you configure credentials and after you change sandbox name or scope for a website. |
 
-After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+After you configure the extension, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 ### Send customer profile data
 
@@ -346,7 +346,7 @@ Learn more about how to [set up custom attributes](custom-attributes.md).
 
 ## Confirm that event data is collected {#confirm-that-event-data-is-collected}
 
-To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created during onboarding](overview.md#onboarding-steps).
+To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created during configuration](overview.md#enable-extension).
 
 1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
     

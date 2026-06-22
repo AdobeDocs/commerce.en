@@ -43,7 +43,7 @@ topic_v2:
 
 The [!DNL Data Connection] extension connects your Adobe Commerce web instance to the Adobe Experience Platform and the Edge Network. For mobile app developers, you use the Adobe Experience Platform Mobile SDK with Commerce to capture and send Commerce data to the Experience Platform. [Learn more](./mobile-sdk-epc.md).
 
-Multi-website merchants can configure applicable [!DNL Data Connection] settings per website, including Experience Platform sandbox selection. See [Connect Commerce data to Adobe Experience Platform](connect-data.md#configuration-scope) for global vs website-scoped fields.
+Multi-website merchants can configure applicable [!DNL Data Connection] settings per website, including Experience Platform sandbox selection. See [Connect Commerce data to Adobe Experience Platform](connect-data.md#configuration-scope) for global versus website-scoped fields.
 
 Your Commerce store contains a wealth of data. Information about how your shoppers browse, view, and ultimately purchase the products on your site can reveal opportunities to create a more personalized shopping experience. While that data can inform native Commerce features such as cart price rules and dynamic blocks, the data remains siloed in your Commerce instance. 
 
@@ -108,7 +108,7 @@ To use the [!DNL Data Connection] extension, you must have the following:
 
 >[!ENDSHADEBOX]
 
-## Onboarding steps {#onboarding-steps}
+## Enable the extension {#enable-extension}
 
 At a high level, enabling the [!DNL Data Connection] extension involves the following steps: 
 
