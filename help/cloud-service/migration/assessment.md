@@ -4,11 +4,17 @@ description: Learn how to read an Adobe Commerce PaaS migration assessment repor
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
+nudge: true1
+autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
@@ -19,10 +25,20 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-nudge: true1
 ---
 
 # Migration Assessment

@@ -7,25 +7,26 @@ role: Admin, Developer, User, Leader
 level: Beginner
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-TQID: 'https://experienceleague.adobe.com/NSIeUn0B5i19ldOZSVu4PJy9vqY4NGrXY1Y485sV09U'
+nudge: true
+autotag-review: '2026-06-18T16:04:15.842Z'
+TQID: 'https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
     internal-label: Security
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
     internal-label: Order Management System
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-    internal-label: Reporting
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -39,10 +40,6 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
@@ -51,7 +48,6 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-nudge: true
 ---
 # Release notes
 
