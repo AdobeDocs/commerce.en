@@ -40,7 +40,7 @@ _June TBD, 2026_
 
 <!-- v1.3 -->
 
-![New](../assets/new.svg) **New canEditQuantity field**—Added and propagated the canEditQuantity field on bundle product selections (ProductViewOptionValueProduct), surfacing Commerce's existing quantity-mutability setting through the  GraphQL schema so storefront consumers can tell whether a bundle selection quantity is editable.
+![New](../assets/new.svg) **New `canEditQuantity` field**—Added `canEditQuantity` to `ProductViewOptionValueProduct` in Catalog Service GraphQL. It exposes the optional **User Defined** quantity setting for bundle selections from the Commerce Admin, so storefront consumers can determine whether a bundle selection's quantity is editable.
 <!--COMOPT-2050-->
 
 ### Semantic search
