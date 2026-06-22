@@ -30,7 +30,7 @@ This article provides you with the field groups your schema must include to succ
 - [Behavioral](events.md) - Includes storefront, search, and B2B events.
 - [Back office](events-backoffice.md) - Includes order status and time series [profile events](events-backoffice.md#customer-profile-events).
 
-For profile *records*, see [Update Profile Record Schema](profile-data.md).
+For profile *records*, see [Update profile record schema](profile-data.md).
 
 Learn more about [time series data](data-ingestion.md).
 

@@ -68,7 +68,7 @@ In this section, you learn how to configure the [!DNL Data Connection] extension
 
 [!DNL Data Connection] settings use a mix of global and website-scoped values. Global settings apply to your entire Adobe Commerce instance. Website-scoped settings let multi-brand and multi-website merchants route data to different Adobe Experience Platform sandboxes and datasets per website.
 
-Before you configure storefront, back office, or profile data collection, set the **Scope** drop-down on the **Settings** tab to the website you want to configure. Repeat configuration for each website that needs different Experience Platform routing.
+Before you configure storefront, back office, or profile data collection, set the **Scope** dropdown on the **Settings** tab to the website you want to configure. Repeat configuration for each website that needs different Experience Platform routing.
 
 | Setting or field | Scope | Notes |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ A merchant operates two websites from one Adobe Commerce instance:
 - **Website A (Brand A)** sends storefront and back office data to a **production** Experience Platform sandbox.
 - **Website B (Brand B)** sends data to a **development** Experience Platform sandbox for testing.
 
-The merchant enters service account credentials once on the **Service Account/Credential details** page. On the **Settings** tab, the merchant sets **Scope** to **Website A**, selects the production sandbox name, and saves. The merchant then sets **Scope** to **Website B**, selects the development sandbox name, and saves. **[!UICONTROL Test connection]** is run for each website to confirm the correct sandbox and credentials.
+The merchant enters service account credentials once on the **Service Account/Credential details** page. On the **Settings** tab, the merchant sets **Scope** to **Website A**, selects the production sandbox name, and saves. The merchant then sets **Scope** to **Website B**, selects the development sandbox name, and saves. **[!UICONTROL Test connection]** runs for each website to confirm the correct sandbox and credentials.
 
 ### Add service account and credential details
 
@@ -125,7 +125,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **[!UICONTROL Save Config]**.
 
-   After you save, complete website-scoped configuration—including **Sandbox name** and **[!UICONTROL Test connection]**—on the **Settings** tab. See [General](#general).
+   After you save, complete website-scoped configuration, including **Sandbox name** and **[!UICONTROL Test connection]**, on the **Settings** tab. See [General](#general).
 
 ### General
 

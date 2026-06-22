@@ -75,7 +75,7 @@ Sharing data between these two systems requires that you understand several conc
 
 - **Back office data** — Captured on Commerce servers, including [order status](events-backoffice.md#order-status) events such as [`orderPlaced`](events-backoffice.md#orderplaced) and [`orderShipped`](events-backoffice.md#ordershipmentcompleted). See [back office events](events-backoffice.md).
 
-- **Profile records** — Snapshot data sent when a shopper profile is created in Commerce. See [profile records](events-profilerecord.md) and [Update Profile Record Schema](profile-data.md).
+- **Profile records** — Snapshot data sent when a shopper profile is created in Commerce. See [profile records](events-profilerecord.md) and [Update profile record schema](profile-data.md).
 
 - **Profile events** — Time series events for profile lifecycle changes on the server. See [customer profile events](events-backoffice.md#customer-profile-events).
 
