@@ -54,7 +54,7 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## June 2026
 
-**Release date**: June TBD, 2026
+**Release date**: June 30, 2026
 
 <!-- v1.3 -->
 

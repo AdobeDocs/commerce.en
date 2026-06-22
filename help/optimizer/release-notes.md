@@ -36,7 +36,7 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 >[!BEGINSHADEBOX]
 
-_June TBD, 2026_
+_June 24, 2026_
 
 <!-- v1.3 -->
 
