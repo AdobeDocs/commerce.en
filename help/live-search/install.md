@@ -257,9 +257,9 @@ After the initial synchronization, it can take up to 15 minutes for incremental 
 
 ## 4. Verify that the data was exported {#verify}
 
-To check if your catalog data has been exported from Adobe Commerce and synced with [!DNL Live Search], you have a few options:
+In addition to using the Data Feed Sync Status page and the Data Management Dashboard, you can verify catalog data exported from Adobe Commerce directly in the database and confirm that data has successfully synced to [!DNL Live Search] by using the [!DNL Live Search] GraphQL workspace.
 
-- Look for entries in the following tables:
+- From the database, use SQL queries to look for entries in the following tables:
 
    - `cde_products_feed`
    - `cde_product_attributes_feed`
