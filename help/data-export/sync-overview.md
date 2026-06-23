@@ -86,7 +86,7 @@ After connecting an Adobe Commerce instance to Commerce Service, perform a full 
 
 >[!NOTE]
 >
->`saas:resync` only transmits new items, or updates or items that previously failed to export. Items whose content hash has not changed since the last export are skipped.
+>The `saas:resync` command only transmits new items, updated items, and items that previously failed to export. Items whose content hash has not changed since the last export are skipped.
 
 ### Partial sync {#partial-sync}
 
