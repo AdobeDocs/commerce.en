@@ -90,4 +90,4 @@ Use the [Commerce CLI](../data-export/data-export-cli-commands.md) to manually r
 
 >[!NOTE]
 >
->If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
