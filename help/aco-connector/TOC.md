@@ -19,6 +19,7 @@ nudge: true
   - [Troubleshooting scenarios](troubleshooting/troubleshooting-scenarios.md)
 - Reference {#reference}
   - [Connector modules and feed endpoints](reference/connector-reference.md)
+  - [Feed table schema reference](reference/feed-table-reference.md)
   - [Field mapping for connector feeds](reference/field-mapping.md)
   - [Estimate data volume and sync time](reference/estimate-data-volume-sync-time.md)
 - [Release notes](release-notes.md)

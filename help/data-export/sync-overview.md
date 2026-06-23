@@ -84,6 +84,10 @@ After connecting an Adobe Commerce instance to Commerce Service, perform a full 
 >
 >Full sync is mainly for the onboarding phase. Avoid regular use to prevent database overload. After the initial synchronization, ongoing changes are synched automatically using partial sync.
 
+>[!NOTE]
+>
+>`saas:resync` only transmits new items, or updates or items that previously failed to export. Items whose content hash has not changed since the last export are skipped.
+
 ### Partial sync {#partial-sync}
 
 With partial sync, SaaS data export automatically sends updates from the Commerce application, such as product name changes or price updates, to connected commerce services.

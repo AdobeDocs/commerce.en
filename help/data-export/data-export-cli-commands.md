@@ -98,6 +98,10 @@ Required. Specifies the feed entity to resync.
 >
 >Installed modules determine which feeds you can resync. For example, `productOverrides` requires [!DNL Adobe Commerce] on cloud, on premises, or Commerce as a Cloud Service, and `orders` requires the Sales Orders module.
 
+>[!NOTE]
+>
+>`saas:resync` only transmits new items, or updates or items that previously failed to export. Items whose content hash has not changed since the last export are skipped.
+
 **Example:**
 
 ```shell
@@ -109,6 +113,10 @@ bin/magento saas:resync --feed products
 Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions` feeds.
 
 By default, when you use the `--by-ids` option you specify values using product SKU values. To use product IDs instead, add the `--id-type=productId` option.
+
+>[!NOTE]
+>
+>Unlike a standard resync, `--by-ids` bypasses hash verification and forces the specified entities to be submitted to SaaS regardless of whether their content has changed since the last export.
 
 **Examples:**
 
