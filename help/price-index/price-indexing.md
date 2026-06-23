@@ -70,11 +70,15 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Monitor data feed sync status {#monitor-sync-progress}
+## Monitor sync progress
 
-Use the **Data Feed Sync Status** page to track the export status of all data feeds to ensure data consistency. This page alerts you to issues that occur during the export process so that you can resolve them quickly. A "Success" status indicates that data has been exported and will be available in connected Commerce services when the data sync process completes.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-For details, see [Manage synchronization](../data-export/data-sync-manage.md) in the _SaaS Data Export Guide_.
+Use the [Commerce CLI](../data-export/data-export-cli-commands.md) to manually resync feeds when needed. For resync options and additional troubleshooting steps, see [Manage synchronization](../data-export/data-sync-manage.md) in the _SaaS Data Export Guide_.
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
 
 ## Prices for custom product types
 
