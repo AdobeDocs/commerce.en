@@ -8,6 +8,8 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 autotag-review: '2026-06-09T15:41:54.613Z'
 TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
 product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
