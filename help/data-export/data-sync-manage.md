@@ -74,7 +74,7 @@ Use the following options to manually resync feed data.
 | Task | Option | Notes |
 | --- | --- | --- |
 | Resync selected failed or problematic feed items | **[!UICONTROL Data Feed Sync Status] page** | Monitor and resync selected feed items from the Commerce Admin. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
-| Full resync of all feeds | **[!UICONTROL Data Management Dashboard]** | Perform a full resync of all feeds from the Commerce Admin; Adobe recommends this primarily when you first connect to a Commerce service. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
+| Full resync of all feeds | **[!UICONTROL Data Management Dashboard]** | Perform a full resync of all feeds from the Commerce Admin; Adobe recommends this primarily when you first connect to a Commerce service. Items whose content hash has not changed since the last export are skipped. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
 | Targeted feed resync with operational control | **Commerce CLI** | Use the `saas:resync` command for targeted feed resyncs. See [Sync feeds using the Commerce CLI](data-export-cli-commands.md). |
 
 >[!MORELIKETHIS]
