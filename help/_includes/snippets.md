@@ -1,5 +1,11 @@
 # Commerce snippets
 
+## Install note for Data Feed Sync Status extension {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} to enable it.
+
 
 ## Adobe Commerce Optimizer integration environment alignment {#aco-integration-environment-alignment}
 

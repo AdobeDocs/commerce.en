@@ -247,9 +247,7 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 
 {{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
->[!NOTE]
->
->If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
+{{install-data-sync-feed-status}}
 
 ### Future product updates
 
