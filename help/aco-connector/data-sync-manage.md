@@ -60,3 +60,5 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 > - [Estimate data volume and sync time](reference/estimate-data-volume-sync-time.md) — Calculate expected sync duration
 > - [Troubleshooting](troubleshooting.md) — Diagnose credential, sync, and scope export issues
 > - [Connector modules and feed endpoints](reference/connector-reference.md) — Review modules, API endpoints, and supported feeds
+> - [Data Feed Sync Status page in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Learn more about the fields and capabilities available to monitor feed status
+> - [Data Sync dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — Reference documentation for fields and actions available to monitor catalog data sync
