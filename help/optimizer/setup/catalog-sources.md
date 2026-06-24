@@ -1,5 +1,5 @@
 ---
-title: Catalog source
+title: Catalog sources
 description: Learn what catalog sources are and how they define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior.
 role: Admin, Developer
 recommendations: noCatalog
@@ -35,13 +35,13 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Catalog source
+# Catalog sources
 
-A catalog source represents an authoritative scope of products, attributes, and categories. Catalog sources typically map to language, audience, or system-of-origin boundaries and determine search, filter, and sort behavior.
+Catalog sources represent authoritative scopes of products, attributes, and categories. They typically map to language, audience, or system-of-origin boundaries and determine search, filter, and sort behavior.
 
-## Catalog source versus related concepts
+## Catalog sources versus related concepts
 
-Understanding how a catalog source relates to other [!DNL Adobe Commerce Optimizer] concepts helps you model your data correctly:
+Understanding how catalog sources relate to other [!DNL Adobe Commerce Optimizer] concepts helps you model your data correctly:
 
 * **Catalog source** - The underlying data context that supplies product information. A catalog source is typically a locale (for example, `en-US`, `fr-CA`) or an external system such as a PIM or ERP. Products, attributes metadata, and categories are all scoped per catalog source. Think of a catalog source as *where* the raw catalog data comes from and *how* it affects product discovery (search results, filtering, and sorting behavior).
 
@@ -51,7 +51,7 @@ Understanding how a catalog source relates to other [!DNL Adobe Commerce Optimiz
 
 ## Rules and limitations
 
-* A catalog source is created by ingesting a product via the Data Ingestion API. See [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) for more information.
+* Each catalog source is created by ingesting a product via the Data Ingestion API. See [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) for more information.
 * Product uniqueness is determined by SKU + catalog source.
 * Shoppers do not access catalog sources directly. Catalog data is exposed to the storefront via [catalog views](catalog-view.md).
 
@@ -59,7 +59,7 @@ Understanding how a catalog source relates to other [!DNL Adobe Commerce Optimiz
 
 Use the following guidance when deciding how to structure your catalog sources:
 
-* Create a separate catalog source per different catalog language.
+* Create a separate catalog source for each catalog language.
 * Use separate catalog sources when product and attribute differences must affect search, filtering, or sorting behavior (for example, different searchability, filterability, or facet configuration for the same attribute).
 * Use [catalog layers](catalog-layer.md) when product and attribute differences must affect storefront display only, not product discovery.
 

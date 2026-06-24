@@ -1,6 +1,7 @@
 ---
 title: SaaS Price Indexing
 description: Using the SaaS Price Indexing to improve performance
+autotag-review: '2026-06-17T15:08:59.000Z'
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
@@ -16,6 +17,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # SaaS Price Indexing
 
@@ -25,7 +29,7 @@ The following diagram shows the indexing data flow to SaaS services when Commerc
 
 ![Default data flow](assets/old_way.png)
 
-With SaaS price indexing enabled, the data flow changes. Price indexing is performed using [Commerce SaaS data export](../data-export/data-synchronization.md).
+With SaaS price indexing enabled, the data flow changes. Price indexing is performed using [Commerce SaaS data export](../data-export/sync-overview.md).
 
 ![SaaS price indexing data flow](assets/new_way.png)
 
@@ -66,7 +70,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Prices for custom product types
+## Monitor sync progress
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Use the [Commerce CLI](../data-export/data-export-cli-commands.md) to manually resync feeds when needed. For resync options and additional troubleshooting steps, see [Manage synchronization](../data-export/data-sync-manage.md) in the _SaaS Data Export Guide_.
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
+
+## Prices for custom product types
 
 Price calculations are supported for custom product types such as base price, special price, group price, catalog rule price, and so on.
 
@@ -97,7 +111,7 @@ If you have a custom product type that uses a specific formula to calculate the 
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

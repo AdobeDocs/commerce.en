@@ -9,6 +9,10 @@ TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11AD
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
@@ -41,6 +45,8 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 
 ## Products
 
+The `products` feed sends data to the [Products endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
+
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | ----------------------------------------------- | -------------- | ------- |
 | `sku` | `sku` | |
@@ -67,6 +73,9 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 
 ## Product attributes metadata
 
+The `productAttributes` feed sends data to the [Metadata endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
+
+
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
@@ -83,7 +92,9 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 | `searchWeight` | `searchWeight` | |
 | `searchTypes` | `searchTypes` | |
 
-**Data type conversion:**
+### Data type conversion
+
+The connector derives the API `dataType` from the Commerce `dataType` and `frontendInput` fields in the mapping table above. The following table shows the conversion rules the connector applies.
 
 | [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API `dataType` |
 | -------------------- | -------------------------- | ------------------- |
@@ -95,7 +106,13 @@ This page documents how the [!DNL Adobe Commerce Optimizer Connector] transforms
 | `OBJECT` | - | `OBJECT` |
 | any other | - | `TEXT` |
 
+>[!NOTE]
+>
+>When the `dataType` for an attribute is set to `OBJECT`, the [products API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} treats the attribute value as a structured object rather than a plain string. At query time, the API attempts to parse the stored value as JSON. If parsing succeeds, the result is returned as a nested object in the response. **This behavior is particularly useful** when you supply custom attributes dynamically—for example, to carry structured or multi-field data that cannot be represented as a scalar value. For instructions, see [Add product attributes dynamically](../../data-export/add-attribute-dynamically.md).
+
 ## Price books
+
+The `priceBooks` feed sends data to the [Price books endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
 
 Unlike the other connector feeds, the `priceBooks` feed is not collected by a [!DNL SaaS Data Export] indexer in [!DNL Adobe Commerce]. The connector generates this feed from the website and customer group configuration in the Admin.
 
@@ -117,6 +134,8 @@ The prices feed uses the same formula when resolving which price book a price en
 
 ## Prices
 
+The `prices` feed sends data to the [Prices endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Notes |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
@@ -126,6 +145,8 @@ The prices feed uses the same formula when resolving which price book a price en
 | `tierPrices[]` | `tierPrices[]` | |
 
 ## Categories
+
+The `categories` feed sends data to the [Categories endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
 

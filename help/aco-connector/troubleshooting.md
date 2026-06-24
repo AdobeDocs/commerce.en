@@ -9,6 +9,10 @@ TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
@@ -33,7 +37,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
 ---
-# Troubleshoot the Adobe Commerce Optimizer Connector
+# Troubleshoot the [!DNL Adobe Commerce Optimizer Connector]
 
 Use this guide to diagnose and resolve common issues with the [!DNL Adobe Commerce Optimizer Connector] during initial setup, catalog feed synchronization, and scope export configuration. The sections below cover credential and tenant validation, data sync failures, and related [!DNL SaaS Data Export] diagnostics.
 
@@ -43,14 +47,13 @@ If `aco:config:init` fails during credential validation:
 
 - Run the `bin/magento aco:config:show` [!DNL Adobe Commerce] CLI command to verify the stored values.
 - Confirm that the tenant ID belongs to the IMS organization used to obtain the credentials.
-- Confirm that the OAuth client has the necessary scopes for the [!DNL Commerce Optimizer] ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
+- Confirm that the OAuth client has the necessary scopes for the [!DNL Adobe Commerce Optimizer] ingestion service (see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
 
 ## Data not syncing
 
 **Check item-level error details:**
 
-1. From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**.
-2. Select the failing feed to view per-item error details.
+See [Verify that the data sync is working](./data-sync-manage.md#verify-that-the-data-sync-is-working) for steps to open **[!UICONTROL Data Feed Sync Status]** in the Commerce Admin. Select the failing feed to view per-item error details.
 
 Key points about error handling:
 
@@ -59,8 +62,16 @@ Key points about error handling:
 
 **Check scope configuration:**
 
-If the problem affects only a specific catalog source (store view code) or price book, check whether the corresponding website or store view has sync disabled. See [Customize the data export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration).
+If the problem affects only a specific catalog source (store view code) or price book, check whether the corresponding website or store view has sync disabled. See [Customize the Commerce scopes export configuration](./get-started.md#customize-the-commerce-scopes-export-configuration).
+
+**When resolved:**
+
+Connector feeds show a successful status in **[!UICONTROL Data Feed Sync Status]**, and the expected products, prices, and attributes appear on the **[!UICONTROL Data Sync]** page in [!DNL Commerce Optimizer].
+
+## Misconfiguration and result interpretation
+
+For a catalog of specific behaviors caused by misconfiguration or misinterpretation of sync results - such as missing products, incorrect prices, or scope-level data gaps - see [Troubleshooting scenarios](troubleshooting/troubleshooting-scenarios.md).
 
 ## [!DNL SaaS Data Export] diagnostics
 
-For lower-level [!DNL SaaS Data Export] diagnostics including log locations and feed resync commands, see the [[!DNL SaaS Data Export] troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
+For lower-level [!DNL SaaS Data Export] diagnostics including log locations and feed resync commands, see the [[!DNL SaaS Data Export] troubleshooting guide](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
