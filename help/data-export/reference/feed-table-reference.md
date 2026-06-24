@@ -74,25 +74,75 @@ See [Synchronization modes](../sync-overview.md#synchronization-modes).
 
 ## Common diagnostic queries
 
-Use the following SQL queries to inspect feed table state directly. Replace `cde_products_feed` with the table for the feed you are investigating. See [Supported feeds](#supported-feeds) for the full list of table names.
+Use the following SQL queries to inspect feed table state directly. Replace placeholder values such as `<SKU>`, `<ATTRIBUTE_CODE>`, and `<CATEGORY_ID>` with actual values from your environment. See [Supported feeds](#supported-feeds) for the full list of table names.
 
-**Find all items that have not been successfully exported:**
+**Products feed — by SKU:**
 
 ```sql
-SELECT source_entity_id, status, errors, modified_at
-FROM cde_products_feed
-WHERE status != 200
-ORDER BY modified_at DESC
-LIMIT 50;
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_products_feed f
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
 ```
 
-**Check export status for a specific SKU across all scopes:**
+**Product attributes feed — by attribute code:**
 
 ```sql
-SELECT p.sku, f.status, f.modified_at, f.is_deleted, f.feed_data, f.errors
-FROM catalog_product_entity p
-LEFT JOIN cde_products_feed f ON f.source_entity_id = p.entity_id
-WHERE p.sku = 'ADB295';
+SELECT JSON_EXTRACT(f.feed_data, '$.attributeCode') AS 'code',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_attributes_feed f
+WHERE JSON_EXTRACT(f.feed_data, '$.attributeCode') IN ('<ATTRIBUTE_CODE>');
+```
+
+**Prices feed — by SKU:**
+
+```sql
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.websiteCode') AS 'website code',
+       JSON_EXTRACT(f.feed_data, '$.customerGroupCode') AS 'customer group code',
+       IFNULL(cg.customer_group_code, '-- (base price)') AS 'AC customer group',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_prices_feed f
+LEFT JOIN customer_group cg
+       ON sha1(cg.customer_group_id) = JSON_EXTRACT(f.feed_data, '$.customerGroupCode')
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
+```
+
+**Product overrides feed — by SKU:**
+
+```sql
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.websiteCode') AS 'website code',
+       JSON_EXTRACT(f.feed_data, '$.customerGroupCode') AS 'customer group code',
+       IFNULL(cg.customer_group_code, 'NA (deleted)') AS 'AC customer group',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_overrides_feed f
+LEFT JOIN customer_group cg
+       ON sha1(cg.customer_group_id) = JSON_EXTRACT(f.feed_data, '$.customerGroupCode')
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
+```
+
+**Categories feed — by category ID:**
+
+```sql
+SELECT JSON_EXTRACT(feed_data, '$.categoryId') AS 'Category ID',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_categories_feed f
+WHERE JSON_EXTRACT(feed_data, '$.categoryId') IN (<CATEGORY_ID>);
+```
+
+**Variants feed — by configurable product SKU:**
+
+```sql
+SELECT JSON_EXTRACT(feed_data, '$.parentSku') AS 'configurable SKU',
+       JSON_EXTRACT(feed_data, '$.productSku') AS 'Variant SKU',
+       JSON_EXTRACT(f.feed_data, '$.optionValues') AS 'options',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_variants_feed f
+WHERE JSON_EXTRACT(feed_data, '$.parentSku') = '<SKU>';
 ```
 
 

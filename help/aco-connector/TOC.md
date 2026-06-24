@@ -4,7 +4,7 @@ breadcrumb-title: "[!DNL Optimizer Connector]"
 user-guide-description: "This guide provides detailed instructions for using the [!DNL Adobe Commerce Optimizer Connector] to export catalog data, sync prices, and deliver [!DNL Edge Delivery Services] storefronts using [!DNL Adobe Commerce Optimizer]."
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
-nudge: true
+nudge: false
 ---
 
 # [!DNL Adobe Commerce Optimizer Connector] Integration Guide {#aco-optimizer-connector}
@@ -19,6 +19,7 @@ nudge: true
   - [Troubleshooting scenarios](troubleshooting/troubleshooting-scenarios.md)
 - Reference {#reference}
   - [Connector modules and feed endpoints](reference/connector-reference.md)
+  - [Feed table schema reference](reference/feed-table-reference.md)
   - [Field mapping for connector feeds](reference/field-mapping.md)
   - [Estimate data volume and sync time](reference/estimate-data-volume-sync-time.md)
 - [Release notes](release-notes.md)

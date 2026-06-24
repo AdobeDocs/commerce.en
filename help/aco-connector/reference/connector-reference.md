@@ -31,7 +31,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
 ---
-# Connector modules and feed endpoints
+# Connector modules and feed endpoints for Adobe Commerce Optimizer Connector
 
 This reference lists the [!DNL Adobe Commerce Optimizer Connector] module packages, supported feed API endpoints, and configuration key paths stored in `core_config_data`. To learn how these components work together during synchronization, see [Connector sync pipeline](../connector-sync-pipeline.md).
 
