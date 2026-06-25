@@ -52,15 +52,6 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
-## June 2026
-
-**Release date**: June 30, 2026
-
-<!-- v1.3 -->
-
-![New](../assets/new.svg) **New `canEditQuantity` field**—Added `canEditQuantity` to `ProductViewOptionValueProduct` in Catalog Service GraphQL. It exposes the optional **User Defined** quantity setting for bundle selections from the Commerce Admin, so storefront consumers can determine whether a bundle selection's quantity is editable.
-<!--COMOPT-2050-->
-
 ### May 2026
 
 **Release date**: May 20, 2026
