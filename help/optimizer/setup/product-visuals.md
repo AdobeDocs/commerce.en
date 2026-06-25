@@ -83,3 +83,4 @@ To display AEM Assets images on your storefront, [assign the `AEM-Assets` layer 
 * [Catalog layers](catalog-layer.md)
 * [Catalog views](catalog-view.md)
 * [AEM Assets Integration Guide](../../aem-assets-integration/overview.md)
+* [Product Visualss limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
