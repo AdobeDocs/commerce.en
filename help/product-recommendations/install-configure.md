@@ -83,9 +83,9 @@ After you successfully link the Commerce application to Commerce Services and sp
 
 ## Monitor and troubleshoot data synchronization
 
-From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md) and [logs](../data-export/troubleshooting/logging.md) to manage and troubleshoot the process.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
- You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) that behavioral data is being sent to your storefront.
+{{install-data-sync-feed-status}}
 
 ## Update your [!DNL Product Recommendations] installation {#update}
 
