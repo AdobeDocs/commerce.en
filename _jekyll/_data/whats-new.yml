@@ -2,8 +2,41 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 19 15:40:08 2026
+updated: Fri Jun 26 17:40:53 2026
 entries:
+- description: Updated catalog data sync verification guidance across Commerce service
+    documentation. Service installation and configuration topics now use a consistent
+    two-step workflow—confirm export on the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status),
+    then confirm delivery on the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)—with
+    updated instructions in [Catalog Service Get Started](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export),
+    [Live Search Install](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#monitor-sync-progress),
+    [Product Recommendations Install](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization),
+    and [Manage synchronization](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working)
+    in the _SaaS Data Export Guide_.
+  versions: ''
+  type: feedback
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/648
+  merge_commit: 82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - feedback
+- description: Added a new [Adobe Commerce Optimizer Connector feed table schema reference](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/feed-table-reference)
+    and updated [SaaS Data Export synchronization](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/sync-overview),
+    [manual sync management](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage),
+    [Commerce CLI resync commands](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/data-export-cli-commands),
+    and [feed table schema](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/feed-table-reference)
+    guidance.
+  versions: ''
+  type: major-update, new-topic
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/657
+  merge_commit: 601d02435f388096d59ce7f8e2a9e3e7c8bec65b
+  contributor: mslabko_adobe
+  labels:
+  - major-update
+  - new-topic
 - description: Updated documentation for managing catalog data synchronization between
     Adobe Commerce and connected Commerce services.<br/>- Added [View and manage the
     synchronization process](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage)
