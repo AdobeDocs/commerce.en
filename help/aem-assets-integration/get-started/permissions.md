@@ -5,11 +5,16 @@ feature: CMS, Media, Configuration
 ---
 # User permissions and IMS
 
-**IMS** (Adobe Identity Management System) is the authentication layer. For Adobe Commerce as a Cloud Service, IMS authentication is enabled by default in the Admin. For Adobe Commerce on cloud or on-premises, IMS is optional;[Enabling IMS for Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} provides an enhanced configuration UI (Asset Selector, auto-populated dropdowns), but you can configure the integration without IMS by manually entering **Program ID**, and **Environment ID**.
+**IMS** (Adobe Identity Management System) is the authentication layer.
 
-The AEM Assets Integration also requires specific **Adobe Admin Console product profiles** when using IMS. Users who configure the integration in Commerce Admin need the **AEM Assets DM OpenAPI Users - delivery** product profile, or the **author** product profile as a fallback. This is controlled through Admin Console product profiles in the user's IMS organization, and enables:
+* For Adobe Commerce as a Cloud Service, IMS authentication is enabled by default in the Admin.
+* For Adobe Commerce on cloud or on-premises, IMS is optional.
 
-* **Asset Selector** allows to select images from AEM Assets when managing category images or Page Builder content.
+  [Enabling IMS for Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} provides an enhanced configuration UI (Asset Selector, auto-populated dropdowns), but you can configure the integration without IMS by manually entering **Program ID**, and **Environment ID**.
+
+When using IMS, the AEM Assets Integration also requires specific **Adobe Admin Console product profiles**. Users who configure the integration in Commerce Admin need the **AEM Assets DM OpenAPI Users - delivery** product profile, or the **author** product profile as a fallback. This is controlled through Admin Console product profiles in the user's IMS organization, and enables:
+
+* **Asset Selector** allows you to select images from AEM Assets when managing category images or Page Builder content.
 * **Auto-populated configuration fields** such as **Program ID**, **Environment ID**, and **Domain mapping** dropdowns that pull values from the user's IMS session based on their Admin Console product profiles (delivery or author).
 
 Without the correct permissions, the Asset Selector is unavailable, and these fields appear empty or require manual entry.
@@ -17,7 +22,7 @@ Without the correct permissions, the Asset Selector is unavailable, and these fi
 
 **How IMS and permissions work together**
 
-Adobe IMS provides the user identity and organization context, while the Adobe Admin Console defines which **product profiles**(permissions) it has. The AEM Assets Integration uses the IMS details plus the assigned profile to determine whether it can auto-populate configuration fields and enable the Asset Selector.
+Adobe IMS provides the user identity and organization context, while the Adobe Admin Console defines which **product profiles** (permissions) it has. The AEM Assets Integration uses the IMS details plus the assigned profile to determine whether it can auto-populate configuration fields and enable the Asset Selector.
 
 >[!ENDSHADEBOX]
 
@@ -44,7 +49,9 @@ If neither profile is configured, users can manually enter **Program ID** and **
 
 [!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."}
 
-IMS authentication is enabled by default. Add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile in the [Adobe Admin Console](https://adminconsole.adobe.com/), or to the **author** product profile (for example, `<environment-name> - author - <program-id> - <environment-id>`) as a fallback when the user does not have the AEM delivery product profile in their Admin Console.
+IMS authentication is enabled by default.
+
+Add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile in the [Adobe Admin Console](https://adminconsole.adobe.com/), or to the **author** product profile (for example, `<environment-name> - author - <program-id> - <environment-id>`) as a fallback when the user does not have the AEM delivery product profile in their Admin Console.
 
 >[!NOTE]
 >
