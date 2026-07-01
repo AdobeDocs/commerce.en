@@ -10,10 +10,6 @@ feature: CMS, Media, Configuration, Integration
 
 The AEM Assets Integration for [!DNL Adobe Commerce Optimizer] enables merchants to use AEM Assets as the centralized digital asset management solution for product images. This guide covers the configuration specific to [!DNL Commerce Optimizer].
 
-To enable the integration with [!DNL Adobe Commerce Optimizer], create a support ticket that includes your [!DNL Adobe Commerce Optimizer] instance and AEM Assets project details. Adobe Support configures the integration and registers your tenant with the Assets Integration Service.
-
-**Prepare AEM Assets before you submit the ticket.** Tenant registration assumes the AEM side is usable for Commerce. For example, after you deploy the AEM Commerce `assets-commerce` package so metadata and events work as explained. **Opening a ticket before AEM is configured can delay onboarding.**
-
 The following diagram is an overview of the product sync between [!DNL Adobe Commerce Optimizer] and the AEM Assets integration.
 
 ![AEM Assets to [!DNL Commerce Optimizer] flow](../assets/aco-asset-sync-architecture.png){width="700"}
@@ -41,7 +37,7 @@ Complete the AEM Assets steps **before** you [open a support ticket](#onboarding
 
 Make the Commerce metadata schemas, events, and UI available in your AEM project before you open a support ticket.
 
-* [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-the-commerce-integration-self-service).
+* [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-aem-commerce-self-service).
 
 * On earlier AEM releases, deploy the `assets-commerce` package manually:
 
@@ -59,7 +55,7 @@ Dynamic Media with OpenAPI capabilities must be enabled on your AEM Assets envir
 
 ### Step 3: Apply Commerce metadata and approve assets
 
-Add Commerce metadata to your product images in AEM Assets—for field definitions see [AEM Commerce package contents](metadata.md#aem-commerce-assets-commerce-package-contents).
+Add Commerce metadata to your product images in AEM Assets—for field definitions see [AEM Commerce package contents](../metadata.md#aem-commerce-assets-commerce-package-contents).
 
 The asset must be in an **approved** status for the data sync to trigger. Saving metadata alone does not trigger the event.
 
@@ -93,13 +89,11 @@ Read this section **before** you choose a catalog layer name in your support tic
 
 ## Onboarding
 
-To onboard AEM Assets Integration with [!DNL Commerce Optimizer], you must [Create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+>[!IMPORTANT]
+>
+>Complete [Configure AEM Assets first](#configure-aem-assets-first) **before** you submit your support ticket. Tenant registration assumes the AEM side is ready for Commerce—the `assets-commerce` package (or self-service equivalent) must be deployed so metadata and events work. Opening a ticket before AEM is configured can delay onboarding.
 
-Adobe Support uses the information in your ticket to register your tenant with the Assets Integration Service, and configure the integration.
-
-Ensure you finished [Configure AEM Assets first](#configure-aem-assets-first) before submitting the ticket.
-
-Include the following information in your support ticket:
+To onboard AEM Assets Integration with [!DNL Commerce Optimizer], [Create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) that includes the following information:
 
 * **[!DNL Adobe Commerce Optimizer] Tenant ID** (Instance ID) found in your [!DNL Commerce Optimizer] URL or Commerce Cloud Manager UI.
 * **AEM Program ID**.
@@ -108,18 +102,16 @@ Include the following information in your support ticket:
 * **Layer**: The catalog layer name to register the tenant with (see **Layer-related constraints**). Specify a custom name only if intentional; otherwise the default **`AEM-Assets`** is used.
 * **Locale**: The catalog source locale to register the tenant with (for example, `en-US`). This must match the locale you use in your catalog view and product catalog data.
 
-After Adobe Support processes your ticket, the integration is configured and your tenant is registered with Assets Integration Service.
+### What happens after you submit the ticket
 
-Once onboarding is complete:
+Adobe Support uses your ticket information to register your tenant with the Assets Integration Service and subscribe it to:
 
-1. **Registration with Assets Integration Service**: Your [!DNL Commerce Optimizer] tenant is registered with the Assets Integration Service using your [!DNL Adobe Commerce Optimizer] Tenant ID, AEM Program ID, AEM Environment ID, matching rule, locale, and layer name supplied in the ticket.
+* AEM Assets events (asset approved, updated, removed)
+* [!DNL Commerce Optimizer] catalog events (product created, updated)
 
-1. **Event subscription**: Assets Integration Service subscribes to:
+### Configure your catalog view
 
-   * AEM Assets events (asset approved, updated, removed)
-   * [!DNL Commerce Optimizer] catalog events (product created, updated)
-
-Configure your [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) so storefront and APIs surface AEM-driven image data:
+After the tenant is registered, configure your [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) so the storefront and APIs surface AEM-driven image data:
 
 * **Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
 * **Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.

@@ -23,7 +23,9 @@ topic_v2:
 ---
 # Configure your Storefront
 
-The AEM Assets integration displays product images managed in AEM Assets instead of using images hosted in Adobe Commerce. The integration enables enhanced image management capabilities including advanced optimization, cropping, and delivery through Adobe’s Content Delivery Network (CDN).
+## Enable product-image display from AEM Assets {#enable-product-images}
+
+The AEM Assets integration displays product images managed in AEM Assets instead of using images hosted in Adobe Commerce. The integration enables enhanced image management capabilities including advanced optimization, cropping, and delivery through Adobe's Content Delivery Network (CDN).
 
 To enable the integration in Commerce storefronts powered by Edge Delivery Services, update the storefront configuration file (`config.json`) to add the `"commerce-assets-enabled": true` parameter.
 
@@ -41,9 +43,17 @@ The Commerce drop-ins automatically detect the `commerce-assets-enabled` configu
 
 For more information on how to use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
 
-## Connect AEM Assets to your storefront
+>[!TIP]
+>
+>To let authors browse and insert AEM assets into static content pages, see [Connect AEM Assets to Da.live for static content authoring](#connect-aem-assets-authoring).
 
-Use the following steps to connect AEM Assets to a storefront authored in Document Authoring (Da.live). After you connect, you can browse and insert AEM assets directly from the **[!UICONTROL Content Advisor]**.
+## Connect AEM Assets to Da.live for static content authoring {#connect-aem-assets-authoring}
+
+>[!NOTE]
+>
+>This setup is **separate from the AEM Assets Integration extension**. It is provided by [Da.live](https://da.live){target=_blank} out-of-the-box and applies only when authors need to browse and insert AEM assets into **static content pages** (for example, landing pages or content blocks) through the **[!UICONTROL Library]** panel and **[!UICONTROL Content Advisor]**. Product images synchronized through the AEM Assets Integration are configured separately using the `commerce-assets-enabled` setting described above.
+
+Use the following steps to connect AEM Assets to a storefront authored in Document Authoring (Da.live). After you connect, authors can browse and insert AEM assets directly from the **[!UICONTROL Content Advisor]** when editing static content.
 
 These steps summarize the [Da.live](https://da.live){target=_blank} setup. For the complete reference, see [Setup AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} in the Da.live documentation and [Integrate AEM Assets while authoring content for Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services){target=_blank} in the AEM Assets documentation.
 
