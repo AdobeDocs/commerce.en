@@ -4,11 +4,17 @@ description: Learn how to read an Adobe Commerce PaaS migration assessment repor
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
+nudge: true1
+autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
@@ -19,6 +25,17 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -26,17 +43,13 @@ topic_v2:
 
 # Migration Assessment
 
->[!TIP]
+>[!IMPORTANT]
 >
->Contact your solution account manager to request a migration assessment of your existing instance.
+> The Migration Assessment is only available when migrating [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on-premises] projects to [!DNL Adobe Commerce as a Cloud Service].
 
 A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service].
 
 The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initially sharing your project codebase.
-
->[!IMPORTANT]
->
-> The Migration Assessment is only available when migrating [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on-premises] projects to [!DNL Adobe Commerce as a Cloud Service].
 
 **The assessment provides:**
 
@@ -69,6 +82,8 @@ The Migration Complexity section contains the assessment rating for your store o
 
 **Migration Complexity and Complexity Score**
 
+![Migration Complexity section showing weighted score, primary risk drivers, and key metrics](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
+
 The Complexity Score weights each input by how difficult it is to migrate. The score maps to a Migration Complexity rating using fixed thresholds:
 
 | Rating | Score range | Typical migration approach |
@@ -79,6 +94,8 @@ The Complexity Score weights each input by how difficult it is to migrate. The s
 
 **Custom Module Ratio**
 
+![Custom Module Ratio metrics row showing custom module percentage, third-party modules, custom themes count, critical hooks, total files, and PHP codebase size](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
+
 The percentage of your modules that were built specifically for your implementation. A higher ratio means more custom code must be audited and migrated. The average customer's Custom Module Ratio is approximately 62%.
 
 >[!TIP]
@@ -87,13 +104,19 @@ The percentage of your modules that were built specifically for your implementat
 
 **File Type Breakdown**
 
+![File Type Breakdown table listing file extensions with file counts and lines of code](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
+
 A list of the number of files in your codebase, organized by type.
 
 **Highest-Impact Modules**
 
+![Highest-Impact Modules list showing module names, descriptions, impact ratings, and hook counts](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+
 A curated list of the specific modules in your store requiring the most migration attention. These modules are often modules that interact with checkout, payments, or order management. Each high-impact module needs its own migration plan. This list is the best starting point for conversations with your technical team.
 
 ### Storefront complexity
+
+![Storefront Complexity section showing custom theme namespaces, total block count, layout XML files, core handle overrides, and actionable signals](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
 
 The Storefront Complexity section surfaces the effort required to migrate your store's front-end presentation layer. This workstream is a distinct workstream from backend code migration, addressed by front-end developers and typically requiring separate planning conversations.
 
@@ -111,8 +134,9 @@ The Storefront Complexity section surfaces the effort required to migrate your s
 | 100–300 | Medium - plan a structured front-end wave |
 | Over 300 | High - prioritize as a dedicated workstream |
 
-
 ### Migration drivers
+
+![Migration Drivers section showing Customization Footprint, Plugins and Observers, and Class Preferences cards with effort ratings](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
 
 The Migration Drivers section displays the top factors driving your complexity rating.
 
@@ -128,6 +152,8 @@ Each driver appears with a High, Medium, or Low effort. Address the highest-rate
 
 ### Data model
 
+![Data Model section showing counts of custom tables, core table modifications, and critical EAV attributes](../assets/assessment-data-model.png){width="600" zoomable="yes"}
+
 The Data Model section displays a count of custom tables, modifications to the [!DNL Adobe Commerce] core database tables, and critical Entity-Attribute-Value (EAV) attributes.
 
 Core table modifications are the most difficult category to migrate, because they create dependencies on a specific platform schema version and have a high impact in the Complexity Score formula.
@@ -137,6 +163,8 @@ Core table modifications are the most difficult category to migrate, because the
 >If your report lists more than 15 core table modifications, plan a dedicated data migration workstream before scoping backend module migration.
 
 ## Customization breakdown
+
+![Customization Breakdown section listing all customization categories with counts and impact indicators](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
 
 The Customization Breakdown section provides detailed metrics across every category of customization in your store. 
 
@@ -197,6 +225,8 @@ The [!UICONTROL Drop-in migration required] field indicates which storefront are
 >If **Checkout** is listed as a drop-in migration requirement, plan a dedicated checkout drop-in workstream. This task is the most complex and business-critical storefront migration task.
 
 ## Module Reports tab
+
+![Module Reports tab showing a searchable module list with impact filters and detailed module analysis panel](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
 
 The **[!UICONTROL Module Reports]** tab contains a dedicated entry for every custom module in your store. Share this information with your technical team.
 
@@ -304,3 +334,7 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 - Storefront development
   - [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/)
   - [Storefront AI skills](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+
+>[!TIP]
+>
+>Contact your solution account manager to request a migration assessment of your existing instance.

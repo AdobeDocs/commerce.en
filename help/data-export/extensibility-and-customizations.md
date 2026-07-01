@@ -1,12 +1,19 @@
 ---
 title: Extend and customize SaaS data export feed data
 description: Learn how to extend and customize the [!DNL SaaS Data Export] feed data.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
@@ -25,7 +32,7 @@ topic_v2:
 
 The [!DNL Commerce Data Export] extension provides a way to export data from the [!DNL Commerce] application to Commerce Services like Live Search, Catalog Service, and Product Recommendations. If needed, you can extend and customize the feed data to include additional attribute data or modify the collected data.
 
-After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) in the GraphQL schema for storefront service.
+After adding attribute data, it is accessible from the [attributes field](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) in the GraphQL schema for storefront services.
 
 >[!NOTE]
 >
@@ -85,4 +92,99 @@ For information about creating data patches, see [Develop data and schema patche
 
 ### Add the product attribute dynamically
 
-For details about creating product attributes dynamically without introducing new EAV Attributes, see [Add attribute dynamically](add-attribute-dynamically.md).
+For details about creating product attributes dynamically without introducing new EAV Attributes, see [Add product attributes dynamically](add-attribute-dynamically.md).
+
+## Feed schema overview (`et_schema.xml`) {#feed-schema-overview}
+
+Each feed data structure is declared in `etc/et_schema.xml` using a simple XML DSL. The framework reads this file to determine which fields to collect and which PHP provider classes to call.
+
+```xml
+<record name="Product">
+  <field name="sku" type="ID" />
+  <field name="name" type="String" />
+  <field name="attributes" type="Attribute" repeated="true"
+         provider="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
+    <using field="productId" />
+    <using field="storeViewCode" />
+  </field>
+</record>
+```
+
+Key elements:
+
+- `<record>` - defines the feed entity
+- `<field>` - declares a data field; the `provider` attribute points to a PHP class implementing `DataProcessorInterface` that fetches the data
+- `repeated="true"` - the field is an array of objects
+- `<using>` - input parameters passed from the parent record context to the provider
+
+>[!IMPORTANT]
+>
+>Adding a new field to `et_schema.xml` only changes what [!DNL Adobe Commerce] collects locally. The receiving SaaS service must also be updated to accept and process the new field before it has any effect on the storefront.
+
+## Observe data after submission {#observe-data-after-submission}
+
+[!DNL SaaS Data Export] dispatches the `data_sent_outside` event after each successful batch submission to a SaaS service. Use this event for audit logging, webhook triggers, or metrics collection.
+
+**Event:** `data_sent_outside`
+
+**Available data:**
+
+| Key | Description |
+|---|---|
+| `timestamp` | Unix timestamp of the submission |
+| `type` | Feed name (for example, `products`, `prices`) |
+| `data` | The submitted feed payload |
+
+**Example observer:**
+
+```php
+<?php
+namespace My\Module\Observer;
+
+use Magento\Framework\Event\Observer;
+use Magento\Framework\Event\ObserverInterface;
+
+class DataSentOutsideObserver implements ObserverInterface
+{
+    public function execute(Observer $observer): void
+    {
+        $feedName = $observer->getData('type');
+        $timestamp = $observer->getData('timestamp');
+        $data = $observer->getData('data');
+
+        // Custom logic: audit logging, webhook, metrics
+    }
+}
+```
+
+Register the observer in `etc/events.xml`:
+
+```xml
+<event name="data_sent_outside">
+    <observer name="my_module_data_sent_outside"
+              instance="My\Module\Observer\DataSentOutsideObserver" />
+</event>
+```
+
+For general information about events and observers, see [Events and Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} in the Adobe Commerce Developer documentation.
+
+## Filter data before submission
+
+Use the `Magento\SaaSCommon\Model\DataFilter` extension point to redact sensitive fields or skip specific entities before data is sent to the SaaS service. This is useful for compliance requirements such as GDPR or PCI where certain fields must not leave the Commerce instance.
+
+Implement the interface and wire it via a DI preference in `etc/di.xml`:
+
+```xml
+<preference for="Magento\SaaSCommon\Model\DataFilter"
+            type="My\Module\Model\MyDataFilter" />
+```
+
+>[!NOTE]
+>
+>Filtering is applied after data collection. If `PERSIST_EXPORTED_FEED=1` is set, the feed table stores the unfiltered payload before filtering occurs.
+
+>[!MORELIKETHIS]
+>
+> - [Add product attribute dynamically](add-attribute-dynamically.md)
+> - [Add tax class, attribute set, and inventory metadata](add-tax-attribute-set-inventory-attributes.md)
+> - [How synchronization works](sync-overview.md)

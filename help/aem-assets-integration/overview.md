@@ -100,7 +100,7 @@ Watch this video to learn how Adobe Commerce and AEM Assets work together to str
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
->[!TAB ACCS Tutorial]
+>[!TAB Adobe Commerce as a Cloud Service Tutorial]
 
 Learn how to use Adobe Commerce as a Cloud Service with the AEM Assets integration.
 

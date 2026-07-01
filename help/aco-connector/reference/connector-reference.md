@@ -8,6 +8,10 @@ TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388k
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
@@ -27,7 +31,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
 ---
-# Connector modules and feed endpoints
+# Connector modules and feed endpoints for Adobe Commerce Optimizer Connector
 
 This reference lists the [!DNL Adobe Commerce Optimizer Connector] module packages, supported feed API endpoints, and configuration key paths stored in `core_config_data`. To learn how these components work together during synchronization, see [Connector sync pipeline](../connector-sync-pipeline.md).
 
@@ -47,7 +51,7 @@ The connector includes multiple Magento modules that collect catalog data, map f
 
 ## Supported feeds
 
-The connector submits multiple feed types to the [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in [!DNL Adobe Commerce].
+The connector submits multiple feed types to the [!DNL Commerce Optimizer] [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}. The table below lists each feed with its endpoint, batch limit, indexer name, and feed table in [!DNL Adobe Commerce].
 
 | Feed | [!DNL Commerce Optimizer] API Endpoint | Batch Limit | AC Index Name | Feed Table |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
@@ -60,6 +64,7 @@ The connector submits multiple feed types to the [!DNL Commerce Optimizer] [!DNL
 The `products`, `productAttributes`, `categories`, and `prices` feeds reuse data collected by [!DNL SaaS Data Export] indexers. The connector generates the `priceBooks` feed from website and customer group configuration and does not rely on a [!DNL SaaS Data Export] indexer.
 
 For field-level mapping details for each feed, see [Field mapping for [!DNL Commerce Optimizer Connector] feeds](field-mapping.md).
+To estimate how long a sync will take based on your catalog size, see [Estimate data volume and sync time](estimate-data-volume-sync-time.md).
 
 ## Configuration paths
 
