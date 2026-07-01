@@ -44,7 +44,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
-* [User permissions and IMS](permissions.md)—Required for the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping).
+* [User permissions and IMS](permissions.md)—Configure the required permissions for the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping).
 
 ## Configure the connection
 
@@ -64,11 +64,11 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 1. Select the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from the dropdown menus.
 
-   The selectors appear when your Commerce Admin user satisfies [User permissions and IMS](permissions.md#user-permissions-and-ims) for the experience: **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer**, and **Adobe Commerce on Cloud infrastructure** integrations can populate these fields automatically from your IMS-linked session rather than relying on pasted IDs.
+   The selectors appear when your Commerce Admin user has the required [user permissions](permissions.md#user-permissions-and-ims) for the experience: **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer**, and **Adobe Commerce on Cloud infrastructure** integrations can populate these fields automatically from your IMS-linked session rather than relying on pasted IDs.
 
-   If the selectors are unavailable, copy **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from AEM Cloud Manager, or derive them from your author URL: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (replace placeholders with your identifiers).
+   If the selectors are unavailable, copy the **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from AEM Cloud Manager, or derive them from your author URL: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (replace placeholders with your identifiers).
 
-   Clear **[!UICONTROL Use system value]** for either field before you paste or select new values manually.
+   You must clear the **[!UICONTROL Use system value]** for both fields before you can paste or select new values manually.
 
    ![AEM Assets Integration form with Program ID and Environment ID selectors](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -91,13 +91,13 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 ### Synchronization SLA
 
-The integration guarantees the following synchronization performance levels:
+The service level aggreement (SLA) for the integration guarantees the following synchronization performance levels:
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-This ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
+This level of service ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
 
 ### Configure the Visualization Owner
 
