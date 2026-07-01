@@ -27,7 +27,7 @@ Commerce metadata enables the following capabilities:
 * **Associate an asset with one or more product SKUs** via `commerce:skus`.
 * **Define how the asset appears in Commerce** via `commerce:roles` and `commerce:positions`.
 * **Add Commerce-specific alt text keyed by store view** via `commerce:altTextStoreViews` and `commerce:altTextValues`.
-* **Expose these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
+* **Exposes these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
 >[!IMPORTANT]
 >
@@ -49,9 +49,9 @@ This package code adds the following resources to the AEM Assets authoring envir
 
       ![Custom Product Data UI Control](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
-  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes to show how the asset is visualized in Commerce.
+  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes that show how the asset is visualized in Commerce.
 
-  * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text keyed by Commerce store view code. The multifield persists to two index-aligned `String[]` properties:
+  * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text for each Commerce store view code. The multifield persists in two index-aligned `String[]` properties:
 
       * `commerce:altTextStoreViews` — store view code for each row.
       * `commerce:altTextValues` — matching alt text at the same index as each entry in `commerce:altTextStoreViews`.
