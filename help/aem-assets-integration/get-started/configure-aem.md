@@ -23,9 +23,11 @@ topic_v2:
 ---
 # Configure the AEM Assets project
 
-This topic explains how to configure your AEM Assets project so the Commerce namespace, metadata schema, and **[!UICONTROL Commerce]** tab are available in the AEM authoring environment. For background on the resources these steps add, see [Commerce metadata in AEM Assets](metadata.md).
+This topic describes how to configure your AEM Assets project so that the Commerce namespace, metadata schema, and **[!UICONTROL Commerce]** tab are available in the AEM authoring environment. For background on these resources, see [Commerce metadata in AEM Assets](metadata.md).
 
-There are two ways to configure this:
+This topic describes how to configure your AEM Assets project so that the Commerce namespace, metadata schema, and [!UICONTROL Commerce] tab are available in the AEM authoring environment. For background on these resources, see Commerce metadata in AEM Assets.
+
+You have two options to configure the AEM Assets project:
 
 * [!BADGE Recommended]{type=Positive} **Self-service onboarding** — On AEM releases `2026.5.26309` and later, enable the integration directly from Cloud Manager by setting an environment variable and activating Dynamic Media with OpenAPI capabilities. No custom code deployment is required. See [Enable the Commerce integration (self-service)](#enable-the-commerce-integration-self-service).
 
@@ -90,13 +92,13 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
 ### Step 4: Validate the configuration
 
-Go to any asset and edit its properties. Confirm that the default Metadata Schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]** and **[!UICONTROL Eligible for Commerce]** fields are visible.
+Go to any asset and edit its properties. Confirm that the default metadata schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]** and **[!UICONTROL Eligible for Commerce]** fields are visible.
 
 ## Install the assets-commerce package manually
 
 >[!NOTE]
 >
-> Use these manual steps when you must deploy custom package code, or on AEM releases earlier than `2026.5.26309`. On supported releases, use [Enable the Commerce integration (self-service)](#enable-the-commerce-integration-self-service) instead.
+> Use this manual method to deploy custom package code or if you are on AEM releases earlier than `2026.5.26309`. On supported releases, use [Enable the Commerce integration (self-service)](#enable-the-commerce-integration-self-service) instead.
 
 ### Prerequisites
 

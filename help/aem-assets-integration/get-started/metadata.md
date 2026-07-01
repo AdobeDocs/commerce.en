@@ -25,7 +25,7 @@ This topic describes the Commerce metadata resources that the integration adds. 
 
 ## AEM Commerce assets-commerce package contents
 
-Adobe provides an AEM Commerce package code `assets-commerce` to add Commerce namespace and Metadata Schema resources to the Experience Manager Assets as a Cloud Service environment configuration.
+Adobe provides the `assets-commerce` AEM Commerce code package to add Commerce namespaces and metadata schema resources to the Experience Manager Assets as a Cloud Service configuration.
 
 This package code adds the following resources to the AEM Assets authoring environment:
 
