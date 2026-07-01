@@ -61,7 +61,7 @@ These steps summarize the [Da.live](https://da.live){target=_blank} setup. For t
 
 1. Go to [Da.live](https://da.live){target=_blank} and locate your storefront. Double-click it to open.
 
-1. In the breadcrumb, click settings to open your site config spreadsheet.
+1. In the breadcrumb, select the **[!UICONTROL Settings]** icon next to your site name to open the site config spreadsheet.
 
 ### Step 2: Copy your AEM repository URL
 
