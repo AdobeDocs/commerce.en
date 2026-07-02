@@ -49,19 +49,27 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
 ### Step 1: Create the program and environments
 
-1. In Cloud Manager, select **[!UICONTROL Add Program]**, then choose **[!UICONTROL Set up for production]** and name the program.
+Creating a program in Cloud Manager is a single wizard flow — the program and its environments are configured across multiple steps and saved together at the end.
 
-1. On the **[!UICONTROL Solutions & Add-ons]** step, select the solutions and add-ons that your project requires, including **[!UICONTROL Dynamic Media]**. Then, select **[!UICONTROL Continue]**.
+1. In Cloud Manager, select **[!UICONTROL Add Program]**.
+
+1. Choose **[!UICONTROL Set up for production]**, enter a program name, then select **[!UICONTROL Continue]**.
+
+1. On the **[!UICONTROL Solutions & Add-ons]** step, select the solutions and add-ons that your project requires, including **[!UICONTROL Dynamic Media]**, then select **[!UICONTROL Continue]**.
 
    ![Cloud Manager Solutions and Add-ons step with Dynamic Media selected](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. After the program is configured, select **[!UICONTROL Add Environment]**, choose **[!UICONTROL Production + Stage]**, set the region, and select **[!UICONTROL Save]**.
+1. On the **[!UICONTROL Add Environment]** step, enter names for the **Production** and **Staging** environments, then select a region.
 
    ![Cloud Manager Add environment dialog with Production and Stage details](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
+1. Select **[!UICONTROL Save]** to create the program with its environments.
+
 ### Step 2: Enable the Commerce integration variable
 
-1. Open the environment, and then select the **[!UICONTROL Configuration]** tab.
+In Cloud Manager, open the environment you created in Step 1, then:
+
+1. Select the **[!UICONTROL Configuration]** tab.
 
 1. Add an environment variable with the following values, then select **[!UICONTROL Add]** and **[!UICONTROL Save]**:
 
@@ -92,7 +100,7 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
 ### Step 4: Validate the configuration
 
-Go to any asset and edit its properties. Confirm that the default metadata schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]** and **[!UICONTROL Eligible for Commerce]** fields are visible.
+Switch to the **AEM Assets author environment** and open any asset. Edit its properties and confirm that the default metadata schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]** and **[!UICONTROL Eligible for Commerce]** fields are visible.
 
 ## Install the assets-commerce package manually
 

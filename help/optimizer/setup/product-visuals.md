@@ -19,11 +19,11 @@ Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage prod
 
 ## How it works
 
-The integration has two main flows:
+The integration has two independent event flows. Both use **Adobe Pipeline** — an Adobe-managed messaging system — to transfer events to the Assets Integration Service, but each direction uses its own topic:
 
-* **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to the [!DNL Commerce Optimizer], where they are stored as product layers.
+* **From AEM Assets to Assets Integration Service**: When an asset is approved, rejected, or removed, the event flows through Adobe Pipeline to the Assets Integration Service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From [!DNL Commerce Optimizer]**: When a product is updated in the [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
+* **From [!DNL Commerce Optimizer] to Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event flows through Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 The updated images are available through storefront APIs (Catalog Service, Live Search, Product Recommendations).
 

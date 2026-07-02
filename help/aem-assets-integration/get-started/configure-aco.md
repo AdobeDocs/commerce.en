@@ -14,11 +14,11 @@ The following diagram is an overview of the product sync between [!DNL Adobe Com
 
 ![AEM Assets to [!DNL Commerce Optimizer] flow](../assets/aco-asset-sync-architecture.png){width="700"}
 
-This integration has two main flows:
+This integration has two independent event flows. Both use **Adobe Pipeline** — an Adobe-managed messaging system — to transfer events to the Assets Integration Service, but each direction uses its own topic:
 
-* **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to the Commerce Optimizer, where they are stored as product layers.
+* **From AEM Assets to Assets Integration Service**: When an asset is approved, rejected, or removed, the event flows through Adobe Pipeline to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From [!DNL Adobe Commerce Optimizer]**: When a product is updated in [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to the [!DNL Adobe Commerce Optimizer].
+* **From [!DNL Adobe Commerce Optimizer] to Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event flows through Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 ## Prerequisites
 
