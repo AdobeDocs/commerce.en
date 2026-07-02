@@ -29,6 +29,10 @@ Before configuring the integration, ensure you have:
 * Both [!DNL Commerce Optimizer] and AEM Assets in the same Adobe IMS Organization.
 * Dynamic Media with OpenAPI enabled on your AEM Assets environment (see [Configure the AEM Assets project](configure-aem.md#prerequisites) for enablement steps).
 
+>[!NOTE]
+>
+>The `AEM-Assets` catalog layer used by the integration is **created automatically** during onboarding—you do not create it beforehand. For background on how catalog layers work and how the AEM-Assets layer behaves, see [AEM-Assets layer](../../optimizer/setup/catalog-layer.md#aem-assets-layer).
+
 ## Configure AEM Assets first
 
 Complete the AEM Assets steps **before** you [open a support ticket](#onboarding) for tenant registration. The installation pattern matches Adobe Commerce as a Cloud Service—see [Configure the AEM Assets project to support Commerce metadata](configure-aem.md).
@@ -61,9 +65,7 @@ The asset must be in an **approved** status for the data sync to trigger. Saving
 
 ### Step 4: Optional — configure a Commerce metadata profile
 
-If you choose to use AEM metadata profiles to streamline authoring, configure them **after** the package is deployed and your team understands required Commerce fields—same optional pattern as **Configure the AEM Assets project**.
-
-See [Configure a metadata profile](configure-aem.md#configure-a-metadata-profile-optional).
+To streamline authoring, [follow the steps to configure a metadata profile](configure-aem.md#configure-a-metadata-profile-optional). Configure the profile **after** the package is deployed and your team understands the required Commerce fields.
 
 ## Limitations
 
@@ -71,9 +73,11 @@ The [!DNL Commerce Optimizer] integration has the following limitations:
 
 ### Layer-related constraints
 
-Read this section **before** you choose a catalog layer name in your support ticket. Choosing or sharing layers without this context is a frequent cause of preventable support cases.
+For background on what catalog layers are and how they merge with your base catalog, see [Catalog layer](../../optimizer/setup/catalog-layer.md).
 
-**Use a dedicated layer for AEM Assets content.** Payloads sent from AEM Assets populate a Commerce Optimizer catalog **layer**. Values in that layer **overwrite** base catalog attributes where fields are supplied. When the integration omits a field in the payload, the corresponding values in that layer may be overwritten with empty values. Sharing a layer with unrelated Commerce workflows—or reusing a layer that already stores non–AEM-Assets product data—can cause **unintended data loss** or confusing overwrites. Plan the layer choice **before** you open your support ticket, and reserve that layer name (for example the default **`AEM-Assets`**) primarily for AEM-driven product image sync.
+Read this section **before** you specify a catalog layer name in your support ticket. Reusing an existing layer or sharing a layer with unrelated workflows is a frequent cause of preventable support cases.
+
+**Use a dedicated layer for AEM Assets content.** Payloads sent from AEM Assets populate a Commerce Optimizer catalog **layer**. Values in that layer **overwrite** base catalog attributes where fields are supplied. When the integration omits a field in the payload, the corresponding values in that layer may be overwritten with empty values. Sharing a layer with unrelated Commerce workflows—or reusing a layer that already stores non–AEM-Assets product data—can cause **unintended data loss** or confusing overwrites. Reserve the layer name (for example the default **`AEM-Assets`**) primarily for AEM-driven product image sync.
 
 >[!IMPORTANT]
 >
