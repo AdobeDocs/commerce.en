@@ -91,7 +91,7 @@ Read this section **before** you choose a catalog layer name in your support tic
 
 >[!IMPORTANT]
 >
->Complete [Configure AEM Assets first](#configure-aem-assets-first) **before** you submit your support ticket. Tenant registration assumes the AEM side is ready for Commerce—the `assets-commerce` package (or self-service equivalent) must be deployed so metadata and events work. Opening a ticket before AEM is configured can delay onboarding.
+>Complete [Configure AEM Assets first](#configure-aem-assets-first) **before** you submit a support ticket to enable the integration with [!DNL Commerce Optimizer.] Tenant registration assumes the AEM side is ready for Commerce—the `assets-commerce` package (or self-service equivalent) must be deployed so metadata and events work. Opening a ticket before AEM is configured can delay onboarding.
 
 To onboard AEM Assets Integration with [!DNL Commerce Optimizer], [Create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) that includes the following information:
 
@@ -111,10 +111,11 @@ Adobe Support uses your ticket information to register your tenant with the Asse
 
 ### Configure your catalog view
 
-After the tenant is registered, configure your [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) so the storefront and APIs surface AEM-driven image data:
+After the tenant is registered, configure your catalog view so the storefront and APIs surface AEM-driven image data:
 
 * **Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
-* **Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.
+* **Select the Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
+* **Assign the Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.
 
 If the locale or layer is not assigned correctly, image data may **not appear** or may behave unexpectedly—even though sync succeeded upstream.
 

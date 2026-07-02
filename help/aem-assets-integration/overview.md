@@ -110,7 +110,7 @@ Learn how to use Adobe Commerce as a Cloud Service with the AEM Assets integrati
 
 ## Next steps
 
-The steps depend on your Adobe Commerce deployment. In all cases, you first configure AEM Assets, then connect Commerce to it.
+The process to install and configure the AEM Assets integration depend on your Adobe Commerce deployment. In all cases, you first configure AEM Assets, then connect Commerce to it.
 
 Before you begin, review [Commerce metadata in AEM Assets](metadata.md) to understand the namespace, metadata schema, and **[!UICONTROL Commerce]** tab that the integration adds to your AEM Assets environment.
 
