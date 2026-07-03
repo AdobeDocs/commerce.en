@@ -31,7 +31,7 @@ Before configuring the integration, ensure you have:
 
 >[!NOTE]
 >
->The `AEM-Assets` catalog layer used by the integration is **created automatically** during onboarding—you do not create it beforehand. For background on how catalog layers work and how the AEM-Assets layer behaves, see [AEM-Assets layer](../../optimizer/setup/catalog-layer.md#aem-assets-layer).
+>The `AEM-Assets` catalog layer used by the integration is created automatically during onboarding. You do not need to create it beforehand. For background on how catalog layers work and how the AEM-Assets layer behaves, see [AEM-Assets layer](../../optimizer/setup/catalog-layer.md#aem-assets-layer).
 
 ## Configure AEM Assets first
 
@@ -43,15 +43,17 @@ Make the Commerce metadata schemas, events, and UI available in your AEM project
 
 * [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-aem-commerce-self-service).
 
-* On earlier AEM releases, deploy the `assets-commerce` package manually:
+* On earlier AEM releases, deploy the `assets-commerce` package manually.
 
-  1. Clone the Cloud Manager Git repository and copy the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce) code into your project.
+Follow these steps for manual deployment:
 
-  1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of &lt;my-app&gt; with your app name.
+1. Clone the Cloud Manager Git repository and copy the [AEM Assets Commerce repository](https://github.com/ankumalh/assets-commerce) code into your project.
 
-  1. Commit, push, run your deployment pipeline, and validate that the **[!UICONTROL Commerce]** tab appears on asset properties.
+1. In all `filter.xml` and `pom.xml` files for your project, replace all occurrences of &lt;my-app&gt; with your app name.
 
-  See [Install the `assets-commerce` package manually](configure-aem.md#install-the-assets-commerce-package-manually) for Cloud Manager screenshots, pipeline steps, and troubleshooting if the **[!UICONTROL Commerce]** tab is missing.
+1. Commit, push, run your deployment pipeline, and validate that the **[!UICONTROL Commerce]** tab appears on asset properties.
+
+  If the **[!UICONTROL Commerce]** tab is missing, see [Install the `assets-commerce` package manually](configure-aem.md#install-the-assets-commerce-package-manually) for Cloud Manager screenshots, pipeline steps, and troubleshooting.
 
 ### Step 2: Enable Dynamic Media with OpenAPI
 

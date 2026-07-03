@@ -33,6 +33,10 @@ You have two options to configure the AEM Assets project:
 
 * **Manual configuration** — Deploy the `assets-commerce` package through a Cloud Manager pipeline. Use these manual steps when you must deploy custom package code, or on AEM releases earlier than `2026.5.26309`. See [Install the assets-commerce package manually](#install-the-assets-commerce-package-manually).
 
+>[!TIP]
+>
+>You can check the current AEM version from the top right menu: **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
+
 ## Enable the Commerce integration (self-service) {#enable-aem-commerce-self-service}
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} AEM release `2026.5.26309` and later.
