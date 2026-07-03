@@ -24,7 +24,7 @@ This integration has two independent event flows. Both use [Adobe I/O Events](ht
 
 Before configuring the integration, ensure you have:
 
-* An active [!DNL Adobe Commerce Optimizer] instance with Product Visuals entitlement, or any AEM Assets license with Dynamic Media.
+* An active [!DNL Adobe Commerce Optimizer] instance with the **Product Visuals** entitlement (bundles Dynamic Media with OpenAPI capabilities + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)), or a customer-provided AEM Assets license (for example, **AEM Assets Ultimate**) with Dynamic Media enabled.
 * Access to an AEM Assets as a Cloud Service environment.
 * Both [!DNL Commerce Optimizer] and AEM Assets in the same Adobe IMS Organization.
 * Dynamic Media with OpenAPI enabled on your AEM Assets environment (see [Configure the AEM Assets project](configure-aem.md#prerequisites) for enablement steps).

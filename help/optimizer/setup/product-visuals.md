@@ -10,6 +10,12 @@ badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe
 
 Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage product images through Adobe Experience Manager (AEM) Assets. This integration provides a seamless workflow for syncing high-quality product imagery from AEM Assets to your [!DNL Commerce Optimizer] catalog using catalog layers.
 
+>[!NOTE]
+>
+>**Product Visuals** is the name of the bundle provided out-of-the-box with [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer]. It combines [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) and [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>
+>Customers with a different AEM Assets license (for example, **AEM Assets Ultimate**) can use the same integration; only the AEM release affects the onboarding steps, not the license type.
+
 ## Key benefits
 
 * **Centralized asset management**: Manage all product images in AEM Assets, the enterprise-grade digital asset management solution.
@@ -59,6 +65,12 @@ See [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/g
 To enable automatic product matching, configure your assets in AEM Assets with Commerce metadata.
 
 See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets) for the required metadata fields and steps.
+
+## Limitations
+
+Before using Product Visuals, review the [integration limitations](../../aem-assets-integration/get-started/configure-aco.md#limitations) — particularly the layer-related constraints that affect how AEM Assets data merges with your base catalog.
+
+For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the boundaries and limits guide.
 
 ## Using Product Visuals
 
