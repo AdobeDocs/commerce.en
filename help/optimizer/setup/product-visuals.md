@@ -19,11 +19,11 @@ Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage prod
 
 ## How it works
 
-The integration has two independent event flows. Both use [Adobe I/O Events](https://developer.adobe.com/events/docs/) to transfer events to the Assets Integration Service, but each direction uses its own event provider:
+The integration has two independent event flows. Both use [Adobe I/O Events](https://developer.adobe.com/events/docs/) to transfer events to the Assets integration service, but each direction uses its own event provider:
 
-* **From AEM Assets to Assets Integration Service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets Integration Service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
+* **From AEM Assets to the Assets integration service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets integration service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From [!DNL Commerce Optimizer] to Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
+* **From [!DNL Commerce Optimizer] to the Assets integration service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets integration service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 The updated images are available through storefront APIs (Catalog Service, Live Search, Product Recommendations).
 
@@ -50,7 +50,7 @@ Before enabling Product Visuals, ensure you meet the [prerequisites for Commerce
 
 ## Setup
 
-To enable the integration, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with your [!DNL Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets Integration Service.
+To enable the integration, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with your [!DNL Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets integration service.
 
 See [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) for onboarding information.
 
