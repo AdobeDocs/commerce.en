@@ -16,9 +16,9 @@ The following diagram is an overview of the product sync between [!DNL Adobe Com
 
 This integration has two independent event flows. Both use [Adobe I/O Events](https://developer.adobe.com/events/docs/) to transfer events to the Assets Integration Service, but each direction uses its own event provider:
 
-* **From AEM Assets to Assets Integration Service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
+* **From AEM Assets to the Assets integration service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets integration service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From [!DNL Adobe Commerce Optimizer] to Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
+* **From [!DNL Adobe Commerce Optimizer] to the Assets integration service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets integration service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 ## Prerequisites
 
@@ -139,9 +139,9 @@ A typical flow when adding an existing asset to a new product:
 
 1. Add the product SKU to the **commerce:skus** metadata and assign image roles (for example, `thumbnail`, `image`).
 
-1. Approve the asset for delivery. This triggers the event that Assets Integration Service processes.
+1. Approve the asset for delivery. This triggers the event that the Assets integration service processes.
 
-1. Assets Integration Service sends the product-image mapping to [!DNL Commerce Optimizer]. The product in [!DNL Commerce Optimizer] is updated with the images from the asset.
+1. The Assets integration service sends the product-image mapping to [!DNL Commerce Optimizer]. The product in [!DNL Commerce Optimizer] is updated with the images from the asset.
 
 1. Verify the image is visible. Allow time for the sync to complete (typically within a few minutes), then check the product in the [!DNL Commerce Optimizer] UI (for example, Data Sync or catalog view), or query the storefront APIs (Catalog Service, Live Search, Storefront GraphQL API) to confirm the image is returned.
 
