@@ -100,3 +100,4 @@ After semantic search is active and indexing completes, Adobe recommends validat
 - [Settings](settings.md#semantic-search)
 - [Synonyms](synonyms.md)
 - [Performance](performance.md)
+
