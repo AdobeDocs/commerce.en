@@ -51,6 +51,14 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.29 Release
+
+_July 6, 2026_
+
+![Fix](../assets/fix.svg) Sort product links to avoid random sync. <!--MDEE-1391-->
+![Fix](../assets/fix.svg) fix tests. <!--MDEE-1397-->
+![Fix](../assets/fix.svg) Price feed sends base price instead of catalog rule price for UTC-negative websites after midnight UTC. <!--MDEE-1401-->
+
 ### 103.4.28 Release
 
 _June 11, 2026_
