@@ -77,6 +77,10 @@ The new `GET /V1/custom-email/templates` REST API endpoint returns your [custom 
 
 ### Manage the full order chain through the REST API
 
+>[!IMPORTANT]
+>
+>This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
+
 New `orderChain` REST API endpoints let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
 
 | Method | Endpoint | Description |
