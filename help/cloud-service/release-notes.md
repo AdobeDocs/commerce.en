@@ -77,7 +77,20 @@ The new `GET /V1/custom-email/templates` REST API endpoint returns your [custom 
 
 ### Manage the full order chain through the REST API
 
-New `orderChain/{originalOrderId}` REST API endpoints let integrations invoice, refund, ship, cancel, hold, and unhold an order using its original order ID, automatically resolving the full chain of edits. New `POST /V1/orders/{orderId}/edit/start` and `POST /V1/orders/{orderId}/edit/submit` endpoints support editing and resubmitting an order through the API. The `GET` invoices, returns, shipments, and credit memo endpoints also now support filtering by `order_original_id`. <!-- ACCS-1004, ACCS-1005 -->
+New `orderChain` REST API endpoints let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Create an invoice for the order, resolving the items to invoice across the order chain. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Cancel the current order in the chain. |
+| `POST` | `/V1/orderChain/{id}/hold` | Place the order on hold. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Remove the hold from the order. |
+| `POST` | `/V1/orderChain/{id}/emails` | Send an order email notification. |
+| `POST` | `/V1/orderChain/{id}/comments` | Add a comment to the order. |
+| `GET` | `/V1/orderChain/{id}/comments` | Retrieve the order comments. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Retrieve the current order status. |
+
+The `GET` invoices, returns, shipments, and credit memo endpoints also now support filtering by `order_original_id`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### View order modification history in the Admin
 
