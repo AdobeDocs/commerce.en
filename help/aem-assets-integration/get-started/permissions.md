@@ -76,3 +76,4 @@ Without IMS, you can still configure the integration by manually entering Progra
 * [Manual asset selection](../synchronize/asset-selector-integration.md)—Use the Asset Selector for category images and Page Builder.
 * [Add a user to AEM Assets or Product Visuals](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}—For [!DNL Adobe Commerce as a Cloud Service], add users to Commerce and AEM Cloud Manager (Business Owner, Deployment Manager) first. The **AEM Assets DM OpenAPI Users - delivery** profile (or **author** profile as fallback) is an additional requirement for the Asset Selector and auto-populate features.
 * [Assign team members to AEM delivery layer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. AEM documentation for delivery access.
+
