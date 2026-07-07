@@ -101,7 +101,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue in the [!DNL Commerce Admin] where the left navigation menu could disappear. <!-- ACCS-1035 -->
 
-* Improved the performance of assigning and unassigning in shared catalogs. <!-- ACCS-1324 --> <!-- CCSAAS-5177, CCSAAS-5190 --><!-- CCSAAS-5192 -->
+* Improved the performance of assigning and unassigning in shared catalogs. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
