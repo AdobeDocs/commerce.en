@@ -90,7 +90,7 @@ New `orderChain` REST API endpoints let integrations modify an order using its I
 | `GET` | `/V1/orderChain/{id}/comments` | Retrieve the order comments. |
 | `GET` | `/V1/orderChain/{id}/statuses` | Retrieve the current order status. |
 
-The `GET` invoices, returns, shipments, and credit memo endpoints also now support filtering by `order_original_id`. <!-- ACCS-1004, ACCS-1005 -->
+`GET` endpoints that support filtering on invoices, shipments, credit memos, and returns now support filtering by `order_original_id`. Filtering by `order_original_id` returns details about the entire order chain, not just the single order. An example endpoint that supports this feature is `GET /V1/invoices`.  <!-- ACCS-1004, ACCS-1005 -->
 
 ### View order modification history in the Admin
 
