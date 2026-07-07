@@ -57,7 +57,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## June 2026 - release #2 {#latest}
+## July 2026 - release #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -74,6 +74,10 @@ The `GET /V1/orders` and `GET /V1/invoices` REST API endpoints now support filte
 ### List custom email templates through the API
 
 The new `GET /V1/custom-email/templates` REST API endpoint returns your [custom email templates](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), including each template's ID, code, and subject. Integrations can use a returned template ID with the `POST /V1/custom-email/send` endpoint instead of looking up the ID manually. <!-- CCSAAS-5089 -->
+
+### Manage the full order chain through the REST API
+
+New `orderChain/{originalOrderId}` REST API endpoints let integrations invoice, refund, ship, cancel, hold, and unhold an order using its original order ID, automatically resolving the full chain of edits. New `POST /V1/orders/{orderId}/edit/start` and `POST /V1/orders/{orderId}/edit/submit` endpoints support editing and resubmitting an order through the API. The `GET` invoices, returns, shipments, and credit memo endpoints also now support filtering by `order_original_id`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### View order modification history in the Admin
 
@@ -94,6 +98,10 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Large shared catalogs are now easier to manage in the Admin, with improved loading times and reduced likelihood of timeouts. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * Fixed a shipment creation failure that occurred when creating shipments for orders that contained configurable products. <!-- ACCS-1095 -->
+
+* Fixed an issue in the [!DNL Commerce Admin] where the left navigation menu could disappear. <!-- ACCS-1035 -->
+
+* Improved the performance of assigning and unassigning in shared catalogs. <!-- ACCS-1324 --> <!-- CCSAAS-5177, CCSAAS-5190 --><!-- CCSAAS-5192 -->
 
 {{accs-release}}
 
