@@ -51,8 +51,6 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _July 10, 2026_
 
-![Fix](../assets/fix.svg) fix tests. <!--MDEE-1397-->
-![Fix](../assets/fix.svg) ACO test SaasExportAdapter\FeedSubmitTest hangs in Jenkins. <!--MDEE-1406-->
 ![Fix](../assets/fix.svg) Sorting support for Categories API. <!--MDEE-1409-->
 
 ### 1.0.14 Release
