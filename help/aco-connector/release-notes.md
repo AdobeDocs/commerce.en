@@ -47,6 +47,12 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.0.15 Release
+
+_July 10, 2026_
+
+![Fix](../assets/fix.svg) Added sorting support to the Categories feed. <!--MDEE-1409-->
+
 ### 1.0.14 Release
 
 _June 11, 2026_
