@@ -55,9 +55,8 @@ Updates include:
 
 _July 10, 2026_
 
-![Fix](../assets/fix.svg) [Feed Status Grid] Filtration by ID doesn't work. <!--MDEE-1396-->
-![Fix](../assets/fix.svg) remove dev folder. <!--MDEE-1390-->
-![Fix](../assets/fix.svg) Force-sync data feeds. <!--MDEE-1334-->
+![Fix](../assets/fix.svg) Fixed Feed Status Grid filtering by ID. <!--MDEE-1396-->
+![New](../assets/new.svg) Added --force option to saas:resync to re-sync all data feeds regardless of their synchronization status. <!--MDEE-1334-->
 
 ### 103.4.29 Release
 
