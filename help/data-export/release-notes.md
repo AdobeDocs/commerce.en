@@ -55,15 +55,15 @@ Updates include:
 
 _July 10, 2026_
 
-![Fix](../assets/fix.svg) Fixed Feed Status Grid filtering by ID. <!--MDEE-1396-->
-![New](../assets/new.svg) Added --force option to saas:resync to re-sync all data feeds regardless of their synchronization status. <!--MDEE-1334-->
+![Fix](../assets/fix.svg) Fixed Feed Status Grid filtering by ID so the page reliably finds and displays the matching feed record when you filter by feed ID. <!--MDEE-1396-->
+![New](../assets/new.svg) Added a `--force` option to the `bin/magento saas:resync` to resync all selected data feeds even when they already show as synchronized, making full resync and recovery scenarios easier. <!--MDEE-1334-->
 
 ### 103.4.29 Release
 
 _July 6, 2026_
 
-![Fix](../assets/fix.svg) Sort product links to avoid random sync. <!--MDEE-1391-->
-![Fix](../assets/fix.svg) Price feed sends base price instead of catalog rule price for UTC-negative websites after midnight UTC. <!--MDEE-1401-->
+![Fix](../assets/fix.svg) Fixed an issue where the order of related, up-sell, and cross-sell product links in the products feed could vary between runs, causing unchanged products to be resubmitted on every `bin/magento saas:resync --feed products` run. These links are now exported in a consistent order, so products are resynced only when they actually change. <!--MDEE-1391-->
+![Fix](../assets/fix.svg) Fixed an issue where the prices feed sent full base prices instead of catalog rule prices for websites in time zones behind UTC (for example, US and Canada) during the early morning hours in UTC. Catalog rule pricing is now delivered correctly regardless of a website's time zone. <!--MDEE-1401-->
 
 ### 103.4.28 Release
 
