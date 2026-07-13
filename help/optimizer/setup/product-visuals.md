@@ -70,7 +70,7 @@ See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-ac
 
 Before using Product Visuals, review the [integration limitations](../../aem-assets-integration/get-started/configure-aco.md#limitations) — particularly the layer-related constraints that affect how AEM Assets data merges with your base catalog.
 
-For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the boundaries and limits guide.
+For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
 
 ## Using Product Visuals
 
