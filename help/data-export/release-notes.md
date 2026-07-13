@@ -56,7 +56,7 @@ Updates include:
 _July 10, 2026_
 
 ![Fix](../assets/fix.svg) Fixed the Feed Status Grid filter by ID capability on the Data Feed Sync Status page in the Commerce Admin so that matching feed records are displayed correctly when you filter by feed ID. <!--MDEE-1396-->
-![New](../assets/new.svg) Added a `--force` option to the `bin/magento saas:resync` to resync all selected data feeds even when they already show as synchronized, making full resync and recovery scenarios easier. <!--MDEE-1334-->
+![New](../assets/new.svg) Added a `--force` option to the `bin/magento saas:resync` command to resync all selected data feeds even when they already show as synchronized, making full resync and recovery scenarios easier. <!--MDEE-1334-->
 
 ### 103.4.29 Release
 
