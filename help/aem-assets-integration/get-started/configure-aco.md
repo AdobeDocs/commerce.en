@@ -92,7 +92,6 @@ To initiate this process, [create a support ticket](https://experienceleague.ado
 
 After the [!DNL Commerce Optimizer] tenant is registered, configure your catalog view so the storefront and APIs surface AEM-driven image data:
 
-* **Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
 * **Select the Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
 * **Assign the Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.
 
