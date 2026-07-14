@@ -27,7 +27,7 @@ This topic describes how to configure your AEM Assets project so that the Commer
 
 You have two options to configure the AEM Assets project:
 
-* [!BADGE Recommended]{type=Positive} **Self-service onboarding** — On AEM releases `2026.5.26309` and later, enable the integration directly from Cloud Manager by setting an environment variable and activating Dynamic Media with OpenAPI capabilities. No custom code deployment is required. See [Enable the Commerce integration (self-service)](#enable-aem-commerce-self-service).
+* [!BADGE Recommended]{type=Positive} **Self-service onboarding** — On AEM releases `2026.5.26309` and later, enable the integration in Cloud Manager by setting an environment variable and activating Dynamic Media with OpenAPI capabilities. No custom code deployment is required. See [Enable the Commerce integration (self-service)](#enable-aem-commerce-self-service).
 
 * **Manual configuration** — Deploy the `assets-commerce` package through a Cloud Manager pipeline. Use these manual steps when you must deploy custom package code, or if you are on an AEM release earlier than `2026.5.26309`. See [Install the assets-commerce package manually](#install-the-assets-commerce-package-manually).
 
@@ -53,7 +53,7 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
 ### Step 1: Create the program and environments
 
-Creating a program in Cloud Manager is a single wizard flow — the program and its environments are configured across multiple steps and saved together at the end.
+Creating a program in Cloud Manager is a single wizard process — the program and its environments are configured across multiple steps and saved together at the end.
 
 1. In Cloud Manager, select **[!UICONTROL Add Program]**.
 
@@ -114,7 +114,7 @@ Switch to the **AEM Assets author environment** and open any asset. Edit its pro
 
 ### Prerequisites
 
-You need the following resources and permissions to deploy the `assets-commerce` package code to the AEM Assets as a Cloud Service AEM environment:
+To deploy the `assets-commerce` package code to the AEM Assets as a Cloud Service AEM environment, you need the following resources and permissions:
 
 * [Access to the AEM Assets Cloud Manager Program and environments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) with the Program and Deployment Manager roles.
 
@@ -142,9 +142,9 @@ You need the following resources and permissions to deploy the `assets-commerce`
 
 >[!TAB AEM Assets]
 
-[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} On AEM as a Cloud Service, submit an Adobe support ticket with the following information:
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} On AEM as a Cloud Service, submit an Adobe support ticket with this information:
 
-* Title: Enable Dynamic Media OpenAPI to fully integrate Adobe Commerce with AEM Assets
+* Title: Enable Dynamic Media OpenAPI to integrate Adobe Commerce fully with AEM Assets
 
   * Content of the support ticket:
 
@@ -153,7 +153,7 @@ You need the following resources and permissions to deploy the `assets-commerce`
     * **[!UICONTROL AEM Environment ID]**
     * **[!UICONTROL IMS Org ID]**
 
-Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI capabilities on your Cloud Services environment and share the details, such as IMS Client ID, for you to proceed with the integration.
+Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI capabilities on your Cloud Services environment and shares the details, such as IMS Client ID, for you to proceed with the integration.
 
 >[!ENDTABS]
 
@@ -209,11 +209,11 @@ If the **Commerce** tab does not appear in properties, you must manually complet
 
 1. Drag and drop a **checkbox** component into the **Commerce** tab, and map it to the property `commerce:isCommerce`. Define **Yes** and **No** as the options.
 
-If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) or contact your AEM Assets Integration sales representative for help.
+If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) or contact your AEM Assets Integration sales representative for help.
 
 ## Configure a metadata profile (optional)
 
-In the AEM Assets author environment, set default values for Commerce asset metadata by creating a metadata profile. Then, apply the new profile to AEM Asset folders to automatically use these defaults. This configuration streamlines asset processing by reducing manual steps.
+In the AEM Assets author environment, set default values for Commerce asset metadata by creating a metadata profile. To use these defaults automatically, apply the new profile to AEM Asset folders. This configuration streamlines asset processing by reducing manual steps.
 
 When you configure the metadata profile, you only have to configure the following components:
 
@@ -267,7 +267,7 @@ The Product Data UI component is added automatically based on the template.
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. To automatically synchronize approved Commerce assets as they are uploaded to the AEM Assets environment, set the default value for the _[!UICONTROL Review Status]_ field on the `Basic` tab to `approved`.
+1. Optional. To synchronize approved Commerce assets automatically as they are uploaded to the AEM Assets environment, set the default value for the _[!UICONTROL Review Status]_ field on the `Basic` tab to `approved`.
 
 1. Save the update.
 

@@ -12,7 +12,7 @@ Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage prod
 
 >[!NOTE]
 >
->**Product Visuals** is the name of the bundle provided out-of-the-box with [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer]. It combines [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) and [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>**Product Visuals** is the name of the bundle provided with [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer]. It combines [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) and [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
 >Customers with a different AEM Assets license (for example, **AEM Assets Ultimate**) can use the same integration; only the AEM release affects the onboarding steps, not the license type.
 
@@ -56,7 +56,7 @@ Before enabling Product Visuals, ensure you meet the [prerequisites for Commerce
 
 ## Setup
 
-To enable the integration, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with your [!DNL Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets integration service.
+To enable the integration, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) with your [!DNL Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets integration service.
 
 See [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) for onboarding information.
 
@@ -68,9 +68,9 @@ See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-ac
 
 ## Limitations
 
-Before using Product Visuals, review the [integration limitations](../../aem-assets-integration/get-started/configure-aco.md#limitations) — particularly the layer-related constraints that affect how AEM Assets data merges with your base catalog.
+Before using Product Visuals, review the [integration limitations](../../aem-assets-integration/get-started/configure-aco.md#limitations) — the layer-related constraints that affect how AEM Assets data merges with your base catalog.
 
-For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../planning/boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
+For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
 
 ## Using Product Visuals
 

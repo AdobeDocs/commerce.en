@@ -55,10 +55,9 @@ Before configuring the integration, ensure you have:
 * Both [!DNL Commerce Optimizer] and AEM Assets in the same Adobe IMS Organization.
 * Dynamic Media with OpenAPI enabled on your AEM Assets environment (see [Configure the AEM Assets project](configure-aem.md#prerequisites) for enablement steps).
 
-
 ### Configure AEM Assets first
 
-Before you begin the process to onboard the AEM Assets Integration with [!DNL Commerce Optimizer], you must configure the AEM Assets project and environments to support the integration. This includes enabling Dynamic Media with OpenAPI capabilities, and making the Commerce metadata schemas, events, and UI available in your AEM project.
+To support the integration, configure the AEM Assets project and environments before you begin the process to onboard the AEM Assets Integration with [!DNL Commerce Optimizer]. This includes enabling Dynamic Media with OpenAPI capabilities, and making the Commerce metadata schemas, events, and UI available in your AEM project.
 
 * [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-aem-commerce-self-service).
 
@@ -73,7 +72,7 @@ Follow [Install the assets-commerce package manually](configure-aem.md#install-t
 
 >[!IMPORTANT]
 >
->Before you submit a support ticket to enable the integration with [!DNL Commerce Optimizer], complete the process to [Configure AEM Assets](#configure-aem-assets-first). Support cannot complete the Tenant registration process unless the AEM Assets environments and project are already configured to support the AEM Commerce integration: the the `assets-commerce` package (or self-service equivalent) must be deployed so that metadata and events work. Opening a ticket before AEM is configured can delay onboarding.
+>Before you submit a support ticket to enable the integration with [!DNL Commerce Optimizer], complete the process to [Configure AEM Assets](#configure-aem-assets-first). Support requires the AEM Assets environments and project to be configured to support the AEM Commerce integration, including the deployment of the `assets-commerce` package (or self-service equivalent) for metadata and events. Opening a ticket before AEM is configured can delay onboarding.
 
 To onboard AEM Assets Integration with [!DNL Commerce Optimizer], Adobe Support must register your Adobe Commerce Optimizer instance with the Assets Integration Service and subscribe it to:
 
@@ -86,7 +85,7 @@ To initiate this process, [create a support ticket](https://experienceleague.ado
 * **AEM Program ID and Environment ID** that you set up when you [configured AEM Assets](#configure-aem-assets-first) for the integration.
 * **Matching rule**: Match by SKU or [external matcher (App Builder)](../synchronize/custom-match.md){target=_blank}.
 * **Layer**: The catalog layer name to register the tenant with (see **Layer-related constraints**). Specify a custom name only if intentional; otherwise the default **`AEM-Assets`** is used.
-* **Locale**: The catalog source locale to register the tenant with (for example, `en-US`). This must match the locale you use in your catalog view and product catalog data.
+* **Locale**: The catalog source locale to register the tenant with (for example, `en-US`). This locale must match the locale you use in your catalog view and product catalog data.
 
 ### Configure your catalog view
 
@@ -95,7 +94,7 @@ After the [!DNL Commerce Optimizer] tenant is registered, configure your catalog
 * **Select the Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
 * **Assign the Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.
 
-If the locale or layer is not assigned correctly, image data may **not appear** or may behave unexpectedly—even though sync succeeded upstream.
+If the locale or layer is not assigned correctly, image data does **not appear** or behaves unexpectedly—even though sync succeeded upstream.
 
 ## Synchronization
 
@@ -117,7 +116,7 @@ A typical flow when adding an existing asset to a new product:
 
 1. The Assets integration service sends the product-image mapping to [!DNL Commerce Optimizer]. The product in [!DNL Commerce Optimizer] is updated with the images from the asset.
 
-1. Verify the image is visible. Allow time for the sync to complete (typically within a few minutes), then check the product in the [!DNL Commerce Optimizer] UI (for example, Data Sync or catalog view), or query the storefront APIs (Catalog Service, Live Search, Storefront GraphQL API) to confirm the image is returned.
+1. Verify the image is visible. Wait a few minutes for the sync to complete, then check the product in the [!DNL Commerce Optimizer] UI or query the storefront APIs to confirm the image is returned.
 
 ## Image role handling
 

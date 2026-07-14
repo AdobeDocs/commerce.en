@@ -26,7 +26,7 @@ Updates include:
 
 >[!NOTE]
 >
->The [Catalog Adapter extension](catalog-adapter.md) disables Adobe Commerce price indexing. If you have installed it, you can check the version installed on your system using composer. In some cases, you might want to upgrade the catalog adapter extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
+>The [Catalog Adapter extension](catalog-adpater.md) disables Adobe Commerce price indexing. If you have installed it, you can check the version installed on your system using composer. In some cases, you might want to upgrade the catalog adapter extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
 
 ## Current major version
 
