@@ -18,6 +18,10 @@ Use the **Settings** workspace to configure semantic search, price facet ranges 
 
 ## Semantic search {#semantic-search}
 
+>[!AVAILABILITY]
+>
+>Semantic search is available for merchants using Adobe Commerce versions 2.4.4 and newer.
+
 Semantic search uses AI to match products based on meaning and context, not only exact keywords. When **[!UICONTROL Semantic search]** is enabled, shoppers who use natural language or wording that does not match your catalog verbatim can still find relevant products. [!DNL Live Search] delivers keyword and semantic matching in one unified search experience on the storefront. Semantic search works alongside your existing configuration; [search rules](rules.md), [synonyms](synonyms.md), [facets](facets.md), boosts, and [category merchandising](category-merch.md) continue to apply.
 
 **To enable semantic search (PaaS only):**

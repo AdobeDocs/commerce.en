@@ -43,7 +43,7 @@ To collect Commerce event data:
 
     >[!NOTE]
     >
-    > Do **not** [configure](connect-data.md) the Organization ID and Datastream ID.
+    > Do **not** [configure](connect-data.md) the Organization ID and Datastream ID in the Commerce Admin when you use Tags for collection. Multi-website merchants configure datastreams per property or environment in Tags. For Commerce Admin scope behavior, see [Configuration scope](connect-data.md#configuration-scope).
 
 ## Map Commerce storefront data to Adobe Experience Platform
 
