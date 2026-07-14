@@ -36,7 +36,7 @@ Adobe recommends estimating data volume and sync time before starting any feed s
 
 By default, the connector processes feeds in single-thread mode. There is no parallelization of the feed submission process. The ingestion API accepts up to 2 requests per second. However, the base allocation for the [!DNL Adobe Commerce Optimizer] ingestion rate limits throughput to the following:
 
-- Up to 1,000 products per minute (a product is a SKU with attributes in a specific store view). See [Limits and boundaries](../../optimizer/boundaries-limits.md) for base allocation details.
+- Up to 1,000 products per minute (a product is a SKU with attributes in a specific store view). See [Limits and boundaries](../../optimizer/planning/boundaries-limits.md) for base allocation details.
 - Up to 50,000 prices per minute
 
 ## Factors that affect sync time

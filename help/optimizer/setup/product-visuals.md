@@ -64,13 +64,13 @@ See [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/g
 
 To enable automatic product matching, configure your assets in AEM Assets with Commerce metadata.
 
-See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets) for the required metadata fields and steps.
+See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first) for the required metadata fields and steps.
 
 ## Limitations
 
 Before using Product Visuals, review the [integration limitations](../../aem-assets-integration/get-started/configure-aco.md#limitations) — particularly the layer-related constraints that affect how AEM Assets data merges with your base catalog.
 
-For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
+For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../planning/boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
 
 ## Using Product Visuals
 
@@ -80,7 +80,9 @@ After the integration is configured, manage your product images through AEM Asse
 
 1. Upload images to your AEM Assets repository.
 
-1. Add Commerce metadata to the asset. See [Apply metadata to assets](../../aem-assets-integration/get-started/configure-aco.md#step-3-apply-metadata-to-assets).
+1. Add Commerce metadata to the asset.
+
+   See [Default automatic matching](../../aem-assets-integration/synchronize/default-match.md) and [Custom automatic matching](../../aem-assets-integration/synchronize/custom-match.md).
 
 1. Approve the asset for delivery. The asset must be in **approved** status to trigger synchronization.
 

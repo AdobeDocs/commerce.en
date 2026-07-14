@@ -63,7 +63,7 @@ Before you begin the process to onboard the AEM Assets Integration with [!DNL Co
 * [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-aem-commerce-self-service).
 
 * On earlier AEM releases, deploy the `assets-commerce` package manually.
-Follow [Install the assets-commerce package manually](configure-aem#install-the-assets-commerce-package-manually).
+Follow [Install the assets-commerce package manually](configure-aem.md#install-the-assets-commerce-package-manually).
 
 >[!TIP]
 >
