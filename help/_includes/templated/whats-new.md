@@ -4,6 +4,50 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### July 7, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### July 6, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Removed the LLM Optimizer and Commerce integration documentation. The feature has been re-scoped and moved to the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment">Commerce Admin guide</a>.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### June 23, 2026
 
 <table style="table-layout:auto;">
@@ -386,28 +430,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### April 30, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Expanded the <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector overview</a> with key benefits, end-to-end architecture (new diagram), clearer scope mapping, typical setup and sync workflows, supported scenarios, and prerequisites or responsibilities so teams can assess and operate the integration more easily.</p>
-</td>
-      <td>
-        Feedback, major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">commit</a></td>
     </tr>
   </tbody>
 </table>
