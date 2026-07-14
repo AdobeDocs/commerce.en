@@ -18,6 +18,7 @@ When using IMS, the AEM Assets Integration also requires specific **Adobe Admin 
 * **Auto-populated configuration fields** such as **Program ID**, **Environment ID**, and **Domain mapping** dropdowns that pull values from the user's IMS session based on their Admin Console product profiles (delivery or author).
 
 Without the correct permissions, the Asset Selector is unavailable, and these fields appear empty or require manual entry.
+
 >[!BEGINSHADEBOX]
 
 **How IMS and permissions work together**

@@ -23,15 +23,13 @@ topic_v2:
 ---
 # Configure the AEM Assets project
 
-This topic describes how to configure your AEM Assets project so that the Commerce namespace, metadata schema, and **[!UICONTROL Commerce]** tab are available in the AEM authoring environment. For background on these resources, see [Commerce metadata in AEM Assets](../metadata.md).
-
 This topic describes how to configure your AEM Assets project so that the Commerce namespace, metadata schema, and [!UICONTROL Commerce] tab are available in the AEM authoring environment. For background on these resources, see Commerce metadata in AEM Assets.
 
 You have two options to configure the AEM Assets project:
 
 * [!BADGE Recommended]{type=Positive} **Self-service onboarding** — On AEM releases `2026.5.26309` and later, enable the integration directly from Cloud Manager by setting an environment variable and activating Dynamic Media with OpenAPI capabilities. No custom code deployment is required. See [Enable the Commerce integration (self-service)](#enable-aem-commerce-self-service).
 
-* **Manual configuration** — Deploy the `assets-commerce` package through a Cloud Manager pipeline. Use these manual steps when you must deploy custom package code, or on AEM releases earlier than `2026.5.26309`. See [Install the assets-commerce package manually](#install-the-assets-commerce-package-manually).
+* **Manual configuration** — Deploy the `assets-commerce` package through a Cloud Manager pipeline. Use these manual steps when you must deploy custom package code, or if you are on an AEM release earlier than `2026.5.26309`. See [Install the assets-commerce package manually](#install-the-assets-commerce-package-manually).
 
 >[!TIP]
 >
@@ -49,7 +47,9 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
 * An AEM program on release `2026.5.26309` or later.
 
-* The **IMS Org ID** for your Commerce instance. Both your Commerce instance and AEM Assets authoring environment must be in the same IMS organization.
+* The **IMS Org ID** for your Commerce instance.
+
+  Both your Commerce instance and AEM Assets authoring environment must be in the same IMS organization.
 
 ### Step 1: Create the program and environments
 

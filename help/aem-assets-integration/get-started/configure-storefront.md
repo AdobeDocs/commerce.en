@@ -41,7 +41,7 @@ To enable the integration in Commerce storefronts powered by Edge Delivery Servi
 
 The Commerce drop-ins automatically detect the `commerce-assets-enabled` configuration and adjust image handling accordingly.
 
-For more information on how to use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
+For more information on using AEM Assets with the Commerce Storefront powered by Edge Delivery Services, see the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
 
 >[!TIP]
 >
@@ -69,7 +69,7 @@ Use the following steps to connect AEM Assets to a Document Authoring (Da.live) 
 
 1. In a new tab, go to [experience.adobe.com](https://experience.adobe.com){target=_blank} and navigate to **[!UICONTROL Experience Manager]**.
 
-1. Scroll to the **[!UICONTROL My Authoring]** section and select **[!UICONTROL Assets]** next to your **[!UICONTROL Production]** environment to open Adobe Experience Manager Assets.
+1. Open Adobe Experience Manager Assets: Scroll to the **[!UICONTROL My Authoring]** section, and then select **[!UICONTROL Assets]** next to your **[!UICONTROL Production]** environment.
 
 1. From the browser address bar, copy the segment that starts with `author` up to and including `.com`—for example, `author-p107634-e1009805.adobeaemcloud.com`.
 

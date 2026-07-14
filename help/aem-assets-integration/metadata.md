@@ -23,10 +23,10 @@ Commerce metadata is the contract between AEM Assets and Commerce. It tells Comm
 
 Commerce metadata enables the following capabilities:
 
-* **Mark an asset as Commerce-eligible** via `commerce:isCommerce`.
-* **Associate an asset with one or more product SKUs** via `commerce:skus`.
-* **Define how the asset appears in Commerce** via `commerce:roles` and `commerce:positions`.
-* **Add Commerce-specific alt text keyed by store view** via `commerce:altTextStoreViews` and `commerce:altTextValues`.
+* **Mark an asset as Commerce-eligible** via the `commerce:isCommerce` field.
+* **Associate an asset with one or more product SKUs** via the `commerce:skus` field.
+* **Define how the asset appears in Commerce** via the `commerce:roles` and `commerce:positions` fields.
+* **Add Commerce-specific alt text keyed by store view** via the`commerce:altTextStoreViews` and `commerce:altTextValues` fields.
 * **Exposes these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
 >[!IMPORTANT]
