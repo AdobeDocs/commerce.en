@@ -49,7 +49,7 @@ topic_v2:
 
 A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service].
 
-The report is delivered as an HTML file that you can open with any browser. No access to your production environment is required, except initially sharing your project codebase.
+Processed migration assessment reports are accessible at `https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`. No access to your production environment is required, except initially sharing your project codebase.
 
 **The assessment provides:**
 
