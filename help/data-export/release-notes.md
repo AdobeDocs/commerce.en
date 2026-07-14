@@ -51,6 +51,20 @@ Updates include:
 
 ## 2026 Releases
 
+### 103.4.30 Release
+
+_July 10, 2026_
+
+![Fix](../assets/fix.svg) Fixed the Feed Status Grid filter by ID capability on the Data Feed Sync Status page in the Commerce Admin so that matching feed records are displayed correctly when you filter by feed ID. <!--MDEE-1396-->
+![New](../assets/new.svg) Added a `--force` option to the `bin/magento saas:resync` command to resync all selected data feeds even when they already show as synchronized, making full resync and recovery scenarios easier. <!--MDEE-1334-->
+
+### 103.4.29 Release
+
+_July 6, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue where the order of related, up-sell, and cross-sell product links in the products feed could vary between runs, causing unchanged products to be resubmitted on every `bin/magento saas:resync --feed products` run. These links are now exported in a consistent order, so products are resynced only when they actually change. <!--MDEE-1391-->
+![Fix](../assets/fix.svg) Fixed an issue where the prices feed sent full base prices instead of catalog rule prices for websites in time zones behind UTC (for example, US and Canada) during the early morning hours in UTC. Catalog rule pricing is now delivered correctly regardless of a website's time zone. <!--MDEE-1401-->
+
 ### 103.4.28 Release
 
 _June 11, 2026_
