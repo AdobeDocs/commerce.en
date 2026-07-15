@@ -29,7 +29,7 @@ The integration has two independent event flows. Both use [Adobe I/O Events](htt
 
 * **From AEM Assets to the Assets integration service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets integration service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From [!DNL Commerce Optimizer] to the Assets integration service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets integration service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
+* **From [!DNL Commerce Optimizer] to the Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 The updated images are available through storefront APIs (Catalog Service, Live Search, Product Recommendations).
 
