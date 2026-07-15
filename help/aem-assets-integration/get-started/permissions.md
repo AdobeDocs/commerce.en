@@ -70,7 +70,7 @@ To use the Asset Selector and auto-populated configuration fields (Program ID, E
 
 1. [Enable Adobe IMS for Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} so that Commerce Admin uses IMS authentication and can read the user's Admin Console product profiles.
 
-1. To request a custom IMS Client ID for the Asset Selector, [Open a Support ticket](/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases).
+1. To request a custom IMS Client ID for the Asset Selector, [Open a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 1. From the [Adobe Admin Console](https://adminconsole.adobe.com/), add the user to the **AEM Assets DM OpenAPI Users—delivery** product profile, or to the **author** product profile as a fallback.
 
