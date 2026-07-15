@@ -2,8 +2,29 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 26 17:40:53 2026
+updated: Tue Jul 14 11:01:48 2026
 entries:
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: July 7, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/665
+  merge_commit: 976a43b367be87363307dc27c55f98df18271eb1
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
+- description: Removed the LLM Optimizer and Commerce integration documentation. The
+    feature has been re-scoped and moved to the [Commerce Admin guide](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment).
+  versions: ''
+  type: major-update
+  date: July 6, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/641
+  merge_commit: edab7c8b3c7965425c5d3008a537f7e4a1fc374b
+  contributor: emarr_adobe
+  labels:
+  - major-update
 - description: Updated catalog data sync verification guidance across Commerce service
     documentation. Service installation and configuration topics now use a consistent
     two-step workflow—confirm export on the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status),

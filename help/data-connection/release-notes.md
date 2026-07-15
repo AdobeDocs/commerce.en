@@ -103,6 +103,16 @@ _October 12, 2022_
 
 +++
 
+## 3.6.0
+
+_July 2026_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added website-scoped configuration support for applicable [!DNL Data Connection] settings, including Experience Platform sandbox selection for multi-website deployments. See [Configuration scope](connect-data.md#configuration-scope).
+
+![Fix](../assets/fix.svg) Updated connection validation so **[!UICONTROL Test connection]** validates service account credentials and sandbox settings for the website currently selected in **Scope**.
+
 ## 3.5.0
 
 _March 17, 2026_

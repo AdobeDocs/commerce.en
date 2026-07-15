@@ -6,6 +6,10 @@ recommendations: noCatalog
 ---
 # Semantic search
 
+>[!AVAILABILITY]
+>
+>Semantic search is available for merchants using Adobe Commerce versions 2.4.4 and newer.
+
 Semantic search uses AI to understand what shoppers mean, not just the exact words they type. Queries such as "dress for a beach wedding" or "comfortable shoes for standing all day" can return relevant products even when your catalog does not use those exact phrases.
 
 [!DNL Live Search] combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront. [!DNL Live Search] does not offer advanced semantic controls (for example, boost or similarity sliders) in the Admin. You can enable or disable semantic search.
@@ -100,3 +104,4 @@ After semantic search is active and indexing completes, Adobe recommends validat
 - [Settings](settings.md#semantic-search)
 - [Synonyms](synonyms.md)
 - [Performance](performance.md)
+

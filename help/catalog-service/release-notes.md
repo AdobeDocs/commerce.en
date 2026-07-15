@@ -614,6 +614,16 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 - For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
 
+### v3.5.0 release
+
+**Release date**: July 10, 2026
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) **Staged category URL key sync**—Updated the Catalog Service metapackage dependencies to include the Catalog Staging Data Exporter module (`magento/module-catalog-staging-data-exporter`). This module re-exports product feeds when a staged category `url_key` change applies, so staged catalog changes propagate correctly to the SaaS catalog (Catalog Service, Live Search, and Product Recommendations).
+
+![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
+
 ### v3.4.0 release
 
 **Release date**: June 8, 2026

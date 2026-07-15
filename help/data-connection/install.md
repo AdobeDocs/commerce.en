@@ -27,6 +27,10 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
 ![[!DNL Data Connection] extension Admin view](assets/epc-adminui.png)
 
+>[!NOTE]
+>
+>After installation, configure [!DNL Data Connection] in the Admin. See [Configuration scope](connect-data.md#configuration-scope) for global vs website-scoped settings.
+
 >[!IMPORTANT]
 >
 >While the name of the extension has changed from Experience Platform connector to [!DNL Data Connection], the package name remains `experience-platform-connector` to support backward compatibility.
@@ -160,7 +164,7 @@ To update to a major version such as from 2.0.0 to 3.0.0, edit the project's roo
 1. **Save** `composer.json`. Then, run the following from the command line:
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector --with-dependencies
    ```
 
    Or, for B2B merchants:

@@ -24,7 +24,6 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
    - [Services Connector](/help/landing/saas.md)
-   - [Integrate [!DNL Adobe Commerce] with [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
 - Data tools {#data-services}
    - [SaaS Data Export](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
    - [SaaS Price Indexing](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)

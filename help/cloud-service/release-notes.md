@@ -57,13 +57,13 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## June 2026 - release #2 {#latest}
+## July 2026 - release #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
 
-The following items are currently only available in Sandbox environments and are scheduled to move to Production environments in July.
+The following items are currently only available in Sandbox environments and are scheduled to move to Production environments on July 28, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -74,6 +74,27 @@ The `GET /V1/orders` and `GET /V1/invoices` REST API endpoints now support filte
 ### List custom email templates through the API
 
 The new `GET /V1/custom-email/templates` REST API endpoint returns your [custom email templates](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), including each template's ID, code, and subject. Integrations can use a returned template ID with the `POST /V1/custom-email/send` endpoint instead of looking up the ID manually. <!-- CCSAAS-5089 -->
+
+### Manage the full order chain through the REST API
+
+>[!IMPORTANT]
+>
+>This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
+
+New `orderChain` REST API endpoints let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Create an invoice for the order, resolving the items to invoice across the order chain. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Cancel the current order in the chain. |
+| `POST` | `/V1/orderChain/{id}/hold` | Place the order on hold. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Remove the hold from the order. |
+| `POST` | `/V1/orderChain/{id}/emails` | Send an order email notification. |
+| `POST` | `/V1/orderChain/{id}/comments` | Add a comment to the order. |
+| `GET` | `/V1/orderChain/{id}/comments` | Retrieve the order comments. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Retrieve the current order status. |
+
+`GET` endpoints that support filtering on invoices, shipments, credit memos, and returns now support filtering by `order_original_id`. Filtering by `order_original_id` returns details about the entire order chain, not just the single order. An example endpoint that supports this feature is `GET /V1/invoices`.  <!-- ACCS-1004, ACCS-1005 -->
 
 ### View order modification history in the Admin
 
@@ -94,6 +115,10 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Large shared catalogs are now easier to manage in the Admin, with improved loading times and reduced likelihood of timeouts. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * Fixed a shipment creation failure that occurred when creating shipments for orders that contained configurable products. <!-- ACCS-1095 -->
+
+* Fixed an issue in the [!DNL Commerce Admin] where the left navigation menu could disappear. <!-- ACCS-1035 -->
+
+* Improved the performance of assigning and unassigning in shared catalogs. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
