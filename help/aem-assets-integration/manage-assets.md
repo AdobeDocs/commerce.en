@@ -63,7 +63,7 @@ Product images are automatically pulled from AEM Assets based on pre-configured 
    >[!NOTE]
    >
    > A message indicates that the integration is enabled, making this a **read-only** section as image management is centralized in the DAM.
-   
+
    To configure product assets (link images to SKUs), open your AEM Assets author instance and click **Assets** from the main view. See [Default automatic matching](synchronize/default-match.md) for the metadata configuration steps.
 
 ### Manage product images in AEM Assets
@@ -153,7 +153,7 @@ For information about synchronization timing, see the [Synchronization SLA](get-
 
 ## Category images
 
-Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The AEM Assets integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels. 
+Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The AEM Assets integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels.
 
 ### Use AEM Asset Selector for category images
 
