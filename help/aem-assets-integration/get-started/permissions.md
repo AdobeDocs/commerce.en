@@ -12,7 +12,7 @@ feature: CMS, Media, Configuration
 
   [Enabling IMS for Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} provides an enhanced configuration UI (Asset Selector, auto-populated dropdowns), but you can configure the integration without IMS by manually entering **Program ID**, and **Environment ID**.
 
-When using IMS, the AEM Assets Integration also requires specific **Adobe Admin Console product profiles**. Users who configure the integration in Commerce Admin need the **AEM Assets DM OpenAPI Users—delivery** product profile, or the **author** product profile as a fallback. This access is controlled through Admin Console product profiles in the user's IMS organization, and enables:
+When using IMS, the AEM Assets Integration also requires specific **Adobe Admin Console product profiles**. Users who configure the integration in Commerce Admin need the **AEM Assets DM OpenAPI Users - delivery** product profile, or the **author** product profile as a fallback. This access is controlled through Admin Console product profiles in the user's IMS organization, and enables:
 
 * **Asset Selector** allows you to select images from AEM Assets when managing category images or Page Builder content.
 * **Auto-populated configuration fields** such as **Program ID**, **Environment ID**, and **Domain mapping** dropdowns that pull values from the user's IMS session.
@@ -52,7 +52,7 @@ If neither profile is configured, users can manually enter **Program ID** and **
 
 The system enables IMS authentication by default.
 
-Add the user to the **AEM Assets DM OpenAPI Users—delivery** product profile in the [Adobe Admin Console](https://adminconsole.adobe.com/), or to the **author** product profile as a fallback.
+Add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile in the [Adobe Admin Console](https://adminconsole.adobe.com/), or to the **author** product profile as a fallback.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ To use the Asset Selector and auto-populated configuration fields (Program ID, E
 
 1. To request a custom IMS Client ID for the Asset Selector, [Open a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
-1. From the [Adobe Admin Console](https://adminconsole.adobe.com/), add the user to the **AEM Assets DM OpenAPI Users—delivery** product profile, or to the **author** product profile as a fallback.
+1. From the [Adobe Admin Console](https://adminconsole.adobe.com/), add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile, or to the **author** product profile as a fallback.
 
 Without IMS, you can still configure the integration by manually entering Program ID and Environment ID in the Commerce Admin.
 
@@ -82,6 +82,6 @@ Without IMS, you can still configure the integration by manually entering Progra
 
 * [Configure IMS user permissions for the AEM Assets Integration](setup-synchronization.md)—Connect Commerce to AEM Assets and configure matching rules.
 * [Manual asset selection](../synchronize/asset-selector-integration.md)—Use the Asset Selector for category images and Page Builder.
-* [Add a user to AEM Assets or Product Visuals](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}—For [!DNL Adobe Commerce as a Cloud Service], add users to Commerce and AEM Cloud Manager (Business Owner, Deployment Manager) first. The **AEM Assets DM OpenAPI Users—delivery** profile (or **author** profile as fallback) is an additional requirement for the Asset Selector and auto-populate features.
+* [Add a user to AEM Assets or Product Visuals](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}—For [!DNL Adobe Commerce as a Cloud Service], add users to Commerce and AEM Cloud Manager (Business Owner, Deployment Manager) first. The **AEM Assets DM OpenAPI Users - delivery** profile (or **author** profile as fallback) is an additional requirement for the Asset Selector and auto-populate features.
 * [Assign team members to AEM delivery layer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. AEM documentation for delivery access.
 

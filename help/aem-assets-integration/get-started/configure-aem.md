@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Configure the AEM Assets project
 
-This topic describes how to configure your AEM Assets project so that the Commerce namespace, metadata schema, and [!UICONTROL Commerce] tab are available in the AEM authoring environment. For background on these resources, see Commerce metadata in AEM Assets.
+This topic describes how to configure your AEM Assets project so that the Commerce namespace, metadata schema, and [!UICONTROL Commerce] tab are available in the AEM authoring environment. For background on these resources, see [Commerce metadata in AEM Assets](../metadata.md).
 
 You have two options to configure the AEM Assets project:
 

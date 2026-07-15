@@ -91,7 +91,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 ### Synchronization SLA
 
-The service level aggreement (SLA) for the integration guarantees the following synchronization performance levels:
+The service level agreement (SLA) for the integration guarantees the following synchronization performance levels:
 
 * `< 5 minutes for 99% of updates`
 
