@@ -63,4 +63,4 @@ B2B storefronts often require complex logic that dictates product visibility and
 
 >[!NOTE]
 >
->Merchants customize and extend widgets or storefront elements by using the [Catalog Service](../catalog-service/overview.md) Storefront API but any customization is out of scope for Adobe's support team.
+>Merchants can customize and extend widgets or storefront elements by using the [Catalog Service](../catalog-service/overview.md) Storefront API but any customization is out of scope for Adobe's support team.

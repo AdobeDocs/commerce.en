@@ -162,7 +162,7 @@ The following table describes what data is exported at each scope level:
 You enable the integration and initiate the data sync by running the `aco:config:init` CLI command. This command completes the following steps:
 
 1. Obtains an IMS access token using credentials supplied as command line arguments.
-1. To validate the tenant and extract the ingestion URL and [!DNL Commerce Optimizer] Studio URL, call the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}`.
+1. Calls the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` to validate the tenant and extract the ingestion URL and [!DNL Commerce Optimizer] Studio URL.
 1. Saves all configuration (client secret encrypted) to `core_config_data`.
 1. Schedules the initial full sync by invalidating all [!DNL Commerce Optimizer] feed indexers.
 
