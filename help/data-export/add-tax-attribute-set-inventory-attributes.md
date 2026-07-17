@@ -50,13 +50,13 @@ The Adobe Commerce Extra Product Attributes module extends product data feeds. I
 * [Attribute set](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
 * [Inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
-Once installed, the module works automatically. It captures and exports the additional attributes during product synchronization. No additional configuration is required.
+Once installed, the module functions automatically. It captures and exports the additional attributes during product synchronization. No additional configuration is required.
 
 ## Key benefits
 
 * **Automatic enhancement**: Enriches product feeds with tax class, attribute set, and inventory attributes
 * **Seamless integration**: Provides essential context for external systems and services
-* **Zero configuration**: Works immediately after installation
+* **Zero configuration**: Functions immediately after installation
 * **Real-time updates**: Synchronizes automatically with product changes
 
 ## Features and exported attributes
@@ -64,7 +64,7 @@ Once installed, the module works automatically. It captures and exports the addi
 The module adds three additional attributes to your existing product data feeds:
 
 * `ac_tax_class`
-* `ac_attribute_set` 
+* `ac_attribute_set`
 * `ac_inventory`
 
 ### 1. Tax class information (`ac_tax_class`)
@@ -73,7 +73,7 @@ The module adds three additional attributes to your existing product data feeds:
 
 **Data Format**: String value containing the tax class name
 
-**Example output**:
+**Example Output**:
 
 ```json
 {
@@ -100,7 +100,7 @@ When you export tax class data to Commerce catalog services, this data becomes a
 
 **Data Format**: String value containing the attribute set name
 
-**Example output**:
+**Example Output**:
 
 ```json
 {
@@ -141,7 +141,7 @@ When you export attribute set data to Commerce catalog services, it enables adva
 * `enableQtyIncrements` (boolean): Whether quantity increments are enabled
 * `qtyIncrements` (float): Required quantity increment value
 
-**Example output**:
+**Example Output**:
 
 ```json
 {
@@ -185,8 +185,7 @@ The Extra Product Attributes module enhances the existing product feeds. It inte
 
 **Requirements**
 
-* PHP 8.1, 8.2, 8.3, or 8.4
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. For details, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 * [Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 or later
 * Access to [repo.magento.com](https://repo.magento.com)
 
@@ -203,8 +202,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 For detailed installation steps, see the following guides:
 
-* [Install extension on Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Install extension Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Install extension for Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Install extension on Adobe Commerce on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Synchronize product data
 
@@ -225,7 +224,7 @@ bin/magento saas:resync --feed=productAttributes
 **Products missing additional attributes:**
 
 * Verify that the module is properly installed and enabled
-* Run the resync commands to refresh product data
+* To refresh product data, run the resync commands
 * Check that products have valid tax class and attribute set assignments
 
 **Inventory data appears incorrect:**

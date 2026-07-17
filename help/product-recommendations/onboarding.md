@@ -24,24 +24,24 @@ topic_v2:
 >
 >For details about which Adobe Commerce capabilities are HIPAA ready and which services must not be used with PHI, see [HIPAA readiness on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) and [Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
-The onboarding process for [!DNL Product Recommendations] requires access to the command line of the server and consists of the following steps. If you are not familiar with working from the command line, ask a developer or system integrator to help.
+The onboarding process for [!DNL Product Recommendations] requires access to the command line of the server and consists of the following steps. If you are not familiar with working from the command line, ask a developer or system integrator for help.
 
 - [Implementation Workflow](implementation-workflow.md)
 - [Install and Configure](install-configure.md)
 - [Settings](settings.md)
-- [Verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)
+- [Verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)
 - [Staging Environment](staging-environment.md)
 
 ## Requirements
 
-- Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2, 8.3, or 8.4
-- Composer 2
+[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. For details, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Supported platforms
 
 - Adobe Commerce on premise (EE) : 2.4.4+
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
+
+For detailed requirements, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 
 ## Endpoint
 
@@ -55,12 +55,12 @@ See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how t
 
 ### SaaS price indexing
 
-Product Recommendation customers can use [SaaS price indexing](../price-index/price-indexing.md), which provides faster price changes updates and synchornization time.
+Product Recommendation customers can use [SaaS price indexing](../price-index/price-indexing.md), which provides faster price changes updates and synchronization time.
 
 ### B2B support {#b2bsupport}
 
-B2B storefronts often require complex logic that dictates product visibility and pricing for each shopper or customer group. [!DNL Product Recommendations] now [support](release-notes.md) this functionality by honoring [category permissions](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [shared catalogs](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), and [customer group-specific pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). For example, if you have hidden certain categories from your retail customer segment, then a shopper in that segment would not be shown recommendations for products in those categories. Also, when you define a shared catalog for specific customer groups and companies, those shoppers see recommendations only for products they can access. All recommended products reflect correct customer group-specific price based on each shopper's customer group.
+B2B storefronts often require complex logic that dictates product visibility and pricing for each shopper or customer group. [!DNL Product Recommendations] now [support](release-notes.md) this functionality by honoring [category permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), [shared catalogs](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), and [customer group-specific pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). For example, if you have hidden certain categories from your retail customer segment, a shopper in that segment is not shown recommendations for products in those categories. Also, when you define a shared catalog for specific customer groups and companies, those shoppers see recommendations only for products they can access. All recommended products reflect the correct customer group-specific price based on each shopper's customer group.
 
 >[!NOTE]
 >
->Merchants may customize and extend widgets or storefront elements by using the [Catalog Service](../catalog-service/overview.md) Storefront API but any customization is out of scope for Adobe's support team.
+>Merchants customize and extend widgets or storefront elements by using the [Catalog Service](../catalog-service/overview.md) Storefront API but any customization is out of scope for Adobe's support team.
