@@ -219,7 +219,7 @@ Learn how to configure your API keys in the [Commerce Services Connector](../lan
 
 ## 3. Sync your catalog data {#sync}
 
-[!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, indexing can take from 30 minutes to a severalhours.
+[!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, indexing can take from 30 minutes to several hours.
 
 To begin the initial sync of your catalog data to SaaS services, run the following commands in this order:
 
