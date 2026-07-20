@@ -32,6 +32,10 @@ After onboarding is complete (or on an already configured instance), **[!UICONTR
 
 In this Home view, you can access _Home_, _Learn_ about [!DNL Payment Services], configure the extension _Settings_, or get _Help_. Use **[!UICONTROL View Report]** (SaaS) or the **[!UICONTROL Orders]** and **[!UICONTROL Payouts]** entry points (Adobe Commerce on cloud and on-premises) to open reporting; see [Reporting](reporting.md).
 
+>[!NOTE]
+>
+>In [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer], the [!DNL Payment Services] **dashboard** exposes **selected** reporting only: you get the [Transactions](reporting.md) report from **[!UICONTROL Home]** (see the SaaS table below). The **[!UICONTROL Orders]** and **[!UICONTROL Payouts]** areas on Home---and their charts and linked reports---apply to Adobe Commerce on cloud and on-premises ([PaaS](#home)) only. For an overview of cash flow reports across deployments, see [Financial reporting](financial-reporting.md).
+
 ## Home
 
 [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}

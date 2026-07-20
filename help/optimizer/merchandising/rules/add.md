@@ -34,10 +34,6 @@ To build a rule, open the rule editor, choose a **rule type** (search conditions
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
 1. (Optional) Use the **Catalog view** dropdown to select the catalog view where the rule should apply. The rule you create is scoped to the selected view (or to all catalog views if **All views** is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
 
-   >[!IMPORTANT]
-   >
-   >Catalog views are currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta participants will need to recreate any existing merchandising rules to take advantage of the new catalog view scope.
-
 1. Click **[!UICONTROL Create rule]** to launch the rule editor.
 
 ![Create Rule](../../assets/create-rule.png)
@@ -49,7 +45,7 @@ Each rule type has an information icon in the editor with a short explanation. U
 | Rule type | Purpose |
 | --- | --- |
 | **All products rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
-| **Category rule** (Beta) | Applies merchandising and ranking to one or more selected categories, controlling product order on those category pages. |
+| **Category rule** | Applies merchandising and ranking to one or more selected categories, controlling product order on those category pages. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
 
 In the **Build your rule** section, you define the rule name, schedule, whether the rule applies to all listings or to specific search conditions, and ranking types.
@@ -105,10 +101,6 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 >[!TAB Category rule]
-
->[!IMPORTANT]
->
->Category rules are in beta.
 
 Category rules control how products are ordered on **category pages**. You combine **category rules** with **intelligent ranking** (including AI-driven signals), and **manual** actions such as pin, boost, and bury—so you can curate discovery, run promotions, and align category pages with your strategy without relying on external tools.
 

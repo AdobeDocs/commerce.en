@@ -30,6 +30,12 @@ Updates include:
 
 ## Current major version
 
+## 1.0.11 Release
+
+_June 18, 2026_
+
+![Fix](../assets/fix.svg)  **PHP 8.5 compatibility** – The Adobe Commerce Catalog Adapter now supports PHP 8.5 for compatibliity with Adobe Commerce version 2.4.9+. <!--MDEE-1368-->
+
 ## 1.0.10 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue where price queries for imported or newly created bundle products could result in internal server errors because the system attempted to use a concatenated SKU for lookup instead of the correct, valid SKU. Price queries for bundle products now use the appropriate SKU and resolve correctly.<!--MDEE-1040-->

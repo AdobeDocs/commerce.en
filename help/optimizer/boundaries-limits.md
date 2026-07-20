@@ -94,6 +94,9 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>The limits above cover capacity and usage allocations. For the Product Visuals feature overview and functional constraints, see [Product Visuals with AEM Assets](setup/product-visuals.md).
 
 ### Catalog views and policies
 

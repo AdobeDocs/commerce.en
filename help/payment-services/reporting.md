@@ -63,9 +63,13 @@ On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payme
 
 >[!TAB Adobe Commerce as a Cloud Service and Commerce Optimizer]
 
-The same report capabilities apply for SaaS deployments. Breadcrumbs show **[!UICONTROL Home]** > **[!UICONTROL Transactions]**, and the grid includes columns such as **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]**, and **[!UICONTROL Response Code]**.
+For these SaaS deployments, the tabular Transactions report in the dashboard matches the capabilities described in this topic (filters, columns, data source, downloads, and so on). Breadcrumbs show **[!UICONTROL Home]** > **[!UICONTROL Transactions]**, and the grid includes columns such as **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]**, and **[!UICONTROL Response Code]**.
 
 ![Transactions report view on SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>The SaaS [!DNL Payment Services] dashboard does not include every report or Home entry point that appears for Adobe Commerce on cloud and on-premises. See [[!DNL Payment Services] Home](payments-home.md) for what is available per deployment.
 
 >[!ENDTABS]
 

@@ -1,12 +1,19 @@
 ---
 title: Add product attributes dynamically
 description: Learn how to add custom product attributes to data export feed dynamically during the data synchronization process.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
 TQID: https://experienceleague.adobe.com/SZWtLSvxb-w-968f4wqWrPTBn1c9IEuthvhIv86Pvss
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
@@ -21,13 +28,13 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
 ---
-# Add product attributes dynamically during data synchronization
+# Add product attributes dynamically
 
-You can extend product attributes without registering them in Adobe Commerce by creating a plugin to add the attributes during the data synchronization process.
+You can extend product attributes without registering them in [!DNL Adobe Commerce] by creating a plugin to add the attributes during the data synchronization process.
 
 >[!NOTE]
 >
->The best way to extend product attributes is to [add them to Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in Adobe Commerce. You also have the option to manage custom attributes using [API Mesh with the Catalog Service](../catalog-service/mesh.md) to extend the Catalog Service GraphQL schema.
+>The best way to extend product attributes is to [add them to [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [[!DNL API Mesh] with the [!DNL Catalog Service]](../catalog-service/mesh.md) to extend the [!DNL Catalog Service] [!DNL GraphQL] schema.
 
 ## Add product attributes
 
@@ -98,7 +105,7 @@ Create a plugin that adds a `customer_attribute` to the `Magento\CatalogDataExpo
 
    After you add the plugin, the changes are synchronized to connected storefront services during the next scheduled synchronization. To send the updates immediately, use the following CLI command to start the synchronization process manually.
 
-   ```
+   ```shell
    bin/magento saas:resync --feed=products
    ```
 
@@ -109,12 +116,12 @@ If you dynamically create a custom product attribute and want to use it for disp
 1. Update the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) to define the plugin for the product attribute metadata.
 
      ```xml
-     <type name="\Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
+     <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
        <plugin name="product_customer_attributes_metadata" type="Vendor\CatalogDataExporter\Model\Plugin\AddAttributeMetadata"/>
      </type>
      ```
 
-1. Create the plugin to the following provider `\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`.
+1. Create the plugin for the following provider `Magento\CatalogDataExporter\Model\Provider\ProductMetadata`.
 
    Check `ProductAttributeMetadata` in `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml` for required fields.
 
@@ -184,7 +191,13 @@ If you dynamically create a custom product attribute and want to use it for disp
 
      After you add the plugin, the changes are synchronized to connected storefront services during the next scheduled synchronization. To send the updates immediately, use the following CLI command to start the synchronization process manually.
 
-     ```
-     bin/magento saas:resync --feed=productattributes
+     ```shell
+     bin/magento saas:resync --feed=productAttributes
      ```
 
+>[!MORELIKETHIS]
+>
+> * [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
+> * [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
+> * [How synchronization works](sync-overview.md) — Learn about sync modes and scheduled vs manual resync.
+> * [Review logs and troubleshoot](troubleshooting/logging.md)

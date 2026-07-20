@@ -35,6 +35,8 @@ PCI 3-D Secure (3DS) enables buyer authentication with their credit card issuer 
 
 If you are a merchant within the EU or Britain where 3DS compliance is required, you must manually turn on 3DS (it is `Off` by default) in the [Configuration Admin](configure-admin.md#credit-card-fields).
 
+3DS is supported for both **[Credit Card Fields](configure-admin.md#credit-card-fields)** and **[[!DNL Google Pay]](configure-admin.md#google-pay)**. Each payment method has its own 3D Secure authentication setting in the Admin, which can be set to `Always`, `When required`, or `Off`.
+
    >[!IMPORTANT]
    >
    >The 3DS requirement applies to transactions where the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and Britain. United States merchants do not require 3DS, but can enable it for their transactions if desired.

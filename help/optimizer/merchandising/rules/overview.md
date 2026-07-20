@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Merchandising Rules
 
-Merchandising rules combine logic with actions to shape how products appear in **search results**, on **default product listings** (**All product listings**), and on **category pages** ([category rules](#category-rules) are in beta). You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
+Merchandising rules combine logic with actions to shape how products appear in **search results**, on **default product listings** (**All product listings**), and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
 
 Each **search rule** has three main components:
 
@@ -36,10 +36,6 @@ Each **search rule** has three main components:
 You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default rule** (**All product listings**) that applies when no more specific search or category rule applies.
 
 ## Category rules {#category-rules}
-
->[!IMPORTANT]
->
->Category rules are in beta.
 
 **Category rules** control product order on **category pages**. You select one or more categories, then apply intelligent ranking (for example, most viewed, trending) and manual actions such as pin, boost, and bury. They do not use search query conditions. For setup steps, rule types, and how ranking applies on category versus search, see [Create and Manage Rules](add.md).
 

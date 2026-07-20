@@ -12,3 +12,7 @@ level: Intermediate
 ![Financial reports view](assets/reports-view.png){width="600" zoomable="yes"}
 
 The cash flow management reports---Payouts, Transactions, and Order payment status---synchronize payment details with order info to give you full transparency of processed volume, payment balance, and detailed reporting on a transaction level for financial reconciliation.
+
+>[!NOTE]
+>
+>Your deployment determines which of these reports display in the [!DNL Payment Services] **dashboard**. On [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer], the dashboard exposes **selected** reporting (including [Transactions](reporting.md) from Home). [Order payment status](order-payment-status.md) and [Payouts](payouts.md) Home views and linked reports are available on Adobe Commerce on cloud and on-premises as described in those topics. See [[!DNL Payment Services] Home](payments-home.md).

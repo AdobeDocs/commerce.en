@@ -45,10 +45,10 @@ In the `mesh.json` file, replace the `name`, `endpoint`, and `x-api-key` values.
     "meshConfig": {
       "sources": [
         {
-          "name": "<NAME OF MESH>",
+          "name": "<NAME_OF_MESH>",
           "handler": {
             "graphql": {
-              "endpoint": "<COMMERCE INSTANCE GQL ENDPOINT URL>"
+              "endpoint": "<COMMERCE_INSTANCE_GQL_ENDPOINT_URL>"
             }
           },
           "transforms": [

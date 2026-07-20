@@ -15,6 +15,7 @@ With [!DNL Adobe Commerce Optimizer], you can:
 - Ingest catalog data from any source.
 - Define business catalog views and policies.
 - Create personalized search and recommendations using AI and ML.
+- Improve product discovery relevance with ranking that prioritizes **exact and near matches** and same-field matches; see [Search matching and ranking](./manage-results/search-relevance-matching.md).
 - View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
 
 Watch the following video for a high-level overview of [!DNL Adobe Commerce Optimizer]:

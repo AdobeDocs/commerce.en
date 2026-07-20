@@ -32,11 +32,11 @@ Conditions can be static or dynamic.
 
 - A static condition uses existing product attributes to determine which products can appear in the unit. For example, you can specify that only in-stock products with a price greater than $25 appear in the unit.
 
-- A dynamic condition keys off a shopper's current context, such as the currently viewed category or product. For example, when creating a product recommendation to be deployed on product detail pages, you can create a condition to recommend only products that are within a relative price range of the currently viewed product.
+- A dynamic condition keys off a shopper's current context, such as the currently viewed category or product. For example, when creating a product recommendation to be deployed on product detail pages, you can use a [dynamic price filter](#dynamic-price-filters-relative-to-current-product) to include or exclude products within a relative price range of the currently viewed product.
 
 ### Logical operators
 
-The logical operators `AND` and `OR` are used to join multiple conditions. If using both inclusion and exclusion filters, the inclusions are evaluated first to determine all possible products that can be recommended, then products that match any exclusion filters are removed from the list.
+The logical operators `AND` and `OR` are used to join multiple conditions. If using both inclusion and exclusion filters across filter types, inclusions are evaluated first to determine all possible products that can be recommended, then products that match any exclusion filters are removed from the list. **Price** filters use a different order among price rules: exclusions first, then inclusions. See [How include and exclude rules use price](#how-include-and-exclude-rules-use-price).
 
 - `AND` - Joins two inclusion-filtering conditions
 - `OR` - Joins two exclusion-filtering conditions
@@ -49,22 +49,36 @@ Each filter type targets a different aspect of the catalog, such as product and 
 >
 >Only products that match your **inclusion** filters can be recommended, and any product that matches an **exclusion** filter is removed.
 
-### Price
+### Price {#price}
 
 >[!IMPORTANT]
 >
->The following feature is in beta.
+>Price filtering is in beta.
 
-Price filtering uses each product's **final computed price** for the storefront's **active price book**—the one assigned to the storefront where the recommendation unit is rendered. That value reflects discounts, promotions, and special pricing defined in that price book, not list price alone. Evaluation uses only that storefront's price book; other storefronts or price books do not apply. How price books map to a storefront is configured with your catalog and [price books](../../setup/pricebooks.md) setup.
+Price filtering uses each product's **final computed price** from the storefront's **active price book**, which is the price book assigned to the storefront where the recommendation unit is rendered.
 
-#### How include and exclude rules use price
+That value:
 
-- **Inclusion rules** – Only products whose final price **matches all** defined inclusion conditions remain eligible. That includes every enabled inclusion filter (for example, your price range plus any other inclusion rules).
-- **Exclusion rules** – Products whose final price **matches any** defined exclusion condition are removed from recommendations.
+- **Includes** discounts, promotions, and special pricing defined in that price book (not list price alone).
+- **Excludes** shipping and cart-level adjustments.
+- **Applies only** to the active price book for that storefront; other storefronts or price books are not used.
 
-**Displayed price** – The price shown on products inside the recommendation unit is the same **final price** from that storefront's price book, so what shoppers see matches the value used for filtering.
+Configure how price books map to a storefront in your catalog and [price books](../../setup/pricebooks.md) setup.
 
-#### Set up a price filter
+#### How include and exclude rules use price {#how-include-and-exclude-rules-use-price}
+
+- **Exclusion rules** – Products whose final price **matches any** defined price exclusion are removed first.
+- **Inclusion rules** – Among the remaining candidates, only products whose final price **matches all** defined price inclusion conditions stay eligible. That includes every enabled inclusion filter (for example, your price rule plus any other inclusion rules).
+
+Price rules **filter** the recommendation candidate set; they do **not** re-rank products. The engine produces a ranked list, price include and exclude rules remove products from that list, and the relative order of remaining products stays the same. If fewer products qualify than the unit requests, only valid items are shown. If none qualify, the unit is not rendered (no empty placeholder).
+
+The price shown on products inside the recommendation unit is the same **final price** from that storefront's price book, so what shoppers see matches the value used for filtering. In the Admin preview, configurable products may show a price range when variant prices differ; see [Configurable products in preview](#configurable-products-in-preview).
+
+#### Static price range
+
+Use a **static** price filter when you want a fixed minimum or maximum in your store's base currency, independent of the product a shopper is viewing.
+
+##### Set up a static price filter
 
 1. While [creating or editing](create.md) a recommendation unit, open **[!UICONTROL Filter products]** (or go to the _Filters_ step from the unit workflow).
 1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab, depending on whether you want to allow only products in a price range or block products in a range. The badge on each tab shows how many filters of that type are enabled.
@@ -78,6 +92,83 @@ Price filtering uses each product's **final computed price** for the storefront'
 1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
 
 ![Price Filter](../../assets/filter-price.png)
+
+#### Dynamic price filters (relative to current product) {#dynamic-price-filters-relative-to-current-product}
+
+Use a **dynamic** price filter when recommendations should be limited relative to the **currently viewed product** on a product detail page (PDP). The filter uses that product's final price as an **anchor** and compares recommended products against boundaries you define.
+
+Dynamic operators are available only for [SKU-related recommendation types](types.md) that run in a product context, such as:
+
+- Viewed this, viewed that
+- Viewed this, bought that
+- Bought this, bought that
+- More like this
+- Visual similarity
+
+They are **not** available for popularity-based types (for example, **Most viewed** or **Most purchased**) because those units do not have a single current product to anchor the filter.
+
+On the storefront, the recommendation drop-in reads the current product's price from the PDP context and sends it with the recommendation request. [!DNL Adobe Commerce Optimizer] uses that value as the anchor when evaluating dynamic price rules. For configurable products, the anchor is the **lowest variant** final price (`priceRange.minimum`).
+
+##### Operators
+
+In **[!UICONTROL Include products based on]** (or the exclusions equivalent), you can choose:
+
+| Operator | Purpose |
+| --- | --- |
+| **Less than or equal to current product price** | Include or exclude products at or below a boundary derived from the anchor price plus an offset. |
+| **Greater than or equal to current product price** | Include or exclude products at or above a boundary derived from the anchor price plus an offset. |
+| **Within a value range of current product** | Include or exclude products whose final price falls within a fixed currency band around the anchor (offsets from the current price). |
+| **Within a percentage range of current product** | Include or exclude products whose final price falls within a percentage band around the anchor. |
+
+##### Offset semantics
+
+For **Less than or equal to current product price** and **Greater than or equal to current product price**, the value you enter is a **numeric offset added to the anchor price** to form the boundary:
+
+- A **negative** offset moves the boundary **below** the current product price.
+- A **positive** offset moves the boundary **above** the current product price.
+- **Empty** or **0** means **no limit** on that side; the backend treats them the same.
+- You cannot use **0** to mean "exactly the current product price" as the boundary.
+
+This matches [!DNL Product Recommendations] on PaaS. Labels in the Admin reflect these semantics directly.
+
+##### Set up a dynamic price filter
+
+1. [Create or edit](create.md) a **SKU-related** recommendation unit that is deployed on the **product detail** page (or another placement where a current product is always in context).
+1. Open **[!UICONTROL Filter products]** and select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab.
+1. Select **[!UICONTROL Price]** and turn **[!UICONTROL Enable filter]** on.
+1. Open **[!UICONTROL Include products based on]** (or the exclusions equivalent) and choose a dynamic operator (for example, **Within a value range of current product**).
+1. Enter offsets or range values as prompted. Use the preview to confirm results for a sample product.
+1. Save or publish the unit.
+
+Invalid values (non-numeric amounts, unsupported combinations, or ranges where minimum is greater than maximum) block save and show validation errors; **[!UICONTROL Save]** stays disabled until the filter is valid.
+
+##### When no anchor price is available
+
+If a dynamic price filter is enabled but the storefront cannot supply a current product price (for example, the unit is rendered outside a PDP context), [!DNL Adobe Commerce Optimizer] does not return unfiltered recommendations. The unit shows **no recommendations**, because showing unfiltered results would not match the rule you configured.
+
+##### Configurable products in preview {#configurable-products-in-preview}
+
+In the Admin **preview** panel, recommended product prices display as follows:
+
+- **Simple products** – Single final price from the GraphQL response.
+- **Configurable products** – If minimum and maximum variant prices differ, the preview shows a range (for example, `$min – $max`). If they are equal, a single price is shown.
+
+The anchor price used for dynamic filter calculations on a configurable product is always the **minimum** variant final price, consistent with the storefront.
+
+#### Price filter examples
+
+The following examples use a current product price of **$500**. Adjust inclusion versus exclusion to match your merchandising goal.
+
+| Operator | Tab | Goal | Example boundary |
+| --- | --- | --- | --- |
+| Less than or equal to current product price | Exclusions | Promote upsell by hiding lower-priced alternatives | Exclude products ≤ $500 |
+| Less than or equal to current product price | Inclusions | Offer budget-friendly alternatives | Include products ≤ $500 |
+| Greater than or equal to current product price | Exclusions | Avoid upsell in a budget-focused flow | Exclude products ≥ $500 |
+| Greater than or equal to current product price | Inclusions | Surface premium alternatives | Include products ≥ $500 |
+| Within a value range of current product | Exclusions | Diversify away from similar price points | Exclude $400–$600 |
+| Within a value range of current product | Inclusions | Show comparable alternatives in a narrow band | Include $400–$600 |
+| Within a percentage range of current product | Exclusions | Reduce similarly priced items (for example ±20%) | Exclude roughly $400–$600 |
+| Within a percentage range of current product | Inclusions | Fair comparison within a comparable band | Include roughly $400–$600 |
 
 ### Product
 

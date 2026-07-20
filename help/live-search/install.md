@@ -1,6 +1,7 @@
 ---
 title: Get Started with [!DNL Live Search]
 description: Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -242,23 +243,21 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 >
 >Search and category browse operations are unavailable during sync. The process can take 1+ hours depending on catalog size.
 
-### Monitor sync progress
+### Monitor sync progress 
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) to monitor sync progress. This dashboard provides valuable insights into the availability of product data on your storefront, ensuring that it can be promptly displayed to customers.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-![Data Management Dashboard](assets/data-management-dashboard.png)
+{{install-data-sync-feed-status}}
 
-You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and the data export extension logs.
-
-#### Future product updates
+### Future product updates
 
 After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Streaming Product Updates](indexing.md) in the Indexing documentation.
 
 ## 4. Verify that the data was exported {#verify}
 
-To check if your catalog data has been exported from Adobe Commerce and synced with [!DNL Live Search], you have a few options:
+In addition to using the Data Feed Sync Status page and the Data Management Dashboard, you can verify catalog data exported from Adobe Commerce directly in the database and confirm that data has successfully synced to [!DNL Live Search] by using the [!DNL Live Search] GraphQL workspace.
 
-- Look for entries in the following tables:
+- From the database, use SQL queries to look for entries in the following tables:
 
    - `cde_products_feed`
    - `cde_product_attributes_feed`

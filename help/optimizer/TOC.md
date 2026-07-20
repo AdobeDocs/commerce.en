@@ -5,6 +5,7 @@ user-guide-description: Documentation and resources for [!DNL Adobe Commerce Opt
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
+nudge: true
 ---
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
@@ -18,6 +19,7 @@ recommendations: noDisplay
    - [Opportunities](./manage-results/opportunities.md)
    - [Success metrics](./manage-results/success-metrics.md)
    - [Search performance](./manage-results/search-performance.md)
+   - {hide-from-toc}[Search matching and ranking](./manage-results/search-relevance-matching.md)
    - [Recommendations performance](./manage-results/recommendation-performance.md)
 - Merchandising {#merchandising}
    - [Overview](./merchandising/overview.md)
@@ -44,12 +46,14 @@ recommendations: noDisplay
       - [Types](./merchandising/synonyms/type.md)
       - [Best practices](./merchandising/synonyms/best-practice.md)
 - Store setup {#setup}
+   - [Catalog sources](./setup/catalog-sources.md)
    - [Catalog views](./setup/catalog-view.md)
    - [Catalog layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price books](./setup/pricebooks.md)
    - [Product visuals](./setup/product-visuals.md)
    - [Data sync](./setup/data-sync.md)
+   - [Semantic search](./setup/semantic-search.md)
    - Events {#events}
       - [Overview](./setup/events/overview.md)
 - [Storefront](storefront.md)
