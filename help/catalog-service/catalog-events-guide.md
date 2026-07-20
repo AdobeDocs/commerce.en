@@ -253,7 +253,7 @@ If catalog events are missing or delayed, work through these steps.
 
    * **Sync to connected Commerce SaaS services** — On the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync), or in export logs, confirm that data synced successfully to [!DNL Catalog Service].
 
-   For troubleshooting export and sync jobs, see [Synchronize data with SaaS Data Export](../data-export/data-synchronization.md) and [Logging and troubleshooting](../data-export/troubleshooting-logging.md).
+   For troubleshooting export and sync jobs, see [Synchronize data with SaaS Data Export](../data-export/data-sync-manage.md) and [Logging and troubleshooting](../data-export/troubleshooting/logging.md).
 
 3. **Validate [!DNL Adobe I/O Events] configuration**
 
@@ -278,7 +278,7 @@ If catalog events are missing or delayed, work through these steps.
 >
 >* [Onboarding and installation](installation.md)
 >* [Get started with the Catalog Service](get-started.md)
->* [Synchronize data with SaaS Data Export](../data-export/data-synchronization.md)
+>* [Synchronize data with SaaS Data Export](../data-export/data-sync-manage.md)
 >* [Retrieve catalog data with the GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/){target="_blank"}
 >* [[!DNL Catalog Service] and API Mesh](mesh.md)
 >* [Configure the [!DNL Adobe I/O] connection](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection){target="_blank"}
