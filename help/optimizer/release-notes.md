@@ -32,6 +32,19 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## July 2026
+
+>[!BEGINSHADEBOX]
+
+_July 20, 2026_
+
+![Fix](../assets/fix.svg) **Category navigation performance**—Applied performance optimizations to the category service, resulting in higher throughput and lower P99 latency for the `CategoryNavigation` query, improving service responsiveness and overall user experience under high load.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## June 2026
 
 >[!BEGINSHADEBOX]
