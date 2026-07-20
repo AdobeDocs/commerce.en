@@ -51,15 +51,6 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
-### 103.4.26 Release
-
-_June 1, 2026_
-
-![Fix](../assets/fix.svg) **Product feed updates after currency changes**–When you change store currency settings, affected products are now queued for export again so [!DNL Live Search], [!DNL Catalog Service], [!DNL Product Recommendations], and other connected Commerce services display updated prices. <!--MDEE-1376-->
-
-![Fix](../assets/fix.svg) **Child categories reflect disabled parent status**–When you disable a top-level category, child categories are now exported as inactive so connected Commerce services do not treat products in those categories as discoverable. <!--MDEE-1369-->
-
-
 ### 103.4.30 Release
 
 _July 10, 2026_
