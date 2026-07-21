@@ -24,7 +24,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Catalog events and Adobe I/O events integration guide
+# Catalog events and Adobe I/O Events integration guide
 
 Catalog events are machine-generated notifications that describe supported catalog changes made available through [!DNL Catalog Service]. They enable event-driven workflows such as:
 
@@ -78,7 +78,7 @@ Each event includes:
   "imsOrgId": "aaa-0",
   "instanceId": "instance-9",
   "eventCode": "priceUpdated",
-  "sku": "1234"
+  "sku": "1234",
   "scope": [
     {
       "websiteCode": "website1",
@@ -112,7 +112,7 @@ The following steps explain each handoff in more detail:
 
   * Catalog events are published to [!DNL Adobe I/O Events].
   * Consumers subscribe using Journaling, webhooks, [!DNL Adobe I/O Runtime], Amazon EventBridge, or other supported delivery mechanisms.
- 
+
 [!DNL Adobe I/O Events] provides:
 
 * *At-least-once delivery* per subscriber (duplicate events are possible).
@@ -148,22 +148,22 @@ Combine Catalog events with existing monitoring (for example, [!DNL Grafana] and
 
 ## Enable catalog events {#enable-catalog-events}
 
-Follow these steps to enable catalog events end to end.
+To enable catalog events end to end, follow these steps.
 
 >[!PREREQUISITES]
 >
 >Before you enable catalog events, ensure that you have the following:
 >
-+* A supported Adobe Commerce environment with [!DNL Catalog Service] enabled.
-+* [The [!DNL Adobe I/O] connection is configured for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
-+* Access to [!DNL Adobe Developer Console] in the same IMS organization where the Commerce environment is provisioned.
+>* A supported Adobe Commerce environment with [!DNL Catalog Service] enabled.
+>* [The [!DNL Adobe I/O] connection is configured for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
+>* Access to [!DNL Adobe Developer Console] in the same IMS organization where the Commerce environment is provisioned.
 >* To verify sync to Commerce SaaS services, use the **[!UICONTROL Data Management Dashboard]** in the Admin.
 >* Product Recommendations v6.0, [!DNL Live Search] v4.1.0+, or [!DNL Catalog Service] v1.17+ is required for dashboard verification. Adobe recommends updating your Commerce project to the latest supported versions of these services. For earlier service versions, use [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) for sync verification.
 
-+
+
 >[!NOTE]
 >
-To use catalog events, first configure the Commerce environment for [!DNL Adobe I/O Events], then register an event subscription in [!DNL Adobe Developer Console].
+>To use catalog events, first configure the Commerce environment for [!DNL Adobe I/O Events], then register an event subscription in [!DNL Adobe Developer Console].
 >
 >If your environment does not appear in [!DNL Adobe Developer Console] after configuration, verify that you are signed in to the correct IMS organization and that your account has the required access. If the environment still does not appear, contact Adobe Support.
 
@@ -233,7 +233,7 @@ If your instance is not in the selection list, then it is not connected to [!DNL
    * An [!DNL Adobe I/O Runtime] action
    * Another supported destination
 
-1. Edit the event registration to add the consumer details if you did not select a consumer during registration.
+1. If you did not select a consumer during registration, edit the event registration to add the consumer details.
 
    * From the [!DNL Adobe Developer Console], edit your project. Then, select the event registration you created.
 
@@ -317,10 +317,10 @@ If catalog events are missing or delayed, work through these steps.
    When opening a support ticket, select the issue reason that corresponds to **Adobe Commerce application** and include the following information:
 
    * Catalog Service details (environment, region).
-   * [!DNL Adobe I/O Events] subscription details.
+   * [!DNL Adobe I/O Events] Subscription details.
    * Approximate time and description of missing events.
 
-   For additional help, see [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+   For additional help, see [Support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 >[!MORELIKETHIS]
 >
