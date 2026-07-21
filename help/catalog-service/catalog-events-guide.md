@@ -1,6 +1,6 @@
 ---
 title: Catalog Events and Adobe I/O Events Integration Guide
-description: Learn how to verify catalog data, configure [!DNL Adobe I/O Events] for Adobe Commerce, subscribe to supported catalog event types, and validate end-to-end delivery for consumers.
+description: Learn how to verify catalog data, configure [!DNL Adobe I/O Events] for Adobe Commerce, subscribe to catalog event types, and validate delivery for consumers.
 level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
@@ -24,7 +24,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Catalog events and Adobe I/O Events integration guide
+# Catalog events and [!DNL Adobe I/O Events] integration guide
 
 Catalog events are machine-generated notifications that describe supported catalog changes made available through [!DNL Catalog Service]. They enable event-driven workflows such as:
 
@@ -92,7 +92,7 @@ Each event includes:
 }
 ```
 
-## Event delivery through Adobe I/O Events {#event-delivery-through-adobe-io-events}
+## Event delivery through [!DNL Adobe I/O Events] {#event-delivery-through-adobe-io-events}
 
 [!DNL Adobe I/O Events] delivers catalog events to your integrations. The following diagram shows the high-level flow of catalog changes from [!DNL Adobe Commerce] through [!DNL Catalog Service] and [!DNL Adobe I/O Events] to subscribed consumers:
 
@@ -320,7 +320,7 @@ If catalog events are missing or delayed, work through these steps.
    * [!DNL Adobe I/O Events] Subscription details.
    * Approximate time and description of missing events.
 
-   For additional help, see [Support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+   For additional help, see [Support tickets](/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 >[!MORELIKETHIS]
 >
