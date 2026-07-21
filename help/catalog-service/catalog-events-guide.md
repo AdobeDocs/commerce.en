@@ -70,6 +70,7 @@ Each event includes:
   ]
 }
 ```
+
 **PriceUpdated event**
 
 ```json
@@ -89,6 +90,7 @@ Each event includes:
     }
   ]
 }
+```
 
 ## Event delivery through Adobe I/O Events {#event-delivery-through-adobe-io-events}
 
