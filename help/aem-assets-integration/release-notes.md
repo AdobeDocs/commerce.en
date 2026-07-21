@@ -32,6 +32,24 @@ _February 11, 2025_
 
 +++
 
+## v1.4.1
+
+_June 15, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where the **[!UICONTROL OBSERVABILITY]** section header was missing from the Admin **[!UICONTROL System]** menu when the AEM Assets integration was enabled, leaving the **[!UICONTROL Subscription List]** link displayed without its heading. <!--ACAP-1302 --> 
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where saving the AEM Assets integration configuration displayed a raw PHP warning instead of a clear message on instances where Dynamic Media Open API is not enabled. A clear, generic error message now appears. <!-- ACAP-1298 -->
+
+## v1.4.0
+
+_June 12, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1101 --> Improved overall stability and events processing performance through batched asset update calls.
+
 ## v1.3.7
 
 _June 2, 2026_
@@ -46,7 +64,7 @@ _May 14, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-1268 --> When images or assets are imported from AEM into a Commerce product media gallery, alt text is now carried over as part of the sync. Alt text can be set per store view in AEM Assets. See [Alt text in AEM Assets metadata](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![New issue](../assets/new.svg)<!-- Issue ACAP-1268 --> When images or assets are imported from AEM into a Commerce product media gallery, alt text is now carried over as part of the sync. Alt text can be set per store view in AEM Assets. See [Localized alt text in AEM Assets metadata](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 

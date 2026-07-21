@@ -32,13 +32,49 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## July 2026
+
+>[!BEGINSHADEBOX]
+
+_July 20, 2026_
+
+![Fix](../assets/fix.svg) **Category navigation performance**—Applied performance optimizations to the category service, resulting in higher throughput and lower P99 latency for the `CategoryNavigation` query, improving service responsiveness and overall user experience under high load.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## June 2026
+
+>[!BEGINSHADEBOX]
+
+_June 24, 2026_
+
+<!-- v1.3 -->
+
+![New](../assets/new.svg) **New `canEditQuantity` field**—Added `canEditQuantity` to `ProductViewOptionValueProduct` in Catalog Service GraphQL. It exposes the optional **User Defined** quantity setting for bundle selections from the Commerce Admin, so storefront consumers can determine whether a bundle selection's quantity is editable.
+<!--COMOPT-2050-->
+
+### Semantic search
+
+[!DNL Adobe Commerce Optimizer] now supports **[semantic search]** on the [**Advanced search**](./settings.md#advanced-search) tab in **[!UICONTROL Settings]**. Semantic search uses AI to match products by meaning and context alongside keyword search, reducing empty search pages for natural-language queries. It is enabled by default for eligible English catalogs. You can optionally tune **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]**, and **[!UICONTROL Fuzzy search]** on the same tab. No attribute setup or storefront changes are required. [Learn more](./setup/semantic-search.md).
+
+### Recommendation price filters (beta)
+
+Product recommendation units now support [**price filters**](./merchandising/recommendations/filters.md#price) on the **[!UICONTROL Filter products]** step. Include or exclude candidates using **static** minimum and maximum ranges or **dynamic** rules on the product detail page that compare recommended products to the currently viewed product's **final computed price** from the storefront's active price book. Price rules filter the candidate set. They do not re-rank products. [Learn more](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## May 2026
 
 >[!BEGINSHADEBOX]
 
 ### Intelligent Ranking Boost
 
-[Merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost) for search, default product listings, and [category pages](./merchandising/rules/add.md#rule-types) (beta) now include **[!UICONTROL Intelligent Ranking Boost]**. You can adjust how strongly strategies such as **Most viewed** or **Trending** influence product order relative to textual relevance on search and behavioral signals on category listings. The rule preview reflects your setting. The boost is applied at query time, so you do not need a catalog resync when you change it.
+[Merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost) for search, default product listings, and [category pages](./merchandising/rules/add.md#rule-types) now include **[!UICONTROL Intelligent Ranking Boost]**. You can adjust how strongly strategies such as **Most viewed** or **Trending** influence product order relative to textual relevance on search and behavioral signals on category listings. The rule preview reflects your setting. The boost is applied at query time, so you do not need a catalog resync when you change it.
 
 ### API updates
 
@@ -73,7 +109,7 @@ _May 4, 2026_
 
 >[!BEGINSHADEBOX]
 
-### Catalog rules (beta)
+### Catalog rules
 
 [Category rules](./merchandising/rules/add.md) extend merchandising rules so you can target categories and control product order on category pages with the same ranking and actions (pin, boost, bury) as search.
 
@@ -129,7 +165,7 @@ Dynamic bundles now return a computed price range. <!--DATA-7014-->
 
 >[!BEGINSHADEBOX]
 
-### Catalog view for merchandising rules and recommendations (beta)
+### Catalog view for merchandising rules and recommendations
 
 You can now specify a catalog view when you [create recommendation units](./merchandising/recommendations/create.md) or [merchandising rules](./merchandising/rules/add.md).
 
@@ -293,3 +329,4 @@ The base production URLs for the European Union region are:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
+

@@ -98,10 +98,6 @@ Learn how you can [create a new or manage an existing](../merchandising/recommen
 
 ## Select catalog view
 
->[!IMPORTANT]
->
->This feature is currently in beta.
-
 The **[!UICONTROL Catalog view]** selector on the **Recommendations** page does two things:
 
 1. **Filters the table** – Shows only recommendations (and their metrics) that apply to the selected catalog view.

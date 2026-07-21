@@ -39,6 +39,7 @@ feature: Services, Search
    - [Category Merchandising](category-merch.md)
    - [Manage out-of-stock products](manage-out-of-stock-products.md)
    - [Indexing](indexing.md)
+   - {hide-from-toc}[Search matching and ranking](search-relevance-matching.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
    - [Semantic search](semantic-search.md)

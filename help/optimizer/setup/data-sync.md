@@ -33,9 +33,9 @@ The **Data Sync** page is located at *Setup* > **Data sync**.
 The **Data Sync** page contains the following fields:
 
 |Field|Description|
-|--- |--- |
+| --- | --- |
 | Catalog source | Specific locale for the synced data.|
-|[!DNL Catalog Service]|Displays the latest sync update, the total products received, a search field, and a table of the synced products for [!DNL Catalog Service].|
+| [!DNL Catalog Service] | Displays the latest sync update, the total products received, a search field, and a table of the synced products for [!DNL Catalog Service].|
 |Product Discovery|Displays the latest sync update, the total products received, a search field, and a table of the synced products for Search.|
 |Recommendations|Displays the latest sync update, the total products received, a search field, and a table of the synced products for Recommendations.|
 |Products received in the last 3 hours|Displays the number of products that have been transferred from the catalog source to [!DNL Adobe Commerce Optimizer] within the last three hours. If you make infrequent updates to your catalog, this value is frequently zero.|
@@ -60,12 +60,11 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 >
 >The time it takes to complete the sync varies based on your catalog size and the volume of data updated.
 
-## Monitor data sync status
+## Verify that data synchronization is working
 
-For projects that use Adobe Commerce as the upstream data source through the Adobe Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Commerce Admin.
+For projects that use Adobe Commerce as the upstream data source through the Adobe Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the Data Feed Sync Status page. For details, see [Verify that the data sync is working](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) in the _Adobe Commerce Optimizer Connector_ documentation.
 
 ## Related topics
 
 - [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
-
 
