@@ -69,7 +69,9 @@ For detailed setup instructions, troubleshooting, and configuration, see [`.gith
 
 ## Available rake tasks
 
-This repository uses rake tasks provided by the `adobe-comdox-exl-rake-tasks` gem. To see all available tasks, run:
+This repository uses rake tasks provided by the
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. To see all available tasks, run:
 
 ```bash
 cd _jekyll
