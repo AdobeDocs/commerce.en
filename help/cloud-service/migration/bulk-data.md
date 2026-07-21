@@ -1,6 +1,6 @@
 ---
 title: Bulk Data Migration Tool
-description: Learn how to use the Bulk Data Migration Tool to migrate data from your existing Adobe Commerce on Cloud instance to [!DNL Adobe Commerce as a Cloud Service].
+description: Learn how to use the bulk data migration tool to migrate data from your existing Adobe Commerce on Cloud instance to [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 role: Developer
@@ -31,112 +31,131 @@ topic_v2:
 ---
 # Bulk data migration tool
 
-The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration from PaaS to SaaS environments. This tool helps solution implementers migrate data from an existing Adobe Commerce on Cloud instance (PaaS) to [!DNL Adobe Commerce as a Cloud Service] (SaaS). For more information on the migration process, see the [Migration overview](./overview.md).
+>[!IMPORTANT]
+>
+>The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process.
+
+The bulk data migration tool is a Docker-based CLI that system integrators run on their own migration machine. It connects to the source instance, extracts first-party core commerce data, uploads it to Adobe's migration service (Commerce Data Migration Service), and monitors progress through to completion. For more information on the overall migration process, see the [Migration overview](./overview.md).
 
 >[!NOTE]
 >
->The bulk data migration tool supports migrating first-party core commerce data only. Custom data migration is not currently supported.
+>The tool supports migrating first-party core commerce data only. Custom data migration is not supported.
 
-The following image details the architecture and key components for using the Bulk data migration tool.
+## Eligibility and access
 
-![Bulk Data Migration Tool architecture diagram showing PaaS to SaaS data flow](../assets/bulk-data-diagram.png){zoomable="yes"}
+Before requesting access, confirm that your project meets all the following requirements:
+
+- **Healthcare add-on:** The tool is not available to customers with the Healthcare (HIPAA) add-on.
+- **CDE engagement:** A signed Commerce Deployed Engineering (CDE) engagement is required. Contact your Adobe representative to initiate the engagement.
+- **Scoping questionnaire:** A completed CDE data migration scoping questionnaire is required before tool access is granted. Your Adobe representative provides this questionnaire as part of the CDE engagement.
+
+## Architecture
+
+The following image details the architecture and key components for using the bulk data migration tool.
+
+![Bulk data migration tool architecture diagram showing PaaS to SaaS data flow](../assets/bulk-data-diagram.png){zoomable="yes"}
+
+### Components
+
+| Component | Role |
+| --------- | ---- |
+| **Bulk data migration tool** | The Docker-based CLI that the system integrator runs on the migration machine, which orchestrates the full pipeline by reading the schema and data from the source, uploading extracted data to Adobe's migration service, and driving status transitions. |
+| **Source instance (PaaS or on-premises)** | The migration source. The tool connects through REST and GraphQL APIs and through an SSH tunnel (PaaS) or through a direct database connection (on-premises) for data extraction. |
+| **Commerce Data Migration Service (CDMS)** | Adobe-managed backend service that registers migrations, coordinates state transitions, issues pre-signed upload URLs for extracted data, loads data into the target instance, and runs post-load integrity verification. |
+| **[!DNL Adobe Commerce as a Cloud Service]** | The SaaS-based version of Adobe Commerce and your migration target. Receives loaded data and exposes Catalog, Live Search, and pricing rule services used during integrity verification. |
 
 ## Migration workflow
 
-The bulk data migration workflow consists of the following steps:
+A migration runs in three phases:
 
-1. Set up a new environment for your migration.
-1. Copy your data from your old system.
-1. Move your data into the new system.
-1. Make your product catalog available in the new system.
-1. Confirm that your data migrated correctly.
+1. **Extract** — The tool reads schema and data from the source instance (PaaS or on-premises) and uploads it to Adobe's migration service.
+1. **Load** — CDMS loads the extracted data into the target [!DNL Adobe Commerce as a Cloud Service] tenant and processes catalog media. Catalog data automatically flows to the Catalog Service and becomes available to Live Search and Product Recommendations once loading completes.
+1. **Verify** — CDMS performs automated integrity checks. See [Data integrity verification](#data-integrity-verification).
 
-The following sections describe these steps in detail.
+## Tool distribution
 
-## Access the bulk data migration tool
+The tool is distributed as part of the CDE engagement. Your Adobe representative provides the tool package, which includes:
 
-The availability of the bulk data migration tool is as follows:
+- The Docker-based CLI and build configuration
+- An `.example.env` configuration template with documentation for all required environment variables
+- Comprehensive technical documentation covering the tool's architecture, configuration reference, custom transformation and test frameworks, and troubleshooting guides
 
-This tool is currently available through deployed engineering engagements. If you are interested in using this tool, please contact your Adobe representative.
+For detailed setup and operational instructions, refer to the documentation included in the tool distribution package.
 
-## Create target environment
+## Operational guide
 
-The solution implementer (SI) creates a target environment for the migration. This environment stores the data migrated from the source instance.
+The following sections describe how to configure and run a migration.
 
-First, [create a new [!DNL Adobe Commerce as a Cloud Service] (SaaS) instance](../getting-started.md#create-an-instance).
+### Prerequisites
 
-### Configure extraction tool
+Before running the tool, ensure the following are in place:
 
-Use the extraction tool to extract data from the source instance.
+- **Docker** — Docker must be installed and running on the migration machine.
+- **Target instance** — Create a new [!DNL Adobe Commerce as a Cloud Service] instance. See [Create an instance](../getting-started.md#create-an-instance).
+- **Catalog configuration** — Note your current Catalog configuration settings in the [!DNL Commerce Admin] before migration. Configuration settings are not migrated automatically and must be applied to the target instance independently.
+- **B2B configuration** — If your source instance uses B2B features, apply the equivalent B2B configuration to the target instance before running the migration.
+- **IMS credentials** — Obtain your IMS Client ID, client secret, IMS scopes, IMS URL, and IMS organization ID from the **Credentials** section of your project in the [Adobe Developer Console](https://developer.adobe.com/console/).
 
-1. Download the extraction tool from the link provided to you by Adobe.
-1. Set the following environment variables in the extraction tool:
-   - Connection details to your existing MySQL database
-   - The target tenant ID for your [!DNL Adobe Commerce as a Cloud Service] instance
-   - Your IMS credentials, including:
-      - Client ID
-      - Client secret
-      - IMS scopes
-      - IMS URL - The base URL. For example, `https://ims-na1.adobelogin.com/`.
-      - IMS organization ID
+### Configure the tool
 
-   For IMS scopes and other values, select your OAuth type in the **Credentials** section inside your project in the [Adobe Developer Console](https://developer.adobe.com/console/). More information is provided in the `.example.env` file included with the extraction tool.
+Set the following environment variables in the `.env` file:
 
-### Extract data
+- Connection details for your source MySQL database
+- The target tenant ID for your [!DNL Adobe Commerce as a Cloud Service] instance
+- Your IMS credentials (Client ID, client secret, IMS scopes, IMS URL, IMS organization ID)
+- The CDMS endpoint URL for your region
 
-Before running the extraction tool, the solution implementer must establish an SSH tunnel to the PaaS database using:
+Refer to the `.example.env` file in the tool package for the full configuration reference and additional options.
+
+### Prepare your network and instances
+
+For PaaS source instances, open an SSH tunnel to the source database before running the tool:
 
 ```bash
 magento-cloud tunnel:open
 ```
 
-Then run the extraction tool, which will: 
+For on-premises source instances, ensure the migration machine has direct database access to the source.
 
-1. Connect to the PaaS database, analyze its schema, and compare it with the SaaS tenant schema details.
-1. Generate an extraction and transformation plan based on the common schema elements between PaaS and SaaS.
-1. Extract the data using Catalog Data Management Service (CDMS).
+### Run a migration
 
-### Load data
+The tool supports two migration approaches:
 
-Run the load data tool provided by Adobe. This tool will:
+#### Single-phase migration
 
-1. Connect to the SaaS tenant database using a migration account.
-1. Generate a loading plan.
-1. Execute the plan, moving data to the SaaS tenant database in batches.
-1. Process catalog media and transfer it to the target environment.
-1. Flush the SaaS Redis cache and invalidate database indexes for the tenant.
+Run the full migration, including the extract, load, and verify steps in a single operation. This approach is appropriate for sandbox and development environments where downtime is not a concern.
 
-### Catalog data ingestion
+#### Multi-phase migration with maintenance mode
 
-After the data loads, the catalog data automatically flows from the SaaS tenant database to the Catalog Service.
+For production cutover, split the migration into phases and apply maintenance mode to prevent data changes during the final load:
 
-The Catalog Service shares this data with Live Search and Product Recommendations. No manual intervention is required for this process. The data is available in all services once the ingestion completes.
+1. Run the initial extract and load while the source instance is live to pre-populate the target instance.
+1. Enable maintenance mode on the source instance to prevent further data changes.
+1. Run the final incremental extract and load to capture any changes made since the initial run.
+1. Complete the [data integrity verification](#data-integrity-verification) and then cut over to the target instance.
 
->[!IMPORTANT]
->
->The configuration settings are not imported automatically. Before beginning the data migration process, take note of your current Catalog configuration settings in the [!DNL Commerce Admin]. Then implement the same configuration in the target [!DNL Adobe Commerce as a Cloud Service] environment.
+Refer to the migration guide in the tool distribution package for the exact commands and phase flags for each option.
 
-### Data integrity verification
+### Resume an interrupted migration
 
-After migration, CDMS performs the following automatic data integrity checks to ensure the accuracy and completeness of the migrated data:
+If a migration run is interrupted, re-run the same command to resume from the last completed checkpoint. The tool tracks migration state and picks up where it left off. Refer to the tool documentation for resume flags and behavior.
 
-**API-based verification**
+### Logs and debugging
 
-During verification, CDMS compares REST and GraphQL API responses from previously run queries with corresponding records from the target instance. Any discrepancies are visible in the migration status.
+The tool outputs logs to the console during each phase. Log verbosity is configurable in the `.env` file. For troubleshooting guidance, refer to the troubleshooting section in the technical documentation included with the tool distribution package.
 
-**Database-level verification**
+## Data integrity verification
 
-During verification, CDMS counts the number of extracted records and compares that number to the amount of records loaded.
+After the load phase, CDMS performs the following automatic checks to confirm the accuracy and completeness of the migrated data:
+
+- **API-based verification** — Compares REST and GraphQL API responses from pre-extracted source queries with corresponding records in the target instance. Discrepancies are visible in the migration status.
+
+- **Record count verification** — Compares the number of extracted records with the number of records loaded.
 
 **On-demand verification (optional)**
-
-You can also manually trigger comprehensive verification of all system records:
 
 >[!NOTE]
 >
 >This process is resource-intensive and should only be used in sandbox environments.
 
-The full verification includes:
-
-- Complete API-based verification using all pre-extracted REST and GraphQL API responses
-- Detailed report of any inconsistencies found
+You can manually trigger a comprehensive verification of all system records. This includes complete API-based verification using all pre-extracted REST and GraphQL API responses and a detailed report of any inconsistencies found.
