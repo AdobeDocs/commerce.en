@@ -1,6 +1,6 @@
 ---
-title: Catalog Events and Adobe I/O Integration Guide
-description: Learn how to enable catalog events in Adobe Commerce Catalog Service. Discover event types, [!DNL Adobe I/O Events] delivery, and validate end-to-end setup for consumers.
+title: Catalog Events and Adobe I/O Events Integration Guide
+description: Learn how to verify catalog data, configure [!DNL Adobe I/O Events] for Adobe Commerce, subscribe to supported catalog event types, and validate end-to-end delivery for consumers.
 level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
@@ -24,9 +24,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Catalog events and Adobe I/O integration guide
+# Catalog events and Adobe I/O events integration guide
 
-Catalog events are machine-generated notifications that describe changes in catalog data stored by [!DNL Catalog Service]. They enable event-driven workflows such as:
+Catalog events are machine-generated notifications that describe supported catalog changes made available through [!DNL Catalog Service]. They enable event-driven workflows such as:
 
 * Keeping external caches or services in sync with catalog updates.
 * Triggering downstream processes when products, variants, prices, or categories change.
@@ -36,47 +36,85 @@ For the end-to-end path from [!DNL Adobe Commerce] to your event consumers, see 
 
 ## Supported event types {#supported-event-types}
 
-The Catalog events service focuses on storefront-relevant changes. The following table summarizes supported event categories and examples.
+Catalog events focus on storefront-relevant changes exposed through [!DNL Adobe Developer Console]. The following subscriptions are currently supported.
 
-| Category | Events |
+| Subscription | Events |
 | --- | --- |
-| Product | <ul><li>Product created</li><li>Product updated (attributes, media, custom attributes)</li><li>Product lifecycle changes (enabled/disabled, visibility changes)</li></ul> |
-| Variant and options | <ul><li>Variant created or removed</li><li>Option attribute changes for complex products (for example, configurables)</li></ul> |
-| Category | <ul><li>Category created</li><li>Category updated</li><li>Category deleted</li><li>Changes to category–product assignments</li></ul> |
-| Price and availability | <ul><li>Price changes that impact storefront behavior</li><li>Selected availability changes that are surfaced through [!DNL Catalog Service]</li></ul> |
+| Product Update | Product create, update, and delete changes for products available through [!DNL Catalog Service] |
+| Price Update | Price create, update, and delete changes that affect storefront catalog data |
 
 Each event includes:
 
-* An *event type*, for example, `catalog.product.updated`, following [!DNL Adobe I/O] naming conventions.
-* *Identity information* such as SKU or internal ID, and website/store context.
-* A *payload* that describes what changed, aligned with [!DNL Catalog Service] product and category API models.
+* An event identifier that describes the change type.
+* Entity and environment context, such as instance ID and SKU.
+* A payload that describes the changed entity and relevant scope information.
+
+
+## Example event payloads
+
+**ProductUpdated event**
+
+```json
+{
+  "imsOrgId": "aaa-0",
+  "instanceId": "instance-9",
+  "eventCode": "productUpdated",
+  "sku": "1234",
+  "links": [
+    {"type":  "variantOf", "sku": "5678"}
+   ],
+  "scope": [
+    { "storeViewCode": "US-us" },
+    { "storeViewCode": "FR-fr" },
+    { "storeViewCode": "DE-de" }
+  ]
+}
+```
+**PriceUpdated event**
+
+```json
+{
+  "imsOrgId": "aaa-0",
+  "instanceId": "instance-9",
+  "eventCode": "priceUpdated",
+  "sku": "1234"
+  "scope": [
+    {
+      "websiteCode": "website1",
+      "customerGroupCode": "customer-group-code1"
+    },
+    {
+      "websiteCode": "website2",
+      "customerGroupCode": "customer-group-code2"
+    }
+  ]
+}
 
 ## Event delivery through Adobe I/O Events {#event-delivery-through-adobe-io-events}
 
-[!DNL Adobe I/O Events] delivers catalog events to your integrations. The following diagram shows how catalog changes flow from [!DNL Adobe Commerce] through [!DNL Catalog Service] and the Storefront Eventing Service to subscribed consumers:
+[!DNL Adobe I/O Events] delivers catalog events to your integrations. The following diagram shows the high-level flow of catalog changes from [!DNL Adobe Commerce] through [!DNL Catalog Service] and [!DNL Adobe I/O Events] to subscribed consumers:
 
-![Catalog event pipeline from Adobe Commerce through Catalog Service to Adobe I/O Events consumers](assets/catalog-service-event-pipeline.png)
+![High-level flow of catalog events from Adobe Commerce through Catalog Service and Adobe I/O Events to subscribed consumers](assets/catalog-service-event-pipeline.png)
 
-The diagram organizes the pipeline into Commerce, Catalog Service, and Delivery layers. The following steps explain each handoff in more detail:
+The following steps explain each handoff in more detail:
 
-1. **Adobe Commerce → Catalog Service**
+ 1. **Adobe Commerce → Catalog Service**
 
    [!DNL Adobe Commerce] exports catalog data to [!DNL Catalog Service] using the supported SaaS Data Export extensions.
 
-1. **Catalog Service → Storefront Eventing Service**
+1. **Catalog Service processing**
 
-   * The Storefront Eventing Service listens to [!DNL MongoDB] collections using *change streams*.
-   * It converts raw changes into standardized catalog events and applies filtering and normalization.
+   * [!DNL Catalog Service] processes supported catalog changes and prepares them for event delivery.
 
-1. **Storefront Eventing Service → Adobe I/O Events**
+1. **Catalog Service → Adobe I/O Events**
 
-   * Normalized events are published into [!DNL Adobe I/O Events].
-   * Consumers subscribe using webhooks, [!DNL Adobe I/O Runtime] actions, or other supported mechanisms.
-
+  * Catalog events are published to [!DNL Adobe I/O Events].
+  * Consumers subscribe using Journaling, webhooks, [!DNL Adobe I/O Runtime], Amazon EventBridge, or other supported delivery mechanisms.
+ 
 [!DNL Adobe I/O Events] provides:
 
 * *At-least-once delivery* per subscriber (duplicate events are possible).
-* *Best-effort ordering* per logical key (such as product), but no strict global ordering guarantees.
+* No ordering guarantees across deliveries.
 
 Your consumers must handle duplicate events and out-of-order delivery. See [Idempotency](#idempotency) for implementation guidance.
 
@@ -86,7 +124,7 @@ You can use Catalog events in multiple scenarios.
 
 ### Static site and edge delivery
 
-* Regenerate or invalidate specific product or category pages when catalog data changes.
+* Regenerate or invalidate catalog pages and storefront fragments when catalog data changes.
 * Avoid frequent polling of [!DNL Catalog Service] APIs.
 
 ### Search indexing and caching
@@ -114,11 +152,18 @@ Follow these steps to enable catalog events end to end.
 >
 >Before you enable catalog events, ensure that you have the following:
 >
->* An Adobe Commerce on cloud infrastructure or Adobe Commerce on premises 2.4.4+ project with [!DNL Catalog Service] enabled, or an Adobe Commerce as a Cloud Service instance with [!DNL Catalog Service] enabled.
->* [The [!DNL Adobe I/O] connection is configured for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
->* [!DNL Adobe Developer Console] access—Developer permissions in the IMS organization where the Commerce instance is provisioned.
++* A supported Adobe Commerce environment with [!DNL Catalog Service] enabled.
++* [The [!DNL Adobe I/O] connection is configured for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
++* Access to [!DNL Adobe Developer Console] in the same IMS organization where the Commerce environment is provisioned.
 >* To verify sync to Commerce SaaS services, use the **[!UICONTROL Data Management Dashboard]** in the Admin.
 >* Product Recommendations v6.0, [!DNL Live Search] v4.1.0+, or [!DNL Catalog Service] v1.17+ is required for dashboard verification. Adobe recommends updating your Commerce project to the latest supported versions of these services. For earlier service versions, use [Catalog Sync](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) for sync verification.
+
++
+>[!NOTE]
+>
+To use catalog events, first configure the Commerce environment for [!DNL Adobe I/O Events], then register an event subscription in [!DNL Adobe Developer Console].
+>
+>If your environment does not appear in [!DNL Adobe Developer Console] after configuration, verify that you are signed in to the correct IMS organization and that your account has the required access. If the environment still does not appear, contact Adobe Support.
 
 ### Verify catalog data {#verify-catalog-data}
 
@@ -160,7 +205,7 @@ If your instance is not in the selection list, then it is not connected to [!DNL
 
 1. Choose the events to subscribe to.
 
-   Select all events or select by category (for example, Price or Product). Then, select **[!UICONTROL Next]**.
+   Select the supported event subscriptions that you want to receive, such as **[!UICONTROL Product Update]** or **[!UICONTROL Price Update]**. Then, select **[!UICONTROL Next]**.
 
    ![Event categories selected for subscription on the registration screen](assets/catalog-event-subscription.png){width="600" zoomable="yes"}
 
@@ -198,12 +243,12 @@ If your instance is not in the selection list, then it is not connected to [!DNL
 
 ### Validate the event flow {#validate-event-flow}
 
-1. Make a simple catalog change, such as updating a product name or changing the enabled or disabled status.
+1. Make a simple supported catalog change, such as updating a product name or changing a price.
 
 1. Confirm the following outcomes:
 
    * The change is visible through [!DNL Catalog Service] APIs.
-   * Your [!DNL Adobe I/O Events] consumer receives a corresponding event.
+   * Your [!DNL Adobe I/O Events] consumer receives the corresponding product or price event.
 
 Catalog events are enabled for your environment. When catalog data changes in [!DNL Commerce], updates flow through [!DNL Catalog Service] to [!DNL Adobe I/O Events], and your subscribed consumer receives the corresponding catalog event. Review [Limits and best practices](#limits-and-best-practices) before you build production integrations.
 
@@ -259,9 +304,11 @@ If catalog events are missing or delayed, work through these steps.
 
    Confirm that:
 
+   * You are signed in to the correct IMS organization in [!DNL Adobe Developer Console].
    * The **[!UICONTROL Commerce Catalog Events]** provider is enabled.
+   * The expected **[!UICONTROL Commerce Catalog Events]** provider and environment are visible.
    * The subscription is active.
-   * Your endpoint or action can receive and process other test events.
+   * Your endpoint, action, or journal consumer can receive and process test events.
 
 4. **Contact Adobe Support**
 
