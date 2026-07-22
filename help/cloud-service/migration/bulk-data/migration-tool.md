@@ -39,23 +39,29 @@ topic_v2:
 >
 >The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process.
 
-The bulk data migration tool is a Docker-based CLI that system integrators run on their own migration machine. It connects to the source instance, extracts first-party core commerce data, uploads it to Adobe's migration service (Commerce Data Migration Service), and monitors progress through to completion. For more information on the overall migration process, see the [Migration overview](../overview.md).
+The Bulk Data Migration Tool enables system integrators to migrate first-party core commerce data from [!DNL Adobe Commerce on Cloud] or on-premises installations to [!DNL Adobe Commerce as a Cloud Service].
+
+The bulk data migration tool is a Docker-based CLI that system integrators run on their own migration machine. It connects to the source instance, extracts first-party core commerce data, uploads it to Adobe's migration service (Commerce Data Migration Service), and monitors progress through to completion. 
+
+All commands are run locally, so you control when the migration starts, when maintenance mode is applied, and when each phase runs.
+
+## Migration workflow
+
+A migration runs in three phases:
+
+1. **Extract** — The tool reads schema and data from the source instance and uploads it to Adobe's migration service.
+1. **Load** — The Commerce Data Migration Service (CDMS) loads the extracted data into the target [!DNL Adobe Commerce as a Cloud Service] tenant.
+1. **Verify** — CDMS performs automated integrity checks including REST and GraphQL API comparison and record count validation. See [Data integrity verification](#data-integrity-verification).
 
 >[!NOTE]
 >
->The tool supports migrating first-party core commerce data only. Custom data migration is not supported. Configuration settings, such as store settings and system configuration, are not migrated automatically and must be applied to the target instance independently before migration.
-
-## Eligibility and access
-
-Before requesting access, confirm that your project meets all the following requirements:
-
-- **Healthcare add-on:** The tool is not available to customers with the Healthcare (HIPAA) add-on.
-- **CDE engagement:** A signed Commerce Deployed Engineering (CDE) engagement is required. Contact your Adobe representative to initiate the engagement.
-- **Scoping questionnaire:** A completed CDE data migration scoping questionnaire is required before tool access is granted. Your Adobe representative provides this questionnaire as part of the CDE engagement.
+>Currently, the bulk data migration tool supports migrating first-party core commerce data only. Custom data migration is not currently supported. Configuration settings (store settings, system configuration) are not migrated automatically and must be set up on the target instance independently prior to migration.
 
 ## Architecture
 
-The following image details the architecture and key components for using the bulk data migration tool.
+The Bulk Data Migration Tool follows a distributed architecture that enables secure and efficient data migration. This tool helps system integrators migrate data from an existing [!DNL Adobe Commerce on Cloud or on-premises instance] to [!DNL Adobe Commerce as a Cloud Service]. For more information on the migration process, see the [Migration overview](../overview.md).
+
+The following image details the architecture and end-to-end data flow using the bulk data migration tool.
 
 ![Bulk data migration tool architecture diagram showing PaaS to SaaS data flow](../../assets/bulk-data-diagram.png){zoomable="yes"}
 
@@ -64,7 +70,7 @@ The following image details the architecture and key components for using the bu
 | Component | Role |
 | --------- | ---- |
 | **Bulk data migration tool** | The Docker-based CLI that the system integrator runs on the migration machine, which orchestrates the full pipeline by reading the schema and data from the source, uploading extracted data to Adobe's migration service, and driving status transitions. |
-| **Source instance (PaaS or on-premises)** | The migration source. The tool connects through REST and GraphQL APIs and through an SSH tunnel (PaaS) or through a direct database connection (on-premises) for data extraction. |
+| **Source instance (PaaS or on-premises)** | The migration source. The tool connects through REST and GraphQL APIs and through an SSH tunnel ([!DNL Adobe Commerce on Cloud]) or through a direct database connection (on-premises) for data extraction. |
 | **Commerce Data Migration Service (CDMS) API** | Adobe-managed REST API that registers migrations, coordinates state transitions, and issues pre-signed upload URLs for extracted data. The migration tool connects to this API using the CDMS endpoint URL and IMS credentials in your `.env` configuration. |
 | **Commerce Data Migration Service (CDMS) worker** | Adobe-managed background service that loads extracted data into the target instance and runs post-load integrity verification. |
 | **[!DNL Adobe Commerce as a Cloud Service]** | The SaaS-based version of Adobe Commerce and your migration target. Receives loaded data and exposes Catalog, Live Search, and pricing rule services used during integrity verification. |
@@ -85,13 +91,23 @@ Data moves through the components in the following sequence:
 
 1. The tool polls the migration status throughout and retrieves the final migration report on completion.
 
-## Migration workflow
 
-A migration runs in three phases:
+## Engagement lifecycle
 
-1. **Extract** — The tool reads schema and data from the source instance (PaaS or on-premises) and uploads it to Adobe's migration service.
-1. **Load** — CDMS loads the extracted data into the target [!DNL Adobe Commerce as a Cloud Service] tenant and processes catalog media. Catalog data automatically flows to the Catalog Service and becomes available to Live Search and Product Recommendations once loading completes.
-1. **Verify** — CDMS performs automated integrity checks. See [Data integrity verification](#data-integrity-verification).
+The typical engagement lifecycle is:
+
+1. **CDE Discovery** - Complete the initial scoping call, assess data footprint and complexity, and complete the scoping questionnaire.
+1. **Deal Sign** - The commercial agreement is in place and the migration scope is confirmed. At this stage, you are granted access to the migration tool.
+1. **CDE Co-Innovation and Support** - Work jointly with Adobe to install the tool in your environment and execute test migrations.
+1. **Go Live** - Run the production cutover migration and complete data integrity verification.
+
+## Eligibility and access
+
+Before requesting access, confirm that your project meets all the following requirements:
+
+- **Healthcare add-on:** The tool is not available to customers with the Healthcare (HIPAA) add-on.
+- **CDE engagement:** A signed Commerce Deployed Engineering (CDE) engagement is required. Contact your Adobe representative to initiate the engagement.
+- **Scoping questionnaire:** A completed CDE data migration scoping questionnaire is required before tool access is granted. Your Adobe representative provides this questionnaire as part of the CDE engagement.
 
 ## Tool distribution
 
@@ -112,23 +128,3 @@ The following pages demonstrate the full migration lifecycle, from preparation t
 1. [Run a bulk data migration](migration-guide.md) — Configure the tool, prepare your network and instances, and begin the migration.
 
 For the full configuration reference, custom transformation and test frameworks, and troubleshooting guidance, refer to the documentation included in the tool distribution package.
-
-## Data integrity verification
-
-After the load phase, CDMS performs the following automatic checks to confirm the accuracy and completeness of the migrated data:
-
-- **API-based verification** — Compares REST and GraphQL API responses from pre-extracted source queries with corresponding records in the target instance. Discrepancies are visible in the migration status. Verification spans the following services:
-
-  - **Catalog** (GraphQL) — validates product and category data.
-  - **Live Search** (REST) — validates search index correctness.
-  - **Pricing rules** (REST) — validates price and rule data.
-
-- **Record count verification** — Compares the number of extracted records with the number of records loaded.
-
-**On-demand verification (optional)**
-
->[!NOTE]
->
->This process is resource-intensive and should only be used in sandbox environments.
-
-You can manually trigger a comprehensive verification of all system records. This includes complete API-based verification using all pre-extracted REST and GraphQL API responses and a detailed report of any inconsistencies found.
