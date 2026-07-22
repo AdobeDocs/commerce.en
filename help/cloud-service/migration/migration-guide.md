@@ -42,7 +42,7 @@ topic_v2:
 
 {{bulk-data-early-access}}
 
-This guide is a step-by-step operational reference for running a data migration from an [!DNL Adobe Commerce] PaaS or on-premises installation to [!DNL Adobe Commerce as a Cloud Service] using the bulk data migration tool. The steps cover the typical migration workflow. Actual configuration values and environment-specific details vary depending on your setup.
+This guide is a step-by-step operational reference for running a data migration from an [!DNL Adobe Commerce] PaaS or on-premises installation to [!DNL Adobe Commerce as a Cloud Service] using the bulk data migration tool. Actual configuration values and environment-specific details vary depending on your setup.
 
 Before you begin, confirm that you have completed every item in the [Customer readiness checklist](readiness-checklist.md) and verified API access with the [Migration service access guide](cdms-access.md).
 
@@ -93,9 +93,9 @@ Edit the `.env` file and set at least the following values correctly. For the fu
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
-These four values sign requests from the migration tool to the source store APIs. To obtain them, open the source [!UICONTROL Admin] and go to [!UICONTROL System] > [!UICONTROL Extensions] > [!UICONTROL Integrations]. Create or open an integration, and then copy the values into `.env`:
+These four values sign requests from the migration tool to the source store APIs. To obtain them, open the source [!UICONTROL Admin] and go to [!UICONTROL **System**] > [!UICONTROL **Extensions**] > [!UICONTROL **Integrations**]. Create or open an integration, and then copy the values into `.env`:
 
-```text
+```shell-session
 SOURCE_INSTANCE_URL=https://<source-host>
 SOURCE_INSTANCE_GRAPHQL_URL=https://<source-host>/graphql
 SOURCE_INSTANCE_REST_URL=https://<source-host>/rest
@@ -105,19 +105,19 @@ SOURCE_INSTANCE_ACCESS_TOKEN=<access_token>
 SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 ```
 
-### Set the Magento Cloud CLI token
+### Set the Cloud CLI token
 
 >[!NOTE]
 >
->This applies to PaaS source instances only. The tool detects the source type automatically from `.my.cnf`. If the `SOURCE_CONNECTION_NAME` section contains an `id=` line (for example, `id=project:production`), the source is PaaS and `MAGENTO_CLOUD_CLI_TOKEN` is required. For on-premises sources with no `id=`, this token is not needed and tunnel setup is skipped.
+>This applies to [!DNL Adobe Commerce on Cloud] source instances only. The tool detects the source type automatically from `.my.cnf`. If the `SOURCE_CONNECTION_NAME` section contains an `id=` line (for example, `id=project:production`), the source is [!DNL Adobe Commerce on Cloud] and `MAGENTO_CLOUD_CLI_TOKEN` is required. For on-premises sources with no `id=`, this token is not needed and tunnel setup is skipped.
 
 1. Go to `https://accounts.magento.cloud` and sign in.
 
-1. Select your avatar, and then select [!UICONTROL Account Settings].
+1. Click on your profile image, and select [!UICONTROL **Account Settings**].
 
-1. Go to the [!UICONTROL API Tokens] section.
+1. Go to the [!UICONTROL **API Tokens**] section.
 
-1. Select [!UICONTROL Create an API token], give it a descriptive name, and copy the generated token.
+1. Select [!UICONTROL **Create an API token**], give it a descriptive name, and copy the generated token.
 
 1. Set the token in `.env`:
 
@@ -127,15 +127,15 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->If this is your first time using the [!DNL Magento Cloud] CLI, you must also add your SSH public key to your [!DNL Adobe Commerce] Cloud account. See the [Secure connections guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) for instructions.
+>If this is your first time using the Cloud CLI, you must also add your SSH public key to your account. See the [Secure connections guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) for instructions.
 
 ### Align Commerce Admin settings
 
 Before migration, ensure the following settings are consistent between source and target.
 
-1. For B2B-enabled stores only, go to [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL General] > [!UICONTROL B2B Features] and set each option as shown.
+1. For B2B-enabled stores only, go to [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **General**] > [!UICONTROL **B2B Features**] and set the following options:
 
-   The exact [!UICONTROL Admin] path can differ by [!DNL Magento] version. Use configuration search for **B2B** if the menus do not match.
+   The exact [!UICONTROL Admin] path can differ by version. Use configuration search for **B2B** if the menus do not match.
 
    | Option | Value |
    | --- | --- |
@@ -146,7 +146,7 @@ Before migration, ensure the following settings are consistent between source an
    | Enable Quick Order | Yes |
    | Enable Requisition List | Yes |
 
-1. Go to [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales] > [!UICONTROL Orders, Invoices, Shipments, Credit Memos Archive] and set [!UICONTROL Enable archiving] to [!UICONTROL Yes].
+1. Navigate to [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Sales**] > [!UICONTROL **Sales**] > [!UICONTROL **Orders, Invoices, Shipments, Credit Memos Archive**] and set [!UICONTROL **Enable archiving**] to [!UICONTROL **Yes**].
 
 ### Configure target SaaS and IMS credentials
 
@@ -160,19 +160,19 @@ Use the [Adobe Developer Console](https://developer.adobe.com/console/). You nee
 
 1. Create a project, or open an existing one, and then select [!UICONTROL Add API].
 
-1. Choose [!UICONTROL Adobe Commerce as a Cloud Service] and continue.
+1. Choose [!UICONTROL **Adobe Commerce as a Cloud Service**] and continue.
 
-1. Select [!UICONTROL OAuth Server-to-Server] as the authentication type and continue.
+1. Select [!UICONTROL **OAuth Server-to-Server**] as the authentication type and continue.
 
-1. Select the product profile that your Adobe team expects for this tenant, and then select [!UICONTROL Save configured API].
+1. Select the product profile that your Adobe team expects for this tenant, and then select [!UICONTROL **Save configured API**].
 
-1. In the project sidebar, open [!UICONTROL OAuth Server-to-Server] (or [!UICONTROL Credentials]), and then copy the client ID and client secret into `.env` as `ADOBE_IMS_CLIENT_ID` and `ADOBE_IMS_CLIENT_SECRET`.
+1. In the project sidebar, open [!UICONTROL **OAuth Server-to-Server**] (or [!UICONTROL **Credentials**]), and then copy the client ID and client secret into `.env` as `ADOBE_IMS_CLIENT_ID` and `ADOBE_IMS_CLIENT_SECRET`.
 
 The IMS token endpoint (`ADOBE_IMS_URL`) must match the credential's environment.
 
 | Tier | Typical `ADOBE_IMS_URL` |
 | --- | --- |
-| QA or staging-style | `https://ims-na1-stg1.adobelogin.com` |
+| QA or staging | `https://ims-na1-stg1.adobelogin.com` |
 | Pre-production or production | `https://ims-na1.adobelogin.com` |
 
 >[!NOTE]
@@ -181,7 +181,7 @@ The IMS token endpoint (`ADOBE_IMS_URL`) must match the credential's environment
 
 `ADOBE_IMS_META_SCOPES` must match the scopes provisioned on that credential. The `.example.env` file includes the full comma-separated scope string as a reference. Change it only if Adobe instructs you to.
 
-#### Map Adobe I/O credentials to the environment file
+#### Map [!DNL Adobe I/O] credentials to the environment file
 
 In [!DNL Developer Console], the OAuth Server-to-Server values are presented as a client ID and a client secret, corresponding to the following JSON structure:
 
@@ -194,7 +194,7 @@ In [!DNL Developer Console], the OAuth Server-to-Server values are presented as 
 
 Map them into `.env` (example placeholders):
 
-```text
+```shell-session
 TARGET_ORG_ID=<org_id>@AdobeOrg
 ADOBE_IMS_URL=https://ims-na1.adobelogin.com
 ADOBE_IMS_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -213,7 +213,7 @@ The SaaS API hosts differ between pre-production and production. `TARGET_INSTANC
 >
 >`na1` in these URLs represents the region where your target instance is provisioned. Replace it with the appropriate region identifier if your instance is provisioned in a different region.
 
-```text
+```shell-session
 TARGET_TENANT_ID=<tenant_id>
 TARGET_ORG_ID=<org_id>@AdobeOrg
 ADOBE_IMS_URL=https://ims-na1.adobelogin.com
@@ -237,7 +237,7 @@ Point the migration tool at the CDMS API host that matches the environment you a
 
 Set or uncomment the block that matches your run:
 
-```text
+```shell-session
 # Pre-production CDMS
 CDMS_HOST=https://commerce-data-migration-service-preprod-external.adobe.io
 CDMS_PORT=443
@@ -251,7 +251,7 @@ CDMS_PORT=443
 
 `STORE_CODE` is the store view code used by the migration tool for source instance REST API calls, synthetic test customer creation, and data cleanup. It is also sent as the `x-store-code` header during the loading phase.
 
-`STORE_CODE` defaults to `default` in `.example.env`. Verify that this matches your source instance's default store view code. To check, in the source [!UICONTROL Admin] go to [!UICONTROL Stores] > [!UICONTROL All Stores] and look at the [!UICONTROL Code] column for the store view that should be used. If the code shown there is not `default`, update `STORE_CODE` in `.env` to match.
+`STORE_CODE` defaults to `default` in `.example.env`. Verify that this matches your source instance's default store view code. To check, in the source [!UICONTROL Admin] go to [!UICONTROL **Stores**] > [!UICONTROL **All Stores**] and look at the [!UICONTROL **Code**] column for the store view that should be used. If the code shown there is not `default`, update `STORE_CODE` in `.env` to match.
 
 ## Configure the database connection file
 
@@ -274,18 +274,16 @@ database=<db_name>
 >
 >The machine running the migration tool must have direct network access to the source database. The tool does not establish or verify on-premises connectivity automatically. Confirm that the host, port, and credentials are reachable from the migration machine before you run any migration command.
 
-For a PaaS source ([!DNL Adobe Commerce] Cloud):
+For an [!DNL Adobe Commerce on Cloud] source:
 
 ```ini
 [<connection-name>]
 id=<project_id>:<environment>
 ```
 
-The `id=` field tells the tool that the source is PaaS and triggers tunnel setup using `MAGENTO_CLOUD_CLI_TOKEN`. The `project_id` and `environment` values are available in the [!DNL Magento Cloud] Console or through the `magento-cloud project:list` and `magento-cloud environment:list` commands.
+The `id=` field tells the tool that the source is PaaS and triggers tunnel setup using `MAGENTO_CLOUD_CLI_TOKEN`. The `project_id` and `environment` values are available in the [!DNL Cloud Console] or through the `magento-cloud project:list` and `magento-cloud environment:list` commands.
 
 ## Prepare the network and instances
-
-### Source
 
 HTTP Basic Auth in front of the store can block API and tool traffic. Ensure it is disabled for the source URL used by the migration, or that the tool's paths are permitted, so REST and GraphQL requests can reach the store.
 
@@ -293,7 +291,7 @@ HTTP Basic Auth in front of the store can block API and tool traffic. Ensure it 
 
 While the tool extracts data from the source database, no other processes should write to it. Concurrent writes can result in an inconsistent snapshot.
 
-- Stop [!DNL Magento] cron on the source, and any operating-system schedulers that run `bin/magento` or other writers, for the extraction window, or ensure they cannot run during extraction.
+- Stop cron on the source, and any operating-system schedulers that run `bin/magento` or other writers, for the extraction window, or ensure they cannot run during extraction.
 - Review other integrations, such as ERP, OMS, PIM, custom jobs, and third-party APIs that write to the same database. Pause or block writes for the extraction window so nothing mutates tables while extraction runs.
 - This complements maintenance mode and tunnel or database access. Together they reduce storefront and API traffic. Cron and integrations are separate sources of writes that you must control explicitly.
 
@@ -307,7 +305,7 @@ Work from the extracted project directory with write access.
 
 ### Keep the session alive over SSH
 
-If you connect over SSH, a dropped network can kill your shell and interrupt a long migration. GNU `screen` keeps the session alive on the server:
+If you connect over SSH, a dropped network can kill your shell and interrupt a long migration. The GNU `screen` keeps the session alive on the server:
 
 ```bash
 screen -S migration          # new session named "migration"
@@ -348,7 +346,7 @@ exit
 
 The tool supports two migration approaches. Choose the one that fits your use case.
 
-#### Option A: single-phase migration
+#### Single-phase migration
 
 No maintenance mode is required on the source instance. Run the full migration pipeline with a single command:
 
@@ -358,32 +356,30 @@ No maintenance mode is required on the source instance. Run the full migration p
 
 The command runs all pipeline steps automatically, end to end, in the following order.
 
-| Step | What happens |
-| --- | --- |
-| 1 | **Configuration check** — validates environment variables and tool setup. |
-| 2 | **Environment initialization** — starts [!DNL Docker] services, opens PaaS cloud tunnels (if applicable), and runs unit tests. |
-| 3 | **Integration tests and CDMS initialization** — runs integration tests and initializes the CDMS API connection. |
-| 4 | **Create migration** — registers the migration with CDMS and waits for target schema analysis. The migration ID is saved to `.migration_id`. |
-| 5 | **Functional tests and test data generation** — runs functional tests and generates synthetic test data on the source for integrity verification (if enabled). |
-| 6 | **Data extraction** — extracts data from the source instance. |
-| 7 | **Load to target** — loads extracted data into the target [!DNL Adobe Commerce as a Cloud Service] instance. Staging views are cleaned up on the source and source test data is removed through REST in parallel with the load. |
-| 8 | **Data integrity verification** — triggers checksum verification and runs local API verification tests. Results are logged, and failures do not stop the pipeline. |
-| 9 | **Test data cleanup on target** — removes synthetic test data from the target instance. |
-| 10 | **Process results** — generates a migration summary and optionally downloads artifacts from storage. |
+1. **Configuration check** — validates environment variables and tool setup.
+1. **Environment initialization** — starts [!DNL Docker] services, opens cloud tunnels (if applicable), and runs unit tests.
+1. **Integration tests and CDMS initialization** — runs integration tests and initializes the CDMS API connection.
+1. **Create migration** — registers the migration with CDMS and waits for target schema analysis. The migration ID is saved to `.migration_id`.
+1. **Functional tests and test data generation** — runs functional tests and generates synthetic test data on the source for integrity verification (if enabled).
+1. **Data extraction** — extracts data from the source instance.
+1. **Load to target** — loads extracted data into the target [!DNL Adobe Commerce as a Cloud Service] instance. Staging views are cleaned up on the source and source test data is removed through REST in parallel with the load.
+1. **Data integrity verification** — triggers checksum verification and runs local API verification tests. Results are logged, and failures do not stop the pipeline.
+1. **Test data cleanup on target** — removes synthetic test data from the target instance.
+1. **Process results** — generates a migration summary and optionally downloads artifacts from storage.
 
 Use this option when no maintenance window is required, which is typical for end-to-end dry runs, dev or sandbox environments, or any migration where the source can remain live during extraction.
 
 >[!WARNING]
 >
->Do not use this option when a frozen source is required, for example any production migration where new orders or data changes must not occur during extraction. Use Option B instead. Do not use this command as a step inside the phased maintenance workflow.
+>Do not use this option when a frozen source is required, for example any production migration where new orders or data changes must not occur during extraction. Use phased-migration instead. Do not use this command as a step inside the phased maintenance workflow.
 
-#### Option B: multi-phase migration with maintenance mode
+#### Multi-phase migration with maintenance mode
 
 Maintenance mode is required on the source instance to ensure data consistency during extraction. The migration is split into distinct phases that you must run in order.
 
 >[!NOTE]
 >
->Two different CLIs are involved. The `./bin/console` commands run from the migration tool project root (this package). The `bin/magento maintenance:*` commands run on the source [!DNL Adobe Commerce] application server, through SSH to the install root, or through the [!UICONTROL Admin]. The tool does not issue [!DNL Magento] maintenance commands on your behalf.
+>Two different CLIs are involved. The `./bin/console` commands run from the migration tool project root. The `bin/magento maintenance:*` commands run on the source [!DNL Adobe Commerce] application server, through SSH to the install root, or through the [!UICONTROL Admin]. The tool does not issue [!DNL Magento] maintenance commands on your behalf.
 
 | Phase | Who runs it | Source state |
 | --- | --- | --- |
@@ -395,26 +391,22 @@ Maintenance mode is required on the source instance to ensure data consistency d
 
 **Phase 1 — Before maintenance (source is live)**
 
-Run while the source instance is live and accepting traffic. REST and GraphQL to the source must be fully available. Do not enable maintenance mode before this phase completes.
+Run while the source instance is live and accepting traffic. REST and GraphQL access to the source must be fully available. Do not enable maintenance mode before this phase completes.
 
 ```bash
 ./bin/console migration:before-maintenance
 ```
 
-| Step | What happens |
-| --- | --- |
-| 1 | **Configuration check** — validates environment variables and tool setup. |
-| 2 | **Environment initialization** — starts [!DNL Docker] services, opens PaaS cloud tunnels (if applicable), and runs unit tests. |
-| 3 | **Integration tests and CDMS initialization** — runs integration tests and initializes the CDMS API connection. |
-| 4 | **Create migration** — registers the migration with CDMS and waits for target schema analysis. The migration ID is saved to `.migration_id`. |
-| 5 | **Functional tests** — runs functional tests against the live source. |
-| 6 | **Test data generation** — creates synthetic test customers and orders on the source for integrity verification (if enabled). |
-
-When this completes, proceed to Phase 2.
+1. **Configuration check** — validates environment variables and tool setup.
+1. **Environment initialization** — starts [!DNL Docker] services, opens PaaS cloud tunnels (if applicable), and runs unit tests.
+1. **Integration tests and CDMS initialization** — runs integration tests and initializes the CDMS API connection.
+1. **Create migration** — registers the migration with CDMS and waits for target schema analysis. The migration ID is saved to `.migration_id`.
+1. **Functional tests** — runs functional tests against the live source.
+1. **Test data generation** — creates synthetic test customers and orders on the source for integrity verification (if enabled).
 
 **Phase 2 — Enable maintenance mode (manual)**
 
-Before you run Phase 3, enable maintenance mode on the source and pause all activities that write to or impact the database, including scheduled jobs, third-party integrations, order processing, and media asset synchronization.
+Before you run **Phase 3**, enable maintenance mode on the source and pause all activities that write to or impact the database, including scheduled jobs, third-party integrations, order processing, and media asset synchronization.
 
 On the source Commerce server (install root):
 
@@ -422,31 +414,25 @@ On the source Commerce server (install root):
 bin/magento maintenance:enable
 ```
 
-After maintenance mode is active and all database-impacting activities are paused, proceed to Phase 3.
-
 **Phase 3 — During maintenance (source is frozen)**
 
-Run with the source instance in maintenance mode. The source must remain frozen for the entire duration of this phase. Do not disable maintenance mode until Phase 3 completes successfully.
+Run with the source instance in maintenance mode. The source must remain frozen for the entire duration of this phase. Do not disable maintenance mode until **Phase 3** completes successfully.
 
 ```bash
 ./bin/console migration:during-maintenance
 ```
 
-| Step | What happens |
-| --- | --- |
-| 1 | **PaaS cloud tunnel setup** — for PaaS source instances, reopens cloud tunnels and verifies database connectivity. Skipped automatically for on-premises instances. |
-| 2 | **Data extraction** — extracts data from the frozen source instance. |
-| 3 | **Staging view cleanup** — removes staging views from the source using a direct database connection (safe under maintenance mode). |
-| 4 | **Load to target** — loads extracted data into the target [!DNL Adobe Commerce as a Cloud Service] instance and waits for completion. |
-| 5 | **Data integrity verification** — triggers CDMS checksum verification and runs local API verification tests. Results are logged, and failures do not stop the pipeline. |
-| 6 | **Test data cleanup on target** — removes synthetic test data from the target instance. |
-| 7 | **Process results** — generates a migration summary and optionally downloads artifacts from storage. |
-
-When this completes, proceed to Phase 4.
+1. **Cloud tunnel setup** — for [!DNL Adobe Commerce on Cloud] source instances, reopens cloud tunnels and verifies database connectivity. Skipped automatically for on-premises instances.
+1. **Data extraction** — extracts data from the frozen source instance.
+1. **Staging view cleanup** — removes staging views from the source using a direct database connection (safe under maintenance mode).
+1. **Load to target** — loads extracted data into the target [!DNL Adobe Commerce as a Cloud Service] instance and waits for completion.
+1. **Data integrity verification** — triggers CDMS checksum verification and runs local API verification tests. Results are logged, and failures do not stop the pipeline.
+1. **Test data cleanup on target** — removes synthetic test data from the target instance.
+1. **Process results** — generates a migration summary and optionally downloads artifacts from storage.
 
 **Phase 4 — Disable maintenance mode (manual, conditional)**
 
-Disable maintenance mode after Phase 3 succeeds if traffic to the source instance needs to be re-enabled. This step is also required before you run Phase 5 (cleanup), because cleanup communicates with the source through REST and fails with HTTP 503 if maintenance mode is still active.
+Disable maintenance mode after **Phase 3** succeeds if traffic to the source instance needs to be re-enabled. This step is also required before you run **Phase 5** (cleanup), because cleanup communicates with the source through REST and fails with `HTTP 503` if maintenance mode is still active.
 
 On the source Commerce server:
 
@@ -456,7 +442,7 @@ bin/magento maintenance:disable
 
 **Phase 5 — Cleanup (optional, source must be live)**
 
-Remove the synthetic test customers and orders created in Phase 1 from the source instance through REST. This phase can run only after maintenance mode is disabled.
+Remove the synthetic test customers and orders created in **Phase 1** from the source instance through REST. This phase can run only after maintenance mode is disabled.
 
 >[!NOTE]
 >
@@ -466,10 +452,8 @@ Remove the synthetic test customers and orders created in Phase 1 from the sourc
 ./bin/console migration:cleanup
 ```
 
-| Step | What happens |
-| --- | --- |
-| 1 | **Database connection setup** — for PaaS source instances, reopens cloud tunnels. For on-premises instances, establishes and verifies direct database connectivity. |
-| 2 | **Source REST cleanup** — removes synthetic test customers and orders from the source through the REST API. |
+1. **Database connection setup** — for [!DNL Adobe Commerce on Cloud] source instances, reopens cloud tunnels. For on-premises instances, establishes and verifies direct database connectivity.
+1. **Source REST cleanup** — removes synthetic test customers and orders from the source through the REST API.
 
 ## Resume or re-run a migration
 
@@ -495,7 +479,7 @@ If `.migration_id` exists and the previous migration already completed, the tool
 
 ## Review logs and debug
 
-All migration logs are written to the `logs/` directory in the project root, organized into timestamped subdirectories:
+All migration logs are written to the `logs/` directory in the project root and are organized into timestamped subdirectories:
 
 ```text
 logs/

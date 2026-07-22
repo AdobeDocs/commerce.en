@@ -42,21 +42,21 @@ Complete this guide after you finish all items in the [Customer readiness checkl
 
 - An OAuth 2.0 Server-to-Server credential (client ID and client secret) created in the [Adobe Developer Console](https://developer.adobe.com/console/).
 - Your IMS organization ID, in the format `<org>@AdobeOrg`. The organization must own the target tenant.
-- The target `tenantId`, a 22-character alphanumeric IMS tenant ID.
+- The target `tenantId`, a 22-character, alphanumeric IMS tenant ID.
 - Your outbound egress IP addresses allowlisted for the CDMS gateway. Coordinate with the Adobe team if you are unsure.
 - The region-specific service host from the [Service hosts by environment and region](#service-hosts-by-environment-and-region) table.
 
 ## Generate an IMS access token
 
-Generate an access token using your OAuth 2.0 Server-to-Server credentials with the `client_credentials` grant. The IMS host in this step is the same for all data regions. Only the CDMS host in the next step changes per region.
+Generate an access token using your OAuth 2.0 Server-to-Server credentials with the `client_credentials` grant. The IMS host in this step is the same for all data regions. Only the CDMS host changes per region.
 
 ```bash
 curl -X POST "https://ims-na1.adobelogin.com/ims/token/v3" \
   -H "Content-Type: application/x-www-form-urlencoded" \
-  -H "x-org-id:<your-org-id-here>@AdobeOrg" \
+  -H "x-org-id:<your-org-id>@AdobeOrg" \
   -d "grant_type=client_credentials" \
-  -d "client_id=<your-ims-client-id-here>" \
-  -d "client_secret=<your-ims-client-secret-here>" \
+  -d "client_id=<your-ims-client-id>" \
+  -d "client_secret=<your-ims-client-secret>" \
   -d "scope=AdobeID,openid,read_organizations,additional_info.projectedProductContext,additional_info.roles,adobeio_api,read_client_secret,manage_client_secrets"
 ```
 
@@ -74,7 +74,7 @@ curl -i "https://<host>/<tenantId>/v1/migrations" \
 | HTTP code | Meaning | Example response body |
 | --- | --- | --- |
 | 200 | Success. Connectivity, authentication, and tenant authorization all passed. The response body contains the list of migrations for the tenant. | `{"migrations":[...]}` |
-| 401 | Missing or invalid Bearer token, rejected before reaching the service. Regenerate the token in the previous step. | Varies (gateway-generated) |
+| 401 | Missing or invalid Bearer token, rejected before reaching the service. [Regenerate the token](#generate-an-ims-access-token). | Varies (gateway-generated) |
 | 403 | The authenticated user does not have migration permissions for this tenant. | `{"error":"access_denied","message":"You do not have permission to access this tenant"}` |
 | 500 | Internal server error. | `{"error":{"message":"Internal Server Error","status":500}}` |
 
@@ -84,14 +84,14 @@ curl -i "https://<host>/<tenantId>/v1/migrations" \
 
 ## Service hosts by environment and region
 
-| Region | Environment | Host |
-| --- | --- | --- |
-| North America | Production | `https://na1.api.commerce.adobe.com` |
-| North America | Sandbox or pre-production | `https://na1-sandbox.api.commerce.adobe.com` |
-| Europe | Production | `https://eu1.api.commerce.adobe.com` |
-| India | Production | `https://in1.api.commerce.adobe.com` |
-| UK | Production | `https://uk1.api.commerce.adobe.com` |
-| Australia and New Zealand | Production | `https://au1.api.commerce.adobe.com` |
+| Region or environment | Host |
+| --- | --- |
+| Sandbox or pre-production | `https://na1-sandbox.api.commerce.adobe.com` |
+| North America | `https://na1.api.commerce.adobe.com` |
+| Europe | `https://eu1.api.commerce.adobe.com` |
+| India | `https://in1.api.commerce.adobe.com` |
+| UK | `https://uk1.api.commerce.adobe.com` |
+| Australia and New Zealand | `https://au1.api.commerce.adobe.com` |
 
 ## Next steps
 

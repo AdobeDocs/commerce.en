@@ -40,25 +40,25 @@ topic_v2:
 
 {{bulk-data-early-access}}
 
-Use this checklist to prepare for a data migration from an [!DNL Adobe Commerce] PaaS or on-premises instance to [!DNL Adobe Commerce as a Cloud Service] using the bulk data migration tool.
+Use this checklist to prepare for a data migration from an [!DNL Adobe Commerce on Cloud] or on-premises instance to [!DNL Adobe Commerce as a Cloud Service] using the bulk data migration tool.
 
-The migration tool is distributed as part of the Commerce Deployed Engineering (CDE) engagement process. Access to the tool is gated on a signed CDE agreement, and it is not publicly downloadable. The typical engagement lifecycle is:
+The migration tool is distributed as part of the Commerce Deployed Engineering (CDE) engagement process. Access to the tool is gated on a signed CDE agreement, and it is not publicly available. The typical engagement lifecycle is:
 
-1. **CDE Discovery**: Complete the initial scoping call, assess data footprint and complexity, and complete the scoping questionnaire.
-1. **Deal Sign**: Put the commercial agreement in place and agree on the migration scope. At this stage, you are granted access to the migration tool.
-1. **CDE Co-Innovation / Support**: Work jointly with Adobe to install the tool in your environment and execute test migrations.
-1. **Go Live**: Run the production cutover migration and complete data integrity verification.
+1. **CDE Discovery** - Complete the initial scoping call, assess data footprint and complexity, and complete the scoping questionnaire.
+1. **Deal Sign** - Put the commercial agreement in place and agree on the migration scope. At this stage, you are granted access to the migration tool.
+1. **CDE Co-Innovation and Support** - Work jointly with Adobe to install the tool in your environment and execute test migrations.
+1. **Go Live** - Run the production cutover migration and complete data integrity verification.
 
-This checklist covers what you need to have in place before the tool is shared (Stage 1) and what you need ready to begin configuration and execution once you have the tool (Stage 2). Review it with your Adobe team early, because some items require Adobe coordination and should not be assumed or estimated.
+This checklist covers what you need to have in place before the tool is shared ([Stage 1](#stage-1-before-tool-access)) and what you need ready to begin configuration and execution once you have the tool ([Stage 2](#stage-2-before-running-the-migration)). Review this checklist with your Adobe team early, because some items require Adobe coordination.
 
 ## Stage 1: before tool access
 
 Complete or confirm the following before the migration tool and documentation are provided.
 
-- **CDE engagement signed** — A signed CDE agreement must be in place. Tool access is granted at the Deal Sign stage of the CDE lifecycle. Coordinate with your Adobe team.
+- **CDE engagement** — A signed Commerce Deployed Engineering agreement must be in place. Tool access is granted at the Deal Sign stage of the CDE lifecycle. Coordinate with your Adobe team.
 - **Scoping questionnaire completed** — A scoping questionnaire is completed during CDE Discovery to validate that the migration is feasible with the current tool capabilities and to assess data footprint and complexity. Ensure this is completed with your Adobe team before you move forward.
 - **No HIPAA data confirmed** — The source instance must not contain HIPAA-regulated data. Confirm this before you proceed.
-- **IP addresses provided** — Provide your Adobe team with the list of IP addresses from which the migration tool runs. This is required for network access to be configured on the Adobe side.
+- **IP addresses provided** — Provide your Adobe team with the list of IP addresses the migration tool will run from. This is required for network access to be configured on the Adobe side.
 - **Target instance provisioned** — The target [!DNL Adobe Commerce as a Cloud Service] instance must be provisioned before migration begins. Coordinate with your Adobe team to confirm the instance is ready.
 
 ## Stage 2: before running the migration
@@ -74,17 +74,17 @@ The migration tool runs on a machine you control, such as a dedicated jump box. 
 - **Writable working directory** — The directory where the migration tool is extracted must be fully writable by the migration user. The tool writes logs, cache, [!DNL Composer] dependencies, and generated files during execution.
 - **Sufficient disk space** — Ensure adequate free disk space for extracted data, [!DNL Docker] images, and log output. Space requirements vary depending on the size of the source database.
 - **On-premises sources: direct database connectivity from the migration machine** — For on-premises source instances, the migration machine must have direct network access to the source database. The tool does not establish on-premises database connectivity automatically. Confirm that the host, port, and credentials are reachable from the migration machine before you run any migration command.
-- **PaaS sources: Magento Cloud CLI installed and SSH key registered** — For [!DNL Adobe Commerce] Cloud (PaaS) source instances, the [Magento Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) must be installed on the migration machine. Your SSH public key must also be registered in your [!DNL Adobe Commerce] Cloud account. See the [Secure connections guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) for instructions.
+- **Cloud CLI installed and SSH key registered** — For [!DNL Adobe Commerce on Cloud] source instances, the [Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) must be installed on the migration machine. Your SSH public key must also be registered in your account. See the [Secure connections guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) for instructions.
 
 ### Source instance
 
 - **Source store APIs accessible** — The source store's REST and GraphQL APIs must be accessible from the migration machine. Ensure that no HTTP Basic Auth or network restriction blocks API traffic to the source URL.
-- **Source OAuth credentials** — The migration tool uses OAuth to authenticate with the source store. Create or confirm an integration in the source [!UICONTROL Admin] ([!UICONTROL System] > [!UICONTROL Extensions] > [!UICONTROL Integrations]) and have the consumer key, consumer secret, access token, and access token secret ready.
-- **PaaS sources: Magento Cloud API token** — Generate a [!DNL Magento Cloud] API token from your [Magento Cloud account settings](https://accounts.magento.cloud) under [!UICONTROL Account Settings] > [!UICONTROL API Tokens]. Required only when the source is an [!DNL Adobe Commerce] Cloud (PaaS) instance.
-- **On-premises sources: source database credentials** — Have the source [!DNL MySQL] database connection details ready for configuration: `host`, `port`, `user`, `password`, and `database` name.
-- **Ability to pause Magento cron** — You must be able to stop [!DNL Magento] cron on the source instance for the duration of data extraction to prevent concurrent writes.
-- **Ability to pause integrations and background jobs** — Any third-party integrations (ERP, OMS, PIM), scheduled jobs, or background processes that write to the source database must be pausable for the extraction window.
-- **Phased migration only: ability to enable and disable maintenance mode** — If you run a phased migration with a maintenance window (Option B), you must be able to enable and disable [!DNL Magento] maintenance mode on the source instance.
+- **Source OAuth credentials** — The migration tool uses OAuth to authenticate with the source store. Create or confirm an integration in the source [!UICONTROL **Admin**] ([!UICONTROL **System**] > [!UICONTROL **Extensions**] > [!UICONTROL Integrations]) and have the consumer key, consumer secret, access token, and access token secret ready.
+- **PaaS sources: Magento Cloud API token** — Generate a [!DNL Cloud] API token from your [Cloud account settings](https://accounts.magento.cloud) under [!UICONTROL **Account Settings**] > [!UICONTROL **API Tokens**]. Required only when the source is an [!DNL Adobe Commerce on Cloud] instance.
+- **Source database credentials** — (On-premises only) Have the source [!DNL MySQL] database connection details ready for configuration: `host`, `port`, `user`, `password`, and `database` name.
+- **Ability to pause cron** — You must be able to stop cron on the source instance for the duration of data extraction to prevent concurrent writes.
+- **Ability to pause integrations and background jobs** — Any third-party integrations (ERP, OMS, PIM), scheduled jobs, or background processes that write to the source database must be paused for the extraction window.
+- **Ability to enable and disable maintenance mode** — (Phased migration only) If you run a phased migration with a maintenance window, you must be able to enable and disable maintenance mode on the source instance.
 
 ### Target instance
 
@@ -96,18 +96,10 @@ The migration tool runs on a machine you control, such as a dedicated jump box. 
 
 ### Migration planning
 
-- **Migration approach decided** — Determine which approach fits your use case before you start. Option A (single phase, no maintenance mode) suits dry runs, dev or sandbox environments, or any migration where the source can remain live during extraction. Option B (multi-phase, maintenance mode required) is required for production migrations where the source must be frozen during extraction to ensure data consistency.
-- **Maintenance window planned (Option B only)** — If you use Option B, plan and communicate the maintenance window in advance. The source instance is unavailable to end users for the duration of the extraction and loading phases.
+- **Migration approach decided** — Determine which approach fits your use case before you start.
+  - Single-phase migration - (no maintenance mode) suits dry runs, dev or sandbox environments, or any migration where the source can remain live during extraction.
+  - Multi-phase migration - (maintenance mode required) is required for production migrations where the source must be frozen during extraction to ensure data consistency.
+- **Maintenance window planned** — (multi-phase only) plan and communicate the maintenance window in advance. The source instance is unavailable to end users for the duration of the extraction and loading phases.
 - **Store view code confirmed** — Identify the store view code (`STORE_CODE`) on the source instance. It defaults to `default` but must match the actual code in [!UICONTROL Admin] > [!UICONTROL Stores] > [!UICONTROL All Stores]. An incorrect store code can affect data operations during migration.
-
-## Summary
-
-| Area | Key items |
-| --- | --- |
-| Pre-engagement | CDE signed, scoping questionnaire completed, no HIPAA data, IP addresses provided, target instance provisioned |
-| Migration machine | [!DNL Docker] installed and permitted, write access, disk space, database connectivity (on-premises) or Cloud CLI (PaaS) |
-| Source instance | APIs accessible, OAuth credentials, database credentials (on-premises), Cloud CLI token (PaaS), ability to pause cron and integrations |
-| Target instance | Tenant and organization IDs, IMS credentials, CDMS endpoint, core configuration aligned with source |
-| Planning | Migration approach (Option A or B), maintenance window if Option B, store code confirmed |
 
 After you confirm all items, you are ready to verify service access with the [migration service access guide](cdms-access.md), and then begin the configuration and execution steps in the [migration guide](migration-guide.md).
