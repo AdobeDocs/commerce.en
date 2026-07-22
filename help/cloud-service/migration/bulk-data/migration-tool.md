@@ -39,7 +39,7 @@ topic_v2:
 >
 >The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process.
 
-The bulk data migration tool is a Docker-based CLI that system integrators run on their own migration machine. It connects to the source instance, extracts first-party core commerce data, uploads it to Adobe's migration service (Commerce Data Migration Service), and monitors progress through to completion. For more information on the overall migration process, see the [Migration overview](./overview.md).
+The bulk data migration tool is a Docker-based CLI that system integrators run on their own migration machine. It connects to the source instance, extracts first-party core commerce data, uploads it to Adobe's migration service (Commerce Data Migration Service), and monitors progress through to completion. For more information on the overall migration process, see the [Migration overview](../overview.md).
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Before requesting access, confirm that your project meets all the following requ
 
 The following image details the architecture and key components for using the bulk data migration tool.
 
-![Bulk data migration tool architecture diagram showing PaaS to SaaS data flow](../assets/bulk-data-diagram.png){zoomable="yes"}
+![Bulk data migration tool architecture diagram showing PaaS to SaaS data flow](../../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ### Components
 

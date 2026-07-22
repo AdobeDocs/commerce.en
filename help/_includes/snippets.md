@@ -102,4 +102,4 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 >[!IMPORTANT]
 >
->The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process. For an overview of the tool and its eligibility requirements, see [Bulk data migration tool](../cloud-service/migration/bulk-data.md).
+>The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process. For an overview of the tool and its eligibility requirements, see [Bulk data migration tool](../cloud-service/migration/bulk-data/migration-tool.md).

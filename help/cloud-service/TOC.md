@@ -30,8 +30,8 @@ product_v2:
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
-    - [Bulk data migration tool](#bulk-data)
-      - [Overview](migration/bulk-data/index.md)
+    - Bulk data migration tool {#bulk-data}
+      - [Overview](migration/bulk-data/migration-tool.md)
       - [Customer readiness checklist](migration/bulk-data/readiness-checklist.md)
       - [Verify migration service access](migration/bulk-data/cdms-access.md)
       - [Run a bulk data migration](migration/bulk-data/migration-guide.md)

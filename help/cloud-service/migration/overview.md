@@ -63,7 +63,7 @@ topic_v2:
 
 >[!NOTE]
 >
->For more information on migration tooling, see the [Bulk Data Migration Tool](./bulk-data.md).
+>For more information on migration tooling, see the [Bulk Data Migration Tool](./bulk-data/migration-tool.md).
 
 ## Understanding the shift - comparing PaaS and SaaS
 
@@ -116,7 +116,7 @@ The following table provides an overview of the migration process for different 
 
 As indicated by the table, the mitigations for each migration will consist of:
 
-* **Data migration**—Using provided [migration tooling](./bulk-data.md) to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
+* **Data migration**—Using provided [migration tooling](./bulk-data/migration-tool.md) to migrate data from your existing instance to [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**—Existing Commerce Storefronts powered by Edge Delivery and headless storefronts do not require mitigation, but Luma storefronts require migrating to Commerce Storefront powered by Edge Delivery. PWA Studio storefronts can be migrated to Commerce Storefront powered by Edge Delivery or maintained in their current state. Adobe will provide accelerators to assist with storefront migration.
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Create a new mesh or modify the existing one. Adobe will provide preconfigured meshes to assist with this process.
 * **Integrations**—All integrations need to leverage either the [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) or the [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
@@ -264,7 +264,7 @@ Data migration is a critical and multi-faceted process that runs concurrently wi
 
 Bulk data migration involves taking a full data dump from your Adobe Commerce PaaS instance, transforming that entire dataset, and importing it into Adobe Commerce as a Cloud Service all at one time. This method is typically used for the initial population of data.
 
-* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data.md) for customer use for first-party Commerce bulk data migrations will be available by request in Q1 2026. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
+* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data/migration-tool.md) for customer use for first-party Commerce bulk data migrations will be available by request in Q1 2026. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
 
 * **Process**:
   * **Full data export**: Extract a complete dataset from your Adobe Commerce PaaS instance (for example, products, categories, customer accounts, historical order data, static blocks, and page content).
