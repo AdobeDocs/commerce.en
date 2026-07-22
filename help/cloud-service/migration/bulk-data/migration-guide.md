@@ -243,7 +243,7 @@ CDMS_HOST=https://commerce-data-migration-service-preprod-external.adobe.io
 CDMS_PORT=443
 
 # Production CDMS (use for prod cutover only)
-# CDMS_HOST=https://commerce-data-migration-service-prod-external.adobe.io
+# CDMS_HOST=https://na1.api.commerce.adobe.com
 # CDMS_PORT=443
 ```
 
