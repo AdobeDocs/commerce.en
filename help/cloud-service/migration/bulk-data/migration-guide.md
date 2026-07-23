@@ -133,7 +133,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 Before migration, ensure the following settings are consistent between source and target.
 
->![NOTE]
+>[!NOTE]
 >
 >To ensure a smooth migration, [!DNL Adobe] recommends that you make all core configurations in the target instance consistent with the source.
 
