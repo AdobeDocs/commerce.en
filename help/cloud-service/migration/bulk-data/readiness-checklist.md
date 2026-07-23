@@ -42,12 +42,7 @@ topic_v2:
 
 Use this checklist to prepare for a data migration from an [!DNL Adobe Commerce on Cloud] or on-premises instance to [!DNL Adobe Commerce as a Cloud Service] using the bulk data migration tool.
 
-The migration tool is distributed as part of the Commerce Deployed Engineering (CDE) engagement process. Access to the tool is gated on a signed CDE agreement, and it is not publicly available. The typical engagement lifecycle is:
-
-1. **CDE Discovery** - Complete the initial scoping call, assess data footprint and complexity, and complete the scoping questionnaire.
-1. **Deal Sign** - Put the commercial agreement in place and agree on the migration scope. At this stage, you are granted access to the migration tool.
-1. **CDE Co-Innovation and Support** - Work jointly with Adobe to install the tool in your environment and execute test migrations.
-1. **Go Live** - Run the production cutover migration and complete data integrity verification.
+The migration tool is distributed as part of the Commerce Deployed Engineering (CDE) engagement process. Access to the tool is gated on a signed CDE agreement, and it is not publicly available.
 
 This checklist covers what you need to have in place before the tool is shared ([Stage 1](#stage-1-before-tool-access)) and what you need ready to begin configuration and execution once you have the tool ([Stage 2](#stage-2-before-running-the-migration)). Review this checklist with your Adobe team early, because some items require Adobe coordination.
 
