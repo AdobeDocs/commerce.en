@@ -258,13 +258,13 @@ If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service
 >
 >To add multiple users simultaneously, you can perform a [bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
->You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] product to the user group.
+>You can also add multiple users to a role by creating a [user group](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Then you can add the [!DNL **Adobe Experience Manager as a Cloud Service**] product to the user group.
 
 1. Navigate to <https://adminconsole.adobe.com> and sign in with your Adobe ID.
 
 1. Select your organization.
 
-1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] product.
+1. On the [!UICONTROL **Products**] tab, under [!UICONTROL **Products and Services**], select the [!UICONTROL **Adobe Experience Manager as a Cloud Service**] product.
 
    ![AEM Cloud Manager product selection in Admin Console](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -293,7 +293,7 @@ If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service
 
 1. Click [!UICONTROL **Save**].
 
-To confirm the user has access, click the user's name to open their profile page. In the [!UICONTROL **Products**] section, it should say [!UICONTROL **Completed**] under the [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] product. It may take a few seconds after adding the user to see the status updated on their profile. Refresh the page to see the updated status.
+To confirm the user has access, click the user's name to open their profile page. In the [!UICONTROL **Products**] section, it should say [!UICONTROL **Completed**] under the [!UICONTROL **Adobe Experience Manager as a Cloud Service**] product. It may take a few seconds after adding the user to see the status updated on their profile. Refresh the page to see the updated status.
 
 ![User profile showing completed product access status](./assets/product-access.png){width="600" zoomable="yes"}
 
