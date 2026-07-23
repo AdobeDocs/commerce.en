@@ -264,7 +264,7 @@ Data migration is a critical and multi-faceted process that runs concurrently wi
 
 Bulk data migration involves taking a full data dump from your Adobe Commerce PaaS instance, transforming that entire dataset, and importing it into Adobe Commerce as a Cloud Service all at one time. This method is typically used for the initial population of data.
 
-* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data/migration-tool.md) for customer use for first-party Commerce bulk data migrations will be available by request in Q1 2026. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
+* **Tooling availability**: Dedicated [bulk data migration tooling](./bulk-data/migration-tool.md) for customer use for first-party Commerce bulk data migrations is in early access. The planned GA date is Q1 2027. If customers require assistance with bulk data migration beforehand, Adobe can facilitate the data transfer on their behalf by request.
 
 * **Process**:
   * **Full data export**: Extract a complete dataset from your Adobe Commerce PaaS instance (for example, products, categories, customer accounts, historical order data, static blocks, and page content).
