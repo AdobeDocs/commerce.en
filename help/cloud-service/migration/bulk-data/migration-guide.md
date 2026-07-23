@@ -133,6 +133,10 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 Before migration, ensure the following settings are consistent between source and target.
 
+>![NOTE]
+>
+>To ensure a smooth migration, [!DNL Adobe] recommends that you make all core configurations in the target instance consistent with the source.
+
 1. For B2B-enabled stores only, go to [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **General**] > [!UICONTROL **B2B Features**] and set the following options:
 
    The exact [!UICONTROL Admin] path can differ by version. Use configuration search for **B2B** if the menus do not match.
