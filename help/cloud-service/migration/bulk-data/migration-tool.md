@@ -39,7 +39,7 @@ topic_v2:
 >
 >The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process.
 
-The Bulk Data Migration Tool enables system integrators to migrate first-party core commerce data from [!DNL Adobe Commerce on Cloud] or on-premises installations to [!DNL Adobe Commerce as a Cloud Service].
+The bulk data migration tool enables system integrators to migrate first-party core commerce data from [!DNL Adobe Commerce on Cloud] or on-premises installations to [!DNL Adobe Commerce as a Cloud Service].
 
 The bulk data migration tool is a Docker-based CLI that system integrators run on their own migration machine. It connects to the source instance, extracts first-party core commerce data, uploads it to Adobe's migration service (Commerce Data Migration Service), and monitors progress through to completion. 
 
@@ -49,9 +49,11 @@ All commands are run locally, so you control when the migration starts, when mai
 
 A migration runs in three phases:
 
-1. **Extract** — The tool reads schema and data from the source instance and uploads it to Adobe's migration service.
-1. **Load** — The Commerce Data Migration Service (CDMS) loads the extracted data into the target [!DNL Adobe Commerce as a Cloud Service] tenant.
-1. **Verify** — CDMS performs automated integrity checks including REST and GraphQL API comparison and record count validation. See [Data integrity verification](#data-integrity-verification).
+The tool manages the following stages end-to-end:
+
+- **Data extraction** — extracts first-party core commerce data from the source instance ([!DNL Adobe Commerce on Cloud] or on-premises).
+- **Data loading** — loads extracted data into the target [!DNL Adobe Commerce as a Cloud Service] instance.
+- **Data integrity verification** — performs automated post-migration checks including REST and GraphQL API comparison and record count validation.
 
 >[!NOTE]
 >
@@ -59,7 +61,7 @@ A migration runs in three phases:
 
 ## Architecture
 
-The Bulk Data Migration Tool follows a distributed architecture that enables secure and efficient data migration. This tool helps system integrators migrate data from an existing [!DNL Adobe Commerce on Cloud or on-premises instance] to [!DNL Adobe Commerce as a Cloud Service]. For more information on the migration process, see the [Migration overview](../overview.md).
+The bulk data migration tool follows a distributed architecture that enables secure and efficient data migration. This tool helps system integrators migrate data from an existing [!DNL Adobe Commerce on Cloud or on-premises instance] to [!DNL Adobe Commerce as a Cloud Service]. For more information on the migration process, see the [Migration overview](../overview.md).
 
 The following image details the architecture and end-to-end data flow using the bulk data migration tool.
 
@@ -71,7 +73,7 @@ The following image details the architecture and end-to-end data flow using the 
 | --------- | ---- |
 | **Bulk data migration tool** | The Docker-based CLI that the system integrator runs on the migration machine, which orchestrates the full pipeline by reading the schema and data from the source, uploading extracted data to Adobe's migration service, and driving status transitions. |
 | **Source instance (PaaS or on-premises)** | The migration source. The tool connects through REST and GraphQL APIs and through an SSH tunnel ([!DNL Adobe Commerce on Cloud]) or through a direct database connection (on-premises) for data extraction. |
-| **Commerce Data Migration Service (CDMS) API** | Adobe-managed REST API that registers migrations, coordinates state transitions, and issues pre-signed upload URLs for extracted data. The migration tool connects to this API using the CDMS endpoint URL and IMS credentials in your `.env` configuration. |
+| **Commerce Data Migration Service (CDMS) API** | Adobe-managed REST API that registers migrations, coordinates state transitions, and provides secure endpoints for uploading extracted data. The migration tool connects to this API using the CDMS endpoint URL and IMS credentials in your `.env` configuration. |
 | **Commerce Data Migration Service (CDMS) worker** | Adobe-managed background service that loads extracted data into the target instance and runs post-load integrity verification. |
 | **[!DNL Adobe Commerce as a Cloud Service]** | The SaaS-based version of Adobe Commerce and your migration target. Receives loaded data and exposes Catalog, Live Search, and pricing rule services used during integrity verification. |
 
@@ -83,7 +85,7 @@ Data moves through the components in the following sequence:
 1. The tool registers the migration and uploads the extracted data through the CDMS API.
 1. The CDMS worker loads the data into the target [!DNL Adobe Commerce as a Cloud Service] tenant.
 1. [!DNL Adobe Commerce as a Cloud Service] ingests the loaded catalog data and builds the catalog index.
-1. The Commerce Data Migration Service (CDMS) worker verifies the loaded data through REST and GraphQL across the following services:
+1. The Commerce Data Migration Service (CDMS) worker verifies the loaded data through database checksum comparison, REST, and GraphQL across the following services:
 
    - **Catalog** (GraphQL) — product and category data.
    - **Live Search** (REST) — search index correctness.
@@ -94,20 +96,14 @@ Data moves through the components in the following sequence:
 
 ## Engagement lifecycle
 
+Access to the bulk data migration tool is provided exclusively through a Commerce Deployed Engineering (CDE) engagement. The tool is not publicly accessible.
+
 The typical engagement lifecycle is:
 
 1. **CDE Discovery** - Complete the initial scoping call, assess data footprint and complexity, and complete the scoping questionnaire.
 1. **Deal Sign** - The commercial agreement is in place and the migration scope is confirmed. At this stage, you are granted access to the migration tool.
 1. **CDE Co-Innovation and Support** - Work jointly with Adobe to install the tool in your environment and execute test migrations.
 1. **Go Live** - Run the production cutover migration and complete data integrity verification.
-
-## Eligibility and access
-
-Before requesting access, confirm that your project meets all the following requirements:
-
-- **Healthcare add-on:** The tool is not available to customers with the Healthcare (HIPAA) add-on.
-- **CDE engagement:** A signed Commerce Deployed Engineering (CDE) engagement is required. Contact your Adobe representative to initiate the engagement.
-- **Scoping questionnaire:** A completed CDE data migration scoping questionnaire is required before tool access is granted. Your Adobe representative provides this questionnaire as part of the CDE engagement.
 
 ## Tool distribution
 

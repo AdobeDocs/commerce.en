@@ -53,7 +53,7 @@ Complete or confirm the following before the migration tool and documentation ar
 - **CDE engagement** — A signed Commerce Deployed Engineering agreement must be in place. Tool access is granted at the Deal Sign stage of the CDE lifecycle. Coordinate with your Adobe team.
 - **Scoping questionnaire completed** — A scoping questionnaire is completed during CDE Discovery to validate that the migration is feasible with the current tool capabilities and to assess data footprint and complexity. Ensure this is completed with your Adobe team before you move forward.
 - **No HIPAA data confirmed** — The source instance must not contain HIPAA-regulated data. Confirm this before you proceed.
-- **IP addresses provided** — Provide your Adobe team with the list of IP addresses the migration tool will run from. This is required for network access to be configured on the Adobe side.
+- **IP addresses provided** — Provide your Adobe team with the list of static IP addresses the migration tool will run from. This is required for network access to be configured on the Adobe side.
 - **Target instance provisioned** — The target [!DNL Adobe Commerce as a Cloud Service] instance must be provisioned before migration begins. Coordinate with your Adobe team to confirm the instance is ready.
 
 ## Stage 2: before running the migration

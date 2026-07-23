@@ -63,7 +63,7 @@ topic_v2:
 
 >[!NOTE]
 >
->For more information on migration tooling, see the [Bulk Data Migration Tool](./bulk-data/migration-tool.md).
+>For more information on migration tooling, see the [bulk data migration tool](./bulk-data/migration-tool.md).
 
 ## Understanding the shift - comparing PaaS and SaaS
 
