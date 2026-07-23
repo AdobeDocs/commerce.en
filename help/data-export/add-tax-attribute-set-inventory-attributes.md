@@ -63,11 +63,11 @@ Once installed, the module functions automatically. It captures and exports the 
 
 The module adds three additional attributes to your existing product data feeds:
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### 1. Tax class information (`ac_tax_class`)
+### Tax class information (`ac_tax_class`) {#tax-class-information-ac_tax_class}
 
 **Purpose**: Provides tax classification information for each product
 
@@ -94,7 +94,7 @@ When you export tax class data to Commerce catalog services, this data becomes a
 * Integration with external tax calculation services
 * Product categorization for accounting systems
 
-### 2. Attribute set information (`ac_attribute_set`)
+### Attribute set information (`ac_attribute_set`) {#attribute-set-information-ac_attribute_set}
 
 **Purpose**: Identifies which attribute set is assigned to each product
 
@@ -123,7 +123,7 @@ When you export attribute set data to Commerce catalog services, it enables adva
 * Catalog management and organization
 * Third-party system integration requiring attribute set context
 
-### 3. Advanced inventory data (`ac_inventory`)
+### Advanced inventory data (`ac_inventory`) {#advanced-inventory-data-ac_inventory}
 
 **Purpose**: Provides inventory management settings for each product
 
