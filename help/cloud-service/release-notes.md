@@ -67,13 +67,42 @@ The following items are currently only available in Sandbox environments and are
 
 >[!BEGINSHADEBOX]
 
+### Edit orders with REST
+
+>[!IMPORTANT]
+>
+>This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+New REST API endpoints replicate the [!DNL Commerce Admin] [!UICONTROL **Edit Order**] feature allowing integrations to edit an order programmatically:
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/V1/orders/{orderId}/edit/start` | Copy the order into a new editable cart and return the cart ID. |
+| `POST` | `/V1/orders/{orderId}/edit/submit` | Submit the modified cart as a new order and cancel the original order. |
+
+After calling `edit/start`, modify the returned cart using the standard cart REST endpoints, then call `edit/submit`. The new order inherits the original order's payment method unless you override it through the cart, and it is created as a linked replacement for the canceled original. Both endpoints require the `Magento_Sales::actions_edit` ACL resource. <!-- ACCS-1284 -->
+
 ### Filter orders and invoices by company
 
 The `GET /V1/orders` and `GET /V1/invoices` REST API endpoints now support filtering by `company_id` and `company_name`, enabling B2B integrations to retrieve orders or invoices for a specific company in a single request. <!-- ACCS-1111, CCSAAS-5076 -->
 
-### List custom email templates through the API
+### Import more coupon codes per file
 
-The new `GET /V1/custom-email/templates` REST API endpoint returns your [custom email templates](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), including each template's ID, code, and subject. Integrations can use a returned template ID with the `POST /V1/custom-email/send` endpoint instead of looking up the ID manually. <!-- CCSAAS-5089 -->
+The per-file bulk coupon import cap can be adjusted by contacting your Adobe Commerce Customer Success Manager or creating a support ticket. <!-- CCSAAS-5176 -->
+
+### Manage custom email templates through the API
+
+The following new REST API endpoints let integrations list, retrieve, and create [custom email templates](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/):
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/V1/custom-email/templates` | List your custom email templates, returning each template's ID, code, subject, and type. |
+| `GET` | `/V1/custom-email/templates/{id}` | Retrieve a single template, including its body and styles. |
+| `POST` | `/V1/custom-email/templates` | Create a custom email template and return its server-assigned ID. |
+
+Use a returned template ID with the `POST /V1/custom-email/send` endpoint instead of looking up the ID manually.
+
+All `custom-email` endpoints require access to the `Marketing > Communications > Email template` [role resource](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources). <!-- CCSAAS-5089, CCSAAS-5090 -->
 
 ### Manage the full order chain through the REST API
 
@@ -95,6 +124,26 @@ New `orderChain` REST API endpoints let integrations modify an order using its I
 | `GET` | `/V1/orderChain/{id}/statuses` | Retrieve the current order status. |
 
 `GET` endpoints that support filtering on invoices, shipments, credit memos, and returns now support filtering by `order_original_id`. Filtering by `order_original_id` returns details about the entire order chain, not just the single order. An example endpoint that supports this feature is `GET /V1/invoices`.  <!-- ACCS-1004, ACCS-1005 -->
+
+### Search the order grid by custom attribute values
+
+>[!IMPORTANT]
+>
+>This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+Merchants can now filter the [!DNL Commerce Admin] order grid by the values stored in order custom attributes. A [!UICONTROL **Custom Attributes**] filter is available in the order grid filter row.<!-- ACCS-923 -->
+
+### Set a nominated inventory source on cart items
+
+The new `setNominatedSourceOnCartItems` GraphQL mutation assigns a specific inventory source to cart items, supporting scenarios such as in-store pickup (BOPIS) and ship-from-store. The mutation accepts a `cart_id` and a list of items, each with a `cart_item_uid` and a `source_code`, and returns any `rejected_items` with a structured error code: `UNKNOWN_SOURCE`, `SOURCE_DISABLED`, `NOT_ENOUGH_QTY`, or `SKU_SOURCE_CONFLICT`. Each SKU in a cart resolves to a single nominated source, and passing a null or empty `source_code` clears the nomination. <!-- ACCS-932 -->
+
+### Subscribe to an event for carts matching reminder rules
+
+A new `observer.reminder_matched_carts` event is emitted after the email reminder rules run their matching logic, carrying information about the carts that matched. Integrations can subscribe to this event and forward the data to an external system, such as a marketing platform, instead of relying on the native reminder emails. <!-- CCSAAS-5173 -->
+
+### Suppress transactional emails by area or template
+
+A new [!UICONTROL **Email Suppression**] configuration ([!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Email Suppression**]) lets administrators selectively stop [!DNL Commerce] from sending transactional emails. You can suppress emails by functional area (such as Customer Account, Order Management, Returns, Checkout, Marketing, or B2B) or by an exact list of template identifiers.<!-- ACCS-1025 -->
 
 ### View order modification history in the Admin
 
@@ -119,6 +168,28 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue in the [!DNL Commerce Admin] where the left navigation menu could disappear. <!-- ACCS-1035 -->
 
 * Improved the performance of assigning and unassigning in shared catalogs. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
+
+* Improved [!DNL AEM Assets] integration performance. <!-- ACAP-1242 -->
+
+* Fixed an error that could occur when adding a simple product SKU to a configurable product in the [!DNL Commerce Admin]. <!-- ACCS-1132 -->
+
+* Fixed an issue where the message queue could stop processing new messages when it accumulated too many out-of-date records. <!-- ACCS-1292 -->
+
+* Fixed an issue where Admin order creation failed with a "SKU not available in the shared catalog" error. <!-- ACCS-1318 -->
+
+* Resolved a crash that occurred when creating or editing bundled products. <!-- CCSAAS-5211 -->
+
+* Fixed an issue where order placement did not reserve inventory at the nominated source for items using in-store pickup or ship-from-store. <!-- ACCS-1374 -->
+
+* Stale custom fees are now cleared from the cart query response. <!-- ACCS-1400 -->
+
+* Resolved an issue in the [!DNL AEM Assets] integration where product asset-role attributes lost locale data during catalog export. <!-- ACCS-1401 -->
+
+* Improved the warning received when saving an integration indicating that [!DNL Dynamic Media] is not enabled. <!-- ACAP-1298 -->
+
+* Event name and alias fields are now validated to be lowercase when you subscribe to an event. <!-- CEXT-6164 -->
+
+* Webhook regex rule patterns are now validated when you save a conditional webhook. <!-- CEXT-6287 -->
 
 {{accs-release}}
 
