@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### July 15, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Documented <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">self-service onboarding</a> for the AEM Assets integration on AEM release <code>2026.5.26309</code> and later, added a new <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/metadata">Commerce metadata in AEM Assets</a> topic, and added a guide to <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">connect AEM Assets to your storefront</a> via Da.live.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 7, 2026
 
 <table style="table-layout:auto;">
