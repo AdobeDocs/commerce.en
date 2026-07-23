@@ -506,7 +506,7 @@ After [!DNL Live Search] is enabled, the Data Export extension synchronizes Comm
 
 ### Inventory management
 
-[!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly known as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#updating-live-search) the dependency module `commerce-data-export` to version 102.2.0+.
+[!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce. To enable full support, you must [update](install.md#updating-live-search) the dependency module `commerce-data-export` to version 102.2.0+.
 
 [!DNL Live Search] returns a boolean noting whether a product is available within Inventory Management, but does not contain information about which source has the stock.
 
@@ -547,7 +547,7 @@ This module adds additional contexts to GraphQL queries:
 
 ### PWA support
 
-[!DNL Live Search] works with PWA Studio but users see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql do not work correctly. There are also performance differences.
+[!DNL Live Search] works with PWA Studio but storefront developers might see slight differences compared to other Commerce implementations, particularly in certain GraphQL-driven scenarios and overall response characteristics. 
 
 - The current PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
 - [!DNL Live Search] in PWA does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). As a result, search reporting and intelligent merchandising do not work on PWA storefronts.

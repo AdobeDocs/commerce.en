@@ -48,14 +48,14 @@ To request and receive product data from a Commerce instance using the [Catalog 
 
 ## Endpoints
 
-[!DNL Catalog Service] There are two endpoints available for onboarding:
+[!DNL Catalog Service] has two endpoints available for onboarding:
 
 - Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`)—used for testing and validation before going live
 - Production (`https://catalog-service.adobe.io/graphql`)—used for live traffic for Commerce merchants and websites
 
 All Commerce test instances use the Sandbox endpoint.
 
-Perform all Load testing on the Sandbox endpoint. Before you begin load testing, submit a [Support ticket](/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) so that the Services team can anticipate the additional server traffic.
+Perform all Load testing on the Sandbox endpoint. Before you begin load testing, submit a [Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#create-a-support-ticket-with-experience-league) so that the Services team can anticipate the additional server traffic.
 
 ## Installation and configuration
 
