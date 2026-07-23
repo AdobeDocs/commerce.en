@@ -143,9 +143,7 @@ A new `observer.reminder_matched_carts` event is emitted after the email reminde
 
 ### Suppress transactional emails by area or template
 
-A new [!UICONTROL **Email Suppression**] configuration ([!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Email Suppression**]) lets administrators selectively stop [!DNL Commerce] from sending transactional emails. You can suppress emails by functional area (such as Customer Account, Order Management, Returns, Checkout, Marketing, or B2B) or by an exact list of template identifiers.
-
-Admin and security emails, such as two-factor authentication and admin password resets, cannot be suppressed. <!-- ACCS-1025 -->
+A new [!UICONTROL **Email Suppression**] configuration ([!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Email Suppression**]) lets administrators selectively stop [!DNL Commerce] from sending transactional emails. You can suppress emails by functional area (such as Customer Account, Order Management, Returns, Checkout, Marketing, or B2B) or by an exact list of template identifiers.<!-- ACCS-1025 -->
 
 ### View order modification history in the Admin
 
