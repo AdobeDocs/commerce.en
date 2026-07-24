@@ -47,8 +47,6 @@ All commands are run locally, so you control when the migration starts, when mai
 
 ## Migration workflow
 
-A migration runs in three phases:
-
 The tool manages the following stages end-to-end:
 
 - **Data extraction** — extracts first-party core commerce data from the source instance ([!DNL Adobe Commerce on Cloud] or on-premises).

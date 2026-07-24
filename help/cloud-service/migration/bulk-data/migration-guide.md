@@ -137,21 +137,6 @@ Before migration, ensure the following settings are consistent between source an
 >
 >To ensure a smooth migration, [!DNL Adobe] recommends that you make all core configurations in the target instance consistent with the source.
 
-1. For B2B-enabled stores only, go to [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **General**] > [!UICONTROL **B2B Features**] and set the following options:
-
-   The exact [!UICONTROL Admin] path can differ by version. Use configuration search for **B2B** if the menus do not match.
-
-   | Option | Value |
-   | --- | --- |
-   | Enable Company | Yes |
-   | Enable Shared Catalog | Yes |
-   | Enable B2B Quote | No |
-   | Enable Shared Catalog direct products price assigning | No |
-   | Enable Quick Order | Yes |
-   | Enable Requisition List | Yes |
-
-1. Navigate to [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Sales**] > [!UICONTROL **Sales**] > [!UICONTROL **Orders, Invoices, Shipments, Credit Memos Archive**] and set [!UICONTROL **Enable archiving**] to [!UICONTROL **Yes**].
-
 ### Configure target SaaS and IMS credentials
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496167)
