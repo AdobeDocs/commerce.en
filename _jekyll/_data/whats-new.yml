@@ -2,8 +2,18 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jul 17 18:09:34 2026
+updated: Fri Jul 24 16:37:55 2026
 entries:
+- description: Updated Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: July 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/679
+  merge_commit: ed8bf2044f77432eb38df3c3cbb13b7708f3c33b
+  contributor: jhoover_adobe
+  labels:
+  - major-update
 - description: Documented [self-service onboarding](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service)
     for the AEM Assets integration on AEM release `2026.5.26309` and later, added
     a new [Commerce metadata in AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/metadata)
