@@ -132,6 +132,20 @@ Store owners can set strategies such as the following. Exact labels and time win
 
 Select the strategy for your rule. The **[!UICONTROL Test your rule]** pane shows expected results for search-oriented rules; **category rules** use the category preview.
 
+#### Behavioral signals for configurable products and variants {#behavioral-signals-variants}
+
+Intelligent ranking collects behavioral signals, such as views, add-to-cart events, and purchases, against the specific product a shopper interacts with. For a configurable product, this means signals are recorded at the **variant** (simple product) level, not against the configurable parent.
+
+When ranking a configurable product, intelligent ranking aggregates the behavioral signals collected from all of its variants and rolls them up to the configurable parent. A configurable product's ranking score reflects the combined signals of every variant, not just one.
+
+This aggregation happens within the scope of the category being browsed. A variant only contributes its behavioral signals to the configurable parent's ranking score for categories to which that **variant** is assigned. If a variant is missing from a category, its signals do not count toward the parent's ranking in that category, even when the configurable parent itself is assigned there.
+
+**Best practice:** Review category assignments for all product variants, especially in catalogs that use size-, color-, or other variant-specific category structures, to confirm that every variant is assigned to each category where it is expected to appear and influence ranking.
+
+**Example:**
+
+A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on the 200g category page, even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
+
 #### Intelligent ranking boost {#intelligent-ranking-boost}
 
 For **Recommended for you**, **Most viewed**, **Most purchased**, **Most added to cart**, and **Trending**, the editor shows **[!UICONTROL Intelligent Ranking Boost]** (the boost factor). It is not used when you select **None**.
@@ -193,6 +207,7 @@ See [search rules](./best-practice.md#tips-to-optimize-search-rules) to learn ho
 #### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
+- If intelligent ranking results do not correlate with actual sales or view performance, confirm that all relevant product variants are assigned to the category being reviewed. Missing variant category assignments are a common and easily overlooked cause of unexpected ranking behavior. See [Behavioral signals for configurable products and variants](#behavioral-signals-variants).
 - To ensure intelligent ranking works correctly for **search**, make sure that the **Search Weight** for any attributes that are used for search or filtering (facets) is `5` or less. (This guidance applies to search indexing, not to category-only merchandising flows.)
 
 For information about setting search weights, see the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/).
