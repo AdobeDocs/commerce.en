@@ -43,7 +43,7 @@ Complete this guide after you finish all items in the [Customer readiness checkl
 - An OAuth 2.0 Server-to-Server credential (client ID and client secret) created in the [Adobe Developer Console](https://developer.adobe.com/console/).
 - Your IMS organization ID, in the format `<org>@AdobeOrg`. The organization must own the target tenant.
 - The target `tenantId`, a 22-character, alphanumeric IMS tenant ID.
-- Your outbound egress IP addresses allowlisted for the CDMS gateway. Coordinate with the Adobe team if you are unsure.
+- Outbound egress IP addresses submitted to and allowlisted by Adobe for the CDMS gateway. Coordinate with the Adobe team if you are uncertain about the IP addresses or their status.
 - The region-specific service host from the [Service hosts by environment and region](#service-hosts-by-environment-and-region) table.
 
 ## Generate an IMS access token

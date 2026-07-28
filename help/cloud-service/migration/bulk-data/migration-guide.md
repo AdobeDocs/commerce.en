@@ -58,6 +58,8 @@ Before you begin, confirm that you have completed every item in the [Customer re
 
 ## Set up the tool package
 
+Set up the environment for the bulk data migration:
+
 >[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. Extract the contents of `ccsaas-migration-tools.tar.gz`.
@@ -76,7 +78,7 @@ The `.example.env` and `.my.cnf.example` files in the repository root are the st
 
 | Example file | Copy to | What it covers |
 | --- | --- | --- |
-| `.example.env` | `.env` | Annotated list of all supported environment variables: performance (threads, chunks, `MEMORY_LIMIT_PER_THREAD`, timeouts), CDMS, IMS, target SaaS, source URLs and OAuth, tests, logging, S3, migration strategy, and optional PaaS values (`MAGENTO_CLOUD_CLI_TOKEN` when `id=` is set in `.my.cnf`). |
+| `.example.env` | `.env` | Annotated list of all supported environment variables: performance, CDMS, IMS, target SaaS, source URLs authentication, OAuth, and optional PaaS values (`MAGENTO_CLOUD_CLI_TOKEN` when `id=` is set in `.my.cnf`). Full variable list is available in the `.env` file. |
 | `.my.cnf.example` | `.my.cnf` | Reference `[section]` layouts for on-premises [!DNL MySQL] and PaaS (`id=project:environment`). The `[section]` name must match `SOURCE_CONNECTION_NAME` in `.env`. Fields include `user`, `password`, `host`, `port`, `database`, and `id=` for PaaS. |
 
 ## Configure the environment file
@@ -89,6 +91,16 @@ The `.env` file in the project root is the migration and extraction configuratio
 
 Edit the `.env` file and set at least the following values correctly. For the full list of supported variables, refer to the inline annotations in `.example.env`.
 
+```shell-session
+SOURCE_INSTANCE_URL=https://<source-host>
+SOURCE_INSTANCE_GRAPHQL_URL=https://<source-host>/graphql
+SOURCE_INSTANCE_REST_URL=https://<source-host>/rest
+SOURCE_INSTANCE_CONSUMER_KEY=<consumer_key>
+SOURCE_INSTANCE_CONSUMER_SECRET=<consumer_secret>
+SOURCE_INSTANCE_ACCESS_TOKEN=<access_token>
+SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
+```
+
 ### Configure source OAuth credentials
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496142)
@@ -96,9 +108,6 @@ Edit the `.env` file and set at least the following values correctly. For the fu
 These four values sign requests from the migration tool to the source store APIs. To obtain them, open the source [!UICONTROL Admin] and go to [!UICONTROL **System**] > [!UICONTROL **Extensions**] > [!UICONTROL **Integrations**]. Create or open an integration, and then copy the values into `.env`:
 
 ```shell-session
-SOURCE_INSTANCE_URL=https://<source-host>
-SOURCE_INSTANCE_GRAPHQL_URL=https://<source-host>/graphql
-SOURCE_INSTANCE_REST_URL=https://<source-host>/rest
 SOURCE_INSTANCE_CONSUMER_KEY=<consumer_key>
 SOURCE_INSTANCE_CONSUMER_SECRET=<consumer_secret>
 SOURCE_INSTANCE_ACCESS_TOKEN=<access_token>
@@ -382,6 +391,8 @@ Maintenance mode is required on the source instance to ensure data consistency d
 
 Run while the source instance is live and accepting traffic. REST and GraphQL access to the source must be fully available. Do not enable maintenance mode before this phase completes.
 
+Return to the server root and run:
+
 ```bash
 ./bin/console migration:before-maintenance
 ```
@@ -397,7 +408,7 @@ Run while the source instance is live and accepting traffic. REST and GraphQL ac
 
 Enable maintenance mode on the source and pause all activities that write to or impact the database, including scheduled jobs, third-party integrations, order processing, and media asset synchronization.
 
-On the source Commerce server (install root):
+On the source Commerce server (install root), run:
 
 ```bash
 bin/magento maintenance:enable
@@ -421,9 +432,9 @@ Run with the source instance in maintenance mode. The source must remain frozen 
 
 **Phase 4 — Disable maintenance mode (manual, conditional)**
 
-Disable maintenance mode after **Phase 3** succeeds if traffic to the source instance needs to be re-enabled. This step is also required before you run **Phase 5** (cleanup), because cleanup communicates with the source through REST and fails with `HTTP 503` if maintenance mode is still active.
+This phase disables maintenance mode, re-enabling traffic to the source instance. This step is required before running the cleanup phase, because cleanup communicates with the source through REST and fails with `HTTP 503` if maintenance mode is still active.
 
-On the source Commerce server:
+On the source Commerce server, run:
 
 ```bash
 bin/magento maintenance:disable
@@ -436,6 +447,8 @@ Remove the synthetic test customers and orders created in **Phase 1** from the s
 >[!NOTE]
 >
 >Skip this phase if `SKIP_TEST_DATA_CREATION=true` is set in `.env`, because no test data was created.
+
+Return to the server root and run:
 
 ```bash
 ./bin/console migration:cleanup

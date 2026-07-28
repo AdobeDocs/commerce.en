@@ -92,9 +92,9 @@ The migration tool runs on a machine you control, such as a dedicated jump box. 
 ### Migration planning
 
 - **Migration approach decided** — Determine which approach fits your use case before you start.
-  - Single-phase migration - (no maintenance mode) suits dry runs, dev or sandbox environments, or any migration where the source can remain live during extraction.
-  - Multi-phase migration - (maintenance mode required) is required for production migrations where the source must be frozen during extraction to ensure data consistency.
-- **Maintenance window planned** — (multi-phase only) plan and communicate the maintenance window in advance. The source instance is unavailable to end users for the duration of the extraction and loading phases.
+  - Single-phase migration - No maintenance mode required. Suits dry runs, dev or sandbox environments, or any migration where the source can remain live during extraction.
+  - Multi-phase migration - Maintenance mode is required. A multi-phase migration is required for production migrations where the source must be frozen during extraction to ensure data consistency.
+- **Maintenance window planned** — Applies to multi-phase migrations only. Plan and communicate the maintenance window in advance. The source instance is unavailable to end users for the duration of the extraction and loading phases.
 - **Store view code confirmed** — Identify the store view code (`STORE_CODE`) on the source instance. It defaults to `default` but must match the actual code in [!UICONTROL Admin] > [!UICONTROL Stores] > [!UICONTROL All Stores]. An incorrect store code can affect data operations during migration.
 
 After you confirm all items, you are ready to verify service access with the [migration service access guide](cdms-access.md), and then begin the configuration and execution steps in the [migration guide](migration-guide.md).
