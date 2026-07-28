@@ -294,7 +294,7 @@ Work from the extracted project directory with write access.
 
 ### Keep the session alive over SSH
 
-If you connect over SSH, a dropped network can kill your shell and interrupt a long migration. The GNU `screen` keeps the session alive on the server:
+If you connect over SSH, a dropped network can kill your shell and interrupt a long migration. The GNU `screen` command keeps the session alive on the server:
 
 ```bash
 screen -S migration          # new session named "migration"
@@ -395,7 +395,7 @@ Run while the source instance is live and accepting traffic. REST and GraphQL ac
 
 **Phase 2 — Enable maintenance mode (manual)**
 
-Before you run **Phase 3**, enable maintenance mode on the source and pause all activities that write to or impact the database, including scheduled jobs, third-party integrations, order processing, and media asset synchronization.
+Enable maintenance mode on the source and pause all activities that write to or impact the database, including scheduled jobs, third-party integrations, order processing, and media asset synchronization.
 
 On the source Commerce server (install root):
 

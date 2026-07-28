@@ -70,7 +70,7 @@ The following image details the architecture and end-to-end data flow using the 
 | Component | Role |
 | --------- | ---- |
 | **Bulk data migration tool** | The Docker-based CLI that the system integrator runs on the migration machine, which orchestrates the full pipeline by reading the schema and data from the source, uploading extracted data to Adobe's migration service, and driving status transitions. |
-| **Source instance (PaaS or on-premises)** | The migration source. The tool connects through REST and GraphQL APIs and through an SSH tunnel ([!DNL Adobe Commerce on Cloud]) or through a direct database connection (on-premises) for data extraction. |
+| **Source instance (Commerce on Cloud or on-premises)** | The migration source. The tool connects through REST and GraphQL APIs and through an SSH tunnel ([!DNL Adobe Commerce on Cloud]) or through a direct database connection (on-premises) for data extraction. |
 | **Commerce Data Migration Service (CDMS) API** | Adobe-managed REST API that registers migrations, coordinates state transitions, and provides secure endpoints for uploading extracted data. The migration tool connects to this API using the CDMS endpoint URL and IMS credentials in your `.env` configuration. |
 | **Commerce Data Migration Service (CDMS) worker** | Adobe-managed background service that loads extracted data into the target instance and runs post-load integrity verification. |
 | **[!DNL Adobe Commerce as a Cloud Service]** | The SaaS-based version of Adobe Commerce and your migration target. Receives loaded data and exposes Catalog, Live Search, and pricing rule services used during integrity verification. |
