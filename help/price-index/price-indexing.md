@@ -23,7 +23,7 @@ topic_v2:
 ---
 # SaaS Price Indexing
 
-SaaS pricing indexing optimizes site performance by offloading resource-intensive tasks—like indexation and price calculation—from the Commerce application to Adobe's Cloud infrastructure. This approach enables merchants to rapidly scale resources to accelerate price indexation times and deliver price updates to the storefront and connected Commerce services more quickly.
+SaaS pricing indexing optimizes site performance by offloading resource-intensive tasks—like indexation and price calculation—from the Commerce application to Adobe's Cloud infrastructure. This approach enables merchants to scale resources rapidly to accelerate price indexation times and deliver price updates to the storefront and connected Commerce services more quickly.
 
 The following diagram shows the indexing data flow to SaaS services when Commerce is using the [price indexing](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) process included in the Commerce application:
 
@@ -35,9 +35,9 @@ With SaaS price indexing enabled, the data flow changes. Price indexing is perfo
 
 All merchants can benefit from using SaaS price indexing, but merchants that have projects with the following characteristics can realize the greatest gains:
 
-* **Constant price changes**–Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
-* **Multiple websites and/or customer groups**–Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups.
-* **Many unique prices across websites or customer groups**–Merchants with extensive shared product catalogs that contain unique prices across websites or customer groups. Examples include B2B merchants that have pre-negotiated prices or brands with different pricing strategies.
+* **Constant price changes** – Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
+* **Multiple websites and/or customer groups** – Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups.
+* **Many unique prices across websites or customer groups** – Merchants with extensive shared product catalogs that contain unique prices across websites or customer groups. Examples include B2B merchants that have pre-negotiated prices or brands with different pricing strategies.
 
 ## Use SaaS Price Indexing
 
@@ -45,7 +45,7 @@ SaaS price indexing is enabled automatically when you install Adobe Commerce Ser
 
 ### Requirements
 
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. For details, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Prerequisites
 
@@ -54,7 +54,6 @@ SaaS price indexing is enabled automatically when you install Adobe Commerce Ser
   * [Catalog Service](../catalog-service/overview.md)
   * [Live Search](../live-search/overview.md)
   * [Product Recommendations](../product-recommendations/guide-overview.md)
-
 
 >[!NOTE]
 >
@@ -78,11 +77,11 @@ Use the [Commerce CLI](../data-export/data-export-cli-commands.md) to manually r
 
 >[!NOTE]
 >
->If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) to enable it.
+>To enable the Data Feed Sync Status page if it is not available in the Commerce Admin for Commerce on Cloud or on-premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Prices for custom product types
 
-Price calculations are supported for custom product types such as base price, special price, group price, catalog rule price, and so on.
+Price calculations are supported for custom product types such as base, special, group, and catalog rule prices.
 
 If you have a custom product type that uses a specific formula to calculate the final price, you can extend the behavior of the product price feed.
 
