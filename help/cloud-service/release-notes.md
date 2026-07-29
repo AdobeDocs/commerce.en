@@ -59,11 +59,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## July 2026 - release #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-The following items are currently only available in Sandbox environments and are scheduled to move to Production environments on July 28, 2026.
+The following items are available on Production environments as of July 28, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -73,7 +73,7 @@ The following items are currently only available in Sandbox environments and are
 >
 >This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
 
-New REST API endpoints replicate the [!DNL Commerce Admin] [!UICONTROL **Edit Order**] feature allowing integrations to edit an order programmatically:
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) replicate the [!DNL Commerce Admin] [!UICONTROL **Edit Order**] feature allowing integrations to edit an order programmatically:
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
@@ -110,7 +110,7 @@ All `custom-email` endpoints require access to the `Marketing > Communications >
 >
 >This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
 
-New `orderChain` REST API endpoints let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
+New [`orderChain` REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ A new `observer.reminder_matched_carts` event is emitted after the email reminde
 
 ### Suppress transactional emails by area or template
 
-A new [!UICONTROL **Email Suppression**] configuration ([!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Email Suppression**]) lets administrators selectively stop [!DNL Commerce] from sending transactional emails. You can suppress emails by functional area (such as Customer Account, Order Management, Returns, Checkout, Marketing, or B2B) or by an exact list of template identifiers.<!-- ACCS-1025 -->
+A new [Email Suppression](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) configuration ([!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Email Suppression**]) lets administrators selectively stop [!DNL Commerce] from sending transactional emails. You can suppress emails by functional area (such as Customer Account, Order Management, Returns, Checkout, Marketing, or B2B) or by an exact list of template identifiers.<!-- ACCS-1025 -->
 
 ### View order modification history in the Admin
 
