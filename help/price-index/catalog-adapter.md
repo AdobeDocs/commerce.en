@@ -35,7 +35,7 @@ When you enable the [!DNL Catalog Adapter], price indexing and operations are af
 
 ## Requirements
 
-- Adobe Commerce 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. For details, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - Your Adobe Commerce environment must have one of the following Commerce services enabled and configured:
 
   - [Live Search](../live-search/install.md)
@@ -46,9 +46,9 @@ When you enable the [!DNL Catalog Adapter], price indexing and operations are af
 
 The Catalog Adapter extension is a Composer metapackage that installs the following modules:
 
-- **Price Indexer Disabler**–This module disables the price index in the Commerce application so that prices are delivered via SaaS price indexing. The product price indexer in the Commerce application cannot be turned on when the SaaS price indexing extension is installed.
-- **Prices Provider**–This module provides prices for products from the Adobe Commerce Service. It forms the search query and obtains the prices for the products on the frontend.
-- **Catalog Service Search Adapter**–This module transfers prices from the Adobe Commerce application to an Adobe Commerce Service in response to a product search request.
+- **Price Indexer Disabler** – This module disables the price index in the Commerce application so that prices are delivered via SaaS price indexing. The product price indexer in the Commerce application cannot be turned on when the SaaS price indexing extension is installed.
+- **Prices Provider** – This module provides prices for products from the Adobe Commerce Service. It generates the search query and obtains the prices for the products on the frontend.
+- **Catalog Service Search Adapter** – This module transfers prices from the Adobe Commerce application to an Adobe Commerce Service in response to a product search request.
 
 ## Installation steps
 
@@ -92,7 +92,7 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
    git push origin <branch-name>
    ```
 
-   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-premises]
 
@@ -142,7 +142,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Disable Product Price indexer for Headless Storefront scenario
 
-If you have a headless Commerce instance, you might need to disable the Adobe Commerce product price indexer to reduce load on your Adobe Commerce instance. You can complete this task by installing the `magento/module-price-indexer-disabler` module:
+If you have a headless Commerce instance, disable the Adobe Commerce product price indexer to reduce load on your Adobe Commerce instance. You can complete this task by installing the `magento/module-price-indexer-disabler` module:
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -169,7 +169,7 @@ The following are some common `[!DNL Catalog Adapter]` scenarios.
 
 ### Headless Commerce instances
 
-- A merchant with a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
+- A merchant using a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
 - No reliance on the default Adobe Commerce product price indexer
 
 1. Install the `magento/module-price-indexer-disabler` module from the [!DNL Catalog Adapter] package.
