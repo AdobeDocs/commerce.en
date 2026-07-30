@@ -127,7 +127,7 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
 - [Live Search](../live-search/overview.md){target="_blank"}—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool. For setup instructions, see [Setting up Live Search](../live-search/workspace.md){target="_blank"}.
 - [Product Recommendations](../product-recommendations/guide-overview.md){target="_blank"}—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more. For configuration instructions, see [Settings](../product-recommendations/admin/workspace.md){target="_blank"}.
 - [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
-- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payments-home.md){target="_blank"}. 
+- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md){target="_blank"}. 
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
