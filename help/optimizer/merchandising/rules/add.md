@@ -27,7 +27,7 @@ topic_v2:
 ---
 # Create and Manage Rules
 
-To build a rule, open the rule editor, choose a **rule type** (search conditions, default listing, category pages, or product attributes), then define conditions and ranking where they apply, test the results, and publish the rule.
+To build a rule, open the rule editor, choose a **rule type** (search conditions, default listing, or category pages), then define conditions and ranking where they apply, test the results, and publish the rule.
 
 ## Create a rule {#create-a-rule}
 
@@ -47,7 +47,6 @@ Each rule type has an information icon in the editor with a short explanation. U
 | **All products rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
 | **Category rule** | Applies merchandising and ranking to one or more selected categories, controlling product order on those category pages. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
-| **Attribute rule** | Automatically applies a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more product attribute conditions (for example, brand or category), without requiring you to select individual SKUs. |
 
 In the **Build your rule** section, you define the rule name, schedule, whether the rule applies to all listings or to specific search conditions, and ranking types.
 
@@ -80,7 +79,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), and [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 **Multiple conditions**
 
@@ -99,7 +98,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and is triggered more often in the storefront than the other.
 
 1. To add another condition, click **Add condition** and repeat the process.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), and [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 >[!TAB Category rule]
 
@@ -112,18 +111,7 @@ Category rules control how products are ordered on **category pages**. You combi
    - **Apply to subcategories** - Applies the rule to subcategories that do not already have an active merchandising rule defined.
    - **Preview** - Displays how the category page would appear on your storefront.
 
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
-
->[!TAB Attribute rule]
-
-An attribute rule applies a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action automatically to every product that matches one or more attribute conditions, instead of requiring you to select individual SKUs. Use an attribute rule to scale merchandising across large catalogs, for example, boosting every product from a given brand, or burying every product in a discontinued color.
-
-ADD SCREENSHOT OF THIS RULE TYPE WHEN UI IS AVAILABLE
-
-1. Under **Attribute expression**, select the **Attribute** to target from the list of filterable attributes, such as **Brand**, **Category**, **Categorization**, **Country**, **Manufacturer**, **Model**, or **Model year**.
-1. In the **Value** field, enter the attribute value the rule should match. You can enter multiple values.
-1. To add another condition, click to add another **Attribute expression** and repeat the previous two steps. Multiple attribute expressions in the same rule are combined with `OR` logic; a product matches the rule if it satisfies any one of the expressions.
-1. See [Attribute-based merchandising](#attribute-based-merchandising) to set the action (**Boost**, **Bury**, or **Hide**) applied to matching products, and how attribute events interact with intelligent ranking and with each other.
+1. Set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), and [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
 
 >[!ENDTABS]
 
@@ -253,39 +241,35 @@ Or events can be set manually:
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
-### Attribute-based merchandising {#attribute-based-merchandising}
+### Attribute ranking {#attribute-ranking}
 
-Attribute-based merchandising lets you automatically **Boost**, **Bury**, or **Hide** every product that matches one or more attribute conditions, without selecting individual SKUs. Attribute events are available on the dedicated **Attribute rule** type (see [Rule types](#rule-types)), as well as on **All products rules**, **search rules**, and **category rules**.
+**Attribute ranking** automatically applies a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, without requiring you to select individual SKUs. Attribute ranking appears in the rule editor alongside [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking), and is available for the **All products rule**, **search rules**, and **category rules**. Use it to scale merchandising across large catalogs, for example, boosting every product from a given brand, or burying every product in a discontinued color.
 
-**Supported attributes**
+![Attribute Ranking](../../assets/attribute-rank-rule.png)
 
-Attribute conditions currently support filterable, text-based attributes, such as **Brand**, **Category**, **Categorization**, **Country**, **Manufacturer**, **Model**, and **Model year**. Numeric comparisons (for example, greater than or less than) and attributes that store multiple values on a single product are not yet supported.
+1. In the rule editor, expand **[!UICONTROL Attribute ranking]**.
+1. Click **[!UICONTROL Add attribute]** to add an attribute condition.
+1. From the dropdown at the top of the condition, select the action to apply to matching products: **Boost**, **Bury**, or **Hide**.
+1. Under **Attribute**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
+1. Under **Value**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **Selected values**. A product matches the condition if it has any one of the listed values.
+1. For **Boost** and **Bury**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
+1. To add another condition, click **Add attribute** and repeat the previous steps.
 
-**Actions**
+Pinning is not available in attribute ranking, because pinning assigns one product to one exact position, while an attribute condition can match many products at once. To pin a specific product, use [Manual ranking](#manual-ranking) on that SKU directly.
 
-- **Boost** — Moves every matching product higher in the listing.
-- **Bury** — Moves every matching product lower in the listing.
-- **Hide** — Excludes every matching product from the listing.
+**How attribute ranking interacts with intelligent ranking**
 
-Pinning is not available for attribute events, because pinning assigns one product to one exact position, while an attribute event can match many products at once. To pin a specific product, use [Manual ranking](#manual-ranking) on that SKU directly.
+When a rule combines an intelligent ranking strategy with one or more attribute conditions, the attribute action takes priority for any product it matches. Intelligent ranking continues to order the remaining, unmatched products.
 
-**Boost strength**
+**When attribute conditions conflict with each other**
 
-Boost and Bury attribute events currently use the same fixed default strength as manual ranking events; there is no separate boost value to configure. A future release adds a configurable boost, similar to **[!UICONTROL Intelligent Ranking Boost]**, so you can decide how strongly an attribute event moves matching products.
+A single product can match more than one attribute condition, whether within the same rule or across different rules. When matching conditions specify conflicting actions for the same product, **Hide** takes priority over **Boost** and **Bury**.
 
-**How attribute events interact with intelligent ranking**
-
-When a rule combines an intelligent ranking strategy with one or more attribute events, the attribute event takes priority for any product it matches. Intelligent ranking continues to order the remaining, unmatched products.
-
-**When attribute events conflict with each other**
-
-A single product can match more than one attribute event, for example, if it satisfies the conditions of two different rules. When matching events specify conflicting actions for the same product, **Hide** takes priority over **Boost** and **Bury**.
-
-For example, one rule boosts all products with `season = Christmas`, and another rule hides all products with `brand = Nike`. A product with `season = Christmas` and `brand = Nike` is hidden, because Hide takes priority over Boost.
+For example, one condition boosts all products with `season = Christmas`, and another hides all products with `brand = Nike`. A product with `season = Christmas` and `brand = Nike` is hidden, because Hide takes priority over Boost.
 
 **Limits**
 
-A single rule can have up to 25 attribute events, the same limit as manual ranking events.
+A single rule can have up to 25 attribute conditions, the same limit as manual ranking events.
 
 ### Finalizing the rule {#finalizing-the-rule}
 
@@ -362,20 +346,14 @@ This option provides a quick way to see all the rule parameters, while staying o
 | Pin a product | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
 | Hide a product | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
 
-### Attribute conditions
+### Attribute ranking conditions
 
 | Field | Description |
 | --- | --- |
-| Attribute | The filterable, text-based product attribute the event targets, such as **Brand**, **Category**, **Categorization**, **Country**, **Manufacturer**, **Model**, or **Model year**. |
-| Value | The attribute value, or values, that a product must have to match the condition. |
-
-### Attribute events
-
-| Event | Description |
-| --- | --- |
-| Boost | Moves every product that matches the attribute condition higher in the listing. |
-| Bury | Moves every product that matches the attribute condition lower in the listing. |
-| Hide | Excludes every product that matches the attribute condition from the listing. |
+| Action | The action applied to every product matching the condition: **Boost**, **Bury**, or **Hide**. |
+| Attribute | The filterable, text-based product attribute the condition targets, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. |
+| Value | One or more attribute values that a product must have to match the condition. Type a value and press Return to add it as a tag; a product matches if it has any one of the listed values. |
+| [!UICONTROL Boost strength] | For **Boost** and **Bury**, a slider that controls how strongly the action moves matching products. Shown only for **Boost** and **Bury**, not **Hide**. |
 
 ### Intelligent ranking controls
 
@@ -388,7 +366,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 | Field | Description |
 | --- | --- |
 | Name | The name of the rule. Rule names must be unique. |
-| Rule Type | **Default** (all product listings), **Query** (specific search conditions), **Category** (category pages), or **Attribute** (product attribute conditions), depending on **Rule applies to**. |
+| Rule Type | **Default** (all product listings), **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |
