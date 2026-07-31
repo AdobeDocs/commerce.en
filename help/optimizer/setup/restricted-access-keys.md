@@ -113,5 +113,5 @@ To rotate a key without an access interruption, use the fact that a catalog view
 
 ## More like this
 
-- [Catalog views](catalog-view.md)—Learn how to protect a catalog view with restricted access keys.
+- [Private catalog views](private-catalog-view.md)—Learn how to protect a catalog view with restricted access keys.
 

@@ -189,7 +189,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 |**Scalable**|Manage 200M+ SKUs efficiently|
 |**Multi-Channel**|Serve catalogs to storefronts, marketplaces, and advertising platforms|
 |**Real-time Updates**|Quickly update catalog data for promotions and campaigns|
-|**Catalog Protection**|Restrict a catalog view to authorized clients using signed-token validation|
+|**Private catalog views**|Restrict a catalog view to authorized clients using signed-token validation|
 
 ## Use cases
 
@@ -216,6 +216,6 @@ The filtered catalog data is delivered to various destinations including Edge De
 
 - [Catalog sources](catalog-sources.md) - Define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior
 - [Catalog layers](catalog-layer.md) - Learn how to modify product data without changing the original source
-- [Private catalog view](private-catalog-view.md) - Enable Catalog Protection to restrict a catalog view to authorized clients
+- [Private catalog view](private-catalog-view.md) - Create a private catalog view to restrict access to authorized clients
 - [Policies](policies.md) - Create policies to filter products in catalog views
 - [Price books](pricebooks.md) - Manage pricing structures for different customer segments

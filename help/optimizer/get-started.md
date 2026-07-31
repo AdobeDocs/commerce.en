@@ -110,7 +110,7 @@ Administrators manage instances, users, and organizational settings.
 |**Manage Users**|Add users, developers, and admins|[User Management](./user-management.md)|
 |**Create Instances**|Set up sandbox and production environments|[Create Instance](#step-1-create-an-instance)|
 |**Manage Instances**|Check status, update instance name and description, and get key URLs for application and API access|[Manage Instances](#manage-instances)|
-|**Configure Access**|Set up catalog views and policies, and optionally protect a catalog view with [restricted access keys](./setup/restricted-access-keys.md)|[Catalog Views](./setup/catalog-view.md)|
+|**Configure Access**|Set up catalog views and policies, and optionally create a [private catalog view](./setup/private-catalog-view.md) to restrict access|[Catalog Views](./setup/catalog-view.md)|
 
 ### Developer tasks
 
