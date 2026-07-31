@@ -42,7 +42,7 @@ Catalog views define how your product catalog is organized and displayed. They a
 - **What pricing is shown** through linked price books
 - **How products are filtered** using policies (attributes like brand, model, category)
 - **What [catalog source](catalog-sources.md) is used** based on attributes like locale
-  
+
 Think of catalog views as different "lenses" through which customers see your catalog. For example:
 
 - A dealer catalog view might show only products available to that specific dealer
@@ -102,6 +102,57 @@ Common use cases for catalog layers include:
 
 To learn more about creating, managing, and prioritizing catalog layers, see [Catalog layers](catalog-layer.md).
 
+## Protect a catalog view
+
+By default, a catalog view is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. Enable **[!UICONTROL Catalog Protection]** on a catalog view to restrict access to requests that carry a valid signed token.
+
+See [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.
+
+>[!IMPORTANT]
+>
+>Enabling Catalog Protection requires your client application to generate its own key pair and issue signed tokens. Storefront integration and automatic key management through Adobe Commerce and the [!DNL Adobe Commerce Optimizer Connector] are not yet available.
+
+Before you begin, [create a restricted access key](restricted-access-keys.md) from the public key your client application generates.
+
+1. On the catalog view create or edit form, toggle **[!UICONTROL Catalog Protection]** to **[!UICONTROL Enabled]**.
+
+1. Under **[!UICONTROL Restricted Access Keys]**, select up to three [restricted access keys](restricted-access-keys.md) to assign to this catalog view.
+
+   ![Catalog Protection enabled on the catalog view edit form, with a restricted access key assigned](../assets/catalog-view-protected.png){width="70%" zoomable="yes"}
+
+1. Click **[!UICONTROL Save catalog view]**.
+
+   The catalog view is now protected. Only requests carrying a valid signed token from an assigned key can retrieve its data.
+
+>[!NOTE]
+>
+>If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible rather than falling back to public access. Assign a new, unexpired key to restore access.
+
+### Verify access is enforced
+
+To confirm that a protected catalog view rejects unauthorized requests, call its [GraphQL endpoint API endpoint](../get-started.md#get-instance-details) with and without a signed token, using these headers:
+
+| Header | Purpose |
+| --- | --- |
+| `AC-View-ID` | The catalog view to query. |
+| `AC-Price-Book-ID` | The price book to apply. |
+| `X-Commerce-Access-Token` | The signed JWT proving authorization for the catalog view. |
+
+A request without a valid token returns a GraphQL error instead of catalog data, for example:
+
+```json
+{
+  "errors": [
+    {
+      "message": "Access key validation failed: Missing token",
+      "extensions": { "x-commerce-exception": "access-key-invalid" }
+    }
+  ]
+}
+```
+
+A request carrying a token signed by an assigned, unexpired key returns the catalog data as expected. For details on signing a JWT and calling the Merchandising API, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
+
 ## Manage catalog view
 
 Follow these instructions to update or view the properties of existing catalog views.
@@ -124,7 +175,7 @@ Follow these instructions to update or view the properties of existing catalog v
 
 This option provides a quick way to see all the catalog view parameters, while staying on the *Catalog views* table.
 
-On the *Catalog views* worksapce, find the catalog view in the grid that you want to edit and click the ![information icon](../assets/info-icon.png).
+On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click the ![information icon](../assets/info-icon.png).
 
 ![Catalog view details](../assets/catalog-view-details.png)
 
@@ -183,6 +234,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 |**Scalable**|Manage 200M+ SKUs efficiently|
 |**Multi-Channel**|Serve catalogs to storefronts, marketplaces, and advertising platforms|
 |**Real-time Updates**|Quickly update catalog data for promotions and campaigns|
+|**Catalog Protection**|Restrict a catalog view to authorized clients using signed-token validation|
 
 ## Use cases
 
