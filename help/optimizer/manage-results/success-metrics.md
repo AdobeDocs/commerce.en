@@ -81,6 +81,24 @@ The key performance indicators are:
 
 1. Click **[!UICONTROL Export]** to save the report as a PDF.
 
+## Content Credentials on exported reports {#content-credentials-on-exported-reports}
+
+The Success Metrics report can include highlights and summaries generated with generative AI. When you export a report that contains this content to PDF, Adobe automatically attaches Content Credentials to the exported file.
+
+Content Credentials are tamper-evident, machine-readable metadata based on the C2PA open standard. They record that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp. New generative AI transparency laws require companies that provide generative AI tools, including Adobe, to attach this kind of durable metadata to qualifying content.
+
+>[!NOTE]
+>
+>Content Credentials are attached automatically. No additional action is required, and this behavior cannot be turned off. Content Credentials do not change how your report looks. They are invisible metadata carried within the PDF.
+
+**What this means for your exported reports**
+
+- When you export a report containing generative AI highlights or summaries, the PDF carries Content Credentials.
+- Content Credentials travel with the PDF when you share or download it. Third-party platforms that support Content Credentials may read this metadata and display transparency information to viewers.
+- You can verify the Content Credentials attached to any file by uploading it to [!DNL Adobe] Inspect.
+
+For more about how Adobe attaches Content Credentials across applications, see *Content Credentials for Generative AI Transparency*. NOTE: this italized text will be a link to this yet to be published topic: https://adobe.sharepoint.com/:w:/s/DX-AI/IQAlHM4ttIArS6O3A1R6RvjTAZyGGYVqvRKt8YnvRtDZ8OE?e=wbXT33&or=WORD-WEB.BODY.NT&ct=1785499900173
+
 ## Using Success Metrics and Sites Optimizer together
 
 Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools designed to work together, helping you to enhance you commerce site's performance. Understanding the difference between these features helps you make better decisions and achieve measurable results.
