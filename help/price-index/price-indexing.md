@@ -20,6 +20,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
+last-update: 2026-07-29
 ---
 # SaaS Price Indexing
 
