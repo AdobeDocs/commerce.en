@@ -31,11 +31,11 @@ topic_v2:
 ---
 # Restricted access keys
 
-Restricted access keys let you protect a [catalog view](catalog-view.md) so that only requests carrying a valid signed token can retrieve its product and pricing data. Everyone else, anonymous shoppers, other storefronts, or scripts probing the API, is denied.
+Restricted access keys let you protect a [catalog view](catalog-view.md) so that only requests carrying a valid signed token can retrieve its product and pricing data. Everyone else, including anonymous shoppers, other storefronts, or scripts probing the API, is denied.
 
 ## How restricted access keys work
 
-A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it's authorized to read a protected catalog view:
+A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it is authorized to read a protected catalog view:
 
 1. Your client application generates an RSA key pair and keeps the private key.
 1. You register the **public** key in [!DNL Adobe Commerce Optimizer] as a restricted access key.
@@ -44,7 +44,7 @@ A restricted access key is the public half of an RSA key pair that your client a
 
 >[!IMPORTANT]
 >
->Key generation, token signing, and rotation are currently managed entirely by your client application. [!DNL Adobe Commerce Optimizer] does not automatically generate or rotate these keys on your behalf.
+>Key generation, token signing, and rotation are currently managed entirely by your client application. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
 
 ## Restricted access key use cases
 
@@ -81,7 +81,7 @@ The key size must be between 2048 and 8192 bits. `public-key.pem` contains the v
 
 1. Click **[!UICONTROL Save]**.
 
-Keys are immutable after creation—there's no edit option. To change any value, delete the key and create a new one. See [Rotate a key](#rotate-a-key) to do this without an access interruption.
+Keys are immutable after creation. To change any value, delete the key and create a new one. See [Rotate a key](#rotate-a-key) to do this without an access interruption.
 
 ## Assign a key to a catalog view
 
