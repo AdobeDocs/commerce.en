@@ -85,7 +85,7 @@ Keys are immutable after creation. To change any value, delete the key and creat
 
 ## Assign a key to a catalog view
 
-A restricted access key only restricts access after it's assigned to a catalog view with **[!UICONTROL Catalog Protection]** enabled. See [Protect a catalog view](catalog-view.md#protect-a-catalog-view) for setup steps.
+A restricted access key only restricts access after it's assigned to a catalog view with **[!UICONTROL Catalog Protection]** enabled. See [Protect a catalog view](private-catalog-view.md#protect-a-catalog-view) for setup steps.
 
 ## Delete a key
 
