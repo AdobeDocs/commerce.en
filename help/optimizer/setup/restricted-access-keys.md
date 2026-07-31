@@ -33,6 +33,14 @@ topic_v2:
 
 Restricted access keys let you protect a [catalog view](catalog-view.md) so that only requests carrying a valid signed token can retrieve its product and pricing data. Everyone else, including anonymous shoppers, other storefronts, or scripts probing the API, is denied.
 
+## Restricted access key use cases
+
+Restricted access keys are commonly used for:
+
+- **Contract-based B2B pricing**—Show negotiated account pricing only to the buyer it applies to, without exposing it publicly.
+- **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
+- **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
+
 ## How restricted access keys work
 
 A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it is authorized to read a protected catalog view:
@@ -45,14 +53,6 @@ A restricted access key is the public half of an RSA key pair that your client a
 >[!IMPORTANT]
 >
 >Key generation, token signing, and rotation are currently managed entirely by your client application. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
-
-## Restricted access key use cases
-
-Restricted access keys are commonly used for:
-
-- **Contract-based B2B pricing**—Show negotiated account pricing only to the buyer it applies to, without exposing it publicly.
-- **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
-- **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
 
 ## Create a restricted access key
 
