@@ -106,6 +106,7 @@ Complete these checks in the [!DNL Adobe Commerce Optimizer] UI.
 &#x25A2; [Price books](../setup/pricebooks.md) are auto-created from customer groups on Cloud.
 &#x25A2; [Catalog views](../setup/catalog-view.md) exist and you know their IDs.
 &#x25A2; [Policies](../setup/policies.md) exist and you know their IDs.
+&#x25A2; Any [catalog view protected](../setup/catalog-view.md#protect-a-catalog-view) with Catalog Protection has an unexpired [restricted access key](../setup/restricted-access-keys.md) assigned, and an owner is identified for key rotation.
 &#x25A2; [Facets](../merchandising/facets/overview.md) are configured.
 &#x25A2; [Synonyms](../merchandising/synonyms/overview.md) are configured.
 &#x25A2; [Merchandising rules](../merchandising/rules/overview.md) are configured.

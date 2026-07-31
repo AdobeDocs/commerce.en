@@ -105,6 +105,8 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 | Catalog views | Number of configurable subsets of your master catalog | Based on the number of [Catalog variations](#catalog) | Yes<br>Increase catalog variations |
 | Policies per catalog view | Number of data filters allowed | 10 | No |
 | Attribute values in a policy | Number of product characteristics that can be configured for filtering | 100 | No |
+| [Restricted access keys](setup/restricted-access-keys.md) per catalog view | Number of keys that can be assigned to a single catalog view for [!UICONTROL Catalog Protection] | 3 | No |
+| RSA key size (restricted access keys) | Minimum and maximum key strength accepted for a restricted access key | 2048-bit minimum, 8192-bit maximum | No |
 
 {style="table-layout:auto"}
 

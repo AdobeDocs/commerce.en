@@ -52,6 +52,7 @@ The following summary tables use the RACI model to show the security responsibil
 | Installing App Builder apps | | RA |
 | Testing performance of all App Builder apps | | RA |
 | Theming and design of custom App Builder apps | | RA |
+| Generating, rotating, and revoking [restricted access keys](setup/restricted-access-keys.md) and signing tokens for [!UICONTROL Catalog Protection] | | RA |
 | Configuring backend DNS | RA |  |
 | Onboarding backend CDN | RA |  |
 | Supporting backend CDN | RA |  |
