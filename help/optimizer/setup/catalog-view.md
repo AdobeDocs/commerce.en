@@ -102,7 +102,7 @@ Common use cases for catalog layers include:
 
 To learn more about creating, managing, and prioritizing catalog layers, see [Catalog layers](catalog-layer.md).
 
-## Private catalog view
+## Protect a catalog view
 
 By default, a catalog view is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. You can configure a private catalog by enabling **[!UICONTROL Catalog Protection]** on a catalog view, which restricts access to requests that carry a valid signed token.
 

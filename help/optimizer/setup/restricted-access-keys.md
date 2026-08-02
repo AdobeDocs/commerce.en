@@ -56,7 +56,7 @@ A restricted access key is the public half of an RSA key pair that your client a
 
 ## Create a restricted access key
 
-Before you begin, generate an RSA key pair using a tool such as [!DNL OpenSSL]. Keep the private key secret — only the public key is uploaded to [!DNL Adobe Commerce Optimizer].
+Generate an RSA key pair using a tool such as [!DNL OpenSSL]. Keep the private key secret — only the public key is uploaded to [!DNL Adobe Commerce Optimizer].
 
 ```bash
 openssl genrsa -out private-key.pem 2048
@@ -65,7 +65,9 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 The key size must be between 2048 and 8192 bits. `public-key.pem` contains the value you paste into the **Public key** field below.
 
-1. From the left menu, go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Restricted access keys]**.
+## Add restricted key to [!DNL Commerce Optimizer]
+
+1. From the left menu in [!DNL Commerce Optimizer Studio], go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Restricted access keys]**.
 
    ![Restricted Access Keys list, with the Add Restricted Access Key button](../assets/restricted-access-keys.png){width="70%" zoomable="yes"}
 

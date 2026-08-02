@@ -26,7 +26,6 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-nudge: true
 ---
 # Private catalog views
 
@@ -79,7 +78,7 @@ A request without a valid token returns a GraphQL error instead of catalog data,
 }
 ```
 
-A request carrying a token signed by an assigned, unexpired key returns the catalog data as expected. For details on signing a JWT and calling the Merchandising API, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
+A request carrying a token signed by an assigned, unexpired key returns the catalog data as expected. For details on signing a JWT and calling the Merchandising API, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#authentication).
 
 ## More like this
 
