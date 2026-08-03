@@ -97,3 +97,9 @@ For information about identity configuration options including Adobe ID, Enterpr
 | Services | Storefront |
 | --- | --- |
 | [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+## Bulk data migration tool Early Access {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process. For an overview of the tool and its eligibility requirements, see [Bulk data migration tool](../cloud-service/migration/bulk-data/migration-tool.md).

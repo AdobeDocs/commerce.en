@@ -67,7 +67,7 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 ![check](assets/icon-check.png)  Standard pricing
 
-![check](assets/icon-check.png)  **Available in XX countries**
+![check](assets/icon-check.png)  **Available in 200+ countries**
 
 [![learn more](assets/learn-more-button.svg)](onboard.md)
 
@@ -97,7 +97,7 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 ![check](assets/icon-check.png)  (L2/L3 pricing capabilities – US Only)
 
-![check](assets/icon-check.png)  **Only available in United States (US), Canada (CA), Australia (AUS). France (FR), United Kingdom (UK)**
+![check](assets/icon-check.png)  Available in 37 countries. Australia, Austria, Belgium, Bulgaria, Canada, China, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hong Kong, Hungary, Ireland, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mexico, Netherlands, Norway, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, Spain, Sweden, United Kingdom, United States. **Negotiated rates available in United States (US), Canada (CA), Australia (AU), France (FR), United Kingdom (GB), Italy (IT), Netherlands (NL), Germany (DE)**
 
 [![learn more](assets/learn-more-button.svg)](onboard.md)
 
