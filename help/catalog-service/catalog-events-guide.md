@@ -253,7 +253,6 @@ Catalog events are enabled for your environment. When catalog data changes in [!
    * The change is visible through [!DNL Catalog Service] APIs.
    * Your [!DNL Adobe I/O Events] consumer receives the corresponding product or price event.
 
-Catalog events are enabled for your environment. When catalog data changes in [!DNL Commerce], updates flow through [!DNL Catalog Service] to [!DNL Adobe I/O Events], and your subscribed consumer receives the corresponding catalog event. Review [Limits and best practices](#limits-and-best-practices) before you build production integrations.
 
 ## Limits and best practices {#limits-and-best-practices}
 
