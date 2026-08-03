@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### July 23, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 15, 2026
 
 <table style="table-layout:auto;">
@@ -392,66 +414,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### May 22, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added release notes for API updates to <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> and Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Catalog Service</a> for the May 20, 2026 release which now enforces the documented the 100-SKU limit per request when retrieving product data.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Documented Intelligent ranking boost (configurable behavioral weight per rule, default 5.0) for [!DNL Live Search] in <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Add Rules</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice">Best practices</a>, with a cross-reference from <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/category-merch">Category Merchandising</a>. Added the same guidance for [!DNL Adobe Commerce Optimizer] in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Create and manage</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice">Merchandising rules best practices</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### May 19, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>The AEM Assets integration guide describes how editors set <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">alternative text</a> in the <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets integration v1.3.6 </a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">commit</a></td>
     </tr>
   </tbody>
 </table>
