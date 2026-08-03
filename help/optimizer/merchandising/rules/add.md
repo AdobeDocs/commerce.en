@@ -79,7 +79,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
-1. Set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), and [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 **Multiple conditions**
 
@@ -98,7 +98,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and is triggered more often in the storefront than the other.
 
 1. To add another condition, click **Add condition** and repeat the process.
-1. Set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), and [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 >[!TAB Category rule]
 
@@ -111,7 +111,7 @@ Category rules control how products are ordered on **category pages**. You combi
    - **Apply to subcategories** - Applies the rule to subcategories that do not already have an active merchandising rule defined.
    - **Preview** - Displays how the category page would appear on your storefront.
 
-1. Set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), and [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
 
 >[!ENDTABS]
 
