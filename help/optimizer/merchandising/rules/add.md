@@ -250,10 +250,10 @@ Or events can be set manually:
 1. In the rule editor, expand **[!UICONTROL Attribute ranking]**.
 1. Click **[!UICONTROL Add attribute]** to add an attribute condition.
 1. From the dropdown at the top of the condition, select the action to apply to matching products: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**.
-1. Under **Attribute**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
-1. Under **Value**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **Selected values**. A product matches the condition if it has any one of the listed values.
+1. Under **[!UICONTROL Attribute]**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
+1. Under **[!UICONTROL Value]**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **Selected values**. A product matches the condition if it has any one of the listed values.
 1. For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
-1. To add another condition, click **Add attribute** and repeat the previous steps.
+1. To add another condition, click **[!UICONTROL Add attribute]** and repeat the previous steps.
 
 Pinning is not available in attribute ranking, because pinning assigns one product to one exact position, while an attribute condition can match many products at once. To pin a specific product, use [Manual ranking](#manual-ranking) on that SKU directly.
 
@@ -351,8 +351,8 @@ This option provides a quick way to see all the rule parameters, while staying o
 | Field | Description |
 | --- | --- |
 | Action | The action applied to every product matching the condition: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**. |
-| Attribute | The filterable, text-based product attribute the condition targets, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. |
-| Value | One or more attribute values that a product must have to match the condition. Type a value and press Return to add it as a tag; a product matches if it has any one of the listed values. |
+| [!UICONTROL Attribute] | The filterable, text-based product attribute the condition targets, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. |
+| [!UICONTROL Value] | One or more attribute values that a product must have to match the condition. Type a value and press Return to add it as a tag; a product matches if it has any one of the listed values. |
 | [!UICONTROL Boost strength] | For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, a slider that controls how strongly the action moves matching products. Shown only for **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, not **[!UICONTROL Hide]**. |
 
 ### Intelligent ranking controls
