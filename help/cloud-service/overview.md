@@ -124,13 +124,13 @@ To create rich experiences in minutes with simple document-based authoring or vi
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
-- [Live Search](../live-search/overview.md)—Deliver smarter, faster, and relevant results for shoppers with this AI-powered search tool. For setup instructions, see [Setting up Live Search](../live-search/workspace.md).
-- [Product Recommendations](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more. For configuration instructions, see [Product Recommendations Workspace](../product-recommendations/workspace.md).
+- [[!DNL Live Search]](../live-search/overview.md)—Deliver smarter, faster, and relevant results for shoppers with this AI-powered search tool. For setup instructions, see [Setting up [!DNL Live Search]](../live-search/workspace.md).
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more. For configuration instructions, see [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
 - [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 
   >[!NOTE]
   >
-  >Catalog Service is included automatically with Live Search and Product Recommendations.
+  >Catalog Service is included automatically with [!DNL Live Search] and [!DNL Product Recommendations].
 
 - [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
 
