@@ -192,10 +192,10 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 
 Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
-* Boost - Moves a product higher in the search results.
-* Bury - Moves a SKU lower in the search results.
-* Pin a product - Product is displayed in the selected "Position" on the page.
-* Hide a product - Excludes a SKU from the search results.
+* **[!UICONTROL Boost]** - Moves a product higher in the search results.
+* **[!UICONTROL Bury]** - Moves a SKU lower in the search results.
+* **[!UICONTROL Pin a product]** - Product is displayed in the selected "Position" on the page.
+* **[!UICONTROL Hide a product]** - Excludes a SKU from the search results.
 
 The easiest way to pin a product is by drag and drop.
 
@@ -213,7 +213,7 @@ Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the name of the product that you want to hide. Products are suggested as you type.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
@@ -276,10 +276,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Event |Description |
 |--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
-| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
-| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
-| Hide a product | Excludes a SKU, or range of SKUs, from the search results. |
+| [!UICONTROL Boost] | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
+| [!UICONTROL Bury] | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
+| [!UICONTROL Pin a product] | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
+| [!UICONTROL Hide a product] | Excludes a SKU, or range of SKUs, from the search results. |
 
 ### Details
 

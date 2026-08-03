@@ -144,7 +144,7 @@ This aggregation happens within the scope of the category being browsed. A varia
 
 **Example:**
 
-A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on the 200g category page, even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
+A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on that page. This is true even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
 
 #### Intelligent ranking boost {#intelligent-ranking-boost}
 
@@ -216,10 +216,10 @@ For information about setting search weights, see the [Metadata API](https://dev
 
 **Manual ranking** events adjust product order for **search results** (when your rule's conditions are met), for **default product listings**, and for **category page** listings. A single rule can have up to 25 events.
 
-- **Boost** — Moves a product higher in the listing.
-- **Bury** — Moves a SKU lower in the listing.
-- **Pin a product** — Fixes a product at the selected position in the listing.
-- **Hide a product** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
+- **[!UICONTROL Boost]** — Moves a product higher in the listing.
+- **[!UICONTROL Bury]** — Moves a SKU lower in the listing.
+- **[!UICONTROL Pin a product]** — Fixes a product at the selected position in the listing.
+- **[!UICONTROL Hide a product]** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
 
 The easiest way to pin a product is by drag and drop.
 
@@ -237,7 +237,7 @@ Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the name of the product that you want to hide. Products are suggested as you type.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
@@ -249,25 +249,25 @@ Or events can be set manually:
 
 1. In the rule editor, expand **[!UICONTROL Attribute ranking]**.
 1. Click **[!UICONTROL Add attribute]** to add an attribute condition.
-1. From the dropdown at the top of the condition, select the action to apply to matching products: **Boost**, **Bury**, or **Hide**.
+1. From the dropdown at the top of the condition, select the action to apply to matching products: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**.
 1. Under **Attribute**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
 1. Under **Value**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **Selected values**. A product matches the condition if it has any one of the listed values.
-1. For **Boost** and **Bury**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
+1. For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
 1. To add another condition, click **Add attribute** and repeat the previous steps.
 
 Pinning is not available in attribute ranking, because pinning assigns one product to one exact position, while an attribute condition can match many products at once. To pin a specific product, use [Manual ranking](#manual-ranking) on that SKU directly.
 
-**How attribute ranking interacts with intelligent ranking**
+#### How attribute ranking interacts with intelligent ranking
 
 When a rule combines an intelligent ranking strategy with one or more attribute conditions, the attribute action takes priority for any product it matches. Intelligent ranking continues to order the remaining, unmatched products.
 
-**When attribute conditions conflict with each other**
+#### When attribute conditions conflict with each other
 
-A single product can match more than one attribute condition, whether within the same rule or across different rules. When matching conditions specify conflicting actions for the same product, **Hide** takes priority over **Boost** and **Bury**.
+A single product can match more than one attribute condition, whether within the same rule or across different rules. When matching conditions specify conflicting actions for the same product, **[!UICONTROL Hide]** takes priority over **[!UICONTROL Boost]** and **[!UICONTROL Bury]**.
 
-For example, one condition boosts all products with `season = Christmas`, and another hides all products with `brand = Nike`. A product with `season = Christmas` and `brand = Nike` is hidden, because Hide takes priority over Boost.
+For example, one condition boosts all products with `season = Christmas`, and another hides all products with `brand = Nike`. A product with `season = Christmas` and `brand = Nike` is hidden, because **[!UICONTROL Hide]** takes priority over **[!UICONTROL Boost]**.
 
-**Limits**
+#### Limits
 
 A single rule can have up to 25 attribute conditions, the same limit as manual ranking events.
 
@@ -341,19 +341,19 @@ This option provides a quick way to see all the rule parameters, while staying o
 
 | Event | Description |
 | --- | --- |
-| Boost | Moves a SKU or range of SKUs higher in the listing (search or category). Each is marked with a "boosted" preview badge in the test results. |
-| Bury | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
-| Pin a product | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
-| Hide a product | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
+| [!UICONTROL Boost] | Moves a SKU or range of SKUs higher in the listing (search or category). Each is marked with a "boosted" preview badge in the test results. |
+| [!UICONTROL Bury] | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
+| [!UICONTROL Pin a product] | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
+| [!UICONTROL Hide a product] | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
 
 ### Attribute ranking conditions
 
 | Field | Description |
 | --- | --- |
-| Action | The action applied to every product matching the condition: **Boost**, **Bury**, or **Hide**. |
+| Action | The action applied to every product matching the condition: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**. |
 | Attribute | The filterable, text-based product attribute the condition targets, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. |
 | Value | One or more attribute values that a product must have to match the condition. Type a value and press Return to add it as a tag; a product matches if it has any one of the listed values. |
-| [!UICONTROL Boost strength] | For **Boost** and **Bury**, a slider that controls how strongly the action moves matching products. Shown only for **Boost** and **Bury**, not **Hide**. |
+| [!UICONTROL Boost strength] | For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, a slider that controls how strongly the action moves matching products. Shown only for **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, not **[!UICONTROL Hide]**. |
 
 ### Intelligent ranking controls
 
