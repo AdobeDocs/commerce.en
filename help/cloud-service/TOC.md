@@ -30,7 +30,12 @@ product_v2:
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
-    - [Bulk data migration tool](migration/bulk-data.md)
+    - Bulk data migration tool {#bulk-data}
+      - [Overview](migration/bulk-data/migration-tool.md)
+      - [Customer readiness checklist](migration/bulk-data/readiness-checklist.md)
+      - [Verify migration service access](migration/bulk-data/cdms-access.md)
+      - [Run a bulk data migration](migration/bulk-data/migration-guide.md)
+      - [Video walkthrough](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Migration assessment](migration/assessment.md)
     - [Coding tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
   - {hide-from-toc} [Documentation RAG Service](migration/doc-rag.md)

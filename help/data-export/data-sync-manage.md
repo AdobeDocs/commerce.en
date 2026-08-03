@@ -27,6 +27,7 @@ topic_v2:
     internal-label: Data management
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
+last-update: 2026-06-23
 ---
 # View and manage the synchronization process
 
