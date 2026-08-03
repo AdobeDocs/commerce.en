@@ -326,7 +326,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 ### Logical operators
 
 | Operator | Description |
-| --- |- -- |
+| --- | --- |
 | OR | (Default) The logical operator `OR` compares two conditions and meets the requirements to trigger an event if at least one condition is true. |
 | AND | The logical operator `AND` compares two conditions and meets the requirements to trigger an event if both conditions are true. |
 
