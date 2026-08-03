@@ -245,6 +245,7 @@ If your instance is not in the selection list, then it is not connected to [!DNL
 
 ### Validate the event flow {#validate-event-flow}
 
+Catalog events are enabled for your environment. When catalog data changes in [!DNL Commerce], updates flow through [!DNL Catalog Service] to [!DNL Adobe I/O Events], and your subscribed consumer receives the corresponding catalog event. Review [Limits and best practices](#limits-and-best-practices) before you build production integrations.
 1. Make a simple supported catalog change, such as updating a product name or changing a price.
 
 1. Confirm the following outcomes:
