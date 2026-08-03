@@ -251,7 +251,7 @@ Or events can be set manually:
 1. Click **[!UICONTROL Add attribute]** to add an attribute condition.
 1. From the dropdown at the top of the condition, select the action to apply to matching products: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**.
 1. Under **[!UICONTROL Attribute]**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
-1. Under **[!UICONTROL Value]**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **Selected values**. A product matches the condition if it has any one of the listed values.
+1. Under **[!UICONTROL Value]**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **[!UICONTROL Selected values]**. A product matches the condition if it has any one of the listed values.
 1. For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
 1. To add another condition, click **[!UICONTROL Add attribute]** and repeat the previous steps.
 
