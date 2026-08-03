@@ -292,7 +292,7 @@ If catalog events are missing or delayed, work through these steps.
 
    [Use the [!DNL Catalog Service] API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/) to confirm that the catalog change is stored successfully.
 
-2. **Verify [!DNL SaaS Data Export]**
+1. **Verify [!DNL SaaS Data Export]**
 
    Catalog events require current data in [!DNL Catalog Service]. Confirm both stages of the export path:
 
@@ -302,7 +302,7 @@ If catalog events are missing or delayed, work through these steps.
 
    For troubleshooting export and sync jobs, see [Synchronize data with SaaS Data Export](../data-export/data-sync-manage.md) and [Logging and troubleshooting](../data-export/troubleshooting/logging.md).
 
-3. **Validate [!DNL Adobe I/O Events] configuration**
+1. **Validate [!DNL Adobe I/O Events] configuration**
 
    Confirm that:
 
@@ -312,7 +312,7 @@ If catalog events are missing or delayed, work through these steps.
    * The subscription is active.
    * Your endpoint, action, or journal consumer can receive and process test events.
 
-4. **Contact Adobe Support**
+1. **Contact Adobe Support**
 
    When opening a support ticket, select the issue reason that corresponds to **Adobe Commerce application** and include the following information:
 
