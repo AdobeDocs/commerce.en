@@ -2,8 +2,39 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jul 24 16:37:55 2026
+updated: Mon Aug 3 14:37:50 2026
 entries:
+- description: Updated the [Payment Services Compatibility table for Standard services](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience)
+    to reflect broader geographic availability and to expand the supported-countries
+    detail for the advanced offering.
+  versions: ''
+  type: feedback
+  date: July 30, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/685
+  merge_commit: b667dfd60809e55bc82cecc8c4f7df60483eecba
+  contributor: hloveall_adobe
+  labels:
+  - feedback
+- description: Updated the Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    to Production.
+  versions: ''
+  type: major-update
+  date: July 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/684
+  merge_commit: 1f91b5535d30ac894531508278b19d961f5a9d2c
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Updated the [Bulk data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)
+    documentation with more information about the migration process.
+  versions: ''
+  type: major-update
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/676
+  merge_commit: c8cab2404d47a6cb4a0418a59b533bf11e082b0b
+  contributor: jhoover_adobe
+  labels:
+  - major-update
 - description: Updated Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''

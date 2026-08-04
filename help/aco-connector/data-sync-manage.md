@@ -35,6 +35,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
+last-update: 2026-06-23
 ---
 # Manage synchronization to [!DNL Commerce Optimizer]
 
