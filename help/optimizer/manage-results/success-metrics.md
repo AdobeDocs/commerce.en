@@ -81,23 +81,23 @@ The key performance indicators are:
 
 1. Click **[!UICONTROL Export]** to save the report as a PDF.
 
-## Content Credentials on exported reports {#content-credentials-on-exported-reports}
+## C2PA metadata on exported reports {#c2pa-metadata-on-exported-reports}
 
-The Success Metrics report includes highlights and summaries generated with generative AI. When you export a report to PDF, Adobe automatically attaches Content Credentials to the exported file.
+The Success Metrics report includes highlights and summaries generated with generative AI. When you export a report to PDF, Adobe automatically attaches C2PA metadata to the exported file.
 
-Content Credentials are tamper-evident, machine-readable metadata based on the C2PA open standard. They record that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp. New generative AI transparency laws require companies that provide generative AI tools, including Adobe, to attach this kind of durable metadata to qualifying content.
+C2PA metadata are tamper-evident, machine-readable metadata based on the C2PA open standard. They record that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp. New generative AI transparency laws require companies that provide generative AI tools, including Adobe, to attach this kind of durable metadata to qualifying content.
 
 >[!NOTE]
 >
->Content Credentials are attached automatically. No additional action is required, and this behavior cannot be turned off. Content Credentials do not change how your report looks. They are invisible metadata carried within the PDF.
+>C2PA metadata are attached automatically. No additional action is required, and this behavior cannot be turned off. C2PA metadata do not change how your report looks. They are invisible metadata carried within the PDF.
 
 **What this means for your exported reports**
 
-- When you export a Success Metrics report to PDF, the exported file carries Content Credentials.
-- Content Credentials travel with the PDF when you share or download it. Third-party platforms that support Content Credentials may read this metadata and display transparency information to viewers.
-- You can verify the Content Credentials attached to any file by uploading it to [Inspect](https://contentauthenticity.adobe.com/inspect).
+- When you export a Success Metrics report to PDF, the exported file carries C2PA metadata.
+- C2PA metadata travel with the PDF when you share or download it. Third-party platforms that support C2PA metadata may read this metadata and display transparency information to viewers.
+- You can verify the C2PA metadata attached to any file by uploading it to [Inspect](https://contentauthenticity.adobe.com/inspect).
 
-For more about how Adobe attaches Content Credentials across applications, see *Content Credentials for Generative AI Transparency*. NOTE: this italized text will be a link to this yet to be published topic: https://adobe.sharepoint.com/:w:/s/DX-AI/IQAlHM4ttIArS6O3A1R6RvjTAZyGGYVqvRKt8YnvRtDZ8OE?e=wbXT33&or=WORD-WEB.BODY.NT&ct=1785499900173
+For more about how Adobe attaches C2PA metadata across applications, see *Generative AI Content Transparency*. NOTE: this italicized text will be a link to this yet to be published topic: https://adobe.sharepoint.com/:w:/s/DX-AI/IQAlHM4ttIArS6O3A1R6RvjTAZyGGYVqvRKt8YnvRtDZ8OE?e=wbXT33&or=WORD-WEB.BODY.NT&ct=1785499900173
 
 ## Using Success Metrics and Sites Optimizer together
 
