@@ -14,7 +14,7 @@ feature: Services, Catalog Service
 - [Get Started with the [!DNL Catalog Service]](get-started.md)
 - [Retrieve catalog data](graphql-queries.md)
 - Integrating with other applications {#integration}
-  - [Catalog events and Adobe I/O Events integration](catalog-events-guide.md)
+  - [Catalog and Adobe I/O Events integration](catalog-events-guide.md)
   - [Catalog Service and API Mesh](mesh.md)
   - [Use Case: Display Taxed Prices](taxes.md)
 - [Release Notes](release-notes.md)
