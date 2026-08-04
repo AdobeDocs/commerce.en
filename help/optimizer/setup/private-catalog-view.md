@@ -29,7 +29,7 @@ topic_v2:
 ---
 # Private catalog views
 
-By default, a [catalog view](catalog-view.md) is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. Enable **[!UICONTROL Catalog Protection]** on a catalog view to restrict access to requests that carry a valid signed token.
+By default, a [catalog view](catalog-view.md) is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. Enable **[!UICONTROL Catalog Protection]** on a catalog view so that only requests carrying a valid signed token can retrieve its data.
 
 See [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.
 
@@ -51,6 +51,10 @@ Before you begin, [create a restricted access key](restricted-access-keys.md) fr
 
    The catalog view is now protected. Only requests carrying a valid signed token from an assigned key can retrieve its data.
 
+   >[!NOTE]
+   >
+   >Allow up to five minutes for Catalog Protection configuration changes to take effect.
+
 >[!NOTE]
 >
 >If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible rather than falling back to public access. Assign a new, unexpired key to restore access.
@@ -63,7 +67,7 @@ To confirm that a protected catalog view rejects unauthorized requests, call its
 | --- | --- |
 | `AC-View-ID` | The catalog view to query. |
 | `AC-Price-Book-ID` | The price book to apply. |
-| `X-Commerce-Access-Token` | The signed JWT proving authorization for the catalog view. |
+| `AC-Catalog-View-Access-Token` | The signed JWT proving authorization for the catalog view. |
 
 A request without a valid token returns a GraphQL error instead of catalog data, for example:
 

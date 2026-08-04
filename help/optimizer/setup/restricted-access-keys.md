@@ -32,7 +32,7 @@ nudge: true
 ---
 # Restricted access keys
 
-Restricted access keys let you protect a [catalog view](catalog-view.md) so that only requests carrying a valid signed token can retrieve its product and pricing data. Everyone else, including anonymous shoppers, other storefronts, or scripts probing the API, is denied.
+Restricted access keys let authorized clients access a protected [catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve its product and pricing data. Everyone else, including anonymous shoppers, other storefronts, or scripts probing the API, is denied.
 
 ## Restricted access key use cases
 
@@ -42,6 +42,10 @@ Restricted access keys are commonly used for:
 - **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
 - **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
 
+>[!IMPORTANT]
+>
+>Key generation, token signing, and rotation are currently managed entirely by your client application. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
+
 ## How restricted access keys work
 
 A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it is authorized to read a protected catalog view:
@@ -50,10 +54,6 @@ A restricted access key is the public half of an RSA key pair that your client a
 1. You register the **public** key in [!DNL Adobe Commerce Optimizer] as a restricted access key.
 1. Your client application signs a JSON Web Token (JWT) with the private key and includes it with each request to a protected catalog view.
 1. [!DNL Adobe Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
-
->[!IMPORTANT]
->
->Key generation, token signing, and rotation are currently managed entirely by your client application. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
 
 ## Create a restricted access key
 
@@ -66,7 +66,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 The key size must be between 2048 and 8192 bits. `public-key.pem` contains the value you paste into the **Public key** field below.
 
-## Add restricted key to [!DNL Commerce Optimizer]
+## Add a restricted access key to [!DNL Adobe Commerce Optimizer]
 
 1. From the left menu in [!DNL Commerce Optimizer Studio], go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Restricted access keys]**.
 
