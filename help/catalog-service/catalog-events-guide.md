@@ -320,7 +320,7 @@ If catalog events are missing or delayed, work through these steps.
    * [!DNL Adobe I/O Events] Subscription details.
    * Approximate time and description of missing events.
 
-   For additional help, see [Support tickets](/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+   For additional help, see [Support tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 >[!MORELIKETHIS]
 >
