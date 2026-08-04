@@ -5,6 +5,7 @@ user-guide-description: "This guide provides detailed instructions for using [!D
 hide: true
 role: Admin
 feature: Services, Catalog Service
+nudge: true
 ---
 # [!DNL Catalog Service] for Adobe Commerce {#catalog-service}
 
