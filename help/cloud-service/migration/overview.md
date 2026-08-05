@@ -59,7 +59,7 @@ topic_v2:
 ---
 # Migrate to [!DNL Adobe Commerce as a Cloud Service]
 
-This guide provides comprehensive information for developers transitioning from an existing [!DNL Adobe Commerce on Cloud] Infrastructure or on-premises implementation to [!DNL Adobe Commerce as a Cloud Service] (SaaS) offering. [!DNL Adobe Commerce as a Cloud Service] represents a significant shift to a fully managed, versionless SaaS model, offering enhanced performance, scalability, simplified operations, and tighter integration with the broader [!DNL Adobe Experience Cloud].
+This guide helps developers transition from [!DNL Adobe Commerce on Cloud] or on-premises to [!DNL Adobe Commerce as a Cloud Service] (SaaS). This SaaS model offers enhanced performance, scalability, and integration with the [!DNL Adobe Experience Cloud].
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 ![migration flow diagram](../assets/migration-flow.png)
 
-### Comparing PaaS and SaaS
+### PaaS and SaaS comparison
 
 [!DNL Adobe Commerce on Cloud] or on-premises (PaaS) and [!DNL Adobe Commerce as a Cloud Service] (SaaS) differ in how they are managed and how merchants interact with the platform.
 
@@ -100,7 +100,7 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 **New tooling and concepts**
 
-- [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
+- [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
 - [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - Self-service provisioning with the [Commerce Cloud Manager](../getting-started.md#create-an-instance)
@@ -109,10 +109,10 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 A migration moves through the following phases:
 
-- **Assess** — Analyze the existing implementation and consider the following: inventory customizations, integrations, storefront characteristics, and data structures. After analyzing, create a roadmap with migration recommendations, complexity scoring, and effort estimates.
-- **Modernize the application and migrate data** — Rebuild customizations as [!DNL App Builder] applications while migrating business data into [!DNL Adobe Commerce as a Cloud Service].
-- **Modernize the storefront** — Rebuild the storefront on Edge Delivery Services (EDS) for Commerce.
-- **Cut over and operate** — Switch traffic to [!DNL Adobe Commerce as a Cloud Service], decommission legacy systems, and transition into ongoing operation.
+- **Assess** - Analyze the existing implementation and consider the following: inventory customizations, integrations, storefront characteristics, and data structures. After analyzing, create a roadmap with migration recommendations, complexity scoring, and effort estimates.
+- **Modernize the application and migrate data** - Rebuild customizations as [!DNL App Builder] applications while migrating business data into [!DNL Adobe Commerce as a Cloud Service].
+- **Modernize the storefront** - Rebuild the storefront on Edge Delivery Services (EDS) for Commerce.
+- **Cut over and operate** - Switch traffic to [!DNL Adobe Commerce as a Cloud Service], decommission legacy systems, and transition into ongoing operation.
 
 Migration is usually iterative, not linear. Organizations can assess multiple environments, validate recommendations, modernize incrementally, and refine implementation plans before the final production cutover.
 
@@ -126,18 +126,18 @@ Each of the following workflows has its own tool. Use them together to complete 
 | [Application and storefront modernization](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | AI-assisted modernization of the Commerce application, accelerating the migration of customizations to [!DNL App Builder], supporting storefront transformation to Edge Delivery Services (EDS), and guiding developers through the broader application modernization journey with implementation reviewed and validated by engineering teams. |
 | [Data migration](#data-migration-commerce-data-migration-service) | **Commerce Data Migration Service** | Extraction, loading, and integrity verification of catalog, customer, and order data into [!DNL Adobe Commerce as a Cloud Service]. |
 
-These tracks are not independent silos. Using them together in the right order minimizes rework.
+These tracks are not standalone. Use them together in the right order minimizes rework.
 
 - **Run the assessment first** - Running the assessment first identifies unsupported customizations, estimates migration effort, exposes data migration considerations, and highlights integration dependencies before implementation begins. The assessment becomes the migration blueprint used by both the application modernization and data migration workflows.
 - **Application modernization** - The Commerce Developer MCP uses the migration assessment to determine which customizations to modernize and how. Then the MCP generates the corresponding [!DNL App Builder] applications and storefront components.
 - **Data migration** - The data migration scoping questionnaire captures the scope, volumes, and custom tables that were surfaced by the assessment.
-- **Custom and third-party data** - Data held in custom tables by third-party extensions is identified during assessment, but it is not handled by the standard data migration and may require an [!DNL App Builder] customization.
+- **Custom and third-party data** - Data held in custom tables by third-party extensions is identified during assessment, but it is not handled by the standard data migration and requires an [!DNL App Builder] customization.
 
 Storefront modernization is not just a UI migration. In addition to migrating business functionality, you need to consider the experience architecture, reusable component modernization, performance optimization, and adoption of Edge Delivery Services patterns.
 
 Integrations are assessed as part of the migration assessment, but their implementation varies depending on the scenario. Integrations can leverage [!DNL App Builder], [!DNL API Mesh], Adobe I/O Events, or native [!DNL Adobe Commerce as a Cloud Service] APIs.
 
-These migration tools will continue to expand, but will maintain a unified migration workflow centered on the migration assessment.
+These migration tools continue to expand and maintain a unified migration workflow centered on the migration assessment.
 
 ### Next steps
 
@@ -149,7 +149,7 @@ The Migration Assessment Tool and the Commerce Developer MCP use AI to assist yo
 
 Before beginning development or migration, you must consider the size of the migration and determine the items that require development. An [!DNL Adobe Commerce] store on [!DNL Adobe Commerce on Cloud] or on-premises likely has custom modules, integrations, storefront customizations, and data structures, which might not be obvious until someone analyzes the implementation. The Migration Assessment Tool automatically scans your codebase to identify these items for development.
 
-### Overview
+### Assessment overview
 
 The Migration Assessment Tool performs an AI assessment of the existing implementation and produces a structured modernization assessment and an [!DNL Adobe Commerce as a Cloud Service] migration roadmap. It also builds a comprehensive view of the migration by assessing application customizations, integrations, data structures, storefront characteristics, and other implementation details that influence modernization. It turns discovery into a fast, repeatable process that allows you to evaluate effort, risk, and sequencing before making commitments.
 
@@ -164,8 +164,8 @@ An assessment runs against the existing implementation and proceeds through a se
 - **Inventory** — Catalogs the implementation. Includes: custom modules, Composer dependencies, third-party extensions, configuration, storefront components (where applicable), files, extensibility points, events, plugins, APIs, cron jobs, queues, database schema, and custom database tables.
 - **Analyze** — Performs a static analysis to identify store customizations, divergence from a standard [!DNL Adobe Commerce] installation, and how those customizations interact across the application.
 - **Classify** — Uses AI to interpret each customization, summarizing what the customization does, grouping related capabilities, identifying implementation patterns, and providing contextual migration recommendations.
-- **Map and recommend** — Maps each capability to its [!DNL Adobe Commerce as a Cloud Service] equivalent, including: out-of-the-box capabilities, [!DNL App Builder] applications, or Adobe services. Then the assessment recommends a modernization path, and evaluates complexity, dependencies, and implementation effort.
-- **Report** — Produces an exportable roadmap for planning migration execution, which allows you to communicate risk to stakeholders. It also identifies priorities, dependencies, technical debt, quick wins, and implementation risks.
+- **Map and recommend** — Maps each capability to its [!DNL Adobe Commerce as a Cloud Service] equivalent, including: default capabilities, [!DNL App Builder] applications, or Adobe services. Then the assessment recommends a modernization path, and evaluates complexity, dependencies, and implementation effort.
+- **Report** — Produces an exportable roadmap for planning migration execution, which allows you to communicate risk to stakeholders. It also identifies priorities, dependencies, technical debt, and implementation risks.
 
 ### Assessment value
 
@@ -179,7 +179,7 @@ The assessment is not just a starting point. The downstream migration tooling us
 
 The Migration Assessment Tool focuses on understanding the complete migration landscape. It analyzes custom modules, plugins, events, APIs, cron jobs, queues, integrations with external systems, storefront characteristics, and the database schema those customizations depend on. The assessment maps what it discovers to available [!DNL Adobe Commerce as a Cloud Service] capabilities and identifies where functionality should be modernized by using [!DNL App Builder], or redesigned for the SaaS architecture.
 
-The assessment is more of a planning tool rather than an execution tool. It identifies what should be modernized, estimates implementation complexity, and provides recommendations. Implementation decisions and architecture validation remain collaborative activities between Adobe, partners, and customer engineering teams.
+The assessment is more of a planning tool than an execution tool. It identifies what should be modernized, estimates implementation complexity, and provides recommendations. Implementation decisions and architecture validation remain collaborative activities between Adobe, partners, and customer engineering teams.
 
 Data stored in custom tables by third-party extensions is surfaced as a migration consideration. Standard data migration does not migrate this data automatically. Custom [!DNL App Builder] applications could be required to support these scenarios. Refer to [Data Migration guide](#data-migration-commerce-data-migration-service) for more information.
 
@@ -200,7 +200,7 @@ For more information on assessment tooling and downstream developer workflow, se
 
 In [!DNL Adobe Commerce on Cloud] or on-premises customizations can use in-process PHP—modules, plugins, and event observers that run inside the application. [!DNL Adobe Commerce as a Cloud Service] is a versionless SaaS platform and that model no longer applies. Customizations run as out-of-process [!DNL Adobe Developer App Builder] applications that integrate with Commerce through events and APIs. Modernizing a store's customizations for this architecture is typically the most significant engineering effort in an [!DNL Adobe Commerce as a Cloud Service] migration.
 
-### Overview
+### Code migration overview
 
 Starting from the migration assessment, the Commerce Developer MCP provides a conversational IDE experience for modernizing legacy PHP customizations into [!DNL App Builder] applications. It also provides assistance for rebuilding storefronts on Edge Delivery Services (EDS). By consuming the Migration Assessment Tool findings directly, the Commerce Developer MCP keeps implementation aligned with the approved migration roadmap by reducing manual interpretation, maintaining traceability, and ensuring consistency throughout the process.
 
@@ -239,7 +239,7 @@ The MCP also assists with:
 - Component modernization
 - Reusable block composition
 - Experience optimization
-- Alignment with current Edge Delivery Services best practices.
+- Alignment with current Edge Delivery Services best practices
 
 ### Developer MCP value
 
@@ -257,11 +257,11 @@ The Commerce Developer MCP also promotes composable application design by encour
 
 ### Developer MCP scope
 
-On the backend, the Commerce Developer MCP modernizes the customization and integration layer by transforming PHP modules, plugins, and event observers into [!DNL App Builder] applications and establishes integration patterns (events, APIs, API Mesh, Adobe I/O Events) required to connect them with Adobe Commerce. It also accelerates development across checkout, payments, and the Admin UI.
+On the backend, the Commerce Developer MCP modernizes the customization and integration layer by transforming PHP modules, plugins, and event observers into [!DNL App Builder] applications and establishes integration patterns to connect them with Adobe Commerce. It also accelerates development across checkout, payments, and the Admin UI.
 
 On the frontend, the Commerce Developer MCP [modernizes Commerce storefronts](#storefront-modernization) on Edge Delivery Services.
 
-Data migration is not handled by the MCP. Business data is migrated through the [Commerce Data Migration Service](#data-migration-commerce-data-migration-service). The MCP supports the [!DNL App Builder] applications needed when business logic or custom tables require application modernization.
+The MCP does not handle data migration. Business data is migrated through the [Commerce Data Migration Service](#data-migration-commerce-data-migration-service). The MCP supports the [!DNL App Builder] applications needed when business logic or custom tables require application modernization.
 
 ### Next steps
 
@@ -279,7 +279,7 @@ The Commerce Data Migration Service replaces a manual migration with a single, r
 
 A migration uses a guided workflow, driven by a Docker command-line tool (`./bin/console migration`). A systems integrator or operator runs this workflow against the source store.
 
-The core data migration is automated, but most migrations involve things like non-standard schemas, extensions, and edge cases, which is why all migrations start with an [assessment](#migration-assessment-tool) of the source store. After validating credentials and connectivity, registering the migration, and establishing a verification baseline, you can proceed with the data migration.
+The core data migration is automated, but most migrations involve non-standard schemas, extensions, and edge cases, which is why all migrations start with an [assessment](#migration-assessment-tool) of the source store. After validating credentials and connectivity, registering the migration, and establishing a verification baseline, you can proceed with the data migration.
 
 The migration service tool performs the following data management steps:
 
@@ -311,7 +311,7 @@ The Commerce Data Migration Service is live in production worldwide and has alre
 
 ### Custom and third-party data
 
-The migration service supports first-party core commerce data only. Migrating custom, third-party entities is not handled by the migration service.
+The migration service supports first-party core commerce data only. The migration service does not handle custom, third-party entities.
 
 Third-party data can be migrated on a per-case basis, which requires a corresponding customization to the Docker extraction tool. After creating custom tooling, the data can be extracted from the source and written into the [!DNL App Builder] or third-party database.
 
@@ -323,4 +323,4 @@ When you are ready to migrate, complete the [data migration scoping questionnair
 
 Review the [Bulk Data Migration Tool guide](bulk-data/migration-tool.md) documentation to learn more about the workflow, supported data, and verification.
 
-Systems integrators preparing a source environment can also use the standard [Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) and the [Adobe Developer Console](https://developer.adobe.com) for IMS credentials.
+Systems integrators preparing a source environment can also use the standard [Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) and the [Adobe Developer Console](https://developer.adobe.com) for IMS credentials.
