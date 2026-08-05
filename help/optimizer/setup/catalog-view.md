@@ -105,7 +105,7 @@ To learn more about creating, managing, and prioritizing catalog layers, see [Ca
 
 ## Protect a catalog view
 
-By default, a catalog view is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. You can configure a private catalog by enabling **[!UICONTROL Catalog Protection]** on a catalog view so that only requests carrying a valid signed token can retrieve its data.
+By default, a catalog view is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. You can configure a private catalog view by enabling **[!UICONTROL Catalog Protection]** on a catalog view so that only requests carrying a valid signed token can retrieve its data.
 
 To learn how to protect a catalog view and verify that access is enforced, see [Private catalog views](private-catalog-view.md).
 

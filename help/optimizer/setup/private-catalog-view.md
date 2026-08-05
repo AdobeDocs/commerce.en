@@ -35,7 +35,7 @@ See [Restricted access key use cases](restricted-access-keys.md#restricted-acces
 
 >[!IMPORTANT]
 >
->Enabling Catalog Protection requires your client application to generate its own key pair and issue signed tokens. Storefront integration and automatic key management through Adobe Commerce and the [!DNL Adobe Commerce Optimizer Connector] are not yet available.
+>Automatic key creation and management through Adobe Commerce and the Adobe Commerce Optimizer Connector are not yet available.
 
 ## Protect a catalog view
 
@@ -57,11 +57,11 @@ Before you begin, [create a restricted access key](restricted-access-keys.md) fr
 
 >[!NOTE]
 >
->If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible rather than falling back to public access. Assign a new, unexpired key to restore access.
+>If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible—storefronts that rely on this catalog view will not be able to serve data from it. Assign a new, unexpired key to restore access.
 
 ## Verify access is enforced
 
-To confirm that a protected catalog view rejects unauthorized requests, call its [GraphQL endpoint](../get-started.md#get-instance-details) with and without a signed token, using these headers:
+To confirm that a private catalog view rejects unauthorized requests, call its [GraphQL endpoint](../get-started.md#get-instance-details) with and without a signed token, using these headers:
 
 | Header | Purpose |
 | --- | --- |

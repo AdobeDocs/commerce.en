@@ -32,13 +32,13 @@ nudge: true
 ---
 # Restricted access keys
 
-Restricted access keys let authorized clients access a protected [catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve its product and pricing data. Everyone else, including anonymous shoppers, other storefronts, or scripts probing the API, is denied.
+Restricted access keys let authorized clients access a private [catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve its product and pricing data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
 
 ## Restricted access key use cases
 
 Restricted access keys are commonly used for:
 
-- **Contract-based B2B pricing**—Show negotiated account pricing only to the buyer it applies to, without exposing it publicly.
+- **Contract-based B2B pricing**—Show negotiated account pricing only to the buyer it applies to, without exposing it to other buying organizations or to the public.
 - **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
 - **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
 
@@ -48,11 +48,11 @@ Restricted access keys are commonly used for:
 
 ## How restricted access keys work
 
-A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it is authorized to read a protected catalog view:
+A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it is authorized to read a private catalog view:
 
 1. Your client application generates an RSA key pair and keeps the private key.
 1. You register the **public** key in [!DNL Adobe Commerce Optimizer] as a restricted access key.
-1. Your client application signs a JSON Web Token (JWT) with the private key and includes it with each request to a protected catalog view.
+1. Your client application signs a JSON Web Token (JWT) with the private key and includes it with each request to a private catalog view.
 1. [!DNL Adobe Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
 
 ## Create a restricted access key
