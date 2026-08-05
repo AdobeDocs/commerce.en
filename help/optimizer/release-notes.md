@@ -32,6 +32,18 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## August 2026
+
+>[!BEGINSHADEBOX]
+
+### Attribute ranking (beta)
+
+[!DNL Adobe Commerce Optimizer] merchandising rules now support [**attribute ranking**](./merchandising/rules/add.md#attribute-ranking) for the **All products rule**, **search rules**, and **category rules**. Automatically apply a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, such as brand or category, without selecting individual SKUs. Attribute ranking is in beta. [Learn more](./merchandising/rules/add.md#attribute-ranking).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## July 2026
 
 >[!BEGINSHADEBOX]

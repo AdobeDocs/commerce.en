@@ -27,7 +27,11 @@ topic_v2:
 ---
 # Create and Manage Rules
 
-To build a rule, open the rule editor, choose a **rule type** (search conditions, default listing, or category pages), then define conditions and ranking where they apply, test the results, and publish the rule.
+To build and publish a rule:
+
+1. In Optimizer Studio, open the rule editor, choose a **rule type** (search conditions, default listing, category pages, or product attributes), then define conditions and ranking where they apply.
+1. Test the results.
+1. Publish the rule.
 
 ## Create a rule {#create-a-rule}
 
@@ -242,6 +246,10 @@ Or events can be set manually:
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
 ### Attribute ranking {#attribute-ranking}
+
+>[!AVAILABILITY]
+>
+>This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 **Attribute ranking** automatically applies a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, without requiring you to select individual SKUs. Attribute ranking appears in the rule editor alongside [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking), and is available for the **All products rule**, **search rules**, and **category rules**. Use it to scale merchandising across large catalogs, for example, boosting every product from a given brand, or burying every product in a discontinued color.
 
