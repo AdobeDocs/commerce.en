@@ -74,7 +74,7 @@ Migrating an established [!DNL Adobe Commerce] store to [!DNL Adobe Commerce as 
 - Storefront
 - Integrations with external systems
 
-[!DNL Adobe Commerce as a Cloud Service] is a versionless SaaS platform, which means none of these areas can be migrated without adapting them. Customizations are modernized into [!DNL App Builder] applications, storefronts are rebuilt on Edge Delivery Services (EDS), data is migrated into the new [!DNL Adobe Commerce as a Cloud Service] tenant, and integrations are re-established using SaaS-native patterns.
+[!DNL Adobe Commerce as a Cloud Service] is a versionless SaaS platform, which means none of these areas can be migrated without adapting them. Customizations are modernized into [!DNL App Builder] applications, storefronts are rebuilt on Edge Delivery Services (EDS), data is migrated into the new [!DNL Adobe Commerce as a Cloud Service] tenant, and integrations are re-established using SaaS patterns.
 
 Instead of considering migration as a single monolithic project, Adobe provides an integrated migration workflow built around [three migration tools](#migration-tools-workflow).
 
@@ -88,7 +88,14 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 **Key differences**
 
-- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **PaaS (Current)**: Merchant manages application code, upgrades, patching, infrastructure configuration within Adobe's hosted environment. [Shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) for services (MySQL, Elasticsearch, and others).
+- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+- **[!DNL Adobe Commerce on Cloud Infrastructure]**: Merchant manages application code, upgrades, patching, and infrastructure configuration.
+- **[!DNL Adobe Commerce] on-premises**: Merchant manages application code, upgrades, patching, infrastructure configuration within Adobe's hosted environment.
+
+  >[!NOTE]
+  >
+  >[Shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) for services (MySQL, Elasticsearch, and others).
+
 - [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} **SaaS (New - [!DNL Adobe Commerce as a Cloud Service])**: Adobe fully manages the core application, infrastructure, and updates. Merchants focus on customization through extensibility points (APIs, App Builder, UI SDKs). Core application code is locked.
 
 **Architectural implications**
@@ -135,7 +142,7 @@ These tracks are not standalone. Use them together in the right order minimizes 
 
 Storefront modernization is not just a UI migration. In addition to migrating business functionality, you need to consider the experience architecture, reusable component modernization, performance optimization, and adoption of Edge Delivery Services patterns.
 
-Integrations are assessed as part of the migration assessment, but their implementation varies depending on the scenario. Integrations can leverage [!DNL App Builder], [!DNL API Mesh], Adobe I/O Events, or native [!DNL Adobe Commerce as a Cloud Service] APIs.
+Integrations are assessed as part of the migration assessment, but their implementation varies depending on the scenario. Integrations can leverage [!DNL App Builder], [!DNL API Mesh], Adobe I/O Events, and [!DNL Adobe Commerce as a Cloud Service] APIs.
 
 These migration tools continue to expand and maintain a unified migration workflow centered on the migration assessment.
 
@@ -231,7 +238,7 @@ The Commerce Developer MCP loads existing storefront projects based on the Comme
 - Generating responsive EDS blocks
 - Generating Commerce-aware page data (home, PLP, PDP, cart, checkout, account)
 - Composing and extending drop-in components
-- Translating Figma designs into EDS implementations
+- Translating designs into EDS implementations
 - Converting legacy monolithic storefronts into a composable EDS block architecture
 
 The MCP also assists with:
