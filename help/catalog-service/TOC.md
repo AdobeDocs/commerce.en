@@ -15,7 +15,7 @@ nudge: true
 - [Get Started with the [!DNL Catalog Service]](get-started.md)
 - [Retrieve catalog data](graphql-queries.md)
 - Integrating with other applications {#integration}
-  - [Catalog and Adobe I/O Events integration](catalog-events-guide.md)
+  - [Catalog Events Setup and Integration Guide](catalog-events-guide.md)
   - [Catalog Service and API Mesh](mesh.md)
   - [Use Case: Display Taxed Prices](taxes.md)
 - [Release Notes](release-notes.md)
