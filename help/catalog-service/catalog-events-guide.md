@@ -1,5 +1,5 @@
 ---
-title: Enable and Configure Catalog Events with Adobe I/O
+title: Catalog Events Setup and Integration Guide
 description: Learn how to verify catalog data, configure [!DNL Adobe I/O Events] for Adobe Commerce, subscribe to catalog event types, and validate delivery for consumers.
 level: Intermediate
 recommendations: noCatalog
