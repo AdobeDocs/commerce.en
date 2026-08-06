@@ -1,5 +1,5 @@
 ---
-title: Catalog and Adobe I/O Events Integration Guide
+title: Enable and Configure Catalog Events with Adobe I/O
 description: Learn how to verify catalog data, configure [!DNL Adobe I/O Events] for Adobe Commerce, subscribe to catalog event types, and validate delivery for consumers.
 level: Intermediate
 recommendations: noCatalog
@@ -24,7 +24,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Catalog events and [!DNL Adobe I/O Events] integration guide
+# Enable and Configure Catalog Events with Adobe I/O
 
 Catalog events are machine-generated notifications that describe supported catalog changes made available through [!DNL Catalog Service]. They enable event-driven workflows such as:
 
