@@ -32,6 +32,22 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## August 2026
+
+>[!BEGINSHADEBOX]
+
+_August 7, 2026_
+
+![Fix](../assets/fix.svg) **Correct `refineProduct` response for configurable products**—Fixed an issue where the `refineProduct` query returned `priceRange: null` and `roles: ["hidden"]` for specific configurable products, ensuring accurate pricing and visibility information for storefront consumers.
+<!--COMOPT-2367-->
+
+![New](../assets/new.svg) **New `externalDs` field**—Added `externalDs` to Catalog Service GraphQL, exposing the external data source associated with a product so storefront and integration consumers can identify the originating data source.
+<!--DATA-7307-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## July 2026
 
 >[!BEGINSHADEBOX]
