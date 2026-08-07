@@ -1,5 +1,5 @@
 ---
-title: Set up your storefront
+title: Set Up Your Storefront
 description: Learn how to set up your [!DNL Adobe Commerce Optimizer] storefront.
 role: Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
@@ -85,7 +85,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Select **Create New Site (Code & Content)**.
+1. Select **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Complete the site configuration:
 
@@ -93,7 +93,7 @@ The Site Creator tool creates a complete storefront project with the following c
    * **Site Name**: Choose a descriptive name for your storefront
    * **Commerce GraphQL Endpoint (optional)**: Enter the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance
 
-1. Click **Create Site** to create the GitHub repository with the storefront boilerplate code.
+1. Click **[!UICONTROL Create Site]** to create the GitHub repository with the storefront boilerplate code.
 
    When the repository is created, the Site Creator updates and prompts you to install the Code Sync app.
 
@@ -107,7 +107,7 @@ The Site Creator tool creates a complete storefront project with the following c
    * Click the **[!UICONTROL Select repositories]** menu, then choose the storefront code repository you created.
    * Click **[!UICONTROL Save]** to register your repository.
 
-1. Return to the browser window where the Site Creator is open, and click **Create Site**.
+1. Return to the browser window where the Site Creator is open, and click **[!UICONTROL Create Site]**.
 
    The Site Creator copies the storefront boilerplate content to the Document Author environment. This process takes 1-2 minutes.
 
@@ -119,7 +119,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
    Use these links to manage your storefront code, content, and configuration.
 
-1. Copy and save these links for future reference: Click **[!UICONTROL Copy].
+1. Copy and save these links for future reference: Click **[!UICONTROL Copy]**.
 
 ## Configure your storefront
 
@@ -232,7 +232,7 @@ Before proceeding to the next steps, ensure that your storefront is functioning 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) At least one product detail page displays complete information<br>
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Search functionality returns relevant results<br>
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Product images are loading correctly<br>
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings<br>
+<br>
 
 ### Get help
 

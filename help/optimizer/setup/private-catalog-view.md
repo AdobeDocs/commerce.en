@@ -33,11 +33,7 @@ By default, a [catalog view](catalog-view.md) is public. Enable catalog protecti
 
 Catalog protection applies to the selected catalog view only. It does not change the view's policies, layers, or price books.
 
-The [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.Se
-
->[!IMPORTANT]
->
->Automatic key creation and management through Adobe Commerce and the Adobe Commerce Optimizer Connector are not yet available.
+See the [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.
 
 ## Understand the protection boundary
 
@@ -90,7 +86,7 @@ A request carrying a token signed by an assigned, unexpired key returns the cata
 
 ## Manage restricted access keys
 
-If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible—storefronts that rely on this catalog view cannot serve data from it. Assign a new, unexpired key to restore access. For instructions, see [Rotate keys](restricted-access-keys.md#rotate-keys).
+If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible—storefronts that rely on this catalog view cannot serve data from it. Assign a new, unexpired key to restore access. For instructions, see [Rotate keys](restricted-access-keys.md#rotate-a-key).
 
 >[!IMPORTANT]
 >

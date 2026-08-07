@@ -1,5 +1,5 @@
 ---
-title: Catalog views
+title: Catalog Views
 description: Learn what catalog views are and how to create them to organize your product catalog by business structure, policies, and pricing.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
@@ -66,7 +66,7 @@ Before creating a catalog view, prepare the following items as needed:
 
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).
 
-1. From the left menu, go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
+1. From the left menu, go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Catalog views]**.
 
 1. Click **[!UICONTROL Create catalog view]**. ​
 
@@ -117,26 +117,26 @@ To update or view the properties of existing catalog views, follow these instruc
 
 ### Edit a catalog view
 
-1. In the *Catalog views* workspace, locate the catalog view.
+1. In the **[!UICONTROL Catalog views]** workspace, locate the catalog view.
 1. To open the actions menu, select (**[!UICONTROL ...]**).
-1. Select **Edit** to access the catalog view editor.
+1. Select **[!UICONTROL Edit]** to access the catalog view editor.
 1. Update the name, catalog sources, policies, price book information, and **[!UICONTROL Catalog Protection]** settings (including assigned restricted access keys) as needed.
-1. Save the changes.
+1. Click **[!UICONTROL Save]**.
 
 ### Delete a catalog view
 
-1. In the *Catalog views* workspace, locate the catalog view.
+1. In the **[!UICONTROL Catalog views]** workspace, locate the catalog view.
 1. To open the actions menu, select (**[!UICONTROL ...]**).
-1. Select **Delete**.
+1. Select **[!UICONTROL Delete]**.
 1. Confirm the deletion.
 
    When the confirmation dialog appears, click **[!UICONTROL Delete]**.
 
 ### View catalog view details
 
-This option provides a quick way to see all the catalog view parameters, while staying on the *Catalog views* table.
+This option provides a quick way to see all the catalog view parameters, while staying on the **[!UICONTROL Catalog views]** table.
 
-In the **Catalog views** workspace, select the ![information icon](../assets/info-icon.png) for a catalog view to view its configuration details.
+In the **[!UICONTROL Catalog views]** workspace, select the ![information icon](../assets/info-icon.png) for a catalog view to view its configuration details.
 
 ![Catalog view details](../assets/catalog-view-details.png)
 
@@ -217,7 +217,7 @@ When a catalog view has **[!UICONTROL Catalog Protection]** enabled, delivery to
 **Challenge**: Different pricing and inventory per location<br>
 **Solution**: Location-based catalog views with region-specific policies
 
->[!INFO]
+>[!NOTE]
 >
 >For detailed information about catalog data ingestion and delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
 

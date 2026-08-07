@@ -1,5 +1,5 @@
 ---
-title: Catalog sources
+title: Catalog Sources
 description: Learn what catalog sources are and how they define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior.
 role: Admin, Developer
 recommendations: noCatalog

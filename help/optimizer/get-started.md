@@ -1,5 +1,5 @@
 ---
-title: Get started
+title: Get Started
 description: Learn how to get started with [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
@@ -34,7 +34,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
-# Get Started
+# Get started
 
 This guide walks you through setting up [!DNL Adobe Commerce Optimizer] from start to finish. While this guide covers all roles, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/) for detailed developer-specific content.
 
@@ -65,8 +65,8 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
 ### Step 1. Create an Instance
 
 1. Log in to [Adobe Experience Cloud](https://experience.adobe.com/).
-1. Navigate to **Commerce** > **Commerce Cloud Manager**.
-1. Click **Add Instance** > **Commerce Optimizer**.
+1. Navigate to **[!UICONTROL Commerce]** > **[!UICONTROL Commerce Cloud Manager]**.
+1. Click **[!UICONTROL Add Instance]** > **[!UICONTROL Commerce Optimizer]**.
 
    ![Adobe Commerce Cloud Manager Add Instance screen for creating a Commerce Optimizer environment](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
@@ -76,7 +76,7 @@ Follow these essential steps to get your [!DNL Adobe Commerce Optimizer] environ
    - **Environment Type**: Start with a **Sandbox** environment for testing
    - **Region**: Select your preferred region
 
-1. Click **Add Instance**.
+1. Click **[!UICONTROL Add Instance]**.
 
    The Cloud Manager updates to include your new instance. For details on accessing and managing it, see [Manage an instance](#manage-instances).
 
@@ -145,7 +145,7 @@ Manage instances from the Commerce Cloud Manager.
 
 1. Open Commerce Cloud Manager:
 
-   - Under **Quick access**, click **Commerce**.
+   - Under **[!UICONTROL Quick access]**, click **[!UICONTROL Commerce]**.
    - View your available instances.
 
 ### Search and filter instances
@@ -198,9 +198,9 @@ If you are a developer, you need these details to set up your development enviro
 
 Update the instance name and description as needed.
 
-1. Click the **Edit** icon next to an instance name.
-1. Update the **Instance name** and **Description** as needed.
-1. Click **Save**.
+1. Click the **[!UICONTROL Edit]** icon next to an instance name.
+1. Update the **[!UICONTROL Instance name]** and **[!UICONTROL Description]** as needed.
+1. Click **[!UICONTROL Save]**.
 
 ## Add sample data
 

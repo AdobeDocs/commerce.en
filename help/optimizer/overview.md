@@ -15,7 +15,7 @@ With [!DNL Adobe Commerce Optimizer], you can:
 - Ingest catalog data from any source.
 - Define business catalog views and policies.
 - Create personalized search and recommendations using AI and ML.
-- Improve product discovery relevance with ranking that prioritizes **exact and near matches** and same-field matches; see [Search matching and ranking](./manage-results/search-relevance-matching.md).
+- Improve product discovery relevance with ranking that prioritizes **exact and near matches** and same-field matches. See [Search matching and ranking](./manage-results/search-relevance-matching.md).
 - View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
 
 Watch the following video for a high-level overview of [!DNL Adobe Commerce Optimizer]:
@@ -55,7 +55,7 @@ The *Search performance* page provides insight into the search terms that shoppe
 Create personalized experiences for your shoppers through product discovery and product recommendations.
 
 - **Recommendations** - Uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your catalog, results in a highly engaging, relevant, and personalized experience. Recommendations are surfaced on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations directly from [!DNL Adobe Commerce Optimizer].
-- **Merchandising rules** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
+- **Merchandising rules** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.
 - **Facets** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 - **Synonyms** - Enhances your site search functionality, ensuring a seamless and efficient shopper experience that maximizes conversion rates. It enables merchandisers to ensure that shoppers get the right products at the right time.  
 
@@ -65,7 +65,7 @@ Define your catalog views and policies. The catalog not only contains your produ
 
 - **Catalog views** - Help you define your retail structure into meaningful business groups. For example, dealers for the automobile industry, subsidiaries for multi brand conglomerates, or manufacturing locations for suppliers.
 - **Catalog layers** - Modify product data without changing source data. When using AEM Assets for product images, the AEM-Assets layer is applied through [Product Visuals](setup/product-visuals.md). See [Catalog layers](setup/catalog-layer.md) for details.
-- **Policies** - Data access filters that are housed within catalog views. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram). 
+- **Policies** - Data access filters that are housed within catalog views. Policies help to ensure that the right content is sent to the right destination. For example, point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram).
 - **Private catalog views** - Restrict a catalog view so only requests carrying a valid signed token can retrieve its data. See [Private catalog views](setup/private-catalog-view.md) for setup.
 - **Data Sync** - Displays an overview of the synchronization status for product data transferred from their data source (PIM, ERP, and so on) into [!DNL Adobe Commerce Optimizer]. That product data is displayed within the **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]**, and **[!UICONTROL Recommendations]** tabs.
 - **Events** - Displays storefront event data which powers Product Discovery and Recommendations. The **Events** page lets the merchant verify that they have implemented storefront eventing correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any eventing issues.

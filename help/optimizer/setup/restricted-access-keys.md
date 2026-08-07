@@ -40,7 +40,7 @@ In [!DNL Adobe Commerce Optimizer], **[!UICONTROL Price Book ID]** determines wh
 
 Restricted access keys are commonly used for:
 
-- **Contract-based B2B pricing**—Restrict a catalog view linked to a negotiated price book so only the buyer it applies to can query it; other buying organizations and the public cannot.
+- **Contract-based B2B pricing**—Restrict a catalog view linked to a negotiated price book so only the buyer it applies to can query it. Other buying organizations and the public cannot.
 - **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
 - **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
 
@@ -114,13 +114,6 @@ To rotate a key without an access interruption, note that a catalog view can hav
 ## Limits
 
 See [Catalog views and policy limits](boundaries-limits.md).
-
-| Limit | Value |
-| --- | --- |
-| Restricted access keys per catalog view | Maximum of 3 |
-| Restricted access keys per environment | Maximum of 100 |
-| RSA key size | 2048-bit minimum, 8192-bit maximum |
-| Key revocation propagation delay | Up to 5 minutes, due to caching. Tokens signed by a removed key are denied once the delay elapses. |
 
 ## More like this
 

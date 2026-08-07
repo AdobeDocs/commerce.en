@@ -52,7 +52,6 @@ The following summary tables use the RACI model to show the security responsibil
 | Installing App Builder apps | | RA |
 | Testing performance of all App Builder apps | | RA |
 | Theming and design of custom App Builder apps | | RA |
-| Generating, rotating, and revoking [restricted access keys](setup/restricted-access-keys.md) and signing tokens for [!UICONTROL Catalog Protection] | | RA |
 | Configuring backend DNS | RA |  |
 | Onboarding backend CDN | RA |  |
 | Supporting backend CDN | RA |  |
@@ -65,6 +64,7 @@ The following summary tables use the RACI model to show the security responsibil
 | Performing PCI ASV scans | RA | I |
 | Remediating [!DNL Adobe Commerce Optimizer] infrastructure PCI scans | R | |
 | Managing OS and platform secrets | RA | |
+| Generating, rotating, and revoking [restricted access keys](setup/restricted-access-keys.md) and signing tokens for [!UICONTROL Catalog Protection] | | RA |
 | Monitoring backend security logs | RA | |
 | Controlling Customer support and access | A | R |
 | Annual testing and documentation of Adobe DR plan and backup and restore | RA | |

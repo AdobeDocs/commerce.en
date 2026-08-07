@@ -1,5 +1,5 @@
 ---
-title: Catalog layer
+title: Catalog Layers
 description: Learn how catalog layers allow you to modify product data without changing the original source data, so you can customize safely and revert changes anytime.
 role: Admin, Developer
 recommendations: noCatalog
@@ -28,7 +28,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
-# Catalog layer
+# Catalog layers
 
 Catalog layers allow you to modify product data without changing the original source data. Layers modify product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to customize products safely and revert changes at any time.
 
@@ -84,7 +84,7 @@ The integration supports one source per tenant (one locale + one layer).
 
 To display AEM Assets images on your storefront:
 
-1. Navigate to _Store setup_, and click **[!UICONTROL Catalog views]**.
+1. Navigate to **[!UICONTROL Store setup]**, and click **[!UICONTROL Catalog views]**.
 
 1. Select the catalog view where you want to apply the layer.
 
@@ -139,7 +139,7 @@ The catalog view UI allows you to create and manage layers manually, which is pa
 
 **To create a manual layer:**
 
-1. Navigate to **Store setup** > **Catalog views**.
+1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Select the catalog view where you want to apply the layer.
 
@@ -152,7 +152,7 @@ The catalog view UI allows you to create and manage layers manually, which is pa
    * **Attributes**—Choose which product attributes to modify (name, description, images, meta tags, and so on).
    * **Values**—Enter the new values for each selected attribute.
 
-1. Click **Save** to create the layer.
+1. Click **[!UICONTROL Save]** to create the layer.
 
 The new layer is added to the catalog view and is automatically assigned the next available order number.
 
@@ -166,7 +166,7 @@ Before activating layers or changing priorities, you can preview how they affect
 
 **To preview layer changes:**
 
-1. Navigate to **Store setup** > **Catalog views**.
+1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Select the catalog view with the layers you want to preview.
 
@@ -176,13 +176,13 @@ Before activating layers or changing priorities, you can preview how they affect
 
 1. Make adjustments to layer content or priority order as needed.
 
-## Activate, deactivate, or delete layers
+## Manage layer activation and deletion
 
 You can enable or disable catalog layers without deleting them, allowing you to control when specific customizations are applied.
 
 **To activate or deactivate a layer:**
 
-1. Navigate to **Store setup** > **Catalog views**.
+1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Select the catalog view containing the layer.
 
@@ -213,7 +213,7 @@ The order in which layers are applied determines which values appear on your sto
 
 **To reorder layer priorities:**
 
-1. Navigate to **Store setup** > **Catalog views**.
+1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Select the catalog view containing the layers you want to reorder.
 
@@ -223,7 +223,7 @@ The order in which layers are applied determines which values appear on your sto
 
 1. The system automatically updates order numbers based on the new sequence.
 
-1. Click **Save** to apply the new priority order.
+1. Click **[!UICONTROL Save]** to apply the new priority order.
 
 >[!IMPORTANT]
 >
@@ -237,7 +237,6 @@ Follow these recommendations when working with catalog layers:
 
 * **Limit layers**—While the system supports multiple layers, using too many can impact performance. Consolidate layers when possible.
 
-<!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
 * **Document priority logic**—Keep track of which layers take precedence to avoid unintended overrides.
 
