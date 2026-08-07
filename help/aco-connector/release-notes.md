@@ -47,6 +47,14 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.0.16 Release
+
+_August 7, 2026_
+
+![Fix](../assets/fix.svg) Skip sync when ACO configuration is not set or invalid. <!--MDEE-1413-->
+![Fix](../assets/fix.svg) Source ACO Admin GraphQL URL from an official CCM serviceURLs API. <!--COMOPT-2288-->
+![Fix](../assets/fix.svg) Resolve CCM environment for refresh/patch and derive the IMS endpoint. <!--COMOPT-2288-->
+
 ### 1.0.15 Release
 
 _July 10, 2026_
