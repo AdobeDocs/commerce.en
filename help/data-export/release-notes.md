@@ -55,8 +55,6 @@ Updates include:
 
 _August 7, 2026_
 
-![Fix](../assets/fix.svg) Register CDE- log codes so operator-actionable warning/error logs can be restored. <!--COMOPT-2347-->
-![Fix](../assets/fix.svg) Add generic feed readiness-check extension point. <!--MDEE-1413-->
 ![Fix](../assets/fix.svg) Skip indexation when Services Connector is not configured. <!--MDEE-1413-->
 ![Fix](../assets/fix.svg) Do not use row_id. <!--MDEE-830-->
 
