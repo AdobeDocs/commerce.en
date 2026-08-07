@@ -52,7 +52,7 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 * **GraphQL endpoint** for your instance
   * Available from the [instance details page](get-started.md#manage-instances)
 * **Catalog view ID** for the global catalog view
-  * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-view)
+  * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-views)
 * **Source locale** for your catalog view
   * Default for sample data is `en-US`
 

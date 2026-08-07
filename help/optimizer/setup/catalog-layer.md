@@ -30,21 +30,21 @@ topic_v2:
 ---
 # Catalog layer
 
-Catalog layers allow you to modify product data without changing the original source data. Layers apply changes to specific product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to safely customize products and revert changes at any time.
+Catalog layers allow you to modify product data without changing the original source data. Layers modify product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to customize products safely and revert changes at any time.
 
 ![Catalog Layers](../assets/catalog-layers.png)
 
 ## How catalog layers work
 
-When a customer views your storefront, the system combines your base catalog data with active catalog layers to display the final product information. Here's how the process works:
+When a customer views your storefront, the system combines your base catalog data with active catalog layers to display the final product information. The process works as follows:
 
 1. **Layer application**—When a request is made with a channel ID and environment ID, the store service retrieves the relevant catalog view.
 
 1. **Data merging**—The system applies catalog layers to product data based on layer priority order.
 
 1. **Field handling**—Different field types are processed differently:
-   
-   * **Override fields**—Text fields like name, description, and meta titles are replaced with the values defined in the layer, with the higher-priority layer taking precedence.
+
+   * **Override fields**—Text fields like name, description, and meta titles are replaced with layer values, and the higher-priority layer takes precedence.
    * **Merge fields**—Array fields like images, links, and attributes are combined from multiple layers, providing a unified response.
 
 1. **Priority resolution**—The order field determines which layer takes precedence. When multiple layers modify the same field, the layer with the higher order number has higher priority (for example, order 10 is the highest).
@@ -62,7 +62,7 @@ Catalog layers are commonly used for:
 
 ## AEM-Assets layer
 
-When you enable [Product Visuals](product-visuals.md), the AEM Assets Integration automatically creates and manages a catalog layer dedicated exclusively to AEM Assets content. The default layer name is `AEM-Assets`, however you can specify a custom name during [onboarding in the AEM Assets integration](../../aem-assets-integration/get-started/configure-aco.md).
+When you enable [Product Visuals](product-visuals.md), the AEM Assets Integration automatically creates and manages a catalog layer dedicated exclusively to AEM Assets content. The default layer name is `AEM-Assets`; however, you can specify a custom name during [onboarding in the AEM Assets integration](../../aem-assets-integration/get-started/configure-aco.md).
 
 This layer contains product images synchronized from AEM Assets. Like other catalog layers, it is populated via the [Product Layers API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. The Assets Integration Service transforms AEM asset metadata and delivery URLs into the API format and sends the data automatically when assets are approved in AEM Assets.
 
@@ -70,7 +70,7 @@ The integration supports one source per tenant (one locale + one layer).
 
 >[!CAUTION]
 >
-> Assign the AEM-Assets layer to your catalog view. If the layer is not assigned, product image data may be overwritten unexpectedly.
+> Assign the AEM-Assets layer to your catalog view. If the layer is not assigned, product image data is overwritten unexpectedly.
 
 ### How the AEM-Assets layer works
 
@@ -90,7 +90,7 @@ To display AEM Assets images on your storefront:
 
 1. In the catalog layers section, locate the **AEM-Assets** layer.
 
-1. Activate the layer to enable it for this catalog view.
+1. To enable the layer for this catalog view, activate it.
 
 1. Click **[!UICONTROL Save]** to apply the changes.
 
@@ -127,11 +127,11 @@ For detailed API specifications and payload examples, see [Product Layers](https
 >
 >This feature is not yet available.
 
-The catalog view UI allows you to manually create and manage layers, which is particularly useful for integrations like Sites Optimizer that generate AI-powered recommendations.
+The catalog view UI allows you to create and manage layers manually, which is particularly useful for integrations like Sites Optimizer that generate AI-powered recommendations.
 
 >[!NOTE]
 >
->If a Sites Optimizer layer does not exist in your catalog view, the auto-fix feature in Sites Optimizer automatically creates one and assigns it the highest priority (highest number). If you delete this layer, it will be recreated the next time the auto-fix feature in Sites Optimizer runs and will shift existing layers to lower order numbers. If the Sites Optimizer layer already exists at a different order number, the auto-fix feature will not change its priority.
+>If a Sites Optimizer layer does not exist in your catalog view, the auto-fix feature in Sites Optimizer automatically creates one and assigns it the highest priority (highest number). If you delete this layer, it is recreated the next time the auto-fix feature in Sites Optimizer runs and shifts existing layers to lower order numbers. If the Sites Optimizer layer already exists at a different order number, the auto-fix feature does not change its priority.
 
 >[!TIP]
 >
@@ -146,7 +146,7 @@ The catalog view UI allows you to manually create and manage layers, which is pa
 1. In the catalog layers section, click **Add catalog layer**.
 
 1. Configure the layer properties:
-   
+
    * **Layer name**—Enter a descriptive name to identify the layer purpose.
    * **Products**—Select the products to which this layer applies.
    * **Attributes**—Choose which product attributes to modify (name, description, images, meta tags, and so on).
@@ -206,7 +206,7 @@ The order in which layers are applied determines which values appear on your sto
 **Understanding priority order:**
 
 * Each layer is assigned an order number (1, 2, 3, and so on)
-* Higher numbers indicate higher priorty and overrides all other layers
+* Higher numbers indicate higher priority and override all other layers
 * When multiple layers modify the same field, the layer with the higher order number takes precedence
 * Priority only applies to override fields (name, description, meta tags)
 * Merge fields (images, links, attributes) combine data from all layers
@@ -227,27 +227,27 @@ The order in which layers are applied determines which values appear on your sto
 
 >[!IMPORTANT]
 >
->Changes to layer priority take effect immediately and may impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied (**preview is not yet available**).
+>Changes to layer priority take effect immediately and impact what customers see on your storefront. Review the preview before saving to ensure the correct values are applied (**preview is not yet available**).
 
 ## Best practices
 
 Follow these recommendations when working with catalog layers:
 
-* **Use descriptive names**—Name layers clearly to indicate their purpose (for example, "Holiday 2025 Campaign" or "SEO Optimization - Product Pages").
+* **Use descriptive names**—Name layers clearly to indicate their purpose (for example, "Holiday 2025 Campaign" or "SEO Optimization — Product Pages").
 
 * **Limit layers**—While the system supports multiple layers, using too many can impact performance. Consolidate layers when possible.
 
 <!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-* **Document priority logic**—Keep track of which layers should take precedence to avoid unintended overrides.
+* **Document priority logic**—Keep track of which layers take precedence to avoid unintended overrides.
 
-* **Review Sites Optimizer layers**—When using auto-fix from Sites Optimizer, the system creates layers at the highest priority. Be mindful when adding manual layers that might override AI recommendations. Learn more about using [Sites Optimizer](../manage-results/opportunities.md).
+* **Review Sites Optimizer layers**—When using auto-fix from Sites Optimizer, the system creates layers at the highest priority. Be mindful when adding manual layers that override AI recommendations. Learn more about using [Sites Optimizer](../manage-results/opportunities.md).
 
 * **Monitor performance**—If you notice slow product page loads, review your layer configuration and consider consolidating layers.
 
 ## More like this
 
-* [Catalog views](catalog-view.md) - Configure catalog views for different storefronts
-* [Product Visuals](product-visuals.md) - Use AEM Assets for product images
-* [Opportunities](../manage-results/opportunities.md) - Learn about AI-powered optimization using catalog layers
-* [Restricted access keys](restricted-access-keys.md) - Protect a catalog view with signed-token authentication
+* [Catalog views](catalog-view.md)—Configure catalog views for different storefronts
+* [Product Visuals](product-visuals.md)—Use AEM Assets for product images
+* [Opportunities](../manage-results/opportunities.md)—Learn about AI-powered optimization using catalog layers
+* [Restricted access keys](restricted-access-keys.md)—Protect a catalog view with signed-token authentication

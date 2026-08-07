@@ -1,6 +1,6 @@
 ---
 title: Restricted Access Keys
-description: Learn how to create, assign, and rotate restricted access keys to protect catalog views in Adobe Commerce Optimizer with signed-token authentication.
+description: "Learn how to create, assign, and rotate restricted access keys to protect catalog views in [!DNL Adobe Commerce Optimizer] with signed-token authentication."
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
@@ -32,43 +32,47 @@ nudge: true
 ---
 # Restricted access keys
 
-Restricted access keys let authorized clients access a private [catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve its product and pricing data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
+Restricted access keys let authorized client applications access a private [catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
 
 ## Restricted access key use cases
 
+In [!DNL Adobe Commerce Optimizer], **[!UICONTROL Price Book ID]** determines which prices a request sees—it scopes pricing, not who can make the request. Any client that knows a catalog view's ID and price book ID can retrieve that data through the Merchandising API. Restricted access keys add a separate, complementary control: they scope who can access a catalog view at all, independent of which price book applies.
+
 Restricted access keys are commonly used for:
 
-- **Contract-based B2B pricing**—Show negotiated account pricing only to the buyer it applies to, without exposing it to other buying organizations or to the public.
+- **Contract-based B2B pricing**—Restrict a catalog view linked to a negotiated price book so only the buyer it applies to can query it; other buying organizations and the public cannot.
 - **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
 - **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
 
 >[!IMPORTANT]
 >
->Key generation, token signing, and rotation are currently managed entirely by your client application. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
+>Key generation, token signing, and rotation are currently managed entirely by the backend client application that authenticates shoppers. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
 
 ## How restricted access keys work
 
-A restricted access key is the public half of an RSA key pair that your client application generates and uses to prove it is authorized to read a private catalog view:
+A restricted access key is the public component of an RSA key pair. Your client application generates and uses this key to prove it is authorized to read a private catalog view. In this context, "client application" means the backend system that authenticates shoppers—for example, custom logic on [!DNL Adobe Commerce] or a third-party backend—never the storefront frontend itself.
+
+The following steps describe how a key pair and signed token move from creation to validation:
 
 1. Your client application generates an RSA key pair and keeps the private key.
-1. You register the **public** key in [!DNL Adobe Commerce Optimizer] as a restricted access key.
+1. You register the **public** key in [!DNL Commerce Optimizer] as a restricted access key.
 1. Your client application signs a JSON Web Token (JWT) with the private key and includes it with each request to a private catalog view.
-1. [!DNL Adobe Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
+1. [!DNL Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
 
 ## Create a restricted access key
 
-Generate an RSA key pair using a tool such as [!DNL OpenSSL]. Keep the private key secret — only the public key is uploaded to [!DNL Adobe Commerce Optimizer].
+For initial testing of private catalog views, generate a key pair using a tool such as [!DNL OpenSSL]. Keep the private key secret — only the public key is uploaded to [!DNL Commerce Optimizer].
 
 ```bash
 openssl genrsa -out private-key.pem 2048
 openssl rsa -in private-key.pem -pubout -out public-key.pem
 ```
 
-The key size must be between 2048 and 8192 bits. `public-key.pem` contains the value you paste into the **Public key** field below.
+The key size must be between 2048 and 8192 bits. `public-key.pem` contains the value you paste into the **[!UICONTROL Public key]** field below.
 
-## Add a restricted access key to [!DNL Adobe Commerce Optimizer]
+## Add a restricted access key to [!DNL Commerce Optimizer]
 
-1. From the left menu in [!DNL Commerce Optimizer Studio], go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Restricted access keys]**.
+1. From the left menu in [!DNL Adobe Commerce Optimizer Studio], go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Restricted access keys]**.
 
    ![Restricted Access Keys list, with the Add Restricted Access Key button](../assets/restricted-access-keys.png){width="70%" zoomable="yes"}
 
@@ -76,11 +80,11 @@ The key size must be between 2048 and 8192 bits. `public-key.pem` contains the v
 
 1. Enter the key details:
 
-    ![Add Restricted Access Key form, with Title, Expiration Date, and Public key fields](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
+    ![Add restricted access key form, with Title, Expiration date, and Public key fields](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
 
-    - **Title**—A label to identify the key, shown in the key list and in the catalog view's key picker, for example `ACME Corp wholesale portal — Tier 1 pricing`.
-    - **Expiration date**—Date and time (UTC) after which the key stops being honored, even for a token that hasn't expired yet.
-    - **Public key**—The PEM-encoded RSA public key in Subject Public Key Info (SPKI) format, including the `-----BEGIN PUBLIC KEY-----` and `-----END PUBLIC KEY-----` markers. Must be unique across the environment.
+    - **[!UICONTROL Title]**—A label to identify the key, shown in the key list and the catalog view key picker, for example `ACME Corp wholesale portal — Tier 1 pricing`.
+    - **[!UICONTROL Expiration date]**—Date and time (UTC) after which the key stops being honored, even for a token that hasn't expired yet.
+    - **[!UICONTROL Public key]**—The PEM-encoded RSA public key in Subject Public Key Info (SPKI) format, including the `-----BEGIN PUBLIC KEY-----` and `-----END PUBLIC KEY-----` markers. Must be unique across the environment.
 
 1. Click **[!UICONTROL Save]**.
 
@@ -94,25 +98,29 @@ A restricted access key only restricts access after it's assigned to a catalog v
 
 1. On the **[!UICONTROL Restricted access keys]** page, find the key you want to remove and click **[!UICONTROL Delete]**.
 
-   If the key is assigned to one or more catalog views, a warning explains that clients relying on that key will lose access. The catalog views themselves remain protected—they don't become publicly accessible.
+   If the key is assigned to one or more catalog views, a warning explains that client applications relying on that key lose access. The catalog views themselves remain protected—they don't become publicly accessible.
 
 1. Confirm the deletion.
 
 ## Rotate a key
 
-To rotate a key without an access interruption, use the fact that a catalog view can have up to three keys assigned at once:
+To rotate a key without an access interruption, note that a catalog view can have up to three keys assigned at once:
 
 1. Generate a new key pair and add the new public key as a new restricted access key.
 1. Assign the new key to the catalog view alongside the existing key.
-1. Start signing new tokens with the new private key and roll your clients over.
-1. Once all clients are confirmed on the new key, remove and delete the old key.
+1. Start signing new tokens with the new private key to complete the key rollover.
+1. Once all client applications are confirmed on the new key, remove and delete the old key.
 
 ## Limits
 
+See [Catalog views and policy limits](boundaries-limits.md).
+
 | Limit | Value |
 | --- | --- |
-| Restricted access keys per catalog view | 3 |
+| Restricted access keys per catalog view | Maximum of 3 |
+| Restricted access keys per environment | Maximum of 100 |
 | RSA key size | 2048-bit minimum, 8192-bit maximum |
+| Key revocation propagation delay | Up to 5 minutes, due to caching. Tokens signed by a removed key are denied once the delay elapses. |
 
 ## More like this
 

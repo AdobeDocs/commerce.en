@@ -29,13 +29,21 @@ topic_v2:
 ---
 # Private catalog views
 
-By default, a [catalog view](catalog-view.md) is public—anyone who can reach the Merchandising API can retrieve its product and pricing data. Enable **[!UICONTROL Catalog Protection]** on a catalog view so that only requests carrying a valid signed token can retrieve its data.
+By default, a [catalog view](catalog-view.md) is public. Enable catalog protection on a catalog view to restrict access to requests that include a valid signed token.
 
-See [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.
+Catalog protection applies to the selected catalog view only. It does not change the view's policies, layers, or price books.
+
+The [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.Se
 
 >[!IMPORTANT]
 >
 >Automatic key creation and management through Adobe Commerce and the Adobe Commerce Optimizer Connector are not yet available.
+
+## Understand the protection boundary
+
+Catalog protection applies only to the catalog view where it is enabled. It protects catalog and search requests but does not change the view's policies or price books, protect other catalog views, or secure cart, checkout, or order operations.
+
+The connected commerce backend must independently enforce purchase eligibility.
 
 ## Protect a catalog view
 
@@ -54,10 +62,6 @@ Before you begin, [create a restricted access key](restricted-access-keys.md) fr
    >[!NOTE]
    >
    >Allow up to five minutes for Catalog Protection configuration changes to take effect.
-
->[!NOTE]
->
->If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible—storefronts that rely on this catalog view will not be able to serve data from it. Assign a new, unexpired key to restore access.
 
 ## Verify access is enforced
 
@@ -83,6 +87,14 @@ A request without a valid token returns a GraphQL error instead of catalog data,
 ```
 
 A request carrying a token signed by an assigned, unexpired key returns the catalog data as expected. For details on signing a JWT and calling the Merchandising API, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#authentication).
+
+## Manage restricted access keys
+
+If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible—storefronts that rely on this catalog view cannot serve data from it. Assign a new, unexpired key to restore access. For instructions, see [Rotate keys](restricted-access-keys.md#rotate-keys).
+
+>[!IMPORTANT]
+>
+>Automatic key creation and management through Adobe Commerce and the Adobe Commerce Optimizer Connector are not yet available.
 
 ## More like this
 
