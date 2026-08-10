@@ -48,6 +48,8 @@ nudge: true
 - Store setup {#setup}
    - [Catalog sources](./setup/catalog-sources.md)
    - [Catalog views](./setup/catalog-view.md)
+   - [Private catalog views](./setup/private-catalog-view.md)
+   - [Restricted access keys](./setup/restricted-access-keys.md)
    - [Catalog layers](./setup/catalog-layer.md)
    - [Policies](./setup/policies.md)
    - [Price books](./setup/pricebooks.md)
