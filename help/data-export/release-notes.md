@@ -51,6 +51,13 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.4.31 Release
+
+_August 7, 2026_
+
+![Fix](../assets/fix.svg) **Reduce unnecessary processing**–The SaaS Data Export extension now skips indexation to reduce unnecessary processing if the Commerce Services Connector is not configured. <!--MDEE-1413-->
+![Fix](../assets/fix.svg) Do not use row_id. <!--MDEE-830-->
+
 ### 103.4.30 Release
 
 _July 10, 2026_
