@@ -113,7 +113,7 @@ To rotate a key without an access interruption, note that a catalog view can hav
 
 ## Limits
 
-See [Catalog views and policy limits](boundaries-limits.md).
+See [Catalog views and policy limits](../boundaries-limits.md#catalog-views-and-policies).
 
 ## More like this
 
