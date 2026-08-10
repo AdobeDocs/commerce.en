@@ -112,22 +112,27 @@ This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) powered by [!DNL Edge Delivery Services] to create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder].
+To create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder], use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/) powered by [!DNL Edge Delivery Services].
 
 [!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from Adobe Commerce on Cloud or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for guidance on transitioning.
+>[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from Adobe Commerce on Cloud or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for transition guidance.
 
 ## Merchandising services and payment services
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
-- [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-- [Product Recommendations](../optimizer/merchandising/recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [[!DNL Live Search]](../live-search/overview.md)—Deliver smarter, faster, and relevant results for shoppers with this AI-powered search tool. For setup instructions, see [Setting up [!DNL Live Search]](../live-search/workspace.md).
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more. For configuration instructions, see [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
 - [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
-- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+
+  >[!NOTE]
+  >
+  >Catalog Service is included automatically with [!DNL Live Search] and [!DNL Product Recommendations].
+
+- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -135,7 +140,7 @@ Product Visuals helps simplify asset management using a digital asset management
 
 The integration ensures that digital assets, such as product images or marketing content, dynamically link to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
 
-[!DNL Product Visuals] is available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from [!DNL AEM Assets].
+[!DNL Product Visuals] is available natively with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from [!DNL AEM Assets].
 
 Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
@@ -205,7 +210,7 @@ Adobe provides developers with comprehensive extension points and tools to build
 Adobe provides the following developer tools for building integrations and customizations:
 
 - [**API Mesh for Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/)—Coordinate and combine multiple API, GraphQL, REST, and other sources into a single, queryable GraphQL endpoint.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Build and deploy secure and scalable web applications that extend Commerce functionality and integrate with third-party solutions.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/)—Build and deploy secure and scalable web applications that extend Commerce functionality and integrate with third-party solutions.
 - [**Events**](https://developer.adobe.com/commerce/extensibility/events/)—Use custom event triggers to interact with other extensible development tools.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to trigger interactions between Commerce and third-party systems automatically.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
@@ -223,7 +228,7 @@ Key features include:
 
 ### Simplified onboarding
 
-Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including Merchandising Services, a headless Commerce instance, and [!DNL App Builder], is automatically configured and integrated with your instances.
+Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including merchandising services, a headless Commerce instance, and [!DNL App Builder], is automatically configured and integrated with your instances.
 
 See [Getting started](getting-started.md) to learn how to create and manage Commerce instances.
 
