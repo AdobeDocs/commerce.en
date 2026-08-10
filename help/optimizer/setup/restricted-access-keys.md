@@ -32,7 +32,7 @@ nudge: true
 ---
 # Restricted access keys
 
-Restricted access keys let authorized client applications access a private [catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
+Restricted access keys let authorized client applications access a [private catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
 
 ## Restricted access key use cases
 
