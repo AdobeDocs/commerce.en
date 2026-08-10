@@ -12,6 +12,8 @@ You can customize [!DNL Payment Services] to your needs with helpful configurati
 
 When you configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] in the Admin, those configurations apply only to the environment that is set in the _[!UICONTROL Method]_ field of _[!UICONTROL General Configuration]_. Any changes you make in the configuration fields are independent of switching the _[!UICONTROL Method]_ selection---if you switch the method, your selections do not reset.
 
+If you run a single Commerce instance with **multiple websites** (and store views), you may need a **different PayPal merchant account** for some websites. [!DNL Payment Services] lets you complete **website-scoped** PayPal onboarding in the Admin after the instance is set up and onboarded at the **global** (default) scope. See [Connect a different PayPal account for a website](connect-website-account.md) for prerequisites and complete steps to onboard a website-scoped PayPal account.
+
 ## General configuration
 
 You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Merchant Location]_, and enable either sandbox testing or live payments in the _[!UICONTROL General Configuration]_ section.
@@ -347,7 +349,7 @@ Local Payment Methods (LPMs) provide support for region-specific and local payme
 
 >[!NOTE]
 >
->Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer’s billing‑address country and the website’s base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
+>Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer's billing‑address country and the website's base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
 
 ## Line Items
 
