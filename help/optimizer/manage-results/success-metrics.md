@@ -85,7 +85,7 @@ The key performance indicators are:
 
 The Success Metrics report includes highlights and summaries generated with generative AI. When you export a report to PDF, Adobe automatically attaches C2PA metadata to the exported file.
 
-C2PA metadata are tamper-evident, machine-readable metadata based on the C2PA open standard. They record that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp. New generative AI transparency laws require companies that provide generative AI tools, including Adobe, to attach this kind of durable metadata to qualifying content.
+C2PA metadata are tamper-evident, machine-readable metadata based on the [C2PA open standard](https://c2pa.org/). They record that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp.
 
 >[!NOTE]
 >
