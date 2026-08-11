@@ -1,10 +1,9 @@
 ---
-title: Migration Assessment
+title: Migration Assessment Tool
 description: Learn how to read an Adobe Commerce PaaS migration assessment report, interpret storefront and backend complexity signals, and use Adobe AI developer tools to begin building extensions for Adobe Commerce as a Cloud Service.
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
-nudge: true1
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
@@ -41,7 +40,7 @@ topic_v2:
     internal-label: Implementation
 ---
 
-# Migration Assessment
+# Migration Assessment Tool
 
 >[!IMPORTANT]
 >

@@ -48,6 +48,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
+last-update: 2026-08-07
 ---
 # Release notes
 
@@ -57,7 +58,31 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## July 2026 - release #1 {#latest}
+## August 2026 - release #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items will be published to Production on August 11, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Subscribe to an event for invoice payments
+
+A new `observer.sales_order_invoice_pay` event is emitted when an invoice payment is recorded, so integrations can subscribe to the event instead of polling for invoice status changes. <!-- CEXT-5983 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where fetching a customer's assigned companies through GraphQL could be slow. <!-- ACCS-1425 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## July 2026
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 

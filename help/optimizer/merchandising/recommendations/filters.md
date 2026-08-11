@@ -97,7 +97,7 @@ Use a **static** price filter when you want a fixed minimum or maximum in your s
 
 Use a **dynamic** price filter when recommendations should be limited relative to the **currently viewed product** on a product detail page (PDP). The filter uses that product's final price as an **anchor** and compares recommended products against boundaries you define.
 
-Dynamic operators are available only for [SKU-related recommendation types](types.md) that run in a product context, such as:
+Dynamic operators are available only for [SKU-related recommendation types](types.md) that run in a product context:
 
 - Viewed this, viewed that
 - Viewed this, bought that
@@ -105,7 +105,16 @@ Dynamic operators are available only for [SKU-related recommendation types](type
 - More like this
 - Visual similarity
 
-They are **not** available for popularity-based types (for example, **Most viewed** or **Most purchased**) because those units do not have a single current product to anchor the filter.
+They are **not** available for popularity-based types because those units do not have a single current product to anchor the filter:
+
+- Most viewed
+- Most purchased
+- Most added to cart
+- Trending
+- Recommended for you
+- Recently viewed
+- View to cart conversion
+- View to purchase conversion
 
 On the storefront, the recommendation drop-in reads the current product's price from the PDP context and sends it with the recommendation request. [!DNL Adobe Commerce Optimizer] uses that value as the anchor when evaluating dynamic price rules. For configurable products, the anchor is the **lowest variant** final price (`priceRange.minimum`).
 
