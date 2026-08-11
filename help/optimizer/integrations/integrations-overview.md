@@ -17,7 +17,7 @@ exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
-The Adobe Commerce Optimizer Connector is the bridge that synchronizes catalog and pricing data between Adobe Commerce (cloud or on-premises) and [!DNL Adobe Commerce Optimizer]. When you enable the connector, Commerce remains the system of record for product data while [!DNL Adobe Commerce Optimizer] powers product discovery, recommendations, merchandising rules, analytics, and headless storefront experiences.
+The Adobe Commerce Optimizer Connector is the bridge that synchronizes catalog and pricing data between Adobe Commerce (cloud or on-premises) and [!DNL Adobe Commerce Optimizer]. When you enable the connector, Commerce remains the system of record for product data while [!DNL Adobe Commerce Optimizer] powers product discovery, recommendations, merchandising rules, analytics, and headless storefront experiences. To restrict who can query a synced catalog view, see [Private catalog views](../setup/private-catalog-view.md).
 
 - [Adobe Commerce Optimizer Connector overview](../../aco-connector/overview.md){target="_blank"}
 - [Get started with the connector](../../aco-connector/get-started.md){target="_blank"}
