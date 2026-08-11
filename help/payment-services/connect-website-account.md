@@ -22,14 +22,14 @@ For Commerce instances with **multiple websites**, you may need **different PayP
 
 >[!NOTE]
 >
-> This feature currently supports connecting new accounts only.
+> This feature only supports connecting new accounts.
 
 ## Prerequisites for website-scoped onboarding
 
 Website-level onboarding is only available once your store meets these requirements:
 
 - [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) setup is complete.
-- A PayPal account is already connected at the global (Default Config) scope.
+- A PayPal account is connected at the global (Default Config) scope.
 
 You can confirm this by checking that the following fields are populated at the default scope:
 
@@ -37,7 +37,7 @@ You can confirm this by checking that the following fields are populated at the 
 - [!UICONTROL Payment Services Production ID]
 - [!UICONTROL PayPal Merchant ID]
 
-If these fields are empty, you must [complete global onboarding](configure-admin.md) first. The **[!UICONTROL Connect different account for website]** button remains disabled until this configuration is done.
+If these fields are empty, you must [complete global onboarding](configure-admin.md) first. The **[!UICONTROL Connect different account for website]** button is disabled until you complete the prerequisites.
 
 ## Start the website-level connection
 
@@ -57,15 +57,15 @@ A popup window opens.
 
 >[!NOTE]
 >
-> If you are onboarding in Hungary, Spain, or Austria, you must open and view the Terms and Conditions link before the **[!UICONTROL I Accept]** button becomes clickable. The button stays disabled until the terms have been opened.
+> If you are onboarding in Hungary, Spain, or Austria, you must open and view the Terms and Conditions link before you can click the **[!UICONTROL I Accept]** button. The button is disabled until you open the Terms and Conditions.
 
 ## Sign in to PayPal
 
-You are redirected to the PayPal login flow. Sign in and complete the onboarding steps within PayPal.
+After you are redirected to the PayPal login, sign in and complete the onboarding steps within PayPal.
 
 >[!IMPORTANT]
 >
-> Once you click **[!UICONTROL Confirm and Continue]** during this step, your session for the global scope ends and the website-level connection begins. If you clicked **[!UICONTROL Connect different account for website]** by accident, you can cancel at this point by selecting **[!UICONTROL Cancel]** or the **X** in the corner before confirming.
+> Once you click **[!UICONTROL Confirm and Continue]**, your session for the global scope ends and the website-level connection begins. If you accidentally clicked **[!UICONTROL Connect different account for website]**, you can cancel by selecting **[!UICONTROL Cancel]** or clicking the **X** icon before confirming.
 
 ## Finish and return to the Admin
 
@@ -86,4 +86,4 @@ After the page refreshes, check the website scope configuration page for:
 | `PENDING` | Onboarding is still processing |
 | `ERROR` | Onboarding did not complete successfully |
 
-If you see an `ERROR` status, an error message is displayed explaining the issue. You can retry the onboarding process by clicking **[!UICONTROL Connect different account for website]** again.
+If you see an `ERROR` status, an error message displays that explains the issue. You can retry the onboarding process by clicking **[!UICONTROL Connect different account for website]** again.
