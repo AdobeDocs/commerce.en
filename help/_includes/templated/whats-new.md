@@ -4,6 +4,72 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### August 7, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### August 5, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">migration overview</a> with the updated migration flow using the Migration Assessment Tool, Commerce Developer MCP, and Commerce Data Migration Service.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2a0d741c141a4d122b0a068f3a1e7c435d86fd75">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### August 4, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>New <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/integration/catalog-events-guide">Catalog events and Adobe I/O integration guide</a> explains how to enable catalog events, verify SaaS Data Export feed export and sync, and integrate with Adobe I/O Events.</p>
+</td>
+      <td>
+        Major update, new topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/719b6661370f1e639fafb2a89bc1a906a20df37b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 30, 2026
 
 <table style="table-layout:auto;">
@@ -350,38 +416,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Feedback, major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 8, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added a new reference page to provide more detailed information describing Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-sources">catalog sources</a> and how they are created.</p>
-</td>
-      <td>
-        Feedback, new topic, technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8b4d08af43cbff9aaf9fc8f417ddab12185f5565">commit</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>Added <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search">Semantic search</a> for [!DNL Live Search] with enable steps, best practices, and English-catalog limitations.<br />- Added <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search">Semantic search</a> for [!DNL Adobe Commerce Optimizer] and updated <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings">Settings — Advanced search</a> with simplified enablement and optional tuning controls.</li>
-</ul>
-</td>
-      <td>
-        Major update, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">commit</a></td>
     </tr>
   </tbody>
 </table>

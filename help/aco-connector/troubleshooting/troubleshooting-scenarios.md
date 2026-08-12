@@ -76,6 +76,17 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 - Verify that the website is configured for sync in the connector's export configuration. See [Customize the data export configuration](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirm that the price book ID used in [!DNL Commerce Optimizer] is present in the [catalog view](../../optimizer/setup/catalog-view.md){target="_blank"} configuration used to perform the products query.
 
+## Storefront requests return an access-denied error or catalog data disappears entirely
+
+**Issue:** Requests to the Merchandising API for a catalog view that previously returned data now fail with an `access-key-invalid` error, or a storefront that was working stops showing catalog data.
+
+**Cause:** The catalog view has [catalog protection](../../optimizer/setup/private-catalog-view.md) enabled, and either the request is missing the required `AC-Catalog-View-Access-Token` header or all restricted access keys assigned to the view have expired. The [!DNL Adobe Commerce Optimizer Connector] does not create, assign, or rotate restricted access keys automatically—key management is handled entirely by your client application.
+
+**Solution:**
+
+- Confirm the catalog view still has at least one unexpired [restricted access key](../../optimizer/setup/restricted-access-keys.md) assigned, and rotate or add a key if needed.
+- Verify the storefront or client sends a valid signed `AC-Catalog-View-Access-Token` header with each request. See [Private catalog views](../../optimizer/setup/private-catalog-view.md).
+
 ## Data in [!DNL Adobe Commerce Optimizer] is overwritten or unexpectedly modified after sync
 
 **Issue:** Data changes applied directly in [!DNL Adobe Commerce Optimizer] by an external system (such as a PIM or ERP) are lost or reverted after the connector runs a sync.

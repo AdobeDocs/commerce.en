@@ -1,5 +1,5 @@
 ---
-title: Catalog sources
+title: Catalog Sources
 description: Learn what catalog sources are and how they define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior.
 role: Admin, Developer
 recommendations: noCatalog
@@ -69,4 +69,5 @@ Use the following guidance when deciding how to structure your catalog sources:
 > * [Catalog layers](catalog-layer.md) - Modify product presentation without changing source data
 > * [Policies](policies.md) - Create attribute-based filters for catalog views
 > * [Price books](pricebooks.md) - Manage pricing structures for different customer segments
+> * [Restricted access keys](restricted-access-keys.md) - Protect a catalog view with signed-token authentication
 

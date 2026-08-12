@@ -70,6 +70,10 @@ How `priceBookId` is resolved:
 
 The `Store` request header determines the website scope and therefore the `websiteCode` component. The `sha1(customerGroupId)` component matches the price book ID formula used during data sync. See [Price books](reference/field-mapping.md#price-books).
 
+>[!NOTE]
+>
+>If the target catalog view has [!UICONTROL Catalog Protection] enabled, include a signed `AC-Catalog-View-Access-Token` header alongside `AC-View-ID` and `AC-Price-Book-ID` in Merchandising API requests, or the request is denied. See [Private catalog views](../optimizer/setup/private-catalog-view.md).
+
 ## Bundle products: add-to-cart format {#bundle-products-add-to-cart-format}
 
 Allow shoppers to add bundle products to the cart from a headless storefront with only the `SKU` and `qty` for each selected bundle option.

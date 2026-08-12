@@ -64,6 +64,7 @@ The following summary tables use the RACI model to show the security responsibil
 | Performing PCI ASV scans | RA | I |
 | Remediating [!DNL Adobe Commerce Optimizer] infrastructure PCI scans | R | |
 | Managing OS and platform secrets | RA | |
+| Generating, rotating, and revoking [restricted access keys](setup/restricted-access-keys.md) and signing tokens for [!UICONTROL Catalog Protection] | | RA |
 | Monitoring backend security logs | RA | |
 | Controlling Customer support and access | A | R |
 | Annual testing and documentation of Adobe DR plan and backup and restore | RA | |
