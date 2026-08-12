@@ -29,13 +29,13 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP] early-access initiative. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe account manager for eligibility.
+>Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP]. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe account manager for eligibility.
 
 ## Overview
 
 [!DNL SaaS Data Export] recognizes the standard Adobe Commerce product types (simple, configurable, bundle, and so on) when it prepares catalog data for connected Commerce Services such as [Live Search](../live-search/overview.md) and [Catalog Service](../catalog-service/overview.md). Third-party extensions can introduce **custom product types** that [!DNL SaaS Data Export] does not natively recognize.
 
-The Commerce Storefront MCP catalog enablement module lets [!DNL SaaS Data Export] represent these unrecognized, custom product types as **simple products** in the outbound catalog payload, so shoppers using [!DNL Commerce Storefront MCP] can discover them through catalog-backed services.
+The Commerce Storefront MCP catalog enablement module lets [!DNL SaaS Data Export] represent these unrecognized, custom product types as **simple products** in the outbound catalog payload, so shoppers using the [!DNL Commerce Storefront MCP] can discover them through catalog-backed services.
 
 ## Scope of the behavior
 
