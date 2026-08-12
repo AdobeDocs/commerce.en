@@ -24,6 +24,7 @@ nudge: true
 - Configure [!DNL Payment Services] {#configure}
   - [[!DNL Payment Services] Home](payments-home.md)
   - [[!DNL Payment Services] configuration](configure-admin.md)
+  - [Connect a different PayPal account for a website](connect-website-account.md)
   - [Command line configuration](configure-cli.md)
   - [Test and validate](test-validate.md)
 - Payments and checkout {#payments-checkout}
