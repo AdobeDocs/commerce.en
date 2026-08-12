@@ -42,6 +42,7 @@ topic_v2:
     internal-label: Personalization
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
+nudge: true
 ---
 # [!DNL Adobe Commerce Optimizer Connector]
 
