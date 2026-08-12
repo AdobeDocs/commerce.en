@@ -37,13 +37,13 @@ You can confirm this by checking that the following fields are populated at the 
 - [!UICONTROL Payment Services Production ID]
 - [!UICONTROL PayPal Merchant ID]
 
-If these fields are empty, you must [complete global onboarding](configure-admin.md) first. The **[!UICONTROL Connect different account for website]** button is disabled until you complete the prerequisites.
+If these fields are empty, you must [complete global onboarding](configure-admin.md) first. The **[!UICONTROL Connect different account]** button is disabled until you complete the prerequisites.
 
 ## Start the website-level connection
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. In the scope selector in the upper-left corner, switch from **[!UICONTROL Default Config]** to the **[!UICONTROL Website]** you want to onboard.
-1. Click **[!UICONTROL Connect different account for website]**.
+1. Click **[!UICONTROL Connect different account]**.
 
     If the button is disabled, your store has not met the [prerequisites](#prerequisites-global-scope) above.
 
@@ -65,7 +65,7 @@ After you are redirected to the PayPal login, sign in and complete the onboardin
 
 >[!IMPORTANT]
 >
-> Once you click **[!UICONTROL Confirm and Continue]**, your session for the global scope ends and the website-level connection begins. If you accidentally clicked **[!UICONTROL Connect different account for website]**, you can cancel by selecting **[!UICONTROL Cancel]** or clicking the **X** icon before confirming.
+> Once you click **[!UICONTROL Confirm and Continue]**, your session for the global scope ends and the website-level connection begins. If you accidentally clicked **[!UICONTROL Connect different account]**, you can cancel by selecting **[!UICONTROL Cancel]** or clicking the **X** icon before confirming.
 
 ## Finish and return to the Admin
 
@@ -86,4 +86,4 @@ After the page refreshes, check the website scope configuration page for:
 | `PENDING` | Onboarding is still processing |
 | `ERROR` | Onboarding did not complete successfully |
 
-If you see an `ERROR` status, an error message displays that explains the issue. You can retry the onboarding process by clicking **[!UICONTROL Connect different account for website]** again.
+If you see an `ERROR` status, an error message displays that explains the issue. You can retry the onboarding process by clicking **[!UICONTROL Connect different account]** again.
