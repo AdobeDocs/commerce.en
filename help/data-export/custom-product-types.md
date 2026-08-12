@@ -29,7 +29,7 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP]. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe account manager for eligibility.
+>Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP]. This module is supported in Adobe Commerce versions 2.4.4 and newer. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe account manager for eligibility.
 
 ## Overview
 
@@ -39,11 +39,11 @@ The Commerce Storefront MCP catalog enablement module lets [!DNL SaaS Data Expor
 
 ## Scope of the behavior
 
-- Representing a custom product type as a simple product applies only to catalog data sent to [!DNL Live Search] and [!DNL Catalog Service]. It does not change the product type stored in Adobe Commerce.
+- The Commerce Storefront MCP catalog enablement module does not change the product type stored in Adobe Commerce. Representing a custom product type as a simple product applies only to catalog data sent to [!DNL Live Search] and [!DNL Catalog Service].
 - No Admin setting or runtime configuration is required. Standard product types continue to export normally.
 - The module targets custom product types introduced by third-party extensions, not the standard Commerce product types.
 
-## 1. Install the module
+## Install the module
 
 To enable the Commerce Storefront MCP catalog enablement module, run the following from the command line:
 
@@ -53,10 +53,6 @@ composer update magento/module-storefront-mcp-enablement --with-dependencies
 bin/magento setup:upgrade
 ```
 
-## 2. Resync your catalog data
+## Resync your catalog data
 
 Installing the module does not change the underlying product data in Adobe Commerce, so existing custom product type items are not automatically re-exported. To apply the new simple product representation to catalog data that was already synced before you installed the module, manually resync your catalog data. See [Manually resync data](data-sync-manage.md#manually-resync-data).
-
-## Compatibility and limitations
-
-This module is in Early Access and is supported in Adobe Commerce versions 2.4.4 and newer. Deployment types and limitations will be documented here as they are confirmed.
