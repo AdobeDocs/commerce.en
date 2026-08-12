@@ -29,21 +29,21 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP] early-access initiative. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe representative for eligibility.
+>Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP] early-access initiative. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe account manager for eligibility.
 
 ## Overview
 
 [!DNL SaaS Data Export] recognizes the standard Adobe Commerce product types (simple, configurable, bundle, and so on) when it prepares catalog data for connected Commerce Services such as [Live Search](../live-search/overview.md) and [Catalog Service](../catalog-service/overview.md). Third-party extensions can introduce **custom product types** that [!DNL SaaS Data Export] does not natively recognize.
 
-The `magento/module-storefront-mcp-enablement` module lets [!DNL SaaS Data Export] represent these unrecognized, custom product types as **simple products** in the outbound catalog payload, so shoppers using [!DNL Commerce Storefront MCP] can discover them through catalog-backed services.
+The Commerce Storefront MCP catalog enablement module lets [!DNL SaaS Data Export] represent these unrecognized, custom product types as **simple products** in the outbound catalog payload, so shoppers using [!DNL Commerce Storefront MCP] can discover them through catalog-backed services.
 
 ## Scope of the behavior
 
-- Normalization applies only to catalog data sent to [!DNL Live Search] and [!DNL Catalog Service]. It does not change the product type stored in Adobe Commerce.
+- Representing a custom product type as a simple product applies only to catalog data sent to [!DNL Live Search] and [!DNL Catalog Service]. It does not change the product type stored in Adobe Commerce.
 - No Admin setting or runtime configuration is required. Standard product types continue to export normally.
 - The module targets custom product types introduced by third-party extensions, not the standard Commerce product types.
 
-## Install the module
+## 1. Install the module
 
 To enable the Commerce Storefront MCP catalog enablement module, run the following from the command line:
 
@@ -53,14 +53,10 @@ composer update magento/module-storefront-mcp-enablement --with-dependencies
 bin/magento setup:upgrade
 ```
 
-## Synchronization and verification
+## 2. Resync your catalog data
 
-1. Will the merchant need to reindex or manually resync after installation?
-1. Are there any specific verification steps they should complete?
+Installing the module does not change the underlying product data in Adobe Commerce, so existing custom product type items are not automatically re-exported. To apply the new simple product representation to catalog data that was already synced before you installed the module, manually resync your catalog data. See [Manually resync data](data-sync-manage.md#manually-resync-data).
 
 ## Compatibility and limitations
 
-This module is in Early Access. Supported Commerce versions, deployment types, and  limitations will be documented here as they are confirmed.
-
-1. Which Commerce version does this module support?
-1. Are there any limitations we should call out?
+This module is in Early Access and is supported in Adobe Commerce versions 2.4.4 and newer. Deployment types and limitations will be documented here as they are confirmed.
