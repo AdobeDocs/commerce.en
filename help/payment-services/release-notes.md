@@ -111,6 +111,19 @@ _June 28, 2021_
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
+
+## v2.16.1
+
+_August 10, 2026_
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6769 --> Corrected an intermittent issue on EDS storefronts that use PayPal smart buttons and that caused some payment methods to be unavailable on the checkout page.
+
+## v2.16.0
+
+_July 27, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6510 --> Merchants can now self-service the onboarding of a different PayPal account at the website scope directly from the [!DNL Commerce Admin]. [!DNL Payment Services] Home now includes a **[!UICONTROL Connect a different PayPal account for a website]** button that redirects to the Admin configuration page for payment methods. See [Connect a different PayPal account for a website](connect-website-account.md) for more information.
+
 ## v2.15.0
 
 _June 15, 2026_
