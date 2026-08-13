@@ -40,7 +40,6 @@ _July 30, 2026_
 
 ![New issue](../assets/new.svg) Now, merchants can hide specific store views for an AEM asset. When AEM Assets marks an image as hidden for one or more store views, Commerce excludes that image from the storefront on those store views. The Admin product media gallery now includes a **[!UICONTROL Store View Visibility]** field that shows which store views hide the image. <!-- Issue ACAP-1308 -->
 
-![Fixed issue](../assets/fix.svg) Fixed an issue where the module declared an unnecessary dependency on the Page Builder module, which could cause installation issues on instances that do not use Page Builder.
 
 ## v1.4.2
 
