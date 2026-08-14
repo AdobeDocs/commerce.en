@@ -2,8 +2,54 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 7 15:40:04 2026
+updated: Fri Aug 14 15:40:06 2026
 entries:
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/712
+  merge_commit: ed13ed011180fbb9d535f5a228a5f932ebf00689
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Merchants can now self-service the onboarding of a different PayPal
+    account at the website scope directly from the Commerce Admin. See [Connect a
+    different PayPal account for a website](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account)
+    for more information.
+  versions: ''
+  type: new-topic
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/707
+  merge_commit: e18c82a81c49de8175a8a8d77e9a191fe2af4b46
+  contributor: keharper_adobe
+  labels:
+  - new-topic
+- description: Updated the Adobe Commerce Optimizer Set up Guide with instructions
+    for enabling and configuring private catalog views to restrict catalog data access
+    with signed tokens, and updated related topics to reference the new capability:<br/>-
+    Added [Private catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view),
+    which explains how to enable Catalog Protection so only requests with a valid
+    signed token can retrieve a catalog view's data.<br/>- Added [Restricted access
+    keys](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys),
+    which explains how to create, assign, and rotate the keys used to sign tokens
+    for Catalog Protection.<br/>- Updated [Catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view),
+    [What is Adobe Commerce Optimizer?](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview),
+    [Get started](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started),
+    [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits),
+    [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist),
+    and the [Adobe Commerce Optimizer Connector Guide](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
+    to reference the new Private catalog views and Restricted access keys topics.
+  versions: ''
+  type: major-update, new-topic
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/690
+  merge_commit: de0de805f8ecd4f329ce3afc90e28197186856c2
+  contributor: meker_adobe
+  labels:
+  - major-update
+  - new-topic
 - description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
