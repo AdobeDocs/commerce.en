@@ -38,7 +38,7 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 _August 7, 2026_
 
-![New](../assets/new.svg) **New `externalDs` field**—Added `externalDs` to Catalog Service GraphQL, exposing the external data source associated with a product so storefront and integration consumers can identify the originating data source. See [Return externalIds for a product](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+![New](../assets/new.svg) **New `externalds` field**—Added `externalDs` to Catalog Service GraphQL, exposing the external data source associated with a product so storefront and integration consumers can identify the originating data source. See [Return externalIds for a product](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
 <!--DATA-7307-->
 
 ![Fix](../assets/fix.svg) **Correct `refineProduct` response for configurable products**—Fixed an issue where the `refineProduct` query returned `priceRange: null` and `roles: ["hidden"]` for specific configurable products, ensuring accurate pricing and visibility information for storefront consumers.
