@@ -43,7 +43,7 @@ To use [!DNL Payment Services], you'll need to connect your Commerce instance fi
 
 ## Standard vs. Advanced [!DNL Payment Services] Experience
 
-[!DNL Payment Services] [!DNL Payment Services] provides **Standard** (Express Checkout) and **Advanced** (fully supported) payment options and onboarding flows, depending on the country in which you operate.
+[!DNL Payment Services] provides **Standard** (Express Checkout) and **Advanced** (fully supported) payment options and onboarding flows, depending on the country in which you operate.
 
 >[!NOTE]
 >
