@@ -52,7 +52,7 @@ When [!UICONTROL Catalog Protection] is enabled, the price book selector on the 
 - If you enable [!UICONTROL Catalog Protection] on a catalog view that has multiple price books assigned, you cannot save the view until you remove all but one price book.
 - If you previously saved a private catalog view with multiple price book assignments before this restriction existed, the catalog view configuration is not automatically changed. However, the next time you edit the view, you must remove all but one price book before you can save the updates.
 
-In each of these cases, [!DNL Adobe Commerce Optimizer] displays the following validation message: *"A protected catalog view can use only one price book. Select 'Single price book only' to continue."*
+In each of these cases, [!DNL Adobe Commerce Optimizer] displays the following validation message: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
 
 Public catalog views are unaffected by this restriction and can continue to reference multiple price books.
 
