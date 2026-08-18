@@ -31,15 +31,30 @@ topic_v2:
 
 By default, a [catalog view](catalog-view.md) is public. Enable catalog protection on a catalog view to restrict access to requests that include a valid signed token.
 
-Catalog protection applies to the selected catalog view only. It does not change the view's policies, layers, or price books.
+Catalog protection applies to the selected catalog view only. It does not change the view's policies or layers. It does restrict the view to a single price book—see [Price book restriction on private catalog views](#price-book-restriction-on-private-catalog-views).
 
 See the [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.
 
 ## Understand the protection boundary
 
-Catalog protection applies only to the catalog view where it is enabled. It protects catalog and search requests but does not change the view's policies or price books, protect other catalog views, or secure cart, checkout, or order operations.
+Catalog protection applies only to the catalog view where it is enabled. It protects catalog and search requests but does not change the view's policies or layers, protect other catalog views, or secure cart, checkout, or order operations.
 
 The connected commerce backend must independently enforce purchase eligibility.
+
+## Price book restriction on private catalog views
+
+A private catalog view can reference only one price book. This differs from a public catalog view, which can use multiple price books.
+
+When [!UICONTROL Catalog Protection] is enabled, the price book selector on the catalog view form switches from a multi-select control to a single-select (radio button) control.
+
+![Private catalog view price book restriction](../assets/catalog-view-price-book-restriction.png)
+
+- If you enable [!UICONTROL Catalog Protection] on a catalog view that has multiple price books assigned, you cannot save the view until you remove all but one price book.
+- If you previously saved a private catalog view with multiple price book assignments before this restriction existed, the catalog view configuration is not automatically changed. However, the next time you edit the view, you must remove all but one price book before you can save the updates.
+
+In each of these cases, [!DNL Adobe Commerce Optimizer] displays the following validation message: *"A protected catalog view can use only one price book. Select 'Single price book only' to continue."*
+
+Public catalog views are unaffected by this restriction and can continue to reference multiple price books.
 
 ## Protect a catalog view
 
