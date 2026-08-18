@@ -81,6 +81,7 @@ In this section, you create a catalog view, select a [policy](policies.md), and 
 
     - **Use all available price books**—This option pulls pricing data from all available price books.
     - **Allow selected price books only**—This option displays the **Add allowed price books** dialog. Use this dialog to select which specific price book to use for the catalog view.
+    - **Single price book only**—Select this option if only one price book applies. This option is required if you want to configure a private catalog view, which can reference only one price book. See [Price book restriction on private catalog views](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
     - **Disable pricing**—This option is not available at this time.
 
    >[!NOTE]
