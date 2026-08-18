@@ -12,6 +12,8 @@ You can customize [!DNL Payment Services] to your needs with helpful configurati
 
 When you configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] in the Admin, those configurations apply only to the environment that is set in the _[!UICONTROL Method]_ field of _[!UICONTROL General Configuration]_. Any changes you make in the configuration fields are independent of switching the _[!UICONTROL Method]_ selection---if you switch the method, your selections do not reset.
 
+If you run a single Commerce instance with **multiple websites** (and store views), you may need a **different PayPal merchant account** for some websites. [!DNL Payment Services] lets you complete **website-scoped** PayPal onboarding in the Admin after the instance is set up and onboarded at the **global** (default) scope. See [Connect a different PayPal account for a website](connect-website-account.md) for prerequisites and complete steps to onboard a website-scoped PayPal account.
+
 ## General configuration
 
 You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Merchant Location]_, and enable either sandbox testing or live payments in the _[!UICONTROL General Configuration]_ section.
@@ -50,11 +52,11 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 
 If you run a single Commerce instance with **multiple websites** (and store views), you may need a **different PayPal merchant account** for some websites. [!DNL Payment Services] lets you complete **website-scoped** PayPal onboarding in the Admin after the instance is set up and onboarded at the **global** (default) scope.
 
-In earlier releases, website-level PayPal account mapping typically required you to [contact Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#Solution) or your Adobe representative. Use the **[!UICONTROL Connect different account for website]** action when you meet the prerequisites below.
+In earlier releases, website-level PayPal account mapping typically required you to [contact Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#Solution) or your Adobe representative. Use the **[!UICONTROL Connect different account]** action when you meet the prerequisites below.
 
 ### Prerequisites (global scope)
 
-The **[!UICONTROL Connect different account for website]** control is only available and enabled on a **website** scope when **all** of the following are already true for the instance at **default/global** configuration:
+The **[!UICONTROL Connect different account]** control is only available and enabled on a **website** scope when **all** of the following are already true for the instance at **default/global** configuration:
 
 1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) setup is complete.
 
@@ -64,7 +66,7 @@ The **[!UICONTROL Connect different account for website]** control is only avail
 
 1. A **global** PayPal merchant account is **connected** and you have **finished PayPal onboarding** for that default scope (the **[!UICONTROL PayPal Merchant ID]** and related fields are populated for global scope as described in [General configuration](#general-configuration)).
 
-    If global onboarding is not complete, switch the configuration scope to a **[!UICONTROL Website]**, open **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]**, and the **[!UICONTROL Connect different account for website]** button is **disabled**; complete connector setup and **global** PayPal onboarding first.
+    If global onboarding is not complete, switch the configuration scope to a **[!UICONTROL Website]**, open **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]**, and the **[!UICONTROL Connect different account]** button is **disabled**; complete connector setup and **global** PayPal onboarding first.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -347,7 +349,7 @@ Local Payment Methods (LPMs) provide support for region-specific and local payme
 
 >[!NOTE]
 >
->Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer’s billing‑address country and the website’s base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
+>Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer's billing‑address country and the website's base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
 
 ## Line Items
 
@@ -438,6 +440,6 @@ In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
 
-To connect a **different PayPal account to an individual website** from the Admin after **global** Commerce Services and PayPal onboarding is complete, use **[!UICONTROL Connect different account for website]** at **[!UICONTROL Website]** scope. See [Connect a different PayPal account for a website](#connect-a-different-paypal-account-for-a-website).
+To connect a **different PayPal account to an individual website** from the Admin after **global** Commerce Services and PayPal onboarding is complete, use **[!UICONTROL Connect different account]** at **[!UICONTROL Website]** scope. See [Connect a different PayPal account for a website](#connect-a-different-paypal-account-for-a-website).
 
 See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
