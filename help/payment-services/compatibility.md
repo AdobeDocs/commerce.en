@@ -21,7 +21,7 @@ level_v2:
 ---
 # Compatibility for [!DNL Payment Services]
 
-[!DNL Payment Services] is available for [!DNL Adobe Commerce as a Cloud Service], all supported versions of [!DNL Adobe Commerce on Cloud] and on-premises and Magento Open Source. See the [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) page for version-specific information.
+[!DNL Payment Services] is available for [!DNL Adobe Commerce as a Cloud Service], all supported versions of [!DNL Adobe Commerce on Cloud] and on-premises, and Magento Open Source. See the [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) page for version-specific information.
 
 ## Prerequisites
 
