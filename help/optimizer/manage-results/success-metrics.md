@@ -85,19 +85,18 @@ The key performance indicators are:
 
 The Success Metrics report includes highlights and summaries using generative AI. When you export a report to PDF, Adobe automatically attaches C2PA metadata to the exported file.
 
-C2PA metadata are tamper-evident, machine-readable metadata based on the [C2PA open standard](https://c2pa.org/). They record that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp.
+C2PA metadata is tamper-evident, machine-readable metadata based on the [C2PA open standard](https://c2pa.org/). The metadata records that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp.
 
 >[!NOTE]
 >
->C2PA metadata are attached automatically. No additional action is required, and this behavior cannot be turned off. C2PA metadata do not change how your report looks. They are invisible metadata carried within the PDF.
+>C2PA metadata is attached automatically. No additional action is required, and this behavior cannot be turned off. C2PA metadata does not change how your report looks. They are invisible metadata carried within the PDF.
 
 **What this means for your exported reports**
 
 - When you export a Success Metrics report to PDF, the exported file carries C2PA metadata.
-- C2PA metadata travel with the PDF when you share or download it. Third-party platforms that support C2PA metadata may read this metadata and display transparency information to viewers.
+- C2PA metadata travels with the PDF when you share or download it. Third-party platforms that support C2PA metadata may read this metadata and display transparency information to viewers.
 - You can verify the C2PA metadata attached to any file by uploading it to [Inspect](https://contentauthenticity.adobe.com/inspect).
 
-For more about how Adobe attaches C2PA metadata across applications, see *Generative AI Content Transparency*. NOTE: this italicized text will be a link to this yet to be published topic: https://adobe.sharepoint.com/:w:/s/DX-AI/IQAlHM4ttIArS6O3A1R6RvjTAZyGGYVqvRKt8YnvRtDZ8OE?e=wbXT33&or=WORD-WEB.BODY.NT&ct=1785499900173
 
 ## Using Success Metrics and Sites Optimizer together
 
