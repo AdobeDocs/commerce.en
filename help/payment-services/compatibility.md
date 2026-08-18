@@ -27,7 +27,7 @@ level_v2:
 
 To use [!DNL Payment Services], you'll need to connect your Commerce instance first. **You perform this connection only once**.
 
-1. If you are unsure if your instance is connected, navigate to **System** > Services > **Commerce Services Connector** to view your API keys and SaaS Identifier details. If those values are present, then your instance is connected.
+1. If you are unsure whether your instance is connected, navigate to **System** > Services > **Commerce Services Connector** to view your API keys and SaaS Identifier details. If those values are present, then your instance is connected.
 
 1. If you still need to connect your instance, view the instructions on the [Commerce Services Connector](../landing/saas.md) page.
 
