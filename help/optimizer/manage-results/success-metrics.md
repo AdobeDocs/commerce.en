@@ -97,6 +97,7 @@ C2PA metadata is tamper-evident, machine-readable metadata based on the [C2PA op
 - C2PA metadata travels with the PDF when you share or download it. Third-party platforms that support C2PA metadata may read this metadata and display transparency information to viewers.
 - You can verify the C2PA metadata attached to any file by uploading it to [Inspect](https://contentauthenticity.adobe.com/inspect).
 
+![Inspect Sample](../assets/inspect-sample.png)
 
 ## Using Success Metrics and Sites Optimizer together
 
