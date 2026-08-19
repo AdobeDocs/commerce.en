@@ -115,7 +115,7 @@ This command updates the tools to the latest version.
    aio commerce extensibility tools-setup
    ```
 
-   The setup process prompts you with configuration options. Follow the prompts to complete the installation. The tools install in the selected directory.
+   The setup process prompts you with configuration options. To complete the installation, follow the prompts. The tools install in the selected directory.
 
    * Select the starter kit you want to use for your project.
 
@@ -300,7 +300,7 @@ While the skills are automatically invoked when you chat with your coding agent,
 
 ## Best Practices
 
-Adobe recommends following the following best practices when using the AI coding tools:
+Adobe recommends the following best practices when using the AI coding tools:
 
 ### Plan mode
 
@@ -366,7 +366,7 @@ Consult the following resources to get started:
 
 ### Protocol
 
-The following four-phase protocol is automatically enforced by the installed skills. The tools follow this protocol automatically when developing applications:
+The installed skills automatically enforce the following four-phase protocol. The tools follow this protocol automatically when developing applications:
 
 * Phase 1: Requirements analysis and clarification
   * When asked clarifying questions, provide complete answers.
@@ -436,7 +436,7 @@ Use the following best practices when testing:
 After completing development of a feature in your implementation plan, test it immediately. Early testing prevents compound issues and makes debugging easier.
 
 * Do not wait until all features are complete
-* Test incrementally to catch issues early
+* To catch issues early, test incrementally.
 * Validate functionality before moving to the next feature
 
 #### Test locally first
@@ -523,7 +523,7 @@ Help me debug why this action is returning 500 errors
 
 ### Debugging
 
-Stop and assess when things go wrong. If you encounter issues:
+Stop and assess when errors occur. If you encounter issues:
 
 * Stop and assess - Do not continue in a broken state
 * Check logs - Use activation logs to identify issues

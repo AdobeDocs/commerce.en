@@ -63,7 +63,7 @@ The following tools are required for both extension and storefront development i
   * macOS/Linux: No installation required
   * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
+* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot, are also supported but could require modifications to the prompts and other steps in the tutorial.
 
 ## [!DNL Adobe Commerce as a Cloud Service] prerequisites
 
@@ -79,7 +79,7 @@ The following tools are required for both extension and storefront development i
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-After installing the [!DNL Adobe I/O CLI] and the required plugins, set up your extensibility workspace. Adobe recommends using the automated setup for the fastest experience.
+After installing the [!DNL Adobe I/O CLI] and the required plugins, set up your extensibility workspace. Adobe recommends using the automated setup for the most efficient experience.
 
 * **[Automated setup](#automated-setup) (Recommended)** — Run a single command to configure your workspace automatically.
 * **[Manual setup](#manual-setup)** — Follow step-by-step instructions to configure each component individually.
@@ -207,7 +207,7 @@ Set up a project in the Adobe Developer Console with the required APIs and crede
 
 #### Create a new project
 
-Create an App Builder project in the Adobe Developer Console to host your extension.
+To host your extension, create an App Builder project in the Adobe Developer Console.
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
 1. Click **[!UICONTROL Create project from a template]**.
@@ -347,7 +347,7 @@ EVENT_PREFIX=test
 
 ### Download the workspace configuration
 
-Run the following command to download the workspace configuration file:
+To download the workspace configuration file, run the following command:
 
 ```bash
 aio console workspace download workspace.json
@@ -387,7 +387,7 @@ When prompted, choose the option that uses the organization, project, and worksp
 
 ### Install the extensibility AI tools
 
-This process creates the MCP configuration (`.<agent>/mcp.json`), the skills directory (`.<agent>/skills/`), and adds `AGENTS.md` to the project root. You will be prompted to choose a starter kit, coding agent, and package manager.
+This process creates the MCP configuration (`.<agent>/mcp.json`), the skills directory (`.<agent>/skills/`), and adds `AGENTS.md` to the project root. You are prompted to choose a starter kit, coding agent, and package manager.
 
 
 1. Set up the AI-assisted development tools in the `extension` folder using the following commands:
@@ -412,9 +412,9 @@ This process creates the MCP configuration (`.<agent>/mcp.json`), the skills dir
 
 ## Storefront manual setup
 
-This section describes how to manually configure your storefront for the [Ratings extension tutorial](./ratings-extension.md) and other storefront tutorials.
+This section describes how to configure your storefront manually for the [Ratings extension tutorial](./ratings-extension.md) and other storefront tutorials.
 
-To automatically configure your storefront, run the `app-setup` command described in the [Automated setup](#automated-setup) section and select the [!DNL AEM Boilerplate Commerce] starter kit.
+To configure your storefront automatically, run the `app-setup` command described in the [Automated setup](#automated-setup) section and select the [!DNL AEM Boilerplate Commerce] starter kit.
 
 ### Prerequisites
 
