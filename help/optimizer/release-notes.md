@@ -39,6 +39,13 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 ### Attribute ranking (beta)
 
 [!DNL Adobe Commerce Optimizer] merchandising rules now support [**attribute ranking**](./merchandising/rules/add.md#attribute-ranking) for the **All products rule**, **search rules**, and **category rules**. Automatically apply a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, such as brand or category, without selecting individual SKUs. Attribute ranking is in beta. [Learn more](./merchandising/rules/add.md#attribute-ranking).
+_August 7, 2026_
+
+![New](../assets/new.svg) **New `externalIds` field**—Added `externalIds` to Catalog Service GraphQL, exposing the external data source associated with a product so storefront and integration consumers can identify the originating data source. See [Return externalIds for a product](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![Fix](../assets/fix.svg) **Correct `refineProduct` response for configurable products**—Fixed an issue where the `refineProduct` query returned `priceRange: null` and `roles: ["hidden"]` for specific configurable products, ensuring accurate pricing and visibility information for storefront consumers.
+<!--COMOPT-2367-->
 
 {{aco-release}}
 

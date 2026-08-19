@@ -52,7 +52,13 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
-## June 2026
+### August 2026
+
+**Release date**: August 7, 2026
+
+![Fix](../assets/fix.svg) Fixed an issue with the `products` GraphQL query where the `title` field for customizable options (`inputOptions` and `options`) incorrectly returned `null` instead of the option's own title when the option's `sku` field was empty or not indexed. <!--DATA-7304-->
+
+### July 2026
 
 **Release date**: July 1, 2026
 
@@ -106,7 +112,7 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 **Release date**: December 11, 2025
 <!-- v1.46 -->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. 
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability.
 <!--DATA-6852, DATA-6864-->
 
 ### November 2025
