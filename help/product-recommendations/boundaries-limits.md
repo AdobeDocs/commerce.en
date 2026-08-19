@@ -48,7 +48,7 @@ Review the following boundaries and limits to ensure that [!DNL Product Recommen
 
 ## B2B
 
-- Product Recommendations honors [category permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), [shared catalogs](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), and customer group-specific pricing. Shoppers see only recommendations for products they can access according to their segment and catalog assignment. See [Onboarding](onboarding.md).
+- Product Recommendations honors [category permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), [shared catalogs](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared), and customer group-specific pricing. Shoppers see only recommendations for products they can access according to their segment and catalog assignment. See [Onboarding](onboarding.md).
 
 ## Data and readiness
 
@@ -57,4 +57,4 @@ Review the following boundaries and limits to ensure that [!DNL Product Recommen
 
 ## Troubleshooting
 
-For help with catalog sync, recommendations not displaying, or other common issues, search the [Commerce Knowledge Base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) or contact [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+For help with catalog sync, recommendations not displaying, or other common issues, search the [Commerce Knowledge Base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) or contact [support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
