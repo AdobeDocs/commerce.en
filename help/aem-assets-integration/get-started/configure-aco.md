@@ -79,7 +79,7 @@ To onboard AEM Assets Integration with [!DNL Commerce Optimizer], Adobe Support 
 * AEM Assets events (asset approved, updated, removed)
 * [!DNL Commerce Optimizer] catalog events (product created, updated)
 
-To initiate this process, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) that includes the following information:
+To initiate this process, [create a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) that includes the following information:
 
 * **[!DNL Adobe Commerce Optimizer] Tenant ID** (Instance ID) found in your [!DNL Commerce Optimizer] URL or Commerce Cloud Manager UI.
 * **AEM Program ID and Environment ID** that you set up when you [configured AEM Assets](#configure-aem-assets-first) for the integration.
