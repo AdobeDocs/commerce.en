@@ -98,7 +98,7 @@ The following items are available on Production environments as of July 28, 2026
 >
 >This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
 
-New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) replicate the [!DNL Commerce Admin] [!UICONTROL **Edit Order**] feature allowing integrations to edit an order programmatically:
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) replicate the [!DNL Commerce Admin] [!UICONTROL **Edit Order**] feature allowing integrations to edit an order programmatically:
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
@@ -135,7 +135,7 @@ All `custom-email` endpoints require access to the `Marketing > Communications >
 >
 >This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
 
-New [`orderChain` REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
+New [`orderChain` REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
 
 | Method | Endpoint | Description |
 | --- | --- | --- |

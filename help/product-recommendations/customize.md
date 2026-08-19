@@ -21,7 +21,7 @@ When you install the Product Recommendations module, Adobe Commerce creates the 
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-For more information about modifying template files, refer to [Template customization](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) in the Frontend Developer Guide.
+For more information about modifying template files, refer to [Template customization](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough) in the Frontend Developer Guide.
 
 If you modify the `recommendations.html` file, you must preserve the following tags in the file to ensure that Adobe Commerce can collect recommendation metrics from your storefront:
 
@@ -119,7 +119,7 @@ For example, if your store sells some organic products, you might have a custom 
 
 ![Add Badge](assets/unit-custom.png)
 
-To make sure a custom product attribute is available when you render the recommendation unit on the page, set the `Used in Product Listing` property to `Yes` in the [Product Attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) page in the Admin.
+To make sure a custom product attribute is available when you render the recommendation unit on the page, set the `Used in Product Listing` property to `Yes` in the [Product Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) page in the Admin.
 
 When this property is set, the JSON payload includes an `attributes` object that contains an array of attribute codes and values. You can then apply custom storefront styling based on these attribute values, such as adding special visual treatments or badges as mentioned previously.
 
