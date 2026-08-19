@@ -41,7 +41,7 @@ To expose your local environment:
 
 1. Restore your original base URL configuration when testing is complete.
 
-If the endpoint's response time is under 5 seconds, PayPal displays an error message in the pop-up.
+If the endpoint's response time is over 5 seconds, PayPal displays an error message in the pop-up.
 
 #### Apple Pay local development
 
