@@ -29,7 +29,7 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP]. This module is supported in Adobe Commerce versions 2.4.4 and newer. Availability, packaging, and installation requirements are subject to change before general availability. Contact your Adobe account manager for eligibility.
+>Support for custom product types is currently in **Early Access** as part of the [!DNL Commerce Storefront MCP]. This module is supported in Adobe Commerce versions 2.4.4 and newer. Availability, packaging, and installation requirements are subject to change before general availability. To request an invitation to this **Early Access**, send an email to [commerceeap@adobe.com](mailto:commerceeap@adobe.com). The Adobe team will respond with next steps and eligibility requirements.
 
 ## Overview
 
