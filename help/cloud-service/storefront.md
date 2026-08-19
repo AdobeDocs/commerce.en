@@ -47,7 +47,7 @@ For a more customizable and detailed walkthrough, refer to the [storefront docum
 
 1. In the **[!UICONTROL Commerce GraphQL Endpoint (optional)]** field, enter your [!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL endpoint, which you can access in the Commerce Cloud Manager after [creating your instance](./getting-started.md#create-an-instance).
 
-    Alternatively, if you are using [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your [!DNL API Mesh] GraphQL endpoint into the **[!UICONTROL Commerce GraphQL Endpoint (optional)]** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) for more information.
+    Alternatively, if you are using [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), enter your [!DNL API Mesh] GraphQL endpoint into the **[!UICONTROL Commerce GraphQL Endpoint (optional)]** field. See [create a mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) for more information.
 
 1. Click **[!UICONTROL Create Site]**. Follow the on-screen instructions to authorize access to your GitHub repository.
 
@@ -55,7 +55,7 @@ Once the process completes, you can customize your storefront using the followin
 
 * Customize your code: `https://github.com/<username or org>/<repo name>`
 * Edit your content: `https://da.live/#/<username or org>/<repo name>`
-* Manage your config: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
+* Manage your configuration: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
 * Preview your storefront: `https://main--<repo name>--<username or org>.aem.page/`
 
 ## Next steps
@@ -67,3 +67,4 @@ See the following articles for more information:
 * [Generate Variations](./use-cases.md#generate-variations)—Use Generative AI to automate high-quality content generation.
 * [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)—Get detailed information about updating site content and integrating with Commerce frontend components and backend data.
 * [Configuration Service](https://www.aem.live/docs/config-service-setup)—Learn about migrating your storefront configuration from `config.json` to use the Configuration Service, which supports advanced use cases like repoless configuration and overlays. 
+* [Storefront B2B features](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/#major-features)—Learn about B2B features available in the storefront compatibility package, which is automatically installed for all [!DNL Adobe Commerce as a Cloud Service] instances.
