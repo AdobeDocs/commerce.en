@@ -32,4 +32,4 @@ nudge: true
    - [Collect Data](events.md)
    - [Customize](customize.md)
    - [Handle Cookie Restrictions](setting-cookie.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

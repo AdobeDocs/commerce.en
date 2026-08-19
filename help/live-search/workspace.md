@@ -45,7 +45,7 @@ If you are a healthcare customer and you installed the [Data Services HIPAA exte
 
 ## Set the scope
 
-Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) of all [!DNL Live Search] settings is set to `Default Store View`. If your [!DNL Commerce] installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) where your facet settings apply.
+Initially the [scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) of all [!DNL Live Search] settings is set to `Default Store View`. If your [!DNL Commerce] installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) where your facet settings apply.
 
 ## Menu Options
 
@@ -61,7 +61,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 
 ## Set attributes as searchable
 
-To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
+To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
 
 To allow attributes to be searchable, complete the following steps:
 
@@ -69,7 +69,7 @@ To allow attributes to be searchable, complete the following steps:
 1. Select the attribute you want to be searchable, such as `color`.
 1. Select **Storefront Properties** and set **Use in Search** to `yes`.
 
-[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
+[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
 
 The following attributes are always searchable:
 
@@ -203,7 +203,7 @@ Prices in the Widget Product Listing Page and Popover are converted to the Defau
 
 ## Default attribute values
 
-The following product attributes have [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are used by [!DNL Live Search] and enabled by default.
+The following product attributes have [storefront properties](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that are used by [!DNL Live Search] and enabled by default.
 
 | Property | Storefront Property | Attribute |
 |---|---|---|
