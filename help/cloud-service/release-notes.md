@@ -58,7 +58,123 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## August 2026 - release #1 {#latest}
+## September 2026 - release #1 {#latest}
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were published to Production on September 1, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Adobe Commerce as a Cloud Service updated to 2.4.9
+
+[!DNL Adobe Commerce as a Cloud Service] now contains all changes from [!DNL Adobe Commerce] version 2.4.9.
+
+Refer to the [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9) for more information.
+
+### Sync sandbox and production configurations through the REST API
+
+New `GET` and `PUT /V1/system/config` REST API endpoints let integrations read and update Commerce system configuration values, including:
+
+* Store information
+* Shipping and tax settings
+* Payment method settings
+* B2B and company settings
+
+These endpoints allow admins to synchronize configuration across environments programmatically instead of manually reconfiguring the [!DNL Commerce Admin]. Running `GET /V1/system/config` on your sandbox environment and then running `PUT /V1/system/config` with the previously retrieved Sandbox configuration allows you to sync configuration changes from Sandbox to Production. <!-- ACCS-607, CCSAAS-5346 -->
+
+### Query inventory availability through GraphQL
+
+A new `sourceAvailability` GraphQL query returns per-source stock availability for one or more SKUs, so storefronts such as product and category pages can display accurate stock information for each inventory source. <!-- ACCS-933 -->
+
+### Read persistent wishlist and account-sharing settings through GraphQL
+
+The `storeConfig` GraphQL query now returns the [!UICONTROL **Enable Persistence**], [!UICONTROL **Persist Wish List**], and [!UICONTROL **Share Customer Accounts**] configuration values, so storefronts can access merchant persistent shopping cart and wishlist settings without contacting support. <!-- USF-4051 -->
+
+### Search customer orders by product, SKU, or order ID
+
+The `CustomerOrdersFilterInput` GraphQL input now supports an optional `search` field that matches against the order number, item SKU, or item name, combined with any other filters you provide. <!-- USF-4290 -->
+
+### Update and delete custom email templates through the API
+
+New `PUT` and `DELETE` [custom email](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) template endpoints let integrations update and delete custom email templates. <!-- CCSAAS-5091 -->
+
+### View product option groups and identifiers through the REST API
+
+The product options REST endpoint now returns `group` and `option_uids` fields for each option, matching the identifiers already available through GraphQL. <!-- ACCS-1370 -->
+
+### New shared catalog events
+
+The following shared catalog events are now available to subscribe to using [!DNL Adobe I/O Events]:<!-- ACCS-1532 -->
+
+* Category assignment
+* Category unassignment
+* Company assignment
+* Company unassignment
+* Company unassign-all
+* Shared catalog save
+* Shared catalog delete
+
+### Use company addresses across purchase orders, quotes, and returns
+
+Company Address Books now integrate with additional B2B workflows. Companies that use a shared address book see consistent, company-scoped addresses across:
+
+* Purchase orders
+* Instant purchase
+* Gift registry
+* Reorder
+* Returns and RMAs
+* Invoices
+* Shipments
+* Credit memos
+* Negotiable quotes
+* Quote templates
+
+<!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
+
+### Hide images from store views in [!DNL AEM Assets]
+
+[!DNL AEM Assets] integration now supports a `hiddenStoreViews` parameter, so imported images can be scoped as hidden on specific store views. This enables you to show different product imagery to different regional or demographic storefronts. <!-- ACAP-1308 -->
+
+### Onboard PayPal accounts at the website scope
+
+Merchants can now self-service the onboarding of a different PayPal account at the website scope directly from the [!DNL Commerce Admin]. Payment Services Home now includes a **Connect a different PayPal account for a website** button that redirects to the Admin configuration page for payment methods. See [Connect a different PayPal account for a website](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account) for more information. <!-- PAY-6961 -->
+
+### Free Gift cart price rules
+
+The **Free Gift** cart price rule is now available in the [!DNL Commerce Admin] for storefronts. <!-- AC-17678 -->
+
+This rule allows you to add a free gift product to the cart when the rule conditions are met.
+
+<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed a field validation error and an authorization error in the `updateCompanyAddress` mutation for Company Address Books. <!-- USF-4229 -->
+
+* Fixed an issue that could occur when guest orders were placed using a registered customer's email. <!-- CCSAAS-5313 -->
+
+* Fixed an issue where repeated data export runs could cause resource issues. <!-- CCSAAS-5275 -->
+
+* Fixed a fallback issue with GraphQL media gallery labels in the [!DNL AEM Assets] integration. <!-- ACAP-1308 -->
+
+* Fixed an issue with [!DNL PayPal] SDK parameters that could affect checkout rendering. <!-- PAY-6961 -->
+
+* Fixed an issue where unsupported [!DNL Payment Services] payment methods could appear at checkout. <!-- PAY-6976 -->
+
+* Fixed an issue where event payloads with array-valued fields, such as shared catalog category and company assignment events, could contain empty objects instead of the expected data. <!-- CEXT-6554 -->
+
+* Fixed an issue where configuring several searchable customer or customer address attributes could cause display errors. The customer grid now notifies you when you reach the limit. <!-- CCSAAS-5303 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## August 2026 - release #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -77,8 +193,6 @@ A new `observer.sales_order_invoice_pay` event is emitted when an invoice paymen
 The following selected enhancements, optimizations, and bug fixes are included in this release:
 
 * Fixed an issue where fetching a customer's assigned companies through GraphQL could be slow. <!-- ACCS-1425 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -216,8 +330,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Webhook regex rule patterns are now validated when you save a conditional webhook. <!-- CEXT-6287 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## June 2026 - release #1
@@ -274,8 +386,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * The GET `V1/customers/{customerId}` REST endpoint now returns the `assistance_allowed` configuration field. <!-- USF-4132 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## May 2026 release #1
@@ -311,8 +421,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed page load issues that could occur after submitting an order in the [!DNL Commerce Admin]. <!-- CCSAAS-4413 -->
 
 * Fixed an issue where orders with the same timestamp could display outdated order status information in the sales order grid. <!-- CCSAAS-4890 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
