@@ -52,6 +52,19 @@ Support is provided for the latest version. Release notes for older versions are
 
 ## Storefront Catalog Service
 
+### August 2026
+
+**Release date**: August 7, 2026
+
+![Fix](../assets/fix.svg) Fixed an issue with the `products` GraphQL query where the `title` field for customizable options (`inputOptions` and `options`) incorrectly returned `null` instead of the option's own title when the option's `sku` field was empty or not indexed. <!--DATA-7304-->
+
+### July 2026
+
+**Release date**: July 1, 2026
+
+![New](../assets/new.svg) **New `canEditQuantity` field**—Added `canEditQuantity` to `ProductViewOptionValueProduct` in Catalog Service GraphQL. It exposes the optional **User Defined** quantity setting for bundle selections from the Commerce Admin, so storefront consumers can determine whether a bundle selection's quantity is editable.
+<!--COMOPT-2050-->
+
 ### May 2026
 
 **Release date**: May 20, 2026
@@ -99,7 +112,7 @@ This query is available only for customers using Adobe Commerce Optimizer Mercha
 **Release date**: December 11, 2025
 <!-- v1.46 -->
 
-![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability. 
+![Fix](../assets/fix.svg) System-level and infrastructure improvements to enhance performance and stability.
 <!--DATA-6852, DATA-6864-->
 
 ### November 2025
@@ -606,6 +619,16 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 - For Adobe Commerce as a Cloud Service customers, the latest version is installed in your environment.
 
 - For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
+
+### v3.5.0 release
+
+**Release date**: July 10, 2026
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) **Staged category URL key sync**—Updated the Catalog Service metapackage dependencies to include the Catalog Staging Data Exporter module (`magento/module-catalog-staging-data-exporter`). This module re-exports product feeds when a staged category `url_key` change applies, so staged catalog changes propagate correctly to the SaaS catalog (Catalog Service, Live Search, and Product Recommendations).
+
+![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
 
 ### v3.4.0 release
 

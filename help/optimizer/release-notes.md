@@ -32,9 +32,45 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## August 2026
+
+>[!BEGINSHADEBOX]
+
+_August 7, 2026_
+
+![New](../assets/new.svg) **New `externalIds` field**—Added `externalIds` to Catalog Service GraphQL, exposing the external data source associated with a product so storefront and integration consumers can identify the originating data source. See [Return externalIds for a product](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![Fix](../assets/fix.svg) **Correct `refineProduct` response for configurable products**—Fixed an issue where the `refineProduct` query returned `priceRange: null` and `roles: ["hidden"]` for specific configurable products, ensuring accurate pricing and visibility information for storefront consumers.
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## July 2026
+
+>[!BEGINSHADEBOX]
+
+_July 20, 2026_
+
+![Fix](../assets/fix.svg) **Category navigation performance**—Applied performance optimizations to the category service, resulting in higher throughput and lower P99 latency for the `CategoryNavigation` query, improving service responsiveness and overall user experience under high load.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## June 2026
 
 >[!BEGINSHADEBOX]
+
+_June 24, 2026_
+
+<!-- v1.3 -->
+
+![New](../assets/new.svg) **New `canEditQuantity` field**—Added `canEditQuantity` to `ProductViewOptionValueProduct` in Catalog Service GraphQL. It exposes the optional **User Defined** quantity setting for bundle selections from the Commerce Admin, so storefront consumers can determine whether a bundle selection's quantity is editable.
+<!--COMOPT-2050-->
 
 ### Semantic search
 
@@ -309,3 +345,4 @@ The base production URLs for the European Union region are:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
+

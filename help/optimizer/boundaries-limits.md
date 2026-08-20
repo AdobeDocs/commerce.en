@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Optimizer limits and boundaries
+title: Adobe Commerce Optimizer Limits and Boundaries
 description: Learn about Adobe Commerce Optimizer license limits and system boundaries. Plan capacity, track usage, and avoid latency and throttling when limits are exceeded.
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
@@ -94,6 +94,9 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>The limits above cover capacity and usage allocations. For the Product Visuals feature overview and functional constraints, see [Product Visuals with AEM Assets](setup/product-visuals.md).
 
 ### Catalog views and policies
 
@@ -102,6 +105,10 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 | Catalog views | Number of configurable subsets of your master catalog | Based on the number of [Catalog variations](#catalog) | Yes<br>Increase catalog variations |
 | Policies per catalog view | Number of data filters allowed | 10 | No |
 | Attribute values in a policy | Number of product characteristics that can be configured for filtering | 100 | No |
+| [Restricted access key assignment](setup/private-catalog-view.md) | Number of restricted access keys that can be assigned to a single catalog view | 3 | No |
+| [Restricted access keys](setup/restricted-access-keys.md) | Number of keys per environment | Maximum of 100 | No |
+| RSA key size (restricted access keys) | Minimum and maximum key strength accepted for a restricted access key | 2048-bit minimum, 8192-bit maximum | No |
+| Restricted access keys | Key revocation propagation delay | Up to 5 minutes, due to caching. Tokens signed by a removed key are denied once the delay elapses. | Not applicable |
 
 {style="table-layout:auto"}
 

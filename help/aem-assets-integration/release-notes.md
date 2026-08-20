@@ -32,13 +32,29 @@ _February 11, 2025_
 
 +++
 
+## v1.4.4
+
+_July 30, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg) Now, merchants can hide specific store views for an AEM asset. When AEM Assets marks an image as hidden for one or more store views, Commerce excludes that image from the storefront on those store views. The Admin product media gallery now includes a **[!UICONTROL Store View Visibility]** field that shows which store views hide the image. <!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_July 10, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where asset role attributes (image, small image, thumbnail, and swatch image) could accumulate empty store-view-level values, causing images to appear missing on non-default store views. Now, these attributes are global in scope, and existing empty store-view rows are removed so that images inherit correctly from the default store view. <!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _June 15, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![Fixed issue](../assets/fix.svg) Fixed an issue where the **[!UICONTROL OBSERVABILITY]** section header was missing from the Admin **[!UICONTROL System]** menu when the AEM Assets integration was enabled, leaving the **[!UICONTROL Subscription List]** link displayed without its heading. <!--ACAP-1302 --> 
+![Fixed issue](../assets/fix.svg) Fixed an issue where the **[!UICONTROL OBSERVABILITY]** section header was missing from the Admin **[!UICONTROL System]** menu when the AEM Assets integration was enabled, leaving the **[!UICONTROL Subscription List]** link displayed without its heading. <!-- Issue ACAP-1302 -->
 
 ![Fixed issue](../assets/fix.svg) Fixed an issue where saving the AEM Assets integration configuration displayed a raw PHP warning instead of a clear message on instances where Dynamic Media Open API is not enabled. A clear, generic error message now appears. <!-- ACAP-1298 -->
 
@@ -64,7 +80,7 @@ _May 14, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-1268 --> When images or assets are imported from AEM into a Commerce product media gallery, alt text is now carried over as part of the sync. Alt text can be set per store view in AEM Assets. See [Alt text in AEM Assets metadata](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![New issue](../assets/new.svg)<!-- Issue ACAP-1268 --> When images or assets are imported from AEM into a Commerce product media gallery, alt text is now carried over as part of the sync. Alt text can be set per store view in AEM Assets. See [Localized alt text in AEM Assets metadata](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 

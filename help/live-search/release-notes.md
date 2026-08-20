@@ -48,14 +48,14 @@ These notes describe updates that were published outside of a versioned release 
 
 _June 8, 2026_
 
-![New](../assets/new.svg) [!DNL Live Search] now supports semantic search, configurable from the [**Settings**](./settings.md#semantic-search) workspace. Unlike keyword search, semantic search uses AI to match products by meaning and context — helping reduce zero-result searches for natural-language queries like "something warm for a winter hike." [Learn more](./semantic-search.md).
+![New](../assets/new.svg) For merchants using Adobe Commerce versions 2.4.4 and newer, [!DNL Live Search] now supports semantic search, configurable from the [**Settings**](./settings.md#semantic-search) workspace. Unlike keyword search, semantic search uses AI to match products by meaning and context — helping reduce zero-result searches for natural-language queries like "something warm for a winter hike." [Learn more](./semantic-search.md).
 
 **Setup**: Enable with a single toggle. No attribute configuration or storefront changes required.
 
 **Availability** (English catalogs only):
 
 - [!DNL Adobe Commerce as a Cloud Service] — Enabled by default.
-- Adobe Commerce on Cloud and on-premises — Must be enabled manually.
+- Adobe Commerce on Cloud and on-premises (versions 2.4.4 and newer) — Must be enabled manually.
 
 _May 22, 2026_
 

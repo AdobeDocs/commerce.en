@@ -65,7 +65,7 @@ This workflow demonstrates the checkout process for a customer purchasing a prod
 
 1. In the Commerce Admin, navigate to [!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Payment Methods**].
 
-1. In the [!UICONTROL **General Configuration**] section, enter your `Payment Services Sandbox ID` and `Payment Services Sandbox Key`. You can get these IDs by following the steps described in [Sandbox onboarding](../payment-services/sandbox.md#sandbox-onboarding)
+1. In the [!UICONTROL **General Configuration**] section, enter your `Payment Services Sandbox ID` and `Payment Services Sandbox Key`. You can get these IDs by following the steps described in [Sandbox onboarding](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
 
 1. Set the [!UICONTROL **Enable**] dropdown to [!UICONTROL **Yes**].
 
@@ -89,7 +89,7 @@ This workflow demonstrates the checkout process for a customer purchasing a prod
 
 1. Enter the required contact details and shipping information. You can use fictional information for this order.
 
-1. To checkout, select [!UICONTROL **Check / Money Order**]. If you want to use a credit card, use one of the [test cards provided by Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers). You can use these with any future expiration date and any CVC.
+1. To checkout, select [!UICONTROL **Check / Money Order**]. If you want to use a credit card, use one of the [test cards provided by PayPal](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers). You can use these with any future expiration date and any CVC.
 
    ![Checkout form with contact and shipping information fields](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -131,23 +131,23 @@ Create, edit, and publish content directly onto the storefront.
 
 ## Contextual experimentation
 
-[!DNL Adobe Commerce]'s contextual experimentation feature allows you to create and manage experiments on your storefront to test different content and configurations.
+Adobe's contextual experimentation feature allows you to create and manage experiments on your storefront to test different content and configurations.
 
 ### Prerequisites
 
 * Install the [AEM Sidekick extension](https://www.aem.live/docs/sidekick)
 
 1. In Storefront Builder, select your index page and click [!UICONTROL **Copy**].
-  
+
 1. Create an [!UICONTROL **experiments**] folder under the main folder, by clicking the [!UICONTROL **New**] button and selecting [!UICONTROL **Folder**].
 
 1. Create a folder named **1234** in the [!UICONTROL **experiments**] folder.
 
 1. Paste the two copies of the index page into the **1234** folder.
 
-1. Open each page and rename them "homev1" and "homev2". These are your [challengers](https://www.aem.live/docs/experimentation#create-your-challenger-page).
+1. Open each page and rename them "homev1" and "homev2". These pages are your [challengers](https://www.aem.live/docs/experimentation#create-your-challenger-page).
 
-1. Modify each page to include different content. For example, change the hero image or the text. You need to be able to identify the differences between each page.
+1. To include different content, modify each page. For example, change the hero image or the text. You need to be able to identify the differences between each page.
 
 1. Publish each of your challenger pages.
 
@@ -168,7 +168,7 @@ Create, edit, and publish content directly onto the storefront.
 
 1. Open an incognito or private browsing window and navigate to your main page.
 
-1. Close the private browsing window and repeat the previous step. Each time you open the page, you will see a random variant that you created.
+1. Close the private browsing window and repeat the previous step. Each time you open the page, you see a random variant that you created.
 
 ## Enhance storefront content
 
@@ -180,9 +180,9 @@ With [!DNL AEM Assets], [!DNL Adobe Express], and [!DNL Firefly], you can quickl
 
 ### Customize the background of an image
 
-Consider a scenario where you want to quickly modify the background of a product image. The combination of [!DNL Adobe Commerce], [!DNL AEM Assets], and [!DNL Adobe Express] allows you to complete this change in a few simple steps.
+Consider a scenario where you want to modify the background of a product image quickly. The combination of [!DNL Adobe Commerce], [!DNL AEM Assets], and [!DNL Adobe Express] allows you to complete this change in a few steps.
 
-1. Open the [storefront](./storefront.md) you created in the prerequisites and navigate to an item you want to change. Note the items SKU or Product Code.
+1. Open the [storefront](./storefront.md) you created in the prerequisites and navigate to an item you want to change. Note the item's SKU or Product Code.
 
 1. Open [!DNL AEM Assets], by selecting it in the [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
@@ -206,7 +206,7 @@ Consider a scenario where you want to quickly modify the background of a product
 
    ![Text box for describing the image to generate with AI](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
-1. Adjust the [!UICONTROL Brush size] and draw where you want to add the generated image. For this example, draw around the existing object to select the background.
+1. Adjust the [!UICONTROL Brush size] and draw where you want to add the generated image. To select the background for this example, draw around the existing object.
 
 1. Click [!UICONTROL **Generate**] to view the results.
 
@@ -290,7 +290,7 @@ Consider a scenario where you want to quickly modify the background of a product
 
 ### Generate content and images
 
-1. Open [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) 
+1. Open [[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
 
 1. Select the [!UICONTROL **Hero Banner**] template.
 
@@ -306,11 +306,11 @@ Consider a scenario where you want to quickly modify the background of a product
 
 1. From the [!UICONTROL **Content type**] dropdown, select [!UICONTROL **Photo**].
 
-1. For the [!UICONTROL **Style**] reference image, select the existing Adobe store banner.
+1. For the [!UICONTROL **Style**] reference image, select the existing Adobe Store banner.
 
 1. Select the generated image that you want to use and click [!UICONTROL **Save**].
 
-1. Repeat this process with other reference images to generate more variations.
+1. To generate more variations, repeat this process with other reference images.
 
 
 ## Troubleshooting
@@ -323,12 +323,12 @@ Use the following suggestions to resolve any issues you face when attempting the
   1. For specific commands, use the `--help` flag. For example:
      * `aio console --help`
      * `aio commerce --help`
- 
+
 * If you encounter invalid login issues:
 
   1. Run `aio config clear`.
   1. Run `aio auth login --force`.
-  1. Login in your browser.
+  1. Log in to your browser.
   1. Select your profile.
   1. Switch back to the terminal to continue.
 

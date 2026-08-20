@@ -14,9 +14,9 @@ product_v2:
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Feature Comparison](feature-comparison.md)
-- [Getting Started](getting-started.md)
-- [User and Identity Management](user-management.md)
+- [Feature comparison](feature-comparison.md)
+- [Getting started](getting-started.md)
+- [User and identity management](user-management.md)
 - [Storefront](storefront.md)
 - [Use cases](use-cases.md)
 - Security {#security}
@@ -25,29 +25,34 @@ product_v2:
   - [Identity and access management](security/access-control.md)
   - [Compliance and certifications](security/compliance.md)
   - [Security architecture and data flow](security/data-flow.md)
-- [Add Files to Products](product-files.md)
+- [Add files to products](product-files.md)
 - [Observability](observability.md)
 - Migration {#migration}
   - [Overview](migration/overview.md)
   - Migration tools {#migration-tools}
-    - [Bulk data migration tool](migration/bulk-data.md)
-    - [Migration assessment](migration/assessment.md)
+    - Bulk data migration tool {#bulk-data}
+      - [Overview](migration/bulk-data/migration-tool.md)
+      - [Customer readiness checklist](migration/bulk-data/readiness-checklist.md)
+      - [Verify migration service access](migration/bulk-data/cdms-access.md)
+      - [Run a bulk data migration](migration/bulk-data/migration-guide.md)
+      - [Video walkthrough](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+    - [Migration Assessment Tool](migration/assessment.md)
     - [Coding tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-  - {hide-from-toc} [Documentation RAG Service](migration/doc-rag.md)
-- [Login as a Customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
-- [Gift Card Account REST Endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
-- [Email Triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
+  - {hide-from-toc} [Documentation RAG service](migration/doc-rag.md)
+- [Login as a customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Gift card account REST endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
+- [Email triggering through REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
-  - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
-  - [Ratings Extension Tutorial](tutorials/ratings-extension.md)
-  - [Shipping Method Extension Tutorial](tutorials/shipping-method-extension.md)
-  - {hide-from-toc} [Delivery Estimates Extension Tutorial](tutorials/delivery-estimates-extension.md)
-  - {hide-from-toc} [In Stock Notification Extension Tutorial](tutorials/in-stock-notification-extension.md)
-  - {hide-from-toc} [Product Reviews Extension Tutorial](tutorials/product-reviews-extension.md)
+  - [Tutorial prerequisites](tutorials/tutorial-prerequisites.md)
+  - [Ratings extension tutorial](tutorials/ratings-extension.md)
+  - [Shipping method extension tutorial](tutorials/shipping-method-extension.md)
+  - {hide-from-toc} [Delivery estimates extension tutorial](tutorials/delivery-estimates-extension.md)
+  - {hide-from-toc} [In stock notification extension tutorial](tutorials/in-stock-notification-extension.md)
+  - {hide-from-toc} [Product reviews extension tutorial](tutorials/product-reviews-extension.md)
 - Schemas {#schemas}
-  - [GraphQL Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-  - [REST API Schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Video Tutorials](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
-- [Release Notes](release-notes.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+  - [GraphQL schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+  - [REST API schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+- [Video tutorials](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Release notes](release-notes.md)
+- [Return to Commerce Services home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

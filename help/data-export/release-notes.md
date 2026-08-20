@@ -35,7 +35,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
 ---
-# [!DNL SaaS Data Export] Extension Release Notes
+# [!DNL SaaS Data Export Extension] Release Notes
 
 These release notes describe the latest versions of the [!DNL SaaS data export] extension. Support is provided for the current major released version. Release notes for older versions are provided for reference.
 
@@ -47,9 +47,30 @@ Updates include:
 
 >[!NOTE]
 >
->The SaaS data export extension is a collection of modules that is installed automatically with Live Search, Product Recommendations, and the Catalog Service. You can check the version installed on your system using Composer. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
+>The [!DNL SaaS data export] extension is a collection of modules that is installed automatically with [!DNL Live Search], [!DNL Product Recommendations], and [!DNL Catalog Service]. You can check the version installed on your system using [!DNL Composer]. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
 
-## 2026 Releases
+## 2026 releases {#release-notes-2026}
+
+### 103.4.31 Release
+
+_August 7, 2026_
+
+![Fix](../assets/fix.svg) **Reduce unnecessary processing**–The SaaS Data Export extension now skips indexation to reduce unnecessary processing if the Commerce Services Connector is not configured. <!--MDEE-1413-->
+![Fix](../assets/fix.svg) Do not use row_id. <!--MDEE-830-->
+
+### 103.4.30 Release
+
+_July 10, 2026_
+
+![Fix](../assets/fix.svg) Fixed the Feed Status Grid filter by ID capability on the Data Feed Sync Status page in the Commerce Admin so that matching feed records are displayed correctly when you filter by feed ID. <!--MDEE-1396-->
+![New](../assets/new.svg) Added a `--force` option to the `bin/magento saas:resync` command to resync all selected data feeds even when they already show as synchronized, making full resync and recovery scenarios easier. <!--MDEE-1334-->
+
+### 103.4.29 Release
+
+_July 6, 2026_
+
+![Fix](../assets/fix.svg) Fixed an issue where the order of related, up-sell, and cross-sell product links in the products feed could vary between runs, causing unchanged products to be resubmitted on every `bin/magento saas:resync --feed products` run. These links are now exported in a consistent order, so products are resynced only when they actually change. <!--MDEE-1391-->
+![Fix](../assets/fix.svg) Fixed an issue where the prices feed sent full base prices instead of catalog rule prices for websites in time zones behind UTC (for example, US and Canada) during the early morning hours in UTC. Catalog rule pricing is now delivered correctly regardless of a website's time zone. <!--MDEE-1401-->
 
 ### 103.4.28 Release
 
@@ -103,7 +124,7 @@ _May 5, 2026_
 
 _April 20, 2026_
 
-![Fix](../assets/fix.svg) **Resolved SQL Errors When Deleting Static EAV Attributes**–The ProductAttributeDelete plugin no longer generates SQL errors when deleting static EAV attributes, ensuring smoother attribute management and improved system reliability. <!--MDEE-1336-->
+![Fix](../assets/fix.svg) **Resolved SQL errors when deleting static EAV attributes**–The ProductAttributeDelete plugin no longer generates SQL errors when deleting static EAV attributes, ensuring smoother attribute management and improved system reliability. <!--MDEE-1336-->
 ![Fix](../assets/fix.svg) **Fixed category path export after category moves**– Ensures that the categories feed correctly updates the `url_path` when a category is moved to a different parent, preventing missing or stale category paths in connected Commerce services.<!--MDEE-1331-->
 ![Fix](../assets/fix.svg) **Improved scheduled category updates for related products**–Scheduled updates to category URLs now affect only the intended categories, preserving data integrity and preventing unintended changes to related products. Now, scheduled category URL changes are correctly reflected in exported data, keeping storefront navigation and linked services aligned with your current catalog.
 <!--MDEE-1321-->
@@ -171,7 +192,7 @@ _November 24, 2025_
 
 _October 22, 2025_
 
-![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from Adobe Commerce to connected services (Catalog Service, Live Search, and Product Recommendations). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from [!DNL Adobe Commerce] to connected services ([!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### 103.4.14 Release
 
@@ -297,7 +318,7 @@ _March 11, 2025_
 ![New](../assets/new.svg) Added functionality to partially synchronize `products`, `productOverrides`, and `productAttributes` feeds based on a specified list of product SKUs. Use the new functionality by adding the `--by-ids` option to the resync CLI command: <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![Fix](../assets/fix.svg) Reduced potential compatibility issues with PHP 8.4 by addressing deprecated functionality. <!--MDEE-1002-->
@@ -414,7 +435,7 @@ _June 20, 2024_
 
 ![Fix](../assets/fix.svg) Optimized the Prices query for large catalogs with many websites.
 
-![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occurs.
+![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occur.
 
 ### 103.3.5 Release
 

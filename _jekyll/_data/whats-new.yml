@@ -2,8 +2,195 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 19 15:40:08 2026
+updated: Fri Aug 14 15:40:06 2026
 entries:
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/712
+  merge_commit: ed13ed011180fbb9d535f5a228a5f932ebf00689
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Merchants can now self-service the onboarding of a different PayPal
+    account at the website scope directly from the Commerce Admin. See [Connect a
+    different PayPal account for a website](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account)
+    for more information.
+  versions: ''
+  type: new-topic
+  date: August 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/707
+  merge_commit: e18c82a81c49de8175a8a8d77e9a191fe2af4b46
+  contributor: keharper_adobe
+  labels:
+  - new-topic
+- description: Updated the Adobe Commerce Optimizer Set up Guide with instructions
+    for enabling and configuring private catalog views to restrict catalog data access
+    with signed tokens, and updated related topics to reference the new capability:<br/>-
+    Added [Private catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view),
+    which explains how to enable Catalog Protection so only requests with a valid
+    signed token can retrieve a catalog view's data.<br/>- Added [Restricted access
+    keys](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys),
+    which explains how to create, assign, and rotate the keys used to sign tokens
+    for Catalog Protection.<br/>- Updated [Catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view),
+    [What is Adobe Commerce Optimizer?](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview),
+    [Get started](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started),
+    [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits),
+    [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist),
+    and the [Adobe Commerce Optimizer Connector Guide](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
+    to reference the new Private catalog views and Restricted access keys topics.
+  versions: ''
+  type: major-update, new-topic
+  date: August 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/690
+  merge_commit: de0de805f8ecd4f329ce3afc90e28197186856c2
+  contributor: meker_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: August 7, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/703
+  merge_commit: c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Updated the [migration overview](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)
+    with the updated migration flow using the Migration Assessment Tool, Commerce
+    Developer MCP, and Commerce Data Migration Service.
+  versions: ''
+  type: major-update
+  date: August 5, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/695
+  merge_commit: 2a0d741c141a4d122b0a068f3a1e7c435d86fd75
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: New [Catalog events and Adobe I/O integration guide](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/integration/catalog-events-guide)
+    explains how to enable catalog events, verify SaaS Data Export feed export and
+    sync, and integrate with Adobe I/O Events.
+  versions: ''
+  type: major-update, new-topic
+  date: August 4, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/615
+  merge_commit: 719b6661370f1e639fafb2a89bc1a906a20df37b
+  contributor: meker_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Updated the [Payment Services Compatibility table for Standard services](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience)
+    to reflect broader geographic availability and to expand the supported-countries
+    detail for the advanced offering.
+  versions: ''
+  type: feedback
+  date: July 30, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/685
+  merge_commit: b667dfd60809e55bc82cecc8c4f7df60483eecba
+  contributor: hloveall_adobe
+  labels:
+  - feedback
+- description: Updated the Adobe Commerce as a Cloud Service [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    to Production.
+  versions: ''
+  type: major-update
+  date: July 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/684
+  merge_commit: 1f91b5535d30ac894531508278b19d961f5a9d2c
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Updated the [Bulk data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)
+    documentation with more information about the migration process.
+  versions: ''
+  type: major-update
+  date: July 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/676
+  merge_commit: c8cab2404d47a6cb4a0418a59b533bf11e082b0b
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Updated Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: July 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/679
+  merge_commit: ed8bf2044f77432eb38df3c3cbb13b7708f3c33b
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Documented [self-service onboarding](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service)
+    for the AEM Assets integration on AEM release `2026.5.26309` and later, added
+    a new [Commerce metadata in AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/metadata)
+    topic, and added a guide to [connect AEM Assets to your storefront](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring)
+    via Da.live.
+  versions: ''
+  type: major-update
+  date: July 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/639
+  merge_commit: 21d305eaa87cd70d82c530e4ee5a4ea34574d400
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: July 7, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/665
+  merge_commit: 976a43b367be87363307dc27c55f98df18271eb1
+  contributor: jhoover_adobe
+  labels:
+  - core-saas
+  - major-update
+- description: Removed the LLM Optimizer and Commerce integration documentation. The
+    feature has been re-scoped and moved to the [Commerce Admin guide](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment).
+  versions: ''
+  type: major-update
+  date: July 6, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/641
+  merge_commit: edab7c8b3c7965425c5d3008a537f7e4a1fc374b
+  contributor: emarr_adobe
+  labels:
+  - major-update
+- description: Updated catalog data sync verification guidance across Commerce service
+    documentation. Service installation and configuration topics now use a consistent
+    two-step workflow—confirm export on the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status),
+    then confirm delivery on the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)—with
+    updated instructions in [Catalog Service Get Started](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export),
+    [Live Search Install](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#monitor-sync-progress),
+    [Product Recommendations Install](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization),
+    and [Manage synchronization](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working)
+    in the _SaaS Data Export Guide_.
+  versions: ''
+  type: feedback
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/648
+  merge_commit: 82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - feedback
+- description: Added a new [Adobe Commerce Optimizer Connector feed table schema reference](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/feed-table-reference)
+    and updated [SaaS Data Export synchronization](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/sync-overview),
+    [manual sync management](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage),
+    [Commerce CLI resync commands](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/data-export-cli-commands),
+    and [feed table schema](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/feed-table-reference)
+    guidance.
+  versions: ''
+  type: major-update, new-topic
+  date: June 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/657
+  merge_commit: 601d02435f388096d59ce7f8e2a9e3e7c8bec65b
+  contributor: mslabko_adobe
+  labels:
+  - major-update
+  - new-topic
 - description: Updated documentation for managing catalog data synchronization between
     Adobe Commerce and connected Commerce services.<br/>- Added [View and manage the
     synchronization process](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage)

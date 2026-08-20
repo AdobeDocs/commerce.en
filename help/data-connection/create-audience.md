@@ -37,16 +37,7 @@ Create audiences in Real-Time CDP using data from storefront, back office, and p
 
 ## What have other customers achieved?
 
-Adobe [!DNL Commerce] customers have achieved significant business impacts from activating audiences built in Real-Time CDP and deploying them to their [!DNL Commerce] instance.
-
-A global, multi-brand apparel retailer achieved:
-
-- One source of truth with 10s of millions of unified customer profiles
-- Created 40+ unique audiences of "high intent customers" to engage across channels
-
-A global beverage company collected:
-
-- 98 million customer profiles from over 100 countries
+Adobe [!DNL Commerce] customers have achieved significant business impacts from activating audiences built in Real-Time CDP and deploying them to their [!DNL Commerce] instance. For related customer outcomes from Commerce event data, see [Use Adobe Journey Optimizer to send an abandoned cart email](using-ajo.md#what-have-other-customers-achieved).
 
 ## Let's get started
 
