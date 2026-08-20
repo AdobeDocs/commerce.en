@@ -252,7 +252,7 @@ If your account has access to [[!DNL Adobe Experience Manager as a Cloud Service
 
 >[!NOTE]
 >
->Users without appropriate assets permissions will be unable to access advanced features of [!DNL AEM Assets], such as [AI image generation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}, [generated variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} and more.
+>Users without appropriate assets permissions will be unable to access advanced features of [!DNL AEM Assets], such as [AI image generation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/overview){target="_blank"}, [generated variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations-integrated-editor){target="_blank"} and more.
 
 >[!TIP]
 >

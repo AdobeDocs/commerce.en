@@ -40,7 +40,7 @@ You can extend product attributes without registering them in [!DNL Adobe Commer
 
 Create a plugin that adds a `customer_attribute` to the `Magento\CatalogDataExporter\Model\Provider\Product\Attributes` class.
 
-1. Update the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) to define the plugin.
+1. Update the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) to define the plugin.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -113,7 +113,7 @@ Create a plugin that adds a `customer_attribute` to the `Magento\CatalogDataExpo
 
 If you dynamically create a custom product attribute and want to use it for display, search, or filtering in storefront services, add the product attribute metadata to configure the storefront behavior.
 
-1. Update the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) to define the plugin for the product attribute metadata.
+1. Update the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) to define the plugin for the product attribute metadata.
 
      ```xml
      <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

@@ -319,7 +319,7 @@ Use the agent to integrate the ratings API into the storefront product detail pa
    You should see the following changes in your development environment and browser:
 
    * A product rating component is automatically created.
-   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
+   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/) or as a standalone block, depending on the chosen architecture.
    * Stars display with proper fill proportions based on the rating values from your API.
 
    ![Product detail page showing star ratings integrated below the product title](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
