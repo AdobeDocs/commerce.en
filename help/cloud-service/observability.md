@@ -87,7 +87,7 @@ The [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telemetry/blob
 
 ### API Mesh logging
 
-[API Mesh logging](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging/) lets you monitor and debug requests flowing through your mesh using ray IDs. Export logs in bulk or forward them to platforms like [!DNL New Relic] for centralized analysis.
+[API Mesh logging](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging) lets you monitor and debug requests flowing through your mesh using ray IDs. Export logs in bulk or forward them to platforms like [!DNL New Relic] for centralized analysis.
 
 ## Storefront
 

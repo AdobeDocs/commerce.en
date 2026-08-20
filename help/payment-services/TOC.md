@@ -46,4 +46,4 @@ nudge: true
 - Security and compliance {#security-compliance}
   - [Security](security.md)
   - [Signifyd fraud protection](fraud-protection.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

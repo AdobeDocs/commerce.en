@@ -33,7 +33,7 @@ To request and receive product data from a Commerce instance using the [Catalog 
 >
 >If you are using Adobe Commerce as a Cloud Service, the latest version of the metapackage is available in your environment. To begin using the services, see [Getting started with the Catalog Service](get-started.md).
 >
->For Commerce storefront implementations using Adobe Commerce Optimizer, see the [Merchandising Services Developer Guide for Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/).
+>For Commerce storefront implementations using Adobe Commerce Optimizer, see the [Merchandising Services Developer Guide for Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/).
 
 
 ## System requirements
@@ -90,7 +90,7 @@ Use this method to install the [!DNL Catalog Service] for a Commerce Cloud insta
 
    >[!NOTE]
    >
-   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
 
@@ -172,7 +172,7 @@ To integrate the Catalog service with your Adobe Commerce instance after you ins
 
 To ensure that the catalog export is running correctly:
 
-- [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
 - Verify that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
 
