@@ -27,24 +27,24 @@ Use the following table to find release notes and important information related 
       <td><strong>Commerce services</strong>
         <p>Learn about the latest improvements to innovative Commerce services that are available as extensions.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Product Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Product Recommendations</a></li>
           </ul>
         </td>
       <td><strong>Integration services</strong>
         <p>Learn about the latest improvements to the integration services that enable our Commerce Services to connect with other services and Adobe extensions and products.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">[!DNL Data Connection]</a></li>
+            <li><a href="../landing/saas.md">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>Data services</strong>
         <p>Learn about the latest improvements to the data service that enables our Commerce Services to manage product data.</p>
           <ul>
            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS Data Export extension</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html">Catalog Sync</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync">Catalog Sync</a></li>
           </ul>
       </td>
     </tr>

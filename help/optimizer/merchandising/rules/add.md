@@ -44,7 +44,7 @@ Each rule type has an information icon in the editor with a short explanation. U
 
 | Rule type | Purpose |
 | --- | --- |
-| **All products rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
+| **All product listings** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
 | **Category rule** | Applies merchandising and ranking to one or more selected categories, controlling product order on those category pages. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
 
@@ -104,13 +104,32 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 
 Category rules control how products are ordered on **category pages**. You combine **category rules** with **intelligent ranking** (including AI-driven signals), and **manual** actions such as pin, boost, and bury—so you can curate discovery, run promotions, and align category pages with your strategy without relying on external tools.
 
-1. Under **Categories**, select the category or categories the rule should apply to. Selected categories appear below the control so you can confirm the scope.
-1. From the list of categories that appear, you can click the three dots and select to:
+**Select categories**
+
+Under **Categories**, select one or more categories the rule should apply to. Selected categories appear below the control so you can confirm the scope. Select categories in either of the following ways:
+
+- **Browse the category tree** - Expand a category to load its immediate child categories. To navigate to a deeper level, expand the child category. The tree loads one level at a time.
+- **Search by category name** - Enter a category name in the **Search and select categories** field. Search results include matching category names from across the catalog, including categories outside the currently expanded branch. Search does not match category path text.
+
+When multiple categories have similar names, use the category path displayed with each result (for example, `brakes/aurora`) to select the correct category.
+
+>[!NOTE]
+>
+>Expanding a category only loads its child categories for browsing. It does not select the category or apply the rule to its subcategories. Select a category to add it to the rule. To apply the rule to a category's subcategories, use **Apply to subcategories** from the category's action menu, described below.
+
+>[!TIP]
+>
+>If a child category is not visible, expand its parent category to load the next level. If you know the category name, use the search field instead of navigating through the tree. This is useful for large catalogs, since category levels load on demand.
+
+1. From the list of selected categories, click the three dots next to a category and select to:
 
    - **Delete** - Removes the category from the rule.
    - **Apply to subcategories** - Applies the rule to subcategories that do not already have an active merchandising rule defined.
    - **Preview** - Displays how the category page would appear on your storefront.
 
+   ![Category Action Menu](../../assets/category-action-menu.png)
+
+1. Verify the category path displayed for each selected category to confirm you selected the correct one.
 1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
 
 >[!ENDTABS]

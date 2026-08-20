@@ -58,7 +58,7 @@ Use this approach when you do not route the request through the [Live Search PLP
 To keep out-of-stock products in the result set but always after in-stock products when sorting by relevance, Adobe can enable an internal feature flag for your environment.
 
 - This feature flag is not exposed in the [!DNL Live Search] Admin UI.
-- To request it, [contact Adobe Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} and reference the feature to move out-of-stock products to the end of search results.
+- To request it, [contact Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} and reference the feature to move out-of-stock products to the end of search results.
 
 >[!NOTE]
 >

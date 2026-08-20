@@ -34,6 +34,10 @@ You add price books to [!DNL Adobe Commerce Optimizer] using the Price Book API.
 
 After you ingest price books into [!DNL Adobe Commerce Optimizer], you can see the list of price books and their corresponding IDs on the **Catalog view** page.
 
+>[!NOTE]
+>
+>A private catalog view (one with [!UICONTROL Catalog Protection] enabled) can reference only one price book. See [Price book restriction on private catalog views](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
+
 1. Go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
 
 1. Click **[!UICONTROL Create catalog view]**. ​

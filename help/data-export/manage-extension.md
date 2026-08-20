@@ -63,7 +63,7 @@ You can update any of the installed commerce data export modules by using Compos
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-If the Commerce instance is deployed on Cloud infrastructure, update the extension from your cloud project directory. See [Upgrade an extension](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) in the _Adobe Commerce on Cloud Infrastructure Guide_.
+If the Commerce instance is deployed on Cloud infrastructure, update the extension from your cloud project directory. See [Upgrade an extension](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#upgrade-an-extension) in the _Adobe Commerce on Cloud Infrastructure Guide_.
 
 >[!MORELIKETHIS]
 >

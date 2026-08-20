@@ -62,7 +62,7 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
 
    >[!NOTE]
    >
-   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
 

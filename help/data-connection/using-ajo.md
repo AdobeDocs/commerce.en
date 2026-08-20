@@ -61,7 +61,7 @@ This particular use-case focuses on creating an abandoned cart email using data 
 
 ### What is Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
 
 In this topic, you learn to build an abandoned cart email by listening to a `checkout` event generated from your [!DNL Commerce] instance and responding to that event in Journey Optimizer.
 
@@ -97,7 +97,7 @@ Create a user in your sandbox environment and confirm that that user account inf
 
 In your [!DNL Commerce] sandbox environment, trigger events on your storefront by viewing product pages, adding items to a cart, and completing various other activities that a shopper would perform. Then, confirm that these events are flowing to Journey Optimizer.
 
-1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Select **[!UICONTROL Profiles]**.
 1. Set **[!UICONTROL Identity namespace]** to `Email`.
 1. Set the **[!UICONTROL Identity value]** to your email address.
@@ -126,7 +126,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
 
 ### Create a listener event
 
-1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Click **[!UICONTROL Configurations]** under the **[!UICONTROL Administration]** section of the left pane. 
 
@@ -199,7 +199,7 @@ Create an abandoned cart email that is sent when an abandoned cart is detected.
 
 1. In the journey you created above, double-click the **[!UICONTROL Email]** icon on the canvas.
 
-1. Follow the [steps](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) in the Journey Optimizer guide to create the abandoned cart email.
+1. Follow the [steps](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) in the Journey Optimizer guide to create the abandoned cart email.
 
 You now have a journey in Journey Optimizer that listens for the `commerce.checkouts` event from your [!DNL Commerce] store and an abandoned cart email that is sent after a period of time has passed. The next section shows you how to test the journey.
 

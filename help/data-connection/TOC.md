@@ -33,4 +33,4 @@ badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.ad
 - Use Cases {#use-cases}
    - [Use Adobe Journey Optimizer to Send an Abandoned Cart Email](using-ajo.md)
    - [Create an Audience in Real-Time CDP using Commerce Event Data](create-audience.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

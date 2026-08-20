@@ -37,7 +37,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Go to Payment Services]** to be directed back to the [!DNL Payment Services] Home.
-1. [Clear your cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. [Clear your cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 
    Clearing should be done after every configuration change.
 

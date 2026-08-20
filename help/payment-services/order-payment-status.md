@@ -114,7 +114,7 @@ Enable asynchronous monitoring: [!BADGE PaaS only]{type=Informative tooltip="App
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. Enable and schedule the `sync_order_payment_status` cron job so that status updates are fetched automatically. See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+1. Enable and schedule the `sync_order_payment_status` cron job so that status updates are fetched automatically. See [Configure cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 Once the setting and cron job are enabled, the cron job runs every 10 minutes to fetch updates for orders in `Payment Review` status. After setup, no additional merchant action is required under normal operation.
 

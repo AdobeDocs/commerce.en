@@ -24,7 +24,7 @@ The *Faceting* workspace lists all facets that are currently available and provi
 
 ## Set the scope
 
-If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your facet settings apply.
+If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) where your facet settings apply.
 
 ## Filter the list
 

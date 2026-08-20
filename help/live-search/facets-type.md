@@ -42,11 +42,11 @@ At query time, [!DNL Live Search] generates the search results in groups of dyna
 
 Facets that are rendered for the [!DNL Commerce] storefront are processed by the search adapter, which routes requests and renders the results in the storefront. All [!DNL Commerce] storefront facets are sorted alphabetically with single-select options, regardless of the input type that is assigned to the corresponding attribute. Facets that are available in the storefront are rendered according to the current theme and reflect any customizations made to the presentation of layered navigation.
 
-In contrast, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) implementations are processed by the API and support additional options. Headless facets can be sorted alphabetically or by count, and can have either single- or multi-select options.
+In contrast, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api) implementations are processed by the API and support additional options. Headless facets can be sorted alphabetically or by count, and can have either single- or multi-select options.
 
 ### Facet labels
 
-For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting workspace](faceting-workspace.md).
+For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting workspace](faceting-workspace.md).
 
 ### Sort type
 

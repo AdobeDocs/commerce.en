@@ -19,7 +19,7 @@ role_v2:
 ---
 # Display taxed prices with API Mesh for Adobe Developer App Builder
 
-[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
 
 In this topic, API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
 
@@ -27,8 +27,8 @@ In this topic, API Mesh is used to display product prices on a Product Detail Pa
 
 You must have taxes configured for them to display on the Product Detail Page.
 
-1. [Set up tax rates](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
+1. [Set up tax rates](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
 
 Verify that the Catalog Service is working by checking a Product Detail Page.
 
@@ -36,7 +36,7 @@ Verify that the Catalog Service is working by checking a Product Detail Page.
 
 ## Configure API Mesh
 
-If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) topic in the API Mesh developer guide.
+If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) topic in the API Mesh developer guide.
 
 In the `mesh.json` file, replace the `name`, `endpoint`, and `x-api-key` values.
 
@@ -117,7 +117,7 @@ This `mesh.json` configuration file:
 * Extends the `ComplexProductView` and `SimpleProductView` types with a new field called `priceWithTaxes`. 
 * Adds a custom resolver for the new field.
 
-Create the mesh with the [create command](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) with the `mesh.json` file.
+Create the mesh with the [create command](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) with the `mesh.json` file.
 
 ### GraphQL query
 

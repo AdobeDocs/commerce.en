@@ -93,7 +93,7 @@ After connecting an Adobe Commerce instance to Commerce Service, perform a full 
 With partial sync, SaaS data export automatically sends updates from the Commerce application, such as product name changes or price updates, to connected commerce services.
 For partial sync to work, the Commerce application requires the following configuration:
 
-- [Task scheduling is enabled via cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [Task scheduling is enabled via cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration)
 - All SaaS data export indexers are configured in `Update by Schedule` mode.
 
 ### Retry failed items sync {#retry-failed-items-sync}

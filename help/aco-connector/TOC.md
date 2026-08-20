@@ -23,4 +23,4 @@ nudge: true
   - [Field mapping for connector feeds](reference/field-mapping.md)
   - [Estimate data volume and sync time](reference/estimate-data-volume-sync-time.md)
 - [Release notes](release-notes.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

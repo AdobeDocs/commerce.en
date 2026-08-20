@@ -192,7 +192,7 @@ _November 24, 2025_
 
 _October 22, 2025_
 
-![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from [!DNL Adobe Commerce] to connected services ([!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from [!DNL Adobe Commerce] to connected services ([!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### 103.4.14 Release
 

@@ -211,8 +211,8 @@ For detailed information about Sites Optimizer capabilities and features, see th
 
 Additional resources:
 
-- [Opportunity types](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) - Learn about available optimization opportunities.
-- [Sites Optimizer capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Explore what Sites Optimizer can do.
+- [Opportunity types](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) - Learn about available optimization opportunities.
+- [Sites Optimizer capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics) - Explore what Sites Optimizer can do.
 
 ## More like this
 

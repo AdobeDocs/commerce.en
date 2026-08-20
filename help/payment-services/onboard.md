@@ -104,8 +104,8 @@ This flow diagram shows the general process for enabling [!DNL Payment Services]
 
 >[!MORELIKETHIS]
 >
-> * [Troubleshoot [!DNL Payment Services] installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-> * [PayPal sandbox account not verified](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-> * [Delayed [!DNL Payment Services] report data](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-> * [Test credit card fails with PayPal when processing payments in a Sandbox environment](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [Troubleshoot [!DNL Payment Services] installation](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [PayPal sandbox account not verified](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Delayed [!DNL Payment Services] report data](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [Test credit card fails with PayPal when processing payments in a Sandbox environment](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825)
 > * [Disable the [!DNL Payment Services] extension](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

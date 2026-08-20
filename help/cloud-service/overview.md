@@ -114,13 +114,13 @@ This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud S
 
 To create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder], use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/) powered by [!DNL Edge Delivery Services].
 
-[!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
+[!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Adobe Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from Adobe Commerce on Cloud or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for transition guidance.
+>[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from [!DNL Adobe Commerce on Cloud] or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for transition guidance.
 
-## Merchandising services and payment services
+## Adobe Merchandising services and payment services
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
@@ -132,7 +132,7 @@ Adobe provides a rich set of intelligent, composable merchandising services to h
   >
   >Catalog Service is included automatically with [!DNL Live Search] and [!DNL Product Recommendations].
 
-- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
+- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free installments, and a single view into processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -240,7 +240,7 @@ The typical upgrade process for Adobe Commerce on Cloud involved creating backup
 
 >[!NOTE]
 >
->Adobe guarantees backward compatibility for all updates. This means that when updates are applied, they will not break existing functionality or customizations that adhere to the [API-first extensibility](https://developer.adobe.com/commerce/extensibility/) model.
+>Adobe guarantees backward compatibility for all updates. This means that when updates are applied, they do not break existing functionality or customizations that adhere to the [API-first extensibility](https://developer.adobe.com/commerce/extensibility/) model.
 
 ### Third-party integrations
 
@@ -261,13 +261,13 @@ The following sections provide information about the benefits that [!DNL Adobe C
 ### Business leaders
 
 - **Grow revenue**: Drive organic traffic with a high-performance storefront that boosts SEO. Create personalized experiences that drive conversion using rich data.
-- **Scale operations**: Auto-scaling services meet the peak demands of your business with 99.9% availability. Rollout multiple brands and regions and support B2B and B2C from a single instance. Support large and complex product catalogs with flexible data modeling.
+- **Scale operations**: Auto-scaling services meet the peak demands of your business with 99.9% availability. Roll out multiple brands and regions and support B2B and B2C from a single instance. Support large and complex product catalogs with flexible data modeling.
 - **Boost merchandiser productivity**: Use AI powered merchandising services to improve conversion. Experiment natively, directly in the storefront. Manage the storefront experience to create rich experiences in minutes with simple document-based authoring or a visual editor.
-- **Lower total cost of ownership (TCO) and accelerate innovation**: Always up-to-date services give you access to new features immediately. Activate new capabilities by easily installing apps from the marketplace. Free up resources from tedious maintenance to focus on building new capabilities.
+- **Lower total cost of ownership (TCO) and accelerate innovation**: Always up-to-date services give you access to new features immediately. Activate new capabilities by easily installing apps from the marketplace. Reallocate resources from routine maintenance to focus on building new capabilities.
 
 ### Information technology (IT) leaders
 
 - **Fast provisioning**: Get started fast with self-service provisioning in minutes. All services are pre-configured to work seamlessly together to get started faster. Provision sandboxes for developer experimentation as needed.
 - **Low cost of ownership**: No more upgrades with always up-to-date services. Stay secure and compliant with the latest security patches automatically applied for you. Scale automatically to meet the most demanding workloads.
 - **High-performance storefront**: Create rich experiences in minutes with simple document-based authoring or a visual editor. Use AI-powered merchandising services to improve conversion. Native experimentation built into the storefront.
-- **Faster innovation**: Free up resources from tedious maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JavaScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.
+- **Faster innovation**: Reallocate resources from routine maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JavaScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.

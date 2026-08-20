@@ -30,7 +30,7 @@ topic_v2:
 
 Integrating the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) with the Commerce mobile app allows merchants to send Commerce [event data](events.md) to the Experience Platform edge.
 
-When Commerce event data is available at the edge, it can be accessed by other Adobe Experience Cloud applications. For example, you can use the data to build audiences in Real-Time CDP then [use those audiences](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) to personalize your Commerce mobile app.
+When Commerce event data is available at the edge, it can be accessed by other Adobe Experience Cloud applications. For example, you can use the data to build audiences in Real-Time CDP then [use those audiences](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation) to personalize your Commerce mobile app.
 
 ## Configuration
 
@@ -38,9 +38,9 @@ To get started using the Adobe Experience Platform Mobile SDK with Commerce, ins
 
 ### Experience Platform
 
-1. Learn about mobile app capabilities by reviewing the [Adobe Experience Cloud in mobile apps tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
+1. Learn about mobile app capabilities by reviewing the [Adobe Experience Cloud in mobile apps tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview).
 
-1. [Install and configure](https://developer.adobe.com/client-sdks/documentation/getting-started/) the SDK in Experience Platform.
+1. [Install and configure](https://developer.adobe.com/client-sdks/home/getting-started/) the SDK in Experience Platform.
 
     >[!NOTE]
     >
@@ -174,4 +174,4 @@ All [events](events.md) contain a field called `channel`. The `channel` field co
 
 ## Next steps
 
-To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules, dynamic blocks, and related product rules, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules, dynamic blocks, and related product rules, see [Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

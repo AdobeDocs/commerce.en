@@ -25,7 +25,7 @@ You can [download payout transactions](#download-transactions) in a .csv file fo
 
 >[!NOTE]
 >
->Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](production.md#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Payouts data visualization view
 

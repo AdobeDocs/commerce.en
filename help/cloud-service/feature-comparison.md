@@ -236,7 +236,7 @@ The following table compares platform capabilities and extensibility features to
 >When considering migration to SaaS, Adobe recommends that you:
 >
 >- Move suitable functionality to out-of-process extensibility where possible.
->- Reduce the surface area that requires transition.
+>- Reduce the scope that requires transition.
 >- Consider [!DNL API Mesh] for extending API functionality.
 >- Monitor Adobe's ongoing platform evolution and new capability releases.
 >- Evaluate industry-specific data model requirements against available extensibility options.

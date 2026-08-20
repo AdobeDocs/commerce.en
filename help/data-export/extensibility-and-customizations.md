@@ -42,7 +42,7 @@ After adding attribute data, it is accessible from the [attributes field](https:
 
 The products feed includes default system attributes which are required for product processing or commonly used by consumers. You can include additional system attributes in the products feed by adding them to the feed.
 
-To complete this task, update the `magento/catalog-data-exporter` module to add the additional system attributes to the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`).
+To complete this task, update the `magento/catalog-data-exporter` module to add the additional system attributes to the [dependency injection configuration file](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`).
 
 Add the attributes to the Product Attribute query(`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`).
 
@@ -88,7 +88,7 @@ When you define the attribute options, all attribute parameters except `type`, `
 - **`user_defined` = `1`**—Export the attribute to storefront services during data synchronization
 - **`used_in_product_listing` = `1`**—Make the attribute accessible within the product listing database query
 
-For information about creating data patches, see [Develop data and schema patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) in the *PHP Developer Guide*.
+For information about creating data patches, see [Develop data and schema patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) in the *PHP Developer Guide*.
 
 ### Add the product attribute dynamically
 
@@ -166,7 +166,7 @@ Register the observer in `etc/events.xml`:
 </event>
 ```
 
-For general information about events and observers, see [Events and Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} in the Adobe Commerce Developer documentation.
+For general information about events and observers, see [Events and Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"} in the Adobe Commerce Developer documentation.
 
 ## Filter data before submission
 

@@ -18,7 +18,7 @@ Downloading and installing the [!DNL Payment Services] extension for [!DNL Adobe
 
 ## Download the extension
 
-You must first download the extension from [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) before installing it.
+You must first download the extension from [Commerce Marketplace](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/commerce-marketplace) before installing it.
 
 1. Navigate to the [Payment Services extension in the Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. To choose the edition and version, toggle **[!UICONTROL Edition]** and **[!UICONTROL Your store version]** to your preferred selections.
@@ -32,7 +32,7 @@ You must first download the extension from [Commerce Marketplace](https://experi
 
 ## Install the extension
 
-You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to your Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) provided in the signup process.
+You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to your Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) provided in the signup process.
 [!DNL Magento Open Source] customers use the on-premises instructions.
 
 Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
@@ -160,7 +160,7 @@ If you see the following error denoting you do not have enough memory for PHP:
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Increase the memory limit](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) for PHP on your environment in `php.ini`.
+[Increase the memory limit](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#increase-php-memory-limit) for PHP on your environment in `php.ini`.
 
 Alternatively, you can specify the memory limit using this command: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

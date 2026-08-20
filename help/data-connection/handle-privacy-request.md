@@ -46,8 +46,8 @@ For more information on Privacy Service and how to create and manage privacy req
 
 You can submit individual requests to access and delete consumer data from [!DNL Commerce] in two ways:
 
-* Through the **Privacy Service UI**. See the documentation [here](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
-* Through the **Privacy Service API**. See the documentation [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) and API information [here](https://developer.adobe.com/experience-platform-apis/#_blank).
+* Through the **Privacy Service UI**. See the documentation [here](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide){target="_blank"}.
+* Through the **Privacy Service API**. See the documentation [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"} and API information [here](https://developer.adobe.com/experience-platform-apis/){target="_blank"}.
 
 Privacy Service supports two types of requests: **data access** and **data deletion**.
 

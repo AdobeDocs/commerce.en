@@ -107,11 +107,11 @@ For an overview of out-of-the-box payment solutions, including features and bene
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)---Merchant-focused documentation for both [!DNL Adobe Commerce] and [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)---Developer-focused documentation used to build and customize [!DNL Adobe Commerce] or [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)---Merchant-focused documentation for both [!DNL Adobe Commerce] and [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)---Developer-focused documentation used to build and customize [!DNL Adobe Commerce] or [!DNL Magento Open Source]
 > * [Release notes](release-notes.md)---Learn more about upcoming releases, product details, and which Adobe Commerce versions support the [!DNL Payment Services] extension
-> * [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase 
-> * [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)---Commerce customers can submit a ticket to receive additional help
+> * [Help center](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase 
+> * [Support tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)---Commerce customers can submit a ticket to receive additional help
 
 ## Support
 
