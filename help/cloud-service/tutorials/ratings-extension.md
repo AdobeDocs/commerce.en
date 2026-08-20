@@ -121,7 +121,7 @@ This section guides you through developing a ratings extension for Adobe Commerc
 
 1. Review the `requirements.md` file and verify the plan. 
 
-   If everything looks correct, instruct the agent to move to **Phase 2 - Architecture Planning**.
+   If everything looks correct, instruct the agent to move to **Phase 2 — Architecture Planning**.
 
 1. Review the architecture plan.
 
@@ -234,7 +234,7 @@ Prepare your local storefront environment for development.
 
 1. Open the storefront folder in a new Cursor window.
 
-   Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
+   Alternatively, if you have the [Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands) installed, open the window by using the following command in your terminal:
 
    ```bash
    cursor .
@@ -267,8 +267,8 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 1. The agent assesses the task complexity and invokes a phased workflow. During **Phase 1 (Requirements Gathering)**, the agent creates a requirements document and asks clarifying questions such as:
 
    * Where on the PDP should ratings appear?
-   * Should this be a new standalone block, or a slot customization inside the existing PDP drop-in component?
-   * What should the fallback be if the API is unavailable or returns no data?
+   * Is this a new standalone block, or a slot customization inside the existing PDP drop-in component?
+   * What is the fallback if the API is unavailable or returns no data?
    * Should ratings appear on the PLP (product listing) as well, or PDP only?
    * Are there any design specs or mockups?
 

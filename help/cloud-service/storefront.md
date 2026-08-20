@@ -55,7 +55,7 @@ Once the process completes, you can customize your storefront using the followin
 
 * Customize your code: `https://github.com/<username or org>/<repo name>`
 * Edit your content: `https://da.live/#/<username or org>/<repo name>`
-* Manage your config: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
+* Manage your configuration: `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
 * Preview your storefront: `https://main--<repo name>--<username or org>.aem.page/`
 
 ## Next steps
@@ -67,3 +67,4 @@ See the following articles for more information:
 * [Generate Variations](./use-cases.md#generate-variations)—Use Generative AI to automate high-quality content generation.
 * [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)—Get detailed information about updating site content and integrating with Commerce frontend components and backend data.
 * [Configuration Service](https://www.aem.live/docs/config-service-setup)—Learn about migrating your storefront configuration from `config.json` to use the Configuration Service, which supports advanced use cases like repoless configuration and overlays. 
+* [Storefront B2B features](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/#major-features)—Learn about B2B features available in the storefront compatibility package, which is automatically installed for all [!DNL Adobe Commerce as a Cloud Service] instances.
