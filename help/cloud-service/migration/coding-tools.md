@@ -163,7 +163,7 @@ This command updates the tools to the latest version.
 >* Create an App Builder project (see [Project setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Set up environment variables in an `.env` file.
 >
->You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) for detailed configuration instructions.
+>You can complete these configuration tasks manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) for detailed configuration instructions.
 
 ## Post-installation configuration
 

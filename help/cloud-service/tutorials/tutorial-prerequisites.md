@@ -207,7 +207,7 @@ Set up a project in the Adobe Developer Console with the required APIs and crede
 
 #### Create a new project
 
-To host your extension, create an App Builder project in the Adobe Developer Console.
+To host your extension, create an [!DNL App Builder] project in the Adobe Developer Console.
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
 1. Click **[!UICONTROL Create project from a template]**.
