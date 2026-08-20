@@ -43,7 +43,7 @@ Built on Adobe App Builder technology, the [!DNL Commerce Optimizer Salesforce C
 
 Out of the box, the connector offers reliable data sync capabilities and the flexibility to customize workflows for your business needs.
 
-For an end-to-end video tutorial series, see [Learn about the Salesforce Commerce cloud starter kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+For an end-to-end video tutorial series, see [Learn about the Salesforce Commerce cloud starter kit](https://experienceleague.adobe.com/en/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >

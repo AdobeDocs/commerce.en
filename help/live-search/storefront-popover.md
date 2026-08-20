@@ -20,7 +20,7 @@ topic_v2:
 ---
 # [!DNL Storefront Popover]
 
-When [!DNL Live Search] is [installed](install.md), a [!DNL popover] appears in the storefront when shoppers type in the [Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. With each character typed, the [!DNL popover] is updated with suggested products and thumbnail images of the top search results.
+When [!DNL Live Search] is [installed](install.md), a [!DNL popover] appears in the storefront when shoppers type in the [Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search#quick-search) box. With each character typed, the [!DNL popover] is updated with suggested products and thumbnail images of the top search results.
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
@@ -32,7 +32,7 @@ When [!DNL Live Search] is [installed](install.md), a [!DNL popover] appears in 
 
 ## [!DNL Popover] page size
 
-The page size of the [!DNL popover] determines how many lines of autocompleted products can be returned. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` setting.
+The page size of the [!DNL popover] determines how many lines of autocompleted products can be returned. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/catalog) - `Autocomplete Limit` setting.
 
 By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). To change the page size of the [!DNL popover], do the following:
 
@@ -128,7 +128,7 @@ You can use the [!DNL storefront popover] with a customized [theme](https://deve
 
 ## Disabling the [!DNL popover]
 
-To disable the [!DNL popover] and restore the standard [Quick Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) functionality, enter the following command:
+To disable the [!DNL popover] and restore the standard [Quick Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search#quick-search) functionality, enter the following command:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

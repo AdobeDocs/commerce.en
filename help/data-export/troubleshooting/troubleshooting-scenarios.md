@@ -93,7 +93,7 @@ The immediate fix for this issue is a workaround: Configure both cron groups to 
 1. If the content does not match, make a minor edit to the product in your catalog, such as adding a space or a period, to force the change to be detected.
 1. Wait for a resync or trigger a manual resync from the CLI or the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Admin.
 
-For additional troubleshooting of catalog data in [!DNL Product Recommendations], see [Troubleshoot the Product Recommendations module](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) in the Commerce Knowledge Base.
+For additional troubleshooting of catalog data in [!DNL Product Recommendations], see [Troubleshoot the Product Recommendations module](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095) in the Commerce Knowledge Base.
 
 ## Data sync is not running on schedule {#sync-not-on-schedule}
 
@@ -103,7 +103,7 @@ For additional troubleshooting of catalog data in [!DNL Product Recommendations]
 
 **Solution:**
 
-- [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Verify that the indexers for the following feeds are set to **[!UICONTROL Update by Schedule]**: Catalog Attributes, Product, Product Overrides, and Product Variant. Check from [[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in the Commerce Admin or using the CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## Catalog sync has a Failed status {#catalog-sync-failed}
@@ -117,7 +117,7 @@ For additional troubleshooting of catalog data in [!DNL Product Recommendations]
 1. Review the data export error logs for details on the failure. See [Review logs and troubleshoot](logging.md) for log format and extended logging options:
    - `var/log/commerce-data-export-errors.log` for errors during data collection.
    - `var/log/saas-export-errors.log` for errors during data submission.
-1. If the error is not related to configuration or a third-party extension, [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with the relevant log entries.
+1. If the error is not related to configuration or a third-party extension, [submit a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) with the relevant log entries.
 
 ## Log shows "operation skipped - process locked" messages {#process-locked}
 

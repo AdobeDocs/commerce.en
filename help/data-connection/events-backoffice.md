@@ -24,13 +24,13 @@ topic_v2:
 
 The following lists the Commerce back office events available when you install the [!DNL Data Connection] extension. The data these events collect is sent to the Adobe Experience Platform. You can also create [custom events](custom-events.md) to collect additional data not provided out of the box.
 
-In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
+In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) provided by the Adobe Experience Platform Web SDK.
 
 Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile events](#customer-profile-events) information, such as if an account was created, updated, or deleted.
 
 >[!NOTE]
 >
->All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID.
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) field, which includes the shopper's email address, when available, and ECID.
 
 ## Order status
 
@@ -417,7 +417,7 @@ Profile events captured from the server-side include account information, such a
 
 >[!NOTE]
 >
->Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier. [Learn](custom-identities.md) how to create custom identity attributes to enhance customer profile identification.
+>Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier. [Learn](custom-identities.md) how to create custom identity attributes to enhance customer profile identification.
 
 ### accountCreated
 
