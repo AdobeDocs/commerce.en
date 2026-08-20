@@ -44,7 +44,7 @@ Each rule type has an information icon in the editor with a short explanation. U
 
 | Rule type | Purpose |
 | --- | --- |
-| **All products rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
+| **All product listings** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
 | **Category rule** | Applies merchandising and ranking to one or more selected categories, controlling product order on those category pages. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
 
