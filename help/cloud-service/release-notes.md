@@ -170,6 +170,10 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue where configuring several searchable customer or customer address attributes could cause display errors. The customer grid now notifies you when you reach the limit. <!-- CCSAAS-5303 -->
 
+* Fixed an issue where category image URLs were broken in the category data export feed. <!-- ACCS-1571 -->
+
+* Fixed an issue where concurrently assigning or unassigning products across different shared catalogs could intermittently fail. <!-- CCSAAS-5287 -->
+
 {{accs-release}}
 
 >[!ENDSHADEBOX]
