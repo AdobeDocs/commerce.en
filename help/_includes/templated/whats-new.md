@@ -4,6 +4,36 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### August 18, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">Data Export log codes reference</a> from the latest <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce Optimizer now limits a private catalog view to a single price book. Learn more in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">Private catalog views</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">Catalog views</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks">Price books</a>.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 12, 2026
 
 <table style="table-layout:auto;">
@@ -272,88 +302,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 23, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated catalog data sync verification guidance across Commerce service documentation. Service installation and configuration topics now use a consistent two-step workflow—confirm export on the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Data Feed Sync Status page</a>, then confirm delivery on the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Data Management Dashboard</a>—with updated instructions in <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">Catalog Service Get Started</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/install#monitor-sync-progress">Live Search Install</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">Product Recommendations Install</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">Manage synchronization</a> in the <em>SaaS Data Export Guide</em>.</p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added a new <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer Connector feed table schema reference</a> and updated <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/sync-overview">SaaS Data Export synchronization</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">manual sync management</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commerce CLI resync commands</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/feed-table-reference">feed table schema</a> guidance.</p>
-</td>
-      <td>
-        Major update, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 17, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated documentation for managing catalog data synchronization between Adobe Commerce and connected Commerce services.<br />- Added <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">View and manage the synchronization process</a> topic to the <em>SaaS Data Export Guide</em> to monitor export status, confirm data delivery, and manually resync feeds for Commerce Services and Adobe Commerce Optimizer integrations.<br />- Added <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios">troubleshooting scenarios</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/reference/manage-extension">feed table schema reference</a>, and other troubleshooting and reference information to the <em>SaaS Data Export Guide</em> .<br />- Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started">Get started with the Adobe Commerce Optimizer Connector</a> and added <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/data-sync-manage">Manage synchronization to Commerce Optimizer</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">Troubleshoot the Adobe Commerce Optimizer Connector</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/reference/connector-reference">Connector modules and feed endpoints</a>, and instructions for estimating data volume and sync time to the <em>Adobe Commerce Optimizer Connector Guide</em>.</p>
-</td>
-      <td>
-        Major update, new topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/66d9db3ab63102a0fd639f274a4131bf69ac868a">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 16, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0321b64a787b37a95af0568473bfcfc5e5d4189e">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/order-payment-status#asynchronous-monitoring-of-pending-capture-transactions">Order payment status report</a> to clarify that asynchronous monitoring of pending capture transactions is disabled by default, and to document the steps to enable it.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">commit</a></td>
     </tr>
   </tbody>
 </table>
