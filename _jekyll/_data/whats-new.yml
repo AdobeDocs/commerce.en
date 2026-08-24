@@ -2,8 +2,31 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 14 15:40:06 2026
+updated: Mon Aug 24 10:42:29 2026
 entries:
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: August 18, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/717
+  merge_commit: 1291cadbeca63d454eabab31c415b2d037d280ba
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: Adobe Commerce Optimizer now limits a private catalog view to a single
+    price book. Learn more in [Private catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views),
+    [Catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view),
+    and [Price books](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+  versions: ''
+  type: major-update
+  date: August 18, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/722
+  merge_commit: b6613edbf84681a860b9c71a07f43a7df40e8784
+  contributor: meker_adobe
+  labels:
+  - major-update
 - description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
