@@ -91,7 +91,7 @@ A new `sourceAvailability` GraphQL query returns per-source stock availability f
 
 ### Read persistent wishlist and account-sharing settings through GraphQL
 
-The `storeConfig` GraphQL query now returns the [!UICONTROL **Enable Persistence**], [!UICONTROL **Persist Wish List**], and [!UICONTROL **Share Customer Accounts**] configuration values, so storefronts can access merchant persistent shopping cart and wishlist settings without contacting support. <!-- USF-4051 -->
+The `storeConfig` GraphQL query now returns `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist`, and `share_customer_accounts_scope` configuration values, so storefronts can access merchant persistent shopping cart and wishlist settings without contacting support. <!-- USF-4051 -->
 
 ### Search customer orders by product, SKU, or order ID
 
@@ -103,19 +103,19 @@ New `PUT` and `DELETE` [custom email](https://developer.adobe.com/commerce/webap
 
 ### View product option groups and identifiers through the REST API
 
-The product options REST endpoint now returns `group` and `option_uids` fields for each option, matching the identifiers already available through GraphQL. <!-- ACCS-1370 -->
+The `GET /V1/products/:sku/options` REST call now returns `group` and `option_uids` fields for each option, matching the identifiers already available through GraphQL. <!-- ACCS-1370 -->
 
 ### New shared catalog events
 
 The following shared catalog events are now available to subscribe to using [!DNL Adobe I/O Events]:<!-- ACCS-1532 -->
 
-* Category assignment
-* Category unassignment
-* Company assignment
-* Company unassignment
-* Company unassign-all
-* Shared catalog save
-* Shared catalog delete
+* Category assignment (`observer.shared_catalog_assign_categories`)
+* Category unassignment (`observer.shared_catalog_unassign_categories`)
+* Company assignment (`plugin.magento.shared_catalog.api.company_management.assign_companies`)
+* Company unassignment (`plugin.magento.shared_catalog.api.company_management.unassign_companies`)
+* Company unassign-all (`plugin.magento.shared_catalog.api.company_management.unassign_all_companies`)
+* Shared catalog save (`plugin.magento.shared_catalog.api.shared_catalog_repository.save`)
+* Shared catalog delete (`plugin.magento.shared_catalog.api.shared_catalog_repository.delete`)
 
 ### Use company addresses across purchase orders, quotes, and returns
 
@@ -148,13 +148,11 @@ The **Free Gift** cart price rule is now available in the [!DNL Commerce Admin] 
 
 This rule allows you to add a free gift product to the cart when the rule conditions are met.
 
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 -->
+<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
 
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
-
-* Fixed a field validation error and an authorization error in the `updateCompanyAddress` mutation for Company Address Books. <!-- USF-4229 -->
 
 * Fixed an issue that could occur when guest orders were placed using a registered customer's email. <!-- CCSAAS-5313 -->
 
