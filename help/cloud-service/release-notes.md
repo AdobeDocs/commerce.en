@@ -132,6 +132,8 @@ Company Address Books now integrate with additional B2B workflows. Companies tha
 * Negotiable quotes
 * Quote templates
 
+For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.24** section.
+
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
 ### Hide images from store views in [!DNL AEM Assets]
