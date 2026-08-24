@@ -51,6 +51,8 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
   Both your Commerce instance and AEM Assets authoring environment must be in the same IMS organization.
 
+* The metadata schema [configured for asset approval](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) in the AEM metadata schema editor.
+
 ### Step 1: Create the program and environments
 
 Creating a program in Cloud Manager is a single wizard process — the program and its environments are configured across multiple steps and saved together at the end.
