@@ -63,33 +63,7 @@ If the shopper clicks the **Brand** drop-down, the header of the API call contai
 
 ### Multi-value HTTP header triggers {#multi-value-http-header-triggers}
 
-A trigger policy using the `HTTP_HEADER` transport type can receive multiple values in a single header. Separate values with commas:
-
-```
-AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
-```
-
-The service splits the header value into individual values at each comma.
-
-This behavior applies only to:
-
-- A policy filter with **Value source** set to `TRIGGER`.
-- A trigger whose **Transport type** is `HTTP_HEADER`.
-
->[!NOTE]
->
->Comma-separated values do not change how `STATIC` policy values are configured in the Admin. Static values continue to be entered as separate filter values, one at a time.
-
-#### Operator behavior
-
-How a policy filter handles multiple header values depends on its operator:
-
-| Filter operator | Behavior when the header contains multiple values |
-|---|---|
-| `IN` | Each value is treated as an acceptable match. The values are evaluated with `OR` semantics. |
-| `EQUALS` | The request is rejected with a validation error. |
-| `GREATER_THAN_EQUAL` | The request is rejected with a validation error. |
-| `LESS_THAN_EQUAL` | The request is rejected with a validation error. |
+A trigger policy using the `HTTP_HEADER` transport type can receive multiple values in a single header. The values must be separated with commas and the filter operator must be `IN`. Each value is treated as an acceptable match. The values are evaluated with `OR` semantics.
 
 For example, a policy filter using `IN` with the following header:
 
@@ -99,18 +73,20 @@ AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
 
 matches products whose `vehicle` attribute is either `UNIVERSAL` or `veh-bolt-mammoth-limited-2025`.
 
-A header with multiple values, such as the following, must not be used with a non-`IN` operator:
+Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` is rejected with a vallidation error. 
 
-```
-AC-Policy-Model: camry,corolla
-```
+>[!NOTE]
+>
+>Comma-separated values do not change how `STATIC` policy values are configured in the Admin. Static values continue to be entered as separate filter values, one at a time.
 
-The request is rejected because the header contains multiple values.
 
 #### Syntax notes
 
 - The header name matches the trigger name you configure, for example `AC-Policy-Vehicle`.
 - Commas separate individual values within the header.
+- The filter operator is `IN`.
+- A policy filter with **Value source** set to `TRIGGER`.
+- A trigger whose **Transport type** is `HTTP_HEADER`.
 
 <!-- Confirm with Engineering before expanding this section: whether a literal comma can be included in a single value (for example, via escaping or encoding), whether whitespace around commas is trimmed, whether repeated instances of the same header are officially supported for external customers, and the exact validation error returned for multiple values with a non-IN operator. -->
 
