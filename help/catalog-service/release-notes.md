@@ -54,6 +54,10 @@ Support is provided for the latest version. Release notes for older versions are
 
 ### August 2026
 
+**Release data**: August 24, 2026
+
+![New](../assets/new.svg) **Support for the `categoryTree` query on Adobe Commerce as a Cloud Service**—The `categoryTree` GraphQL query is now available for [!DNL Adobe Commerce as a Cloud Service], so storefronts can resolve categories by slug and render category trees. <!-- DATA-7299 -->
+
 **Release date**: August 7, 2026
 
 ![Fix](../assets/fix.svg) Fixed an issue with the `products` GraphQL query where the `title` field for customizable options (`inputOptions` and `options`) incorrectly returned `null` instead of the option's own title when the option's `sku` field was empty or not indexed. <!--DATA-7304-->
