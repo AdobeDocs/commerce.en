@@ -239,7 +239,7 @@ The Product Data UI component is added automatically based on the template.
 
 1. Open the profile configuration page by clicking **[!UICONTROL Metadata Profiles]**.
 
-1. **[!UICONTROL Create]** Create a metadata profile for the Commerce integration.
+1. **[!UICONTROL Create]** a metadata profile for the Commerce integration.
 
    ![AEM Author Admin add metadata profiles](../assets/aem-create-metadata-profile.png){width="600" zoomable="yes"}
 
