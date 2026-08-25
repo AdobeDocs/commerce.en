@@ -51,6 +51,15 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.4.32 Release
+
+_August 25, 2026_
+
+![Fix](../assets/fix.svg) Export customizable options as a product attribute. <!--MDEE-1029-->
+## New Contributors
+@nofuss made their first contribution in https://github.com/magento-commerce/commerce-data-export/pull/576
+![Fix](../assets/fix.svg) Unable to sync feed-categoryPermissions. <!--MDEE-1411-->
+
 ### 103.4.31 Release
 
 _August 7, 2026_
