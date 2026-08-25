@@ -51,6 +51,14 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.4.32 Release
+
+_August 25, 2026_
+
+![New](../assets/new.svg) **Customizable options included in the product feed**–Product customizable options, such as color swatches, size selections, or personalization fields, are now exported as a `customizable_options` product attribute. The attribute includes each option's title, whether it's required, and its available values, so connected Commerce services can display accurate customizable option data on the storefront. <!--MDEE-1029-->
+
+![Fix](../assets/fix.svg) **Reliable category permissions sync**–Fixed an issue where the category permissions feed failed to fully resync for configurations missing a website ID, resulting in sync errors. <!--MDEE-1411-->
+
 ### 103.4.31 Release
 
 _August 7, 2026_
