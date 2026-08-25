@@ -53,22 +53,22 @@ After [installing the AI coding developer tooling](#installation), you can updat
 aio commerce extensibility tools-setup
 ```
 
-This will update the tools to the latest version.
+This command updates the tools to the latest version.
 
 ## Prerequisites
 
 * Any coding agent that supports [agent skills](https://agentskills.io/home#adoption), such as:
 
    * [Cursor](https://cursor.com/download)
-   * [Claude Code](https://www.claude.com/product/claude-code)
+   * [Claude Code](https://claude.com/product/claude-code)
    * [GitHub Copilot](https://github.com/features/copilot)
-   * [Windsurf](https://windsurf.com)
+   * [Devin desktop](https://devin.ai/desktop)
    * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [OpenAI Codex](https://openai.com/index/introducing-codex/)
    * [Cline](https://cline.bot)
    
 * [Node.js](https://nodejs.org/en/download): LTS version
-* Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
 
 ## Installation
@@ -115,7 +115,7 @@ This will update the tools to the latest version.
    aio commerce extensibility tools-setup
    ```
 
-   The setup process prompts you with configuration options. Follow the prompts to complete the installation. The tools will be installed in the selected directory.
+   The setup process prompts you with configuration options. To complete the installation, follow the prompts. The tools install in the selected directory.
 
    * Select the starter kit you want to use for your project.
 
@@ -139,7 +139,7 @@ This will update the tools to the latest version.
          ...
       ```
 
-   * The installer will detect if you have NPM or Yarn installed and make the appropriate selection automatically. However, if you do not have either installed, you will prompted to select your package manager, Adobe recommends using `npm` for consistency:
+   * The installer detects if you have NPM or Yarn installed and makes the appropriate selection automatically. However, if you do not have either installed, you are prompted to select your package manager; Adobe recommends using `npm` for consistency:
 
       ```shell-session
       ? Which package manager would you like to use?
@@ -157,13 +157,13 @@ This will update the tools to the latest version.
 
 >[!NOTE]
 >
->Before deploying your project, you will need to complete the following configuration tasks:
+>Before deploying your project, complete the following configuration tasks:
 >
 >* Log in to [Adobe Developer Console](https://developer.adobe.com/console) using the Adobe I/O CLI.
 >* Create an App Builder project (see [Project setup](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Set up environment variables in an `.env` file.
 >
->You can complete these configuration steps manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) for detailed configuration instructions.
+>You can complete these configuration tasks manually or leverage the AI coding tools to guide you through the process. See [Create an integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) for detailed configuration instructions.
 
 ## Post-installation configuration
 
@@ -190,7 +190,7 @@ aio auth login
 
 >[!NOTE]
 >
->Some features of the MCP server will work without logging in, but the RAG (Retrieval-Augmented Generation) service will not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
+>Some features of the MCP server work without logging in, but the RAG (Retrieval-Augmented Generation) service does not work. The RAG service provides the AI coding agent with real-time access to the complete Adobe Commerce documentation set, enabling it to answer questions and generate code based on current Commerce development practices, APIs, and architectural patterns.
 
 ### Cursor
 
@@ -205,7 +205,7 @@ aio auth login
    * Locate **commerce-extensibility MCP Server** in the list
    * Toggle the server **ON** to enable the coding tools
 
-1. Verify the server status - the Commerce extensibility MCP Server should appear as:
+1. Verify the server status - the Commerce extensibility MCP Server appears as:
 
    ```shell-session
    Status: Connected/Active
@@ -227,12 +227,12 @@ aio auth login
 
 1. Enable the MCP server:
 
-   * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOs) or **Ctrl+Shift+X** (Windows and Linux).
+   * Open the Extensions Panel by clicking the **Extensions** icon in the Activity Bar on the left sidebar or by using **Cmd+Shift+X** (macOS) or **Ctrl+Shift+X** (Windows and Linux).
    * Click [!UICONTROL **MCP SERVERS - INSTALLED**].
    * Click the gear icon next to [!UICONTROL **commerce-extensibility MCP Server**] and select [!UICONTROL **Start Server**], if the server is stopped.
    * Click the gear icon again, and select [!UICONTROL **Show Output**].
 
-1. Verify the server status. The `MCP:commerce-extensibility` output should match the following:
+1. Verify the server status. The `MCP:commerce-extensibility` output matches the following:
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -288,7 +288,7 @@ In addition to prompting, you can use the `/search-commerce-docs` command to sea
 
 ## Skills
 
-While the skills will be automatically invoked when you chat with your coding agent, you can also invoke them manually using the following commands:
+While the skills are automatically invoked when you chat with your coding agent, you can also invoke them manually using the following commands:
 
 * `/architect` - Designs architecture for Adobe Commerce extensions using [!DNL App Builder] and the selected starter kit. Use when planning integrations, selecting events, designing data flows, or making architectural decisions.
 * `/developer` - Implements Adobe Commerce extensions following [!DNL App Builder] patterns and the file structure. Use when generating code, updating configuration files, or implementing runtime actions.
@@ -300,15 +300,15 @@ While the skills will be automatically invoked when you chat with your coding ag
 
 ## Best Practices
 
-Adobe recommends following the following best practices when using the AI coding tools:
+Adobe recommends the following best practices when using the AI coding tools:
 
 ### Plan mode
 
-When chatting with your coding agent, you should select **Plan** mode to create a detailed implementation plan for your project.
+When chatting with your coding agent, select **Plan** mode to create a detailed implementation plan for your project.
 
 The method for selecting **Plan** mode varies depending on the agent you are using. Refer to your agent's documentation for instructions. For example:
 
-* [Cursor](https://cursor.com/docs/agent/modes)
+* [Cursor](https://cursor.com/docs/agent/plan-mode)
 * [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -341,7 +341,7 @@ When starting new chat:
 
 ### Workflow
 
-When developing with the AI coding tools, start with sample code or scaffolded projects. This approach ensures you are building on a solid foundation rather than starting from nothing, while also optimizing your AI development workflow.
+When developing with the AI coding tools, start with sample code or scaffolded projects. This approach ensures you are building on an established foundation rather than starting from nothing, while also optimizing your AI development workflow.
 
 This also allows you to leverage Adobe's templates and build upon proven patterns and architectures, while keeping established directory structures and conventions.
 
@@ -350,10 +350,10 @@ Consult the following resources to get started:
 * [Integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce starter kit templates](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder sample applications](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Adobe I/O Events starter templates](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [App Builder sample applications](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
-#### Why you should use these resources
+#### Why use these resources
 
 * **Proven patterns**: Starter kits embody Adobe's best practices and architectural decisions
 * **Faster development**: Reduces time spent on boilerplate and configuration
@@ -366,7 +366,7 @@ Consult the following resources to get started:
 
 ### Protocol
 
-The following four-phase protocol is automatically enforced by the installed skills. The tools should follow this protocol automatically when developing applications:
+The installed skills automatically enforce the following four-phase protocol. The tools follow this protocol automatically when developing applications:
 
 * Phase 1: Requirements analysis and clarification
   * When asked clarifying questions, provide complete answers.
@@ -436,7 +436,7 @@ Use the following best practices when testing:
 After completing development of a feature in your implementation plan, test it immediately. Early testing prevents compound issues and makes debugging easier.
 
 * Do not wait until all features are complete
-* Test incrementally to catch issues early
+* To catch issues early, test incrementally.
 * Validate functionality before moving to the next feature
 
 #### Test locally first
@@ -523,7 +523,7 @@ Help me debug why this action is returning 500 errors
 
 ### Debugging
 
-Stop and assess when things go wrong. If you encounter issues:
+Stop and assess when errors occur. If you encounter issues:
 
 * Stop and assess - Do not continue in a broken state
 * Check logs - Use activation logs to identify issues
@@ -603,11 +603,11 @@ Avoid the following anti-patterns when using the AI coding tools:
 
 Developers who are interested in providing feedback on the AI coding tools can use the `/feedback` command.
 
-This command allows you to provide text feedback and send logs to Adobe. Any logs you send will be sanitized to remove any private or personal information.
+This command allows you to provide text feedback and send logs to Adobe. Any logs you send are sanitized to remove private or personal information.
 
 >[!TIP]
 >
->The user experience will vary slightly depending on the IDE you are using. The following process describes the experience in Cursor.
+>The user experience varies slightly depending on the IDE you are using. The following process describes the experience in Cursor.
 
 1. In your agent, type `/feedback` and select the `commerce-extensibility/feedback` command.
 
@@ -625,4 +625,4 @@ This command allows you to provide text feedback and send logs to Adobe. Any log
 
 >[!NOTE]
 >
->If you do not see the `/feedback` command, you may need to [update to the latest version](#updating-to-the-latest-version).
+>If you do not see the `/feedback` command, [update to the latest version](#updating-to-the-latest-version).

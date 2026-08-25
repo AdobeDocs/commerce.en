@@ -43,7 +43,7 @@ Refer to [Settings](settings.md) to configure price faceting intervals and group
 
 1. To edit the facet label, do one of the following:
 
-   * For a [!DNL Commerce] storefront, edit the [attribute label](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * For a [!DNL Commerce] storefront, edit the [attribute label](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes).
    * For a headless implementation, click the value in the first column and edit the text as needed.
 
     ![Edit label](assets/facet-edit-label.png)

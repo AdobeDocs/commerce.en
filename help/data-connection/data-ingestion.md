@@ -21,7 +21,7 @@ topic_v2:
 
 The [Data Connection extension](overview.md) connects your Commerce data to the Experience Platform. Data intended for use in the Experience Platform is grouped into two behavior types: time series data, which belongs to the **Experience Event** class, and record data, which belongs to the **Individual Profile** class.
 
-Learn more about [data behavior](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) and [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
+Learn more about [data behavior](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors) and [classes](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
 
 ## Time series data
 
@@ -37,7 +37,7 @@ Learn how to [create a schema](update-xdm.md) that can ingest behavioral and bac
 
 ## Record data
 
-Record data provides information about the attributes of a subject. A subject could be an organization or an individual. For example, a shopper on your site creates an account and that generates record data. This data is ingested into the Experience Platform using a schema that has the class set to **Individual Profile**. You can send that record data to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Record data provides information about the attributes of a subject. A subject could be an organization or an individual. For example, a shopper on your site creates an account and that generates record data. This data is ingested into the Experience Platform using a schema that has the class set to **Individual Profile**. You can send that record data to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Captured profile record data
 

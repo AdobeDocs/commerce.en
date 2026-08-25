@@ -122,10 +122,10 @@ If you do not submit a search query for the catalog data in your testing environ
 
 ### Inactive testing environment
 
-To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.
+To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.
 
 ### Empty catalog
 
 If your environment has an empty catalog 45 days after being created, the catalog data is set to hibernation mode and no data is returned for any search query. This inludes both production and testing environments.
 
-To re-activate the catalog data in your environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your environment should be restored within couple of hours.
+To re-activate the catalog data in your environment, [submit a support request](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your environment should be restored within couple of hours.

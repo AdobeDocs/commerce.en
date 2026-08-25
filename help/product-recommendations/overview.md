@@ -41,7 +41,7 @@ topic_v2:
 
 Data collection for [!DNL Product Recommendations] does not include any personally identifiable information (PII). All user identifiers such as cookie IDs and IP addresses are strictly anonymized. To learn more, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-For more information about data syncing, see the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html).
+For more information about data syncing, see the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Where recommendations appear
 
@@ -61,7 +61,7 @@ Choose the documentation that matches your storefront:
 
 ## Product recommendations versus product relationships
 
-Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) gives you more flexibility when promoting products. You can leverage [!DNL Product Recommendations] powered by Adobe AI to intelligently automate your recommendations at scale. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
+Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) gives you more flexibility when promoting products. You can leverage [!DNL Product Recommendations] powered by Adobe AI to intelligently automate your recommendations at scale. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
 
 Product recommendations allow you to:
 
@@ -85,4 +85,4 @@ If your environment has an **empty catalog** 45 days after being created, the ca
 
 ### Reactivate catalog data
 
-To restore catalog data after hibernation, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) with the title "Reactivate [!DNL Product Recommendations]" and include the environment IDs. Catalog data should be restored within a couple of hours.
+To restore catalog data after hibernation, [submit a support request](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) with the title "Reactivate [!DNL Product Recommendations]" and include the environment IDs. Catalog data should be restored within a couple of hours.

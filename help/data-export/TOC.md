@@ -29,4 +29,4 @@ feature: Services
   - [Manage the SaaS data export extension](manage-extension.md)
   - [Sync feeds using the Commerce CLI](data-export-cli-commands.md)
   - [Feed table schema](reference/feed-table-reference.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
