@@ -35,6 +35,10 @@ You have two options to configure the AEM Assets project:
 >
 >You can check the current AEM version from the top right menu: **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
 
+>[!IMPORTANT]
+>
+>Regardless of which option you use, [configure the metadata schema for asset approval](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) in the AEM Metadata Schema editor so you can approve Commerce assets.
+
 ## Enable the Commerce integration (self-service) {#enable-aem-commerce-self-service}
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} AEM release `2026.5.26309` and later.
@@ -50,8 +54,6 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 * The **IMS Org ID** for your Commerce instance.
 
   Both your Commerce instance and AEM Assets authoring environment must be in the same IMS organization.
-
-* [Configure the metadata schema for asset approval](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) in the AEM Metadata Schema editor.
 
 ### Step 1: Create the program and environments
 
