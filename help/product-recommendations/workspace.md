@@ -50,7 +50,7 @@ If you are using a headless storefront, refer to the following documentation to 
 
 ## Set the scope
 
-Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your recommendations apply.
+Initially the [scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) where your recommendations apply.
 
 ## Set metrics date range
 

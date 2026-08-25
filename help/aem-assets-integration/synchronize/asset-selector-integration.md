@@ -35,7 +35,7 @@ When the **AEM Asset Selector** integration is configured, marketers and merchan
 
 >[!NOTE]
 >
-> The AEM Asset Selector is an AEM assets front-end component for integrating AEM Assets with authoring applications. For more information about this component, see the [Micro-Frontend Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} in the *AEM as a Cloud Service User Guide*.
+> The AEM Asset Selector is an AEM assets front-end component for integrating AEM Assets with authoring applications. For more information about this component, see the [Micro-Frontend Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank} in the *AEM as a Cloud Service User Guide*.
 
 ## Key Benefits
 

@@ -24,7 +24,7 @@ The *Search Merchandising* workspace lists the current selection of rules and th
 
 ## Set the scope
 
-If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your rules apply.
+If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) where your rules apply.
 
 ## Show/hide columns
 

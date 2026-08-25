@@ -209,7 +209,7 @@ If the **Commerce** tab does not appear in properties, you must manually complet
 
 1. Drag and drop a **checkbox** component into the **Commerce** tab, and map it to the property `commerce:isCommerce`. Define **Yes** and **No** as the options.
 
-If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) or contact your AEM Assets Integration sales representative for help.
+If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) or contact your AEM Assets Integration sales representative for help.
 
 ## Configure a metadata profile (optional)
 

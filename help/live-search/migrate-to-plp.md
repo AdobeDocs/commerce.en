@@ -462,7 +462,7 @@ Contact the appropriate resource based on your specific needs.
 - Headless or PWA implementations
 - Custom event tracking
 
-To contact Adobe Support, see the [Help Center User Guide](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+To contact Adobe Support, see the [Help Center User Guide](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQ
 

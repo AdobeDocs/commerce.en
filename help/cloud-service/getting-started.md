@@ -47,7 +47,7 @@ topic_v2:
 ---
 # Getting started
 
-[!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. After completing a few basic setup processes, your store is up and running in no time. This guide walks you through creating and working with an instance and helps you set up your organization for success. It ensures your teams have proper access to [!DNL Adobe Commerce as a Cloud Service] and the tools you need to get started.
+[!DNL Adobe Commerce as a Cloud Service] provides most configuration by default. After completing a few basic setup processes, your store is up and running in no time. This guide walks you through creating and working with an instance and helps you set up your organization for success. It ensures your teams have proper access to [!DNL Adobe Commerce as a Cloud Service] and the tools you need to get started.
 
 [!DNL Adobe Commerce as a Cloud Service] is a cloud-native commerce platform that provides flexibility, scalability, and efficiency for delivering digital commerce experiences. This SaaS offering is a fully managed, versionless platform that provides a seamless upgrade experience without manual intervention.
 
@@ -92,7 +92,7 @@ Select a tab below to see high-level workflow graphics for the corresponding rol
 
 >[!TAB System administrator and merchant workflow]
 
-This diagram provides a high-level overview of how system administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how system administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/business/enterprise.html) for more information about administrator workflows.
 
 ![System administrator and merchant workflow diagram for Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -152,7 +152,7 @@ After completing your role-specific setup tasks:
 
 * **System Administrators**: Review [shared responsibility](./security/shared-responsibility.md) guidelines
 * **Merchants**: Explore [use cases](use-cases.md) for common business scenarios
-* **Developers**: Check out the [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs)
+* **Developers**: Check out the [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs/)
 
 ## Adobe Commerce as a Cloud Service basics
 
@@ -182,7 +182,7 @@ The following sections describe the basic processes you need to complete to get 
 
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   * [!UICONTROL **Sandbox**] - For design and testing purposes only. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
+   * [!UICONTROL **Sandbox**] - For design and testing purposes only. Adobe recommends beginning your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
 
    >[!NOTE]
    >
@@ -224,7 +224,7 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 
 >[!TIP]
 >
->To see information about your instance, including the REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
+>To see instance information, including REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
 
 The base URLs for your Admin and endpoints differ based on region and environment, using the following pattern:
 
