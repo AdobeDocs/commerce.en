@@ -138,6 +138,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.7.3
+
+_August 25, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where Add to Cart in the PLP widget returned `HTTP 500` for a logged-in customer after checkout, with the error `Cannot retrieve cart id`. This occurred when the customer's previous quote was inactive and no active quote existed, preventing a new cart from being created.
+
 ## [!DNL Live Search] 4.7.2
 
 _May 18, 2026_
