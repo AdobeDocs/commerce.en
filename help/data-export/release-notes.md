@@ -55,8 +55,9 @@ Updates include:
 
 _August 25, 2026_
 
-![Fix](../assets/fix.svg) Export customizable options as a product attribute. <!--MDEE-1029-->
-![Fix](../assets/fix.svg) Unable to sync feed-categoryPermissions. <!--MDEE-1411-->
+![New](../assets/new.svg) **Customizable options included in the product feed**–Product customizable options, such as color swatches, size selections, or personalization fields, are now exported as a `customizable_options` product attribute. The attribute includes each option's title, whether it's required, and its available values, so connected Commerce services can display accurate customizable option data on the storefront. <!--MDEE-1029-->
+
+![Fix](../assets/fix.svg) **Reliable category permissions sync**–Fixed an issue where the category permissions feed failed to fully resync for configurations missing a website ID, resulting in sync errors. <!--MDEE-1411-->
 
 ### 103.4.31 Release
 
