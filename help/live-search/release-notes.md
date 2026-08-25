@@ -144,7 +144,7 @@ _August 25, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Fixed an issue where Add to Cart in the PLP widget returned `HTTP 500` for a logged-in customer after checkout, with the error `Cannot retrieve cart id`. This occurred when the customer's previous quote was inactive and no active quote existed, preventing a new cart from being created.
+![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart functionality on the Product Listing Page did not work with the PLP Widget in certain isolated cases.
 
 ## [!DNL Live Search] 4.7.2
 
