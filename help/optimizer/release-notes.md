@@ -36,6 +36,11 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 >[!BEGINSHADEBOX]
 
+_August 24, 2026_
+
+![New](../assets/new.svg) **Multi-value HTTP header trigger policies**—Trigger policies using the `HTTP_HEADER` transport type can now receive multiple comma-separated values in a single header (for example, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Policy filters using `IN` evaluate the values with `OR` semantics. Filters using `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` reject the request with a validation error if the header contains multiple values. This behavior applies only to trigger policies using the `HTTP_HEADER` transport. [Learn more](../setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
+
 _August 7, 2026_
 
 ![New](../assets/new.svg) **New `externalIds` field**—Added `externalIds` to Catalog Service GraphQL, exposing the external data source associated with a product so storefront and integration consumers can identify the originating data source. See [Return externalIds for a product](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
@@ -43,15 +48,6 @@ _August 7, 2026_
 
 ![Fix](../assets/fix.svg) **Correct `refineProduct` response for configurable products**—Fixed an issue where the `refineProduct` query returned `priceRange: null` and `roles: ["hidden"]` for specific configurable products, ensuring accurate pricing and visibility information for storefront consumers.
 <!--COMOPT-2367-->
-
-_August 24, 2026_
-
-![New](../assets/new.svg) **Multi-value HTTP header trigger policies**—Trigger policies using the `HTTP_HEADER` transport type can now receive multiple comma-separated values in a single header (for example, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Policy filters using `IN` evaluate the values with `OR` semantics. Filters using `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` reject the request with a validation error if the header contains multiple values. This behavior applies only to trigger policies using the `HTTP_HEADER` transport. [Learn more](../setup/policies.md#multi-value-http-header-triggers).
-<!--COMOPT-2439-->
-
->[!IMPORTANT]
->
->**Pending review — do not publish until confirmed by Product and Engineering.** Previously, a comma-separated `HTTP_HEADER` trigger value may have been treated as a single literal value. It is now split into multiple values at each comma, which changes matching behavior for existing `IN` triggers and rejects previously-accepted multi-value headers for `EQUALS`, `GREATER_THAN_EQUAL`, and `LESS_THAN_EQUAL`. Customers using literal commas within a single trigger value should review their integrations. Confirm rollout scope and effective release date before publishing this entry.
 
 {{aco-release}}
 
