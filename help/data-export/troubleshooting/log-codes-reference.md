@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Data management
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-last-update: 2026-07-21
+last-update: 2026-08-18
 ---
 # [!DNL Data Export] log codes reference
 

@@ -53,11 +53,11 @@ The following image shows how your Commerce data flows from your store to other 
 
 ![How data flows to the Experience Platform edge](assets/commerce-edge.png)
 
-In the above image, your behavioral, back office, and customer profile data is sent to the Experience Platform edge using an SDK, API, and a source connector. You do not need to fully understand how those pieces work as the extension handles the data sharing complexity for you. When the event data is at the edge, you can use it in downstream Adobe DX products such as [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html), [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html), [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html), and [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html). For guided examples, see [Use Adobe Journey Optimizer to send an abandoned cart email](using-ajo.md) and [Create an audience in Real-Time CDP using Commerce event data](create-audience.md).
+In the above image, your behavioral, back office, and customer profile data is sent to the Experience Platform edge using an SDK, API, and a source connector. You do not need to fully understand how those pieces work as the extension handles the data sharing complexity for you. When the event data is at the edge, you can use it in downstream Adobe DX products such as [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview), [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/admin-overview/analytics-overview), and [Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started). For guided examples, see [Use Adobe Journey Optimizer to send an abandoned cart email](using-ajo.md) and [Create an audience in Real-Time CDP using Commerce event data](create-audience.md).
 
 ## Pull Experience Platform data back into Commerce
 
-Sending your Commerce data to the Experience Platform using the [!DNL Data Connection] extension is one side of Commerce's data sharing capabilities. The other side, which is an optional extension, is called [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). This extension allows you to build audiences in Real-Time CDP and deploy those audiences to your Commerce store to inform cart price rules, related product rules, and dynamic blocks.
+Sending your Commerce data to the Experience Platform using the [!DNL Data Connection] extension is one side of Commerce's data sharing capabilities. The other side, which is an optional extension, is called [Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation). This extension allows you to build audiences in Real-Time CDP and deploy those audiences to your Commerce store to inform cart price rules, related product rules, and dynamic blocks.
 
 At a high level, the flow of data from your Commerce store to the Experience Platform and back through the Audience Activation extension looks like the following:
 
@@ -79,13 +79,13 @@ Sharing data between these two systems requires that you understand several conc
 
 - **Profile events** — Time series events for profile lifecycle changes on the server. See [customer profile events](events-backoffice.md#customer-profile-events).
 
-- **Experience Platform and Edge Network** - The data warehouse for most Adobe DX products. Data sent to the Experience Platform is propagated to Adobe DX products through the Experience Platform Edge Network. For example, you can launch Journey Optimizer, retrieve your specific Commerce event data from the edge, and build an abandoned cart email in Journey Optimizer. Journey Optimizer can then send that email if there are any abandoned carts in your Commerce store. Learn more about the [Experience Platform and the Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+- **Experience Platform and Edge Network** - The data warehouse for most Adobe DX products. Data sent to the Experience Platform is propagated to Adobe DX products through the Experience Platform Edge Network. For example, you can launch Journey Optimizer, retrieve your specific Commerce event data from the edge, and build an abandoned cart email in Journey Optimizer. Journey Optimizer can then send that email if there are any abandoned carts in your Commerce store. Learn more about the [Experience Platform and the Edge Network](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview).
 
-- **Schema** - The schema describes the structure of the data that is being sent. Before Experience Platform can ingest your Commerce data, you must compose a schema to describe the data's structure and provide constraints for the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. The schema uses the XDM structure, which all Adobe DX products can read. The schema ensures that data sent to the Experience Platform is understood across all DX products. Learn more about [schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+- **Schema** - The schema describes the structure of the data that is being sent. Before Experience Platform can ingest your Commerce data, you must compose a schema to describe the data's structure and provide constraints for the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. The schema uses the XDM structure, which all Adobe DX products can read. The schema ensures that data sent to the Experience Platform is understood across all DX products. Learn more about [schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
-- **Dataset** - A storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. All data that is successfully ingested into Adobe Experience Platform is contained within datasets. Learn more about [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+- **Dataset** - A storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. All data that is successfully ingested into Adobe Experience Platform is contained within datasets. Learn more about [datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview).
 
-- **Datastream** - ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. When you create this datastream, specify the XDM schema you created above. Learn more about [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+- **Datastream** - ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. When you create this datastream, specify the XDM schema you created above. Learn more about [datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
 
 ## Supported architecture
 
@@ -93,7 +93,7 @@ The [!DNL Data Connection] extension is available on the following architectures
 
 - PHP/Luma
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- [AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/cif-storefront/integrations/aep)
 
 >[!BEGINSHADEBOX]
 
@@ -103,7 +103,7 @@ To use the [!DNL Data Connection] extension, you must have the following:
 
 - Adobe Commerce 2.4.4 or newer
 - Adobe ID and Organization ID
-- [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), which is required to collect storefront event data
+- [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview), which is required to collect storefront event data
 - Entitlements to other Adobe DX products.
 
 >[!ENDSHADEBOX]
@@ -113,12 +113,12 @@ To use the [!DNL Data Connection] extension, you must have the following:
 At a high level, enabling the [!DNL Data Connection] extension involves the following steps: 
 
 1. [Install](install.md) the [!DNL Data Connection] extension.
-1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account and [view to confirm](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) your organization ID. The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) `@AdobeOrg`.
-1. Ensure you have [permission for data collection in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account and [view to confirm](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) your organization ID. The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) `@AdobeOrg`.
+1. Ensure you have [permission for data collection in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions).
 1. Review the [types of data](data-ingestion.md) you can collect and send.
 1. Create or update your [time series event schema](update-xdm.md) or [profile record data schema](profile-data.md) with Commerce-specific field groups.
-1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated. This dataset contains the Commerce data sent to the Experience Platform Edge.
-1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups.
+1. [Create a dataset](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform#create-a-dataset) based off the schema you created or updated. This dataset contains the Commerce data sent to the Experience Platform Edge.
+1. [Create a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) and select the XDM schema that contains the Commerce-specific field groups.
 1. [Connect to Commerce Services](../landing/saas.md).
 1. [Connect to Adobe Experience Platform](connect-data.md).
 
@@ -140,5 +140,5 @@ This guide is designed for the Adobe Commerce merchant who wants to enrich and p
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-- [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-- [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — Submit a ticket to receive additional help.
+- [Help center](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+- [Support tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} — Submit a ticket to receive additional help.

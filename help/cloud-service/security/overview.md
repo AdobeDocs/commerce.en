@@ -65,7 +65,7 @@ Merchants can opt to deploy an Adobe-managed CDN or purchase their own CDN solut
 
 [!DNL API Mesh]'s CDN layer terminates TLS, runs the GraphQL gateway as Workers, provides global edge caching and automatic DDoS/WAF, and exposes `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` as the public mesh endpoints; customers can add their own CDN in front, but [!DNL API Mesh]'s CDN is fixed and managed by Adobe and customers cannot configure their own WAF rules.
 
-For more information on [!DNL API Mesh]'s security features, refer to the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
+For more information on [!DNL API Mesh]'s security features, refer to the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### Backend CDN
 
@@ -94,6 +94,6 @@ The built-in CDN and WAF provides both network‑layer and HTTP‑layer DDoS pro
 
 If data is being stored in [!DNL App Builder], then a merchant can refer to the [!DNL App Builder] [storage options](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] enforces tenant isolation and access to data stored in these services is restricted to the runtime namespace in which the action is executed. There is no encryption of data in storage.
 
-When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] encrypts these secrets using AES-256 encryption ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] encrypts these secrets using AES-256 encryption (see the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}).
 
 Any data stored in [!DNL Adobe Commerce as a Cloud Service] is encrypted at rest using AES 256-bit encryption and all data is encrypted over HTTPS using TLS 1.2 or greater in transit.

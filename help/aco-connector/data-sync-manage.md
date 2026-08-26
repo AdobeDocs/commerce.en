@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-06-23
+last-update: 2026-08-20
 ---
 # Manage synchronization to [!DNL Commerce Optimizer]
 
@@ -62,4 +62,4 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 > - [Troubleshooting](troubleshooting.md) — Diagnose credential, sync, and scope export issues
 > - [Connector modules and feed endpoints](reference/connector-reference.md) — Review modules, API endpoints, and supported feeds
 > - [Data Feed Sync Status page in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Learn more about the fields and capabilities available to monitor feed status
-> - [Data Sync dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — Reference documentation for fields and actions available to monitor catalog data sync
+> - [Data Sync dashboard in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"} — Reference documentation for fields and actions available to monitor catalog data sync
