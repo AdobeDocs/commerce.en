@@ -99,6 +99,8 @@ C2PA metadata is tamper-evident, machine-readable metadata based on the [C2PA op
 
 ![Inspect Sample](../assets/inspect-sample.png)
 
+Learn more about [Generative AI content transparency](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)
+
 ## Using Success Metrics and Sites Optimizer together
 
 Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools designed to work together, helping you to enhance your commerce site's performance. Understanding the difference between these features helps you make better decisions and achieve measurable results.
