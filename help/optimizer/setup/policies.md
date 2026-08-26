@@ -88,8 +88,6 @@ Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL
 - A policy filter with **Value source** set to `TRIGGER`.
 - A trigger whose **Transport type** is `HTTP_HEADER`.
 
-<!-- Confirm with Engineering before expanding this section: whether a literal comma can be included in a single value (for example, via escaping or encoding), whether whitespace around commas is trimmed, whether repeated instances of the same header are officially supported for external customers, and the exact validation error returned for multiple values with a non-IN operator. -->
-
 ## Create policy
 
 In this section, you create a new policy. The policy can be either **STATIC** or **TRIGGER**.
