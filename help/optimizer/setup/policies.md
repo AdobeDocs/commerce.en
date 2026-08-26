@@ -73,7 +73,7 @@ AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
 
 matches products whose `vehicle` attribute is either `UNIVERSAL` or `veh-bolt-mammoth-limited-2025`.
 
-Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` is rejected with a vallidation error. 
+Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` is rejected with a validation error. 
 
 >[!NOTE]
 >
