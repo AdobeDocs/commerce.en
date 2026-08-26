@@ -99,7 +99,7 @@ C2PA metadata is tamper-evident, machine-readable metadata based on the [C2PA op
 
 ![Inspect Sample](../assets/inspect-sample.png)
 
-Learn more about [Generative AI content transparency](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)
+Learn more about [Generative AI content transparency](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Using Success Metrics and Sites Optimizer together
 
