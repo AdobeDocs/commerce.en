@@ -46,9 +46,7 @@ topic_v2:
 >
 > The Migration Assessment is only available when migrating [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on-premises] projects to [!DNL Adobe Commerce as a Cloud Service].
 
-A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service].
-
-Processed migration assessment reports are accessible at `https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`. No access to your production environment is required, except initially sharing your project codebase.
+A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service]. No access to your production environment is required, except initially sharing your project codebase.
 
 **The assessment provides:**
 
@@ -56,6 +54,10 @@ Processed migration assessment reports are accessible at `https://experience.ado
 - A migration complexity rating (High, Medium, or Low) computed from risk-predictive metrics
 - A prioritized view of the highest-impact backend and storefront areas requiring migration planning
 - A description of each custom module, that you can use as direct input for Adobe's AI developer tools
+
+## Access the migration assessment
+
+Adobe connects a completed migration assessment to your organization's Adobe IMS org. Once the assessment is connected, any user in that organization can access the report at `https://experience.adobe.com/#/@<ims-org-name>/commerce-migration-assessment/shared-assessments`, where `<ims-org-name>` is your organization's IMS org ID.
 
 ## Understanding the migration assessment report
 
@@ -239,6 +241,8 @@ For each module, the report displays:
 | Migration recommendation | **Rebuild**, **Refactor**, **Replace** with a native feature, or **Remove** |
 | Dependencies | Which other modules this module interacts with, which can inform migration sequencing |
 
+Open a module's breakdown to view its full detail. Modules with a **Rebuild** migration recommendation include an **[!UICONTROL Open in Developer Agent]** button, which copies the module's description directly into the [!DNL Commerce Developer Agent] so you can generate a blueprint for the replacement extension right away.
+
 **Workflow**
 
 1. Filter to **High-impact** modules first. These drive the most migration effort and cost.
@@ -247,7 +251,9 @@ For each module, the report displays:
    - Could the module be replaced by a native [!DNL Adobe Commerce as a Cloud Service] feature?
    - If the module must be rebuilt, what functionality does its replacement need to provide?
 1. Identify custom modules that can be retired or replaced. Each one reduces migration scope before any code is written.
-1. Copy the description of each custom module with the **Rebuild** migration recommendation. These descriptions can be given directly to Adobe's AI developer tools, refer to [AI developer tools for Commerce extensibility](#ai-developer-tools-for-commerce-extensibility) for more information.
+1. For each custom module with a **Rebuild** migration recommendation, you can either:
+   - Click **[!UICONTROL Open in Developer Agent]** to generate a blueprint, or copy the module description using the Commerce Developer agent.
+   - Copy the description of each custom module with the **Rebuild** migration recommendation. These descriptions can be given directly to Adobe's AI developer tools, refer to [AI developer tools for Commerce extensibility](#ai-developer-tools-for-commerce-extensibility) for more information.
 
 ## Reference: key terms
 
@@ -300,8 +306,10 @@ While the assessment gives you a blueprint for development, the AI tools allow y
   Manages custom shipping rate calculations based on customer account tier and order    weight thresholds.
   ```
 
-1. Open your IDE, for example GitHub Copilot, Cursor, or Claude with the Commerce extensibility MCP server enabled.
-1. Use the module description to prompt the AI agent.
+1. Click **[!UICONTROL Open in Developer Agent]** to copy the description into the [!DNL Commerce Developer Agent] and generate a blueprint right away.
+
+   Alternatively, open your IDE, for example GitHub Copilot, Cursor, or Claude with the Commerce extensibility MCP server enabled, and use the module description to prompt the AI agent manually.
+
 1. Review the scaffolded [!DNL App Builder] application and iterate with the agent to refine the implementation.
 
 ## Next steps
