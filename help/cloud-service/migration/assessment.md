@@ -241,7 +241,7 @@ For each module, the report displays:
 | Migration recommendation | **Rebuild**, **Refactor**, **Replace** with a native feature, or **Remove** |
 | Dependencies | Which other modules this module interacts with, which can inform migration sequencing |
 
-Open a module's breakdown to view its full detail. Modules with a **Rebuild** migration recommendation include an **[!UICONTROL Open in Developer Agent]** button, which copies the module's description directly into the [!DNL Commerce Developer Agent] so you can generate a blueprint for the replacement extension right away.
+Open a module's breakdown to view its full detail. Modules with a **Rebuild** migration recommendation include an **[!UICONTROL Open in Developer Agent]** button, which copies the module's description directly into the [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/) so you can generate a blueprint for the replacement extension right away.
 
 **Workflow**
 
@@ -278,7 +278,7 @@ You can use the module descriptions in the **[!UICONTROL Module Reports]** tab a
 
 ### What the tools provide
 
-Adobe's [AI developer tools for Commerce extensibility](https://developer.adobe.com/commerce/extensibility/developer-agent/) include two primary capabilities.
+Adobe's [AI developer tools for Commerce extensibility](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/) include two primary capabilities.
 
 - [!DNL Adobe Commerce] [!DNL App Builder] MCP server - A Model Context Protocol (MCP) integration that connects AI coding assistants directly to [!DNL Adobe Commerce] documentation, APIs, and App Builder development patterns. Developers can describe what they want to build and the MCP server provides Commerce-aware code generation, architecture guidance, and deployment automation within the IDE.
 - Agent skills - Pre-built AI skills covering common Commerce extensibility patterns, such as REST APIs, checkout extensions, storefront components, and event-driven integrations. Skills guide the AI through architecture, implementation, testing, and deployment steps specific to [!DNL Adobe Commerce as a Cloud Service] and [!DNL App Builder].
@@ -328,7 +328,7 @@ While the assessment gives you a blueprint for development, the AI tools allow y
   - [Shipping method tutorial](../tutorials/shipping-method-extension.md)
 - Extensibility
   - [Overview](https://developer.adobe.com/commerce/extensibility/)
-  - [AI developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+  - [AI developer tools](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)
     - [Best practices](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
     - [Setup](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
     - [Skills and prompts](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
