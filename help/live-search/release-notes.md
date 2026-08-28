@@ -142,7 +142,7 @@ _October 27, 2023_
 
 _August 28, 2026_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.5 and newer
 
 ![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart functionality on the Product Listing Page did not work with the PLP Widget in certain isolated cases.
 
