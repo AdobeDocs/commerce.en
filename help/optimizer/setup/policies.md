@@ -78,7 +78,7 @@ Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL
 #### Syntax notes
 
 - The header name matches the trigger name you configure, for example `AC-Policy-Vehicle`.
-- Commas separate individual values within the header. When the same AC-Policy-_Name_ header appears more than once, its values will be combined into a single comma-separated header value
+- Commas separate individual values within the header. When the same `AC-Policy-_Name_` header appears more than once, its values will be combined into a single comma-separated header value
 - The filter operator is `IN`.
 - A policy filter with **Value source** set to `TRIGGER`.
 - A trigger whose **Transport type** is `HTTP_HEADER`.
