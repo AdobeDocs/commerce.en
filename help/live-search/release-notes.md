@@ -138,6 +138,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.7.3
+
+_August 28, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.5 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where the Add to Cart functionality on the Product Listing Page did not work with the PLP Widget in certain isolated cases.
+
 ## [!DNL Live Search] 4.7.2
 
 _May 18, 2026_
