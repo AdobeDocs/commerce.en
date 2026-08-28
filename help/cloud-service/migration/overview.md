@@ -90,9 +90,9 @@ Adobe Commerce is available in different deployment models. The primary differen
 
 | Adobe Commerce offering | Hosting model | Responsibility for services and updates |
 |---|---|---|
-| **Adobe Commerce as a Cloud Service** | SaaS — Adobe-hosted | Adobe manages the core Commerce application, infrastructure, and updates. Merchants extend the platform through supported APIs and extensibility services (APIs, App Builder, UI SDKs). Core application code is locked. |
-| **Adobe Commerce on Cloud Infrastructure** | PaaS — Adobe-managed | [Shared responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe manages the hosted platform. The merchant manages application-level patches, custom code, configuration, and keeping extensions and platform services—such as the database, cache, search, PHP runtime, web server, and message queue—on supported versions. |
-| **Adobe Commerce on-premises** | Merchant- or hosting-provider-hosted | The merchant or its hosting provider manages the infrastructure and all platform services. |
+| **Adobe Commerce as a Cloud Service** | SaaS — Adobe-hosted | Adobe manages the core Commerce application, infrastructure, and updates. Merchants extend the platform through supported APIs and extensibility services (APIs, Adobe Developer App Builder, UI SDKs). Merchants cannot modify core application code. |
+| **Adobe Commerce on Cloud Infrastructure** | PaaS — Adobe-managed | [Shared responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe manages the hosted platform. The merchant manages application-level patches, custom code, configuration, and updates extensions and platform services to supported versions, including: the database, cache, search, PHP runtime, web server, and message queue. |
+| **Adobe Commerce on-premises** | Hosted by the merchant or hosting provider | The merchant or its hosting provider manages the infrastructure and all platform services. |
 
 **Architectural implications**
 
