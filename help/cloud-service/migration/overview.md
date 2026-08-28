@@ -86,7 +86,7 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 Adobe Commerce is available in different deployment models. The primary differences are the level of infrastructure management, application control, customization, and upgrade responsibility.
 
-[!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce on Cloud], and Adobe Commerce on-premises differ in how they are managed and how merchants interact with the platform.
+[!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce on Cloud], and [!DNL Adobe Commerce on-premises] differ in how they are managed and how merchants interact with the platform.
 
 | Adobe Commerce offering | Hosting model | Responsibility for services and updates |
 |---|---|---|
