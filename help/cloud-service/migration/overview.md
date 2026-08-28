@@ -82,21 +82,17 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 ![migration flow diagram](../assets/migration-flow.png)
 
-### PaaS and SaaS comparison
+### SaaS and PaaS comparison
 
-[!DNL Adobe Commerce on Cloud] or on-premises (PaaS) and [!DNL Adobe Commerce as a Cloud Service] (SaaS) differ in how they are managed and how merchants interact with the platform.
+Adobe Commerce is available in different deployment models. The primary differences are the level of infrastructure management, application control, customization, and upgrade responsibility.
 
-**Key differences**
+[!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce on Cloud], and Adobe Commerce on-premises differ in how they are managed and how merchants interact with the platform.
 
-- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**: Merchant manages application code, upgrades, patching, and infrastructure configuration.
-- **[!DNL Adobe Commerce] on-premises**: Merchant manages application code, upgrades, patching, infrastructure configuration within Adobe's hosted environment.
-
-  >[!NOTE]
-  >
-  >[Shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) for services (MySQL, Elasticsearch, and others).
-
-- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} **SaaS (New — [!DNL Adobe Commerce as a Cloud Service])**: Adobe fully manages the core application, infrastructure, and updates. Merchants focus on customization through extensibility points (APIs, App Builder, UI SDKs). Core application code is locked.
+| Adobe Commerce offering | Hosting model | Responsibility for services and updates |
+|---|---|---|
+| **Adobe Commerce as a Cloud Service** | SaaS — Adobe-hosted | Adobe manages the core Commerce application, infrastructure, and updates. Merchants extend the platform through supported APIs and extensibility services (APIs, App Builder, UI SDKs). Core application code is locked. |
+| **Adobe Commerce on Cloud Infrastructure** | PaaS — Adobe-managed | [Shared responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe manages the hosted platform. The merchant manages application-level patches, custom code, configuration, and keeping extensions and platform services—such as the database, cache, search, PHP runtime, web server, and message queue—on supported versions. |
+| **Adobe Commerce on-premises** | Merchant- or hosting-provider-hosted | The merchant or its hosting provider manages the infrastructure and all platform services. |
 
 **Architectural implications**
 
