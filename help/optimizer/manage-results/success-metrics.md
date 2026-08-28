@@ -81,9 +81,29 @@ The key performance indicators are:
 
 1. Click **[!UICONTROL Export]** to save the report as a PDF.
 
+## C2PA metadata on exported reports {#c2pa-metadata-on-exported-reports}
+
+The Success Metrics report includes highlights and summaries using generative AI. When you export a report to PDF, Adobe automatically attaches C2PA metadata to the exported file.
+
+C2PA metadata is tamper-evident, machine-readable metadata based on the [C2PA open standard](https://c2pa.org/). The metadata records that generative AI was used to produce content in the report, along with information such as the AI system used, whether content was generated or edited with generative AI, and a timestamp.
+
+>[!NOTE]
+>
+>C2PA metadata is attached automatically. No additional action is required, and this behavior cannot be turned off. C2PA metadata does not change how your report looks. They are invisible metadata carried within the PDF.
+
+**What this means for your exported reports**
+
+- When you export a Success Metrics report to PDF, the exported file carries C2PA metadata.
+- C2PA metadata travels with the PDF when you share or download it. Third-party platforms that support C2PA metadata may read this metadata and display transparency information to viewers.
+- You can verify the C2PA metadata attached to any file by uploading it to [Inspect](https://contentauthenticity.adobe.com/inspect).
+
+![Inspect Sample](../assets/inspect-sample.png)
+
+Learn more about [Generative AI content transparency](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+
 ## Using Success Metrics and Sites Optimizer together
 
-Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools designed to work together, helping you to enhance you commerce site's performance. Understanding the difference between these features helps you make better decisions and achieve measurable results.
+Success Metrics and Sites Optimizer ([Opportunities](opportunities.md)) are complementary tools designed to work together, helping you to enhance your commerce site's performance. Understanding the difference between these features helps you make better decisions and achieve measurable results.
 
 ### Key differences
 
