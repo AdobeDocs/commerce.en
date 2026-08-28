@@ -140,7 +140,7 @@ _October 27, 2023_
 
 ## [!DNL Live Search] 4.7.3
 
-_August 25, 2026_
+_August 28, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
