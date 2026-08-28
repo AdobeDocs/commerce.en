@@ -50,7 +50,7 @@ A Commerce migration assessment is an automated analysis of your existing Adobe 
 
 Once your codebase has been processed, the assessment report is linked to your IMS Organization ID and shared to [!DNL Adobe Experience Cloud]. No access to your production environment is required, except initially sharing your project codebase.
 
-Any member of your IMS organization can view the shared assessment at: https://experience.adobe.com/#/commerce-migration-assessment/shared-assessments.
+Any member of your IMS organization can view the shared assessment at: https://experience.adobe.com/commerce-migration-assessment/shared-assessments.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Any member of your IMS organization can view the shared assessment at: https://e
 
 ## Access the migration assessment
 
-Adobe connects a completed migration assessment to your organization's Adobe IMS org. Once the assessment is connected, any user in that organization can access the report at `https://experience.adobe.com/#/@<ims-org-name>/commerce-migration-assessment/shared-assessments`, where `<ims-org-name>` is your organization's IMS org ID.
+Adobe connects a completed migration assessment to your organization's Adobe IMS org. Once the assessment is connected, any user in that organization can access the report at https://experience.adobe.com/commerce-migration-assessment/shared-assessments.
 
 ## Understanding the migration assessment report
 
