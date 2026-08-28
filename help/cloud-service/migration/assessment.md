@@ -46,7 +46,15 @@ topic_v2:
 >
 > The Migration Assessment is only available when migrating [!DNL Adobe Commerce on Cloud Infrastructure] or [!DNL Adobe Commerce on-premises] projects to [!DNL Adobe Commerce as a Cloud Service].
 
-A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service]. No access to your production environment is required, except initially sharing your project codebase.
+A Commerce migration assessment is an automated analysis of your existing Adobe Commerce implementation. Adobe's tooling scans your Commerce codebase and produces a structured report that inventories everything built, customized, or modified. The report then indicates how the customizations made to your codebase impact your migration to [!DNL Adobe Commerce as a Cloud Service].
+
+Once your codebase has been processed, the assessment report is linked to your IMS Organization ID and shared to [!DNL Adobe Experience Cloud]. No access to your production environment is required, except initially sharing your project codebase.
+
+Any member of your IMS organization can view the shared assessment at: https://experience.adobe.com/#/commerce-migration-assessment/shared-assessments.
+
+>[!NOTE]
+>
+> You must be signed in to Adobe Experience Cloud with a user profile linked to the same IMS Organization used for your migration assessment to view the shared report.
 
 **The assessment provides:**
 
@@ -316,7 +324,7 @@ While the assessment gives you a blueprint for development, the AI tools allow y
 
 1. Open the **[!UICONTROL Summary]** tab. Review Migration Complexity and Highest-Impact Modules, then check the Customization Breakdown subsections. If your store has a custom theme, high-risk blocks, or a Checkout Drop-in listed, plan a parallel front-end workstream alongside the backend migration.
 1. Share the **[!UICONTROL Module Reports]** tab with your technical team or development partner. Ask them to flag any custom modules that are no longer actively used or that could be replaced by an [!DNL Adobe Commerce as a Cloud Service] feature.
-1. Start building your customizations. Use the module descriptions as AI tool input to begin scaffolding compatible extensions.
+1. Start building your customizations. On the **Module Reports** tab, open any module breakdown and select **Open in Developer Agent** to begin scaffolding a compatible extension directly from that module's assessment data.
 1. Schedule a walkthrough call with your Adobe account team. Adobe can review the findings with you, answer any questions about specific modules and storefront signals, and help you map the migration approach for your complexity profile.
 
 ## Resources
