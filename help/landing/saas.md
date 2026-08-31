@@ -60,7 +60,7 @@ The following sections discuss each of these elements in more detail.
 
 ## Credentials {#apikey}
 
-The production and sandbox API keys are generated from the [!DNL Commerce] account of the [license owner](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). The Commerce account is identified by a unique [!DNL Commerce] ID (MageID). The license owner for the merchant's organization can generate API keys for services like Product Recommendations or Live Search, as long as the account is in good standing.
+The production and sandbox API keys are generated from the [!DNL Commerce] account of the [license owner](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding). The Commerce account is identified by a unique [!DNL Commerce] ID (MageID). The license owner for the merchant's organization can generate API keys for services like Product Recommendations or Live Search, as long as the account is in good standing.
 
 The keys can be shared on a "need-to-know" basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Developers who have been granted [!DNL Shared Access] by the license owner cannot generate the keys on the license owner's behalf even if the merchant's organization is present in the [!DNL Switch Accounts] dropdown on their account.
 
@@ -157,7 +157,7 @@ To select or create a SaaS project, request the [!DNL Commerce] API keys from th
 
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
-   If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
+   If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
 
   >[!WARNING]
   >

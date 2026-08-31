@@ -91,7 +91,7 @@ The merchant enters service account credentials once on the **[!UICONTROL Servic
 
 ### Add service account and credential details
 
-If you plan to collect and send [historical order data](#send-historical-order-data) or [customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you must complete these steps.
+If you plan to collect and send [historical order data](#send-historical-order-data) or [customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation) extension, you must complete these steps.
 
 Service account credentials are configured at **Default Config** scope and apply globally. See [Configuration scope](#configuration-scope) for website-scoped settings such as sandbox name.
 
@@ -101,12 +101,12 @@ If you are only collecting and sending storefront or back office data, you can s
 
 Create a project in the Adobe Developer Console that authenticates Commerce so it can make Experience Platform API calls.
 
-To create the project, follow the steps outlined in the [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
+To create the project, follow the steps outlined in the [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) tutorial.
 
 As you go through the tutorial, ensure that your project has the following:
 
-- Access to the following [product profiles](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Default production all access** and **AEP Default all access**.
-- The correct [roles and permissions are configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Access to the following [product profiles](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#select-product-profiles): **Default production all access** and **AEP Default all access**.
+- The correct [roles and permissions are configured](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role).
 - If you decided to use JSON Web Tokens (JWT) as your server-to-server authentication method, you must also upload a private key.
 
 The result of this step creates a configuration file that you use in the next step.
@@ -141,7 +141,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **[!UICONTROL Test connection]** to validate service account credentials and the sandbox for the website currently selected in **[!UICONTROL Scope]**. Repeat for each website that uses a different sandbox.
 
-1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the [!DNL Data Connection] extension deploys one for you.
+1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the [!DNL Data Connection] extension deploys one for you.
 
     >[!NOTE]
     >
@@ -171,9 +171,9 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
     >[!NOTE]
     >
-    >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. Learn [more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
+    >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. Learn [more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset) about setting a shopper's privacy preference in the Experience Platform.
 
-1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
+1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
 
 1. Enter the **Dataset ID** that you want to contain your Commerce data. To find the dataset ID:
 
@@ -181,7 +181,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
     1. Open the dataset associated with your datastream.
     1. In the right-hand pane, view the details about the dataset. Copy the dataset ID.
 
-1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
+1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
 
     1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > _[!UICONTROL Tools]_ > **[!UICONTROL Index Management]**.
 
@@ -189,7 +189,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
     1. Set **[!UICONTROL Actions]** to `Update by Schedule`.
 
-    1. If you are enabling back office data for the first time, run the following commands to reindex and trigger a resync. Subsequent resyncs occur automatically as long as the [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job is set up correctly.
+    1. If you are enabling back office data for the first time, run the following commands to reindex and trigger a resync. Subsequent resyncs occur automatically as long as the [cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) job is set up correctly.
 
         ```bash
         bin/magento index:reindex sales_order_data_exporter_v2
@@ -220,7 +220,7 @@ After you configure the extension, storefront data begins to flow to the Experie
 
 There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 
-A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When your schema and dataset are [properly configured](profile-data.md), a profile record is sent to the Experience Platform and forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When your schema and dataset are [properly configured](profile-data.md), a profile record is sent to the Experience Platform and forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 Time series profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When profile event data is sent to the Experience Platform, it resides in a dataset where it can be used by other DX products.
 
@@ -267,7 +267,7 @@ The order sync service uses the [Message Queue Framework](https://developer.adob
 
 1. Make sure you have [provided](#add-service-account-and-credential-details) service account and credential details.
 
-1. [Enable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
+1. [Enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) RabbitMQ.
 
     >[!NOTE]
     >
@@ -284,7 +284,7 @@ The order sync service uses the [Message Queue Framework](https://developer.adob
 
     >[!NOTE]
     >
-    >See the [deploy variables documentation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) to learn about all the available configuration options.
+    >See the [deploy variables documentation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) to learn about all the available configuration options.
 
 With the order sync service enabled, you can then specify the historical order date range in the **[!UICONTROL [!DNL Data Connection]]** page.
 
@@ -346,7 +346,7 @@ Learn more about how to [set up custom attributes](custom-attributes.md).
 
 ## Confirm that event data is collected {#confirm-that-event-data-is-collected}
 
-To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created during configuration](overview.md#enable-extension).
+To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created during configuration](overview.md#enable-extension).
 
 1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
     
@@ -368,7 +368,7 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 
 In this example, you see event data from the `commerce.productListAdds`, `commerce.productViews`, `web.webpagedetails.pageViews`, and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
-If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting).
 
 ### Verify profile data appears in the Experience Platform
 

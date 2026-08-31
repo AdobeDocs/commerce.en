@@ -30,7 +30,7 @@ You can integrate [!DNL Product Recommendations] in a headless storefront using 
 
 Custom and headless integrators should refer to these Luma and PWA instructions as a suggested implementation. There are many ways of implementing Product Recommendations into headless solutions and this documentation does not cover all scenarios. Integrators must cover eventing, design, and testing for their implementations.
 
-[!DNL Product Recommendations] require [behavioral and catalog data](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) to operate. The catalog data sync process remains unchanged in a headless implementation, but changes are needed for behavioral data collection.
+[!DNL Product Recommendations] require [behavioral and catalog data](development-overview.md) to operate. The catalog data sync process remains unchanged in a headless implementation, but changes are needed for behavioral data collection.
 
  >[!NOTE]
  >

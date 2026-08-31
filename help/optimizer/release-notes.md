@@ -104,7 +104,7 @@ _May 28, 2026_
 ![Fix](../assets/fix.svg) **Complete navigation trees**—Tagged descendant categories are now correctly included in family-filtered `navigation` trees when an untagged intermediate node exists in the path. This fix ensures that shoppers see all relevant categories in the navigation, making it easier to browse and discover items.
 <!--DATA-7183-->
 
-![Fix](../assets/fix.svg) **Empty slug handling in `categoryTree` requests**—Fixed an issue where the [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query returned an internal server error when the `slugs` argument included an empty string. Empty slug values are now ignored, so storefronts and integrations continue to resolve category data without failed requests.
+![Fix](../assets/fix.svg) **Empty slug handling in `categoryTree` requests**—Fixed an issue where the [`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) query returned an internal server error when the `slugs` argument included an empty string. Empty slug values are now ignored, so storefronts and integrations continue to resolve category data without failed requests.
 <!--DATA-7184-->
 
 ![Fix](../assets/fix.svg) **`searchCategory` requests return case-insensitive, alphabetized results**—The `searchCategory` query now sorts search results alphabetically without case sensitivity, ensuring consistent and predictable ordering. Categories with shorter prefixes appear first when names are otherwise identical.
@@ -156,7 +156,7 @@ _April 7, 2026_
 
 <!--v1.50 release-->
 
-**Simpler category lookups** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query treats `family` as optional, so you can resolve categories by slug without supplying a family.
+**Simpler category lookups** — The [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) query treats `family` as optional, so you can resolve categories by slug without supplying a family.
 
 {{aco-release}}
 
@@ -194,13 +194,13 @@ _February 19, 2026_
 
 <!--v1.48-->
 
-**Richer category content for storefronts** — The [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) query now returns descriptions, images, and SEO meta tags so storefronts can render richer category pages.<!--DATA-6933-->
+**Richer category content for storefronts** — The [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) query now returns descriptions, images, and SEO meta tags so storefronts can render richer category pages.<!--DATA-6933-->
 
 _February 12, 2026_
 
 <!--v1.49-->
 
-**Enhanced product data by category** — The GraphQL API adds the [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} type so you can query and filter products by category with fewer round trips.
+**Enhanced product data by category** — The GraphQL API adds the [`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} type so you can query and filter products by category with fewer round trips.
 
 {{aco-release}}
 
