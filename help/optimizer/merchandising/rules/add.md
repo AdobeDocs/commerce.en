@@ -220,9 +220,9 @@ For information about setting search weights, see the [Metadata API](https://dev
 
 **Manual ranking** events adjust product order for **search results** (when your rule's conditions are met), for **default product listings**, and for **category page** listings. A single rule can have up to 25 events.
 
-- **[!UICONTROL Boost]** — Moves a product higher in the listing.
+- **[!UICONTROL Boost]** — Moves a SKU higher in the listing.
 - **[!UICONTROL Bury]** — Moves a SKU lower in the listing.
-- **[!UICONTROL Pin a product]** — Fixes a product at the selected position in the listing.
+- **[!UICONTROL Pin a product]** — Fixes a SKU at the selected position in the listing.
 - **[!UICONTROL Hide a product]** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
 
 The easiest way to pin a product is by drag and drop.
@@ -241,7 +241,7 @@ Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose **[!UICONTROL Hide a product]**. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the phrase which matches part or the whole name or SKU of the product that you want to hide.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
@@ -260,6 +260,11 @@ Or events can be set manually:
 1. From the dropdown at the top of the condition, select the action to apply to matching products: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**.
 1. Under **[!UICONTROL Attribute]**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
 1. Under **[!UICONTROL Value]**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **[!UICONTROL Selected values]**. A product matches the condition if it has any one of the listed values.
+
+   >[!NOTE]
+   >
+   >The **[!UICONTROL Value]** field accepts free text and is case sensitive. After adding a value, check the test pane to confirm it matches the expected products.
+
 1. For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
 1. To add another condition, click **[!UICONTROL Add attribute]** and repeat the previous steps.
 

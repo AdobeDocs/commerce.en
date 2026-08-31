@@ -192,9 +192,9 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 
 Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
-* **[!UICONTROL Boost]** - Moves a product higher in the search results.
+* **[!UICONTROL Boost]** - Moves a SKU higher in the search results.
 * **[!UICONTROL Bury]** - Moves a SKU lower in the search results.
-* **[!UICONTROL Pin a product]** - Product is displayed in the selected "Position" on the page.
+* **[!UICONTROL Pin a product]** - SKU is displayed in the selected "Position" on the page.
 * **[!UICONTROL Hide a product]** - Excludes a SKU from the search results.
 
 The easiest way to pin a product is by drag and drop.
