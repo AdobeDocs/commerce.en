@@ -1,5 +1,5 @@
 ---
-title: Commerce Insights Governance
+title: Commerce Documentation Governance
 description: Learn about the internal governance model for the Commerce Insights. Not published to Experience League—kept out of TOC.md intentionally.
 ---
 
