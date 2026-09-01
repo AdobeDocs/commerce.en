@@ -1,5 +1,5 @@
 ---
-title: Commerce Information Center Governance
+title: Commerce Insights Governance
 description: Learn about the internal governance model for the Commerce Insights. Not published to Experience League—kept out of TOC.md intentionally.
 ---
 
