@@ -7,9 +7,9 @@ recommendations: noCatalog
 
 <!--
 Save this file at help/insights/security/<slug>.md,
-fill in the sections below, then add it to TOC.md under "Guidance & insights".
+fill in the sections below, then add it to help/insights/TOC.md.
 Delete this comment block and the bracketed placeholders before publishing.
-See help/information-center/governance.md for what belongs in this section.
+See help/insights/README.md for what belongs in Commerce Insights.
 Security-specific content should be reviewed by the security team before publishing.
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
