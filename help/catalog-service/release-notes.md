@@ -54,6 +54,10 @@ Support is provided for the latest version. Release notes for older versions are
 
 ### August 2026
 
+**Release data**: August 24, 2026
+
+![New](../assets/new.svg) **Support for the `categoryTree` query on Adobe Commerce as a Cloud Service**—The `categoryTree` GraphQL query is now available for [!DNL Adobe Commerce as a Cloud Service], so storefronts can resolve categories by slug and render category trees. <!-- DATA-7299 -->
+
 **Release date**: August 7, 2026
 
 ![Fix](../assets/fix.svg) Fixed an issue with the `products` GraphQL query where the `title` field for customizable options (`inputOptions` and `options`) incorrectly returned `null` instead of the option's own title when the option's `sku` field was empty or not indexed. <!--DATA-7304-->
@@ -448,7 +452,7 @@ For details and examples, see [Catalog Service and API Mesh](mesh.md).
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) is now available for data streams (Product Recommendations, Live Search, Catalog Service). Requires `catalog-service` metapackage v3.1.0+.
+![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) is now available for data streams (Product Recommendations, Live Search, Catalog Service). Requires `catalog-service` metapackage v3.1.0+.
 
 **Release date**: February 13, 2024
 <!-- v1.16 -->
@@ -620,6 +624,16 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 - For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
 
+### v3.6.0 release
+
+**Release date**: August 31, 2026
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) **Customizable options export**—Updated the Catalog Service metapackage dependencies to include the Customizable Options Data Exporter module (`magento/module-customizable-options-data-exporter`). This module exports a product's Adobe Commerce customizable options—both selectable options (drop-down, radio button, checkbox, multiple select) and shopper-input options (text field, text area, file, date, date and time, time)—so they propagate to the SaaS catalog consumed by Catalog Service. <!--DATA-7366-->
+
+![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
+
 ### v3.5.0 release
 
 **Release date**: July 10, 2026
@@ -693,9 +707,9 @@ Whenever you use Composer to upgrade the `magento/catalog-service`, the installe
 
   - [Catalog Service Guide](overview.md)
   - [Catalog Service GraphQL API Reference](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Adobe Commerce Admin Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Adobe Commerce as a Cloud Service Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [Adobe Commerce on Cloud Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Adobe Commerce Admin Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+  - [Adobe Commerce as a Cloud Service Guide](../cloud-service/overview.md)
+  - [Adobe Commerce on Cloud Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 
 - For projects using **Adobe Commerce Optimizer** or **Adobe Commerce Optimizer Connector**, see the following documentation:
 

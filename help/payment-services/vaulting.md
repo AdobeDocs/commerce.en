@@ -67,10 +67,10 @@ You can only use vaulted cards in the Admin if the customer has both an existing
 
 To create an order in the Admin for a customer using their vaulted credit card:
 
-1. [Create an order and add products](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. [Create an order and add products](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
 1. In _[!UICONTROL Payment & Shipping Information]_, select **[!UICONTROL Stored Cards]** as the payment method.
 1. Select the desired vaulted credit card payment method.
-1. After completing any other necessary steps for the order, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. After completing any other necessary steps for the order, [submit it](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Use vaulted credit card in Admin for customer](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

@@ -2,8 +2,65 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 14 15:40:06 2026
+updated: Fri Aug 28 15:40:11 2026
 entries:
+- description: Updating the [Live Search extension](https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes)
+    to 4.7.3 to address an issue where the Add to Cart functionality on the Product
+    Listing Page did not work with the PLP Widget in certain isolated cases.
+  versions: ''
+  type: feedback
+  date: August 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/736
+  merge_commit: '01028c8645f0d8ef868aacbaf14e34595bc5ccc1'
+  contributor: emarr_adobe
+  labels:
+  - editorial
+  - feedback
+  - release-notes
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: August 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/740
+  merge_commit: e91727732882ce6a990068bf2bd3c4dc9fc69370
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: August 25, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/731
+  merge_commit: 452a47d6769d90449ece9fe171a01a36df45324d
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: August 18, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/717
+  merge_commit: 1291cadbeca63d454eabab31c415b2d037d280ba
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: Adobe Commerce Optimizer now limits a private catalog view to a single
+    price book. Learn more in [Private catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views),
+    [Catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view),
+    and [Price books](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+  versions: ''
+  type: major-update
+  date: August 18, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/722
+  merge_commit: b6613edbf84681a860b9c71a07f43a7df40e8784
+  contributor: meker_adobe
+  labels:
+  - major-update
 - description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''

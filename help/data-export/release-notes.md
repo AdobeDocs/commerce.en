@@ -51,6 +51,14 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.4.32 Release
+
+_August 25, 2026_
+
+![New](../assets/new.svg) **Customizable options included in the product feed**–Product customizable options, such as color swatches, size selections, or personalization fields, are now exported as a `customizable_options` product attribute. The attribute includes each option's title, whether it's required, and its available values, so connected Commerce services can display accurate customizable option data on the storefront. <!--MDEE-1029-->
+
+![Fix](../assets/fix.svg) **Reliable category permissions sync**–Fixed an issue where the category permissions feed failed to fully resync for configurations missing a website ID, resulting in sync errors. <!--MDEE-1411-->
+
 ### 103.4.31 Release
 
 _August 7, 2026_
@@ -192,7 +200,7 @@ _November 24, 2025_
 
 _October 22, 2025_
 
-![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from [!DNL Adobe Commerce] to connected services ([!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) in the *Commerce Admin Guide*. <!--MDEE-954-->
+![New](../assets/new.svg) Added support for the Data Feed Sync Status extension to monitor and troubleshoot data transfers from [!DNL Adobe Commerce] to connected services ([!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]). For details on installing and using this extension, see [Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the *Commerce Admin Guide*. <!--MDEE-954-->
 
 ### 103.4.14 Release
 

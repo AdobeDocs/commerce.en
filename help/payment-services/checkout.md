@@ -17,7 +17,7 @@ An error message displays on the checkout page for the shopper. The message may 
 
 ![Error while checking](assets/user-checkout-error.png "Error while checking out"){width="600" zoomable="yes"}
 
-A comment regarding the canceled order also displays in the Admin for a specific [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+A comment regarding the canceled order also displays in the Admin for a specific [order](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en).
 
 ![Canceled order comment in Admin for order](assets/admin-checkout-error.png "Canceled order comment in Admin for order"){width="600" zoomable="yes"}
 

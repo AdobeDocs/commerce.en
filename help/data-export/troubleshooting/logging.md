@@ -151,7 +151,7 @@ If data is missing or incorrect in Commerce Services, check the logs for message
 - The Data Export error log (`commerce-data-export-errors.log`) captures errors that occur during the collection phase.
 - The SaaS Export error log (`saas-export-errors.log`) captures errors that occur during the transmission phase.
 
-If you see errors not related to configuration or third-party extensions, submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) with as much information as possible.
+If you see errors not related to configuration or third-party extensions, submit a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) with as much information as possible.
 
 ### Resolve catalog sync issues {#resolvesync}
 
