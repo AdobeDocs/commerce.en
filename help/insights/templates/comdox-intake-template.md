@@ -15,8 +15,7 @@ in the brackets, and delete this comment.
 
 Link to create ticket:
 
-https://jira.corp.adobe.com/secure/CreateIssueDetails!init.jspa?pid=82404&issuetype=3
-
+[Internal link: create a COMDOX JIRA ticket in the corporate tracker]
 ## Header information
 
 Summary:  Add Commerce Insights article for ...
