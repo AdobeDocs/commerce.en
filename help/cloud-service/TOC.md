@@ -37,7 +37,7 @@ product_v2:
       - [Run a bulk data migration](migration/bulk-data/migration-guide.md)
       - [Video walkthrough](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Migration Assessment Tool](migration/assessment.md)
-    - [Coding tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+    - [Coding tools](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc} [Documentation RAG service](migration/doc-rag.md)
 - [Login as a customer](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Gift card account REST endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
