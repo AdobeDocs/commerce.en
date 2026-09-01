@@ -55,7 +55,7 @@ Updates include:
 
 _September 1, 2026_
 
-![Fix](../assets/fix.svg) **Faster resyncs for multi-store-view catalogs**–The products and categories feeds now filter by store view before extracting data, instead of extracting every store view and discarding the irrelevant results afterward. This update significantly improving resync performance for catalogs with many store views, especially when using Adobe Commerce Optimizer. <!--MDEE-1441-->
+![Fix](../assets/fix.svg) **Faster resyncs for multi-store-view catalogs**–The products and categories feeds now filter by store view before extracting data, instead of extracting every store view and discarding the irrelevant results afterward. This update significantly improves resync performance for catalogs with many store views, especially when using Adobe Commerce Optimizer. <!--MDEE-1441-->
 
 ### 103.4.32 Release
 
