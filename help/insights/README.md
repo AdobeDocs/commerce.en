@@ -13,7 +13,7 @@ Commerce Insights articles are owned by the publishing author or team who is res
 
 ## What belongs in Commerce Insights
 
-- **Belongs here**: Strategic guidance and whitepapers for Commerce Solutions that covers implementation guidance based on real world scenarios. Include links to relevant Commerce documentation pages for support.
+- **Belongs here**: Strategic guidance and whitepapers for Commerce Solutions that cover implementation guidance based on real world scenarios. Include links to relevant Commerce documentation pages for support.
 
 - **Belongs in the product repo instead**: step-by-step configuration, tutorials, reference material (API/CLI/config reference), and troubleshooting. If a post here starts accumulating that kind of detail, move it to the relevant product guide and link to it instead.
 
