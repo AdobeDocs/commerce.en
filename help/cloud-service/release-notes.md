@@ -156,11 +156,11 @@ This rule allows you to add a free gift product to the cart when the rule condit
 
 You can now set the time of day you want a [cart price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
 
-<!-- commenting this out until the B2B compatibility package version is live. 
+<!-- commenting this out until the B2B compatibility package version is live. -->
 
-### Use a temporary shipping address at B2B checkout
+<!-- ### Use a temporary shipping address at B2B checkout -->
 
-B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
 
 ### Record order edits in the order history
 
