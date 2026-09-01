@@ -51,6 +51,15 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.4.33 Release
+
+_September 1, 2026_
+
+Fix integration tests for old phpunit by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/581
+![Fix](../assets/fix.svg) Iterate products/categories feed extraction per store view. <!--MDEE-1441-->
+Fix integration tests for old phpunit by @duhon in https://github.com/magento-commerce/commerce-data-export-ee/pull/162
+Fix integration tests for old phpunit by @duhon in https://github.com/magento-commerce/saas-export/pull/199
+
 ### 103.4.32 Release
 
 _August 25, 2026_
