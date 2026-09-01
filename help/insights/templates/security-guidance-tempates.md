@@ -6,7 +6,7 @@ recommendations: noCatalog
 ---
 
 <!--
-Save this file at the  help//insights/security/<slug>.md,
+Save this file at help/insights/security/<slug>.md,
 fill in the sections below, then add it to TOC.md under "Guidance & insights".
 Delete this comment block and the bracketed placeholders before publishing.
 See help/information-center/governance.md for what belongs in this section.
