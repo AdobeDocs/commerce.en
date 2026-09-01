@@ -29,13 +29,4 @@ Once the ticket is scoped, start the article from a template in `templates/` (`w
 
 ## Review cadence
 
-Review article content on a when new Commerce Solutions are renamed or updated, or insights are no longer relevant.
-
-## Relationship to help/landing/
-
-`help/landing/` ("Adobe Commerce Services Guides") is a separate, pre-existing guide and is out of scope for this build. Its content is scoped narrowly to Catalog Service/Live Search/Product Recommendations-style services and doesn't reflect ACCS or ACO. Rescoping or consolidating it with the Information Center is a follow-up decision, not something this guide's governance model resolves.
-
-
-
-
-New Guidance & Insights content type (white paper, security guidance, best practice, etc.): start from a template in templates/ (whitepaper-template.md, security-guidance-template.md—not published, copy the relevant one into the target file and delete the template's own frontmatter placeholder comments). Add a TOC.md entry once the content is ready to publish.
+Review article content when new Commerce Solutions are renamed or updated, or insights are no longer relevant.
