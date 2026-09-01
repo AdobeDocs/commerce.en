@@ -29,15 +29,15 @@ topic_v2:
 
 With [!DNL Live Search], you can:
 
-- To help customers find what they want with as little effort as possible, create meaningful search experiences.
+- Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
 - Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
-- To ensure that high-intent queries return the most relevant products first, prioritize **exact and near matches** and same-field matches. For details, see *[Search matching and ranking](search-relevance-matching.md)*.
+- Prioritize **exact and near matches** and same-field matches to ensure that high-intent queries return the most relevant products first. For details, see *[Search matching and ranking](search-relevance-matching.md)*.
 - Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing the total cost of ownership.
 - Get technical by enabling GraphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
 >[!IMPORTANT]
 >
->Regarding site search, Adobe Commerce gives you options. To ensure that [!DNL Live Search] is a fit for your business needs, review the [Boundaries and Limits](boundaries-limits.md) information before implementation.
+>To ensure that [!DNL Live Search] is a fit for your business needs, review the [Boundaries and Limits](boundaries-limits.md) information before implementation.
 
 ## Architecture
 
