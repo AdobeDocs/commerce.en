@@ -24,11 +24,11 @@ topic_v2:
 ---
 # Product Recommendations Administrator Development
 
-Product Recommendations are a powerful marketing tool you can use to increase conversions, boost revenue, and stimulate shopper engagement. Product Recommendations are surfaced on the storefront in the form of units such as "Customers who viewed this product also viewed", "Customers who bought this product also bought", "Recommended for you", and so on. Adobe Commerce Product Recommendations are powered by [Adobe AI](https://business.adobe.com/ai.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated shopper data. This data, when combined with your Commerce catalog, results in highly engaging, relevant, and personalized experiences for the shopper.
+Product Recommendations are a powerful marketing tool you can use to increase conversions, boost revenue, and stimulate shopper engagement. Product Recommendations are surfaced on the storefront in the form of units such as "Customers who viewed this product also viewed," "Customers who bought this product also bought," "Recommended for you," and so on. [Adobe AI](https://business.adobe.com/ai.html) powers Adobe Commerce Product Recommendations, which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated shopper data. This data, when combined with your Commerce catalog, results in highly engaging, relevant, and personalized experiences for the shopper.
 
 >[!NOTE]
 >
->If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate Product Recommendations in a [headless](headless.md) environment. Headless instances must implement eventing to power the Product Recommendation workspace.
+>If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). To learn how to integrate Product Recommendations in a [headless](headless.md) environment if you use a custom frontend technology such as React or Vue JS, refer to the user guide. Headless instances must implement eventing to power the Product Recommendation workspace.
 
 ## Architectural overview
 
@@ -36,7 +36,7 @@ At a high level, Commerce Product Recommendations are deployed as SaaS. The Comm
 
   ![Product recommendations architecture diagram](assets/arch-diag-sensei.svg)
 
-Once the recommendation modules are installed and configured, your storefront will begin collecting behavioral data. Adobe AI processes this behavioral data along with your catalog data and calculates product associations that are leveraged by the recommendations service. At this point, the merchant can create, manage, and deploy product recommendation units to their storefront directly from the Admin UI.
+Once the recommendation modules are installed and configured, your storefront begins collecting behavioral data. Adobe AI processes this behavioral data along with your catalog data and calculates product associations that the recommendations service leverages. At this point, the merchant can create, manage, and deploy product recommendation units to their storefront directly from the Admin UI.
 
 ## Next steps
 

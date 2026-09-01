@@ -22,7 +22,7 @@ topic_v2:
 ---
 # Recommendation Types
 
-Adobe Commerce provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. They are powered by behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
+Adobe Commerce provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. Behavioral data, product attribute data, and metrics power them. For easy reference, recommendation types are grouped as follows:
 
 - [Personalized](#personalized)
 - [Cross-sells and up-sells](#crossup)
@@ -35,7 +35,7 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 - Do not deploy the same recommendations to your cart page and order confirmation page. Consider using `Most Added to Cart` for the cart page and `Bought This, Bought That` for the order confirmation page.
 
-- Keep your site tidy. Do not deploy more than three recommendation units on the same page.
+- Maintain your site configuration. Do not deploy more than three recommendation units on the same page.
 
 - If your store sells clothing, the `More like this` recommendation can suggest gender-specific products that do not match the gender of the product being viewed. Consider using this recommendation type only for non-clothing categories.
 
@@ -49,7 +49,7 @@ Product Recommendations is a data-driven system that relies on behavioral data c
 
 >[!IMPORTANT]
 >
->Most recommendation types require sufficient behavioral data (such as product views, add-to-cart actions, and purchases) to generate meaningful results. The system typically needs several days of active shopper activity to build accurate recommendations. See [readiness indicators](create.md#readiness-indicators) to learn how site traffic helps to populate the various recommendation types.
+>Most recommendation types require sufficient behavioral data (such as product views, add-to-cart actions, and purchases) to generate meaningful results. The system typically needs several days of active shopper activity to build accurate recommendations. To learn how site traffic helps to populate the various recommendation types, see [readiness indicators](create.md#readiness-indicators).
 
 ### What happens with insufficient data
 
@@ -61,11 +61,11 @@ When there is not enough event data to generate recommendations, the system can:
 
 ## Personalized {#personalized}
 
-These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed for a jacket or purchased a jacket on your site, these recommendations essentially pick up where they left off and recommend other jackets or similar products.
+These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed or purchased a jacket on your site, these recommendations continue from their previous activity and recommend other jackets or similar products.
 
 >[!NOTE]
 >
->Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history will see [backup recommendations](events.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
+>Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history see [backup recommendations](events.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
 
 |Type|Description|
 |---|---|
@@ -74,7 +74,7 @@ These recommendation types recommend products based on the specific shopper's be
 
 ## Cross-sells and up-sells {#crossup}
 
-These recommendation types are social-proof driven to help shoppers find what others liked or product-driven to help them find other similar products. The recommended products often complement the selected product.
+These recommendation types are social-proof driven to help shoppers find what others liked. They are also product-driven to help them find other similar products. The recommended products often complement the selected product.
 
 ### Page context for recommendations
 
@@ -82,15 +82,15 @@ Cross-sell and up-sell recommendation types use the context of the page where th
 
 - **Product detail page** — Uses the SKU of the product the shopper is viewing.
 - **Cart page** — Uses the SKUs of products in the shopper's cart.
-- **Order confirmation page** — Uses the SKUs from the purchase the shopper just completed.
+- **Order confirmation page** — Uses the SKUs from the purchase the shopper completed.
 
 The same recommendation type can produce different results depending on where you deploy it. For example, *Viewed this, viewed that* on a product detail page uses the viewed product as context. On the cart page, it uses cart contents. On the order confirmation page, it uses the completed order.
 
 >[!NOTE]
 >
->The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types do not use a simple-occurrence metric but rather a more sophisticated collaborative-filtering algorithm that looks for *interesting similarities* that are not skewed towards popular products. The data used to inform these recommendation types is based on the shopper's aggregate behavior derived from multiple sessions on your site. The data is not based on shopper behavior derived from a single in-session occurrence on your site. These recommendation types help shoppers find those adjacent products that might not be obvious to pair with the currently viewed product.
+>The "viewed this, viewed that," "viewed this, bought that," and "bought this, bought that" recommendation types use a sophisticated collaborative-filtering algorithm that identifies *interesting similarities* not skewed towards popular products. The data used to inform these recommendation types is based on the shopper's aggregate behavior derived from multiple sessions on your site. The data is not based on shopper behavior derived from a single in-session occurrence on your site. These recommendation types help shoppers find adjacent products that are not obvious to pair with the currently viewed product.
 >
->These recommendation types require substantial cross-product interaction data to identify meaningful correlations. Stores with limited product catalog diversity or low traffic may see fewer recommendations until sufficient behavioral patterns emerge.
+>These recommendation types require substantial cross-product interaction data to identify meaningful correlations. Stores with limited product catalog diversity or low traffic see fewer recommendations until sufficient behavioral patterns emerge.
 
 |Type|Description|
 |---|---|
@@ -106,7 +106,7 @@ These recommendation types recommend products that are the most popular or trend
 
 >[!NOTE]
 >
->Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types may return limited results or no results until adequate behavioral data has been collected. Monitor your [data readiness indicator](workspace.md) to ensure optimal performance.
+>Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types return limited results or no results until adequate behavioral data has been collected. To ensure optimal performance, monitor your [data readiness indicator](workspace.md).
 
 |Type|Description|
 |---|---|
@@ -121,7 +121,7 @@ These recommendation types recommend top performing products based on success cr
 
 >[!NOTE]
 >
->High-performing recommendation types rely on conversion data (purchases and add-to-cart actions). New stores or stores with low conversion volumes may need to collect data over 7-14 days before these recommendations become effective.
+>High-performing recommendation types rely on conversion data (purchases and add-to-cart actions). New stores or stores with low conversion volumes need to collect data over 7-14 days before these recommendations become effective.
 
 |Type|Description|
 |---|---|
@@ -153,7 +153,7 @@ Adobe AI uses AI to process and analyze the imagery in your catalog and build at
 >
 > Currently, product images must be 10 MB or less in size.
 
-Because this recommendation type is not applicable to most catalogs, it is not enabled by default. You must explicitly enable this recommendation type.
+Because this recommendation type is not applicable to most catalogs, the system does not enable it by default. Explicitly enable this recommendation type.
 
 ### Enable Visual similarity recommendation type
 

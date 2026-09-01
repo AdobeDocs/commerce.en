@@ -49,9 +49,9 @@ Before starting migration:
 
 1. Back up your database and code.
 1. Document current customizations.
-1. Review [Boundaries and Limits](boundaries-limits.md) to ensure that the PLP widget meets your needs.
+1. To ensure that the PLP widget meets your needs, review [Boundaries and Limits](boundaries-limits.md).
 1. Schedule migration during a low-traffic period.
-1. Notify stakeholders of potential changes to storefront behavior.
+1. To prepare stakeholders, notify them of potential changes to storefront behavior.
 
 **Review the current implementation**:
 
@@ -99,7 +99,7 @@ Additional work is required if your implementation has ANY of the following:
 - Custom PLP layouts that override Luma templates.
 - Custom CSS or JavaScript that targets search adapter-specific elements.
 - Custom template modifications to PLP or related files.
-- Theme does not inherit from Luma (for example, custom theme from scratch).
+- Theme does not inherit from Luma (for example, custom theme created independently).
 
 **Custom product attributes**:
 
@@ -135,7 +135,7 @@ For implementations with no special customizations, follow these steps:
 
 ### Step 1: Upgrade [!DNL Live Search]
 
-Upgrade your [!DNL Live Search] extension to version 4.0 or higher to access the PLP widget.
+To access the PLP widget, upgrade your [!DNL Live Search] extension to version 4.0 or higher.
 
 **Role**: Merchant or Partner
 
@@ -151,7 +151,7 @@ Upgrade your [!DNL Live Search] extension to version 4.0 or higher to access the
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. Update `composer.json` to require [!DNL Live Search] 4.0 or higher:
+1. To require [!DNL Live Search] 4.0 or higher, update `composer.json`:
 
    ```json
    "require": {
@@ -184,7 +184,7 @@ Configure the PLP widget in the Commerce Admin.
 
 **Role**: Merchant
 
-The PLP widget is enabled by default for new installations of [!DNL Live Search] 4.0.0+. If upgrading from an earlier version:
+[!DNL Live Search] 4.0.0+ enables the PLP widget by default for new installations. If upgrading from an earlier version:
 
 1. Go to **[!UICONTROL Stores]** > Settings > **[!UICONTROL Configuration]**.
 1. Navigate to **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
@@ -284,7 +284,7 @@ In this scenario, you have custom templates or layouts that override the default
 
 ### Product attributes with custom source models
 
-In this scenario, you have facets that use product attributes with custom source models that are not supported by the search adapter but ARE supported by the PLP widget.
+In this scenario, you have facets that use product attributes with custom source models that the search adapter does not support but the PLP widget DOES support.
 
 **Role**: Merchant (Admin configuration)
 
@@ -370,7 +370,7 @@ In this scenario, you have a headless or PWA storefront that requires custom eve
    - Test event data flows to Adobe Commerce.
 
 1. **Configure facet sorting**:
-   - For headless implementations, facets can be sorted by count.
+   - For headless implementations, you can sort facets by count.
    - Configure in **[!UICONTROL Live Search]** > **[!UICONTROL Facets]** workspace.
    - Set **[!UICONTROL Sort Type]** to **Count** for better UX.
 
@@ -427,20 +427,20 @@ Be aware of these limitations when migrating:
 **Feature differences from search adapter**:
 
 - **Color swatches**: The `color` attribute must be spelled exactly as `color` (not "colour" or custom names) for swatches to work properly.
-- **Theme styling**: Custom theme classes are not inherited by the widget; must target widget-specific CSS classes.
+- **Theme styling**: The widget does not inherit custom theme classes; you must target widget-specific CSS classes.
 - **Custom product types**: Not supported in the widget.
 
 **Performance considerations**:
 
-- Large catalogs (50,000+ products) may experience longer initial page loads.
+- Large catalogs (50,000+ products) experience longer initial page loads.
 - Multiple facets with many values can impact performance.
-- Mobile device performance may vary based on catalog size.
+- Mobile device performance varies based on catalog size.
 
 **Compatibility issues**:
 
 - Google Tag Manager compatibility issue (see [GTM scenario](#google-tag-manager-gtm-integration)).
-- Some third-party extensions may conflict with the PLP widget.
-- Custom checkout extensions may need updates.
+- Some third-party extensions conflict with the PLP widget.
+- Custom checkout extensions require updates.
 
 ## Getting help
 
@@ -462,7 +462,7 @@ Contact the appropriate resource based on your specific needs.
 - Headless or PWA implementations
 - Custom event tracking
 
-To contact Adobe Support, see the [Help Center User Guide](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+To contact Adobe Support, see the [Adobe Help Center User Guide](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQ
 
@@ -486,7 +486,7 @@ A: Yes, all search merchandising rules, synonyms, and facets configured in the [
 
 **Q: Do I need to reconfigure my facets?**
 
-A: Generally no, but if you were limited by custom source model attributes with the search adapter, you can now use them with the PLP widget.
+A: No, but if custom source model attributes limited you with the search adapter, you can now use them with the PLP widget.
 
 **Q: What about my custom CSS?**
 
