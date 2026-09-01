@@ -51,7 +51,7 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _September 1, 2026_
 
-[MDEE] Filter store views before extraction (MDEE-1441) by @mslabko in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/117
+![Fix](../assets/fix.svg) Filter store views before extraction <!--MDEE-1441-->
 
 ### 1.0.16 Release
 
