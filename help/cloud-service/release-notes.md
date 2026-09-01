@@ -154,7 +154,7 @@ This rule allows you to add a free gift product to the cart when the rule condit
 
 ### Schedule cart price rules by date and time
 
-You can now set the time of day you want a [cart price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
+You can now set the time of day you want a [cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
