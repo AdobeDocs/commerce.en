@@ -6,10 +6,10 @@ recommendations: noCatalog
 ---
 
 <!--
-Copy this file into help/information-center/guidance-insights/<slug>.md,
-fill in the sections below, then add it to TOC.md under "Guidance & insights".
+Copy this file into help/insights/<section>/<slug>.md,
+fill in the sections below, then add it to help/insights/TOC.md.
 Delete this comment block and the bracketed placeholders before publishing.
-See help/information-center/governance.md for what belongs in this section.
+See help/insights/README.md for what belongs in Commerce Insights.
 
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
