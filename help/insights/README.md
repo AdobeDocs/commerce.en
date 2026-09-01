@@ -19,7 +19,7 @@ Commerce Insights articles are owned by the publishing author or team who is res
 
 ## Adding new content
 
-Create a COMDOX JIRA ticket for the article to be published. Copy `[templates/comdox-intake-template.md](templates/comdox-intake-template.md)` into the ticket description and fill it in—it asks the requester to identify the audience, flag whether the content is temporary (with an expiration date), and confirm that the belongs in the Insights Guide, and not in the Commerce product documentation.
+Create a COMDOX JIRA ticket for the article to be published. Copy `[templates/comdox-intake-template.md](templates/comdox-intake-template.md)` into the ticket description and fill it in—it asks the requester to identify the audience, flag whether the content is temporary (with an expiration date), and confirm that it belongs in the Insights Guide, and not in the Commerce product documentation.
 
 Once the ticket is scoped, start the article from a template in `templates/` (`whitepaper-template.md`, `security-guidance-template.md`, `insight-perspective-template.md`—not published, copy the relevant one into the target file and delete the template's own frontmatter placeholder comments). Add a `TOC.md` entry once the content is ready to publish.
 
