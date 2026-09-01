@@ -82,21 +82,17 @@ This shared workflow consolidates discovery, aligns engineering and delivery tea
 
 ![migration flow diagram](../assets/migration-flow.png)
 
-### PaaS and SaaS comparison
+### SaaS and PaaS comparison
 
-[!DNL Adobe Commerce on Cloud] or on-premises (PaaS) and [!DNL Adobe Commerce as a Cloud Service] (SaaS) differ in how they are managed and how merchants interact with the platform.
+Adobe Commerce is available in different deployment models. The primary differences are the level of infrastructure management, application control, customization, and upgrade responsibility.
 
-**Key differences**
+[!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce on Cloud], and [!DNL Adobe Commerce on-premises] differ in how they are managed and how merchants interact with the platform.
 
-- [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**: Merchant manages application code, upgrades, patching, and infrastructure configuration.
-- **[!DNL Adobe Commerce] on-premises**: Merchant manages application code, upgrades, patching, infrastructure configuration within Adobe's hosted environment.
-
-  >[!NOTE]
-  >
-  >[Shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) for services (MySQL, Elasticsearch, and others).
-
-- [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} **SaaS (New — [!DNL Adobe Commerce as a Cloud Service])**: Adobe fully manages the core application, infrastructure, and updates. Merchants focus on customization through extensibility points (APIs, App Builder, UI SDKs). Core application code is locked.
+| Adobe Commerce offering | Hosting model | Responsibility for services and updates |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe-hosted | Adobe manages the core Commerce application, infrastructure, and updates. Merchants extend the platform through supported APIs and extensibility services (APIs, [!DNL Adobe Developer App Builder], UI SDKs). Merchants cannot modify core application code. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe-managed | [Shared responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe manages the hosted platform. The merchant manages application-level patches, custom code, configuration, and updates extensions and platform services to supported versions, including: the database, cache, search, PHP runtime, web server, and message queue. |
+| **[!DNL Adobe Commerce on-premises]** | Hosted by the merchant or hosting provider | [Merchant responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): The merchant or its hosting provider manages the infrastructure and all platform services. |
 
 **Architectural implications**
 
@@ -201,7 +197,9 @@ You can also rerun assessments as your applications evolve. This allows your tea
 
 Every [!DNL Adobe Commerce as a Cloud Service] migration begins with an assessment. It is a cost-effective way to establish scope, reduce uncertainty, and create a shared migration blueprint before implementation begins.
 
-For more information on assessment tooling and downstream developer workflow, see [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
+For more information on assessment tooling and downstream developer workflow, see [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+
+For more information on the Commerce Developer Agent, which is integrated with the Migration Assessment Tool, see [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## Code and storefront migration (Commerce Developer MCP)
 
@@ -274,7 +272,9 @@ The MCP does not handle data migration. Business data is migrated through the [C
 
 Code and storefront modernization begin once the Migration Assessment Tool roadmap has established migration scope and priorities.
 
-For more information on how to install and use the MCP, see the [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/) documentation.
+For more information on how to install and use the MCP, see the [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/) documentation.
+
+For more information on the Commerce Developer Agent, which is integrated with the Migration Assessment Tool, see [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## Data migration (Commerce Data Migration Service)
 
