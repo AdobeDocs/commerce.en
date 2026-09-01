@@ -1,3 +1,10 @@
+---
+title: "Title Case, max 60 chars, no product name suffix"
+description: "150-160 chars. Concept pages start with 'Learn about...'"
+role: Admin, Developer, Leader
+recommendations: noCatalog
+---
+
 <!--
 Not a content template—this is the intake questionnaire for the COMDOX
 ticket itself. Copy the section below into the ticket description, fill
