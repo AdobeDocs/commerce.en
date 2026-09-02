@@ -74,7 +74,7 @@ These subcategories now inherit that rule from the parent category ("Yes" in the
 
 Each category or subcategory can have up to one Intelligent ranking applied at a time. It can also have one or more Manual rankings applied simultaneously.
 
-If you apply an Intelligent ranking to a category and turn on the **Apply intelligent ranking to subcategories** option, any Intelligent ranking already applied to the subcategories is overwritten.
+If you apply an Intelligent ranking to a category and enable [!UICONTROL Apply intelligent ranking to subcategories], the category's Intelligent ranking replaces any Intelligent rankings already applied to its subcategories.
 
 ![Overwritten subcategory list](assets/category_overwite_subs.png){width="700"}
 
@@ -87,7 +87,7 @@ When adding an Intelligent ranking directly to a category that has an inherited 
 When deleting the Intelligent ranking from the category, the inheritance is re-established.
 In both scenarios, any Manual rankings are maintained.
 
-If you remove an Intelligent ranking from a category, and the subcategory inheritance is selected, only the inherited Intelligent rankings are removed from the subcategories. Manual rankings are not subject to inheritance and remain.
+If you remove an Intelligent ranking from a category while [!UICONTROL Apply intelligent ranking to subcategories] is enabled, only the Intelligent rankings inherited by its subcategories are removed. Any Manual rankings remain because they are not inherited.
 
 A dialog appears explaining which inherited subcategories are affected by any changes you make to a higher-level category.
 
@@ -141,7 +141,9 @@ Events are actions that modify the search results when defined conditions are me
 
 Create a manual ranking:
 
-1. Set up an Intelligent ranking rule for a category as described above. The results of the query appear in the Preview Category Page view. This uses your actual Live Search data to preview the results.
+1. Set up an Intelligent ranking rule for a category as described above.
+
+   The results of the query appear in the Preview Category Page view. This uses your actual Live Search data to preview the results.
 
 1. Click and drag a product in the Preview Category Page view. Drag and drop it at the desired position. The Product and Position fields are automatically populated in the Events pane.
   

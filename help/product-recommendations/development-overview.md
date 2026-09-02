@@ -36,7 +36,7 @@ At a high level, Commerce Product Recommendations are deployed as SaaS. The Comm
 
   ![Product recommendations architecture diagram](assets/arch-diag-sensei.svg)
 
-Once the recommendation modules are installed and configured, your storefront begins collecting behavioral data. Adobe AI processes this behavioral data along with your catalog data and calculates product associations that the recommendations service leverages. At this point, the merchant can create, manage, and deploy product recommendation units to their storefront directly from the Admin UI.
+Once installed and configured, the recommendation modules enable your storefront to collect behavioral data. Adobe AI combines this data with your catalog data to calculate product associations used by the Recommendations service. You can then create, manage, and deploy product recommendation units directly from the Admin UI.
 
 ## Next steps
 

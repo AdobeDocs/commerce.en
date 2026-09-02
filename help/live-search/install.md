@@ -431,9 +431,9 @@ As [!DNL Live Search] does not have access to the complete product database, the
 Adobe recommends calling the SaaS APIs directly — specifically the Catalog Service endpoint.
 
 - Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
-- To gain performance and reduce processor load, call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint using the [!DNL Catalog Service] federation.
+- To gain performance and reduce processor load, call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint using [!DNL Catalog Service] federation.
 
-For some use cases, call [!DNL Catalog Service] for product details and similar cases. See [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) for more information.
+For some use cases, it may be better to call the [!DNL Catalog Service] for product details and similar scenarios. See the [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) GraphQL query for more information.
 
 If you have a custom headless implementation, check out the [!DNL Live Search] reference implementations:
 

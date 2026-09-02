@@ -88,7 +88,7 @@ The same recommendation type can produce different results depending on where yo
 
 >[!NOTE]
 >
->The "viewed this, viewed that," "viewed this, bought that," and "bought this, bought that" recommendation types use a sophisticated collaborative-filtering algorithm that identifies *interesting similarities* not skewed towards popular products. The data used to inform these recommendation types is based on the shopper's aggregate behavior derived from multiple sessions on your site. The data is not based on shopper behavior derived from a single in-session occurrence on your site. These recommendation types help shoppers find adjacent products that are not obvious to pair with the currently viewed product.
+>The "viewed this, viewed that," "viewed this, bought that," and "bought this, bought that" recommendation types use a sophisticated collaborative-filtering algorithm to identify _interesting similarities_ without overemphasizing popular products. The algorithm uses shoppers' aggregate behavior across multiple sessions on your site rather than behavior from a single in-session interaction. These recommendation types help shoppers discover related products that may not be obvious pairings with the product they're viewing.
 >
 >These recommendation types require substantial cross-product interaction data to identify meaningful correlations. Stores with limited product catalog diversity or low traffic see fewer recommendations until sufficient behavioral patterns emerge.
 

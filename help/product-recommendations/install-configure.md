@@ -66,7 +66,7 @@ See [Using [!DNL Product Recommendations] with Page Builder Content](page-builde
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 
-The _Visual similarity_ recommendation type allows you to deploy a recommendation unit to your product detail page. It displays products that are [visually similar](type.md#visualsim) to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience. Install the _Visual similarity_ recommendation type by running the following command:
+The _Visual similarity_ recommendation type displays products [visually similar](type.md#visualsim) to the product viewed on a product detail page. It is most useful when product images and appearance are important to the shopping experience. To install it, run the following command:
 
 ```bash
 composer require magento/module-visual-product-recommendations

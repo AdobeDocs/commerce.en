@@ -99,7 +99,7 @@ Additional work is required if your implementation has ANY of the following:
 - Custom PLP layouts that override Luma templates.
 - Custom CSS or JavaScript that targets search adapter-specific elements.
 - Custom template modifications to PLP or related files.
-- Theme does not inherit from Luma (for example, custom theme created independently).
+- Theme does not inherit from Luma (for example, the custom theme is created independently).
 
 **Custom product attributes**:
 
@@ -284,7 +284,7 @@ In this scenario, you have custom templates or layouts that override the default
 
 ### Product attributes with custom source models
 
-In this scenario, you have facets that use product attributes with custom source models that the search adapter does not support but the PLP widget DOES support.
+In this scenario, the facets are based on product attributes with custom source models. Although the search adapter does not support these source models, the PLP widget does.
 
 **Role**: Merchant (Admin configuration)
 
@@ -427,7 +427,7 @@ Be aware of these limitations when migrating:
 **Feature differences from search adapter**:
 
 - **Color swatches**: The `color` attribute must be spelled exactly as `color` (not "colour" or custom names) for swatches to work properly.
-- **Theme styling**: The widget does not inherit custom theme classes; you must target widget-specific CSS classes.
+- **Theme styling**: The widget does not inherit custom theme classes. You must target widget-specific CSS classes.
 - **Custom product types**: Not supported in the widget.
 
 **Performance considerations**:
@@ -486,7 +486,7 @@ A: Yes, all search merchandising rules, synonyms, and facets configured in the [
 
 **Q: Do I need to reconfigure my facets?**
 
-A: No, but if custom source model attributes limited you with the search adapter, you can now use them with the PLP widget.
+ A: No. You can continue using your existing facet configuration. However, if the search adapter previously limited your use of product attributes with custom source models, you can now use those attributes with the PLP widget.
 
 **Q: What about my custom CSS?**
 

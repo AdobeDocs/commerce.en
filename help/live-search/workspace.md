@@ -79,13 +79,15 @@ The following attributes are always searchable:
 
 >[!TIP]
 >
->Choosing which attributes to make searchable has a significant impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the Best Practices guide for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
+>Choosing which attributes to make searchable has a significant impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the _Best Practices Guide_ for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
 
 ### Attribute behavior in complex products
 
 For complex product types (configurable, bundle, and grouped products), [!DNL Live Search] indexes attribute values from both parent and child products, allowing a parent product to be associated with multiple values for the same attribute. This enables variant-based filtering; for example, a configurable shirt appears when filtering by "blue" if any variant is blue, even if the parent product does not have a color set.
 
-This works well for attributes like color and size, but can cause unexpected results for attributes like `new_arrival`, `product_ranking`, `promotion_label`, or custom prices. For example, if a configurable product (SKU-001) has `new_arrival = true` but its child variant (SKU-001-01) has `new_arrival = false`, the parent product SKU-001 is indexed with both values. This allows it to appear in search results for either condition.
+This behavior works well for attributes such as color and size, but it can produce unexpected results for attributes that describe the product as a whole, such as `new_arrival`, `product_ranking`, `promotion_label`, and custom prices.
+
+For example, suppose the configurable product (SKU-001) has `new_arrival = true`, while its child variant SKU-001-01 has `new_arrival = false`. When variant values are aggregated for the parent product, SKU-001 is indexed with both `new_arrival = true` and `new_arrival = false`. As a result, the parent product can appear in search results for either value, even though each value applies to a different variant.
 
 ### Layered search and expansion of search types
 
@@ -134,7 +136,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
 
-    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer," "Part Number," and "Description." From there, they search within those attributes using the `contains` or `startsWith` conditions.
+    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions.
 
 ### When to use layered search rather than facets
 
@@ -168,7 +170,7 @@ Facets and synonyms are another way you can enhance the search experience for yo
 >
 >A product attribute is filterable only if it has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#step-1-add-a-facet).
 
-[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks." You can set synonyms so that these search terms get users to the "pants" results.
+[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms get users to the "pants" results.
 
 ## Commerce configuration settings
 
@@ -178,7 +180,7 @@ The following section describes the supported and unsupported Commerce configura
 
 >[!IMPORTANT]
 >
->It is highly recommended you use the product listing widgets, enabled by default in Live Search 4.0.0. The widgets are targeted to replace adapter implementation in future releases. To learn more, see [enable product listing widgets](install.md#enable-product-listing-widgets).
+>Adobe recommends that you use the product listing widgets, enabled by default in Live Search 4.0.0. The widgets are targeted to replace adapter implementation in future releases. To learn more, see [enable product listing widgets](install.md#enable-product-listing-widgets).
 
 |Commerce Configuration Setting|Description|Supported by Popover|Supported by Adapter|
 |---|---|---|---|

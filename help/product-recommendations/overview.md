@@ -29,7 +29,7 @@ topic_v2:
 ---
 # What are [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] help you show personalized product recommendations on Adobe Commerce storefronts using [Adobe AI](https://business.adobe.com/ai.html) and machine learning on aggregated shopper behavior and your catalog. This overview covers service constraints (including HIPAA), data privacy, recommendation unit locations, storefront implementation paths, product relationship integration, and catalog data retention.
+ [!DNL Product Recommendations] use [Adobe AI](https://business.adobe.com/ai.html) and machine learning trained on aggregated shopper behavior and catalog data to deliver personalized recommendations on Adobe Commerce storefronts. This overview covers service constraints (including HIPAA), data privacy, recommendation unit placement, storefront implementation options, product relationship integration, and catalog data retention.
 
 >[!IMPORTANT]
 >

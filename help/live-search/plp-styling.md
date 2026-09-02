@@ -28,7 +28,9 @@ When the [!DNL Live Search] service is installed, the default search functionali
 
 New installations enable the [!DNL Live Search] PLP widget by default. 
 
-If you are upgrading [!DNL Live Search] and the PLP widget is already turned off, it remains so. 
+If you upgrade [!DNL Live Search] while the PLP widget is disabled, it remains disabled after the upgrade.
+
+
 
 >[!NOTE]
 >
