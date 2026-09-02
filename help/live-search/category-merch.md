@@ -72,7 +72,7 @@ When selecting an Intelligent ranking method for a category or subcategory that 
 
 These subcategories now inherit that rule from the parent category ("Yes" in the Inherited Ranking column). In the Action column, the only available options are **Edit Rule**, and **View Details**. The **Delete** option is disabled for inherited rules on subcategories. Deleting subcategory inheritance requires undoing inheritance from the parent category.
 
-Any category or subcategory can have only one Intelligent ranking applied at any one time. They can have additional Manual rankings applied as well.
+Each category or subcategory can have up to one Intelligent ranking applied at a time. It can also have one or more Manual rankings applied simultaneously.
 
 If you apply an Intelligent ranking to a category and turn on the **Apply intelligent ranking to subcategories** option, any Intelligent ranking already applied to the subcategories is overwritten.
 
