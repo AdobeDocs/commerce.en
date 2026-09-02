@@ -66,7 +66,7 @@ See [Using [!DNL Product Recommendations] with Page Builder Content](page-builde
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 
-The _Visual similarity_ recommendation type allows you to deploy a recommendation unit to your product detail page that displays products that are [visually similar](type.md#visualsim) to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience. Install the _Visual similarity_ recommendation type by running the following command:
+The _Visual similarity_ recommendation type displays products [visually similar](type.md#visualsim) to the product viewed on a product detail page. It is most useful when product images and appearance are important to the shopping experience. To install it, run the following command:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -76,11 +76,11 @@ composer require magento/module-visual-product-recommendations
 
 1. After you install the `magento/product-recommendations` module, configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
 
-   Configuring this connection enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. Data synchronization is handled by the [SaaS Data Export extension](../data-export/overview.md).
+   Configuring this connection enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. The [SaaS Data Export extension](../data-export/overview.md) handles data synchronization.
 
 1. To ensure that catalog export can run correctly, confirm that the [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) jobs and the [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) are running and the `Product Feed` indexer is set to `Update by Schedule`.
 
-After you successfully link the Commerce application to Commerce Services and specify the [SaaS Data Space](../landing/saas.md#saas-configuration), the catalog sync begins. You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) that behavioral data is being sent to your storefront.
+After you successfully link the Commerce application to Commerce Services and specify the [SaaS Data Space](../landing/saas.md#saas-configuration), the catalog sync begins. You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) that behavioral data is being sent to your storefront.
 
 ## Monitor and troubleshoot data synchronization
 
@@ -106,7 +106,7 @@ To update to a major version, such as from 5.0 to 6.0, you must edit the root `c
 }
 ```
 
-Let's bump the major version from `5.0` to `6.0`:
+Update the major version from `5.0` to `6.0`:
 
 ```json
 "require": {
