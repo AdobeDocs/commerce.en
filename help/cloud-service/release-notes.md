@@ -64,7 +64,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-The following items will be published to Production on September 1, 2026.
+The following items will be published to Production on September 8, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -132,7 +132,7 @@ Company Address Books now integrate with additional B2B workflows. Companies tha
 * Negotiable quotes
 * Quote templates
 
-For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.24** section.
+For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -151,6 +151,24 @@ The **Free Gift** cart price rule is now available in the [!DNL Commerce Admin] 
 This rule allows you to add a free gift product to the cart when the rule conditions are met.
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### Schedule cart price rules by date and time
+
+You can now set the time of day you want a [cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### Record order edits in the order history
+
+>[!IMPORTANT]
+>
+>This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+When an order is edited, Commerce can now add a human-readable comment to the history of the new order that summarizes what changed relative to the order it replaced. <!-- ACCS-1157 -->
 
 ### Enhancements and bug fixes
 
@@ -173,6 +191,12 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where category image URLs were broken in the category data export feed. <!-- ACCS-1571 -->
 
 * Fixed an issue where concurrently assigning or unassigning products across different shared catalogs could intermittently fail. <!-- CCSAAS-5287 -->
+
+* Setting **Use in Search Options** to No, keeps the attribute visible as a grid column, but does not count toward the 16-column limit. <!-- CCSAAS-5370 -->
+
+* Resolved an issue that could impact Admin navigation. <!-- CCSAAS-5232 -->
+
+* Fixed an issue empty carts could report non-zero totals. <!-- ACCS-1730 -->
 
 {{accs-release}}
 
