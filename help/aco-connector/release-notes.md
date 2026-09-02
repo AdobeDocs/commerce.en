@@ -47,6 +47,13 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.1.0 Release
+
+_September 2, 2026_
+
+![Fix](../assets/fix.svg) Feed Status mapper does not support new category attribute…. <!--MDEE-1417-->
+![Fix](../assets/fix.svg) Category Attribute - MDEE - Export category attributes and all metadata. <!--MDEE-1373-->
+
 ### 1.0.17 Release
 
 _September 1, 2026_
