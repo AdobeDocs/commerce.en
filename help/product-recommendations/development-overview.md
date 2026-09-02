@@ -28,7 +28,7 @@ Product Recommendations are a powerful marketing tool you can use to increase co
 
 >[!NOTE]
 >
->If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). To learn how to integrate Product Recommendations in a [headless](headless.md) environment if you use a custom frontend technology such as React or Vue JS, refer to the user guide. Headless instances must implement eventing to power the Product Recommendation workspace.
+>If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Learn how to integrate Product Recommendations in a [headless](headless.md) environment if you use a custom frontend technology such as React or Vue JS. Headless instances must implement eventing to power the Product Recommendation workspace.
 
 ## Architectural overview
 

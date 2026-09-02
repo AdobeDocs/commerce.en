@@ -120,7 +120,9 @@ The advanced search capabilities are implemented through the `filter` parameter 
 
     - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
 
-        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+        >[!NOTE]
+        >
+        >This search type differs from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase), which supports autocomplete by matching the beginnings of words. For example, if a product attribute value is "outdoor pants", a phrase search returns results for "out pan" because "out" and "pan" match the beginnings of words in the value. It does not return results for "oor ants" because those strings occur within the words. A contains search matches text anywhere within a word, so it returns results for "oor ants".
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
