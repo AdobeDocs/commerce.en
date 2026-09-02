@@ -43,7 +43,7 @@ Updates include:
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-See the developer documentation to [learn about product support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+[Learn more about product support](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Hosted service updates
 
@@ -55,7 +55,7 @@ _April 28, 2026_
 
 _February 19, 2026_
 
-![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order that the products were viewed.
+![Fix](../assets/fix.svg) Fixed an issue where products displayed in the _Recently viewed_ recommendation type were removed in an unexpected order when the recommendation unit's product limit was reached. Products are now removed in first-in, first-out (FIFO) order in which the products were viewed.
 
 _November 19, 2025_
 
@@ -67,7 +67,7 @@ _October 1, 2025_
 
 _January 31, 2025_
 
-![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your testing envionment. [Learn more](overview.md#catalog-data-retention-policy).
+![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your testing environment. [Learn more](overview.md#catalog-data-retention-policy).
 
 _June 28, 2024_
 
@@ -76,11 +76,11 @@ _June 28, 2024_
 
 _July 18, 2023_
 
-![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) query.
+![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) query.
 
 _April 25, 2023_
 
-![New](../assets/new.svg) [!DNL Product Recommendations] customers can now take advantage of [SaaS price indexing](../price-index/price-indexing.md).
+![New](../assets/new.svg) [!DNL Product Recommendations] customers can now use [SaaS price indexing](../price-index/price-indexing.md).
 
 ## Current major version
 
@@ -116,7 +116,7 @@ _September 17, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Resolved an intermittent issue where product recommendation units would disappear due to a JavaScript error when local storage data was unavailable. This fix ensures PREX no longer throws errors if `ds-view-history-time-decay` is missing in local storage.
+![Fix](../assets/fix.svg) Resolved an intermittent issue where product recommendation units disappeared due to a JavaScript error when local storage data was unavailable. This fix ensures PREX no longer throws errors if `ds-view-history-time-decay` is missing in local storage.
 ![New](../assets/new.svg) Updated the CDN URLS for the `recommendations-sdk` to the `adobe.io` domain.
 
 ### 6.3.0 of magento/product-recommendations
@@ -134,7 +134,7 @@ _July 14, 2025_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Made improvments to the [preview recommendations](./create.md#preview-recommendations) panel.
+![Fix](../assets/fix.svg) Made improvements to the [preview recommendations](./create.md#preview-recommendations) panel.
 
 ### 6.2.0 of magento/product-recommendations
 
@@ -197,7 +197,7 @@ _September 15, 2023_
 
 ![New](../assets/new.svg) Added new modules to support the [Saas Price Indexer](../price-index/price-indexing.md).
 ![New](../assets/new.svg) Added new data export modules to support exporting more product types including bundled products and gift cards.
-![Fix](../assets/fix.svg) The table size of the Products and Price feeds have been greatly reduced. Tables `catalog_data_exporter_products` and `catalog_data_exporter_product_prices` should see a substantial size reduction.
+![Fix](../assets/fix.svg) The table size of the Products and Price feeds have been greatly reduced. Tables `catalog_data_exporter_products` and `catalog_data_exporter_product_prices` see a substantial size reduction.
 
 #### Known limitations
 
@@ -205,19 +205,19 @@ _September 15, 2023_
 
 ### 5.0.0 of magento/product-recommendations
 
-_March 20,2023_
+_March 20, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Updated [!DNL Product Recommendations] to support Adobe Commerce 2.4.6.
 ![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. 
-![New](../assets/new.svg) [!DNL Product Recommendations] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install-configure.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
+![New](../assets/new.svg) [!DNL Product Recommendations] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly known as Multi-Source Inventory, or MSI). To enable full support, you must [update](install-configure.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
 ### 4.0.1 of magento/product-recommendations
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) Previously, [!DNL Product Recommendations] would show an error when the display currency was switched to a non-default currency. Switching currencies now works properly.
+![Fix](../assets/fix.svg) Previously, [!DNL Product Recommendations] showed an error when the display currency was switched to a non-default currency. Switching currencies now works properly.
 
 ### 4.0.0 of magento/product-recommendations
 
@@ -255,9 +255,9 @@ _March 20,2023_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added new [recommendation types](type.md): Conversion (view to cart), Conversion (view to purchase), and Recently viewed. These new recommendation types are available in the `magento/product-recommendations` module 3.2.2 and later.
-![Fix](../assets/fix.svg) Fixed an issue where Fastly's Web Application Firewall (WAF) was incorrectly blocking a cookie
-![Fix](../assets/fix.svg) Fixed issue where products assigned to the non-default Store View were not being displayed in the _Recommendations Product Preview_ panel when creating a recommendation for that specific Store View
-![Fix](../assets/fix.svg) Fixed issue where certain recommendation unit names in Page Builder prevented the recommendation unit to display on the storefront
+![Fix](../assets/fix.svg) Fixed an issue where Fastly's Web Application Firewall (WAF) was incorrectly blocking a cookie.
+![Fix](../assets/fix.svg) Fixed issue where products assigned to the non-default Store View were not being displayed in the _Recommendations Product Preview_ panel when creating a recommendation for that specific Store View.
+![Fix](../assets/fix.svg) Fixed issue where certain recommendation unit names in Page Builder prevented the recommendation unit from displaying on the storefront.
 
 ### 3.3.2 of magento/product-recommendations
 
@@ -275,7 +275,7 @@ _March 20,2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![New](../assets/new.svg) Added support for Adobe Client Data Layer to standardize behavioral data collection across Adobe Commerce features and services. See the [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) to learn more.
+![New](../assets/new.svg) Added support for Adobe Client Data Layer to standardize behavioral data collection across Adobe Commerce features and services. To learn more, see the [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
 
 ### 3.2.6 of magento/product-recommendations
 
@@ -300,15 +300,15 @@ _March 20,2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![Fix](../assets/fix.svg) Fixed the "Unable to retrieve configurable product options data" error during Catalog Sync
-![Fix](../assets/fix.svg) Fixed an issue where the store code was not being set correctly when you enabled the "Add store code to URL" configuration
-![Fix](../assets/fix.svg) Improved detection of Admin Panel configuration changes to ensure that these changes are reflected in Catalog Sync data
+![Fix](../assets/fix.svg) Fixed the "Unable to retrieve configurable product options data" error during Catalog Sync.
+![Fix](../assets/fix.svg) Fixed an issue where the store code was not being set correctly when you enabled the "Add store code to URL" configuration.
+![Fix](../assets/fix.svg) Improved detection of Admin Panel configuration changes to ensure that these changes are reflected in Catalog Sync data.
 
 ### 3.2.2 of magento/product-recommendations
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![New](../assets/new.svg) Added the ability to [preview recommendation results](create.md) at creation time. This might require that you update your module to the latest version.
+![New](../assets/new.svg) Added the ability to [preview recommendation results](create.md) at creation time. This update requires that you update your module to the latest version.
 ![New](../assets/new.svg) Added the ability to [monitor and manage](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) the catalog sync process from the Admin.
 ![New](../assets/new.svg) Added [filters](filters.md) to control which products are displayed in recommendations.
 ![New](../assets/new.svg) Added the [Visual similarity](type.md#visualsim) recommendation type.
@@ -349,7 +349,7 @@ _March 20,2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![Fix](../assets/fix.svg) Fixed the "Unable to retrieve product options data" error that could occur during catalog export.
+![Fix](../assets/fix.svg) Fixed the "Unable to retrieve product options data" error that occurred during catalog export.
 ![Fix](../assets/fix.svg) The currency symbol in the _Revenue_ column on the _[!DNL Product Recommendations]_ dashboard now correctly reflects the configured base currency.
 
 ### 3.0.4 of magento/product-recommendations

@@ -76,14 +76,14 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    * At the bottom of main content
    * At the top of main content
 
-1. (Optional) To change the order of the recommendations, select, and move the rows in the _Choose position_ table.
+1. (Optional) To change the order of the recommendations, select and move the rows in the _Choose position_ table.
 
    The _Choose position_ section displays all recommendations (if any) created for the page type you selected.
 
    ![Recommendation order](assets/create-recommendation-select-placement.png)
    _Recommendation order on page_
 
-1. (Optional) In the _Filters_ section, [apply filters](filters.md) to control which products appear in the recommendation unit.
+1. (Optional) To control which products appear in the recommendation unit, [apply filters](filters.md) in the _Filters_ section.
 
    ![Recommendation filters](assets/create-recommendation-filter-products.png)
    _Recommendation product filters_
@@ -100,23 +100,23 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 ## Readiness indicators
 
-Readiness indicators show which recommendation types will perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with your [eventing](events.md) or if you do not have enough traffic to populate the recommendation type.
+Readiness indicators show which recommendation types perform best with your available catalog and behavioral data. Use them to identify eventing issues or insufficient traffic to populate a recommendation type.
 
-Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](events.md) to build personalized recommendations and to calculate their readiness score.
+Readiness indicators fall into two categories: [static-based](#static-based) and [dynamic-based](#dynamic-based). Static-based recommendations use only catalog data. Dynamic-based recommendations use shoppers' behavioral data to train machine learning models, generate personalized recommendations, and calculate each recommendation's readiness score.
 
 ### How readiness indicators are calculated
 
 The readiness indicators are an indication of how much the model is trained. Indicators are dependent upon the types of events collected, the breadth of products interacted with, and the size of the catalog.
 
-The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. Statistics are applied to products based on the overall size of the catalog, the volume of interactions (such as views, clicks, add-to-carts), and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
+The readiness indicator percentage estimates the proportion of products that might be recommended for a given recommendation type. It is calculated using catalog size, interaction volume, and the percentage of SKUs that record the relevant events within a defined time window. For example, readiness indicators may be higher during peak holiday traffic than during periods of normal traffic.
 
-As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see that recommendation types come in and out of being "Ready to deploy".
+As a result of these variables, the readiness indicator percent can fluctuate. This explains why recommendation types fluctuate between being "Ready to deploy."
 
-Readiness indicators are calculated based on a couple factors:
+Readiness indicators are calculated based on two factors:
 
 * Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](events.md#backuprecs)? 
 
-* Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
+* Do the returned products represent a variety of products from your catalog? This factor helps ensure that recommendations across your site are not limited to a small subset of products.
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
@@ -168,7 +168,7 @@ _Recommendation type_
 >
 >Indicators may never reach 100%.
 
-The readiness indicator percent for recommendation types that depend on catalog data do not change much since the merchant's catalog does not change often. But the readiness indicator percent for recommendation types based on shopper behaviorial data can change often depending on daily shopper activity.
+The readiness percentage for catalog-based recommendation types usually changes little because catalogs are relatively stable. In contrast, the readiness percentage for recommendation types based on shopper behavioral data can change frequently with daily shopper activity.
 
 #### What to do if the readiness indicator percent is low
 
@@ -180,8 +180,8 @@ A low readiness percentage indicates that there are not many products from your 
 
 The following lists possible reasons and solutions to common low readiness scores:
 
-* **Static-based** - Low percentages for these indicators can be caused by missing catalog data for the displayable products. If they are lower than expected, a full sync can fix this issue.
-* **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
+* **Static-based** - Missing catalog data for the displayable products causes low percentages for these indicators. If they are lower than expected, a full sync can fix this issue.
+* **Dynamic-based** - The following factors cause low percentages for dynamic-based indicators:
 
    * Missing fields in the required [storefront events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) for the respective recommendation types (requestId, product context, and so on.)
    * Low traffic on the store so the volume of behavioral events we receive is low.
@@ -189,7 +189,7 @@ The following lists possible reasons and solutions to common low readiness score
 
 ## Preview Recommendations {#preview}
 
-The _Recommended products preview_ panel is always available with a sample selection of products that might appear in the recommendation unit when it is deployed to the storefront.
+The _Recommended products preview_ panel is always available with a sample selection of products that appear in the recommendation unit when it is deployed to the storefront.
 
 To test a recommendation when working in a non-production environment, you can fetch recommendation data from a [different source](settings.md). This allows merchants to experiment with rules and preview the recommendations before deploying to production.
 
@@ -200,9 +200,9 @@ To test a recommendation when working in a non-production environment, you can f
 |Price|The price of the product.|
 |Result Type|Primary - indicates that there is enough training data collected to display a recommendation.<br />Backup - indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](events.md) to learn more about machine learning models and backup recommendations.|
 
-As you create your recommendation unit, experiment with the page type, recommendation type, and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
+To see which products a recommendation unit includes in real time, experiment with the page type, recommendation type, and filters as you create it. Then, configure the unit to meet your business needs based on the products it returns.
 
-Adobe Commerce [filters](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel might differ from those that appear in the storefront.
+When multiple recommendation units are deployed on the same page, Adobe Commerce used [filters](#filters.md) to remove duplicate products from the recommendations it displays. As a result, the preview panel may show a different set of products than the storefront.
 
 >[!NOTE]
 >
