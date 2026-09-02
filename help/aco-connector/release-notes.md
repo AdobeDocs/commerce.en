@@ -47,12 +47,20 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.0.17 Release
+
+_September 1, 2026_
+
+![Fix](../assets/fix.svg) **Faster catalog sync for stores with multiple store views**–The [!DNL Adobe Commerce Optimizer Connector] now filters products and categories by store view before extracting feed data, instead of extracting every store view and discarding the irrelevant results afterward. This update significantly reduces sync and resync time for catalogs with many store views. <!--MDEE-1441-->
+
 ### 1.0.16 Release
 
 _August 7, 2026_
 
 ![Fix](../assets/fix.svg) **Catalog sync no longer stalls on invalid configuration**–Fixed an issue where catalog synchronization could run indefinitely if the [!DNL Adobe Commerce Optimizer Connector] configuration was missing or invalid. Sync now completes and logs a warning instead of continuing to run. <!--MDEE-1413-->
+
 ![Fix](../assets/fix.svg) **More reliable [!DNL Adobe Commerce Optimizer] Admin requests**–Fixed an issue where the [!DNL Adobe Commerce Optimizer Connector] could use an incorrect URL for [!DNL Adobe Commerce Optimizer] admin requests, which could cause those requests to fail. <!--COMOPT-2288-->
+
 ![Fix](../assets/fix.svg) **More reliable refresh and patch operations**–Fixed an issue where refresh and patch operations could target the wrong environment, which could cause the requests to fail. <!--COMOPT-2288-->
 
 ### 1.0.15 Release
