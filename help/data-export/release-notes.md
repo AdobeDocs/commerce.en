@@ -56,7 +56,6 @@ Updates include:
 _September 2, 2026_
 
 ![Fix](../assets/fix.svg) Category Attribute - MDEE - Export category attributes and all metadata. <!--MDEE-1373-->
-![Fix](../assets/fix.svg) CR changes. <!--MDEE-1373-->
 ![Fix](../assets/fix.svg) Feed Status mapper does not support new category attribute…. <!--MDEE-1417-->
 
 ### 103.4.32 Release
