@@ -51,8 +51,9 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _September 2, 2026_
 
-![Fix](../assets/fix.svg) Feed Status mapper does not support new category attribute…. <!--MDEE-1417-->
-![Fix](../assets/fix.svg) Category Attribute - MDEE - Export category attributes and all metadata. <!--MDEE-1373-->
+![New](../assets/new.svg) **Category attributes now included in catalog sync**–The [!DNL Adobe Commerce Optimizer Connector] now syncs category attributes and their metadata to [!DNL Adobe Commerce Optimizer], so custom category attributes are available for merchandising. <!--MDEE-1373-->
+
+![Fix](../assets/fix.svg) **Accurate sync status for category attribute metadata**–Fixed an issue where the **[!UICONTROL Data Feed Sync Status]** page did not report status for the category attribute metadata feed, so you couldn't confirm whether that data had synced successfully.<!--MDEE-1417-->
 
 ### 1.0.17 Release
 
