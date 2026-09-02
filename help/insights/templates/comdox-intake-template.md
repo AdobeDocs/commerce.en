@@ -15,7 +15,8 @@ in the brackets, and delete this comment.
 
 Link to create ticket:
 
-[Internal link: create a COMDOX JIRA ticket in the corporate tracker]
+Create a ticket in the COMDOX project corporate tracker. 
+
 ## Header information
 
 Summary:  Add Commerce Insights article for ...
