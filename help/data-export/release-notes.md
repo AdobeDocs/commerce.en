@@ -55,8 +55,9 @@ Updates include:
 
 _September 2, 2026_
 
-![Fix](../assets/fix.svg) Category Attribute - MDEE - Export category attributes and all metadata. <!--MDEE-1373-->
-![Fix](../assets/fix.svg) Feed Status mapper does not support new category attribute…. <!--MDEE-1417-->
+![New](../assets/new.svg) **Category attributes now included in the category feed**–Category attributes and their metadata are now included in the category feed, making custom category attributes available in [!DNL Adobe Commerce Optimizer]. This feature applies only to [!DNL Adobe Commerce Optimizer] implementations. <!--MDEE-1373-->
+
+![Fix](../assets/fix.svg) **Accurate feed status for category attribute metadata**–Fixed an issue where the category attribute metadata feed was not tracked on the Data Feed Sync Status page in the Commerce Admin, so its sync status wasn't visible. <!--MDEE-1417-->
 
 ### 103.4.32 Release
 
