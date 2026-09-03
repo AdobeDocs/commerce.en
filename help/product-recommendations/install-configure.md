@@ -74,7 +74,7 @@ composer require magento/module-visual-product-recommendations
 
 ### Add Fastly Image Optimization support {#fastlysupport}
 
-Fastly Image Optimization support for [!DNL Product Recommendations] is an optional module and is installed separately. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. To install it, run the following command:
+Fastly Image Optimization support for [!DNL Product Recommendations] is an optional module and is installed separately. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. To install it, run the following command:
 
 ```bash
 composer require magento/module-fastly-recommendations

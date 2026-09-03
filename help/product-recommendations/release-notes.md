@@ -91,7 +91,7 @@ _September 3, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added optional Fastly Image Optimization support for [!DNL Product Recommendations]. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. See [Add Fastly Image Optimization support](install-configure.md#fastlysupport) for installation instructions.
+![New](../assets/new.svg) Added optional Fastly Image Optimization support for [!DNL Product Recommendations]. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. See [Add Fastly Image Optimization support](install-configure.md#fastlysupport) for installation instructions.
 
 ### 6.7.0 magento/product-recommendations
 
