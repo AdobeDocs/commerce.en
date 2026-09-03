@@ -55,7 +55,7 @@ Updates include:
 
 _September 2, 2026_
 
-![Fix](../assets/fix.svg) Added additional capabilities to support the Adobe Commerce Optimizer integration with Adobe Commerce.<!--MDEE-1417-->
+![Fix](../assets/fix.svg) Updates to support the Adobe Commerce Optimizer integration with Adobe Commerce.<!--MDEE-1417-->
 
 ### 103.4.33 Release
 
