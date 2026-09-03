@@ -169,7 +169,7 @@ The following table describes what data is exported at each scope level:
 
 [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
 
-If [!DNL Adobe Commerce] B2B is enabled, and you have installed the [!DNL Adobe Commerce Optimizer Connector B2B extension], the connector also watches for changes to shared catalogs and company assignments. When you disable a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period. Re-enabling the shared catalog resumes synchronization.
+If [!DNL Adobe Commerce] B2B is enabled, and you have installed the [!DNL Adobe Commerce Optimizer Connector B2B extension], the connector also watches for changes to shared catalogs and company assignments. When you remove a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period.
 
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -226,12 +226,9 @@ Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Op
 
    Create catalog views and policies in the [!DNL Commerce Optimizer] UI. Note that price books are created automatically from [!DNL Adobe Commerce] customer groups. For instructions, see the [Catalog views](../optimizer/setup/catalog-view.md) and [Policies](../optimizer/setup/policies.md) documentation in the *[!DNL Commerce Optimizer] User Guide*. To restrict access to a catalog view, see [Private catalog views](../optimizer/setup/private-catalog-view.md).
 
-
-  [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
-
    >[!NOTE]
    >
-   >If you use [!DNL Adobe Commerce] B2B shared catalogs, skip this manual setup. The connector automatically creates a private catalog view, policy, price book, and restricted access key [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} for each shared catalog. See [Private catalog views](../optimizer/setup/private-catalog-view.md).
+   >[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} If you use [!DNL Adobe Commerce] B2B shared catalogs, skip this manual setup. The connector automatically creates a private catalog view, policy, price book, and restricted access key for each shared catalog. See [Private catalog views](../optimizer/setup/private-catalog-view.md).
 
 1. **Set up a Commerce Storefront on [!DNL Edge Delivery Services]**
 

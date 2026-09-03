@@ -13,7 +13,7 @@ nudge: true
 - [Get Started](get-started.md)
 - [Connector sync pipeline](connector-sync-pipeline.md)
 - Manage synchronization {#manage-sync}
-  - [Monitor catalog data sync](data-sync-manage.md)
+  - [Monitor catalog data sync](data-sync-status.md)
   - [Monitor catalog view sync](catalog-view-sync-status.md)
 - [Headless storefront integration](headless-storefront.md)
 - Troubleshooting {#troubleshooting}

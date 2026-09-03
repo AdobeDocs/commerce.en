@@ -1,5 +1,6 @@
 ---
-title: Manage Catalog View Synchronization for B2B Shared Catalogs
+title: Monitor Catalog View Synchronization for B2B Shared Catalogs
+last-update: 2026-09-03
 description: "Learn how to use the Catalog View Sync Status page to monitor and reconcile B2B shared catalog projections in the Adobe Commerce Optimizer Connector."
 role: Admin, Developer
 feature: Integration, Configuration
@@ -36,14 +37,13 @@ topic_v2:
     internal-label: Data integration
 ---
 
-# Manage Catalog View synchronization for B2B Shared Catalogs
+# Monitor catalog view synchronization for B2B shared catalogs
 
 [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."}
 
-Track B2B shared catalog synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] from the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
+Track B2B shared catalog synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] using the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
 
-[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book, and restricted access key for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization, use [Data Feed Sync Status](data-sync-manage.md#verify-that-the-data-sync-is-working) dashboard.
-
+[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book, and restricted access key for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Access the sync status page {#access-the-sync-status-page}
 
@@ -53,7 +53,7 @@ From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Tran
 
 ## Interpret sync status for your shared catalogs {#interpret-sync-status}
 
-In the dashboard, each row represents one catalog view projected from a shared catalog and store view combination. Use the status information to determine whether the data delivered to the company's storefront experience is complete and correct. The following table summarizes the most common status values and what they mean for your shared catalog.:
+In the dashboard, each row represents one catalog view projected from a shared catalog and store view combination. Use the status information to determine whether the data delivered to the company's storefront experience is complete and correct. The following table summarizes the most common status values and what they mean for your shared catalog:
 
 | Status | What it means for your shared catalog |
 | --- | --- |
@@ -75,9 +75,9 @@ To review what changed and why, open a catalog view's detail page and check its 
 
 ## Review orphaned and deleted entries {#review-orphaned-and-deleted-entries}
 
-The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two cases the connector can not repair automatically because there is no [!DNL Adobe Commerce] shared catalog to reconcile against:
+The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two cases the connector cannot repair automatically because there is no [!DNL Adobe Commerce] shared catalog to reconcile against:
 
-- **[!UICONTROL Orphaned in ACO]**—A catalog view or restricted access key exists in [!DNL Adobe Commerce Optimizer] but was not created by the connector. This is common if a catalog view was created manually in [!DNL Adobe Commerce Optimizer] Studio before you enabled the Adobe Commerce Optimizer Connector for B2B shared catalogs extension, or by a partner integration unrelated to the connector. If the catalog view is not needed, remove it directly from the catalog view configuration in [!DNL Adobe Commerce Optimizer] Studio.
+- **[!UICONTROL Orphaned in ACO]**—A catalog view or restricted access key exists in [!DNL Adobe Commerce Optimizer] but was not created by the connector. This is common if a catalog view was created manually in [!DNL Adobe Commerce Optimizer] Studio before the [!DNL Adobe Commerce Optimizer Connector for B2B] extension was enabled, or by a partner integration unrelated to the connector. If the catalog view is not needed, remove it directly from the catalog view configuration in [!DNL Adobe Commerce Optimizer] Studio.
 
 - **[!UICONTROL Deleted]**—You deleted a shared catalog in [!DNL Adobe Commerce], and its catalog view projection was subsequently removed. These rows are kept for 90 days as a record of what was removed.
 
@@ -88,10 +88,8 @@ The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two
 
 >[!MORELIKETHIS]
 >
-> - [Catalog View Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync-status){target="_blank"} — Full documentation reference for the Catalog View Sync Status   page, in the *Commerce Admin Guide*
-> - [Data Sync ](data-sync-manage.md) — Verify product, price, and category feed sync
+> - [Catalog View Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync-status){target="_blank"} — Full documentation reference for the Catalog View Sync Status page, in the *Commerce Admin Guide*
+> - [Manage data synchronization](data-sync-status.md) — Verify product, price, and category feed sync
 > - [Private catalog views](/help/optimizer/setup/private-catalog-view.md) — Learn what a connector-managed private catalog view is
 > - [Restricted access keys](/help/optimizer/setup/restricted-access-keys.md) — Learn how connector-managed keys work
-> - [Monitor B2B shared catalog changes](get-started.md#b2b-shared-catalog-changes) — Learn what the connector automates for B2B shared catalogs
-
-
+> - [Monitor B2B shared catalog changes](get-started.md#monitor-b2b-shared-catalog-changes) — Learn what the connector automates for B2B shared catalogs

@@ -36,7 +36,7 @@ Restricted access keys let authorized client applications access a [private cata
 
 Restricted access keys are provisioned in one of two ways:
 
-- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], the extension automatically generates and assigns the first key when a catalog view is created. You manage these keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For deployments integrated with the [!DNL Adobe Commerce Optimizer for B2B] extension, the extension automatically generates and assigns the first key when a catalog view is created. You manage these keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
 
 - **Manually, for any catalog view**—To protect a catalog view yourself—for example, for a partner portal or pre-release preview—follow the steps in this topic starting with [Create a restricted access key](#create-a-restricted-access-key).
 
@@ -54,7 +54,7 @@ Restricted access keys are commonly used for:
 
 A restricted access key is the public component of an RSA key pair. Your client application generates and uses this key to prove it is authorized to read a private catalog view. In this context, "client application" means the backend system that authenticates shoppers—for example, custom logic on [!DNL Adobe Commerce] or a third-party backend—never the storefront frontend itself.
 
-The following steps describe how a key pair and signed token move from creation to validation. If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], the extension performs these steps for you automatically. See [Key management and rotation](#key-management-and-rotation).
+The following steps describe how a key pair and signed token move from creation to validation when you are not managing catalog views associated with a B2B shared catalog in the Adobe Commerce backend.
 
 1. Your client application generates an RSA key pair and keeps the private key.
 1. You register the **public** key in [!DNL Commerce Optimizer] as a restricted access key.
@@ -112,19 +112,15 @@ A restricted access key only restricts access after it's assigned to a catalog v
 
 Restricted access keys are managed in one of two ways, depending on how you use catalog protection:
 
-- **Automatically, for B2B shared catalogs**—[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], the extension automatically generates and assigns the first restricted access key when a catalog view is created. After that, manage keys from the shared catalog settings in the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+- **Automatically, for B2B shared catalogs**—[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} For deployments integrated with the [!DNL Adobe Commerce Optimizer for B2B] extension, the extension automatically generates and assigns the first restricted access key when a catalog view is created. After that, you manage keys from the shared catalog settings in the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
 
   Editing keys in the Admin applies to every catalog view linked to that shared catalog, rather than managing each catalog view's key separately.
 
   Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one. See [B2B shared catalog changes](/help/aco-connector/get-started.md#b2b-shared-catalog-changes).
 
-- **Manually, for any catalog view**—If you are not using the [!DNL Adobe Commerce Optimizer Connector B2B extension], key generation, token signing, and rotation are managed entirely by the backend client application that authenticates shoppers. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf. Use the steps earlier in this topic to create, add, and delete keys, and see [Rotate a key](#rotate-a-key) below to rotate one without an access interruption.
+- **Manually, for any catalog view**—For catalog views that are not associated with a B2B shared catalog in the Adobe Commerce backend, key generation, token signing, and rotation are managed entirely by the backend client application that authenticates shoppers. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf. Use the steps earlier in this topic to create, add, and delete keys. To rotate a key, see [Rotate a key](#rotate-a-key).
 
 ### Rotate a key
-
->[!NOTE]
->
->Automatic key rotation isn't available yet for the [!DNL Adobe Commerce Optimizer Connector B2B extension]. To add a key or change which one is active, use the Commerce Admin **Restricted Access Keys** page instead.
 
 To rotate a key without an access interruption, note that a catalog view can have up to three keys assigned at once:
 
@@ -140,5 +136,5 @@ See [Catalog views and policy limits](../boundaries-limits.md#catalog-views-and-
 ## More like this
 
 - [Private catalog views](private-catalog-view.md)—Learn how to protect a catalog view with restricted access keys.
-- [B2B shared catalog changes](/help/aco-connector/get-started.md#b2b-shared-catalog-changes)—Learn how the [!DNL Adobe Commerce Optimizer Connector] automates key management for B2B shared catalogs.
+- [B2B shared catalog changes](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)—Learn how the [!DNL Adobe Commerce Optimizer Connector] automates key management for B2B shared catalogs.
 

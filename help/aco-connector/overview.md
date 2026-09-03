@@ -134,7 +134,7 @@ The following feeds are available for the [!DNL Adobe Commerce Optimizer Connect
 
 For additional details, see the following topics:
 
-- Verify catalog data sync and manually resync connector feeds: [Manage synchronization](/help/aco-connector/data-sync-manage.md)
+- Verify catalog data sync and manually resync connector feeds: [Manage synchronization](/help/aco-connector/data-sync-status.md)
 - For [!DNL Adobe Commerce] CLI resync operations, see [Sync feeds using the Commerce CLI](/help/data-export/data-export-cli-commands.md)
 - [[!DNL Adobe Commerce Optimizer Connector] modules and feed endpoints](/help/aco-connector/reference/connector-reference.md)
 - [Field mapping for connector feeds](/help/aco-connector/reference/field-mapping.md)
@@ -192,7 +192,7 @@ For step-by-step configuration guidance, see [Get Started](/help/aco-connector/g
 >
 > - [Get Started with the [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md) — Set up the integration and enable key workflows.
 > - [Connector sync pipeline](/help/aco-connector/connector-sync-pipeline.md) — Understand sync mechanism, initialization, and error handling.
-> - [Manage synchronization](/help/aco-connector/data-sync-manage.md) — Verify catalog data sync and manually resync feeds.
+> - [Manage synchronization](/help/aco-connector/data-sync-status.md) — Verify catalog data sync and manually resync feeds.
 > - [Field mapping for connector feeds](/help/aco-connector/reference/field-mapping.md) — Review field-level data mapping for all feeds.
 > - [Troubleshooting scenarios](/help/aco-connector/troubleshooting/troubleshooting-scenarios.md) — Resolve misconfiguration or unexpected sync results.
 > - [Release notes](/help/aco-connector/release-notes.md) — Review connector updates and known issues.

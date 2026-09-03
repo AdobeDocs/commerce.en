@@ -1,6 +1,6 @@
 ---
-title: 'Monitor catalog data synchronization'
-description: "Learn how to verify catalog data sync and manually resync connector feeds between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer]."
+title: 'Monitor Catalog Data Synchronization'
+description: "Learn how to verify catalog data sync and manually resync connector feeds between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer] via Data Feed Sync Status."
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
@@ -53,7 +53,7 @@ When partial sync and automatic retry do not resolve synchronization issues, you
 | --- | --- | --- |
 | Verify sync status and resync from the upstream system when products are missing | **Upstream-system resync** | In [!DNL Commerce Optimizer], select **[!UICONTROL Data Sync]** and verify that expected catalog sources, products, prices, and attributes display. When products are missing, resync from the upstream [!DNL Adobe Commerce] instance using the **[!UICONTROL Data Feed Sync Status]** page or the Commerce CLI (see the following rows). |
 | Resync selected failed or problematic connector feed items | **[!UICONTROL Data Feed Sync Status] page in the Commerce Admin** | Monitor export status and resync selected connector feed items from the Commerce Admin. See [Verify that the data sync is working](#verify-that-the-data-sync-is-working). |
-| Targeted connector feed resync with operational control | **Commerce CLI** | Run `saas:resync` from the Adobe Commerce instance for connector feeds. See [Sync feeds using the Commerce CLI](../data-export/data-export-cli-commands.md) and [Supported feeds](reference/connector-reference.md#supported-feeds). |
+| Targeted connector feed resync with operational control | **Commerce CLI** | Run `saas:resync` from the [!DNL Adobe Commerce] instance for connector feeds. See [Sync feeds using the Commerce CLI](../data-export/data-export-cli-commands.md) and [Supported feeds](reference/connector-reference.md#supported-feeds). |
 
 >[!MORELIKETHIS]
 >
