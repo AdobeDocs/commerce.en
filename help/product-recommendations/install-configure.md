@@ -27,7 +27,7 @@ topic_v2:
     internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-last-update: 2026-06-23
+last-update: 2026-09-02
 ---
 # Install and Configure
 
