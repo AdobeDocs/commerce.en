@@ -96,7 +96,7 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 | Services | Storefront |
 | --- | --- |
-| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md)<br>[SaaS Data Export] | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
 
 ## Bulk data migration tool Early Access {#bulk-data-early-access}
 

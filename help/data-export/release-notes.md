@@ -55,9 +55,7 @@ Updates include:
 
 _September 2, 2026_
 
-![New](../assets/new.svg) **Category attributes now included in the category feed**–Category attributes and their metadata are now included in the category feed, making custom category attributes available in [!DNL Adobe Commerce Optimizer]. This feature applies only to [!DNL Adobe Commerce Optimizer] implementations. <!--MDEE-1373-->
-
-![Fix](../assets/fix.svg) **Accurate feed status for category attribute metadata**–Fixed an issue where the category attribute metadata feed was not tracked on the Data Feed Sync Status page in the Commerce Admin, so its sync status wasn't visible. <!--MDEE-1417-->
+![Fix](../assets/fix.svg) Added additional capabilities to support the Adobe Commerce Optimizer integration with Adobe Commerce.<!--MDEE-1417-->
 
 ### 103.4.32 Release
 
