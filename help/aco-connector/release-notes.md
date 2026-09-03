@@ -53,7 +53,6 @@ _September 2, 2026_
 
 ![New](../assets/new.svg) **Category attributes now included in catalog sync**–The [!DNL Adobe Commerce Optimizer Connector] now syncs category attributes and their metadata to [!DNL Adobe Commerce Optimizer], so custom category attributes are available for merchandising. <!--MDEE-1373-->
 
-
 ### 1.0.17 Release
 
 _September 1, 2026_
