@@ -40,7 +40,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 
-last-update: 2026-08-10
+last-update: 2026-09-03
 ---
 
 # Get started
@@ -137,6 +137,13 @@ The following table describes what data is exported at each scope level:
 | Website and customer group | Prices and price books | Each set of prices is exported as a [price book](../optimizer/setup/pricebooks.md) using the naming convention `&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`. All customer groups for the website are included. |
 | Store view | Products and product attributes | Each store view creates a separate [catalog source](../optimizer/setup/catalog-sources.md) in [!DNL Commerce Optimizer]. |
 
+
+[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
+
+>[!NOTE]
+>
+>If [!DNL Adobe Commerce] B2B is enabled and shared catalogs are configured, the connector automatically projects each shared catalog into a [private catalog view](../optimizer/setup/private-catalog-view.md) per store view. No separate scope setting is required.
+
 ![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 
 ### To change scope export settings
@@ -157,6 +164,12 @@ The following table describes what data is exported at each scope level:
 | -------- | -------- |
 | Disable a store view | **Disabling sync removes catalog data from your storefront.** The catalog source remains in [!DNL Commerce Optimizer], but all synced data is removed on the next cron run. |
 | Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
+
+### B2B shared catalog changes
+
+[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
+
+If [!DNL Adobe Commerce] B2B is enabled, the connector also watches for changes to shared catalogs and company assignments. When you disable a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period. Re-enabling the shared catalog resumes synchronization.
 
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -212,6 +225,13 @@ Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Op
 1. **Configure [!DNL Commerce Optimizer] catalog views and policies**
 
    Create catalog views and policies in the [!DNL Commerce Optimizer] UI. Note that price books are created automatically from [!DNL Adobe Commerce] customer groups. For instructions, see the [Catalog views](../optimizer/setup/catalog-view.md) and [Policies](../optimizer/setup/policies.md) documentation in the *[!DNL Commerce Optimizer] User Guide*. To restrict access to a catalog view, see [Private catalog views](../optimizer/setup/private-catalog-view.md).
+
+
+  [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
+
+   >[!NOTE]
+   >
+   >If you use [!DNL Adobe Commerce] B2B shared catalogs, skip this manual setup. The connector automatically creates a private catalog view, policy, price book, and restricted access key [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} for each shared catalog. See [Private catalog views](../optimizer/setup/private-catalog-view.md).
 
 1. **Set up a Commerce Storefront on [!DNL Edge Delivery Services]**
 

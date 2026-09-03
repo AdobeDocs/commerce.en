@@ -88,6 +88,7 @@ The [!DNL Adobe Commerce Optimizer Connector] operates by using your existing Co
 - **Store view → Catalog Sources** — Each store view becomes a separate Catalog Source in [!DNL Adobe Commerce Optimizer]. That source includes localized product attributes and any store-view-specific data
 - **Website → Price Books** — Each [!DNL Adobe Commerce] website maps to one or more Price Books in [!DNL Adobe Commerce Optimizer]. Website pricing and customer group pricing export as price books and price entries
 - **Customer group → Price variants** — [!DNL Adobe Commerce] customer group pricing appears as additional entries in the relevant Price Books
+- [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} **B2B shared catalog → Private catalog view** — If [!DNL Adobe Commerce] B2B is enabled, each shared catalog becomes a [private catalog view](/help/optimizer/setup/private-catalog-view.md) per store view. A policy limits product assortment to the products assigned to that shared catalog, and a restricted access key controls who can query it.
 
 After [!DNL Adobe Commerce Optimizer] ingests the data, you can configure:
 
@@ -96,6 +97,10 @@ After [!DNL Adobe Commerce Optimizer] ingests the data, you can configure:
 - **[!DNL Product Recommendations]**
 
 When you enable the connector, the [!DNL Adobe Commerce] instance remains the system of record for catalog and price data. When you update data in [!DNL Adobe Commerce], the connector syncs those updates to the [!DNL Adobe Commerce Optimizer] instance.
+
+>[!NOTE]
+>
+>If your [!DNL Adobe Commerce] instance has B2B enabled with shared catalogs configured, the connector detects this automatically and provisions the corresponding private catalog views, policies, price books, and restricted access keys [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} for you. You don't need to create them manually. See [Next steps](/help/aco-connector/get-started.md#next-steps).
 
 >[!NOTE]
 >
@@ -147,7 +152,7 @@ For step-by-step configuration guidance, see [Get Started](/help/aco-connector/g
 
 ## Supported scenarios {#supported-scenarios}
 
-The connector is designed for B2C merchants with [!DNL Adobe Commerce] on cloud and on-premises deployments who want to adopt [!DNL Adobe Commerce Optimizer] without rebuilding their backend.
+[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} The connector supports both B2C and B2B merchants with [!DNL Adobe Commerce] on cloud and on-premises deployments who want to adopt [!DNL Adobe Commerce Optimizer] without rebuilding their backend. For B2B merchants, the connector automatically projects [!DNL Adobe Commerce] shared catalogs into [!DNL Adobe Commerce Optimizer] as private catalog views.
 
 **Common use cases:**
 
@@ -159,6 +164,9 @@ The connector is designed for B2C merchants with [!DNL Adobe Commerce] on cloud 
 
 - **Incremental SaaS adoption**
   Use the connector as a stepping stone toward [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], with a compatible composable [!DNL Adobe Commerce] catalog
+
+- [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} **B2B contract catalogs and pricing**
+  Give each company account a private catalog view with contract-specific product assortment and pricing, secured by restricted access keys that [!DNL Adobe Commerce Optimizer] provisions and keeps in sync automatically [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
 
 ## Responsibilities and implementation prerequisites {#responsibilities-prerequisites}
 

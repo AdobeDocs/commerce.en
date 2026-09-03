@@ -63,6 +63,7 @@ The `products` feed sends data to the [Products endpoint](https://developer.adob
 | `metaKeyword` | `metaTags/keywords` | Newline-delimited string split into array |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON-encoded object `{inStock, lowStock, weight, weightType}`; always present as the first attribute entry |
 | `attributes[]`                                | `attributes[]` | Each entry mapped to `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` are excluded (they go into `aco_ac_attributes`) |
+| `(synthesized)` | `attributes[].code = "ac-assortments"` | Array of shared catalog identifiers the product belongs to. Present only when [!DNL Adobe Commerce] B2B shared catalogs are enabled. [!DNL Commerce Optimizer] policies filter on this attribute to enforce private catalog view assortment. |
 | `images[]`                                    | `images[]` | `url`, `label`; standard roles mapped: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; non-standard roles go to `customRoles[]` |
 | `categoryData[].categoryPath`                 | `routes[].path` | |
 | `categoryData[].productPosition`              | `routes[].position` | |
