@@ -1,5 +1,5 @@
 ---
-title: 'Manage [!DNL Adobe Commerce Optimizer Connector] Synchronization'
+title: 'Monitor catalog data synchronization'
 description: "Learn how to verify catalog data sync and manually resync connector feeds between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer]."
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Data integration
 last-update: 2026-08-20
 ---
-# Manage synchronization to [!DNL Commerce Optimizer]
+# Monitor catalog data synchronization
 
-After you set up the [!DNL Adobe Commerce Optimizer Connector], most catalog updates sync automatically through scheduled cron jobs. For details on how automated synchronization works, see [Connector sync pipeline](connector-sync-pipeline.md). Use the tools in this topic to verify that data reaches [!DNL Adobe Commerce Optimizer] and to manually resync feeds when needed.
+After you set up the [!DNL Adobe Commerce Optimizer Connector], most catalog updates sync automatically through scheduled cron jobs. For details on how automated synchronization works, see [Connector sync pipeline](connector-sync-pipeline.md). Use the tools in this topic to verify that product, price, and category data reaches [!DNL Adobe Commerce Optimizer] and to manually resync feeds when needed.
 
 ## Verify that the data sync is working {#verify-that-the-data-sync-is-working}
 

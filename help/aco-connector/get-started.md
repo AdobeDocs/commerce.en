@@ -165,7 +165,7 @@ The following table describes what data is exported at each scope level:
 | Disable a store view | **Disabling sync removes catalog data from your storefront.** The catalog source remains in [!DNL Commerce Optimizer], but all synced data is removed on the next cron run. |
 | Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
 
-### B2B shared catalog changes
+### Monitor B2B shared catalog changes
 
 [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
 
