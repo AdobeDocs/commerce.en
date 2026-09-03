@@ -72,6 +72,14 @@ The _Visual similarity_ recommendation type displays products [visually similar]
 composer require magento/module-visual-product-recommendations
 ```
 
+### Add Fastly Image Optimization support {#fastlysupport}
+
+Fastly Image Optimization support for [!DNL Product Recommendations] is an optional module and is installed separately. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. To install it, run the following command:
+
+```bash
+composer require magento/module-fastly-recommendations
+```
+
 ## Configure [!DNL Product Recommendations] {#configure}
 
 1. After you install the `magento/product-recommendations` module, configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.

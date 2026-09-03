@@ -34,6 +34,7 @@ The release notes describe updates to the following [!DNL Product Recommendation
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
+* Fastly Image Optimization support for [!DNL Product Recommendations] (optional) module: `magento/module-fastly-recommendations`
 
 Adobe supports the latest released Product Recommendations version. Release notes for older versions are provided for reference.
 
@@ -83,6 +84,14 @@ _April 25, 2023_
 ![New](../assets/new.svg) [!DNL Product Recommendations] customers can now use [SaaS price indexing](../price-index/price-indexing.md).
 
 ## Current major version
+
+### 6.8.0 of magento/module-fastly-recommendations
+
+_September 3, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added optional Fastly Image Optimization support for [!DNL Product Recommendations]. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. See [Add Fastly Image Optimization support](install-configure.md#fastlysupport) for installation instructions.
 
 ### 6.7.0 magento/product-recommendations
 
