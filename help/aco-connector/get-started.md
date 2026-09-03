@@ -169,7 +169,7 @@ The following table describes what data is exported at each scope level:
 
 [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
 
-If [!DNL Adobe Commerce] B2B is enabled, the connector also watches for changes to shared catalogs and company assignments. When you disable a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period. Re-enabling the shared catalog resumes synchronization.
+If [!DNL Adobe Commerce] B2B is enabled, and you have installed the [!DNL Adobe Commerce Optimizer Connector B2B extension], the connector also watches for changes to shared catalogs and company assignments. When you disable a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period. Re-enabling the shared catalog resumes synchronization.
 
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 

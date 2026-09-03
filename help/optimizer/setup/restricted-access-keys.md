@@ -1,6 +1,6 @@
 ---
 title: Restricted Access Keys
-description: "Learn how to create, assign, and rotate restricted access keys to protect catalog views in [!DNL Adobe Commerce Optimizer] with signed-token authentication."
+description: "Learn how restricted access keys protect catalog views in [!DNL Adobe Commerce Optimizer], created automatically for B2B shared catalogs or managed manually."
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
@@ -34,25 +34,28 @@ nudge: true
 
 Restricted access keys let authorized client applications access a [private catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
 
+Restricted access keys are provisioned in one of two ways:
+
+- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], the extension automatically generates and assigns the first key when a catalog view is created. You manage these keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+
+- **Manually, for any catalog view**—To protect a catalog view yourself—for example, for a partner portal or pre-release preview—follow the steps in this topic starting with [Create a restricted access key](#create-a-restricted-access-key).
+
 ## Restricted access key use cases
 
 In [!DNL Adobe Commerce Optimizer], **[!UICONTROL Price Book ID]** determines which prices a request sees—it scopes pricing, not who can make the request. Any client that knows a catalog view's ID and price book ID can retrieve that data through the Merchandising API. Restricted access keys add a separate, complementary control: they scope who can access a catalog view at all, independent of which price book applies.
 
 Restricted access keys are commonly used for:
 
-- **Contract-based B2B pricing**—Restrict a catalog view linked to a negotiated price book so only the buyer it applies to can query it. Other buying organizations and the public cannot.
+- **Contract-based B2B pricing**—Restrict a catalog view linked to a negotiated price book so only the buyer it applies to can query it. Other buying organizations and the public cannot. For B2B shared catalogs, this is set up automatically; see [Key management and rotation](#key-management-and-rotation).
 - **Partner and reseller portals**—Limit a subset of the catalog to approved partners integrating directly with the Merchandising API.
 - **Pre-release previews**—Let a trusted internal or partner system preview upcoming products before they're publicly visible.
 
->[!IMPORTANT]
->
->Key generation, token signing, and rotation are currently managed entirely by the backend client application that authenticates shoppers. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf.
 
 ## How restricted access keys work
 
-A restricted access key is the public component of an RSA key pair. Your client application generates and uses this key to prove it is authorized to read a private catalog view. In this context, "client application" means the backend system that authenticates shoppers—for example, custom logic on [!DNL Adobe Commerce] or a third-party backend—never the storefront frontend itself.
+A restricted access key is the public component of an RSA key pair. Your client application generates and uses this key to prove it is authorized to read a private catalog view. In this context, "client application" means the backend system that authenticates shoppers—for example, Adobe Commerce on Cloud or a third-party backend—never the storefront frontend itself.
 
-The following steps describe how a key pair and signed token move from creation to validation:
+The following steps describe how a key pair and signed token move from creation to validation. If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], the extension performs these steps for you automatically; see [Key management and rotation](#key-management-and-rotation).
 
 1. Your client application generates an RSA key pair and keeps the private key.
 1. You register the **public** key in [!DNL Commerce Optimizer] as a restricted access key.
@@ -60,6 +63,10 @@ The following steps describe how a key pair and signed token move from creation 
 1. [!DNL Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
 
 ## Create a restricted access key
+
+>[!NOTE]
+>
+>This section and the three that follow describe the manual [!DNL Adobe Commerce Optimizer] Studio flow. If you use B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], manage keys instead from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). See [Key management and rotation](#key-management-and-rotation).
 
 For initial testing of private catalog views, generate a key pair using a tool such as [!DNL OpenSSL]. Keep the private key secret — only the public key is uploaded to [!DNL Commerce Optimizer].
 
@@ -102,7 +109,23 @@ A restricted access key only restricts access after it's assigned to a catalog v
 
 1. Confirm the deletion.
 
-## Rotate a key
+## Key management and rotation
+
+Restricted access keys are managed in one of two ways, depending on how you use catalog protection:
+
+- **Automatically, for B2B shared catalogs**—[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], the extension automatically generates and assigns the first restricted access key when a catalog view is created. After the keys are generated, you can manage them from the shared catalog settings in the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+
+  Editing keys in the Admin applies to every catalog view linked to that shared catalog, rather than managing each catalog view's key separately.
+
+  Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one. See [B2B shared catalog changes](/help/aco-connector/get-started.md#b2b-shared-catalog-changes).
+
+- **Manually, for any catalog view**—If you are not using Commerce B2B shared catalogs withthe [!DNL Adobe Commerce Optimizer Connector B2B extension], key generation, token signing, and rotation are managed entirely by the backend client application that authenticates shoppers. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf. Use the steps earlier in this topic to create, add, and delete keys, and see [Rotate a key](#rotate-a-key) below to rotate one without an access interruption.
+
+### Rotate a key
+
+>[!NOTE]
+>
+>Automatic key rotation isn't available yet for the [!DNL Adobe Commerce Optimizer Connector B2B extension]. To add a key or change which one is active, use the Commerce Admin **Restricted Access Keys** page instead.
 
 To rotate a key without an access interruption, note that a catalog view can have up to three keys assigned at once:
 
@@ -118,4 +141,5 @@ See [Catalog views and policy limits](../boundaries-limits.md#catalog-views-and-
 ## More like this
 
 - [Private catalog views](private-catalog-view.md)—Learn how to protect a catalog view with restricted access keys.
+- [B2B shared catalog changes](/help/aco-connector/get-started.md#b2b-shared-catalog-changes)—Learn how the [!DNL Adobe Commerce Optimizer Connector] automates key management for B2B shared catalogs.
 
