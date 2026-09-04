@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 2, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce/insights/overview">Commerce Insights</a> guide, a new home for strategic implementation and security guidance from Adobe Commerce Product Management and Engineering.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7c82665f7696cab156f6559ade451df937faa3e5">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 28, 2026
 
 <table style="table-layout:auto;">
@@ -346,28 +368,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### July 6, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Removed the LLM Optimizer and Commerce integration documentation. The feature has been re-scoped and moved to the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment">Commerce Admin guide</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">commit</a></td>
     </tr>
   </tbody>
 </table>

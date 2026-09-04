@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 28 15:40:11 2026
+updated: Fri Sep 4 15:39:48 2026
 entries:
+- description: Added the [Commerce Insights](https://experienceleague.adobe.com/en/docs/commerce/insights/overview)
+    guide, a new home for strategic implementation and security guidance from Adobe
+    Commerce Product Management and Engineering.
+  versions: ''
+  type: new-topic
+  date: September 2, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/749
+  merge_commit: 7c82665f7696cab156f6559ade451df937faa3e5
+  contributor: meker_adobe
+  labels:
+  - new-topic
+  - Strategy & Guidance
 - description: Updating the [Live Search extension](https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes)
     to 4.7.3 to address an issue where the Add to Cart functionality on the Product
     Listing Page did not work with the PLP Widget in certain isolated cases.
