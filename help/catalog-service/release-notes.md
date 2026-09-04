@@ -624,6 +624,16 @@ Updates to the Catalog Service PHP metapackage (`magento/catalog-service`).
 
 - For Adobe Commerce on cloud or on premises, Adobe recommends using Composer to upgrade the Catalog Service metapackage in your cloud environments the latest release.
 
+### v3.6.0 release
+
+**Release date**: August 31, 2026
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) **Customizable options export**—Updated the Catalog Service metapackage dependencies to include the Customizable Options Data Exporter module (`magento/module-customizable-options-data-exporter`). This module exports a product's Adobe Commerce customizable options—both selectable options (drop-down, radio button, checkbox, multiple select) and shopper-input options (text field, text area, file, date, date and time, time)—so they propagate to the SaaS catalog consumed by Catalog Service. <!--DATA-7366-->
+
+![New](../assets/new.svg) Updated dependencies to maintain compatibility between the Catalog Service and your Commerce stack.
+
 ### v3.5.0 release
 
 **Release date**: July 10, 2026
