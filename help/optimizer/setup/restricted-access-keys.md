@@ -116,7 +116,7 @@ Restricted access keys are managed in one of two ways, depending on how you use 
 
   Editing keys in the Admin applies to every catalog view linked to that shared catalog, rather than managing each catalog view's key separately.
 
-  Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one. See [B2B shared catalog changes](/help/aco-connector/get-started.md#b2b-shared-catalog-changes).
+  Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one. See [B2B shared catalog changes](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes).
 
 - **Manually, for any catalog view**—For catalog views that are not associated with a B2B shared catalog in the Adobe Commerce backend, key generation, token signing, and rotation are managed entirely by the backend client application that authenticates shoppers. [!DNL Adobe Commerce Optimizer] does not generate or rotate these keys on your behalf. Use the steps earlier in this topic to create, add, and delete keys. To rotate a key, see [Rotate a key](#rotate-a-key).
 

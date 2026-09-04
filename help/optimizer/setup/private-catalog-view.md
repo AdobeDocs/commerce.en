@@ -33,7 +33,7 @@ By default, a [catalog view](catalog-view.md) is public. Restrict access to a ca
 
 A catalog view becomes private in one of two ways:
 
-- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For Commerce deployments that use the with the [!DNL Adobe Commerce Optimizer Connector] integration with the B2B extension, private catalog views are created and configured for you automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
+- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For Commerce deployments that use the [!DNL Adobe Commerce Optimizer Connector] integration with the B2B extension, private catalog views are created and configured for you automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
 - **Manually, for any catalog view**—To restrict access to a catalog view that would otherwise be public, including a B2C catalog view, follow the steps in [Protect a catalog view](#protect-a-catalog-view). See [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples, such as partner portals and pre-release previews.
 
