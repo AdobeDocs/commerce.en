@@ -14,7 +14,9 @@ nudge: true
 - [Connector sync pipeline](connector-sync-pipeline.md)
 - Manage synchronization {#manage-sync}
   - [Monitor catalog data sync](data-sync-status.md)
-  - [Monitor catalog view sync](catalog-view-sync-status.md)
+  - Catalog view sync {#catalog-view-sync}
+    - [Monitor catalog view sync](catalog-view-sync-status.md)
+    - [Manage restricted access keys](restricted-access-keys.md)
 - [Headless storefront integration](headless-storefront.md)
 - Troubleshooting {#troubleshooting}
   - [Overview](troubleshooting.md)

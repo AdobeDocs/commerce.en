@@ -62,7 +62,7 @@ In the dashboard, each row represents one catalog view projected from a shared c
 | **Retiring** | You deleted the shared catalog in [!DNL Adobe Commerce]. The catalog view is still accessible during its deletion grace period. |
 | **Orphaned** | The catalog view or key was created directly in [!DNL Adobe Commerce Optimizer] Studio, not by the connector. See [Review orphaned and deleted entries](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending], and [!UICONTROL Deleted] are informational states that don't require action. See [Sync status values](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync-status#sync-status-values){target="_blank"} in the *Commerce Admin Guide* for the full list.
+[!UICONTROL Healthy], [!UICONTROL Pending], and [!UICONTROL Deleted] are informational states that don't require action. See <!--[Sync status values](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} in the *Commerce Admin Guide* for the full list. -->
 
 ## Choose monitoring or repair {#choose-monitoring-or-repair}
 
@@ -88,7 +88,7 @@ The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two
 
 >[!MORELIKETHIS]
 >
-> - [Catalog View Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync-status){target="_blank"} — Full documentation reference for the Catalog View Sync Status page, in the *Commerce Admin Guide*
+> - <!-- Uncomment link when Admin Guide changes are published [Catalog View Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status){target="_blank"} — Full documentation reference for the Catalog View Sync Status page, in the *Commerce Admin Guide* -->
 > - [Manage data synchronization](data-sync-status.md) — Verify product, price, and category feed sync
 > - [Private catalog views](/help/optimizer/setup/private-catalog-view.md) — Learn what a connector-managed private catalog view is
 > - [Restricted access keys](/help/optimizer/setup/restricted-access-keys.md) — Learn how connector-managed keys work
