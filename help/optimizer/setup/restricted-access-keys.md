@@ -61,7 +61,7 @@ The following steps describe how a key pair and signed token move from creation 
 1. Your client application signs a JSON Web Token (JWT) with the private key and includes it with each request to a private catalog view.
 1. [!DNL Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
 
-## Create a restricted access key
+## Create a restricted access key for a catalog view
 
 >[!NOTE]
 >
