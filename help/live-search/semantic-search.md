@@ -10,7 +10,7 @@ recommendations: noCatalog
 >
 >Semantic search is available for merchants using Adobe Commerce versions 2.4.4 and newer.
 
-Semantic search uses AI to understand what shoppers mean, not just the exact words they type. Queries such as "dress for a beach wedding" or "comfortable shoes for standing all day" can return relevant products even when your catalog does not use those exact phrases.
+Semantic search uses AI to understand what shoppers mean, not just the words they type. Queries such as "dress for a beach wedding" or "comfortable shoes for standing all day" can return relevant products even when your catalog does not use those exact phrases.
 
 [!DNL Live Search] combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront. [!DNL Live Search] does not offer advanced semantic controls (for example, boost or similarity sliders) in the Admin. You can enable or disable semantic search.
 
@@ -27,7 +27,7 @@ Semantic search is managed from the **Settings** workspace in the [!DNL Live Sea
 
 ## How it works
 
-When semantic search is enabled, [!DNL Live Search] uses predefined catalog attributes chosen by the system (such as product name and description) to interpret query meaning alongside traditional keyword search. You do not select or prioritize attributes in the Admin.
+To interpret query meaning alongside traditional keyword search when semantic search is enabled, [!DNL Live Search] uses predefined catalog attributes chosen by the system (such as product name and description). You do not select or prioritize attributes in the Admin.
 
 For example:
 
@@ -68,13 +68,13 @@ Adobe Commerce on Cloud and on-premises merchants must enable semantic search ma
 
 ### For [!DNL Adobe Commerce as a Cloud Service] customers
 
-[!DNL Adobe Commerce as a Cloud Service] customers use the same **Settings** workspace in the [!DNL Live Search] Admin. Semantic search is **enabled by default** for eligible English catalogs. Confirm **[!UICONTROL Semantic search]** is enabled, or disable it if you do not want semantic matching on the storefront.
+[!DNL Adobe Commerce as a Cloud Service] customers use the same **Settings** workspace in the [!DNL Live Search] Admin. Adobe Commerce enables semantic search by default for eligible English catalogs. Confirm **[!UICONTROL Semantic search]** is enabled, or disable it if you do not want semantic matching on the storefront.
 
 You do not need a separate publish step or storefront configuration after you save a change.
 
 ## Validate after enablement
 
-After semantic search is active and indexing completes, Adobe recommends validating search performance. Use the [Performance](performance.md) workspace to review metrics and test queries that matter to your business. This applies whether semantic search was enabled by default or you enabled it manually.
+After semantic search is active and indexing completes, Adobe recommends validating search performance. Use the [Performance](performance.md) workspace to review metrics and test queries that matter to your business. This applies whether the system enabled semantic search by default or you enabled it manually.
 
 1. Review your top searched terms in the **Unique searches** report.
 1. Test historical zero-result queries from the **Zero results** report on the storefront.
@@ -84,7 +84,7 @@ After semantic search is active and indexing completes, Adobe recommends validat
 ## Best practices
 
 - Use clear, descriptive product names and descriptions (ideally 50-100 words) so both keyword and semantic matching have strong catalog text to work with.
-- Keep brand-specific or highly technical [synonyms](synonyms.md) where semantic search may not cover specialized terms.
+- Keep brand-specific or highly technical [synonyms](synonyms.md) where semantic search does not cover specialized terms.
 
 ## Troubleshooting
 

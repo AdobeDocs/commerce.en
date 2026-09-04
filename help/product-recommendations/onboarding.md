@@ -53,6 +53,10 @@ For detailed requirements, see [System requirements](https://experienceleague.ad
 
 See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how to add [!DNL Product Recommendations] into [!DNL Page Builder] content.
 
+### Fastly Image Optimization
+
+[!DNL Product Recommendations] supports an optional [Fastly Image Optimization](install-configure.md#fastlysupport) module that applies Fastly Image Optimization parameters to [!DNL Product Recommendations] image URLs. To add this support, refer to [Install and Configure](install-configure.md#fastlysupport).
+
 ### SaaS price indexing
 
 Product Recommendation customers can use [SaaS price indexing](../price-index/price-indexing.md), which provides faster price changes updates and synchronization time.

@@ -30,18 +30,18 @@ The workspace is where you configure, manage, and monitor the performance of [!D
 
 To ensure that each functional area on the workspace contains the correct data, you need to configure data collection based on the selected storefront implementation:
 
-1. Luma - Data collection is available out-of-the-box.
+1. Luma - Data collection is available by default.
 1. Headless - Data collection must be configured manually, depending on storefront implementation.
 
-If you are using a headless storefront, refer to the following documentation to get more information about the required events that you need to add:
+To get more information about the required events that you need to add for a headless storefront, refer to the following documentation:
 
 - [Required events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) for Live Search dashboard.
-- [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) that needs to be added as a prerequisite.
+- [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/) that needs to be added as a prerequisite.
 - [Examples](https://github.com/adobe/commerce-events/tree/main/examples) of the events structure.
 
 ### Healthcare customers
 
-If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Live Search] is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for [!DNL Live Search]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) to learn more.
+If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, [!DNL Live Search] no longer captures storefront event data. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for [!DNL Live Search]. To learn more, see [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Set the scope
 
@@ -61,7 +61,7 @@ Initially the [scope](https://experienceleague.adobe.com/en/docs/commerce-admin/
 
 ## Set attributes as searchable
 
-To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
+To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves," the shirts appear in the search results.
 
 To allow attributes to be searchable, complete the following steps:
 
@@ -69,7 +69,7 @@ To allow attributes to be searchable, complete the following steps:
 1. Select the attribute you want to be searchable, such as `color`.
 1. Select **Storefront Properties** and set **Use in Search** to `yes`.
 
-[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
+[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight appear higher within the search results.
 
 The following attributes are always searchable:
 
@@ -79,13 +79,15 @@ The following attributes are always searchable:
 
 >[!TIP]
 >
->Choosing which attributes to make searchable has a big impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the Best Practices guide for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
+>Choosing which attributes to make searchable has a significant impact on search quality. See [Leverage Product Metadata](best-practice.md#leverage-product-metadata) in the _Best Practices Guide_ for detailed guidance on selecting searchable attributes and avoiding common configuration issues.
 
 ### Attribute behavior in complex products
 
 For complex product types (configurable, bundle, and grouped products), [!DNL Live Search] indexes attribute values from both parent and child products, allowing a parent product to be associated with multiple values for the same attribute. This enables variant-based filtering; for example, a configurable shirt appears when filtering by "blue" if any variant is blue, even if the parent product does not have a color set.
 
-This works well for attributes like color and size, but can cause unexpected results for attributes like `new_arrival`, `product_ranking`, `promotion_label`, or custom price attributes. For example, if a configurable product (SKU-001) has `new_arrival = true`, but its child variant (SKU-001-01) has `new_arrival = false`, then the parent product SKU-001 is indexed with both values (`true` and `false`), allowing it to appear in search results for either condition.
+This behavior works well for attributes such as color and size, but it can produce unexpected results for attributes that describe the product as a whole, such as `new_arrival`, `product_ranking`, `promotion_label`, and custom prices.
+
+For example, suppose the configurable product (SKU-001) has `new_arrival = true`, while its child variant SKU-001-01 has `new_arrival = false`. When variant values are aggregated for the parent product, SKU-001 is indexed with both `new_arrival = true` and `new_arrival = false`. As a result, the parent product can appear in search results for either value, even though each value applies to a different variant.
 
 ### Layered search and expansion of search types
 
@@ -98,11 +100,11 @@ Layered search, or search within a search, is a powerful, attribute-based filter
 With layered search you can:
 
 - Enable shoppers to search within the search results.
-- Use `startsWith` and `contains` search indexation in the second layer of the layered search to further refine the results.
+- To refine the results further, use `startsWith` and `contains` search indexation in the second layer of the layered search.
 
-The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
+The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) using specific operators:
 
-- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
+- **Layered search** - Search within another search context - With this capability, you can perform up to two layers of search for your search queries. For example:
 
   - **Layer 1 search** - Search for "motor" on `product_attribute_1`.
   - **Layer 2 search** - Search for "part number 123" on `product_attribute_2`. This example searches for "part number 123" within the results for "motor".
@@ -118,13 +120,15 @@ The advanced search capabilities are implemented through the `filter` parameter 
 
     - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
 
-        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+        >[!NOTE]
+        >
+        >This search type differs from the existing [phrase search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase), which supports autocomplete by matching the beginnings of words. For example, if a product attribute value is "outdoor pants", a phrase search returns results for "out pan" because "out" and "pan" match the beginnings of words in the value. It does not return results for "oor ants" because those strings occur within the words. A contains search matches text anywhere within a word, so it returns results for "oor ants".
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
 #### Implementation
 
-1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable.
+1. To make a product attribute searchable, go to the Admin and [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
 
     See the list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
@@ -132,7 +136,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
     ![Specify search capability](./assets/search-filters-admin.png)
 
-1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
+1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#filtering-using-search-capability) for examples of how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
 
     You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions.
 
@@ -160,15 +164,15 @@ Layered search and facets serve different purposes in product discovery, and cho
 
 ## Facets and synonyms
 
-Facets and synonyms are another way you can enahnce the search experience for your shoppers.
+Facets and synonyms are another way you can enhance the search experience for your shoppers.
 
 [Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time.
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#step-1-add-a-facet).
+>A product attribute is filterable only if it has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#step-1-add-a-facet).
 
-[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
+[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms get users to the "pants" results.
 
 ## Commerce configuration settings
 
@@ -178,7 +182,7 @@ The following section describes the supported and unsupported Commerce configura
 
 >[!IMPORTANT]
 >
->It is highly recommended you use the product listing widgets, enabled by default in Live Search 4.0.0. The widgets are targeted to replace adapter implementation in future releases completely. See [enable product listing widgets](install.md#enable-product-listing-widgets) to learn more.
+>Adobe recommends that you use the product listing widgets, enabled by default in Live Search 4.0.0. The widgets are targeted to replace adapter implementation in future releases. To learn more, see [enable product listing widgets](install.md#enable-product-listing-widgets).
 
 |Commerce Configuration Setting|Description|Supported by Popover|Supported by Adapter|
 |---|---|---|---|
@@ -203,7 +207,7 @@ Prices in the Widget Product Listing Page and Popover are converted to the Defau
 
 ## Default attribute values
 
-The following product attributes have [storefront properties](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that are used by [!DNL Live Search] and enabled by default.
+The following product attributes have [storefront properties](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that [!DNL Live Search] uses and enables by default.
 
 | Property | Storefront Property | Attribute |
 |---|---|---|
@@ -213,7 +217,7 @@ The following product attributes have [storefront properties](https://experience
 
 ## Default non-system attribute properties
 
-The following table shows the default search and filterable properties of non-system attributes, including those that are specific to the Luma sample data. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Live Search] and native Adobe Commerce.
+The following table shows the default search and filterable properties of non-system attributes, including those that are specific to the Luma sample data. To make the attribute searchable in both [!DNL Live Search] and native Adobe Commerce, set the *Use in Search* attribute property to `Yes`.
 
 | Attribute Code | Searchable | Use in Layered Navigation |
 |--- |--- |--- |
