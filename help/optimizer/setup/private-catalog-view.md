@@ -121,7 +121,7 @@ If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the 
 
 >[!NOTE]
 >
->For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B] extension, you manage access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+>For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B] extension, you manage access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). For details, see [Restricted access key management](../../aco-connector/restricted-access-keys.md) in the *[!DNL Adobe Commerce Optimizer Connector] Integration Guide*.
 
 ## More like this
 

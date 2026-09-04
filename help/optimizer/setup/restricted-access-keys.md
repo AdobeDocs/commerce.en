@@ -65,7 +65,7 @@ The following steps describe how a key pair and signed token move from creation 
 
 >[!NOTE]
 >
->This section and the three that follow describe the manual [!DNL Adobe Commerce Optimizer] Studio flow. If you use B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], manage keys instead from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). See [Key management and rotation](#key-management-and-rotation).
+>This section and the three that follow describe the manual [!DNL Adobe Commerce Optimizer] Studio flow. If you use B2B shared catalogs with the [!DNL Adobe Commerce Optimizer Connector B2B extension], manage keys instead from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). See [Restricted Access Keys](../../aco-connector/restricted-access-keys.md) in the _Adobe Commerce Optimizer Connector_ documentation.
 
 For initial testing of private catalog views, generate a key pair using a tool such as [!DNL OpenSSL]. Keep the private key secret — only the public key is uploaded to [!DNL Commerce Optimizer].
 
