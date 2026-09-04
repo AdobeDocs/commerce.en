@@ -85,7 +85,7 @@ _April 25, 2023_
 
 ## Current major version
 
-### 6.8.0 of magento/module-fastly-recommendations
+### 6.8.0 of magento/product-recommendations
 
 _September 3, 2026_
 
