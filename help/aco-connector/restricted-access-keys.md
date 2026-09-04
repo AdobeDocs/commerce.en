@@ -46,7 +46,7 @@ If you use [!DNL Adobe Commerce] B2B shared catalogs with the [!DNL Adobe Commer
 
 >[!NOTE]
 >
->To manage keys you create manually for non-B2B use cases such as partner portals. See [Restricted access keys](/help/optimizer/setup/restricted-access-keys.md#create-a-restricted-access-key-for-a-catalog-view).
+>To manage keys you create manually for non-B2B use cases such as partner portals, see [Restricted access keys](/help/optimizer/setup/restricted-access-keys.md#create-a-restricted-access-key-for-a-catalog-view).
 
 ## Access the page {#access-the-page}
 
