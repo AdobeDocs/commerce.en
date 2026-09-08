@@ -89,7 +89,7 @@ These endpoints allow admins to synchronize configuration across environments pr
 
 A new [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns per-source stock availability for one or more SKUs, so storefronts such as product and category pages can display accurate stock information for each inventory source.
 
-[Enable **Per-Source Availability](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
+[Enable **Per-Source Availability**](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
 
 ### Read persistent wishlist and account-sharing settings through GraphQL
 
@@ -148,7 +148,7 @@ Merchants can now self-service the onboarding of a different PayPal account at t
 
 ### Free Gift cart price rules
 
-The [**Free Gift** cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)) is now available in the [!DNL Commerce Admin] for storefronts.
+The [**Free Gift** cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) is now available in the [!DNL Commerce Admin] for storefronts.
 <!-- AC-17678 -->
 
 This rule allows you to add a free gift product to the cart when the rule conditions are met. When a rule requires a choice, shoppers can select a gift SKU using the new [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL mutation, which supports configurable and bundle gift products.
