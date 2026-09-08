@@ -12,7 +12,7 @@ feature: Services
   - [How synchronization works](sync-overview.md)
   - [Manage synchronization](data-sync-manage.md)
   - [Feed lock mechanism](feed-lock-mechanism.md)
-  - [Support for custom product types (Early Access)](custom-product-types.md)
+  - {hide-from-toc} [Support for custom product types (Early Access)](custom-product-types.md)
 - Export scheduling and performance {#performance}
   - [Estimate data volume and transmission time](estimate-data-volume-sync-time.md)
   - [Improve export performance](customize-export-processing.md)

@@ -121,9 +121,11 @@ The schema reduces the diversity of product types to two use cases:
   * Shoppers can specify quantities for individual component products.
   * Product options (like size, color, material) are unified and work the same way regardless of product type. Each option selection points to a specific simple product with its own attributes and price. The final product remains undefined until the shopper selects all required options.
 
+<!--
 >[!NOTE]
 >
 >Custom product types introduced by third-party extensions are not covered by this mapping. For [!DNL Commerce Storefront MCP] deployments (Early Access), a catalog enablement module can represent these custom types as simple products in the catalog data sent to [!DNL Catalog Service]. See [Support for custom product types in SaaS catalog data export](../data-export/custom-product-types.md).
+-->
 
 #### Product view attributes
 

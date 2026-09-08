@@ -2,6 +2,7 @@
 title: Support for Custom Product Types in SaaS Catalog Data Export
 description: Learn how the Commerce Storefront MCP catalog enablement module lets SaaS Data Export represent unrecognized, custom third-party product types as simple products in catalog data sent to Live Search and Catalog Service.
 role: Admin, Developer
+hide: true
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
