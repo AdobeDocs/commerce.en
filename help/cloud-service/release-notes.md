@@ -60,11 +60,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## September 2026 - release #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items will be published to Production on September 8, 2026.
+The following items were published to Production on September 8, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -76,7 +76,7 @@ Refer to the [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe
 
 ### Sync sandbox and production configurations through the REST API
 
-New `GET` and `PUT /V1/system/config` REST API endpoints let integrations read and update Commerce system configuration values, including:
+New [`GET` and `PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoints let integrations read and update Commerce system configuration values, including:
 
 * Store information
 * Shipping and tax settings
@@ -87,15 +87,17 @@ These endpoints allow admins to synchronize configuration across environments pr
 
 ### Query inventory availability through GraphQL
 
-A new `sourceAvailability` GraphQL query returns per-source stock availability for one or more SKUs, so storefronts such as product and category pages can display accurate stock information for each inventory source. <!-- ACCS-933 -->
+A new [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns per-source stock availability for one or more SKUs, so storefronts such as product and category pages can display accurate stock information for each inventory source.
+
+[Enable **Per-Source Availability](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
 
 ### Read persistent wishlist and account-sharing settings through GraphQL
 
-The `storeConfig` GraphQL query now returns `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist`, and `share_customer_accounts_scope` configuration values, so storefronts can access merchant persistent shopping cart and wishlist settings without contacting support. <!-- USF-4051 -->
+The [`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) GraphQL query now returns `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist`, and `share_customer_accounts_scope` configuration values, so storefronts can access merchant persistent shopping cart and wishlist settings without contacting support. <!-- USF-4051 -->
 
 ### Search customer orders by product, SKU, or order ID
 
-The `CustomerOrdersFilterInput` GraphQL input now supports an optional `search` field that matches against the order number, item SKU, or item name, combined with any other filters you provide. <!-- USF-4290 -->
+The [`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) GraphQL input now supports an optional `search` field that matches against the order number, item SKU, or item name, combined with any other filters you provide. <!-- USF-4290 -->
 
 ### Update and delete custom email templates through the API
 
@@ -146,15 +148,14 @@ Merchants can now self-service the onboarding of a different PayPal account at t
 
 ### Free Gift cart price rules
 
-The **Free Gift** cart price rule is now available in the [!DNL Commerce Admin] for storefronts. <!-- AC-17678 -->
+The [**Free Gift** cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)) is now available in the [!DNL Commerce Admin] for storefronts.
+<!-- AC-17678 -->
 
-This rule allows you to add a free gift product to the cart when the rule conditions are met.
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+This rule allows you to add a free gift product to the cart when the rule conditions are met. When a rule requires a choice, shoppers can select a gift SKU using the new [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL mutation, which supports configurable and bundle gift products.
 
 ### Schedule cart price rules by date and time
 
-You can now set the time of day you want a [cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
+You can now set the time of day you want a [cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
