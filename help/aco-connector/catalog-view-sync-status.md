@@ -1,7 +1,7 @@
 ---
 title: Monitor Catalog View Synchronization for B2B Shared Catalogs
 last-update: 2026-09-03
-description: "Learn how to use the Catalog View Sync Status page to monitor and reconcile B2B shared catalog projections in the Adobe Commerce Optimizer Connector."
+description: "Use the Catalog View Sync Status page to monitor and reconcile B2B shared catalog view, policy, price book, and key configuration data synchronized to Adobe Commerce Optimize."
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -43,17 +43,17 @@ topic_v2:
 
 Track B2B shared catalog synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] using the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
 
-[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book, and restricted access key for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
+[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book, and restricted access key configurations for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Access the sync status page {#access-the-sync-status-page}
 
 From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Catalog View Sync Status]**.
 
-![Catalog View Sync Status page listing projected catalog views and their sync health](assets/catalog-view-sync-status.png){width="600" zoomable="yes"}
+![Catalog View Sync Status page to monitor the sync status of the catalog view, policy, price book, and access key configurations in Adobe Commerce Optimizer](assets/catalog-view-sync-status.png){width="600" zoomable="yes"}
 
 ## Interpret sync status for your shared catalogs {#interpret-sync-status}
 
-In the dashboard, each row represents one catalog view projected from a shared catalog and store view combination. Use the status information to determine whether the data delivered to the company's storefront experience is complete and correct. The following table summarizes the most common status values and what they mean for your shared catalog:
+In the dashboard, each row represents one custom shared catalog view projected from a shared catalog and store view combination. Use the status information to determine whether the data delivered to the company's storefront experience is complete and correct. The following table summarizes the most common status values and what they mean for your shared catalog:
 
 | Status | What it means for your shared catalog |
 | --- | --- |
@@ -66,7 +66,7 @@ In the dashboard, each row represents one catalog view projected from a shared c
 
 ## Choose monitoring or repair {#choose-monitoring-or-repair}
 
-[!DNL Adobe Commerce] is always the source of truth for your B2B shared catalog projection. If you or another administrator changed a policy, price book, or key directly in [!DNL Adobe Commerce Optimizer] Studio, reconciliation reports it as drift.
+[!DNL Adobe Commerce] is always the source of truth for the catalog view, policy, price book, and key configurations for B2B shared catalogs. If you or another administrator changed a policy, price book, or key configuration setting directly in [!DNL Adobe Commerce Optimizer] Studio, reconciliation reports the configuration differences as drift.
 
 - Select **[!UICONTROL Reconcile]** to check for drift without changing anything, so you can review differences before acting.
 - Select **[!UICONTROL Reconcile & Repair]** to restore the expected configuration for any repairable drift.

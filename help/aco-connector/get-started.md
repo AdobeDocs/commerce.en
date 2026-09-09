@@ -142,7 +142,7 @@ The following table describes what data is exported at each scope level:
 
 >[!NOTE]
 >
->If [!DNL Adobe Commerce] B2B is enabled and shared catalogs are configured, the connector automatically projects each shared catalog into a [private catalog view](../optimizer/setup/private-catalog-view.md) per store view. No separate scope setting is required.
+>If [!DNL Adobe Commerce] B2B is enabled and shared catalogs are configured, the connector automatically synchronizes the catalog, policy, price book, and key configurations for each shared catalog into a [private catalog view](../optimizer/setup/private-catalog-view.md) per store view. No separate scope setting is required.
 
 ![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 
