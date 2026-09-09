@@ -36,7 +36,7 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
 >[!BEGINSHADEBOX]
 
-_August 24, 2026_
+_September 9, 2026_
 
 ![New](../assets/new.svg) **Multi-value HTTP header trigger policies**—Trigger policies using the `HTTP_HEADER` transport type can now receive multiple comma-separated values in a single header (for example, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Policy filters using `IN` evaluate the values with `OR` semantics. Filters using `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` reject the request with a validation error if the header contains multiple values. This behavior applies only to trigger policies using the `HTTP_HEADER` transport. [Learn more](./setup/policies.md#multi-value-http-header-triggers).
 <!--COMOPT-2439-->
