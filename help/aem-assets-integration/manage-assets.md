@@ -75,6 +75,12 @@ To learn how to link assets to products in AEM Assets (including metadata config
 * [Default automatic matching](synchronize/default-match.md)
 * [Custom automatic matching](synchronize/custom-match.md).
 
+### Manage localized alt text
+
+You author localized alt text in AEM Assets, not in the Commerce product media gallery. Add a row for each Commerce store view in the **[!UICONTROL Alt texts]** multifield, then approve the asset so the existing synchronization process transfers the values to Commerce.
+
+Commerce stores each synchronized value in the standard image **[!UICONTROL Label]** field. Alt-text localization does not change the asset assignment, image role, or gallery position. Customer-created database fields such as `alt_text` are outside the standard integration scope.
+
 ### Synchronization SLAs
 
 For information about synchronization timing, see the [Synchronization SLA](get-started/setup-synchronization.md#synchronization-sla) topic.

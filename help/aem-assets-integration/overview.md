@@ -48,6 +48,19 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 
 * **Streamlined Catalog Management** – Automates asset refresh and cleanup, minimizing manual effort and ensuring a consistent, well-maintained product catalog.
 
+* **Localized image alt text** – With AEM Assets Integration extension version 1.3.6 or later, you can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
+
+Alt-text localization does not change product-image assignment or gallery mapping. Store-view asset availability is a separate capability and is not covered by the alt-text workflow described here.
+
+```mermaid
+flowchart LR
+ A[AEM Assets author] --> B[Commerce metadata]
+ B --> C[Asset approval]
+ C --> D[Assets Integration Service]
+ D --> E[Commerce media gallery]
+ E --> F[Storefront API response]
+```
+
 ## Requirements to use the integration
 
 To leverage this integration either with [Product Visuals or AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets), businesses must meet the following requirements:
@@ -111,6 +124,8 @@ Learn how to use Adobe Commerce as a Cloud Service with the AEM Assets integrati
 The process to install and configure the AEM Assets integration depends on your Adobe Commerce deployment. In all cases, you first configure AEM Assets, then connect Commerce to it.
 
 To understand the namespace, metadata schema, and **[!UICONTROL Commerce]** tab that the integration adds to your AEM Assets environment, review [Commerce metadata in AEM Assets](metadata.md) before you begin.
+
+For localized image alt text, see [Localized alt text in AEM Assets metadata](metadata.md#localized-alt-text-in-aem-assets-metadata). For setup and synchronization instructions, see [Configure the AEM Assets project](get-started/configure-aem.md) and [Configure the integration](get-started/setup-synchronization.md).
 
 Select your deployment to follow the required steps in order:
 

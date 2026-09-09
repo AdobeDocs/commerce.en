@@ -32,6 +32,16 @@ _February 11, 2025_
 
 +++
 
+## v1.4.5
+
+_September 10, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1321 --> Added support for localized image alt text authored per Commerce store view in AEM Assets. The synchronized values appear in Commerce's standard image **[!UICONTROL Label]** field.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1321 --> Added support for store-view asset visibility. Merchants can hide an AEM asset from selected store views, and Commerce excludes the asset from storefront responses for those store views.
+
 ## v1.4.4
 
 _July 30, 2026_

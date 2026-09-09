@@ -29,6 +29,8 @@ Commerce metadata enables the following capabilities:
 * **Add Commerce-specific alt text keyed by store view** via the `commerce:altTextStoreViews` and `commerce:altTextValues` fields.
 * **Expose these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
+Localized image alt text requires AEM Assets Integration extension version 1.3.6 or later.
+
 >[!IMPORTANT]
 >
 >The **Commerce-specific alt text** capability is not yet available through [self-service onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service). It is currently provided only when you deploy the `assets-commerce` custom code package (see [Install the assets-commerce package manually](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Native support is planned for an upcoming AEM release.
@@ -94,3 +96,34 @@ Alternative text entries are persisted in JCR asset metadata as two index-aligne
 * `commerce:altTextValues`: Matching alt text at the same index as each entry in `commerce:altTextStoreViews`.
 
 When these assets synchronize to Adobe Commerce, per-store view alt text is written to the product media gallery for the matching store view codes. The underlying image mapping is unchanged.
+
+Example metadata values:
+
+```text
+commerce:altTextStoreViews = ["en_US", "fr_FR"]
+commerce:altTextValues = ["Running shoe", "Chaussure de course"]
+```
+
+When these assets synchronize to Adobe Commerce, each alt-text value is written to Commerce's standard image **[!UICONTROL Label]** field for the matching store view code. The integration does not populate a customer-created `alt_text` database column.
+
+Alt text is localized per store view, but the underlying product-image assignment and gallery mapping remain unchanged. A single image assignment continues to apply according to the existing Commerce gallery behavior.
+
+### Troubleshoot localized alt text
+
+If localized alt text does not appear, verify the following conditions:
+
+* The Commerce extension is version 1.3.6 or later.
+
+* The **[!UICONTROL Alt texts]** multifield is available in the AEM Assets **[!UICONTROL Commerce]** tab.
+
+* Store view codes match the Commerce store view codes exactly.
+
+* Each row includes a store view code and an alt-text value no longer than 255 characters.
+
+* The asset is associated with the correct SKU and is approved.
+
+* Asset synchronization has completed successfully.
+
+* The storefront request uses the intended store-view context.
+
+If the localized value is still missing, review the asset synchronization status in Commerce Admin. For synchronization troubleshooting, see [View AEM Assets sync status](get-started/sync-status.md).
