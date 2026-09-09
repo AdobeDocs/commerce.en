@@ -29,7 +29,7 @@ Commerce metadata enables the following capabilities:
 * **Add Commerce-specific alt text keyed by store view** via the `commerce:altTextStoreViews` and `commerce:altTextValues` fields.
 * **Expose these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
-Localized image alt text requires AEM Assets Integration extension version 1.3.6 or later.
+Localized image alt text requires AEM Assets Integration extension version 1.4.5 or later.
 
 >[!IMPORTANT]
 >
@@ -86,7 +86,7 @@ The multifield contains one row per Commerce store view. Each row has two inputs
 
 Select **[!UICONTROL Add]** to add more rows for additional store views. To remove a row, select the **[!UICONTROL Delete]** icon on that row to remove it.
 
-![Alt texts multifield with Store View Code and Alt Text inputs](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+![Alt texts multifield with Store View Code and Alt Text inputs](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 When you save, client-side validation blocks submission if any row has an empty _[!UICONTROL Store View Code]_ or if two rows use the same store view code (case-insensitive).
 
@@ -107,23 +107,3 @@ commerce:altTextValues = ["Running shoe", "Chaussure de course"]
 When these assets synchronize to Adobe Commerce, each alt-text value is written to Commerce's standard image **[!UICONTROL Label]** field for the matching store view code. The integration does not populate a customer-created `alt_text` database column.
 
 Alt text is localized per store view, but the underlying product-image assignment and gallery mapping remain unchanged. A single image assignment continues to apply according to the existing Commerce gallery behavior.
-
-### Troubleshoot localized alt text
-
-If localized alt text does not appear, verify the following conditions:
-
-* The Commerce extension is version 1.3.6 or later.
-
-* The **[!UICONTROL Alt texts]** multifield is available in the AEM Assets **[!UICONTROL Commerce]** tab.
-
-* Store view codes match the Commerce store view codes exactly.
-
-* Each row includes a store view code and an alt-text value no longer than 255 characters.
-
-* The asset is associated with the correct SKU and is approved.
-
-* Asset synchronization has completed successfully.
-
-* The storefront request uses the intended store-view context.
-
-If the localized value is still missing, review the asset synchronization status in Commerce Admin. For synchronization troubleshooting, see [View AEM Assets sync status](get-started/sync-status.md).

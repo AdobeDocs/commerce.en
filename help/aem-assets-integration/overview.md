@@ -48,18 +48,9 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 
 * **Streamlined Catalog Management** – Automates asset refresh and cleanup, minimizing manual effort and ensuring a consistent, well-maintained product catalog.
 
-* **Localized image alt text** – With AEM Assets Integration extension version 1.3.6 or later, you can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
+* **Localized image alt text** – With AEM Assets Integration extension version 1.4.5 or later, you can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
 
-Alt-text localization does not change product-image assignment or gallery mapping. Store-view asset availability is a separate capability and is not covered by the alt-text workflow described here.
-
-```mermaid
-flowchart LR
- A[AEM Assets author] --> B[Commerce metadata]
- B --> C[Asset approval]
- C --> D[Assets Integration Service]
- D --> E[Commerce media gallery]
- E --> F[Storefront API response]
-```
+Alt-text localization does not change product-image assignment or gallery mapping. Store-view asset availability is a separate capability and is not covered by the alt-text workflow.
 
 ## Requirements to use the integration
 
