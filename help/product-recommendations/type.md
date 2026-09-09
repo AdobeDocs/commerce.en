@@ -132,6 +132,10 @@ These recommendation types recommend top performing products based on success cr
 
 The _Visual similarity_ recommendation type recommends similar looking products to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience.
 
+>[!NOTE]
+>
+>Because this recommendation type is not applicable to most catalogs, the system does not enable it by default. Explicitly [enable this recommendation type](#enable-visual-similarity-recommendation-type).
+
 ### How it works
 
 The _Visual similarity_ recommendation type offers recommendations for other products in your catalog that have a visual similarity to the imagery currently being viewed. Visual similarity includes aspects such as:
@@ -145,15 +149,11 @@ The _Visual similarity_ recommendation type offers recommendations for other pro
 
 Adobe AI uses AI to process and analyze the imagery in your catalog and build attributes used to determine visual similarities.
 
->[!NOTE]
->
-> If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
+#### Special considerations
 
->[!NOTE]
->
-> Currently, product images must be 10 MB or less in size.
-
-Because this recommendation type is not applicable to most catalogs, the system does not enable it by default. Explicitly enable this recommendation type.
+- If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
+- Currently, product images must be 10 MB or less in size.
+- The optional [Fastly Image Optimization](install-configure.md#fastlysupport) module can apply Fastly Image Optimization parameters to [!DNL Product Recommendations] image URLs. See [Add Fastly Image Optimization support](install-configure.md#fastlysupport) for details.
 
 ### Enable Visual similarity recommendation type
 
