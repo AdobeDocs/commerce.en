@@ -29,7 +29,7 @@ topic_v2:
 ---
 # What are [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] help you show personalized product recommendations on Adobe Commerce storefronts using [Adobe AI](https://business.adobe.com/ai.html) and machine learning on aggregated shopper behavior and your catalog. This overview covers service constraints (including HIPAA), data and privacy, where recommendation units appear, storefront implementation paths, how recommendations complement product relationships, and catalog data retention.
+ [!DNL Product Recommendations] use [Adobe AI](https://business.adobe.com/ai.html) and machine learning trained on aggregated shopper behavior and catalog data to deliver personalized recommendations on Adobe Commerce storefronts. This overview covers service constraints (including HIPAA), data privacy, recommendation unit placement, storefront implementation options, product relationship integration, and catalog data retention.
 
 >[!IMPORTANT]
 >
@@ -45,7 +45,7 @@ For more information about data syncing, see the [Data Management Dashboard](htt
 
 ## Where recommendations appear
 
-Recommendations appear on the storefront as units with labels, such as "Customers who viewed this product also viewed". You can create, manage, and deploy recommendations across your store views from the Adobe Commerce Admin. If your Commerce project uses the [Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview), you create, manage, and deploy recommendations through [Adobe Commerce Optimizer](../optimizer/overview.md).
+Recommendations appear on the storefront as units with labels, such as "Customers who viewed this product also viewed." You can create, manage, and deploy recommendations across your store views from the Adobe Commerce Admin. If your Commerce project uses the [Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview), you create, manage, and deploy recommendations through [Adobe Commerce Optimizer](../optimizer/overview.md).
 
 ## Storefront implementations
 
@@ -61,7 +61,7 @@ Choose the documentation that matches your storefront:
 
 ## Product recommendations versus product relationships
 
-Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) gives you more flexibility when promoting products. You can leverage [!DNL Product Recommendations] powered by Adobe AI to intelligently automate your recommendations at scale. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
+Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) gives you more flexibility when promoting products. To automate your recommendations at scale, you can leverage [!DNL Product Recommendations] powered by Adobe AI. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
 
 Product recommendations allow you to:
 
@@ -71,18 +71,18 @@ Product recommendations allow you to:
 
 ## Product recommendations demo
 
-Watch this video to learn about [!DNL Product Recommendations]:
+To learn about [!DNL Product Recommendations], watch this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
 
 ## Catalog data retention policy
 
-The [!DNL Product Recommendations] service depends on catalog data that stays in sync with your Adobe Commerce environment. Inactive catalogs or environments that stop querying that data can enter hibernation, which affects what the service returns until you reactivate.
+The [!DNL Product Recommendations] service depends on catalog data that stays in sync with your Adobe Commerce environment. Inactive catalogs or environments that stop querying that data can become inactive, which affects what the service returns until you reactivate.
 
-If you do not submit a query for the catalog data in your **testing** environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any query. Catalog data in your **production** environment is not affected by the 90-day rule.
+If you do not submit a query for the catalog data in your **testing** environment for 90 consecutive days, the catalog data is set to inactive mode and no data is returned for any query. The 90-day rule does not affect catalog data in your **production** environment.
 
-If your environment has an **empty catalog** 45 days after being created, the catalog data is set to hibernation mode and no data is returned for any query. This applies to both production and testing environments.
+If your environment has an **empty catalog** 45 days after being created, the catalog data is set to inactive mode and no data is returned for any query. This applies to both production and testing environments.
 
 ### Reactivate catalog data
 
-To restore catalog data after hibernation, [submit a support request](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) with the title "Reactivate [!DNL Product Recommendations]" and include the environment IDs. Catalog data should be restored within a couple of hours.
+To restore catalog data after it becomes inactive, [submit a support request](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) with the title "Reactivate [!DNL Product Recommendations]" and include the environment IDs. Catalog data should be restored within two hours.
