@@ -27,7 +27,11 @@ topic_v2:
 ---
 # Create and Manage Rules
 
-To build a rule, open the rule editor, choose a **rule type** (search conditions, default listing, or category pages), then define conditions and ranking where they apply, test the results, and publish the rule.
+To build and publish a rule:
+
+1. In Optimizer Studio, open the rule editor, choose a **rule type** (search conditions, default listing, category pages, or product attributes), then define conditions and ranking where they apply.
+1. Test the results.
+1. Publish the rule.
 
 ## Create a rule {#create-a-rule}
 
@@ -79,7 +83,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 **Multiple conditions**
 
@@ -98,7 +102,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and is triggered more often in the storefront than the other.
 
 1. To add another condition, click **Add condition** and repeat the process.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 >[!TAB Category rule]
 
@@ -127,10 +131,9 @@ When multiple categories have similar names, use the category path displayed wit
    - **Apply to subcategories** - Applies the rule to subcategories that do not already have an active merchandising rule defined.
    - **Preview** - Displays how the category page would appear on your storefront.
 
-   ![Category Action Menu](../../assets/category-action-menu.png)
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
 
-1. Verify the category path displayed for each selected category to confirm you selected the correct one.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
+   ![Category Action Menu](../../assets/category-action-menu.png)
 
 >[!ENDTABS]
 
@@ -150,6 +153,20 @@ Store owners can set strategies such as the following. Exact labels and time win
 - **None** — For search and default listings, products are ordered by **Relevance**. For **category rules**, uses the default merchandising order for the category when you do not choose another intelligent strategy.
 
 Select the strategy for your rule. The **[!UICONTROL Test your rule]** pane shows expected results for search-oriented rules; **category rules** use the category preview.
+
+#### Behavioral signals for configurable products and variants {#behavioral-signals-variants}
+
+Intelligent ranking collects behavioral signals, such as views, add-to-cart events, and purchases, against the specific product a shopper interacts with. For a configurable product, this means signals are recorded at the **variant** (simple product) level, not against the configurable parent.
+
+When ranking a configurable product, intelligent ranking aggregates the behavioral signals collected from all of its variants and rolls them up to the configurable parent. A configurable product's ranking score reflects the combined signals of every variant, not just one.
+
+This aggregation happens within the scope of the category being browsed. A variant only contributes its behavioral signals to the configurable parent's ranking score for categories to which that **variant** is assigned. If a variant is missing from a category, its signals do not count toward the parent's ranking in that category, even when the configurable parent itself is assigned there.
+
+**Best practice:** Review category assignments for all product variants, especially in catalogs that use size-, color-, or other variant-specific category structures, to confirm that every variant is assigned to each category where it is expected to appear and influence ranking.
+
+**Example:**
+
+A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on that page. This is true even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
 
 #### Intelligent ranking boost {#intelligent-ranking-boost}
 
@@ -212,6 +229,7 @@ See [search rules](./best-practice.md#tips-to-optimize-search-rules) to learn ho
 #### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
+- If intelligent ranking results do not correlate with actual sales or view performance, confirm that all relevant product variants are assigned to the category being reviewed. Missing variant category assignments are a common and easily overlooked cause of unexpected ranking behavior. See [Behavioral signals for configurable products and variants](#behavioral-signals-variants).
 - To ensure intelligent ranking works correctly for **search**, make sure that the **Search Weight** for any attributes that are used for search or filtering (facets) is `5` or less. (This guidance applies to search indexing, not to category-only merchandising flows.)
 
 For information about setting search weights, see the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/).
@@ -220,10 +238,10 @@ For information about setting search weights, see the [Metadata API](https://dev
 
 **Manual ranking** events adjust product order for **search results** (when your rule's conditions are met), for **default product listings**, and for **category page** listings. A single rule can have up to 25 events.
 
-- **Boost** — Moves a product higher in the listing.
-- **Bury** — Moves a SKU lower in the listing.
-- **Pin a product** — Fixes a product at the selected position in the listing.
-- **Hide a product** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
+- **[!UICONTROL Boost]** — Moves a SKU higher in the listing.
+- **[!UICONTROL Bury]** — Moves a SKU lower in the listing.
+- **[!UICONTROL Pin a product]** — Fixes a SKU at the selected position in the listing.
+- **[!UICONTROL Hide a product]** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
 
 The easiest way to pin a product is by drag and drop.
 
@@ -241,9 +259,48 @@ Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the phrase which matches part or the whole name or SKU of the product that you want to hide.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
+
+### Attribute ranking {#attribute-ranking}
+
+>[!AVAILABILITY]
+>
+>This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+
+**Attribute ranking** automatically applies a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, without requiring you to select individual SKUs. Attribute ranking appears in the rule editor alongside [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking), and is available for the **All products rule**, **search rules**, and **category rules**. Use it to scale merchandising across large catalogs, for example, boosting every product from a given brand, or burying every product in a discontinued color.
+
+![Attribute Ranking](../../assets/attribute-rank-rule.png)
+
+1. In the rule editor, expand **[!UICONTROL Attribute ranking]**.
+1. Click **[!UICONTROL Add attribute]** to add an attribute condition.
+1. From the dropdown at the top of the condition, select the action to apply to matching products: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**.
+1. Under **[!UICONTROL Attribute]**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
+1. Under **[!UICONTROL Value]**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **[!UICONTROL Selected values]**. A product matches the condition if it has any one of the listed values.
+
+   >[!NOTE]
+   >
+   >The **[!UICONTROL Value]** field accepts free text and is case sensitive. After adding a value, check the test pane to confirm it matches the expected products.
+
+1. For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
+1. To add another condition, click **[!UICONTROL Add attribute]** and repeat the previous steps.
+
+Pinning is not available in attribute ranking, because pinning assigns one product to one exact position, while an attribute condition can match many products at once. To pin a specific product, use [Manual ranking](#manual-ranking) on that SKU directly.
+
+#### How attribute ranking interacts with intelligent ranking
+
+When a rule combines an intelligent ranking strategy with one or more attribute conditions, the attribute action takes priority for any product it matches. Intelligent ranking continues to order the remaining, unmatched products.
+
+#### When attribute conditions conflict with each other
+
+A single product can match more than one attribute condition, whether within the same rule or across different rules. When matching conditions specify conflicting actions for the same product, **[!UICONTROL Hide]** takes priority over **[!UICONTROL Boost]** and **[!UICONTROL Bury]**.
+
+For example, one condition boosts all products with `season = Christmas`, and another hides all products with `brand = Nike`. A product with `season = Christmas` and `brand = Nike` is hidden, because **[!UICONTROL Hide]** takes priority over **[!UICONTROL Boost]**.
+
+#### Limits
+
+A single rule can have up to 25 attribute conditions, the same limit as manual ranking events.
 
 ### Finalizing the rule {#finalizing-the-rule}
 
@@ -291,7 +348,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 ### Conditions (if)
 
 | Condition | Description |
-|--- |--- |
+| --- | --- |
 | Search query contains | A character or string of text that is included in the shopper's query. The shopper's query needs to match only a single character to meet this condition. |
 | Search query is | A character or string of text that exactly matches the shopper's query. Complex queries with multiple conditions cannot be composed when this condition is used. |
 | Search query starts with | The shopper's query begins with this character or string of text. |
@@ -300,25 +357,34 @@ This option provides a quick way to see all the rule parameters, while staying o
 ### Logical operators
 
 | Operator | Description |
-|--- |--- |
+| --- | --- |
 | OR | (Default) The logical operator `OR` compares two conditions and meets the requirements to trigger an event if at least one condition is true. |
 | AND | The logical operator `AND` compares two conditions and meets the requirements to trigger an event if both conditions are true. |
 
 ### Match operators
 
 | Operator | Description |
-|--- |--- |
+| --- | --- |
 | Any | Changes all logical operators in the rule to `OR` and returns the set of matching products. |
 | All | Changes all logical operators in the rule to `AND` and returns the set of matching products. |
 
 ### Manual ranking events
 
-|Event |Description |
-|--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the listing (search or category). Each is marked with a "boosted" preview badge in the test results. |
-| Bury | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
-| Pin a product | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
-| Hide a product | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
+| Event | Description |
+| --- | --- |
+| [!UICONTROL Boost] | Moves a SKU or range of SKUs higher in the listing (search or category). Each is marked with a "boosted" preview badge in the test results. |
+| [!UICONTROL Bury] | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
+| [!UICONTROL Pin a product] | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
+| [!UICONTROL Hide a product] | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
+
+### Attribute ranking conditions
+
+| Field | Description |
+| --- | --- |
+| Action | The action applied to every product matching the condition: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**. |
+| [!UICONTROL Attribute] | The filterable, text-based product attribute the condition targets, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. |
+| [!UICONTROL Value] | One or more attribute values that a product must have to match the condition. Type a value and press Return to add it as a tag; a product matches if it has any one of the listed values. |
+| [!UICONTROL Boost strength] | For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, a slider that controls how strongly the action moves matching products. Shown only for **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, not **[!UICONTROL Hide]**. |
 
 ### Intelligent ranking controls
 
@@ -328,10 +394,10 @@ This option provides a quick way to see all the rule parameters, while staying o
 
 ### Details
 
-|Field |Description |
-|--- |--- |
+| Field | Description |
+| --- | --- |
 | Name | The name of the rule. Rule names must be unique. |
-| Rule Type | **Default** (all product listings), **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**.|
+| Rule Type | **Default** (all product listings), **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |

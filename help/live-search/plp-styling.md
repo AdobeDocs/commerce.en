@@ -20,15 +20,17 @@ topic_v2:
 ---
 # Product Listing Page Widget
 
-The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Services platform to provide a performant, searchable, and facet-able product listing page. This topic describes how to enable and style the PLP widget.
+The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Services Platform to provide a performant, searchable, and facetable product listing page. This topic describes how to enable and style the PLP widget.
 
 ## Enabling the PLP widget
 
 When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
 
-The [!DNL Live Search] PLP widget is enabled by default for new installations. 
+New installations enable the [!DNL Live Search] PLP widget by default. 
 
-If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so. 
+If you upgrade [!DNL Live Search] while the PLP widget is disabled, it remains disabled after the upgrade.
+
+
 
 >[!NOTE]
 >
@@ -41,7 +43,7 @@ To turn on the PLP widget:
 1. Click on the [!UICONTROL Storefront Features] section.
 1. Set [!UICONTROL Enable Product Listing Widget] = Yes
 1. Save Config
-1. If prompted, flush the cache ( go to System > Tools > Cache Management > [!UICONTROL Flush Magento Cache]).
+1. If prompted, flush the cache (go to System > Tools > Cache Management > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -49,15 +51,15 @@ To turn on the PLP widget:
 
 ## Widget features
 
-The PLP widget provides the following out-of-the-box features:
+The PLP widget provides the following standard features:
 
 - Add to Cart buttons - Available only for simple products.
 - Multiple images per product - Image can change when a different color is chosen for a configurable product.
-- Support for color swatches - Note that the color attribute must be spelled `color` for the code to properly validate.
+- Support for color swatches - Note that the color attribute must be spelled `color` for the code to validate properly.
 
 ### Customizing the widget
 
-In addition to the out-of-the-box features of the PLP widget, you can further customize the widget to include the following features:
+In addition to the standard features of the PLP widget, you can further customize the widget to include the following features:
 
 - Filtering by attributes
 - Multiple language support
@@ -71,17 +73,17 @@ For information about how to customize the PLP widget to handle the above featur
 
 ## Styling example
 
-You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+You can customize the appearance of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes; primary action classes will not work on a widget button. Generic targeted elements within the CSS are inherited; `button` applies to widget buttons.
+>Elements with custom classes within an Adobe Commerce theme are not inherited. Target these elements by their specific class to match the custom classes; primary action classes are not effective on a widget button. Generic targeted elements within the CSS are inherited; `button` applies to widget buttons.
 
 The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
 
 ![Pagination](assets/plp-css-example.png)
 
-Customize the product name by adding a rule to make them uppercase.
+Customize the product name by adding a rule to make it uppercase.
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -214,5 +216,5 @@ Customize the product name by adding a rule to make them uppercase.
 
 To disable the PLP widget:
 
-1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
+1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No."
 1. Select **Save Config** to save the setting.

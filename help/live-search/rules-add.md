@@ -100,6 +100,20 @@ Store owners can set up the following types of ranking strategies:
 
 Select the type of strategy for the rule. The **[!UICONTROL Test your rule]** window displays the expected results.
 
+### Behavioral signals for configurable products and variants {#behavioral-signals-variants}
+
+**[!DNL Live Search]** collects behavioral signals, such as views, add-to-cart events, and purchases, against the specific product a shopper interacts with. For a configurable product, this means signals are recorded at the **variant** (simple product) level, not against the configurable parent.
+
+When ranking a configurable product, **[!DNL Live Search]** aggregates the behavioral signals collected from all of its variants and rolls them up to the configurable parent. A configurable product's ranking score reflects the combined signals of every variant, not just one.
+
+This aggregation happens within the scope of the category being browsed. A variant only contributes its behavioral signals to the configurable parent's ranking score for categories to which that **variant** is assigned. If a variant is missing from a category, its signals do not count toward the parent's ranking in that category, even when the configurable parent itself is assigned there.
+
+**Best practice:** Review category assignments for all product variants, especially in catalogs that use size-, color-, or other variant-specific category structures, to confirm that every variant is assigned to each category where it is expected to appear and influence ranking.
+
+**Example:**
+
+A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on the 200g category page, even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
+
 ### Intelligent ranking boost {#intelligent-ranking-boost}
 
 For **Recommended for you**, **Most viewed**, **Most purchased**, **Most added to cart**, and **Trending**, the editor shows **[!UICONTROL Intelligent Ranking Boost]** (the boost factor). It is not used when you select **None**.
@@ -161,6 +175,7 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 ### Caveats
 
 * Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
+* If intelligent ranking results do not correlate with actual sales or view performance, confirm that all relevant product variants are assigned to the category being reviewed. Missing variant category assignments are a common and easily overlooked cause of unexpected ranking behavior. See [Behavioral signals for configurable products and variants](#behavioral-signals-variants).
 * To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any product attributes that are used for search or filtering (facets) is `5` or less. To find this setting in the [!DNL Commerce] Admin:
 
    1. Select **Stores** > _Attributes_ > **Product**.
@@ -177,10 +192,10 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 
 Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
-* Boost - Moves a product higher in the search results.
-* Bury - Moves a SKU lower in the search results.
-* Pin a product - Product is displayed in the selected "Position" on the page.
-* Hide a product - Excludes a SKU from the search results.
+* **[!UICONTROL Boost]** - Moves a SKU higher in the search results.
+* **[!UICONTROL Bury]** - Moves a SKU lower in the search results.
+* **[!UICONTROL Pin a product]** - SKU is displayed in the selected "Position" on the page.
+* **[!UICONTROL Hide a product]** - Excludes a SKU from the search results.
 
 The easiest way to pin a product is by drag and drop.
 
@@ -198,7 +213,7 @@ Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the name of the product that you want to hide. Products are suggested as you type.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
@@ -261,10 +276,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Event |Description |
 |--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
-| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
-| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
-| Hide a product | Excludes a SKU, or range of SKUs, from the search results. |
+| [!UICONTROL Boost] | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
+| [!UICONTROL Bury] | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
+| [!UICONTROL Pin a product] | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
+| [!UICONTROL Hide a product] | Excludes a SKU, or range of SKUs, from the search results. |
 
 ### Details
 

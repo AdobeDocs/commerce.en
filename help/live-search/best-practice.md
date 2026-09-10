@@ -30,7 +30,7 @@ This article helps merchandisers enhance their site search functionality, ensuri
 
 There are several key factors that determine the relevance and effectiveness of search results:
 
-- Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. To directly impact the success of your merchandising strategy:
+- Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to less relevant search results. To directly impact the success of your merchandising strategy:
     - Set up the correct attributes as searchable with their corresponding weight.
     - Make sure that the data within those attributes is relevant.
 - A well-designed search experience builds trust with customers and instills confidence that they can find what they need.
@@ -43,7 +43,7 @@ To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Liv
 
 ## Optimize your search functionality
 
-In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as shoppers type, synonyms and spellings to ensure that shoppers find products even if they use different words, and facets to allow shoppers to narrow down search results.
+In this section, you learn how to optimize your search functionality by using features such as autocomplete, synonyms, and facets.
 
 ### Autocomplete
 
@@ -57,14 +57,14 @@ Learn more about the [popover](storefront-popover.md) widget.
 
 ### Synonyms and misspellings
 
-Live Search manages misspellings by default. You can set up synonyms to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can [set synonyms as one way or two way](synonyms-add.md#step-2-define-the-synonym-by-type) to improve results.
+Live Search manages misspellings by default. To include words that shoppers use that differ from words specified in your catalog, set up synonyms. You do not want to lose a sale because someone is looking for a "sofa," while your product is listed as a "couch." You capture a broad range of search terms by entering all the possible words that customers use to find your products. To improve results, [set synonyms as one way or two way](synonyms-add.md#step-2-define-the-synonym-by-type).
 
 #### Tips to optimize synonyms
 
-- Map brand names and abbreviations to their full names, for example "HP" to "Hewlett-Packard" and common product nicknames, for example "iPhone" to "Apple iPhone".
-- Include industry-specific jargon and terms that shoppers might use interchangeably, for example "sneakers" and "running shoes".
+- Map brand names and abbreviations to their full names, for example "HP" to "Hewlett-Packard" and common product nicknames, for example "iPhone" to "Apple iPhone."
+- Include industry-specific jargon and terms that shoppers use interchangeably, for example "sneakers" and "running shoes."
 - Regularly update the synonym list based on new search trends, product additions, and shopper behavior.
-- Test the effectiveness of synonym mappings by analyzing search results and shopper feedback. Refine mappings to improve accuracy and relevance.
+- Test the effectiveness of synonym mappings by analyzing search results and shopper feedback. To improve accuracy and relevance, refine mappings.
 
 Learn more about synonyms:
 
@@ -85,13 +85,13 @@ To set up a product attribute as a facet, it must have the following [properties
 
 #### Tips to optimize facets
 
-- Determine the most relevant and useful attributes for your products, such as title, category, brand, price range, color, and size and set them as [dynamic facets](facets-type.md). 
+- Determine the most relevant attributes for your products and set them as [dynamic facets](facets-type.md). 
 - Set and sort product attributes that are consistent across your catalog and highly relevant for your products to improve relevancy and filtering capabilities for your shoppers.
-- Ensure that facet labels are easy to understand and consistently named across the site. For example, use "Price Range" instead of "Cost".
+- Ensure that facet labels are easy to understand and consistently named across the site. For example, use "Price Range" instead of "Cost."
 - Avoid overwhelming shoppers by limiting the number of facets to the most important ones. Too many options can cause decision fatigue. By default, [!DNL Live Search] is limited to a maximum of 100 attributes configured as facets and 30 buckets returned within each facet. Learn more about [facet limitations](boundaries-limits.md#facets). 
 - Allow shoppers to select multiple filter criteria simultaneously to refine results. For example, letting shoppers select both "Red" and "Blue" colors.
 - Display the number of available products next to each facet option to give shoppers an idea of the search results they can expect.
-- Implement collapsible facet sections to keep the interface clean and manageable, especially on mobile devices.
+- To keep the interface clean and manageable, especially on mobile devices, implement collapsible facet sections.
 - Allow shoppers to easily reset individual facets or all selected filters to start a new search.
 
 Learn more about facets:
@@ -107,11 +107,11 @@ This section discusses how to improve search result relevance by implementing ef
 
 ### Images
 
-Make sure that configurable products' child products have images with the correct roles. Having parent or child products might result in the search result not having images.
+Make sure that configurable products' child products have images with the correct roles. Missing parent or child products results in the search result not having images.
 
 >[!NOTE]
 >
->Images in search results might be different depending on the search term. If the search term determines that a child product is more relevant, images from the child product will be used instead of images from the parent product.
+>Images in search results differ depending on the search term. If the search term determines that a child product is more relevant, images from the child product replace images from the parent product.
 
 ### Search rules
 
@@ -129,7 +129,7 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
 - Always use the "Test your rule" panel to preview how your intelligent ranking strategy affects actual search results for different queries.
 - When you enable intelligent ranking, tune **[Intelligent ranking boost](rules-add.md#intelligent-ranking-boost)** in the rule editor to balance popularity-style signals with textual relevance, and verify results for target queries in **Test your rule**. The intelligent ranking boost is not available for the **None** strategy.
-- Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
+- Tailor search results based on individual shopper behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you," "most viewed" and so on. To tailor shopper behavior, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available by default. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
 
 Learn more about search rules:
 
@@ -141,7 +141,7 @@ Learn more about search rules:
     - [Edit, view, delete](rules-manage.md)
 - Data collection
     - [[!DNL Live Search] events](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-    - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
+    - [Adobe Commerce Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)
     - [GitHub Commerce events](https://github.com/adobe/commerce-events/tree/main/examples) 
 
 ### Leverage product metadata
@@ -179,7 +179,7 @@ Making the wrong attributes searchable can frustrate shoppers and create support
 
 #### Weight searchable attributes appropriately
 
-To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
+To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight appear higher within the search results. Multiple criteria, such as search weight, affect relevance sorting. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
 
 **Weight priorities:**
 
@@ -230,23 +230,23 @@ Learn more about product attributes for search:
 
 ## Monitoring Search Results
 
-To optimize search results with [!DNL Live Search], monitor relevant Key Performance Indicators (KPIs) such as unique queries, average click position, click-through rates, conversion rate, and zero results rate to understand how shoppers interact with your search functionality. This data guides you to regularly update and refine your search rules.
+To optimize search results with [!DNL Live Search], monitor KPIs to understand how shoppers interact with your search functionality. This data guides you to regularly update and refine your search rules.
 
 You can monitor these KPIs within the [!DNL Live Search] [Performance workspace](performance.md) where you find the following metrics: 
 
-- **Unique Searches** - The count of distinct search queries performed on your [!DNL Commerce] site. Each unique search is counted only once, even if it is repeated multiple times by the same shopper or different shoppers. This metric helps you understand the diversity of search terms used by customers and provides insights into what products or information shoppers are seeking. Tracking unique searches allows you to:
+- **Unique Searches** - The count of distinct search queries performed on your [!DNL Commerce] site. The system counts each unique search only once, even if the same or different shoppers repeat it multiple times. This metric helps you understand the diversity of search terms used by customers and provides insights into what products or information shoppers are seeking. Tracking unique searches allows you to:
 
     - Identify popular search trends and frequently searched items.
     - Detect potential gaps in your product catalog or content.
     - Optimize your search functionality by adding [synonyms](synonyms.md), creating, or updating search rules.
 
-- **Average Click Position** - Indicates that the average position of search results clicked by shoppers after performing a search query on your site. This metric provides insights into the relevance and effectiveness of your search results.
+- **Average Click Position** - Indicates the average position of search results clicked by shoppers after performing a search query on your site. This metric provides insights into the relevance and effectiveness of your search results.
 
     A lower average click position (closer to 1) suggests that shoppers find relevant results quickly, indicating that your search strategy is effective. It helps you understand shopper behavior and how far they are willing to scroll to find the desired product. If the average click position is high, it may indicate that the most relevant results are not appearing at the top, which necessitates a review and optimization of your search strategy.
 
-- **Click-Through Rate (CTR)** - Measures the percentage of shoppers who click on a search result after performing a search query. A high CTR indicates that the search results are relevant and appealing to shoppers, as they are clicking on the results they find. Monitoring CTR can help identify areas for improvement. Low CTR may suggest that search results are not matching shopper intent, prompting a need to refine search rules, enhance product data, or improve result presentation.
+- **Click-Through Rate (CTR)** - Measures the percentage of shoppers who click on a search result after performing a search query. A high CTR indicates that the search results are relevant and appealing to shoppers, as they are clicking on the results they find. Monitoring CTR can help identify areas for improvement. Low CTR suggests that search results do not match shopper intent, prompting a need to refine search rules, enhance product data, or improve result presentation.
 
-- **Conversion Rate** - Indicates the effectiveness of your search feature in driving sales and achieving business goals. It reflects the overall effectiveness of your search functionality in meeting shopper needs and facilitating a smooth shopping experience. A high conversion rate indicates that your search results are highly relevant and persuasive, leading shoppers to complete purchases. If the conversion rate is low, it may suggest issues with search relevance, product availability, or the overall shopper journey from search to purchase.
+- **Conversion Rate** - Indicates the effectiveness of your search feature in driving sales and achieving business goals. It reflects the overall effectiveness of your search functionality in meeting shopper needs and facilitating a smooth shopping experience. A high conversion rate indicates that your search results are highly relevant and persuasive, leading shoppers to complete purchases. If the conversion rate is low, it suggests issues with search relevance, product availability, or the overall shopper journey from search to purchase.
 
 - **Zero Results** - Measures the percentage of search queries on your [!DNL Commerce] site that return no results. This metric is crucial for understanding how often shoppers' searches are unsuccessful and can provide insights into potential gaps in your product catalog or search setup. A high zero results rate can frustrate shoppers, leading to a poor shopping experience and potential loss of customers. It can indicate missing products or categories in your catalog that shoppers are searching for, guiding inventory and product listing decisions.
 
@@ -255,15 +255,15 @@ You can monitor these KPIs within the [!DNL Live Search] [Performance workspace]
     - Offer alternative or related search terms, such as [synonyms](synonyms.md) when no exact matches are found.
     - Regularly review zero result queries to identify patterns and make necessary adjustments to your product catalog and search settings.
 
-- **Popular Results** - Can significantly enhance your search results by aligning them with shopper preferences and behaviors.
+- **Popular Results** - Enhance your search results by aligning them with shopper preferences and behaviors.
 
 You can use this metric data to optimize your search functionality in the following ways:
 
-- Implement rules to automatically rank popular products higher in search results. Products frequently clicked on or purchased can be given priority to appear at the top. Manually curate lists of popular products for specific search queries and ensure that these items are prominently displayed.
-- Highlight products that are currently trending or have recently seen a spike in popularity. This can be particularly effective during seasonal events, holidays, or promotional periods. To achieve this use the intelligent ranking that better suits your use case and business need when setting up a search rule.
-- Highlight popular filters or facets, if shoppers frequently filter by certain brands or price ranges, make those options more prominent by pinning those facets and sort them accordingly.
+- To rank popular products higher in search results, implement rules. Products frequently clicked on or purchased can be given priority to appear at the top. Manually curate lists of popular products for specific search queries and ensure that these items are prominently displayed.
+- Highlight products that are currently trending or have recently seen a spike in popularity. This strategy is effective during seasonal events, holidays, or promotional periods. To achieve this, use the intelligent ranking that better suits your use case and business need when setting up a search rule.
+- Highlight popular filters or facets; if shoppers frequently filter by certain brands or price ranges, make those options more prominent by pinning those facets and sort them accordingly.
 - When a search yields zero results, use popular results data to suggest alternative products or related categories that have high shopper engagement.
-- Analyze popular search terms and product data to identify important keywords. Optimize your product searchable attributes with these keywords to improve search relevance.
-- Regularly analyze your results data to understand changing trends, shopper preferences and behavior, identify top search terms, and detect issues. Use this feedback loop to continuously refine and improve your search rules and product offerings
+- To identify important keywords, analyze popular search terms and product data. To improve search relevance, optimize your product searchable attributes with these keywords.
+- Regularly analyze your results data to understand changing trends, shopper preferences and behavior, identify top search terms, and detect issues. Use this feedback loop to refine and improve your search rules and product offerings continuously.
 
-To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
+To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma merchants, eventing is available by default. For headless or custom implementations, you must [implement eventing](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) based on your specific needs.
