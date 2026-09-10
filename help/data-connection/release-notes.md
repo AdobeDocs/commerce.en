@@ -103,6 +103,14 @@ _October 12, 2022_
 
 +++
 
+## 3.6.1
+
+_September 2026_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where the **[!UICONTROL Refresh]** button correctly syncs custom attributes from Experience Platform to the backoffice collector. 
+
 ## 3.6.0
 
 _July 2026_
