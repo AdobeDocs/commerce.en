@@ -93,7 +93,7 @@ The [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telemetry/blob
 
 ### CDN and Real User Monitoring
 
-[Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) data collection through your CDN origin to eliminate an extra TLS handshake and improve front-end performance measurement.
+[Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) data collection through your CDN origin to eliminate an extra TLS handshake and improve front-end performance measurement.
 
 ## Observability videos
 

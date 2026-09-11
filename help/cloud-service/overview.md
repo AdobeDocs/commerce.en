@@ -112,13 +112,13 @@ This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-To create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder], use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/) powered by [!DNL Edge Delivery Services].
+To create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder], use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) powered by [!DNL Edge Delivery Services].
 
 [!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Adobe Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from [!DNL Adobe Commerce on Cloud] or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for transition guidance.
+>[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from [!DNL Adobe Commerce on Cloud] or on-premises, see [existing storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) for transition guidance.
 
 ## Adobe Merchandising services and payment services
 

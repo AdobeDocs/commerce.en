@@ -55,7 +55,7 @@ The following table describes what documentation is currently indexed by the RAG
 
 | Category | Index | Content included | Keywords |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-ins, storefront components | storefront, drop-in, EDS, product listing, checkout |
+| [Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-ins, storefront components | storefront, drop-in, EDS, product listing, checkout |
 | [Extensibility](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, events, extensions, integrations | webhook, event, extension, API mesh, GraphQL |
 | [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (catalog, customers, orders) | catalog, product, customer, order, inventory |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, runtime actions, UI extensions | app builder, runtime action, React Spectrum |

@@ -134,7 +134,7 @@ Company Address Books now integrate with additional B2B workflows. Companies tha
 * Negotiable quotes
 * Quote templates
 
-For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
+For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -161,7 +161,7 @@ You can now set the time of day you want a [cart price rule](https://experiencel
 
 <!-- ### Use a temporary shipping address at B2B checkout -->
 
-<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
 
 ### Record order edits in the order history
 
@@ -839,20 +839,20 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 The following changes were made to B2B drop-in components:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
-  * **[Company management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
-  * **[Company switcher](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
-  * **[Purchase orders](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
-  * **[Quote management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
-  * **[Requisition lists](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
+  * **[Company management](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
+  * **[Company switcher](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
+  * **[Purchase orders](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
+  * **[Quote management](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
+  * **[Requisition lists](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
 
 * Released the B2B Storefront Compatibility Package. This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems.
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### Clickable links to external shipping trackers
