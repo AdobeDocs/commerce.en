@@ -69,7 +69,7 @@ For details about using the Catalog Service GraphQL API, see the [Catalog Servic
 
 To integrate with a headless storefront, you must update the storefront configuration to enable communication between the storefront and the [!DNL Catalog Service] to retrieve product and category data.
 
-If you are using Adobe Commerce storefront on Edge Delivery Services, add the Catalog Service endpoint to the storefront configuration. For details, see the [Edge Delivery Services documentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
+If you are using Adobe Commerce storefront on Edge Delivery Services, add the Catalog Service endpoint to the storefront configuration. For details, see the [Edge Delivery Services documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 For other integrations, see the project setup documentation for details on how to configure integrations between the service and backend data sources.
 

@@ -215,4 +215,4 @@ Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Op
 
 1. **Set up a Commerce Storefront on [!DNL Edge Delivery Services]**
 
-   To connect your storefront to the [!DNL Commerce Optimizer] instance and start delivering personalized commerce experiences, follow the [Storefront setup documentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}.
+   To connect your storefront to the [!DNL Commerce Optimizer] instance and start delivering personalized commerce experiences, follow the [Storefront setup documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}.
