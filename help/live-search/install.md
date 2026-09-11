@@ -150,7 +150,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 
 >[!NOTE]
 >
->The *Admin* > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]** setting only controls the product listing widgets. There is no *Admin* setting to disable the full [!DNL Live Search] storefront experience (such as the search popover). Use the CLI module commands in this procedure to keep your existing storefront search active while you configure [!DNL Live Search].
+>The *Admin* >  _[!UICONTROL Stores]_ > [!UICONTROL Settings] > _[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]** setting only controls the product listing widgets. There is no *Admin* setting to disable the full [!DNL Live Search] storefront experience (such as the search popover). Use the CLI module commands in this procedure to keep your existing storefront search active while you configure [!DNL Live Search].
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
