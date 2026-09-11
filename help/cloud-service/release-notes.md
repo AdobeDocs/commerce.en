@@ -58,7 +58,51 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## September 2026 - release #1 {#latest}
+## September 2026 - release #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items are available in Sandbox environments as of [DATE].
+
+>[!BEGINSHADEBOX]
+
+### Control which inventory sources appear in storefront availability
+
+Each inventory source now includes a [!UICONTROL **Visible on Storefront**] toggle on the source edit page in the [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns stock information only for sources you flag as visible. Sources are hidden by default, giving you per-warehouse control on top of the existing store-level opt-in. <!-- ACCS-1645 -->
+
+### Subscribe to an invoice save webhook
+
+The `observer.sales_order_invoice_save_after` webhook is now available in the Admin Webhooks list in [!DNL Adobe Commerce as a Cloud Service]. Use it to run logic after an invoice is saved. <!-- CEXT-6706 -->
+
+### View nominated source information in the Admin
+
+When an order contains items with a nominated inventory source, the [!DNL Commerce Admin] now labels those items on the order view page and in the shipment source selection screen, so merchants can fulfill orders from the correct source. <!-- ACCS-941 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Optimized cart and checkout tier price loading to prevent memory exhaustion for merchants with a large number of shared catalogs. <!-- ACCS-1150 -->
+
+* Fixed an issue where RMA image and file attributes failed to save, render, or delete correctly. <!-- CCSAAS-5395 -->
+
+* Fixed an issue where product override data could be inconsistent depending on indexer configuration, and improved product override performance. <!-- ACCS-1844 -->
+
+* Fixed an issue where concurrent REST API requests using the same authentication token could intermittently fail with a 401 error. <!-- CCSAAS-5417 -->
+
+* Fixed an issue where a cart price rule's start or end date could be misinterpreted when no explicit time was set. <!-- ACCS-1856 -->
+
+* Fixed an issue where saving [!UICONTROL Catalog] configuration could fail with a "The resource isn't set." error. [!DNL Live Search] is now the default search engine to prevent this misconfiguration. <!-- CCSAAS-5436 -->
+
+* Fixed an issue where concurrent requests to the import API (`POST /V1/import/json`) could cause data corruption. <!-- ACCS-1053 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - release #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -134,7 +178,7 @@ Company Address Books now integrate with additional B2B workflows. Companies tha
 * Negotiable quotes
 * Quote templates
 
-For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
+For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -161,7 +205,7 @@ You can now set the time of day you want a [cart price rule](https://experiencel
 
 <!-- ### Use a temporary shipping address at B2B checkout -->
 
-<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
 
 ### Record order edits in the order history
 
@@ -839,20 +883,20 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 The following changes were made to B2B drop-in components:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
-  * **[Company management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
-  * **[Company switcher](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
-  * **[Purchase orders](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
-  * **[Quote management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
-  * **[Requisition lists](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
+  * **[Company management](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
+  * **[Company switcher](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
+  * **[Purchase orders](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
+  * **[Quote management](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
+  * **[Requisition lists](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
 
 * Released the B2B Storefront Compatibility Package. This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems.
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### Clickable links to external shipping trackers
