@@ -58,51 +58,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## September 2026 - release #2 {#latest}
-
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
-
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
-
-The following items are available in Sandbox environments as of [DATE].
-
->[!BEGINSHADEBOX]
-
-### Control which inventory sources appear in storefront availability
-
-Each inventory source now includes a [!UICONTROL **Visible on Storefront**] toggle on the source edit page in the [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns stock information only for sources you flag as visible. Sources are hidden by default, giving you per-warehouse control on top of the existing store-level opt-in. <!-- ACCS-1645 -->
-
-### Subscribe to an invoice save webhook
-
-The `observer.sales_order_invoice_save_after` webhook is now available in the Admin Webhooks list in [!DNL Adobe Commerce as a Cloud Service]. Use it to run logic after an invoice is saved. <!-- CEXT-6706 -->
-
-### View nominated source information in the Admin
-
-When an order contains items with a nominated inventory source, the [!DNL Commerce Admin] now labels those items on the order view page and in the shipment source selection screen, so merchants can fulfill orders from the correct source. <!-- ACCS-941 -->
-
-### Enhancements and bug fixes
-
-The following selected enhancements, optimizations, and bug fixes are included in this release:
-
-* Optimized cart and checkout tier price loading to prevent memory exhaustion for merchants with a large number of shared catalogs. <!-- ACCS-1150 -->
-
-* Fixed an issue where RMA image and file attributes failed to save, render, or delete correctly. <!-- CCSAAS-5395 -->
-
-* Fixed an issue where product override data could be inconsistent depending on indexer configuration, and improved product override performance. <!-- ACCS-1844 -->
-
-* Fixed an issue where concurrent REST API requests using the same authentication token could intermittently fail with a 401 error. <!-- CCSAAS-5417 -->
-
-* Fixed an issue where a cart price rule's start or end date could be misinterpreted when no explicit time was set. <!-- ACCS-1856 -->
-
-* Fixed an issue where saving [!UICONTROL Catalog] configuration could fail with a "The resource isn't set." error. [!DNL Live Search] is now the default search engine to prevent this misconfiguration. <!-- CCSAAS-5436 -->
-
-* Fixed an issue where concurrent requests to the import API (`POST /V1/import/json`) could cause data corruption. <!-- ACCS-1053 -->
-
-{{accs-release}}
-
->[!ENDSHADEBOX]
-
-## September 2026 - release #1
+## September 2026 - release #1 {#latest}
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
