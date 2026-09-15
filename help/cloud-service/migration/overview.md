@@ -126,7 +126,7 @@ Each of the following workflows has its own tool. Use them together to complete 
 | Workflow | Tool | Description |
 | --- | --- | --- |
 | [Assessment](#migration-assessment-tool) | **Migration Assessment Tool** | AI-driven assessment of the existing implementation that inventories custom modules, third-party extensions, integrations, storefront observations, database schema, custom tables, migration recommendations, complexity scoring, and modernization effort estimates. |
-| [Application and storefront modernization](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | AI-assisted modernization of the Commerce application, accelerating the migration of customizations to [!DNL App Builder], supporting storefront transformation to Edge Delivery Services (EDS), and guiding developers through the broader application modernization journey with implementation reviewed and validated by engineering teams. |
+| [Application and storefront modernization](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | AI-assisted modernization of your Commerce application, accelerating the migration of customizations to [!DNL App Builder], supporting storefront transformation to Edge Delivery Services (EDS), and guiding developers through the broader application modernization journey with implementation reviewed and validated by engineering teams. |
 | [Data migration](#data-migration-commerce-data-migration-service) | **Commerce Data Migration Service** | Extraction, loading, and integrity verification of catalog, customer, and order data into [!DNL Adobe Commerce as a Cloud Service]. |
 
 These tracks are not standalone. Using them together in the right order minimizes rework.
