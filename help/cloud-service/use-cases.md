@@ -290,7 +290,7 @@ Consider a scenario where you want to modify the background of a product image q
 
 ### Generate content and images
 
-1. Open [[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
+1. Open [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
 
 1. Select the [!UICONTROL **Hero Banner**] template.
 
