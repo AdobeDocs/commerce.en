@@ -142,11 +142,15 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
    - Categories Feed
    - Category Permissions Feed
 
-After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
+After verifying the indexers, the next step is to [configure the API keys](#configure).
 
 >[!TAB Existing Commerce instance]
 
 Follow these instructions if you are installing [!DNL Live Search] on an existing Commerce instance.
+
+>[!NOTE]
+>
+>The *Admin* >  _[!UICONTROL Stores]_ > [!UICONTROL Settings] > _[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]** setting only controls the product listing widgets. There is no *Admin* setting to disable the full [!DNL Live Search] storefront experience (such as the search popover). Use the CLI module commands in this procedure to keep your existing storefront search active while you configure [!DNL Live Search].
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
@@ -162,13 +166,17 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disable the [!DNL Live Search] modules that serve storefront search results.
+1. Disable the [!DNL Live Search] storefront modules, while keeping `Magento_LiveSearchAdapter` enabled.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   bin/magento module:disable Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
+   [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background. Keeping `Magento_LiveSearchAdapter` enabled does not switch storefront search over to [!DNL Live Search]; the module only needs to remain enabled so that Commerce's search engine dependencies continue to resolve correctly.
+
+   >[!IMPORTANT]
+   >
+   >Keep `Magento_LiveSearchAdapter` enabled during this phase, even though it was [deprecated](release-notes.md#live-search-400) as of [!DNL Live Search] 4.0.0. `Magento\Search\Model\EngineResolver` depends on this module being enabled, so disabling it breaks the existing storefront search with a `500` error. `Magento_LiveSearchAdapter` also cannot be disabled while `Magento_LiveSearchMetrics` is enabled, because the `Magento_LiveSearchMetrics` module's `composer.json` declares a dependency on `Magento_LiveSearchAdapter`. You do not need to disable `Magento_LiveSearchMetrics` for this workflow.
 
 1. Install the updates.
 
@@ -190,10 +198,10 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 1. Enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   ```
+   ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
@@ -207,7 +215,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    bin/magento setup:upgrade
    ```
 
-After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
+After verifying the indexers, the next step is to [configure the API keys](#configure).
 
 >[!ENDTABS]
 
