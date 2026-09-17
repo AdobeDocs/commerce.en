@@ -55,7 +55,7 @@ Updates include:
 
 _September 17, 2026_
 
-![Fix](../assets/fix.svg) Fix invalid EAV backend table in attribute option label resync. <!--MDEE-1459-->
+![Fix](../assets/fix.svg) Fix invalid EAV backend table in attribute option label resync. <!--MDEE-1464-->
 
 ### 103.4.34 Release
 
