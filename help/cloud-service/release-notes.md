@@ -84,9 +84,9 @@ When an order contains items nominated to different inventory sources, the [!DNL
 
 The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query now returns additional information for storefronts:
 
-* Each source includes its name and an `is_pickup_location_active` flag, so storefronts can display source names and identify active in-store pickup locations. <!-- ACCS-1614 -->
+* Each source includes its `name` and an `is_pickup_location_active` flag, so storefronts can display source names and identify active in-store pickup locations. <!-- ACCS-1614 -->
 
-* Each SKU includes `is_saleable` and `backorder_message` fields, so storefronts can gate [!UICONTROL Add to Cart] on true saleability instead of physical stock. <!-- ACCS-1858 -->
+* The `SourceAvailability` type now includes `is_saleable` and `backorder_message` fields, so storefronts can gate [!UICONTROL Add to Cart] on true saleability instead of physical stock. <!-- ACCS-1858 -->
 
 ### Retrieve customer permissions
 
