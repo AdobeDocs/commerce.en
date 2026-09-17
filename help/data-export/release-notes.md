@@ -55,9 +55,7 @@ Updates include:
 
 _September 17, 2026_
 
-![Fix](../assets/fix.svg) Incorrect round price for AC 2.4.10. <!--MDEE-1460-->
 ![Fix](../assets/fix.svg) Fix invalid EAV backend table in attribute option label resync. <!--MDEE-1459-->
-![Fix](../assets/fix.svg) Fatal TypeError in CreateViewAfterTableMaintenance::__construct() on Magento 2.4.10. <!--MDEE-1453-->
 
 ### 103.4.34 Release
 
