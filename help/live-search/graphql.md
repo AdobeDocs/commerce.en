@@ -23,12 +23,11 @@ This workspace supports the [`productSearch`](https://developer.adobe.com/commer
 
 ```graphql
 query productSearch {
-  productSearch(phrase: "a306") {
+  productSearch(phrase: "") {
     total_count
     items {
-      product {
+      productView {
         sku
-        name
       }
     }
     facets {

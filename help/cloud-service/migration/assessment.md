@@ -347,8 +347,8 @@ While the assessment gives you a blueprint for development, the AI tools allow y
     - [Backend integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
     - [Checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Storefront development
-  - [Overview](https://experienceleague.adobe.com/developer/commerce/storefront/)
-  - [Storefront AI skills](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+  - [Overview](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
+  - [Storefront AI skills](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/ai-agent-skills/)
 
 >[!TIP]
 >

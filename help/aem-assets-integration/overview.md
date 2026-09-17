@@ -82,7 +82,7 @@ The Adobe Commerce user configuring the integration must have access to the [IMS
 
 ![check](assets/icon-check.png) **Adobe Managed Support Model** – Adobe handles assistance and troubleshooting directly, providing reliable support and streamlined issue resolution.
 
-![check](assets/icon-check.png) **Adobe Storefront Builder capabilities** – The digital asset management (DAM) solution allows the use of assets like images, videos, and other media on the [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
+![check](assets/icon-check.png) **Adobe Storefront Builder capabilities** – The digital asset management (DAM) solution allows the use of assets like images, videos, and other media on the [Storefront Builder](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
 
 >[!ENDSHADEBOX]
 

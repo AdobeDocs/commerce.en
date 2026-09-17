@@ -77,7 +77,7 @@ The Site Creator tool creates a complete storefront project with the following c
 * **Site**: Storefront landing page with boilerplate content
 * **Code**: Repository with boilerplate source files
 * **Content**: Document Author environment with site content files
-* **Commerce Config**: [Commerce storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} for instance-specific configuration
+* **Commerce Config**: [Commerce storefront configuration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/){target="_blank"} for instance-specific configuration
 
 ### Step 1: Generate your project
 
@@ -242,25 +242,25 @@ Before proceeding to the next steps, ensure that your storefront is functioning 
 
 If issues persist:
 
-* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * Check the [Adobe Commerce Optimizer developer guide](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 * Visit the [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Next steps
 
-* **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Create a local environment to customize your storefront code and content.
-* **[Enable the Universal Editor](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
+* **[Set up a local development environment](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Create a local environment to customize your storefront code and content.
+* **[Enable the Universal Editor](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/universal-editor/){target="_blank"}**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
 
 ### Learn and explore
 
 * **[Complete the end-to-end use case](./use-case/admin-use-case.md)**—Learn more about storefront setup and catalog management using [!DNL Adobe Commerce Optimizer].
 
-* **[Explore storefront customization](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**—Learn advanced setup and configuration options.
+* **[Explore storefront customization](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}**—Learn advanced setup and configuration options.
 
-* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**–Add pre-built components to enhance your storefront experience.
+* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/){target="_blank"}**–Add pre-built components to enhance your storefront experience.
 
 * **Migrate to the Storefront Configuration Service**—After you have created your initial storefront, you can migrate the configuration to use the Configuration Service which supports advanced use cases like repoless configuration and overlays. For details, see the [Configuration Service](https://www.aem.live/docs/config-service-setup){target="_blank"} documentation in the Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} to learn more about updating site content and integrating with Commerce frontend components and backend data.
+> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"} to learn more about updating site content and integrating with Commerce frontend components and backend data.
