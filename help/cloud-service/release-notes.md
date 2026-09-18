@@ -58,7 +58,77 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## September 2026 - release #1 {#latest}
+## September 2026 - release #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items will be available in Production environments on September 22, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Attach files and images to return requests
+
+Customers can now upload files and images when submitting a return request through the storefront `requestReturn` GraphQL mutation. <!-- CCSAAS-5410 -->
+
+### Control inventory source appearance
+
+Each inventory source now includes a [!UICONTROL **Visible on Storefront**] toggle on the source edit page in the [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns stock information only for sources you flag as visible. Sources are hidden by default. <!-- ACCS-1645 -->
+
+### Guide multi-source shipments
+
+When an order contains items nominated to different inventory sources, the [!DNL Commerce Admin] [!UICONTROL **Source Selection**] page now automatically guides you through selecting the appropriate source for each item. <!-- ACCS-1832 -->
+
+### Query source availability details for the storefront
+
+The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query now returns additional information for storefronts:
+
+* Each source includes its `name` and an `is_pickup_location_active` flag, so storefronts can display source names and identify active in-store pickup locations. <!-- ACCS-1614 -->
+
+* The `SourceAvailability` type now includes `is_saleable` and `backorder_message` fields, so storefronts can gate [!UICONTROL Add to Cart] on true saleability instead of physical stock. <!-- ACCS-1858 -->
+
+### Retrieve customer permissions
+
+A new [!DNL Commerce] REST endpoint (`GET /V1/customers/:customerId/companyRoles`) returns all company roles and permissions assigned to a customer. The GraphQL `CompanyBasicInfo` type now also includes `role_id`, `role_name`, and permission data, so integrations can retrieve a user's company role assignments across all associated accounts in a single request. <!-- ACCS-1617 -->
+
+### Subscribe to an invoice save webhook
+
+The `observer.sales_order_invoice_save_after` webhook allows you to run logic after saving an invoice. <!-- CEXT-6706 -->
+
+### View nominated source information
+
+When an order contains items with a nominated inventory source, the [!DNL Commerce Admin] now labels those items on the order view page and in the shipment source selection screen, so merchants can fulfill orders from the correct source. <!-- ACCS-941 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Optimized cart and checkout tier price loading to prevent issues with a large number of shared catalogs. <!-- ACCS-1150 -->
+
+* Fixed an issue where file attribute changes were not respected. <!-- CCSAAS-5395 -->
+
+* Fixed an issue where product override data could be inconsistent. <!-- ACCS-1844 -->
+
+* Fixed an issue where concurrent REST API requests could intermittently cause a 401 error. <!-- CCSAAS-5417 -->
+
+* Fixed an issue where a cart price rule's start or end date could function unexpectedly when no explicit time was set. <!-- ACCS-1856 -->
+
+* Fixed an issue where a cart price rule accepted non-existent start or end dates. <!-- ACCS-1902 -->
+
+* Fixed an issue that prevented saving your [!UICONTROL Catalog] configuration. <!-- CCSAAS-5436 -->
+
+* Fixed an issue that could occur when making concurrent requests to the import API (`POST /V1/import/json`). <!-- ACCS-1053 -->
+
+* Fixed an issue where salable quantity could over-report availability for products with a nominated inventory source. <!-- ACCS-1103 -->
+
+* Fixed an issue where the Order Comment API (`POST /V1/orders/{id}/comments`) did not respect case insensitivity. <!-- ACCS-1752 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - release #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -198,8 +268,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Resolved an issue that could impact Admin navigation. <!-- CCSAAS-5232 -->
 
 * Fixed an issue empty carts could report non-zero totals. <!-- ACCS-1730 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
