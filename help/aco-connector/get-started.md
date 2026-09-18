@@ -170,6 +170,10 @@ The following table describes what data is exported at each scope level:
 
 If [!DNL Adobe Commerce] B2B is enabled, and you have installed the [!DNL Adobe Commerce Optimizer Connector B2B extension], the connector also watches for changes to shared catalogs and company assignments. When you remove a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period.
 
+>[!NOTE]
+>
+>The deletion grace period defaults to 7 days. See [Configure the deletion grace period](../aco-connector/catalog-view-sync-status.md#configure-the-deletion-grace-period)/aco-connector/catalog-view-sync-statusTo change it, go to the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio) and navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Shared Catalog Sync]** > **[!UICONTROL Deletion]** > **[!UICONTROL Deletion Grace Period (days)]**. Setting this field to `0` removes the catalog view's ACO projection immediately, with no grace period.
+
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
 You enable the integration and initiate the data sync by running the `aco:config:init` CLI command. This command completes the following steps:

@@ -62,7 +62,23 @@ In the dashboard, each row represents one custom shared catalog view projected f
 | **Retiring** | You deleted the shared catalog in [!DNL Adobe Commerce]. The catalog view is still accessible during its deletion grace period. |
 | **Orphaned** | The catalog view or key was created directly in [!DNL Adobe Commerce Optimizer] Studio, not by the connector. See [Review orphaned and deleted entries](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending], and [!UICONTROL Deleted] are informational states that don't require action. See <!--[Sync status values](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} in the *Commerce Admin Guide* for the full list. -->
+[!UICONTROL Healthy], [!UICONTROL Pending], and [!UICONTROL Deleted] are informational states that do not require action. See <!--[Sync status values](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} in the *Commerce Admin Guide* for the full list. -->
+
+### Configure ACO shared catalog sync settings {#configure-aco-shared-catalog-sync-settings}
+
+From the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio), go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Shared Catalog Sync]** to control how the connector times deletions and creations, and whether it repairs drift automatically.
+
+![ACO Shared Catalog Sync configuration page showing the Deletion, Creation, and Drift Reconciler sections](assets/aco-shared-catalog-sync-configuration.png){width="600" zoomable="yes"}
+
+- **[!UICONTROL Deletion Grace Period (days)]**—Number of days a deleted shared catalog's catalog view, policy, and metadata are retained in [!DNL Adobe Commerce Optimizer] before being removed, allowing rollback if you re-enable the shared catalog in [!DNL Adobe Commerce]. Defaults to 7. Set to `0` to remove the projection immediately, with no grace period.
+
+- **[!UICONTROL Creation Grace Period (days)]**—Number of days a newly registered catalog view can wait for its first projection to [!DNL Adobe Commerce Optimizer] while reported as [!UICONTROL Pending]. If the grace period lapses without a projection, the status becomes [!UICONTROL Failed]. Defaults to 1.
+
+- **[!UICONTROL Enabled]** (Drift Reconciler)—Runs the scheduled drift reconciler that compares [!DNL Adobe Commerce Optimizer] with the [!DNL Adobe Commerce] projection state and repairs or reports divergence.
+
+- **[!UICONTROL Automatically Repair Drift]**—When set to **[!UICONTROL Yes]**, the scheduled run converges [!DNL Adobe Commerce Optimizer] back to [!DNL Adobe Commerce] for repairable drift. When set to **[!UICONTROL No]**, the scheduled run only detects and logs drift; orphaned entries are always reported, never removed automatically. This setting only affects the scheduled reconciler—the **[!UICONTROL Reconcile & Repair]** action on this page always repairs drift immediately. See [Choose monitoring or repair](#choose-monitoring-or-repair).
+
+See <!-- uncomment when link is available [ACO Shared Catalog Sync configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/configuration-reference/services/aco-catalog-data-sync.md/)--> in the *[!DNL Commerce Admin] Guide* for details on each setting.
 
 ## Choose monitoring or repair {#choose-monitoring-or-repair}
 
