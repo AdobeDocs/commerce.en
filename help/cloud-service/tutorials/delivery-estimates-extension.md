@@ -85,7 +85,7 @@ If any of the preceding commands do not return the expected results, refer to th
 Additionally, verify the following:
 
 - You have an [!DNL Adobe Commerce as a Cloud Service] instance with product data. See [Commerce Cloud Service instances](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
-- You have a storefront project connected to your [!DNL Commerce] instance. If you do not have one, follow the steps in [Create a storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
+- You have a storefront project connected to your [!DNL Commerce] instance. If you do not have one, follow the steps in [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/){target="_blank"}.
 - The `aem` CLI is installed:
 
   ```bash

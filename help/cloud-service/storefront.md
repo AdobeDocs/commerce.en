@@ -35,7 +35,7 @@ topic_v2:
 
 To set up your [!DNL Adobe Commerce Storefront] powered by [!DNL Edge Delivery Services] for [!DNL Adobe Commerce as a Cloud Service] (SaaS), complete the following steps.
 
-For a more customizable and detailed walkthrough, refer to the [storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+For a more customizable and detailed walkthrough, refer to the [storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/).
 
 1. Open the [site creator tool](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -65,6 +65,6 @@ See the following articles for more information:
 * [Updating storefront content](./use-cases.md#update-storefront-content)—Manage and display content and data on the storefront.
 * [Contextual experimentation](./use-cases.md#contextual-experimentation)—Create and manage experiments on your storefront.
 * [Generate Variations](./use-cases.md#generate-variations)—Use Generative AI to automate high-quality content generation.
-* [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)—Get detailed information about updating site content and integrating with Commerce frontend components and backend data.
+* [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/)—Get detailed information about updating site content and integrating with Commerce frontend components and backend data.
 * [Configuration Service](https://www.aem.live/docs/config-service-setup)—Learn about migrating your storefront configuration from `config.json` to use the Configuration Service, which supports advanced use cases like repoless configuration and overlays. 
-* [Storefront B2B features](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/#major-features)—Learn about B2B features available in the storefront compatibility package, which is automatically installed for all [!DNL Adobe Commerce as a Cloud Service] instances.
+* [Storefront B2B features](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/b2b/#major-features)—Learn about B2B features available in the storefront compatibility package, which is automatically installed for all [!DNL Adobe Commerce as a Cloud Service] instances.

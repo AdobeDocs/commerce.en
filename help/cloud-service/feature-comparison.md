@@ -77,7 +77,7 @@ The following table describes the features and replacement solutions available i
         <tr>
             <td>Content management</td>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL rewrites</a></td>
-            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/get-started/">Storefront Builder</a></td>
         </tr>
         <tr>
             <td>Catalog merchandising</td>
