@@ -2,8 +2,19 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 11 15:41:12 2026
+updated: Fri Sep 18 15:39:47 2026
 entries:
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: September 17, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/776
+  merge_commit: 7f70bbf40218de2cec3482e1bc4d135d1a9022ae
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+  - release-notes
 - description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
