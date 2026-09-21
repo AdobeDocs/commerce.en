@@ -184,6 +184,20 @@ By default, the feed submitted during a `resync --dry-run` operation includes on
 bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
+## `--force`
+
+Forces resync of feed items regardless of whether their data changed, without clearing feed export state.
+
+>[!NOTE]
+>
+>Requires version 103.4.30 or later of the [Data Export extension](manage-extension.md#update-a-module-to-a-specific-version).
+
+**Example:**
+
+```shell
+bin/magento saas:resync --feed products --force
+```
+
 ## `--no-reindex`
 
 Resubmits existing catalog data to [!DNL Commerce Services] without reindexing. Not supported for product-related feeds.

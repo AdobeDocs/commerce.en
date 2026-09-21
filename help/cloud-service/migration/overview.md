@@ -105,7 +105,7 @@ Adobe Commerce is available in different deployment models. The primary differen
 
 - [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) and [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- [Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - Self-service provisioning with the [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ### The migration journey
@@ -229,7 +229,7 @@ Using the findings from the [migration assessment](#migration-assessment-tool), 
 
 ### Storefront modernization
 
-On the frontend, the Commerce Developer MCP modernizes [storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/) on Edge Delivery Services (EDS) for Commerce using the Adobe Commerce boilerplate, Drop-in Components, and EDS blocks.
+On the frontend, the Commerce Developer MCP modernizes [storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/) on Edge Delivery Services (EDS) for Commerce using the Adobe Commerce boilerplate, Drop-in Components, and EDS blocks.
 
 The Commerce Developer MCP loads existing storefront projects based on the Commerce boilerplate. It modernizes your storefront by:
 

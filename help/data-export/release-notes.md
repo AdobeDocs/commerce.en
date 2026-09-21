@@ -51,6 +51,18 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.4.35 Release
+
+_September 17, 2026_
+
+![Fix](../assets/fix.svg) **Attribute option label synchronization error**—Fixed an issue where an invalid attribute backend table could cause feed export failures during label resynchronization, ensuring attribute label updates synchronize reliably.<!--MDEE-1464-->
+
+### 103.4.34 Release
+
+_September 2, 2026_
+
+![Fix](../assets/fix.svg) Updates to support the Adobe Commerce Optimizer integration with Adobe Commerce.<!--MDEE-1417-->
+
 ### 103.4.33 Release
 
 _September 1, 2026_

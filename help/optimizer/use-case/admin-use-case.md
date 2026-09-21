@@ -77,7 +77,7 @@ In this use case, you are working with the following:
 
   >[!NOTE]
   >
-  > Learn about storefront configuration files by reviewing the [Explore the boilerplate](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) topic in the Adobe Commerce Storefront documentation.
+  > Learn about storefront configuration files by reviewing the [Explore the boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) topic in the Adobe Commerce Storefront documentation.
 
 ### ‌Key takeaways
 
@@ -471,4 +471,4 @@ To continue learning about [!DNL Adobe Commerce Optimizer]:
 - Learn about [advanced policy configurations](../setup/policies.md)
 - Set up [additional catalog views](../setup/catalog-view.md) for other dealerships
 - Review the [API documentation](https://developer.adobe.com/commerce/services/optimizer/) for programmatic catalog management
-- Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)
