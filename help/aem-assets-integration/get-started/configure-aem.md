@@ -108,9 +108,7 @@ In Cloud Manager, open the environment you created in Step 1, then:
 
 ### Step 4: Validate the configuration
 
-Switch to the **AEM Assets author environment** and open any asset. Edit its properties and confirm that the default metadata schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]**, **[!UICONTROL Eligible for Commerce]**, and **[!UICONTROL Alt texts]** fields are visible.
-
-The **[!UICONTROL Alt texts]** multifield must provide **[!UICONTROL Store View Code]** and **[!UICONTROL Alt Text]** inputs. For the metadata contract, see [Localized alt text in AEM Assets metadata](../metadata.md#localized-alt-text-in-aem-assets-metadata).
+Switch to the **AEM Assets author environment** and open any asset. Edit its properties and confirm that the default metadata schema includes the **[!UICONTROL Commerce]** tab and that the **[!UICONTROL Product Data]** and **[!UICONTROL Eligible for Commerce]** fields are visible.
 
 ## Install the assets-commerce package manually
 
