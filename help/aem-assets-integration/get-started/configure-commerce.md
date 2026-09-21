@@ -60,7 +60,7 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
-By default, `composer require magento/aem-assets-integration` installs the latest available version. To pin a specific version instead (for example, to keep multiple environments on the same validated release), add a version constraint, such as `"magento/aem-assets-integration": "^1.4.7"`.
+By default, `composer require magento/aem-assets-integration` installs the latest available version. To pin an exact version instead (for example, to keep multiple environments on the same validated release), use an exact constraint such as `"magento/aem-assets-integration": "1.4.7"`; use `^1.4.7` only when a compatible 1.x range is intended.
 
 >[!NOTE]
 >
