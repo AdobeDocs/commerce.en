@@ -51,7 +51,11 @@ This package code adds the following resources to the AEM Assets authoring envir
 
       ![Custom Product Data UI Control](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
-  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes that show how the asset is visualized in Commerce.
+  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes that show how the asset is visualized in Commerce. The four standard roles (`image`, `small_image`, `thumbnail`, and `swatch_image`) remain supported. As of AEM Assets Integration extension version 1.4.6, you can also set a custom image role in `commerce:roles`, such as `hero` or `custom_role_1`, to synchronize a role that Commerce does not define by default. See [Custom automatic matching](synchronize/custom-match.md) for how custom image roles are ingested.
+
+    >[!NOTE]
+    >
+    >_[TBD — pending confirmation]_ Whether Commerce automatically creates a missing `media_image`-style attribute for a custom role, requires the merchant to create it first, or fails synchronization for that role is not yet confirmed. Do not rely on this behavior until it is verified.
 
   * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text for each Commerce store view code. The multifield persists in two index-aligned `String[]` properties:
 

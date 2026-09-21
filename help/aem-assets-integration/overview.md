@@ -50,6 +50,10 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 
 * **Localized image alt text** – With AEM Assets Integration extension version 1.4.5 or later, you can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
 
+* **Custom image roles** – With AEM Assets Integration extension version 1.4.6 or later, custom image roles configured in AEM Assets are retained during synchronization, in addition to the four standard roles. See [Custom automatic matching](synchronize/custom-match.md).
+
+* **Extension update notifications** – With AEM Assets Integration extension version 1.4.6 or later, Commerce checks for new extension versions and notifies administrators in the Admin. See [Check for extension updates](get-started/check-for-updates.md).
+
 Alt-text localization does not change product-image assignment or gallery mapping. Store-view asset availability is a separate capability and is not covered by the alt-text workflow.
 
 ## Requirements to use the integration

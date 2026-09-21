@@ -32,6 +32,32 @@ _February 11, 2025_
 
 +++
 
+## v1.4.7
+
+_[RELEASE DATE TBD]_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1317 --> Fixed an issue where the `workspace.json` file uploaded for [custom automatic matching](synchronize/custom-match.md) did not persist correctly when Commerce Async Config Save is enabled. Previously, the Admin request queued only the upload metadata rather than the file contents, so by the time the asynchronous configuration consumer processed the save, the temporary upload file could no longer be read. As a result, the configuration appeared to save successfully while the App Builder OAuth values remained unchanged. Uploaded App Builder credentials now survive the queue boundary and are processed correctly by the asynchronous consumer.
+
+>[!IMPORTANT]
+>
+>If you use a custom matcher with Async Config Save enabled, re-upload your `workspace.json` file after you upgrade to this version. For details, see [Async Config Save](synchronize/custom-match.md#async-config-save).
+
+## v1.4.6
+
+_[RELEASE DATE TBD]_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1272 --> Custom AEM image roles are now retained during synchronization. Custom values in the AEM `commerce:roles` metadata field are ingested and mapped to Commerce product media-gallery data, in addition to the four standard roles (`image`, `small_image`, `thumbnail`, and `swatch_image`). For details, see [Custom automatic matching](synchronize/custom-match.md).
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce can now check for AEM Assets Integration extension updates asynchronously and notify administrators in the Admin when a new version is available. Administrators can also run a manual check using `bin/magento aem:assets:check-update`. For details, see [Check for extension updates](get-started/check-for-updates.md).
+
+>[!NOTE]
+>
+>_[Cloud Service availability TBD]_ — confirm whether custom image roles and the update checker are available on Adobe Commerce as a Cloud Service before publishing.
+
 ## v1.4.5
 
 _September 10, 2026_
@@ -39,8 +65,6 @@ _September 10, 2026_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
 ![New issue](../assets/new.svg)<!-- Issue ACAP-1321 --> Added support for localized image alt text authored per Commerce store view in AEM Assets. The synchronized values appear in Commerce's standard image **[!UICONTROL Label]** field.
-
-![New issue](../assets/new.svg)<!-- Issue ACAP-1321 --> Added support for store-view asset visibility. Merchants can hide an AEM asset from selected store views, and Commerce excludes the asset from storefront responses for those store views.
 
 ## v1.4.4
 

@@ -193,6 +193,8 @@ After you configure the [AEM Asset Selector](synchronize/asset-selector-integrat
 
 After you update and approve an asset in AEM Assets, the updates are automatically sent to Adobe Commerce using the automated matching capability. This process is triggered upon asset approval. To ensure all final changes and metadata updates are included, make sure to reprocess the asset before approving it.
 
+When you change the role or position values on an already-synchronized asset, Commerce updates the existing role assignment instead of adding a duplicate. If a synchronization attempt fails, check the Commerce logs for the error before retrying. After the update completes, verify the change on the product's **Images And Videos** section and confirm the asset appears in the expected role and position in the media gallery.
+
 For the Commerce-side workflow to link assets to products via metadata, see the [Default automatic matching](synchronize/default-match.md) topic.
 
 For AEM Assets procedures, see the following documentation:
