@@ -53,7 +53,7 @@ Choose the documentation that matches your storefront:
 
 - **PWA Studio** — [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - **Custom frontends (for example, React or Vue.js)** — [Integrate [!DNL Product Recommendations]](headless.md) in a headless storefront
-- **Commerce Edge Delivery Services (EDS)** — [Adobe Commerce Storefront documentation for EDS](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+- **Commerce Edge Delivery Services (EDS)** — [Adobe Commerce Storefront documentation for EDS](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)
 
 >[!NOTE]
 >

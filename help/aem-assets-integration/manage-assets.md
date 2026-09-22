@@ -109,7 +109,7 @@ The association to the selected image will be stored in Adobe Commerce as a dire
 
 >[!TIP]
 >
-> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} also provides an Asset selector to enrich data.
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} also provides an Asset selector to enrich data.
 
 ## Product videos
 

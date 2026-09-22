@@ -254,4 +254,4 @@ Now that you have created an instance, you are ready to [set up your storefront]
 
 * [Release notes](release-notes.md)
 * [Migration guide](migration/overview.md)
-* [Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/)

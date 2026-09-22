@@ -41,7 +41,7 @@ To enable the integration in Commerce storefronts powered by Edge Delivery Servi
 
 The Commerce drop-ins automatically detect the `commerce-assets-enabled` configuration and adjust image handling accordingly.
 
-For more information on using AEM Assets with the Commerce Storefront powered by Edge Delivery Services, see the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
+For more information on using AEM Assets with the Commerce Storefront powered by Edge Delivery Services, see the [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ Your storefront is now connected to AEM Assets. You can browse and insert assets
 
 ## Related documentation
 
-* [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/){target=_blank} in the *Adobe Commerce Storefront* documentation—storefront configuration and image-handling behavior.
+* [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} in the *Adobe Commerce Storefront* documentation—storefront configuration and image-handling behavior.
 
 * [Integrate AEM Assets while authoring content for Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} in the *AEM Assets* documentation.
 

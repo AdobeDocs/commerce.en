@@ -30,7 +30,7 @@
 
 >[!NOTE]
 >
->[Drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) for [!DNL Commerce Storefront on Edge Delivery Services] pick up the latest GraphQL changes automatically (new fields, limits, and query behavior).
+>[Drop-in components](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/) for [!DNL Commerce Storefront on Edge Delivery Services] pick up the latest GraphQL changes automatically (new fields, limits, and query behavior).
 
 ## ACCS early access {#accs-early-access}
 
@@ -46,10 +46,10 @@
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -86,7 +86,7 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 | Services | Extensibility | Storefront |
 | --- | --- | --- |
-| <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+| <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/)</li></ul> |
 
 ## Adobe Commerce Optimizer services release notes {#aco-release}
 
@@ -96,7 +96,7 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 | Services | Storefront |
 | --- | --- |
-| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) |
 
 ## Bulk data migration tool Early Access {#bulk-data-early-access}
 

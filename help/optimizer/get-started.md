@@ -257,6 +257,6 @@ After completing the setup:
 ### Get help
 
 - **Developer Resources**: [Developer documentation](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront Resources**: [Commerce storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Storefront Resources**: [Commerce storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - **Tutorials**: [Commerce Optimizer tutorials](https://experienceleague.adobe.com/en/docs/commerce-learn/adobe-commerce-optimizer/overview)
 - **Support**: [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
