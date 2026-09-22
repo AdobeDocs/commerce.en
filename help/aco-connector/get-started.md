@@ -172,7 +172,7 @@ If [!DNL Adobe Commerce] B2B is enabled, and you have installed the [!DNL Adobe 
 
 >[!NOTE]
 >
->The deletion grace period defaults to 7 days. See [Configure the deletion grace period](../aco-connector/catalog-view-sync-status.md#configure-the-deletion-grace-period)/aco-connector/catalog-view-sync-statusTo change it, go to the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio) and navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Shared Catalog Sync]** > **[!UICONTROL Deletion]** > **[!UICONTROL Deletion Grace Period (days)]**. Setting this field to `0` removes the catalog view's ACO projection immediately, with no grace period.
+>The deletion grace period defaults to 7 days. See [Configure the deletion grace period](../aco-connector/catalog-view-sync-status.md#configure-the-deletion-grace-period)/aco-connector/catalog-view-sync-statusTo change it, go to the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio) and navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Catalog View Sync]** > **[!UICONTROL Deletion]** > **[!UICONTROL Deletion Grace Period (days)]**. Setting this field to `0` removes the catalog view's ACO projection immediately, with no grace period.
 
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -231,7 +231,7 @@ Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Op
 
    >[!NOTE]
    >
-   >[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} If you use [!DNL Adobe Commerce] B2B shared catalogs, skip this manual setup. The connector automatically creates a private catalog view, policy, price book, and restricted access key for each shared catalog. See [Private catalog views](../optimizer/setup/private-catalog-view.md).
+   >[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} If you use [!DNL Adobe Commerce] B2B shared catalogs, skip this manual setup. The connector automatically creates a private catalog view, policy, and restricted access key, and references a price book for each shared catalog. See [Private catalog views](../optimizer/setup/private-catalog-view.md).
 
 1. **Set up a Commerce Storefront on [!DNL Edge Delivery Services]**
 

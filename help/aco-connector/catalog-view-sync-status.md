@@ -1,7 +1,7 @@
 ---
 title: Monitor Catalog View Synchronization for B2B Shared Catalogs
 last-update: 2026-09-03
-description: "Use the Catalog View Sync Status page to monitor and reconcile B2B shared catalog view, policy, price book, and key configuration data synchronized to Adobe Commerce Optimize."
+description: "Use the Catalog View Sync Status page to monitor and reconcile the catalog view, policy, price book reference, and key configuration data synchronized to Adobe Commerce Optimizer."
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -41,9 +41,9 @@ topic_v2:
 
 [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."}
 
-Track B2B shared catalog synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] using the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
+Track B2B catalog view synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] using the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
 
-[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book, and restricted access key configurations for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
+[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book reference, and restricted access key configurations for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Access the sync status page {#access-the-sync-status-page}
 
@@ -51,24 +51,30 @@ From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Tran
 
 ![Catalog View Sync Status page to monitor the sync status of the catalog view, policy, price book, and access key configurations in Adobe Commerce Optimizer](assets/catalog-view-sync-status.png){width="600" zoomable="yes"}
 
+The page has three tabs: [!UICONTROL Catalog Views], [!UICONTROL Orphaned in ACO], and [!UICONTROL Deleted].
+
 ## Interpret sync status for your shared catalogs {#interpret-sync-status}
 
-In the dashboard, each row represents one custom shared catalog view projected from a shared catalog and store view combination. Use the status information to determine whether the data delivered to the company's storefront experience is complete and correct. The following table summarizes the most common status values and what they mean for your shared catalog:
+On the [!UICONTROL Catalog View] tab, each row represents one custom shared catalog view projected from a shared catalog and store view combination. The projection is the catalog view, policy, price book reference, and restricted access key configuration data that [!DNL Commerce Optimizer Connector] exports to [!DNL Adobe Commerce Optimizer] for the shared catalog. Use the status information to determine whether the data delivered to the company's storefront experience is complete and correct. The following table summarizes the most common status values and what they mean for your shared catalog:
 
 | Status | What it means for your shared catalog |
 | --- | --- |
-| **Degraded** | Something was changed directly in [!DNL Adobe Commerce Optimizer]—for example, the policy or price book. The company may see the wrong assortment or pricing until you resolve the issue. |
-| **Failed** | The catalog view does not exist in [!DNL Adobe Commerce Optimizer]. The company cannot access this shared catalog's storefront experience. |
+| **Degraded** | Something was changed directly in [!DNL Adobe Commerce Optimizer]—for example, the policy or linked price book. The company may see the wrong assortment or pricing until you resolve the issue. This can also happen if the access key, view name, or source is changed in Commerce Optimizer. |
+| **Failed** | The catalog view does not exist in [!DNL Adobe Commerce Optimizer], or if the grace period lapses before the first projection is made. (See [Configure ACO catalog view sync settings](#configure-aco-catalog-view-sync-settings)). If a catalog sync status is `Failed`, the company cannot access this shared catalog's storefront experience. |
 | **Retiring** | You deleted the shared catalog in [!DNL Adobe Commerce]. The catalog view is still accessible during its deletion grace period. |
 | **Orphaned** | The catalog view or key was created directly in [!DNL Adobe Commerce Optimizer] Studio, not by the connector. See [Review orphaned and deleted entries](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending], and [!UICONTROL Deleted] are informational states that do not require action. See <!--[Sync status values](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} in the *Commerce Admin Guide* for the full list. -->
+[!UICONTROL Healthy], [!UICONTROL Pending], and [!UICONTROL Deleted] are informational states that do not require action. See [Sync status values](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} in the *Commerce Admin Guide* for the full list.
 
-### Configure ACO shared catalog sync settings {#configure-aco-shared-catalog-sync-settings}
+>[!NOTE]
+>
+>Only custom shared catalogs are projected to Adobe Commerce. The public catalog `Default (General)` is never exported as an Adobe Commerce Optimizer catalog view.
 
-From the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio), go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Shared Catalog Sync]** to control how the connector times deletions and creations, and whether it repairs drift automatically.
+### Configure ACO catalog view sync settings {#configure-aco-catalog-view-sync-settings}
 
-![ACO Shared Catalog Sync configuration page showing the Deletion, Creation, and Drift Reconciler sections](assets/aco-shared-catalog-sync-configuration.png){width="600" zoomable="yes"}
+From the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio), go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Catalog View Sync]** to control how the connector times deletions and creations, and whether it repairs drift automatically.
+
+![ACO Catalog View Sync configuration page showing the Deletion, Creation, and Drift Reconciler sections](assets/aco-catalog-view-sync-configuration.png){width="600" zoomable="yes"}
 
 - **[!UICONTROL Deletion Grace Period (days)]**—Number of days a deleted shared catalog's catalog view, policy, and metadata are retained in [!DNL Adobe Commerce Optimizer] before being removed, allowing rollback if you re-enable the shared catalog in [!DNL Adobe Commerce]. Defaults to 7. Set to `0` to remove the projection immediately, with no grace period.
 
@@ -78,7 +84,7 @@ From the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio
 
 - **[!UICONTROL Automatically Repair Drift]**—When set to **[!UICONTROL Yes]**, the scheduled run converges [!DNL Adobe Commerce Optimizer] back to [!DNL Adobe Commerce] for repairable drift. When set to **[!UICONTROL No]**, the scheduled run only detects and logs drift; orphaned entries are always reported, never removed automatically. This setting only affects the scheduled reconciler—the **[!UICONTROL Reconcile & Repair]** action on this page always repairs drift immediately. See [Choose monitoring or repair](#choose-monitoring-or-repair).
 
-See <!-- uncomment when link is available [ACO Shared Catalog Sync configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/configuration-reference/services/aco-catalog-data-sync.md/)--> in the *[!DNL Commerce Admin] Guide* for details on each setting.
+See [ACO Catalog View Sync configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/configuration-reference/services/aco-catalog-view-sync.md) in the *[!DNL Commerce Admin] Guide* for details on each setting.
 
 ## Choose monitoring or repair {#choose-monitoring-or-repair}
 
@@ -91,7 +97,7 @@ To review what changed and why, open a catalog view's detail page and check its 
 
 ## Review orphaned and deleted entries {#review-orphaned-and-deleted-entries}
 
-The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two cases the connector cannot repair automatically because there is no [!DNL Adobe Commerce] shared catalog to reconcile against:
+The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two cases that the connector cannot repair automatically because there is no [!DNL Adobe Commerce] shared catalog to reconcile against:
 
 - **[!UICONTROL Orphaned in ACO]**—A catalog view or restricted access key exists in [!DNL Adobe Commerce Optimizer] but was not created by the connector. This is common if a catalog view was created manually in [!DNL Adobe Commerce Optimizer] Studio before the [!DNL Adobe Commerce Optimizer Connector for B2B] extension was enabled, or by a partner integration unrelated to the connector. If the catalog view is not needed, remove it directly from the catalog view configuration in [!DNL Adobe Commerce Optimizer] Studio.
 
@@ -104,7 +110,7 @@ The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two
 
 >[!MORELIKETHIS]
 >
-> - <!-- Uncomment link when Admin Guide changes are published [Catalog View Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status){target="_blank"} — Full documentation reference for the Catalog View Sync Status page, in the *Commerce Admin Guide* -->
+> - [Catalog View Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/catalog-view-sync-status.md){target="_blank"} — Full documentation reference for the Catalog View Sync Status page, in the *Commerce Admin Guide* -->
 > - [Manage data synchronization](data-sync-status.md) — Verify product, price, and category feed sync
 > - [Private catalog views](/help/optimizer/setup/private-catalog-view.md) — Learn what a connector-managed private catalog view is
 > - [Restricted access keys](/help/optimizer/setup/restricted-access-keys.md) — Learn how connector-managed keys work
