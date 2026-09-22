@@ -48,7 +48,7 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 
 * **Streamlined Catalog Management** – Automates asset refresh and cleanup, minimizing manual effort and ensuring a consistent, well-maintained product catalog.
 
-* **Localized image alt text** – With AEM Assets Integration extension version 1.4.5 or later, you can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
+* **Localized image alt text** – Merchandisers can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
 
 * **Custom image roles** – With AEM Assets Integration extension version 1.4.6 or later, custom image roles configured in AEM Assets are retained during synchronization, in addition to the four standard roles. See [Custom automatic matching](synchronize/custom-match.md).
 

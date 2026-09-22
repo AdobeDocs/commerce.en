@@ -29,8 +29,6 @@ Commerce metadata enables the following capabilities:
 * **Add Commerce-specific alt text keyed by store view** via the `commerce:altTextStoreViews` and `commerce:altTextValues` fields.
 * **Expose these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
-Localized image alt text requires AEM Assets Integration extension version 1.4.5 or later.
-
 >[!IMPORTANT]
 >
 >The **Commerce-specific alt text** capability is not yet available through [self-service onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service). It is currently provided only when you deploy the `assets-commerce` custom code package (see [Install the assets-commerce package manually](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Native support is planned for an upcoming AEM release.

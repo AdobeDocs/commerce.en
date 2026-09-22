@@ -64,7 +64,7 @@ _September 10, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![New issue](../assets/new.svg)<!-- Issue ACAP-1321 --> Added support for localized image alt text authored per Commerce store view in AEM Assets. The synchronized values appear in Commerce's standard image **[!UICONTROL Label]** field.
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1321 --> Fixed a backward-compatibility issue with store-view asset visibility. Existing asset synchronization requests that don't specify hidden store views continue to work without changes.
 
 ## v1.4.4
 
@@ -73,6 +73,8 @@ _July 30, 2026_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
 ![New issue](../assets/new.svg) Now, merchants can hide specific store views for an AEM asset. When AEM Assets marks an image as hidden for one or more store views, Commerce excludes that image from the storefront on those store views. The Admin product media gallery now includes a **[!UICONTROL Store View Visibility]** field that shows which store views hide the image. <!-- Issue ACAP-1308 -->
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where the Page Builder integration package incorrectly required the `magento/module-page-builder` package, preventing the package from being installed independently.
 
 ## v1.4.2
 
