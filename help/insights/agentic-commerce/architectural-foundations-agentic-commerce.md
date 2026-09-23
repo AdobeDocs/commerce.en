@@ -1,9 +1,8 @@
 ---
-title: SaaS Data Export Modules
-description: Learn about the Magento module packages included in [!DNL SaaS Data Export] and their roles in data collection, transformation, and submission to Adobe SaaS services.
-autotag-review: '2026-06-17T15:08:59.000Z'
-role: Developer
-feature: Services
+title: Architectural Foundations of Agentic Commerce
+description: Learn about the architectural principles for building a commerce platform that serves human shoppers and AI agents, from catalog design to identity controls.
+role: Developer, Leader
+recommendations: noCatalog
 ---
 
 # The Architectural Foundations of an Agentic Commerce Platform

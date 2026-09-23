@@ -7,7 +7,7 @@ user-guide-description: "Commerce Insights provides practical implementation and
 # [!DNL Commerce Insights] {#insights}
 
 - [What you'll find here](overview.md)
-- Agentic Commerce {#manage-sync}
-  - [Architectural foundations](architectural-foundations.md)
+- Agentic Commerce {#agentic-commerce}
+  - [Architectural foundations](agentic-commerce/architectural-foundations-agentic-commerce.md)
 - Storefront Strategy {#storefront-strategy}
 
