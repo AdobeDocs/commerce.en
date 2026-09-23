@@ -9,5 +9,5 @@ user-guide-description: "Commerce Insights provides practical implementation and
 - [What you'll find here](overview.md)
 - Agentic Commerce {#agentic-commerce}
   - [Architectural foundations](agentic-commerce/architectural-foundations-agentic-commerce.md)
-- Storefront Strategy {#storefront-strategy}
+
 
