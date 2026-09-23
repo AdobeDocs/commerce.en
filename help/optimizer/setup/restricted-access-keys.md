@@ -32,11 +32,11 @@ nudge: true
 ---
 # Restricted access keys
 
-Restricted access keys let authorized client applications access a [private catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from anonymous shoppers, shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
+Restricted access keys let authorized client applications access a [private catalog view](catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from shoppers who haven't been explicitly given access to this catalog view, and scripts probing the API.
 
 Restricted access keys are provisioned in one of two ways:
 
-- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For deployments integrated with the [!DNL Adobe Commerce Optimizer for B2B] extension, the extension automatically generates and assigns the first key when a catalog view is created. You manage these keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B], the connector provisions and manages these keys for you. See [Key management and rotation](#key-management-and-rotation).
 
 - **Manually, for any catalog view**—To protect a catalog view yourself—for example, for a partner portal or pre-release preview—follow the steps in this topic starting with [Create a restricted access key](#create-a-restricted-access-key).
 
@@ -52,16 +52,16 @@ Restricted access keys are commonly used for:
 
 ## How restricted access keys work
 
-A restricted access key is the public component of an RSA key pair. Your client application generates and uses this key to prove it is authorized to read a private catalog view. In this context, "client application" means the backend system that authenticates shoppers—for example, custom logic on [!DNL Adobe Commerce] or a third-party backend—never the storefront frontend itself.
+A restricted access key is the public component of an RSA key pair. Your client application generates and uses this key to prove it is authorized to read a private catalog view. In this context, _client application_ refers to the backend system that authenticates shoppers—for example, custom logic on [!DNL Adobe Commerce] or a third-party backend—never the storefront frontend itself.
 
-The following steps describe how a key pair and signed token move from creation to validation when you are not managing catalog views associated with a B2B shared catalog in the Adobe Commerce backend.
+The following steps describe how a key pair and signed token move from creation to validation for catalog views that aren't part of a B2B shared catalog.
 
 1. Your client application generates an RSA key pair and keeps the private key.
 1. You register the **public** key in [!DNL Commerce Optimizer] as a restricted access key.
 1. Your client application signs a JSON Web Token (JWT) with the private key and includes it with each request to a private catalog view.
 1. [!DNL Commerce Optimizer] validates the token's signature against the registered public key and, if valid, returns the requested catalog data.
 
-## Create a restricted access key for a catalog view
+## Create a restricted access key
 
 >[!NOTE]
 >
@@ -112,9 +112,9 @@ A restricted access key only authenticates access after it is assigned to a cata
 
 Restricted access keys are managed in one of two ways, depending on how you use catalog protection:
 
-- **Automatically, for B2B shared catalogs**—[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} For deployments integrated with [!DNL Adobe Commerce Optimizer Connector for B2B], the service automatically generates and assigns the first restricted access key when a catalog view is created. Each catalog view gets its own key. After that, you can manage each key from the Shared Catalog or Company Account pages. You can also view and manage keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+- **Automatically, for B2B shared catalogs**—[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B], the service automatically generates and assigns the first restricted access key when a catalog view is created. Each catalog view gets its own key. After that, you can manage each key from the Shared Catalog or Company Account pages. You can also view and manage keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
 
-  A shared catalog projected across multiple store views results in multiple catalog views, each with its own key. Edit or rotate a key for one catalog view without affecting the others.
+  Each combination of a shared catalog and a store view it's assigned to is projected as a separate catalog view. A projection is the catalog view, policy, price book reference, and restricted access key configuration data that the connector exports to [!DNL Adobe Commerce Optimizer] for that combination. So a shared catalog assigned to multiple store views produces multiple catalog views, each with its own key. Edit or rotate a key for one catalog view without affecting the others.
 
   Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one. See [B2B shared catalog changes](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes).
 

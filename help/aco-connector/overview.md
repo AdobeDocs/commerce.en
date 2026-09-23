@@ -98,9 +98,9 @@ After [!DNL Adobe Commerce Optimizer] ingests the data, you can configure:
 
 When you enable the connector, the [!DNL Adobe Commerce] instance remains the system of record for catalog and price data. When you update data in [!DNL Adobe Commerce], the connector syncs those updates to the [!DNL Adobe Commerce Optimizer] instance.
 
->[!NOTE]
->
->If your [!DNL Adobe Commerce] instance has B2B enabled with shared catalogs configured, the connector detects this automatically and provisions the corresponding private catalog views, policies, price books, and restricted access keys [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} for you. You don't need to create them manually. See [Next steps](/help/aco-connector/get-started.md#next-steps).
+[!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
+
+For [!DNL Adobe Commerce] deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B] that have custom B2B shared catalogs, the connector detects this automatically and provisions the corresponding private catalog views, policies, price book reference, and restricted access key configuration. for you. You don't need to create them manually. See [Next steps](/help/aco-connector/get-started.md#next-steps).
 
 >[!NOTE]
 >
