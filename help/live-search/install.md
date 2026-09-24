@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-last-update: 2026-07-29
+last-update: 2026-09-16
 ---
 # Set up for success with [!DNL Live Search]
 
@@ -76,8 +76,7 @@ This article is intended for the developer or systems integrator on your team wh
 >
 > **HIPAA readiness**
 >
->If you are using Adobe Commerce with the HIPAA-Ready extension and Healthcare add-on, do not process any protected health information (PHI) through Live Search
-> Live Search is not a HIPAA-ready service.
+>If you are using Adobe Commerce with the HIPAA-Ready extension and Healthcare add-on, do not process any protected health information (PHI) through Live Search. Live Search is not a HIPAA-ready service.
 >
 >For details, see [HIPAA readiness on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) and the [Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations) guidance, which lists Live Search among the non-HIPAA ready Commerce services.
 
@@ -143,11 +142,15 @@ Follow these instructions if you are installing [!DNL Live Search] on a new Comm
    - Categories Feed
    - Category Permissions Feed
 
-After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
+After verifying the indexers, the next step is to [configure the API keys](#configure).
 
 >[!TAB Existing Commerce instance]
 
 Follow these instructions if you are installing [!DNL Live Search] on an existing Commerce instance.
+
+>[!NOTE]
+>
+>The *Admin* >  _[!UICONTROL Stores]_ > [!UICONTROL Settings] > _[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]** setting only controls the product listing widgets. There is no *Admin* setting to disable the full [!DNL Live Search] storefront experience (such as the search popover). Use the CLI module commands in this procedure to keep your existing storefront search active while you configure [!DNL Live Search].
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
@@ -163,13 +166,17 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disable the [!DNL Live Search] modules that serve storefront search results.
+1. Disable the [!DNL Live Search] storefront modules, while keeping `Magento_LiveSearchAdapter` enabled.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   bin/magento module:disable Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
+   [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background. Keeping `Magento_LiveSearchAdapter` enabled does not switch storefront search over to [!DNL Live Search]; the module only needs to remain enabled so that Commerce's search engine dependencies continue to resolve correctly.
+
+   >[!IMPORTANT]
+   >
+   >Keep `Magento_LiveSearchAdapter` enabled during this phase, even though it was [deprecated](release-notes.md#live-search-400) as of [!DNL Live Search] 4.0.0. `Magento\Search\Model\EngineResolver` depends on this module being enabled, so disabling it breaks the existing storefront search with a `500` error. `Magento_LiveSearchAdapter` also cannot be disabled while `Magento_LiveSearchMetrics` is enabled, because the `Magento_LiveSearchMetrics` module's `composer.json` declares a dependency on `Magento_LiveSearchAdapter`. You do not need to disable `Magento_LiveSearchMetrics` for this workflow.
 
 1. Install the updates.
 
@@ -191,10 +198,10 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
 1. Enable the [!DNL Live Search] extension, and disable [!DNL OpenSearch] (Magento Elasticsearch and OpenSearch modules).
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   ```
+   ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
@@ -208,7 +215,7 @@ Follow these instructions if you are installing [!DNL Live Search] on an existin
    bin/magento setup:upgrade
    ```
 
-After verifying the indexers, the next step is to [configure the API keys](#2-configure-api-keys).
+After verifying the indexers, the next step is to [configure the API keys](#configure).
 
 >[!ENDTABS]
 
@@ -301,7 +308,7 @@ When you change this configuration, the message `Page cache is invalidated` appe
 
 ### Assign categories
 
-Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". These category assignments improve granularity when filtering.
+Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men," "Women," and "Gear." Subcategories are also set up for "Tops," "Bottoms," and "Watches." These category assignments improve granularity when filtering.
 
 ## 6. Test the connection {#test}
 
@@ -432,9 +439,9 @@ As [!DNL Live Search] does not have access to the complete product database, the
 Adobe recommends calling the SaaS APIs directly — specifically the Catalog Service endpoint.
 
 - Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
-- Take advantage of the [!DNL Catalog Service] federation to call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint.
+- To gain performance and reduce processor load, call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint using [!DNL Catalog Service] federation.
 
-For some use cases, it may be better to call [!DNL Catalog Service] for product details and similar cases. See [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) for more information.
+For some use cases, it may be better to call the [!DNL Catalog Service] for product details and similar scenarios. See the [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) GraphQL query for more information.
 
 If you have a custom headless implementation, check out the [!DNL Live Search] reference implementations:
 
@@ -496,7 +503,7 @@ Admins can also set the language of the [search index](settings.md#language), to
 
 The code for the product listing page widget and the [!DNL Live Search] field widget is available for download from GitHub.
 
-Developers who have access to the code can completely customize how it works and looks. They host the code on their own servers but still use the [!DNL Live Search] service.
+Developers who have access to the code can customize how it works and looks. They host the code on their own servers but still use the [!DNL Live Search] service.
 
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [Search bar](https://github.com/adobe/storefront-search-as-you-type)
@@ -548,7 +555,7 @@ This module adds additional contexts to GraphQL queries:
 
 ### PWA support
 
-[!DNL Live Search] works with PWA Studio but storefront developers might see slight differences compared to other Commerce implementations, particularly in certain GraphQL-driven scenarios and overall response characteristics. 
+[!DNL Live Search] works with PWA Studio but storefront developers see differences compared to other Commerce implementations, particularly in certain GraphQL-driven scenarios and response characteristics. 
 
 - The current PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
 - [!DNL Live Search] in PWA does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). As a result, search reporting and intelligent merchandising do not work on PWA storefronts.

@@ -422,7 +422,7 @@ The following items are required to complete the [storefront](./ratings-extensio
 
 * [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
 
-* A storefront project connected to your [!DNL Commerce] instance. If you do not have a storefront project, follow the steps in [Create a storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, including the [Link repo to commerce data](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"} section.
+* A storefront project connected to your [!DNL Commerce] instance. If you do not have a storefront project, follow the steps in [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/){target="_blank"}, including the [Link repo to commerce data](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"} section.
 
 ### Clone the storefront repository
 

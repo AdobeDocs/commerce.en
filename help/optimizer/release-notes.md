@@ -32,9 +32,28 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## September 2026
+
+>[!BEGINSHADEBOX]
+
+_September 3, 2026_
+
+### Attribute ranking (beta)
+
+[!DNL Adobe Commerce Optimizer] merchandising rules now support [**attribute ranking**](./merchandising/rules/add.md#attribute-ranking) for the **All product listings**, **Category rule**, and **Search rule**. Automatically apply a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, such as brand or category, without selecting individual SKUs. Attribute ranking is in beta. [Learn more](./merchandising/rules/add.md#attribute-ranking).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## August 2026
 
 >[!BEGINSHADEBOX]
+
+_September 9, 2026_
+
+![New](../assets/new.svg) **Multi-value HTTP header trigger policies**—Trigger policies using the `HTTP_HEADER` transport type can now receive multiple comma-separated values in a single header (for example, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Policy filters using `IN` evaluate the values with `OR` semantics. Filters using `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` reject the request with a validation error if the header contains multiple values. This behavior applies only to trigger policies using the `HTTP_HEADER` transport. [Learn more](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _August 7, 2026_
 

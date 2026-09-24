@@ -47,7 +47,7 @@ The documentation RAG (Retrieval-Augmented Generation) service provides AI-power
 
 This RAG provides an IDE interface for asking questions about Adobe Commerce and can advise you on best practices for developing applications and other migration tasks.
 
-The RAG service is part of the [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP (Model Context Protocol) server, which integrates with Cursor and other MCP-compatible AI assistants.
+The RAG service is part of the [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} MCP (Model Context Protocol) server, which integrates with Cursor and other MCP-compatible AI assistants.
 
 ## Available documentation
 
@@ -55,7 +55,7 @@ The following table describes what documentation is currently indexed by the RAG
 
 | Category | Index | Content included | Keywords |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-ins, storefront components | storefront, drop-in, EDS, product listing, checkout |
+| [Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-ins, storefront components | storefront, drop-in, EDS, product listing, checkout |
 | [Extensibility](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, events, extensions, integrations | webhook, event, extension, API mesh, GraphQL |
 | [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce (catalog, customers, orders) | catalog, product, customer, order, inventory |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, runtime actions, UI extensions | app builder, runtime action, React Spectrum |

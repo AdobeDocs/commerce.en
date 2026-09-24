@@ -108,7 +108,7 @@ After creating a recommendation, you need to retrieve its ID to implement the re
 
 1. In the **Recommendation ID** section, copy the ID.
 
-1. Use this ID to configure the [recommendation drop-in](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
+1. Use this ID to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
 ## Manage existing recommendations
 

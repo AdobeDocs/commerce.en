@@ -61,6 +61,28 @@ Policies with a **Value source** of **TRIGGER** are referred to as exclusive pol
 
 If the shopper clicks the **Brand** drop-down, the header of the API call contains `AC-Policy-Brand`, which is configured to only show products specific to the `AC-Policy-Brand` policy.
 
+### Multi-value HTTP header triggers {#multi-value-http-header-triggers}
+
+A trigger policy using the `HTTP_HEADER` transport type can receive multiple values in a single header. The values must be separated with commas and the filter operator must be `IN`. Each value is treated as an acceptable match. The values are evaluated with `OR` semantics.
+
+For example, a policy filter using `IN` with the following header:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+matches products whose `vehicle` attribute is either `UNIVERSAL` or `veh-bolt-mammoth-limited-2025`.
+
+Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` is rejected with a validation error. 
+
+#### Syntax notes
+
+- The header name matches the trigger name you configure, for example `AC-Policy-Vehicle`.
+- Commas separate individual values within the header. When the same `AC-Policy-_Name_` header appears more than once, its values will be combined into a single comma-separated header value
+- The filter operator is `IN`.
+- A policy filter with **Value source** set to `TRIGGER`.
+- A trigger whose **Transport type** is `HTTP_HEADER`.
+
 ## Create policy
 
 In this section, you create a new policy. The policy can be either **STATIC** or **TRIGGER**.

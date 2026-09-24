@@ -35,6 +35,10 @@ You have two options to configure the AEM Assets project:
 >
 >You can check the current AEM version from the top right menu: **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
 
+>[!IMPORTANT]
+>
+>Regardless of which option you use, [configure the metadata schema for asset approval](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) in the AEM Metadata Schema editor so you can approve Commerce assets.
+
 ## Enable the Commerce integration (self-service) {#enable-aem-commerce-self-service}
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} AEM release `2026.5.26309` and later.
@@ -53,7 +57,7 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
 ### Step 1: Create the program and environments
 
-Creating a program in Cloud Manager is a single wizard process — the program and its environments are configured across multiple steps and saved together at the end.
+Creating a program in Cloud Manager is a multi-step process — the program and its environments are configured across multiple steps and saved together.
 
 1. In Cloud Manager, select **[!UICONTROL Add Program]**.
 
@@ -195,9 +199,9 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
 ### Commerce tab is not visible in properties
 
-If the **Commerce** tab does not appear in properties, you must manually complete the following steps in the metadata schema editor:
+If the **Commerce** tab does not appear in properties, you must manually complete the following steps in the Metadata Schema Editor:
 
-1. Navigate to the metadata schema editor.
+1. Navigate to the Metadata Schema Editor.
 
 1. Select **Edit** to modify the default metadata schema form.
 
@@ -231,7 +235,7 @@ The Product Data UI component is added automatically based on the template.
 
    ![AEM Assets authoring](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
-1. Open the Administrator tools by selecting the hammer icon.
+1. Open the administration tools by selecting the hammer icon.
 
    ![AEM Author Admin manage metadata profiles](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
@@ -267,17 +271,17 @@ The Product Data UI component is added automatically based on the template.
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Optional. To synchronize approved Commerce assets automatically as they are uploaded to the AEM Assets environment, set the default value for the _[!UICONTROL Review Status]_ field on the `Basic` tab to `approved`.
+1. Optional. To synchronize approved Commerce Assets automatically as they are uploaded to the AEM Assets environment, set the default value for the _[!UICONTROL Review Status]_ field on the `Basic` tab to `approved`.
 
 1. Save the update.
 
-### Apply the metadata profile to the Commerce assets source folder
+### Apply the metadata profile to the Commerce Assets source folder
 
    1. From the **[!UICONTROL Metadata Profiles]** page, select the Commerce integration profile.
 
    1. From the action menu, select **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
-   1. Select the folder containing Commerce assets.
+   1. Select the folder containing Commerce Assets.
 
       Create a Commerce folder if it does not exist.
 

@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Manage the Data Export extension]"
+title: "[!DNL Manage the Data Export Extension]"
 description: Learn how to upgrade the [!DNL Data Export] extension and to remove or disable data export services that are not required.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
@@ -30,7 +30,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
 ---
-# Manage the SaaS data export Extension
+# Manage the SaaS Data Export extension
 
 The [[!DNL data export] extension](https://github.com/magento/commerce-data-export) for SaaS services is a collection of modules that enable data collection and synchronization between Adobe Commerce and connected Commerce Services.
 
