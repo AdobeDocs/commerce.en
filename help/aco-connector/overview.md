@@ -166,7 +166,7 @@ For step-by-step configuration guidance, see [Get Started](/help/aco-connector/g
   Use the connector as a stepping stone toward [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], with a compatible composable [!DNL Adobe Commerce] catalog
 
 - [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."} **B2B contract catalogs and pricing**
-  Give each company account a private catalog view with contract-specific product assortment and pricing, secured by restricted access keys that [!DNL Adobe Commerce Optimizer] provisions and keeps in sync automatically [!BADGE Private Beta]{type=Caution tooltip="Automatic restricted access key generation and management for B2B shared catalogs is currently in private beta."}
+  Give companies assigned to a shared catalog access to private catalog views with contract-specific product assortment and pricing, secured by restricted access keys that the connector provisions for the shared catalog.
 
 ## Responsibilities and implementation prerequisites {#responsibilities-prerequisites}
 

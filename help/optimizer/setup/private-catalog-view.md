@@ -72,7 +72,7 @@ If you are not using B2B shared catalogs—for example, to protect a catalog vie
 
 >[!NOTE]
 >
->Skip this procedure for deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
+>Skip this procedure for catalog views associated with B2B shared catalogs managed by the [!DNL Adobe Commerce Optimizer Connector for B2B]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
 Before you begin, [create a restricted access key](restricted-access-keys.md) from the public key your client application generates.
 

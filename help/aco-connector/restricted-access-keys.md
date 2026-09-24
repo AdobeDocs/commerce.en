@@ -76,34 +76,68 @@ Commerce generates a new key pair and holds the private key. The Restricted Acce
 
 The public key is not registered with [!DNL Adobe Commerce Optimizer] until you assign the key to a catalog view. After registration, the Restricted Access Key table entry is updated to show the catalog assignment and expiration date.
 
-## Assign keys to a B2B shared catalog view {#assign-keys-to-a-shared-catalog-view}
+## Assign keys to a catalog view projected from B2B shared catalog {#assign-keys-to-a-shared-catalog-view}
 
-Assign or unassign keys from the catalog view itself, not from the main [!UICONTROL Restricted Access Keys] grid.
+Assign or unassign keys from the catalog view from the company account or shared catalog page, not from the main [!UICONTROL Restricted Access Keys] grid.
 
-A catalog view must have at least one key and can have at most three. If you try to assign a fourth key, the save fails with a message telling you to remove one first.
+A catalog view must have at least one key and can have at most three.
 
-1. From the Commerce Admin, go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Restricted Access Keys]**.
-   To assign keys to a catalog view for a specific company, open the company detail page (**[!UICONTROL Customers]** > **[!UICONTROL Companies]** > **[!UICONTROL Edit]**) and select the [!UICONTROL Catalog Views] tab. Then, select **[!UICONTROL Edit Restricted Access Keys]** for the catalog view to update.
+- If you try to assign a fourth key, you get an error message when you try to save the value: `A Catalog View can have at most 3 access keys.`
+- If a catalog view has only one key, that key cannot be deleted or unassigned.
 
-  >[!NOTE]
-  >
-  >You can also assign keys directly to a shared catalog (**[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]** ) view.  Then, select **[!UICONTROL General Settings]** from the [!UICONTROL Actions] dropdown for the catalog view to update. Then, select **Catalog Views** > **[!UICONTROL Edit Restricted Access Keys]**. The key assignment applies to all catalog views projected from that shared catalog.
+To update the catalog view key configuration, you can access it from the company account page, or from the shared catalog page.
 
-1. From the _Company_ view, select _[!UICONTROL Catalog Views]_ tab. The tab lists the catalog views projected from the shared catalog, including their assigned keys.
+>[!TAB Manage keys from a company account]
 
-1. To view the list of restricted access keys, select **[!UICONTROL Edit Restricted Access Keys]** for the catalog view you want to update.
+1. From the Commerce Admin, open the company page (**[!UICONTROL Customers]** > **[!UICONTROL Companies]**).
+
+1. In [!UICONTROL Action] column for the company, select [!UICONTROL Edit].
+
+1. To view the list of catalog views projected from the shared catalog assigned to te Company, expand the _[!UICONTROL Catalog Views]_ section.
+
+  The tab lists the catalog views projected from the shared catalog, including their assigned keys.
+
+1. In the [!UICONTROL Actions] column for the catalog view to update, select **[!UICONTROL Edit Restricted Access Keys]**.
 
    ![Edit Restricted Access Keys drop-down showing keys assigned to a catalog view](assets/restricted-access-key-selector.png){width="500" zoomable="yes"}
 
-1. In the **[!UICONTROL Access Keys]** field, select an unassigned key by the default key title, for example `#42`. Then, click [!UICONTROL Save] to assign it to the catalog view.
+1. To assign a key, select the **[!UICONTROL Access Keys]** drop-down list. Then, select an unassigned key by the default key title, for example `#42`. Then, click [!UICONTROL Done] to assign it to the catalog view.
 
    Keys already assigned to a different catalog view are labeled accordingly.
 
-1. Click **[!UICONTROL Save]**.
+1. To remove an access token, remove it from the [!UICONTROL Access Tokens] field by selecting the `x` control in the key label.
+
+1. To save and apply the configuration updates, select **[!UICONTROL Save]**.
+
+>[!TAB Manage keys from a shared catalog]
+
+1. From the Commerce Admin, open the shared catalog page (**[!UICONTROL Catalog]** > **[!UICONTROL Shared catalogs]**).
+
+1. In [!UICONTROL Action] column for the shared, choose **[!UICONTROL General Settings]** from the [!UICONTROL Select] menu.
+
+1. To view the list of catalog views projected from the shared catalog, select **[!UICONTROL Catalog Views]** from the [!UICONTROL Shared Catalog Information] menu.
+
+  The [!UICONTROL Catalog Views] page lists the catalog view id, associated store view, and access key for each catalog view.
+
+1. In the [!UICONTROL Actions] column for the catalog view to update, select **[!UICONTROL Edit Restricted Access Keys]**.
+
+   ![Edit Restricted Access Keys drop-down showing keys assigned to a catalog view](assets/restricted-access-key-selector.png){width="500" zoomable="yes"}
+
+1. To assign a key, select the **[!UICONTROL Access Keys]** drop-down list. Then, select an unassigned key by the default key title, for example `#42`. Then, click [!UICONTROL Done] to assign it to the catalog view.
+
+   Keys already assigned to a different catalog view are labeled accordingly.
+
+1. To remove an access token, remove it from the [!UICONTROL Access Tokens] field by selecting the `x` control in the key label.
+
+1. To save and apply the configuration updates, select **[!UICONTROL Save]**.
+
+>[!ENDTABS]
 
 ## Manage key expiration and renewal
 
-The default key lifetime for the restricted access can be configured. The value determines the expiration date set when the [!DNL Adobe Commerce Optimizer Connector B2B] extension generates the initial key, or when you create a new key manually. The expiration date is shown in the [!UICONTROL Expiration] column on the [!UICONTROL Restricted Access Keys] page.
+You can configure the default key lifetime for restricted access keys. The value determines the expiration date set when the [!DNL Adobe Commerce Optimizer Connector B2B] extension generates the initial key, or when you create a new key manually.
+
+The expiration date is shown in the [!UICONTROL Expiration] column on the [!UICONTROL Restricted Access Keys] page.
 
 To change the duration, go to **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL ACO Catalog View Sync]** and update the **[!UICONTROL Restricted Access Key Expiration (days)]** field. The default system key lifetime is initially set for an extended period (~100 years). Be sure to update it to a value that matches your security policies.
 

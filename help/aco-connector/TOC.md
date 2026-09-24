@@ -13,6 +13,7 @@ nudge: true
 - [Get Started](get-started.md)
 - [Connector sync pipeline](connector-sync-pipeline.md)
 - Manage synchronization {#manage-sync}
+  - Configure export parameters
   - [Monitor catalog data sync](data-sync-status.md)
   - Catalog view sync {#catalog-view-sync}
     - [Monitor catalog view sync](catalog-view-sync-status.md)
