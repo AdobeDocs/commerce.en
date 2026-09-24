@@ -172,7 +172,7 @@ If [!DNL Adobe Commerce] B2B is enabled, and you have installed the [!DNL Adobe 
 
 >[!NOTE]
 >
->The deletion grace period defaults to 7 days. See [Configure ACO catalog view sync settings](../aco-connector/catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings). To change it, go to the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio) and navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Catalog View Sync]** > **[!UICONTROL Deletion]** > **[!UICONTROL Deletion Grace Period (days)]**. Setting this field to `0` removes the catalog view's ACO projection immediately, with no grace period.
+>The deletion grace period defaults to 7 days. You can change it by updateing the [catalog view sync settings](../aco-connector/catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings).
 
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
