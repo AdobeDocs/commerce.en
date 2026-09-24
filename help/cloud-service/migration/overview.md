@@ -205,7 +205,10 @@ For more information on the Commerce Developer Agent, which is integrated with t
 
 In [!DNL Adobe Commerce on Cloud] or on-premises customizations can use in-process PHP—modules, plugins, and event observers that run inside the application. [!DNL Adobe Commerce as a Cloud Service] is a versionless SaaS platform and that model no longer applies. Customizations run as out-of-process [!DNL Adobe Developer App Builder] applications that integrate with Commerce through events and APIs. Modernizing a store's customizations for this architecture is typically the most significant engineering effort in an [!DNL Adobe Commerce as a Cloud Service] migration.
 
-Adobe provides two AI-assisted paths for this work: the Commerce Developer Agent, a guided, browser-based experience and the recommended starting point for most migrations, and the Commerce Developer MCP, a conversational IDE experience for teams who want to work in their existing development environment or who need storefront modernization on Edge Delivery Services (EDS).
+Adobe provides two AI-assisted paths for this work:
+
+- **Commerce Developer Agent** - A guided, browser-based experience and the recommended starting point for most migrations.
+- **Commerce Developer MCP** - A conversational IDE experience for teams who want to work in their existing development environment or who need storefront modernization on Edge Delivery Services (EDS).
 
 ### Code migration overview
 
@@ -217,19 +220,31 @@ While migration is the primary use case, the Commerce Developer Agent is designe
 
 Using the findings from the [migration assessment](#migration-assessment-tool), the Commerce Developer Agent transforms identified customizations into [!DNL App Builder] applications through an iterative development workflow. Consider the following guidelines when developing using these tools:
 
-- **Start with the blueprint:** The Commerce Developer Agent consumes the migration assessment and produces a structured Blueprint—a phased migration plan with risk flags and dependency mapping—for you to review.
+- **Start with the blueprint:** The Commerce Developer Agent consumes the migration assessment and produces a structured Blueprint. This is a phased migration plan that flags risks and maps dependencies for you to review.
 
 - **Review and approve:** Nothing is generated automatically. The Blueprint requires your explicit approval before any code generation begins, and you can refine it conversationally across multiple versions.
 
-- **Generate App Builder scaffolding:** Once approved, the agent generates scaffolded [!DNL App Builder] Commerce extensions—including event-based and webhook-based mechanisms, merchant-configurable settings, and persistence patterns—and runs validation checks on the output.
+- **Generate App Builder scaffolding:** Once approved, the agent generates scaffolded [!DNL App Builder] Commerce extensions including:
+
+  - Event and webhook infrastructure
+  - Merchant-configurable settings
+  - Persistence patterns
+
+  After generating the scaffolding, the agent runs validation checks on the output.
 
 - **Refine and export or deploy directly to [!DNL App Builder]:** You can request follow-up changes in the Develop stage and download a ZIP of the generated extension code, or you can deploy directly to [!DNL App Builder] from the Commerce Developer Agent. Project context and decisions persist across sessions.
 
 For more information, see [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/) and [Getting started](https://developer.adobe.com/commerce/extensibility/developer-agent/getting-started).
 
-### Commerce Developer MCP (for use with your own IDE and for storefront modernization)
+### Commerce Developer MCP (local development)
 
-Teams that prefer to work in their existing IDE—or that need to modernize a storefront on Edge Delivery Services (EDS)—can use the Commerce Developer MCP. Like the Commerce Developer Agent, it consumes the migration assessment directly, keeping implementation aligned with the approved migration roadmap and reducing manual interpretation. Consider the following guidelines when developing using these tools:
+>[!NOTE]
+>
+>The Commerce Developer MCP is designed to work within your IDE.
+
+Teams that prefer to work in their existing IDE or that need to modernize a storefront on Edge Delivery Services (EDS) can use the Commerce Developer MCP. Like the Commerce Developer Agent, it consumes the migration assessment directly, keeping implementation aligned with the approved migration roadmap and reducing manual interpretation.
+
+Consider the following guidelines when developing using these tools:
 
 - **Start with the blueprint** - The Commerce Developer MCP consumes the migration assessment, using its identified customizations, recommendations, and migration priorities as the foundation for implementation planning.
 
