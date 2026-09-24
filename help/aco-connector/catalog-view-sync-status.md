@@ -43,7 +43,7 @@ topic_v2:
 
 Track B2B catalog view synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] using the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
 
-[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book reference, and restricted access key configurations for each B2B shared catalog exists in [!DNL Adobe Commerce Optimizer] and matches your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
+[!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book reference, and restricted access key configurations for each B2B shared catalog exist in [!DNL Adobe Commerce Optimizer] and match your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Access the sync status page {#access-the-sync-status-page}
 
