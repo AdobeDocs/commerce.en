@@ -56,7 +56,7 @@ You can assign a key to the catalog view from the Shared Catalog grid, or from t
 
 >[!NOTE]
 >
->For a reference of the fields on this page, see <!-- Uncomment when page is published [Restricted Access Keys management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} in the *Commerce Admin Guide*.-->
+>For a reference of the fields on this page, [Restricted Access Keys management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} in the *Commerce Admin Guide*.-->
 
 ## When you need more than the automatic key {#when-you-need-more-than-the-automatic-key}
 
