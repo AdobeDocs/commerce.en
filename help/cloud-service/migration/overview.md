@@ -197,7 +197,7 @@ You can also rerun assessments as your applications evolve. This allows your tea
 
 Every [!DNL Adobe Commerce as a Cloud Service] migration begins with an assessment. It is a cost-effective way to establish scope, reduce uncertainty, and create a shared migration blueprint before implementation begins.
 
-For more information on assessment tooling and downstream developer workflow, see [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+For more information on assessment tooling and downstream developer workflow, see [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools).
 
 For more information on the Commerce Developer Agent, which is integrated with the Migration Assessment Tool, see [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
@@ -305,7 +305,7 @@ Code and storefront modernization begin once the Migration Assessment Tool roadm
 
 For more information on the Commerce Developer Agent, which is integrated with the Migration Assessment Tool, see [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
-For more information on how to install and use the MCP, see the [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/) documentation.
+For more information on how to install and use the MCP, see the [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools) documentation.
 
 ## Data migration (Commerce Data Migration Service)
 
