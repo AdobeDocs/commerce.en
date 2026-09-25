@@ -123,7 +123,7 @@ You can download the `workspace.json` file from the [Adobe Developer Console](ht
 
 If your Commerce instance has the [Async Config Save](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) option enabled, configuration changes are queued and applied by an asynchronous consumer instead of being saved immediately in the same request. To upload a `workspace.json` file for custom automatic matching in this mode, complete the following steps in order:
 
-1. Confirm that Commerce Async Config Save is enabled.
+1. Confirm that Commerce Async Config Save is [enabled](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
 
 1. From the Admin, go to **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
