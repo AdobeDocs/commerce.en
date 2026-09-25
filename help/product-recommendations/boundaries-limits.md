@@ -9,7 +9,6 @@ Review the following boundaries and limits to ensure that [!DNL Product Recommen
 
 ## General
 
-- **Product types** - Supported product types include _simple_, _configurable_, _virtual_, _downloadable_, and _gift card_. _Bundle_, _grouped_, and custom product types are not supported. If your catalog contains a large number of unsupported product types, you can expect a low [readiness score](create.md#readiness-indicators). See [Filter by product type](filters.md#type).
 - **SKUs with spaces** - SKUs that contain spaces can reduce recommendation relevancy and should be avoided when possible.
 - **Cart page** - Product Recommendations are not supported on the Cart page when your store is configured to [display the shopping cart page immediately after adding a product to the cart](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). See [Create recommendations](create.md).
 - **Child products** - Child products of a configurable product (visibility _Not Visible Individually_) are not displayed in a recommendation unit. Only the configurable (parent) product can appear. See [Filter products](filters.md#product).
