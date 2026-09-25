@@ -60,21 +60,21 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## September 2026 - release #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items will be available in Production environments on September 22, 2026.
+The following items were added to Production environments on September 22, 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Attach files and images to return requests
 
-Customers can now upload files and images when submitting a return request through the storefront `requestReturn` GraphQL mutation. <!-- CCSAAS-5410 -->
+Customers can now upload files and images when submitting a return request through the storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL mutation. Use the [`initiateUpload` and `finishUpload` mutations](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) to upload the file, then assign the returned key to a return item custom attribute. <!-- CCSAAS-5410 -->
 
 ### Control inventory source appearance
 
-Each inventory source now includes a [!UICONTROL **Visible on Storefront**] toggle on the source edit page in the [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns stock information only for sources you flag as visible. Sources are hidden by default. <!-- ACCS-1645 -->
+Each inventory source now includes a [!UICONTROL **Visible on Storefront**] toggle on the [source edit page](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-add) in the [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns stock information only for sources you flag as visible. Sources are hidden by default. <!-- ACCS-1645 -->
 
 ### Guide multi-source shipments
 
