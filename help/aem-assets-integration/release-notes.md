@@ -34,7 +34,7 @@ _February 11, 2025_
 
 ## v1.4.7
 
-_[RELEASE DATE TBD]_
+_September 29, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
@@ -46,7 +46,7 @@ _[RELEASE DATE TBD]_
 
 ## v1.4.6
 
-_[RELEASE DATE TBD]_
+_September 29, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
@@ -54,13 +54,9 @@ _[RELEASE DATE TBD]_
 
 ![New issue](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce can now check for AEM Assets Integration extension updates asynchronously and notify administrators in the Admin when a new version is available. Administrators can also run a manual check using `bin/magento aem:assets:check-update`. For details, see [Check for extension updates](get-started/check-for-updates.md).
 
->[!NOTE]
->
->_[Cloud Service availability TBD]_ — confirm whether custom image roles and the update checker are available on Adobe Commerce as a Cloud Service before publishing.
-
 ## v1.4.5
 
-_September 10, 2026_
+_September 29, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 

@@ -29,10 +29,6 @@ Commerce metadata enables the following capabilities:
 * **Add Commerce-specific alt text keyed by store view** via the `commerce:altTextStoreViews` and `commerce:altTextValues` fields.
 * **Expose these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
->[!IMPORTANT]
->
->The **Commerce-specific alt text** capability is not yet available through [self-service onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service). It is currently provided only when you deploy the `assets-commerce` custom code package (see [Install the assets-commerce package manually](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Native support is planned for an upcoming AEM release.
-
 To configure these resources in your AEM project, see [Configure the AEM Assets project](get-started/configure-aem.md). The rest of this topic describes how the metadata is provided.
 
 ## AEM Commerce assets-commerce package contents

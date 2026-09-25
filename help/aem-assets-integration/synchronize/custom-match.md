@@ -141,16 +141,6 @@ If your Commerce instance has the [Async Config Save](https://experienceleague.a
 >
 >If Async Config Save is disabled, the normal synchronous save behavior applies, and you do not need to wait for a queue consumer.
 
-### Previous workspace.json persistence issue
-
-Before AEM Assets Integration extension version 1.4.7, uploading a `workspace.json` file while Async Config Save was enabled could silently fail to update the App Builder OAuth values:
-
-* The Admin request queued only the upload metadata, not the uploaded file's contents.
-* By the time the queue consumer processed the save, the temporary upload file could no longer be read.
-* As a result, the configuration appeared to save successfully, but the App Builder OAuth values remained unchanged.
-
-Upgrade to version 1.4.7 or later to resolve this issue, then re-upload your `workspace.json` file and follow the steps in this section.
-
 ### Troubleshoot Async Config Save
 
 | Symptom | What to do |
