@@ -87,6 +87,8 @@ A catalog view must have at least one key and can have at most three.
 
 To update the catalog view key configuration, you can access it from the company account page, or from the shared catalog page.
 
+>[!BEGINTABS]
+
 >[!TAB Manage keys from a company account]
 
 1. From the Commerce Admin, open the company page (**[!UICONTROL Customers]** > **[!UICONTROL Companies]**).
