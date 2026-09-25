@@ -21,11 +21,11 @@ topic_v2:
 ---
 # Check for extension updates
 
-As of AEM Assets Integration extension version 1.4.6, Adobe Commerce can automatically check if a newer version of the extension is available and notify administrators in the Admin. This check runs asynchronously as part of scheduled processing and does not block Admin page rendering.
+With AEM Assets Integration extension version 1.4.6 and later, Adobe Commerce automatically checks whether a newer version of the extension is available and notifies administrators in the Admin. This check runs asynchronously as part of scheduled processing and does not block Admin page rendering.
 
 ## How the update check works
 
-* The checker compares your installed `aem-assets-integration` package version against the highest compatible version available from [repo.magento.com](https://repo.magento.com/admin/dashboard).
+* The update check compares your installed `aem-assets-integration` package version against the highest compatible version available from [repo.magento.com](https://repo.magento.com/admin/dashboard).
 * Results are cached. Loading an Admin page reads the most recent cached result rather than triggering a live network request.
 * If `repo.magento.com` is unavailable, or the returned metadata is invalid, Commerce keeps the last successful cached result and does not block the Admin.
 
@@ -61,7 +61,7 @@ This command only checks for and reports an available update. It does not modify
 
 ## Release metadata for extension packages
 
-The update checker reads release metadata from the `extra` section of the installed package's `composer.json` file:
+The update check reads release metadata from the `extra` section of the installed package's `composer.json` file:
 
 ```json
 {

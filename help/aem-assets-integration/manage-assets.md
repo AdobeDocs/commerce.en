@@ -77,7 +77,7 @@ To learn how to link assets to products in AEM Assets (including metadata config
 
 ### Manage localized alt text
 
-You author localized alt text in AEM Assets, not in the Commerce product media gallery. Add a row for each Commerce store view in the **[!UICONTROL Alt Texts]** field. Include an alt text for this image, such as "White T-Shirt", then click **[!UICONTROL Save & Close]** so the existing synchronization process transfers the values to Commerce.
+You author localized alt text in AEM Assets, not in the Commerce product media gallery. Add a row for each Commerce store view in the **[!UICONTROL Alt Texts]** field. Include an alt text value for this image, such as "White T-Shirt", then click **[!UICONTROL Save & Close]** so the existing synchronization process transfers the values to Commerce.
 
 Commerce stores each synchronized value in the standard image **[!UICONTROL Label]** field. Alt-text localization does not change the asset assignment, image role, or gallery position. Customer-created database fields such as `alt_text` are outside the standard integration scope.
 

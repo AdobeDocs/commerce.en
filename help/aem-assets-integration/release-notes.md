@@ -42,7 +42,7 @@ _[RELEASE DATE TBD]_
 
 >[!IMPORTANT]
 >
->If you use a custom matcher with Async Config Save enabled, re-upload your `workspace.json` file after you upgrade to this version. For details, see [Async Config Save](synchronize/custom-match.md#async-config-save).
+>If you use a custom matcher with the Async Config Save option enabled, re-upload your `workspace.json` file after you upgrade to this version. For upload instructions, see [Async Config Save](synchronize/custom-match.md#async-config-save).
 
 ## v1.4.6
 

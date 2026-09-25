@@ -121,7 +121,7 @@ You can download the `workspace.json` file from the [Adobe Developer Console](ht
 
 ## Async Config Save
 
-If your Commerce instance has Async Config Save enabled, configuration changes are queued and applied by an asynchronous consumer instead of being saved immediately in the same request. To upload a `workspace.json` file for custom automatic matching in this mode, complete the following steps in order:
+If your Commerce instance has the [Async Config Save](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) option enabled, configuration changes are queued and applied by an asynchronous consumer instead of being saved immediately in the same request. To upload a `workspace.json` file for custom automatic matching in this mode, complete the following steps in order:
 
 1. Confirm that Commerce Async Config Save is enabled.
 
@@ -336,7 +336,7 @@ The `asset_matches` parameter contains the following attributes:
 | Attribute | Data Type | Description |
 | --- | --- | --- |
 | `asset_id` | String | The asset ID. |
-| `asset_roles` | Array | Asset roles. Uses the supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles), such as `thumbnail`, `image`, `small_image`, and `swatch_image`. As of AEM Assets Integration extension version 1.4.6, custom image roles (such as `hero` or `custom_role_1`) are also accepted. |
+| `asset_roles` | Array | Asset roles. Uses the supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles), such as `thumbnail`, `image`, `small_image`, and `swatch_image`. With AEM Assets Integration extension 1.4.6 and later, custom image roles (such as `hero` or `custom_role_1`) are also accepted. |
 | `asset_format` | String | The asset format. Possible values are `image` and `video`. |
 | `asset_position` | Number | The position of the asset in the product gallery. |
 
