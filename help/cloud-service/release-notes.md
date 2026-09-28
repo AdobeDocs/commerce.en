@@ -58,7 +58,73 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## September 2026 - release #2 {#latest}
+## October 2026 - release #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items will be added to production environments on October 6, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Access company details in the shipping rates webhook
+
+The out-of-process `get_rates` shipping webhook payload now includes the cart's `company_id` and company custom attributes, so [!DNL App Builder] shipping integrations can determine eligibility, such as free shipping, without calling [!DNL Commerce]. Map the `rateRequest.company` fields in the webhook's [!UICONTROL Hook Fields] configuration. <!-- CCSAAS-5485 -->
+
+### Manage catalog price rules in REST
+
+New REST API endpoints let integrations create, read, update, delete, and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog), so you can manage large numbers of rules programmatically. <!-- ACCS-1621 -->
+
+### Protect presigned uploads with reCAPTCHA
+
+You can now require [!DNL Google reCAPTCHA] validation on the `initiateUpload` GraphQL mutation to protect presigned file uploads. To enable this setting in the [!DNL Admin], navigate to [!UICONTROL **Enable for Presigned Upload**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
+
+### Create custom attributes for returns with REST
+
+The `/V1/returns` REST API endpoints accept custom attributes on return (RMA) items, so back-end integrations such as order management systems can synchronize return fields without using the storefront GraphQL API.
+
+Set file and image attribute values with a key from the `/V1/media/initiate-upload` and `finish-upload` flow. <!-- CCSAAS-5502 -->
+
+### Restrict guest company registration
+
+A new configuration option lets you prevent unauthenticated guest customers from registering a company from the storefront. <!-- ACCS-1823 -->
+
+### Audit an order through GraphQL
+
+The `CustomerOrdersFilterInput` GraphQL input now supports an `original_number` field that returns the original order and all orders created from subsequent edits as a single chain, matching the `order_original_id` filter in REST. <!-- ACCS-1442 -->
+
+### Schedule catalog price rules by date and time
+
+You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* The [!DNL Commerce Admin] now displays a warning when you create or edit a webhook that includes the `X-OW-EXTRA-LOGGING` header set to `on`. The header is intended for debugging and is not recommended in production. <!-- CCSAAS-5486 -->
+
+* Files uploaded through presigned S3 upload URLs now have additional scans for malware. <!-- ACCS-1463 -->
+
+* The Bulk API now enforces a maximum number of entities per request. Requests that exceed the limit return an error. <!-- ACCS-703 -->
+
+* Fixed an issue where salable quantity could be under-reported for products, which could incorrectly block add-to-cart, REST, and GraphQL stock checks. <!-- ACCS-1908 -->
+
+* Fixed an issue where the [!DNL Commerce Admin] customer grid displayed duplicate rows for B2B customers who belonged to a company. <!-- ACCS-1143 -->
+
+* Fixed an issue where saving the [!DNL AEM Assets] integration configuration did not register the tenant. <!-- ACAP-1317 -->
+
+* Fixed an issue where a special price could outlast its expiration date. <!-- CCSAAS-5499 -->
+
+* Fixed an issue where the [!UICONTROL Return Items] grid could fail to load for a pending return. <!-- CCSAAS-5514 -->
+
+* Fixed an issue where requesting cart prices or totals could return an error when the cart contained an out-of-stock item. <!-- CEXT-6776 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - release #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
