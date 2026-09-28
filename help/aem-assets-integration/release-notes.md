@@ -32,6 +32,36 @@ _February 11, 2025_
 
 +++
 
+## v1.4.7
+
+_September 18, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1317 --> Fixed an issue where the `workspace.json` file uploaded for [custom automatic matching](synchronize/custom-match.md) did not persist correctly when Commerce Async Config Save is enabled. Previously, the Admin request queued only the upload metadata rather than the file contents, so by the time the asynchronous configuration consumer processed the save, the temporary upload file could no longer be read. As a result, the configuration appeared to save successfully while the App Builder OAuth values remained unchanged. Uploaded App Builder credentials now survive the queue boundary and are processed correctly by the asynchronous consumer.
+
+>[!IMPORTANT]
+>
+>If you use a custom matcher with the Async Config Save option enabled, re-upload your `workspace.json` file after you upgrade to this version. For upload instructions, see [Async Config Save](synchronize/custom-match.md#async-config-save).
+
+## v1.4.6
+
+_September 8, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1272 --> Custom AEM image roles are now retained during synchronization. Custom values in the AEM `commerce:roles` metadata field are ingested and mapped to Commerce product media-gallery data, in addition to the four standard roles (`image`, `small_image`, `thumbnail`, and `swatch_image`). For details, see [Custom automatic matching](synchronize/custom-match.md).
+
+![New issue](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce can now check for AEM Assets Integration extension updates asynchronously and notify administrators in the Admin when a new version is available. Administrators can also run a manual check using `bin/magento aem:assets:check-update`. For details, see [Check for extension updates](get-started/check-for-updates.md).
+
+## v1.4.5
+
+_August 3, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1321 --> Fixed a backward-compatibility issue with store-view asset visibility. Existing asset synchronization requests that don't specify hidden store views continue to work without changes.
+
 ## v1.4.4
 
 _July 30, 2026_
@@ -39,6 +69,8 @@ _July 30, 2026_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
 ![New issue](../assets/new.svg) Now, merchants can hide specific store views for an AEM asset. When AEM Assets marks an image as hidden for one or more store views, Commerce excludes that image from the storefront on those store views. The Admin product media gallery now includes a **[!UICONTROL Store View Visibility]** field that shows which store views hide the image. <!-- Issue ACAP-1308 -->
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where the Page Builder integration package incorrectly required the `magento/module-page-builder` package, preventing the package from being installed independently.
 
 ## v1.4.2
 

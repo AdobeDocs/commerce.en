@@ -49,6 +49,8 @@ When the **[!UICONTROL Match by product SKU]** matching rule is configured  in t
 
 1. Configure the metadata ([!UICONTROL SKU], [!UICONTROL position], and [!UICONTROL role]) that links the asset to the associated product SKU.
 
+    The four standard roles are `image`, `small_image`, `thumbnail`, and `swatch_image`. With AEM Assets Integration extension version 1.4.6 and later, you can also enter a custom image role, such as `hero` or `custom_role_1`. See [Custom automatic matching](custom-match.md) for details.
+
     >[!NOTE]
     >
     > If an asset is used for multiple products, configure the metadata for each associated SKU.  
