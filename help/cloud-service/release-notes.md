@@ -70,7 +70,7 @@ The following items will be added to production environments on October 6, 2026.
 
 ### Access company details in the shipping rates webhook
 
-The out-of-process `get_rates` shipping webhook payload now includes the cart's `company_id` and company custom attributes, so [!DNL App Builder] shipping integrations can determine eligibility, such as free shipping, without calling [!DNL Commerce]. Map the `rateRequest.company` fields in the webhook's [!UICONTROL Hook Fields] configuration. <!-- CCSAAS-5485 -->
+The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook payload now includes the cart's `company_id` and company custom attributes, so [!DNL App Builder] shipping integrations can determine eligibility, such as free shipping, without calling [!DNL Commerce]. Map the `rateRequest.company` fields in the webhook's [!UICONTROL Hook Fields] configuration. <!-- CCSAAS-5485 -->
 
 ### Manage catalog price rules in REST
 
@@ -78,7 +78,7 @@ New REST API endpoints let integrations manage and search [catalog price rules](
 
 ### Protect presigned uploads with reCAPTCHA
 
-You can now require [!DNL Google reCAPTCHA] validation on the `initiateUpload` GraphQL mutation to protect presigned file uploads. To enable this setting in the [!DNL Admin], navigate to [!UICONTROL **Enable for Presigned Upload**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
+You can now require [!DNL Google reCAPTCHA] validation on the [`initiateUpload` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload) to protect presigned file uploads. To enable this setting in the [!DNL Admin], navigate to [!UICONTROL **Enable for Presigned Upload**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
 
 ### Create custom attributes for returns with REST
 
@@ -88,7 +88,19 @@ Set file and image attribute values with a key from the `/V1/media/initiate-uplo
 
 ### Restrict guest company registration
 
-A new configuration option lets you prevent unauthenticated guest customers from registering a company from the storefront. <!-- ACCS-1823 -->
+A new configuration option lets you prevent unauthenticated guest customers from registering a company from the storefront through the `createCompany` GraphQL mutation.
+
+This option is not available in the [!DNL Commerce Admin]. To enable it, set the `btob/company/restrict_guest_company_registration` configuration flag to `1` with the [`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoint:
+
+```json
+{
+  "config": {
+    "btob/company/restrict_guest_company_registration": "1"
+  }
+}
+```
+
+When enabled, [!DNL Commerce] blocks guest callers from both the `createCompany` mutation and the `isCompanyEmailAvailable` query. <!-- ACCS-1823 -->
 
 ### Audit an order through GraphQL
 
