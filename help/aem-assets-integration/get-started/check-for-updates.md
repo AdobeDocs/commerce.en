@@ -31,7 +31,7 @@ With AEM Assets Integration extension version 1.4.6 and later, Adobe Commerce au
 
 >[!NOTE]
 >
->_[Cloud Service availability TBD]_ — The update checker is intended for Adobe Commerce on Cloud and on-premises deployments. Whether it is available or suppressed on Adobe Commerce as a Cloud Service is not yet confirmed.
+>The update check is intended for Adobe Commerce on Cloud and on-premises deployments.
 
 ## View update notifications
 

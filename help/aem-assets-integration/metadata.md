@@ -49,7 +49,7 @@ This package code adds the following resources to the AEM Assets authoring envir
 
     >[!NOTE]
     >
-    >_[TBD — pending confirmation]_ Whether Commerce automatically creates a missing `media_image`-style attribute for a custom role, requires the merchant to create it first, or fails synchronization for that role is not yet confirmed. Do not rely on this behavior until it is verified.
+    >Commerce automatically creates a missing `media_image`-style attribute for a custom role.
 
   * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text for each Commerce store view code. The multifield persists in two index-aligned `String[]` properties:
 
