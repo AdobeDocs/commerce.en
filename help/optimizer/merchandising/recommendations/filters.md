@@ -207,7 +207,63 @@ For **inclusions**, only products whose SKUs are listed (and that satisfy your o
 >Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
 
 <!--
-### Attribute
+COMOPT-2027 draft: keep commented until attribute eligibility, operators, and the
+recommendation-type support matrix are confirmed for release. See the HLD (marked
+TECHNICAL REVIEW) and Category Filtering notes before publishing. "Same as current
+product" is separate work and is intentionally not covered here.
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+### Attribute {#attribute}
+
+>[!NOTE]
+>
+>Attribute filtering is in beta.
+
+Attribute filters let you include or exclude products based on product attribute values, using the same **[!UICONTROL Filter products]** page as [price](#price) and [product](#product) filters.
+
+#### About attribute filters
+
+An attribute filter differs from a [product filter](#product) in that it targets products by shared attribute values rather than by individual SKU. For example, instead of listing every SKU that belongs to a brand, you can create a single attribute filter that matches all products assigned to that brand.
+
+<!-- CONFIRM: final list of filterable attributes (for example, brand, category, stock status) and whether custom attributes are supported. -->
+
+#### Choose an attribute and condition
+
+1. While [creating or editing](create.md) a recommendation unit, open **[!UICONTROL Filter products]** (or go to the _Filters_ step from the unit workflow).
+1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab.
+1. In the list on the left, select **[!UICONTROL Attribute]**.
+1. Turn **[!UICONTROL Enable filter]** on.
+1. Choose an attribute, then select or enter one or more values for the condition.
+
+   <!-- CONFIRM: attribute picker UI label, available attributes, and whether string and/or numeric operators ship at release. -->
+
+1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
+
+#### Use inclusion and exclusion conditions
+
+- **Inclusions** – Only products that match the attribute condition remain eligible for the unit.
+- **Exclusions** – Any product that matches the attribute condition is removed from the unit, even if it would otherwise qualify.
+
+#### Combine conditions
+
+<!-- CONFIRM: verify this logic against shipped behavior before publishing. -->
+
+- Multiple values selected for the **same** attribute are joined with `OR`. A product matches if it has any of the selected values.
+- Conditions on **different** attributes, or an attribute condition combined with another enabled inclusion filter (such as [price](#price) or [product](#product)), are joined with `AND`. A product must match all of them.
+- As with other filter types, exclusions are evaluated after inclusions: [!DNL Adobe Commerce Optimizer] first determines the products that satisfy every inclusion condition, then removes any product that matches an exclusion condition.
+
+#### Attribute-filter examples
+
+<!-- CONFIRM: use only attributes confirmed for release; category is called out in the epic as the initial targeted use case. -->
+
+| Goal | Tab | Example |
+| --- | --- | --- |
+| Promote a single brand | Inclusions | Include products where **Brand** equals `Example Brand` |
+| Hide a category from a unit | Exclusions | Exclude products where **Category** equals `Clearance` |
+| Combine brand with availability | Inclusions | Include products where **Brand** equals `Example Brand` AND **Stock status** equals `In stock` |
+
+#### Availability, validation, and troubleshooting
+
+<!-- CONFIRM: merchant-facing message/behavior when a filtered attribute is removed, renamed, or made non-filterable. -->
+
+An empty or invalid condition blocks save; **[!UICONTROL Save]** stays disabled until the filter is valid.
 -->
