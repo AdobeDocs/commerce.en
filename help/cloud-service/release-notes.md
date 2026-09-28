@@ -74,7 +74,7 @@ The out-of-process `get_rates` shipping webhook payload now includes the cart's 
 
 ### Manage catalog price rules in REST
 
-New REST API endpoints let integrations create, read, update, delete, and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog), so you can manage large numbers of rules programmatically. <!-- ACCS-1621 -->
+New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
 
 ### Protect presigned uploads with reCAPTCHA
 
@@ -92,7 +92,7 @@ A new configuration option lets you prevent unauthenticated guest customers from
 
 ### Audit an order through GraphQL
 
-The `CustomerOrdersFilterInput` GraphQL input now supports an `original_number` field that returns the original order and all orders created from subsequent edits as a single chain, matching the `order_original_id` filter in REST. <!-- ACCS-1442 -->
+The `CustomerOrdersFilterInput` GraphQL input object now supports an `original_number` field that allows you to filter on any order number in an order-edit chain. The response returns the original order and all orders created from subsequent edits as a single chain, matching the `order_original_id` filter in REST. <!-- ACCS-1442 -->
 
 ### Schedule catalog price rules by date and time
 
@@ -102,7 +102,7 @@ You can now set the time of day for a [catalog price rule](https://experiencelea
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
 
-* The [!DNL Commerce Admin] now displays a warning when you create or edit a webhook that includes the `X-OW-EXTRA-LOGGING` header set to `on`. The header is intended for debugging and is not recommended in production. <!-- CCSAAS-5486 -->
+* The [!DNL Commerce Admin] now displays a warning when you create or edit a webhook that includes the Adobe I/O Runtime `X-OW-EXTRA-LOGGING` header set to `on`. The header is intended for debugging and is not recommended in production. <!-- CCSAAS-5486 -->
 
 * Files uploaded through presigned S3 upload URLs now have additional scans for malware. <!-- ACCS-1463 -->
 
