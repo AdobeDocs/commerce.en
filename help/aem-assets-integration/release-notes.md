@@ -34,7 +34,7 @@ _February 11, 2025_
 
 ## v1.4.7
 
-_September 29, 2026_
+_September 18, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
@@ -46,7 +46,7 @@ _September 29, 2026_
 
 ## v1.4.6
 
-_September 29, 2026_
+_September 8, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
@@ -56,7 +56,7 @@ _September 29, 2026_
 
 ## v1.4.5
 
-_September 29, 2026_
+_August 3, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
