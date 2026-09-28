@@ -69,6 +69,10 @@ Creating a program in Cloud Manager is a multi-step process — the program and 
 
 1. On the **[!UICONTROL Add Environment]** step, enter names for the **Production** and **Staging** environments, then select a region.
 
+   >[!IMPORTANT]
+   >
+   >[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} When creating the AEM Assets environments for this integration, select a supported AEM deployment region geographically close to your Adobe Commerce as a Cloud Service cell.
+
    ![Cloud Manager Add environment dialog with Production and Stage details](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
 1. Select **[!UICONTROL Save]** to create the program with its environments.
