@@ -207,12 +207,16 @@ For **inclusions**, only products whose SKUs are listed (and that satisfy your o
 >Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
 
 <!--
-COMOPT-2027 draft: keep commented until attribute eligibility, operators, and the
-recommendation-type support matrix are confirmed for release. See the HLD (marked
-TECHNICAL REVIEW) and Category Filtering notes before publishing. "Same as current
-product" is separate work and is intentionally not covered here.
+COMOPT-2027 draft (revised): the referenced ticket is still marked Implementation, so keep
+this section commented until Product/Engineering confirm general release availability,
+attribute eligibility, AND/OR logic, the recommendation-type support matrix, and
+validation/no-match behavior. A UI screenshot confirms the labels and steps below, but
+only shows an open selector and an empty value field — it does not establish operator
+semantics or the outcome of a saved rule. "Same as current product" is separate work and
+is intentionally not covered here. Do not alter the Price or Product filter instructions
+above as part of this feature unless testing finds a regression.
 
-### Attribute {#attribute}
+### Attributes {#attributes}
 
 >[!NOTE]
 >
@@ -222,21 +226,24 @@ Attribute filters let you include or exclude products based on product attribute
 
 #### About attribute filters
 
-An attribute filter differs from a [product filter](#product) in that it targets products by shared attribute values rather than by individual SKU. For example, instead of listing every SKU that belongs to a brand, you can create a single attribute filter that matches all products assigned to that brand.
+An attribute filter differs from a [product filter](#product) in that it targets products by shared attribute values rather than by individual SKU. For example, instead of listing every SKU assigned to a category, you can create a single attribute filter that matches all products assigned to that category.
 
-<!-- CONFIRM: final list of filterable attributes (for example, brand, category, stock status) and whether custom attributes are supported. -->
+CONFIRM: whether the attribute selector exposes every product attribute or only eligible/configured attributes. The reviewed screenshot shows a populated selector (for example, Category, Color, Manufacturer, Material, Price), but that alone does not confirm the eligibility rule.
 
-#### Choose an attribute and condition
+#### Set up an attribute filter
 
 1. While [creating or editing](create.md) a recommendation unit, open **[!UICONTROL Filter products]** (or go to the _Filters_ step from the unit workflow).
-1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab.
-1. In the list on the left, select **[!UICONTROL Attribute]**.
-1. Turn **[!UICONTROL Enable filter]** on.
-1. Choose an attribute, then select or enter one or more values for the condition.
+1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab. The badge on each tab shows how many filters of that type are enabled.
+1. In the list on the left, select **[!UICONTROL Attributes]**.
+1. Choose an attribute from the selector, for example **[!UICONTROL Category]**.
+1. In **[!UICONTROL Value]**, enter one or more values. Multiple values are accepted.
 
-   <!-- CONFIRM: attribute picker UI label, available attributes, and whether string and/or numeric operators ship at release. -->
+   CONFIRM: the supported entry format, separators, and matching behavior (exact match, case sensitivity, and so on) for multiple values.
 
+1. Click **[!UICONTROL Add inclusion filter]** (or the equivalent exclusion control) to add and enable the rule.
 1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
+
+CONFIRM: how to reopen and edit a saved attribute rule, and whether the Inclusions/Exclusions tab badge counts attribute rules the same way it counts Price and Product rules.
 
 #### Use inclusion and exclusion conditions
 
@@ -245,25 +252,47 @@ An attribute filter differs from a [product filter](#product) in that it targets
 
 #### Combine conditions
 
-<!-- CONFIRM: verify this logic against shipped behavior before publishing. -->
+CONFIRM: the ticket's high-level and detailed logic statements conflict and must be reconciled with Product/Engineering before publishing. Keep the final explanation consistent with the general [Logical operators](#logical-operators) section on this page.
 
-- Multiple values selected for the **same** attribute are joined with `OR`. A product matches if it has any of the selected values.
-- Conditions on **different** attributes, or an attribute condition combined with another enabled inclusion filter (such as [price](#price) or [product](#product)), are joined with `AND`. A product must match all of them.
-- As with other filter types, exclusions are evaluated after inclusions: [!DNL Adobe Commerce Optimizer] first determines the products that satisfy every inclusion condition, then removes any product that matches an exclusion condition.
+- Multiple values selected for the same attribute: the detailed acceptance criteria say these are combined with `OR`.
+- Multiple inclusion conditions on different attributes: the detailed examples imply `AND`, but a higher-level criterion says attributes can be combined with `OR`. This conflict is unresolved.
+- Multiple exclusion conditions: the examples imply a product is removed when it matches any exclusion condition.
+- A product that matches both an inclusion and an exclusion: the ticket says exclusions take precedence.
 
 #### Attribute-filter examples
 
-<!-- CONFIRM: use only attributes confirmed for release; category is called out in the epic as the initial targeted use case. -->
+CONFIRM: example values against actual catalog behavior before publishing.
 
 | Goal | Tab | Example |
 | --- | --- | --- |
-| Promote a single brand | Inclusions | Include products where **Brand** equals `Example Brand` |
-| Hide a category from a unit | Exclusions | Exclude products where **Category** equals `Clearance` |
-| Combine brand with availability | Inclusions | Include products where **Brand** equals `Example Brand` AND **Stock status** equals `In stock` |
+| Include a category | Inclusions | Include products where **Category** equals `Socks` |
+| Exclude an unavailable attribute value | Exclusions | Exclude products where a selected attribute value is no longer available (CONFIRM exact behavior) |
+
+#### Availability by recommendation type
+
+CONFIRM: this matrix is a drafting input taken from the ticket's acceptance criteria, not a release-verified claim. Confirm what "Limited" means and whether it differs by attribute or recommendation type before publishing.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 
 #### Availability, validation, and troubleshooting
 
-<!-- CONFIRM: merchant-facing message/behavior when a filtered attribute is removed, renamed, or made non-filterable.
+CONFIRM the following merchant-facing behavior before publishing:
 
-An empty or invalid condition blocks save; **[!UICONTROL Save]** stays disabled until the filter is valid.
+- Unknown, unavailable, or unsupported attributes and values.
+- Empty values and invalid conditions, and whether **[!UICONTROL Save]** stays disabled until the filter is valid (matching the Price and Product filter pattern).
+- Whether values must exactly match catalog data, and how case, spacing, and multi-value input are handled.
+- What happens when no recommendation candidates meet the filters: fewer products, no products, or no rendered unit.
+- Whether the preview reflects attribute filters, and any known differences from storefront results.
 -->

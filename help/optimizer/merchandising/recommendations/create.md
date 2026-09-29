@@ -54,7 +54,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. (Optional) In the _Filters_ section, [apply filters](filters.md) to control which products appear in the recommendation unit.
 
-   <!-- CONFIRM (COMOPT-2027): Once attribute-based filter conditions are released, mention them here and link to the Attribute section of filters.md. -->
+   <!-- CONFIRM (COMOPT-2027): ticket still marked Implementation. Once attribute-based filters are confirmed for release, add a sentence here directing readers to the Attributes section of filters.md for setup and behavior, and confirm whether the preview description also needs updating for attribute rules. -->
 
 1. Use the _Recommended products preview_ panel to better understand how filters affect what products are displayed in the recommendation unit. Learn more about how to [preview recommendations](#preview-recommendations).
 
