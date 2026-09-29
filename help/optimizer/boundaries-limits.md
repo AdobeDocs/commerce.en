@@ -140,7 +140,7 @@ The following limits apply to storefront product search, listing, and merchandis
 | Searchable attributes | The number of product characteristics that can be indexed for catalog search | 200 | No |
 | Sortable attributes | The number of product characteristics available as sort options on search and category pages. | 50 | No |
 | Search pagination depth | Maximum products reachable through search pagination (for example, page 100 × 100 products/page) | 10K | No |
-| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
+| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 500<p>Must be filterable attributes</p> | Yes<p>Can increase via support request</p> |
 | Options per facet | The number of filterable product attribute values shoppers can select within a facet (for example, "Red," "Blue" for Color; "Small," "Medium" for Size) | 100 | Yes<p>Can increase via support request</p> |
 
 {style="table-layout:auto"}
