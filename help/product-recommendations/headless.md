@@ -32,9 +32,9 @@ Custom and headless integrators should refer to these Luma and PWA instructions 
 
 [!DNL Product Recommendations] require [behavioral and catalog data](development-overview.md) to operate. The catalog data sync process remains unchanged in a headless implementation, but changes are needed for behavioral data collection.
 
- >[!NOTE]
- >
- >Headless instances must implement eventing to support the Product Recommendations dashboard.
+>[!NOTE]
+>
+>Headless instances must implement eventing to support the Product Recommendations dashboard.
  
 To integrate [!DNL Product Recommendations] in a headless storefront, you must:
 
