@@ -110,6 +110,12 @@ The `CustomerOrdersFilterInput` GraphQL input object now supports an `original_n
 
 You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
 
+### Apply custom shipping discounts through the admin REST API
+
+You can now apply an arbitrary shipping discount to a cart through the admin REST API, for cases that do not fit a cart price rule.
+
+Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to call these endpoints. <!-- ACCS-1156 -->
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
@@ -131,6 +137,8 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where the [!UICONTROL Return Items] grid could fail to load for a pending return. <!-- CCSAAS-5514 -->
 
 * Fixed an issue where requesting cart prices or totals could return an error when the cart contained an out-of-stock item. <!-- CEXT-6776 -->
+
+* Resolved an issue where the inventory consumer could overwhelm the message queue when trying to find a missing SKU. <!-- ACCS-1976 -->
 
 {{accs-release}}
 
