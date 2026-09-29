@@ -263,7 +263,7 @@ An attribute filter differs from a [product filter](#product) in that it targets
 
 #### Availability, validation, and troubleshooting
 
-<!-- CONFIRM: merchant-facing message/behavior when a filtered attribute is removed, renamed, or made non-filterable. -->
+<!-- CONFIRM: merchant-facing message/behavior when a filtered attribute is removed, renamed, or made non-filterable.
 
 An empty or invalid condition blocks save; **[!UICONTROL Save]** stays disabled until the filter is valid.
 -->
