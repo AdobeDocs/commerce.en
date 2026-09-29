@@ -51,7 +51,7 @@ To complete sandbox onboarding:
 
    The **[!UICONTROL Sandbox onboarding]** button is no longer visible and you see a "Sandbox payments pending" text.
 
-  When your PayPal sandbox onboarding is approved, you should see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
+   When your PayPal sandbox onboarding is approved, you should see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
 
    >[!IMPORTANT]
    >

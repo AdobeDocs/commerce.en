@@ -75,9 +75,9 @@ In this use case, you are working with the following:
 
 1. Commerce Storefront - Render the storefront using the sample catalog data loaded into your [!DNL Adobe Commerce Optimizer] instance and the Commerce Storefront configuration files, `fstab.yaml` and `config.json`.
 
-  >[!NOTE]
-  >
-  > Learn about storefront configuration files by reviewing the [Explore the boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) topic in the Adobe Commerce Storefront documentation.
+   >[!NOTE]
+   >
+   > Learn about storefront configuration files by reviewing the [Explore the boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) topic in the Adobe Commerce Storefront documentation.
 
 ### ‌Key takeaways
 

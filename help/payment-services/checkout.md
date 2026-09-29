@@ -23,9 +23,9 @@ A comment regarding the canceled order also displays in the Admin for a specific
 
 If a shopper gets authorization for an order, but the order was not created and converted into a `Capture`, the order is auto-voided. This process ensures no credit is reserved on the shopper's credit card and avoids the payment provider fee that occurs when the authorization is voided at the end of the standard 29 day period.
 
-   >[!NOTE]
-   >
-   >Order auto-voiding only occurs when the customer uses a payment method that is set to `Authorize` mode, not `Authorize and Capture` mode.
+>[!NOTE]
+>
+>Order auto-voiding only occurs when the customer uses a payment method that is set to `Authorize` mode, not `Authorize and Capture` mode.
 
 ## Checkout from product page
 

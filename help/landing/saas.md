@@ -159,9 +159,9 @@ To select or create a SaaS project, request the [!DNL Commerce] API keys from th
 
    If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
 
-  >[!WARNING]
-  >
-  > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
+   >[!WARNING]
+   >
+   > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
 
 To change the names of your SaaS project or data space, click **Rename** next to either one. Changing the name does not affect your service because the name is only a label to help you identify and differentiate between projects and data spaces.
 
