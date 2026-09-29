@@ -114,7 +114,7 @@ You can now set the time of day for a [catalog price rule](https://experiencelea
 
 You can now apply an arbitrary shipping discount to a cart through the admin REST API, for cases that do not fit a cart price rule.
 
-Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to call these endpoints. <!-- ACCS-1156 -->
+Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to use this endpoint. <!-- ACCS-1156 -->
 
 ### Enhancements and bug fixes
 
