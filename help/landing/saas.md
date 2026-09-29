@@ -112,7 +112,7 @@ If you cannot find Live Search configuration fields in the Admin, verify that yo
 
 Before deleting an API key, generate and securely store a replacement key. Update all integrations to use the new key, and confirm that dependent services are working as expected.
 
-If you don’t see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won’t be available in your Adobe Commerce environment.
+If you don't see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won't be available in your Adobe Commerce environment.
 
 On the API key to remove, click **[!UICONTROL Delete]**. When prompted,  confirm the operation to permanently remove the key.
 
