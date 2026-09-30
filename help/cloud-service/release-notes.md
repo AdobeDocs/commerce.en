@@ -76,7 +76,7 @@ The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rat
 
 New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
 
-All endpoints are admin REST under the store's API base, protected by the Magento_CatalogRule::promo_catalog ACL, the same permission that protects the Admin Catalog Price Rule screen. A client authenticates as an admin or integration that holds that resource.
+The following endpoints are protected by the `Magento_CatalogRule::promo_catalog` permission, which also protects the Admin Catalog Price Rule screen. Admin or integration-level access is required to use this endpoint.
 
 * `GET /V1/catalogPriceRules/metadata` - Discover the allowed discount actions and the condition attributes, with their operators and value sources.
 * `GET /V1/catalogPriceRules/search` - List and search rules with the standard searchCriteria (filters, sort, paging).
