@@ -112,7 +112,7 @@ If you cannot find Live Search configuration fields in the Admin, verify that yo
 
 Before deleting an API key, generate and securely store a replacement key. Update all integrations to use the new key, and confirm that dependent services are working as expected.
 
-If you don’t see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won’t be available in your Adobe Commerce environment.
+If you don't see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won't be available in your Adobe Commerce environment.
 
 On the API key to remove, click **[!UICONTROL Delete]**. When prompted,  confirm the operation to permanently remove the key.
 
@@ -159,9 +159,9 @@ To select or create a SaaS project, request the [!DNL Commerce] API keys from th
 
    If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
 
-  >[!WARNING]
-  >
-  > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
+   >[!WARNING]
+   >
+   > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
 
 To change the names of your SaaS project or data space, click **Rename** next to either one. Changing the name does not affect your service because the name is only a label to help you identify and differentiate between projects and data spaces.
 

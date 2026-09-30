@@ -2,8 +2,41 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 18 15:39:47 2026
+updated: Fri Sep 25 15:39:50 2026
 entries:
+- description: Fixed the product recommendations documentation for both [PaaS](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits)
+    and [Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create)
+    that incorrectly stated that bundled and grouped products were not supported.
+  versions: ''
+  type: feedback
+  date: September 25, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/785
+  merge_commit: 55b17947196acfa459934e4ee373469b84e16ea1
+  contributor: emarr_adobe
+  labels:
+  - editorial
+  - feedback
+- description: Updated the [Migration overview](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)
+    to explain how the Commerce Developer Agent can assist with the migration process.
+  versions: ''
+  type: major-update
+  date: September 24, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/773
+  merge_commit: 739eabe6f43412610862ab00516687ad5aeeac53
+  contributor: mathjohn_adobe
+  labels:
+  - major-update
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: September 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/786
+  merge_commit: d879d372a199c24d266abdfb79d1ff0af164d75b
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+  - release-notes
 - description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
