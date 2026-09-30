@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
-description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
+description: Learn about all the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
