@@ -218,7 +218,7 @@ Attribute filters let you include or exclude products based on product attribute
 
 An attribute filter differs from a [product filter](#product) in that it targets products by shared attribute values rather than by individual SKU. For example, instead of listing every SKU assigned to a category, you can create a single attribute filter that matches all products assigned to that category.
 
-QUESTION: are all attribute values listed in the drop-down eligible to be used?
+!!!QUESTION: are all attribute values listed in the drop-down eligible to be used?
 
 #### Set up an attribute filter
 
