@@ -279,7 +279,7 @@ Attribute filter support varies by recommendation type.
 
 #### Availability, validation, and troubleshooting
 
-Question: The following behaviors still need to be confirmed and documented before this section is considered complete.
+!!! Question: The following behaviors still need to be confirmed and documented before this section is considered complete.
 
 - What happens with empty values and invalid conditions, and whether **[!UICONTROL Save]** stays disabled until the filter is valid (matching the Price and Product filter pattern)?
 - Do values must exactly match catalog data, and how case, spacing, and multi-value input are handled?
