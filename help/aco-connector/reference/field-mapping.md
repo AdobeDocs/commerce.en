@@ -62,10 +62,10 @@ The `products` feed sends data to the [Products endpoint](https://developer.adob
 | `metaDescription` | `metaTags/description` | |
 | `metaKeyword` | `metaTags/keywords` | Newline-delimited string split into array |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON-encoded object `{inStock, lowStock, weight, weightType}`; always present as the first attribute entry |
-| `attributes[]`                                | `attributes[]` | Each entry mapped to `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` are excluded (they go into `aco_ac_attributes`) |
-| `images[]`                                    | `images[]` | `url`, `label`; standard roles mapped: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; non-standard roles go to `customRoles[]` |
-| `categoryData[].categoryPath`                 | `routes[].path` | |
-| `categoryData[].productPosition`              | `routes[].position` | |
+| `attributes[]`                                | `attributes[]` | Each entry mapped to `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `categories`, `weight`, `weightType` are excluded (`inStock`, `lowStock`, `weight`, `weightType` go into `aco_ac_attributes`; categories are exported as routes) |
+| `images[]`                                    | `images[]` | Images without a URL are dropped; includes `url`, `label`, and `sortOrder` (integer, defaults to `0`); images sorted by `sortOrder` ascending; standard roles mapped: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; non-standard roles go to `customRoles[]` |
+| `categoryData[].categoryPath`                 | `routes[].path` | Entries with an empty category path are dropped |
+| `categoryData[].productPosition`              | `routes[].position` | Defaults to `0` when product position is missing |
 | `links[].type` + `links[].sku`                | `links[]` | `type` uppercased; entries without `sku` dropped |
 | `parents[].productType` + `parents[].sku`     | `links[]` | Type mapped: `configurable`→`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE` |
 | `configurable options`                        | `configurations[]` | `id`→`attributeCode`, `label`; option type `SWATCH` when `swatchType` is set, else `CONFIGURABLE`; default variant from `isDefault`; values include `variantReferenceId`, `label`, `colorHex`, `imageUrl` |
