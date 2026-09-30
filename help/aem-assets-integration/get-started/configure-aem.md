@@ -201,6 +201,8 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
    * Product SKUs and the `Eligible for Commerce` fields are visible.
 
+   * The **[!UICONTROL Alt texts]** multifield is available with **[!UICONTROL Store View Code]** and **[!UICONTROL Alt Text]** inputs.
+
 ### Commerce tab is not visible in properties
 
 If the **Commerce** tab does not appear in properties, you must manually complete the following steps in the Metadata Schema Editor:
@@ -216,6 +218,8 @@ If the **Commerce** tab does not appear in properties, you must manually complet
 1. Select the checkbox for **show roles** and **show order**.
 
 1. Drag and drop a **checkbox** component into the **Commerce** tab, and map it to the property `commerce:isCommerce`. Define **Yes** and **No** as the options.
+
+1. Add the **[!UICONTROL Alt texts]** multifield to the **Commerce** tab. Configure its two index-aligned properties as `commerce:altTextStoreViews` and `commerce:altTextValues`.
 
 If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) or contact your AEM Assets Integration sales representative for help.
 

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
-description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
+description: Learn about all the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -58,7 +58,102 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## September 2026 - release #2 {#latest}
+## October 2026 - release #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items will be added to production environments on October 6, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Access company details in the shipping rates webhook
+
+The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook payload now includes the cart's `company_id` and company custom attributes, so [!DNL App Builder] shipping integrations can determine eligibility, such as free shipping, without calling [!DNL Commerce]. Map the `rateRequest.company` fields in the webhook's [!UICONTROL Hook Fields] configuration. <!-- CCSAAS-5485 -->
+
+### Manage catalog price rules in REST
+
+New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
+
+The following endpoints are protected by the `Magento_CatalogRule::promo_catalog` permission, which also protects the Admin Catalog Price Rule screen. Admin or integration-level access is required to use this endpoint.
+
+* `GET /V1/catalogPriceRules/metadata` - Discover the allowed discount actions and the condition attributes, with their operators and value sources.
+* `GET /V1/catalogPriceRules/search` - List and search rules with the standard searchCriteria (filters, sort, paging).
+* `GET /V1/catalogPriceRules/:ruleId` - Get one rule, including its full condition tree.
+* `POST /V1/catalogPriceRules` - Create a rule.
+* `PUT /V1/catalogPriceRules/:ruleId` - Update a rule. Send only the fields you want to change.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Delete a rule.
+
+### Protect presigned uploads with reCAPTCHA
+
+You can now require [!DNL Google reCAPTCHA] validation on the [`initiateUpload` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload) to protect presigned file uploads. To enable this setting in the [!DNL Admin], navigate to [!UICONTROL **Enable for Presigned Upload**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
+
+### Create custom attributes for returns with REST
+
+The `/V1/returns` REST API endpoints accept custom attributes on return (RMA) items, so back-end integrations such as order management systems can synchronize return fields without using the storefront GraphQL API.
+
+Set file and image attribute values with a key from the `/V1/media/initiate-upload` and `finish-upload` flow. <!-- CCSAAS-5502 -->
+
+### Restrict guest company registration
+
+A new configuration option lets you prevent unauthenticated guest customers from registering a company from the storefront through the `createCompany` GraphQL mutation.
+
+This option is not available in the [!DNL Commerce Admin]. To enable it, set the `btob/company/restrict_guest_company_registration` configuration flag to `1` with the [`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoint:
+
+```json
+{
+  "config": {
+    "btob/company/restrict_guest_company_registration": "1"
+  }
+}
+```
+
+When enabled, [!DNL Commerce] blocks guest callers from both the `createCompany` mutation and the `isCompanyEmailAvailable` query. <!-- ACCS-1823 -->
+
+### Audit an order through GraphQL
+
+The `CustomerOrdersFilterInput` GraphQL input object now supports an `original_number` field that allows you to filter on any order number in an order-edit chain. The response returns the original order and all orders created from subsequent edits as a single chain, matching the `order_original_id` filter in REST. <!-- ACCS-1442 -->
+
+### Schedule catalog price rules by date and time
+
+You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+
+### Apply custom shipping discounts through the admin REST API
+
+You can now apply an arbitrary shipping discount to a cart through the admin REST API, for cases that do not fit a cart price rule.
+
+Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to use this endpoint. <!-- ACCS-1156 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* The [!DNL Commerce Admin] now displays a warning when you create or edit a webhook that includes the Adobe I/O Runtime `X-OW-EXTRA-LOGGING` header set to `on`. The header is intended for debugging and is not recommended in production. <!-- CCSAAS-5486 -->
+
+* Files uploaded through presigned S3 upload URLs now have additional scans for malware. <!-- ACCS-1463 -->
+
+* The Bulk API now enforces a maximum number of entities per request. Requests that exceed the limit return an error. <!-- ACCS-703 -->
+
+* Fixed an issue where salable quantity could be under-reported for products, which could incorrectly block add-to-cart, REST, and GraphQL stock checks. <!-- ACCS-1908 -->
+
+* Fixed an issue where the [!DNL Commerce Admin] customer grid displayed duplicate rows for B2B customers who belonged to a company. <!-- ACCS-1143 -->
+
+* Fixed an issue where saving the [!DNL AEM Assets] integration configuration did not register the tenant. <!-- ACAP-1317 -->
+
+* Fixed an issue where a special price could outlast its expiration date. <!-- CCSAAS-5499 -->
+
+* Fixed an issue where the [!UICONTROL Return Items] grid could fail to load for a pending return. <!-- CCSAAS-5514 -->
+
+* Fixed an issue where requesting cart prices or totals could return an error when the cart contained an out-of-stock item. <!-- CEXT-6776 -->
+
+* Resolved an issue where the inventory consumer could overwhelm the message queue when trying to find a missing SKU. <!-- ACCS-1976 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - release #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 

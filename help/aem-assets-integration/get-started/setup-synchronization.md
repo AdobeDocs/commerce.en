@@ -99,6 +99,22 @@ The service level agreement (SLA) for the integration guarantees the following s
 
 This level of service ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
 
+## Synchronize localized alt text
+
+Localized alt text uses the existing asset synchronization process. You do not need a new event type or a separate synchronization configuration.
+
+1. Add one or more store-view alt-text rows in the AEM asset's **[!UICONTROL Commerce]** tab.
+
+1. Associate the asset with the Commerce product SKU.
+
+1. Approve the asset in AEM Assets.
+
+1. Wait for the asset event and synchronization process to complete.
+
+1. Verify the localized value in Commerce Admin and in the storefront response.
+
+For the field names, validation rules, and Commerce result, see [Commerce metadata in AEM Assets](../metadata.md).
+
 ### Configure the Visualization Owner
 
 The **Visualization Owner** setting determines which system serves product images in the integration:

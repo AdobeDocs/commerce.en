@@ -29,10 +29,6 @@ Commerce metadata enables the following capabilities:
 * **Add Commerce-specific alt text keyed by store view** via the `commerce:altTextStoreViews` and `commerce:altTextValues` fields.
 * **Expose these fields in the AEM Assets properties UI** through a **[!UICONTROL Commerce]** tab and schema form.
 
->[!IMPORTANT]
->
->The **Commerce-specific alt text** capability is not yet available through [self-service onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service). It is currently provided only when you deploy the `assets-commerce` custom code package (see [Install the assets-commerce package manually](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Native support is planned for an upcoming AEM release.
-
 To configure these resources in your AEM project, see [Configure the AEM Assets project](get-started/configure-aem.md). The rest of this topic describes how the metadata is provided.
 
 ## AEM Commerce assets-commerce package contents
@@ -49,7 +45,11 @@ This package code adds the following resources to the AEM Assets authoring envir
 
       ![Custom Product Data UI Control](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
-  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes that show how the asset is visualized in Commerce.
+  * A custom metadata type `commerce:roles` and `commerce:positions`  attributes that show how the asset is visualized in Commerce. The four standard roles (`image`, `small_image`, `thumbnail`, and `swatch_image`) remain supported. As of AEM Assets Integration extension version 1.4.6, you can also set a custom image role in `commerce:roles`, such as `hero` or `custom_role_1`, to synchronize a role that Commerce does not define by default. See [Custom automatic matching](synchronize/custom-match.md) for how custom image roles are ingested.
+
+    >[!NOTE]
+    >
+    >Commerce automatically creates a missing `media_image`-style attribute for a custom role.
 
   * Alternative text multifield (_[!UICONTROL Alt texts]_) metadata so editors can enter alternative text for each Commerce store view code. The multifield persists in two index-aligned `String[]` properties:
 
@@ -84,7 +84,7 @@ The multifield contains one row per Commerce store view. Each row has two inputs
 
 Select **[!UICONTROL Add]** to add more rows for additional store views. To remove a row, select the **[!UICONTROL Delete]** icon on that row to remove it.
 
-![Alt texts multifield with Store View Code and Alt Text inputs](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+![Alt texts multifield with Store View Code and Alt Text inputs](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 When you save, client-side validation blocks submission if any row has an empty _[!UICONTROL Store View Code]_ or if two rows use the same store view code (case-insensitive).
 
@@ -94,3 +94,14 @@ Alternative text entries are persisted in JCR asset metadata as two index-aligne
 * `commerce:altTextValues`: Matching alt text at the same index as each entry in `commerce:altTextStoreViews`.
 
 When these assets synchronize to Adobe Commerce, per-store view alt text is written to the product media gallery for the matching store view codes. The underlying image mapping is unchanged.
+
+Example metadata values:
+
+```text
+commerce:altTextStoreViews = ["en_US", "fr_FR"]
+commerce:altTextValues = ["Running shoe", "Chaussure de course"]
+```
+
+When these assets synchronize to Adobe Commerce, each alt-text value is written to Commerce's standard image **[!UICONTROL Label]** field for the matching store view code. The integration does not populate a customer-created `alt_text` database column.
+
+Alt text is localized per store view, but the underlying product-image assignment and gallery mapping remain unchanged. A single image assignment continues to apply according to the existing Commerce gallery behavior.
