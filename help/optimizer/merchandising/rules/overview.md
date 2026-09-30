@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Merchandising Rules
 
-Merchandising rules combine logic with actions to shape how products appear in **search results**, on **default product listings** (**All product listings**), and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
+Merchandising rules combine logic with actions to shape how products appear in **search results** and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
 
 Each **search rule** has three main components:
 
@@ -33,7 +33,7 @@ Each **search rule** has three main components:
 
 **Category rules** use **category selection** instead of search query conditions; intelligent ranking and manual ranking work the same way as for search, with differences called out in [Create and Manage Rules](add.md).
 
-You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default rule** (**All product listings**) that applies when no more specific search or category rule applies.
+You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default search rule** that applies when no more specific search or category rule applies.
 
 ## Category rules {#category-rules}
 
@@ -68,7 +68,7 @@ When composing a complex rule, it can help to write it out with indentation to d
 
 ## Default rule
 
-You can set a default rule (**All product listings**) that applies when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then queries default to that ranking type unless superseded by a more specific search term. No search term can be set for the default rule. **Category rules** are separate: they apply only to the categories you select and do not replace the default listing rule.
+You can set a **default search rule** that applies when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then queries default to that ranking type unless superseded by a more specific search term. No search term can be set for the default rule. **Category rules** are separate: they apply only to the categories you select and do not replace the default listing rule.
 
 ## Order of precedence with multiple rules
 

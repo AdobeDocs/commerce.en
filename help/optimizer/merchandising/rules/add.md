@@ -48,7 +48,7 @@ Each rule type has an information icon in the editor with a short explanation. U
 
 | Rule type | Purpose |
 | --- | --- |
-| **All product listings** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
+| **Default search rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
 | **Category rule** | Applies merchandising and ranking to a single category, controlling product order on that category page. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
 
@@ -139,7 +139,7 @@ When multiple categories have similar names, use the category path displayed wit
 
 ### Intelligent ranking {#intelligent-ranking}
 
-Intelligent ranking orders products using **behavioral signals** and, where applicable, AI. It applies to **search rules**, **all product listings** (default rules), and **category rules** (category pages). For shopper **searches**, ranking also weighs **textual relevance** to the query; **category pages** do not use query text in the same way—the editor focuses on behavioral strategies.
+Intelligent ranking orders products using **behavioral signals** and, where applicable, AI. It applies to **search rules**, **default search rules**, and **category rules** (category pages). For shopper **searches**, ranking also weighs **textual relevance** to the query; **category pages** do not use query text in the same way—the editor focuses on behavioral strategies.
 
 Store owners can set strategies such as the following. Exact labels and time windows match the rule editor and may differ slightly by rule type.
 
@@ -397,7 +397,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 | Field | Description |
 | --- | --- |
 | Name | The name of the rule. Rule names must be unique. |
-| Rule Type | **Default** (all product listings), **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**. |
+| Rule Type | **Default search rule**, **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |

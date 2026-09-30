@@ -40,7 +40,7 @@ _September 3, 2026_
 
 ### Attribute ranking (beta)
 
-[!DNL Adobe Commerce Optimizer] merchandising rules now support [**attribute ranking**](./merchandising/rules/add.md#attribute-ranking) for the **All product listings**, **Category rule**, and **Search rule**. Automatically apply a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, such as brand or category, without selecting individual SKUs. Attribute ranking is in beta. [Learn more](./merchandising/rules/add.md#attribute-ranking).
+[!DNL Adobe Commerce Optimizer] merchandising rules now support [**attribute ranking**](./merchandising/rules/add.md#attribute-ranking) for the **Default search rule**, **Category rule**, and **Search rule**. Automatically apply a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, such as brand or category, without selecting individual SKUs. Attribute ranking is in beta. [Learn more](./merchandising/rules/add.md#attribute-ranking).
 
 {{aco-release}}
 
