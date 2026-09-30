@@ -74,7 +74,7 @@ The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rat
 
 ### Manage catalog price rules in REST
 
-New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
+New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
 
 ### Protect presigned uploads with reCAPTCHA
 
@@ -108,7 +108,7 @@ The `CustomerOrdersFilterInput` GraphQL input object now supports an `original_n
 
 ### Schedule catalog price rules by date and time
 
-You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
 
 ### Apply custom shipping discounts through the admin REST API
 
