@@ -76,6 +76,15 @@ The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rat
 
 New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
 
+All endpoints are admin REST under the store's API base, protected by the Magento_CatalogRule::promo_catalog ACL, the same permission that protects the Admin Catalog Price Rule screen. A client authenticates as an admin or integration that holds that resource.
+
+* `GET /V1/catalogPriceRules/metadata` - Discover the allowed discount actions and the condition attributes, with their operators and value sources.
+* `GET /V1/catalogPriceRules/search` - List and search rules with the standard searchCriteria (filters, sort, paging).
+* `GET /V1/catalogPriceRules/:ruleId` - Get one rule, including its full condition tree.
+* `POST /V1/catalogPriceRules` - Create a rule.
+* `PUT /V1/catalogPriceRules/:ruleId` - Update a rule. Send only the fields you want to change.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Delete a rule.
+
 ### Protect presigned uploads with reCAPTCHA
 
 You can now require [!DNL Google reCAPTCHA] validation on the [`initiateUpload` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload) to protect presigned file uploads. To enable this setting in the [!DNL Admin], navigate to [!UICONTROL **Enable for Presigned Upload**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
