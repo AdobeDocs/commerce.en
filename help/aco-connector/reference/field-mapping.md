@@ -63,6 +63,7 @@ The `products` feed sends data to the [Products endpoint](https://developer.adob
 | `metaKeyword` | `metaTags/keywords` | Newline-delimited string split into array |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON-encoded object `{inStock, lowStock, weight, weightType}`; always present as the first attribute entry |
 | `attributes[]`                                | `attributes[]` | Each entry mapped to `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` are excluded (they go into `aco_ac_attributes`) |
+| `(synthesized)` | `attributes[].code = "ac_assortments"` | Array of numeric ids of the custom shared catalogs the product belongs to, deduplicated and sorted. Products only in the public catalog do not have this attribute. [!DNL Commerce Optimizer] policies filter on this attribute to enforce private catalog view assortment. |
 | `images[]`                                    | `images[]` | `url`, `label`; standard roles mapped: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; non-standard roles go to `customRoles[]` |
 | `categoryData[].categoryPath`                 | `routes[].path` | |
 | `categoryData[].productPosition`              | `routes[].position` | |

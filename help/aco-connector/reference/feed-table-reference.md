@@ -117,5 +117,5 @@ WHERE JSON_UNQUOTE(JSON_EXTRACT(f.feed_data, '$.priceBookId'))  IN ('<PRICE_BOOK
 >
 >- [Connector modules and feed endpoints](connector-reference.md)
 >- [Connector sync pipeline](../connector-sync-pipeline.md)
->- [Manage synchronization](../data-sync-manage.md)
+>- [Manage synchronization](../data-sync-status.md)
 >- [Field mapping for connector feeds](field-mapping.md)
