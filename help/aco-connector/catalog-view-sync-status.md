@@ -97,11 +97,11 @@ The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two
 
   An entity is orphaned when it exists in [!DNL Adobe Commerce Optimizer] but the connector does not track it or associate it with a tracked catalog view. This can happen when an entity is created manually, by another integration, or left behind after an interrupted connector operation.
 
-  - **Catalog views**—The connector does not track the view. If it is no longer needed, remove it from the catalog view configuration in [!DNL Adobe Commerce Optimizer] Studio.
+  - **Catalog views**—The connector does not track the view. Select the catalog view link to open the Catalog View details page in [!DNL Adobe Commerce Optimizer] Studio. If the catalog view is no longer needed, remove it.
 
-  - **Restricted access keys**—No live catalog view references the key. Review it and remove it through the appropriate [!DNL Adobe Commerce Optimizer] management tools if it is no longer needed.
+  - **Restricted access keys**—No live catalog view references the key. Select the catalog view link to open the Catalog View details page in [!DNL Adobe Commerce Optimizer] Studio. Review the configured access key and remove it if it is no longer needed.
 
-  - **Policies**—The connector does not track the policy, and no live catalog view references it. Review it and remove it through the appropriate [!DNL Adobe Commerce Optimizer] management tools if it is no longer needed.
+  - **Policies**—The connector does not track the policy, and no live catalog view references it. Select the policy link to open it in [!DNL Adobe Commerce Optimizer] Studio.  Review it and remove it if it is no longer needed.
 
 - **[!UICONTROL Deleted]**—You deleted a shared catalog in [!DNL Adobe Commerce], and its catalog view projection was subsequently removed. These rows are kept for 90 days as a record of what was removed.
 
