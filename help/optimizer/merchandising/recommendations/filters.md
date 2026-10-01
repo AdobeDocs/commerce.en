@@ -229,7 +229,7 @@ Use the following steps to add an attribute inclusion or exclusion rule to a rec
 1. In the list on the left, select **[!UICONTROL Attributes]**.
 1. Choose an attribute from the selector, for example **[!UICONTROL Category]**.
 1. In **[!UICONTROL Value]**, enter one or more values. Multiple values are accepted.
-1. Click **[!UICONTROL Add inclusion filter]** (or the equivalent exclusion control) to add and enable the rule.
+1. Press **Enter** or click **[!UICONTROL Add inclusion filter]** (or the equivalent exclusion control) to add the attribute filter.
 1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
 
 ![Attribute Filter](../../assets/filter-attribute.png)
@@ -247,6 +247,8 @@ Whether a product is added to or removed from the eligible candidate set depends
 
 #### Combine conditions
 
+!!! QUESTION: Need clarification on this section:
+
 When an attribute filter includes multiple values or is combined with other conditions, the following logic applies.
 
 - Multiple values selected for the same attribute: the detailed acceptance criteria say these are combined with `OR`.
@@ -256,12 +258,14 @@ When an attribute filter includes multiple values or is combined with other cond
 
 #### Attribute-filter examples
 
+!!! QUESTION: Need clarification on this section:
+
 The following examples show common ways to use attribute inclusion and exclusion conditions.
 
 | Goal | Tab | Example |
 | --- | --- | --- |
-| Include a category | Inclusions | Include products where **Category** equals `Socks` |
-| Exclude an unavailable attribute value | Exclusions | Exclude products where a selected attribute value is no longer available (CONFIRM exact behavior) |
+| Include a category | Inclusions | Include products where **Category** equals `Socks`, for example. |
+| Exclude an unavailable attribute value | Exclusions | Exclude products where a selected attribute value is no longer available. |
 
 #### Availability by recommendation type
 
@@ -283,7 +287,7 @@ Attribute filter support varies by recommendation type.
 
 #### Availability, validation, and troubleshooting
 
-!!! Question: The following behaviors still need to be confirmed and documented before this section is considered complete.
+!!! QUESTION: The following behaviors still need to be confirmed and documented before this section is considered complete.
 
 - What happens with empty values and invalid conditions, and whether **[!UICONTROL Save]** stays disabled until the filter is valid (matching the Price and Product filter pattern)?
 - Do values must exactly match catalog data, and how case, spacing, and multi-value input are handled?
