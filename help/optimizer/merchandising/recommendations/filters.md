@@ -234,6 +234,10 @@ Use the following steps to add an attribute inclusion or exclusion rule to a rec
 
 ![Attribute Filter](../../assets/filter-attribute.png)
 
+>[!NOTE]
+>
+>When you select an attribute whose metadata sets `number` to `true`, such as **Size**, the **Value** field displays range inputs instead of a single text value.
+
 #### Use inclusion and exclusion conditions
 
 Whether a product is added to or removed from the eligible candidate set depends on which tab the attribute condition is configured on.
