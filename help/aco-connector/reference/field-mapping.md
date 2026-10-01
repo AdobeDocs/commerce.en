@@ -135,7 +135,7 @@ The prices feed uses the same formula to assign each price entry to a price book
 
 The `prices` feed sends [!DNL Adobe Commerce] data to the [Prices endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
 
-| [Feed input field | [!DNL Commerce Optimizer] API field | Mapping details |
+| Feed input field | [!DNL Commerce Optimizer] API field | Mapping details |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | Passes the SKU through unchanged. |
 | `websiteCode`, `customerGroupCode` | `priceBookId` | Combines `websiteCode` with the SHA-1 hash of the customer group ID in `customerGroupCode`. If `customerGroupCode` is `0`, uses `websiteCode` alone. |
