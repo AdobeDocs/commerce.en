@@ -69,6 +69,10 @@ Creating a program in Cloud Manager is a multi-step process — the program and 
 
 1. On the **[!UICONTROL Add Environment]** step, enter names for the **Production** and **Staging** environments, then select a region.
 
+   >[!IMPORTANT]
+   >
+   >[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."} When creating the AEM Assets environments for this integration, select a supported AEM deployment region geographically close to your Adobe Commerce as a Cloud Service cell.
+
    ![Cloud Manager Add environment dialog with Production and Stage details](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
 1. Select **[!UICONTROL Save]** to create the program with its environments.
@@ -197,6 +201,8 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 
    * Product SKUs and the `Eligible for Commerce` fields are visible.
 
+   * The **[!UICONTROL Alt texts]** multifield is available with **[!UICONTROL Store View Code]** and **[!UICONTROL Alt Text]** inputs.
+
 ### Commerce tab is not visible in properties
 
 If the **Commerce** tab does not appear in properties, you must manually complete the following steps in the Metadata Schema Editor:
@@ -212,6 +218,8 @@ If the **Commerce** tab does not appear in properties, you must manually complet
 1. Select the checkbox for **show roles** and **show order**.
 
 1. Drag and drop a **checkbox** component into the **Commerce** tab, and map it to the property `commerce:isCommerce`. Define **Yes** and **No** as the options.
+
+1. Add the **[!UICONTROL Alt texts]** multifield to the **Commerce** tab. Configure its two index-aligned properties as `commerce:altTextStoreViews` and `commerce:altTextValues`.
 
 If you encounter any other issues, create a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) or contact your AEM Assets Integration sales representative for help.
 

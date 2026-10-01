@@ -9,3 +9,4 @@ tmp/
 .env
 .idea
 .scout/
+AGENTS.md

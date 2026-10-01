@@ -51,7 +51,7 @@ To complete sandbox onboarding:
 
    The **[!UICONTROL Sandbox onboarding]** button is no longer visible and you see a "Sandbox payments pending" text.
 
-After your PayPal sandbox onboarding is approved, you should see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
+   When your PayPal sandbox onboarding is approved, you should see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
 
 >[!IMPORTANT]
 >
@@ -98,9 +98,9 @@ To configure the Buyer's country:
 
 1. Click **[!UICONTROL Save Config]** to save your changes.
 
->[!NOTE]
->
->The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
+  >[!NOTE]
+  >
+  >The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
 
 ## Test in sandbox environment
 
