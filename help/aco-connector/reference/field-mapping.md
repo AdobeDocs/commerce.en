@@ -103,7 +103,6 @@ When `dataType` is `int`, the connector checks `frontendInput`. For other data t
 | `OBJECT` | Not used | `OBJECT` |
 | Any other value | Not used | `TEXT` |
 
-
 >[!NOTE]
 >
 >When an attribute uses the `OBJECT` data type, the [Products API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} attempts to parse its stored value as JSON. If parsing succeeds, the API returns the value as a nested object. Use `OBJECT` for structured attribute data that cannot be represented as a single value. For instructions, see [Add product attributes dynamically](../../data-export/add-attribute-dynamically.md).

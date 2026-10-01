@@ -1,5 +1,5 @@
 ---
-title: Data sync
+title: Data Sync
 description: Review the catalog data that is being synchronized from your Commerce data source into [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
@@ -20,7 +20,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# Data Sync
+# Data sync
 
 The **Data Sync** page displays an overview of the synchronization status for product data transferred from your data source (your existing Commerce catalog, Product Information Management (PIM) system, Enterprise Resource Planning (ERP) system, and so on) into [!DNL Adobe Commerce Optimizer].
 
@@ -62,7 +62,7 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 
 ## Verify that data synchronization is working
 
-For projects that use Adobe Commerce as the upstream data source through the Adobe Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the Data Feed Sync Status page. For details, see [Verify that the data sync is working](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) in the _Adobe Commerce Optimizer Connector_ documentation.
+For projects that use Adobe Commerce as the upstream data source through the Adobe Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the Data Feed Sync Status page. For details, see [Verify that the data sync is working](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working) in the _Adobe Commerce Optimizer Connector_ documentation.
 
 ## Related topics
 

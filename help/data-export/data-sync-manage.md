@@ -55,7 +55,7 @@ For Commerce on cloud or on-premises deployments integrated with [!DNL Commerce 
 
 - **[Data Sync page](../optimizer/setup/data-sync.md)**—The Data Sync page gives an overview of synchronization status for product data coming from your upstream catalog source into [!DNL Commerce Optimizer].
 
-For details on how to use these dashboards to verify that data sync is working and to manually resync data, see [Manage synchronization](../aco-connector/data-sync-manage.md) in the _Adobe Commerce Optimizer Connector Guide_.
+For details on how to use these dashboards to verify that data sync is working and to manually resync data, see [Manage synchronization](../aco-connector/data-sync-status.md) in the _Adobe Commerce Optimizer Connector Guide_.
 
 >[!ENDTABS]
 
@@ -83,4 +83,4 @@ Use the following options to manually resync feed data.
 > - [How synchronization works](sync-overview.md) — Learn about synchronization modes, full sync, partial sync, and retry failed items.
 > - [Sync feeds using the Commerce CLI](data-export-cli-commands.md) — Use the `saas:resync` command for targeted feed resyncs.
 > - [Review logs and troubleshoot](troubleshooting/logging.md) — Diagnose data export and SaaS export errors.
-> - [Manage synchronization to [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md) — Verify catalog data sync and manually resync connector feeds.
+> - [Manage synchronization to [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md) — Verify catalog data sync and manually resync connector feeds.

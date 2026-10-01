@@ -70,5 +70,5 @@ Use the following table to estimate the number of records, requests, and sync ti
 >[!MORELIKETHIS]
 >
 > - [Connector modules and feed endpoints](connector-reference.md) - Review batch limits and supported feeds
-> - [Manage synchronization](../data-sync-manage.md) - Monitor sync status and trigger manual resyncs
+> - [Manage synchronization](../data-sync-status.md) - Monitor sync status and trigger manual resyncs
 > - [Connector sync pipeline](../connector-sync-pipeline.md) - Understand how cron schedules and automated sync work

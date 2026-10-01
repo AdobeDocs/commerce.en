@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
-description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
+description: Learn about all the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -74,7 +74,16 @@ The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rat
 
 ### Manage catalog price rules in REST
 
-New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
+New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
+
+The following endpoints are protected by the `Magento_CatalogRule::promo_catalog` permission, which also protects the Admin Catalog Price Rule screen. Admin or integration-level access is required to use this endpoint.
+
+* `GET /V1/catalogPriceRules/metadata` - Discover the allowed discount actions and the condition attributes, with their operators and value sources.
+* `GET /V1/catalogPriceRules/search` - List and search rules with the standard searchCriteria (filters, sort, paging).
+* `GET /V1/catalogPriceRules/:ruleId` - Get one rule, including its full condition tree.
+* `POST /V1/catalogPriceRules` - Create a rule.
+* `PUT /V1/catalogPriceRules/:ruleId` - Update a rule. Send only the fields you want to change.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Delete a rule.
 
 ### Protect presigned uploads with reCAPTCHA
 
@@ -108,7 +117,7 @@ The `CustomerOrdersFilterInput` GraphQL input object now supports an `original_n
 
 ### Schedule catalog price rules by date and time
 
-You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
 
 ### Apply custom shipping discounts through the admin REST API
 
