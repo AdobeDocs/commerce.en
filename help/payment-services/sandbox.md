@@ -98,9 +98,9 @@ To configure the Buyer's country:
 
 1. Click **[!UICONTROL Save Config]** to save your changes.
 
-  >[!NOTE]
-  >
-  >The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
+   >[!NOTE]
+   >
+   >The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
 
 ## Test in sandbox environment
 
