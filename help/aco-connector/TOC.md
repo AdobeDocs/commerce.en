@@ -10,7 +10,10 @@ nudge: true
 # [!DNL Adobe Commerce Optimizer Connector] Integration Guide {#aco-optimizer-connector}
 
 - [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
-- [Get Started](get-started.md)
+- [B2B shared catalog projection](b2b-shared-catalog-projection.md)
+- Get started {#get-started.md}
+  - [Set up the connector for Adobe Commerce](get-started.md)
+  - [Set up the connector for B2B Commerce](get-started-b2b-shared-catalogs.md)
 - [Connector sync pipeline](connector-sync-pipeline.md)
 - Manage synchronization {#manage-sync}
   - [Monitor catalog data sync](data-sync-status.md)

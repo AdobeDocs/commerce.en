@@ -39,8 +39,6 @@ topic_v2:
 
 # Monitor catalog view synchronization for B2B shared catalogs
 
-[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."}
-
 Track B2B catalog view synchronization from [!DNL Adobe Commerce] to [!DNL Adobe Commerce Optimizer] using the [!UICONTROL Catalog View Sync Status] dashboard in the Commerce Admin.
 
 [!UICONTROL Catalog View Sync Status] verifies that the catalog view, policy, price book reference, and restricted access key configurations for each B2B shared catalog exist in [!DNL Adobe Commerce Optimizer] and match your [!DNL Adobe Commerce] configuration. To track product, price, and category feed synchronization instead, see [Manage data synchronization](data-sync-status.md#verify-that-the-data-sync-is-working).
@@ -72,13 +70,13 @@ From the [!DNL Adobe Commerce] Admin (not [!DNL Adobe Commerce Optimizer] Studio
 
 ![ACO Catalog View Sync configuration page showing the Deletion, Creation, and Drift Reconciler sections](assets/aco-catalog-view-sync-configuration.png){width="600" zoomable="yes"}
 
-- **[!UICONTROL Deletion Grace Period (days)]**—Number of days a deleted shared catalog's catalog view, policy, and metadata are retained in [!DNL Adobe Commerce Optimizer] before being removed, allowing rollback if you re-enable the shared catalog in [!DNL Adobe Commerce]. Defaults to 7. Set to `0` to remove the projection immediately, with no grace period.
+- **[!UICONTROL Deletion Grace Period (days)]**—Number of days a deleted shared catalog's catalog view, policy, and metadata are retained in [!DNL Adobe Commerce Optimizer] before being removed. Defaults to seven days. Set to `0` to remove the projection immediately, with no grace period.
 
 - **[!UICONTROL Creation Grace Period (days)]**—Number of days a newly registered catalog view can wait for its first projection to [!DNL Adobe Commerce Optimizer] while reported as [!UICONTROL Pending]. If the grace period lapses without a projection, the status becomes [!UICONTROL Failed]. Defaults to 1.
 
 - **[!UICONTROL Enabled]** (Drift Reconciler)—Runs the scheduled drift reconciler that compares [!DNL Adobe Commerce Optimizer] with the [!DNL Adobe Commerce] projection state and repairs or reports divergence.
 
-- **[!UICONTROL Automatically Repair Drift]**—When set to **[!UICONTROL Yes]**, the scheduled run converges [!DNL Adobe Commerce Optimizer] back to [!DNL Adobe Commerce] for repairable drift. When set to **[!UICONTROL No]**, the scheduled run only detects and logs drift; orphaned entries are always reported, never removed automatically. This setting only affects the scheduled reconciler—the **[!UICONTROL Reconcile & Repair]** action on this page always repairs drift immediately. See [Choose monitoring or repair](#choose-monitoring-or-repair).
+- **[!UICONTROL Automatically Repair Drift]**—When set to **[!UICONTROL Yes]**, the scheduled run converges [!DNL Adobe Commerce Optimizer] back to [!DNL Adobe Commerce] for repairable drift. When set to **[!UICONTROL No]**, the scheduled run only detects and logs drift; orphaned entries are always reported, never removed automatically. This setting only affects the scheduled reconciler. The **[!UICONTROL Reconcile & Repair]** action on this page always repairs drift. See [Choose monitoring or repair](#choose-monitoring-or-repair).
 
 See [ACO Catalog View Sync configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/configuration-reference/services/aco-catalog-view-sync.md) in the *[!DNL Commerce Admin] Guide* for details on each setting.
 
@@ -95,14 +93,17 @@ To review what changed and why, open a catalog view's detail page and check its 
 
 The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two cases that the connector cannot repair automatically because there is no [!DNL Adobe Commerce] shared catalog to reconcile against:
 
-- **[!UICONTROL Orphaned in ACO]**—A catalog view or restricted access key exists in [!DNL Adobe Commerce Optimizer] but was not created by the connector. This is common if a catalog view was created manually in [!DNL Adobe Commerce Optimizer] Studio before the [!DNL Adobe Commerce Optimizer Connector for B2B] extension was enabled, or by a partner integration unrelated to the connector. If the catalog view is not needed, remove it directly from the catalog view configuration in [!DNL Adobe Commerce Optimizer] Studio.
+- **[!UICONTROL Orphaned in ACO]**—The connector reports orphaned entities in sync status and during drift reconciliation. It does not adopt or automatically delete them even if reconciliation runs with repair enabled.
+
+  An entity is orphaned when it exists in [!DNL Adobe Commerce Optimizer] but the connector does not track it or associate it with a tracked catalog view. This can happen when an entity is created manually, by another integration, or left behind after an interrupted connector operation.
+
+  - **Catalog views**—The connector does not track the view. If it is no longer needed, remove it from the catalog view configuration in [!DNL Adobe Commerce Optimizer] Studio.
+
+  - **Restricted access keys**—No live catalog view references the key. Review it and remove it through the appropriate [!DNL Adobe Commerce Optimizer] management tools if it is no longer needed.
+
+  - **Policies**—The connector does not track the policy, and no live catalog view references it. Review it and remove it through the appropriate [!DNL Adobe Commerce Optimizer] management tools if it is no longer needed.
 
 - **[!UICONTROL Deleted]**—You deleted a shared catalog in [!DNL Adobe Commerce], and its catalog view projection was subsequently removed. These rows are kept for 90 days as a record of what was removed.
-
-## Known limitations
-
-- There is no visual indicator in [!DNL Adobe Commerce Optimizer] Studio distinguishing connector-managed catalog views, policies, price books, and keys from ones you create manually.
-- There is no deep link from this page directly to the corresponding catalog view in [!DNL Adobe Commerce Optimizer] Studio yet, except through the **[!UICONTROL Open in ACO admin]** row action.
 
 >[!MORELIKETHIS]
 >
@@ -110,4 +111,4 @@ The **[!UICONTROL Orphaned in ACO]** and **[!UICONTROL Deleted]** tabs cover two
 > - [Manage data synchronization](data-sync-status.md) — Verify product, price, and category feed sync
 > - [Private catalog views](/help/optimizer/setup/private-catalog-view.md) — Learn what a connector-managed private catalog view is
 > - [Restricted access keys](/help/optimizer/setup/restricted-access-keys.md) — Learn how connector-managed keys work
-> - [Monitor B2B shared catalog changes](get-started.md#monitor-b2b-shared-catalog-changes) — Learn what the connector automates for B2B shared catalogs
+> - [Monitor B2B shared catalog changes](get-started-b2b-shared-catalogs.md#monitor-b2b-shared-catalog-changes) — Learn what the connector automates for B2B shared catalogs

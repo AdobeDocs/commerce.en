@@ -1,10 +1,8 @@
 ---
-title: 'Get Started with the [!DNL Adobe Commerce Optimizer Connector]'
-description: "Learn how to install the [!DNL Adobe Commerce Optimizer Connector], configure scope export settings, enable IMS authentication, and verify catalog synchronization."
+title: 'Set up the connector for B2B Commerce'
+description: "Learn how to install the B2B connector, select Commerce scopes, synchronize shared catalog data, verify catalog views, and monitor projection health."
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
-autotag-review: '2026-06-09T16:55:50.934Z'
-TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -42,23 +40,19 @@ topic_v2:
 last-update: 2026-09-11
 ---
 
-# Get started
+# Set up the connector for B2B Commerce
 
-Install and configure the [!DNL Adobe Commerce Optimizer Connector] to sync your [!DNL Adobe Commerce] catalog data with [!DNL Adobe Commerce Optimizer], then monitor the data sync status to ensure your storefront is up to date.
+Merchants using [!DNL Adobe Commerce] B2B shared catalogs can use the [!DNL Adobe Commerce Optimizer Connector for B2B] to synchronize custom shared catalog data and configuration to [!DNL Adobe Commerce Optimizer].
 
 {{aco-integration-environment-alignment}}
 
->[!NOTE]
->
->This topic covers the [!DNL Adobe Commerce Optimizer Connector]. If you use [!DNL Adobe Commerce] B2B shared catalogs, follow the [Get started with the [!DNL Adobe Commerce Optimizer Connector for B2B]](get-started-b2b-shared-catalogs.md) instructions. The B2B connector extends the base catalog data sync to support synchronization of custom shared catalogs.
-
 ## Requirements to use the integration {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. For detailed requirements, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+* Adobe Commerce 2.4.8+ with [Commerce B2B version 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install) installed and enabled.
 
-* [!DNL Commerce Optimizer] license with a provisioned sandbox instance.
+* [!DNL Commerce Optimizer] license with provisioned sandbox instance.
 
-* [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) to download the connector metapackage using Composer.
+* [Authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) to download the connector meta package using Composer.
 
 * Admin access to an [[!DNL Commerce Optimizer] sandbox instance](../optimizer/get-started.md).
 
@@ -70,9 +64,15 @@ The [!DNL Adobe Commerce] user configuring the integration must have:
 
 * Developer access to the [IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) where the [!DNL Commerce Optimizer] project is provisioned.
 
+### Application requirements
+
+* Commerce cron and indexers operating normally.
+* The required websites and store views identified for export.
+* Shared catalogs, company assignments, assortment, and B2B pricing configured or ready to configure in Adobe Commerce.
+
 >[!BEGINSHADEBOX]
 
-## Remove conflicting extensions
+## Remove conflicting extensions {#remove-conflicting-extensions}
 
 {{$include /help/_includes/aco-connector/remove-conflicting-extensions.md}}
 
@@ -80,26 +80,26 @@ The [!DNL Adobe Commerce] user configuring the integration must have:
 
 ## Configuration steps {#configuration-steps}
 
-To enable the [!DNL Adobe Commerce Optimizer Connector] and begin synchronizing data from [!DNL Adobe Commerce] to your [!DNL Commerce Optimizer] instance, follow these steps.
+To enable the [!DNL Adobe Commerce Optimizer Connector for B2B] and begin synchronizing custom shared catalog configuration from [!DNL Adobe Commerce] to your [!DNL Commerce Optimizer] instance, follow these steps.
 
-1. **[Install the [!DNL Adobe Commerce Optimizer Connector] package](#install-the-adobe-commerce-optimizer-connector-package)** using Composer to connect your [!DNL Adobe Commerce] instance to [!DNL Commerce Optimizer].
+1. **[Install the [!DNL Adobe Commerce Optimizer Connector for B2B] package](#install-the-adobe-commerce-optimizer-connector-for-B2B-package)** using Composer to connect your [!DNL Adobe Commerce] instance to [!DNL Commerce Optimizer].
 
-1. **[Customize the Commerce scopes export configuration](#customize-the-commerce-scopes-export-configuration)** from the Admin.
+1. **[Customize the Commerce scopes export configuration](#data-export-and-scope-mapping)** from the Admin.
 
 1. **[Enable the [!DNL Commerce Optimizer] integration](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Verify that the data sync is working](#verify-that-the-data-sync-is-working)**.
 
-## Install the [!DNL Adobe Commerce Optimizer Connector] package {#install-the-adobe-commerce-optimizer-connector-package}
+## Install the [!DNL Adobe Commerce Optimizer Connector for B2B] package {#install-the-adobe-commerce-optimizer-connector-for-B2B-package}
 
-The [!DNL Adobe Commerce Optimizer Connector] is delivered as a Composer metapackage available to all Commerce merchants with an active license for [!DNL Commerce Optimizer].
+The [!DNL Adobe Commerce Optimizer Connector for B2B] is delivered as a Composer meta package available to all Commerce merchants with an active license for [!DNL Commerce Optimizer].
 
 ### Installation steps
 
-1. Add the `adobe-commerce/commerce-data-export-aco-adapter` module using Composer:
+1. Add the `adobe-commerce/commerce-data-export-aco-adapter-b2b` module using Composer:
 
    ```shell
-   composer require adobe-commerce/commerce-data-export-aco-adapter
+   composer require adobe-commerce/commerce-data-export-aco-adapter-b2b
    ```
 
 1. Deploy the changes to your [!DNL Adobe Commerce] staging environment.
@@ -108,22 +108,21 @@ The [!DNL Adobe Commerce Optimizer Connector] is delivered as a Composer metapac
 
 {{install-extension-links}}
 
-## Customize the Commerce scopes export configuration {#customize-the-commerce-scopes-export-configuration}
+### Data export and scope mapping
 
-By default, catalog data sync is enabled for all Commerce scopes (websites, customer groups, and store views). You can customize the export settings to sync data only for specific scopes based on your business needs. For example, if multiple store views share the same language, you can export data for one store view and use it as the [catalog source](../optimizer/setup/catalog-sources.md) for multiple catalog views in [!DNL Commerce Optimizer].
+Select the websites and store views to synchronize, then verify the initial feeds. For B2B, the connector uses the enabled scopes when it projects shared catalog data to [!DNL Commerce Optimizer].
+
+* **Store view** → catalog source with localized product content
+* **Website and customer group** → price book for website and customer-group pricing
+* **Shared catalog** → protected private catalog view and enforced policy
+
+The shared catalog defines the product assortment, and each enabled store view supplies the localized catalog source. The website and customer group determine the applicable price book. The connector projects each custom shared catalog for each enabled store view, so you do not need a separate scope setting for the B2B projection.
+
+A custom shared catalog can generate multiple protected private catalog views, one for each enabled store view. The default public shared catalog is not projected as a B2B private catalog view. For the detailed object mapping and runtime authorization flow, see [B2B shared catalog projection](b2b-shared-catalog-projection.md).
 
 >[!IMPORTANT]
 >
->Changing export settings triggers a full re-indexation, which can take significant time depending on your catalog size. Adobe recommends configuring the Commerce scopes to sync to [!DNL Commerce Optimizer] before enabling the integration and starting the initial data sync.
-
-The following table describes what data is exported at each scope level:
-
-| Scope | Data exported | Notes |
-| ----- | ------------- | ----- |
-| Website and customer group | Prices and price books | Each set of prices is exported as a [price book](../optimizer/setup/pricebooks.md) using the naming convention `&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`. All customer groups for the website are included. |
-| Store view | Products and product attributes | Each store view creates a separate [catalog source](../optimizer/setup/catalog-sources.md) in [!DNL Commerce Optimizer]. |
-
-![Store Grid with Commerce Optimizer sync settings](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
+>Changing the export settings triggers a full re-indexation, which can take significant time depending on your catalog size. Configure the Commerce scopes before enabling the integration and starting the initial data sync.
 
 ### To change scope export settings
 
@@ -133,7 +132,7 @@ The following table describes what data is exported at each scope level:
 
 1. In the **[!DNL Commerce Optimizer] exporter settings**, use the checkbox to enable or disable the data sync as needed.
 
-   ![Update data sync configuration](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
+   ![Update data sync configuration](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
 
 1. Save your changes.
 
@@ -141,8 +140,16 @@ The following table describes what data is exported at each scope level:
 
 | Action | Result |
 | -------- | -------- |
-| Disable a store view | **Disabling sync removes catalog data from your storefront.** The catalog source remains in [!DNL Commerce Optimizer], but all synced data is removed on the next cron run. |
+| Disable a store view | **Disabling sync removes catalog data from your B2B storefront.** The catalog source remains in [!DNL Adobe Commerce Optimizer], but all synced data is removed on the next cron run. |
 | Disable then re-enable a store view | The same catalog source is repopulated with a full data resynchronization. |
+
+### Monitor B2B shared catalog changes
+
+The connector watches for changes to shared catalogs and company assignments. When you remove a shared catalog in the Commerce Admin, the connector removes access to its private catalog view after a configurable grace period.
+
+>[!NOTE]
+>
+>The deletion grace period defaults to seven days. You can change it by updating the catalog view sync settings configuration. See [catalog view sync status configuration](catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings).
 
 ## Enable the [!DNL Commerce Optimizer] integration {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -152,7 +159,6 @@ You enable the integration and initiate the data sync by running the `aco:config
 1. Calls the Commerce Cloud Manager (CCM) service at `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}` to validate the tenant and extract the ingestion URL and [!DNL Commerce Optimizer] Studio URL.
 1. Saves all configuration (client secret encrypted) to `core_config_data`.
 1. Schedules the initial full sync by invalidating all [!DNL Commerce Optimizer] feed indexers.
-
 
 {{aco-data-sync-processing-note}}
 
@@ -170,9 +176,9 @@ You enable the integration and initiate the data sync by running the `aco:config
 
 ## Next steps
 
-1. **Configure [!DNL Commerce Optimizer] catalog views and policies**
+1. **Monitor the B2B catalog view projection**
 
-   Create catalog views and policies in the [!DNL Commerce Optimizer] UI. Note that price books are created automatically from [!DNL Adobe Commerce] customer groups. For instructions, see the [Catalog views](../optimizer/setup/catalog-view.md) and [Policies](../optimizer/setup/policies.md) documentation in the *[!DNL Commerce Optimizer] User Guide*. To restrict access to a catalog view, see [Private catalog views](../optimizer/setup/private-catalog-view.md).
+  After the initial feed sync, use [Catalog View Sync Status](catalog-view-sync-status.md) to verify projected private catalog views, policies, price book references, and restricted access key configuration. For the projection model and runtime authorization flow, see [B2B shared catalog projection](b2b-shared-catalog-projection.md).
 
 1. **Set up a Commerce Storefront on [!DNL Edge Delivery Services]**
 
