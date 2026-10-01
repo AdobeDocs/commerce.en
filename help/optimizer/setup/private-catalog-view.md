@@ -1,6 +1,6 @@
 ---
 title: Private Catalog Views
-description: Learn how to create a private catalog view by enabling Catalog Protection so only requests with a valid signed token can retrieve its product and pricing data.
+description: Learn how private catalog views restrict catalog data access, created automatically for B2B shared catalogs or configured manually with Catalog Protection.
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
@@ -29,11 +29,15 @@ topic_v2:
 ---
 # Private catalog views
 
-By default, a [catalog view](catalog-view.md) is public. Enable catalog protection on a catalog view to restrict access to requests that include a valid signed token.
+By default, a [catalog view](catalog-view.md) is public. Restrict access to a catalog view so only requests with a valid signed token can retrieve its data.
+
+A catalog view becomes private in one of two ways:
+
+- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For Commerce deployments that use the [!DNL Adobe Commerce Optimizer Connector] integration with the B2B extension, private catalog views are created and configured for you automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
+
+- **Manually, for any catalog view**—To restrict access to a catalog view that would otherwise be public, including a B2C catalog view, follow the steps in [Protect a catalog view](#protect-a-catalog-view). See [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples, such as partner portals and pre-release previews.
 
 Catalog protection applies to the selected catalog view only. It does not change the view's policies or layers. It does restrict the view to a single price book—see [Price book restriction on private catalog views](#price-book-restriction-on-private-catalog-views).
-
-See the [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples of when to protect a catalog view.
 
 ## Understand the protection boundary
 
@@ -56,7 +60,19 @@ In each of these cases, [!DNL Adobe Commerce Optimizer] displays the following v
 
 Public catalog views are unaffected by this restriction and can continue to reference multiple price books.
 
+## Automatic private catalog views for B2B shared catalogs
+
+[!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."}
+
+For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B] to support shared catalogs, the extension creates and configures private catalog views automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. This configuration includes the catalog view, policy, an initial restricted access key, and a price book reference. With this configuration, you manage restricted access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). For details, see [B2B shared catalog changes](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes) in the *[!DNL Adobe Commerce Optimizer Connector] Integration Guide*.
+
+If you are not using B2B shared catalogs—for example, to protect a catalog view for a partner portal or pre-release preview, use the instructions in [Protect a catalog view](#protect-a-catalog-view) to configure one manually.
+
 ## Protect a catalog view
+
+>[!NOTE]
+>
+>Skip this procedure for catalog views associated with B2B shared catalogs managed by the [!DNL Adobe Commerce Optimizer Connector for B2B]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
 Before you begin, [create a restricted access key](restricted-access-keys.md) from the public key your client application generates.
 
@@ -101,11 +117,11 @@ A request carrying a token signed by an assigned, unexpired key returns the cata
 
 ## Manage restricted access keys
 
-If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible—storefronts that rely on this catalog view cannot serve data from it. Assign a new, unexpired key to restore access. For instructions, see [Rotate keys](restricted-access-keys.md#rotate-a-key).
+If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the catalog view becomes inaccessible. Storefronts that rely on this catalog view cannot serve data from it. Assign a new, unexpired key to restore access. For instructions, see [Rotate keys](restricted-access-keys.md#rotate-a-key).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Automatic key creation and management through Adobe Commerce and the Adobe Commerce Optimizer Connector are not yet available.
+>For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B] extension, you manage access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). For details, see [Restricted access key management](../../aco-connector/restricted-access-keys.md) in the *[!DNL Adobe Commerce Optimizer Connector] Integration Guide*.
 
 ## More like this
 

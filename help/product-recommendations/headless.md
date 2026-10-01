@@ -35,7 +35,7 @@ Custom and headless integrators should refer to these Luma and PWA instructions 
 >[!NOTE]
 >
 >Headless instances must implement eventing to support the Product Recommendations dashboard.
- 
+
 To integrate [!DNL Product Recommendations] in a headless storefront, you must:
 
 1. Send behavioral data to Adobe AI to analyze and compute Product Recommendation results. To enable product recommendation [metrics reporting](workspace.md), you can also send additional data.

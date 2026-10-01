@@ -53,9 +53,9 @@ To complete sandbox onboarding:
 
    When your PayPal sandbox onboarding is approved, you should see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
 
-   >[!IMPORTANT]
-   >
-   >If you revoke consent to [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services]. On your Payment Services home, an alert about the revoked consent appears. To dismiss the alert, click **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>If you revoke consent to [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services]. On your Payment Services home, an alert about the revoked consent appears. To dismiss the alert, click **[!UICONTROL Do not show again]**.
 
 ### Reset your sandbox account
 
@@ -98,9 +98,9 @@ To configure the Buyer's country:
 
 1. Click **[!UICONTROL Save Config]** to save your changes.
 
->[!NOTE]
->
->The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
+   >[!NOTE]
+   >
+   >The **[!UICONTROL Buyer's country]** setting appears only when the method is set to `Sandbox`. This does not affect production environments.
 
 ## Test in sandbox environment
 
