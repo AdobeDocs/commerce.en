@@ -45,11 +45,11 @@ This page describes behaviors you may observe when working with the [!DNL Adobe 
 
 **Issue:** The **[!UICONTROL Data Feed Sync Status]** page reports a successful sync, but products, prices, etc. are not appearing as expected in [!DNL Adobe Commerce Optimizer].
 
-**Cause:** A successful feed status means the data was accepted by the ingestion endpoint, not that it has finished propagating through [!DNL Adobe Commerce Optimizer]. Propagation can take several minutes after ingestion.
+**Cause:** A successful feed status means the data was accepted by the ingestion endpoint, not that it has finished propagating through to [!DNL Adobe Commerce Optimizer]. Uncached queries typically reflect updates within 3 minutes. Changes served through a storefront or CDN cache can take up to 20 minutes to appear.
 
 **Solution:**
 
-- Wait a few minutes and refresh the [!DNL Adobe Commerce Optimizer] view.
+- Allow up to 20 minutes for propagation and for any storefront or CDN cache to refresh, then reload the [!DNL Adobe Commerce Optimizer] view. Uncached queries typically update within 3 minutes. If the data is still missing after 20 minutes, continue with the checks below and open a support ticket if unresolved.
 - Confirm that the tenant ID configured in [!DNL Adobe Commerce] matches the [!DNL Commerce Optimizer] environment you are checking.
 - Verify that the correct [catalog source](../../optimizer/setup/catalog-sources.md) (store view code) or price book is selected in [!DNL Commerce Optimizer].
 
