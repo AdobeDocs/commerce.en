@@ -38,7 +38,7 @@ _September 18, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1317 --> Fixed an issue where saving the **[!UICONTROL AEM Assets Integration]** configuration, including its `workspace.json` upload, with Commerce Async Config Save (introduced in Adobe Commerce 2.4.7) enabled failed to register or update the tenant with ARES. The configuration appeared to save successfully, but the App Builder OAuth values remained unchanged. Uploaded credentials are now processed correctly by the asynchronous consumer.
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1317 --> Fixed an issue where saving the **[!UICONTROL AEM Assets Integration]** configuration, including its `workspace.json` upload, with the `Commerce Async Config Save` (introduced in Adobe Commerce 2.4.7) enabled, failed to register or update the tenant with ARES. The configuration appeared to save successfully, but the App Builder OAuth values remained unchanged. Uploaded credentials are now processed correctly by the asynchronous consumer.
 
 >[!IMPORTANT]
 >
