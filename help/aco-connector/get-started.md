@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-09-11
+last-update: 2026-10-01
 ---
 
 # Get started
