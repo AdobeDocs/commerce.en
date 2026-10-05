@@ -218,17 +218,15 @@ Attribute filters let you include or exclude products based on product attribute
 
 An attribute filter differs from a [product filter](#product) in that it targets products by shared attribute values rather than by individual SKU. For example, instead of listing every SKU assigned to a category, you can create a single attribute filter that matches all products assigned to that category.
 
-!!!QUESTION: are all attribute values listed in the drop-down eligible to be used?
-
 #### Set up an attribute filter
 
 Use the following steps to add an attribute inclusion or exclusion rule to a recommendation unit.
 
-1. While [creating or editing](create.md) a recommendation unit, open **[!UICONTROL Filter products]** (or go to the _Filters_ step from the unit workflow).
+1. While [creating or editing](create.md) a recommendation unit, go to **[!UICONTROL Filter products]**.
 1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab. The badge on each tab shows how many filters of that type are enabled.
 1. In the list on the left, select **[!UICONTROL Attributes]**.
 1. Choose an attribute from the selector, for example **[!UICONTROL Category]**.
-1. In **[!UICONTROL Value]**, enter one or more values. Multiple values are accepted.
+1. In **[!UICONTROL Value]**, enter one or more values. You can enter multiple values separated by a comma.
 1. Press **Enter** or click **[!UICONTROL Add inclusion filter]** (or the equivalent exclusion control) to add the attribute filter.
 1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
 
@@ -240,34 +238,20 @@ Use the following steps to add an attribute inclusion or exclusion rule to a rec
 
 #### Use inclusion and exclusion conditions
 
-Whether a product is added to or removed from the eligible candidate set depends on which tab the attribute condition is configured on.
-
-- **Inclusions** – Only products that match the attribute condition remain eligible for the unit.
-- **Exclusions** – Any product that matches the attribute condition is removed from the unit, even if it would otherwise qualify.
+Only products matching inclusion filters are allowed to be recommended. Products matching any exclusion filter will not be recommended.
 
 #### Combine conditions
 
-!!! QUESTION: Need clarification on this section:
-
 When an attribute filter includes multiple values or is combined with other conditions, the following logic applies.
 
-- Multiple values selected for the same attribute: the detailed acceptance criteria say these are combined with `OR`.
+- If multiple values are selected for the same attribute, the values are combined with `OR`.
 - Multiple inclusion conditions on different attributes: the detailed examples imply `AND`, but a higher-level criterion says attributes can be combined with `OR`. This conflict is unresolved.
-- Multiple exclusion conditions: the examples imply a product is removed when it matches any exclusion condition.
-- A product that matches both an inclusion and an exclusion: the ticket says exclusions take precedence.
+- If there are multiple exclusion conditions, a product is removed when it matches any of the exclusion conditions.
+- If using both inclusion and exclusion filters, see [Logical operators](#logical-operators).
 
-#### Attribute-filter examples
+<!--#### Availability by recommendation type
 
-!!! QUESTION: Need clarification on this section:
-
-The following examples show common ways to use attribute inclusion and exclusion conditions.
-
-| Goal | Tab | Example |
-| --- | --- | --- |
-| Include a category | Inclusions | Include products where **Category** equals `Socks`, for example. |
-| Exclude an unavailable attribute value | Exclusions | Exclude products where a selected attribute value is no longer available. |
-
-#### Availability by recommendation type
+Hiding this for now as we need better clarification on what "limited" means.
 
 Attribute filter support varies by recommendation type.
 
@@ -283,12 +267,10 @@ Attribute filter support varies by recommendation type.
 | More like this | Limited | Yes |
 | Visual similarity | No | Yes |
 | Recently viewed | No | Limited |
-| Recently purchased | No | Limited |
+| Recently purchased | No | Limited |-->
 
 #### Availability, validation, and troubleshooting
 
-!!! QUESTION: The following behaviors still need to be confirmed and documented before this section is considered complete.
-
-- What happens with empty values and invalid conditions, and whether **[!UICONTROL Save]** stays disabled until the filter is valid (matching the Price and Product filter pattern)?
-- Do values must exactly match catalog data, and how case, spacing, and multi-value input are handled?
-- What happens when no recommendation candidates meet the filters: fewer products, no products, or no rendered unit?
+- If there are empty attribute values or invalid conditions, recommendations do not render on the storefront or in the preview panel.
+- Attribute values must exactly match what is in your catalog, this includes spaces and case.
+- If none of the products meet the filter criteria, recommendations do not render on the storefront or in the preview panel.
