@@ -123,3 +123,6 @@ Log codes related to errors during the indexation process or due to misconfigura
 | CDE04-19 | warning | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` |
 | CDE04-20 | warning | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` |
 | CDE04-21 | error   | `CDE04-21 Failed to clean up deleted feed items for feed "{feed_name}". Error: {error_message}` |
+| CDE04-22 | error   | `CDE04-22 IndexerStatusManager: unable to remove mview triggers for disabled indexer "{indexer_code}": {error_message}` |
+| CDE04-23 | error   | `CDE04-23 IndexerStatusManager: unable to restore mview triggers for indexer "{indexer_code}": {error_message}` |
+| CDE04-24 | error   | `CDE04-24 IndexerStatusManager: unable to truncate index table "{logical_table}": {error_message}` |
