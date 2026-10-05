@@ -2,8 +2,75 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 25 15:39:50 2026
+updated: Mon Oct 5 14:39:23 2026
 entries:
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: October 5, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/802
+  merge_commit: 1c4e1f93d81397b7fe9e4667203448866076a475
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: Adobe Commerce Optimizer Connector Guide<br/>Added documentation for
+    the Adobe Commerce Optimizer Connector for B2B:<br/>- Updated [[!DNL Adobe Commerce
+    Optimizer Connector]](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
+    and [Set up the connector for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started)
+    to cross-reference information about connector setup for B2B Commerce.<br/>- Added
+    the [B2B shared catalog projection](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/b2b-shared-catalog-projection)
+    topic to explain how Adobe B2B Commerce shared catalogs are synchronized to [!DNL
+    Adobe Commerce Optimizer].<br/>- Added [Set up the connector for B2B Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started-b2b-shared-catalogs)
+    to describe extension installation and sync validation.<br/>- Added new topics
+    for [monitoring catalog view sync](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/catalog-view-sync-status)
+    and [managing restricted access keys](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/restricted-access-keys)
+    for Adobe B2B Commerce.<br/>Adobe Commerce Optimizer User Guide<br/>- Updated
+    [Private catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view)
+    and [Restricted access keys](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys)
+    to describe automatic key and catalog view provisioning for B2B shared catalogs,
+    alongside the existing manual flow.
+  versions: ''
+  type: major-update, new-topic
+  date: October 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/760
+  merge_commit: 479c14c5f7da567510e344364b0b721ad73eba6f
+  contributor: meker_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Added information about how to export [custom product types](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/custom-product-types).
+  versions: ''
+  type: new-topic
+  date: September 30, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/699
+  merge_commit: 2564e6acca899868795e73346d66964c59b0a56c
+  contributor: emarr_adobe
+  labels:
+  - new-topic
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: September 29, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/794
+  merge_commit: b1524825387c1d5fe061bdadf76f27b2f614879d
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+  - release-notes
+- description: Added the ability to retain [custom AEM image roles](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)
+    during synchronization. Also, added the ability for Adobe Commerce to [check for
+    AEM Assets Integration extension updates asynchronously](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/check-for-updates).
+  versions: ''
+  type: major-update
+  date: September 28, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/766
+  merge_commit: 44272d96ca697d54cbbfbb9ed5a045da94652d75
+  contributor: emarr_adobe
+  labels:
+  - major-update
 - description: Fixed the product recommendations documentation for both [PaaS](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits)
     and [Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create)
     that incorrectly stated that bundled and grouped products were not supported.
