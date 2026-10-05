@@ -249,7 +249,8 @@ When an attribute filter includes multiple values or is combined with other cond
 - If there are multiple exclusion conditions, a product is removed when it matches any of the exclusion conditions.
 - If using both inclusion and exclusion filters, see [Logical operators](#logical-operators).
 
-<!--#### Availability by recommendation type
+<!--
+#### Availability by recommendation type
 
 Hiding this for now as we need better clarification on what "limited" means.
 
@@ -267,7 +268,8 @@ Attribute filter support varies by recommendation type.
 | More like this | Limited | Yes |
 | Visual similarity | No | Yes |
 | Recently viewed | No | Limited |
-| Recently purchased | No | Limited |-->
+| Recently purchased | No | Limited |
+-->
 
 #### Availability, validation, and troubleshooting
 
