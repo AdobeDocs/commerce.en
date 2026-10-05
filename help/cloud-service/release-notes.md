@@ -125,6 +125,50 @@ You can now apply an arbitrary shipping discount to a cart through the admin RES
 
 Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to use this endpoint. <!-- ACCS-1156 -->
 
+### Add cart items at a custom price
+
+You can now set a custom price on a cart item by adding the `custom_price` extension attribute to the standard add or update cart item REST endpoints (`POST /V1/carts/:cartId/items` and `PUT /V1/carts/:cartId/items/:itemId`). Customer and guest tokens cannot set a custom price. Requests with a negative price or an unsupported product type, such as a bundle product with dynamic pricing, are rejected. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+The `GET /V1/carts/:cartId` and `GET /V1/carts/:cartId/items` endpoints also return the `custom_price` value.
+
+### Isolate admin-created carts from storefront carts
+
+An opt-in feature, disabled by default, isolates carts that admins and integrations can create through the REST API from the customer's active storefront cart. When enabled, `POST /V1/customers/:customerId/carts` always creates a new inactive cart that admin and integration callers can manage through the cart REST endpoints without changing the shopper's storefront cart. <!-- ACCS-1153 -->
+
+To enable it, set the `features/admin_quote_isolation/enabled` configuration flag to `1` with the [`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoint:
+
+```json
+{
+  "config": {
+    "features/admin_quote_isolation/enabled": "1"
+  }
+}
+```
+
+>[!IMPORTANT]
+>
+>This flag is required to make order edit REST API calls.
+
+### Send transactional emails through third-party platforms
+
+New events let you send transactional emails from a third-party email platform, such as [!DNL Salesforce Marketing Cloud], through [!DNL App Builder]. Subscribe to the following events through [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` - A store credit balance is saved. Add a subscription rule where `notify_by_email` equals `1` to receive one event per store credit notification email.
+* `observer.giftcard_item_email_send_after` - A gift card email is sent for an order item. The payload includes all gift card codes for the item.
+* `plugin.customer.api.account_management.activate` - A customer confirms their account.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - A negotiable quote is declined.
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
@@ -148,6 +192,22 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where requesting cart prices or totals could return an error when the cart contained an out-of-stock item. <!-- CEXT-6776 -->
 
 * Resolved an issue where the inventory consumer could overwhelm the message queue when trying to find a missing SKU. <!-- ACCS-1976 -->
+
+* The `customerDownloadableProducts` GraphQL query now returns file metadata for downloadable products configured with an external URL, so storefronts can determine the file type and whether to open or download the asset. <!-- ACCS-1735 -->
+
+* The `sourceAvailability` GraphQL query now applies B2B shared catalog and category permissions, so shoppers receive per-source stock only for products they are allowed to see. <!-- ACCS-1888 -->
+
+* Fixed an issue where customers could not set a password from the welcome email link, and newly created customers did not appear in the [!DNL Commerce Admin] customer grid. <!-- ACCS-1979 -->
+
+* Fixed an issue where orders edited through the order edit REST API could save items with the wrong price. <!-- ACCS-1982 -->
+
+* Fixed an issue where products removed from a company's shared catalog remained visible on the storefront and were silently dropped from the cart. <!-- CCSAAS-5544 -->
+
+* Fixed an issue where a shared catalog product in a category denied to the customer group appeared on the storefront but could not be added to the cart. A category deny permission now takes precedence over shared catalog membership. <!-- CCSAAS-5549 -->
+
+* Fixed an issue where placing an order through GraphQL could return an error when a shipping tax item had no title. <!-- CCSAAS-5552 -->
+
+* Fixed an issue where the `GET /V1/customers/:customerId/companyRoles` REST endpoint returned empty permissions for a company admin. <!-- ACCS-1998 -->
 
 {{accs-release}}
 
