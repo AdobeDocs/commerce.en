@@ -110,14 +110,6 @@ After creating a recommendation, use either its recommendation ID or its referen
 
 1. In the storefront `product-recommendations` block, set either `recId` or `referenceKey` to the corresponding copied value. Do not leave both identifiers unset.
 
-   For example, to configure the block with a reference key:
-
-   | product-recommendations |                                     |
-   |-------------------------|-------------------------------------|
-   | `referenceKey`          | `reference-key-copied-from-details` |
-
-   Keep any other block properties required by the recommendation unit and page type.
-
 1. Use this ID or reference key to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
 ## Manage existing recommendations
