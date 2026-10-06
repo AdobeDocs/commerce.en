@@ -146,15 +146,7 @@ The `GET /V1/carts/:cartId` and `GET /V1/carts/:cartId/items` endpoints also ret
 
 An opt-in feature, disabled by default, isolates carts that admins and integrations can create through the REST API from the customer's active storefront cart. When enabled, `POST /V1/customers/:customerId/carts` always creates a new inactive cart that admin and integration callers can manage through the cart REST endpoints without changing the shopper's storefront cart. <!-- ACCS-1153 -->
 
-To enable it, set the `features/admin_quote_isolation/enabled` configuration flag to `1` with the [`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoint:
-
-```json
-{
-  "config": {
-    "features/admin_quote_isolation/enabled": "1"
-  }
-}
-```
+To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
 
 ### Send transactional emails through third-party platforms
 
