@@ -156,10 +156,6 @@ To enable it, set the `features/admin_quote_isolation/enabled` configuration fla
 }
 ```
 
->[!IMPORTANT]
->
->This flag is required to make order edit REST API calls.
-
 ### Send transactional emails through third-party platforms
 
 New events let you send transactional emails from a third-party email platform, such as [!DNL Salesforce Marketing Cloud], through [!DNL App Builder]. Subscribe to the following events through [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
