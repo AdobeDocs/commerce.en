@@ -21,6 +21,7 @@ topic_v2:
 The Edit Recommendation page gives you the ability to adjust the individual settings that make up the recommendation. All settings can be edited except the page type and recommendation type. The following settings can be edited:
 
 - [Recommendation name](#name)
+- [Reference Key](#reference-key)
 - [Storefront label](#label)
 - [Number of products](#number)
 - [Placement and Position](#placement)
@@ -45,6 +46,10 @@ The preview on the right side of the page shows how the recommendation with the 
 Choose a descriptive name that indicates the purpose of the recommendation. The name is for internal reference and does not appear in the storefront.
 
 ![Edit name](assets/edit-name.png)
+
+### Reference Key {#reference-key}
+
+The key used to identify the recommendation unit in storefront configuration.
 
 ### Storefront label {#label}
 
