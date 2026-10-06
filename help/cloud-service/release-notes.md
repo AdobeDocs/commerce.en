@@ -64,7 +64,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-The following items will be added to production environments on October 6, 2026.
+The following items were released to production environments on October 7, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -74,7 +74,7 @@ The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rat
 
 ### Manage catalog price rules in REST
 
-New REST API endpoints let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules) let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
 
 The following endpoints are protected by the `Magento_CatalogRule::promo_catalog` permission, which also protects the Admin Catalog Price Rule screen. Admin or integration-level access is required to use this endpoint.
 
@@ -121,13 +121,13 @@ You can now set the time of day for a [catalog price rule](https://experiencelea
 
 ### Apply custom shipping discounts through the admin REST API
 
-You can now apply an arbitrary shipping discount to a cart through the admin REST API, for cases that do not fit a cart price rule.
+You can now apply an arbitrary [shipping discount](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts) to a cart through the admin REST API, for cases that do not fit a cart price rule.
 
 Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to use this endpoint. <!-- ACCS-1156 -->
 
 ### Add cart items at a custom price
 
-You can now set a custom price on a cart item by adding the `custom_price` extension attribute to the standard add or update cart item REST endpoints (`POST /V1/carts/:cartId/items` and `PUT /V1/carts/:cartId/items/:itemId`). You must supply an admin or integration token to set a custom price. Requests with a negative price or an unsupported product type, such as a bundle product with dynamic pricing, are rejected. <!-- ACCS-1155 -->
+You can now set a [custom price on a cart item](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) by adding the `custom_price` extension attribute to the standard add or update cart item REST endpoints (`POST /V1/carts/:cartId/items` and `PUT /V1/carts/:cartId/items/:itemId`). You must supply an admin or integration token to set a custom price. Requests with a negative price or an unsupported product type, such as a bundle product with dynamic pricing, are rejected. <!-- ACCS-1155 -->
 
 ```json
 {
@@ -157,6 +157,10 @@ New events let you send transactional emails from a third-party email platform, 
 * `plugin.customer.api.account_management.activate` - A customer confirms their account.
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` - A negotiable quote is declined.
 
+### Bulk API limits
+
+The [Bulk API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) now enforces a maximum number of entities per request. Requests that exceed the limit return an error. The non-configurable [!UICONTROL Maximum Entities Per Bulk Request] field in the [Configuration Reference](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api) shows the limit. For more information, see [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
+
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
@@ -164,8 +168,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * The [!DNL Commerce Admin] now displays a warning when you create or edit a webhook that includes the Adobe I/O Runtime `X-OW-EXTRA-LOGGING` header set to `on`. The header is intended for debugging and is not recommended in production. <!-- CCSAAS-5486 -->
 
 * Files uploaded through presigned S3 upload URLs now have additional scans for malware. <!-- ACCS-1463 -->
-
-* The Bulk API now enforces a maximum number of entities per request. Requests that exceed the limit return an error. <!-- ACCS-703 -->
 
 * Fixed an issue where salable quantity could be under-reported for products, which could incorrectly block add-to-cart, REST, and GraphQL stock checks. <!-- ACCS-1908 -->
 
@@ -213,7 +215,7 @@ The following items were added to Production environments on September 22, 2026.
 
 ### Attach files and images to return requests
 
-Customers can now upload files and images when submitting a return request through the storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL mutation. Use the [`initiateUpload` and `finishUpload` mutations](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) to upload the file, then assign the returned key to a return item custom attribute. <!-- CCSAAS-5410 -->
+Customers can now upload files and images when submitting a return request through the storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL mutation. Use the [`initiateUpload` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) to upload the file, then assign the returned key to a return item custom attribute. <!-- CCSAAS-5410 -->
 
 ### Control inventory source appearance
 
