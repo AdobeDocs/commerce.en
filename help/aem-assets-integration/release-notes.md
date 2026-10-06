@@ -32,6 +32,22 @@ _February 11, 2025_
 
 +++
 
+## v1.4.9
+
+_October 7, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue CCSAAS-5562 --> Fixed an intermittent issue where creating a category in the Admin displayed a `Deprecated Functionality` error because `null` was used as an array offset. Now, the **New Category** form loads without the deprecation notice, and categories can be created successfully.
+
+## v1.4.8
+
+_October 5, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1339 --> Fixed an issue where category images from AEM Assets were not exported to the catalog or returned in GraphQL responses when AEM Assets was the Visualization Owner. To export the image, reassign the AEM asset to the category after applying the fix.
+
 ## v1.4.7
 
 _September 18, 2026_
