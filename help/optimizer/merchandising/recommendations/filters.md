@@ -245,7 +245,7 @@ Only products matching inclusion filters are allowed to be recommended. Products
 When an attribute filter includes multiple values or is combined with other conditions, the following logic applies.
 
 - If multiple values are selected for the same attribute, the values are combined with `OR`.
-- Multiple inclusion conditions on different attributes: the detailed examples imply `AND`, but a higher-level criterion says attributes can be combined with `OR`. This conflict is unresolved.
+- Conditions on different attributes (for example, Color and Size) are combined with `AND`—a product must match all of them. If you add the same attribute as separate conditions instead of entering multiple values in one condition, those conditions are also combined with `AND`, not `OR`.
 - If there are multiple exclusion conditions, a product is removed when it matches any of the exclusion conditions.
 - If using both inclusion and exclusion filters, see [Logical operators](#logical-operators).
 
