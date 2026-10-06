@@ -127,7 +127,7 @@ Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or int
 
 ### Add cart items at a custom price
 
-You can now set a custom price on a cart item by adding the `custom_price` extension attribute to the standard add or update cart item REST endpoints (`POST /V1/carts/:cartId/items` and `PUT /V1/carts/:cartId/items/:itemId`). Customer and guest tokens cannot set a custom price. Requests with a negative price or an unsupported product type, such as a bundle product with dynamic pricing, are rejected. <!-- ACCS-1155 -->
+You can now set a custom price on a cart item by adding the `custom_price` extension attribute to the standard add or update cart item REST endpoints (`POST /V1/carts/:cartId/items` and `PUT /V1/carts/:cartId/items/:itemId`). You must supply an admin or integration token to set a custom price. Requests with a negative price or an unsupported product type, such as a bundle product with dynamic pricing, are rejected. <!-- ACCS-1155 -->
 
 ```json
 {
