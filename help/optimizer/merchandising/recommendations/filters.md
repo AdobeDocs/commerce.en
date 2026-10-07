@@ -206,8 +206,73 @@ For **inclusions**, only products whose SKUs are listed (and that satisfy your o
 >
 >Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
 
-<!--
-### Attribute
+### Attributes {#attributes}
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+>[!NOTE]
+>
+>Attribute filtering is in beta.
+
+Attribute filters let you include or exclude products based on product attribute values, using the same **[!UICONTROL Filter products]** page as [price](#price) and [product](#product) filters.
+
+#### About attribute filters
+
+An attribute filter differs from a [product filter](#product) in that it targets products by shared attribute values rather than by individual SKU. For example, instead of listing every SKU assigned to a category, you can create a single attribute filter that matches all products assigned to that category.
+
+#### Set up an attribute filter
+
+Use the following steps to add an attribute inclusion or exclusion rule to a recommendation unit.
+
+1. While [creating or editing](create.md) a recommendation unit, go to **[!UICONTROL Filter products]**.
+1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab. The badge on each tab shows how many filters of that type are enabled.
+1. In the list on the left, select **[!UICONTROL Attributes]**.
+1. Choose an attribute from the selector, for example **Category**.
+1. In **[!UICONTROL Value]**, enter a value for the attribute, such as **pants**.
+1. Press **Enter** or click **[!UICONTROL Add inclusion filter]** (or the equivalent exclusion control) to add the attribute filter.
+1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
+
+![Attribute Filter](../../assets/filter-attribute.png)
+
+>[!NOTE]
+>
+>When you select an attribute whose metadata sets `number` to `true`, such as **Size**, the **Value** field displays range inputs instead of a single text value.
+
+#### Use inclusion and exclusion conditions
+
+Only products matching inclusion filters are allowed to be recommended. Products matching any exclusion filter will not be recommended.
+
+#### Combine conditions
+
+When an attribute filter includes multiple values or is combined with other conditions, the following logic applies.
+
+- If multiple values are selected for the same attribute, the values are combined with `OR`.
+- Conditions on different attributes (for example, Color and Size) are combined with `AND` — a product must match all of them. If you add the same attribute as separate conditions instead of entering multiple values in one condition, those conditions are also combined with `AND`, not `OR`.
+- If there are multiple exclusion conditions, a product is removed when it matches any of the exclusion conditions.
+- If using both inclusion and exclusion filters, see [Logical operators](#logical-operators).
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 -->
+
+#### Availability, validation, and troubleshooting
+
+- If there are empty attribute values or invalid conditions, recommendations do not render on the storefront or in the preview panel.
+- Attribute values must exactly match what is in your catalog, this includes spaces and case.
+- If none of the products meet the filter criteria, recommendations do not render on the storefront or in the preview panel.
