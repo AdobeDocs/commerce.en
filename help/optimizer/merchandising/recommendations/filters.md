@@ -225,8 +225,8 @@ Use the following steps to add an attribute inclusion or exclusion rule to a rec
 1. While [creating or editing](create.md) a recommendation unit, go to **[!UICONTROL Filter products]**.
 1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab. The badge on each tab shows how many filters of that type are enabled.
 1. In the list on the left, select **[!UICONTROL Attributes]**.
-1. Choose an attribute from the selector, for example **[!UICONTROL Category]**.
-1. In **[!UICONTROL Value]**, enter one or more values. You can enter multiple values separated by a comma.
+1. Choose an attribute from the selector, for example **Category**.
+1. In **[!UICONTROL Value]**, enter a value for the attribute, such as **pants**.
 1. Press **Enter** or click **[!UICONTROL Add inclusion filter]** (or the equivalent exclusion control) to add the attribute filter.
 1. Finish configuring the recommendation unit and save or publish as you normally would so the filter takes effect.
 
@@ -245,7 +245,7 @@ Only products matching inclusion filters are allowed to be recommended. Products
 When an attribute filter includes multiple values or is combined with other conditions, the following logic applies.
 
 - If multiple values are selected for the same attribute, the values are combined with `OR`.
-- Conditions on different attributes (for example, Color and Size) are combined with `AND`—a product must match all of them. If you add the same attribute as separate conditions instead of entering multiple values in one condition, those conditions are also combined with `AND`, not `OR`.
+- Conditions on different attributes (for example, Color and Size) are combined with `AND` — a product must match all of them. If you add the same attribute as separate conditions instead of entering multiple values in one condition, those conditions are also combined with `AND`, not `OR`.
 - If there are multiple exclusion conditions, a product is removed when it matches any of the exclusion conditions.
 - If using both inclusion and exclusion filters, see [Logical operators](#logical-operators).
 
