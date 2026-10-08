@@ -3,7 +3,7 @@ title: Test in Staging Environment
 description: Learn how to use [!DNL Product Recommendations] from your production environment in your staging environment for testing purposes.
 feature: Services, Recommendations, Staging
 exl-id: 5b6d7615-6021-4419-98ea-006c8a299fe4
-TQID: https://experienceleague.adobe.com/7e7e3T-vgkN-Pbqx6TwrBAWTEozhzS0h--tguOGe0yI
+TQID: 'https://experienceleague.adobe.com/7e7e3T-vgkN-Pbqx6TwrBAWTEozhzS0h--tguOGe0yI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -12,6 +12,12 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dec06508-d41f-555a-87e8-29e8bcdfa95a
+    internal-label: Recommendations
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

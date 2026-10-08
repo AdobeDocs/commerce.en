@@ -1,6 +1,6 @@
 ---
-title: 'Troubleshoot the [!DNL Adobe Commerce Optimizer Connector]'
-description: "Learn how to troubleshoot [!DNL Adobe Commerce Optimizer Connector] credential, catalog sync, and scope export issues for [!DNL Adobe Commerce] PaaS integrations."
+title: Troubleshoot the [!DNL Adobe Commerce Optimizer Connector]
+description: Learn how to troubleshoot [!DNL Adobe Commerce Optimizer Connector] credential, catalog sync, and scope export issues for [!DNL Adobe Commerce] PaaS integrations.
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer

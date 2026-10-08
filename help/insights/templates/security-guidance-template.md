@@ -1,8 +1,18 @@
 ---
-title: "Title Case, max 60 chars, no product name suffix"
-description: "150-160 chars. Concept pages start with 'Learn about...'"
+title: Title Case, max 60 chars, no product name suffix
+description: 150-160 chars. Concept pages start with 'Learn about...'
 role: Admin, Developer, Leader
 recommendations: noCatalog
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 ---
 
 <!--

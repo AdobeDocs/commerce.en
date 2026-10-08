@@ -1,6 +1,6 @@
 ---
 title: Field Mapping for [!DNL Adobe Commerce Optimizer Connector] Feeds
-description: "Learn about [!DNL Adobe Commerce Optimizer Connector] field mapping from [!DNL Adobe Commerce] catalog data to [!DNL Adobe Commerce Optimizer] ingestion API formats for all feeds."
+description: Learn about [!DNL Adobe Commerce Optimizer Connector] field mapping from [!DNL Adobe Commerce] catalog data to [!DNL Adobe Commerce Optimizer] ingestion API formats for all feeds.
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

@@ -16,6 +16,8 @@ feature_v2:
     internal-label: Commerce ecosystem
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 subfeature_v2:
   - id: dad884f1-e840-49a1-970e-2f965bdbc410
     internal-label: Extensions

@@ -3,7 +3,7 @@ title: Release Notes
 description: The latest release information for the [!DNL Data Connection] extension from Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-TQID: https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y
+TQID: 'https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -16,6 +16,12 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

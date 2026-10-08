@@ -3,6 +3,12 @@ title: Semantic Search
 description: Enable AI semantic search for [!DNL Live Search] from Settings. No attribute setup or storefront changes required.
 role: Admin
 recommendations: noCatalog
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Semantic search
 

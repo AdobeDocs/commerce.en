@@ -1,6 +1,12 @@
 ---
 title: Commerce Documentation Governance
 description: Learn about the internal governance model for the Commerce Insights. Not published to Experience League—kept out of TOC.md intentionally.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Commerce Documentation governance

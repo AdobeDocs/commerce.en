@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

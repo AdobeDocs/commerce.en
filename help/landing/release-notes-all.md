@@ -5,10 +5,15 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 feature: Release Notes, Services
 exl-id: 2fa88976-f604-4c13-873b-5bdae37d55b3
-TQID: https://experienceleague.adobe.com/bi2GyJj88oZZprBxqzUECkS2BEXepP075YTbc50A-UE
+TQID: 'https://experienceleague.adobe.com/bi2GyJj88oZZprBxqzUECkS2BEXepP075YTbc50A-UE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+feature_v2:
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
