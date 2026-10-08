@@ -1,10 +1,11 @@
 ---
-title: 'Monitor Catalog Data Synchronization'
-description: "Learn how to verify catalog data sync and manually resync connector feeds between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer] via Data Feed Sync Status."
+title: Monitor Catalog Data Synchronization
+description: Learn how to verify catalog data sync and manually resync connector feeds between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer] via Data Feed Sync Status.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+last-update: 2026-10-01T00:00:00.000Z
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +20,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,7 +38,6 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-10-01
 ---
 # Monitor catalog data synchronization
 

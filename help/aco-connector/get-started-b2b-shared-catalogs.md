@@ -1,8 +1,9 @@
 ---
-title: 'Set up the connector for B2B Commerce'
-description: "Learn how to install the B2B connector, select Commerce scopes, synchronize shared catalog data, verify catalog views, and monitor projection health."
+title: Set up the connector for B2B Commerce
+description: Learn how to install the B2B connector, select Commerce scopes, synchronize shared catalog data, verify catalog views, and monitor projection health.
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+last-update: 2026-10-01T00:00:00.000Z
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +20,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e126554b-28f9-4290-b58c-10b888b88174
     internal-label: IMS integration
@@ -37,7 +40,6 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-10-01
 ---
 
 # Set up the connector for B2B Commerce
