@@ -2,8 +2,30 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Oct 5 14:39:23 2026
+updated: Fri Oct 9 15:39:48 2026
 entries:
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: major-update
+  date: October 8, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/812
+  merge_commit: a1aed1cc8a66473e936836aef6a2dee4085c8b3f
+  contributor: jhoover_adobe
+  labels:
+  - hold for release
+  - major-update
+- description: Added a new section about how to filter recommendations based on [product
+    attributes](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#attributes).
+  versions: ''
+  type: feedback
+  date: October 7, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/793
+  merge_commit: 16e5c6a7caf2e541bace72b3eb4898eabb13e24a
+  contributor: emarr_adobe
+  labels:
+  - enhancement
+  - feedback
 - description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
     from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
   versions: ''
