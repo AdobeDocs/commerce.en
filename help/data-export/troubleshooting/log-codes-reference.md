@@ -4,7 +4,7 @@ description: Reference list for data export log codes, messages, and severity le
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-last-update: 2026-10-05T00:00:00.000Z
+last-update: 2026-10-05
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
