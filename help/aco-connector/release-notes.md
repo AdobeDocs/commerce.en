@@ -51,17 +51,11 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ### 1.2.0 Release
 
-_October 12, 2026_
+_October 13, 2026_
 
 ![Fix](../assets/fix.svg) Enable stores feed for Payment service. <!--MDEE-1459-->
-![Fix](../assets/fix.svg) Disable AC Core Indexers for ACO Connector. <!--MDEE-1420-->
 ![Fix](../assets/fix.svg) Exporter expects qty and price instead of quantity and percentage. <!--MDEE-1471-->
-[Storefront] MDEE-1420: Rename IndexerStatusConfigManager to DisableStorefrontIndexers by @mslabko in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/124
-[Thunderbolts] Export videos by @svera in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/121
-![Fix](../assets/fix.svg) revert. <!--MDEE-1420-->
-## New Contributors
-@paras89 made their first contribution in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/119
-@svera made their first contribution in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/121
+![Fix](../assets/fix.svg) Export videos <!--DATA-7320-->
 
 ### 1.1.1 Release
 
