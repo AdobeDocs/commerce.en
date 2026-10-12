@@ -59,24 +59,11 @@ Updates include:
 
 ### 103.5.0 Release
 
-_October 12, 2026_
+_October 13, 2026_
 
-![Fix](../assets/fix.svg) Allow to turn on/turn off indexer. <!--MDEE-1428-->
 ![Fix](../assets/fix.svg) Fix attribute metadata mapping for "visible in PDP" field. <!--MDEE-932-->
-MDEE-1427 Disable Price Indexer for ACO by @paras89 in https://github.com/magento-commerce/commerce-data-export/pull/589
-MDEE-1429  Disable full text search indexer by @paras89 in https://github.com/magento-commerce/commerce-data-export/pull/594
-![Fix](../assets/fix.svg) Disable Category Product indexer via ACO Connector. <!--MDEE-1434-->
 ![Fix](../assets/fix.svg) Add catalog product numeric attribute module. <!--MDEE-1416-->
 ![Fix](../assets/fix.svg) Format custom price attribute value to avoid trailing decimals zeroes. <!--MDEE-1459-->
-MDEE-1416 - fix NumericLayeredNav static tests by @pablomoreno61 in https://github.com/magento-commerce/commerce-data-export/pull/600
-![Fix](../assets/fix.svg) fix static. <!--MDEE-1416-->
-Revert "MDEE-1429  Disable full text search indexer" by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/605
-Revert "MDEE-1427 Disable Price Indexer for ACO" by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/604
-Revert "MDEE-1434: Disable Category Product indexer via ACO Connector" by @duhon in https://github.com/magento-commerce/commerce-data-export/pull/606
-![Fix](../assets/fix.svg) revert. <!--MDEE-1420-->
-## New Contributors
-@paras89 made their first contribution in https://github.com/magento-commerce/commerce-data-export/pull/582
-@pablomoreno61 made their first contribution in https://github.com/magento-commerce/commerce-data-export/pull/593
 
 ### 103.4.35 Release
 
