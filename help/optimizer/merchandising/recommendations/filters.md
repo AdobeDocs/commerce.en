@@ -279,7 +279,7 @@ Attribute filter support varies by recommendation type.
 
 ### Out of stock
 
-The following exclusion filter can be used to filter out products based on stock status:
+The following exclusion filter can filter out products based on stock status:
 
 - Out of stock - (Exclusion only) Excludes products that are out of stock.
 
