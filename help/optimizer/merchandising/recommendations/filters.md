@@ -276,3 +276,11 @@ Attribute filter support varies by recommendation type.
 - If there are empty attribute values or invalid conditions, recommendations do not render on the storefront or in the preview panel.
 - Attribute values must exactly match what is in your catalog, this includes spaces and case.
 - If none of the products meet the filter criteria, recommendations do not render on the storefront or in the preview panel.
+
+### Out of stock
+
+The following exclusion filter can filter out products based on stock status:
+
+- Out of stock - (Exclusion only) Excludes products that are out of stock.
+
+![Stock Status Filter](../../assets/filter-stock-status.png)
