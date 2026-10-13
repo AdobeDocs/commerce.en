@@ -65,7 +65,7 @@ _October 13, 2026_
 
 ![New](../assets/new.svg) **Range filters for numeric product attributes**–Updated product attributes to support the **Number** input type. This input type applies to attributes that store decimal values, including negative numbers, without displaying a currency symbol. They are exported with metadata that lets [!DNL Live Search] generate range facets, so shoppers can filter by measurements such as operating temperature. <!--MDEE-1416-->
 
-![Fix](../assets/fix.svg) **Consistent custom price attribute values**–Custom price attribute values are now exported with two decimal places, in the store's default currency, so they match the formatting of price data. <!--MDEE-1459-->
+![Fix](../assets/fix.svg) **Consistent custom price attribute values**–Custom price attribute values are now exported with two decimal places, in the store's default currency, so price formatting on the storefront matches the price data format.<!--MDEE-1459-->
 
 ### 103.4.35 Release
 
