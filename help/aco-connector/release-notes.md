@@ -55,7 +55,7 @@ _October 13, 2026_
 
 ![Fix](../assets/fix.svg) Enable stores feed for Payment service. <!--MDEE-1459-->
 ![Fix](../assets/fix.svg) Exporter expects qty and price instead of quantity and percentage. <!--MDEE-1471-->
-![Fix](../assets/fix.svg) Product videos now sync to [!DNL Adobe Commerce Optimizer], preserving their configured sort order. <!--DATA-7320--><!--DATA-7320-->
+![Fix](../assets/fix.svg) Product videos now sync to [!DNL Adobe Commerce Optimizer], preserving their configured sort order. <!--DATA-7320-->
 
 ### 1.1.1 Release
 
