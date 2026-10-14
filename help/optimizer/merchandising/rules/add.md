@@ -177,7 +177,7 @@ Use this control to balance how strongly **behavioral signals** influence orderi
 | Behavior | Detail |
 | --- | --- |
 | Default | `50`. |
-| Range | From `1` (gentler behavioral influence) through `1000` (stronger influence). The upper limit may change in a future release. |
+| Range | From `1` (gentler behavioral influence) through `1000` (stronger influence). |
 | Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
 | Preview | The rule preview uses the same boost as live results for that rule. |
 | Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
