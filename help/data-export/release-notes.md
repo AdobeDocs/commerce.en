@@ -61,7 +61,7 @@ Updates include:
 
 _October 14, 2026_
 
-![Fix](../assets/fix.svg) Attribute must be shown in the Admin UI when creating a product attribute <!--MDEE-1416 -->
+![Fix](../assets/fix.svg) **The Number attribute type is now available when creating product attributes in the Admin UI**. This attribute enables numeric sorting and range filtering in Live Search. <!--MDEE-1416 -->
 
 ### 103.5.0 Release
 
