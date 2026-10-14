@@ -61,7 +61,7 @@ Updates include:
 
 _October 14, 2026_
 
-MDEE-1416 - Attribute must be shown in the Admin UI when creating a product attribute by @pablomoreno61 in https://github.com/magento-commerce/commerce-data-export/pull/611
+![Fix](../assets/fix.svg) Attribute must be shown in the Admin UI when creating a product attribute <!--MDEE-1416 -->
 
 ### 103.5.0 Release
 
