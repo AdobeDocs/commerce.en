@@ -6,7 +6,7 @@ feature: Storefront, Integration, Configuration
 recommendations: noCatalog
 ---
 
-# About the CommerceInformation Center
+# About the Commerce Information Center
 
 The Commerce Information Center is a cross-product entry point into the Adobe Commerce documentation ecosystem. Use it to find the right product, implementation guidance, and architecture recommendations across Adobe Commerce, [!DNL Adobe Commerce Optimizer], [!DNL Adobe Commerce as a Cloud Service], and related Commerce services—without having to search multiple documentation sites.
 
