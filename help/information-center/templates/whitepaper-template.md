@@ -35,4 +35,4 @@ Use auto-tagger to tag file after authoring content.
 
 ## Related guidance
 
-- [Link to related Architecture center or Implementation guides pages]
+- [Link to related Architecture options or Implementation guides pages]

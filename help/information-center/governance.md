@@ -19,7 +19,7 @@ The Commerce Information Center is owned by the Adobe Commerce documentation tea
 
 ## Adding new content
 
-- **New Implementation guide or Architecture center page**: add the file under the relevant subdirectory and add an entry to `TOC.md`. No approval gate beyond normal PR review.
+- **New Implementation guide or Architecture page**: add the file under the relevant subdirectory and add an entry to `TOC.md`. No approval gate beyond normal PR review.
 - **New Guidance & Insights content type** (white paper, security guidance, best practice, etc.): start from a template in `templates/` (`whitepaper-template.md`, `security-guidance-template.md`—not published, copy the relevant one into the target file and delete the template's own frontmatter placeholder comments). Add a `TOC.md` entry once the content is ready to publish.
 - **New top-level section** (e.g. Partner Resources, Learning Center, Support & Resources from the full COMDOX-1756 IA): requires IA review before adding, since it changes the guide's navigation shape. Loop in whoever owns Commerce IA review for the epic.
 

@@ -28,4 +28,4 @@ Adobe Commerce or Magento Open Source connected to [!DNL Catalog Service], [!DNL
 
 ## Related guidance
 
-- [Commerce architecture overview](overview.md)
+- [Architecture options](overview.md)

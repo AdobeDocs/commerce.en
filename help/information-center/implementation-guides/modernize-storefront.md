@@ -12,15 +12,17 @@ If you're running a legacy storefront—such as a Luma theme or an older PWA Stu
 
 >[!NOTE]
 >
->This guide applies to Adobe Commerce (on Cloud or on premises), Adobe Commerce as a Cloud Service, Adobe Commerce Optimizer connected to Adobe Commerce, and stand-alone Adobe Commerce Optimizer with an existing or third-party backend. See [Architecture options at a glance](../architecture-options/overview.md#architecture-options-at-a-glance) to confirm which option applies to your project.
+>This guide applies to Adobe Commerce as a Cloud Service and Adobe Commerce (on Cloud or on premises) connected to Adobe Commerce Optimizer, and stand-alone Adobe Commerce Optimizer with an existing or third-party backend. See [Architecture options at a glance](../architecture-options/overview.md#architecture-options-at-a-glance) to confirm which option applies to your project.
 
 ## Where to start
 
 1. Review the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/) to understand what a storefront built on Edge Delivery Services looks like compared to your current implementation.
-2. Use the [storefront developer guide](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to scope which pages or flows to migrate first.
-3. Keep your existing Commerce services connections ([!DNL Catalog Service], [!DNL Live Search], [!DNL Product Recommendations], [!DNL Payment Services]) in place—see [Set up Commerce services](set-up-commerce-services.md).
+
+1. Use the [Storefront Developer Guide](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to scope which pages or flows to migrate first.
+
+1. For Adobe Commerce as a Cloud Service, keep your existing Commerce services connections ([!DNL Catalog Service], [!DNL Live Search], [!DNL Product Recommendations], [!DNL Payment Services]) in place—see [Set up Commerce services](set-up-commerce-services.md).
 
 ## Related guidance
 
 - [Build a new storefront](build-new-storefront.md)
-- [Architecture center](../architecture-center/overview.md)
+- [Architecture options](../architecture-options/overview.md)

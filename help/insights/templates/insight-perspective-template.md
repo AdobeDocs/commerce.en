@@ -40,4 +40,4 @@ noun-phrase style per ExL heading rules.
 
 ## Related guidance
 
-- [Link to related Architecture center, Implementation guides, or product documentation]
+- [Link to related Architecture options, Implementation guides, or product documentation]

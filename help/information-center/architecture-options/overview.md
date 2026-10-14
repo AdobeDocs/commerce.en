@@ -14,10 +14,22 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 
 | Option | Commerce platform and system of record | Storefront experience | Storefront data path | Transaction path | Best fit |
 | --- | --- | --- | --- | --- | --- |
-| **1. [!DNL Adobe Commerce] on Cloud or on premises with Commerce Foundation** | Commerce Foundation is the commerce and transaction system | Edge Delivery Services, Luma, PWA, or custom headless storefront | Storefront Services for Catalog Service, Live Search, and Product Recommendations; Commerce Foundation APIs for core platform data | Commerce Foundation APIs and configured payment, tax, shipping, inventory, and fulfillment integrations | Customers that need the full [!DNL Adobe Commerce] platform with deployment control over cloud or on-premises infrastructure |
-| **2. [!DNL Adobe Commerce as a Cloud Service] with Commerce Foundation** | Adobe-managed Commerce Foundation is the commerce and transaction system | Commerce Storefront powered by Edge Delivery Services or another supported headless experience | Storefront Services for Catalog Service, Live Search, and Product Recommendations; Commerce Foundation APIs for core platform data | Managed Commerce Foundation and connected Commerce services | Customers that want Adobe-managed SaaS Commerce with reduced infrastructure ownership |
-| **3. [!DNL Adobe Commerce] on Cloud or on premises with the [!DNL Adobe Commerce Optimizer Connector]** | Existing Commerce Foundation remains the system of record for Commerce data and transactions | Edge Delivery Services, Luma, PWA, or custom headless storefront using Optimizer experiences | Commerce Optimizer Merchandising Services GraphQL APIs retrieve Optimizer-managed catalog and merchandising data | Existing Commerce Foundation APIs and connected transaction services | Customers that want to add Optimizer discovery and merchandising capabilities to an existing [!DNL Adobe Commerce] deployment |
-| **4. Stand-alone [!DNL Adobe Commerce Optimizer] with an external commerce backend** | Existing or third-party commerce platform owns transactions; catalog and price data are added to Optimizer from an external source | Commerce Storefront powered by Edge Delivery Services or a custom headless storefront | Commerce Optimizer Merchandising Services GraphQL APIs retrieve catalog and merchandising data | API Mesh, App Builder, or direct integrations connect the storefront to third-party cart, checkout, customer, order, payment, tax, shipping, and fulfillment services | Customers that want Optimizer capabilities while retaining an existing or third-party transactional commerce platform |
+| **[!DNL Adobe Commerce as a Cloud Service] with Commerce Foundation** | Adobe-managed Commerce Foundation is the commerce and transaction system | Commerce Storefront powered by Edge Delivery Services or another supported headless experience | Storefront Services for Catalog Service, Live Search, and Product Recommendations; Commerce Foundation APIs for core platform data | Managed Commerce Foundation and connected Commerce services | Customers that want Adobe-managed SaaS Commerce with reduced infrastructure ownership |
+| **[!DNL Adobe Commerce] on Cloud or on premises with the [!DNL Adobe Commerce Optimizer Connector]** | Existing Commerce Foundation remains the system of record for Commerce data and transactions | Edge Delivery Services, Luma, PWA, or custom headless storefront using Optimizer experiences | Commerce Optimizer Merchandising Services GraphQL APIs retrieve Optimizer-managed catalog and merchandising data | Existing Commerce Foundation APIs and connected transaction services | Customers that want to add Optimizer discovery and merchandising capabilities to an existing [!DNL Adobe Commerce] deployment |
+| **Stand-alone [!DNL Adobe Commerce Optimizer] with an external commerce backend** | Existing or third-party commerce platform owns transactions; catalog and price data are added to Optimizer from an external source | Commerce Storefront powered by Edge Delivery Services or a custom headless storefront | Commerce Optimizer Merchandising Services GraphQL APIs retrieve catalog and merchandising data | API Mesh, App Builder, or direct integrations connect the storefront to third-party cart, checkout, customer, order, payment, tax, shipping, and fulfillment services | Customers that want Optimizer capabilities while retaining an existing or third-party transactional commerce platform |
+| **[!DNL Adobe Commerce] on Cloud or on premises with Commerce Foundation** | Commerce Foundation is the commerce and transaction system | Edge Delivery Services, Luma, PWA, or custom headless storefront | Storefront Services for Catalog Service, Live Search, and Product Recommendations; Commerce Foundation APIs for core platform data | Commerce Foundation APIs and configured payment, tax, shipping, inventory, and fulfillment integrations | Customers that need the full [!DNL Adobe Commerce] platform with deployment control over cloud or on-premises infrastructure |
+
+## Adobe Commerce as a Cloud Service
+
+![Architecture diagram of Adobe Commerce as a Cloud Service with managed Commerce Foundation and Storefront Services feeding a Commerce Storefront](../assets/architecture/commerce-cloud-service-storefront-services-arch.drawio.png){width="800" zoomable="yes"}
+
+**Key boundary:** Adobe manages the Commerce Foundation platform. The architecture uses Storefront Services, including [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations], for storefront experiences. [!DNL Product Visuals] powered by AEM Assets is an optional SaaS integration. See [AEM Assets integration for Commerce](../aem-assets/overview.md).
+
+**References:**
+
+- [[!DNL Adobe Commerce as a Cloud Service] overview](/help/cloud-service/overview.md)
+- [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)
 
 ## Adobe Commerce with Commerce Foundation
 
@@ -31,17 +43,6 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 - [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)
 - [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)
 
-## Adobe Commerce as a Cloud Service
-
-![Architecture diagram of Adobe Commerce as a Cloud Service with managed Commerce Foundation and Storefront Services feeding a Commerce Storefront](../assets/architecture/commerce-cloud-service-storefront-services-arch.drawio.png){width="800" zoomable="yes"}
-
-**Key boundary:** Adobe manages the Commerce Foundation platform. The architecture uses Storefront Services, including [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations], for storefront experiences. [!DNL Product Visuals] powered by AEM Assets is an optional SaaS integration. See [AEM Assets integration for Commerce](../aem-assets/overview.md).
-
-**References:**
-
-- [[!DNL Adobe Commerce as a Cloud Service] overview](/help/cloud-service/overview.md)
-- [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)
 
 ## Adobe Commerce with the Optimizer Connector
 
@@ -69,8 +70,18 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 - [Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)
 - [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 
+## Terminology quick reference
+
+| Preferred term | Meaning | Avoid using as a current architecture label |
+| --- | --- | --- |
+| **Commerce Foundation** | Base commerce and transactional capabilities | Core Commerce; PHP Foundational Layer |
+| **Storefront Services** | Storefront-oriented APIs for Catalog Service, Live Search, and Product Recommendations | A label limited to only one Commerce platform |
+| **Commerce Optimizer Merchandising Services** | Optimizer APIs for catalog discovery and merchandising experiences | Commerce Foundation APIs |
+| **Commerce Storefront powered by Edge Delivery Services** | Customer-facing storefront implementation | An API family |
+
 ## Related guidance
 
+- [Reference architectures](reference-architectures.md)
 - [Choose a Commerce option](../choose-commerce-option/overview.md)
 - [Storefronts](../storefronts/overview.md)
 - [APIs](../apis/overview.md)

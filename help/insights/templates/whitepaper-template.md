@@ -49,4 +49,4 @@ noun-phrase style per ExL heading rules.
 
 ## Related guidance
 
-- [Link to related Architecture center or Implementation guides pages]
+- [Link to related Architecture options or Implementation guides pages]
