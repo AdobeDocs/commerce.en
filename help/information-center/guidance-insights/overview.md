@@ -22,4 +22,4 @@ This section is starting small. As content is published, it will be organized he
 
 ## Related guidance
 
-- [Architecture center](../architecture-center/overview.md)
+- [Architecture options](../architecture-options/overview.md)
