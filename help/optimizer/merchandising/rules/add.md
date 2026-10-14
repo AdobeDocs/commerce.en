@@ -176,8 +176,8 @@ Use this control to balance how strongly **behavioral signals** influence orderi
 
 | Behavior | Detail |
 | --- | --- |
-| Default | `5` (equivalent to the previous fixed behavioral multiplier). |
-| Range | From `1` (gentler behavioral influence) through `100` (stronger influence). The upper limit may change in a future release. |
+| Default | `50`. |
+| Range | From `1` (gentler behavioral influence) through `1000` (stronger influence). The upper limit may change in a future release. |
 | Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
 | Preview | The rule preview uses the same boost as live results for that rule. |
 | Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
@@ -218,7 +218,7 @@ A merchant uses the "Most viewed" intelligent ranking strategy and searches for 
 
 - **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than **YAN-K-E-512**, its superior text match outweighs the behavioral boost.
 
-- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5`), behavioral influence may not be enough to overcome that text gap. Increasing the boost can move **YAN-K-E-512** higher among products that already match the query. **YAN-K-E-512** must also match the query: at least one searchable attribute for that SKU must include **candle**, or it will not appear in results and the boost cannot apply.
+- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`50`), behavioral influence may not be enough to overcome that text gap. Increasing the boost can move **YAN-K-E-512** higher among products that already match the query. **YAN-K-E-512** must also match the query: at least one searchable attribute for that SKU must include **candle**, or it will not appear in results and the boost cannot apply.
 
 **Example (broad query):**
 
@@ -390,7 +390,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 
 | Field | Description |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `50`; allowed range `1`–`1000`. Applied at query time; rule preview matches live behavior for the configured rule. |
 
 ### Details
 
