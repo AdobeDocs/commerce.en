@@ -1,14 +1,16 @@
 ---
-title: Connect AEM Assets
+title: Asset Management with AEM Assets
 description: Learn how to connect Adobe Commerce to Adobe Experience Manager Assets for centralized digital asset management across the storefront and search results.
 role: Admin, Developer
 feature: Integration
 recommendations: noCatalog
 ---
 
-# Connect AEM Assets
+# Asset Management with AEM Assets
 
-The AEM Assets Integration connects Adobe Commerce to an Adobe Experience Manager Assets project, giving you centralized management of product images and rich media across the storefront, search results, and recommendations.
+Product Visuals, powered by the AEM Assets Integration, connects Adobe Commerce to an AEM Assets project so teams can centrally manage product images and rich media, then sync those assets to Commerce for use across shopping experiences.
+
+Once the integration is configured, you have access to the Product Visuals feature in Adobe Commerce, which allows you to manage and display product images and rich media from AEM Assets within your Adobe Commerce storefront.
 
 >[!NOTE]
 >
@@ -17,8 +19,15 @@ The AEM Assets Integration connects Adobe Commerce to an Adobe Experience Manage
 ## Where to start
 
 1. Review the [AEM Assets Integration for Commerce](/help/aem-assets-integration/overview.md) documentation for prerequisites and setup.
-2. If you haven't connected Adobe Commerce to Commerce services yet, see [Set up Commerce services](set-up-commerce-services.md) first.
+
+
+1. To enable asset management with AEM Assets, follow the instructions for your deployment type in the _[AEM Assets Integration for Commerce](../aem-assets/overview.md#next-steps) guide_.
+
 
 ## Related guidance
 
-- [Set up Commerce services](set-up-commerce-services.md)
+- [!DNL Adobe Commerce as a Cloud Service] with [Product Visuals powered by AEM Assets](../../cloud-service/overview.md#product-visuals-powered-by-aem-assets)
+
+- [!DNL Adobe Commerce Optimizer] with [Product Visuals with AEM Assets](../aem-assets-integration/product-visuals.md)
+
+- [!DNL Adobe Commerce Storefront] with [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)

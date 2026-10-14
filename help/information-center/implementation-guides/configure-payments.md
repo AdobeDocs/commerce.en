@@ -17,7 +17,8 @@ recommendations: noCatalog
 ## Where to start
 
 1. Review the [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) for supported payment methods and prerequisites.
-2. If you haven't connected Adobe Commerce to Commerce services yet, see [Set up Commerce services](set-up-commerce-services.md) first.
+
+1. For instructions to configure Payment Services for your Adobe Commerce project, see [Onboarding Payment Services flow](/help/payment-services/guide-overview.md). If you haven't connected Adobe Commerce to Commerce services yet, see [Set up Commerce services](set-up-commerce-services.md) first.
 
 ## Related guidance
 

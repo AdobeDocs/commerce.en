@@ -17,7 +17,8 @@ recommendations: noCatalog
 ## Where to start
 
 1. Review the [[!DNL Data Connection] introduction](/help/data-connection/overview.md) for prerequisites and setup.
-2. Configure event data collection to enable behavioral data sharing, as described in [Configure Commerce Services](/help/landing/saas.md#saasenv).
+
+1. Configure event data collection to enable behavioral data sharing, as described in [Configure Commerce Services](/help/landing/saas.md#saasenv).
 
 ## Related guidance
 

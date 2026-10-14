@@ -60,7 +60,7 @@ The [!DNL Adobe Commerce Optimizer Connector for B2B] projects each custom share
 
 The B2B projection combines synchronized catalog content and pricing with Shared Catalog assortment and company assignment context.
 
-![Diagram mapping [!DNL Adobe Commerce] store views, pricing, shared catalogs, and company assignments to projected private catalog views in [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}
+![Diagram mapping [!DNL Adobe Commerce] store views, pricing, shared catalogs, and company assignments to projected private catalog views in [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}
 
 | [!DNL Adobe Commerce] data | [!DNL Adobe Commerce Optimizer] result | Purpose |
 | --- | --- | --- |

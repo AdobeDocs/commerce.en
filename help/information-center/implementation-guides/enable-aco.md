@@ -13,8 +13,11 @@ recommendations: noCatalog
 ## Where to start
 
 1. Review [What is Adobe Commerce Optimizer?](/help/optimizer/overview.md) to understand what it provides.
-2. Follow the [[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md) documentation to export catalog data, sync prices, and connect your storefront.
-3. See [Get started](/help/optimizer/get-started.md) for setup steps within Adobe Commerce Optimizer itself.
+
+1. For setup steps within Adobe Commerce Optimizer, see [Get started](/help/optimizer/get-started.md).
+
+1. For Commerce on cloud or on-premises deployments, follow the [[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md) documentation to export catalog data, sync prices, and connect your storefront.
+
 
 ## Related guidance
 

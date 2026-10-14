@@ -12,12 +12,13 @@ Adobe Commerce on Cloud and on-premises projects—including self-hosted project
 
 >[!NOTE]
 >
->Adobe Commerce Optimizer doesn't use the Commerce Services Connector or these extensions—it provides equivalent merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
+>Adobe Commerce Optimizer does not use the Commerce Services Connector or the Live Search, Catalog Service, and Product Recommendations services—it provides equivalent merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
 
 ## Where to start
 
 1. Review the [Commerce Services Connector](/help/landing/saas.md) documentation to obtain and configure your API keys.
-2. See the [Adobe Commerce Services Guides](/help/landing/home.md) for the individual services available through the connector.
+
+1. See the [Adobe Commerce Services Guides](/help/landing/home.md) for the individual services available through the connector.
 
 ## Related guidance
 
