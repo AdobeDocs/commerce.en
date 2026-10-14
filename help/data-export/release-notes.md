@@ -57,6 +57,12 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.5.1 Release
+
+_October 14, 2026_
+
+MDEE-1416 - Attribute must be shown in the Admin UI when creating a product attribute by @pablomoreno61 in https://github.com/magento-commerce/commerce-data-export/pull/611
+
 ### 103.5.0 Release
 
 _October 13, 2026_
