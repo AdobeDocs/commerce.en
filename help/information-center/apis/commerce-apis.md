@@ -53,10 +53,10 @@ For stand-alone [!DNL Adobe Commerce Optimizer] with an external commerce backen
 
 ### AEM Assets
 
-AEM Assets is an optional, cross-cutting digital asset management integration that can be added to any Commerce or Optimizer architecture rather than a separate integration path of its own. See [AEM Assets integration for Commerce](../aem-assets/overview.md).
+AEM Assets is an optional, cross-cutting digital asset management integration that can be added to any Commerce or Optimizer architecture rather than a separate integration path of its own. See [AEM Assets integration for Commerce](../aem-assets/aem-assets-integration.md).
 
 ## Related guidance
 
 - [Architecture options](../architecture-options/overview.md)
-- [Storefronts](../storefronts/overview.md)
-- [AEM Assets integration for Commerce](../aem-assets/overview.md)
+- [Storefronts](../storefronts/storefronts.md)
+- [AEM Assets integration for Commerce](../aem-assets/aem-assets-integration.md)

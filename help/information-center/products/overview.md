@@ -34,4 +34,4 @@ Adobe Commerce spans several products and services. Use this page to understand 
 
 >[!NOTE]
 >
->On Adobe Commerce as a Cloud Service, the Catalog Service, Live Search, and Product Recommendations extensions are installed and configured automatically. On Adobe Commerce on Cloud or on-premises projects, install each extension before you configure it. Adobe Commerce Optimizer is not currently available with Adobe Commerce as a Cloud Service. See [Get started](../get-started/overview.md) for role- and platform-specific setup paths.
+>On Adobe Commerce as a Cloud Service, the Catalog Service, Live Search, and Product Recommendations extensions are installed and configured automatically. On Adobe Commerce on Cloud or on-premises projects, install each extension before you configure it. Adobe Commerce Optimizer is not currently available with Adobe Commerce as a Cloud Service. See [Get started](../get-started/get-started-by-role.md) for role- and platform-specific setup paths.

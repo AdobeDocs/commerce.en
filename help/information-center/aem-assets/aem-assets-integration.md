@@ -55,4 +55,4 @@ If marketing and merchandising teams need centralized product imagery and asset 
 ## Related guidance
 
 - [Architecture options](../architecture-options/overview.md)
-- [APIs](../apis/overview.md)
+- [APIs](../apis/commerce-apis.md)

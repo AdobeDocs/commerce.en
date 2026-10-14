@@ -16,7 +16,7 @@ The authoritative, in-depth documentation for each product continues to live in 
 
 | Section | Use it to |
 | ------- | --------- |
-| [Get started](get-started/overview.md) | Find a starting point based on your role—business practitioner, merchandiser, administrator, developer, solution architect, or partner. |
+| [Get started](get-started/get-started-by-role.md) | Find a starting point based on your role—business practitioner, merchandiser, administrator, developer, solution architect, or partner. |
 | [Products](products/overview.md) | Understand the Adobe Commerce product portfolio and identify which products and services fit your requirements. |
 | [Implementation guides](implementation-guides/overview.md) | Follow cross-product guidance for common implementation journeys, such as building a storefront or connecting Commerce services. |
 | [Architecture options](architecture-options/overview.md) | Compare the supported Commerce architectures and review reference patterns that span multiple Commerce products. |

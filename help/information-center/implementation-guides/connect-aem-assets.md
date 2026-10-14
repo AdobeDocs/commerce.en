@@ -21,7 +21,7 @@ Once the integration is configured, you have access to the Product Visuals featu
 1. Review the [AEM Assets Integration for Commerce](/help/aem-assets-integration/overview.md) documentation for prerequisites and setup.
 
 
-1. To enable asset management with AEM Assets, follow the instructions for your deployment type in the _[AEM Assets Integration for Commerce](../aem-assets/overview.md#next-steps) guide_.
+1. To enable asset management with AEM Assets, follow the instructions for your deployment type in the _[AEM Assets Integration for Commerce](../aem-assets/aem-assets-integration.md#next-steps) guide_.
 
 
 ## Related guidance

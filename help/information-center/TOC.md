@@ -12,13 +12,13 @@ recommendations: noDisplay
 - [Overview](overview.md)
 - Explore Adobe Commerce products and services {#explore-platforms-and-services}
   - [Platforms and Services](portfolio/platform-and-services.md)
-  - [Storefronts](storefronts/overview.md)
-  - [AEM Assets Integration for Commerce](aem-assets/overview.md)
-- [APIs](apis/overview.md)
+  - [Storefronts](storefronts/storefronts.md)
+  - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
+- [APIs](apis/commerce-apis.md)
 - Architecture {#architecture}
    - [Architecture options](architecture-options/overview.md)
    - [Reference architectures](architecture-options/reference-architectures.md)
-- [Get started by role](get-started/overview.md)
+- [Get started by role](get-started/get-started-by-role.md)
 - Guidance and insights {#guidance-insights}
    - [Overview](guidance-insights/overview.md)
 - Implementation guides {#implementation-guides}

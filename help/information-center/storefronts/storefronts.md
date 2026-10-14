@@ -38,4 +38,4 @@ Where cart and checkout transactions are handled depends on the Commerce backend
 ## Related guidance
 
 - [Architecture options](../architecture-options/overview.md)
-- [APIs](../apis/overview.md)
+- [APIs](../apis/commerce-apis.md)

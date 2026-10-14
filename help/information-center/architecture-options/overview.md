@@ -23,7 +23,7 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 
 ![Architecture diagram of Adobe Commerce as a Cloud Service with managed Commerce Foundation and Storefront Services feeding a Commerce Storefront](../assets/architecture/commerce-cloud-service-storefront-services-arch.drawio.png){width="800" zoomable="yes"}
 
-**Key boundary:** Adobe manages the Commerce Foundation platform. The architecture uses Storefront Services, including [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations], for storefront experiences. [!DNL Product Visuals] powered by AEM Assets is an optional SaaS integration. See [AEM Assets integration for Commerce](../aem-assets/overview.md).
+**Key boundary:** Adobe manages the Commerce Foundation platform. The architecture uses Storefront Services, including [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations], for storefront experiences. [!DNL Product Visuals] powered by AEM Assets is an optional SaaS integration. See [AEM Assets integration for Commerce](../aem-assets/aem-assets-integration.md).
 
 **References:**
 
@@ -35,7 +35,7 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 
 ![Architecture diagram of Adobe Commerce on Cloud or on premises with Storefront Services and Commerce Foundation APIs feeding a Commerce Storefront](../assets/architecture/commerce-paas-storefront-services-arch.drawio.png){width="800" zoomable="yes"}
 
-**Key boundary:** Commerce Foundation owns the Commerce platform and transaction flows. [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations] provide optimized storefront access to catalog, search, and recommendations when configured. AEM Assets integration is optional. See [AEM Assets integration for Commerce](../aem-assets/overview.md).
+**Key boundary:** Commerce Foundation owns the Commerce platform and transaction flows. [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations] provide optimized storefront access to catalog, search, and recommendations when configured. AEM Assets integration is optional. See [AEM Assets integration for Commerce](../aem-assets/aem-assets-integration.md).
 
 **References:**
 
@@ -83,5 +83,5 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 
 - [Reference architectures](reference-architectures.md)
 - [Choose a Commerce option](../choose-commerce-option/overview.md)
-- [Storefronts](../storefronts/overview.md)
-- [APIs](../apis/overview.md)
+- [Storefronts](../storefronts/storefronts.md)
+- [APIs](../apis/commerce-apis.md)

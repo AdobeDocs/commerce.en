@@ -54,4 +54,4 @@ See [What is Adobe Commerce Optimizer?](/help/optimizer/overview.md).
 
 - [Commerce overview](../commerce-overview/overview.md)
 - [Architecture options](../architecture-options/overview.md)
-- [Get started](../get-started/overview.md)
+- [Get started](../get-started/get-started-by-role.md)
