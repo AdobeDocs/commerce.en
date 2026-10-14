@@ -11,7 +11,7 @@ recommendations: noDisplay
 
 - [Overview](overview.md)
 - Explore Adobe Commerce products and services {#explore-platforms-and-services}
-  - [Platforms and Services](portfolio/platform-services.md)
+  - [Platforms and Services](portfolio/platform-and-services.md)
   - [Storefronts](storefronts/overview.md)
   - [AEM Assets Integration for Commerce](aem-assets/overview.md)
 - [APIs](apis/overview.md)
@@ -33,4 +33,3 @@ recommendations: noDisplay
    - [Integrate with Adobe Experience Platform](implementation-guides/integrate-aep.md)
 - Migration and adoption {#migration-adoption}
    - [Overview](migration-adoption/overview.md)
-
