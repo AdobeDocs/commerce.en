@@ -104,12 +104,12 @@ Integrations can now subscribe to the following events through [!DNL Adobe I/O E
 
 You can now supply an optional SHA-256 checksum when you request a presigned upload URL. Send the same value in the `x-amz-checksum-sha256` header when you upload the file. <!-- ACCS-1464 -->
 
-* GraphQL - Pass the `checksum_sha256` argument to the `initiateUpload` mutation.
+* GraphQL - Specify the `checksum_sha256` field as input to the  `initiateUpload` mutation.
 * REST - Use the new `POST /V1/media/initiate-upload-with-checksum` endpoint with the `checksumSha256` field.
 
 ### View order totals across an order-edit chain
 
-The `Customer` GraphQL type now includes a `chain_totals` field that returns aggregated totals across every order in an order-edit chain. Filter by any order number in the chain with `original_number`. Only the `eq` condition is supported. This field uses the same feature flag as the `original_number` order filter, which is disabled by default. <!-- ACCS-1443 -->
+The `Customer` GraphQL type now includes a `chain_totals(filter: CustomerChainTotalsFilterInput)` field that returns aggregated totals across every order in an order-edit chain. Filter by any order number in the chain with `original_number`. Only the `eq` condition is supported. This field uses the same feature flag as the `original_number` order filter, which is disabled by default. <!-- ACCS-1443 -->
 
 The [!DNL Commerce Admin] can also display consolidated totals across an order-edit chain in the [!UICONTROL Order Chains] grid ([!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains]) and in an [!UICONTROL Order Chain Totals] summary on the order-chain detail view.
 
@@ -117,7 +117,7 @@ To enable these fields, contact your Adobe Commerce Customer Success Manager or 
 
 ### Check stock-level availability
 
-The new `stockAvailability(skus: [String!]!)` storefront GraphQL query returns stock-level availability for up to 100 SKUs. <!-- ACCS-2079 -->
+The new `stockAvailability(skus: [String!]!)` GraphQL query returns stock-level availability for up to 100 SKUs. <!-- ACCS-2079 -->
 
 ### Enhancements and bug fixes
 
