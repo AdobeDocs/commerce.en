@@ -111,7 +111,13 @@ You can now supply an optional SHA-256 checksum when you request a presigned upl
 
 The `Customer` GraphQL type now includes a `chain_totals` field that returns aggregated totals across every order in an order-edit chain. Filter by any order number in the chain with `original_number`. Only the `eq` condition is supported. This field uses the same feature flag as the `original_number` order filter, which is disabled by default. <!-- ACCS-1443 -->
 
-To enable this feature, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+The [!DNL Commerce Admin] can also display consolidated totals across an order-edit chain in the [!UICONTROL Order Chains] grid ([!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains]) and in an [!UICONTROL Order Chain Totals] summary on the order-chain detail view.
+
+To enable these fields, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+### Check stock-level availability
+
+The new `stockAvailability(skus: [String!]!)` storefront GraphQL query returns stock-level availability for up to 100 SKUs. <!-- ACCS-2079 -->
 
 ### Enhancements and bug fixes
 
@@ -132,6 +138,32 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where placing an order from a cart created through `PUT /V1/carts/:cartId/order` could fail after payment authorization. <!-- ACCS-2091, PAY-6857 -->
 
 * Fixed an issue where creating an order from a customer's shopping cart in the [!DNL Commerce Admin] could change the payment authorization total and remove the addresses from the customer's storefront cart. <!-- ACCS-2100 -->
+
+* Applying or removing a shipping discount through the REST API while an order is being placed from the same cart now returns a retryable error. <!-- ACCS-2077 -->
+
+* Product save events (`observer.catalog_product_save_commit_after` and `observer.catalog_product_save_after`) now include current related, up-sell, and cross-sell products when product links are added, updated, or removed. <!-- ACCS-2049 -->
+
+* The `/V1/returns` REST endpoints now saves and returns custom attributes. <!-- CCSAAS-5588 -->
+
+* Fixed an issue where the `telephone` field was required in the `CartAddressInput` GraphQL input, which could prevent shipping methods from displaying at checkout. <!-- ACCS-1944 -->
+
+* Fixed an issue where special prices with a date range were exported using the default timezone instead of the website timezone. <!-- ACCS-2101 -->
+
+* Fixed an issue where shipping costs and taxes did not interact correctly for orders placed through GraphQL. <!-- ACCS-1995 -->
+
+* Fixed an issue where enabling [!UICONTROL Company] and [!UICONTROL Shared Catalog] at the website scope failed. <!-- ACCS-1999 -->
+
+* Fixed an issue where some configurable products stopped syncing to the catalog when a child product had an empty value for a configurable attribute. <!-- ACCS-2107 -->
+
+* Fixed an issue where [!UICONTROL New Return] emails could be sent without the returned items listed when an item's condition, resolution, or reason was not set. <!-- CCSAAS-5585 -->
+
+* Fixed an issue where the [!UICONTROL Catalog] > [!UICONTROL Categories] page in the [!DNL Commerce Admin] failed to load for stores with category attributes that have no input type. <!-- CCSAAS-5582 -->
+
+* Fixed an issue where the [!UICONTROL Global] scope could not be opened in [!UICONTROL Content] > [!UICONTROL Design] > [!UICONTROL Configuration]. <!-- CCSAAS-5583 -->
+
+* Fixed an issue where Admin users without permission to edit product price or status could not open the [!UICONTROL Add Product] page. <!-- CCSAAS-5584 -->
+
+* Fixed an issue where the tax rate form failed to open in multi-store mode. <!-- ACCS-2102 -->
 
 {{accs-release}}
 
