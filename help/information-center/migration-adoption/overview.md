@@ -52,6 +52,6 @@ Adoption doesn't need to be a single, all-at-once platform change. Select a rout
 ## Related guidance
 
 - [Choose a Commerce option](../choose-commerce-option/overview.md)
-- [Architecture options](../architecture-options/overview.md)
+- [Architecture options](../architecture-options/implementation-architectures.md)
 - [Modernize an existing storefront](../implementation-guides/modernize-storefront.md)
 - [Enable Adobe Commerce Optimizer](../implementation-guides/enable-aco.md)

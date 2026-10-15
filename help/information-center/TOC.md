@@ -5,22 +5,25 @@ user-guide-description: A cross-product entry point for Adobe Commerce guidance,
 role: Admin, Developer, Leader, User
 feature: Storefront, Integration, Configuration
 recommendations: noDisplay
+nudge: true
 ---
 
 # Commerce Information Center {#information-center}
 
 - [Overview](overview.md)
-- Explore Adobe Commerce products and services {#explore-platforms-and-services}
+- Explore Commerce products and services {#explore-platforms-and-services}
   - [Platforms and Services](portfolio/platform-and-services.md)
   - [Storefronts](storefronts/storefronts.md)
   - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
 - [APIs](apis/commerce-apis.md)
 - Architecture {#architecture}
-   - [Architecture options](architecture-options/overview.md)
+   - [Implementation architectures](architecture-options/implementation-architectures.md)
    - [Reference architectures](architecture-options/reference-architectures.md)
 - [Get started by role](get-started/get-started-by-role.md)
 - Guidance and insights {#guidance-insights}
    - [Overview](guidance-insights/overview.md)
+- Migration and adoption {#migration-adoption}
+   - [Overview](migration-adoption/overview.md)
 - Implementation guides {#implementation-guides}
    - [Overview](implementation-guides/overview.md)
    - [Build a new storefront](implementation-guides/build-new-storefront.md)
@@ -31,5 +34,3 @@ recommendations: noDisplay
    - [Enable Adobe Commerce Optimizer](implementation-guides/enable-aco.md)
    - [Provision sandbox environments](implementation-guides/provision-sandbox.md)
    - [Integrate with Adobe Experience Platform](implementation-guides/integrate-aep.md)
-- Migration and adoption {#migration-adoption}
-   - [Overview](migration-adoption/overview.md)

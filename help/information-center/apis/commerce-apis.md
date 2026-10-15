@@ -57,6 +57,6 @@ AEM Assets is an optional, cross-cutting digital asset management integration th
 
 ## Related guidance
 
-- [Architecture options](../architecture-options/overview.md)
+- [Architecture options](../architecture-options/implementation-architectures.md)
 - [Storefronts](../storefronts/storefronts.md)
 - [AEM Assets integration for Commerce](../aem-assets/aem-assets-integration.md)

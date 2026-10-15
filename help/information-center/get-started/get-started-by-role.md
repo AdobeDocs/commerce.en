@@ -8,7 +8,7 @@ recommendations: noCatalog
 
 # Get started by role
 
-Adobe Commerce documentation is organized across several repositories and sites. The right starting point depends on your role and, for administrators and merchandisers, on which platform and merchandising path your project uses. See [Products](../products/overview.md) if you're not yet sure which platform applies to you.
+Adobe Commerce documentation is organized across several repositories and sites. The right starting point depends on your role and, for administrators and merchandisers, on which platform and merchandising path your project uses. See [Products](../portfolio/overview.md) if you're not yet sure which platform applies to you.
 
 ## For business practitioners
 
@@ -66,7 +66,7 @@ Extend, customize, and integrate Adobe Commerce, and build storefronts.
 
 Review architecture recommendations and reference patterns that span multiple Commerce products.
 
-- [Architecture options](../architecture-options/overview.md)
+- [Architecture options](../architecture-options/implementation-architectures.md)
 
 ## For partners
 

@@ -28,6 +28,6 @@ Once the integration is configured, you have access to the Product Visuals featu
 
 - [!DNL Adobe Commerce as a Cloud Service] with [Product Visuals powered by AEM Assets](../../cloud-service/overview.md#product-visuals-powered-by-aem-assets)
 
-- [!DNL Adobe Commerce Optimizer] with [Product Visuals with AEM Assets](../aem-assets-integration/product-visuals.md)
+- [!DNL Adobe Commerce Optimizer] with [Product Visuals with AEM Assets](/help/optimizer/setup/product-visuals.md)
 
 - [!DNL Adobe Commerce Storefront] with [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)

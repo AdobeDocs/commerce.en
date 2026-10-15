@@ -12,7 +12,8 @@ Adobe Commerce on Cloud and on-premises projects—including self-hosted project
 
 >[!NOTE]
 >
->Adobe Commerce Optimizer does not use the Commerce Services Connector or the Live Search, Catalog Service, and Product Recommendations services—it provides equivalent merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
+>Adobe Commerce Optimizer does not use the Commerce Services Connector or theLive Search, Catalog Service, or Product Recommendations services—it provides equivalent catalog and merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
+
 
 ## Where to start
 

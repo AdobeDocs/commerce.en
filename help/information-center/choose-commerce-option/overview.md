@@ -18,7 +18,7 @@ Use the following questions to orient your decision:
 1. **Do you want Adobe to manage the Commerce platform as SaaS?**
    - Yes: Evaluate [!DNL Adobe Commerce as a Cloud Service].
 
-See [Architecture options](../architecture-options/overview.md) for the detailed system diagrams behind each option below.
+See [Architecture options](../architecture-options/implementation-architectures.md) for the detailed system diagrams behind each option below.
 
 ## Adobe Commerce on Cloud
 
@@ -52,6 +52,6 @@ See [What is Adobe Commerce Optimizer?](/help/optimizer/overview.md).
 
 ## Related guidance
 
-- [Commerce overview](../commerce-overview/overview.md)
-- [Architecture options](../architecture-options/overview.md)
+- [Commerce overview](../commerce-overview/product-definitions-overview.md)
+- [Architecture options](../architecture-options/implementation-architectures.md)
 - [Get started](../get-started/get-started-by-role.md)

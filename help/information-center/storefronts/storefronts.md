@@ -8,11 +8,11 @@ recommendations: noCatalog
 
 # Storefronts
 
-The storefront is separate from the Commerce backend and API layers. Depending on the selected architecture, a storefront can retrieve data from Commerce Foundation APIs, Storefront Services APIs, [!DNL Adobe Commerce Optimizer] Merchandising Services APIs, or connected systems through API Mesh, App Builder, or other integration mechanisms. See [Architecture options](../architecture-options/overview.md) for how each storefront pairs with a Commerce backend.
+The storefront is separate from the Commerce backend and API layers. Depending on the selected architecture, a storefront can retrieve data from Commerce Foundation APIs, Storefront Services APIs, [!DNL Adobe Commerce Optimizer] Merchandising Services APIs, or connected systems through API Mesh, App Builder, or other integration mechanisms. See [Architecture options](../architecture-options/implementation-architectures.md) for how each storefront pairs with a Commerce backend.
 
 ## Commerce Storefront powered by Edge Delivery Services
 
-The Commerce Storefront powered by [!DNL Edge Delivery Services] is a customer-facing storefront option built on the Adobe Commerce boilerplate, using drop-in components and content blocks. It's compatible with any of the [architecture options](../architecture-options/overview.md), connecting to Commerce Foundation, Storefront Services, or [!DNL Adobe Commerce Optimizer] Merchandising Services depending on the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/).
+The Commerce Storefront powered by [!DNL Edge Delivery Services] is a customer-facing storefront option built on the Adobe Commerce boilerplate, using drop-in components and content blocks. It's compatible with any of the [architecture options](../architecture-options/implementation-architectures.md), connecting to Commerce Foundation, Storefront Services, or [!DNL Adobe Commerce Optimizer] Merchandising Services depending on the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 ## Storefront Services
 
@@ -26,7 +26,7 @@ Storefront Services are used by both [!DNL Adobe Commerce] on Cloud or on premis
 
 ## Custom headless storefronts
 
-Storefront options beyond the Commerce Storefront powered by [!DNL Edge Delivery Services] may include [!DNL Luma], [!DNL PWA Studio], or a custom headless storefront, depending on platform support and implementation requirements. A custom headless storefront connects to the same API families as any other storefront option—Commerce Foundation, Storefront Services, or Commerce Optimizer Merchandising Services—based on the selected [architecture option](../architecture-options/overview.md).
+Storefront options beyond the Commerce Storefront powered by [!DNL Edge Delivery Services] may include [!DNL Luma], [!DNL PWA Studio], or a custom headless storefront, depending on platform support and implementation requirements. A custom headless storefront connects to the same API families as any other storefront option—Commerce Foundation, Storefront Services, or Commerce Optimizer Merchandising Services—based on the selected [architecture option](../architecture-options/implementation-architectures.md).
 
 ## Cart and checkout integration
 
@@ -37,5 +37,5 @@ Where cart and checkout transactions are handled depends on the Commerce backend
 
 ## Related guidance
 
-- [Architecture options](../architecture-options/overview.md)
+- [Architecture options](../architecture-options/implementation-architectures.md)
 - [APIs](../apis/commerce-apis.md)

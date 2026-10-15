@@ -10,22 +10,26 @@ recommendations: noCatalog
 
 The following patterns illustrate how Adobe Commerce products and services fit together for common implementation scenarios.
 
+- [Adobe Commerce as a Cloud Service architecture](/help/cloud-service/overview.md#architecture)
+- [Adobe Commerce enterprise reference architecture](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
+- [Adobe Commerce storefront architecture](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/){target="_blank"}
+- [Adobe Commerce on cloud infrastructure architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
+
 ## Storefront powered by Edge Delivery Services
 
 A storefront built on the Adobe Commerce boilerplate, using drop-in components and content blocks, connected to Adobe Commerce or [!DNL Adobe Commerce Optimizer] as the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
+- [Adobe Commerce storefront architecture](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)
+
 ## Catalog sync pipeline
 
-Data flow for keeping catalog, price, and inventory data synchronized between Adobe Commerce and Adobe Commerce Optimizer. See the [Catalog Sync Pipeline](/help/aco-connector/connector-sync-pipeline.md).
+Data flow for keeping catalog, price, and inventory data synchronized between Adobe Commerce and Adobe Commerce services (Commerce Optimizer,Live Search, Catalog Service, Product Recommendations, and other connected [Commerce Services](../../landing/home.md)).
 
-## Services layer
+- For Adobe Commerce as a Cloud Service, on cloud infrastructure, or on-premises deployments, see [Synchronize data with SaaS Data Export](/help/data-export/sync-overview.md)
 
-Adobe Commerce or Magento Open Source connected to [!DNL Catalog Service], [!DNL Live Search], [!DNL Product Recommendations], and [!DNL Payment Services] through the Commerce Services Connector. See [Adobe Commerce Services Guides](/help/landing/home.md).
+- For Adobe Commerce on cloud infrastructure or on-premises configured with Adobe Commerce Optimizer Connector, see [Connector sync pipeline](/help/aco-connector/connector-sync-pipeline.md).
 
->[!NOTE]
->
->This section will expand over time to cover storefront architectures, event-driven integrations, and multi-site strategies as that guidance is developed. See [Guidance and insights](../guidance-insights/overview.md) for strategic and cross-cutting recommendations.
 
 ## Related guidance
 
-- [Architecture options](overview.md)
+- [Implementation architectures options](implementation-architectures.md)

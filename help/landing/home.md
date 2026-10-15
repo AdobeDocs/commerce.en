@@ -146,11 +146,10 @@ Storefront services are a group of AI-powered features that optimize product dis
 
 >[!NOTE]
 >
->For Adobe Commerce deployments integrated with Adobe Commerce Optimizer, product catalog, discovery, product recommendations, and merchandising services in Optimizer replace the Live Search, Catalog Service, and Product Recommendations services. See [What is Adobe Commerce Optimizer](/help/optimizer/overview.md).
-
->[!NOTE]
 >
->Adobe Commerce Optimizer does not use the Commerce Services Connector or the Live Search, Catalog Service, and Product Recommendations services. It provides equivalent merchandising capabilities natively. See [What is Adobe Commerce Optimizer?](../optimizer/overview.md).
+>Adobe Commerce Optimizer does not require the Commerce Services Connector or the Live Search, Catalog Service, and Product Recommendations services. It provides equivalent merchandising capabilities natively. See [What is Adobe Commerce Optimizer?](../optimizer/overview.md).
+>
+>Adobe Commerce deployments integrated with Adobe Commerce Optimizer do not need the Commerce Services Connector or commerce services. See [Set up the connector for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started).
 
 >[!TAB Integration services]
 
