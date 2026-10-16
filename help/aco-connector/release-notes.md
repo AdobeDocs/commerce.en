@@ -49,6 +49,13 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.2.0 Release
+
+_October 13, 2026_
+
+![Fix](../assets/fix.svg) Enable stores feed for Payment service. <!--MDEE-1459-->
+![Fix](../assets/fix.svg) Product videos now sync to [!DNL Adobe Commerce Optimizer], preserving their configured sort order. <!--DATA-7320-->
+
 ### 1.1.1 Release
 
 _September 30, 2026_
