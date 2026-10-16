@@ -4,7 +4,7 @@ description: Learn how to use Adobe Journey Optimizer to send an abandoned cart 
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
-TQID: https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU
+TQID: 'https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -13,6 +13,10 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

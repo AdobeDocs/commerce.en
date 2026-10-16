@@ -13,6 +13,11 @@
 >
 >Always connect sandbox Optimizer instances to non-production environments and production instances to production environments. Mismatched environments cause inconsistent catalog data, search results, and recommendations.
 
+## Adobe Commerce Optimizer data sync processing note {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>Data sync processing starts in the background as soon as you complete configuration. Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
 
 ## Merchandising Services for Optimizer {#aco-merchandising-services}
 
@@ -103,3 +108,13 @@ For information about identity configuration options including Adobe ID, Enterpr
 >[!IMPORTANT]
 >
 >The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process. For an overview of the tool and its eligibility requirements, see [Bulk data migration tool](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Install extension links {#install-extension-links}
+
+>[!NOTE]
+>
+>For detailed extension installation instructions, see the following guides:
+>
+>[Install extension on [!DNL Adobe Commerce] on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Install extension on [!DNL Adobe Commerce] on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)

@@ -17,9 +17,21 @@ feature_v2:
     internal-label: Security
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
     internal-label: Cloud architecture
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

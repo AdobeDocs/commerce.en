@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
     internal-label: Accounts
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
     internal-label: Account management
@@ -26,6 +28,8 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
