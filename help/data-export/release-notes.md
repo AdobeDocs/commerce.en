@@ -57,6 +57,14 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.5.2 Release
+
+_October 19, 2026_
+
+![Fix](../assets/fix.svg) Restore category feed identity to categoryId and storeViewCode. <!--MDEE-1473-->
+![Fix](../assets/fix.svg) Fix PHP 8.5 null array offset in EavAttributeOptionValueResolver. <!--MDEE-1472-->
+![Fix](../assets/fix.svg) PHP 8.5 NULL child attribute values prevent configurable products from syncing. <!--MDEE-1474-->
+
 ### 103.5.1 Release
 
 _October 14, 2026_
