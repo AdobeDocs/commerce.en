@@ -61,9 +61,11 @@ Updates include:
 
 _October 19, 2026_
 
-![Fix](../assets/fix.svg) Restore category feed identity to categoryId and storeViewCode. <!--MDEE-1473-->
-![Fix](../assets/fix.svg) Fix PHP 8.5 null array offset in EavAttributeOptionValueResolver. <!--MDEE-1472-->
-![Fix](../assets/fix.svg) PHP 8.5 NULL child attribute values prevent configurable products from syncing. <!--MDEE-1474-->
+![Fix](../assets/fix.svg) **Consistent category identification**—Restored category feed identification using category ID and store view code in Catalog Service GraphQL API for Catalog Services](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}, preventing category moves from incorrectly marking categories as deleted. <!--MDEE-1473-->
+
+![Fix](../assets/fix.svg) **Reliable attribute option processing on PHP 8.5**—Fixed attribute option value handling to prevent product-feed export errors when option labels reference a missing store. <!--MDEE-1472-->
+
+![Fix](../assets/fix.svg) **Reliable configurable product syncing on PHP 8.5**—Fixed an issue where null child attribute values prevented configurable products from synchronizing correctly. <!--MDEE-1474-->
 
 ### 103.5.1 Release
 
