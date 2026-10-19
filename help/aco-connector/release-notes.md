@@ -53,7 +53,7 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 _October 19, 2026_
 
-[Storefront] MDEE-1473: Override category feed identity to urlPath for CCDM sync by @developlex in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/128
+![Fix](../assets/fix.svg) Override category feed identity to urlPath for CCDM sync <!--MDEE-1473-->
 
 ### 1.2.0 Release
 
