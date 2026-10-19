@@ -49,6 +49,12 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.2.1 Release
+
+_October 19, 2026_
+
+[Storefront] MDEE-1473: Override category feed identity to urlPath for CCDM sync by @developlex in https://github.com/magento-commerce/commerce-data-ccdm-sync/pull/128
+
 ### 1.2.0 Release
 
 _October 13, 2026_
