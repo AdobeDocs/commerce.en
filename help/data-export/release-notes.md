@@ -61,7 +61,7 @@ Updates include:
 
 _October 19, 2026_
 
-![Fix](../assets/fix.svg) **Consistent category identification**—Restored category feed identification using category ID and store view code in Catalog Service GraphQL API for Catalog Services](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}, preventing category moves from incorrectly marking categories as deleted. <!--MDEE-1473-->
+![Fix](../assets/fix.svg) **Consistent category identification**—Restored category feed identification using category ID and store view code in the [Catalog Service GraphQL API for Storefront Services](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"} supported on Adobe Commerce as a Cloud Service, Adobe Commerce on Cloud and on-premises. This update, prevents category moves from incorrectly marking categories as deleted. <!--MDEE-1473-->
 
 ![Fix](../assets/fix.svg) **Reliable attribute option processing on PHP 8.5**—Fixed attribute option value handling to prevent product-feed export errors when option labels reference a missing store. <!--MDEE-1472-->
 
