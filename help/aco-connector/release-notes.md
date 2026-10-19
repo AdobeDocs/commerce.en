@@ -49,6 +49,12 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 
 ## 2026 Releases
 
+### 1.2.1 Release
+
+_October 19, 2026_
+
+![Fix](../assets/fix.svg) **Preserved category synchronization behavior**–The Adobe Commerce Optimizer Connector retains URL path and store view code as category feed identifiers, maintaining correct synchronization. When categories move within a category tree, new paths are synchronized, and previous paths are removed.<!--MDEE-1473-->
+
 ### 1.2.0 Release
 
 _October 13, 2026_
