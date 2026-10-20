@@ -7,7 +7,7 @@ recommendations: noCatalog
 
 <!--
 Copy this file into help/information-center/guidance-insights/<slug>.md,
-fill in the sections below, then add it to TOC.md under "Guidance & insights".
+fill in the sections below, then add it to TOC.md under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
 See help/information-center/governance.md for what belongs in this section.
 Security-specific content should be reviewed by the security team before publishing.
@@ -31,7 +31,7 @@ Use auto-tagger to tag file after authoring content.
 
 ## Risks if not followed
 
-[What happens if this guidance isn't followed—be concrete, avoid vague fear-based language.]
+[What happens if this guidance is not followed—be concrete, avoid vague fear-based language.]
 
 ## Related guidance
 

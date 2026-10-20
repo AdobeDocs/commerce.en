@@ -64,7 +64,7 @@ topic_v2:
 
 # Migration and adoption
 
-Adoption doesn't need to be a single, all-at-once platform change. Select a route based on whether your immediate goal is storefront modernization, merchandising improvement, backend modernization, or a complete move to managed SaaS.
+Adoption does not need to be a single, all-at-once platform change. Select a route based on whether your immediate goal is storefront modernization, merchandising improvement, backend modernization, or a complete move to managed SaaS.
 
 ## Adoption routes
 
@@ -76,10 +76,10 @@ Adoption doesn't need to be a single, all-at-once platform change. Select a rout
 
 ### Use Commerce Optimizer as a bridge
 
-- Connect [!DNL Adobe Commerce] on Cloud or on premises using the [!DNL Adobe Commerce Optimizer Connector].
+- Connect [!DNL Adobe Commerce] cloud or on-premises using the [!DNL Adobe Commerce Optimizer Connector].
 - Adopt Merchandising Services, discovery, recommendations, and an Edge Delivery Services storefront.
-- Keep [!DNL Adobe Commerce] as the source of truth for products, prices, catalog structure, cart, checkout, customers, and orders.
-- Use this architecture as a possible stepping stone toward [!DNL Adobe Commerce as a Cloud Service].
+- Keep [!DNL Adobe Commerce] as the primary system of record for products, prices, catalog structure, cart, checkout, customers, and orders.
+- Use this architecture as a possible transition toward [!DNL Adobe Commerce as a Cloud Service].
 
 ### Migrate fully to Adobe Commerce as a Cloud Service
 

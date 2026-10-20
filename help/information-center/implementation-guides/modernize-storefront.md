@@ -40,17 +40,17 @@ topic_v2:
 
 # Modernize an existing storefront
 
-If you're running a legacy storefront—such as a Luma theme or an older PWA Studio implementation—you can migrate incrementally to a storefront built on Edge Delivery Services and Commerce drop-in components, rather than rebuilding everything at once.
+You can migrate legacy storefronts incrementally to Edge Delivery Services and Commerce drop-in components instead of rebuilding everything at one time.
 
 >[!NOTE]
 >
->This guide applies to Adobe Commerce as a Cloud Service and Adobe Commerce on cloud infrastructure or on premises using either Storefront Services or the Adobe Commerce Optimizer Connector. It also applies to stand-alone Adobe Commerce Optimizer with an existing or third-party backend. See [Implementation architecture options](../architecture-options/implementation-architectures.md) to confirm which option applies to your project.
+>This guide applies to Adobe Commerce as a Cloud Service, Adobe Commerce on cloud infrastructure, or on-premises deployments using either Storefront Services or the Adobe Commerce Optimizer Connector. It also applies to stand-alone Adobe Commerce Optimizer with an existing or third-party backend. To confirm which option applies to your project, see [Implementation architecture options](../architecture-options/implementation-architectures.md).
 
-## Where to start
+## Getting started
 
-1. Review the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/) to understand what a storefront built on Edge Delivery Services looks like compared to your current implementation.
+1. To understand how a storefront built on Edge Delivery Services compares to your current implementation, review the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 
-1. Use the [Storefront Developer Guide](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to scope which pages or flows to migrate first.
+1. Use the [Storefront Developer Guide](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/) to scope which pages or flows to migrate first.
 
 1. For Adobe Commerce as a Cloud Service, keep your existing Commerce services connections ([!DNL Catalog Service], [!DNL Live Search], [!DNL Product Recommendations], [!DNL Payment Services]) in place—see [Set up Commerce services](set-up-commerce-services.md).
 

@@ -39,23 +39,23 @@ Adobe Commerce customers with the following deployment types can build a new sto
 
 - Adobe Commerce as a Cloud Service
 - Adobe Commerce Optimizer
-- Adobe Commerce on cloud infrastructure or on premises using Storefront Services without Adobe Commerce Optimizer
-- Adobe Commerce on Cloud or on-premises with the Adobe Commerce Optimizer Connector
+- Adobe Commerce on cloud or on-premises using Storefront Services without Adobe Commerce Optimizer
+- Adobe Commerce on cloud or on-premises using the Adobe Commerce Optimizer Connector
 
-Starting from the Adobe Commerce boilerplate gives you a working storefront that you can customize and connect to your own Adobe Commerce or [!DNL Adobe Commerce Optimizer] instance.
+Using the Adobe Commerce boilerplate provides a working storefront that you can customize and connect to your own Adobe Commerce or [!DNL Adobe Commerce Optimizer] instance.
 
 >[!NOTE]
 >
->For Adobe Commerce on cloud infrastructure or on premises, adopting Adobe Commerce Optimizer through the connector is one storefront modernization option, not a prerequisite. If you choose this path, use [Luma Bridge](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/discovery/luma-bridge/) to connect your Luma storefront with an Edge Delivery Services storefront.
+>For Adobe Commerce on cloud infrastructure or on-premises, adopting Adobe Commerce Optimizer through the connector is one storefront modernization option, not a requirement. If you choose this path, use [Luma Bridge](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/discovery/luma-bridge/) to connect your Luma storefront with an Edge Delivery Services storefront.
 
-## Where to start
+## Getting started
 
-1. Review the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/) and [Storefront architecture](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/) documentation to understand the architecture and available drop-in components.
+1. Review the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/) and [Storefront architecture](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/) documentation to understand the architecture and available drop-in components.
 
-1. Follow the storefront documentation to set up your storefront:
+1. To set up your storefront, follow the storefront documentation:
 
    - [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/)
-   - [Storefront developer guide](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to scope, set up, and launch a project.
+   - [Storefront developer guide](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/) to scope, set up, and launch a project.
 
 1. Connect the storefront to your Commerce backend.
 
@@ -63,7 +63,7 @@ Starting from the Adobe Commerce boilerplate gives you a working storefront that
 
 ## Related guidance
 
-- [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)
 - [Enable Adobe Commerce Optimizer](enable-aco.md)
 - [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md)
 - [Connect AEM Assets](connect-aem-assets.md)

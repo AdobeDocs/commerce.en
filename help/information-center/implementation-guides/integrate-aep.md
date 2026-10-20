@@ -50,13 +50,13 @@ role_v2:
 
 >[!NOTE]
 >
->This guide applies to Adobe Commerce on Cloud or on premises.
+>This guide applies to Adobe Commerce on Cloud or on-premises.
 
-## Where to start
+## Getting started
 
 1. Review the [[!DNL Data Connection] introduction](/help/data-connection/overview.md) for prerequisites and setup.
 
-1. Follow the [Data Connection data collection procedure](/help/data-connection/connect-data.md#data-collection) to enable storefront events and configure the datastream and dataset for behavioral data sharing.
+1. To enable storefront events and configure the datastream and dataset for behavioral data sharing, follow the [Data Connection data collection procedure](/help/data-connection/connect-data.md#data-collection).
 
 ## Related guidance
 

@@ -45,9 +45,9 @@ role_v2:
 
 # Enable Adobe Commerce Optimizer
 
-[!DNL Adobe Commerce Optimizer] is a composable merchandising and product discovery layer that connects to Adobe Commerce on Cloud or on premises through the [!DNL Adobe Commerce Optimizer Connector], and powers storefronts built on Edge Delivery Services. It's not currently available with Adobe Commerce as a Cloud Service.
+[!DNL Adobe Commerce Optimizer] is a composable merchandising and product discovery layer that connects to Adobe Commerce cloud or on-premises through the [!DNL Adobe Commerce Optimizer Connector], and powers storefronts built on Edge Delivery Services. It is not currently available with Adobe Commerce as a Cloud Service.
 
-## Where to start
+## Getting started
 
 1. Review [What is Adobe Commerce Optimizer?](/help/optimizer/overview.md) to understand what it provides.
 

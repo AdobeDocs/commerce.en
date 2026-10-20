@@ -53,7 +53,7 @@ The following documentation provides reference architecture patterns for Adobe C
 
 ## Storefront powered by Edge Delivery Services
 
-A storefront built on the Adobe Commerce boilerplate, using drop-in components and content blocks, connected to Adobe Commerce or [!DNL Adobe Commerce Optimizer] as the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/).
+A storefront built on the Adobe Commerce boilerplate, using drop-in components and content blocks, connected to Adobe Commerce or [!DNL Adobe Commerce Optimizer] as the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 
 - [Adobe Commerce storefront architecture](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)
 

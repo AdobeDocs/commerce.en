@@ -57,7 +57,7 @@ There are two integration paths. The path depends on your Commerce architecture.
 ## Before you choose
 
 - Setup and licensing requirements differ between the Commerce on cloud or on-premises path and the Commerce as a Cloud Service or Adobe Optimizer [!DNL Product Visuals] path. Review the deployment-specific requirements first.
-- [!DNL AEM Assets] manages digital assets. It doesn't replace the Commerce catalog, pricing, cart, checkout, or order system.
+- [!DNL AEM Assets] manages digital assets. It does not replace the Commerce catalog, pricing, cart, checkout, or order system.
 - Product assets are matched to Commerce products using SKU or other documented matching metadata.
 - If marketing and merchandising teams need centralized product imagery and asset workflows, choose the path that matches your Commerce architecture.
 

@@ -38,7 +38,7 @@ The storefront is separate from the Commerce backend and API layers. Depending o
 
 ## Commerce Storefront powered by Edge Delivery Services
 
-The Commerce Storefront powered by [!DNL Edge Delivery Services] is a customer-facing storefront option built on the Adobe Commerce boilerplate, using drop-in components and content blocks. It's compatible with any of the [architecture overview](../architecture-options/overview.md), connecting to Commerce Foundation, Storefront Services, or [!DNL Adobe Commerce Optimizer] Merchandising Services depending on the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/developer/commerce/storefront/).
+The Commerce Storefront powered by [!DNL Edge Delivery Services] is a customer-facing storefront option built on the Adobe Commerce boilerplate, using drop-in components and content blocks. It is compatible with any of the [architecture overview](../architecture-options/overview.md), connecting to Commerce Foundation, Storefront Services, or [!DNL Adobe Commerce Optimizer] Merchandising Services depending on the backend. See the [Adobe Commerce Storefront overview](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 
 ## Storefront Services
 
@@ -48,11 +48,11 @@ The Commerce Storefront powered by [!DNL Edge Delivery Services] is a customer-f
 - [!DNL Live Search]
 - [!DNL Product Recommendations]
 
-Storefront Services are used by both [!DNL Adobe Commerce] on Cloud or on premises when the services are configured, and [!DNL Adobe Commerce as a Cloud Service]. They are not exclusive to [!DNL Adobe Commerce as a Cloud Service] and should not be used as the distinguishing label between the two [!DNL Adobe Commerce] platform options. See the [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/).
+Both [!DNL Adobe Commerce] on Cloud or on-premises (when configured) and [!DNL Adobe Commerce as a Cloud Service] use Storefront Services. They are not exclusive to [!DNL Adobe Commerce as a Cloud Service] and should not be used as the distinguishing label between the two [!DNL Adobe Commerce] platform options. See the [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/).
 
 ## Custom headless storefronts
 
-Storefront options beyond the Commerce Storefront powered by [!DNL Edge Delivery Services] may include [!DNL Luma], [!DNL PWA Studio], or a custom headless storefront, depending on platform support and implementation requirements. A custom headless storefront connects to the same API families as any other storefront option—Commerce Foundation, Storefront Services, or Commerce Optimizer Merchandising Services—based on the selected [architecture option](../architecture-options/overview.md).
+Storefront options beyond the Commerce Storefront powered by [!DNL Edge Delivery Services] include [!DNL Luma], [!DNL PWA Studio], or a custom headless storefront, depending on platform support and implementation requirements. A custom headless storefront connects to the same API families as any other storefront option—Commerce Foundation, Storefront Services, or Commerce Optimizer Merchandising Services—based on the selected [architecture option](../architecture-options/overview.md).
 
 ## Cart and checkout integration
 

@@ -66,15 +66,15 @@ topic_v2:
 
 ## Commerce Foundation GraphQL APIs
 
-Core commerce and transactional capabilities such as catalog operations, cart, checkout, customers, and orders. Used by [!DNL Adobe Commerce] on Cloud, [!DNL Adobe Commerce] on premises, and [!DNL Adobe Commerce as a Cloud Service]. See the [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/).
+Core commerce capabilities including catalog, cart, checkout, customers, and orders. Used by [!DNL Adobe Commerce] on Cloud, [!DNL Adobe Commerce] on premises, and [!DNL Adobe Commerce as a Cloud Service]. See the [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/).
 
 ## Storefront Services GraphQL APIs
 
-Storefront-oriented catalog, search, and recommendation experiences through [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]. Used by [!DNL Adobe Commerce] on Cloud or on premises with configured services, and [!DNL Adobe Commerce as a Cloud Service]. See the [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/).
+Storefront-oriented catalog, search, and recommendation experiences through [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations]. Used by [!DNL Adobe Commerce] on Cloud, on-premises, and [!DNL Adobe Commerce as a Cloud Service]. See the [Storefront Services GraphQL schema](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/).
 
 ## Commerce Optimizer Merchandising Services GraphQL APIs
 
-Retrieve Optimizer-managed catalog, catalog views, price contexts, search, recommendations, and merchandising results. Used by [!DNL Adobe Commerce] on Cloud or on premises with the [!DNL Adobe Commerce Optimizer Connector], and stand-alone [!DNL Adobe Commerce Optimizer]. See [Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
+Retrieve Optimizer-managed catalog, catalog views, price contexts, search, recommendations, and merchandising results. Used by [!DNL Adobe Commerce] on Cloud, on-premises with the [!DNL Adobe Commerce Optimizer Connector], and stand-alone [!DNL Adobe Commerce Optimizer]. See [Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 ## Commerce Optimizer Data Ingestion REST APIs
 
@@ -82,11 +82,11 @@ Add catalog and price data to a stand-alone [!DNL Adobe Commerce Optimizer] impl
 
 ## Commerce Optimizer integrations
 
-[!DNL Adobe Commerce Optimizer] connects to other systems through several integration paths, depending on whether it's paired with [!DNL Adobe Commerce] or a third-party backend.
+[!DNL Adobe Commerce Optimizer] connects to other systems through several integration paths, depending on whether it is paired with [!DNL Adobe Commerce] or a third-party backend.
 
 ### Adobe Commerce Optimizer Connector
 
-Synchronizes catalog and price data from [!DNL Adobe Commerce] on Cloud or on premises to [!DNL Adobe Commerce Optimizer], so [!DNL Adobe Commerce] remains the transaction system while Optimizer supplies discovery and merchandising experiences. See [Commerce Optimizer Integrations](/help/optimizer/integrations/integrations-overview.md).
+Synchronizes catalog and price data from [!DNL Adobe Commerce] on Cloud or on-premises to [!DNL Adobe Commerce Optimizer], keeping [!DNL Adobe Commerce] as the transaction system while Optimizer provides discovery and merchandising. See [Commerce Optimizer Integrations](/help/optimizer/integrations/integrations-overview.md).
 
 ### Third-party commerce integrations
 
@@ -101,7 +101,7 @@ For event-driven integrations specifically, see [Adobe I/O Events for Adobe Comm
 
 ### Cart and checkout handoff
 
-For stand-alone [!DNL Adobe Commerce Optimizer] with an external commerce backend, the storefront uses Merchandising Services GraphQL APIs for product and catalog experiences, then hands off cart, checkout, customer, order, payment, tax, shipping, and fulfillment operations to the third-party backend through API Mesh, App Builder, or a direct integration.
+For stand-alone [!DNL Adobe Commerce Optimizer] with an external backend, the storefront uses Merchandising Services GraphQL APIs for product experiences, then hands off cart, checkout, customer, order, payment, tax, shipping, and fulfillment to the backend via API Mesh, App Builder, or direct integration.
 
 ### AEM Assets
 

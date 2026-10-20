@@ -43,9 +43,9 @@ role_v2:
 
 >[!NOTE]
 >
->This guide applies when Adobe Commerce (on cloud infrastructure or on premises), Adobe Commerce as a Cloud Service, or Magento Open Source handles transactions. For Adobe Commerce Optimizer projects, follow this flow only when the transactional backend is one of these supported platforms. If a third-party backend handles transactions, use that backend's payment setup instead.
+>This guide applies when Adobe Commerce (cloud or on-premises), Adobe Commerce as a Cloud Service, or Magento Open Source handles transactions. For Adobe Commerce Optimizer projects, follow this flow only when the transactional backend is one of these supported platforms. If a third-party backend handles transactions, use that backend's payment setup instead.
 
-## Where to start
+## Getting started
 
 1. Check product-version and country availability in [Payment Services compatibility](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility).
 

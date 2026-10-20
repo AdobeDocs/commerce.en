@@ -106,7 +106,7 @@ See [What is Adobe Commerce Optimizer?](https://experienceleague.adobe.com/en/do
 
 >[!NOTE]
 >
->Adobe Commerce as a Cloud Service (ACCS) and Adobe Commerce Optimizer (ACO) do not currently integrate with each other. Treat them as separate architecture options when planning an implementation.
+>Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer do not currently integrate with each other. Treat them as separate architecture options when planning an implementation.
 
 ### Adobe Commerce on-premises
 
@@ -126,14 +126,15 @@ See [Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/doc
 
 Adobe Commerce services for storefront and product experiences include:
 
-- **[Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)** — A storefront option for building customer-facing commerce experiences.
-- **Catalog Service** — Supports optimized product catalog experiences and storefront performance.
-- **Live Search** — Provides AI-powered product search.
-- **Product Recommendations** — Provides recommendations based on shopper behavior, trends, and product similarity.
-- **[Product Visuals](/help/aem-assets-integration/overview.md)** — Supports product imagery and media through Adobe Experience Manager Assets integrations.
-- **[Commerce Optimizer merchandising services](/help/optimizer/overview.md)** — Include catalog views and policies, search, recommendations, and merchandising capabilities.
+- **[Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)**—A storefront option for building customer-facing commerce experiences.
+- **Storefront Services**—Cloud-delivered SaaS capabilities for Adobe Commerce—including [!DNL Adobe Commerce on cloud infrastructure] and [!DNL Adobe Commerce as a Cloud Service]—that power storefront APIs and services for optimized catalog access, AI-driven search and product recommendations, and payment processing, helping merchants improve shopping experiences, performance, and conversions
+  - Catalog Service—Supports optimized product catalog experiences and storefront performance.
+  - Live Search—Provides AI-powered product search.
+  - Product Recommendations—Provides recommendations based on shopper behavior, trends, and product similarity.
+- **[Commerce Optimizer merchandising services](/help/optimizer/overview.md)**—Cloud-delivered, API-first capabilities for Commerce on Cloud and Adobe Commerce as a Cloud Service that use catalog data and AI to improve product discovery—through optimized catalog access, relevant search results, and personalized product recommendations—helping shoppers find products and supporting better storefront performance and conversions.
+  - **Product Visuals**—Supports product imagery and media through Adobe Experience Manager Assets integrations.
 
-For details about the Live Search, Product Recommendations, and the Catalog Service, see [Commerce Services Guides](/help/landing/home.md).
+For details about the Live Search, Product Recommendations, Catalog Service, Payment Services, and Product Visuals, see [Commerce Services Guides](/help/landing/home.md).
 
 ### Payments
 
@@ -145,11 +146,11 @@ See [Payment Services](https://experienceleague.adobe.com/en/docs/commerce/payme
 
 Commerce includes services and tools for connecting platforms and synchronizing data:
 
-- **[Commerce Services Connector](/help/landing/saas.md)** — Connects Adobe Commerce on cloud, on-premises, or Magento Open Source to supported Commerce SaaS services.
-- **[SaaS Data Export](/help/data-export/overview.md)** Supports the movement and synchronization of Commerce data for connected services.
-- **[Data Connection](/help/data-connection/overview.md)** — Connects Commerce data to Adobe Experience Platform.
-- **[Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md)** — Synchronizes catalog and pricing data from supported Adobe Commerce deployments to Adobe Commerce Optimizer.
-- **[Platform-specific connectors](/help/optimizer/integrations/integrations-overview.md#commerce-salesforce-connector)** — Connect Adobe Commerce Optimizer with specific third-party commerce platforms where supported.
+- **[Commerce Services Connector](/help/landing/saas.md)**—Connects Adobe Commerce on cloud, on-premises, or Magento Open Source to supported Commerce Software as a Service (SaaS) services.
+- **[SaaS Data Export](/help/data-export/overview.md)**—Supports the movement and synchronization of Commerce data for connected services.
+- **[Data Connection](/help/data-connection/overview.md)**—Connects Commerce data to Adobe Experience Platform.
+- **[Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md)**—Synchronizes catalog and pricing data from supported Adobe Commerce deployments to Adobe Commerce Optimizer.
+- **[Platform-specific connectors](/help/optimizer/integrations/integrations-overview.md#commerce-salesforce-connector)**—Connect Adobe Commerce Optimizer with specific third-party commerce platforms where supported.
 
 ### Developer tools and extensibility
 
@@ -166,8 +167,10 @@ Use this comparison to identify the service path for your Commerce product. Revi
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce on cloud infrastructure or on premises, and Adobe Commerce as a Cloud Service |
 | [[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce on cloud infrastructure or on premises, and Adobe Commerce as a Cloud Service |
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce on cloud infrastructure or on premises, and Adobe Commerce as a Cloud Service |
+| [Asset management](../aem-assets/aem-assets-integration.md) | Adobe Commerce on cloud infrastructure or on premises through AEM Assets Integration for Commerce. Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer through Product Visuals powered by AEM Assets. |
 | [Native discovery and merchandising](/help/optimizer/merchandising/overview.md) | Adobe Commerce Optimizer, either stand-alone or connected to Adobe Commerce through the Optimizer Connector. These capabilities replace the separate Catalog Service, Live Search, and Product Recommendations extensions. |
 | [[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce as a Cloud Service, supported versions of Adobe Commerce on cloud infrastructure or on premises, and Magento Open Source |
+
 
 >[!NOTE]
 >

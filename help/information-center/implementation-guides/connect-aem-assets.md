@@ -52,7 +52,7 @@ For Adobe Commerce on cloud infrastructure, use the AEM Assets Integration for C
 >
 >This guide covers the AEM Assets integration paths for Adobe Commerce on cloud infrastructure, Adobe Commerce as a Cloud Service, and Adobe Commerce Optimizer. Follow the path that matches your product and deployment.
 
-## Where to start
+## Getting started
 
 1. Review the [AEM Assets Integration for Commerce](/help/aem-assets-integration/overview.md) documentation for prerequisites and setup.
 
@@ -61,10 +61,10 @@ For Adobe Commerce on cloud infrastructure, use the AEM Assets Integration for C
 
 ## Related guidance
 
-- [AEM Assets Integration for Commerce](/help/aem-assets-integration/overview.md) for Adobe Commerce on cloud infrastructure or on premises.
+- [AEM Assets Integration for Commerce](/help/aem-assets-integration/overview.md) for Adobe Commerce on cloud infrastructure or on-premises.
 
 - [!DNL Adobe Commerce as a Cloud Service] with [Product Visuals powered by AEM Assets](../../cloud-service/overview.md#product-visuals-powered-by-aem-assets)
 
-- [!DNL Adobe Commerce Optimizer] with [Product Visuals with AEM Assets](/help/optimizer/setup/product-visuals.md)
+- [!DNL Adobe Commerce Optimizer] with [Product Visuals powered by AEM Assets](/help/optimizer/setup/product-visuals.md)
 
 - [!DNL Adobe Commerce Storefront] with [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)

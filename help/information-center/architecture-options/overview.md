@@ -55,7 +55,7 @@ topic_v2:
 
 Adobe Commerce architectures generally combine three layers: a commerce backend ([!DNL Adobe Commerce] or [!DNL Adobe Commerce Optimizer]), a storefront, and a set of connected services and integrations. This section orients you to the product model and points you to the detailed comparisons, diagrams, and API references maintained in each dedicated page.
 
-## Where to start
+## Getting started
 
 | Section | Use it to |
 | ------- | --------- |
@@ -71,7 +71,7 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 
 | Preferred term | Meaning | Avoid using as a current architecture label |
 | --- | --- | --- |
-| **Commerce Foundation** | Base commerce and transactional capabilities | Core Commerce; PHP Foundational Layer |
+| **Commerce Foundation** | Base commerce and transactional capabilities | Core Commerce and PHP Foundational Layer |
 | **Storefront Services** | Storefront-oriented APIs for Catalog Service, Live Search, and Product Recommendations | A label limited to only one Commerce platform |
 | **Commerce Optimizer Merchandising Services** | Optimizer APIs for catalog discovery and merchandising experiences | Commerce Foundation APIs |
 | **Commerce Storefront powered by Edge Delivery Services** | Customer-facing storefront implementation | An API family |

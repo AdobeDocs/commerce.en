@@ -46,7 +46,7 @@ Magento Open Source uses the Commerce Services Connector for [!DNL Payment Servi
 >Adobe Commerce Optimizer provides catalog and merchandising capabilities natively, instead of using the separate [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] services. Its catalog synchronization does not require the Commerce Services Connector. Other integrations on the Commerce backend, such as [!DNL Payment Services] and [!DNL Data Connection], still require the connector. See [Enable Adobe Commerce Optimizer](enable-aco.md) for Optimizer setup.
 
 
-## Where to start
+## Getting started
 
 1. Review the [Commerce Services Connector](/help/landing/saas.md) documentation to obtain and configure your API keys.
 

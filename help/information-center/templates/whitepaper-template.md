@@ -7,7 +7,7 @@ recommendations: noCatalog
 
 <!--
 Copy this file into help/information-center/guidance-insights/<slug>.md,
-fill in the sections below, then add it to TOC.md under "Guidance & insights".
+fill in the sections below, then add it to TOC.md under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
 See help/information-center/governance.md for what belongs in this section.
 
@@ -19,15 +19,15 @@ Use auto-tagger to tag file after authoring content.
 
 # [Sentence case heading, matches the topic of `title`]
 
-[One or two sentences framing the problem this white paper addresses and who it's for.]
+[One or two sentences framing the problem this white paper addresses and who it is for.]
 
 ## Summary
 
-[Short summary of the recommendation or finding—this should let a reader get the point without reading the full paper.]
+[Short summary of the recommendation or finding—this lets a reader understand the main point without reading the full paper.]
 
 ## Background
 
-[Context: why this topic matters now, what prompted this guidance, what's in scope and out of scope.]
+[Context: why this topic matters now, what prompted this guidance, what is in scope and out of scope.]
 
 ## Recommendation
 

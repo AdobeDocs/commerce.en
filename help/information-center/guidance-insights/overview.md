@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Insights
+title: Insights and Guidance
 description: Learn about practical implementation, security, product and engineering perspectives, and strategic direction for Adobe Commerce
 TQID: 'https://experienceleague.adobe.com/nVpCq5GPWn9aifhkXUf6EpqUf6ia-8sgjc4gs-VToLY'
 product_v2:
@@ -32,11 +32,13 @@ topic_v2:
     internal-label: Insights
 ---
 
-# Commerce insights and guidance
+# Insights and guidance
 
-Adobe Commerce Product Management and Engineering share the guidance they'd give a peer: what works in production, what to watch for, and how to get more from your investment in Adobe Commerce.
+Adobe Commerce Product Management and Engineering share the guidance they would give a peer: what works in production, what to watch for, and how to get more from your investment in Adobe Commerce.
 
-## What you'll find
+## What you will find {#what-youll-find}
+
+As articles are published, this section will include:
 
 - Implementation guidance for common Adobe Commerce use cases
 - Architectural and technical perspectives
@@ -45,10 +47,10 @@ Adobe Commerce Product Management and Engineering share the guidance they'd give
 - Updates on new capabilities
 - Lessons learned from Adobe Commerce experts
 
-## Who it's for
+## Who it is for {#who-its-for}
 
-Developers, architects, technical leaders, commerce strategists, and business teams working with Adobe Commerce—whether you're planning an implementation, solving a technical challenge, or optimizing what you already have.
+Developers, architects, technical leaders, commerce strategists, and business teams working with Adobe Commerce—whether you are planning an implementation, solving a technical challenge, or optimizing what you already have.
 
 ## Start exploring
 
-Browse the articles for expert perspectives, implementation strategies, and recommendations you can put to use right away.
+Articles are added to this section as they are published. Check back for expert perspectives, implementation strategies, and recommendations you can put to use right away.
