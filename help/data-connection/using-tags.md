@@ -32,7 +32,7 @@ topic_v2:
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 
-While you can use the [!DNL Data Connection] extension to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/tags/create-a-property). For those merchants, Adobe Commerce provides a publishing only option in the [!DNL Data Connection] extension that uses the Adobe Commerce Event SDK.
+While you can use the [!DNL Data Connection] extension to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home). For those merchants, Adobe Commerce provides a publishing only option in the [!DNL Data Connection] extension that uses the Adobe Commerce Event SDK.
 
 ![[!DNL Data Connection] Extension Data Flow](assets/tags-data-flow.png)
 _[!DNL Data Connection] Extension Data Flow with Tags_
