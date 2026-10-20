@@ -20,3 +20,6 @@ autotag-review: '2026-10-20T01:21:06.381Z'
 # [!DNL Commerce Insights] {#insights}
 
 - [What you'll find here](overview.md)
+- Agentic Commerce {#agentic-commerce}
+  - [Architectural foundations](agentic-commerce/architectural-foundations-agentic-commerce.md)
+  
