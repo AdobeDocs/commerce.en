@@ -72,11 +72,11 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 ## October 2026 - release #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items will be available in Production environments on October 20, 2026.
+The following items were released to Production environments on October 20, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -84,7 +84,7 @@ The following items will be available in Production environments on October 20, 
 
 ### Manage custom country regions
 
-New REST API endpoints let integrations manage custom regions, such as states or provinces, for countries that are not covered by the default region data.
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-regions) let integrations manage custom regions, such as states or provinces, for countries that are not covered by the default region data.
 
 Default (system) regions cannot be changed or removed. These endpoints require the [!UICONTROL Manage Country Regions] permission. <!-- ACCS-1937 -->
 
@@ -104,8 +104,8 @@ Integrations can now subscribe to the following events through [!DNL Adobe I/O E
 
 You can now supply an optional SHA-256 checksum when you request a presigned upload URL. Send the same value in the `x-amz-checksum-sha256` header when you upload the file. <!-- ACCS-1464 -->
 
-* GraphQL - Specify the `checksum_sha256` field as input to the  `initiateUpload` mutation.
-* REST - Use the new `POST /V1/media/initiate-upload-with-checksum` endpoint with the `checksumSha256` field.
+* GraphQL - Specify the `checksum_sha256` field as input to the [`initiateUpload` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#checksum-validation).
+* REST - Use the new [`POST /V1/media/initiate-upload-with-checksum`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads#initiate-the-upload-with-a-checksum) endpoint with the `checksumSha256` field.
 
 ### View order totals across an order-edit chain
 
@@ -117,13 +117,26 @@ To enable these fields, contact your Adobe Commerce Customer Success Manager or 
 
 ### Check stock-level availability
 
-The new `stockAvailability(skus: [String!]!)` GraphQL query returns stock-level availability for up to 100 SKUs. <!-- ACCS-2079 -->
+The new [`stockAvailability(skus: [String!]!)`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/stock-availability) GraphQL query returns stock-level availability for up to 100 SKUs. <!-- ACCS-2079 -->
+
+>[!IMPORTANT]
+>
+>This release includes changes to the [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/source-availability) GraphQL query.
+>
+>* The `is_saleable` and `backorder_message` fields are removed from `sourceAvailability`. Request them from the `stockAvailability` query instead.
+
+### Product feed inventory and quantity
+
+Product feeds now export inventory and cart quantity settings through the `ac_inventory` custom product attribute, and the tax class and attribute set through the `ac_tax_class` and `ac_attribute_set` custom product attributes. <!-- ACCS-1981, MDEE-1129 -->
+
+<!-- needs link pending COMDOX-1862 -->
+
+Since these external endpoints have changed, you need to [resync the data feed manually](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports).
+
 
 ### Enhancements and bug fixes
 
 The following selected enhancements, optimizations, and bug fixes are included in this release:
-
-* Product feeds now export inventory and cart quantity settings through the `ac_inventory` custom product attribute, and the tax class and attribute set through the `ac_tax_class` and `ac_attribute_set` custom product attributes. <!-- ACCS-1981, MDEE-1129 -->
 
 * Fixed an issue where category images were not returned in GraphQL when [!DNL AEM Assets] was the visualization owner. <!-- ACCS-1943 -->
 
