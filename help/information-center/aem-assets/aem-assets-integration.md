@@ -48,7 +48,7 @@ There are two integration paths. The path depends on your Commerce architecture.
 | Commerce architecture | AEM Assets integration path | Learn more |
 | --- | --- | --- |
 | [!DNL Adobe Commerce] on Cloud or on premises | [!DNL AEM Assets] Integration for Commerce. Uses the Commerce integration package to synchronize and manage product images, videos, and other media between [!DNL Adobe Commerce] and [!DNL AEM Assets]. | [AEM Assets Integration for Commerce](/help/aem-assets-integration/overview.md) |
-| [!DNL Adobe Commerce as a Cloud Service] | [!DNL Product Visuals] powered by [!DNL AEM Assets] | [Product Visuals with AEM Assets](/help/optimizer/setup/product-visuals.md) |
+| [!DNL Adobe Commerce as a Cloud Service] | [!DNL Product Visuals] powered by [!DNL AEM Assets] | [AEM Assets integration setup](/help/aem-assets-integration/overview.md#next-steps) |
 | Stand-alone [!DNL Adobe Commerce Optimizer] | [!DNL Product Visuals] powered by [!DNL AEM Assets]. Base catalog and price data arrive through the [Optimizer Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/). | [Product Visuals with AEM Assets](/help/optimizer/setup/product-visuals.md) |
 | [!DNL Adobe Commerce] with the [!DNL Adobe Commerce Optimizer Connector] | [!DNL Product Visuals] powered by [!DNL AEM Assets]. Catalog and price data are synchronized from [!DNL Adobe Commerce] by the Connector. | [Commerce Optimizer Integrations](/help/optimizer/integrations/integrations-overview.md) |
 
