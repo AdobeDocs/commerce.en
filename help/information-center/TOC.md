@@ -29,7 +29,8 @@ feature_v2:
   - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
   - [APIs](apis/commerce-apis.md)
 - [Get started by role](get-started/get-started-by-role.md)
-- [Insights and guidance](guidance-insights/overview.md)
+- Insights and guidance {#insights-and-guidance}
+  - [Overview](guidance-insights/overview.md)
 - Architecture {#architecture}
    - [Overview](architecture-options/overview.md)
    - [Implementation architectures](architecture-options/implementation-architectures.md)
