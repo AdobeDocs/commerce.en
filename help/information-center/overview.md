@@ -51,7 +51,7 @@ The authoritative, in-depth documentation for each product continues to live in 
 
 </td>
 <td><strong>Developer resources</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Developer Home</a> - <a href="https://developer.adobe.com/commerce/extensibility/" target="_blank">Extensibility</a> - <a href="https://developer.adobe.com/commerce/extensibility/app-management/" target="_blank">App Management</a> -
-<a href="https://developer.adobe.com/commerce/webapi/graphql/" target="_blank">GraphQL</a> - <a href="https://developer.adobe.com/commerce/webapi/rest/" target="_blank">REST</a> - <a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/" target="_blank">API playground</a> - <a href="https://developer.adobe.com/commerce/services/" target="_blank">Merchandising Services</a>
+<a href="https://developer.adobe.com/commerce/docs/" target="_blank">Developer Home</a> - <a href="https://developer.adobe.com/commerce/extensibility/" target="_blank">Extensibility</a> - <a href="https://developer.adobe.com/commerce/extensibility/app-management/" target="_blank">App Management</a> -
+<a href="https://developer.adobe.com/commerce/webapi/graphql/" target="_blank">GraphQL</a> - <a href="https://developer.adobe.com/commerce/webapi/rest/" target="_blank">REST</a> - <a href="https://developer.adobe.com/commerce/services/" target="_blank">Merchandising Services</a>
 </td>
 </tr></table>

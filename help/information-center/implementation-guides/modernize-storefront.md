@@ -44,7 +44,7 @@ If you're running a legacy storefront—such as a Luma theme or an older PWA Stu
 
 >[!NOTE]
 >
->This guide applies to Adobe Commerce as a Cloud Service and Adobe Commerce (on Cloud or on premises) connected to Adobe Commerce Optimizer, and stand-alone Adobe Commerce Optimizer with an existing or third-party backend. See [Architecture options at a glance](../architecture-options/overview.md) to confirm which option applies to your project.
+>This guide applies to Adobe Commerce as a Cloud Service and Adobe Commerce on cloud infrastructure or on premises using either Storefront Services or the Adobe Commerce Optimizer Connector. It also applies to stand-alone Adobe Commerce Optimizer with an existing or third-party backend. See [Implementation architecture options](../architecture-options/implementation-architectures.md) to confirm which option applies to your project.
 
 ## Where to start
 

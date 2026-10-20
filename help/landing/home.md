@@ -1,8 +1,6 @@
 ---
 title: Services Guides Home
-description: Browse Adobe Commerce product documentation for Commerce Services
-seo-title: Services for Adobe Commerce
-seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
+description: Find Adobe Commerce services documentation for product discovery, payments, data synchronization, and integrations. Review availability and setup guidance.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
@@ -147,9 +145,9 @@ Storefront services are a group of AI-powered features that optimize product dis
 >[!NOTE]
 >
 >
->Adobe Commerce Optimizer does not require the Commerce Services Connector or the Live Search, Catalog Service, and Product Recommendations services. It provides equivalent merchandising capabilities natively. See [What is Adobe Commerce Optimizer?](../optimizer/overview.md).
+>Adobe Commerce Optimizer provides catalog and merchandising capabilities natively, instead of using the separate Live Search, Catalog Service, and Product Recommendations services. See [What is Adobe Commerce Optimizer?](../optimizer/overview.md).
 >
->Adobe Commerce deployments integrated with Adobe Commerce Optimizer do not need the Commerce Services Connector or commerce services. See [Set up the connector for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started).
+>For Adobe Commerce deployments integrated with Optimizer, the Adobe Commerce Optimizer Connector handles catalog and price synchronization without requiring the Commerce Services Connector for that synchronization. Other integrations, such as [Payment Services](../payment-services/compatibility.md) and [Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector), still require the Commerce Services Connector. See [Set up the connector for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started).
 
 >[!TAB Integration services]
 
@@ -282,7 +280,7 @@ For example, when a shopper searches for a product using Live Search, adds it to
 
 >[!NOTE]
 >
->To enable behavioral data sharing between services, configure event data collection. See [Configure Commerce Services](saas.md#saas-configuration) for setup instructions.
+>To enable behavioral data sharing with Adobe Experience Platform, configure event data collection in Data Connection. See [Data Connection data collection](../data-connection/connect-data.md#data-collection) for setup instructions.
 
 Each service can be used independently, but combining them creates a more intelligent and personalized shopping experience.
 

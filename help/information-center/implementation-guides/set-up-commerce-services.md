@@ -1,6 +1,6 @@
 ---
 title: Set Up Commerce Services
-description: Learn how to connect Adobe Commerce or Magento Open Source to Commerce services, such as Catalog Service and Live Search, using the Commerce Services Connector.
+description: Learn how to connect Adobe Commerce to merchandising services and Magento Open Source to Payment Services using the Commerce Services Connector.
 role: Admin, Developer
 feature: Integration, Configuration
 recommendations: noCatalog
@@ -37,11 +37,13 @@ subfeature_v2:
 
 # Set up Commerce services
 
-Adobe Commerce on Cloud and on-premises projects—including self-hosted projects based on the Magento Open Source code base—connect to Commerce services, such as [!DNL Catalog Service], [!DNL Live Search], [!DNL Product Recommendations], and [!DNL Payment Services], through the Commerce Services Connector. On [!DNL Adobe Commerce as a Cloud Service], this connection is configured automatically.
+Adobe Commerce on cloud infrastructure and on-premises projects connect to services such as [!DNL Catalog Service], [!DNL Live Search], [!DNL Product Recommendations], and [!DNL Payment Services] through the Commerce Services Connector. On [!DNL Adobe Commerce as a Cloud Service], this connection is configured automatically.
+
+Magento Open Source uses the Commerce Services Connector for [!DNL Payment Services]. [!DNL Catalog Service], [!DNL Live Search], and [!DNL Product Recommendations] require Adobe Commerce and are not available for Magento Open Source.
 
 >[!NOTE]
 >
->Adobe Commerce Optimizer does not use the Commerce Services Connector or the [!DNL Live Search], [!DNL Catalog Service], or [!DNL Product Recommendations] services—it provides equivalent catalog and merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
+>Adobe Commerce Optimizer provides catalog and merchandising capabilities natively, instead of using the separate [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] services. Its catalog synchronization does not require the Commerce Services Connector. Other integrations on the Commerce backend, such as [!DNL Payment Services] and [!DNL Data Connection], still require the connector. See [Enable Adobe Commerce Optimizer](enable-aco.md) for Optimizer setup.
 
 
 ## Where to start

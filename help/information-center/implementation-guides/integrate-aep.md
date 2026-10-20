@@ -56,7 +56,7 @@ role_v2:
 
 1. Review the [[!DNL Data Connection] introduction](/help/data-connection/overview.md) for prerequisites and setup.
 
-1. Configure event data collection to enable behavioral data sharing, as described in [Configure Commerce Services](/help/landing/saas.md#saasenv).
+1. Follow the [Data Connection data collection procedure](/help/data-connection/connect-data.md#data-collection) to enable storefront events and configure the datastream and dataset for behavioral data sharing.
 
 ## Related guidance
 

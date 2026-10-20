@@ -43,7 +43,7 @@ role_v2:
 
 >[!NOTE]
 >
->This guide applies to Adobe Commerce (on Cloud or on premises), Adobe Commerce as a Cloud Service, and Adobe Commerce Optimizer projects.
+>This guide applies when Adobe Commerce (on cloud infrastructure or on premises), Adobe Commerce as a Cloud Service, or Magento Open Source handles transactions. For Adobe Commerce Optimizer projects, follow this flow only when the transactional backend is one of these supported platforms. If a third-party backend handles transactions, use that backend's payment setup instead.
 
 ## Where to start
 
