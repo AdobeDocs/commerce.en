@@ -1,6 +1,6 @@
 ---
 title: AEM Assets Integration for Commerce
-description: Learn how AEM Assets integrates with each Adobe Commerce architecture, including Adobe Commerce, Adobe Commerce as a Cloud Service, and Adobe Commerce Optimizer.
+description: Learn to integrate AEM Assets with Adobe Commerce, Adobe Commerce as a Cloud Service, and Adobe Commerce Optimizer to manage product images and media centrally.
 role: Admin, Developer, Leader
 feature: Storefront, Integration
 recommendations: noCatalog

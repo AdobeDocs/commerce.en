@@ -1,5 +1,5 @@
 ---
-title: Asset Management with AEM Assets
+title: Connect Adobe Commerce to AEM Assets for Asset Management
 description: Learn how to connect Adobe Commerce to Adobe Experience Manager Assets for centralized digital asset management across the storefront and search results.
 role: Admin, Developer
 feature: Integration
@@ -42,7 +42,7 @@ role_v2:
     internal-label: User
 ---
 
-# Asset Management with AEM Assets
+# Connect Adobe Commerce to AEM Assets for asset management
 
 AEM Assets can be connected to Adobe Commerce through different integration paths, depending on the Commerce product.
 

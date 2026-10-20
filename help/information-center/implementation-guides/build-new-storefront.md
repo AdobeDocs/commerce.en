@@ -53,8 +53,8 @@ Starting from the Adobe Commerce boilerplate gives you a working storefront that
 
 1. Follow the storefront documentation to set up your storefront:
 
-  - [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/)
-  - [Storefront developer guide](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to scope, set up, and launch a project.
+   - [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/)
+   - [Storefront developer guide](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) to scope, set up, and launch a project.
 
 1. Connect the storefront to your Commerce backend.
 

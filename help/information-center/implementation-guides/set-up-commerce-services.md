@@ -41,7 +41,7 @@ Adobe Commerce on Cloud and on-premises projects—including self-hosted project
 
 >[!NOTE]
 >
->Adobe Commerce Optimizer does not use the Commerce Services Connector or the [!DNL Live Searc], [!DNL Catalog Service], or [!DNL Product Recommendations] services—it provides equivalent catalog and merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
+>Adobe Commerce Optimizer does not use the Commerce Services Connector or the [!DNL Live Search], [!DNL Catalog Service], or [!DNL Product Recommendations] services—it provides equivalent catalog and merchandising capabilities natively. See [Enable Adobe Commerce Optimizer](enable-aco.md) instead.
 
 
 ## Where to start

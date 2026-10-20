@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Insights
 ---
 
-# Commerce Insights and Guidance
+# Commerce insights and guidance
 
 Adobe Commerce Product Management and Engineering share the guidance they'd give a peer: what works in production, what to watch for, and how to get more from your investment in Adobe Commerce.
 

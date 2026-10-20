@@ -20,5 +20,3 @@ autotag-review: '2026-10-20T01:21:06.381Z'
 # [!DNL Commerce Insights] {#insights}
 
 - [What you'll find here](overview.md)
-
-

@@ -69,7 +69,7 @@ Start by identifying which system owns cart, checkout, orders, and other transac
 
 | Your requirement | Recommended starting point | System that owns transactions | Merchandising and discovery |
 | --- | --- | --- | --- |
-| Adobe manages the Commerce platform as Software as a Service (SaaS). | [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) | Adobe Commerce as a Cloud Service Foundation | Use the Commerce services provisioned for Adobe Commerce as a Cloud Services. (If you are interested in adopting merchandising services with the composable catalog, see the note below this table.) |
+| Adobe manages the Commerce platform as Software as a Service (SaaS). | [Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md) | Adobe Commerce as a Cloud Service Foundation | Use the Commerce services provisioned for Adobe Commerce as a Cloud Services. (If you are interested in adopting merchandising services with the composable catalog, see the note below this table.) |
 | Need Adobe Commerce and want to retain control over your cloud or on-premises infrastructure. | [Adobe Commerce on Cloud or on premises](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) | Adobe Commerce Foundation | Use supported Commerce services as needed. |
 | On Adobe Commerce on Cloud or on premises and want to adopt Adobe Commerce Optimizer for discovery and merchandising. | Adobe Commerce with the [Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md) | Adobe Commerce remains the system of record for transactions. | The connector syncs catalog and pricing data to Adobe Commerce Optimizer which provides discovery and merchandising experiences. |
 | Have a third-party commerce backend and want Adobe Commerce Optimizer discovery and merchandising without replacing that backend. | Stand-alone [Adobe Commerce Optimizer](/help/optimizer/overview.md) | Your third-party commerce backend | Send catalog and price data to Adobe Commerce Optimizer. Integrate cart, checkout, and other transactional operations with the backend through API Mesh, App Builder, or a direct integration. |
@@ -80,6 +80,6 @@ Start by identifying which system owns cart, checkout, orders, and other transac
 
 ## Related guidance
 
-- [Platforms and services](platforms-and-services/overview.md)
+- [Platforms and services](platform-and-services.md)
 - [Architecture options](../architecture-options/overview.md)
 - [Get started](../get-started/get-started-by-role.md)

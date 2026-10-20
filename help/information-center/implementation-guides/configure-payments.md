@@ -47,16 +47,9 @@ role_v2:
 
 ## Where to start
 
-1. Review the [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) for supported payment methods and prerequisites.
-
-1. For instructions to configure Payment Services for your Adobe Commerce project, see [Onboarding Payment Services flow](/help/payment-services/guide-overview.md). If you haven't connected Adobe Commerce to Commerce services yet, see [Set up Commerce services](set-up-commerce-services.md) first.
-
-
-## Where to start
-
 1. Check product-version and country availability in [Payment Services compatibility](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility).
 
-1. Follow the [Onboarding Payment Services flow](/help/payment-services/get-started/onboard).
+1. Follow the [Onboarding Payment Services flow](/help/payment-services/onboard.md).
 
 1. If your Commerce on Cloud or on-premises instance is not connected to Commerce Services, follow [Set up Commerce services](set-up-commerce-services.md) first.
 

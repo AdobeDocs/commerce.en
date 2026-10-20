@@ -1,6 +1,6 @@
 ---
 title: Implementation Architecture Options
-description: Compare Adobe Commerce implementation architecture options, including Commerce Foundation, Adobe Commerce as a Cloud Service, Optimizer Connector, and stand-alone Optimizer.
+description: Compare Adobe Commerce architectures, including Commerce Foundation, Adobe Commerce as a Cloud Service, Optimizer Connector, and stand-alone Optimizer.
 role: Developer, Leader
 feature: Storefront, Integration
 recommendations: noCatalog

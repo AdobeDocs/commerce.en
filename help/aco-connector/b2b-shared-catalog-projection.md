@@ -1,6 +1,6 @@
 ---
 title: B2B Shared Catalog Projection
-description: Learn how B2B connector projects Adobe Commerce B2B shared catalogs into protected Commerce Optimizer catalog views, and how storefronts resolve and authorize buyer access.
+description: Learn how the B2B connector syncs Adobe Commerce shared catalogs to protected Commerce Optimizer catalog views and how storefronts authorize buyer access.
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate

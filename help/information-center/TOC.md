@@ -23,7 +23,7 @@ feature_v2:
 
 - [Overview](overview.md)
 - Explore Commerce platforms and services {#explore-platforms-and-services}
-  - [Platforms and Services](portfolio/platform-and-services.md)
+  - [Platforms and services](portfolio/platform-and-services.md)
   - [Choose a Commerce option](portfolio/choose-commerce-option.md)
   - [Storefronts](storefronts/overview.md)
   - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)

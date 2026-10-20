@@ -201,10 +201,7 @@ Integration services refer to features that connect your Commerce instance to ot
 
 >[!TAB Data tools]
 
-Data tools help you manage and optimize the flow of information between your Commerce instance and connected services. These tools ensure efficient data synchronization, monitor sync operations, and improve performance by offloading resource-intensive processes.
-
-
-Data tools help manage information flows between your Commerce instance and connected services, ensuring efficient data synchronization and improving performance by offloading resource-intensive processes. Their availability and behavior vary by service and deployment model. Consult each guide for synchronization, sync operations monitoring, and performance details.
+Data tools help you manage and optimize the flow of information between your Commerce instance and connected services. These tools ensure efficient data synchronization, monitor sync operations, and improve performance by offloading resource-intensive processes. Their availability and behavior vary by service and deployment model. Consult each guide for set up instructions,synchronization, sync operations monitoring, and performance details.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">

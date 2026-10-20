@@ -1,4 +1,6 @@
 ---
+title: About the Commerce Information Center
+description: Learn about the Commerce Information Center, a cross-product entry point for Adobe Commerce product guidance, implementation, and architecture recommendations.
 autotag-review: '2026-10-20T01:14:19.792Z'
 TQID: 'https://experienceleague.adobe.com/n-l7Usvd6remRBgFj2iasc6V9JrjNHwcEppgolCw174'
 product_v2:
@@ -49,7 +51,7 @@ The authoritative, in-depth documentation for each product continues to live in 
 
 </td>
 <td><strong>Developer resources</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Developer Home</a> - <a href="https://developer.adobe.com/commerce/extensibility/" target="_blank">Extensibility</a> - <a href="https://developer.adobe.com/commerce/extensibility/app-management/" target="_blank">App Management</a> - 
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Developer Home</a> - <a href="https://developer.adobe.com/commerce/extensibility/" target="_blank">Extensibility</a> - <a href="https://developer.adobe.com/commerce/extensibility/app-management/" target="_blank">App Management</a> -
 <a href="https://developer.adobe.com/commerce/webapi/graphql/" target="_blank">GraphQL</a> - <a href="https://developer.adobe.com/commerce/webapi/rest/" target="_blank">REST</a> - <a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/" target="_blank">API playground</a> - <a href="https://developer.adobe.com/commerce/services/" target="_blank">Merchandising Services</a>
 </td>
 </tr></table>

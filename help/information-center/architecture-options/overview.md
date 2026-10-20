@@ -59,9 +59,9 @@ Adobe Commerce architectures generally combine three layers: a commerce backend 
 
 | Section | Use it to |
 | ------- | --------- |
-| [Platforms and services](platforms-and-services/overview.md) | Understand what each Commerce product is—Adobe Commerce, Commerce Foundation, Adobe Commerce Optimizer, and Adobe Commerce as a Cloud Service. |
-| [Choose a Commerce option](../portfolio/platform-and-services.md#choosing-an-offering) | Answer a short set of questions to find the right starting platform. |
-| [Architecture options](../architecture-options/overview.md) | Compare all four supported architectures in detail, including system diagrams and reference links. |
+| [Platforms and services](../portfolio/platform-and-services.md) | Understand what each Commerce product is—Adobe Commerce, Commerce Foundation, Adobe Commerce Optimizer, and Adobe Commerce as a Cloud Service. |
+| [Choose a Commerce option](../portfolio/choose-commerce-option.md) | Compare Commerce options based on transaction ownership, deployment model, and merchandising needs. |
+| [Architecture options](../architecture-options/implementation-architectures.md) | Compare all four supported architectures in detail, including system diagrams and reference links. |
 | [Storefronts](../storefronts/overview.md) | Understand storefront options and how they connect to each architecture. |
 | [APIs](../apis/commerce-apis.md) | Compare the API families used across Commerce Foundation, Storefront Services, and Commerce Optimizer. |
 | [AEM Assets integration for Commerce](../aem-assets/aem-assets-integration.md) | Add centralized digital asset management to any Commerce or Optimizer architecture. |

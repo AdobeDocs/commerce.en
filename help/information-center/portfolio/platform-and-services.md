@@ -88,7 +88,7 @@ The services available with each offering vary. Review the documentation for the
 
 Adobe Commerce supports both B2C and B2B business models, including both models on a single Commerce instance. [Introduction to Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/introduction)
 
-B2B capabilities vary by offering. For Adobe Commerce on cloud infrastructure and on-premises, Adobe Commerce B2B is an extension that requires a separate license and installation. Adobe Commerce as a Cloud Service includes core B2B features, such as company management and quoting, out of the box. See [Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions).
+B2B capabilities vary by offering. For Adobe Commerce on cloud infrastructure and on-premises, Adobe Commerce B2B is an extension that requires a separate license and installation. Adobe Commerce as a Cloud Service includes core B2B features, such as company management and quoting by default. See [Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions).
 
 ### Adobe Commerce as a Cloud Service
 
@@ -126,7 +126,7 @@ See [Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/doc
 
 Adobe Commerce services for storefront and product experiences include:
 
-- **[Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/en/docs/commerce/storefront/overview)** — A storefront option for building customer-facing commerce experiences.
+- **[Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)** — A storefront option for building customer-facing commerce experiences.
 - **Catalog Service** — Supports optimized product catalog experiences and storefront performance.
 - **Live Search** — Provides AI-powered product search.
 - **Product Recommendations** — Provides recommendations based on shopper behavior, trends, and product similarity.
@@ -137,7 +137,7 @@ For details about the Live Search, Product Recommendations, and the Catalog Serv
 
 ### Payments
 
-**Payment Services** provides payment capabilities, including payment methods and views into payment processing, orders, and invoices. Availability depends on the Commerce product and deployment.
+**Payment Services** provides payment methods and views into payment processing, orders, and invoices. Availability depends on the Commerce product and deployment.
 
 See [Payment Services](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview).
 
@@ -157,9 +157,22 @@ Developer capabilities include **Adobe Developer App Builder**, **API Mesh**, **
 
 See [Adobe Commerce as a Cloud Service release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes).
 
+### Service availability
+
+Use this comparison to identify the service path for your Commerce product. Review the [Adobe Commerce SaaS vs. PaaS comparison](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) and each service guide for supported versions, licensing, and setup requirements.
+
+| Service or capability | Availability |
+| --- | --- |
+| [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce on cloud infrastructure or on premises, and Adobe Commerce as a Cloud Service |
+| [[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce on cloud infrastructure or on premises, and Adobe Commerce as a Cloud Service |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce on cloud infrastructure or on premises, and Adobe Commerce as a Cloud Service |
+| [Native discovery and merchandising](/help/optimizer/merchandising/overview.md) | Adobe Commerce Optimizer, either stand-alone or connected to Adobe Commerce through the Optimizer Connector. These capabilities replace the separate Catalog Service, Live Search, and Product Recommendations extensions. |
+| [[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce as a Cloud Service, supported versions of Adobe Commerce on cloud infrastructure or on premises, and Magento Open Source |
+
+>[!NOTE]
+>
+>On Adobe Commerce as a Cloud Service, Catalog Service, Live Search, and Product Recommendations are installed and configured automatically. On Adobe Commerce on cloud infrastructure or on-premises, install each extension before configuring it. For role- and platform-specific setup paths, see [Get started by role](../get-started/get-started-by-role.md).
+
 ## Decide which Commerce offering to use
 
-For a step-by-step comparison and decision path, see [Choose a Commerce option](choose-commerce-option.md).
-
-
-Service availability, packaging, and integration support differ across offerings. See [Adobe Commerce SaaS vs. PaaS comparison](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) and the relevant service documentation before selecting components.
+Compare deployment models, transaction ownership, and merchandising capabilities in [Choose a Commerce option](choose-commerce-option.md) to identify the architecture that fits your requirements.
