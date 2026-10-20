@@ -21,7 +21,7 @@ feature_v2:
 
 # Commerce Information Center {#information-center}
 
-- [Overview](overview.md)
+- [Commerce information center](overview.md)
 - Explore Commerce platforms and services {#explore-platforms-and-services}
   - [Platforms and services](portfolio/platform-and-services.md)
   - [Choose a Commerce option](portfolio/choose-commerce-option.md)
