@@ -4,7 +4,7 @@ description: Learn how to install the AEM Assets Integration for Adobe Commerce 
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
-TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
+TQID: 'https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -15,6 +15,10 @@ feature_v2:
     internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -60,6 +64,12 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
+By default, `composer require magento/aem-assets-integration` installs the latest available version. To pin an exact version instead (for example, to keep multiple environments on the same validated release), use an exact constraint such as `"magento/aem-assets-integration": "1.4.7"`; use `^1.4.7` only when a compatible 1.x range is intended.
+
+>[!NOTE]
+>
+>If you are upgrading from a version earlier than 1.4.6, Adobe recommends upgrading directly to 1.4.7 or later. Version 1.4.6 introduced custom image roles and the extension update checker. Version 1.4.7 fixes an issue where the `workspace.json` file used for [custom automatic matching](../synchronize/custom-match.md) did not persist correctly when Commerce Async Config Save is enabled. If you use a custom matcher with Async Config Save enabled, re-upload your `workspace.json` file after upgrading. See [Async Config Save](../synchronize/custom-match.md#async-config-save).
+
 >[!BEGINTABS]
 
 >[!TAB Cloud infrastructure]
@@ -78,10 +88,10 @@ Use this method to install the [!DNL AEM Assets Integration] extension on a Comm
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Add the AEM Assets Integration for Commerce extension.
+1. Add the AEM Assets Integration for Commerce extension. Omit the version constraint to install the latest available version, or pin a specific version as shown here.
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. Update package dependencies.
@@ -106,7 +116,7 @@ Use this method to install the [!DNL AEM Assets Integration] extension on a Comm
 
 Use this method to install the [!DNL AEM Assets Integration] extension for an on-premises instance.
 
-1. Use Composer to add the AEM Assets Integration for Commerce extension to your project:
+1. Use Composer to add the AEM Assets Integration for Commerce extension to your project. Omit the version constraint to install the latest available version, or pin a specific version, such as `"^1.4.7"`.
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update

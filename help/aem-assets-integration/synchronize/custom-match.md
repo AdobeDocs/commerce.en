@@ -3,13 +3,19 @@ title: Custom automatic matching
 description: Learn how custom automatic matching is particularly useful for merchants with complex matching logic or those relying on a third-party system that cannot populate metadata into AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+TQID: 'https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -118,6 +124,42 @@ You can download the `workspace.json` file from the [Adobe Developer Console](ht
 1. Select the appropriate runtime actions from the dropdown menus for each flow.
 
 1. Click **[!UICONTROL Save Config]**.
+
+## Async Config Save
+
+If your Commerce instance has the [Async Config Save](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) option enabled, configuration changes are queued and applied by an asynchronous consumer instead of being saved immediately in the same request. To upload a `workspace.json` file for custom automatic matching in this mode, complete the following steps in order:
+
+1. Confirm that Commerce Async Config Save is [enabled](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+
+1. From the Admin, go to **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
+
+1. Upload the current App Builder `workspace.json` file.
+
+1. Save the configuration.
+
+1. Wait for the asynchronous configuration consumer to finish processing the save.
+
+1. Verify the OAuth values and the dependent integration configuration.
+
+1. Verify that the external matcher registration reflects the update.
+
+>[!NOTE]
+>
+>If Async Config Save is disabled, the normal synchronous save behavior applies, and you do not need to wait for a queue consumer.
+
+### Troubleshoot Async Config Save
+
+| Symptom | What to do |
+| --- | --- |
+| OAuth values remain unchanged after saving | Confirm you are running AEM Assets Integration extension version 1.4.7 or later, upload a fresh `workspace.json` file, and wait for queue processing to finish before checking the values again. |
+| The save fails after an invalid upload | Validate that the file is a well-formed `workspace.json` file and contains the expected App Builder credentials. |
+| No file was uploaded | The existing stored configuration remains unchanged. |
+| The external matcher registration does not update | Check whether the queue consumer finished processing, review the Commerce logs, and confirm the external matcher registration status. |
+| Async Config Save is disabled | The normal synchronous save behavior applies; this troubleshooting section does not apply. |
+
+>[!NOTE]
+>
+>If you develop a configuration observer for the AEM Assets Integration, do not depend on raw HTTP request parameters. Async Config Save and other programmatic configuration saves can execute the observer without an Admin request context.
 
 ## Custom matcher API endpoints
 
@@ -290,7 +332,7 @@ The `asset_matches` parameter contains the following attributes:
 | Attribute | Data Type | Description |
 | --- | --- | --- |
 | `asset_id` | String | The asset ID. |
-| `asset_roles` | Array | Asset roles. Uses supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) like `thumbnail`, `image`, `small_image`, and `swatch_image`. |
+| `asset_roles` | Array | Asset roles. Uses the supported [Commerce asset roles](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles), such as `thumbnail`, `image`, `small_image`, and `swatch_image`. With AEM Assets Integration extension 1.4.6 and later, custom image roles (such as `hero` or `custom_role_1`) are also accepted. |
 | `asset_format` | String | The asset format. Possible values are `image` and `video`. |
 | `asset_position` | Number | The position of the asset in the product gallery. |
 

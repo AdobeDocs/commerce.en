@@ -14,6 +14,7 @@ nudge: true
 - Get started {#get-started}
   - [Configure the AEM Assets project](get-started/configure-aem.md)
   - [Install Adobe Commerce packages](get-started/configure-commerce.md)
+  - [Check for extension updates](get-started/check-for-updates.md)
   - [Configure the integration](get-started/setup-synchronization.md)
   - [Configure IMS user permissions](get-started/permissions.md)
   - [Configure Commerce Optimizer](get-started/configure-aco.md)

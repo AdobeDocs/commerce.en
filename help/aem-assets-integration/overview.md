@@ -3,7 +3,7 @@ title: AEM Assets Integration for Commerce
 description: Learn how to integrate Adobe Experience Manager Assets with your [!DNL Commerce] instance to create and manage the media files for your Commerce storefront.
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
-TQID: https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs
+TQID: 'https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,6 +14,12 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
     internal-label: Categories
@@ -47,6 +53,14 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 * **Dynamic Asset Updates** – Product images and marketing assets automatically reflect the latest changes in AEM Assets, keeping storefronts accurate and relevant.
 
 * **Streamlined Catalog Management** – Automates asset refresh and cleanup, minimizing manual effort and ensuring a consistent, well-maintained product catalog.
+
+* **Localized image alt text** – Merchandisers can author alt text for each Commerce store view. The integration synchronizes the value to Commerce's standard image **[!UICONTROL Label]** field.
+
+* **Custom image roles** – With AEM Assets Integration extension version 1.4.6 or later, custom image roles configured in AEM Assets are retained during synchronization, in addition to the four standard roles. See [Custom automatic matching](synchronize/custom-match.md).
+
+* **Extension update notifications** – With AEM Assets Integration extension version 1.4.6 or later, Commerce checks for new extension versions and notifies administrators in the Admin. See [Check for extension updates](get-started/check-for-updates.md).
+
+Alt-text localization does not change product-image assignment or gallery mapping. Store-view asset availability is a separate capability and is not covered by the alt-text workflow.
 
 ## Requirements to use the integration
 
@@ -111,6 +125,8 @@ Learn how to use Adobe Commerce as a Cloud Service with the AEM Assets integrati
 The process to install and configure the AEM Assets integration depends on your Adobe Commerce deployment. In all cases, you first configure AEM Assets, then connect Commerce to it.
 
 To understand the namespace, metadata schema, and **[!UICONTROL Commerce]** tab that the integration adds to your AEM Assets environment, review [Commerce metadata in AEM Assets](metadata.md) before you begin.
+
+For localized image alt text, see [Localized alt text in AEM Assets metadata](metadata.md#localized-alt-text-in-aem-assets-metadata). For setup and synchronization instructions, see [Configure the AEM Assets project](get-started/configure-aem.md) and [Configure the integration](get-started/setup-synchronization.md).
 
 Select your deployment to follow the required steps in order:
 

@@ -4,6 +4,23 @@ description: Review security and compliance requirements for your site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Security and Compliance
 
@@ -37,9 +54,9 @@ If you are a merchant within the EU or Britain where 3DS compliance is required,
 
 3DS is supported for both **[Credit Card Fields](configure-admin.md#credit-card-fields)** and **[[!DNL Google Pay]](configure-admin.md#google-pay)**. Each payment method has its own 3D Secure authentication setting in the Admin, which can be set to `Always`, `When required`, or `Off`.
 
-   >[!IMPORTANT]
-   >
-   >The 3DS requirement applies to transactions where the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and Britain. United States merchants do not require 3DS, but can enable it for their transactions if desired.
+>[!IMPORTANT]
+>
+>The 3DS requirement applies to transactions where the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and Britain. United States merchants do not require 3DS, but can enable it for their transactions if desired.
 
 Orders placed for the buyer by the merchant or store personnel are not configured with 3DS compliance measures. However, if the card issuer requires 3DS, this step cannot be bypassed, regardless of the [!UICONTROL Payment Services] configuration.
 

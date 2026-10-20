@@ -1,6 +1,6 @@
 ---
 title: Launch Checklist
-description: "Learn how to validate configuration, storefront, SEO, CDN, integrations, security, analytics, and testing for [!DNL Adobe Commerce Optimizer] production."
+description: Learn how to validate configuration, storefront, SEO, CDN, integrations, security, analytics, and testing for [!DNL Adobe Commerce Optimizer] production.
 autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
@@ -20,9 +20,15 @@ feature_v2:
     internal-label: Configuration
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -96,7 +102,7 @@ Complete these checks in your Cloud project.
 &#x25A2; The Commerce Optimizer connector is [installed and configured](../../aco-connector/get-started.md).
 &#x25A2; The `aco:conf:show` CLI command confirms connection to the production Commerce Optimizer instance. The organization ID, client ID, ingestion URL, and Commerce Optimizer URL match production.
 &#x25A2; Synchronization scopes in [Export configuration](../../aco-connector/get-started.md) match your requirements.
-&#x25A2; [Data feed sync status](../../aco-connector/data-sync-manage.md) confirms data export from the Cloud instance.
+&#x25A2; [Data feed sync status](../../aco-connector/data-sync-status.md) confirms data export from the Cloud instance.
 
 ### In Commerce Optimizer
 

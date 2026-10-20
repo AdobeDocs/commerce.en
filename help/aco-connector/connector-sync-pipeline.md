@@ -1,6 +1,6 @@
 ---
 title: Catalog Sync Pipeline
-description: "Learn how the [!DNL Adobe Commerce Optimizer Connector] sync pipeline works, including feed transformation, cron schedules, scope control, and error handling."
+description: Learn how the [!DNL Adobe Commerce Optimizer Connector] sync pipeline works, including feed transformation, cron schedules, scope control, and error handling.
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:21:52.214Z'
@@ -23,6 +23,8 @@ feature_v2:
     internal-label: Developer tools
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -101,7 +103,7 @@ For details on customizing the synchronization scope, see [Customize the Commerc
 | Transient failures | Retried every 5 minutes |
 | Full sync or large catalogs | Minutes to hours |
 
-Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./data-sync-manage.md#verify-that-the-data-sync-is-working).
+Monitor per-feed status from the [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) page in the Commerce Admin. See [Verify that the data sync is working](./data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Feed submission and error handling
 

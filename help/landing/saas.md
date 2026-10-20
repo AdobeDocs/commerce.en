@@ -5,7 +5,7 @@ feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
-TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
+TQID: 'https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -16,6 +16,10 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
     internal-label: Cloud architecture
@@ -112,7 +116,7 @@ If you cannot find Live Search configuration fields in the Admin, verify that yo
 
 Before deleting an API key, generate and securely store a replacement key. Update all integrations to use the new key, and confirm that dependent services are working as expected.
 
-If you don’t see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won’t be available in your Adobe Commerce environment.
+If you don't see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won't be available in your Adobe Commerce environment.
 
 On the API key to remove, click **[!UICONTROL Delete]**. When prompted,  confirm the operation to permanently remove the key.
 
@@ -159,9 +163,9 @@ To select or create a SaaS project, request the [!DNL Commerce] API keys from th
 
    If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
 
-  >[!WARNING]
-  >
-  > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
+   >[!WARNING]
+   >
+   > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
 
 To change the names of your SaaS project or data space, click **Rename** next to either one. Changing the name does not affect your service because the name is only a label to help you identify and differentiate between projects and data spaces.
 

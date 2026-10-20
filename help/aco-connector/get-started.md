@@ -1,9 +1,10 @@
 ---
-title: 'Get Started with the [!DNL Adobe Commerce Optimizer Connector]'
-description: "Learn how to install the [!DNL Adobe Commerce Optimizer Connector], configure scope export settings, enable IMS authentication, and verify catalog synchronization."
+title: Get Started with the [!DNL Adobe Commerce Optimizer Connector]
+description: Learn how to install the [!DNL Adobe Commerce Optimizer Connector], configure scope export settings, enable IMS authentication, and verify catalog synchronization.
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T16:55:50.934Z'
+last-update: 2026-10-01
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -21,6 +22,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e126554b-28f9-4290-b58c-10b888b88174
     internal-label: IMS integration
@@ -39,8 +42,6 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-
-last-update: 2026-09-11
 ---
 
 # Get started
@@ -48,6 +49,10 @@ last-update: 2026-09-11
 Install and configure the [!DNL Adobe Commerce Optimizer Connector] to sync your [!DNL Adobe Commerce] catalog data with [!DNL Adobe Commerce Optimizer], then monitor the data sync status to ensure your storefront is up to date.
 
 {{aco-integration-environment-alignment}}
+
+>[!NOTE]
+>
+>This topic covers the [!DNL Adobe Commerce Optimizer Connector]. If you use [!DNL Adobe Commerce] B2B shared catalogs, follow the [Get started with the [!DNL Adobe Commerce Optimizer Connector for B2B]](get-started-b2b-shared-catalogs.md) instructions. The B2B connector extends the base catalog data sync to support synchronization of custom shared catalogs.
 
 ## Requirements to use the integration {#requirements-to-use-the-integration}
 
@@ -69,20 +74,9 @@ The [!DNL Adobe Commerce] user configuring the integration must have:
 
 >[!BEGINSHADEBOX]
 
-## Remove conflicting extensions {#remove-conflicting-extensions}
+## Remove conflicting extensions
 
-If you have any of the following extensions installed, uninstall them before installing the [!DNL Adobe Commerce Optimizer Connector]:
-
-* [!DNL Adobe Commerce Live Search] (`magento/live-search`)
-* [!DNL Adobe Commerce Product Recommendations] (`magento/product-recommendations`)
-* [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
-* **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
-
-Data associated with these extensions is still available in the Commerce database. However, it is not exported to [!DNL Commerce Optimizer] when the connector is enabled. To implement the Adobe Commerce search and merchandising capabilities provided by these extensions after enabling the connector, configure them from the [[!DNL Commerce Optimizer] Admin UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
-
->[!IMPORTANT]
->
->Failure to remove these extensions before enabling the connector causes broken configuration screens, duplicate data in [!DNL Commerce Optimizer], and 401 or 403 authentication errors.
+{{$include /help/_includes/aco-connector/remove-conflicting-extensions.md}}
 
 >[!ENDSHADEBOX]
 
@@ -114,13 +108,7 @@ The [!DNL Adobe Commerce Optimizer Connector] is delivered as a Composer metapac
 
    After deployment completes, the [!DNL Commerce Optimizer] option is available from the Commerce Admin menu. Select **[!UICONTROL Commerce Optimizer]** to open your [!DNL Commerce Optimizer] instance directly from the Commerce Admin.
 
->[!NOTE]
->
->For detailed extension installation instructions, see the following guides:
->
->[Install extension on [!DNL Adobe Commerce] on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
->
->[Install extension on [!DNL Adobe Commerce] on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+{{install-extension-links}}
 
 ## Customize the Commerce scopes export configuration {#customize-the-commerce-scopes-export-configuration}
 
@@ -167,41 +155,16 @@ You enable the integration and initiate the data sync by running the `aco:config
 1. Saves all configuration (client secret encrypted) to `core_config_data`.
 1. Schedules the initial full sync by invalidating all [!DNL Commerce Optimizer] feed indexers.
 
->[!IMPORTANT]
->
->Data sync processing starts in the background as soon as you complete configuration. Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
 
-### Get required connection details
+{{aco-data-sync-processing-note}}
 
-From the [Adobe Developer Console](https://developer.adobe.com/console), create a new project enabled for the [!DNL Commerce Optimizer] Ingestion service and generate OAuth Server-to-Server credentials. For detailed instructions, see [Obtain IMS Credentials](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication#obtain-ims-credentials) in the *Merchandising Developer Guide for Adobe Commerce Optimizer*.
+## Get required connection details
 
-Save the following values from the credentials page:
-
-* **Organization ID** (`org_id`)
-* **Client ID** (`client_id`)
-* **Client Secret** (`client_secret`)
-
-![Obtain credential details from the Adobe Developer Console project page](./assets/developer-console-project-credentials.png){width="500" zoomable="yes"}
+{{$include /help/_includes/aco-connector/connection-details.md}}
 
 ### Get [!DNL Commerce Optimizer] instance details
 
-Get the _tenant ID_ from the _[!DNL Instance Id]_ field on the [!DNL Commerce Optimizer] instance [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances), or from the URL used to access the instance. For example, in `https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`.
-
-1. From the Commerce Admin, select **[!UICONTROL Adobe Commerce Optimizer]** to display the configuration page with instructions.
-
-   ![[!DNL Commerce Optimizer] configuration page](./assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
-
-1. From the command line, [use SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) to connect to the [!DNL Adobe Commerce] staging environment.
-
-1. To configure the integration, run the following [!DNL Adobe Commerce] CLI command, replacing the placeholder values with the values for your [!DNL Commerce Optimizer] project:
-
-   ```shell
-   bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_id=your-client-id --client_secret=your-secret
-   ```
-
-1. Verify the connection by returning to the Commerce Admin and selecting the [!UICONTROL Adobe Commerce Optimizer] option.
-
-   When you select the option, it opens the [!DNL Commerce Optimizer] UI in a new tab.
+{{$include /help/_includes/aco-connector/configure-connection.md}}
 
 ## Verify that the data sync is working {#verify-that-the-data-sync-is-working}
 
