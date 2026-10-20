@@ -4,6 +4,41 @@ description: Learn how to find the right starting point in the Adobe Commerce do
 role: Admin, Developer, Leader, User
 feature: Storefront, Configuration
 recommendations: noCatalog
+autotag-review: '2026-10-20T11:43:29.080Z'
+TQID: 'https://experienceleague.adobe.com/P-GWpL9blAHwmSyN-eFzjUlsOVqyDTxiuLavocyeEdQ'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 
 # Get started by role
@@ -66,7 +101,7 @@ Extend, customize, and integrate Adobe Commerce, and build storefronts.
 
 Review architecture recommendations and reference patterns that span multiple Commerce products.
 
-- [Architecture options](../architecture-options/implementation-architectures.md)
+- [Architecture options](../architecture-options/overview.md)
 
 ## For partners
 

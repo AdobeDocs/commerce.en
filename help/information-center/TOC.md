@@ -5,23 +5,35 @@ user-guide-description: A cross-product entry point for Adobe Commerce guidance,
 role: Admin, Developer, Leader, User
 feature: Storefront, Integration, Configuration
 recommendations: noDisplay
-nudge: true
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+feature_v2:
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
 ---
 
 # Commerce Information Center {#information-center}
 
 - [Overview](overview.md)
-- Explore Commerce products and services {#explore-platforms-and-services}
+- Explore Commerce platforms and services {#explore-platforms-and-services}
   - [Platforms and Services](portfolio/platform-and-services.md)
-  - [Storefronts](storefronts/storefronts.md)
+  - [Choose a Commerce option](portfolio/choose-commerce-option.md)
+  - [Storefronts](storefronts/overview.md)
   - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
-- [APIs](apis/commerce-apis.md)
+  - [APIs](apis/commerce-apis.md)
+- [Get started by role](get-started/get-started-by-role.md)
+- [Insights and guidance](guidance-insights/overview.md)
 - Architecture {#architecture}
+   - [Overview](architecture-options/overview.md)
    - [Implementation architectures](architecture-options/implementation-architectures.md)
    - [Reference architectures](architecture-options/reference-architectures.md)
-- [Get started by role](get-started/get-started-by-role.md)
-- Guidance and insights {#guidance-insights}
-   - [Overview](guidance-insights/overview.md)
 - Migration and adoption {#migration-adoption}
    - [Overview](migration-adoption/overview.md)
 - Implementation guides {#implementation-guides}
