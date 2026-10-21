@@ -127,14 +127,12 @@ See [Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/doc
 Adobe Commerce services for storefront and product experiences include:
 
 - **[Commerce Storefront powered by Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)**—A storefront option for building customer-facing commerce experiences.
-- **Storefront Services**—Cloud-delivered SaaS capabilities for Adobe Commerce—including [!DNL Adobe Commerce on cloud infrastructure] and [!DNL Adobe Commerce as a Cloud Service]—that power storefront APIs and services for optimized catalog access, AI-driven search and product recommendations, and payment processing, helping merchants improve shopping experiences, performance, and conversions
+- **[Storefront Services](/help/landing/home.md)**—Cloud-delivered SaaS capabilities for Adobe Commerce—including [!DNL Adobe Commerce on cloud infrastructure] and [!DNL Adobe Commerce as a Cloud Service]—that power storefront APIs and services for optimized catalog access, AI-driven search and product recommendations, and payment processing, helping merchants improve shopping experiences, performance, and conversions
   - Catalog Service—Supports optimized product catalog experiences and storefront performance.
   - Live Search—Provides AI-powered product search.
   - Product Recommendations—Provides recommendations based on shopper behavior, trends, and product similarity.
 - **[Commerce Optimizer merchandising services](/help/optimizer/overview.md)**—Cloud-delivered, API-first capabilities for Commerce on Cloud and Adobe Commerce as a Cloud Service that use catalog data and AI to improve product discovery—through optimized catalog access, relevant search results, and personalized product recommendations—helping shoppers find products and supporting better storefront performance and conversions.
   - **Product Visuals**—Supports product imagery and media through Adobe Experience Manager Assets integrations.
-
-For details about the Live Search, Product Recommendations, Catalog Service, Payment Services, and Product Visuals, see [Commerce Services Guides](/help/landing/home.md).
 
 ### Payments
 
@@ -156,11 +154,11 @@ Commerce includes services and tools for connecting platforms and synchronizing 
 
 Developer capabilities include **Adobe Developer App Builder**, **API Mesh**, **Events**, **Webhooks**, and the **Admin UI SDK**. These tools support custom applications, integrations, and extensions. Availability varies by Commerce offering.
 
-See [Adobe Commerce as a Cloud Service release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes).
+See the [Adobe Commerce Developer documentation](https://developer.adobe.com/commerce/docs/).
 
 ### Service availability
 
-Use this comparison to identify the service path for your Commerce product. Review the [Adobe Commerce SaaS vs. PaaS comparison](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) and each service guide for supported versions, licensing, and setup requirements.
+Use this comparison to identify the service path for your Commerce product. Review the [Adobe Commerce Feature comparison](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) and each service guide for supported versions, licensing, and setup requirements.
 
 | Service or capability | Availability |
 | --- | --- |
