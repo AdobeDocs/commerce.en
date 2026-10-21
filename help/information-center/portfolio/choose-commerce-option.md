@@ -65,11 +65,28 @@ topic_v2:
 
 Start by identifying which system owns cart, checkout, orders, and other transactions. Then, choose the merchandising path that fits that backend.
 
+## Questions to guide your decision
+
+Use the following questions to identify which options to evaluate. Consider your existing commerce backend, how much infrastructure responsibility you want to retain, and whether you need to improve product discovery and merchandising. Adobe Commerce Optimizer provides discovery and merchandising capabilities. It does not replace the backend that handles transactions.
+
+1. **Do you want Adobe to manage the Commerce platform as software as a service (SaaS)?**
+   - Yes: Evaluate Adobe Commerce as a Cloud Service.
+   - No: If you need Adobe Commerce and want to retain control over your cloud or on-premises infrastructure, evaluate Adobe Commerce on Cloud or on premises.
+1. **Do you need Adobe Commerce to handle cart, checkout, orders, and other transactions?**
+   - Yes: Evaluate Adobe Commerce on Cloud or on premises, or Adobe Commerce as a Cloud Service. These options use Commerce Foundation as the transactional backend.
+   - No: Retain your existing or third-party transactional backend. If you also need Adobe discovery and merchandising capabilities, evaluate stand-alone Adobe Commerce Optimizer.
+1. **Do you want to use Adobe Commerce Optimizer to improve product discovery and merchandising with your existing third-party commerce backend?**
+   - Yes: Evaluate stand-alone Adobe Commerce Optimizer while retaining your third-party backend for transactions.
+1. **Do you already operate Adobe Commerce on Cloud or on premises and want stronger discovery and merchandising?**
+   - Yes: Evaluate the Adobe Commerce Optimizer Connector to synchronize catalog and pricing data while Adobe Commerce continues to handle transactions.
+
+Use the comparison table below to match your answers to a starting point. For detailed system diagrams, see [Architecture options](../architecture-options/overview.md).
+
 ## Compare Commerce options
 
 | Your requirement | Recommended starting point | System that owns transactions | Merchandising and discovery |
 | --- | --- | --- | --- |
-| Adobe manages the Commerce platform as Software as a Service (SaaS). | [Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md) | Adobe Commerce as a Cloud Service Foundation | Use the Commerce services provisioned for Adobe Commerce as a Cloud Services. (If you are interested in adopting merchandising services with the composable catalog, see the note below this table.) |
+| Adobe manages the Commerce platform as SaaS. | [Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md) | Adobe Commerce as a Cloud Service Foundation | Use the Commerce services provisioned for Adobe Commerce as a Cloud Service. For Adobe Commerce Optimizer integration availability, see the note below this table. |
 | Need Adobe Commerce and want to retain control over your cloud or on-premises infrastructure. | [Adobe Commerce on Cloud or on premises](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) | Adobe Commerce Foundation | Use supported Commerce services as needed. |
 | On Adobe Commerce on Cloud or on premises and want to adopt Adobe Commerce Optimizer for discovery and merchandising. | Adobe Commerce with the [Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md) | Adobe Commerce remains the system of record for transactions. | The connector syncs catalog and pricing data to Adobe Commerce Optimizer which provides discovery and merchandising experiences. |
 | Have a third-party commerce backend and want Adobe Commerce Optimizer discovery and merchandising without replacing that backend. | Stand-alone [Adobe Commerce Optimizer](/help/optimizer/overview.md) | Your third-party commerce backend | Send catalog and price data to Adobe Commerce Optimizer. Integrate cart, checkout, and other transactional operations with the backend through API Mesh, App Builder, or a direct integration. |

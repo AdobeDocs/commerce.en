@@ -74,7 +74,7 @@ Setup differs by platform, and by whether your project uses [!DNL Adobe Commerce
 
 - **[!DNL Adobe Commerce as a Cloud Service]**—Commerce services are installed and configured automatically. See [Getting started with Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
 
-- **[!DNL Adobe Commerce Optimizer]**—A SaaS product that you set up independently of your Commerce backend. See [Get started with Adobe Commerce Optimizer](/help/optimizer/get-started.md).
+- **[!DNL Adobe Commerce Optimizer]**—A software as a service (SaaS) product that you set up independently of your Commerce backend. See [Get started with Adobe Commerce Optimizer](/help/optimizer/get-started.md).
 
 - **[!DNL Adobe Commerce Optimizer Connector] and [!DNL Adobe Commerce Optimizer Connector for B2B]**—Connects Adobe Commerce (on Cloud or on-premises) to Adobe Commerce Optimizer. See [Get started with Adobe Commerce Optimizer Connector](/help/aco-connector/get-started.md).
 
