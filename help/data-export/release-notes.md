@@ -57,6 +57,12 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.6.0 Release
+
+_October 21, 2026_
+
+![Fix](../assets/fix.svg) Create review summary attributes. <!--MDEE-1414-->
+
 ### 103.5.2 Release
 
 _October 19, 2026_
