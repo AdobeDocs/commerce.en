@@ -20,7 +20,7 @@ Copy this file into help/information-center/guidance-and-insights/<topic>/<slug>
 fill in the sections below, then add it to help/information-center/TOC.md
 under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/information-center/guidance-and-insights/README.md for what belongs in Insights and guidance.
+See help/information-center/guidance-and-insights/readme.md for what belongs in Insights and guidance.
 
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"

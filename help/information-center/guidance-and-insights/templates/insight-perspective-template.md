@@ -19,7 +19,7 @@ role_v2:
 Copy into help/information-center/guidance-and-insights/<topic>/<slug>.md, fill
 in the brackets, add it to help/information-center/TOC.md under "Insights
 and guidance", then delete this comment. See
-help/information-center/guidance-and-insights/README.md for what belongs in
+help/information-center/guidance-and-insights/readme.md for what belongs in
 Insights and guidance. Tag with the auto-tagger after authoring.
 
 Section headings below describe the kind of content expected, not required
