@@ -45,7 +45,15 @@ topic_v2:
 
 [!DNL Adobe Commerce as a Cloud Service] is an on-demand service that relies on a shared responsibility security and operational model. Adobe and customers share these responsibilities, with each party bearing distinct accountability for securing and operating the Adobe Commerce application.  
 
-[!DNL Adobe Commerce as a Cloud Service with Managed Operations] is a premium offering that adds a named Customer Success Engineer (CSE) and a 24/7 Managed Operations P1 support team on top of the standard shared responsibility model. Adobe still owns the platform, infrastructure, security, and core application, and you still own your customizations and integrations—but with Managed Operations, Adobe Managed Services is consulted on your integrations, App Builder apps, Edge Delivery Storefront, event management, platform updates, and shares responsibility for disaster recovery testing and for debugging and issue isolation. Your CSE guides you from onboarding through go-live and beyond, so you have an Adobe expert alongside you at every stage instead of operating on your own.
+[!DNL Adobe Commerce as a Cloud Service with Managed Operations] is a premium offering that adds a named Customer Success Engineer (CSE) and a 24/7 Managed Operations P1 support team in addition to the standard shared responsibility model. Adobe continues to own the platform, infrastructure, security, and core application, and you continue to own your customizations and integrations, but with Managed Operations, Adobe Managed Services is consulted on your:
+
+- Integrations
+- App Builder apps
+- Edge Delivery Storefront
+- Event management
+- Platform updates
+
+Adobe Managed Services also shares responsibility for disaster recovery testing, debugging and issue isolation. Your CSE guides you from onboarding through go-live and beyond, so you have an Adobe expert with you at every stage instead of operating on your own.
 
 >[!BEGINSHADEBOX]
 
