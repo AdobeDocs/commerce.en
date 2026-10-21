@@ -92,7 +92,7 @@ B2B capabilities vary by offering. For Adobe Commerce on cloud infrastructure an
 
 ### Adobe Commerce as a Cloud Service
 
-Adobe Commerce as a Cloud Service is a fully managed, cloud-native SaaS offering. Adobe manages the core Commerce application, infrastructure, and updates. Its components include the Commerce foundation, Commerce Storefront powered by Edge Delivery Services, merchandising services, Product Visuals, and developer tools.
+Adobe Commerce as a Cloud Service is a fully managed, cloud-native software as a service (SaaS) offering. Adobe manages the core Commerce application, infrastructure, and updates. Its components include the Commerce foundation, Commerce Storefront powered by Edge Delivery Services, merchandising services, Product Visuals, and developer tools.
 
 See [Adobe Commerce as a Cloud Service overview](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
 
@@ -144,7 +144,7 @@ See [Payment Services](https://experienceleague.adobe.com/en/docs/commerce/payme
 
 Commerce includes services and tools for connecting platforms and synchronizing data:
 
-- **[Commerce Services Connector](/help/landing/saas.md)**—Connects Adobe Commerce on cloud, on-premises, or Magento Open Source to supported Commerce Software as a Service (SaaS) services.
+- **[Commerce Services Connector](/help/landing/saas.md)**—Connects Adobe Commerce on cloud, on-premises, or Magento Open Source to supported Commerce SaaS services.
 - **[SaaS Data Export](/help/data-export/overview.md)**—Supports the movement and synchronization of Commerce data for connected services.
 - **[Data Connection](/help/data-connection/overview.md)**—Connects Commerce data to Adobe Experience Platform.
 - **[Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md)**—Synchronizes catalog and pricing data from supported Adobe Commerce deployments to Adobe Commerce Optimizer.
