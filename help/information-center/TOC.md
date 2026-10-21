@@ -17,6 +17,7 @@ product_v2:
 feature_v2:
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
     internal-label: Commerce ecosystem
+nudge: true
 ---
 
 # Commerce Information Center {#information-center}
