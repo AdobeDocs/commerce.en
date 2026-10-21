@@ -29,8 +29,12 @@ topic_v2:
 
 # Improve product discovery with Adobe Commerce Live Search
 
-**Sandra Gonzalez Mangana**<br/>
-Senior Product Manager
+<table style="table-layout:auto">
+<tr style="border: 0;">
+   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Sandra Gonzalez Mangana" src="../../assets/guidance-and-insights/live-search-author-avatar-sgonzalezmangana.png" width="96"></td>
+   <td valign="middle" style="vertical-align: middle;"><strong>Sandra Gonzalez Mangana</strong><br><em>Senior Product Manager</em></td>
+</tr>
+</table>
 
 *Help shoppers find the products they need with search performance insights and semantic search.*
 

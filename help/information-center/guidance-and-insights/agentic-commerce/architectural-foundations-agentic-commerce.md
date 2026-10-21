@@ -53,8 +53,12 @@ topic_v2:
 
 # Design a commerce platform for shoppers and AI agents
 
-**Surya Lamech**<br/>
-Principal Product Marketing Manager
+<table style="table-layout:auto">
+<tr style="border: 0;">
+   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"></td>
+   <td valign="middle" style="vertical-align: middle;"><strong>Surya Lamech</strong><br><em>Principal Product Marketing Manager</em></td>
+</tr>
+</table>
 
 ![Hero illustration of an agentic commerce platform where humans and AI agents interact with a single source of truth](../../assets/guidance-and-insights/agentic-commerce-hero.png "The architectural foundations of an agentic commerce platform")
 
