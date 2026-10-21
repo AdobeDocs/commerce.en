@@ -354,7 +354,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce/insights/overview">Commerce Insights</a> guide, a new home for strategic implementation and security guidance from Adobe Commerce Product Management and Engineering.</p>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a> guide, a new home for strategic implementation and security guidance from Adobe Commerce Product Management and Engineering.</p>
 </td>
       <td>
         New topic

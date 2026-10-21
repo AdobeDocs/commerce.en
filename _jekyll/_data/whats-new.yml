@@ -197,7 +197,7 @@ entries:
   labels:
   - major-update
   - release-notes
-- description: Added the [Commerce Insights](https://experienceleague.adobe.com/en/docs/commerce/insights/overview)
+- description: Added the [Commerce Insights](https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview)
     guide, a new home for strategic implementation and security guidance from Adobe
     Commerce Product Management and Engineering.
   versions: ''
