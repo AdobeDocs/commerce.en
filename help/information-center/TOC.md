@@ -30,7 +30,9 @@ feature_v2:
   - [APIs](apis/commerce-apis.md)
 - [Get started by role](get-started/get-started-by-role.md)
 - Insights and guidance {#insights-and-guidance}
-  - [Overview](guidance-insights/overview.md)
+  - [Overview](guidance-and-insights/overview.md)
+  - [Design a commerce platform for shoppers and AI agents](guidance-and-insights/agentic-commerce/architectural-foundations-agentic-commerce.md)
+  - [Improve product discovery with Adobe Commerce Live Search](guidance-and-insights/catalog-management/improve-product-discovery-live-search.md)
 - Architecture {#architecture}
    - [Overview](architecture-options/overview.md)
    - [Implementation architectures](architecture-options/implementation-architectures.md)

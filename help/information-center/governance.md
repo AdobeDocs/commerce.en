@@ -36,14 +36,14 @@ No approval is required beyond normal PR review.
 | --- | --- |
 | Explore Commerce platforms and services | `portfolio/`, `storefronts/`, `aem-assets/`, `apis/` |
 | Get started by role | `get-started/` |
-| Insights and guidance | `guidance-insights/` |
+| Insights and guidance | `guidance-and-insights/` |
 | Architecture | `architecture-options/` |
 | Migration and adoption | `migration-adoption/` |
 | Implementation guides | `implementation-guides/` |
 
 ### Insights and guidance articles
 
-1. Copy `whitepaper-template.md` or `security-guidance-template.md` from `templates/` into `guidance-insights/`. The templates are not published.
+1. Copy `whitepaper-template.md` or `security-guidance-template.md` from `guidance-and-insights/templates/` into `guidance-and-insights/`. The templates are not published. For the full authoring process, including the COMDOX intake ticket, see [README.md](guidance-and-insights/README.md).
 1. Delete the template's placeholder comments.
 1. Add a `TOC.md` entry under Insights and guidance when the content is ready to publish.
 

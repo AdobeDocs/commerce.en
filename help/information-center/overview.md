@@ -35,7 +35,7 @@ The authoritative, in-depth documentation for each product continues to live in 
 | [APIs](apis/commerce-apis.md) | Explore the API families used across Commerce Foundation, Storefront Services, and Commerce Optimizer. |
 | [Implementation guides](implementation-guides/overview.md) | Follow cross-product guidance for common implementation journeys, such as building a storefront or connecting Commerce services. |
 | [Architecture options](architecture-options/overview.md) | Compare the supported Commerce architectures and review reference patterns that span multiple Commerce products. |
-| [Insights and guidance](guidance-insights/overview.md) | Find strategic guidance, including white papers, security recommendations, and best practices, as they become available. |
+| [Insights and guidance](guidance-and-insights/overview.md) | Find strategic guidance, including white papers, security recommendations, and best practices, as they become available. |
 | [Migration and adoption](migration-adoption/overview.md) | Plan a move between architectures or a phased adoption of Adobe Commerce Optimizer. |
 
 >[!NOTE]

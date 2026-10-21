@@ -1,6 +1,6 @@
 ---
-title: Title Case, max 60 chars, no product name suffix
-description: 150-160 chars. Concept pages start with 'Learn about...'
+title: "Title Case, max 60 chars, no product name suffix"
+description: "150-160 chars. Concept pages start with 'Learn about...'"
 role: Admin, Developer, Leader
 recommendations: noCatalog
 product_v2:
@@ -16,10 +16,11 @@ role_v2:
 ---
 
 <!--
-Save this file at help/insights/security/<slug>.md,
-fill in the sections below, then add it to help/insights/TOC.md.
+Save this file at help/information-center/guidance-and-insights/security/<slug>.md,
+fill in the sections below, then add it to help/information-center/TOC.md
+under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/insights/README.md for what belongs in Commerce Insights.
+See help/information-center/guidance-and-insights/README.md for what belongs in Insights and guidance.
 Security-specific content should be reviewed by the security team before publishing.
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
@@ -45,7 +46,7 @@ noun-phrase style per ExL heading rules.
 
 ## Risks if not followed
 
-[What happens if this guidance isn't followed—be concrete, avoid vague fear-based language.]
+[What happens if this guidance is not followed—be concrete, avoid vague fear-based language.]
 
 ## Related guidance
 
