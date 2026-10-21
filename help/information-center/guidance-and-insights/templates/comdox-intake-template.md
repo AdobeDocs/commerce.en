@@ -21,15 +21,15 @@ ticket itself. Copy the section below into the ticket description, fill
 in the brackets, and delete this comment.
 -->
 
-# Commerce Insights article intake
+# Insights and guidance article intake
 
 Link to create ticket:
 
-Create a ticket in the COMDOX project corporate tracker. 
+Create a ticket in the COMDOX project corporate tracker.
 
 ## Header information
 
-Summary:  Add Commerce Insights article for ...
+Summary:  Add Insights and guidance article for ...
 
 Priority:
 
@@ -55,16 +55,16 @@ Description:
 
 **Temporary content?** No / Yes—if yes, expires [YYYY-MM-DD], reason: [e.g., tied to a deprecated feature, a time-limited migration window, a specific event or promotion]
 
-## Does this belong in Commerce Insights?
+## Does this belong in Insights and guidance?
 
-Commerce Insights is for strategic guidance and whitepapers covering security and implementation guidance based on real-world scenarios—not step-by-step instructions or reference documentation. Confirm this is **not** primarily:
+Insights and guidance is for strategic guidance and whitepapers covering security and implementation guidance based on real-world scenarios—not step-by-step instructions or reference documentation. Confirm this is **not** primarily:
 
 - [ ] Step-by-step configuration instructions
 - [ ] Tutorials
 - [ ] Reference material (API/CLI/config reference)
 - [ ] Troubleshooting steps
 
-If any box is checked, this belongs in the relevant product guide instead—link to it from Insights rather than duplicating it here.
+If any box is checked, this belongs in the relevant product guide instead—link to it from Insights and guidance rather than duplicating it here.
 
 ## Scope
 
