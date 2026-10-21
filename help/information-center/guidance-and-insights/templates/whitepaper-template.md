@@ -1,6 +1,6 @@
 ---
-title: Title Case, max 60 chars, no product name suffix
-description: 150-160 chars. Concept pages start with 'Learn about...'
+title: "Title Case, max 60 chars, no product name suffix"
+description: "150-160 chars. Concept pages start with 'Learn about...'"
 role: Admin, Developer, Leader
 recommendations: noCatalog
 product_v2:
@@ -16,10 +16,11 @@ role_v2:
 ---
 
 <!--
-Copy this file into help/insights/<section>/<slug>.md,
-fill in the sections below, then add it to help/insights/TOC.md.
+Copy this file into help/information-center/guidance-and-insights/<topic>/<slug>.md,
+fill in the sections below, then add it to help/information-center/TOC.md
+under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/insights/README.md for what belongs in Commerce Insights.
+See help/information-center/guidance-and-insights/readme.md for what belongs in Insights and guidance.
 
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
@@ -33,15 +34,15 @@ noun-phrase style per ExL heading rules.
 
 # [Sentence case heading, matches the topic of `title`]
 
-[One or two sentences framing the problem this white paper addresses and who it's for.]
+[One or two sentences framing the problem this white paper addresses and who it is for.]
 
 ## Summary
 
-[Short summary of the recommendation or finding—this should let a reader get the point without reading the full paper.]
+[Short summary of the recommendation or finding—this lets a reader understand the main point without reading the full paper.]
 
 ## Background
 
-[Context: why this topic matters now, what prompted this guidance, what's in scope and out of scope.]
+[Context: why this topic matters now, what prompted this guidance, what is in scope and out of scope.]
 
 ## Recommendation
 
@@ -49,4 +50,4 @@ noun-phrase style per ExL heading rules.
 
 ## Related guidance
 
-- [Link to related Architecture center or Implementation guides pages]
+- [Link to related Architecture options or Implementation guides pages]

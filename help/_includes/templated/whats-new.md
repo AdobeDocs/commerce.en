@@ -4,6 +4,80 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### October 16, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated Merchandising Rules documentation to rename the All product listings rule type to Default search rule in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview">Merchandising Rules Overview</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">Create and Manage Rules</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Release notes</a>, matching the renamed option in the Admin rule-type menu.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 14, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Corrected the documented default and range values for [!UICONTROL Intelligent Ranking Boost] in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Create and manage merchandising rules</a>: the default is <code>50</code> (previously documented as <code>5</code>) and the maximum range is <code>1000</code> (previously documented as <code>100</code>).</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### October 12, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added documentation for the new Out of stock exclusion filter for recommendation units in <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">Filters</a>, which excludes out-of-stock products from recommendations.</p>
+</td>
+      <td>
+        Feedback, major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Data Export log codes reference</a> from the latest <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 8, 2026
 
 <table style="table-layout:auto;">
@@ -280,7 +354,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce/insights/overview">Commerce Insights</a> guide, a new home for strategic implementation and security guidance from Adobe Commerce Product Management and Engineering.</p>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a> guide, a new home for strategic implementation and security guidance from Adobe Commerce Product Management and Engineering.</p>
 </td>
       <td>
         New topic
@@ -382,36 +456,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### August 12, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added Production <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">release notes</a> for Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Merchants can now self-service the onboarding of a different PayPal account at the website scope directly from the Commerce Admin. See <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account">Connect a different PayPal account for a website</a> for more information.</p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">commit</a></td>
     </tr>
   </tbody>
 </table>

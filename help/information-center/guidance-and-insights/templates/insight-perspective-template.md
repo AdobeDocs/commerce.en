@@ -16,21 +16,23 @@ role_v2:
 ---
 
 <!--
-Copy into help/insights/<section>/<slug>.md, fill in the brackets, add
-to TOC.md, then delete this comment. See help/insights/README.md for
-what belongs in Commerce Insights. Tag with the auto-tagger after authoring.
+Copy into help/information-center/guidance-and-insights/<topic>/<slug>.md, fill
+in the brackets, add it to help/information-center/TOC.md under "Insights
+and guidance", then delete this comment. See
+help/information-center/guidance-and-insights/readme.md for what belongs in
+Insights and guidance. Tag with the auto-tagger after authoring.
 
 Section headings below describe the kind of content expected, not required
-wording—rename them to fit your topic and voice (e.g., "What we're seeing"
-could become "The pattern I keep running into"). Keep sentence case and
-noun-phrase style per ExL heading rules.
+wording—rename them to fit your topic and voice (for example, "What we are
+seeing" could become "The pattern I keep running into"). Keep sentence case
+and noun-phrase style per ExL heading rules.
 -->
 
 # [Sentence case heading, matches `title`]
 
 [One or two sentences on what you observed and why it matters now.]
 
-## What we're seeing
+## What we are seeing
 
 [The observation or pattern—from real implementations, support trends, or engineering experience.]
 
@@ -40,4 +42,4 @@ noun-phrase style per ExL heading rules.
 
 ## Related guidance
 
-- [Link to related Architecture center, Implementation guides, or product documentation]
+- [Link to related Architecture options, Implementation guides, or product documentation]
