@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -70,5 +72,5 @@ Use the following table to estimate the number of records, requests, and sync ti
 >[!MORELIKETHIS]
 >
 > - [Connector modules and feed endpoints](connector-reference.md) - Review batch limits and supported feeds
-> - [Manage synchronization](../data-sync-manage.md) - Monitor sync status and trigger manual resyncs
+> - [Manage synchronization](../data-sync-status.md) - Monitor sync status and trigger manual resyncs
 > - [Connector sync pipeline](../connector-sync-pipeline.md) - Understand how cron schedules and automated sync work

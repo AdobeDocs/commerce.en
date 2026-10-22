@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Insights
+title: Insights and Guidance
 description: Learn about practical implementation, security, product and engineering perspectives, and strategic direction for Adobe Commerce
 TQID: 'https://experienceleague.adobe.com/nVpCq5GPWn9aifhkXUf6EpqUf6ia-8sgjc4gs-VToLY'
 product_v2:
@@ -21,6 +21,8 @@ role_v2:
     internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -30,11 +32,13 @@ topic_v2:
     internal-label: Insights
 ---
 
-# Commerce Insights
+# Insights and guidance
 
-Adobe Commerce Product Management and Engineering share the guidance they'd give a peer: what works in production, what to watch for, and how to get more from your investment in Adobe Commerce.
+Adobe Commerce Product Management and Engineering share the guidance they would give a peer: what works in production, what to watch for, and how to get more from your investment in Adobe Commerce.
 
-## What you'll find
+## What you will find {#what-youll-find}
+
+As articles are published, this section will include:
 
 - Implementation guidance for common Adobe Commerce use cases
 - Architectural and technical perspectives
@@ -43,10 +47,13 @@ Adobe Commerce Product Management and Engineering share the guidance they'd give
 - Updates on new capabilities
 - Lessons learned from Adobe Commerce experts
 
-## Who it's for
+## Who it is for {#who-its-for}
 
-Developers, architects, technical leaders, commerce strategists, and business teams working with Adobe Commerce—whether you're planning an implementation, solving a technical challenge, or optimizing what you already have.
+Developers, architects, technical leaders, commerce strategists, and business teams working with Adobe Commerce—whether you are planning an implementation, solving a technical challenge, or optimizing what you already have.
 
 ## Start exploring
 
-Browse the articles for expert perspectives, implementation strategies, and recommendations you can put to use right away.
+- [Design a commerce platform for shoppers and AI agents](agentic-commerce/architectural-foundations-agentic-commerce.md)—Learn how to serve people and AI agents from a single source of truth. The article covers a catalog built for machine reasoning, the Model Context Protocol (MCP) and open agentic commerce protocols, and the telemetry that shows how agents represent your brand.
+- [Improve product discovery with Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md)—Learn how to use search performance insights and semantic search to help shoppers find relevant products.
+
+Articles are added to this section as they are published. Check back for expert perspectives, implementation strategies, and recommendations you can put to use right away.

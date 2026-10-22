@@ -3,6 +3,19 @@ title: AEM Assets Integration release notes
 description: Review the release notes for information about all AEM Assets Integration releases.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # AEM Assets Integration release notes
 
@@ -32,17 +45,33 @@ _February 11, 2025_
 
 +++
 
+## v1.4.9
+
+_October 7, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue CCSAAS-5562 --> Fixed an intermittent issue where creating a category in the Admin displayed a `Deprecated Functionality` error because `null` was used as an array offset. Now, the **New Category** form loads without the deprecation notice, and categories can be created successfully.
+
+## v1.4.8
+
+_October 5, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1339 --> Fixed an issue where category images from AEM Assets were not exported to the catalog or returned in GraphQL responses when AEM Assets was the Visualization Owner. To export the image, reassign the AEM asset to the category after applying the fix.
+
 ## v1.4.7
 
 _September 18, 2026_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.5 and later releases.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1317 --> Fixed an issue where the `workspace.json` file uploaded for [custom automatic matching](synchronize/custom-match.md) did not persist correctly when Commerce Async Config Save is enabled. Previously, the Admin request queued only the upload metadata rather than the file contents, so by the time the asynchronous configuration consumer processed the save, the temporary upload file could no longer be read. As a result, the configuration appeared to save successfully while the App Builder OAuth values remained unchanged. Uploaded App Builder credentials now survive the queue boundary and are processed correctly by the asynchronous consumer.
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1317 --> Fixed an issue where saving the **[!UICONTROL AEM Assets Integration]** configuration, including its `workspace.json` upload, with the `Commerce Async Config Save` (introduced in Adobe Commerce 2.4.7) enabled, failed to register or update the tenant with ARES. The configuration appeared to save successfully, but the App Builder OAuth values remained unchanged. Uploaded credentials are now processed correctly by the asynchronous consumer.
 
 >[!IMPORTANT]
 >
->If you use a custom matcher with the Async Config Save option enabled, re-upload your `workspace.json` file after you upgrade to this version. For upload instructions, see [Async Config Save](synchronize/custom-match.md#async-config-save).
+>If you use a custom matcher with Async Config Save enabled, re-upload your `workspace.json` file after upgrading. For instructions, see [Async Config Save](synchronize/custom-match.md#async-config-save).
 
 ## v1.4.6
 

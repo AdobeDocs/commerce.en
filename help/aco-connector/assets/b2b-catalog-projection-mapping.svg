@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 590" role="img" aria-labelledby="title desc">
+  <title id="title">B2B shared catalog projection mapping</title>
+  <desc id="desc">Adobe Commerce supplies localized product data by enabled store view, website and customer-group pricing, custom shared catalog assortment, and company assignments. The B2B connector projects each custom shared catalog and enabled store view combination into a protected private catalog view in Adobe Commerce Optimizer. Views can use different localized catalog sources and reuse the applicable policy and price book. The default public shared catalog is not projected.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1473e6" />
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #292929; }
+      .title { font-size: 23px; font-weight: 700; }
+      .heading { font-size: 17px; font-weight: 700; }
+      .label { font-size: 14px; font-weight: 700; }
+      .body { font-size: 13px; }
+      .small { font-size: 12px; fill: #505050; }
+      .source { fill: #e5f4ed; stroke: #268e6c; stroke-width: 1.5; }
+      .connector { fill: #fff4e5; stroke: #d77700; stroke-width: 1.5; }
+      .target { fill: #efedfc; stroke: #6d63c7; stroke-width: 1.5; }
+      .view { fill: #ffffff; stroke: #8a80d6; stroke-width: 1.2; }
+      .line { fill: none; stroke: #1473e6; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1000" height="590" fill="#ffffff" />
+  <text class="title" x="30" y="40">B2B shared catalog projection</text>
+  <text class="small" x="30" y="64">The B2B connector extends the base catalog and pricing feeds with a one-way projection of shared catalog configuration.</text>
+
+  <rect class="source" x="30" y="92" width="330" height="348" rx="12" />
+  <text class="heading" x="52" y="124">Adobe Commerce</text>
+  <text class="small" x="52" y="146">System of record</text>
+
+  <rect x="52" y="166" width="286" height="54" rx="8" fill="#ffffff" stroke="#a9cfc0" />
+  <text class="label" x="68" y="190">Enabled store view</text>
+  <text class="small" x="68" y="209">Localized product data</text>
+
+  <rect x="52" y="232" width="286" height="54" rx="8" fill="#ffffff" stroke="#a9cfc0" />
+  <text class="label" x="68" y="256">Website + customer group</text>
+  <text class="small" x="68" y="275">Pricing context</text>
+
+  <rect x="52" y="298" width="286" height="54" rx="8" fill="#ffffff" stroke="#a9cfc0" />
+  <text class="label" x="68" y="322">Custom shared catalog</text>
+  <text class="small" x="68" y="341">Product assortment</text>
+
+  <rect x="52" y="364" width="286" height="54" rx="8" fill="#ffffff" stroke="#a9cfc0" />
+  <text class="label" x="68" y="388">Company assignments</text>
+  <text class="small" x="68" y="407">Determine the buyer's catalog context</text>
+
+  <rect class="connector" x="410" y="214" width="180" height="122" rx="12" />
+  <text class="heading" x="500" y="250" text-anchor="middle">B2B connector</text>
+  <text class="small" x="500" y="276" text-anchor="middle">Sync feeds and project</text>
+  <text class="small" x="500" y="296" text-anchor="middle">B2B configuration</text>
+  <path class="line" d="M 362 274 L 402 274" />
+  <path class="line" d="M 592 274 L 632 274" />
+
+  <rect class="target" x="640" y="92" width="330" height="348" rx="12" />
+  <text class="heading" x="662" y="124">Adobe Commerce Optimizer</text>
+  <text class="small" x="662" y="146">Projected catalog experiences</text>
+
+  <rect class="view" x="662" y="166" width="286" height="104" rx="8" />
+  <text class="label" x="678" y="190">Private catalog view — Store View A</text>
+  <text class="small" x="678" y="214">Catalog Source A · Shared Catalog Policy</text>
+  <text class="small" x="678" y="238">One applicable price book · Protected</text>
+
+  <rect class="view" x="662" y="284" width="286" height="104" rx="8" />
+  <text class="label" x="678" y="308">Private catalog view — Store View B</text>
+  <text class="small" x="678" y="332">Catalog Source B · Shared Catalog Policy</text>
+  <text class="small" x="678" y="356">Same price book if pricing context matches</text>
+
+  <text class="small" x="500" y="374" text-anchor="middle">One view per custom</text>
+  <text class="small" x="500" y="392" text-anchor="middle">shared catalog +</text>
+  <text class="small" x="500" y="410" text-anchor="middle">enabled store view</text>
+
+  <rect x="30" y="464" width="940" height="88" rx="10" fill="#f7f7f7" stroke="#b8b8b8" />
+  <text class="label" x="52" y="493">Projection notes</text>
+  <text class="body" x="52" y="518">A private catalog view can reference only one price book. Views can reuse a policy and price book across localized sources.</text>
+  <text class="small" x="52" y="540">The default public shared catalog is not projected as a B2B private catalog view.</text>
+</svg>

@@ -16,6 +16,8 @@ feature_v2:
     internal-label: Commerce ecosystem
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 subfeature_v2:
   - id: dad884f1-e840-49a1-970e-2f965bdbc410
     internal-label: Extensions
@@ -46,6 +48,25 @@ These release notes describe all releases for the [!DNL Adobe Commerce Optimizer
 ![Known issue](../assets/bug.svg) Known issues
 
 ## 2026 Releases
+
+### 1.2.1 Release
+
+_October 19, 2026_
+
+![Fix](../assets/fix.svg) **Preserved category synchronization behavior**–The Adobe Commerce Optimizer Connector retains URL path and store view code as category feed identifiers, maintaining correct synchronization. When categories move within a category tree, new paths are synchronized, and previous paths are removed.<!--MDEE-1473-->
+
+### 1.2.0 Release
+
+_October 13, 2026_
+
+![Fix](../assets/fix.svg) Enable stores feed for Payment service. <!--MDEE-1459-->
+![Fix](../assets/fix.svg) Product videos now sync to [!DNL Adobe Commerce Optimizer], preserving their configured sort order. <!--DATA-7320-->
+
+### 1.1.1 Release
+
+_September 30, 2026_
+
+![Fix](../assets/fix.svg) Product image order is preserved in commerce experiences—The [!DNL Adobe Commerce Optimizer Connector] now syncs each product image's sort order to Adobe Commerce Optimizer, so product images display in the intended sequence.<!--MDEE-1468-->
 
 ### 1.1.0 Release
 
