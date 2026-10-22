@@ -226,9 +226,7 @@ Use the following steps to add an attribute inclusion or exclusion rule to a rec
 >
 >For any attributes that you want to be filterable, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `filterable` parameter:
 >
->```json
 >{"filterable": true}
->```
 >
 >The attribute becomes available in the **Attributes** menu the next time the catalog is synchronized with [!DNL Adobe Commerce Optimizer].
 
