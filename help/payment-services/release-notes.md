@@ -128,9 +128,29 @@ _June 28, 2021_
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
 
 
+## v2.17.0
+
+_October 22, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
+![New](../assets/new.svg)<!-- PAY-6722 --> Now, merchants can configure an optional review page for PayPal Express checkout so shoppers can review final total quantities and applicable terms and conditions before placing an order. See [PayPal Express review page](payments-options.md#paypal-express-review-page) for more information.
+
+![New](../assets/new.svg)<!-- PAY-6668 --> Eligible merchants with a PayPal overcapture agreement can now capture more than the originally authorized amount when invoicing an order, within PayPal's approved limit. See [Overcapture](over-capture.md) for requirements and configuration.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-7062 --> Fixed an issue where the [!DNL Google Pay] **[!UICONTROL Button Type]** setting did not change the button label when displaying the Google Pay button on the checkout page.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-7063 --> Fixed an issue that prevented shoppers from completing PayPal, Pay Later, or Venmo express checkout after closing and reopening the payment window.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6952 --> Fixed a shipping-tax amount mismatch that could prevent PayPal express checkout from completing when shoppers selected a paid shipping option.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6939 --> Added support for [3D Secure authentication challenges](security.md#3ds) when shoppers pay with a saved credit card.
+
 ## v2.16.1
 
 _August 10, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
 
 ![Fixed issue](../assets/fix.svg)<!-- PAY-6769 --> Corrected an intermittent issue on EDS storefronts that use PayPal smart buttons and that caused some payment methods to be unavailable on the checkout page.
 
@@ -138,13 +158,15 @@ _August 10, 2026_
 
 _July 27, 2026_
 
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
 ![New issue](../assets/new.svg)<!-- Issue PAY-6510 --> Merchants can now self-service the onboarding of a different PayPal account at the website scope directly from the [!DNL Commerce Admin]. [!DNL Payment Services] Home now includes a **[!UICONTROL Connect a different PayPal account for a website]** button that redirects to the Admin configuration page for payment methods. See [Connect a different PayPal account for a website](connect-website-account.md) for more information.
 
 ## v2.15.0
 
 _June 15, 2026_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
 
 ![New](../assets/new.svg)<!-- PAY-6564 --> Now, [!DNL Google Pay] express checkout can show shipping methods in the Google Pay sheet using client-side shipping callbacks, so shoppers select shipping before they confirm payment. Merchants can show or hide a separate Google Pay review step using **[!UICONTROL Skip Review]** in [Google Pay configuration](configure-admin.md#google-pay). When the review step is skipped, shipping options stay in the sheet when the wallet address or shipping method changes.
 
@@ -740,4 +762,3 @@ _November 29, 2021_
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [may not synchronize immediately](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2475 --> Your [PayPal sandbox account](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836) for [!DNL Payment Services] cannot be verified  if you create that account during onboarding.
-
