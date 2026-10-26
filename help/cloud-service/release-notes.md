@@ -70,13 +70,16 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
+
 ## Admin UI changes
 
-The [!DNL Adobe Commerce as a Cloud Service] Admin now uses the Adobe Unified Shell by default. This allows you to easily move between instances, products, and organizations.
+The [!DNL Adobe Commerce as a Cloud Service] Admin now uses the Adobe Unified Shell by default, making it easier to move between instances, products, and organizations. The new Commerce Admin experience includes a left navigation that lets you expand or collapse sections or type to find a menu item.
 
-When you open the Admin from the new UI, the new Admin experience has a left-navigation that lets you expand or collapse sections or type to find a menu item.
+Both the new Commerce Admin experience and the classic UI are supported during the transition, so you can continue using familiar workflows while adapting to the new experience.
 
-To return to the classic UI, open the instance details panel and select **Admin URL (Classic UI)**. Since the new UI has its own URL, existing admin URLs and bookmarks will continue to open in the classic UI.
+To return to the classic UI, open the instance details panel in Commerce Cloud Manager and select Admin URL (Classic UI). Existing Admin URLs and bookmarks continue to open the classic UI.
+
+For details about accessing and navigating the new experience or returning to the classic UI, see [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) in the _Commerce Admin Guide_.
 
 ## October 2026 - release #3 {#latest}
 
