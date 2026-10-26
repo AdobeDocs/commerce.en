@@ -76,7 +76,7 @@ The [!DNL Adobe Commerce as a Cloud Service] Admin now uses the Adobe Unified Sh
 
 When you open the Admin from the new UI, the new Admin experience has a left-navigation that lets you expand or collapse sections or type to find a menu item.
 
-To return to the classic UI, open the instance details panel and select **Admin URL (Classic UI)**. Since the new UI has its own URL, existing admin URLs and bookmarks will continue to open the classic UI.
+To return to the classic UI, open the instance details panel and select **Admin URL (Classic UI)**. Since the new UI has its own URL, existing admin URLs and bookmarks will continue to open in the classic UI.
 
 ## October 2026 - release #3 {#latest}
 
