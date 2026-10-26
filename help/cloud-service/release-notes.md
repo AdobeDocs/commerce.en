@@ -70,10 +70,6 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-
-## Admin UI changes
-
-
 ## Admin UI changes
 
 The [!DNL Adobe Commerce as a Cloud Service] Admin now works like the other Adobe products you already use, with the same top navigation, product switcher, and organization switcher. Sign in once to move seamlessly between products and Commerce instances, without separate logins for Commerce Cloud Manager and each instance. An instance switcher and searchable Commerce navigation help you get where you need to go faster.
