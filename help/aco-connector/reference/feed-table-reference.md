@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Integrations
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
     internal-label: Developer tools
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

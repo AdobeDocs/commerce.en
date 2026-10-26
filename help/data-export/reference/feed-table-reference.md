@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Storefront
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
     internal-label: Developer tools
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

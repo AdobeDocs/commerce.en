@@ -5,6 +5,28 @@ role: Admin, User
 level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Payment Options
 
@@ -141,6 +163,17 @@ Customers can check out with ease and confidence using the PayPal button.
 
 The [!DNL PayPal] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
+#### PayPal Express review page
+
+In [!DNL Payment Services] 2.17.0 or later, merchants can configure an optional merchant review page for PayPal Express checkout. This page is separate from the PayPal payment modal and lets shoppers review the final order total and applicable terms and conditions before placing an order.
+
+Use **[!UICONTROL Skip Review]** in [PayPal payment buttons configuration](configure-admin.md#paypal-payment-buttons) to control this step:
+
+* `No`---The shopper returns to the merchant review page after completing the PayPal payment modal and confirms the order before it is placed.
+* `Yes`---The merchant review page is skipped.
+
+The review-page setting does not replace the merchant's responsibility to meet applicable regulatory requirements. The existing [Google Pay review-page setting](configure-admin.md#google-pay) is configured separately.
+
 #### [!DNL Venmo] button
 
 Customers can check out using the [Venmo](https://venmo.com/) button.
@@ -175,7 +208,7 @@ Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [S
 
 PayPal, Pay Later, and Venmo payment methods use a [server-side shipping callback](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) that enables PayPal to communicate directly with your Commerce instance to retrieve shipping options and calculate totals in real time.
 
-This server-side approach allows [!DNL Payment Services] to skip the order confirmation pop-up, providing a faster, streamlined purchase experience. Because shipping costs and taxes are calculated dynamically through callbacks, the buyer sees accurate totals directly in the PayPal or Venmo review page.
+Because shipping costs and taxes are calculated dynamically through callbacks, the shopper sees updated shipping options and totals directly in the PayPal or Venmo payment modal. For PayPal Express checkout, the optional [merchant review page](#paypal-express-review-page) is a separate step after the PayPal payment modal, controlled by **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -257,7 +290,7 @@ With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have mu
 
 ### Order recalculation
 
-When a customer enters the checkout flow from the mini-cart, shopping cart, or product page, they are directed to an order review page where they can see the selected shipping address in a PayPal popup window. After the customer selects the shipping method, the order amount is recalculated appropriately and the customer can see shipping costs and taxes.
+When a customer enters the PayPal checkout flow from the mini-cart, shopping cart, or product page, they can review the selected shipping address in the PayPal payment modal. After the customer selects the shipping method, the order amount is recalculated and the customer can see shipping costs and taxes. For PayPal Express checkout, the optional [merchant review page](#paypal-express-review-page) lets the customer review the final total and applicable terms and conditions before placing the order.
 
 When a customer enters the checkout flow from the checkout page, the system is already aware of the shipping address and final calculated amount, and totals are appropriately represented.
 

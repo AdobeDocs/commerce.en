@@ -15,9 +15,15 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
     internal-label: Build system
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -66,7 +72,7 @@ This command updates the tools to the latest version.
    * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [OpenAI Codex](https://openai.com/index/introducing-codex/)
    * [Cline](https://cline.bot)
-   
+
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
@@ -80,7 +86,7 @@ This command updates the tools to the latest version.
    ```
 
 1. Install the following plugins:
-   
+
    * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
    * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
    * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)

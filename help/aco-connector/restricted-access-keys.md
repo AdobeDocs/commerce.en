@@ -1,6 +1,6 @@
 ---
 title: Manage Restricted Access Keys for B2B Shared Catalogs
-description: "Learn how to manage the restricted access keys the Adobe Commerce Optimizer Connector uses to secure B2B shared catalog projections."
+description: Learn how to manage the restricted access keys the Adobe Commerce Optimizer Connector uses to secure B2B shared catalog projections.
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer

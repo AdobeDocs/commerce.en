@@ -1,6 +1,6 @@
 ---
 title: B2B Shared Catalog Projection
-description: Learn how B2B connector projects Adobe Commerce B2B shared catalogs into protected Commerce Optimizer catalog views, and how storefronts resolve and authorize buyer access.
+description: Learn how the B2B connector syncs Adobe Commerce shared catalogs to protected Commerce Optimizer catalog views and how storefronts authorize buyer access.
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate
@@ -34,6 +34,14 @@ subfeature_v2:
     internal-label: Logs
   - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
     internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
@@ -52,7 +60,7 @@ The [!DNL Adobe Commerce Optimizer Connector for B2B] projects each custom share
 
 The B2B projection combines synchronized catalog content and pricing with Shared Catalog assortment and company assignment context.
 
-![Diagram mapping [!DNL Adobe Commerce] store views, pricing, shared catalogs, and company assignments to projected private catalog views in [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}
+![Diagram mapping [!DNL Adobe Commerce] store views, pricing, shared catalogs, and company assignments to projected private catalog views in [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}
 
 | [!DNL Adobe Commerce] data | [!DNL Adobe Commerce Optimizer] result | Purpose |
 | --- | --- | --- |

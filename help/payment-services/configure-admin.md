@@ -1,10 +1,32 @@
 ---
-title: "[!DNL Payment Services] Configuration"
+title: '[!DNL Payment Services] Configuration'
 description: After installation, you can configure [!DNL Payment Services] in the Admin at the store configuration.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # [!DNL Payment Services] Configuration
 
@@ -33,6 +55,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 
 1. Your **[!UICONTROL PayPal Merchant ID]** and **[!UICONTROL PayPal Merchant Status]** values are automatically provided by PayPal once you visit the [!DNL Payment Services] dashboard for the first time.
 1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs), add your custom text (up to 22 characters) in the text field, replacing `Soft descriptor` or the existing value.
+1. For eligible merchants using [!DNL Payment Services] 2.17.0 or later, set **[!UICONTROL Over Capture Enabled]** to `Yes` to enable [overcapture](over-capture.md). A PayPal overcapture agreement is required, and the payment method's **[!UICONTROL Payment Action]** must be set to `Authorize`.
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -41,6 +64,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Enable] | website | Enable or disable [!DNL Payment Services] for your website. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | website | Enable or disable [overcapture](over-capture.md) for eligible merchants with a PayPal overcapture agreement. Requires [!DNL Payment Services] 2.17.0 or later and a payment action of `Authorize`. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Default: `[!UICONTROL No]`. |
 | [!UICONTROL Method] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
 | [!UICONTROL Payment Services Production ID] | store view | Your production merchant ID, which is auto-generated during production (live) onboarding. |
@@ -278,12 +302,15 @@ Configure [!DNL PayPal payment buttons]
 
 You can enable and configure the PayPal payment buttons payment options within the Admin:
 
+In [!DNL Payment Services] 2.17.0 or later, **[!UICONTROL Skip Review]** controls whether PayPal Express checkout includes a merchant review page after the shopper leaves the PayPal payment modal. This review page is separate from the PayPal payment modal. See [PayPal Express review page](payments-options.md#paypal-express-review-page) for more information.
+
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
 1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL PayPal payment buttons]_ section.
 1. To change the name of the payment method as shown during checkout, edit the _[!UICONTROL Title]_ field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
+1. For PayPal Express checkout, set **[!UICONTROL Skip Review]** to `No` to show the merchant review page before the shopper places the order, or `Yes` to skip it.
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable/disable the [Pay Later messaging](payments-options.md#pay-later-button), select `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
 
@@ -308,6 +335,7 @@ You can enable and configure the PayPal payment buttons payment options within t
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | store view | In [!DNL Payment Services] 2.17.0 or later, control the merchant review page for PayPal Express checkout. Set to `[!UICONTROL No]` to show the page after the PayPal payment modal, or `[!UICONTROL Yes]` to skip it. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Default: `[!UICONTROL Yes]`. |
 | [!UICONTROL Display Pay Later Message] | website | Enable or disable the PayPal Pay Later messaging in the shopping cart, product page, mini cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | store view | Modify the PayPal Pay Later Messaging styles. Options: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal payment buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |

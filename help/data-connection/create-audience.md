@@ -4,13 +4,17 @@ description: Learn how to use [!DNL Commerce] event data to create an audience i
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 0e9d286b-c459-44db-bbf8-2cb46e21739d
-TQID: https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0
+TQID: 'https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
     internal-label: Storefront
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
