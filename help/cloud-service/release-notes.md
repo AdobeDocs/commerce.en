@@ -74,7 +74,7 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 
 The [!DNL Adobe Commerce as a Cloud Service] Admin now works like the other Adobe products you already use, with the same top navigation, product switcher, and organization switcher. Sign in once to move seamlessly between products and Commerce instances, without separate logins for Commerce Cloud Manager and each instance. An instance switcher and searchable Commerce navigation help you get where you need to go faster.
 
-Each Admin experience has its own URL. Instance links in Commerce Cloud Manager open the new Commerce Admin experience by default, using **[!UICONTROL Admin URL (Unified Shell UI)]**. The classic UI remains supported during the transition, so you can keep using familiar workflows while you adapt to the new experience. To use the classic UI, open the instance details panel and select **[!UICONTROL Admin URL (Classic UI)]**. Existing Admin URLs and bookmarks continue to open the classic UI.
+Each Admin experience has its own URL. Instance links in Commerce Cloud Manager open the new Commerce Admin experience by default, using **[!UICONTROL Admin URL (Unified Shell UI)]**. The Classic UI remains supported, so you can keep using familiar workflows while you adapt to the new experience. To use the Classic UI, open the instance details panel and select **[!UICONTROL Admin URL (Classic UI)]**. Existing Admin URLs and bookmarks continue to open the Classic UI.
 
 Learn more in [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience).
 
