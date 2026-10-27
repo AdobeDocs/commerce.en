@@ -63,7 +63,6 @@ Adobe Commerce Optimizer can power product discovery and merchandising for a sto
 
 For Salesforce Commerce Cloud (SFCC), the [Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit) provides example Edge Delivery Services blocks and scripts for connecting an Adobe Commerce Optimizer storefront to SFCC shopper, cart, and checkout functionality. Use it as a reference implementation and adapt it to your storefront; it is not a generic, out-of-the-box connector. A [headless storefront example for Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"} is also available.
 
-The [Commerce Checkout Starter Kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/) is a separate App Builder starter kit for Adobe Commerce checkout extensions. It is not the ACO-to-SFCC storefront integration example.
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
 
