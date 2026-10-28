@@ -45,6 +45,20 @@ _February 11, 2025_
 
 +++
 
+## v1.4.12
+
+_October 28, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce version 2.4.6 and later releases.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1335 --> Fixed category image handling when switching visualization ownership between Adobe Commerce and AEM Assets. AEM asset selections are now stored in a dedicated `asset_role_image` attribute, preserving them when ownership changes. Category image reads and exports use the AEM asset-role value when AEM Assets owns visualization, including store-view-specific values during export. Existing HTTP/HTTPS AEM asset delivery URLs in the category `image` attribute are migrated to the new attribute without overwriting existing asset-role values.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-2180 --> Corrected the category GraphQL `asset_role_image` field to return `null` when Adobe Commerce owns visualization and the category asset-role value when AEM Assets owns visualization.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-2180 --> Fixed an issue where AEM asset roles were not exported correctly in the product feed. Now, AEM asset roles are exported correctly.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue ACAP-1338 --> Updated package dependencies, including restoring explicit requirements for Adobe IMS, Commerce eventing, and Services ID packages and removing the explicit `magento/framework` requirement.
+
 ## v1.4.9
 
 _October 7, 2026_
