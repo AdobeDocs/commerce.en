@@ -80,11 +80,11 @@ Learn more in [Commerce Admin in Adobe Unified Experience](https://experiencelea
 
 ## October 2026 - release #3 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items will be available in Production environments on October 29, 2026.
+The following items were released to Production environments on October 28, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -98,9 +98,9 @@ When product reviews are enabled, each product's approved review count and avera
 
 ### Store credit refund
 
-The `POST /V1/creditmemo/refund` REST endpoint now accepts an optional `extension_attributes.refund_to_store_credit_amount` field that refunds all or part of a credit memo to the customer's store credit.<!-- ACCS-2068 -->
+The [`POST /V1/creditmemo/refund` REST endpoint](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) now accepts an optional `extension_attributes.refund_to_store_credit_amount` field that refunds all or part of a credit memo to the customer's store credit.<!-- ACCS-2068 -->
 
-Two new Admin role permissions control access to store credit: <!-- ACCS-1961 -->
+Two [new Admin role permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) control access to store credit: <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
