@@ -31,8 +31,7 @@ topic_v2:
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
-   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Sandra Gonzalez Mangana" src="../../assets/guidance-and-insights/live-search-author-avatar-sgonzalezmangana.png" width="96"></td>
-   <td valign="middle" style="vertical-align: middle;"><strong>Sandra Gonzalez Mangana</strong><br><em>Senior Product Manager</em></td>
+   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Sandra Gonzalez Mangana" src="../../assets/guidance-and-insights/live-search-author-avatar-sgonzalezmangana.png" width="96"><br><strong>Sandra Gonzalez Mangana</strong><br><em>Senior Product Manager</em></td>
 </tr>
 </table>
 

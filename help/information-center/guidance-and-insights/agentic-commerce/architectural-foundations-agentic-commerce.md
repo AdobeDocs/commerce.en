@@ -55,8 +55,7 @@ topic_v2:
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
-   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"></td>
-   <td valign="middle" style="vertical-align: middle;"><strong>Surya Lamech</strong><br><em>Principal Product Marketing Manager</em></td>
+   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>Principal Product Marketing Manager</em></td>
 </tr>
 </table>
 

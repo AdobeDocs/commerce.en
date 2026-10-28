@@ -222,6 +222,14 @@ An attribute filter differs from a [product filter](#product) in that it targets
 
 Use the following steps to add an attribute inclusion or exclusion rule to a recommendation unit.
 
+>[!TIP]
+>
+>For any attributes that you want to be filterable, use the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) to set the `filterable` parameter:
+>
+>{"filterable": true}
+>
+>The attribute becomes available in the **Attributes** menu the next time the catalog is synchronized with [!DNL Adobe Commerce Optimizer].
+
 1. While [creating or editing](create.md) a recommendation unit, go to **[!UICONTROL Filter products]**.
 1. Select the **[!UICONTROL Inclusions]** or **[!UICONTROL Exclusions]** tab. The badge on each tab shows how many filters of that type are enabled.
 1. In the list on the left, select **[!UICONTROL Attributes]**.

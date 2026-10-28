@@ -58,6 +58,8 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
    >
    >[!DNL Payment Services] supports partial captures. A merchant can partially capture (invoice) parts of an order. For example, you could capture each item individually, or one item now and the rest later.
 
+   Eligible merchants with a PayPal overcapture agreement can also enable [overcapture](over-capture.md) in [!DNL Payment Services] 2.17.0 or later. Overcapture requires **[!UICONTROL Payment Action]** to be set to `Authorize`, with capture performed later during invoicing.
+
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Go to Payment Services]** to be directed back to the [!DNL Payment Services] Home.
 1. [Clear your cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).

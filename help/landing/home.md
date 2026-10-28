@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-last-update: 2026-10-09
+last-update: 2026-10-26
 ---
 # Adobe Commerce Services Guides
 
@@ -145,7 +145,7 @@ Storefront services are a group of AI-powered features that optimize product dis
 >[!NOTE]
 >
 >
->Adobe Commerce Optimizer provides catalog and merchandising capabilities natively, instead of using the separate Live Search, Catalog Service, and Product Recommendations services. See [What is Adobe Commerce Optimizer?](../optimizer/overview.md).
+>Adobe Commerce Optimizer provides catalog and merchandising capabilities natively, instead of using the separate Live Search, Catalog Service, and Product Recommendations services. See [What is Adobe Commerce Optimizer?](../optimizer/overview.md)
 >
 >For Adobe Commerce deployments integrated with Optimizer, the Adobe Commerce Optimizer Connector handles catalog and price synchronization without requiring the Commerce Services Connector for that synchronization. Other integrations, such as [Payment Services](../payment-services/compatibility.md) and [Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector), still require the Commerce Services Connector. See [Set up the connector for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started).
 

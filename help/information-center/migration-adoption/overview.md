@@ -64,7 +64,7 @@ topic_v2:
 
 # Migration and adoption
 
-Adoption does not need to be a single, all-at-once platform change. Select a route based on whether your immediate goal is storefront modernization, merchandising improvement, backend modernization, or a complete move to managed SaaS.
+Adoption does not need to be a single, all-at-once platform change. Select a route based on whether your immediate goal is storefront modernization, merchandising improvement, backend modernization, or a complete move to managed software as a service (SaaS).
 
 ## Adoption routes
 
