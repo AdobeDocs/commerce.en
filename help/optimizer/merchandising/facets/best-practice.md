@@ -26,7 +26,7 @@ Filter and facet functionality is a critical component of your [!DNL Adobe Comme
 - Determine the most relevant and useful attributes for your products, such as title, category, brand, price range, color, and size and set them as [dynamic facets](type.md). 
 - Set and sort product attributes that are consistent across your catalog and highly relevant for your products to improve relevancy and filtering capabilities for your shoppers.
 - Ensure that facet labels are easy to understand and consistently named across the site. For example, use "Price Range" instead of "Cost".
-- Avoid overwhelming shoppers by limiting the number of facets to the most important ones. Too many options can cause decision fatigue. By default, [!DNL Adobe Commerce Optimizer] is limited to a maximum of 500 attributes configured as facets and 30 buckets returned within each facet. Learn more about [facet limitations](../../boundaries-limits.md#catalog-views-and-policies). 
+- Avoid overwhelming shoppers by limiting the number of facets to the most important ones. Too many options can cause decision fatigue. By default, [!DNL Adobe Commerce Optimizer] is limited to a maximum of 100 attributes configured as facets and 30 buckets returned within each facet. Learn more about [facet limitations](../../boundaries-limits.md#catalog-views-and-policies). 
 - Allow shoppers to select multiple filter criteria simultaneously to refine results. For example, letting shoppers select both "Red" and "Blue" colors.
 - Display the number of available products next to each facet option to give shoppers an idea of the search results they can expect.
 - Implement collapsible facet sections to keep the interface clean and manageable, especially on mobile devices.
