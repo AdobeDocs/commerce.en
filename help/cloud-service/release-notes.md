@@ -70,7 +70,85 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## October 2026 - release #3 {#latest}
+## November 2026 - release #1 {#latest}
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items will be released to Production environments in November 2026.
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### Change return item attributes before a return is saved
+
+The `observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available. Use it to read a return and its items before the return is saved, and to change return item attribute values. <!-- ACCS-2062 -->
+
+* The payload includes return items when the save creates or edits items, such as when a return is created in the [!DNL Commerce Admin], through REST, or through the `requestReturn` GraphQL mutation. Saves that do not change items, such as status changes, send the return without items.
+* Return-level fields cannot be changed, and values that the webhook sets are not validated.
+* The webhook runs as part of saving the return. If a required webhook fails, the return is not saved.
+
+### Include shipping addresses when creating orders through REST
+
+>[!IMPORTANT]
+>
+>This release includes a breaking change to the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints.
+
+New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints now require a shipping address. Requests without a shipping address return an HTTP 400 error. This change prevents orders without shipping information from causing order email failures. <!-- CCSAAS-5351 -->
+
+To update your integration, do one of the following:
+
+* Provide a shipping address for orders that contain physical products.
+* Set `is_virtual` to `1` for digital orders. If `is_virtual` is omitted, it is determined from the order items.
+* Place the order from a cart using the `PUT /V1/carts/:cartId/order` endpoint.
+
+For existing orders without a shipping address, add the correct shipping address through REST before you resend the failed email.
+
+### Retrieve [!DNL AEM Assets] category images through GraphQL
+
+The `CategoryInterface` and `CategoryTree` GraphQL types now include an `asset_role_image` field that returns the category image assigned from [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Version updates
+
+* Updated the [!DNL AEM Assets] integration to version 1.4.12. <!-- ACCS-2180 -->
+
+* Updated the [!DNL B2B Storefront Compatibility Package] to version 1.0.32. <!-- ACCS-2138 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where [!DNL AEM Assets] product images were returned without image roles in GraphQL product queries. To restore image roles for products that were exported before this fix, [resync the product data feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports). <!-- ACCS-2180 -->
+
+* Fixed an issue where configurable product options, such as color or size, were missing from `selected_options` in GraphQL order responses when the order item also had custom options. <!-- CCSAAS-5722 -->
+
+* Fixed an issue where Company Address Book rules applied to company users on websites where companies are disabled. These users can now enter a shipping or billing address at checkout, and their company's default addresses are no longer applied to the cart. <!-- ACCS-2138 -->
+
+* Fixed an issue where the `POST /V1/orders/:orderId/edit/start` REST endpoint returned a 404 error when you started a new edit on a registered customer's order that was created by an edit that changed the shipping address. <!-- ACCS-2220 -->
+
+* Fixed an issue where the `requestReturn` GraphQL mutation failed when an optional return item custom attribute was sent with an empty value. The return is now created and the attribute is left empty. Required attributes with empty values are still rejected. <!-- CCSAAS-5628 -->
+
+* Fixed an issue where inventory processing could stop when products were deleted after an [!UICONTROL Update attributes] mass action, which delayed stock and salability updates. <!-- CCSAAS-5713 -->
+
+* Fixed an issue where [!UICONTROL Reconcile] and [!UICONTROL Reconcile & Repair] requests on the [[!UICONTROL Catalog View Sync Status]](../aco-connector/catalog-view-sync-status.md) page were not processed for instances that use the [!DNL Adobe Commerce Optimizer Connector]. <!-- COMOPT-2740 -->
+
+* The password setup link in the default [!UICONTROL New Account Without Password] email now includes the customer's email address, so customers can set their password on storefronts that use the User Auth drop-in. The link still includes the customer ID. <!-- CCSAAS-5711 -->
+
+### Infrastructure and developer improvements
+
+The following infrastructure improvements are included:
+
+* Updated the category permissions indexer disabler packages to version 1.0.3 to improve product override query performance and prevent database locks during upgrades. <!-- ACCS-2154 -->
+
+* Updated the Node.js 22 parent Docker image for the performance toolkit. <!-- CCSAAS-5702 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## October 2026 - release #3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
