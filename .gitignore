@@ -10,3 +10,4 @@ tmp/
 .idea
 .scout/
 AGENTS.md
+*.log
