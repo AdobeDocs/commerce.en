@@ -92,10 +92,6 @@ The following items were released to Production environments on October 28, 2026
 
 The `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available. Use it to add or change template variables in the order comment email before the email is rendered. <!-- ACCS-2087 -->
 
-### Export product ratings
-
-When product reviews are enabled, each product's approved review count and average rating are exported to [!DNL Catalog Service] as the `ac_review_count` and `ac_rating_summary` system product attributes. Storefronts can use these attributes to display product ratings. The product feed updates when review summaries change. Product reviews are disabled by default. <!-- ACCS-2196 -->
-
 ### Store credit refund
 
 The [`POST /V1/creditmemo/refund` REST endpoint](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) now accepts an optional `extension_attributes.refund_to_store_credit_amount` field that refunds all or part of a credit memo to the customer's store credit.<!-- ACCS-2068 -->
