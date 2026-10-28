@@ -35,10 +35,8 @@ Any filterable product attribute can be used as a facet except stock status (`qu
      * In the *Faceting attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
      * To find a specific product attribute, enter the first few characters of the attribute name in the *Search* box. Then, click **Add**.
 
-       The facet name appears in the **[!UICONTROL Dynamic]** facet list in ascending order.
-
        To configure price faceting intervals and groupings, refer to [Settings](settings.md). To learn more, go to [Facet Types](facets-type.md).
-       The facet is added to the bottom of the *Dynamic Facets* list and the *Publish changes* button becomes available.
+       The facet is added to the *Dynamic Facets* list in ascending order and the *Publish changes* button becomes available.
 
 1. If the facet you want to add can't be found, go to **Stores** > Attributes > **Product** and verify that the attribute has the [required properties](facets.md) to be used as a facet. If necessary, update the following storefront properties of the attribute:
 
