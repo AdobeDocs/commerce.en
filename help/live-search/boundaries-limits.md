@@ -62,7 +62,7 @@ When it comes to site search, Adobe Commerce gives you options. To ensure that [
 
 ## Facets
 
-- From the set of defined filterable attributes, you can configure up to 500 attributes as facets.
+- By default, you can configure up to 100 filterable attributes as facets. Eligible merchants can request an increase to a maximum of 500 facets through [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; approval is subject to eligibility and performance assessment.
 - Within a facet, a maximum of 100 buckets can be returned. If you need to return more than 100 buckets, [create a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
 - Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
 - Stock status (`quantity_and_stock_status`) is not supported as a facet. In the Admin, you can set  [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] to filter out of stock products. This functionality is supported natively in the `[PLP Widget](plp-styling.md)` module. For details, see [Manage out-of-stock products](manage-out-of-stock-products.md).
