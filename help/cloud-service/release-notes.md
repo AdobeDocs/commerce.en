@@ -132,7 +132,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 >[!ENDSHADEBOX]
 
-## October 2026 - release #3 {#latest}
+## October 2026 - release #3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
