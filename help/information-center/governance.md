@@ -9,9 +9,9 @@ This internal reference for the documentation team is not listed in `TOC.md`, so
 
 ## Ownership
 
-The Adobe Commerce documentation team owns the Information Center. It is authored in `Adobe-Enterprise-Docs/commerce.en`, the repository listed as `git-repo` in `metadata.md`.
+The Adobe Commerce documentation team manages the intake process, editorial review, and publication of Information Center content source from the `Adobe-Enterprise-Docs/commerce.en` GitHub repository.
 
-No single product team owns it because it is cross-product. Escalate product-specific corrections to the owning product team's docs contact instead of fixing them here.
+No single product team owns it because it is cross-product. Product and engineering owners must approve the content for publication. Escalate product-specific corrections to the owning product team's docs contact instead of fixing them here.
 
 ## What belongs in the Information Center
 
@@ -24,6 +24,8 @@ No single product team owns it because it is cross-product. Escalate product-spe
 - The Information Center does not consolidate or migrate product documentation, and it does not document individual product features. Link to existing authoritative content before writing something new.
 
 ## Adding new content
+
+Submit article proposals by creating a JIRA ticket in the COMDOX project following the process outlined in the [COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864) epic. Use the ticket description with AI to generate a ticket and link it to the epic.
 
 ### Articles in an existing section
 
