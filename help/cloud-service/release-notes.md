@@ -95,17 +95,15 @@ The following items will be released to Production environments in November 10, 
 The new `observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) allows you to read a return and its items before the return is saved and then modify attribute values. <!-- ACCS-2062 -->
 
 * The payload includes return items when the save creates or edits items, such as when a return is created in the [!DNL Commerce Admin], through REST, or through the `requestReturn` GraphQL mutation.
-* Return-level fields cannot be changed.
 * The webhook runs as part of saving the return. If a required webhook fails, the return is not saved.
 
 ### Include shipping addresses
 
 New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints now require a shipping address. Requests without a shipping address return an HTTP 400 error. This change prevents orders without shipping information from causing order email failures. <!-- CCSAAS-5351 -->
 
-To update your integration, do one of the following:
+To create an order without a shipping address:
 
-* Provide a shipping address for orders that contain physical products.
-* Set `is_virtual` to `1` when the order contains only digital products. If `is_virtual` is omitted, it is determined from the order items.
+* Set `is_virtual` to `1` when the order contains only digital products.
 * Place the order from a cart using the `PUT /V1/carts/:cartId/order` endpoint.
 
 ### Retrieve [!DNL AEM Assets] category images
