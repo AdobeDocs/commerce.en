@@ -105,7 +105,7 @@ New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders
 To update your integration, do one of the following:
 
 * Provide a shipping address for orders that contain physical products.
-* Set `is_virtual` to `1` for digital orders. If `is_virtual` is omitted, it is determined from the order items.
+* Set `is_virtual` to `1` when the order contains only digital products. If `is_virtual` is omitted, it is determined from the order items.
 * Place the order from a cart using the `PUT /V1/carts/:cartId/order` endpoint.
 
 ### Retrieve [!DNL AEM Assets] category images
