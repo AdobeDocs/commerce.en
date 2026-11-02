@@ -244,6 +244,8 @@ Use the following steps to add an attribute inclusion or exclusion rule to a rec
 >
 >When you select an attribute whose metadata sets `number` to `true`, such as **Size**, the **Value** field displays range inputs instead of a single text value.
 
+The attribute list depends on the **Catalog View** you selected. If you select **All Views**, the list is based on the catalog source associated with the first catalog view. If you select a specific catalog view, the list is based on that view's catalog source.
+
 #### Use inclusion and exclusion conditions
 
 Only products matching inclusion filters are allowed to be recommended. Products matching any exclusion filter will not be recommended.
