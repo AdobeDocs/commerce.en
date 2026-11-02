@@ -96,3 +96,5 @@ To create an order in the Admin for a customer using their vaulted credit card:
 ## Security
 
 Minimal credit card information is shared with the shopper; they only see the last four digits, expiration date, and brand of their vaulted credit card. Credit card information is stored with the payment provider to satisfy [PCI](security.md#pci-compliance) compliance standards.
+
+In [!DNL Payment Services] 2.17.0 or later, shoppers paying with a saved credit card may be asked to complete a [3D Secure (3DS) authentication challenge](security.md#3ds) required by their card issuer. Saving a card does not bypass issuer-required authentication.
