@@ -70,13 +70,73 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## October 2026 - release #3 {#latest}
+## Admin UI changes
+
+The [!DNL Adobe Commerce as a Cloud Service] Admin now works like the other Adobe products you already use, with the same top navigation, product switcher, and organization switcher. Sign in once to move seamlessly between products and Commerce instances, without separate logins for Commerce Cloud Manager and each instance. An instance switcher and searchable Commerce navigation help you get where you need to go faster.
+
+Each Admin experience has its own URL. Instance links in Commerce Cloud Manager open the new Commerce Admin experience by default, using **[!UICONTROL Admin URL (Unified Shell UI)]**. The Classic UI remains supported, so you can keep using familiar workflows while you adapt to the new experience. To use the Classic UI, open the instance details panel and select **[!UICONTROL Admin URL (Classic UI)]**. Existing Admin URLs and bookmarks continue to open the Classic UI.
+
+Learn more in [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience).
+
+## November 2026 - release #1 {#latest}
 
 [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-The following items will be available in Production environments on October 29, 2026.
+The following items will be released to Production environments in November 10, 2026.
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### Change return item attributes
+
+The new `observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) allows you to read a return and its items before the return is saved and then modify attribute values. <!-- ACCS-2062 -->
+
+* The payload includes return items when the save creates or edits items, such as when a return is created in the [!DNL Commerce Admin], through REST, or through the `requestReturn` GraphQL mutation.
+* The webhook runs as part of saving the return. If a required webhook fails, the return is not saved.
+
+### Include shipping addresses
+
+New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints now require a shipping address. Requests without a shipping address return an HTTP 400 error. This change prevents orders without shipping information from causing order email failures. <!-- CCSAAS-5351 -->
+
+To create an order without a shipping address:
+
+* Set `is_virtual` to `1` when the order contains only digital products.
+* Place the order from a cart using the `PUT /V1/carts/:cartId/order` endpoint.
+
+### Retrieve [!DNL AEM Assets] category images
+
+The `CategoryInterface` and `CategoryTree` GraphQL types now include an `asset_role_image` field that returns the category image assigned from [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where [!DNL AEM Assets] product images were returned without image roles in GraphQL product queries. To restore image roles for products that were exported before this fix, [resync the product data feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports). <!-- ACCS-2180 -->
+
+* Fixed an issue where configurable product options, such as color or size, were missing from `selected_options` in GraphQL order responses when the order item also had custom options. <!-- CCSAAS-5722 -->
+
+* Fixed an issue where Company Address Book rules applied to company users on websites where companies are disabled. <!-- ACCS-2138 -->
+
+* Fixed an issue where the `POST /V1/orders/:orderId/edit/start` REST endpoint returned a 404 error when you edited an order with a modified shipping address. <!-- ACCS-2220 -->
+
+* Fixed an issue where the `requestReturn` GraphQL mutation failed when an optional return item custom attribute was sent with an empty value. <!-- CCSAAS-5628 -->
+
+* Fixed an issue where inventory processing could stop when products were deleted after an [!UICONTROL Update attributes] mass action. <!-- CCSAAS-5713 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## October 2026 - release #3
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to Production environments on October 28, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -90,9 +150,9 @@ When product reviews are enabled, each product's approved review count and avera
 
 ### Store credit refund
 
-The `POST /V1/creditmemo/refund` REST endpoint now accepts an optional `extension_attributes.refund_to_store_credit_amount` field that refunds all or part of a credit memo to the customer's store credit.<!-- ACCS-2068 -->
+The [`POST /V1/creditmemo/refund` REST endpoint](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) now accepts an optional `extension_attributes.refund_to_store_credit_amount` field that refunds all or part of a credit memo to the customer's store credit.<!-- ACCS-2068 -->
 
-Two new Admin role permissions control access to store credit: <!-- ACCS-1961 -->
+Two [new Admin role permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) control access to store credit: <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
