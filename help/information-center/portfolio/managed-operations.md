@@ -102,7 +102,7 @@ Review the following table for a more detailed comparison:
 
 ## Customer Success Engineer
 
-Your named Customer Success Engineer (CSE) is your single point of contact at Adobe and an expert in the full [!DNL Adobe Commerce as a Cloud Service] toolset, including [!DNL App Builder], [!DNL API Mesh], and [!DNL Commerce Storefront] powered by [!DNL Edge Delivery Services]. Your CSE works with you and your implementation partners to:
+Your named CSE is your single point of contact at Adobe and an expert in the full [!DNL Adobe Commerce as a Cloud Service] toolset, including [!DNL App Builder], [!DNL API Mesh], and [!DNL Commerce Storefront] powered by [!DNL Edge Delivery Services]. Your CSE works with you and your implementation partners to:
 
 - Guide and support you through the onboarding process
 - Manage provisioning and platform setup
