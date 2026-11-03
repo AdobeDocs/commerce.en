@@ -189,3 +189,7 @@ Your CSE works with you to identify the goals that matter most to your business 
 | Average cart value | Time to first response and time to resolution |
 | Abandoned cart rate | Proactive issue notification |
 | Site performance and SEO | Support ticket trends |
+
+## Getting started
+
+Ready to launch faster and operate with confidence? Contact your Adobe account manager to learn how Managed Operations can support your business goals and to find the right fit for your [!DNL Adobe Commerce as a Cloud Service] project.
