@@ -11,7 +11,7 @@ This internal reference for the documentation team is not listed in `TOC.md`, so
 
 The Adobe Commerce documentation team manages the intake process, editorial review, and publication of Information Center content sourced from the `Adobe-Enterprise-Docs/commerce.en` GitHub repository.
 
-No single product team owns it because it is cross-product. Product and engineering owners must approve the content for publication. Escalate product-specific corrections to the owning product team's docs contact instead of fixing them here.
+No single product team owns it because it is cross-product. Product and engineering owners should approve content before submitting the ExL PR. Escalate product-specific corrections to the owning product team's docs contact instead of fixing them here.
 
 ## What belongs in the Information Center
 
