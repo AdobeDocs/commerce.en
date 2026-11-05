@@ -110,6 +110,8 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. Copy the value from the **Reference Key** section.
 
+   Older recommendations might show **[!UICONTROL Unit ID]** instead of **[!UICONTROL Reference Key]**. You can continue to use the **[!UICONTROL Unit ID]** in your storefront, but [!DNL Adobe Commerce] recommends that you update existing recommendations to use the **[!UICONTROL Reference Key]**.
+
 1. In the storefront `product-recommendations` block, use this reference key to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
 ## Readiness indicators
