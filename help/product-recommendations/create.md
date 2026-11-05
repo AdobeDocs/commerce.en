@@ -108,7 +108,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    ![Get Recommendation ID](./assets/get-ref-id.png)
 
-1. Copy the value in the **Reference Key** section.
+1. Copy the value from the **Reference Key** section.
 
 1. In the storefront `product-recommendations` block, use this reference key to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 

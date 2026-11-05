@@ -104,7 +104,7 @@ After creating a recommendation, use its reference key to configure the recommen
 
    ![Get Recommendation ID](../../assets/get-ref-id.png)
 
-1. Copy the value in the **Storefront reference key** section.
+1. Copy the value from the **Storefront reference key** section.
 
 1. In the storefront `product-recommendations` block, use this reference key to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
