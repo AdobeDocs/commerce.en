@@ -1,6 +1,6 @@
 ---
 title: Merchandising Rules Best Practices
-description: Learn the best practices for implementing merchandising rules for search, default listings, and category pages.
+description: Learn the best practices for implementing merchandising rules for search, search suppression, default listings, and category pages.
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
@@ -20,6 +20,8 @@ topic_v2:
 # Merchandising Rules Best Practices
 
 To optimize conversion and revenue, implement effective **search rules**, a strong **default listing** rule, and **[category rules](add.md#rule-types)**. Adjust rankings using sales data, stock, promotions, and [intelligent ranking](add.md#intelligent-ranking).
+
+Use **[search suppression rules](overview.md#search-suppression-rules)** when specific search terms must not return results, rather than when products only need a different ranking.
 
 It is crucial to establish a well thought out **default rule**. Your [default rule](overview.md#default-rule) determines how search results are initially sorted when no more specific search rule applies, which improves discovery and purchase likelihood. Review it regularly so it keeps pace with shopper needs and campaigns.
 
@@ -41,3 +43,21 @@ It is crucial to establish a well thought out **default rule**. Your [default ru
 - Align **intelligent ranking** (for example, trending, most viewed) with how shoppers browse that category; category pages do not use search query text the way search rules do. See [Intelligent ranking](add.md#intelligent-ranking). For intelligent methods other than **None**, use **[Intelligent ranking boost](add.md#intelligent-ranking-boost)** and category preview to tune behavioral strength for that category rule.
 - Apply **pin**, **boost**, and **bury** consistently with your campaign plan; remember that manual positions usually apply only when the shopper uses the **default sort** for the listing. See [Manual ranking](add.md#manual-ranking).
 - Preview in the **category** rule flow in the editor and validate on the storefront after publish, the same discipline you use for the "Test your rule" panel on search.
+
+## Search suppression best practices and use cases {#search-suppression-best-practices}
+
+Search suppression blocks matching queries and returns the standard **Zero Results** experience. Choose the narrowest condition that meets the restriction, then follow [Create and manage search suppression rules](add.md#search-suppression-rules).
+
+| Use case | Suggested configuration | What to check |
+| --- | --- | --- |
+| Regulatory compliance for search | Scope the rule to the affected catalog view and match the restricted search terms. | Confirm the terms with your compliance team. Search suppression alone does not prevent access through categories, merchandising pages, recommendations, or direct product URLs. |
+| Branding restrictions | Use **Query contains** for a restricted brand name that must be blocked within longer queries. | Preview unrelated queries that contain similar text to avoid suppressing legitimate searches. |
+| Prevent a specific search term from returning results | Use **Query is** for an exact phrase that should return no products. | Check related phrases separately. An exact-match condition does not block every query containing that phrase. |
+| Restrictions on query prefixes or suffixes | Use **Query starts with** or **Query ends with** when the location of the restricted text matters. | Preview the text at the beginning, middle, and end of a query to confirm the intended scope. |
+| Temporary search restrictions | Set a start and end date for a time-limited restriction. | Confirm the schedule and enabled status, and review whether the rule is still needed after the restriction ends. |
+
+- Give each rule a descriptive name and record the reason for the restriction in its description.
+- Preview both queries that should be blocked and queries that should still return products before publishing or editing a rule.
+- Review the storefront's Zero Results experience so shoppers have a useful path to continue browsing.
+- Do not use query suppression as a substitute for product-level exclusions. To exclude products across search results, search suggestions, and autocomplete, use manual exclusions or **Attribute Based Merchandising Events** with a **Hide** action in the **default search rule**.
+- Review active suppression rules regularly. Disable rules that are no longer needed, or edit and publish them when restrictions change.

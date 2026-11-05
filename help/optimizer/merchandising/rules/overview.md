@@ -1,6 +1,6 @@
 ---
 title: Merchandising Rules
-description: "[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape search results, default product listings, and category pages."
+description: "[!DNL Adobe Commerce Optimizer] merchandising rules shape search results, suppress search queries, and control default product listings and category pages."
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Merchandising Rules
 
-Merchandising rules combine logic with actions to shape how products appear in **search results**, in **default product listings** through the **default search rule**, and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
+Merchandising rules combine logic with actions to shape how products appear in **search results**, in **default product listings** through the **default search rule**, and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals. Use **search suppression rules** to prevent matching search queries from returning results.
 
 Each **search rule** has three main components:
 
@@ -33,7 +33,26 @@ Each **search rule** has three main components:
 
 **Category rules** use **category selection** instead of search query conditions; intelligent ranking and manual ranking work the same way as for search, with differences called out in [Create and Manage Rules](add.md).
 
-You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default search rule** that applies when no more specific search or category rule applies.
+You can combine multiple conditions and actions for search rules, and schedule rules to be active for a period. Search suppression rules use query conditions to block results rather than rank products. You can also set a **default search rule** that applies when no more specific search or category rule applies.
+
+## Search suppression rules {#search-suppression-rules}
+
+**Search suppression rules** are a merchandising rule type that prevents a matching shopper search query from returning products. Blocked queries return the standard **Zero Results** experience, rather than a curated or reordered product list.
+
+Use search suppression for regulatory search restrictions, branding restrictions, or specific terms that should not return results. Conditions support **Query is**, **Query contains**, **Query starts with**, and **Query ends with**. For configuration and management steps, see [Create and manage search suppression rules](add.md#search-suppression-rules). For examples, see [Best practices](best-practice.md#search-suppression-best-practices).
+
+Search suppression affects only the search experience. It does not change product visibility through category navigation, merchandising pages, recommendations, or direct product URLs. It is not a substitute for catalog-wide product visibility or access controls.
+
+### Interaction with other merchandising capabilities
+
+| Capability | Interaction with search suppression |
+| --- | --- |
+| Search rules | A query blocked by an active search suppression rule returns Zero Results. Ranking actions in a search rule do not restore results for that blocked query. Searches that are not blocked continue to use applicable merchandising rules. |
+| Category rules | Category navigation and category merchandising are unaffected by search suppression. A product can remain visible in a category even when a search query for it is blocked. |
+| Default search rule | Search suppression blocks matching queries, whereas the default search rule defines default ranking and product exclusions. Default ranking does not restore results for a blocked query. |
+| Attribute Based Merchandising Events | These events apply actions to products that match attribute conditions, as described in [Attribute ranking](add.md#attribute-ranking). Search suppression instead blocks results for a matching query, regardless of which products would otherwise match. |
+
+Products excluded by the **default search rule**, through either manual exclusions or **Attribute Based Merchandising Events** with a **Hide** action, are also excluded from **search suggestions and autocomplete**. This keeps product exclusions consistent across the search experience and is separate from blocking a query with a search suppression rule.
 
 ## Category rules {#category-rules}
 
@@ -72,7 +91,7 @@ You can set a **default search rule** that applies when no search term is provid
 
 ## Order of precedence with multiple rules
 
-The following applies to **search rules** and how they interact for a given search. **Category rules** apply per category; see [Create and Manage Rules](add.md) for how they fit alongside search and default rules.
+The following applies to ranking **search rules** and how they interact for a given search. It does not override search suppression: a query blocked by an active search suppression rule returns Zero Results. **Category rules** apply per category; see [Create and Manage Rules](add.md) for how they fit alongside search and default rules.
 
 Only one search rule is applied to a search term at any one time.
 If multiple rules are found to be applicable to a search phrase, then all these rules are applied. If there is a collision between two rules---`rule 1` that boosts sku1 but `rule 2` hides the same SKU---then the most recently applied rule (`rule 2`) takes precedence.
