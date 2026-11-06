@@ -6,7 +6,7 @@ Any filterable product attribute can be used as a facet. Facets help customers f
 
 ## Create a facet
 
-1. In the left rail, select _Merchandising_ > **Facets** then click **Create facets**.
+1. From the menu, select _Merchandising_ > **Facets** then click **Create facets**.
 1. In the *Create facets* list, each available attribute has a separate ![Add button](/help/assets/ccdm-shared/facets/btn-add.png). Complete either of the following:
 
      - In the *Facets attributes* list, choose the product attribute that you want to use as a facet and click **Add**.

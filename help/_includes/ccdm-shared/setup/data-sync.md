@@ -4,7 +4,10 @@ The **Data Sync** page displays an overview of the synchronization status for pr
 
 The **Data Sync** page provides valuable insights into the availability of product data for your storefront, ensuring that it can be promptly displayed to your shoppers.
 
-The **Data Sync** page is located at *Setup* > **Data sync**.
+The **Data Sync** page is located at:
+
+- **Commerce Optimizer Studio**—*Setup* > **Data sync**
+- **Commerce Admin** (Adobe Commerce as a Cloud Service)—*System* > **Catalog sync**
 
 ![Data Sync](/help/assets/ccdm-shared/setup/data-sync.png)
 
@@ -40,4 +43,4 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 
 ## Verify that data synchronization is working
 
-For projects that use Adobe Commerce as the upstream data source, you can monitor the data export process and initiate resync operations from the Data Feed Sync Status page. For details, see [Daata Feed Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+For projects that use Adobe Commerce as the upstream data source, you can monitor the data export process and initiate resync operations from the Data Feed Sync Status page. For details, see [Data Feed Sync Status monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
