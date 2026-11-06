@@ -72,7 +72,7 @@ This command updates the tools to the latest version.
    * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [OpenAI Codex](https://openai.com/index/introducing-codex/)
    * [Cline](https://cline.bot)
-   
+
 * [Node.js](https://nodejs.org/en/download): LTS version
 * Package Manager: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): For repository cloning and version control
@@ -86,7 +86,7 @@ This command updates the tools to the latest version.
    ```
 
 1. Install the following plugins:
-   
+
    * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
    * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
    * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)

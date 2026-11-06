@@ -45,9 +45,19 @@ topic_v2:
 
 [!DNL Adobe Commerce as a Cloud Service] is an on-demand service that relies on a shared responsibility security and operational model. Adobe and customers share these responsibilities, with each party bearing distinct accountability for securing and operating the Adobe Commerce application.  
 
+[!DNL Adobe Commerce as a Cloud Service with Managed Operations] is a premium offering that adds a named Customer Success Engineer (CSE) and a 24/7 Managed Operations P1 support team in addition to the standard shared responsibility model. Adobe continues to own the platform, infrastructure, security, and core application, and you continue to own your customizations and integrations, but with Managed Operations, Adobe Managed Services is consulted on your:
+
+- Integrations
+- App Builder apps
+- Edge Delivery Storefront
+- Event management
+- Platform updates
+
+Adobe Managed Services also shares responsibility for disaster recovery testing, debugging and issue isolation. Your CSE guides you from onboarding through go-live and beyond, so you have an Adobe expert with you at every stage instead of operating on your own.
+
 >[!BEGINSHADEBOX]
 
-The following summary tables use the RACI model to show the security responsibilities shared between Adobe and customers.
+The following summary tables use the RACI model to show the security responsibilities shared between Adobe, Adobe Managed Operations, and customers.
 
 **R** — Responsible
 **A** — Accountable
@@ -56,39 +66,39 @@ The following summary tables use the RACI model to show the security responsibil
 
 >[!ENDSHADEBOX]
 
-| Task | Adobe | Customer |
-| --- | --- | --- |
-| Defining backend origin WAF rules | RA | |
-| Defining backend CDN WAF rules | RA | |
-| Deploying and maintaining of [!DNL Adobe Developer App Builder] applications | | RA |
-| Deploying backend platform WAF rules | RA | |
-| Deploying backend CDN WAF rules | RA | |
-| Fixing core bugs in [!DNL Adobe Commerce as a Cloud Service] | RA | I |
-| Releasing [!DNL Adobe Commerce as a Cloud Service] infrastructure patches | RA | |
-| Scaling (infrastructure) | RA | |
-| Scaling (core application) | RA | |
-| Integrating external applications | | RA |
-| Installing App Builder apps | | RA |
-| Testing performance of all App Builder apps | | RA |
-| Theming and design of custom App Builder apps | | RA |
-| Configuring backend DNS | RA | I |
-| Onboarding backend CDN | RA | I |
-| Supporting backend CDN | RA | I |
-| Obtaining a backend DNS provider | RA | |
-| Provisioning the production and sandbox environments | A | R |
-| Accessing Dynamics for Adobe Commerce on cloud infrastructure | R | C |
-| Resolving backend Customer security issues | RA | I |
-| Resolving backend CDN security issues | RA | |
-| Assisting Adobe with security research (scans/audits) | RA | |
-| Performing PCI ASV scans | RA | I |
-| Remediating Adobe Commerce infrastructure PCI scans | R | |
-| Managing OS and platform secrets | RA | |
-| Monitoring backend security logs | RA | |
-| Controlling Customer support and access | A | R |
-| Annual testing and documentation of Adobe DR plan and backup and restore | RA | |
-| Annual testing and documentation of disaster recovery plan | RA | |
-| Debugging and issue isolation | R | R |
-| Timely support of debugging and issue isolation process | R | R |
-| Publishing updates and patches to Adobe Commerce core | RA | I |
-| Installing updates and patches to Adobe Commerce core | RA | I |
-| Core Adobe Commerce Application Quality | RA | |
+| Task | Adobe | Adobe Managed Operations | Customer |
+| --- | --- | --- | --- |
+| Defining backend origin WAF rules | RA | | |
+| Defining backend CDN WAF rules | RA | | |
+| Deploying and maintaining of [!DNL Adobe Developer App Builder] applications | | | RA |
+| Deploying backend platform WAF rules | RA | | |
+| Deploying backend CDN WAF rules | RA | | |
+| Fixing core bugs in [!DNL Adobe Commerce as a Cloud Service] | RA | | I |
+| Releasing [!DNL Adobe Commerce as a Cloud Service] infrastructure patches | RA | | |
+| Scaling (infrastructure) | RA | | |
+| Scaling (core application) | RA | | |
+| Integrating external applications | | C | RA |
+| Installing App Builder apps | | C | RA |
+| Testing performance of all App Builder apps | | C | RA |
+| Theming and design of custom App Builder apps | | C | RA |
+| Configuring backend DNS | RA | | I |
+| Onboarding backend CDN | RA | | I |
+| Supporting backend CDN | RA | | I |
+| Obtaining a backend DNS provider | RA | | |
+| Provisioning the production and sandbox environments | A | | R |
+| Accessing Dynamics for Adobe Commerce on cloud infrastructure | R | | C |
+| Resolving backend Customer security issues | RA | | I |
+| Resolving backend CDN security issues | RA | | |
+| Assisting Adobe with security research (scans/audits) | RA | | |
+| Performing PCI ASV scans | RA | | I |
+| Remediating Adobe Commerce infrastructure PCI scans | R | | |
+| Managing OS and platform secrets | RA | | |
+| Monitoring backend security logs | RA | | |
+| Controlling Customer support and access | A | C | R |
+| Annual testing and documentation of Adobe DR plan and backup and restore | RA | C | |
+| Annual testing and documentation of disaster recovery plan | RA | RA | |
+| Debugging and issue isolation | R | R | R |
+| Timely support of debugging and issue isolation process | R | R | R |
+| Publishing updates and patches to Adobe Commerce core | RA | C | I |
+| Installing updates and patches to Adobe Commerce core | RA | C | I |
+| Core Adobe Commerce Application Quality | RA | C | |

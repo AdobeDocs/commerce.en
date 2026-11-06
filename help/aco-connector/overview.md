@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Optimizer Connector
-description: Learn about the [!DNL Adobe Commerce Optimizer Connector] for catalog sync, search, and storefront delivery between [!DNL Adobe Commerce] and [!DNL Adobe Commerce Optimizer].
+description: Learn how the [!DNL Adobe Commerce Optimizer Connector] syncs catalog data from Commerce to [!DNL Adobe Commerce Optimizer] for search and storefront delivery.
 feature: Integration, Storefront, Configuration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 autotag-review: '2026-06-09T19:00:00.000Z'
@@ -147,7 +147,7 @@ After the connector syncs the catalog data, configure the merchandising model in
 
 ### B2B connector behavior {#b2b-shared-catalog-projection-specification}
 
-The [!DNL Adobe Commerce Optimizer Connector for B2B] extends the base connector with a one-way projection of B2B shared catalog and company-assignment configuration into protected catalog experiences. [!DNL Adobe Commerce] remains the source of truth for catalog and pricing data; the B2B connector builds on the base catalog and pricing sync and manages its connector-generated projections.
+The [!DNL Adobe Commerce Optimizer Connector for B2B] extends the base connector with a one-way projection of B2B shared catalog and company-assignment configuration into protected catalog experiences. [!DNL Adobe Commerce] remains the system of record for catalog and pricing data. The B2B connector builds on the base catalog and pricing sync and manages its connector-generated projections.
 
 For the projection mapping, runtime authorization flow, and protection boundary, see [B2B shared catalog projection](b2b-shared-catalog-projection.md). For setup instructions, see [Get started with the B2B connector](/help/aco-connector/get-started-b2b-shared-catalogs.md).
 

@@ -2,8 +2,105 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 9 15:39:48 2026
+updated: Mon Oct 26 14:57:56 2026
 entries:
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: October 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/842
+  merge_commit: fd4ea4603999043844c786da3ab1e84fb8d4d4aa
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: "<br/>Payment Services 2.17.0 documentation adds guidance for the optional
+    [PayPal Express review page](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page)
+    and [overcapture](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/manage/over-capture),
+    including configuration, eligibility, and invoicing workflows."
+  versions: ''
+  type: major-update
+  date: October 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/835
+  merge_commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added the [Commerce Information Center](https://experienceleague.adobe.com/en/docs/commerce/information-center/overview),
+    a new starting point for customers and partners to explore Adobe Commerce offerings,
+    compare implementation architectures, and plan migrations and integrations. Includes
+    role-based navigation and implementation guides for storefronts, payments, Commerce
+    services, AEM Assets, Adobe Commerce Optimizer, sandbox environments, and Adobe
+    Experience Platform, with links to detailed product documentation.
+  versions: ''
+  type: major-update, new-topic
+  date: October 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/824
+  merge_commit: fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4
+  contributor: meker_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Updated the [shared responsibility](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/security/shared-responsibility)
+    table for Adobe Commerce as a Cloud Service to include Adobe Managed Services.
+  versions: ''
+  type: major-update
+  date: October 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/828
+  merge_commit: 56bb1f5c9723842386af60afe5611c85213f4aeb
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Updated Merchandising Rules documentation to rename the All product
+    listings rule type to Default search rule in [Merchandising Rules Overview](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview),
+    [Create and Manage Rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add),
+    and [Release notes](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes),
+    matching the renamed option in the Admin rule-type menu.
+  versions: ''
+  type: feedback
+  date: October 16, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/799
+  merge_commit: b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1
+  contributor: emarr_adobe
+  labels:
+  - editorial
+  - feedback
+- description: 'Corrected the documented default and range values for [!UICONTROL
+    Intelligent Ranking Boost] in [Create and manage merchandising rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost):
+    the default is `50` (previously documented as `5`) and the maximum range is `1000`
+    (previously documented as `100`).'
+  versions: ''
+  type: technical
+  date: October 14, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/825
+  merge_commit: 07fb011b0303ebca11dd3e0948d264c72bd2422e
+  contributor: emarr_adobe
+  labels:
+  - technical
+- description: Added documentation for the new Out of stock exclusion filter for recommendation
+    units in [Filters](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters),
+    which excludes out-of-stock products from recommendations.
+  versions: ''
+  type: feedback, major-update
+  date: October 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/819
+  merge_commit: abba2327d9c678e374a94c5bc5ed091f401c8aff
+  contributor: emarr_adobe
+  labels:
+  - feedback
+  - major-update
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: October 12, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/820
+  merge_commit: 83acf0b6474920141c0bcc354f7c49ea7d10d29c
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
 - description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
     for Adobe Commerce as a Cloud Service.
   versions: ''
@@ -148,7 +245,7 @@ entries:
   labels:
   - major-update
   - release-notes
-- description: Added the [Commerce Insights](https://experienceleague.adobe.com/en/docs/commerce/insights/overview)
+- description: Added the [Commerce Insights](https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview)
     guide, a new home for strategic implementation and security guidance from Adobe
     Commerce Product Management and Engineering.
   versions: ''

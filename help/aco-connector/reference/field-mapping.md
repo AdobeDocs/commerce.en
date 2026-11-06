@@ -148,7 +148,9 @@ The `prices` feed sends [!DNL Adobe Commerce] data to the [Prices endpoint](http
 
 The `categories` feed sends [!DNL Adobe Commerce] data to the [Categories endpoint](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
+The connector identifies category feed records by URL path and store view code.
+- - When a category moves to a different parent in the category tree, synchronization sends the new paths for that category and its descendants and removes their previous paths from [!DNL Adobe Commerce Optimizer].
+- Items with an empty `urlPath` (logical root categories) are skipped and never submitted.
 
 | [!DNL Adobe Commerce] field | [!DNL Commerce Optimizer] API field | Mapping details |
 | --------------- | -------------- | ------- |

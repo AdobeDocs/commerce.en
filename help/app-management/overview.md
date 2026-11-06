@@ -33,7 +33,7 @@ Together, these capabilities create a scalable extensibility model that empowers
 
 ## What [!DNL App Management] delivers
 
-* **One place for all your apps**. Associate, configure, and manage apps from **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Search, filter, and acquire apps](manage-app.md) from the same view.
+* **One place for all your apps**. Associate, install, configure, upgrade, and manage apps from **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Search, filter, and acquire apps](manage-app.md) from the same view.
 * **Settings that match your business**. Apply different configurations per website, store, or store view for multi-region or multi-brand setups.
 * **Automatic store sync**. Websites, stores, and store views from Commerce are imported when you associate an app.
 * **Native Admin experience**. Work with apps from Adobe Exchange or custom deployments without leaving Commerce.
@@ -41,22 +41,24 @@ Together, these capabilities create a scalable extensibility model that empowers
 ## Who uses [!DNL App Management]?
 
 | Role | Use case |
-|------|----------|
-| **App managers** | Associate apps, configure settings, and manage apps across your Commerce instance. |
+| --- | --- |
+| **App managers** | Review app details, associate and install apps, configure settings, and manage upgrades across your Commerce instance. |
 | **Commerce administrators** | Oversee app configurations and permissions across the organization. |
 | **Technical architects** | Ensure apps are correctly configured for multi-store or multi-region deployments. |
 
 ## What you can do
 
 * **Associate an app**. Link an App Builder application to your Commerce instance by selecting the project and workspace.
+* **Review and install an app**. Inspect the app's business use cases and configuration, complete pre-installation instructions, and monitor installation progress.
 * **Configure settings**. Adjust app settings through the auto-generated form; override values per store or region when needed.
 * **Manage scopes**. Keep your store hierarchy in sync with your apps and apply settings at the right level.
-* **Unassociate an app**. Remove an app when retiring an integration or cleaning up test configurations.
+* **Upgrade an app**. Review and start upgrades when your developer deploys a new version. Developers can also enable experimental automatic upgrades.
+* **Unassociate an app**. Review affected components and cleanup requirements before removing an app when retiring an integration or cleaning up test configurations.
 
 ## Next steps
 
 * [Install](install.md). Ensure prerequisites are met and access [!DNL App Management].
-* [Manage your app](manage-app.md). Associate, configure, and unassociate apps.
+* [Manage your app](manage-app.md). Review, associate, install, configure, upgrade, and unassociate apps.
 
 ## For developers
 
