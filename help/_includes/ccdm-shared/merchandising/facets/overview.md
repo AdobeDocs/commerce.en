@@ -10,7 +10,7 @@ Any defined facet can be used as a URL parameter and results are filtered based 
 
 ## Facet aggregation
 
-Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-$50.00, `categories = `promotions``).
+Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-$50.00, `categories = `promotions``)
 
 - `categories` aggregation—Aggregates `categories`, then applies the `color` and `price` filters, but not the `categories` filter.
 - `color` aggregation—Aggregates `color`, then applies  the `price` and `categories` filters, but not the `color` filter.
@@ -70,7 +70,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 1. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) for examples of how to update your Adobe Merchandising Services GraphQL API calls using the new `contains` and `startsWith` search capabilities.
 
-    You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer," "Part Number," and "Description." From there, they search within those attributes using the `contains` or `startsWith` conditions. 
+   You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer," "Part Number," and "Description." From there, they search within those attributes using the `contains` or `startsWith` conditions.
 
 ### When to use layered search rather than facets
 
@@ -90,6 +90,6 @@ Layered search and facets serve different purposes in product discovery, and cho
 - Offer intuitive filter options that users can easily understand and select
 - Show available options based on current search results
 - Display filter counts and ranges that help users understand available options
-- Work with common product characteristics like color, size, material, and other attributes
+- Work with common product characteristics like color, size, and material
 
 **Best practice:** Use layered search for complex, technical searches where users have specific criteria, and use facets for standard e-commerce filtering where users want to explore and refine options visually.

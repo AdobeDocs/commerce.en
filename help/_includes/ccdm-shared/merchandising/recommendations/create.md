@@ -35,7 +35,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    - **Activate** to enable the recommendation unit on your storefront.
 
-   Your recommendation appears on the Recommendations workspace. To use your recommendation on your storefront, you need to find the [recommendation ID](#get-recommendation-id).
+   Your recommendation appears in the Recommendations workspace. To use your recommendation on your storefront, you need the [recommendation ID or reference key](#get-the-storefront-reference-key).
 
 >[!NOTE]
 >

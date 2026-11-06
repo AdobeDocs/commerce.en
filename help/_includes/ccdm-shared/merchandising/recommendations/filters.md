@@ -118,8 +118,6 @@ For **Less than or equal to current product price** and **Greater than or equal 
 - **Empty** or **0** means **no limit** on that side; the backend treats them the same.
 - You cannot use **0** to mean "exactly the current product price" as the boundary.
 
-This matches [!DNL Product Recommendations] on PaaS. Labels in the Admin reflect these semantics directly.
-
 ##### Set up a dynamic price filter
 
 1. [Create or edit](create.md) a **SKU-related** recommendation unit that is deployed on the **product detail** page (or another placement where a current product is always in context).
@@ -137,7 +135,7 @@ If a dynamic price filter is enabled but the storefront cannot supply a current 
 
 ##### Configurable products in preview {#configurable-products-in-preview}
 
-In the Admin **preview** panel, recommended product prices display as follows:
+In the **preview** panel, recommended product prices display as follows:
 
 - **Simple products** – Single final price from the GraphQL response.
 - **Configurable products** – If minimum and maximum variant prices differ, the preview shows a range (for example, `$min – $max`). If they are equal, a single price is shown.
