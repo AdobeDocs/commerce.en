@@ -59,7 +59,7 @@ The Recommendations Performance page displays a list of configured recommendatio
 
 ## View details
 
-1. In the table, click the (![More selector](../assets/btn-more.png)) icon next to the recommendation that you want to examine.
+1. In the table, click the (![More selector](/help/assets/ccdm-shared/recommendations/btn-more.png)) icon next to the recommendation that you want to examine.
 
 1. To change the status of the recommendation, click **Activate** or **Deactivate**.
 
