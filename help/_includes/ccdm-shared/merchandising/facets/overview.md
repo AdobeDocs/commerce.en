@@ -4,7 +4,7 @@ Facets is a method of high-performance filtering that uses multiple dimensions o
 
 ![Filtered search results](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
 
-Within a facet, shoppers can select multiple options, such as "Basic" and "Snug" under "Style" and the search results update to display only those styles. Likewise, if a shopper selects options across facets, such as "Basic" under "Style" and "Indoor" under "Climate", the search results update to display that selected style and that selected climate.
+Within a facet, shoppers can select multiple options, such as "Basic" and "Snug" under "Style" and the search results update to display only those styles. Likewise, if a shopper selects "Basic" under "Style" and "Indoor" under "Climate", the search results display those selections.
 
 Any defined facet may be used as a URL parameter and results will be filtered based on the parameter values: `http://yourstore.com?brand=acme&color=red`.
 
@@ -18,7 +18,7 @@ Facet aggregation is performed as follows: if the storefront has three facets (c
 
 ## Default attribute values
 
-The following product attributes are used by [!DNL Adobe Commerce Optimizer] and enabled by default.
+The following product attributes are enabled by default.
 
 | Property | Description | Attribute |
 |---|---|---|
@@ -39,7 +39,7 @@ With layered search you can:
 The advanced search capabilities are implemented through the `filter` parameter in the [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) using specific operators:
 
 - **Layered search**—Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
-  
+
   - **Layer 1 search**—Search for "motor" on `product_attribute_1`.
   - **Layer 2 search**—Search for "part number 123" on `product_attribute_2`. This example searches for "part number 123" within the results for "motor".
 
@@ -65,7 +65,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 1. Specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to enable for **Contains** and six attributes to enable for **Starts with**. Additionally, for the **Contains** indexation, string length is limited to 50 characters or less.
 
-1. See the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) for examples of how to update your [!DNL Commerce Optimizer] API calls using the new `contains` and `startsWith` search capabilities.
+1. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch) for examples of how to update your Merchandising Services GraphQL API calls using the new `contains` and `startsWith` search capabilities.
 
     You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. 
 

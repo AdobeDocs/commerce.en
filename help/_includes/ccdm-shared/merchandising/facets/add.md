@@ -18,7 +18,7 @@ Any filterable product attribute can be used as a facet. Facets help customers f
 
    `"filterable": true`
 
-   The facet becomes available in the storefront the next time the catalog is synchronized with [!DNL Adobe Commerce Optimizer]. If the facet isn't available after two hours, see [data sync](../../setup/data-sync.md).
+   The facet becomes available in the storefront the next time the catalog is synchronized with the Merchandising Services data layer. If the facet isn't available after two hours, see [data sync](../../setup/data-sync.md).
 
 ## Edit facet properties (optional)
 

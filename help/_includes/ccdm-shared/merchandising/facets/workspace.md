@@ -10,7 +10,7 @@ The *Facets* workspace lists all facets that are currently available and provide
 |--- |--- |
 | Create facets| Opens the [facet editor](add.md). |
 | Label | The [facet label](type.md#facet-labels) that is visible in the storefront can be edited for consistency with your brand. |
-| Sort Type | The method that is used to [sort](type.md#sort-type) facets. All [!DNL Adobe Commerce Optimizer] storefronts sort facets alphabetically and by `Count`. Options:<br />Alphabetical - Sorts facets alphabetically.<br />Count - Sorts facets based on the number of matches found. |
+| Sort Type | The method that is used to [sort](type.md#sort-type) facets. All storefronts sort facets alphabetically and by `Count`. Options:<br />Alphabetical - Sorts facets alphabetically.<br />Count - Sorts facets based on the number of matches found. |
 | Max Value | The maximum number of values that can be displayed in the storefront for each facet. Facets that represent a range of values are evenly distributed. Valid entries: 0 - 100; Default: 8. |
 
 ## Controls
