@@ -32,7 +32,7 @@ topic_v2:
 
 Catalog layers allow you to modify product data without changing the original source data. Layers modify product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to customize products safely and revert changes at any time.
 
-![Catalog Layers](../assets/catalog-layers.png)
+![Catalog Layers](/help/assets/ccdm-shared/opportunities/catalog-layers.png)
 
 ## How catalog layers work
 
