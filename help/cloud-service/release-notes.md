@@ -84,11 +84,13 @@ Learn more in [Commerce Admin in Adobe Unified Experience](https://experiencelea
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-The following items will be released to Production environments in November 10, 2026.
+The following items will be released to Production environments on November 10, 2026.
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### Apply custom attributes when adding products to the cart
+
+You can now apply custom attributes to cart items with the [`addProductsToCart` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products) by specifying an array of key/value pairs in the `CartItemInput.custom_attributes` field. <!-- ACCS-1980 -->
 
 ### Change return item attributes
 
@@ -96,6 +98,10 @@ The new `observer.rma_save_before` [webhook](https://developer.adobe.com/commerc
 
 * The payload includes return items when the save creates or edits items, such as when a return is created in the [!DNL Commerce Admin], through REST, or through the `requestReturn` GraphQL mutation.
 * The webhook runs as part of saving the return. If a required webhook fails, the return is not saved.
+
+### Exclude items from shipments
+
+The new `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) allows you to exclude order items from new shipments, such as items that a third party fulfills. <!-- ACCS-2088 -->
 
 ### Include shipping addresses
 
@@ -109,6 +115,14 @@ To create an order without a shipping address:
 ### Retrieve [!DNL AEM Assets] category images
 
 The `CategoryInterface` and `CategoryTree` GraphQL types now include an `asset_role_image` field that returns the category image assigned from [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Retrieve customer store credit balances
+
+The new `GET /V1/customers/:customerId/balance` REST endpoint returns a customer's store credit balance. This endpoint requires the [!UICONTROL Manage Store Credit Balances] permission. <!-- CCSAAS-5274 -->
+
+### Retrieve invoice item row totals
+
+The `InvoiceItemInterface` GraphQL type now includes a `row_total` field that returns the stored row subtotal for an invoice item. <!-- USF-4460 -->
 
 ### Enhancements and bug fixes
 
@@ -125,6 +139,16 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where the `requestReturn` GraphQL mutation failed when an optional return item custom attribute was sent with an empty value. <!-- CCSAAS-5628 -->
 
 * Fixed an issue where inventory processing could stop when products were deleted after an [!UICONTROL Update attributes] mass action. <!-- CCSAAS-5713 -->
+
+* Fixed an issue where abandoned cart reminder emails could send additional reminder emails. <!-- CCSAAS-5707 -->
+
+* Fixed an issue where price and back-in-stock alert emails were not sent. <!-- ACCS-2268 -->
+
+* Fixed an issue where the `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` webhook could omit `custom_attributes`. <!-- CEXT-6870, CEXT-6959 -->
+
+* Fixed an issue where the `addProductsToCart` GraphQL mutation could return an error when using the out-of-process totals collector. <!-- ACCS-2263, CEXT-6986 -->
+
+* Fixed an issue where GraphQL cart queries and mutations could return an error after a configurable product was deleted from a cart.<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 
