@@ -6,11 +6,11 @@ Facets is a method of high-performance filtering that uses multiple dimensions o
 
 Within a facet, shoppers can select multiple options, such as "Basic" and "Snug" under "Style" and the search results update to display only those styles. Likewise, if a shopper selects "Basic" under "Style" and "Indoor" under "Climate", the search results display those selections.
 
-Any defined facet can be used as a URL parameter and results are filtered based on the parameter values, for example: `<http://yourstore.com?brand=acme&color=red>`.
+Any defined facet can be used as a URL parameter and results are filtered based on the parameter values, for example: `http://yourstore.com?brand=acme&color=red`.
 
 ## Facet aggregation
 
-Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-$50.00, `categories = `promotions``)
+Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-$50.00, `categories` = `promotions`)
 
 - `categories` aggregation—Aggregates `categories`, then applies the `color` and `price` filters, but not the `categories` filter.
 - `color` aggregation—Aggregates `color`, then applies  the `price` and `categories` filters, but not the `color` filter.

@@ -9,7 +9,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. From the menu, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
 
-1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance#select-catalog-view.md).
+1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. Click **Create recommendation**.
 
@@ -65,7 +65,7 @@ To get immediate real-time feedback about the products that will be included, ex
 
 [!DNL Product Recommendations] [filter](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel can differ from those that appear in the storefront.
 
-For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](../..//setup/catalog-view.md). Learn more about how to [set the catalog view](../../manage-results/recommendation-performance#select-catalog-view) when working with recommendations.
+For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](../../setup/catalog-view.md). Learn more about how to [set the catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) when working with recommendations.
 
 ## Get recommendation ID
 
@@ -100,13 +100,13 @@ You can edit, deactivate, or delete an existing recommendation.
    - Number of products
    - Filter products
 
-   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation. To learn more, see [select catalog view](../../manage-results/recommendation-performance#select-catalog-view.md).
+   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation. To learn more, see [select catalog view](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. When complete, click **Save Changes**.
 
 ## Readiness indicators
 
-Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. They can also help you identify potential issues with [event collection](../..//setup/events/overview.md) or determine whether a recommendation type is not receiving enough traffic to generate results.
+Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. They can also help you identify potential issues with [event collection](../../setup/events/overview.md) or determine whether a recommendation type is not receiving enough traffic to generate results.
 
 Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based recommendations use catalog data only; whereas dynamic-based recommendations use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](../../setup/events/overview.md) to build personalized recommendations and to calculate their readiness score.
 
@@ -120,14 +120,14 @@ As a result of these variables, the readiness indicator percent can fluctuate. T
 
 Readiness indicators are calculated based on several factors:
 
-- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview#backup-recommendations.md)?
+- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview.md#backup-recommendations)?
 - Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products as the only items recommended across the site.
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
 - 75% or higher means that the recommendations suggested for that recommendation type are highly relevant.
 - At least 50% means that the recommendations suggested for that recommendation type are less relevant.
-- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview#backup-recommendations) are used.
+- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backup-recommendations) are used.
 
 Learn more about [why readiness indicators can be low](#what-to-do-if-the-readiness-indicator-is-low).
 

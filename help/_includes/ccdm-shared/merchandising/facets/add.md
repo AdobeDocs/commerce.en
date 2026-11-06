@@ -48,7 +48,7 @@ The pin changes color when clicked and is used to move the facet to either the *
 
 >[!NOTE]
 >
->Pinned facet ordering is inconsistent if there are two labels with the same name.
+>Pinned facet ordering may be inconsistent if there are two labels with the same name.
 
 ## Delete facets
 
@@ -65,4 +65,4 @@ The pin changes color when clicked and is used to move the facet to either the *
 ## Additional information
 
 - To configure price faceting intervals and groupings, see [Settings](../../settings.md).
-- Learn more about the [types](types.md) of facets.
+- Learn more about the [types](type.md) of facets.
