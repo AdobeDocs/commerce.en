@@ -709,21 +709,6 @@ entries:
   labels:
   - core-saas
   - major-update
-- description: "- Improved [Configure AEM Assets for Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco)
-    onboarding so AEM Assets setup comes before tenant registration, with clearer
-    guidance on dedicated catalog layers and layer-related limitations.<br/>- Updated
-    [Configure the AEM Assets project](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
-    with reordered installation steps and Cloud Manager screenshots for repository
-    access and pipeline deployment.<br/>- Clarified IMS-based Program ID and Environment
-    ID selection in [Configure the integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)."
-  versions: ''
-  type: major-update
-  date: May 28, 2026
-  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/603
-  merge_commit: de94aaad29313b3e8254d11d8801ba0d7efff3dc
-  contributor: del_adobe
-  labels:
-  - major-update
 - description: Added release notes for API updates to [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
     and Commerce [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
     for the May 20, 2026 release which now enforces the documented the 100-SKU limit
@@ -1163,17 +1148,6 @@ entries:
   membership:
   labels:
   - feedback
-- description: Added a new topic about the [integration of AEM Assets with Adobe Commerce
-    Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco).
-  versions: ''
-  type: new-topic
-  date: March 2, 2026
-  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/442
-  merge_commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
-  contributor: del
-  membership:
-  labels:
-  - new-topic
 - description: Updated [Bulk data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion)
     with an important note that Catalog configuration is not imported automatically.
   versions: ''
