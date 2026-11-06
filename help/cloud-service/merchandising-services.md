@@ -46,4 +46,6 @@ Order processing does not change. Cart, checkout, and order management work as t
 
 ## Availability
 
-New [!DNL Adobe Commerce as a Cloud Service] projects include Merchandising Services by default. Existing projects keep their current catalog services and are not changed automatically. To discuss options for an existing project, contact your Adobe account team.
+New [!DNL Adobe Commerce as a Cloud Service] projects include Merchandising Services by default. Existing projects keep their current catalog services and are not changed automatically.
+
+If you are a new [!DNL Adobe Commerce as a Cloud Service] customer, Merchandising Services will be included by default. If you prefer to implement the original data model, contact your Adobe account team to determine if it is possible to opt out.
