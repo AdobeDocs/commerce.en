@@ -17,7 +17,6 @@ nudge: true
   - [Check for extension updates](get-started/check-for-updates.md)
   - [Configure the integration](get-started/setup-synchronization.md)
   - [Configure IMS user permissions](get-started/permissions.md)
-  - [Configure Commerce Optimizer](get-started/configure-aco.md)
   - [Configure your storefront](get-started/configure-storefront.md)
   - [View and manage logs](get-started/logs.md)
   - [View AEM Assets sync status](get-started/sync-status.md)

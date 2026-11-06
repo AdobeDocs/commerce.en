@@ -2,8 +2,56 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 16 15:39:51 2026
+updated: Mon Oct 26 14:57:56 2026
 entries:
+- description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
+    from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
+  versions: ''
+  type: technical
+  date: October 26, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/842
+  merge_commit: fd4ea4603999043844c786da3ab1e84fb8d4d4aa
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: "<br/>Payment Services 2.17.0 documentation adds guidance for the optional
+    [PayPal Express review page](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page)
+    and [overcapture](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/manage/over-capture),
+    including configuration, eligibility, and invoicing workflows."
+  versions: ''
+  type: major-update
+  date: October 23, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/835
+  merge_commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+  contributor: del_adobe
+  labels:
+  - major-update
+- description: Added the [Commerce Information Center](https://experienceleague.adobe.com/en/docs/commerce/information-center/overview),
+    a new starting point for customers and partners to explore Adobe Commerce offerings,
+    compare implementation architectures, and plan migrations and integrations. Includes
+    role-based navigation and implementation guides for storefronts, payments, Commerce
+    services, AEM Assets, Adobe Commerce Optimizer, sandbox environments, and Adobe
+    Experience Platform, with links to detailed product documentation.
+  versions: ''
+  type: major-update, new-topic
+  date: October 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/824
+  merge_commit: fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4
+  contributor: meker_adobe
+  labels:
+  - major-update
+  - new-topic
+- description: Updated the [shared responsibility](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/security/shared-responsibility)
+    table for Adobe Commerce as a Cloud Service to include Adobe Managed Services.
+  versions: ''
+  type: major-update
+  date: October 21, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/828
+  merge_commit: 56bb1f5c9723842386af60afe5611c85213f4aeb
+  contributor: jhoover_adobe
+  labels:
+  - major-update
 - description: Updated Merchandising Rules documentation to rename the All product
     listings rule type to Default search rule in [Merchandising Rules Overview](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview),
     [Create and Manage Rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add),
@@ -661,21 +709,6 @@ entries:
   labels:
   - core-saas
   - major-update
-- description: "- Improved [Configure AEM Assets for Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco)
-    onboarding so AEM Assets setup comes before tenant registration, with clearer
-    guidance on dedicated catalog layers and layer-related limitations.<br/>- Updated
-    [Configure the AEM Assets project](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
-    with reordered installation steps and Cloud Manager screenshots for repository
-    access and pipeline deployment.<br/>- Clarified IMS-based Program ID and Environment
-    ID selection in [Configure the integration](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)."
-  versions: ''
-  type: major-update
-  date: May 28, 2026
-  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/603
-  merge_commit: de94aaad29313b3e8254d11d8801ba0d7efff3dc
-  contributor: del_adobe
-  labels:
-  - major-update
 - description: Added release notes for API updates to [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
     and Commerce [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
     for the May 20, 2026 release which now enforces the documented the 100-SKU limit
@@ -1115,17 +1148,6 @@ entries:
   membership:
   labels:
   - feedback
-- description: Added a new topic about the [integration of AEM Assets with Adobe Commerce
-    Optimizer](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco).
-  versions: ''
-  type: new-topic
-  date: March 2, 2026
-  link: https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/442
-  merge_commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
-  contributor: del
-  membership:
-  labels:
-  - new-topic
 - description: Updated [Bulk data migration tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion)
     with an important note that Catalog configuration is not imported automatically.
   versions: ''

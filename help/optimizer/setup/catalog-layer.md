@@ -62,8 +62,6 @@ Catalog layers are commonly used for:
 
 ## AEM-Assets layer
 
-When you enable [Product Visuals](product-visuals.md), the AEM Assets Integration automatically creates and manages a catalog layer dedicated exclusively to AEM Assets content. The default layer name is `AEM-Assets`; however, you can specify a custom name during [onboarding in the AEM Assets integration](../../aem-assets-integration/get-started/configure-aco.md).
-
 This layer contains product images synchronized from AEM Assets. Like other catalog layers, it is populated via the [Product Layers API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. The Assets Integration Service transforms AEM asset metadata and delivery URLs into the API format and sends the data automatically when assets are approved in AEM Assets.
 
 The integration supports one source per tenant (one locale + one layer).

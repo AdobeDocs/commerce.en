@@ -57,6 +57,12 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.6.0 Release
+
+_October 21, 2026_
+
+![New](../assets/new.svg) **Product review summary attributes**–Added system-managed product attributes for approved review count (`ac_review_count`) and average rating (`ac_rating_summary`). When review summary synchronization is enabled, these values are exported to Catalog Service so storefronts can display review counts and star ratings. <!--MDEE-1414-->
+
 ### 103.5.2 Release
 
 _October 19, 2026_
