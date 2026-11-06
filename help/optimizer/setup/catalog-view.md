@@ -137,7 +137,7 @@ To update or view the properties of existing catalog views, follow these instruc
 
 This option provides a quick way to see all the catalog view parameters, while staying on the **[!UICONTROL Catalog views]** table.
 
-In the **[!UICONTROL Catalog views]** workspace, select the ![information icon](../assets/info-icon.png) for a catalog view to view its configuration details.
+In the **[!UICONTROL Catalog views]** workspace, select the ![information icon](/help/assets/ccdm-shared/recommendations/info-icon.png) for a catalog view to view its configuration details.
 
 ![Catalog view details](../assets/catalog-view-details.png)
 
