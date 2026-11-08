@@ -4,6 +4,18 @@ description: Using Catalog Adapter to render prices from Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Catalog Adapter
 
@@ -23,7 +35,7 @@ When you enable the [!DNL Catalog Adapter], price indexing and operations are af
 
 ## Requirements
 
-- Adobe Commerce 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. For details, see [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - Your Adobe Commerce environment must have one of the following Commerce services enabled and configured:
 
   - [Live Search](../live-search/install.md)
@@ -34,9 +46,9 @@ When you enable the [!DNL Catalog Adapter], price indexing and operations are af
 
 The Catalog Adapter extension is a Composer metapackage that installs the following modules:
 
-- **Price Indexer Disabler**–This module disables the price index in the Commerce application so that prices are delivered via SaaS price indexing. The product price indexer in the Commerce application cannot be turned on when the SaaS price indexing extension is installed.
-- **Prices Provider**–This module provides prices for products from the Adobe Commerce Service. It forms the search query and obtains the prices for the products on the frontend.
-- **Catalog Service Search Adapter**–This module transfers prices from the Adobe Commerce application to an Adobe Commerce Service in response to a product search request.
+- **Price Indexer Disabler** – This module disables the price index in the Commerce application so that prices are delivered via SaaS price indexing. The product price indexer in the Commerce application cannot be turned on when the SaaS price indexing extension is installed.
+- **Prices Provider** – This module provides prices for products from the Adobe Commerce Service. It generates the search query and obtains the prices for the products on the frontend.
+- **Catalog Service Search Adapter** – This module transfers prices from the Adobe Commerce application to an Adobe Commerce Service in response to a product search request.
 
 ## Installation steps
 
@@ -50,7 +62,7 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
 
    >[!NOTE]
    >
-   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
 
@@ -80,7 +92,7 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
    git push origin <branch-name>
    ```
 
-   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-premises]
 
@@ -130,7 +142,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Disable Product Price indexer for Headless Storefront scenario
 
-If you have a headless Commerce instance, you might need to disable the Adobe Commerce product price indexer to reduce load on your Adobe Commerce instance. You can complete this task by installing the `magento/module-price-indexer-disabler` module:
+If you have a headless Commerce instance, disable the Adobe Commerce product price indexer to reduce load on your Adobe Commerce instance. You can complete this task by installing the `magento/module-price-indexer-disabler` module:
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -157,7 +169,7 @@ The following are some common `[!DNL Catalog Adapter]` scenarios.
 
 ### Headless Commerce instances
 
-- A merchant with a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
+- A merchant using a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
 - No reliance on the default Adobe Commerce product price indexer
 
 1. Install the `magento/module-price-indexer-disabler` module from the [!DNL Catalog Adapter] package.

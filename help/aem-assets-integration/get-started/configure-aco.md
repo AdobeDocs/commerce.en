@@ -1,7 +1,23 @@
 ---
 title: Configure AEM Assets for Commerce Optimizer
 description: Learn how to configure AEM Assets Integration for [!DNL Adobe Commerce Optimizer].
+hide: true
 feature: CMS, Media, Configuration, Integration
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Configure AEM Assets for [!DNL Adobe Commerce Optimizer]
@@ -10,104 +26,91 @@ feature: CMS, Media, Configuration, Integration
 
 The AEM Assets Integration for [!DNL Adobe Commerce Optimizer] enables merchants to use AEM Assets as the centralized digital asset management solution for product images. This guide covers the configuration specific to [!DNL Commerce Optimizer].
 
-Unlike Adobe Commerce (PaaS) or Adobe Commerce as a Cloud Service (ACCS), [!DNL Commerce Optimizer] does not have an Admin configuration UI. To enable the integration, create a support ticket with your [!DNL Adobe Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets Integration Service.
-
 The following diagram is an overview of the product sync between [!DNL Adobe Commerce Optimizer] and the AEM Assets integration.
 
 ![AEM Assets to [!DNL Commerce Optimizer] flow](../assets/aco-asset-sync-architecture.png){width="700"}
 
-This integration has two main flows:
+This integration has two independent event flows. Both use [Adobe I/O Events](https://developer.adobe.com/events/docs/) to transfer events to the Assets Integration Service, but each direction uses its own event provider:
 
-* **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to the Commerce Optimizer, where they are stored as product layers.
+* **From AEM Assets to the Assets Integration Service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets Integration Service. The service matches assets to products using `match-by-SKU` (metadata-driven) or a [custom matcher (App Builder)](../synchronize/custom-match.md){target=_blank}, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From [!DNL Adobe Commerce Optimizer]**: When a product is updated in [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to the [!DNL Adobe Commerce Optimizer].
+  >[!NOTE]
+  >
+  >The `AEM-Assets` catalog layer used by the integration is created automatically during onboarding. You do not need to create it beforehand. For background on how catalog layers work and how the AEM-Assets layer behaves, see [AEM-Assets layer](../../optimizer/setup/catalog-layer.md#aem-assets-layer).
+
+* **From [!DNL Adobe Commerce Optimizer] to the Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
+
+## Limitations
+
+The [!DNL Commerce Optimizer] integration has the following limitations:
+
+### Layer-related constraints
+
+* Use a dedicated layer for AEM Assets content.
+
+  Payloads sent from AEM Assets populate a Commerce Optimizer catalog layer. Values in that layer overwrite base catalog attributes where fields are supplied. When the integration omits a field in the payload, the corresponding values in that layer can be overwritten with empty values. Sharing a layer with unrelated Commerce workflows—or reusing a layer that already stores non–AEM-Assets product data—can cause **unintended data loss** or confusing overwrites. Reserve the layer name (for example the default **`AEM-Assets`**) primarily for AEM-driven product image sync.
+
+* The integration supports one catalog source per tenant: a single locale and one named layer. Configuring multiple AEM-Assets layers or multiple locales for the same tenant is not supported at this time.
+
+* Reusing an existing layer or sharing a layer with unrelated workflows is a frequent cause of preventable support cases.
+
+### Other constraints
+
+* **Images only**: The integration does not support video or other media types at this stage.
+* **No category images**: Category image synchronization is not available. Category images from AEM Assets for the Assets Selector (UI insertion) are not supported.
+* **No multi-site distinction**: The integration does not handle multi-site; an image associated with a product is shown the same across all channels and policies.
+* **Image position / ordering**: Image position and ordering are not supported.
+* **Product must exist**: If the product does not exist in [!DNL Commerce Optimizer], the layer is not created for that product-asset mapping.
 
 ## Prerequisites
 
 Before configuring the integration, ensure you have:
 
-* An active [!DNL Adobe Commerce Optimizer] instance with Product Visuals entitlement, or any AEM Assets license with Dynamic Media.
+* An active [!DNL Adobe Commerce Optimizer] instance with the **Product Visuals** entitlement (bundles Dynamic Media with OpenAPI capabilities + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)), or a customer-provided AEM Assets license (for example, **AEM Assets Ultimate**) with Dynamic Media enabled.
 * Access to an AEM Assets as a Cloud Service environment.
 * Both [!DNL Commerce Optimizer] and AEM Assets in the same Adobe IMS Organization.
-* Dynamic Media with OpenAPI enabled on your AEM Assets environment.
+* Dynamic Media with OpenAPI enabled on your AEM Assets environment (see [Configure the AEM Assets project](configure-aem.md#prerequisites) for enablement steps).
+
+### Configure AEM Assets first
+
+To support the integration, configure the AEM Assets project and environments before you begin the process to onboard the AEM Assets Integration with [!DNL Commerce Optimizer]. This includes enabling Dynamic Media with OpenAPI capabilities, and making the Commerce metadata schemas, events, and UI available in your AEM project.
+
+* [!BADGE Recommended]{type=Positive} On AEM release `2026.5.26309` and later, enable the integration from Cloud Manager with no code deployment. Follow [Enable the Commerce integration (self-service)](configure-aem.md#enable-aem-commerce-self-service).
+
+* On earlier AEM releases, deploy the `assets-commerce` package manually.
+Follow [Install the assets-commerce package manually](configure-aem.md#install-the-assets-commerce-package-manually).
+
+>[!TIP]
+>
+> You can check the current AEM version from the top right menu: **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
 
 ## Onboarding
 
-To onboard AEM Assets Integration with [!DNL Commerce Optimizer], you must [Create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
-
-Adobe Support uses the information in your ticket to register your tenant with the Assets Integration Service, and configure the integration.
-
-Include the following information in your support ticket:
-
-* **[!DNL Adobe Commerce Optimizer] Tenant ID** (Instance ID) found in your [!DNL Commerce Optimizer] URL or Commerce Cloud Manager UI.
-* **AEM Program ID**.
-* **AEM Environment ID**.
-* **Matching rule**: Match by SKU or [external matcher (App Builder)](../synchronize/custom-match.md){target=_blank}.
-* **Layer**: The catalog layer name to register the tenant with. Specify a custom name if needed. Otherwise, the default `AEM-Assets` is used.
-* **Locale**: The catalog source locale to register the tenant with (for example, `en-US`).
-
 >[!IMPORTANT]
 >
-> The integration supports one source per tenant, which is the combination of one locale and one layer.
+>Before you submit a support ticket to enable the integration with [!DNL Commerce Optimizer], complete the process to [Configure AEM Assets](#configure-aem-assets-first). Support requires the AEM Assets environments and project to be configured to support the AEM Commerce integration, including the deployment of the `assets-commerce` package (or self-service equivalent) for metadata and events. Opening a ticket before AEM is configured can delay onboarding.
 
-After Adobe Support processes your ticket, the integration is configured and your tenant is registered with Assets Integration Service.
+To onboard AEM Assets Integration with [!DNL Commerce Optimizer], Adobe Support must register your Adobe Commerce Optimizer instance with the Assets Integration Service and subscribe it to:
 
-Once onboarding is complete:
+* AEM Assets events (asset approved, updated, removed)
+* [!DNL Commerce Optimizer] catalog events (product created, updated)
 
-1. **Registration with Assets Integration Service**: Your [!DNL Commerce Optimizer] tenant is registered with Assets Integration Service using the [!DNL Adobe Commerce Optimizer] Tenant ID, AEM Program ID, AEM Environment ID, and  tenant.
+To initiate this process, [create a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) that includes the following information:
 
-1. **Event subscription**: Assets Integration Service subscribes to:
+* **[!DNL Adobe Commerce Optimizer] Tenant ID** (Instance ID) found in your [!DNL Commerce Optimizer] URL or Commerce Cloud Manager UI.
+* **AEM Program ID and Environment ID** that you set up when you [configured AEM Assets](#configure-aem-assets-first) for the integration.
+* **Matching rule**: Match by SKU or [external matcher (App Builder)](../synchronize/custom-match.md){target=_blank}.
+* **Layer**: The catalog layer name to register the tenant with (see **Layer-related constraints**). Specify a custom name only if intentional; otherwise the default **`AEM-Assets`** is used.
+* **Locale**: The catalog source locale to register the tenant with (for example, `en-US`). This locale must match the locale you use in your catalog view and product catalog data.
 
-   * AEM Assets events (asset approved, updated, removed)
-   * [!DNL Commerce Optimizer] catalog events (product created, updated)
+### Configure your catalog view
 
-### Limitations
+After the [!DNL Commerce Optimizer] tenant is registered, configure your catalog view so the storefront and APIs surface AEM-driven image data:
 
-The [!DNL Commerce Optimizer] integration has the following limitations:
+* **Select the Catalog source (locale)** — Select the same locale you specified in your support ticket (for example **`en-US`**). The integration registers one locale per tenant; a mismatch prevents synced images from appearing in the intended catalog view.
+* **Assign the Catalog layer** — Assign the **`AEM-Assets`** layer (or your custom layer name from the ticket) to that catalog view.
 
-* **Single layer per merchant**—The AEM Assets Integration supports one AEM-Assets layer per merchant (one source per tenant). Configuring multiple layers per merchant is not supported at this time.
-* **Images only**—The integration does not support video or other media types.
-* **No category images**—Category image synchronization is not available. Category images from AEM Assets for the Assets Selector (UI insertion) are not supported.
-* **No multi-site distinction**—The integration does not handle multi-site; an image associated with a product is shown the same across all channels and policies.
-* **Image position/ordering**—Image position and ordering are not supported.
-* **Product must exist**—If the product does not exist in [!DNL Commerce Optimizer], the layer will not be created for that product-asset mapping.
-* **Layer field overwriting**—Values in a layer overwrite the base catalog. If a field is not sent in the layer payload, it can be overwritten with an empty value. Use a dedicated layer for AEM Assets content; reusing an existing layer for other purposes may result in unintended data loss.
-
-### Configure your AEM Assets
-
-The AEM Assets installation and configuration process for [!DNL Commerce Optimizer] is the same as for Adobe Commerce as a Cloud Service. See [Configure the AEM Assets project to support Commerce metadata](configure-aem.md) for the complete steps.
-
-Ensure your AEM Assets environment is ready:
-
-1. **AEM Assets configuration**: Configure the Commerce metadata profile. See [Configure a metadata profile](configure-aem.md#step-2-optional-configure-a-metadata-profile).
-
-1. **Dynamic Media enablement**: Verify Dynamic Media with OpenAPI capabilities is enabled on your AEM Assets environment.
-
-## Configure AEM Assets
-
-To enable product-asset synchronization, configure your AEM Assets environment.
-
-### Step 1: Enable Dynamic Media with OpenAPI
-
-Dynamic Media with OpenAPI must be enabled on your AEM Assets environment. Product Visuals and new AEM Assets licenses allow you to enable it in a self-service manner via Cloud Manager. Older AEM Assets licenses require Adobe Support to enable it. See [Configure the AEM Assets project](configure-aem.md#prerequisites) for enablement steps.
-
-### Step 2: Optional. Configure Commerce metadata profile
-
-Set up the metadata profile in AEM Assets to store Commerce-specific metadata.
-
-See [Configure a metadata profile](configure-aem.md#step-2-optional-configure-a-metadata-profile) for detailed instructions.
-
-### Step 3: Apply metadata to assets
-
-Add Commerce metadata to your product images in AEM Assets.
-
-See the [AEM Commerce package contents](configure-aem.md#aem-commerce-assets-commerce-package-contents) for field definitions and [Configure a metadata profile](configure-aem.md#step-2-optional-configure-a-metadata-profile) for the setup steps.
-
-The asset must be in an **approved** status for the data sync to trigger. Saving metadata alone does not trigger the event.
-
->[!CAUTION]
->
-> Assign the `AEM-Assets` layer to your [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). If the layer is not assigned, product image data may be overwritten unexpectedly.
+If the locale or layer is not assigned correctly, image data does **not appear** or behaves unexpectedly—even though sync succeeded upstream.
 
 ## Synchronization
 
@@ -125,11 +128,11 @@ A typical flow when adding an existing asset to a new product:
 
 1. Add the product SKU to the **commerce:skus** metadata and assign image roles (for example, `thumbnail`, `image`).
 
-1. Approve the asset for delivery. This triggers the event that Assets Integration Service processes.
+1. Approve the asset for delivery. This triggers the event that the Assets integration service processes.
 
-1. Assets Integration Service sends the product-image mapping to [!DNL Commerce Optimizer]. The product in [!DNL Commerce Optimizer] is updated with the images from the asset.
+1. The Assets Integration Service sends the product-image mapping to [!DNL Commerce Optimizer]. The product in [!DNL Commerce Optimizer] is updated with the images from the asset.
 
-1. Verify the image is visible. Allow time for the sync to complete (typically within a few minutes), then check the product in the [!DNL Commerce Optimizer] UI (for example, Data Sync or catalog view), or query the storefront APIs (Catalog Service, Live Search, Storefront GraphQL API) to confirm the image is returned.
+1. Verify the image is visible. Wait a few minutes for the sync to complete, then check the product in the [!DNL Commerce Optimizer] UI or query the storefront APIs to confirm the image is returned.
 
 ## Image role handling
 

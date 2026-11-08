@@ -1,7 +1,28 @@
 ---
-title: '[!DNL Product Recommendations] Workspace'
+title: "[!DNL Product Recommendations] Workspace"
 description: Learn how to configure, manage, and monitor product recommendation performance.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # [!DNL Product Recommendations] Workspace
 
@@ -18,18 +39,18 @@ _Recommendations Workspace_
 
 To ensure that each functional area on the workspace contains the correct data, you need to configure data collection based on the selected storefront implementation:
 
-1. Luma - Data collection is available out-of-the-box.
+1. Luma - Data collection is available by default.
 1. Headless - Data collection must be configured manually, depending on storefront implementation.
 
-If you are using a headless storefront, refer to the following documentation to get more information about the required events that you need to add:
+To get more information about the required events that you need to add if you are using a headless storefront, refer to the following documentation:
 
 - [Required events](events.md) for Product Recommendations dashboard.
-- [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) that needs to be added as a prerequisite.
+- [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework) that needs to be added as a prerequisite.
 - [Examples](https://github.com/adobe/commerce-events/tree/main/examples) of the events structure.
 
 ## Set the scope
 
-Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your recommendations apply.
+Initially the [scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) where your recommendations apply.
 
 ## Set metrics date range
 

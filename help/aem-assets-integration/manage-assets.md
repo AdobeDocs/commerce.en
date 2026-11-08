@@ -3,6 +3,32 @@ title: Manage assets
 description: Use the AEM Assets Integration for Commerce to manage media assets for your storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
+TQID: 'https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
 ---
 # Manage Commerce media assets
 
@@ -41,7 +67,7 @@ Product images are automatically pulled from AEM Assets based on pre-configured 
    >[!NOTE]
    >
    > A message indicates that the integration is enabled, making this a **read-only** section as image management is centralized in the DAM.
-   
+
    To configure product assets (link images to SKUs), open your AEM Assets author instance and click **Assets** from the main view. See [Default automatic matching](synchronize/default-match.md) for the metadata configuration steps.
 
 ### Manage product images in AEM Assets
@@ -52,6 +78,14 @@ To learn how to link assets to products in AEM Assets (including metadata config
 
 * [Default automatic matching](synchronize/default-match.md)
 * [Custom automatic matching](synchronize/custom-match.md).
+
+### Manage localized alt text
+
+You author localized alt text in AEM Assets, not in the Commerce product media gallery. Add a row for each Commerce store view in the **[!UICONTROL Alt Texts]** field. Include an alt text value for this image, such as "White T-Shirt", then click **[!UICONTROL Save & Close]** so the existing synchronization process transfers the values to Commerce.
+
+Commerce stores each synchronized value in the standard image **[!UICONTROL Label]** field. Alt-text localization does not change the asset assignment, image role, or gallery position. Customer-created database fields such as `alt_text` are outside the standard integration scope.
+
+![Adobe Experience Manager Alt Texts](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### Synchronization SLAs
 
@@ -87,7 +121,7 @@ The association to the selected image will be stored in Adobe Commerce as a dire
 
 >[!TIP]
 >
-> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} also provides an Asset selector to enrich data.
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} also provides an Asset selector to enrich data.
 
 ## Product videos
 
@@ -131,7 +165,7 @@ For information about synchronization timing, see the [Synchronization SLA](get-
 
 ## Category images
 
-Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The AEM Assets integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels. 
+Adobe Commerce enables merchants to associate images with product categories, helping create a visually engaging storefront. The AEM Assets integration leverages the AEM Asset Selector, enabling marketers to seamlessly select assets directly from the **Digital Asset Management system (DAM)**. This ensures that only approved images are used and eliminates the need to store them in Adobe Commerce, maintaining consistency and efficiency across all engagement channels.
 
 ### Use AEM Asset Selector for category images
 
@@ -162,6 +196,8 @@ After you configure the [AEM Asset Selector](synchronize/asset-selector-integrat
 ## Update an asset
 
 After you update and approve an asset in AEM Assets, the updates are automatically sent to Adobe Commerce using the automated matching capability. This process is triggered upon asset approval. To ensure all final changes and metadata updates are included, make sure to reprocess the asset before approving it.
+
+When you change the role or position values on an already-synchronized asset, Commerce updates the existing role assignment instead of adding a duplicate. If a synchronization attempt fails, check the Commerce logs for the error before retrying. After the update completes, verify the change on the product's **Images And Videos** section and confirm the asset appears in the expected role and position in the media gallery.
 
 For the Commerce-side workflow to link assets to products via metadata, see the [Default automatic matching](synchronize/default-match.md) topic.
 

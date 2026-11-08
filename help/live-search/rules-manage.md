@@ -2,6 +2,16 @@
 title: Manage Search Merchandising rules
 description: Learn how to manage existing Search Merchandising rules.
 exl-id: f831e77c-95e3-4d55-bc33-1a1247db22f8
+TQID: https://experienceleague.adobe.com/zXda40dPXU4loN41pLfHO76Q3D1LFLfn34ob0QsGWNY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage Search Merchandising rules
 

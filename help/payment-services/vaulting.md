@@ -3,6 +3,25 @@ title: Credit Card Vaulting
 description: Shoppers can vault (save) their credit card details for future purchases.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Credit Card Vaulting
 
@@ -67,13 +86,15 @@ You can only use vaulted cards in the Admin if the customer has both an existing
 
 To create an order in the Admin for a customer using their vaulted credit card:
 
-1. [Create an order and add products](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. [Create an order and add products](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
 1. In _[!UICONTROL Payment & Shipping Information]_, select **[!UICONTROL Stored Cards]** as the payment method.
 1. Select the desired vaulted credit card payment method.
-1. After completing any other necessary steps for the order, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. After completing any other necessary steps for the order, [submit it](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Use vaulted credit card in Admin for customer](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Security
 
 Minimal credit card information is shared with the shopper; they only see the last four digits, expiration date, and brand of their vaulted credit card. Credit card information is stored with the payment provider to satisfy [PCI](security.md#pci-compliance) compliance standards.
+
+In [!DNL Payment Services] 2.17.0 or later, shoppers paying with a saved credit card may be asked to complete a [3D Secure (3DS) authentication challenge](security.md#3ds) required by their card issuer. Saving a card does not bypass issuer-required authentication.

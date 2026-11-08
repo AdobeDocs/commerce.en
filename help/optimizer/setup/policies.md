@@ -4,6 +4,20 @@ description: Learn how to create and manage policies in [!DNL Adobe Commerce Opt
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Policies
 
@@ -46,6 +60,28 @@ Policies with a **Value source** of **TRIGGER** are referred to as exclusive pol
 - `AC-Policy-Model`
 
 If the shopper clicks the **Brand** drop-down, the header of the API call contains `AC-Policy-Brand`, which is configured to only show products specific to the `AC-Policy-Brand` policy.
+
+### Multi-value HTTP header triggers {#multi-value-http-header-triggers}
+
+A trigger policy using the `HTTP_HEADER` transport type can receive multiple values in a single header. The values must be separated with commas and the filter operator must be `IN`. Each value is treated as an acceptable match. The values are evaluated with `OR` semantics.
+
+For example, a policy filter using `IN` with the following header:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+matches products whose `vehicle` attribute is either `UNIVERSAL` or `veh-bolt-mammoth-limited-2025`.
+
+Whereas a filter operator of `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` is rejected with a validation error. 
+
+#### Syntax notes
+
+- The header name matches the trigger name you configure, for example `AC-Policy-Vehicle`.
+- Commas separate individual values within the header. When the same `AC-Policy-_Name_` header appears more than once, its values will be combined into a single comma-separated header value
+- The filter operator is `IN`.
+- A policy filter with **Value source** set to `TRIGGER`.
+- A trigger whose **Transport type** is `HTTP_HEADER`.
 
 ## Create policy
 

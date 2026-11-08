@@ -3,6 +3,27 @@ title: Create and Manage Recommendations
 description: Learn how to create and manage recommendations.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
+TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Create and Manage Recommendations
 
@@ -17,15 +38,13 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
-   >[!IMPORTANT]
-   >
-   >This feature is currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta participants will need to recreate any existing recommendation units to take advantage of the new catalog view scope.
-
 1. Click **Create recommendation**.
 
    The recommendation you create will be available in the catalog view you previously selected.
 
 1. In the _Name your Recommendation_ section, enter a descriptive name for internal reference, such as `Home page most popular`.
+
+1. In the **Storefront reference** section, enter a reference key to identify this recommendation unit in your storefront configuration. After you create the recommendation, you can [copy its value](#get-the-storefront-reference-key) from the **Recommendation Unit details** and use it as the `referenceKey` in the recommendations block. The Reference Key is for storefront configuration; the Storefront display label is the text shoppers see.
 
 1. In the _Select Recommendation type_ section, specify the [type of recommendation](types.md) you want based on your strategy.
 
@@ -45,7 +64,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    - **Activate** to enable the recommendation unit on your storefront.
 
-   Your recommendation appears on the Recommendations workspace. To use your recommendation on your storefront, you need to find the [recommendation ID](#get-recommendation-id).
+   Your recommendation appears on the Recommendations workspace. To use your recommendation on your storefront, you need the [recommendation ID or reference key](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
@@ -77,21 +96,17 @@ As you create your recommendation unit, experiment with the recommendation type 
 
 For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](../../setup/catalog-view.md). Learn more about how to [set the catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) when working with recommendations.
 
-## Get recommendation ID
+## Get the storefront reference key
 
-After creating a recommendation, you need to retrieve its ID to implement the recommendation unit on your storefront.
+After creating a recommendation, use its reference key to configure the recommendation unit on your storefront.
 
-1. On the **Recommendations** page, select the recommendation.
+1. On the **Recommendations** page, click the information icon (![Info icon](../../assets/info-icon.png)) next to the recommendation name to open the **Recommendation Unit details** page.
 
-1. Click the information icon (![Info icon](../../assets/info-icon.png)) next to the recommendation name.
+   ![Get Recommendation ID](../../assets/get-ref-id.png)
 
-   The **Recommendation Unit details** page displays.
+1. Copy the value from the **Storefront reference key** section.
 
-   ![Get Recommendation ID](../../assets/get-rec-id.png)
-
-1. In the **Recommendation ID** section, copy the ID.
-
-1. Use this ID to configure the [recommendation drop-in](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
+1. In the storefront `product-recommendations` block, use this reference key to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
 ## Manage existing recommendations
 
@@ -106,6 +121,7 @@ You can edit, deactivate, or delete an existing recommendation.
 1. In the menu, you can **Deactivate**, **Delete**, or **Edit** the recommendation. If you select **Edit**, you can adjust the following settings as needed:
 
    - Recommendation name
+   - Reference Key
    - Storefront label
    - Number of products
    - Filter products
@@ -190,7 +206,7 @@ A low readiness percentage indicates that there are not many products from your 
 
 >[!IMPORTANT]
 >
->_Bundle_, _grouped_, and custom product types are not supported. If your catalog contains a large number of these product types, you can expect a low readiness score. Additionally, any SKUs with spaces can reduce recommendation relevancy and should be avoided.
+>Any SKUs with spaces can reduce recommendation relevancy and should be avoided.
 
 The following lists possible reasons and solutions to common low readiness scores:
 

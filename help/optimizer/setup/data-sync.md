@@ -1,12 +1,26 @@
 ---
-title: Data sync
+title: Data Sync
 description: Review the catalog data that is being synchronized from your Commerce data source into [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
+TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-# Data Sync
+# Data sync
 
 The **Data Sync** page displays an overview of the synchronization status for product data transferred from your data source (your existing Commerce catalog, Product Information Management (PIM) system, Enterprise Resource Planning (ERP) system, and so on) into [!DNL Adobe Commerce Optimizer].
 
@@ -18,21 +32,21 @@ The **Data Sync** page is located at *Setup* > **Data sync**.
 
 The **Data Sync** page contains the following fields:
 
-|Field|Description|
-|--- |--- |
-| Catalog source | Specific locale for the synced data.|
-|[!DNL Catalog Service]|Displays the latest sync update, the total products received, a search field, and a table of the synced products for [!DNL Catalog Service].|
-|Product Discovery|Displays the latest sync update, the total products received, a search field, and a table of the synced products for Search.|
-|Recommendations|Displays the latest sync update, the total products received, a search field, and a table of the synced products for Recommendations.|
-|Products received in the last 3 hours|Displays the number of products that have been transferred from the catalog source to [!DNL Adobe Commerce Optimizer] within the last three hours. If you make infrequent updates to your catalog, this value is frequently zero.|
-|Total products in catalog|Reflects the total number of catalog products available to [!DNL Adobe Commerce Optimizer].|
-|Synced products|Provides details about the products synced to [!DNL Adobe Commerce Optimizer]. By default, this table is sorted by 'Last Updated'. To find a specific product, use the **[!UICONTROL Search by Name or SKU]** field.|
+| Field | Description |
+| --- | --- |
+| Catalog source | Specific locale for the synced data. |
+| [!DNL Catalog Service] | Displays the latest sync update, the total products received, a search field, and a table of the synced products for [!DNL Catalog Service]. |
+| Product Discovery | Displays the latest sync update, the total products received, a search field, and a table of the synced products for Search. |
+| Recommendations | Displays the latest sync update, the total products received, a search field, and a table of the synced products for Recommendations. |
+| Products received in the last 3 hours | Displays the number of products that have been transferred from the catalog source to [!DNL Adobe Commerce Optimizer] within the last three hours. If you make infrequent updates to your catalog, this value is frequently zero. |
+| Total products in catalog | Reflects the total number of catalog products available to [!DNL Adobe Commerce Optimizer]. |
+| Synced products | Provides details about the products synced to [!DNL Adobe Commerce Optimizer]. By default, this table is sorted by 'Last Updated'. To find a specific product, use the **[!UICONTROL Search by Name or SKU]** field. |
 
 ## List of synced products
 
 To see the details of a synced product in JSON format, click on the code icon ![Code link](../assets/data-sync-details.png) on the row of the product from the synced products table.
 
-![Syncd Product Details](../assets/synced-products.png)
+![Synced Product Details](../assets/synced-products.png)
 
 ## Resync catalog data
 
@@ -46,12 +60,11 @@ If you do not see specific products on the **Data Sync** page, you need to initi
 >
 >The time it takes to complete the sync varies based on your catalog size and the volume of data updated.
 
-## Monitor data sync status
+## Verify that data synchronization is working
 
-For projects that use Adobe Commerce as the upstream data source through the Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Commerce Admin.
+For projects that use Adobe Commerce as the upstream data source through the Adobe Commerce Optimizer Connector, you can monitor the data export process and initiate resync operations from the Data Feed Sync Status page. For details, see [Verify that the data sync is working](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working) in the _Adobe Commerce Optimizer Connector_ documentation.
 
 ## Related topics
 
 - [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
-
 

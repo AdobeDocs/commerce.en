@@ -1,69 +1,94 @@
 ---
-title: Catalog view
+title: Catalog Views
 description: Learn what catalog views are and how to create them to organize your product catalog by business structure, policies, and pricing.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
+TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+nudge: true
 ---
+# Catalog views for Merchandising Services
 
-# Catalog Views for Merchandising Services
+A catalog view defines the products and pricing that a client can retrieve. It combines catalog sources, catalog layers, policies, and price books to support different brands, regions, business units, or channels.
 
-Catalog views are the foundation of [!DNL Adobe Commerce Optimizer] Merchandising Services, enabling you to organize your product catalog by business structure, policies, and pricing. This flexible data model supports multi-brand, multi-business unit, and multi-language scenarios while maintaining operational efficiency.
-
-## What are Catalog Views?
+## What are catalog views?
 
 Catalog views define how your product catalog is organized and displayed. They act as filters that determine:
 
 - **Which products are visible** based on business structure (brands, regions, dealers)
 - **What pricing is shown** through linked price books
 - **How products are filtered** using policies (attributes like brand, model, category)
-- **What catalog source is used** based on attributes like locale
-  
-Think of catalog views as different "lenses" through which customers see your catalog. For example:
+- **What [catalog source](catalog-sources.md) is used** based on attributes like locale
+- **Who can access the view's data** through [Catalog Protection](private-catalog-view.md) and [restricted access keys](restricted-access-keys.md)
 
-- A dealer catalog view might show only products available to that specific dealer
-- A regional catalog view might show products and pricing specific to a geographic area
-- A brand catalog view might show only products from a particular brand
+For example, you can create separate catalog views for:
 
-### Catalog view versus catalog source
-
-The following explains the difference between a catalog view and a catalog source:
-
-- **Catalog view** – A configured view of your catalog for a specific business need. When you create a catalog view, you select which catalog source (or locale) to use, then add [policies](policies.md) to filter which products are visible and link [price books](pricebooks.md) to control pricing. A single catalog source can power many catalog views (for example, one `en-US` source with separate catalog views for different brands or regions). Think of a catalog view as *how* you expose that data to a storefront, channel, or audience.
-
-- **Catalog source** – The underlying data context that supplies product information. A catalog source is typically a locale (for example, `en-US`, `fr-CA`) or an external system such as a PIM or ERP. [!DNL Adobe Commerce Optimizer] ingests product data from one or more catalog sources into a unified base catalog. Think of a catalog source as *where* the raw catalog data comes from.
-
-In summary, **catalog source** is the data context you pull from; while **catalog view** is the filtered, priced, and organized context you present to shoppers or channels.
+- A brand or business unit
+- A geographic region
+- A dealer or partner channel
+- A customer segment with specific pricing
 
 ## Create a catalog view
 
+Before creating a catalog view, prepare the following items as needed:
+
+- A [catalog source](catalog-sources.md)
+- [Policies](policies.md) that define product filters
+- [Catalog layers](catalog-layer.md) if you need to override product attributes
+- [Price books](pricebooks.md) for the pricing displayed in the view
+- [Restricted access keys](restricted-access-keys.md) if you want to create a private catalog view
+
+### Configuration
+
 In this section, you create a catalog view, select a [policy](policies.md), and a [price book](pricebooks.md).
 
-Before creating a catalog view, ensure you have:
-
-- [Created policies](policies.md) to define product filters.
-
-- [Defined catalog layers](catalog-layer.md) to define variants of your products.
-
-- [Ingested price books](pricebooks.md) for pricing.
-
-1. From the left menu, go to _Store setup_ , and click **[!UICONTROL Catalog views]**.
+1. From the left menu, go to **[!UICONTROL Store setup]**, and click **[!UICONTROL Catalog views]**.
 
 1. Click **[!UICONTROL Create catalog view]**. ​
 
 1. Configure the catalog view details:
 
     - **Name**—Enter the name of the catalog view, for example `Celport`. ​
-    - **Catalog sources**—Select the catalog source (locale), for example `en-US`.
-    - **Catalog layers**-Review ingested layers and priority.
+    - **Catalog sources**—Select the [catalog source](catalog-sources.md), for example `en-US`.
+    - **Catalog layers**—Review ingested layers and priority.
     - **Policies**—Use the drop-down to select the relevant policies. For example, "Brand," "Model". ​Make sure you have already [created a policy](policies.md).
 
 1. Select the price book to link to the catalog view.
 
-    - **Use all available price books**-This option pulls pricing data from all available price books.
-    - **Allow selected price books only**-This option displays the **Add allowed price books** dialog where you can select which specific price book to use for the catalog view.
-    - **Disable pricing**-This option is not available at this time.
+    - **Use all available price books**—This option pulls pricing data from all available price books.
+    - **Allow selected price books only**—This option displays the **Add allowed price books** dialog. Use this dialog to select which specific price book to use for the catalog view.
+    - **Single price book only**—Select this option if only one price book applies. This option is required if you want to configure a private catalog view, which can reference only one price book. See [Price book restriction on private catalog views](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
+    - **Disable pricing**—This option is not available at this time.
+
+   >[!NOTE]
+   >
+   >A price book ID controls which pricing is requested. It does not restrict access to the catalog view. To restrict access, enable Catalog Protection to create a [private catalog view](private-catalog-view.md).
+
+1. (Optional) Toggle **[!UICONTROL Catalog Protection]** to **[!UICONTROL Enabled]** to restrict this catalog view's data to clients with a valid signed token. See [Protect a catalog view](private-catalog-view.md#protect-a-catalog-view) for setup steps.
 
 1. Click **[!UICONTROL Add]** to create the catalog view with the linked price books and policies.
 
@@ -73,49 +98,46 @@ After you complete these steps, the catalog view is now configured to display pr
 
 ### Specify catalog views for recommendations and product discovery rules
 
->[!IMPORTANT]
->
->This feature is currently in beta.
-
 You can specify a catalog view when you [create recommendation units](../merchandising/recommendations/create.md) or [merchandising rules](../merchandising/rules/add.md).
 
 ## Catalog layers
 
-Catalog layers allow you to modify product data within a catalog view without changing the original source data. Layers apply changes to specific product attributes, such as name, description, images, links, and metadata, by creating a layer on top of your base catalog. Your original product data remains intact, allowing you to safely customize products and revert changes at any time.
+Catalog layers let you override selected product attributes without changing the source catalog data. Use layers to customize names, descriptions, images, links, or metadata for a catalog view.
 
-Common use cases for catalog layers include:
+See [Catalog layers](catalog-layer.md).
 
-- **SEO optimization**—Override product meta titles and descriptions based on AI recommendations from [Sites Optimizer](../manage-results/opportunities.md)
-- **Seasonal campaigns**—Temporarily update product names, descriptions, or images for promotions
-- **Regional customization**—Display different product information based on geographic location or language
-- **A/B testing**—Test different product presentations to optimize conversion rates
-- **Multi-brand management**—Customize product attributes for different brand catalog views
+## Make a catalog view private
 
-To learn more about creating, managing, and prioritizing catalog layers, see [Catalog layers](catalog-layer.md).
+By default, a catalog view is public to client applications that can access the GraphQL Merchandising API. To restrict access, configure a private catalog view by enabling **[!UICONTROL Catalog Protection]**.
 
-## Manage catalog view
+To learn how to protect a catalog view and verify that access is enforced, see [Private catalog views](private-catalog-view.md).
 
-Follow these instructions to update or view the properties of existing catalog views.
+## Manage catalog views
 
-### Edit catalog view
+To update or view the properties of existing catalog views, follow these instructions.
 
-1. On the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **...** to open the actions menu.
-1. Click **Edit** to access the catalog view editor.
-1. Update the name, catalog sources, policies, and price book information as needed.
-1. Save the changes.
+### Edit a catalog view
 
-### Delete catalog view
+1. In the **[!UICONTROL Catalog views]** workspace, locate the catalog view.
+1. To open the actions menu, select (**[!UICONTROL ...]**).
+1. Select **[!UICONTROL Edit]** to access the catalog view editor.
+1. Update the name, catalog sources, policies, price book information, and **[!UICONTROL Catalog Protection]** settings (including assigned restricted access keys) as needed.
+1. Click **[!UICONTROL Save]**.
 
-1. In the *Catalog views* workspace, find the catalog view in the grid that you want to edit and click **...** to open the actions menu.
-1. Click **Delete**.
+### Delete a catalog view
 
-    When the confirmation dialog appears, click **[!UICONTROL Delete]**.
+1. In the **[!UICONTROL Catalog views]** workspace, locate the catalog view.
+1. To open the actions menu, select (**[!UICONTROL ...]**).
+1. Select **[!UICONTROL Delete]**.
+1. Confirm the deletion.
 
-### View details
+   When the confirmation dialog appears, click **[!UICONTROL Delete]**.
 
-This option provides a quick way to see all the catalog view parameters, while staying on the *Catalog views* table.
+### View catalog view details
 
-On the *Catalog views* worksapce, find the catalog view in the grid that you want to edit and click the ![information icon](../assets/info-icon.png).
+This option provides a quick way to see all the catalog view parameters, while staying on the **[!UICONTROL Catalog views]** table.
+
+In the **[!UICONTROL Catalog views]** workspace, select the ![information icon](../assets/info-icon.png) for a catalog view to view its configuration details.
 
 ![Catalog view details](../assets/catalog-view-details.png)
 
@@ -148,7 +170,9 @@ The ingested data creates a unified base catalog in the Catalog Service data pip
 Multiple catalog views represent different business units (for example, "Texas Retail," "Texas Retail Seasonal"). Locales, policies, and price books can be shared across catalog views for flexibility.
 
 **4. Multi-Channel Delivery**
-The filtered catalog data is delivered to various destinations including Edge Delivery Services storefronts, marketplaces, advertising platforms, and custom micro-storefronts. For more information about catalog data delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
+The filtered catalog data is delivered to destinations like Edge Delivery Services, marketplaces, advertising platforms, and custom micro-storefronts. For more information about catalog data delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
+
+When a catalog view has **[!UICONTROL Catalog Protection]** enabled, delivery to that destination requires a valid signed token from an assigned [restricted access key](restricted-access-keys.md); unauthorized requests are denied instead of receiving catalog data.
 
 ### Key components
 
@@ -158,6 +182,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 |**Policy**|Product filter based on attributes|Brand, Model, Category|
 |**Locale**|Language/region setting|en-US, fr-CA, es-MX|
 |**Price Book**|Pricing structure|Retail, Wholesale, Employee|
+|**Restricted access key**|Signed-token credential that gates access to a protected catalog view|Partner portal key, B2B pricing key|
 
 ### Data flow
 
@@ -174,6 +199,7 @@ The filtered catalog data is delivered to various destinations including Edge De
 |**Scalable**|Manage 200M+ SKUs efficiently|
 |**Multi-Channel**|Serve catalogs to storefronts, marketplaces, and advertising platforms|
 |**Real-time Updates**|Quickly update catalog data for promotions and campaigns|
+|**Private catalog views**|Restrict a catalog view to authorized clients using signed-token validation|
 
 ## Use cases
 
@@ -192,12 +218,15 @@ The filtered catalog data is delivered to various destinations including Edge De
 **Challenge**: Different pricing and inventory per location<br>
 **Solution**: Location-based catalog views with region-specific policies
 
->[!INFO]
+>[!NOTE]
 >
 >For detailed information about catalog data ingestion and delivery, see the [developer documentation](https://developer.adobe.com/commerce/services/optimizer/).
 
 ## More like this
 
-- [Catalog layers](catalog-layer.md) - Learn how to modify product data without changing the original source
-- [Policies](policies.md) - Create policies to filter products in catalog views
-- [Price books](pricebooks.md) - Manage pricing structures for different customer segments
+- [Catalog sources](catalog-sources.md)—Define the authoritative scope of products, attributes, and categories for search, filter, and sort behavior
+- [Catalog layers](catalog-layer.md)—Learn how to modify product data without changing the original source
+- [Private catalog views](private-catalog-view.md)—Create a private catalog view to restrict access to authorized clients
+- [Restricted access keys](restricted-access-keys.md)—Create, assign, and rotate the keys used to sign tokens for Catalog Protection
+- [Policies](policies.md)—Create policies to filter products in catalog views
+- [Price books](pricebooks.md)—Manage pricing structures for different customer segments

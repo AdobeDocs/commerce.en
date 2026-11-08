@@ -3,19 +3,40 @@ title: Create and Manage Rules
 description: Learn how to create and manage merchandising rules for search, default product listings, and category pages.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create and Manage Rules
 
-To build a rule, open the rule editor, choose a **rule type** (search conditions, default listing, or category pages), then define conditions and ranking where they apply, test the results, and publish the rule.
+To build and publish a rule:
+
+1. In Optimizer Studio, open the rule editor, choose a **rule type** (search conditions, default listing, category pages, or product attributes), then define conditions and ranking where they apply.
+1. Test the results.
+1. Publish the rule.
 
 ## Create a rule {#create-a-rule}
 
 1. In the left rail, go to _Merchandising_ > **Merchandising Rules**.
-1. (Optional) Use the **Catalog view** dropdown to select the catalog view where the rule should apply. The rule you create is scoped to the selected view (or to all catalog views if **All views** is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
-
-   >[!IMPORTANT]
-   >
-   >Catalog views are currently in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Beta participants will need to recreate any existing merchandising rules to take advantage of the new catalog view scope.
+1. (Optional) Select the catalog view where the rule applies using the **Catalog view** dropdown. The rule you create is scoped to the selected view (or to all catalog views if **All views** is selected). See [Select catalog view](workspace.md#select-catalog-view) for how catalog view scoping works.
 
 1. Click **[!UICONTROL Create rule]** to launch the rule editor.
 
@@ -23,12 +44,12 @@ To build a rule, open the rule editor, choose a **rule type** (search conditions
 
 ### Rule types
 
-Each rule type has an information icon in the editor with a short explanation. Use the type that matches where shoppers should see the merchandising logic:
+Each rule type has an information icon in the editor with a short explanation. Use the type that matches where shoppers see the merchandising logic:
 
 | Rule type | Purpose |
 | --- | --- |
-| **All products rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
-| **Category rule** (Beta) | Applies merchandising and ranking to one or more selected categories, controlling product order on those category pages. |
+| **Default search rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
+| **Category rule** | Applies merchandising and ranking to a single category, controlling product order on that category page. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
 
 In the **Build your rule** section, you define the rule name, schedule, whether the rule applies to all listings or to specific search conditions, and ranking types.
@@ -57,12 +78,12 @@ The conditions are the requirements to trigger an event. A rule can have up to t
    - Search query starts with - Enter a character or string of text that must be at the beginning of the shopper's query.
    - Search query ends with - Enter a character or string of text that must be at the end of the shopper's query.
 
-   The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper right to change the number of products in each row.
+   The *Test your rule* pane displays results immediately, numbered by priority. You can use the *Results per row* slider in the upper right to change the number of products in each row.
 
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 **Multiple conditions**
 
@@ -81,32 +102,46 @@ The conditions are the requirements to trigger an event. A rule can have up to t
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and is triggered more often in the storefront than the other.
 
 1. To add another condition, click **Add condition** and repeat the process.
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to category pages, with any differences called out.
 
 >[!TAB Category rule]
 
->[!IMPORTANT]
+Category rules control how products are ordered on **category pages**. Combine **category rules** with **intelligent ranking** and **manual** actions to curate discovery, run promotions, and align category pages with your strategy.
+
+**Select categories**
+
+Under **Categories**, select one or more categories for the rule. Selected categories appear below the control so you can confirm the scope. Select categories in either of the following ways:
+
+- **Browse the category tree** - To load immediate child categories, expand a category. To navigate to a deeper level, expand the child category. The tree loads one level at a time.
+- **Search by category name** - Enter a category name in the **Search and select categories** field. Search results include matching category names from across the catalog, including categories outside the currently expanded branch. Search does not match category path text.
+
+When multiple categories have similar names, use the category path displayed with each result (for example, `brakes/aurora`) to select the correct category.
+
+>[!NOTE]
 >
->Category rules are in beta.
+>Expanding a category only loads its child categories for browsing. It does not select the category or apply the rule to its subcategories. Select a category to add it to the rule. To apply the rule to a category's subcategories, use **Apply to subcategories** from the category's action menu, described below.
 
-Category rules control how products are ordered on **category pages**. You combine **category rules** with **intelligent ranking** (including AI-driven signals), and **manual** actions such as pin, boost, and bury—so you can curate discovery, run promotions, and align category pages with your strategy without relying on external tools.
+>[!TIP]
+>
+>If a child category is not visible, expand its parent category to load the next level. If you know the category name, use the search field instead of navigating through the tree. This behavior is useful for large catalogs, since category levels load on demand.
 
-1. Under **Categories**, select the category or categories the rule should apply to. Selected categories appear below the control so you can confirm the scope.
-1. From the list of categories that appear, you can click the three dots and select to:
+1. From the list of selected categories, click the three dots next to a category and select to:
 
    - **Delete** - Removes the category from the rule.
    - **Apply to subcategories** - Applies the rule to subcategories that do not already have an active merchandising rule defined.
-   - **Preview** - Displays how the category page would appear on your storefront.
+   - **Preview** - Displays how the category page appears on your storefront.
 
-1. Set [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
+1. Optionally, set [Intelligent ranking](#intelligent-ranking), [Manual ranking](#manual-ranking), or [Attribute ranking](#attribute-ranking) as described in the following sections. The same controls apply to search rules, with any differences called out.
+
+   ![Category Action Menu](../../assets/category-action-menu.png)
 
 >[!ENDTABS]
 
 ### Intelligent ranking {#intelligent-ranking}
 
-Intelligent ranking orders products using **behavioral signals** and, where applicable, AI. It applies to **search rules**, **all product listings** (default rules), and **category rules** (category pages). For shopper **searches**, ranking also weighs **textual relevance** to the query; **category pages** do not use query text in the same way—the editor focuses on behavioral strategies.
+Intelligent ranking orders products using **behavioral signals** and, where applicable, AI. It applies to **search rules**, **default search rules**, and **category rules** (category pages). For shopper **searches**, ranking also weighs **textual relevance** to the query; **category pages** do not use query text in the same way—the editor focuses on behavioral strategies.
 
-Store owners can set strategies such as the following. Exact labels and time windows match the rule editor and may differ slightly by rule type.
+Store owners can set strategies such as the following. Exact labels and time windows match the rule editor and differ slightly by rule type.
 
 ![Intelligent Rankings](../../assets/rule-intelligent-ranking.png)
 
@@ -117,7 +152,48 @@ Store owners can set strategies such as the following. Exact labels and time win
 - **Trending** — Emphasizes recent popularity (for search, page views over the past 72 hours for background events and 24 hours for foreground events).
 - **None** — For search and default listings, products are ordered by **Relevance**. For **category rules**, uses the default merchandising order for the category when you do not choose another intelligent strategy.
 
-Select the strategy for your rule. The **Test your rule** pane shows expected results for search-oriented rules; **category rules** use the category preview.
+Select the strategy for your rule. The **[!UICONTROL Test your rule]** pane shows expected results for search-oriented rules; **category rules** use the category preview.
+
+#### Behavioral signals for configurable products and variants {#behavioral-signals-variants}
+
+Intelligent ranking collects behavioral signals against the specific product a shopper interacts with. For a configurable product, this means signals are recorded at the **variant** (simple product) level, not against the configurable parent.
+
+When ranking a configurable product, intelligent ranking aggregates the behavioral signals collected from all of its variants and rolls them up to the configurable parent. A configurable product's ranking score reflects the combined signals of every variant, not just one.
+
+This aggregation happens within the scope of the category being browsed. A variant only contributes its behavioral signals to the configurable parent's ranking score for categories to which that **variant** is assigned. If a variant is missing from a category, its signals do not count toward the parent's ranking in that category, even when the configurable parent itself is assigned there.
+
+**Best practice:** Review category assignments for all product variants to confirm that every variant is assigned to each category where it influences ranking.
+
+**Example:**
+
+A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on that page. This is true even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
+
+#### Intelligent ranking boost {#intelligent-ranking-boost}
+
+For **Recommended for you**, **Most viewed**, **Most purchased**, **Most added to cart**, and **Trending**, the editor shows **[!UICONTROL Intelligent Ranking Boost]** (the boost factor). It is not used when you select **None**.
+
+Use this control to balance how strongly **behavioral signals** influence ordering relative to **textual relevance** on search, and relative to other ranking signals on **category pages** and **default listings**. The boost is available for **search rules**, the **All products rule**, and **category rules**; each rule stores its own value.
+
+| Behavior | Detail |
+| --- | --- |
+| Default | `50`. |
+| Range | From `1` (gentler behavioral influence) through `1000` (stronger influence). |
+| Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
+| Preview | The rule preview uses the same boost as live results for that rule. |
+| Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
+
+**When to increase or decrease the boost**
+
+- **Increase** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
+- **Decrease** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
+
+**When to use manual ranking instead**
+
+Use **pin**, **boost**, or **bury** when you need specific products in exact positions or guaranteed visibility regardless of catalog-wide signals. **[!UICONTROL Intelligent Ranking Boost]** tunes a **global** behavioral weight for that rule; it does not replace SKU-level control.
+
+>[!NOTE]
+>
+> A high **[!UICONTROL Intelligent Ranking Boost]** can outweigh a **manual boost** on the same product. If a boosted SKU ranks lower than you expect in the rule preview or on the storefront, lower **[!UICONTROL Intelligent Ranking Boost]** or **pin** the product to a specific position. Either change moves the manually ranked product higher in the listing.
 
 #### How intelligent ranking scoring works (search)
 
@@ -128,27 +204,32 @@ For **search results** (and the test query in the rule editor), intelligent rank
 - **Textual relevance**: The dominant factor in scoring. This measures how well a product's name, description, and attributes match the search query. The text relevance score is unbounded (has no specific upper limit) and is influenced by factors like:
 
    - Frequency of occurrence of matching words.
-   - Length  (in words) of product names/descriptions.
+   - Length (in words) of product names/descriptions.
 
-- **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a fixed boost to their scores. However, this boost has a defined limit.
+- **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a larger relative weight. The strength of that weight is controlled by **[!UICONTROL Intelligent Ranking Boost]** (see [Intelligent ranking boost](#intelligent-ranking-boost)); the boost remains bounded, but you can increase how much it shifts ordering.
 
 **Why the most viewed product might not appear first:**
 
-Textual relevance typically dominates ranking because its score is unbounded, while behavioral boosts are fixed. As a result, products with strong text matches often outrank those with higher engagement signals. Behavioral boosts alone may not compensate for large gaps in text relevance. Intelligent ranking addresses this by factoring in both match quality and shopper interaction, improving overall relevance. However, text match quality remains the primary driver of ranking.
+Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you raise **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list; text match quality remains a primary driver. Always confirm in **[!UICONTROL Test your rule]** for the queries you care about.
 
 **Example:**
 
-A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
+A merchant uses the "Most viewed" intelligent ranking strategy and searches for **candle**. They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
 
-- **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
+- **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than **YAN-K-E-512**, its superior text match outweighs the behavioral boost.
 
-- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. The fixed behavioral boost is not enough to overcome this text relevance gap.
+- **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`50`), behavioral influence may not be enough to overcome that text gap. Increasing the boost can move **YAN-K-E-512** higher among products that already match the query. **YAN-K-E-512** must also match the query: at least one searchable attribute for that SKU must include **candle**, or it will not appear in results and the boost cannot apply.
+
+**Example (broad query):**
+
+For a query such as **wood**, several products can share similar textual relevance while view counts differ. With **Most viewed** selected, increasing **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering.
 
 See [search rules](./best-practice.md#tips-to-optimize-search-rules) to learn how to improve product findability using rules.
 
 #### Caveats
 
 - Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
+- If intelligent ranking results do not correlate with actual sales or view performance, confirm that all relevant product variants are assigned to the category being reviewed. Missing variant category assignments are a common and easily overlooked cause of unexpected ranking behavior. See [Behavioral signals for configurable products and variants](#behavioral-signals-variants).
 - To ensure intelligent ranking works correctly for **search**, make sure that the **Search Weight** for any attributes that are used for search or filtering (facets) is `5` or less. (This guidance applies to search indexing, not to category-only merchandising flows.)
 
 For information about setting search weights, see the [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/).
@@ -157,14 +238,14 @@ For information about setting search weights, see the [Metadata API](https://dev
 
 **Manual ranking** events adjust product order for **search results** (when your rule's conditions are met), for **default product listings**, and for **category page** listings. A single rule can have up to 25 events.
 
-- **Boost** — Moves a product higher in the listing.
-- **Bury** — Moves a SKU lower in the listing.
-- **Pin a product** — Fixes a product at the selected position in the listing.
-- **Hide a product** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
+- **[!UICONTROL Boost]** — Moves a SKU higher in the listing.
+- **[!UICONTROL Bury]** — Moves a SKU lower in the listing.
+- **[!UICONTROL Pin a product]** — Fixes a SKU at the selected position in the listing.
+- **[!UICONTROL Hide a product]** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
 
 The easiest way to pin a product is by drag and drop.
 
-1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Postion fields are automatically populated in the Events pane.
+1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Position fields are automatically populated in the Events pane.
 
 You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
 
@@ -172,15 +253,54 @@ You may also click the pin icon to pin a product to its current location. Use th
 >
 >**Search rules** — You can only pin products that appear in the search results for the configured query and rule conditions. Products must be indexed, visible, in stock, and meet all rule filters to be eligible for pinning. If a product does not appear in the preview or results for your rule, pinning it has no effect.
 >
->**Default sort** — Manual positions apply when the shopper uses the default sort: **Sort by: Most Relevant** for search, or **relevance** / **position** for category listings. If the shopper changes sort; for example by name, pinned, boosted, buried, or hidden behavior may no longer match the preview.
+>**Default sort** — Manual positions apply when the shopper uses the default sort: **Sort by: Most Relevant** for search, or **relevance** / **position** for category listings. If the shopper changes sort, for example by name, pinned, boosted, buried, or hidden behavior may no longer match the preview.
 
 Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the phrase which matches part or the whole name or SKU of the product that you want to hide.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
+
+### Attribute ranking {#attribute-ranking}
+
+>[!AVAILABILITY]
+>
+>This feature is in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+
+**Attribute ranking** automatically applies a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, without requiring you to select individual SKUs. Attribute ranking appears in the rule editor alongside [Intelligent ranking](#intelligent-ranking) and [Manual ranking](#manual-ranking), and is available for the **All products rule**, **search rules**, and **category rules**. Use it to scale merchandising across large catalogs, for example, boosting every product from a given brand, or burying every product in a discontinued color.
+
+![Attribute Ranking](../../assets/attribute-rank-rule.png)
+
+1. In the rule editor, expand **[!UICONTROL Attribute ranking]**.
+1. Click **[!UICONTROL Add attribute]** to add an attribute condition.
+1. From the dropdown at the top of the condition, select the action to apply to matching products: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**.
+1. Under **[!UICONTROL Attribute]**, select the product attribute to match, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. Only filterable, text-based attributes are available.
+1. Under **[!UICONTROL Value]**, type a value and press **Return** to add it. Repeat to add more values. Each value appears as a removable tag under **[!UICONTROL Selected values]**. A product matches the condition if it has any one of the listed values.
+
+   >[!NOTE]
+   >
+   >The **[!UICONTROL Value]** field accepts free text and is case sensitive. After adding a value, check the test pane to confirm it matches the expected products.
+
+1. For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, drag the **[!UICONTROL Boost strength]** slider to set how strongly the action moves matching products.
+1. To add another condition, click **[!UICONTROL Add attribute]** and repeat the previous steps.
+
+Pinning is not available in attribute ranking, because pinning assigns one product to one exact position, while an attribute condition can match many products at once. To pin a specific product, use [Manual ranking](#manual-ranking) on that SKU directly.
+
+#### How attribute ranking interacts with intelligent ranking
+
+When a rule combines an intelligent ranking strategy with one or more attribute conditions, the attribute action takes priority for any product it matches. Intelligent ranking continues to order the remaining, unmatched products.
+
+#### When attribute conditions conflict with each other
+
+A single product can match more than one attribute condition, whether within the same rule or across different rules. When matching conditions specify conflicting actions for the same product, **[!UICONTROL Hide]** takes priority over **[!UICONTROL Boost]** and **[!UICONTROL Bury]**.
+
+For example, one condition boosts all products with `season = Christmas`, and another hides all products with `brand = Nike`. A product with `season = Christmas` and `brand = Nike` is hidden, because **[!UICONTROL Hide]** takes priority over **[!UICONTROL Boost]**.
+
+#### Limits
+
+A single rule can have up to 25 attribute conditions, the same limit as manual ranking events.
 
 ### Finalizing the rule {#finalizing-the-rule}
 
@@ -214,7 +334,7 @@ Follow these instructions to update the properties of existing rules. You cannot
 
 This option provides a quick way to see all the rule parameters, while staying on the *Rules* table.
 
-1. On the *Merchandising rules* worksapce, find the rule in the grid that you want to edit and click **More** (...) options.
+1. On the *Merchandising rules* workspace, find the rule in the grid that you want to edit and click **More** (...) options.
 1. Click **View details** to view the rule parameters.
 1. Choose **Edit** or **Delete**, or click the X to close the panel.
 
@@ -228,7 +348,7 @@ This option provides a quick way to see all the rule parameters, while staying o
 ### Conditions (if)
 
 | Condition | Description |
-|--- |--- |
+| --- | --- |
 | Search query contains | A character or string of text that is included in the shopper's query. The shopper's query needs to match only a single character to meet this condition. |
 | Search query is | A character or string of text that exactly matches the shopper's query. Complex queries with multiple conditions cannot be composed when this condition is used. |
 | Search query starts with | The shopper's query begins with this character or string of text. |
@@ -237,32 +357,47 @@ This option provides a quick way to see all the rule parameters, while staying o
 ### Logical operators
 
 | Operator | Description |
-|--- |--- |
+| --- | --- |
 | OR | (Default) The logical operator `OR` compares two conditions and meets the requirements to trigger an event if at least one condition is true. |
 | AND | The logical operator `AND` compares two conditions and meets the requirements to trigger an event if both conditions are true. |
 
 ### Match operators
 
 | Operator | Description |
-|--- |--- |
+| --- | --- |
 | Any | Changes all logical operators in the rule to `OR` and returns the set of matching products. |
 | All | Changes all logical operators in the rule to `AND` and returns the set of matching products. |
 
 ### Manual ranking events
 
-|Event |Description |
-|--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the listing (search or category). Each is marked with a "boosted" preview badge in the test results. |
-| Bury | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
-| Pin a product | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
-| Hide a product | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
+| Event | Description |
+| --- | --- |
+| [!UICONTROL Boost] | Moves a SKU or range of SKUs higher in the listing (search or category). Each is marked with a "boosted" preview badge in the test results. |
+| [!UICONTROL Bury] | Moves a SKU or range of SKUs lower in the listing. Each is marked with a "buried" preview badge in the test results. |
+| [!UICONTROL Pin a product] | Attaches a single SKU to a specific position in the listing. The product is marked with a "pinned" preview badge in the test results. |
+| [!UICONTROL Hide a product] | Excludes a SKU, or range of SKUs, from the results (search-oriented; confirm for category rules in the editor). |
+
+### Attribute ranking conditions
+
+| Field | Description |
+| --- | --- |
+| Action | The action applied to every product matching the condition: **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]**. |
+| [!UICONTROL Attribute] | The filterable, text-based product attribute the condition targets, such as **Brand**, **Category**, **Country**, **Manufacturer**, or **Model**. |
+| [!UICONTROL Value] | One or more attribute values that a product must have to match the condition. Type a value and press Return to add it as a tag; a product matches if it has any one of the listed values. |
+| [!UICONTROL Boost strength] | For **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, a slider that controls how strongly the action moves matching products. Shown only for **[!UICONTROL Boost]** and **[!UICONTROL Bury]**, not **[!UICONTROL Hide]**. |
+
+### Intelligent ranking controls
+
+| Field | Description |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `50`; allowed range `1`–`1000`. Applied at query time; rule preview matches live behavior for the configured rule. |
 
 ### Details
 
-|Field |Description |
-|--- |--- |
+| Field | Description |
+| --- | --- |
 | Name | The name of the rule. Rule names must be unique. |
-| Rule Type | **Default** (all product listings), **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**.|
+| Rule Type | **Default search rule**, **Query** (specific search conditions), or **Category** (category pages), depending on **Rule applies to**. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |

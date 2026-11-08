@@ -8,3 +8,6 @@ _site/
 tmp/
 .env
 .idea
+.scout/
+AGENTS.md
+*.log

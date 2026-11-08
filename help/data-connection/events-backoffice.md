@@ -4,18 +4,39 @@ description: Learn what data each back office event captures.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
+TQID: 'https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # [!DNL Data Connection] Back Office Events
 
 The following lists the Commerce back office events available when you install the [!DNL Data Connection] extension. The data these events collect is sent to the Adobe Experience Platform. You can also create [custom events](custom-events.md) to collect additional data not provided out of the box.
 
-In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
+In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) provided by the Adobe Experience Platform Web SDK.
 
 Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile events](#customer-profile-events) information, such as if an account was created, updated, or deleted.
 
 >[!NOTE]
 >
->All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID.
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) field, which includes the shopper's email address, when available, and ECID.
 
 ## Order status
 
@@ -402,7 +423,7 @@ Profile events captured from the server-side include account information, such a
 
 >[!NOTE]
 >
->Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier. [Learn](custom-identities.md) how to create custom identity attributes to enhance customer profile identification.
+>Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier. [Learn](custom-identities.md) how to create custom identity attributes to enhance customer profile identification.
 
 ### accountCreated
 

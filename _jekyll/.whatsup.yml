@@ -4,7 +4,7 @@ base_branch: main
 # The list of repositories to scan for pull requests
 repos:
   - AdobeDocs/commerce.en
-  - enterprise:AdobeDocs/commerce.en
+  - enterprise:Adobe-Enterprise-Docs/commerce.en
 
 # Labels also will be used as a 'type' value in the output file
 labels:
@@ -14,6 +14,7 @@ labels:
   optional:
     - technical
     - feedback
+    - release-notes
 
 # Format of output file
 output_format:

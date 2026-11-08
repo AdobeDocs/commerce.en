@@ -1,9 +1,30 @@
 ---
-title: '[!DNL Catalog Service]'
-description: 'Accelerate your Adobe Commerce storefront with [!DNL Catalog Service] - a high-performance GraphQL API that reduces page load times for product pages, category pages, and search results.'
+title: "[!DNL Catalog Service]"
+description: Accelerate your Adobe Commerce storefront with [!DNL Catalog Service] - a high-performance GraphQL API that reduces page load times for product pages, category pages, and search results.
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
+TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # [!DNL Catalog Service] for Adobe Commerce
 
@@ -11,29 +32,30 @@ exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 
 The rich view-model data provided by the [!DNL Catalog Service] includes product details, attributes, inventory, and prices, enabling quick rendering of product-related storefront experiences such as:
 
-- Product detail pages
-- Product list and category pages
-- Search result pages
-- Product carousels
-- Product comparison pages
-- Any other pages that render product data, such as cart, order, and wish list pages
+* Product detail pages
+* Product list and category pages
+* Search result pages
+* Product carousels
+* Product comparison pages
+* Any other pages that render product data, such as cart, order, and wish list pages
 
 ## Key benefits and features
 
-- **Faster page loads**: Optimized queries for up to 10X faster catalog data retrieval compared to the core GraphQL system
-- **Improved conversion rates**: Faster loading times lead to better user experience
-- **Simplified product types**: Unified schema based on simple and complex product types reduces complexity for developers
-- **Enhanced price precision**: Support for 16-digit values with 4 decimal places
-- **Decoupled architecture**: Separate GraphQL system for catalog data ensures high performance without impacting the core Commerce operations
-- **Real-time data synchronization**: The Catalog Service is kept in sync with the Adobe Commerce application through the SaaS Data Export extension, ensuring that queries return the most current catalog data
-- **Data Management Dashboard**: Monitor and manage data synchronization operations from the Adobe Commerce Admin interface
-- **API Mesh integration**: Optionally integrate with [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to combine the Adobe Commerce GraphQL systems with other internal and third-party APIs to extend the Catalog Service GraphQL schema and add custom data or functionality
+* **Faster page loads**: Optimized queries for up to 10X faster catalog data retrieval compared to the core GraphQL system
+* **Improved conversion rates**: Faster loading times lead to better user experience
+* **Simplified product types**: Unified schema based on simple and complex product types reduces complexity for developers
+* **Enhanced price precision**: Support for 16-digit values with 4 decimal places
+* **Decoupled architecture**: Separate GraphQL system for catalog data ensures high performance without impacting the core Commerce operations
+* **Real-time data synchronization**: The Catalog Service is kept in sync with the Adobe Commerce application through the SaaS Data Export extension, ensuring that queries return the most current catalog data
+* **Catalog events**: Publish catalog change notifications through [!DNL Adobe I/O Events] so integrations can react to product, category, and price updates without polling GraphQL
+* **Data Management Dashboard**: Monitor and manage data synchronization operations from the Adobe Commerce Admin interface
+* **API Mesh integration**: Optionally integrate with [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to combine the Adobe Commerce GraphQL systems with other internal and third-party APIs to extend the Catalog Service GraphQL schema and add custom data or functionality
 
 ## Architecture overview
 
 >[!NOTE]
 >
->If you are implementing your catalog using the composable catalog with Adobe Commerce Optimizer, or Adobe Commerce Optimizer Connector, see the [Adobe Commerce Optimizer Guide](../optimizer/overview.md#architecture) and Merchandising Services Developer Guide.
+>If you are implementing your catalog using the composable catalog with Adobe Commerce Optimizer, or Adobe Commerce Optimizer Connector, see the [Adobe Commerce Optimizer Guide](../optimizer/overview.md#architecture) and [Merchandising Services Developer Guide](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive catalog data including products, product attributes, inventory, and prices. GraphQL is a query language that a frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
 
@@ -41,19 +63,21 @@ Adobe Commerce provides two GraphQL systems that serve different purposes:
 
 ### Core GraphQL System
 
-- **Purpose**: Full-featured API for all Commerce operations
-- **Capabilities**: Queries (read) and mutations (write) for products, customers, cart, checkout, and more
-- **Limitation**: Product queries are not optimized for speed
-- **Use case**: General Commerce operations and write operations
+* **Purpose**: Full-featured API for all Commerce operations
+* **Capabilities**: Queries (read) and mutations (write) for products, customers, cart, checkout, and more
+* **Limitation**: Product queries are not optimized for speed
+* **Use case**: General Commerce operations and write operations
 
 ### Catalog Service GraphQL System
 
-- **Purpose**: High-performance product catalog queries only
-- **Capabilities**: Read-only queries for products, attributes, inventory, and prices
-- **Advantage**: Significantly faster than core system for product data
-- **Use case**: Storefront product experiences where speed is critical
+* **Purpose**: High-performance product catalog queries only
+* **Capabilities**: Read-only queries for products, attributes, inventory, and prices
+* **Advantage**: Significantly faster than core system for product data
+* **Use case**: Storefront product experiences where speed is critical
 
 The data available to the Catalog Service is delivered by the SaaS Data Export extension. This extension synchronizes data between the Commerce application and connected Commerce Services to ensure that queries to the services GraphQL API endpoints return the most current catalog data. For information about managing and troubleshooting SaaS data export operations, see the [SaaS Data Export Guide](../data-export/overview.md).
+
+When catalog data in the [!DNL Catalog Service] changes, catalog events notify subscribed consumers through [!DNL Adobe I/O Events]. Use these events to invalidate caches, update search indexes, or sync external systems without polling the GraphQL API. For event types, delivery guarantees, and setup, see the [Catalog events and Adobe I/O integration guide](catalog-events-guide.md).
 
 [!DNL Catalog Service] customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price updates and synchronization time.
 
@@ -87,15 +111,21 @@ Since Catalog Service operates as a service, integrators do not need to be conce
 
 The schema reduces the diversity of product types to two use cases:
 
-- **Simple products**—The Catalog Service maps the Adobe Commerce simple, virtual, downloadable, and gift card product types to `simpleProductViews`. This type has:
-  - A single, fixed price and quantity
-  - A regular price (before discounts) and final price (after discounts)
-  - Support for product attributes, such as color, size, and other characteristics
+* **Simple products**—The Catalog Service maps the Adobe Commerce simple, virtual, downloadable, and gift card product types to `simpleProductViews`. This type has:
+  * A single, fixed price and quantity
+  * A regular price (before discounts) and final price (after discounts)
+  * Support for product attributes, such as color, size, and other characteristics
 
-- **Complex products**—The Catalog Service maps the Adobe Commerce configurable, bundle, and grouped product types to `complexProductViews`. Complex products are collections of multiple simple products that can be configured or bundled together.
-  - Each component simple product can have its own price.
-  - Shoppers can specify quantities for individual component products.
-  - Product options (like size, color, material) are unified and work the same way regardless of product type. Each option selection points to a specific simple product with its own attributes and price. The final product remains undefined until the shopper selects all required options.
+* **Complex products**—The Catalog Service maps the Adobe Commerce configurable, bundle, and grouped product types to `complexProductViews`. Complex products are collections of multiple simple products that can be configured or bundled together.
+  * Each component simple product can have its own price.
+  * Shoppers can specify quantities for individual component products.
+  * Product options (like size, color, material) are unified and work the same way regardless of product type. Each option selection points to a specific simple product with its own attributes and price. The final product remains undefined until the shopper selects all required options.
+
+<!--
+>[!NOTE]
+>
+>Custom product types introduced by third-party extensions are not covered by this mapping. For [!DNL Commerce Storefront MCP] deployments (Early Access), a catalog enablement module can represent these custom types as simple products in the catalog data sent to [!DNL Catalog Service]. See [Support for custom product types in SaaS catalog data export](../data-export/custom-product-types.md).
+-->
 
 #### Product view attributes
 
@@ -122,6 +152,7 @@ The Catalog Service ensures accurate price updates and calculations by supportin
 The implementation process involves:
 
 1. [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."} **[Install and configure the Catalog Service](installation.md)**—Install and configure the Catalog Service extension and set up the SaaS connection using the [!DNL Commerce Services Connector].
-2. **Update storefront code**: Integrate Catalog Service GraphQL queries into your frontend.
-3. **Route queries**: All Catalog Service queries go through the GraphQL gateway (URL provided during onboarding)
-4. **Monitor and troubleshoot data synchronization**: Verify improved performance and monitor results
+1. **Update storefront code**: Integrate Catalog Service GraphQL queries into your frontend.
+1. **Route queries**: All Catalog Service queries go through the GraphQL gateway (URL provided during onboarding)
+1. **Monitor and troubleshoot data synchronization**: Verify improved performance and monitor results
+1. **(Optional) [Set up catalog events](catalog-events-guide.md)**—Configure [!DNL Adobe I/O Events] subscriptions to receive catalog change notifications for cache invalidation, search indexing, or external system sync.

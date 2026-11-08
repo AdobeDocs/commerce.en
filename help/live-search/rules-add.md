@@ -2,6 +2,21 @@
 title: Add Rules
 description: Learn how to create Search Merchandising rules.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
+TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
 ---
 # Add Rules
 
@@ -10,7 +25,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 ## Add a rule
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
-1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
+1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) where the rule applies.
 1. Click the **Search Merchandising** workspace.
 1. Click **Add rule** to launch the rule editor.
 
@@ -69,7 +84,7 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 
 1. To add another condition, click **Add condition** and repeat the process.
 
-## Intelligent ranking
+## Intelligent ranking {#intelligent-ranking}
 
 Intelligent ranking combines user behaviors and site statistics to determine product ranking.
 Store owners can set up the following types of ranking strategies:
@@ -83,38 +98,84 @@ Store owners can set up the following types of ranking strategies:
 * Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events.
 * None: Products are ordered by Relevance.
 
-Select the type of strategy for the rule. The **Test your rule** window displays the expected results.
+Select the type of strategy for the rule. The **[!UICONTROL Test your rule]** window displays the expected results.
 
-### How intelligent ranking scoring works
+### Behavioral signals for configurable products and variants {#behavioral-signals-variants}
 
-Intelligent ranking determines the final product order by combining two key factors: **textual relevance** and **behavioral signals**. Understanding how these factors interact helps you set realistic expectations for your search results.
+**[!DNL Live Search]** collects behavioral signals, such as views, add-to-cart events, and purchases, against the specific product a shopper interacts with. For a configurable product, this means signals are recorded at the **variant** (simple product) level, not against the configurable parent.
+
+When ranking a configurable product, **[!DNL Live Search]** aggregates the behavioral signals collected from all of its variants and rolls them up to the configurable parent. A configurable product's ranking score reflects the combined signals of every variant, not just one.
+
+This aggregation happens within the scope of the category being browsed. A variant only contributes its behavioral signals to the configurable parent's ranking score for categories to which that **variant** is assigned. If a variant is missing from a category, its signals do not count toward the parent's ranking in that category, even when the configurable parent itself is assigned there.
+
+**Best practice:** Review category assignments for all product variants, especially in catalogs that use size-, color-, or other variant-specific category structures, to confirm that every variant is assigned to each category where it is expected to appear and influence ranking.
+
+**Example:**
+
+A merchandiser organizes a catalog into size-specific subcategories, such as **200g** and **500g**. A configurable product has two variants, one for each size. If only the 200g variant is assigned to the 200g category, purchases and views of the 500g variant do not contribute to the configurable product's ranking score on the 200g category page, even if the 500g variant sells well elsewhere. The configurable product may then rank lower than expected, or out of step with actual sales performance, on the 200g category page. Assigning both variants to their respective categories resolves the mismatch.
+
+### Intelligent ranking boost {#intelligent-ranking-boost}
+
+For **Recommended for you**, **Most viewed**, **Most purchased**, **Most added to cart**, and **Trending**, the editor shows **[!UICONTROL Intelligent Ranking Boost]** (the boost factor). It is not used when you select **None**.
+
+Use this control to balance how strongly **behavioral signals** influence ordering relative to **textual relevance** on search, and relative to other ranking signals on **category pages** and **default listings**. The boost is available for **search query rules**, **default rules**, and **category merchandising rules**; each rule stores its own value.
+
+| Behavior | Detail |
+| --- | --- |
+| Default | `5` (equivalent to the previous fixed behavioral multiplier). |
+| Range | From `1` (gentler behavioral influence) through `100` (stronger influence). |
+| Scope | Applies only to queries or listings that the rule targets. Other rules keep their own boost values. |
+| Preview | The rule preview uses the same boost as live results for that rule. |
+| Indexing | Applied at **query time**; you do not need a catalog resync or full reindex solely because you changed this setting. |
+
+**When to raise or lower the boost**
+
+* **Raise** the boost when strategies such as **Most viewed** should surface high-engagement SKUs more aggressively for ambiguous or broad queries, without hand-pinning every slot.
+* **Lower** the boost when you want textual match quality to drive the list more strictly and behavioral data should nudge order only slightly.
+
+**When to use manual ranking instead**
+
+Use **pin**, **boost**, or **bury** when you need specific products in exact positions or guaranteed visibility regardless of catalog-wide signals. **[!UICONTROL Intelligent Ranking Boost]** tunes a **global** behavioral weight for that rule; it does not replace SKU-level control.
+
+>[!NOTE]
+>
+> A high **[!UICONTROL Intelligent Ranking Boost]** can outweigh a **manual boost** on the same product. If a boosted SKU ranks lower than you expect in **[!UICONTROL Test your rule]** or on the storefront, lower **[!UICONTROL Intelligent Ranking Boost]** or **pin** the product to a specific position. Either change moves the manually ranked product higher in the results.
+
+### How intelligent ranking scoring works (search)
+
+For **search rules** (and the test query in the rule editor), intelligent ranking determines the final product order by combining two key factors: **textual relevance** and **behavioral signals**. Understanding how these factors interact helps you set realistic expectations for your search results.
 
 **Scoring components:**
 
 * **Textual relevance**: The dominant factor in scoring. This measures how well a product's name, description, and attributes match the search query. The text relevance score is unbounded (has no specific upper limit) and is influenced by factors like:
 
    * Frequency of occurrence of matching words.
-   * Length  (in words) of product names/descriptions.
+   * Length (in words) of product names/descriptions.
 
-* **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a fixed boost to their scores. However, this boost has a defined limit.
+* **Behavioral signals**: A bounded boost applied on top of the text relevance score. When you select an intelligent ranking strategy like "Most viewed" or "Most purchased," products with higher behavioral signals receive a larger relative weight. The strength of that weight is controlled by **[!UICONTROL Intelligent Ranking Boost]** (see [Intelligent ranking boost](#intelligent-ranking-boost)); the boost remains bounded, but you can increase how much it shifts ordering.
 
 **Why the most viewed product might not appear first:**
 
-Textual relevance typically dominates ranking because its score is unbounded, while behavioral boosts are fixed. As a result, products with strong text matches often outrank those with higher engagement signals. Behavioral boosts alone may not compensate for large gaps in text relevance. Intelligent ranking addresses this by factoring in both match quality and shopper interaction, improving overall relevance. However, text match quality remains the primary driver of ranking.
+Textual relevance often dominates ranking because its score is unbounded, while behavioral influence is capped by the boost model. Products with very strong text matches can still outrank SKUs with higher engagement unless you increase **[!UICONTROL Intelligent Ranking Boost]** for that rule. Even at higher boost values, an extreme text relevance gap may not fully invert the list, as text match quality remains a primary driver. Always validate results in **[!UICONTROL Test your rule]** for your target queries.
 
 **Example:**
 
-A merchant uses the "Most viewed" intelligent ranking strategy and searches for "candle." They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
+A merchant uses the "Most viewed" intelligent ranking strategy and searches for **candle**. They expect product SKU YAN-K-E-512 to appear at the top of results because it has the highest view count. However, other products rank higher:
 
-* **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than YAN-K-E-512, its superior text match outweighs the behavioral boost.
+* **Texas Candle** (1st position): Has a shorter, cleaner product name that creates a very high text relevance score. Even though it has fewer views than **YAN-K-E-512**, its superior text match outweighs the behavioral boost.
 
-* **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. The fixed behavioral boost is not enough to overcome this text relevance gap.
+* **YAN-K-E-512** (lower position): Despite having the highest view percentile in the "Most viewed" behavioral data, its complex SKU-based name generates a lower text relevance score. At the default **[!UICONTROL Intelligent Ranking Boost]** (`5`), behavioral influence may not be enough to overcome that text gap. Increasing the boost can move **YAN-K-E-512** higher among products that already match the query. **YAN-K-E-512** must also match the query: at least one searchable attribute for that SKU must include **candle**, or it will not appear in results and the boost cannot apply.
+
+**Example (broad query):**
+
+For a query such as **wood**, several products can share similar textual relevance while view counts differ. With **Most viewed** selected, increasing **[!UICONTROL Intelligent Ranking Boost]** makes the historically most-viewed relevant SKU more likely to surface above lighter matches. Lowering the boost keeps results closer to pure textual ordering.
 
 See [search rules](./best-practice.md#search-rules) to learn how to improve product findability using rules.
 
 ### Caveats
 
 * Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
+* If intelligent ranking results do not correlate with actual sales or view performance, confirm that all relevant product variants are assigned to the category being reviewed. Missing variant category assignments are a common and easily overlooked cause of unexpected ranking behavior. See [Behavioral signals for configurable products and variants](#behavioral-signals-variants).
 * To ensure the intelligent ranking works correctly, make sure that the **Search Weight** for any product attributes that are used for search or filtering (facets) is `5` or less. To find this setting in the [!DNL Commerce] Admin:
 
    1. Select **Stores** > _Attributes_ > **Product**.
@@ -131,14 +192,14 @@ See [search rules](./best-practice.md#search-rules) to learn how to improve prod
 
 Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
-* Boost - Moves a product higher in the search results.
-* Bury - Moves a SKU lower in the search results.
-* Pin a product - Product is displayed in the selected "Position" on the page.
-* Hide a product - Excludes a SKU from the search results.
+* **[!UICONTROL Boost]** - Moves a SKU higher in the search results.
+* **[!UICONTROL Bury]** - Moves a SKU lower in the search results.
+* **[!UICONTROL Pin a product]** - SKU is displayed in the selected "Position" on the page.
+* **[!UICONTROL Hide a product]** - Excludes a SKU from the search results.
 
 The easiest way to pin a product is by drag and drop.
 
-1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Postion fields are automatically populated in the Events pane.
+1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Position fields are automatically populated in the Events pane.
 
    ![Rules - Match](assets/rule-event-pin-product.png)
 
@@ -152,7 +213,7 @@ Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
+   For example, choose **[!UICONTROL Hide a product]**. Then, enter the name of the product that you want to hide. Products are suggested as you type.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
@@ -215,10 +276,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Event |Description |
 |--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
-| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
-| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
-| Hide a product | Excludes a SKU, or range of SKUs, from the search results. |
+| [!UICONTROL Boost] | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
+| [!UICONTROL Bury] | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
+| [!UICONTROL Pin a product] | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
+| [!UICONTROL Hide a product] | Excludes a SKU, or range of SKUs, from the search results. |
 
 ### Details
 
@@ -229,3 +290,9 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |
+
+### Intelligent ranking controls
+
+| Field | Description |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | When an intelligent strategy other than **None** is selected, this setting controls how strongly behavioral signals influence ranking for that rule. Default `5`; allowed range `1`–`100`. Applied at query time; rule preview matches live behavior for the configured rule. |

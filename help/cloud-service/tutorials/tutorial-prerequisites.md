@@ -7,6 +7,38 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
+autotag-review: '2026-06-18T16:21:35.357Z'
+TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+    internal-label: System architecture
 ---
 # Tutorial prerequisites
 
@@ -33,7 +65,7 @@ The following tools are required for both extension and storefront development i
   * macOS/Linux: No installation required
   * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot are also supported, but could require modifications to the prompts and other steps in the tutorial.
+* Download an AI-assisted IDE, such as [Cursor](https://cursor.com/download) (recommended). Other IDEs, such as Claude Code, Gemini CLI, or Copilot, are also supported but could require modifications to the prompts and other steps in the tutorial.
 
 ## [!DNL Adobe Commerce as a Cloud Service] prerequisites
 
@@ -49,7 +81,7 @@ The following tools are required for both extension and storefront development i
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-After installing the [!DNL Adobe I/O CLI] and the required plugins, set up your extensibility workspace. Adobe recommends using the automated setup for the fastest experience.
+After installing the [!DNL Adobe I/O CLI] and the required plugins, set up your extensibility workspace. Adobe recommends using the automated setup for the most efficient experience.
 
 * **[Automated setup](#automated-setup) (Recommended)** — Run a single command to configure your workspace automatically.
 * **[Manual setup](#manual-setup)** — Follow step-by-step instructions to configure each component individually.
@@ -177,7 +209,7 @@ Set up a project in the Adobe Developer Console with the required APIs and crede
 
 #### Create a new project
 
-Create an App Builder project in the Adobe Developer Console to host your extension.
+To host your extension, create an [!DNL App Builder] project in the Adobe Developer Console.
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/).
 1. Click **[!UICONTROL Create project from a template]**.
@@ -317,7 +349,7 @@ EVENT_PREFIX=test
 
 ### Download the workspace configuration
 
-Run the following command to download the workspace configuration file:
+To download the workspace configuration file, run the following command:
 
 ```bash
 aio console workspace download workspace.json
@@ -357,7 +389,7 @@ When prompted, choose the option that uses the organization, project, and worksp
 
 ### Install the extensibility AI tools
 
-This process creates the MCP configuration (`.<agent>/mcp.json`), the skills directory (`.<agent>/skills/`), and adds `AGENTS.md` to the project root. You will be prompted to choose a starter kit, coding agent, and package manager.
+This process creates the MCP configuration (`.<agent>/mcp.json`), the skills directory (`.<agent>/skills/`), and adds `AGENTS.md` to the project root. You are prompted to choose a starter kit, coding agent, and package manager.
 
 
 1. Set up the AI-assisted development tools in the `extension` folder using the following commands:
@@ -382,9 +414,9 @@ This process creates the MCP configuration (`.<agent>/mcp.json`), the skills dir
 
 ## Storefront manual setup
 
-This section describes how to manually configure your storefront for the [Ratings extension tutorial](./ratings-extension.md) and other storefront tutorials.
+This section describes how to configure your storefront manually for the [Ratings extension tutorial](./ratings-extension.md) and other storefront tutorials.
 
-To automatically configure your storefront, run the `app-setup` command described in the [Automated setup](#automated-setup) section and select the [!DNL AEM Boilerplate Commerce] starter kit.
+To configure your storefront automatically, run the `app-setup` command described in the [Automated setup](#automated-setup) section and select the [!DNL AEM Boilerplate Commerce] starter kit.
 
 ### Prerequisites
 
@@ -392,7 +424,7 @@ The following items are required to complete the [storefront](./ratings-extensio
 
 * [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
 
-* A storefront project connected to your [!DNL Commerce] instance. If you do not have a storefront project, follow the steps in [Create a storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, including the [Link repo to commerce data](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"} section.
+* A storefront project connected to your [!DNL Commerce] instance. If you do not have a storefront project, follow the steps in [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/){target="_blank"}, including the [Link repo to commerce data](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"} section.
 
 ### Clone the storefront repository
 

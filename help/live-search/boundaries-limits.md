@@ -3,10 +3,35 @@ title: Boundaries and Limits
 description: Learn about the boundaries and limits for [!DNL Live Search] to ensure it meets the needs of your business.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
+TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Boundaries and limits
 
-When it comes to site search, Adobe Commerce gives you options. Review the following boundaries and limits to ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business. If you need advanced search capabilities such as content search, bring-your-own-algorithm (BYOA), or attribute-based merchandising, consider a third-party search solution.
+When it comes to site search, Adobe Commerce gives you options. To ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business, review the following boundaries and limits. If you need advanced search capabilities such as content search, bring-your-own-algorithm (BYOA), or attribute-based merchandising, consider a third-party search solution.
 
 ## General
 
@@ -19,15 +44,15 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
 - Custom product types are not supported.
-- Custom attributes created programmaticaly with `"is_user_defined": false` are not supported.
-- You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
+- Custom attributes created programmatically with `"is_user_defined": false` are not supported.
+- You can filter results using the "starts with" or "contains" conditions with some limitations as described in the [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations).
 - You can only track performance metrics within the last year.
 - If a search query contains multiple words, the blank space between the words causes them to be treated as separate search terms. Use [synonyms](./synonyms.md) if you want to account for multi-word search queries.
 - [!DNL Live Search] does not support [search term redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) natively. Implement redirects by using Fastly or another custom configuration.
 
 ## Indexing
 
-- [!DNL Live Search] [indexes](indexing.md) up to a total of 450 product attributes per store view. These are distributed as follows:
+- [!DNL Live Search] [indexes](indexing.md) up to a total of 450 product attributes per store view. These attributes are distributed as follows:
    - 50 sortable attributes
    - 200 filterable attributes
    - 200 searchable attributes
@@ -37,31 +62,31 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 ## Facets
 
-- From the set of defined filterable attributes, you can configure up to 100 attributes as facets.
-- Within a facet, a maximum of 100 buckets can be returned. If you need to return more than 100 buckets, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
+- By default, you can configure up to 100 filterable attributes as facets. Eligible merchants can request an increase to a maximum of 500 facets through [Adobe Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; approval is subject to eligibility and performance assessment.
+- Within a facet, a maximum of 100 buckets can be returned. If you need to return more than 100 buckets, [create a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
 - Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
-- Stock status (`quantity_and_stock_status`) is not supported as a facet. You can use `inStock: 'true'` to filter out of stock products. This is supported out of the box in the `LiveSearchAdapter` module when "Display out of stock products" is set to "True" in the [!DNL Commerce] Admin.
+- Stock status (`quantity_and_stock_status`) is not supported as a facet. In the Admin, you can set  [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] to filter out of stock products. This functionality is supported natively in the `[PLP Widget](plp-styling.md)` module. For details, see [Manage out-of-stock products](manage-out-of-stock-products.md).
 - Date type attributes are not supported as a facet.
 - Any changes made to the attribute metadata after that attribute is added as a facet, are not reflected in the facet.
 - You can have up to 50 sortable attributes and 200 searchable attributes.
 
 ## Query
 
-- [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
+- [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields are not fully compatible.
 - The maximum number of results that can be returned in a search query is 10,000.
 - The maximum number of results per page is 100.
 - It is not possible to filter results using a date type attribute.
 
 >[!NOTE]
 >
->Sorting by position requires a valid `categoryPath` or `categoryIds` filter to be active. [Learn more](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#error-handling-for-categorypath-and-categoryids).
+>Sorting by position requires a valid `categoryPath` or `categoryIds` filter to be active. [Learn more](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#error-handling-for-categorypath-and-categoryids).
 
 ## Search merchandising
 
 - The maximum number of search merchandising [rules](rules.md) per store view is 50.
 - The maximum number of conditions per rule is 10.
 - The maximum number of events per rule is 25.
-- Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order to something like sort by name or price, rules and manual rankings are no longer in effect.
+- Rules and manually ranked products are applied to the search results when the default sort order, "Sort by: Most Relevant," is selected. If a shopper changes the sort order, rules and manual rankings are no longer in effect.
 - To avoid unpredictable results in paginated responses, the number of pinned products should not exceed the requested page size.
 
 ## Synonyms
@@ -73,7 +98,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - You can create one rule per category for each store view.
 - The maximum number of conditions per rule is 10.
 - The maximum number of events per rule is 25.
-- Rules are applied when a specific category is opened on the storefront and a rule exists for that category. For Category Merchandising rules, the default sort order is "Sort by: Position". If a shopper changes the sort order, all hidden, pinned, and buried products are no longer sorted.
+- Rules are applied when a specific category is opened on the storefront and a rule exists for that category. For Category Merchandising rules, the default sort order is "Sort by: Position." If a shopper changes the sort order, all hidden, pinned, and buried products are no longer sorted.
 
 ## B2B and category permissions
 
@@ -88,7 +113,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 ## [!DNL Storefront popover]
 
-- The [[!DNL popover]](storefront-popover.md) is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Luma* styling.
+- The [[!DNL popover]](storefront-popover.md) is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page lack *Luma* styling.
 - The [!DNL popover] does not support the *Blank* theme.
 - The [!DNL popover] is not supported on the Quick Order form.
 - Wishlists and product comparisons are not supported.
@@ -102,4 +127,4 @@ For help with troubleshooting common issues in [!DNL Live Search], see the follo
 - [[!DNL Live Search] dashboard and search result ranking is incorrect](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Addresses issues where search results or performance metrics displayed in the Live Search dashboard are not showing as expected. This article explains how to troubleshoot ranking discrepancies and dashboard data inconsistencies.
 - [[!DNL Live Search] facets are not alphabetically sorted](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - Resolves the issue where facet values appear in an unexpected order rather than alphabetically. This article provides steps to configure and correct facet sorting behavior on your storefront.
 
-If you need additional assistance, contact [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+If you need additional assistance, contact [support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

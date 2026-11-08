@@ -1,8 +1,32 @@
 ---
 title: Payment Options
 description: Set the payment options to customize the methods available for your store customers.
+role: Admin, User
+level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Payment Options
 
@@ -57,17 +81,38 @@ See [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} topi
 
 ### [!DNL Apple Pay] button
 
-With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience in Safari (for up to 99 domains per merchant account), which can increase conversions. The [!DNL Apple Pay] button autofill's stored payment, contact, and shipping details from customers' iOS or macOS devices, enabling a quick, one-tap checkout experience.
+With [!DNL Apple Pay], merchants can provide a secure, streamlined checkout experience (for up to 99 domains per merchant account), which can increase conversions.
+
+* **Safari (macOS and iOS)** — the [!DNL Apple Pay] button autofills stored payment, contact, and shipping details directly from the customer's Apple device, both at the start of checkout (express) and on the final checkout page.
+* **Chrome, Firefox, and Microsoft Edge** — shoppers can use [!DNL Apple Pay] both during **express checkout** and at the **final checkout step**. On desktop, a **QR code** is displayed so the shopper completes payment in the Apple Pay sheet on an **iPhone** (iOS 18 or later) using the Camera app to open the wallet flow.
+
+See [What's new in Wallet and [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} (Apple Developer, WWDC24) for Apple's overview of this flow.
 
 ![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 When enabled, the [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. You can configure [!DNL Apple Pay] in the store configuration or the extension's Home.
 
+Customers can **apply or remove a single cart price rule (coupon) code** during the [!DNL Apple Pay] express checkout.
+
 >[!NOTE]
 >
->  The Apple Pay domain verification certificate is already included into the Payment Services code. Verify that the path `/.well-known/apple-developer-merchantid-domain-association` returns a 200 response code. See [PayPal developer documentation about Integrating with Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) for more information about the **Apple Pay Domain verification** certificate.
+> The Apple Pay domain verification certificate is already included in the [!DNL Payment Services] code. Verify that the path `/.well-known/apple-developer-merchantid-domain-association` returns a 200 response code. See [PayPal developer documentation about Integrating with Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) for more information about the **Apple Pay Domain verification** certificate.
 
 See [Settings](configure-admin.md#apple-pay) for more information.
+
+#### Limitations for [!DNL Apple Pay] express
+
+**Promotional codes in the [!DNL Apple Pay] pay sheet**
+
+* Promotional codes entered in the [!DNL Apple Pay] pay sheet apply only to the express flow. They are not applied when [!DNL Apple Pay] is selected on the standard checkout page.
+* Only **one** promotional code can be applied per [!DNL Apple Pay] pay sheet.
+* There is no [!DNL Apple Pay] review page; the shopper completes the purchase directly from the pay sheet.
+* If the shopper closes and reopens the [!DNL Apple Pay] pay sheet, the previously entered promotional code is not remembered — only the discount amount remains reflected in the totals.
+
+**Non-Safari browsers**
+
+* [!DNL Apple Pay] buttons do not render on Android devices in either the express or standard checkout flow.
+* For **virtual products**, the [!DNL Apple Pay] pay sheet still prompts for a shipping address. The address is used as a best-effort estimate of the billing address to calculate totals, because Apple does not provide the billing address until the shopper authorizes the payment.
 
 ### [!DNL Google Pay] button
 
@@ -79,9 +124,28 @@ By integrating [!DNL Google Pay] into your checkout experience, merchants can co
 
 When enabled, the [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views. See [Settings](configure-admin.md) for more information.
 
-   >[!NOTE]
-   >
-   > The [!DNL Google Pay] API can only be used on websites in a secure context. See [Troubleshooting](https://developers.google.com/pay/api/web/support/troubleshooting) documentation for more information.
+[!DNL Google Pay] **express** checkout can show **shipping methods in the Google Pay sheet**, support an optional **review** step (configure **[Skip Review](configure-admin.md#google-pay)**), and include a **promotional code** field during checkout.
+
+>[!NOTE]
+>
+> The [!DNL Google Pay] API can only be used on websites in a secure context. See [Troubleshooting](https://developers.google.com/pay/api/web/support/troubleshooting) documentation for more information.
+
+#### Limitations for [!DNL Google Pay] express
+
+**Shipping in the pay sheet**
+
+* The **shipping-in-sheet** behavior (client-side shipping callback) is available only when **[!UICONTROL Skip Review]** is set to `Yes` in [Google Pay configuration](configure-admin.md#google-pay).
+
+**Promotional codes in the [!DNL Google Pay] pay sheet**
+
+* Promotional codes entered in the [!DNL Google Pay] pay sheet apply only to the express flow. They are not applied when [!DNL Google Pay] is selected on the standard checkout page.
+* Only **one** promotional code can be applied per [!DNL Google Pay] pay sheet, even if your store allows multiple coupons per order. (Multiple coupons remain supported in the standard cart and checkout.)
+* Promotional codes cannot be applied to gift card products.
+* The promotional code field is **not supported on Android devices**.
+* Codes added in the [!DNL Google Pay] pay sheet can only be removed from the pay sheet — not from the Commerce cart page.
+* On Adobe Commerce 2.4.4–2.4.6, the discount line in the [!DNL Google Pay] pay sheet may show no value due to a platform limitation.
+* On Adobe Commerce 2.4.7, the discount value may not appear in the [!DNL Google Pay] pay sheet for some products (primarily downloadable products) due to a platform limitation in the GraphQL response.
+* If an automatic [cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) applies (for example, "$50 off when spending over $200"), it is combined with any code the shopper applies in the pay sheet. The totals shown in the [!DNL Google Pay] pay sheet may differ from the order summary as a result.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -98,6 +162,17 @@ Learn about availability of payment methods by country in PayPal's [Payment meth
 Customers can check out with ease and confidence using the PayPal button.
 
 The [!DNL PayPal] button is visible from the product page, mini-cart, shopping cart, and checkout views.
+
+#### PayPal Express review page
+
+In [!DNL Payment Services] 2.17.0 or later, merchants can configure an optional merchant review page for PayPal Express checkout. This page is separate from the PayPal payment modal and lets shoppers review the final order total and applicable terms and conditions before placing an order.
+
+Use **[!UICONTROL Skip Review]** in [PayPal payment buttons configuration](configure-admin.md#paypal-payment-buttons) to control this step:
+
+* `No`---The shopper returns to the merchant review page after completing the PayPal payment modal and confirms the order before it is placed.
+* `Yes`---The merchant review page is skipped.
+
+The review-page setting does not replace the merchant's responsibility to meet applicable regulatory requirements. The existing [Google Pay review-page setting](configure-admin.md#google-pay) is configured separately.
 
 #### [!DNL Venmo] button
 
@@ -133,7 +208,7 @@ Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [S
 
 PayPal, Pay Later, and Venmo payment methods use a [server-side shipping callback](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) that enables PayPal to communicate directly with your Commerce instance to retrieve shipping options and calculate totals in real time.
 
-This server-side approach allows [!DNL Payment Services] to skip the order confirmation pop-up, providing a faster, streamlined purchase experience. Because shipping costs and taxes are calculated dynamically through callbacks, the buyer sees accurate totals directly in the PayPal or Venmo review page.
+Because shipping costs and taxes are calculated dynamically through callbacks, the shopper sees updated shipping options and totals directly in the PayPal or Venmo payment modal. For PayPal Express checkout, the optional [merchant review page](#paypal-express-review-page) is a separate step after the PayPal payment modal, controlled by **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -160,7 +235,7 @@ To **capture payments with your existing credit card provider _and_ PayPal payme
 1. Ensure that your store is [in production mode](configure-admin.md#general-configuration).
 1. [Configure the desired PayPal payment buttons](configure-admin.md#paypal-payment-buttons).
 1. Turn _Off_ the **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
-1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments).
 
 ## Local Payment Methods
 
@@ -215,7 +290,7 @@ With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have mu
 
 ### Order recalculation
 
-When a customer enters the checkout flow from the mini-cart, shopping cart, or product page, they are directed to an order review page where they can see the selected shipping address in a PayPal popup window. After the customer selects the shipping method, the order amount is recalculated appropriately and the customer can see shipping costs and taxes.
+When a customer enters the PayPal checkout flow from the mini-cart, shopping cart, or product page, they can review the selected shipping address in the PayPal payment modal. After the customer selects the shipping method, the order amount is recalculated and the customer can see shipping costs and taxes. For PayPal Express checkout, the optional [merchant review page](#paypal-express-review-page) lets the customer review the final total and applicable terms and conditions before placing the order.
 
 When a customer enters the checkout flow from the checkout page, the system is already aware of the shipping address and final calculated amount, and totals are appropriately represented.
 

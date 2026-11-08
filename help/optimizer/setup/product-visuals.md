@@ -4,11 +4,34 @@ description: Learn how to use AEM Assets for product images in [!DNL Adobe Comme
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Product Visuals with AEM Assets
 
 Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage product images through Adobe Experience Manager (AEM) Assets. This integration provides a seamless workflow for syncing high-quality product imagery from AEM Assets to your [!DNL Commerce Optimizer] catalog using catalog layers.
+
+>[!NOTE]
+>
+>**Product Visuals** is the name of the bundle provided with [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer]. It combines [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) and [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>
+>Customers with a different AEM Assets license (for example, **AEM Assets Ultimate**) can use the same integration; only the AEM release affects the onboarding steps, not the license type.
 
 ## Key benefits
 
@@ -19,46 +42,23 @@ Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage prod
 
 ## How it works
 
-The integration has two main flows:
+The integration has two independent event flows. Both use [Adobe I/O Events](https://developer.adobe.com/events/docs/) to transfer events to the Assets integration service, but each direction uses its own event provider:
 
-* **From AEM Assets**: When an asset is approved, rejected, or removed, the event flows through the Adobe Pipeline to the Assets Integration Service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to the [!DNL Commerce Optimizer], where they are stored as product layers.
+* **From AEM Assets to the Assets integration service**: When an asset is approved, rejected, or removed, the event is delivered to the Assets integration service. The service matches assets to products using a `match-by-SKU` or a custom matcher strategy, then sends the `product-asset` mappings to [!DNL Commerce Optimizer], where they are stored as product layers.
 
-* **From ACO**: When a product is updated in the [!DNL Commerce Optimizer], the event flows through the Adobe Pipeline to the Assets Integration Service. The service syncs any matching asset mappings back to ACO.
+* **From [!DNL Commerce Optimizer] to the Assets Integration Service**: When a product is updated in [!DNL Commerce Optimizer], the event is delivered to the Assets Integration Service. The service syncs any matching asset mappings back to [!DNL Commerce Optimizer].
 
 The updated images are available through storefront APIs (Catalog Service, Live Search, Product Recommendations).
-
-### Source and layer configuration
-
-Images from AEM Assets are ingested as a catalog layer with the following source configuration:
-
-> Example of a source configuration
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-This configuration ensures that AEM Assets images are applied as an overlay on your base product catalog.
-
-## Prerequisites
-
-Before enabling Product Visuals, ensure you meet the [prerequisites for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
-
-## Setup
-
-To enable the integration, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) with your [!DNL Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets Integration Service.
-
-See [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) for onboarding information.
 
 ### Configure AEM Assets metadata
 
 To enable automatic product matching, configure your assets in AEM Assets with Commerce metadata.
 
-See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets) for the required metadata fields and steps.
+See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aem.md) for the required metadata fields and steps.
+
+## Limitations
+
+For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
 
 ## Using Product Visuals
 
@@ -68,7 +68,9 @@ After the integration is configured, manage your product images through AEM Asse
 
 1. Upload images to your AEM Assets repository.
 
-1. Add Commerce metadata to the asset. See [Apply metadata to assets](../../aem-assets-integration/get-started/configure-aco.md#step-3-apply-metadata-to-assets).
+1. Add Commerce metadata to the asset.
+
+   See [Default automatic matching](../../aem-assets-integration/synchronize/default-match.md) and [Custom automatic matching](../../aem-assets-integration/synchronize/custom-match.md).
 
 1. Approve the asset for delivery. The asset must be in **approved** status to trigger synchronization.
 
@@ -83,3 +85,4 @@ To display AEM Assets images on your storefront, [assign the `AEM-Assets` layer 
 * [Catalog layers](catalog-layer.md)
 * [Catalog views](catalog-view.md)
 * [AEM Assets Integration Guide](../../aem-assets-integration/overview.md)
+* [Product Visualss limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

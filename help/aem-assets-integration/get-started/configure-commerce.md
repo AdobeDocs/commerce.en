@@ -4,6 +4,27 @@ description: Learn how to install the AEM Assets Integration for Adobe Commerce 
 feature: CMS, Media
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
+TQID: 'https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
 # Install Adobe Commerce packages
 
@@ -15,11 +36,11 @@ Add this extension to the Commerce environment by installing the `aem-assets-int
 
 You need the following roles and permissions to enable the Commerce integration with AEM Assets.
 
-- [Commerce cloud project administrator](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)—Install required extensions and configure the Commerce application server from the Admin or the command line.
+- [Commerce cloud project administrator](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)—Install required extensions and configure the Commerce application server from the Admin or the command line.
 
   - Access to [repo.magento.com](https://repo.magento.com/admin/dashboard) to install the extension.
 
-    For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+    For key generation and obtaining the necessary rights, see [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). For cloud installations, see the [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
 
 - [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)—Update store configuration and manage Commerce user accounts.
 
@@ -43,6 +64,12 @@ Install the Adobe Commerce package and prepare the Commerce environment by compl
 
 Install the latest version of the AEM Assets Integration extension (`aem-assets-integration`) on an Adobe Commerce instance with version Adobe Commerce 2.4.5+. The extension is delivered as a composer metapackage from the [repo.magento.com](https://repo.magento.com/admin/dashboard) repository.
 
+By default, `composer require magento/aem-assets-integration` installs the latest available version. To pin an exact version instead (for example, to keep multiple environments on the same validated release), use an exact constraint such as `"magento/aem-assets-integration": "1.4.7"`; use `^1.4.7` only when a compatible 1.x range is intended.
+
+>[!NOTE]
+>
+>If you are upgrading from a version earlier than 1.4.6, Adobe recommends upgrading directly to 1.4.7 or later. Version 1.4.6 introduced custom image roles and the extension update checker. Version 1.4.7 fixes an issue where the `workspace.json` file used for [custom automatic matching](../synchronize/custom-match.md) did not persist correctly when Commerce Async Config Save is enabled. If you use a custom matcher with Async Config Save enabled, re-upload your `workspace.json` file after upgrading. See [Async Config Save](../synchronize/custom-match.md#async-config-save).
+
 >[!BEGINTABS]
 
 >[!TAB Cloud infrastructure]
@@ -53,7 +80,7 @@ Use this method to install the [!DNL AEM Assets Integration] extension on a Comm
 
    >[!NOTE]
    >
-   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
 
@@ -61,10 +88,10 @@ Use this method to install the [!DNL AEM Assets Integration] extension on a Comm
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Add the AEM Assets Integration for Commerce extension.
+1. Add the AEM Assets Integration for Commerce extension. Omit the version constraint to install the latest available version, or pin a specific version as shown here.
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. Update package dependencies.
@@ -83,13 +110,13 @@ Use this method to install the [!DNL AEM Assets Integration] extension on a Comm
    git push origin <branch-name>
    ```
 
-   Pushing the updates initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Pushing the updates initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-premises]
 
 Use this method to install the [!DNL AEM Assets Integration] extension for an on-premises instance.
 
-1. Use Composer to add the AEM Assets Integration for Commerce extension to your project:
+1. Use Composer to add the AEM Assets Integration for Commerce extension to your project. Omit the version constraint to install the latest available version, or pin a specific version, such as `"^1.4.7"`.
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update
@@ -125,7 +152,7 @@ Use this method to install the [!DNL AEM Assets Integration] extension for an on
 >
 > Commerce Services Connector setup is a one-time process required to use [Adobe Commerce SaaS services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices). If you have already configured the connector for another service, you can view the existing configuration from the Commerce Admin by selecting **[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**.
 
-To transmit data between your Adobe Commerce instance and the services that enable the AEM Assets Integration, configure the Commerce Services Connector from the Admin (**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**). 
+To transmit data between your Adobe Commerce instance and the services that enable the AEM Assets Integration, configure the Commerce Services Connector from the Admin (**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**).
 
 ![SaaS project and data space ids for the AEM Assets integration](../assets/aem-saas-project-config.png){width="600" zoomable="yes"}
 
@@ -146,8 +173,8 @@ The AEM Assets Integration uses the Adobe I/O Events service to send custom even
 Before configuring Adobe I/O Events, verify the RabbitMQ and cron job configuration for your Commerce project: 
 
 - Ensure that RabbitMQ is enabled and listening for events.
-  - [RabbitMQ Setup for Adobe Commerce on premises](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
-  - [RabbitMQ Setup for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
+  - [RabbitMQ Setup for Adobe Commerce on premises](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
+  - [RabbitMQ Setup for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
   - Verify that [cron jobs are enabled](https://developer.adobe.com/commerce/extensibility/events/configure-commerce/#check-cron-and-message-queue-configuration). Cron jobs are required for communication and workflows for the AEM Assets integration.
 
 >[!NOTE]
@@ -207,7 +234,7 @@ Before creating a snippet based on this example, review the values to determine 
 
 - `content`: The snippet of VCL code to run, which checks the client IP address. If the IP is in the Edge ACL, it is blocked from access with a `405 Not allowed` error for the entire website. All other client IP addresses are allowed access.
 
-For detailed information about using VCL snippets to block incoming requests, see [Custom VCL for blocking requests](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) in the _Commerce on Cloud Infrastructure Guide_.
+For detailed information about using VCL snippets to block incoming requests, see [Custom VCL for blocking requests](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!ENDSHADEBOX]
 
@@ -257,7 +284,7 @@ On the Integrations page, generate the OAuth authentication credentials by click
 
 >[!NOTE]
 >
->You can also generate authentication credentials using the Adobe Commerce APIs. For details about this process and more information about OAuth-based authentication for Adobe Commerce, see [OAuth-based authentication](https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth/) in the Adobe Developer documentation.
+>You can also generate authentication credentials using the Adobe Commerce APIs. For details about this process and more information about OAuth-based authentication for Adobe Commerce, see [OAuth-based authentication](https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth) in the Adobe Developer documentation.
 
 ## Next step
 

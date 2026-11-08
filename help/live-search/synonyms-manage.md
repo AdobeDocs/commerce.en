@@ -2,6 +2,13 @@
 title: Manage Synonyms
 description: Learn how to manage existing [!DNL Live Search] synonyms.
 exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
+TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage Synonyms
 

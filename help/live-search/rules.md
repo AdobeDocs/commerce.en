@@ -1,7 +1,17 @@
 ---
 title: Search Merchandising
-description: '[!DNL Live Search] merchandising rules combine logic with actions to shape the shopping experience.'
+description: "[!DNL Live Search] merchandising rules combine logic with actions to shape the shopping experience."
 exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
+TQID: https://experienceleague.adobe.com/WP92dt45BJo8-pJDaWY-9ocDd4GdJVWcOqzVLfjnEkI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Search Merchandising
 
@@ -69,4 +79,4 @@ Request made in the Admin work slightly differently. When previewing in the Admi
 ## Category merchandising and category product assignments
 
 [!DNL Live Search] allows you to filter by Categories. See [Category Merchandising](category-merch.md) for more information.
-However, in Adobe Commerce you can create a virtual category with [Category product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). This type of category is built at runtime and does not exist in the category database. Therefore, [!DNL Live Search] cannot read or use this category type.
+However, in Adobe Commerce you can create a virtual category with [Category product assignments](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments). This type of category is built at runtime and does not exist in the category database. Therefore, [!DNL Live Search] cannot read or use this category type.

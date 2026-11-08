@@ -1,7 +1,23 @@
 ---
-title: "Install and access [!DNL App Management]"
-description: "Prerequisites and access requirements for using Adobe Commerce [!DNL App Management]."
+title: Install and access [!DNL App Management]
+description: Prerequisites and access requirements for using Adobe Commerce [!DNL App Management].
 feature: App Builder, Extensibility, Integration
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Install and access [!DNL App Management]
 
@@ -16,7 +32,7 @@ After meeting the following requirements, select the corresponding tab for your 
 Before associating an app, ensure you have the following:
 
 | Requirement | Description |
-|-------------|-------------|
+| --- | --- |
 | **Admin access** | Commerce Admin with [!DNL App Management] permissions |
 | **Deployed app** | App Builder application deployed to your organization and ready to connect |
 | **Organization access** | Access to the Adobe organization where the app is deployed |
@@ -56,19 +72,19 @@ Before associating an app, ensure you have the following:
 
 1. Navigate to **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
 
-The [!DNL App Management] view displays. Here, you can associate, configure, and manage App Builder applications. For search, filters, and the **[!UICONTROL Acquire App]** action on that screen, see [Find an application in the Admin](manage-app.md#find-an-application-in-the-admin) in [Manage your app](manage-app.md).
+The [!DNL App Management] view displays. Here, you can associate, install, configure, upgrade, and manage App Builder applications. For search, filters, and the **[!UICONTROL Acquire App]** action on that screen, see [Find an application in the Admin](manage-app.md#find-an-application-in-the-admin) in [Manage your app](manage-app.md).
 
 ## Installing App Builder apps
 
-If you need to install an App Builder app from Adobe Exchange (for example, a pre-built integration or marketplace app), see [Install App Builder apps from Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} for step-by-step instructions.
+If you need to install an App Builder app from Adobe Exchange (for example, a pre-built integration or marketplace app), see [Install App Builder apps from Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} for step-by-step instructions.
 
-After an app is installed and deployed, use [!DNL App Management] to [associate it with your Commerce instance](manage-app.md#associate-an-app) and configure its settings.
+Acquiring and deploying an App Builder app makes it available to your organization. To use it with a Commerce instance, [associate the app](manage-app.md#associate-an-app), [install its components](manage-app.md#install-an-app) when applicable, and [configure its settings](manage-app.md#configure-settings) in [!DNL App Management].
 
 ## Commerce webhooks and apps
 
 Some App Builder applications use [Adobe Commerce webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) so that Commerce can call your app over HTTP when certain events occur (for example, after a product is saved). Webhook endpoints and subscription logic are defined by the **app developer** when the application is built and deployed; store administrators do not configure webhooks separately in App Management.
 
-After you [associate the app](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) with your Commerce instance and complete any setup instructions from the app, webhook behavior follows the app’s implementation.
+After you [associate the app](manage-app.md#associate-an-app) with your Commerce instance, [install its components](manage-app.md#install-an-app), and complete any setup instructions from the app, webhook behavior follows the app's implementation. App installation and upgrades apply the webhook subscriptions declared by the developer; you do not need to create those subscriptions separately.
 
 If [!DNL App Management] cannot trigger the app’s validation endpoint (for example, the URL is unreachable or the response does not meet requirements), you may see an error similar to the following in the [!DNL App Management] dashboard:
 

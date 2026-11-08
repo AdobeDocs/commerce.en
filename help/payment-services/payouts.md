@@ -5,10 +5,32 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Payouts Report
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's transactions, orders, and payments.
+
+>[!NOTE]
+>
+>The Payouts views below are available from [!DNL Payment Services] **[!UICONTROL Home]** on Adobe Commerce on cloud and on-premises. They are not shown in the [!DNL Payment Services] dashboard for [!DNL Adobe Commerce as a Cloud Service] or [!DNL Adobe Commerce Optimizer]; see [[!DNL Payment Services] Home](payments-home.md).
 
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
@@ -21,7 +43,7 @@ You can [download payout transactions](#download-transactions) in a .csv file fo
 
 >[!NOTE]
 >
->Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](production.md#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Payouts data visualization view
 

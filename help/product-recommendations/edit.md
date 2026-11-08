@@ -2,12 +2,26 @@
 title: Edit Recommendation
 description: Learn how to edit a product recommendation.
 exl-id: 57bc68c0-03ba-4b66-8c75-14e49176670b
+TQID: https://experienceleague.adobe.com/iynpVCKsygJXg2v-Djctfb4bhV9FMheA0ab66IBOvCg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
 ---
 # Edit Recommendation
 
 The Edit Recommendation page gives you the ability to adjust the individual settings that make up the recommendation. All settings can be edited except the page type and recommendation type. The following settings can be edited:
 
 - [Recommendation name](#name)
+- [Reference Key](#reference-key)
 - [Storefront label](#label)
 - [Number of products](#number)
 - [Placement and Position](#placement)
@@ -32,6 +46,10 @@ The preview on the right side of the page shows how the recommendation with the 
 Choose a descriptive name that indicates the purpose of the recommendation. The name is for internal reference and does not appear in the storefront.
 
 ![Edit name](assets/edit-name.png)
+
+### Reference Key {#reference-key}
+
+The key used to identify the recommendation unit in storefront configuration.
 
 ### Storefront label {#label}
 

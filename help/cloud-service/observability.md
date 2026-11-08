@@ -1,10 +1,47 @@
 ---
-title: 'Observability for [!DNL Adobe Commerce as a Cloud Service]'
+title: Observability for [!DNL Adobe Commerce as a Cloud Service]
 description: Learn about the observability tools and telemetry capabilities available for [!DNL Adobe Commerce as a Cloud Service], including metrics, logging, and tracing.
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+autotag-review: '2026-06-09T15:41:54.613Z'
+TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
+product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Observability
 
@@ -62,13 +99,13 @@ The [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telemetry/blob
 
 ### API Mesh logging
 
-[API Mesh logging](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging/) lets you monitor and debug requests flowing through your mesh using ray IDs. Export logs in bulk or forward them to platforms like [!DNL New Relic] for centralized analysis.
+[API Mesh logging](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging) lets you monitor and debug requests flowing through your mesh using ray IDs. Export logs in bulk or forward them to platforms like [!DNL New Relic] for centralized analysis.
 
 ## Storefront
 
 ### CDN and Real User Monitoring
 
-[Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) data collection through your CDN origin to eliminate an extra TLS handshake and improve front-end performance measurement.
+[Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) data collection through your CDN origin to eliminate an extra TLS handshake and improve front-end performance measurement.
 
 ## Observability videos
 

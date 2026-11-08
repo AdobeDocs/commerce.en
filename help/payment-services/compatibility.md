@@ -5,16 +5,37 @@ role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
+TQID: 'https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Compatibility for [!DNL Payment Services]
 
-[!DNL Payment Services] is available for Adobe Commerce and Magento Open Source. [!DNL Payment Services] is now compatible with Adobe Commerce versions 2.4.x.
+[!DNL Payment Services] is available for [!DNL Adobe Commerce as a Cloud Service], all supported versions of [!DNL Adobe Commerce on Cloud] and on-premises, and Magento Open Source. See the [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) page for version-specific information.
 
 ## Prerequisites
 
-To use [!DNL Payment Services], you'll need to first connect your Commerce instance. **You set up this connection only once**.
+To use [!DNL Payment Services], you'll need to connect your Commerce instance first. **You perform this connection only once**.
 
-1. If you are unsure whether your instance is connected, navigate to **System** > Services > **Commerce Services Connector** and view the public and private API key values in the Sandbox Keys and Production Keys sections, and the Project and Data Space fields in the SaaS Identifier section. If those values are present, then your instance is connected.
+1. If you are unsure whether your instance is connected, navigate to **System** > Services > **Commerce Services Connector** to view your API keys and SaaS Identifier details. If those values are present, then your instance is connected.
 
 1. If you still need to connect your instance, view the instructions on the [Commerce Services Connector](../landing/saas.md) page.
 
@@ -54,7 +75,7 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 ![check](assets/icon-check.png)  Standard pricing
 
-![check](assets/icon-check.png)  **Available in XX countries**
+![check](assets/icon-check.png)  **Available in 200+ countries**
 
 [![learn more](assets/learn-more-button.svg)](onboard.md)
 
@@ -84,22 +105,22 @@ See [Connect](connect.md) for more information on setting up your [!DNL Payment 
 
 ![check](assets/icon-check.png)  (L2/L3 pricing capabilities – US Only)
 
-![check](assets/icon-check.png)  **Only available in United States (US), Canada (CA), Australia (AUS). France (FR), United Kingdom (UK)**
+![check](assets/icon-check.png)  Available in 37 countries. Australia, Austria, Belgium, Bulgaria, Canada, China, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hong Kong, Hungary, Ireland, Italy, Japan, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mexico, Netherlands, Norway, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, Spain, Sweden, United Kingdom, United States. **Negotiated rates available in United States (US), Canada (CA), Australia (AU), France (FR), United Kingdom (GB), Italy (IT), Netherlands (NL), Germany (DE)**
 
 [![learn more](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
-See the [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
+See the [Lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
 To get the full instructions and start the onboarding process, see [Get Started with [!DNL Payment Services]](onboard.md).
 
 ### Accepted credit cards and currencies
 
-[!DNL Payment Services] accepts the currencies of the countries in which it is available. See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information on setting up currency rates.
+[!DNL Payment Services] accepts the currencies of the countries in which it is available. See [Currency configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) for more information on setting up currency rates.
 
 For more information on the currencies and payment methods available with PayPal products and services, refer to the following pages:
 
-* [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+* [Supported currencies documentation](https://developer.paypal.com/reports/reference/supported-currencies).
 
-* [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/).
+* [Payment methods documentation](https://developer.paypal.com/payment-methods).

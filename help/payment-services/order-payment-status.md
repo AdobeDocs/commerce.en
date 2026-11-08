@@ -5,10 +5,34 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Order Payment Status Report
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](reporting.md), orders, and payments.
+
+>[!NOTE]
+>
+>The Order payment status views below are available from [!DNL Payment Services] **[!UICONTROL Home]** on Adobe Commerce on cloud and on-premises. They are not shown in the [!DNL Payment Services] dashboard for [!DNL Adobe Commerce as a Cloud Service] or [!DNL Adobe Commerce Optimizer]; see [[!DNL Payment Services] Home](payments-home.md).
 
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
@@ -98,9 +122,22 @@ During customer checkout or when an admin creates an invoice for a previously au
 
 Detect when a pending capture transaction enters a `Completed` status so merchants can resume processing the affected order.
 
-To make sure this process works as expected, merchants must configure a new cron job. Once the job is configured to run automatically, no other interventions are expected from the merchant.
+>[!NOTE]
+>
+>Asynchronous monitoring is disabled by default. When disabled, orders with a `Pending` capture transaction do not automatically move to `Payment Review`. To enable this behavior, turn on asynchronous monitoring by following the steps below.
 
-See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Once configured, the new job runs every 30 minutes to fetch updates for orders that are in a `Payment Review` status.
+Enable asynchronous monitoring: [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+
+1. Enable the `async_status_updates` setting. Because this setting is not available in the Admin, enable it from the command line:
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Enable and schedule the `sync_order_payment_status` cron job so that status updates are fetched automatically. See [Configure cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+
+Once the setting and cron job are enabled, the cron job runs every 10 minutes to fetch updates for orders in `Payment Review` status. After setup, no additional merchant action is required under normal operation.
+
 
 Merchants can check the updated payment status via the Order payment status report view.
 

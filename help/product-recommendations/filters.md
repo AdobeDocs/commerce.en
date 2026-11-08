@@ -2,6 +2,16 @@
 title: Filter Products
 description: Define conditions that either include or exclude products from being used as recommendations.
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
+TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Filter Products
 
@@ -42,7 +52,7 @@ The category field displays categories that belong to the current storeview.
 
 >[!NOTE]
 >
->For B2B merchants, the Category filter adheres to any [customer-specific product categories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) you have configured.
+>For B2B merchants, the Category filter adheres to any [customer-specific product categories](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) you have configured.
 
 Adobe Commerce recommends you use the following category filter configuration when you deploy recommendations to your page types:
 
@@ -64,7 +74,7 @@ Product filters specify which specific products are eligible, or not eligible, t
 
 ### Type
 
-A filter based on product type either includes or excludes all products of a specific type. Supported types include _simple_, _configurable_, _virtual_, _downloadable_, or _gift card_. _Bundle_, _grouped_, and custom product types are not supported.
+A filter based on product type either includes or excludes all products of a specific type.
 
 ### Visibility
 
@@ -72,11 +82,11 @@ Filters products based on visibility, such as: _Catalog_, _Search_, or both.
 
 ### Price
 
-A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts available to anonymous shoppers. For B2B merchants, the price displayed reflects the [customer-specific group pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) you have configured.
+A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts available to anonymous shoppers. For B2B merchants, the price displayed reflects the [customer-specific group pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) you have configured.
 
 ### Stock status
 
 The following exclusion filters can be used to filter out products based on stock status:
 
 - Out of stock - (Exclusion only) Excludes products that are out of stock.
-- Low in stock - (Exclusion only) Excludes products that are low in stock. Low stock status is based on the _Only X left Threshold_ value in [Inventory configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Low in stock - (Exclusion only) Excludes products that are low in stock. Low stock status is based on the _Only X left Threshold_ value in [Inventory configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory).

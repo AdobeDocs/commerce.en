@@ -1,16 +1,42 @@
 ---
 title: Catalog Sync
 description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services].
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
+TQID: 'https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Catalog Sync
 
 >[!NOTE]
 >
-> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+, and [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
+> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+, and [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
 
-Adobe Commerce uses indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
+Adobe Commerce uses indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
 
 The Catalog Sync service moves product data from an [!DNL Adobe Commerce] instance to the [!DNL Commerce Services] platform on an ongoing basis to keep the data up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the command-line interface to trigger a catalog sync and to reindex product data for consumption by [!DNL Commerce Services]. See [Command-line Interface Reference](../data-export/data-export-cli-commands.md) in the _SaaS Data Export_ Guide.
 
@@ -74,4 +100,4 @@ The **Synced catalog products** table displays the following information.
 
 ## Resolve catalog sync issues {#resolvesync}
 
-See [Logs and troubleshooting](../data-export/troubleshooting-logging.md#troubleshooting) in the _SaaS Data Export Guide_.
+See [Troubleshooting](../data-export/troubleshooting/logging.md#troubleshooting) in the _SaaS Data Export Guide_.

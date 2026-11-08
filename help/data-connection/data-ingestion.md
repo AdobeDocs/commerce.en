@@ -4,12 +4,29 @@ description: Learn the types of data that you can collect and send to the Experi
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 6354963c-f27f-4e69-9ecb-acb4befb7c2a
+TQID: 'https://experienceleague.adobe.com/LXMqOhHAZpUHaCeeU5ioKKXVrkLftospQEPDd9H-MD8'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Types of Commerce Data
 
 The [Data Connection extension](overview.md) connects your Commerce data to the Experience Platform. Data intended for use in the Experience Platform is grouped into two behavior types: time series data, which belongs to the **Experience Event** class, and record data, which belongs to the **Individual Profile** class.
 
-Learn more about [data behavior](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) and [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
+Learn more about [data behavior](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors) and [classes](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
 
 ## Time series data
 
@@ -25,7 +42,7 @@ Learn how to [create a schema](update-xdm.md) that can ingest behavioral and bac
 
 ## Record data
 
-Record data provides information about the attributes of a subject. A subject could be an organization or an individual. For example, a shopper on your site creates an account and that generates record data. This data is ingested into the Experience Platform using a schema that has the class set to **Individual Profile**. You can send that record data to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Record data provides information about the attributes of a subject. A subject could be an organization or an individual. For example, a shopper on your site creates an account and that generates record data. This data is ingested into the Experience Platform using a schema that has the class set to **Individual Profile**. You can send that record data to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Captured profile record data
 

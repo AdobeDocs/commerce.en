@@ -2,6 +2,13 @@
 title: Search Merchandising Workspace
 description: Learn your way around the Search Merchandising workspace.
 exl-id: 8cf581b5-cf83-48aa-86ab-39dea8da2ee5
+TQID: https://experienceleague.adobe.com/FB1DxWHgpPtH5J-TiH4XU8SYmP3x8dEobWQsSrQXG4c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Search Merchandising Workspace
 
@@ -17,7 +24,7 @@ The *Search Merchandising* workspace lists the current selection of rules and th
 
 ## Set the scope
 
-If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your rules apply.
+If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) where your rules apply.
 
 ## Show/hide columns
 

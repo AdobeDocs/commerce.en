@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1625" viewBox="0 0 1280 1040" role="img" aria-labelledby="title desc">
+  <title id="title">B2B shared catalog data mapping and localized views</title>
+  <desc id="desc">Adobe Commerce is the system of record. Through the connector, enabled store views and product data map to localized catalog sources, website and customer-group pricing maps to price books, and custom shared catalog assortments map to policies. Each custom shared catalog and enabled store view combination produces a private catalog view containing the applicable source, policy, and exactly one price book. In the example, one custom shared catalog and three enabled store views with the same pricing context produce three private views sharing a policy and price book, with different localized sources. At runtime, the Commerce backend uses the buyer's company assignment and store view to resolve the view and price book. Assigned restricted access keys verify signed requests but do not select the buyer's catalog or pricing. The default shared catalog is not projected as a B2B private view.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#526579" />
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #243447; }
+      .title { font-size: 28px; font-weight: 700; }
+      .heading { font-size: 21px; font-weight: 700; }
+      .label { font-size: 18px; font-weight: 700; }
+      .body { font-size: 16px; }
+      .small { font-size: 15px; fill: #4b5d70; }
+      .source { fill: #ffffff; stroke: #26836a; stroke-width: 1.5; }
+      .target { fill: #ffffff; stroke: #197c9b; stroke-width: 1.5; }
+      .pricing { fill: #f4f0ff; stroke: #7460a8; stroke-width: 1.5; }
+      .line { fill: none; stroke: #526579; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1280" height="1040" fill="#ffffff" />
+  <text class="title" x="32" y="46">B2B shared catalog data mapping</text>
+  <text class="body" x="32" y="76">One-way synchronization from Adobe Commerce to Adobe Commerce Optimizer</text>
+
+  <!-- Source, connector, and destination boundaries. -->
+  <rect x="32" y="104" width="380" height="470" rx="14" fill="#eff8f3" stroke="#26836a" stroke-dasharray="7 5" />
+  <text class="heading" x="52" y="138">Adobe Commerce</text>
+  <text class="small" x="52" y="162">System of record</text>
+
+  <rect x="456" y="104" width="292" height="470" rx="14" fill="#fff8ec" stroke="#b36b16" stroke-width="1.5" />
+  <text class="heading" x="602" y="138" text-anchor="middle">Optimizer Connector</text>
+  <text class="small" x="602" y="162" text-anchor="middle">Base feeds + B2B projection</text>
+
+  <rect x="792" y="104" width="456" height="470" rx="14" fill="#eef8fc" stroke="#197c9b" stroke-dasharray="7 5" />
+  <text class="heading" x="812" y="138">Adobe Commerce Optimizer</text>
+  <text class="small" x="812" y="162">Connector-managed projection</text>
+
+  <!-- Row 1: localized content. -->
+  <rect class="source" x="52" y="186" width="340" height="72" rx="8" />
+  <text class="label" x="68" y="215">Enabled store view</text>
+  <text class="small" x="68" y="240">Localized product data</text>
+  <path class="line" d="M 392 222 H 476" />
+  <text class="label" x="602" y="217" text-anchor="middle">Synchronize content</text>
+  <text class="small" x="602" y="241" text-anchor="middle">Base catalog feeds</text>
+  <path class="line" d="M 728 222 H 812" />
+  <rect class="target" x="812" y="186" width="416" height="72" rx="8" />
+  <text class="label" x="828" y="215">Catalog source</text>
+  <text class="small" x="828" y="240">Localized content for the store view</text>
+
+  <!-- Row 2: pricing scope is not authorization. -->
+  <rect class="source" x="52" y="280" width="340" height="72" rx="8" />
+  <text class="label" x="68" y="309">Website + customer group</text>
+  <text class="small" x="68" y="334">Applicable pricing context</text>
+  <path class="line" d="M 392 316 H 476" />
+  <text class="label" x="602" y="311" text-anchor="middle">Synchronize prices</text>
+  <text class="small" x="602" y="335" text-anchor="middle">Base pricing feeds</text>
+  <path class="line" d="M 728 316 H 812" />
+  <rect class="pricing" x="812" y="280" width="416" height="72" rx="8" />
+  <text class="label" x="828" y="309">Price book</text>
+  <text class="small" x="828" y="334">Supplies prices, not access authorization</text>
+
+  <!-- Row 3: shared catalog assortment. -->
+  <rect class="source" x="52" y="374" width="340" height="72" rx="8" />
+  <text class="label" x="68" y="403">Custom shared catalog</text>
+  <text class="small" x="68" y="428">Product assortment</text>
+  <path class="line" d="M 392 410 H 476" />
+  <text class="label" x="602" y="405" text-anchor="middle">Project assortment</text>
+  <text class="small" x="602" y="429" text-anchor="middle">B2B configuration</text>
+  <path class="line" d="M 728 410 H 812" />
+  <rect class="target" x="812" y="374" width="416" height="72" rx="8" />
+  <text class="label" x="828" y="403">Policy</text>
+  <text class="small" x="828" y="428">Filters the view to the shared assortment</text>
+
+  <!-- Row 4: one view per combination. -->
+  <rect class="source" x="52" y="468" width="340" height="86" rx="8" />
+  <text class="label" x="68" y="496">Custom shared catalog</text>
+  <text class="label" x="68" y="520">+ enabled store view</text>
+  <text class="small" x="68" y="541">One view per combination</text>
+  <path class="line" d="M 392 511 H 476" />
+  <text class="label" x="602" y="506" text-anchor="middle">Compose private view</text>
+  <text class="small" x="602" y="530" text-anchor="middle">Use the applicable mappings</text>
+  <path class="line" d="M 728 511 H 812" />
+  <rect class="target" x="812" y="468" width="416" height="86" rx="8" />
+  <text class="label" x="828" y="496">Private catalog view</text>
+  <text class="small" x="828" y="520">Catalog source + policy + one price book</text>
+  <text class="small" x="828" y="541">Protected by assigned restricted access keys</text>
+
+  <!-- Fanout example with an explicit shared-pricing assumption. -->
+  <rect x="32" y="600" width="1216" height="264" rx="14" fill="#f7f9fc" stroke="#b7c4d2" />
+  <text class="heading" x="52" y="636">One shared catalog, three localized views</text>
+  <text class="small" x="52" y="662">Example: All three enabled store views use the same website and customer-group pricing context.</text>
+
+  <rect class="source" x="52" y="690" width="250" height="114" rx="10" />
+  <text class="label" x="70" y="720">Custom shared catalog</text>
+  <text class="body" x="70" y="750">Three enabled store views</text>
+  <text class="small" x="70" y="778">English, French, and German</text>
+
+  <path class="line" d="M 302 747 H 332 V 728 H 356" />
+  <path class="line" d="M 332 747 V 816 H 1096 V 790" />
+  <path class="line" d="M 332 816 H 792 V 790" />
+
+  <rect class="target" x="356" y="690" width="264" height="100" rx="10" />
+  <text class="label" x="374" y="718">Private view — English</text>
+  <text class="small" x="374" y="747">English catalog source</text>
+  <text class="small" x="374" y="772">Policy A + price book A</text>
+
+  <rect class="target" x="660" y="690" width="264" height="100" rx="10" />
+  <text class="label" x="678" y="718">Private view — French</text>
+  <text class="small" x="678" y="747">French catalog source</text>
+  <text class="small" x="678" y="772">Policy A + price book A</text>
+
+  <rect class="target" x="964" y="690" width="264" height="100" rx="10" />
+  <text class="label" x="982" y="718">Private view — German</text>
+  <text class="small" x="982" y="747">German catalog source</text>
+  <text class="small" x="982" y="772">Policy A + price book A</text>
+
+  <text class="body" x="52" y="846">Different localized sources · Shared policy and price book · Exactly one price book per private view</text>
+
+  <!-- Runtime context is separate from the synchronization mappings. -->
+  <rect x="32" y="890" width="1216" height="96" rx="12" fill="#fff5f5" stroke="#b86a76" />
+  <text class="label" x="52" y="920">Buyer context at runtime</text>
+  <text class="body" x="52" y="946">The Commerce backend uses the buyer's company assignment and store view to resolve the catalog view and price book.</text>
+  <text class="small" x="52" y="970">Restricted access keys verify signed requests to the protected view. They do not select the buyer's catalog or pricing.</text>
+  <text class="small" x="32" y="1017">The default shared catalog is not projected as a B2B private view. Price books follow pricing context, not a per-shared-catalog rule.</text>
+</svg>

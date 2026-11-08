@@ -1,5 +1,6 @@
 ---
 user-guide-title: "[!DNL App Management]"
+breadcrumb-title: "[!DNL App Management]"
 user-guide-description: Associate, configure, and manage App Builder applications with your Adobe Commerce instance.
 feature: App Builder, Extensibility, Integration
 ---

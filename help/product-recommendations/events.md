@@ -3,12 +3,43 @@ title: Collect Data
 description: Learn how events collect data for [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+TQID: 'https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dec06508-d41f-555a-87e8-29e8bcdfa95a
+    internal-label: Recommendations
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Collect Data
 
 When you install and configure [[!DNL Product Recommendations]](install-configure.md), the module deploys behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers [!DNL Product Recommendations]. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
 
-See the [developer documentation](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) to learn more about the behavioral data the [!DNL Product Recommendations] events collect.
+To learn more about the behavioral data that the [!DNL Product Recommendations] events collect, see the [developer documentation](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
 >[!NOTE]
 >
@@ -16,7 +47,9 @@ See the [developer documentation](https://developer.adobe.com/commerce/services/
 
 ## Healthcare customers
 
-If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Product Recommendations] is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for [!DNL Product Recommendations]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) to learn more.
+If you are a healthcare customer and have installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is included with the [Data Connection](../data-connection/overview.md) extension, [!DNL Product Recommendations] stops collecting storefront event data because it is generated on the client side.
+
+To resume collecting and sending storefront event data, re-enable event collection for [!DNL Product Recommendations]. For more information, see [General configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Data types and events
 
@@ -27,16 +60,16 @@ There are two types of data used in Product Recommendations:
 
 When you install the `magento/product-recommendations` module, Adobe AI aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
 
-Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Product Recommendations on your site, you can use the following, catalog-only recommendation types:
+Some recommendation types use shoppers' behavioral data to train machine learning models and generate personalized recommendations. Others rely only on catalog data. To start using Product Recommendations quickly, choose from the following catalog-only recommendation types:
 
 - `More like this`
 - `Visual similarity`
 
 ### Cold start
 
-When can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
+When can you start using recommendation types that use behavioral data? It depends. This situation is referred to as the _Cold Start_ problem.
 
-The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For product recommendations, this means waiting for Adobe AI to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early by installing and setting up the `magento/production-recommendations` module.
+The _Cold Start_ problem is the time required for a machine learning model to train before it can produce effective recommendations. For Product Recommendations, Adobe AI must collect enough data to train its models before you deploy recommendation units. More data generally improves recommendation accuracy and usefulness. Because data collection occurs on your live site, start this process early by installing and configuring the `magento/product-recommendations` module.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 
@@ -55,15 +88,15 @@ Other variables that can impact the time needed to train:
 
 To help you visualize the training progress of each recommendation type, the [create recommendation](create.md#readiness-indicators) page displays readiness indicators.
 
-While data is being collected on your live site and the machine learning models are training, you can finish other testing and configuration tasks needed to set up recommendations. By the time you're done with this work, the models will have enough data to create useful recommendations, allowing you to deploy them to your storefront.
+While your live site collects data and the machine learning models train, complete the remaining testing and configuration tasks. Once the models have enough data to generate useful recommendations, deploy the recommendation units to your storefront.
 
-If your site doesn't get enough traffic (views, purchases, trends) for most product SKUs, there might not be enough data to complete the learning process. This can make the readiness indicator in the Admin seem stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](create.md#readiness-indicators) about readiness indicators.
+If your site doesn't receive enough traffic (views, purchases, or trends) for most product SKUs, the learning process may not complete, causing readiness indicators in the Admin to appear stuck. Readiness indicators help merchants choose the best recommendation type for their store, but they are only a guide and may never reach 100%. Learn more about readiness indicators. [Learn more](create.md#readiness-indicators) about readiness indicators.
 
 ### Backup recommendations {#backuprecs}
 
-If the input data is insufficient for providing all requested recommendation items in a unit, Adobe Commerce provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to accurately recommended personalized products. In this case, Adobe Commerce surfaces items based on the `Most viewed` recommendation type to this shopper.
+When insufficient input data prevents a recommendation unit from returning all requested items, Adobe Commerce fills it with backup recommendations. For example, after you deploy the `Recommended for you` recommendation type on the homepage, a first-time shopper may not have generated enough behavioral data for personalized recommendations. In this case, Adobe Commerce displays items based on the `Most viewed `recommendation type.
 
-In the case of insufficient input data collection, the following recommendation types fallback to `Most viewed` recommendation type:
+If input data collection is insufficient, the following recommendation types fallback to `Most viewed` recommendation type:
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -75,10 +108,10 @@ In the case of insufficient input data collection, the following recommendation 
 
 #### Caveats
 
-- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md#column-descriptions) to be under-reported. Additionally, some events might not be sent due to shoppers leaving the page or network issues.
+- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md#column-descriptions) to be under-reported. Additionally, some events are not sent due to shoppers leaving the page or network issues.
 - [Headless implementations](headless.md) must implement eventing to power the Product Recommendations dashboard.
-- For configurable products, Product Recommendations use the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
+- For configurable products, Product Recommendations use the parent product's image. If the parent product has no image, that product does not appear in the recommendation unit.
 
 >[!NOTE]
 >
->If [Cookie Restriction Mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents to using cookies. If Cookie Restriction Mode is disabled, Adobe Commerce collects behavioral data by default.
+>If [Cookie Restriction Mode](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents to using cookies. If Cookie Restriction Mode is disabled, Adobe Commerce collects behavioral data by default.

@@ -1,12 +1,29 @@
 ---
 title: Merchandising Rules
-description: '[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape search results, default product listings, and category pages.'
+description: "[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape search results, default product listings, and category pages."
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
+TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Merchandising Rules
 
-Merchandising rules combine logic with actions to shape how products appear in **search results**, on **default product listings** (**All product listings**), and on **category pages** ([category rules](#category-rules) are in beta). You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
+Merchandising rules combine logic with actions to shape how products appear in **search results**, in **default product listings** through the **default search rule**, and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
 
 Each **search rule** has three main components:
 
@@ -16,13 +33,9 @@ Each **search rule** has three main components:
 
 **Category rules** use **category selection** instead of search query conditions; intelligent ranking and manual ranking work the same way as for search, with differences called out in [Create and Manage Rules](add.md).
 
-You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default rule** (**All product listings**) that applies when no more specific search or category rule applies.
+You can combine multiple conditions and actions for search rules, and schedule any rule to be active for a period. You can also set a **default search rule** that applies when no more specific search or category rule applies.
 
 ## Category rules {#category-rules}
-
->[!IMPORTANT]
->
->Category rules are in beta.
 
 **Category rules** control product order on **category pages**. You select one or more categories, then apply intelligent ranking (for example, most viewed, trending) and manual actions such as pin, boost, and bury. They do not use search query conditions. For setup steps, rule types, and how ranking applies on category versus search, see [Create and Manage Rules](add.md).
 
@@ -55,7 +68,7 @@ When composing a complex rule, it can help to write it out with indentation to d
 
 ## Default rule
 
-You can set a default rule (**All product listings**) that applies when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then queries default to that ranking type unless superseded by a more specific search term. No search term can be set for the default rule. **Category rules** are separate: they apply only to the categories you select and do not replace the default listing rule.
+You can set a **default search rule** that applies when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then queries default to that ranking type unless superseded by a more specific search term. No search term can be set for the default rule. **Category rules** are separate: they apply only to the categories you select and do not replace the default listing rule.
 
 ## Order of precedence with multiple rules
 

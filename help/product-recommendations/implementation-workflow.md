@@ -2,6 +2,29 @@
 title: Implementation Workflow
 description: Learn the steps to successfully implement [!DNL Product Recommendations] on your storefront.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
+TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Implementation Workflow
 
@@ -23,7 +46,7 @@ When you install the `magento/product-recommendations module`, Adobe AI aggregat
 
    Deploying [!DNL Product Recommendations] requires two main [data sources](type.md): catalog and behavioral. Because production is the only environment where your shoppers' actions are captured and analyzed, start data collection on production as early as possible. [Learn](events.md) how Adobe AI trains machine learning models that results in higher-quality recommendations. As an added benefit, when you start collecting behavioral data on production, you can [fetch recommendations](staging-environment.md#fetch-recommendations-from-production-environment-recommended) based on this production data while operating in non-production environments. You can then test and experiment with different recommendations that are computed based on real shopper data collected in production.
 
-   To deploy data collection to production, you must [install and configure](install-configure.md) the [!DNL Product Recommendations] module by providing an [API key](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
+   To deploy data collection to production, you must [install and configure](install-configure.md) the [!DNL Product Recommendations] module by providing an [API key](../landing/saas.md).
 
    >[!TIP]
    >
@@ -37,7 +60,7 @@ When you install the `magento/product-recommendations module`, Adobe AI aggregat
    >
    > By customizing the template, you can specify your stylesheet, overwrite where a recommendation unit appears on a page, and so on.
 
-   See [Customize](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) in the developer documentation to learn how to complete this step.
+   See [Customize](customize.md) in the developer documentation to learn how to complete this step.
 
 1. **Test recommendations on your non-production environment**
 

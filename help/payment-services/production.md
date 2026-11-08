@@ -3,6 +3,29 @@ title: Enable [!DNL Payment Services] for Production
 description: Complete the onboarding process by enabling [!DNL Payment Services] for production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Enable [!DNL Payment Services] for Production
 
@@ -35,9 +58,11 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
    >
    >[!DNL Payment Services] supports partial captures. A merchant can partially capture (invoice) parts of an order. For example, you could capture each item individually, or one item now and the rest later.
 
+   Eligible merchants with a PayPal overcapture agreement can also enable [overcapture](over-capture.md) in [!DNL Payment Services] 2.17.0 or later. Overcapture requires **[!UICONTROL Payment Action]** to be set to `Authorize`, with capture performed later during invoicing.
+
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Go to Payment Services]** to be directed back to the [!DNL Payment Services] Home.
-1. [Clear your cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. [Clear your cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 
    Clearing should be done after every configuration change.
 

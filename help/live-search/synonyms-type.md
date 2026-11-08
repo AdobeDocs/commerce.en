@@ -2,6 +2,13 @@
 title: Types of Synonyms
 description: One- and two-way [!DNL Live Search] synonyms expand the definition of keywords.
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
+TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Types of Synonyms
 
@@ -49,4 +56,4 @@ If no synonym is created and a shopper searches for **kitchen table**, Commerce 
 
 After creating a synonym, the search behavior changes to look for the exact phrase **kitchen table**. This might reduce the number of results because only products with the exact phrase will be shown.
 
-If you want the terms to be searched separately as before, you can [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). If there is enough demand, Commerce will consider adding this functionality to the product in a future release.
+If you want the terms to be searched separately as before, you can [create a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). If there is enough demand, Commerce will consider adding this functionality to the product in a future release.

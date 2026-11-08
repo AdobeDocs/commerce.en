@@ -5,6 +5,36 @@ feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+TQID: 'https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # [!DNL Commerce Services Connector]
 
@@ -34,7 +64,7 @@ The following sections discuss each of these elements in more detail.
 
 ## Credentials {#apikey}
 
-The production and sandbox API keys are generated from the [!DNL Commerce] account of the [license owner](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). The Commerce account is identified by a unique [!DNL Commerce] ID (MageID). The license owner for the merchant's organization can generate API keys for services like Product Recommendations or Live Search, as long as the account is in good standing.
+The production and sandbox API keys are generated from the [!DNL Commerce] account of the [license owner](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding). The Commerce account is identified by a unique [!DNL Commerce] ID (MageID). The license owner for the merchant's organization can generate API keys for services like Product Recommendations or Live Search, as long as the account is in good standing.
 
 The keys can be shared on a "need-to-know" basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Developers who have been granted [!DNL Shared Access] by the license owner cannot generate the keys on the license owner's behalf even if the merchant's organization is present in the [!DNL Switch Accounts] dropdown on their account.
 
@@ -86,7 +116,7 @@ If you cannot find Live Search configuration fields in the Admin, verify that yo
 
 Before deleting an API key, generate and securely store a replacement key. Update all integrations to use the new key, and confirm that dependent services are working as expected.
 
-If you don’t see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won’t be available in your Adobe Commerce environment.
+If you don't see **[!DNL Live Search]** configuration fields in the Admin Panel, confirm you entered the correct SaaS API key for that environment. Use the production SaaS key for the production data space and the staging key for the staging data space. If the wrong key is configured, SaaS services (including **[!DNL Live Search]**) won't be available in your Adobe Commerce environment.
 
 On the API key to remove, click **[!UICONTROL Delete]**. When prompted,  confirm the operation to permanently remove the key.
 
@@ -131,11 +161,11 @@ To select or create a SaaS project, request the [!DNL Commerce] API keys from th
 
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
-   If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
+   If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to request a new SaaS project for each additional instance. After Support creates the SaaS project, configure the Commerce Services Connector for the instance **using the same API keys** and select the new SaaS project and data space.
 
-  >[!WARNING]
-  >
-  > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
+   >[!WARNING]
+   >
+   > If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If the Admin is still using old keys, your SaaS extensions stop working and data collection is interrupted.
 
 To change the names of your SaaS project or data space, click **Rename** next to either one. Changing the name does not affect your service because the name is only a label to help you identify and differentiate between projects and data spaces.
 

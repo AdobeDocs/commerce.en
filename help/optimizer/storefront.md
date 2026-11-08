@@ -1,9 +1,35 @@
 ---
-title: Set up your storefront
+title: Set Up Your Storefront
 description: Learn how to set up your [!DNL Adobe Commerce Optimizer] storefront.
 role: Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
+TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Set up your storefront
 
@@ -26,7 +52,7 @@ Before you begin, gather the following information from your [!DNL Adobe Commerc
 * **GraphQL endpoint** for your instance
   * Available from the [instance details page](get-started.md#manage-instances)
 * **Catalog view ID** for the global catalog view
-  * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-view)
+  * Available from the [catalog details page](./setup/catalog-view.md#manage-catalog-views)
 * **Source locale** for your catalog view
   * Default for sample data is `en-US`
 
@@ -51,7 +77,7 @@ The Site Creator tool creates a complete storefront project with the following c
 * **Site**: Storefront landing page with boilerplate content
 * **Code**: Repository with boilerplate source files
 * **Content**: Document Author environment with site content files
-* **Commerce Config**: [Commerce storefront configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} for instance-specific configuration
+* **Commerce Config**: [Commerce storefront configuration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/){target="_blank"} for instance-specific configuration
 
 ### Step 1: Generate your project
 
@@ -59,7 +85,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Select **Create New Site (Code & Content)**.
+1. Select **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Complete the site configuration:
 
@@ -67,7 +93,7 @@ The Site Creator tool creates a complete storefront project with the following c
    * **Site Name**: Choose a descriptive name for your storefront
    * **Commerce GraphQL Endpoint (optional)**: Enter the GraphQL endpoint for your [!DNL Adobe Commerce Optimizer] instance
 
-1. Click **Create Site** to create the GitHub repository with the storefront boilerplate code.
+1. Click **[!UICONTROL Create Site]** to create the GitHub repository with the storefront boilerplate code.
 
    When the repository is created, the Site Creator updates and prompts you to install the Code Sync app.
 
@@ -81,7 +107,7 @@ The Site Creator tool creates a complete storefront project with the following c
    * Click the **[!UICONTROL Select repositories]** menu, then choose the storefront code repository you created.
    * Click **[!UICONTROL Save]** to register your repository.
 
-1. Return to the browser window where the Site Creator is open, and click **Create Site**.
+1. Return to the browser window where the Site Creator is open, and click **[!UICONTROL Create Site]**.
 
    The Site Creator copies the storefront boilerplate content to the Document Author environment. This process takes 1-2 minutes.
 
@@ -93,7 +119,7 @@ The Site Creator tool creates a complete storefront project with the following c
 
    Use these links to manage your storefront code, content, and configuration.
 
-1. Copy and save these links for future reference: Click **[!UICONTROL Copy].
+1. Copy and save these links for future reference: Click **[!UICONTROL Copy]**.
 
 ## Configure your storefront
 
@@ -119,6 +145,10 @@ Update your storefront configuration to connect to your [!DNL Adobe Commerce Opt
    >
    >To find the price book ID, check the [catalog view configuration details](./setup/catalog-view.md) in [!DNL Adobe Commerce Optimizer] to see the assigned price books. If no price books are assigned, you can remove this header from the configuration file. Add it back when a price book has been assigned to the catalog view. 
 
+   >[!NOTE]
+   >
+   >If the catalog view has [!UICONTROL Catalog Protection] enabled, add an `AC-Catalog-View-Access-Token` header carrying a valid signed token, or storefront requests to that catalog view are denied. See [Private catalog views](./setup/private-catalog-view.md).
+
 1. Save the configuration file.
 
    The configuration changes may take a few minutes to propagate. If you don't see data immediately, wait 2-3 minutes before troubleshooting.
@@ -137,7 +167,7 @@ Test your storefront to ensure it's properly connected to your [!DNL Adobe Comme
 
 1. **Success criteria**: You should see the storefront homepage with boilerplate content.
 
-   ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
+   ![[!DNL Adobe Commerce Optimizer storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
 ### Step 2: Test product detail pages
 
@@ -206,31 +236,31 @@ Before proceeding to the next steps, ensure that your storefront is functioning 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) At least one product detail page displays complete information<br>
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Search functionality returns relevant results<br>
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Product images are loading correctly<br>
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Configuration values match your instance settings<br>
+<br>
 
 ### Get help
 
 If issues persist:
 
-* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Review the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * Check the [Adobe Commerce Optimizer developer guide](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 * Visit the [Adobe Commerce Support resources](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Next steps
 
-* **[Set up a local development environment](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Create a local environment to customize your storefront code and content.
-* **[Enable the Universal Editor](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
+* **[Set up a local development environment](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Create a local environment to customize your storefront code and content.
+* **[Enable the Universal Editor](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/universal-editor/){target="_blank"}**–The Universal Editor lets you edit storefront content in the context of the rendered page. The content is then saved into your Document Authoring (DA.live) project where you can use most content orchestration apps, such as localization, bulk publish, Snapshots, and more.
 
 ### Learn and explore
 
 * **[Complete the end-to-end use case](./use-case/admin-use-case.md)**—Learn more about storefront setup and catalog management using [!DNL Adobe Commerce Optimizer].
 
-* **[Explore storefront customization](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**—Learn advanced setup and configuration options.
+* **[Explore storefront customization](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}**—Learn advanced setup and configuration options.
 
-* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**–Add pre-built components to enhance your storefront experience.
+* **[Use Commerce drop-ins to customize the storefront experience](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/){target="_blank"}**–Add pre-built components to enhance your storefront experience.
 
 * **Migrate to the Storefront Configuration Service**—After you have created your initial storefront, you can migrate the configuration to use the Configuration Service which supports advanced use cases like repoless configuration and overlays. For details, see the [Configuration Service](https://www.aem.live/docs/config-service-setup){target="_blank"} documentation in the Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} to learn more about updating site content and integrating with Commerce frontend components and backend data.
+> See the [Adobe Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"} to learn more about updating site content and integrating with Commerce frontend components and backend data.

@@ -4,10 +4,31 @@ description: Use [!DNL API Mesh] for Adobe Commerce and Catalog Service to displ
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
+TQID: 'https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
+    internal-label: API Mesh
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Display taxed prices with API Mesh for Adobe Developer App Builder
 
-[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
 
 In this topic, API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
 
@@ -15,8 +36,8 @@ In this topic, API Mesh is used to display product prices on a Product Detail Pa
 
 You must have taxes configured for them to display on the Product Detail Page.
 
-1. [Set up tax rates](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
+1. [Set up tax rates](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
 
 Verify that the Catalog Service is working by checking a Product Detail Page.
 
@@ -24,7 +45,7 @@ Verify that the Catalog Service is working by checking a Product Detail Page.
 
 ## Configure API Mesh
 
-If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) topic in the API Mesh developer guide.
+If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) topic in the API Mesh developer guide.
 
 In the `mesh.json` file, replace the `name`, `endpoint`, and `x-api-key` values.
 
@@ -33,10 +54,10 @@ In the `mesh.json` file, replace the `name`, `endpoint`, and `x-api-key` values.
     "meshConfig": {
       "sources": [
         {
-          "name": "<NAME OF MESH>",
+          "name": "<NAME_OF_MESH>",
           "handler": {
             "graphql": {
-              "endpoint": "<COMMERCE INSTANCE GQL ENDPOINT URL>"
+              "endpoint": "<COMMERCE_INSTANCE_GQL_ENDPOINT_URL>"
             }
           },
           "transforms": [
@@ -105,7 +126,7 @@ This `mesh.json` configuration file:
 * Extends the `ComplexProductView` and `SimpleProductView` types with a new field called `priceWithTaxes`. 
 * Adds a custom resolver for the new field.
 
-Create the mesh with the [create command](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) with the `mesh.json` file.
+Create the mesh with the [create command](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) with the `mesh.json` file.
 
 ### GraphQL query
 

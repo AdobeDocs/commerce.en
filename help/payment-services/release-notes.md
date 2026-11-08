@@ -1,8 +1,26 @@
 ---
-title: "[!DNL Payment Services] Release Notes"
+title: '[!DNL Payment Services] Release Notes'
 description: Review the release notes for information about all [!DNL Payment Services] releases.
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 
 # Release Notes
@@ -26,6 +44,10 @@ Learn more about upcoming releases, product support, and which Adobe Commerce ve
 These release notes describe feature changes and fixes that occurred and were released outside of the regular feature releases for the hosted service.
 
 +++Hosted service updates
+
+_June 8, 2026_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6510 --> For [!DNL Adobe Commerce as a Cloud Service], the [!DNL Payment Services] dashboard UI in the [!DNL Commerce Admin] lets merchants open the [Transactions report](reporting.md#transactions-report-view) directly from the dashboard. This SaaS dashboard exposes **selected** reporting only (not every report or Home entry point available on Adobe Commerce on cloud and on-premises); see [[!DNL Payment Services] Home](payments-home.md). For [!DNL Adobe Commerce as a Cloud Service] release notes and timing, see [View the Payment Services Transactions report](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _January 21, 2026_
 
@@ -71,7 +93,7 @@ _June 9, 2023_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on [!DNL Payment Services] Home when[!DNL Payment Services] is disabled.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on [!DNL Payment Services] Home when [!DNL Payment Services] is disabled.
 
 _January 25, 2023_
 
@@ -104,6 +126,63 @@ _June 28, 2021_
 >[!NOTE]
 >
 > Releases occur frequently to deliver new features and fixes as needed. The release schedule is not fixed.
+
+
+## v2.17.0
+
+_October 22, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
+![New](../assets/new.svg)<!-- PAY-6722 --> Now, merchants can configure an optional review page for PayPal Express checkout so shoppers can review final total quantities and applicable terms and conditions before placing an order. See [PayPal Express review page](payments-options.md#paypal-express-review-page) for more information.
+
+![New](../assets/new.svg)<!-- PAY-6668 --> Eligible merchants with a PayPal overcapture agreement can now capture more than the originally authorized amount when invoicing an order, within PayPal's approved limit. See [Overcapture](over-capture.md) for requirements and configuration.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-7062 --> Fixed an issue where the [!DNL Google Pay] **[!UICONTROL Button Type]** setting did not change the button label when displaying the Google Pay button on the checkout page.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-7063 --> Fixed an issue that prevented shoppers from completing PayPal, Pay Later, or Venmo express checkout after closing and reopening the payment window.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6952 --> Fixed a shipping-tax amount mismatch that could prevent PayPal express checkout from completing when shoppers selected a paid shipping option.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6939 --> Added support for [3D Secure authentication challenges](security.md#3ds) when shoppers pay with a saved credit card.
+
+## v2.16.1
+
+_August 10, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6769 --> Corrected an intermittent issue on EDS storefronts that use PayPal smart buttons and that caused some payment methods to be unavailable on the checkout page.
+
+## v2.16.0
+
+_July 27, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
+![New issue](../assets/new.svg)<!-- Issue PAY-6510 --> Merchants can now self-service the onboarding of a different PayPal account at the website scope directly from the [!DNL Commerce Admin]. [!DNL Payment Services] Home now includes a **[!UICONTROL Connect a different PayPal account for a website]** button that redirects to the Admin configuration page for payment methods. See [Connect a different PayPal account for a website](connect-website-account.md) for more information.
+
+## v2.15.0
+
+_June 15, 2026_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
+![New](../assets/new.svg)<!-- PAY-6564 --> Now, [!DNL Google Pay] express checkout can show shipping methods in the Google Pay sheet using client-side shipping callbacks, so shoppers select shipping before they confirm payment. Merchants can show or hide a separate Google Pay review step using **[!UICONTROL Skip Review]** in [Google Pay configuration](configure-admin.md#google-pay). When the review step is skipped, shipping options stay in the sheet when the wallet address or shipping method changes.
+
+![New](../assets/new.svg)<!-- PAY-6565 --> Now, shoppers can apply a promotional code in the [!DNL Google Pay] express pay sheet, whether or not the Google Pay review step appears. Only one code can be applied per pay sheet, even on stores that allow multiple coupons per order. See [Payment options](payments-options.md#google-pay-button) for more information.
+
+![New](../assets/new.svg)<!-- PAY-6567 --> Now, [!DNL Apple Pay] express checkout is available in Chrome, Firefox, and Microsoft Edge, in addition to Safari. On desktop, shoppers can scan a QR code with an iPhone running iOS 18 or later to complete payment in the Apple Pay sheet. Express placements (for example, on the product detail page) must be enabled in [Apple Pay configuration](configure-admin.md#apple-pay).
+
+![New](../assets/new.svg)<!-- PAY-6566 --> Now, shoppers can apply or remove a single discount code in the [!DNL Apple Pay] express pay sheet, and totals update in the sheet. Create and enable cart price rules in the Admin as usual.
+
+![New](../assets/new.svg)<!-- PAY-6151 --> Now, [!DNL Apple Pay] on Luma product detail and checkout pages renders through the Payments SDK so the experience matches the latest PayPal integration used for express checkout.
+
+![New](../assets/new.svg)<!-- PAY-6611 --> Now, the [!DNL Adobe Commerce] order detail page displays additional payment details for transactions processed through [!DNL Payment Services], including [!DNL PayPal] Transaction ID, PayPal debug ID, payer email, Merchant Protection Eligibility, and AVS/CVV verification codes. See [3DS](security.md#3ds) for more information.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6513 --> Fixed an issue where an [!DNL Apple Pay] error message could still appear on the order success page after a failed payment attempt and a later successful checkout.
+
+![Fixed issue](../assets/fix.svg)<!-- PAY-6585 --> Fixed an issue where the [!DNL Apple Pay] express pay sheet displayed a **[!UICONTROL Please select a state/region]** error for UK and European addresses where state/region is not a required field.
 
 ## v2.14.0
 
@@ -400,7 +479,7 @@ _March 20, 2024_
 
 ![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](payments-options.md), similar to other payment buttons in [!DNL Payment Services] through the Admin.
 
-![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services supports Google Pay through GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) allowing merchants to have a headless Commerce experience with the Google Pay payment method.
+![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services supports Google Pay through GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/) allowing merchants to have a headless Commerce experience with the Google Pay payment method.
 
 ![New](../assets/new.svg)<!-- PAY-4878 --> Now, the [!DNL Payment Services] basic checkout feature is bundled for Adobe Commerce and Magento Open Source merchants.[!DNL Payment Services] can now support merchants with businesses in any of 200 geographies worldwide.[!DNL Payment Services] basic checkout provides debit/credit, PayPal, Venmo (where available), and PayLater (where available) options in a self-service onboarding.
 
@@ -444,7 +523,7 @@ _December 7, 2023_
 
 - the customer order page on the storefront
 - the order confirmation email sent to the shopper
-- from the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.
+- from the [order details view](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#view-an-order) in the Commerce Admin.
 
 ## v2.3.0
 
@@ -452,7 +531,7 @@ _December 1, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services now supports GraphQL integration](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). With GraphQL support for PayPal payment buttons, hosted fields, and Apple Pay,[!DNL Payment Services] now supports a headless Commerce setup.
+![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services now supports GraphQL integration](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/). With GraphQL support for PayPal payment buttons, hosted fields, and Apple Pay,[!DNL Payment Services] now supports a headless Commerce setup.
 
 ## v2.2.1
 
@@ -568,7 +647,7 @@ _November 18, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-3880 --> A shopper can now [vault (save) their credit card information during checkout](vaulting.md) to use in a later purchase for the same or another store within the same merchant account.
 
-![New](../assets/new.svg)<!-- Issue PAY-3950 --> Merchants can now enable the [Instant Purchase Commerce feature](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) for their stores so that shoppers can (use [vaulted credit card information](vaulting.md)) to expedite checkout.
+![New](../assets/new.svg)<!-- Issue PAY-3950 --> Merchants can now enable the [Instant Purchase Commerce feature](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase) for their stores so that shoppers can (use [vaulted credit card information](vaulting.md)) to expedite checkout.
 
 ## v1.4.1
 
@@ -626,7 +705,7 @@ _June 29, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid,[!DNL Payment Services] now alerts you by displaying a credentials error from the [!DNL Payment Services] Home in the Admin.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is incompatible with `commerce-data-export` v101.20 and higher, which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is incompatible with `commerce-data-export` v101.20 and higher, which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/en/docs/discontinued/using/commerce-channels) (discontinued).
 
 ## v1.1.0
 
@@ -654,7 +733,7 @@ _March 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2561 --> Previously removed products do not appear in the cart on the _Review Order_ page.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) when processing payments in a sandbox environment.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825) when processing payments in a sandbox environment.
 
 ## v1.0.0
 
@@ -678,8 +757,8 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal payment buttons and credit card fields for the [!DNL Payment Services] extension.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) during installation of the extension prevents the user from [authenticating](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) with the correct `MAGEID`.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826) during installation of the extension prevents the user from [authenticating](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) with the correct `MAGEID`.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [may not synchronize immediately](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [may not synchronize immediately](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2475 --> Your [PayPal sandbox account](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) for [!DNL Payment Services] cannot be verified  if you create that account during onboarding.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2475 --> Your [PayPal sandbox account](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836) for [!DNL Payment Services] cannot be verified  if you create that account during onboarding.

@@ -1,10 +1,12 @@
 ---
 user-guide-title: "[!DNL Payment Services] Guide"
+breadcrumb-title: "[!DNL Payment Services]"
 user-guide-description: "This guide provides detailed information about installing and configuring [!DNL Payment Services] for your [!DNL Adobe Commerce] or [!DNL Magento Open Source] store."
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
+nudge: true
 ---
 
 # [!DNL Payment Services] for Commerce {#payment-services}
@@ -22,6 +24,7 @@ recommendations: noDisplay
 - Configure [!DNL Payment Services] {#configure}
   - [[!DNL Payment Services] Home](payments-home.md)
   - [[!DNL Payment Services] configuration](configure-admin.md)
+  - [Connect a different PayPal account for a website](connect-website-account.md)
   - [Command line configuration](configure-cli.md)
   - [Test and validate](test-validate.md)
 - Payments and checkout {#payments-checkout}
@@ -30,6 +33,7 @@ recommendations: noDisplay
   - [Checkout in [!DNL Payment Services]](checkout.md)
   - Manage payments {#manage}
     - [Line items for [!DNL Payment Services]](line-items.md)
+    - [Overcapture](over-capture.md)
     - [Refunds](refunds.md)
     - [Voids](voids.md)
   - [Create an order in the Admin](create-order.md)
@@ -43,4 +47,4 @@ recommendations: noDisplay
 - Security and compliance {#security-compliance}
   - [Security](security.md)
   - [Signifyd fraud protection](fraud-protection.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

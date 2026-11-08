@@ -5,6 +5,18 @@ feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
+TQID: 'https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # [!DNL Catalog Adapter] Extension Release Notes
 
@@ -22,6 +34,12 @@ Updates include:
 >The [Catalog Adapter extension](catalog-adapter.md) disables Adobe Commerce price indexing. If you have installed it, you can check the version installed on your system using composer. In some cases, you might want to upgrade the catalog adapter extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
 
 ## Current major version
+
+## 1.0.11 Release
+
+_June 18, 2026_
+
+![Fix](../assets/fix.svg)  **PHP 8.5 compatibility** – The Adobe Commerce Catalog Adapter now supports PHP 8.5 for compatibliity with Adobe Commerce version 2.4.9+. <!--MDEE-1368-->
 
 ## 1.0.10 Release
 

@@ -1,7 +1,14 @@
 ---
 title: Synonyms
-description: '[!DNL Live Search] Synonyms expand queries with words that differ from those in your catalog.'
+description: "[!DNL Live Search] Synonyms expand queries with words that differ from those in your catalog."
 exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
+TQID: https://experienceleague.adobe.com/FjK6ZX-ktMEIBt1txcMIiQZKz8WqM0ZYjdhjlrmjIwQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Synonyms
 
@@ -9,4 +16,4 @@ Synonyms expand the search query to include words that shoppers might use that d
 
 >[!IMPORTANT]
 >
->For Adobe Commerce installations with [!DNL Live Search] installed, [!DNL Live Search] Synonyms replaces the standard Adobe Commerce [Search Synonyms](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) functionality, although both appear in the *SEO & Search* section of the Marketing menu. If you use [!DNL Live Search], follow the instructions in this section.
+>For Adobe Commerce installations with [!DNL Live Search] installed, [!DNL Live Search] Synonyms replaces the standard Adobe Commerce [Search Synonyms](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms#search-synonyms) functionality, although both appear in the *SEO & Search* section of the Marketing menu. If you use [!DNL Live Search], follow the instructions in this section.

@@ -1,12 +1,66 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
-description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
+description: Learn about all the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
+nudge: true
+autotag-review: '2026-06-18T16:04:15.842Z'
+last-update: 2026-08-07T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Release notes
 
@@ -16,11 +70,870 @@ The following release notes contain updates to [!DNL Adobe Commerce as a Cloud S
 >
 >If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## April 2026 - release #3 {#latest}
+## Admin UI changes
+
+The [!DNL Adobe Commerce as a Cloud Service] Admin now works like the other Adobe products you already use, with the same top navigation, product switcher, and organization switcher. Sign in once to move seamlessly between products and Commerce instances, without separate logins for Commerce Cloud Manager and each instance. An instance switcher and searchable Commerce navigation help you get where you need to go faster.
+
+Each Admin experience has its own URL. Instance links in Commerce Cloud Manager open the new Commerce Admin experience by default, using **[!UICONTROL Admin URL (Unified Shell UI)]**. The Classic UI remains supported, so you can keep using familiar workflows while you adapt to the new experience. To use the Classic UI, open the instance details panel and select **[!UICONTROL Admin URL (Classic UI)]**. Existing Admin URLs and bookmarks continue to open the Classic UI.
+
+Learn more in [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience).
+
+## November 2026 - release #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items will be released to Production environments on November 10, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Apply custom attributes when adding products to the cart
+
+You can now apply custom attributes to cart items with the [`addProductsToCart` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products) by specifying an array of key/value pairs in the `CartItemInput.custom_attributes` field. <!-- ACCS-1980 -->
+
+### Change return item attributes
+
+The new `observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) allows you to read a return and its items before the return is saved and then modify attribute values. <!-- ACCS-2062 -->
+
+* The payload includes return items when the save creates or edits items, such as when a return is created in the [!DNL Commerce Admin], through REST, or through the `requestReturn` GraphQL mutation.
+* The webhook runs as part of saving the return. If a required webhook fails, the return is not saved.
+
+### Exclude items from shipments
+
+The new `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) allows you to exclude order items from new shipments, such as items that a third party fulfills. <!-- ACCS-2088 -->
+
+### Include shipping addresses
+
+New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints now require a shipping address. Requests without a shipping address return an HTTP 400 error. This change prevents orders without shipping information from causing order email failures. <!-- CCSAAS-5351 -->
+
+To create an order without a shipping address:
+
+* Set `is_virtual` to `1` when the order contains only digital products.
+* Place the order from a cart using the `PUT /V1/carts/:cartId/order` endpoint.
+
+### Retrieve [!DNL AEM Assets] category images
+
+The `CategoryInterface` and `CategoryTree` GraphQL types now include an `asset_role_image` field that returns the category image assigned from [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Retrieve customer store credit balances
+
+The new `GET /V1/customers/:customerId/balance` REST endpoint returns a customer's store credit balance. This endpoint requires the [!UICONTROL Manage Store Credit Balances] permission. <!-- CCSAAS-5274 -->
+
+### Retrieve invoice item row totals
+
+The `InvoiceItemInterface` GraphQL type now includes a `row_total` field that returns the stored row subtotal for an invoice item. <!-- USF-4460 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where [!DNL AEM Assets] product images were returned without image roles in GraphQL product queries. To restore image roles for products that were exported before this fix, [resync the product data feed](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports). <!-- ACCS-2180 -->
+
+* Fixed an issue where configurable product options, such as color or size, were missing from `selected_options` in GraphQL order responses when the order item also had custom options. <!-- CCSAAS-5722 -->
+
+* Fixed an issue where Company Address Book rules applied to company users on websites where companies are disabled. <!-- ACCS-2138 -->
+
+* Fixed an issue where the `POST /V1/orders/:orderId/edit/start` REST endpoint returned a 404 error when you edited an order with a modified shipping address. <!-- ACCS-2220 -->
+
+* Fixed an issue where the `requestReturn` GraphQL mutation failed when an optional return item custom attribute was sent with an empty value. <!-- CCSAAS-5628 -->
+
+* Fixed an issue where inventory processing could stop when products were deleted after an [!UICONTROL Update attributes] mass action. <!-- CCSAAS-5713 -->
+
+* Fixed an issue where abandoned cart reminder emails could send additional reminder emails. <!-- CCSAAS-5707 -->
+
+* Fixed an issue where price and back-in-stock alert emails were not sent. <!-- ACCS-2268 -->
+
+* Fixed an issue where the `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` webhook could omit `custom_attributes`. <!-- CEXT-6870, CEXT-6959 -->
+
+* Fixed an issue where the `addProductsToCart` GraphQL mutation could return an error when using the out-of-process totals collector. <!-- ACCS-2263, CEXT-6986 -->
+
+* Fixed an issue where GraphQL cart queries and mutations could return an error after a configurable product was deleted from a cart.<!-- CCSAAS-5721 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## October 2026 - release #3
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to Production environments on October 28, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Add custom variables to order comment emails
+
+The `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available. Use it to add or change template variables in the order comment email before the email is rendered. <!-- ACCS-2087 -->
+
+### Store credit refund
+
+The [`POST /V1/creditmemo/refund` REST endpoint](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) now accepts an optional `extension_attributes.refund_to_store_credit_amount` field that refunds all or part of a credit memo to the customer's store credit.<!-- ACCS-2068 -->
+
+Two [new Admin role permissions](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) control access to store credit: <!-- ACCS-1961 -->
+
+* [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
+* [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
+
+### Send transactional emails
+
+You can now subscribe to the following events in [!DNL Adobe I/O Events] and use [!DNL App Builder] to send transactional emails from a third-party email platform: <!-- ACCS-1929 -->
+
+* `observer.company_customer_assign_email_send_after` - A customer is sent the company assignment email. The payload includes company and customer details.
+* `plugin.inventory_in_store_pickup_sales_api.api.notify_orders_are_ready_for_pickup.execute` - Orders are marked as ready for in-store pickup.
+* `plugin.purchase_order.api.purchase_order_management.reject_purchase_order` - A purchase order is rejected.
+
+<!-- Not including AGENTCOM-2023 (epic incomplete)  -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where new orders, invoices, and shipments could take longer to appear in the [!DNL Commerce Admin] sales grids. <!-- ACCS-2122 -->
+
+* Fixed an issue where saving a product could set the salable quantity of its related products to 0. <!-- ACCS-2139 -->
+
+* Fixed an issue where products without a category assignment could be added to the cart through GraphQL without appropriate category permissions. <!-- CCSAAS-5560 -->
+
+* Fixed an issue where moving a category could create a duplicate category. <!-- MDEE-1473 -->
+
+* Fixed an issue where the `/V1/products/external-media` REST endpoints failed. <!-- ACCS-1776 -->
+
+* Fixed an issue where the `PUT /V1/companyCredits/:id` REST endpoint returned a 400 error when the `credit_comment` field was not empty. The comment is now saved. <!-- ACCS-2141 -->
+
+* PHP deprecations, notices, and warnings no longer cause requests to fail. These messages are logged, and the request completes. <!-- CCSAAS-5602 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## October 2026 - release #2
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to Production environments on October 20, 2026.
+
+>[!BEGINSHADEBOX]
+
+<!-- CCSAAS-5510, ACCS-1756, ACCS-432, MDEE-1415, PAY-6085 not included due to pending epics and other dependencies -->
+
+### Manage custom country regions
+
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-regions) let integrations manage custom regions, such as states or provinces, for countries that are not covered by the default region data.
+
+Default (system) regions cannot be changed or removed. These endpoints require the [!UICONTROL Manage Country Regions] permission. <!-- ACCS-1937 -->
+
+* `GET /V1/directory/countries/:countryId/regions` - List and search the regions for a country.
+* `POST /V1/directory/countries/:countryId/regions` - Create up to 500 custom regions in a single request. If any region fails validation, no regions are created.
+* `PUT /V1/directory/countries/:countryId/regions/:regionId` - Update a custom region.
+* `DELETE /V1/directory/countries/:countryId/regions/:regionId` - Delete a custom region.
+
+### Subscribe to customer address events
+
+Integrations can now subscribe to the following events through [!DNL Adobe I/O Events] to synchronize changes to registered customer address books. Guest checkout addresses do not trigger these events. <!-- ACCS-2095 -->
+
+* `observer.customer_address_delete_commit_after` - A customer address is deleted.
+* `observer.customer_address_save_commit_after` - A customer address is created or updated.
+
+### Validate uploaded and imported files
+
+You can now supply an optional SHA-256 checksum when you request a presigned upload URL. Send the same value in the `x-amz-checksum-sha256` header when you upload the file. <!-- ACCS-1464 -->
+
+* GraphQL - Specify the `checksum_sha256` field as input to the [`initiateUpload` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#checksum-validation).
+* REST - Use the new [`POST /V1/media/initiate-upload-with-checksum`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads#initiate-the-upload-with-a-checksum) endpoint with the `checksumSha256` field.
+
+### View order totals across an order-edit chain
+
+The `Customer` GraphQL type now includes a `chain_totals(filter: CustomerChainTotalsFilterInput)` field that returns aggregated totals across every order in an order-edit chain. Filter by any order number in the chain with `original_number`. Only the `eq` condition is supported. This field uses the same feature flag as the `original_number` order filter, which is disabled by default. <!-- ACCS-1443 -->
+
+The [!DNL Commerce Admin] can also display consolidated totals across an order-edit chain in the [!UICONTROL Order Chains] grid ([!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains]) and in an [!UICONTROL Order Chain Totals] summary on the order-chain detail view.
+
+To enable these fields, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+### Check stock-level availability
+
+The new [`stockAvailability(skus: [String!]!)`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/stock-availability) GraphQL query returns stock-level availability for up to 100 SKUs. <!-- ACCS-2079 -->
+
+>[!IMPORTANT]
+>
+>This release includes changes to the [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/source-availability) GraphQL query.
+>
+>* The `is_saleable` and `backorder_message` fields are removed from `sourceAvailability`. Request them from the `stockAvailability` query instead.
+
+### Product feed inventory and quantity
+
+Product feeds now export inventory and cart quantity settings through the `ac_inventory` custom product attribute, and the tax class and attribute set through the `ac_tax_class` and `ac_attribute_set` custom product attributes. <!-- ACCS-1981, MDEE-1129 -->
+
+<!-- needs link pending COMDOX-1862 -->
+
+Since these external endpoints have changed, you need to [resync the data feed manually](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports).
+
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where category images were not returned in GraphQL when [!DNL AEM Assets] was the visualization owner. <!-- ACCS-1943 -->
+
+* Fixed an issue where creating a category could return an error when using [!DNL AEM Assets]. <!-- CCSAAS-5562 -->
+
+* Fixed an issue where gift registry sharing emails failed to send. <!-- CCSAAS-5312 -->
+
+* Fixed an issue where the `placeOrder` GraphQL mutation could return an error when requesting shipping tax titles. <!-- CCSAAS-5569 -->
+
+* Fixed an issue where product feed synchronization could stop when attribute options had labels for deleted stores or no labels. <!-- ACCS-2097 -->
+
+* Fixed an issue where placing an order from a cart created through `PUT /V1/carts/:cartId/order` could fail after payment authorization. <!-- ACCS-2091, PAY-6857 -->
+
+* Fixed an issue where creating an order from a customer's shopping cart in the [!DNL Commerce Admin] could change the payment authorization total and remove the addresses from the customer's storefront cart. <!-- ACCS-2100 -->
+
+* Applying or removing a shipping discount through the REST API while an order is being placed from the same cart now returns a retryable error. <!-- ACCS-2077 -->
+
+* Product save events (`observer.catalog_product_save_commit_after` and `observer.catalog_product_save_after`) now include current related, up-sell, and cross-sell products when product links are added, updated, or removed. <!-- ACCS-2049 -->
+
+* The `/V1/returns` REST endpoints now saves and returns custom attributes. <!-- CCSAAS-5588 -->
+
+* Fixed an issue where the `telephone` field was required in the `CartAddressInput` GraphQL input, which could prevent shipping methods from displaying at checkout. <!-- ACCS-1944 -->
+
+* Fixed an issue where special prices with a date range were exported using the default timezone instead of the website timezone. <!-- ACCS-2101 -->
+
+* Fixed an issue where shipping costs and taxes did not interact correctly for orders placed through GraphQL. <!-- ACCS-1995 -->
+
+* Fixed an issue where enabling [!UICONTROL Company] and [!UICONTROL Shared Catalog] at the website scope failed. <!-- ACCS-1999 -->
+
+* Fixed an issue where some configurable products stopped syncing to the catalog when a child product had an empty value for a configurable attribute. <!-- ACCS-2107 -->
+
+* Fixed an issue where [!UICONTROL New Return] emails could be sent without the returned items listed when an item's condition, resolution, or reason was not set. <!-- CCSAAS-5585 -->
+
+* Fixed an issue where the [!UICONTROL Catalog] > [!UICONTROL Categories] page in the [!DNL Commerce Admin] failed to load for stores with category attributes that have no input type. <!-- CCSAAS-5582 -->
+
+* Fixed an issue where the [!UICONTROL Global] scope could not be opened in [!UICONTROL Content] > [!UICONTROL Design] > [!UICONTROL Configuration]. <!-- CCSAAS-5583 -->
+
+* Fixed an issue where Admin users without permission to edit product price or status could not open the [!UICONTROL Add Product] page. <!-- CCSAAS-5584 -->
+
+* Fixed an issue where the tax rate form failed to open in multi-store mode. <!-- ACCS-2102 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## October 2026 - release #1
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to production environments on October 7, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Access company details in the shipping rates webhook
+
+The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook payload now includes the cart's `company_id` and company custom attributes, so [!DNL App Builder] shipping integrations can determine eligibility, such as free shipping, without calling [!DNL Commerce]. Map the `rateRequest.company` fields in the webhook's [!UICONTROL Hook Fields] configuration. <!-- CCSAAS-5485 -->
+
+### Manage catalog price rules in REST
+
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules) let integrations manage and search [catalog price rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) programmatically. <!-- ACCS-1621 -->
+
+The following endpoints are protected by the `Magento_CatalogRule::promo_catalog` permission, which also protects the Admin Catalog Price Rule screen. Admin or integration-level access is required to use this endpoint.
+
+* `GET /V1/catalogPriceRules/metadata` - Discover the allowed discount actions and the condition attributes, with their operators and value sources.
+* `GET /V1/catalogPriceRules/search` - List and search rules with the standard searchCriteria (filters, sort, paging).
+* `GET /V1/catalogPriceRules/:ruleId` - Get one rule, including its full condition tree.
+* `POST /V1/catalogPriceRules` - Create a rule.
+* `PUT /V1/catalogPriceRules/:ruleId` - Update a rule. Send only the fields you want to change.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Delete a rule.
+
+### Protect presigned uploads with reCAPTCHA
+
+You can now require [!DNL Google reCAPTCHA] validation on the [`initiateUpload` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload) to protect presigned file uploads. To enable this setting in the [!DNL Admin], navigate to [!UICONTROL **Enable for Presigned Upload**] in [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]. <!-- CCSAAS-5490 -->
+
+### Create custom attributes for returns with REST
+
+The `/V1/returns` REST API endpoints accept custom attributes on return (RMA) items, so back-end integrations such as order management systems can synchronize return fields without using the storefront GraphQL API.
+
+Set file and image attribute values with a key from the `/V1/media/initiate-upload` and `finish-upload` flow. <!-- CCSAAS-5502 -->
+
+### Restrict guest company registration
+
+A new configuration option lets you prevent unauthenticated guest customers from registering a company from the storefront through the `createCompany` GraphQL mutation.
+
+This option is not available in the [!DNL Commerce Admin]. To enable it, set the `btob/company/restrict_guest_company_registration` configuration flag to `1` with the [`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoint:
+
+```json
+{
+  "config": {
+    "btob/company/restrict_guest_company_registration": "1"
+  }
+}
+```
+
+When enabled, [!DNL Commerce] blocks guest callers from both the `createCompany` mutation and the `isCompanyEmailAvailable` query. <!-- ACCS-1823 -->
+
+### Audit an order through GraphQL
+
+The `CustomerOrdersFilterInput` GraphQL input object now supports an `original_number` field that allows you to filter on any order number in an order-edit chain. The response returns the original order and all orders created from subsequent edits as a single chain, matching the `order_original_id` filter in REST. <!-- ACCS-1442 -->
+
+To enable this feature, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+### Schedule catalog price rules by date and time
+
+You can now set the time of day for a [catalog price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) to start or end in the [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+
+### Apply custom shipping discounts through the admin REST API
+
+You can now apply an arbitrary [shipping discount](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts) to a cart through the admin REST API, for cases that do not fit a cart price rule.
+
+Use `POST /V1/carts/:cartId/shipping-discount` to set the discount. Admin or integration-level access is required to use this endpoint. <!-- ACCS-1156 -->
+
+### Add cart items at a custom price
+
+You can now set a [custom price on a cart item](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) by adding the `custom_price` extension attribute to the standard add or update cart item REST endpoints (`POST /V1/carts/:cartId/items` and `PUT /V1/carts/:cartId/items/:itemId`). You must supply an admin or integration token to set a custom price. Requests with a negative price or an unsupported product type, such as a bundle product with dynamic pricing, are rejected. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+The `GET /V1/carts/:cartId` and `GET /V1/carts/:cartId/items` endpoints also return the `custom_price` value.
+
+### Isolate admin-created carts from storefront carts
+
+An opt-in feature, disabled by default, isolates carts that admins and integrations can create through the REST API from the customer's active storefront cart. When enabled, `POST /V1/customers/:customerId/carts` always creates a new inactive cart that admin and integration callers can manage through the cart REST endpoints without changing the shopper's storefront cart. <!-- ACCS-1153 -->
+
+To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+### Send transactional emails through third-party platforms
+
+New events let you send transactional emails from a third-party email platform, such as [!DNL Salesforce Marketing Cloud], through [!DNL App Builder]. Subscribe to the following events through [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` - A store credit balance is saved. Add a subscription rule where `notify_by_email` equals `1` to receive one event per store credit notification email.
+* `observer.giftcard_item_email_send_after` - A gift card email is sent for an order item. The payload includes all gift card codes for the item.
+* `plugin.customer.api.account_management.activate` - A customer confirms their account.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - A negotiable quote is declined.
+
+### Bulk API limits
+
+The [Bulk API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) now enforces a maximum number of entities per request. Requests that exceed the limit return an error. The non-configurable [!UICONTROL Maximum Entities Per Bulk Request] field in the [Configuration Reference](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api) shows the limit. For more information, see [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* The [!DNL Commerce Admin] now displays a warning when you create or edit a webhook that includes the Adobe I/O Runtime `X-OW-EXTRA-LOGGING` header set to `on`. The header is intended for debugging and is not recommended in production. <!-- CCSAAS-5486 -->
+
+* Files uploaded through presigned S3 upload URLs now have additional scans for malware. <!-- ACCS-1463 -->
+
+* Fixed an issue where salable quantity could be under-reported for products, which could incorrectly block add-to-cart, REST, and GraphQL stock checks. <!-- ACCS-1908 -->
+
+* Fixed an issue where the [!DNL Commerce Admin] customer grid displayed duplicate rows for B2B customers who belonged to a company. <!-- ACCS-1143 -->
+
+* Fixed an issue where saving the [!DNL AEM Assets] integration configuration did not register the tenant. <!-- ACAP-1317 -->
+
+* Fixed an issue where a special price could outlast its expiration date. <!-- CCSAAS-5499 -->
+
+* Fixed an issue where the [!UICONTROL Return Items] grid could fail to load for a pending return. <!-- CCSAAS-5514 -->
+
+* Fixed an issue where requesting cart prices or totals could return an error when the cart contained an out-of-stock item. <!-- CEXT-6776 -->
+
+* Resolved an issue where the inventory consumer could overwhelm the message queue when trying to find a missing SKU. <!-- ACCS-1976 -->
+
+* The `customerDownloadableProducts` GraphQL query now returns file metadata for downloadable products configured with an external URL, so storefronts can determine the file type and whether to open or download the asset. <!-- ACCS-1735 -->
+
+* The `sourceAvailability` GraphQL query now applies B2B shared catalog and category permissions, so shoppers receive per-source stock only for products they are allowed to see. <!-- ACCS-1888 -->
+
+* Fixed an issue where customers could not set a password from the welcome email link, and newly created customers did not appear in the [!DNL Commerce Admin] customer grid. <!-- ACCS-1979 -->
+
+* Fixed an issue where orders edited through the order edit REST API could save items with the wrong price. <!-- ACCS-1982 -->
+
+* Fixed an issue where products removed from a company's shared catalog remained visible on the storefront and were silently dropped from the cart. <!-- CCSAAS-5544 -->
+
+* Fixed an issue where a shared catalog product in a category denied to the customer group appeared on the storefront but could not be added to the cart. A category deny permission now takes precedence over shared catalog membership. <!-- CCSAAS-5549 -->
+
+* Fixed an issue where placing an order through GraphQL could return an error when a shipping tax item had no title. <!-- CCSAAS-5552 -->
+
+* Fixed an issue where the `GET /V1/customers/:customerId/companyRoles` REST endpoint returned empty permissions for a company admin. <!-- ACCS-1998 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - release #2
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were added to Production environments on September 22, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Attach files and images to return requests
+
+Customers can now upload files and images when submitting a return request through the storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL mutation. Use the [`initiateUpload` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) to upload the file, then assign the returned key to a return item custom attribute. <!-- CCSAAS-5410 -->
+
+### Control inventory source appearance
+
+Each inventory source now includes a [!UICONTROL **Visible on Storefront**] toggle on the [source edit page](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-add) in the [!DNL Commerce Admin] ([!UICONTROL **Stores**] > [!UICONTROL **Inventory**] > [!UICONTROL **Sources**]). The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns stock information only for sources you flag as visible. Sources are hidden by default. <!-- ACCS-1645 -->
+
+### Guide multi-source shipments
+
+When an order contains items nominated to different inventory sources, the [!DNL Commerce Admin] [!UICONTROL **Source Selection**] page now automatically guides you through selecting the appropriate source for each item. <!-- ACCS-1832 -->
+
+### Query source availability details for the storefront
+
+The [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query now returns additional information for storefronts:
+
+* Each source includes its `name` and an `is_pickup_location_active` flag, so storefronts can display source names and identify active in-store pickup locations. <!-- ACCS-1614 -->
+
+* The `SourceAvailability` type now includes `is_saleable` and `backorder_message` fields, so storefronts can gate [!UICONTROL Add to Cart] on true saleability instead of physical stock. <!-- ACCS-1858 -->
+
+### Retrieve customer permissions
+
+A new [!DNL Commerce] REST endpoint (`GET /V1/customers/:customerId/companyRoles`) returns all company roles and permissions assigned to a customer. The GraphQL `CompanyBasicInfo` type now also includes `role_id`, `role_name`, and permission data, so integrations can retrieve a user's company role assignments across all associated accounts in a single request. <!-- ACCS-1617 -->
+
+### Subscribe to an invoice save webhook
+
+The `observer.sales_order_invoice_save_after` webhook allows you to run logic after saving an invoice. <!-- CEXT-6706 -->
+
+### View nominated source information
+
+When an order contains items with a nominated inventory source, the [!DNL Commerce Admin] now labels those items on the order view page and in the shipment source selection screen, so merchants can fulfill orders from the correct source. <!-- ACCS-941 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Optimized cart and checkout tier price loading to prevent issues with a large number of shared catalogs. <!-- ACCS-1150 -->
+
+* Fixed an issue where file attribute changes were not respected. <!-- CCSAAS-5395 -->
+
+* Fixed an issue where product override data could be inconsistent. <!-- ACCS-1844 -->
+
+* Fixed an issue where concurrent REST API requests could intermittently cause a 401 error. <!-- CCSAAS-5417 -->
+
+* Fixed an issue where a cart price rule's start or end date could function unexpectedly when no explicit time was set. <!-- ACCS-1856 -->
+
+* Fixed an issue where a cart price rule accepted non-existent start or end dates. <!-- ACCS-1902 -->
+
+* Fixed an issue that prevented saving your [!UICONTROL Catalog] configuration. <!-- CCSAAS-5436 -->
+
+* Fixed an issue that could occur when making concurrent requests to the import API (`POST /V1/import/json`). <!-- ACCS-1053 -->
+
+* Fixed an issue where salable quantity could over-report availability for products with a nominated inventory source. <!-- ACCS-1103 -->
+
+* Fixed an issue where the Order Comment API (`POST /V1/orders/{id}/comments`) did not respect case insensitivity. <!-- ACCS-1752 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## September 2026 - release #1
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were published to Production on September 8, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Adobe Commerce as a Cloud Service updated to 2.4.9
+
+[!DNL Adobe Commerce as a Cloud Service] now contains all changes from [!DNL Adobe Commerce] version 2.4.9.
+
+Refer to the [Adobe Commerce 2.4.9 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9) for more information.
+
+### Sync sandbox and production configurations through the REST API
+
+New [`GET` and `PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API endpoints let integrations read and update Commerce system configuration values, including:
+
+* Store information
+* Shipping and tax settings
+* Payment method settings
+* B2B and company settings
+
+These endpoints allow admins to synchronize configuration across environments programmatically instead of manually reconfiguring the [!DNL Commerce Admin]. Running `GET /V1/system/config` on your sandbox environment and then running `PUT /V1/system/config` with the previously retrieved Sandbox configuration allows you to sync configuration changes from Sandbox to Production. <!-- ACCS-607, CCSAAS-5346 -->
+
+### Query inventory availability through GraphQL
+
+A new [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL query returns per-source stock availability for one or more SKUs, so storefronts such as product and category pages can display accurate stock information for each inventory source.
+
+[Enable **Per-Source Availability**](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
+
+### Read persistent wishlist and account-sharing settings through GraphQL
+
+The [`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) GraphQL query now returns `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist`, and `share_customer_accounts_scope` configuration values, so storefronts can access merchant persistent shopping cart and wishlist settings without contacting support. <!-- USF-4051 -->
+
+### Search customer orders by product, SKU, or order ID
+
+The [`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) GraphQL input now supports an optional `search` field that matches against the order number, item SKU, or item name, combined with any other filters you provide. <!-- USF-4290 -->
+
+### Update and delete custom email templates through the API
+
+New `PUT` and `DELETE` [custom email](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) template endpoints let integrations update and delete custom email templates. <!-- CCSAAS-5091 -->
+
+### View product option groups and identifiers through the REST API
+
+The `GET /V1/products/:sku/options` REST call now returns `group` and `option_uids` fields for each option, matching the identifiers already available through GraphQL. <!-- ACCS-1370 -->
+
+### New shared catalog events
+
+The following shared catalog events are now available to subscribe to using [!DNL Adobe I/O Events]:<!-- ACCS-1532 -->
+
+* Category assignment (`observer.shared_catalog_assign_categories`)
+* Category unassignment (`observer.shared_catalog_unassign_categories`)
+* Company assignment (`plugin.magento.shared_catalog.api.company_management.assign_companies`)
+* Company unassignment (`plugin.magento.shared_catalog.api.company_management.unassign_companies`)
+* Company unassign-all (`plugin.magento.shared_catalog.api.company_management.unassign_all_companies`)
+* Shared catalog save (`plugin.magento.shared_catalog.api.shared_catalog_repository.save`)
+* Shared catalog delete (`plugin.magento.shared_catalog.api.shared_catalog_repository.delete`)
+
+### Use company addresses across purchase orders, quotes, and returns
+
+Company Address Books now integrate with additional B2B workflows. Companies that use a shared address book see consistent, company-scoped addresses across:
+
+* Purchase orders
+* Instant purchase
+* Gift registry
+* Reorder
+* Returns and RMAs
+* Invoices
+* Shipments
+* Credit memos
+* Negotiable quotes
+* Quote templates
+
+For detailed information, including GraphQL mutations and REST endpoints, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
+
+<!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
+
+### Hide images from store views in [!DNL AEM Assets]
+
+[!DNL AEM Assets] integration now supports a `hiddenStoreViews` parameter, so imported images can be scoped as hidden on specific store views. This enables you to show different product imagery to different regional or demographic storefronts. <!-- ACAP-1308 -->
+
+### Onboard PayPal accounts at the website scope
+
+Merchants can now self-service the onboarding of a different PayPal account at the website scope directly from the [!DNL Commerce Admin]. Payment Services Home now includes a **Connect a different PayPal account for a website** button that redirects to the Admin configuration page for payment methods. See [Connect a different PayPal account for a website](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account) for more information. <!-- PAY-6961 -->
+
+### Free Gift cart price rules
+
+The [**Free Gift** cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) is now available in the [!DNL Commerce Admin] for storefronts.
+<!-- AC-17678 -->
+
+This rule allows you to add a free gift product to the cart when the rule conditions are met. When a rule requires a choice, shoppers can select a gift SKU using the new [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL mutation, which supports configurable and bundle gift products.
+
+### Schedule cart price rules by date and time
+
+You can now set the time of day you want a [cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information) to start or end in the [!DNL Commerce Admin]. The Cart Price Rules grid displays the scheduled times and the REST API honors a time submitted on `from_date` and `to_date` instead of setting the rule to midnight. <!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### Record order edits in the order history
+
+>[!IMPORTANT]
+>
+>This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+When an order is edited, Commerce can now add a human-readable comment to the history of the new order that summarizes what changed relative to the order it replaced. <!-- ACCS-1157 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue that could occur when guest orders were placed using a registered customer's email. <!-- CCSAAS-5313 -->
+
+* Fixed an issue where repeated data export runs could cause resource issues. <!-- CCSAAS-5275 -->
+
+* Fixed a fallback issue with GraphQL media gallery labels in the [!DNL AEM Assets] integration. <!-- ACAP-1308 -->
+
+* Fixed an issue with [!DNL PayPal] SDK parameters that could affect checkout rendering. <!-- PAY-6961 -->
+
+* Fixed an issue where unsupported [!DNL Payment Services] payment methods could appear at checkout. <!-- PAY-6976 -->
+
+* Fixed an issue where event payloads with array-valued fields, such as shared catalog category and company assignment events, could contain empty objects instead of the expected data. <!-- CEXT-6554 -->
+
+* Fixed an issue where configuring several searchable customer or customer address attributes could cause display errors. The customer grid now notifies you when you reach the limit. <!-- CCSAAS-5303 -->
+
+* Fixed an issue where category image URLs were broken in the category data export feed. <!-- ACCS-1571 -->
+
+* Fixed an issue where concurrently assigning or unassigning products across different shared catalogs could intermittently fail. <!-- CCSAAS-5287 -->
+
+* Setting **Use in Search Options** to No, keeps the attribute visible as a grid column, but does not count toward the 16-column limit. <!-- CCSAAS-5370 -->
+
+* Resolved an issue that could impact Admin navigation. <!-- CCSAAS-5232 -->
+
+* Fixed an issue empty carts could report non-zero totals. <!-- ACCS-1730 -->
+
+>[!ENDSHADEBOX]
+
+## August 2026 - release #1
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were published to Production on August 12, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Subscribe to an event for invoice payments
+
+A new `observer.sales_order_invoice_pay` event is emitted when an invoice payment is recorded, so integrations can subscribe to the event instead of polling for invoice status changes. <!-- CEXT-5983 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where fetching a customer's assigned companies through GraphQL could be slow. <!-- ACCS-1425 -->
+
+>[!ENDSHADEBOX]
+
+## July 2026
 
 [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items are available on Production environments as of July 28, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Edit orders with REST
+
+>[!IMPORTANT]
+>
+>This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+New [REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) replicate the [!DNL Commerce Admin] [!UICONTROL **Edit Order**] feature allowing integrations to edit an order programmatically:
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/V1/orders/{orderId}/edit/start` | Copy the order into a new editable cart and return the cart ID. |
+| `POST` | `/V1/orders/{orderId}/edit/submit` | Submit the modified cart as a new order and cancel the original order. |
+
+After calling `edit/start`, modify the returned cart using the standard cart REST endpoints, then call `edit/submit`. The new order inherits the original order's payment method unless you override it through the cart, and it is created as a linked replacement for the canceled original. Both endpoints require the `Magento_Sales::actions_edit` ACL resource. <!-- ACCS-1284 -->
+
+### Filter orders and invoices by company
+
+The `GET /V1/orders` and `GET /V1/invoices` REST API endpoints now support filtering by `company_id` and `company_name`, enabling B2B integrations to retrieve orders or invoices for a specific company in a single request. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Import more coupon codes per file
+
+The per-file bulk coupon import cap can be adjusted by contacting your Adobe Commerce Customer Success Manager or creating a support ticket. <!-- CCSAAS-5176 -->
+
+### Manage custom email templates through the API
+
+The following new REST API endpoints let integrations list, retrieve, and create [custom email templates](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/):
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/V1/custom-email/templates` | List your custom email templates, returning each template's ID, code, subject, and type. |
+| `GET` | `/V1/custom-email/templates/{id}` | Retrieve a single template, including its body and styles. |
+| `POST` | `/V1/custom-email/templates` | Create a custom email template and return its server-assigned ID. |
+
+Use a returned template ID with the `POST /V1/custom-email/send` endpoint instead of looking up the ID manually.
+
+All `custom-email` endpoints require access to the `Marketing > Communications > Email template` [role resource](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources). <!-- CCSAAS-5089, CCSAAS-5090 -->
+
+### Manage the full order sequence through the REST API
+
+>[!IMPORTANT]
+>
+>This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
+
+New [`orderChain` REST API endpoints](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) let integrations modify an order using its ID and automatically resolve the full chain of edited orders:
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Create an invoice for the order, resolving the items to invoice across the order chain. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Cancel the current order in the chain. |
+| `POST` | `/V1/orderChain/{id}/hold` | Place the order on hold. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Remove the hold from the order. |
+| `POST` | `/V1/orderChain/{id}/emails` | Send an order email notification. |
+| `POST` | `/V1/orderChain/{id}/comments` | Add a comment to the order. |
+| `GET` | `/V1/orderChain/{id}/comments` | Retrieve the order comments. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Retrieve the current order status. |
+
+`GET` endpoints that support filtering on invoices, shipments, credit memos, and returns now support filtering by `order_original_id`. Filtering by `order_original_id` returns details about the entire order chain, not only the single order. An example endpoint that supports this feature is `GET /V1/invoices`.  <!-- ACCS-1004, ACCS-1005 -->
+
+### Search the order grid by custom attribute values
+
+>[!IMPORTANT]
+>
+>This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+Merchants can now filter the [!DNL Commerce Admin] order grid by the values stored in order custom attributes. A [!UICONTROL **Custom Attributes**] filter is available in the order grid filter row.<!-- ACCS-923 -->
+
+### Set a nominated inventory source on cart items
+
+The new `setNominatedSourceOnCartItems` GraphQL mutation assigns a specific inventory source to cart items, supporting scenarios such as in-store pickup (BOPIS) and ship-from-store. The mutation accepts a `cart_id` and a list of items, each with a `cart_item_uid` and a `source_code`, and returns any `rejected_items` with a structured error code: `UNKNOWN_SOURCE`, `SOURCE_DISABLED`, `NOT_ENOUGH_QTY`, or `SKU_SOURCE_CONFLICT`. Each SKU in a cart resolves to a single nominated source, and passing a null or empty `source_code` clears the nomination. <!-- ACCS-932 -->
+
+### Subscribe to an event for carts matching reminder rules
+
+A new `observer.reminder_matched_carts` event is emitted after the email reminder rules run their matching logic, carrying information about the carts that matched. Integrations can subscribe to this event and forward the data to an external system, such as a marketing platform, instead of relying on the native reminder emails. <!-- CCSAAS-5173 -->
+
+### Suppress transactional emails by area or template
+
+A new [Email Suppression](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) configuration ([!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Email Suppression**]) lets administrators selectively stop [!DNL Commerce] from sending transactional emails. You can suppress emails by functional area (Customer Account, Order Management, Returns, Checkout, Marketing, or B2B) or by an exact list of template identifiers.<!-- ACCS-1025 -->
+
+### View order modification history in the Admin
+
+The [!DNL Commerce Admin] order detail page now displays the full modification sequence for an order that includes the original order and all child orders created through subsequent edits. Merchants can navigate between orders, toggle the visibility of canceled orders, and access all associated invoices, shipments, credit memos, and order comments from within the sequence view.<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>To enable this feature, contact your Adobe Commerce Customer Success Manager.
+
+### View synchronized assets in [!DNL AEM Assets]
+
+The [!DNL AEM Assets] integration now includes a [!UICONTROL **Sync Status**] page ([!UICONTROL **Stores**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Sync Status**]) with an asset-centric list view of all synchronized assets, including filtering, sortable columns such as last sync date, and error details for failed syncs.<!-- ACAP-1246 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Large shared catalogs are now easier to manage in the Admin, with improved loading times and reduced likelihood of timeouts. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* Fixed a shipment creation failure that occurred when creating shipments for orders that contained configurable products. <!-- ACCS-1095 -->
+
+* Fixed an issue in the [!DNL Commerce Admin] where the left navigation menu could disappear. <!-- ACCS-1035 -->
+
+* Improved the performance of assigning and unassigning in shared catalogs. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
+
+* Improved [!DNL AEM Assets] integration performance. <!-- ACAP-1242 -->
+
+* Fixed an error that could occur when adding a simple product SKU to a configurable product in the [!DNL Commerce Admin]. <!-- ACCS-1132 -->
+
+* Fixed an issue where the message queue could stop processing new messages when it accumulated too many out-of-date records. <!-- ACCS-1292 -->
+
+* Fixed an issue where Admin order creation failed with a "SKU not available in the shared catalog" error. <!-- ACCS-1318 -->
+
+* Resolved a crash that occurred when creating or editing bundled products. <!-- CCSAAS-5211 -->
+
+* Fixed an issue where order placement did not reserve inventory at the nominated source for items using in-store pickup or ship-from-store. <!-- ACCS-1374 -->
+
+* Stale custom fees are now cleared from the cart query response. <!-- ACCS-1400 -->
+
+* Resolved an issue in the [!DNL AEM Assets] integration where product asset-role attributes lost locale data during catalog export. <!-- ACCS-1401 -->
+
+* Improved the warning received when saving an integration indicating that [!DNL Dynamic Media] is not enabled. <!-- ACAP-1298 -->
+
+* Event name and alias fields are now validated to be lowercase when you subscribe to an event. <!-- CEXT-6164 -->
+
+* Webhook regex rule patterns are now validated when you save a conditional webhook. <!-- CEXT-6287 -->
+
+>[!ENDSHADEBOX]
+
+## June 2026 - release #1
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+The following items were released to Production environments on June 4, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Add and edit custom coupon codes in the Admin
+
+Merchants can now [create and edit custom coupon codes](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) directly from the [!DNL Commerce Admin] on manual cart price rules. A new [!UICONTROL **Add Custom Coupon**] button is available in the [!UICONTROL **Manage Coupon Codes**] section when editing a cart price rule. <!-- CCSAAS-4508 -->
+
+### Track shipments using default and custom carriers
+
+Order tracking is now reliable for default and custom shipping carriers in the [!DNL Commerce Admin], helping merchants deliver consistent post-purchase tracking experiences. Previously, selecting a carrier such as UPS or FedEx and applying a tracking ID could prevent the tracking link from displaying — no merchant action is required to restore this behavior. Tracking link support is also available for [custom carriers](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference) created with the [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+
+### View attribute input types in the Product Attributes grid
+
+A new [!UICONTROL **Attribute Type**] column is now visible in the Product Attributes grid in ([!UICONTROL **Stores**] > _[!UICONTROL Attributes]_ > [!UICONTROL **Product**]), which displays the input type (such as text field, dropdown, or yes/no) for each product attribute, including types contributed by extensions. This makes it easier to identify and manage attributes when working with large attribute sets. <!-- ACCS-925 -->
+
+### Customize the Reply-To header for custom emails
+
+Merchants can now configure the [!UICONTROL **Reply-To**] header used by the [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) endpoint, so replies from customers can be routed to a different address than the sender. <!-- ACCS-1037 -->
+
+### View tier prices on the product edit page in large shared catalog environments
+
+Merchants with a large number of shared catalogs can now access the read-only [!UICONTROL **Tier Prices**] tab on the product edit page in the [!DNL Commerce Admin]. <!-- CCSAAS-4922 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where the POST `V1/async/custom-email/send` REST endpoint returned an `UnstructuredArray` validation error. The asynchronous endpoint now works consistently with the synchronous POST `V1/custom-email/send` endpoint. <!-- ACCS-921 -->
+
+* Fixed an issue where custom serializable attributes on entities such as Company were unintentionally cleared when updating the entity through REST without including the custom attributes in the payload. Custom attributes are now preserved when not provided. <!-- ACCS-946 -->
+
+* Resolved a "consumer is not authorized" error that could prevent guest GraphQL logins when the `X-Adobe-Company` header was present in the request. <!-- ACCS-949 -->
+
+* Fixed an issue where editing or deleting a company in the [!DNL Commerce Admin] could fail with a "No such entity" error after assigning a customer to the company through the PUT `V1/customers/companies` REST endpoint. <!-- ACCS-856 -->
+
+* Resolved an issue with stale sales order grid statuses. <!-- CCSAAS-4915 -->
+
+* Fixed an issue in the [!DNL Commerce Admin] where files attached as samples and links on downloadable products returned a `404` error when accessed from the product edit page. <!-- CCSAAS-4394 -->
+
+* Fixed an "Undefined array key 'simple_sku'" error that could occur when creating a shipment for an order that contained configurable products. <!-- CCSAAS-4877 -->
+
+* The `guestOrderByToken` GraphQL query now returns a more informative error message when called with a malformed token, instead of an internal server error. <!-- CCSAAS-4921 -->
+
+* The `customer` GraphQL query now returns a more informative error message when customer orders cannot be loaded. <!-- ACCS-867 -->
+
+* The GET `V1/customers/{customerId}` REST endpoint now returns the `assistance_allowed` configuration field. <!-- USF-4132 -->
+
+>[!ENDSHADEBOX]
+
+## May 2026 release #1
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
+
+The following items were released to Production environments on May 7, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Skip reCAPTCHA for programmatic OTP authentication
+
+A new configuration option allows you to skip reCAPTCHA validation for the [`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token) GraphQL mutation. This enables B2B punchout workflows. The one-time password (OTP) exchange is initiated programmatically without a form entry, making reCAPTCHA validation unnecessary. This capability builds on the [one-time code login](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} feature introduced in the March 2026 release. The `exchangeOtpForCustomerToken` mutation continues to require reCAPTCHA by default when reCAPTCHA is enabled for customer login. Contact your Adobe Commerce Customer Success Manager to enable this option. <!-- ACCS-850 -->
+
+### Edit partially invoiced orders
+
+The [!UICONTROL **Edit**] button is now available on the [!UICONTROL **Order View**] screen for partially invoiced orders, giving merchants greater flexibility to modify orders that are still in progress. Previously, orders with any invoices could not be edited, even when uninvoiced items remained. As long as any item in the order can still be invoiced, the order can be edited. Merchants with custom integrations that rely on the previous editing restriction should review their workflows. <!-- ACCS-849 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where the `stock_item` extension attribute was not returned on the `GET /V1/products` REST API list endpoint. The response now matches the documented API contract. <!-- ACCS-819 -->
+
+* Fixed an issue where password reset links in emails returned a 404 error. <!-- ACCS-797 -->
+
+* Improved order history query performance for companies using date-range filters. <!-- ACCS-859 -->
+
+* Fixed an issue where B2B company users could see peer orders from before a user joined the company. <!-- ACCS-859 -->
+
+* Resolved checkout timeout issues that could affect REST API performance when loading quotes with `trigger_recollect` enabled. <!-- CCSAAS-4904 -->
+
+* Fixed page load issues that could occur after submitting an order in the [!DNL Commerce Admin]. <!-- CCSAAS-4413 -->
+
+* Fixed an issue where orders with the same timestamp could display outdated order status information in the sales order grid. <!-- CCSAAS-4890 -->
+
+>[!ENDSHADEBOX]
+
+## April 2026 - release #3
+
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
 The following items were released to Production environments on April 27, 2026.
 
@@ -32,7 +945,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Added the `GET /V1/order-statuses` REST API endpoint for retrieving all configured order statuses with their state assignments. <!-- CEXT-6100 -->
 
-* Resolved an issue that caused `custom_attributes` for entities such as Order, Cart, Invoice, Credit Memo, and Company to not display in the REST schema. <!-- CCSAAS-4818 -->
+* Resolved an issue that caused `custom_attributes` for entities such as Order, Cart, Invoice, Credit Memo, and Company not to display in the REST schema. <!-- CCSAAS-4818 -->
 
 * Resolved duplicate message processing errors (`MessageLockException`) in the async bulk API consumer. <!-- CCSAAS-4805 -->
 
@@ -49,8 +962,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where import file validation could fail. <!-- CCSAAS-4364 -->
 
 * Removed the **[!UICONTROL Recently Viewed/Compared Products]** configuration from the **[!UICONTROL Catalog]** section in **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**, since it is not supported in [!DNL Adobe Commerce as a Cloud Service] admin. <!-- ACCS-793 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -90,8 +1001,6 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue where company customers could not see their own orders if those orders were placed before the customer was assigned to the company. <!-- ACCS-746 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## April 2026
@@ -108,7 +1017,7 @@ The following items were released to Production environments on April 1, 2026.
 
 ### Check price and stock alert subscription status through GraphQL
 
-New GraphQL queries, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"} and [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
+New GraphQL queries, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock){target="_blank"} and [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price){target="_blank"}, let storefronts determine whether a shopper is already subscribed to stock or price alerts for a product. <!-- ACCS-334 -->
 
 ### Create numeric product attributes that support negative values
 
@@ -116,11 +1025,11 @@ A new `numeric` [product attribute input type](https://experienceleague.adobe.co
 
 ### Query reCAPTCHA configuration for multiple forms in one GraphQL request
 
-The [`recaptchaFormConfigs` query](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) can return configuration details for multiple form types in a single request. <!-- ACCS-628 -->
+The [`recaptchaFormConfigs` query](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) can return configuration details for multiple form types in a single request. <!-- ACCS-628 -->
 
 ### View all company orders with a new B2B permission
 
-A new `view_all_company_orders` [company role](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/) enables B2B company customers to view all orders within their company, including historical orders created by Admin users. <!-- ACCS-675 -->
+A new `view_all_company_orders` [company role](https://developer.adobe.com/commerce/webapi/rest/b2b/roles) enables B2B company customers to view all orders within their company, including historical orders created by Admin users. <!-- ACCS-675 -->
 
 ### Enhancements and bug fixes
 
@@ -148,7 +1057,7 @@ The following items were released to Production environments on March 24, 2026.
 
 Admins can now generate [one-time codes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer) for customer impersonation through the [!DNL Commerce Admin] and REST API. The one-time code can be exchanged for a customer access token through the `generateCustomerToken` or `exchangeOtpForCustomerToken` GraphQL mutations, enabling passwordless "Login as Customer" flows for seller-assisted shopping scenarios. <!-- ACCS-404 -->
 
-For guidance on implementing this feature using APIs, see the [REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/) and [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/) documentation.
+For guidance on implementing this feature using APIs, see the [REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/) and [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token) documentation.
 
 ### Manage gift card accounts through the REST API
 
@@ -160,7 +1069,7 @@ A new REST API endpoint (`POST /V1/custom-email/send`) allows you to [trigger tr
 
 ### Subscribe to the out-of-process shipping get-rates webhook
 
-The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook is now available in the Admin Webhooks list in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement [custom shipping methods](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods). <!-- ACCS-478 -->
+The `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook is now available in the Admin Webhooks list in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement [custom shipping methods](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#shipping-methods). <!-- ACCS-478 -->
 
 ### Upload PDFs and other files through product attributes
 
@@ -280,7 +1189,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 ### App Builder AI coding tools and tutorials
 
-You can now use the [AI coding developer tooling](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
+You can now use the [AI coding developer tooling](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} to create new [!DNL App Builder] applications and convert existing [!DNL Adobe Commerce] PHP extensions to [!DNL App Builder] applications. The following tutorials are available to demonstrate how to use the tools:
 
 * [Tutorial prerequisites](./tutorials/tutorial-prerequisites.md)
 * [Ratings extension tutorial](./tutorials/ratings-extension.md)
@@ -296,11 +1205,11 @@ The limit on the number of websites, stores, and store views was previously limi
 
 ### Customize storefront authentication messages with structured error codes
 
-The [`generateCustomerToken` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} now returns typed error codes alongside error messages, enabling storefronts to display specific UI messages per failure reason. Available error codes include: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED`, and `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+The [`generateCustomerToken` GraphQL mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"} now returns typed error codes alongside error messages, enabling storefronts to display specific UI messages per failure reason. Available error codes include: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED`, and `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Send automated email reminders for cart and wishlist inactivity
 
-The [Email Reminder module](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service], allowing merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
+The [Email Reminder module](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) is now active in [!DNL Adobe Commerce as a Cloud Service]. It allows merchants to create automated reminder rules that trigger emails to customers based on cart and wishlist inactivity. <!-- CCSAAS-4597 -->
 
 ### Subscribe to category deletion events webhook
 
@@ -308,7 +1217,7 @@ The `observer.catalog_category_delete_before` webhook is now available in [!DNL 
 
 ### Track guest orders placed with a registered email
 
-A new optional store-level configuration allows customers to [track guest orders](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) they made, if the order was placed using an email address that matches a registered customer account. <!-- ACCS-289 -->
+A new optional store-level configuration allows customers to [track guest orders](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) they made. This applies if the order was placed using an email address that matches a registered customer account. <!-- ACCS-289 -->
 
 ### Enhancements and bug fixes
 
@@ -332,7 +1241,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 ### Send context fields with commerce events
 
-[!DNL Adobe Commerce as a Cloud Service] now supports [context fields](https://developer.adobe.com/commerce/extensibility/events/context-fields/) in event payloads, allowing you to include data that is not part of the event by default. <!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service] now supports [context fields](https://developer.adobe.com/commerce/extensibility/events/context-fields) in event payloads, allowing you to include data that is not part of the event by default. <!-- CEXT-5713 -->
 
 ### Subscribe to quote item save events using a new webhook
 
@@ -360,7 +1269,7 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 The following enhancements were made to the [!DNL Commerce Admin]:
 
-* Enhanced out-of-process [shipping webhook payloads](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
+* Enhanced out-of-process [shipping webhook payloads](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload) to include shipping address custom attributes. This change enables merchants to implement custom shipping methods. <!-- ACCS-235 -->
 
 * Added access to Admin reports, including reports for [Customers](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports), [Marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports), [Products](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports), and [Sales](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
 
@@ -408,20 +1317,20 @@ The following items were released to Production environments of [!DNL Adobe Comm
 
 The following changes were made to B2B drop-in components:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). The following B2B drop-ins are now available:
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). The following B2B drop-ins are now available:
 
-  * **[Company management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
-  * **[Company switcher](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
-  * **[Purchase orders](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
-  * **[Quote management](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
-  * **[Requisition lists](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
+  * **[Company management](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-management/)** - Enables company profile management and role-based permissions for Adobe Commerce storefronts.
+  * **[Company switcher](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-switcher/)** - Provides a UI component for users to switch between multiple companies they are associated with.
+  * **[Purchase orders](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/purchase-order/)** - Manages purchase order workflows, approval rules, and purchase order history for B2B transactions.
+  * **[Quote management](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/quote-management/)** - Enables negotiable quotes for B2B customers with quote request, negotiation, and approval workflows.
+  * **[Requisition lists](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/requisition-list/)** - Provides tools for creating and managing requisition lists for repeat purchases and bulk ordering.
 
 * Released the B2B Storefront Compatibility Package. This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems.
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### Clickable links to external shipping trackers
@@ -451,7 +1360,7 @@ You can now combine tiered pricing discounts with catalog rule discounts using [
 
 ### Enhancements and bug fixes
 
-The following selected enhancements, optimizations, and bug fixes included in this release:
+The following selected enhancements, optimizations, and bug fixes are included in this release:
 
 * Resolved an error that could occur when uploading a file to S3. <!-- CCSAAS-4189 -->
 
@@ -461,7 +1370,7 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 * Fixed a `404` error that occurred when clicking the [!UICONTROL **Reload Data**] button on the Admin dashboard. <!-- CCSAAS-4468 -->
 
-* Resolved an issue where product custom attributes could not be updated through the REST API when [!DNL AEM Assets integration] was enabled and the product had images. <!-- ACAP-1178 -->
+* Resolved an issue where product custom attributes were not updated through the REST API when [!DNL AEM Assets integration] was enabled and the product had images. <!-- ACAP-1178 -->
 
 * Various performance and optimization improvements.
 <!-- CCSAAS-4255 -->
@@ -480,13 +1389,13 @@ The following selected enhancements, optimizations, and bug fixes included in th
 
 ### Enhancements
 
-* [User management](./user-management.md) - Changed **Product Admin** role in the Admin Console to automatically update user access to the Commerce Admin. <!-- CCSAAS-3012 -->
+* [User management](./user-management.md) — Changed **Product Admin** role in the Admin Console to automatically update user access to the Commerce Admin. <!-- CCSAAS-3012 -->
 
-* Added the ability to upload and retrieve negotiable quote attachments as well as files and images associated with customers and customer addresses to Amazon S3 using presigned URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) and [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads). With REST, you can also upload category images. <!-- CCSAAS-3250 -->
+* Added the ability to upload and retrieve negotiable quote attachments as well as files and images associated with customers and customer addresses to Amazon S3 using presigned URLs in [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) and [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/). With REST, you can also upload category images. <!-- CCSAAS-3250 -->
 
 * Added the `POST /V1/customers` and `PUT /V1/customers/{customerId}` endpoints to the [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) to create and update customers. These endpoints require IMS authorization. <!-- CCSAAS-3112 -->
 
-* Added the [`exchangeOtpForCustomerToken` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/), which requires a shopper's email address and one-time password (OTP), and receives a customer token in exchange. This mutation is typically used in scenarios where a customer needs to authenticate using an OTP sent to their email or phone.
+* Added the [`exchangeOtpForCustomerToken` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token), which requires a shopper's email address and one-time password (OTP), and receives a customer token in exchange. This mutation is typically used in scenarios where a customer needs to authenticate using an OTP sent to their email or phone.
 
 * If an address defined in the [!UICONTROL **Store Email Addresses**] configuration screen in the Admin contains a value that ends with `example.com`, Commerce does not send emails to this address. Instead, the system logs that the email was not sent.  <!-- CCSAAS-3533 -->
 

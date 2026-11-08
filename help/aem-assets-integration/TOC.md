@@ -1,21 +1,25 @@
 ---
 user-guide-title: "[!DNL AEM Assets] integration Guide"
+breadcrumb-title: "[!DNL AEM Assets] Integration"
 user-guide-description: Comprehensive information about the AEM Assets Integration for Adobe Commerce and Magento Open Source administrators and eCommerce marketers.
 feature: CMS, Page Content
+nudge: true
 ---
 
 # AEM Assets Integration {#aem-assets-integration}
 
 - [AEM Assets Integration](overview.md)
 - [Release notes](release-notes.md)
+- [Commerce metadata in AEM Assets](metadata.md)
 - Get started {#get-started}
-  - [Configure the AEM Assets project to support Commerce metadata](get-started/configure-aem.md)
+  - [Configure the AEM Assets project](get-started/configure-aem.md)
   - [Install Adobe Commerce packages](get-started/configure-commerce.md)
+  - [Check for extension updates](get-started/check-for-updates.md)
   - [Configure the integration](get-started/setup-synchronization.md)
   - [Configure IMS user permissions](get-started/permissions.md)
-  - [Configure Commerce Optimizer](get-started/configure-aco.md)
   - [Configure your storefront](get-started/configure-storefront.md)
   - [View and manage logs](get-started/logs.md)
+  - [View AEM Assets sync status](get-started/sync-status.md)
   - [Migrate data](get-started/migrate-data.md)
 - Synchronization mechanisms {#synchronize}
   - [Maintain accurate and relevant content](synchronize/commerce-content.md)

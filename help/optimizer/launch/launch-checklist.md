@@ -1,6 +1,7 @@
 ---
 title: Launch Checklist
-description: "Learn how to validate configuration, storefront, SEO, CDN, integrations, security, analytics, and testing for [!DNL Adobe Commerce Optimizer] production."
+description: Learn how to validate configuration, storefront, SEO, CDN, integrations, security, analytics, and testing for [!DNL Adobe Commerce Optimizer] production.
+autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
 feature-set: Commerce
@@ -9,6 +10,38 @@ level: Intermediate
 topic: Administration
 recommendations: noCatalog
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 
 # Launch checklist
@@ -53,7 +86,7 @@ Confirm that your [!DNL Adobe Commerce Optimizer] production instance is set up 
 
 Confirm that your Edge Delivery Services storefront site exists and access is restricted.
 
-&#x25A2; The storefront site exists. See [Create a storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/).
+&#x25A2; The storefront site exists. See [Create a storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/).
 &#x25A2; You know the site name.
 &#x25A2; Only authorized people have [permission to publish](https://tools.aem.live/tools/user-admin/index.html).
 &#x25A2; Only authorized people have [permission to author](https://docs.da.live/administrators/guides/permissions).
@@ -69,7 +102,7 @@ Complete these checks in your Cloud project.
 &#x25A2; The Commerce Optimizer connector is [installed and configured](../../aco-connector/get-started.md).
 &#x25A2; The `aco:conf:show` CLI command confirms connection to the production Commerce Optimizer instance. The organization ID, client ID, ingestion URL, and Commerce Optimizer URL match production.
 &#x25A2; Synchronization scopes in [Export configuration](../../aco-connector/get-started.md) match your requirements.
-&#x25A2; [Data feed sync status](../../aco-connector/get-started.md) confirms data export from the Cloud instance.
+&#x25A2; [Data feed sync status](../../aco-connector/data-sync-status.md) confirms data export from the Cloud instance.
 
 ### In Commerce Optimizer
 
@@ -79,6 +112,7 @@ Complete these checks in the [!DNL Adobe Commerce Optimizer] UI.
 &#x25A2; [Price books](../setup/pricebooks.md) are auto-created from customer groups on Cloud.
 &#x25A2; [Catalog views](../setup/catalog-view.md) exist and you know their IDs.
 &#x25A2; [Policies](../setup/policies.md) exist and you know their IDs.
+&#x25A2; Any [private catalog view](../setup/private-catalog-view.md#protect-a-catalog-view) has an unexpired [restricted access key](../setup/restricted-access-keys.md) assigned, and an owner is identified for key rotation.
 &#x25A2; [Facets](../merchandising/facets/overview.md) are configured.
 &#x25A2; [Synonyms](../merchandising/synonyms/overview.md) are configured.
 &#x25A2; [Merchandising rules](../merchandising/rules/overview.md) are configured.
@@ -93,18 +127,18 @@ Confirm that the storefront reads from the correct Adobe Commerce GraphQL endpoi
 
 ### On Adobe Commerce
 
-&#x25A2; Storefront compatibility packages are [installed](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/).
+&#x25A2; Storefront compatibility packages are [installed](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/install/).
 
 ### On the storefront
 
-&#x25A2; The storefront `commerce-core-endpoint` setting points to your [Cloud GraphQL endpoint](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/).
+&#x25A2; The storefront `commerce-core-endpoint` setting points to your [Cloud GraphQL endpoint](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/).
 &#x25A2; If you use API Mesh as a proxy for Cloud GraphQL, `commerce-core-endpoint` points to the API Mesh endpoint instead of the Cloud GraphQL endpoint.
 
 ## Verify storefront and Optimizer integration {#storefront-optimizer-integration}
 
 Confirm Commerce Optimizer settings in the storefront configuration.
 
-&#x25A2; Your storefront uses the correct [Commerce Optimizer settings](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/).
+&#x25A2; Your storefront uses the correct [Commerce Optimizer settings](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/).
 &#x25A2; `adobe-commerce-optimizer` is `true`.
 &#x25A2; `commerce-endpoint` points to the production Commerce Optimizer GraphQL endpoint, or to the API Mesh endpoint when you use API Mesh.
 &#x25A2; `headers.cs.AC-view-ID` holds the catalog view ID from your production Commerce Optimizer instance.
@@ -165,8 +199,8 @@ Confirm authoring workflow and storefront components.
 
 Confirm metadata, URLs, and crawl behavior.
 
-&#x25A2; Document title metadata is present for key pages (especially PDPs and PLPs). See [SEO metadata](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
-&#x25A2; PDPs include [metadata and structured data](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} (for example, JSON-LD).
+&#x25A2; Document title metadata is present for key pages (especially PDPs and PLPs). See [SEO metadata](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/seo/metadata/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
+&#x25A2; PDPs include [metadata and structured data](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/seo/metadata/){target="_blank"} (for example, JSON-LD).
 &#x25A2; Product URL formats are consistent (for example, `domain/product-name`).
 &#x25A2; Vanity URLs redirect to canonical URLs.
 &#x25A2; The project includes `robots.txt` that allows indexing where appropriate, references sitemaps, and blocks paths you do not want indexed (for example, `/drafts`).
@@ -180,7 +214,7 @@ Confirm metadata, URLs, and crawl behavior.
 
 Confirm server-side rendering where you enable it.
 
-&#x25A2; Pre-rendering is on for key pages. See [Pre-rendering for AEM](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
+&#x25A2; Pre-rendering is on for key pages. See [Pre-rendering for AEM](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-prerender/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
 &#x25A2; URLs use lowercase so pre-rendering does not break links.
 &#x25A2; HTML source includes metadata and body content that confirm pre-rendering works.
 &#x25A2; Locales show the correct translated pages where applicable.
@@ -190,10 +224,10 @@ Confirm server-side rendering where you enable it.
 
 Confirm performance baselines and analytics wiring.
 
-&#x25A2; Your storefront follows [performance best practices](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
+&#x25A2; Your storefront follows [performance best practices](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/performance/){target="_blank"} in the _Adobe Commerce Storefront_ documentation.
 &#x25A2; (Optional) Google Analytics and Google Tag Manager are configured.
 &#x25A2; [Storefront events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger) implementation is valid and data appears in your [!DNL Live Search] and [!DNL Product Recommendations] dashboards in the Adobe Commerce *Admin*.
-&#x25A2; The `environment` analytics parameter in [Commerce configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} is `"Testing"` during development and `"Production"` at go-live. See [Analytics instrumentation](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}.
+&#x25A2; The `environment` analytics parameter in [Commerce configuration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/){target="_blank"} is `"Testing"` during development and `"Production"` at go-live. See [Analytics instrumentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/analytics/instrumentation/){target="_blank"}.
 &#x25A2; Lighthouse scores meet your targets (for example, `100` on key pages) given the guidance in this topic.
 
 ### Security and access
@@ -202,7 +236,7 @@ Confirm permissions and secrets.
 
 &#x25A2; Appropriate permissions are configured for DA content and EDS sites. See [DA.live permissions](https://da.live/docs/administration/permissions) and [Authentication setup for authoring](https://www.aem.live/docs/authentication-setup-authoring).
 &#x25A2; The product visuals integration is provisioned. See [AEM Cloud Service access overview](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
-&#x25A2; Password reset links in email templates match your Edge Delivery Services setup. See the storefront FAQ: [What should I do if my email template links are broken after migrating to Edge Delivery Services or Helix?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
+&#x25A2; Password reset links in email templates match your Edge Delivery Services setup. See the storefront FAQ: [What should I do if my email template links are broken after migrating to Edge Delivery Services or Helix?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 &#x25A2; Production keys for integrations and payment providers are in place.
 &#x25A2; Domains are allowlisted and backend webhooks work.
 
@@ -212,8 +246,8 @@ Confirm CDN, DNS, and cache behavior.
 
 &#x25A2; The CDN configuration uses the production GraphQL endpoint (`yourproject.com/graphql`) for Sidekick extensions and scripts (for example, sitemap generation and the image importer).
 &#x25A2; When you use Adobe Commerce Fastly, a CDN purge token is available and [site configuration](https://tools.aem.live/tools/cdn-setup/index.html) includes `authToken` and `serviceId`.
-&#x25A2; [CDN configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"} validates caching and invalidation.
-&#x25A2; For [multi-store setups](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}, Catalog Service and [!DNL Live Search] requests include a store-specific cache buster (for example, a query parameter or CDN rule).
+&#x25A2; [CDN configuration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/){target="_blank"} validates caching and invalidation.
+&#x25A2; For [multi-store setups](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}, Catalog Service and [!DNL Live Search] requests include a store-specific cache buster (for example, a query parameter or CDN rule).
 &#x25A2; Push invalidation works end to end (publish a change, then verify on the production domain).
 &#x25A2; DNS TTL is low enough before cutover.
 &#x25A2; DNS A and CNAME records are correct for all domains and hostnames.

@@ -2,6 +2,21 @@
 title: Indexing
 description: Learn how [!DNL Live Search] indexes product attribute properties.
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
+TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
 # Indexing
 
@@ -30,6 +45,8 @@ The client calls the search service from the storefront to retrieve (filterable,
 To construct a dynamic query, the search service needs to know which attributes are searchable and their [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] honors Adobe Commerce search weights (1-10, where 10 is the highest priority). The list of data that is synced and shared with the catalog service can be found in the schema, which is defined in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+To understand how searchable attributes and weights interact with **exact**, **near**, same-field, and cross-field matching at query time, see [Search matching and ranking](search-relevance-matching.md).
 
 ![[!DNL Live Search] indexing client search diagram](assets/indexing-pipeline.svg)
 

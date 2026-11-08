@@ -6,8 +6,65 @@ role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+autotag-review: '2026-06-18T16:02:31.185Z'
+TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: f236e2a1-90d4-477d-92e1-5996b5e92bff
+    internal-label: Experience Cloud integration
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
 ---
-
 # [!DNL Adobe Commerce as a Cloud Service] overview
 
 [!DNL Adobe Commerce as a Cloud Service] offers flexibility, scalability, and efficiency by enabling businesses to deliver and rapidly scale digital operations while accelerating innovation. Adobe's cloud-native infrastructure automatically adjusts resources to meet peak demands for traffic, orders, and catalog management.
@@ -57,26 +114,31 @@ See the following video for a brief introduction to the [!DNL Adobe Commerce as 
 
 This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud Service] and all Adobe Experience Cloud solutions.
 
-![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow.svg){zoomable="yes"}
+![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce Storefront
 
-Use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) powered by [!DNL Edge Delivery Services] to create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder].
+To create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder], use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) powered by [!DNL Edge Delivery Services].
 
-[!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
+[!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Adobe Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from Adobe Commerce on Cloud or on-premises, see [existing storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) for guidance on transitioning.
+>[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from [!DNL Adobe Commerce on Cloud] or on-premises, see [existing storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) for transition guidance.
 
-## Merchandising services and payment services
+## Adobe Merchandising services and payment services
 
 Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
-- [Live Search](../live-search/overview.md)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-- [Product Recommendations](../optimizer/merchandising/recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [[!DNL Live Search]](../live-search/overview.md)—Deliver smarter, faster, and relevant results for shoppers with this AI-powered search tool. For setup instructions, see [Setting up [!DNL Live Search]](../live-search/workspace.md).
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more. For configuration instructions, see [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
 - [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
-- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+
+  >[!NOTE]
+  >
+  >Catalog Service is included automatically with [!DNL Live Search] and [!DNL Product Recommendations].
+
+- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free installments, and a single view into processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -84,7 +146,7 @@ Product Visuals helps simplify asset management using a digital asset management
 
 The integration ensures that digital assets, such as product images or marketing content, dynamically link to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
 
-[!DNL Product Visuals] is available out-of-the-box with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from [!DNL AEM Assets].
+[!DNL Product Visuals] is available natively with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from [!DNL AEM Assets].
 
 Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
@@ -154,7 +216,7 @@ Adobe provides developers with comprehensive extension points and tools to build
 Adobe provides the following developer tools for building integrations and customizations:
 
 - [**API Mesh for Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/)—Coordinate and combine multiple API, GraphQL, REST, and other sources into a single, queryable GraphQL endpoint.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Build and deploy secure and scalable web applications that extend Commerce functionality and integrate with third-party solutions.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/)—Build and deploy secure and scalable web applications that extend Commerce functionality and integrate with third-party solutions.
 - [**Events**](https://developer.adobe.com/commerce/extensibility/events/)—Use custom event triggers to interact with other extensible development tools.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to trigger interactions between Commerce and third-party systems automatically.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
@@ -172,7 +234,7 @@ Key features include:
 
 ### Simplified onboarding
 
-Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including Merchandising Services, a headless Commerce instance, and [!DNL App Builder], is automatically configured and integrated with your instances.
+Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including merchandising services, a headless Commerce instance, and [!DNL App Builder], is automatically configured and integrated with your instances.
 
 See [Getting started](getting-started.md) to learn how to create and manage Commerce instances.
 
@@ -184,7 +246,7 @@ The typical upgrade process for Adobe Commerce on Cloud involved creating backup
 
 >[!NOTE]
 >
->Adobe guarantees backward compatibility for all updates. This means that when updates are applied, they will not break existing functionality or customizations that adhere to the [API-first extensibility](https://developer.adobe.com/commerce/extensibility/) model.
+>Adobe guarantees backward compatibility for all updates. This means that when updates are applied, they do not break existing functionality or customizations that adhere to the [API-first extensibility](https://developer.adobe.com/commerce/extensibility/) model.
 
 ### Third-party integrations
 
@@ -205,13 +267,13 @@ The following sections provide information about the benefits that [!DNL Adobe C
 ### Business leaders
 
 - **Grow revenue**: Drive organic traffic with a high-performance storefront that boosts SEO. Create personalized experiences that drive conversion using rich data.
-- **Scale operations**: Auto-scaling services meet the peak demands of your business with 99.9% availability. Rollout multiple brands and regions and support B2B and B2C from a single instance. Support large and complex product catalogs with flexible data modeling.
+- **Scale operations**: Auto-scaling services meet the peak demands of your business with 99.9% availability. Roll out multiple brands and regions and support B2B and B2C from a single instance. Support large and complex product catalogs with flexible data modeling.
 - **Boost merchandiser productivity**: Use AI powered merchandising services to improve conversion. Experiment natively, directly in the storefront. Manage the storefront experience to create rich experiences in minutes with simple document-based authoring or a visual editor.
-- **Lower total cost of ownership (TCO) and accelerate innovation**: Always up-to-date services give you access to new features immediately. Activate new capabilities by easily installing apps from the marketplace. Free up resources from tedious maintenance to focus on building new capabilities.
+- **Lower total cost of ownership (TCO) and accelerate innovation**: Always up-to-date services give you access to new features immediately. Activate new capabilities by easily installing apps from the marketplace. Reallocate resources from routine maintenance to focus on building new capabilities.
 
 ### Information technology (IT) leaders
 
 - **Fast provisioning**: Get started fast with self-service provisioning in minutes. All services are pre-configured to work seamlessly together to get started faster. Provision sandboxes for developer experimentation as needed.
 - **Low cost of ownership**: No more upgrades with always up-to-date services. Stay secure and compliant with the latest security patches automatically applied for you. Scale automatically to meet the most demanding workloads.
 - **High-performance storefront**: Create rich experiences in minutes with simple document-based authoring or a visual editor. Use AI-powered merchandising services to improve conversion. Native experimentation built into the storefront.
-- **Faster innovation**: Free up resources from tedious maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JavaScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.
+- **Faster innovation**: Reallocate resources from routine maintenance to focus on building new capabilities that deliver business value. Use comprehensive extensibility and standards-based technologies (JavaScript, HTML, CSS, and low-code tools) to build differentiated experiences. Install third-party apps with a click to add new capabilities to your commerce platform.

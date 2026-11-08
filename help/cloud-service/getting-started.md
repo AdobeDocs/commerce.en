@@ -1,15 +1,57 @@
 ---
-title: 'Getting started with [!DNL Adobe Commerce as a Cloud Service]'
+title: Getting started with [!DNL Adobe Commerce as a Cloud Service]
 description: Learn how to get started with [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+autotag-review: '2026-06-18T16:01:44.084Z'
+TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Getting started
 
-[!DNL Adobe Commerce as a Cloud Service] provides most configuration out of the box. After completing a few basic setup processes, your store is up and running in no time. This guide walks you through creating and working with an instance and helps you set up your organization for success. It ensures your teams have proper access to [!DNL Adobe Commerce as a Cloud Service] and the tools you need to get started.
+[!DNL Adobe Commerce as a Cloud Service] provides most configuration by default. After completing a few basic setup processes, your store is up and running in no time. This guide walks you through creating and working with an instance and helps you set up your organization for success. It ensures your teams have proper access to [!DNL Adobe Commerce as a Cloud Service] and the tools you need to get started.
 
 [!DNL Adobe Commerce as a Cloud Service] is a cloud-native commerce platform that provides flexibility, scalability, and efficiency for delivering digital commerce experiences. This SaaS offering is a fully managed, versionless platform that provides a seamless upgrade experience without manual intervention.
 
@@ -54,15 +96,15 @@ Select a tab below to see high-level workflow graphics for the corresponding rol
 
 >[!TAB System administrator and merchant workflow]
 
-This diagram provides a high-level overview of how system administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how system administrators and merchants access and manage [!DNL Adobe Commerce as a Cloud Service] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/business/enterprise.html) for more information about administrator workflows.
 
-![System administrator and merchant workflow diagram for Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
+![System administrator and merchant workflow diagram for Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
 >[!TAB Developer workflow]
 
 This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce as a Cloud Service] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
 
-![Developer workflow diagram for creating integrations with Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
+![Developer workflow diagram for creating integrations with Adobe Commerce as a Cloud Service](./assets/developer-flow.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -114,7 +156,7 @@ After completing your role-specific setup tasks:
 
 * **System Administrators**: Review [shared responsibility](./security/shared-responsibility.md) guidelines
 * **Merchants**: Explore [use cases](use-cases.md) for common business scenarios
-* **Developers**: Check out the [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs)
+* **Developers**: Check out the [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs/)
 
 ## Adobe Commerce as a Cloud Service basics
 
@@ -144,7 +186,7 @@ The following sections describe the basic processes you need to complete to get 
 
 1. Choose the [!UICONTROL **Environment Type**] for your instance. You can choose between the following options:
 
-   * [!UICONTROL **Sandbox**] - For design and testing purposes only. You should begin your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
+   * [!UICONTROL **Sandbox**] - For design and testing purposes only. Adobe recommends beginning your [!DNL Adobe Commerce as a Cloud Service] journey by using the sandbox environment.
 
    >[!NOTE]
    >
@@ -186,7 +228,7 @@ After you create an instance, you can access it from the [!UICONTROL Commerce Cl
 
 >[!TIP]
 >
->To see information about your instance, including the REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
+>To see instance information, including REST and GraphQL endpoints and the Admin URL, click the information icon next to the instance name.
 
 The base URLs for your Admin and endpoints differ based on region and environment, using the following pattern:
 
@@ -216,4 +258,4 @@ Now that you have created an instance, you are ready to [set up your storefront]
 
 * [Release notes](release-notes.md)
 * [Migration guide](migration/overview.md)
-* [Commerce Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Commerce Storefront documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/)

@@ -7,6 +7,32 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
+autotag-review: '2026-06-18T16:24:27.547Z'
+TQID: 'https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Ratings extension tutorial
 
@@ -99,7 +125,7 @@ This section guides you through developing a ratings extension for Adobe Commerc
 
 1. Review the `requirements.md` file and verify the plan. 
 
-   If everything looks correct, instruct the agent to move to **Phase 2 - Architecture Planning**.
+   If everything looks correct, instruct the agent to move to **Phase 2 — Architecture Planning**.
 
 1. Review the architecture plan.
 
@@ -212,7 +238,7 @@ Prepare your local storefront environment for development.
 
 1. Open the storefront folder in a new Cursor window.
 
-   Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
+   Alternatively, if you have the [Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands) installed, open the window by using the following command in your terminal:
 
    ```bash
    cursor .
@@ -245,8 +271,8 @@ Use the agent to integrate the ratings API into the storefront product detail pa
 1. The agent assesses the task complexity and invokes a phased workflow. During **Phase 1 (Requirements Gathering)**, the agent creates a requirements document and asks clarifying questions such as:
 
    * Where on the PDP should ratings appear?
-   * Should this be a new standalone block, or a slot customization inside the existing PDP drop-in component?
-   * What should the fallback be if the API is unavailable or returns no data?
+   * Is this a new standalone block, or a slot customization inside the existing PDP drop-in component?
+   * What is the fallback if the API is unavailable or returns no data?
    * Should ratings appear on the PLP (product listing) as well, or PDP only?
    * Are there any design specs or mockups?
 
@@ -297,7 +323,7 @@ Use the agent to integrate the ratings API into the storefront product detail pa
    You should see the following changes in your development environment and browser:
 
    * A product rating component is automatically created.
-   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) or as a standalone block, depending on the chosen architecture.
+   * The component is integrated into the PDP using [drop-in slots](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/customize/slots/) or as a standalone block, depending on the chosen architecture.
    * Stars display with proper fill proportions based on the rating values from your API.
 
    ![Product detail page showing star ratings integrated below the product title](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

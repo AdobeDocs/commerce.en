@@ -1,16 +1,40 @@
 ---
-title: "[!DNL Payment Services] Configuration"
+title: '[!DNL Payment Services] Configuration'
 description: After installation, you can configure [!DNL Payment Services] in the Admin at the store configuration.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
+feature: Payments, Checkout, Configuration, Paas, Saas
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # [!DNL Payment Services] Configuration
 
 You can customize [!DNL Payment Services] to your needs with helpful configuration options in the Admin.
 
 When you configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] in the Admin, those configurations apply only to the environment that is set in the _[!UICONTROL Method]_ field of _[!UICONTROL General Configuration]_. Any changes you make in the configuration fields are independent of switching the _[!UICONTROL Method]_ selection---if you switch the method, your selections do not reset.
+
+If you run a single Commerce instance with **multiple websites** (and store views), you may need a **different PayPal merchant account** for some websites. [!DNL Payment Services] lets you complete **website-scoped** PayPal onboarding in the Admin after the instance is set up and onboarded at the **global** (default) scope. See [Connect a different PayPal account for a website](connect-website-account.md) for prerequisites and complete steps to onboard a website-scoped PayPal account.
 
 ## General configuration
 
@@ -23,7 +47,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL General Configuration]_ section.
 1. For **Enable**, set it to `Yes` to enable [!DNL Payment Services] for your store.
 1. For **Method**, set it to `Sandbox` if you are still testing [!DNL Payment Services] for your store or `Production` if you are ready to enable live payments.
-1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
+1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](../landing/saas.md){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
 
     >[!WARNING]
     >
@@ -31,6 +55,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 
 1. Your **[!UICONTROL PayPal Merchant ID]** and **[!UICONTROL PayPal Merchant Status]** values are automatically provided by PayPal once you visit the [!DNL Payment Services] dashboard for the first time.
 1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs), add your custom text (up to 22 characters) in the text field, replacing `Soft descriptor` or the existing value.
+1. For eligible merchants using [!DNL Payment Services] 2.17.0 or later, set **[!UICONTROL Over Capture Enabled]** to `Yes` to enable [overcapture](over-capture.md). A PayPal overcapture agreement is required, and the payment method's **[!UICONTROL Payment Action]** must be set to `Authorize`.
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -39,12 +64,33 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Enable] | website | Enable or disable [!DNL Payment Services] for your website. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | website | Enable or disable [overcapture](over-capture.md) for eligible merchants with a PayPal overcapture agreement. Requires [!DNL Payment Services] 2.17.0 or later and a payment action of `Authorize`. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Default: `[!UICONTROL No]`. |
 | [!UICONTROL Method] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
 | [!UICONTROL Payment Services Production ID] | store view | Your production merchant ID, which is auto-generated during production (live) onboarding. |
 | [!UICONTROL PayPal Merchant ID] | store view | Your unique PayPal Merchant account ID, generated when you create your PayPal account. |
 | [!UICONTROL PayPal Merchant Status] | store view | Status of your PayPal Merchant ID. |
 | [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. |
+
+## Connect a different PayPal account for a website
+
+If you run a single Commerce instance with **multiple websites** (and store views), you may need a **different PayPal merchant account** for some websites. [!DNL Payment Services] lets you complete **website-scoped** PayPal onboarding in the Admin after the instance is set up and onboarded at the **global** (default) scope.
+
+In earlier releases, website-level PayPal account mapping typically required you to [contact Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) or your Adobe representative. Use the **[!UICONTROL Connect different account]** action when you meet the prerequisites below.
+
+### Prerequisites (global scope)
+
+The **[!UICONTROL Connect different account]** control is only available and enabled on a **website** scope when **all** of the following are already true for the instance at **default/global** configuration:
+
+1. [Commerce Services Connector](../landing/saas.md) setup is complete.
+
+1. [Sandbox and production](connect.md#configure-commerce-services) API keys (public and private) are saved in the Admin.
+
+1. **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** are populated in [General configuration](#general-configuration).
+
+1. A **global** PayPal merchant account is **connected** and you have **finished PayPal onboarding** for that default scope (the **[!UICONTROL PayPal Merchant ID]** and related fields are populated for global scope as described in [General configuration](#general-configuration)).
+
+    If global onboarding is not complete, switch the configuration scope to a **[!UICONTROL Website]**, open **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]**, and the **[!UICONTROL Connect different account]** button is **disabled**; complete connector setup and **global** PayPal onboarding first.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -72,7 +118,7 @@ See [Payments options](payments-options.md#paypal-payment-buttons) for more info
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | store view | The sorting order for the specified payment method on the checkout page. `Numeric Only` value |
 | [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields on the checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | store view | Enable or disable [credit card vaulting](vaulting.md). Options: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -113,7 +159,7 @@ See [Payment options](payments-options.md#fastlane-button) for more information.
 |---|---|---|
 | [!UICONTROL Enable Fastlane] | store view | Enable or disable [!DNL Fastlane] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. The default value is `Credit Card (via Fastlane)`. Options: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure Authentication for Fastlane](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
 | [!UICONTROL Enable messaging] | store view | Specify whether the [!UICONTROL Fastlane] branding is enabled during checkout in Adobe Commerce. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -162,7 +208,7 @@ These optional settings apply to the customer input fields of your [!UICONTROL F
 
 ## [!UICONTROL Apple Pay]
 
-With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience in Safari—supporting up to 99 domains per merchant account. The [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's iOS or macOS device, enabling quick, one-tap purchases that can help boost conversion rates.
+With [!DNL Apple Pay], merchants can offer a secure, fast, and seamless checkout experience—supporting up to 99 domains per merchant account. In **Safari** (macOS and iOS), the [!DNL Apple Pay] button automatically populates payment, contact, and shipping information from the customer's device, both at the start of checkout (express) and on the final checkout page. In **Chrome, Firefox, or Microsoft Edge**, [!DNL Apple Pay] is available both during **express checkout** and at the **final checkout step**; on desktop, a QR code and an **iPhone** (iOS 18 or later) allow the shopper to finish payment in the Apple Pay sheet. Ensure **[!UICONTROL Show Apple Pay on product detail page]** or other placements are enabled where you want express checkout.
 
 >[!IMPORTANT]
 >
@@ -173,7 +219,7 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Apple Pay]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL Apple Pay]_ section.
 1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Apple Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -191,7 +237,7 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show Apple Pay on checkout page] | website | Enable or disable [!DNL Apple Pay] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Apple Pay at start of checkout] | store view | Enable or disable [!DNL Apple Pay] at the start of the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
@@ -209,7 +255,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Google Pay]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL Google Pay]_ section.
 1. (Optional) Change the name of the payment method shown during checkout by entering the new name in the **[!UICONTROL Title]** field.
 1. [Set the payment action](production.md#set-payment-services-as-payment-method) by selecting **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. Specify where the [!DNL Google Pay] option is enabled in Adobe Commerce by selecting `Yes` in the following options as needed:
@@ -218,10 +264,11 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
     * **[!UICONTROL Show Google Pay on product detail page]**
     * **[!UICONTROL Show Google Pay in mini cart preview]**
     * **[!UICONTROL Show Google Pay on cart page]**
+1. To choose whether shoppers see a separate **Google Pay review** page after the Google Pay pay sheet, set **[!UICONTROL Skip Review]** to `Yes` or `No`. When set to `Yes`, supported express flows show **shipping methods in the Google Pay sheet** (client-side shipping callbacks) and may complete without the extra review step. When set to `No`, shoppers can confirm shipping and totals on the review page before paying.
 1. To enable **[!UICONTROL 3D Secure authentication]** (`Off` by default) choose `Always` or `When required`.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. Configure the appearance of the _[!UICONTROL Google Pay]_ button by selecting the **[!UICONTROL Button Color]**, **[!UICONTROL Button Type]**, and **[!UICONTROL Button Style]** as needed.
-1. To set the height, uses the default value for height defined in **[!UICONTROL Button Style]**.
+1. To set the height, use the default value for height defined in **[!UICONTROL Button Style]**.
 1. To save your changes, click **[!UICONTROL Save Config]** .
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -230,13 +277,14 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Title] | store view | Specifies the text label that displays for this payment option in the Payment Method view during checkout. Options: `[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods) for the specified payment method. Options: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show Google Pay on checkout page] | website | Enable or disable [!DNL Google Pay] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay at start of checkout] | store view | Enable or disable [!DNL Google Pay] at the start of the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | store view | The sort order for the specified payment method on the checkout page. `Numeric Only` value |
 | [!UICONTROL Show Google Pay on product detail page] | store view | Enable or disable [!DNL Google Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | store view | Enable or disable [!DNL Google Pay] in the mini cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | store view | Enable or disable [!DNL Google Pay] on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | store view | When set to `[!UICONTROL Yes]`, eligible [!DNL Google Pay] express flows can omit the separate review page after the pay sheet; shipping methods appear in the Google Pay sheet. When set to `[!UICONTROL No]`, shoppers proceed to the review page to confirm shipping and totals. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Store View | Define color of the [!DNL Google Pay] button. Options: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -254,12 +302,15 @@ Configure [!DNL PayPal payment buttons]
 
 You can enable and configure the PayPal payment buttons payment options within the Admin:
 
+In [!DNL Payment Services] 2.17.0 or later, **[!UICONTROL Skip Review]** controls whether PayPal Express checkout includes a merchant review page after the shopper leaves the PayPal payment modal. This review page is separate from the PayPal payment modal. See [PayPal Express review page](payments-options.md#paypal-express-review-page) for more information.
+
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section.
 1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL PayPal payment buttons]_ section.
 1. To change the name of the payment method as shown during checkout, edit the _[!UICONTROL Title]_ field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
+1. For PayPal Express checkout, set **[!UICONTROL Skip Review]** to `No` to show the merchant review page before the shopper places the order, or `Yes` to skip it.
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable/disable the [Pay Later messaging](payments-options.md#pay-later-button), select `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
 
@@ -284,6 +335,7 @@ You can enable and configure the PayPal payment buttons payment options within t
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | store view | In [!DNL Payment Services] 2.17.0 or later, control the merchant review page for PayPal Express checkout. Set to `[!UICONTROL No]` to show the page after the PayPal payment modal, or `[!UICONTROL Yes]` to skip it. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Default: `[!UICONTROL Yes]`. |
 | [!UICONTROL Display Pay Later Message] | website | Enable or disable the PayPal Pay Later messaging in the shopping cart, product page, mini cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | store view | Modify the PayPal Pay Later Messaging styles. Options: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal payment buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -325,7 +377,7 @@ Local Payment Methods (LPMs) provide support for region-specific and local payme
 
 >[!NOTE]
 >
->Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer’s billing‑address country and the website’s base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
+>Each Local Payment Method (LPM) has specific country and currency requirements. A payment method appears only when the customer's billing‑address country and the website's base currency match those requirements. For example, Bancontact appears only for customers with a Belgian billing address when the base currency is EUR.
 
 ## Line Items
 
@@ -381,7 +433,7 @@ To ensure that your store is showing the correct configuration, periodically [fl
 
 To ensure that Admin users can create and manage orders in the Commerce Admin, enable [!DNL Payment Services]-specific resources to user roles.
 
-See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
+See [User roles](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) to learn how to manage roles.
 
 When assigning resources to the role, you must select:
 
@@ -414,9 +466,8 @@ See [3DS in Security](security.md#3ds) for more information.
 
 In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)) or want to use Adobe Commerce for some parts of your business but not _all_, you can set up your merchant account to use multiple PayPal accounts.
 
-See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
+See [Site, Store, and View Scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) for more information about the hierarchy of websites, stores, and store views.
+
+To connect a **different PayPal account to an individual website** from the Admin after **global** Commerce Services and PayPal onboarding is complete, use **[!UICONTROL Connect different account]** at **[!UICONTROL Website]** scope. See [Connect a different PayPal account for a website](#connect-a-different-paypal-account-for-a-website).
 
 See [Command-line configuration](configure-cli.md#configure-scope-via-cli) for more information on configuring scopes for multiple PayPal accounts via CLI.
-
-Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales 
-representative for assistance with using multiple PayPal accounts for your websites.

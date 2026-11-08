@@ -4,6 +4,29 @@ description: Learn how to use Adobe Journey Optimizer to send an abandoned cart 
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
+TQID: 'https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 
@@ -18,7 +41,7 @@ Build an abandoned cart, browse email, or notification using data from storefron
 |**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|
 |**Events Captured by Adobe Commerce**|[pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout)|[orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data)|
 
-### What have other customers achieved?
+### What have other customers achieved? {#what-have-other-customers-achieved}
 
 Adobe [!DNL Commerce] customers have achieved significant business impacts by implementing personalized abandonment campaigns using Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer], and Adobe [!DNL Real-Time CDP].
 
@@ -42,7 +65,7 @@ This particular use-case focuses on creating an abandoned cart email using data 
 
 ### What is Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
 
 In this topic, you learn to build an abandoned cart email by listening to a `checkout` event generated from your [!DNL Commerce] instance and responding to that event in Journey Optimizer.
 
@@ -78,7 +101,7 @@ Create a user in your sandbox environment and confirm that that user account inf
 
 In your [!DNL Commerce] sandbox environment, trigger events on your storefront by viewing product pages, adding items to a cart, and completing various other activities that a shopper would perform. Then, confirm that these events are flowing to Journey Optimizer.
 
-1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Select **[!UICONTROL Profiles]**.
 1. Set **[!UICONTROL Identity namespace]** to `Email`.
 1. Set the **[!UICONTROL Identity value]** to your email address.
@@ -107,7 +130,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
 
 ### Create a listener event
 
-1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Click **[!UICONTROL Configurations]** under the **[!UICONTROL Administration]** section of the left pane. 
 
@@ -180,7 +203,7 @@ Create an abandoned cart email that is sent when an abandoned cart is detected.
 
 1. In the journey you created above, double-click the **[!UICONTROL Email]** icon on the canvas.
 
-1. Follow the [steps](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) in the Journey Optimizer guide to create the abandoned cart email.
+1. Follow the [steps](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) in the Journey Optimizer guide to create the abandoned cart email.
 
 You now have a journey in Journey Optimizer that listens for the `commerce.checkouts` event from your [!DNL Commerce] store and an abandoned cart email that is sent after a period of time has passed. The next section shows you how to test the journey.
 

@@ -1,8 +1,10 @@
 ---
 user-guide-title: "[!DNL Product Recommendations] Guide"
+breadcrumb-title: "[!DNL Product Recommendations]"
 user-guide-description: This guide provides detailed instructions for using [!DNL Product Recommendations] from Adobe Commerce.
 role: Admin
 feature: Services, Recommendations
+nudge: true
 ---
 # [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
@@ -30,4 +32,4 @@ feature: Services, Recommendations
    - [Collect Data](events.md)
    - [Customize](customize.md)
    - [Handle Cookie Restrictions](setting-cookie.md)
-- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

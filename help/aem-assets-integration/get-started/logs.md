@@ -4,6 +4,19 @@ description: Learn where to find and manage logs for the AEM Assets Integration 
 feature: CMS, Media, Integration
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 exl-id: 9c6c8694-6ded-4cc8-a3ab-d1dfb50e3583
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # View and manage logs
 
@@ -12,7 +25,9 @@ The AEM Assets integration provides the following log files in your Commerce ins
 - `/var/log/aem-assets-integration.log`
 - `/var/log/aem-assets-integration-errors.log`
 
+For an asset-centric view of synchronized assets in the Admin, including search, filters, and sync error summaries, see [View AEM Assets sync status](sync-status.md).
+
 Ask your System Administrator to check the log file rotation schedule for these logs to prevent them from growing too large. In some environments, logs rotate automatically; in others, you must configure log rotation manually.  For details, see the following topics:
 
-- For Adobe Commerce on-premises installations, ask your System Administrator to set up [log rotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings).
-- For Adobe Commerce on cloud infrastructure projects, see [View and manage logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+- For Adobe Commerce on-premises installations, ask your System Administrator to set up [log rotation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration#server-settings).
+- For Adobe Commerce on cloud infrastructure projects, see [View and manage logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations).

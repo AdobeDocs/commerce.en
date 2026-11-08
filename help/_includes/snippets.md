@@ -1,17 +1,41 @@
 # Commerce snippets
 
+## Install note for Data Feed Sync Status extension {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>If the Data Feed Sync Status page is not available in the Commerce Admin for Commerce on Cloud or on premises deployments, follow the [extension installation instructions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} to enable it.
+
+
+## Adobe Commerce Optimizer integration environment alignment {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Always connect sandbox Optimizer instances to non-production environments and production instances to production environments. Mismatched environments cause inconsistent catalog data, search results, and recommendations.
+
+## Adobe Commerce Optimizer data sync processing note {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>Data sync processing starts in the background as soon as you complete configuration. Depending on the size of your catalog, the data sync process can take from a few minutes to several hours.
 
 ## Merchandising Services for Optimizer {#aco-merchandising-services}
 
 >[!NOTE]
 >
->For Commerce solutions that use Adobe Commerce Optimizer or the Adobe Commerce Optimizer connector, use the [Merchandising Services GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) instead of the Catalog Service GraphQL API.
+>For Commerce solutions that use Adobe Commerce Optimizer or the Adobe Commerce Optimizer Connector, use the [Merchandising Services GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) instead of the Catalog Service GraphQL API.
 
 ## Data Synchronization check for Optimizer {#aco-data-sync-verification}
 
 >[!NOTE]
 >
->If you have installed the [Adobe Commerce Optimizer Connector ](../aco-connector/overview.md) to export catalog data to Adobe Commerce Optimizer, use the [Data Feed Sync Status page](../optimizer/setup/data-sync.md) in Commerce Optimizer Studio to check data successfully synchronized to Adobe Commerce Optimizer instead of the Data Management Dashboard.
+>For deployments that use the [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) to export catalog data to [!DNL Adobe Commerce Optimizer], verify catalog data synchronization using the [Data Feed Sync Status page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in the Commerce Admin and the [Data Sync page](../optimizer/setup/data-sync.md) in [!DNL Adobe Commerce Optimizer Studio], not the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
+
+## Adobe Commerce Optimizer drop-in note for API updates {#aco-api-updates-and-dropins}
+
+>[!NOTE]
+>
+>[Drop-in components](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/) for [!DNL Commerce Storefront on Edge Delivery Services] pick up the latest GraphQL changes automatically (new fields, limits, and query behavior).
 
 ## ACCS early access {#accs-early-access}
 
@@ -27,10 +51,10 @@
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -67,7 +91,7 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 | Services | Extensibility | Storefront |
 | --- | --- | --- |
-| <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+| <ul><li>[Catalog Service](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Payment Services](../payment-services/release-notes.md)</li><li>[Product Recommendations](../product-recommendations/release-notes.md)</li><li>[SaaS Data Export](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Events](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Release information](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)</li><li>[Changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/)</li></ul> |
 
 ## Adobe Commerce Optimizer services release notes {#aco-release}
 
@@ -77,4 +101,20 @@ For information about identity configuration options including Adobe ID, Enterpr
 
 | Services | Storefront |
 | --- | --- |
-| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets integration](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer connector](../aco-connector/release-notes.md) | [Storefront release information](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) |
+
+## Bulk data migration tool Early Access {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>The bulk data migration tool is currently in Early Access. Access is provided exclusively through the Commerce Deployed Engineering (CDE) engagement process. For an overview of the tool and its eligibility requirements, see [Bulk data migration tool](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Install extension links {#install-extension-links}
+
+>[!NOTE]
+>
+>For detailed extension installation instructions, see the following guides:
+>
+>[Install extension on [!DNL Adobe Commerce] on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Install extension on [!DNL Adobe Commerce] on-premises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)

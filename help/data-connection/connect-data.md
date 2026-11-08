@@ -3,6 +3,47 @@ title: Connect Commerce Data to Adobe Experience Platform
 description: Learn how to connect your Commerce data to the Adobe Experience Platform.
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
+TQID: 'https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Connect Commerce data to Adobe Experience Platform
 
@@ -27,9 +68,36 @@ After you configure the Commerce Services connector, you then configure the [!DN
 
 In this section, you learn how to configure the [!DNL Data Connection] extension.
 
+### Configuration scope {#configuration-scope}
+
+[!DNL Data Connection] settings use a mix of global and website-scoped values. Global settings apply to your entire Adobe Commerce instance. Website-scoped settings let multi-brand and multi-website merchants route data to different Adobe Experience Platform sandboxes and datasets per website.
+
+Before you configure storefront, back office, or profile data collection, set the **[!UICONTROL Scope]** drop-down on the **[!UICONTROL Settings]** tab to the website you want to configure. Repeat configuration for each website that needs different Experience Platform routing.
+
+| Setting or field | Scope | Notes |
+| --- | --- | --- |
+| Organization ID | Global | One organization ID per Adobe Commerce instance. Already configured in the [Commerce Services connector](../landing/saas.md#organizationid). |
+| Service account credentials | Global | Enter service account details once. The same credentials authenticate Experience Platform API calls for all websites unless your deployment requires otherwise. |
+| Sandbox name | Website | Select the Experience Platform sandbox for the website in scope. Primary website-scoped setting for [!DNL Data Connection] back office events. |
+| **[!UICONTROL Test connection]** | Website | Validates the service account credentials and sandbox for the website currently selected in **Scope**. |
+| Datastream ID | Website | Routes behavioral and back office event data for the selected website. |
+| Dataset ID | Website | Identifies the dataset that stores Commerce data for the selected website. |
+| Storefront events, Back office events, Customer profiles | Website | Data collection options apply to the website selected in **Scope**. |
+
+#### Multi-website example {#multi-website-example}
+
+A merchant operates two websites from one Adobe Commerce instance:
+
+- **Website A (Brand A)** sends storefront and back office data to a **production** Experience Platform sandbox.
+- **Website B (Brand B)** sends data to a **development** Experience Platform sandbox for testing.
+
+The merchant enters service account credentials once on the **[!UICONTROL Service Account/Credential details]** page. On the **[!UICONTROL Settings]** tab, the merchant sets **[!UICONTROL Scope]** to **Website A**, selects the production sandbox name, and saves. The merchant then sets **[!UICONTROL Scope]** to **Website B**, selects the development sandbox name, and saves. **[!UICONTROL Test connection]** is run for each website to confirm the correct sandbox and credentials.
+
 ### Add service account and credential details
 
-If you plan to collect and send [historical order data](#send-historical-order-data) or [customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you must complete these steps.
+If you plan to collect and send [historical order data](#send-historical-order-data) or [customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation) extension, you must complete these steps.
+
+Service account credentials are configured at **Default Config** scope and apply globally. See [Configuration scope](#configuration-scope) for website-scoped settings such as sandbox name.
 
 If you are only collecting and sending storefront or back office data, you can skip to the [general](#general) section.
 
@@ -37,12 +105,12 @@ If you are only collecting and sending storefront or back office data, you can s
 
 Create a project in the Adobe Developer Console that authenticates Commerce so it can make Experience Platform API calls.
 
-To create the project, follow the steps outlined in the [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
+To create the project, follow the steps outlined in the [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) tutorial.
 
 As you go through the tutorial, ensure that your project has the following:
 
-- Access to the following [product profiles](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Default production all access** and **AEP Default all access**.
-- The correct [roles and permissions are configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Access to the following [product profiles](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#select-product-profiles): **Default production all access** and **AEP Default all access**.
+- The correct [roles and permissions are configured](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role).
 - If you decided to use JSON Web Tokens (JWT) as your server-to-server authentication method, you must also upload a private key.
 
 The result of this step creates a configuration file that you use in the next step.
@@ -59,9 +127,9 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** fields, such as `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"`, and so on.
 
-1. Click **Save Config**.
+1. Click **[!UICONTROL Save Config]**.
 
-1. Click the **[!UICONTROL Test connection]** button to make sure the service account and credential information you entered is correct.
+   After you save, complete website-scoped configuration—including **[!UICONTROL Sandbox name]** and **[!UICONTROL Test connection]**—on the **[!UICONTROL Settings]** tab. See [General](#general).
 
 ### General
 
@@ -69,11 +137,15 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
     ![[!DNL Data Connection] Settings](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. On the **Settings** tab under **General**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
+1. On the **[!UICONTROL Settings]** tab under **[!UICONTROL General]**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. In the **Scope** drop-down, set the context to **Website**.
+1. In the **[!UICONTROL Scope]** drop-down, set the context to **Website**. See [Configuration scope](#configuration-scope) for which settings apply globally and per website.
 
-1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the [!DNL Data Connection] extension deploys one for you.
+1. Enter the **[!UICONTROL Sandbox name]** for the website in scope.
+
+1. Click **[!UICONTROL Test connection]** to validate service account credentials and the sandbox for the website currently selected in **[!UICONTROL Scope]**. Repeat for each website that uses a different sandbox.
+
+1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the [!DNL Data Connection] extension deploys one for you.
 
     >[!NOTE]
     >
@@ -91,7 +163,7 @@ In this section, you specify the type of data you want to collect and send to th
 
 To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
-See the events topic to learn more about [storefront](events.md#storefront-events), [back office](events-backoffice.md), and [profile](events-backoffice.md#customer-profile-events) events.
+See the events topic to learn more about [storefront](events.md#storefront-events), [back office](events-backoffice.md), and [profile records](events-profilerecord.md) data. For time series [profile events](events-backoffice.md#customer-profile-events), see the back office events reference.
 
 >[!NOTE]
 >
@@ -103,9 +175,9 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
     >[!NOTE]
     >
-    >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. Learn [more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
+    >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. Learn [more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset) about setting a shopper's privacy preference in the Experience Platform.
 
-1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
+1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
 
 1. Enter the **Dataset ID** that you want to contain your Commerce data. To find the dataset ID:
 
@@ -113,7 +185,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
     1. Open the dataset associated with your datastream.
     1. In the right-hand pane, view the details about the dataset. Copy the dataset ID.
 
-1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
+1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
 
     1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > _[!UICONTROL Tools]_ > **[!UICONTROL Index Management]**.
 
@@ -121,7 +193,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
     1. Set **[!UICONTROL Actions]** to `Update by Schedule`.
 
-    1. If you are enabling back office data for the first time, run the following commands to reindex and trigger a resync. Subsequent resyncs occur automatically as long as the [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job is set up correctly.
+    1. If you are enabling back office data for the first time, run the following commands to reindex and trigger a resync. Subsequent resyncs occur automatically as long as the [cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) job is set up correctly.
 
         ```bash
         bin/magento index:reindex sales_order_data_exporter_v2
@@ -135,22 +207,24 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 | Field | Description |
 |--- |--- |
-| Scope | Specific website where you want the configuration settings to apply. |
-| Organization ID (global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
+| Scope | Website where website-scoped settings apply. Switch scope to configure sandbox name, datastream ID, dataset ID, and data collection options for each website. |
+| Organization ID (global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. Configured globally; not set per website. |
+| Sandbox name (website) | Name of the Experience Platform sandbox where Commerce sends data for the selected website. Configure separately for each website when multi-brand or multi-website deployments route data to different sandboxes. |
 |Is the AEP Web SDK already deployed to your site|Select this checkbox if you have deployed your own AEP Web SDK to your site|
 |AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the [!DNL Data Connection] extension. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank, and the [!DNL Data Connection] extension deploys one for you.|
 |Storefront events|Is checked by default as long as the Organization ID and datastream ID are valid. Storefront events collect anonymized behavioral data from your shoppers as they browse your site.|
 |Back office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
 |Datastream ID (website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The [!DNL Data Connection] extension uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
 |Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
+| **[!UICONTROL Test connection]** | Validates service account credentials and the sandbox name for the website currently selected in **Scope**. Run the test after you configure credentials and after you change sandbox name or scope for a website. |
 
-After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+After you configure the extension, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 ### Send customer profile data
 
 There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 
-A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When your schema and dataset are [properly configured](profile-data.md), a profile record is sent to the Experience Platform and forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When your schema and dataset are [properly configured](profile-data.md), a profile record is sent to the Experience Platform and forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 Time series profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When profile event data is sent to the Experience Platform, it resides in a dataset where it can be used by other DX products.
 
@@ -197,7 +271,7 @@ The order sync service uses the [Message Queue Framework](https://developer.adob
 
 1. Make sure you have [provided](#add-service-account-and-credential-details) service account and credential details.
 
-1. [Enable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
+1. [Enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) RabbitMQ.
 
     >[!NOTE]
     >
@@ -214,7 +288,7 @@ The order sync service uses the [Message Queue Framework](https://developer.adob
 
     >[!NOTE]
     >
-    >See the [deploy variables documentation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) to learn about all the available configuration options.
+    >See the [deploy variables documentation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) to learn about all the available configuration options.
 
 With the order sync service enabled, you can then specify the historical order date range in the **[!UICONTROL [!DNL Data Connection]]** page.
 
@@ -274,9 +348,9 @@ Learn more about how to [set up custom attributes](custom-attributes.md).
 |Experience Platform | Displays any custom attributes specified in your [!DNL Commerce] schema in Experience Platform.|
 |Refresh|Retrieves any custom attribute names from the [!DNL Commerce] schema in Experience Platform. |
 
-## Confirm that event data is collected
+## Confirm that event data is collected {#confirm-that-event-data-is-collected}
 
-To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created](overview.md#prerequisites).
+To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created during configuration](overview.md#enable-extension).
 
 1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
     
@@ -298,11 +372,11 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 
 In this example, you see event data from the `commerce.productListAdds`, `commerce.productViews`, `web.webpagedetails.pageViews`, and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
-If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting).
 
 ### Verify profile data appears in the Experience Platform
 
-If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) for troubleshooting suggestions.
+For troubleshooting suggestions, see the tip in [Send customer profile data](#send-customer-profile-data).
 
 ## Next steps
 

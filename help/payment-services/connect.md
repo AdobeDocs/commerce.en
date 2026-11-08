@@ -4,19 +4,38 @@ description: Connect your Commerce instance using an API key and a private key, 
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Connect Your Instance
 
-You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **You set up this connection only once.**
+You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](../landing/saas.md). **You set up this connection only once.**
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
-> See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) video for additional information.
+> See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) video for additional information.
 
-* If you have *already connected your instance*, by obtaining and using your API credentials and configuring Commerce Services, you can proceed to [setting up your testing sandbox](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
+* If you have *already connected your instance*, by obtaining and using your API credentials and configuring Commerce Services, you can proceed to [setting up your testing sandbox](sandbox.md).
 * If you still *need to connect your instance*, see the information in this topic about [obtaining API credentials](#obtain-api-credentials) and [configuring Commerce Services](#configure-commerce-services).
 * If you are *unsure whether your instance is connected*, navigate to **System** > Services > **Commerce Services Connector** and view the public and private API key values in the [!UICONTROL Sandbox Keys] and [!UICONTROL Production Keys] sections, and the *Project* and *Data Space* fields in the [!UICONTROL SaaS Identifier] section. If those values are present, then your instance is connected.
 
@@ -36,11 +55,11 @@ A public API key, once created, is always available in your My Account Dashboard
 
 A given API key pair is valid for all Commerce Services in an environment, so if you already have Commerce Services configured for your instance, your API key pair is already present in the Commerce Services Connector.
 
-If your API key is lost, a new API key pair must be [generated](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) and [applied](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) to the Commerce Services Connector configuration in the Admin. If the wrong keys are configured or none exist in the config, an account verification error dialog appears in Payment Services notifying you that the account was not verified.
+If your API key is lost, a new API key pair must be [generated](../landing/saas.md#genapikey) and [applied](../landing/saas.md#createsaasenv) to the Commerce Services Connector configuration in the Admin. If the wrong keys are configured or none exist in the config, an account verification error dialog appears in Payment Services notifying you that the account was not verified.
 
-See a [list of available Commerce Services that use the API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
+See a [list of available Commerce Services that use the API](../landing/saas.md#availableservices).
 
-To learn how to generate an API key for either sandbox or production environments, see [Credentials](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
+To learn how to generate an API key for either sandbox or production environments, see [Credentials](../landing/saas.md#apikey).
 
 >[!IMPORTANT]
 >
@@ -48,7 +67,7 @@ To learn how to generate an API key for either sandbox or production environment
 
 ## Configure Commerce Services
 
-The same API key can be used across instances, but each instance must have its own [SaaS Data Space](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+The same API key can be used across instances, but each instance must have its own [SaaS Data Space](../landing/saas.md#saasenv).
 
 >[!NOTE]
 >
@@ -63,15 +82,15 @@ Now that you have obtained your credentials, you can configure your SaaS project
 
    You are directed to the configuration area in the Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Commerce Services Connector]**, to configure your Commerce Services Connector.
 
-1. To configure your Commerce Services, follow the steps described in [SaaS configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+1. To configure your Commerce Services, follow the steps described in [SaaS configuration](../landing/saas.md#saasenv).
 
    >[!INFO]
    >
-   > See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video for additional information.
+   > See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) video for additional information.
 
 ## Endpoint
 
-[!DNL Payment Services] uses the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) to connect to Commerce Services and deploy as SaaS. This [!DNL Commerce Services Connector] communicates through the endpoint at:
+[!DNL Payment Services] uses the [Commerce Services Connector](../landing/saas.md) to connect to Commerce Services and deploy as SaaS. This [!DNL Commerce Services Connector] communicates through the endpoint at:
 
 * `commerce-beta.adobe.io` for sandbox environments.
 * `commerce.adobe.io for` for live environments.

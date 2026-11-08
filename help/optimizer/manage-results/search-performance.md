@@ -3,6 +3,26 @@ title: Search Performance
 description: The Search performance page provides insight into the search terms that shoppers use.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+TQID: https://experienceleague.adobe.com/dbCSRGA-jOSM37O-6THv0ArNZBD0Jsy4ml-1hSiY7YQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Search Performance
 
@@ -19,6 +39,10 @@ The *Search performance* page provides insight into the search terms that shoppe
 >[!IMPORTANT]
 >
 >If you do not see any search performance metrics, make sure search event data is being [collected](../setup/events/overview.md).
+
+>[!NOTE]
+>
+>To understand how product discovery ranks **exact and near matches**, same-field matches, and broader matches (and how that interacts with keyword weights and merchandising rules), see [Search matching and ranking](search-relevance-matching.md).
 
 ## Choose the **Catalog view**
 
@@ -46,6 +70,7 @@ The following section provides strategies you can use to enhance your site searc
 There are several key factors that determine the relevance and effectiveness of search results:
 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to less relevant search outcomes. To directly impact the success of your merchandising strategy:
+    - Configure [semantic search](../setup/semantic-search.md) for natural-language and intent-based matching.
     - Set up the correct [attributes as searchable](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) with their corresponding weight.
     - Make sure that data within those attributes is relevant.
 - A well-designed search experience builds trust with customers and instills confidence that they will find what they need.
@@ -74,6 +99,7 @@ To optimize search results with [!DNL Adobe Commerce Optimizer], monitor relevan
 
     To reduce the zero results rate, you can:
 
+    - Confirm [semantic search](../setup/semantic-search.md) is enabled on the **[Advanced search](../settings.md#advanced-search)** tab in Settings. Semantic search is enabled by default for [!DNL Adobe Commerce Optimizer] customers; no storefront or developer changes are required. Results update after indexing completes.
     - Offer alternative or related search terms, such as [synonyms](../merchandising/synonyms/overview.md) when no exact matches are found.
     - Regularly review zero result queries to identify patterns and make necessary adjustments to your product catalog and search settings.
 

@@ -1,8 +1,33 @@
 ---
 title: Install and Configure
 description: Learn how to install, update, and uninstall [!DNL Product Recommendations].
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
+TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+last-update: 2026-09-03
 ---
 # Install and Configure
 
@@ -41,27 +66,35 @@ See [Using [!DNL Product Recommendations] with Page Builder Content](page-builde
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 
-The _Visual similarity_ recommendation type allows you to deploy a recommendation unit to your product detail page that displays products that are [visually similar](type.md#visualsim) to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience. Install the _Visual similarity_ recommendation type by running the following command:
+The _Visual similarity_ recommendation type displays products [visually similar](type.md#visualsim) to the product viewed on a product detail page. It is most useful when product images and appearance are important to the shopping experience. To install it, run the following command:
 
 ```bash
 composer require magento/module-visual-product-recommendations
+```
+
+### Add Fastly Image Optimization support {#fastlysupport}
+
+Fastly Image Optimization support for [!DNL Product Recommendations] is an optional module and is installed separately. This module applies [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) parameters to [!DNL Product Recommendations] image URLs. To install it, run the following command:
+
+```bash
+composer require magento/module-fastly-recommendations
 ```
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
 1. After you install the `magento/product-recommendations` module, configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
 
-   Configuring this connection enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. Data synchronization is handled by the [SaaS Data Export extension](../data-export/overview.md).
+   Configuring this connection enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. The [SaaS Data Export extension](../data-export/overview.md) handles data synchronization.
 
 1. To ensure that catalog export can run correctly, confirm that the [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) jobs and the [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) are running and the `Product Feed` indexer is set to `Update by Schedule`.
 
-After you successfully link the Commerce application to Commerce Services and specify the [SaaS Data Space](../landing/saas.md#saas-configuration), the catalog sync begins. You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) that behavioral data is being sent to your storefront.
+After you successfully link the Commerce application to Commerce Services and specify the [SaaS Data Space](../landing/saas.md#saas-configuration), the catalog sync begins. You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) that behavioral data is being sent to your storefront.
 
 ## Monitor and troubleshoot data synchronization
 
-From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
- You can then [verify](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) that behavioral data is being sent to your storefront.
+{{install-data-sync-feed-status}}
 
 ## Update your [!DNL Product Recommendations] installation {#update}
 
@@ -81,7 +114,7 @@ To update to a major version, such as from 5.0 to 6.0, you must edit the root `c
 }
 ```
 
-Let's bump the major version from `5.0` to `6.0`:
+Update the major version from `5.0` to `6.0`:
 
 ```json
 "require": {

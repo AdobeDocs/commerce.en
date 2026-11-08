@@ -2,6 +2,19 @@
 title: Manage Facets
 description: Learn how to manage existing [!DNL Live Search] facets.
 exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
+TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Manage Facets
 
@@ -30,7 +43,7 @@ Refer to [Settings](settings.md) to configure price faceting intervals and group
 
 1. To edit the facet label, do one of the following:
 
-   * For a [!DNL Commerce] storefront, edit the [attribute label](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * For a [!DNL Commerce] storefront, edit the [attribute label](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes).
    * For a headless implementation, click the value in the first column and edit the text as needed.
 
     ![Edit label](assets/facet-edit-label.png)

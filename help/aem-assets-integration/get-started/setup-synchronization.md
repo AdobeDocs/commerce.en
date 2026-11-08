@@ -3,6 +3,30 @@ title: Configure the integration
 description: Learn how to connect your Adobe Commerce project and Experience Manager Assets projects to enable asset synchronization between these two systems.
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
+TQID: 'https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Configure the integration
 
@@ -24,7 +48,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 * [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} [Install Adobe Commerce packages](configure-commerce.md) to add the extension and generate the required credentials and connections to use the extension.
 
-* [User permissions and IMS](permissions.md)—Required for the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping).
+* [User permissions and IMS](permissions.md)—Configure the required permissions for the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping).
 
 ## Configure the connection
 
@@ -44,11 +68,13 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 1. Select the AEM Assets environment **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from the dropdown menus.
 
-   The dropdowns auto-populate based on the user's IMS session. To use this feature, ensure you have the right [User permissions and IMS](permissions.md#user-permissions-and-ims).
+   The selectors appear when your Commerce Admin user has the required [user permissions](permissions.md#user-permissions-and-ims) for the experience: **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer**, and **Adobe Commerce on Cloud infrastructure** integrations can populate these fields automatically from your IMS-linked session rather than relying on pasted IDs.
 
-   If the dropdowns are not available, you can manually enter the IDs from the AEM Cloud Manager URL: `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+   If the selectors are unavailable, copy the **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** from AEM Cloud Manager, or derive them from your author URL: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (replace placeholders with your identifiers).
 
-   Edit the configuration values by removing the selection from *[!UICONTROL Use system value]*.
+   You must clear the **[!UICONTROL Use system value]** for both fields before you can paste or select new values manually.
+
+   ![AEM Assets Integration form with Program ID and Environment ID selectors](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. [!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."}  Select the [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) for authenticating requests between Commerce and the asset matching service.
 
@@ -59,7 +85,7 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 1. Select one of the asset matching rules for asset synchronization from the **[!UICONTROL Asset matching rule]**  dropdown.
 
    * Select **[!UICONTROL Match by SKU]** for [default automatic matching](../synchronize/default-match.md),
-   * Select **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md) (requires [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Select **[!UICONTROL Custom match]** for [custom automatic matching](../synchronize/custom-match.md) (requires [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).)
 
 1. Add the [AEM Assets metadata field name](configure-aem.md#define-the-metadata-profile) defined for Commerce product SKUs in the **[!UICONTROL Match by product SKU attribute name]** field, `commerce:skus` by default.
 
@@ -69,13 +95,29 @@ Before configuring the AEM Assets Integration, verify that you have completed th
 
 ### Synchronization SLA
 
-The integration guarantees the following synchronization performance levels:
+The service level agreement (SLA) for the integration guarantees the following synchronization performance levels:
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-This ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
+This level of service ensures that product pages always display the most up-to-date images, keeping storefront content accurate and visually appealing.
+
+## Synchronize localized alt text
+
+Localized alt text uses the existing asset synchronization process. You do not need a new event type or a separate synchronization configuration.
+
+1. Add one or more store-view alt-text rows in the AEM asset's **[!UICONTROL Commerce]** tab.
+
+1. Associate the asset with the Commerce product SKU.
+
+1. Approve the asset in AEM Assets.
+
+1. Wait for the asset event and synchronization process to complete.
+
+1. Verify the localized value in Commerce Admin and in the storefront response.
+
+For the field names, validation rules, and Commerce result, see [Commerce metadata in AEM Assets](../metadata.md).
 
 ### Configure the Visualization Owner
 
@@ -115,7 +157,7 @@ If the AEM Assets as a Cloud Service project has been configured with a [Custom 
 
 ## Next step
 
-* **Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront documentation*.
+* **Configure your Commerce Storefront**---To use AEM Assets with the Commerce Storefront powered by Edge Delivery Services, complete the storefront configuration described in the [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront documentation*.
 
 * Set up [matching rules](../synchronize/default-match.md) between Adobe Commerce and the AEM Assets integration.
 

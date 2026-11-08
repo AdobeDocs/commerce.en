@@ -1,8 +1,44 @@
 ---
 title: Security overview
 description: Learn about the security features for Adobe Commerce as a Cloud Service.
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer projects only (Adobe-managed SaaS infrastructure)."
+autotag-review: '2026-06-18T16:18:52.695Z'
+TQID: 'https://experienceleague.adobe.com/AmkzZgLeOa9zJkPE8kWM6lFcFNtBAAOmJeULI-y4gOw'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 
 # Security overview
@@ -31,7 +67,7 @@ Merchants can opt to deploy an Adobe-managed CDN or purchase their own CDN solut
 
 [!DNL API Mesh]'s CDN layer terminates TLS, runs the GraphQL gateway as Workers, provides global edge caching and automatic DDoS/WAF, and exposes `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` as the public mesh endpoints; customers can add their own CDN in front, but [!DNL API Mesh]'s CDN is fixed and managed by Adobe and customers cannot configure their own WAF rules.
 
-For more information on [!DNL API Mesh]'s security features, refer to the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
+For more information on [!DNL API Mesh]'s security features, refer to the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### Backend CDN
 
@@ -60,6 +96,6 @@ The built-in CDN and WAF provides both network‑layer and HTTP‑layer DDoS pro
 
 If data is being stored in [!DNL App Builder], then a merchant can refer to the [!DNL App Builder] [storage options](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] enforces tenant isolation and access to data stored in these services is restricted to the runtime namespace in which the action is executed. There is no encryption of data in storage.
 
-When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] encrypts these secrets using AES-256 encryption ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+When using [!DNL API Mesh], secrets should be stored in the `secrets.yaml` file in your mesh configuration. [!DNL API Mesh] encrypts these secrets using AES-256 encryption (see the [API Mesh documentation](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}).
 
 Any data stored in [!DNL Adobe Commerce as a Cloud Service] is encrypted at rest using AES 256-bit encryption and all data is encrypted over HTTPS using TLS 1.2 or greater in transit.

@@ -2,10 +2,27 @@
 title: Recommendation Types
 description: Learn about the recommendations that you can deploy to various pages on your site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
+TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
 ---
 # Recommendation Types
 
-Adobe Commerce provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. They are powered by behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
+Adobe Commerce provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. Behavioral data, product attribute data, and metrics power them. For easy reference, recommendation types are grouped as follows:
 
 - [Personalized](#personalized)
 - [Cross-sells and up-sells](#crossup)
@@ -18,7 +35,7 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 - Do not deploy the same recommendations to your cart page and order confirmation page. Consider using `Most Added to Cart` for the cart page and `Bought This, Bought That` for the order confirmation page.
 
-- Keep your site tidy. Do not deploy more than three recommendation units on the same page.
+- Maintain your site configuration. Do not deploy more than three recommendation units on the same page.
 
 - If your store sells clothing, the `More like this` recommendation can suggest gender-specific products that do not match the gender of the product being viewed. Consider using this recommendation type only for non-clothing categories.
 
@@ -32,7 +49,7 @@ Product Recommendations is a data-driven system that relies on behavioral data c
 
 >[!IMPORTANT]
 >
->Most recommendation types require sufficient behavioral data (such as product views, add-to-cart actions, and purchases) to generate meaningful results. The system typically needs several days of active shopper activity to build accurate recommendations. See [readiness indicators](create.md#readiness-indicators) to learn how site traffic helps to populate the various recommendation types.
+>Most recommendation types require sufficient behavioral data (such as product views, add-to-cart actions, and purchases) to generate meaningful results. The system typically needs several days of active shopper activity to build accurate recommendations. To learn how site traffic helps to populate the various recommendation types, see [readiness indicators](create.md#readiness-indicators).
 
 ### What happens with insufficient data
 
@@ -44,34 +61,44 @@ When there is not enough event data to generate recommendations, the system can:
 
 ## Personalized {#personalized}
 
-These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed for a jacket or purchased a jacket on your site, these recommendations essentially pick up where they left off and recommend other jackets or similar products.
+These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed or purchased a jacket on your site, these recommendations continue from their previous activity and recommend other jackets or similar products.
 
 >[!NOTE]
 >
->Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history will see [backup recommendations](events.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
+>Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history see [backup recommendations](events.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
 
 |Type|Description|
 |---|---|
-|Recommended for you|Recommends products based on each shopper's current and previous onsite behavior. Displays highly relevant recommendations based on the shopper's browsing and purchase history. This recommendation type is effective on the home page where most shoppers begin their journey on a site. For first-time shoppers on your site who have not generated any signal to personalize their experience, Adobe Commerce shows products based on the Most viewed recommendation type. When the shopper starts to interact with the products on the site, however, recommended products adjust in real time to their behavior.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/><br/>**Suggested labels:**<br/> - Just for you<br/>- Recommended for you<br/>- Inspired by your shopping trends|
+|Recommended for you|Recommends products based on each shopper's current and previous onsite behavior. Displays highly relevant recommendations based on the shopper's browsing and purchase history. This recommendation type is effective on the home page where most shoppers begin their journey on a site. For first-time shoppers on your site who have not generated any signal to personalize their experience, Adobe Commerce shows products based on the Most viewed recommendation type. When the shopper starts to interact with the products on the site, however, recommended products adjust in real time to their behavior.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Page Builder<br/><br/>**Suggested labels:**<br/> - Just for you<br/>- Recommended for you<br/>- Inspired by your shopping trends|
 |Recently viewed|Displays products most recently viewed by the shopper, based on browser history. Any deleted products are removed by the recommendation unit. The recommendation unit is not displayed if there is no browser history, or not enough history when filter rules are applied. If the results contain fewer products than are configured, the recommendation unit displays only the products returned.<br/><br/>**Where used:**<br/>-  Home page<br/>-  Category<br/>-  Product detail<br/>-  Cart<br/>-  Confirmation<br/><br/>**Suggested labels:**<br/>-  Recently viewed<br/>-  Take another look|
 
 ## Cross-sells and up-sells {#crossup}
 
-These recommendation types are social-proof driven to help shoppers find what others liked or product-driven to help them find other similar products. The recommended products often complement the selected product.
+These recommendation types are social-proof driven to help shoppers find what others liked. They are also product-driven to help them find other similar products. The recommended products often complement the selected product.
+
+### Page context for recommendations
+
+Cross-sell and up-sell recommendation types use the context of the page where the recommendation unit appears. That context tells the system which product or products to use when finding related items:
+
+- **Product detail page** — Uses the SKU of the product the shopper is viewing.
+- **Cart page** — Uses the SKUs of products in the shopper's cart.
+- **Order confirmation page** — Uses the SKUs from the purchase the shopper completed.
+
+The same recommendation type can produce different results depending on where you deploy it. For example, *Viewed this, viewed that* on a product detail page uses the viewed product as context. On the cart page, it uses cart contents. On the order confirmation page, it uses the completed order.
 
 >[!NOTE]
 >
->The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types do not use a simple-occurrence metric but rather a more sophisticated collaborative-filtering algorithm that looks for *interesting similarities* that are not skewed towards popular products. The data used to inform these recommendation types is based on the shopper's aggregate behavior derived from multiple sessions on your site. The data is not based on shopper behavior derived from a single in-session occurrence on your site. These recommendation types help shoppers find those adjacent products that might not be obvious to pair with the currently viewed product.
+>The "viewed this, viewed that," "viewed this, bought that," and "bought this, bought that" recommendation types use a sophisticated collaborative-filtering algorithm to identify _interesting similarities_ without overemphasizing popular products. The algorithm uses shoppers' aggregate behavior across multiple sessions on your site rather than behavior from a single in-session interaction. These recommendation types help shoppers discover related products that may not be obvious pairings with the product they're viewing.
 >
->These recommendation types require substantial cross-product interaction data to identify meaningful correlations. Stores with limited product catalog diversity or low traffic may see fewer recommendations until sufficient behavioral patterns emerge.
+>These recommendation types require substantial cross-product interaction data to identify meaningful correlations. Stores with limited product catalog diversity or low traffic see fewer recommendations until sufficient behavioral patterns emerge.
 
 |Type|Description|
 |---|---|
 |Viewed this, viewed that|Recommends products that shoppers view disproportionately more often with the currently viewed product.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Customers who viewed this product also viewed (PDP)|
 |Viewed this, bought that|Recommends products that shoppers tend to buy disproportionately more often after viewing the current product. This type helps guide shoppers to discover products that they might not have otherwise noticed.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Customers who viewed this ultimately bought<br/>- Customers ultimately purchased<br/>- What do others buy after viewing this product?|
-|Bought this, bought that|Recommends products that shoppers buy disproportionately more often with the currently viewed product. This type displays highly relevant products shoppers can add to their cart by aggregating what other shoppers have bought with the current product.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Get everything that you need<br/>- Don't forget these<br/>- Frequently bought together|
-|More like this|Recommends products based on similar metadata such as name, description, category assignment, and attributes. By evaluating the attributes for the products being viewed, this type recommends similar products in the same category. For example, if a shopper is browsing yoga mats, other products in the equipment category are recommended. Because this recommendation type does not distinguish genders, it is not recommended for apparel, fashion, or other gender-specific verticals.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - More products like this<br/>- Similar to this|
-|[Visual similarity](#visualsim)|Recommends similar looking products to the product being viewed. This recommendation type is most useful if images and the visual aspects of products are important to the shopping experience.|
+|Bought this, bought that|Recommends products that shoppers buy disproportionately more often with the currently viewed product. This type displays highly relevant products shoppers can add to their cart by aggregating what other shoppers have bought with those products.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Get everything that you need<br/>- Don't forget these<br/>- Frequently bought together|
+|More like this|Recommends products based on similar metadata such as name, description, category assignment, and attributes. By evaluating the attributes for the product or products that provide page context, this type recommends similar products in the same category. For example, if a shopper is browsing yoga mats, other products in the equipment category are recommended. Because this recommendation type does not distinguish genders, it is not recommended for apparel, fashion, or other gender-specific verticals.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - More products like this<br/>- Similar to this|
+|[Visual similarity](#visualsim)|Recommends similar looking products based on the product that provides page context. This recommendation type is most useful if images and the visual aspects of products are important to the shopping experience.|
 
 ## Popularity {#popularity}
 
@@ -79,14 +106,14 @@ These recommendation types recommend products that are the most popular or trend
 
 >[!NOTE]
 >
->Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types may return limited results or no results until adequate behavioral data has been collected. Monitor your [data readiness indicator](workspace.md) to ensure optimal performance.
+>Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types return limited results or no results until adequate behavioral data has been collected. To ensure optimal performance, monitor your [data readiness indicator](workspace.md).
 
 |Type|Description|
 |---|---|
-|Most viewed|Recommends products that were viewed the most by counting the number of sessions where a view action occurred within the last seven days.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
-|Most purchased|Recommends products most frequently purchased by shoppers within the last seven days.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
-|Most added to cart|Recommends products most frequently added to carts by shoppers within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
-|Trending|Recommends products based on the recent momentum of a product's popularity across your site.<br/><br/>Adobe AI aggregates browsing and purchase data across your site to determine and rank which products are the most recently popular with your shoppers. Because Trending analyzes recent product momentum, it is an effective recommendation type for catalogs that have a high turnover. If your catalog is more static, it might not be as useful unless the shopping patterns of your audience are highly variable.<br/><br/>When used on the home page, Trending recommends products that are recently popular across the entire site. Trending does not display products that are consistently popular, but rather those that have recently become popular. For example, if you have an email marketing campaign promoting certain products, the popularity increase generated by the email increases the likelihood that the promoted products classify as trending.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Trending<br/>- Trending now<br/>- Recently trending<br/>- Hot products<br/>- Trending related products (PDP)|
+|Most viewed|Recommends products that were viewed the most by counting the number of sessions where a view action occurred within the last seven days.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/>- Page Builder<br/><br/>**Suggested labels:**<br/>- Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
+|Most purchased|Recommends products most frequently purchased by shoppers within the last seven days.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/>- Page Builder<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
+|Most added to cart|Recommends products most frequently added to carts by shoppers within the last seven days. This recommendation type can be used on all pages.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/>- Page Builder<br/><br/>**Suggested labels:**<br/> - Most popular<br/>- Trending<br/>- Popular right now<br/>- Recently popular<br/>- Popular products inspired by this product (PDP)<br/>- Top sellers|
+|Trending|Recommends products based on the recent momentum of a product's popularity across your site within the last seven days.<br/><br/>Adobe AI aggregates browsing and purchase data across your site to determine and rank which products are the most recently popular with your shoppers. Because Trending analyzes recent product momentum, it is an effective recommendation type for catalogs that have a high turnover. If your catalog is more static, it might not be as useful unless the shopping patterns of your audience are highly variable.<br/><br/>When used on the home page, Trending recommends products that are recently popular across the entire site. Trending does not display products that are consistently popular, but rather those that have recently become popular. For example, if you have an email marketing campaign promoting certain products, the popularity increase generated by the email increases the likelihood that the promoted products classify as trending.<br/><br/>**Where used:**<br/>- Home page<br/>- Category<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/>- Page Builder<br/><br/>**Suggested labels:**<br/>- Trending<br/>- Trending now<br/>- Recently trending<br/>- Hot products<br/>- Trending related products (PDP)|
 
 ## High performing {#highperf}
 
@@ -94,7 +121,7 @@ These recommendation types recommend top performing products based on success cr
 
 >[!NOTE]
 >
->High-performing recommendation types rely on conversion data (purchases and add-to-cart actions). New stores or stores with low conversion volumes may need to collect data over 7-14 days before these recommendations become effective.
+>High-performing recommendation types rely on conversion data (purchases and add-to-cart actions). New stores or stores with low conversion volumes need to collect data over 7-14 days before these recommendations become effective.
 
 |Type|Description|
 |---|---|
@@ -104,6 +131,10 @@ These recommendation types recommend top performing products based on success cr
 ## Visual similarity {#visualsim}
 
 The _Visual similarity_ recommendation type recommends similar looking products to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience.
+
+>[!NOTE]
+>
+>Because this recommendation type is not applicable to most catalogs, the system does not enable it by default. Explicitly [enable this recommendation type](#enable-visual-similarity-recommendation-type).
 
 ### How it works
 
@@ -118,15 +149,11 @@ The _Visual similarity_ recommendation type offers recommendations for other pro
 
 Adobe AI uses AI to process and analyze the imagery in your catalog and build attributes used to determine visual similarities.
 
->[!NOTE]
->
-> If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
+#### Special considerations
 
->[!NOTE]
->
-> Currently, product images must be 10 MB or less in size.
-
-Because this recommendation type is not applicable to most catalogs, it is not enabled by default. You must explicitly enable this recommendation type.
+- If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
+- Currently, product images must be 10 MB or less in size.
+- The optional [Fastly Image Optimization](install-configure.md#fastlysupport) module can apply Fastly Image Optimization parameters to [!DNL Product Recommendations] image URLs. See [Add Fastly Image Optimization support](install-configure.md#fastlysupport) for details.
 
 ### Enable Visual similarity recommendation type
 
