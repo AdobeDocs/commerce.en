@@ -1,14 +1,105 @@
 ---
 title: What's new
-description: This page contains the changes made in the last 60 days. We exclude all
-  minor updates, such as copy editing, from this list.
-updated: Mon Oct 26 14:57:56 2026
+description: This page contains the changes made in the last 60 days. Minor updates,
+  such as copy editing, are excluded from this list.
+updated: Mon Nov 9 11:49:43 2026
 entries:
+- description: Documented the new Reference Key field for product recommendations,
+    which you can use instead of the recommendation ID to configure the storefront
+    `product-recommendations` block:<br/>- Updated [Create and Manage Recommendations](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create)
+    with reference key creation, retrieval, and management steps.<br/>- Updated [Create
+    New Recommendation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/admin/create)
+    with reference key creation and retrieval steps.<br/>- Updated [Edit Recommendation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/admin/edit)
+    with the editable Reference Key setting.
+  versions: ''
+  type: major-update
+  date: '2026-11-06'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/810
+  merge_commit: a69eec87f2386d06741f6cd865de0f37567b0b3b
+  contributor: emarr_adobe
+  labels:
+  - major-update
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: release-notes
+  date: '2026-11-05'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/866
+  merge_commit: 8da72aa99416dc0925c1a033859bc70cb30a2aa4
+  contributor: jhoover_adobe
+  labels:
+  - release-notes
+  - ai-reviewed
+- description: Added [Managed Operations](https://experienceleague.adobe.com/en/docs/commerce/information-center/explore-platforms-and-services/managed-operations),
+    which describes a new, premium offering for Adobe Commerce as a Cloud Service
+    that adds a named Customer Success Engineer and 24/7 monitoring.
+  versions: ''
+  type: new-topic
+  date: '2026-11-05'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/862
+  merge_commit: 489e7d71d58d1ad8d2a804bddddabdfebb746935
+  contributor: jhoover_adobe
+  labels:
+  - new-topic
+  - ai-reviewed
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: release-notes
+  date: '2026-10-29'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/856
+  merge_commit: 88e85aa9c9456a52c9efb18505389fb99ef113c5
+  contributor: jhoover_adobe
+  labels:
+  - release-notes
+- description: Added information about how to [request an increase](https://experienceleague.adobe.com/en/docs/commerce/live-search/boundaries-limits)
+    of the supported [!DNL Live Search] facet limit from 100 up to 500 facets through
+    Adobe Support.
+  versions: ''
+  type: feedback, technical
+  date: '2026-10-29'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/795
+  merge_commit: bcb4f6eefcd1a2d11e01a3bef92b1a0fb878f091
+  contributor: emarr_adobe
+  labels:
+  - feedback
+  - technical
+- description: Added release notes for [SaaS Data Export Extension 103.6.0](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes),
+    which adds export support for review count (ac_review_count) and average rating
+    (ac_rating_summary) to display review counts and star ratings in Commerce frontends.
+  versions: ''
+  type: release-notes
+  date: '2026-10-28'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/841
+  merge_commit: ce6eb687b61b03ae15856575a83a83a866eb090c
+  contributor: alugovyi_adobe
+  labels:
+  - release-notes
+- description: Added a [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    section to explain the new Commerce Admin UI in Unified Shell.
+  versions: ''
+  type: major-update
+  date: '2026-10-28'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/847
+  merge_commit: deeb39e389025bc472e7a8e1502ad846b8844fa0
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: release-notes
+  date: '2026-10-28'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/852
+  merge_commit: 602e3adbbe2e238c46b249ec9dd057a46e2b6456
+  contributor: jhoover_adobe
+  labels:
+  - release-notes
 - description: Updated the [Data Export log codes reference](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)
     from the latest [source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md).
   versions: ''
   type: technical
-  date: October 26, 2026
+  date: '2026-10-26'
   link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/842
   merge_commit: fd4ea4603999043844c786da3ab1e84fb8d4d4aa
   contributor: commercedocs_adobe
