@@ -36,7 +36,7 @@ Restricted access keys let authorized client applications access a [private cata
 
 Restricted access keys are provisioned in one of two ways:
 
-- [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."} **Automatically, for B2B shared catalogs**—For deployments integrated with the [!DNL Adobe Commerce Optimizer Connector for B2B], the connector provisions and assigns the initial key. Then, you manage keys and key assignment from the Commerce Admin. See [Catalog view authentication](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) in the *Commerce Admin Guide**.
+- **Automatically, for B2B shared catalogs**—For Adobe Commerce B2B deployments that use Merchandising Services with the composable catalog data model (CCDM), the system provisions and assigns the initial key. Then, you manage keys and key assignment from the Commerce Admin. See [Catalog view authentication](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) in the *Commerce Admin Guide**.
 
 - **Manually, for any catalog view**—To protect a catalog view yourself—for example, for a partner portal or pre-release preview—follow the steps in this topic starting with [Create a restricted access key](#create-a-restricted-access-key).
 
