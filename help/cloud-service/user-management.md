@@ -331,4 +331,3 @@ After adding a user to [!DNL AEM Assets], they can access the [!DNL Experience M
 ## Identity management and single sign-on configuration
 
 {{ims-identity-and-sso-config}}
-
