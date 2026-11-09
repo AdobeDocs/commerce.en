@@ -64,7 +64,7 @@ Otherwise, the most recently updated active rule is applied.
 
 ### Preview requests
 
-Request made in [!DNL Adobe Commerce Optimizer] work slightly differently. When previewing [!DNL Adobe Commerce Optimizer], all rules are applied, including those expired and scheduled.
+Requests made in preview work slightly differently. When previewing, all rules are applied, including those expired and scheduled.
 
 - If rule being previewed has a `query is` condition, it is applied.
 - If rule being previewed does not have a `query is` condition, and a subsequent active, matching rule with a `query is` condition is found, the `query is` rule is applied.

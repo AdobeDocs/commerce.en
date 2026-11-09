@@ -59,8 +59,8 @@ The details panel shows the rule name, status, conditions and events, start and 
 
 | Control | Description |
 |--- |--- |
-| Add rule | Opens the [rule editor](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add). |
-| Catalog view | Filters the table to rules that apply to the selected catalog view. Also sets the scope when you [create a rule](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add). Options: *All views* or a specific [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). See [Select catalog view](#select-catalog-view). |
+| Add rule | Opens the [rule editor](add.md). |
+| Catalog view | Filters the table to rules that apply to the selected catalog view. Also sets the scope when you [create a rule](add.md). Options: *All views* or a specific [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). See [Select catalog view](#select-catalog-view). |
 | Status | Filters the list of rules by status. Options: All, Active, Inactive, Scheduled |
 | ![Column selector](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Specifies the columns that visible in the grid. Options: Last updated, Start date, End date, Status |
 | Search | Searches for a rule by full name or partial match. |
@@ -83,12 +83,12 @@ The details panel shows the rule name, status, conditions and events, start and 
 The **[!UICONTROL Catalog view]** selector on the Merchandising Rules page does two things:
 
 1. **Filters the table** – Shows only rules (and their details) that apply to the selected catalog view.
-1. **Sets the scope for new rules** – When you [create a rule](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add), the selected catalog view is used as the rule's scope. Options are *All views* or a specific [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view).
+1. **Sets the scope for new rules** – When you [create a rule](add.md), the selected catalog view is used as the rule's scope. Options are *All views* or a specific [catalog view](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view).
 
    - **All views** – The rule applies to all catalog views. Search and ranking behavior is the same across every storefront that uses the catalog.
    - **Catalog view** – The rule applies only to the selected catalog view (for example, one storefront, region, dealer, or brand). Use this when different catalog views need different merchandising logic.
 
-For details on creating a rule and setting its scope, see [Create and manage rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+For details on creating a rule and setting its scope, see [Create and manage rules](add.md).
 
 ### Why create a rule per catalog view?
 
@@ -103,11 +103,11 @@ Behavioral data that powers [intelligent ranking](https://experienceleague.adobe
 ### How to set up a rule per catalog view
 
 1. On the *Merchandising Rules* workspace, use the **[!UICONTROL Catalog view]** dropdown to select the catalog view where the rule should apply.
-1. Click **[!UICONTROL Create rule]**. 
-   
+1. Click **[!UICONTROL Create rule]**.
+
    The rule you create is scoped to the selected catalog view.
-1. Build your rule in the [rule editor](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
-    
+1. Build your rule in the [rule editor](add.md).
+
    In the editor, define conditions, events, and details. The rule applies only to search results in that catalog view.
 
 You cannot change the catalog view (scope) of a rule after it is created. To apply similar logic to another catalog view, create a new rule and select that catalog view before creating.
