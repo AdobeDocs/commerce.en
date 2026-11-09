@@ -44,6 +44,10 @@ Shoppers notice the change in what they find. Each audience sees an assortment a
 
 Order processing does not change. Cart, checkout, and order management work as they do today, so operations teams keep their existing workflows. Partners who build storefronts or apps should review how those solutions request catalog data, because catalog requests differ under the new model.
 
+This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud Service] and all Adobe Experience Cloud solutions.
+
+![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow-ccdm.png){zoomable="yes"}
+
 ## Availability
 
 New [!DNL Adobe Commerce as a Cloud Service] projects include Merchandising Services by default. Existing projects keep their current catalog services and are not changed automatically.
