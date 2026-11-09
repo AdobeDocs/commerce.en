@@ -65,7 +65,7 @@ topic_v2:
 
 # Adobe Commerce as a Cloud Service with Merchandising Services
 
-[!DNL Adobe Commerce as a Cloud Service] with Merchandising Services powered by Catalog Views and Policies pairs a complete commerce platform with a catalog designed around product discovery. Merchandising Services determines how your products are organized, priced, searched, and recommended on the storefront. [!DNL AdobeCommerce as a Cloud Service] continues to run the transactional side of the business, including cart, checkout, promotions, customer accounts, and orders.
+[!DNL Adobe Commerce as a Cloud Service] with Merchandising Services powered by Catalog Views and Policies pairs a complete commerce platform with a catalog designed around product discovery. Merchandising Services manages product organization, pricing, search, and recommendations on the storefront. [!DNL AdobeCommerce as a Cloud Service] continues to run the transactional side of the business, including cart, checkout, promotions, customer accounts, and orders.
 
 Both parts come in a single subscription. Your teams manage them from the same Commerce Admin, with no separate merchandising product to purchase or provision.
 
