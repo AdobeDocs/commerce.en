@@ -49,7 +49,7 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce as
 
 ## Understanding roles
 
-The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. To view or edit these roles, in the Commerce Admin navigate to [!UICONTROL **System**] > [!UICONTROL **Permissions**] > [!UICONTROL **User Roles**].
+The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. To view or edit these roles, in the Commerce Admin navigate to [!UICONTROL **System**] > [!UICONTROL **User Roles**].
 
 * **Users** - Users have Admin access to the Commerce Admin but cannot manage product-level access in the Admin Console. Users can also use credits to [create instances](./getting-started.md#create-an-instance) in the [!DNL Commerce Cloud Manager].
 
@@ -195,7 +195,7 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 
 ## Role resources
 
-The following list describes the resources that default roles have permission to access inside the [!DNL Adobe Commerce] Admin. To edit the default permissions for each role, navigate to [!UICONTROL **System**] > [!UICONTROL **Permissions**] > [!UICONTROL **User Roles**] in the Commerce Admin.
+The following list describes the resources that default roles have permission to access inside the [!DNL Adobe Commerce] Admin. To edit the default permissions for each role, navigate to [!UICONTROL **System**] > [!UICONTROL **User Roles**] in the Commerce Admin.
 
 **Users**
 
