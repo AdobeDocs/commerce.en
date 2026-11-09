@@ -113,7 +113,7 @@ After semantic search is enabled, you can adjust the following on the same tab:
 - **[!UICONTROL Fuzzy search]** — Turn **on** to find near matches for search queries, which helps correct typos and minor variations.
 - **[!UICONTROL Fuzzy search similarity threshold]** — Set the minimum similarity (as a percentage) required for fuzzy matches to appear. Lower thresholds return more approximate matches; raise the threshold if fuzzy results feel too broad.
 
-For benefits, validation guidance, best practices, troubleshooting, and limitations, see [Semantic search](setup/semantic-search.md).
+For benefits, validation guidance, best practices, troubleshooting, and limitations, see [Semantic search](/help/optimizer/setup/semantic-search.md).
 
 ### Field descriptions
 

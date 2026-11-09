@@ -5,11 +5,11 @@ When you create a recommendation, you create a _recommendation unit_, or widget,
 ![Recommendation unit](/help/assets/ccdm-shared/recommendations/unit.png)
 _Recommendation unit_
 
-When you activate the recommendation unit, Adobe Commerce starts to [collect data](../../manage-results/recommendation-performance.md) to measure impressions, views, clicks, and so on. The Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
+When you activate the recommendation unit, Adobe Commerce starts to [collect data](/help/optimizer/manage-results/recommendation-performance.md) to measure impressions, views, clicks, and so on. The Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
 
 1. From the menu, go to _Merchandising_ > **Recommendations** to display the _Recommendations_ workspace.
 
-1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](../../manage-results/recommendation-performance.md#select-catalog-view).
+1. In the **Catalog view** field, select the catalog view where you want the recommendation to be available. Learn more about [using catalog views for recommendations](/help/optimizer/manage-results/recommendation-performance.md#select-catalog-view).
 
 1. Click **Create recommendation**.
 
@@ -39,7 +39,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 >[!NOTE]
 >
->You can create up to 50 active recommendation units. See [Limits and boundaries](../../boundaries-limits.md) for details.
+>You can create up to 50 active recommendation units. See [Limits and boundaries](/help/optimizer/boundaries-limits.md) for details.
 
 >[!IMPORTANT]
 >
@@ -59,13 +59,13 @@ To test a recommendation when working in a non-production environment, you can f
 |Name|The name of the product.|
 |SKU|The Stock Keeping Unit assigned to the product|
 |Price|The price of the product.|
-|Result Type|Primary - Indicates that there is enough training data collected to display a recommendation.<br />Backup - Indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](../../setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
+|Result Type|Primary - Indicates that there is enough training data collected to display a recommendation.<br />Backup - Indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](/help/optimizer/setup/events/overview.md) to learn more about machine learning models and backup recommendations.|
 
 To get immediate real-time feedback about the products that will be included, experiment with the recommendation type and filters as you create your recommendation unit. To meet your business needs, configure the recommendation unit as you begin to understand which products appear.
 
 [!DNL Product Recommendations] [filter](filters.md) recommendations to avoid displaying duplicate products when multiple recommendation units are deployed on a single page. As a result, the products that appear in the preview panel can differ from those that appear in the storefront.
 
-For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](../../setup/catalog-view.md). Learn more about how to [set the catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) when working with recommendations.
+For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](/help/optimizer/setup/catalog-view.md). Learn more about how to [set the catalog view](/help/optimizer/manage-results/recommendation-performance.md#select-catalog-view) when working with recommendations.
 
 ## Get recommendation ID
 
@@ -100,15 +100,15 @@ You can edit, deactivate, or delete an existing recommendation.
    - Number of products
    - Filter products
 
-   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation. To learn more, see [select catalog view](../../manage-results/recommendation-performance.md#select-catalog-view).
+   You cannot change the recommendation type or the catalog view. Catalog view is set when you create the recommendation. To learn more, see [select catalog view](/help/optimizer/manage-results/recommendation-performance.md#select-catalog-view).
 
 1. When complete, click **Save Changes**.
 
 ## Readiness indicators
 
-Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. They can also help you identify potential issues with [event collection](../../setup/events/overview.md) or determine whether a recommendation type is not receiving enough traffic to generate results.
+Readiness indicators show which recommendation types perform best based on the catalog and behavioral data available. They can also help you identify potential issues with [event collection](/help/optimizer/setup/events/overview.md) or determine whether a recommendation type is not receiving enough traffic to generate results.
 
-Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based recommendations use catalog data only; whereas dynamic-based recommendations use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](../../setup/events/overview.md) to build personalized recommendations and to calculate their readiness score.
+Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based recommendations use catalog data only; whereas dynamic-based recommendations use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](/help/optimizer/setup/events/overview.md) to build personalized recommendations and to calculate their readiness score.
 
 ### How readiness indicators are calculated
 
@@ -120,14 +120,14 @@ As a result of these variables, the readiness indicator percent can fluctuate. T
 
 Readiness indicators are calculated based on several factors:
 
-- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](../../setup/events/overview.md#backup-recommendations)?
+- Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](/help/optimizer/setup/events/overview.md#backup-recommendations)?
 - Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products as the only items recommended across the site.
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
 - 75% or higher means that the recommendations suggested for that recommendation type are highly relevant.
 - At least 50% means that the recommendations suggested for that recommendation type are less relevant.
-- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](../../setup/events/overview.md#backup-recommendations) are used.
+- Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](/help/optimizer/setup/events/overview.md#backup-recommendations) are used.
 
 Learn more about [why readiness indicators can be low](#what-to-do-if-the-readiness-indicator-is-low).
 
@@ -176,7 +176,7 @@ The readiness indicator for recommendation types that depend on catalog data doe
 
 #### What to do if the readiness indicator is low
 
-A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](../../setup/events/overview.md#backup-recommendations) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](/help/optimizer/setup/events/overview.md#backup-recommendations) are returned if you deploy this recommendation type anyway.
 
 >[!IMPORTANT]
 >
@@ -187,6 +187,6 @@ The following lists possible reasons and solutions to common low readiness score
 - **Static-based**—Missing catalog data for the displayable products causes low percentages for these indicators. If they are lower than expected, a full sync can fix this issue.
 - **Dynamic-based**—The following factors cause low percentages for dynamic-based indicators:
 
-   - Missing fields in the required [storefront events](../../setup/events/overview.md) for the respective recommendation types (requestId, product context, and so on).
+   - Missing fields in the required [storefront events](/help/optimizer/setup/events/overview.md) for the respective recommendation types (requestId, product context, and so on).
    - Low traffic to the store so the volume of behavioral events received is low.
    - The variety of storefront behavioral events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time, then the respective readiness indicators are low.

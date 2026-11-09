@@ -43,7 +43,7 @@ That value:
 - **Excludes** shipping and cart-level adjustments.
 - **Applies only** to the active price book for that storefront; other storefronts or price books are not used.
 
-Configure how price books map to a storefront in your [price books](../../setup/pricebooks.md) setup.
+Configure how price books map to a storefront in your [price books](/help/optimizer/setup/pricebooks.md) setup.
 
 #### How include and exclude rules use price {#how-include-and-exclude-rules-use-price}
 

@@ -20,7 +20,7 @@ With so many recommendation types to choose from, which should you use on each p
 |Product page|`Viewed this, viewed that`|
 |Cart|`Bought this, bought that`|
 
-You can track the [metrics](../../manage-results/recommendation-performance.md) and adjust if needed. Remember that experimentation is key.
+You can track the [metrics](/help/optimizer/manage-results/recommendation-performance.md) and adjust if needed. Remember that experimentation is key.
 
 ## Recommendation labels
 

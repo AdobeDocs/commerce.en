@@ -135,7 +135,7 @@ To implement an AI-suggested optimization, follow these steps:
 
 ### How catalog layers work with auto-fix
 
-If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it as the highest priority (highest number). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix does not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](../setup/catalog-layer.md#manage-layer-activation-and-deletion).
+If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it as the highest priority (highest number). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix does not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](/help/optimizer/setup/catalog-layer.md#manage-layer-activation-and-deletion).
 
 ![Catalog Layers](/help/assets/ccdm-shared/opportunities/catalog-layers.png)
 
@@ -161,7 +161,7 @@ If an optimization does not appear to be applied on your storefront:
 
 ## How Sites Optimizer and success metrics work together
 
-Success metrics help monitor key performance indicators, such as product discovery and catalog business efficiency. Opportunities within Sites Optimizer let you know how you can boost SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support. To learn how you can take advantage of these two technologies to improve your storefront performance and experience, see [Using Success Metrics and Sites Optimizer together](./success-metrics.md#using-success-metrics-and-sites-optimizer-together).
+Success metrics help monitor key performance indicators, such as product discovery and catalog business efficiency. Opportunities within Sites Optimizer let you know how you can boost SEO, load speed, accessibility, and engagement. Together, merchandisers and marketers can improve operational efficiency, bringing faster end-to-end performance and conversion gains with minimal IT support. To learn how you can take advantage of these two technologies to improve your storefront performance and experience, see [Using Success Metrics and Sites Optimizer together](/help/optimizer/manage-results/success-metrics.md#using-success-metrics-and-sites-optimizer-together).
 
 ## Learn more about Sites Optimizer
 
@@ -174,6 +174,6 @@ Additional resources:
 
 ## More like this
 
-- [Success Metrics](success-metrics.md)—Monitor key performance indicators.
-- [Search Performance](search-performance.md)—Analyze search terms and optimize relevance.
-- [Recommendation Performance](recommendation-performance.md)—Monitor recommendation effectiveness.
+- [Success Metrics](/help/optimizer/manage-results/success-metrics.md)—Monitor key performance indicators.
+- [Search Performance](/help/optimizer/manage-results/search-performance.md)—Analyze search terms and optimize relevance.
+- [Recommendation Performance](/help/optimizer/manage-results/recommendation-performance.md)—Monitor recommendation effectiveness.

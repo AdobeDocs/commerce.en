@@ -34,7 +34,7 @@ Product Recommendations is a data-driven system that relies on behavioral data c
 When there is not enough event data to generate recommendations, the system can:
 
 - Return empty results for the recommendation unit.
-- Trigger [backup recommendations](../../setup/events/overview.md#backup-recommendations), such as showing `Most viewed` products when personalized recommendations are not yet available.
+- Trigger [backup recommendations](/help/optimizer/setup/events/overview.md#backup-recommendations), such as showing `Most viewed` products when personalized recommendations are not yet available.
 - Display fewer products than [configured](create.md) in the recommendation unit.
 
 ## Personalized {#personalized}
@@ -43,7 +43,7 @@ These recommendation types recommend products based on the specific shopper's be
 
 >[!NOTE]
 >
->Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history will see [backup recommendations](../../setup/events/overview.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
+>Personalized recommendations require shoppers to have an established behavioral history. New visitors or shoppers without sufficient interaction history will see [backup recommendations](/help/optimizer/setup/events/overview.md#backup-recommendations), such as Most viewed products until they generate enough behavioral signals on your site.
 
 |Type|Description|
 |---|---|
@@ -74,7 +74,7 @@ These recommendation types recommend products that are the most popular or trend
 
 >[!NOTE]
 >
->Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types can return limited results or no results until adequate behavioral data has been collected. To ensure optimal performance, monitor your [data readiness indicator](../../manage-results/recommendation-performance.md).
+>Popularity-based recommendations require sufficient event data from your storefront. If your store is new or has low traffic, these recommendation types can return limited results or no results until adequate behavioral data has been collected. To ensure optimal performance, monitor your [data readiness indicator](/help/optimizer/manage-results/recommendation-performance.md).
 
 |Type|Description|
 |---|---|

@@ -11,7 +11,7 @@ Increase customer engagement by adding your own curated list of synonyms. You ca
 
 ## Step 2: Define the synonym by type
 
-Follow the instructions for the [type of synonym](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) that you want to create.
+Follow the instructions for the [type of synonym](type.md) that you want to create.
 
 ### Two-way synonym
 
@@ -22,7 +22,7 @@ Follow the instructions for the [type of synonym](https://experienceleague.adobe
    ![Two-way synonym](/help/assets/ccdm-shared/synonyms/synonym-add-two-way.png)
 
 1. When complete, click **Save**.
- 
+
    The set of synonyms appears in the list with a two-way arrow between each term that means the terms are interchangeable.
 
    ![Two-way synonym example](/help/assets/ccdm-shared/synonyms/synonym-add-two-way-example.png)
