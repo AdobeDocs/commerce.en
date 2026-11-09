@@ -2,13 +2,13 @@
 
 Use the *Settings* workspace to configure search and product discovery for your storefront. The following tabs are available:
 
-- **Price facets** — Configure price range groups and intervals used as search filters.
-- **Language** — Set the catalog language used for indexing and search.
-- **Advanced search** — Enable semantic search and fuzzy search, and tune semantic boost and similarity thresholds.
+- **Facets**—Configure price range groups and intervals used as search filters.
+- **Language**—Set the catalog language used for indexing and search.
+- **Advanced search**—Enable semantic search and fuzzy search, and tune semantic boost and similarity thresholds.
 
 ## Access the Settings workspace
 
-Use the *Settings* workspace to manage price facet, language, and advanced search configuration. How you open it depends on the product you use:
+How you open the *Settings* workspace depends on the product you use:
 
 - **Adobe Commerce Optimizer Studio**—Select *Merchandising* > **Settings**.
 - **Adobe Commerce Admin**—Select *Merchandising* > **Merchandising Settings**.
@@ -19,7 +19,7 @@ Use the *Settings* workspace to manage price facet, language, and advanced searc
 
 ## Price facets {#price-facets}
 
-You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, when you use five groups with an interval of 20, you get price ranges such as 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
+You can specify the number of price range groups and how price values are distributed among them. Each price range overlaps the previous group by one. For example, five groups with an interval of 20 create price ranges: 0-20, 20-40, 40-60, 60-80, and >80. If there are not enough products in the catalog to fill all defined ranges, the display of the available groups is adjusted accordingly. For example: 0-20, 60-80, >80.
 
 **To configure price facets:**
 
@@ -31,7 +31,7 @@ You can specify the number of price range groups and how price values are distri
 
    It takes about 15 minutes for the updated settings to be available in the storefront.
 
-### Field descriptions
+### Price facet field descriptions
 
 | Field | Description |
 | --- | --- |
@@ -47,7 +47,7 @@ The Language setting tells the system which language to expect when reading the 
 Languages have different sets of rules for grammar: how words are separated, verb tenses and word forms, for example.
 The Language setting ensures that the correct set of rules is applied to the indexing mechanism.
 
-Set the Language setting to the primary language of the catalog. When you change the language of the index, it can take from 5 to 60 minutes for the change to appear on the storefront, depending on the size and complexity of the catalog.
+Set the Language setting to the primary language of the catalog. Changing the index language takes 5 to 60 minutes to appear on the storefront, depending on catalog size and complexity.
 
 |Language|Code|
 |----|----|
@@ -94,7 +94,7 @@ Set the Language setting to the primary language of the catalog. When you change
 
 ## Advanced search {#advanced-search}
 
-Use the **[!UICONTROL Advanced search]** tab to manage search in one place. The system delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **enabled by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
+Use the **[!UICONTROL Advanced search]** tab to manage search in one place. The system delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **enabled by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in Settings. No storefront or developer changes are required.
 
 ![Advanced search settings](/help/assets/ccdm-shared/advanced-search.png)
 
@@ -104,29 +104,28 @@ Use the **[!UICONTROL Advanced search]** tab to manage search in one place. The 
 1. Under **[!UICONTROL Enable semantic search]**, confirm semantic search is enabled, or disable it if you do not want semantic matching.
 1. Click **[!UICONTROL Save]** if you change the toggle or tuning controls.
 
-   Search results update after indexing completes. For a medium-sized catalog, indexing can take up to half an hour. For large catalogs with millions of products, it can take a few hours.
+   Search results update after indexing completes. For a medium-sized catalog, indexing can take up to 30 minutes. For large catalogs with millions of products, it can take a few hours.
 
 ### Optional tuning
 
 After semantic search is enabled, you can adjust the following on the same tab:
 
-- **[!UICONTROL Semantic boost]** — Apply a boost to prioritize semantically relevant results in ranking. Raise the value when semantic matches should weigh more heavily in the result set; lower it when results feel too broad.
-- **[!UICONTROL Similarity threshold]** — Set the minimum similarity score (as a percentage) for a semantic match. Lower values return more results (higher recall) but may include weaker matches. Higher values return fewer, tighter matches (higher precision).
+- **[!UICONTROL Semantic boost]**—To prioritize semantically relevant results in ranking, apply a boost. Raise the value when semantic matches should weigh more heavily in the result set; lower it when results feel too broad.
+- **[!UICONTROL Similarity threshold]**—Set the minimum similarity score (as a percentage) for a semantic match. Lower values return more results (higher recall) but may include weaker matches. Higher values return fewer, tighter matches (higher precision).
+- **[!UICONTROL Fuzzy search]**—To find near matches for search queries and correct typos and minor variations, turn **on**.
+- **[!UICONTROL Fuzzy search similarity threshold]**—Set the minimum similarity (as a percentage) required for fuzzy matches to appear. Lower thresholds return more approximate matches; raise the threshold if fuzzy results feel too broad.
 
-   >[!NOTE]
-   >
-   > Semantic search is supported for **English** catalogs only. Selecting another language on the **[Language](#language)** tab disables **[!UICONTROL Enable semantic search]**.
-
-- **[!UICONTROL Fuzzy search]** — Turn **on** to find near matches for search queries, which helps correct typos and minor variations.
-- **[!UICONTROL Fuzzy search similarity threshold]** — Set the minimum similarity (as a percentage) required for fuzzy matches to appear. Lower thresholds return more approximate matches; raise the threshold if fuzzy results feel too broad.
+>[!NOTE]
+>
+> Semantic search is supported for **English** catalogs only. Selecting another language on the **[!UICONTROL Language]** tab disables **[!UICONTROL Enable semantic search]**.
 
 For benefits, validation guidance, best practices, troubleshooting, and limitations, see [Semantic search](/help/optimizer/setup/semantic-search.md).
 
-### Field descriptions
+### Advanced search field descriptions
 
 | Control | Description |
 | --- | --- |
-| Enable semantic search | When enabled, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default. |
+| Enable semantic search | When enabled, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in Settings. Enabled by default. |
 | Semantic boost | Boost applied to prioritize semantically relevant results in ranking. |
 | Similarity threshold | Minimum similarity score (percentage) for a semantic match. Lower values favor recall; higher values favor precision. |
 | Fuzzy search | When **on**, search finds near matches for queries (for example, minor variations). |
