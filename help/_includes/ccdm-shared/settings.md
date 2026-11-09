@@ -6,6 +6,13 @@ Use the *Settings* workspace to configure search and product discovery for your 
 - **Language** — Set the catalog language used for indexing and search.
 - **Advanced search** — Enable semantic search and fuzzy search, and tune semantic boost and similarity thresholds.
 
+## Access the Settings workspace
+
+Use the *Settings* workspace to manage price facet, language, and advanced search configuration. How you open it depends on the product you use:
+
+- **Adobe Commerce Optimizer Studio**—Select *Merchandising* > **Settings**.
+- **Adobe Commerce Admin**—Select *Merchandising* > **Merchandising Settings**.
+
 >[!BEGINTABS]
 
 >[!TAB Price facets]
@@ -16,7 +23,7 @@ You can specify the number of price range groups and how price values are distri
 
 **To configure price facets:**
 
-1. On the **Settings** workspace, select **[!UICONTROL Facets]**.
+1. From the **Settings** workspace, select **[!UICONTROL Facets]**.
 1. In the **Price facet** section, do the following:
    - Enter the **[!UICONTROL Number of selections]**, or price groupings to be available. Up to 100 price groupings can be defined.
    - Enter the **[!UICONTROL Interval value]**, or price range for each group. The maximum value is 40,000,000.
