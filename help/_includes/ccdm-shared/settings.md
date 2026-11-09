@@ -35,7 +35,7 @@ You can specify the number of price range groups and how price values are distri
 
 ## Language {#language}
 
-The Language setting tells [!DNL Adobe Commerce Optimizer] which language to expect when reading the catalog and writing the index.
+The Language setting tells the system which language to expect when reading the catalog and writing the index.
 
 Languages have different sets of rules for grammar: how words are separated, verb tenses and word forms, for example.
 The Language setting ensures that the correct set of rules is applied to the indexing mechanism.
@@ -87,7 +87,7 @@ Set the Language setting to the primary language of the catalog. When you change
 
 ## Advanced search {#advanced-search}
 
-Use the **[!UICONTROL Advanced search]** tab to manage search in one place. [!DNL Adobe Commerce Optimizer] delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **enabled by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
+Use the **[!UICONTROL Advanced search]** tab to manage search in one place. The system delivers a unified search experience on the storefront; you do not configure keyword search and semantic search separately for shoppers. **[!UICONTROL Enable semantic search]** is **enabled by default** for eligible English catalogs. Semantic search works alongside your existing configuration; [merchandising rules](./merchandising/rules/overview.md), [synonyms](./merchandising/synonyms/overview.md), [facets](./merchandising/facets/overview.md), boosts, and filters continue to apply. The system uses predefined catalog attributes automatically—you do not select or prioritize attributes in the Admin. No storefront or developer changes are required.
 
 ![Advanced search settings](/help/assets/ccdm-shared/advanced-search.png)
 
@@ -119,7 +119,7 @@ For benefits, validation guidance, best practices, troubleshooting, and limitati
 
 | Control | Description |
 | --- | --- |
-| Enable semantic search | When enabled, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default for [!DNL Adobe Commerce Optimizer] customers. |
+| Enable semantic search | When enabled, search uses meaning and context alongside keyword matching. Predefined catalog attributes are used automatically; no attribute setup is required in the Admin. Enabled by default. |
 | Semantic boost | Boost applied to prioritize semantically relevant results in ranking. |
 | Similarity threshold | Minimum similarity score (percentage) for a semantic match. Lower values favor recall; higher values favor precision. |
 | Fuzzy search | When **on**, search finds near matches for queries (for example, minor variations). |

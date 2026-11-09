@@ -2,7 +2,7 @@
 
 The following provides a list of best practices when creating synonyms.
 
-- [!DNL Adobe Commerce Optimizer] manages misspellings by default. You can set up synonyms to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can [set synonyms as one way or two way](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type) to improve results.
+- Misspellings are managed by default. You can set up synonyms to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can [set synonyms as one way or two way](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type) to improve results.
 
 - Map brand names and abbreviations to their full names, for example "HP" to "Hewlett-Packard" and common product nicknames, for example "iPhone" to "Apple iPhone".
 
@@ -12,7 +12,7 @@ The following provides a list of best practices when creating synonyms.
 
 - Test the effectiveness of synonym mappings by analyzing search results and shopper feedback. Refine mappings to improve accuracy and relevance.
 
-- Avoid using stop words as they do not make synonyms more meaningful, but increase the amount of data that must be processed. [!DNL Adobe Commerce Optimizer] filters out common English "stop words" from synonyms, such as:
+- Avoid using stop words as they do not make synonyms more meaningful, but increase the amount of data that must be processed. Common English "stop words" are filtered out of synonyms, such as:
 
     a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will, with
 

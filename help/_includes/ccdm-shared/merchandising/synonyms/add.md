@@ -1,6 +1,6 @@
 # Create Synonyms
 
-Increase customer engagement by adding your own curated list of [!DNL Adobe Commerce Optimizer] synonyms. You can add up to 200 synonyms per catalog source.
+Increase customer engagement by adding your own curated list of synonyms. You can add up to 200 synonyms per catalog source.
 
 ![Synonym Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)
 
@@ -58,7 +58,7 @@ Follow the instructions for the [type of synonym](https://experienceleague.adobe
 
 ## Manage synonyms
 
-Follow these instructions to manage existing [!DNL Adobe Commerce Optimizer] [synonyms](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview).
+Follow these instructions to manage existing [synonyms](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview).
 
 ## Find synonym
 
