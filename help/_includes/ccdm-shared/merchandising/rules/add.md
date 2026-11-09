@@ -43,7 +43,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 
 1. Under *Build your rule*, select the **Condition** to be met, and follow the instructions to complete the statement.
 
-   - Search query contains—Enter the string of text that must be in the shopper's query. The Match setting determines the degree to which the shopper's query matches the catalog. Options:<br /> Any — Any part of the shopper's query text can match the condition.<br />All — All of the shopper's query must match the condition.
+   - Search query contains—Enter the string of text that must be in the shopper's query. The Match setting determines the degree to which the shopper's query matches the catalog. Options:<br /> Any—Any part of the shopper's query text can match the condition.<br />All—All of the shopper's query must match the condition.
    - Search query is—Enter a string of text that exactly matches the shopper's query. For example: "yoga pants". Rules with `Search query is` and Match `All` can have only one condition.
    - Search query starts with—Enter a character or string of text that must be at the beginning of the shopper's query.
    - Search query ends with—Enter a character or string of text that must be at the end of the shopper's query.
@@ -115,12 +115,12 @@ Store owners can set strategies such as the following. Exact labels and time win
 
 ![Intelligent Rankings](/help/assets/ccdm-shared/rules/rule-intelligent-ranking.png){zoomable="yes"}
 
-- **Most purchased** / **Most bought** — Ranks by purchase frequency per SKU in a recent window (for example, the previous 7 days for search contexts).
-- **Most added to cart** — Ranks by total add-to-cart activity in a recent window (for example, the previous 7 days for search contexts).
-- **Most viewed** — Ranks by views per SKU in a recent window (for example, the previous 7 days for search contexts).
-- **Recommended for you** — Uses the `viewed-viewed` signal: shoppers who viewed this SKU also viewed other SKUs; supports personalized ordering on category pages where available.
-- **Trending** — Emphasizes recent popularity (for search, page views over the past 72 hours for background events and 24 hours for foreground events).
-- **None** — For search and default listings, products are ordered by **Relevance**. For **category rules**, uses the default merchandising order for the category when you do not choose another intelligent strategy.
+- **Most purchased** / **Most bought**—Ranks by purchase frequency per SKU in a recent window (for example, the previous 7 days for search contexts).
+- **Most added to cart**—Ranks by total add-to-cart activity in a recent window (for example, the previous 7 days for search contexts).
+- **Most viewed**—Ranks by views per SKU in a recent window (for example, the previous 7 days for search contexts).
+- **Recommended for you**—Uses the `viewed-viewed` signal: shoppers who viewed this SKU also viewed other SKUs; supports personalized ordering on category pages where available.
+- **Trending**—Emphasizes recent popularity (for search, page views over the past 72 hours for background events and 24 hours for foreground events).
+- **None**—For search and default listings, products are ordered by **Relevance**. For **category rules**, uses the default merchandising order for the category when you do not choose another intelligent strategy.
 
 Select the strategy for your rule. The **[!UICONTROL Test your rule]** pane shows expected results for search-oriented rules; **category rules** use the category preview.
 
@@ -211,10 +211,10 @@ For information about setting search weights:
 
 **Manual ranking** events adjust product order for **search results** (when your rule's conditions are met), for **default product listings**, and for **category page** listings. A single rule can have up to 25 events.
 
-- **[!UICONTROL Boost]** — Moves a SKU higher in the listing.
-- **[!UICONTROL Bury]** — Moves a SKU lower in the listing.
-- **[!UICONTROL Pin a product]** — Fixes a SKU at the selected position in the listing.
-- **[!UICONTROL Hide a product]** — Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
+- **[!UICONTROL Boost]**—Moves a SKU higher in the listing.
+- **[!UICONTROL Bury]**—Moves a SKU lower in the listing.
+- **[!UICONTROL Pin a product]**—Fixes a SKU at the selected position in the listing.
+- **[!UICONTROL Hide a product]**—Excludes a SKU from the results (search-oriented; confirm behavior for category rules in the editor).
 
 The easiest way to pin a product is by drag and drop.
 
@@ -224,9 +224,9 @@ The easiest way to pin a product is by drag and drop.
 
 >[!NOTE]
 >
->**Search rules** — You can only pin products that appear in the search results for the configured query and rule conditions. Products must be indexed, visible, in stock, and meet all rule filters to be eligible for pinning. If a product does not appear in the preview or results for your rule, pinning it has no effect.
+>**Search rules**—You can only pin products that appear in the search results for the configured query and rule conditions. Products must be indexed, visible, in stock, and meet all rule filters to be eligible for pinning. If a product does not appear in the preview or results for your rule, pinning it has no effect.
 >
->**Default sort** — Manual positions apply when the shopper uses the default sort: **Sort by: Most Relevant** for search, or **relevance** / **position** for category listings. If the shopper changes sort, for example by name, pinned, boosted, buried, or hidden behavior may no longer match the preview.
+>**Default sort**—Manual positions apply when the shopper uses the default sort: **Sort by: Most Relevant** for search, or **relevance** / **position** for category listings. If the shopper changes sort, for example by name, pinned, boosted, buried, or hidden behavior may no longer match the preview.
 
 Or events can be set manually:
 
