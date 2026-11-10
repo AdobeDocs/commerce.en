@@ -71,9 +71,9 @@ This topic explains what changes with CCDM, which capabilities continue, and wha
 
 ## What changes does CCDM introduce?
 
-The original Commerce catalog-services model used [!DNL Catalog Service] to provide catalog data, with [!DNL Live Search] and [!DNL Product Recommendations] for search and recommendations. The CCDM-based model replaces that separate catalog foundation and delivery path with a shared catalog model. Merchandising Services uses that model to provide catalog data and context to storefronts.
+The original catalog-services model in [!DNL Adobe Commerce as a Cloud Service] used [!DNL Catalog Service] to provide catalog data, with [!DNL Live Search] and [!DNL Product Recommendations] supporting search and recommendations. With CCDM, product and price data continue to be managed in [!DNL Commerce Foundation] and synchronize one way to CCDM. [!DNL Merchandising Services] uses CCDM to provide catalog data, search, and recommendations configuration, and storefront-specific context, replacing the previous catalog synchronization and delivery path.
 
-CCDM changes how a storefront gets its catalog data. It does not introduce search, recommendations, merchandising rules, or B2B assortments as new capabilities. Those capabilities were available before this model change. [!DNL Commerce Foundation] and its transaction flows, including cart, checkout, and order management, also continue.
+CCDM changes how storefronts access catalog data. It does not introduce search, recommendations, merchandising rules, or B2B assortments as new capabilities. These capabilities were available before the catalog-model change. [!DNL Commerce Foundation] remains responsible for core commerce operations, including cart, checkout, and order management.
 
 The traditional website, store, and store-view configuration remains in [!DNL Commerce]. CCDM adds a separate way to define the catalog context that a storefront can access:
 
@@ -92,7 +92,7 @@ Merchandising Services is part of Adobe Commerce as a Cloud Service, under the e
 
 Storefronts use CCDM-backed Merchandising Services to retrieve catalog data and context for browsing, search, recommendations, and merchandising. Requests use the catalog context to retrieve products and prices for the intended audience. You continue to manage website, store, and store-view configuration in [!DNL Commerce].
 
-The following diagram shows the position of Merchandising Services in the broader Adobe Commerce as a Cloud Service architecture. The text above describes product ownership and the direction of catalog synchronization.
+The following diagram shows the position of Merchandising Services in the broader Adobe Commerce as a Cloud Service architecture.
 
 ![Commerce architecture showing the catalog data flow into Merchandising Services](./assets/data-flow-ccdm.png){zoomable="yes"}
 
@@ -112,7 +112,10 @@ Continue managing products and prices in [!DNL Commerce Foundation]. The native 
 
 ### Storefront implementation
 
-The catalog-read changes depend on your storefront implementation. [!DNL Adobe Commerce Storefront] drop-ins handle the catalog-read transition. Follow the [storefront setup documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/) and configure catalog request headers using the [storefront header reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
+How your storefront retrieves catalog data depends on your implementation:
+
+- **[!DNL Adobe Commerce Storefront]** drop-ins—The drop-ins handle the transition. No code changes are required. See the [storefront setup documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
+- **Custom or other storefronts**—Update your catalog request headers as described in the [header configuration reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
 Review your catalog queries and request headers for the CCDM-based model. Do not assume that existing queries or headers remain unchanged. The Merchandising GraphQL queries differ from queries used in the original catalog-services model. Additional queries support CCDM. Use the [Merchandising GraphQL API reference](https://developer.adobe.com/commerce/services/reference/graphql/) and verify the required catalog context against the [storefront header reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
@@ -122,7 +125,7 @@ Review third-party apps and extensions that read catalog data or consume catalog
 
 ### Admin experience
 
-Adobe Commerce as a Cloud Service with CCDM uses [!DNL Adobe Unified Experience] (Unified Shell). Adobe released Unified Shell separately from CCDM. Existing instances on the original catalog-services model retain access to both Classic and Unified Shell.
+Adobe Commerce as a Cloud Service with CCDM uses [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe released Unified Shell separately from CCDM. Existing instances on the original catalog-services model retain access to both Classic and Unified Shell.
 
 ### Limits
 
@@ -132,6 +135,6 @@ The CCDM model does not change Adobe Commerce as a Cloud Service limits. Sharing
 
 Organizations that start with Adobe Commerce as a Cloud Service after this release receive Merchandising Services by default. If your organization requires the original catalog data model, contact your Adobe account team to discuss whether an exception is available.
 
-Organizations that had Adobe Commerce as a Cloud Service before this release can choose either catalog model when provisioning a new instance.
+Organizations that had Adobe Commerce as a Cloud Service before this release can choose either catalog model when [provisioning a new instance](getting-started.md/#create-an-instance). By default, the [!UICONTROL Enable CCDM] switcher is disabled. Once CCDM is enabled, you cannot switch it back.
 
 Existing instances do not change automatically. At general availability (GA), you cannot migrate an existing original catalog-services instance to Merchandising Services.
