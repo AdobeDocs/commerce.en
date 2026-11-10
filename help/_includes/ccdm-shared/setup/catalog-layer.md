@@ -83,10 +83,6 @@ For detailed API specifications and payload examples, see [Product Layers](https
 
 ## Add a catalog layer manually in the UI
 
->[!NOTE]
->
->This feature is not yet available.
-
 The catalog view UI allows you to create and manage layers manually, which is particularly useful for integrations like Sites Optimizer that generate AI-powered recommendations. For bulk layer operations, use the data ingestion API method [described above](#add-a-catalog-layer-via-data-ingestion).
 
 If a Sites Optimizer layer does not exist in your catalog view, the auto-fix feature in Sites Optimizer automatically creates one and assigns it the highest priority (highest number). If you delete this layer, it is recreated the next time the auto-fix feature in Sites Optimizer runs and shifts existing layers to lower order numbers. If the Sites Optimizer layer already exists at a different order number, the auto-fix feature does not change its priority.
@@ -112,9 +108,6 @@ The new layer is added to the catalog view and is automatically assigned the nex
 
 ## Preview layer effects
 
->[!NOTE]
->
->This feature is not yet available.
 
 Before activating layers or changing priorities, you can preview how they affect product data.
 
