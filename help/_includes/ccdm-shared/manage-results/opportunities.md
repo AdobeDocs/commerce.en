@@ -142,7 +142,7 @@ To implement an AI-suggested optimization, follow these steps:
 
 If an Adobe Sites Optimizer layer does not exist in your catalog view, auto-fix automatically creates one and assigns it as the highest priority (highest number). If you delete this layer, it will be recreated the next time auto-fix runs and will shift existing layers to lower order numbers. If the Adobe Sites Optimizer layer already exists at a different order number, auto-fix does not change its priority. If you want to keep an auto-fix layer, but not use it immediately, you can disable the layer. Learn more about how to manage [catalog layers](/help/optimizer/setup/catalog-layer.md#manage-layer-activation-and-deletion).
 
-![Catalog Layers](/help/assets/ccdm-shared/opportunities/catalog-layers.png)
+![Catalog Layers](/help/assets/ccdm-shared/setup/catalog-layers.png)
 
 The diagram shows a single row called **ASO Optimization**. This entry represents all opportunities you choose to auto-fix. Whether you auto-fix a single opportunity or multiple opportunities, they all appear in this single **ASO Optimization** row. Layers are specific to each catalog view, so the **Los Angeles** catalog view shown here applies its **ASO Optimization** layer only when that view is active.
 
