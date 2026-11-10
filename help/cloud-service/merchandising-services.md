@@ -1,6 +1,6 @@
 ---
-title: Merchandising Services in [!DNL Adobe Commerce as a Cloud Service]
-description: Learn how Merchandising Services changes catalog management, product discovery, and merchandising in [!DNL Adobe Commerce as a Cloud Service].
+title: Composable Catalog Data Model and Merchandising Services
+description: Understand how Merchandising Services and the composable catalog data model change catalog delivery in [!DNL Adobe Commerce as a Cloud Service] for storefronts.
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -63,50 +63,39 @@ topic_v2:
     internal-label: Personalization
 ---
 
-# Adobe Commerce as a Cloud Service with Merchandising Services
+# Merchandising Services
 
-[!DNL Adobe Commerce as a Cloud Service] with Merchandising Services powered by Catalog Views and Policies pairs a complete commerce platform with a catalog designed around product discovery. Merchandising Services manages product organization, pricing, search, and recommendations on the storefront. [!DNL AdobeCommerce as a Cloud Service] continues to run the transactional side of the business, including cart, checkout, promotions, customer accounts, and orders.
+Merchandising Services provides catalog data to storefronts in [!DNL Adobe Commerce as a Cloud Service]. It uses the composable catalog data model (CCDM) to separate product data from the context that determines which products and prices a storefront can retrieve.
 
-Both parts come in a single subscription. Your teams manage them from the same Commerce Admin, with no separate merchandising product to purchase or provision.
+## What the model replaces
 
-## Key capabilities
+The traditional Adobe Commerce catalog model uses websites, stores, and store views to organize and scope catalog data. CCDM replaces that hierarchy as the model for composing storefront catalogs. It does not replace [!DNL Commerce Foundation] or its transaction flows, such as cart, checkout, and order management.
 
-Merchandising services are built on the composable catalog data model (CCDM), which separates *product data* from *product context*. Product data includes SKUs, attributes, metadata, assets, and prices. Product context defines how that data is delivered, including catalog views, data access policies, and catalog sources (locales).
+CCDM separates:
 
-Catalog views are the center of the composable commerce data model, Each view presents a tailored assortment from your shared catalog to a specific audience, such as a brand, region, dealer network, or customer group. Policies decide which products belong in a view, and price books supply the prices that audience sees. To reach a new market or channel, you configure another view instead of copying catalog data.
+- **Product data**, such as SKUs, attributes, metadata, assets, and prices.
+- **Product context**, including catalog views, policies, catalog sources (locales), and price books.
 
-The same foundation supports B2C and B2B sales. B2B merchants can make a catalog view private so that negotiated assortments and pricing are available only to authorized buyers.
+A catalog view combines this context to define the catalog data and prices available to a storefront. Policies filter products for a business requirement, such as a brand, region, or customer group. You can create views for different audiences without copying the underlying product data.
 
-Merchandisers shape product discovery directly. AI-powered search and recommendations respond to shopper behavior, and merchandising rules let teams pin, boost, bury, or hide products in search results and on category pages. Facets and synonyms help shoppers narrow results and find products described in their own words. Recommendation units support upsell and cross-sell placements throughout the shopping journey.
+## What is new
 
-Success Metrics reporting tracks revenue, conversion, engagement, acquisition, and bounce rate based on storefront activity. Where licensed, the [!DNL Adobe Sites Optimizer] integration adds AI-generated suggestions for improving product pages and discovery.
+For [!DNL Adobe Commerce as a Cloud Service], Merchandising Services introduces the CCDM-based catalog model:
 
-## Business value
+- Product data is separate from the context used to deliver it.
+- Catalog views and policies define the products and prices available to different storefront audiences without copying the underlying product data.
+- Storefront requests can use catalog view and policy identifiers to retrieve data for the required context.
 
-New customers start on the right foundation. Projects launch on the catalog architecture that Adobe continues to build on, so there is no catalog migration to plan after go-live.
+Search and recommendations are existing Commerce capabilities, not new capabilities introduced by CCDM. The change is the catalog model and how storefronts request catalog data.
 
-Growth also becomes less of a project. A new brand, region, or partner channel can often be served by a new catalog view rather than a separate store build or a duplicate catalog.
+## Impact on customers and partners
 
-Decisions about product visibility move closer to the people accountable for results. Merchandisers can change a rule and review its effect in the same Admin, without waiting on a development cycle for routine adjustments.
+- **Merchants** can define audience-specific assortments and pricing with catalog views, policies, catalog sources, and price books.
+- **Storefront developers and integration partners** map catalog requests to the appropriate catalog view and policy, and verify how requests provide locale and pricing context.
+- **Existing customers** are not automatically changed to the CCDM-based model.
 
-Merchandising Services is the base that Adobe uses for new catalog, B2B, and AI-driven merchandising features in [!DNL Adobe Commerce as a Cloud Service]. Those features reach you through regular service updates rather than upgrade projects.
+Cart, checkout, and order management remain part of [!DNL Commerce Foundation]. CCDM changes catalog organization and delivery, not those transaction workflows. New [!DNL Adobe Commerce as a Cloud Service] projects include Merchandising Services by default.
 
-Partners design and deliver against one architecture. Most marketplace apps already work with Merchandising Services, and the rest require only minor updates.
+The following diagram shows the position of Merchandising Services in the [!DNL Adobe Commerce as a Cloud Service] architecture.
 
-## Changes to the merchant experience
-
-Merchants work in one Commerce Admin. Merchandising pages, such as [!UICONTROL Catalog Views], [!UICONTROL Policies], [!UICONTROL Facets], [!UICONTROL Merchandising Rules], and [!UICONTROL Success Metrics], appear in the same navigation as [!UICONTROL Customers], [!UICONTROL Companies], and [!UICONTROL Tax Rules]. Teams sign in once and can move between [!DNL Adobe Experience Cloud] products without signing in again. During this transition, the merchandising pages use a newer visual design than some other Admin pages.
-
-Shoppers notice the change in what they find. Each audience sees an assortment and prices that fit them, and search results and recommendations reflect what shoppers are looking for. B2B buyers see only the catalogs that their company is entitled to.
-
-Order processing does not change. Cart, checkout, and order management work as they do today, so operations teams keep their existing workflows. Partners who build storefronts or apps should review how those solutions request catalog data, because catalog requests differ under the new model.
-
-This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud Service] and all Adobe Experience Cloud solutions.
-
-![Data flow diagram showing [!DNL Adobe Commerce as a Cloud Service] integration with [!DNL Adobe Experience Cloud] solutions](./assets/data-flow-ccdm.png){zoomable="yes"}
-
-## Availability
-
-New [!DNL Adobe Commerce as a Cloud Service] projects include Merchandising Services by default. Existing projects keep their current catalog services and are not changed automatically.
-
-If you are a new [!DNL Adobe Commerce as a Cloud Service] customer, Merchandising Services will be included by default. If you prefer to implement the original data model, contact your Adobe account team to determine if it is possible to opt out.
+![Adobe Commerce as a Cloud Service architecture showing Merchandising Services alongside Commerce Foundation](./assets/data-flow-ccdm.png){zoomable="yes"}
