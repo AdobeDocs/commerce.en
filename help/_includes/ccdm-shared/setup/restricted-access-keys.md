@@ -35,7 +35,7 @@ The following steps describe how a key pair and signed token move from creation 
 How you open the restricted access keys workspace depends on the product you use:
 
 - **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Restricted access keys**.
-- **Adobe Commerce Admin**—Select *System* > *Data Transfer* > **Restricted Access Keys**.
+- **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *System* > *Data Transfer* > **Restricted Access Keys**.
 
 ## Create a restricted access key
 
