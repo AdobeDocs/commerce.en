@@ -34,8 +34,8 @@ The following steps describe how a key pair and signed token move from creation 
 
 How you open the restricted access keys workspace depends on the product you use:
 
-- **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Restricted access keys**.
 - **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *System* > *Data Transfer* > **Restricted Access Keys**.
+- **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Restricted access keys**.
 
 ## Create a restricted access key
 
@@ -45,7 +45,13 @@ How you open the restricted access keys workspace depends on the product you use
 
 ### Add a restricted access key
 
+Select the tab for your product context: Adobe Commerce as a Cloud Service or Adobe Commerce Optimizer Studio.
+
 >[!BEGINTABS]
+
+>[!TAB "Adobe Commerce as a Cloud Service with CCDM"]
+
+Customers using Adobe Commerce as a Cloud Service with CCDM can generate RSA key pairs from the Commerce Admin. See [Manage restricted access keys](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 >[!TAB "Adobe Commerce Optimizer with third-party backend"]
 
@@ -80,10 +86,6 @@ The key size must be between 2048 and 8192 bits. `public-key.pem` contains the v
 
 1. Click **[!UICONTROL Save]**.
 
->[!TAB "Adobe Commerce as a Cloud Service with CCDM"]
-
-Customers using Adobe Commerce as a Cloud Service with CCDM can generate RSA key pairs from the Commerce Admin. See [Manage restricted access keys](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
-
 >[!ENDTABS]
 
 Keys are immutable after creation. To change any value, delete the key and create a new one. See [Rotate a key](#rotate-a-key) to do this without an access interruption.
@@ -116,7 +118,13 @@ Restricted access keys are managed in one of two ways, depending on how you use 
 
 To rotate a key without an access interruption, note that a catalog view can have up to three keys assigned at once:
 
+Select the tab for your product context: Adobe Commerce as a Cloud Service or Adobe Commerce Optimizer Studio.
+
 >[!BEGINTABS]
+
+>[!TAB "Adobe Commerce as a Cloud Service with CCDM"]
+
+See [Key selection and rotation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)
 
 >[!TAB "Adobe Commerce Optimizer with third-party backend"]
 
@@ -124,10 +132,6 @@ To rotate a key without an access interruption, note that a catalog view can hav
 1. Assign the new key to the catalog view alongside the existing key.
 1. Start signing new tokens with the new private key to complete the key rollover.
 1. Once all client applications are confirmed on the new key, remove and delete the old key.
-
->[!TAB "Adobe Commerce as a Cloud Service with CCDM"]
-
-See [Key selection and rotation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)
 
 >[!ENDTABS]
 

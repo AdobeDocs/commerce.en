@@ -10,8 +10,8 @@ Use the *Settings* workspace to configure search and product discovery for your 
 
 How you open the *Settings* workspace depends on the product you use:
 
-- **Adobe Commerce Optimizer Studio**—Select *Merchandising* > **Settings**.
 - **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *Merchandising* > **Merchandising Settings**.
+- **Adobe Commerce Optimizer Studio**—Select *Merchandising* > **Settings**.
 
 >[!BEGINTABS]
 

@@ -6,8 +6,8 @@ The **Data Sync** page provides valuable insights into the availability of produ
 
 How you open the **Data Sync** page depends on the product you use:
 
-- **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Data sync**.
 - **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *System* > **Catalog sync**.
+- **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Data sync**.
 
 ![Data Sync](/help/assets/ccdm-shared/setup/data-sync.png)
 
