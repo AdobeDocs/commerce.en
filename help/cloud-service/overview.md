@@ -85,7 +85,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Merchandising Services</strong>
     </td>
     <td align="left">
-      Backend services that manage product catalogs, pricing, and inventory
+      Backend services that manage product catalogs and pricing. By default, new organizations use the composable catalog data model (CCDM), which separates product data from catalog context.
     </td>
   </tr>
   <tr>
@@ -120,25 +120,20 @@ This diagram illustrates the data flow between [!DNL Adobe Commerce as a Cloud S
 
 To create rich experiences in minutes with simple document-based authoring or visual editing with [!DNL Storefront Builder], use Adobe's [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) powered by [!DNL Edge Delivery Services].
 
-[!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides all Adobe Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
+[!DNL Commerce Storefront] is fully headless with a decoupled architecture that provides Adobe Merchandising Services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the Commerce Foundation, providing the agility to build and test new touchpoints with emerging technologies.
 
 >[!NOTE]
 >
 >[!DNL Adobe Commerce as a Cloud Service] does not support Luma storefronts. If you are migrating from [!DNL Adobe Commerce on Cloud] or on-premises, see [existing storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) for transition guidance.
 
-## Adobe Merchandising services and payment services
+## Merchandising and payment services
 
-Adobe provides a rich set of intelligent, composable merchandising services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
+Merchandising Services supports two catalog data models in [!DNL Adobe Commerce as a Cloud Service]:
 
-- [[!DNL Live Search]](../live-search/overview.md)—Deliver smarter, faster, and relevant results for shoppers with this AI-powered search tool. For setup instructions, see [Setting up [!DNL Live Search]](../live-search/workspace.md).
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more. For configuration instructions, see [[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md).
-- [Catalog Service](../catalog-service/guide-overview.md)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
+- **Original catalog-services model**—Uses [!DNL Catalog Service] with [!DNL Live Search] and [!DNL Product Recommendations] to provide catalog data, search, and recommendations to storefronts.
+- **Composable catalog data model (CCDM)**—Uses catalog views, policies, catalog sources, and price books to define the products and prices available to storefronts. CCDM is also the catalog foundation for [!DNL Adobe Commerce Optimizer].
 
-  >[!NOTE]
-  >
-  >Catalog Service is included automatically with [!DNL Live Search] and [!DNL Product Recommendations].
-
-- [Payment Services](../payment-services/guide-overview.md)—Drive customer satisfaction by offering various payment methods, including interest-free installments, and a single view into processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
+[Payment Services](../payment-services/guide-overview.md) supports payment methods and provides a view of payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -234,7 +229,7 @@ Key features include:
 
 ### Simplified onboarding
 
-Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. Everything that you need, including merchandising services, a headless Commerce instance, and [!DNL App Builder], is automatically configured and integrated with your instances.
+Launch sandbox and production instances in minutes with the [!UICONTROL Commerce Cloud Manager] self-service provisioning portal. The infrastructure that you need, including merchandising services, a headless Commerce instance, and [!DNL App Builder], is automatically configured and integrated with your instances.
 
 See [Getting started](getting-started.md) to learn how to create and manage Commerce instances.
 

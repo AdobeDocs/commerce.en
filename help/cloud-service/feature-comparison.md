@@ -94,7 +94,10 @@ The following table describes the features and replacement solutions available i
         <tr>
             <td>Catalog merchandising</td>
             <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Content staging</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
-            <td><a href="../catalog-service/overview.md">Catalog Service</a></td>
+            <td>
+                <p><strong>Composable Catalog Data Model (CCDM):</strong> <a href="../optimizer/setup/catalog-view.md">Merchandising Services</a> uses catalog views, policies, catalog sources, and price books to define storefront catalog context.</p>
+                <p><strong>Original catalog-services model:</strong> <a href="../catalog-service/guide-overview.md">Catalog Service</a> provides catalog data alongside Live Search and Product Recommendations.</p>
+            </td>
         </tr>
         <tr>
             <td>Payments</td>
@@ -210,8 +213,8 @@ The following table compares platform capabilities and extensibility features to
         </tr>
         <tr>
             <td>App marketplace</td>
-            <td>[Magento Marketplace](https://marketplace.magento.com/) (PHP extensions) and [Exchange Marketplace](https://commercemarketplace.adobe.com) for [!DNL App Builder] apps (Recommended)</td>
-            <td>[!DNL App Builder] apps from [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)</td>
+            <td><a href="https://marketplace.magento.com/">Magento Marketplace</a> (PHP extensions) and <a href="https://commercemarketplace.adobe.com">Exchange Marketplace</a> for [!DNL App Builder] apps (Recommended)</td>
+            <td>[!DNL App Builder] apps from <a href="https://commercemarketplace.adobe.com">[!DNL Exchange Marketplace]</a></td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Data & storage</strong></td>
@@ -252,4 +255,3 @@ The following table compares platform capabilities and extensibility features to
 >- Consider [!DNL API Mesh] for extending API functionality.
 >- Monitor Adobe's ongoing platform evolution and new capability releases.
 >- Evaluate industry-specific data model requirements against available extensibility options.
-
