@@ -156,7 +156,7 @@ Some of these configuration settings are needed as you set up your storefront or
 
 Catalog views are part of the Merchandising Services framework that replaces the website, store, storeview framework used in Adobe Commerce foundations with a more flexible model:
 
-![[!DNL Merchandising Services] Architecture](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture](/help/assets/ccdm-shared/setup/merchandising-svcs-architecture.png)
 
 ### How it works
 

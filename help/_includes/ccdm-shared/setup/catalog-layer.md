@@ -194,6 +194,6 @@ Follow these recommendations when working with catalog layers:
 ## More like this
 
 * [Catalog views](catalog-view.md)—Configure catalog views for different storefronts
-* [Product Visuals](product-visuals.md)—Use AEM Assets for product images
+* [Product Visuals](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals)—Use AEM Assets for product images
 * [Opportunities](../manage-results/opportunities.md)—Learn about AI-powered optimization using catalog layers
 * [Restricted access keys](restricted-access-keys.md)—Protect a catalog view with signed-token authentication
