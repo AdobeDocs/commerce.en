@@ -20,17 +20,39 @@ topic_v2:
 ---
 # Price Books
 
-Price books let you define product prices for a catalog source across different customer tiers and markets. Price books support a hierarchical model, allowing up to three levels of nested child price books under each base price book. Each price book can reference a parent price book, forming a tree structure for pricing catalog sources.
+Price books define product prices for a catalog source across customer tiers and markets. They support a hierarchical model, allowing up to three levels of nested child price books under each base price book. Each price book can reference a parent price book, forming a tree structure for pricing catalog sources.
 
 ![Price Book Hierarchy](../assets/price-book-hier.png)
 
 The base price book defines the currency for itself and all its child price books. Child price books inherit this currency and cannot override it.
 
-## Add price books to [!DNL Adobe Commerce Optimizer]
+## Key concepts
+
+| Term | Description |
+| ------ | ------------- |
+| **Price Book** | Logical grouping that defines prices for a catalog source; for example, specific region, or customer tier and is used to manage product prices. |
+| **Fallback Price Book** | The top-most price book in a hierarchy. It has no parent and is the *only* price book that defines the currency for itself and all its descendant price books.<br/><br/>If no parent is defined during price book creation (through the API), a new fallback price book is created. |
+| **Parent Price Book** | A higher-level price book from which a child price book can inherit prices if they are not explicitly set in the child. |
+| **Hierarchy Depth** | Maximum of three levels (Fallback -> Child -> Grandchild)<br/><br/>not enforced at ingestion time. |
+| **Currency** | Defined for the fallback price book only. Inherited by all child price books.<br/><br/>If currency is not specified during fallback price book creation (through the API) the currency defaults to USD. |
+| **Product Price** | The specific price assigned to a product (SKU) within a particular price book. |
+| **Discounts** | Discounts are defined in product price. Not inherited. |
+
+## Price book implementation
+
+Price-book implementation varies by Commerce deployment.
+
+* In Adobe Commerce Optimizer instances with third-party Commerce backends, price books are created using the Data Ingestion REST API. You assign and manage them from the Catalog View workspace in Commerce Optimizer Studio.
+
+* In Adobe Commerce as a Cloud Service with CCDM, price books are mapped from Adobe Commerce catalog and pricing data. You view the price books assigned to each catalog view from the Commerce Admin.
+
+* In Adobe Commerce on cloud infrastructure or on-premises deployments with the Adobe Commerce Optimizer Connector, price books are also mapped from Adobe Commerce catalog and pricing data. You view the price books assigned to each catalog view from the Catalog View workspace in the connected Commerce Optimizer instance.
+
+## Add price books
 
 You add price books to [!DNL Adobe Commerce Optimizer] using the Price Book API. See the [developer documentation](https://developer.adobe.com/commerce/services/reference/rest/) to learn how to create, update, and delete price books for [!DNL Adobe Commerce Optimizer].
 
-## View price books in [!DNL Adobe Commerce Optimizer]
+## View price books
 
 After you ingest price books into [!DNL Adobe Commerce Optimizer], you can see the list of price books and their corresponding IDs on the **Catalog view** page.
 
@@ -46,14 +68,10 @@ After you ingest price books into [!DNL Adobe Commerce Optimizer], you can see t
 
    ![Price Book Names and IDs](../assets/price-book-name-ids.png)
 
-## Key concepts
+## Configure price book availability
 
-| Term | Description |
-|------|-------------|
-| **Price Book** | Logical grouping that defines prices for a catalog source; for example, specific region, or customer tier and is used to manage product prices. |
-| **Fallback Price Book** | The top-most price book in a hierarchy. It has no parent and is the *only* price book that defines the currency for itself and all its descendant price books.<br/><br/>If no parent is defined during price book creation (through the API), a new fallback price book is created. |
-| **Parent Price Book** | A higher-level price book from which a child price book can inherit prices if they are not explicitly set in the child. |
-| **Hierarchy Depth** | Maximum of three levels (Fallback -> Child -> Grandchild)<br/><br/>not enforced at ingestion time. |
-| **Currency** | Defined for the fallback price book only. Inherited by all child price books.<br/><br/>If currency is not specified during fallback price book creation (through the API) the currency defaults to USD. |
-| **Product Price** | The specific price assigned to a product (SKU) within a particular price book. |
-| **Discounts** | Discounts are defined in product price. Not inherited. |
+Specify the pricing data available for each catalog view by configuring  the price book availability for each view.
+
+1. From the **Catalog View** workspace, select the catalog view you want to configure.
+
+1. In the [!UICONTROL Price Books] section, select the price book options to configure pricing available to stores backed by the catalog view.
