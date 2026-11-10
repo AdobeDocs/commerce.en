@@ -150,6 +150,8 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * Fixed an issue where GraphQL cart queries and mutations could return an error after a configurable product was deleted from a cart.<!-- CCSAAS-5721 -->
 
+* Fixed an issue where saving or retrieving a customer with many saved addresses could time out. <!-- CCSAAS-5599 -->
+
 {{accs-release}}
 
 >[!ENDSHADEBOX]
