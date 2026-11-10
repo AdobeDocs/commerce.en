@@ -85,7 +85,7 @@ The following table highlights the products that power [!DNL Adobe Commerce as a
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="checkmark" align="center"> <strong>Merchandising Services</strong>
     </td>
     <td align="left">
-      Backend services that manage product catalogs and pricing. By default, new organizations use the composable catalog data model (CCDM), which separates product data from catalog context.
+      Backend services that manage product catalogs and pricing. By default, new organizations use the composable catalog data model (CCDM).
     </td>
   </tr>
   <tr>
@@ -130,8 +130,8 @@ To create rich experiences in minutes with simple document-based authoring or vi
 
 Merchandising Services supports two catalog data models in [!DNL Adobe Commerce as a Cloud Service]:
 
-- **Original catalog-services model**—Uses [!DNL Catalog Service] with [!DNL Live Search] and [!DNL Product Recommendations] to provide catalog data, search, and recommendations to storefronts.
-- **Composable catalog data model (CCDM)**—Uses catalog views, policies, catalog sources, and price books to define the products and prices available to storefronts. CCDM is also the catalog foundation for [!DNL Adobe Commerce Optimizer].
+- **Catalog-services model**—Uses [!DNL Catalog Service] with [!DNL Live Search] and [!DNL Product Recommendations] to provide catalog data, search, and recommendations to storefronts.
+- [**Composable catalog data model (CCDM)**(merchandising-services.md)]—Uses catalog views, policies, catalog sources, and price books to define the products and prices available to storefronts. CCDM is also the catalog foundation for [!DNL Adobe Commerce Optimizer].
 
 [Payment Services](../payment-services/guide-overview.md) supports payment methods and provides a view of payment processing, orders, and invoices. For configuration instructions, see [Payment Services Home](../payment-services/payments-home.md).
 
