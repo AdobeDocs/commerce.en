@@ -1,44 +1,8 @@
----
-title: Events Overview
-description: Learn about the events that [!DNL Adobe Commerce Optimizer] uses to improve search and recommendations.
-role: Admin, Developer
-recommendations: noCatalog
-exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-TQID: https://experienceleague.adobe.com/7GSnvyld0t1w3j86HIty1DiQgR8AxYZys3YcGXQ16yQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-    internal-label: Commerce
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-    internal-label: Storefront
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-    internal-label: Configuration
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-    internal-label: Admin
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-    internal-label: Metadata
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-    internal-label: Behavioral data
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-    internal-label: Data collection
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-    internal-label: Insights
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-    internal-label: Machine learning
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
----
 # Events
 
 Events are a critical tool to enhance the shopping experience and drive conversions by leveraging real-time data insights.
 
-[!DNL Adobe Commerce Optimizer] deploys storefront events to your site automatically. These events capture data from shoppers' interactions on your site. This anonymized data powers [recommendations](../../manage-results/recommendation-performance.md), [product discovery](../../manage-results/search-performance.md), and [success metrics](../../manage-results/success-metrics.md).
+Merchandising Services with CCDM deploys storefront events to your site automatically. These events capture data from shoppers' interactions on your site. This anonymized data powers [recommendations](../../manage-results/recommendation-performance.md), [product discovery](../../manage-results/search-performance.md), and [success metrics](../../manage-results/success-metrics.md).
 
 >[!NOTE]
 >
@@ -46,27 +10,34 @@ Events are a critical tool to enhance the shopping experience and drive conversi
 
 The **Events** page lets you observe the storefront event data being collected. Having a view into the event data collection lets merchants verify that they have implemented storefront events correctly and that events are being successfully captured. Merchants can use this page to identify potential problems and take steps to resolve any event issues.
 
+## Access the Events workspace
+
+How you open the *Events* workspace depends on the product you use:
+
+- **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *System* > **Catalog Events**.
+- **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Events**.
+
 ## Event Count
 
 The **Event Counts** tab tracks shopper interactions, such as searches, clicks, and purchases, to help you analyze trends and improve the shopping experience.
 
-![Event Counts](../../assets/event-counts.png){zoomable="yes"}
+![Event Counts](/help/assets/ccdm-shared/setup/event-counts.png){zoomable="yes"}
 
 |Field|Description|
 |---|---|
-|**Date range**|Let's you specify the date range to see a specific subset of data.|
-|**Storefront events per hour**|Displays a graph of showing the number of events triggered on your storefront.|
+|**Date range**|Lets you specify the date range to see a specific subset of data.|
+|**Storefront events per hour**|Displays a graph showing the number of events triggered on your storefront.|
 |**Total storefront events**|A filterable table that shows details for all events triggered on your storefront.|
 
 ## Sanity Check
 
 The **Sanity Check** tab offers insights into the health of each behavioral event, ensuring accurate data collection and functionality. ​
 
-![Sanity Check](../../assets/sanity-check.png){zoomable="yes"}
+![Sanity Check](/help/assets/ccdm-shared/setup/sanity-check.png){zoomable="yes"}
 
 |Field|Description|
 |---|---|
-|**Date range**|Let's you specify the date range to see a specific subset of data.|
+|**Date range**|Lets you specify the date range to see a specific subset of data.|
 |**Product discovery**|Displays the required events to personalize product search results. The **Status** column indicates if the events were received.|
 |**Recommendations**|Displays the required events to personalize product recommendations. The **Status** column indicates if the events were received.|
 
@@ -98,16 +69,16 @@ Some events are required to populate the [search performance dashboard](../../ma
 
 There are two types of data used in recommendations:
 
-- **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
-- **Catalog** - Product metadata, such as name, price, availability, and so on.
+- **Behavioral**—Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
+- **Catalog**—Product metadata, such as name, price, availability, and so on.
 
 Adobe AI aggregates the behavioral and catalog data, creating Recommendations for each recommendation type. The Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
 
-Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Recommendations on your site, you can use the `More like this` recommendation type.
+Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to start using Recommendations quickly on your site, you can use the `More like this` recommendation type.
 
 #### Cold start
 
-When can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
+When can you start using recommendation types that use behavioral data? It depends. This situation is referred to as the _Cold Start_ problem.
 
 The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For recommendations, this means waiting for Adobe AI to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early.
 
@@ -124,19 +95,19 @@ Other variables that can impact the time needed to train:
 
 - Higher traffic volume contributes to faster learning
 - Some recommendation types train faster than others
-- [!DNL Adobe Commerce Optimizer] recomputes behavioral data every four hours. Recommendations become more accurate the longer they are used on your site.
+- The system recomputes behavioral data every four hours. Recommendations become more accurate the longer they are used on your site.
 
 To help you visualize the training progress of each recommendation type, the [create recommendation](../../merchandising/recommendations/create.md#readiness-indicators) page displays readiness indicators.
 
-While data is being collected on your live site and the machine learning models are training, you can finish other testing and configuration tasks needed to set up recommendations. By the time you're done with this work, the models will have enough data to create useful recommendations, allowing you to deploy them to your storefront.
+While data is being collected on your live site and the machine learning models are training, you can finish other testing and configuration tasks needed to set up recommendations. By the time you're done with this work, the models have enough data to create useful recommendations, allowing you to deploy them to your storefront.
 
-If your site doesn't get enough traffic (views, purchases, trends) for most product SKUs, there might not be enough data to complete the learning process. This can make the readiness indicator on the Recommendations workspace seem stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](../../merchandising/recommendations/create.md#readiness-indicators) about readiness indicators.
+If your site doesn't get enough traffic (views, purchases, trends) for most product SKUs, there might not be enough data to complete the learning process. This issue can make the readiness indicator on the Recommendations workspace seem stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendation type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](../../merchandising/recommendations/create.md#readiness-indicators) about readiness indicators.
 
 #### Backup recommendations
 
-If the input data is insufficient for providing all requested recommendation items in a unit, [!DNL Adobe Commerce Optimizer] provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to accurately recommended personalized products. In this case, [!DNL Adobe Commerce Optimizer] surfaces items based on the `Most viewed` recommendation type to this shopper.
+If the input data is insufficient for providing all requested recommendation items in a unit, the system provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to recommend personalized products accurately. In this case, items are surfaced based on the `Most viewed` recommendation type to this shopper.
 
-In the case of insufficient input data collection, the following recommendation types fallback to `Most viewed` recommendation type:
+If input data collection is insufficient, the following recommendation types fall back to `Most viewed` recommendation type:
 
 - `Recommended for you`
 - `Viewed this, viewed that`
