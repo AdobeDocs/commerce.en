@@ -4,6 +4,13 @@ The **Opportunities** page helps you identify and implement optimizations to imp
 
 ![Opportunities](/help/assets/ccdm-shared/opportunities/opportunities.png)
 
+## Access the Opportunities workspace
+
+How you open the *Opportunities* workspace depends on the product you use:
+
+- **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *Merchandising* > **Opportunities**.
+- **Adobe Commerce Optimizer Studio**—Select *Manage Results* > **Opportunities**.
+
 ## What are Opportunities?
 
 [Opportunities](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"} are AI-powered recommendations that help merchandisers identify and address issues impacting their commerce site performance. These recommendations are powered by [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home){target="_blank"}, a cloud-based service that analyzes and improves website performance.
@@ -97,9 +104,7 @@ Before using auto-fix, ensure:
 
 To implement an AI-suggested optimization, follow these steps:
 
-1. Navigate to **Manage Results** > **Opportunities**.
-
-1. In the **Current (Active)** tab, review available optimization suggestions.
+1. From the **[!UICONTROL Opportunities]** workspace, in the **Current (Active)** tab, review available optimization suggestions.
 
 1. Select an opportunity.
 
