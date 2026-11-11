@@ -110,7 +110,7 @@ Restricted access keys are managed in one of two ways, depending on how you use 
 
   Each combination of a shared catalog and a store view is projected as a separate catalog view. A projection is the catalog view, policy, price book reference, and restricted access key configuration data that is exported to the Merchandising Services data layer for that combination. So a shared catalog assigned to multiple store views produces multiple catalog views, each with its own key. Edit or rotate a key for one catalog view without affecting the others.
 
-  Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one. See [B2B shared catalog changes](/help/aco-connector/get-started-b2b-shared-catalogs.md#monitor-b2b-shared-catalog-changes).
+  Keys default to a long expiration period. If you need to rotate a key, add the replacement in the Admin and keep both active until you remove the old one.
 
 - **Manually, for any catalog view**—Key generation, token signing, and rotation are managed entirely by the backend client that authenticates shoppers. [!DNL Adobe Commerce] does not generate or rotate these keys on your behalf. Use the steps earlier in this topic to create, add, and delete keys. To rotate a key, see [Rotate a key](#rotate-a-key).
 
