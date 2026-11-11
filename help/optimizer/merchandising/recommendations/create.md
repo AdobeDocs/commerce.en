@@ -44,6 +44,8 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the _Name your Recommendation_ section, enter a descriptive name for internal reference, such as `Home page most popular`.
 
+1. In the **Storefront reference** section, enter a reference key to identify this recommendation unit in your storefront configuration. After you create the recommendation, you can [copy its value](#get-the-storefront-reference-key) from the **Recommendation Unit details** and use it as the `referenceKey` in the recommendations block. The Reference Key is for storefront configuration; the Storefront display label is the text shoppers see.
+
 1. In the _Select Recommendation type_ section, specify the [type of recommendation](types.md) you want based on your strategy.
 
 1. In the _Storefront display label_ section, enter the [label](best-practice.md#recommendation-labels) that is visible to your shoppers, such as "Top sellers".
@@ -62,7 +64,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    - **Activate** to enable the recommendation unit on your storefront.
 
-   Your recommendation appears on the Recommendations workspace. To use your recommendation on your storefront, you need to find the [recommendation ID](#get-recommendation-id).
+   Your recommendation appears on the Recommendations workspace. To use your recommendation on your storefront, you need the [recommendation ID or reference key](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
@@ -94,21 +96,17 @@ As you create your recommendation unit, experiment with the recommendation type 
 
 For multi-storefront, multi-language, or multi-brand setups, you can configure whether each recommendation applies to all catalog views (global) or to a single [catalog view](../../setup/catalog-view.md). Learn more about how to [set the catalog view](../../manage-results/recommendation-performance.md#select-catalog-view) when working with recommendations.
 
-## Get recommendation ID
+## Get the storefront reference key
 
-After creating a recommendation, you need to retrieve its ID to implement the recommendation unit on your storefront.
+After creating a recommendation, use its reference key to configure the recommendation unit on your storefront.
 
-1. On the **Recommendations** page, select the recommendation.
+1. On the **Recommendations** page, click the information icon (![Info icon](../../assets/info-icon.png)) next to the recommendation name to open the **Recommendation Unit details** page.
 
-1. Click the information icon (![Info icon](../../assets/info-icon.png)) next to the recommendation name.
+   ![Get Recommendation ID](../../assets/get-ref-id.png)
 
-   The **Recommendation Unit details** page displays.
+1. Copy the value from the **Storefront reference key** section.
 
-   ![Get Recommendation ID](../../assets/get-rec-id.png)
-
-1. In the **Recommendation ID** section, copy the ID.
-
-1. Use this ID to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
+1. In the storefront `product-recommendations` block, use this reference key to configure the [recommendation drop-in](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) on your Edge Delivery Services storefront.
 
 ## Manage existing recommendations
 
@@ -123,6 +121,7 @@ You can edit, deactivate, or delete an existing recommendation.
 1. In the menu, you can **Deactivate**, **Delete**, or **Edit** the recommendation. If you select **Edit**, you can adjust the following settings as needed:
 
    - Recommendation name
+   - Reference Key
    - Storefront label
    - Number of products
    - Filter products
