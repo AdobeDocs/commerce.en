@@ -4,7 +4,7 @@
 >
 >The following feature is in [private beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
-Merchandising Services with composable catalog data model (CCDM) ranks results so shoppers see the most relevant products first. The service boosts products whose catalog text **closely matches** the shopper's query, then favors matches where terms appear together, and finally includes broader matches.
+Merchandising Services with the composable catalog data model (CCDM) ranks results so shoppers see the most relevant products first. The service boosts products whose catalog text **closely matches** the shopper's query, then favors matches where terms appear together, and finally includes broader matches.
 
 ## How matches are prioritized
 

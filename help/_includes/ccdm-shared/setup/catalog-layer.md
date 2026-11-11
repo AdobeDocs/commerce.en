@@ -4,6 +4,13 @@ Catalog layers allow you to modify product data without changing the original so
 
 ![Catalog Layers](/help/assets/ccdm-shared/setup/catalog-layers.png)
 
+## Access the Catalog views workspace
+
+You manage catalog layers from the *Catalog views* workspace by selecting a catalog view. How you open the workspace depends on the product you use:
+
+- **Adobe Commerce Admin** (Adobe Commerce as a Cloud Service)—Select *Catalog* > **Catalog views**.
+- **Adobe Commerce Optimizer Studio**—Select *Store setup* > **Catalog views**.
+
 ## How catalog layers work
 
 When a customer views your storefront, the system combines your base catalog data with active catalog layers to display the final product information. The process works as follows:
@@ -89,9 +96,7 @@ If a Sites Optimizer layer does not exist in your catalog view, the auto-fix fea
 
 **To create a manual layer:**
 
-1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
-
-1. Select the catalog view where you want to apply the layer.
+1. From the **[!UICONTROL Catalog views]** workspace, select the catalog view where you want to apply the layer.
 
 1. In the catalog layers section, click **Add catalog layer**.
 
@@ -113,9 +118,7 @@ Before activating layers or changing priorities, you can preview how they affect
 
 **To preview layer changes:**
 
-1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
-
-1. Select the catalog view with the layers you want to preview.
+1. From the **[!UICONTROL Catalog views]** workspace, select the catalog view with the layers you want to preview.
 
 1. In the catalog layers section, select a specific product or use the preview function.
 
@@ -129,9 +132,7 @@ You can enable or disable catalog layers without deleting them, allowing you to 
 
 **To activate or deactivate a layer:**
 
-1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
-
-1. Select the catalog view containing the layer.
+1. From the **[!UICONTROL Catalog views]** workspace, select the catalog view containing the layer.
 
 1. In the catalog layers section, locate the layer you want to toggle.
 
@@ -160,9 +161,7 @@ The order in which layers are applied determines which values appear on your sto
 
 **To reorder layer priorities:**
 
-1. Navigate to **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
-
-1. Select the catalog view containing the layers you want to reorder.
+1. From the **[!UICONTROL Catalog views]** workspace, select the catalog view containing the layers you want to reorder.
 
 1. In the catalog layers section, locate the layer you want to move.
 

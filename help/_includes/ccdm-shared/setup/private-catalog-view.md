@@ -4,7 +4,7 @@ By default, a [catalog view](catalog-view.md) is public. Restrict access to a ca
 
 A catalog view becomes private in one of two ways:
 
-- **Automatically, for B2B shared catalogs**—For Adobe Commerce B2B deployments that use Merchandising Services with the Composable Catalog Data Model, private catalog views are created and configured for you automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
+- **Automatically, for B2B shared catalogs**—For Adobe Commerce B2B deployments that use Merchandising Services with the composable catalog data model (CCDM), private catalog views are created and configured for you automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. See [Automatic private catalog views for B2B shared catalogs](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
 - **Manually, for any catalog view**—To restrict access to a B2C catalog view that would otherwise be public, follow the steps in [Protect a catalog view](#protect-a-catalog-view). See [Restricted access key use cases](restricted-access-keys.md#restricted-access-key-use-cases) for examples, such as partner portals and pre-release previews.
 
@@ -27,7 +27,7 @@ When [!UICONTROL Catalog Protection] is enabled, the price book selector on the 
 - If you enable [!UICONTROL Catalog Protection] on a catalog view that has multiple price books assigned, you cannot save the view until you remove all but one price book.
 - If you previously saved a private catalog view with multiple price book assignments before this restriction existed, the catalog view configuration is not automatically changed. However, the next time you edit the view, you must remove all but one price book before you can save the updates.
 
-In each of these cases, [!DNL Adobe Commerce Optimizer] displays the following validation message: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+In each of these cases, the system displays the following validation message: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
 
 Public catalog views are unaffected by this restriction and can continue to reference multiple price books.
 
@@ -35,7 +35,7 @@ Public catalog views are unaffected by this restriction and can continue to refe
 
 [!BADGE Private Beta]{type=Caution tooltip="Requires the Adobe Commerce Optimizer Connector B2B extension, which is currently in private beta."}
 
-For Adobe Commerce B2B deployments that use Merchandising Services with the Composable Catalog Data Model (CCDM), the system creates and configures private catalog views automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. This configuration includes the catalog view, policy, an initial restricted access key, and a price book reference. With this configuration, you manage restricted access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
+For Adobe Commerce B2B deployments that use Merchandising Services with CCDM, the system creates and configures private catalog views automatically, based on the shared catalog configuration in [!DNL Adobe Commerce]. This configuration includes the catalog view, policy, an initial restricted access key, and a price book reference. With this configuration, you manage restricted access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**).
 
 If you are not using B2B shared catalogs—for example, to protect a catalog view for a partner portal or pre-release preview, use the instructions in [Protect a catalog view](#protect-a-catalog-view) to configure one manually.
 
@@ -92,7 +92,7 @@ If [!UICONTROL Catalog Protection] is enabled and all assigned keys expire, the 
 
 >[!NOTE]
 >
->For Adobe Commerce B2B deployments using Merchandising Services with Composable Catalog Data Model (CCDM), you manage access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). For details, see [Restricted access key management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) in the *[!DNL Adobe Commerce Optimizer Connector] Integration Guide*.
+>For Adobe Commerce B2B deployments using Merchandising Services with CCDM, you manage access keys from the Commerce Admin **Restricted Access Keys** page (**System** > **Data Transfer**). For details, see [Restricted access key management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) in the *[!DNL Adobe Commerce Optimizer Connector] Integration Guide*.
 
 ## More like this
 

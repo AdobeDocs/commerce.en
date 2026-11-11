@@ -6,7 +6,7 @@ Increase customer engagement by adding your own curated list of synonyms. You ca
 
 ## Step 1: Add a synonym
 
-1. From the left rail, go to _Merchandising_ > **Synonyms**.
+1. Go to _Merchandising_ > **Synonyms**.
 1. Click the **[!UICONTROL Create synonyms]** button.
 
 ## Step 2: Define the synonym by type

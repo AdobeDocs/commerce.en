@@ -1,6 +1,6 @@
 ---
-title: Composable Catalog Data Model and Merchandising Services
-description: Learn how the Composable Catalog Data Model changes catalog delivery in [!DNL Adobe Commerce as a Cloud Service] and what merchants and storefront teams need to know.
+title: composable catalog data model and Merchandising Services
+description: Learn how the composable catalog data model changes catalog delivery in [!DNL Adobe Commerce as a Cloud Service] and what merchants and storefront teams need to know.
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner

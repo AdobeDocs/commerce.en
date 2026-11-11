@@ -44,7 +44,7 @@ Price-book implementation varies by Commerce deployment.
 
 * In Adobe Commerce Optimizer instances with third-party Commerce backends, price books are created using the Data Ingestion REST API. You assign and manage them from the Catalog View workspace in Commerce Optimizer Studio.
 
-* In Adobe Commerce as a Cloud Service with CCDM, price books are mapped from Adobe Commerce catalog and pricing data. You view the price books assigned to each catalog view from the Commerce Admin.
+* In Adobe Commerce as a Cloud Service with the composable catalog data model (CCDM), price books are mapped from Adobe Commerce catalog and pricing data. You view the price books assigned to each catalog view from the Commerce Admin.
 
 * In Adobe Commerce on cloud infrastructure or on-premises deployments with the Adobe Commerce Optimizer Connector, price books are also mapped from Adobe Commerce catalog and pricing data. You view the price books assigned to each catalog view from the Catalog View workspace in the connected Commerce Optimizer instance.
 
