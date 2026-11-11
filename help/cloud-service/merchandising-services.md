@@ -73,7 +73,7 @@ This topic explains what changes with CCDM, which features continue, and what th
 
 The original catalog model uses Catalog Service to deliver product data to storefronts, with Live Search and Product Recommendations providing search, merchandising, and recommendation capabilities. In this model, Commerce synchronizes using [SaaS data export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
-With CCDM, these capabilities operate on the same catalog foundation that powers Adobe Commerce Optimizer. [Catalog views](../optimizer/setup/catalog-view.md) and [policies](../optimizer/setup/policy.md) define the catalog context available to a storefront. Policies determine the product assortment, and merchandising rules can apply across all catalog views or be tailored to a specific view.
+With CCDM, these capabilities operate on the same catalog foundation that powers Adobe Commerce Optimizer. [Catalog views](../optimizer/setup/catalog-view.md) and [policies](../optimizer/setup/policies.md) define the catalog context available to a storefront. Policies determine the product assortment, and merchandising rules can apply across all catalog views or be tailored to a specific view.
 
 This changes how the catalog is configured, accessed, and merchandised. CCDM builds on the original Commerce catalog's search, recommendations, and merchandising capabilities while introducing controls at the catalog view-level. Additional management and reporting capabilities are described below.
 
@@ -132,6 +132,6 @@ The CCDM model does not change Adobe Commerce as a Cloud Service limits. Sharing
 
 Organizations that start with Adobe Commerce as a Cloud Service after this release receive Merchandising Services by default. If your organization requires the original catalog data model, contact your Adobe account team to discuss whether an exception is available.
 
-Organizations that had Adobe Commerce as a Cloud Service before this release can choose either catalog model when [provisioning a new instance](getting-started.md/#create-an-instance). By default, the [!UICONTROL Enable CCDM] switcher is disabled. Once CCDM is enabled, you cannot disable it.
+Organizations that had Adobe Commerce as a Cloud Service before this release can choose either catalog model when [provisioning a new instance](getting-started.md#create-an-instance). By default, the [!UICONTROL Enable CCDM] switcher is disabled. Once CCDM is enabled, you cannot disable it.
 
 Existing instances do not change automatically. At general availability (GA), you cannot migrate an existing original catalog-services instance to Merchandising Services.

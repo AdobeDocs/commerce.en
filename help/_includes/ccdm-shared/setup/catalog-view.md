@@ -11,7 +11,7 @@ Catalog views define how your product catalog is organized and displayed. They a
 - **Which products are visible** based on business structure (brands, regions, dealers)
 - **What pricing is shown** through linked price books
 - **How products are filtered** using policies (attributes like brand, model, category)
-- **What [catalog source](catalog-sources.md) is used** based on attributes like locale
+- **What [catalog source](/help/optimizer/setup/catalog-sources.md) is used** based on attributes like locale
 - **Who can access the view's data** through [Catalog Protection](private-catalog-view.md) and [restricted access keys](restricted-access-keys.md)
 
 For example, you can create separate catalog views for:
