@@ -26,6 +26,7 @@ nudge: true
 - Explore Commerce platforms and services {#explore-platforms-and-services}
   - [Platforms and services](portfolio/platform-and-services.md)
   - [Choose a Commerce option](portfolio/choose-commerce-option.md)
+  - [Managed Operations](portfolio/managed-operations.md)
   - [Storefronts](storefronts/overview.md)
   - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
   - [APIs](apis/commerce-apis.md)
