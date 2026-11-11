@@ -49,7 +49,7 @@ This process requires an IMS organization with access to [!DNL Adobe Commerce as
 
 ## Understanding roles
 
-The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. To view or edit these roles, in the Commerce Admin navigate to [!UICONTROL **System**] > [!UICONTROL **Permissions**] > [!UICONTROL **User Roles**].
+The following roles are available for [!DNL Adobe Commerce as a Cloud Service]. To view or edit these roles, in the Commerce Admin navigate to [!UICONTROL **System**] > [!UICONTROL **User Roles**].
 
 You can create custom roles in Commerce Admin to provide users with more granular permissions than the standard Adobe Admin Console roles. Custom Commerce roles and assignments are preserved when users subsequently sign in through Adobe IMS. Users must still have access to the Adobe Commerce as a Cloud Service instance through the Adobe Admin Console. To create custom roles, [define roles in the Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
@@ -199,7 +199,7 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 
 ## Role resources
 
-The following list describes the resources that default roles have permission to access inside the [!DNL Adobe Commerce] Admin. To edit the default permissions for each role, navigate to [!UICONTROL **System**] > [!UICONTROL **Permissions**] > [!UICONTROL **User Roles**] in the Commerce Admin.
+The following list describes the resources that default roles have permission to access inside the [!DNL Adobe Commerce] Admin. To edit the default permissions for each role, navigate to [!UICONTROL **System**] > [!UICONTROL **User Roles**] in the Commerce Admin.
 
 **Users**
 
