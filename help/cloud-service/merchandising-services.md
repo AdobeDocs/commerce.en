@@ -97,7 +97,7 @@ The following diagram shows the position of Merchandising Services in the broade
 
 The new model lets you scope existing merchandising rules to all catalog views or to a specific view. This lets you apply merchandising to each storefront audience. Learn how to [scope a merchandising rule to catalog views](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-In the Admin, you can configure catalog context with [!UICONTROL Catalog Views] and [!UICONTROL Policies]. You can also use [!UICONTROL Success Metrics] to review revenue, conversion, engagement, acquisition, and bounce rate. See [Success Metrics](../optimizer/manage-results/success-metrics.md) for details.
+In the Admin, you can configure catalog context with [!UICONTROL Catalog Views] and [!UICONTROL Policies]. You can also use [!UICONTROL Success Metrics] to review revenue, conversion, engagement, acquisition, and bounce rate. See [Success Metrics](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) for details.
 
 ## Considerations before adoption
 
