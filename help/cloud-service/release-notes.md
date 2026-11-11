@@ -80,11 +80,11 @@ Learn more in [Commerce Admin in Adobe Unified Experience](https://experiencelea
 
 ## November 2026 - release #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items will be released to Production environments on November 10, 2026.
+The following items were released to Production environments on November 10, 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -105,7 +105,7 @@ The new `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter
 
 ### Include shipping addresses
 
-New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints now require a shipping address. Requests without a shipping address return an HTTP 400 error. This change prevents orders without shipping information from causing order email failures. <!-- CCSAAS-5351 -->
+New non-virtual orders created through the `POST /V1/orders` and `PUT /V1/orders/create` REST endpoints now require a [shipping address](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management#shipping-address-requirement-for-new-orders). Requests without a shipping address return an HTTP 400 error. This change prevents orders without shipping information from causing order email failures. <!-- CCSAAS-5351 -->
 
 To create an order without a shipping address:
 
@@ -114,15 +114,15 @@ To create an order without a shipping address:
 
 ### Retrieve [!DNL AEM Assets] category images
 
-The `CategoryInterface` and `CategoryTree` GraphQL types now include an `asset_role_image` field that returns the category image assigned from [!DNL AEM Assets]. <!-- ACCS-2180 -->
+The `CategoryInterface` and `CategoryTree` GraphQL types now include an [`asset_role_image`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/interfaces/category#aem-assets-category-images) field that returns the category image assigned from [!DNL AEM Assets]. <!-- ACCS-2180 -->
 
 ### Retrieve customer store credit balances
 
-The new `GET /V1/customers/:customerId/balance` REST endpoint returns a customer's store credit balance. This endpoint requires the [!UICONTROL Manage Store Credit Balances] permission. <!-- CCSAAS-5274 -->
+The new [`GET /V1/customers/:customerId/balance`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit#retrieve-a-customers-store-credit-balance) REST endpoint returns a customer's store credit balance. This endpoint requires the [!UICONTROL Manage Store Credit Balances] permission. <!-- CCSAAS-5274 -->
 
 ### Retrieve invoice item row totals
 
-The `InvoiceItemInterface` GraphQL type now includes a `row_total` field that returns the stored row subtotal for an invoice item. <!-- USF-4460 -->
+The [`InvoiceItemInterface`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/interfaces/invoice-item#invoice-item-row-totals) GraphQL type now includes a `row_total` field that returns the stored row subtotal for an invoice item. <!-- USF-4460 -->
 
 ### Enhancements and bug fixes
 
@@ -149,6 +149,8 @@ The following selected enhancements, optimizations, and bug fixes are included i
 * Fixed an issue where the `addProductsToCart` GraphQL mutation could return an error when using the out-of-process totals collector. <!-- ACCS-2263, CEXT-6986 -->
 
 * Fixed an issue where GraphQL cart queries and mutations could return an error after a configurable product was deleted from a cart.<!-- CCSAAS-5721 -->
+
+* Fixed an issue where saving or retrieving a customer with many saved addresses could time out. <!-- CCSAAS-5599 -->
 
 {{accs-release}}
 
