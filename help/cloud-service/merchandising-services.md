@@ -73,7 +73,7 @@ This topic explains what changes with CCDM, which features continue, and what th
 
 The original catalog model uses Catalog Service to deliver product data to storefronts, with Live Search and Product Recommendations providing search, merchandising, and recommendation capabilities. In this model, Commerce synchronizes using [SaaS data export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
-With CCDM, these capabilities operate on the same catalog foundation that powers Adobe Commerce Optimizer. [Catalog views](..//setup/catalog-view.md) and [policies](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) define the catalog context available to a storefront. Policies determine the product assortment, and merchandising rules can apply across all catalog views or be tailored to a specific view.
+With CCDM, these capabilities operate on the same catalog foundation that powers Adobe Commerce Optimizer. [Catalog views](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) and [policies](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) define the catalog context available to a storefront. Policies determine the product assortment, and merchandising rules can apply across all catalog views or be tailored to a specific view.
 
 This changes how the catalog is configured, accessed, and merchandised. CCDM builds on the original Commerce catalog's search, recommendations, and merchandising capabilities while introducing controls at the catalog view-level. Additional management and reporting capabilities are described below.
 
