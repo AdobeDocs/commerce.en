@@ -75,3 +75,5 @@ Specify the pricing data available for each catalog view by configuring  the pri
 1. From the **Catalog View** workspace, select the catalog view you want to configure.
 
 1. In the [!UICONTROL Price Books] section, select the price book options to configure pricing available to stores backed by the catalog view.
+
+1. Click **[!UICONTROL Save]** to apply the changes to the catalog view.
