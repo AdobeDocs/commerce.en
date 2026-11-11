@@ -1,5 +1,3 @@
-# Catalog sync
-
 The **Data Sync** page displays an overview of the synchronization status for product data transferred from your data source (your existing Commerce catalog, Product Information Management (PIM) system, Enterprise Resource Planning (ERP) system, and so on) into the Merchandising Services data layer.
 
 The **Data Sync** page provides valuable insights into the availability of product data for your storefront, ensuring that it can be promptly displayed to your shoppers.

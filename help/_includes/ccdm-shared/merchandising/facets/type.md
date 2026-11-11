@@ -1,5 +1,3 @@
-# Types of Facets
-
 Facets come in a variety of types and they appear in the *Filters* list only when relevant. The list of available facets changes according to the products returned. The following characteristics affect their presentation and behavior:
 
 - Pinned facets—The most commonly-used facets can be pinned to the top of the list. The remaining facets are listed in *Sort type* order after the pinned facets.

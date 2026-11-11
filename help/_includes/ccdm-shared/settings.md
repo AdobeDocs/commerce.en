@@ -1,5 +1,3 @@
-# Merchandising Settings
-
 Use the *Settings* workspace to configure search and product discovery for your storefront. The following tabs are available:
 
 - **Facets**—Configure price range groups and intervals used as search filters.

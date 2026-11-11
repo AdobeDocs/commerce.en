@@ -1,5 +1,3 @@
-# Catalog sources
-
 Catalog sources represent authoritative scopes of products, attributes, and categories. They typically map to language, audience, or system-of-origin boundaries and determine search, filter, and sort behavior.
 
 ## Catalog sources versus related concepts

@@ -1,5 +1,3 @@
-# Recommendation Types
-
 [!DNL Product Recommendations] provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. They are based on behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
 
 - [Personalized](#personalized)

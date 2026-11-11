@@ -1,5 +1,3 @@
-# Semantic search
-
 Semantic search uses AI to understand what shoppers mean, not just the exact words they type. Queries such as "dress for a beach wedding" or "comfortable shoes for standing all day" can return relevant products even when your catalog does not use those exact phrases.
 
 The product discovery system combines keyword matching and semantic matching in one search experience. You do not manage separate keyword and semantic modes on the storefront.

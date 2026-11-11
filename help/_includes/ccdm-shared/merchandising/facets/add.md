@@ -1,5 +1,3 @@
-# Create and Manage Facets
-
 Any filterable product attribute can be used as a facet. Facets help customers filter and find products more easily in your store. This article explains how to add, manage, and configure facets in your storefront.
 
 ![Create a Facet](/help/assets/ccdm-shared/facets/create-facet.png)

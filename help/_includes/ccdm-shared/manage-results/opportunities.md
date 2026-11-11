@@ -1,5 +1,3 @@
-# Opportunities
-
 The **Opportunities** page helps you identify and implement optimizations to improve site traffic, user engagement, and conversion rates through integration with Adobe Sites Optimizer.
 
 ![Opportunities](/help/assets/ccdm-shared/opportunities/opportunities.png)

@@ -1,5 +1,3 @@
-# Recommendations Best Practices
-
 Adobe recommends the following guidelines when using recommendations:
 
 - Diversify your recommendation types. Customers start ignoring recommendations if they suggest the same products over and over again.

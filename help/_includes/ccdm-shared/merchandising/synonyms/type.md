@@ -1,5 +1,3 @@
-# Types of Synonyms
-
 One- and two-way synonyms expand the definition of keywords. Some are interchangeable with the keyword, while others represent a subset of the keyword.
 
 ## Two-way

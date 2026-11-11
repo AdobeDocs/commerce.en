@@ -1,5 +1,3 @@
-# Create Synonyms
-
 Increase customer engagement by adding your own curated list of synonyms. You can add up to 200 synonyms per catalog source.
 
 ![Synonym Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)

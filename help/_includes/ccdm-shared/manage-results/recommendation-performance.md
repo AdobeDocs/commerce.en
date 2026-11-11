@@ -1,5 +1,3 @@
-# Recommendations Performance
-
 The Recommendations Performance page displays a list of configured recommendations along with key metrics to help you evaluate their effectiveness. You can configure the view to display metrics for the past day, week, or month. These insights show how often each recommendation unit is viewed or clicked, helping you assess performance and identify opportunities for optimization.
 
 >[!INFO]

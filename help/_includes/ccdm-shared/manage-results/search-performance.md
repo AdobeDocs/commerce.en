@@ -1,5 +1,3 @@
-# Search Performance
-
 The *Search performance* page provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Search performance page provides a snapshot of search metrics for a specific date range and includes the following reports:
 
 - Unique searches

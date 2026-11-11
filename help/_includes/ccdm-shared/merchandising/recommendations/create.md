@@ -1,5 +1,3 @@
-# Create and Manage Recommendations
-
 When you create a recommendation, you create a _recommendation unit_, or widget, that contains the recommended product _items_.
 
 ![Recommendation unit](/help/assets/ccdm-shared/recommendations/unit.png)

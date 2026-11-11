@@ -1,5 +1,3 @@
-# Events
-
 Events are a critical tool to enhance the shopping experience and drive conversions by leveraging real-time data insights.
 
 Merchandising Services with the composable catalog data model (CCDM) deploys storefront events to your site automatically. These events capture data from shoppers' interactions on your site. This anonymized data powers [recommendations](../../manage-results/recommendation-performance.md), [product discovery](../../manage-results/search-performance.md), and [success metrics](../../manage-results/success-metrics.md).

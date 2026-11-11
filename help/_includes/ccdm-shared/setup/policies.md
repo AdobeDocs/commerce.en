@@ -1,5 +1,3 @@
-# Policies
-
 Policies define filters that are applied to products in a catalog view. They help tailor the product assortment returned to a storefront or channel. This ensures that the right content is delivered to the right destination. For example, physical stores, marketplaces, and advertising channels like Google, Facebook, and Instagram.
 
 Policies use product attributes like brand, model, or part category to tailor catalog data to business requirements. ​

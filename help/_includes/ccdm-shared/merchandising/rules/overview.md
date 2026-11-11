@@ -1,5 +1,3 @@
-# Merchandising Rules
-
 Merchandising rules combine logic with actions to shape how products appear in **search results**, in **default product listings** through the **default search rule**, and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
 
 Each **search rule** has three main components:

@@ -1,5 +1,3 @@
-# Create and Manage Rules
-
 Building a rule requires selecting the catalog view where the rule applies, configuring the rule description, type, and defining its conditions and ranking, testing the results, and publishing the rule.
 
 ## Create a rule {#create-a-rule}

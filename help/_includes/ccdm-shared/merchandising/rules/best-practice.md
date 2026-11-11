@@ -1,5 +1,3 @@
-# Merchandising Rules Best Practices
-
 To optimize conversion and revenue, implement effective **search rules**, a strong **default listing** rule, and **[category rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Adjust rankings using sales data, stock, promotions, and [intelligent ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
 It is crucial to establish a well thought out **default rule**. Your [default rule](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determines how search results are initially sorted when no more specific search rule applies, which improves discovery and purchase likelihood. Review it regularly so it keeps pace with shopper needs and campaigns.

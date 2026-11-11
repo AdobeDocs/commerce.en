@@ -1,5 +1,3 @@
-# Success metrics
-
 This page provides an overview of the key performance metrics for your store. The goal is to understand the results of implementing Merchandising Services with the composable catalog data model (CCDM) to identify growth opportunities and areas for optimization.
 
 ![Success metrics report](/help/assets/ccdm-shared/manage-results/success-metrics.png)

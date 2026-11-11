@@ -1,5 +1,3 @@
-# Adobe Merchandising
-
 Learn how to create personalized experiences for your shoppers through product discovery and recommendations.
 
 These Adobe Merchandising services are built on the composable catalog data model (CCDM), which separates *product data* from *product context*. Product data includes SKUs, attributes, metadata, assets, and prices. Product context defines how that data is delivered, including [catalog views](/help/optimizer/setup/catalog-view.md), [data access policies](/help/optimizer/setup/policies.md), and [catalog sources](/help/optimizer/setup/catalog-sources.md) (locales). Because catalog views and policies control storefront data, you can compose custom catalogs for B2B, B2C, and D2C models and tailor shopping experiences without duplicating base data.

@@ -1,5 +1,3 @@
-# Facets Workspace
-
 The *Facets* workspace lists all facets that are currently available and provides access to the tools you need to set up and manage facets. Pinned facets appear first in the list of existing facets, followed by dynamic facets. You can search the list of facets.
 
 ![Facet Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)

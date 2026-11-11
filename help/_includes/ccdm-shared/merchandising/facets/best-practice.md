@@ -1,5 +1,3 @@
-# Facets Best Practices
-
 Filter and facet functionality is a critical component of Commerce experiences, designed to enhance the shopper experience by allowing shoppers to narrow down search results and find products more efficiently. This functionality helps shoppers sort through vast catalogs of items by applying specific criteria, making the shopping process faster, easier, and more satisfying. By implementing effective, shopper-friendly filters and facets, you can help customers find exactly what they need quickly and efficiently, ultimately boosting satisfaction and conversion rates.
 
 ## Tips to optimize facets

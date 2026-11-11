@@ -1,5 +1,3 @@
-# Search matching and ranking
-
 >[!IMPORTANT]
 >
 >The following feature is in [private beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).

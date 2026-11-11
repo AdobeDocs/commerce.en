@@ -1,5 +1,3 @@
-# Restricted access keys
-
 Restricted access keys let authorized client applications access a [private catalog view](private-catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from shoppers who do not have explicit access to this catalog view, and scripts probing the Adobe Commerce Merchandising Services API.
 
 Restricted access keys are provisioned in one of two ways:
@@ -52,11 +50,11 @@ Select the tab for the tool you use to manage keys: Commerce Admin or Adobe Comm
 
 >[!BEGINTABS]
 
->[!TAB "Adobe Commerce Admin"]
+>[!TAB Adobe Commerce Admin]
 
 Customers using Adobe Commerce as a Cloud Service with CCDM, or Adobe Commerce Optimizer connected to Adobe Commerce through the connector, can generate RSA key pairs from the Commerce Admin. See [Manage restricted access keys](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
->[!TAB "Adobe Commerce Optimizer Studio (manual key management)"]
+>[!TAB Adobe Commerce Optimizer Studio - manual key management]
 
 Customers using Adobe Commerce Optimizer Studio must generate and manage their own RSA key pairs, and then add the public key to the system. This is the required workflow for Adobe Commerce Optimizer with a third-party backend. Customers who use the connector can also use this workflow instead of the Commerce Admin.
 
@@ -126,11 +124,11 @@ Select the tab for the tool you use to manage keys: Commerce Admin or Adobe Comm
 
 >[!BEGINTABS]
 
->[!TAB "Adobe Commerce Admin"]
+>[!TAB Adobe Commerce Admin]
 
 See [Key selection and rotation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). This applies to Adobe Commerce as a Cloud Service with CCDM and to Adobe Commerce projects integrated with Adobe Commerce Optimizer through the Adobe Commerce Optimizer connector.
 
->[!TAB "Adobe Commerce Optimizer Studio (manual key management)"]
+>[!TAB Adobe Commerce Optimizer Studio (manual key management)]
 
 This procedure is required for Adobe Commerce Optimizer with a third-party backend. Customers who use the connector can also use it instead of the Commerce Admin.
 
@@ -148,4 +146,3 @@ See [Catalog views and policy limits](https://experienceleague.adobe.com/en/docs
 ## More like this
 
 - [Private catalog views](private-catalog-view.md)—Learn how to protect a catalog view with restricted access keys.
-

@@ -1,5 +1,3 @@
-# Catalog views overview for Adobe Merchandising Services
-
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 A catalog view defines the products and pricing that a client can retrieve. It combines catalog sources, catalog layers, policies, and price books to support different brands, regions, business units, or channels.

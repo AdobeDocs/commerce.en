@@ -1,5 +1,3 @@
-# Merchandising Rules Workspace
-
 The *Merchandising Rules* workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. You can scope rules to all [catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (global) or to a single catalog view. See [Select catalog view](#select-catalog-view) for how to filter by catalog view and create rules per catalog view. From the workspace you can:
 
 - Search for rules
