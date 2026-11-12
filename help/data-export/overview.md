@@ -36,7 +36,7 @@ topic_v2:
 
 >[!NOTE]
 >
->If you install the [!DNL Adobe Commerce Optimizer Connector], the same [!DNL Data Export] extension collects catalog and pricing feeds from [!DNL Adobe Commerce]. The connector then maps and submits those feeds to [!DNL Adobe Commerce Optimizer] using the Composable Catalog Data Model (CCDM). See the [[!DNL Adobe Commerce Optimizer Connector] overview](../aco-connector/overview.md) for setup and architecture, and [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md) for synchronization behavior after export.
+>If you install the [!DNL Adobe Commerce Optimizer Connector], the same [!DNL Data Export] extension collects catalog and pricing feeds from [!DNL Adobe Commerce]. The connector then maps and submits those feeds to [!DNL Adobe Commerce Optimizer] using the composable catalog data model (CCDM). See the [[!DNL Adobe Commerce Optimizer Connector] overview](../aco-connector/overview.md) for setup and architecture, and [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md) for synchronization behavior after export.
 
 SaaS data export collects and exports various types of data, referred to as _feeds_, which aggregate specific types of information. Depending on which Commerce services are installed, the SaaS data export feeds include:
 
