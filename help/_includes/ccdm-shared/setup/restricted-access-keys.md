@@ -1,3 +1,5 @@
+# Restricted Access Keys
+
 Restricted access keys let authorized client applications access a [private catalog view](private-catalog-view.md)—only requests carrying a valid signed token from an assigned key can retrieve catalog data. All other requests are denied, including those from shoppers who do not have explicit access to this catalog view, and scripts probing the Adobe Commerce Merchandising Services API.
 
 Restricted access keys are provisioned in one of two ways:
