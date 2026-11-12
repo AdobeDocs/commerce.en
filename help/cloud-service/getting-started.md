@@ -121,7 +121,7 @@ As a system administrator, you are responsible for setting up the organization a
 | Understand the platform | Learn about Adobe Commerce as a Cloud Service architecture and benefits | [Overview](overview.md) |
 | Compare features | Understand the differences between Cloud Service and other Adobe Commerce offerings | [Feature comparison](feature-comparison.md) |
 | Create an instance | Provision sandbox and production environments | [Create an instance](#create-an-instance) |
-| Set up user management | Add users, assign roles, and manage permissions | [User Management](user-management.md) |
+| Set up user management |Add users and manage access through Adobe Admin Console, and configure roles and permissions in Commerce Admin. | [User Management](user-management.md) |
 | Set up [!DNL AEM Assets] and [!DNL Product Visuals] (optional) | Add users, assign roles, and manage permissions | [User Management](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Merchant]

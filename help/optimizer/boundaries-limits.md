@@ -77,7 +77,7 @@ The following tables summarize the license limits and system boundaries by capab
 | --- | --- | --- | --- |
 | Product Visuals Power users | Licensed user with full digital asset management capabilities, including AI tools, [!DNL Adobe Express]/[!DNL Firefly] integrations, and Content Hub sharing, handling core DAM tasks and advanced cloud-native features for optimal efficiency. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Product Visuals Collaborator users | Access and work with assets through the AEM Commerce integration, create and edit content using [!DNL Adobe Express] and [!DNL Firefly], and—if enabled—leverage approved assets via the Content Hub portal. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
-| Product Visuals storage | Allocated storage space for assets | 1 TB storage | No |
+| Product Visuals storage | Allocated storage space for assets | 1 TB storage | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Dynamic Media usage | Allowance for dynamic media processing operations which includes:<ul><li>Image delivery</li><li>Smart Imaging</li><li>Video Delivery</li></ul><p>For details, see *Calculate Dynamic Media usage* below. | Based on GMV (gross merchandise value)<p>Minimum allocation: 5M operations/month</p> | Yes<ul><li>Purchase license for additional operations</li><li>Upgrade to [!DNL AEM Assets] license</li></ul> |
 | Video delivery | Allowance for video delivery or downloads | 300 videos, 1 minute per video | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Asset generation | Access to [!DNL Adobe Express] and [!DNL Adobe Firefly] generative AI for creating images | None | Purchase Generative AI credits separately |

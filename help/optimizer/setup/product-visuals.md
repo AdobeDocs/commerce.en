@@ -50,42 +50,13 @@ The integration has two independent event flows. Both use [Adobe I/O Events](htt
 
 The updated images are available through storefront APIs (Catalog Service, Live Search, Product Recommendations).
 
-### Source and layer configuration
-
-Images from AEM Assets are ingested as a catalog layer with the following source configuration:
-
-> Example of a source configuration
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-This configuration ensures that AEM Assets images are applied as an overlay on your base product catalog.
-
-## Prerequisites
-
-Before enabling Product Visuals, ensure you meet the [prerequisites for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
-
-## Setup
-
-To enable the integration, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) with your [!DNL Commerce Optimizer] and AEM Assets details. Adobe Support configures the integration and registers your tenant with the Assets Integration Service.
-
-See [Configure AEM Assets for Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) for onboarding information.
-
 ### Configure AEM Assets metadata
 
 To enable automatic product matching, configure your assets in AEM Assets with Commerce metadata.
 
-See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first) for the required metadata fields and steps.
+See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-aem.md) for the required metadata fields and steps.
 
 ## Limitations
-
-Before using Product Visuals, review the [integration limitations](../../aem-assets-integration/get-started/configure-aco.md#limitations) — the layer-related constraints that affect how AEM Assets data merges with your base catalog.
 
 For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
 

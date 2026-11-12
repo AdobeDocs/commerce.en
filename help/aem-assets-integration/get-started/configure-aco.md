@@ -1,6 +1,7 @@
 ---
 title: Configure AEM Assets for Commerce Optimizer
 description: Learn how to configure AEM Assets Integration for [!DNL Adobe Commerce Optimizer].
+hide: true
 feature: CMS, Media, Configuration, Integration
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

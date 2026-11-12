@@ -158,22 +158,6 @@ Select your deployment to follow the required steps in order:
 
 1. Optional. [Enable product-image display](get-started/configure-storefront.md#enable-product-images) so a storefront powered by Edge Delivery Services renders AEM-managed product images.
 
->[!TAB Adobe Commerce Optimizer]
-
-[!BADGE SaaS only]{type=Positive tooltip="Applies to Adobe Commerce Optimizer projects only."}
-
-[!DNL Adobe Commerce Optimizer] It has no Admin configuration UI. Adobe Support configures the integration from your onboarding ticket, so prepare AEM Assets first.
-
-1. To support Commerce metadata, [configure the AEM Assets project](get-started/configure-aem.md). On AEM release `2026.5.26309` and later, use the [self-service onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); on earlier releases, install the `assets-commerce` package manually.
-
-1. [Submit the onboarding support ticket](get-started/configure-aco.md#onboarding) with your tenant ID, AEM Program ID, AEM Environment ID, matching rule, layer, and locale.
-
-1. [Configure your catalog view](get-started/configure-aco.md#onboarding) with the same locale and layer that you registered in the ticket.
-
-1. Optional. [Enable product-image display](get-started/configure-storefront.md#enable-product-images) so a storefront powered by Edge Delivery Services renders AEM-managed product images.
-
-   For the full procedure, limitations, and layer guidance, see [Configure AEM Assets for Commerce Optimizer](get-started/configure-aco.md).
-
 >[!ENDTABS]
 
 ## Support
