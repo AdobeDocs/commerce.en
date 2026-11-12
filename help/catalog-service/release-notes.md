@@ -348,7 +348,7 @@ Applies to:
 
 Major release: [composable catalog data model](https://developer.adobe.com/commerce/services/optimizer/) for headless storefronts, header management, and product data handling.
 
-![New](../assets/new.svg) **Composable Catalog Data Model (CCDM)**—Supports customers using the composable catalog for headless storefronts. New endpoints accept Catalog View and Policy IDs (backward compatible). Configurable product details and prices with built-in pagination.<!--DATA-6018, DATA-6288-->
+![New](../assets/new.svg) **composable catalog data model (CCDM)**—Supports customers using the composable catalog for headless storefronts. New endpoints accept Catalog View and Policy IDs (backward compatible). Configurable product details and prices with built-in pagination.<!--DATA-6018, DATA-6288-->
 
 ![New](../assets/new.svg) **Header Management**–`AC-Locale` renamed to `AC-Scope-Locale` for composable catalog API operations; header mapping and default values specified.<!--DATA-6303, DATA-6078-->
 
