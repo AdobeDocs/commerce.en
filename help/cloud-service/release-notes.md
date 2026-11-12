@@ -78,7 +78,74 @@ Each Admin experience has its own URL. Instance links in Commerce Cloud Manager 
 
 Learn more in [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## November 2026 - release #1 {#latest}
+## November 2026 - release #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items were released to Sandbox environments on November 18, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Product reviews
+
+[Product reviews](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews) are now available for [!DNL Adobe Commerce as a Cloud Service]. <!-- ACCS-2277, ACCS-432 -->
+
+Product reviews are disabled by default. To enable reviews, navigate to [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Catalog] > [!UICONTROL Product Reviews], clear the [!UICONTROL Use System Value] checkbox and set [!UICONTROL Enabled] to **Yes**.
+
+Use the [`reviews`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/reviews) GraphQL query to retrieve reviews and the [`createProductReview`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/mutations/create-review) mutation to create reviews.
+
+### Custom attributes
+
+This release introduces several new REST and GraphQL capabilities for handling custom attributes:
+
+* **Credit memos**
+  * The `GET /V1/creditmemos` REST endpoint can now filter credit memos by custom attribute values. Use the `custom_attributes.<code>` field name in the search criteria, such as `searchCriteria[filter_groups][0][filters][0][field]=custom_attributes.is_appeasement`. <!-- ACCS-2158, ACCS-1915, ACCS-2159, ACCS-2221 -->
+
+  >[!IMPORTANT]
+  >
+  >This feature is disabled by default. To enable it, contact your Adobe Commerce Customer Success Manager or create a support ticket.
+
+* **Orders**
+  * The new `POST /V1/orders/:orderId/customAttributes` REST endpoint adds or updates custom attributes on an existing order. <!-- ACCS-2137 -->
+* **Returns**
+  * Return Merchandise Authorizations (RMAs) now support custom attributes on the return itself, in addition to return items. <!-- CEXT-6925 -->
+    * The `/V1/returns` REST endpoints save and return `custom_attributes` on the return.
+    * The GraphQL `Return` type includes a `custom_attributes` field.
+  * When a return has a `return_address` custom attribute, Commerce uses that address instead of the configured return address. You can set this attribute through the `/V1/returns` REST endpoints or the `observer.rma_save_before` webhook. <!-- ACCS-2184 -->
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* Fixed an issue where saving [!DNL AEM Assets] integration settings through the `PUT /V1/system/config` REST endpoint did not sync product images. <!-- ACCS-2282 -->
+
+* Fixed an issue where the gift SKU selector in a Free Gift cart price rule did not open when multiple inventory sources were enabled. <!-- ACCS-2208 -->
+
+* Fixed an issue where B2B buyers could not return shipped items on the storefront when the products were removed from their company's shared catalog. <!-- ACCS-2283, AC-19727 -->
+
+* Fixed an issue where customers received an additional "You've been linked to a company" email. <!-- ACCS-2292, ACCS-856 -->
+
+* Negotiable quotes and quote templates now include a `created_by` GraphQL field that includes the seller's name and the buyer's name. <!-- USF-4511 -->
+
+* Fixed an issue where the `POST /V1/customers` REST endpoint returned a 400 error. <!-- CCSAAS-5786 -->
+
+* Saving a customer no longer re-saves unchanged addresses. <!-- CCSAAS-5599 -->
+
+* Fixed an issue where simultaneous orders for the same product with [!UICONTROL Manage Stock] turned off could fail. <!-- CCSAAS-5778, ACP2E-5457 -->
+
+* Fixed an issue where the `POST /V1/invoice/:invoiceId/refund` REST endpoint returned an error when you refunded the full remaining invoiced quantity. <!-- CCSAAS-5794, AC-16056 -->
+
+* Improved the performance of the `GET /V1/products` REST endpoint. <!-- CCSAAS-4664 -->
+
+* Product CSV imports now support image URLs that do not end with a filename extension. <!-- CCSAAS-5605 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## November 2026 - release #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
