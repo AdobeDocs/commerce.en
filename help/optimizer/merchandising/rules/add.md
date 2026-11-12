@@ -30,7 +30,7 @@ topic_v2:
 To build and publish a rule:
 
 1. In Optimizer Studio, open the rule editor, choose a **rule type** (search, search suppression, default search, or category), then define conditions and ranking where they apply.
-1. Test the results.
+1. Test the results if a preview is available. Search suppression rules do not show a preview.
 1. Publish the rule.
 
 ## Create a rule {#create-a-rule}
@@ -109,6 +109,10 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 
 A search suppression rule blocks results for queries that match its conditions. It does not require product-level ranking actions. Matching queries return the standard **Zero Results** experience.
 
+>[!NOTE]
+>
+>A preview is not shown for search suppression rules. Review the query conditions before publishing, then verify matching and nonmatching searches on the storefront after the rule becomes active.
+
 1. In **[!UICONTROL Rule applies to]**, select **Search suppression rule**.
 1. Select a query condition and enter the text to match:
 
@@ -119,7 +123,6 @@ A search suppression rule blocks results for queries that match its conditions. 
    | **Query starts with** | The query begins with the specified text. | `restricted brand` blocks `restricted brand accessories`. |
    | **Query ends with** | The query ends with the specified text. | `restricted item` blocks `discount restricted item`. |
 
-1. [Preview the rule](#preview-search-suppression) with matching and nonmatching queries before publishing.
 1. Complete the [schedule and publishing steps](#schedule-publish-search-suppression).
 
 For scope and interactions with other rules, see [Search suppression rules](overview.md#search-suppression-rules).
@@ -167,19 +170,12 @@ Use this workflow to block search terms without changing product visibility else
 1. Enter a unique **Name** and a **Description** that explains the restriction.
 1. Under **[!UICONTROL Rule applies to]**, select **Search suppression rule**.
 1. Configure **Query is**, **Query contains**, **Query starts with**, or **Query ends with**, as described in the **Search suppression rule** tab above.
-1. Preview the rule, set any required dates, and publish it as described below.
-
-#### Preview a search suppression rule {#preview-search-suppression}
-
-1. In the rule editor, enter a query that matches the suppression condition in **Test your rule** and press **Return**.
-1. Confirm that the preview returns no products.
-1. Repeat with other queries that should be blocked, including longer phrases for contains, starts-with, and ends-with conditions.
-1. Enter a nonmatching query that normally returns products and confirm that the suppression condition does not block it.
+1. Complete the [schedule and publishing steps](#schedule-publish-search-suppression).
 
 #### Schedule and publish a search suppression rule {#schedule-publish-search-suppression}
 
 1. In **[!UICONTROL Date range]**, set the start date and, if required, the end date for the restriction. Use a future start date to schedule the rule.
-1. Review the query conditions and preview results.
+1. Review the query conditions.
 1. Click **Save and publish**.
 1. Find the rule in the *Merchandising Rules* workspace and confirm its status and dates. A scheduled rule takes effect during its configured date range when enabled.
 1. After the rule becomes active, confirm that a matching storefront search displays the standard **Zero Results** experience. Cached query results can take up to 15 minutes to refresh.
@@ -188,8 +184,9 @@ Use this workflow to block search terms without changing product visibility else
 
 1. In the *Merchandising Rules* workspace, locate the rule and open **More** (...) > **Edit**.
 1. Update its query conditions, name, description, or date range as needed.
-1. Preview matching and nonmatching queries again.
+1. Review the updated query conditions.
 1. Click **Save and publish** to publish the changes.
+1. After the updated rule becomes active, verify matching and nonmatching searches on the storefront. Cached query results can take up to 15 minutes to refresh.
 
 The catalog view scope cannot be changed after creation. To apply the restriction to another scope, create a rule in that catalog view.
 
@@ -372,6 +369,8 @@ A single rule can have up to 25 attribute conditions, the same limit as manual r
 
 ### Finalizing the rule {#finalizing-the-rule}
 
+For search suppression rules, follow [Schedule and publish a search suppression rule](#schedule-publish-search-suppression) instead. These rules do not show a preview.
+
 1. Examine the results of the rule in the test pane.
 1. If the rule has multiple queries, test each one that might be affected by the rule.
 1. When complete, click **Save and publish**.
@@ -394,7 +393,7 @@ Follow these instructions to update the properties of existing rules. You cannot
 1. Click **Edit** to access the rule editor.
 1. Update the conditions, operators, and events as applicable to the rule type. Search suppression rules use query conditions rather than ranking events.
 1. Update the name, start and end date, and description fields as needed. All rule names must be unique.
-1. Test the rule.
+1. Test the rule if a preview is available. For search suppression rules, review the query conditions instead and verify storefront searches after the updated rule becomes active.
 1. Publish the changes.
    The rule is added to the list in the *Rules* workspace. Although active rules go into effect immediately, it might take up to 15 minutes for cached query results in the storefront to be refreshed.
 

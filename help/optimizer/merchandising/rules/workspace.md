@@ -28,7 +28,7 @@ The *Merchandising Rules* workspace lists the current selection of rules and the
 - Delete rules
 - Access the rule editor
 
-The workspace also includes **[search suppression rules](overview.md#search-suppression-rules)**. Use the same rule management controls to edit, schedule, enable, or disable these rules. To configure query conditions, preview blocked searches, and publish changes, see [Create and manage search suppression rules](add.md#search-suppression-rules).
+The workspace also includes **[search suppression rules](overview.md#search-suppression-rules)**. Use the same rule management controls to edit, schedule, enable, or disable these rules. To configure query conditions and publish changes, see [Create and manage search suppression rules](add.md#search-suppression-rules). A preview is not shown for search suppression rules.
 
 ![Merchandising Rules Workspace](../../assets/rules-workspace.png)
 
@@ -73,7 +73,7 @@ The details panel shows the rule name, status, conditions and events, start and 
 1. Open the **More** (...) menu and select **Enable Rule** or **Disable Rule**. You can also use the **Enabled** control in the details panel.
 1. Confirm the updated status. An enabled rule with a future start date remains scheduled until that date.
 
-For a **search suppression rule**, disabling the rule stops that rule from blocking matching queries without deleting its conditions. Other active suppression rules can still block those queries. To change the rule's conditions or dates, select **Edit**, preview the changes, and click **Save and publish**.
+For a **search suppression rule**, disabling the rule stops that rule from blocking matching queries without deleting its conditions. Other active suppression rules can still block those queries. To change the rule's conditions or dates, select **Edit**, review the changes, and click **Save and publish**.
 
 ## Column descriptions
 

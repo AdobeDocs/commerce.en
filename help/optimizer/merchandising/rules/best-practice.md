@@ -46,18 +46,18 @@ It is crucial to establish a well thought out **default rule**. Your [default ru
 
 ## Search suppression best practices and use cases {#search-suppression-best-practices}
 
-Search suppression blocks matching queries and returns the standard **Zero Results** experience. Choose the narrowest condition that meets the restriction, then follow [Create and manage search suppression rules](add.md#search-suppression-rules).
+Search suppression blocks matching queries and returns the standard **Zero Results** experience. Choose the narrowest condition that meets the restriction, then follow [Create and manage search suppression rules](add.md#search-suppression-rules). A preview is not shown for search suppression rules; verify searches on the storefront after the rule becomes active.
 
 | Use case | Suggested configuration | What to check |
 | --- | --- | --- |
 | Regulatory compliance for search | Scope the rule to the affected catalog view and match the restricted search terms. | Confirm the terms with your compliance team. Search suppression alone does not prevent access through categories, merchandising pages, recommendations, or direct product URLs. |
-| Branding restrictions | Use **Query contains** for a restricted brand name that must be blocked within longer queries. | Preview unrelated queries that contain similar text to avoid suppressing legitimate searches. |
+| Branding restrictions | Use **Query contains** for a restricted brand name that must be blocked within longer queries. | After the rule becomes active, check unrelated storefront queries that contain similar text to avoid suppressing legitimate searches. |
 | Prevent a specific search term from returning results | Use **Query is** for an exact phrase that should return no products. | Check related phrases separately. An exact-match condition does not block every query containing that phrase. |
-| Restrictions on query prefixes or suffixes | Use **Query starts with** or **Query ends with** when the location of the restricted text matters. | Preview the text at the beginning, middle, and end of a query to confirm the intended scope. |
+| Restrictions on query prefixes or suffixes | Use **Query starts with** or **Query ends with** when the location of the restricted text matters. | After the rule becomes active, check storefront queries with the text at the beginning, middle, and end to confirm the intended scope. |
 | Temporary search restrictions | Set a start and end date for a time-limited restriction. | Confirm the schedule and enabled status, and review whether the rule is still needed after the restriction ends. |
 
 - Give each rule a descriptive name and record the reason for the restriction in its description.
-- Preview both queries that should be blocked and queries that should still return products before publishing or editing a rule.
+- Review query conditions before publishing changes. After the rule becomes active, check storefront queries that should be blocked and queries that should still return products. Cached query results can take up to 15 minutes to refresh.
 - Review the storefront's Zero Results experience so shoppers have a useful path to continue browsing.
 - Do not use query suppression as a substitute for product-level exclusions. To exclude products across search results, search suggestions, and autocomplete, use manual exclusions or **Attribute Based Merchandising Events** with a **Hide** action in the **default search rule**.
 - Review active suppression rules regularly. Disable rules that are no longer needed, or edit and publish them when restrictions change.
