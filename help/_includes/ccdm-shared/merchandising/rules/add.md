@@ -297,7 +297,7 @@ Or events can be set manually:
 
 When **[!UICONTROL Hide a product]** is configured in the **default search rule**, excluded products are also removed from **search suggestions and autocomplete**. To block an entire query rather than selected products, use a [search suppression rule](#search-suppression-rules).
 
-### Attribute ranking {#attribute-ranking} {#attribute-ranking}
+### Attribute ranking {#attribute-ranking}
 
 >[!AVAILABILITY]
 >
