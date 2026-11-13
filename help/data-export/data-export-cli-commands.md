@@ -29,7 +29,7 @@ topic_v2:
 ---
 # Sync feeds using the Commerce CLI
 
-The `saas:resync` command in the `magento/saas-export` package lets you manage data synchronization for [!DNL Adobe Commerce] SaaS services.
+The `saas:resync` CLI command lets you manage data synchronization for [!DNL Adobe Commerce] SaaS services.
 
 >[!NOTE]
 >
