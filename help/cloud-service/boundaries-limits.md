@@ -175,6 +175,7 @@ The following capabilities are available for product recommendations. Some featu
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
 | Active recommendation units | Number of live recommendation components on your storefront (like "Customers also viewed" or "You might also like") | 50 active units per page type for Product Recommendations, with explicit catalog-model scoping if necessary | No |
+
 {style="table-layout:auto"}
 <!-- Talos complained about this even thought it was copied directly from the ACO version of this page. Commenting out for now, | Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | — | -->
 
