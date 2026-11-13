@@ -3,7 +3,6 @@ title: Adobe Commerce as a Cloud Service Limits and Boundaries
 description: Learn about Adobe Commerce as a Cloud Service license limits and system boundaries. Plan capacity, track usage, and avoid latency and throttling when limits are exceeded.
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce as a Cloud Service] projects only (Adobe-managed SaaS infrastructure)."
-exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -18,14 +17,16 @@ role_v2:
 
 [!DNL Adobe Commerce as a Cloud Service] applies **license limits** and **system boundaries** that define how much capacity your project can use:
 
-- **License limits**—Based on your purchased capacity; can be expanded by purchasing additional packages.
-- **System boundaries**—Fixed limits that protect system resources and ensure reliable performance for all users.
+- **License limits** are based on your purchased capacity and can be expanded by purchasing additional packages.
+- **System boundaries** are fixed limits that protect system resources and ensure reliable performance for all users.
 
-Your usage must stay within these limits. Exceeding them can cause increased latency and request throttling.
+>[!IMPORTANT]
+>
+> Your usage must stay within these limits. Exceeding them can cause increased latency and request throttling.
 
 ## Request additional capacity
 
-License limits can be increased by purchasing the license packages described in the [License limits and system boundaries](#license-limits-and-system-boundaries) section, or by negotiating custom licensing for unique use cases. Contact your Adobe Account representative to discuss your requirements.
+You can increase your license limits by purchasing the license packages described in [License limits and system boundaries](#license-limits-and-system-boundaries), or by negotiating custom licensing for unique use cases. Contact your Adobe Account representative to discuss your requirements.
 
 For questions about system boundaries, contact [Adobe Support](https://experienceleague.adobe.com/home?lang=en#support).
 
@@ -33,12 +34,12 @@ For questions about system boundaries, contact [Adobe Support](https://experienc
 
 Follow these best practices to stay within limits and avoid operational issues:
 
-- **Review your limits**—Understand your [capacity limits](#license-limits-and-system-boundaries) before launching new storefronts or campaigns.
-- **Track your usage**—Use built-in metrics dashboards or CDN logs.
+- **Review your limits** - Understand your [capacity limits](#license-limits-and-system-boundaries) before launching new storefronts or campaigns.
+- **Track your usage** - Use built-in metrics dashboards or CDN logs.
 
 ## License limits and system boundaries
 
-The following tables summarize the license limits and system boundaries by capability area and include information about adding additional licenses to expand capacity where applicable.
+The following tables summarize the license limits and system boundaries by capability area and include information about using additional licenses to expand capacity where applicable.
 
 ### Environment limits
 
@@ -51,26 +52,26 @@ The following tables summarize the license limits and system boundaries by capab
 
 ### Catalog
 
-| **Capability**                               | **Description**                                                                                           | **Base allocation**                                          | **Expandable?**                                                                                                                                                                                                                                     |
-|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Product ingestion rate                       | The number of products created or updated                                                                 | 1K updates per minute<p>A maximum of 100K updates per day</p> | Yes<p>Add one license pack:</p><ul><li>5K updates per minute<br>A maximum of 500K updates per day</li> <li>10K updates per minute<br>A maximum of 1M updates per day</li></ul><p>The maximum capacity for data ingestion is 1M updates per day.</p> |
-| Product payload size                         | The maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB                                                       | No                                                                                                                                                                                                                                                  |
-| Categories                                   | The number of categories products can be grouped under                                                    | 6,000                                                        | No                                                                                                                                                                                                                                                  |
-| Number of products                           | The number of SKUs supported in the catalog                                                               | 250K SKUs                                                    | Yes<p>Add 100K SKU license pack</p>                                                                                                                                                                                                                 |
-| Variants per product                         | The number of product variants (size, color combinations) allowed per product                             | 10K                                                          | No                                                                                                                                                                                                                                                  |
-| Store views                                  | The number of store view contexts (for example, locales)               | 50                                                           | No                                                                                                                                                                                                                                                  |
-| SLA for a product update to appear in search | Time for a product create/update to appear in storefront search                                           | 10 - 15 minutes                                              | No                                                                                                                                                                                                                                                  |
+| **Capability** | **Description** | **Base allocation** | **Expandable?** |
+| --- | --- | --- | --- |
+| Product ingestion rate | The number of products created or updated | 1K updates per minute<p>A maximum of 100K updates per day</p> | Yes<p>Add one license pack:</p><ul><li>5K updates per minute<br>A maximum of 500K updates per day</li><li>10K updates per minute<br>A maximum of 1M updates per day</li></ul><p>The maximum capacity for data ingestion is 1M updates per day.</p> |
+| Product payload size | The maximum amount of data allowed when creating, updating, or ingesting product information using the API | 200 KB | No |
+| Categories | The number of categories products can be grouped under | 6,000 | No |
+| Number of products | The number of SKUs supported in the catalog | 250K SKUs | Yes<p>Add 100K SKU license pack</p> |
+| Variants per product | The number of product variants (size, color combinations) allowed per product | 10K | No |
+| Store views | The number of store view contexts (for example, locales) | 50 | No |
+| SLA for a product update to appear in search | Time for a product create/update to appear in storefront search | 10 - 15 minutes | No |
 
 {style="table-layout:auto"}
 
 ### Checkout
 
-| **Capability**                 | **Description**                                                                                                | **Base allocation** | **Expandable?** |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------|---------------------|-----------------|
-| Products in cart               | The number of products allowed per shopping cart                                                               | 650                 | No              |
-| Customer addresses per account | The number of customer addresses allowed per account                                                           | 2,000               | No              |
-| Cart price rules               | The number of cart price rules that apply discounts to items in the shopping cart, based on a set of conditions | 100,000             | No              |
-| Coupons                        | The number of coupon codes used with cart price rules                                                          | 1,000,000           | No              |
+| **Capability** | **Description** | **Base allocation** | **Expandable?** |
+| --- | --- | --- | --- |
+| Products in cart | The number of products allowed per shopping cart | 650 | No |
+| Customer addresses per account | The number of customer addresses allowed per account | 2,000 | No |
+| Cart price rules | The number of cart price rules that apply discounts to items in the shopping cart, based on a set of conditions | 100,000 | No |
+| Coupons | The number of coupon codes used with cart price rules | 1,000,000 | No |
 
 {style="table-layout:auto"}
 
@@ -98,11 +99,11 @@ The following tables summarize the license limits and system boundaries by capab
 
 {style="table-layout:auto"}
 
-
 >[!NOTE]
 >
->**Power Users** can access [!DNL Adobe Express] directly or within [!DNL Adobe Commerce as a Cloud Service]. **Collaborator Users** can access the [!DNL Adobe Express] application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
-
+>**Power Users** can access [!DNL Adobe Express] directly or within [!DNL Adobe Commerce as a Cloud Service].
+>
+>**Collaborator Users** can access the [!DNL Adobe Express] application directly. Usage is governed by the [Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 >[!BEGINSHADEBOX "Calculate Dynamic Media usage"]
 
@@ -110,7 +111,7 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 - **Image delivery consumes one dynamic media operation** for each occurrence of the following:
    - **basic image transformation** of a digital asset, for example resize, scale, format conversion, compression, or crop operations.
-   - **static image delivery or download** of said digital assets or digital asset rendition (other than video)
+   - **static image delivery or download** of said digital assets or digital asset rendition (other than video).
 - **Smart Image delivery consumes 20 Dynamic Media Operations** for each optimized delivery of a single digital asset by automatically generating the most appropriate image rendition for an end user's device and browser.
 - **Video delivery consumes 20 Dynamic Media Operations** for a single delivery or download of a video, or a transformed variant of a video.
 
@@ -118,7 +119,7 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 >[!NOTE]
 >
->The limits above cover capacity and usage allocations. For the Product Visuals feature overview and functional constraints, see [Product Visuals with AEM Assets](setup/product-visuals.md).
+>The limits above cover capacity and usage allocations. For the Product Visuals feature overview and functional constraints, see [Product Visuals with AEM Assets](../optimizer/setup/product-visuals.md).
 
 <!--
 ### Catalog views and policies
@@ -142,7 +143,7 @@ The base allocation for catalog storefront capabilities is determined based on G
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
 | Catalog retrieval rate | Number of times a catalog API is called per month by a system (storefront, transaction system, ERP, or other) to retrieve data from the catalog | Based on GMV tier<p>Minimum allocation: 10M/month</p> | Yes<p>Add 1M requests per month license packs</p> |
-| Content requests | Requests to the storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. | Based on GMV tier<p>Minimum allocation: 2M/month</p> | Yes<p>Add 1M per month license pack</p> |
+| Content requests | Requests to the storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. | Based on GMV tier<p>Minimum allocation: 2M per month</p> | Yes<p>Add 1M per month license pack</p> |
 | Storefront GenAI variations | Allowance for text-based content generation | Based on GMV tier<p>Minimum allocation: 1K variations/month</p> | Yes<p>Purchase Generative AI credits separately</p> |
 
 {style="table-layout:auto"}
@@ -150,7 +151,6 @@ The base allocation for catalog storefront capabilities is determined based on G
 >[!NOTE]
 >
 >Image generation requires an [!DNL Adobe Firefly] license provisioned to the same IMS org as [!DNL Adobe Commerce as a Cloud Service].
-
 
 ### Product discovery
 
@@ -183,7 +183,7 @@ The following capabilities are available for product recommendations. Some featu
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | Based on GMV tier<p>Minimum allocation: 1 pack/year</p> | Yes<p>Add additional packs</p> | For limits defined per pack, see:<ul><li>[App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for limits defined per pack.</li><li>[System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.</li><li>[App Builder Storage requirements](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacity for building cloud-native extensions and integrations | Based on GMV tier<p>Minimum allocation: 1 pack/year</p> | Yes<p>Add additional packs</p> | For limits defined per pack, see:<ul><li>[App Builder product description](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html).</li><li>[System Settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) in the *App Builder Runtime Guides*.</li><li>[App Builder Storage requirements](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
