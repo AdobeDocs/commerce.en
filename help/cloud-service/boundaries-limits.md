@@ -156,15 +156,15 @@ The base allocation for catalog storefront capabilities is determined based on G
 
 The following limits apply to storefront product search, listing, and merchandising configuration.
 
-| **Capability** | **Description** | **Base allocation** | **Expandable?** |
-| --- | --- | --- | --- |
-| Product retrieval | Maximum SKUs per [!DNL Catalog Service] GraphQL request when fetching product data with `products`, `productSearch`, `refineProduct`, and `variants`. Split larger requests across multiple calls. | 100 | No |
-| Filterable attributes | The number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 | No |
-| Searchable attributes | The number of product characteristics that can be indexed for catalog search | 200 | No |
-| Sortable attributes | The number of product characteristics available as sort options on search and category pages. | 50 | No |
-| Search pagination depth | Maximum products reachable through search pagination (for example, page 100 × 100 products/page) | 10K | No |
-| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
-| Options per facet | The number of filterable product attribute values shoppers can select within a facet (for example, "Red," "Blue" for Color; "Small," "Medium" for Size) | 100 | Yes<p>Can increase via support request</p> |
+| **Capability** | **Description** | **Base allocation** | **Expandable?**                                   |
+| --- | --- | --- |---------------------------------------------------|
+| Product retrieval | Maximum SKUs per [!DNL Catalog Service] GraphQL request when fetching product data with `products`, `productSearch`, `refineProduct`, and `variants`. Split larger requests across multiple calls. | 100 | No                                                |
+| Filterable attributes | The number of product characteristics (like color, size, brand, or material) that can be enabled for layered navigation and facets | 200 | No                                                |
+| Searchable attributes | The number of product characteristics that can be indexed for catalog search | 200 | No                                                |
+| Sortable attributes | The number of product characteristics available as sort options on search and category pages. | 50 | No                                                |
+| Search pagination depth | Maximum products reachable through search pagination (for example, page 100 × 100 products/page) | 10K | No                                                |
+| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | Yes<p>Can increase to 500 via support request</p> |
+| Options per facet | The number of filterable product attribute values shoppers can select within a facet (for example, "Red," "Blue" for Color; "Small," "Medium" for Size) | 100 | Yes<p>Can increase via support request</p>        |
 
 {style="table-layout:auto"}
 
@@ -174,9 +174,11 @@ The following capabilities are available for product recommendations. Some featu
 
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Active recommendation units | Number of live recommendation components on your storefront (like "Customers also viewed" or "You might also like") | 50 | No |
-| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | — |
+| Active recommendation units | Number of live recommendation components on your storefront (like "Customers also viewed" or "You might also like") | 50 active units per page type for Product Recommendations, with explicit catalog-model scoping if necessary | No |
 
+<!-- Talos complained about this even thought it was copied directly from the ACO version of this page. Commenting out for now, 
+| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | — |
+-->
 {style="table-layout:auto"}
 
 ### Extensibility
