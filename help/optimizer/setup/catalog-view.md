@@ -30,6 +30,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 nudge: true
+last-update: 2026-11-12
 ---
 # Catalog views for Merchandising Services
 
