@@ -28,21 +28,6 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 ---
-# Merchandising
+# Adobe Merchandising
 
-In this section you learn how to create personalized experiences for your shoppers through product discovery and recommendations.
-
-## Product discovery
-
-Product Discovery equips merchandisers with powerful tools to curate and optimize the shopping experience, ensuring that customers find the right products quickly, at the right time. By fine-tuning search behavior, you can directly influence product visibility, relevance, and conversion.
-
-With product discovery, you can:
-
-* **Use [semantic search](../setup/semantic-search.md)** — Enabled by default in [Settings](../settings.md#advanced-search) to improve relevance for natural-language and intent-based queries. No attribute setup or storefront changes are required.
-* **Configure [facets](./facets/overview.md), [merchandising search and category rules](./rules/overview.md) and [synonyms](./synonyms/overview.md)** to guide shoppers toward the most relevant products with minimal friction.
-
-## Recommendations
-
-Recommendations use artificial intelligence and machine learning to analyze aggregated visitor behavior and product interactions across your storefront. By combining this behavioral data with your product catalog, [!DNL Adobe Commerce Optimizer] delivers highly personalized, relevant product suggestions that enhance shopper engagement and increase conversion.
-
-Recommendations display on the storefront as labeled units—such as "Customers who viewed this product also viewed". These units can be strategically placed throughout the shopping journey. As a merchandiser, you can easily create, manage, and deploy these recommendation units directly within [!DNL Adobe Commerce Optimizer] to support promotional goals, cross-sell strategies, and personalized experiences.
+{{$include /help/_includes/ccdm-shared/merchandising/overview.md}}

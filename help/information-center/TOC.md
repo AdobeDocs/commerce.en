@@ -24,17 +24,17 @@ nudge: true
 
 - [Commerce information center](overview.md)
 - Explore Commerce platforms and services {#explore-platforms-and-services}
-  - [Platforms and services](portfolio/platform-and-services.md)
-  - [Choose a Commerce option](portfolio/choose-commerce-option.md)
-  - [Managed Operations](portfolio/managed-operations.md)
-  - [Storefronts](storefronts/overview.md)
-  - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
-  - [APIs](apis/commerce-apis.md)
+   - [Platforms and services](portfolio/platform-and-services.md)
+   - [Choose a Commerce option](portfolio/choose-commerce-option.md)
+   - [Managed Operations](portfolio/managed-operations.md)
+   - [Storefronts](storefronts/overview.md)
+   - [AEM Assets Integration for Commerce](aem-assets/aem-assets-integration.md)
+   - [APIs](apis/commerce-apis.md)
 - [Get started by role](get-started/get-started-by-role.md)
 - Insights and guidance {#insights-and-guidance}
-  - [Overview](guidance-and-insights/overview.md)
-  - [Design a commerce platform for shoppers and AI agents](guidance-and-insights/agentic-commerce/architectural-foundations-agentic-commerce.md)
-  - [Improve product discovery with Adobe Commerce Live Search](guidance-and-insights/catalog-management/improve-product-discovery-live-search.md)
+   - [Overview](guidance-and-insights/overview.md)
+   - [Design a commerce platform for shoppers and AI agents](guidance-and-insights/agentic-commerce/architectural-foundations-agentic-commerce.md)
+   - [Improve product discovery with Adobe Commerce Live Search](guidance-and-insights/catalog-management/improve-product-discovery-live-search.md)
 - Architecture {#architecture}
    - [Overview](architecture-options/overview.md)
    - [Implementation architectures](architecture-options/implementation-architectures.md)
