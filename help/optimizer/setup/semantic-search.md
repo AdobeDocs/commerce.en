@@ -12,6 +12,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+last-update: 2026-11-12
 ---
 # Semantic search
 
