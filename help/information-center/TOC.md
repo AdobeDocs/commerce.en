@@ -34,6 +34,7 @@ nudge: true
 - Insights and guidance {#insights-and-guidance}
    - [Overview](guidance-and-insights/overview.md)
    - [Design a commerce platform for shoppers and AI agents](guidance-and-insights/agentic-commerce/architectural-foundations-agentic-commerce.md)
+   - [Agentic commerce in 2027: five priorities for commerce leaders](guidance-and-insights/agentic-commerce/five-priorities-commerce-leaders-2027.md)
    - [Improve product discovery with Adobe Commerce Live Search](guidance-and-insights/catalog-management/improve-product-discovery-live-search.md)
 - Architecture {#architecture}
    - [Overview](architecture-options/overview.md)

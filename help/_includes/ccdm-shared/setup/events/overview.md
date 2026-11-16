@@ -1,3 +1,15 @@
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
+# Events
+
 Events are a critical tool to enhance the shopping experience and drive conversions by leveraging real-time data insights.
 
 Merchandising Services with the composable catalog data model (CCDM) deploys storefront events to your site automatically. These events capture data from shoppers' interactions on your site. This anonymized data powers [recommendations](../../manage-results/recommendation-performance.md), [product discovery](../../manage-results/search-performance.md), and [success metrics](../../manage-results/success-metrics.md).

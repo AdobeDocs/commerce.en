@@ -1,3 +1,15 @@
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
+# Merchandising Rules
+
 Merchandising rules combine logic with actions to shape how products appear in **search results**, in **default product listings** through the **default search rule**, and on **category pages**. You can boost, bury, pin, or hide products and apply **intelligent ranking** so listings reflect your business goals.
 
 Each **search rule** has three main components:
