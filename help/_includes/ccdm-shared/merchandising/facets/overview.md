@@ -1,3 +1,5 @@
+# Facets
+
 Facets is a method of high-performance filtering that uses multiple dimensions of attribute values as search criteria.
 
 ![Filtered search results](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
