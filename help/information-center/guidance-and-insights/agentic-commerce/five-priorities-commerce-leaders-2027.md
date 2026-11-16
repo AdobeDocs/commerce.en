@@ -1,8 +1,10 @@
 ---
-title: "Agentic Commerce in 2027: Five Priorities for Commerce Leaders"
-description: "Forward guidance for brands preparing for AI-assisted shopping, covering data readiness, discoverability, infrastructure, measurement, and experimentation."
+title: 'Agentic Commerce in 2027: Five Priorities for Commerce Leaders'
+description: Forward guidance for brands preparing for AI-assisted shopping, covering data readiness, discoverability, infrastructure, measurement, and experimentation.
 role: Leader
 recommendations: noCatalog
+autotag-review: '2026-11-13T23:51:37.941Z'
+TQID: 'https://experienceleague.adobe.com/CpeVDHdshsRznMyA0kj851-vvNbrPGbgdW2ZFMc8KlA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -13,6 +15,21 @@ product_v2:
 role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
+topic_v2:
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 
 # Agentic commerce in 2027: five priorities for commerce leaders
@@ -47,7 +64,11 @@ Consider a shopper asking an AI assistant to recommend a waterproof jacket for h
 
 For commerce leaders, this means prioritizing product data quality, enriching product attributes, and ensuring information stays consistent across channels.
 
-The opportunity: Better product information can help AI systems understand your catalog, improve the relevance of product recommendations, and make it easier for customers to find what they need.
+>[!BEGINSHADEBOX]
+
+**The opportunity:** Better product information can help AI systems understand your catalog, improve the relevance of product recommendations, and make it easier for customers to find what they need.
+
+>[!ENDSHADEBOX]
 
 ## 2. Make your products discoverable wherever customers shop
 
@@ -61,7 +82,11 @@ That means brands need to think beyond traditional search rankings and consider 
 
 Structured product information, accessible content, accurate availability, and clear product differentiation can all help support AI discoverability.
 
-The opportunity: Reach customers earlier in their buying journey and create new opportunities to connect with shoppers beyond your own storefront.
+>[!BEGINSHADEBOX]
+
+**The opportunity:** Reach customers earlier in their buying journey and create new opportunities to connect with shoppers beyond your own storefront.
+
+>[!ENDSHADEBOX]
 
 ## 3. Build a commerce foundation that supports AI agents
 
@@ -75,7 +100,11 @@ For example, a shopper could ask an AI assistant to find a laptop within a budge
 
 Technologies such as the Model Context Protocol (MCP) are helping establish ways for AI agents to connect with business tools and services.
 
-The opportunity: Create more connected shopping experiences that reduce friction between product discovery and purchase, while maintaining appropriate security, governance, and customer control.
+>[!BEGINSHADEBOX]
+
+**The opportunity:** Create more connected shopping experiences that reduce friction between product discovery and purchase, while maintaining appropriate security, governance, and customer control.
+
+>[!ENDSHADEBOX]
 
 ## 4. Rethink how you measure commerce success
 
@@ -87,7 +116,11 @@ Commerce leaders should begin exploring new ways to understand how their product
 
 This could include monitoring product visibility in AI-generated recommendations, the accuracy of product information, AI-referred traffic, and how these interactions contribute to sales.
 
-The opportunity: Gain a clearer understanding of emerging shopping journeys and identify where AI-driven experiences are creating business value.
+>[!BEGINSHADEBOX]
+
+**The opportunity:** Gain a clearer understanding of emerging shopping journeys and identify where AI-driven experiences are creating business value.
+
+>[!ENDSHADEBOX]
 
 ## 5. Start experimenting with AI-powered shopping experiences
 
@@ -99,7 +132,11 @@ For example, a retailer could experiment with an AI-powered shopping assistant t
 
 These experiments can help teams understand customer expectations, identify opportunities to reduce friction, and build confidence in new approaches.
 
-The opportunity: Turn emerging AI capabilities into practical customer experiences, while creating a foundation for future innovation.
+>[!BEGINSHADEBOX]
+
+**The opportunity:** Turn emerging AI capabilities into practical customer experiences, while creating a foundation for future innovation.
+
+>[!ENDSHADEBOX]
 
 ## How Adobe is helping shape the future of agentic commerce
 
@@ -123,6 +160,14 @@ The brands that succeed will be those that make their product information access
 
 The future of commerce isn't just about where customers shop. It's about being ready to serve them wherever their shopping journey begins.
 
-Ready to prepare your business for AI-powered commerce?
+>[!BEGINSHADEBOX]
+
+**Ready to prepare your business for AI-powered commerce?**
 
 [Explore Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html) and discover how Adobe can help you build more connected, intelligent shopping experiences.
+
+>[!ENDSHADEBOX]
+
+## Related guidance
+
+* [Design a commerce platform for shoppers and AI agents](architectural-foundations-agentic-commerce.md)—Learn how to serve people and AI agents from a single source of truth.
