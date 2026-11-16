@@ -57,6 +57,13 @@ Updates include:
 
 ## 2026 releases {#release-notes-2026}
 
+### 103.6.1 Release
+
+_November 16, 2026_
+
+![Fix](../assets/fix.svg) Removed the `InventoryDataExporter` and `SaaSInventory` modules. As a result, some inventory-related data is no longer exported. <!--MDEE-1482-->
+![Fix](../assets/fix.svg) Remove obsolete metapackages. <!--MDEE-1197-->
+
 ### 103.6.0 Release
 
 _October 21, 2026_
