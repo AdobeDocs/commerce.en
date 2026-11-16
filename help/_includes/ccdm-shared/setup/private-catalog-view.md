@@ -1,3 +1,5 @@
+# Private catalog views
+
 By default, a [catalog view](catalog-view.md) is public. Restrict access to a catalog view so only requests with a valid signed token can retrieve its data.
 
 A catalog view becomes private in one of two ways:
