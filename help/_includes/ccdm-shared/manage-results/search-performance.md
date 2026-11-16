@@ -1,3 +1,15 @@
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/search-performance.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
+# Search Performance
+
 The *Search performance* page provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Search performance page provides a snapshot of search metrics for a specific date range and includes the following reports:
 
 - Unique searches
@@ -60,7 +72,7 @@ There are several key factors that determine the relevance and effectiveness of 
 
 To optimize search results, monitor relevant Key Performance Indicators (KPIs) such as unique queries, average click position, click-through rates, conversion rate, and zero results rate to understand shopper search interactions. This data guides you to update and refine your search rules regularly.
 
-- **Unique Searches** - The count of distinct search queries performed on your site. The system counts each unique search only once, even if the same shopper or different shoppers repeat it multiple times. This metric helps you understand the diversity of search terms used by customers and provides insights into what products or information shoppers are seeking. Tracking unique searches allows you to:
+- **Unique Searches** - The count of unique searches performed on your site during the selected date range. Multiple searches by the same shopper for the same query are considered unique if submitted more than one hour apart. Use this metric together with the Unique searches report to understand search activity and identify products or information shoppers are seeking. Tracking unique searches allows you to:
 
     - Identify popular search trends and frequently searched items.
     - Detect potential gaps in your product catalog or content.

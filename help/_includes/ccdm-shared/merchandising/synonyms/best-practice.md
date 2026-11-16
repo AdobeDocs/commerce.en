@@ -1,3 +1,15 @@
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
+# Synonym Best Practices
+
 The following provides a list of best practices when creating synonyms.
 
 - The system manages misspellings by default. To include words that shoppers might use, set up synonyms. These words differ from those specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa" while your product is listed as a "couch". Capture a broad range of search terms by entering all the possible words that customers might use to find your products. To improve results, [set synonyms as one-way or two-way](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).

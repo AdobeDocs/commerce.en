@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title description">
+  <title id="title">Five priorities for commerce leaders in 2027</title>
+  <desc id="description">Five priorities to turn AI-assisted shopping into business opportunity, shown as a numbered vertical timeline: data readiness, discoverability, infrastructure, measurement, and experimentation.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1b1b1b"/>
+      <stop offset="1" stop-color="#2c2c2c"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#eb1000" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#eb1000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="spine" gradientUnits="userSpaceOnUse" x1="0" y1="160" x2="0" y2="640">
+      <stop stop-color="#eb1000"/>
+      <stop offset="1" stop-color="#eb1000" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="800" fill="url(#background)"/>
+  <ellipse cx="1260" cy="400" rx="560" ry="460" fill="url(#glow)"/>
+  <g font-family="Adobe Clean, Source Sans Pro, Arial, Helvetica, sans-serif">
+    <rect x="100" y="248" width="56" height="7" rx="3.5" fill="#eb1000"/>
+    <text x="176" y="260" fill="#ff6b5e" font-size="22" font-weight="700" letter-spacing="3">AGENTIC COMMERCE / 2027</text>
+    <g font-size="52" font-weight="700" fill="#ffffff">
+      <text x="100" y="360">Five priorities to turn</text>
+      <text x="100" y="426" fill="#ff5a4d">AI-assisted shopping</text>
+      <text x="100" y="492">into business opportunity</text>
+    </g>
+    <text x="100" y="555" fill="#b3b3b3" font-size="25">A strategic guide for commerce leaders</text>
+
+    <line x1="940" y1="160" x2="940" y2="640" stroke="url(#spine)" stroke-width="4"/>
+
+    <g>
+      <rect x="1000" y="122" width="480" height="76" rx="20" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".18"/>
+      <circle cx="940" cy="160" r="30" fill="#eb1000"/>
+      <text x="940" y="170" fill="#ffffff" font-size="27" font-weight="700" text-anchor="middle">1</text>
+      <text x="1034" y="156" fill="#ffffff" font-size="28" font-weight="700">Data readiness</text>
+      <text x="1034" y="181" fill="#d5d5d5" font-size="18">Rich, consistent product information</text>
+
+      <rect x="1000" y="242" width="480" height="76" rx="20" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".18"/>
+      <circle cx="940" cy="280" r="30" fill="#eb1000"/>
+      <text x="940" y="290" fill="#ffffff" font-size="27" font-weight="700" text-anchor="middle">2</text>
+      <text x="1034" y="276" fill="#ffffff" font-size="28" font-weight="700">Discoverability</text>
+      <text x="1034" y="301" fill="#d5d5d5" font-size="18">Show up in AI answers and recommendations</text>
+
+      <rect x="1000" y="362" width="480" height="76" rx="20" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".18"/>
+      <circle cx="940" cy="400" r="30" fill="#eb1000"/>
+      <text x="940" y="410" fill="#ffffff" font-size="27" font-weight="700" text-anchor="middle">3</text>
+      <text x="1034" y="396" fill="#ffffff" font-size="28" font-weight="700">Infrastructure</text>
+      <text x="1034" y="421" fill="#d5d5d5" font-size="18">Secure, reliable access for AI agents</text>
+
+      <rect x="1000" y="482" width="480" height="76" rx="20" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".18"/>
+      <circle cx="940" cy="520" r="30" fill="#eb1000"/>
+      <text x="940" y="530" fill="#ffffff" font-size="27" font-weight="700" text-anchor="middle">4</text>
+      <text x="1034" y="516" fill="#ffffff" font-size="28" font-weight="700">Measurement</text>
+      <text x="1034" y="541" fill="#d5d5d5" font-size="18">Track AI visibility and referred traffic</text>
+
+      <rect x="1000" y="602" width="480" height="76" rx="20" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".18"/>
+      <circle cx="940" cy="640" r="30" fill="#eb1000"/>
+      <text x="940" y="650" fill="#ffffff" font-size="27" font-weight="700" text-anchor="middle">5</text>
+      <text x="1034" y="636" fill="#ffffff" font-size="28" font-weight="700">Experimentation</text>
+      <text x="1034" y="661" fill="#d5d5d5" font-size="18">Start small, learn quickly, build on what works</text>
+    </g>
+  </g>
+</svg>
