@@ -19,7 +19,7 @@ Each rule type has an information icon in the editor with a short explanation. U
 | **Default search rule** | Default ranking and merchandising across product listings when no more specific search or category rule applies. You can only create one such rule; it cannot contain conditions. |
 | **Category rule** | Applies merchandising and ranking to a single category, controlling product order on that category page. |
 | **Search rule** | Applies merchandising and ranking when shoppers run a search that matches the rule's query conditions. |
-| **Search suppression rule** | Prevents matching search queries from returning products. Shoppers see the standard Zero Results experience. Does not change visibility through category navigation, merchandising pages, recommendations, or direct product URLs. |
+| **Search suppression rule** | Prevents matching search queries from returning products, so the storefront displays a search-results page with zero products. Product visibility through category navigation, merchandising pages, recommendations, and direct product URLs is not affected. |
 
 In the **Build your rule** section, you define the rule name, schedule, rule type, and any applicable conditions and ranking. Search suppression rules block matching queries instead of ranking products.
 
@@ -75,7 +75,7 @@ The conditions are the requirements to trigger an event. A rule can have up to t
 
 >[!TAB Search suppression rule]
 
-A search suppression rule blocks results for queries that match its conditions. It does not require product-level ranking actions. Matching queries return the standard **Zero Results** experience.
+A search suppression rule blocks results for queries that match its conditions. It does not require product-level ranking actions. Matching queries return no products, and the storefront displays a search-results page with zero products.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Use this workflow to block search terms without changing product visibility else
 1. Review the query conditions.
 1. Click **Save and publish**.
 1. Find the rule in the *Merchandising Rules* workspace and confirm its status and dates. A scheduled rule takes effect during its configured date range when enabled.
-1. After the rule becomes active, confirm that a matching storefront search displays the standard **Zero Results** experience. Cached query results can take up to 15 minutes to refresh.
+1. After the rule becomes active, confirm that a matching storefront search displays a search-results page with zero products. Cached query results can take up to 15 minutes to refresh.
 
 #### Edit a search suppression rule
 

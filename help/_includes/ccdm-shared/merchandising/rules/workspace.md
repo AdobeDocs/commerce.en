@@ -118,6 +118,6 @@ Behavioral data that powers [intelligent ranking](add.md#intelligent-ranking) (s
    The rule you create is scoped to the selected catalog view.
 1. Build your rule in the [rule editor](add.md).
 
-   In the editor, define the conditions, events, and details that apply to the rule type. Search suppression rules use query conditions to block results only in the selected catalog view; they do not change product visibility through category navigation, merchandising pages, recommendations, or direct product URLs.
+   In the editor, define the conditions, events, and details that apply to the rule type. Search suppression rules use query conditions to block results only in the selected catalog view. They do not change product visibility through category navigation, merchandising pages, recommendations, or direct product URLs.
 
 You cannot change the catalog view (scope) of a rule after it is created. To apply similar logic to another catalog view, create a new rule and select that catalog view before creating.

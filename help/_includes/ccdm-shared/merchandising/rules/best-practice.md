@@ -2,7 +2,7 @@
 
 To optimize conversion and revenue, implement effective **search rules**, a strong **default listing** rule, and **[category rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Adjust rankings using sales data, stock, promotions, and [intelligent ranking](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
-Use **[search suppression rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)** when specific search terms must not return results, rather than when products only need a different ranking.
+Use [search suppression rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules) only when matching shopper queries must return zero products—not when products need a different ranking.
 
 It is crucial to establish a well thought out **default rule**. Your [default rule](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determines how search results are initially sorted when no more specific search rule applies, which improves discovery and purchase likelihood. Review it regularly so it keeps pace with shopper needs and campaigns.
 
@@ -27,18 +27,18 @@ It is crucial to establish a well thought out **default rule**. Your [default ru
 
 ## Search suppression best practices and use cases {#search-suppression-best-practices}
 
-Search suppression blocks matching queries and returns the standard **Zero Results** experience. Choose the narrowest condition that meets the restriction, then follow [Create and manage search suppression rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). A preview is not shown for search suppression rules; verify searches on the storefront after the rule becomes active.
+A search suppression rule blocks results for queries that match its conditions, so the storefront displays a search-results page with zero products. The rule editor doesn’t provide a preview for suppression rules. Use the narrowest condition that meets the restriction, then follow [Create and manage search suppression rules](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). After the rule becomes active, verify matching and nonmatching searches on the storefront. Check the storefront’s actual no-results presentation.
 
 | Use case | Suggested configuration | What to check |
 | --- | --- | --- |
-| Regulatory compliance for search | Scope the rule to the affected catalog view and match the restricted search terms. | Confirm the terms with your compliance team. Search suppression alone does not prevent access through categories, merchandising pages, recommendations, or direct product URLs. |
-| Branding restrictions | Use **Query contains** for a restricted brand name that must be blocked within longer queries. | After the rule becomes active, check unrelated storefront queries that contain similar text to avoid suppressing legitimate searches. |
+| Regulatory compliance for search | Scope the rule to the affected catalog view and match the restricted search terms. | Confirm the terms with your compliance team. Search suppression alone does not prevent access through category navigation, merchandising pages, recommendations, or direct product URLs. |
+| Branding restrictions | Use **Query contains** when a restricted brand name must be blocked within longer queries. | After the rule becomes active, check unrelated storefront queries that contain similar text to avoid suppressing legitimate searches. |
 | Prevent a specific search term from returning results | Use **Query is** for an exact phrase that should return no products. | Check related phrases separately. An exact-match condition does not block every query containing that phrase. |
 | Restrictions on query prefixes or suffixes | Use **Query starts with** or **Query ends with** when the location of the restricted text matters. | After the rule becomes active, check storefront queries with the text at the beginning, middle, and end to confirm the intended scope. |
 | Temporary search restrictions | Set a start and end date for a time-limited restriction. | Confirm the schedule and enabled status, and review whether the rule is still needed after the restriction ends. |
 
 - Give each rule a descriptive name and record the reason for the restriction in its description.
 - Review query conditions before publishing changes. After the rule becomes active, check storefront queries that should be blocked and queries that should still return products. Cached query results can take up to 15 minutes to refresh.
-- Review the storefront's Zero Results experience so shoppers have a useful path to continue browsing.
+- Review the storefront’s no-results state and make sure shoppers have a useful way to continue browsing, such as revising the query or navigating to a category, where supported by the storefront.
 - Do not use query suppression as a substitute for product-level exclusions. To exclude products across search results, search suggestions, and autocomplete, use manual exclusions or **Attribute Based Merchandising Events** with a **Hide** action in the **default search rule**.
 - Review active suppression rules regularly. Disable rules that are no longer needed, or edit and publish them when restrictions change.
