@@ -53,15 +53,13 @@ topic_v2:
 
 # Design a commerce platform for shoppers and AI agents
 
+![Hero illustration of an agentic commerce platform where humans and AI agents interact with a single source of truth](../../assets/guidance-and-insights/agentic-commerce-hero.png "The architectural foundations of an agentic commerce platform"){width="800"}
+
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="Portrait of Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>Principal Product Marketing Manager</em></td>
 </tr>
 </table>
-
-![Hero illustration of an agentic commerce platform where humans and AI agents interact with a single source of truth](../../assets/guidance-and-insights/agentic-commerce-hero.png "The architectural foundations of an agentic commerce platform")
-
-*Designing a commerce platform where humans and AI agents interact with a single source of truth.*
 
 Commerce is undergoing a structural shift. Customers are no longer relying solely on search engines or browsing storefronts to explore their options. Instead, they are turning to LLM-powered interfaces, chat-based assistants, and agentic shopping tools to ask questions, compare products across retailers, and accelerate early-stage decision-making.
 
