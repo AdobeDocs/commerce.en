@@ -1,3 +1,13 @@
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Merchandising Rules Workspace
 
 The *Merchandising Rules* workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. You can scope rules to all [catalog views](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (global) or to a single catalog view. See [Select catalog view](#select-catalog-view) for how to filter by catalog view and create rules per catalog view. From the workspace you can:
