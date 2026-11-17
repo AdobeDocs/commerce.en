@@ -197,6 +197,14 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 
 ![Developers and Admins tab options in Admin Console](./assets/tab-select.png){width="600" zoomable="yes"}
 
+### Troubleshooting roles
+
+If you log into the Adobe Commerce Admin and see only the [!UICONTROL **Catalog**] section, then you are likely assigned the **User** role. If you need access to other areas of the Admin, you will need to add yourself as a **Developer** or **Admin** through the [Add developers and product profile admins](#add-developers-and-product-profile-admins) process. 
+
+Review [role resources](#role-resources) for information on the permissions granted to each role.
+
+If you do not have access to the Admin Console, contact your organization's Product Profile Admin or System Admin and request that they provide you with appropriate permissions.
+
 ## Role resources
 
 The following list describes the resources that default roles have permission to access inside the [!DNL Adobe Commerce] Admin. To edit the default permissions for each role, navigate to [!UICONTROL **System**] > [!UICONTROL **User Roles**] in the Commerce Admin.
