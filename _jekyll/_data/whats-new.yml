@@ -2,8 +2,88 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. Minor updates,
   such as copy editing, are excluded from this list.
-updated: Mon Nov 9 11:49:43 2026
+updated: Mon Nov 16 15:11:41 2026
 entries:
+- description: Updated the [facet limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)
+    to reflect that the maximum configured facets can be increased through a support
+    request.
+  versions: ''
+  type: technical
+  date: '2026-11-16'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/896
+  merge_commit: d21c7401d0111c3e6b8dd1d65b26d4b480008011
+  contributor: emarr_adobe
+  labels:
+  - technical
+- description: 'Added the [Agentic commerce in 2027: five priorities for commerce
+    leaders](https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/five-priorities-commerce-leaders-2027)
+    article to help commerce leaders prepare for AI-assisted shopping by focusing
+    on product data readiness, discoverability, agent-ready commerce infrastructure,
+    measurement, and experimentation.'
+  versions: ''
+  type: new-topic
+  date: '2026-11-16'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/895
+  merge_commit: b16b6868cabf8bfe6682c4e512c192713a408cfa
+  contributor: meker_adobe
+  labels:
+  - new-topic
+  - Strategy & Guidance
+  - ai-reviewed
+- description: Added Sandbox [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: release-notes
+  date: '2026-11-13'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/891
+  merge_commit: c109643e7791468bfae958025144c968e8595f95
+  contributor: jhoover_adobe
+  labels:
+  - release-notes
+  - ai-reviewed
+- description: Updated the Adobe Commerce Optimizer documentation to cover Adobe Commerce
+    as a Cloud Service with the composable catalog data model (CCDM), including instructions
+    for opening each workspace from the Commerce Admin and from Optimizer Studio:<br/>-
+    Updated [Settings](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+    with navigation for both products.<br/>- Updated [Data Sync](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)
+    with navigation for both products.<br/>- Updated [Policies](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/policies)
+    with navigation for both products.<br/>- Updated [Restricted Access Keys](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys)
+    with navigation and steps for both products.<br/>- Updated [Events Overview](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/events/overview)
+    with navigation for both products.<br/>- Updated [Success metrics](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/success-metrics)
+    with navigation for both products.<br/>- Updated [Search Performance](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-performance)
+    with navigation for both products.<br/>- Updated [Opportunities](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities)
+    with navigation for both products.
+  versions: ''
+  type: major-update
+  date: '2026-11-12'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/880
+  merge_commit: 4d359fed500408f4207581bcb2a9dfbc558f1c06
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - major-update
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: release-notes
+  date: '2026-11-11'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/877
+  merge_commit: 03d9f91906fd99c90437560a3f076feafc717eae
+  contributor: jhoover_adobe
+  labels:
+  - hold for release
+  - release-notes
+  - ai-reviewed
+- description: Added [Merchandising Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/merchandising-services),
+    a guide to CCDM and its impact on catalog management, storefronts, and migration.
+  versions: ''
+  type: new-topic
+  date: '2026-11-11'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/879
+  merge_commit: 342e938a7f18e06a25f574a73edbe747822a8a14
+  contributor: keharper_adobe
+  labels:
+  - new-topic
 - description: Documented the new Reference Key field for product recommendations,
     which you can use instead of the recommendation ID to configure the storefront
     `product-recommendations` block:<br/>- Updated [Create and Manage Recommendations](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create)
