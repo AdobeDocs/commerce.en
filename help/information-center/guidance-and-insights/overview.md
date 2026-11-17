@@ -54,6 +54,7 @@ Developers, architects, technical leaders, commerce strategists, and business te
 ## Start exploring
 
 - [Design a commerce platform for shoppers and AI agents](agentic-commerce/architectural-foundations-agentic-commerce.md)—Learn how to serve people and AI agents from a single source of truth. The article covers a catalog built for machine reasoning, the Model Context Protocol (MCP) and open agentic commerce protocols, and the telemetry that shows how agents represent your brand.
+- [Agentic commerce in 2027: five priorities for commerce leaders](agentic-commerce/five-priorities-commerce-leaders-2027.md)—Prepare for AI-assisted shopping with priorities for product data, discoverability, infrastructure, measurement, and experimentation.
 - [Improve product discovery with Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md)—Learn how to use search performance insights and semantic search to help shoppers find relevant products.
 
 Articles are added to this section as they are published. Check back for expert perspectives, implementation strategies, and recommendations you can put to use right away.
