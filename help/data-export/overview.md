@@ -43,7 +43,6 @@ SaaS data export collects and exports various types of data, referred to as _fee
 - **Catalog entity feeds** aggregate product data. Data includes products, product attributes, product prices, product variations, categories, category permissions, and product permissions.
 - The **Scopes feed** aggregates data for customer groups, websites, stores, and store views.
 - The **Sales Order feed** aggregates orders data including their related entities such as invoices, shipments, credit memos, and so on.
-- The **Multi-Source Inventory feed** aggregates data about inventory stock status items.
 
 SaaS data export is delivered as a PHP extension that supports both automated and manual synchronization:
 
