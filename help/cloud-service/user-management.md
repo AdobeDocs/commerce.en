@@ -199,7 +199,7 @@ To add developers and product profile admins, repeat the [add users](#add-users)
 
 ### Troubleshooting roles
 
-If you log into the Adobe Commerce Admin and see only the [!UICONTROL **Catalog**] section, then you are likely assigned the **User** role. If you need access to other areas of the Admin, you will need to add yourself as a **Developer** or **Admin** through the [Add developers and product profile admins](#add-developers-and-product-profile-admins) process. 
+If you log into the Adobe Commerce Admin and see only the [!UICONTROL **Catalog**] section, then you are likely assigned the **User** role. If you need access to other areas of the Admin, you need to [add yourself as a **Developer**](#add-developers-and-product-profile-admins). 
 
 Review [role resources](#role-resources) for information on the permissions granted to each role.
 
