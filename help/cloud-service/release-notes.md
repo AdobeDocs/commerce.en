@@ -84,7 +84,7 @@ Learn more in [Commerce Admin in Adobe Unified Experience](https://experiencelea
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-The following items were released to Sandbox environments on November 18, 2026.
+The following items were released to Production environments on November 18, 2026.
 
 >[!BEGINSHADEBOX]
 
