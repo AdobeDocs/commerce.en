@@ -66,7 +66,6 @@ Use the values and formulas in the following table to calculate the data volume 
 | Product Overrides | Products with permissions or in shared catalog (P): 10000, Affected Customer Groups (CG): 5, Assigned Websites WS: 2 | P \* WS * CG  = 100000 | 100000 / Batch Size (100) = 1000 requests | (1000 requests * 0.5 seconds per request) / 60 = 8.3 minutes |
 | Product Variants | Variants (child products) assigned to configurable products (PV): 100000 | PV = 100000 | 100000 / Batch Size (100) = 1000 requests | (1000 requests * 0.5 seconds per request) / 60 = 8.3 minutes |
 | Category Permissions | Count of all Category Permissions + 4 fallback records (CP): 10000 | CP = 10000 | 10000 / Batch Size (100) = 100 requests | (100 requests * 0.5 seconds per request) / 60 = 0.8 minutes (50 seconds) |
-| Inventory Stock Status | Products (P): 10000, Stocks products assigned to (S): 5 (assuming every product is assigned to every stock) | P * S = 50000 | 50000 / Batch Size (100) = 500 requests | (500 requests * 0.5 seconds per request) / 60 = 4.2 minutes |
 | Sales Orders | All order records (including invoices, shipments, and so on) (SO): 10000 | SO = 10000 | 10000 / Batch Size (100) = 100 requests | (100 requests * 0.5 seconds per request) / 60 = 0.8 minutes (50 seconds) |
 
 >[!MORELIKETHIS]
