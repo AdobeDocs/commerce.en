@@ -1,6 +1,6 @@
 ---
 title: Merchandising Rules Best Practices
-description: Learn the best practices for implementing merchandising rules for search, default listings, and category pages.
+description: Learn the best practices for implementing merchandising rules for search, search suppression, default listings, and category pages.
 role: Admin, Developer
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
