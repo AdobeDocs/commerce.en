@@ -1,6 +1,6 @@
 ---
 title: Merchandising Rules
-description: "[!DNL Adobe Commerce Optimizer] merchandising rules combine logic with actions to shape search results, default product listings, and category pages."
+description: "[!DNL Adobe Commerce Optimizer] merchandising rules shape search results, suppress search queries, and control default product listings and category pages."
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-11-12
+last-update: 2026-11-16
 ---
 # Merchandising Rules
 

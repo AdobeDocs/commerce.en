@@ -1,6 +1,6 @@
 ---
 title: Create and Manage Rules
-description: Learn how to create and manage merchandising rules for search, default product listings, and category pages.
+description: Learn how to create and manage merchandising rules for search, search suppression, default product listings, and category pages.
 badgeSaas: label="SaaS only" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce as a Cloud Service and [!DNL Adobe Commerce Optimizer] projects only (Adobe-managed SaaS infrastructure)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-11-12
+last-update: 2026-11-16
 ---
 # Create and Manage Rules
 
