@@ -147,7 +147,7 @@ The following selected enhancements, optimizations, and bug fixes are included i
 
 * An optional setting is available to reduce repeated calls to the `collect_taxes` webhook. Contact your Adobe Commerce Customer Success Manager to enable it.
 
-* The `collect_taxes` webhook payload now includes `is_virtual` for each item and a `parent_code` for child items of dynamic-price bundles. <!-- CEXT-7035 --> <!-- CEXT-7049 -->
+* The `collect_taxes` webhook payload now includes `is_virtual` for each item and a `parent_code` for child items of dynamic-price bundles. <!-- CEXT-7035, CEXT-7049 -->
 
 * Fixed an issue where the `addProductsToCart` GraphQL mutation could return the original price for new items instead of the item prices returned by the webhook. <!-- CEXT-7019 -->
 
