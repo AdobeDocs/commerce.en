@@ -137,31 +137,36 @@ Merchandising Services supports two catalog data models in [!DNL Adobe Commerce 
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
-Product Visuals helps simplify asset management using a digital asset management (DAM) system that integrates with Adobe Experience Manager for managing rich media content.
+Product Visuals supports Commerce-focused digital asset management (DAM), including managing product assets, Commerce metadata, and asset delivery, powered by Adobe Experience Manager Assets.
 
 The integration ensures that digital assets, such as product images or marketing content, dynamically link to the appropriate merchandising entities, including products and categories in Adobe Commerce, based on SKU or other key attributes.
 
-[!DNL Product Visuals] is available natively with [!DNL Adobe Commerce as a Cloud Service], providing some of the capabilities from [!DNL AEM Assets].
+[!DNL Product Visuals] is included with [!DNL Adobe Commerce as a Cloud Service]. It bundles [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime), a lightweight DAM, with Dynamic Media with OpenAPI capabilities for asset delivery.
 
 Alternatively, the native capabilities within [!DNL Adobe Commerce as a Cloud Service] provide basic asset management tools for storing and managing digital assets.
 
 Check the [AEM Assets integration](../aem-assets-integration/overview.md) guide to learn more about how to integrate [!DNL Product Visuals powered by AEM Assets] with [!DNL Adobe Commerce as a Cloud Service].
 
-### [!DNL Product Visuals] or [!DNL AEM Assets]
+### [!DNL Product Visuals] or [!DNL AEM Assets Ultimate]
 
-The following comparison helps you select the best option for your content supply chain needs:
+The following comparison helps you select the best option for your content supply chain needs. Product Visuals supports Commerce-focused asset management. [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) supports broader enterprise DAM and complex content supply chains, including UI extensibility, API-driven automation, and custom code deployment.
+
+>[!IMPORTANT]
+>
+>AEM Assets Ultimate is not included with Product Visuals. To use Ultimate, purchase an AEM Assets Ultimate add-on SKU. Contact your Adobe account representative to discuss licensing and provisioning.
 
 <table>
   <tr>
     <td align="left">
       <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
+        <li>Included with Adobe Commerce as a Cloud Service</li>
         <li>Integrated, automated product image and video Digital Asset Manager (DAM)</li>
         <li>Resize, crop, and convert images</li>
         <li>High-speed image and video delivery</li>
         <li>Optimize image formats, sizes, and quality based on client browser capabilities</li>
         <li>Access to Adobe Express and Adobe Firefly</li>
-        <li>Usage limits for image/video delivery capacity and user access</li>
+        <li>Usage limits for asset storage, image/video delivery capacity, and user access</li>
         <li>Integrated asset selector</li>
       </ul>
     </td>
@@ -170,13 +175,18 @@ The following comparison helps you select the best option for your content suppl
       <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong>[!DNL AEM Assets Ultimate]</strong>
       <ul>
+        <li>Requires an AEM Assets Ultimate add-on SKU</li>
         <li>All capabilities from Product Visuals</li>
         <li>Full marketing Digital Asset Manager (DAM)</li>
-        <li>Unlimited users (pay per user)</li>
-        <li>Unlimited image and video delivery</li>
-        <li>Advanced asset management functionality:</li>
+        <li>User access based on purchased licenses</li>
+        <li>Image and video delivery based on licensed Dynamic Media capacity</li>
+        <li>AEM Assets Author API access and integrations that use AEM Assets APIs to manage assets or metadata programmatically</li>
+        <li>API-based metadata integrations, including metadata ingress and egress</li>
+        <li>UI extensibility, API-driven automation, and custom code deployment</li>
+        <li>AEM Assets Stage and Development environments</li>
+        <li>Advanced asset management functionality, with Dynamic Media features subject to the applicable add-on license:</li>
         <ul>
           <li>360° spin sets and interactive viewers</li>
           <li>3D model support and immersive content</li>
@@ -195,6 +205,10 @@ The following comparison helps you select the best option for your content suppl
     </td>
   </tr>
 </table>
+
+>[!NOTE]
+>
+>Supported Bulk Upload and Bulk Metadata operations do not, by themselves, require AEM Assets Ultimate. App Builder usage alone does not require Ultimate; the requirement depends on the AEM Assets APIs the application uses. Product Visuals includes Dynamic Media with OpenAPI capabilities for asset delivery. For capability entitlements, capacity, and usage allocations, see [Product Visuals limits](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Developer Platform
 

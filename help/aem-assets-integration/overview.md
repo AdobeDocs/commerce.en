@@ -62,6 +62,8 @@ The AEM Assets Integration addresses this challenge by automating asset manageme
 
 Alt-text localization does not change product-image assignment or gallery mapping. Store-view asset availability is a separate capability and is not covered by the alt-text workflow.
 
+Product Visuals powered by AEM Assets supports Commerce-focused asset-management use cases in Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer. For supported capabilities, capacity limits, and capabilities that require AEM Assets Ultimate, see [Product Visuals limits](../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Requirements to use the integration
 
 To leverage this integration either with [Product Visuals or AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets), businesses must meet the following requirements:
@@ -138,7 +140,7 @@ Select your deployment to follow the required steps in order:
 
 1. To support Commerce metadata, [configure the AEM Assets project](get-started/configure-aem.md). On AEM release `2026.5.26309` and later, use the [self-service onboarding](get-started/configure-aem.md#enable-aem-commerce-self-service); on earlier releases, install the `assets-commerce` package manually.
 
-1. [Configure IMS user permissions](get-started/permissions.md) so the Asset Selector and the auto-populated **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** fields are available.
+1. [Configure IMS user permissions](get-started/permissions.md) for the Asset Selector and AEM environment and domain selection.
 
 1. [Configure the integration in the Commerce Admin](get-started/setup-synchronization.md).
 
@@ -152,13 +154,17 @@ Select your deployment to follow the required steps in order:
 
 1. [Install Adobe Commerce packages](get-started/configure-commerce.md) to add the extension and generate the required credentials and connections.
 
-1. [Configure IMS user permissions](get-started/permissions.md) so the Asset Selector and the auto-populated **[!UICONTROL Program ID]** and **[!UICONTROL Environment ID]** fields are available.
+1. [Configure IMS user permissions](get-started/permissions.md) for the Asset Selector and AEM environment and domain selection.
 
 1. [Configure the integration in the Commerce Admin](get-started/setup-synchronization.md).
 
 1. Optional. [Enable product-image display](get-started/configure-storefront.md#enable-product-images) so a storefront powered by Edge Delivery Services renders AEM-managed product images.
 
 >[!ENDTABS]
+
+After completing setup, [verify the integration](get-started/setup-synchronization.md#verify-the-integration) from an eligible, approved asset through product association and synchronization to storefront display. For Adobe Commerce Optimizer, follow the [Optimizer verification workflow](get-started/configure-aco.md#match-by-sku-workflow-example); Sync Status is not available.
+
+For category-image assignment and verification, see [Manage category images](manage-assets.md#category-images).
 
 ## Support
 

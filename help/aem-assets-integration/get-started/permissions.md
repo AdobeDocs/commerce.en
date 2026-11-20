@@ -23,14 +23,18 @@ role_v2:
 * For Adobe Commerce as a Cloud Service, the Admin enables IMS authentication by default.
 * For Adobe Commerce on cloud or on-premises, IMS is optional.
 
-  [Enabling IMS for Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} provides an enhanced configuration UI (Asset Selector, auto-populated dropdowns), but you can configure the integration without IMS by manually entering **Program ID**, and **Environment ID**.
+  [Enabling IMS for Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} provides an enhanced configuration UI with the Asset Selector and environment and domain dropdowns. If your configuration displays separate **Program ID** and **Environment ID** fields, you can enter those identifiers manually without IMS.
 
 When using IMS, the AEM Assets Integration also requires specific **Adobe Admin Console product profiles**. Users who configure the integration in Commerce Admin need the **AEM Assets DM OpenAPI Users - delivery** product profile, or the **author** product profile as a fallback. This access is controlled through Admin Console product profiles in the user's IMS organization, and enables:
 
 * **Asset Selector** allows you to select images from AEM Assets when managing category images or Page Builder content.
-* **Auto-populated configuration fields** such as **Program ID**, **Environment ID**, and **Domain mapping** dropdowns that pull values from the user's IMS session.
+* **Auto-populated configuration fields**, including the **AEM Environment** and **AEM Domain Mapping** dropdowns, that pull values from the user's IMS session. See [Configure the integration](setup-synchronization.md) for environment selection and manual ID entry.
 
 Without the correct permissions, the Asset Selector is unavailable, and these fields appear empty or require manual entry.
+
+>[!IMPORTANT]
+>
+> Adobe Admin Console product profiles control user access to integration features; they do not change licensing entitlements. Assigning an author product profile does not grant AEM Assets Author API access to Product Visuals customers. See [Product Visuals limits](../../optimizer/boundaries-limits.md#product-visuals-limits) for entitlement requirements.
 
 >[!BEGINSHADEBOX]
 
@@ -48,12 +52,12 @@ The integration can only load domains that are mapped to a profile. Therefore, u
 
 * **Author product profile**. Required to access the AEM Assets UI. Also serves as the fallback for the Asset Selector and Configuration UI when the user does not have the AEM delivery product profile in their Admin Console.
 
-Domains (including Program ID, Environment ID, and Domain mapping) are assigned to the AEM delivery product profile. The integration loads domains from the **AEM delivery product profile** when available, or falls back to the **author product profile** when the AEM delivery product profile is not in the user's Admin Console. Users need one of these profiles to:
+The integration loads environments and domain mappings from the **AEM delivery product profile** when available, or falls back to the **author product profile** when the AEM delivery product profile is not in the user's Admin Console. Users need one of these profiles to:
 
-* Populate the **Program ID**, **Environment ID**, and **Domain mapping** dropdowns in the Commerce Admin configuration.
+* Populate the **AEM Environment** and **AEM Domain Mapping** dropdowns in the Commerce Admin configuration.
 * Use the Asset Selector to browse and select assets from AEM Assets.
 
-If neither profile is configured, users can manually enter **Program ID** and **Environment ID**, but the Asset Selector is unavailable.
+If neither profile is configured, the Asset Selector is unavailable. If your configuration displays separate **Program ID** and **Environment ID** fields, you can enter the identifiers manually.
 
 ## Grant permissions by deployment type
 
@@ -79,7 +83,7 @@ Add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile i
 
 The **IMS Client ID** is required for PaaS to enable the Asset Selector. See [Configure the AEM Assets project](configure-aem.md#prerequisites) for prerequisites, including how to obtain the IMS Client ID when enabling Dynamic Media with OpenAPI.
 
-To use the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping):
+To use the Asset Selector and the **AEM Environment** and **AEM Domain Mapping** dropdowns:
 
 1. [Enable Adobe IMS for Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} so that Commerce Admin uses IMS authentication and can read the user's Admin Console product profiles.
 
@@ -87,7 +91,7 @@ To use the Asset Selector and auto-populated configuration fields (Program ID, E
 
 1. From the [Adobe Admin Console](https://adminconsole.adobe.com/), add the user to the **AEM Assets DM OpenAPI Users - delivery** product profile, or to the **author** product profile as a fallback.
 
-Without IMS, you can still configure the integration by manually entering Program ID and Environment ID in the Commerce Admin.
+For configurations that display separate Program ID and Environment ID fields, manual entry is available without IMS. See [Configure the integration](setup-synchronization.md).
 
 >[!ENDTABS]
 

@@ -80,11 +80,11 @@ Learn more in [Commerce Admin in Adobe Unified Experience](https://experiencelea
 
 ## November 2026 - release #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."}
 
-The following items were released to Sandbox environments on November 18, 2026.
+The following items were released to Production environments on November 18, 2026.
 
 >[!BEGINSHADEBOX]
 

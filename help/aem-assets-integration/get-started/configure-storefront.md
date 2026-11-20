@@ -49,6 +49,8 @@ The Commerce drop-ins automatically detect the `commerce-assets-enabled` configu
 
 For more information on using AEM Assets with the Commerce Storefront powered by Edge Delivery Services, see the [AEM Assets integration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) topic in the *Adobe Commerce Storefront* documentation.
 
+After saving the storefront configuration, [verify the integration](setup-synchronization.md#verify-the-integration) with an approved asset associated with a product. Confirm that the expected image appears on the storefront. If it does not, check the product association, Visualization Owner, and synchronization result before troubleshooting storefront image delivery. For Adobe Commerce Optimizer, follow the [Optimizer verification workflow](configure-aco.md#match-by-sku-workflow-example).
+
 >[!TIP]
 >
 >To let authors browse and insert AEM Assets into static content pages, see [Connect AEM Assets to Da.live for static content authoring](#connect-aem-assets-authoring).

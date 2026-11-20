@@ -27,9 +27,13 @@ topic_v2:
 
 If the default automatic matching strategy (**OOTB automatic matching**) is not aligned with your specific business requirements, select the custom match option. This option supports the use of [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) to develop a custom matcher application that handles complex matching logic, or assets coming from a third-party system that cannot populate metadata into AEM Assets.
 
+>[!NOTE]
+>
+>If your custom matcher or Adobe Developer App Builder integration requires AEM Assets APIs to manage assets or metadata programmatically, an AEM Assets Ultimate entitlement is required. This requirement depends on the APIs the application uses, not on App Builder usage alone. See [Product Visuals limits](../../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Configure custom automatic matching
 
-1. From the Commerce Admin, navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. From the Commerce Admin, navigate to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Select **[!UICONTROL Custom Matcher]** as the matching rule.
 
@@ -124,6 +128,10 @@ You can download the `workspace.json` file from the [Adobe Developer Console](ht
 1. Select the appropriate runtime actions from the dropdown menus for each flow.
 
 1. Click **[!UICONTROL Save Config]**.
+
+After the configuration is applied, [verify the integration](../get-started/setup-synchronization.md#verify-the-integration) with an approved asset and a product that your custom matcher associates with it.
+
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} If synchronization fails, review the [integration logs](../get-started/logs.md).
 
 ## Async Config Save
 
