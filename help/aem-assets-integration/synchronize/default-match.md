@@ -29,13 +29,13 @@ The AEM Assets integration for Commerce provides a default automatic matching me
 
 ## Configure the automatic matching mechanism
 
-1. From the Commerce Admin, navigate to **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. From the Commerce Admin, navigate to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Specify **[!UICONTROL Match by SKU]** as the matching rule.
+1. Specify **[!UICONTROL Match by product SKU]** as the matching rule.
 
-    ![default automated matching rule](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+    ![Match by product SKU rule and metadata property name](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. Enter the metadata field name used for asset identification in the AEM Assets.
+1. In **[!UICONTROL Match by product SKU attribute name]**, enter the [metadata property name](../metadata.md) that stores product SKUs in AEM Assets, not an actual SKU value.
 
     >[!NOTE]
     >
@@ -65,4 +65,6 @@ When the **[!UICONTROL Match by product SKU]** matching rule is configured  in t
 
     ![Example metadata](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-This approach ensures that digital assets are properly linked and displayed in Adobe Commerce. It also empowers merchandisers and marketers to manage roles and asset positioning directly within AEM Assets, providing a consistent and centralized mechanism for image selection and ordering across all engagement channels.
+After approving the asset, [verify the product association, synchronization result, and storefront display](../get-started/setup-synchronization.md#verify-the-integration). If the asset does not appear, review [Sync Status](../get-started/sync-status.md). For Adobe Commerce Optimizer, use the [Optimizer verification workflow](../get-started/configure-aco.md#match-by-sku-workflow-example) instead; Sync Status is not available.
+
+[!BADGE PaaS only]{type=Informative tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."} For additional synchronization troubleshooting, review the [integration logs](../get-started/logs.md).

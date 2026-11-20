@@ -31,11 +31,11 @@ Product Visuals enables [!DNL Adobe Commerce Optimizer] merchants to manage prod
 >
 >**Product Visuals** is the name of the bundle provided with [!DNL Adobe Commerce as a Cloud Service] and [!DNL Adobe Commerce Optimizer]. It combines [Dynamic Media with OpenAPI capabilities](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) and [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
->Customers with a different AEM Assets license (for example, **AEM Assets Ultimate**) can use the same integration; only the AEM release affects the onboarding steps, not the license type.
+>Customers with a different AEM Assets license, such as [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview), can use the same integration. Ultimate is not included with Product Visuals and requires an AEM Assets Ultimate add-on SKU. Contact your Adobe account representative for licensing and provisioning. The AEM release determines the onboarding method; available capabilities and environments depend on the entitlement. See [Product Visuals limits](../boundaries-limits.md#product-visuals-limits).
 
 ## Key benefits
 
-* **Centralized asset management**: Manage all product images in AEM Assets, the enterprise-grade digital asset management solution.
+* **Centralized asset management**: Manage product images in AEM Assets for Commerce-focused asset-management use cases.
 * **Automatic synchronization**: Product images automatically sync when assets are approved or updated in AEM Assets.
 * **Dynamic Media delivery**: Leverage Dynamic Media with OpenAPI capabilities for optimized image delivery.
 * **Catalog layers**: Product images are applied as a catalog layer, allowing you to overlay AEM Assets imagery on your base catalog.
@@ -58,7 +58,7 @@ See [Configure AEM Assets](../../aem-assets-integration/get-started/configure-ae
 
 ## Limitations
 
-For capacity and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
+For capability entitlements, capacity, and usage allocations (asset storage, Dynamic Media operations, user licenses), see [Product Visuals limits](../boundaries-limits.md#product-visuals-limits) in the _Boundaries and Limits guide_.
 
 ## Using Product Visuals
 
