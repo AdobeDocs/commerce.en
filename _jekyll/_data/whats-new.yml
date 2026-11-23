@@ -2,8 +2,91 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. Minor updates,
   such as copy editing, are excluded from this list.
-updated: Mon Nov 16 15:11:41 2026
+updated: Mon Nov 23 15:05:53 2026
 entries:
+- description: Updated the _Adobe Commerce as a Cloud Service Guide_ to notify customers
+    that projects for customers that onboard after November 18, 2026 are now provisioned
+    to use Merchandising Services with the composable catalog data model.
+  versions: ''
+  type: technical
+  date: '2026-11-23'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/908
+  merge_commit: a3c7e121397281fae0b8e9fd05697d71243eeb9d
+  contributor: meker_adobe
+  labels:
+  - technical
+- description: Added Production [release notes](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+    for Adobe Commerce as a Cloud Service.
+  versions: ''
+  type: release-notes
+  date: '2026-11-20'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/901
+  merge_commit: 740feb6b01d0acc7c99fcbef5d91029d1a3cb15a
+  contributor: jhoover_adobe
+  labels:
+  - release-notes
+  - ai-reviewed
+- description: Updated the [AEM Assets integration setup guidance](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+    with clearer configuration instructions, SKU matching guidance, and end-to-end
+    verification steps. Clarified [Product Visuals entitlement boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits),
+    including Author API access, API-driven metadata integrations, and the distinction
+    between supported bulk operations and API-based automation.
+  versions: ''
+  type: major-update
+  date: '2026-11-20'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/883
+  merge_commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
+  contributor: del_adobe
+  labels:
+  - major-update
+  - ai-reviewed
+- description: You can now [suppress storefront results for search queries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)
+    that match specified conditions without configuring product-level ranking actions.
+    When a query matches, the storefront displays a search-results page with zero
+    products.
+  versions: ''
+  type: major-update, technical
+  date: '2026-11-18'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/887
+  merge_commit: c3d0ecebd6c2bcad189435bcddb7765c487e39ab
+  contributor: rjanicki_adobe
+  labels:
+  - major-update
+  - technical
+  - ai-reviewed
+- description: Added a [Limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/boundaries-limits)
+    topic that lists the license limits and system boundaries for Adobe Commerce as
+    a Cloud Service.
+  versions: ''
+  type: new-topic
+  date: '2026-11-18'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/893
+  merge_commit: e0897ddc675f0281bec971e505585683b7ac7ed8
+  contributor: jlull_adobe
+  labels:
+  - new-topic
+- description: Added [role troubleshooting](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#troubleshooting-roles)
+    information to help users with issues accessing the Admin in Adobe Commerce as
+    a Cloud Service.
+  versions: ''
+  type: feedback
+  date: '2026-11-17'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/900
+  merge_commit: b019c35fcb86c4c2b346c368234657981ae37a1e
+  contributor: jhoover_adobe
+  labels:
+  - content-quality
+  - feedback
+- description: Added release notes for [SaaS Data Export Extension version 103.6.1](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes).
+  versions: ''
+  type: release-notes
+  date: '2026-11-16'
+  link: enterprise:Adobe-Enterprise-Docs/commerce.en/pull/890
+  merge_commit: 3e18a278391e4352c7482557fa76f8bb9b3451c7
+  contributor: alugovyi_adobe
+  labels:
+  - release-notes
+  - ai-reviewed
 - description: Updated the [facet limits and boundaries](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)
     to reflect that the maximum configured facets can be increased through a support
     request.
