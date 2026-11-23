@@ -1,6 +1,6 @@
 ---
-title: Composable Catalog Data Model and Merchandising Services
-description: Learn how the Composable Catalog Data Model changes catalog delivery in [!DNL Adobe Commerce as a Cloud Service] and what merchants and storefront teams need to know.
+title: Merchandising Services with the Composable Catalog Data Model
+description: Learn how Merchandising Services with the Composable Catalog Data Model changes catalog delivery in [!DNL Adobe Commerce as a Cloud Service] and what merchants and storefront teams need to know.
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -63,7 +63,7 @@ topic_v2:
     internal-label: Personalization
 ---
 
-# Merchandising Services
+# Merchandising Services with the composable catalog data model
 
 Adobe Commerce as a Cloud Service now supports the composable catalog data model (CCDM) through Merchandising Services. Adobe Commerce Optimizer introduced this data model, and CCDM gives both products a common foundation for serving storefront catalog browsing and merchandising capabilities, while the Commerce Foundation continues to manage products, prices, and transactions.
 
@@ -71,7 +71,7 @@ This topic explains what changes with CCDM, which features continue, and what th
 
 ## What changes does CCDM introduce?
 
-The original catalog model uses Catalog Service to deliver product data to storefronts, with Live Search and Product Recommendations providing search, merchandising, and recommendation capabilities. In this model, Commerce synchronizes using [SaaS data export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
+The original catalog model uses the [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview] to deliver product data to storefronts, with Live Search and Product Recommendations providing search, merchandising, and recommendation capabilities. In this model, Commerce synchronizes using [SaaS data export](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
 With CCDM, these capabilities operate on the same catalog foundation that powers Adobe Commerce Optimizer. [Catalog views](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) and [policies](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) define the catalog context available to a storefront. Policies determine the product assortment, and merchandising rules can apply across all catalog views or be tailored to a specific view.
 
@@ -81,7 +81,7 @@ Commerce Foundation remains the canonical source for products and prices. Produc
 
 ## Licensing and provisioning
 
-Merchandising Services is included in the existing Adobe Commerce as a Cloud Service SKU. It is not a second product or subscription, and it does not require a separate Adobe Commerce Optimizer purchase, entitlement, or tenant.
+Merchandising Services with CCDM is included in the existing Adobe Commerce as a Cloud Service SKU. It is not a second product or subscription, and it does not require a separate Adobe Commerce Optimizer purchase, entitlement, or tenant.
 
 ## Architecture overview
 
@@ -89,7 +89,7 @@ The [!DNL Commerce Foundation] remains the primary record for products and price
 
 Storefronts use CCDM-backed Merchandising Services to retrieve catalog data and context for browsing, search, recommendations, and merchandising. Requests use the catalog context to retrieve products and prices for the intended audience. You continue to manage website, store, and store-view configuration in [!DNL Commerce].
 
-The following diagram shows the position of Merchandising Services in the broader Adobe Commerce as a Cloud Service architecture.
+The following diagram shows the position of Merchandising Services with CCDM in the broader Adobe Commerce as a Cloud Service architecture.
 
 ![Commerce architecture showing the catalog data flow into Merchandising Services](./assets/data-flow-ccdm.png){zoomable="yes"}
 
@@ -101,7 +101,7 @@ In the Admin, you can configure catalog context with [!UICONTROL Catalog Views] 
 
 ## Considerations before adoption
 
-Review how the CCDM model affects your licensing, catalog integrations, storefront, and Admin workflows before adopting Merchandising Services.
+Review how the CCDM model affects your licensing, catalog integrations, storefront, and Admin workflows before adopting Merchandising Services with CCDM.
 
 ### Catalog management and integrations
 
@@ -130,8 +130,12 @@ The CCDM model does not change Adobe Commerce as a Cloud Service limits. Sharing
 
 ## Availability and migration
 
-Organizations that start with Adobe Commerce as a Cloud Service after this release receive Merchandising Services by default. If your organization requires the original catalog data model, contact your Adobe account team to discuss whether an exception is available.
+Organizations that start with Adobe Commerce as a Cloud Service after November 18, 2026 release include Merchandising Services with CCDM by default. If your organization requires the original catalog data model, contact your Adobe account team to discuss whether an exception is available.
 
 Organizations that had Adobe Commerce as a Cloud Service before this release can choose either catalog model when [provisioning a new instance](./getting-started.md#create-an-instance). By default, the [!UICONTROL Enable CCDM] switcher is disabled. Once CCDM is enabled, you cannot disable it.
 
 Existing instances do not change automatically. At general availability (GA), you cannot migrate an existing original catalog-services instance to Merchandising Services.
+
+>[!MORELIKETHIS]
+>
+>* [Merchandising Services with CCDM Commerce Admin Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
