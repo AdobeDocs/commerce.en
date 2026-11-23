@@ -78,7 +78,90 @@ Each Admin experience has its own URL. Instance links in Commerce Cloud Manager 
 
 Learn more in [Commerce Admin in Adobe Unified Experience](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## November 2026 - release #2 {#latest}
+## December 2026 - release #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+The following items will be released to Production environments on December 2, 2026.
+
+>[!BEGINSHADEBOX]
+
+### Send copies of custom emails
+
+The [`POST /V1/custom-email/send`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) REST endpoint now accepts optional `ccEmails` and `bccEmails` arrays to send copies of an email to additional recipients. <!-- ACCS-2225 -->
+
+### Nominate inventory sources through REST
+
+The following new admin REST endpoints provide source nomination and availability features: <!-- ACCS-1884 -->
+
+* `GET /V1/carts/:cartId/nominated-sources` and `PUT /V1/carts/:cartId/nominated-sources` read and set the inventory source nominated for each cart item.
+* `GET /V1/inventory/source-availability` returns per-source availability for a store.
+* `GET /V1/inventory/stock-availability` returns the stock-level salable quantity for a store.
+
+### Reset custom cart item prices
+
+You can now remove a [custom price](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) from a cart item without deleting and re-adding the item. Set the `reset_custom_price` extension attribute to `true` in a `PUT /V1/carts/:cartId/items/:itemId` request. <!-- ACCS-2189 -->
+
+```json
+{
+  "cartItem": {
+    "item_id": 8,
+    "quote_id": "17",
+    "sku": "hat",
+    "qty": 1,
+    "extension_attributes": { "reset_custom_price": true }
+  }
+}
+```
+
+### Exclude cart items from discounts
+
+You can now exclude individual cart items from cart price rule discounts by setting the `apply_discounts` extension attribute to `false` in `POST /V1/carts/:quoteId/items` and `PUT /V1/carts/:cartId/items/:itemId` requests. <!-- ACCS-2190 -->
+
+### Retrieve customer wish lists
+
+The following new REST endpoints let you retrieve customer wish lists: <!-- ACCS-2330 -->
+
+* `GET /V1/customers/:customerId/wishlists` returns the customer's wish lists.
+* `GET /V1/customers/:customerId/wishlists/:wishlistId/items` returns the items in a wish list with their saved product options.
+
+### Tax custom fees
+
+Custom fees returned by the `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.custom_fees` webhook are now sent to the `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` webhook as items with the code `oope_custom_fee_<fee code>`, for taxation purposes. <!-- ACCS-2274 -->
+
+### Search events and webhooks in the Admin
+
+The **[!UICONTROL Events List]** ([!UICONTROL System] > [!UICONTROL Events] > [!UICONTROL Events List]) and **[!UICONTROL Webhooks List]** ([!UICONTROL System] > [!UICONTROL Webhooks] > [!UICONTROL Webhooks List]) pages in the [!DNL Commerce Admin] have a redesigned, searchable layout. You can search by module, event, or webhook name, select an item to view its payload schema (field names and types) in a pane next to the list, and copy the schema as JSON. <!-- CEXT-6999 -->
+
+### Apply company settings during storefront registration
+
+The `createCompany` GraphQL mutation now accepts an optional `config` input that applies company address book settings (`address_book_enabled` and `custom_shipping_address_enabled`) when the company is created. <!-- USF-4527 -->
+
+This option is disabled by default. To enable it, navigate to [!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Company Configuration] > [!UICONTROL General] and set **[!UICONTROL Allow Company Configuration on Storefront Registration]** to **Yes**. This field appears only when **[!UICONTROL Allow Company Registration from the Storefront]** is set to **Yes**.
+
+### Enhancements and bug fixes
+
+The following selected enhancements, optimizations, and bug fixes are included in this release:
+
+* An optional setting is available to reduce repeated calls to the `collect_taxes` webhook. Contact your Adobe Commerce Customer Success Manager to enable it.
+
+* The `collect_taxes` webhook payload now includes `is_virtual` for each item and a `parent_code` for child items of dynamic-price bundles. <!-- CEXT-7035, CEXT-7049 -->
+
+* Fixed an issue where the `addProductsToCart` GraphQL mutation could return the original price for new items instead of the item prices returned by the webhook. <!-- CEXT-7019 -->
+
+* Fixed an issue where the `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook did not remove rates provided by out-of-process shipping carriers. <!-- ACCS-2251 -->
+
+* Fixed an issue where changes the `observer.rma_save_before` webhook made were not saved through REST when using custom attributes. <!-- CCSAAS-5728 -->
+
+* Fixed an issue where the Admin returned a 404 error after creating a negotiable quote. <!-- CCSAAS-5864 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## November 2026 - release #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
