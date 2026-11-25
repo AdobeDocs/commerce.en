@@ -120,6 +120,13 @@ Review your catalog queries and request headers for the CCDM-based model. Do not
 
 Review third-party apps and extensions that read catalog data or consume catalog events with their provider. Compatibility depends on how each app or extension uses those interfaces.
 
+### Merchandising APIs
+
+Merchandising Services provides APIs for backend catalog data management and storefront catalog retrieval. Use the REST API to manage catalog data, and the GraphQL API to retrieve data for storefront experiences.
+
+- **REST API:** Follow [Get started with the Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api) to create and manage product and catalog data from backend applications.
+- **GraphQL API:** Follow [Get started with the Merchandising API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api) to retrieve catalog data for storefront experiences. Configure requests with the headers required for your storefront, as described in the [storefront header reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
+
 ### Admin experience
 
 Adobe Commerce as a Cloud Service with CCDM uses [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe released Unified Shell separately from CCDM. Existing instances on the original catalog-services model retain access to both Classic and Unified Shell.
