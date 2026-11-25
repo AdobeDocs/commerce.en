@@ -29,7 +29,7 @@ topic_v2:
 ---
 # Sync feeds using the Commerce CLI
 
-The `saas:resync` command in the `magento/saas-export` package lets you manage data synchronization for [!DNL Adobe Commerce] SaaS services.
+The `saas:resync` CLI command lets you manage data synchronization for [!DNL Adobe Commerce] SaaS services.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ bin/magento saas:resync --feed products
 
 ## `--by-ids`
 
-Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions` feeds.
+Partially resync specific entities by their IDs. Supports `products`, `productAttributes`, `productOverrides`, `prices`, `variants`, and `categoryPermissions` feeds.
 
 By default, when you use the `--by-ids` option you specify values using product SKU values. To use product IDs instead, add the `--id-type=productId` option.
 
@@ -130,7 +130,7 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Clean up the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants`, and `categoryPermissions`.
+Clean up the feed indexer table before reindexing and sending data to SaaS. Only supported for `products`, `productAttributes`, `productOverrides`, `prices`, `variants`, and `categoryPermissions`.
 
 If used with the `--dry-run` option, the operation performs a dry-run resync operation for all items.
 

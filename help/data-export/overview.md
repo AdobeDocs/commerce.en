@@ -36,14 +36,13 @@ topic_v2:
 
 >[!NOTE]
 >
->If you install the [!DNL Adobe Commerce Optimizer Connector], the same [!DNL Data Export] extension collects catalog and pricing feeds from [!DNL Adobe Commerce]. The connector then maps and submits those feeds to [!DNL Adobe Commerce Optimizer] using the Composable Catalog Data Model (CCDM). See the [[!DNL Adobe Commerce Optimizer Connector] overview](../aco-connector/overview.md) for setup and architecture, and [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md) for synchronization behavior after export.
+>If you install the [!DNL Adobe Commerce Optimizer Connector], the same [!DNL Data Export] extension collects catalog and pricing feeds from [!DNL Adobe Commerce]. The connector then maps and submits those feeds to [!DNL Adobe Commerce Optimizer] using the composable catalog data model (CCDM). See the [[!DNL Adobe Commerce Optimizer Connector] overview](../aco-connector/overview.md) for setup and architecture, and [Connector sync pipeline](../aco-connector/connector-sync-pipeline.md) for synchronization behavior after export.
 
 SaaS data export collects and exports various types of data, referred to as _feeds_, which aggregate specific types of information. Depending on which Commerce services are installed, the SaaS data export feeds include:
 
 - **Catalog entity feeds** aggregate product data. Data includes products, product attributes, product prices, product variations, categories, category permissions, and product permissions.
 - The **Scopes feed** aggregates data for customer groups, websites, stores, and store views.
 - The **Sales Order feed** aggregates orders data including their related entities such as invoices, shipments, credit memos, and so on.
-- The **Multi-Source Inventory feed** aggregates data about inventory stock status items.
 
 SaaS data export is delivered as a PHP extension that supports both automated and manual synchronization:
 

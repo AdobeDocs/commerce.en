@@ -177,7 +177,7 @@ After the operation completes, the feed payload is available for review in the S
 
 ### Preserve payload in feed index table
 
-For the Commerce SaaS data export extension (`magento/module-data-exporter`) 103.3.0 and later, immediate export feeds keep only the minimum required data in the index table. The feeds include all catalog and inventory stock status feeds.
+For the Commerce SaaS data export extension (`magento/module-data-exporter`) 103.3.0 and later, immediate export feeds keep only the minimum required data in the index table. The feeds include all catalog feeds.
 
 Preserving payload data in the index table is not recommended in production environments, but it can be useful in a developer environment. Include the feed payload in the index by adding the `PERSIST_EXPORTED_FEED=1` environment variable when you resync the feed.
 

@@ -61,6 +61,10 @@ On supported AEM releases, you enable the Commerce integration from Cloud Manage
 
   Both your Commerce instance and AEM Assets authoring environment must be in the same IMS organization.
 
+>[!NOTE]
+>
+>AEM Assets Stage and Development environments require AEM Assets Ultimate. Review [Product Visuals limits](../../optimizer/boundaries-limits.md#product-visuals-limits) before planning these environments. This requirement applies to AEM Assets environments, not Commerce sandbox environments.
+
 ### Step 1: Create the program and environments
 
 Creating a program in Cloud Manager is a multi-step process — the program and its environments are configured across multiple steps and saved together.
@@ -73,7 +77,7 @@ Creating a program in Cloud Manager is a multi-step process — the program and 
 
    ![Cloud Manager Solutions and Add-ons step with Dynamic Media selected](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. On the **[!UICONTROL Add Environment]** step, enter names for the **Production** and **Staging** environments, then select a region.
+1. On the **[!UICONTROL Add Environment]** step, enter the **Production** environment name, then select a region. If your entitlement includes a Stage environment, also enter the **Staging** environment name.
 
    >[!IMPORTANT]
    >

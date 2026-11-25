@@ -14,9 +14,10 @@ product_v2:
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Merchandising Services](merchandising-services.md)
+- [Merchandising Services with CCDM](merchandising-services.md)
 - [Feature comparison](feature-comparison.md)
 - [Getting started](getting-started.md)
+- [Limits and boundaries](boundaries-limits.md)
 - [User and identity management](user-management.md)
 - [Storefront](storefront.md)
 - [Use cases](use-cases.md)

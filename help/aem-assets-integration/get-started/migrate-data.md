@@ -39,6 +39,10 @@ topic_v2:
 | **Source Content** | <ul><li>Organized media files ready for migration</li><li>Image and video files in <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formats supported by AEM Assets</a>.</li><li>Clean, duplicated assets</li></li> |
 | **Metadata Preparation** | <ul><li><a href="configure-aem.md">AEM Assets metadata profile configured for Commerce assets</a></li><li>Mapped metadata values for each asset</li><li>CSV file editor (e.g., Microsoft Excel)</li></ul> |
 
+>[!IMPORTANT]
+>
+>Supported Bulk Upload and Bulk Metadata operations do not, by themselves, require AEM Assets Ultimate. Programmatic migration or metadata workflows that require AEM Assets APIs, including API-based metadata ingress and egress, require AEM Assets Ultimate. Before choosing a migration method, review [Product Visuals limits](../../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Migration best practices
 
 1. Curate assets before migration by removing unused and duplicate content.
@@ -155,4 +159,4 @@ The following is a high-level overview for using the tool.
 >
 > [Bulk Import tool video demo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Tips, best practices, and limitations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [Upload or ingest assets using APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [Upload or ingest assets using APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) - Review [Product Visuals limits](../../optimizer/boundaries-limits.md#product-visuals-limits) before implementing an API-driven migration.

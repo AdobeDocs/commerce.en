@@ -73,9 +73,11 @@ The following tables summarize the license limits and system boundaries by capab
 
 ### [!DNL Product Visuals] limits
 
+Product Visuals supports Commerce-focused asset-management use cases, including managing product assets, Commerce metadata, and asset delivery. Supported Bulk Upload and Bulk Metadata operations do not, by themselves, require AEM Assets Ultimate. Programmatic asset and metadata management that requires AEM Assets APIs has separate entitlement requirements.
+
 | **Capability** | **Description** | **Base allocation** | **Expandable?** |
 | --- | --- | --- | --- |
-| Product Visuals Power users | Licensed user with full digital asset management capabilities, including AI tools, [!DNL Adobe Express]/[!DNL Firefly] integrations, and Content Hub sharing, handling core DAM tasks and advanced cloud-native features for optimal efficiency. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
+| Product Visuals Power users | Licensed user with the asset-management capabilities included with Product Visuals, including AI tools, [!DNL Adobe Express]/[!DNL Firefly] integrations, and Content Hub sharing. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Product Visuals Collaborator users | Access and work with assets through the AEM Commerce integration, create and edit content using [!DNL Adobe Express] and [!DNL Firefly], and—if enabled—leverage approved assets via the Content Hub portal. | 2 | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Product Visuals storage | Allocated storage space for assets | 1 TB storage | Yes<p>Upgrade to [!DNL AEM Assets] license</p> |
 | Dynamic Media usage | Allowance for dynamic media processing operations which includes:<ul><li>Image delivery</li><li>Smart Imaging</li><li>Video Delivery</li></ul><p>For details, see *Calculate Dynamic Media usage* below. | Based on GMV (gross merchandise value)<p>Minimum allocation: 5M operations/month</p> | Yes<ul><li>Purchase license for additional operations</li><li>Upgrade to [!DNL AEM Assets] license</li></ul> |
@@ -104,7 +106,25 @@ Dynamic Media usage tracks API requests coming into the Product Visuals componen
 
 >[!NOTE]
 >
->The limits above cover capacity and usage allocations. For the Product Visuals feature overview and functional constraints, see [Product Visuals with AEM Assets](setup/product-visuals.md).
+>This section covers capacity, usage allocations, and entitlement boundaries. For the Product Visuals feature overview, see [Product Visuals with AEM Assets](setup/product-visuals.md).
+
+#### When is AEM Assets Ultimate required?
+
+>[!IMPORTANT]
+>
+>Product Visuals does not include access to the AEM Assets Author APIs. If an integration or custom application requires Author API access to manage assets or metadata programmatically, purchase an AEM Assets Ultimate add-on SKU. Ultimate is not included with Product Visuals. Contact your Adobe account representative for licensing and provisioning.
+
+AEM Assets Ultimate is required for:
+
+- AEM Assets Author API access.
+- API-based metadata integrations, including metadata ingress and egress.
+- Custom integrations and automation that require AEM Assets APIs to manage assets or metadata programmatically.
+- Adobe Developer App Builder integrations that depend on these AEM Assets APIs.
+- AEM Assets Stage and Development environments.
+
+These requirements do not exclude the Dynamic Media with OpenAPI capabilities included with Product Visuals for asset delivery. App Builder usage alone does not require AEM Assets Ultimate; the requirement depends on the AEM Assets APIs the application uses.
+
+For broader enterprise DAM, API, extensibility, and content supply-chain requirements beyond Product Visuals, see [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview).
 
 ### Catalog views and policies
 
@@ -147,7 +167,7 @@ The following limits apply to storefront product search, listing, and merchandis
 | Searchable attributes | The number of product characteristics that can be indexed for catalog search | 200 | No |
 | Sortable attributes | The number of product characteristics available as sort options on search and category pages. | 50 | No |
 | Search pagination depth | Maximum products reachable through search pagination (for example, page 100 × 100 products/page) | 10K | No |
-| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | No |
+| Facets | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | Yes<p>Can increase via support request</p>|
 | Options per facet | The number of filterable product attribute values shoppers can select within a facet (for example, "Red," "Blue" for Color; "Small," "Medium" for Size) | 100 | Yes<p>Can increase via support request</p> |
 
 {style="table-layout:auto"}

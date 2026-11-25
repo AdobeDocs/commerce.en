@@ -35,6 +35,64 @@ The following release notes contain updates to [!DNL Adobe Commerce Optimizer], 
 
   {{aco-api-updates-and-dropins}}
 
+## November 2026
+
+>[!BEGINSHADEBOX]
+
+_November 2, 2026_
+
+![Fix](../assets/fix.svg) **Recommendation filter locale**—Clarified that the attribute list uses the catalog source associated with the first catalog view when you select **[!UICONTROL All Views]**. See [Recommendation filters](./merchandising/recommendations/filters.md).
+
+_November 6, 2026_
+
+![New](../assets/new.svg) **Third-party cart and checkout integrations**—Added guidance about integrating third-party cart and checkout services with [!DNL Adobe Commerce Optimizer]. See [Integrations](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration).
+
+![Fix](../assets/fix.svg) **Product Visuals storage**—Clarified that you can expand storage capacity for [!DNL Product Visuals] by upgrading your [!DNL AEM Assets] license. See [Limits and boundaries](./boundaries-limits.md#product-visuals-limits).
+
+![Fix](../assets/fix.svg) **AEM Assets setup guidance**—Removed the standalone [!DNL Adobe Commerce Optimizer] setup flow for [!DNL AEM Assets] and directed setup guidance to the general [!DNL AEM Assets] configuration documentation. See [Integrations](./integrations/integrations-overview.md#product-visuals), [Catalog layers](./setup/catalog-layer.md), and [Product Visuals](./setup/product-visuals.md).
+
+![New](../assets/new.svg) **Recommendation reference key**—Documented **[!UICONTROL Reference Key]** as an alternative to the recommendation ID when you configure a storefront recommendations block. See [Create and manage recommendations](./merchandising/recommendations/create.md#get-the-storefront-reference-key).
+
+_November 16, 2026_
+
+![New](../assets/new.svg) **Facet capacity**—Documented that you can increase the facet limit through a customer support request. See [Limits and boundaries](./boundaries-limits.md#catalog-views-and-policies).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## October 2026
+
+>[!BEGINSHADEBOX]
+
+_October 1, 2026_
+
+![New](../assets/new.svg) **B2B shared catalog views**—Documented how B2B shared catalogs can be provisioned automatically as private catalog views, alongside the manual setup option for other use cases. Also clarified that restricted access key rotation is not automated. See [Private catalog views](./setup/private-catalog-view.md), [Restricted access keys](./setup/restricted-access-keys.md), [Data sync](./setup/data-sync.md), and the [launch checklist](./launch/launch-checklist.md).
+
+_October 12, 2026_
+
+![New](../assets/new.svg) **Out-of-stock recommendation filter**—Added the out-of-stock exclusion filter, which lets you prevent out-of-stock products from appearing in recommendation units. See [Recommendation filters](./merchandising/recommendations/filters.md#out-of-stock).
+
+_October 14, 2026_
+
+![Fix](../assets/fix.svg) **Intelligent Ranking Boost values**—Corrected the documented default value to `50` and the maximum value to `1000`. See [Create and manage merchandising rules](./merchandising/rules/add.md#intelligent-ranking-boost).
+
+_October 16, 2026_
+
+![Fix](../assets/fix.svg) **Default search rule name**—Updated the merchandising rule name from [!UICONTROL All product listings] to [!UICONTROL Default search rule] to match the Admin interface. See [Merchandising rules overview](./merchandising/rules/overview.md) and [Create and manage merchandising rules](./merchandising/rules/add.md).
+
+_October 21, 2026_
+
+![Fix](../assets/fix.svg) **Restricted access key limits**—Removed the per-environment restricted access key count from the documented limits. See [Limits and boundaries](./boundaries-limits.md#catalog-views-and-policies).
+
+_October 22, 2026_
+
+![New](../assets/new.svg) **Recommendation attribute filters**—Added guidance for enabling attribute filters through the Metadata API. See [Recommendation filters](./merchandising/recommendations/filters.md#attributes).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## September 2026
 
 >[!BEGINSHADEBOX]
@@ -45,6 +103,11 @@ _September 3, 2026_
 
 [!DNL Adobe Commerce Optimizer] merchandising rules now support [**attribute ranking**](./merchandising/rules/add.md#attribute-ranking) for the **Default search rule**, **Category rule**, and **Search rule**. Automatically apply a **[!UICONTROL Boost]**, **[!UICONTROL Bury]**, or **[!UICONTROL Hide]** action to every product that matches one or more attribute conditions, such as brand or category, without selecting individual SKUs. Attribute ranking is in beta. [Learn more](./merchandising/rules/add.md#attribute-ranking).
 
+_September 9, 2026_
+
+![New](../assets/new.svg) **Multi-value HTTP header trigger policies**—Trigger policies using the `HTTP_HEADER` transport type can now receive multiple comma-separated values in a single header (for example, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Policy filters using `IN` evaluate the values with `OR` semantics. Filters using `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` reject the request with a validation error if the header contains multiple values. This behavior applies only to trigger policies using the `HTTP_HEADER` transport. [Learn more](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
+
 {{aco-release}}
 
 >[!ENDSHADEBOX]
@@ -52,11 +115,6 @@ _September 3, 2026_
 ## August 2026
 
 >[!BEGINSHADEBOX]
-
-_September 9, 2026_
-
-![New](../assets/new.svg) **Multi-value HTTP header trigger policies**—Trigger policies using the `HTTP_HEADER` transport type can now receive multiple comma-separated values in a single header (for example, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Policy filters using `IN` evaluate the values with `OR` semantics. Filters using `EQUALS`, `GREATER_THAN_EQUAL`, or `LESS_THAN_EQUAL` reject the request with a validation error if the header contains multiple values. This behavior applies only to trigger policies using the `HTTP_HEADER` transport. [Learn more](./setup/policies.md#multi-value-http-header-triggers).
-<!--COMOPT-2439-->
 
 _August 7, 2026_
 
@@ -367,4 +425,3 @@ The base production URLs for the European Union region are:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
-
