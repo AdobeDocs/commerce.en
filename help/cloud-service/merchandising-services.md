@@ -114,8 +114,6 @@ How your storefront retrieves catalog data depends on your implementation:
 - **[!DNL Adobe Commerce Storefront]** drop-ins—The drop-ins handle the transition. No code changes are required. See the [storefront setup documentation](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 - **Custom or other storefronts**—Update your catalog request headers as described in the [header configuration reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
-Review your catalog queries and request headers for the CCDM-based model. Do not assume that existing queries or headers remain unchanged. The Merchandising GraphQL queries differ from queries used in the original catalog-services model. Additional queries support CCDM. Use the [Merchandising GraphQL API reference](https://developer.adobe.com/commerce/services/reference/graphql/) and verify the required catalog context against the [storefront header reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
-
 ### Third-party apps and extensions
 
 Review third-party apps and extensions that read catalog data or consume catalog events with their provider. Compatibility depends on how each app or extension uses those interfaces.
@@ -126,6 +124,8 @@ Merchandising Services provides APIs for backend catalog data management and sto
 
 - **REST API:** Follow [Get started with the Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api) to create and manage product and catalog data from backend applications.
 - **GraphQL API:** Follow [Get started with the Merchandising API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api) to retrieve catalog data for storefront experiences. Configure requests with the headers required for your storefront, as described in the [storefront header reference](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
+
+Review your catalog queries and request headers for the CCDM-based model. Do not assume that existing queries or headers remain unchanged. The Merchandising GraphQL queries differ from queries used in the original catalog-services model. Additional queries support CCDM. Use the [Merchandising GraphQL API reference](https://developer.adobe.com/commerce/services/reference/graphql/) and verify the required catalog context against the [integration header reference](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers).
 
 ### Admin experience
 
